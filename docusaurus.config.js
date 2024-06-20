@@ -140,11 +140,10 @@ const config = {
           },
           {
             type: 'docSidebar',
-            docId:'api',
             sidebarId: 'apiSidebar',
             position: 'left',
             label: 'Core API',
-            activeBaseRegex: `/api/`,
+            activeBaseRegex: `/docs/`,
           },
           // {
           //   to: '/api',    // ./docs-api/Intro.md

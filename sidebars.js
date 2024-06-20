@@ -274,7 +274,7 @@ const sidebars = {
     {
       type: 'category',
       collapsed: true,
-      label: '🔗 Connect with CORE API',
+      label: '🔗 Connect with Core API',
       link: {type: 'doc', id: 'api/api'},
       items: [
         {
