@@ -53,20 +53,33 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/coredao-org/CoreDAO-Docs/blob/main',
-        
-              path: 'docs',
-              remarkPlugins: [remarkMath],
-              rehypePlugins: [rehypeKatex],
-          
+          editUrl: 'https://github.com/coredao-org/CoreDAO-Docs/blob/main',
+          routeBasePath: 'docs',
+          path: 'docs',
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
+        
         theme: {
           customCss: './src/css/custom.css',
         },
       }, 
     ],
   ],
+
+
+  // plugins: [
+  //   [
+  //     '@docusaurus/plugin-content-docs',
+  //     {
+  //       id: 'api',
+  //       path: 'api',
+  //       routeBasePath: 'api',
+  //       sidebarPath: './sidebarsAPI.js',
+  //       // ... other options
+  //     },
+  //   ],
+  // ],
 
   stylesheets: [
     {
@@ -102,36 +115,49 @@ const config = {
             sidebarId: 'learnSidebar',
             position: 'left',
             label: 'Learn',
+            activeBaseRegex: `/docs/`,
           },
           {
             type: 'docSidebar',
             sidebarId: 'devGuideSidebar',
             position: 'left',
             label: 'Developer Guide',
+            activeBaseRegex: `/docs/`,
           },
           {
             type: 'docSidebar',
             sidebarId: 'nodeSidebar',
             position: 'left',
             label: 'Run a Node',
+            activeBaseRegex: `/docs/`,
           },
           {
             type: 'docSidebar',
             sidebarId: 'stakeDelegateSidebar',
             position: 'left',
             label: 'Staking & Delegation',
+            activeBaseRegex: `/docs/`,
           },
           {
             type: 'docSidebar',
+            docId:'api',
             sidebarId: 'apiSidebar',
             position: 'left',
             label: 'Core API',
+            activeBaseRegex: `/api/`,
           },
+          // {
+          //   to: '/api',    // ./docs-api/Intro.md
+          //   label: 'Core API',
+          //   position: 'left',
+          //   activeBaseRegex: `/api/`,
+          // },
           {
             type: 'docSidebar',
             sidebarId: 'faqSidebar',
             position: 'left',
             label: 'FAQs',
+            activeBaseRegex: `/docs/`,
           },
 
           {

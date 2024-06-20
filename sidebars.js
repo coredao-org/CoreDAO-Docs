@@ -275,7 +275,7 @@ const sidebars = {
       type: 'category',
       collapsed: true,
       label: '🔗 Connect with CORE API',
-      link: {type: 'doc', id: 'API/corescan'},
+      link: {type: 'doc', id: 'api/api'},
       items: [
         {
           type: 'category',
@@ -285,12 +285,12 @@ const sidebars = {
             type: 'generated-index',
             title: 'Core Scan Tutorials',
             description: 'Learn about how to use the Core Scan API',
-            slug: '/API/category/core-api-tutorials',
+            slug: '/api/core-api-tutorials',
           },
           items: [
-            'API/tutorials/creating-an-account',
-            'API/tutorials/generate-an-api-key',
-            'API/tutorials/common-error-messages',
+            'api/tutorials/creating-an-account',
+            'api/tutorials/generate-an-api-key',
+            'api/tutorials/common-error-messages',
           ]
         },
         {
@@ -301,15 +301,15 @@ const sidebars = {
             type: 'generated-index',
             title: 'Core Scan API Documentation',
             description: 'Explore the various Core Scan API Endpoints',
-            slug: '/API/category/core-api-docs',
+            slug: '/api/core-api-docs',
           },
           items: [
-            'API/api-documents/accounts',
-            'API/api-documents/blocks',
-            'API/api-documents/contracts',
-            'API/api-documents/geth-proxy',
-            'API/api-documents/statistics',
-            'API/api-documents/transactions',
+            'api/api-documents/accounts',
+            'api/api-documents/blocks',
+            'api/api-documents/contracts',
+            'api/api-documents/geth-proxy',
+            'api/api-documents/statistics',
+            'api/api-documents/transactions',
           ]
         }
       ]
