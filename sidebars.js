@@ -275,21 +275,47 @@ const sidebars = {
       type: 'category',
       collapsed: true,
       label: '🔗 Connect with CORE API',
-      items: ['API/corescan']
+      link: {type: 'doc', id: 'API/corescan'},
+      items: [
+        {
+          type: 'category',
+          collapsed: true,
+          label: '📚 Tutorials',
+          link: {
+            type: 'generated-index',
+            title: 'Core Scan Tutorials',
+            description: 'Learn about how to use the Core Scan API',
+            slug: '/API/category/core-api-tutorials',
+          },
+          items: [
+            'API/tutorials/creating-an-account',
+            'API/tutorials/generate-an-api-key',
+            'API/tutorials/common-error-messages',
+          ]
+        },
+        {
+          type: 'category',
+          collapsed: true,
+          label: '📑 API Documents',
+          link: {
+            type: 'generated-index',
+            title: 'Core Scan API Documentation',
+            description: 'Explore the various Core Scan API Endpoints',
+            slug: '/API/category/core-api-docs',
+          },
+          items: [
+            'API/api-documents/accounts',
+            'API/api-documents/blocks',
+            'API/api-documents/contracts',
+            'API/api-documents/geth-proxy',
+            'API/api-documents/statistics',
+            'API/api-documents/transactions',
+          ]
+        }
+      ]
     },
   ],
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
+
 };
 
 export default sidebars;

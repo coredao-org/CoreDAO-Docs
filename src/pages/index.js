@@ -11,7 +11,7 @@ export default function Home() {
        title={`Hello from ${siteConfig.title}`}
        description="Official Documentation for Core DAO/>">
       <main>
-      return <Redirect to='/docs/intro' />;
+      return <Redirect to='/CoreDAO-Docs/docs/intro' />;
       </main>
     </Layout>
   );

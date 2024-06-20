@@ -122,9 +122,10 @@ const config = {
             label: 'Staking & Delegation',
           },
           {
-            href: 'https://docs.coredao.org/api',
-            label: 'Core API',
+            type: 'docSidebar',
+            sidebarId: 'apiSidebar',
             position: 'left',
+            label: 'Core API',
           },
           {
             type: 'docSidebar',

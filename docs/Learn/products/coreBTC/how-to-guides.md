@@ -27,8 +27,6 @@ As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a 
 9. **AddToken:** Select 'Add coreBTC to your wallet' in MetaMask to view your coreBTC.
 
 ![core-guide-2](../../../../static/img/coreBTC/core-guides-2.png)
-<!-- 
-<img src="../../../../static/img/coreBTC/core-guides-2.png" alt="banner" style={{zoom:"80%"}}/> -->
 
 ## Redeeming BTC from coreBTC
 1. **coreBTC Website:** Go to https://bridge.coredao.org/coreBTC
