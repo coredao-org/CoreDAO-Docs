@@ -16,7 +16,7 @@ Using their public and private keys, BTC miners can delegate their hash power to
 Let's take a look at how BTC miners or mining pools can delegate hash power to the Core blockchain by adding an `OP_RETURN` output in the BTC coinbase transaction.
 
 :::info 
-For more information about Core blockchain and Satoshi Plus consensus, please refer to the [Technical Whitepaper](https://github.com/coredao-org/whitepaper/blob/main/COREWhitepaper_v1.0.6.pdf).
+For more information about Core blockchain and Satoshi Plus consensus, please refer to the [Technical Whitepaper](https://whitepaper.coredao.org/).
 :::
 
 ### Implementation
