@@ -4,14 +4,14 @@ import Layout from '@theme/Layout';
 import  { Redirect } from 'react-router-dom';
 
 
-export default function Home() {
+export default function Api() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
        title={`Hello from ${siteConfig.title}`}
        description="Official Documentation for Core DAO/>">
       <main>
-      return <Redirect to='/docs/intro' />;
+      return <Redirect to='/docs/api' />;
       </main>
     </Layout>
   );
