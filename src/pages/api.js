@@ -11,7 +11,7 @@ export default function Api() {
        title={`Hello from ${siteConfig.title}`}
        description="Official Documentation for Core DAO/>">
       <main>
-      return <Redirect to='/CoreDAO-Docs/docs/api' />;
+      return <Redirect to='/docs/api' />;
       </main>
     </Layout>
   );
