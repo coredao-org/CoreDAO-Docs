@@ -179,7 +179,7 @@ const sidebars = {
           'Dev-Guide/contract-verify', 
           'Dev-Guide/erc20-tokens', 
           'Dev-Guide/erc721-tokens',
-          'Dev-Guide/dapp-on-core-copy',]
+          'Dev-Guide/dapp-on-core',]
       },
       {
         type: 'category',

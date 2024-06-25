@@ -20,6 +20,7 @@ As with slash suggestions, verifiers are charged with reporting double signing, 
 
 While producing blocks, the existing Core validators periodically check whether any current validator has been jailed. If so, they will update the validator set after an epoch (i.e. after 10 minutes). Jailing is designed to exclude misbehaving validators from consensus activities in order to enhance network security and keep TPS stable.
 
+
 ## Penalty for Double Signing
 There is a way for a validator to be permanently banned from the network, and that’s by “_double signing_”, i.e. signing two different blocks at an equal block height. Whereas unavailability could plausibly be the result of a bad network connection, double signing is strong evidence of willful malfeasance. Theoretically, it is possible for benign double signing to occur, if a validator upgrades the version of the network they’re running and forgets to update their address. Make sure you’re diligent when performing network updates. Validators caught double signing surrender all rewards, 100% of their validator deposit, and are thereafter barred from participating in mining blocks.
 
