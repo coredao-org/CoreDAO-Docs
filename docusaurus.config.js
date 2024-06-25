@@ -68,19 +68,6 @@ const config = {
   ],
 
 
-  // plugins: [
-  //   [
-  //     '@docusaurus/plugin-content-docs',
-  //     {
-  //       id: 'api',
-  //       path: 'api',
-  //       routeBasePath: 'api',
-  //       sidebarPath: './sidebarsAPI.js',
-  //       // ... other options
-  //     },
-  //   ],
-  // ],
-
   stylesheets: [
     {
       href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
@@ -101,6 +88,39 @@ const config = {
         respectPrefersColorScheme: false,
       },
       
+      algolia: {
+        // The application ID provided by Algolia
+        appId: 'FA8VWNN4PE',
+  
+        // Public API key: it is safe to commit it
+        apiKey: '918f3b86baa18924ad7436755ade2427',
+  
+        indexName: 'coredao',
+  
+        // Optional: see doc section below
+        // contextualSearch: true,
+  
+        // // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
+        // externalUrlRegex: 'external\\.com|domain\\.com',
+  
+        // // Optional: Replace parts of the item URLs from Algolia. Useful when using the same search index for multiple deployments using a different baseUrl. You can use regexp or string in the `from` param. For example: localhost:3000 vs myCompany.com/docs
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // or as RegExp: /\/docs\//
+        //   to: '/',
+        // },
+  
+        // // Optional: Algolia search parameters
+        // searchParameters: {},
+  
+        // // Optional: path for search page that enabled by default (`false` to disable it)
+        // searchPagePath: 'search',
+  
+        // // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
+        // insights: false,
+  
+        //... other Algolia params
+      },
+
       image: 'img/core.png',
       navbar: {
         title: 'Core DAO Documentation',
@@ -145,12 +165,6 @@ const config = {
             label: 'Core API',
             activeBaseRegex: `/docs/`,
           },
-          // {
-          //   to: '/api',    // ./docs-api/Intro.md
-          //   label: 'Core API',
-          //   position: 'left',
-          //   activeBaseRegex: `/api/`,
-          // },
           {
             type: 'docSidebar',
             sidebarId: 'faqSidebar',
