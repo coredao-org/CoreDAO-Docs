@@ -13,13 +13,13 @@ Introducing the Core Scan Open API, a powerful tool that gives developers direct
 
 We've written some tutorials to help you get started with Core Scan Open API. For advanced users, we've included guides for advanced endpoints, such as API-facilitated programmatic contract verification.
 
-Check out the Core Scan Open API tutorials [here](api/core-api-tutorials).
+Check out the Core Scan Open API tutorials [here](https://docs.coredao.org/docs/api/core-api-tutorials).
 
 ## API Endpoints
 
 Core Scan Open API provides endpoints for many things, including interacting with deployed smart contracts, fetching a user's CORE balance, and viewing detailed information about transactions.
 
-Check out the full endpoint documentation [here](api/core-api-docs).
+Check out the full endpoint documentation [here](https://docs.coredao.org/docs/api/core-api-docs).
 
 ## Support
 
