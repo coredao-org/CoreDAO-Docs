@@ -49,7 +49,7 @@ Now your verified contract on Core Scan should look like this:
 
 ## API Verification
 
-You can find the guide to using the Core API to verify contracts [here](https://docs.coredao.org/api/api-documents/contracts). Please note that to make API calls you must register on Core Scan and generate an API key.
+You can find the guide to using the Core API to verify contracts [here](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls you must register on Core Scan and generate an API key.
 
 If you're familiar with the Etherscan API, you're in luck! The API calls on Core are 100% compatible with the Etherscan API. You just need to replace the API key and endpoint URL and everything should work properly.
 
