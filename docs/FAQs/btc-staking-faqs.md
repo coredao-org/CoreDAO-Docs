@@ -37,7 +37,7 @@ By allowing users to stake their bitcoins without moving them off the Bitcoin bl
 6. **Flexibility in Transaction Building:** Users have the flexibility to build their staking transactions using any preferred tool, significantly reducing the risk of supply chain attacks from third-party libraries.
 
 ### 5. Are there any specific requirements to participate in Non-Custodial BTC Staking?
-Yes, participants must stake a minimum of **0.01 BTC for at least 7 days**. This minimal requirement makes it accessible for a wide range of Bitcoin holders.
+Yes, participants must stake a minimum of **0.01 BTC for at least 10 days**. This minimal requirement makes it accessible for a wide range of Bitcoin holders.
 
 ### 6. Why is that the staking address provided differs from your original Bitcoin address?
 The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoins remain safely stored in your original wallet, unaffected by staking. While staked assets may not be visible in some wallet versions, you still have complete ownership. 

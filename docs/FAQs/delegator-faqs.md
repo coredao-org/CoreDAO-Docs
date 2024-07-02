@@ -22,7 +22,7 @@ In the Core Chain ecosystem, delegation is a fundamental mechanism that allows B
 By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core) on CORE Delegation for more details.
 
 ### 4. What are the minimum staking period requirements for BTC and BTC Hash Power delegation?
-For BTC and BTC hash power delegation the minimum requirement is that of 7 days, i.e., you cannot un-delegate your stake prior to 7 days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 7 days\`).
+For BTC and BTC hash power delegation the minimum requirement is that of **10** days, i.e., you cannot un-delegate your stake prior to **10** days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 10 days\`).
 
 ### 5. What are the benefits of delegating BTC or CORE tokens?
 

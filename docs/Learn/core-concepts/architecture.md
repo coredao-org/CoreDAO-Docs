@@ -34,7 +34,7 @@ Core Chain introduces a novel consensus mechanism known as Satoshi Plus, a hybri
 
 ### Major Components and Roles 
 
-**1. Validators:** Validators have the critical role of producing blocks and validating transactions on the Core network. They are elected into the validator set based on a hybrid score that reflects both the Bitcoin hash power delegated to them and the CORE staked in their favor. The **top 21 validators** are selected each round, which currently lasts one day.
+**1. Validators:** Validators have the critical role of producing blocks and validating transactions on the Core network. They are elected into the validator set based on a hybrid score that reflects both the Bitcoin hash power delegated to them and the CORE staked in their favor. The **top 23 validators** are selected each round, which currently lasts one day.
 
 **2. Relayers:** Relayers are tasked with relaying Bitcoin block headers to the Core network, ensuring that the DPoW component of the consensus is maintained. In order to register itself, a relayer node should submit a refundable CORE deposit to participate.
 

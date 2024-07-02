@@ -18,7 +18,7 @@ Staking in Core Chain involves CORE and BTC holders delegating their tokens to v
 ## Staking Economics
 * Core blockchain allows staking of two tokens, namely, its native token i.e. CORE and the bitcoin. BTC holders can stake their assets through the non-custodial staking fearture of Core that allows BTC holders to stake and delegate their assets without having to give up custody of them.
 * The CORE validator set is determined by its staking and delegation logic, via a staking module.
-* Cycle time for Core to distribute rewards currently set to **1 day**. Each day, **21** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. At the last block of each round, the accumulated rewards for the round are calculated and distributed.
+* Cycle time for Core to distribute rewards currently set to **1 day**. Each day, **23** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. At the last block of each round, the accumulated rewards for the round are calculated and distributed.
 
 ## Importance of Staking in Core Chain
 Staking is crucial for several reasons in the Core Chain ecosystem:

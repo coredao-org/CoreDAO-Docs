@@ -21,7 +21,7 @@ Validator information is listed on the staking site, with all validators ranked 
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-1.avif)
 
-At the start of each round, Satoshi Plus consensus selects the Validators by their hybrid scores. The nodes are ranked in descending order of this score, with the top **21** nodes selected to form the active Validator set for the current round. Hybrid scores are calculated using the following formula:
+At the start of each round, Satoshi Plus consensus selects the Validators by their hybrid scores. The nodes are ranked in descending order of this score, with the top **23** nodes selected to form the active Validator set for the current round. Hybrid scores are calculated using the following formula:
 
 `S = hash_percentage * m + coin_percentage * (1 - m)`
 

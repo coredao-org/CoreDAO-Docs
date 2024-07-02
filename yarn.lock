@@ -1590,6 +1590,16 @@
     "@types/gtag.js" "^0.0.12"
     tslib "^2.6.0"
 
+"@docusaurus/plugin-google-tag-manager@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.npmjs.org/@docusaurus/plugin-google-tag-manager/-/plugin-google-tag-manager-3.4.0.tgz"
+  integrity sha512-O9tX1BTwxIhgXpOLpFDueYA9DWk69WCbDRrjYoMQtFHSkTyE7RhNgyjSPREUWJb9i+YUg3OrsvrBYRl64FCPCQ==
+  dependencies:
+    "@docusaurus/core" "3.4.0"
+    "@docusaurus/types" "3.4.0"
+    "@docusaurus/utils-validation" "3.4.0"
+    tslib "^2.6.0"
+
 "@docusaurus/plugin-google-tag-manager@3.2.1":
   version "3.2.1"
   resolved "https://registry.npmjs.org/@docusaurus/plugin-google-tag-manager/-/plugin-google-tag-manager-3.2.1.tgz"

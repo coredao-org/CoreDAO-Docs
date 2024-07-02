@@ -56,7 +56,7 @@ Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of C
 Core Chain welcomes BTC holders to stake their BTC on the Bitcoin network. By voting for a Core validator during your BTC staking transaction, you play a pivotal role in Core's decentralization, earning CORE tokens as recurring rewards.
 
 * There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core Chain.
-    * A user should at least stake **0.01 BTC** (less transaction fees) for at least **7 days**. 
+    * A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days**. 
 
 ### Transaction Work Flow
 
