@@ -25,7 +25,9 @@ At the start of each round, Satoshi Plus consensus selects the Validators by the
 
 `S = hash_percentage * m + coin_percentage * (1 - m)`
 
-Where `m` is a dynamic weighting factor initially set to **2/3**.
+Where,
+`coin_percentage` accounts for the ratio of both the **CORE** and **BTC** staking tokens
+`m` is a dynamic weighting factor initially set to **2/3**
 
 Validator information is refreshed daily at **00:00 UTC** at the beginning of each round.
 
