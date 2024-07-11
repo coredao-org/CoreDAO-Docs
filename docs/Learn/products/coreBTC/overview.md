@@ -19,7 +19,7 @@ coreBTC is central to developing a vibrant Bitcoin DeFi (BTCFi) ecosystem within
   
 - **Decentralization and Security:** Unlike traditional wrapped Bitcoin solutions, coreBTC uses a decentralized network of Lockers, ensuring that the process maintains the foundational blockchain principles of decentralization and security.
 
-- **Trustless Operations:** The coreBTC system allows Bitcoin to be locked and wrapped without relying on a central authority, maintaining the trustlessness that is central to blockchain technology.
+- **Decentralized Operations:** The coreBTC system allows Bitcoin to be locked and wrapped without relying on a central authority, maintaining the decentralization that is central to blockchain technology.
 
 - **1:1 Bitcoin Backing:** Each coreBTC is backed one-to-one by actual Bitcoin, which is locked and secured by Lockers who provide significant collateral to guarantee the security of the locked Bitcoin.
 
@@ -43,13 +43,9 @@ Opting for coreBTC offers several compelling benefits, making it an attractive c
   
 - **Preservation of Bitcoin’s Properties:** By using coreBTC, users can enjoy the benefits of Bitcoin’s fundamental characteristics—such as its robust security and scarcity—while participating in a diverse range of blockchain activities.
 
-- **Decentralized and Secure:** The decentralized nature of the coreBTC issuance and management system ensures that users are not reliant on any single central party, maintaining the trustless ethos of blockchain technology.
+- **Decentralized and Secure:** The decentralized nature of the coreBTC issuance and management system ensures that users are not reliant on any single central party, maintaining the decentralization ethos of blockchain technology.
 
 - **Enhanced Liquidity:** coreBTC provides Bitcoin holders with increased liquidity options, allowing them to leverage their holdings in various financial transactions and smart contracts within the Core Chain ecosystem.
-
-- **Trustless Transactions:** coreBTC maintains a trustless environment where users don’t have to trust a single entity with their Bitcoin; instead, the security is distributed among multiple parties (Lockers and Relayers), each bound by economic incentives to act honestly.
-
-<!-- - **Direct Participation in Governance:** Holding coreBTC enables users to participate in the governance of the Core Chain, influencing decisions regarding the platform's development and the use of community funds. -->
 
 - **No Custody Risk:** Users retain full control over their Bitcoin until they decide to lock it up for coreBTC, reducing the custody risk typically associated with handing over assets to a third party.
 

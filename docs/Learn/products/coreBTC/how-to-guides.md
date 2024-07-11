@@ -7,7 +7,7 @@ sidebar_position: 2
 # Wrap & Unwrap coreBTC
 
 ## Introduction
-As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a secured and trustless mechanism, powered by a network of decentralized, permissionless participants. This guide covers the essential steps for minting (wrapping) and redeeming (unwrapping) coreBTC, facilitating Bitcoin integration into decentralized finance (DeFi).
+As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a secured mechanism, powered by a network of decentralized, permissionless participants. This guide covers the essential steps for minting (wrapping) and redeeming (unwrapping) coreBTC, facilitating Bitcoin integration into decentralized finance (DeFi).
 
 ![core-guide-1](../../../../static/img/coreBTC/core-guides-1.png)
 
