@@ -14,7 +14,7 @@ Decentralized applications (dApps) use a blockchain or on-chain smart contracts 
 
 
 ## What Are We Building
-In this tutorial, we'll develop a simple dApp using React.js and Ethers.js that stores data in a smart contract on the Core blockchain and displays it to users. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master) repository.
+In this tutorial, we'll develop a simple dApp using React.js and Ethers.js that stores data in a smart contract on the Core blockchain and displays it to users. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core#building-a-dapp-on-core) repository.
 
 
 ## Learning Takeaways
@@ -170,7 +170,6 @@ module.exports = {
 
 ## Writing Smart Contract
 
-
 1. Navigate to the `contracts` folder in the root directory of your project.
 2. Delete the `Lock.sol` file; create a new file `Storage.sol` and paste the following contents into it.
 
@@ -235,8 +234,6 @@ The `Storage` contract is a simple example that demonstrates how to store and re
    - **Visibility**: The function is marked as `public`, meaning it can be called by any user or contract.
    - **View**: The function is marked as `view`, indicating that it does not modify the state of the contract. It only reads the state.
    - **Return Value**: The function returns the value of the `number` variable.
-
-
 
 
 ## Compiling Smart Contract
@@ -326,29 +323,24 @@ call retrieve() again: BigNumber { value: "100" }
 ### Setting up Frontend
 
 
-1. Clone the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master) repository from GitHub using the following command.
-
+1. Clone the `dApp-tutorial` repository from GitHub using the following command.
 
 ```bash
 git clone https://github.com/coredao-org/dapp-tutorial.git
 ```
 
-
-2. Rename this folder from `dapp-tutorial` to `frontend`. Navigate into the `frontend` folder
-
+2. Navigate into the folder `01-Basic Full Stack Dapp on Core` in the cloned `dapp-tutorial` repo.
 
 ```bash
-cd frontend
+cd dapp-tutorial
+cd "01-Basic Full Stack Dapp on Core"
 ```
 
-
 3. Install all the dependencies, i.e., node modules.
-
 
 ```bash
 npm install
 ```
-
 
 4. To test if things are working fine, run the application by using the following command. This will serve application with hot reload feature at [http://localhost:5173](http://localhost:5173/)
 
@@ -361,18 +353,18 @@ npm run dev
 ### Key Implementations
 
 
-The application's key blockchain logic is implemented in [App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/src/components/App.tsx)
+The application's key blockchain logic is implemented in [App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx)
 
 
-1. [App.tsx (Wallet)](https://github.com/coredao-org/dapp-tutorial/blob/master/src/components/App.tsx#L16): logic for connecting the application to MetaMask wallet.
-2. [App.tsx (Store)](https://github.com/coredao-org/dapp-tutorial/blob/master/src/components/App.tsx#L54): logic to write data to the Storage smart contract.
-3. [App.tsx (Retrieve)](https://github.com/coredao-org/dapp-tutorial/blob/master/src/components/App.tsx#L83): logic to read data from the Storage smart contract.
+1. [App.tsx (Wallet)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L20): logic for connecting the application to MetaMask wallet.
+2. [App.tsx (Store)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L58): logic to write data to the Storage smart contract.
+3. [App.tsx (Retrieve)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L87): logic to read data from the Storage smart contract.
 
 
 ### Adding Smart Contract Details
 1. Copy the `Storage.sol` file from the `contracts` folder in the root of your project and paste it into the `frontend/src/contracts` folder.
 2. Copy the address of the Storage smart contract as obtained in the section [above](#deploy-and-interact-with-smart-contract).
-3. Paste this into [Line 9 of App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/src/components/App.tsx#L10).
+3. Paste this into [Line 10 of App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 
 ```javascript
