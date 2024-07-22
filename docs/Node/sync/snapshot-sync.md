@@ -1,5 +1,5 @@
 ---
-sidebar_label: Snycing Core Nodes
+sidebar_label: Syncing Core Nodes
 hide_table_of_contents: false
 sidebar_position: 2
 ---
