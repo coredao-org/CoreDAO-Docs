@@ -46,7 +46,7 @@ Let's clarify the staking mechanism, so you know what to expect going into Non-C
 3. **Considerations for Locking Periods**
 
     * **Important reminder:** Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
-    * **Choosing wisely:**We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+    * **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
 
     These prompts aim to provide clarity and confidence as you embark on your Non-Custodial BTC Staking journey. Your understanding and preparedness are key to a successful staking experience. Now, let's guide you through the step-by-step process of staking your Bitcoin on the Core blockchain and earning Core token rewards.
 

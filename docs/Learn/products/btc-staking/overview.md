@@ -51,6 +51,19 @@ With the non-custodial bitcoin staking, Core Chain's protocol incorporate bitcoi
 
 Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core Chain). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility. 
 
+### Guidelines for Staking/Redeeming BTC
+
+When staking or redeeming your BTC, please follow these guidelines to ensure smooth transactions:
+1. **Avoid Low Gas Fees:** 
+    * We recommend avoiding gas fees lower than the current market rate. 
+    * Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
+2. **Handling Low Gas Fee Situations:** 
+    * If your Bitcoin transaction is delayed due to a low gas fee, consider using a transaction accelerator to speed up the process. 
+    * There are several third-party services available; for example, the free viaBTC transaction accelerator (which can be accessed [here](https://www.viabtc.com/tools/txaccelerator)). 
+    * Please research and choose a service that best fits your needs.
+
+By following these recommendations, you can ensure a more efficient staking and redemption process for your BTC.
+
 ### Requirements for Eligibility
 
 Core Chain welcomes BTC holders to stake their BTC on the Bitcoin network. By voting for a Core validator during your BTC staking transaction, you play a pivotal role in Core's decentralization, earning CORE tokens as recurring rewards.
