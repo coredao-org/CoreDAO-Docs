@@ -4,108 +4,116 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Design of coreBTC
+# Design of Liquid Staking (stCORE)
 
-The coreBTC within the Core blockchain represents a significant innovation in the realm of blockchain technology, specifically focusing on enhancing Bitcoin's utility within decentralized finance (DeFi). This synthetic representation of Bitcoin on the Core Chain ensures seamless interaction with DeFi applications while maintaining the inherent properties of Bitcoin.
+---
 
-## Key Components and Their Roles
+stCORE is designed to enhance the utility of the CORE token and simplify the staking process. This initiative allows token holders to maximize their asset potential with greater flexibility and efficiency.
 
-**1. Lockers:**
+## Design Principles
 
-- **Role:** Lockers are responsible for holding the actual Bitcoin that backs the coreBTC. Users send their Bitcoin to a Locker's address to initiate the wrapping process. Anyone can register as a Locker on Core Chain by locking up collateral, and the Core Chain itself also runs one of the many Lockers.
-- **Security:** Lockers must provide a significant amount of collateral in CORE tokens to ensure the security of the Bitcoin they hold. This collateral can be liquidated to cover losses in case of malfeasance, providing a strong disincentive against fraudulent activities.
+The primary design principles of liquid staking through stCORE on the Chain Chain are as follows:
 
-**2. Collateral:**
-\- The particular assets and required collateral ratio are network parameters determined by the Core DAO, and the collateral deposited by Lockers means that locked bitcoin should always be backed by assets of a higher value. If there's a change in the price of bitcoin relative to the value of the collateral, the Locker must adjust its collateral or face potential liquidation.
-\- Collateral can be slashed if Lockers transfer bitcoin without authorization or do not promptly return bitcoin when coreBTC is burned.
-\- Lockers can unregister and retrieve their collateral at any time, as long as they have no residual bitcoin locked and have no unfulfilled unlocking requests. In exchange for the services provided, Lockers earn small fees.
+- Simple and least/no changes to existing blockchain protocols.
+- Decentralized and won’t bring security concerns to the network.
+- Easy to use (user’s perspective).
 
-**2. Relayers:**
+## Design Summary
 
-- **Role:** Relayers monitor the Bitcoin blockchain for locking transactions directed at Lockers and validate these transactions. They play a crucial role in ensuring that the locked Bitcoin corresponds accurately to the minted coreBTC on the Core Chain.
-- **Functionality:** Upon detecting a valid locking transaction, Relayers submit proof to the Core Chain to mint the corresponding amount of coreBTC, bridging Bitcoin into the Core Chain ecosystem securely.
+After researching different LST projects, LiDO and Kava, etc., and combining the unique characteristics of Core blockchain, the liquid staking on the Core blockchain in the form of stCORE is designed as described below:
 
-**3. coreBTC Smart Contract:**
+- We introduce a new module called `Earn` along with a standard ERC-20 token **stCORE**
+- Users interact with `Earn` module, to mint/redeem/withdraw their assets
+- `Earn` module interacts with Core platform contracts such as `PledgeAgent` (the staking contract) and `CandidateHub`
+- All incurred value of `Earn` will be reflected in the **stCORE** token value
+- The **CORE/stCORE** conversion ratio will be updated **daily** to fit the turn round mechanism of Core blockchain
+- We also introduce a few other methods so the system operator can rebalance and optimize stakings across all validators.
 
-- **Role:** The coreBTC smart contract on the Core Chain manages the minting and burning of coreBTC tokens. It interacts with Relayers and Lockers to ensure that all operations adhere to the protocol rules.
-- **Security Mechanisms:** The smart contract includes mechanisms for verifying transaction proofs submitted by Relayers, managing collateral posted by Lockers, and executing the minting and redemption processes of coreBTC.
+## User Perspective
 
-**4. Liquidators:**
+### Mint
 
-- **Role:** In the event of price fluctuations or Locker misbehavior, Liquidators are responsible for ensuring the safety and backing of the coreBTC by enforcing collateral requirements.
-- **Function:** Liquidators can force the liquidation of a Locker's collateral if the value of the locked Bitcoin falls or if the Locker fails to maintain the required collateral ratio. This helps maintain the integrity and backing of the coreBTC.
+Users can mint stCORE using CORE. At any given time in a day (UTC), they can mint stCORE at the same conversion ratio. E.g. if the conversion ratio is 1:1.1, then users can mint 100 stCORE using 110 CORE.
 
-\*\*5. Guardians: \*\*
+### Redeem
 
-- **Role:** The activity of Lockers is monitored by Guardians, who check for any misbehavior and apply slashing as appropriate.
-- **Function:** A Guardian can trigger Core Chain smart contract to slash some of the Locker’s collateral. In this event, a portion of the Locker's collateral, equivalent to the value of the user's burned coreBTC, is transferred to the user. Additionally, the slasher is rewarded with a percentage of this collateral value for their action.
+The system is designed in such a way that users can always redeem whatever amount of stCORE token they have. E.g. if the conversion ratio is 1:1.1, then users can redeem 100 stCORE to get 110 CORE back.
 
-## How coreBTC Works
+:::note
+There is a redemption period which by default is **7 days**. Once users request redemption from the system, it gets **7 days** for them to withdraw the CORE tokens to their wallet.
+:::
 
-coreBTC is an innovative synthetic asset developed within the Core blockchain ecosystem that allows Bitcoin to be used seamlessly in decentralized finance (DeFi) applications on the Core Chain. The process begins when a user locks their Bitcoin with a designated custodian known as a **Locker**, who holds the actual Bitcoin and provides a significant amount of collateral to secure the transaction. This Bitcoin is then represented on the Core Chain as coreBTC, maintaining a strict **1:1 peg** to ensure value consistency between the locked Bitcoin and the issued coreBTC.
+## Common ERC-20 use cases
 
-Relayers play a crucial role in monitoring these Bitcoin transactions and validating them to the Core Chain. Once validated, the transaction details are sent to the coreBTC smart contract, which mints an equivalent amount of coreBTC and credits it to the user's wallet. This coreBTC can then be used across various DeFi platforms within the Core Chain ecosystem, enabling Bitcoin holders to engage in lending, borrowing, trading, and other financial activities without actually spending or risking their original Bitcoin holdings.
+stCORE is a standard ERC-20 token and users can do whatever actions which are eligible on an ERC-20 token, such as transfer, provide liquidity on DEX, swap, etc.
 
-Redemption of coreBTC for the original Bitcoin involves the user initiating a burn process where the coreBTC is destroyed, and the corresponding Bitcoin is unlocked and returned from the Locker to the user’s specified address. The entire system is safeguarded by rigorous collateral management and liquidation protocols that ensure Lockers maintain sufficient collateral against the Bitcoin they hold. Additionally, slashing mechanisms are in place to penalize any fraudulent activities by Lockers, protecting the integrity and trustworthiness of coreBTC within the Core Chain ecosystem. This design not only enhances the liquidity and utility of Bitcoin but also maintains its core properties of decentralization and security.
+## Implementations
 
-## Minting and Pegging In coreBTC
+The implementation for `Earn` module of liquid staking can be found [here](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-Locking Bitcoin and pegging it into coreBTC are crucial for maintaining the integrity and trustworthiness of the synthetic asset:
+User methods in the `Earn` module includes the following:
 
-- **Secure Storage:** Locked Bitcoin is stored in addresses controlled by Lockers, who are incentivized to maintain security and transparency due to their collateral obligations.
-- **Collateralization:** The collateral provided by Lockers underpins the pegging process, ensuring that for every coreBTC in circulation, there is an equivalent amount of Bitcoin securely held by a Locker.
+- **mint():** mint stCORE using CORE
+- **redeem():** redeem stCORE and get CORE back
+- **withdraw():** claim CORE to wallet after the redemption period
 
-Minting of coreBTC begins when a user locks their Bitcoin into the system. The user sends Bitcoin to a secure address controlled by a designated entity known as a Locker. This action triggers the minting process on the Core Chain.
+Operator methods in the `Earn` module includes the following:
 
-- **Lockers:** These are trusted nodes within the Core Chain network responsible for holding the actual Bitcoin. Each Locker must deposit a significant amount of collateral, usually in CORE tokens, to cover potential defaults or fraudulent activities.
-- **Relayers:** After the Bitcoin is sent to the Locker's address, Relayers monitor these transactions. Once a transaction is confirmed, Relayers validate it and submit proof to the coreBTC smart contract on the Core Chain.
-- **Smart Contract Execution:** Upon receiving the necessary proof from Relayers, the coreBTC smart contract calls the bitcoin Light Client to verify the authenticity and finality of the relevant bitcoin transaction, and then mints an equivalent amount of coreBTC. This minted coreBTC is then issued to the user's wallet on the Core Chain, reflecting a 1:1 peg with the locked Bitcoin.
+- **afterTurnRound():** where autocompounding is implemented
+- **rebalance():** break even the most/least staked validators
+- **manualRebalance():** arbitrarily transfer staking between two validators
 
-![pegging-in-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
+### Validators Selection on mint/redeem
 
-## Redemption and Pegging Out coreBTC
+Note that whenever mint/redeem happens, the `Earn` contract delegates CORE to `PledgeAgent` / undelegates CORE from `PledgeAgent`. This is implemented in such a way to keep the bookkeeping simpler.
 
-Redemption, or pegging out, involves reversing the minting process:
+When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
 
-- **Burning coreBTC:** Users initiate the redemption process by sending a request to the coreBTC smart contract to burn a specified amount of coreBTC, indicating the Bitcoin address where they wish to receive their Bitcoin.
-- **Unlocking Bitcoin:** Upon successful burning of the coreBTC, the smart contract signals the Locker to release the corresponding amount of Bitcoin. The Locker then sends this Bitcoin to the user's specified address, completing the pegging out process. Once the bitcoin transaction is confirmed, the Locker transmits it to Core Chain where it is finally verified by the bitcoin Light Client
+During redeem, the `Earn` contract chooses validators randomly -  `_randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
 
-![pegging-out-coreBTC](../../../../static/img/coreBTC/pegout-corebtc.png)
+### Keeping Validators Balanced on Staking Amounts
 
-## Liquidation Process
+Everytime when
 
-The liquidation process is designed to protect the system from defaults and ensure that the backing of coreBTC remains secure:
+- A mint happens, the caller can choose validator freely
+- A redeem happens, the system picks validators randomly
 
-- **Monitoring Collateral Ratios:** Liquidators continuously monitor the value of the Bitcoin held by Lockers relative to the issued coreBTC.
-- **Triggering Liquidation:** If the market value of the locked Bitcoin drops significantly, or if a Locker fails to maintain the required collateral ratio, liquidators may initiate the sale of the Locker's collateral to cover potential losses.
-- **Mechanism for Liquidation:** Liquidation is conducted through the Core Chain platform, where the insufficient collateral is sold off to maintain the necessary backing for coreBTC. During the process, the Liquidators use coreBTC to buy the collateralized CORE tokens at a discounted price, and the coreBTC is burned. This pushes the collateral ratio up and restores the Locker to a healthy condition. When the coreBTC is burned its supply is reduced and it becomes more scarce, thereby freeing the Locker to take ownership of a quantity of the underlying bitcoin equivalent to the value of the eliminated coreBTC. The Locker is then rebalanced in accordance with the collateral requirements; if the original user who sent bitcoin to that Locker’s address wants their bitcoin  back, they can choose any Locker to get it from. Redemption of coreBTC for bitcoin occurs at a systemic level, it’s not a relationship between one user and one Locker.
+This mechanism almost guarantees that the CORE tokens held by the Earn module can be split to different validators evenly.
 
-![liquidation](../../../../static/img/coreBTC/liquidation-process.png)
+However, considering there are cases the balance will be broken by certain operations, e.g. large value mint/redeem. We also introduced a few methods to rebalance stakings to validators from Earn.
 
-## Slashing Process
+- **rebalance():** the system picks the validators with the largest and smallest staking amounts and makes them break even if the gap exceeds the predefined threshold.
+- **manualRebalance():** the operator manually transfers staking from one validator to another.
 
-On the Core Chain, the concept of slashing is crucial to maintaining the integrity and security of coreBTC transactions. Slashing is a punitive measure used to penalize Lockers for misconduct or failure to adhere to the established protocols. There are two primary scenarios where slashing may occur, each designed to protect the system and its users from potential fraud and malfeasance:
+### stCORE/CORE Conversion Ratio Calculation
 
-### 1. **Unauthorized Movement of Locked Bitcoin**
+In every round after turn round happens, the `Earn` module fetches rewards from each validator and delegates them back correspondingly. This is how it does auto compounding internally. During the period, the system also moves staking from inactive/jailed validators to active ones to improve overall APR.
 
-In this case, slashing occurs if a Locker moves locked Bitcoin without receiving a corresponding burn request from a coreBTC holder. This scenario is considered a serious breach as it directly threatens the 1:1 pegging and trust that coreBTC holders have in the system's ability to securely back their tokens with real Bitcoin.
+And after that the conversion ratio of stCORE/CORE can also be updated. The formula for that is
 
-- **Trigger:** The slashing process is triggered when a Locker transfers any locked Bitcoin to an unauthorized address or for any unauthorized purpose that does not correspond to a legitimate and verified request to redeem coreBTC.
-- **Detection and Reporting:** This misconduct can be detected through the Core Chain's monitoring systems or by other participants in the network, often referred to as Guardians, who observe and report any suspicious Locker activities.
-- **Consequence:** Upon confirmation of the unauthorized transfer, a portion of the Locker’s collateral is seized and used to compensate for the discrepancy created in the system. This not only penalizes the Locker but also helps to re-establish the balance of backed and circulating coreBTC, maintaining the system's integrity.
+```
+    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply() 
+```
 
-![slashing](../../../../static/img/coreBTC/slashing-1.png)
+Since **rewards claiming only happens once per day** in such design, the conversion rate can be kept the same in the entire day until the next turn round happens.
 
-### 2. **Failure to Release Bitcoin Upon coreBTC Redemption**
+The above logics are implemented in the `afterTurnRound()` method.
 
-This scenario occurs when a coreBTC holder decides to redeem their tokens for the underlying Bitcoin, but the Locker responsible for releasing the Bitcoin fails to do so within the designated timeframe.
+### Handling the Dues Protection When delegating/undelegating
 
-- **Trigger:** A coreBTC holder submits a burn transaction, effectively destroying a certain amount of coreBTC with the expectation of receiving an equivalent amount of Bitcoin from a Locker. If the Locker does not process this transaction and release the Bitcoin as required, slashing is triggered.
-- **Detection and Response:** Similar to the first case, this failure can be detected by network monitors or reported by users. Upon verification that the Locker has not fulfilled the redemption request in time, the system initiates a slashing protocol.
-- **Consequence:** A significant portion of the Locker's collateral is slashed as a punitive and compensatory measure. The slashed collateral is typically used to ensure that the user receives their Bitcoin, preserving trust in the coreBTC system and compensating for any potential losses incurred by the delay or failure.
+Note that in the `PledgeAgent` contract (the staking contract), when users delegate
 
-![slashing](../../../../static/img/coreBTC/slashing-2.png)
+- The amount of CORE **must** >= 1
 
-## Conclusion
+And when they undelegate
 
-The design of coreBTC in Core Chain presents a robust framework for integrating Bitcoin into DeFi applications while maintaining its fundamental characteristics of security and decentralization. Through a well-structured system of minting, redemption, liquidation, and slashing, all backed by strict collateral requirements, coreBTC ensures that Bitcoin's value can be leveraged in new and innovative ways without compromising the trust and security that define it.
+- The amount of CORE **must** >= 1 **AND**
+- The remaining CORE left on a validator of this address **must** >= 1
+
+When handling delegate/undelegate internally, the `Earn` module must also follow the same restrictions.
+
+The implementation/case elaborations are in `_undelegateWithStrategy()` method.
+
+When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
+
+During redeem, the Earn contract chooses validators randomly - ` _randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
