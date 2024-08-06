@@ -5,3 +5,13 @@ files:
     translation: /docs_%two_letters_code%/%original_file_name%
   - source: /docs/Dev-Guide/*
     translation: /docs_%two_letters_code%/Dev-Guide/%original_file_name%
+  - source: /docs/FAQs/*
+    translation: /docs_%two_letters_code%/FAQs/%original_file_name%
+  - source: /docs/Learn/
+    translation: /docs_%two_letters_code%/Learn/%original_file_name%
+  - source: /docs/Node/
+    translation: /docs_%two_letters_code%/Node/%original_file_name%
+  - source: /docs/stake-and-delegate/
+    translation: /docs_%two_letters_code%/stake-and-delegate/%original_file_name%
+  - source: /docs/api/
+    translation: /docs_%two_letters_code%/api/%original_file_name%
