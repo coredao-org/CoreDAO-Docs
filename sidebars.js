@@ -189,6 +189,13 @@ const sidebars = {
           'Dev-Guide/core-bridge-resources', ]
       },
       'Dev-Guide/core-subgraph',
+      {
+        type: 'category',
+        collapsed: true,
+        label: 'Oracles',
+        items: ['Dev-Guide/api3',
+      ]
+      }
        ]
     },
   ],
