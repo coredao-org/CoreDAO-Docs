@@ -1,15 +1,15 @@
 ---
-sidebar_label: Major Components
+sidebar_label: Éléments Principaux
 hide_table_of_contents: false
 sidebar_position: 2
 description: Learn about the major components of the Satoshi Plus Mechanism
 ---
 
-# Satoshi Plus Consensus Mechanism
+# Mécanisme de Consensus Satoshi Plus
 
 ---
 
-The Satoshi Plus consensus mechanism represents a groundbreaking innovation in blockchain technology, specifically engineered for the Core Chain platform to synergistically combine the robust security attributes of Bitcoin with the flexibility and scalability of smart contracts. This hybrid consensus model merges Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-custodial Bitcoin Staking, enables Bitcoin miners to participate directly in the governance and security of a decentralized smart contract platform without incurring additional costs. By leveraging the established Bitcoin mining infrastructure, Satoshi Plus not only fosters a dual-layered security protocol but also enhances the incentive structures across both ecosystems, ensuring a balanced alignment of interests among all stakeholders involved in Core Chain.
+Le mécanisme de consensus Satoshi Plus représente une innovation révolutionnaire dans la technologie de la blockchain, spécifiquement développé pour la plateforme Core Chain afin de combiner de manière synergique la sécurité robuste du bitcoin avec la flexibilité et la scalabilité des contrats intelligents (autrement dit "smart contracts"). This hybrid consensus model merges Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-custodial Bitcoin Staking, enables Bitcoin miners to participate directly in the governance and security of a decentralized smart contract platform without incurring additional costs. By leveraging the established Bitcoin mining infrastructure, Satoshi Plus not only fosters a dual-layered security protocol but also enhances the incentive structures across both ecosystems, ensuring a balanced alignment of interests among all stakeholders involved in Core Chain.
 
 ![satoshi-3-component-combo](../../../../static/img/staoshi-plus/satoshi-plus-components.png)
 
