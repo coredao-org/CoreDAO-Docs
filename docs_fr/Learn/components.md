@@ -2,7 +2,7 @@
 sidebar_label: Éléments Principaux
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about the major components of the Satoshi Plus Mechanism
+description: Apprendre sur les éléments principaux du mécanisme de Satoshi Plus
 ---
 
 # Mécanisme de Consensus Satoshi Plus
