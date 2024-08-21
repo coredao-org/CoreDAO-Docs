@@ -1,17 +1,17 @@
 ---
-sidebar_label: Delegated Proof of Work
+sidebar_label: Preuve de Travail Déléguée
 hide_table_of_contents: false
 sidebar_position: 2
 description: Leveraging DPoW in Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW) in the Satoshi Plus Consensus Mechanism
+# Preuve de Travail Déléguée (DPoW) dans le mécanisme de consensus Satoshi Plus
 
 ---
 
-## Overview
+## Aperçu
 
-Delegated Proof of Work (DPoW) is a foundational component of the Satoshi Plus consensus mechanism on Core Chain. This innovative approach adapts the traditional Proof of Work (PoW) system used by Bitcoin, allowing for the integration of Bitcoin mining efforts into the security framework of a smart contract platform. DPoW maintains the robustness of Bitcoin’s security while enhancing its utility and economic incentives for miners. In the Satoshi Plus consensus mechanism, validators are chosen on the basis of a hybrid score, and the hybrid score is calculated from both Delegated Proof of Work (DPoW) and Delegated Proof of Stake (DPoS). In this section, we cover in depth the working and importance of DPoW in the functioning of the Satoshi Plus.
+La Preuve de Travail Déléguée (DPoW) est un composant fondamental du mécanisme de consensus Satoshi Plus sur Core Chain. This innovative approach adapts the traditional Proof of Work (PoW) system used by Bitcoin, allowing for the integration of Bitcoin mining efforts into the security framework of a smart contract platform. DPoW maintains the robustness of Bitcoin’s security while enhancing its utility and economic incentives for miners. In the Satoshi Plus consensus mechanism, validators are chosen on the basis of a hybrid score, and the hybrid score is calculated from both Delegated Proof of Work (DPoW) and Delegated Proof of Stake (DPoS). In this section, we cover in depth the working and importance of DPoW in the functioning of the Satoshi Plus.
 
 ## How DPoW Works in Satoshi Plus
 
