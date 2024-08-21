@@ -17,5 +17,6 @@ Core's [blockchain codebase](https://github.com/coredao-org) has been audited by
 
 * [Halborn](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/CoreDAO_Genesis_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf)
 * [Least Authority](https://leastauthority.com/blog/audits/audit-of-core-dao-layer-1-smart-contracts/)
-* [Audit of BTC Staking](https://www.halborn.com/audits/coredao/btc-staking)
-* [Audit of coreBTC](https://www.halborn.com/audits/coredao/corebtc)
+* [Audit Report of BTC Staking](https://www.halborn.com/audits/coredao/btc-staking)
+* [Audit Report of coreBTC](https://www.halborn.com/audits/coredao/corebtc)
+* [Audit Report of 1.0.9 Upgrade](https://www.halborn.com/audits/coredao/109-upgrade-release)
