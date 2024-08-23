@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Chain: Unlocking Bitcoin DeFi
+# Core: Unlocking Bitcoin DeFi
 ---
 
 Core Chain is the first Bitcoin-aligned EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. With over **50%** of Bitcoin mining hash already contributing to its security model and over **4,800** in count and more than **$313 Million** worth Bitcoin staked through the ground-breaking innovation of Non-Custodial Bitcoin staking, Core Chain is unlocking Bitcoin both as the prime protector and central asset of the future of DeFi.
