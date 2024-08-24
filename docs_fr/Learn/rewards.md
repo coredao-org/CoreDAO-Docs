@@ -14,22 +14,22 @@ L'écosystème Core Chain est conçu pour inciter à la participation et sécuri
 ## Types de récompenses
 
 :::warning
-The reward structure on  Core Chain is subject to adjustments based on periodic governance votes, allowing the community to respond to changes in the ecosystem, such as fluctuations in token value or shifts in the security landscape.
+La structure des récompenses sur Core Chain est sujette à des ajustements basés sur des votes de gouvernance périodiques, permettant à la communauté de répondre aux changements dans l'écosystème, tels que les fluctuations de la valeur des tokens ou des évolutions au niveau de la sécurité.
 :::
 
 ![rewards](../../../../static/img/validator/Reward-Distribution.png)
 
-### 1. Mining Rewards
+### 1. Récompenses de minage
 
-- **Description:** Mining rewards are provided to Bitcoin miners who contribute their hashing power to secure the Core Chain. This process extends the traditional mining efforts on the Bitcoin blockchain to include support for Core Chain, without requiring miners to divert resources from their Bitcoin mining activities.
-- **Mechanism:** Miners include specific metadata in the Bitcoin blocks they mine, indicating their support for Core Chain. In return for their contribution, miners receive CORE tokens as supplemental rewards, on top of their regular Bitcoin mining rewards.
+- **Description:** Les récompenses de minage sont accordées aux mineurs de Bitcoin qui contribuent leur puissance de hachage pour sécuriser le réseau Core Chain. Ce processus étend les efforts de minage traditionnels sur la blockchain Bitcoin pour inclure le soutien à Core Chain, sans exiger que les mineurs détournent des ressources de leurs activités de minage de Bitcoin.
+- **Mécanisme:** Les mineurs incluent des métadonnées spécifiques dans les blocs Bitcoin qu'ils minent, indiquant leur soutien à Core Chain. En échange de leur contribution, les mineurs reçoivent des tokens CORE en tant que récompenses supplémentaires, en plus de leurs récompenses régulières de minage Bitcoin.
 
-### 2. Staking Rewards
+### 2. Récompenses de staking
 
-- **Description:** Staking rewards are distributed to BTC and CORE token holders who stake and delegate their tokens with Validators on the Core network. This staking not only helps secure the network through the Delegated Proof of Stake (DPoS) component of the Satoshi Plus consensus but also enables token holders to participate in network governance.
-- **Mechanism:**  DPoS allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to vote and participate in the election of the validator set by delegating their holdings to their preferred validators. For Core token staking, the minimum staking requirement is 1 CORE token, allowing any CORE holders to stake onto the Core network. On the bitcoin-staking side, the present configuration requires a **minimum staking requirement of 0.01 BTC** which is adjustable through a governance vote. Holders of both CORE token and BTC can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/). The rewards earned by stakers are proportional to the amount of BTC/CORE staked and the duration of the staking, incentivizing long-term holding and participation in the consensus process.
+- **Description:** Les récompenses de staking sont distribuées aux détenteurs de tokens BTC et CORE qui stakent et délèguent leurs tokens avec les validateurs sur le réseau Core. Ce staking contribue non seulement à sécuriser le réseau via le composant Preuve d’Enjeu Déléguée (DPoS) du consensus Satoshi Plus, mais permet également aux détenteurs de tokens de participer à la gouvernance du réseau.
+- **Mécanisme:** La DPoS permet aux détenteurs de tokens CORE et de [Bitcoin](../../products/btc-staking/overview.md) de voter et de participer à l'élection du groupe de validateurs en déléguant leurs avoirs aux validateurs de leur choix. Pour le staking des tokens CORE, l'exigence minimale de staking est de 1 token CORE, permettant à tout détenteur de CORE de staker sur le réseau Core. Du côté du staking de Bitcoin, la configuration actuelle exige un **seuil minimal de staking de 0,01 BTC**, qui est ajustable via un vote de gouvernance. Les détenteurs de tokens CORE et de BTC peuvent déléguer leurs tokens respectifs aux validateurs de leur choix via le site officiel de [staking website](https://stake.coredao.org/). Les récompenses gagnées par les stakers sont proportionnelles à la quantité de BTC/CORE stakés et à la durée du staking, incitant à la détention à long terme et à la participation au processus de consensus.
 
-### 3. Validator Rewards
+### 3. Récompenses des validateurs
 
 - **Description:** Validators earn rewards for their role in processing transactions, creating new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating Validators for their efforts and operational costs.
 - **Mechanism:** Validators receive a combination of transaction fees and new CORE tokens minted through the blockchain's inflation policy. The amount of rewards a Validator receives is proportional to their stake and the delegated hash power from miners. There are two categories of validator rewards:
