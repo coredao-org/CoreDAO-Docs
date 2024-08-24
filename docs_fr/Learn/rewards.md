@@ -1,17 +1,17 @@
 ---
-sidebar_label: Rewards
+sidebar_label: Récompenses
 hide_table_of_contents: false
 sidebar_position: 2
-description: Rewards in the Core Ecosystem
+description: Récompenses dans l'écosystème Core
 ---
 
-# Rewards in the Core Chain Ecosystem
+# Récompenses dans l'écosystème Core Chain
 
 ---
 
-The Core Chain ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins the Satoshi Plus consensus mechanism, ensuring network security, stakeholder engagement, and alignment of interests among all participants. The rewards system is fundamental in encouraging the community to partake actively in mining, staking, and governance, thereby enhancing the overall health and growth of the ecosystem.
+L'écosystème Core Chain est conçu pour inciter à la participation et sécuriser l'engagement de sa communauté à travers un système de récompenses bien structuré. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
 
-## Types of Rewards
+## Types de récompenses
 
 :::warning
 The reward structure on  Core Chain is subject to adjustments based on periodic governance votes, allowing the community to respond to changes in the ecosystem, such as fluctuations in token value or shifts in the security landscape.
