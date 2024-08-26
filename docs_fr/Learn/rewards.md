@@ -36,11 +36,11 @@ La structure des récompenses sur Core Chain est sujette à des ajustements bas�
   1. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
   2. **Frais collectés à partir des transactions dans chaque bloc**;
 
-Base rewards are calculated and distributed when the last block of a round is mined. Currently, **90%** of the rewards go to the validators and **10%** of the rewards go to the `System Reward Contract`. Of the 90% paid to validators, some percentage is taken as a commission by the validator before they pay out their delegates. Each validator has an equal probability of producing blocks, so in the long run, all stable validators should get a similar portion of the reward.
+Les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'un tour est miné. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, bitcoin stakers, and PoW delegators – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Validators can take as much or as little of the reward as they want, though they’re incentivized to be generous in order to attract more stake and hash power.
+Les validateurs partagent les récompenses avec les entités qui leur ont été délégué – y compris les stakers de CORE, les stakers de Bitcoin et les délégués PoW – mais ils décident du montant à redistribuer en choisissant combien ils (les validateurs) souhaitent conserver pour eux-mêmes. Les validateurs peuvent prendre comme ils le souhaitent une grande ou une petite partie la récompense, bien qu'ils soient incités à être généreux pour attirer plus de stake et de puissance de hachage.
 
-After the validators take their fees, the protocol uses this function to determine how the remaining rewards are split between CORE stakers, BTC stakers, and hash power delegators. Reward distribution is calculated based on the following formula:
+Après que les validateurs aient prélevé leurs frais, le protocole utilise cette fonction pour déterminer comment les récompenses restantes sont réparties entre les stakers de CORE, les stakers de BTC et les délégués de puissance de hachage. La distribution des récompenses est calculée en fonction de la formule suivante:
 
 $$
     rH = \frac{rHp}{tHp} * \frac{m}{S} * R
@@ -54,14 +54,14 @@ $$
     rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S * R}
 $$
 
-Where:
+Où:
 
-- $rH$ is the rewards received by the validator because of the hash power delegated to it (DPoW)
-- $rS$ is the rewards received by the validator because of the CORE delegated to it (DPoS)
-- $rB$ is validator rewards attributed to BTC staking
-- $R$ is the overall rewards attributed to all delegators
+- $rH$ est les récompenses reçues par le validateur en raison de la puissance de hachage qui lui est déléguée (DPoW)
+- $rS$ = récompenses reçues par le validateur en raison des CORE qui lui sont délégués (DPoS)
+- $rB$ = récompenses du validateur attribuées au staking de BTC
+- $R$ = est la récompense globale attribuée à tous les délégués
 
-For completeness, here are three other ratios of interest:
+Pour compléter, voici trois autres ratios d'intérêt:
 
 $$
     rHu = \frac{rH}{rHp}
@@ -75,34 +75,34 @@ $$
     rBu = \frac{rB}{rBp}
 $$
 
-Where:
+Où:
 
-- $rHu$ is the validator hash power rewards per unit;
-- $rSu$ is the CORE token staking rewards per unit;
+- $rHu$ = récompense de puissance de hachage par unité;
+- $rSu$ est la récompense de staking de token CORE par unité;
 - $rBu$ is the BTC staking rewards per unit;
 
-These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated stake. For their part, delegators will try to optimize their own rewards by choosing validators with lower amounts of delegated hash power and stake. To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations.
+Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi le groupe de validateurs pour la puissance de hachage déléguée et le stake délégué. De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations.
 
-### 4. Relayer and Verifier Rewards
+### 4. Récompenses des Relayeurs et Vérificateurs
 
-In the Core Chain ecosystem, the base rewards are calculated and distributed when the last block of a round is mined, with **90%** going to the validators and **10%** to the System Rewards Contract. The System Reward Contract accumulates rewards to remunerate relayers and verifiers. As things stand, there is a cap of **10 million** total CORE tokens in the System Reward Contract. Any rewards in excess of this amount are burned.
+Dans l'écosystème Core Chain, les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'une ronde est miné, avec **90%** allant aux validateurs et **10%** au contrat de récompenses du système. Le contrat de récompenses du système accumule des récompenses pour rémunérer les relayeurs et les vérificateurs. Actuellement, il y a un plafond de **10 millions** de tokens CORE dans le contrat de récompenses du système. Toutes les récompenses excédant ce montant sont brûlées.
 
-Relayers are responsible for communicating the Bitcoin block headers to the Core network. They earn a portion of the base system rewards and transaction fees for this cross-chain communications work. Relayer rewards are distributed in batches, every 100 Bitcoin blocks. Relayers claim their rewards periodically.
+Les relayeurs sont responsables de la communication des en-têtes de blocs Bitcoin au réseau Core. Ils gagnent une partie des récompenses de base du système et des frais de transaction pour ce travail de communication inter-chaînes. Les récompenses des relayeurs sont distribuées par lots, tous les 100 blocs de Bitcoin. Les relayeurs réclament périodiquement leurs récompenses.
 
-Verifiers in the Core Chain ecosytem are responsible for monitoring the behavior of validators and report them if they engage in double signing or other malicious activity. When successful, rewards are paid out immediately from the System Rewards Contract, in the same transaction.
+Les vérificateurs dans l'écosystème Core Chain sont responsables de la surveillance du comportement des validateurs et les signalent s'ils se livrent à une double signature ou à d'autres activités malveillantes. Lorsqu'ils réussissent, les récompenses sont immédiatement versées par le contrat de récompenses du système, dans la même transaction.
 
-### 5. Governance Participation Rewards:
+### 5. Récompenses pour la Participation à la Gouvernance:
 
-- **Description:** Participants in the Core Chain governance process are incentivized through rewards that encourage active and thoughtful participation in decision-making processes.
-- **Mechanism:** Rewards are distributed to users who vote on proposals and participate in other governance activities. These rewards aim to foster a proactive governance community and ensure that decisions reflect the broad consensus of the ecosystem’s stakeholders.
+- **Description:** Les participants au processus de gouvernance de Core Chain sont incités par des récompenses qui encouragent une participation active et réfléchie aux processus décisionnels.
+- **Mécanisme:** Des récompenses sont distribuées aux utilisateurs qui votent sur les propositions et participent à d'autres activités de gouvernance. Ces récompenses visent à favoriser une communauté de gouvernance proactive et à garantir que les décisions reflètent le large consensus des parties prenantes de l'écosystème.
 
-## Reward Distribution Strategy
+## Stratégie de Distribution des Récompenses
 
-Core Chain follows the following distribution Principles:
-\* **Fairness:** The rewards system is designed to be fair, ensuring that contributions, whether in the form of staking, mining, or governance participation, are equitably recognized and rewarded.
-\* **Transparency:** All aspects of the reward distribution are transparent, allowing participants to understand how rewards are calculated and distributed.
-\* **Security:** The distribution mechanism is secured against manipulation and abuse, using cryptographic and smart contract-based safeguards to ensure the integrity of the reward process.
+Core Chain suit les principes de distribution suivants:
+\* **Équité:** Le système de récompenses est conçu pour être équitable, en veillant à ce que les contributions, qu'elles soient sous forme de staking, de minage ou de participation à la gouvernance, soient reconnues et récompensées équitablement.
+\* **Transparence:** Tous les aspects de la distribution des récompenses sont transparents, permettant aux participants de comprendre comment les récompenses sont calculées et distribuées.
+\* **Sécurité:** Le mécanisme de distribution est sécurisé contre la manipulation et les abus, en utilisant des protections cryptographiques et basées sur des contrats intelligents pour garantir l'intégrité du processus de récompense.
 
 ## Conclusion
 
-The rewards in the Core Chain ecosystem play a crucial role in maintaining the security, vitality, and decentralization of the network. By aligning the incentives of various participants through a comprehensive and adaptable rewards system, Core Chain ensures ongoing engagement and contributes to the sustained growth and stability of the platform. This structured approach to incentivization is foundational to the success of Core Chain as a leading platform in the Bitcoin DeFi landscape.
+Les récompenses dans l'écosystème Core Chain jouent un rôle crucial dans le maintien de la sécurité, de la vitalité et de la décentralisation du réseau. En alignant les incitations des divers participants à travers un système de récompenses complet et adaptable, Core Chain assure un engagement continu et contribue à la croissance soutenue et à la stabilité de la plateforme. Cette approche structurée de l'incitation est fondamentale pour le succès de Core Chain en tant que plateforme leader dans le l'univers de la DeFi du Bitcoin.
