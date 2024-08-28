@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 👨‍💻 Comenzando
 
-Core Chain es la primera blockchain L1 compatible con EVM alineada con Bitcoin, diseñada para ser la plataforma de contratos inteligentes complementaria y altamente escalable de Bitcoin. Con más del **50%** del poder de hash de minería de Bitcoin y más de **4,800** en cantidad y más de **$313 Millones** en valor de Bitcoin en staking que ya están contribuyendo a su modelo de seguridad y, a través de la innovación revolucionaria de Staking de Bitcoin Sin Custodia, Core Chain está convirtiendo a Bitcoin tanto en el principal protector como el activo clave del futuro de DeFi.
+Core is the first Bitcoin-aligned, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. With over **50%** of Bitcoin mining hash power and more than **5,200** BTC, valued at over **$330 million**, staked and contributing to its security model, Core is unlocking Bitcoin as both the prime protector and central asset of the future of DeFi through the groundbreaking innovation of non-custodial Bitcoin staking.
 
 ![core-header](../static/img/core-header.png)
 
