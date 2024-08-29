@@ -1,8 +1,8 @@
 ---
-sidebar_label: Security
+sidebar_label: Sécurité
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about the Security Model of Core Chain
+description: Apprenez-en plus sur le modèle de sécurité de Core Chain
 ---
 
 # Core Chain's Approach to Security
