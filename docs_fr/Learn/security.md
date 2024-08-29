@@ -5,19 +5,19 @@ sidebar_position: 2
 description: Apprenez-en plus sur le modèle de sécurité de Core Chain
 ---
 
-# Core Chain's Approach to Security
+# Approche de Core Chain en matière de sécurité
 
 ---
 
-## Overview
+## Aperçu
 
-Core Chain, as a revolutionary Bitcoin-aligned EVM blockchain, leverages the Satoshi Plus consensus mechanism to ensure an optimal blend of security, decentralization, and scalability. This approach harnesses the intrinsic security features of Bitcoin while enabling robust smart contract functionality and DeFi integration, making it a pioneering platform in the blockchain space.
+Core Chain, en tant que blockchain EVM alignée sur Bitcoin, exploite le mécanisme de consensus Satoshi Plus pour garantir un mélange optimal de sécurité, de décentralisation et d'évolution. Cette approche tire parti des caractéristiques de sécurité intrinsèques du Bitcoin tout en permettant une fonctionnalité robuste des contrats intelligents et une intégration à la DeFi, faisant de cette plateforme une pionnière dans l'espace blockchain.
 
-## Security Components
+## Éléments de sécurité
 
-### 1. Delegated Proof of Work (DPoW) and Delegated Proof of Stake (DPoS)
+### 1. Preuve de Travail Déléguée (DPoW) et Preuve d’Enjeu Déléguée (DPoS)
 
-Core Chain incorporates these two powerful mechanisms to form a balanced and secure blockchain environment. The DPoW extends the proven security model of Bitcoin by allowing miners to delegate hashing power to Core Chain, thereby benefiting from Bitcoin’s immense hash rate and security pedigree. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting a decentralized network governance and additional security layers.
+Core Chain intègre ces deux mécanismes puissants pour former un environnement blockchain équilibré et sécurisé. The DPoW extends the proven security model of Bitcoin by allowing miners to delegate hashing power to Core Chain, thereby benefiting from Bitcoin’s immense hash rate and security pedigree. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting a decentralized network governance and additional security layers.
 
 ### 2. Validator Security
 
