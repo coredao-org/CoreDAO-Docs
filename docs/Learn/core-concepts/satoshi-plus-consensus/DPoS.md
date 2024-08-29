@@ -15,7 +15,7 @@ DPoS allows holders of Core's native CORE tokens to participate in the network's
 
 ## Step by Step Process
 
-1. **Staking CORE Tokens:** CORE token holders decide to participate in network security by staking their tokens.
+1. **Staking CORE Tokens:** CORE token holders decide to participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token. 
 
 2. **Delegating to Validators:** Token holders delegate their staked CORE tokens to a chosen validator, assisting their hybrid score in the validator election process.
 
