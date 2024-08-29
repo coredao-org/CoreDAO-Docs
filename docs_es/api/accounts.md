@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ## Get CORE Balance for an Address
 
-Returns the CORE balance of a given address.
+Regresa el balance Core de una Cuenta dada.
 
 ```bash
 https://openapi.coredao.org/api
@@ -56,9 +56,9 @@ https://openapi.coredao.org/api
 
 Request Query Parameters
 
-<table><thead><tr><th width="166">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="166">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>clasificar</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -190,7 +190,7 @@ https://openapi.coredao.org/api
 
 Request Query Parameters
 
-<table><thead><tr><th width="147">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for internal transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="147">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for internal transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>terminación de bloque</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
 
 Sample Response
 
@@ -299,7 +299,7 @@ https://openapi.coredao.org/api
 
 Request Query Parameters
 
-<table><thead><tr><th width="170">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>the string representing the transaction hash to search for internal transactions</td></tr></tbody></table>
+<table><thead><tr><th width="170">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>La cadena representando el hash de transición para buscar transacciones internas.</td></tr></tbody></table>
 
 Sample Response
 
@@ -611,9 +611,9 @@ Usage:
 
 > Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=tokentx\\&contractaddress=0xF7a0b80681eC935d6dd9f3Af9826E68B99897d6D\\&address=0xcF17abb2CeA7e96eD1E35E0F3FAC919cFECad2F3\\&page=1\\&offset=5\\&startblock=0\\&endblock=999999999\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Parámetros requeridos de consulta
 
-<table><thead><tr><th width="196">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to search for ERC-20 transfers</td></tr><tr><td>contractaddress</td><td>the string representing the token contract address to search for ERC-20 transfers</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="196">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>La cadena representando la dirección para buscar las transferencias ERC-20</td></tr><tr><td>Dirección de contrato</td><td>La cadena representando el contrato de token para buscar transferencia ERC-20</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
 
 Sample Response
 
