@@ -1,13 +1,13 @@
 ---
-sidebar_label: Accounts
-description: Endpoints related to Accounts
+sidebar_label: Cuentas
+description: Endpoints relacionados a cuentas.
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Accounts
+# Cuentas
 
-## Get CORE Balance for an Address
+## Obtener Balance Core para  una dirección.
 
 Regresa el balance Core de una Cuenta dada.
 
@@ -19,13 +19,14 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=balance\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Intentar este endpoint en tu [**navegador**]
+> (https://openapi.coredao.org/api?module=account\\&action=balance\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&apikey=b4d33c1698e4446dbf0f05f520117a76).
 
-Request Query Parameters
+Parámetros de consulta requeridos
 
-<table><thead><tr><th width="146">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to check for balance</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
+<table><thead><tr><th width="146">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>La cadena que representa la dirección para consultar el balance</td></tr><tr><td>Etiqueta</td><td>La cadena predefinida en el parámetro de bloque, ya sea la más temprana, pendiente o última</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -35,9 +36,9 @@ Sample Response
 }
 ```
 
-## Get a list of Transactions by Address
+## Obtener lista de Transacciones por Dirección
 
-Returns the list of transactions of a given address.
+Regresa una lista de transacciones de una Dirección dada.
 
 ```bash
 https://openapi.coredao.org/api
@@ -52,11 +53,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=txlist\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&startblock=0\\&endblock=99999999\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Intenta este endpoint en tú [**navegador**] (https://openapi.coredao.org/api?module=account\\&action=txlist\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&startblock=0\\&endblock=99999999\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76).
 
-Request Query Parameters
+Parámetros de Consulta requeridos.
 
-<table><thead><tr><th width="166">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>clasificar</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="166">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>La cadena que representa la dirección para buscar las transacciones</td></tr><tr><td>Comienzo de boque</td><td>El interger del número de bloque para empezar a buscar transacciones</td></tr><tr><td>Terminación de bloque</td><td>El interger del número de bloque que para la búsqueda de transacciones.</td></tr><tr><td>Pagina</td><td>El interger de número de página, si la paginación esta habilitada.</td></tr><tr><td>compensación</td><td>El número de transacciones desplegadas porpáginaa</td></tr><tr><td>clasificar</td><td>La preferencia de clasificación, user clasificación ascendente por ascendiendo y descendente por descendiendo</td></tr></tbody></table>
 
 Ejemplo de respuesta
 
@@ -169,9 +170,9 @@ Ejemplo de respuesta
 }
 ```
 
-## Get a list of 'Internal' Transactions by Address
+## Obtener una lista de transacciones "internas" por dirección
 
-Returns the list of internal transactions performed by an address, with optional pagination.
+Regresa una lista interna de transacciones realizadas por una dirección, con opción de paginación.
 
 ```bash
 https://openapi.coredao.org/api
@@ -188,11 +189,11 @@ https://openapi.coredao.org/api
 
 > Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&address=0x0000000000000000000000000000000000001004\\&startblock=0\\&endblock=99999999\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Parámetro de consulta requerida
 
-<table><thead><tr><th width="147">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the addresses to search for internal transactions</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>terminación de bloque</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="147">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>la cadena representando La dirección para buscar transacciones internas</td></tr><tr><td>comienzo de bloque</td><td>el interger de número de bloque para comenzar a buscar transacciones</td></tr><tr><td>terminación de bloque</td><td>el interger número de bloque para dejar de buscar por transacciones</td></tr><tr><td>página</td><td>el interger número de página, si la paginación esta habilitada</td></tr><tr><td>compensacion</td><td>el número de transacciones desplegadas por página</td></tr><tr><td>clasificación</td><td>La clasificación de preferencia, usar ascendente por ascendiendo y descendente por descendiendo</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -283,9 +284,9 @@ Sample Response
 }
 ```
 
-## Get 'Internal' Transactions by Transaction Hash
+## Obtener transacciones "internas" por Hash de Transacción
 
-Returns the list of internal transactions performed within a transaction.
+Regresa una lista interna de transacciones realizadas dentro de una transición.
 
 ```bash
 https://openapi.coredao.org/api
@@ -295,13 +296,14 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&txhash=0x2fb68017c83b3b0b93c88f9eb5208898b148323e7cc80ed04ac726fe497b15c3\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Intenta este endpoint en tu [**navegador**]
+> (https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&txhash=0x2fb68017c83b3b0b93c88f9eb5208898b148323e7cc80ed04ac726fe497b15c3\\&apikey=b4d33c1698e4446dbf0f05f520117a76)
 
-Request Query Parameters
+Parámetro de consulta requerida
 
-<table><thead><tr><th width="170">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>La cadena representando el hash de transición para buscar transacciones internas.</td></tr></tbody></table>
+<table><thead><tr><th width="170">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>hash de transacción</td><td>La cadena representando el hash de transición para buscar transacciones internas.</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -472,9 +474,9 @@ Sample Response
 }
 ```
 
-## Get 'Internal' Transactions by Block Range
+## Obtener Transacciones "internas" por Rango de Bloque
 
-Returns the list of internal transactions performed within a block range, with optional pagination.
+Regresa una lista de transacciones internas realizadas dentro del rango de bloque, con opción de paginación.
 
 ```bash
 https://openapi.coredao.org/api
@@ -488,13 +490,14 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&startblock=0\\&endblock=2702578\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Intenta este endpoint en tú [**navegador**]
+> (https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&startblock=0\\&endblock=2702578\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76)
 
-Request Query Parameters
+Parámetro de consulta requerida
 
-<table><thead><tr><th width="185">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="185">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>El interger número de bloque para comenzar a buscar por transacciones</td><td>el interger número de bloque para comenzar a buscar por transacciones</td></tr><tr><td>terminación de bloque</td><td>el interger número de bloque para dejar de buscar por transacciones</td></tr><tr><td>página</td><td>el interger número de página, si la paginación esta habilitada</td></tr><tr><td>compensación</td><td>el número de transacciones desplegadas por página</td></tr><tr><td>clasificación</td><td>la preferencia de clasificación, usar ascendente por ascendiendo y descendente por descendiendo</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -585,9 +588,9 @@ Sample Response
 }
 ```
 
-## Get a list of 'ERC-20 Token Transfer Events' by Address
+## Obtener una lista de "eventos de Transferencia de Tokens ERC-20 " por Dirección
 
-Returns the list of ERC-20 tokens transferred by an address, with optional filtering by token contract.
+Regresa una lista de tokens ERC-20 transferidos por una dirección, con opción de filtrado por contrato de token.
 
 ```bash
 https://openapi.coredao.org/api
@@ -603,19 +606,19 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-Usage:
+Uso:
 
-- ERC-20 transfers from an address, specify the address parameter
-- ERC-20 transfers from a contract address, specify the contract address parameter
-- ERC-20 transfers from an address filtered by a token contract, specify both address and contract address parameters.
+- Transferencias ERC-20 por una dirección, especificar la dirección de parámetro
+- Transferencias ERC-20 por dirección de contrato, especificar la dirección de contrato como parámetro
+- Transferencias ERC-20 de una dirección filtrada por contrato de token, especificar ambos la dirección y dirección del contrato como parámetros.
 
 > Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=tokentx\\&contractaddress=0xF7a0b80681eC935d6dd9f3Af9826E68B99897d6D\\&address=0xcF17abb2CeA7e96eD1E35E0F3FAC919cFECad2F3\\&page=1\\&offset=5\\&startblock=0\\&endblock=999999999\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Parámetros requeridos de consulta
 
-<table><thead><tr><th width="196">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>La cadena representando la dirección para buscar las transferencias ERC-20</td></tr><tr><td>Dirección de contrato</td><td>La cadena representando el contrato de token para buscar transferencia ERC-20</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="196">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>Dirección</td><td>La cadena representando la dirección para buscar las transferencias ERC-20</td></tr><tr><td>Dirección de contrato</td><td>La cadena representando el contrato de token para buscar transferencia ERC-20</td></tr><tr><td>página</td><td>el interger número de página, si la paginación esta habilitada</td></tr><tr><td>compensacion</td><td>el número de transacciones desplegado por página</td></tr><tr><td>comienzo de bloque</td><td>el interger número de bloque para empezar a buscar transacciones</td></tr><tr><td>terminar de bloque</td><td>el interger número de bloque para dejar de buscar transcaciones</td></tr><tr><td>classificacion</td><td>La clasificación de preferencia, usar ascendente para clasificar por ascendiendo y descendiente para descendiendo</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -751,9 +754,9 @@ Sample Response
 }
 ```
 
-## Get a list of 'ERC-721 Token Transfer Events' by Address
+## Obtiene una lista de "Eventos de transferencia de Token ERC-721" por direccion.
 
-Returns the list of ERC-721 (NFT) tokens transferred by an address, with optional filtering by token contract.
+Regresa una lista de Tokens ERC-721 (NFT) transferidos por una dirección, con opción de filtrado por contrato de token.
 
 ```bash
 https://openapi.coredao.org/api
@@ -769,19 +772,19 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-Usage:
+Uso
 
-- ERC-721 transfers from an address, specify the address parameter
-- ERC-721 transfers from a contract address, specify the contract address parameter
-- ERC-721 transfers from an address filtered by a token contract, specify both address and contract address parameters.
+- Transferencias ERC-721 de una dirección, especificar la dirección como parámetro
+- Transferencias ERC-721 de una dirección de contrato, especificar la dirección de contrato como parámetro
+- Transferencias ERC-721 de una dirección filtrada por un contrato de token, especificar ambas direcciones y dirección de contrato como parámetro
 
 > Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=tokennfttx\\&contractaddress=0x75eB562081dE66B982Df285Ac3922E143936D718\\&address=0x704614399D7889AC60dD713319B664dB8c1c026a\\&page=1\\&offset=5\\&startblock=0\\&endblock=999999999\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Parámetro de consulta requerida
 
-<table><thead><tr><th width="192">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to search for ERC-721 transfers</td></tr><tr><td>contractaddress</td><td>the string representing the token contract address to search for ERC-721 transfers</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr><tr><td>startblock</td><td>the integer block number to start searching for transactions</td></tr><tr><td>endblock</td><td>the integer block number to stop searching for transactions</td></tr><tr><td>sort</td><td>the sorting preference, use asc to sort by ascending and desc to sort by descending</td></tr></tbody></table>
+<table><thead><tr><th width="192">Parámetro</th><th>Descripcion</th></tr></thead><tbody><tr><td>dirección</td><td>la cadena representando a una dirección para buscar transferencias ERC-721</td></tr><tr><td>dirección de contrato</td><td>la cadena representando a una dirección de contrato de token para buscar transferencias ERC-721</td></tr><tr><td>página</td><td>el interger de número de página, si la paginación esta habilitada</td></tr><tr><td>compensación</td><td>el número de transacciones desplegadas por página</td></tr><tr><td>comienzo de bloque</td><td>el interger  número de bloque para comenzar a buscar por transacciones</td></tr><tr><td>terminación de bloque</td><td>the Interjet número de bloque para dejar de buscar por transcaciones</td></tr><tr><td>clasificación</td><td>la clasificación de preferencia, usar ascendiendo para ascendente y descendiendo para descendente</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de respuesta
 
 ```json
 {
@@ -934,11 +937,11 @@ https://openapi.coredao.org/api
 
 > Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=account\\&action=getminedblocks\\&address=0x258f1d17e3DC298C0276C824238422ddeAcA1619\\&blocktype=blocks\\&page=1\\&offset=5\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Parámetros de consulta requerida
 
-<table><thead><tr><th width="181">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to search for validated blocks</td></tr><tr><td>blocktype</td><td>the string pre-defined block type, blocks for canonical blocks</td></tr><tr><td>page</td><td>the integer page number, if pagination is enabled</td></tr><tr><td>offset</td><td>the number of transactions displayed per page</td></tr></tbody></table>
+<table><thead><tr><th width="181">Parámetro</th><th>Descripción</th></tr></thead><tbody><tr><td>dirección</td><td>la cadena representando la dirección para buscar por bloques validados</td></tr><tr><td>tipo de boque</td><td>la cadena predefinida de tipo de bloque, bloques para boques canónicos</td></tr><tr><td>página</td><td>el interger número de página, si la paginacion esta habilitada</td></tr><tr><td>compensacion</td><td>el numero de transacciones desplegadas por página</td></tr></tbody></table>
 
-Sample Response
+Ejemplo de Respuesta
 
 ```json
 {
