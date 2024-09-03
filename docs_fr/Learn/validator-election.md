@@ -1,5 +1,5 @@
 ---
-sidebar_label: Validator Election
+sidebar_label: Élection des Validateurs
 hide_table_of_contents: false
 sidebar_position: 2
 description: Learn about Validator Election Process
