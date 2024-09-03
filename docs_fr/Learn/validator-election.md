@@ -31,27 +31,27 @@ Le processus d'élection des validateurs dans Satoshi Plus implique des étapes 
    - Les détenteurs de tokens CORE et BTC stakent et délèguent leurs tokens aux candidats validateurs. Cette délégation est une forme de vote, où le poids de chaque vote correspond au nombre de tokens stakés.
 
 2. **Délégation de la Puissance de Hachage**:
-   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. This process integrates Bitcoin's mining power into Core Chain's security mechanism.
+   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. Ce processus intègre la puissance de minage du Bitcoin dans le mécanisme de sécurité de Core Chain.
 
-3. **Validator Selection**:
-   - Validators are selected based on the total support they receive, calculated by combining staked tokens and delegated hash power. The selection equation is:
+3. **Sélection des Validateurs**:
+   - Les validateurs sont sélectionnés en fonction du soutien total qu'ils reçoivent, calculé en combinant les tokens stakés et la puissance de hachage déléguée. L'équation de sélection est la suivante :
 
 $$
-   Validator Score = \alpha * {Staked Tokens} + \beta * {Delegated Hash Power} 
+   Score du Validateur = \alpha * {Tokens Stakés} + \beta * {Puissance de Hachage Déléguée} 
 $$
 
-- In this equation, $\alpha$ and $\beta$ are weights assigned to staked tokens and delegated hash power, respectively, balancing their contributions to the election process.
+- Dans cette équation, $\alpha$ et $\beta$ sont des poids attribués aux tokens stakés et à la puissance de hachage déléguée, respectivement, équilibrant leurs contributions au processus d'élection.
 
-4. **Validator Set Formation**:
-   A set of Validators is formed from those with the highest scores. This set is dynamically updated to reflect ongoing changes in stake delegations and hash power allocations. There are two steps involved in validator election.
+4. **Formation du Groupe de Validateurs**:
+   Un groupe de validateurs est formé à partir de ceux ayant les scores les plus élevés. Ce groupe est mis à jour dynamiquement pour refléter les changements continus dans les délégations de stake et les allocations de puissance de hachage. Il y a deux étapes dans l'élection des validateurs.
 
-5. Hybrid scores are calculated for all validators in the network with the following equation. Before we added bitcoin staking, we calculated hybrid score for each validator with the following equation:
+5. Les scores hybrides sont calculés pour tous les validateurs du réseau avec l'équation suivante. Avant d'ajouter le staking de Bitcoin, nous calculions le score hybride pour chaque validateur avec l'équation suivante:
 
 $$
  S = \frac{rHp}{tHp} * m + \frac{rSp}{tSp} * (1 - m) 
 $$
 
-Where:
+Où:
 
 - $rHp$ is the Bitcoin hash power delegated to a validator, measured as the total number of Bitcoin blocks with that validator’s information written into their coinbase transactions;
 - $tHp$ is the total hash power on Core Chain;
