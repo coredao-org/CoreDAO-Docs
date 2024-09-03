@@ -17,7 +17,7 @@ Core Chain, en tant que blockchain EVM alignée sur Bitcoin, exploite le mécani
 
 ### 1. Preuve de Travail Déléguée (DPoW) et Preuve d’Enjeu Déléguée (DPoS)
 
-Core Chain intègre ces deux mécanismes puissants pour former un environnement blockchain équilibré et sécurisé. The DPoW extends the proven security model of Bitcoin by allowing miners to delegate hashing power to Core Chain, thereby benefiting from Bitcoin’s immense hash rate and security pedigree. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting a decentralized network governance and additional security layers.
+Core Chain intègre ces deux mécanismes puissants pour former un environnement blockchain équilibré et sécurisé. La DPoW étend le modèle de sécurité éprouvé du Bitcoin en permettant aux mineurs de déléguer leur puissance de hachage à Core Chain, bénéficiant ainsi du taux de hachage immense du Bitcoin et de sa sécurité. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting a decentralized network governance and additional security layers.
 
 ### 2. Validator Security
 
