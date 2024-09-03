@@ -59,7 +59,7 @@ Où:
 - $rH$ est les récompenses reçues par le validateur en raison de la puissance de hachage qui lui est déléguée (DPoW)
 - $rS$ = récompenses reçues par le validateur en raison des CORE qui lui sont délégués (DPoS)
 - $rB$ = récompenses du validateur attribuées au staking de BTC
-- $R$ = est la récompense globale attribuée à tous les délégués
+- $R$ = récompense globale attribuée à tous les délégués
 
 Pour compléter, voici trois autres ratios d'intérêt:
 
@@ -78,7 +78,7 @@ $$
 Où:
 
 - $rHu$ = récompense de puissance de hachage par unité;
-- $rSu$ est la récompense de staking de token CORE par unité;
+- $rSu$ = récompense de staking de token CORE par unité;
 - $rBu$ is the BTC staking rewards per unit;
 
 Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi le groupe de validateurs pour la puissance de hachage déléguée et le stake délégué. De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations.
