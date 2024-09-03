@@ -2,36 +2,36 @@
 sidebar_label: Élection des Validateurs
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about Validator Election Process
+description: Découvrez le processus d'élection des validateurs
 ---
 
-# Validator Election Process on the Core Chain Network
+# Processus d'Élection des Validateurs sur le Réseau Core Chain
 
 ---
 
-## Overview
+## Aperçu
 
-Validators are a crucial part of the Core blockchain. In addition to the fact that they handle transaction validation and block production, the validator election process is where all the components, i.e., DPoW, DPoS and Non-custodial Bitcoin Staking, of Satoshi Plus consensus come together. The Validator election process is a central feature of the Satoshi Plus consensus mechanism employed by Core Chain. This process ensures the integrity, security, and efficiency of the blockchain by electing Validators responsible for validating transactions and creating new blocks.
+Les validateurs sont une partie cruciale de la blockchain Core. En plus de gérer la validation des transactions et la production de blocs, le processus d'élection des validateurs est le point de convergence de tous les composants du consensus Satoshi Plus, à savoir la DPoW, la DPoS et le staking non-custodial du Bitcoin. Le processus d'élection des validateurs est une fonctionnalité centrale du mécanisme de consensus Satoshi Plus utilisé par Core Chain. Ce processus assure l'intégrité, la sécurité et l'efficacité de la blockchain en élisant les validateurs responsables de la validation des transactions et de la création de nouveaux blocs.
 
-## Importance of Validator Election
+## Importance de l'Élection des Validateurs
 
-- **Security and Integrity**: Validators maintain the blockchain's integrity, making a robust election process crucial for ensuring that only the most reliable nodes manage the blockchain ledger.
+- **Sécurité et Intégrité**: Les validateurs maintiennent l'intégrité de la blockchain, rendant un processus d'élection robuste crucial pour garantir que seuls les nœuds les plus fiables gèrent le registre de la blockchain.
 
-- **Decentralization**: The election process allows miners and stakers to participate in Validator selection, promoting decentralization and preventing the concentration of control.
+- **Décentralisation**: Le processus d'élection permet aux mineurs et aux stakers de participer à la sélection des validateurs, favorisant ainsi la décentralisation et empêchant la concentration du contrôle.
 
-- **Incentive Alignment**: Stakeholders are incentivized to support effective Validators, aligning interests across the network. Validators and their supporters (miners and stakers) receive rewards, ensuring accountability and continued participation.
+- **Alignement des Incitations**: Les parties prenantes sont incitées à soutenir les validateurs efficaces, alignant ainsi les intérêts à travers le réseau. Les validateurs et leurs supporters (mineurs et stakers) reçoivent des récompenses, garantissant la responsabilité et la participation continue.
 
-- **Efficiency and Scalability**: Competent Validators enhance the network's transaction handling capacity, crucial for performance and scalability.
+- **Efficacité et Évolutivité**: Des validateurs compétents améliorent la capacité de traitement des transactions du réseau, ce qui est crucial pour la performance et l'évolutivité.
 
-## Workflow of the Validator Election Process
+## Déroulement du Processus d'Élection des Validateurs
 
-The Validator election process in Satoshi Plus involves key steps, supported by specific equations to quantify stake and hash power contributions:
+Le processus d'élection des validateurs dans Satoshi Plus implique des étapes clés, soutenues par des équations spécifiques pour quantifier les contributions en staking et en puissance de hachage:
 
-1. **Stake Delegation**:
-   - CORE and BTC token holders stake and delegate their tokens to Validator candidates. This delegation is a form of voting, where the weight of each vote corresponds to the number of staked tokens.
+1. **Délégation de Stake**:
+   - Les détenteurs de tokens CORE et BTC stakent et délèguent leurs tokens aux candidats validateurs. Cette délégation est une forme de vote, où le poids de chaque vote correspond au nombre de tokens stakés.
 
-2. **Hash Power Delegation**:
-   - Bitcoin miners delegate a portion of their hash power by specifying their preferred Validators in the Bitcoin blocks they mine. This process integrates Bitcoin's mining power into Core Chain's security mechanism.
+2. **Délégation de la Puissance de Hachage**:
+   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. This process integrates Bitcoin's mining power into Core Chain's security mechanism.
 
 3. **Validator Selection**:
    - Validators are selected based on the total support they receive, calculated by combining staked tokens and delegated hash power. The selection equation is:
