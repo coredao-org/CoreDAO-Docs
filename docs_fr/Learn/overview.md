@@ -1,47 +1,70 @@
 ---
-sidebar_label: Overview
+sidebar_label: Vue d'ensemble
 hide_table_of_contents: false
 sidebar_position: 2
+description: Obtenez une vue d'ensemble de Core Chain - son objectif, sa mission et sa vision future
 ---
 
-# stCORE - Liquid Staking on Core Chain
+# Vue d'ensemble de Core Chain
 
 ---
 
-Core Blockchain offers several innovative solutions like Non-Custodial BTC Staking, coreBTC, and Liquid staking in the form of stCORE for users to make the most of their CORE holdings. Liquid staking is a mechanism that allows CORE holders to earn Core Consensus rewards while maintaining the liquidity of their assets.
+## Introduction
 
-## What is Liquidity Staking?
+Core Chain est conçue comme la première blockchain Machine Virtuelle d'Ethereum (EVM) alignée sur Bitcoin. Elle introduit un mécanisme de consensus novateur appelé Satoshi Plus, qui améliore l'utilité du Bitcoin en l'intégrant dans le secteur de la finance décentralisée (DeFi) via des contrats intelligents et d'autres fonctionnalités blockchain supplémentaires.
 
-Staking CORE helps secure the network but prevents token holders from participating in different DeFi protocols as their tokens cannot be used for other purposes while staked. Minting a new Liquidity Staking Token (stCORE) unlocks a world of possibilities, allowing token holders to utilize their tokens in different interactions while continuing to earn the staking rewards. Essentially, liquid staking unlocks liquidity for staked tokens, building upon existing staking systems.
+## Objectif et Mission
 
-## Primary Purpose of stCORE
+L'objectif principal de Core Chain est de libérer le potentiel de Bitcoin dans l'écosystème DeFi, appelé BTCFi, en tirant parti de la valeur de marché considérable du Bitcoin pour sécuriser une plateforme de contrats intelligents décentralisée, sans permission et évolutive. Cette initiative vise à combler les limitations inhérentes du Bitcoin avec les capacités étendues des contrats intelligents, élargissant ainsi l'utilité et l'application du Bitcoin sans compromettre ses attributs fondamentaux de sécurité et de décentralisation. De plus, le mécanisme de consensus de Core, Satoshi Plus, est une combinaison pionnière de Preuve de Travail Déléguée (DPoW), Preuve d’Enjeu Déléguée (DPoS) et de Staking Non-Custodial du Bitcoin. Grâce à la DPoW, il exploite la puissance de hachage du réseau de mineurs de Bitcoin. Par le biais de la DPoS, il permet non seulement le staking des tokens CORE, mais aussi à tout détenteur de BTC d’utiliser des verrouillages temporels absolus pour déléguer leurs Bitcoin aux validateurs Core en échange de récompenses en tokens. La combinaison des mineurs de BTC, des stakers de BTC et des stakers de CORE fournit un mécanisme sécurisé et transparent pour assurer la sécurité du réseau Core. En libérant simultanément la DeFi pour le Bitcoin et en s’appuyant sur les mineurs de BTC, les stakers de BTC et les stakers CORE, Core vise à offrir une plateforme de contrats intelligents évolutive, sécurisée par Bitcoin et alignée sur celui-ci.
 
-The primary purposes of introducing liquid staking via stCORE on Core Chain are:
+## Technologie de Core Chain
 
-- Improve user experience
-- Bring more utilities of CORE token
+1. **Consensus Satoshi Plus:** Ce mécanisme de consensus innovant combine la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS), et le Staking Non-Custodial de Bitcoin. En agissant ainsi, Satoshi Plus vise à utiliser l'infrastructure de minage de Bitcoin en intégrant les mineurs et les pools de minage de Bitcoin dans le cadre de sécurité d’une plateforme de contrats intelligents évolutive. Satoshi Plus exploite la puissance de hachage des mineurs de Bitcoin tout en intégrant un vote basé sur le stake, assurant ainsi la sécurité de Core Chain avec un modèle de consensus hybride robuste, économe en énergie et évolutif. Ce consensus facilite non seulement la participation des mineurs de Bitcoin, mais permet également aux détenteurs de tokens CORE de participer activement à la gouvernance du réseau.
+   - **Preuve de Travail Déléguée (DPoW):** Ce composant permet aux mineurs de Bitcoin de participer directement à la sécurité de Core Chain en recyclant leur puissance de hachage. Les mineurs peuvent déléguer leur puissance de hachage aux validateurs Core, gagnant des récompenses supplémentaires en tokens CORE, les incitant ainsi à participer continuellement au réseau Bitcoin.
+   - **Preuve d’Enjeu Déléguée (DPoS):** Les détenteurs de tokens CORE peuvent staker leurs tokens avec des validateurs Core, influençant la gouvernance du réseau et gagnant des récompenses. Ce mécanisme favorise un modèle de gouvernance démocratique et décentralisé où tous les participants peuvent jouer un rôle dans les décisions du réseau.
+   - **Staking Non-Dépositaire de Bitcoin:** Une fonctionnalité permettant aux détenteurs de Bitcoin de staker leurs bitcoins directement sur la blockchain sans en perdre le contrôle. Cela est réalisé grâce à des verrouillages temporels absolus qui garantissent que les bitcoins restent sous le contrôle du détenteur tout en participant au staking. Cela signifie que les utilisateurs peuvent participer au consensus du réseau sans transférer la propriété de leurs monnaies. Les stakers peuvent verrouiller leurs bitcoins dans des contrats à verrouillage temporel directement sur la blockchain Bitcoin, contribuant à la sécurité et aux processus décisionnels du réseau, tout en gagnant des récompenses en tokens CORE.
 
-For the moment users can stake CORE tokens to individual validators directly through https://stake.coredao.org. However, there are two drawbacks raised by the community
+2. **Capacités Avancées de Contrats Intelligents**
+   - **Compatibilité EVM:** Garantit que les développeurs peuvent facilement porter des dApps existantes basées sur Ethereum sur Core Chain sans modifications majeures, encourageant ainsi l'adoption et la croissance de l'écosystème Core Chain.
+   - **Wrapped Bitcoin Natif sur Core (coreBTC):** Une solution décentralisée pour le wrapping Bitcoin, permettant de l’utiliser de manière transparente sur Core Chain pour les contrats intelligents et autres transactions tout en maintenant un lien 1:1 avec Bitcoin.
 
-- There is no auto-compounding feature, and users need to claim rewards and restake them to validators manually everyday.
-- The hash stakes from BTC mining pools are less fungible and not as stable as CORE stakes, which causes affected validators’ APR to change more dramatically.
+3. **Améliorations de la Sécurité**
+   - **Validation Améliorée des Transactions:** En tirant parti du modèle de sécurité prouvé du Bitcoin, Core Chain met en œuvre des mécanismes robustes de validation des transactions pour garantir l'intégrité du réseau et prévenir la fraude.
+   - **Nœuds Gardiens:** Ces nœuds surveillent le réseau pour détecter tout signe d'activité malveillante et peuvent intervenir pour corriger ou pénaliser les mauvais acteurs, renforçant ainsi la sécurité du réseau.
 
-On the other hand, we are also seeking ways to add more utilities to the CORE token itself. By introducing stCORE, we expect the CORE token itself to also benefit. E.g. to provide CORE/stCORE liquidity pairs in decentralized exchanges.
+4. **Fonctionnalités d’Interopérabilité**
+   - **Swaps Atomic "trustless":** Facilite les échanges directs et "trustless" entre Bitcoin, Core Chain, et d'autres chaînes compatibles EVM, améliorant la liquidité et l'engagement des utilisateurs à travers différents écosystèmes blockchain.
+   - **HTLC (Contrats Verrouillés par Hachage):** Permet des transactions sécurisées et limitées dans le temps entre blockchains, ajoutant une couche supplémentaire de sécurité et de fonctionnalité pour les interactions inter-chaînes.
 
-## Steps involved in Liquid Staking on Core Chain
+5. **Utilisation et Accessibilité**
+   - **Interfaces simplifiée:** Des efforts sont en cours pour s'assurer que les utilisateurs techniques et non techniques peuvent interagir facilement avec Core Chain via des portefeuilles et interfaces faciles d’utilisation.
+   - **Outils de Développement Complets:** Une suite d'outils et de documentation est mise à disposition pour soutenir les développeurs dans la création, le déploiement et la gestion d'applications sur Core Chain.
 
-1. **Staking Setup:** To participate in Core liquid staking, users need to convert their CORE holdings into a staked CORE (stCORE) format. This involves locking up a certain amount of CORE and depositing it into the stCORE staking contract, which will automatically delegate the CORE to selected validators on the chain.
+6. **Gouvernance et Engagement Communautaire**
+   - **Processus de Gouvernance Transparent:** Core Chain favorise un processus décisionnel transparent et inclusif, permettant à la communauté de proposer et de voter sur des changements au protocole.
+   - **Programmes d'Incentive pour la Communauté:** Des initiatives sont conçues pour récompenser les membres de la communauté pour leurs contributions à l'écosystème, que ce soit à travers le développement, l'éducation ou la participation à la gouvernance.
 
-2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens,, i.e., stCORE. These tokens represent their staked CORE holdings and can be freely traded or transferred while still earning staking rewards.
+## Objectifs Stratégiques
 
-3. **Staking Rewards:** Users can earn annualized return on holding stCORE which is the projected yearly increase in its conversion ratio with CORE. This means that users can exchange for more CORE when they burn their stCORE.
+- **Interopérabilité et Expansion:** Core Chain prévoit d’introduire des atomic swaps "trustless" entre Bitcoin, Core Chain et d'autres chaînes EVM, augmentant ainsi l'interopérabilité au sein de l'écosystème blockchain.
+- **Améliorations de la Tokenomics:** Le wrapped bitcoin natif sur Core (coreBTC) et d'autres améliorations liées à Bitcoin visent à accroître la liquidité et la portée fonctionnelle de Bitcoin dans diverses applications financières.
+- **Engagement Communautaire et des Parties Prenantes:** Core Chain met un fort accent sur l'implication de la communauté et les avantages pour les parties prenantes, garantissant que les mineurs et les détenteurs de tokens (BTC/CORE) jouent un rôle intégral dans le consensus de la plateforme et sont récompensés en conséquence.
 
-## Benefits of Liquid Staking on Core Chain
+## État de l’Écosystème Core
 
-1. **Liquidity:** One of the major advantages of liquid staking on Core Chain is that it allows users to maintain the liquidity of their CORE holdings. Unlike the traditional staking mechanisms offered by other platforms, where funds are locked for a specific period, Core liquid staking provides flexibility by enabling users to trade or transfer stCORE tokens without waiting for the staking period to end. In the CORE staking model, anyone can unstake their CORE anytime, so they don't really have to wait for staking period to end. Our CORE staking model is "stake & earn", "unstake & stop earning". So it's locked if you want the earning.
+De nombreux protocoles dans l'écosystème de Core Chain se concentrent sur BTC et ses dérivés (i.e, les actifs natifs de Bitcoin tels que les Ordinals NFTs). BTC est largement sous-utilisé, car la programmation limitée de Bitcoin Script rend difficile l'activation de BTC dans les protocoles DeFi classiques tout en maintenant la garde des actif(s). Avec un mécanisme de consensus intégré à celui de Bitcoin, Core Chain vise à offrir un environnement DeFi pour que les protocoles utilisent des actifs BTC avec des hypothèses de confiance minimales. Core propose des subventions et des programmes pour les développeurs, comme [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https://ignition.coredao.org/) et le [Programme d'Incentive des Développeurs Core](https://coredao.org/initiatives/incentiveprogram), afin d'inciter la création de projets innovants sur Core Chain et de catalyser davantage de croissance autour de Bitcoin DeFi. Vous pouvez consulter [ici](https://coredao.org/explore/ecosystem) l'écosystème en pleine expansion de Core Chain.
 
-2. **Earning Potential:** Core liquid staking allows users to earn rewards on their staked CORE while still participating in the broader Core ecosystem. This presents an opportunity to benefit from both staking rewards and potential price appreciation of Core.
+## Vision Future
+
+La feuille de route inclut l'expansion de l'utilité et des performances de Bitcoin tout en maintenant les principes fondamentaux du réseau, avec des améliorations qui n’altèrent pas la couche de base. Core Chain envisage un écosystème blockchain plus interconnecté et fonctionnellement diversifié, où les forces fondamentales de Bitcoin sont exploitées pour soutenir de nouvelles technologies émergentes et applications dans la DeFi. Core Chain a une série de projets de développement sur sa feuille de route:
+
+- **Taxe locale des marchés:** Ceux-ci pourraient rendre les transactions plus prévisibles et potentiellement moins chères.
+- **Swaps atomic:** En utilisant les HTLC, les swaps atomic pourraient être utilisés à des fins générales.
+- **Améliorations du coreBTC:** Intégrer coreBTC avec le consensus Satoshi Plus de Core Chain et utiliser des portefeuilles multisignatures pourrait augmenter la sécurité de l'actif. De plus, les Lockers pourraient disposer de plus d'options de collatéral.
+- **coreBTC comme token de gaz:** Cela permettrait aux utilisateurs de payer les frais de transaction soit en CORE, soit en coreBTC, et d'interagir avec l'écosystème sans avoir à utiliser d'autres actifs que le BTC.
+- **LST de Bitcoin:** Cela permettrait aux stakers de BTC de gagner un rendement sur leur BTC tout en utilisant ce BTC pour diverses applications sur Core Chain.
+- **Restaking:** Cela permettrait à d'autres protocoles de bénéficier de la protection Bitcoin de Core Chain.
 
 ## Conclusion
 
-Liquid staking on Core Chain in the form of stCore provides an innovative and impressive option for CORE holders to maximize their returns while maintaining the liquidity of their assets. By following the necessary steps and being mindful of the associated risks, users can benefit from staking rewards while actively participating in the Core ecosystem. As the Core network evolves and improves with the each upgrade, Core liquid staking is likely to become an increasingly popular choice for CORE holders seeking to optimize their investment strategies.
+Core Chain représente une avancée significative dans l'évolution de la technologie blockchain en fusionnant efficacement le cadre de sécurité robuste de Bitcoin avec les vastes capacités des contrats intelligents. Elle vise à établir une nouvelle norme sur la manière dont les crypto-monnaies traditionnelles peuvent interagir avec et bénéficier du domaine en pleine expansion de la finance décentralisée.
