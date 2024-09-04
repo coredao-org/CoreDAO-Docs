@@ -53,41 +53,41 @@ $$
 
 Où:
 
-- $rHp$ is the Bitcoin hash power delegated to a validator, measured as the total number of Bitcoin blocks with that validator’s information written into their coinbase transactions;
-- $tHp$ is the total hash power on Core Chain;
-- $rSp$ is the amount of CORE tokens delegated by CORE holders to that validator;
-- $tSp$ is the total stake on Core Chain;
-- $m$ is a dynamic weighting that adjusts over time to ensure a smooth transition during ramp up;
+- $rHp$ est la puissance de hachage du Bitcoin déléguée à un validateur, mesurée par le nombre total de blocs de Bitcoin avec les informations de ce validateur inscrites dans leurs transactions coinbase;
+- $tHp$ est la puissance de hachage totale sur Core Chain;
+- $rSp$ est le montant de tokens CORE délégués par les détenteurs de CORE à ce validateur;
+- $tSp$ est le stake total sur Core Chain;
+- $m$ est un poids dynamique qui s'ajuste au fil du temps pour assurer une transition en douceur pendant la montée en puissance;
 
-With the implementation of staking, the new hybrid score is calculated with this equation:
+Avec la mise en œuvre du staking, le nouveau score hybride est calculé avec cette équation:
 
 $$
  S = \frac{rHp}{tHp} * m + \frac{rSp + rBp * n}{tSp + tBp * n} * (1 - m) 
 $$
 
-Where:
+Où:
 
-- $rHp$ is the Bitcoin hash power delegated to a validator, measured as the total number of Bitcoin blocks with that validator’s information written into their coinbase transactions;
-- $tHp$ is the total hash power on Core Chain
-- $rSp$ is the amount of CORE tokens delegated by CORE token holders to that validator
-- $tSp$ is the total amount of CORE tokens stake on Core Chain
-- $rBp$ is the amount of BTC tokens delegated by BTC holders to that validator
-- $tBp$ is the total amount of BTC staked on Core Chain
-- $m$ is a dynamic factor that controls the overall weights of hash power $(0 < m <1)$
-- $n$ is a dynamic factor that controls the voting power of each BTC vs. each CORE token.
+- $rHp$ est la puissance de hachage du Bitcoin déléguée à un validateur, mesurée par le nombre total de blocs Bitcoin avec les informations de ce validateur inscrites dans leurs transactions coinbase;
+- $tHp$ est la puissance de hachage totale sur Core Chain
+- $rSp$ est le montant de tokens CORE délégués par les détenteurs de tokens CORE à ce validateur
+- $tSp$ est le montant total de tokens CORE stakés sur Core Chain
+- $rBp$ est le montant de tokens BTC délégués par les détenteurs de BTC à ce validateur
+- $tBp$ est le montant total de BTC stakés sur Core Chain
+- $m$ est un facteur dynamique qui contrôle les poids globaux de la puissance de hachage $(0 < m <1)$
+- $n$ est un facteur dynamique qui contrôle le pouvoir de vote de chaque BTC par rapport à chaque token CORE.
 
-2. At the end of each round validators are ranked in order of their hybrid score, and the **23** validators with the highest hybrid scores are selected for the validator set in the next round.
+2. À la fin de chaque round, les validateurs sont classés en fonction de leur score hybride, et les **23** validateurs ayant les scores hybrides les plus élevés sont sélectionnés pour le groupe de validateurs du round suivant.
 
-Leaving aside the mathematical details, this is essentially a weighted, bicameral voting procedure. Bitcoin miners can vote for validators through their PoW (by writing validator information into the coinbase transaction on blocks they’ve already mined), CORE token holders can vote for a validator with their PoS (by delegating their tokens to it), and non-custodial bitcoin stakers can vote for a validator through the same mechanism. This delegated PoW and delegated PoS are weighted to determine the hybrid score.
+En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Les mineurs de Bitcoin peuvent voter pour des validateurs via leur PoW (en inscrivant les informations des validateurs dans la transaction coinbase des blocs qu'ils ont déjà minés), les détenteurs de tokens CORE peuvent voter pour un validateur avec leur PoS (en leur déléguant leurs tokens), et les stakers non-custodial de bitcoin peuvent voter pour un validateur par le même mécanisme. Cette délégation de PoW et de PoS est pondérée pour déterminer le score hybride.
 
-This is the “core” of the Core blockchain, the mechanism by which the network leverages the security and decentralization of the Bitcoin network and the scalability and composability of Ethereum. Letting Bitcoin miners and bitcoin stakers vote on validators allows Core Chain to avail itself of Bitcoin’s legendary robustness; and because Core Chain is EVM compatible, it’s possible to build smart contracts, dApps, and other applications on Core Chain that couldn’t be done without changes to the underlying Bitcoin protocol.
+C'est le noyau de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que l'évolutivité et la composition d'Ethereum. Permettre aux mineurs de Bitcoin et aux stakers de bitcoin de voter pour les validateurs permet à Core Chain de bénéficier de la robustesse légendaire de Bitcoin ; et comme Core Chain est compatible EVM, il est possible de développer des contrats intelligents, des dApps, et d'autres applications sur Core Chain, ce qui ne serait pas possible sans modifier le protocole de base de Bitcoin.
 
-5. **Block Production**:
-   - After election, all validators are sorted roughly in order of their hybrid score, and they take turns producing blocks in a **round-robin manner** before the process starts over again from the beginning. By _initially limiting the number of validators to **23**_, Satoshi Plus offers a higher transaction rate and increased scalability, but the number of validators is expected to increase over time as the network grows. What’s more, this mechanism provides additional security through improved efficiency and a tolerance for a large number of Byzantine players. Core Chain is secure as long as no more than $1 \over 3$ of the validators are malicious.
+5. **Production de Blocs**:
+   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **23**, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente au fil du temps à mesure que le réseau se développe. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core Chain est sécurisée tant que pas plus d'un tiers des validateurs ne soient malveillants.
 
-6. **Reward Distribution**:
+6. **Distribution des Récompenses**:
 
-   - Rewards are distributed based on contributions to network security, using the following formula:
+   - Les récompenses sont distribuées en fonction des contributions à la sécurité du réseau, en utilisant la formule suivante :
 
      $$
         rH = \frac{rHp}{tHp} * \frac{m}{S} * R
@@ -101,14 +101,14 @@ This is the “core” of the Core blockchain, the mechanism by which the networ
         rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S * R}
      $$
 
-     Where:
+     Où:
 
-     - $rH$ is the rewards received by the validator because of the hash power delegated to it (DPoW)
-     - $rS$ is the rewards received by the validator because of the CORE delegated to it (DPoS)
-     - $rB$ is validator rewards attributed to BTC staking
-     - $R$ is the overall rewards attributed to all delegators
+     - $rH$ sont les récompenses reçues par le validateur en raison de la puissance de hachage déléguée à celui-ci (DPoW)
+     - $rS$ sont les récompenses reçues par le validateur en raison des tokens CORE délégués à celui-ci (DPoS)
+     - $rB$ sont les récompenses attribuées au staking de BTC
+     - $R$ est la récompense globale attribuée à tous les délégateurs
 
-     For completeness, here are three other ratios of interest:
+     Pour compléter, voici trois autres ratios d'intérêt:
 
      $$
         rHu = \frac{rH}{rHp}
@@ -122,18 +122,18 @@ This is the “core” of the Core blockchain, the mechanism by which the networ
         rBu = \frac{rB}{rBp}
      $$
 
-     Where:
+     Où:
 
-     - $rHu$ is the validator hash power rewards per unit;
-     - $rSu$ is the CORE token staking rewards per unit;
-     - $rBu$ is the BTC staking rewards per unit;
+     - $rHu$ est la récompense de la puissance de hachage par unité;
+     - $rSu$ est la récompense de staking de tokens CORE par unité;
+     - $rBu$ est la récompense de staking de BTC par unité;
 
-   These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated stake (BTC and CORE).
+   Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (BTC et CORE).
 
-### Flow Diagram of the Validator Election Process
+### Diagramme de Flux du Processus d'Élection des Validateurs
 
-The following diagram visually represents the Validator election process in Satoshi Plus:
+Le diagramme suivant représente visuellement le processus d'élection des validateurs dans Satoshi Plus:
 
 ![validator-election-flow](../../../../static/img/staoshi-plus/validator-election-flow.png)
 
-This flowchart illustrates the cyclical nature of the validator election and their ongoing responsibilities within the Satoshi Plus consensus mechanism. It emphasizes how stake and hash power delegation directly influence validator selection, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.
+Ce schéma illustre la nature cyclique de l'élection des validateurs et leurs responsabilités continues au sein du mécanisme de consensus Satoshi Plus. Il met en évidence comment la délégation de stake et de puissance de hachage influence directement la sélection des validateurs, la production de blocs et la distribution des récompenses, conduisant à un réseau sécurisé, décentralisé et géré de manière efficace.
