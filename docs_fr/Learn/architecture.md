@@ -89,4 +89,4 @@ Core Chain introduit un nouveau mécanisme de consensus appelé Satoshi Plus, un
 
 ## Conclusion
 
-L'architecture de Core Chain est conçue pour exploiter la robustesse de la sécurité du Bitcoin tout en élargissant sa fonctionnalité aux contrats intelligents et à la DeFi. By integrating innovative consensus mechanisms and providing new utilities like non-custodial staking and decentralized wrapping, Core Chain positions itself as a pivotal platform in the evolution of Bitcoin DeFi.
+L'architecture de Core Chain est conçue pour exploiter la robustesse de la sécurité du Bitcoin tout en élargissant sa fonctionnalité aux contrats intelligents et à la DeFi. En intégrant des mécanismes de consensus innovants et en offrant de nouvelles fonctionnalités telles que le staking non-custodial et le wrapping décentralisé, Core Chain se positionne comme une plateforme clé dans l'évolution de la DeFi pour Bitcoin.
