@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Contexte
 
-La méthodologie de Core Chain pour l'intégration du staking de bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). L'opcode OP_CHECKLOCKTIMEVERIFY (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
+La méthodologie de Core Chain pour l'intégration du staking de bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le `OP_CHECKLOCKTIMEVERIFY` (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
 
 ![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(5\).png)
 
@@ -20,35 +20,35 @@ La méthodologie de Core Chain pour l'intégration du staking de bitcoin se conc
 
 A BTC staking transaction should have two/three outputs, which are
 
-- `P2SH/P2WSH` type output, with time-lock enabled redeem script
+- Sortie de type `P2SH/P2WSH`, avec un script de rachat activé par un verrouillage temporel
 - `OP_RETURN` type output, with Core chain staking information
-- (_Optional_) Change address
+- (_Optional_) Adresse de changement
 
-Note that there are **no** restrictions on inputs.
+Notez qu'il n'y a **aucune** restriction sur les entrées.
 
 ![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(1\).png)
 
-### Withdrawal transaction
+### Transaction de retrait
 
-When the time-lock ends, the locked UTXO can be spent using the redeem script
+Lorsque le verrouillage temporel se termine, l'UTXO verrouillé peut être dépensé en utilisant le script de rachat
 
 ![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(2\).png)
 
-## Script Design
+## Design du script
 
-### P2SH/P2WSH Output
+### Sortie P2SH/P2WSH
 
-- Core supports both `P2SH` and `P2WSH` outputs for BTC staking.
+- Core prend en charge à la fois les sorties `P2SH` et `P2WSH` pour le staking BTC.
 
-- The construction of `P2SH` type output is as follows
+- La construction de la sortie du type `P2SH` est la suivante
 
   - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
-- The construction of `P2WSH` type output is as follows
+- La construction de la sortie de type `P2WSH` est la suivante
 
   - `OP_0 <SHA256(RedeemScript)>`
 
-### Redeem Script
+### Script de Rachat
 
 The `RedeemScript`  should start with a CLTV time lock. Here are a few common types.
 
