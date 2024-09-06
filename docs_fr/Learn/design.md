@@ -57,47 +57,47 @@ Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelqu
 
 - Lors de l'utilisation d'une clé publique de hachage (fortement recommandé) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` et le script de déverrouillage correspondant est `<sig> <pubKey> <RedeepScript>`
 
-- Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of BTC locked in this output will be used for the calculation of validator election and reward distribution on the Core chain.
+- Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` Le montant et la durée du BTC verrouillé dans cette sortie seront utilisés pour le calcul de l'élection des validateurs et la distribution des récompenses sur la chaîne Core.
 
 > **Note**
-> There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core. A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days** (`CLTV timestamp - transaction confirmation timestamp > 10 days`).
+> Il y a des _exigences minimales_ concernant le **montant** et la **durée** pour que le staking soit éligible sur Core. Un utilisateur doit staker au moins **0,01 BTC** (moins les frais de transaction) pour au moins **10 jours** (`CLTV timestamp - transaction confirmation timestamp > 10 days`).
 
-## OP_RETURN Output
+## Sortie OP_RETURN
 
-The `OP_RETURN` output should contain all staking information in order, and be composed in the following format:
+La sortie `OP_RETURN` doit contenir toutes les informations de staking dans l'ordre, et être composée dans le format suivant:
 
-- **`OP_RETURN`:** identifier `0x6a`
-- **`LENGTH`:** which represents the total byte length after the `OP_RETURN` opcode. _Note that all data has to be pushed with its appropriate size byte(s)_.
-- **`Satoshi Plus Identifier`:** (**SAT+**) 4 bytes
-- **`Version`:** (**0x01**) 1 byte
-- **`Chain ID`:** (1115 for Core Testnet and 1116 for Core Mainnet) 2 bytes
-- **`Delegator`:** The Core address to receive rewards, 20 bytes
-- **`Validator`:** The Core validator address to stake to, 20 bytes
-- **`Fee`:** Fee for relayer, 1 byte, range [0,255], measured in CORE
-- (_Optional_) **`RedeemScript`**
-- (_Optional_) **`Timelock`:** 4 bytes
+- **`OP_RETURN`:** identifiant `0x6a`
+- **`LENGTH`:** représente la longueur totale en octet après l'opcode `OP_RETURN`. Notez que toutes les données doivent être insérées avec la taille d'octet(s) approprié(s).
+- **`Satoshi Plus Identifier`:** (**SAT+**) 4 octets
+- **`Version`:** (**0x01**) 1 octet
+- **`Chain ID`:** (1115 pour le Testnet Core et 1116 pour le Mainnet Core) 2 octets
+- **`Delegator`:** L'adresse Core pour recevoir les récompenses, 20 octets
+- **`Validator`:** L'adresse du validateur Core pour le staking, 20 octets
+- **`Fee`:** Frais pour le relayeur, 1 octet, allant de [0, 255], mesuré en CORE
+- (_Facultatif_) **`RedeemScript`**
+- (_Facultatif_) **`Timelock`:** 4 octets
 
-#### Key Points to Ensure
+#### Points Clés à Respecter
 
-- Any bytes that can translate to a number should use `OP_number` (`{0}` should use `OP_0` instead of `0x0100`, `{16}` should use `OP_16` instead of `0x0110`)
-- Any bytes with lengths smaller than `0x4c (76)` is pushed with 1 byte equal to the size `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
-- Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
-- Any bytes with length bigger than `255` uses `0x4d` (`OP_PUSHDATA2`)
-- Any bytes with length bigger than `65535` (`0xffff`) uses `0x4e` (`OP_PUSHDATA4`)
+- Tout octet pouvant être traduit en nombre doit utiliser`OP_number` (`{0}` doit utiliser `OP_0` au lieu de `0x0100`, `{16}` doit utiliser `OP_16` au lieu de `0x0110`)
+- Tout octet dont la longueur est inférieure à `0x4c (76)` est inséré avec 1 octet égal à la taille `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
+- Les octets plus grands ou égaux à `0x4c` sont insérés en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivie de la longueur puis des données `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+- Les octets de longueur supérieure à `255` utilisent `0x4d` (`OP_PUSHDATA2`)
+- Les octets de longueur supérieure à `65535` (`0xffff`) utilisent `0x4e` (`OP_PUSHDATA4`)
 
-Either `RedeemScript` or `Timelock` must be available, the purpose is to allow relayer to obtain the `RedeemScript` and submit transactions on the Core chain. If a `RedeemScript` is provided, relayer will use it directly. Otherwise, relayer will construct the redeem script based on the timelock and the information in the transaction inputs. You can find more information about the relayer role in the [below section](#role-of-relayers).
+Soit le `RedeemScript` soit le `Timelock` doit être disponible, afin de permettre au relayeur d'obtenir le `RedeemScript` et de soumettre les transactions sur la chaîne Core. Si un `RedeemScript` est fourni, le relayeur l'utilisera directement. Sinon, le relayeur construira le script de rachat basé sur le timelock et les informations dans les entrées de la transaction. Vous trouverez plus d'informations sur le rôle du relayeur dans la section [ci-dessous](#role-of-relayers).
 
-## Transaction Examples
+## Exemples de Transactions
 
-### Staking transaction
+### Transaction de Staking
 
 [https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
 ![btc-staking-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(3\).png)
 
-#### P2WSH output
+#### Sortie P2WSH
 
-This is the staking output and it is a standard P2WSH address. The redeem script used for this output is `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
+Il s'agit de la sortie de staking, une adresse P2WSH standard. Le script de rachat utilisé est `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
 
 ```jsx
 OP_PUSHBYTES_4 1f5e0e66
@@ -110,51 +110,51 @@ OP_EQUALVERIFY
 OP_CHECKSIG
 ```
 
-The script looks very similar to a normal `P2PKH` redeem script except it starts with a timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
+Le script est très similaire à un script de rachat P2PKH normal, sauf qu'il commence par un timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
 
-The redeem script hash used in this P2WSH output is `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` which results to `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
+Le redeem script hash utilisé dans cette sortie P2WSH est le `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` ce qui donne `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
 
-Here is an online tool to generate `P2WSH` `sha256` hash value from redeem script, by which you can verify the above calculation: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
+Voici un outil en ligne pour générer la valeur de hachage `P2WSH` `sha256` d'un script de rachat, grâce auquel vous pouvez vérifier le calcul ci-dessus: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
 
-#### OP_RETURN output
+#### Sortie OP_RETURN
 
-The full hex of this output is `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , where
+Le code hex complet de cette sortie est le suivant `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , où
 
-- `6a` is op_return opcode
-- `4c50` is the total byte length after the `OP_RETURN` opcode [1]
-- `5341542b` SAT+, which is satoshi plus identifier
-- `01` is version
-- `045b` 1115, which is chain id (1115 for Core Testnet and 1116 for Core Mainnet)
-- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` is the reward address
-- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` is the validator address
-- `01` is relayer fee, measured in CORE
-- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is redeem script, which is explained in the above section.
+- `6a` est le opcode op_return
+- `4c50` est la longueur totale en octets après l'opcode [1] `OP_RETURN`
+- `5341542b` SAT+, l'identifiant Satoshi Plus
+- `01` est la version
+- `045b` 1115, l'Id de la chaîne (1115 pour le Core Testnet et 1116 pour le Core Mainnet)
+- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` est l'adresse de récompense
+- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` est l'adresse du validateur
+- `01` est la commission du relayeur, mesurée en CORE
+- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est le script de rachat, qui est expliqué dans la section précédente.
 
-[1] Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+[1] Tout octet supérieur ou égal à `0x4c` est inséré en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivi de la longueur, puis des données (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
 
-### Withdrawal Transaction
+### Transaction de Retrait
 
 [https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
 
-This transaction spent the P2WSH time-lock output from the above staking transaction
+Cette transaction a dépensé la sortie P2WSH avec verrouillage temporel de la transaction de staking mentionnée précédemment
 
 ![btc-staking-withdrawal-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(4\).png)
 
-In the input, the redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is provided to spend it. Since the time lock `1f5e0e66` (660e5e1f after reverting bytes, which is 1712217631 unix timestamp) has already expired, the UTXO was spent successfully.
+Dans l'entrée, le redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est fourni pour la dépenser. Comme le verrouillage temporel `1f5e0e66` (660e5e1f après inversion des octets, ce qui correspond à un horodatage Unix de 1712217631) avait déjà expiré, l'UTXO a été dépensé avec succès.
 
 > **Note**
-> \> Code samples of constructing the staking and withdrawal transactions on Bitcoin network will be provided soon.
+> \> Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
 
-## Role of Relayers
+## Rôle des Relayeurs
 
-In a strict sense, the Non-Custodial BTC Staking process consists of two steps
+Dans un sens strict, le processus de staking de BTC Non-Custodial se compose de deux étapes
 
-1. Stake on the Bitcoin network
-2. Submit the confirmed BTC staking transaction to the Core chain
+1. Staking sur le réseau Bitcoin
+2. Soumission de la transaction de staking BTC confirmée à la chaîne Core
 
-To make the entire process more convenient, Core Chain introduces the role of relayers. Relayers can help users submit transactions to the Core network after the staking transaction is confirmed on the Bitcoin network. Since it is necessary to verify the transaction on the Core network with the embedded Bitcoin light client, relayers needs to obtain the corresponding `RedeemScript` of the `P2SH/P2WSH` output. To meet this requirement, we suggest users to either
+Pour rendre le processus plus pratique, Core Chain introduit le rôle des relayeurs. Les relayeurs peuvent aider les utilisateurs à soumettre des transactions au réseau Core après la confirmation de la transaction de staking sur le réseau Bitcoin. Puisqu'il est nécessaire de vérifier la transaction sur le réseau Core avec le client Bitcoin light intégré, les relayeurs doivent obtenir le `RedeemScript` correspondant à la sortie `P2SH/P2WSH`. Pour répondre à cette exigence, il est conseillé aux utilisateurs de
 
-- Put the entire `RedeemScript` at the end of the `OP_RETURN` output, if the script is short. e.g. a `RedeemScript` constructed using public key hash as shown in the sample above.
-- Set the receiving address of the staking transaction as their own so relayers can extract useful information from the transaction input and compose the `RedeemScript` by themselves. E.g.
+- Inclure le `RedeemScript` complet à la fin de la sortie `OP_RETURN`, si le script est court. par exemple, un `RedeemScript` construit en utilisant un hachage de clé publique, comme montré dans l'exemple ci-dessus.
+- Utiliser leur propre adresse de réception pour la transaction de staking, afin que les relayeurs puissent extraire les informations utiles depuis l'entrée de la transaction et composer eux-mêmes le `RedeemScript`. Par exemple
   - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
   - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.
