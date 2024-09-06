@@ -1,14 +1,14 @@
 ---
-sidebar_label: Contract Verification
+sidebar_label: Verificación de Contrato
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Contract Verification
+# Verificación de Contrato
 
 ---
 
-In the interest of transparency, we recommend verifying all contracts on [Core Scan](https://scan.coredao.org/). Let’s check out a few of the common methods for verifying contracts, via the web, API, and Hardhat.
+En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Let’s check out a few of the common methods for verifying contracts, via the web, API, and Hardhat.
 
 :::note
 Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md), to do so ensure that the `evmVersion` parameter is set to `paris` under the solidity compiler settings.
