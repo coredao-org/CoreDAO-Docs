@@ -1,14 +1,14 @@
 ---
-sidebar_label: Bridging Tokens to Core With LayerZero
+sidebar_label: Puentear Tokens a Core con una Layer zero
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Bridging Tokens to Core With LayerZero
+# Puentear Tokens a Core con una Layer zero
 
 ---&#x20;
 
-This guide outlines the steps to bridge your ERC-20 token to Core using Omnichain Fungible Tokens (OFT) via LayerZero. LayerZero's protocol enables seamless cross-chain communications, allowing your token to operate across multiple chains. Please refer to LayerZero for all the[ supported source blockchains](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
+Esta guia alinea los pasos para puentear tu token ERC-20 a Core utilizando Omnichains Tokens Fungibles mediante una Layer Zero. El protocolo LayerZero empodera comunicaciones sin ficción cross-chain, así dejando a tus tokens operar a través múltiples cadenas. Please refer to LayerZero for all the[ supported source blockchains](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
 
 ## Overview
 
