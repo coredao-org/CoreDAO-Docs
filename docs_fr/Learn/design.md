@@ -18,10 +18,10 @@ La méthodologie de Core Chain pour l'intégration du staking de bitcoin se conc
 
 ### Transaction de Staking
 
-A BTC staking transaction should have two/three outputs, which are
+Une transaction de staking BTC doit comporter deux ou trois sorties, qui sont
 
 - Sortie de type `P2SH/P2WSH`, avec un script de rachat activé par un verrouillage temporel
-- `OP_RETURN` type output, with Core chain staking information
+- Sortie de type `OP_RETURN` avec les informations de staking pour la chaîne Core
 - (_Optional_) Adresse de changement
 
 Notez qu'il n'y a **aucune** restriction sur les entrées.
@@ -50,13 +50,14 @@ Lorsque le verrouillage temporel se termine, l'UTXO verrouillé peut être dépe
 
 ### Script de Rachat
 
-The `RedeemScript`  should start with a CLTV time lock. Here are a few common types.
+Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelques types courants.
 
-- When using a public key `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <RedeemScript>`
+- Lors de l'utilisation d'une clé publique `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG`
+  et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <RedeemScript>`
 
-- When using a public key hash (most recommended) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <pubKey> <RedeepScript>`
+- Lors de l'utilisation d'une clé publique de hachage (fortement recommandé) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` et le script de déverrouillage correspondant est `<sig> <pubKey> <RedeepScript>`
 
-- When using multi signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of BTC locked in this output will be used for the calculation of validator election and reward distribution on the Core chain.
+- Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of BTC locked in this output will be used for the calculation of validator election and reward distribution on the Core chain.
 
 > **Note**
 > There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core. A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days** (`CLTV timestamp - transaction confirmation timestamp > 10 days`).
