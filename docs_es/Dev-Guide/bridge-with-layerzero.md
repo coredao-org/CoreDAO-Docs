@@ -8,23 +8,23 @@ sidebar_position: 2
 
 ---&#x20;
 
-Esta guia alinea los pasos para puentear tu token ERC-20 a Core utilizando Omnichains Tokens Fungibles mediante una Layer Zero. El protocolo LayerZero empodera comunicaciones sin ficción cross-chain, así dejando a tus tokens operar a través múltiples cadenas. Please refer to LayerZero for all the[ supported source blockchains](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
+Esta guia alinea los pasos para puentear tu token ERC-20 a Core utilizando Omnichains Tokens Fungibles mediante una Layer Zero. El protocolo LayerZero empodera comunicaciones sin ficción cross-chain, así dejando a tus tokens operar a través múltiples cadenas. Por favor refiera a la LayerZero para ver todas las cacdenas de bloques soportadas (https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
 
-## Overview
+## Descripción general
 
-Before proceeding, you should be aware of what omnichain fungible tokens and the LayerZero protocol are.&#x20
+Antes de continuar, debes saber qué son los tokens fungibles omnichain y el protocolo LayerZero
 
-**Omnichain Fungible Token (OFT)**: Enables the creation of tokens native to multiple chains, simplifying token management and enhancing interoperability.
+**Omnichain Fungible Token (OFT)**: permite la creación de tokens nativos de múltiples cadenas, simplificando la gestión de tokens y mejorando la interoperabilidad.
 
-**LayerZero Protocol**: Serves as foundational technology for cross-chain interactions, providing a reliable method for different blockchains to communicate, ensuring secure and efficient transactions.
+**Protocolo LayerZero**: sirve como tecnología fundamental para interacciones entre cadenas, proporcionando un método confiable para que diferentes cadenas de bloques se comuniquen, garantizando transacciones seguras y eficientes.
 
-## Bridging Existing ERC-20 Tokens to Core
+## Puentiando los tokens ERC-20 existentes a Core
 
-### Deploy LayerZero ProxyOFTV2 Contract on the Source Chain
+### Implementar el contrato LayerZero ProxyOFTV2 en la cadena de origen
 
-First, **access the ProxyOFTV2 contract** by retrieving the `ProxyOFTV2` contract code from the[ official repository](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/ProxyOFTV2.sol).
+Primero, **acceda al contrato ProxyOFTV2** recuperando el código del contrato `ProxyOFTV2` del[repositorio oficial](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft /v2/ProxyOFTV2.sol).
 
-Then\*\*, adjust the ProxyOFTV2 contract for the source blockchain\*\*, like this:
+Luego\*\*, ajuste el contrato ProxyOFTV2 para la cadena de bloques de origen\*\*, así:
 
 ```
 constructor(
@@ -33,24 +33,23 @@ constructor(
         address _lzEndpoint
 ```
 
-Here's some context on what's present in this code snippet:
+Aquí hay algo de contexto sobre lo que está presente en este fragmento de código:
 
-- **Token Contract Address** (`_token`): Provide the ERC-20 token contract address for a contract that's already been deployed on the source chain. If your token was USDC on Ethereum, for example, you’d use contract address [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)
-- **Shared Decimals** (`_sharedDecimals`): Set the number of decimal places for the token in the LayerZero environment. The shared decimals normalize the differences between data type across EVM and non-EVM chains. It is a good practice to use a smaller shared decimal point on all chains so that your token can have a larger balance.
-  - If your token is deployed on non-EVM chains, it should be set as the lowest decimals across all chains.
-  - If your tokens are only deployed on EVM chains and all have decimals larger than eight, this value should be set as `8`.
-  - Please refer to this[ LayerZero doc](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2#what-should-i-set-as-shared-decimals) for more info.
-- **LayerZero Endpoint Address for Source Chain** (`_lzEndpoint`): This endpoint address is required for the contract to interact with the LayerZero protocol. For example, Ethereum endpoint: 0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675.
-- Please refer to the[ LayerZero documentation](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for the endpoints for supported blockchains.
+- **Dirección del contrato del token** (`_token`): proporcione la dirección del contrato del token ERC-20 para un contrato que ya se ha implementado en la cadena de origen. Si su token fuera USDC en Ethereum, por ejemplo, usaría la dirección del contrato [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)
+- **Decimals compartidos** (`_sharedDecimals`): establece el número de decimales para el token en el entorno LayerZero. Los decimales compartidos normalizan las diferencias entre los tipos de datos entre cadenas EVM y no EVM. Es una buena práctica utilizar un punto decimal compartido más pequeño en todas las cadenas para que su token pueda tener un saldo mayor.
+  - Si su token se implementa en cadenas que no son EVM, debe configurarse con los decimales más bajos en todas las cadenas.
+  - Si sus tokens solo se implementan en cadenas EVM y todos tienen decimales mayores que ocho, este valor debe establecerse como "8".
+  - Consulte este [documento LayerZero](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2#what-should-i-set-as-shared-decimals) para más información.
+- **Dirección de punto final de LayerZero para la cadena de origen** (`_lzEndpoint`): esta dirección de punto final es necesaria para que el contrato interactúe con el protocolo LayerZero. Por ejemplo, punto final de Ethereum: 0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675.
+- Consulte la [documentación de LayerZero] (https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) para conocer los puntos finales de las cadenas de bloques compatibles.
 
-Finally, **deploy the `ProxyOFTV2` contract** to the chosen source blockchain.
+Finalmente, **implemente el contrato `ProxyOFTV2`** en la cadena de bloques de origen elegida.
 
-### Deploy LayerZero OFTV2 Contract on Core Chain
+### Implementar el contrato OFTV2 LayerZero en la cadena central
 
-First, **access the OFTV2 contract** by retrieving the `ProxyOFTV2` contract code from the[ official repository](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/OFTV2.sol).
+Primero, **acceda al contrato OFTV2** recuperando el código del contrato `ProxyOFTV2` del[repositorio oficial](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft /v2/OFTV2.sol).
 
-\
-Then, **prepare parameters for OFTV2 Contract deployment on Core Chain**, like so:
+Luego, **prepare los parámetros para la implementación del contrato OFTV2 en Core Chain**, así:
 
 ```
 constructor(
@@ -60,25 +59,25 @@ constructor(
         address _lzEndpoint
 ```
 
-Here's some context on what's happening in this code snippet:
+Aquí hay algo de contexto sobre lo que está sucediendo en este fragmento de código:
 
-- **Token Name** (`_name`): Specify your token name (e.g. USD Coin)
-- **Token Symbol** (`_symbol`): Specify your token symbol (e.g. USDC)
-- **Shared Decimals** (`_sharedDecimals`): Match the shared decimals in the `ProxyOFTV2` on the source chain.
-- **LayerZero Endpoint Address for Core Chain** (`_lzEndpoint`): The endpoint address for Core Chain is `0x9740FF91F1985D8d2B71494aE1A2f723bb3Ed9E4`.
-- Please refer to the[ LayerZero documentation](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for endpoints of the supported blockchains.
+- **Nombre del token** (`_name`): especifique el nombre de su token (por ejemplo, moneda USD)
+- **Símbolo de token** (`_symbol`): especifique su símbolo de token (por ejemplo, USDC)
+- **Decimals compartidos** (`_sharedDecimals`): haga coincidir los decimales compartidos en `ProxyOFTV2` en la cadena de origen.
+- **Dirección de punto final LayerZero para Core Chain** (`_lzEndpoint`): La dirección de punto final para Core Chain es `0x9740FF91F1985D8d2B71494aE1A2f723bb3Ed9E4`.
+- Consulte la [documentación de LayerZero](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) para conocer los puntos finales de las cadenas de bloques compatibles.
 
-Finally, **deploy the Contract on CoreDAO:** deploy this OFTV2 contract to the Core blockchain.
+Finalmente, **implemente el contrato en CoreDAO:** implemente este contrato OFTV2 en la cadena de bloques Core.
 
-### Linking Contracts via Trusted Remotes
+### Vincular contratos a través de controles remotos confiables
 
-The term "trusted remote" comes from EVM-to-EVM messaging, and refers to the 40 bytes that identify the contract from which you will receive messages in your LayerZero User Application contract. The 40 bytes object is the packed bytes of the `remoteAddress` and the `localAddress`.
+El término "remoto confiable" proviene de la mensajería de EVM a EVM y se refiere a los 40 bytes que identifican el contrato del cual recibirá mensajes en su contrato de aplicación de usuario LayerZero. El objeto de 40 bytes son los bytes empaquetados de `remoteAddress` y `localAddress`.
 
-You can generate `TrustedRemote` using `ethers.js`:
+Puede generar `TrustedRemote` usando `ethers.js`:
 
 ```
-// the trusted remote (or sometimes referred to as the path or pathData)
-// is the packed 40 bytes object of the REMOTE + LOCAL user application contract addresses
+// el control remoto confiable (o a veces denominado ruta o pathData)
+// es el objeto empaquetado de 40 bytes de las direcciones del contrato de aplicación de usuario REMOTA + LOCAL
 
 let trustedRemote = hre.ethers.utils.solidityPack(
     ['address','address'],
@@ -86,78 +85,78 @@ let trustedRemote = hre.ethers.utils.solidityPack(
 )
 ```
 
-On the source blockchain, call the `ProxyOFTV2` contract's  `setTrustedRemoteAddress` function with the following parameters:
+En la cadena de bloques de origen, llame a la función `setTrustedRemoteAddress` del contrato `ProxyOFTV2` con los siguientes parámetros:
 
-- `trustedRemote`: This is the 40 bytes generated by trusted remote in the previous step
-- `localContract`: This is the source chain’s `ProxyOFTV2` contract address.
-- `remoteContract`: This is the Core chain’s `OFTV2` contract address
+- `trustedRemote`: Estos son los 40 bytes generados por el control remoto confiable en el paso anterior
+- `localContract`: esta es la dirección del contrato `ProxyOFTV2` de la cadena de origen.
+- `remoteContract`: esta es la dirección del contrato `OFTV2` de la cadena Core
 
-On the Core blockchain, call the `OFTV2` contract's `setTrustedRemoteAddress` function with the following parameters:
+En la cadena de bloques Core, llame a la función `setTrustedRemoteAddress` del contrato `OFTV2` con los siguientes parámetros:
 
-- `trustedRemote`: This is the 40 bytes generated by trusted remote in the previous step.
-- `localContract`: This is the Core chain’s `OFTV2` contract address.
-- `remoteContract`: This is the source chain’s `ProxyOFTV2` contract address
+- `trustedRemote`: Estos son los 40 bytes generados por el control remoto confiable en el paso anterior.
+- `localContract`: esta es la dirección del contrato `OFTV2` de la cadena Core.
+- `remoteContract`: esta es la dirección del contrato `ProxyOFTV2` de la cadena de origen
 
-For more info, please refer to the[ LayerZero guide for setting trusted remotes](https://layerzero.gitbook.io/docs/evm-guides/master/set-trusted-remotes) to link your contracts across the two networks.
+Para obtener más información, consulte la [guía LayerZero para configurar controles remotos confiables](https://layerzero.gitbook.io/docs/evm-guides/master/set-trusted-remotes) para vincular sus contratos entre las dos redes.
 
-### Set Minimum Gas Limit for Each Chain
+### Establecer límite mínimo de gas para cada cadena
 
-You'll need to set the minimum gas limit for each chain. It's advisable to use a 200k minimum for all EVM chains; the only major exception is Arbitrum, where the gas limit should be 2M. Here are the steps.
+Deberá establecer el límite mínimo de gas para cada cadena. Es recomendable utilizar un mínimo de 200k para todas las cadenas EVM; la única excepción importante es Arbitrum, donde el límite de gas debería ser 2M. Aquí están los pasos.
 
-First, call `setMinDstGas` on the source chain (Core’s[ chainId is 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)). Be sure to include the packet type ("0" means send, "1" means send and call) and the gas limit amount.
+Primero, llame a `setMinDstGas` en la cadena de origen (Core [chainId es 153] (https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)). Asegúrese de incluir el tipo de paquete ("0" significa enviar, "1" significa enviar y llamar) y la cantidad límite de gasolina.
 
-Then, call `setMinDstGas` on Core Chain with the[ chainId of the source chain](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids). Be sure to include the packet type ("0" meaning send, "1" meaning send and call) and the gas limit amount.
+Luego, llame a `setMinDstGas` en Core Chain con el [chainId de la cadena de origen] (https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids). Asegúrese de incluir el tipo de paquete ("0" significa enviar, "1" significa enviar y llamar) y la cantidad límite de gasolina.
 
-Finally, make sure that your `AdapterParams` gas limit is greater than `setMinDstGas`.
+Finalmente, asegúrese de que su límite de gas `AdapterParams` sea mayor que `setMinDstGas`.
 
-For more info, please refer to the[ LayerZero guide](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2).
+Para obtener más información, consulte la [guía LayerZero](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2).
 
-### Transfer Tokens Cross-Chain
+### Transferir tokens entre cadenas
 
-Here, we'll cover the basic steps involved in transferring tokens across chains.
+Aquí, cubriremos los pasos básicos involucrados en la transferencia de tokens entre cadenas.
 
-First, ensure that you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+Primero, asegúrese de tener [Node.js](https://nodejs.org/) y [npm](https://www.npmjs.com/) instalados.
 
-Then, clone the `oft-transfer-script` repository found [here](https://github.com/LayerZero-Labs/oft-transfer-script/tree/main).
+Luego, clone el repositorio `oft-transfer-script` que se encuentra [aquí](https://github.com/LayerZero-Labs/oft-transfer-script/tree/main).
 
-With that done, navigate to the `hardhat` folder in the cloned repository and run `npm install` to install the required npm packages.
+Una vez hecho esto, navegue hasta la carpeta `hardhat` en el repositorio clonado y ejecute `npm install` para instalar los paquetes npm requeridos.
 
-Next, create an `.env` file in the root directory of the repository and add the following variables:
+A continuación, cree un archivo `.env` en el directorio raíz del repositorio y agregue las siguientes variables:
 
-- `RPC_ENDPOINT`: This should be the URL of your Ethereum JSON RPC endpoint.
-- `PRIVATE_KEY`: The private key of the Ethereum address you intend to use with the script.&#x20
+- `RPC_ENDPOINT`: esta debe ser la URL de su punto final Ethereum JSON RPC.
+- `PRIVATE_KEY`: la clave privada de la dirección de Ethereum que desea utilizar con el script.&#x20
 
-Here's a code snippet explaining how the `RPC_ENDPOINT` and `PRIVATE_KEY` should be configured:
+Aquí hay un fragmento de código que explica cómo se deben configurar `RPC_ENDPOINT` y `PRIVATE_KEY`:
 
 ```
 RPC_ENDPOINT=<Your_RPC_Endpoint_URL> 
 PRIVATE_KEY=<Your__Private_Key>
 ```
 
-Finally, run the FT Token Transfer script. This script is designed to interact with the OFT smart contract to facilitate token transfers using `estimateFees()` and `sendFrom()`. Here's a little more context on what these methods accomplish:
+Finalmente, ejecute el script FT Token Transfer. Este script está diseñado para interactuar con el contrato inteligente OFT para facilitar las transferencias de tokens usando `estimateFees()` y `sendFrom()`. Aquí hay un poco más de contexto sobre lo que logran estos métodos:
 
-- `estimateFees()`: This function provides an estimate of the fees required to send a certain amount of tokens.
-- `sendFrom()`: This function allows you to send tokens from one address on the source blockchain to another on the destination.
+- `estimateFees()`: Esta función proporciona una estimación de las tarifas requeridas para enviar una determinada cantidad de tokens.
+- `sendFrom()`: Esta función le permite enviar tokens desde una dirección en la cadena de bloques de origen a otra en el destino.
 
-Here's a code snippet showing how to transfer tokens with `sendFrom`:&#x20
+Aquí hay un fragmento de código que muestra cómo transferir tokens con `sendFrom`:&#x20
 
 ```
 npx hardhat sendFrom --qty 100000000000000 --network core
 ```
 
-### Manual Transfers via Etherscan
+### Transferencias manuales a través de Etherscan
 
-If your `ProxyOFT` contract is registered on Etherscan, you can use the Etherscan user interface to transfer your ERC20 tokens manually by calling the `sendFrom()` function with the following parameters:
+Si su contrato `ProxyOFT` está registrado en Etherscan, puede usar la interfaz de usuario de Etherscan para transferir sus tokens ERC20 manualmente llamando a la función `sendFrom()` con los siguientes parámetros:
 
-- `from`: This is the sender’s address on Ethereum.
-- `dstChainId`: LayerZero’s unique chain ID for the receiving chain (we’ll use [chainId 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for Core chain).
-- `toAddress`: The intended recipient’s address on Core chain.
-- `amount`: The number of tokens **in wei units.**
-- `refundAddress`: This is the address where gas refunds will be sent if necessary. It's wise to use the sender’s address as the refund address.
-- `zroAddress`: On Etherscan, the "zero address" is `0x0000000000000000000000000000000000000000`.
+- `de`: esta es la dirección del remitente en Ethereum.
+- `dstChainId`: ID de cadena único de LayerZero para la cadena receptora (usaremos [chainId 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) para la cadena Core).
+- `toAddress`: la dirección del destinatario previsto en la cadena Core.
+- `cantidad`: El número de tokens **en unidades wei.**
+- `refundAddress`: Esta es la dirección donde se enviarán los reembolsos de gasolina si es necesario. Es aconsejable utilizar la dirección del remitente como dirección de reembolso.
+- `zroAddress`: en Etherscan, la "dirección cero" es `0x00000000000000000000000000000000000000000`.
 - `adapterParams`: 0x
-- `nativeFee`: you can calculate the native fee by calling the `estimateSendFee` function on the same contract using the same `remoteChainId`, `toAddress`, `amount`, `useZro`, and `adapterParams` above.
+- `nativeFee`: puede calcular la tarifa nativa llamando a la función `estimateSendFee` en el mismo contrato usando los mismos `remoteChainId`, `toAddress`, `amount`, `useZro` y `adapterParams` anteriores.
 
-## LayerZero Integration Checklist
+## Lista de verificación de integración LayerZero
 
-Please refer to the[ checklist](https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist) to prepare for a Mainnet deployment.
+Consulte la [lista de verificación] (https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist) para prepararse para una implementación de Mainnet.
