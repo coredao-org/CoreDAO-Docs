@@ -36,18 +36,18 @@ L'une des caractéristiques les plus remarquables de Core Chain, qui la distingu
 
 Il y a quelques aspects de l'implémentation du staking sur Core Chain qui le distinguent.
 
-1. There is no need to transfer your assets. Unlike other DeFi protocols that require transferring bitcoin to a different blockchain or wrapping it, Core Chain's staking allows users to stake directly within the Bitcoin ecosystem.
-2. Core Chain's bitcoin staking maintains the basic blockchain ethos by allowing bitcoin holders to contribute to the expansion of Core Chain's overall security budget.
-3. There are options to stake through the command line or a web interface, and there's a simple claim process for rewards.
-4. The product is designed for ease of use, catering to both tech-savvy users and those preferring a more straightforward approach.
-5. The reward system helps align cross-chain incentives. The reward pool comes from a shared consensus reward system that integrates the contributions of both Bitcoin miners and CORE token stakers, thereby optimizing the reward distribution for all participants. Additionally, the rewards are sustainable over the long-term, and will be distributed over a period of 81 years.
+1. Aucun besoin de transférer vos actifs. Contrairement à d'autres protocoles DeFi qui nécessitent de transférer des bitcoins vers une autre blockchain ou de les encapsuler, le staking sur Core Chain permet aux utilisateurs de staker directement au sein de l'écosystème Bitcoin.
+2. Le staking de bitcoin sur Core Chain respecte l'éthique fondamentale de la blockchain en permettant aux détenteurs de bitcoin de contribuer à l'expansion du budget global de sécurité de Core Chain.
+3. Options de staking : il est possible de staker via la ligne de commande ou une interface web, et le processus de réclamation des récompenses est simple.
+4. Facilité d'utilisation : le produit est conçu pour être simple d'utilisation, s'adaptant aussi bien aux utilisateurs techniques qu'à ceux préférant une approche plus directe.
+5. Le système de récompenses aligne les incitations inter-chaînes. Le pool de récompenses provient d'un système de consensus partagé qui intègre les contributions des mineurs de Bitcoin et des stakers de tokens CORE, optimisant ainsi la distribution des récompenses pour tous les participants. De plus, les récompenses sont durables à long terme et seront distribuées sur une période de 81 ans.
 
-## How Non-Custodial BTC Staking Works
+## Comment le Staking Non-Custodial de BTC fonctionne
 
-With the non-custodial bitcoin staking, Core Chain's protocol incorporate bitcoin holders as the third part of Satoshi Plus consensus. Core Chain's methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock are Bitcoin-native cryptographic feature that specify a condition under which the transaction output cannot be spent until a certain point in time has passed. This time can be defined in terms of a specific date and time or by block height. Rather than holders giving up custody of their bitcoins to external staking, stakers on Core Chain merely need to place their bitcoins in CLTV timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks:
+Avec le staking non-custodial du bitcoin, le protocole de Core Chain intègre les détenteurs de bitcoins en tant que troisième partie du mécanisme de consensus Satoshi Plus. La méthodologie de Core Chain pour intégrer le staking de bitcoin repose sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Les timelocks CLTV sont des fonctionnalités cryptographiques natives de Bitcoin qui spécifient une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps soit écoulé. Ce temps peut être défini en termes de date et d'heure spécifiques ou de hauteur de bloc. Plutôt que de donner la garde de leurs bitcoins à un staking externe, les stakers sur Core Chain doivent simplement placer leurs bitcoins dans des timelocks CLTV dans le cadre d'une transaction, et la transaction peut être conçue pour retourner la sortie une fois la période écoulée. Dans cette transaction, les stakers doivent inclure un script contenant les mêmes informations que les mineurs de Bitcoin incluent dans leurs blocs délégués:
 
-1. The address of the Core Validator the staker wants to delegate their bitcoin to.
-2. The address that the staker would like their CORE token rewards to be sent to.
+1. L'adresse du validateur Core à qui le staker veut déléguer ses bitcoins.
+2. L'adresse où le staker souhaite que ses récompenses en tokens CORE soient envoyées.
 
 Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core Chain). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility.
 
