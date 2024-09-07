@@ -84,28 +84,28 @@ Le processus de liquidation est conçu pour protéger le système des défauts d
 
 ## Processus de Slashing
 
-Sur la Core Chain, le concept de slashing est essentiel pour maintenir l'intégrité et la sécurité des transactions coreBTC. Le slashing est une mesure punitive utilisée pour pénaliser les Lockers en cas de mauvaise conduite ou de non-respect des protocoles établis. There are two primary scenarios where slashing may occur, each designed to protect the system and its users from potential fraud and malfeasance:
+Sur la Core Chain, le concept de slashing est essentiel pour maintenir l'intégrité et la sécurité des transactions coreBTC. Le slashing est une mesure punitive utilisée pour pénaliser les Lockers en cas de mauvaise conduite ou de non-respect des protocoles établis. Il existe deux scénarios principaux où le slashing peut se produire, chacun étant conçu pour protéger le système et ses utilisateurs contre la fraude et les mauvaises pratiques:
 
-### 1. **Unauthorized Movement of Locked Bitcoin**
+### 1. **Mouvement non autorisé du Bitcoin verrouillé**
 
-In this case, slashing occurs if a Locker moves locked Bitcoin without receiving a corresponding burn request from a coreBTC holder. This scenario is considered a serious breach as it directly threatens the 1:1 pegging and trust that coreBTC holders have in the system's ability to securely back their tokens with real Bitcoin.
+Dans ce cas, le slashing se produit lorsqu'un Locker déplace du Bitcoin verrouillé sans avoir reçu une demande de brûlage correspondante d'un détenteur de coreBTC. Ce scénario est considéré comme une violation grave, car il menace directement la parité 1:1 et la confiance des détenteurs de coreBTC dans la capacité du système à garantir que leurs tokens sont bien adossés à du Bitcoin réel.
 
-- **Trigger:** The slashing process is triggered when a Locker transfers any locked Bitcoin to an unauthorized address or for any unauthorized purpose that does not correspond to a legitimate and verified request to redeem coreBTC.
-- **Detection and Reporting:** This misconduct can be detected through the Core Chain's monitoring systems or by other participants in the network, often referred to as Guardians, who observe and report any suspicious Locker activities.
-- **Consequence:** Upon confirmation of the unauthorized transfer, a portion of the Locker’s collateral is seized and used to compensate for the discrepancy created in the system. This not only penalizes the Locker but also helps to re-establish the balance of backed and circulating coreBTC, maintaining the system's integrity.
+- **Déclencheur:** Le processus de slashing est déclenché lorsqu'un Locker transfère du Bitcoin verrouillé vers une adresse non autorisée ou pour une utilisation non autorisée qui ne correspond pas à une demande légitime et vérifiée de rachat de coreBTC.
+- **Détection et signalement:** Cette mauvaise conduite peut être détectée par les systèmes de surveillance de la Core Chain ou par d'autres participants au réseau, souvent appelés Gardiens, qui surveillent et signalent toute activité suspecte des Lockers.
+- **Conséquence:** Après confirmation du transfert non autorisé, une partie du collatéral du Locker est saisie et utilisée pour compenser la différence créée dans le système. Cela pénalise non seulement le Locker, mais contribue également à rétablir l'équilibre entre le coreBTC en circulation et son adossement, garantissant ainsi l'intégrité du système.
 
 ![slashing](../../../../static/img/coreBTC/slashing-1.png)
 
-### 2. **Failure to Release Bitcoin Upon coreBTC Redemption**
+### 2. **Echec de livraison du Bitcoin lors du rachat de coreBTC**
 
-This scenario occurs when a coreBTC holder decides to redeem their tokens for the underlying Bitcoin, but the Locker responsible for releasing the Bitcoin fails to do so within the designated timeframe.
+Ce scénario se produit lorsqu'un détenteur de coreBTC décide de racheter ses tokens contre le Bitcoin sous-jacent, mais que le Locker responsable de la libération du Bitcoin ne le fait pas dans le délai imparti.
 
-- **Trigger:** A coreBTC holder submits a burn transaction, effectively destroying a certain amount of coreBTC with the expectation of receiving an equivalent amount of Bitcoin from a Locker. If the Locker does not process this transaction and release the Bitcoin as required, slashing is triggered.
-- **Detection and Response:** Similar to the first case, this failure can be detected by network monitors or reported by users. Upon verification that the Locker has not fulfilled the redemption request in time, the system initiates a slashing protocol.
-- **Consequence:** A significant portion of the Locker's collateral is slashed as a punitive and compensatory measure. The slashed collateral is typically used to ensure that the user receives their Bitcoin, preserving trust in the coreBTC system and compensating for any potential losses incurred by the delay or failure.
+- **Déclencheur:** Un détenteur de coreBTC soumet une transaction de brûlage, détruisant effectivement une certaine quantité de coreBTC avec l'attente de recevoir une quantité équivalente de Bitcoin d'un Locker. Si le Locker ne traite pas cette transaction et ne libère pas le Bitcoin comme requis, un slashing est déclenché.
+- **Détection et réponse:** Comme dans le premier cas, cet échec peut être détecté par les moniteurs du réseau ou signalé par les utilisateurs. Après vérification que le Locker n'a pas rempli la demande de rachat dans les délais, le système initie un protocole de slashing.
+- **Conséquence:** Une partie importante du collatéral du Locker est réduite à titre de mesure punitive et compensatoire. Le collatéral slashé est généralement utilisé pour garantir que l'utilisateur reçoive son Bitcoin, préservant ainsi la confiance dans le système coreBTC et compensant les pertes potentielles causées par le retard ou l'échec.
 
 ![slashing](../../../../static/img/coreBTC/slashing-2.png)
 
 ## Conclusion
 
-The design of coreBTC in Core Chain presents a robust framework for integrating Bitcoin into DeFi applications while maintaining its fundamental characteristics of security and decentralization. Through a well-structured system of minting, redemption, liquidation, and slashing, all backed by strict collateral requirements, coreBTC ensures that Bitcoin's value can be leveraged in new and innovative ways without compromising the trust and security that define it.
+La conception du coreBTC sur la Core Chain propose un cadre solide pour l'intégration du Bitcoin dans les applications DeFi tout en conservant ses caractéristiques fondamentales de sécurité et de décentralisation. Grâce à un système bien structuré de création, rachat, liquidation et slashing, soutenu par des exigences de collatéral strictes, coreBTC garantit que la valeur du Bitcoin peut être exploitée de manière innovante, sans compromettre la confiance et la sécurité qui le définissent.
