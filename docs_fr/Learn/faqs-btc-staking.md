@@ -1,29 +1,29 @@
 ---
-sidebar_label: FAQs on Non Custodial Bitcoin Staking
+sidebar_label: FAQ sur le Staking de Bitcoin Non-Custodial
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Non-Custodial Bitcoin Staking FAQs
+# FAQ sur le Staking de Bitcoin Non-Custodial
 
 ---
 
-### Why is that the staking address provided differs from your original Bitcoin address?
+### Pourquoi l'adresse de staking fournie est-elle différente de votre adresse Bitcoin d'origine ?
 
-The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoins remain safely stored in your original wallet, unaffected by staking. While staked assets may not be visible in some wallet versions, you still have complete ownership.
+L'adresse de staking est dérivée de la clé privée principale de votre portefeuille, garantissant ainsi votre contrôle et la sécurité de vos actifs. Vos Bitcoins restent stockés en toute sécurité dans votre portefeuille d'origine, sans être affectés par le staking. Bien que les actifs stakés puissent ne pas être visibles dans certaines versions de portefeuille, vous conservez toujours la propriété complète.
 
-You can view your staked funds by searching the staking address on the any BTC explorer like (Mempool)[https://mempool.space/]. We're actively working to make staked assets visible in all supported wallets especially through command line versions.
+Vous pouvez visualiser vos fonds stakés en recherchant l'adresse de staking sur n'importe quel explorateur Bitcoin, tel que (Mempool)[https://mempool.space/]. Nous travaillons activement à rendre les actifs stakés visibles dans tous les portefeuilles pris en charge, en particulier via les versions en ligne de commande.
 
-### Does Core Chain provide any hardware wallet support for Non-Custodial BTC Staking?
+### Core Chain propose-t-il un support pour les portefeuilles physiques pour le Staking de BTC Non-Custodial ?
 
-At present, Non-Custodial BTC Staking does not support hardware wallets due to technical constraints. Nevertheless, we're constantly exploring ways to enhance compatibility with various wallet types, prioritizing both security and convenience for our users.
+À l'heure actuelle, le Staking de BTC Non-Dépositaire ne prend pas en charge les portefeuilles physiques en raison de certaines contraintes techniques. Cependant, nous explorons constamment des moyens d'améliorer la compatibilité avec divers types de portefeuilles, en mettant l'accent sur la sécurité et la commodité pour nos utilisateurs.
 
-### What are the important considerations for Locking Periods to keep in mind before staking your assets?
+### Quelles sont les considérations importantes à garder à l'esprit pour les périodes de verrouillage avant de staker vos actifs ?
 
-- **Time Lock Expiration:** When you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
-- **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
-- **Staked Amount Verification:** currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from [Core's official Non-Custodial BTC Staking Website](https://stake.coredao.org/).
+- **Expiration du verrouillage temporel:** Lorsque vous verrouillez vos Bitcoins pour le staking, ils ne sont pas accessibles avant la fin de la période de staking.
+- **Choisir judicieusement:** Nous vous conseillons de sélectionner soigneusement votre période de verrouillage, en tenant compte de vos objectifs d'investissement et de votre tolérance au risque. Commencer par des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
+- **Vérification du montant staké:** Actuellement, en raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lors de la vérification via CLI (interface de ligne de commande). Cependant, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés sur le site officiel de [Core dédié au Staking de BTC Non-Custodial](https://stake.coredao.org/).
 
-### Why is my staked asset not visible in my wallet?
+### Pourquoi mon actif staké n'est-il pas visible dans mon portefeuille ?
 
-Currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core's official Non-Custodial BTCStaking Website](https://stake.coredao.org/).
+Actuellement, en raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lors de la vérification via CLI. Toutefois, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés sur le [site officiel de Core dédié au Staking de BTC Non-Custodial](https://stake.coredao.org/).
