@@ -1,68 +1,68 @@
 ---
-sidebar_label: Redeem BTC / Claim CORE
+sidebar_label: Récupérer BTC / Réclamer CORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Redeem Staked BTC or Claim CORE Rewards
+# Récupérer des BTC Stakés ou Réclamer des Récompenses en CORE
 
-Core offers BTC holders to stake their assets onto the Core blockchain to ear passive income in the form of CORE tokens. To learn how to stake your BTC assets onto the Core Chain and earn rewards, follow our detailed [guide](./stake-btc-guide.md). After you have succesfully staked your BTC on the Core blockchain, next up is to learn to claim your CORE rewards or redeem your staked BTC. This detailed guide will be utilized when you see ‘**Redeem**’ appear under ‘**Action**’ on the delegated validator you chose previously or ‘**Claim**’ next to ‘**Delegated Hash & Core Rewards**’ and or ‘**BTC Staking Rewards’**.
+Core offre aux détenteurs de BTC la possibilité de staker leurs actifs sur la blockchain Core pour gagner un revenu passif sous forme de tokens CORE. Pour apprendre à staker vos actifs BTC sur la chaîne Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos BTC avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos BTC stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking BTC**’.
 
-## Reward Distribution Information
+## Informations sur la Distribution des Récompenses
 
-- **Distribution of Rewards:** Core token rewards are distributed to stakers as incentives for their contribution to network security and governance.
-- **Reward Source:** Rewards are sourced from the consensus reward pool shared between participants of Core's dual mechanisms: dPoW (Bitcoin miners) and dPoS (BTC and CORE stakers).
+- **Distribution des Récompenses:** Les récompenses en tokens Core sont distribuées aux stakers en tant qu'incitations pour leur contribution à la sécurité et à la gouvernance du réseau.
+- **Source des Récompenses:** Les récompenses proviennent du pool de récompenses de consensus partagé entre les participants des deux mécanismes de Core : dPoW (mineurs de Bitcoin) et dPoS (stakers de BTC et de CORE).
 
-## Redeem an Expired Staked BTC
+## Récupérer des BTC Stakés Expirés
 
-If your staking period has expired, redeem your staked BTC assets from either Unisat or Xverse wallet(s). You must use the same wallet address during the staking process to redeem your expired staked BTC.
+Si votre période de staking a expiré, vous pouvez récupérer vos BTC stakés via les portefeuilles Unisat ou Xverse. Vous devez utiliser la même adresse de portefeuille que celle utilisée lors du processus de staking pour récupérer vos BTC stakés expirés.
 
-1. From any CORE screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
+1. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit → cliquez sur **‘Mes Stakings**‘.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
 
-2. At the delegator screen, look for the column BTC(x) and click.
+2. Sur l'écran du délégateur, recherchez la colonne BTC(x) et cliquez.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-19.avif)
 
-3. You are now viewing the validators that you have previously delegated your staked BTC to. Look for any validators that say ‘**Expired**’ under ‘**Redeem Time**’ and proceed to clicking ‘**Redeem**’ under ‘**Action**’.
+3. Vous verrez maintenant les validateurs auxquels vous avez précédemment délégué vos BTC stakés. Recherchez les validateurs affichant ‘**Expiré**‘ sous ‘**Temps de Récupération**‘, puis cliquez sur ‘**Récupérer**‘ sous ‘**Action**‘.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-20.avif)
 
-4. You will be met with a popup window to redeem your BTC. In order to redeem the BTC, you must connect to the same Bitcoin wallet address as the one initiating the BTC staking transaction.
+4. Une fenêtre contextuelle s'ouvrira pour vous permettre de récupérer vos BTC. Pour récupérer les BTC, vous devez vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking BTC.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-21.avif)
 
-- Set your receiving Bitcoin Address to receive the unlocked BTC. This does not need to be the same as the address that initiated the BTC staking transaction.
-- Set your transaction speed priority
-- Click ‘**Create Transaction**’
+- Définissez votre adresse de réception Bitcoin pour recevoir les BTC déverrouillés. Elle ne doit pas nécessairement être la même que celle ayant initié la transaction de staking BTC.
+- Choisissez la priorité de la vitesse de transaction
+- Cliquez sur ‘**Créer une Transaction**’
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-22.avif)
 
-5. Sign the transaction with your Bitcoin wallet that you connected previously, and verify the BTC has returned to your receiving address. (_This may take a few minutes_).
+5. Signez la transaction avec votre portefeuille Bitcoin connecté précédemment, et vérifiez que les BTC ont bien été renvoyés à votre adresse de réception. (_Cela peut prendre quelques minutes_).
 
-## Claim CORE token rewards earned from BTC Staking delegation
+## Réclamer des Récompenses en CORE Gagnées avec la Délégation de BTC Staké
 
-1\. From any CORE screen, hover over your connected wallet in the top right corner, click ‘**My Staking**’.
+1\. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit, et cliquez sur ‘**Mes Stakings**’.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-23.avif)
 
-2. Click the ‘**Claim**’ button next to ‘**BTC Staking Rewards**’
+2. Cliquez sur le bouton ‘**Réclamer**’ à côté de ‘**Récompenses de Staking BTC**’
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-24.avif)
 
-3. Sign the transaction via MetaMask wallet.
+3. Signez la transaction via le portefeuille MetaMask.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-25.png)
 
-3. Wait for transaction to submit
+3. Attendez que la transaction soit soumise
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-26.avif)
 
-3. Verify Transaction succeed
+3. Vérifiez que la transaction a réussi
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-27.avif)
 
 #### Conclusion
 
-By following this guide, you have sucecesfulyl learned how to redeem your staked BTC from the Core blockchain, as well as, how to redeem your rewards earned as CORE token from delegating your staked BTC. We’re happy you’ve chosen to journey into BTCfi with Non-Custodial BTC Staking on Core!
+En suivant ce guide, vous avez appris avec succès à récupérer vos BTC stakés sur la blockchain Core ainsi qu'à réclamer vos récompenses gagnées sous forme de tokens CORE en déléguant vos BTC stakés. Nous sommes ravis que vous ayez choisi de vous aventurer dans le BTCfi avec le Staking de BTC Non-Custodial sur Core!
