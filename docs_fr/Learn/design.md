@@ -156,5 +156,5 @@ Pour rendre le processus plus pratique, Core Chain introduit le rôle des relaye
 
 - Inclure le `RedeemScript` complet à la fin de la sortie `OP_RETURN`, si le script est court. par exemple, un `RedeemScript` construit en utilisant un hachage de clé publique, comme montré dans l'exemple ci-dessus.
 - Utiliser leur propre adresse de réception pour la transaction de staking, afin que les relayeurs puissent extraire les informations utiles depuis l'entrée de la transaction et composer eux-mêmes le `RedeemScript`. Par exemple
-  - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
-  - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.
+  - Si c'est une adresse normale, la `pubkey` ou la `pubkey hash` doit être définie comme la clé publique d'entrée correspondante lors de l'élaboration de `RedeemScript`.
+  - Si c'est une adresse multi-signature, la clé publique correspondante de l'adresse multi-signature doit être utilisée lors de la construction du `RedeemScript`.
