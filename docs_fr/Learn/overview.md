@@ -49,37 +49,37 @@ Avec le staking non-custodial du bitcoin, le protocole de Core Chain intègre le
 1. L'adresse du validateur Core à qui le staker veut déléguer ses bitcoins.
 2. L'adresse où le staker souhaite que ses récompenses en tokens CORE soient envoyées.
 
-Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core Chain). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility.
+Les détenteurs de bitcoins qui participent au staking gagnent un rendement sur leurs bitcoins, autrement passifs, sous forme de récompenses en tokens CORE, pour la durée de leur timelock (et donc pour la durée pendant laquelle ils délèguent leurs bitcoins pour voter pour les validateurs sur Core Chain). Le résultat final est que des milliards de dollars en valeur de bitcoins sous-utilisés deviendront productifs, rémunérant les stakers tout en étendant l'utilité de Bitcoin.
 
-### Guidelines for Staking/Redeeming BTC
+### Directives pour le Staking/Rachat de BTC
 
-When staking or redeeming your BTC, please follow these guidelines to ensure smooth transactions:
+Lorsque vous stakez ou rachetez votre BTC, veuillez suivre ces directives pour assurer des transactions fluides:
 
-1. **Avoid Low Gas Fees:**
-   - We recommend avoiding gas fees lower than the current market rate.
-   - Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
-2. **Handling Low Gas Fee Situations:**
-   - If your Bitcoin transaction is delayed due to a low gas fee, consider using a transaction accelerator to speed up the process.
-   - There are several third-party services available; for example, the free viaBTC transaction accelerator (which can be accessed [here](https://www.viabtc.com/tools/txaccelerator)).
-   - Please research and choose a service that best fits your needs.
+1. **Évitez les frais de gas bas:**
+   - Nous recommandons d'éviter des frais de gas inférieurs au taux du marché actuel.
+   - Utiliser un frais de gas trop bas, en particulier pendant les périodes de congestion du réseau, peut entraîner un délai important pour la confirmation de votre transaction Bitcoin (cela peut prendre des jours).
+2. **Gérer les situations de frais de gas bas**
+   - Si votre transaction Bitcoin est retardée en raison de frais de gas bas, envisagez d'utiliser un accélérateur de transaction pour accélérer le processus.
+   - Il existe plusieurs services tiers disponibles, comme l'accélérateur de transaction gratuit viaBTC (qui peut être accédé [ici](https://www.viabtc.com/tools/txaccelerator)).
+   - Faites vos propres recherches et choisissez un service qui correspond le mieux à vos besoins.
 
-By following these recommendations, you can ensure a more efficient staking and redemption process for your BTC.
+En suivant ces recommandations, vous pouvez garantir un processus plus efficace de staking et de rachat pour votre BTC.
 
-### Requirements for Eligibility
+### Conditions d'Éligibilité
 
-Core Chain welcomes BTC holders to stake their BTC on the Bitcoin network. By voting for a Core validator during your BTC staking transaction, you play a pivotal role in Core's decentralization, earning CORE tokens as recurring rewards.
+Core Chain invite les détenteurs de BTC à staker leurs bitcoins sur le réseau Bitcoin. En votant pour un validateur Core pendant votre transaction de staking BTC, vous jouez un rôle central dans la décentralisation de Core, tout en gagnant des récompenses récurrentes en tokens CORE.
 
-- There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core Chain.
-  - A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days**.
+- Il existe des _exigences minimales_ concernant le **montant** et la **durée** pour que le staking soit éligible sur Core Chain.
+  - Un utilisateur doit staker au moins **0,01 BTC** (moins les frais de transaction) pour une durée minimale de **10 jours**.
 
-### Transaction Work Flow
+### Déroulement des transactions
 
 ![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-flow.png)
 
-Core Chain's implementation of BTC native staking is completely non-custodial, i.e., users can keep their BTC assets on the Bitcoin network without bridging them out before staking. Users are required to perform only the following steps:
+L'implémentation par Core Chain du staking natif de BTC est complètement non-custodial, c'est-à-dire que les utilisateurs peuvent garder leurs actifs BTC sur le réseau Bitcoin sans les transférer vers une autre blockchain avant de les staker. Les utilisateurs doivent simplement suivre les étapes suivantes:
 
-- Send a BTC transaction to their own address, and lock up the output whose amount is intended to stake on Core blockchain by using the Bitcoin native timelock feature. Besides, the transaction should also contain an `op_return` output in which users can designate the Core validator address to stake to and a `reward address` to receive CORE rewards. For details to compose such a staking transaction, please refer to the [transaction design](design.md).
+- Envoyer une transaction BTC à leur propre adresse, et verrouiller la sortie, correspondant au montant destiné au staking sur la blockchain Core, en utilisant la fonctionnalité de timelock natif de Bitcoin. De plus, la transaction doit contenir une sortie `op_return` dans laquelle les utilisateurs peuvent désigner l'adresse du validateur Core pour le staking et une adresse de récompense pour recevoir les récompenses en CORE. Pour plus de détails sur la composition de cette transaction de staking, veuillez consulter la [conception de la transaction](design.md).
 
-- (_Optional_) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit to the Core blockchain. This step is optional, if users compose the transaction in a standard format as suggested by Core Chain (defined in the [transaction design](design.md)). The Core infrastructure will detect the staking transaction and submit it to Core blockchain for users.
+- (_Optionnel_) Après la confirmation de la transaction sur le réseau Bitcoin, les utilisateurs peuvent récupérer les données de transaction et les soumettre à la blockchain Core. Cette étape est facultative si les utilisateurs composent la transaction dans un format standard comme recommandé par Core Chain (défini dans la [conception de la transaction](design.md)). L'infrastructure Core détectera la transaction de staking et la soumettra à la blockchain Core pour les utilisateurs.
 
-- When the timelock expires, users can spend the UTXO using the corresponding redeem script. It is easy for them to build the redeem script from the original staking transaction.
+- Lorsque le timelock expire, les utilisateurs peuvent dépenser l'UTXO en utilisant le script de rachat correspondant. Il leur est facile de construire le script de rachat à partir de la transaction de staking originale.
