@@ -52,19 +52,19 @@ Opter pour le coreBTC offre plusieurs avantages convaincants, ce qui en fait un 
 
 - **Aucun risque de garde:** Les utilisateurs conservent le contrôle total de leurs bitcoins jusqu'à ce qu'ils décident de les verrouiller pour obtenir du coreBTC, réduisant ainsi les risques de garde généralement associés à la remise d'actifs à un tiers.
 
-- **Fiat Peg Avoidance:** Unlike stablecoins pegged to fiat currencies, coreBTC is pegged directly to Bitcoin, avoiding issues related to fiat currency volatility and inflation.
+- **Évitement du peg fiat:** Contrairement aux stablecoins adossés à des devises fiduciaires, le coreBTC est directement indexé sur le Bitcoin, évitant les problèmes liés à la volatilité des devises fiduciaires et à l'inflation.
 
-- **Reward Opportunities:** Users can earn additional rewards in CORE tokens by participating in the staking and security of the Core Chain, thereby increasing their potential investment returns.
+- **Opportunités de récompenses:** Les utilisateurs peuvent gagner des récompenses supplémentaires en tokens CORE en participant au staking et à la sécurité de Core Chain, augmentant ainsi leurs rendements potentiels.
 
-- **Future-Proof Investment:** As Core Chain continues to develop and expand its offerings, holding coreBTC could provide strategic advantages in accessing new services and features as they become available on the platform.
+- **Investissement pérenne:** Alors que Core Chain continue de se développer et d'étendre ses offres, détenir du coreBTC pourrait offrir des avantages stratégiques pour accéder à de nouveaux services et fonctionnalités à mesure qu'ils deviennent disponibles sur la plateforme.
 
-Choosing coreBTC allows users to leverage the security and value of Bitcoin within a dynamic and growing DeFi ecosystem, aligning traditional Bitcoin investment with modern blockchain technology opportunities.
+En choisissant le coreBTC, les utilisateurs peuvent exploiter la sécurité et la valeur du Bitcoin au sein d'un écosystème DeFi dynamique et en pleine croissance, alignant ainsi l'investissement traditionnel en Bitcoin avec les opportunités modernes de la technologie blockchain.
 
-## How coreBTC Works
+## Fonctionnement du coreBTC
 
-- **Minting Process:** Users send Bitcoin to a Locker's address. Once confirmed, Relayers submit the transaction proof to the coreBTC smart contract, which mints an equivalent amount of coreBTC.
-- **Redemption Process:** Users can burn their coreBTC to retrieve their locked Bitcoin. The coreBTC smart contract verifies the burn and instructs the Locker to send the equivalent Bitcoin to the user’s specified address.
+- **Processus de création:** Les utilisateurs envoient des bitcoins à l'adresse d'un Locker. Une fois confirmé, les Relayeurs soumettent la preuve de la transaction au smart contract coreBTC, qui crée une quantité équivalente de coreBTC.
+- **Processus de rédemption:** Les utilisateurs peuvent brûler leur coreBTC pour récupérer leurs bitcoins verrouillés. Le smart contract coreBTC vérifie la brûlure et demande au Locker d'envoyer le bitcoin équivalent à l'adresse spécifiée par l'utilisateur.
 
 ## Conclusion
 
-coreBTC is a transformative component of the Core Chain ecosystem, enhancing the utility of Bitcoin by enabling its active participation in DeFi while adhering to the principles of decentralization and security. Through its intricate system of Lockers, Relayers, and smart contracts, coreBTC ensures that Bitcoin can be safely used and transacted within the Core Chain ecosystem, broadening its appeal and functional utility.
+Le coreBTC est un composant transformateur de l'écosystème Core Chain, augmentant l'utilité du Bitcoin en permettant sa participation active dans la DeFi tout en respectant les principes de décentralisation et de sécurité. Grâce à son système complexe de Lockers, de Relayeurs et de smart contracts, le coreBTC garantit que le Bitcoin peut être utilisé et transigé en toute sécurité au sein de l'écosystème Core Chain, élargissant ainsi son attrait et sa fonctionnalité.
