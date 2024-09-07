@@ -61,118 +61,118 @@ Le staking non-custodial de BTC offre une méthode sécurisée et décentralisé
 3. **Voter pour des Validateurs:** Déléguez vos BTC stakés au validateur choisi sur la blockchain Core.
 4. **Connecter le Portefeuille Core pour les Récompenses:** Vérifiez votre adresse Core dans le champ de retour, où vous recevrez les récompenses en tokens Core.
 5. **Réclamer les Récompenses:** Les récompenses en tokens Core apparaîtront lorsque les utilisateurs connecteront leur portefeuille et peuvent être réclamées quotidiennement. Les récompenses en tokens Core apparaîtront sur le [site de staking](https://stake.coredao.org).
-6. **Redeem BTC:** Once the staking lock time expires, the staked BTC will remain idle in the staking address until redeemed by the user.
+6. **Récupérer des BTC:** Une fois la période de verrouillage du staking expirée, les BTC stakés resteront inactifs dans l'adresse de staking jusqu'à ce qu'ils soient récupérés par l'utilisateur.
 
-## Non-Custodial BTC Staking Walkthrough
+## Guide de Staking Non-Custodial de BTC
 
-To begin staking your Bitcoin on the Core blockchain and earn Core token rewards, follow these steps:
+Pour commencer à staker vos Bitcoin sur la blockchain Core et gagner des récompenses en tokens Core, suivez ces étapes:
 
-### Connect Your Wallet
+### Connecter Votre Portefeuille
 
-Connecting your wallet is the first step towards accessing the staking platform and initiating the staking process. This will enable you to interact with the Core blockchain and participate in Non-Custodial BTC Staking.
+La connexion de votre portefeuille est la première étape pour accéder à la plateforme de staking et initier le processus. Cela vous permettra d'interagir avec la blockchain Core et de participer au staking non-custodial de BTC.
 
-1. Visit [https://stake.coredao.org](https://stake.coredao.org)
+1. Visitez [https://stake.coredao.org](https://stake.coredao.org)
 
-2. Once on the website, locate and click on the "**Connect Wallet**" button.
+2. Une fois sur le site, localisez et cliquez sur le bouton "**Connecter le Portefeuille**".
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-3.avif)
 
-3. **Choose an available wallet**
+3. **Choisissez un portefeuille disponible**
 
-   - If you do not yet have a wallet, refer to **[Core Wallet for Rewards](#prerequisites)** in the prerequisite section above.
+   - Si vous n'avez pas encore de portefeuille, consultez la section **[Portefeuille Core pour Récompenses](#prerequisites)** dans les prérequis ci-dessus.
 
-4. **Choose a validator to delegate BTC**
+4. **Choisir un Validateur pour Déléguer des BTC**
 
-Here, we will be selecting a validator that we’d like to delegate our BTC to. In the example shown, we will be choosing Validator 4, but you’re free to choose any active validator.
+Ici, nous allons sélectionner un validateur auquel déléguer nos BTC. Dans l'exemple donné, nous choisirons le Validateur 4, mais vous êtes libre de choisir n'importe quel validateur actif.
 
 ```
-1. Click name of chosen validator to select
+1. Cliquez sur le nom du validateur choisi pour le sélectionner
 ```
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-4.avif)
 
 ```
-2. Hover over Delegate, and then select ‘BTC’ on the dropdown
+2. Survolez Déléguer, puis sélectionnez ‘BTC‘ dans le menu déroulant
 ```
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-5.avif)
 
-### Connect BTC wallet
+### Connecter le Portefeuille BTC
 
 ```
-1. Upon selecting a validator to delegate BTC in the previous step, you will be prompted to connect a BTC wallet
+1. Après avoir sélectionné un validateur pour déléguer des BTC à l'étape précédente, vous serez invité à connecter un portefeuille BTC
 ```
 
 :::info
-In this example, we demonstrate using Unisat Wallet, but it's compatible with Xverse Wallet as well. Ensure you have either of these two installed.
+Dans cet exemple, nous utilisons le portefeuille Unisat, mais il est également compatible avec le portefeuille Xverse. Assurez-vous d'avoir installé l'un de ces deux portefeuilles.
 :::
 
 ```
-2. On the Connect wallet pop up screen, select one of the available wallets.
+2. Sur l'écran contextuel de connexion de portefeuille, sélectionnez un portefeuille disponible.
 ```
 
-- For developers and more advanced users who are interested in using the Stake Tool, refer[ here.](https://github.com/coredao-org/btc-staking-tool?tab=readme-ov-file)
+- Pour les développeurs et utilisateurs avancés intéressés par l'utilisation de l'Outil de Staking, veuillez vous référer [ici.](https://github.com/coredao-org/btc-staking-tool?tab=readme-ov-file)
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-6.png)
 
 ```
-3. On the following screen, click **Connect**
+3. Sur l'écran suivant, cliquez sur **Connecter**
 ```
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-7.avif)
 
-### Delegate BTC
+### Déléguer des BTC
 
-While initiating the delegation process, it's important to understand and specify several key parameters:
+Lors de l'initiation du processus de délégation, il est important de comprendre et de spécifier plusieurs paramètres clés:
 
-1. **Specifying the amount of BTC you’d like to delegate**
+1. **Spécifier le montant de BTC que vous souhaitez déléguer**
 
-- The minimum amount to delegate is **0.01 BTC**
-- In our example, we will be delegating **0.05 BTC** which satisfies this requirement
+- Le montant minimum à déléguer est de **0,01 BTC**
+- Dans notre exemple, nous déléguerons **0,05 BTC**, ce qui satisfait cette exigence
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-8.avif)
 
-2. **Setting the lock time** – this determines when your staked BTC will be unlocked and available for use again on your local device.
+2. **Définir le temps de verrouillage:** – Cela détermine quand vos BTC stakés seront déverrouillés et disponibles à nouveau sur votre appareil local.
 
-- Select inside lock time box to input values
-- The default lock time is set to a month in advance. The minimum lock time is **10 days.**
-- In our example, we’ve selected a date 10 days in advance (April 24)
-- Click ‘**OK**’ to proceed
+- Sélectionnez l'intérieur de la boîte de temps de verrouillage pour saisir les valeurs
+- Le temps de verrouillage par défaut est fixé à un mois à l'avance. Le temps de verrouillage minimum est de **10 jours.**
+- Dans notre exemple, nous avons sélectionné une date 10 jours à l'avance (24 avril)
+- Cliquez sur ‘**OK**’ pour continuer
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-9.avif)
 
-3. Specifying the network priority speed for your transaction
+3. Spécifier la priorité du réseau pour votre transaction
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-10.avif)
 
-4. Finally, click ‘**Confirm Delegation**’ to **Delegate BTC**
+4. Finalement, cliquez sur ‘**Confirmer la Délégation**’ pour ‘**déléguer vos BTC**’
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-11.avif)
 
-5. Before Signing the transaction in your wallet, verify the transaction outputs to make sure it includes an OP\_Return output.  OP\_Return output is where your redeem\_script is saved and is essentially for redeeming your staked BTC. There may be 2 or 3 outputs, but at least one of the outputs should always be OP\_Return. Abort the transaction if it doesn't include the OP\_Return output.
+5. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de transaction pour vous assurer qu'elles incluent une sortie OP\_Return.  La sortie OP\_Return est située là où votre redeem\_script est sauvegardé, essentiel pour récupérer vos BTC stakés. Il peut y avoir 2 ou 3 sorties, mais au moins une doit toujours être OP\_Return. Annulez la transaction si elle n'inclut pas la sortie OP\_Return.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-12.avif)
 
-6. Verify Transaction Submitted
+6. Vérifier la Soumission de la Transaction
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-13.avif)
 
-5. From any CORE screen, hover over your connected wallet in the top right corner click ‘**My Staking**’.
+5. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit et cliquez sur ‘**Mes Stakings**’.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-14.png)
 
-6. At the **Delegator** screen, look for the column **BTC(x)** and click.
+6. Sur l'écran du **Délégateur**, recherchez la colonne **BTC(x)** et cliquez.
 
    ![native-staking-guide](../../../../static/img/native-staking/native-staking-15.avif)
 
-7. Verify your chosen validator is pending transaction confirmation.
+7. Vérifiez que le validateur choisi est en attente de confirmation de la transaction.
 
    ![native-staking-guide](../../../../static/img/native-staking/native-staking-16.avif)
 
-8. Verify your chosen validator says ‘**Rewarding**’ under '**Redeem** **Time**'.
+8. Vérifiez que votre validateur choisi indique **Récompense en cours** sous **Temps** de **Récupération**.
 
    ![native-staking-guide](../../../../static/img/native-staking/native-staking-17.avif)
 
-**Congratulations.** You have succesfully staked your BTC on the Core blockchain and will now actively earn CORE tokens from your delegated BTC. Through staking BTC and voting for validators, you actively contribute to the governance and security of the Core network, helping maintain its balance and decentralization.
+**Félicitations.** Vous avez réussi à staker vos BTC sur la blockchain Core et gagnerez désormais activement des tokens CORE à partir de vos BTC délégués. Grâce au staking de BTC et au vote pour les validateurs, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, en aidant à maintenir son équilibre et sa décentralisation.
 
-We’re happy you’ve chosen to journey into BTCfi with Non-Custodial BTC Staking on Core!
+Nous sommes ravis que vous ayez choisi de découvrir BTCfi avec le staking Non-Custodial de BTC sur Core!
