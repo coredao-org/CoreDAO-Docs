@@ -1,66 +1,66 @@
 ---
-sidebar_label: Staking BTC on Core
+sidebar_label: Staking BTC sur Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Non-Custodial BTC Staking
+# Staking Non-Custodial de BTC
 
-This technical guide is designed to walk you through the process of staking your Bitcoin (BTC) on the Core blockchain to earn CORE token rewards. With Non-Custodial BTC Staking, you can earn passive yield in CORE while retaining ownership of your Bitcoin assets. Let's dive into how it works and how you can start staking today.
+Ce guide technique est conçu pour vous guider à travers le processus de staking de vos Bitcoin (BTC) sur la blockchain Core afin de gagner des récompenses en tokens CORE. Avec le staking non-custodial de BTC, vous pouvez gagner un revenu passif en CORE tout en conservant la propriété de vos actifs en Bitcoin. Plongeons dans le fonctionnement du staking et comment vous pouvez commencer dès aujourd'hui.
 
-## Prerequisites
+## Prérequis
 
-The following must be satisfied prior in order to complete this guide:
+Les éléments suivants doivent être satisfaits avant de compléter ce guide:
 
-1. **Xverse and/or Unisat Wallet(s):** You will need to add to either [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1) and/or [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo) wallet(s) via Chrome browser extension, to participate in the staking process. (_Must use a desktop, mobile and hardware wallets are not supported at this time_)
+1. **Portefeuille(s) Xverse et/ou Unisat:** Vous devez ajouter des portefeuille(s) [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1) et/ou [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo) via une extension Chrome pour participer au processus de staking. (_Uniquement sur un ordinateur de bureau, les portefeuilles mobiles et physiques ne sont pas encore supportés_)
 
-2. **Core Wallet Address for Rewards:** Prepare your Core wallet address where you will receive Core token rewards for staking your BTC. If you do not have a Core wallet address, you can create one easily by connecting to MetaMask.
+2. **Adresse de Portefeuille Core pour les Récompenses:** Préparez votre adresse de portefeuille Core où vous recevrez les récompenses en tokens CORE pour le staking de vos BTC. Si vous n'avez pas encore d'adresse Core, vous pouvez en créer une facilement en vous connectant à MetaMask.
 
-**1. Adding the Core network to MetaMask via the Core Explorer:**
+**1. Ajouter le réseau Core à MetaMask via Core Explorer:**
 
-- Go to [coredao.org](http://coredao.org) and scroll all the way down on the page
+- Allez sur [coredao.org](http://coredao.org) et faites défiler jusqu'en bas de la page
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-1.avif)
 
-- Click the ‘Add Core Network’ button
-- Approve in your MetaMask
+- Cliquez sur le bouton ‘Add Core Network‘
+- Approuvez dans MetaMask
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-2.png)
 
-2. Alternatively, you can use this guide: [Add Core to MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce) for a more detailed step by step guideline for manually filling out the network information.
+2. Alternativement, vous pouvez également suivre ce guide : [Ajouter Core à MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce) pour des instructions plus détaillées afin d'entrer les informations du réseau manuellement.
 
-## Before you Start Staking
+## Avant de Commencer le Staking
 
-Let's clarify the staking mechanism, so you know what to expect going into Non-Custodial BTC Staking.
+Clarifions le mécanisme de staking afin que vous sachiez à quoi vous attendre avec le staking non-custodial de BTC.
 
-1. **Minimum of 0.01 BTC + Gas Fee**
+1. **Minimum de 0,01 BTC + Frais de Gas:**
 
-   - **Why is this necessary:** To ensure a smooth staking experience, you need to have a minimum of **0.01 BTC** available along with the necessary gas fee required for executing transactions on the Bitcoin network. Gas fees cover the cost of processing transactions on the blockchain. Additionally, we recommend having at least **0.05 BTC** if staking for less than **1 month**. This buffer accounts for potential network congestion, where transaction gas prices may exceed the earned staking reward.
+   - **Pourquoi c'est nécessaire:** Pour assurer une expérience de staking fluide, vous devez avoir un minimum de **0,01 BTC** disponible ainsi que les frais de gas nécessaires pour exécuter les transactions sur le réseau Bitcoin. Les frais de gas couvrent le coût du traitement des transactions sur la blockchain. De plus, nous recommandons d'avoir au moins **0,05 BTC** si vous staker pour moins **d'un mois**. Ce montant supplémentaire sert de marge de sécurité en cas de congestion du réseau, où les prix du gas pourraient dépasser les récompenses de staking gagnées.
 
-2. **Understanding Staking Address Differences**
+2. **Comprendre les Différences d'Adresse de Staking**
 
-   - **What's happening:** You may notice that the staking address provided differs from your original Bitcoin address.
-   - **What it means:** The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoin remains safely stored in the staking address controlled by your private key, unaffected by staking. We’re actively working with wallet partners to support this display of your assets in a timely manner.
-   - You can view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/) is an option we recommend. We're actively working to make staked assets visible in the wallet.
+   - **Ce qui se passe:** Vous pourriez remarquer que l'adresse de staking fournie diffère de votre adresse Bitcoin originale.
+   - **Ce que cela signifie:** L'adresse de staking est dérivée de la clé privée principale de votre portefeuille, garantissant votre contrôle et la sécurité de vos actifs. Vos Bitcoin restent stockés en toute sécurité dans l'adresse de staking contrôlée par votre clé privée, sans être affectés par le staking. Nous travaillons activement avec des partenaires de portefeuilles pour afficher vos actifs stakés dans les portefeuilles en temps opportun.
+   - Vous pouvez consulter vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, [Mempool.space](https://mempool.space/) est une option que nous recommandons. Nous travaillons activement pour rendre les actifs stakés visibles dans les portefeuilles.
 
-3. **Considerations for Locking Periods**
+3. **Considérations pour les Périodes de Verrouillage**
 
-   - **Important reminder:** Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
-   - **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+   - **Rappel important:** Une fois que vous avez verrouillé vos Bitcoin pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking.
+   - **Choisir judicieusement:** Nous vous conseillons de sélectionner soigneusement votre période de verrouillage en fonction de vos objectifs d'investissement et de votre tolérance au risque. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 
-   These prompts aim to provide clarity and confidence as you embark on your Non-Custodial BTC Staking journey. Your understanding and preparedness are key to a successful staking experience. Now, let's guide you through the step-by-step process of staking your Bitcoin on the Core blockchain and earning Core token rewards.
+   Ces rappels visent à vous apporter clarté et confiance avant de vous lancer dans votre aventure de staking non-custodial de BTC. Votre compréhension et préparation sont essentielles pour une expérience de staking réussie. Passons maintenant à un guide étape par étape pour staker vos Bitcoin sur la blockchain Core et gagner des récompenses en tokens Core.
 
-## How Non-custodial BTC Staking Works
+## Fonctionnement du Staking Non-custodial de BTC
 
-### Overview of the Staking Process
+### Aperçu du Processus de Staking
 
-Non-Custodial BTC staking introduces a secure and decentralized method for Bitcoin holders to earn rewards. By locking your Bitcoin within the original network through a time-bound mechanism, you can actively participate in the Core blockchain's Consensus mechanism while staking. Here are the steps involved in this process.
+Le staking non-custodial de BTC offre une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin puissent gagner des récompenses. En verrouillant vos Bitcoin sur le réseau d'origine via un mécanisme à durée déterminée, vous pouvez participer activement au mécanisme de consensus de la blockchain Core tout en stakant. Voici les étapes impliquées dans ce processus.
 
-1. **Initiate Staking:** Start by accessing the staking platform using either the [command line interface for technical users](https://github.com/coredao-org/btc-staking-tool)  or the web-based frontend for general users [https://stake.coredao.org](https://stake.coredao.org)
-2. **Stake BTC with Time-Lock:** Stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, ensuring that your BTC remains locked until the specified period ends. The minimum staking period is **10 days**.
-3. **Vote for Validators:** Delegate your staked BTC to the chosen validator on the Core blockchain.
-4. **Connect Core Chain’s wallet for rewards:** Verify your Core address in the return field, where you'll receive Core token rewards.
-5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the [staking site](https://stake.coredao.org).
+1. **Initier le Staking:** Commencez par accéder à la plateforme de staking en utilisant soit [l'interface en ligne de commande pour les utilisateurs techniques](https://github.com/coredao-org/btc-staking-tool), soit l'interface web frontend pour les utilisateurs généraux via [https://stake.coredao.org](https://stake.coredao.org)
+2. **Staker des BTC avec un Verrouillage Temporel:** Stakez vos Bitcoin en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, garantissant que vos BTC restent verrouillés jusqu'à la fin de la période spécifiée. La période de staking minimale est de **10 jours**.
+3. **Voter pour des Validateurs:** Déléguez vos BTC stakés au validateur choisi sur la blockchain Core.
+4. **Connecter le Portefeuille Core pour les Récompenses:** Vérifiez votre adresse Core dans le champ de retour, où vous recevrez les récompenses en tokens Core.
+5. **Réclamer les Récompenses:** Les récompenses en tokens Core apparaîtront lorsque les utilisateurs connecteront leur portefeuille et peuvent être réclamées quotidiennement. Les récompenses en tokens Core apparaîtront sur le [site de staking](https://stake.coredao.org).
 6. **Redeem BTC:** Once the staking lock time expires, the staked BTC will remain idle in the staking address until redeemed by the user.
 
 ## Non-Custodial BTC Staking Walkthrough
