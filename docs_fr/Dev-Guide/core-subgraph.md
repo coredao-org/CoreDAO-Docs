@@ -46,42 +46,42 @@ La commande de déploiement `graph deploy` devrait retourner l'URL HTTP de requ�
 
 Maintenant que nous comprenons le processus, passons à un exemple complet en configurant un sous-graphe Uniswap V2 sur Core.
 
-First, clone the Uniswap V2 [subgraph repository](https://github.com/Uniswap/v2-subgraph), navigate to the project folder, then execute the following commands from that directory:
+Premièrement, clonez le [répertoire du sous-graphe](https://github.com/Uniswap/v2-subgraph) Uniswap V2, accédez au dossier du projet, puis exécutez les commandes suivantes depuis ce répertoire :
 
 ```
-# Install dependencies with npm (or yarn)
+# Installer les dépendances avec npm (ou yarn)
 npm install
 
-# Generate subgraph code
+# Générer le code du sous-graphe
 npm run codegen
 ```
 
-Now we'll make a few required changes to the _subgraph.yaml_ and _helpers.ts_ files:
+Maintenant nous allons apporter quelques modifications nécessaires aux fichiers _subgraph.yaml_ et _helpers.ts_ :
 
 - _subgraph.yaml_:
-  - Change network name to `core` on lines 9 and 37.
-  - Update the factory address on line 11.
-  - Update the `startBlock` on line 13 to a reasonable block height (current block height available [here](https://scan.coredao.org/)).
+  - Changez le nom du réseau en `core` aux lignes 9 et 37.
+  - Mettez à jour l'adresse du factory à la ligne 11.
+  - Mettez à jour le `startBlock` à la ligne 13 avec une hauteur de bloc raisonnable (la hauteur actuelle du bloc est disponible [ici](https://scan.coredao.org/)).
 - _src/mappings/helpers.ts_:
-  - Update the factory address on line 11.
+  - Mettez à jour l'adresse du factory à la ligne 11.
 
-Finally, we'll run the create and deploy commands. In order to avoid compatibility issues, let's use the graph-cli installed in the project (instead of the global version) by prefixing the `graph` command with `./node_modules/.bin/`.
+Finalement, nous allons exécuter les commandes de création et de déploiement. Pour éviter les problèmes de compatibilité, utilisez la version de graph-cli installée dans le projet (au lieu de la version globale) en préfixant la commande `graph` avec `./node_modules/.bin/`.
 
 ```bash
-# Create a new subgraph called uniswap-4-test
+# Créer un nouveau sous-graphe appelé uniswap-4-test
 ./node_modules/.bin/graph create uniswap-4-test --node https://thegraph.coredao.org/deploy/
 
-# Deploy the uniswap-4-test subgraph
+# Déployer le sous-graphe uniswap-4-test
 ./node_modules/.bin/graph deploy uniswap-4-test --node https://thegraph.coredao.org/deploy/ --ipfs https://thegraph.coredao.org/ipfs/
 
-# The deploy command should print an HTTP query URL similar to:
+# Le déploiement devrait imprimer une URL HTTP de requête similaire à :
 # https://thegraph.coredao.org/subgraphs/name/uniswap-4-test
 ```
 
-Well done, your subgraph is deployed! Now you can integrate the HTTP query URL printed by the deploy command into your website and use it to query data.
+Félicitations, votre sous-graphe est déployé ! Vous pouvez maintenant intégrer l'URL de requête HTTP imprimée par la commande de déploiement dans votre site web et l'utiliser pour interroger les données.
 
-### Authorization
+### Autorisation
 
-To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.\
+Pour éviter que votre sous-graphe soit écrasé par d'autres, veuillez nous contacter sur [Discord](https://discord.com/invite/coredaoofficial) pour obtenir une clé d'autorisation.\
 \
-If you are testing against the TestNet Graph, here is an access token for general testing purpose: **a9a79c2aea604bfaa861ff93d46d0d11**.
+Si vous testez contre le TestNet Graph, voici un jeton d'accès pour des fins de test général : **a9a79c2aea604bfaa861ff93d46d0d11**.
