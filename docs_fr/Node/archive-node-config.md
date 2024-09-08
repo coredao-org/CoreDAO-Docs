@@ -1,18 +1,18 @@
 ---
-sidebar_label: Archive Node Configuration
+sidebar_label: Configuration des Nœuds d'Archive
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Archive Node Configuration
+# Configuration des Nœuds d'Archive
 
 ---
 
-Archive nodes in the Core network play a crucial role in maintaining the complete historical state of the network. These nodes are specialized versions of full nodes with enhanced capabilities tailored to storing and providing access to the entire history of all transactions and states since the inception of the Core Chain.
+Les nœuds d'archive dans le réseau Core jouent un rôle crucial en conservant l'état historique complet du réseau. Ces nœuds sont des versions spécialisées des nœuds complets, avec des capacités améliorées, conçues pour stocker et fournir un accès à l'historique entier de toutes les transactions et états depuis le début de la Core Chain.
 
-## System Requirements
+## Requis Systèmes
 
-There are several system requirements, both software and hardware, for setting up a Archive node on the Core network.
+Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires pour configurer un nœud d'archive sur le réseau Core.
 
 ### Software
 
