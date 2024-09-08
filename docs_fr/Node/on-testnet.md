@@ -1,43 +1,43 @@
 ---
-sidebar_label: On Testnet
+sidebar_label: Sur le Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Running Core Full Nodes on Core Testnet
+# Exécution des nœuds complets Core sur le Testnet de Core
 
 ---
 
-A Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
+Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
 
-- **Normal full node**: for private use.
-- **Validator full node**: acts as a validator on Core, validating blocks and transactions.
-- **RPC full node**: provides RPC services and responds to HTTP requests.
+- **Nœud complet normal :** pour une utilisation privée.
+- **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
+- **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
 :::note
-This document provides a detailed guideline on running Normal Full Nodes on the Core network.
+Ce document fournit des lignes directrices détaillées sur l'exécution des nœuds complets normaux sur le réseau Core.
 :::
 
-## System Requirements
+## Requis Systèmes
 
-There are several system requirements for setting up a Full Node on Core.
+Il existe plusieurs exigences système pour configurer un nœud complet sur Core.
 
-### Software Specifications for Full Nodes on Core Testnet
+### Spécifications logicielles pour les nœuds complets sur le Testnet de Core
 
-Currently, a Core Full Node can **_only_** run on **Mac OS X** and **Linux**.
+Actuellement, un nœud complet Core ne peut fonctionner que sous **Mac OS X** et **Linux**.
 
-### Hardware Specifications for Full Nodes on Core Testnet
+### Spécifications matérielles pour les nœuds complets sur le Testnet de Core
 
-For full nodes on **Core testnet**, we recommend the following minimal hardware specs:
+Pour les nœuds complets sur le **testnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requirements   | Details                                                                                                |
-| -------------- | ------------------------------------------------------------------------------------------------------ |
-| Storage        | 1 TB of free disk space                                                                                |
-| CPU            | 4 CPU cores                                                                                            |
-| RAM            | 8 gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5 megabytes per second. |
+| Requis           | Détails                                                                                        |
+| ---------------- | ---------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace disque libre                                                                     |
+| CPU              | 4 cœurs CPU                                                                                    |
+| RAM              | 8 go                                                                                           |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps. |
 
-## Build and Run Full Node on Core Testnet
+## Construction et exécution d'un nœud complet sur le Testnet de Core
 
 1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your full node, running your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
