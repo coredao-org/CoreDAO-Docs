@@ -1,23 +1,23 @@
 ---
-sidebar_label: Core Codebase Audits
+sidebar_label: Audits du Codebase de Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Third Party Audit Reports
+# Rapports d'Audit par des Tiers
 
 ---
 
-The importance of smart contract audits in the blockchain ecosystem cannot be overstated. As immutable programs that automate processes, handle significant amounts of value, and establish trust in decentralized systems, smart contracts must be secure against both inadvertent bugs and malicious exploits. Audits are crucial because they involve a rigorous examination of the contract’s code by security experts who can identify vulnerabilities and suggest enhancements before the code is deployed on the blockchain, where it becomes much harder to alter.
+L'importance des audits de contrats intelligents dans l'écosystème blockchain ne peut être sous-estimée. En tant que programmes immuables qui automatisent des processus, gèrent des montants importants de valeur et établissent la confiance dans les systèmes décentralisés, les contrats intelligents doivent être sécurisés contre les bugs accidentels et les exploits malveillants. Les audits sont essentiels car ils impliquent un examen rigoureux du code par des experts en sécurité qui peuvent identifier des vulnérabilités et proposer des améliorations avant que le code ne soit déployé sur la blockchain, où il devient beaucoup plus difficile à modifier.
 
-Understanding this critical need for security, Core Chain places a strong emphasis on ensuring its codebase is not just robust and efficient but also secure and reliable. To achieve this, Core Chain engages with reputable third-party security firms to conduct comprehensive audits of its smart contract code. These external parties scrutinize the smart contracts for potential security issues, logic errors, and best practice violations. By involving independent auditors, Core Chain aims to provide an unbiased assessment of its smart contract infrastructure, thus fostering trust among its users and stakeholders.
+Consciente de ce besoin crucial de sécurité, la chaîne Core met un fort accent sur la garantie que son codebase est non seulement robuste et efficace, mais également sécurisé et fiable. Pour ce faire, Core Chain collabore avec des entreprises de sécurité tierces réputées pour réaliser des audits complets de son code de contrat intelligent. Ces parties externes examinent les contrats intelligents à la recherche de problèmes de sécurité potentiels, d'erreurs logiques et de violations des bonnes pratiques. En impliquant des auditeurs indépendants, Core Chain vise à fournir une évaluation impartiale de son infrastructure de contrats intelligents, renforçant ainsi la confiance parmi ses utilisateurs et ses parties prenantes.
 
-Furthermore, Core Chain adopts a proactive stance towards continuous security, where the codebase undergoes regular audits, especially before major updates or after significant changes. This commitment to regular third-party verification serves as a testament to Core Chain’s dedication to maintaining a secure environment for its community and preserving the integrity of its platform in the rapidly evolving landscape of decentralized technologies.
+De plus, Core Chain adopte une approche proactive de la sécurité continue, où le codebase fait l'objet d'audits réguliers, en particulier avant les mises à jour majeures ou après des changements importants. Cet engagement envers la vérification régulière par des tiers témoigne de la volonté de Core Chain de maintenir un environnement sécurisé pour sa communauté et de préserver l'intégrité de sa plateforme dans un paysage technologique décentralisé en évolution rapide.
 
-Core's [blockchain codebase](https://github.com/coredao-org) has been audited by top-tier third-party blockchain security firms, including Halborn and Least Authority. Access the audit reports from the following:
+[Le codebase de la blockchain](https://github.com/coredao-org) de Core a été audité par des sociétés de sécurité blockchain de premier plan, dont Halborn et Least Authority. Accédez aux rapports d'audit suivants:
 
 - [Halborn](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/CoreDAO_Genesis_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf)
 - [Least Authority](https://leastauthority.com/blog/audits/audit-of-core-dao-layer-1-smart-contracts/)
-- [Audit Report of BTC Staking](https://www.halborn.com/audits/coredao/btc-staking)
-- [Audit Report of coreBTC](https://www.halborn.com/audits/coredao/corebtc)
-- [Audit Report of 1.0.9 Upgrade](https://www.halborn.com/audits/coredao/109-upgrade-release)
+- [Rapport d'Audit du Staking BTC](https://www.halborn.com/audits/coredao/btc-staking)
+- [Rapport d'Audit de coreBTC](https://www.halborn.com/audits/coredao/corebtc)
+- [Rapport d'Audit de la Mise à jour 1.0.9](https://www.halborn.com/audits/coredao/109-upgrade-release)
