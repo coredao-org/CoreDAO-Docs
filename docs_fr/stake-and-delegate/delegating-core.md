@@ -1,55 +1,55 @@
 ---
-sidebar_label: Delegating Core
+sidebar_label: Délégation de Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating CORE
+# Délégation de Core
 
 ---
 
-By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards.
+En déléguant des tokens CORE aux validateurs, les détenteurs de CORE contribuent à la sécurité du réseau et peuvent participer aux récompenses du système.
 
-## Validator Selection
+## Sélection des Validateurs
 
-Delegators can use Core's staking website to manage their positions:
+Les délégateurs peuvent utiliser le site de staking de Core pour gérer leurs positions :
 
-| Mainnet                                              | Testnet                                                    |
-| ---------------------------------------------------- | ---------------------------------------------------------- |
-| [Mainnet staking website](https://stake.coredao.org) | [Testnet staking website](https://stake.test.btcs.network) |
+| Mainnet                                                      | Testnet                                                            |
+| ------------------------------------------------------------ | ------------------------------------------------------------------ |
+| [Site de staking pour le Mainnet](https://stake.coredao.org) | [Site de staking pour le Testnet](https://stake.test.btcs.network) |
 
-Validator information is listed on the staking site, with all validators ranked by their current hybrid score, as shown below. Explanations for key terms are available for each column header on the staking site, viewable by clicking on the `i` symbol next to the column header.
+Les informations sur les validateurs sont affichées sur le site de staking, avec un classement des validateurs basé sur leur score hybride actuel. Chaque terme clé est expliqué sur chaque en-tête de colonne sur le site, visionnable en cliquant sur le symbole `i` à côté de l'en-tête.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-1.avif)
 
-At the start of each round, Satoshi Plus consensus selects the Validators by their hybrid scores. The nodes are ranked in descending order of this score, with the top **23** nodes selected to form the active Validator set for the current round. Hybrid scores are calculated using the following formula:
+Au début de chaque cycle, le consensus Satoshi Plus sélectionne les validateurs selon leurs scores hybrides. Les nœuds sont classés par ordre décroissant de ce score, et les **23** meilleurs nœuds forment l'ensemble des validateurs actifs pour le cycle en cours. Le score hybride est calculé à l'aide de la formule suivante :
 
 `S = hash_percentage * m + coin_percentage * (1 - m)`
 
-Where,
-`coin_percentage` accounts for the ratio of both the **CORE** and **BTC** staking tokens
-`m` is a dynamic weighting factor initially set to **2/3**
+Où :
+`coin_percentage` pourcentage des tokens **CORE** et **BTC** stakés
+`m` est un facteur de pondération dynamique initialement fixé à **2/3**
 
-Validator information is refreshed daily at **00:00 UTC** at the beginning of each round.
+Les informations sur les validateurs sont actualisées quotidiennement à **00:00 UTC**, au début de chaque cycle.
 
-## Delegation
+## Délégation
 
-Selecting the name of a Validator will open up a validator page with more information about them, as shown below.
+Sélectionner le nom d'un validateur ouvre une page avec plus d'informations à son sujet comme montré ci-dessous.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-2.avif)
 
-To delegate to the Validator, select the **Delegate→DelegateCoin** button on the top left. Enter the deposit amount in the input field and select 'Delegate' to send your delegation transaction, as shown below. To execute the transaction, you'll need to sign and send it using MetaMask or another compatible web wallet.
+Pour déléguer au validateur, cliquez sur le bouton **Delegate→DelegateCoin** en haut à gauche. Entrez le montant de dépôt dans le champ prévu et sélectionnez 'Delegate' pour envoyer la transaction de délégation, comme montré ci-dessous. Pour exécuter la transaction, vous devrez la signer et l'envoyer via MetaMask ou un autre portefeuille web compatible.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-3.avif)
 
-After successfully delegating to a Validator, you can find your total delegated amount under the **Coin** tab, with your historical delegation transactions listed under the **CoinRecord** tab. You are able to delegate to more than one Validator.
+Après avoir délégué avec succès à un validateur, vous pouvez consulter votre montant total délégué sous l'onglet **Coin**, et vos transactions de délégation passées sous l'onglet **CoinRecord**. Il est possible de déléguer à plus d'un validateur.
 
-To undelegate your CORE, simply select the **Undelegate→UndelegateCoin** button and sign the transaction.
+Pour retirer la délégation de vos tokens CORE, sélectionnez simplement le bouton **Undelegate→UndelegateCoin** et signez la transaction.
 
-## Claiming Rewards
+## Réclamation des récompenses
 
-You can view reward information about your active delegations by selecting **My Staking** on the top right of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
+Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour.
 
-To claim your rewards, simply select the **Claim** button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's **Claim** tab, as shown below.
+Pour réclamer vos récompenses, sélectionnez simplement le bouton **Claim** en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet **Claim** du site, comme indiqué ci-dessous.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-4.avif)
