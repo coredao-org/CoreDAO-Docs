@@ -106,54 +106,54 @@ Vous devrez définir la limite minimale de gas pour chaque chaîne. Il est recom
 
 Tout d'abord, appelez `setMinDstGas` sur la chaîne source (l'[Id de chaîne de Core est 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)). Assurez-vous d'inclure le type de paquet ("0" signifie envoyer, "1" signifie envoyer et appeler) et le montant de la limite de gas.
 
-Then, call `setMinDstGas` on Core Chain with the[ chainId of the source chain](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids). Be sure to include the packet type ("0" meaning send, "1" meaning send and call) and the gas limit amount.
+Ensuite, appelez `setMinDstGas` sur la chaîne Core avec l'[ID de la chaîne source](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids). Assurez-vous d'inclure le type de paquet ("0" signifiant envoyer, "1" signifiant envoyer et appeler) et le montant de la limite de gas.
 
-Finally, make sure that your `AdapterParams` gas limit is greater than `setMinDstGas`.
+Enfin, assurez-vous que la limite de gas des `AdapterParams` est supérieure à celle définie dans `setMinDstGas`.
 
-For more info, please refer to the[ LayerZero guide](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2).
+Pour plus d'informations, veuillez consulter le guide [LayerZero](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2).
 
-### Transfer Tokens Cross-Chain
+### Transférer des tokens entre chaînes
 
-Here, we'll cover the basic steps involved in transferring tokens across chains.
+Nous allons maintenant couvrir les étapes de base pour transférer des tokens entre différentes chaînes.
 
-First, ensure that you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
+Tout d'abord, assurez-vous que [Node.js](https://nodejs.org/) et [npm](https://www.npmjs.com/) soient installés.
 
-Then, clone the `oft-transfer-script` repository found [here](https://github.com/LayerZero-Labs/oft-transfer-script/tree/main).
+Ensuite, clonez le dépôt du script de transfert `oft-transfer-script` trouvé [ici](https://github.com/LayerZero-Labs/oft-transfer-script/tree/main).
 
-With that done, navigate to the `hardhat` folder in the cloned repository and run `npm install` to install the required npm packages.
+Une fois cela fait, accédez au dossier `hardhat` dans le dépôt cloné et exécutez `npm install` pour installer les packages npm requis.
 
-Next, create an `.env` file in the root directory of the repository and add the following variables:
+Ensuite, créez un fichier `.env` dans le répertoire racine du dépôt et ajoutez les variables suivantes :
 
-- `RPC_ENDPOINT`: This should be the URL of your Ethereum JSON RPC endpoint.
-- `PRIVATE_KEY`: The private key of the Ethereum address you intend to use with the script.&#x20
+- `RPC_ENDPOINT`: Il s'agit de l'URL de votre point de terminaison JSON RPC Ethereum.
+- `PRIVATE_KEY`: La clé privée de l'adresse Ethereum que vous souhaitez utiliser avec le script.
 
-Here's a code snippet explaining how the `RPC_ENDPOINT` and `PRIVATE_KEY` should be configured:
+Voici un extrait de code expliquant comment configurer les variables `RPC_ENDPOINT` et `PRIVATE_KEY` :
 
 ```
 RPC_ENDPOINT=<Your_RPC_Endpoint_URL> 
 PRIVATE_KEY=<Your__Private_Key>
 ```
 
-Finally, run the FT Token Transfer script. This script is designed to interact with the OFT smart contract to facilitate token transfers using `estimateFees()` and `sendFrom()`. Here's a little more context on what these methods accomplish:
+Enfin, exécutez le script de transfert de tokens FT. Ce script est conçu pour interagir avec le contrat intelligent OFT afin de faciliter les transferts de tokens en utilisant `estimateFees()` et `sendFrom()`. Voici un peu plus de contexte sur ce que ces méthodes accomplissent :
 
-- `estimateFees()`: This function provides an estimate of the fees required to send a certain amount of tokens.
-- `sendFrom()`: This function allows you to send tokens from one address on the source blockchain to another on the destination.
+- `estimateFees()`: Cette fonction fournit une estimation des frais nécessaires pour envoyer un certain montant de tokens.
+- `sendFrom()`: Cette fonction vous permet d'envoyer des tokens d'une adresse sur la blockchain source à une autre sur la destination.
 
-Here's a code snippet showing how to transfer tokens with `sendFrom`:&#x20
+Voici un extrait de code montrant comment transférer des tokens avec `sendFrom` :
 
 ```
 npx hardhat sendFrom --qty 100000000000000 --network core
 ```
 
-### Manual Transfers via Etherscan
+### Transferts Manuels via Etherscan
 
-If your `ProxyOFT` contract is registered on Etherscan, you can use the Etherscan user interface to transfer your ERC20 tokens manually by calling the `sendFrom()` function with the following parameters:
+Si votre contrat `ProxyOFT` est enregistré sur Etherscan, vous pouvez utiliser l'interface utilisateur d'Etherscan pour transférer manuellement vos tokens ERC20 en appelant la fonction `sendFrom()` avec les paramètres suivants :
 
-- `from`: This is the sender’s address on Ethereum.
-- `dstChainId`: LayerZero’s unique chain ID for the receiving chain (we’ll use [chainId 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for Core chain).
-- `toAddress`: The intended recipient’s address on Core chain.
-- `amount`: The number of tokens **in wei units.**
-- `refundAddress`: This is the address where gas refunds will be sent if necessary. It's wise to use the sender’s address as the refund address.
+- `from`: Il s'agit de l'adresse de l'expéditeur sur Ethereum.
+- `dstChainId`: L'ID de chaîne unique de LayerZero pour la chaîne de réception (nous utiliserons l'[ID de chaîne 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) pour la chaîne Core).
+- `toAddress`: L'adresse du destinataire sur la chaîne Core.
+- `amount`: Le nombre de tokens **en unités wei.**
+- `refundAddress`: Il s'agit de l'adresse où les remboursements de gas seront envoyés si nécessaire. Il est conseillé d'utiliser l'adresse de l'expéditeur comme adresse de remboursement.
 - `zroAddress`: On Etherscan, the "zero address" is `0x0000000000000000000000000000000000000000`.
 - `adapterParams`: 0x
 - `nativeFee`: you can calculate the native fee by calling the `estimateSendFee` function on the same contract using the same `remoteChainId`, `toAddress`, `amount`, `useZro`, and `adapterParams` above.
