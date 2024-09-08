@@ -154,10 +154,10 @@ Si votre contrat `ProxyOFT` est enregistré sur Etherscan, vous pouvez utiliser 
 - `toAddress`: L'adresse du destinataire sur la chaîne Core.
 - `amount`: Le nombre de tokens **en unités wei.**
 - `refundAddress`: Il s'agit de l'adresse où les remboursements de gas seront envoyés si nécessaire. Il est conseillé d'utiliser l'adresse de l'expéditeur comme adresse de remboursement.
-- `zroAddress`: On Etherscan, the "zero address" is `0x0000000000000000000000000000000000000000`.
+- `zroAddress`: Sur Etherscan, "l'adresse zero" est `0x0000000000000000000000000000000000000000`.
 - `adapterParams`: 0x
-- `nativeFee`: you can calculate the native fee by calling the `estimateSendFee` function on the same contract using the same `remoteChainId`, `toAddress`, `amount`, `useZro`, and `adapterParams` above.
+- `nativeFee`: Vous pouvez calculer les frais natifs en appelant la fonction `estimateSendFee` sur le même contrat en utilisant le même `remoteChainId`, `toAddress`, `amount`, `useZro`, et `adapterParams` ci-dessus.
 
-## LayerZero Integration Checklist
+## Checklist d'Intégration LayerZero
 
-Please refer to the[ checklist](https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist) to prepare for a Mainnet deployment.
+Veuillez vous référer à la [checklist](https://layerzero.gitbook.io/docs/evm-guides/layerzero-integration-checklist) pour vous préparer à un déploiement sur le Mainnet.
