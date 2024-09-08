@@ -101,19 +101,19 @@ Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterT
 
 ### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
-Note that in the `PledgeAgent` contract (the staking contract), when users delegate
+Il est important de noter que dans le contrat `PledgeAgent` (le contrat de staking), lorsque les utilisateurs délèguent
 
-- The amount of CORE **must** >= 1
+- Le montant de CORE **doit** être supérieur ou égal à 1
 
-And when they undelegate
+Et lors de l'annulation de la délégation
 
-- The amount of CORE **must** >= 1 **AND**
-- The remaining CORE left on a validator of this address **must** >= 1
+- Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
+- Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
 
-When handling delegate/undelegate internally, the `Earn` module must also follow the same restrictions.
+Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
 
-The implementation/case elaborations are in `_undelegateWithStrategy()` method.
+L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
 
-When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
+Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur pour y déléguer les tokens CORE. Cela vise à garantir un traitement équitable de tous les candidats validateurs, qu'ils soient déjà élus ou en attente. Cependant, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir aléatoirement un validateur approprié, le tout de manière transparente pour l'utilisateur.
 
-During redeem, the Earn contract chooses validators randomly - ` _randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
+Lors du redeem, le contrat Earn choisit les validateurs de manière aléatoire via la méthode - ` _randomIndex()`. Un index est sélectionné aléatoirement pour parcourir la liste des validateurs jusqu'à ce qu'un nombre suffisant de tokens CORE aient leurs délégations annulés.
