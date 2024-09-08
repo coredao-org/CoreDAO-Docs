@@ -4,47 +4,47 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Subgraph using GraphQL
+# Core Subgraph utilisant GraphQL
 
 ---
 
-Developers can use a self-hosted subgraph to extract data from the Core blockchain, processing and storing it for consumption via GraphQL. Let's take a look at how we can create and deploy this powerful tool.
+Les développeurs peuvent utiliser un sous-graphe auto-hébergé pour extraire des données de la blockchain Core, les traiter et les stocker pour une utilisation via GraphQL. Voici comment créer et déployer cet outil puissant.
 
-### Important URLs
+### URLs Importantes
 
-We'll be using some standard URLs throughout this guide, which it’ll help to review before getting started.
+Nous utiliserons plusieurs URLs standard dans ce guide, qui seront utile de revoir avant de commencer.
 
 #### MainNet
 
-<table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
+<table><thead><tr><th width="342">URL</th><th>Utilisation</th></tr></thead><tbody><tr><td><strong>URL de gestion</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Utiliser pour créer/déployer des sous-graphes (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>URL IPFS</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Utiliser pour déployer des sous-graphes.</td></tr><tr><td><strong>URL de requête HTTP</strong>: <em>https://thegraph.coredao.org</em></td><td>Utiliser pour interroger des données depuis des sous-graphes.</td></tr><tr><td><strong>URL de vérification de santé</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Utiliser pour vérifier la santé des sous-graphes.</td></tr></tbody></table>
 
 #### TestNet
 
-<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Utilisation</th></tr></thead><tbody><tr><td><strong>URL de gestion</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Utiliser pour créer/déployer des sous-graphes (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>URL IPFS</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Utiliser pour déployer des sous-graphes.</td></tr><tr><td><strong>URL de requête HTTP</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Utiliser pour interroger des données depuis des sous-graphes.</td></tr><tr><td><strong>URL de vérification de santé</strong><br/><em>https://thegraph-sub.test.btcs.network</em></td><td>Utiliser pour vérifier la santé des sous-graphes.</td></tr></tbody></table>
 
-### General Subgraph Setup Steps
+### Étapes Générales pour la Configuration du Sous-Graphe
 
-#### Create Repository
+#### Créer un Répertoire
 
-To create your subgraph repository, follow the[ official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). In order to deploy onto the Core graph network, make sure to set your network name in `subgraph.yaml` to core. Depending on your subgraph, there may be a few more changes to make. You’ll find additional details in the full example section below.
+Suivez le [guide officiel de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/) pour créer votre répertoire de sous-graphe. Dans le but de deployer sur le de sous-graphe Core, assurez-vous de définir le nom du réseau dans `subgraph.yaml` sur core. Selon votre sous-graphe, il peut y avoir quelques modifications supplémentaires à effectuer. Vous trouverez des détails supplémentaires dans la section d'exemple complète ci-dessous.
 
-#### Create and Deploy
+#### Créer et Déployer
 
-To create and deploy your subgraph, execute the following commands in your subgraph project repository.
+Pour créer et déployer votre sous-graphe, exécutez les commandes suivantes dans le répertoire de votre projet de sous-graphe.
 
 ```bash
-# Create subgraph
+# Créer le sous-graphe
 graph create your-subgraph-name --node https://thegraph.coredao.org/deploy/
 
-# Deploy subgraph
+# Déployer le sous-graphe
 graph deploy your-subgraph-name --node https://thegraph.coredao.org/deploy/ --ipfs https://thegraph.coredao.org/ipfs/
 ```
 
-The `graph deploy` command should return the HTTP query URL for your subgraph, which you can integrate into your application as appropriate.
+La commande de déploiement `graph deploy` devrait retourner l'URL HTTP de requête pour votre sous-graphe, que vous pouvez intégrer dans votre application selon vos besoins.
 
-### Example: Deploying a Uniswap V2 subgraph
+### Exemple : Déploiement d'un sous-graphe Uniswap V2
 
-Now that we understand the process, let's walk through a full example by setting up a Uniswap V2 subgraph on Core.&#x20
+Maintenant que nous comprenons le processus, passons à un exemple complet en configurant un sous-graphe Uniswap V2 sur Core.
 
 First, clone the Uniswap V2 [subgraph repository](https://github.com/Uniswap/v2-subgraph), navigate to the project folder, then execute the following commands from that directory:
 
