@@ -1,32 +1,32 @@
 ---
-sidebar_label: Delegating Hash
+sidebar_label: Délégation de Hashage
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating Hash
+# Délégation de Hashage
 
 ---
 
-Using their public and private keys, BTC miners can delegate their hash power to a Core validator or delegate to themselves if they choose to run a validator by verifying and syncing their identity (addresses) on both the BTC and Core blockchains. When relayers submit transactions, they sync the blocks mined by the BTC miner with the Core Network. Every round, the Core network calculates the BTC hash power associated with each validator by counting the number of blocks produced by each miner in the BTC network during the same day of the prior week. The architecture of the mapping-chain communication is illustrated in the diagram below. By delegating BTC hash power to Validators, BTC miners can help secure the network and share in system rewards.
+En utilisant leurs clés publiques et privées, les mineurs de BTC peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains BTC et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur BTC avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage BTC associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau BTC pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant leur puissance de hachage BTC aux validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et à partager les récompenses du système.
 
 ![delegate-hash](../../static/img/delegate/miner-power-relaying.png)
 
-## Set Up Process for Miners
+## Processus d'installation pour les mineurs
 
-Let's take a look at how BTC miners or mining pools can delegate hash power to the Core blockchain by adding an `OP_RETURN` output in the BTC coinbase transaction.
+Voyons comment les mineurs de BTC ou les pools de minage peuvent déléguer leur puissance de hachage à la blockchain Core en ajoutant une sortie `OP_RETURN` dans la transaction coinbase de BTC.
 
 :::info
-For more information about Core blockchain and Satoshi Plus consensus, please refer to the [Technical Whitepaper](https://whitepaper.coredao.org/).
+Pour plus d'informations sur la blockchain Core et le consensus Satoshi Plus, veuillez consulter le [Livre Blanc Technique](https://whitepaper.coredao.org/).
 :::
 
-### Implementation
+### Implémentation
 
-Bitcoin miners and mining pools must compose the information below in the following format and put it in the Bitcoin block:
+Les mineurs et pools de minage de Bitcoin doivent composer les informations suivantes dans ce format et les placer dans le bloc Bitcoin :
 
 `OP_RETURN + LENGTH + CORE + VERSION + Delegate Information`
 
-Here is a brief description of what belongs in each spot:
+Voici une brève description de chaque élément :
 
 - OP\_RETURN: `0x6a`
 - LENGTH: `0x2d`, which represents the total byte length after the `OP_RETURN` opcode
