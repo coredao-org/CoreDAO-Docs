@@ -8,23 +8,23 @@ sidebar_position: 2
 
 ---&#x20;
 
-Ce guide décrit les étapes pour transférer vos jetons ERC-20 vers Core en utilisant des Omnichain Fungible Tokens (OFT) via LayerZero. Le protocole LayerZero permet des communications inter-chaînes fluides, permettant à vos jetons de fonctionner sur plusieurs chaînes. Please refer to LayerZero for all the[ supported source blockchains](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
+Ce guide décrit les étapes pour transférer vos jetons ERC-20 vers Core en utilisant des Omnichain Fungible Tokens (OFT) via LayerZero. Le protocole LayerZero permet des communications inter-chaînes fluides, permettant à vos jetons de fonctionner sur plusieurs chaînes. Veuillez vous référer à LayerZero pour toutes les [blockchains sources supportées](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids).
 
-## Overview
+## Vue d'ensemble
 
-Before proceeding, you should be aware of what omnichain fungible tokens and the LayerZero protocol are.&#x20
+Avant de commencer, il est important de comprendre ce que sont les omnichain fungible tokens et le protocole LayerZero.
 
-**Omnichain Fungible Token (OFT)**: Enables the creation of tokens native to multiple chains, simplifying token management and enhancing interoperability.
+**Omnichain Fungible Token (OFT) :** Permet la création de jetons natifs sur plusieurs chaînes, simplifiant ainsi la gestion des jetons et améliorant l'interopérabilité.
 
-**LayerZero Protocol**: Serves as foundational technology for cross-chain interactions, providing a reliable method for different blockchains to communicate, ensuring secure and efficient transactions.
+**Protocole LayerZero :** Sert de technologie de base pour les interactions inter-chaînes, assurant une communication sécurisée et efficace entre les différentes blockchains.
 
-## Bridging Existing ERC-20 Tokens to Core
+## Passerelle des jetons ERC-20 existants vers Core
 
-### Deploy LayerZero ProxyOFTV2 Contract on the Source Chain
+### Déployer le contrat ProxyOFTV2 LayerZero sur la Chaîne Source
 
-First, **access the ProxyOFTV2 contract** by retrieving the `ProxyOFTV2` contract code from the[ official repository](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/ProxyOFTV2.sol).
+Premièrement, **accédez au contrat ProxyOFTV2** en récupérant le code du contrat `ProxyOFTV2` à partir du [repertoire officiel](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/ProxyOFTV2.sol).
 
-Then\*\*, adjust the ProxyOFTV2 contract for the source blockchain\*\*, like this:
+Ensuite, **ajustez le contrat ProxyOFTV2 pour la blockchain source** comme suit :
 
 ```
 constructor(
@@ -33,24 +33,24 @@ constructor(
         address _lzEndpoint
 ```
 
-Here's some context on what's present in this code snippet:
+Voici quelques explications concernant ce snippet de code :
 
-- **Token Contract Address** (`_token`): Provide the ERC-20 token contract address for a contract that's already been deployed on the source chain. If your token was USDC on Ethereum, for example, you’d use contract address [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)
-- **Shared Decimals** (`_sharedDecimals`): Set the number of decimal places for the token in the LayerZero environment. The shared decimals normalize the differences between data type across EVM and non-EVM chains. It is a good practice to use a smaller shared decimal point on all chains so that your token can have a larger balance.
-  - If your token is deployed on non-EVM chains, it should be set as the lowest decimals across all chains.
-  - If your tokens are only deployed on EVM chains and all have decimals larger than eight, this value should be set as `8`.
-  - Please refer to this[ LayerZero doc](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2#what-should-i-set-as-shared-decimals) for more info.
-- **LayerZero Endpoint Address for Source Chain** (`_lzEndpoint`): This endpoint address is required for the contract to interact with the LayerZero protocol. For example, Ethereum endpoint: 0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675.
-- Please refer to the[ LayerZero documentation](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for the endpoints for supported blockchains.
+- **Adresse du contrat de jeton (`_token`) :** Indiquez l'adresse du contrat ERC-20 qui a déjà été déployé sur la chaîne source. Par exemple, si votre jeton est USDC sur Ethereum, vous utiliserez l'adresse du contrat [0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48](https://etherscan.io/address/0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48)
+- **Décimales partagées (`_sharedDecimals`) :** Définissez le nombre de décimales pour le jeton dans l'environnement LayerZero. Les décimales partagées normalisent les différences entre les chaînes EVM et non-EVM. Il est recommandé d'utiliser un nombre de décimales partagées plus petit sur toutes les chaînes afin que votre jeton puisse avoir un solde plus élevé.
+  - Si votre jeton est déployé sur des chaînes non-EVM, il doit être configuré avec le nombre de décimales le plus bas parmi toutes les chaînes.
+  - Si vos jetons sont uniquement déployés sur des chaînes EVM et que tous ont plus de huit décimales, cette valeur doit être définie à `8`.
+  - Veuillez consulter la [documentation de LayerZero](https://layerzero.gitbook.io/docs/evm-guides/layerzero-omnichain-contracts/oft/oftv2#what-should-i-set-as-shared-decimals) pour plus d'informations.
+- **Adresse de l'Endpoint LayerZero pour la chaîne source** (`_lzEndpoint`) : Cette adresse d'endpoint est requise pour que le contrat puisse interagir avec le protocole LayerZero. Par exemple, l'endpoint Ethereum : 0x66A71Dcef29A0fFBDBE3c6a460a3B5BC225Cd675.
+- Veuillez vous référer à la [documentation de LayerZero](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) pour les endpoints des blockchains supportées.
 
-Finally, **deploy the `ProxyOFTV2` contract** to the chosen source blockchain.
+Enfin, **déployez le contrat `ProxyOFTV2`** sur la blockchain source choisie.
 
-### Deploy LayerZero OFTV2 Contract on Core Chain
+### Déployer le Contrat LayerZero OFTV2 sur la Core Chain
 
-First, **access the OFTV2 contract** by retrieving the `ProxyOFTV2` contract code from the[ official repository](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/OFTV2.sol).
+Tout d'abord, **accédez au contrat OFTV2** en récupérant le code du contrat `ProxyOFTV2` à partir du [repertoire officiel](https://github.com/LayerZero-Labs/solidity-examples/blob/main/contracts/token/oft/v2/OFTV2.sol).
 
 \
-Then, **prepare parameters for OFTV2 Contract deployment on Core Chain**, like so:
+Ensuite, **préparez les paramètres pour le déploiement du contrat OFTV2 sur la Core Chain**, comme ceci :
 
 ```
 constructor(
@@ -60,25 +60,25 @@ constructor(
         address _lzEndpoint
 ```
 
-Here's some context on what's happening in this code snippet:
+Voici quelques explications sur ce qui se passe dans cet extrait de code :
 
-- **Token Name** (`_name`): Specify your token name (e.g. USD Coin)
-- **Token Symbol** (`_symbol`): Specify your token symbol (e.g. USDC)
-- **Shared Decimals** (`_sharedDecimals`): Match the shared decimals in the `ProxyOFTV2` on the source chain.
-- **LayerZero Endpoint Address for Core Chain** (`_lzEndpoint`): The endpoint address for Core Chain is `0x9740FF91F1985D8d2B71494aE1A2f723bb3Ed9E4`.
-- Please refer to the[ LayerZero documentation](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) for endpoints of the supported blockchains.
+- **Nom du jeton** (`_name`) : Spécifiez le nom de votre jeton (par exemple, USD Coin)
+- **Symbole du jeton** (`_symbol`) : Spécifiez le symbole de votre jeton (par exemple, USDC)
+- **Décimales partagées** (`_sharedDecimals`) : Assurez-vous que les décimales partagées correspondent à celles définies dans le `ProxyOFTV2` sur la chaîne source.
+- **Adresse de l'Endpoint LayerZero pour la Core Chain** (`_lzEndpoint`) : L'adresse de l'endpoint pour la Core Chain est `0x9740FF91F1985D8d2B71494aE1A2f723bb3Ed9E4`.
+- Veuillez consulter la [documentation de LayerZero](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids) pour obtenir les endpoints des blockchains supportées.
 
-Finally, **deploy the Contract on CoreDAO:** deploy this OFTV2 contract to the Core blockchain.
+Enfin, **déployez le contrat sur CoreDAO :** déployez ce contrat OFTV2 sur la blockchain Core.
 
-### Linking Contracts via Trusted Remotes
+### Liaison des contrats via Trusted Remotes
 
-The term "trusted remote" comes from EVM-to-EVM messaging, and refers to the 40 bytes that identify the contract from which you will receive messages in your LayerZero User Application contract. The 40 bytes object is the packed bytes of the `remoteAddress` and the `localAddress`.
+Le terme "trusted remote" provient de la messagerie EVM-à-EVM et fait référence aux 40 octets qui identifient le contrat à partir duquel vous recevrez des messages dans votre contrat d'application utilisateur LayerZero. L'objet de 40 octets est le résultat du regroupement des adresses `remoteAddress` et `localAddress`.
 
-You can generate `TrustedRemote` using `ethers.js`:
+Vous pouvez générer un `TrustedRemote` en utilisant `ethers.js` :
 
 ```
-// the trusted remote (or sometimes referred to as the path or pathData)
-// is the packed 40 bytes object of the REMOTE + LOCAL user application contract addresses
+// le trusted remote (ou parfois appelé chemin ou pathData)
+// est l'objet de 40 octets regroupé des adresses des contrats REMOTE + LOCAL de l'application utilisateur
 
 let trustedRemote = hre.ethers.utils.solidityPack(
     ['address','address'],
@@ -86,25 +86,25 @@ let trustedRemote = hre.ethers.utils.solidityPack(
 )
 ```
 
-On the source blockchain, call the `ProxyOFTV2` contract's  `setTrustedRemoteAddress` function with the following parameters:
+Sur la blockchain source, appelez la fonction `setTrustedRemoteAddress` du contrat `ProxyOFTV2` avec les paramètres suivants :
 
-- `trustedRemote`: This is the 40 bytes generated by trusted remote in the previous step
-- `localContract`: This is the source chain’s `ProxyOFTV2` contract address.
-- `remoteContract`: This is the Core chain’s `OFTV2` contract address
+- `trustedRemote` : Ce sont les 40 octets générés par le trusted remote à l'étape précédente
+- `localContract` : Il s'agit de l'adresse du contrat `ProxyOFTV2` sur la chaîne source.
+- `remoteContract` : Il s'agit de l'adresse du contrat `OFTV2` sur la chaîne Core
 
-On the Core blockchain, call the `OFTV2` contract's `setTrustedRemoteAddress` function with the following parameters:
+Sur la blockchain Core, appelez la fonction `setTrustedRemoteAddress` du contrat `OFTV2` avec les paramètres suivants :
 
-- `trustedRemote`: This is the 40 bytes generated by trusted remote in the previous step.
-- `localContract`: This is the Core chain’s `OFTV2` contract address.
-- `remoteContract`: This is the source chain’s `ProxyOFTV2` contract address
+- `trustedRemote` : Ce sont les 40 octets générés par le trusted remote à l'étape précédente.
+- `localContract` : Il s'agit de l'adresse du contrat `OFTV2` sur la chaîne Core.
+- `remoteContract` : Il s'agit de l'adresse du contrat `ProxyOFTV2` sur la chaîne source
 
-For more info, please refer to the[ LayerZero guide for setting trusted remotes](https://layerzero.gitbook.io/docs/evm-guides/master/set-trusted-remotes) to link your contracts across the two networks.
+Pour plus d'informations, veuillez consulter le [guide LayerZero pour la configuration des trusted remotes](https://layerzero.gitbook.io/docs/evm-guides/master/set-trusted-remotes) afin de lier vos contrats entre les deux réseaux.
 
-### Set Minimum Gas Limit for Each Chain
+### Définir la limite minimale de gas pour chaque chaîne
 
-You'll need to set the minimum gas limit for each chain. It's advisable to use a 200k minimum for all EVM chains; the only major exception is Arbitrum, where the gas limit should be 2M. Here are the steps.
+Vous devrez définir la limite minimale de gas pour chaque chaîne. Il est recommandé d'utiliser une limite minimale de 200k pour toutes les chaînes EVM ; la seule exception notable est Arbitrum, où la limite de gas doit être fixée à 2M. Voici les étapes à suivre.
 
-First, call `setMinDstGas` on the source chain (Core’s[ chainId is 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)). Be sure to include the packet type ("0" means send, "1" means send and call) and the gas limit amount.
+Tout d'abord, appelez `setMinDstGas` sur la chaîne source (l'[Id de chaîne de Core est 153](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids)). Assurez-vous d'inclure le type de paquet ("0" signifie envoyer, "1" signifie envoyer et appeler) et le montant de la limite de gas.
 
 Then, call `setMinDstGas` on Core Chain with the[ chainId of the source chain](https://layerzero.gitbook.io/docs/technical-reference/mainnet/supported-chain-ids). Be sure to include the packet type ("0" meaning send, "1" meaning send and call) and the gas limit amount.
 
