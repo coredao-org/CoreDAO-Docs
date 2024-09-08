@@ -97,9 +97,9 @@ Après cela, le ratio de conversion stCORE/CORE est mis à jour. La formule est 
 
 Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour.
 
-The above logics are implemented in the `afterTurnRound()` method.
+Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
 
-### Handling the Dues Protection When delegating/undelegating
+### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
 Note that in the `PledgeAgent` contract (the staking contract), when users delegate
 
