@@ -1,45 +1,45 @@
 ---
-sidebar_label: Smart Contract Guidelines
+sidebar_label: Directives pour les contrats intelligents
 hide_table_of_contents: false
 sidebar_position: 2
-description: Guidelines for Solidity Support for Developing Smart Contracts on Core Chain
+description: Directives pour la prise en charge de Solidity pour le développement de contrats intelligents sur la Core Chain
 ---
 
-# Smart Contract Development Guidelines on Core Chain
+# Directives de développement des contrats intelligents sur la Core Chain
 
 ---
 
-Core Chain is constantly evolving for better user and developer experience. This document aims to provide clear instructions for developers on the supported Solidity versions and the necessary settings to ensure your smart contracts are correctly deployed and verifiable on the Core Chain network. To maintain consistency and compatibility, Core Chain supports Solidity versions higher than 0.8.19 using the **Paris** EVM. Adhering to this specified version and configuration guidelines is crucial for the seamless functioning of your contracts. The following sections will detail the recommended Solidity settings, including compiler options and verification procedures, to help you achieve a smooth and secure contract deployment on Core Chain.
+La Core Chain évolue constamment pour améliorer l'expérience des utilisateurs et des développeurs. Ce document a pour but de fournir des instructions claires aux développeurs sur les versions de Solidity prises en charge et les paramètres nécessaires pour s'assurer que vos contrats intelligents sont correctement déployés et vérifiables sur le réseau Core Chain. Pour maintenir la cohérence et la compatibilité, Core Chain prend en charge les versions de Solidity supérieures à 0.8.19 en utilisant l'EVM de **Paris**. Le respect des directives de version et de configuration spécifiées est crucial pour garantir le bon fonctionnement de vos contrats. Les sections suivantes détaillent les paramètres Solidity recommandés, y compris les options du compilateur et les procédures de vérification, afin de vous aider à déployer vos contrats de manière fluide et sécurisée sur la Core Chain.
 
-## Background
+## Contexte
 
-At the moment, Core's EVM matches version **Paris** and _does not support_ the deployment and verification of smart contracts of version **0.8.20^** with default EVM settings. Core is upgrading to the latest version of EVM and is projected to finish by _early of Q3 2024_.
+Actuellement, l'EVM de Core correspond à la version **Paris** et _ne prend pas en charge_ le déploiement et la vérification des contrats intelligents de la version **0.8.20^** avec les paramètres EVM par défaut. Core est en train de se mettre à jour vers la dernière version de l'EVM, avec une finalisation prévue pour le _début du troisième trimestre 2024_.
 
-## Configurations to Correctly Deploy Smart Contracts on Core
+## Configurations pour déployer correctement des contrats intelligents sur Core
 
-To make sure that the lag in support for deployment and verification of smart contracts of version **0.8.20^** does not stagger the developement of dapps on the Core Chain, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version 0.8.20^ on Core before the Core EVM upgrade.
+Afin que le retard dans la prise en charge du déploiement et de la vérification des contrats intelligents de la version **0.8.20^** ne freine pas le développement des dApps sur la Core Chain, voici les directives à suivre pour s'assurer que les développeurs peuvent déployer et vérifier avec succès les contrats intelligents de la version 0.8.20^ sur Core avant la mise à niveau de l'EVM de Core.
 
-### EVM Settings
+### Paramètres EVM
 
-In order to support running smart contracts with Solidity version 0.8.20^, Developers should _not use the default EVM settings_ to compile the smart contracts. Instead, they need to _pick the most recent version before Shanghai_, which is **Paris**.
+Pour exécuter des contrats intelligents avec la version 0.8.20^ de Solidity, les développeurs _ne doivent pas utiliser les paramètres EVM par défaut_ pour compiler les contrats intelligents. Au lieu de cela, ils doivent _choisir la version la plus récente avant Shanghai_, à savoir **Paris**.
 
 #### Hardhat
 
-- Please add `evmVersion: "paris"` in solidity comppiler configurations.
+- Veuillez ajouter `evmVersion`: "paris" dans les configurations du compilateur Solidity.
 
 ![hardhat-solidity-setting](../../static/img/solidity-support/evm-setting.jpg)
 
 #### Remix
 
-- Please choose `paris` in Compiler configuration.
+- Veuillez sélectionner `paris` dans les configurations du compilateur.
 
 ![remix-solidity-setting](../../static/img/solidity-support/remix-setting.png)
 
-### Contract Verification
+### Vérification des contrats
 
-- In order to make the verification process easier, Core scan has changed the platform default EVM version to **Paris** for solidity version **0.8.20^**.
-- Developers can take the exact same steps to verify their smart contracts with version 0.8.20^ as of the older versions, refer [here](./contract-verify.md) for more details on contract verification on Core Chain.
+- Afin de simplifier le processus de vérification, Core Scan a modifié la version EVM par défaut de la plateforme pour **Paris** pour les contrats Solidity version **0.8.20^**.
+- Les développeurs peuvent suivre les mêmes étapes exactes pour vérifier leurs contrats intelligents avec la version 0.8.20^ comme pour les versions antérieures. Pour plus de détails sur la vérification des contrats sur Core Chain, veuillez consulter [ici](./contract-verify.md).
 
-### Smart Contracts Based on Solidity version < 0.8.20
+### Contrats intelligents basés sur des versions de Solidity < 0.8.20
 
-- Note that for smart contracts with solidity version **\< 0.8.20** are _not_ affected by this and can operate as usual.
+- Notez que les contrats intelligents avec des versions de Solidity **\< 0.8.20** ne sont pas affectés par cela et peuvent fonctionner comme d'habitude.
