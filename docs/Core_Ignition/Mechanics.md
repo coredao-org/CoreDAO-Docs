@@ -1,4 +1,4 @@
 
 
-![My Local Image](docs/Core_Ignition/Ignition_dashboard.png)
+![My Image](https://drive.google.com/file/d/1-KrmqepvdUPq7OVr1GHXzlTAhHFTXTCk/view?usp=sharing))
 
