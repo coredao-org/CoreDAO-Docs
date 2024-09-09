@@ -7,7 +7,7 @@ The duration for the Core Ignition user incentive program is **six** months, fro
 ## Eligibility
 All Core network participants are eligible, except for those in prohibited jurisdictions or as specified in the Program Terms & Conditions.
 
-### **Benefits from Participation**
+## Benefits from Participation
 By participating in the Core Ignition user incentive program, users gain access to the thriving ecosystem on Core Chain and have the chance to be involved in exploring groundbreaking applications. Core Ignition is designed to grant potential rewards and benefits to network participants based on their overall contribution to Core Ignition initiatives. Contributions may include:
  1. Inviting others to engage in Core Ignition;
  2. Bridging specific assets into Core Chain;
