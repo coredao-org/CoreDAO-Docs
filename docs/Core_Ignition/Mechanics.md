@@ -10,15 +10,18 @@ The Core Ignition Profile is your personalized dashboard, allowing you to showca
 3. Track your high-level engagement status
 4. Display the badges you have earned
 
-### Ignition Wallet Balance ###
-
-
-### Ignition dApp Balance ###
-
-
 ### How to Boost Sparks ###
-
+Sparks are cumulative points reflecting how active you are in Core ecosystem, updated daily at 00:00 UTC and appear on Leaderboard. You earn Sparks daily through:
+1. Assets put in Core Ignition wallet balance
+2. Activities with Core ecosystem dApps
+3. Different campaigns joined
+4. Invite new users to join your team
 
 ### How to Boost Multipliers ###
+Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted in Ignition docs and campaigns. Multipliers are stackable and may change. The displayed multiplier is your average earned.
 
+### Ignition Wallet Balance ###
+Ignition Wallet balance displays a subset of whitelisted assets you hold on Core Chain. You can boost Sparks by bringing more whitelisted assets on Core.
 
+### Ignition dApp Balance ###
+Ignition dApp balance reflects the assets you put in whitelisted dApps on Core Chain. You can also boost Sparks by interacting with whitelisted dApps on Core.
