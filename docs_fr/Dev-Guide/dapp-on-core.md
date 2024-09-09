@@ -2,7 +2,7 @@
 sidebar_label: Construire une dApp sur Core
 hide_table_of_contents: false
 sidebar_position: 2
-description: Build a Full Stack dApp on Core Chain
+description: Construire une dApp Full Stack sur la Core Chain
 ---
 
 # Construire une dApp sur Core
