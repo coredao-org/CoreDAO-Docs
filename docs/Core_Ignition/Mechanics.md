@@ -14,4 +14,4 @@
 
 
 
-<img width="707" alt="Ignition_dashboard" src="https://github.com/user-attachments/assets/2cf8b2fa-89da-49f2-b9ac-982636095dfa">
+<img width="500" alt="Ignition_dashboard" src="https://github.com/user-attachments/assets/2cf8b2fa-89da-49f2-b9ac-982636095dfa">
