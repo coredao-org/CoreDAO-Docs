@@ -1,31 +1,31 @@
 ---
-sidebar_label: Network Configuration
+sidebar_label: Configuration du Réseau
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Network Configurations
+# Configurations du réseau Core
 
 ---
 
-Core mainnet and testnet chain details
+Détails de la chaîne mainnet et testnet de Core
 
-## Core Testnet
+## Testnet de Core
 
-- **Network Name:** Core Blockchain Testnet
-- **RPC URL:** https://rpc.test.btcs.network
-- **Chain ID:** 1115 (0x45b)
-- **Currency Symbol:** tCORE
-- **Block Explorer URL:** https://scan.test.btcs.network
+- **Nom du réseau :** Core Blockchain Testnet
+- **Nouvelle URL RPC :** https://rpc.test.btcs.network
+- **ID de la chaîne:** 1115 (0x45b)
+- **Symbole de la devise :** tCORE
+- **URL de l'explorateur de blocs :** https://scan.test.btcs.network
 
-To import Core Testnet chain details to MetaMask, refer to our [Core Testnet user guide](./core-testnet-wallet-config.md).
+Pour importer les détails de la chaîne Testnet de Core dans MetaMask, référez-vous à notre [guide utilisateur du Testnet de Core](./core-testnet-wallet-config.md).
 
-## Core Mainnet
+## Mainnet de Core
 
-- **Network Name:** Core Blockchain Mainnet
-- **RPC URL:** https://rpc.coredao.org/
-- **Chain ID** 1116 (0x45c)
-- **Currency Symbol:** CORE
-- **Block Explorer URL:** https://scan.coredao.org
+- **Nom du réseau :** Core Blockchain Mainnet
+- **Nouvelle URL RPC :** https://rpc.coredao.org/
+- **ID de la chaîne:** 1116 (0x45c)
+- **Symbole de la devise :** CORE
+- **URL de l'explorateur de blocs :** https://scan.coredao.org
 
-To import Core Mainnet chain details to MetaMask, refer to our guide on [adding Core to MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
+Pour importer les détails de la chaîne Mainnet de Core dans MetaMask, référez-vous à notre guide sur [l'ajout de Core à MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
