@@ -1,16 +1,16 @@
 ---
-sidebar_label: Precompiled Addresses
+sidebar_label: Adresses précompilées
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Precompiles & Deployment Addresses
+# Adresses précompilées et de déploiement
 
 ---
 
-Following is a list of precompiled addresses of Core Chain ecosystem.
+Voici une liste des adresses précompilées de l'écosystème de la Core Chain :
 
-| **Name**                        | **Address**                                                                                                                 |
+| **Nom**                         | **Adresse**                                                                                                                 |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | Smart Contract - ValidatorSet   | https://scan.coredao.org/address/0x0000000000000000000000000000000000001000 |
 | Smart Contract - SlashIndicator | https://scan.coredao.org/address/0x0000000000000000000000000000000000001001 |
