@@ -1,39 +1,38 @@
 ---
-sidebar_label: coreBTC FAQs
+sidebar_label: FAQ sur coreBTC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# coreBTC FAQs
+# FAQ sur coreBTC
 
 ---
 
-### 1. What is coreBTC? What's the purpose of coreBTC?
+### 1. Qu'est-ce que le coreBTC? Quel est le but de coreBTC ?
 
-coreBTC is a native wrapped Bitcoin on the Core Chain, maintaining a 1:1 peg with BTC through a secured mechanism. It allows Bitcoin users to interact seamlessly with the DeFi space on the EVM-compatible Core Chain using their BTC assets, expanding Bitcoin's functionality within the DeFi landscape without compromising its inherent security.
+coreBTC est un Bitcoin natif wrapped sur la Core Chain, maintenant une parité 1:1 avec le BTC via un mécanisme sécurisé. Il permet aux utilisateurs de Bitcoin d'interagir de manière transparente avec l'espace DeFi sur la Core Chain compatible EVM, en utilisant leurs actifs BTC, ce qui étend la fonctionnalité de Bitcoin dans le paysage DeFi sans compromettre sa sécurité inhérente.
 
-### 2. How is coreBTC different from centralized wrapped tokens (e.g., WBTC)?
+### 2. En quoi coreBTC est-il différent des tokens wrapped centralisés (par ex., WBTC) ?
 
-Unlike centralized wrapped tokens like WBTC that rely on a custodian to hold the underlying Bitcoin, coreBTC operates through a decentralized infrastructure. It involves permissionless participants such as Lockers, Guardians, and Liquidators, ensuring enhanced security and integrity without relying on central custodians. This structure aligns with the decentralized ethos of blockchain, mitigating risks associated with centralized entities.
+Contrairement aux tokens wrapped centralisés comme WBTC qui reposent sur un dépositaire pour détenir le Bitcoin sous-jacent, coreBTC fonctionne via une infrastructure décentralisée. Il implique des participants sans permission tels que les Lockers, Guardians et Liquidators, garantissant une sécurité et une intégrité accrues sans dépendre de dépositaires centralisés. Cette structure s'aligne avec l'éthique décentralisée de la blockchain, réduisant les risques associés aux entités centralisées.
 
-### 4. How can I be sure that my BTC is safe?
+### 4. Comment puis-je être sûr que mon BTC est en sécurité ?
 
-The security of your BTC in the coreBTC system is assured by overcollateralization required from Lockers and the continuous monitoring by Guardians and Liquidators. This structure ensures that the locked BTC is always backed by sufficient collateral on the Core chain, safeguarding against mismanagement or value drops. The decentralized nature of this ecosystem also contributes to its reliability and security.
+La sécurité de votre BTC dans le système coreBTC est assurée par une surcollatéralisation requise des Lockers et une surveillance continue par les Guardians et les Liquidators. Cette structure garantit que le BTC verrouillé est toujours soutenu par une garantie suffisante sur la Core Chain, protégeant contre la mauvaise gestion ou la dépréciation de valeur. La nature décentralisée de cet écosystème contribue également à sa fiabilité et à sa sécurité.
 
-### 5. Who are the key permissionless participants? What are their roles?
+### 5. Qui sont les principaux participants sans permission ? Quels sont leurs rôles ?
 
-The key permissionless participants in the coreBTC ecosystem include:
+Les principaux participants sans permission dans l'écosystème coreBTC comprennent :
 
-- **Lockers:** They lock BTC in a transparent process, acting as custodians during the conversion process and ensuring the minting phase's integrity by overcollateralizing in the Core blockchain.
-- **Guardians:** They monitor Lockers to prevent unauthorized movements of BTC and ensure compliance with the protocol, providing a check against mismanagement.
-- **Liquidators:** They oversee the collateral's market value, initiating liquidation if the value
-  falls below a certain threshold, thus maintaining the financial health of the system.
-- **Porters and Relayers:** These participants facilitate the transmission and verification of data between the Bitcoin and Core blockchains, ensuring accurate and timely minting and burning of coreBTC.
+- **Lockers :** Ils verrouillent le BTC dans un processus transparent, agissant en tant que dépositaires pendant le processus de conversion et assurant l'intégrité de la phase de création par une surcollatéralisation sur la blockchain Core.
+- **Guardians :** Ils surveillent les Lockers pour prévenir les mouvements non autorisés de BTC et assurer la conformité au protocole, offrant un contrôle contre la mauvaise gestion.
+- **Liquidators :** Ils surveillent la valeur de marché de la garantie et déclenchent la liquidation si la valeur tombe en dessous d'un certain seuil, maintenant ainsi la santé financière du système.
+- **Porters et Relayers :** Ces participants facilitent la transmission et la vérification des données entre les blockchains Bitcoin et Core, assurant une création et un burning précis et opportun de coreBTC.
 
-### 6. How is the security of coreBTC ensured?
+### 6. Comment la sécurité de coreBTC est-elle assurée ?
 
-Our protocol and coreBTC’s security have been thoroughly audited by [Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by](https://www.halborn.com/about/who-trusts-us) leading blockchain platforms like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap.
+Notre protocole et la sécurité de coreBTC ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en sécurité des contrats intelligents et de [confiance par](https://www.halborn.com/about/who-trusts-us) des plateformes blockchain majeures comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap.
 
-### 7. Where can I learn more about coreBTC and other Core Chain projects?
+### 7. Où puis-je en savoir plus sur coreBTC et d'autres projets Core Chain ?
 
-Visit https://unlockingbitcoindefi.com to find out more on coreBTC and our other innovative BTCfi projects
+Visitez https://unlockingbitcoindefi.com pour en savoir plus sur coreBTC et nos autres projets innovants BTCfi
