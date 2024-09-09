@@ -14,3 +14,10 @@ By participating in the Core Ignition user incentive program, users gain access 
  3. Holding specific assets in Core Chain;
  4. Execute transactions interacting with smart contracts;
  5. Participate in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
+
+## Geting Started
+1. Visit [Core Ignition website](https://ignition.coredao.org/registration).
+2. Select your country and choose a username for your Ignition dashboard. Connect your Twitter account (optional).
+3. Review and agree to the Terms & Conditions and Privacy Policy.
+4. Connect your compatible Web3 Core wallet.
+5. Engage with the Core ecosystem to boost your Core Ignition Balance and earn daily Sparks points.
