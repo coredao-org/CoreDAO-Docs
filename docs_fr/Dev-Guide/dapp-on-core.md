@@ -325,29 +325,29 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 ### Ajout des détails du contrat intelligent
 
 1. Copiez le fichier `Storage.sol` depuis le dossier `contracts` à la racine de votre projet et collez-le dans le dossier `frontend/src/contracts`.
-2. Copy the address of the Storage smart contract as obtained in the section [above](#deploy-and-interact-with-smart-contract).
-3. Paste this into [Line 10 of App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
+2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section [ci-dessus](#deploy-and-interact-with-smart-contract).
+3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
 const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 ```
 
-4. Additionally, we'll need the ABI metadata to interact with the contract from our dApp. From the `artifacts/contracts` folder in the root of your project. Copy the `Storage.json` file and save it to the `/src/contracts` folder.
+4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
 
-## Test Locally Using MetaMask
+## Test local avec MetaMask
 
-1. Run the command `npm run dev` from the root of the project to start the application. This will serve application with at [http://localhost:5173](http://localhost:5173/)
+1. Exécutez la commande `npm run dev` depuis la racine du projet pour démarrer l'application. Cela servira l'application à l'adresse [http://localhost:5173](http://localhost:5173/)
 
-2. Make sure that your MetaMask wallet is correctly installed and switched to Core Testnet as described in our [Core Testnet user guide](./core-testnet-wallet-config.md). You'll also need to connect your MetaMask wallet to the local site.
+2. Assurez-vous que votre portefeuille MetaMask est correctement installé et switché sur le Core Testnet comme décrit dans notre [guide utilisateur du Core Testnet](./core-testnet-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
 
 ![dapp-on-core](../../static/img/dapp/dapp-1.png)
 
-3. Enter a number in the input field and click the **store** button to save it to the contract. A write action on the smart contract invokes the MetaMask wallet. Click the **Confirm** button to sign the transaction and wait for confirmation on the blockchain.
+3. Entrez un nombre dans le champ de saisie et cliquez sur le bouton **store** pour l'enregistrer dans le contrat. Une action d'écriture sur le contrat intelligent appelle le portefeuille MetaMask. Cliquez sur le bouton **Confirm** pour signer la transaction et attendez la confirmation sur la blockchain.
 
 ![dapp-on-core](../../static/img/dapp/dapp-2.avif)
 
-4. After the transaction is confirmed on the blockchain, click the **retrieve** button to read the value from the smart contract. You will notice the value has been updated.
+4. Après que la transaction soit confirmée sur la blockchain, cliquez sur le bouton **retrieve** pour lire la valeur depuis le contrat intelligent. Vous remarquerez que la valeur a été mise à jour.
 
 ![dapp-on-core](../../static/img/dapp/dapp-3.avif)
 
-🎉 Congratulations! You've just interacted with your newly-deployed contract using your dApp's front end! You can build on the codebase by deploying and interacting with different contracts, and by adding new UI components to the website for your users.
+🎉 Félicitations ! Vous avez interagi avec votre contrat nouvellement déployé via l'interface frontend de votre dApp ! Vous pouvez développer la base de code en déployant et en interagissant avec différents contrats, et en ajoutant de nouveaux composants UI au site Web pour vos utilisateurs.
