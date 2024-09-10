@@ -36,7 +36,7 @@ If you're new to Core Ignition, bridge $100 USDT in whitelisted assets to Core t
 Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted below and in special campaigns. Multipliers are stackable and may subject to change. The multiplier displayed in dashboard is your average earned.
 
 
-| Whitelisted Assets  | Bridging Assets | Lending | Borrowing | Liquidity Provision | 
+| Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
 | coreBTC, stCORE | 2.5x | 3x | 4x | 7x |
 | USDT, USDC | 2x | 2.5x | 3.5x | 6x |
