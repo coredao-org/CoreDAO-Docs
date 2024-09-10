@@ -35,7 +35,10 @@ If you're new to Core Ignition, bridge $100 USDT in whitelisted assets to Core t
 ### How to Boost Multipliers ###
 Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted below and in special campaigns. Multipliers are stackable and may subject to change. The multiplier displayed in dashboard is your average earned.
 
+Wallet Balance
+dApp Balance
 
+|                     | Ignition Wallet Balance | Ignition dApp Balance | 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
 | coreBTC, stCORE | 2.5x | 3x | 4x | 7x |
@@ -43,3 +46,4 @@ Multipliers are dynamic variables to multiply your Spark points. You can earn Mu
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1.5x | 2x | 3x | 5x |
 
 
+example 
