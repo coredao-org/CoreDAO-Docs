@@ -42,13 +42,11 @@ Multipliers are dynamic variables to multiply your Spark points. You can earn Mu
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2.5x | 4x |
 
 
-Example 1:
--
-If you hold 10 stCORE in Ignition wallet balance, you get:
-Daily Sparks = stCORE amount * stCORE price * Multiplier = 10 stCORE * $1.5 (assumed) * 2 = 30 
+>***Example 1:***
+>If you hold 10 stCORE in Ignition wallet balance, you get:
+>Daily Sparks = stCORE amount * stCORE price * Multiplier = 10 stCORE * $1.5 (assumed) * 2 = 30 
 
-Example 2: 
--
-If you lend 20 stCORE in a DEX, you get: 
-Daily Sparks = stCORE amount * stCORE price * Multiplier = 20 stCORE * $1.5(assumed) * 2.5 = 75
+>***Example 2:***
+>If you lend 20 stCORE in a DEX, you get: 
+>Daily Sparks = stCORE amount * stCORE price * Multiplier = 20 stCORE * $1.5(assumed) * 2.5 = 75
 
