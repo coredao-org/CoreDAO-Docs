@@ -38,7 +38,7 @@ Multipliers are dynamic variables to multiply your Spark points. You can earn Mu
 Wallet Balance
 dApp Balance
 
-|                     | Ignition Wallet Balance | Ignition dApp Balance | 
+|  |  |  | | Ignition Wallet Balance | Ignition dApp Balance | 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
 | coreBTC, stCORE | 2x | 2.5x | 3.5x | 5x |
