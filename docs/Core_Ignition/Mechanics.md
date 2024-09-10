@@ -41,9 +41,9 @@ dApp Balance
 |                     | Ignition Wallet Balance | Ignition dApp Balance | 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
-| coreBTC, stCORE | 2.5x | 3x | 4x | 7x |
-| USDT, USDC | 2x | 2.5x | 3.5x | 6x |
-| CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1.5x | 2x | 3x | 5x |
+| coreBTC, stCORE | 2x | 2.5x | 3.5x | 5x |
+| USDT, USDC | 1.5x | 2x | 3x | 4.5x |
+| CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2.5x | 4x |
 
 
 example 
