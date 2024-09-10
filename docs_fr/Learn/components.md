@@ -11,7 +11,7 @@ description: Learn about the major components of the Satoshi Plus Mechanism
 
 The Satoshi Plus consensus mechanism represents a groundbreaking innovation in blockchain technology, specifically engineered for the Core Chain platform to synergistically combine the robust security attributes of Bitcoin with the flexibility and scalability of smart contracts. This hybrid consensus model merges Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-custodial Bitcoin Staking, enables Bitcoin miners to participate directly in the governance and security of a decentralized smart contract platform without incurring additional costs. By leveraging the established Bitcoin mining infrastructure, Satoshi Plus not only fosters a dual-layered security protocol but also enhances the incentive structures across both ecosystems, ensuring a balanced alignment of interests among all stakeholders involved in Core Chain.
 
-![satoshi-3-component-combo](../../../../static/img/staoshi-plus/satoshi-plus-components.png)
+![satoshi-plus](https://github.com/user-attachments/assets/8e90becb-71c2-4798-813c-27bcf6e1badb)
 
 ## Major Components of the Satoshi Plus Mechanism
 
