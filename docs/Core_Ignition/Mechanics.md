@@ -36,8 +36,10 @@ By inviting new users to Core Ignition, you will receive 10% of the daily Sparks
 Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted in Ignition docs and campaigns. Multipliers are stackable and may change. The displayed multiplier is your average earned.
 
 :::
+
 * 1.5x:  CORE, wBTC, aBTC
 * 2x:  USDT/USDC
 * 2.5x: coreBTC, stCORE
+
 :::
 
