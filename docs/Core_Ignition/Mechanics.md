@@ -40,6 +40,7 @@ Multipliers are dynamic variables to multiply your Spark points. You can earn Mu
 | coreBTC, stCORE | 2x | 2.5x | 3.5x | 5x |
 | USDT, USDC | 1.5x | 2x | 3x | 4.5x |
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2.5x | 4x |
+
   
   
 >***Example 1:***
