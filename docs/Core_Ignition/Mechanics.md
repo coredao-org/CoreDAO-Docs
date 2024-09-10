@@ -33,7 +33,7 @@ By inviting new users to Core Ignition, you will receive 10% of the daily Sparks
 
 
 ### How to Boost Multipliers ###
-Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted in Ignition docs and campaigns. Multipliers are stackable and may change. The displayed multiplier is your average earned.
+Multipliers are dynamic variables to multiply your Spark points. You can earn Multipliers by taking actions highlighted below and in campaigns. Multipliers are stackable and may change. The multiplier displayed in dashboard is your average earned.
 
 
 | Whitelisted Tokens  | Bridged Assets | Lending | Borrowing | Liquidity Provision | 
