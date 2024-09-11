@@ -9,9 +9,9 @@ sidebar_position: 2
 
 The importance of smart contract audits in the blockchain ecosystem cannot be overstated. As immutable programs that automate processes, handle significant amounts of value, and establish trust in decentralized systems, smart contracts must be secure against both inadvertent bugs and malicious exploits. Audits are crucial because they involve a rigorous examination of the contract’s code by security experts who can identify vulnerabilities and suggest enhancements before the code is deployed on the blockchain, where it becomes much harder to alter.
 
-Understanding this critical need for security, Core Chain places a strong emphasis on ensuring its codebase is not just robust and efficient but also secure and reliable. To achieve this, Core Chain engages with reputable third-party security firms to conduct comprehensive audits of its smart contract code. These external parties scrutinize the smart contracts for potential security issues, logic errors, and best practice violations. By involving independent auditors, Core Chain aims to provide an unbiased assessment of its smart contract infrastructure, thus fostering trust among its users and stakeholders.
+Understanding this critical need for security, Core contributors place a strong emphasis on verifying that its codebase is not just robust and efficient but also secure and reliable. To achieve this, Core is audited by reputable third-party security firms that conduct comprehensive audits of its smart contract code. These external parties scrutinize the smart contracts for potential security issues, logic errors, and best practice violations. Involving independent auditors is aimed at providing an unbiased assessment of Core's smart contract infrastructure, thus fostering trust among its users and stakeholders.
 
-Furthermore, Core Chain adopts a proactive stance towards continuous security, where the codebase undergoes regular audits, especially before major updates or after significant changes. This commitment to regular third-party verification serves as a testament to Core Chain’s dedication to maintaining a secure environment for its community and preserving the integrity of its platform in the rapidly evolving landscape of decentralized technologies.
+Furthermore, Core benefits from a proactive stance towards continuous security, where the codebase undergoes regular audits, especially before major updates or after significant changes. This commitment to regular third-party verification serves as a testament to Core contributor and community dedication to maintaining a secure environment for its community and preserving the integrity of its platform in the rapidly evolving landscape of decentralized technologies.
 
 Core's [blockchain codebase](https://github.com/coredao-org) has been audited by top-tier third-party blockchain security firms, including Halborn and Least Authority. Access the audit reports from the following:
 
@@ -20,3 +20,4 @@ Core's [blockchain codebase](https://github.com/coredao-org) has been audited by
 * [Audit Report of BTC Staking](https://www.halborn.com/audits/coredao/btc-staking)
 * [Audit Report of coreBTC](https://www.halborn.com/audits/coredao/corebtc)
 * [Audit Report of 1.0.9 Upgrade](https://www.halborn.com/audits/coredao/109-upgrade-release)
+
