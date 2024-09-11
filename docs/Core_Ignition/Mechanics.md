@@ -11,6 +11,9 @@ The Core Ignition Profile is your personalized dashboard, allowing you to showca
 4. Display the badges you have earned
 
 To update your profile, click on the profile meatballs menu.
+<p align="center">
+  <img width="288" alt="Ignition Profile meatballs menu" src="https://github.com/user-attachments/assets/d7523504-df48-4f39-93f3-94e472a03a9a">
+</p>
 
 ### Ignition Wallet Balance ###
 Ignition Wallet balance displays a subset of whitelisted assets you hold on Core. You can earn Sparks (points) by bridging/holding assets with extra Sparks boost on Core.
