@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Chain : Débloquer le Bitcoin DeFi
+# Core: Unlocking Bitcoin DeFi
 
 ---
 
