@@ -4,17 +4,17 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Tokenomics et Utilité de Core Chain
+# CORE Tokenomics and Utility
 
 ---
 
 ## Vue d'ensemble
 
-La tokenomics de CORE, le token utilitaire et de gouvernance natif de Core Chain, est structurée pour refléter une philosophie profondément ancrée dans la décentralisation, la durabilité et l'alignement à long terme des incitations. Avec une offre plafonnée qui reflète le modèle de rareté de Bitcoin et une stratégie de distribution axée sur la décentralisation, Core Chain aspire à être l'une des blockchains les plus équitablement lancées de l'histoire.
+The tokenomics of CORE, the native utility and governance token of the Core blockchain, is structured to reflect a philosophy deeply rooted in decentralization, sustainability, and long-term alignment of incentives. With a capped supply mirroring Bitcoin's scarcity model and a distribution strategy focusing on decentralization, Core is among the most equitably launched blockchains in history.
 
 ## Distribution des Tokens
 
-La tokenomics de CORE est conçue en mettant l'accent sur la durabilité à long terme et la décentralisation. Inspirée par la politique monétaire solide de Bitcoin et le besoin d'une distribution équitable du pouvoir de gouvernance, les tokens CORE servent de colonne vertébrale à l'écosystème Core Chain.
+La tokenomics de CORE est conçue en mettant l'accent sur la durabilité à long terme et la décentralisation. Inspired by the sound monetary policy of Bitcoin and the need for a fair distribution of governance power, CORE tokens serve as the backbone of the Core ecosystem.
 
 ![tokenomics](../../../../static/img/tokenomics-distribution.png)
 
@@ -29,7 +29,7 @@ Les tokens CORE sont répartis à travers plusieurs canaux pour équilibrer l'é
 
 4. **Réserves (10% - 210,000,000 tokens CORE):** Une réserve stratégique est maintenue pour capitaliser progressivement la fondation sans centraliser l'offre de tokens.
 
-5. **Trésorerie (9,5% - 199,500,000 tokens CORE):** Les fonds de la trésorerie sont alloués pour favoriser le développement de l'écosystème et assurer que la DAO dispose des ressources nécessaires.
+5. **Treasury (9.5% - 199,500,000 CORE tokens):** The Treasury funds are allocated to foster the ecosystem's development and supply the DAO with sufficient resources for growth.
 
 6. **Récompenses des Relayeurs (0,476% - 10,000,000 tokens CORE):** Les relayeurs, tout comme les nœuds, jouent un rôle vital dans le maintien de la sécurité du réseau et sont récompensés par des récompenses et des frais de transaction.
 
@@ -38,7 +38,7 @@ Les tokens CORE sont répartis à travers plusieurs canaux pour équilibrer l'é
 Les tokens CORE remplissent plusieurs fonctions essentielles au sein du réseau Core:
 
 - **Frais de Transaction:** Les utilisateurs paient les transactions et les exécutions de contrats intelligents en utilisant des tokens CORE.
-- **Staking:** Core permet de staker à la fois des tokens BTC et CORE sur le réseau Core, contribuant à sécuriser davantage le réseau et permettant aux stakers de gagner des récompenses.
+- **Staking:** Core allows to stake both Bitcoin and CORE tokens on the Core network, securing it further and enabling stakers to earn rewards.
 - **Participation à la Gouvernance:** Les détenteurs de tokens peuvent participer à la gouvernance on-chain, influençant ainsi l'avenir du réseau Core.
 
 ## Offre et Émissions Strictes
@@ -49,26 +49,26 @@ En suivant un plafond strict de **2,1 milliards** de tokens, CORE adopte le prin
 
 ## Décentralisation et Orientation
 
-- **Stratégie de Décentralisation:** Core Chain se concentre sur une trajectoire stable et délibérée vers la décentralisation et l'antifragilité. Le lancement des tokens vise à placer les tokens CORE entre les mains de ceux qui s'engagent à construire et à soutenir le réseau.
+- The Core strategy focuses on a stable and deliberate path toward decentralization and antifragility. Le lancement des tokens vise à placer les tokens CORE entre les mains de ceux qui s'engagent à construire et à soutenir le réseau.
 
-- La direction et le rythme du projet privilégient la robustesse plutôt qu'une expansion rapide. La distribution des tokens et les politiques économiques reflètent l'engagement de Core Chain à établir une fondation solide, capable de résister à la volatilité des marchés des crypto-monnaies.
+- La direction et le rythme du projet privilégient la robustesse plutôt qu'une expansion rapide. The token distribution and economic policies reflect Core's design targeting a sturdy foundation that values antifragility and is capable of weathering the volatility of the crypto markets.
 
 - En ciblant un groupe diversifié de parties prenantes, y compris les constructeurs, utilisateurs et croyants, la tokenomics de CORE jette les bases d'un modèle de gouvernance décentralisée qui peut évoluer et s'adapter à mesure que le réseau mûrit.
 
-- La distribution est orientée vers les constructeurs, utilisateurs et soutiens à long terme, favorisant une communauté alignée sur la vision de Core Chain pour la décentralisation.
+- The distribution is targeted towards builders, users, and long-term supporters, fostering a decentralized, yet fully aligned community.
 
 ## Politique Monétaire Solide
 
-En plus du plafond strict, Core Chain introduit un mécanisme déflationniste:
+In addition to the hard cap, Core also has a deflationary mechanism:
 
-- **Brûlage des Frais de Transaction:** Une partie des frais de transaction et des récompenses des blocs sera brûlée, selon les décisions de la DAO, assurant que l'offre de tokens CORE se rapproche asymptotiquement du plafond sans jamais le dépasser.
+- **Transaction Fee Burns:** A portion of transaction fees and block rewards will be burned, as determined by the DAO, so the supply of CORE tokens asymptotically approaches the hard cap without exceeding it.
 
 ## Incitations pour les Participants du Réseau Bitcoin
 
-- **Revenu Supplémentaire pour les Mineurs:** Avec la fin éventuelle des récompenses des blocs Bitcoin, les tokens CORE offrent une source de revenus alternative pour les mineurs qui deviennent validateurs sur le réseau Core. En déléguant leur puissance de hachage existante, ils reçoivent des récompenses à la fois des transactions Bitcoin et des tokens CORE, garantissant la sécurité et la viabilité continues de l'écosystème minier Bitcoin.
+- **Revenu Supplémentaire pour les Mineurs:** Avec la fin éventuelle des récompenses des blocs Bitcoin, les tokens CORE offrent une source de revenus alternative pour les mineurs qui deviennent validateurs sur le réseau Core. By delegating their existing hash power, they receive rewards from both Bitcoin transactions and CORE token rewards, upholding the continued security and viability of the Bitcoin mining ecosystem.
 
-- **Récompenses pour les Détenteurs de BTC:** Core propose un staking non-custodial de BTC, conçu spécifiquement pour les détenteurs à long terme et les institutions qui préfèrent conserver leurs actifs sur la blockchain Bitcoin. Reconnaissant que ces entités sont habituées à détenir leur bitcoin sans effectuer de transactions fréquentes, le staking natif de bitcoin leur offre la possibilité de gagner des récompenses pendant une période de détention spécifiée. Les utilisateurs peuvent staker leur bitcoin sans le déplacer hors de la blockchain Bitcoin, maintenant ainsi la haute sécurité et la confiance associées à l'infrastructure robuste de Bitcoin.
+- **Reward for HODLing Bitcoin:** Core offer non-custodial Bitcoin staking which is designed specifically for the kind of long-term holders and institutions who have shown a clear preference for keeping their assets on the Bitcoin blockchain. Reconnaissant que ces entités sont habituées à détenir leur bitcoin sans effectuer de transactions fréquentes, le staking natif de bitcoin leur offre la possibilité de gagner des récompenses pendant une période de détention spécifiée. Les utilisateurs peuvent staker leur bitcoin sans le déplacer hors de la blockchain Bitcoin, maintenant ainsi la haute sécurité et la confiance associées à l'infrastructure robuste de Bitcoin.
 
 ## Conclusion
 
-La tokenomics de CORE est conçue pour soutenir une économie robuste et décentralisée au sein du réseau Core. Avec une utilité claire, un plafond strict sur l'offre, et un plan de distribution des récompenses à long terme, Core Chain se distingue comme une plateforme qui équilibre les principes de monnaie saine avec les nécessités d'un écosystème blockchain en pleine croissance et en évolution. Ce modèle financier est conçu pour attirer des participants engagés qui contribueront à la force et à la résilience du réseau pour les décennies à venir.
+La tokenomics de CORE est conçue pour soutenir une économie robuste et décentralisée au sein du réseau Core. With a clear utility, a hard cap on supply, and a long-term reward distribution plan, Core stands out as a platform that balances the principles of sound money with the necessities of a growing and evolving blockchain ecosystem. Ce modèle financier est conçu pour attirer des participants engagés qui contribueront à la force et à la résilience du réseau pour les décennies à venir.
