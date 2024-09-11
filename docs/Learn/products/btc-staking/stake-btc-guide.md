@@ -60,8 +60,9 @@ Non-Custodial Bitcoin staking introduces a secure and decentralized method for B
 2. **Stake Bitcoin with Time-Lock:** Stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, so that your Bitcoin remains locked until the specified period ends. The minimum staking period is **10 days**.
 3. **Vote for Validators:** Delegate your staked Bitcoin to the chosen validator on the Core blockchain.
 4. **Connect a Core wallet for rewards:** Verify your Core address in the return field, where you'll receive Core token rewards.
-5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the (staking site)\[[https://stake.coredao.org](http://stake.coredao.org/)].
+5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the (staking site)[http://stake.coredao.org/].
 6. **Redeem Bitcoin:** Once the staking lock time expires, the staked Bitcoin will remain idle in the staking address until redeemed by the user.
+
 
 ## Non-Custodial Bitcoin Staking Walkthrough 
 
