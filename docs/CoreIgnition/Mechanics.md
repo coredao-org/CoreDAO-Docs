@@ -71,7 +71,7 @@ Below are the baseline multipliers for the whitelisted assets inside the wallet 
 
   
 >***Example 2:***
->If you lend 20 stCORE in a Lending Protocol, you get:  
+>If the user lends 20 stCORE in a Lending Protocol, the user get:  
 >Daily Sparks = stCORE amount * stCORE price * Multiplier = 20 stCORE * $1.5(assumed) * 2.5 = 75
   
 
@@ -80,4 +80,4 @@ Find out specific Multiplier opportunities in the Explore dApps section:
   <img width="500" alt="dApp tab" src="https://github.com/user-attachments/assets/a2067f6d-0202-474f-8acb-c9cd2d4007e9"/>
 </p>
 
-In addition to holding strategic tokens and deploying your assets into various dApps, users can also earn additional Multipliers by taking actions from special campaigns. The multipliers from campaigns can stack on top of the baseline multipliers highlighted above to further boost Sparks. Baseline multipliers are subject to change without prior notice.  
+In addition to holding strategic tokens and deploying assets into various dApps, users can also earn additional Multipliers by taking actions from special campaigns. The multipliers from campaigns can stack on top of the baseline multipliers highlighted above to further boost Sparks. Baseline multipliers are subject to change without prior notice.  
