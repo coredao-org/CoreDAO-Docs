@@ -39,7 +39,9 @@ If you're new to Core Ignition, bridge $100 USDT worth of whitelisted assets to 
 
 ### How to Boost Multipliers ###
 Multipliers are dynamic variables to multiply your Spark points. The multiplier displayed on your dashboard reflects the multiplier currently applying to your entire asset. This multiplier is calculated by averaging out the multipliers distributing across your assets.
-<p align="center"><img width="537" alt="image" src="https://github.com/user-attachments/assets/4f7ceee6-6a93-4cce-a382-5e6002ce2819"></p>
+<p align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/4f7ceee6-6a93-4cce-a382-5e6002ce2819">
+</p>
 
 Below are the baseline multipliers for the whitelisted assets inside your wallet or deposited into various dApps.
 
@@ -49,6 +51,7 @@ Below are the baseline multipliers for the whitelisted assets inside your wallet
 | USDT, USDC | 1.5x | 2x | 2.5x | 3x |
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2x | 2.5x |
 
+  
 >***Example 1:***
 >If you hold 10 stCORE in Ignition wallet balance, you get:  
 >Daily Sparks = stCORE amount * stCORE price * Multiplier = 10 stCORE * $1.5 (assumed) * 2 = 30  
@@ -57,12 +60,10 @@ Below are the baseline multipliers for the whitelisted assets inside your wallet
 >If you lend 20 stCORE in a Lending Protocol, you get:  
 >Daily Sparks = stCORE amount * stCORE price * Multiplier = 20 stCORE * $1.5(assumed) * 2.5 = 75
 
+  
 Find out specific Multiplier opportunities in dApps by exploring the explore dApps section
-<img width="1786" alt="image" src="https://github.com/user-attachments/assets/ea6b7110-8cba-47ad-b3f6-0676e5b1ae8f">
+<p align="center">
+  <img width="500" alt="dApp tab" src="https://github.com/user-attachments/assets/a2067f6d-0202-474f-8acb-c9cd2d4007e9">
+</p>
 
-In addition to holding strategic tokens and deploying your assets into various dApps, you can also earn additional Multipliers by taking actions from special campaign. The multipliers from campaigns can stack on top of the baseline multipliers highlighted above to further boost your Sparks earning. 
-Baseline multipliers are subject to change without prior notice. 
-
-
-
-
+In addition to holding strategic tokens and deploying your assets into various dApps, you can also earn additional Multipliers by taking actions from special campaigns. The multipliers from campaigns can stack on top of the baseline multipliers highlighted above to further boost your Sparks earning. Baseline multipliers are subject to change without prior notice.  
