@@ -17,7 +17,7 @@ const sidebars = {
   learnSidebar: [
     {
       type: 'category',
-      label: '📖 All About Core Chain',
+      label: '📖 All About Core',
       link: {type: 'doc', id: 'intro'},
       items:[
           {
@@ -41,7 +41,7 @@ const sidebars = {
             link: {
               type: 'generated-index',
               title: 'Core Concepts',
-              description: 'Learn about the Nuts and Bolts of the Core Chain Ecossytem!',
+              description: 'Learn about the Nuts and Bolts of the Core Ecossytem!',
               slug: '/category/core-concepts',
             },
             items: ['Learn/core-concepts/overview', 'Learn/core-concepts/architecture',
@@ -66,8 +66,8 @@ const sidebars = {
               label: 'Products',
               link: {
                 type: 'generated-index',
-                title: 'Exploring Core Chain: Pioneering DeFi Solutions for Bitcoin',
-                description: 'Learn about the different innovative products offered by Core Chain that are helping in unclocking the DeFi landscape for Bitcoin!',
+                title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
+                description: 'Learn about the different innovative products offered by Core that are helping in unclocking the DeFi landscape for Bitcoin!',
                 slug: '/category/products',
               },
               items: [
@@ -148,7 +148,7 @@ const sidebars = {
     {
       type: 'category',
       collapsed: true,
-      label: '💻 Core Chain for Developers',
+      label: '💻 Core for Developers',
       items: [
       {
         type: 'category',
@@ -179,8 +179,8 @@ const sidebars = {
         label: 'Developer Guides',
         link: {
           type: 'generated-index',
-          title: 'Developer Guides: Mastering Core Chain Essentials',
-          description: 'Unlock Your Potential: Detailed Developer Guides for Building on Core Chain',
+          title: 'Developer Guides: Mastering Core Essentials',
+          description: 'Unlock Your Potential: Detailed Developer Guides to Build on Core',
           slug: '/category/dev-guides',
         },
         items: [
