@@ -5,6 +5,7 @@
 Core Ignition is a six-month incentive program developed by the Core Foundation to jumpstart the growth of Core ecosystem. Season 1 has concluded on September 11, 2024, and Season 2 is currently live. Please visit [Core Ignition](https://ignition.coredao.org) for further details.
 <br/>
 <br/>
+<br/>
 **2. What is Core blockchain?**  
   
 Core serves as the Proof of Stake layer for Bitcoin, pioneering Non-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Since April 2024, over 5,500 BTC—valued at more than $330 million—have been staked with Core, boosting Bitcoin’s utility and security. Core is the most Bitcoin-aligned EVM blockchain, with approximately 55% of Bitcoin mining hash power contributing to the network’s security.
