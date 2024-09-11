@@ -45,7 +45,7 @@ After bridging assets to the Core blockchain, you can swap them for CORE on DEXe
 <br/>
 **5. What is stCORE and how to get it?**  
   
-stCORE is a liquid staking token to enhance liquidity while earning staking rewards via Core’s Satoshi Plus consensus mechanism. After minting stCORE with CORE token, your asset is automatically engaged in Core’s consensus mechanism, entitling you to consensus rewards. stCORE is both liquid and yield-bearing, enabling you to earn rewards while participating in dApps that offer additional benefits for using stCORE tokens. You also earn daily Sparks with stCORE. Get started by visiting https://stake.coredao.org/stcore and minting stCORE.   
+stCORE is a liquid staking token to enhance liquidity while earning staking rewards via Core’s Satoshi Plus consensus mechanism. After minting stCORE with CORE token, your asset is automatically engaged in Core’s consensus mechanism, entitling you to consensus rewards. stCORE is both liquid and yield-bearing, enabling you to earn rewards while participating in dApps that offer additional benefits for using stCORE tokens. You also earn daily Sparks with stCORE. Get started by visiting https://stake.coredao.org/stcore and minting stCORE.
 <br/>
 <br/>
 <br/>
