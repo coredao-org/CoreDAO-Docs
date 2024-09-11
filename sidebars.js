@@ -129,6 +129,16 @@ const sidebars = {
               ]
           },
           'Learn/governance',
+          
+            {
+              type: 'category',
+              collapsed: true,
+              label: 'Core Ignition',
+              items: [
+                  'CoreIgnition/Overview',
+                  'CoreIgnition/Mechanics',
+              ]
+          },
           {type: 'doc', id: 'Learn/audit', label:'Audit'},
 
     ]
@@ -201,7 +211,8 @@ const sidebars = {
       items: ['FAQs/core-faqs', 'FAQs/core-node-faqs',
               'FAQs/validator-faqs', 'FAQs/delegator-faqs', 
               'FAQs/coreBTC-faqs', 'FAQs/btc-staking-faqs', 
-              'FAQs/LST-stCore-faqs','FAQs/core-api-faqs' ]
+              'FAQs/LST-stCore-faqs','FAQs/core-api-faqs', 
+              'CoreIgnition/FAQs']
     },
   ],
   nodeSidebar:[ 

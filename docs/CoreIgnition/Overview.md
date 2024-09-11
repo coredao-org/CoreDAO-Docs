@@ -1,4 +1,12 @@
-## Overview
+---
+sidebar_label: Overview
+hide_table_of_contents: false
+sidebar_position: 2
+---
+
+# Overview
+---
+
 Core Ignition Season 2 is a crafted six-month user incentive program designed to reward the Core community for their valuable contributions to the network. By participating, users can not only earn rewards but also play a crucial role in fostering the growth and adoption of the Core ecosystem. Through Core Ignition, you have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for your efforts. Together, we're building a more accessible and robust BTCfi ecosystem for all.
 
 ## Program Period
@@ -18,29 +26,29 @@ By participating in the Core Ignition user incentive program, users gain access 
 ## Get Started
 1. Visit [Core Ignition website](https://ignition.coredao.org).
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
 </p>
 
 2. Click on "Add Core Network" to add Core Chain into your wallet network.
 3. Click on "Earn Sparks" or "Join Now" to initiate account creation.
 4. Select your country
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/0734a1d8-463c-4ed7-8ab5-00e20f958ba2">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/0734a1d8-463c-4ed7-8ab5-00e20f958ba2"/>
 </p>
 
 5. Choose a username for your Ignition dashboard. Connect your X (Twitter) account (optional).
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/c591724a-aba2-4499-972f-3e83eb083b04">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/c591724a-aba2-4499-972f-3e83eb083b04"/>
 </p>
 
 6. Review and agree to the Terms & Conditions and Privacy Policy.
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096"/>
 </p>
 
 7. Click "Connect Wallet" to connect your compatible Web3 Core wallet.
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/c04bf2de-1945-4cb6-95c4-f15a6b50b197">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/c04bf2de-1945-4cb6-95c4-f15a6b50b197"/>
 </p>
 
 8. Engage with the Core ecosystem to boost your Core Ignition Balances and earn daily Sparks points.
