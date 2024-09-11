@@ -8,57 +8,57 @@ sidebar_position: 2
 
 ---
 
-En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Let’s check out a few of the common methods for verifying contracts, via the web, API, and Hardhat.
+En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Veamos algunos de los métodos comunes para verificar contratos, a través de la web, API y Hardhat.
 
 :::note
-Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md), to do so ensure that the `evmVersion` parameter is set to `paris` under the solidity compiler settings.
+Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez de Core Chain] (./smart-contract-guidelines.md). Para ello, asegúrese de que el parámetro `evmVersion` esté establecido en `paris` en la configuración del compilador de solidity.
 :::
 
-## Web Verification via Core Scan
+## Verificación web mediante Core Scan
 
-Web verification is the most commonly used smart contract verification strategy. After deploying your smart contract to Core, you can use its source code to verify it on Core Scan.
+La verificación web es la estrategia de verificación de contratos inteligentes más utilizada. Después de implementar su contrato inteligente en Core, puede usar su código fuente para verificarlo en Core Scan.
 
-1. Search for the contract by address on [Core Scan](https://scan.test.btcs.network).
-2. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
+1. Busque el contrato por dirección en [Core Scan](https://scan.test.btcs.network).
+2. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 
-3\. Fill in the required verification information on the page, specifically:
+3\. Complete la información de verificación requerida en la página, específicamente:
 
-- Contract address;
-- Compiler type: for simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, select the `Standard Json` compiler type;
-- Compiler version;
-- Open-source license type;
+- Dirección del contrato;
+- Tipo de compilador: para contratos simples, seleccione el tipo de compilador "Archivo único". Para contratos más complejos, como contratos con importaciones externas, seleccione el tipo de compilador "Standard Json";
+- Versión del compilador;
+- Tipo de licencia de código abierto;
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 
-4\. On the next page, fill in the contract's Solidity source code.
+4\. En la página siguiente, complete el código fuente de Solidity del contrato.
 
-If your contract has constructor parameters, we recommend adding them in the `Constructor Arguments` field, although it’s not mandatory. The constructor parameters should be formatted as ABI-encoded bytes. Remix and other tools can generate these for you.
+Si su contrato tiene parámetros de constructor, le recomendamos agregarlos en el campo "Argumentos del constructor", aunque no es obligatorio. Los parámetros del constructor deben tener el formato de bytes codificados en ABI. Remix y otras herramientas pueden generarlos por usted.
 
-If you enabled optimization during contract compilation, select "Yes" for the `Optimization` field.
+Si habilitó la optimización durante la compilación del contrato, seleccione "Sí" para el campo "Optimización".
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
 
-5\. Click on **Verify and Publish** to finish the process.
+5\. Haga clic en **Verificar y publicar** para finalizar el proceso.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
 
-Now your verified contract on Core Scan should look like this:
+Ahora su contrato verificado en Core Scan debería verse así:
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-5.avif)
 
-## API Verification
+## Verificación API
 
-You can find the guide to using the Core API to verify contracts [here](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls you must register on Core Scan and generate an API key.
+Puede encontrar la guía sobre el uso de Core API para verificar contratos [aquí](https://docs.coredao.org/docs/api/api-documents/contracts). Tenga en cuenta que para realizar llamadas API debe registrarse en Core Scan y generar una clave API.
 
-If you're familiar with the Etherscan API, you're in luck! The API calls on Core are 100% compatible with the Etherscan API. You just need to replace the API key and endpoint URL and everything should work properly.
+Si estás familiarizado con la API de Etherscan, ¡estás de suerte! Las llamadas API en Core son 100% compatibles con la API de Etherscan. Solo necesita reemplazar la clave API y la URL del punto final y todo debería funcionar correctamente.
 
-## HardHat Verification
+## Verificación de HardHat
 
-HardHat verification is the most convenient way for developers to verify smart contracts. For more information on Hardhat verification, refer to the official Hardhat verification guide located [here](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+La verificación HardHat es la forma más conveniente para que los desarrolladores verifiquen contratos inteligentes. Para obtener más información sobre la verificación de Hardhat, consulte la guía oficial de verificación de Hardhat que se encuentra [aquí](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Please note that you’ll need to add Core networks as custom chains, as seen below in a sample HardHat config:
+Tenga en cuenta que deberá agregar redes Core como cadenas personalizadas, como se ve a continuación en una configuración de ejemplo de HardHat:
 
 ```javascript
 /**
@@ -138,8 +138,8 @@ module.exports = {
 
 ```
 
-## Known Limitations
+## Limitaciones conocidas
 
-- Currently Core only supports solc compiler versions up to 0.8.19.
-- Libraries are not supported using API verifications.
-- If you run into issues verifying very large (1000+ lines) single file contracts, we recommend switching to `Standard JSON` format for verification.
+- Actualmente, Core solo admite versiones del compilador solc hasta 0.8.19.
+- Las bibliotecas no son compatibles con las verificaciones API.
+- Si tiene problemas al verificar contratos de un solo archivo muy grandes (más de 1000 líneas), le recomendamos cambiar al formato "JSON estándar" para la verificación.
