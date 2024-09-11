@@ -1,8 +1,8 @@
 ## Overview
-Core Ignition is a crafted six-month user incentive program designed to reward the Core community for their valuable contributions to the network. By participating, users can not only earn rewards but also play a crucial role in fostering the growth and adoption of the Core ecosystem. Through Core Ignition, you have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for your efforts. Together, we're building a more accessible and robust BTCfi ecosystem for all.
+Core Ignition Season 2 is a crafted six-month user incentive program designed to reward the Core community for their valuable contributions to the network. By participating, users can not only earn rewards but also play a crucial role in fostering the growth and adoption of the Core ecosystem. Through Core Ignition, you have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for your efforts. Together, we're building a more accessible and robust BTCfi ecosystem for all.
 
 ## Program Period
-The duration for the Core Ignition user incentive program is **six** months, from September 12, 2024, 00:00 UTC to March 12, 2025, 23:59 UTC.
+The duration for the Core Ignition user incentive program is **six** months, from September 12, 2024, 00:00 UTC to March 11, 2025, 23:59 UTC.
 
 ## Eligibility
 All Core network participants are eligible, except for those in prohibited jurisdictions or as specified in the Program Terms & Conditions.
@@ -16,8 +16,19 @@ By participating in the Core Ignition user incentive program, users gain access 
  5. Participate in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
 
 ## Geting Started
-1. Visit [Core Ignition website](https://ignition.coredao.org/registration).
-2. Select your country and choose a username for your Ignition dashboard. Connect your Twitter account (optional).
-3. Review and agree to the Terms & Conditions and Privacy Policy.
-4. Connect your compatible Web3 Core wallet.
-5. Engage with the Core ecosystem to boost your Core Ignition Balance and earn daily Sparks points.
+1. Visit [Core Ignition website](https://ignition.coredao.org).
+![image](https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58)
+2. Click on "Add Core Network" to add Core Chain into your wallet network.
+3. Click on "Earn Sparks" or "Join Now" to initiate account creation.
+4. Select your country
+<img width="900" alt="image" src="https://github.com/user-attachments/assets/0734a1d8-463c-4ed7-8ab5-00e20f958ba2">
+5. Choose a username for your Ignition dashboard. Connect your Twitter account (optional).
+<img width="580" alt="image" src="https://github.com/user-attachments/assets/c591724a-aba2-4499-972f-3e83eb083b04">
+
+6. Review and agree to the Terms & Conditions and Privacy Policy.
+<img width="557" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096">
+
+7. Click "Connect Wallet" to connect your compatible Web3 Core wallet.
+<img width="570" alt="image" src="https://github.com/user-attachments/assets/c04bf2de-1945-4cb6-95c4-f15a6b50b197">
+
+8. Engage with the Core ecosystem to boost your Core Ignition Balance and earn daily Sparks points.
