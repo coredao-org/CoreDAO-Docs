@@ -8,7 +8,7 @@ description: Quick Glance at Core's Underlying Blockchain Architecture
 # Architecture of the Core Blockchain
 ---
 
-The Core blockchain’s architecture centers on its Satoshi Plus consensus, a tripartite mechanism combining Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking. On top of Satoshi Plus’ security, Core’s infrastructure also includes a trust-minimized bridged Bitcoin asset in coreBTC, trustless peer-to-peer Bitcoin <> Core transactions with HTLC atomic swaps, and more. 
+The Core blockchain’s architecture centers on its Satoshi Plus consensus, a tripartite mechanism combining Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking. On top of Satoshi Plus’ security, Core’s infrastructure also includes a trust-minimized bridged Bitcoin asset in coreBTC, trustless peer-to-peer Bitcoin `<>` Core transactions with HTLC atomic swaps, and more. 
 
 Through Satoshi Plus, Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers elect validators to secure Core. Validators are elected by these three parties on the basis of a hybrid score, which calculates each validator’s reception of delegated hash power, delegated/staked CORE tokens, and delegated/staked Bitcoin from Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers respectively. 
 
