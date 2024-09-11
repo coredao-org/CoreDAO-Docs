@@ -17,7 +17,10 @@ By participating in the Core Ignition user incentive program, users gain access 
 
 ## Geting Started
 1. Visit [Core Ignition website](https://ignition.coredao.org).
-![image](https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58)
+<p align="center">
+  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58">
+</p>
+
 2. Click on "Add Core Network" to add Core Chain into your wallet network.
 3. Click on "Earn Sparks" or "Join Now" to initiate account creation.
 4. Select your country
