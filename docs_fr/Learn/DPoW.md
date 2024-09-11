@@ -5,17 +5,27 @@ sidebar_position: 2
 description: Exploiter la DPoW dans Satoshi Plus
 ---
 
+# Delegated Proof of Work (DPoW)
+
+---
+
+##
+
 # Preuve de Travail Déléguée (DPoW) dans le mécanisme de consensus Satoshi Plus
 
 ---
 
 ## Aperçu
 
-La Preuve de Travail Déléguée (DPoW) est un composant fondamental du mécanisme de consensus Satoshi Plus sur la Core Chain. Cette approche innovante adapte le système traditionnel de Preuve de Travail (PoW) utilisé par le Bitcoin, permettant l'intégration des efforts de minage de Bitcoin dans la structure sécurisée d'une plateforme de contrats intelligents. La DPoW maintient la robustesse de la sécurité du Bitcoin tout en améliorant son utilité et les incitations économiques pour les mineurs. Dans le mécanisme de consensus Satoshi Plus, les validateurs sont choisis en fonction d'un score hybride, et ce score hybride est calculé à partir de la Preuve de Travail Déléguée (DPoW) et de la Preuve d'Enjeu Déléguée (DPoS). Dans cette section, nous couvrons en profondeur le fonctionnement et l'importance de la DPoW dans le fonctionnement de Satoshi Plus.
+Delegated Proof of Work (DPoW) is a crucial element of Core's Satoshi Plus consensus mechanism. This system leverages the robust security of Bitcoin mining, integrating it into the Core blockchain to enhance security and incentivize participation without additional costs. Here’s a detailed look at how DPoW operates and its significance.
+
+DPoW enables Bitcoin miners to earn a second block reward on top of their Bitcoin rewards while securing the Core blockchain, creating a symbiotic relationship that benefits both networks.
+
+![dpow-core-architechture](../../../../static/img/staoshi-plus/dpow.jpg)
 
 ## Fonctionnement de la DPoW dans Satoshi Plus
 
-Sur le réseau Bitcoin, les mineurs de Bitcoin génèrent de la puissance de hachage pour sécuriser le réseau Bitcoin, valider les transactions et gagner des récompenses en BTC. Afin de lisser leurs récompenses dans le temps, les mineurs de Bitcoin contribuent souvent leur puissance de hachage à des pools de minage, qui utilisent la puissance de hachage agrégée pour augmenter les chances globales du pool de miner un bloc de Bitcoin et de recevoir des BTC en retour. La DPoW intègre directement le minage de Bitcoin dans le protocole de sécurité de Core Chain via un système de délégation. Voici une répartition étape par étape de son fonctionnement :
+On the Bitcoin network, Bitcoin miners generate hash power to secure the Bitcoin network, validate transactions, and earn Bitcoin rewards. In order to even their rewards out over time, Bitcoin miners often contribute their hash power to mining pools, which use the aggregated hash power to increase the pool’s overall chances of mining a Bitcoin block and receiving Bitcoin in return. La DPoW intègre directement le minage de Bitcoin dans le protocole de sécurité de Core Chain via un système de délégation. Voici une répartition étape par étape de son fonctionnement :
 
 1. **Intégration du Minage**: Les mineurs de Bitcoin poursuivent leurs activités de minage standard, mais avec une étape supplémentaire consistant à signaler leur soutien à Core Chain. Cela se fait en incluant une transaction spéciale dans les blocs de Bitcoin qu'ils minent, qui spécifie le Validateur Core qu'ils souhaitent soutenir.
 
@@ -27,27 +37,33 @@ Sur le réseau Bitcoin, les mineurs de Bitcoin génèrent de la puissance de hac
 
 5. **Mécanisme de Récompense**: En retour de leur contribution, les mineurs reçoivent des récompenses supplémentaires sous forme de tokens CORE, en plus des récompenses habituelles de minage de Bitcoin. Ce système de double récompense incite les mineurs à participer au processus DPoW sans avoir besoin de détourner des ressources du minage de Bitcoin.
 
-L'architecture de cette communication inter-chaînes est illustrée dans le diagramme ci-dessous.
+## Step by Step Process
 
-![dpow-core-architechture](../../../../static/img/staoshi-plus/dpow.jpg)
+1. **Mining Bitcoin Blocks:** Bitcoin miners continue their primary role of mining blocks on the Bitcoin network using Proof of Work (PoW).
+
+2. **Including Delegation Information:** Miners add two additional pieces of information in the op_return field of the coinbase transaction:
+
+- **Core Validator Address:** The address of the Core Validator to delegate hash power to.
+- **CORE Token Reward Address:** The address where the miner wants their CORE token rewards sent.
+
+3. **Delegating Hash Power:** This action delegates the miner's hash power to the chosen Core Validator, repurposing existing work without incurring additional costs.
+
+4. **Validator Election:** Validators with higher delegated hash power have a greater chance of being elected to the validator set.
+
+5. **Validator Rewards:** Validators earn rewards for processing blocks, take a small commission, and pass rewards to their delegators, including any Bitcoin miners or mining pools who delegated hash power to them.
+
+6. **Earning Rewards:** Miners or mining pools receive CORE token rewards in addition to their Bitcoin rewards, providing extra incentives.
 
 ## Importance de la DPoW dans Satoshi Plus
 
-- **Sécurité Améliorée**:
-  La DPoW tire parti de l'immense puissance de hachage du réseau Bitcoin, qui est le réseau blockchain le plus sécurisé en raison de la participation massive des mineurs et de sa robustesse cryptographique éprouvée. En intégrant cette puissance, Core Chain améliore considérablement sa propre sécurité.
+- **Enhanced Security:** By integrating Bitcoin’s PoW, Core benefits from Bitcoin’s unmatched security infrastructure, making the Core network more resilient.
 
-- **Incitations Économiques pour les Mineurs**:
-  Les récompenses supplémentaires en tokens CORE créent une nouvelle source de revenus pour les mineurs de Bitcoin, rendant les opérations de minage plus lucratives sans augmenter les coûts opérationnels. Cette incitation est cruciale pour attirer davantage de mineurs à participer à l'écosystème de Core Chain.
+- **Increased Incentives:** Bitcoin miners gain an additional revenue stream through CORE token rewards, enhancing their overall profitability without additional energy costs.
 
-- **Efficacité des Ressources**:
-  La DPoW permet aux mineurs de maximiser l'utilité de leurs ressources de calcul existantes. En soutenant Core Chain tout en réalisant leurs opérations régulières de minage de Bitcoin, les mineurs peuvent contribuer à deux réseaux simultanément sans dépenses énergétiques supplémentaires.
+- **Symbiotic Relationship:** This system promotes mutual benefits for both the Bitcoin and Core networks, fostering a cooperative environment that strengthens the blockchain ecosystem.
 
-- **Relation Symbiotique**:
-  Ce mécanisme crée une relation symbiotique entre le Bitcoin et la Core Chain. Alors que les mineurs de Bitcoin contribuent à la sécurité de Core Chain, ils améliorent la proposition de valeur globale des deux réseaux. Cette interdépendance aligne les intérêts des parties prenantes sur les deux plateformes.
-
-- **Durabilité**:
-  En réutilisant la puissance de hachage déjà dédiée au minage de Bitcoin, la DPoW contribue à un écosystème blockchain plus durable. Elle réduit le besoin de consommation d'énergie supplémentaire qui serait sinon nécessaire pour sécuriser un réseau blockchain distinct.
+- **Resource Efficiency**: DPoW allows miners to maximize the utility of their existing computational resources. En soutenant Core Chain tout en réalisant leurs opérations régulières de minage de Bitcoin, les mineurs peuvent contribuer à deux réseaux simultanément sans dépenses énergétiques supplémentaires.
 
 #### **Conclusion**
 
-La DPoW est une innovation cruciale au sein du mécanisme de consensus Satoshi Plus, mariant les avantages éprouvés en matière de sécurité et de décentralisation de la PoW de Bitcoin avec les capacités avancées de la plateforme de contrats intelligents Core Chain. Cette intégration améliore non seulement la sécurité et l'efficacité économique des deux réseaux, mais favorise également une plus grande participation des mineurs et une meilleure utilisation des ressources, rendant cela comme un élément crucial dans l'évolution de la technologie blockchain.
+DPoW is a critical innovation within the Satoshi Plus consensus mechanism, it extends the incentives of the Bitcoin network’s miners to align with Core’s Satoshi Plus consensus mechanism. Core receives Bitcoin miner participation in its security, and Bitcoin receives more highly compensated miners. The result is a miner set that is more heavily incentivized to secure both Bitcoin and Core.
