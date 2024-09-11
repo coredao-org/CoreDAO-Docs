@@ -1,28 +1,28 @@
 ---
-sidebar_label: Core Explorer
+sidebar_label: Explorador Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Scan Blockchain Explorer
+# Explorador de cadena de bloques de Core Scan
 
 ---
 
-Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
+Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede buscar información sobre los bloques que se han agregado a la cadena de bloques, las transacciones que se han producido en la cadena de bloques, los saldos de la billetera y la información sobre tCORE y los tokens CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
 
-### Explorers for Testnet
+### Exploradores para Red de Prueba
 
-- https://scan.test.btcs.network/
+- https://scan.test.btcs.network
 
-### Explorers for Mainnet
+### Exploradores para Red Principal
 
 - https://scan.coredao.org/
 
-### Using the Explorer
+### Usando el Explorador
 
-You can use the Testnet Core Scan blockchain explorer to find and review transactions. Copy your account's address from MetaMask and search for it on the explorer. In the picture below, we can see two transactions related to our account:
+Puede utilizar el explorador de cadena de bloques Testnet Core Scan para buscar y revisar transacciones. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
 
-- The one in which we fetched tCORE from Faucet;
-- The one in which we sent tCORE to another address;
+- Aquel en el que obtuvimos tCORE de Faucet;
+- Aquel en el que enviamos tCORE a otra dirección;
 
-![core-explorer](../../static/img/core-explorer.png)
+![núcleo-explorador](../../static/img/core-explorer.png)
