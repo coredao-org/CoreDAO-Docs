@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ## Introduction
 
-As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a secured mechanism, powered by a network of decentralized, permissionless participants. This guide covers the essential steps for minting (wrapping) and redeeming (unwrapping) coreBTC, facilitating Bitcoin integration into decentralized finance (DeFi).
+As a native wrapped Bitcoin on Core, coreBTC maintains a 1:1 peg with Bitcoin through a secured mechanism, powered by a network of decentralized, permissionless participants. This guide covers the essential steps for minting (wrapping) and redeeming (unwrapping) coreBTC, facilitating Bitcoin integration into decentralized finance (DeFi).
 
 ![core-guide-1](../../../../static/img/coreBTC/core-guides-1.png)
 
 ## Getting Started: Prerequisites
 
-1. [Unisat Wallet Browser Extension](https://unisat.io/): Required for managing your BTC. Note that, Unisat currently has only desktop and Android wallet app.
+1. [Unisat Wallet Browser Extension](https://unisat.io/): Required for managing your Bitcoin. Note that, Unisat currently has only desktop and Android wallet app.
 2. [MetaMask](https://metamask.io/): Necessary for interacting with the Core blockchain.
 
 ## Minting coreBTC
@@ -22,7 +22,7 @@ As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a 
 1. **coreBTC Website:** Go to https://bridge.coredao.org/coreBTC
 2. **Specify Conversion:** Indicate you're converting from Bitcoin (BTC) to coreBTC.
 3. **Connect Unisat Wallet:** Select Connect Unisat Wallet to link your Bitcoin wallet.
-4. **Enter BTC Amount:** Input the amount of BTC you wish to convert to coreBTC.
+4. **Enter Bitcoin Amount:** Input the amount of Bitcoin you wish to convert to coreBTC.
 5. **Receiving Core Address:** Enter your Core blockchain wallet address.
 6. **Adjust Fee Rate:** The default fees are set according to the current market rates. For faster transaction processing, it's essential to adjust the gas fee appropriately. Keep in mind that setting a higher fee can significantly speed up the transaction. Conversely, if the fee is set too low, the transaction may experience considerable delays in being mined, potentially taking days or even longer to process. It's crucial to find a balance that aligns with your urgency and the network's current demand.
 7. **Verification:** Double-check all details, including amounts, fees, and wallet addresses.
@@ -31,12 +31,12 @@ As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a 
 
 ![core-guide-2](../../../../static/img/coreBTC/core-guides-2.png)
 
-## Redeeming BTC from coreBTC
+## Redeeming Bitcoin from coreBTC
 
 1. **coreBTC Website:** Go to https://bridge.coredao.org/coreBTC
 2. **Specify Conversion:** Choose the conversion from coreBTC to Bitcoin (BTC).
 3. **Connect EVM Wallet:** Click on Connect EVM Wallet to link your wallet.
-4. **Enter coreBTC Amount:** Specify the amount of coreBTC to be redeemed for BTC.
+4. **Enter coreBTC Amount:** Specify the amount of coreBTC to be redeemed for Bitcoin.
 5. **Receiving Bitcoin Address:** Enter the destination Bitcoin wallet address.
 6. **Verification:** Double-check all details, including amounts, fees, and wallet addresses.
 7. **Burn:** Click on 'Burn coreBTC' to start the redemption process.
@@ -49,7 +49,7 @@ As a native wrapped BTC on Core, coreBTC maintains a 1:1 peg with BTC through a 
 
 1. **Pending Transactions:** View and obtain details on ongoing transactions.
 2. **Completed Transactions:** Check the history and specifics of finalized transactions.
-3. **Locker States:** Explore available lockers, including their fees, collateral, minting capacity, and health factor. Lockers are crucial for securing BTC and are subject to penalties or liquidation based on behavior and collateral status.
+3. **Locker States:** Explore available lockers, including their fees, collateral, minting capacity, and health factor. Lockers are crucial for securing Bitcoin and are subject to penalties or liquidation based on behavior and collateral status.
 4. **Relayer States:** Review the list of relayers responsible for data transmission and verification between Bitcoin and Core blockchain.
 
 :::note
