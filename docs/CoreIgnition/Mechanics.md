@@ -60,8 +60,8 @@ Below are the baseline multipliers for the whitelisted assets inside your wallet
 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
-| coreBTC, stCORE | 2x | 2.5x | 3x | 3.5x |
-| USDT, USDC | 1.5x | 2x | 2.5x | 3x |
+| coreBTC, stCORE | 1.3x | 2.5x | 3x | 3.5x |
+| USDT, USDC | 1.2x | 2x | 2.5x | 3x |
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2x | 2.5x |
   
   
