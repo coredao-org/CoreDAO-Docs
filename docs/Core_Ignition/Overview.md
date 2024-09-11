@@ -15,7 +15,7 @@ By participating in the Core Ignition user incentive program, users gain access 
  4. Execute transactions interacting with smart contracts;
  5. Participate in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
 
-## Geting Started
+## Get Started
 1. Visit [Core Ignition website](https://ignition.coredao.org).
 <p align="center">
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58">
