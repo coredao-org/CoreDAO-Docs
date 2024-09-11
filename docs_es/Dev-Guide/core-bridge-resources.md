@@ -71,9 +71,9 @@ El [Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite t
 | USDT     | 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58 |
 | WBTC     | 0x68f180fcCe6836688e9084f035309E29Bf0A2095 |
 
-| AVALANCHE                                                            | Addresses                                  |
+| AVALANCHE                                                            | Direcciones                                |
 | -------------------------------------------------------------------- | ------------------------------------------ |
-| Bridge                                                               | 0x29d096cD18C0dA7500295f082da73316d704031A |
+| Puente                                                               | 0x29d096cD18C0dA7500295f082da73316d704031A |
 | Bitcoin Avalanche Bridged (BTC.b) | 0x2297aEbD383787A160DD0d9F71508148769342E3 |
 | USDC                                                                 | 0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E |
 | USDT                                                                 | 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7 |
