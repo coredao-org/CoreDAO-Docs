@@ -7,7 +7,7 @@ sidebar_position: 2
 # Overview
 ---
 
-Core Ignition Season 2 is a crafted six-month user incentive program designed to reward the Core community for their valuable contributions to the network. By participating, users can not only earn rewards but also play a crucial role in fostering the growth and adoption of the Core ecosystem. Through Core Ignition, you have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for your efforts. Together, we're building a more accessible and robust BTCfi ecosystem for all.
+Core Ignition Season 2 is a six-month user incentive program designed to recognize the Core community for their valuable contributions to the Core network. By participating, users can not only earn rewards but also play a crucial role in fostering the growth and adoption of the Core ecosystem. Through Core Ignition, you have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for your efforts. Together, we're building a more accessible and robust BTCfi ecosystem for all.
 
 ## Program Period
 The duration for the Core Ignition user incentive program is **six** months, from September 12, 2024, 00:00 UTC to March 11, 2025, 23:59 UTC.
