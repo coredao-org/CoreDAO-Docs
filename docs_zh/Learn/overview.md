@@ -4,67 +4,44 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# coreBTC Overview
+# stCORE - Liquid Staking on Core
 
 ---
 
-## What is coreBTC?
+Core Blockchain offers several innovative solutions like Non-Custodial Bitcoin Staking, coreBTC, and Liquid staking in the form of stCORE for users to make the most of their CORE holdings. Liquid staking is a mechanism that allows CORE holders to earn Core Consensus rewards while maintaining the liquidity of their assets.
 
-Core-native wrapped bitcoin (coreBTC) serves as a synthetic representation of Bitcoin on the Core blockchain, designed to integrate Bitcoin into the decentralized finance (DeFi) landscape of Core. By locking Bitcoin and issuing an equivalent amount of coreBTC, it upholds a **1:1** value correlation, enabling Bitcoin holders to engage securely in DeFi activities without directly using their Bitcoin holdings.
+## What is Liquidity Staking?
 
-## Importance in the Core Ecosystem
+Staking CORE helps secure the network but prevents token holders from participating in different DeFi protocols as their tokens cannot be used for other purposes while staked. Minting a new Liquidity Staking Token (stCORE) unlocks a world of possibilities, allowing token holders to utilize their tokens in different interactions while continuing to earn the staking rewards. Essentially, liquid staking unlocks liquidity for staked tokens, building upon existing staking systems.
 
-coreBTC is central to developing a vibrant Bitcoin DeFi (BTCfi) ecosystem within Core. It unlocks the significant value stored in Bitcoin by making it usable in smart contracts and other blockchain-based financial services, potentially involving nearly **$1 trillion** worth of Bitcoin. This facilitates greater liquidity and usability of Bitcoin, enhancing its overall ecosystem.
+## Primary Purpose of stCORE
 
-## Advantages of coreBTC
+The primary purposes of introducing liquid staking via stCORE on Core are:
 
-- **Enhanced Liquidity and Usability:** coreBTC enables Bitcoin holders to participate in the DeFi ecosystem on the Core blockchain, providing liquidity and increased utility for their Bitcoin holdings.
+- Improve user experience
+- Bring more utilities of CORE token
 
-- **Decentralization and Security:** Unlike traditional wrapped Bitcoin solutions, coreBTC uses a decentralized network of Lockers, so that the process maintains the foundational blockchain principles of decentralization and security.
+For the moment users can stake CORE tokens to individual validators directly through https://stake.coredao.org. However, there are two drawbacks raised by the community
 
-- **Decentralized Operations:** The coreBTC system allows Bitcoin to be locked and wrapped without relying on a central authority, maintaining the decentralization that is central to blockchain technology.
+- There is no auto-compounding feature, and users need to claim rewards and restake them to validators manually everyday.
+- The hash stakes from Bitcoin mining pools are less fungible and not as stable as CORE stakes, which causes affected validators’ APR to change more dramatically.
 
-- **1:1 Bitcoin Backing:** Each coreBTC is backed one-to-one by actual Bitcoin, which is locked and secured by Lockers who provide significant collateral to guarantee the security of the locked Bitcoin.
+On the other hand, we are also seeking ways to add more utilities to the CORE token itself. By introducing stCORE, we expect the CORE token itself to also benefit. E.g. to provide CORE/stCORE liquidity pairs in decentralized exchanges.
 
-- **Maintains Bitcoin’s Integrity:** By not requiring Bitcoin holders to transfer their actual bitcoins to a different blockchain or alter them in any significant way, coreBTC preserves the integrity and value of the original Bitcoin holdings.
+## Steps involved in Liquid Staking on Core
 
-- **Long-term Incentives:** The design of the coreBTC system includes long-term incentives for all participants, including Lockers and Relayers, designed for the sustainability and stability of the service.
+1. **Staking Setup:** To participate in Core liquid staking, users need to convert their CORE holdings into a staked CORE (stCORE) format. This involves locking up a certain amount of CORE and depositing it into the stCORE staking contract, which will automatically delegate the CORE to selected validators on the chain.
 
-- **Collateralized and Insured:** The collateral requirements for Lockers act as an insurance mechanism that protects against fraudulent activities and uphold the fidelity of the wrapping process.
+2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens,, i.e., stCORE. These tokens represent their staked CORE holdings and can be freely traded or transferred while still earning staking rewards.
 
-- **Integration with Core DeFi:** coreBTC can be seamlessly used within Core’s DeFi applications, such as lending, borrowing, and trading, similar to how other stablecoins and synthetic assets are used in DeFi platforms.
+3. **Staking Rewards:** Users can earn annualized return on holding stCORE which is the projected yearly increase in its conversion ratio with CORE. This means that users can exchange for more CORE when they burn their stCORE.
 
-- **Support for Bitcoin's Value Proposition:** coreBTC leverages Bitcoin's reputation and market strength, enhancing its functionality while continuing to support its value proposition as a store of value.
+## Benefits of Liquid Staking on Core
 
-- **Scalability:** By providing a mechanism for Bitcoin to be used on Core, coreBTC helps scale the usability of Bitcoin without requiring changes to its underlying protocol, preserving its original attributes while expanding its use cases.
+1. **Liquidity:** One of the major advantages of liquid staking on Core is that it allows users to maintain the liquidity of their CORE holdings. Unlike the traditional staking mechanisms offered by other platforms, where funds are locked for a specific period, Core liquid staking provides flexibility by enabling users to trade or transfer stCORE tokens without waiting for the staking period to end. In the CORE staking model, anyone can unstake their CORE anytime, so they don't really have to wait for staking period to end. Our CORE staking model is "stake & earn", "unstake & stop earning". So it's locked if you want the earning.
 
-## Why Opt for coreBTC?
-
-Opting for coreBTC offers several compelling benefits, making it an attractive choice for Bitcoin holders and users in the Core ecosystem. Here’s a bulleted list outlining why one might choose coreBTC:
-
-- **Seamless DeFi Integration:** coreBTC allows Bitcoin holders to seamlessly engage with DeFi applications on the Core blockchain, expanding the utility of their Bitcoin without converting it into other cryptocurrencies.
-
-- **Preservation of Bitcoin’s Properties:** By using coreBTC, users can enjoy the benefits of Bitcoin’s fundamental characteristics—such as its robust security and scarcity—while participating in a diverse range of blockchain activities.
-
-- **Decentralized and Secure:** The decentralized nature of the coreBTC issuance and management system is designed so that users are not reliant on any single central party, maintaining the decentralization ethos of blockchain technology.
-
-- **Enhanced Liquidity:** coreBTC provides Bitcoin holders with increased liquidity options, allowing them to leverage their holdings in various financial transactions and smart contracts within the Core ecosystem.
-
-- **No Custody Risk:** Users retain full control over their Bitcoin until they decide to lock it up for coreBTC, reducing the custody risk typically associated with handing over assets to a third party.
-
-- **Fiat Peg Avoidance:** Unlike stablecoins pegged to fiat currencies, coreBTC is pegged directly to Bitcoin, avoiding issues related to fiat currency volatility and inflation.
-
-- **Reward Opportunities:** Users can earn additional rewards in CORE tokens by participating in the staking and security of the Core blockchain, thereby increasing their potential investment returns.
-
-- **Future-Proof Investment:** As Core continues to develop and expand its offerings, holding coreBTC could provide strategic advantages in accessing new services and features as they become available on the platform.
-
-Choosing coreBTC allows users to leverage the security and value of Bitcoin within a dynamic and growing DeFi ecosystem, aligning traditional Bitcoin investment with modern blockchain technology opportunities.
-
-## How coreBTC Works
-
-- **Minting Process:** Users send Bitcoin to a Locker's address. Once confirmed, Relayers submit the transaction proof to the coreBTC smart contract, which mints an equivalent amount of coreBTC.
-- **Redemption Process:** Users can burn their coreBTC to retrieve their locked Bitcoin. The coreBTC smart contract verifies the burn and instructs the Locker to send the equivalent Bitcoin to the user’s specified address.
+2. **Earning Potential:** Core liquid staking allows users to earn rewards on their staked CORE while still participating in the broader Core ecosystem. This presents an opportunity to benefit from both staking rewards and potential price appreciation of Core.
 
 ## Conclusion
 
-coreBTC is an important component of the Core ecosystem, enhancing the utility of Bitcoin by enabling its active participation in DeFi while adhering to the principles of decentralization and security. Through its intricate system of Lockers, Relayers, and smart contracts, coreBTC enables Bitcoin to be safely used and transacted within the Core ecosystem, broadening its appeal and functional utility.
+Liquid staking on Core in the form of stCore provides an innovative and impressive option for CORE holders to maximize their returns while maintaining the liquidity of their assets. By following the necessary steps and being mindful of the associated risks, users can benefit from staking rewards while actively participating in the Core ecosystem. As the Core network evolves and improves with the each upgrade, Core liquid staking is likely to become an increasingly popular choice for CORE holders seeking to optimize their investment strategies.
