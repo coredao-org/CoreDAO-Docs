@@ -4,15 +4,15 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Chain Mainnet
+# Conectarse a Core Chain Mainnet
 
 ---
 
 :::note
-This is a detailed guideline for connecting to Core Mainnet using the MetaMask wallet.
+Esta es una guía detallada para conectarse a Core Mainnet utilizando la billetera MetaMask.
 :::
 
-## Software Prequisites
+## Requisitos previos del software
 
 1. [MetaMask Wallet Browser Extension](https://metamask.io/)
 
