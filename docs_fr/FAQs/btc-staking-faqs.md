@@ -4,15 +4,15 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# FAQ sur le Staking BTC Non-Custodial
+# Non-Custodial Bitcoin Staking FAQs
 
 ---
 
-### 1. Qu'est-ce que le staking BTC non-custodial sur le réseau Core ?
+### 1. What is Non-Custodial Bitcoin Staking on the Core network?
 
-Le réseau Core offre aux détenteurs de BTC une opportunité transparente et sans risque de verrouiller/staker leurs BTC sur le réseau Bitcoin sans céder la garde de leurs actifs, afin de participer à la sécurité de la Core Chain et de gagner des récompenses en CORE en retour.
+Core provides Bitcoin holders with a risk free and transparent opportunity to lock up/stake their Bitcoin on the Bitcoin Network without giving up custody of their Bitcoin assets, in order to participate in Core Chain’s security and earn CORE rewards in return.
 
-### 2. Comment Fonctionne le Staking BTC Non-Custodial ?
+### 2. How does Non-Custodial Bitcoin Staking work?
 
 Avec le staking non-custodial de bitcoins, le protocole de la Core Chain intègre les détenteurs de bitcoins en tant que troisième partie du consensus Satoshi Plus. La méthodologie de la Core Chain pour intégrer le staking de bitcoins repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le CLTV est une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut être dépensée qu'après un certain délai. Ce délai peut être défini en termes de date et heure spécifiques ou de hauteur de bloc. Plutôt que de céder la garde de leurs bitcoins à une tierce partie, les stakers sur la Core Chain n'ont qu'à placer leurs bitcoins dans des CLTV en tant que partie d'une transaction, et cette transaction peut être conçue pour restituer les fonds une fois le délai écoulé. Dans cette transaction, les stakers doivent inclure un script contenant les mêmes informations que les mineurs Bitcoin dans leurs blocs délégués :
 
@@ -21,48 +21,48 @@ Avec le staking non-custodial de bitcoins, le protocole de la Core Chain intègr
 
 Les stakers de bitcoins gagnent des rendements sous forme de récompenses en tokens CORE sur leurs bitcoins inactifs. Le résultat final est que des milliards de dollars de valeur Bitcoin sous-utilisée deviendront productifs, rémunérant les stakers tout en élargissant l'utilité de Bitcoin.
 
-### 3. Comment le staking BTC non-custodial maintient-il la sécurité et la confiance ?
+### 3. How does non-custodial Bitcoin staking maintain security and trust?
 
-En permettant aux utilisateurs de staker leurs bitcoins sans les déplacer de la blockchain Bitcoin, le staking BTC non-custodial évite l'introduction de nouvelles hypothèses de confiance. Il tire parti de la sécurité et de la confiance inhérentes à l'infrastructure établie du Bitcoin, garantissant une sécurité élevée pour les actifs stakés.
+By allowing users to stake their bitcoins without moving them off the Bitcoin blockchain, non-custodial Bitcoin staking avoids introducing new trust assumptions. Il tire parti de la sécurité et de la confiance inhérentes à l'infrastructure établie du Bitcoin, garantissant une sécurité élevée pour les actifs stakés.
 
-### 4. Quels sont les avantages du staking BTC non-custodial ?
+### 4. What are the advantages of Non-Custodial Bitcoin Staking?
 
-1. **Adapté aux détenteurs à long terme et aux institutions :** Conçu pour ceux qui préfèrent conserver leurs bitcoins sur la blockchain sécurisée de Bitcoin, le staking BTC non-custodial permet de gagner des récompenses pendant une période de détention spécifiée sans transactions fréquentes.
+1. **Tailored for Long-Term Holders and Institutions:** Designed for those who prefer keeping their bitcoins on the secure Bitcoin blockchain, non-custodial Bitcoin staking offers a way to earn rewards during a specified holding period without frequent transactions.
 
 2. **Pas de nouvelles hypothèses de confiance :** Les utilisateurs peuvent staker leurs bitcoins directement sur la blockchain Bitcoin, maintenant la haute sécurité et la confiance inhérentes à l'infrastructure robuste de Bitcoin, sans avoir à transférer des actifs hors chaîne.
 
-3. **Possibilité de gagner des récompenses passives :** Les stakers de BTC peuvent gagner des récompenses en tokens CORE en échange de leur contribution au consensus de la Core Chain, améliorant ainsi la fonctionnalité et la sécurité de la blockchain.
+3. **Opportunity to Earn Passive Rewards:** Bitcoin stakers can earn CORE token rewards in exchange for their contributions to the Core Chain's consensus, enhancing the blockchain's functionality and security.
 
-4. **Autogestion et sécurité :** Le staking de BTC est 100 % sécurisé avec autogestion ; les utilisateurs exécutent eux-mêmes les transactions de staking sur le réseau Bitcoin, garantissant que leurs BTC ne quittent pas la blockchain.
+4. **Self-Custody and Security:** Bitcoin Staking is 100% secure with self-custody; users execute staking transactions themselves on the Bitcoin network, ensuring their Bitcoin does not leave the blockchain.
 
-5. **Utilisation des fonctionnalités cryptographiques natives :** Le staking de BTC sur Core utilise des fonctionnalités cryptographiques éprouvées du réseau Bitcoin, ce qui le rend plus sûr que les solutions non natives.
+5. **Use of Native Cryptographic Features:** Bitcoin staking on Core utilizes battle-tested cryptographic features of the Bitcoin network, making it safer than non-native solutions.
 
 6. **Flexibilité dans la construction des transactions :** Les utilisateurs ont la flexibilité de créer leurs transactions de staking en utilisant l'outil de leur choix, réduisant ainsi considérablement le risque d'attaques de la chaîne d'approvisionnement via des bibliothèques tierces.
 
-### 5) Y a-t-il des exigences spécifiques pour participer au staking BTC non-custodial ?
+### 5) Are there any specific requirements to participate in Non-Custodial Bitcoin Staking?
 
-Oui, les participants doivent staker un minimum de **0,01 BTC pour au moins 10 jours**. Cette exigence minimale le rend accessible à un large éventail de détenteurs de bitcoins.
+Yes, participants must stake a minimum of **0.01 Bitcoin for at least 10 days**. Cette exigence minimale le rend accessible à un large éventail de détenteurs de bitcoins.
 
 ### 6. Pourquoi l'adresse de staking fournie diffère-t-elle de votre adresse Bitcoin d'origine ?
 
 L'adresse de staking est dérivée de la clé privée principale de votre portefeuille, garantissant votre contrôle et votre sécurité sur vos actifs. Vos bitcoins restent stockés en toute sécurité dans votre portefeuille d'origine, sans être affectés par le staking. Bien que les actifs stakés puissent ne pas être visibles dans certaines versions de portefeuille, vous conservez l'entière propriété.
 
-Vous pouvez visualiser vos fonds stakés en recherchant l'adresse de staking sur n'importe quel explorateur BTC comme [Mempool](https://mempool.space/). Nous travaillons activement pour rendre les actifs stakés visibles dans tous les portefeuilles pris en charge, notamment via les versions en ligne de commande.
+You can view your staked funds by searching the staking address on the any Bitcoin explorer like [Mempool](https://mempool.space/). Nous travaillons activement pour rendre les actifs stakés visibles dans tous les portefeuilles pris en charge, notamment via les versions en ligne de commande.
 
-### 7. La Core Chain prend-elle en charge les portefeuilles physique pour le staking BTC non-custodial ?
+### 7. Does Core Chain provide any hardware wallet support for Non-Custodial Bitcoin Staking?
 
-Actuellement, le staking BTC non-custodial ne prend pas en charge les portefeuilles matériels en raison de contraintes techniques. Néanmoins, nous explorons constamment des moyens d'améliorer la compatibilité avec divers types de portefeuilles, en donnant la priorité à la sécurité et à la commodité des utilisateurs.
+At present, Non-Custodial Bitcoin Staking does not support hardware wallets due to technical constraints. Néanmoins, nous explorons constamment des moyens d'améliorer la compatibilité avec divers types de portefeuilles, en donnant la priorité à la sécurité et à la commodité des utilisateurs.
 
 ### 8. Quelles sont les considérations importantes à prendre en compte avant de verrouiller vos actifs pour le staking ?
 
 - **Expiration du verrouillage temporel :** Lorsque vous verrouillez vos bitcoins pour le staking, ils ne sont pas accessibles avant la fin de la période de staking.
 - **Choisir judicieusement :** Nous vous conseillons de choisir votre période de verrouillage en fonction de vos objectifs d'investissement et de votre tolérance au risque. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
-- **Vérification des montants stakés :** Actuellement, en raison de certaines complexités techniques, il est possible que vos actifs stakés ne soient pas visibles dans votre portefeuille via la CLI, mais vous pouvez facilement vérifier que vous avez la pleine propriété de vos actifs stakés sur le [site Web de staking BTC non-custodial de la Core Chain](https://stake.coredao.org/).
+- **Staked Amount Verification:** currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
 
 ### 9. Pourquoi mon actif staké n'est-il pas visible dans mon portefeuille ?
 
-Actuellement, en raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille via la CLI, mais vous pouvez facilement vérifier que vous avez la pleine propriété de vos actifs stakés sur le [site Web de staking BTC non-custodial de la Core Chain](https://stake.coredao.org/).
+Currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
 
-### 10. Comment la sécurité du staking BTC non-custodial est-elle assurée ?
+### 10. How is the security of non-custodial Bitcoin staking ensured?
 
-Le protocole de la Core Chain et la sécurité du staking BTC non-custodial ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en matière de sécurité des contrats intelligents et de [confiance par des plateformes blockchain](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana, et Polygon, ainsi que des projets DeFi comme Sushiswap. Consultez les rapports d'audit du protocole de la Core Chain et du staking BTC non-custodial par des entreprises de premier plan [ici](../Learn/audit.md).
+Core Chain's protocol and non-custodial Bitcoin staking’s security have been thoroughly audited by [Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by leading blockchain platforms](https://www.halborn.com/about/who-trusts-us) like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap. Review Audit Reports of Core Chain's protocol and non-custodial Bitcoin staking by leading firms [here](../Learn/audit.md).
