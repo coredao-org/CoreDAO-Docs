@@ -4,20 +4,20 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# CORE Delegator FAQs
+# Delegator FAQs
 
 ---
 
-### 1. What is a delegator in Core Chain?
+### 1. What is a delegator on the Core blockchain?
 
-In the Core Chain ecosystem, delegation is a fundamental mechanism that allows BTC miners and BTC and CORE token holders to participate actively in the network's security and governance without being validators themselves. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (BTC hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
+In the Core ecosystem, delegation is a fundamental mechanism that allows BTC miners and BTC and CORE token holders to participate actively in the network's security and governance without being validators themselves. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (BTC hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
 
-### 2. What are the different types of delegations that can be done on the Core Chain due to the Satoshi Plus Consensus mechanism?
+### 2. What are the different types of delegations that can be done on Core due to the Satoshi Plus Consensus Mechanism?
 
 1. **BTC/CORE Delegation to Validators:** This type of delegation allows BTC and CORE token holders to support specific validators by staking and delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks. Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
-2. **Hash Power Delegation from BTC Miners:** Bitcoin miners can delegate a portion of their computational hash power to validators on the Core network. This unique form of delegation leverages the security and work already being done on the Bitcoin network to enhance the security of the Core Chain.
+2. **Hash Power Delegation from BTC Miners:** Bitcoin miners can delegate a portion of their computational hash power to validators on the Core network. This unique form of delegation leverages the security and work already being done on the Bitcoin network to enhance the security of Core blockchain.
 
-### 3) How can one delegate CORE tokens in Core Chain?
+### 3) How can one delegate CORE tokens in Core?
 
 By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core) on CORE Delegation for more details.
 
@@ -29,7 +29,7 @@ For BTC and BTC hash power delegation the minimum requirement is that of **10** 
 
 This type of delegation allows BTC and CORE token holders to support specific validators by delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks. Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
 
-### 6. How does one delegate hash power in Core Chain?
+### 6. How does one delegate hash power on Core netowrk?
 
 By delegating hash power to Validators, BTC miners can help secure the network and get share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-hash) on hash power delegation for more details.
 
@@ -41,17 +41,13 @@ To maximize their rewards, delegators will look both for validators that are gen
 
 - **Hash Power:** hash is delegated separately in each BTC block mined; and once delegated no further transfer can be made.
 
-- **BTC Delegation:** users lock up their BTC and designate a validator to stake to on Core Chain. They can transfer BTC stake to other validators on Core, but will lose the rewards of the acting day.
+- **BTC Delegation:** users lock up their BTC and designate a validator to stake to on Core. They can transfer BTC stake to other validators on Core, but will lose the rewards of the acting day.
 
 - **CORE Delegation:** users can transfer to other validators and will still receive the rewards of the acting day.
 
-<!-- ### 9. How to un-delegate my CORE tokens?
-
-### 10. How to un-delegate my Bitcoin Hash Power? -->
-
 ### 9. Are there any fees associated with delegating BTC or CORE tokens or hash power?
 
-Other than the transaction fee/gas charges, Core Chain doesn’t charge any additional fees for delegation of BTC hash power, BTC or CORE tokens.
+Other than the transaction fee/gas charges, Core doesn’t charge any additional fees for delegation of BTC hash power, BTC or CORE tokens.
 
 ### 10. How long does it take to start earning rewards after delegation of BTC,CORE or Bitcoin hash power?
 
@@ -61,18 +57,12 @@ Other than the transaction fee/gas charges, Core Chain doesn’t charge any addi
 
 ### 11. How can delegators claim their rewards?
 
-Refer to the detailed guide [here](../stake-and-delegate/delegating-core#claiming-rewards) on Claiming rewards earned through staking of BTC and CORE. In case of BTC Hash Power delegation, refer [here](../stake-and-delegate/delegating-hash#implementation).
+Refer to the detailed guide [here](../stake-and-delegate/delegating-core#claiming-rewards) on Claiming Rewards earned through staking of BTC and CORE. In case of BTC Hash Power delegation, refer [here](../stake-and-delegate/delegating-hash#implementation).
 
 ### 12. When are the rewards paid out?
 
-The rewards are paid out at the end of each round of consensus on the Core Chain.
+The rewards are paid out at the end of each round of consensus on the Core blockchain.
 
 ### 13. What happens if a validator stops performing or is penalized?
 
-Poor performance or misconduct by validators can result in penalties like slashing of stakes, impacting both validators and their delegators. Note that delegators will not lose their staked assets, the penalties on validators will only be affecting the delegator's daily rewards.
-
-<!-- ### 16. When can I receive my staking rewards?
-
-### 17. When can I receive my undelegated CORE?
-
-### 18. When can I redelegate my staked CORE? -->
+Poor performance or misconduct by validators can result in penalties like slashing of stakes and jailing. Note that delegators will not lose their staked assets, the penalties on validators will only be affecting the delegator's daily rewards.
