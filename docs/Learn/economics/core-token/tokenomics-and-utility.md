@@ -53,8 +53,7 @@ Following a strict hard cap of **2.1 billion** tokens, CORE adopts Bitcoin's abs
 
 ### Breakdown of Allocations
 
-![break-down-of-emissions](https://github.com/user-attachments/assets/5f3a0f99-85d7-465e-a8e6-141e1d207a02)
-
+![break-down-of-emissions](https://github.com/user-attachments/assets/12c25190-ae6e-4039-aed6-01c81ea6542f)
 
 ## Decentralization and Direction
 
