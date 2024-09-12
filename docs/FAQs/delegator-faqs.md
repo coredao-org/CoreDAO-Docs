@@ -8,7 +8,7 @@ sidebar_position: 2
 ---
 
 
-### 1. What is a delegator in Core Chain?
+### 1. What is a delegator on the Core blockchain?
 
 In the Core ecosystem, delegation is a fundamental mechanism that allows BTC miners and BTC and CORE token holders to participate actively in the network's security and governance without being validators themselves. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (BTC hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
 
