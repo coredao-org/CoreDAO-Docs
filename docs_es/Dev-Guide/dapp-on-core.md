@@ -1,31 +1,31 @@
 ---
-sidebar_label: Build dApp on Core
+sidebar_label: Construya dApp en Core
 hide_table_of_contents: false
 sidebar_position: 2
-description: Build a Full Stack dApp on Core Chain
+description: Cree una dApp de Fullstack en Core Chain
 ---
 
-# Building a dApp on Core
+# Construyendo dApp en Core
 
 ---
 
-Decentralized applications (dApps) use a blockchain or on-chain smart contracts to store and reference data, rather than relying on traditional centralized databases. A common, simple dApp structure generally consists of a React.js or Vue.js front-end using Web3.js or Ethers.js to interact with smart contracts deployed to an EVM-compatible blockchain.
+Las aplicaciones descentralizadas (dApps) utilizan una cadena de bloques o contratos inteligentes en cadena para almacenar y hacer referencia a datos, en lugar de depender de bases de datos centralizadas tradicionales. Una estructura de dApp simple y común generalmente consiste en una interfaz de usuario de React.js o Vue.js que utiliza Web3.js o Ethers.js para interactuar con contratos inteligentes implementados en una cadena de bloques compatible con EVM.
 
-## What Are We Building
+## ¿Qué estamos construyendo?
 
-In this tutorial, we'll develop a simple dApp using React.js and Ethers.js that stores data in a smart contract on the Core blockchain and displays it to users. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core#building-a-dapp-on-core) repository.
+En este tutorial, desarrollaremos una dApp simple usando React.js y Ethers.js que almacena datos en un contrato inteligente en Core blockchain y los muestra a los usuarios. El código completo de la dApp está disponible en GitHub en el [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core# building-a-dapp-on-core) repositorio.
 
-## Learning Takeaways
+## Conclusiones del aprendizaje
 
-This tutorial will help you gain knowledge on the following learning points:
+Este tutorial le ayudará a adquirir conocimientos sobre los siguientes puntos de aprendizaje:
 
-- MetaMask Wallet connectivity to Core Testnet;
-- Smart contract development and deployment on Core Testnet;
-- Front-end integration with the smart contract using Ethers.js library;
-- Read data from a smart contract;
-- Write data to a smart contract;
+- Conectividad de MetaMask Wallet a Core Testnet;
+- Desarrollo e implementación de contratos inteligentes en Core Testnet;
+- Integración front-end con el contrato inteligente utilizando la biblioteca Ethers.js;
+- Leer datos de un contrato inteligente;
+- Escribir datos en un contrato inteligente;
 
-## Software Prerequisites
+## Requisitos previos del software
 
 - [Git](https://git-scm.com/) v2.44.0
 - [Node.js](https://nodejs.org/en) v20.11.1
@@ -33,9 +33,9 @@ This tutorial will help you gain knowledge on the following learning points:
 - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#installation) v10.2.4
 - [MetaMask Web Wallet Extension](https://metamask.io/download/)
 
-## Setting up the development environment
+## Configurar el entorno de desarrollo
 
-1. Create a new directory for the project and navigate into it
+1. Cree un nuevo directorio para el proyecto y navegue hasta él.
 
 ```bash
 mkdir dapp-tutorial
@@ -50,7 +50,7 @@ npm install --save-dev hardhat
 npm install --save-dev chai @nomiclabs/hardhat-waffle
 ```
 
-3. Initialize Hardhat project by running the following command
+3. Inicialice el proyecto Hardhat ejecutando el siguiente comando
 
 ```bash
 npx hardhat
@@ -59,10 +59,10 @@ npx hardhat
 ![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)
 
 :::note
-As we will using Waffle for this project and make sure to select **No** for the option "_Do you want to install this sample project's dependencies with npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
+Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No** para la opción "_¿Desea instalar las dependencias de este proyecto de muestra con npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
 :::
 
-4. Once this project is initialized, you'll find the following project structure:
+4. Una vez que se inicializa este proyecto, encontrará la siguiente estructura de proyecto:
 
 ```bash
 dapp-tutorial.
@@ -72,33 +72,33 @@ dapp-tutorial.
 |   package.json
 |   README.md
 |
-+---contracts (For Solidity Smart Contracts)
++---contracts (Para Solidity Smart Contracts)
 |       Lock.sol
 |      
-+---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
++---ignition (Scripts en versiones anteriores, esta carpeta contiene archivos de configuración que especifican cómo se deben implementar los contratos inteligentes.)
 |   \---modules
 |           Lock.js
 |                
 +---node_modules
 |  
-+---test (For writing and Running Tests)
++---test (Para escribir y ejecutar pruebas)
 |       Lock.js      
 |      
 ```
 
-5. Install and configure MetaMask Chrome Extension to use with Core Testnet. Refer [here](./core-testnet-wallet-config.md) for a detailed guide.
+5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-testnet-wallet-config.md) para obtener una guía detallada.
 
-6. Create a secret.json file in the root folder and store the private key of your MetaMask wallet in it. Refer [here](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) for details on how to get MetaMask account's private key.
+6. Cree un archivo secret.json en la carpeta raíz y almacene en él la clave privada de su billetera MetaMask. Consulte [aquí](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) para obtener detalles sobre cómo obtener la clave privada de la cuenta MetaMask.
 
 ```json
 {"PrivateKey":"you private key, do not leak this file, do keep it absolutely safe"}
 ```
 
 :::caution
-Do not forget to add this file to the `.gitignore` file in the root folder of your project so that you don't accidentally check your private keys/secret phrases into a public repository. Make sure you keep this file in an absolutely safe place!
+No olvide agregar este archivo al archivo `.gitignore` en la carpeta raíz de su proyecto para no verificar accidentalmente sus claves privadas/frases secretas en un repositorio público. ¡Asegúrese de guardar este archivo en un lugar absolutamente seguro!
 :::
 
-7. Copy the following into your `hardhat.config.js` file
+7. Copie lo siguiente en su archivo `hardhat.config.js`
 
 ```js
 /**
@@ -152,10 +152,10 @@ module.exports = {
  
 ```
 
-## Writing Smart Contract
+## Redacción de contratos inteligentes
 
-1. Navigate to the `contracts` folder in the root directory of your project.
-2. Delete the `Lock.sol` file; create a new file `Storage.sol` and paste the following contents into it.
+1. Navegue a la carpeta `contratos` en el directorio raíz de su proyecto.
+2. Elimine el archivo `Lock.sol`; cree un nuevo archivo `Storage.sol` y pegue el siguiente contenido en él.
 
 ```javascript
 // SPDX-License-Identifier: GPL-3.0
@@ -193,11 +193,11 @@ contract Storage {
 }
 ```
 
-### Explanation
+### Explicación
 
-The `Storage` contract is a simple example that demonstrates how to store and retrieve a value using a Solidity smart contract. It consists of a state variable to hold the value and two functions to update and read this value. The `store` function allows any user to set the value, while the `retrieve` function allows any user to read the current value. This contract can be useful for understanding the basics of state variables and function visibility in Solidity. This Solidity smart contract, named `Storage`, is a simple contract that allows storing and retrieving a single `uint256` value. Here’s a detailed breakdown of its components and functionality:
+El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacenar y recuperar un valor usando un contrato inteligente de Solidity. Consiste en una variable de estado para contener el valor y dos funciones para actualizar y leer este valor. La función "almacenar" permite a cualquier usuario establecer el valor, mientras que la función "recuperar" permite a cualquier usuario leer el valor actual. Este contrato puede resultar útil para comprender los conceptos básicos de las variables de estado y la visibilidad de funciones en Solidity. Este contrato inteligente de Solidity, denominado "Almacenamiento", es un contrato simple que permite almacenar y recuperar un único valor "uint256". Aquí hay un desglose detallado de sus componentes y funcionalidad:
 
-#### Contract Components
+#### Componentes del contrato
 
 1. **State Variable**:
    - `number`: A `uint256` variable that is used to store the value.
