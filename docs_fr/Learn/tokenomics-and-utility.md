@@ -16,7 +16,7 @@ The tokenomics of CORE, the native utility and governance token of the Core bloc
 
 La tokenomics de CORE est conçue en mettant l'accent sur la durabilité à long terme et la décentralisation. Inspired by the sound monetary policy of Bitcoin and the need for a fair distribution of governance power, CORE tokens serve as the backbone of the Core ecosystem.
 
-![tokenomics](../../../../static/img/tokenomics-distribution.png)
+![tokenomics](https://github.com/user-attachments/assets/b30cf0e6-2282-4355-ab96-4f9579099122)
 
 Les tokens CORE sont répartis à travers plusieurs canaux pour équilibrer l'écosystème. Le diagramme suivant illustre la distribution des tokens CORE. La distribution totale des **2,1 milliards** de tokens CORE est la suivante :
 
@@ -46,6 +46,18 @@ Les tokens CORE remplissent plusieurs fonctions essentielles au sein du réseau 
 En suivant un plafond strict de **2,1 milliards** de tokens, CORE adopte le principe de rareté absolue de Bitcoin, offrant une résistance à l'inflation. Les récompenses des blocs CORE sont conçues pour être distribuées sur une période de **81-ans** afin d'inciter une participation durable au réseau.
 
 - **Ajustement Annuel des Récompenses:** Chaque année, les récompenses des blocs diminuent de 3,6%, prolongeant le calendrier des émissions et maintenant une pression déflationniste.
+
+### Cumulative CORE Emissions Monthly (First 6 Years)
+
+![6-years-emissions](https://github.com/user-attachments/assets/e6903e1d-b146-4b6f-982d-dd06e6a56cb8)
+
+### Cumulative CORE Emissions Yearly (81 Years)
+
+![81-years-emissions](https://github.com/user-attachments/assets/8caa5c7a-33ae-4c12-bc71-0512d490eb48)
+
+### Breakdown of Allocations
+
+![break-down-of-emissions](https://github.com/user-attachments/assets/5f3a0f99-85d7-465e-a8e6-141e1d207a02)
 
 ## Décentralisation et Orientation
 
