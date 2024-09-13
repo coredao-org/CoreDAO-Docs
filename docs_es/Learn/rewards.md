@@ -1,69 +1,69 @@
 ---
-sidebar_label: Rewards
+sidebar_label: Recompensas
 hide_table_of_contents: false
 sidebar_position: 2
-description: Rewards in the Core Ecosystem
+description: Recompensas en el ecosistema Core
 ---
 
-# Rewards in the Core Ecosystem
+# Recompensas en el ecosistema Core
 
 ---
 
-The Core ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins the Satoshi Plus consensus mechanism, ensuring network security, stakeholder engagement, and alignment of interests among all participants. The rewards system is fundamental in encouraging the community to partake actively in mining, staking, and governance, thereby enhancing the overall health and growth of the ecosystem.
+El ecosistema Core está diseñado para incentivar la participación y asegurar el compromiso de su comunidad a través de un sistema de recompensas bien estructurado. Este sistema sustenta el mecanismo de consenso Satoshi Plus, garantizando la seguridad de la red, la participación de las partes interesadas y la alineación de intereses entre todos los participantes. El sistema de recompensas es fundamental para alentar a la comunidad a participar activamente en la minería, la participación y la gobernanza, mejorando así la salud general y el crecimiento del ecosistema.
 
-## Types of Rewards
+## Tipos de recompensas
 
 ![rewards](../../../../static/img/validator/Reward-Distribution.png)
 
-### 1. Mining Rewards
+### 1. Recompensas mineras
 
-- **Description:** Mining rewards are provided to Bitcoin miners who contribute their hashing power to secure the Core blockchain. This process extends the traditional mining efforts on the Bitcoin blockchain to include support for Core blockchain, without requiring miners to divert resources from their Bitcoin mining activities.
-- **Mechanism:** Miners include specific metadata in the Bitcoin blocks they mine, indicating their support for Core blockchain. In return for their contribution, miners receive CORE tokens as supplemental rewards, on top of their regular Bitcoin mining rewards.
+- **Descripción:** Se otorgan recompensas mineras a los mineros de Bitcoin que contribuyen con su poder de hash para proteger la cadena de bloques Core. Este proceso amplía los esfuerzos de minería tradicionales en la cadena de bloques de Bitcoin para incluir soporte para la cadena de bloques Core, sin requerir que los mineros desvíen recursos de sus actividades de minería de Bitcoin.
+- **Mecanismo:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, lo que indica su compatibilidad con Core blockchain. A cambio de su contribución, los mineros reciben tokens CORE como recompensas complementarias, además de sus recompensas habituales por la minería de Bitcoin.
 
-### 2. Staking Rewards
+### 2. Recompensas de apuesta
 
-- **Description:** Staking rewards are distributed to Bitcoin and CORE token holders who stake and delegate their tokens with Validators on the Core network. This staking not only helps secure the network through the Delegated Proof of Stake (DPoS) component of the Satoshi Plus consensus but also enables token holders to participate in network governance.
-- **Mechanism:**  DPoS allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to vote and participate in the election of the validator set by delegating their holdings to their preferred validators. For Core token staking, the minimum staking requirement is 1 CORE token, allowing any CORE holders to stake onto the Core network. On the bitcoin-staking side, the present configuration requires a **minimum staking requirement of 0.01 Bitcoin** which is adjustable through a governance vote. Holders of both CORE token and Bitcoin can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/). The rewards earned by stakers are proportional to the amount of Bitcoin/CORE staked and the duration of the staking, incentivizing long-term holding and participation in the consensus process.
+- **Descripción:** Las recompensas de apuesta se distribuyen a los poseedores de tokens de Bitcoin y CORE que apuestan y delegan sus tokens con validadores en la red Core. Esta participación no solo ayuda a proteger la red a través del componente de prueba de participación delegada (DPoS) del consenso Satoshi Plus, sino que también permite a los poseedores de tokens participar en la gobernanza de la red.
+- **Mecanismo:** DPoS permite a los poseedores de tokens CORE y [Bitcoin](../../products/btc-stake/overview.md) votar y participar en la elección del validador establecido delegando sus tenencias a sus validadores preferidos. Para la apuesta de tokens Core, el requisito mínimo de apuesta es 1 token CORE, lo que permite a cualquier titular de CORE participar en la red Core. En lo que respecta a las apuestas de bitcoins, la configuración actual requiere un **requisito de apuesta mínima de 0,01 Bitcoin** que se puede ajustar mediante una votación de gobernanza. Los poseedores de tokens CORE y Bitcoin pueden delegar sus respectivos tokens a validadores de su elección a través del [sitio web de apuestas] oficial (https://stake.coredao.org/). Las recompensas obtenidas por los apostadores son proporcionales a la cantidad de Bitcoin/CORE apostada y la duración de la apuesta, lo que incentiva la tenencia y participación a largo plazo en el proceso de consenso.
 
-### 3. Validator Rewards
+### 3. Recompensas del validador
 
-- **Description:** Validators earn rewards for their role in processing transactions, creating new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating Validators for their efforts and operational costs.
-- **Mechanism:** Validators receive a combination of transaction fees and new CORE tokens minted through the blockchain's inflation policy. The amount of rewards a Validator receives is proportional to their stake and the delegated hash power from miners. There are two categories of validator rewards:
-  1. **Base rewards**, i.e. newly minted CORE tokens;
-  2. **Fees collected from transactions in each block**;
+- **Descripción:** Los validadores obtienen recompensas por su papel en el procesamiento de transacciones, la creación de nuevos bloques y el mantenimiento de la integridad de la cadena de bloques. Estas recompensas son fundamentales para compensar a los Validadores por sus esfuerzos y costos operativos.
+- **Mecanismo:** Los validadores reciben una combinación de tarifas de transacción y nuevos tokens CORE acuñados a través de la política de inflación de blockchain. La cantidad de recompensas que recibe un Validador es proporcional a su participación y al poder de hash delegado por los mineros. Hay dos categorías de recompensas del validador:
+  1. **Recompensas base**, es decir, tokens CORE recién acuñados;
+  2. **Tarifas cobradas por transacciones en cada bloque**;
 
-Base rewards are calculated and distributed when the last block of a round is mined. Currently, **90%** of the rewards go to the validators and **10%** of the rewards go to the `System Reward Contract`. Of the 90% paid to validators, some percentage is taken as a commission by the validator before they pay out their delegates. Each validator has an equal probability of producing blocks, so in the long run, all stable validators should get a similar portion of the reward.
+Las recompensas básicas se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, **90%** de las recompensas van a los validadores y **10%** de las recompensas van al "Contrato de recompensas del sistema". Del 90% pagado a los validadores, el validador toma un porcentaje como comisión antes de pagar a sus delegados. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, bitcoin stakers, and PoW delegators – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Validators can take as much or as little of the reward as they want, though they’re incentivized to be generous in order to attract more stake and hash power.
+Los validadores comparten recompensas con las entidades que les delegaron, incluidos los participantes de CORE, los participantes de bitcoin y los delegados de PoW, pero deciden cuánto devolver al decidir cuánto ellos (los validadores) eligen quedarse para sí mismos. Los validadores pueden recibir tanta o tan poca recompensa como quieran, aunque se les incentiva a ser generosos para atraer más participación y poder de hash.
 
-After the validators take their fees, the protocol uses this function to determine how the remaining rewards are split between CORE stakers, Bitcoin stakers, and hash power delegators. Reward distribution is calculated based on the following formula:
+Después de que los validadores cobran sus tarifas, el protocolo utiliza esta función para determinar cómo se dividen las recompensas restantes entre los participantes de CORE, los participantes de Bitcoin y los delegados de poder de hash. La distribución de recompensas se calcula según la siguiente fórmula:
 
-### Hash Power Delegators (Miners & Mining Pools)
+### Delegadores de poder hash (mineros y grupos de minería)
 
 $$
     rH = \frac{rHp}{tHp} * \frac{m}{S} * R
 $$
 
-### CORE Stakers
+### Apostadores  de Core
 
 $$
     rS = \frac{rSp}{tSp + tBp * n} * \frac{(1-m)}{S} * R
 $$
 
-### Bitcoin Stakers
+### Apostadores de Bitcoin
 
 $$
     rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S * R}
 $$
 
-Where:
+donde:
 
-- $rH$ is the rewards received by the validator because of the hash power delegated to it (DPoW)
-- $rS$ is the rewards received by the validator because of the CORE delegated to it (DPoS)
-- $rB$ is validator rewards attributed to Bitcoin staking
-- $R$ is the overall rewards attributed to all delegators
+- $rH$ son las recompensas recibidas por el validador debido al poder hash delegado en él (DPoW)
+- $rS$ son las recompensas recibidas por el validador debido al CORE que se le ha delegado (DPoS)
+- $rB$ son recompensas del validador atribuidas a la apuesta de Bitcoin
+- $R$ son las recompensas generales atribuidas a todos los delegados.
 
-For completeness, here are three other ratios of interest:
+Para completar, aquí hay otras tres proporciones de interés:
 
 $$
     rHu = \frac{rH}{rHp}
@@ -77,24 +77,24 @@ $$
     rBu = \frac{rB}{rBp}
 $$
 
-Where:
+Donde:
 
-- $rHu$ is the validator hash power rewards per unit;
-- $rSu$ is the CORE token staking rewards per unit;
-- $rBu$ is the Bitcoin staking rewards per unit;
+- $rHu$ son las recompensas del poder hash del validador por unidad;
+- $rSu$ son las recompensas de apuesta de tokens CORE por unidad;
+- $rBu$ son las recompensas de apuesta de Bitcoin por unidad;
 
-## Reward Split
+## División de recompensa
 
-These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated staked CORE and Bitcoin. For their part, delegators will try to optimize their own rewards by choosing validators with lower amounts of delegated hash power and stake. To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations.
+Estas funciones de división de recompensas están diseñadas para crear un mercado activo de recompensas y al mismo tiempo fomentar la competencia entre el conjunto de validadores tanto para el poder de hash delegado como para el CORE y Bitcoin delegados. Por su parte, los delegados intentarán optimizar sus propias recompensas eligiendo validadores con menores cantidades de poder de hash delegado y participación. Para maximizar sus recompensas, los delegados buscarán validadores que sean generosos en sus pagos, pero que tampoco tengan una cantidad sustancial de tokens CORE delegados o PoW delegados. Cuanto menos haya apostado un validador determinado, mayor será la contribución del delegador. Si un delegador agrega un token CORE a un validador que solo tiene un token, representa el 50% de la delegación total de ese validador. Si delega a un validador con 99 tokens CORE, son solo el 1% de la delegación total de ese validador. Dado que los pagos se determinan en parte en función del porcentaje de la participación total que representa cada delegador, se les incentivará a intentar encontrar validadores con delegaciones pequeñas.
 
-### 4. Relayer and Verifier Rewards
+### 4. Recompensas de retransmisor y verificador
 
-In the Core ecosystem, the base rewards are calculated and distributed when the last block of a round is mined, with **90%** going to the validators and **10%** to the System Rewards Contract. The System Reward Contract accumulates rewards to remunerate relayers and verifiers. As things stand, there is a cap of **10 million** total CORE tokens in the System Reward Contract. Any rewards in excess of this amount are burned.
+En el ecosistema Core, las recompensas base se calculan y distribuyen cuando se extrae el último bloque de una ronda, con **90%** para los validadores y **10%** para el contrato de recompensas del sistema. El Contrato de Recompensa del Sistema acumula recompensas para remunerar a los retransmisores y verificadores. Tal como están las cosas, hay un límite de **10 millones** de tokens CORE en total en el contrato de recompensa del sistema. Cualquier recompensa que supere esta cantidad se quema.
 
-Relayers are responsible for communicating the Bitcoin block headers to the Core network. They earn a portion of the base system rewards and transaction fees for this cross-chain communications work. Relayer rewards are distributed in batches, every 100 Bitcoin blocks. Relayers claim their rewards periodically.
+Los retransmisores son responsables de comunicar los encabezados de los bloques de Bitcoin a la red central. Obtienen una parte de las recompensas del sistema base y las tarifas de transacción por este trabajo de comunicaciones entre cadenas. Las recompensas del repetidor se distribuyen en lotes, cada 100 bloques de Bitcoin. Los retransmisores reclaman sus recompensas periódicamente.
 
-Verifiers in the Core ecosytem are responsible for monitoring the behavior of validators and report them if they engage in double signing or other malicious activity. When successful, rewards are paid out immediately from the System Rewards Contract, in the same transaction.
+Los verificadores en el ecosistema central son responsables de monitorear el comportamiento de los validadores e informarles si participan en doble firma u otra actividad maliciosa. Cuando tiene éxito, las recompensas se pagan inmediatamente desde el Contrato de recompensas del sistema, en la misma transacción.
 
 ## Conclusion
 
-The rewards in the Core ecosystem play a crucial role in maintaining the security, vitality, and decentralization of the network. By aligning the incentives of various participants through a comprehensive and adaptable rewards system, Core ensures ongoing engagement and contributes to the sustained growth and stability of the platform. This structured approach to incentivization is foundational to the success of Core as a leading platform in the Bitcoin DeFi landscape.
+Las recompensas en el ecosistema Core juegan un papel crucial en el mantenimiento de la seguridad, vitalidad y descentralización de la red. Al alinear los incentivos de varios participantes a través de un sistema de recompensas integral y adaptable, Core garantiza un compromiso continuo y contribuye al crecimiento sostenido y la estabilidad de la plataforma. Este enfoque estructurado de incentivos es fundamental para el éxito de Core como plataforma líder en el panorama Bitcoin DeFi.
