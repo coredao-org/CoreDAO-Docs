@@ -1,143 +1,143 @@
 ---
-sidebar_label: Staking BTC on Core
+sidebar_label: Apostar BTC en el Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Non-Custodial BTC Staking
+# Apuesta BTC sin custodia
 
-This technical guide is designed to walk you through the process of staking your Bitcoin (BTC) on the Core blockchain to earn CORE token rewards. With Non-Custodial BTC Staking, you can earn passive yield in CORE while retaining ownership of your Bitcoin assets. Let's dive into how it works and how you can start staking today.
+Esta guía técnica está diseñada para guiarlo a través del proceso de apostar su Bitcoin (BTC) en la cadena de bloques Core para ganar recompensas en tokens CORE. Con la participación en BTC sin custodia, puede obtener rendimiento pasivo en CORE mientras conserva la propiedad de sus activos de Bitcoin. Profundicemos en cómo funciona y cómo puedes empezar a apostar hoy.
 
-## Prerequisites
+## Requisitos previos
 
-The following must be satisfied prior in order to complete this guide:
+Se debe cumplir lo siguiente antes para poder completar esta guía:
 
-1. **Xverse and/or Unisat Wallet(s):** You will need to add to either [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1) and/or [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo) wallet(s) via Chrome browser extension, to participate in the staking process. (_Must use a desktop, mobile and hardware wallets are not supported at this time_)
+1. **Xverse y/o Unisat Wallet(s):** Deberá agregar a [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser =1) y/o billetera(s) [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo) a través de la extensión del navegador Chrome, para participar en el proceso de participación. (_Debe utilizar una computadora de escritorio; las billeteras móviles y de hardware no son compatibles en este momento_)
 
-2. **Core Wallet Address for Rewards:** Prepare your Core wallet address where you will receive Core token rewards for staking your BTC. If you do not have a Core wallet address, you can create one easily by connecting to MetaMask.
+2. **Dirección de Core Wallet para recompensas:** Prepare la dirección de su Core Wallet donde recibirá recompensas de tokens Core por apostar su BTC. Si no tiene una dirección de billetera Core, puede crear una fácilmente conectándose a MetaMask.
 
-**1. Adding the Core network to MetaMask via the Core Explorer:**
+**1. Agregar la red Core a MetaMask a través de Core Explorer:**
 
-- Go to [coredao.org](http://coredao.org) and scroll all the way down on the page
+- Vaya a [coredao.org](http://coredao.org) y desplácese hasta el final de la página
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-1.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-1.avif)
 
-- Click the ‘Add Core Network’ button
-- Approve in your MetaMask
+- Haga clic en el botón "Agregar Core Network"
+- Aprobar en tu MetaMask
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-2.png)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-2.png)
 
-2. Alternatively, you can use this guide: [Add Core to MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce) for a more detailed step by step guideline for manually filling out the network information.
+2. Alternativamente, puede usar esta guía: [Agregar Core a MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce) para obtener una guía paso a paso más detallada para completar manualmente la información de la red.
 
-## Before you Start Staking
+## Antes de comenzar a apostar
 
-Let's clarify the staking mechanism, so you know what to expect going into Non-Custodial BTC Staking.
+Aclaremos el mecanismo de apuesta, para que sepa qué esperar al realizar la apuesta de BTC sin custodia.
 
-1. **Minimum of 0.01 BTC + Gas Fee**
+1. **Mínimo de 0,01 BTC + tarifa de gas**
 
-   - **Why is this necessary:** To ensure a smooth staking experience, you need to have a minimum of **0.01 BTC** available along with the necessary gas fee required for executing transactions on the Bitcoin network. Gas fees cover the cost of processing transactions on the blockchain. Additionally, we recommend having at least **0.05 BTC** if staking for less than **1 month**. This buffer accounts for potential network congestion, where transaction gas prices may exceed the earned staking reward.
+   - **Por qué es necesario:** Para garantizar una experiencia de apuesta fluida, debe tener un mínimo de **0,01 BTC** disponible junto con la tarifa de gas necesaria para ejecutar transacciones en la red Bitcoin. Las tarifas del gas cubren el costo de procesar transacciones en blockchain. Además, recomendamos tener al menos **0,05 BTC** si vas a apostar durante menos de **1 mes**. Este colchón tiene en cuenta la posible congestión de la red, donde los precios de las transacciones del gas pueden exceder la recompensa de apuesta obtenida.
 
-2. **Understanding Staking Address Differences**
+2. **Comprensión de las diferencias en las direcciones de apuesta**
 
-   - **What's happening:** You may notice that the staking address provided differs from your original Bitcoin address.
-   - **What it means:** The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoin remains safely stored in the staking address controlled by your private key, unaffected by staking. We’re actively working with wallet partners to support this display of your assets in a timely manner.
-   - You can view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/) is an option we recommend. We're actively working to make staked assets visible in the wallet.
+   - **Qué está pasando:** Es posible que notes que la dirección de participación proporcionada difiere de tu dirección de Bitcoin original.
+   - **Qué significa:** La dirección de participación se deriva de la clave privada maestra de su billetera, lo que garantiza su control y seguridad sobre sus activos. Su Bitcoin permanece almacenado de forma segura en la dirección de apuesta controlada por su clave privada, sin verse afectado por la apuesta. Estamos trabajando activamente con socios de billetera para respaldar esta visualización de sus activos de manera oportuna.
+   - Puede ver sus fondos apostados buscando la dirección de depósito en un explorador de Bitcoin. [Mempool.space](https://mempool.space/) es una opción que recomendamos. Estamos trabajando activamente para que los activos apostados sean visibles en la billetera.
 
-3. **Considerations for Locking Periods**
+3. **Consideraciones para los períodos de bloqueo**
 
-   - **Important reminder:** Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
-   - **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+   - **Recordatorio importante:** Una vez que bloquees tu Bitcoin para apostar, será inaccesible hasta que concluya el período de apuesta.
+   - **Elegir sabiamente:** Le recomendamos seleccionar cuidadosamente su período de bloqueo, teniendo en cuenta sus objetivos de inversión y tolerancia al riesgo. Comenzar con períodos de bloqueo más cortos puede ayudarle a familiarizarse con el proceso antes de comprometerse con duraciones más largas.
 
-   These prompts aim to provide clarity and confidence as you embark on your Non-Custodial BTC Staking journey. Your understanding and preparedness are key to a successful staking experience. Now, let's guide you through the step-by-step process of staking your Bitcoin on the Core blockchain and earning Core token rewards.
+   Estas indicaciones tienen como objetivo brindar claridad y confianza a medida que se embarca en su viaje de apuesta BTC sin custodia. Su comprensión y preparación son clave para una experiencia de apuesta exitosa. Ahora, vamos a guiarlo a través del proceso paso a paso para apostar su Bitcoin en la cadena de bloques Core y obtener recompensas de tokens Core.
 
-## How Non-custodial BTC Staking Works
+## Cómo funciona la participación en BTC sin custodia
 
-### Overview of the Staking Process
+### Descripción general del proceso de apuesta
 
-Non-Custodial BTC staking introduces a secure and decentralized method for Bitcoin holders to earn rewards. By locking your Bitcoin within the original network through a time-bound mechanism, you can actively participate in the Core blockchain's Consensus mechanism while staking. Here are the steps involved in this process.
+La apuesta de BTC sin custodia introduce un método seguro y descentralizado para que los poseedores de Bitcoin obtengan recompensas. Al bloquear su Bitcoin dentro de la red original a través de un mecanismo de duración determinada, puede participar activamente en el mecanismo de consenso de la cadena de bloques central mientras realiza apuestas. Estos son los pasos involucrados en este proceso.
 
-1. **Initiate Staking:** Start by accessing the staking platform using either the [command line interface for technical users](https://github.com/coredao-org/btc-staking-tool)  or the web-based frontend for general users [https://stake.coredao.org](https://stake.coredao.org)
-2. **Stake BTC with Time-Lock:** Stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, ensuring that your BTC remains locked until the specified period ends. The minimum staking period is **10 days**.
-3. **Vote for Validators:** Delegate your staked BTC to the chosen validator on the Core blockchain.
-4. **Connect Core Chain’s wallet for rewards:** Verify your Core address in the return field, where you'll receive Core token rewards.
-5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the [staking site](https://stake.coredao.org).
-6. **Redeem BTC:** Once the staking lock time expires, the staked BTC will remain idle in the staking address until redeemed by the user.
+1. **Iniciar apuesta:** Comience accediendo a la plataforma de apuesta utilizando la [interfaz de línea de comando para usuarios técnicos](https://github.com/coredao-org/btc-smaking-tool) o la interfaz web para usuarios generales [https://stake.coredao.org](https://stake.coredao.org)
+2. **Apuesta BTC con bloqueo de tiempo:** Apuesta tu Bitcoin enviando una transacción en la red Bitcoin con un parámetro de bloqueo de tiempo, asegurando que tu BTC permanezca bloqueado hasta que finalice el período especificado. El período mínimo de apuesta es de **10 días**.
+3. **Vote por los validadores:** Delegue su BTC apostado al validador elegido en la cadena de bloques Core.
+4. **Conecte la billetera de Core Chain para obtener recompensas:** Verifique su dirección de Core en el campo de devolución, donde recibirá recompensas de tokens de Core.
+5. **Reclamación de recompensas:** Las recompensas de tokens principales aparecerán cuando los usuarios conecten su billetera y se podrán reclamar diariamente. Las recompensas de tokens principales aparecerán en el [sitio de apuestas] (https://stake.coredao.org).
+6. **Canjear BTC:** Una vez que expire el tiempo de bloqueo de apuesta, el BTC apostado permanecerá inactivo en la dirección de apuesta hasta que el usuario lo canjee.
 
-## Non-Custodial BTC Staking Walkthrough
+## Tutorial sobre la apuesta de BTC sin custodia
 
-To begin staking your Bitcoin on the Core blockchain and earn Core token rewards, follow these steps:
+Para comenzar a apostar su Bitcoin en la cadena de bloques Core y ganar recompensas de tokens Core, siga estos pasos:
 
-### Connect Your Wallet
+### Conecte su billetera
 
-Connecting your wallet is the first step towards accessing the staking platform and initiating the staking process. This will enable you to interact with the Core blockchain and participate in Non-Custodial BTC Staking.
+Conectar su billetera es el primer paso para acceder a la plataforma de apuestas e iniciar el proceso de apuestas. Esto le permitirá interactuar con la cadena de bloques Core y participar en Stake BTC sin custodia.
 
-1. Visit [https://stake.coredao.org](https://stake.coredao.org)
+1. Visite [https://stake.coredao.org](https://stake.coredao.org)
 
-2. Once on the website, locate and click on the "**Connect Wallet**" button.
+2. Una vez en el sitio web, ubique y haga clic en el botón "**Connect Wallet**".
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-3.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-3.avif)
 
-3. **Choose an available wallet**
+3. **Elija una billetera disponible**
 
-   - If you do not yet have a wallet, refer to **[Core Wallet for Rewards](#prerequisites)** in the prerequisite section above.
+   - Si aún no tiene una billetera, consulte **[Core Wallet for Rewards](#prerequisitos)** en la sección de requisitos previos anterior.
 
-4. **Choose a validator to delegate BTC**
+4. **Elija un validador para delegar BTC**
 
-Here, we will be selecting a validator that we’d like to delegate our BTC to. In the example shown, we will be choosing Validator 4, but you’re free to choose any active validator.
-
-```
-1. Click name of chosen validator to select
-```
-
-![native-staking-guide](../../../../static/img/native-staking/native-staking-4.avif)
+Aquí, seleccionaremos un validador al que nos gustaría delegar nuestro BTC. En el ejemplo que se muestra, elegiremos el Validador 4, pero usted es libre de elegir cualquier validador activo.
 
 ```
-2. Hover over Delegate, and then select ‘BTC’ on the dropdown
+1. Haga clic en el nombre del validador elegido para seleccionar
 ```
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-5.avif)
-
-### Connect BTC wallet
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-4.avif)
 
 ```
-1. Upon selecting a validator to delegate BTC in the previous step, you will be prompted to connect a BTC wallet
+2. Pase el cursor sobre Delegado y luego seleccione "BTC" en el menú desplegable
+```
+
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-5.avif)
+
+### Conectar billetera BTC
+
+```
+1. Al seleccionar un validador para delegar BTC en el paso anterior, se le pedirá que conecte una billetera BTC
 ```
 
 :::info
-In this example, we demonstrate using Unisat Wallet, but it's compatible with Xverse Wallet as well. Ensure you have either of these two installed.
+En este ejemplo, demostramos el uso de Unisat Wallet, pero también es compatible con Xverse Wallet. Asegúrese de tener cualquiera de estos dos instalados.
 :::
 
 ```
-2. On the Connect wallet pop up screen, select one of the available wallets.
+2. En la pantalla emergente Connect wallet, seleccione una de las billeteras disponibles.
 ```
 
-- For developers and more advanced users who are interested in using the Stake Tool, refer[ here.](https://github.com/coredao-org/btc-staking-tool?tab=readme-ov-file)
+- Para desarrolladores y usuarios más avanzados que estén interesados ​​en utilizar la herramienta Stake, consulte [aquí](https://github.com/coredao-org/btc-s Taking-tool?tab=readme-ov-file)
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-6.png)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-6.png)
 
 ```
-3. On the following screen, click **Connect**
+3. En la siguiente pantalla, haga clic en **Conectar**
 ```
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-7.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-7.avif)
 
-### Delegate BTC
+### Delegado BTC
 
-While initiating the delegation process, it's important to understand and specify several key parameters:
+Al iniciar el proceso de delegación, es importante comprender y especificar varios parámetros clave:
 
-1. **Specifying the amount of BTC you’d like to delegate**
+1. **Especificando la cantidad de BTC que deseas delegar**
 
-- The minimum amount to delegate is **0.01 BTC**
-- In our example, we will be delegating **0.05 BTC** which satisfies this requirement
+- La cantidad mínima para delegar es **0.01 BTC**
+- En nuestro ejemplo, delegaremos **0.05 BTC** que satisface este requisito
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-8.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-8.avif)
 
-2. **Setting the lock time** – this determines when your staked BTC will be unlocked and available for use again on your local device.
+2. **Configuración del tiempo de bloqueo**: esto determina cuándo se desbloqueará el BTC apostado y estará disponible para su uso nuevamente en su dispositivo local.
 
-- Select inside lock time box to input values
-- The default lock time is set to a month in advance. The minimum lock time is **10 days.**
-- In our example, we’ve selected a date 10 days in advance (April 24)
-- Click ‘**OK**’ to proceed
+- Seleccione el cuadro de tiempo de bloqueo interno para ingresar valores
+- El tiempo de bloqueo predeterminado se establece con un mes de anticipación. El tiempo mínimo de bloqueo es **10 días.**
+- En nuestro ejemplo, hemos seleccionado una fecha con 10 días de antelación (24 de abril)
+- Haga clic en '**Aceptar**' para continuar
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-9.avif)
 
