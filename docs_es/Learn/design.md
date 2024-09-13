@@ -1,111 +1,159 @@
 ---
-sidebar_label: Design
+sidebar_label: Diseño
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Design of coreBTC
+# Diseño de participación de Bitcoin sin custodia
 
-The coreBTC within the Core blockchain represents a significant innovation in the realm of blockchain technology, specifically focusing on enhancing Bitcoin's utility within decentralized finance (DeFi). This synthetic representation of Bitcoin on the Core blockchain enables seamless interaction with DeFi applications while maintaining the critical properties of Bitcoin.
+---
 
-## Key Components and Their Roles
+## Fondo
 
-**1. Lockers:**
+La metodología para integrar las apuestas de bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo `OP_CHECKLOCKTIMEVERIFY` (CLTV) es un código de operación específico utilizado en el lenguaje de programación de Bitcoin que permite crear condiciones basadas en el tiempo o la altura del bloque antes de que se puedan gastar bitcoins desde el resultado de una transacción. Esto proporciona una manera de crear salidas con bloqueo de tiempo, lo que significa que no se pueden gastar hasta que se cumpla una determinada condición relacionada con el tiempo o la altura del bloque.
 
-- **Role:** Lockers are responsible for holding the actual Bitcoin that backs the coreBTC. Users send their Bitcoin to a Locker's address to initiate the wrapping process. Anyone can register as a Locker on Core by locking up collateral.
-- **Security:** Lockers must provide a significant amount of collateral in CORE tokens to uphold the security of the Bitcoin they hold. This collateral can be liquidated to cover losses in case of malfeasance, providing a strong disincentive against fraudulent activities.
+![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(5\).png)
 
-**2. Collateral:**
-\- The particular assets and required collateral ratio are network parameters determined by Core DAO, and the collateral deposited by Lockers means that locked bitcoin should always be backed by assets of a higher value. If there's a change in the price of bitcoin relative to the value of the collateral, the Locker must adjust its collateral or face potential liquidation.
-\- Collateral can be slashed if Lockers transfer bitcoin without authorization or do not promptly return bitcoin when coreBTC is burned.
-\- Lockers can unregister and retrieve their collateral at any time, as long as they have no residual bitcoin locked and have no unfulfilled unlocking requests. In exchange for the services provided, Lockers earn small fees.
+## Estructura de transacción
 
-**2. Relayers:**
+### Estructura de transacción
 
-- **Role:** Relayers monitor the Bitcoin blockchain for locking transactions directed at Lockers and validate these transactions. They play a crucial role in verifying that the locked Bitcoin corresponds accurately to the minted coreBTC on the Core blockchain.
-- **Functionality:** Upon detecting a valid locking transaction, Relayers submit proof to Core to mint the corresponding amount of coreBTC, bridging Bitcoin to the Core blockchain ecosystem securely.
+Una transacción de participación de Bitcoin debe tener dos o tres resultados, que son
 
-**3. coreBTC Smart Contract:**
+- Salida tipo `P2SH/P2WSH`, con secuencia de comandos de canje habilitada para bloqueo de tiempo
+- Salida tipo `OP_RETURN`, con información de apuesta central
+- v
 
-- **Role:** The coreBTC smart contract on Core manages the minting and burning of coreBTC tokens. It interacts with Relayers and Lockers to incentivize all operations to adhere to the protocol rules.
-- **Security Mechanisms:** The smart contract includes mechanisms for verifying transaction proofs submitted by Relayers, managing collateral posted by Lockers, and executing the minting and redemption processes of coreBTC.
+Tenga en cuenta que **no** hay restricciones en las entradas.
 
-**4. Liquidators:**
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(1\).png)
 
-- **Role:** In the event of price fluctuations or Locker misbehavior, Liquidators are responsible for upholding the safety and backing of the coreBTC by enforcing collateral requirements.
-- **Function:** Liquidators can force the liquidation of a Locker's collateral if the value of the locked Bitcoin falls or if the Locker fails to maintain the required collateral ratio. This helps maintain the integrity and backing of the coreBTC.
+### Transacción de retiro
 
-\*\*5. Guardians: \*\*
+Cuando finaliza el bloqueo de tiempo, el UTXO bloqueado se puede gastar usando el script de canje
 
-- **Role:** The activity of Lockers is monitored by Guardians, who check for any misbehavior and apply slashing as appropriate.
-- **Function:** A Guardian can trigger Core smart contract to slash some of the Locker’s collateral. In this event, a portion of the Locker's collateral, equivalent to the value of the user's burned coreBTC, is transferred to the user. Additionally, the slasher is rewarded with a percentage of this collateral value for their action.
+![btc-stake-retiro-tx](../../../../static/img/btc-stake/tx-design/stake-tx-design%20\(2\).png)
 
-## How coreBTC Works
+## Diseño de script
 
-coreBTC is an innovative synthetic asset developed within the Core blockchain ecosystem that allows Bitcoin to be used seamlessly in decentralized finance (DeFi) applications on the Core blockchain. The process begins when a user locks their Bitcoin with a designated custodian known as a **Locker**, who holds the actual Bitcoin and provides a significant amount of collateral to secure the transaction. This Bitcoin is then represented on Core as coreBTC, maintaining a strict **1:1 peg** to uphold value consistency between the locked Bitcoin and the issued coreBTC.
+### Salida P2SH/P2WSH
 
-Relayers play a crucial role in monitoring these Bitcoin transactions and validating them on Core. Once validated, the transaction details are sent to the coreBTC smart contract, which mints an equivalent amount of coreBTC and credits it to the user's wallet. This coreBTC can then be used across various DeFi platforms within the Core ecosystem, enabling Bitcoin holders to engage in lending, borrowing, trading, and other financial activities without actually spending or risking their original Bitcoin holdings.
+- Core admite salidas `P2SH` y `P2WSH` para apostar Bitcoin.
 
-Redemption of coreBTC for the original Bitcoin involves the user initiating a burn process where the coreBTC is destroyed, and the corresponding Bitcoin is unlocked and returned from the Locker to the user’s specified address. The entire system is safeguarded by rigorous collateral management and liquidation protocols, so Lockers maintain sufficient collateral against the Bitcoin they hold. Additionally, slashing mechanisms are in place to penalize any fraudulent activities by Lockers, protecting the integrity and trustworthiness of coreBTC within the Core ecosystem. This design not only enhances the liquidity and utility of Bitcoin but also maintains its core properties of decentralization and security.
+- La construcción de la salida tipo `P2SH` es la siguiente
 
-## Minting and Pegging In coreBTC
+  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
-Locking Bitcoin and pegging it into coreBTC are crucial for maintaining the integrity and trustworthiness of the synthetic asset:
+- La construcción de la salida tipo `P2WSH` es la siguiente
 
-- **Secure Storage:** Locked Bitcoin is stored in addresses controlled by Lockers, who are incentivized to maintain security and transparency due to their collateral obligations.
-- **Collateralization:** The collateral provided by Lockers underpins the pegging process, so that for every coreBTC in circulation, there is an equivalent amount of Bitcoin securely held by a Locker.
+  - `OP_0 <SHA256(RedeemScript)>`
 
-Minting of coreBTC begins when a user locks their Bitcoin into the system. The user sends Bitcoin to a secure address controlled by a designated entity known as a Locker. This action triggers the minting process on the Core blockchain.
+### Script de canje
 
-- **Lockers:** These are nodes within the Core network responsible for holding the actual Bitcoin. Each Locker must deposit a significant amount of collateral, usually in CORE tokens, to cover potential defaults or fraudulent activities.
-- **Relayers:** After the Bitcoin is sent to the Locker's address, Relayers monitor these transactions. Once a transaction is confirmed, Relayers validate it and submit proof to the coreBTC smart contract on the Core blockchain.
-- **Smart Contract Execution:** Upon receiving the necessary proof from Relayers, the coreBTC smart contract calls the bitcoin Light Client to verify the authenticity and finality of the relevant bitcoin transaction, and then mints an equivalent amount of coreBTC. This minted coreBTC is then issued to the user's wallet on the Core blockchain, reflecting a 1:1 peg with the locked Bitcoin.
+El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuación se muestran algunos tipos comunes.
 
-![pegging-in-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
+- Cuando se utiliza una clave pública `<CLTV timelock> OP_CLTV OP_DROP <pubKey Hash> OP_CHECKSIG` y el script de desbloqueo correspondiente en la transacción de retiro es `<sig> <pubKey>`
 
-## Redemption and Pegging Out coreBTC
+- Cuando se utiliza un hash de clave pública (más recomendado) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` y el script de desbloqueo correspondiente en la transacción de retiro es `<sig> <pubKey> <RedeepScript>`
 
-Redemption, or pegging out, involves reversing the minting process:
+- Cuando se utiliza la dirección de firma múltiple `<pubKeyN> OP_CLTV OP_DROP M <sig1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
 
-- **Burning coreBTC:** Users initiate the redemption process by sending a request to the coreBTC smart contract to burn a specified amount of coreBTC, indicating the Bitcoin address where they wish to receive their Bitcoin.
-- **Unlocking Bitcoin:** Upon successful burning of the coreBTC, the smart contract signals the Locker to release the corresponding amount of Bitcoin. The Locker then sends this Bitcoin to the user's specified address, completing the pegging out process. Once the bitcoin transaction is confirmed, the Locker transmits it to Core where it is finally verified by the bitcoin Light Client
+> **Nota**
+> Hay _requisitos mínimos_ tanto en **cantidad** como en **duración** para que la apuesta sea elegible en Core. Un usuario debe apostar al menos **0,01 Bitcoin** (menos tarifas de transacción) durante al menos **10 días** (`marca de tiempo CLTV - marca de tiempo de confirmación de transacción > 10 días`).
 
-![pegging-out-coreBTC](../../../../static/img/coreBTC/pegout-corebtc.png)
+## OP_RETURN Salida
 
-## Liquidation Process
+La salida `OP_RETURN` debe contener toda la información de apuestas en orden y estar compuesta en el siguiente formato:
 
-The liquidation process is designed to protect the system from defaults and safeguard that the backing of coreBTC remains secure:
+- **`OP_RETURN`:** identificador `0x6a`
+- **`LENGTH`:** que representa la longitud total de bytes después del código de operación `OP_RETURN`. _Tenga en cuenta que todos los datos deben enviarse con sus bytes de tamaño apropiado_.
+- **`Identificador Satoshi Plus`:** (**SAT+**) 4 bytes
+- **`Version`:** (**0x01**) 1 byte
+- **`Chain ID`:** (1115 for Core Testnet and 1116 for Core Mainnet) 2 bytes
+- **`Delegator`:** La dirección principal para recibir recompensas, 20 bytes
+- **`Validador`:** La dirección del validador principal a la que apostar, 20 bytes
+- **`Tarifa`:** Tarifa por retransmisor, 1 byte, rango [0,255], medido en CORE
+- (_Opcional_) **`script de canje`**
+- (_Opcional_) **`Timelock`:** 4 bytes
 
-- **Monitoring Collateral Ratios:** Liquidators continuously monitor the value of the Bitcoin held by Lockers relative to the issued coreBTC.
-- **Triggering Liquidation:** If the market value of the locked Bitcoin drops significantly, or if a Locker fails to maintain the required collateral ratio, liquidators may initiate the sale of the Locker's collateral to cover potential losses.
-- **Mechanism for Liquidation:** Liquidation is conducted through on Core, where the insufficient collateral is sold off to maintain the necessary backing for coreBTC. During the process, the Liquidators use coreBTC to buy the collateralized CORE tokens at a discounted price, and the coreBTC is burned. This pushes the collateral ratio up and restores the Locker to a healthy condition. When the coreBTC is burned its supply is reduced and it becomes more scarce, thereby freeing the Locker to take ownership of a quantity of the underlying bitcoin equivalent to the value of the eliminated coreBTC. The Locker is then rebalanced in accordance with the collateral requirements; if the original user who sent bitcoin to that Locker’s address wants their bitcoin  back, they can choose any Locker to get it from. Redemption of coreBTC for bitcoin occurs at a systemic level, it’s not a relationship between one user and one Locker.
+#### Puntos clave
 
-![liquidation](../../../../static/img/coreBTC/liquidation-process.png)
+- Cualquier byte que pueda traducirse a un número debe usar `OP_number` (`{0}` debe usar `OP_0` en lugar de `0x0100`, `{16}` debe usar `OP_16` en lugar de `0x0110`)
+- Cualquier byte con longitudes menores que `0x4c (76)` se envía con 1 byte igual al tamaño `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
+- Cualquier byte mayor o igual a `0x4c` se envía usando `0x4c` (es decir, `OP_PUSHDATA`) seguido de la longitud seguida de los datos `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+- Cualquier byte mayor o igual a `0x4c` se envía usando `0x4c` (es decir, `OP_PUSHDATA`) seguido de la longitud seguida de los datos `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+- Cualquier byte con una longitud mayor que `65535` (`0xffff`) usa `0x4e` (`OP_PUSHDATA4`)
 
-## Slashing Process
+Debe estar disponible `RedeemScript` o `Timelock`; el propósito es permitir que el retransmisor obtenga `RedeemScript` y envíe transacciones en Core. Si se proporciona un `RedeemScript`, el retransmisor lo utilizará directamente. Si se proporciona un `RedeemScript`, el retransmisor lo utilizará directamente. Puede encontrar más información sobre la función del retransmisor en la [sección siguiente](#role-of-relayers).
 
-On the Core blockchain, the concept of slashing is crucial to maintaining the integrity and security of coreBTC transactions. Slashing is a punitive measure used to penalize Lockers for misconduct or failure to adhere to the established protocols. There are two primary scenarios where slashing may occur, each designed to protect the system and its users from potential fraud and malfeasance:
+## Ejemplos de transacciones
 
-### 1. **Unauthorized Movement of Locked Bitcoin**
+### Transacción de apuesta
 
-In this case, slashing occurs if a Locker moves locked Bitcoin without receiving a corresponding burn request from a coreBTC holder. This scenario is considered a serious breach as it directly threatens the 1:1 pegging and trust that coreBTC holders have in the system's ability to securely back their tokens with real Bitcoin.
+[https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
-- **Trigger:** The slashing process is triggered when a Locker transfers any locked Bitcoin to an unauthorized address or for any unauthorized purpose that does not correspond to a legitimate and verified request to redeem coreBTC.
-- **Detection and Reporting:** This misconduct can be detected through Core's monitoring systems or by other participants in the network, often referred to as Guardians, who observe and report any suspicious Locker activities.
-- **Consequence:** Upon confirmation of the unauthorized transfer, a portion of the Locker’s collateral is seized and used to compensate for the discrepancy created in the system. This not only penalizes the Locker but also helps to re-establish the balance of backed and circulating coreBTC, maintaining the system's integrity.
+![btc-stake-tx-ejemplo](../../../../static/img/btc-stake/tx-design/stake-tx-design%20\(3\).png)
 
-![slashing](../../../../static/img/coreBTC/slashing-1.png)
+#### Salida P2WSH
 
-### 2. **Failure to Release Bitcoin Upon coreBTC Redemption**
+This is the staking output and it is a standard P2WSH address. The redeem script used for this output is `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
 
-This scenario occurs when a coreBTC holder decides to redeem their tokens for the underlying Bitcoin, but the Locker responsible for releasing the Bitcoin fails to do so within the designated timeframe.
+```jsx
+OP_PUSHBYTES_4 1f5e0e66
+OP_CLTV
+OP_DROP
+OP_DUP
+OP_HASH160
+OP_PUSHBYTES_20 c4b8ae927ff2b9ce218e20bf06d425d6b68424fd
+OP_EQUALVERIFY
+OP_CHECKSIG
+```
 
-- **Trigger:** A coreBTC holder submits a burn transaction, effectively destroying a certain amount of coreBTC with the expectation of receiving an equivalent amount of Bitcoin from a Locker. If the Locker does not process this transaction and release the Bitcoin as required, slashing is triggered.
-- **Detection and Response:** Similar to the first case, this failure can be detected by network monitors or reported by users. Upon verification that the Locker has not fulfilled the redemption request in time, the system initiates a slashing protocol.
-- **Consequence:** A significant portion of the Locker's collateral is slashed as a punitive and compensatory measure. The slashed collateral is typically used to certify that the user receives their Bitcoin, preserving trust in the coreBTC system and compensating for any potential losses incurred by the delay or failure.
+The script looks very similar to a normal `P2PKH` redeem script except it starts with a timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
 
-![slashing](../../../../static/img/coreBTC/slashing-2.png)
+The redeem script hash used in this P2WSH output is `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` which results to `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
 
-## Conclusion
+Here is an online tool to generate `P2WSH` `sha256` hash value from redeem script, by which you can verify the above calculation: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
 
-The design of coreBTC on Core presents a robust framework for integrating Bitcoin into DeFi applications while maintaining its fundamental characteristics of security and decentralization. Through a well-structured system of minting, redemption, liquidation, and slashing, all backed by strict collateral requirements, coreBTC enables Bitcoin's value to be leveraged in new and innovative ways without compromising the trust and security that define it.
+#### OP_RETURN output
+
+The full hex of this output is `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , where
+
+- `6a` is op_return opcode
+- `4c50` is the total byte length after the `OP_RETURN` opcode [1]
+- `5341542b` SAT+, which is satoshi plus identifier
+- `01` is version
+- `045b` 1115, which is chain id (1115 for Core Testnet and 1116 for Core Mainnet)
+- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` is the reward address
+- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` is the validator address
+- `01` is relayer fee, measured in CORE
+- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is redeem script, which is explained in the above section.
+
+[1] Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+
+### Withdrawal Transaction
+
+[https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
+
+This transaction spent the P2WSH time-lock output from the above staking transaction
+
+![btc-staking-withdrawal-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(4\).png)
+
+In the input, the redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is provided to spend it. Since the time lock `1f5e0e66` (660e5e1f after reverting bytes, which is 1712217631 unix timestamp) has already expired, the UTXO was spent successfully.
+
+> **Note**
+> \> Code samples of constructing the staking and withdrawal transactions on Bitcoin network will be provided soon.
+
+## Role of Relayers
+
+In a strict sense, the Non-Custodial Bitcoin Staking process consists of two steps
+
+1. Stake on the Bitcoin network
+2. Submit the confirmed Bitcoin staking transaction to Core
+
+To make the entire process more convenient, Core introduces the role of relayers. Relayers can help users submit transactions to the Core network after the staking transaction is confirmed on the Bitcoin network. Since it is necessary to verify the transaction on the Core network with the embedded Bitcoin light client, relayers needs to obtain the corresponding `RedeemScript` of the `P2SH/P2WSH` output. To meet this requirement, we suggest users to either
+
+- Put the entire `RedeemScript` at the end of the `OP_RETURN` output, if the script is short. e.g. a `RedeemScript` constructed using public key hash as shown in the sample above.
+- Set the receiving address of the staking transaction as their own so relayers can extract useful information from the transaction input and compose the `RedeemScript` by themselves. E.g.
+  - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
+  - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.
