@@ -1,82 +1,82 @@
 ---
-sidebar_label: Validator Election
+sidebar_label: Elección del validador
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about the Satoshi Plus Validator Election Process
+description: Conozca el proceso de elección del validador Satoshi Plus
 ---
 
-# Validator Election
+# Elección del validador
 
 ---
 
-## Overview
+## Descripción general
 
-The Validator Election Process in Core's Satoshi Plus consensus mechanism is where Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking are synthesized. Bitcoin miners/mining pools, CORE stakers, and Bitcoin stakers contribute to the election of validators via a hybrid scoring system.
+El proceso de elección del validador en el mecanismo de consenso Satoshi Plus de Core es donde se sintetizan la prueba de trabajo delegada, la prueba de participación delegada y la participación de Bitcoin sin custodia. Los mineros/grupos de minería de Bitcoin, los participantes de CORE y los participantes de Bitcoin contribuyen a la elección de validadores a través de un sistema de puntuación híbrido.
 
-Validators play a vital role in producing blocks and validating transactions on the Core network. The election process determines which validators will be part of the active validator set for each round, ensuring that the most trusted and well-supported validators are chosen to maintain the network’s integrity.
+Los validadores desempeñan un papel vital en la producción de bloques y la validación de transacciones en la red Core. El proceso de elección determina qué validadores formarán parte del conjunto de validadores activos para cada ronda, lo que garantiza que se elijan los validadores más confiables y mejor respaldados para mantener la integridad de la red.
 
-## Step by Step Process
+## Proceso paso a paso
 
-1. **Delegation of Resources:**
-   - **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core Validators by including specific information in the op_return field of the coinbase transaction.
-   - **CORE Token Stakers:** Holders of CORE tokens delegate their staked tokens to their preferred validators.
-   - **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in absolute time locks and delegate their Bitcoin to their chosen validators.
+1. **Delegación de Recursos:**
+   - **Mineros de Bitcoin:** Los mineros de Bitcoin delegan su poder de hash a los validadores principales al incluir información específica en el campo op_return de la transacción de coinbase.
+   - **CORE Token Stakers:** Los poseedores de tokens CORE delegan sus tokens apostados a sus validadores preferidos.
+   - **Bitcoin Stakers:** Los poseedores de Bitcoin bloquean su Bitcoin en bloqueos de tiempo absoluto y delegan su Bitcoin a los validadores elegidos.
 
-2. **Hybrid Score Calculation:**
-   - The hybrid score for each validator is calculated based on the amount of delegated hash power from Bitcoin miners, the amount of staked CORE tokens, and the amount of staked Bitcoin.
-   - The formula balances these three components to produce a score that reflects the validator’s overall support and reliability.
+2. **Cálculo de puntuación híbrida:**
+   - La puntuación híbrida para cada validador se calcula en función de la cantidad de poder de hash delegado de los mineros de Bitcoin, la cantidad de tokens CORE apostados y la cantidad de Bitcoin apostados.
+   - La fórmula equilibra estos tres componentes para producir una puntuación que refleje el apoyo y la confiabilidad generales del validador.
 
-3. Election of Validators:
-   - Every round, which lasts one day, the validators with the highest hybrid scores are elected to the validator set.
-   - The top 23 validators with the highest scores are chosen to be part of the active validator set for that round.
+3. Elección de Validadores:
+   - En cada ronda, que dura un día, los validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores.
+   - Los 23 validadores con las puntuaciones más altas son elegidos para formar parte del conjunto de validadores activos para esa ronda.
 
-4. Validator Responsibilities:
-   - Elected validators are responsible for producing blocks and validating transactions throughout the round.
-   - They work in a round-robin manner, taking turns to produce blocks during each slot, with each slot lasting three seconds.
+4. Responsabilidades del validador:
+   - Los validadores elegidos son responsables de producir bloques y validar transacciones durante toda la ronda.
+   - Trabajan en forma de turnos, tomándose turnos para producir bloques durante cada ranura, y cada ranura dura tres segundos.
 
-5. Updating the Validator Set:
-   - The validator set is updated every 200 blocks to ensure stability and performance. If any validator is jailed or slashed, others continue to produce blocks without interruption.
-   - At the end of each round, the accumulated rewards are calculated and distributed, and a new validator set is determined based on the updated hybrid scores.
+5. Actualización del conjunto de validadores:
+   - El conjunto de validadores se actualiza cada 200 bloques para garantizar la estabilidad y el rendimiento. Si algún validador es encarcelado o cortado, otros continúan produciendo bloques sin interrupción.
+   - Al final de cada ronda, las recompensas acumuladas se calculan y distribuyen, y se determina un nuevo conjunto de validadores en función de las puntuaciones híbridas actualizadas.
 
-6. Rewards Distribution:
-   - Validators and their delegators earn CORE token rewards based on their performance and the amount of resources delegated to them.
-   - These rewards incentivize continuous participation and diligent performance by validators.
+6. Distribución de recompensas:
+   - Los validadores y sus delegados obtienen recompensas de tokens CORE en función de su desempeño y la cantidad de recursos que se les delegan.
+   - Estas recompensas incentivan la participación continua y el desempeño diligente de los validadores.
 
-## Workflow of the Validator Election Process​
+## Flujo de trabajo del proceso de elección del validador
 
-The Validator election process in Satoshi Plus involves key steps, supported by specific equations to quantify stake and hash power contributions:
+El proceso de elección del Validador en Satoshi Plus implica pasos clave, respaldados por ecuaciones específicas para cuantificar las contribuciones de participación y poder de hash:
 
-1. **Stake Delegation:**
-   - CORE and Bitcoin holders stake and delegate their tokens to validator candidates. This delegation is a form of voting, where the weight of each vote corresponds to the number of staked tokens.
+1. **Delegación de estaca:**
+   - Los poseedores de CORE y Bitcoin apuestan y delegan sus tokens a candidatos validadores. Esta delegación es una forma de votación, donde el peso de cada voto corresponde al número de tokens apostados.
 
-2. **Hash Power Delegation:**
-   - Bitcoin miners delegate a portion of their hash power by specifying their preferred validators in the Bitcoin blocks they mine. This process integrates Bitcoin's mining power into Core's security mechanism.
+2. **Delegación de poder hash:**
+   - Los mineros de Bitcoin delegan una parte de su poder de hash especificando sus validadores preferidos en los bloques de Bitcoin que extraen. .
 
-3. **Validator Selection:**
-   - Validators are selected based on the total support they receive, calculated by combining staked tokens (CORE and Bitcoin) and delegated hash power. The equation behind the hybrid score is:
+3.
+   - Los validadores se seleccionan en función del apoyo total que reciben, calculado combinando tokens apostados (CORE y Bitcoin) y poder de hash delegado. La ecuación detrás de la puntuación híbrida es:
 
 $$
  S = \frac{rHp}{tHp} * m + \frac{rSp + rBp * n}{tSp + tBp * n} * (1 - m) 
 $$
 
-Where:
+Donde:
 
-- $rHp$ is the Bitcoin hash power delegated to a validator, measured as the total number of Bitcoin blocks with that validator’s information written into their coinbase transactions;
-- $tHp$ is the total hash power on Core
-- $rSp$ is the amount of CORE tokens delegated by CORE token holders to that validator
-- $tSp$ is the total amount of CORE tokens stake on Core
-- $rBp$ is the amount of Bitcoin delegated by Bitcoin holders to that validator
-- $tBp$ is the total amount of Bitcoin staked on Core
-- $m$ is a dynamic factor that controls the overall weights of hash power $(0 < m <1)$
-- $n$ is a dynamic factor that controls the voting power of each Bitcoin vs. each CORE token.
+- $rHp$ es el poder de hash de Bitcoin delegado a un validador, medido como el número total de bloques de Bitcoin con la información de ese validador escrita en sus transacciones de coinbase;
+- $tHp$ es el poder hash total en Core
+- $rSp$ es la cantidad de tokens CORE delegados por los poseedores de tokens CORE a ese validador
+- $tSp$ es la cantidad total de tokens CORE apostados en Core
+- $rBp$ es la cantidad de Bitcoin delegada por los poseedores de Bitcoin a ese validador
+- $tBp$ es la cantidad total de Bitcoin apostada en Core
+- $m$ es un factor dinámico que controla los pesos generales del poder hash $(0 <m <1)$
+- $n$ es un factor dinámico que controla el poder de voto de cada Bitcoin frente a cada token CORE.
 
-Leaving aside the mathematical details, this is essentially a weighted, bicameral voting procedure. Bitcoin miners can vote for validators through their PoW (by writing validator information into the coinbase transaction on blocks they’ve already mined), CORE token holders can vote for a validator with their PoS (by delegating their tokens to it), and non-custodial bitcoin stakers can vote for a validator through the same mechanism. These DPoW, DPoS, and Bitcoin staking components are weighted to determine the hybrid score.
+Dejando de lado los detalles matemáticos, se trata esencialmente de un procedimiento de votación bicameral ponderado. Los mineros de Bitcoin pueden votar por validadores a través de su PoW (escribiendo la información del validador en la transacción de coinbase en los bloques que ya han extraído), los poseedores de tokens CORE pueden votar por un validador con su PoS (delegándole sus tokens) y los no- Los apostadores de bitcoins con custodia pueden votar por un validador a través del mismo mecanismo. Estos componentes de participación de DPoW, DPoS y Bitcoin se ponderan para determinar la puntuación híbrida.
 
-4. **Block Production:**
-   - After election, all validators are sorted roughly in order of their hybrid score, and take turns producing blocks in a **round-robin manner** before the process starts over again from the beginning. The present number of validators is **23**_, with the number of validators expected to increase over time as the network grows. What’s more, this mechanism provides additional security through improved efficiency and a tolerance for a large number of Byzantine players. Core is secure as long as no more than $1 \over 3$ of the validators are malicious.
+4. **Producción de bloques:**
+   - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. El número actual de validadores es **23**_, y se espera que el número de validadores aumente con el tiempo a medida que crece la red. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
 
-5. **Reward Distribution:**
-   - Rewards are distributed based on contributions to network security, using the following formula:
+5. **Distribución de recompensas:**
+   - Las recompensas se distribuyen en función de las contribuciones a la seguridad de la red, utilizando la siguiente fórmula:
 
      $$
         rH = \frac{rHp}{tHp} * \frac{m}{S} * R
@@ -90,14 +90,14 @@ Leaving aside the mathematical details, this is essentially a weighted, bicamera
         rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S * R}
      $$
 
-     Where:
+     donde:
 
-     - $rH$ is the rewards received by the validator because of the hash power delegated to it (DPoW)
-     - $rS$ is the rewards received by the validator because of the CORE delegated to it (DPoS)
-     - $rB$ is validator rewards attributed to Bitcoin staking
-     - $R$ is the overall rewards attributed to all delegators
+     - $rH$ son las recompensas recibidas por el validador debido al poder hash delegado en él (DPoW)
+     - $rS$ son las recompensas recibidas por el validador debido al CORE que se le ha delegado (DPoS)
+     - $rB$ son recompensas del validador atribuidas a la apuesta de Bitcoin
+     - $R$ son las recompensas generales atribuidas a todos los delegados.
 
-     For completeness, here are three other ratios of interest:
+     Para completar, aquí hay otras tres proporciones de interés:
 
      $$
         rHu = \frac{rH}{rHp}
@@ -111,18 +111,18 @@ Leaving aside the mathematical details, this is essentially a weighted, bicamera
         rBu = \frac{rB}{rBp}
      $$
 
-     Where:
+     Donde:
 
-     - $rHu$ is the validator hash power rewards per unit;
-     - $rSu$ is the CORE token staking rewards per unit;
-     - $rBu$ is the Bitcoin staking rewards per unit;
+     - $rHu$ son las recompensas del poder hash del validador por unidad;
+     - $rSu$ son las recompensas de apuesta de tokens CORE por unidad;
+     - $rBu$ son las recompensas de apuesta de Bitcoin por unidad;
 
-These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated stake (Bitcoin and CORE).
+Estas funciones de división de recompensas están diseñadas para crear un mercado activo de recompensas y al mismo tiempo fomentar la competencia entre el conjunto de validadores tanto para el poder de hash delegado como para la participación delegada (Bitcoin y CORE).
 
-## Flow Diagram of the Validator Election Process
+## Diagrama de flujo del proceso de elección del validador
 
-The following diagram visually represents the Validator election process in Satoshi Plus:
+El siguiente diagrama representa visualmente el proceso de elección del Validador en Satoshi Plus:
 
 ![validator-election-flow](../../../../static/img/staoshi-plus/validator-election-flow.png)
 
-This flowchart illustrates the cyclical process of the validator election and their ongoing responsibilities within Satoshi Plus. It emphasizes how stake and hash power delegations directly influence validator selection, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.
+Este diagrama de flujo ilustra el proceso cíclico de la elección del validador y sus responsabilidades actuales dentro de Satoshi Plus. Enfatiza cómo las delegaciones de poder de hash y participación influyen directamente en la selección de validadores, la producción de bloques y la distribución de recompensas, impulsando una red segura, descentralizada y administrada de manera eficiente.
