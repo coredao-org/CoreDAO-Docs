@@ -1,34 +1,34 @@
 ---
-sidebar_label: Using Core RPC with CLI
+sidebar_label: Usando Core RPC con CLI
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core RPCs Through the Command Line
+# RPC principales a través de la línea de comando
 
 ---
 
-Blockchains produce huge amounts of information related to things like transaction volume and asset ownership, much of which is useful to dApps in the rest of the ecosystem. Accessing and putting that data to work, however, can require a huge amount of technical know-how.
+Las cadenas de bloques producen enormes cantidades de información relacionada con aspectos como el volumen de transacciones y la propiedad de activos, gran parte de la cual es útil para las dApps del resto del ecosistema. Sin embargo, acceder a esos datos y ponerlos a trabajar puede requerir una gran cantidad de conocimientos técnicos.
 
-## What are Remote Procedure Calls?
+## ¿Qué son las llamadas a procedimientos remotos?
 
-Remote Procedure Calls (RPCs) are one way of solving this problem. RPCs are software that facilitate communication between a blockchain network and users, companies, or applications. Rather than needing to run a full custom node or set up a complex program to pull data, the relevant information can be gathered by simply hitting the endpoint provided by the RPC.
+Las llamadas a procedimiento remoto (RPC) son una forma de resolver este problema. Los RPC son software que facilitan la comunicación entre una red blockchain y usuarios, empresas o aplicaciones. En lugar de tener que ejecutar un nodo personalizado completo o configurar un programa complejo para extraer datos, la información relevante se puede recopilar simplemente accediendo al punto final proporcionado por RPC.
 
-If it helps, you can think of an RPC as being essentially the opposite of an oracle. The [purpose of an oracle](https://cointelegraph.com/learn/what-is-a-blockchain-oracle-and-how-does-it-work) is to take external data (such as the results of an election or a weather forecast) and move it into a blockchain, while the purpose of an RPC is to take internal data (such as information related to transactions and blocks) and move it out of a blockchain.
+Si te ayuda, puedes pensar en un RPC como esencialmente lo opuesto a un oráculo. El [propósito de un oráculo](https://cointelegraph.com/learn/what-is-a-blockchain-oracle-and-how-does-it-work) es tomar datos externos (como los resultados de un elecciones o un pronóstico del tiempo) y moverlos a una cadena de bloques, mientras que el propósito de un RPC es tomar datos internos (como información relacionada con transacciones y bloques) y sacarlos de una cadena de bloques.
 
-## Which RPC Providers can I Use to connect to Core Network Mainnet?
+## ¿Qué proveedores de RPC puedo utilizar para conectarme a Core Network Mainnet?
 
-The Core Chain supports different [RPC providers](https://chainlist.org/chain/1116) -- both native Core RPC and third-party RPCs providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for conencting to Core mainnet or testnet.
+Core Chain admite diferentes [proveedores de RPC] (https://chainlist.org/chain/1116), tanto proveedores de Core RPC nativos como de terceros. Consulte la lista completa de puntos finales RPC [aquí] (./rpc-list.md) para conectarse a Core mainnet o testnet.
 
-## Working with RPCs Through the Command Line
+## Trabajar con RPC a través de la línea de comando
 
-We can use the CURL for connecting to CORE RPC endpoitns via CLI. `CURL`, also written as `cURL`, is short for `client URL`. In essence, it's a CLI tool that offers developers a way of fetching data directly from a remote server. The simplest CURL command consists of fetching a webpage's HTML code by passing in a URL, and you can try it now by running this in your CLI of choice:
+Podemos usar CURL para conectarnos a los puntos finales de CORE RPC a través de CLI. `CURL`, también escrito como `cURL`, es la abreviatura de `cliente URL`. En esencia, es una herramienta CLI que ofrece a los desarrolladores una forma de obtener datos directamente desde un servidor remoto. El comando CURL más simple consiste en obtener el código HTML de una página web pasando una URL, y puedes probarlo ahora ejecutando esto en la CLI de tu elección:
 
 ```bash
     curl https://coredao.org/
 ```
 
-The below command illustrates how CURL can be used to get information related to a specific transaction on the Core Chain by passing in the transactions hash and a few other parameters.
+El siguiente comando ilustra cómo se puede utilizar CURL para obtener información relacionada con una transacción específica en Core Chain pasando el hash de las transacciones y algunos otros parámetros.
 
 ```bash
 curl -H "Content-Type: application/json" \
@@ -37,19 +37,19 @@ curl -H "Content-Type: application/json" \
      --url 'https://rpc.ankr.com/core'
 ```
 
-In the above statement, following are the components of the `curl` statement:
+En la declaración anterior, los siguientes son los componentes de la declaración "curl":
 
-- `curl`: since we're using CURL, we have to prefix it with the name of the command.
-- `-H`: this is a header containing information about the request's content etc.
-- `-X`: this is where we specify what kind of HTTP command we're using, which in our case is `POST`.
-- `--data`: this is where we pass the `method`, its `parameters`, the `id`, etc. to the request.
-- `--url`: this is the `URL` we want the request to be pointed at.
+- `curl`: como estamos usando CURL, tenemos que anteponerle el nombre del comando.
+- `-H`: este es un encabezado que contiene información sobre el contenido de la solicitud, etc.
+- `-X`: aquí es donde especificamos qué tipo de comando HTTP estamos usando, que en nuestro caso es `POST`.
+- `--data`: aquí es donde pasamos el `método`, sus `parámetros`, el `id`, etc. a la solicitud.
+- `--url`: esta es la `URL` a la que queremos que apunte la solicitud.
 
-As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e. the URL from which the information is being retrieved) and an HTTP method. In our case, the URL comes at the end after the _`--url`_ option; you can swap in any of the valid RPC URLs found [here](https://chainlist.org/chain/1116) for connecting to Core Mainnet, just don't forget to wrap the URL in single quotes (''). In the figure below, any of the URLs in the red box will work.
+Como se explicó anteriormente, CURL es un método para enviar solicitudes API, que contienen un punto final (es decir, la URL desde la que se recupera la información) y un método HTTP. En nuestro caso, la URL viene al final después de la opción _`--url`_; puede intercambiar cualquiera de las URL RPC válidas que se encuentran [aquí](https://chainlist.org/chain/1116) para conectarse a Core Mainnet, pero no olvide incluir la URL entre comillas simples (''). En la siguiente figura, cualquiera de las URL en el cuadro rojo funcionará.
 
 ![rpc-list](../../static/img/rpc/rpc-1.png)
 
-Following is the sample response returned by the CURL command:
+A continuación se muestra la respuesta de ejemplo devuelta por el comando CURL:
 
 ```javascript
 {
@@ -76,11 +76,11 @@ Following is the sample response returned by the CURL command:
  }
 ```
 
-## Incorporating CURL into a Python Workflow
+## Incorporación de CURL en un flujo de trabajo de Python
 
-As much fun as it would be to spend all day in Terminal, chances are you'll want to move into an IDE to build anything more complicated.
+Por más divertido que sea pasar todo el día en la Terminal, es probable que quieras pasar a un IDE para construir algo más complicado.
 
-In Python, this whole command can be duplicated using the `requests` library. We'll have to import `requests`, then create header and data dictionaries, then pass those into requests.post. Here's what that looks like:
+En Python, todo este comando se puede duplicar usando la biblioteca `solicitudes`. Tendremos que importar `solicitudes`, luego crear diccionarios de datos y encabezados, y luego pasarlos a request.post. Así es como se ve:
 
 ```python
 import requests
@@ -95,4 +95,4 @@ response = requests.post('https://rpc.ankr.com/core', headers=headers, data=data
 print(response.content)
 ```
 
-In order to use any other RPC URL other than the one used in the above sample, simply replace the RPC URL https://rpc.ankr.com/core with one of the [supported RPC endpoints](#which-rpc-providers-can-i-use-to-connect-to-core-network-mainnet).
+Para utilizar cualquier otra URL de RPC distinta a la utilizada en el ejemplo anterior, simplemente reemplace la URL de RPC https://rpc.ankr.com/core con uno de los [puntos finales RPC admitidos](# Which-rpc-providers -puedo-usar-para-conectarme-a-la-red-central-mainnet).
