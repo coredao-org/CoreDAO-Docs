@@ -139,40 +139,40 @@ Al iniciar el proceso de delegación, es importante comprender y especificar var
 - En nuestro ejemplo, hemos seleccionado una fecha con 10 días de antelación (24 de abril)
 - Haga clic en '**Aceptar**' para continuar
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-9.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-9.avif)
 
-3. Specifying the network priority speed for your transaction
+3. Especificación de la velocidad de prioridad de la red para su transacción
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-10.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-10.avif)
 
-4. Finally, click ‘**Confirm Delegation**’ to **Delegate BTC**
+4. Finalmente, haga clic en '**Confirmar delegación**' para **Delegar BTC**
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-11.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-11.avif)
 
-5. Before Signing the transaction in your wallet, verify the transaction outputs to make sure it includes an OP\_Return output.  OP\_Return output is where your redeem\_script is saved and is essentially for redeeming your staked BTC. There may be 2 or 3 outputs, but at least one of the outputs should always be OP\_Return. Abort the transaction if it doesn't include the OP\_Return output.
+5. Antes de firmar la transacción en su billetera, verifique los resultados de la transacción para asegurarse de que incluya un resultado OP\_Return.  La salida OP\_Return es donde se guarda su canje\_script y es esencialmente para canjear su BTC apostado. Puede haber 2 o 3 salidas, pero al menos una de las salidas siempre debe ser OP\_Return. Cancele la transacción si no incluye la salida OP\_Return.
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-12.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-12.avif)
 
-6. Verify Transaction Submitted
+6. Verificar transacción enviada
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-13.avif)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-13.avif)
 
-5. From any CORE screen, hover over your connected wallet in the top right corner click ‘**My Staking**’.
+5. Desde cualquier pantalla CORE, coloque el cursor sobre su billetera conectada en la esquina superior derecha y haga clic en "**Mi apuesta**".
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-14.png)
+![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-14.png)
 
-6. At the **Delegator** screen, look for the column **BTC(x)** and click.
+6. En la pantalla **Delegador**, busque la columna **BTC(x)** y haga clic.
 
-   ![native-staking-guide](../../../../static/img/native-staking/native-staking-15.avif)
+   ![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-15.avif)
 
-7. Verify your chosen validator is pending transaction confirmation.
+7. Verifique que el validador elegido esté pendiente de confirmación de la transacción.
 
-   ![native-staking-guide](../../../../static/img/native-staking/native-staking-16.avif)
+   ![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-16.avif)
 
-8. Verify your chosen validator says ‘**Rewarding**’ under '**Redeem** **Time**'.
+8. Verifique que el validador elegido diga "**Recompensa**" en "**Canjear** **Tiempo**".
 
-   ![native-staking-guide](../../../../static/img/native-staking/native-staking-17.avif)
+   ![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-17.avif)
 
-**Congratulations.** You have succesfully staked your BTC on the Core blockchain and will now actively earn CORE tokens from your delegated BTC. Through staking BTC and voting for validators, you actively contribute to the governance and security of the Core network, helping maintain its balance and decentralization.
+**Felicitaciones.** Ha apostado con éxito su BTC en la cadena de bloques Core y ahora obtendrá activamente tokens CORE de su BTC delegado. Al apostar BTC y votar por validadores, usted contribuye activamente a la gobernanza y seguridad de la red Core, ayudando a mantener su equilibrio y descentralización.
 
-We’re happy you’ve chosen to journey into BTCfi with Non-Custodial BTC Staking on Core!
+¡Estamos felices de que haya elegido viajar a BTCfi con Stake BTC sin custodia en Core!
