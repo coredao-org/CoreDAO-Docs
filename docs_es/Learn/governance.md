@@ -1,46 +1,46 @@
 ---
-sidebar_label: Governance
+sidebar_label: Gobernancia
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Governance on the Core Blockchain
+# Gobernanza en Core Blockchain
 
 ---
 
-Core's governance system is designed to uphold the decentralization and reliability of the Core network. It empowers the community to actively participate in decision-making processes that shape the ecosystem's future, from protocol changes to feature implementations and more. This section outlines the governance structure underlying Core.
+El sistema de gobernanza de Core está diseñado para mantener la descentralización y confiabilidad de la red Core. Permite a la comunidad participar activamente en los procesos de toma de decisiones que dan forma al futuro del ecosistema, desde cambios de protocolo hasta implementaciones de funciones y más. Esta sección describe la estructura de gobernanza subyacente a Core.
 
-## Progressive Decentralization Strategy
+## Estrategia de descentralización progresiva
 
-The Core blockchain's governance is designed to evolve over time, with a phased approach that begins with necessary centralization for network establishment and progressively hands over control to the community as it grows and stabilizes.
+La gobernanza de Core blockchain está diseñada para evolucionar con el tiempo, con un enfoque gradual que comienza con la centralización necesaria para el establecimiento de la red y progresivamente entrega el control a la comunidad a medida que crece y se estabiliza.
 
-- **Stage 1: Offchain Governance**
-  - Proposals and decisions are conducted offchain through Core Improvement Proposals (CIPs).
-  - Community members, regardless of their stake size, can submit proposals for consideration.
-  - A majority vote determines the outcome of each proposal, with a voting period of seven days to enable community participation.
+- **Etapa 1: Gobernanza fuera de la cadena**
+  - Las propuestas y decisiones se llevan a cabo fuera de la cadena a través de propuestas de mejora central (CIP).
+  - Los miembros de la comunidad, independientemente del tamaño de su participación, pueden presentar propuestas para su consideración.
+  - Una mayoría de votos determina el resultado de cada propuesta, con un período de votación de siete días para permitir la participación de la comunidad.
 
-- **Stage 1.5: Current Hybrid Model**
-  - Represents a midpoint between offchain governance and the goal of partial onchain governance.
-  - This stage allows for learning, adjustment, and the laying of groundwork for more onchain elements to be integrated into the governance process.
+- **Etapa 1.5: Modelo híbrido actual**
+  - Representa un punto medio entre la gobernanza fuera de la cadena y el objetivo de una gobernanza parcial en la cadena.
+  - Esta etapa permite el aprendizaje, el ajuste y el establecimiento de las bases para que se integren más elementos en cadena en el proceso de gobernanza.
 
-- **Stage 2: Partial Onchain Governance (Upcoming)**
-  - This stage will introduce the ability to adjust fixed parameters directly through onchain voting.
-  - The 'm Parameter,' which governs certain economic variables, is already under community control.
-  - Additional parameters, such as the percentage of burned fees (currently set at 0%), will be subject to onchain governance.
-  - Discussions are underway to implement time delays in voting to mitigate vote selling and similar concerns.
+- **Etapa 2: Gobernanza parcial de la cadena (próximamente)**
+  - Esta etapa introducirá la capacidad de ajustar parámetros fijos directamente mediante la votación en cadena.
+  - El 'Parámetro m', que gobierna ciertas variables económicas, ya está bajo control comunitario.
+  - Los parámetros adicionales, como el porcentaje de tarifas quemadas (actualmente establecido en 0%), estarán sujetos a la gobernanza en cadena.
+  - Se están llevando a cabo discusiones para implementar retrasos en la votación para mitigar la venta de votos y preocupaciones similares.
 
-- **Stage 3: Full Onchain Governance (Goal)**
-  - Details for this stage are currently being developed with active community participation.
-  - Plans include mechanisms such as requiring collateral to post proposals, so that proposers have a vested interest in the network's health and longevity.
+- **Etapa 3: Gobernanza completa en cadena (objetivo)**
+  - Los detalles de esta etapa se están desarrollando actualmente con la participación activa de la comunidad.
+  - Los planes incluyen mecanismos como exigir garantías para publicar propuestas, de modo que los proponentes tengan un interés personal en la salud y longevidad de la red.
 
-## Current State of Governance
+## Estado actual de la gobernanza
 
-Core's governance is currently in transition, situated at Stage 1.5, with the objective of reaching Stage 3, which represents full decentralization. Governance is facilitated through the CORE token, empowering the community to guide the development and direction of Core.
+La gobernanza de Core se encuentra actualmente en transición, situada en la Etapa 1.5, con el objetivo de llegar a la Etapa 3, que representa la descentralización total. La gobernanza se facilita a través del token CORE, lo que permite a la comunidad guiar el desarrollo y la dirección de Core.
 
-## Governance Oversight
+## Supervisión de la gobernanza
 
-In Core's current governance model of Core, Core contributors and community members are tasked with overseeing the early development of the network. Responsibilities include, but are not limited to expanding the validator set, adjusting governance parameters, and determining the percentage of block rewards and transaction fees that are burned. For more details on proposed and implemented improvements related to governance of Core, visit the [official Core Governance Website](https://gov.coredao.org/).
+En el modelo de gobernanza actual de Core, los contribuyentes de Core y los miembros de la comunidad tienen la tarea de supervisar el desarrollo inicial de la red. Las responsabilidades incluyen, entre otras, expandir el conjunto de validadores, ajustar los parámetros de gobernanza y determinar el porcentaje de recompensas en bloque y tarifas de transacción que se queman. Para obtener más detalles sobre las mejoras propuestas e implementadas relacionadas con la gobernanza de Core, visite el [sitio web oficial de gobernanza de Core] (https://gov.coredao.org/).
 
-## Conclusion
+## Conclusión
 
-Core's governance framework embodies a phased approach, beginning with offchain governance and advancing through stages towards full onchain governance. By adapting to the evolving needs and maturity of the network, Core aims to host a strong, decentralized, and active community governance model. This gradual transition is designed to maintain Core's security, stability, and user trust, while progressively enhancing community control and participation in its governance processes.
+El marco de gobernanza de Core incorpora un enfoque por fases, comenzando con la gobernanza fuera de la cadena y avanzando a través de etapas hacia la gobernanza completa en la cadena. Al adaptarse a las necesidades cambiantes y la madurez de la red, Core pretende albergar un modelo de gobernanza comunitaria sólido, descentralizado y activo. Esta transición gradual está diseñada para mantener la seguridad, la estabilidad y la confianza de los usuarios de Core, mientras mejora progresivamente el control y la participación de la comunidad en sus procesos de gobernanza.
