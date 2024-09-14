@@ -1,66 +1,65 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: Descripción general de los nodos que se ejecutan en la cadena central
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Descripción general
+# Nodos en el ecosistema de la cadena central
 
 ---
 
-En el ecosistema Core Chain, los validadores son participantes cruciales que mantienen la integridad, seguridad y continuidad de la cadena de bloques. Son responsables de procesar transacciones, crear nuevos bloques y participar en el proceso de consenso. Este papel es fundamental para garantizar que la cadena central funcione de manera eficiente y permanezca descentralizada.
+En el ecosistema Core Chain, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red. Dependiendo de sus objetivos, existen diferentes configuraciones de nodos posibles en la red Core. Si aún no ha iniciado el nodo Core Chain, revise la documentación para [Ejecutar un nodo validador local] (./validator/running-validator.md) antes de continuar con diferentes configuraciones.
 
-## ¿Quiénes son los validadores en la red de Core?
+- Si quieres ser parte de la gobernanza de la Red Core:
 
-En el ecosistema Core Chain, los validadores desempeñan un papel crucial en el mantenimiento de la integridad y seguridad de la cadena de bloques al producir y validar nuevos bloques. Estos validadores participan en el mecanismo de consenso Satoshi Plus, que combina elementos de Prueba de trabajo delegada (PoW) y Prueba de participación delegada (DPoS). Los validadores se seleccionan en función de un sistema de puntuación híbrido que tiene en cuenta los tokens BTC y CORE apostados a su favor y el poder de hash de Bitcoin que se les delega. Este método único garantiza que el conjunto de validadores represente una combinación equilibrada de los intereses de las partes interesadas y el poder minero, lo que mejora la seguridad y la descentralización de la red. Las elecciones de validadores ocurren en ciclos conocidos como épocas, y cada nuevo conjunto de validadores se elige para administrar las operaciones y la gobernanza de la cadena de bloques de manera efectiva.
+  - [Iniciar un nodo validador](./config/validator-node-config.md)
 
-## Ciencias económicas
+- Si desea ejecutar un nodo Core Chain para uso privado:
+  - [Iniciar un nodo completo normal](./Full-Node/on-mainnet.md)
 
-Las recompensas del validador provienen de
-1. **Recompensas base**, es decir, tokens CORE recién Minteados; **Tarifas cobradas por transacciones en cada bloque**;
+- Si desea enviar transacciones o consultar la cadena directamente desde su propio nodo de Core Chain:
 
-Las recompensas básicas se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, **90%** de las recompensas van a los validadores y **10%** de las recompensas van al "Contrato de recompensas del sistema". Del **90%** pagado a los validadores, el validador toma un porcentaje como comisión antes de pagar a sus delegados. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
+  - [Iniciar un nodo RPC](./config/rpc-node-config.md)
 
-Similar es el caso con las tarifas de transacción cobradas de cada bloque en una ronda, no se dirige completamente al validador, sino que se calcula de manera similar a las recompensas base, es decir, el 90% de las tarifas acumuladas se paga a los validadores, se toma un porcentaje. como comisión por parte del validador y el resto se distribuye a los delegados. Mientras que el 10% se deposita en el Contrato de Recompensa del Sistema.
+- Si desea consultar datos históricos de la cadena desde el bloque de génesis:
 
-Los validadores comparten recompensas con las entidades que les delegaron, incluidos los participantes de CORE, los participantes de bitcoin y los delegados de PoW, pero deciden cuánto devolver al decidir cuánto ellos (los validadores) eligen quedarse para sí mismos. Los validadores pueden recibir tanta o tan poca recompensa como quieran, aunque se les incentiva a ser generosos para atraer más participación y poder de hash.
+  - [Iniciar un nodo de archivo](./config/archive-node-config.md)
 
-Los validadores deben compartir recompensas con los delegados que apostaron CORE o les delegaron poder hash. Dado que cada validador tiene la misma probabilidad de producir bloques, todos los validadores estables deberían obtener una porción similar de las recompensas a largo plazo. La parte que los validadores se quedan para ellos (comisiones) se distribuirá directamente a sus direcciones de tarifas al final de cada ronda.
+- Si desea ayudar a los operadores de nodos a sincronizarse rápidamente con la red:
 
-**_Tenga en cuenta que la liquidación de recompensas se realiza diariamente, es decir, una ronda, en lugar de por bloque._**
+  - [Iniciar un nodo de instantánea](./config/snapshot-node-config.md)
 
-![distribución-de-recompensas-validador](../../../static/img/validator/Reward-Distribution.png)
+## Tipos de nodos en la red de la cadena central
 
-Supongamos que la recompensa base para una ronda es **3000 CORE** y que un determinado validador establece su tasa de comisión en **20%**. Estos tokens no van directamente al proponente. En cambio, se comparten entre validadores y delegados. Estos **3000 CORE** se repartirán según la apuesta de cada participante. Supongamos que las tarifas generadas por todas las transacciones en todos los bloques de una ronda fueron **100 CORE**.
+1. **Validadores:**
+   - **Rol:** Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso de la cadena central.
+   - **Requisitos:** Los validadores deben apostar una cantidad mínima de **10,000 tokens CORE** para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
+   - **Incentivos:** Los validadores obtienen recompensas en tokens CORE por su papel activo en el mantenimiento y seguridad de las operaciones de la red.
 
-```maths
-Recompensa total acumulada = Recompensa base + Tarifas de transacción = 3000 + 100 = 3100 CORE
+2. **Nodos completos normales:**
+   - **Rol:** Los nodos completos normales mantienen una copia completa y en tiempo real del libro mayor de blockchain, validan transacciones y respaldan la red transmitiendo datos de bloques y transacciones. Estos son esencialmente útiles para uso privado.
+   - **Requisitos:** Operar un nodo completo requiere importantes recursos computacionales y de almacenamiento para manejar los datos completos de la cadena de bloques y el tráfico continuo de la red.
 
-    El contrato de recompensa del sistema obtiene = 3100 x 10 % = 310 CORE  
+3. **Nodos RPC:**
+   - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
+     **Importancia:** Son esenciales para el desarrollo y operación de aplicaciones descentralizadas (DApps) y para el acceso externo a los datos de blockchain.
 
-    Recompensa del validador acumulada = (recompensa base + tarifas de transacción) x 90 % = 3100 x 90 % = 2790 CORE
+4. **Nodos de archivo:**
+   - **Función:** Los nodos de archivo almacenan el historial completo de la cadena de bloques, incluidos todos los estados y transacciones desde el bloque de génesis, lo que proporciona un recurso valioso para consultas históricas profundas.
+   - **Requisitos:** Estos nodos requieren una gran capacidad de almacenamiento, ya que mantienen todos los estados actuales y vencidos de la cadena de bloques, lo que los hace consumir muchos recursos.
+   - **Uso:** Los nodos de archivo son cruciales para los desarrolladores que necesitan acceso a todos los datos históricos de blockchain para análisis, auditorías y consultas avanzadas de blockchain.
 
-    Comisión = (Recompensa base + Tarifas de transacción) x 20% = 2790 x 20% = 558 CORE
+5. **Nodos de instantáneas:**
+   - **Función:** Los nodos de instantáneas mantienen copias de instantáneas de blockchain en varios intervalos. Estas instantáneas incluyen el estado de la cadena de bloques a una altura de bloque determinada, lo que ofrece un punto de restauración para nodos completos o nodos nuevos.
+   - **Beneficios:** Proporcionan un medio para una rápida sincronización y recuperación de otros nodos en la red, mejorando la resiliencia y escalabilidad de la infraestructura de la red.
 
-    El validador de recompensa total obtiene = comisión = 558 CORE
+## Importancia de cada tipo de nodo
 
-    Todos los delegados obtienen = Recompensa de validador acumulada - Comisión = 2790 - 558 = 2232 CORE
-```
+- **Validadores** garantizan la validez de las transacciones y el consenso de la red.
+- Los **nodos completos** y los **nodos de archivo** proporcionan redundancia e integridad de datos.
+- Los **Nodos RPC** permiten el desarrollo de aplicaciones y la interacción con la cadena de bloques.
+- **Snapshot Nodes** ayuda a escalar la red eficientemente y a sincronizar los nodos más rápido.
 
-:::note
-En el ecosistema Core, las recompensas se distribuyen a cada validador, de esa recompensa los validadores deben quedarse con un porcentaje en forma de comisión y distribuir el resto a sus delegados. Cada validador puede establecer su propia tasa de comisión. Sin embargo, no existe un CORE autoadherido. El validador solo recibe comisiones si no quiere apostar por su propio validador.
-:::
+## Conclusión
 
-## Riesgos potenciales y sanciones para los validadores
-
-En el ecosistema Core Chain, los validadores desempeñan un papel crucial en el mantenimiento de la integridad y seguridad de la red. Si bien esta función viene acompañada de incentivos como obtener recompensas por la validación de bloques, también implica ciertos riesgos y posibles sanciones si los validadores no desempeñan sus funciones adecuadamente o participan en actividades maliciosas. A continuación se ofrece una descripción detallada de los riesgos y sanciones potenciales para los validadores en el ecosistema de Core Chain:
-
-1. **Riesgos de reducción:** Los validadores en muchos sistemas basados ​​en DPoS, incluido Core Chain, enfrentan el riesgo de reducción si actúan de manera maliciosa o negligente. Esto podría implicar una doble firma, tiempo de inactividad (no estar en línea y realizar tareas de validación) o cualquier acción que comprometa la seguridad de la red. La reducción implica la destrucción o eliminación de una parte de los tokens CORE apostados, lo que afecta directamente las tenencias financieras del validador.
-
-2. **Bloqueo de participación y riesgo de liquidez:** Los validadores deben bloquear una cantidad significativa de tokens CORE como garantía para participar en el proceso de validación. Esta participación está sujeta a períodos de bloqueo durante los cuales no se puede acceder a los fondos, lo que plantea un riesgo de liquidez, especialmente si las condiciones del mercado cambian drásticamente.
-
-3. **Encarcelamiento de validadores:** Los validadores que consistentemente tengan un desempeño inferior o violen los protocolos de red pueden ser "encarcelados". Este término se refiere a eliminarlos temporalmente del conjunto de validadores, impidiéndoles participar en el consenso y obtener recompensas.
-
-4. **Pérdida de delegación:** Los validadores dependen de las delegaciones de los poseedores de tokens CORE para aumentar su influencia y potencial de ganancias. El mal desempeño o las altas tasas de penalización pueden llevar a los delegados a retirar su apoyo y reasignar sus participaciones a validadores más confiables, lo que lleva a una disminución significativa de las ganancias potenciales.
-
-5. **Riesgos operativos y de seguridad:** La ejecución de un nodo validador requiere competencia técnica. Los validadores deben asegurarse de que sus sistemas sean seguros y funcionen de manera eficiente las 24 horas del día, los 7 días de la semana. No gestionar estos riesgos operativos puede provocar la omisión de bloqueos o violaciones de seguridad, lo que podría provocar pérdidas financieras o daños a la reputación.
+Las diversas funciones de los nodos en el ecosistema Core Chain garantizan colectivamente que la cadena de bloques sea segura, eficiente, accesible y robusta. Los validadores, los nodos completos y los nodos de archivo forman la columna vertebral de la seguridad y la integridad de los datos de la red. Al mismo tiempo, los nodos RPC y los nodos Snapshot brindan flexibilidad, accesibilidad y escalabilidad. Esta arquitectura de nodo multifacética admite una amplia gama de operaciones, desde el procesamiento de transacciones hasta interacciones complejas de dApp y análisis de datos históricos.
