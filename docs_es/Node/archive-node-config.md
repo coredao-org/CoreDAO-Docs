@@ -1,66 +1,65 @@
 ---
-sidebar_label: Archive Node Configuration
+sidebar_label: Configuración del nodo de archivo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Archive Node Configuration
+# Configuración del nodo de archivo
 
 ---
 
-Archive nodes in the Core network play a crucial role in maintaining the complete historical state of the network. These nodes are specialized versions of full nodes with enhanced capabilities tailored to storing and providing access to the entire history of all transactions and states since the inception of the Core Chain.
+Los nodos de archivo en la red Core desempeñan un papel crucial en el mantenimiento del estado histórico completo de la red. Estos nodos son versiones especializadas de nodos completos con capacidades mejoradas diseñadas para almacenar y brindar acceso al historial completo de todas las transacciones y estados desde el inicio de Core Chain.
 
-## System Requirements
+## Requisitos del sistema
 
-There are several system requirements, both software and hardware, for setting up a Archive node on the Core network.
+Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un nodo de archivo en la red central.
 
 ### Software
 
-- Currently, a Core archive node can only run on **Mac OS X** or on the **Linux** operating systems.
+- Actualmente, un nodo de archivo Core solo se puede ejecutar en **Mac OS X** o en los sistemas operativos **Linux**.
 
 ### Hardware
 
-Core nodes perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Each type of Core node has specific hardware requirements based on their expected needs.
+Los nodos centrales realizan varias tareas que consumen muchos recursos, que pueden incluir almacenar datos de blockchain, verificar bloques o transacciones, comunicarse con nodos pares y responder solicitudes de red, según su configuración. Cada tipo de nodo Core tiene requisitos de hardware específicos según sus necesidades esperadas.
 
-#### Testnet Archive Node Hardware Specifications
+#### Especificaciones de hardware del nodo de archivo Testnet
 
-For Archive Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
+Para los nodos de archivo en **Core Blockchain Testnet**, recomendamos las siguientes especificaciones mínimas de hardware:
 
-| Requirements   | Details                                                                   |
-| -------------- | ------------------------------------------------------------------------- |
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB |
-| CPU            | 8 Core CPU                                                                |
-| RAM            | 32 Gigabytes                                                              |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps      |
+| Requisitos            | Detalles                                                                          |
+| --------------------- | --------------------------------------------------------------------------------- |
+| Almacenamiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
+| CPU                   | CPU 8 nucleos                                                                     |
+| RAM                   | 32 Gigabytes                                                                      |
+| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-#### Mainnet Archive Node Hardware Specifications
+#### Especificaciones de hardware del nodo de archivo Mainnet
 
-For Archive Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
+Para los nodos de archivo en **Core Blockchain Mainnet**, recomendamos las siguientes especificaciones mínimas de hardware:
 
-| Requirements   | Details                                                                   |
-| -------------- | ------------------------------------------------------------------------- |
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB |
-| CPU            | 8 Core CPU                                                                |
-| RAM            | 32 Gigabytes                                                              |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps      |
+| Requisitos            | Detalles                                                                          |
+| --------------------- | --------------------------------------------------------------------------------- |
+| Almacenamiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
+| CPU                   | CPU 8 nucleos                                                                     |
+| RAM                   | 32 Gigabytes                                                                      |
+| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-## Running Core Archive Node
+## Ejecución del nodo de archivo principal
 
-1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your full node, running your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo, ejecutando su nodo completo directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Download the latest node binary for from Core Chain GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest) and the latest snapshot for archive node from Core's [Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). The node binary includes the relevant mainnet and testnet configuration files.
+2\. Descargue el último binario de nodo de Core Chain GitHub [repositorio de versiones](https://github.com/coredao-org/core-chain/releases/latest) y la última instantánea para el nodo de archivo del [repositorio de instantáneas] de Core(https ://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet.
 
-3\. Write the genesis state locally by executing the following command from your project directory:
+3\. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-4\. Our full/archive node is ready, let's start running it! You can just run the following `geth` command directly:
+4\. Nuestro nodo completo/de archivo está listo, ¡comencemos a ejecutarlo! Puedes ejecutar el siguiente comando `geth` directamente:
 
 ```bash
-## start an archive node
-geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=archive --syncmode=full 
+## iniciar un nodo de archivogeth --config ./config.toml --datadir ./node --cache 8000 --gcmode=archive --syncmode=full 
 ```
 
-5\. As our archive node runs, we can monitor its logs to make sure that everything is operating correctly. The log file is located at `./node/logs/core.log` by default, but can be changed to another location if desired.
+5\. A medida que se ejecuta nuestro nodo de archivo, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de registro se encuentra en `./node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
