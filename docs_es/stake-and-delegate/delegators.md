@@ -1,43 +1,43 @@
 ---
-sidebar_label: Delegators
+sidebar_label: Delegados
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegations in the Core Chain Ecosystem
+# Delegaciones en el Ecosistema de la Cadena Core
 
 ---
 
-## Overview of Delegation
+## Descripción general de la delegación
 
-In the context of the Core Chain, delegation is a fundamental mechanism that allows BTC miners and BTC and CORE token holders to participate actively in the network's security and governance without being validators themselves. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (BTC hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
+En el contexto de Core Chain, la delegación es un mecanismo fundamental que permite a los mineros de BTC y a los poseedores de tokens BTC y CORE participar activamente en la seguridad y gobernanza de la red sin ser ellos mismos validadores. Este proceso implica que los delegados confíen su poder operativo y de voto a los validadores, quienes luego utilizan los recursos delegados (poder hash de BTC, BTC y CORE) para participar en el proceso de consenso y las decisiones de gobernanza de la red.
 
-## Types of Delegation on the Core Chain
+## Tipos de delegación en la cadena central
 
-1. **BTC/CORE Delegation to Validators:**
+1. **Delegación BTC/CORE a Validadores:**
 
-   - **Purpose:** This type of delegation allows BTC and CORE token holders to support specific validators by delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks.
-   - **Benefits:** Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
+   - **Propósito:** Este tipo de delegación permite a los poseedores de tokens BTC y CORE apoyar a validadores específicos delegándoles sus tokens. A cambio, los validadores utilizan el poder agregado para proteger la red, validar transacciones y producir bloques.
+   - **Beneficios:** Los delegados comparten las recompensas obtenidas por los validadores elegidos, reciben una parte de las tarifas de transacción y bloquean las recompensas en proporción a su apuesta.
 
-2. **Hash Power Delegation from BTC Miners:**
+2. **Delegación de Hash Power de BTC Miners:**
 
-   - **Purpose:** Bitcoin miners can delegate a portion of their computational hash power to validators on the Core network. This unique form of delegation leverages the security and work already being done on the Bitcoin network to enhance the security of the Core Chain.
-   - **Process:** Miners include specific metadata in the Bitcoin blocks they mine, indicating their support for a Core Chain validator, thereby linking the security of both networks.
+   - **Propósito:** Los mineros de Bitcoin pueden delegar una parte de su poder de hash computacional a validadores en la red Core. Esta forma única de delegación aprovecha la seguridad y el trabajo que ya se está realizando en la red Bitcoin para mejorar la seguridad de Core Chain.
+   - **Proceso:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, lo que indica su soporte para un validador de Core Chain, vinculando así la seguridad de ambas redes.
 
-## Importance of Delegations on the Core Chain
+## Importancia de las delegaciones en la cadena central
 
-1. **Enhanced Network Security:** By allowing a broad base of token holders to delegate their assets (BTC and CORE) to validators, Core Chain ensures that the responsibility and power of maintaining the network are distributed among many participants, thereby avoiding centralization and increasing security.
+1. **Seguridad de red mejorada:** Al permitir que una amplia base de poseedores de tokens delegue sus activos (BTC y CORE) a validadores, Core Chain garantiza que la responsabilidad y el poder de mantener la red se distribuyan entre muchos participantes, evitando así la centralización y aumentando la seguridad.
 
-2. **Democratization of the Network:** Delegation democratizes access to the decision-making processes within Core Chain, allowing anyone holding BTC or CORE tokens, regardless of the amount, to participate in governance and consensus. This inclusive approach fosters a diverse and robust governance structure.
+2. **Democratización de la red:** La delegación democratiza el acceso a los procesos de toma de decisiones dentro de Core Chain, permitiendo que cualquier persona que tenga tokens BTC o CORE, independientemente de la cantidad, participe en la gobernanza y el consenso. Este enfoque inclusivo fomenta una estructura de gobernanza diversa y sólida.
 
-3. **Incentivization and Participation:** Delegation incentivizes both validators and BTC/CORE token holders by aligning their interests. Validators are motivated to act in the best interest of the network to maintain their reputation and continue receiving delegated tokens, while delegators benefit from the rewards generated by their validators' activities.
+3. **Incentivación y participación:** La delegación incentiva tanto a los validadores como a los poseedores de tokens BTC/CORE alineando sus intereses. Los validadores están motivados a actuar en el mejor interés de la red para mantener su reputación y continuar recibiendo tokens delegados, mientras que los delegados se benefician de las recompensas generadas por las actividades de sus validadores.
 
-4. **Scalability of Consensus Process:** Delegation allows the network to handle more transactions and accommodate more participants without requiring each to run full nodes. This scalability is crucial for maintaining high performance as the Core Chain ecosystem grows.
+4. **Escalabilidad del proceso de consenso:** La delegación permite que la red maneje más transacciones y acomode a más participantes sin necesidad de que cada uno ejecute nodos completos. Esta escalabilidad es crucial para mantener un alto rendimiento a medida que crece el ecosistema de Core Chain.
 
-5. **Facilitates Staking Flexibility:** Delegation provides token holders with the flexibility to contribute to network security without the need to maintain the infrastructure required for running a full validating node, lowering the barrier for participation.
+5. **Facilita la flexibilidad de las apuestas:** La delegación brinda a los titulares de tokens la flexibilidad de contribuir a la seguridad de la red sin la necesidad de mantener la infraestructura necesaria para ejecutar un nodo de validación completo, lo que reduce la barrera de participación.
 
-6. **Facilitation of Liquid Democracy:** Delegation in Core Chain facilitates a form of liquid democracy, where token holders can directly choose their representatives (validators) in the consensus process or can change their delegation based on performance and trust metrics. This fluid governance model adapts quickly to changes and reflects the current sentiment of the community.
+6. **Facilitación de la democracia líquida:** La delegación en Core Chain facilita una forma de democracia líquida, donde los poseedores de tokens pueden elegir directamente a sus representantes (validadores) en el proceso de consenso o pueden cambiar su delegación en función de métricas de desempeño y confianza. Este modelo de gobernanza fluido se adapta rápidamente a los cambios y refleja el sentimiento actual de la comunidad.
 
-## Conclusion
+## Conclusión
 
-Delegation is one of the key fundamentals of the Core Chain ecosystem, enabling it to maintain a secure, decentralized, and efficient blockchain network. By leveraging the strengths of both DPoS and elements of PoW through the innovative Satoshi Plus consensus mechanism, Core Chain not only enhances its operational capabilities but also aligns closely with the decentralized ethos of blockchain technology. This model of delegation ensures that all participants, from individual token holders to large-scale miners, have a stake in the network’s success and governance, making Core Chain a robust and dynamic blockchain platform.
+La delegación es uno de los fundamentos clave del ecosistema Core Chain, lo que le permite mantener una red blockchain segura, descentralizada y eficiente. Al aprovechar las fortalezas de DPoS y elementos de PoW a través del innovador mecanismo de consenso Satoshi Plus, Core Chain no solo mejora sus capacidades operativas sino que también se alinea estrechamente con el espíritu descentralizado de la tecnología blockchain. Este modelo de delegación garantiza que todos los participantes, desde los poseedores de tokens individuales hasta los mineros a gran escala, tengan interés en el éxito y la gobernanza de la red, lo que convierte a Core Chain en una plataforma blockchain sólida y dinámica.
