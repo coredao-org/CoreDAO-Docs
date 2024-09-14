@@ -1,55 +1,55 @@
 ---
-sidebar_label: Delegating Core
+sidebar_label: Delegar Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating CORE
+# Delegar Core
 
 ---
 
-By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards.
+Al delegar CORE a los validadores, los titulares de CORE pueden ayudar a proteger la red y compartir las recompensas del sistema.
 
-## Validator Selection
+## Selección del validador
 
-Delegators can use Core's staking website to manage their positions:
+Los delegados pueden utilizar el sitio web de apuestas de Core para gestionar sus posiciones:
 
-| Mainnet                                              | Testnet                                                    |
-| ---------------------------------------------------- | ---------------------------------------------------------- |
-| [Mainnet staking website](https://stake.coredao.org) | [Testnet staking website](https://stake.test.btcs.network) |
+| red principal                                                                                                                                                                                       | Red de prueba                                                            |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Sitio web de participación en la red principal] (https://stake.coredao.org) | [Sitio web de participación de Testnet](https://stake.test.btcs.network) |
 
-Validator information is listed on the staking site, with all validators ranked by their current hybrid score, as shown below. Explanations for key terms are available for each column header on the staking site, viewable by clicking on the `i` symbol next to the column header.
+La información del validador aparece en el sitio de apuestas, y todos los validadores se clasifican según su puntuación híbrida actual, como se muestra a continuación. Las explicaciones de los términos clave están disponibles para cada encabezado de columna en el sitio de apuestas, y se pueden ver haciendo clic en el símbolo "i" al lado del encabezado de la columna.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-1.avif)
 
-At the start of each round, Satoshi Plus consensus selects the Validators by their hybrid scores. The nodes are ranked in descending order of this score, with the top **23** nodes selected to form the active Validator set for the current round. Hybrid scores are calculated using the following formula:
+Al comienzo de cada ronda, el consenso de Satoshi Plus selecciona a los Validadores según sus puntuaciones híbridas. Los nodos se clasifican en orden descendente de esta puntuación, con los **23** nodos superiores seleccionados para formar el conjunto de validadores activo para la ronda actual. Las puntuaciones híbridas se calculan utilizando la siguiente fórmula:
 
-`S = hash_percentage * m + coin_percentage * (1 - m)`
+`S = porcentaje_hash * m + porcentaje_moneda * (1 - m)`
 
-Where,
-`coin_percentage` accounts for the ratio of both the **CORE** and **BTC** staking tokens
-`m` is a dynamic weighting factor initially set to **2/3**
+Dónde,
+`coin_percentage` representa la proporción de los tokens de participación **CORE** y **BTC**
+`m` es un factor de ponderación dinámico inicialmente establecido en **2/3**
 
-Validator information is refreshed daily at **00:00 UTC** at the beginning of each round.
+La información del validador se actualiza diariamente a las **00:00 UTC** al comienzo de cada ronda.
 
-## Delegation
+## Delegación
 
-Selecting the name of a Validator will open up a validator page with more information about them, as shown below.
+Al seleccionar el nombre de un Validador, se abrirá una página de validador con más información sobre él, como se muestra a continuación.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-2.avif)
 
-To delegate to the Validator, select the **Delegate→DelegateCoin** button on the top left. Enter the deposit amount in the input field and select 'Delegate' to send your delegation transaction, as shown below. To execute the transaction, you'll need to sign and send it using MetaMask or another compatible web wallet.
+Para delegar al Validador, seleccione el botón **Delegar→DelegarCoin** en la parte superior izquierda. Ingrese el monto del depósito en el campo de entrada y seleccione 'Delegar' para enviar su transacción de delegación, como se muestra a continuación. Para ejecutar la transacción, deberá firmarla y enviarla utilizando MetaMask u otra billetera web compatible.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-3.avif)
 
-After successfully delegating to a Validator, you can find your total delegated amount under the **Coin** tab, with your historical delegation transactions listed under the **CoinRecord** tab. You are able to delegate to more than one Validator.
+Después de delegar con éxito a un Validador, puede encontrar el monto total delegado en la pestaña **Coin**, con sus transacciones históricas de delegación enumeradas en la pestaña **CoinRecord**. Puedes delegar en más de un Validador.
 
-To undelegate your CORE, simply select the **Undelegate→UndelegateCoin** button and sign the transaction.
+Para anular la delegación de su CORE, simplemente seleccione el botón **Anular delegar→Anular delegarCoin** y firme la transacción.
 
-## Claiming Rewards
+## Reclamar recompensas
 
-You can view reward information about your active delegations by selecting **My Staking** on the top right of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
+Puede ver información de recompensas sobre sus delegaciones activas seleccionando **Mi apuesta** en la parte superior derecha del sitio web de apuestas. Las recompensas de delegación (apuestas) se distribuyen después de cada ronda a las 00:00 a. m. UTC todos los días.
 
-To claim your rewards, simply select the **Claim** button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's **Claim** tab, as shown below.
+Para reclamar sus recompensas, simplemente seleccione el botón **Reclamar** en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirá las recompensas en su dirección vinculada. Las transacciones de reclamaciones históricas se enumeran en la pestaña **Reclamaciones** del sitio web, como se muestra a continuación.
 
 ![delegate-core](../../static/img/delegate/delegate-core/delegate-core-4.avif)
