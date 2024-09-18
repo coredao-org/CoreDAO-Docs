@@ -24,7 +24,7 @@ Los puntos finales de llamada a procedimiento remoto (RPC) son cruciales para qu
 - https://core.drpc.org
 - https://rpcar.coredao.org (For Archive Node)
 
-### Puntos RPC de terceros para Core Blockchain Mainnet
+### Third Party RPC Endpoints for Core Blockchain Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
