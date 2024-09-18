@@ -24,7 +24,7 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 - https://core.drpc.org
 - https://rpcar.coredao.org (Pour le nœud archive)
 
-### Points de terminaison RPC tiers pour le Mainnet de la blockchain Core
+### Third Party RPC Endpoints for Core Blockchain Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
