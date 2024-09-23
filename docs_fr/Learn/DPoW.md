@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Exploiter la DPoW dans Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW)
+# Preuve de Travail Déléguée (DPoW)
 
 ---
 
