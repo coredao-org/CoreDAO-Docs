@@ -2,44 +2,44 @@
 sidebar_label: Élection des Validateurs
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about the Satoshi Plus Validator Election Process
+description: Apprenez-en plus sur le processus d'élection des validateurs Satoshi Plus
 ---
 
-# Validator Election
+# Élection des Validateurs
 
 ---
 
 ## Aperçu
 
-The Validator Election Process in Core's Satoshi Plus consensus mechanism is where Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking are synthesized. Bitcoin miners/mining pools, CORE stakers, and Bitcoin stakers contribute to the election of validators via a hybrid scoring system.
+Le processus d'élection des validateurs dans le mécanisme de consensus Satoshi Plus de Core combine la Preuve de Travail Déléguée (DPoW), la Preuve d'Enjeu Déléguée (DPoS) et le staking Non-Custodial de Bitcoin. Les mineurs de Bitcoin/pools de minage, les stakers de CORE et les stakers de Bitcoin contribuent à l'élection des validateurs via un système de score hybride.
 
-Validators play a vital role in producing blocks and validating transactions on the Core network. The election process determines which validators will be part of the active validator set for each round, ensuring that the most trusted and well-supported validators are chosen to maintain the network’s integrity.
+Les validateurs jouent un rôle crucial dans la production des blocs et la validation des transactions sur le réseau Core. Le processus d'élection détermine quels validateurs feront partie de l'ensemble des validateurs actifs pour chaque cycle, garantissant que les validateurs les plus fiables et soutenus sont choisis pour maintenir l'intégrité du réseau.
 
-## Step by Step Process
+## Processus étape par étape
 
-1. **Delegation of Resources:**
-   - **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core Validators by including specific information in the op_return field of the coinbase transaction.
-   - **CORE Token Stakers:** Holders of CORE tokens delegate their staked tokens to their preferred validators.
-   - **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in absolute time locks and delegate their Bitcoin to their chosen validators.
+1. **Délégation des ressources :**
+   - **Mineurs de Bitcoin :** Les mineurs de Bitcoin délèguent leur puissance de hachage aux validateurs Core en incluant des informations spécifiques dans le champ op_return de la transaction coinbase.
+   - **Stakers de tokens CORE :** Les détenteurs de tokens CORE délèguent leurs tokens stakés à leurs validateurs préférés.
+   - **Stakers de Bitcoin :** Les détenteurs de Bitcoin verrouillent leur Bitcoin dans des time-locks absolus et délèguent leur Bitcoin aux validateurs de leur choix.
 
-2. **Hybrid Score Calculation:**
-   - The hybrid score for each validator is calculated based on the amount of delegated hash power from Bitcoin miners, the amount of staked CORE tokens, and the amount of staked Bitcoin.
-   - The formula balances these three components to produce a score that reflects the validator’s overall support and reliability.
+2. **Calcul du score hybride :**
+   - Le score hybride de chaque validateur est calculé en fonction de la puissance de hachage déléguée par les mineurs de Bitcoin, du montant de tokens CORE stakés et du montant de Bitcoin staké.
+   - La formule équilibre ces trois composants pour produire un score qui reflète le soutien global et la fiabilité du validateur.
 
-3. Election of Validators:
-   - Every round, which lasts one day, the validators with the highest hybrid scores are elected to the validator set.
-   - The top 23 validators with the highest scores are chosen to be part of the active validator set for that round.
+3. Élection des validateurs :
+   - Chaque tour, qui dure une journée, les validateurs ayant les meilleurs scores hybrides sont élus dans l'ensemble des validateurs.
+   - Les 23 validateurs ayant les meilleurs scores sont choisis pour faire partie de l'ensemble des validateurs actifs pour ce tour.
 
-4. Validator Responsibilities:
-   - Elected validators are responsible for producing blocks and validating transactions throughout the round.
-   - They work in a round-robin manner, taking turns to produce blocks during each slot, with each slot lasting three seconds.
+4. Responsabilités des validateurs :
+   - Les validateurs élus sont responsables de produire des blocs et de valider des transactions tout au long du tour.
+   - Ils travaillent à tour de rôle, chacun leur tour pour produire des blocs à chaque créneau, avec chaque créneau durant trois secondes.
 
-5. Updating the Validator Set:
-   - The validator set is updated every 200 blocks to ensure stability and performance. If any validator is jailed or slashed, others continue to produce blocks without interruption.
-   - At the end of each round, the accumulated rewards are calculated and distributed, and a new validator set is determined based on the updated hybrid scores.
+5. Mise à jour de l'ensemble des validateurs :
+   - L'ensemble des validateurs est mis à jour tous les 200 blocs pour assurer stabilité et performance. Si un validateur est emprisonné ou pénalisé, les autres continuent de produire des blocs sans interruption.
+   - À la fin de chaque cycle, les récompenses accumulées sont calculées et distribuées, et un nouvel ensemble de validateurs est déterminé en fonction des scores hybrides mis à jour.
 
-6. Rewards Distribution:
-   - Validators and their delegators earn CORE token rewards based on their performance and the amount of resources delegated to them.
+6. Distribution des Récompenses :
+   - Les validateurs et leurs délégateurs gagnent des récompenses en tokens CORE en fonction de leurs performances et des ressources qui leur ont été déléguées.
    - These rewards incentivize continuous participation and diligent performance by validators.
 
 ## Workflow of the Validator Election Process​
