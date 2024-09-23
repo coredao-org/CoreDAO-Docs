@@ -14,7 +14,7 @@ Le Liquid Staking avec stCORE améliore l’utilité du token CORE tout en simpl
 
 ## Premiers pas : Prérequis
 
-1. **Check CORE Token Availability:** Verify that your Core wallet contains the necessary amount of CORE tokens for staking.
+1. **Vérifier la disponibilité des tokens CORE:** Assurez-vous que votre portefeuille Core contient le montant nécessaire de tokens CORE pour le staking.
 2. **Accéder à la plateforme de staking:** [Visitez la plateforme de Staking Liquide de Core](https://stake.coredao.org/stcore)
 3. **Connexion du portefeuille:** Connectez votre portefeuille à la plateforme.
 
