@@ -53,7 +53,7 @@ $$
 ### Stakers de Bitcoin
 
 $$
-    rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S * R}
+    rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S} * R
 $$
 
 Où:
