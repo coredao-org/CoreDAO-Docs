@@ -4,67 +4,44 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# coreBTC Descripción general
+# stCORE: apuesta líquida en el Core
 
 ---
 
-## ¿Qué es coreBTC?
+Core Blockchain ofrece varias soluciones innovadoras como apuesta de Bitcoin sin custodia, coreBTC y apuesta líquida en forma de stCORE para que los usuarios aprovechen al máximo sus tenencias de CORE. La participación líquida es un mecanismo que permite a los titulares de CORE obtener recompensas de Core Consensus mientras mantienen la liquidez de sus activos.
 
-El bitcoin envuelto nativo de Core (coreBTC) sirve como una representación sintética de Bitcoin en la cadena de bloques Core, diseñada para integrar Bitcoin en el panorama de finanzas descentralizadas (DeFi) de Core. Al bloquear Bitcoin y emitir una cantidad equivalente de coreBTC, se mantiene una correlación de valor **1:1**, lo que permite a los titulares de Bitcoin participar de forma segura en actividades DeFi sin utilizar directamente sus tenencias de Bitcoin.
+## ¿Qué es la apuesta de liquidez?
 
-## Importancia en el ecosistema Core
+Apostar CORE ayuda a proteger la red, pero evita que los poseedores de tokens participen en diferentes protocolos DeFi, ya que sus tokens no se pueden utilizar para otros fines mientras están apostados. Acuñar un nuevo token de apuesta de liquidez (stCORE) abre un mundo de posibilidades, lo que permite a los poseedores de tokens utilizar sus tokens en diferentes interacciones mientras continúan ganando recompensas de apuesta. Esencialmente, la apuesta líquida desbloquea liquidez para los tokens apostados, basándose en los sistemas de apuesta existentes.
 
-coreBTC es fundamental para desarrollar un vibrante ecosistema Bitcoin DeFi (BTCfi) dentro de Core. Desbloquea el importante valor almacenado en Bitcoin al hacerlo utilizable en contratos inteligentes y otros servicios financieros basados ​​en blockchain, lo que potencialmente involucra casi **1 billón de dólares** en Bitcoin. Desbloquea el importante valor almacenado en Bitcoin al hacerlo utilizable en contratos inteligentes y otros servicios financieros basados ​​en blockchain, lo que potencialmente involucra casi **1 billón de dólares** en Bitcoin.
+## Propósito principal de stCORE
 
-## Ventajas de coreBTC
+Los propósitos principales de introducir apuestas líquidas a través de stCORE en Core son:
 
-- **Liquidez y usabilidad mejoradas:** coreBTC permite a los titulares de Bitcoin participar en el ecosistema DeFi en la cadena de bloques Core, proporcionando liquidez y mayor utilidad para sus tenencias de Bitcoin.
+- Mejorar la experiencia del usuario
+- Traiga más utilidades del token CORE
 
-- **Descentralización y seguridad:** A diferencia de las soluciones tradicionales de Bitcoin envueltas, coreBTC utiliza una red descentralizada de Lockers, de modo que el proceso mantiene los principios fundamentales de descentralización y seguridad de la cadena de bloques.
+Por el momento, los usuarios pueden apostar tokens CORE a validadores individuales directamente a través de https://stake.coredao.org. Sin embargo, hay dos inconvenientes planteados por la comunidad.
 
-- **Operaciones descentralizadas:** El sistema coreBTC permite bloquear y empaquetar Bitcoin sin depender de una autoridad central, manteniendo la descentralización que es fundamental para la tecnología blockchain.
+- No existe una función de capitalización automática y los usuarios deben reclamar recompensas y volver a apostarlas manualmente a los validadores todos los días.
+- Las apuestas de hash de los grupos de minería de Bitcoin son menos fungibles y no tan estables como las apuestas CORE, lo que hace que la APR de los validadores afectados cambie de manera más dramática.
 
-- **Respaldo de Bitcoin 1:1:** Cada coreBTC está respaldado uno a uno por Bitcoin real, que está bloqueado y protegido por Lockers que brindan importantes garantías para garantizar la seguridad del Bitcoin bloqueado.
+Por otro lado, también estamos buscando formas de agregar más utilidades al propio token CORE. Al introducir stCORE, esperamos que el token CORE también se beneficie. E.g. para proporcionar pares de liquidez CORE/stCORE en intercambios descentralizados.
 
-- **Mantiene la integridad de Bitcoin:** Al no exigir a los titulares de Bitcoin que transfieran sus bitcoins reales a una cadena de bloques diferente ni los alteren de manera significativa, coreBTC preserva la integridad y el valor de las tenencias originales de Bitcoin.
+## Pasos involucrados en Liquid Stake en Core
 
-- **Incentivos a largo plazo:** El diseño del sistema coreBTC incluye incentivos a largo plazo para todos los participantes, incluidos Lockers y Relayers, diseñados para la sostenibilidad y estabilidad del servicio.
+1. **Configuración de apuesta:** Para participar en la apuesta líquida de Core, los usuarios deben convertir sus tenencias de CORE en un formato de apuesta CORE (stCORE). Esto implica bloquear una cierta cantidad de CORE y depositarlo en el contrato de participación stCORE, que automáticamente delegará el CORE a validadores seleccionados en la cadena.
 
-- **Colateralizado y Asegurado:** Los requisitos de garantía para Lockers actúan como un mecanismo de seguro que protege contra actividades fraudulentas y mantiene la fidelidad del proceso de embalaje.
+2. **Emisión de stCORE:** A cambio de apostar CORE, los usuarios reciben tokens de apuesta líquidos, es decir, stCORE. Estos tokens representan sus tenencias CORE apostadas y pueden intercambiarse o transferirse libremente sin dejar de ganar recompensas por apostar.
 
-- **Integración con Core DeFi:** coreBTC se puede usar sin problemas dentro de las aplicaciones DeFi de Core, como préstamos, préstamos y transacciones, de manera similar a cómo se usan otras monedas estables y activos sintéticos en las plataformas DeFi.
+3. **Recompensas por apuesta:** Los usuarios pueden obtener un rendimiento anualizado al mantener stCORE, que es el aumento anual proyectado en su índice de conversión con CORE. Esto significa que los usuarios pueden intercambiar por más CORE cuando queman su stCORE.
 
-- **Respaldo a la propuesta de valor de Bitcoin:** coreBTC aprovecha la reputación y la fortaleza del mercado de Bitcoin, mejorando su funcionalidad y al mismo tiempo continúa respaldando su propuesta de valor como reserva de valor.
+## Beneficios de la apuesta líquida en Core
 
-- **Escalabilidad:** Al proporcionar un mecanismo para que Bitcoin se use en Core, coreBTC ayuda a escalar la usabilidad de Bitcoin sin requerir cambios en su protocolo subyacente, preservando sus atributos originales mientras expande sus casos de uso.
+1. **Liquidez:** Una de las principales ventajas de las apuestas líquidas en Core es que permite a los usuarios mantener la liquidez de sus tenencias de CORE. A diferencia de los mecanismos de apuesta tradicionales ofrecidos por otras plataformas, donde los fondos están bloqueados durante un período específico, la apuesta líquida Core brinda flexibilidad al permitir a los usuarios intercambiar o transferir tokens stCORE sin esperar a que finalice el período de apuesta. En el modelo de apuesta CORE, cualquiera puede retirar la apuesta de su CORE en cualquier momento, por lo que no tiene que esperar a que finalice el período de apuesta. Nuestro modelo de apuesta CORE es "apostar y ganar", "deshacer apuesta y dejar de ganar". Entonces está bloqueado si quieres ganar.
 
-## ¿Por qué optar por coreBTC?
-
-Optar por coreBTC ofrece varios beneficios atractivos, lo que lo convierte en una opción atractiva para los poseedores y usuarios de Bitcoin en el ecosistema Core. Aquí hay una lista con viñetas que describe por qué uno podría elegir coreBTC:
-
-- **Integración perfecta de DeFi:** coreBTC permite a los titulares de Bitcoin interactuar sin problemas con aplicaciones DeFi en la cadena de bloques Core, ampliando la utilidad de su Bitcoin sin convertirlo en otras criptomonedas.
-
-- **Preservación de las propiedades de Bitcoin:** Al utilizar coreBTC, los usuarios pueden disfrutar de los beneficios de las características fundamentales de Bitcoin, como su sólida seguridad y escasez, mientras participan en una amplia gama de actividades de blockchain.
-
-- **Descentralizado y seguro:** La naturaleza descentralizada del sistema de gestión y emisión de coreBTC está diseñada para que los usuarios no dependan de ninguna parte central, manteniendo el espíritu de descentralización de la tecnología blockchain.
-
-- **Liquidez mejorada:** coreBTC ofrece a los titulares de Bitcoin mayores opciones de liquidez, permitiéndoles aprovechar sus tenencias en diversas transacciones financieras y contratos inteligentes dentro del ecosistema Core.
-
-- **Sin riesgo de custodia:** Los usuarios conservan el control total sobre su Bitcoin hasta que deciden guardarlo para coreBTC, lo que reduce el riesgo de custodia típicamente asociado con la entrega de activos a un tercero.
-
-- **Evitar la vinculación con moneda fiduciaria:** A diferencia de las monedas estables vinculadas a monedas fiduciarias, coreBTC está vinculada directamente a Bitcoin, lo que evita problemas relacionados con la volatilidad y la inflación de la moneda fiduciaria.
-
-- **Oportunidades de recompensa:** Los usuarios pueden ganar recompensas adicionales en tokens CORE al participar en la apuesta y la seguridad de la cadena de bloques Core, aumentando así el retorno potencial de su inversión.
-
-- **Inversión a prueba de futuro:** A medida que Core continúa desarrollando y ampliando sus ofertas, tener coreBTC podría proporcionar ventajas estratégicas para acceder a nuevos servicios y funciones a medida que estén disponibles en la plataforma.
-
-**Inversión a prueba de futuro:** A medida que Core continúa desarrollando y ampliando sus ofertas, tener coreBTC podría proporcionar ventajas estratégicas para acceder a nuevos servicios y funciones a medida que estén disponibles en la plataforma.
-
-## Cómo funciona coreBTC
-
-- **Proceso de acuñación:** Los usuarios envían Bitcoin a la dirección de un casillero. **Proceso de acuñación:** Los usuarios envían Bitcoin a la dirección de un casillero.
-- **Proceso de canje:** Los usuarios pueden quemar su coreBTC para recuperar su Bitcoin bloqueado. El contrato inteligente coreBTC verifica la quema e indica al Locker que envíe el Bitcoin equivalente a la dirección especificada del usuario.
+2. **Potencial de ganancias:** La apuesta líquida central permite a los usuarios ganar recompensas por su CORE apostado mientras siguen participando en el ecosistema Core más amplio. Esto presenta una oportunidad para beneficiarse tanto de las recompensas por apostar como de la posible apreciación del precio de Core.
 
 ## Conclusión
 
-coreBTC es un componente importante del ecosistema Core, que mejora la utilidad de Bitcoin al permitir su participación activa en DeFi mientras se adhiere a los principios de descentralización y seguridad. A través de su intrincado sistema de Lockers, Relayers y contratos inteligentes, coreBTC permite que Bitcoin se utilice y realice transacciones de forma segura dentro del ecosistema Core, ampliando su atractivo y utilidad funcional.
+La apuesta líquida en Core en forma de stCore proporciona una opción innovadora e impresionante para que los titulares de CORE maximicen sus rendimientos manteniendo la liquidez de sus activos. Siguiendo los pasos necesarios y siendo conscientes de los riesgos asociados, los usuarios pueden beneficiarse de las recompensas mientras participan activamente en el ecosistema Core. A medida que la red Core evoluciona y mejora con cada actualización, es probable que las apuestas líquidas de Core se conviertan en una opción cada vez más popular para los titulares de CORE que buscan optimizar sus estrategias de inversión.
