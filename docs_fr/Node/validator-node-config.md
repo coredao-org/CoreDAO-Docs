@@ -26,20 +26,20 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
 
 Pour les Nœuds de Validateur sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requis           | Détails                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 4 cœurs CPU                                                                                                         |
-| RAM              | 8 Go                                                                                                                |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                     |
+| CPU              | 4 cœurs CPU                                                                                                                                  |
+| RAM              | 8 Go                                                                                                                                         |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
 
 #### Spécifications matérielles pour les nœuds de validateur sur le Mainnet
 
 Pour les Nœuds de Validateur sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requis           | Détails                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                         |
-| RAM              | 32 Go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                     |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
