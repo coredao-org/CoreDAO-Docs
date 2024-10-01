@@ -4,108 +4,116 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conception de coreBTC
+# Conception du Liquid Staking (stCORE)
 
-Le coreBTC dans la blockchain Core représente une innovation majeure dans le domaine de la technologie blockchain, en particulier pour améliorer l'utilité du Bitcoin dans la finance décentralisée (DeFi). Cette représentation synthétique du Bitcoin sur Core assure une interaction transparente avec les applications DeFi tout en maintenant les propriétés critiques du Bitcoin.
+---
 
-## Composants clés et leurs rôles
+Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser leur potentiel d'actifs avec plus de flexibilité et d'efficacité.
 
-**1. Lockers:**
+## Principes de conception
 
-- **Rôle:** Les Lockers sont responsables de la détention du Bitcoin réel qui garantit le coreBTC. Les utilisateurs envoient leur Bitcoin à l'adresse d'un Locker pour initier le processus d'enveloppement. Tout le monde peut s'inscrire en tant que Locker sur Core en bloquant des garanties.
-- **Sécurité:** Les Lockers doivent fournir une quantité significative de garanties en jetons CORE pour maintenir la sécurité du Bitcoin qu'ils détiennent. Cette garantie peut être liquidée en cas de mauvaise conduite, offrant ainsi une forte dissuasion contre les activités frauduleuses.
+Les principaux principes de conception du liquid staking via stCORE sur la Core Chain sont les suivants:
 
-**2. Collatéral:**
-\- Les actifs spécifiques et le ratio de collatéral requis sont des paramètres du réseau déterminés par la Core DAO, et le collatéral déposé par les Lockers garantit que le bitcoin verrouillé est toujours soutenu par des actifs d'une valeur supérieure. Si le prix du bitcoin change par rapport à la valeur du collatéral, le Locker doit ajuster son collatéral ou faire face à une liquidation potentielle.
-\- Le collatéral peut être réduit si les Lockers transfèrent du bitcoin sans autorisation ou ne renvoient pas rapidement le bitcoin lorsque le coreBTC est brûlé.
-\- Les Lockers peuvent se désinscrire et récupérer leur collatéral à tout moment, tant qu'ils n'ont plus de bitcoin résiduel verrouillé et qu'ils n'ont pas de demandes de déverrouillage non satisfaites. En échange des services fournis, les Lockers perçoivent de petites commissions.
+- Simple, avec peu ou aucune modification des protocoles blockchain existants.
+- Décentralisé, sans compromettre la sécurité du réseau.
+- Facile à utiliser du point de vue des utilisateurs.
 
-**2. Relayeurs:**
+## Résumé de la conception
 
-- **Role:** Les Relayers surveillent la blockchain Bitcoin pour les transactions de verrouillage dirigées vers les Lockers et valident ces transactions. Ils jouent un rôle crucial pour vérifier que le Bitcoin verrouillé correspond précisément au coreBTC émis sur la blockchain Core.
-- **Fonctionnalité:** Dès qu'ils détectent une transaction de verrouillage valide, les Relayeurs soumettent une preuve à Core pour émettre le montant correspondant de coreBTC, intégrant ainsi le Bitcoin dans l'écosystème de la blockchain Core de manière sécurisée.
+Après avoir étudié différents projets de LST (Liquid Staking Token) comme LiDO et Kava, et en tenant compte des caractéristiques uniques de la blockchain Core, le liquid staking sous forme de stCORE est conçu comme suit:
 
-**3. smart Contract coreBTC:**
+- Introduction d'un nouveau module appelé "Earn" avec un token standard ERC-20, **stCORE**
+- Les utilisateurs interagissent avec le module `Earn` pour créer/racheter/retirer leurs actifs
+- Le module `Earn` interagit avec les contrats de la plateforme Core tels que `PledgeAgent` (le contrat de staking) et `CandidateHub`
+- La valeur de tous les revenus du module `Earn` sera reflétée dans la valeur du token **stCORE**
+- Le ratio de conversion **CORE/stCORE** sera mis à jour quotidiennement pour s'adapter au mécanisme de tour de la blockchain Core
+- D'autres méthodes sont également introduites pour permettre à l'opérateur du système de rééquilibrer et d'optimiser le staking sur l'ensemble des validateurs.
 
-- **Role:** Le smart contract coreBTC sur Core gère l'émission et la destruction des tokens coreBTC. Il interagit avec les Relayers et les Lockers pour inciter toutes les opérations à respecter les règles du protocole.
-- **Mécanismes de sécurité:** Le smart contract comprend des mécanismes pour vérifier les preuves de transaction soumises par les Relayeurs, gérer le collatéral déposé par les Lockers, et exécuter les processus d'émission et de rachat du coreBTC.
+## Perspective utilisateur
 
-**4. Liquidateurs:**
+### Création
 
-- **Rôle:** En cas de fluctuations de prix ou de mauvaise conduite de la part d'un Locker, les Liquidateurs sont chargés de maintenir la sécurité et la couverture du coreBTC en appliquant les exigences de collatéral.
-- **Fonction:** Les Liquidateurs peuvent forcer la liquidation du collatéral d'un Locker si la valeur du Bitcoin verrouillé baisse ou si le Locker ne parvient pas à maintenir le ratio de collatéral requis. Cela permet de préserver l'intégrité et le soutien du coreBTC.
+Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), ils peuvent créer du stCORE au même ratio de conversion. Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
 
-\*\*5. Gardiens: \*\*
+### Rachat
 
-- **Rôle:** L'activité des Lockers est surveillée par les Gardiens, qui vérifient tout comportement inapproprié et appliquent des réductions de collatéral si nécessaire.
-- **Fonction:** Un Gardien peut déclencher le smart contract de Core pour réduire une partie du collatéral du Locker. Dans ce cas, une partie du collatéral du Locker, équivalente à la valeur du coreBTC brûlé par l'utilisateur, est transférée à l'utilisateur. De plus, le Gardien qui a déclenché cette action reçoit une récompense sous forme d'une partie de la valeur de ce collatéral pour son intervention.
+Le système est conçu de manière à ce que les utilisateurs puissent toujours racheter la quantité de tokens stCORE qu'ils possèdent. Par exemple, si le ratio de conversion est de 1:1,1, alors ils peuvent racheter 100 stCORE et recevoir 110 CORE en retour.
 
-## Comment fonctionne le coreBTC
+:::note
+Il existe une période de rachat par défaut de **7 jours**. Une fois que les utilisateurs demandent un rachat, ils doivent attendre 7 jours avant de pouvoir retirer leurs tokens CORE dans leur portefeuille.
+:::
 
-Le coreBTC est un actif synthétique innovant développé au sein de l'écosystème de la blockchain Core, permettant à Bitcoin d'être utilisé de manière transparente dans des applications de finance décentralisée (DeFi) sur la blockchain Core. Le processus commence lorsqu'un utilisateur verrouille son Bitcoin avec un dépositaire désigné, appelé un **Locker**, qui détient le Bitcoin réel et fournit une quantité importante de collatéral pour sécuriser la transaction. Ce Bitcoin est ensuite représenté sur Core sous forme de coreBTC, maintenant une parité stricte de **1:1** pour maintenir une cohérence de valeur entre le Bitcoin verrouillé et le coreBTC émis.
+## Cas d'utilisation communs ERC-20
 
-Les Relayeurs jouent un rôle crucial en surveillant ces transactions Bitcoin et en les validant sur Core. Une fois validée, les détails de la transaction sont envoyés au smart contract du coreBTC, qui émet une quantité équivalente de coreBTC et l'accrédite dans le portefeuille de l'utilisateur. Ce coreBTC peut ensuite être utilisé sur diverses plateformes DeFi au sein de l'écosystème Core, permettant aux détenteurs de Bitcoin de s'engager dans des activités de prêt, d'emprunt, de trading, et d'autres activités financières sans réellement dépenser ou risquer leurs avoirs en Bitcoin.
+Le stCORE étant un token ERC-20 standard, les utilisateurs peuvent effectuer toutes les actions éligibles à un token ERC-20, telles que le transfert, la fourniture de liquidités sur des DEX, l'échange, etc.
 
-Le rachat du coreBTC en Bitcoin d'origine implique que l'utilisateur initie un processus de brûlage, où le coreBTC est détruit, et le Bitcoin correspondant est déverrouillé et renvoyé du Locker à l'adresse spécifiée par l'utilisateur. Tout le système est sécurisé par une gestion rigoureuse du collatéral et des protocoles de liquidation, ainsi les Lockers maintiennent un collatéral suffisant contre le Bitcoin qu'ils détiennent. De plus, des mécanismes de réduction (slashing) sont en place pour pénaliser toute activité frauduleuse des Lockers, protégeant ainsi l'intégrité et la fiabilité du coreBTC au sein de l'écosystème Core. Ce design améliore non seulement la liquidité et l'utilité du Bitcoin, mais conserve également ses propriétés fondamentales de décentralisation et de sécurité.
+## Implémentations
 
-## Création et parité du coreBTC
+L'implémentation du module `Earn` de liquid staking se trouve [ici](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-Verrouiller du Bitcoin et le lier au coreBTC est essentiel pour maintenir l'intégrité et la fiabilité de cet actif synthétique:
+Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
 
-- **Stockage sécurisé:** Le Bitcoin verrouillé est stocké dans des adresses contrôlées par les Lockers, qui sont incités à maintenir la sécurité et la transparence grâce à leurs obligations collatéral.
-- **Collatéralisation:** Le collatéral fourni par les Lockers sous-tend le processus de parité, ainsi pour chaque coreBTC en circulation, une quantité équivalente de Bitcoin est détenue en toute sécurité par un Locker.
+- **mint():** créer du stCORE en utilisant du CORE
+- **redeem():** racheter du stCORE et récupérer du CORE
+- **withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
 
-La création du coreBTC commence lorsqu'un utilisateur verrouille son Bitcoin dans le système. L'utilisateur envoie le Bitcoin à une adresse sécurisée contrôlée par un Locker désigné. Cette action déclenche le processus de création sur la blockchain Core.
+Les méthodes opérateur dans le module `Earn` incluent :
 
-- **Lockers:** Ce sont des nœuds au sein du réseau Core responsables de la détention du Bitcoin réel. Chaque Locker doit déposer une quantité importante de collatéral, généralement en tokens CORE, pour couvrir d'éventuels défauts ou activités frauduleuses.
-- **Relayeurs:** Après l'envoi du Bitcoin à l'adresse du Locker, les Relayeurs surveillent ces transactions. Une fois confirmée, les Relayeurs valident la transaction et soumettent une preuve au smart contract du coreBTC sur la blockchain Core.
-- **Exécution du smart contract:** Dès réception de la preuve nécessaire des Relayeurs, le smart contract du coreBTC fait appel au client léger Bitcoin pour vérifier l'authenticité et la finalité de la transaction Bitcoin concernée, puis crée une quantité équivalente de coreBTC. Ce coreBTC est ensuite émis dans le portefeuille de l'utilisateur sur la blockchain Core, respectant une parité 1:1 avec le Bitcoin verrouillé.
+- **afterTurnRound():** où l'autocompounding (intérêts composés automatiques) est mis en œuvre
+- **rebalance():** équilibrer les validateurs les plus/moins stakés
+- **manualRebalance():** transférer manuellement le staking entre deux validateurs
 
-![pegging-in-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
+### Sélection des validateurs lors de création/rachat
 
-## Rachat et parité du coreBTC
+Notez que chaque fois qu'une création ou un rachat a lieu, le contrat `Earn` délègue des tokens CORE au `PledgeAgent` ou annule la délégation depuis `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
 
-Le rachat, ou la sortie de parité, consiste à inverser le processus de création :
+Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
 
-- **Brûlage du coreBTC:** Les utilisateurs initient le processus de rachat en envoyant une demande au smart contract du coreBTC pour brûler une quantité spécifiée de coreBTC, en indiquant l'adresse Bitcoin où ils souhaitent recevoir leur Bitcoin.
-- **Déblocage du Bitcoin:** Une fois le coreBTC brûlé avec succès, le smart contract signale au Locker de libérer la quantité correspondante de Bitcoin. Le Locker envoie ensuite ce Bitcoin à l'adresse spécifiée par l'utilisateur, complétant ainsi le processus de sortie de parité. Une fois la transaction Bitcoin confirmée, le Locker la transmet à Core où elle est finalement vérifiée par le client léger Bitcoin
+Lors d'un redeem, le contrat `Earn` sélectionne les validateurs de manière aléatoire via -  `_randomIndex()`. Un index est choisi aléatoirement et utilisé comme point de départ pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
 
-![pegging-out-coreBTC](../../../../static/img/coreBTC/pegout-corebtc.png)
+### Équilibre des validateurs sur les montants stakés
 
-## Processus de Liquidation
+Chaque fois que
 
-Le processus de liquidation est conçu pour protéger le système des défauts de paiement et garantir que le support du coreBTC reste sécurisé:
+- Une création a lieu, l'utilisateur peut choisir librement le validateur
+- Un rachat a lieu, le système sélectionne les validateurs de manière aléatoire
 
-- **Surveillance des ratios collatéraux:** Les liquidateurs surveillent en permanence la valeur du Bitcoin détenu par les Lockers par rapport au coreBTC émis.
-- **Déclenchement de la liquidation:** Si la valeur marchande du Bitcoin verrouillé chute de manière significative, ou si un Locker ne parvient pas à maintenir le ratio de collatéral requis, les liquidateurs peuvent initier la vente du collatéral du Locker pour couvrir les pertes potentielles.
-- **Mécanisme de liquidation:** La liquidation est effectuée via Core, où le collatéral insuffisant est vendu pour maintenir le soutien nécessaire pour le coreBTC. Pendant le processus, les liquidateurs utilisent du coreBTC pour acheter les tokens CORE collatéralisés à un prix réduit, et le coreBTC est brûlé. Cela augmente le ratio de collatéral et restaure la santé financière du Locker. Lorsque le coreBTC est brûlé, son offre est réduite et il devient plus rare, libérant ainsi le Locker pour reprendre possession d'une quantité de Bitcoin sous-jacent équivalente à la valeur du coreBTC éliminé. Le Locker est ensuite rééquilibré conformément aux exigences de collatéral ; si l'utilisateur initial qui a envoyé le Bitcoin à l'adresse du Locker souhaite récupérer son Bitcoin, il peut choisir n'importe quel Locker pour l'obtenir. Le rachat de coreBTC contre du Bitcoin se fait au niveau systémique, et non pas dans une relation directe entre un utilisateur et un Locker particulier.
+Ce mécanisme garantit que les tokens CORE détenus par le module Earn sont répartis de manière relativement équilibrée entre les validateurs.
 
-![liquidation](../../../../static/img/coreBTC/liquidation-process.png)
+Cependant, des déséquilibres peuvent survenir en raison d'opérations spécifiques comme une création ou un rachat de grande valeur. Pour ces cas, des méthodes de rééquilibrage ont été introduites.
 
-## Processus de Slashing
+- **rebalance():** Le système sélectionne les validateurs avec les montants les plus élevés et les plus faibles de staking, et les égalise si l'écart dépasse un seuil prédéfini.
+- **manualRebalance():** L'opérateur transfère manuellement le staking d'un validateur à un autre.
 
-Sur la blockchain Core, le concept de slashing est essentiel pour maintenir l'intégrité et la sécurité des transactions coreBTC. Le slashing est une mesure punitive utilisée pour pénaliser les Lockers en cas de mauvaise conduite ou de non-respect des protocoles établis. Il existe deux scénarios principaux où le slashing peut se produire, chacun étant conçu pour protéger le système et ses utilisateurs contre la fraude et les mauvaises pratiques:
+### Calcul du ratio de conversion stCORE/CORE
 
-### 1. **Mouvement non autorisé du Bitcoin verrouillé**
+Après chaque tour, le module `Earn` récupère les récompenses de chaque validateur et les délègue à nouveau. C'est ainsi que l'autocompounding (intérêts composés automatiques) est mis en œuvre en interne. Pendant cette période, le système déplace également le staking des validateurs inactifs ou en prison vers des validateurs actifs pour améliorer le rendement global.
 
-Dans ce cas, le slashing se produit lorsqu'un Locker déplace du Bitcoin verrouillé sans avoir reçu une demande de brûlage correspondante d'un détenteur de coreBTC. Ce scénario est considéré comme une violation grave, car il menace directement la parité 1:1 et la confiance des détenteurs de coreBTC dans la capacité du système à garantir que leurs tokens sont bien adossés à du Bitcoin réel.
+Après cela, le ratio de conversion stCORE/CORE est mis à jour. La formule est la suivante
 
-- **Déclencheur:** Le processus de slashing est déclenché lorsqu'un Locker transfère du Bitcoin verrouillé vers une adresse non autorisée ou pour une utilisation non autorisée qui ne correspond pas à une demande légitime et vérifiée de rachat de coreBTC.
-- **Détection et signalement:** Cette mauvaise conduite peut être détectée par les systèmes de surveillance de Core ou par d'autres participants au réseau, souvent appelés Gardiens, qui surveillent et signalent toute activité suspecte des Lockers.
-- **Conséquence:** Après confirmation du transfert non autorisé, une partie du collatéral du Locker est saisie et utilisée pour compenser la différence créée dans le système. Cela pénalise non seulement le Locker, mais contribue également à rétablir l'équilibre entre le coreBTC en circulation et son adossement, garantissant ainsi l'intégrité du système.
+```
+    Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply() 
+```
 
-![slashing](../../../../static/img/coreBTC/slashing-1.png)
+Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour.
 
-### 2. **Echec de livraison du Bitcoin lors du rachat de coreBTC**
+Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
 
-Ce scénario se produit lorsqu'un détenteur de coreBTC décide de racheter ses tokens contre le Bitcoin sous-jacent, mais que le Locker responsable de la libération du Bitcoin ne le fait pas dans le délai imparti.
+### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
-- **Déclencheur:** Un détenteur de coreBTC soumet une transaction de brûlage, détruisant effectivement une certaine quantité de coreBTC avec l'attente de recevoir une quantité équivalente de Bitcoin d'un Locker. Si le Locker ne traite pas cette transaction et ne libère pas le Bitcoin comme requis, un slashing est déclenché.
-- **Détection et réponse:** Comme dans le premier cas, cet échec peut être détecté par les moniteurs du réseau ou signalé par les utilisateurs. Après vérification que le Locker n'a pas rempli la demande de rachat dans les délais, le système initie un protocole de slashing.
-- **Conséquence:** Une partie importante du collatéral du Locker est réduite à titre de mesure punitive et compensatoire. Le collatéral slashé est généralement utilisé pour certifier que l'utilisateur reçoive son Bitcoin, préservant ainsi la confiance dans le système coreBTC et compensant les pertes potentielles causées par le retard ou l'échec.
+Il est important de noter que dans le contrat `PledgeAgent` (le contrat de staking), lorsque les utilisateurs délèguent
 
-![slashing](../../../../static/img/coreBTC/slashing-2.png)
+- Le montant de CORE **doit** être supérieur ou égal à 1
 
-## Conclusion
+Et lors de l'annulation de la délégation
 
-La conception du coreBTC sur Core propose un cadre solide pour l'intégration du Bitcoin dans les applications DeFi tout en conservant ses caractéristiques fondamentales de sécurité et de décentralisation. Grâce à un système bien structuré de création, rachat, liquidation et slashing, soutenu par des exigences de collatéral strictes, coreBTC permet à la valeur du Bitcoin à être exploitée de manière innovante, sans compromettre la confiance et la sécurité qui le définissent.
+- Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
+- Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
+
+Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
+
+L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
+
+Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur pour y déléguer les tokens CORE. Cela vise à garantir un traitement équitable de tous les candidats validateurs, qu'ils soient déjà élus ou en attente. Cependant, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir aléatoirement un validateur approprié, le tout de manière transparente pour l'utilisateur.
+
+Lors du redeem, le contrat Earn choisit les validateurs de manière aléatoire via la méthode - ` _randomIndex()`. Un index est sélectionné aléatoirement pour parcourir la liste des validateurs jusqu'à ce qu'un nombre suffisant de tokens CORE aient leurs délégations annulés.
