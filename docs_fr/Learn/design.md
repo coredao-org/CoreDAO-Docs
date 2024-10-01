@@ -1,119 +1,160 @@
 ---
-sidebar_label: Conception
+sidebar_label: Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conception du Liquid Staking (stCORE)
+# Conception du Staking Non-Custodial de Bitcoin
 
 ---
 
-Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser leur potentiel d'actifs avec plus de flexibilité et d'efficacité.
+## Contexte
 
-## Principes de conception
+La méthodologie pour intégrer le staking de bitcoins repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le `OP_CHECKLOCKTIMEVERIFY` (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
 
-Les principaux principes de conception du liquid staking via stCORE sur la Core Chain sont les suivants:
+![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(5\).png)
 
-- Simple, avec peu ou aucune modification des protocoles blockchain existants.
-- Décentralisé, sans compromettre la sécurité du réseau.
-- Facile à utiliser du point de vue des utilisateurs.
+## Structure des transactions
 
-## Résumé de la conception
+### Transaction de Staking
 
-Après avoir étudié différents projets de LST (Liquid Staking Token) comme LiDO et Kava, et en tenant compte des caractéristiques uniques de la blockchain Core, le liquid staking sous forme de stCORE est conçu comme suit:
+Une transaction de staking Bitcoin doit comporter deux ou trois sorties, qui sont
 
-- Introduction d'un nouveau module appelé "Earn" avec un token standard ERC-20, **stCORE**
-- Les utilisateurs interagissent avec le module `Earn` pour créer/racheter/retirer leurs actifs
-- Le module `Earn` interagit avec les contrats de la plateforme Core tels que `PledgeAgent` (le contrat de staking) et `CandidateHub`
-- La valeur de tous les revenus du module `Earn` sera reflétée dans la valeur du token **stCORE**
-- Le ratio de conversion **CORE/stCORE** sera mis à jour quotidiennement pour s'adapter au mécanisme de tour de la blockchain Core
-- D'autres méthodes sont également introduites pour permettre à l'opérateur du système de rééquilibrer et d'optimiser le staking sur l'ensemble des validateurs.
+- Sortie de type `P2SH/P2WSH`, avec un script de rachat activé par un verrouillage temporel
+- Sortie de type `OP_RETURN` avec les informations de staking de Core
+- (_Optional_) Adresse de changement
 
-## Perspective utilisateur
+Notez qu'il n'y a **aucune** restriction sur les entrées.
 
-### Création
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(1\).png)
 
-Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), ils peuvent créer du stCORE au même ratio de conversion. Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
+### Transaction de retrait
 
-### Rachat
+Lorsque le verrouillage temporel se termine, l'UTXO verrouillé peut être dépensé en utilisant le script de rachat
 
-Le système est conçu de manière à ce que les utilisateurs puissent toujours racheter la quantité de tokens stCORE qu'ils possèdent. Par exemple, si le ratio de conversion est de 1:1,1, alors ils peuvent racheter 100 stCORE et recevoir 110 CORE en retour.
+![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(2\).png)
 
-:::note
-Il existe une période de rachat par défaut de **7 jours**. Une fois que les utilisateurs demandent un rachat, ils doivent attendre 7 jours avant de pouvoir retirer leurs tokens CORE dans leur portefeuille.
-:::
+## Design du script
 
-## Cas d'utilisation communs ERC-20
+### Sortie P2SH/P2WSH
 
-Le stCORE étant un token ERC-20 standard, les utilisateurs peuvent effectuer toutes les actions éligibles à un token ERC-20, telles que le transfert, la fourniture de liquidités sur des DEX, l'échange, etc.
+- Core prend en charge à la fois les sorties `P2SH` et `P2WSH` pour le staking Bitcoin.
 
-## Implémentations
+- La construction de la sortie du type `P2SH` est la suivante
 
-L'implémentation du module `Earn` de liquid staking se trouve [ici](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
+  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
-Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
+- La construction de la sortie de type `P2WSH` est la suivante
 
-- **mint():** créer du stCORE en utilisant du CORE
-- **redeem():** racheter du stCORE et récupérer du CORE
-- **withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
+  - `OP_0 <SHA256(RedeemScript)>`
 
-Les méthodes opérateur dans le module `Earn` incluent :
+### Script de Rachat
 
-- **afterTurnRound():** où l'autocompounding (intérêts composés automatiques) est mis en œuvre
-- **rebalance():** équilibrer les validateurs les plus/moins stakés
-- **manualRebalance():** transférer manuellement le staking entre deux validateurs
+Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelques types courants.
 
-### Sélection des validateurs lors de création/rachat
+- Lors de l'utilisation d'une clé publique `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG`
+  et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <RedeemScript>`
 
-Notez que chaque fois qu'une création ou un rachat a lieu, le contrat `Earn` délègue des tokens CORE au `PledgeAgent` ou annule la délégation depuis `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
+- Lors de l'utilisation d'une clé publique de hachage (fortement recommandé) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` et le script de déverrouillage correspondant est `<sig> <pubKey> <RedeepScript>`
 
-Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
+- Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` Le montant et la durée du Bitcoin verrouillé dans cette sortie seront utilisés pour le calcul de l'élection des validateurs et la distribution des récompenses sur Core.
 
-Lors d'un redeem, le contrat `Earn` sélectionne les validateurs de manière aléatoire via -  `_randomIndex()`. Un index est choisi aléatoirement et utilisé comme point de départ pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
+> **Note**
+> Il y a des _exigences minimales_ concernant le **montant** et la **durée** pour que le staking soit éligible sur Core. Un utilisateur doit staker au moins **0,01 Bitcoin** (moins les frais de transaction) pour au moins **10 jours** (`CLTV timestamp - transaction confirmation timestamp > 10 days`).
 
-### Équilibre des validateurs sur les montants stakés
+## Sortie OP_RETURN
 
-Chaque fois que
+La sortie `OP_RETURN` doit contenir toutes les informations de staking dans l'ordre, et être composée dans le format suivant:
 
-- Une création a lieu, l'utilisateur peut choisir librement le validateur
-- Un rachat a lieu, le système sélectionne les validateurs de manière aléatoire
+- **`OP_RETURN`:** identifiant `0x6a`
+- **`LENGTH`:** représente la longueur totale en octet après l'opcode `OP_RETURN`. Notez que toutes les données doivent être insérées avec la taille d'octet(s) approprié(s).
+- **`Satoshi Plus Identifier`:** (**SAT+**) 4 octets
+- **`Version`:** (**0x01**) 1 octet
+- **`Chain ID`:** (1115 pour le Testnet Core et 1116 pour le Mainnet Core) 2 octets
+- **`Delegator`:** L'adresse Core pour recevoir les récompenses, 20 octets
+- **`Validator`:** L'adresse du validateur Core pour le staking, 20 octets
+- **`Fee`:** Frais pour le relayeur, 1 octet, allant de [0, 255], mesuré en CORE
+- (_Facultatif_) **`RedeemScript`**
+- (_Facultatif_) **`Timelock`:** 4 octets
 
-Ce mécanisme garantit que les tokens CORE détenus par le module Earn sont répartis de manière relativement équilibrée entre les validateurs.
+#### Points Clés
 
-Cependant, des déséquilibres peuvent survenir en raison d'opérations spécifiques comme une création ou un rachat de grande valeur. Pour ces cas, des méthodes de rééquilibrage ont été introduites.
+- Tout octet pouvant être traduit en nombre doit utiliser`OP_number` (`{0}` doit utiliser `OP_0` au lieu de `0x0100`, `{16}` doit utiliser `OP_16` au lieu de `0x0110`)
+- Tout octet dont la longueur est inférieure à `0x4c (76)` est inséré avec 1 octet égal à la taille `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
+- Les octets plus grands ou égaux à `0x4c` sont insérés en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivie de la longueur puis des données `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+- Les octets de longueur supérieure à `255` utilisent `0x4d` (`OP_PUSHDATA2`)
+- Les octets de longueur supérieure à `65535` (`0xffff`) utilisent `0x4e` (`OP_PUSHDATA4`)
 
-- **rebalance():** Le système sélectionne les validateurs avec les montants les plus élevés et les plus faibles de staking, et les égalise si l'écart dépasse un seuil prédéfini.
-- **manualRebalance():** L'opérateur transfère manuellement le staking d'un validateur à un autre.
+Soit le `RedeemScript` soit le `Timelock` doit être disponible, afin de permettre au relayeur d'obtenir le `RedeemScript` et de soumettre les transactions sur Core. Si un `RedeemScript` est fourni, le relayeur l'utilisera directement. Sinon, le relayeur construira le script de rachat basé sur le timelock et les informations dans les entrées de la transaction. Vous trouverez plus d'informations sur le rôle du relayeur dans la section [ci-dessous](#role-of-relayers).
 
-### Calcul du ratio de conversion stCORE/CORE
+## Exemples de Transactions
 
-Après chaque tour, le module `Earn` récupère les récompenses de chaque validateur et les délègue à nouveau. C'est ainsi que l'autocompounding (intérêts composés automatiques) est mis en œuvre en interne. Pendant cette période, le système déplace également le staking des validateurs inactifs ou en prison vers des validateurs actifs pour améliorer le rendement global.
+### Transaction de Staking
 
-Après cela, le ratio de conversion stCORE/CORE est mis à jour. La formule est la suivante
+[https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
+![btc-staking-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(3\).png)
+
+#### Sortie P2WSH
+
+Il s'agit de la sortie de staking, une adresse P2WSH standard. Le script de rachat utilisé est `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
+
+```jsx
+OP_PUSHBYTES_4 1f5e0e66
+OP_CLTV
+OP_DROP
+OP_DUP
+OP_HASH160
+OP_PUSHBYTES_20 c4b8ae927ff2b9ce218e20bf06d425d6b68424fd
+OP_EQUALVERIFY
+OP_CHECKSIG
 ```
-    Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply() 
-```
 
-Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour.
+Le script est très similaire à un script de rachat P2PKH normal, sauf qu'il commence par un timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
 
-Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
+Le redeem script hash utilisé dans cette sortie P2WSH est le `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` ce qui donne `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
 
-### Gestion de la protection des dus lors de la délégation/annulation de délégation
+Voici un outil en ligne pour générer la valeur de hachage `P2WSH` `sha256` d'un script de rachat, grâce auquel vous pouvez vérifier le calcul ci-dessus: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
 
-Il est important de noter que dans le contrat `PledgeAgent` (le contrat de staking), lorsque les utilisateurs délèguent
+#### Sortie OP_RETURN
 
-- Le montant de CORE **doit** être supérieur ou égal à 1
+Le code hex complet de cette sortie est le suivant `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , où
 
-Et lors de l'annulation de la délégation
+- `6a` est le opcode op_return
+- `4c50` est la longueur totale en octets après l'opcode [1] `OP_RETURN`
+- `5341542b` SAT+, l'identifiant Satoshi Plus
+- `01` est la version
+- `045b` 1115, l'Id de la chaîne (1115 pour le Core Testnet et 1116 pour le Core Mainnet)
+- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` est l'adresse de récompense
+- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` est l'adresse du validateur
+- `01` est la commission du relayeur, mesurée en CORE
+- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est le script de rachat, qui est expliqué dans la section précédente.
 
-- Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
-- Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
+[1] Tout octet supérieur ou égal à `0x4c` est inséré en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivi de la longueur, puis des données (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
 
-Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
+### Transaction de Retrait
 
-L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
+[https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
 
-Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur pour y déléguer les tokens CORE. Cela vise à garantir un traitement équitable de tous les candidats validateurs, qu'ils soient déjà élus ou en attente. Cependant, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir aléatoirement un validateur approprié, le tout de manière transparente pour l'utilisateur.
+Cette transaction a dépensé la sortie P2WSH avec verrouillage temporel de la transaction de staking mentionnée précédemment
 
-Lors du redeem, le contrat Earn choisit les validateurs de manière aléatoire via la méthode - ` _randomIndex()`. Un index est sélectionné aléatoirement pour parcourir la liste des validateurs jusqu'à ce qu'un nombre suffisant de tokens CORE aient leurs délégations annulés.
+![btc-staking-withdrawal-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(4\).png)
+
+Dans l'entrée, le redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est fourni pour la dépenser. Comme le verrouillage temporel `1f5e0e66` (660e5e1f après inversion des octets, ce qui correspond à un horodatage Unix de 1712217631) avait déjà expiré, l'UTXO a été dépensé avec succès.
+
+> **Note**
+> \> Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
+
+## Rôle des Relayeurs
+
+Dans un sens strict, le processus de staking de Bitcoin Non-Custodial se compose de deux étapes
+
+1. Staking sur le réseau Bitcoin
+2. Soumission de la transaction de staking Bitcoin confirmée à Core
+
+Pour rendre le processus plus pratique, Core introduit le rôle des relayeurs. Les relayeurs peuvent aider les utilisateurs à soumettre des transactions au réseau Core après la confirmation de la transaction de staking sur le réseau Bitcoin. Puisqu'il est nécessaire de vérifier la transaction sur le réseau Core avec le client Bitcoin light intégré, les relayeurs doivent obtenir le `RedeemScript` correspondant à la sortie `P2SH/P2WSH`. Pour répondre à cette exigence, il est conseillé aux utilisateurs de
+
+- Inclure le `RedeemScript` complet à la fin de la sortie `OP_RETURN`, si le script est court. par exemple, un `RedeemScript` construit en utilisant un hachage de clé publique, comme montré dans l'exemple ci-dessus.
+- Utiliser leur propre adresse de réception pour la transaction de staking, afin que les relayeurs puissent extraire les informations utiles depuis l'entrée de la transaction et composer eux-mêmes le `RedeemScript`. Par exemple
+  - Si c'est une adresse normale, la `pubkey` ou la `pubkey hash` doit être définie comme la clé publique d'entrée correspondante lors de l'élaboration de `RedeemScript`.
+  - Si c'est une adresse multi-signature, la clé publique correspondante de l'adresse multi-signature doit être utilisée lors de la construction du `RedeemScript`.
