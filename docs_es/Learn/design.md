@@ -4,108 +4,116 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Diseño de coreBTC
+# Diseño de Liquid Stake (stCORE)
 
-CoreBTC dentro de Core blockchain representa una innovación significativa en el ámbito de la tecnología blockchain, centrándose específicamente en mejorar la utilidad de Bitcoin dentro de las finanzas descentralizadas (DeFi). Esta representación sintética de Bitcoin en la cadena de bloques Core permite una interacción perfecta con las aplicaciones DeFi manteniendo al mismo tiempo las propiedades críticas de Bitcoin.
+---
 
-## Componentes clave y sus funciones
+stCORE está diseñado para mejorar la utilidad del token CORE y simplificar el proceso de apuesta. Esta iniciativa permite a los poseedores de tokens maximizar el potencial de sus activos con mayor flexibilidad y eficiencia.
 
-**1. Casilleros.**
+## Principios de diseño
 
-- **Rol:** Los casilleros son responsables de guardar el Bitcoin real que respalda el coreBTC. Los usuarios envían sus Bitcoin a la dirección de un Locker para iniciar el proceso de empaquetado. Cualquiera puede registrarse como Locker en Core bloqueando la garantía.
-- **Seguridad:** Los casilleros deben proporcionar una cantidad significativa de garantía en tokens CORE para mantener la seguridad de los Bitcoin que poseen. Esta garantía puede liquidarse para cubrir pérdidas en caso de mala conducta, lo que supone un fuerte desincentivo contra las actividades fraudulentas.
+Los principios de diseño principales del replanteo líquido a través de stCORE en Chain Chain son los siguientes:
 
-**2. Colateral:**
-\- Los activos particulares y el índice de garantía requerido son parámetros de red determinados por Core DAO, y la garantía depositada por Lockers significa que los bitcoins bloqueados siempre deben estar respaldados por activos de mayor valor. Si hay un cambio en el precio de bitcoin en relación con el valor de la garantía, Locker debe ajustar su garantía o enfrentar una posible liquidación.
-\- La garantía puede reducirse si los Lockers transfieren bitcoins sin autorización o no devuelven bitcoins rápidamente cuando se quema coreBTC.
-\- Los casilleros pueden darse de baja y recuperar su garantía en cualquier momento, siempre y cuando no tengan bitcoins residuales bloqueados y no tengan solicitudes de desbloqueo no cumplidas. A cambio de los servicios prestados, Lockers gana pequeñas tarifas.
+- Cambios simples y mínimos o nulos en los protocolos blockchain existentes.
+- Descentralizado y no traerá problemas de seguridad a la red.
+- Fácil de usar (perspectiva del usuario).
 
-**2. Retransmisores:**
+## Resumen de diseño
 
-- **Rol:** Los retransmisores monitorean la cadena de bloques de Bitcoin para bloquear transacciones dirigidas a Lockers y validar estas transacciones. Desempeñan un papel crucial a la hora de verificar que el Bitcoin bloqueado corresponda con precisión al coreBTC acuñado en la cadena de bloques Core.
-- **Funcionalidad:** Al detectar una transacción de bloqueo válida, los Relayers envían pruebas al Core para acuñar la cantidad correspondiente de coreBTC, conectando Bitcoin con el ecosistema blockchain de Core de forma segura.
+Después de investigar diferentes proyectos LST, LiDO y Kava, etc., y combinar las características únicas de Core blockchain, la apuesta líquida en Core blockchain en forma de stCORE se diseña como se describe a continuación:
 
-**3. Contrato inteligente coreBTC:**
+- Presentamos un nuevo módulo llamado "Gana" junto con un token ERC-20 estándar **stCORE**
+- Los usuarios interactúan con el módulo "Gana" para acuñar/canjear/retirar sus activos
+- El módulo `Earn` interactúa con los contratos de la plataforma Core, como `PledgeAgent` (el contrato de participación) y `CandidateHub`
+- Todo el valor incurrido de "Gana" se reflejará en el valor del token **stCORE**
+- La relación de conversión **CORE/stCORE** se actualizará **diariamente** para adaptarse al mecanismo de giro de Core blockchain
+- También presentamos algunos otros métodos para que el operador del sistema pueda reequilibrar y optimizar las apuestas en todos los validadores.
 
-- **Rol:** El contrato inteligente coreBTC en Core gestiona la acuñación y quema de tokens coreBTC. Interactúa con Relayers y Lockers para incentivar que todas las operaciones cumplan con las reglas del protocolo.
-- **Mecanismos de seguridad:** El contrato inteligente incluye mecanismos para verificar las pruebas de transacciones enviadas por los Relayers, gestionar la garantía publicada por Lockers y ejecutar los procesos de acuñación y canje de coreBTC.
+## Perspectiva del usuario
 
-**4. Liquidadores:**
+### Mint
 
-- **Función:** En caso de fluctuaciones de precios o mal comportamiento de Locker, los liquidadores son responsables de mantener la seguridad y el respaldo de coreBTC mediante el cumplimiento de los requisitos de garantía.
-- **Función:** Los liquidadores pueden forzar la liquidación de la garantía de un Locker si el valor del Bitcoin bloqueado cae o si el Locker no logra mantener la proporción de garantía requerida. Esto ayuda a mantener la integridad y el respaldo de coreBTC.
+Los usuarios pueden Mintear stCORE usando CORE. En cualquier momento del día (UTC), pueden Mintear stCORE con la misma tasa de conversión. E.g. si la relación de conversión es 1:1,1, entonces los usuarios pueden crear 100 stCORE utilizando 110 CORE.
 
-\*\*5. Guardianes: \*\*
+### Canjear
 
-- **Rol:** La actividad de los Lockers es monitoreada por Guardianes, quienes verifican cualquier mal comportamiento y aplican cortes según corresponda.
-- **Función:** Un Guardián puede activar un contrato inteligente central para reducir parte de la garantía del Locker. En este caso, una parte de la garantía del Locker, equivalente al valor del coreBTC quemado del usuario, se transfiere al usuario. Además, el Slasher es recompensado con un porcentaje de este valor colateral por su acción.
+El sistema está diseñado de tal manera que los usuarios siempre puedan canjear cualquier cantidad de token stCORE que tengan. E.g. si la relación de conversión es 1:1,1, los usuarios pueden canjear 100 stCORE para recuperar 110 CORE.
 
-## Cómo funciona coreBTC
+:::note
+Hay un período de canje que por defecto es de **7 días**. Una vez que los usuarios solicitan el canje del sistema, tienen **7 días** para retirar los tokens CORE a su billetera.
+:::
 
-coreBTC es un activo sintético innovador desarrollado dentro del ecosistema blockchain Core que permite que Bitcoin se utilice sin problemas en aplicaciones de finanzas descentralizadas (DeFi) en la blockchain Core. El proceso comienza cuando un usuario bloquea su Bitcoin con un custodio designado conocido como **Locker**, que guarda el Bitcoin real y proporciona una cantidad significativa de garantía para asegurar la transacción. Este Bitcoin luego se representa en Core como coreBTC, manteniendo una estricta **vinculación 1:1** para mantener la coherencia del valor entre el Bitcoin bloqueado y el coreBTC emitido.
+## Casos de uso comunes de ERC-20
 
-Los retransmisores desempeñan un papel crucial en el seguimiento de estas transacciones de Bitcoin y su validación en Core. Una vez validados, los detalles de la transacción se envían al contrato inteligente coreBTC, que genera una cantidad equivalente de coreBTC y la acredita en la billetera del usuario. Este coreBTC se puede utilizar en varias plataformas DeFi dentro del ecosistema Core, lo que permite a los titulares de Bitcoin participar en préstamos, empréstitos, transacciones y otras actividades financieras sin gastar ni arriesgar sus tenencias originales de Bitcoin.
+stCORE es un token ERC-20 estándar y los usuarios pueden realizar cualquier acción que sea elegible en un token ERC-20, como transferir, proporcionar liquidez en DEX, intercambiar, etc.
 
-El canje de coreBTC por el Bitcoin original implica que el usuario inicia un proceso de grabación en el que se destruye el coreBTC y el Bitcoin correspondiente se desbloquea y se devuelve desde el Locker a la dirección especificada por el usuario. Todo el sistema está protegido por rigurosos protocolos de liquidación y gestión de garantías, por lo que los Lockers mantienen suficientes garantías contra los Bitcoin que poseen. Además, existen mecanismos de reducción para penalizar cualquier actividad fraudulenta por parte de Lockers, protegiendo la integridad y confiabilidad de coreBTC dentro del ecosistema Core. Este diseño no sólo mejora la liquidez y la utilidad de Bitcoin, sino que también mantiene sus propiedades fundamentales de descentralización y seguridad.
+## Implementaciones
 
-## Acuñación y vinculación en coreBTC
+La implementación del módulo "Earn" de apuestas líquidas se puede encontrar [aquí](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-Bloquear Bitcoin y vincularlo a coreBTC es crucial para mantener la integridad y confiabilidad del activo sintético:
+Los métodos de usuario en el módulo "Ganar" incluyen lo siguiente:
 
-- **Almacenamiento seguro:** Los Bitcoins bloqueados se almacenan en direcciones controladas por Lockers, quienes están incentivados a mantener la seguridad y la transparencia debido a sus obligaciones colaterales.
-- **Colateralización:** La garantía proporcionada por Lockers respalda el proceso de vinculación, de modo que por cada coreBTC en circulación, hay una cantidad equivalente de Bitcoin mantenida de forma segura por un Locker.
+- **mint():** mint stCORE usando CORE
+- **redeem():** canjea stCORE y recupera CORE
+- **retirar():** reclamar CORE a la billetera después del período de canje
 
-La acuñación de coreBTC comienza cuando un usuario bloquea su Bitcoin en el sistema. El usuario envía Bitcoin a una dirección segura controlada por una entidad designada conocida como Locker. Esta acción desencadena el proceso de acuñación en la cadena de bloques Core.
+Los métodos de operador en el módulo "Ganar" incluyen lo siguiente:
 
-- **Casilleros:** Estos son nodos dentro de la red central responsables de guardar el Bitcoin real. Cada Locker debe depositar una cantidad significativa de garantía, generalmente en tokens CORE, para cubrir posibles incumplimientos o actividades fraudulentas.
-- **Relayers:** Después de que el Bitcoin se envía a la dirección del Locker, los Relayers monitorean estas transacciones. Una vez que se confirma una transacción, los retransmisores la validan y envían pruebas al contrato inteligente coreBTC en la cadena de bloques Core.
-- **Ejecución de contrato inteligente:** Al recibir la prueba necesaria de Relayers, el contrato inteligente de coreBTC llama al Bitcoin Light Client para verificar la autenticidad y finalidad de la transacción de bitcoin correspondiente, y luego acuña una cantidad equivalente de coreBTC. Este coreBTC acuñado se emite luego a la billetera del usuario en la cadena de bloques Core, lo que refleja una vinculación 1:1 con el Bitcoin bloqueado.
+- **afterTurnRound():** donde se implementa la autocomposición
+- **rebalance():** equilibra los validadores más o menos apostados
+- **manualRebalance():** transferir arbitrariamente apuestas entre dos validadores
 
-![vinculación-en-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
+### Selección de validadores en mint/canjear
 
-## Redención y vinculación de coreBTC
+Tenga en cuenta que cada vez que ocurre la mint/canjeo, el contrato "Earn" delega CORE a "PledgeAgent"/desdelega CORE de "PledgeAgent". Esto se implementa de tal manera que la contabilidad sea más sencilla.
 
-La redención, o vinculación, implica revertir el proceso de acuñación:
+Al llamar al método `mint()`, la persona que llama debe pasar una dirección de validador para apostar los tokens CORE; al hacerlo, esperamos tratar a todos los candidatos de validador por igual, sin importar si ya están elegidos o en cola. Sin embargo, para mejorar la experiencia del usuario, es posible que tengamos la interfaz oficial para elegir aleatoriamente un validador adecuado y hacerlo invisible para los usuarios.
 
-- **Quema de coreBTC:** Los usuarios inician el proceso de canje enviando una solicitud al contrato inteligente de coreBTC para quemar una cantidad específica de coreBTC, indicando la dirección de Bitcoin donde desean recibir su Bitcoin.
-- **Desbloqueo de Bitcoin:** Tras la quema exitosa del coreBTC, el contrato inteligente le indica al Locker que libere la cantidad correspondiente de Bitcoin. Luego, Locker envía este Bitcoin a la dirección especificada del usuario, completando el proceso de vinculación. Una vez confirmada la transacción de bitcoin, Locker la transmite al Core, donde finalmente es verificada por el Bitcoin Light Client.
+Durante el canje, el contrato `Earn` elige validadores aleatoriamente - `_randomIndex()`, se seleccionará aleatoriamente un índice, que se utiliza como índice inicial para iterar a través de la matriz de validadores hasta que se deleguen suficientes tokens CORE.
 
-Una vez confirmada la transacción de bitcoin, Locker la transmite al Core, donde finalmente es verificada por el Bitcoin Light Client.
+### Mantener a los validadores equilibrados en los montos de apuesta
 
-## Proceso de Liquidación
+Cada vez que
 
-El proceso de liquidación está diseñado para proteger el sistema contra incumplimientos y salvaguardar que el respaldo de coreBTC permanezca seguro:
+- Se produce una mint, la persona que llama puede elegir el validador libremente
+- Se produce un canje, el sistema elige validadores al azar
 
-- **Monitoreo de índices de garantía:** Los liquidadores monitorean continuamente el valor del Bitcoin en poder de Lockers en relación con el coreBTC emitido.
-- **Activación de la liquidación:** Si el valor de mercado del Bitcoin bloqueado cae significativamente, o si un Locker no logra mantener el índice de garantía requerido, los liquidadores pueden iniciar la venta de la garantía del Locker para cubrir pérdidas potenciales.
-- **Mecanismo de Liquidación:** La liquidación se lleva a cabo a través de Core, donde se vende la garantía insuficiente para mantener el respaldo necesario para coreBTC. Durante el proceso, los liquidadores utilizan coreBTC para comprar los tokens CORE garantizados a un precio con descuento y el coreBTC se quema. Esto aumenta el índice de garantía y restaura el casillero a una condición saludable. Cuando se quema el coreBTC, su suministro se reduce y se vuelve más escaso, lo que libera al Locker para tomar posesión de una cantidad del bitcoin subyacente equivalente al valor del coreBTC eliminado. Luego, el Locker se reequilibra de acuerdo con los requisitos de garantía; Si el usuario original que envió bitcoins a la dirección de ese Locker quiere recuperar sus bitcoins, puede elegir cualquier Locker para obtenerlos. El canje de coreBTC por bitcoin ocurre a nivel sistémico, no es una relación entre un usuario y un Locker.
+Este mecanismo casi garantiza que los tokens CORE en poder del módulo Earn se puedan dividir en diferentes validadores de manera uniforme.
 
-![liquidación](../../../../static/img/coreBTC/liquidación-process.png)
+Sin embargo, teniendo en cuenta que hay casos, el equilibrio se romperá mediante determinadas operaciones, p. Nuevo/canjeado de gran valor. También introdujimos algunos métodos para reequilibrar las apuestas a los validadores de Earn.
 
-## Proceso de corte
+- \*\*rebalance():\*\*el sistema selecciona a los validadores con los montos de apuesta más grandes y más pequeños y los hace alcanzar el equilibrio incluso si la brecha excede el umbral predefinido.
+- **manualRebalance():** el operador transfiere manualmente las apuestas de un validador a otro.
 
-En la cadena de bloques Core, el concepto de reducción es crucial para mantener la integridad y seguridad de las transacciones de coreBTC. El corte es una medida punitiva que se utiliza para penalizar a los Lockers por mala conducta o incumplimiento de los protocolos establecidos. Hay dos escenarios principales en los que se pueden producir cortes, cada uno de ellos diseñado para proteger el sistema y a sus usuarios de posibles fraudes y malas prácticas:
+### Cálculo del ratio de conversión stCORE/CORE
 
-### 1. **Movimiento no autorizado de Bitcoin bloqueado**
+En cada ronda después de que ocurre el turno, el módulo "Ganar" obtiene recompensas de cada validador y las delega en consecuencia. Así es como se autocompone internamente. Durante el período, el sistema también traslada las apuestas de validadores inactivos/encarcelados a activos para mejorar la APR general.
 
-En este caso, se produce una reducción si un Locker mueve Bitcoin bloqueado sin recibir la correspondiente solicitud de grabación de un titular de coreBTC. Este escenario se considera una infracción grave, ya que amenaza directamente la vinculación 1:1 y la confianza que los titulares de coreBTC tienen en la capacidad del sistema para respaldar de forma segura sus tokens con Bitcoin real.
+Y después de eso, la relación de conversión de stCORE/CORE también se puede actualizar. La fórmula para eso es
 
-- **Activador:** El proceso de reducción se activa cuando un Locker transfiere cualquier Bitcoin bloqueado a una dirección no autorizada o para cualquier propósito no autorizado que no corresponda a una solicitud legítima y verificada para canjear coreBTC.
-- **Detección e informes:** Esta mala conducta puede detectarse a través de los sistemas de monitoreo de Core o por otros participantes en la red, a menudo denominados Guardianes, quienes observan e informan cualquier actividad sospechosa de Locker.
-- **Consecuencia:** Tras la confirmación de la transferencia no autorizada, una parte de la garantía del Locker se confisca y se utiliza para compensar la discrepancia creada en el sistema. Esto no solo penaliza al Locker sino que también ayuda a restablecer el equilibrio entre los coreBTC respaldados y circulantes, manteniendo la integridad del sistema.
+```
+Cantidad de tokens CORE apostados en PledgeAgent / stCORE.totalsupply()
+```
 
-![corte](../../../../static/img/coreBTC/slashing-1.png)
+Dado que **el reclamo de recompensas solo ocurre una vez al día** en dicho diseño, la tasa de conversión se puede mantener igual durante todo el día hasta que ocurra la siguiente ronda.
 
-### 2. **No se pudo liberar Bitcoin tras el canje de coreBTC**
+La lógica anterior se implementa en el método `afterTurnRound()`.
 
-Este escenario ocurre cuando un titular de coreBTC decide canjear sus tokens por el Bitcoin subyacente, pero el Locker responsable de liberar el Bitcoin no lo hace dentro del plazo designado.
+### Manejo de la protección de cuotas al delegar/desdelegar
 
-- **Desencadenante:** Un titular de coreBTC envía una transacción quemada, destruyendo efectivamente una cierta cantidad de coreBTC con la expectativa de recibir una cantidad equivalente de Bitcoin de un Locker. Si Locker no procesa esta transacción y libera el Bitcoin según sea necesario, se activa la reducción.
-- **Detección y respuesta:** Similar al primer caso, esta falla puede ser detectada por los monitores de red o reportada por los usuarios. Al verificar que Locker no ha cumplido con la solicitud de canje a tiempo, el sistema inicia un protocolo de corte.
-- **Consecuencia:** Una parte importante de la garantía del Locker se reduce drásticamente como medida punitiva y compensatoria. La garantía recortada se utiliza normalmente para certificar que el usuario recibe su Bitcoin, preservando la confianza en el sistema coreBTC y compensando cualquier pérdida potencial incurrida por el retraso o la falla.
+Tenga en cuenta que en el contrato `PledgeAgent` (el contrato de participación), cuando los usuarios delegan
 
-![corte](../../../../static/img/coreBTC/slashing-2.png)
+- La cantidad de CORE **debe** >= 1
 
-## Conclusión
+Y cuando ellos no delegan
 
-El diseño de coreBTC en Core presenta un marco robusto para integrar Bitcoin en aplicaciones DeFi manteniendo sus características fundamentales de seguridad y descentralización. A través de un sistema bien estructurado de acuñación, canje, liquidación y reducción, todo respaldado por estrictos requisitos de garantía, coreBTC permite aprovechar el valor de Bitcoin de formas nuevas e innovadoras sin comprometer la confianza y la seguridad que lo definen.
+- La cantidad de CORE **debe** >= 1 **Y**
+- El CORE restante que queda en un validador de esta dirección **debe** >= 1
+
+Al manejar la delegación/anulación de delegación internamente, el módulo "Gana" también debe seguir las mismas restricciones.
+
+Las elaboraciones de implementación/caso están en el método `_undelegateWithStrategy()`.
+
+Al llamar al método `mint()`, la persona que llama debe pasar una dirección de validador para apostar los tokens CORE; al hacerlo, esperamos tratar a todos los candidatos de validador por igual, sin importar si ya están elegidos o en cola. Sin embargo, para mejorar la experiencia del usuario, es posible que tengamos la interfaz oficial para elegir aleatoriamente un validador adecuado y hacerlo invisible para los usuarios.
+
+Durante el canje, el contrato Earn elige validadores aleatoriamente: ` _randomIndex()`, se seleccionará aleatoriamente un índice, que se utiliza como índice inicial para iterar a través de la matriz de validadores hasta que se deleguen suficientes tokens CORE.
