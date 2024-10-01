@@ -28,7 +28,7 @@ Il existe plusieurs façons d'ajouter les configurations du Mainnet Core à votr
 
 1. Cliquez sur le bouton de sélection du réseau (la flèche pointant vers le bas à côté du réseau actuel). Cela affichera une liste des réseaux auxquels vous êtes déjà connecté.
 
-\<img src="https://github.com/RumeelHussainbnb/CoreDAODocs/assets/93580180/591f9fe0-d23d-41e2-94fa-9d125b631d37" alt="mainnet-wallet-config-1" style={{zoom:"50%"}}/>
+<img src="https://github.com/RumeelHussainbnb/CoreDAODocs/assets/93580180/591f9fe0-d23d-41e2-94fa-9d125b631d37" alt="mainnet-wallet-config-1" style={{zoom:"50%"}}/>
 
 2. Cliquez sur ‘Ajouter un réseau‘ en bas de la liste des réseaux
 
