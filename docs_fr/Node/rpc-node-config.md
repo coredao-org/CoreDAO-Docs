@@ -26,23 +26,23 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
 
 Pour les nœuds RPC sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requis           | Détails                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                         |
-| RAM              | 16 go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                     |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 16 go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
 
 #### Spécifications Matérielles pour les Nœuds RPC du Mainnet
 
 Pour les nœuds RPC sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requis           | Détails                                                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 16 cœurs CPU                                                                                                        |
-| RAM              | 32 go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                     |
+| CPU              | 16 cœurs CPU                                                                                                                                 |
+| RAM              | 32 go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
 
 ## Exécution d'un Nœud RPC
 
