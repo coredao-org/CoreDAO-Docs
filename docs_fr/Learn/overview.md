@@ -2,77 +2,99 @@
 sidebar_label: Vue d'ensemble
 hide_table_of_contents: false
 sidebar_position: 2
-description: Obtenez une vue d'ensemble de Core - son objectif, sa mission et sa vision future
 ---
 
-# Vue d'Ensemble de la Blockchain Core
+# Staking Non-Custodial de Bitcoin
 
 ---
 
-## Introduction
+Plus de [1 000 milliards de dollars](https://www.coingecko.com/en/coins/bitcoin) en Bitcoin sont restés inactifs, ne générant aucun rendement natif au cours de sa durée de vie. Étant donné que Bitcoin est une blockchain basée sur la Preuve de Travail (PoW), ses détenteurs ne bénéficient pas des avantages de rendement natif propres aux chaînes basées sur la Preuve d'Enjeu (PoS). Néanmoins, Core a apporté les avantages de la Preuve d'Enjeu à la blockchain de Preuve de Travail par excellence. Le Staking Non-Custodial de Bitcoin ajoute considérablement au modèle de sécurité de Core tout en permettant pour la première fois dans l’histoire un rendement natif pour le Bitcoin. Cette approche innovante permet aux détenteurs de Bitcoin de participer et de gagner des récompenses dans le cadre du mécanisme Satoshi Plus, sans renoncer à la garde de leurs Bitcoin, intégrant ainsi la puissance économique de Bitcoin avec les fonctionnalités avancées de la blockchain Core.
 
-La blockchain Core est conçue comme la première blockchain compatible avec la Machine Virtuelle d'Ethereum (EVM) alignée sur Bitcoin. Elle introduit un mécanisme de consensus novateur appelé Satoshi Plus, qui exploite les mineurs et les détenteurs de Bitcoin pour sécuriser une plateforme de contrats intelligents hyper évolutive.
+## Vue d'Ensemble
 
-## Objectif et Mission
+Le staking non-custodial de Bitcoin permet aux détenteurs de Bitcoin de gagner des tokens CORE simplement en verrouillant leurs Bitcoin sur la blockchain Bitcoin, sans jamais céder la garde de leurs clés privées à un tiers, à un smart contract externe ou à un portefeuille MPC. En verrouillant leurs Bitcoin sur la blockchain Bitcoin, les stakers de Bitcoin contribuent à l'élection des validateurs de Core, renforçant ainsi la sécurité et la décentralisation du consensus Satoshi Plus.
 
-L'objectif principal de la blockchain Core est de débloquer à la fois le réseau Bitcoin et l'actif Bitcoin. Le résultat est une plateforme de contrats intelligents évolutive, sans permission, et axée sur le BTCfi (finance décentralisée Bitcoin), sécurisée par l'infrastructure décentralisée et la vaste valeur marchande de Bitcoin.
+## Donner du pouvoir aux Détenteurs de Bitcoin et Renforcer Core
 
-La vision future de Core est celle où Bitcoin passe d'un simple "Réserve de Valeur" à un véritable "Moyen d'Échange" au sein de l'écosystème BTCfi évolutif et alimenté par Bitcoin de Core. L'actif Bitcoin, la forme de monnaie la plus sécurisée jamais connue, peut enfin être pleinement exploité.
+#### _Le double avantage du Staking Non-Custodial de Bitcoin_
 
-L'élément central de cette transition est l'alignement sur Bitcoin, car le rôle fondamental de Bitcoin est celui d'aligner les incitations. En essence, la blockchain Bitcoin est un réseau d'acteurs aux incitations alignées, supervisant la sécurité de l'actif Bitcoin. Cet objectif simple de sécuriser l'actif Bitcoin rend Bitcoin incroyablement robuste, mais aussi intentionnellement limité. En raison de l'importance de Bitcoin en tant que réserve de valeur parfaitement solide, comparable à l'or, le réseau est conçu avec des limitations intentionnelles au niveau du protocole afin de maximiser sa préservation et sa permanence au détriment de son évolutivité. Ces limitations intrinsèques impactent la rapidité, la complexité, la composabilité, l'interopérabilité et la flexibilité de Bitcoin.
+1. **Avantages pour les Détenteurs de Bitcoin grâce au Staking Non-Custodial de Bitcoin**
+   - **Maintenir les Actifs sur Bitcoin:** Grâce au Staking Non-Custodial de Bitcoin, les détenteurs de Bitcoin ont l'opportunité unique de conserver leurs actifs en toute sécurité sur le réseau Bitcoin. Cela leur permet de maintenir leur investissement dans ce qui est largement considéré comme la blockchain la plus décentralisée et sécurisée, souvent surnommée "l'or numérique". En principe, ils peuvent continuer à détenir leur Bitcoin, en profitant de la sécurité et de la réputation qu'il offre, sans avoir besoin de transférer leurs actifs ailleurs.
+   - **Gagner des Récompenses en Tokens Core:** Participer au Staking Non-Custodial de Bitcoin offre une incitation supplémentaire: gagner des tokens Core. Cela permet aux détenteurs de Bitcoin de conserver leurs actifs tout en recevant des récompenses supplémentaires sous forme de tokens Core.
+   - **Responsabilité Sociale dans la Décentralisation:** En stakant leurs Bitcoin, les détenteurs contribuent à la décentralisation de la blockchain Core. Il s'agit d'une forme de responsabilité sociale, car leur participation contribue à maintenir un réseau diversifié et distribué, ce qui est fondamental pour l'éthique de la technologie blockchain.
+2. **Raison d'être de Core pour Offrir le Staking Non-Custodial de Bitcoin**
+   - **Renforcer la Décentralisation et la Sécurité:** Le Staking Non-Custodial de Bitcoin est proposé par la blockchain Core dans un but strategique d'amélioration de sa décentralisation et de sa sécurité. En intégrant le Bitcoin, qui dispose d'un réseau solide et bien établi, dans son mécanisme de consensus, Core peut exploiter les caractéristiques de décentralisation et de sécurité de Bitcoin.
 
-Modifier le layer de base de Bitcoin serait comme essayer de faire entrer une cheville carrée dans un trou rond, donc, au lieu de changer ce qui rend Bitcoin unique, Core étend simplement cet alignement d'incitations à sa plateforme de contrats intelligents. Cet alignement se réalise grâce au mécanisme de consensus unique de Core, appelé Satoshi Plus. Ensemble, le consensus Nakamoto de Bitcoin et le consensus Satoshi Plus de Core se renforcent mutuellement, défendant simultanément l'actif Bitcoin et les contrats intelligents alimentés par Bitcoin.
-En alignement avec Bitcoin, Satoshi Plus déverrouille le taux sans risque de Bitcoin pour les détenteurs de Bitcoin, une seconde récompense de bloc pour les mineurs de Bitcoin, et un vaste écosystème BTCfi pour les utilisateurs de Bitcoin et de la DeFi.
+## Avantages du Staking Non-Custodial de Bitcoin
 
-## Technologie de Core
+1. **Aucune Nouvelle Hypothèse de Confiance :** Les utilisateurs peuvent staker leurs bitcoins sans les retirer de la blockchain Bitcoin, maintenant ainsi la haute sécurité et la confiance associées à l'infrastructure robuste de Bitcoin.
+2. **Auto-garde et Sécurité à 100% :** Les utilisateurs n'ont qu'à s'envoyer eux-mêmes la transaction de staking sur le réseau Bitcoin, et les actifs Bitcoin NE quittent PAS du tout le réseau Bitcoin.
+3. **Le Taux Sans Risque du Bitcoin :** En n'introduisant aucune nouvelle hypothèse de confiance, le staking de Bitcoin de Core permet de débloquer un rendement sans risque pour les détenteurs de Bitcoin.
+4. **Nativité Bitcoin :** En utilisant les absolute time locks natifs de Bitcoin, les stakers de Bitcoin conservent la pleine garde de leurs bitcoins.
+5. **Génération de Rendement :** Ce mécanisme transforme le Bitcoin en un actif générateur de rendement, fournissant aux stakers des récompenses sous forme de tokens CORE et augmentant l’utilité de leurs avoirs.
+6. **Intégration au Réseau :** Le Staking Non-Custodial de Bitcoin intègre les détenteurs de Bitcoin au mécanisme de consensus de Core, contribuant ainsi à la sécurité et à la décentralisation du réseau.
+7. **Émission de Core :** Le système de récompenses aide à aligner les incitations entre chaînes. Le pool de récompenses provient d'un système de consensus partagé qui intègre les contributions des mineurs de Bitcoin et des stakers de tokens CORE, optimisant ainsi la distribution des récompenses pour tous les participants. De plus, les récompenses sont durables à long terme et seront distribuées sur une période de **81** ans.
 
-1. Ce mécanisme de consensus innovant combine la Preuve de Travail Déléguée (DPoW), la Preuve d'Enjeu Déléguée (DPoS) et le Staking de Bitcoin non-custodial, intégrant ainsi les mineurs de Bitcoin, les stakers de CORE, et les stakers de Bitcoin, respectivement, dans l'élection des validateurs de Core. Chacune des trois composantes de Satoshi Plus ajoute une nouvelle couche de sécurité et d'alignement des incitations.
-   - **Preuve de Travail Déléguée (DPoW) :** Les mineurs de Bitcoin renforcent la sécurité de Core en déléguant leur puissance de hachage aux validateurs de Core, gagnant des récompenses supplémentaires sous forme de tokens CORE. Cette relation symbiotique exploite l'infrastructure de sécurité robuste de Bitcoin sans coûts supplémentaires pour les mineurs, alignant les incitations et renforçant l'intégrité du réseau.
-   - **Preuve de Participation Déléguée (DPoS) :** Les détenteurs de tokens CORE participent activement au consensus de Core en déléguant leurs tokens aux validateurs. Cela garantit un niveau élevé de sécurité du réseau tout en offrant aux stakers des récompenses en tokens CORE, encourageant une large participation et maintenant un processus d'élection des validateurs équilibré et décentralisé.
-   - **Staking de Bitcoin non-custodial :** Les détenteurs de Bitcoin peuvent verrouiller leurs actifs dans des time locks absolus sur la blockchain Bitcoin, gagnant des récompenses en tokens CORE tout en conservant la garde de leur Bitcoin. Cette approche innovante transforme Bitcoin en un actif générateur de rendement, ajoutant de la valeur sans compromettre la sécurité et la confiance inhérentes au réseau Bitcoin.
+## Comment Fonctionne le Staking de Bitcoin Non-Custodial
 
-2. **Capacités Avancées de Contrats Intelligents**
-   - **Compatibilité EVM :** Permet aux développeurs de travailler dans un environnement familier en pouvant facilement porter des dapps basées sur Ethereum vers Core sans modifications majeures, encourageant ainsi l'adoption et la croissance de l'écosystème Core.
-   - **Bitcoin Encapsulé (Wrapped) Natif sur Core (coreBTC):** Une solution décentralisée et minimisant la confiance pour transférer Bitcoin vers Core, permettant son utilisation sur la blockchain Core pour des contrats intelligents et d'autres activités BTCfi, tout en maintenant une parité 1:1 avec Bitcoin.
+Avec le staking non-custodial de bitcoins, Core intègre les détenteurs de bitcoins en tant que troisième partie du consensus Satoshi Plus. La méthodologie Core pour intégrer le staking de bitcoins repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Les timelocks CLTV sont des fonctionnalités cryptographiques natives de Bitcoin qui spécifient une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps soit écoulé. Ce temps peut être défini en termes de date et d'heure spécifiques ou de hauteur de bloc. Plutôt que de céder la garde de leurs bitcoins à une tierce partie, les stakers sur la Core n'ont qu'à placer leurs bitcoins dans des CLTV en tant que partie d'une transaction, et cette transaction peut être conçue pour restituer les fonds une fois le délai écoulé. Dans cette transaction, les stakers doivent inclure un script contenant les mêmes informations que les mineurs de Bitcoin incluent dans leurs blocs délégués:
 
-3. **Améliorations de la Sécurité**
-   - **Validation Améliorée des Transactions :** Core implique à la fois les mineurs de Bitcoin et les stakers de Bitcoin dans la sécurisation de ses smart contracts.
-   - **Nœuds Gardiens :** En plus des contrôles de sécurité existants, les vérificateurs ont pour seule responsabilité de surveiller le réseau pour détecter toute activité malveillante et peuvent pénaliser les mauvais acteurs avec des preuves vérifiables.
+1. L'adresse du validateur Core à qui le staker veut déléguer ses bitcoins.
+2. L'adresse où le staker souhaite que ses récompenses en tokens CORE soient envoyées.
 
-4. **Fonctionnalités d’Interopérabilité**
-   - **Échanges Atomiques HTLC sans Confiance :** Les contrats verrouillés par hachage et à délai permettent l'échange décentralisé et sans confiance de tokens entre Core et d'autres blockchains, y compris (et surtout) Bitcoin.
-   - **Interopérabilité Cross-Chain :** En tant que blockchain évolutive et compatible avec l'EVM, Core intègre de nombreuses dapps et ponts cross-chain.
+Les détenteurs de bitcoins qui participent au staking gagnent un rendement sur leurs bitcoins, autrement passifs, sous forme de récompenses en tokens CORE, pour la durée de leur timelock (et donc pour la durée pendant laquelle ils délèguent leurs bitcoins pour voter pour les validateurs sur Core). Le résultat final est que des milliards de dollars en valeur de bitcoins sous-utilisés deviendront productifs, rémunérant les stakers tout en étendant l'utilité de Bitcoin.
 
-5. **Utilisation et Accessibilité**
-   - **Interfaces Simples :** Core est accessible via de nombreux portefeuilles et interfaces faciles à utiliser et couramment employés.
-   - **Outils de Développement Complets:** Une suite d'outils et de documentation est mise à disposition pour soutenir les développeurs dans la création, le déploiement et la gestion d'applications sur Core.
+### Directives pour le Staking/Rachat de Bitcoin
 
-6. **Gouvernance et Engagement Communautaire**
-   - **Processus de Gouvernance Transparente :** Certains paramètres variables, comme le mécanisme de brûlage, impliquent un processus décisionnel transparent et inclusif, permettant la participation de la communauté et le vote on-chain.
-   - **Programmes d'Incitation Communautaire :** Les membres de la communauté bénéficient d'initiatives conçues pour récompenser les utilisateurs pour leurs contributions à l'écosystème, que ce soit par le développement, l'éducation ou la participation à la gouvernance.
+Lorsque vous stakez ou rachetez votre Bitcoin, veuillez suivre ces directives pour assurer des transactions fluides:
 
-## État de l’Écosystème Core
+1. **Évitez les frais de gas bas:**
+   - Nous recommandons d'éviter des frais de gas inférieurs au taux du marché actuel.
+   - Utiliser un frais de gas trop bas, en particulier pendant les périodes de congestion du réseau, peut entraîner un délai important pour la confirmation de votre transaction Bitcoin (cela peut prendre des jours).
+2. **Gérer les situations de frais de gas bas**
+   - Si votre transaction Bitcoin est retardée en raison de frais de gas bas, envisagez d'utiliser un accélérateur de transaction pour accélérer le processus.
+   - Il existe plusieurs services tiers disponibles, comme l'accélérateur de transaction gratuit viaBTC (qui peut être accédé [ici](https://www.viabtc.com/tools/txaccelerator)).
+   - Faites vos propres recherches et choisissez un service qui correspond le mieux à vos besoins.
 
-Core abrite un écosystème BTCfi solide et en pleine expansion. De nombreux protocoles sur Core sont axés sur le Bitcoin et ses dérivés (c'est-à-dire, des actifs natifs basés sur le Bitcoin, tels que les NFTs Ordinals). Le Bitcoin reste en grande partie un actif sous-utilisé, car la programmabilité limitée du Script Bitcoin rend difficile l'activation du Bitcoin dans des protocoles DeFi conventionnels tout en conservant la garde de(s) l'actif(s). Grâce à un mécanisme de consensus intégré à celui de Bitcoin, Core vise à fournir un environnement DeFi où les protocoles peuvent utiliser des actifs basés sur le Bitcoin avec un minimum de présomptions de confiance. De plus, des subventions et des programmes pour les développeurs, comme [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https://ignition.coredao.org/) et le [Programme d'Incentive des Développeurs Core](https://coredao.org/initiatives/incentiveprogram), sont destinés à encourager la création de projets innovants sur Core et à catalyser davantage la croissance autour du DeFi pour Bitcoin. Explorez l'écosystème Core en constante expansion [ici](https://coredao.org/explore/ecosystem).
+En suivant ces recommandations, vous pouvez garantir un processus plus efficace de staking et de rachat pour votre Bitcoin.
 
-## Vision Future
+### Conditions d'Éligibilité
 
-La feuille de route de Core est conçue en accord avec l'objectif principal de libérer le potentiel du Bitcoin. Cela inclut de nombreuses améliorations structurelles visant à mieux aligner Bitcoin et Core, à créer une meilleure expérience utilisateur et à exploiter d'autres domaines de recherche et développement. En fin de compte, ces éléments devraient contribuer à créer un écosystème blockchain plus interconnecté et fonctionnellement diversifié, où les forces fondamentales du Bitcoin sont utilisées pour soutenir de nouvelles technologies et applications émergentes dans la DeFi. Certains éléments de la feuille de route incluent :
+Core invite les détenteurs de Bitcoin à staker leurs bitcoins sur le réseau Bitcoin. En votant pour un validateur Core pendant votre transaction de staking Bitcoin, vous jouez un rôle central dans la décentralisation de Core, tout en gagnant des récompenses récurrentes en tokens CORE.
 
-- **Double Staking :** Créer des taux de staking plus élevés pour les stakers de Bitcoin et de tokens CORE.
+- Il existe des _exigences minimales_ concernant le **montant** et la **durée** pour que le staking soit éligible sur Core.
+  - Un utilisateur doit staker au moins **0,01 Bitcoin** (moins les frais de transaction) pour une durée minimale de **10 jours**.
 
-- **Taxe Locale des Marchés:** Des améliorations qui peuvent rendre les transactions plus prévisibles et potentiellement moins chères.
+### Déroulement des transactions
 
-- **Swaps atomiques :** En s'appuyant sur les HTLC, les swaps atomiques peuvent continuer à favoriser l'alignement structurel entre les blockchains Bitcoin et Core.
+![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-flow.png)
 
-- **Améliorations de coreBTC :** Intégrer coreBTC avec le consensus Satoshi Plus de Core Chain et utiliser des portefeuilles multisignatures peut renforcer la sécurité de l'actif. De plus, les Lockers pourraient disposer de plus d'options collatéral.
+L'implémentation par Core du staking natif de Bitcoin est complètement non-custodial, c'est-à-dire que les utilisateurs peuvent garder leurs actifs Bitcoin sur le réseau Bitcoin sans les transférer vers une autre blockchain avant de les staker. Les utilisateurs doivent simplement suivre les étapes suivantes:
 
-- **coreBTC comme token de gaz :** Cette option permettrait aux utilisateurs de payer les frais de transaction en CORE ou en coreBTC.
+- Envoyer une transaction Bitcoin à leur propre adresse, et verrouiller la sortie, correspondant au montant destiné au staking sur la blockchain Core, en utilisant la fonctionnalité de timelock natif de Bitcoin. De plus, la transaction doit contenir une sortie `op_return` dans laquelle les utilisateurs peuvent désigner l'adresse du validateur Core pour le staking et une adresse de récompense pour recevoir les récompenses en CORE. Pour plus de détails sur la composition de cette transaction de staking, veuillez consulter la [conception de la transaction](design.md).
 
-- **Bitcoin LST :** Cette fonctionnalité permettrait aux stakers de BTC de générer des rendements sur leur Bitcoin tout en l'utilisant pour diverses applications sur Core.
+- (_Optionnel_) Après la confirmation de la transaction sur le réseau Bitcoin, les utilisateurs peuvent récupérer les données de transaction et les soumettre à la blockchain Core. Cette étape est facultative si les utilisateurs composent la transaction dans un format standard comme recommandé par Core (défini dans la [conception de la transaction](design.md)). L'infrastructure Core détectera la transaction de staking et la soumettra à la blockchain Core pour les utilisateurs.
 
-- **Restaking :** Cette amélioration permettrait à d'autres protocoles de bénéficier de la protection Bitcoin de Core Chain.
+- Lorsque le timelock expire, les utilisateurs peuvent dépenser l'UTXO en utilisant le script de rachat correspondant. Il leur est facile de construire le script de rachat à partir de la transaction de staking originale.
+
+## Processus étape par étape
+
+1. **Verrouillage des Bitcoins :** Les détenteurs de Bitcoin initient le processus de staking en verrouillant leurs bitcoins dans un timelock absolu sur la blockchain Bitcoin.
+
+2. **Inclusion des informations de délégation :** Dans la transaction de verrouillage, les stakers incluent :
+
+3. **Adresse du validateur Core :** L'adresse du validateur Core à qui ils souhaitent déléguer leurs bitcoins.
+
+4. **Adresse de récompense en tokens CORE :** L'adresse où ils souhaitent recevoir leurs récompenses en tokens CORE.
+
+5. **Délégation des Bitcoins :** Cette action délègue les bitcoins du staker au validateur Core choisi pour une période déterminée, durant laquelle les bitcoins ne peuvent pas être dépensés.
+
+6. **Élection des validateurs :** Core utilise les bitcoins délégués pour aider à l'élection des validateurs. Les validateurs avec plus de bitcoins délégués ont de meilleures chances d'être élus dans le groupe des validateurs.
+
+7. **Gagner des récompenses :** Les stakers de Bitcoin gagnent des récompenses en tokens CORE pendant toute la période de verrouillage, en fonction des performances du validateur et de la quantité de bitcoins stakés.
+
+8. **Déverrouillage des Bitcoins :** À la fin de la période de verrouillage, les bitcoins du staker sont déverrouillés et peuvent à nouveau être dépensés.
 
 ## Conclusion
 
-En tirant parti de son mécanisme de consensus unique Satoshi Plus, Core intègre les mineurs de Bitcoin, les stakers de CORE et les stakers de Bitcoin non-custodial, garantissant une sécurité robuste et une gouvernance décentralisée. Cette approche innovante améliore non seulement l'utilité du Bitcoin, mais favorise également un écosystème BTCfi florissant, permettant aux utilisateurs, développeurs et investisseurs d'exploiter de nouvelles opportunités dans la finance décentralisée. Alors que Core continue de croître et d'évoluer, il est bien positionné pour renforcer le rôle du Bitcoin en tant que pilier central d'un avenir financier évolutif, sans permission, et interconnecté.
+Le staking Non-Custodial de Bitcoin transforme cet actif, passant d'une réserve de valeur passive à un actif générateur de rendement et fournissant une sécurité. Ce staking permet aux détenteurs de Bitcoin de gagner le taux sans risque de Bitcoin tout en contribuant à la sécurité d'une plateforme de contrats intelligents conçue pour élargir les cas d'utilisation des actifs Bitcoin.
