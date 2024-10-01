@@ -65,21 +65,21 @@ Les nœuds RPC (Remote Procedure Call) sur le réseau Core jouent un rôle essen
 
 **Spécifications matérielles pour le Testnet**
 
-| **Requis**       | **Détails**                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Requis**       | **Détails**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                         |
-| RAM              | 16 Go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                      |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 16 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                                               |
 
 **Spécifications matérielles pour le Mainnet**
 
-| **Requis**       | **Détails**                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Requis**       | **Détails**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 16 cœurs CPU                                                                                                        |
-| RAM              | 32 Go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                      |
+| CPU              | 16 cœurs CPU                                                                                                                                 |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                                               |
 
 Pour plus de détails, consultez le [Guide de configuration des nœuds RPC](../Node/config/rpc-node-config.md)
 
@@ -91,21 +91,21 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 
 **Spécifications matérielles pour le Testnet**
 
-| **Requis**       | **Détails**                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Requis**       | **Détails**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 4 cœurs CPU                                                                                                         |
-| RAM              | 8 Go                                                                                                                |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                      |
+| CPU              | 4 cœurs CPU                                                                                                                                  |
+| RAM              | 8 Go                                                                                                                                         |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
 **Spécifications matérielles pour le Mainnet**
 
-| **Requis**       | **Détails**                                                                                                         |
-| ---------------- | ------------------------------------------------------------------------------------------------------------------- |
+| **Requis**       | **Détails**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                         |
-| RAM              | 32 Go                                                                                                               |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                      |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
 Pour plus de détails, consultez le [Guide de configuration des nœuds validateurs](../Node/config/validator-node-config.md)
 
