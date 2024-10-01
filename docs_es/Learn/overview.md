@@ -2,78 +2,99 @@
 sidebar_label: Descripción general
 hide_table_of_contents: false
 sidebar_position: 2
-description: "Obtenga una descripción general de Core: su propósito, misión y visión futura"
 ---
 
-# Descripción general de la cadena de bloques Core
+# Apuesta de Bitcoin sin custodia
 
 ---
 
-## Introduccion
+Más de [1 billón de dólares](https://www.coingecko.com/en/coins/bitcoin) en Bitcoin han permanecido inactivos, sin generar rendimiento nativo durante su vida útil. Dado que Bitcoin es una cadena de bloques de Prueba de Trabajo, sus poseedores no obtienen los beneficios de rendimiento propios de las cadenas de Prueba de Participación. Sin embargo, Core ha brindado beneficios de Prueba de participación a la cadena de bloques de Prueba de trabajo definitiva. La participación sin custodia de Bitcoin se suma sustancialmente al modelo de seguridad de Core y, al mismo tiempo, desbloquea el rendimiento nativo de Bitcoin por primera vez en la historia. Este enfoque innovador permite a los poseedores de Bitcoin participar y ganar dinero con Satoshi Plus sin renunciar a la custodia de su Bitcoin, integrando así el poder económico de Bitcoin con las funcionalidades avanzadas de blockchain de Core.
 
-La cadena de bloques Core está diseñada como la primera cadena de bloques compatible con la máquina virtual Ethereum (EVM) alineada con Bitcoin. Introduce un novedoso mecanismo de consenso llamado Satoshi Plus, que aprovecha a los mineros y poseedores de Bitcoin para asegurar una plataforma de contrato inteligente hiperescalable.
+## Descripción general
 
-## Propósito y Misión
+El Stake de Bitcoin sin custodia permite a los poseedores de Bitcoin ganar tokens CORE simplemente bloqueando su Bitcoin en la cadena de bloques de Bitcoin, sin ceder nunca la custodia de sus claves privadas a ningún tercero, contrato inteligente externo o billetera MPC. Al bloquear su Bitcoin en la cadena de bloques de Bitcoin, los participantes de Bitcoin contribuyen a la elección de validadores centrales, mejorando y descentralizando así la seguridad de Satoshi Plus.
 
-El objetivo principal detrás de Core blockchain es desbloquear tanto la red Bitcoin como el activo Bitcoin. El resultado es una plataforma de contrato inteligente escalable, sin permisos y potenciadora de BTCfi (Bitcoin DeFi), asegurada por la infraestructura descentralizada y el vasto valor de mercado de Bitcoin.
+## Empoderar a los poseedores de Bitcoin y fortalecer el núcleo
 
-La visión del futuro de Core es aquella en la que Bitcoin pasa de ser una mera reserva de valor a un verdadero medio de intercambio dentro del ecosistema BTCfi escalable y impulsado por Bitcoin de Core. El activo Bitcoin, la forma de dinero más segura jamás vista, finalmente puede desbloquearse por completo.
+#### _Los beneficios duales de la participación sin custodia de Bitcoin_
 
-El facilitador central de esta transición es la alineación de Bitcoin, porque lo fundamental de Bitcoin es su papel como alineador de incentivos. Básicamente, la cadena de bloques de Bitcoin es una red de partes interesadas alineadas con incentivos que administran la seguridad del activo de Bitcoin. Ese simple objetivo de proteger el activo Bitcoin hace que Bitcoin sea increíblemente fuerte, pero también deliberadamente limitado. Debido a la importancia de Bitcoin como una reserva de valor perfectamente sólida, similar al oro, la red está diseñada con limitaciones deliberadas a nivel de protocolo para maximizar su preservación y permanencia sobre su escalabilidad. Estas limitaciones intrínsecas afectan la velocidad, la complejidad, la componibilidad, la interoperabilidad y la flexibilidad de Bitcoin.
+1. **Beneficios para los poseedores de Bitcoin de la participación sin custodia de Bitcoin**
+   - **Mantener activos en Bitcoin:** Mediante la participación sin custodia de Bitcoin, los titulares de Bitcoin tienen la oportunidad única de mantener sus activos de forma segura en la red Bitcoin. Esto es importante porque les permite conservar su inversión en lo que se considera ampliamente como la cadena de bloques más descentralizada y segura, a menudo denominada oro digital. En esencia, pueden seguir conservando sus Bitcoins, disfrutando de la seguridad y la reputación que ofrece, sin necesidad de transferir sus activos a otra parte.
+   - **Obtener tokens Core como recompensa:** Participar en Stake de Bitcoin sin custodia ofrece un incentivo adicional: ganar tokens Core. Esta es una forma para que los poseedores de Bitcoin no sólo conserven sus activos de Bitcoin sino también reciban recompensas adicionales en forma de tokens Core.
+   - **Responsabilidad social en la descentralización:** Al apostar su Bitcoin, los titulares contribuyen a la descentralización de la cadena de bloques central. Esta es una forma de responsabilidad social, ya que su participación ayuda a mantener una red diversa y distribuida, lo cual es fundamental para el espíritu de la tecnología blockchain.
+2. **La razón fundamental de Core para ofrecer apuestas de Bitcoin sin custodia**
+   - **Mejora de la descentralización y la seguridad:** Core blockchain ofrece apuestas de Bitcoin sin custodia como un movimiento estratégico para mejorar su descentralización y seguridad. Al incorporar Bitcoin, que tiene una red sólida y bien establecida, en su mecanismo de consenso, Core puede aprovechar las características de descentralización y seguridad de Bitcoin.
 
-Cambiar la capa base de Bitcoin es similar a encajar una clavija cuadrada en un todo redondo, por lo que en lugar de alterar lo que hace que Bitcoin sea especial, Core simplemente extiende esa alineación de incentivos única a su plataforma de contrato inteligente. Esta alineación se produce a través del mecanismo de consenso exclusivo de Core, Satoshi Plus. Juntos, el Consenso Nakamoto de Bitcoin y el consenso Satoshi Plus de Core se refuerzan mutuamente, defendiendo simultáneamente el activo de Bitcoin y los contratos inteligentes impulsados ​​por Bitcoin, respectivamente.
-En alineación con Bitcoin, Satoshi Plus desbloquea la tasa libre de riesgo de Bitcoin para los poseedores de Bitcoin, una recompensa de segundo bloque para los mineros de Bitcoin y un ecosistema BTCfi expansivo para los usuarios de Bitcoin y DeFi.
+## Ventajas de la apuesta de Bitcoin sin custodia
 
-## Tecnología Core
+1. **Sin nuevos supuestos de confianza:** Los usuarios pueden apostar sus bitcoins sin sacarlos de la cadena de bloques de Bitcoin, manteniendo así la alta seguridad y confianza que conlleva la sólida infraestructura de Bitcoin.
+2. **Autocustodia y 100% seguro:** Los usuarios solo necesitan enviar ellos mismos la transacción de participación en la red Bitcoin y los activos de Bitcoin NO necesitan salir de la red Bitcoin en absoluto.
+3. **La tasa libre de riesgo de Bitcoin:** Al introducir cero nuevos supuestos de confianza, la apuesta de Bitcoin de Core desbloquea un rendimiento sin riesgo para los poseedores de Bitcoin.
+4. **Bitcoin-Nativity:** Al utilizar los bloqueos de tiempo absolutos nativos de Bitcoin, los participantes en apuestas de Bitcoin conservan la custodia total de su Bitcoin.
+5. **Generación de rendimiento:** Este mecanismo transforma Bitcoin en un activo que genera rendimiento, proporcionando a los participantes recompensas de tokens CORE y mejorando la utilidad de sus tenencias.
+6. **Integración de red:** La participación sin custodia de Bitcoin integra a los poseedores de Bitcoin en el mecanismo de consenso de Core, contribuyendo a la seguridad y descentralización de la red.
+7. **Emisión principal:** El sistema de recompensas ayuda a alinear los incentivos entre cadenas. **Emisión principal:** El sistema de recompensas ayuda a alinear los incentivos entre cadenas. El grupo de recompensas proviene de un sistema de recompensas de consenso compartido que integra las contribuciones tanto de los mineros de Bitcoin como de los apostadores de tokens CORE, optimizando así la distribución de recompensas para todos los participantes.
 
-1. **Consenso de Satoshi Plus**
-   Este innovador mecanismo de consenso combina Prueba de trabajo delegada (DPoW), Prueba de participación delegada (DPoS) y Stake de Bitcoin sin custodia, incorporando así a los mineros de Bitcoin, a los participantes de CORE y a los participantes de Bitcoin, respectivamente, en la elección de los validadores principales. Cada una de estas tres patas de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
-   - **Prueba de trabajo delegada (DPoW):** Los mineros de Bitcoin mejoran la seguridad de Core al delegar su poder de hash a los validadores de Core, obteniendo recompensas suplementarias en forma de tokens CORE. Esta relación simbiótica aprovecha la sólida infraestructura de seguridad de Bitcoin sin costos adicionales para los mineros, alineando incentivos y reforzando la integridad de la red.
-   - **Prueba de participación delegada (DPoS):** Los poseedores de tokens CORE participan activamente en el consenso de Core al delegar sus tokens a validadores. Esto no solo garantiza un alto nivel de seguridad de la red, sino que también proporciona a los participantes recompensas de tokens CORE, fomentando una amplia participación y manteniendo un proceso de elección de validadores equilibrado y descentralizado.
-   - **Stake de Bitcoin sin custodia:** Los poseedores de Bitcoin pueden bloquear sus activos en bloqueos de tiempo absoluto en la cadena de bloques de Bitcoin, obteniendo recompensas simbólicas CORE mientras mantienen la custodia de su Bitcoin. Este enfoque innovador transforma Bitcoin en un activo rentable, agregando valor sin comprometer la seguridad y la confianza inherentes a la red Bitcoin.
+## Cómo funciona la apuesta de Bitcoin sin custodia
 
-2. **Capacidades avanzadas de contratos inteligentes**
-   - **Compatibilidad con EVM:** Permite a los desarrolladores un entorno de construcción familiar en el que pueden portar fácilmente dapps existentes basadas en Ethereum a Core sin cambios significativos, fomentando la adopción y el crecimiento dentro del ecosistema Core.
-   - **Core-Native Wrapped Bitcoin (coreBTC):** Una solución descentralizada y de confianza mínima para conectar Bitcoin con Core, lo que permite su uso sin problemas en la cadena de bloques Core para contratos inteligentes y otras actividades BTCfi mientras se mantiene una vinculación 1:1. con bitcóin.
+Con la apuesta de bitcoins sin custodia, Core incorpora a los poseedores de bitcoins como la tercera parte del consenso de Satoshi Plus. La metodología de Core para integrar los centros de participación de bitcoin en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo CLTV es una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que haya pasado un cierto momento. Este tiempo se puede definir en términos de una fecha y hora específicas o por la altura del bloque. En lugar de que los titulares cedan la custodia de sus bitcoins a apuestas externas, los apostadores en Core simplemente necesitan colocar sus bitcoins en bloqueos de tiempo CLTV como parte de una transacción, y la transacción puede diseñarse para devolver el resultado una vez transcurrido el período de tiempo. Dentro de esa transacción, los participantes deben incluir un script que contenga la misma información que los mineros de Bitcoin incluyen en sus bloques delegados:
 
-3. **Mejoras de seguridad**
-   - **Validación de transacciones mejorada:** Core involucra tanto a los mineros de Bitcoin como a los participantes en la seguridad de sus contratos inteligentes.
-   - **Nodos guardianes:** Además de los controles de seguridad existentes, los verificadores tienen la responsabilidad exclusiva de monitorear la red en busca de signos de actividad maliciosa y pueden penalizar a los malos actores con pruebas verificables.
+1. La dirección del Core Validator al que el apostador quiere delegar su bitcoin.
+2. La dirección a la que el apostador desea que se envíen sus recompensas de tokens CORE.
 
-4. **Características de interoperabilidad**
-   - **Intercambios atómicos HTLC sin confianza:** Los contratos Hashed TimeLock permiten el intercambio de tokens entre pares y sin confianza entre Core y otras cadenas de bloques, incluido (y especialmente) Bitcoin.
-   - **Interoperabilidad entre cadenas:** Como cadena de bloques escalable y compatible con EVM, Core tiene integraciones con muchos puentes y dapps entre cadenas.
+Los apostadores de Bitcoin obtienen un rendimiento de su bitcoin, que de otro modo sería pasivo, en forma de recompensas de tokens CORE, durante el tiempo que establezcan el bloqueo de tiempo (y, por lo tanto, durante el tiempo que deleguen su bitcoin para votar por los Validadores en la red Core). El resultado final es que miles de millones de dólares en valor de Bitcoin subutilizado se convertirán en productivos, remunerando a los interesados ​​y al mismo tiempo ampliando el alcance de la utilidad de Bitcoin.
 
-5. **Usabilidad y Accesibilidad**
-   - **Interfaces fáciles de usar:** Se puede acceder al Core a través de muchas carteras e interfaces fáciles de usar y de uso común.
-   - **Herramientas integrales para desarrolladores:** Se proporciona un conjunto de herramientas y documentación para ayudar a los desarrolladores a crear, implementar y administrar aplicaciones en Core.
+### Directrices para apostar/canjear Bitcoin
 
-6. **Gobernanza y participación comunitaria**
-   - **Procesos de gobernanza transparentes:** Ciertos parámetros variables, como el mecanismo de quema, implican un proceso de toma de decisiones transparente e inclusivo, que permite la participación de la comunidad y la votación en cadena.
-   - **Programas de incentivos comunitarios:** Los miembros de la comunidad tienen iniciativas diseñadas para recompensar a los usuarios por sus contribuciones al ecosistema, ya sea a través del desarrollo, la educación o la participación en la gobernanza.
+Al apostar o canjear su Bitcoin, siga estas pautas para garantizar transacciones fluidas:
 
-## Estado del ecosistema Core
+1. **Evite tarifas bajas de gasolina:**
+   - Recomendamos evitar tarifas de gas inferiores a la tasa actual del mercado.
+   - El uso de una tarifa de gasolina demasiado baja, especialmente durante períodos de congestión de la red, puede hacer que su transacción de Bitcoin tarde más tiempo (potencialmente días) en confirmarse.
+2. **Manejo de situaciones con tarifas bajas de gas:**
+   - Si su transacción de Bitcoin se retrasa debido a una baja tarifa de gasolina, considere usar un acelerador de transacciones para acelerar el proceso.
+   - Hay varios servicios de terceros disponibles; por ejemplo, el acelerador de transacciones gratuito viaBTC (al que se puede acceder [aquí](https://www.viabtc.com/tools/txaccelerator)).
+   - Por favor investigue y elija el servicio que mejor se adapte a sus necesidades.
 
-Core alberga un ecosistema BTCfi sólido y en crecimiento. Muchos protocolos en Core se centran en Bitcoin y derivados de Bitcoin (es decir, activos nativos de Bitcoin basados ​​en Bitcoin, como los NFT de Ordinals). Bitcoin es en gran medida un activo infrautilizado, ya que la programabilidad limitada de Bitcoin Script dificulta la activación de Bitcoin en protocolos DeFi convencionales mientras se mantiene la custodia de los activos. Con un mecanismo de consenso integrado con el propio consenso de Bitcoin, Core tiene como objetivo proporcionar un entorno DeFi para que los protocolos utilicen activos basados ​​en Bitcoin con suposiciones de confianza mínimas. Además, subvenciones y programas de creación como [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https:// ignition.coredao.org/) y [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram) tienen como objetivo incentivar la construcción proyectos innovadores en Core y catalizar un mayor crecimiento en torno a Bitcoin DeFi. Explore el ecosistema Core en constante expansión [aquí](https://coredao.org/explore/ecosystem).
+Si sigue estas recomendaciones, podrá garantizar un proceso de apuesta y canje más eficiente para su Bitcoin.
 
-## Visión de futuro
+### Requisitos de elegibilidad
 
-La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de desbloquear Bitcoin. Esto incluye muchas actualizaciones estructurales diseñadas para alinear aún más Bitcoin y Core, crear una mejor experiencia de usuario para los usuarios y aprovechar otras áreas de investigación y desarrollo. En última instancia, estos elementos deberían servir para crear un ecosistema blockchain más interconectado y funcionalmente diverso donde las fortalezas fundamentales de Bitcoin se aprovechen para respaldar tecnologías y aplicaciones nuevas y emergentes en DeFi.
+Core da la bienvenida a los poseedores de Bitcoin para que apuesten su Bitcoin en la red Bitcoin. Al votar por un validador de Core durante su transacción de participación de Bitcoin, desempeña un papel fundamental en la descentralización de Core, ganando tokens CORE como recompensas recurrentes.
 
-- **Apuesta dual:** Creación de tasas de apuesta de Bitcoin más altas para los apostadores de tokens Bitcoin y CORE.
+- Hay _requisitos mínimos_ tanto en **cantidad** como en **duración** para que la apuesta sea elegible en Core.
+  - Un usuario debe apostar al menos **0,01 Bitcoin** (menos las tarifas de transacción) durante al menos **10 días**.
 
-- **Mercados de tarifas locales:** Mejoras que pueden hacer que las transacciones sean más predecibles y potencialmente más económicas.
+### Flujo de trabajo de transacciones
 
-- **Intercambios atómicos:** Al aprovechar los HTLC, los intercambios atómicos pueden seguir siendo una fuente de alineación estructural entre las cadenas de bloques Bitcoin y Core.
+![flujo-de-stake-btc](../../../../static/img/btc-sating/btc-sating-flow.png)
 
-- **Mejoras de coreBTC:** La integración de coreBTC con el consenso Satoshi Plus de Core Chain y el uso de billeteras multifirma pueden aumentar la seguridad del activo. Además, a los Lockers se les podrían ofrecer más opciones de garantía.
+La implementación de Core de la participación nativa de Bitcoin no tiene ningún tipo de custodia, es decir, los usuarios pueden mantener sus activos de Bitcoin en la red Bitcoin sin desconectarlos antes de realizar la participación. Los usuarios deben realizar únicamente los siguientes pasos:
 
-- **coreBTC como token de gas:** Esta opción permitiría a los usuarios pagar las tarifas de transacción en CORE o coreBTC.
+- Envíe una transacción de Bitcoin a su propia dirección y bloquee la salida cuyo monto se pretende apostar en la cadena de bloques Core utilizando la función de bloqueo de tiempo nativo de Bitcoin. Además, la transacción también debe contener una salida "op_return" en la que los usuarios pueden designar la dirección del validador Core para apostar y una "dirección de recompensa" para recibir recompensas CORE. Para obtener detalles sobre cómo componer dicha transacción de participación, consulte el [diseño de transacción] (design.md).
 
-- **Bitcoin LST:** Esta característica permitiría a los apostadores de BTC obtener rendimiento de su Bitcoin y al mismo tiempo usar ese BTC para diversas aplicaciones en Core.
+- (_Opcional_) Una vez confirmada la transacción en la red Bitcoin, los usuarios pueden recuperar los datos de la transacción y enviarlos a la cadena de bloques Core. Este paso es opcional, si los usuarios redactan la transacción en un formato estándar como lo sugiere Core (definido en [diseño de transacción](design.md)). La infraestructura Core detectará la transacción de participación y la enviará a Core blockchain para los usuarios.
 
-- **Retomando:** Esta adición permitiría que otros protocolos se beneficien de la protección de Bitcoin de Core Chain.
+- Cuando expira el bloqueo de tiempo, los usuarios pueden gastar el UTXO utilizando el script de canje correspondiente. Les resulta fácil crear el script de canje a partir de la transacción de apuesta original.
+
+## Proceso paso a paso
+
+1. **Bloqueo de Bitcoin:** Los poseedores de Bitcoin inician el proceso de participación bloqueando su Bitcoin en un bloqueo de tiempo absoluto en la cadena de bloques de Bitcoin.
+
+2. **Incluyendo información de la delegación:** Dentro de la transacción de bloqueo, los participantes incluyen:
+
+3. **Dirección del Validador Central:** La dirección del Validador Central al que delegar su Bitcoin.
+
+4. **Dirección de recompensa del token CORE:** La dirección a la que desean que se envíen las recompensas del token CORE.
+
+5. **Delegar Bitcoin:** Esta acción delega el Bitcoin del apostador al validador Core elegido durante un período específico, durante el cual el Bitcoin no se puede gastar.
+
+6. **Elección de validador:** Core utiliza Bitcoin delegado para ayudar a elegir validadores. Los validadores con Bitcoin más delegado tienen más posibilidades de ser elegidos para el conjunto de validadores.
+
+7. **Obtención de recompensas:** Los participantes en apuestas de Bitcoin obtienen recompensas en tokens CORE durante el período de bloqueo, según el rendimiento del validador y la cantidad de Bitcoin apostada.
+
+8. **Desbloqueo de Bitcoin:** Una vez finalizado el período de bloqueo, el Bitcoin del apostador se desbloquea y se puede gastar nuevamente.
 
 ## Conclusion
 
-Al aprovechar su exclusivo mecanismo de consenso Satoshi Plus, Core integra mineros de Bitcoin, participantes de CORE y participantes de Bitcoin sin custodia, lo que garantiza una seguridad sólida y una gobernanza descentralizada. Este enfoque innovador no sólo mejora la utilidad de Bitcoin, sino que también fomenta un próspero ecosistema BTCfi, que permite a los usuarios, desarrolladores e inversores desbloquear nuevas oportunidades en las finanzas descentralizadas. A medida que Core continúa creciendo y evolucionando, está preparado para promover el papel de Bitcoin como pilar central de un futuro financiero escalable, sin permisos e interconectado.
+La participación sin custodia de Bitcoin transforma el activo de Bitcoin de una reserva de valor pasiva a un activo activo que genera rendimiento y proporciona seguridad. La participación en Bitcoin permite a los poseedores de Bitcoin obtener la tasa libre de riesgo de Bitcoin y al mismo tiempo contribuye a la seguridad de una plataforma de contrato inteligente diseñada para desbloquear más casos de uso de activos de Bitcoin.
