@@ -1,67 +1,65 @@
 ---
-sidebar_label: Vue d'Ensemble
+sidebar_label: Vue d'Ensemble des Nœuds Fonctionnant sur Core Chain
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Vue d'ensemble des validateurs
+# Nœuds sur le l'Écosystème Core Chain
 
 ---
 
-Dans l'écosystème Core Chain, les validateurs jouent un rôle essentiel dans le maintien de l'intégrité, de la sécurité et de la continuité de la blockchain. Ils sont responsables du traitement des transactions, de la création de nouveaux blocs et de la participation au processus de consensus. Ce rôle est crucial pour garantir que la Core Chain fonctionne efficacement et reste décentralisée.
+Dans l'écosystème Core Chain, la robustesse, la sécurité et la décentralisation du réseau sont maintenues par les nœuds opérés par les participants de la communauté. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau. Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. Si vous n'avez pas encore démarré le nœud Core Chain, veuillez consulter la documentation pour [Exécuter un Nœud Validateur Local](./validator/running-validator.md) avant de passer aux différentes configurations.
 
-## Qui sont les validateurs dans le réseau Core
+- Participer à la gouvernance du réseau Core :
 
-Dans l'écosystème Core Chain, les validateurs assurent l'intégrité et la sécurité de la blockchain en produisant et validant de nouveaux blocs. Ils participent au mécanisme de consensus Satoshi Plus, un mélange de Preuve de Travail (PoW) et de Preuve d'Enjeu Déléguée (DPoS). Les validateurs sont sélectionnés en fonction d'un système hybride qui prend en compte à la fois les jetons CORE et BTC mis en jeu en leur faveur, ainsi que la puissance de hachage Bitcoin qui leur est déléguée. Ce système garantit que le groupe de validateurs représente un équilibre entre les intérêts des parties prenantes et la puissance de minage, renforçant ainsi la sécurité et la décentralisation du réseau. Les élections des validateurs se déroulent par cycles, appelés époques, au cours desquels un nouveau groupe de validateurs est sélectionné pour gérer les opérations et la gouvernance de la blockchain de manière efficace.
+  - [Démarrer un nœud validateur](./config/validator-node-config.md)
 
-## Économies
+- Exploiter un nœud Core Chain pour un usage privé :
+  - [Démarrer un nœud complet normal](./Full-Node/on-mainnet.md)
 
-Les récompenses des validateurs proviennent de
-1. **Les récompenses de base**, sous forme de jetons CORE nouvellement créés;
-2. **Les frais collectés lors des transactions dans chaque bloc**;
+- Envoyer des transactions ou interroger directement la chaîne Core Chain :
 
-Les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'un cycle est miné. Actuellement, **90 %** des récompenses vont aux validateurs et **10 %** sont alloués au `Contrat de Récompense du Système`. Sur les **90 %** des récompenses versées aux validateurs, un certain pourcentage est prélevé sous forme de commission par le validateur avant de redistribuer le reste à leurs délégués. Chaque validateur a une probabilité égale de produire des blocs, de sorte qu'à long terme, tous les validateurs stables devraient obtenir une part similaire des récompenses.
+  - [Démarrer un nœud RPC](./config/rpc-node-config.md)
 
-Il en va de même pour les frais de transaction collectés sur chaque bloc au cours d'un tour. Ces frais ne sont pas entièrement versés aux validateurs, mais sont calculés de manière similaire aux récompenses de base, c'est-à-dire que 90 % des frais accumulés sont versés aux validateurs, un certain pourcentage est prélevé sous forme de commission par le validateur, et le reste est distribué aux délégués. Les 10 % restants sont déposés dans le System Reward Contract.
+- Interroger les données historiques depuis le bloc genesis :
 
-Les validateurs partagent les récompenses avec les entités qui leur ont délégué des fonds – y compris les stakers de CORE, les stakers de Bitcoin et les délégateurs de PoW – Cependant, ils décident eux-mêmes de la part qu'ils (les validateurs) souhaitent conserver avant de la redistribuer. Ils peuvent choisir de garder plus ou moins de récompenses, bien qu'ils soient incités à être généreux afin d'attirer davantage de mises et de puissance de hachage.
+  - [Démarrer un nœud d'archive](./config/archive-node-config.md)
 
-Les validateurs sont tenus de partager les récompenses avec les délégués qui ont staké du CORE ou délégué de la puissance de hachage à leur profit. Étant donné que chaque validateur a une probabilité égale de produire des blocs, tous les validateurs stables devraient recevoir une part similaire des récompenses à long terme. La part que les validateurs gardent pour eux-mêmes (frais de commission) sera directement versée à leurs adresses de frais à la fin de chaque tour.
+- Aider les opérateurs de nœuds à se synchroniser rapidement avec le réseau :
 
-**_Notez que les règlements des récompenses se font sur une base quotidienne, c'est-à-dire par tour, et non par bloc._**
+  - [Démarrer un nœud de snapshot](./config/snapshot-node-config.md)
 
-![validator-reward-distribution](../../../static/img/validator/Reward-Distribution.png)
+## Types de Nœuds sur le Réseau Core Chain
 
-Prenons l'exemple d'une récompense de base pour un tour de **3 000 CORE**, et supposons qu'un validateur fixe son taux de commission à **20 %**. Ces tokens ne vont pas directement à l'auteur de la proposition. Ils sont plutôt partagés entre les validateurs et les délégués. Ces **3 000 CORE** seront distribués en fonction de la participation de chaque participant. Supposons que les frais générés par toutes les transactions dans tous les blocs d'un tour s'élèvent à **100 CORE**.
+1. **Validateurs:**
+   - **Rôle :** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de Core Chain.
+   - **Requis:** Les validateurs doivent staker un minimum de **10 000 tokens CORE** pour participer, alignant ainsi leurs incitations financières avec les performances et la sécurité du réseau.
+   - **Incitation :** Les validateurs gagnent des récompenses en tokens CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
 
-```maths
-    Récompense totale accumulée = Récompense de base + Frais de transaction = 3 000 + 100 = 3 100 CORE
+2. **Nœuds Complets Normaux :**
+   - **Rôle :** Les nœuds complets maintiennent une copie en temps réel du registre de la blockchain, valident les transactions et soutiennent le réseau en relayant les données des blocs et des transactions. Ils sont principalement utiles pour un usage privé.
+   - **Requis :** L'exploitation d'un nœud complet nécessite des ressources informatiques et de stockage importantes pour gérer les données complètes de la blockchain et le trafic réseau continu.
 
-    System Reward Contract reçoit = 3 100 x 10 % = 310 CORE  
+3. **Nœuds RPC :**
+   - **Rôle :** Les nœuds RPC fournissent une interface de programmation d'application (API) permettant aux développeurs et aux applications externes d'interagir avec la blockchain, facilitant ainsi les requêtes et les transactions.
+     **Importance :** Ils sont essentiels pour le développement et le fonctionnement des applications décentralisées (DApps) et pour l'accès externe aux données de la blockchain.
 
-    Récompense accumulée du validateur = (Récompense de base + Frais de transaction) x 90 % = 3 100 x 90 % = 2 790 CORE
+4. **Nœuds d'Archive :**
+   - **Rôle :** Les nœuds d'archive stockent l'intégralité de l'historique de la blockchain, y compris tous les états et transactions depuis le bloc genesis, fournissant une ressource précieuse pour les requêtes historiques approfondies.
+   - **Requis :** Exigences : Ces nœuds nécessitent une capacité de stockage importante, car ils conservent tous les états expirés et actuels de la blockchain, les rendant très gourmands en ressources.
+   - **Utilisation :** Les nœuds d'archive sont essentiels pour les développeurs ayant besoin d'accéder à toutes les données historiques de la blockchain pour des analyses, des audits et des requêtes avancées.
 
-    Commission = (Récompense de base + Frais de transaction) x 20 % = 2 790 x 20 % = 558 CORE
+5. **Nœuds de Snapshot :**
+   - **Rôle :** Les nœuds de snapshot maintiennent des copies des instantanés de la blockchain à différents intervalles. Ces snapshots incluent l'état de la blockchain à une hauteur de bloc donnée, offrant un point de restauration pour les nœuds complets ou les nouveaux nœuds.
+   - **Bénéfices :** Ils permettent une synchronisation rapide et la récupération d'autres nœuds dans le réseau, améliorant ainsi la résilience et la scalabilité de l'infrastructure du réseau.
 
-    Récompense totale du validateur = Commission = 558 CORE
+## Importance de Chaque Type de Nœud
 
-    Récompense totale des délégués = Récompense accumulée du validateur - Commission = 2 790 - 558 = 2 232 CORE
-```
+- Les **validateurs** garantissent la validité des transactions et le consensus du réseau.
+- Les **nœuds complets** et les **nœuds d'archive** assurent la redondance et l'intégrité des données.
+- Les **nœuds RPC** permettent le développement d'applications et l'interaction avec la blockchain.
+- Les **nœuds de snapshot** contribuent à l'évolutivité et à la synchronisation rapide du réseau.
 
-:::note
-Dans l'écosystème Core, les récompenses sont distribuées à chaque validateur. À partir de ces récompenses, les validateurs sont tenus de conserver un pourcentage sous forme de commission et de redistribuer le reste à leurs délégués. Chaque validateur peut fixer son propre taux de commission. Cependant, il n'y a pas de CORE auto-staké (self-bonded). Un validateur ne reçoit des commissions que s'il choisit de ne pas staker sur son propre validateur.
-:::
+## Conclusion
 
-## Risques potentiels et pénalités pour les validateurs
-
-Dans l'écosystème de Core Chain, les validateurs jouent un rôle crucial dans le maintien de l'intégrité et de la sécurité du réseau. Bien que ce rôle comporte des incitations, telles que la possibilité de gagner des récompenses pour la validation des blocs, il comporte également certains risques et pénalités potentiels si les validateurs ne remplissent pas correctement leurs fonctions ou s'engagent dans des activités malveillantes. Voici un aperçu détaillé des risques et pénalités auxquels les validateurs peuvent faire face dans l'écosystème de Core Chain :
-
-1. **Risques de slashing :** Dans de nombreux systèmes basés sur le DPoS, y compris Core Chain, les validateurs risquent de subir un slashing s'ils agissent de manière malveillante ou négligente. Cela peut inclure la signature double, l'inactivité (incapacité à être en ligne et à remplir les fonctions de validation) ou toute action compromettant la sécurité du réseau. Le slashing implique la destruction ou la confiscation d'une partie des tokens CORE mis en jeu, ce qui affecte directement les avoirs financiers du validateur.
-
-2. **Risques de blocage des mises et de liquidité :** Les validateurs doivent bloquer un montant important de tokens CORE en garantie pour participer au processus de validation. Ces tokens sont soumis à des périodes de blocage pendant lesquelles les fonds ne sont pas accessibles, ce qui pose un risque de liquidité, notamment si les conditions du marché changent de manière drastique.
-
-3. **Emprisonnement des validateurs :** Les validateurs qui sous-performent de manière répétée ou violent les protocoles du réseau peuvent être "emprisonnés". Ce terme désigne leur retrait temporaire du set de validateurs, les empêchant de participer au consensus et de gagner des récompenses. Cela affecte non seulement leurs revenus, mais peut également ternir leur réputation au sein de la communauté.
-
-4. **Perte de délégation :** Les validateurs dépendent des délégations des détenteurs de tokens CORE pour augmenter leur influence et leur potentiel de gain. Une mauvaise performance ou des pénalités élevées peuvent pousser les délégués à retirer leur soutien et à réaffecter leurs mises à des validateurs plus fiables, entraînant une baisse significative des gains potentiels.
-
-5. \*\*Risques opérationnels et de sécurité : Exploiter un nœud validateur nécessite des compétences techniques. Les validateurs doivent s'assurer que leurs systèmes sont sécurisés et fonctionnent efficacement 24 heures sur 24, 7 jours sur 7. Un échec dans la gestion de ces risques opérationnels peut entraîner des blocs manqués ou des violations de sécurité, ce qui peut entraîner des pertes financières ou des dommages à leur réputation.
+Les différents types de nœuds dans l'écosystème Core Chain assurent collectivement que la blockchain est sécurisée, efficace, accessible et robuste. Les validateurs, nœuds complets et nœuds d'archive forment la colonne vertébrale de la sécurité et de l'intégrité des données du réseau. En même temps, les nœuds RPC et de snapshot offrent flexibilité, accessibilité et scalabilité. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
