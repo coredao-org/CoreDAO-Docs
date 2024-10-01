@@ -1,65 +1,27 @@
 ---
-sidebar_label: Vue d'Ensemble des Nœuds Fonctionnant sur Core Chain
+sidebar_label: Vue d'Ensemble
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Nœuds sur le l'Écosystème Core Chain
+# Régulation des Validateurs
 
----
+**Slashing** et **jailing** sont les deux mécanismes de base utilisés par Core Chain pour décourager les comportements inappropriés des validateurs.Comprendre leur fonctionnement est essentiel pour saisir la structure incitative de Core Chain.
 
-Dans l'écosystème Core Chain, la robustesse, la sécurité et la décentralisation du réseau sont maintenues par les nœuds opérés par les participants de la communauté. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau. Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. Si vous n'avez pas encore démarré le nœud Core Chain, veuillez consulter la documentation pour [Exécuter un Nœud Validateur Local](./validator/running-validator.md) avant de passer aux différentes configurations.
+## Slashing et Jailing
 
-- Participer à la gouvernance du réseau Core :
+Le terme "slashing" désigne soit la réduction des récompenses qu’un validateur aurait reçues pour avoir miné des blocs, soit la réduction du dépôt de tokens CORE effectué par un nœud pour devenir validateur. La gravité de la pénalité de slashing est proportionnelle à la gravité du comportement fautif du validateur.
 
-  - [Démarrer un nœud validateur](./config/validator-node-config.md)
+Les pénalités de slashing sont généralement infligées lorsqu'un nœud ne parvient pas à produire un bloc pendant son tour dans la **procédure de minage de blocs en rotation** comme décrit dans la section de L'[Élection d'un Validateur](../validator/validator-election.md). Si un validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont complètement supprimées. Cela signifie qu'il est important de savoir quand un validateur échoue à miner **50** blocs consécutifs. S'il échoue lors des **50** premiers blocs d'un cycle, il renonce seulement à une petite partie des récompenses accumulées. En revanche, s'il échoue lors des **50** derniers blocs du cycle, il renonce à l'intégralité des récompenses qu'il a gagnées. Si un validateur échoue à miner **150 blocs** d'affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt effectué pour devenir validateur, et il est jail (incarcéré) pendant **trois** jours, ce qui signifie qu'il n'est plus éligible pour être élu dans l'ensemble des validateurs pendant cette période.
 
-- Exploiter un nœud Core Chain pour un usage privé :
-  - [Démarrer un nœud complet normal](./Full-Node/on-mainnet.md)
+## Suggestions de Slashing
 
-- Envoyer des transactions ou interroger directement la chaîne Core Chain :
+Les vérificateurs sont responsables de signaler les comportements malveillants sur le réseau via des suggestions de slashing. Ces suggestions peuvent être soumises par n'importe qui, et visent à punir les acteurs malveillants. La soumission de ces suggestions nécessite des preuves solides, mais si elles s'avèrent vraies, les récompenses obtenues dépassent largement les coûts.
 
-  - [Démarrer un nœud RPC](./config/rpc-node-config.md)
+Les vérificateurs doivent également signaler les cas de double signature, en fournissant des preuves de cette activité. S'ils ont raison, ils sont récompensés pour avoir assuré la sécurité du réseau.
 
-- Interroger les données historiques depuis le bloc genesis :
+Lorsque les validateurs de Core produisent des blocs, ils vérifient régulièrement si un validateur a été mis emprisonné. Si c'est le cas, l'ensemble des validateurs est mis à jour après une époque (c'est-à-dire après 10 minutes). L'emprisonnement exclut les validateurs malveillants des activités de consensus afin d'améliorer la sécurité du réseau et de maintenir une bonne vitesse de transaction par seconde (TPS).
 
-  - [Démarrer un nœud d'archive](./config/archive-node-config.md)
+## Pénalité pour Double Signature
 
-- Aider les opérateurs de nœuds à se synchroniser rapidement avec le réseau :
-
-  - [Démarrer un nœud de snapshot](./config/snapshot-node-config.md)
-
-## Types de Nœuds sur le Réseau Core Chain
-
-1. **Validateurs:**
-   - **Rôle :** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de Core Chain.
-   - **Requis:** Les validateurs doivent staker un minimum de **10 000 tokens CORE** pour participer, alignant ainsi leurs incitations financières avec les performances et la sécurité du réseau.
-   - **Incitation :** Les validateurs gagnent des récompenses en tokens CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
-
-2. **Nœuds Complets Normaux :**
-   - **Rôle :** Les nœuds complets maintiennent une copie en temps réel du registre de la blockchain, valident les transactions et soutiennent le réseau en relayant les données des blocs et des transactions. Ils sont principalement utiles pour un usage privé.
-   - **Requis :** L'exploitation d'un nœud complet nécessite des ressources informatiques et de stockage importantes pour gérer les données complètes de la blockchain et le trafic réseau continu.
-
-3. **Nœuds RPC :**
-   - **Rôle :** Les nœuds RPC fournissent une interface de programmation d'application (API) permettant aux développeurs et aux applications externes d'interagir avec la blockchain, facilitant ainsi les requêtes et les transactions.
-     **Importance :** Ils sont essentiels pour le développement et le fonctionnement des applications décentralisées (DApps) et pour l'accès externe aux données de la blockchain.
-
-4. **Nœuds d'Archive :**
-   - **Rôle :** Les nœuds d'archive stockent l'intégralité de l'historique de la blockchain, y compris tous les états et transactions depuis le bloc genesis, fournissant une ressource précieuse pour les requêtes historiques approfondies.
-   - **Requis :** Exigences : Ces nœuds nécessitent une capacité de stockage importante, car ils conservent tous les états expirés et actuels de la blockchain, les rendant très gourmands en ressources.
-   - **Utilisation :** Les nœuds d'archive sont essentiels pour les développeurs ayant besoin d'accéder à toutes les données historiques de la blockchain pour des analyses, des audits et des requêtes avancées.
-
-5. **Nœuds de Snapshot :**
-   - **Rôle :** Les nœuds de snapshot maintiennent des copies des instantanés de la blockchain à différents intervalles. Ces snapshots incluent l'état de la blockchain à une hauteur de bloc donnée, offrant un point de restauration pour les nœuds complets ou les nouveaux nœuds.
-   - **Bénéfices :** Ils permettent une synchronisation rapide et la récupération d'autres nœuds dans le réseau, améliorant ainsi la résilience et la scalabilité de l'infrastructure du réseau.
-
-## Importance de Chaque Type de Nœud
-
-- Les **validateurs** garantissent la validité des transactions et le consensus du réseau.
-- Les **nœuds complets** et les **nœuds d'archive** assurent la redondance et l'intégrité des données.
-- Les **nœuds RPC** permettent le développement d'applications et l'interaction avec la blockchain.
-- Les **nœuds de snapshot** contribuent à l'évolutivité et à la synchronisation rapide du réseau.
-
-## Conclusion
-
-Les différents types de nœuds dans l'écosystème Core Chain assurent collectivement que la blockchain est sécurisée, efficace, accessible et robuste. Les validateurs, nœuds complets et nœuds d'archive forment la colonne vertébrale de la sécurité et de l'intégrité des données du réseau. En même temps, les nœuds RPC et de snapshot offrent flexibilité, accessibilité et scalabilité. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
+Il existe un moyen pour qu'un validateur soit définitivement banni du réseau, et cela se produit par le "_double signing_" (double signature), c'est-à-dire la signature de deux blocs différents à la même hauteur de bloc. Alors que l'indisponibilité peut être due à une mauvaise connexion réseau, la double signature est une preuve claire de malveillance intentionnelle. Théoriquement, une double signature bénigne peut se produire si un validateur met à jour la version du réseau qu'il exécute et oublie de mettre à jour son adresse. Il est donc important d'être rigoureux lors des mises à jour du réseau. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses, 100 % de leur dépôt de validateur, et sont ensuite définitivement exclus de la participation au minage des blocs.
