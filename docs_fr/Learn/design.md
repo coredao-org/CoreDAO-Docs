@@ -1,160 +1,111 @@
 ---
-sidebar_label: Design
+sidebar_label: Conception
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conception du Staking Non-Custodial de Bitcoin
+# Conception de coreBTC
 
----
+Le coreBTC dans la blockchain Core représente une innovation majeure dans le domaine de la technologie blockchain, en particulier pour améliorer l'utilité du Bitcoin dans la finance décentralisée (DeFi). Cette représentation synthétique du Bitcoin sur Core assure une interaction transparente avec les applications DeFi tout en maintenant les propriétés critiques du Bitcoin.
 
-## Contexte
+## Composants clés et leurs rôles
 
-La méthodologie pour intégrer le staking de bitcoins repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le `OP_CHECKLOCKTIMEVERIFY` (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
+**1. Lockers:**
 
-![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(5\).png)
+- **Rôle:** Les Lockers sont responsables de la détention du Bitcoin réel qui garantit le coreBTC. Les utilisateurs envoient leur Bitcoin à l'adresse d'un Locker pour initier le processus d'enveloppement. Tout le monde peut s'inscrire en tant que Locker sur Core en bloquant des garanties.
+- **Sécurité:** Les Lockers doivent fournir une quantité significative de garanties en jetons CORE pour maintenir la sécurité du Bitcoin qu'ils détiennent. Cette garantie peut être liquidée en cas de mauvaise conduite, offrant ainsi une forte dissuasion contre les activités frauduleuses.
 
-## Structure des transactions
+**2. Collatéral:**
+\- Les actifs spécifiques et le ratio de collatéral requis sont des paramètres du réseau déterminés par la Core DAO, et le collatéral déposé par les Lockers garantit que le bitcoin verrouillé est toujours soutenu par des actifs d'une valeur supérieure. Si le prix du bitcoin change par rapport à la valeur du collatéral, le Locker doit ajuster son collatéral ou faire face à une liquidation potentielle.
+\- Le collatéral peut être réduit si les Lockers transfèrent du bitcoin sans autorisation ou ne renvoient pas rapidement le bitcoin lorsque le coreBTC est brûlé.
+\- Les Lockers peuvent se désinscrire et récupérer leur collatéral à tout moment, tant qu'ils n'ont plus de bitcoin résiduel verrouillé et qu'ils n'ont pas de demandes de déverrouillage non satisfaites. En échange des services fournis, les Lockers perçoivent de petites commissions.
 
-### Transaction de Staking
+**2. Relayeurs:**
 
-Une transaction de staking Bitcoin doit comporter deux ou trois sorties, qui sont
+- **Role:** Les Relayers surveillent la blockchain Bitcoin pour les transactions de verrouillage dirigées vers les Lockers et valident ces transactions. Ils jouent un rôle crucial pour vérifier que le Bitcoin verrouillé correspond précisément au coreBTC émis sur la blockchain Core.
+- **Fonctionnalité:** Dès qu'ils détectent une transaction de verrouillage valide, les Relayeurs soumettent une preuve à Core pour émettre le montant correspondant de coreBTC, intégrant ainsi le Bitcoin dans l'écosystème de la blockchain Core de manière sécurisée.
 
-- Sortie de type `P2SH/P2WSH`, avec un script de rachat activé par un verrouillage temporel
-- Sortie de type `OP_RETURN` avec les informations de staking de Core
-- (_Optional_) Adresse de changement
+**3. smart Contract coreBTC:**
 
-Notez qu'il n'y a **aucune** restriction sur les entrées.
+- **Role:** Le smart contract coreBTC sur Core gère l'émission et la destruction des tokens coreBTC. Il interagit avec les Relayers et les Lockers pour inciter toutes les opérations à respecter les règles du protocole.
+- **Mécanismes de sécurité:** Le smart contract comprend des mécanismes pour vérifier les preuves de transaction soumises par les Relayeurs, gérer le collatéral déposé par les Lockers, et exécuter les processus d'émission et de rachat du coreBTC.
 
-![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(1\).png)
+**4. Liquidateurs:**
 
-### Transaction de retrait
+- **Rôle:** En cas de fluctuations de prix ou de mauvaise conduite de la part d'un Locker, les Liquidateurs sont chargés de maintenir la sécurité et la couverture du coreBTC en appliquant les exigences de collatéral.
+- **Fonction:** Les Liquidateurs peuvent forcer la liquidation du collatéral d'un Locker si la valeur du Bitcoin verrouillé baisse ou si le Locker ne parvient pas à maintenir le ratio de collatéral requis. Cela permet de préserver l'intégrité et le soutien du coreBTC.
 
-Lorsque le verrouillage temporel se termine, l'UTXO verrouillé peut être dépensé en utilisant le script de rachat
+\*\*5. Gardiens: \*\*
 
-![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(2\).png)
+- **Rôle:** L'activité des Lockers est surveillée par les Gardiens, qui vérifient tout comportement inapproprié et appliquent des réductions de collatéral si nécessaire.
+- **Fonction:** Un Gardien peut déclencher le smart contract de Core pour réduire une partie du collatéral du Locker. Dans ce cas, une partie du collatéral du Locker, équivalente à la valeur du coreBTC brûlé par l'utilisateur, est transférée à l'utilisateur. De plus, le Gardien qui a déclenché cette action reçoit une récompense sous forme d'une partie de la valeur de ce collatéral pour son intervention.
 
-## Design du script
+## Comment fonctionne le coreBTC
 
-### Sortie P2SH/P2WSH
+Le coreBTC est un actif synthétique innovant développé au sein de l'écosystème de la blockchain Core, permettant à Bitcoin d'être utilisé de manière transparente dans des applications de finance décentralisée (DeFi) sur la blockchain Core. Le processus commence lorsqu'un utilisateur verrouille son Bitcoin avec un dépositaire désigné, appelé un **Locker**, qui détient le Bitcoin réel et fournit une quantité importante de collatéral pour sécuriser la transaction. Ce Bitcoin est ensuite représenté sur Core sous forme de coreBTC, maintenant une parité stricte de **1:1** pour maintenir une cohérence de valeur entre le Bitcoin verrouillé et le coreBTC émis.
 
-- Core prend en charge à la fois les sorties `P2SH` et `P2WSH` pour le staking Bitcoin.
+Les Relayeurs jouent un rôle crucial en surveillant ces transactions Bitcoin et en les validant sur Core. Une fois validée, les détails de la transaction sont envoyés au smart contract du coreBTC, qui émet une quantité équivalente de coreBTC et l'accrédite dans le portefeuille de l'utilisateur. Ce coreBTC peut ensuite être utilisé sur diverses plateformes DeFi au sein de l'écosystème Core, permettant aux détenteurs de Bitcoin de s'engager dans des activités de prêt, d'emprunt, de trading, et d'autres activités financières sans réellement dépenser ou risquer leurs avoirs en Bitcoin.
 
-- La construction de la sortie du type `P2SH` est la suivante
+Le rachat du coreBTC en Bitcoin d'origine implique que l'utilisateur initie un processus de brûlage, où le coreBTC est détruit, et le Bitcoin correspondant est déverrouillé et renvoyé du Locker à l'adresse spécifiée par l'utilisateur. Tout le système est sécurisé par une gestion rigoureuse du collatéral et des protocoles de liquidation, ainsi les Lockers maintiennent un collatéral suffisant contre le Bitcoin qu'ils détiennent. De plus, des mécanismes de réduction (slashing) sont en place pour pénaliser toute activité frauduleuse des Lockers, protégeant ainsi l'intégrité et la fiabilité du coreBTC au sein de l'écosystème Core. Ce design améliore non seulement la liquidité et l'utilité du Bitcoin, mais conserve également ses propriétés fondamentales de décentralisation et de sécurité.
 
-  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
+## Création et parité du coreBTC
 
-- La construction de la sortie de type `P2WSH` est la suivante
+Verrouiller du Bitcoin et le lier au coreBTC est essentiel pour maintenir l'intégrité et la fiabilité de cet actif synthétique:
 
-  - `OP_0 <SHA256(RedeemScript)>`
+- **Stockage sécurisé:** Le Bitcoin verrouillé est stocké dans des adresses contrôlées par les Lockers, qui sont incités à maintenir la sécurité et la transparence grâce à leurs obligations collatéral.
+- **Collatéralisation:** Le collatéral fourni par les Lockers sous-tend le processus de parité, ainsi pour chaque coreBTC en circulation, une quantité équivalente de Bitcoin est détenue en toute sécurité par un Locker.
 
-### Script de Rachat
+La création du coreBTC commence lorsqu'un utilisateur verrouille son Bitcoin dans le système. L'utilisateur envoie le Bitcoin à une adresse sécurisée contrôlée par un Locker désigné. Cette action déclenche le processus de création sur la blockchain Core.
 
-Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelques types courants.
+- **Lockers:** Ce sont des nœuds au sein du réseau Core responsables de la détention du Bitcoin réel. Chaque Locker doit déposer une quantité importante de collatéral, généralement en tokens CORE, pour couvrir d'éventuels défauts ou activités frauduleuses.
+- **Relayeurs:** Après l'envoi du Bitcoin à l'adresse du Locker, les Relayeurs surveillent ces transactions. Une fois confirmée, les Relayeurs valident la transaction et soumettent une preuve au smart contract du coreBTC sur la blockchain Core.
+- **Exécution du smart contract:** Dès réception de la preuve nécessaire des Relayeurs, le smart contract du coreBTC fait appel au client léger Bitcoin pour vérifier l'authenticité et la finalité de la transaction Bitcoin concernée, puis crée une quantité équivalente de coreBTC. Ce coreBTC est ensuite émis dans le portefeuille de l'utilisateur sur la blockchain Core, respectant une parité 1:1 avec le Bitcoin verrouillé.
 
-- Lors de l'utilisation d'une clé publique `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG`
-  et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <RedeemScript>`
+![pegging-in-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
 
-- Lors de l'utilisation d'une clé publique de hachage (fortement recommandé) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` et le script de déverrouillage correspondant est `<sig> <pubKey> <RedeepScript>`
+## Rachat et parité du coreBTC
 
-- Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` Le montant et la durée du Bitcoin verrouillé dans cette sortie seront utilisés pour le calcul de l'élection des validateurs et la distribution des récompenses sur Core.
+Le rachat, ou la sortie de parité, consiste à inverser le processus de création :
 
-> **Note**
-> Il y a des _exigences minimales_ concernant le **montant** et la **durée** pour que le staking soit éligible sur Core. Un utilisateur doit staker au moins **0,01 Bitcoin** (moins les frais de transaction) pour au moins **10 jours** (`CLTV timestamp - transaction confirmation timestamp > 10 days`).
+- **Brûlage du coreBTC:** Les utilisateurs initient le processus de rachat en envoyant une demande au smart contract du coreBTC pour brûler une quantité spécifiée de coreBTC, en indiquant l'adresse Bitcoin où ils souhaitent recevoir leur Bitcoin.
+- **Déblocage du Bitcoin:** Une fois le coreBTC brûlé avec succès, le smart contract signale au Locker de libérer la quantité correspondante de Bitcoin. Le Locker envoie ensuite ce Bitcoin à l'adresse spécifiée par l'utilisateur, complétant ainsi le processus de sortie de parité. Une fois la transaction Bitcoin confirmée, le Locker la transmet à Core où elle est finalement vérifiée par le client léger Bitcoin
 
-## Sortie OP_RETURN
+![pegging-out-coreBTC](../../../../static/img/coreBTC/pegout-corebtc.png)
 
-La sortie `OP_RETURN` doit contenir toutes les informations de staking dans l'ordre, et être composée dans le format suivant:
+## Processus de Liquidation
 
-- **`OP_RETURN`:** identifiant `0x6a`
-- **`LENGTH`:** représente la longueur totale en octet après l'opcode `OP_RETURN`. Notez que toutes les données doivent être insérées avec la taille d'octet(s) approprié(s).
-- **`Satoshi Plus Identifier`:** (**SAT+**) 4 octets
-- **`Version`:** (**0x01**) 1 octet
-- **`Chain ID`:** (1115 pour le Testnet Core et 1116 pour le Mainnet Core) 2 octets
-- **`Delegator`:** L'adresse Core pour recevoir les récompenses, 20 octets
-- **`Validator`:** L'adresse du validateur Core pour le staking, 20 octets
-- **`Fee`:** Frais pour le relayeur, 1 octet, allant de [0, 255], mesuré en CORE
-- (_Facultatif_) **`RedeemScript`**
-- (_Facultatif_) **`Timelock`:** 4 octets
+Le processus de liquidation est conçu pour protéger le système des défauts de paiement et garantir que le support du coreBTC reste sécurisé:
 
-#### Points Clés
+- **Surveillance des ratios collatéraux:** Les liquidateurs surveillent en permanence la valeur du Bitcoin détenu par les Lockers par rapport au coreBTC émis.
+- **Déclenchement de la liquidation:** Si la valeur marchande du Bitcoin verrouillé chute de manière significative, ou si un Locker ne parvient pas à maintenir le ratio de collatéral requis, les liquidateurs peuvent initier la vente du collatéral du Locker pour couvrir les pertes potentielles.
+- **Mécanisme de liquidation:** La liquidation est effectuée via Core, où le collatéral insuffisant est vendu pour maintenir le soutien nécessaire pour le coreBTC. Pendant le processus, les liquidateurs utilisent du coreBTC pour acheter les tokens CORE collatéralisés à un prix réduit, et le coreBTC est brûlé. Cela augmente le ratio de collatéral et restaure la santé financière du Locker. Lorsque le coreBTC est brûlé, son offre est réduite et il devient plus rare, libérant ainsi le Locker pour reprendre possession d'une quantité de Bitcoin sous-jacent équivalente à la valeur du coreBTC éliminé. Le Locker est ensuite rééquilibré conformément aux exigences de collatéral ; si l'utilisateur initial qui a envoyé le Bitcoin à l'adresse du Locker souhaite récupérer son Bitcoin, il peut choisir n'importe quel Locker pour l'obtenir. Le rachat de coreBTC contre du Bitcoin se fait au niveau systémique, et non pas dans une relation directe entre un utilisateur et un Locker particulier.
 
-- Tout octet pouvant être traduit en nombre doit utiliser`OP_number` (`{0}` doit utiliser `OP_0` au lieu de `0x0100`, `{16}` doit utiliser `OP_16` au lieu de `0x0110`)
-- Tout octet dont la longueur est inférieure à `0x4c (76)` est inséré avec 1 octet égal à la taille `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
-- Les octets plus grands ou égaux à `0x4c` sont insérés en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivie de la longueur puis des données `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
-- Les octets de longueur supérieure à `255` utilisent `0x4d` (`OP_PUSHDATA2`)
-- Les octets de longueur supérieure à `65535` (`0xffff`) utilisent `0x4e` (`OP_PUSHDATA4`)
+![liquidation](../../../../static/img/coreBTC/liquidation-process.png)
 
-Soit le `RedeemScript` soit le `Timelock` doit être disponible, afin de permettre au relayeur d'obtenir le `RedeemScript` et de soumettre les transactions sur Core. Si un `RedeemScript` est fourni, le relayeur l'utilisera directement. Sinon, le relayeur construira le script de rachat basé sur le timelock et les informations dans les entrées de la transaction. Vous trouverez plus d'informations sur le rôle du relayeur dans la section [ci-dessous](#role-of-relayers).
+## Processus de Slashing
 
-## Exemples de Transactions
+Sur la blockchain Core, le concept de slashing est essentiel pour maintenir l'intégrité et la sécurité des transactions coreBTC. Le slashing est une mesure punitive utilisée pour pénaliser les Lockers en cas de mauvaise conduite ou de non-respect des protocoles établis. Il existe deux scénarios principaux où le slashing peut se produire, chacun étant conçu pour protéger le système et ses utilisateurs contre la fraude et les mauvaises pratiques:
 
-### Transaction de Staking
+### 1. **Mouvement non autorisé du Bitcoin verrouillé**
 
-[https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
+Dans ce cas, le slashing se produit lorsqu'un Locker déplace du Bitcoin verrouillé sans avoir reçu une demande de brûlage correspondante d'un détenteur de coreBTC. Ce scénario est considéré comme une violation grave, car il menace directement la parité 1:1 et la confiance des détenteurs de coreBTC dans la capacité du système à garantir que leurs tokens sont bien adossés à du Bitcoin réel.
 
-![btc-staking-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(3\).png)
+- **Déclencheur:** Le processus de slashing est déclenché lorsqu'un Locker transfère du Bitcoin verrouillé vers une adresse non autorisée ou pour une utilisation non autorisée qui ne correspond pas à une demande légitime et vérifiée de rachat de coreBTC.
+- **Détection et signalement:** Cette mauvaise conduite peut être détectée par les systèmes de surveillance de Core ou par d'autres participants au réseau, souvent appelés Gardiens, qui surveillent et signalent toute activité suspecte des Lockers.
+- **Conséquence:** Après confirmation du transfert non autorisé, une partie du collatéral du Locker est saisie et utilisée pour compenser la différence créée dans le système. Cela pénalise non seulement le Locker, mais contribue également à rétablir l'équilibre entre le coreBTC en circulation et son adossement, garantissant ainsi l'intégrité du système.
 
-#### Sortie P2WSH
+![slashing](../../../../static/img/coreBTC/slashing-1.png)
 
-Il s'agit de la sortie de staking, une adresse P2WSH standard. Le script de rachat utilisé est `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
+### 2. **Echec de livraison du Bitcoin lors du rachat de coreBTC**
 
-```jsx
-OP_PUSHBYTES_4 1f5e0e66
-OP_CLTV
-OP_DROP
-OP_DUP
-OP_HASH160
-OP_PUSHBYTES_20 c4b8ae927ff2b9ce218e20bf06d425d6b68424fd
-OP_EQUALVERIFY
-OP_CHECKSIG
-```
+Ce scénario se produit lorsqu'un détenteur de coreBTC décide de racheter ses tokens contre le Bitcoin sous-jacent, mais que le Locker responsable de la libération du Bitcoin ne le fait pas dans le délai imparti.
 
-Le script est très similaire à un script de rachat P2PKH normal, sauf qu'il commence par un timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
+- **Déclencheur:** Un détenteur de coreBTC soumet une transaction de brûlage, détruisant effectivement une certaine quantité de coreBTC avec l'attente de recevoir une quantité équivalente de Bitcoin d'un Locker. Si le Locker ne traite pas cette transaction et ne libère pas le Bitcoin comme requis, un slashing est déclenché.
+- **Détection et réponse:** Comme dans le premier cas, cet échec peut être détecté par les moniteurs du réseau ou signalé par les utilisateurs. Après vérification que le Locker n'a pas rempli la demande de rachat dans les délais, le système initie un protocole de slashing.
+- **Conséquence:** Une partie importante du collatéral du Locker est réduite à titre de mesure punitive et compensatoire. Le collatéral slashé est généralement utilisé pour certifier que l'utilisateur reçoive son Bitcoin, préservant ainsi la confiance dans le système coreBTC et compensant les pertes potentielles causées par le retard ou l'échec.
 
-Le redeem script hash utilisé dans cette sortie P2WSH est le `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` ce qui donne `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
+![slashing](../../../../static/img/coreBTC/slashing-2.png)
 
-Voici un outil en ligne pour générer la valeur de hachage `P2WSH` `sha256` d'un script de rachat, grâce auquel vous pouvez vérifier le calcul ci-dessus: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
+## Conclusion
 
-#### Sortie OP_RETURN
-
-Le code hex complet de cette sortie est le suivant `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , où
-
-- `6a` est le opcode op_return
-- `4c50` est la longueur totale en octets après l'opcode [1] `OP_RETURN`
-- `5341542b` SAT+, l'identifiant Satoshi Plus
-- `01` est la version
-- `045b` 1115, l'Id de la chaîne (1115 pour le Core Testnet et 1116 pour le Core Mainnet)
-- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` est l'adresse de récompense
-- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` est l'adresse du validateur
-- `01` est la commission du relayeur, mesurée en CORE
-- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est le script de rachat, qui est expliqué dans la section précédente.
-
-[1] Tout octet supérieur ou égal à `0x4c` est inséré en utilisant `0x4c` (ie. `OP_PUSHDATA`) suivi de la longueur, puis des données (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
-
-### Transaction de Retrait
-
-[https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
-
-Cette transaction a dépensé la sortie P2WSH avec verrouillage temporel de la transaction de staking mentionnée précédemment
-
-![btc-staking-withdrawal-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\(4\).png)
-
-Dans l'entrée, le redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est fourni pour la dépenser. Comme le verrouillage temporel `1f5e0e66` (660e5e1f après inversion des octets, ce qui correspond à un horodatage Unix de 1712217631) avait déjà expiré, l'UTXO a été dépensé avec succès.
-
-> **Note**
-> \> Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
-
-## Rôle des Relayeurs
-
-Dans un sens strict, le processus de staking de Bitcoin Non-Custodial se compose de deux étapes
-
-1. Staking sur le réseau Bitcoin
-2. Soumission de la transaction de staking Bitcoin confirmée à Core
-
-Pour rendre le processus plus pratique, Core introduit le rôle des relayeurs. Les relayeurs peuvent aider les utilisateurs à soumettre des transactions au réseau Core après la confirmation de la transaction de staking sur le réseau Bitcoin. Puisqu'il est nécessaire de vérifier la transaction sur le réseau Core avec le client Bitcoin light intégré, les relayeurs doivent obtenir le `RedeemScript` correspondant à la sortie `P2SH/P2WSH`. Pour répondre à cette exigence, il est conseillé aux utilisateurs de
-
-- Inclure le `RedeemScript` complet à la fin de la sortie `OP_RETURN`, si le script est court. par exemple, un `RedeemScript` construit en utilisant un hachage de clé publique, comme montré dans l'exemple ci-dessus.
-- Utiliser leur propre adresse de réception pour la transaction de staking, afin que les relayeurs puissent extraire les informations utiles depuis l'entrée de la transaction et composer eux-mêmes le `RedeemScript`. Par exemple
-  - Si c'est une adresse normale, la `pubkey` ou la `pubkey hash` doit être définie comme la clé publique d'entrée correspondante lors de l'élaboration de `RedeemScript`.
-  - Si c'est une adresse multi-signature, la clé publique correspondante de l'adresse multi-signature doit être utilisée lors de la construction du `RedeemScript`.
+La conception du coreBTC sur Core propose un cadre solide pour l'intégration du Bitcoin dans les applications DeFi tout en conservant ses caractéristiques fondamentales de sécurité et de décentralisation. Grâce à un système bien structuré de création, rachat, liquidation et slashing, soutenu par des exigences de collatéral strictes, coreBTC permet à la valeur du Bitcoin à être exploitée de manière innovante, sans compromettre la confiance et la sécurité qui le définissent.
