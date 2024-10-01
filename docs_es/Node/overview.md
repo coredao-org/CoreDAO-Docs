@@ -1,65 +1,27 @@
 ---
-sidebar_label: Descripción general de los nodos que se ejecutan en la cadena central
+sidebar_label: Descripción general
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Nodos en el ecosistema de la cadena central
+# Reglamento del validador
 
----
+**Recortar** y **encarcelar** son los dos mecanismos básicos que utiliza Core Chain para desincentivar el mal comportamiento de los validadores, y comprender cómo funcionan contribuirá en gran medida a que la estructura de incentivos en Core Chain sea más comprensible.
 
-En el ecosistema Core Chain, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red. Dependiendo de sus objetivos, existen diferentes configuraciones de nodos posibles en la red Core. Si aún no ha iniciado el nodo Core Chain, revise la documentación para [Ejecutar un nodo validador local] (./validator/running-validator.md) antes de continuar con diferentes configuraciones.
+## Corte y encarcelamiento
 
-- Si quieres ser parte de la gobernanza de la Red Core:
+"Recortar" se refiere a recortar las recompensas que un validador habría recibido a cambio de minar bloques, o a recortar el depósito de tokens CORE que hace un nodo para convertirse en un validador en primer lugar. La severidad del castigo cortante aumenta en proporción al mal comportamiento del validador.
 
-  - [Iniciar un nodo validador](./config/validator-node-config.md)
+Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección. Si un nodo de validación no logra extraer **50 bloques** seguidos, las recompensas del token CORE que el validador ha acumulado hasta el momento se reducen por completo. Esto significa que importa cuando un validador no logra extraer **50** bloques consecutivos. Si fallan en los primeros **50** bloques de una ronda, entregan solo una pequeña cantidad de recompensas acumuladas, pero si fallan en los últimos **50** bloques de la ronda, entregan todo lo que han ganado. Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
-- Si desea ejecutar un nodo Core Chain para uso privado:
-  - [Iniciar un nodo completo normal](./Full-Node/on-mainnet.md)
+## Sugerencias de barra diagonal
 
-- Si desea enviar transacciones o consultar la cadena directamente desde su propio nodo de Core Chain:
+Los verificadores son responsables de informar comportamientos maliciosos en la red mediante sugerencias de barras diagonales. Cualquiera puede enviar sugerencias de barras diagonales y están diseñadas para castigar a los actores malintencionados. La presentación requiere pruebas de irregularidades, pero si las acusaciones resultan ciertas, las recompensas obtenidas superan con creces los costos.
 
-  - [Iniciar un nodo RPC](./config/rpc-node-config.md)
+Al igual que con las sugerencias de barra diagonal, los verificadores deben informar la doble firma y también deben presentar evidencia de esta actividad. Si sus acusaciones se confirman, serán recompensados ​​por mantener segura la red.
 
-- Si desea consultar datos históricos de la cadena desde el bloque de génesis:
+Mientras producen bloques, los validadores Core existentes verifican periódicamente si algún validador actual ha sido encarcelado. Si es así, actualizarán el conjunto de validadores después de una época (es decir, después de 10 minutos). El encarcelamiento está diseñado para excluir a los validadores que se portan mal de las actividades de consenso con el fin de mejorar la seguridad de la red y mantener estable el TPS.
 
-  - [Iniciar un nodo de archivo](./config/archive-node-config.md)
+## Penalización por doble fichaje
 
-- Si desea ayudar a los operadores de nodos a sincronizarse rápidamente con la red:
-
-  - [Iniciar un nodo de instantánea](./config/snapshot-node-config.md)
-
-## Tipos de nodos en la red de la cadena central
-
-1. **Validadores:**
-   - **Rol:** Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso de la cadena central.
-   - **Requisitos:** Los validadores deben apostar una cantidad mínima de **10,000 tokens CORE** para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
-   - **Incentivos:** Los validadores obtienen recompensas en tokens CORE por su papel activo en el mantenimiento y seguridad de las operaciones de la red.
-
-2. **Nodos completos normales:**
-   - **Rol:** Los nodos completos normales mantienen una copia completa y en tiempo real del libro mayor de blockchain, validan transacciones y respaldan la red transmitiendo datos de bloques y transacciones. Estos son esencialmente útiles para uso privado.
-   - **Requisitos:** Operar un nodo completo requiere importantes recursos computacionales y de almacenamiento para manejar los datos completos de la cadena de bloques y el tráfico continuo de la red.
-
-3. **Nodos RPC:**
-   - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
-     **Importancia:** Son esenciales para el desarrollo y operación de aplicaciones descentralizadas (DApps) y para el acceso externo a los datos de blockchain.
-
-4. **Nodos de archivo:**
-   - **Función:** Los nodos de archivo almacenan el historial completo de la cadena de bloques, incluidos todos los estados y transacciones desde el bloque de génesis, lo que proporciona un recurso valioso para consultas históricas profundas.
-   - **Requisitos:** Estos nodos requieren una gran capacidad de almacenamiento, ya que mantienen todos los estados actuales y vencidos de la cadena de bloques, lo que los hace consumir muchos recursos.
-   - **Uso:** Los nodos de archivo son cruciales para los desarrolladores que necesitan acceso a todos los datos históricos de blockchain para análisis, auditorías y consultas avanzadas de blockchain.
-
-5. **Nodos de instantáneas:**
-   - **Función:** Los nodos de instantáneas mantienen copias de instantáneas de blockchain en varios intervalos. Estas instantáneas incluyen el estado de la cadena de bloques a una altura de bloque determinada, lo que ofrece un punto de restauración para nodos completos o nodos nuevos.
-   - **Beneficios:** Proporcionan un medio para una rápida sincronización y recuperación de otros nodos en la red, mejorando la resiliencia y escalabilidad de la infraestructura de la red.
-
-## Importancia de cada tipo de nodo
-
-- **Validadores** garantizan la validez de las transacciones y el consenso de la red.
-- Los **nodos completos** y los **nodos de archivo** proporcionan redundancia e integridad de datos.
-- Los **Nodos RPC** permiten el desarrollo de aplicaciones y la interacción con la cadena de bloques.
-- **Snapshot Nodes** ayuda a escalar la red eficientemente y a sincronizar los nodos más rápido.
-
-## Conclusión
-
-Las diversas funciones de los nodos en el ecosistema Core Chain garantizan colectivamente que la cadena de bloques sea segura, eficiente, accesible y robusta. Los validadores, los nodos completos y los nodos de archivo forman la columna vertebral de la seguridad y la integridad de los datos de la red. Al mismo tiempo, los nodos RPC y los nodos Snapshot brindan flexibilidad, accesibilidad y escalabilidad. Esta arquitectura de nodo multifacética admite una amplia gama de operaciones, desde el procesamiento de transacciones hasta interacciones complejas de dApp y análisis de datos históricos.
+Hay una manera de prohibir permanentemente a un validador de la red, y es mediante "_doble firma_", es decir, firmar dos bloques diferentes a la misma altura de bloque. Mientras que la falta de disponibilidad podría ser el resultado de una mala conexión de red, la doble firma es una fuerte evidencia de mala conducta intencional. En teoría, es posible que se produzca una doble firma benigna si un validador actualiza la versión de la red que está ejecutando y olvida actualizar su dirección. Asegúrese de ser diligente al realizar actualizaciones de red. Los validadores sorprendidos con doble firma entregan todas las recompensas, el 100% de su depósito de validador y, a partir de entonces, se les prohíbe participar en bloques de minería.
