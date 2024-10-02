@@ -13,6 +13,7 @@ sidebar_position: 2
 Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección.
 
 - Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección.
+- If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far.
 - Si fallan en los últimos **50** bloques de la ronda, entregarán todo lo que han ganado.
 - Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
