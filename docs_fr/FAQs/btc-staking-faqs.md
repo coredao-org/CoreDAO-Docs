@@ -66,3 +66,7 @@ Actuellement, en raison de certaines complexités techniques, il est possible qu
 ### 10. Comment la sécurité du staking de Bitcoin non-custodial est-elle assurée ?
 
 Le protocole de la Core Chain et la sécurité du staking de Bitcoin non-custodial ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en matière de sécurité des contrats intelligents et de [confiance par des plateformes blockchain](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana, et Polygon, ainsi que des projets DeFi comme Sushiswap. Consultez les rapports d'audit du protocole de la Core Chain et du staking de Bitcoin non-custodial par des entreprises de premier plan [ici](../Learn/audit.md).
+
+### 11. What to do if `Redeem BTC` button is not working on the staking website?
+
+You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](stake.coredao.org). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](forum.coredao.org).
