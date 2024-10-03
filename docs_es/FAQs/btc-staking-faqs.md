@@ -69,4 +69,4 @@ El protocolo de Core Chain y la seguridad de las apuestas de Bitcoin sin custodi
 
 ### 11. What to do if `Redeem BTC` button is not working on the staking website?
 
-You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](stake.coredao.org). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](forum.coredao.org).
+You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
