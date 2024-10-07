@@ -8,7 +8,7 @@ files:
   - source: /docs/FAQs/*
     translation: /docs_%two_letters_code%/FAQs/%original_file_name%
   - source: /docs/Learn/
-    translation: /docs_%two_letters_code%/Learn/%original_file_name%
+    translation: /%two_letters_code%/%original_path%/%original_file_name%
   - source: /docs/Node/
     translation: /docs_%two_letters_code%/Node/%original_file_name%
   - source: /docs/stake-and-delegate/
