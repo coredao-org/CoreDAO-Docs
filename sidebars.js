@@ -71,25 +71,7 @@ const sidebars = {
                 slug: '/category/products',
               },
               items: [
-                {
-                  type: 'category',
-                    collapsed: true,
-                    label: 'Non-Custodial BTC Staking',
-                    items: [
-                      'Learn/products/btc-staking/overview',
-                      'Learn/products/btc-staking/design',
-                      {
-                        type: 'category',
-                          collapsed: true,
-                          label: 'How To Guides',
-                          items: [
-                            'Learn/products/btc-staking/stake-btc-guide',
-                            'Learn/products/btc-staking/Redeeming-Guide',
-                          ]
-                      },
-                      
-                    ]
-                },
+                
                 {
                   type: 'category',
                     collapsed: true,
@@ -270,7 +252,29 @@ const sidebars = {
       type: 'category',
       collapsed: true,
       label: '💸 Staking',
-      items: ['stake-and-delegate/staking-overview']
+      items: ['stake-and-delegate/staking-overview',
+        // 'stake-and-delegate/core-staking', 
+        {
+          type: 'category',
+            collapsed: true,
+            label: 'Non-Custodial BTC Staking',
+            items: [
+              'Learn/products/btc-staking/overview',
+              'Learn/products/btc-staking/design',
+              {
+                type: 'category',
+                  collapsed: true,
+                  label: 'How To Guides',
+                  items: [
+                    'Learn/products/btc-staking/stake-btc-guide',
+                    'Learn/products/btc-staking/Redeeming-Guide',
+                  ]
+              },
+            ]
+        },    
+        
+        // 'stake-and-delegate/dual-staking',    
+      ]
     },
     {
       type: 'category',
