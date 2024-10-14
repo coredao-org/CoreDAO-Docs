@@ -1,5 +1,5 @@
 ---
-sidebar_label: Délégation de Hashage
+sidebar_label: Delegating Hash-Rate
 hide_table_of_contents: false
 sidebar_position: 2
 ---
