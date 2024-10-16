@@ -23,7 +23,7 @@ The key permissionless participants in the coreBTC ecosystem include:
 * **Guardians:** They monitor Lockers to prevent unauthorized movements of BTC and ensure compliance with the protocol, providing a check against mismanagement.
 * **Liquidators:** They oversee the collateral's market value, initiating liquidation if the value
 falls below a certain threshold, thus maintaining the financial health of the system.
-* **Porters and Relayers:** These participants facilitate the transmission and verification of data between the Bitcoin and Core blockchains, ensuring accurate and timely minting and burning of coreBTC.
+* **Relayers:** They facilitate the transmission and verification of data between the Bitcoin and Core blockchains, ensuring accurate and timely minting and burning of coreBTC.
 
 ### 6. How is the security of coreBTC ensured?
 Our protocol and coreBTC’s security have been thoroughly audited by [Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by](https://www.halborn.com/about/who-trusts-us) leading blockchain platforms like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap.
