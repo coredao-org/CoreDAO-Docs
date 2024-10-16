@@ -28,7 +28,7 @@ Los participantes clave sin permiso en el ecosistema coreBTC incluyen:
 - **Guardianes:** Supervisan los Lockers para evitar movimientos no autorizados de BTC y garantizar el cumplimiento del protocolo, proporcionando un control contra la mala gestión.
 - **Liquidadores:** Supervisan el valor de mercado de la garantía, iniciando la liquidación si el valor
   cae por debajo de un cierto umbral, manteniendo así la salud financiera del sistema
-- **Porters y Relayers:** Estos participantes facilitan la transmisión y verificación de datos entre las cadenas de bloques Bitcoin y Core, asegurando una acuñación y quema precisa y oportuna de coreBTC.
+- **Relayers:** They facilitate the transmission and verification of data between the Bitcoin and Core blockchains, ensuring accurate and timely minting and burning of coreBTC.
 
 ### 6. ¿Cómo se garantiza la seguridad de coreBTC?
 
