@@ -30,3 +30,4 @@ Los puntos finales de llamada a procedimiento remoto (RPC) son cruciales para qu
 - **1RPC:** https://1rpc.io/core
 - **INFSTONES:** https://core.public.infstones.com
 - **IceCreamSwap:** https://rpc-core.icecreamswap.com
+- **ZAN Node:** https://zan.top/service/public-rpc/core
