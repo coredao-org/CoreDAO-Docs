@@ -26,8 +26,8 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 
 ### Points de terminaison RPC tiers pour le Mainnet de la blockchain Core
 
-- **Ankr:** https://rpc.ankr.com/core
-- **1RPC:** https://1rpc.io/core
-- **INFSTONES:** https://core.public.infstones.com
-- **IceCreamSwap:** https://rpc-core.icecreamswap.com
+- **Ankr:** https://www.ankr.com/rpc/core/
+- **1RPC:** https://www.1rpc.io/ecosystem/core
+- **INFSTONES:** https://docs.infstones.com/docs/core
+- **IceCreamSwap:** https://wiki.icecreamswap.com/get-started/rpc#core
 - **ZAN Node:** https://zan.top/service/public-rpc/core
