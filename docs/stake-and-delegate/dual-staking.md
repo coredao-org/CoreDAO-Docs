@@ -11,7 +11,7 @@ sidebar_position: 2
 
 [Non-Custodial Bitcoin Staking](../Learn/products/btc-staking/overview) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining full control over their assets. This implementation provides a native mechanism for generating Bitcoin yield without introducing additional trust assumptions.
 
-To further enhance yield generation from staking Bitcoin at scale, **Dual Staking** upgrades Non-Custodial Bitcoin Staking to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Since daily CORE emissions are fixed, those who stake CORE alongside Bitcoin earn higher reward tiers than those staking Bitcoin alone. The percentage of boost on yield is determined by staking CORE above multiple defined thresholds, with each threshold corresponding to increasing tiers of Bitcoin staking rewards. By linking higher Bitcoin staking rewards with the volume of CORE tokens staked, this approach encourages Bitcoin stakers to make a deeper commitment to the Core ecosystem and maximizes the yield returns for committed users. 
+To further enhance yield generation from Non-Custodial Bitcoin staking at scale, **Dual Staking** unlocks higher yield tiers by staking Bitcoin and CORE simultaneously. Since daily CORE emissions are fixed, those who stake CORE alongside Bitcoin earn higher reward tiers than those staking Bitcoin alone. The percentage of boost on yield is determined by staking CORE above multiple defined thresholds, with each threshold corresponding to increasing tiers of Bitcoin staking rewards. By linking higher Bitcoin staking rewards with the volume of CORE tokens staked, this approach encourages Bitcoin stakers to make a deeper commitment to the Core ecosystem and maximizes the yield returns for committed users. 
 
 ## What Changes with Dual Staking?
 
@@ -50,9 +50,9 @@ Dual Staking does not affect these reward pools, but does enable Bitcoin stakers
 Under Dual Staking, there are 3 boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. For Solo-Stakers of only Bitcoin, a fourth tier exists with the lowest Bitcoin staking rate. It is important to note that the annual percentage yield (APY) for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics. As a result, the actual boosted yields may change daily based on market conditions.  
 
     * **P<sub>BASE</sub>** \= the BTC staking base rate  
-    * **P<sub>Level1</sub>** \= the BTC staking risk-free rate \+ Level 1 boosted yield  
-    * **P<sub>Level2</sub>** \= the BTC staking risk-free rate \+ Level 2 boosted yield  
-    * **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking risk-free rate \+ Level 3 boosted yield
+    * **P<sub>Level1</sub>** \= the BTC staking base rate \+ Level 1 boosted yield  
+    * **P<sub>Level2</sub>** \= the BTC staking base rate \+ Level 2 boosted yield  
+    * **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking base rate \+ Level 3 boosted yield
 
 
 2. **Staked CORE Thresholds and Staking Ratios (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**   
