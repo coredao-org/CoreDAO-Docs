@@ -193,6 +193,7 @@ const sidebars = {
       items: ['FAQs/core-faqs', 'FAQs/core-node-faqs',
               'FAQs/validator-faqs', 'FAQs/delegator-faqs', 
               'FAQs/coreBTC-faqs', 'FAQs/btc-staking-faqs', 
+              'FAQs/dual-staking-faqs',
               'FAQs/LST-stCore-faqs','FAQs/core-api-faqs', 
               'CoreIgnition/FAQs']
     },
@@ -260,7 +261,8 @@ const sidebars = {
             label: 'Non-Custodial BTC Staking',
             items: [
               'Learn/products/btc-staking/overview',
-              'Learn/products/btc-staking/design',
+              'stake-and-delegate/dual-staking', 
+              'Learn/products/btc-staking/design', 
               {
                 type: 'category',
                   collapsed: true,
@@ -272,8 +274,7 @@ const sidebars = {
               },
             ]
         },    
-        
-        // 'stake-and-delegate/dual-staking',    
+       
       ]
     },
     {
