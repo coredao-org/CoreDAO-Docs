@@ -30,3 +30,4 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 - **1RPC:** https://1rpc.io/core
 - **INFSTONES:** https://core.public.infstones.com
 - **IceCreamSwap:** https://rpc-core.icecreamswap.com
+- **ZAN Node:** https://zan.top/service/public-rpc/core
