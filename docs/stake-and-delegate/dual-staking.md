@@ -76,7 +76,7 @@ The staked CORE and/or staked Bitcoin can be distributed across multiple active 
 Staking ratios and the number of levels are configurable and subject to change by governance vote. 
 :::
 
-### **Example**
+### Example
 
 The following is a simple example following the parameters outlined above:
 
