@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 👨‍💻 Commencer
 
-Core est la première blockchain Layer 1 alignée sur Bitcoin et compatible EVM, conçue pour être une plateforme de contrats intelligents complémentaire et ultra-évolutive à Bitcoin. Avec **~55 %** de la puissance de minage de Bitcoin déjà contribuant à son modèle de sécurité et plus de **313** millions de dollars en Bitcoin stakés via le staking non-custodial de Bitcoin, Core libère le potentiel de Bitcoin à la fois comme principal protecteur et actif central du futur de la DeFi.
+Core est la première blockchain Layer 1 alignée sur Bitcoin et compatible EVM, conçue pour être une plateforme de contrats intelligents complémentaire et ultra-évolutive à Bitcoin. With **~55%** of Bitcoin mining hash already contributing to its security model and over **5,500** Bitcoin staked through Non-Custodial Bitcoin Staking, Core is unlocking Bitcoin both as the prime protector and central asset of the future of DeFi.
 
 ![core-header](../static/img/core-header.png)
 
