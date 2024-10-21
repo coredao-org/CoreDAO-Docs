@@ -26,3 +26,4 @@ Remote Procedure Call (RPC) endpoints are crucial for developers and application
 * **1RPC:** https://1rpc.io/core 
 * **INFSTONES:** https://core.public.infstones.com 
 * **IceCreamSwap:** https://rpc-core.icecreamswap.com
+* **ZAN Node:** https://zan.top/service/public-rpc/core 
