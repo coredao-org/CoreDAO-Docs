@@ -91,7 +91,7 @@ Core's implementation of Bitcoin native staking is completely non-custodial, i.e
 
 7. **Earning Rewards:** Bitcoin stakers earn CORE token rewards for the duration of the lock period, based on the validator's performance and the amount of Bitcoin staked.
 
-8. **Unlocking Bitcoin:** After the lock period ends, the staker’s Bitcoin is unlocked and can be spent again.
+8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
 
 
 ## Conclusion
