@@ -93,7 +93,7 @@ L'implémentation par Core du staking natif de Bitcoin est complètement non-cus
 
 7. **Gagner des récompenses :** Les stakers de Bitcoin gagnent des récompenses en tokens CORE pendant toute la période de verrouillage, en fonction des performances du validateur et de la quantité de bitcoins stakés.
 
-8. **Déverrouillage des Bitcoins :** À la fin de la période de verrouillage, les bitcoins du staker sont déverrouillés et peuvent à nouveau être dépensés.
+8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
 
 ## Conclusion
 
