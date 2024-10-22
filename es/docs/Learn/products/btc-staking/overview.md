@@ -93,7 +93,7 @@ La implementación de Core de la participación nativa de Bitcoin no tiene ning�
 
 7. **Obtención de recompensas:** Los participantes en apuestas de Bitcoin obtienen recompensas en tokens CORE durante el período de bloqueo, según el rendimiento del validador y la cantidad de Bitcoin apostada.
 
-8. **Desbloqueo de Bitcoin:** Una vez finalizado el período de bloqueo, el Bitcoin del apostador se desbloquea y se puede gastar nuevamente.
+8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
 
 ## Conclusion
 
