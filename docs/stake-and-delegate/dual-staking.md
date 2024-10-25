@@ -81,20 +81,20 @@ Staking ratios and the number of levels are configurable and subject to change b
 The following is a simple example following the parameters outlined above:
 
 * Staking Ratio **R<sub>1</sub>** \= 1,000  
-* Staking Ratio **R<sub>2</sub>** \= 2,000  
-* Staking Ratio **R<sub>3</sub>** \= 3,000  
+* Staking Ratio **R<sub>2</sub>** \= 3,000  
+* Staking Ratio **R<sub>3</sub>** \= 8,000  
 * Staked BTC quantity \= 10 BTC
 
 The **Staked CORE Thresholds** with the above variables are:  
 * Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 1,000 \= 10,000 staked CORE  
-* Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 2,000 \= 20,000 staked CORE  
-* Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 3,000 \= 30,000 staked CORE
+* Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 3,000 \= 30,000 staked CORE  
+* Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 8,000 \= 80,000 staked CORE
 
 Hence, the staked BTC in this example will enjoy a yield of  
 * **P<sub>BASE</sub>** if the amount of staked CORE is below 10,000  
-* **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 10,000 but below 20,000  
-* **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 20,000 but below 30,000  
-* **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 30,000
+* **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 10,000 but below 30,000  
+* **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 30,000 but below 80,000  
+* **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 80,000
 
 
 ## Who Can Benefit from Dual Staking?
