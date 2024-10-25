@@ -1,5 +1,5 @@
 ---
-sidebar_label: Staking Bitcoin on Core
+sidebar_label: Staking Bitcoin on Core 
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -56,17 +56,17 @@ Let's clarify the staking mechanism, so you know what to expect going into Non-C
 
 Non-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn rewards. By locking your Bitcoin within the original network through a time-bound mechanism, you can actively participate in the Core blockchain's Consensus mechanism while staking. Here are the steps involved in this process.
 
-1. **Initiate Staking:** Start by accessing the staking platform using either the [command line interface for technical users](https://github.com/coredao-org/btc-staking-tool)  or the web-based frontend for general users [https://stake.coredao.org](https://stake.coredao.org)
+1. **Initiate Staking:** Start by accessing the staking platform using either the [command line interface for technical users](https://github.com/coredao-org/btc-staking-tool) or the web-based frontend for general users [https://stake.coredao.org](https://stake.coredao.org)
 2. **Stake Bitcoin with Time-Lock:** Stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, so that your Bitcoin remains locked until the specified period ends. The minimum staking period is **10 days**.
 3. **Vote for Validators:** Delegate your staked Bitcoin to the chosen validator on the Core blockchain.
 4. **Connect a Core wallet for rewards:** Verify your Core address in the return field, where you'll receive Core token rewards.
-5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the (staking site)[http://stake.coredao.org/].
+5. **Claiming Rewards:** Core token rewards will appear when users connect their wallet, and can be claimed daily. Core token rewards will appear on the [staking site](http://stake.coredao.org/).
 6. **Redeem Bitcoin:** Once the staking lock time expires, the staked Bitcoin will remain idle in the staking address until redeemed by the user.
 
 
 ## Non-Custodial Bitcoin Staking Walkthrough 
 
-To begin staking your Bitcoin on the Core blockchain and earn Core token rewards, follow these steps:
+To begin staking your Bitcoin on the Core blockchain and earn staking rewards in the form of CORE tokens, follow the steps detailed below to stake Bitcoin through Core's official [staking website](http://stake.coredao.org/).
 
 ### Connect Your Wallet
 
@@ -164,6 +164,4 @@ While initiating the delegation process, it's important to understand and specif
 
     ![native-staking-guide](../../../../static/img/native-staking/native-staking-17.avif)
 
-**Congratulations.** You have succesfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and voting for validators, you actively contribute to the governance and security of the Core network, helping maintain its balance and decentralization.
-
-We’re happy you’ve chosen to journey into BTCfi with Non-Custodial Bitcoin Staking on Core!
+**Congratulations.** You have succesfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and voting for validators, you actively contribute to the governance and security of the Core network, helping maintain its balance and decentralization. 

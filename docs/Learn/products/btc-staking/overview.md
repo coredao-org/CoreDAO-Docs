@@ -93,7 +93,6 @@ Core's implementation of Bitcoin native staking is completely non-custodial, i.e
 
 8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
 
-
 ## Conclusion
 
 Non-Custodial Bitcoin Staking transforms the Bitcoin asset from a passive Store of Value into an active, yield-bearing, and security-providing asset. Bitcoin staking allows Bitcoin holders to earn the Bitcoin Risk-Free Rate while also contributing to the security of a smart contract platform designed to unlock more Bitcoin asset use-cases. 
