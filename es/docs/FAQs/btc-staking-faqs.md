@@ -67,6 +67,6 @@ Actualmente, debido a algunas complejidades técnicas, es posible que su activo 
 
 El protocolo de Core Chain y la seguridad de las apuestas de Bitcoin sin custodia han sido auditadas minuciosamente por [Halborn](https://www.halborn.com/), una empresa que cumple con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [en la que confían los principales blockchain plataformas](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap. Revise los informes de auditoría del protocolo de Core Chain y la participación sin custodia de Bitcoin por parte de empresas líderes [aquí](../Learn/audit.md).
 
-### 11. What to do if `Redeem BTC` button is not working on the staking website?
+### 11. ¿Qué hacer si el botón "Canjear BTC" no funciona en el sitio web de apuestas?
 
-You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
+Puede canjear su BTC haciendo clic en el botón "Canjear" en el [sitio web de apuestas] oficial de Core (https://stake.coredao.org/). Si el botón no funciona, intente borrar la memoria caché de su navegador y vuelva a intentarlo. Si tiene más problemas, comuníquese con el [Core Dev Forum](https://forum.coredao.org/).
