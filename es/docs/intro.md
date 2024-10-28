@@ -7,7 +7,7 @@ sidebar_position: 1
 
 ## 👨‍💻 Primeros pasos
 
-Core es la primera cadena de bloques de Capa 1 compatible con EVM alineada con Bitcoin, diseñada para ser la plataforma de contrato inteligente complementaria e hiperescalable de Bitcoin. With **~55%** of Bitcoin mining hash already contributing to its security model and over **5,500** Bitcoin staked through Non-Custodial Bitcoin Staking, Core is unlocking Bitcoin both as the prime protector and central asset of the future of DeFi.
+Core es la primera cadena de bloques de Capa 1 compatible con EVM alineada con Bitcoin, diseñada para ser la plataforma de contrato inteligente complementaria e hiperescalable de Bitcoin. Con **~55%** del hash de minería de Bitcoin que ya contribuye a su modelo de seguridad y más de **5,500** Bitcoin apostados a través de Bitcoin Stake sin custodia, Core está desbloqueando Bitcoin como el principal protector y activo central del futuro de DeFi.
 
 ![encabezado-núcleo](../static/img/core-header.png)
 
