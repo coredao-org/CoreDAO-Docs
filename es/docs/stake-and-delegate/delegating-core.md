@@ -1,5 +1,5 @@
 ---
-sidebar_label: Delegating CORE
+sidebar_label: Delegar Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,109 +8,109 @@ sidebar_position: 2
 
 ---
 
-Delegated Proof of Stake (DPoS) is one of the three fundamental components of the Satoshi Plus consensus mechanism, playing a pivotal role in enhancing the functionality, security, and efficiency of the blockchain network. In the Core network, DPoS is implemented through CORE delegations, allowing CORE holders to delegate their tokens to trusted validators. This process not only helps secure the network but also enables participants to share in the system’s rewards.\
-In this guide, we provide a step-by-step walkthrough on how to delegate your CORE tokens to validators within the Core network, empowering you to actively contribute to the ecosystem while reaping the benefits of your investment.
+La prueba de participación delegada (DPoS) es uno de los tres componentes fundamentales del mecanismo de consenso Satoshi Plus y desempeña un papel fundamental en la mejora de la funcionalidad, la seguridad y la eficiencia de la red blockchain. En la red Core, DPoS se implementa a través de delegaciones CORE, lo que permite a los titulares de CORE delegar sus tokens en validadores confiables. Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
+En esta guía, proporcionamos un tutorial paso a paso sobre cómo delegar sus tokens CORE a validadores dentro de la red Core, permitiéndole contribuir activamente al ecosistema mientras cosecha los beneficios de su inversión.
 
-## Core Staking Website
+## Sitio web de apuesta central
 
 - Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
 - Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
 
-## Step-by-Step Guidelines for Delegating CORE
+## Directrices paso a paso para delegar CORE
 
-#### Step 1: Navigating to Core Staking Website
+#### Paso 1: Navegar al sitio web de Core Stake
 
-When you visit stake.coredao.org, you’ll see an overview of important metrics related to Core delegation. These metrics provide a snapshot of the staking opportunities available on Core, and are updated in real-time based on the user participation. It also lists Validator information, with all validators ranked by their current hybrid score.
+Cuando visitestake.coredao.org, verás una descripción general de métricas importantes relacionadas con la delegación del Core. Estas métricas brindan una instantánea de las oportunidades de participación disponibles en Core y se actualizan en tiempo real según la participación del usuario. También enumera la información del Validador, con todos los validadores clasificados según su puntuación híbrida actual.
 
 ![image](https://github.com/user-attachments/assets/e6fa2e61-1027-4d6e-bdb3-a86ceb265eee)
 
-#### Step 1.1: Connect Your Wallet
+#### Paso 1.1: conecta tu billetera
 
-To start staking, follow these steps to connect your wallet. Ensure you have CORE tokens in your wallet to participate in staking.
+Para comenzar a apostar, siga estos pasos para conectar su billetera. Asegúrese de tener tokens CORE en su billetera para participar en la apuesta.
 
-- Click on the “Connect Wallet” button located at the top-right corner of the page.
-- Choose your preferred wallet (e.g., MetaMask, WalletConnect) from the available options.
-- Follow the on-screen prompts to complete the connection process securely.
-- Once connected, your wallet balance and details will be visible, and you can begin delegating CORE tokens.
+- Haga clic en el botón "Conectar billetera" ubicado en la esquina superior derecha de la página.
+- Elija su billetera preferida (por ejemplo, MetaMask, WalletConnect) entre las opciones disponibles.
+- Siga las instrucciones en pantalla para completar el proceso de conexión de forma segura.
+- Una vez conectado, el saldo y los detalles de su billetera serán visibles y podrá comenzar a delegar tokens CORE.
 
 ![image](https://github.com/user-attachments/assets/547fdb6d-67f1-424d-be88-cdfde66224b3)
 
-Step 1.2: Choosing a Validator
+Paso 1.2: Elegir un validador
 
-On the staking site, each validator is ranked by their Hybrid Score, which reflects a combination of factors such as performance and delegated hash power. To maximize your staking rewards, focus on the following two key metrics:
+En el sitio de apuestas, cada validador se clasifica según su puntuación híbrida, que refleja una combinación de factores como el rendimiento y el poder de hash delegado. Para maximizar las recompensas de su apuesta, concéntrese en las siguientes dos métricas clave:
 
-- **CORE Reward Rate:** This shows the percentage of CORE rewards you can earn by delegating to a particular validator. A higher reward rate means more potential returns on your staked CORE.
-- **Commission:** This is the fee that validators take from your staking rewards. A lower commission allows you to keep more of your earned rewards, so it's important to choose a validator with a low commission to maximize your returns.
+- **Tasa de recompensa CORE:** Esto muestra el porcentaje de recompensas CORE que puede ganar al delegar a un validador en particular. Una tasa de recompensa más alta significa más retornos potenciales de su CORE apostado.
+- **Comisión:** Esta es la tarifa que los validadores cobran de sus recompensas de apuesta. Una comisión más baja le permite conservar una mayor parte de las recompensas obtenidas, por lo que es importante elegir un validador con una comisión baja para maximizar sus ganancias.
 
-By choosing a validator with a high CORE reward rate and low commission, you can increase the amount of rewards you receive from staking your CORE tokens. You can view more details about each validator’s metrics by clicking the "i" symbol next to the column headers for explanations. For more information on how the hybrid score is calculated, refer [here](https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/validator-election#workflow-of-the-validator-election-process).
+Al elegir un validador con una tasa de recompensa CORE alta y una comisión baja, puede aumentar la cantidad de recompensas que recibe al apostar sus tokens CORE. Puede ver más detalles sobre las métricas de cada validador haciendo clic en el símbolo "i" junto a los encabezados de las columnas para obtener explicaciones. Para obtener más información sobre cómo se calcula la puntuación híbrida, consulte [aquí](https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/validator-election#workflow-of-the- proceso-de-elección-del-validador).
 
-Validator information is refreshed daily at 00:00 UTC at the beginning of each new round, ensuring you always have the latest data when making your staking decisions.
+La información del validador se actualiza diariamente a las 00:00 UTC al comienzo de cada nueva ronda, lo que garantiza que siempre tenga los datos más recientes al tomar decisiones de apuestas.
 
-In the example, we are selecting: **DAO Validator 6**. To choose a validator, click on the Validator's name to proceed
+En el ejemplo, estamos seleccionando: **DAO Validator 6**. Para elegir un validador, haga clic en el nombre del validador para continuar
 
 ![image](https://github.com/user-attachments/assets/527fbabd-019a-4acb-9185-043a9b901992)
 
-### Step 2: Delegating CORE to a Validator
+### Paso 2: Delegar CORE a un Validador
 
-Once you’ve selected a validator, you’ll be taken to their detailed page, as shown below. Here’s what you’re seeing:
+Una vez que haya seleccionado un validador, accederá a su página detallada, como se muestra a continuación. Esto es lo que estás viendo:
 
-- **Delegated Coin (CORE):** The total amount of CORE tokens already delegated to the selected validator (e.g., 6,678,941 CORE).
-- **CORE Reward Rate:** The annual percentage of rewards for delegating to the selected validator. For example, if he CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
-- **Commission:** The validator’s commission fee, which is deducted from your rewards, example 5%.
-- **Delegators:** The number of users who have delegated to the selected validator (e.g., 16,234 CORE Delegators).
+- **Moneda delegada (CORE):** La cantidad total de tokens CORE ya delegados al validador seleccionado (por ejemplo, 6,678,941 CORE).
+- **Tasa de recompensa CORE:** El porcentaje anual de recompensas por delegar al validador seleccionado. Por ejemplo, si la tasa de recompensa CORE es del 9,41%, significa que el delegado obtendrá este porcentaje en recompensas sobre su CORE apostado.
+- **Comisión:** La comisión del validador, que se deduce de tus recompensas, por ejemplo, el 5 %.
+- **Delegadores:** La cantidad de usuarios que han delegado al validador seleccionado (por ejemplo, 16,234 delegados CORE).
 
-To delegate your CORE tokens, follow these steps:
+Para delegar sus tokens CORE, siga estos pasos:
 
-1. **Click "Delegate":** At the top right of the screen, you’ll see the Delegate button (marked as 1 in the image). Hover over it.
-2. **Select CORE:** A drop-down will appear with the option to delegate CORE or BTC. Select CORE (marked as 2 in the image).
+1. **Haga clic en "Delegar":** En la parte superior derecha de la pantalla, verá el botón Delegar (marcado como 1 en la imagen). Coloca el cursor sobre él.
+2. **Seleccione CORE:** Aparecerá un menú desplegable con la opción de delegar CORE o BTC. Seleccione CORE (marcado como 2 en la imagen).
 
 ![image](https://github.com/user-attachments/assets/6c09ad7e-a61e-449b-a935-973576b464fb)
 
-#### Step 2.1 Specify amount of CORE to delegate
+#### Paso 2.1 Especificar cantidad de CORE a delegar
 
-- After selecting CORE, you’ll be prompted to enter the amount of CORE you want to delegate. Review the validator’s commission, then click ‘Confirm Delegation’.
+- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en "Confirmar delegación".
   ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
 
-- Also confirm the transaction in your Metamask.
+- También confirma la transacción en tu Metamask.
   ![image](https://github.com/user-attachments/assets/e3022505-99a3-49eb-bf9f-6fc565e41105)
 
-- Once your transaction is confirmed and succesfully completed, you can see that 1 CORE has been successfully delegated to DAO Validator 6.
+- Una vez que su transacción se confirme y se complete con éxito, podrá ver que 1 CORE se ha delegado con éxito al DAO Validator 6.
   ![image](https://github.com/user-attachments/assets/b378b492-3fea-4218-a937-486f2589049b)
 
-#### Step 2.2 Verifying delegated CORE
+#### Paso 2.2 Verificar el CORE delegado
 
-Now that we’ve successfully delegated CORE, lets verify that our CORE is now being staked by hovering over our connected wallet in the top right corner, and clicking on the ‘My Staking’ dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated, or 1 CORE staked:
+Ahora que hemos delegado CORE con éxito, verifiquemos que nuestro CORE esté siendo apostado pasando el cursor sobre nuestra billetera conectada en la esquina superior derecha y haciendo clic en el menú desplegable "Mi participación". Podemos ver en la columna "Núcleo delegado" que ahora tenemos 1 NÚCLEO delegado o 1 NÚCLEO apostado:
 
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
 
-### Step 3 Undelegating CORE
+### Paso 3 Delegar CORE
 
-If we want to Undelegate our CORE, you will want to click the 3 dots at the end of your chosen validator, and click: ‘**Undelegate CORE**’.
+Si queremos anular la delegación de nuestro CORE, deberá hacer clic en los 3 puntos al final del validador elegido y hacer clic en: '**Anular delegar NÚCLEO**'.
 
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)
 
-#### Step 3.1 Confirm the transaction, and verify undelegated CORE
+#### Paso 3.1 Confirmar la transacción y verificar el CORE no delegado
 
-- After clicking Undelegate, you will be prompted to confirm the transaction in your Metamask. Click the ‘**Confirm**’ button:
+- Después de hacer clic en Anular delegación, se le pedirá que confirme la transacción en su Metamask. Haga clic en el botón '**Confirmar**':
 
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)
 
-- Once the transaction is confirmed and sucessfuly executed, you will see the following success prompt.
+- Una vez que la transacción se confirme y se ejecute exitosamente, verá el siguiente mensaje de éxito.
 
 ![image](https://github.com/user-attachments/assets/3b0bb4e4-95aa-407f-8946-442de715906e)
 
-- If you return to ‘**My Staking**’, you should now see your CORE Delegated displaying 0.
+- Si regresa a "**Mi participación**", ahora debería ver su CORE Delegado mostrando 0.
 
 ![image](https://github.com/user-attachments/assets/f1aa91f9-e861-4e03-b08d-b8be504cef0a)
 
-- Clicking the ‘**Transaction Records**’ button allows us to view the **Staking Records**, and the delegation events that have occurred under the **CORE Records** tab.
+- Al hacer clic en el botón '**Registros de transacciones**' nos permite ver los **Registros de participación** y los eventos de delegación que han ocurrido en la pestaña **Registros CORE**.
 
 ![image](https://github.com/user-attachments/assets/da7a3693-2799-4c04-8ba3-649c25694120)
 
 ## Reclamar recompensas
 
-You can view reward information about your active delegations by selecting My Staking on the top right of the staking website. Las recompensas de delegación (apuestas) se distribuyen después de cada ronda a las 00:00 a. m. UTC todos los días.
+Puede ver información de recompensas sobre sus delegaciones activas seleccionando Mi apuesta en la parte superior derecha del sitio web de apuestas. Las recompensas de delegación (apuestas) se distribuyen después de cada ronda a las 00:00 a. m. UTC todos los días.
 
-To claim your rewards, simply select the Claim button on the top left and sign the transaction. Después de enviar la transacción, recibirá las recompensas en su dirección vinculada. Historical claim transactions are listed on the website's Claim tab, as shown below.
+Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirá las recompensas en su dirección vinculada. Las transacciones de reclamaciones históricas se enumeran en la pestaña Reclamaciones del sitio web, como se muestra a continuación.
 
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
