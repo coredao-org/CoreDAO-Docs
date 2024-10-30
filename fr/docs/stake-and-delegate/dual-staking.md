@@ -26,7 +26,7 @@ Dual Staking strengthens the relationship between Bitcoin and the Core blockchai
 
 2. **Cumulative Reward Boost**: Once Dual Staking is adopted, Bitcoin stakers will receive higher rates as they increase the amount of CORE staked. This means stakers can maximize their returns by staking more CORE.
 
-3. **Risk-Free and Non-Custodial Staking**: Core’s Non-Custodial Bitcoin Staking enables users to maintain full ownership of their assets throughout the staking process. Bitcoin remains securely in the user’s wallet and is unlocked when their chosen lock period expires. No external entity ever gains custody of the staker’s Bitcoin. Meanwhile, in exchange for stakers locking up their Bitcoin, they can delegate to Core validators that secure CORE and earn them rewards. This setup eliminates custodial risk and enhances security, as stakers participate in Core’s security without putting their Bitcoin at risk.
+3. **Risk-Free and Non-Custodial Staking**: Core's Non-Custodial Bitcoin Staking enables users to maintain full ownership of their assets throughout the staking process. Bitcoin remains securely in the user’s wallet and is unlocked when their chosen lock period expires. No external entity ever gains custody of the staker’s Bitcoin. Meanwhile, in exchange for stakers locking up their Bitcoin, they can delegate to Core validators that secure CORE and earn them rewards. This setup eliminates custodial risk and enhances security, as stakers participate in Core’s security without putting their Bitcoin at risk.
 
 ## How does Dual Staking Work?
 
