@@ -64,7 +64,7 @@ Below are the baseline multipliers for the whitelisted assets inside the wallet 
 | USDT, USDC | 1.2x | 2x | 2.5x | 3x |
 | CORE, WCORE, aBTC, wBTC, rBTC solvBTC.b, solvBTC.m, BTCB, BTC.B, wETH | 1x | 1.5x | 2x | 2.5x |
 | solvBTC.CORE| 1x | 1.4x | 1.4x | 1.4x |
-| coreBTC, oBTC| 1x | 1x | 1x | 1x |
+| coreBTC, oBTC | 1x | 1x | 1x | 1x |
 
   
 >***Example 1:***
