@@ -66,6 +66,7 @@ Below are the baseline multipliers for the whitelisted assets inside the wallet 
 | solvBTC.CORE| 1x | 1.4x | 1.4x | 1.4x |
 | coreBTC, oBTC | 1x | 1x | 1x | 1x |
 
+
   
 >***Example 1:***
 >If the user holds 10 stCORE in Ignition wallet balance, the user gets:  
