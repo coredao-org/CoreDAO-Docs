@@ -92,6 +92,15 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: false,
       },
+
+      announcementBar: {
+        id: 'latest_updates',
+        content:
+          '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@core_dao/lstbtc-is-coming-sunsetting-corebtc-486d6744c3b9">LstBTC is Coming! Sunsetting coreBTC.</a> Redeem your assets at the earliest⚠️ ',
+        backgroundColor: '#f96e34',
+        textColor: '#FBFCFC',
+        isCloseable: false,
+      },
       
       algolia: {
         // The application ID provided by Algolia

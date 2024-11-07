@@ -71,17 +71,6 @@ const sidebars = {
                 slug: '/category/products',
               },
               items: [
-                
-                {
-                  type: 'category',
-                    collapsed: true,
-                    label: 'coreBTC',
-                    items: [
-                      'Learn/products/coreBTC/overview',
-                      'Learn/products/coreBTC/design',
-                      'Learn/products/coreBTC/how-to-guides',
-                    ]
-                },
                 {
                   type: 'category',
                     collapsed: true,
@@ -98,6 +87,16 @@ const sidebars = {
                           ]
                       },
                       
+                    ]
+                },
+                {
+                  type: 'category',
+                    collapsed: true,
+                    label: 'coreBTC (Sunsetted)',
+                    items: [
+                      'Learn/products/coreBTC/overview',
+                      'Learn/products/coreBTC/design',
+                      'Learn/products/coreBTC/how-to-guides',
                     ]
                 },
               ]
