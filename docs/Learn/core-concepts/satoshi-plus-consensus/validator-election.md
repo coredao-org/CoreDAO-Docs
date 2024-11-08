@@ -27,7 +27,7 @@ Validators play a vital role in producing blocks and validating transactions on 
 
 3. Election of Validators:
    * Every round, which lasts one day, the validators with the highest hybrid scores are elected to the validator set.
-   * The top 23 validators with the highest scores are chosen to be part of the active validator set for that round.
+   * The top 27 validators with the highest scores are chosen to be part of the active validator set for that round.
 
 4. Validator Responsibilities:
    * Elected validators are responsible for producing blocks and validating transactions throughout the round.
@@ -72,7 +72,7 @@ Where:
 Leaving aside the mathematical details, this is essentially a weighted, bicameral voting procedure. Bitcoin miners can vote for validators through their PoW (by writing validator information into the coinbase transaction on blocks they’ve already mined), CORE token holders can vote for a validator with their PoS (by delegating their tokens to it), and non-custodial bitcoin stakers can vote for a validator through the same mechanism. These DPoW, DPoS, and Bitcoin staking components are weighted to determine the hybrid score.
 
 4. **Block Production:**
-   * After election, all validators are sorted roughly in order of their hybrid score, and take turns producing blocks in a **round-robin manner** before the process starts over again from the beginning. The present number of validators is **23**_, with the number of validators expected to increase over time as the network grows. What’s more, this mechanism provides additional security through improved efficiency and a tolerance for a large number of Byzantine players. Core is secure as long as no more than $1 \over 3$ of the validators are malicious.
+   * After election, all validators are sorted roughly in order of their hybrid score, and take turns producing blocks in a **round-robin manner** before the process starts over again from the beginning. The present number of validators is **27**_, with the number of validators expected to increase over time as the network grows. What’s more, this mechanism provides additional security through improved efficiency and a tolerance for a large number of Byzantine players. Core is secure as long as no more than $1 \over 3$ of the validators are malicious.
 
 5. **Reward Distribution:**
    * Rewards are distributed based on contributions to network security, using the following formula:
