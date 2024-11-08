@@ -28,7 +28,7 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
 
 3. Elección de Validadores:
    - En cada ronda, que dura un día, los validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores.
-   - Los 23 validadores con las puntuaciones más altas son elegidos para formar parte del conjunto de validadores activos para esa ronda.
+   - The top 27 validators with the highest scores are chosen to be part of the active validator set for that round.
 
 4. Responsabilidades del validador:
    - Los validadores elegidos son responsables de producir bloques y validar transacciones durante toda la ronda.
@@ -73,7 +73,7 @@ Donde:
 Dejando de lado los detalles matemáticos, se trata esencialmente de un procedimiento de votación bicameral ponderado. Los mineros de Bitcoin pueden votar por validadores a través de su PoW (escribiendo la información del validador en la transacción de coinbase en los bloques que ya han extraído), los poseedores de tokens CORE pueden votar por un validador con su PoS (delegándole sus tokens) y los no- Los apostadores de bitcoins con custodia pueden votar por un validador a través del mismo mecanismo. Estos componentes de participación de DPoW, DPoS y Bitcoin se ponderan para determinar la puntuación híbrida.
 
 4. **Producción de bloques:**
-   - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. El número actual de validadores es **23**_, y se espera que el número de validadores aumente con el tiempo a medida que crece la red. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
+   - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. The present number of validators is **27**_, with the number of validators expected to increase over time as the network grows. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
 
 5. **Distribución de recompensas:**
    - Las recompensas se distribuyen en función de las contribuciones a la seguridad de la red, utilizando la siguiente fórmula:
