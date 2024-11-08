@@ -21,7 +21,7 @@ Apostar por Core implica que los titulares de CORE y BTC deleguen sus tokens a v
 
 - Core blockchain permite apostar dos tokens, es decir, su token nativo, es decir. Core y el bitcoin. Los titulares de BTC pueden apostar sus activos a través del miedo a la participación sin custodia de Core, que permite a los titulares de BTC apostar y delegar sus activos sin tener que renunciar a su custodia.
 - El conjunto de validadores CORE está determinado por su lógica de participación y delegación, a través de un módulo de participación.
-- El tiempo de ciclo para que Core distribuya recompensas actualmente está establecido en **1 día**. Cada día, **23** validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. En el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas de la ronda.
+- El tiempo de ciclo para que Core distribuya recompensas actualmente está establecido en **1 día**. Each day, **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. En el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas de la ronda.
 
 ## Importancia de apostar por el ecosistema central
 
