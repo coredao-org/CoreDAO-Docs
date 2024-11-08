@@ -76,7 +76,7 @@ Tanto las recompensas básicas como las tarifas de transacción se calculan y di
 
 ### 6. ¿Cuándo se pagan las recompensas?
 
-El tiempo de ciclo para que Core distribuya recompensas actualmente está establecido en **1 día**. Cada día, **23** validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. En el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas de la ronda.
+El tiempo de ciclo para que Core distribuya recompensas actualmente está establecido en **1 día**. Each day, **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. En el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas de la ronda.
 
 ### 7. ¿Cuáles son los riesgos/penalizaciones que implica ser validador?
 
@@ -107,7 +107,7 @@ Donde,
 - rBp y tBp son los tokens BTC delegados a un validador y el total de tokens BTC apostados, respectivamente.
 - myn son factores dinámicos que ajustan los pesos del poder de hash y el poder de voto de BTC frente a los tokens CORE.
 
-4. **Formación del conjunto de validadores**: Los **23** validadores principales, según las puntuaciones híbridas, se seleccionan para la siguiente ronda.
+4. **Validator Set Formation**: The top **27** validators, based on hybrid scores, are selected for the next round.
 
 <!-- 
 ### 9. How does the Core Chain ensure the security and integrity of Validators? -->
