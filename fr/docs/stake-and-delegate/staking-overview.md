@@ -21,7 +21,7 @@ Staking on Core involves CORE and BTC holders delegating their tokens to validat
 
 - La blockchain Core permet le staking de deux tokens, à savoir son token natif i.e. CORE, et le Bitcoin. Les détenteurs de BTC peuvent staker leurs actifs via la fonctionnalité de staking non-custodial de Core, qui permet aux détenteurs de BTC de staker et de déléguer leurs actifs sans en perdre la garde.
 - L'ensemble des validateurs de CORE est déterminé par la logique de staking et de délégation, via un module de staking.
-- Le cycle de distribution des récompenses de Core est actuellement fixé à **1 jour**. Chaque jour, les **23** validateurs avec les meilleurs scores hybrides sont élus pour former l'ensemble des validateurs actifs responsables de la production des blocs sur le réseau Core pendant tout le tour. À la fin de chaque tour, les récompenses accumulées sont calculées et distribuées.
+- Le cycle de distribution des récompenses de Core est actuellement fixé à **1 jour**. Each day, **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. À la fin de chaque tour, les récompenses accumulées sont calculées et distribuées.
 
 ## Importance of Staking for Core Ecosystem
 
