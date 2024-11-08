@@ -44,7 +44,7 @@ Pour vérifier rapidement si votre nœud complet a bien été enregistré comme 
 
 ## Élection des Validateurs
 
-Chaque jour, les 23 validateurs avec les scores hybrides les plus élevés sont élus pour produire des blocs sur le réseau Core pendant toute la durée du round. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails, consultez la section sur l'[élection des validateurs](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election) dans la section Whitepaper Technique.
+Each day, the top 27 validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails, consultez la section sur l'[élection des validateurs](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election) dans la section Whitepaper Technique.
 
 Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués Active/Normal. L'ensemble des validateurs est mis à jour chaque jour à 00:00 UTC.
 
