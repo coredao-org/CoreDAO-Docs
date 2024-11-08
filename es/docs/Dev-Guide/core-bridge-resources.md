@@ -79,8 +79,8 @@ El [Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite t
 | USDT     | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
 | WBTC     | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f |
 
-| ARBITRUM | Addresses                                  |
-| -------- | ------------------------------------------ |
-| Bridge   | 0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879 |
-| USDC     | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 |
-| WETH     | 0x4200000000000000000000000000000000000006 |
+| BASE   | Addresses                                  |
+| ------ | ------------------------------------------ |
+| Bridge | 0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879 |
+| USDC   | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 |
+| WETH   | 0x4200000000000000000000000000000000000006 |
