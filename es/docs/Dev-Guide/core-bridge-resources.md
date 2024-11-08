@@ -57,13 +57,6 @@ El [Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite t
 | USDT                | https://polygonscan.com/address/0xc2132d05d31c914a87c6611c10748aeb04b58e8f |
 | WBTC                | https://polygonscan.com/address/0xc2132d05d31c914a87c6611c10748aeb04b58e8f |
 
-| BNB Smart Chain (BSC) | Direcciones                                |
-| ---------------------------------------- | ------------------------------------------ |
-| Puente                                   | 0x29d096cD18C0dA7500295f082da73316d704031A |
-| USDC                                     | 0xaf88d065e77c8cC2239327C5EDb3A432268e5831 |
-| USDT                                     | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
-| WBTC                                     | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f |
-
 | OPTIMISM | Direcciones                                |
 | -------- | ------------------------------------------ |
 | Puente   | 0x29d096cD18C0dA7500295f082da73316d704031A |
@@ -78,3 +71,16 @@ El [Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite t
 | USDC                                                                 | 0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E |
 | USDT                                                                 | 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7 |
 | WBTC                                                                 | 0x50b7545627a5162F82A992c33b87aDc75187B218 |
+
+| ARBITRUM | Direcciones                                |
+| -------- | ------------------------------------------ |
+| Puente   | 0x29d096cD18C0dA7500295f082da73316d704031A |
+| USDC     | 0xaf88d065e77c8cC2239327C5EDb3A432268e5831 |
+| USDT     | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
+| WBTC     | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f |
+
+| ARBITRUM | Addresses                                  |
+| -------- | ------------------------------------------ |
+| Bridge   | 0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879 |
+| USDC     | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 |
+| WETH     | 0x4200000000000000000000000000000000000006 |
