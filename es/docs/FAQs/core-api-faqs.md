@@ -1,42 +1,42 @@
 ---
-sidebar_label: Preguntas frecuentes sobre la API de Core Scan
+sidebar_label: Core Scan API FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Preguntas frecuentes sobre la API de Core Scan
+# Core Scan API FAQs
 
 ---
 
-### 1 Que es Core Scan API?
+### 1. What is the Core Scan API?
 
-Hemos desarrollado la API abierta de Core Scan para brindar a los desarrolladores acceso directo a los datos y servicios del explorador de bloques de Core Scan. Las API de Core Scan se proporcionan como un servicio comunitario y sin garantía, así que utilice lo que necesita y nada más.
+We've developed the Core Scan Open API to give developers direct access to Core Scan's block explorer data and services. Core Scan's APIs are provided as a community service and without warranty, so please use what you need and no more.
 
-Consulte los documentos API completos disponibles [aquí](https://docs.coredao.org/docs/api/).
+Check out the full API docs available [here](https://docs.coredao.org/docs/api/).
 
-### 2 ¿Cómo puedo acceder a la API Core Scan?
+### 2. How can I access the Core Scan API?
 
-Para acceder a Core Scan API, debe tener una cuenta registrada en Core Scan; consulte [aquí](https://docs.coredao.org/docs/api/tutorials/creating-an-account) para obtener información detallada. guía sobre esto. Aparte de esto, también necesita generar una clave API utilizando la cuenta registrada; consulte la guía detallada [aquí](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key) .
+In order to access Core Scan API, you need to have an account registered on the Core Scan, refer [here](https://docs.coredao.org/docs/api/tutorials/creating-an-account) for a detailed guide on this. Other than this, you also need to have an API key generated using the registered account, refer to detailed guide [here](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key).
 
-### 3. ¿Cómo crear claves API para usar con Core Scan API?
+### 3. How to create API Keys for using with Core Scan API?
 
-Para generar claves API utilizando una cuenta registrada en Core Scan, consulte la guía detallada [aquí](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key).
+To generate API keys using a registered account on Core Scan, refer to detailed guide [here](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key).
 
-### 4. Mis claves API no funcionan, ¿qué puedo hacer?
+### 4. My API keys are not working, what can I do?
 
-Es posible que haya ocurrido un problema técnico en el proceso de creación de claves. En este caso, intente eliminar la clave y generar una nueva. Si el problema persiste después de usar una clave recién generada, contáctenos en nuestro servidor oficial [Discord](https://discord.com/invite/coredaoofficial).
+A technical glitch may have occurred in the key creation process. In this case, try deleting the key and generating a new one.​ If the issue still persists after using a freshly generated key, contact us on our official [Discord](https://discord.com/invite/coredaoofficial) server.
 
-### 5. ¿Existe un límite de tasa en las solicitudes de API?
+### 5. Is there a rate limit on API requests?
 
-Sí, existen límites de tasa fija en las solicitudes de API según el nivel de API. Para evitar errores en el límite de tarifas, cumpla con su plan disponible y espere un cierto tiempo antes de cada solicitud. Si está utilizando un script o una aplicación, aplique limitación para limitar la frecuencia de las llamadas.
+Yes, there are fixed rate limits on API requests based on the API tier. To avoid rate limit errors, adhere to your available plan by waiting for a certain amount of time before each request. If you are using a script or application, apply throttling to limit the frequency of calls.
 
-| **Nivel API** | **Límite de tarifa**                                          |
-| ------------- | ------------------------------------------------------------- |
-| **Gratis**    | 5 llamadas/segundo, hasta 10.000 llamadas/día |
+| **API Tier** | **Rate Limit**                          |
+| ------------ | --------------------------------------- |
+| **Free**     | 5 calls/second , up to 10,000 calls/day |
 
-### 6. ¿Cuál es el código de estado de una API si ocurre un error?
+### 6. What is the status code of an API if an error occurs?
 
-Una llamada API que encuentra un error devolverá 0 como código de estado y mostrará la causa del error en el campo de resultado.
+An API call that encounters an error will return 0 as its status code and display the cause of the error in the result field.
 
 ```json
 {
@@ -46,6 +46,6 @@ Una llamada API que encuentra un error devolverá 0 como código de estado y mos
 }
 ```
 
-### 7. ¿Qué debo hacer si encuentro problemas o errores con la API?
+### 7. What should I do if I encounter issues or bugs with the API?
 
-Consulte la documentación oficial de la API para [mensajes de problemas comunes] (https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si el problema persiste, contáctenos en nuestro [Discord] oficial (https ://discord.com/invite/coredaoofficial) servidor.
+Refer to official API documentation for [Common issues messages](https://docs.coredao.org/docs/api/tutorials/common-error-messages), If the problem persists, contact us on our official [Discord](https://discord.com/invite/coredaoofficial) server.
