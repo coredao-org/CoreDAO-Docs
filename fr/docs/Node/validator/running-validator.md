@@ -1,30 +1,30 @@
 ---
-sidebar_label: Configuration des Nœuds Validateurs
+sidebar_label: Running Validator Nodes
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds Validateurs
+# Running Validator Nodes
 
 ---
 
-## Requis Systèmes
+## System Requirements
 
-Il y a plusieurs exigences systèmes pour configurer un nœud validateur sur le réseau Core. Veuillez vous référer [ici](../config/validator-node-config.md) et vous assurer que vous avez les exigences matérielles et logicielles nécessaires avant de lancer un nœud validateur. En outre, assurez-vous d'enregistrer correctement votre nœud validateur en consultant les lignes directives détaillées [ici](./validator-register.md).
+There are several system requirements for setting up a Validator Node on the Core network. Please refer [here](../config/validator-node-config.md) and ensure you have tha required hardware and software requirements before running a validator node. Furthermore, make sure to register your validator node correctly by referring to detailed guideline [here](./validator-register.md).
 
-## Compilation et Exécution
+## Build and Run
 
-1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud validateur à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your validator node, i.e., running your validator node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2\. Download the node binary from the [releases page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. The node binary includes the relevant mainnet and testnet configuration files. This is the [latest version](https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+3\. Write the genesis state locally by executing the following command from your project directory:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-Vous devriez voir le message suivant :
+You should see the following output:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -38,9 +38,9 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Notre nœud validateur est prêt, lançons-le !
+4\. Our validator node is ready, let's start running it!
 
-Si vous prévoyez d'exécuter un nœud validateur, vous devez configurer la clé de consensus avant de démarrer le nœud. Assurez-vous de sauvegarder votre keystore.
+If you plan to run a validator node, you'll need to set up the consensus key before running the node. Make sure to keep your keystore saved.
 
 ```bash
 # generate the consensus key and input the password
@@ -50,4 +50,4 @@ echo {your-password} > password.txt
 geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
 ```
 
-5\. Pendant que notre nœud validateur fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5\. As our validator node runs, we can monitor its logs to make sure that everything is operating correctly. The log file is located at `./node/logs/core.log` by default, but can be changed to another location if desired.
