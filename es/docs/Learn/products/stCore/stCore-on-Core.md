@@ -1,54 +1,54 @@
 ---
-sidebar_label: Apuesta líquida con stCORE
+sidebar_label: Liquid Staking with stCORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Apuesta líquida con stCORE
+# Liquid Staking with stCORE
 
 ---
 
-## Introducción
+## Introduction
 
-Liquid Stake con stCORE mejora la utilidad del token CORE al tiempo que simplifica el proceso de apuesta. Esta guía proporciona un recorrido detallado para acuñar y canjear stCORE, una herramienta valiosa para los poseedores de tokens CORE que buscan maximizar el potencial de sus activos.
+The Liquid Staking with stCORE enhances the utility of the CORE token while simplifying the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, a valuable tool for CORE token holders seeking to maximize their assets' potential.
 
-## Primeros pasos: requisitos previos
+## Getting Started: Prerequisites
 
-1. **Verifique la disponibilidad de tokens CORE:** Verifique que su billetera Core contenga la cantidad necesaria de tokens CORE para apostar.
-2. **Acceda a la plataforma de apuestas:** [Visite la plataforma Core Liquid Stacking](https://stake.coredao.org/stcore)
-3. **Conexión de billetera:** Conecte su billetera a la plataforma.
+1. **Check CORE Token Availability:** Verify that your Core wallet contains the necessary amount of CORE tokens for staking.
+2. **Access the Staking Platform:** [Visit Core Liquid Stacking Platform](https://stake.coredao.org/stcore)
+3. **Wallet Connection:** Connect your wallet to the platform.
 
-## Definiciones clave
+## Key Definitions
 
-- **Saldo CORE:** La cantidad de tokens CORE en tu billetera.
-- **Saldo stCORE:** La cantidad de tokens stCORE en su billetera.
-- **CORE en canje:** Un período de desbloqueo de **7 días** para retirar CORE después del inicio del canje.
-- **Tasa de recompensa:** La proyección de rendimiento anualizado por mantener stCORE.
-- **Relación de conversión:** Un valor dinámico que refleja la relación stCORE/CORE o CORE/stCORE, influenciado por las actividades de participación del contrato Earn.
-- **Suministro de stCORE:** Total de tokens stCORE acuñados.
+- **CORE Balance:** The amount of CORE tokens in your wallet.
+- **stCORE Balance:** The amount of stCORE tokens in your wallet.
+- **CORE in Redemption:** A **7-day** unlocking period for withdrawing CORE after redemption initiation.
+- **Reward Rate:** The annualized return projection for holding stCORE.
+- **Conversion Ratio:** A dynamic value reflecting the stCORE/CORE or CORE/stCORE ratio, influenced by the Earn contract's staking activities.
+- **stCORE Supply:** Total minted stCORE tokens.
 
-## Minteando stCORE
+## Minting stCORE
 
-1. **Iniciar mint:** Haga clic en '_Mint stCORE_'.
-2. **Especifique monto:** Ingrese el monto CORE deseado para convertir en stCORE.
-3. **Confirmación:** Haga clic en '_Confirmar_' para continuar.
-4. **Transacción de billetera:** Apruebe la transacción de mint en su billetera.
-5. **Agregar stCORE a Wallet:** Haga clic en el signo **_+_** para agregar stCORE.
+1. **Initiate Minting:** Click on '_Mint stCORE_'.
+2. **Specify Amount:** Enter the desired CORE amount to convert into stCORE.
+3. **Confirmation:** Click '_Confirm_' to proceed.
+4. **Wallet Transaction:** Approve the minting transaction in your wallet.
+5. **Add stCORE to Wallet:** Click on the **_+_** sign to add stCORE.
 
 ![minitng-stCORE](../../../../static/img/stCore/mint-stcore.png)
 
-## Canjear CORE de stCORE
+## Redeeming CORE from stCORE
 
-1. **Iniciar canje:** Haga clic en '_Canjear CORE_'.
+1. **Start Redemption:** Click '_Redeem CORE_'.
 
-2. **Ingrese el monto:** Especifique el monto stCORE para el canje.
+2. **Enter Amount:** Specify the stCORE amount for redemption.
 
-3. **Confirmación:** Haga clic en '_Confirmar_'.
+3. **Confirmation:** Click '_Confirm_'.
 
-4. **Aprobación de billetera:** Confirme la transacción de canje en su billetera.
+4. **Wallet Approval:** Confirm the redemption transaction in your wallet.
 
-5. **Período de desbloqueo:** Comienza un período de espera de **7 días**. Realice un seguimiento del progreso en la sección "_In Redemption_".
+5. **Unlocking Period:** A **7-day** wait period begins. Track progress under the “_In Redemption_” section.
 
-6. **Retiro:** Después del desbloqueo, haga clic en '_Retirar_' para transferir CORE a su billetera.
+6. **Withdrawal:** Post-unlocking, click '_Withdraw_' to transfer CORE to your wallet.
 
 ![minitng-stCORE](../../../../static/img/stCore/redeem-stcore.png)
