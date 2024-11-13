@@ -1,16 +1,16 @@
 ---
-sidebar_label: Configuración de red
+sidebar_label: Network Configuration
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuraciones de red de Core
+# Core Network Configurations
 
 ---
 
-Detalles de mainnet y testnet
+Core mainnet and testnet chain details
 
-## Core red de prueba
+## Core Testnet
 
 - **Network Name:** Core Blockchain Testnet
 - **RPC URL:** https://rpc.test.btcs.network
@@ -18,9 +18,9 @@ Detalles de mainnet y testnet
 - **Currency Symbol:** tCORE
 - **Block Explorer URL:** https://scan.test.btcs.network
 
-Para importar detalles de la cadena Core Testnet a MetaMask, consulte nuestra [guía del usuario de Core Testnet] (./core-testnet-wallet-config.md).
+To import Core Testnet chain details to MetaMask, refer to our [Core Testnet user guide](./core-testnet-wallet-config.md).
 
-## Core red principal
+## Core Mainnet
 
 - **Network Name:** Core Blockchain Mainnet
 - **RPC URL:** https://rpc.coredao.org/
@@ -28,4 +28,4 @@ Para importar detalles de la cadena Core Testnet a MetaMask, consulte nuestra [g
 - **Currency Symbol:** CORE
 - **Block Explorer URL:** https://scan.coredao.org
 
-Para importar detalles de la cadena Core Mainnet a MetaMask, consulte nuestra guía sobre [agregar Core a MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
+To import Core Mainnet chain details to MetaMask, refer to our guide on [adding Core to MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
