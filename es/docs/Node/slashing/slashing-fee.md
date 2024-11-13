@@ -1,36 +1,36 @@
 ---
-sidebar_label: Tarifa de reducción
+sidebar_label: Slashing Fee
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Tarifa de reducción
+# Slashing Fees
 
 ---
 
-## Indisponibilidad
+## Unavailability
 
-Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección.
+Slashing penalties are generally incurred because a node fails to successfully produce a block during its designated turn in the **round-robin block-mining** procedure as described in the [Validator Election](../validator/validator-election.md) section.
 
-- Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección.
-- Si un nodo de validación no logra extraer los primeros **49 bloques** en una ronda y luego pierde el último bloque de la misma ronda, esto dará lugar a una reducción de todas las recompensas de tokens CORE que el validador ha acumulado hasta el momento.
-- Si fallan en los últimos **50** bloques de la ronda, entregarán todo lo que han ganado.
-- Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
+- If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely.
+- If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far.
+- If they fail on the last **50** blocks of the round, they surrender everything they’ve earned.
+- If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set.
 
-## Doble signo
+## Double Sign
 
-Cualquiera puede enviar una solicitud de barra diagonal en CoreChain con la evidencia de Double Sign de CoreChain.
+Anyone can submit a slash request on CoreChain with the evidence of Double Sign of CoreChain.
 
-### Validación de evidencia
+### Evidence Validation
 
-- Dos encabezados de bloque tienen la misma altura y el mismo hash de bloque principal
-- Dos encabezados de bloque están sellados por el mismo validador
-- Dos firmas de estos dos bloques no deben ser iguales.
-- El validador debe estar en el conjunto de validadores de la ronda actual.
+- Two block headers have the same height and the same parent block hash
+- Two block headers are sealed by the same validator
+- Two signatures of these two blocks must not be the same
+- The validator should be in the set of current round’s validators.
 
-Si la evidencia es válida:
+If the evidence is valid:
 
-1. **1000 CORE** se eliminarían del CORE con margen propio del validador
-2. El validador recortado sería encarcelado y excluido de la red para siempre.
-3. **500** de CORE recortado se asignarían al remitente como recompensa
-4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
+1. **1,000 CORE** would be slashed from the self-margined CORE of the validator
+2. The slashed validator would be jailed and barred from the network forever
+3. **500** of slashed CORE would be allocated to the submitter as a reward
+4. The rest of slashed CORE will transfer into System Reward Pool
