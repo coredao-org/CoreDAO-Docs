@@ -1,60 +1,60 @@
 ---
-sidebar_label: Configuration des Nœuds Snapshot
+sidebar_label: Snapshot Node Configuration
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds Snapshot
+# Snapshot Node Configuration
 
 ---
 
-Les snapshots sont essentiels pour qu'un réseau garantisse que les nœuds puissent se synchroniser avec l'état actuel du réseau aussi rapidement que possible. Avant que les nœuds puissent être utilisés, ils doivent se synchroniser avec l'état actuel du réseau, et en commençant à partir d'un snapshot récent, ces nœuds peuvent accélérer une grande partie du processus de synchronisation.
+Snapshots are important for a network to ensure nodes are able to sync up to the latest state of the network as quickly as possible. Before nodes can be used, they must sync up to the current state of the network, by starting from a recent snapshot these nodes can fast-track a majority of the syncing.
 
-## Requis Systèmes
+## System Requirements
 
-Il y a plusieurs requis systèmes, à la fois logicielles et matérielles, pour configurer un nœud snapshot sur le réseau Core.
+There are several system requirements, both software and hardware, for setting up a snapshot node on the Core network.
 
-### Logiciel
+### Software
 
-- Actuellement, un nœud snapshot Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- Currently, a Core Snapshot Node can only run on **Mac OS X** or on the **Linux** operating systems.
 
-### Matériel
+### Hardware
 
-Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain.
+On the Core network, Snapshot nodes act also as the archive nodes, storing the enitre blockchain data.
 
-#### Spécifications Matérielles pour les Nœuds Snapshot du Testnet
+#### Testnet Snapshot Node Hardware Specifications
 
-Pour les nœuds snapshot sur le Testnet de la blockchain Core, nous recommandons les spécifications matérielles minimales suivantes :
+For Snapshot Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | 4 cœurs CPU                                                                   |
-| RAM              | 16 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+| Requirements   | Details                                                                   |
+| -------------- | ------------------------------------------------------------------------- |
+| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB |
+| CPU            | 4 CPU cores                                                               |
+| RAM            | 16 Gigabytes                                                              |
+| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps      |
 
-#### Spécifications Matérielles pour les Nœuds Snapshot du Mainnet
+#### Mainnet Snapshot Node Hardware Specifications
 
-Pour les nœuds snapshot sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+For Sanpshot Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | 4 cœurs CPU                                                                   |
-| RAM              | 16 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+| Requirements   | Details                                                                   |
+| -------------- | ------------------------------------------------------------------------- |
+| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB |
+| CPU            | 4 CPU cores                                                               |
+| RAM            | 16 Gigabytes                                                              |
+| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps      |
 
-## Snapshots de Core Chain
+## Core Chain Snapshots
 
-Vous pouvez obtenir les derniers snapshots à partir de [ce lien](https://github.com/coredao-org/core-snapshots).
+You can get the latest snapshots from [here](https://github.com/coredao-org/core-snapshots).
 
-## Synchronisation des Nœuds en Utilisant des Snapshots sur le Réseau Core Chain
+## Syncing Nodes Using Snapshots on Core Chain Network
 
-Sur le réseau Core Chain, vous pouvez synchroniser votre nœud avec l'état actuel de plusieurs façons. Ce document vous guide à travers le processus de synchronisation des nœuds en utilisant des snapshots.
+On Core Chain network, you can sync your node to the latest state by several ways. In this document, we guide you through the syncing process of nodes on the Core network using the snapshots.
 
-### Téléchargement des Binaries Précompilés
+### Download Pre-Build Binaries
 
-Téléchargez les binaries précompilés à partir de la [page des sorties](https://github.com/coredao-org/core-chain/releases/latest) ou suivez les instructions ci-dessous
+Download the pre-build binaries from the [release page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below
 
 ##### Linux
 
@@ -72,18 +72,18 @@ mv geth_mac geth
 chmod -v u+x geth
 ```
 
-### Téléchargement des Fichiers de Configuration
+### Download the config files
 
-Téléchargez genesis.json et config.toml :
+Download genesis.json and config.toml by:
 
 ```bash
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep mainnet |cut -d\" -f4)
 unzip mainnet.zip
 ```
 
-### Configuration des Pairs
+### Peers Configuration
 
-- **Mainnet**: Le fichier config.toml de la dernière sortie contient les informations suivantes sur les `Bootstrap Nodes` et `Static Nodes` :
+- **Mainnet**: the config.toml file from the latest release ships configured with the information about the `Bootstrap Nodes` and `Static Nodes` as shown below:
 
 ```yaml
 BootstrapNodes = 
@@ -100,18 +100,18 @@ StaticNodes =
 "enode://71f4b875a8cec01fe9f01974a682ef846ab8cbe0c23518b2a94e38eef0db829488502122b19c94d595521364bc4550639b58c0332d3942447dfd65707fc80bc0@13.214.98.126:35021"]
 ```
 
-### Téléchargement des Snapshots
+### Download snapshot
 
-Téléchargez le dernier snapshot de chaindata à partir d'[ici](https://github.com/coredao-org/core-snapshots).
+Download latest chaindata snapshot from [here](https://github.com/coredao-org/core-snapshots).
 
-### Démarrer le Nœud
+### Start the Node
 
 ```bash
 ./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0
 ```
 
 :::note
-Assurez-vous d'utiliser la version de geth que vous avez téléchargée avec wget ci-dessus, et non votre installation locale de geth, qui pourrait être une mauvaise version.
+Make sure you use the version of geth you downloaded with wget above, and not your local installation of geth, which might be the wrong version.
 :::
 
 :::tip
@@ -120,17 +120,17 @@ It is recommended to run a fast node, which is a full node with the flag --tries
 ./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none
 :::
 
-### Surveiller l'État du Nœud
+### Monitor node status
 
-Vous pouvez surveiller les logs pour vérifier l'état du nœud. Par défaut, les logs sont enregistrés dans `./node/logs/core.log`.
+You can monitor the logs for node status. By default the logs are stored at `./node/logs/core.log`.
 
-## Mode de Synchronisation
+## Sync Mode
 
-Il existe deux modes de synchronisation pour exécuter un nœud complet : **snap** et **full**, que vous pouvez spécifier avec l'option **--syncmode**.
+There are two sync modes for running a full node: **snap** and **full** which can be specified by flag **--syncmode**.
 
-- **Snap sync mode** : Utilisé pour la synchronisation initiale, il télécharge les derniers états plutôt que d'exécuter les blocs depuis le genesis. Une fois la synchronisation initiale terminée, il passera automatiquement en mode full.
+- The **snap** sync mode is used for initial sync, which will download the latest states rather than execute the blocks from the genesis. When the initial sync is done, it will switch to full sync automatically.
 
-- **Full sync mode :** Ce mode exécute tous les blocs depuis le genesis. **Il n'est pas recommandé**, car la quantité de données historiques est trop volumineuse. Il est préférable de télécharger un snapshot a partir du [repertoire officiel](https://github.com/coredao-org/core-snapshots) et de démarrer la synchronisation complète à partir de celui-ci.
+- The **full** sync mode can also be used to do initial sync, which will execute all the blocks since genesis. But it is **not recommended**, since the amount of historical data is too large. Instead, you can download a snapshot from the [official repo](https://github.com/coredao-org/core-snapshots) and start full sync from the snapshot.
 
-- Si l'option **--syncmode** n'est pas fournie, le mode de synchronisation par défaut dépendra de l'état du dossier de données. Cela sera en mode **snap** si vous synchronisez à partir du genesis, ou en mode **full** si vous démarrez à partir d'un snapshot.
+- If the flag **--syncmode** is not provided, the default sync mode will depend on the state of the data folder. It will be **snap** mode if you sync from genesis or **full** mode if you start from a snapshot.
   2
