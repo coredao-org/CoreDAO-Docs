@@ -1,18 +1,18 @@
 ---
-sidebar_label: Sincronización de nodos Core
+sidebar_label: Syncing Core Nodes
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Sincronización de nodos Core
+# Syncing Core Nodes
 
 ---
 
-En la red Core, puede sincronizar su nodo con el último estado de Core Chain de varias maneras. En este documento, lo guiamos a través del proceso de sincronización de nodos en la red Core.
+On the Core network, you can sync your node to the latest state of the Core Chain by several ways. In this document, we guide you through the syncing process of nodes on the Core network.
 
-## Sincronizar desde instantánea (recomendado)
+## Sync From Snapshot (Recommended)
 
-Descargue los binarios precompilados desde la [página de lanzamiento] (https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
+Download the pre-build binaries from the [release page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below
 
 #### Linux
 
@@ -22,7 +22,7 @@ mv geth_linux geth
 chmod -v u+x geth
 ```
 
-#### MacOs
+#### MacOS
 
 ```bash
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_mac |cut -d\" -f4)
@@ -30,18 +30,18 @@ mv geth_mac geth
 chmod -v u+x geth
 ```
 
-### Descargue los archivos de configuración
+### Download the config files
 
-Descargue genesis.json y config.toml mediante:
+Download genesis.json and config.toml by:
 
 ```bash
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep mainnet |cut -d\" -f4)
 unzip mainnet.zip
 ```
 
-### Configuración de pares
+### Peers Configuration
 
-- **Red principal**: el archivo config.toml de la última versión se entrega configurado con la información sobre los `Nodos Bootstrap` y los `Nodos estáticos` como se muestra a continuación:
+- **Mainnet**: the config.toml file from the latest release ships configured with the information about the `Bootstrap Nodes` and `Static Nodes` as shown below:
 
 ```yaml
 BootstrapNodes = 
@@ -58,18 +58,18 @@ StaticNodes =
 "enode://71f4b875a8cec01fe9f01974a682ef846ab8cbe0c23518b2a94e38eef0db829488502122b19c94d595521364bc4550639b58c0332d3942447dfd65707fc80bc0@13.214.98.126:35021"]
 ```
 
-### Descargar instantánea
+### Download snapshot
 
-Descargue la última instantánea de Chaindata desde [aquí](https://github.com/coredao-org/core-snapshots).
+Download latest chaindata snapshot from [here](https://github.com/coredao-org/core-snapshots).
 
-### Iniciar el nodo
+### Start the Node
 
 ```bash
 ./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0
 ```
 
 :::note
-Asegúrese de utilizar la versión de geth que descargó con wget arriba, y no su instalación local de geth, que podría ser la versión incorrecta.
+Make sure you use the version of geth you downloaded with wget above, and not your local installation of geth, which might be the wrong version.
 :::
 
 :::tip
@@ -78,23 +78,23 @@ It is recommended to run a fast node, which is a full node with the flag --tries
 ./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none
 :::
 
-### Monitorear el estado del nodo
+### Monitor node status
 
-Puede monitorear el registro desde `/node/logs/core.log` de forma predeterminada.
+You can monitor the log from `/node/logs/core.log` by default.
 
-## Sincronización desde Genesis Block (no recomendado)
+## Sync from Genesis Block (Not Recommended)
 
 :::note
-Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis, ya que actualmente la instantánea no está disponible. Puede descargar el binario más reciente para testnet desde [aquí](https://github.com/coredao-org/core-chain/releases).
+Note that the recommended method for syncing testnet node is to sync from genesis block as currently the snapshot is not available. You can download the latest binary  for testnet from [here](https://github.com/coredao-org/core-chain/releases).
 :::
 
-Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su nodo
+Write the genesis state locally by executing the following command from your node directory
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-Deberías ver el siguiente resultado:
+You should see the following output:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -108,21 +108,21 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-Nuestro nodo completo está listo, ¡comencemos a ejecutarlo!
+Our full node is ready, let's start running it!
 
-Si planea ejecutar un nodo normal, puede ejecutar el siguiente comando `geth` directamente:
+If you plan to run a normal node, you can just run the following `geth` command directly:
 
 ```bash
-## iniciar un nodo completo
+## start a full node
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-## Modo de sincronización
+## Sync Mode
 
 There are two sync modes for running a full node: **snap** and **full** which can be specified by flag **--syncmode**.
 
-- El modo de sincronización **snap** se utiliza para la sincronización inicial, que descargará los últimos estados en lugar de ejecutar los bloques desde la génesis. Cuando finalice la sincronización inicial, cambiará automáticamente a sincronización completa.
+- The **snap** sync mode is used for initial sync, which will download the latest states rather than execute the blocks from the genesis. When the initial sync is done, it will switch to full sync automatically.
 
-- El modo de sincronización **completa** también se puede utilizar para realizar una sincronización inicial, que ejecutará todos los bloques desde su génesis. Pero **no se recomienda**, ya que la cantidad de datos históricos es demasiado grande. En su lugar, puede descargar una instantánea del [repositorio oficial](https://github.com/coredao-org/core-snapshots) e iniciar la sincronización completa desde la instantánea.
+- The **full** sync mode can also be used to do initial sync, which will execute all the blocks since genesis. But it is **not recommended**, since the amount of historical data is too large. Instead, you can download a snapshot from the [official repo](https://github.com/coredao-org/core-snapshots) and start full sync from the snapshot.
 
-- Si no se proporciona la marca **--syncmode**, el modo de sincronización predeterminado dependerá del estado de la carpeta de datos. Será el modo **instantáneo** si sincroniza desde génesis o el modo **completo** si comienza desde una instantánea.
+- If the flag **--syncmode** is not provided, the default sync mode will depend on the state of the data folder. It will be **snap** mode if you sync from genesis or **full** mode if you start from a snapshot.
