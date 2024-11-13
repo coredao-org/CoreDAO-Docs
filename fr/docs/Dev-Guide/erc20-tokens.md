@@ -1,22 +1,22 @@
 ---
-sidebar_label: Tokens ERC-20
+sidebar_label: ERC-20 Tokens
 hide_table_of_contents: false
 sidebar_position: 2
-description: ERC-20 sur Core Chain
+description: ERC-20 on Core Chain
 ---
 
-# Tokens ERC20
+# ERC20 Tokens
 
 ---
 
-ERC-20 est actuellement la méthode dominante pour implémenter des tokens fongibles basés sur la blockchain. Chaque token ERC20 est basé sur l'interface originale du token ERC20, ce qui signifie qu'ils partagent tous un ensemble commun de fonctions, y compris (mais sans s'y limiter) :
+ERC20 is currently the dominant approach to implementing fungible, blockchain-based tokens. Each ERC20 token is based on the original ERC20 token interface, meaning that they all share a common set of functions, including (but not limited to):
 
-- Transférer des tokens d'un compte à un autre ;
-- Obtenir le solde actuel d'un compte en token ;
-- Obtenir l'offre totale de tokens disponibles sur le réseau ;
-- Approuver un montant de tokens pour être dépensé par un compte tiers ;
+- Transferring tokens from one account to another;
+- Getting the current token balance of an account;
+- Getting the total supply of the token available on the network;
+- Approving an amount of tokens to be spent by a third-party account;
 
-Pour être compatible avec ERC-20, un token doit implémenter toutes les fonctions et événements suivants :
+In order to be ERC-20 compatible, a token must implement all the following functions and events:
 
 ```javascript
 function name() public view returns (string)
@@ -35,17 +35,17 @@ event Transfer(address indexed _from, address indexed _to, uint256 _value)
 event Approval(address indexed _owner, address indexed _spender, uint256 _value)
 ```
 
-## Bonnes pratiques
+## Best Practices
 
-ERC-20 est un standard simple et sécurisé. Cependant, il est important d'être prudent lors de son implémentation ; de nombreux tokens ERC-20 ont été exploités au fil des années en raison de l'inclusion de code additionnel défectueux.
+ERC20 is a simple, secure standard. But we must be careful in our implementation; many ERC20 tokens have been exploited over the years due to the inclusion of additional, buggy code.
 
-Pour plus de sécurité, nous recommandons d'utiliser l'implémentation ERC-20 d'OpenZeppelin pour votre projet. Le code source est disponible dans le fichier [ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol). Voici les étapes à suivre :
+For safety and security, we recommend using the OpenZeppelin ERC20 implementation for your project, the source code for which can be found at[ ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol). You can do this with the following steps:
 
-1\. Installez les contrats intelligents OpenZeppelin dans votre projet en exécutant la commande suivante :
+1\. Install OpenZeppelin smart contracts in your project by running the following command:
 
 `npm install @openzeppelin/contracts`
 
-2\. Ensuite, vous pouvez importer les contrats de la bibliothèque avec le code suivant:
+2\. Then, you can import the contracts in the library with this:
 
 ```javascript
 // contracts/GLDToken.sol
@@ -61,9 +61,9 @@ contract GLDToken is ERC20 {
 }
 ```
 
-Vous trouverez plus d'informations sur l'implémentation ERC-20 d'OpenZeppelin [ici](https://docs.openzeppelin.com/contracts/4.x/erc20).
+You can find more information on OpenZeppelin ERC-20 implementation [here](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-#### Références
+#### References
 
 - [https://ethereum.org/en/developers/docs/standards/tokens/erc-20/](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [https://docs.openzeppelin.com/contracts/4.x/erc20](https://docs.openzeppelin.com/contracts/4.x/erc20)
