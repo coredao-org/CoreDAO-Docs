@@ -4,114 +4,114 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conectarse a Core Chain Mainnet
+# Connect to Core Chain Mainnet
 
 ---
 
 :::note
-Esta es una guía detallada para conectarse a Core Mainnet utilizando la billetera MetaMask.
+This is a detailed guideline for connecting to Core Mainnet using the MetaMask wallet.
 :::
 
-## Requisitos previos del software
+## Software Prequisites
 
-1. [Extensión del navegador MetaMask Wallet](https://metamask.io/)
+1. [MetaMask Wallet Browser Extension](https://metamask.io/)
 
-## Configuración de la billetera MetaMask
+## MetaMask Wallet Setup
 
-Recomendamos utilizar la [billetera web MetaMask](https://metamask.io/) para conectarse a Core Mainnet. Deberá instalar MetaMask y configurar su cuenta antes de poder usarla para conectarse a Core Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
+We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Mainnet. You'll need to install MetaMask and set up your account before you can use it to connect to Core Mainnet. You can find MetaMask setup instructions here.
 
-## Agregar Core Mainnet a MetaMask
+## Adding Core Mainnet to MetaMask
 
-Hay varias formas de agregar configuraciones de Core Mainnet a su MetaMask Wallet; a continuación, enumeramos las formas más confiables y probadas.
+There are multiple ways to add Core Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testest ways below.
 
-### Agregar red manualmente
+### Adding Network Manually
 
-1. Haga clic en el botón selector de red (la flecha hacia abajo al lado de la red actual). Esto mostrará una lista de redes a las que ya estás conectado.
+1. Click on the network selector button (the downward facing arrow next to the current network). This will display a list of networks to which you’re already connected.
 
+<img src="https://github.com/RumeelHussainbnb/CoreDAODocs/assets/93580180/591f9fe0-d23d-41e2-94fa-9d125b631d37" alt="mainnet-wallet-config-1" style={{zoom:"50%"}}/>
 
-
-2. Haga clic en "Agregar red" en la parte inferior de la lista de redes
+2. Click ‘Add network’ at the bottom of the network list
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-2.webp)
 
-3. Luego se abrirá una nueva pestaña del navegador, mostrando varios campos para completar:
+3. A new browser tab will then open, displaying various fields to fill out:
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-3.webp)
 
-Complete la siguiente información de la red y haga clic en "guardar" para agregar la red.
+Fill in the following network information and click `save` to add the network.
 
-- **Nombre de la red:** Core Blockchain
-- **Nueva URL de RPC:** https://rpc.ankr.com/core
-- **ID de cadena:** 1116 (**Nota**: 0x45c es lo mismo que 1116. La nueva versión de MetaMask convierte el ID de cadena al formato hexadecimal).
-- **Símbolo de moneda:** CORE
-- **URL del Explorador de bloques:** https://scan.coredao.org
+- **Network Name:** Core Blockchain
+- **New RPC URL:** https://rpc.ankr.com/core
+- **Chain ID:** 1116 (**Note**: 0x45c is the same as 1116. The new version of MetaMask converts chain ID to hexadecimal format).
+- **Currency Symbol:** CORE
+- **Block Explorer URL:** https://scan.coredao.org
 
-4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
+4. After performing the above steps, you will be able to see the Core network the next time you access the network selector.
 
-### Agregar la red central a través de Chainlist.org
+### Adding the Core network via Chainlist.org
 
-1. Vaya a chainlist.org y busque '_Core_'
+1. Go to chainlist.org and search for ‘_Core_’
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-4.webp)
 
-2. Verifique dos veces para asegurarse de elegir la red correcta. Verifique los detalles en las siguientes instantáneas: ID de cadena, moneda, etc. para asegurarse de agregar la correcta.
+2. Double check to make sure to choose the right network. Please check the details in the below snapshots — Chain ID, Currency etc. to ensure you will add the correct one.
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-6.webp)
 
-3. Haga clic en el botón '_Agregar a MetaMask_'.
+3. Click the ‘_Add to MetaMask_’ button.
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-7.webp)
 
-4. Apruebe la acción en su MetaMask haciendo clic en el botón _'Aprobar'_.
+4. Approve the action in your MetaMask by clicking the _‘Approve’_ button.
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-8.webp)
 
-La red Core ahora está agregada a su MetaMask.
+The Core network is now added to your MetaMask.
 
-### Agregar la red Core a través de Core Explorer
+### Adding the Core network via the Core Explorer
 
-1. Vaya a https://scan.coredao.org/ y desplácese hacia abajo en la página
+1. Go to https://scan.coredao.org/ and scroll all the way down on the page
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-9.webp)
 
-2. Haga clic en el botón '_Agregar red principal_'
+2. Click the ‘_Add Core Network_’ button
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-10.webp)
 
-3. Aprobar en tu MetaMask
+3. Approve in your MetaMask
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-11.webp)
 
-4. Después de realizar los pasos anteriores, podrás ver la red principal la próxima vez que accedas al selector de red.
+4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
 
-### Agregar la red Core a la billetera móvil MetaMask:
+### Adding the Core network to MetaMask mobile wallet:
 
-1. Toca las tres líneas en la esquina superior izquierda:
+1. Tap on the three lines in the top-left corner:
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-12.webp)
 
-2. Seleccione _'Configuración'_:
+2. Select _‘Settings’_:
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-13.webp)
 
-3. Seleccionar redes:
+3. Select Networks:
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-14.webp)
 
-4. Toque '_Agregar red_':
+4. Tap on ‘_Add Network_’:
 
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-15.webp)
 
-5. Complete los detalles de la red RPC personalizada y haga clic en _guardar_ para agregar la red.
+5. Fill in the Custom RPC Network details and click _save_ to add the network.
 
-- **Nombre de la red:** Core Blockchain
-- **Nueva URL de RPC:** https://rpc.ankr.com/core
-- **ID de cadena:** 1116 (**Nota**: 0x45c es lo mismo que 1116. La nueva versión de MetaMask convierte el ID de cadena al formato hexadecimal).
-- **Símbolo de moneda:** CORE
-- **URL del Explorador de bloques:** https://scan.coredao.org
+- **Network Name:** Core Blockchain
+- **New RPC URL:** https://rpc.ankr.com/core
+- **Chain ID:** 1116 (**Note**: 0x45c is the same as 1116. The new version of MetaMask converts chain ID to hexadecimal format).
+- **Currency Symbol:** CORE
+- **Block Explorer URL:** https://scan.coredao.org
 
-4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
+4. After performing the above steps, you will be able to see the Core network the next time you access the network selector.
 
 :::info
-Si tiene un error o tiene dificultades para agregar la red, solicite ayuda en el canal de "soporte" en [Core Discord] (https://discord.gg/coredao), siempre estamos disponibles para ayudarlo.
+If you happen to have an error, or are struggling with adding the network please ask for help in the ‘support’ channel in the [Core Discord](https://discord.gg/coredao), we are always available to help.
 :::
