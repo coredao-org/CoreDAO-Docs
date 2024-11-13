@@ -1,70 +1,70 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# coreBTC Descripción general
+# coreBTC Overview
 
 ---
 
-## ¿Qué es coreBTC?
+## What is coreBTC?
 
-El bitcoin envuelto nativo de Core (coreBTC) sirve como una representación sintética de Bitcoin en la cadena de bloques Core, diseñada para integrar Bitcoin en el panorama de finanzas descentralizadas (DeFi) de Core. Al bloquear Bitcoin y emitir una cantidad equivalente de coreBTC, se mantiene una correlación de valor **1:1**, lo que permite a los titulares de Bitcoin participar de forma segura en actividades DeFi sin utilizar directamente sus tenencias de Bitcoin.
+Core-native wrapped bitcoin (coreBTC) serves as a synthetic representation of Bitcoin on the Core blockchain, designed to integrate Bitcoin into the decentralized finance (DeFi) landscape of Core. By locking Bitcoin and issuing an equivalent amount of coreBTC, it upholds a **1:1** value correlation, enabling Bitcoin holders to engage securely in DeFi activities without directly using their Bitcoin holdings.
 
-## Importancia en el ecosistema Core
+## Importance in the Core Ecosystem
 
-coreBTC es fundamental para desarrollar un vibrante ecosistema Bitcoin DeFi (BTCfi) dentro de Core. Desbloquea el importante valor almacenado en Bitcoin al hacerlo utilizable en contratos inteligentes y otros servicios financieros basados ​​en blockchain, lo que potencialmente involucra casi **1 billón de dólares** en Bitcoin. Desbloquea el importante valor almacenado en Bitcoin al hacerlo utilizable en contratos inteligentes y otros servicios financieros basados ​​en blockchain, lo que potencialmente involucra casi **1 billón de dólares** en Bitcoin.
+coreBTC is central to developing a vibrant Bitcoin DeFi (BTCfi) ecosystem within Core. It unlocks the significant value stored in Bitcoin by making it usable in smart contracts and other blockchain-based financial services, potentially involving nearly **$1 trillion** worth of Bitcoin. This facilitates greater liquidity and usability of Bitcoin, enhancing its overall ecosystem.
 
-## Ventajas de coreBTC
+## Advantages of coreBTC
 
-- **Liquidez y usabilidad mejoradas:** coreBTC permite a los titulares de Bitcoin participar en el ecosistema DeFi en la cadena de bloques Core, proporcionando liquidez y mayor utilidad para sus tenencias de Bitcoin.
+- **Enhanced Liquidity and Usability:** coreBTC enables Bitcoin holders to participate in the DeFi ecosystem on the Core blockchain, providing liquidity and increased utility for their Bitcoin holdings.
 
-- **Descentralización y seguridad:** A diferencia de las soluciones tradicionales de Bitcoin envueltas, coreBTC utiliza una red descentralizada de Lockers, de modo que el proceso mantiene los principios fundamentales de descentralización y seguridad de la cadena de bloques.
+- **Decentralization and Security:** Unlike traditional wrapped Bitcoin solutions, coreBTC uses a decentralized network of Lockers, so that the process maintains the foundational blockchain principles of decentralization and security.
 
-- **Operaciones descentralizadas:** El sistema coreBTC permite bloquear y empaquetar Bitcoin sin depender de una autoridad central, manteniendo la descentralización que es fundamental para la tecnología blockchain.
+- **Decentralized Operations:** The coreBTC system allows Bitcoin to be locked and wrapped without relying on a central authority, maintaining the decentralization that is central to blockchain technology.
 
-- **Respaldo de Bitcoin 1:1:** Cada coreBTC está respaldado uno a uno por Bitcoin real, que está bloqueado y protegido por Lockers que brindan importantes garantías para garantizar la seguridad del Bitcoin bloqueado.
+- **1:1 Bitcoin Backing:** Each coreBTC is backed one-to-one by actual Bitcoin, which is locked and secured by Lockers who provide significant collateral to guarantee the security of the locked Bitcoin.
 
-- **Mantiene la integridad de Bitcoin:** Al no exigir a los titulares de Bitcoin que transfieran sus bitcoins reales a una cadena de bloques diferente ni los alteren de manera significativa, coreBTC preserva la integridad y el valor de las tenencias originales de Bitcoin.
+- **Maintains Bitcoin’s Integrity:** By not requiring Bitcoin holders to transfer their actual bitcoins to a different blockchain or alter them in any significant way, coreBTC preserves the integrity and value of the original Bitcoin holdings.
 
-- **Incentivos a largo plazo:** El diseño del sistema coreBTC incluye incentivos a largo plazo para todos los participantes, incluidos Lockers y Relayers, diseñados para la sostenibilidad y estabilidad del servicio.
+- **Long-term Incentives:** The design of the coreBTC system includes long-term incentives for all participants, including Lockers and Relayers, designed for the sustainability and stability of the service.
 
-- **Colateralizado y Asegurado:** Los requisitos de garantía para Lockers actúan como un mecanismo de seguro que protege contra actividades fraudulentas y mantiene la fidelidad del proceso de embalaje.
+- **Collateralized and Insured:** The collateral requirements for Lockers act as an insurance mechanism that protects against fraudulent activities and uphold the fidelity of the wrapping process.
 
-- **Integración con Core DeFi:** coreBTC se puede usar sin problemas dentro de las aplicaciones DeFi de Core, como préstamos, préstamos y transacciones, de manera similar a cómo se usan otras monedas estables y activos sintéticos en las plataformas DeFi.
+- **Integration with Core DeFi:** coreBTC can be seamlessly used within Core’s DeFi applications, such as lending, borrowing, and trading, similar to how other stablecoins and synthetic assets are used in DeFi platforms.
 
-- **Respaldo a la propuesta de valor de Bitcoin:** coreBTC aprovecha la reputación y la fortaleza del mercado de Bitcoin, mejorando su funcionalidad y al mismo tiempo continúa respaldando su propuesta de valor como reserva de valor.
+- **Support for Bitcoin's Value Proposition:** coreBTC leverages Bitcoin's reputation and market strength, enhancing its functionality while continuing to support its value proposition as a store of value.
 
-- **Escalabilidad:** Al proporcionar un mecanismo para que Bitcoin se use en Core, coreBTC ayuda a escalar la usabilidad de Bitcoin sin requerir cambios en su protocolo subyacente, preservando sus atributos originales mientras expande sus casos de uso.
+- **Scalability:** By providing a mechanism for Bitcoin to be used on Core, coreBTC helps scale the usability of Bitcoin without requiring changes to its underlying protocol, preserving its original attributes while expanding its use cases.
 
-## ¿Por qué optar por coreBTC?
+## Why Opt for coreBTC?
 
-Optar por coreBTC ofrece varios beneficios atractivos, lo que lo convierte en una opción atractiva para los poseedores y usuarios de Bitcoin en el ecosistema Core. Aquí hay una lista con viñetas que describe por qué uno podría elegir coreBTC:
+Opting for coreBTC offers several compelling benefits, making it an attractive choice for Bitcoin holders and users in the Core ecosystem. Here’s a bulleted list outlining why one might choose coreBTC:
 
-- **Integración perfecta de DeFi:** coreBTC permite a los titulares de Bitcoin interactuar sin problemas con aplicaciones DeFi en la cadena de bloques Core, ampliando la utilidad de su Bitcoin sin convertirlo en otras criptomonedas.
+- **Seamless DeFi Integration:** coreBTC allows Bitcoin holders to seamlessly engage with DeFi applications on the Core blockchain, expanding the utility of their Bitcoin without converting it into other cryptocurrencies.
 
-- **Preservación de las propiedades de Bitcoin:** Al utilizar coreBTC, los usuarios pueden disfrutar de los beneficios de las características fundamentales de Bitcoin, como su sólida seguridad y escasez, mientras participan en una amplia gama de actividades de blockchain.
+- **Preservation of Bitcoin’s Properties:** By using coreBTC, users can enjoy the benefits of Bitcoin’s fundamental characteristics—such as its robust security and scarcity—while participating in a diverse range of blockchain activities.
 
-- **Descentralizado y seguro:** La naturaleza descentralizada del sistema de gestión y emisión de coreBTC está diseñada para que los usuarios no dependan de ninguna parte central, manteniendo el espíritu de descentralización de la tecnología blockchain.
+- **Decentralized and Secure:** The decentralized nature of the coreBTC issuance and management system is designed so that users are not reliant on any single central party, maintaining the decentralization ethos of blockchain technology.
 
-- **Liquidez mejorada:** coreBTC ofrece a los titulares de Bitcoin mayores opciones de liquidez, permitiéndoles aprovechar sus tenencias en diversas transacciones financieras y contratos inteligentes dentro del ecosistema Core.
+- **Enhanced Liquidity:** coreBTC provides Bitcoin holders with increased liquidity options, allowing them to leverage their holdings in various financial transactions and smart contracts within the Core ecosystem.
 
-- **Sin riesgo de custodia:** Los usuarios conservan el control total sobre su Bitcoin hasta que deciden guardarlo para coreBTC, lo que reduce el riesgo de custodia típicamente asociado con la entrega de activos a un tercero.
+- **No Custody Risk:** Users retain full control over their Bitcoin until they decide to lock it up for coreBTC, reducing the custody risk typically associated with handing over assets to a third party.
 
-- **Evitar la vinculación con moneda fiduciaria:** A diferencia de las monedas estables vinculadas a monedas fiduciarias, coreBTC está vinculada directamente a Bitcoin, lo que evita problemas relacionados con la volatilidad y la inflación de la moneda fiduciaria.
+- **Fiat Peg Avoidance:** Unlike stablecoins pegged to fiat currencies, coreBTC is pegged directly to Bitcoin, avoiding issues related to fiat currency volatility and inflation.
 
-- **Oportunidades de recompensa:** Los usuarios pueden ganar recompensas adicionales en tokens CORE al participar en la apuesta y la seguridad de la cadena de bloques Core, aumentando así el retorno potencial de su inversión.
+- **Reward Opportunities:** Users can earn additional rewards in CORE tokens by participating in the staking and security of the Core blockchain, thereby increasing their potential investment returns.
 
-- **Inversión a prueba de futuro:** A medida que Core continúa desarrollando y ampliando sus ofertas, tener coreBTC podría proporcionar ventajas estratégicas para acceder a nuevos servicios y funciones a medida que estén disponibles en la plataforma.
+- **Future-Proof Investment:** As Core continues to develop and expand its offerings, holding coreBTC could provide strategic advantages in accessing new services and features as they become available on the platform.
 
-**Inversión a prueba de futuro:** A medida que Core continúa desarrollando y ampliando sus ofertas, tener coreBTC podría proporcionar ventajas estratégicas para acceder a nuevos servicios y funciones a medida que estén disponibles en la plataforma.
+Choosing coreBTC allows users to leverage the security and value of Bitcoin within a dynamic and growing DeFi ecosystem, aligning traditional Bitcoin investment with modern blockchain technology opportunities.
 
-## Cómo funciona coreBTC
+## How coreBTC Works
 
-- **Proceso de acuñación:** Los usuarios envían Bitcoin a la dirección de un casillero. **Proceso de acuñación:** Los usuarios envían Bitcoin a la dirección de un casillero.
-- **Proceso de canje:** Los usuarios pueden quemar su coreBTC para recuperar su Bitcoin bloqueado. El contrato inteligente coreBTC verifica la quema e indica al Locker que envíe el Bitcoin equivalente a la dirección especificada del usuario.
+- **Minting Process:** Users send Bitcoin to a Locker's address. Once confirmed, Relayers submit the transaction proof to the coreBTC smart contract, which mints an equivalent amount of coreBTC.
+- **Redemption Process:** Users can burn their coreBTC to retrieve their locked Bitcoin. The coreBTC smart contract verifies the burn and instructs the Locker to send the equivalent Bitcoin to the user’s specified address.
 
-## Conclusión
+## Conclusion
 
-coreBTC es un componente importante del ecosistema Core, que mejora la utilidad de Bitcoin al permitir su participación activa en DeFi mientras se adhiere a los principios de descentralización y seguridad. A través de su intrincado sistema de Lockers, Relayers y contratos inteligentes, coreBTC permite que Bitcoin se utilice y realice transacciones de forma segura dentro del ecosistema Core, ampliando su atractivo y utilidad funcional.
+coreBTC is an important component of the Core ecosystem, enhancing the utility of Bitcoin by enabling its active participation in DeFi while adhering to the principles of decentralization and security. Through its intricate system of Lockers, Relayers, and smart contracts, coreBTC enables Bitcoin to be safely used and transacted within the Core ecosystem, broadening its appeal and functional utility.
