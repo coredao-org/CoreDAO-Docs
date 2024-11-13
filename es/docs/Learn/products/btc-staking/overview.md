@@ -1,100 +1,100 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Apuesta de Bitcoin sin custodia
+# Non-Custodial Bitcoin Staking
 
 ---
 
-Más de [1 billón de dólares](https://www.coingecko.com/en/coins/bitcoin) en Bitcoin han permanecido inactivos, sin generar rendimiento nativo durante su vida útil. Dado que Bitcoin es una cadena de bloques de Prueba de Trabajo, sus poseedores no obtienen los beneficios de rendimiento propios de las cadenas de Prueba de Participación. Sin embargo, Core ha brindado beneficios de Prueba de participación a la cadena de bloques de Prueba de trabajo definitiva. La participación sin custodia de Bitcoin se suma sustancialmente al modelo de seguridad de Core y, al mismo tiempo, desbloquea el rendimiento nativo de Bitcoin por primera vez en la historia. Este enfoque innovador permite a los poseedores de Bitcoin participar y ganar dinero con Satoshi Plus sin renunciar a la custodia de su Bitcoin, integrando así el poder económico de Bitcoin con las funcionalidades avanzadas de blockchain de Core.
+Over [1 trillion dollars'](https://www.coingecko.com/en/coins/bitcoin) worth of Bitcoin has remained idle, yielding no native yield for over its lifetime. Since Bitcoin is a Proof of Work blockchain, its holders do not get the yield benefits native to Proof of Stake chains. Nevertheless, Core has delivered Proof of Stake benefits to the definitive Proof of Work blockchain. Non-Custodial Bitcoin Staking substantially adds to Core’s security model while also unlocking Bitcoin-native yield for the first time in history. This innovative approach allows Bitcoin holders to participate in and earn from Satoshi Plus without giving up custody of their Bitcoin, thereby integrating Bitcoin's economic power with Core's advanced blockchain functionalities.
 
-## Descripción general
+## Overview
 
-El Stake de Bitcoin sin custodia permite a los poseedores de Bitcoin ganar tokens CORE simplemente bloqueando su Bitcoin en la cadena de bloques de Bitcoin, sin ceder nunca la custodia de sus claves privadas a ningún tercero, contrato inteligente externo o billetera MPC. Al bloquear su Bitcoin en la cadena de bloques de Bitcoin, los participantes de Bitcoin contribuyen a la elección de validadores centrales, mejorando y descentralizando así la seguridad de Satoshi Plus.
+Non-Custodial Bitcoin Staking enables Bitcoin holders to earn CORE tokens by simply locking up their Bitcoin on the Bitcoin blockchain, thereby never giving up custody of their private keys to any third party, external smart contract, or MPC wallet. In locking up their Bitcoin on the Bitcoin blockchain, Bitcoin stakers contribute to the election of Core validators, thereby enhancing and decentralizing the security of Satoshi Plus.
 
-## Empoderar a los poseedores de Bitcoin y fortalecer el núcleo
+## Empowering Bitcoin Holders and Strengthening Core
 
-#### _Los beneficios duales de la participación sin custodia de Bitcoin_
+#### _The Dual Benefits of Non-Custodial Bitcoin Staking_
 
-1. **Beneficios para los poseedores de Bitcoin de la participación sin custodia de Bitcoin**
-   - **Mantener activos en Bitcoin:** Mediante la participación sin custodia de Bitcoin, los titulares de Bitcoin tienen la oportunidad única de mantener sus activos de forma segura en la red Bitcoin. Esto es importante porque les permite conservar su inversión en lo que se considera ampliamente como la cadena de bloques más descentralizada y segura, a menudo denominada oro digital. En esencia, pueden seguir conservando sus Bitcoins, disfrutando de la seguridad y la reputación que ofrece, sin necesidad de transferir sus activos a otra parte.
-   - **Obtener tokens Core como recompensa:** Participar en Stake de Bitcoin sin custodia ofrece un incentivo adicional: ganar tokens Core. Esta es una forma para que los poseedores de Bitcoin no sólo conserven sus activos de Bitcoin sino también reciban recompensas adicionales en forma de tokens Core.
-   - **Responsabilidad social en la descentralización:** Al apostar su Bitcoin, los titulares contribuyen a la descentralización de la cadena de bloques central. Esta es una forma de responsabilidad social, ya que su participación ayuda a mantener una red diversa y distribuida, lo cual es fundamental para el espíritu de la tecnología blockchain.
-2. **La razón fundamental de Core para ofrecer apuestas de Bitcoin sin custodia**
-   - **Mejora de la descentralización y la seguridad:** Core blockchain ofrece apuestas de Bitcoin sin custodia como un movimiento estratégico para mejorar su descentralización y seguridad. Al incorporar Bitcoin, que tiene una red sólida y bien establecida, en su mecanismo de consenso, Core puede aprovechar las características de descentralización y seguridad de Bitcoin.
+1. **Benefits for Bitcoin Holders from Non-Custodial Bitcoin Staking**
+   - **Maintaining Assets on Bitcoin:** By Non-Custodial Bitcoin Staking, Bitcoin holders have the unique opportunity to keep their assets securely on the Bitcoin network. This is significant because it allows them to retain their investment in what is widely regarded as the most decentralized and secure blockchain, often referred to as digital gold. In essence, they can continue to hold their Bitcoin, enjoying the security and reputation it offers, without needing to transfer their assets elsewhere.
+   - **Earning Core Tokens as Rewards:** Participating in Non-Custodial Bitcoin Staking offers an additional incentive: earning Core tokens. This is a way for Bitcoin holders to not only retain their Bitcoin assets but also to receive additional rewards in the form of Core tokens.
+   - **Social Responsibility in Decentralization:** By staking their Bitcoin, holders contribute to the decentralization of the Core blockchain. This is a form of social responsibility, as their participation helps in maintaining a diverse and distributed network, which is fundamental to the ethos of blockchain technology.
+2. **Core's Rationale Behind Offering Non-Custodial Bitcoin Staking**
+   - **Enhancing Decentralization and Security:** Core blockchain is offering Non-Custodial Bitcoin Staking as a strategic move to enhance its decentralization and security. By incorporating Bitcoin, which has a robust and well-established network, into its consensus mechanism, Core can leverage the decentralization and security features of Bitcoin.
 
-## Ventajas de la apuesta de Bitcoin sin custodia
+## Advantages of Non-Custodial Bitcoin Staking
 
-1. **Sin nuevos supuestos de confianza:** Los usuarios pueden apostar sus bitcoins sin sacarlos de la cadena de bloques de Bitcoin, manteniendo así la alta seguridad y confianza que conlleva la sólida infraestructura de Bitcoin.
-2. **Autocustodia y 100% seguro:** Los usuarios solo necesitan enviar ellos mismos la transacción de participación en la red Bitcoin y los activos de Bitcoin NO necesitan salir de la red Bitcoin en absoluto.
-3. **La tasa libre de riesgo de Bitcoin:** Al introducir cero nuevos supuestos de confianza, la apuesta de Bitcoin de Core desbloquea un rendimiento sin riesgo para los poseedores de Bitcoin.
-4. **Bitcoin-Nativity:** Al utilizar los bloqueos de tiempo absolutos nativos de Bitcoin, los participantes en apuestas de Bitcoin conservan la custodia total de su Bitcoin.
-5. **Generación de rendimiento:** Este mecanismo transforma Bitcoin en un activo que genera rendimiento, proporcionando a los participantes recompensas de tokens CORE y mejorando la utilidad de sus tenencias.
-6. **Integración de red:** La participación sin custodia de Bitcoin integra a los poseedores de Bitcoin en el mecanismo de consenso de Core, contribuyendo a la seguridad y descentralización de la red.
-7. **Emisión principal:** El sistema de recompensas ayuda a alinear los incentivos entre cadenas. **Emisión principal:** El sistema de recompensas ayuda a alinear los incentivos entre cadenas. El grupo de recompensas proviene de un sistema de recompensas de consenso compartido que integra las contribuciones tanto de los mineros de Bitcoin como de los apostadores de tokens CORE, optimizando así la distribución de recompensas para todos los participantes.
+1. **No New Trust Assumptions:** Users can stake their bitcoins without moving it off the Bitcoin blockchain, thereby maintaining the high security and trust that comes with Bitcoin's robust infrastructure.
+2. **Self custody and 100% secure:** Users only need to send themselves the staking transaction on the Bitcoin network and the Bitcoin assets DO NOT need to leave the Bitcoin network at all.
+3. **The Bitcoin Risk-Free Rate:** By introducing zero new trust assumptions, Core’s Bitcoin staking unlocks riskless yield for Bitcoin holders.
+4. **Bitcoin-Nativity:** By using Bitcoin’s native absolute time locks, Bitcoin stakers retain full custody of their Bitcoin.
+5. **Yield Generation:** This mechanism transforms Bitcoin into a yield-bearing asset, providing stakers with CORE token rewards and enhancing the utility of their holdings.
+6. **Network Integration:** Non-Custodial Bitcoin Staking integrates Bitcoin holders into Core’s consensus mechanism, contributing to the network’s security and decentralization.
+7. **Core Emission:** The reward system helps align cross-chain incentives. The reward pool comes from a shared consensus reward system that integrates the contributions of both Bitcoin miners and CORE token stakers, thereby optimizing the reward distribution for all participants. Additionally, the rewards are sustainable over the long-term, and will be distributed over a period of **81** years.
 
-## Cómo funciona la apuesta de Bitcoin sin custodia
+## How Non-Custodial Bitcoin Staking Works
 
-Con la apuesta de bitcoins sin custodia, Core incorpora a los poseedores de bitcoins como la tercera parte del consenso de Satoshi Plus. La metodología de Core para integrar los centros de participación de bitcoin en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo CLTV es una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que haya pasado un cierto momento. Este tiempo se puede definir en términos de una fecha y hora específicas o por la altura del bloque. En lugar de que los titulares cedan la custodia de sus bitcoins a apuestas externas, los apostadores en Core simplemente necesitan colocar sus bitcoins en bloqueos de tiempo CLTV como parte de una transacción, y la transacción puede diseñarse para devolver el resultado una vez transcurrido el período de tiempo. Dentro de esa transacción, los participantes deben incluir un script que contenga la misma información que los mineros de Bitcoin incluyen en sus bloques delegados:
+With the non-custodial bitcoin staking, Core incorporates bitcoin holders as the third part of Satoshi Plus consensus. Core's methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock are Bitcoin-native cryptographic feature that specify a condition under which the transaction output cannot be spent until a certain point in time has passed. This time can be defined in terms of a specific date and time or by block height. Rather than holders giving up custody of their bitcoins to external staking, stakers on Core merely need to place their bitcoins in CLTV timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks:
 
-1. La dirección del Core Validator al que el apostador quiere delegar su bitcoin.
-2. La dirección a la que el apostador desea que se envíen sus recompensas de tokens CORE.
+1. The address of the Core Validator the staker wants to delegate their bitcoin to.
+2. The address that the staker would like their CORE token rewards to be sent to.
 
-Los apostadores de Bitcoin obtienen un rendimiento de su bitcoin, que de otro modo sería pasivo, en forma de recompensas de tokens CORE, durante el tiempo que establezcan el bloqueo de tiempo (y, por lo tanto, durante el tiempo que deleguen su bitcoin para votar por los Validadores en la red Core). El resultado final es que miles de millones de dólares en valor de Bitcoin subutilizado se convertirán en productivos, remunerando a los interesados ​​y al mismo tiempo ampliando el alcance de la utilidad de Bitcoin.
+Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core network). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility.
 
-### Directrices para apostar/canjear Bitcoin
+### Guidelines for Staking/Redeeming Bitcoin
 
-Al apostar o canjear su Bitcoin, siga estas pautas para garantizar transacciones fluidas:
+When staking or redeeming your Bitcoin, please follow these guidelines to ensure smooth transactions:
 
-1. **Evite tarifas bajas de gasolina:**
-   - Recomendamos evitar tarifas de gas inferiores a la tasa actual del mercado.
-   - El uso de una tarifa de gasolina demasiado baja, especialmente durante períodos de congestión de la red, puede hacer que su transacción de Bitcoin tarde más tiempo (potencialmente días) en confirmarse.
-2. **Manejo de situaciones con tarifas bajas de gas:**
-   - Si su transacción de Bitcoin se retrasa debido a una baja tarifa de gasolina, considere usar un acelerador de transacciones para acelerar el proceso.
-   - Hay varios servicios de terceros disponibles; por ejemplo, el acelerador de transacciones gratuito viaBTC (al que se puede acceder [aquí](https://www.viabtc.com/tools/txaccelerator)).
-   - Por favor investigue y elija el servicio que mejor se adapte a sus necesidades.
+1. **Avoid Low Gas Fees:**
+   - We recommend avoiding gas fees lower than the current market rate.
+   - Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
+2. **Handling Low Gas Fee Situations:**
+   - If your Bitcoin transaction is delayed due to a low gas fee, consider using a transaction accelerator to speed up the process.
+   - There are several third-party services available; for example, the free viaBTC transaction accelerator (which can be accessed [here](https://www.viabtc.com/tools/txaccelerator)).
+   - Please research and choose a service that best fits your needs.
 
-Si sigue estas recomendaciones, podrá garantizar un proceso de apuesta y canje más eficiente para su Bitcoin.
+By following these recommendations, you can ensure a more efficient staking and redemption process for your Bitcoin.
 
-### Requisitos de elegibilidad
+### Requirements for Eligibility
 
-Core da la bienvenida a los poseedores de Bitcoin para que apuesten su Bitcoin en la red Bitcoin. Al votar por un validador de Core durante su transacción de participación de Bitcoin, desempeña un papel fundamental en la descentralización de Core, ganando tokens CORE como recompensas recurrentes.
+Core welcomes Bitcoin holders to stake their Bitcoin on the Bitcoin network. By voting for a Core validator during your Bitcoin staking transaction, you play a pivotal role in Core's decentralization, earning CORE tokens as recurring rewards.
 
-- Hay _requisitos mínimos_ tanto en **cantidad** como en **duración** para que la apuesta sea elegible en Core.
-  - Un usuario debe apostar al menos **0,01 Bitcoin** (menos las tarifas de transacción) durante al menos **10 días**.
+- There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core.
+  - A user should at least stake **0.01 Bitcoin** (less transaction fees) for at least **10 days**.
 
-### Flujo de trabajo de transacciones
+### Transaction Work Flow
 
-![flujo-de-stake-btc](../../../../static/img/btc-sating/btc-sating-flow.png)
+![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-flow.png)
 
-La implementación de Core de la participación nativa de Bitcoin no tiene ningún tipo de custodia, es decir, los usuarios pueden mantener sus activos de Bitcoin en la red Bitcoin sin desconectarlos antes de realizar la participación. Los usuarios deben realizar únicamente los siguientes pasos:
+Core's implementation of Bitcoin native staking is completely non-custodial, i.e., users can keep their Bitcoin assets on the Bitcoin network without bridging them out before staking. Users are required to perform only the following steps:
 
-- Envíe una transacción de Bitcoin a su propia dirección y bloquee la salida cuyo monto se pretende apostar en la cadena de bloques Core utilizando la función de bloqueo de tiempo nativo de Bitcoin. Además, la transacción también debe contener una salida "op_return" en la que los usuarios pueden designar la dirección del validador Core para apostar y una "dirección de recompensa" para recibir recompensas CORE. Para obtener detalles sobre cómo componer dicha transacción de participación, consulte el [diseño de transacción] (design.md).
+- Send a Bitcoin transaction to their own address, and lock up the output whose amount is intended to stake on Core blockchain by using the Bitcoin native timelock feature. Besides, the transaction should also contain an `op_return` output in which users can designate the Core validator address to stake to and a `reward address` to receive CORE rewards. For details to compose such a staking transaction, please refer to the [transaction design](design.md).
 
-- (_Opcional_) Una vez confirmada la transacción en la red Bitcoin, los usuarios pueden recuperar los datos de la transacción y enviarlos a la cadena de bloques Core. Este paso es opcional, si los usuarios redactan la transacción en un formato estándar como lo sugiere Core (definido en [diseño de transacción](design.md)). La infraestructura Core detectará la transacción de participación y la enviará a Core blockchain para los usuarios.
+- (_Optional_) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit to the Core blockchain. This step is optional, if users compose the transaction in a standard format as suggested by Core (defined in the [transaction design](design.md)). The Core infrastructure will detect the staking transaction and submit it to Core blockchain for users.
 
-- Cuando expira el bloqueo de tiempo, los usuarios pueden gastar el UTXO utilizando el script de canje correspondiente. Les resulta fácil crear el script de canje a partir de la transacción de apuesta original.
+- When the timelock expires, users can spend the UTXO using the corresponding redeem script. It is easy for them to build the redeem script from the original staking transaction.
 
-## Proceso paso a paso
+## Step by Step Process
 
-1. **Bloqueo de Bitcoin:** Los poseedores de Bitcoin inician el proceso de participación bloqueando su Bitcoin en un bloqueo de tiempo absoluto en la cadena de bloques de Bitcoin.
+1. **Locking Bitcoin:** Bitcoin holders initiate the staking process by locking their Bitcoin in an absolute time lock on the Bitcoin blockchain.
 
-2. **Incluyendo información de la delegación:** Dentro de la transacción de bloqueo, los participantes incluyen:
+2. **Including Delegation Information:** Within the locking transaction, stakers include:
 
-3. **Dirección del Validador Central:** La dirección del Validador Central al que delegar su Bitcoin.
+3. **Core Validator Address:** The address of the Core Validator to delegate their Bitcoin to.
 
-4. **Dirección de recompensa del token CORE:** La dirección a la que desean que se envíen las recompensas del token CORE.
+4. **CORE Token Reward Address:** The address where they want their CORE token rewards sent.
 
-5. **Delegar Bitcoin:** Esta acción delega el Bitcoin del apostador al validador Core elegido durante un período específico, durante el cual el Bitcoin no se puede gastar.
+5. **Delegating Bitcoin:** This action delegates the staker’s Bitcoin to the chosen Core validator for a specified period, during which the Bitcoin cannot be spent.
 
-6. **Elección de validador:** Core utiliza Bitcoin delegado para ayudar a elegir validadores. Los validadores con Bitcoin más delegado tienen más posibilidades de ser elegidos para el conjunto de validadores.
+6. **Validator Election:** Core uses the delegated Bitcoin to help elect validators. Validators with higher delegated Bitcoin have a better chance of being elected to the validator set.
 
-7. **Obtención de recompensas:** Los participantes en apuestas de Bitcoin obtienen recompensas en tokens CORE durante el período de bloqueo, según el rendimiento del validador y la cantidad de Bitcoin apostada.
+7. **Earning Rewards:** Bitcoin stakers earn CORE token rewards for the duration of the lock period, based on the validator's performance and the amount of Bitcoin staked.
 
-8. **Desbloqueo de Bitcoin:** Después de que expire el bloqueo de tiempo, el Bitcoin apostado permanece en la dirección del apostador pero permanece bloqueado. Para recuperar el acceso y poder gastar su BTC, el apostador debe canjearlo una vez finalizado el período de bloqueo.
+8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
 
 ## Conclusion
 
-La participación sin custodia de Bitcoin transforma el activo de Bitcoin de una reserva de valor pasiva a un activo activo que genera rendimiento y proporciona seguridad. La participación en Bitcoin permite a los poseedores de Bitcoin obtener la tasa libre de riesgo de Bitcoin y al mismo tiempo contribuye a la seguridad de una plataforma de contrato inteligente diseñada para desbloquear más casos de uso de activos de Bitcoin.
+Non-Custodial Bitcoin Staking transforms the Bitcoin asset from a passive Store of Value into an active, yield-bearing, and security-providing asset. Bitcoin staking allows Bitcoin holders to earn the Bitcoin Risk-Free Rate while also contributing to the security of a smart contract platform designed to unlock more Bitcoin asset use-cases.
