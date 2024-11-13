@@ -1,68 +1,68 @@
 ---
-sidebar_label: Configuration des Nœuds RPC
+sidebar_label: RPC Node Configuration
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds RPC
+# RPC Node Configuration
 
 ---
 
-Les nœuds RPC (Remote Procedure Call) sur le réseau Core jouent un rôle essentiel en facilitant l'interaction entre les applications externes et la blockchain Core. Ils servent d'interface à travers laquelle les développeurs et les utilisateurs peuvent interroger et interagir avec la blockchain, ce qui les rend indispensables pour le bon fonctionnement des applications décentralisées (DApps) et d'autres services basés sur la blockchain.
+RPC (Remote Procedure Call) nodes on the Core network play a crucial role in facilitating interaction between external applications and the Core blockchain. They serve as the interface through which developers and users can query and interact with the blockchain, making them essential for the functioning of decentralized applications (DApps) and other blockchain services.
 
-## Requis Systèmes
+## System Requirements
 
-Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires pour configurer un nœud RPC sur le réseau Core.
+There are several system requirements, both software and hardware, for setting up a RPC node on the Core network.
 
-### Logiciel
+### Software
 
-- Actuellement, un nœud d'archive Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- Currently, a Core RPc Node can only run on **Mac OS X** or on the **Linux** operating systems.
 
-### Matériel
+### Hardware
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
+Core nodes perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Each type of Core node has specific hardware requirements based on their expected needs.
 
-#### Spécifications Matérielles pour les Nœuds RPC du Testnet
+#### Testnet RPC Node Hardware Specifications
 
-Pour les nœuds RPC sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+For RPC Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                                                  |
-| RAM              | 16 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
+| Requirements   | Details                                                                                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| CPU            | 8 CPU cores                                                                                                                                                          |
+| RAM            | 16 gigabytes                                                                                                                                                         |
+| Internet Speed | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                                                              |
 
-#### Spécifications Matérielles pour les Nœuds RPC du Mainnet
+#### Mainnet RPC Node Hardware Specifications
 
-Pour les nœuds RPC sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+For Sanpshot Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 16 cœurs CPU                                                                                                                                 |
-| RAM              | 32 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
+| Requirements   | Details                                                                                                                                                              |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| CPU            | 16 CPU cores                                                                                                                                                         |
+| RAM            | 32 gigabytes                                                                                                                                                         |
+| Internet Speed | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                                                              |
 
-## Exécution d'un Nœud RPC
+## Running RPC Node
 
-### Activation du Port HTTP Entrant
+### Enabling HTTP Inbound Port
 
-Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` sur le port **8575** dans les paramètres du pare-feu. Le port **8575** est défini comme port par défaut. Vous pouvez modifier les configurations dans `config.toml`.
+If you are running an RPC node, you need to enable `HTTP` inbound rules on port **8575** in the firewall settings. Port **8575** is set as the default port. You can change the configurations in `config.toml`.
 
-### Compilation et Exécution
+### Build and Run
 
-1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your RPC full node, running your RPC full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2\. Download the node binary from the [releases page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. The node binary includes the relevant mainnet and testnet configuration files. This is the [latest version](https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+3\. Write the genesis state locally by executing the following command from your project directory:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-Vous devriez voir le message suivant :
+You should see the following output:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -76,13 +76,13 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Votre nœud RPC complet est prêt, lançons-le !
+4\. Our RPC full node is ready, let's start running it!
 
-Si vous envisagez d'exécuter un nœud RPC, vous pouvez simplement exécuter la commande `geth` suivante :
+If you plan to run a RPC node, you can just run the following `geth` command directly:
 
 ```bash
 ## start a RPC node
 geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=full --rpc.allow-unprotected-txs
 ```
 
-5\. Pendant que votre nœud RPC complet fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5\. As our RPC full node runs, we can monitor its logs to make sure that everything is operating correctly. The log file is located at `./node/logs/core.log` by default, but can be changed to another location if desired.
