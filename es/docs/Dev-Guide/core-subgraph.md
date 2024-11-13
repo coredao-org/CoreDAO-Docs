@@ -1,88 +1,87 @@
 ---
-sidebar_label: Subgrafo Core
+sidebar_label: Core Subgraph
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Subgrafo Core usando GraphQL
+# Core Subgraph using GraphQL
 
 ---
 
-Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos de la cadena de bloques Core, procesarlos y almacenarlos para su consumo a través de GraphQL. Echemos un vistazo a cómo podemos crear e implementar esta poderosa herramienta.
+Developers can use a self-hosted subgraph to extract data from the Core blockchain, processing and storing it for consumption via GraphQL. Let's take a look at how we can create and deploy this powerful tool.
 
-### URL importantes
+### Important URLs
 
-Usaremos algunas URL estándar a lo largo de esta guía, que será útil revisar antes de comenzar.
+We'll be using some standard URLs throughout this guide, which it’ll help to review before getting started.
 
-#### Red principal
+#### MainNet
 
-<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>URL de control de estado</strong><br/>><em>https://thegraph-is.coredao.org</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-#### Red de prueba
+#### TestNet
 
-<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>URL de IPFS</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>URL de consulta HTTP</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>URL de control de estado</strong><br/>><em>https://thegraph-sub.test.btcs.network</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-### Pasos generales de configuración del subgrafo
+### General Subgraph Setup Steps
 
-#### Crear repositorio
+#### Create Repository
 
-Para crear su repositorio de subgrafos, siga la [guía oficial de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). Para implementar en la red Core Graph, asegúrese de configurar el nombre de su red en `subgraph.yaml` como núcleo. Dependiendo de su subgrafo, es posible que haya algunos cambios más que realizar Encontrará detalles adicionales en la sección de ejemplos completa a continuación.
+To create your subgraph repository, follow the[ official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). In order to deploy onto the Core graph network, make sure to set your network name in `subgraph.yaml` to core. Depending on your subgraph, there may be a few more changes to make. You’ll find additional details in the full example section below.
 
-#### Crear e implementar
+#### Create and Deploy
 
-Para crear e implementar su subgrafo, ejecute los siguientes comandos en el repositorio de su proyecto de subgrafo.
+To create and deploy your subgraph, execute the following commands in your subgraph project repository.
 
 ```bash
-# Crear subgraph
+# Create subgraph
 graph create your-subgraph-name --node https://thegraph.coredao.org/deploy/
 
-# Deployar subgraph
+# Deploy subgraph
 graph deploy your-subgraph-name --node https://thegraph.coredao.org/deploy/ --ipfs https://thegraph.coredao.org/ipfs/
 ```
 
-El comando `graph depoy` debería devolver la URL de consulta HTTP para su subgrafo, que puede integrar en su aplicación según corresponda.
+The `graph deploy` command should return the HTTP query URL for your subgraph, which you can integrate into your application as appropriate.
 
-### Ejemplo: implementación de un subgrafo Uniswap V2
+### Example: Deploying a Uniswap V2 subgraph
 
-Ahora que entendemos el proceso, veamos un ejemplo completo configurando un subgrafo Uniswap V2 en Core.
+Now that we understand the process, let's walk through a full example by setting up a Uniswap V2 subgraph on Core.&#x20
 
-Primero, clone el [repositorio de subgrafos] de Uniswap V2 (https://github.com/Uniswap/v2-subgraph), navegue hasta la carpeta del proyecto y luego ejecute los siguientes comandos desde ese directorio:
+First, clone the Uniswap V2 [subgraph repository](https://github.com/Uniswap/v2-subgraph), navigate to the project folder, then execute the following commands from that directory:
 
 ```
-# Instalar dependencias con npm (o hilo)
+# Install dependencies with npm (or yarn)
 npm install
 
-# Generar código de subgrafo
+# Generate subgraph code
 npm run codegen
 ```
 
-Ahora haremos algunos cambios necesarios en el
-_subgraph.yaml_ and _helpers.ts_ files:
+Now we'll make a few required changes to the _subgraph.yaml_ and _helpers.ts_ files:
 
 - _subgraph.yaml_:
-  - Cambie el nombre de la red a "core" en las líneas 9 y 37.
-  - Actualice la dirección de fábrica en la línea 11.
-  - Actualice `startBlock` en la línea 13 a una altura de bloque razonable (la altura del bloque actual está disponible [aquí](https://scan.coredao.org/)).
+  - Change network name to `core` on lines 9 and 37.
+  - Update the factory address on line 11.
+  - Update the `startBlock` on line 13 to a reasonable block height (current block height available [here](https://scan.coredao.org/)).
 - _src/mappings/helpers.ts_:
-  - Actualice la dirección de fábrica en la línea 11.
+  - Update the factory address on line 11.
 
-Finalmente, ejecutaremos los comandos de creación e implementación. Para evitar problemas de compatibilidad, usemos el graph-cli instalado en el proyecto (en lugar de la versión global) anteponiendo el comando `graph` con `./node_modules/.bin/`.
+Finally, we'll run the create and deploy commands. In order to avoid compatibility issues, let's use the graph-cli installed in the project (instead of the global version) by prefixing the `graph` command with `./node_modules/.bin/`.
 
 ```bash
-# Crea un nuevo subgrafo llamado uniswap-4-test
+# Create a new subgraph called uniswap-4-test
 ./node_modules/.bin/graph create uniswap-4-test --node https://thegraph.coredao.org/deploy/
 
-# Implementar el subgrafo uniswap-4-test
+# Deploy the uniswap-4-test subgraph
 ./node_modules/.bin/graph deploy uniswap-4-test --node https://thegraph.coredao.org/deploy/ --ipfs https://thegraph.coredao.org/ipfs/
 
-# El comando de implementación debería imprimir una URL de consulta HTTP similar a:
+# The deploy command should print an HTTP query URL similar to:
 # https://thegraph.coredao.org/subgraphs/name/uniswap-4-test
 ```
 
-¡Bien hecho, tu subgrafo está implementado! Ahora puede integrar la URL de consulta HTTP impresa por el comando de implementación en su sitio web y utilizarla para consultar datos.
+Well done, your subgraph is deployed! Now you can integrate the HTTP query URL printed by the deploy command into your website and use it to query data.
 
 ### Authorization
 
-Para evitar que otros sobrescriban su subgrafo, contáctenos en [discord](https://discord.com/invite/coredaoofficial) para obtener una clave de autorización.\
+To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.\
 \
-Si está realizando pruebas con TestNet Graph, aquí hay un token de acceso para fines de prueba generales: **a9a79c2aea604bfaa861ff93d46d0d11**.
+If you are testing against the TestNet Graph, here is an access token for general testing purpose: **a9a79c2aea604bfaa861ff93d46d0d11**.
