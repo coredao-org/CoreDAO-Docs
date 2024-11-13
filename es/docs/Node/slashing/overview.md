@@ -1,27 +1,27 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Reglamento del validador
+# Validator Regulation
 
-**Recortar** y **encarcelar** son los dos mecanismos básicos que utiliza Core Chain para desincentivar el mal comportamiento de los validadores, y comprender cómo funcionan contribuirá en gran medida a que la estructura de incentivos en Core Chain sea más comprensible.
+**Slashing** and **jailing** are the two basic mechanisms Core Chain uses to disincentivize validator misbehavior, and understanding how they work will go a long way towards making the incentive structure in Core Chain more comprehensible.
 
-## Corte y encarcelamiento
+## Slashing and Jailing
 
-"Recortar" se refiere a recortar las recompensas que un validador habría recibido a cambio de minar bloques, o a recortar el depósito de tokens CORE que hace un nodo para convertirse en un validador en primer lugar. La severidad del castigo cortante aumenta en proporción al mal comportamiento del validador.
+"Slashing" refers to cutting either the rewards a validator would have received in exchange for mining blocks, or to slashing the deposit of CORE tokens that a node makes in order to become a validator in the first place. The severity of the slashing punishment is scaled up in proportion to the validator’s misbehavior.
 
-Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección. Si un nodo de validación no logra extraer **50 bloques** seguidos, las recompensas del token CORE que el validador ha acumulado hasta el momento se reducen por completo. Esto significa que importa cuando un validador no logra extraer **50** bloques consecutivos. Si fallan en los primeros **50** bloques de una ronda, entregan solo una pequeña cantidad de recompensas acumuladas, pero si fallan en los últimos **50** bloques de la ronda, entregan todo lo que han ganado. Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
+Slashing penalties are generally incurred because a node fails to successfully produce a block during its designated turn in the **round-robin block-mining** procedure as described in the [Validator Election](../validator/validator-election.md) section. If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely. This means it matters when a validator fails to mine **50** consecutive blocks. If they fail on the first **50** blocks of a round they surrender only a small amount of accumulated rewards, but if they fail on the last **50** blocks of the round, they surrender everything they’ve earned. If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set.
 
-## Sugerencias de barra diagonal
+## Slash Sugggestions
 
-Los verificadores son responsables de informar comportamientos maliciosos en la red mediante sugerencias de barras diagonales. Cualquiera puede enviar sugerencias de barras diagonales y están diseñadas para castigar a los actores malintencionados. La presentación requiere pruebas de irregularidades, pero si las acusaciones resultan ciertas, las recompensas obtenidas superan con creces los costos.
+Verifiers are responsible for reporting malicious behaviors on the network through slash suggestions. Slash suggestions can be submitted by anyone, and are designed to punish malicious actors. The submission requires evidence of wrongdoing, but if the allegations prove true, the rewards earned greatly exceed the costs.
 
-Al igual que con las sugerencias de barra diagonal, los verificadores deben informar la doble firma y también deben presentar evidencia de esta actividad. Si sus acusaciones se confirman, serán recompensados ​​por mantener segura la red.
+As with slash suggestions, verifiers are charged with reporting double signing, and also have to submit evidence of this activity. If their allegations are borne out, they are rewarded for keeping the network safe.
 
-Mientras producen bloques, los validadores Core existentes verifican periódicamente si algún validador actual ha sido encarcelado. Si es así, actualizarán el conjunto de validadores después de una época (es decir, después de 10 minutos). El encarcelamiento está diseñado para excluir a los validadores que se portan mal de las actividades de consenso con el fin de mejorar la seguridad de la red y mantener estable el TPS.
+While producing blocks, the existing Core validators periodically check whether any current validator has been jailed. If so, they will update the validator set after an epoch (i.e. after 10 minutes). Jailing is designed to exclude misbehaving validators from consensus activities in order to enhance network security and keep TPS stable.
 
-## Penalización por doble fichaje
+## Penalty for Double Signing
 
-Hay una manera de prohibir permanentemente a un validador de la red, y es mediante "_doble firma_", es decir, firmar dos bloques diferentes a la misma altura de bloque. Mientras que la falta de disponibilidad podría ser el resultado de una mala conexión de red, la doble firma es una fuerte evidencia de mala conducta intencional. En teoría, es posible que se produzca una doble firma benigna si un validador actualiza la versión de la red que está ejecutando y olvida actualizar su dirección. Asegúrese de ser diligente al realizar actualizaciones de red. Los validadores sorprendidos con doble firma entregan todas las recompensas, el 100% de su depósito de validador y, a partir de entonces, se les prohíbe participar en bloques de minería.
+There is a way for a validator to be permanently banned from the network, and that’s by “_double signing_”, i.e. signing two different blocks at an equal block height. Whereas unavailability could plausibly be the result of a bad network connection, double signing is strong evidence of willful malfeasance. Theoretically, it is possible for benign double signing to occur, if a validator upgrades the version of the network they’re running and forgets to update their address. Make sure you’re diligent when performing network updates. Validators caught double signing surrender all rewards, 100% of their validator deposit, and are thereafter barred from participating in mining blocks.
