@@ -1,0 +1,5 @@
+files:
+  - source: /docs/**/*
+    ignore:
+      - /docs/CNAME
+    translation: /%two_letters_code%/%original_path%/%original_file_name%
