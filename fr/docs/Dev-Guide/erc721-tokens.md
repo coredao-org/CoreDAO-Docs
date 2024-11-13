@@ -1,17 +1,17 @@
 ---
-sidebar_label: Tokens ERC-721
+sidebar_label: ERC-721 Tokens
 hide_table_of_contents: false
 sidebar_position: 2
-description: Tokens ERC-721 sur Core Chain
+description: ERC-721 on Core Chain
 ---
 
-# Tokens ERC721
+# ERC721 Tokens
 
 ---
 
-ERC-721 est un standard pour les tokens non fongibles, ce qui signifie que chaque token est vérifiable et unique par rapport aux autres tokens, et cette norme est devenue dominante pour les NFTs (tokens non fongibles) sur la chaîne. Tous les ERC721 ont un`tokenId` unique qui les différencie de tous les autres tokens de l'ensemble.
+ERC721 is a standard for non-fungible tokens, meaning that each token is verifiably unique from all other tokens, and has become the dominant standard for on-chain NFTs. All ERC721s have a unique `tokenId` that differentiates them from every other token in the set.
 
-Un token compatible ERC721 doit implémenter toutes les fonctions et événements suivants :
+An ERC721-compatible token must implement all the following functions and events:
 
 ```javascript
     function balanceOf(address _owner) external view returns (uint256);
@@ -31,15 +31,15 @@ Un token compatible ERC721 doit implémenter toutes les fonctions et événement
     event ApprovalForAll(address indexed _owner, address indexed _operator, bool _approved);
 ```
 
-## Bonnes pratiques
+## Best Practices
 
-Nous recommandons d'utiliser l'implémentation ERC721 populaire et fiable d'OpenZeppelin dans votre projet. Le code source peut être trouvé dans [ERC721.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol). Vous pouvez utiliser l'implémentation ERC-721 d'OpenZeppelin dans votre projet en suivant les étapes suivantes :
+We recommend using OpenZeppelin's popular and trusted ERC721 implementation in your project. The source code can be found at[ ERC721.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol). You can use OpenZeppelin's ERC721 implementation in your project through the following steps:
 
-1\. Installez la bibliothèque OpenZeppelin dans votre projet en exécutant la commande suivante :
+1\. Install the OpenZeppelin library in your project by running the command:
 
 `npm install @openzeppelin/contracts`
 
-2\. Une fois installée, vous pouvez utiliser l'implémentation ERC-721 de la bibliothèque en l'important comme suit :
+2\. Once installed, you can use the ERC721 implementation in the library by importing it like this:
 
 ```javascript
 // contracts/GameItem.sol
@@ -69,9 +69,9 @@ contract GameItem is ERC721URIStorage {
 }
 ```
 
-Pour plus d'informations sur l'implémentation ERC-721 d'OpenZeppelin, veuillez consulter [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721).
+For more information on OpenZeppelin ERC-20 implementation, please read[ ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
-#### Références
+#### References
 
 - [https://ethereum.org/en/developers/docs/standards/tokens/erc-721/](https://ethereum.org/en/developers/docs/standards/tokens/erc-721/)
 - [https://docs.openzeppelin.com/contracts/4.x/erc721](https://docs.openzeppelin.com/contracts/4.x/erc721)
