@@ -96,7 +96,7 @@ const config = {
       announcementBar: {
         id: 'latest_updates',
         content:
-          '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@core_dao/lstbtc-is-coming-sunsetting-corebtc-486d6744c3b9">LstBTC is Coming! Sunsetting coreBTC.</a> Redeem your assets at the earliest⚠️ ',
+        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@core_dao/lstbtc-is-coming-sunsetting-corebtc-486d6744c3b9">LstBTC Launching Soon!</a> coreBTC is sunsetting — redeem your assets now to secure your holdings. ⚠️',
         backgroundColor: '#f96e34',
         textColor: '#FBFCFC',
         isCloseable: false,

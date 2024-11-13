@@ -7,22 +7,25 @@ sidebar_position: 2
 # Contract Verification
 ---
 
-In the interest of transparency, we recommend verifying all contracts on [Core Scan](https://scan.coredao.org/). Let’s check out a few of the common methods for verifying contracts, via the web, API, and Hardhat. 
+To promote transparency, it is considered best practice to verify all deployed contracts on the Core blockchain. While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. This document guides you through the most commonly used methods for contract verification: the Core Scan web tool, the Core REST API, and the Hardhat Verification plugin. 
 
 :::note
-Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md), to do so ensure that the `evmVersion` parameter is set to `paris` under the solidity compiler settings.
+Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris`  within the Solidity compiler settings.
 :::
 
 ## Web Verification via Core Scan
 
-Web verification is the most commonly used smart contract verification strategy. After deploying your smart contract to Core, you can use its source code to verify it on Core Scan.
+Web verification is the most commonly used smart contract verification strategy. After deploying your smart contract onto Core blockchain, you can use its source code to verify it on the Core Scan.
 
-1. Search for the contract by address on [Core Scan](https://scan.test.btcs.network).
-2. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
+1. Navigate to Core Scan website. 
+  * [For Mainnet](https://scan.coredao.org/)
+  * [For Testnet](https://scan.test.btcs.network)
+2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
+3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 
-3\. Fill in the required verification information on the page, specifically:
+4\. Fill in the required verification information on the page, specifically:
 
 * Contract address;
 * Compiler type: for simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, select the `Standard Json` compiler type;
@@ -31,15 +34,15 @@ Web verification is the most commonly used smart contract verification strategy.
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 
-4\. On the next page, fill in the contract's Solidity source code.
+5\. On the next page, fill in the contract's Solidity source code.
 
-If your contract has constructor parameters, we recommend adding them in the `Constructor Arguments` field, although it’s not mandatory. The constructor parameters should be formatted as ABI-encoded bytes. Remix and other tools can generate these for you.
+If your contract has constructor parameters, it is recommended to specify them in the `Constructor Arguments` field, although it’s not mandatory. The constructor parameters should be formatted as ABI-encoded bytes. [Remix](https://remix.ethereum.org/) and other tools can generate these for you.
 
 If you enabled optimization during contract compilation, select "Yes" for the `Optimization` field.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
 
-5\. Click on **Verify and Publish** to finish the process.
+6\. Click on **Verify and Publish** to finish the process.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
 
@@ -47,7 +50,7 @@ Now your verified contract on Core Scan should look like this:
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-5.avif)
 
-## API Verification
+## Core REST API Verification
 
 You can find the guide to using the Core API to verify contracts [here](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls you must register on Core Scan and generate an API key.
 
@@ -139,6 +142,6 @@ module.exports = {
 
 ## Known Limitations
 
-* Currently Core only supports solc compiler versions up to 0.8.19.
+* Currently Core only supports solidity compiler versions up to 0.8.19.
 * Libraries are not supported using API verifications.
 * If you run into issues verifying very large (1000+ lines) single file contracts, we recommend switching to `Standard JSON` format for verification.
