@@ -1,45 +1,45 @@
 ---
-sidebar_label: Démarrage rapide
+sidebar_label: Quickstart
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Démarrage rapide
+# Quickstart
 
 ---
 
-#### _Accédez aux outils et ressources de Core_
+#### _Access Core's tools and resources_
 
-### Ressources du Testnet Core
+### Core Testnet Resources
 
-- **[Explorateur de blocs](https://scan.test.btcs.network/):** Recherchez et consultez les transactions, comptes, blocs, et bien plus.
+- **[Block Explorer](https://scan.test.btcs.network/):** Search and review transactions, accounts, blocks, and more.
 
-- **[RPC Endpoints](https://chainlist.org/chain/1115):** Points d’accès RPC pour le service RPC du Testnet Core.
+- **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
 
-- **[Faucet Core](https://scan.test.btcs.network/faucet):** Approvisionnez votre adresse Testnet avec des tCORE.
+- **[Core Faucet](https://scan.test.btcs.network/faucet):** Fund your testnet address with tCORE.
 
-- **[Staking](https://stake.test.btcs.network/):** Site web de staking de tCORE.
+- **[Staking](https://stake.test.btcs.network/):** tCORE staking website.
 
-- **[Gnosis Safe](https://safe.test.btcs.network/welcome):** Gestion multi-signature sécurisée des actifs numériques.
+- **[Gnosis Safe](https://safe.test.btcs.network/welcome):** Secure multi-sig management of digital assets.
 
-### Ressources Générales
+### General Resources
 
-- **[Core DAO GitHub](https://github.com/coredao-org):** Le GitHub officiel de Core, incluant la base de code blockchain et plus encore.
+- **[Core DAO GitHub](https://github.com/coredao-org):** The official Core GitHub, including the blockchain codebase and more.
 
-### Ressources du Mainnet Core
+### Core Mainnet Resources
 
-- **[Explorateur de blocs](https://scan.coredao.org/):** Recherchez et consultez les transactions, comptes, blocs, et bien plus.
+- **[Block Explorer](https://scan.coredao.org/):** Search and review transactions, accounts, blocks, and more.
 
-- **[RPC Endpoints](https://chainlist.org/chain/1116):** Points d’accès RPC pour le service RPC du Mainnet Core.
+- **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
 
-- **[Core Bridge](https://bridge.coredao.org/):** Pont officiel pour l'écosystème Core (plus de détails dans les ressources de Core Bridge).
+- **[Core Bridge](https://bridge.coredao.org/):** Official bridge for the Core ecosystem (more details in Core Bridge Resources).
 
-- **[Core Staking](https://stake.coredao.org/):** Site web officiel pour le staking de CORE et BTC.
+- **[Core Staking](https://stake.coredao.org/):** Core's official website for staking CORE and BTC.
 
-- **[Web3 Provider](https://cloud.infstones.com/login):** Infrastructure API évolutive fournie par InfStones.
+- **[Web3 Provider](https://cloud.infstones.com/login):** Scalable API infrastructure provided by InfStones.
 
-- **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** Outil web pour la vérification de contrats (guide ici).
+- **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** Web tool for contract verification (guide here).
 
-- **[Gnosis Safe](https://safe.coredao.org/welcome):** Gestion multi-signature sécurisée des actifs numériques.
+- **[Gnosis Safe](https://safe.coredao.org/welcome):** Secure multi-sig management of digital assets.
 
-- **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** Contrat intelligent officiel pour le token wrapped CORE.
+- **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** Official wrapped CORE token smart contract.
