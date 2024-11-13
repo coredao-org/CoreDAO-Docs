@@ -1,69 +1,69 @@
 ---
-sidebar_label: Prueba de trabajo delegada
+sidebar_label: Delegated Proof of Work
 hide_table_of_contents: false
 sidebar_position: 2
-description: Aprovechando DPoW en Satoshi Plus
+description: Leveraging DPoW in Satoshi Plus
 ---
 
-# Prueba de trabajo delegada (DPoW)
+# Delegated Proof of Work (DPoW)
 
 ---
 
 ##
 
-# Prueba de trabajo delegada (DPoW) en el mecanismo de consenso Satoshi Plus
+# Delegated Proof of Work (DPoW) in the Satoshi Plus Consensus Mechanism
 
 ---
 
-## Descripción general
+## Overview
 
-La prueba de trabajo delegada (DPoW) es un elemento crucial del mecanismo de consenso Satoshi Plus de Core. Este sistema aprovecha la sólida seguridad de la minería de Bitcoin, integrándola en la cadena de bloques Core para mejorar la seguridad e incentivar la participación sin costos adicionales. A continuación se ofrece una descripción detallada de cómo funciona DPoW y su importancia.
+Delegated Proof of Work (DPoW) is a crucial element of Core's Satoshi Plus consensus mechanism. This system leverages the robust security of Bitcoin mining, integrating it into the Core blockchain to enhance security and incentivize participation without additional costs. Here’s a detailed look at how DPoW operates and its significance.
 
-DPoW permite a los mineros de Bitcoin obtener una recompensa de segundo bloque además de sus recompensas de Bitcoin mientras protegen la cadena de bloques Core, creando una relación simbiótica que beneficia a ambas redes.
+DPoW enables Bitcoin miners to earn a second block reward on top of their Bitcoin rewards while securing the Core blockchain, creating a symbiotic relationship that benefits both networks.
 
 ![dpow-core-architechture](../../../../static/img/staoshi-plus/dpow.jpg)
 
-## Cómo funciona DPoW en Satoshi Plus
+## How DPoW Works in Satoshi Plus
 
-En la red Bitcoin, los mineros de Bitcoin generan poder hash para proteger la red Bitcoin, validar transacciones y ganar recompensas de Bitcoin. Para igualar sus recompensas con el tiempo, los mineros de Bitcoin a menudo aportan su poder de hash a los grupos de minería, que utilizan el poder de hash agregado para aumentar las posibilidades generales del grupo de extraer un bloque de Bitcoin y recibir Bitcoin a cambio. DPoW integra la minería de Bitcoin directamente en el protocolo de seguridad de Core Chain a través de un sistema de delegación. Aquí hay un desglose paso a paso de su funcionamiento:
+On the Bitcoin network, Bitcoin miners generate hash power to secure the Bitcoin network, validate transactions, and earn Bitcoin rewards. In order to even their rewards out over time, Bitcoin miners often contribute their hash power to mining pools, which use the aggregated hash power to increase the pool’s overall chances of mining a Bitcoin block and receiving Bitcoin in return. DPoW integrates Bitcoin mining directly into the Core Chain's security protocol through a delegation system. Here’s a step-by-step breakdown of its operation:
 
-1. **Integración minera**: los mineros de Bitcoin continúan con sus actividades mineras estándar, pero con el paso adicional de señalar su apoyo a Core Chain. Esto se logra incluyendo una transacción especial en los bloques de Bitcoin que extraen, que especifica el Core Validator que desean admitir.
+1. **Mining Integration**: Bitcoin miners continue their standard mining activities but with the additional step of signaling their support for Core Chain. This is achieved by including a special transaction in the Bitcoin blocks they mine, which specifies the Core Validator they wish to support.
 
-2. **Metadatos en bloques de Bitcoin**: en el bloque de Bitcoin minado, los mineros agregan metadatos en el campo `op_return`. Estos metadatos incluyen la dirección del Core Validator y la dirección para recibir recompensas de tokens CORE, delegando efectivamente una parte de su poder de hash a la red Core Chain.
+2. **Metadata in Bitcoin Blocks**: In the mined Bitcoin block, miners add metadata in the `op_return` field. This metadata includes the address of the Core Validator and the address for receiving CORE token rewards, effectively delegating a portion of their hashing power to the Core Chain network.
 
-3. **Soporte de validador**: al incluir esta información, los mineros delegan su poder computacional a los validadores en la cadena central. Estos Validadores utilizan el poder delegado para participar en la versión de validación y creación de bloques de la Core Chain.
+3. **Validator Support**: By including this information, miners delegate their computational power to Validators on the Core Chain. These Validators use the delegated power to participate in the Core Chain's version of block validation and creation.
 
-4. **Retransmisores**: Los encabezados de los bloques de Bitcoin llegan a Core Chain a través de los retransmisores de Core Chain. Cada repetidor ejecuta un cliente ligero en cadena (o utiliza un servicio existente similar) que sincroniza los bloques extraídos por el grupo de minería de Bitcoin con la red Core. Durante una ronda de 1 día, la red Core calcula el DPoW para cada validador contando la cantidad de bloques que los mineros delegaron a cada validador una semana antes. Si la ronda ocurre un jueves, por ejemplo, Core tabulará el poder de hash delegado a cada validador contando los bloques del jueves pasado.
+4. **Relayers**: The Bitcoin block headers make their way to Core Chain through Core Chain’s relayers. Each relayer runs an on-chain light client (or utilizes a similar, existing service) which syncs the blocks mined by the Bitcoin mining pool with the Core network. During a 1-day round, the Core network calculates the DPoW for each validator by counting the number of blocks the miners delegated to each validator one week prior. If the round occurs on a Thursday, for example, Core will tabulate the hash power delegated to each validator by counting blocks from last Thursday.
 
-5. **Mecanismo de recompensa**: a cambio de su contribución, los mineros reciben recompensas adicionales en forma de tokens CORE, además de las recompensas habituales de la minería de Bitcoin. Este sistema de doble recompensa incentiva a los mineros a participar en el proceso DPoW sin necesidad de desviar recursos de la minería de Bitcoin.
+5. **Reward Mechanism**: In return for their contribution, miners receive additional rewards in the form of CORE tokens, on top of the usual Bitcoin mining rewards. This dual-reward system incentivizes miners to participate in the DPoW process without needing to divert resources away from Bitcoin mining.
 
-## Proceso paso a paso
+## Step by Step Process
 
-1. **Extracción de bloques de Bitcoin:** Los mineros de Bitcoin continúan con su función principal de extraer bloques en la red de Bitcoin mediante Prueba de trabajo (PoW).
+1. **Mining Bitcoin Blocks:** Bitcoin miners continue their primary role of mining blocks on the Bitcoin network using Proof of Work (PoW).
 
-2. **Incluyendo información de delegación:** Los mineros agregan dos datos adicionales en el campo op_return de la transacción de coinbase:
+2. **Including Delegation Information:** Miners add two additional pieces of information in the op_return field of the coinbase transaction:
 
-- **Dirección del validador principal:** La dirección del validador principal al que delegar el poder hash.
-- **Dirección de recompensa del token CORE:** La dirección a la que el minero desea que se le envíen las recompensas del token CORE.
+- **Core Validator Address:** The address of the Core Validator to delegate hash power to.
+- **CORE Token Reward Address:** The address where the miner wants their CORE token rewards sent.
 
-3. **Delegar poder de hash:** Esta acción delega el poder de hash del minero al validador central elegido, reutilizando el trabajo existente sin incurrir en costos adicionales.
+3. **Delegating Hash Power:** This action delegates the miner's hash power to the chosen Core Validator, repurposing existing work without incurring additional costs.
 
-4. **Elección del validador:** Los validadores con mayor poder de hash delegado tienen una mayor probabilidad de ser elegidos para el conjunto de validadores.
+4. **Validator Election:** Validators with higher delegated hash power have a greater chance of being elected to the validator set.
 
-5. **Recompensas del validador:** Los validadores obtienen recompensas por procesar bloques, reciben una pequeña comisión y pasan recompensas a sus delegados, incluido cualquier minero de Bitcoin o grupo de minería que les haya delegado poder de hash.
+5. **Validator Rewards:** Validators earn rewards for processing blocks, take a small commission, and pass rewards to their delegators, including any Bitcoin miners or mining pools who delegated hash power to them.
 
-6. **Obtención de recompensas:** Los mineros o los grupos de minería reciben recompensas en tokens CORE además de sus recompensas de Bitcoin, lo que brinda incentivos adicionales.
+6. **Earning Rewards:** Miners or mining pools receive CORE token rewards in addition to their Bitcoin rewards, providing extra incentives.
 
-## Importancia de DPoW en Satoshi Plus
+## Importance of DPoW in Satoshi Plus
 
-- **Seguridad mejorada:** Al integrar el PoW de Bitcoin, Core se beneficia de la incomparable infraestructura de seguridad de Bitcoin, lo que hace que la red Core sea más resistente.
+- **Enhanced Security:** By integrating Bitcoin’s PoW, Core benefits from Bitcoin’s unmatched security infrastructure, making the Core network more resilient.
 
-- **Mayores incentivos:** Los mineros de Bitcoin obtienen un flujo de ingresos adicional a través de recompensas de tokens CORE, lo que mejora su rentabilidad general sin costos de energía adicionales.
+- **Increased Incentives:** Bitcoin miners gain an additional revenue stream through CORE token rewards, enhancing their overall profitability without additional energy costs.
 
-- **Relación simbiótica:** Este sistema promueve beneficios mutuos para las redes Bitcoin y Core, fomentando un entorno cooperativo que fortalece el ecosistema blockchain.
+- **Symbiotic Relationship:** This system promotes mutual benefits for both the Bitcoin and Core networks, fostering a cooperative environment that strengthens the blockchain ecosystem.
 
-- **Eficiencia de recursos**: DPoW permite a los mineros maximizar la utilidad de sus recursos computacionales existentes. Al respaldar Core Chain mientras realizan sus operaciones habituales de minería de Bitcoin, los mineros pueden contribuir a dos redes simultáneamente sin gasto de energía adicional.
+- **Resource Efficiency**: DPoW allows miners to maximize the utility of their existing computational resources. By supporting Core Chain while conducting their regular Bitcoin mining operations, miners can contribute to two networks simultaneously without additional energy expenditure.
 
-#### **Conclusión**
+#### **Conclusion**
 
-DPoW es una innovación crítica dentro del mecanismo de consenso Satoshi Plus, extiende los incentivos de los mineros de la red Bitcoin para alinearse con el mecanismo de consenso Satoshi Plus de Core. Core recibe la participación de los mineros de Bitcoin en su seguridad, y Bitcoin recibe mineros mejor remunerados. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
+DPoW is a critical innovation within the Satoshi Plus consensus mechanism, it extends the incentives of the Bitcoin network’s miners to align with Core’s Satoshi Plus consensus mechanism. Core receives Bitcoin miner participation in its security, and Bitcoin receives more highly compensated miners. The result is a miner set that is more heavily incentivized to secure both Bitcoin and Core.
