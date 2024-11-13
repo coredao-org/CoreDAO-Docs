@@ -1,36 +1,36 @@
 ---
-sidebar_label: Frais de pénalisation (Slashing Fees)
+sidebar_label: Slashing Fee
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Frais de pénalisation (Slashing Fees)
+# Slashing Fees
 
 ---
 
-## Indisponibilité
+## Unavailability
 
-Les pénalités de slashing sont généralement appliquées lorsqu'un nœud ne parvient pas à produire un bloc pendant son tour désigné dans la procédure de minage en round-robin, comme décrit dans la section [Élection des validateurs](../validator/validator-election.md).
+Slashing penalties are generally incurred because a node fails to successfully produce a block during its designated turn in the **round-robin block-mining** procedure as described in the [Validator Election](../validator/validator-election.md) section.
 
-- Si un validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont complètement supprimées.
+- If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely.
 - If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far.
-- S'il échoue dans les **50** derniers blocs du round, il perd tout ce qu'il a gagné.
-- Si un validateur échoue à miner **150 blocs** d'affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt effectué pour devenir validateur, et il est jail (incarcéré) pendant **trois** jours, ce qui signifie qu'il n'est plus éligible pour être élu dans l'ensemble des validateurs pendant cette période.
+- If they fail on the last **50** blocks of the round, they surrender everything they’ve earned.
+- If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set.
 
-## Double Signature
+## Double Sign
 
-Toute personne peut soumettre une demande de slashing sur CoreChain avec une preuve de double signature (Double Sign) sur CoreChain.
+Anyone can submit a slash request on CoreChain with the evidence of Double Sign of CoreChain.
 
-### Validation des preuves
+### Evidence Validation
 
-- Deux en-têtes de bloc ont la même hauteur et le même hash de bloc parent
-- Les deux en-têtes de bloc sont scellés par le même validateur
-- Les signatures des deux blocs ne doivent pas être identiques
-- Le validateur doit faire partie de l'ensemble des validateurs du round en cours.
+- Two block headers have the same height and the same parent block hash
+- Two block headers are sealed by the same validator
+- Two signatures of these two blocks must not be the same
+- The validator should be in the set of current round’s validators.
 
-Si la preuve est valide :
+If the evidence is valid:
 
-1. **1 000 tokens CORE** seront retirés du CORE auto-marginalisé du validateur
-2. Le validateur puni sera emprisonné et exclu du réseau pour toujours
-3. **500 tokens CORE** seront attribués au soumetteur de la demande comme récompense
-4. Le reste des tokens CORE sera transféré dans le pool de récompenses du système
+1. **1,000 CORE** would be slashed from the self-margined CORE of the validator
+2. The slashed validator would be jailed and barred from the network forever
+3. **500** of slashed CORE would be allocated to the submitter as a reward
+4. The rest of slashed CORE will transfer into System Reward Pool
