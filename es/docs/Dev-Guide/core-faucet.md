@@ -8,20 +8,20 @@ sidebar_position: 2
 
 ---
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el [Core Testnet Faucet] público (https://scan.test.btcs.network/faucet) para distribuir tokens de Core testnet, **tCORE**.
+To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**.
 
-## Pasos para obtener tCORE de Core Testnet Faucet
+## Steps to Obtain tCORE from Core Testnet Faucet
 
-1. Navegue hasta el sitio web [faucet](https://scan.test.btcs.network/faucet).
-2. Pegue su dirección en el cuadro de texto proporcionado. Asegúrese de proporcionar la dirección Core Testnet de su billetera que desea recibir fondos con tCore.
-3. Completa el CAPTCHA
-4. Haga clic en el botón "Get tCORE". Después de solicitar tCORE desde el faucet, verá aumentar su saldo de MetaMask.
+1. Navigate to the [faucet](https://scan.test.btcs.network/faucet) website.
+2. Paste your address in the given textbox. Make sure you give the Core Testnet address of your wallet that you want to get funded with tCore.
+3. Complete the CAPTCHA
+4. Click the `Get tCORE` button. After requesting tCORE from the faucet, you'll see your MetaMask balance increase.
 
-![usando-grifo](../../static/img/faucet/faucet.png)
-:::precaución
-Cada dirección puede solicitar **sólo un tCORE por día**. Si te quedaste sin tCORE y el grifo no te envía más debido al límite diario de un tCORE, ¡vuelve mañana e inténtalo de nuevo!
+![using-faucet](../../static/img/faucet/faucet.png)
+:::caution
+Each address can request **only one tCORE per day**. If you've run out of tCORE and the faucet won't send you more because of the one tCORE daily limit, come back tomorrow and try again!
 :::
 
 :::note
-tCORE solo se usa para pruebas y no tiene ningún valor. No lo utilice para transacciones financieras reales.
+tCORE is only used for testing and does not have any value. Do not use it for real financial transactions.
 :::
