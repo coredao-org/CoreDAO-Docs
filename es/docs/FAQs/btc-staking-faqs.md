@@ -1,72 +1,72 @@
 ---
-sidebar_label: Preguntas frecuentes sobre apuestas de BTC sin custodia
+sidebar_label: Non-Custodial BTC Staking FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Preguntas frecuentes sobre apuestas de BTC sin custodia
+# Non-Custodial Bitcoin Staking FAQs
 
 ---
 
-### 1. ¿Qué es la apuesta de Bitcoin sin custodia en la red central?
+### 1. What is Non-Custodial Bitcoin Staking on the Core network?
 
-Core ofrece a los titulares de Bitcoin una oportunidad transparente y sin riesgos de bloquear/apostar su Bitcoin en la red Bitcoin sin renunciar a la custodia de sus activos de Bitcoin, para poder participar en la seguridad de Core Chain y obtener recompensas CORE a cambio.
+Core provides Bitcoin holders with a risk free and transparent opportunity to lock up/stake their Bitcoin on the Bitcoin Network without giving up custody of their Bitcoin assets, in order to participate in Core Chain’s security and earn CORE rewards in return.
 
-### 2. ¿Cómo funciona el Stake de Bitcoin sin custodia?
+### 2. How does Non-Custodial Bitcoin Staking work?
 
-Con la apuesta de bitcoins sin custodia, el protocolo de Core Chain incorpora a los poseedores de bitcoins como la tercera parte del consenso de Satoshi Plus. La metodología de Core Chain para integrar los centros de participación de bitcoin en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo CLTV es una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que haya pasado un cierto momento. Este tiempo se puede definir en términos de una fecha y hora específicas o por la altura del bloque. En lugar de que los titulares cedan la custodia de sus bitcoins a apuestas externas, los participantes en Core Chain simplemente necesitan colocar sus bitcoins en bloqueos de tiempo CLTV como parte de una transacción, y la transacción puede diseñarse para devolver el resultado una vez transcurrido el período de tiempo. Dentro de esa transacción, los participantes deben incluir un script que contenga la misma información que los mineros de Bitcoin incluyen en sus bloques delegados:
+With the non-custodial bitcoin staking, Core Chain's protocol incorporate bitcoin holders as the third part of Satoshi Plus consensus. Core Chain's methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock are Bitcoin-native cryptographic feature that specify a condition under which the transaction output cannot be spent until a certain point in time has passed. This time can be defined in terms of a specific date and time or by block height. Rather than holders giving up custody of their bitcoins to external staking, stakers on Core Chain merely need to place their bitcoins in CLTV timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks:
 
-1. La dirección del Core Validator al que el apostador quiere delegar su bitcoin.
-2. La dirección a la que el apostador desea que se envíen sus recompensas de tokens CORE.
+1. The address of the Core Validator the staker wants to delegate their bitcoin to.
+2. The address that the staker would like their CORE token rewards to be sent to.
 
-Los apostadores de Bitcoin obtienen rendimientos de sus bitcoins, que de otro modo serían pasivos, en forma de recompensas de tokens CORE. El resultado final es que miles de millones de dólares en valor de Bitcoin subutilizado se convertirán en productivos, remunerando a los interesados ​​y al mismo tiempo ampliando el alcance de la utilidad de Bitcoin.
+Bitcoin stakers earn yields on their otherwise passive bitcoin in the form of CORE token rewards. The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility.
 
-### 3. ¿Cómo mantiene la seguridad y la confianza la participación sin custodia en Bitcoin?
+### 3. How does non-custodial Bitcoin staking maintain security and trust?
 
-Al permitir a los usuarios apostar sus bitcoins sin sacarlos de la cadena de bloques de Bitcoin, el stake sin custodia de Bitcoin evita introducir nuevos supuestos de confianza. Aprovecha la seguridad y la confianza inherentes de la infraestructura establecida de Bitcoin, manteniendo una alta seguridad para los activos apostados.
+By allowing users to stake their bitcoins without moving them off the Bitcoin blockchain, non-custodial Bitcoin staking avoids introducing new trust assumptions. It leverages the inherent security and trust of Bitcoin’s established infrastructure, maintaining high security for staked assets.
 
-### 4. ¿Cuáles son las ventajas de la apuesta de Bitcoin sin custodia?
+### 4. What are the advantages of Non-Custodial Bitcoin Staking?
 
-1. **Diseñado para titulares e instituciones a largo plazo:** Diseñado para aquellos que prefieren mantener sus bitcoins en la cadena de bloques segura de Bitcoin, el scking de Bitcoin sin custodia ofrece una manera de ganar recompensas durante un período de tenencia específico sin transacciones frecuentes.
+1. **Tailored for Long-Term Holders and Institutions:** Designed for those who prefer keeping their bitcoins on the secure Bitcoin blockchain, non-custodial Bitcoin staking offers a way to earn rewards during a specified holding period without frequent transactions.
 
-2. **Sin nuevos supuestos de confianza:** Los usuarios pueden apostar sus bitcoins directamente en la cadena de bloques de Bitcoin, manteniendo la alta seguridad y confianza inherentes a la sólida infraestructura de Bitcoin sin la necesidad de transferir activos fuera de la cadena.
+2. **No New Trust Assumptions:** Users can stake their bitcoins directly on the Bitcoin blockchain, maintaining the high security and trust inherent in Bitcoin's robust infrastructure without the need to transfer assets off-chain.
 
-3. **Oportunidad de ganar recompensas pasivas:** Los participantes de Bitcoin pueden ganar recompensas en tokens CORE a cambio de sus contribuciones al consenso de Core Chain, mejorando la funcionalidad y seguridad de la cadena de bloques.
+3. **Opportunity to Earn Passive Rewards:** Bitcoin stakers can earn CORE token rewards in exchange for their contributions to the Core Chain's consensus, enhancing the blockchain's functionality and security.
 
-4. **Autocustodia y seguridad:** Bitcoin Stake es 100% seguro con autocustodia; Los usuarios ejecutan ellos mismos transacciones de participación en la red Bitcoin, asegurando que su Bitcoin no abandone la cadena de bloques.
+4. **Self-Custody and Security:** Bitcoin Staking is 100% secure with self-custody; users execute staking transactions themselves on the Bitcoin network, ensuring their Bitcoin does not leave the blockchain.
 
-5. **Uso de funciones criptográficas nativas:** La apuesta de Bitcoin en Core utiliza funciones criptográficas probadas en batalla de la red Bitcoin, lo que la hace más segura que las soluciones no nativas.
+5. **Use of Native Cryptographic Features:** Bitcoin staking on Core utilizes battle-tested cryptographic features of the Bitcoin network, making it safer than non-native solutions.
 
-6. **Flexibilidad en la creación de transacciones:** Los usuarios tienen la flexibilidad de crear sus transacciones de participación utilizando cualquier herramienta preferida, lo que reduce significativamente el riesgo de ataques a la cadena de suministro por parte de bibliotecas de terceros.
+6. **Flexibility in Transaction Building:** Users have the flexibility to build their staking transactions using any preferred tool, significantly reducing the risk of supply chain attacks from third-party libraries.
 
-### 5) ¿Existen requisitos específicos para participar en Stake de Bitcoin sin custodia?
+### 5) Are there any specific requirements to participate in Non-Custodial Bitcoin Staking?
 
-Sí, los participantes deben apostar un mínimo de **0,01 Bitcoin durante al menos 10 días**. Este requisito mínimo lo hace accesible para una amplia gama de poseedores de Bitcoin.
+Yes, participants must stake a minimum of **0.01 Bitcoin for at least 10 days**. This minimal requirement makes it accessible for a wide range of Bitcoin holders.
 
-### 6. ¿Por qué la dirección de participación proporcionada difiere de su dirección de Bitcoin original?
+### 6. Why is that the staking address provided differs from your original Bitcoin address?
 
-La dirección de participación se deriva de la clave privada maestra de su billetera, lo que garantiza su control y seguridad sobre sus activos. Sus Bitcoins permanecen almacenados de forma segura en su billetera original, sin verse afectados por las apuestas. Si bien es posible que los activos apostados no sean visibles en algunas versiones de billetera, usted aún tiene la propiedad total.
+The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoins remain safely stored in your original wallet, unaffected by staking. While staked assets may not be visible in some wallet versions, you still have complete ownership.
 
-Puede ver sus fondos apostados buscando la dirección de apuesta en cualquier explorador de Bitcoin como [Mempool](https://mempool.space/). Estamos trabajando activamente para que los activos apostados sean visibles en todas las billeteras compatibles, especialmente a través de versiones de línea de comandos.
+You can view your staked funds by searching the staking address on the any Bitcoin explorer like [Mempool](https://mempool.space/). We're actively working to make staked assets visible in all supported wallets especially through command line versions.
 
-### 7. ¿Core Chain proporciona algún soporte de billetera de hardware para la participación sin custodia de Bitcoin?
+### 7. Does Core Chain provide any hardware wallet support for Non-Custodial Bitcoin Staking?
 
-En la actualidad, el Stake de Bitcoin sin custodia no admite carteras de hardware debido a limitaciones técnicas. Sin embargo, exploramos constantemente formas de mejorar la compatibilidad con varios tipos de billeteras, priorizando tanto la seguridad como la conveniencia para nuestros usuarios.
+At present, Non-Custodial Bitcoin Staking does not support hardware wallets due to technical constraints. Nevertheless, we're constantly exploring ways to enhance compatibility with various wallet types, prioritizing both security and convenience for our users.
 
-### 8. ¿Cuáles son las consideraciones importantes que debe tener en cuenta sobre los períodos de bloqueo antes de apostar sus activos?
+### 8. What are the important considerations for Locking Periods to keep in mind before staking your assets?
 
-- **Vencimiento del bloqueo de tiempo:** Cuando bloquea su Bitcoin para apostar, no podrá acceder a él hasta que concluya el período de apuesta.
-- **Elegir sabiamente:** Le recomendamos seleccionar cuidadosamente su período de bloqueo, teniendo en cuenta sus objetivos de inversión y tolerancia al riesgo. Comenzar con períodos de bloqueo más cortos puede ayudarle a familiarizarse con el proceso antes de comprometerse con duraciones más largas.
-- **Verificación del monto apostado:** actualmente, debido a algunas complejidades técnicas, es posible que su activo apostado no sea visible en su billetera cuando se verifica a través de CLI; sin embargo, puede verificar fácilmente que tiene la propiedad completa de sus activos apostados desde el [Sitio web de apuestas de Bitcoin sin custodia de Core Chain] (https://stake.coredao.org/).
+- **Time Lock Expiration:** When you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
+- **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+- **Staked Amount Verification:** currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
 
-### 9. ¿Por qué mi activo apostado no es visible en mi billetera?
+### 9. Why is my staked asset not visible in my wallet?
 
-Actualmente, debido a algunas complejidades técnicas, es posible que su activo apostado no sea visible en su billetera cuando se verifica a través de CLI; sin embargo, puede verificar fácilmente que tiene la propiedad completa de sus activos apostados desde la [Core Chain Non-Custodial Bitcoin Stake Sitio web](https://stake.coredao.org/).
+Currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
 
-### 10. ¿Cómo se garantiza la seguridad de las apuestas de Bitcoin sin custodia?
+### 10. How is the security of non-custodial Bitcoin staking ensured?
 
-El protocolo de Core Chain y la seguridad de las apuestas de Bitcoin sin custodia han sido auditadas minuciosamente por [Halborn](https://www.halborn.com/), una empresa que cumple con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [en la que confían los principales blockchain plataformas](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap. Revise los informes de auditoría del protocolo de Core Chain y la participación sin custodia de Bitcoin por parte de empresas líderes [aquí](../Learn/audit.md).
+Core Chain's protocol and non-custodial Bitcoin staking’s security have been thoroughly audited by [Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by leading blockchain platforms](https://www.halborn.com/about/who-trusts-us) like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap. Review Audit Reports of Core Chain's protocol and non-custodial Bitcoin staking by leading firms [here](../Learn/audit.md).
 
-### 11. ¿Qué hacer si el botón "Canjear BTC" no funciona en el sitio web de apuestas?
+### 11. What to do if `Redeem BTC` button is not working on the staking website?
 
-Puede canjear su BTC haciendo clic en el botón "Canjear" en el [sitio web de apuestas] oficial de Core (https://stake.coredao.org/). Si el botón no funciona, intente borrar la memoria caché de su navegador y vuelva a intentarlo. Si tiene más problemas, comuníquese con el [Core Dev Forum](https://forum.coredao.org/).
+You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
