@@ -1,111 +1,111 @@
 ---
-sidebar_label: Conception
+sidebar_label: Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conception de coreBTC
+# Design of coreBTC
 
-Le coreBTC dans la blockchain Core représente une innovation majeure dans le domaine de la technologie blockchain, en particulier pour améliorer l'utilité du Bitcoin dans la finance décentralisée (DeFi). Cette représentation synthétique du Bitcoin sur Core assure une interaction transparente avec les applications DeFi tout en maintenant les propriétés critiques du Bitcoin.
+The coreBTC within the Core blockchain represents a significant innovation in the realm of blockchain technology, specifically focusing on enhancing Bitcoin's utility within decentralized finance (DeFi). This synthetic representation of Bitcoin on the Core blockchain enables seamless interaction with DeFi applications while maintaining the critical properties of Bitcoin.
 
-## Composants clés et leurs rôles
+## Key Components and Their Roles
 
 **1. Lockers:**
 
-- **Rôle:** Les Lockers sont responsables de la détention du Bitcoin réel qui garantit le coreBTC. Les utilisateurs envoient leur Bitcoin à l'adresse d'un Locker pour initier le processus d'enveloppement. Tout le monde peut s'inscrire en tant que Locker sur Core en bloquant des garanties.
-- **Sécurité:** Les Lockers doivent fournir une quantité significative de garanties en jetons CORE pour maintenir la sécurité du Bitcoin qu'ils détiennent. Cette garantie peut être liquidée en cas de mauvaise conduite, offrant ainsi une forte dissuasion contre les activités frauduleuses.
+- **Role:** Lockers are responsible for holding the actual Bitcoin that backs the coreBTC. Users send their Bitcoin to a Locker's address to initiate the wrapping process. Anyone can register as a Locker on Core by locking up collateral.
+- **Security:** Lockers must provide a significant amount of collateral in CORE tokens to uphold the security of the Bitcoin they hold. This collateral can be liquidated to cover losses in case of malfeasance, providing a strong disincentive against fraudulent activities.
 
-**2. Collatéral:**
-\- Les actifs spécifiques et le ratio de collatéral requis sont des paramètres du réseau déterminés par la Core DAO, et le collatéral déposé par les Lockers garantit que le bitcoin verrouillé est toujours soutenu par des actifs d'une valeur supérieure. Si le prix du bitcoin change par rapport à la valeur du collatéral, le Locker doit ajuster son collatéral ou faire face à une liquidation potentielle.
-\- Le collatéral peut être réduit si les Lockers transfèrent du bitcoin sans autorisation ou ne renvoient pas rapidement le bitcoin lorsque le coreBTC est brûlé.
-\- Les Lockers peuvent se désinscrire et récupérer leur collatéral à tout moment, tant qu'ils n'ont plus de bitcoin résiduel verrouillé et qu'ils n'ont pas de demandes de déverrouillage non satisfaites. En échange des services fournis, les Lockers perçoivent de petites commissions.
+**2. Collateral:**
+\- The particular assets and required collateral ratio are network parameters determined by Core DAO, and the collateral deposited by Lockers means that locked bitcoin should always be backed by assets of a higher value. If there's a change in the price of bitcoin relative to the value of the collateral, the Locker must adjust its collateral or face potential liquidation.
+\- Collateral can be slashed if Lockers transfer bitcoin without authorization or do not promptly return bitcoin when coreBTC is burned.
+\- Lockers can unregister and retrieve their collateral at any time, as long as they have no residual bitcoin locked and have no unfulfilled unlocking requests. In exchange for the services provided, Lockers earn small fees.
 
-**2. Relayeurs:**
+**2. Relayers:**
 
-- **Role:** Les Relayers surveillent la blockchain Bitcoin pour les transactions de verrouillage dirigées vers les Lockers et valident ces transactions. Ils jouent un rôle crucial pour vérifier que le Bitcoin verrouillé correspond précisément au coreBTC émis sur la blockchain Core.
-- **Fonctionnalité:** Dès qu'ils détectent une transaction de verrouillage valide, les Relayeurs soumettent une preuve à Core pour émettre le montant correspondant de coreBTC, intégrant ainsi le Bitcoin dans l'écosystème de la blockchain Core de manière sécurisée.
+- **Role:** Relayers monitor the Bitcoin blockchain for locking transactions directed at Lockers and validate these transactions. They play a crucial role in verifying that the locked Bitcoin corresponds accurately to the minted coreBTC on the Core blockchain.
+- **Functionality:** Upon detecting a valid locking transaction, Relayers submit proof to Core to mint the corresponding amount of coreBTC, bridging Bitcoin to the Core blockchain ecosystem securely.
 
-**3. smart Contract coreBTC:**
+**3. coreBTC Smart Contract:**
 
-- **Role:** Le smart contract coreBTC sur Core gère l'émission et la destruction des tokens coreBTC. Il interagit avec les Relayers et les Lockers pour inciter toutes les opérations à respecter les règles du protocole.
-- **Mécanismes de sécurité:** Le smart contract comprend des mécanismes pour vérifier les preuves de transaction soumises par les Relayeurs, gérer le collatéral déposé par les Lockers, et exécuter les processus d'émission et de rachat du coreBTC.
+- **Role:** The coreBTC smart contract on Core manages the minting and burning of coreBTC tokens. It interacts with Relayers and Lockers to incentivize all operations to adhere to the protocol rules.
+- **Security Mechanisms:** The smart contract includes mechanisms for verifying transaction proofs submitted by Relayers, managing collateral posted by Lockers, and executing the minting and redemption processes of coreBTC.
 
-**4. Liquidateurs:**
+**4. Liquidators:**
 
-- **Rôle:** En cas de fluctuations de prix ou de mauvaise conduite de la part d'un Locker, les Liquidateurs sont chargés de maintenir la sécurité et la couverture du coreBTC en appliquant les exigences de collatéral.
-- **Fonction:** Les Liquidateurs peuvent forcer la liquidation du collatéral d'un Locker si la valeur du Bitcoin verrouillé baisse ou si le Locker ne parvient pas à maintenir le ratio de collatéral requis. Cela permet de préserver l'intégrité et le soutien du coreBTC.
+- **Role:** In the event of price fluctuations or Locker misbehavior, Liquidators are responsible for upholding the safety and backing of the coreBTC by enforcing collateral requirements.
+- **Function:** Liquidators can force the liquidation of a Locker's collateral if the value of the locked Bitcoin falls or if the Locker fails to maintain the required collateral ratio. This helps maintain the integrity and backing of the coreBTC.
 
-\*\*5. Gardiens: \*\*
+\*\*5. Guardians: \*\*
 
-- **Rôle:** L'activité des Lockers est surveillée par les Gardiens, qui vérifient tout comportement inapproprié et appliquent des réductions de collatéral si nécessaire.
-- **Fonction:** Un Gardien peut déclencher le smart contract de Core pour réduire une partie du collatéral du Locker. Dans ce cas, une partie du collatéral du Locker, équivalente à la valeur du coreBTC brûlé par l'utilisateur, est transférée à l'utilisateur. De plus, le Gardien qui a déclenché cette action reçoit une récompense sous forme d'une partie de la valeur de ce collatéral pour son intervention.
+- **Role:** The activity of Lockers is monitored by Guardians, who check for any misbehavior and apply slashing as appropriate.
+- **Function:** A Guardian can trigger Core smart contract to slash some of the Locker’s collateral. In this event, a portion of the Locker's collateral, equivalent to the value of the user's burned coreBTC, is transferred to the user. Additionally, the slasher is rewarded with a percentage of this collateral value for their action.
 
-## Comment fonctionne le coreBTC
+## How coreBTC Works
 
-Le coreBTC est un actif synthétique innovant développé au sein de l'écosystème de la blockchain Core, permettant à Bitcoin d'être utilisé de manière transparente dans des applications de finance décentralisée (DeFi) sur la blockchain Core. Le processus commence lorsqu'un utilisateur verrouille son Bitcoin avec un dépositaire désigné, appelé un **Locker**, qui détient le Bitcoin réel et fournit une quantité importante de collatéral pour sécuriser la transaction. Ce Bitcoin est ensuite représenté sur Core sous forme de coreBTC, maintenant une parité stricte de **1:1** pour maintenir une cohérence de valeur entre le Bitcoin verrouillé et le coreBTC émis.
+coreBTC is an innovative synthetic asset developed within the Core blockchain ecosystem that allows Bitcoin to be used seamlessly in decentralized finance (DeFi) applications on the Core blockchain. The process begins when a user locks their Bitcoin with a designated custodian known as a **Locker**, who holds the actual Bitcoin and provides a significant amount of collateral to secure the transaction. This Bitcoin is then represented on Core as coreBTC, maintaining a strict **1:1 peg** to uphold value consistency between the locked Bitcoin and the issued coreBTC.
 
-Les Relayeurs jouent un rôle crucial en surveillant ces transactions Bitcoin et en les validant sur Core. Une fois validée, les détails de la transaction sont envoyés au smart contract du coreBTC, qui émet une quantité équivalente de coreBTC et l'accrédite dans le portefeuille de l'utilisateur. Ce coreBTC peut ensuite être utilisé sur diverses plateformes DeFi au sein de l'écosystème Core, permettant aux détenteurs de Bitcoin de s'engager dans des activités de prêt, d'emprunt, de trading, et d'autres activités financières sans réellement dépenser ou risquer leurs avoirs en Bitcoin.
+Relayers play a crucial role in monitoring these Bitcoin transactions and validating them on Core. Once validated, the transaction details are sent to the coreBTC smart contract, which mints an equivalent amount of coreBTC and credits it to the user's wallet. This coreBTC can then be used across various DeFi platforms within the Core ecosystem, enabling Bitcoin holders to engage in lending, borrowing, trading, and other financial activities without actually spending or risking their original Bitcoin holdings.
 
-Le rachat du coreBTC en Bitcoin d'origine implique que l'utilisateur initie un processus de brûlage, où le coreBTC est détruit, et le Bitcoin correspondant est déverrouillé et renvoyé du Locker à l'adresse spécifiée par l'utilisateur. Tout le système est sécurisé par une gestion rigoureuse du collatéral et des protocoles de liquidation, ainsi les Lockers maintiennent un collatéral suffisant contre le Bitcoin qu'ils détiennent. De plus, des mécanismes de réduction (slashing) sont en place pour pénaliser toute activité frauduleuse des Lockers, protégeant ainsi l'intégrité et la fiabilité du coreBTC au sein de l'écosystème Core. Ce design améliore non seulement la liquidité et l'utilité du Bitcoin, mais conserve également ses propriétés fondamentales de décentralisation et de sécurité.
+Redemption of coreBTC for the original Bitcoin involves the user initiating a burn process where the coreBTC is destroyed, and the corresponding Bitcoin is unlocked and returned from the Locker to the user’s specified address. The entire system is safeguarded by rigorous collateral management and liquidation protocols, so Lockers maintain sufficient collateral against the Bitcoin they hold. Additionally, slashing mechanisms are in place to penalize any fraudulent activities by Lockers, protecting the integrity and trustworthiness of coreBTC within the Core ecosystem. This design not only enhances the liquidity and utility of Bitcoin but also maintains its core properties of decentralization and security.
 
-## Création et parité du coreBTC
+## Minting and Pegging In coreBTC
 
-Verrouiller du Bitcoin et le lier au coreBTC est essentiel pour maintenir l'intégrité et la fiabilité de cet actif synthétique:
+Locking Bitcoin and pegging it into coreBTC are crucial for maintaining the integrity and trustworthiness of the synthetic asset:
 
-- **Stockage sécurisé:** Le Bitcoin verrouillé est stocké dans des adresses contrôlées par les Lockers, qui sont incités à maintenir la sécurité et la transparence grâce à leurs obligations collatéral.
-- **Collatéralisation:** Le collatéral fourni par les Lockers sous-tend le processus de parité, ainsi pour chaque coreBTC en circulation, une quantité équivalente de Bitcoin est détenue en toute sécurité par un Locker.
+- **Secure Storage:** Locked Bitcoin is stored in addresses controlled by Lockers, who are incentivized to maintain security and transparency due to their collateral obligations.
+- **Collateralization:** The collateral provided by Lockers underpins the pegging process, so that for every coreBTC in circulation, there is an equivalent amount of Bitcoin securely held by a Locker.
 
-La création du coreBTC commence lorsqu'un utilisateur verrouille son Bitcoin dans le système. L'utilisateur envoie le Bitcoin à une adresse sécurisée contrôlée par un Locker désigné. Cette action déclenche le processus de création sur la blockchain Core.
+Minting of coreBTC begins when a user locks their Bitcoin into the system. The user sends Bitcoin to a secure address controlled by a designated entity known as a Locker. This action triggers the minting process on the Core blockchain.
 
-- **Lockers:** Ce sont des nœuds au sein du réseau Core responsables de la détention du Bitcoin réel. Chaque Locker doit déposer une quantité importante de collatéral, généralement en tokens CORE, pour couvrir d'éventuels défauts ou activités frauduleuses.
-- **Relayeurs:** Après l'envoi du Bitcoin à l'adresse du Locker, les Relayeurs surveillent ces transactions. Une fois confirmée, les Relayeurs valident la transaction et soumettent une preuve au smart contract du coreBTC sur la blockchain Core.
-- **Exécution du smart contract:** Dès réception de la preuve nécessaire des Relayeurs, le smart contract du coreBTC fait appel au client léger Bitcoin pour vérifier l'authenticité et la finalité de la transaction Bitcoin concernée, puis crée une quantité équivalente de coreBTC. Ce coreBTC est ensuite émis dans le portefeuille de l'utilisateur sur la blockchain Core, respectant une parité 1:1 avec le Bitcoin verrouillé.
+- **Lockers:** These are nodes within the Core network responsible for holding the actual Bitcoin. Each Locker must deposit a significant amount of collateral, usually in CORE tokens, to cover potential defaults or fraudulent activities.
+- **Relayers:** After the Bitcoin is sent to the Locker's address, Relayers monitor these transactions. Once a transaction is confirmed, Relayers validate it and submit proof to the coreBTC smart contract on the Core blockchain.
+- **Smart Contract Execution:** Upon receiving the necessary proof from Relayers, the coreBTC smart contract calls the bitcoin Light Client to verify the authenticity and finality of the relevant bitcoin transaction, and then mints an equivalent amount of coreBTC. This minted coreBTC is then issued to the user's wallet on the Core blockchain, reflecting a 1:1 peg with the locked Bitcoin.
 
 ![pegging-in-coreBTC](../../../../static/img/coreBTC/pegin-corebtc.png)
 
-## Rachat et parité du coreBTC
+## Redemption and Pegging Out coreBTC
 
-Le rachat, ou la sortie de parité, consiste à inverser le processus de création :
+Redemption, or pegging out, involves reversing the minting process:
 
-- **Brûlage du coreBTC:** Les utilisateurs initient le processus de rachat en envoyant une demande au smart contract du coreBTC pour brûler une quantité spécifiée de coreBTC, en indiquant l'adresse Bitcoin où ils souhaitent recevoir leur Bitcoin.
-- **Déblocage du Bitcoin:** Une fois le coreBTC brûlé avec succès, le smart contract signale au Locker de libérer la quantité correspondante de Bitcoin. Le Locker envoie ensuite ce Bitcoin à l'adresse spécifiée par l'utilisateur, complétant ainsi le processus de sortie de parité. Une fois la transaction Bitcoin confirmée, le Locker la transmet à Core où elle est finalement vérifiée par le client léger Bitcoin
+- **Burning coreBTC:** Users initiate the redemption process by sending a request to the coreBTC smart contract to burn a specified amount of coreBTC, indicating the Bitcoin address where they wish to receive their Bitcoin.
+- **Unlocking Bitcoin:** Upon successful burning of the coreBTC, the smart contract signals the Locker to release the corresponding amount of Bitcoin. The Locker then sends this Bitcoin to the user's specified address, completing the pegging out process. Once the bitcoin transaction is confirmed, the Locker transmits it to Core where it is finally verified by the bitcoin Light Client
 
 ![pegging-out-coreBTC](../../../../static/img/coreBTC/pegout-corebtc.png)
 
-## Processus de Liquidation
+## Liquidation Process
 
-Le processus de liquidation est conçu pour protéger le système des défauts de paiement et garantir que le support du coreBTC reste sécurisé:
+The liquidation process is designed to protect the system from defaults and safeguard that the backing of coreBTC remains secure:
 
-- **Surveillance des ratios collatéraux:** Les liquidateurs surveillent en permanence la valeur du Bitcoin détenu par les Lockers par rapport au coreBTC émis.
-- **Déclenchement de la liquidation:** Si la valeur marchande du Bitcoin verrouillé chute de manière significative, ou si un Locker ne parvient pas à maintenir le ratio de collatéral requis, les liquidateurs peuvent initier la vente du collatéral du Locker pour couvrir les pertes potentielles.
-- **Mécanisme de liquidation:** La liquidation est effectuée via Core, où le collatéral insuffisant est vendu pour maintenir le soutien nécessaire pour le coreBTC. Pendant le processus, les liquidateurs utilisent du coreBTC pour acheter les tokens CORE collatéralisés à un prix réduit, et le coreBTC est brûlé. Cela augmente le ratio de collatéral et restaure la santé financière du Locker. Lorsque le coreBTC est brûlé, son offre est réduite et il devient plus rare, libérant ainsi le Locker pour reprendre possession d'une quantité de Bitcoin sous-jacent équivalente à la valeur du coreBTC éliminé. Le Locker est ensuite rééquilibré conformément aux exigences de collatéral ; si l'utilisateur initial qui a envoyé le Bitcoin à l'adresse du Locker souhaite récupérer son Bitcoin, il peut choisir n'importe quel Locker pour l'obtenir. Le rachat de coreBTC contre du Bitcoin se fait au niveau systémique, et non pas dans une relation directe entre un utilisateur et un Locker particulier.
+- **Monitoring Collateral Ratios:** Liquidators continuously monitor the value of the Bitcoin held by Lockers relative to the issued coreBTC.
+- **Triggering Liquidation:** If the market value of the locked Bitcoin drops significantly, or if a Locker fails to maintain the required collateral ratio, liquidators may initiate the sale of the Locker's collateral to cover potential losses.
+- **Mechanism for Liquidation:** Liquidation is conducted through on Core, where the insufficient collateral is sold off to maintain the necessary backing for coreBTC. During the process, the Liquidators use coreBTC to buy the collateralized CORE tokens at a discounted price, and the coreBTC is burned. This pushes the collateral ratio up and restores the Locker to a healthy condition. When the coreBTC is burned its supply is reduced and it becomes more scarce, thereby freeing the Locker to take ownership of a quantity of the underlying bitcoin equivalent to the value of the eliminated coreBTC. The Locker is then rebalanced in accordance with the collateral requirements; if the original user who sent bitcoin to that Locker’s address wants their bitcoin  back, they can choose any Locker to get it from. Redemption of coreBTC for bitcoin occurs at a systemic level, it’s not a relationship between one user and one Locker.
 
 ![liquidation](../../../../static/img/coreBTC/liquidation-process.png)
 
-## Processus de Slashing
+## Slashing Process
 
-Sur la blockchain Core, le concept de slashing est essentiel pour maintenir l'intégrité et la sécurité des transactions coreBTC. Le slashing est une mesure punitive utilisée pour pénaliser les Lockers en cas de mauvaise conduite ou de non-respect des protocoles établis. Il existe deux scénarios principaux où le slashing peut se produire, chacun étant conçu pour protéger le système et ses utilisateurs contre la fraude et les mauvaises pratiques:
+On the Core blockchain, the concept of slashing is crucial to maintaining the integrity and security of coreBTC transactions. Slashing is a punitive measure used to penalize Lockers for misconduct or failure to adhere to the established protocols. There are two primary scenarios where slashing may occur, each designed to protect the system and its users from potential fraud and malfeasance:
 
-### 1. **Mouvement non autorisé du Bitcoin verrouillé**
+### 1. **Unauthorized Movement of Locked Bitcoin**
 
-Dans ce cas, le slashing se produit lorsqu'un Locker déplace du Bitcoin verrouillé sans avoir reçu une demande de brûlage correspondante d'un détenteur de coreBTC. Ce scénario est considéré comme une violation grave, car il menace directement la parité 1:1 et la confiance des détenteurs de coreBTC dans la capacité du système à garantir que leurs tokens sont bien adossés à du Bitcoin réel.
+In this case, slashing occurs if a Locker moves locked Bitcoin without receiving a corresponding burn request from a coreBTC holder. This scenario is considered a serious breach as it directly threatens the 1:1 pegging and trust that coreBTC holders have in the system's ability to securely back their tokens with real Bitcoin.
 
-- **Déclencheur:** Le processus de slashing est déclenché lorsqu'un Locker transfère du Bitcoin verrouillé vers une adresse non autorisée ou pour une utilisation non autorisée qui ne correspond pas à une demande légitime et vérifiée de rachat de coreBTC.
-- **Détection et signalement:** Cette mauvaise conduite peut être détectée par les systèmes de surveillance de Core ou par d'autres participants au réseau, souvent appelés Gardiens, qui surveillent et signalent toute activité suspecte des Lockers.
-- **Conséquence:** Après confirmation du transfert non autorisé, une partie du collatéral du Locker est saisie et utilisée pour compenser la différence créée dans le système. Cela pénalise non seulement le Locker, mais contribue également à rétablir l'équilibre entre le coreBTC en circulation et son adossement, garantissant ainsi l'intégrité du système.
+- **Trigger:** The slashing process is triggered when a Locker transfers any locked Bitcoin to an unauthorized address or for any unauthorized purpose that does not correspond to a legitimate and verified request to redeem coreBTC.
+- **Detection and Reporting:** This misconduct can be detected through Core's monitoring systems or by other participants in the network, often referred to as Guardians, who observe and report any suspicious Locker activities.
+- **Consequence:** Upon confirmation of the unauthorized transfer, a portion of the Locker’s collateral is seized and used to compensate for the discrepancy created in the system. This not only penalizes the Locker but also helps to re-establish the balance of backed and circulating coreBTC, maintaining the system's integrity.
 
 ![slashing](../../../../static/img/coreBTC/slashing-1.png)
 
-### 2. **Echec de livraison du Bitcoin lors du rachat de coreBTC**
+### 2. **Failure to Release Bitcoin Upon coreBTC Redemption**
 
-Ce scénario se produit lorsqu'un détenteur de coreBTC décide de racheter ses tokens contre le Bitcoin sous-jacent, mais que le Locker responsable de la libération du Bitcoin ne le fait pas dans le délai imparti.
+This scenario occurs when a coreBTC holder decides to redeem their tokens for the underlying Bitcoin, but the Locker responsible for releasing the Bitcoin fails to do so within the designated timeframe.
 
-- **Déclencheur:** Un détenteur de coreBTC soumet une transaction de brûlage, détruisant effectivement une certaine quantité de coreBTC avec l'attente de recevoir une quantité équivalente de Bitcoin d'un Locker. Si le Locker ne traite pas cette transaction et ne libère pas le Bitcoin comme requis, un slashing est déclenché.
-- **Détection et réponse:** Comme dans le premier cas, cet échec peut être détecté par les moniteurs du réseau ou signalé par les utilisateurs. Après vérification que le Locker n'a pas rempli la demande de rachat dans les délais, le système initie un protocole de slashing.
-- **Conséquence:** Une partie importante du collatéral du Locker est réduite à titre de mesure punitive et compensatoire. Le collatéral slashé est généralement utilisé pour certifier que l'utilisateur reçoive son Bitcoin, préservant ainsi la confiance dans le système coreBTC et compensant les pertes potentielles causées par le retard ou l'échec.
+- **Trigger:** A coreBTC holder submits a burn transaction, effectively destroying a certain amount of coreBTC with the expectation of receiving an equivalent amount of Bitcoin from a Locker. If the Locker does not process this transaction and release the Bitcoin as required, slashing is triggered.
+- **Detection and Response:** Similar to the first case, this failure can be detected by network monitors or reported by users. Upon verification that the Locker has not fulfilled the redemption request in time, the system initiates a slashing protocol.
+- **Consequence:** A significant portion of the Locker's collateral is slashed as a punitive and compensatory measure. The slashed collateral is typically used to certify that the user receives their Bitcoin, preserving trust in the coreBTC system and compensating for any potential losses incurred by the delay or failure.
 
 ![slashing](../../../../static/img/coreBTC/slashing-2.png)
 
 ## Conclusion
 
-La conception du coreBTC sur Core propose un cadre solide pour l'intégration du Bitcoin dans les applications DeFi tout en conservant ses caractéristiques fondamentales de sécurité et de décentralisation. Grâce à un système bien structuré de création, rachat, liquidation et slashing, soutenu par des exigences de collatéral strictes, coreBTC permet à la valeur du Bitcoin à être exploitée de manière innovante, sans compromettre la confiance et la sécurité qui le définissent.
+The design of coreBTC on Core presents a robust framework for integrating Bitcoin into DeFi applications while maintaining its fundamental characteristics of security and decentralization. Through a well-structured system of minting, redemption, liquidation, and slashing, all backed by strict collateral requirements, coreBTC enables Bitcoin's value to be leveraged in new and innovative ways without compromising the trust and security that define it.
