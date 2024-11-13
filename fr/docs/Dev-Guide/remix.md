@@ -1,82 +1,82 @@
 ---
-sidebar_label: Utilisation de Remix
+sidebar_label: Using Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Déployer des contrats sur la Core Chain en utilisant l'IDE Remix
+description: Deploy Contracts on Core Chain using the Remix IDE
 ---
 
-# Utilisation de Remix
+# Using Remix
 
 ---
 
-Remix est un environnement de développement intégré (IDE) en ligne puissant permettant aux développeurs de construire, tester, déployer et gérer des contrats intelligents. Dans ce tutoriel, nous allons utiliser l'[IDE Remix](https://remix.ethereum.org/) pour déployer un contrat sur le Testnet de Core.
+Remix is a powerful online integrated development environment (IDE) for developers to build, test, deploy, and manage smart contracts. In this tutorial, we'll use the [Remix IDE](https://remix.ethereum.org/) to deploy a contract to Core Testnet.
 
-## Connexion de Remix au Testnet de Core
+## Connecting Remix to Core Testnet
 
-Accédez à l'[IDE Remix](https://remix.ethereum.org/), et vous verrez une interface similaire à celle ci-dessous :
+Navigate to the [Remix IDE](https://remix.ethereum.org/), and you'll see a layout similar to below:
 
 ![remix-ide](../../static/img/remix/remix-1.avif)
 
-Dans l'image ci-dessous, vous pouvez choisir différentes versions du compilateur Solidity. Nous recommandons d'utiliser les versions plus récentes et stables de Solidity, telles que la v0.8.7. Vous pouvez également choisir d'activer la compilation automatique ou de masquer les avertissements.
+In the picture below, you'll see that you can choose different Solidity compiler versions. We recommend using the newer, more stable versions of Solidity, such as v0.8.7. You can also choose whether to enable auto compilation or hide warnings.
 
 ![remix-ide](../../static/img/remix/remix-2.avif)
 
-Vous pouvez choisir différents environnements sur Remix, comme illustré dans l'image ci-dessous. Un environnement est simplement le réseau blockchain avec lequel vous allez travailler. Il existe des machines virtuelles (VMs) intégrées, ainsi que des fournisseurs qui vous permettent de vous connecter à des VMs externes.
+You can choose different environments on Remix, as shown in the picture below. An environment is just the blockchain network you'll be working with. There are built-in Virtual Machines (VMs), as well as providers that enable you to connect to external VMs.
 
-Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask`. Assurez-vous que votre portefeuille MetaMask est [configuré pour le Testnet de Core](./core-testnet-wallet-config.md) en utilisant les paramètres de la chaîne Testnet, et vérifiez que votre compte est approvisionné à partir du [faucet](https://scan.test.btcs.network/faucet).
+To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-testnet-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the [faucet](https://scan.test.btcs.network/faucet).
 
 ![remix-ide](../../static/img/remix/remix-3.avif)
 
-Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix affiche l'adresse connectée et le montant de CORE détenu par l'adresse, comme illustré ci-dessous :
+You will be asked to connect to MetaMask. Once connected, Remix shows the connected address and the amount of CORE held by the address, as seen below:
 
 ![remix-ide](../../static/img/remix/remix-4.avif)
 
-## Compilation et déploiement du contrat intelligent
+## Smart Contract Compilation and Deployment
 
-- **Assurez-vous que votre contrat intelligent suit les [directives de support de Solidity de Core Chain](./smart-contract-guidelines.md).**
+- **Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md)**.
 
-- Remix propose plusieurs contrats prédéfinis chargés par défaut dans l'espace de travail, comme illustré ci-dessous. Pour ce tutoriel, utilisons le contrat préchargé `1_Storage.sol`. Ce contrat implémente une simple base de données qui nous permet de stocker un nombre via la fonction `store()` et de le consulter via la fonction `retrieve()`.
+- Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
 
 ![remix-ide](../../static/img/remix/remix-5.avif)
 
-- Dans le menu de gauche, accédez à `SOLIDITY COMPILER`, puis aux `Configurations Avancées` et sélectionnez `Paris` dans le menu déroulant de la `Version EVM`.
+- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `Paris` from the `EVM Version` dropdown.
 
 ![evm-version](../../static/img/remix/remix-13.png)
 
-- Cliquez ensuite sur le bouton bleu **Compile** pour compiler votre contrat intelligent.
+- Then select the blue **Compile** button to compile your smart contract.
 
-- Ensuite, passez à l'onglet `DEPLOY & RUN TRANSACTIONS` dans le même menu de gauche et sélectionnez le bouton **Deploy** (entouré en rouge ci-dessous).
+- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the same lefthand menu and select the **Deploy** button, outlined in red below.
 
 ![remix-ide](../../static/img/remix/remix-6.avif)
 
-- Après avoir sélectionné le bouton **Deploy**, MetaMask ouvrira une fenêtre contextuelle vous demandant de signer et d'envoyer la transaction de déploiement sur le Testnet de Core, comme illustré ci-dessous.
+- After selecting the **Deploy** button, MetaMask will open a popup asking you to sign and then send the deployment transaction on Core Testnet, as seen below.
 
 ![remix-ide](../../static/img/remix/remix-7.png)
 
-- Une fois que le contrat est déployé avec succès, un message de confirmation apparaîtra dans la console.
+- Once the contract is successfully deployed, you should receive a message on the console.
 
 ![remix-ide](../../static/img/remix/remix-8.avif)
 
-## Interaction avec le contrat intelligent
+## Smart Contract Interaction
 
-Une fois votre contrat déployé, vous pouvez utiliser Remix pour interagir rapidement et de manière intuitive avec lui.
+Once your contract is deployed, you can use Remix to quickly and intuitively interact with it.
 
-Trouvez le nouveau contrat déployé dans la section `Deployed Contracts` située en bas à gauche. Testons notre contrat en entrant `100` dans le champ de saisie de la fonction `store` et en sélectionnant le bouton orange **store**.
+Locate the newly deployed contract in the `Deployed Contracts` section located in the lower left. Let's test our contract by entering `100` into the `store` function's input field and selecting the orange **store** button.
 
 ![remix-ide](../../static/img/remix/remix-9.avif)
 
-MetaMask nous demandera de nouveau de signer et d'envoyer la transaction.
+MetaMask will again ask us to sign and send the transaction.
 
 ![remix-ide](../../static/img/remix/remix-10.png)
 
-Après avoir réussi à stocker `100` dans notre contrat intelligent, nous pouvons utiliser la fonction `retrieve` pour lire la valeur. Cliquez sur le bouton **retrieve** pour afficher la valeur, et vous devriez voir le nombre `100` retourné, comme indiqué ci-dessous dans la boîte bleue.
+After successfully storing `100` in our smart contract, we can use the `retrieve`  function to read the value. Click the **retrieve** button to view the value and we should see the number `100` returned, as shown below in the blue box.
 
-Vous aurez peut-être remarqué que MetaMask ne s'est pas affiché pour l'appel à la fonction `retrieve` ; cela s'explique par le fait que les _transactions_ ne sont nécessaires que pour les interactions avec les contrats intelligents qui nécessitent du gas, et la lecture des données d'un contrat intelligent ne nécessite pas de gas.
+You may have noticed that MetaMask did not pop up for the `retrieve` function call; this is because _transactions_ are only necessary for smart contract interactions that require gas, and reading data from a smart contract doesn't require any gas.
 
 ![remix-ide](../../static/img/remix/remix-11.avif)
 
 ## Core Scan
 
-Utilisons [Core Scan](https://scan.test.btcs.network/) pour vérifier notre contrat déployé. Copiez l'adresse du contrat depuis Remix et utilisez-la comme entrée pour une recherche sur Core Scan. Vous devriez trouver le contrat intelligent ainsi que des informations pertinentes, et une liste de toutes les interactions historiques avec le contrat, y compris notre transaction de déploiement et notre transaction `store`.
+Let's use [Core Scan](https://scan.test.btcs.network/) to check on our deployed contract. Copy the contract address from Remix and use it as the input for a search on Core Scan. You should find the smart contract along with some relevant information, plus a list of all historical contract interactions that includes our deployment transaction and our `store` transaction.
 
 ![remix-ide](../../static/img/remix/remix-12.avif)
