@@ -1,96 +1,96 @@
 ---
-sidebar_label: Seguridad
+sidebar_label: Security
 hide_table_of_contents: false
 sidebar_position: 2
-description: Conozca el modelo de seguridad de Core
+description: Learn about Core's Security Model
 ---
 
-# Seguridad Core
+# Core Security
 
 ---
 
-## Descripción general
+## Overview
 
-Core, como cadena de bloques EVM alineada con Bitcoin, aprovecha el mecanismo de consenso de Satoshi Plus para mantener una combinación óptima de seguridad, descentralización y escalabilidad. Este enfoque aprovecha las características de seguridad intrínsecas de Bitcoin al tiempo que permite una sólida funcionalidad de contrato inteligente y la integración de DeFi, lo que la convierte en una plataforma pionera en el espacio blockchain.
+Core, as a Bitcoin-aligned EVM blockchain, leverages the Satoshi Plus consensus mechanism to uphold an optimal blend of security, decentralization, and scalability. This approach harnesses the intrinsic security features of Bitcoin while enabling robust smart contract functionality and DeFi integration, making it a pioneering platform in the blockchain space.
 
-## Componentes de seguridad
+## Security Components
 
-### 1. Prueba de trabajo delegada (DPoW) y prueba de participación delegada (DPoS)
+### 1. Delegated Proof of Work (DPoW) and Delegated Proof of Stake (DPoS)
 
-Core incorpora estos dos poderosos mecanismos para formar un entorno blockchain equilibrado y seguro. El DPoW amplía el modelo de seguridad probado de Bitcoin al permitir a los mineros delegar el poder de hash al Core, beneficiándose así de la inmensa tasa de hash y el pedigrí de seguridad de Bitcoin. Por otro lado, DPoS permite que tanto BTC (a través de apuestas sin custodia) como los titulares de tokens CORE apuesten sus activos con validadores en la red Core, promoviendo la gobernanza descentralizada de la red y capas de seguridad adicionales.
+Core incorporates these two powerful mechanisms to form a balanced and secure blockchain environment. The DPoW extends the proven security model of Bitcoin by allowing miners to delegate hashing power to Core, thereby benefiting from Bitcoin’s immense hash rate and security pedigree. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting decentralized network governance and additional security layers.
 
-### 2. Seguridad del validador
+### 2. Validator Security
 
-Los validadores son fundamentales para mantener la integridad y seguridad de la cadena de bloques Core. Se seleccionan en función del peso combinado de los tokens apostados (CORE y BTC) y el poder de hash delegado, de modo que solo los nodos más confiables y respaldados manejen el proceso de consenso. Este sistema de soporte dual mitiga el riesgo de centralización y violaciones de seguridad.
+Validators are central to maintaining the integrity and security of the Core blockchain. They are selected based on the combined weight of staked tokens (CORE and BTC) and delegated hash power, so that only the most supported and trusted nodes handle the consensus process. This dual support system mitigates the risk of centralization and security breaches.
 
-### 3. Seguridad a través de incentivos
+### 3. Security Through Incentivization
 
-El mecanismo Satoshi Plus incentiva tanto a los mineros como a los apostadores (CORE y BTC) al proporcionar recompensas en tokens CORE, alineando sus intereses con la longevidad e integridad de la red. Este incentivo económico ayuda a mantener un nivel de participación sólido, crucial para mantener una red segura y descentralizada.
+The Satoshi Plus mechanism incentivizes both miners and stakers (CORE and BTC) by providing rewards in CORE tokens, aligning their interests with the network’s longevity and integrity. This economic incentivization helps sustain a robust participation level, crucial for maintaining a secure and decentralized network.
 
-## Protocolos e implementaciones de seguridad
+## Security Protocols and Implementations
 
-1. **Validación sólida de transacciones**
-   Los validadores principales son responsables de verificar las transacciones y crear nuevos bloques. La combinación única de DPoW, DPoS y Stake BTC sin custodia involucra a muchas partes interesadas y un capital significativo en la elección de validadores, lo que incentiva en gran medida la elección de validadores confiables y la participación honesta de esos validadores.
+1. **Robust Transaction Validation**
+   Core validators are responsible for verifying transactions and creating new blocks. The unique combination of DPoW, DPoS, and Non-Custodial BTC Staking involves many stakeholders and significant capital in the election of validators, thus heavily incentivizing the election of trustworthy validators and the honest participation of those validators.
 
-2. **Resiliencia de la red contra ataques**
-   La integración del poder hash de Bitcoin con las apuestas de CORE y BTC hace que Core sea excepcionalmente resistente contra varios tipos de ataques. El alto costo de atacar un sistema híbrido de este tipo, combinado con el consenso distribuido logrado a través de mecanismos delegados, mejora significativamente la seguridad de la red.
+2. **Network Resilience Against Attacks**
+   The integration of Bitcoin’s hash power with CORE and BTC staking makes Core exceptionally resilient against various types of attacks. The high cost of attacking such a hybrid system, combined with distributed consensus achieved through delegated mechanisms, significantly enhances network security.
 
-3. **Actualización y flexibilidad**
-   A diferencia de las cadenas de bloques tradicionales que se basan únicamente en una única forma de consenso, el modelo híbrido de Core permite adaptabilidad y actualización. Esta flexibilidad está diseñada para permitir que la red evolucione en respuesta a amenazas de seguridad emergentes o avances en la tecnología blockchain.
+3. **Upgradability and Flexibility**
+   Unlike traditional blockchains that rely solely on a single form of consensus, Core’s hybrid model allows for adaptability and upgradability. This flexibility is designed to enable the network to evolve in response to emerging security threats or advancements in blockchain technology.
 
-## Vectores de ataque y medidas de seguridad en el ecosistema central
+## Attack Vectors and Security Measures in the Core Ecosystem
 
-Core emplea una arquitectura de seguridad sólida para mitigar amenazas potenciales, integrando salvaguardias tecnológicas e incentivos económicos dentro del mecanismo de consenso de Satoshi Plus. A continuación se ofrece una vista ampliada de cómo se logran estas mitigaciones para cada vector de ataque potencial.
+Core employs a robust security architecture to mitigate potential threats, integrating both technological safeguards and economic incentives within the Satoshi Plus consensus mechanism. Here is an expanded view on how these mitigations are achieved for each potential attack vector.
 
-### Ataques de doble gasto
+### Double Spending Attacks
 
-- **Descripción:** El doble gasto implica que un atacante intenta gastar la misma moneda digital dos veces.
-- **Mitigación lograda por:**
-  - **Integración de PoW y PoS:** La utilización de la red minera de Bitcoin para su componente PoW agrega un poder de hash significativo, lo que hace que reescribir la cadena de bloques sea costosa y poco práctica. El componente PoS requiere que los validadores tengan participación en el juego, lo que hace que las actividades maliciosas perjudiquen financieramente al atacante.
-  - **Validación de transacciones mejorada:** Cada transacción es validada tanto por mineros como por participantes, lo que proporciona dos capas de verificación contra inconsistencias o fraude.
+- **Description:** Double spending involves an attacker attempting to spend the same digital currency twice.
+- **Mitigation Achieved By:**
+  - **Integration of PoW and PoS:** Utilizing Bitcoin’s mining network for its PoW component adds significant hashing power, which makes rewriting the blockchain costly and impractical. The PoS component requires validators to have skin in the game, making malicious activities financially damaging to the attacker themselves.
+  - **Enhanced Transaction Validation:** Every transaction is validated by both miners and stakers, providing dual layers of verification against inconsistencies or fraud.
 
-### 51% Ataques
+### 51% Attacks
 
-- **Descripción:** Estos ataques ocurren cuando una sola entidad obtiene el control de más de la mitad del poder computacional o la capacidad de participación de la red.
-- **Mitigación lograda por:**
-  - **Base de validadores descentralizados:** Al exigir que los validadores estén respaldados por contribuciones sustanciales de participación y hash, el sistema asigna una amplia distribución de control, diluyendo el poder que cualquier minero o grupo podría tener.
-  - **Desincentivos económicos:** El costo asociado con la adquisición de recursos suficientes para controlar más de la mitad de los aspectos de minería y participación de la red hace que dichos ataques sean económicamente desventajosos.
+- **Description:** These attacks occur when a single entity gains control of more than half of the network's computational power or staking capacity.
+- **Mitigation Achieved By:**
+  - **Decentralized Validator Base:** By requiring validators to be backed by substantial staking and hashing contributions, the system assigns a broad distribution of control, diluting the power any single miner or group might have.
+  - **Economic Disincentives:** The cost associated with acquiring sufficient resources to control more than half of both mining and staking aspects of the network makes such attacks economically disadvantageous.
 
-### Ataques de sibila
+### Sybil Attacks
 
-- **Descripción:** Un atacante crea numerosas identidades falsas para obtener una influencia desproporcionada en la red.
-- **Mitigación lograda por:**
-  - **Barreras económicas:** Los requisitos de participación y minería introducen importantes barreras financieras de entrada, lo que desalienta la proliferación de identidades falsas, ya que cada una debe estar respaldada por importantes recursos reales.
-  - **Verificación de identidad mediante participación y minería:** Los validadores son entidades conocidas que deben demostrar continuamente su compromiso mediante minería y participación continuas, por lo que solo los participantes genuinos controlan la red.
+- **Description:** An attacker creates numerous fake identities to gain disproportionate influence over the network.
+- **Mitigation Achieved By:**
+  - **Economic Barriers:** Staking and mining requirements introduce significant financial barriers to entry, discouraging the proliferation of false identities as each must be backed by substantial real resources.
+  - **Identity Verification via Staking and Mining:** Validators are known entities that must continuously prove their commitment through ongoing mining and staking, so only genuine participants control the network.
 
-### Ataques de largo alcance
+### Long-Range Attacks
 
-- **Descripción:** Los atacantes intentan revertir la cadena de bloques a un estado anterior construyendo una cadena alternativa desde un punto anterior.
-- **Mitigación lograda por:**
-  - **Puntos de control:** Core implementa puntos de control periódicos donde el estado de la cadena de bloques en ciertos intervalos se solidifica, evitando la reversión más allá de estos puntos.
-  - **Mecanismo de finalidad:** La cadena de bloques emplea mecanismos que confieren finalidad a los bloques después de un cierto número de confirmaciones, lo que hace imposible alterar la historia de la cadena más allá de estos bloques confirmados.
+- **Description:** Attackers attempt to revert the blockchain to a previous state by building an alternative chain from a past point.
+- **Mitigation Achieved By:**
+  - **Checkpointing:** Core implements periodic checkpointing where the state of the blockchain at certain intervals is solidified, preventing reversion past these points.
+  - **Finality Mechanism:** The blockchain employs mechanisms that confer finality on blocks after a certain number of confirmations, making it impossible to alter the chain’s history beyond these confirmed blocks.
 
-### Alineación de incentivos económicos
+### Economic Incentive Alignment
 
-- **Descripción:** Todos los participantes de la red tienen incentivos económicos para actuar en el mejor interés de la red.
-- **Mitigación lograda por:**
-  - **Distribución de recompensas:** Los mineros, los participantes y los validadores reciben recompensas que se correlacionan con su contribución a la seguridad de la red, alineando sus incentivos económicos con la salud y seguridad general de la cadena de bloques.
-  - **Sanciones por comportamiento deshonesto:** Los validadores y mineros corren el riesgo de perder sus apuestas o su potencial de ganancias futuras si se descubre que están actuando de manera maliciosa, lo que agrega una capa de disuasión financiera contra la mala conducta.
+- **Description:** All network participants are economically incentivized to act in the network's best interest.
+- **Mitigation Achieved By:**
+  - **Reward Distribution:** Miners, stakers, and validators receive rewards that correlate with their contribution to network security, aligning their economic incentives with the overall health and security of the blockchain.
+  - **Penalties for Dishonest Behavior:** Validators and miners stand to lose their stakes or future earning potential if found to be acting maliciously, adding a layer of financial deterrence against misconduct.
 
-### Ataques a la gobernanza
+### Governance Attacks
 
-- **Descripción:** Implican explotar el mecanismo de gobernanza para aprobar propuestas desfavorables o maliciosas.
-- **Mitigación lograda por:**
-  - **Requisitos de amplio consenso:** Las propuestas requieren un amplio consenso entre un conjunto diverso de partes interesadas, minimizando el riesgo de que un grupo pequeño y concentrado pueda afectar unilateralmente los cambios.
-  - **Proceso transparente de propuesta y votación:** Todas las acciones de gobernanza se registran de forma transparente en la cadena de bloques, lo que facilita la trazabilidad y la rendición de cuentas.
+- **Description:** These involve exploiting the governance mechanism to pass unfavorable or malicious proposals.
+- **Mitigation Achieved By:**
+  - **Broad Consensus Requirements:** Proposals require broad consensus across a diverse set of stakeholders, minimizing the risk that a small, concentrated group can unilaterally affect changes.
+  - **Transparent Proposal and Voting Process:** All governance actions are recorded transparently on the blockchain, fascilitating traceability and accountability.
 
-### Vulnerabilidades de los contratos inteligentes
+### Smart Contract Vulnerabilities
 
-- **Descripción:** Las vulnerabilidades en el código de contrato inteligente pueden aprovecharse para realizar robos o manipular servicios.
-- **Mitigación lograda por:**
-  - **Auditorías de código y revisiones de seguridad:** Las auditorías periódicas y exhaustivas del código de contrato inteligente realizadas por empresas de seguridad independientes ayudan a identificar y rectificar posibles vulnerabilidades.
-  - **Programas de recompensas por errores:** Alentar a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente ofreciendo recompensas por su descubrimiento.
+- **Description:** Vulnerabilities in smart contract code can be exploited to conduct thefts or manipulate services.
+- **Mitigation Achieved By:**
+  - **Code Audits and Security Reviews:** Regular and thorough audits of smart contract code by independent security firms help identify and rectify potential vulnerabilities.
+  - **Bug Bounty Programs:** Encouraging the community and security researchers to find and report bugs, so that many potential exploits are caught early by offering rewards for their discovery.
 
 ## Conclusion
 
-La estrategia de seguridad de Core está profundamente integrada con su mecanismo de consenso único, Satoshi Plus, que aprovecha las fortalezas tanto de las capacidades mineras de Bitcoin como de los mecanismos de participación que prevalecen en las cadenas de bloques modernas. Además, la estrategia de seguridad de Core es multifacética y aborda vulnerabilidades potenciales a través de salvaguardias técnicas, incentivos económicos y procesos impulsados ​​por la comunidad. Este enfoque integral no solo mejora la resiliencia de la red contra ataques sino que también fomenta un ecosistema sólido donde las partes interesadas están motivadas a mantener y proteger la integridad de la red. A medida que Core continúa desarrollando e integrando nuevas funciones, su enfoque fundamental en la seguridad sigue siendo un componente crítico en su diseño y operación, de modo que siga siendo una plataforma segura y confiable tanto para usuarios como para desarrolladores.
+Core's security strategy is deeply integrated with its unique consensus mechanism, Satoshi Plus, which leverages the strengths of both Bitcoin's mining capabilities and the staking mechanisms prevalent in modern blockchains. Furthermore, Core's security strategy is multi-faceted, addressing potential vulnerabilities through technical safeguards, economic incentives, and community-driven processes. This comprehensive approach not only enhances the resilience of the network against attacks but also fosters a robust ecosystem where stakeholders are motivated to maintain and protect the network's integrity. As Core continues to develop and integrate new features, its foundational focus on security remains a critical component in its design and operation, so that it remains a secure and trustworthy platform for users and developers alike.
