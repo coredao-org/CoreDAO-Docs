@@ -1,47 +1,47 @@
 ---
-sidebar_label: Vue d'Ensemble
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# stCORE - Staking liquide sur Core
+# stCORE - Liquid Staking on Core
 
 ---
 
-La blockchain Core propose plusieurs solutions innovantes telles que le staking Bitcoin Non-Custodial, et le Staking Liquide sous la forme de stCORE pour permettre aux utilisateurs de maximiser l'utilisation de leurs avoirs en CORE. Le staking liquide est un mécanisme qui permet aux détenteurs de CORE de gagner des récompenses liées au consensus Core tout en conservant la liquidité de leurs actifs.
+Core Blockchain offers several innovative solutions like Non-Custodial Bitcoin Staking, coreBTC, and Liquid staking in the form of stCORE for users to make the most of their CORE holdings. Liquid staking is a mechanism that allows CORE holders to earn Core Consensus rewards while maintaining the liquidity of their assets.
 
-## Qu'est-ce que le Staking Liquide ?
+## What is Liquidity Staking?
 
-Le staking de CORE aide à sécuriser le réseau, mais empêche les détenteurs de tokens de participer à différents protocoles DeFi, car leurs tokens ne peuvent pas être utilisés à d'autres fins pendant qu'ils sont stakés. La création d'un nouveau token de staking liquide (stCORE) ouvre de nombreuses possibilités, permettant aux détenteurs de tokens d'utiliser leurs actifs dans différentes interactions tout en continuant à recevoir les récompenses de staking. Essentiellement, le staking liquide libère la liquidité des tokens stakés, en s'appuyant sur les systèmes de staking existants.
+Staking CORE helps secure the network but prevents token holders from participating in different DeFi protocols as their tokens cannot be used for other purposes while staked. Minting a new Liquidity Staking Token (stCORE) unlocks a world of possibilities, allowing token holders to utilize their tokens in different interactions while continuing to earn the staking rewards. Essentially, liquid staking unlocks liquidity for staked tokens, building upon existing staking systems.
 
-## Objectif principal de stCORE
+## Primary Purpose of stCORE
 
-Les objectifs principaux de l'introduction du staking liquide via stCORE sur Core sont:
+The primary purposes of introducing liquid staking via stCORE on Core are:
 
-- Améliorer l'expérience utilisateur
-- Apporter plus d'utilité au token CORE
+- Improve user experience
+- Bring more utilities of CORE token
 
-Pour l'instant, les utilisateurs peuvent staker des tokens CORE directement auprès de validateurs individuels via https://stake.coredao.org. Cependant, deux inconvénients ont été soulevés par la communauté
+For the moment users can stake CORE tokens to individual validators directly through https://stake.coredao.org. However, there are two drawbacks raised by the community
 
-- Absence de fonctionnalité de capitalisation automatique : Les utilisateurs doivent manuellement réclamer et restaker leurs récompenses quotidiennement.
-- Instabilité de l'APR : Les staking de hash provenant des pools de minage Bitcoin sont moins fongibles et stables que les staking de CORE, ce qui entraîne des variations dans l'APR des validateurs.
+- There is no auto-compounding feature, and users need to claim rewards and restake them to validators manually everyday.
+- The hash stakes from Bitcoin mining pools are less fungible and not as stable as CORE stakes, which causes affected validators’ APR to change more dramatically.
 
-D'un autre côté, nous cherchons également à ajouter davantage d'utilités au token CORE lui-même. En introduisant stCORE, nous nous attendons à ce que le token CORE en bénéficie également. Par exemple, en offrant des paires de liquidité CORE/stCORE sur des échanges décentralisés.
+On the other hand, we are also seeking ways to add more utilities to the CORE token itself. By introducing stCORE, we expect the CORE token itself to also benefit. E.g. to provide CORE/stCORE liquidity pairs in decentralized exchanges.
 
-## Étapes impliquées dans le Staking Liquide sur Core
+## Steps involved in Liquid Staking on Core
 
-1. **Configuration du Staking:** Pour participer au staking liquide sur Core, les utilisateurs doivent convertir leurs avoirs en CORE en un format staké, appelé stCORE. Cela implique de verrouiller un certain montant de CORE et de le déposer dans le contrat de staking stCORE, qui déléguera automatiquement le CORE aux validateurs sélectionnés sur la chaîne.
+1. **Staking Setup:** To participate in Core liquid staking, users need to convert their CORE holdings into a staked CORE (stCORE) format. This involves locking up a certain amount of CORE and depositing it into the stCORE staking contract, which will automatically delegate the CORE to selected validators on the chain.
 
-2. **Émission de stCORE:** En retour pour le staking de CORE, les utilisateurs reçoivent des tokens de staking liquide, c'est-à-dire stCORE. Ces tokens représentent leurs avoirs en CORE stakés et peuvent être librement échangés ou transférés tout en continuant à générer des récompenses de staking.
+2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens,, i.e., stCORE. These tokens represent their staked CORE holdings and can be freely traded or transferred while still earning staking rewards.
 
-3. **Récompenses de staking:** Les utilisateurs peuvent générer un rendement annualisé sur la détention de stCORE, ce qui correspond à l'augmentation prévue de son ratio de conversion avec CORE. Cela signifie que les utilisateurs pourront échanger plus de CORE lorsqu'ils brûleront leur stCORE.
+3. **Staking Rewards:** Users can earn annualized return on holding stCORE which is the projected yearly increase in its conversion ratio with CORE. This means that users can exchange for more CORE when they burn their stCORE.
 
-## Avantages du Staking Liquide sur Core
+## Benefits of Liquid Staking on Core
 
-1. **Liquidité:** L'un des principaux avantages du staking liquide sur Core est qu'il permet aux utilisateurs de conserver la liquidité de leurs avoirs en CORE. Contrairement aux mécanismes de staking traditionnels proposés par d'autres plateformes, où les fonds sont verrouillés pour une période déterminée, le staking liquide sur Core offre une flexibilité en permettant aux utilisateurs d'échanger ou de transférer des tokens stCORE sans attendre la fin de la période de staking. Dans le modèle de staking de CORE, n'importe qui peut destaker ses CORE à tout moment, donc ils n'ont pas vraiment à attendre la fin de la période de staking. Notre modèle est "stake et gagne", "destake et arrête de gagner". Ainsi, les fonds sont verrouillés si vous souhaitez percevoir des gains.
+1. **Liquidity:** One of the major advantages of liquid staking on Core is that it allows users to maintain the liquidity of their CORE holdings. Unlike the traditional staking mechanisms offered by other platforms, where funds are locked for a specific period, Core liquid staking provides flexibility by enabling users to trade or transfer stCORE tokens without waiting for the staking period to end. In the CORE staking model, anyone can unstake their CORE anytime, so they don't really have to wait for staking period to end. Our CORE staking model is "stake & earn", "unstake & stop earning". So it's locked if you want the earning.
 
-2. **Potentiel de gains:** Le liquid staking sur Core permet aux utilisateurs de percevoir des récompenses sur leurs CORE stakés tout en participant à l'écosystème plus large de Core. Cela représente une opportunité de bénéficier à la fois des récompenses de staking et de la potentielle appréciation du prix de Core.
+2. **Earning Potential:** Core liquid staking allows users to earn rewards on their staked CORE while still participating in the broader Core ecosystem. This presents an opportunity to benefit from both staking rewards and potential price appreciation of Core.
 
 ## Conclusion
 
-Le staking liquide sur Core, sous la forme de stCORE, offre une option innovante et avantageuse pour les détenteurs de CORE, leur permettant de maximiser leurs rendements tout en conservant la liquidité de leurs actifs. En suivant les étapes nécessaires et en prenant en compte les risques associés, les utilisateurs peuvent bénéficier des récompenses de staking tout en participant activement à l'écosystème Core. À mesure que le réseau Core évolue et s'améliore avec chaque mise à jour, le staking liquide sur Core devrait devenir un choix de plus en plus populaire pour les détenteurs de CORE cherchant à optimiser leurs stratégies d'investissement.
+Liquid staking on Core in the form of stCore provides an innovative and impressive option for CORE holders to maximize their returns while maintaining the liquidity of their assets. By following the necessary steps and being mindful of the associated risks, users can benefit from staking rewards while actively participating in the Core ecosystem. As the Core network evolves and improves with the each upgrade, Core liquid staking is likely to become an increasingly popular choice for CORE holders seeking to optimize their investment strategies.
