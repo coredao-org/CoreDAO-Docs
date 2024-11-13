@@ -1,29 +1,29 @@
 ---
-sidebar_label: Ressources du Pont Core
+sidebar_label: Core Bridge Resources
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Ressources du Pont Core
+# Core Bridge Resources
 
 ---
 
-Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et permet des transferts d'actifs sans faille entre Core et le reste du monde de la blockchain. Le Pont Core se compose de deux parties : les contrats LayerZero sur Core qui facilitent les transferts inter-chaînes, et un ensemble de contrats de pont ou de tokens déployés à la fois sur Core et sur chaque blockchain à laquelle il est connecté. Le code de base audité du pont peut être trouvé [ici](https://github.com/LayerZero-Labs/wrapped-asset-bridge), et la liste complète des adresses de contrats de tokens de pont peut être trouvée [ici](./core-bridge-resources.md).
+The[ Core Bridge](https://bridge.coredao.org/) is powered by LayerZero, and enables seamless asset transfers between Core and the wider blockchain world. The Core Bridge consists of two parts: LayerZero contracts on Core that facilitate cross-chain transfers, and a set of bridge or token contracts deployed both on Core and each blockchain it’s connected to. The audited bridge codebase can be found[ here](https://github.com/LayerZero-Labs/wrapped-asset-bridge), and the full list of bridge token contract addresses can be found [here](./core-bridge-resources.md).
 
 ### LayerZero
 
-| Contrats LayerZero sur Core                                                                       |
+| LayerZero contracts on Core                                                                       |
 | ------------------------------------------------------------------------------------------------- |
-| [Endpoint LayerZero](https://scan.coredao.org/address/0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4) |
+| [LayerZero Endpoint](https://scan.coredao.org/address/0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4) |
 | [UltraLightNodeV2](https://scan.coredao.org/address/0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675)   |
 | [NonceContract](https://scan.coredao.org/address/0x2d61dcdd36f10b22176e0433b86f74567d529aaa)      |
 | [FPValidator](https://scan.coredao.org/address/0x3c2269811836af69497e5f486a85d7316753cf62)        |
 | [MPTValidatorV1](https://scan.coredao.org/address/0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7)     |
 | [TreasuryV2](https://scan.coredao.org/address/0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c)         |
 
-### Ponts et Tokens
+### Bridges and Tokens
 
-| CORE                                    | Adresses                                                                                                                    |
+| CORE                                    | Addresses                                                                                                                   |
 | --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | WrappedTokenBridge                      | https://scan.coredao.org/address/0xa4218e1f39da4aadac971066458db56e901bcbde |
 | WETH                                    | https://scan.coredao.org/address/0xeab3ac417c4d6df6b143346a46fee1b847b50296 |
@@ -34,7 +34,7 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | WBNB                                    | https://scan.coredao.org/address/0xdFBc618d3c48e553Cb197F42482A0795bef7fe28 |
 | stCORE                                  | https://scan.coredao.org/token/0xb3a8f0f0da9ffc65318aa39e55079796093029ad   |
 
-| ETHEREUM            | Adresses                                                                                                |
+| ETHEREUM            | Addresses                                                                                               |
 | ------------------- | ------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | https://etherscan.io/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233 |
 | WETH                | https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2 |
@@ -42,7 +42,7 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | USDT                | https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7 |
 | WBTC                | https://etherscan.io/address/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599 |
 
-| BNB Smart Chain (BSC) | Adresses                                                                                               |
+| BNB Smart Chain (BSC) | Addresses                                                                                              |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge                      | https://bscscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233 |
 | USDC                                     | https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d |
@@ -50,21 +50,21 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | BTCB                                     | 0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c                                                             |
 | WBNB                                     | 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c                                                             |
 
-| Polygon             | Adresses                                                                                                   |
+| Polygon             | Addresses                                                                                                  |
 | ------------------- | ---------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | https://polygonscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233 |
 | USDC                | https://polygonscan.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174 |
 | USDT                | https://polygonscan.com/address/0xc2132d05d31c914a87c6611c10748aeb04b58e8f |
 | WBTC                | https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6 |
 
-| OPTIMISM | Adresses                                   |
+| OPTIMISM | Addresses                                  |
 | -------- | ------------------------------------------ |
 | Bridge   | 0x29d096cD18C0dA7500295f082da73316d704031A |
 | USDC     | 0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85 |
 | USDT     | 0x94b008aA00579c1307B0EF2c499aD98a8ce58e58 |
 | WBTC     | 0x68f180fcCe6836688e9084f035309E29Bf0A2095 |
 
-| AVALANCHE                                                            | Adresses                                   |
+| AVALANCHE                                                            | Addresses                                  |
 | -------------------------------------------------------------------- | ------------------------------------------ |
 | Bridge                                                               | 0x29d096cD18C0dA7500295f082da73316d704031A |
 | Bitcoin Avalanche Bridged (BTC.b) | 0x2297aEbD383787A160DD0d9F71508148769342E3 |
@@ -72,7 +72,7 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | USDT                                                                 | 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7 |
 | WBTC                                                                 | 0x50b7545627a5162F82A992c33b87aDc75187B218 |
 
-| ARBITRUM | Adresses                                   |
+| ARBITRUM | Addresses                                  |
 | -------- | ------------------------------------------ |
 | Bridge   | 0x29d096cD18C0dA7500295f082da73316d704031A |
 | USDC     | 0xaf88d065e77c8cC2239327C5EDb3A432268e5831 |
