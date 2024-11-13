@@ -1,68 +1,68 @@
 ---
-sidebar_label: Canjear Bitcoin / Reclamar CORE
+sidebar_label: Redeem Bitcoin / Claim CORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Canjee Bitcoin apostado o reclame recompensas CORE
+# Redeem Staked Bitcoin or Claim CORE Rewards
 
-Core ofrece a los poseedores de Bitcoin apostar sus activos en la cadena de bloques Core para obtener ingresos pasivos en forma de tokens CORE. Para aprender cómo apostar sus activos de Bitcoin en Core y ganar recompensas, siga nuestra [guía] detallada (./stake-btc-guide.md). Una vez que haya apostado con éxito su Bitcoin en la cadena de bloques Core, el siguiente paso es aprender a reclamar sus recompensas CORE o canjear su Bitcoin apostado. Esta guía detallada se utilizará cuando vea que "**Canjear**" aparece debajo de "**Acción**" en el validador delegado que eligió anteriormente o "**Reclamar**" junto a "\*\*Delegated Hash & Core Rewards". \*\*' y/o '**Recompensas por apuesta de Bitcoin'**.
+Core offers Bitcoin holders to stake their assets onto the Core blockchain to ear passive income in the form of CORE tokens. To learn how to stake your Bitcoin assets onto Core and earn rewards, follow our detailed [guide](./stake-btc-guide.md). After you have succesfully staked your Bitcoin on the Core blockchain, next up is to learn to claim your CORE rewards or redeem your staked Bitcoin. This detailed guide will be utilized when you see ‘**Redeem**’ appear under ‘**Action**’ on the delegated validator you chose previously or ‘**Claim**’ next to ‘**Delegated Hash & Core Rewards**’ and or ‘**Bitcoin Staking Rewards’**.
 
-## Información de distribución de recompensas
+## Reward Distribution Information
 
-- **Distribución de recompensas:** Las recompensas en tokens CORE se distribuyen a los participantes como incentivos por su contribución a la seguridad y la gobernanza de la red.
-- **Fuente de recompensa:** Las recompensas provienen del grupo de recompensas consensuado compartido entre los participantes de los mecanismos duales de Core: dPoW (mineros de Bitcoin) y dPoS (participantes de Bitcoin y CORE).
+- **Distribution of Rewards:** CORE token rewards are distributed to stakers as incentives for their contribution to network security and governance.
+- **Reward Source:** Rewards are sourced from the consensus reward pool shared between participants of Core's dual mechanisms: dPoW (Bitcoin miners) and dPoS (Bitcoin and CORE stakers).
 
-## Canjear un Bitcoin apostado vencido
+## Redeem an Expired Staked Bitcoin
 
-Si su período de apuesta ha expirado, canjee sus activos de Bitcoin apostados desde billeteras Unisat o Xverse. Debe utilizar la misma dirección de billetera durante el proceso de apuesta para canjear su Bitcoin apostado vencido.
+If your staking period has expired, redeem your staked Bitcoin assets from either Unisat or Xverse wallet(s). You must use the same wallet address during the staking process to redeem your expired staked Bitcoin.
 
-1. Desde cualquier pantalla CORE, coloque el cursor sobre su billetera conectada en la esquina superior derecha → haga clic en **'Mi apuesta'**.
+1. From any CORE screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-18.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
 
-2. En la pantalla del delegador, busque la columna BTC(x) y haga clic.
+2. At the delegator screen, look for the column BTC(x) and click.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-19.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-19.avif)
 
-3. Ahora está viendo los validadores en los que previamente ha delegado su Bitcoin apostado. Busque los validadores que digan "**Expirado**" en "**Tiempo para canjear**" y proceda a hacer clic en "**Canjear**" en "**Acción**".
+3. You are now viewing the validators that you have previously delegated your staked Bitcoin to. Look for any validators that say ‘**Expired**’ under ‘**Redeem Time**’ and proceed to clicking ‘**Redeem**’ under ‘**Action**’.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-20.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-20.avif)
 
-4. Aparecerá una ventana emergente para canjear su Bitcoin. Para canjear Bitcoin, debe conectarse a la misma dirección de billetera de Bitcoin que la que inició la transacción de participación de Bitcoin.
+4. You will be met with a popup window to redeem your Bitcoin. In order to redeem the Bitcoin, you must connect to the same Bitcoin wallet address as the one initiating the Bitcoin staking transaction.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-21.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-21.avif)
 
-- Configure su dirección de recepción de Bitcoin para recibir Bitcoin desbloqueado. No es necesario que sea la misma que la dirección que inició la transacción de participación de Bitcoin.
-- Establezca su prioridad de velocidad de transacción
-- Haga clic en '**Crear transacción**'
+- Set your receiving Bitcoin Address to receive the unlocked Bitcoin. This does not need to be the same as the address that initiated the Bitcoin staking transaction.
+- Set your transaction speed priority
+- Click ‘**Create Transaction**’
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-22.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-22.avif)
 
-5. Firme la transacción con su billetera Bitcoin que conectó anteriormente y verifique que Bitcoin haya regresado a su dirección de recepción. (../../../../static/img/native-stake/native-stake-22. avif). (_Esto puede tardar unos minutos_).
+5. Sign the transaction with your Bitcoin wallet that you connected previously, and verify the Bitcoin has returned to your receiving address. (_This may take a few minutes_).
 
-## Reclame las recompensas de tokens CORE obtenidas de la delegación de Bitcoin Stake
+## Claim CORE token rewards earned from Bitcoin Staking delegation
 
-1\. Desde cualquier pantalla CORE, coloque el cursor sobre su billetera conectada en la esquina superior derecha y haga clic en "**Mi apuesta**".
+1\. From any CORE screen, hover over your connected wallet in the top right corner, click ‘**My Staking**’.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-23.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-23.avif)
 
-2. Haga clic en el botón "**Reclamar**" junto a "**BTC Stake Rewards**".
+2. Click the ‘**Claim**’ button next to ‘**BTC Staking Rewards**’
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-24.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-24.avif)
 
-3. Firme la transacción a través de la billetera MetaMask.
+3. Sign the transaction via MetaMask wallet.
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-25.png)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-25.png)
 
-3. Espere a que se envíe la transacción
+3. Wait for transaction to submit
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-26.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-26.avif)
 
-3. Verificar que la transacción sea exitosa
+3. Verify Transaction succeed
 
-![guía-de-stake-nativo](../../../../static/img/native-stake/native-stake-27.avif)
+![native-staking-guide](../../../../static/img/native-staking/native-staking-27.avif)
 
 #### Conclusion
 
-Al seguir esta guía, habrá aprendido con éxito cómo canjear su Bitcoin apostado desde la cadena de bloques Core, así como también cómo canjear las recompensas obtenidas como token CORE al delegar su Bitcoin apostado. ¡Estamos felices de que haya elegido viajar a BTCfi con Bitcoin sin custodia en Core!
+By following this guide, you have sucecesfulyl learned how to redeem your staked Bitcoin from the Core blockchain, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Non-Custodial Bitcoin Staking on Core!
