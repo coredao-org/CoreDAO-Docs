@@ -1,68 +1,68 @@
 ---
-sidebar_label: FAQ des délégateurs CORE
+sidebar_label: Delegator FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# FAQ des délégateurs CORE
+# Delegator FAQs
 
 ---
 
-### 1. Qu'est-ce qu'un délégateur sur la blockchain Core ?
+### 1. What is a delegator on the Core blockchain?
 
-Dans l'écosystème de Core, la délégation est un mécanisme fondamental qui permet aux mineurs de BTC ainsi qu'aux détenteurs de BTC et de tokens CORE de participer activement à la sécurité et à la gouvernance du réseau sans être eux-mêmes des validateurs. Ce processus implique que les délégateurs confient leur pouvoir de vote et opérationnel à des validateurs, qui utilisent ensuite les ressources déléguées (puissance de hachage BTC, BTC et CORE) pour participer au processus de consensus et aux décisions de gouvernance du réseau.
+In the Core ecosystem, delegation is a fundamental mechanism that allows BTC miners and BTC and CORE token holders to participate actively in the network's security and governance without being validators themselves. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (BTC hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
 
-### 2. Quels sont les différents types de délégations possibles sur la Core Chain grâce au Mécanisme de Consensus Satoshi Plus ?
+### 2. What are the different types of delegations that can be done on Core due to the Satoshi Plus Consensus Mechanism?
 
-1. **Délégation de BTC/CORE aux validateurs :** Ce type de délégation permet aux détenteurs de BTC et de tokens CORE de soutenir des validateurs spécifiques en leur déléguant leurs tokens. En retour, les validateurs utilisent la puissance agrégée pour sécuriser le réseau, valider les transactions et produire des blocs. Les délégateurs partagent les récompenses obtenues par leurs validateurs choisis, recevant une part des frais de transaction et des récompenses de bloc en proportion de leur mise.
-2. **Délégation de puissance de hachage des mineurs BTC :** Les mineurs de Bitcoin peuvent déléguer une partie de leur puissance de hachage à des validateurs sur le réseau Core. Cette forme unique de délégation utilise la sécurité et le travail déjà effectués sur le réseau Bitcoin pour renforcer la sécurité de la blockchain Core.
+1. **BTC/CORE Delegation to Validators:** This type of delegation allows BTC and CORE token holders to support specific validators by staking and delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks. Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
+2. **Hash Power Delegation from BTC Miners:** Bitcoin miners can delegate a portion of their computational hash power to validators on the Core network. This unique form of delegation leverages the security and work already being done on the Bitcoin network to enhance the security of Core blockchain.
 
-### 3) Comment peut-on déléguer des tokens CORE sur Core ?
+### 3) How can one delegate CORE tokens in Core?
 
-En déléguant des tokens CORE à des validateurs, les détenteurs de CORE peuvent aider à sécuriser le réseau et partager les récompenses du système. Veuillez consulter le [guide](../stake-and-delegate/delegating-core) détaillé sur la délégation de CORE pour plus d'informations.
+By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core) on CORE Delegation for more details.
 
-### 4. Quelles sont les périodes minimales de staking pour la délégation de BTC et de puissance de hachage BTC ?
+### 4. What are the minimum staking period requirements for BTC and BTC Hash Power delegation?
 
-Pour la délégation de BTC et de puissance de hachage BTC, la durée minimale requise est de **10 jours**, c'est-à-dire que vous ne pouvez pas annuler votre délégation avant **10 jours**. Techniquement, (\`CLTV timestamp - transaction confirmation timestamp > 10 jours\`).
+For BTC and BTC hash power delegation the minimum requirement is that of **10** days, i.e., you cannot un-delegate your stake prior to **10** days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 10 days\`).
 
-### 5. Quels sont les avantages de déléguer des tokens BTC ou CORE ?
+### 5. What are the benefits of delegating BTC or CORE tokens?
 
-Ce type de délégation permet aux détenteurs de BTC et de tokens CORE de soutenir des validateurs spécifiques en leur déléguant leurs tokens. En retour, les validateurs utilisent la puissance agrégée pour sécuriser le réseau, valider les transactions et produire des blocs. Les délégateurs partagent les récompenses obtenues par leurs validateurs choisis, recevant une part des frais de transaction et des récompenses de bloc en proportion de leur mise.
+This type of delegation allows BTC and CORE token holders to support specific validators by delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks. Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
 
-### 6. Comment déléguer de la puissance de hachage sur le réseau Core ?
+### 6. How does one delegate hash power on Core netowrk?
 
-En déléguant de la puissance de hachage à des validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et partager les récompenses du système. Veuillez consulter le [guide](../stake-and-delegate/delegating-hash) détaillé sur la délégation de puissance de hachage pour plus d'informations.
+By delegating hash power to Validators, BTC miners can help secure the network and get share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-hash) on hash power delegation for more details.
 
-### 7. Comment un délégateur peut-il maximiser ses récompenses ?
+### 7. How can a delegator maximize their rewards?
 
-Pour maximiser leurs récompenses, les délégateurs doivent rechercher des validateurs qui offrent des paiements généreux, mais qui n'ont pas déjà un montant important de tokens CORE ou de puissance de hachage déléguée. Moins un validateur a de tokens stakés, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'en a qu'un, il représente 50 % de la délégation totale de ce validateur. S'il délègue à un validateur avec 99 tokens CORE, il ne représente que 1 % de la délégation totale de ce validateur. Les paiements étant en partie déterminés par le pourcentage de la mise totale représentée par chaque délégateur, ils seront incités à trouver des validateurs avec de petites délégations.
+To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations.
 
-### 8. Peut-on changer de validateur après avoir délégué ?
+### 8. Can you change your validator once you have delegated?
 
-- **Puissance de hachage :** la puissance de hachage est déléguée séparément à chaque bloc BTC miné, et une fois déléguée, aucun autre transfert ne peut être effectué.
+- **Hash Power:** hash is delegated separately in each BTC block mined; and once delegated no further transfer can be made.
 
-- **Délégation de BTC :** les utilisateurs verrouillent leur BTC et désignent un validateur pour le staking sur Core. Ils peuvent transférer leur mise BTC à d'autres validateurs, mais perdront les récompenses de la journée en cours.
+- **BTC Delegation:** users lock up their BTC and designate a validator to stake to on Core. They can transfer BTC stake to other validators on Core, but will lose the rewards of the acting day.
 
-- **Délégation de CORE :** les utilisateurs peuvent transférer à d'autres validateurs et continueront de recevoir les récompenses de la journée en cours.
+- **CORE Delegation:** users can transfer to other validators and will still receive the rewards of the acting day.
 
-### 9. Y a-t-il des frais associés à la délégation de BTC, de tokens CORE ou de puissance de hachage ?
+### 9. Are there any fees associated with delegating BTC or CORE tokens or hash power?
 
-En dehors des frais de transaction/gas, Core ne facture pas de frais supplémentaires pour la délégation de la puissance de hachage BTC, du BTC ou des tokens CORE.
+Other than the transaction fee/gas charges, Core doesn’t charge any additional fees for delegation of BTC hash power, BTC or CORE tokens.
 
-### 10. Combien de temps faut-il pour commencer à recevoir des récompenses après la délégation de BTC, de CORE ou de puissance de hachage Bitcoin ?
+### 10. How long does it take to start earning rewards after delegation of BTC,CORE or Bitcoin hash power?
 
-- **Délégateurs de puissance de hachage BTC :** La blockchain Core utilise les enregistrements de blocs du réseau Bitcoin d'il y a sept jours pour les calculs du score hybride. De plus, après qu'un validateur soit élu, les récompenses de staking sont distribuées le deuxième jour du tour suivant. Ainsi, après avoir délégué leur puissance de hachage, les mineurs/pools de minage verront leur puissance de hachage utilisée dans le calcul de l'élection des Validateurs N+7 jours plus tard, et les récompenses seront réclamables N+8 jours plus tard.
+- **BTC hash power delegators:** The Core blockchain uses Bitcoin network block records from seven days ago for hybrid score calculations. Additionally, after a validator is elected, staking rewards are distributed on the second day of the switched round. Therefore, after delegating their hash power, miners/mining pools will have their hash power used in the Validator election calculation N+7 days later and will have claimable rewards N+8 days later.
 
-- **Délégateurs de CORE/BTC :** après avoir délégué leur CORE/BTC, leurs actifs seront utilisés pour le calcul de l'élection des validateurs pour le prochain tour et ils pourront réclamer leurs récompenses un tour plus tard.
+- **CORE/BTC delegators:** after delegating their CORE/BTC, delegators will have their assets used in the Validator election calculation for the next round and will have claimable rewards a round later.
 
-### 11. Comment les délégateurs peuvent-ils réclamer leurs récompenses ?
+### 11. How can delegators claim their rewards?
 
-Consultez le guide détaillé [ici](../stake-and-delegate/delegating-core#claiming-rewards) sur la façon de Réclamer les Récompenses obtenues grâce au staking de BTC et de CORE. En cas de délégation de puissance de hachage BTC, consultez [ici](../stake-and-delegate/delegating-hash#implementation).
+Refer to the detailed guide [here](../stake-and-delegate/delegating-core#claiming-rewards) on Claiming Rewards earned through staking of BTC and CORE. In case of BTC Hash Power delegation, refer [here](../stake-and-delegate/delegating-hash#implementation).
 
-### 12. Quand les récompenses sont-elles versées ?
+### 12. When are the rewards paid out?
 
-Les récompenses sont versées à la fin de chaque tour de consensus sur la blockchain Core.
+The rewards are paid out at the end of each round of consensus on the Core blockchain.
 
-### 13. Que se passe-t-il si un validateur cesse de fonctionner ou est pénalisé ?
+### 13. What happens if a validator stops performing or is penalized?
 
-Une mauvaise performance ou une mauvaise conduite des validateurs peut entraîner des pénalités telles que le slashing des mises et l'emprisonnement. Notez que les délégateurs ne perdront pas leurs actifs stakés, les pénalités sur les validateurs n'affecteront que les récompenses quotidiennes des délégateurs.
+Poor performance or misconduct by validators can result in penalties like slashing of stakes and jailing. Note that delegators will not lose their staked assets, the penalties on validators will only be affecting the delegator's daily rewards.
