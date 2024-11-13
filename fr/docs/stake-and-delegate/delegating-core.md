@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Délégation de Core
+# Delegating CORE
 
 ---
 
@@ -107,10 +107,10 @@ If we want to Undelegate our CORE, you will want to click the 3 dots at the end 
 
 ![image](https://github.com/user-attachments/assets/da7a3693-2799-4c04-8ba3-649c25694120)
 
-## Réclamation des récompenses
+## Claiming Rewards
 
-You can view reward information about your active delegations by selecting My Staking on the top right of the staking website. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour.
+You can view reward information about your active delegations by selecting My Staking on the top right of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
 
-To claim your rewards, simply select the Claim button on the top left and sign the transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Historical claim transactions are listed on the website's Claim tab, as shown below.
+To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's Claim tab, as shown below.
 
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
