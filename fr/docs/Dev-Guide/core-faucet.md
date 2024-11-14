@@ -1,27 +1,27 @@
 ---
-sidebar_label: Core Testnet Faucet
+sidebar_label: Faucet Testnet Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Testnet Faucet
+# Faucet Testnet Core
 
 ---
 
-To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**.
+Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des tokens de testnet Core, **tCORE**.
 
-## Steps to Obtain tCORE from Core Testnet Faucet
+## Étapes pour obtenir des tCORE depuis le Faucet Testnet Core
 
-1. Navigate to the [faucet](https://scan.test.btcs.network/faucet) website.
-2. Paste your address in the given textbox. Make sure you give the Core Testnet address of your wallet that you want to get funded with tCore.
-3. Complete the CAPTCHA
-4. Click the `Get tCORE` button. After requesting tCORE from the faucet, you'll see your MetaMask balance increase.
+1. Rendez-vous sur le site du [faucet](https://scan.test.btcs.network/faucet).
+2. Collez votre adresse dans la zone de texte fournie. Assurez-vous d'utiliser l'adresse de votre portefeuille Testnet Core que vous souhaitez alimenter en tCORE.
+3. Complétez le CAPTCHA
+4. Cliquez sur le bouton `Get tCORE`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
 
 ![using-faucet](../../static/img/faucet/faucet.png)
-:::caution
-Each address can request **only one tCORE per day**. If you've run out of tCORE and the faucet won't send you more because of the one tCORE daily limit, come back tomorrow and try again!
+:::Attention
+Chaque adresse peut demander **un seul tCORE par jour**. Si vous avez épuisé vos tCORE et que le faucet ne vous en envoie pas plus à cause de la limite quotidienne d'un tCORE, revenez demain et essayez à nouveau !
 :::
 
 :::note
-tCORE is only used for testing and does not have any value. Do not use it for real financial transactions.
+tCORE est uniquement utilisé pour les tests et n'a aucune valeur réelle. Ne l'utilisez pas pour des transactions financières réelles.
 :::
