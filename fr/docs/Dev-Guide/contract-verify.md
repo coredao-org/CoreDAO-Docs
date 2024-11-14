@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-Dans un souci de transparence, il est recommandé de vérifier tous les contrats sur [Core Scan](https://scan.coredao.org/). While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. Voici un aperçu des méthodes les plus courantes pour vérifier les contrats via le web, l'API et Hardhat.
+Dans un souci de transparence, il est recommandé de vérifier tous les contrats sur [Core Scan](https://scan.coredao.org/). Bien qu'il existe plusieurs façons d'effectuer la vérification de contrats, nous recommandons d'utiliser l'outil de vérification officiel de Core, [Core Scan](https://scan.coredao.org/), pour une fiabilité optimale. Voici un aperçu des méthodes les plus courantes pour vérifier les contrats via le web, l'API et Hardhat.
 
 :::note
 Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). Pour ce faire, assurez-vous que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity.
@@ -18,12 +18,12 @@ Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines
 
 La vérification Web est la stratégie de vérification de contrat intelligent la plus utilisée. Après avoir déployé votre contrat intelligent sur Core, vous pouvez utiliser son code source pour le vérifier sur Core Scan.
 
-1. Navigate to Core Scan website.
+1. Accédez au site web de Core Scan.
 
-- [For Mainnet](https://scan.coredao.org/)
+- [Pour le Mainnet](https://scan.coredao.org/)
 - Recherchez le contrat par adresse sur [Core Scan](https://scan.test.btcs.network).
 
-2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
+2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
 3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**_._
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
