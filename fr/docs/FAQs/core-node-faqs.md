@@ -1,117 +1,117 @@
 ---
-sidebar_label: Core Nodes FAQs
+sidebar_label: FAQ sur les Nœuds Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Nodes FAQs
+# FAQ sur les Nœuds Core
 
 ---
 
-### 1. What are the different types of nodes supported by Core Chain?
+### 1. Quels sont les différents types de nœuds pris en charge par Core Chain ?
 
-On the Core network, a Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
+Sur le réseau Core, un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
 
-- Normal full node: for private use.
-- Validator full node: acts as a validator on Core, validating blocks and transactions.
-- RPC full node: provides RPC services and responds to HTTP requests.
+- Nœud complet normal : pour un usage privé.
+- Nœud validateur : agit en tant que validateur sur Core, validant les blocs et les transactions.
+- Nœud RPC : fournit des services RPC et répond aux requêtes HTTP.
 
-Other than this Core also supports
+En plus de cela, Core prend également en charge :
 
-- Archive node: stores the entire blockchain data on Core Chain from the genesis block.
-- Snapshot nodes: stores snapshots for helping other nodes fast-track syncing to the network.
+- Nœud archive : stocke toutes les données de la blockchain Core Chain depuis le bloc de genèse.
+- Nœuds de snapshot : stockent des instantanés pour aider d'autres nœuds à synchroniser rapidement le réseau.
 
-### 2. What are the benefits of running a Core Node?
+### 2. Quels sont les avantages de gérer un nœud Core ?
 
-Running a Core Full Node offers multiple benefits such as enhancing the network's security and decentralization. Operators can independently verify transactions and are not dependent on third parties. Validators using full nodes can participate in block production and validation, earning potential rewards. Nodes configured as RPC servers provide valuable network services. The setup requires adherence to specific hardware and bandwidth specifications, varying by the node's function—basic, validator, or RPC server.
+L'exploitation d'un nœud complet Core offre plusieurs avantages, tels que l'amélioration de la sécurité et de la décentralisation du réseau. Les opérateurs peuvent vérifier les transactions de manière indépendante et ne dépendent pas de tiers. Les validateurs utilisant des nœuds complets peuvent participer à la production de blocs et à la validation, ce qui leur permet de potentiellement gagner des récompenses. Les nœuds configurés en tant que serveurs RPC fournissent des services précieux au réseau. L'installation nécessite de respecter des spécifications matérielles et de bande passante spécifiques, qui varient en fonction de la fonction du nœud (de base, validateur ou serveur RPC).
 
-### 3. What is a Core Full Node? What are the hardware/software requirements for running a Core Full node?
+### 3. Qu'est-ce qu'un nœud complet Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud complet Core ?
 
-A Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
+Un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
 
-- **Normal full node:** for private use.
-- **Validator full node:** acts as a validator on Core, validating blocks and transactions.
-- **RPC full node:** provides RPC services and responds to HTTP requests.
+- **Nœud complet normal :** pour un usage privé.
+- **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
+- **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
-**Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux
+**Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux
 
-**Testnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Testnet**
 
-| **Requirements** | **Details**                                                          |
-| ---------------- | -------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space                                              |
-| CPU              | 4 CPU cores                                                          |
-| RAM              | 8 Gigabytes                                                          |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 5Mbps |
+| **Requis**       | **Details**                                                                   |
+| ---------------- | ----------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace disque libre                                                    |
+| CPU              | 4 cœurs CPU                                                                   |
+| RAM              | 8 Go                                                                          |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
 
-**Mainnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Mainnet**
 
-| **Requirements** | **Details**                                                          |
-| ---------------- | -------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space                                              |
-| CPU              | 4 CPU cores                                                          |
-| RAM              | 32 Gigabytes                                                         |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 5Mbps |
+| **Requis**       | **Details**                                                                   |
+| ---------------- | ----------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace disque libre                                                    |
+| CPU              | 4 cœurs CPU                                                                   |
+| RAM              | 32 Go                                                                         |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
 
-### 4. What is a Core RPC Node? What are the hardware/software requirements for running a Core RPC node?
+### 4. Qu'est-ce qu'un nœud RPC Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud RPC Core ?
 
-RPC (Remote Procedure Call) nodes on the Core network play a crucial role in facilitating interaction between external applications and the Core blockchain. They serve as the interface through which developers and users can query and interact with the blockchain, making them essential for the functioning of decentralized applications (DApps) and other blockchain services.
+Les nœuds RPC (Remote Procedure Call) sur le réseau Core jouent un rôle essentiel en facilitant l'interaction entre les applications externes et la blockchain Core. Ils servent d'interface à travers laquelle les développeurs et les utilisateurs peuvent interroger et interagir avec la blockchain, ce qui les rend indispensables pour le bon fonctionnement des applications décentralisées (DApps) et d'autres services basés sur la blockchain.
 
-**Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux.
+**Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Testnet**
 
-| **Requirements** | **Details**                                                                                                                                                          |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU              | 8 CPU cores                                                                                                                                                          |
-| RAM              | 16 Gigabytes                                                                                                                                                         |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 50Mbps                                                                                                |
+| **Requis**       | **Details**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 16 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                                               |
 
-**Mainnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Mainnet**
 
-| **Requirements** | **Details**                                                                                                                                                          |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU              | 16 CPU cores                                                                                                                                                         |
-| RAM              | 32 Gigabytes                                                                                                                                                         |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 50Mbps                                                                                                |
+| **Requis**       | **Details**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 16 cœurs CPU                                                                                                                                 |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps                                                               |
 
-For more details, refer to [RPC Node Confgiurations Guide](../Node/config/rpc-node-config.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds RPC](../Node/config/rpc-node-config.md)
 
-### 5. What is a Core Validator Node? What are the hardware/software requirements for running a Core Validator node?
+### 5. Qu'est-ce qu'un nœud validateur Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud validateur Core ?
 
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s Satoshi Plus consensus framework.
+Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de Core Chain.
 
-**Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux.
+**Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Testnet**
 
-| **Requirements** | **Details**                                                                                                                                                          |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU              | 4 CPU cores                                                                                                                                                          |
-| RAM              | 8 Gigabytes                                                                                                                                                          |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 10Mbps                                                                                                |
+| **Requis**       | **Details**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 4 cœurs CPU                                                                                                                                  |
+| RAM              | 8 Go                                                                                                                                         |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-**Mainnet Full Node Hardware Specifications**
+**Spécifications matérielles pour le Mainnet**
 
-| **Requirements** | **Details**                                                                                                                                                          |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage          | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU              | 8 CPU cores                                                                                                                                                          |
-| RAM              | 32 Gigabytes                                                                                                                                                         |
-| Internet Speed   | A broadband Internet connection with upload/download speeds of 10Mbps                                                                                                |
+| **Requis**       | **Details**                                                                                                                                  |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-For more details, refer to [Validator Node Confgiurations Guide](../Node/config/validator-node-config.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds validateurs](../Node/config/validator-node-config.md)
 
-### 6. How do I set up a Core Chain full node?
+### 6. Comment puis-je configurer un nœud complet Core Chain ?
 
-Refer to the detailed guide [here](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) on how to set up and run a full node on the Core network.
+Consultez le guide détaillé [ici](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.
 
 <!-- ### 7. How can I secure my Core Chain full node?
 
