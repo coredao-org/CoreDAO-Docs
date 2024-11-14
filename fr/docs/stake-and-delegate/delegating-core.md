@@ -9,6 +9,7 @@ sidebar_position: 2
 ---
 
 Delegated Proof of Stake (DPoS) is one of the three fundamental components of the Satoshi Plus consensus mechanism, playing a pivotal role in enhancing the functionality, security, and efficiency of the blockchain network. In the Core network, DPoS is implemented through CORE delegations, allowing CORE holders to delegate their tokens to trusted validators. This process not only helps secure the network but also enables participants to share in the system’s rewards.\
+This process not only helps secure the network but also enables participants to share in the system’s rewards.\
 In this guide, we provide a step-by-step walkthrough on how to delegate your CORE tokens to validators within the Core network, empowering you to actively contribute to the ecosystem while reaping the benefits of your investment.
 
 ## Core Staking Website
@@ -107,10 +108,10 @@ If we want to Undelegate our CORE, you will want to click the 3 dots at the end 
 
 ![image](https://github.com/user-attachments/assets/da7a3693-2799-4c04-8ba3-649c25694120)
 
-## Claiming Rewards
+## Réclamation des récompenses
 
-You can view reward information about your active delegations by selecting My Staking on the top right of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
+You can view reward information about your active delegations by selecting My Staking on the top right of the staking website. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour.
 
-To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's Claim tab, as shown below.
+To claim your rewards, simply select the Claim button on the top left and sign the transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Historical claim transactions are listed on the website's Claim tab, as shown below.
 
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
