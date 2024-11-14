@@ -1,44 +1,44 @@
 ---
-sidebar_label: Bridging Tokens to Core With LayerZero
+sidebar_label: Passerelle de Jetons vers Core avec LayerZero
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Bridging Tokens to Core With LayerZero (OFT V2)
+# Passerelle de Jetons vers Core avec LayerZero (OFT V2)
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
 ---&#x20;
 
-In this [guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), we walk you through the process of setting up cross-chain token transfers using LayerZero's Omnichain Fungible Token (OFT) V2 protocol. Specifically, this guide focuses on enabling ERC-20 token transfers between Core Testnet and Base Sepolia Testnet, equipping developers with the necessary tools and knowledge to handle cross-chain token interactions.
+Dans ce [guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), nous vous accompagnons à travers le processus de mise en place de transferts de tokens cross-chain en utilisant le protocole Omnichain Fungible Token (OFT) V2 de LayerZero. Plus précisément, ce guide se concentre sur l'activation des transferts de tokens ERC-20 entre le Core Testnet et le Base Sepolia Testnet, équipant les développeurs des outils et connaissances nécessaires pour gérer les interactions de tokens cross-chain.
 
-Whether you're a beginner or an experienced developer, [this guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) will help you:
+Que vous soyez débutant ou développeur expérimenté, [ce guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) vous aidera à :
 
-Set up and configure Hardhat for cross-chain deployments.
-Deploy OFT contracts on Core Testnet and Base Sepolia Testnet.
-Configure LayerZero endpoints and establish trusted remotes for secure communication between blockchains.
-Execute cross-chain token transfers, allowing for efficient movement of assets across different blockchain networks.
+Configurer et paramétrer Hardhat pour les déploiements cross-chain.
+Déployer des contrats OFT sur Core Testnet et Base Sepolia Testnet.
+Configurer les endpoints LayerZero et établir des remotes de confiance pour une communication sécurisée entre blockchains.
+Exécuter des transferts de tokens cross-chain, permettant un déplacement efficace des actifs à travers différents réseaux blockchain.
 
-If you're ready to dive in, access the full guide [here](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
+Si vous êtes prêt à plonger, accédez au guide complet [ici](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
 
-## Major Points Covered in the Guide:
+## Points Principaux Couverts dans le Guide :
 
-- **Setting Up the Development Environment**: Install Node.js, pnpm, and Hardhat, then initialize your project to begin working with LayerZero's OFT V2 protocol.
+- **Configuration de l'Environnement de Développement :** Installez Node.js, pnpm et Hardhat, puis initialisez votre projet pour commencer à travailler avec le protocole OFT V2 de LayerZero.
 
-- **Deploying OFT Contracts**: Follow step-by-step instructions for deploying contracts that enable cross-chain token transfers between Core Testnet and Base Sepolia.
+- **Déploiement des Contrats OFT :** Suivez des instructions étape par étape pour déployer des contrats qui permettent les transferts de tokens cross-chain entre Core Testnet et Base Sepolia.
 
-- **Configuring Cross-Chain Peers**: Learn how to set trusted remotes and configure LayerZero pathways to ensure reliable and secure token transfers.
+- **Configuration des Pairs Cross-Chain :** Apprenez comment définir des remotes de confiance et configurer les pathways LayerZero pour assurer des transferts de tokens fiables et sécurisés.
 
-- **Executing Token Transfers**: Use Hardhat tasks to perform cross-chain token transfers, verifying the transactions on blockchain explorers.
+- **Exécution des Transferts de Tokens :** Utilisez les tâches Hardhat pour effectuer des transferts de tokens cross-chain, en vérifiant les transactions sur les explorateurs blockchain.
 
-- **Customizing the Token Setup**: While this guide focuses on bridging ERC-20 tokens, the OFT contracts can be adapted to meet different token requirements, whether fungible or non-fungible. You can modify the configuration for your unique token needs.
+- **Personnalisation de la Configuration du Token :** Bien que ce guide se concentre sur le bridging de tokens ERC-20, les contrats OFT peuvent être adaptés pour répondre à différents besoins en tokens, qu'ils soient fongibles ou non fongibles. Vous pouvez modifier la configuration pour vos besoins spécifiques en tokens.
 
-- For further customization and more in-depth configuration details, you can refer to [LayerZero’s documentation on OFT and EVM configuration](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+- Pour des personnalisations supplémentaires et des détails de configuration plus approfondis, vous pouvez vous référer à la [documentation de LayerZero sur la configuration OFT et EVM](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
 
-This resource will help guide you through any advanced setups not covered in this guide, ensuring you can tailor the process to your specific project requirements.
+Cette ressource vous aidera à vous guider à travers toute configuration avancée non couverte dans ce guide, en vous assurant que vous pouvez adapter le processus aux exigences spécifiques de votre projet.
 
-## Why This Guide is Important:
+## Pourquoi ce Guide est Important :
 
-By implementing LayerZero’s OFT V2, you unlock the ability to create omnichain token ecosystems where tokens can be efficiently transferred across multiple blockchains. Bridging tokens between Core Testnet and Base Sepolia is used as an example because of its speed, and low fees. Via the endpoints provided by LayerZero, you're able to transfer tokens between Core any many different EVM networks. — this guide shows how easy it is to extend your project’s reach by enabling interoperability across networks. This opens up new possibilities for decentralized applications (dApps) that require token interactions across various blockchains, enhancing liquidity, scalability, and functionality.
+En implémentant l'OFT V2 de LayerZero, vous débloquez la capacité de créer des écosystèmes de tokens omnichain où les tokens peuvent être transférés efficacement à travers plusieurs blockchains. Le bridging de tokens entre Core Testnet et Base Sepolia est utilisé comme exemple en raison de sa rapidité et de ses faibles frais. Via les endpoints fournis par LayerZero, vous êtes en mesure de transférer des tokens entre Core et de nombreux réseaux EVM différents. — ce guide montre à quel point il est facile d'étendre la portée de votre projet en permettant l'interopérabilité entre les réseaux. Cela ouvre de nouvelles possibilités pour les applications décentralisées (dApps) qui nécessitent des interactions de tokens à travers diverses blockchains, améliorant la liquidité, l'évolutivité et la fonctionnalité.
 
-Start your journey with the full guide [here](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) and explore the potential of LayerZero’s omnichain solutions. For more detailed configurations, make sure to visit [LayerZero’s official resources](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+Commencez votre parcours avec le guide complet [ici](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) et explorez le potentiel des solutions omnichain de LayerZero. Pour des configurations plus détaillées, assurez-vous de visiter les [ressources officielles de LayerZero](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
