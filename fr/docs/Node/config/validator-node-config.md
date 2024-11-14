@@ -1,45 +1,45 @@
 ---
-sidebar_label: Validator Node Configuration
+sidebar_label: Configuration des nœuds de validateur
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validator Node Configuration
+# Configuration des nœuds de validateur
 
 ---
 
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s Satoshi Plus consensus framework.
+Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de Core Chain.
 
-## System Requirements
+## Requis Systèmes
 
-There are several system requirements, both software and hardware, for setting up a validator node on the Core network.
+Il existe plusieurs exigences système, à la fois logicielles et matérielles, pour configurer un nœud de validateur sur le réseau Core.
 
-### Software
+### Logiciel
 
-- Currently, a Core Validator Node can only run on **Mac OS X** or on the **Linux** operating systems.
+- Actuellement, un nœud de validateur Core ne peut fonctionner que sous **Mac OS X** ou sous les systèmes d'exploitation **Linux**.
 
-### Hardware
+### Matériel
 
-Core nodes perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Each type of Core node has specific hardware requirements based on their expected needs.
+Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
 
-#### Testnet Validator Node Hardware Specifications
+#### Spécifications matérielles pour les nœuds de validateur sur le Testnet
 
-For Validator Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
+Pour les Nœuds de Validateur sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requirements   | Details                                                                                                                                                              |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU            | 4 CPU cores                                                                                                                                                          |
-| RAM            | 8 Gigabytes                                                                                                                                                          |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                                                              |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 4 cœurs CPU                                                                                                                                  |
+| RAM              | 8 Go                                                                                                                                         |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
 
-#### Mainnet Validator Node Hardware Specifications
+#### Spécifications matérielles pour les nœuds de validateur sur le Mainnet
 
-For Validator Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
+Pour les Nœuds de Validateur sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
-| Requirements   | Details                                                                                                                                                              |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU            | 8 CPU cores                                                                                                                                                          |
-| RAM            | 32 Gigabytes                                                                                                                                                         |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                                                              |
+| Requis           | Détails                                                                                                                                      |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
+| CPU              | 8 cœurs CPU                                                                                                                                  |
+| RAM              | 32 Go                                                                                                                                        |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
