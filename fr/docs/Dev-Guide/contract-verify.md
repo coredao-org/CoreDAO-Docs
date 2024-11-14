@@ -1,69 +1,69 @@
 ---
-sidebar_label: Contract Verification
+sidebar_label: Vérification de Contrats
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Contract Verification
+# Vérification de Contrats
 
 ---
 
-To promote transparency, it is considered best practice to verify all deployed contracts on the Core blockchain. While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. This document guides you through the most commonly used methods for contract verification: the Core Scan web tool, the Core REST API, and the Hardhat Verification plugin.
+Dans un souci de transparence, il est recommandé de vérifier tous les contrats sur [Core Scan](https://scan.coredao.org/). While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. Voici un aperçu des méthodes les plus courantes pour vérifier les contrats via le web, l'API et Hardhat.
 
 :::note
-Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris`  within the Solidity compiler settings.
+Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). Pour ce faire, assurez-vous que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity.
 :::
 
-## Web Verification via Core Scan
+## Vérification Web via Core Scan
 
-Web verification is the most commonly used smart contract verification strategy. After deploying your smart contract onto Core blockchain, you can use its source code to verify it on the Core Scan.
+La vérification Web est la stratégie de vérification de contrat intelligent la plus utilisée. Après avoir déployé votre contrat intelligent sur Core, vous pouvez utiliser son code source pour le vérifier sur Core Scan.
 
 1. Navigate to Core Scan website.
 
 - [For Mainnet](https://scan.coredao.org/)
-- [For Testnet](https://scan.test.btcs.network)
+- Recherchez le contrat par adresse sur [Core Scan](https://scan.test.btcs.network).
 
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
-3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
+3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**_._
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 
-4\. Fill in the required verification information on the page, specifically:
+3\. Remplissez les informations de vérification requises, notamment :
 
-- Contract address;
-- Compiler type: for simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, select the `Standard Json` compiler type;
-- Compiler version;
-- Open-source license type;
+- L'adresse du contrat;
+- Le type de compilateur : pour les contrats simples, sélectionnez `Single File`. Pour les contrats plus complexes avec des imports externes, sélectionnez `Standard Json`;
+- La version du compilateur;
+- Le type de licence open-source;
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 
-5\. On the next page, fill in the contract's Solidity source code.
+4\. Sur la page suivante, remplissez le code source du contrat en Solidity.
 
-If your contract has constructor parameters, it is recommended to specify them in the `Constructor Arguments` field, although it’s not mandatory. The constructor parameters should be formatted as ABI-encoded bytes. [Remix](https://remix.ethereum.org/) and other tools can generate these for you.
+Si votre contrat a des paramètres de constructeur, il est recommandé de les ajouter dans le champ `Constructor Arguments`, bien que cela ne soit pas obligatoire. Ces paramètres doivent être formatés en bytes encodés en ABI. Remix et d'autres outils peuvent générer ces paramètres pour vous.
 
-If you enabled optimization during contract compilation, select "Yes" for the `Optimization` field.
+Si vous avez activé l'optimisation lors de la compilation du contrat, sélectionnez "Oui" pour le champ `Optimization`.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
 
-6\. Click on **Verify and Publish** to finish the process.
+5\. Cliquez sur **Verify and Publish** pour terminer le processus.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
 
-Now your verified contract on Core Scan should look like this:
+Votre contrat vérifié sur Core Scan devrait maintenant être publié et accessible:
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-5.avif)
 
-## Core REST API Verification
+## Vérification via API
 
-You can find the guide to using the Core API to verify contracts [here](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls you must register on Core Scan and generate an API key.
+Vous pouvez trouver un guide pour utiliser l'API de Core afin de vérifier des contrats [ici](https://docs.coredao.org/docs/api/api-documents/contracts). Il est important de noter que pour effectuer des appels API, vous devez vous inscrire sur Core Scan et générer une clé API.
 
-If you're familiar with the Etherscan API, you're in luck! The API calls on Core are 100% compatible with the Etherscan API. You just need to replace the API key and endpoint URL and everything should work properly.
+Si vous êtes déjà familier avec l'API d'Etherscan, cela devrait être simple ! Les appels API sur Core sont 100 % compatibles avec l'API d'Etherscan. Il vous suffit de remplacer la clé API et l'URL de l'endpoint et tout devrait fonctionner normalement.
 
-## HardHat Verification
+## Vérification avec HardHat
 
-HardHat verification is the most convenient way for developers to verify smart contracts. For more information on Hardhat verification, refer to the official Hardhat verification guide located [here](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+La vérification via HardHat est le moyen le plus pratique pour les développeurs de vérifier des contrats intelligents. Pour plus d'informations, vous pouvez consulter le guide officiel de vérification de Hardhat [ici](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Please note that you’ll need to add Core networks as custom chains, as seen below in a sample HardHat config:
+Veuillez noter qu'il est nécessaire d'ajouter les réseaux Core en tant que chaînes personnalisées dans le fichier de configuration de HardHat. Voici un exemple de configuration pour HardHat :
 
 ```javascript
 /**
@@ -143,8 +143,8 @@ module.exports = {
 
 ```
 
-## Known Limitations
+## Limitations Connues
 
-- Currently Core only supports solidity compiler versions up to 0.8.19.
-- Libraries are not supported using API verifications.
-- If you run into issues verifying very large (1000+ lines) single file contracts, we recommend switching to `Standard JSON` format for verification.
+- Core prend actuellement en charge les versions du compilateur solc jusqu'à la version 0.8.19.
+- Les bibliothèques ne sont pas prises en charge avec la vérification via l'API.
+- Si vous avez des soucis à vérifier des contrats très volumineux (1000+ lignes) en un seul fichier, il est recommandé d'utiliser le format `Standard JSON` pour la vérification.
