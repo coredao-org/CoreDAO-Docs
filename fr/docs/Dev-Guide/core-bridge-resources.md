@@ -42,7 +42,7 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | USDT                | https://etherscan.io/address/0xdac17f958d2ee523a2206206994597c13d831ec7 |
 | WBTC                | https://etherscan.io/address/0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599 |
 
-| BNB Smart Chain (BSC) | Adresses                                                                                               |
+| BNB Smart Chain (BSC) | Addresses                                                                                              |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge                      | https://bscscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233 |
 | USDC                                     | https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d |
@@ -79,7 +79,7 @@ Le [Pont Core](https://bridge.coredao.org/) est alimenté par LayerZero et perme
 | USDT     | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
 | WBTC     | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f |
 
-| BASE   | Addresses                                  |
+| BASE   | Adresses                                   |
 | ------ | ------------------------------------------ |
 | Bridge | 0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879 |
 | USDC   | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913 |
