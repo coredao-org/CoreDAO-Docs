@@ -28,7 +28,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 
-3\. Remplissez les informations de vérification requises, notamment :
+4\. Remplissez les informations de vérification requises, notamment :
 
 - L'adresse du contrat;
 - Le type de compilateur : pour les contrats simples, sélectionnez `Single File`. Pour les contrats plus complexes avec des imports externes, sélectionnez `Standard Json`;
@@ -37,7 +37,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 
-4\. Sur la page suivante, remplissez le code source du contrat en Solidity.
+5\. Sur la page suivante, remplissez le code source du contrat en Solidity.
 
 Si votre contrat a des paramètres de constructeur, il est recommandé de les ajouter dans le champ `Constructor Arguments`, bien que cela ne soit pas obligatoire. Ces paramètres doivent être formatés en bytes encodés en ABI. Remix et d'autres outils peuvent générer ces paramètres pour vous.
 
@@ -45,7 +45,7 @@ Si vous avez activé l'optimisation lors de la compilation du contrat, sélectio
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
 
-5\. Cliquez sur **Verify and Publish** pour terminer le processus.
+6\. Cliquez sur **Verify and Publish** pour terminer le processus.
 
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
 
