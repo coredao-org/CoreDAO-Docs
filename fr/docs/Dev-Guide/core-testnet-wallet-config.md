@@ -1,64 +1,64 @@
 ---
-sidebar_label: Core Chain Testnet
+sidebar_label: Testnet Core Chain
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Chain Testnet
+# Connexion au Testnet de Core Chain
 
 ---
 
 :::note
-This is a detailed guideline for connecting to Core Testnet using the MetaMask wallet.
+Ceci est un guide détaillé pour se connecter au Testnet de Core en utilisant le portefeuille MetaMask.
 :::
 
-### Software Prequisites
+### Prérequis Logiciels
 
-1. [MetaMask Wallet Browser Extension](https://metamask.io/)
+1. [Extension de Navigateur MetaMask](https://metamask.io/)
 
-### MetaMask Wallet Setup
+### Configuration de MetaMask
 
-We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Testnet. You'll need to install MetaMask and set up your account before you can use it to connect to Core Testnet. You can find MetaMask setup instructions here.
+Nous recommandons d'utiliser le [portefeuille web MetaMask](https://metamask.io/) pour se connecter au Testnet Core. Vous devrez installer MetaMask et configurer votre compte avant de pouvoir l'utiliser pour vous connecter au Testnet Core. Vous pouvez trouver les instructions pour la configuration de MetaMask ici.
 
-### Adding Core Testnet to MetaMask
+### Ajouter le Testnet Core à MetaMask
 
-There are multiple ways to add Core Testnet configurations to your MetaMask Wallet, we have listed the most trusted and testest ways below.
+Il existe plusieurs façons d'ajouter les configurations du Testnet Core à votre portefeuille MetaMask, nous avons listé les méthodes les plus fiables et testées ci-dessous.
 
-#### Adding Network Manually
+#### Ajouter le réseau manuellement
 
-Once you've set up your MetaMask wallet, you can use it to connect to Core Testnet by adding Core Testnet's chain details in MetaMask's network settings. Navigate to `Settings->Networks` in MetaMask and click the `Add Network` button. Input the following information:
+Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'utiliser pour vous connecter au Core Testnet en ajoutant les détails de la chaîne Core Testnet dans les paramètres de réseau de MetaMask. Naviguez vers `Paramètres -> Réseaux` dans MetaMask et cliquez sur le bouton `Ajouter un Réseau`. Entrez les informations suivantes :
 
-- **Network Name:** Core Blockchain TestNet
-- **New RPC URL:** https://rpc.test.btcs.network
-- **Chain ID:** 1115
-- **Currency Symbol:** tCORE
-- **Block Explorer URL:** https://scan.test.btcs.network
+- **Nom du réseau :** Core Blockchain Testnet
+- **Nouvelle URL RPC :** https://rpc.test.btcs.network
+- **ID de Chaîne:** 1115
+- **Symbole de la devise :** tCORE
+- **URL de l'explorateur de blocs :** https://scan.test.btcs.network
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 
-#### Adding the Core network via Chainlist.org
+#### Ajouter le réseau Core via Chainlist.org
 
-1. Go to chainlist.org and search for ‘_core blockchain_’, make sure to check the _Include Testnets_ option.
+1. Rendez-vous sur Chainlist.org et recherchez ‘_core blockchain_’. Assurez-vous de cocher l'option _Inclure les Testnets_.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-1.png)
 
-2. Double check to make sure to choose the right network. Please check the details in the below snapshots — Chain ID, Currency etc. to ensure you will add the correct one.
+2. Vérifiez bien que vous choisissez le bon réseau. Vérifiez les détails dans les captures d'écran ci-dessous — ID de la chaîne, devise, etc., pour vous assurer que vous ajoutez le bon réseau.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-2.png)
 
-3. Click on _Connect Wallet_ and then choose MetaMask. Allow to connect to MetaMask wallet by confirming the MetaMask notifications.
+3. Cliquez sur _Connecter le Portefeuille_, puis choisissez MetaMask. Autorisez la connexion à MetaMask en confirmant les notifications.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 
-4. Switch to the Core testnet by clicking the _‘Switch Network’_ button.
+4. Cliquez sur le bouton _‘Changer de Réseau_‘ pour basculer vets le Core Testnet sur MetaMask.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-4.png)
 
-The Core Testnet is now added to your MetaMask.
+Le Testnet Core est maintenant ajouté à votre MetaMask.
 
-#### Adding Network via Core Testnet Explorer
+#### Ajouter le Réseau via Core Testnet Explorer
 
-If you using the Chrome MetaMask extension, you can use a quick shortcut to add Core Testnet to MetaMask. Visit [Core Testnet Explorer](https://scan.test.btcs.network/), scroll down to the bottom, and select the `Add Core Network` button. This will open a pop-up with all necessary network information loaded - you just need to confirm and approve.
+Si vous utilisez l'extension MetaMask pour Chrome, vous pouvez ajouter rapidement le Core Testnet à MetaMask. Visitez le [Core Testnet Explorer](https://scan.test.btcs.network/), faites défiler vers le bas et sélectionnez le bouton `Ajouter le Réseau Core`. Une fenêtre contextuelle s'ouvrira avec toutes les informations nécessaires sur le réseau – vous n'avez qu'à confirmer et approuver.
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
 
@@ -66,22 +66,22 @@ If you using the Chrome MetaMask extension, you can use a quick shortcut to add 
 
 #### Rebrand Updates
 
-`Satoshi Chain/BTCs` have been rebranded to `Core Chain/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
+La `Satoshi Chain/BTCs` a été rebaptisée `Core Chain/CORE`, respectivement. Si vous avez ajouté le Testnet avant le changement, vous devrez mettre à jour manuellement le Nom du Réseau et le Symbole de la Monnaie dans les paramètres de MetaMask ; sinon, vous ne pourrez pas utiliser la version actuelle du Core Testnet. Allez dans `Paramètres -> Réseau`, et sélectionnez `Core Testnet` pour ouvrir les paramètres du réseau. Mettez à jour le Nom du Réseau et le Symbole de la Monnaie avec les valeurs indiquées dans la [section ci-dessus](#adding-network-manually) et cliquez sur le bouton Sauvegarder. Vous êtes prêt à partir !
 :::
 
-### Funding Wallet with tCORE Tokens
+### Alimentation du Portefeuille avec des Tokens tCORE
 
-To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**. Follow the detailed [guide](./core-faucet.md) to fund your metamask account with tCORE tokens.
+Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des tokens de testnet Core, **tCORE**. Suivez le [guide](./core-faucet.md) détaillé pour alimenter votre compte MetaMask avec des tokens tCORE.
 
-### Sending tCORE Tokens
+### Envoi de Tokens tCORE
 
-You can use MetaMask to send tCORE to other addresses.
+Vous pouvez utiliser MetaMask pour envoyer des tCORE à d'autres adresses.
 
-1. Navigate to metamask wallet, make sure you are conencted to Core Testnet
-2. Click on the `Send` button
+1. Accédez à votre portefeuille MetaMask, assurez-vous que vous êtes connecté au Core Testnet
+2. Cliquez sur le bouton `Envoyer`
 
 ![send-metmask](../../static/img/testnet-wallet-config/send-tcore-1.png)
 
-3. Enter the amount of tCORE tokens you want to send and the address whom you want to send the tCORE tokens make sure its a Core Testnet Address. Then click next and confirm the transaction.
+3. Entrez le montant de tokens tCORE que vous souhaitez envoyer et l'adresse à laquelle vous souhaitez envoyer les tokens tCORE (assurez-vous qu'il s'agisse d'une adresse du Testnet Core). Cliquez ensuite sur Suivant et confirmez la transaction.
 
 ![send-metmask](../../static/img/testnet-wallet-config/send-tcore-2.png)
