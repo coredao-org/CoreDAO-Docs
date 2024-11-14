@@ -1,29 +1,29 @@
 ---
-sidebar_label: Using Hardhat
+sidebar_label: Utilisation de Hardhat
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core Chain using the Hardhat
+description: Déployer des contrats sur la Core Chain en utilisant Hardhat
 ---
 
-# Using Hardhat
+# Utilisation de Hardhat
 
 ---
 
-Hardhat is a popular development environment for EVM-compatible blockchains, consisting of multiple components for writing, compiling, debugging, and deploying smart contracts.
+Hardhat est un environnement de développement populaire pour les blockchains compatibles avec l’EVM, comprenant plusieurs composants pour écrire, compiler, déboguer et déployer des contrats intelligents.
 
-In this tutorial, learn how to compile, deploy and call smart contracts on Core TestNet using HardHatcheck. Obtain codebase for this tutorial from [here](https://github.com/coredao-org/hardhat-tutorial).
+Dans ce tutoriel, apprenez à compiler, déployer et appeler des contrats intelligents sur Core TestNet en utilisant Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Installation
 
-Navigate to your profile folder and follow the steps below to install HardHat (npm/node [v8.9.4 LTS or later](https://nodejs.org/en/) is required):
+Accédez à votre dossier de profil et suivez les étapes ci-dessous pour installer Hardhat (npm/node [v8.9.4 LTS ou une version ultérieure](https://nodejs.org/en/) est requise) :
 
 1. `npm init --yes`
 2. `npm install --save-dev hardhat`
 3. `npm install --save-dev chai @nomiclabs/hardhat-waffle`
 
-## Project Initialization
+## Initialisation du projet
 
-After installation, we can initialize HardHat by executing the `npx hardhat` command:
+Après l'installation, vous pouvez initialiser Hardhat en exécutant la commande `npx hardhat` :
 
 ```javascript
 $ npx hardhat    
@@ -45,16 +45,16 @@ $ npx hardhat
   Quit
 ```
 
-Once this project is initialized, you'll find the following project structure:
+Une fois le projet initialisé, vous trouverez la structure suivante :
 
-- `contracts`: for Solidity smart contracts.
-- `scripts`: for JavaScript/TypeScript scripts for contract interaction and other utilities.
-- `test`: for writing and running tests.
-- `hardhat.config.js`: HardHat configuration file.
+- `contracts`: pour les contrats intelligents Solidity.
+- `scripts`: pour les scripts JavaScript/TypeScript pour l'interaction avec les contrats et autres utilitaires.
+- `test`: pour écrire et exécuter les tests.
+- `hardhat.config.js`: fichier de configuration Hardhat.
 
-## Configure HardHat for Core Testnet
+## Configurer Hardhat pour le Core Testnet
 
-Copy the following into your `hardhat.config.js` file:
+Copiez ce qui suit dans votre fichier `hardhat.config.js`:
 
 ```javascript
 /**
@@ -104,13 +104,13 @@ Copy the following into your `hardhat.config.js` file:
  
 ```
 
-**Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `paris` under the solidity compiler settings in the `hardhat.config.js` file.
+**Assurez-vous que votre contrat intelligent suit les [directives de support Solidity de Core Chain](./smart-contract-guidelines.md)**. Pour cela, vérifiez que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity dans le fichier `hardhat.config.js`.
 
-> Note that we need to pass in private keys/mnemonic for Provider. You can create a `secret.json` to store them. Do not forget to add this file to the `.gitignore` of your project so that you don't accidentally check your private keys into a public repository. And make sure you keep this file in an absolutely safe place!
+> Remarque : Nous devons fournir des clés privées/mnémotechniques pour le fournisseur. Vous pouvez créer un fichier `secret.json` pour les stocker. N'oubliez pas d'ajouter ce fichier au `.gitignore` de votre projet afin de ne pas accidentellement publier vos clés privées dans un dépôt public. Assurez-vous de conserver ce fichier dans un endroit absolument sécurisé !
 
-## Writing Smart Contracts
+## Rediger des contrats intelligents
 
-For the sake of simplicity, let's use the `1_Storage.sol` file we're already familiar with from the Remix tutorial. Copy the code below into a new file called `Storage.sol` and save it to the `contracts` folder.
+Pour simplifier, utilisons le fichier `1_Storage.sol` que nous connaissons déjà du tutoriel Remix. Copiez le code ci-dessous dans un nouveau fichier appelé `Storage.sol` et enregistrez-le dans le dossier `contracts`.
 
 ```solidity
 // SPDX-License-Identifier: GPL-3.0
@@ -143,15 +143,15 @@ contract Storage {
 }
 ```
 
-## Contract Compilation
+## Compilation du contrat
 
-Run the following command to compile the contract:
+Exécutez la commande suivante pour compiler le contrat :
 
 `npx hardhat compile`
 
-## Contract Testing
+## Test du contrat
 
-Create a new file called `storage-test.js` containing the following code, and save it to the `test` folder:
+Créez un nouveau fichier appelé `storage-test.js` avec le code suivant et enregistrez-le dans le dossier `test` :
 
 ```javascript
 const { expect } = require("chai")
@@ -182,7 +182,7 @@ describe("Storage", function () {
 })
 ```
 
-To test our `Storage.sol` contract on the built-in HardHat network, run the following command:
+Pour tester notre contrat `Storage.sol` sur le réseau intégré de Hardhat, exécutez la commande suivante :
 
 `npx hardhat test --network hardhat`
 
@@ -199,17 +199,17 @@ $ npx hardhat test --network hardhat
   2 passing (1s)
 ```
 
-## Contract Deployment and Interaction
+## Déploiement et interaction avec le contrat
 
-HardHat makes it easy to use the `ethers.js` library to deploy and interact with our smart contracts. Create a new file called `deploy-and-call.js` in the `scripts` folder that contains the following code:
+Hardhat facilite l'utilisation de la bibliothèque `ethers.js` pour déployer et interagir avec nos contrats intelligents. Créez un nouveau fichier appelé `deploy-and-call.js` dans le dossier scripts avec le code suivant :
 
 ```javascript
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
+// Nous importons explicitement l'environnement d'exécution de Hardhat ici. Cela est optionnel
+// mais utile pour exécuter le script de manière autonome via `node <script>`.
 //
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
+// Vous pouvez également exécuter un script avec `npx hardhat run <script>`. Dans ce cas, Hardhat
+// compilera vos contrats, ajoutera les membres de l'environnement d'exécution de Hardhat
+// au scope global, et exécutera le script.
 const hre = require("hardhat");
 
 async function main() {
@@ -228,23 +228,23 @@ async function main() {
   console.log("call retrieve() again:", await storage.retrieve())
 }
 
-// We recommend this pattern to be able to use async/await everywhere
-// and properly handle errors.
+// Nous recommandons ce modèle pour pouvoir utiliser async/await partout
+// et gérer correctement les erreurs
 main().catch((error) => {
   console.error(error);
   process.exitCode = 1;
 });
 ```
 
-This script does a few things:
+Ce script fait plusieurs choses :
 
-- Deploys our smart contract;
-- Prints the deployed contract's address;
-- Calls the retrieve function to check the stored number;
-- Calls the store function to store a new number;
-- Calls the retrieve function to check the stored number again;
+- Déploie notre contrat intelligent ;
+- Affiche l'adresse du contrat déployé ;
+- Appelle la fonction retrieve pour vérifier le nombre stocké ;
+- Appelle la fonction store pour stocker un nouveau nombre ;
+- Appelle de nouveau la fonction retrieve pour vérifier le nombre stocké;
 
-Let's run the script by executing the following command:
+Exécutez le script en utilisant la commande suivante :
 
 `npx hardhat run scripts/deploy-and-call.js`
 
@@ -256,12 +256,12 @@ call store(), set value to 100
 call retrieve() again: BigNumber { value: "100" }
 ```
 
-We can see that the script correctly deployed the contract, stored a number, and confirmed that the number is now stored in the contract.
+Nous pouvons voir que le script déploie correctement le contrat, stocke un nombre et confirme que le nombre est bien stocké dans le contrat.
 
-We can use[ Core Scan](https://scan.test.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and called.
+Vous pouvez utiliser [Core Scan](https://scan.test.btcs.network/) pour rechercher l'adresse du contrat et vérifier que le contrat a été déployé et appelé avec succès.
 
 ![hardhat](../../static/img/hardhat/hardhat-1.avif)
 
-## Further Reading
+## Lecture supplémentaire
 
-For detailed instructions on using HardHat and plugins such as `ethers.js`, please visit[ HardHat's official website](https://hardhat.org/docs).
+Pour des instructions détaillées sur l'utilisation de Hardhat et des plugins comme `ethers.js`, veuillez visiter le [site officiel de Hardhat](https://hardhat.org/docs).
