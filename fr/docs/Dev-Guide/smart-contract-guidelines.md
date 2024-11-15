@@ -11,7 +11,7 @@ description: Directives pour la prise en charge de Solidity pour le développeme
 
 La Core Chain évolue constamment pour améliorer l'expérience des utilisateurs et des développeurs. Ce document a pour but de fournir des instructions claires aux développeurs sur les versions de Solidity prises en charge et les paramètres nécessaires pour s'assurer que vos contrats intelligents sont correctement déployés et vérifiables sur le réseau Core Chain. Pour maintenir la cohérence et la compatibilité, Core Chain prend en charge les versions de Solidity supérieures à 0.8.19 en utilisant l'EVM de **Paris**. Le respect des directives de version et de configuration spécifiées est crucial pour garantir le bon fonctionnement de vos contrats. Les sections suivantes détaillent les paramètres Solidity recommandés, y compris les options du compilateur et les procédures de vérification, afin de vous aider à déployer vos contrats de manière fluide et sécurisée sur la Core Chain.
 
-## Background
+## Contexte
 
 Actuellement, l'EVM de Core correspond à la version **Paris** et _ne prend pas en charge_ le déploiement et la vérification des contrats intelligents de la version **0.8.20^** avec les paramètres EVM par défaut. Core est en train de se mettre à jour vers la dernière version de l'EVM, avec une finalisation prévue pour le _début du troisième trimestre 2024_.
 
