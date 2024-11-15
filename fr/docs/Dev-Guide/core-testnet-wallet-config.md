@@ -64,7 +64,7 @@ Si vous utilisez l'extension MetaMask pour Chrome, vous pouvez ajouter rapidemen
 
 :::info
 
-#### Rebrand Updates
+#### Mises à Jour de la marque
 
 La `Satoshi Chain/BTCs` a été rebaptisée `Core Chain/CORE`, respectivement. Si vous avez ajouté le Testnet avant le changement, vous devrez mettre à jour manuellement le Nom du Réseau et le Symbole de la Monnaie dans les paramètres de MetaMask ; sinon, vous ne pourrez pas utiliser la version actuelle du Core Testnet. Allez dans `Paramètres -> Réseau`, et sélectionnez `Core Testnet` pour ouvrir les paramètres du réseau. Mettez à jour le Nom du Réseau et le Symbole de la Monnaie avec les valeurs indiquées dans la [section ci-dessus](#adding-network-manually) et cliquez sur le bouton Sauvegarder. Vous êtes prêt à partir !
 :::
