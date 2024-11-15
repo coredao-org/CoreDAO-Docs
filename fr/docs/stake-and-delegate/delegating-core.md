@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delegating CORE
+sidebar_label: Délégation de Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating CORE
+# Délégation de Core
 
 ---
 
