@@ -15,7 +15,7 @@ Les applications décentralisées (dApps) utilisent une blockchain ou des contra
 
 Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethers.js qui stocke des données dans un contrat intelligent sur la blockchain Core et les affiche aux utilisateurs. Le code complet de la dApp est disponible sur GitHub dans le répertoire [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core#building-a-dapp-on-core).
 
-## Learning Takeaways
+## Objectifs d'Apprentissage
 
 Ce tutoriel vous aidera à acquérir les connaissances suivantes :
 
@@ -332,7 +332,7 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 ```
 
-4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. From the `artifacts/contracts` folder in the root of your project. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
+4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
 
 ## Test local avec MetaMask
 
