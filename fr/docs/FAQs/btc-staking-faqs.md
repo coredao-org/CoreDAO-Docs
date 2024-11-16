@@ -67,6 +67,6 @@ Actuellement, en raison de certaines complexités techniques, il est possible qu
 
 Le protocole de la Core Chain et la sécurité du staking de Bitcoin non-custodial ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en matière de sécurité des contrats intelligents et de [confiance par des plateformes blockchain](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana, et Polygon, ainsi que des projets DeFi comme Sushiswap. Consultez les rapports d'audit du protocole de la Core Chain et du staking de Bitcoin non-custodial par des entreprises de premier plan [ici](../Learn/audit.md).
 
-### 11. What to do if `Redeem BTC` button is not working on the staking website?
+### 11. Que faire si le bouton `Redeem BTC` ne fonctionne pas sur le site de staking ?
 
-You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
+Vous pouvez retirer votre BTC en cliquant sur le bouton `Redeem` sur le [site officiel de staking](https://stake.coredao.org/) de Core. Si le bouton ne fonctionne pas, essayez de vider le cache de votre navigateur et réessayez. Si vous rencontrez toujours des problèmes, veuillez contacter le [Forum de Dev de Core](https://forum.coredao.org/).
