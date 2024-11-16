@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -26,7 +26,7 @@ Pour l'instant, les utilisateurs peuvent staker des tokens CORE directement aupr
 - Absence de fonctionnalité de capitalisation automatique : Les utilisateurs doivent manuellement réclamer et restaker leurs récompenses quotidiennement.
 - Instabilité de l'APR : Les staking de hash provenant des pools de minage Bitcoin sont moins fongibles et stables que les staking de CORE, ce qui entraîne des variations dans l'APR des validateurs.
 
-D'un autre côté, nous cherchons également à ajouter davantage d'utilités au token CORE lui-même. En introduisant stCORE, nous nous attendons à ce que le token CORE en bénéficie également. E.g. Par exemple, en offrant des paires de liquidité CORE/stCORE sur des échanges décentralisés.
+D'un autre côté, nous cherchons également à ajouter davantage d'utilités au token CORE lui-même. En introduisant stCORE, nous nous attendons à ce que le token CORE en bénéficie également. Par exemple Par exemple, en offrant des paires de liquidité CORE/stCORE sur des échanges décentralisés.
 
 ## Étapes impliquées dans le Staking Liquide sur Core
 
