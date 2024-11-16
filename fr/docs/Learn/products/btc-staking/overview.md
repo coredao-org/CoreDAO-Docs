@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Plus de [1 000 milliards de dollars](https://www.coingecko.com/en/coins/bitcoin) en Bitcoin sont restés inactifs, ne générant aucun rendement natif au cours de sa durée de vie. Étant donné que Bitcoin est une blockchain basée sur la Preuve de Travail (PoW), ses détenteurs ne bénéficient pas des avantages de rendement natif propres aux chaînes basées sur la Preuve d'Enjeu (PoS). Néanmoins, Core a apporté les avantages de la Preuve d'Enjeu à la blockchain de Preuve de Travail par excellence. Le Staking Non-Custodial de Bitcoin ajoute considérablement au modèle de sécurité de Core tout en permettant pour la première fois dans l’histoire un rendement natif pour le Bitcoin. Cette approche innovante permet aux détenteurs de Bitcoin de participer et de gagner des récompenses dans le cadre du mécanisme Satoshi Plus, sans renoncer à la garde de leurs Bitcoin, intégrant ainsi la puissance économique de Bitcoin avec les fonctionnalités avancées de la blockchain Core.
 
-## Overview
+## Aperçu
 
 Le staking non-custodial de Bitcoin permet aux détenteurs de Bitcoin de gagner des tokens CORE simplement en verrouillant leurs Bitcoin sur la blockchain Bitcoin, sans jamais céder la garde de leurs clés privées à un tiers, à un smart contract externe ou à un portefeuille MPC. En verrouillant leurs Bitcoin sur la blockchain Bitcoin, les stakers de Bitcoin contribuent à l'élection des validateurs de Core, renforçant ainsi la sécurité et la décentralisation du consensus Satoshi Plus.
 
@@ -93,7 +93,7 @@ L'implémentation par Core du staking natif de Bitcoin est complètement non-cus
 
 7. **Gagner des récompenses :** Les stakers de Bitcoin gagnent des récompenses en tokens CORE pendant toute la période de verrouillage, en fonction des performances du validateur et de la quantité de bitcoins stakés.
 
-8. **Unlocking Bitcoin:**  After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it after the timelock period ends.
+8. **Déverrouillage du Bitcoin :** Après l'expiration du timelock, le Bitcoin staké reste dans l'adresse du staker mais demeure verrouillé. Pour regagner l'accès et pouvoir dépenser leurs BTC, le staker doit les récupérer après la fin de la période de verrouillage.
 
 ## Conclusion
 
