@@ -28,7 +28,7 @@ Les validateurs jouent un rôle crucial dans la production des blocs et la valid
 
 3. Élection des validateurs :
    - Chaque tour, qui dure une journée, les validateurs ayant les meilleurs scores hybrides sont élus dans l'ensemble des validateurs.
-   - The top 27 validators with the highest scores are chosen to be part of the active validator set for that round.
+   - Les 27 validateurs ayant les meilleurs scores sont choisis pour faire partie de l'ensemble des validateurs actifs pour ce tour.
 
 4. Responsabilités des validateurs :
    - Les validateurs élus sont responsables de produire des blocs et de valider des transactions tout au long du tour.
@@ -73,7 +73,7 @@ Où :
 En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Les mineurs de Bitcoin peuvent voter pour des validateurs via leur PoW (en inscrivant les informations des validateurs dans la transaction coinbase des blocs qu'ils ont déjà minés), les détenteurs de tokens CORE peuvent voter pour un validateur avec leur PoS (en leur déléguant leurs tokens), et les stakers non-custodial de bitcoin peuvent voter pour un validateur par le même mécanisme. Ces composants de la DPoW, de la DPoS et du staking de Bitcoin sont pondérés pour déterminer le score hybride.
 
 4. **Production de Blocs :**
-   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. The present number of validators is **27**_, with the number of validators expected to increase over time as the network grows. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
+   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. Le nombre actuel de validateurs est de **27**, avec un nombre prévu d'augmenter au fur et à mesure que le réseau se développe. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
 
 5. **Distribution des Récompenses:**
    - Les récompenses sont distribuées en fonction des contributions à la sécurité du réseau, en utilisant la formule suivante :
