@@ -37,7 +37,7 @@ Un nœud complet Core stocke l'historique complet de la blockchain Core, permett
 
 **Spécifications matérielles pour le Testnet**
 
-| **Requis**       | **Details**                                                                   |
+| **Requis**       | **Détails**                                                                   |
 | ---------------- | ----------------------------------------------------------------------------- |
 | Stockage         | 1 To d'espace disque libre                                                    |
 | CPU              | 4 cœurs CPU                                                                   |
