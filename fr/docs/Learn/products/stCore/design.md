@@ -31,13 +31,13 @@ Après avoir étudié différents projets de LST (Liquid Staking Token) comme Li
 
 ## Perspective utilisateur
 
-### Mint
+### Création
 
-Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), ils peuvent créer du stCORE au même ratio de conversion. E.g. Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
+Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), ils peuvent créer du stCORE au même ratio de conversion. Par exemple Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
 
 ### Rachat
 
-Le système est conçu de manière à ce que les utilisateurs puissent toujours racheter la quantité de tokens stCORE qu'ils possèdent. E.g. Par exemple, si le ratio de conversion est de 1:1,1, alors ils peuvent racheter 100 stCORE et recevoir 110 CORE en retour.
+Le système est conçu de manière à ce que les utilisateurs puissent toujours racheter la quantité de tokens stCORE qu'ils possèdent. Par exemple Par exemple, si le ratio de conversion est de 1:1,1, alors ils peuvent racheter 100 stCORE et recevoir 110 CORE en retour.
 
 :::note
 Il existe une période de rachat par défaut de **7 jours**. Une fois que les utilisateurs demandent un rachat, ils doivent attendre 7 jours avant de pouvoir retirer leurs tokens CORE dans leur portefeuille.
@@ -67,7 +67,7 @@ Les méthodes opérateur dans le module `Earn` incluent :
 
 Notez que chaque fois qu'une création ou un rachat a lieu, le contrat `Earn` délègue des tokens CORE au `PledgeAgent` ou annule la délégation depuis `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
 
-When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
+Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
 
 Lors d'un redeem, le contrat `Earn` sélectionne les validateurs de manière aléatoire via -  `_randomIndex()`. Un index est choisi aléatoirement et utilisé comme point de départ pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
 
@@ -75,7 +75,7 @@ Lors d'un redeem, le contrat `Earn` sélectionne les validateurs de manière al�
 
 Chaque fois que
 
-- A mint happens, the caller can choose validator freely
+- Une création a lieu, l'utilisateur peut choisir librement un validateur
 - Un rachat a lieu, le système sélectionne les validateurs de manière aléatoire
 
 Ce mécanisme garantit que les tokens CORE détenus par le module Earn sont répartis de manière relativement équilibrée entre les validateurs.
@@ -105,7 +105,7 @@ Il est important de noter que dans le contrat `PledgeAgent` (le contrat de staki
 
 - Le montant de CORE **doit** être supérieur ou égal à 1
 
-And when they undelegate
+Et lorsqu'ils annulent une délégation
 
 - Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
 - Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
@@ -116,4 +116,4 @@ L'implémentation détaillée de ces logiques se trouve dans la méthode `_undel
 
 Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
 
-During redeem, the Earn contract chooses validators randomly - ` _randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
+Lors de la récupération, le contrat Earn choisit des validateurs de manière aléatoire grâce à `_randomIndex()`, un index aléatoire est sélectionné pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
