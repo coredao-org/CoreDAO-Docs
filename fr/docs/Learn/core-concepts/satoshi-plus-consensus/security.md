@@ -63,7 +63,7 @@ Core utilise une architecture de sécurité robuste pour atténuer les menaces p
   - **Barrières Économiques:** Les exigences de staking et de minage introduisent des barrières financières significatives à l'entrée, décourageant la prolifération d'identités fausses, car chacune doit être soutenue par des ressources réelles substantielles.
   - **Vérification de l'Identité via Staking et Minage:** Les validateurs sont des entités connues qui doivent continuellement prouver leur engagement par le minage et le staking continus, ainsi seuls les participants authentiques contrôlent le réseau.
 
-### Long-Range Attacks
+### Attaques à Longue Portée
 
 - **Description:** Les attaquants tentent de revenir à un état antérieur de la blockchain en construisant une chaîne alternative à partir d'un point passé.
 - **Mesures d'atténuation réalisées par:**
