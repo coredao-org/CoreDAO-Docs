@@ -32,7 +32,7 @@ Lors de la récupération, le contrat `Earn` choisit des validateurs de manière
 
 Chaque fois que :
 
-- A mint happens, the caller can choose validator freely
+- Une création a lieu, l'utilisateur peut choisir librement un validateur
 - Une récupération a lieu, le système choisit les validateurs de manière aléatoire.
 
 Ce mécanisme garantit presque que les tokens CORE détenus par le module Earn sont répartis de manière équitable entre différents validateurs.
@@ -49,7 +49,7 @@ Cependant, des déséquilibres peuvent survenir en raison d'opérations spécifi
 Ensuite, le ratio de conversion de stCORE/CORE peut être mis à jour. La formule est la suivante :
 
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply() 
+    Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply() 
 ```
 
 Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour** dans cette conception, le taux de conversion reste inchangé tout au long de la journée jusqu'à ce que le prochain turn round ait lieu.
