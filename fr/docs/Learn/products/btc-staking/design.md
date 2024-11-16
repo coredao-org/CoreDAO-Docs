@@ -1,5 +1,5 @@
 ---
-sidebar_label: Design
+sidebar_label: Conception
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-## Background
+## Contexte
 
 La méthodologie pour intégrer le staking de bitcoins repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le `OP_CHECKLOCKTIMEVERIFY` (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
 
@@ -145,7 +145,7 @@ Dans l'entrée, le redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06
 > **Note**
 > \> Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
 
-## Role of Relayers
+## Rôle des Relayeurs
 
 Dans un sens strict, le processus de staking de Bitcoin Non-Custodial se compose de deux étapes
 
