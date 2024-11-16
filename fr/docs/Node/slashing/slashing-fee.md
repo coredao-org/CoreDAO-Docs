@@ -13,7 +13,7 @@ sidebar_position: 2
 Les pénalités de slashing sont généralement appliquées lorsqu'un nœud ne parvient pas à produire un bloc pendant son tour désigné dans la procédure de minage en round-robin, comme décrit dans la section [Élection des validateurs](../validator/validator-election.md).
 
 - Si un validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont complètement supprimées.
-- If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far.
+- Si un nœud validateur ne parvient pas à miner les **49 premiers blocs** d'un tour, puis manque le dernier bloc du même tour, cela entraînera le slashing de l'ensemble des récompenses en tokens CORE que le validateur a accumulées jusqu'à présent.
 - S'il échoue dans les **50** derniers blocs du round, il perd tout ce qu'il a gagné.
 - Si un validateur échoue à miner **150 blocs** d'affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt effectué pour devenir validateur, et il est jail (incarcéré) pendant **trois** jours, ce qui signifie qu'il n'est plus éligible pour être élu dans l'ensemble des validateurs pendant cette période.
 
