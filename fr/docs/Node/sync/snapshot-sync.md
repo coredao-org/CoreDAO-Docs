@@ -78,7 +78,7 @@ It is recommended to run a fast node, which is a full node with the flag --tries
 ./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none
 :::
 
-### Monitor node status
+### Surveiller l'État du Nœud
 
 Surveillez le fichier de log à partir de `/node/logs/core.log` par défaut.
 
