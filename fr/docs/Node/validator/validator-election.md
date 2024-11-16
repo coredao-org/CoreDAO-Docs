@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-## Overview
+## Aperçu
 
 Les validateurs sont une partie cruciale du réseau Core. En plus de valider les transactions et produire des blocs, le processus d’élection des validateurs est l’endroit où tous les composants (DPoW, DPoS, et le staking non-custodial de Bitcoin) du consensus Satoshi Plus se réunissent. Le processus d'élection des validateurs est une caractéristique centrale du mécanisme de consensus Satoshi Plus utilisé par Core Chain. Ce processus garantit l’intégrité, la sécurité et l’efficacité de la blockchain en élisant les validateurs responsables de la validation des transactions et de la création de nouveaux blocs.
 
@@ -62,7 +62,7 @@ En laissant de côté les détails mathématiques, il s'agit essentiellement d'u
 C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que la scalabilité et la composition des chaînes PoS comme Ethereum. Permettre aux mineurs de Bitcoin et aux stakers de bitcoin de voter pour les validateurs permet à Core Chain de bénéficier de la robustesse légendaire de Bitcoin. De plus, comme Core Chain est compatible avec l'EVM, il est possible de construire des contrats intelligents, des dApps et d'autres applications sur Core Chain sans avoir à modifier le protocole Bitcoin sous-jacent.
 
 5. **Production de Blocs**:
-   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **21**, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente à **31 validateurs Q2 2025**. In Q2 2024, Core has already expanded its active validaotr set from **21** to **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core Chain est sécurisée tant que pas plus d'un tiers des validateurs ne soient malveillants.
+   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **21**, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente à **31 validateurs Q2 2025**. Au deuxième trimestre 2024, Core a déjà élargi son ensemble de validateurs actifs de **21** à **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core Chain est sécurisée tant que pas plus d'un tiers des validateurs ne soient malveillants.
 
 6. **Distribution des Récompenses**:
 
