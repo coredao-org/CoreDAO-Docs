@@ -1,28 +1,28 @@
 ---
-sidebar_label: Dual Staking FAQs
+sidebar_label: FAQ sur le Dual Staking
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Dual Staking FAQs
+# FAQ sur le Dual Staking
 
 ---
 
-### 1\. Are there any requirements for Dual staking?
+### 1\. Y a-t-il des requis pour le Dual Staking ?
 
-In order to enable higher yields for Bitcoin staking through Dual Staking, users must meet the following requirements:
+Pour bénéficier de rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
 
-1. Stake both CORE and Bitcoin simultaneously, ensuring that the amount of CORE staked exceeds the minimum dual staking threshold  **AND**
-2. The CORE staking wallet address _**must**_ match the designated CORE rewards address for Bitcoin staking to which the yield is paid to.
+1. Staker à la fois CORE et Bitcoin simultanément, en s'assurant que le montant de CORE staké dépasse le seuil minimum de dual staking **ET**
+2. L'adresse du portefeuille de staking CORE _**doit**_ correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est versé.
 
-### 2\. Under Dual Staking, do stakers earn staking rewards on both CORE and Bitcoin staked?
+### 2\. Avec le Dual Staking, les stakers gagnent-ils des récompenses de staking sur le CORE et le Bitcoin stakés ?
 
-Dual Staking is specifically designed to boost Bitcoin staking yields and does not impact the yield earned from CORE staking. As with independent staking of Bitcoin and CORE, users will receive separate rewards for each asset. However, if the amount of staked CORE exceeds a certain threshold, the Bitcoin staking yield will receive an additional boost. Note that, the additional yield percentages applies solely to Bitcoin staking, allowing Bitcoin stakers to maximize returns without altering the reward structure for CORE staking.
+Le Dual Staking est spécifiquement conçu pour augmenter les rendements du staking de Bitcoin et n'affecte pas le rendement obtenu du staking de CORE. Comme pour le staking indépendant de Bitcoin et de CORE, les utilisateurs recevront des récompenses séparées pour chaque actif. Cependant, si le montant de CORE staké dépasse un certain seuil, le rendement du staking de Bitcoin recevra un boost supplémentaire. Notez que les pourcentages de rendement supplémentaires s'appliquent uniquement au staking de Bitcoin, permettant aux stakers de Bitcoin de maximiser les retours sans modifier la structure de récompense pour le staking de CORE.
 
-### 3\. What are the steps institutional customers need to take to participate in Dual Staking?
+### 3\. Quelles sont les étapes que les clients institutionnels doivent suivre pour participer au Dual Staking ?
 
-Institutional customers seeking to benefit from Dual Staking _**must**_ stake both Bitcoin and CORE simultaneously, with the CORE amount staked being above a certain threshold to unlock the enhanced rewards percentages for Bitcoin staking.\
-Additionally, they are required to ensure that the CORE reward address for Bitcoin Staking matches the CORE staking address. This alignment is crucial, as it verifies that the staked Bitcoin and CORE belong to the same owner. Staking platforms should also verify that the CORE addresses align to ensure that the users receive the correct dual staking yield rates based on their combined staking activity.
+Les clients institutionnels souhaitant bénéficier du Dual Staking _**doivent**_ staker à la fois du Bitcoin et du CORE simultanément, avec un montant de CORE staké dépassant un certain seuil pour débloquer les pourcentages de récompenses améliorés pour le staking de Bitcoin.\
+De plus, ils doivent s'assurer que l'adresse de récompense CORE pour le staking de Bitcoin correspond à l'adresse de staking CORE. Cet alignement est crucial, car il vérifie que le Bitcoin et le CORE stakés appartiennent au même propriétaire. Staking platforms should also verify that the CORE addresses align to ensure that the users receive the correct dual staking yield rates based on their combined staking activity.
 
 ### 4\. For users already staking Bitcoin and CORE, is there anything they need to do to take advantage of Dual Staking?
 
