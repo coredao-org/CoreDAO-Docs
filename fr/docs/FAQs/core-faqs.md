@@ -17,7 +17,7 @@ Core Chain encourage les projets open source, et nous mettons donc tout notre co
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 - **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
 - **Twitter:** [https://twitter.com/Coredao_Org](https://twitter.com/Coredao_Org)
-- **Blog:** [https://medium.com/@core_dao](https://medium.com/@core_dao) or [https://coredao.org/explore/blog](https://coredao.org/explore/blog)
+- **Blog:** [https://medium.com/@core_dao](https://medium.com/@core_dao) ou [https://coredao.org/explore/blog](https://coredao.org/explore/blog)
 
 <!-- ### 3. How to query the current system parameters?
      -->
