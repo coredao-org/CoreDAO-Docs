@@ -27,7 +27,7 @@ Les principaux participants sans permission dans l'écosystème coreBTC comprenn
 - **Lockers :** Ils verrouillent le BTC dans un processus transparent, agissant en tant que dépositaires pendant le processus de conversion et assurant l'intégrité de la phase de création par une surcollatéralisation sur la blockchain Core.
 - **Guardians :** Ils surveillent les Lockers pour prévenir les mouvements non autorisés de BTC et assurer la conformité au protocole, offrant un contrôle contre la mauvaise gestion.
 - **Liquidators :** Ils surveillent la valeur de marché de la garantie et déclenchent la liquidation si la valeur tombe en dessous d'un certain seuil, maintenant ainsi la santé financière du système.
-- **Relayers:** They facilitate the transmission and verification of data between the Bitcoin and Core blockchains, ensuring accurate and timely minting and burning of coreBTC.
+- **Relayers :** Ils facilitent la transmission et la vérification des données entre les blockchains Bitcoin et Core, assurant une création et un burning précis et opportun de coreBTC.
 
 ### 6. Comment la sécurité de coreBTC est-elle assurée ?
 
