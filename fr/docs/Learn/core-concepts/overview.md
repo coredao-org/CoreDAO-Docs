@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 description: Obtenez une vue d'ensemble de Core - son objectif, sa mission et sa vision future
