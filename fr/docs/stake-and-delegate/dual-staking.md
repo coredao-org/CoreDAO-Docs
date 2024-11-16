@@ -4,110 +4,110 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Dual Staking - Unlock Higher APY for BTC Staking
+# Dual Staking - Débloquez un APY plus élevé pour le staking de BTC
 
 ---
 
 ## Introduction
 
-[Non-Custodial Bitcoin Staking](../Learn/products/btc-staking/overview) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining full control over their assets. This implementation provides a native mechanism for generating Bitcoin yield without introducing additional trust assumptions.
+[Le Staking de Bitcoin Non-Custodial](../Learn/products/btc-staking/overview) a été intégré à la blockchain Core en avril 2024, permettant aux utilisateurs de staker du Bitcoin et de gagner des rendements tout en conservant le contrôle total de leurs actifs. Cette mise en œuvre fournit un mécanisme natif pour générer des rendements en Bitcoin sans introduire d'hypothèses de confiance supplémentaires.
 
-To further enhance yield generation from Non-Custodial Bitcoin staking at scale, **Dual Staking** unlocks higher yield tiers by staking Bitcoin and CORE simultaneously. Since daily CORE emissions are fixed, those who stake CORE alongside Bitcoin earn higher reward tiers than those staking Bitcoin alone. The percentage of boost on yield is determined by staking CORE above multiple defined thresholds, with each threshold corresponding to increasing tiers of Bitcoin staking rewards. By linking higher Bitcoin staking rewards with the volume of CORE tokens staked, this approach encourages Bitcoin stakers to make a deeper commitment to the Core ecosystem and maximizes the yield returns for committed users.
+Pour améliorer davantage la génération de rendement du staking de Bitcoin Non-Custodial à grande échelle, le **Dual Staking** débloque des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE. Étant donné que les émissions quotidiennes de CORE sont fixes, ceux qui stakent du CORE aux côtés du Bitcoin gagnent des niveaux de récompense plus élevés que ceux qui stakent uniquement du Bitcoin. Le pourcentage de boost sur le rendement est déterminé en stakant du CORE au-dessus de plusieurs seuils définis, chaque seuil correspondant à des niveaux croissants de récompenses de staking de Bitcoin. En liant des récompenses de staking de Bitcoin plus élevées avec le volume de tokens CORE stakés, cette approche encourage les stakers de Bitcoin à s'engager plus profondément dans l'écosystème Core et maximise les rendements pour les utilisateurs engagés.
 
-## What Changes with Dual Staking?
+## Qu'est-ce qui change avec le Dual Staking ?
 
-From the perspective of how staking is performed, nothing fundamentally changes with Dual Staking. Users can still stake Bitcoin and CORE independently; however, by staking both Bitcoin and CORE simultaneously, they unlock the potential for higher returns on Bitcoin staking. Staking both assets is not mandatory, but rather an optional enhancement for Bitcoin holders seeking to maximize their yield. Think of this as a reward boost, where Bitcoin stakers will receive enhanced rewards as they increase the amount of CORE staked.
+Du point de vue de la manière dont le staking est effectué, rien ne change fondamentalement avec le Dual Staking. Les utilisateurs peuvent toujours staker du Bitcoin et du CORE indépendamment ; cependant, en stakant à la fois du Bitcoin et du CORE simultanément, ils débloquent le potentiel de rendements plus élevés sur le staking de Bitcoin. Staker les deux actifs n'est pas obligatoire, mais plutôt une amélioration optionnelle pour les détenteurs de Bitcoin souhaitant maximiser leur rendement. Pensez-y comme à un boost de récompense, où les stakers de Bitcoin recevront des récompenses améliorées à mesure qu'ils augmentent la quantité de CORE staké.
 
-Dual Staking strengthens the relationship between Bitcoin and the Core blockchains, aligning incentives and value across both ecosystems, by offering increased rewards for those who actively participate in both staking options, without introducing any new requirements or complexities to the staking process.
+Le Dual Staking renforce la relation entre le Bitcoin et les blockchains Core, alignant les incitations et la valeur à travers les deux écosystèmes, en offrant des récompenses accrues à ceux qui participent activement aux deux options de staking, sans introduire de nouvelles exigences ou complexités au processus de staking.
 
-## Key Features of Dual Staking
+## Principales caractéristiques du Dual Staking
 
-1. **Increased Rewards Through CORE Staking**: Bitcoin stakers can now stake CORE tokens alongside Bitcoin to unlock higher Bitcoin staking yields. To earn these enhanced staking rates, Bitcoin stakers are required to stake CORE above a certain threshold.
+1. **Récompenses augmentées grâce au staking de CORE :** Les stakers de Bitcoin peuvent désormais staker des tokens CORE aux côtés du Bitcoin pour débloquer des rendements de staking de Bitcoin plus élevés. Pour gagner ces taux de staking améliorés, les stakers de Bitcoin sont tenus de staker du CORE au-dessus d'un certain seuil.
 
-2. **Cumulative Reward Boost**: Once Dual Staking is adopted, Bitcoin stakers will receive higher rates as they increase the amount of CORE staked. This means stakers can maximize their returns by staking more CORE.
+2. **Boost de récompense cumulatif :** Une fois le Dual Staking adopté, les stakers de Bitcoin recevront des taux plus élevés à mesure qu'ils augmentent la quantité de CORE staké. Cela signifie que les stakers peuvent maximiser leurs rendements en stakant plus de CORE.
 
-3. **Risk-Free and Non-Custodial Staking**: Core's Non-Custodial Bitcoin Staking enables users to maintain full ownership of their assets throughout the staking process. Bitcoin remains securely in the user’s wallet and is unlocked when their chosen lock period expires. No external entity ever gains custody of the staker’s Bitcoin. Meanwhile, in exchange for stakers locking up their Bitcoin, they can delegate to Core validators that secure CORE and earn them rewards. This setup eliminates custodial risk and enhances security, as stakers participate in Core’s security without putting their Bitcoin at risk.
+3. **Staking Sans Risque et Non-Custodial :** Le staking de Bitcoin Non-Custodial de Core permet aux utilisateurs de conserver la pleine propriété de leurs actifs tout au long du processus de staking. Le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur et est débloqué lorsque la période de verrouillage choisie expire. Aucune entité externe ne prend la garde du Bitcoin du staker. Pendant ce temps, en échange du verrouillage de leur Bitcoin, ils peuvent déléguer aux validateurs Core qui sécurisent CORE et leur font gagner des récompenses. Cette configuration élimine le risque de garde et améliore la sécurité, car les stakers participent à la sécurité de Core sans mettre leur Bitcoin en danger.
 
-## How does Dual Staking Work?
+## Comment fonctionne le Dual Staking ?
 
-Dual Staking does not alter the staking process for Bitcoin and CORE. For more information on Non-Custodial Bitcoin Staking, please refer [here](../Learn/products/btc-staking/overview) and consult this detailed [guidebook](./delegating-core) on CORE delegation.
+Le Dual Staking n'altère pas le processus de staking pour le Bitcoin et le CORE. Pour plus d'informations sur le staking de Bitcoin non-custodial, veuillez vous référer [ici](../Learn/products/btc-staking/overview) et consulter ce [guide](./delegating-core) détaillé sur la délégation de CORE.
 
-Dual Staking creates an opportunity to unlock higher yields when both Bitcoin and CORE are staked simultaneously, with varying CORE staking thresholds  corresponding to different yield boost levels on Bitcoin staking rewards on the Core blockchain.
+Le Dual Staking crée une opportunité de débloquer des rendements plus élevés lorsque le Bitcoin et le CORE sont stakés simultanément, avec des seuils de staking de CORE variables correspondant à différents niveaux de boost de rendement sur les récompenses de staking de Bitcoin sur la blockchain Core.
 
-Bitcoin holders can [stake their Bitcoin](../Learn/products/btc-staking/stake-btc-guide) through Core's Non-Custodial Bitcoin Staking to accumulate CORE rewards. By subsequently [staking their CORE](delegating-core.md) tokens above the minimum threshold for Dual Staking, users unlock higher tiers of Bitcoin yields, paid in CORE. While Dual Staking enhances Bitcoin staking rewards, it has no impact on the yield generated from CORE staking itself.
+Les détenteurs de Bitcoin peuvent [staker leur Bitcoin](../Learn/products/btc-staking/stake-btc-guide) via le staking de Bitcoin Non-Custodial de Core pour accumuler des récompenses en CORE. En [stakant ensuite leurs tokens CORE](delegating-core.md) au-dessus du seuil minimum pour le Dual Staking, les utilisateurs débloquent des niveaux supérieurs de rendements de Bitcoin, payés en CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'a aucun impact sur le rendement généré par le staking de CORE lui-même.
 
-In order to enable higher yields for Bitcoin staking through Dual Staking, users must meet the following requirements:
+Afin de permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
 
-1. Stake both CORE and Bitcoin simultaneously, ensuring that the amount of CORE staked exceeds the minimum dual staking threshold  **AND**
-2. The CORE staking wallet address _**must**_ match the designated CORE rewards address for Bitcoin staking to which the yield is paid to.
+1. Staker à la fois du CORE et du Bitcoin simultanément, en s'assurant que la quantité de CORE staké dépasse le seuil minimum de dual staking **ET**
+2. L'adresse du portefeuille de staking CORE _**doit**_ correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est versé.
 
-### Boosted Yield Thresholds
+### Seuils de rendement boosté
 
-Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers.
+Actuellement, les récompenses Satoshi Plus sont allouées via trois pools, une pour chacune des trois entités participant à l'élection des validateurs Core, à savoir (1) les délégateurs de puissance de hachage, (2) les stakers de Bitcoin et (3) les stakers de CORE.
 
-Dual Staking does not affect these reward pools, but does enable Bitcoin stakers who also stake CORE tokens to earn a higher proportion of rewards in the Bitcoin Staking pool. In this section, we cover in detail the working of the grading algorithm with respect to dual staking.
+Le Dual Staking n'affecte pas ces pools de récompenses, mais permet aux stakers de Bitcoin qui stakent également des tokens CORE de gagner une proportion plus élevée de récompenses dans le pool de staking de Bitcoin. Dans cette section, nous couvrons en détail le fonctionnement de l'algorithme de gradation en ce qui concerne le dual staking.
 
-1. **Boosted Yield Levels**\
-   Under Dual Staking, there are 3 boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. For Solo-Stakers of only Bitcoin, a fourth tier exists with the lowest Bitcoin staking rate. It is important to note that the annual percentage yield (APY) for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics. As a result, the actual boosted yields may change daily based on market conditions.
+1. **Niveaux de rendement boosté**\
+   Sous le Dual Staking, il y a 3 niveaux de rendement boosté pour le staking de Bitcoin basés sur la proportion de CORE staké par rapport au Bitcoin staké. Pour les solo-stakers de Bitcoin seulement, un quatrième niveau existe avec le taux de staking de Bitcoin le plus bas. Il est important de noter que le rendement annuel en pourcentage (APY) pour le staking de Bitcoin peut fluctuer de manière significative, souvent en raison de prix variables et d'autres dynamiques du marché. En conséquence, les rendements boostés réels peuvent changer quotidiennement en fonction des conditions du marché.
 
-   - **P<sub>BASE</sub>** \= the BTC staking base rate
-   - **P<sub>Level1</sub>** \= the BTC staking base rate \+ Level 1 boosted yield
-   - **P<sub>Level2</sub>** \= the BTC staking base rate \+ Level 2 boosted yield
-   - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking base rate \+ Level 3 boosted yield
+   - **P<sub>BASE</sub>** \= le taux de base du staking BTC
+   - **P<sub>Level1</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 1
+   - **P<sub>Level2</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 2
+   - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= le taux de base du staking BTC \+ rendement boosté de Niveau 3
 
-2. **Staked CORE Thresholds and Staking Ratios (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-   The deciding mechanism for a Bitcoin staker’s yield tier  (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ration and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**:
+2. **Seuils de CORE staké et ratios de staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
+   Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, ou **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où **R** représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**:
 
-   - **Staked CORE Threshold for P<sub>Level1</sub>** \= BTC staked quantity \* Staking Ratio (**R<sub>1</sub>**)
-   - **Staked CORE Threshold for P<sub>Level2</sub>** \= BTC staked quantity \* Staking Ratio (**R<sub>2</sub>**)
-   - **Staked CORE Threshold for P<sub>MAX</sub>** \= BTC staked quantity \* Staking Ratio (**R<sub>3</sub>**)
-
-:::note
-The staked CORE and/or staked Bitcoin can be distributed across multiple active Core validators.
-:::
-
-3. **Boosted yield level determination for each (1) staked Bitcoin**
-   - If staked CORE amount  \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**
-   - If **R<sub>1</sub>** \=\< staked CORE amount **R**\< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
-   - If **R<sub>2</sub>** \=\< staked CORE amount **R** \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-   - If staked CORE amount  \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
+   - **Seuil de CORE staké pour P<sub>Niveau1</sub>** \= quantité de BTC staké \* Ratio de staking (**R<sub>1</sub>**)
+   - **Seuil de CORE staké pour P<sub>Niveau2</sub>** \= quantité de BTC staké \* Ratio de staking (**R<sub>2</sub>**)
+   - **Seuil de CORE staké pour P<sub>MAX</sub>** \= quantité de BTC staké \* Ratio de staking (**R<sub>3</sub>**)
 
 :::note
-Staking ratios and the number of levels are configurable and subject to change by governance vote.
+Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs validateurs Core actifs.
 :::
 
-### Example
+3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
+   - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
+   - Si **R<sub>1</sub>** \=\< quantité de CORE staké **R**\< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
+   - Si **R<sub>2</sub>** \=\< quantité de CORE staké **R** \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
+   - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
 
-The following is a simple example following the parameters outlined above:
+:::note
+Les ratios de staking et le nombre de niveaux sont configurables et sujets à modification par vote de gouvernance.
+:::
 
-- Staking Ratio **R<sub>1</sub>** \= 1,000
-- Staking Ratio **R<sub>2</sub>** \= 3,000
-- Staking Ratio **R<sub>3</sub>** \= 8,000
-- Staked BTC quantity \= 10 BTC
+### Exemple
 
-The **Staked CORE Thresholds** with the above variables are:
+Voici un exemple simple suivant les paramètres décrits ci-dessus :
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 1,000 \= 10,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 3,000 \= 30,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 8,000 \= 80,000 staked CORE
+- Ratio de staking **R<sub>1</sub>** \= 1 000
+- Ratio de staking **R<sub>2</sub>** \= 3 000
+- Ratio de staking **R<sub>3</sub>** \= 8 000
+- Quantité de BTC staké \= 10 BTC
 
-Hence, the staked BTC in this example will enjoy a yield of
+Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 10,000
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 10,000 but below 30,000
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 30,000 but below 80,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 80,000
+- Seuil de CORE staké pour **P<sub>Niveau1</sub>** \= 10 \* 1 000 \= 10 000 CORE staké
+- Seuil de CORE staké pour **P<sub>Level2</sub>** \= 10 \* 3 000 \= 30 000 CORE staké
+- Seuil de CORE staké pour **P<sub>Level3</sub>** \= 10 \* 8 000 \= 80 000 CORE staké
 
-## Who Can Benefit from Dual Staking?
+Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 
-Dual staking is designed for everyone from individuals to the largest financial institutions — whoever wants to earn higher Bitcoin staking rates. In addition to Bitcoin holders, Bitcoin miners can also leverage Dual Staking to optimize their earnings.
+- **P<sub>BASE</sub>** si la quantité de CORE staké est inférieure à 10 000
+- **P<sub>Niveau1</sub>** si la quantité de CORE staké est supérieure ou égale à 10 000 mais inférieure à 30 000
+- **P<sub>Niveau2</sub>** si la quantité de CORE staké est supérieure ou égale à 30 000 mais inférieure à 80 000
+- **P<sub>Niveau3</sub> (P<sub>MAX</sub>)** si la quantité de CORE staké est supérieure ou égale à 80 000
 
-Bitcoin Miners can earn CORE rewards by delegating their hash power to validators on the Core network and then stake both their Bitcoin and CORE tokens. By staking CORE tokens over the minimum dual staking threshold, they can unlock higher yields on their Bitcoin treasuries. This integration of mining rewards with the Dual Staking mechanism provides an opportunity for miners to maximize returns on both their mining and staking activities.
+## Qui peut bénéficier du Dual Staking ?
+
+Le dual staking est conçu pour tout le monde, des particuliers aux plus grandes institutions financières — quiconque souhaite obtenir des taux de staking de Bitcoin plus élevés. En plus des détenteurs de Bitcoin, les mineurs de Bitcoin peuvent également tirer parti du Dual Staking pour optimiser leurs gains.
+
+Les mineurs de Bitcoin peuvent gagner des récompenses en CORE en déléguant leur puissance de hachage aux validateurs sur le réseau Core, puis staker à la fois leur Bitcoin et leurs tokens CORE. En stakant des tokens CORE au-dessus du seuil minimum de dual staking, ils peuvent débloquer des rendements plus élevés sur leurs trésoreries de Bitcoin. Cette intégration des récompenses minières avec le mécanisme de Dual Staking offre aux mineurs l'opportunité de maximiser les rendements à la fois sur leurs activités minières et de staking.
 
 :::info
-For further questions or clarifications, please refer to the [Dual Staking FAQ section](../FAQs/dual-staking-faqs.md). Additionally, you may direct your inquiries to the [Core Dev Forum](http://forum.coredao.org) or [Core Discord Server](https://discord.gg/M2AGJKSG) for additional support.\
+Pour toute question ou clarification supplémentaire, veuillez vous référer à la [Section FAQ sur le Dual Staking](../FAQs/dual-staking-faqs.md). De plus, vous pouvez adresser vos demandes au [Forum des développeurs de Core](http://forum.coredao.org) ou au [Serveur Discord de Core](https://discord.gg/M2AGJKSG) pour obtenir un support supplémentaire.\
 :::
 
 ## Conclusion
 
-Dual Staking is a mechanism for providing sustainable Bitcoin staking rates at scale on Core. Further establishing Core as the leading end-to-end BTCfi platform, the CORE token is becoming the key to unlocking sustainable yield for Bitcoin.
+Le Dual Staking est un mécanisme pour fournir des taux de staking de Bitcoin durables à grande échelle sur Core. En établissant davantage Core comme la principale plateforme BTCfi de bout en bout, le token CORE devient la clé pour débloquer un rendement durable pour le Bitcoin.
