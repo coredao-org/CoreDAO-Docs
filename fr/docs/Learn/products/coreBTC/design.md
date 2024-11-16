@@ -48,7 +48,7 @@ Les Relayeurs jouent un rôle crucial en surveillant ces transactions Bitcoin et
 
 Le rachat du coreBTC en Bitcoin d'origine implique que l'utilisateur initie un processus de brûlage, où le coreBTC est détruit, et le Bitcoin correspondant est déverrouillé et renvoyé du Locker à l'adresse spécifiée par l'utilisateur. Tout le système est sécurisé par une gestion rigoureuse du collatéral et des protocoles de liquidation, ainsi les Lockers maintiennent un collatéral suffisant contre le Bitcoin qu'ils détiennent. De plus, des mécanismes de réduction (slashing) sont en place pour pénaliser toute activité frauduleuse des Lockers, protégeant ainsi l'intégrité et la fiabilité du coreBTC au sein de l'écosystème Core. Ce design améliore non seulement la liquidité et l'utilité du Bitcoin, mais conserve également ses propriétés fondamentales de décentralisation et de sécurité.
 
-## Minting and Pegging In coreBTC
+## Création et parité du coreBTC
 
 Verrouiller du Bitcoin et le lier au coreBTC est essentiel pour maintenir l'intégrité et la fiabilité de cet actif synthétique:
 
