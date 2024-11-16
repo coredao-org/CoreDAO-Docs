@@ -26,4 +26,4 @@ Vous pouvez visualiser vos fonds stakés en recherchant l'adresse de staking sur
 
 ### Pourquoi mon actif staké n'est-il pas visible dans mon portefeuille ?
 
-Currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core's official Non-Custodial BTCStaking Website](https://stake.coredao.org/).
+Actuellement, en raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lors de la vérification via CLI. Toutefois, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés sur le [site officiel de Core dédié au Staking de BTC Non-Custodial](https://stake.coredao.org/).
