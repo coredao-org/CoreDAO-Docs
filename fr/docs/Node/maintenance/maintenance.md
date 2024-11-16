@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Node Maintainence
+# Maintenance des Nœuds
 
 ## Binaire
 
@@ -59,10 +59,10 @@ Comment élaguer :
 
 `block-amount-reserved` correspond au nombre de blocs anciens que vous souhaitez conserver après l'élagage.
 
-## Light Storage
+## Stockage Léger
 
 Lorsque le nœud plante ou est tué de force, il synchronisera à partir d'un bloc datant de quelques minutes ou heures. Cela est dû au fait que l'état en mémoire n'est pas persisté dans la base de données en temps réel, et le nœud doit rejouer des blocs depuis le dernier point de contrôle une fois redémarré. Le temps de relecture dépend de la configuration `TrieTimeout` dans le fichier config.toml.  Nous vous suggérons d'augmenter cette valeur si vous pouvez tolérer un long temps de relecture afin que le nœud puisse maintenir un stockage léger.
 
-## Upgrade Geth
+## Mise à Jour de Geth
 
 Veuillez consulter [ce guide](network-upgrade.md)
