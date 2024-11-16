@@ -63,6 +63,6 @@ Consultez le guide détaillé [ici](../stake-and-delegate/delegating-core#claimi
 
 Les récompenses sont versées à la fin de chaque tour de consensus sur la blockchain Core.
 
-### 13. What happens if a validator stops performing or is penalized?
+### 13. Que se passe-t-il si un validateur cesse de fonctionner ou est pénalisé ?
 
 Une mauvaise performance ou une mauvaise conduite des validateurs peut entraîner des pénalités telles que le slashing des mises et l'emprisonnement. Notez que les délégateurs ne perdront pas leurs actifs stakés, les pénalités sur les validateurs n'affecteront que les récompenses quotidiennes des délégateurs.
