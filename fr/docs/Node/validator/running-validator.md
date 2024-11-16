@@ -1,10 +1,10 @@
 ---
-sidebar_label: Running Validator Nodes
+sidebar_label: Configuration des Nœuds Validateurs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Running Validator Nodes
+# Configuration des Nœuds Validateurs
 
 ---
 
