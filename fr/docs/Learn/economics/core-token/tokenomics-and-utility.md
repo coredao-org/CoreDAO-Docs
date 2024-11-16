@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-## Overview
+## Aperçu
 
 La tokenomics de CORE, le token utilitaire et de gouvernance natif de la blockchain Core, est structurée pour refléter une philosophie profondément ancrée dans la décentralisation, la durabilité et l'alignement à long terme des incitations. Avec une offre plafonnée qui reflète le modèle de rareté de Bitcoin et une stratégie de distribution axée sur la décentralisation, Core est l'une des blockchains les plus équitables lancées de l'histoire.
 
@@ -41,7 +41,7 @@ Les tokens CORE remplissent plusieurs fonctions essentielles au sein du réseau 
 - **Staking:** Core permet de staker à la fois des tokens Bitcoin et CORE sur le réseau Core, contribuant à sécuriser davantage le réseau et permettant aux stakers de gagner des récompenses.
 - **Participation à la Gouvernance:** Les détenteurs de tokens peuvent participer à la gouvernance on-chain, influençant ainsi l'avenir du réseau Core.
 
-## Sound Supply and Emissions
+## Offre et Émissions Strictes
 
 En suivant un plafond strict de **2,1 milliards** de tokens, CORE adopte le principe de rareté absolue de Bitcoin, offrant une résistance à l'inflation. Les récompenses des blocs CORE sont conçues pour être distribuées sur une période de **81-ans** afin d'inciter une participation durable au réseau.
 
