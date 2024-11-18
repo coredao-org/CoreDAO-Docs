@@ -14,7 +14,7 @@ Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos
 
 Usaremos algunas URL estándar a lo largo de esta guía, que será útil revisar antes de comenzar.
 
-#### MainNet
+#### Red principal
 
 <table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>URL de control de estado</strong><br/>><em>https://thegraph-is.coredao.org</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
@@ -26,7 +26,7 @@ Usaremos algunas URL estándar a lo largo de esta guía, que será útil revisar
 
 #### Crear repositorio
 
-Para crear su repositorio de subgrafos, siga la [guía oficial de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). Para implementar en la red Core Graph, asegúrese de configurar el nombre de su red en `subgraph.yaml` como núcleo. Dependiendo de su subgrafo, es posible que haya algunos cambios más que realizar Encontrará detalles adicionales en la sección de ejemplos completa a continuación. You’ll find additional details in the full example section below.
+Para crear su repositorio de subgrafos, siga la [guía oficial de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). Para implementar en la red Core Graph, asegúrese de configurar el nombre de su red en `subgraph.yaml` como núcleo. Dependiendo de su subgrafo, es posible que haya algunos cambios más que realizar Encontrará detalles adicionales en la sección de ejemplos completa a continuación. Encontrará detalles adicionales en la sección de ejemplo completo a continuación.
 
 #### Crear e implementar
 
@@ -81,7 +81,7 @@ Finalmente, ejecutaremos los comandos de creación e implementación. Para evita
 
 ¡Bien hecho, tu subgrafo está implementado! Ahora puede integrar la URL de consulta HTTP impresa por el comando de implementación en su sitio web y utilizarla para consultar datos.
 
-### Authorization
+### Autorización
 
 Para evitar que otros sobrescriban su subgrafo, contáctenos en [discord](https://discord.com/invite/coredaoofficial) para obtener una clave de autorización.\
 \
