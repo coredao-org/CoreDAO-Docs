@@ -2,7 +2,7 @@
 sidebar_label: Prueba de participación delegada
 hide_table_of_contents: false
 sidebar_position: 2
-description: Leveraging DPoS in Satoshi Plus
+description: Aprovechar DPoS en Satoshi Plus
 ---
 
 # Prueba de participación delegada (DPoS)
