@@ -1,5 +1,5 @@
 ---
-sidebar_label: Core Chain Mainnet
+sidebar_label: Cadena principal de la red Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -36,7 +36,7 @@ Hay varias formas de agregar configuraciones de Core Mainnet a su MetaMask Walle
 
 3. Luego se abrirá una nueva pestaña del navegador, mostrando varios campos para completar:
 
-![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-3.webp)
+![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-2.webp)
 
 Complete la siguiente información de la red y haga clic en "guardar" para agregar la red.
 
@@ -60,7 +60,7 @@ Complete la siguiente información de la red y haga clic en "guardar" para agreg
 
 3. Apruebe la acción en su MetaMask haciendo clic en el botón _'Aprobar'_.
 
-![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-7.webp)
+![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-6.webp)
 
 4. Haga clic en el botón '_Agregar a MetaMask_'.
 
@@ -100,7 +100,7 @@ La red Core ahora está agregada a su MetaMask.
 
 4. Toque '_Agregar red_':
 
-![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-15.webp)
+![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-14.webp)
 
 5. Complete los detalles de la red RPC personalizada y haga clic en _guardar_ para agregar la red.
 
