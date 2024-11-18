@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. This document guides you through the most commonly used methods for contract verification: the Core Scan web tool, the Core REST API, and the Hardhat Verification plugin.
+En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Si bien existen varias formas de lograr la verificación del contrato, recomendamos utilizar la herramienta de verificación oficial de Core, [Core Scan](https://scan.coredao.org/), para una confiabilidad óptima. Este documento lo guía a través de los métodos más utilizados para la verificación de contratos: la herramienta web Core Scan, la API REST de Core y el complemento Hardhat Verification.
 
 :::note
 Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez de Core Chain] (./smart-contract-guidelines.md). Para ello, asegúrese de que el parámetro `evmVersion` esté establecido en `paris` en la configuración del compilador de solidity.
@@ -18,12 +18,12 @@ Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez
 
 La verificación web es la estrategia de verificación de contratos inteligentes más utilizada. Después de implementar su contrato inteligente en Core, puede usar su código fuente para verificarlo en Core Scan.
 
-1. Navigate to Core Scan website.
+1. Vaya al sitio web de Core Scan.
 
-- [For Mainnet](https://scan.coredao.org/)
+- [Para la red principal](https://scan.coredao.org/)
 - Busque el contrato por dirección en [Core Scan](https://scan.test.btcs.network).
 
-2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
+2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
