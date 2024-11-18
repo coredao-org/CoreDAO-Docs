@@ -32,7 +32,7 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 - **Nueva URL de RPC:** https://rpc.test.btcs.network
 - **Chain ID:** 1115
 - **Símbolo de moneda:** tCORE
-- **Block Explorer URL:** https://scan.test.btcs.network
+- **Chain ID:** 1115
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 
@@ -66,7 +66,7 @@ Si usa la extensión Chrome MetaMask, puede usar un atajo rápido para agregar C
 
 #### Actualizaciones de cambio de marca
 
-Satoshi Chain/BTC ha sido rebautizado como “Core Chain/CORE”, respectivamente. Si agregó Testnet antes del cambio de marca, deberá actualizar manualmente el nombre de la red y el símbolo de moneda en la configuración de MetaMask; de lo contrario, no podrá utilizar la versión actual de Core Testnet. Vaya a `Configuración->Red` y seleccione `Core Testnet` para abrir la configuración de red. Actualice el nombre de la red y el símbolo de moneda a los valores indicados en la [sección anterior] (#adding-network-manualmente) y haga clic en el botón Guardar. You're good to go!
+Satoshi Chain/BTC ha sido rebautizado como “Core Chain/CORE”, respectivamente. Si agregó Testnet antes del cambio de marca, deberá actualizar manualmente el nombre de la red y el símbolo de moneda en la configuración de MetaMask; de lo contrario, no podrá utilizar la versión actual de Core Testnet. Vaya a `Configuración->Red` y seleccione `Core Testnet` para abrir la configuración de red. Actualice el nombre de la red y el símbolo de moneda a los valores indicados en la [sección anterior] (#adding-network-manualmente) y haga clic en el botón Guardar. Listo!
 :::
 
 ### Monedero de financiación con tokens tCORE
