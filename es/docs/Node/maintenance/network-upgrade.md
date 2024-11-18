@@ -17,7 +17,7 @@ make geth
 ```
 
 ```bash
-# Download pre-build binaries
+# Descargar pre-build binaries
 
 # Linux
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_linux |cut -d\" -f4)
