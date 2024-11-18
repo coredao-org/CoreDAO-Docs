@@ -1,5 +1,5 @@
 ---
-sidebar_label: Architecture
+sidebar_label: Arquitectura
 hide_table_of_contents: false
 sidebar_position: 2
 description: Un vistazo rápido a la arquitectura blockchain subyacente de Core
@@ -58,7 +58,7 @@ La prueba de participación delegada es el método para involucrar a los usuario
 
 De manera similar, así como los mineros reciben recompensas, los apostadores de tokens CORE también obtienen recompensas de tokens CORE por contribuir al consenso de Satoshi Plus. Una ventaja significativa de la Prueba de participación delegada en comparación con los modelos de Prueba de participación estándar es que el primero permite que todos los poseedores de tokens participen por igual, mientras que el segundo a veces solo permite que los grandes poseedores participen.
 
-## Non-Custodial Bitcoin Staking
+## Staking de Bitcoin sin custodia
 
 La metodología de Satoshi Plus para integrar la participación de bitcoin se centra en bloqueos de tiempo absoluto, una característica criptográfica nativa de Bitcoin que bloquea los resultados de una transacción durante un período de tiempo predefinido, durante el cual no se pueden gastar. En lugar de que los titulares cedan la custodia de Bitcoin a apuestas externas, los participantes con Satoshi Plus simplemente colocan sus Bitcoin en bloqueos de tiempo absoluto como parte de una transacción, y la transacción puede diseñarse para devolver el resultado una vez transcurrido el período de tiempo. Dentro de esa transacción, los participantes deben incluir un script que contenga la misma información que los mineros de Bitcoin incluyen en sus bloques delegados:
 
