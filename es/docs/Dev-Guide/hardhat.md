@@ -183,7 +183,7 @@ describe("Storage", function () {
 })
 ```
 
-To test our `Storage.sol` contract on the built-in HardHat network, run the following command:
+Para probar nuestro contrato `Storage.sol` en la red HardHat incorporada, ejecute el siguiente comando:
 
 `npx hardhat test --network hardhat`
 
@@ -200,17 +200,17 @@ $ npx hardhat test --network hardhat
   2 passing (1s)
 ```
 
-## Contract Deployment and Interaction
+## Implementación y interacción del contrato
 
-HardHat makes it easy to use the `ethers.js` library to deploy and interact with our smart contracts. Create a new file called `deploy-and-call.js` in the `scripts` folder that contains the following code:
+HardHat facilita el uso de la biblioteca `ethers.js` para implementar e interactuar con nuestros contratos inteligentes. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
 
 ```javascript
-// We require the Hardhat Runtime Environment explicitly here. This is optional
-// but useful for running the script in a standalone fashion through `node <script>`.
+// Requerimos el entorno de ejecución de Hardhat explícitamente aquí. Esto es opcional
+// pero útil para ejecutar el script de manera independiente a través de `node <script>`.
 //
-// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
-// will compile your contracts, add the Hardhat Runtime Environment's members to the
-// global scope, and execute the script.
+// También puede ejecutar un script con `npx hardhat run <script>`. Si lo hace, Hardhat
+// compilará sus contratos, agregará los miembros del entorno de ejecución de Hardhat al
+// alcance global y ejecutará el script.
 const hre = require("hardhat");
 
 async function main() {
@@ -250,7 +250,7 @@ Ejecutemos el script ejecutando el siguiente comando:
 `npx hardhat run scripts/deploy-and-call.js`
 
 ```javascript
-$ npx hardhat run scripts/call.js
+npx hardhat run scripts/call.js
 Storage contract deployed to: 0x65e2F3E4287C0563fBB066134A380e90a48d2D99
 call retrieve(): BigNumber { value: "0" }
 call store(), set value to 100
