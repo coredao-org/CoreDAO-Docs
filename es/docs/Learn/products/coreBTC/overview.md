@@ -1,7 +1,7 @@
 ---
 sidebar_label: Resumen
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 22
 ---
 
 # Visión General de coreBTC
@@ -67,4 +67,4 @@ Optar por coreBTC permite a los usuarios aprovechar la seguridad y el valor de B
 
 ## Conclusión
 
-coreBTC is an important component of the Core ecosystem, enhancing the utility of Bitcoin by enabling its active participation in DeFi while adhering to the principles of decentralization and security. Through its intricate system of Lockers, Relayers, and smart contracts, coreBTC enables Bitcoin to be safely used and transacted within the Core ecosystem, broadening its appeal and functional utility.
+coreBTC es un componente importante del ecosistema Core, que mejora la utilidad de Bitcoin al permitir su participación activa en DeFi y al mismo tiempo se adhiere a los principios de descentralización y seguridad. A través de su complejo sistema de Lockers, Relayers y contratos inteligentes, coreBTC permite que Bitcoin se use y transaccione de forma segura dentro del ecosistema Core, ampliando su atractivo y utilidad funcional.
