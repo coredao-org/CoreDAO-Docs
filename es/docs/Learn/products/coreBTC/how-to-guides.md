@@ -1,57 +1,57 @@
 ---
-sidebar_label: How to Guides
+sidebar_label: Guías de Cómo Hacer
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Wrap & Unwrap coreBTC
+# Envolver y Desenrollar coreBTC
 
-## Introduction
+## Introducción
 
-As a native wrapped Bitcoin on Core, coreBTC maintains a 1:1 peg with Bitcoin through a secured mechanism, powered by a network of decentralized, permissionless participants. This guide covers the essential steps for minting (wrapping) and redeeming (unwrapping) coreBTC, facilitating Bitcoin integration into decentralized finance (DeFi).
+Como un Bitcoin envuelto nativo en Core, coreBTC mantiene una paridad 1:1 con Bitcoin a través de un mecanismo seguro, impulsado por una red de participantes descentralizados y sin permisos. Esta guía cubre los pasos esenciales para acuñar (envolver) y redimir (desenvolver) coreBTC, facilitando la integración de Bitcoin en las finanzas descentralizadas (DeFi).
 
 ![core-guide-1](../../../../static/img/coreBTC/core-guides-1.png)
 
-## Getting Started: Prerequisites
+## Empezando: Requisitos Previos
 
-1. [Unisat Wallet Browser Extension](https://unisat.io/): Required for managing your Bitcoin. Note that, Unisat currently has only desktop and Android wallet app.
-2. [MetaMask](https://metamask.io/): Necessary for interacting with the Core blockchain.
+1. [Unisat Wallet Browser Extension](https://unisat.io/): Requerido para gestionar tu Bitcoin. Ten en cuenta que, actualmente, Unisat solo tiene aplicaciones de billetera para escritorio y Android.
+2. [MetaMask](https://metamask.io/): Necesario para interactuar con la blockchain de Core.
 
-## Minting coreBTC
+## Acuñación de coreBTC
 
-1. **coreBTC Website:** Go to https://bridge.coredao.org/coreBTC
-2. **Specify Conversion:** Indicate you're converting from Bitcoin (BTC) to coreBTC.
-3. **Connect Unisat Wallet:** Select Connect Unisat Wallet to link your Bitcoin wallet.
-4. **Enter Bitcoin Amount:** Input the amount of Bitcoin you wish to convert to coreBTC.
-5. **Receiving Core Address:** Enter your Core blockchain wallet address.
-6. **Adjust Fee Rate:** The default fees are set according to the current market rates. For faster transaction processing, it's essential to adjust the gas fee appropriately. Keep in mind that setting a higher fee can significantly speed up the transaction. Conversely, if the fee is set too low, the transaction may experience considerable delays in being mined, potentially taking days or even longer to process. It's crucial to find a balance that aligns with your urgency and the network's current demand.
-7. **Verification:** Double-check all details, including amounts, fees, and wallet addresses.
-8. **Mint:** Click on 'Mint coreBTC' to initiate the conversion.
-9. **AddToken:** Select 'Add coreBTC to your wallet' in MetaMask to view your coreBTC.
+1. **Sitio Web de coreBTC:** Ve a https://bridge.coredao.org/coreBTC
+2. **Especificar Conversión:** Indica que estás convirtiendo de Bitcoin (BTC) a coreBTC.
+3. **Conectar Unisat Wallet:** Selecciona Conectar Unisat Wallet para vincular tu billetera de Bitcoin.
+4. **Ingresar Monto de Bitcoin:** Introduce la cantidad de Bitcoin que deseas convertir a coreBTC.
+5. **Dirección de Core:** Introduce tu dirección de billetera en la blockchain de Core.
+6. **Ajustar la Tarifa:** Las tarifas predeterminadas están establecidas de acuerdo con las tasas de mercado actuales. Para una transacción más rápida, es esencial ajustar adecuadamente la tarifa de gas. Ten en cuenta que establecer una tarifa más alta puede acelerar significativamente la transacción. Por el contrario, si la tarifa se establece demasiado baja, la transacción podría experimentar retrasos considerables en su procesamiento, lo que podría llevar días o incluso más tiempo. Es crucial encontrar un equilibrio que se alinee con tu urgencia y la demanda actual de la red.
+7. **Verificación:** Verifica todos los detalles, incluidas las cantidades, tarifas y direcciones de billetera.
+8. **Acuñar:** Haz clic en 'Acuñar coreBTC' para iniciar la conversión.
+9. **Añadir Token:** Selecciona 'Añadir coreBTC a tu billetera' en MetaMask para ver tu coreBTC.
 
 ![core-guide-2](../../../../static/img/coreBTC/core-guides-2.png)
 
-## Redeeming Bitcoin from coreBTC
+## Redimir Bitcoin de coreBTC
 
-1. **coreBTC Website:** Go to https://bridge.coredao.org/coreBTC
-2. **Specify Conversion:** Choose the conversion from coreBTC to Bitcoin (BTC).
-3. **Connect EVM Wallet:** Click on Connect EVM Wallet to link your wallet.
-4. **Enter coreBTC Amount:** Specify the amount of coreBTC to be redeemed for Bitcoin.
-5. **Receiving Bitcoin Address:** Enter the destination Bitcoin wallet address.
-6. **Verification:** Double-check all details, including amounts, fees, and wallet addresses.
-7. **Burn:** Click on 'Burn coreBTC' to start the redemption process.
+1. **Sitio Web de coreBTC:** Ve a https://bridge.coredao.org/coreBTC
+2. **Especificar Conversión:** Elige la conversión de coreBTC a Bitcoin (BTC).
+3. **Conectar Billetera EVM:** Haz clic en Conectar Billetera EVM para vincular tu billetera.
+4. **Ingresar Monto de coreBTC:** Especifica la cantidad de coreBTC que deseas redimir por Bitcoin.
+5. **Dirección de Bitcoin de Destino:** Introduce la dirección de la billetera de Bitcoin de destino.
+6. **Verificación:** Verifica todos los detalles, incluidas las cantidades, tarifas y direcciones de billetera.
+7. **Quemar:** Haz clic en 'Quemar coreBTC' para iniciar el proceso de redención.
 
 ![core-guide-3](../../../../static/img/coreBTC/core-guides-3.png)
 
-## Dashboard: Status Monitoring
+## Panel de Control: Monitoreo de Estado
 
 ![core-guide-4](../../../../static/img/coreBTC/core-guides-4.png)
 
-1. **Pending Transactions:** View and obtain details on ongoing transactions.
-2. **Completed Transactions:** Check the history and specifics of finalized transactions.
-3. **Locker States:** Explore available lockers, including their fees, collateral, minting capacity, and health factor. Lockers are crucial for securing Bitcoin and are subject to penalties or liquidation based on behavior and collateral status.
-4. **Relayer States:** Review the list of relayers responsible for data transmission and verification between Bitcoin and Core blockchain.
+1. **Transacciones Pendientes:** Visualiza y obtén detalles de las transacciones en curso.
+2. **Transacciones Completadas:** Revisa el historial y los detalles de las transacciones finalizadas.
+3. **Estados de Lockers:** Explora los lockers disponibles, incluyendo sus tarifas, colaterales, capacidad de acuñación y factor de salud. Los lockers son cruciales para asegurar el Bitcoin y están sujetos a sanciones o liquidación según su comportamiento y el estado de su colateral.
+4. **Estados de Relayers:** Revisa la lista de relayers responsables de la transmisión y verificación de datos entre Bitcoin y la blockchain de Core.
 
 :::note
-Refer to [coreBTC FAQs section](../../../FAQs/coreBTC-faqs.md) for any queries that you may have.
+Consulta la sección de [Preguntas Frecuentes de coreBTC](../../../FAQs/coreBTC-faqs.md) para cualquier consulta que puedas tener.
 :::
