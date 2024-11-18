@@ -1,98 +1,98 @@
 ---
-sidebar_label: Major Components
+sidebar_label: Componentes principales
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn about the major components of the Satoshi Plus Mechanism
+description: Conozca los componentes principales del mecanismo Satoshi Plus
 ---
 
-# Satoshi Plus Consensus Mechanism
+# Mecanismo de consenso Satoshi Plus
 
 ---
 
-The Satoshi Plus consensus mechanism represents a groundbreaking innovation in blockchain technology, specifically engineered for the Core platform to synergistically combine the robust security attributes of Bitcoin with the flexibility and scalability of smart contracts. This hybrid consensus model merges Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-custodial Bitcoin Staking, enables Bitcoin miners to participate directly in the governance and security of a decentralized smart contract platform without incurring additional costs. By leveraging the established Bitcoin mining infrastructure, Satoshi Plus not only fosters a dual-layered security protocol but also enhances the incentive structures across both ecosystems, ensuring a balanced alignment of interests among all stakeholders involved in Core blockchain.
+El mecanismo de consenso Satoshi Plus representa una innovación revolucionaria en la tecnología blockchain, diseñada específicamente para que la plataforma Core combine sinérgicamente los sólidos atributos de seguridad de Bitcoin con la flexibilidad y escalabilidad de los contratos inteligentes. Este modelo de consenso híbrido combina la prueba de trabajo delegada (DPoW), la prueba de participación delegada (DPoS) y la participación sin custodia de Bitcoin, lo que permite a los mineros de Bitcoin participar directamente en la gobernanza y la seguridad de una plataforma de contrato inteligente descentralizada sin incurrir en costos adicionales. Al aprovechar la infraestructura minera de Bitcoin establecida, Satoshi Plus no solo fomenta un protocolo de seguridad de doble capa, sino que también mejora las estructuras de incentivos en ambos ecosistemas, asegurando una alineación equilibrada de intereses entre todas las partes interesadas involucradas en Core blockchain.
 
 ![satoshi-plus](https://github.com/user-attachments/assets/8e90becb-71c2-4798-813c-27bcf6e1badb)
 
-## Major Components of the Satoshi Plus Mechanism
+## Componentes principales del mecanismo Satoshi Plus
 
-The Satoshi Plus consensus mechanism, designed for Core blockchain, ingeniously integrates features of both Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Non-Cstodial Bitcoin Staking. This hybrid system is tailored to harness the strengths of Bitcoin's existing mining infrastructure while simultaneously incorporating the flexibility of staking mechanisms prevalent in many modern blockchains. Below are the various components, their roles, and how they interoperate to maintain network security and efficiency. Below, is a diagram illustrating how the different major components of the Satoshiu plus consensus mechanism fit together to provide a secure and robust ecosystem.
+El mecanismo de consenso Satoshi Plus, diseñado para Core blockchain, integra ingeniosamente características de Prueba de Trabajo Delegada (DPoW), Prueba de Participación Delegada (DPoS) y Participación No Custodial de Bitcoin. Este sistema híbrido está diseñado para aprovechar las fortalezas de la infraestructura minera existente de Bitcoin y al mismo tiempo incorpora la flexibilidad de los mecanismos de participación que prevalecen en muchas cadenas de bloques modernas. A continuación se detallan los distintos componentes, sus funciones y cómo interoperan para mantener la seguridad y la eficiencia de la red. A continuación se muestra un diagrama que ilustra cómo los diferentes componentes principales del mecanismo de consenso Satoshiu plus encajan para proporcionar un ecosistema seguro y sólido.
 
 ![component-diagram](../../../../static/img/staoshi-plus/component-diagram.jpg)
 
-### 1. **Delegated Proof of Work (DPoW)**
+### 2. **Prueba de participación delegada (DPoS)**
 
-**Description:**
-DPoW extends the traditional Proof of Work (PoW) system used by Bitcoin to include delegation features. This allows Bitcoin miners to participate in the consensus mechanism of Core blockchain without altering their existing mining operations significantly.
+**Descripción:**
+DPoW amplía el sistema tradicional de prueba de trabajo (PoW) utilizado por Bitcoin para incluir funciones de delegación. Esto permite a los mineros de Bitcoin participar en el mecanismo de consenso de Core blockchain sin alterar significativamente sus operaciones mineras existentes.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Miner Participation:** Bitcoin miners contribute to the security of Core blockchain by allocating a part of their computational power to the network. This is facilitated through a unique implementation where miners include specific metadata (such as the address of a Core Validator and the destination for their CORE token rewards) in a Bitcoin block’s `op_return` field.
-- **Workflow:** When a miner mines a new Bitcoin block, they add this additional information to indicate their support for a particular Core Validator. This delegated hash power helps secure Core blockchain, and in return, miners earn additional CORE tokens, which are supplementary to their regular Bitcoin mining rewards.
-  - **Bitcoin Miners** - Bitcoin miners secure the Bitcoin network via PoW, and can delegate their PoW to a Core validator by including certain information in the coinbase transaction of a block as it’s in the process of being mined. This delegation is non-destructive, meaning that they’re re-purposing their existing work, not choosing between securing Bitcoin and securing Core.
+- **Participación de los mineros:** Los mineros de Bitcoin contribuyen a la seguridad de Core blockchain al asignar una parte de su poder computacional a la red. Esto se facilita a través de una implementación única donde los mineros incluyen metadatos específicos (como la dirección de un Core Validator y el destino de sus recompensas de tokens CORE) en el campo "op_return" de un bloque de Bitcoin.
+- **Flujo de trabajo:** Cuando un minero extrae un nuevo bloque de Bitcoin, agrega esta información adicional para indicar su soporte para un Core Validator en particular. Este poder de hash delegado ayuda a proteger la cadena de bloques Core y, a cambio, los mineros obtienen tokens CORE adicionales, que son complementarios a sus recompensas habituales de minería de Bitcoin.
+  - **Mineros de Bitcoin**: los mineros de Bitcoin protegen la red Bitcoin a través de PoW y pueden delegar su PoW a un validador central al incluir cierta información en la transacción de coinbase de un bloque mientras está en proceso de minado. Esta delegación no es destructiva, lo que significa que están reorientando su trabajo existente, sin elegir entre proteger Bitcoin y proteger Core.
 
-  - **Relayers** - Relayers transmit Bitcoin block headers to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
+  - **Retransmisores**: los retransmisores transmiten encabezados de bloques de Bitcoin a la red central. Cualquiera puede convertirse en retransmisor registrándose y bloqueando un depósito de token CORE reembolsable.
 
-### 2. **Delegated Proof of Stake (DPoS)**
+### 4. **Validadores**
 
-**Description:**
-DPoS allows Bitcoin and CORE token holders to engage in the network's governance by staking their tokens with Validators. This model promotes a more democratic and scalable consensus process compared to traditional PoW.
+**Descripción:**
+DPoS permite a los poseedores de tokens Bitcoin y CORE participar en la gobernanza de la red apostando sus tokens con Validadores. Este modelo promueve un proceso de consenso más democrático y escalable en comparación con el PoW tradicional.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Staking and Voting:** Token holders stake their CORE tokens with Validators, effectively voting for them to participate in the consensus process. The more tokens staked with a Validator, the greater their influence in validating transactions and creating new blocks.
-- **Workflow:** Stakers delegate their tokens to Validators through a secure staking process on the Core platform. In exchange, they receive staking rewards in the form of CORE tokens. The staked tokens contribute to the network's overall security and decision-making processes.
-  - **Bitcoin Stakers** - The third leg of Satoshi Plus consensus is non-custodial Bitcoin staking, which allows any bitcoin holder to earn yield by staking their bitcoin tokens without giving up custody.
-  - **CORE Stakers** - All holders of Core Chain’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
+- **Apuesta y votación:** Los poseedores de tokens apuestan sus tokens CORE con Validadores, votando efectivamente para que participen en el proceso de consenso. Cuantos más tokens se apuesten con un Validador, mayor será su influencia en la validación de transacciones y la creación de nuevos bloques.
+- **Flujo de trabajo:** Los participantes delegan sus tokens a los validadores a través de un proceso de participación seguro en la plataforma Core. A cambio, reciben recompensas por apostar en forma de tokens CORE. Los tokens apostados contribuyen a los procesos generales de seguridad y toma de decisiones de la red.
+  - **Bitcoin Stakers**: la tercera parte del consenso de Satoshi Plus es la participación sin custodia de Bitcoin, que permite a cualquier titular de bitcoin obtener rendimiento apostando sus tokens de bitcoin sin renunciar a la custodia.
+  - **CORE Stakers**: todos los poseedores de tokens CORE nativos de Core Chain pueden garantizar la seguridad de la red delegando sus tenencias de tokens a un validador.
 
-### 3. **Non-Custodial Bitcoin Staking**
+### 3. **Apuesta de Bitcoin sin custodia**
 
-**Description:**
-The third most important component of the Satoshi Plush consensus mechanism is the **Non-custodial Bitcoin Staking**. This features allows Bitcoin holders to engage in the network's governance by staking their Bitcoin natively on Bitcoin and then delegating them to their desired validators on the Core network. This model promotes a more democratic and scalable consensus process compared to traditional PoW.
+**Descripción:**
+El tercer componente más importante del mecanismo de consenso de Satoshi Plush es el **Stake de Bitcoin sin custodia**. Esta característica permite a los titulares de Bitcoin participar en la gobernanza de la red apostando su Bitcoin de forma nativa en Bitcoin y luego delegándolos a sus validadores deseados en la red Core. Este modelo promueve un proceso de consenso más democrático y escalable en comparación con el PoW tradicional.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Staking and Voting:** Bitcoin holders stake their assets on Bitcoin network and also delegate them to their desired Validators on the Core blockchain, effectively voting for them to participate in the consensus process. The more Bitcoin staked with a Validator, the greater their influence in validating transactions and creating new blocks.
-- **Workflow:** Stakers delegate their Bitcoin to Validators through a secure staking process on the Core platform. In exchange, they receive staking rewards in the form of CORE tokens. The staked tokens contribute to the network's overall security and decision-making processes.
+- **Apuesta y votación:** Los poseedores de Bitcoin apuestan sus activos en la red Bitcoin y también los delegan a sus Validadores deseados en la cadena de bloques central, votando efectivamente para que participen en el proceso de consenso. Cuanto más Bitcoin se apueste con un Validador, mayor será su influencia en la validación de transacciones y la creación de nuevos bloques.
+- **Flujo de trabajo:** Los participantes delegan sus Bitcoin a los validadores a través de un proceso de participación seguro en la plataforma Core. A cambio, reciben recompensas por apostar en forma de tokens CORE. Los tokens apostados contribuyen a los procesos generales de seguridad y toma de decisiones de la red.
 
-### 4. **Validators**
+### 5. **Alineación de incentivos**
 
-**Description:**
-Validators are central to the functioning of the Satoshi Plus mechanism. They perform critical network functions including block production, transaction validation, and consensus achievement. Anyone can become a Core validator by registering with the network and locking up a refundable CORE token deposit.
+**Descripción:**
+Los validadores son fundamentales para el funcionamiento del mecanismo Satoshi Plus. Realizan funciones críticas de red, incluida la producción de bloques, la validación de transacciones y el logro de consenso. Cualquiera puede convertirse en validador de Core registrándose en la red y bloqueando un depósito de token CORE reembolsable.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Block Production:** Validators are responsible for creating new blocks in the Core blockchain. They aggregate transactions into blocks, execute them, and then append these blocks to the blockchain.
-- **Workflow:** Validators are chosen to produce blocks based on their total delegated stake (from both DPoW and DPoS). The selection process considers the amount of hash power and token stake delegated to them, ensuring that those with higher support from the community have a higher chance of being selected to create blocks.
-  - **Validator Election** - The validator set is determined through election, with validators chosen based on their hybrid score for each round. Any validator in the current validator set which hasn’t been jailed or slashed is considered “_live_”. To ensure a more stable TPS, the live validators are updated every **200** blocks, meaning that if any validators are jailed or slashed, the others can continue mining blocks as usual. Core uses its Validator Election mechanism to rank the top **27** validators based on hybrid scores, creating the validator set for a consensus period of **200** slots, known as an epoch. Each slot presents an opportunity for a block to be created and lasts **3** seconds. As such, each epoch lasts **600** seconds, or **10** minutes, and gives a validator up to **10** chances to create a block once accepted for an epoch.
+- **Producción de bloques:** Los validadores son responsables de crear nuevos bloques en la cadena de bloques Core. Agregan transacciones en bloques, las ejecutan y luego agregan estos bloques a la cadena de bloques.
+- **Flujo de trabajo:** Los validadores se eligen para producir bloques en función de su participación total delegada (tanto de DPoW como de DPoS). El proceso de selección considera la cantidad de poder de hash y participación simbólica que se les delega, lo que garantiza que aquellos con mayor apoyo de la comunidad tengan una mayor probabilidad de ser seleccionados para crear bloques.
+  - **Elección de validador**: el conjunto de validadores se determina mediante elección, y los validadores se eligen en función de su puntuación híbrida para cada ronda. Cualquier validador en el conjunto de validadores actual que no haya sido encarcelado o recortado se considera "_vivo_". Para garantizar un TPS más estable, los validadores en vivo se actualizan cada **200** bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre. Core utiliza su mecanismo de elección de validador para clasificar a los **23** validadores principales en función de puntuaciones híbridas, creando el conjunto de validadores para un período de consenso de **200** espacios, conocido como época. Cada espacio presenta una oportunidad para crear un bloque y dura **3** segundos. Como tal, cada época dura **600** segundos, o **10** minutos, y le da al validador hasta **10** oportunidades de crear un bloque una vez aceptado para una época.
 
-  - **Hybrid Score** - Every validator node seeking to become part of the validator set is given a hybrid score, which is calculated based on three factors: the DPoW from Bitcoin miners, the DPoS from CORE holders, and bitcoin holders delegating bitcoin to their preferred validators. The validator set is made up of the **27** validators with the highest hybrid scores.
+  - **Puntuación híbrida**: cada nodo de validación que busca formar parte del conjunto de validadores recibe una puntuación híbrida, que se calcula en función de tres factores: el DPoW de los mineros de Bitcoin, el DPoS de los titulares de CORE y los titulares de bitcoins que delegan bitcoins a sus validadores preferidos. El conjunto de validadores se compone de los **23** validadores con las puntuaciones híbridas más altas.
 
-  - **Verifiers** - Verifiers are responsible for reporting malicious behaviors on the network. Successful verification flags may result in slashing a malicious validator’s rewards or stake, or by jailing them outright, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
+  - **Verificadores**: los verificadores son responsables de informar comportamientos maliciosos en la red. Las marcas de verificación exitosas pueden resultar en una reducción drástica de las recompensas o la participación de un validador malicioso, o encarcelarlo directamente, y los verificadores son compensados ​​por esta actividad de monitoreo cuando se otorgan recompensas en bloque. Cualquiera puede actuar como verificador en la red Core.
 
-  - **Round** - A round is the period of time during which the Core network updates the validator set and distributes rewards. At present, a round is one day. Every round (i.e. every day), all validators are given a hybrid score, and the **27** validators with the highest hybrid scores are elected to the validator set. The validator set then becomes responsible for producing blocks on the Core network for the entirety of that round. When the last block of each round has been produced, the accumulated rewards for the full round are calculated and distributed, and the validator set for the next round is also determined.
+  - **Ronda**: una ronda es el período de tiempo durante el cual la red central actualiza el conjunto de validadores y distribuye recompensas. Actualmente, una ronda dura un día. En cada ronda (es decir, todos los días), todos los validadores reciben una puntuación híbrida y los **23** validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores. Luego, el conjunto de validadores se vuelve responsable de producir bloques en la red Core durante la totalidad de esa ronda. Cuando se ha producido el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas para la ronda completa, y también se determina el validador establecido para la siguiente ronda.
 
-  - **Slot** - Each **1-day** round is divided into slots, and all validators in the validator set take turns producing one block per slot, in a round robin manner. Currently, the slot length is set to three seconds. In each slot, an honest validator either produces a block or fails to do so (if there are network issues, eclipse attacks, etc).
+  - **Ranura**: cada ronda de **1 día** se divide en ranuras y todos los validadores del conjunto de validadores se turnan para producir un bloque por ranura, en forma de turnos. Actualmente, la duración del espacio está establecida en tres segundos. En cada ranura, un validador honesto produce un bloqueo o no lo hace (si hay problemas de red, ataques de eclipse, etc.).
 
-  - **Epoch** - An epoch is the span of time during which the system checks each validator’s status so as to exclude jailed validators from participating in consensus activities. Currently, an epoch is set to **200** slots, which is **600** seconds or **10** minutes. Validator status is checked once per epoch (rather than continuously) in order to keep TPS roughly constant in a given round.
+  - **Época**: una época es el lapso de tiempo durante el cual el sistema verifica el estado de cada validador para excluir a los validadores encarcelados de participar en actividades de consenso. Actualmente, una época está configurada en **200** espacios, que son **600** segundos o **10** minutos. El estado del validador se verifica una vez por época (en lugar de continuamente) para mantener el TPS aproximadamente constante en una ronda determinada.
 
-### 5. **Incentive Alignment**
+### 6. **Seguridad de red y simbiosis**
 
-**Description:**
-A critical aspect of Satoshi Plus is the alignment of incentives across miners, stakers, and Validators. This ensures all parties are motivated to act in the best interests of the network.
+**Descripción:**
+Un aspecto crítico de Satoshi Plus es la alineación de incentivos entre mineros, participantes y validadores. Esto garantiza que todas las partes estén motivadas para actuar en el mejor interés de la red.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Rewards Distribution:** Both miners and stakers receive rewards in CORE tokens, aligning their interests with the network's health. This dual-reward system encourages ongoing participation and support for the network.
-- **Workflow:** Rewards are calculated based on several factors including the amount of computational power or tokens contributed, and are distributed automatically by the Core blockchain protocol. This incentivizes continuous and honest participation in the network.
+- **Distribución de recompensas:** Tanto los mineros como los apostadores reciben recompensas en tokens CORE, alineando sus intereses con la salud de la red. Este sistema de doble recompensa fomenta la participación y el apoyo continuos a la red.
+- **Flujo de trabajo:** Las recompensas se calculan en función de varios factores, incluida la cantidad de potencia computacional o tokens aportados, y se distribuyen automáticamente mediante el protocolo Core blockchain. Esto incentiva la participación continua y honesta en la red.
 
 ### 6. **Network Security and Symbiosis**
 
-**Description:**
-Satoshi Plus enhances the security of both the Bitcoin and Core networks by creating a symbiotic relationship where security enhancements in one benefit the other.
+**Descripción:**
+Satoshi Plus mejora la seguridad de las redes Bitcoin y Core al crear una relación simbiótica donde las mejoras de seguridad en una benefician a la otra.
 
-**How it works:**
+**Cómo funciona:**
 
-- **Shared Security Model:** By allowing Bitcoin miners to participate in Core's security mechanisms, the system leverages Bitcoin's immense hashing power, enhancing the security of Core blockchain without requiring significant additional resources.
-- **Workflow:** As miners and stakers contribute to Core Chain’s security, both networks benefit. Miners use their existing setups to support Core blockchain, and stakers provide additional security layers through token delegation, creating a robust and resilient network.
+- **Modelo de seguridad compartida:** Al permitir que los mineros de Bitcoin participen en los mecanismos de seguridad de Core, el sistema aprovecha el inmenso poder de hash de Bitcoin, mejorando la seguridad de la cadena de bloques Core sin requerir recursos adicionales significativos.
+- **Flujo de trabajo:** A medida que los mineros y los participantes contribuyen a la seguridad de Core Chain, ambas redes se benefician. Los mineros utilizan sus configuraciones existentes para respaldar la cadena de bloques Core, y los participantes proporcionan capas de seguridad adicionales a través de la delegación de tokens, creando una red sólida y resistente.
 
-In summary, the Satoshi Plus consensus mechanism cleverly integrates these components into a cohesive system that benefits from the security and decentralization of Bitcoin's mining process and the agility and governance capabilities of modern staking models, fostering a secure, efficient, and scalable blockchain environment.
+En resumen, el mecanismo de consenso de Satoshi Plus integra hábilmente estos componentes en un sistema cohesivo que se beneficia de la seguridad y descentralización del proceso de minería de Bitcoin y de la agilidad y capacidades de gobernanza de los modelos de participación modernos, fomentando un entorno blockchain seguro, eficiente y escalable.
