@@ -109,9 +109,9 @@ Los validadores son cruciales para proteger la red mediante la producción de bl
 
 Para obtener más detalles, consulte la [Guía de configuración del nodo validador] (../Node/config/validator-node-config.md)
 
-### 6. How do I set up a Core Chain full node?
+### 6. ¿Cómo configuro un nodo completo de Core Chain?
 
-Refer to the detailed guide [here](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) on how to set up and run a full node on the Core network.
+Consulta la guía detallada [aquí](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) sobre cómo configurar y ejecutar un nodo completo en la red principal.
 
 <!-- ### 7. How can I secure my Core Chain full node?
 
