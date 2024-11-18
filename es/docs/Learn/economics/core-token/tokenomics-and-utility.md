@@ -81,6 +81,6 @@ Además del límite máximo, Core también tiene un mecanismo deflacionario:
 
 - **Recompensa por HODLing de Bitcoin:** Oferta principal de participación de Bitcoin sin custodia que está diseñada específicamente para el tipo de titulares e instituciones a largo plazo que han mostrado una clara preferencia por mantener sus activos en la cadena de bloques de Bitcoin. Al reconocer que dichas entidades están acostumbradas a mantener sus bitcoins sin transacciones frecuentes, el scking nativo de bitcoins les ofrece la oportunidad de ganar recompensas durante un período de tenencia específico. Los usuarios pueden apostar sus bitcoins sin sacarlos de la cadena de bloques de Bitcoin, manteniendo así la alta seguridad y confianza que conlleva la sólida infraestructura de Bitcoin.
 
-## Conclusion
+## Conclusión
 
 La tokenómica de CORE está diseñada para respaldar una economía sólida y descentralizada dentro de la red Core. Con una utilidad clara, un límite estricto de suministro y un plan de distribución de recompensas a largo plazo, Core se destaca como una plataforma que equilibra los principios del dinero sólido con las necesidades de un ecosistema blockchain en crecimiento y evolución. Con una utilidad clara, un límite estricto de suministro y un plan de distribución de recompensas a largo plazo, Core se destaca como una plataforma que equilibra los principios del dinero sólido con las necesidades de un ecosistema blockchain en crecimiento y evolución.
