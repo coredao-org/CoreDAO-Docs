@@ -7,61 +7,74 @@ sidebar_position: 2
 # Non-Custodial Bitcoin Staking FAQs
 ---
 
-### 1. What is Non-Custodial Bitcoin Staking on the Core network?
-Core provides Bitcoin holders with a risk free and transparent opportunity to lock up/stake their Bitcoin on the Bitcoin Network without giving up custody of their Bitcoin assets, in order to participate in Core Chain’s security and earn CORE rewards in return.
+### 1\. What is Non-Custodial Bitcoin Staking on the Core network?
 
-### 2. How does Non-Custodial Bitcoin Staking work?
+Core provides Bitcoin holders with a risk-free and transparent opportunity to lock up/stake their Bitcoin on the Bitcoin Network without giving up custody of their Bitcoin assets. In return, they can participate in the Core blockchain’s security through Satohi Plus and earn CORE rewards.
 
-With the non-custodial bitcoin staking, Core Chain's protocol incorporate bitcoin holders as the third part of Satoshi Plus consensus. Core Chain's methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock are Bitcoin-native cryptographic feature that specify a condition under which the transaction output cannot be spent until a certain point in time has passed. This time can be defined in terms of a specific date and time or by block height. Rather than holders giving up custody of their bitcoins to external staking, stakers on Core Chain merely need to place their bitcoins in CLTV timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks: 
+### 2\. How does Non-Custodial Bitcoin Staking work?
 
-1. The address of the Core Validator the staker wants to delegate their bitcoin to.
-2. The address that the staker would like their CORE token rewards to be sent to.
+With the non-custodial bitcoin staking, Core Chain's protocol incorporates bitcoin holders as the third part of the Satoshi Plus consensus. Core Chain's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. For more details on how Non-Custodial Bitcoin Staking works, refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
-Bitcoin stakers earn yields on their otherwise passive bitcoin in the form of CORE token rewards. The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility. 
+### 3\. What are the advantages of Non-Custodial Bitcoin Staking?
 
-### 3. How does non-custodial Bitcoin staking maintain security and trust?
-By allowing users to stake their bitcoins without moving them off the Bitcoin blockchain, non-custodial Bitcoin staking avoids introducing new trust assumptions. It leverages the inherent security and trust of Bitcoin’s established infrastructure, maintaining high security for staked assets.
+1. **Tailored for Long-Term Holders and Institutions:** Designed for those who prefer keeping their bitcoins on the secure Bitcoin blockchain, non-custodial Bitcoin staking offers a way to earn rewards during a specified holding period without frequent transactions.  
+2. **No New Trust Assumptions:** Users can stake their bitcoins directly on the Bitcoin blockchain, maintaining the high security and trust inherent in Bitcoin's robust infrastructure without transferring assets off-chain.  
+3. **Opportunity to Earn Passive Rewards:** Bitcoin stakers can earn CORE token rewards in exchange for contributing to the Core blockchain's consensus, enhancing the blockchain's functionality and security.  
+4. **Self-Custody and Security:** Bitcoin Staking is 100% secure with self-custody; users execute staking transactions themselves on the Bitcoin network, ensuring their Bitcoin does not leave the blockchain.  
+5. **Use of Native Cryptographic Features:** Bitcoin staking on Core utilizes battle-tested cryptographic features of the Bitcoin network, making it safer than non-native solutions.  
+6. **Flexibility in Transaction Building:** Users can build their staking transactions using any preferred tool, significantly reducing the risk of supply chain attacks from third-party libraries.
 
-### 4. What are the advantages of Non-Custodial Bitcoin Staking?
+### 4\. How does Non-Custodial Bitcoin staking maintain security and trust?
 
-1. **Tailored for Long-Term Holders and Institutions:** Designed for those who prefer keeping their bitcoins on the secure Bitcoin blockchain, non-custodial Bitcoin staking offers a way to earn rewards during a specified holding period without frequent transactions.
+Core's Non-Custodial Bitcoin staking avoids introducing new trust assumptions by allowing users to stake their bitcoins without moving them off the Bitcoin blockchain. It leverages Bitcoin's established infrastructure's inherent security and trust, maintaining high security for staked assets.
 
-2. **No New Trust Assumptions:** Users can stake their bitcoins directly on the Bitcoin blockchain, maintaining the high security and trust inherent in Bitcoin's robust infrastructure without the need to transfer assets off-chain.
+### 5\. What is the role of Core in the process of Non-Custodial Bitcoin staking?
+It is noted here that no assets are moved onto the Core blockchain or into any trusted third-party or smart contracts. Instead, users' assets remain locked on the Bitcoin network under the complete ownership of the user. From the Core’s perspective, only the relayers monitor the Bitcoin network for any Bitcoin staking transactions. Upon detection, these are picked, and only the valid ones are passed down to the consensus engine and accrual of staking rewards. With the Fusion Upgrade, the users would manually have to claim their staking rewards in the form of CORE tokens.
 
-3. **Opportunity to Earn Passive Rewards:** Bitcoin stakers can earn CORE token rewards in exchange for their contributions to the Core Chain's consensus, enhancing the blockchain's functionality and security.
+### 6\. What happens to my asset in the validator I delegated my Bitcoins to, or the Core blockchain go down?
 
-4. **Self-Custody and Security:** Bitcoin Staking is 100% secure with self-custody; users execute staking transactions themselves on the Bitcoin network, ensuring their Bitcoin does not leave the blockchain.
+Delegating Bitcoins for staking rewards through Core’s Non-Custodial Bitcoin does not require any kind of asset transfers or bridging onto the Core blockchain or to validators. Even if the validators or Core blockchain goes down, users' assets remain in their complete custody and can be redeemed after the timelock expires on the Bitcoin network.
 
-5. **Use of Native Cryptographic Features:** Bitcoin staking on Core utilizes battle-tested cryptographic features of the Bitcoin network, making it safer than non-native solutions.
+### 7\. What are some challenges associated with Short Time Locks on Bitcoin?
 
-6. **Flexibility in Transaction Building:** Users have the flexibility to build their staking transactions using any preferred tool, significantly reducing the risk of supply chain attacks from third-party libraries.
+CLTV timelock is a native feature of the Bitcoin network. A user can lock up any amount of Bitcoin for the desired time period through this feature. However, with shorter time lock periods (e.g., 10 minutes) due to network congestions and Bitcoin network block times, these transactions may not be processed quickly enough, leading to delays in redeeming the Bitcoin. Note that for a Bitcoin staking transaction to be valid, the [minimum requirement](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) should be met.
 
-### 5. Are there any specific requirements to participate in Non-Custodial Bitcoin Staking?
-Yes, participants must stake a minimum of **0.01 Bitcoin for at least 10 days**. This minimal requirement makes it accessible for a wide range of Bitcoin holders.
+### 8\. Are there any specific requirements to participate in Non-Custodial Bitcoin Staking?
 
-### 6. Why is that the staking address provided differs from your original Bitcoin address?
-The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoins remain safely stored in your original wallet, unaffected by staking. While staked assets may not be visible in some wallet versions, you still have complete ownership. 
+Users should align with the following requirements for a Bitcoin staking transaction to be considered valid.
 
-You can view your staked funds by searching the staking address on the any Bitcoin explorer like [Mempool](https://mempool.space/). We're actively working to make staked assets visible in all supported wallets especially through command line versions.
+* Users must ensure that the transaction is sent to their address.  
+* Using the Bitcoin native timelock feature, specify the lock-up amount intended to be delegated to the validator on the Core blockchain as the transaction output.   
+* *Minimum* *requirements exist* for both **amount** and **duration**. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees) for at least **10 days**.  
+* The transaction should also contain an op\_return output specifying   
+  * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
+  * The address to which the staker would like their CORE token rewards to be sent.
 
-### 7. Does Core Chain provide any hardware wallet support for Non-Custodial Bitcoin Staking?
+### 9\. Why does the staking address provided differ from your original Bitcoin address?
 
-At present, Non-Custodial Bitcoin Staking does not support hardware wallets due to technical constraints. Nevertheless, we're constantly exploring ways to enhance compatibility with various wallet types, prioritizing both security and convenience for our users.
+The staking address is derived from your wallet's master private key, ensuring your control and security over your assets. Your Bitcoins remain safely stored in your original wallet, unaffected by staking. While staked assets may not be visible in some wallet versions, you still have complete ownership.
 
-### 8. What are the important considerations for Locking Periods to keep in mind before staking your assets?
+You can view your staked funds by searching the staking address on any Bitcoin explorer like [Mempool](https://mempool.space/). We're actively working to make staked assets visible in all supported wallets, especially through command-line versions.
 
-* **Time Lock Expiration:** When you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.
-* **Choosing wisely:** We advise selecting your locking period thoughtfully, taking into account your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
-* **Staked Amount Verification:** currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
+### 10\. Does Core provide hardware wallet support for Non-Custodial Bitcoin Staking?
 
+Due to technical constraints, Non-Custodial Bitcoin Staking does not currently support hardware wallets. Nevertheless, we're constantly exploring ways to enhance compatibility with various wallet types, prioritizing security and convenience for our users.
 
-### 9. Why is my staked asset not visible in my wallet?
+### 11\. What are the important considerations for Locking Periods before staking your assets?
 
-Currently due to some technical complexities it is possible that your staked asset is not visible in your wallet when checked through CLI, however, you can easily verify that you have the complete ownership of your staked assets from the [Core Chain Non-Custodial Bitcoin Staking Website](https://stake.coredao.org/).
+* **Time Lock Expiration: **When you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.  
+* **Choosing wisely:** You should select your locking period thoughtfully, considering your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations. The minimum lock period is **10 days**.  
+* **Staked Amount Verification:** Due to some technical complexities, it is possible that your staked asset is not visible in your wallet when checked through CLI. However, you can easily verify that you have complete ownership of your staked assets from the [Core's Official Staking Website](https://stake.coredao.org/). Also, delays from block time, the number of block confirmation requirements, and network congestion on the Bitcoin network might lead to delays in the confirmation of your transactions, making your assets not visible in your wallets. 
 
+### 12\. Why is my staked asset not visible in my wallet?
 
-### 10. How is the security of non-custodial Bitcoin staking ensured?
-Core Chain's protocol and non-custodial Bitcoin staking’s security have been thoroughly audited by [Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by leading blockchain platforms](https://www.halborn.com/about/who-trusts-us) like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap. Review Audit Reports of Core Chain's protocol and non-custodial Bitcoin staking by leading firms [here](../Learn/audit.md).
+Due to technical complexities, it is possible that your staked asset is not visible in your wallet when checked through CLI. However, you can easily verify that you have complete ownership of your staked assets from the [Core's Official Staking Website](https://stake.coredao.org/). Also, delays from block time, the number of block confirmation requirements, and network congestion on the Bitcoin network might lead to delays in the confirmation of your transactions, making your assets not visible in your wallets. 
 
-### 11. What to do if `Redeem BTC` button is not working on the staking website?
-You can Redeem your BTC back by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If incase the button is not working try clearing your browser cache and re-try again. If you further face issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
+### 13\. How is the security of non-custodial Bitcoin staking ensured?
+
+[Halborn](https://www.halborn.com/), a SOC2 Type 1 compliant firm renowned for its smart contract security expertise and [trusted by leading blockchain platforms](https://www.halborn.com/about/who-trusts-us) like Ava Labs, Solana, and Polygon, as well as DeFi projects like Sushiswap, has thoroughly audited Core's protocol and non-custodial Bitcoin staking's security. You can review audit reports on Core Chain's protocol and non-custodial Bitcoin staking by leading firms [here](https://docs.coredao.org/docs/Learn/audit).
+
+### 14\. What should you do if the *`Redeem BTC`* button is not working on the staking website?
+
+You can Redeem your BTC by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). If the button is not working, try clearing your browser cache and re-try. If you face further issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
+
