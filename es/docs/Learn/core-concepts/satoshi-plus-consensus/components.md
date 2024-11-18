@@ -85,7 +85,7 @@ Un aspecto crítico de Satoshi Plus es la alineación de incentivos entre minero
 - **Distribución de recompensas:** Tanto los mineros como los apostadores reciben recompensas en tokens CORE, alineando sus intereses con la salud de la red. Este sistema de doble recompensa fomenta la participación y el apoyo continuos a la red.
 - **Flujo de trabajo:** Las recompensas se calculan en función de varios factores, incluida la cantidad de potencia computacional o tokens aportados, y se distribuyen automáticamente mediante el protocolo Core blockchain. Esto incentiva la participación continua y honesta en la red.
 
-### 6. **Network Security and Symbiosis**
+### 6. **Seguridad de red y simbiosis**
 
 **Descripción:**
 Satoshi Plus mejora la seguridad de las redes Bitcoin y Core al crear una relación simbiótica donde las mejoras de seguridad en una benefician a la otra.
