@@ -1,76 +1,76 @@
 ---
-sidebar_label: Liquid Staking (stCORE) FAQs
+sidebar_label: Preguntas frecuentes sobre apuestas líquidas (stCORE)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Liquid Staking (stCORE) FAQs
+# Preguntas frecuentes sobre apuestas líquidas (stCORE)
 
 ---
 
-### 1. What is stCORE?
+### 3. ¿Cuál es el período de canje de stCORE?
 
-stCORE is an innovative solution by Core Chain designed to enhance the utility of CORE tokens by introducing liquid staking. This allows CORE token holders to maximize the potential of their assets with increased flexibility and efficiency. The process involves staking CORE tokens to secure the network and simultaneously gaining liquidity through minting stCORE tokens, which can be utilized in various DeFi protocols.
+stCORE es una solución innovadora de Core Chain diseñada para mejorar la utilidad de los tokens CORE mediante la introducción de apuestas líquidas. Esto permite a los poseedores de tokens CORE maximizar el potencial de sus activos con mayor flexibilidad y eficiencia. El proceso implica apostar tokens CORE para proteger la red y, simultáneamente, ganar liquidez mediante la acuñación de tokens stCORE, que se pueden utilizar en varios protocolos DeFi.
 
-### 2. What are the benefits of liquid staking with stCORE?
+### 2. ¿Cuáles son los beneficios de realizar apuestas líquidas con stCORE?
 
-Liquid staking with stCORE allows CORE token holders to participate in DeFi protocols while their assets are staked. This enhances asset utility and potential yield generation without compromising the security contributions to the network.
+La apuesta líquida con stCORE permite a los poseedores de tokens CORE participar en protocolos DeFi mientras sus activos están en apuesta. Esto mejora la utilidad de los activos y la generación potencial de rendimiento sin comprometer las contribuciones de seguridad a la red.
 
-### 3. What is the redemption period for stCORE?
+### 4. ¿Cómo se eligen los validadores en mint/redeem?
 
-A **7-day** unlocking period is required by default for withdrawing CORE after redemption initiation.
+De forma predeterminada, se requiere un período de desbloqueo de **7 días** para retirar CORE después del inicio del canje.
 
-### 4. How validators are chosen on mint/redeem?
+### 5. ¿Cómo mantener a los validadores equilibrados en cuanto a los montos apostados?
 
-Note that whenever mint/redeem happens, the `Earn` contract delegates CORE to `PledgeAgent` / undelegates CORE from `PledgeAgent`. This is implemented in such a way to keep the bookkeeping simpler.
+Tenga en cuenta que cada vez que ocurre la acuñación/canjeo, el contrato "Earn" delega CORE a "PledgeAgent"/desdelega CORE de "PledgeAgent". Esto se implementa de tal manera que la contabilidad sea más sencilla.
 
-When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
+Al llamar al método `mint()`, la persona que llama debe pasar una dirección de validador para apostar los tokens CORE; al hacerlo, esperamos tratar a todos los candidatos de validador por igual, sin importar si ya están elegidos o en cola. Sin embargo, para mejorar la experiencia del usuario, es posible que tengamos la interfaz oficial para elegir aleatoriamente un validador adecuado y hacerlo invisible para los usuarios.
 
-During redeem, the `Earn` contract chooses validators randomly -  `_randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
+Durante el canje, el contrato `Earn` elige validadores aleatoriamente - `_randomIndex()`, se seleccionará aleatoriamente un índice, que se utiliza como índice inicial para iterar a través de la matriz de validadores hasta que se deleguen suficientes tokens CORE.
 
-### 5. How to keep validators balanced on staking amounts?
+### 7. ¿Cómo manejar la protección de cuotas al delegar/desdelegar?
 
-Everytime when
+Cada vez que
 
-- A mint happens, the caller can choose validator freely
-- A redeem happens, the system picks validators randomly
+- Se produce una menta, la persona que llama puede elegir el validador libremente
+- Se produce un canje, el sistema elige validadores al azar
 
-This mechanism almost guarantees that the CORE tokens held by the Earn module can be split to different validators evenly.
+Este mecanismo casi garantiza que los tokens CORE en poder del módulo Earn se puedan dividir en diferentes validadores de manera uniforme.
 
-However, considering there are cases the balance will be broken by certain operations, e.g. large value mint/redeem. We also introduced a few methods to rebalance stakings to validators from Earn.
+Sin embargo, teniendo en cuenta que hay casos, el equilibrio se romperá mediante determinadas operaciones, p. También introdujimos algunos métodos para reequilibrar las apuestas a los validadores de Earn.
 
-- **rebalance():** the system picks the validators with the largest and smallest staking amounts and makes them break even if the gap exceeds the predefined threshold.
-- **manualRebalance():** the operator manually transfers staking from one validator to another.
+- **reequilibrio():** el sistema selecciona a los validadores con los montos de apuesta más grandes y más pequeños y los hace alcanzar el equilibrio incluso si la brecha excede el umbral predefinido.
+- **manualRebalance():** el operador transfiere manualmente las apuestas de un validador a otro.
 
-### 6. How is the conversion ratio calculated?
+### 6. ¿Cómo se calcula el ratio de conversión?
 
-In every round after turn round happens, the Earn module fetches rewards from each validator and delegates them back correspondingly. This is how it does auto compounding internally. During the period, the system also moves staking from inactive/jailed validators to active ones to improve overall APR.
+En cada ronda después de que ocurre la ronda de turno, el módulo Ganar obtiene recompensas de cada validador y las delega en consecuencia. Así es como se autocompone internamente. Durante el período, el sistema también traslada las apuestas de validadores inactivos/encarcelados a activos para mejorar la APR general.
 
-And after that the conversion ratio of stCORE/CORE can also be updated. The formula for that is
+Y después de eso, la relación de conversión de stCORE/CORE también se puede actualizar. La fórmula para eso es
 
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply() 
+Cantidad de tokens CORE apostados en PledgeAgent / stCORE.totalsupply()
 ```
 
-Since **rewards claiming only happens once per day** in such design, the conversion rate can be kept the same in the entire day until the next turn round happens.
+Dado que **el reclamo de recompensas solo ocurre una vez al día** en dicho diseño, la tasa de conversión se puede mantener igual durante todo el día hasta que ocurra la siguiente ronda.
 
-The above logics are implemented in the `afterTurnRound()` method.
+La lógica anterior se implementa en el método `afterTurnRound()`.
 
 ### 7. How to handle the dues protection when delegating/undelegating?
 
-Note that in the `PledgeAgent` contract (the staking contract), when users delegate
+Tenga en cuenta que en el contrato `PledgeAgent` (el contrato de participación), cuando los usuarios delegan
 
-- The amount of CORE **must** >= 1
+- La cantidad de CORE **debe** >= 1
 
-And when they undelegate
+Y cuando ellos no delegan
 
-- The amount of CORE **must** >= 1 **AND**
-- The remaining CORE left on a validator of this address **must** >= 1
+- La cantidad de CORE **debe** >= 1 **Y**
+- El CORE restante que queda en un validador de esta dirección **debe** >= 1
 
-When handling delegate/undelegate internally, the `Earn` module must also follow the same restrictions.
+Al manejar la delegación/anulación de delegación internamente, el módulo "Gana" también debe seguir las mismas restricciones.
 
-The implementation/case elaborations are in `_undelegateWithStrategy()` method.
+Las elaboraciones de implementación/caso están en el método `_undelegateWithStrategy()`.
 
-When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.
+Al llamar al método `mint()`, la persona que llama debe pasar una dirección de validador para apostar los tokens CORE; al hacerlo, esperamos tratar a todos los candidatos de validador por igual, sin importar si ya están elegidos o en cola. Sin embargo, para mejorar la experiencia del usuario, es posible que tengamos la interfaz oficial para elegir aleatoriamente un validador adecuado y hacerlo invisible para los usuarios.
 
-During redeem, the Earn contract chooses validators randomly - ` _randomIndex()`, an index will be randomly selected, which is used as the start index to iterate through the validators array until enough CORE tokens are undelegated.
+Durante el canje, el contrato Earn elige validadores aleatoriamente: ` _randomIndex()`, se seleccionará aleatoriamente un índice, que se utiliza como índice inicial para iterar a través de la matriz de validadores hasta que se deleguen suficientes tokens CORE.
