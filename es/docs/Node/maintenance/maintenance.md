@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Node Maintainence
+# Mantenimiento de nodos
 
 ## Binario
 
@@ -36,7 +36,7 @@ Los mantenedores siempre deben tener algunos nodos de respaldo en caso de que un
 
 ### Podar datos antiguos en tiempo real
 
-Los datos antiguos son datos en bloque que ya se consideran inmutables. This is determined by a threshold which is currently set at **90000**. Esto está determinado por un umbral que actualmente está establecido en **90000** Esto significa que los bloques anteriores a **90000** se consideran datos antiguos. Recomendamos la opción `--prunceancient` a los usuarios que no se preocupan por los datos antiguos. Esto también se recomienda para los usuarios que desean ahorrar espacio en el disco, ya que esto solo conservará los datos de los últimos **90000** bloques.  Tenga en cuenta que una vez que se activa esta bandera, los datos antiguos no se recuperarán nuevamente y no podrá volver a ejecutar su nodo sin esta bandera en el comando de inicio.
+Los datos antiguos son datos en bloque que ya se consideran inmutables. Esto está determinado por un umbral que actualmente está establecido en **90000**. Esto está determinado por un umbral que actualmente está establecido en **90000** Esto significa que los bloques anteriores a **90000** se consideran datos antiguos. Recomendamos la opción `--prunceancient` a los usuarios que no se preocupan por los datos antiguos. Esto también se recomienda para los usuarios que desean ahorrar espacio en el disco, ya que esto solo conservará los datos de los últimos **90000** bloques.  Tenga en cuenta que una vez que se activa esta bandera, los datos antiguos no se recuperarán nuevamente y no podrá volver a ejecutar su nodo sin esta bandera en el comando de inicio.
 
 Cómo utilizar la bandera:
 
