@@ -1,14 +1,14 @@
 ---
-sidebar_label: Delegating CORE
+sidebar_label: Delegación de CORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating CORE
+# Delegación de CORE
 
 ---
 
-La prueba de participación delegada (DPoS) es uno de los tres componentes fundamentales del mecanismo de consenso Satoshi Plus y desempeña un papel fundamental en la mejora de la funcionalidad, la seguridad y la eficiencia de la red blockchain. En la red Core, DPoS se implementa a través de delegaciones CORE, lo que permite a los titulares de CORE delegar sus tokens en validadores confiables. This process not only helps secure the network but also enables participants to share in the system’s rewards.\
+La prueba de participación delegada (DPoS) es uno de los tres componentes fundamentales del mecanismo de consenso Satoshi Plus y desempeña un papel fundamental en la mejora de la funcionalidad, la seguridad y la eficiencia de la red blockchain. En la red Core, DPoS se implementa a través de delegaciones CORE, lo que permite a los titulares de CORE delegar sus tokens en validadores confiables. Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
 Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
 En esta guía, proporcionamos un tutorial paso a paso sobre cómo delegar sus tokens CORE a validadores dentro de la red Core, permitiéndole contribuir activamente al ecosistema mientras cosecha los beneficios de su inversión.
 
