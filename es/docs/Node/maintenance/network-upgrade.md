@@ -1,14 +1,14 @@
 ---
-sidebar_label: Upgrading Geth
+sidebar_label: Actualizando Geth
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How to Upgrade Geth
+# Cómo actualizar Geth
 
-Updating `geth` is as easy as it gets. You just need to download and install the newer version of `geth`, shutdown your node and restart with the new software. Geth will automatically use the data of your old node and sync the latest blocks that were mined since you shut down the old software.
+Actualizar `geth` es tan fácil como parece. Sólo necesita descargar e instalar la versión más reciente de `geth`, apagar su nodo y reiniciar con el nuevo software. Geth utilizará automáticamente los datos de su nodo anterior y sincronizará los últimos bloques que se extrajeron desde que cerró el software anterior.
 
-### Step 1: Compile the New Version or download new pre-build binaries from release
+### Paso 1: Compile la nueva versión o descargue nuevos archivos binarios precompilados desde el lanzamiento
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
@@ -31,7 +31,7 @@ chmod -v u+x geth
 make geth
 ```
 
-### Step 2: Stop Geth
+### Paso 2: detener a Geth
 
 ```
 
@@ -40,10 +40,10 @@ $ kill  $pid
 
 ```
 
-### Step 3: Restart
+### Paso 3: reiniciar
 
 :::note
-Make sure to use the same start-up command you used before the upgrade.
+Asegúrese de utilizar el mismo comando de inicio que utilizó antes de la actualización.
 :::
 
 ```bash
