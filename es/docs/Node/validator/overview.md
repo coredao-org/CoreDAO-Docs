@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Overview of Validators
+# Descripción general de los validadores
 
 ---
 
@@ -16,7 +16,7 @@ En el ecosistema Core Chain, los validadores desempeñan un papel crucial en el 
 
 ## Ciencias económicas
 
-Las recompensas del validador provienen de **Base rewards**, i.e. newly minted CORE tokens;
+Las recompensas del validador provienen de **Recompensas base**, es decir, tokens CORE recién acuñados;
 2. **Recompensas base**, es decir, tokens CORE recién Minteados; **Tarifas cobradas por transacciones en cada bloque**;
 
 Las recompensas básicas se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, **90%** de las recompensas van a los validadores y **10%** de las recompensas van al "Contrato de recompensas del sistema". Del **90%** pagado a los validadores, el validador toma un porcentaje como comisión antes de pagar a sus delegados. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
@@ -59,7 +59,7 @@ En el ecosistema Core Chain, los validadores desempeñan un papel crucial en el 
 
 2. **Bloqueo de participación y riesgo de liquidez:** Los validadores deben bloquear una cantidad significativa de tokens CORE como garantía para participar en el proceso de validación. Esta participación está sujeta a períodos de bloqueo durante los cuales no se puede acceder a los fondos, lo que plantea un riesgo de liquidez, especialmente si las condiciones del mercado cambian drásticamente.
 
-3. **Encarcelamiento de validadores:** Los validadores que consistentemente tengan un desempeño inferior o violen los protocolos de red pueden ser "encarcelados". Este término se refiere a eliminarlos temporalmente del conjunto de validadores, impidiéndoles participar en el consenso y obtener recompensas. This not only affects their revenue but can also tarnish their reputation within the community.
+3. **Encarcelamiento de validadores:** Los validadores que consistentemente tengan un desempeño inferior o violen los protocolos de red pueden ser "encarcelados". Este término se refiere a eliminarlos temporalmente del conjunto de validadores, impidiéndoles participar en el consenso y obtener recompensas. Esto no sólo afecta sus ingresos sino que también puede empañar su reputación dentro de la comunidad.
 
 4. **Pérdida de delegación:** Los validadores dependen de las delegaciones de los poseedores de tokens CORE para aumentar su influencia y potencial de ganancias. El mal desempeño o las altas tasas de penalización pueden llevar a los delegados a retirar su apoyo y reasignar sus participaciones a validadores más confiables, lo que lleva a una disminución significativa de las ganancias potenciales.
 
