@@ -15,7 +15,7 @@ Core Chain aboga por la creación de proyectos de código abierto y, por lo tant
 ### 2. ¿Cuáles son los canales de comunicación oficiales de Core Chain?
 
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
-- **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
+- **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 - **Twitter:** [https://twitter.com/Coredao_Org](https://twitter.com/Coredao_Org)
 - **Blog:** [https://medium.com/@core_dao](https://medium.com/@core_dao) or [https://coredao.org/explore/blog](https://coredao.org/explore/blog)
 
