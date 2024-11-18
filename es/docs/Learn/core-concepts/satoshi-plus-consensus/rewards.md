@@ -95,6 +95,6 @@ Los retransmisores son responsables de comunicar los encabezados de los bloques 
 
 Los verificadores en el ecosistema central son responsables de monitorear el comportamiento de los validadores e informarles si participan en doble firma u otra actividad maliciosa. Cuando tiene éxito, las recompensas se pagan inmediatamente desde el Contrato de recompensas del sistema, en la misma transacción.
 
-## Conclusion
+## Conclusión
 
 Las recompensas en el ecosistema Core juegan un papel crucial en el mantenimiento de la seguridad, vitalidad y descentralización de la red. Al alinear los incentivos de varios participantes a través de un sistema de recompensas integral y adaptable, Core garantiza un compromiso continuo y contribuye al crecimiento sostenido y la estabilidad de la plataforma. Este enfoque estructurado de incentivos es fundamental para el éxito de Core como plataforma líder en el panorama Bitcoin DeFi.
