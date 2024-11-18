@@ -50,9 +50,9 @@ El proceso de elección del Validador en Satoshi Plus implica pasos clave, respa
    - Los poseedores de CORE y Bitcoin apuestan y delegan sus tokens a candidatos validadores. Esta delegación es una forma de votación, donde el peso de cada voto corresponde al número de tokens apostados.
 
 2. **Delegación de poder hash:**
-   - Los mineros de Bitcoin delegan una parte de su poder de hash especificando sus validadores preferidos en los bloques de Bitcoin que extraen. This process integrates Bitcoin's mining power into Core's security mechanism.
+   - Los mineros de Bitcoin delegan una parte de su poder de hash especificando sus validadores preferidos en los bloques de Bitcoin que extraen. Este proceso integra el poder minero de Bitcoin en el mecanismo de seguridad de Core.
 
-3. **Validator Selection:**
+3. **Selección del validador:**
    - Los validadores se seleccionan en función del apoyo total que reciben, calculado combinando tokens apostados (CORE y Bitcoin) y poder de hash delegado. La ecuación detrás de la puntuación híbrida es:
 
 $$
