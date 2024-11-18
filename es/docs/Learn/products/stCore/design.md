@@ -33,11 +33,11 @@ Después de investigar diferentes proyectos LST, como LiDO y Kava, entre otros, 
 
 ### Mint
 
-Los usuarios pueden acuñar stCORE usando CORE. En cualquier momento del día (UTC), pueden acuñar stCORE a la misma tasa de conversión. E.g. Por ejemplo, si la tasa de conversión es 1:1.1, entonces los usuarios pueden acuñar 100 stCORE usando 110 CORE.
+Los usuarios pueden acuñar stCORE usando CORE. En cualquier momento del día (UTC), pueden acuñar stCORE a la misma tasa de conversión. P.ej. Por ejemplo, si la tasa de conversión es 1:1.1, entonces los usuarios pueden acuñar 100 stCORE usando 110 CORE.
 
 ### Acuñar
 
-El sistema está diseñado de tal manera que los usuarios siempre pueden canjear cualquier cantidad de tokens stCORE que tengan. E.g. Por ejemplo, si la tasa de conversión es 1:1.1, los usuarios pueden canjear 100 stCORE para obtener 110 CORE de vuelta.
+El sistema está diseñado de tal manera que los usuarios siempre pueden canjear cualquier cantidad de tokens stCORE que tengan. P.ej. Por ejemplo, si la tasa de conversión es 1:1.1, los usuarios pueden canjear 100 stCORE para obtener 110 CORE de vuelta.
 
 :::note
 Hay un período de canje que por defecto es **7 días**. Una vez que los usuarios solicitan el canje al sistema, tienen **7 días** para retirar los tokens CORE a su billetera.
@@ -80,7 +80,7 @@ Cada vez que
 
 Este mecanismo casi garantiza que los tokens CORE sostenidos por el módulo `Earn` puedan dividirse entre diferentes validadores de manera uniforme.
 
-However, considering there are cases the balance will be broken by certain operations, e.g. large value mint/redeem. We also introduced a few methods to rebalance stakings to validators from Earn.
+Sin embargo, se tienen en cuenta casos en los que el equilibrio se verá afectado por determinadas operaciones, por ejemplo, acuñación/canje de monedas de gran valor. También presentamos algunos métodos para reequilibrar las participaciones en los validadores de Earn.
 
 - **rebalance():** el sistema elige los validadores con los mayores y menores montos de staking y los hace equilibrarse si la brecha excede el umbral predefinido.
 - **manualRebalance():** el operador transfiere manualmente el staking de un validador a otro.
@@ -89,10 +89,10 @@ However, considering there are cases the balance will be broken by certain opera
 
 En cada ronda después de que ocurra el turno, el módulo `Earn` obtiene recompensas de cada validador y las delega nuevamente de manera correspondiente. Así es como se hace el auto-compounding internamente. Durante el período, el sistema también mueve el staking de validadores inactivos/en prisión a los activos para mejorar el APR general.
 
-And after that the conversion ratio of stCORE/CORE can also be updated. The formula for that is
+Y después de eso, la relación de conversión de stCORE/CORE también se puede actualizar. La fórmula para ello es
 
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply() 
+    Cantidad de tokens CORE apostados en PledgeAgent / stCORE.totalsupply() 
 ```
 
 Dado que **la reclamación de recompensas solo ocurre una vez al día** en dicho diseño, la tasa de conversión se puede mantener igual durante todo el día hasta que ocurra el siguiente ciclo.
