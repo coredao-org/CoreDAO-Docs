@@ -6,41 +6,41 @@ sidebar_position: 2
 
 # Staking de Bitcoin No Custodial
 
-This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards. With Non-Custodial Bitcoin Staking, you can earn passive yield in CORE while retaining complete ownership of your Bitcoin assets. Vamos a profundizar en cómo funciona y cómo puedes comenzar a hacer staking hoy.
+Esta guía del usuario está diseñada para guiarlo en el proceso de staking de Bitcoin en la cadena de bloques Core para ganar recompensas en tokens CORE. Con el staking de Bitcoin sin custodia, puede obtener un rendimiento pasivo en CORE mientras conserva la propiedad completa de sus activos de Bitcoin. Vamos a profundizar en cómo funciona y cómo puedes comenzar a hacer staking hoy.
 
 ## Requisitos Previos
 
-To be able to stake, you must have the following prerequisites:
+Para poder realizar stake, debes tener los siguientes requisitos previos:
 
-1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visit stake.coredao.org for the latest supported wallets). You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the Element wallet mobile application as well.
-2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to receive CORE token rewards for staking Bitcoin. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
+1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visit stake.coredao.org for the latest supported wallets). Debes utilizar una versión de escritorio, ya que actualmente no se admiten billeteras móviles ni de hardware. También puedes realizar staking directamente usando la aplicación móvil de billetera Element.
+2. **Dirección de billetera Core para recompensas:** Prepare su dirección de billetera Core para recibir recompensas en tokens CORE por hacer staking de Bitcoin. Si no tiene una dirección de billetera Core, puede crear una rápidamente conectándose a MetaMask. Para obtener más información sobre cómo configurar MetaMask para que funcione con la red Core, siga la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
-## **Key Considerations For BTC Staking**
+## **Consideraciones clave para el staking de BTC**
 
-The following are some key points that users should be careful about when staking their Bitcoin on Core.
+Los siguientes son algunos puntos clave que los usuarios deben tener en cuenta al apostar sus Bitcoin en Core.
 
-1. **Minimum of 0.01 Bitcoin \+ Gas Fee:** To successfully stake your Bitcoin on Core, you need a minimum of 0.01 Bitcoin. In addition to the staking amount, users should consider the necessary gas fees in Bitcoin for executing transactions on the Bitcoin network. If you plan to stake for less than a month, having at least 0.05 Bitcoin is advisable. This extra amount helps cover potential network congestion, which can lead to higher gas prices than the rewards earned from staking.
-2. **Understanding the Differences in Bitcoin Staking Addresses:**
-   - The staking address in your Bitcoin wallet's transaction prompt may differ from your original Bitcoin address. This is because the Bitcoin staking address is derived from your Bitcoin wallet's master private key, ensuring control and security over your assets. Your Bitcoin remains safe in the Bitcoin staking address, unaffected by staking.
-3. **Delays in Locked Assets to Appear in your Bitcoin Wallet:**
-   - You may face some delays before your locked Bitcoin is displayed in your Bitcoin wallets. This delay primarily results from delays in transaction confirmation on the Bitcoin network, which can take several hours due to block time, the number of block confirmations required, and network congestion.
-   - While we are actively working with wallet partners to support the timely display of your assets in your wallets, you can check your locked assets on the ”MyStaking” page on Core’s staking website.
-   - You can also view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/).
+1. **Mínimo de 0,01 Bitcoin + tarifa de gas:** Para apostar con éxito su Bitcoin en Core, necesita un mínimo de 0,01 Bitcoin. Además del monto de participación, los usuarios deben considerar las tarifas de gas necesarias en Bitcoin para ejecutar transacciones en la red Bitcoin. Si planeas hacer staking durante menos de un mes, es aconsejable tener al menos 0,05 Bitcoin. Esta cantidad adicional ayuda a cubrir una posible congestión de la red, lo que puede generar precios de gas más altos que las recompensas obtenidas por el staking.
+2. **Entendiendo las diferencias en las direcciones de staking de Bitcoin:**
+   - La dirección de participación en el mensaje de transacción de su billetera Bitcoin puede diferir de su dirección Bitcoin original. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de su billetera de Bitcoin, lo que garantiza el control y la seguridad de sus activos. Su Bitcoin permanece seguro en la dirección de staking de Bitcoin, sin verse afectado por el staking.
+3. **Retrasos en la aparición de los activos bloqueados en su billetera Bitcoin:**
+   - Es posible que experimente algunos retrasos antes de que su Bitcoin bloqueado se muestre en sus billeteras Bitcoin. Este retraso se debe principalmente a retrasos en la confirmación de transacciones en la red Bitcoin, que pueden tardar varias horas debido al tiempo de bloque, la cantidad de confirmaciones de bloque requeridas y la congestión de la red.
+   - Mientras trabajamos activamente con socios de billeteras para respaldar la visualización oportuna de sus activos en sus billeteras, puede verificar sus activos bloqueados en la página "MyStaking" en el sitio web de staking de Core.
+   - También puedes ver tus fondos apostados buscando la dirección de staking en un explorador de Bitcoin, [Mempool.space](https://mempool.space/).
 4. **Consideraciones para los Períodos de Bloqueo**
-   - Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
+   - Una vez que bloqueas tu Bitcoin para staking, será inaccesible hasta que concluya el período de staking. Teniendo en cuenta sus objetivos de inversión y su tolerancia al riesgo, le recomendamos seleccionar cuidadosamente su período de bloqueo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
 
-## Workflow of Non-Custodial BTC Staking
+## Flujo de trabajo de staking de BTC sin custodia
 
-Non-custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn staking rewards. By locking your Bitcoin natively on the Bitcoin network through a time-bound mechanism, you can actively participate in the Core blockchain's Consensus mechanism while staking. Aquí están los pasos involucrados en este proceso.
+El staking de Bitcoin sin custodia introduce un método seguro y descentralizado para que los poseedores de Bitcoin obtengan recompensas por staking. El staking de Bitcoin sin custodia introduce un método seguro y descentralizado para que los poseedores de Bitcoin obtengan recompensas por staking. Aquí están los pasos involucrados en este proceso.
 
-1. **Initiate Staking:** Start by accessing either the [CLI-based BTC Staking Tool](https://github.com/coredao-org/btc-staking-tool) (for technical users) or the [web-based staking platform](https://stake.coredao.org/) (for general users).
-2. **Stake Bitcoin with Time-Lock:** You stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, and your Bitcoin remains locked until the specified period ends. Ensure you follow the requirements for a transaction to be valid and eligible; refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) for more details.
-   1. The minimum staking period is 10 days.
-   2. Include the Core Validator Address to delegate your assets.
-   3. Include the Core wallet address for rewards.
-3. **Vote for Validators:** By including the address of the Core Validators in your transaction, you can delegate your staked Bitcoin to the chosen validator on the Core blockchain.
-4. **Connect a Core wallet for rewards:** In the return field, verify your Core wallet address; you'll receive CORE token rewards at this address.
-5. **Claiming Rewards:** Accrued CORE token rewards will also appear on the [staking site](http://stake.coredao.org/). CORE token rewards will appear when users connect their wallets, and can be claimed daily.
+1. **Iniciar staking:** Comience accediendo a la [Herramienta de staking de BTC basada en CLI](https://github.com/coredao-org/btc-staking-tool) (para usuarios técnicos) o a la [plataforma de staking basada en la web](https://stake.coredao.org/) (para usuarios generales).
+2. **Apuesta Bitcoin con bloqueo de tiempo:** Usted apuesta su Bitcoin enviando una transacción en la red Bitcoin con un parámetro de bloqueo de tiempo, y su Bitcoin permanece bloqueado hasta que finalice el período especificado. Asegúrese de cumplir con los requisitos para que una transacción sea válida y elegible; consulte [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) para obtener más detalles.
+   1. El período mínimo de participación es de 10 días.
+   2. Incluya la dirección del validador principal para delegar sus activos.
+   3. Incluya la dirección de la billetera Core para obtener recompensas.
+3. **Vote por los Validadores:** Al incluir la dirección de los Validadores Centrales en su transacción, puede delegar su Bitcoin en stake al validador elegido en la cadena de bloques Central.
+4. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección.
+5. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección.
 6. **Redimir Bitcoin:** Una vez que expire el tiempo de bloqueo del staking, el Bitcoin bloqueado permanecerá inactivo en la dirección de staking hasta que sea redimido por el usuario.
 
 ## Guía Paso a Paso para el Staking de Bitcoin No Custodial
@@ -54,8 +54,7 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 2. Haz clic en **Connect Wallet** en la esquina superior derecha del encabezado para conectar tu cartera de Core. De la lista de carteras soportadas, elige la cartera de Core que desees. Para esta guía, hemos usado Metamask.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-1.png)
-</p>
+![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-1.png)</p>
 
 3. Confirma la notificación de la cartera para permitir la conexión con el sitio web de staking.
 
@@ -68,14 +67,12 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 4. Una vez en la página de **Validators**, desplázate hacia abajo para ver la lista de Validadores de Core y elige el Validador al que deseas delegar tus Bitcoins. Asegúrate de elegir validadores activos.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-3.png)
-</p>
+![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-3.png)</p>
 
 5. Al hacer clic en el nombre del validador deseado, serás dirigido a la página de **Detalles del Validador**. Esta página muestra detalles sobre los registros de staking/delegación para el validador seleccionado.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-4.png)
-</p>
+![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-4.png)</p>
 
 6. Haz clic en el botón **Stake**, luego selecciona **BTC**.
 
@@ -123,7 +120,7 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 13. En la esquina superior derecha del sitio web de staking, pasa el cursor sobre tu cartera conectada y haz clic en **My Staking**.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
+![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
 14. La página **My Staking** muestra los registros de todos tus stakings (CORE, BTC y hash). Haz clic en la pestaña **BTC Records** para ver detalles de tus delegaciones de BTC.
