@@ -26,7 +26,7 @@ Por el momento, los usuarios pueden hacer staking de tokens CORE a validadores i
 - No existe una función de auto-compounding, y los usuarios deben reclamar las recompensas y re-stakearlas a los validadores manualmente cada día.
 - Los stakes de hash de los pools de minería de Bitcoin son menos fungibles y no tan estables como los stakes de CORE, lo que provoca que el APR de los validadores afectados cambie de manera más drástica.
 
-Por otro lado, también estamos buscando formas de añadir más utilidades al token CORE. Al introducir stCORE, esperamos que el token CORE se beneficie también. E.g. Ejemplo: proporcionar pares de liquidez CORE/stCORE en intercambios descentralizados.
+Por otro lado, también estamos buscando formas de añadir más utilidades al token CORE. Al introducir stCORE, esperamos que el token CORE se beneficie también. P.ej. Ejemplo: proporcionar pares de liquidez CORE/stCORE en intercambios descentralizados.
 
 ## Pasos Involucrados en el Staking Líquido en Core
 
