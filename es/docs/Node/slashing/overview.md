@@ -1,20 +1,20 @@
 ---
 sidebar_label: Descripción general
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 22
 ---
 
 # Reglamento del validador
 
 **Recortar** y **encarcelar** son los dos mecanismos básicos que utiliza Core Chain para desincentivar el mal comportamiento de los validadores, y comprender cómo funcionan contribuirá en gran medida a que la estructura de incentivos en Core Chain sea más comprensible.
 
-## Slashing and Jailing
+## Ataques y encarcelamientos
 
 "Recortar" se refiere a recortar las recompensas que un validador habría recibido a cambio de minar bloques, o a recortar el depósito de tokens CORE que hace un nodo para convertirse en un validador en primer lugar. La severidad del castigo cortante aumenta en proporción al mal comportamiento del validador.
 
 Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección. Si un nodo de validación no logra extraer **50 bloques** seguidos, las recompensas del token CORE que el validador ha acumulado hasta el momento se reducen por completo. Esto significa que importa cuando un validador no logra extraer **50** bloques consecutivos. Si fallan en los primeros **50** bloques de una ronda, entregan solo una pequeña cantidad de recompensas acumuladas, pero si fallan en los últimos **50** bloques de la ronda, entregan todo lo que han ganado. Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
-## Slash Sugggestions
+## Sugerencias de barra
 
 Los verificadores son responsables de informar comportamientos maliciosos en la red mediante sugerencias de barras diagonales. Cualquiera puede enviar sugerencias de barras diagonales y están diseñadas para castigar a los actores malintencionados. La presentación requiere pruebas de irregularidades, pero si las acusaciones resultan ciertas, las recompensas obtenidas superan con creces los costos.
 
