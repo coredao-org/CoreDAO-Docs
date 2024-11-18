@@ -10,7 +10,7 @@ sidebar_position: 2
 
 La participación es un aspecto fundamental de la cadena de bloques Core y sirve como un mecanismo clave para la seguridad, la gobernanza y la tokenómica de la red. Al apostar sus tokens BTC o CORE, los participantes contribuyen a la eficiencia operativa y la seguridad de la cadena de bloques, al tiempo que obtienen recompensas por su compromiso. Este proceso implica bloquear tokens BTC o CORE para respaldar la validación de transacciones y el mantenimiento de la integridad de la red. Los candidatos a validadores de participación más vinculados se convertirán en validadores y producirán bloques.
 
-## How Staking Works on the Core Blockchain
+## Cómo funciona el staking en la blockchain central
 
 Apostar por Core implica que los titulares de CORE y BTC deleguen sus tokens a validadores, quienes son responsables de procesar transacciones y crear nuevos bloques. El mecanismo de participación se basa en un modelo de prueba de participación delegada (DPoS), donde las partes interesadas influyen en el consenso de la red seleccionando validadores en función de sus tokens apostados.
 
@@ -28,7 +28,7 @@ Apostar por Core implica que los titulares de CORE y BTC deleguen sus tokens a v
 Apostar es crucial por varias razones en el ecosistema Core:
 
 - **Seguridad de la red:** Apostar tokens BTC y CORE para respaldar a los validadores contribuye directamente a la solidez de la seguridad de la red. Los validadores con un mayor interés se consideran más dignos de confianza, ya que más en juego desincentiva el comportamiento malicioso.
-- **Decentralized Governance:** Staking empowers CORE holders with governance rights, allowing them to participate in important decisions that affect the network, including protocol updates and improvements.
+- **Gobernanza descentralizada:** el staking otorga a los titulares de CORE derechos de gobernanza, lo que les permite participar en decisiones importantes que afectan a la red, incluidas actualizaciones y mejoras del protocolo.
 - **Incentivos económicos:** El modelo de participación alinea los intereses de los poseedores de tokens CORE y BTC con la salud general de la red. Al apostar sus tokens, BTC y CORE, los participantes pueden obtener ingresos pasivos en forma de recompensas de apuesta, incentivando así el apoyo y la inversión continuos en la red.
 - **Volatilidad reducida:** Al bloquear los tokens en contratos de participación, el suministro circulante de tokens CORE se reduce efectivamente, lo que puede ayudar a mitigar la volatilidad de los precios y mantener el valor del token.
 
