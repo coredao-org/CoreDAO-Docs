@@ -107,7 +107,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
-11\. Next to the **Summary** tab, you can find **Details** page, which shows staking details, including:
+11\. Junto a la pestaña **Resumen**, puedes encontrar la página **Detalles**, que muestra detalles del staking, incluidos:
 
 - **Nuevo BTC Apostado:** La cantidad de BTC que planeas apostar y la tasa de recompensas actual.
 - **Nuevo CORE Apostado:** La cantidad de CORE que planeas apostar y la tasa de recompensas actual.
@@ -115,7 +115,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 - **CORE Apostado Activo:** La cantidad de CORE actualmente apostado y la tasa de recompensas promedio entre los validadores.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
 ### Finalizando las Transacciones de Staking Doble
@@ -123,20 +123,20 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 11. Una vez que hayas especificado la cantidad de BTC/CORE para apostar y los validadores para delegar, puedes hacer clic en el botón **Proceder a Apostar**.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-11.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
 12. En la página de Apostar CORE, confirma la cantidad de CORE que deseas apostar junto con el BTC, y haz clic en el botón **Confirmar**.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-12.png)
 </p> 
 
 13. Al hacer clic en **Confirmar**, recibirás una notificación de tu billetera Core conectada para completar la transacción.
 14. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en CoreScan** para revisar esta transacción.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-13.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
 15. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es importante entender y especificar varios parámetros clave:
@@ -150,7 +150,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-14.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
 16. Finalmente, haz clic en ‘Confirmar’ para completar la transacción.
@@ -160,13 +160,13 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 17. Antes de firmar la transacción en tu billetera, verifica las salidas de la transacción para asegurarte de que incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Abortas la transacción si no incluye la salida OP\_Return.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
 18. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en BTC Explorer** para revisar esta transacción.
 
 <p align="center">
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
+![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
 **Verificar Envío de Transacción y Registros de Staking**
