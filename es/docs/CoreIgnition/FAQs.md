@@ -1,47 +1,47 @@
 ---
-sidebar_label: Core Ignition FAQs
+sidebar_label: Preguntas Frecuentes sobre Core Ignition
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Ignition FAQs
+# Preguntas Frecuentes sobre Core Ignition
 
 ---
 
-### 1. What is Core Ignition?
+### 1. ¿Qué es Core Ignition?
 
-Core Ignition is a six-month incentive program developed by the Core Foundation to jumpstart the growth of Core ecosystem. Season 1 has concluded on September 11, 2024, and Season 2 is currently live. Please visit [Core Ignition](https://ignition.coredao.org) for further details.
+Core Ignition es un programa de incentivos de seis meses desarrollado por la Fundación Core para impulsar el crecimiento del ecosistema Core. La Temporada 1 concluyó el 11 de septiembre de 2024, y la Temporada 2 está actualmente en curso. Por favor, visita [Core Ignition](https://ignition.coredao.org) para más detalles.
 
-### 2. What is Core blockchain?
+### 2. ¿Qué es la blockchain Core?
 
-Core serves as the Proof of Stake layer for Bitcoin, pioneering Non-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Since April 2024, over 5,500 BTC have been staked with Core, boosting Bitcoin’s utility and security. Core is the most Bitcoin-aligned EVM blockchain, with approximately 55% of Bitcoin mining hash power contributing to the network’s security.
+Core funciona como la capa de Prueba de Participación (Proof of Stake) para Bitcoin, pionera en el Staking No Custodial de Bitcoin y asegurando un ecosistema BTCfi totalmente compatible con EVM. Desde abril de 2024, se han apostado más de 5,500 BTC en Core, aumentando la utilidad y seguridad de Bitcoin. Core es la blockchain EVM más alineada con Bitcoin, con aproximadamente el 55% del poder de hash de minería de Bitcoin contribuyendo a la seguridad de la red.
 
-### 3. I am new to Core ecosystem. How do I get started?
+### 3. Soy nuevo en el ecosistema Core. ¿Cómo empiezo?
 
-For new users to the Core blockchain, here's some essential information:
+Para los nuevos usuarios de la blockchain Core, aquí hay información esencial:
 
-1. To interact with Core, the users need its native token, CORE, in their wallet.
-2. For first-time users, Core offers a one-time benefit to help users get started:
-   - If users bridge at least 10 USDT to Core, users qualify for the Core Faucet.
-   - This Faucet automatically deposits some CORE into the user's wallet.
-3. The process works as follows:
-   - First, funds are bridged (minimum 10 USDT) to the Core blockchain.
-   - Upon successful bridging, Core will automatically deposit CORE into the user's wallet.
-   - With CORE now in the user's wallet, users can immediately begin transacting on the Core blockchain.
+1. Para interactuar con Core, los usuarios necesitan su token nativo, CORE, en su billetera.
+2. Para los usuarios que acceden por primera vez, Core ofrece un beneficio único para ayudarlos a comenzar:
+   - Si los usuarios transfieren al menos 10 USDT a Core, califican para el Core Faucet.
+   - Este Faucet deposita automáticamente algunos CORE en la billetera del usuario.
+3. El proceso funciona de la siguiente manera:
+   - Primero, los fondos se transfieren (mínimo 10 USDT) a la blockchain Core.
+   - Tras una transferencia exitosa, Core depositará automáticamente CORE en la billetera del usuario.
+   - Con CORE ahora en la billetera, los usuarios pueden comenzar a transaccionar en la blockchain Core de inmediato.
 
-Remember, this automatic CORE deposit is a one-time benefit designed to help new users easily start using the Core blockchain.
+Recuerda, este depósito automático de CORE es un beneficio único diseñado para ayudar a los nuevos usuarios a empezar fácilmente con la blockchain Core.
 
-### 4. Difference between Core Ignition versus Core Ignition Builder’s incentive program?
+### 4. ¿Cuál es la diferencia entre el programa de incentivos Core Ignition y el programa de incentivos Core Ignition Builder?
 
-The Core Ignition incentive program rewards loyal users to foster growth in Core Chain’s BTCfi ecosystem. In contrast, the Core Ignition Builder’s incentive program rewards developers for creating dApps/projects on the Core Chain.
+El programa de incentivos Core Ignition recompensa a los usuarios leales para fomentar el crecimiento del ecosistema BTCfi de Core Chain. Por otro lado, el programa de incentivos Core Ignition Builder recompensa a los desarrolladores por crear dApps/proyectos en Core Chain.
 
-### 5. I don’t have any Bitcoin token (BTC). Can I still participate in Core’s BTCfi ecosystem?
+### 5. No tengo ningún token Bitcoin (BTC). ¿Puedo participar igualmente en el ecosistema BTCfi de Core?
 
-Absolutely! Users can still participate in Core's BTCfi ecosystem even without holding Bitcoin. As an EVM-compatible chain, Core offers a range of DeFi opportunities similar to other EVM chains, including DEXes, lending protocols, perpetual futures, restaking, and NFT platforms. Core's mission is to unlock $1.25T of trapped Bitcoin liquidity, creating opportunities for all web3 users.
+¡Por supuesto! Los usuarios pueden participar en el ecosistema BTCfi de Core incluso sin poseer Bitcoin. Como una cadena compatible con EVM, Core ofrece una variedad de oportunidades DeFi similares a otras cadenas EVM, incluyendo DEXes, protocolos de préstamos, futuros perpetuos, re-staking y plataformas NFT. La misión de Core es desbloquear $1.25T de liquidez atrapada de Bitcoin, creando oportunidades para todos los usuarios de web3.
 
-### 6. Where to find more updates about Core Ignition?
+### 6. ¿Dónde puedo encontrar más actualizaciones sobre Core Ignition?
 
-- Visit the official [Core Ignition website.](https://ignition.coredao.org/)
-- Follow Core DAO [official X (Twitter) account](https://x.com/Coredao_Org)
-- Read [new blog posts](https://coredao.org/explore/blog)
-- Join Core community channels - [Discord](https://discord.com/invite/coredaoofficial), and [Telegram](https://t.me/CoreDAOTelegram) for discussions and regular updates.
+- Visita el [sitio web oficial de Core Ignition.](https://ignition.coredao.org/)
+- Sigue la [cuenta oficial de X (Twitter) de Core DAO](https://x.com/Coredao_Org)
+- Lee [nuevas publicaciones en el blog](https://coredao.org/explore/blog)
+- Únete a los canales de la comunidad Core - [Discord](https://discord.com/invite/coredaoofficial) y [Telegram](https://t.me/CoreDAOTelegram) para discusiones y actualizaciones regulares.
