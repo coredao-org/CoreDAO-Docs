@@ -34,7 +34,7 @@ Sí, existen límites de tasa fija en las solicitudes de API según el nivel de 
 | ------------- | ------------------------------------------------------------- |
 | **Gratis**    | 5 llamadas/segundo, hasta 10.000 llamadas/día |
 
-### 6. What is the status code of an API if an error occurs?
+### 6. ¿Cuál es el código de estado de una API si ocurre un error?
 
 Una llamada API que encuentra un error devolverá 0 como código de estado y mostrará la causa del error en el campo de resultado.
 
@@ -46,6 +46,6 @@ Una llamada API que encuentra un error devolverá 0 como código de estado y mos
 }
 ```
 
-### 7. What should I do if I encounter issues or bugs with the API?
+### 7. ¿Qué debo hacer si encuentro problemas o errores con la API?
 
 Consulte la documentación oficial de la API para [mensajes de problemas comunes] (https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si el problema persiste, contáctenos en nuestro [Discord] oficial (https ://discord.com/invite/coredaoofficial) servidor.
