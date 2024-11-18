@@ -56,7 +56,7 @@ Dado que **el reclamo de recompensas solo ocurre una vez al día** en dicho dise
 
 La lógica anterior se implementa en el método `afterTurnRound()`.
 
-### 7. How to handle the dues protection when delegating/undelegating?
+### 7. ¿Cómo gestionar la protección de cuotas al delegar/delegar?
 
 Tenga en cuenta que en el contrato `PledgeAgent` (el contrato de participación), cuando los usuarios delegan
 
