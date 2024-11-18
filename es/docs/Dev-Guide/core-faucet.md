@@ -1,27 +1,25 @@
 ---
-sidebar_label: Core Testnet Faucet
+sidebar_label: Grifo de Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Testnet Faucet
+# Grifo de Core Testnet
 
 ---
 
-To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores prototipar rápidamente sus dApps, Core ha lanzado el [Grifo Público de Core Testnet](https://scan.test.btcs.network/faucet) para distribuir tokens de prueba de Core, **tCORE**.
 
-## Steps to Obtain tCORE from Core Testnet Faucet
+## Pasos para Obtener tCORE del Grifo de Core Testnet
 
-1. Navigate to the [faucet](https://scan.test.btcs.network/faucet) website.
-2. Paste your address in the given textbox. Make sure you give the Core Testnet address of your wallet that you want to get funded with tCore.
-3. Complete the CAPTCHA
-4. Click the `Get tCORE` button. After requesting tCORE from the faucet, you'll see your MetaMask balance increase.
+1. Diríjase al sitio web del [grifo](https://scan.test.btcs.network/faucet).
+2. Pegue su dirección en el cuadro de texto proporcionado. Asegúrese de proporcionar la dirección de Core Testnet de su billetera que desea financiar con tCore.
+3. Complete el CAPTCHA.
+4. Haga clic en el botón `Get tCORE`. Después de solicitar tCORE del grifo, verá que el balance de su MetaMask aumenta.
 
-![using-faucet](../../static/img/faucet/faucet.png)
-:::caution
-Each address can request **only one tCORE per day**. If you've run out of tCORE and the faucet won't send you more because of the one tCORE daily limit, come back tomorrow and try again!
+Cada dirección puede solicitar **solo un tCORE por día**. Si se queda sin tCORE y el grifo no le envía más debido al límite diario de un tCORE, regrese mañana e intente nuevamente.
 :::
 
 :::note
-tCORE is only used for testing and does not have any value. Do not use it for real financial transactions.
+tCORE es solo para pruebas y no tiene ningún valor. No lo use para transacciones financieras reales.
 :::
