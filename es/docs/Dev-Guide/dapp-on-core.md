@@ -29,7 +29,7 @@ Este tutorial le ayudará a adquirir conocimientos sobre los siguientes puntos d
 
 - [Git](https://git-scm.com/) v2.44.0
 - [Node.js](https://nodejs.org/en) v20.11.1
-- [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) v10.2.4
+- [Node.js](https://nodejs.org/en) v20.11.1
 - [Hardhat](https://hardhat.org/hardhat-runner/docs/getting-started#installation) v10.2.4
 - [MetaMask Web Wallet Extension](https://metamask.io/download/)
 
@@ -272,16 +272,12 @@ npx hardhat run scripts/deploy-and-call.js
 Si se implementa correctamente, obtendrá el siguiente resultado
 
 ```bash
->npx hardhat run scripts/deploy-and-call.js
-Storage contract deployed to: 0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2
-call retrieve(): BigNumber { value: "0" }
-call store(), set value to 100
-call retrieve() again: BigNumber { value: "100" }
+npx hardhat run scripts/deploy-and-call.js
 ```
 
 5. Asegúrese de guardar la dirección del contrato de almacenamiento en el que se implementa, como se obtuvo anteriormente, esto se usará para interactuar con el contrato inteligente desde la interfaz de la dApp.
 
-🎉 Congratulations! Felicidades Ha aprendido con éxito cómo crear, compilar e implementar un contrato inteligente en Core Chain Testnet utilizando Hardhat.
+🎉¡Felicitaciones! Felicidades Ha aprendido con éxito cómo crear, compilar e implementar un contrato inteligente en Core Chain Testnet utilizando Hardhat.
 
 ## Interactuar con Smart Contract a través del Frontend
 
