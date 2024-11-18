@@ -112,7 +112,7 @@ Donde,
 <!-- 
 ### 9. How does the Core Chain ensure the security and integrity of Validators? -->
 
-### 9. What is slashing, and what are the different slashing fees charged on Core Chain?
+### 9. ¿Qué es el slashing y cuáles son las diferentes tarifas de slashing que se cobran en Core Chain?
 
 La "recorte" es una sanción que se aplica a los validadores en una red blockchain por mala conducta o incumplimiento de sus funciones. En la red Core Chain, la reducción puede afectar tanto a las recompensas potenciales como a las apuestas depositadas.
 
@@ -129,7 +129,7 @@ Hay dos escenarios en los que los validadores pueden ser encarcelados.
 
 <!-- ### 12. How to get unjailed, if possible? -->
 
-### 11. How frequently do Validators need to be online?
+### 11. ¿Con qué frecuencia deben estar en línea los validadores?
 
 En general, se espera que los validadores estén en línea y participen activamente casi continuamente.
 
