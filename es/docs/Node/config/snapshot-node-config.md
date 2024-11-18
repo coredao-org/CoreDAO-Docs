@@ -67,8 +67,8 @@ chmod -v u+x geth
 ##### MacOs
 
 ```bash
-wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_mac |cut -d\" -f4)
-mv geth_mac geth
+wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_linux |cut -d\" -f4)
+mv geth_linux geth
 chmod -v u+x geth
 ```
 
