@@ -45,7 +45,7 @@ Por motivos de seguridad, recomendamos utilizar la implementación OpenZeppelin 
 
 `npm install @openzeppelin/contracts`
 
-2\. Luego, puedes importar los contratos en la biblioteca con esto:
+`npm install @openzeppelin/contracts`. Luego, puedes importar los contratos en la biblioteca con esto:
 
 ```javascript
 // contracts/GLDToken.sol
@@ -63,7 +63,7 @@ contract GLDToken is ERC20 {
 
 Puede encontrar más información sobre la implementación de OpenZeppelin ERC-20 [aquí](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-#### References
+#### Referencias
 
 - [https://ethereum.org/en/developers/docs/standards/tokens/erc-20/](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [https://docs.openzeppelin.com/contracts/4.x/erc20](https://docs.openzeppelin.com/contracts/4.x/erc20)
