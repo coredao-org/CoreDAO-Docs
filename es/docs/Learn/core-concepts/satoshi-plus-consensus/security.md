@@ -56,7 +56,7 @@ Core emplea una arquitectura de seguridad sólida para mitigar amenazas potencia
   - **Base de validadores descentralizados:** Al exigir que los validadores estén respaldados por contribuciones sustanciales de participación y hash, el sistema asigna una amplia distribución de control, diluyendo el poder que cualquier minero o grupo podría tener.
   - **Desincentivos económicos:** El costo asociado con la adquisición de recursos suficientes para controlar más de la mitad de los aspectos de minería y participación de la red hace que dichos ataques sean económicamente desventajosos.
 
-### Sybil Attacks
+### Ataques de sibila
 
 - **Descripción:** Un atacante crea numerosas identidades falsas para obtener una influencia desproporcionada en la red.
 - **Mitigación lograda por:**
@@ -91,6 +91,6 @@ Core emplea una arquitectura de seguridad sólida para mitigar amenazas potencia
   - **Auditorías de código y revisiones de seguridad:** Las auditorías periódicas y exhaustivas del código de contrato inteligente realizadas por empresas de seguridad independientes ayudan a identificar y rectificar posibles vulnerabilidades.
   - **Programas de recompensas por errores:** Alentar a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente ofreciendo recompensas por su descubrimiento.
 
-## Conclusion
+## Conclusión
 
 La estrategia de seguridad de Core está profundamente integrada con su mecanismo de consenso único, Satoshi Plus, que aprovecha las fortalezas tanto de las capacidades mineras de Bitcoin como de los mecanismos de participación que prevalecen en las cadenas de bloques modernas. Además, la estrategia de seguridad de Core es multifacética y aborda vulnerabilidades potenciales a través de salvaguardias técnicas, incentivos económicos y procesos impulsados ​​por la comunidad. Este enfoque integral no solo mejora la resiliencia de la red contra ataques sino que también fomenta un ecosistema sólido donde las partes interesadas están motivadas a mantener y proteger la integridad de la red. A medida que Core continúa desarrollando e integrando nuevas funciones, su enfoque fundamental en la seguridad sigue siendo un componente crítico en su diseño y operación, de modo que siga siendo una plataforma segura y confiable tanto para usuarios como para desarrolladores.
