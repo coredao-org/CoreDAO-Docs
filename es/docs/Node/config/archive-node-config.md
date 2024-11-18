@@ -41,7 +41,7 @@ Para los nodos de archivo en **Core Blockchain Mainnet**, recomendamos las sigui
 | --------------------- | --------------------------------------------------------------------------------- |
 | Almacenamiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
 | CPU                   | CPU 8 nucleos                                                                     |
-| RAM                   | 32 Gigabytes                                                                      |
+| RAM                   | Ram                                                                               |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
 ## Ejecución del nodo de archivo principal
