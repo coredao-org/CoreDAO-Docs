@@ -197,6 +197,7 @@ const sidebars = {
               'CoreIgnition/FAQs']
     },
   ],
+
   nodeSidebar:[ 
     {
       type: 'category',
@@ -268,6 +269,7 @@ const sidebars = {
                   label: 'How To Guides',
                   items: [
                     'Learn/products/btc-staking/stake-btc-guide',
+                    'Learn/products/btc-staking/dual-staking-guide',
                     'Learn/products/btc-staking/Redeeming-Guide',
                   ]
               },
