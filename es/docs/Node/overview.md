@@ -1,65 +1,65 @@
 ---
-sidebar_label: Overview of Nodes Running on Core Chain
+sidebar_label: Descripción general de los nodos que se ejecutan en la cadena central
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Nodes in the Core Chain Ecosystem
+# Nodos en el ecosistema de la cadena central
 
 ---
 
-In the Core Chain ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. These nodes facilitate various functions, from transaction validation to block propagation, ensuring the network's overall health and efficiency. Depending on your goals, there are different node configurations possible on the Core network. If you haven't already started the Core Chain node, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
+En el ecosistema Core Chain, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red. Dependiendo de sus objetivos, existen diferentes configuraciones de nodos posibles en la red Core. Si aún no ha iniciado el nodo Core Chain, revise la documentación para [Ejecutar un nodo validador local] (./validator/running-validator.md) antes de continuar con diferentes configuraciones.
 
-- If you want to be part of the governance of the Core Nework:
+- Si quieres ser parte de la gobernanza de la Red Core:
 
-  - [Start a Validator Node](./config/validator-node-config.md)
+  - [Iniciar un nodo validador](./config/validator-node-config.md)
 
-- If you want to run a Core Chain node for private use:
-  - [Start a Normal Full Node](./Full-Node/on-mainnet.md)
+- Si desea ejecutar un nodo Core Chain para uso privado:
+  - [Iniciar un nodo completo normal](./Full-Node/on-mainnet.md)
 
-- If you want to send transactions or query the chain directly from your own Core Chain node:
+- Si desea enviar transacciones o consultar la cadena directamente desde su propio nodo de Core Chain:
 
-  - [Start an RPC Node](./config/rpc-node-config.md)
+  - [Iniciar un nodo RPC](./config/rpc-node-config.md)
 
-- If you want to query historical chain data since the genesis block:
+- Si desea consultar datos históricos de la cadena desde el bloque de génesis:
 
-  - [Start an Archive Node](./config/archive-node-config.md)
+  - [Iniciar un nodo de archivo](./config/archive-node-config.md)
 
-- If you want to help node operators sync up quickly with the network:
+- Si desea ayudar a los operadores de nodos a sincronizarse rápidamente con la red:
 
-  - [Start a Snapshot Node](./config/snapshot-node-config.md)
+  - [Iniciar un nodo de instantánea](./config/snapshot-node-config.md)
 
-## Types of Nodes on the Core Chain Network
+## Tipos de nodos en la red de la cadena central
 
-1. **Validators:**
-   - **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s consensus framework.
-   - **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
-   - **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
+1. **Validadores:**
+   - **Rol:** Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso de la cadena central.
+   - **Requisitos:** Los validadores deben apostar una cantidad mínima de **10,000 tokens CORE** para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
+   - **Incentivos:** Los validadores obtienen recompensas en tokens CORE por su papel activo en el mantenimiento y seguridad de las operaciones de la red.
 
-2. **Normal Full Nodes:**
-   - **Role:** Normal Full Nodes maintain a complete, real-time copy of the blockchain ledger, validate transactions, and support the network by relaying block and transaction data. These are essentially useful for private use.
-   - **Requirements:** Operating a Full Node requires significant computational and storage resources to handle the complete blockchain data and continuous network traffic.
+2. **Nodos completos normales:**
+   - **Rol:** Los nodos completos normales mantienen una copia completa y en tiempo real del libro mayor de blockchain, validan transacciones y respaldan la red transmitiendo datos de bloques y transacciones. Estos son esencialmente útiles para uso privado.
+   - **Requisitos:** Operar un nodo completo requiere importantes recursos computacionales y de almacenamiento para manejar los datos completos de la cadena de bloques y el tráfico continuo de la red.
 
-3. **RPC Nodes:**
-   - **Role:** RPC Nodes provide an application programming interface (API) for developers and external applications to interact with the blockchain, facilitating queries and transactions.
-     **Importance:** They are essential for the development and operation of decentralized applications (DApps) and for external access to the blockchain’s data.
+3. **Nodos RPC:**
+   - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
+     **Importancia:** Son esenciales para el desarrollo y operación de aplicaciones descentralizadas (DApps) y para el acceso externo a los datos de blockchain.
 
-4. **Archive Nodes:**
-   - **Role:** Archive Nodes store the entire history of the blockchain including all states and transactions since the genesis block, providing a valuable resource for deep historical queries.
-   - **Requirements:** These nodes require extensive storage capacity as they keep all expired and current states of the blockchain, making them resource-intensive.
-   - **Usage:** Archive Nodes are crucial for developers needing access to all historical blockchain data for analysis, audits, and advanced blockchain querying.
+4. **Nodos de archivo:**
+   - **Función:** Los nodos de archivo almacenan el historial completo de la cadena de bloques, incluidos todos los estados y transacciones desde el bloque de génesis, lo que proporciona un recurso valioso para consultas históricas profundas.
+   - **Requisitos:** Estos nodos requieren una gran capacidad de almacenamiento, ya que mantienen todos los estados actuales y vencidos de la cadena de bloques, lo que los hace consumir muchos recursos.
+   - **Uso:** Los nodos de archivo son cruciales para los desarrolladores que necesitan acceso a todos los datos históricos de blockchain para análisis, auditorías y consultas avanzadas de blockchain.
 
-5. **Snapshot Nodes:**
-   - **Role:** Snapshot Nodes maintain copies of blockchain snapshots at various intervals. These snapshots include the state of the blockchain at a given block height, offering a restore point for Full Nodes or new nodes.
-   - **Benefits:** They provide a means for rapid synchronization and recovery of other nodes in the network, enhancing the resilience and scalability of the network infrastructure.
+5. **Nodos de instantáneas:**
+   - **Función:** Los nodos de instantáneas mantienen copias de instantáneas de blockchain en varios intervalos. Estas instantáneas incluyen el estado de la cadena de bloques a una altura de bloque determinada, lo que ofrece un punto de restauración para nodos completos o nodos nuevos.
+   - **Beneficios:** Proporcionan un medio para una rápida sincronización y recuperación de otros nodos en la red, mejorando la resiliencia y escalabilidad de la infraestructura de la red.
 
-## Importance of Each Node Type
+## Importancia de cada tipo de nodo
 
-- **Validators** ensure transaction validity and network consensus.
-- **Full Nodes** and **Archive Nodes** provide redundancy and data integrity.
-- **RPC Nodes** enable application development and interaction with the blockchain.
-- **Snapshot Nodes** aid in efficient network scaling and faster node synchronization.
+- **Validadores** garantizan la validez de las transacciones y el consenso de la red.
+- Los **nodos completos** y los **nodos de archivo** proporcionan redundancia e integridad de datos.
+- Los **Nodos RPC** permiten el desarrollo de aplicaciones y la interacción con la cadena de bloques.
+- **Snapshot Nodes** ayuda a escalar la red eficientemente y a sincronizar los nodos más rápido.
 
-## Conclusion
+## Conclusión
 
-The diverse roles of nodes in the Core Chain ecosystem collectively ensure the blockchain is secure, efficient, accessible, and robust. Validators, Full Nodes, and Archive Nodes form the backbone of the network's security and data integrity. At the same time, RPC Nodes, and Snapshot Nodes provide flexibility, accessibility, and scalability. This multi-faceted node architecture supports a wide range of operations from transaction processing to complex dApp interactions and historical data analysis.
+Las diversas funciones de los nodos en el ecosistema Core Chain garantizan colectivamente que la cadena de bloques sea segura, eficiente, accesible y robusta. Los validadores, los nodos completos y los nodos de archivo forman la columna vertebral de la seguridad y la integridad de los datos de la red. Al mismo tiempo, los nodos RPC y los nodos Snapshot brindan flexibilidad, accesibilidad y escalabilidad. Esta arquitectura de nodo multifacética admite una amplia gama de operaciones, desde el procesamiento de transacciones hasta interacciones complejas de dApp y análisis de datos históricos.
