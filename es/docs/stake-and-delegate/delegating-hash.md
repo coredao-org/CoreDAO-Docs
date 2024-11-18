@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delegating Hash-Rate
+sidebar_label: Delegación de tasa de hash
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating Hash
+# Delegación de tasa de hash
 
 ---
 
@@ -17,7 +17,7 @@ Usando sus claves públicas y privadas, los mineros de BTC pueden delegar su pod
 Echemos un vistazo a cómo los mineros o grupos de minería de BTC pueden delegar el poder de hash a la cadena de bloques Core agregando una salida `OP_RETURN` en la transacción de base de monedas BTC.
 
 :::info
-For more information about Core blockchain and Satoshi Plus consensus, please refer to the [Technical Whitepaper](https://whitepaper.coredao.org/).
+Para obtener más información sobre la cadena de bloques Core y el consenso Satoshi Plus, consulte el [documento técnico](https://whitepaper.coredao.org/).
 :::
 
 ### Implementación
