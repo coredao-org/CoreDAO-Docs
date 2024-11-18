@@ -51,7 +51,7 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 
 - Después de seleccionar el botón **Implementar**, MetaMask abrirá una ventana emergente que le pedirá que firme y luego envíe la transacción de implementación en Core Testnet, como se ve a continuación.
 
-![remix-ide](../../static/img/remix/remix-7.png)
+![remix-ide](../../static/img/remix/remix-7.avif)
 
 - Una vez que el contrato se haya implementado correctamente, debería recibir un mensaje en la consola.
 
@@ -67,7 +67,7 @@ Ubique el contrato recién implementado en la sección "Contratos implementados"
 
 MetaMask nos volverá a pedir que firmemos y enviemos la transacción.
 
-![remix-ide](../../static/img/remix/remix-10.png)
+![remix-ide](../../static/img/remix/remix-10.avif)
 
 Después de almacenar con éxito "100" en nuestro contrato inteligente, podemos usar la función "recuperar" para leer el valor. Haga clic en el botón **recuperar** para ver el valor y deberíamos ver el número "100" devuelto, como se muestra a continuación en el cuadro azul.
 
@@ -79,4 +79,4 @@ Es posible que hayas notado que MetaMask no aparecía para la llamada a la funci
 
 Usemos [Core Scan](https://scan.test.btcs.network/) para verificar nuestro contrato implementado. Copie la dirección del contrato de Remix y úsela como entrada para una búsqueda en Core Scan. Debería encontrar el contrato inteligente junto con información relevante, además de una lista de todas las interacciones históricas del contrato que incluye nuestra transacción de implementación y nuestra transacción de "tienda".
 
-![remix-ide](../../static/img/remix/remix-12.avif)
+![remix-ide](../../static/img/remix/remix-1.avif)
