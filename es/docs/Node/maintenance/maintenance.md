@@ -1,68 +1,68 @@
 ---
-sidebar_label: Node Maintenance
+sidebar_label: Mantenimiento de nodos
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
 # Node Maintainence
 
-## Binary
+## Binario
 
-All the clients are suggested to upgrade to the latest release. The [latest version](https://github.com/coredao-org/core-chain/releases/latest) is supposed to be more stable and has better performance.
+Se sugiere a todos los clientes que actualicen a la última versión. Se supone que la [última versión] (https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
 
-## Storage
+## Almacenamiento
 
-### Prune State
+### Estado de poda
 
-According to the test, the performance of a full node will degrade when the storage size reaches a high volume (previously it was 1.5TB, which is an experimental value, the latest number needs to be updated). We suggest that the fullnode always keep light storage by pruning the storage.
+Según la prueba, el rendimiento de un nodo completo se degradará cuando el tamaño de almacenamiento alcance un volumen alto (anteriormente era 1,5 TB, que es un valor experimental, el último número debe actualizarse). Sugerimos que el nodo completo siempre mantenga un almacenamiento ligero podándolo.
 
-#### Rules for Pruning
+#### Reglas de poda
 
-1. **Do not try to prune an archive node.** Archive nodes need to maintain **ALL** historic data by definition.
-2. Ensure there is at least **40 GB** of storage space still available on the disk that will be pruned. Failures have been reported with **~25GB** of free space.
-3. Geth is fully sync'd
-4. Geth has finished creating a snapshot that is at least **128 blocks** old. This is true when "state snapshot generation" is no longer reported in the logs.
+1. **No intente podar un nodo de archivo.** Los nodos de archivo deben mantener **TODOS** los datos históricos por definición.
+2. Asegúrese de que todavía haya al menos **40 GB** de espacio de almacenamiento disponible en el disco que se eliminará. Se han reportado fallas con **~25 GB** de espacio libre.
+3. Geth está completamente sincronizado
+4. Geth ha terminado de crear una instantánea que tiene al menos **128 bloques** de antigüedad. Esto es cierto cuando la "generación de instantáneas de estado" ya no se informa en los registros.
 
-#### How to prune:
+#### Cómo podar:
 
-1. Stop the geth process
-2. Run the prune command
+1. Detener el proceso geth
+2. Ejecute el comando de poda
 
 `	nohup geth --datadir ~/node snapshot prune-state > . /prune.log 2>&1 & `
 
-3. Check `prune.log`, wait for the prune operation to complete, and start geth.
+3. Verifique `prune.log`, espere a que se complete la operación de poda e inicie geth.
 
-The maintainers should always have a few backup nodes in case one of the nodes is getting pruned. The hardware is also important, **make sure the SSD meets: 4TB of free disk space, solid-state drive(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms**.
+Los mantenedores siempre deben tener algunos nodos de respaldo en caso de que uno de los nodos sea eliminado. El hardware también es importante, **asegúrese de que el SSD cumpla con: 4 TB de espacio libre en disco, unidad de estado sólido (SSD), gp3, 8k IOPS, rendimiento de 250 MB/S, latencia de lectura \<1 ms**.
 
-### Prune Ancient Data in Real Time
+### Podar datos antiguos en tiempo real
 
-Ancient data is block data that is already considered immutable. This is determined by a threshold which is currently set at **90000**. This means that blocks older than **90000** are considered ancient data. We recommend the `--prunceancient` flag to users who don't care about the ancient data. This is also advised for users who want to save disk space since this will only keep data for the latest **90000** blocks.  Note that once this flag is turned on, the ancient data will not be recovered again and you cannot go back running your node without this flag in the start-up command.
+Los datos antiguos son datos en bloque que ya se consideran inmutables. This is determined by a threshold which is currently set at **90000**. Esto está determinado por un umbral que actualmente está establecido en **90000** Esto significa que los bloques anteriores a **90000** se consideran datos antiguos. Recomendamos la opción `--prunceancient` a los usuarios que no se preocupan por los datos antiguos. Esto también se recomienda para los usuarios que desean ahorrar espacio en el disco, ya que esto solo conservará los datos de los últimos **90000** bloques.  Tenga en cuenta que una vez que se activa esta bandera, los datos antiguos no se recuperarán nuevamente y no podrá volver a ejecutar su nodo sin esta bandera en el comando de inicio.
 
-How to use the flag:
+Cómo utilizar la bandera:
 
 ```bash
 ./geth --tries-verify-mode none --config /server/config.toml --datadir /server/node --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --pruneancient=true --syncmode=full
 ```
 
-### Prune Block Tools
+### Herramientas de poda de bloques
 
-Core offers the offline feature to prune undesired ancient block data. It will discard block, receipt, and header in the ancient database to save space.
+Core ofrece la función fuera de línea para eliminar datos de bloques antiguos no deseados. Descartará el bloque, el recibo y el encabezado en la base de datos antigua para ahorrar espacio.
 
-How to prune:
+Cómo podar:
 
-1. Stop the Geth process.
-2. Run the following command
+1. Detenga el proceso Geth.
+2. Ejecute el siguiente comando
 
 ```bash
-./geth snapshot prune-block --datadir /server/node --datadir.ancient ./chaindata/ancient --block-amount-reserved 1024
+./geth instantánea prune-block --datadir /server/node --datadir.ancient ./chaindata/ancient --block-amount-reserved 1024
 ```
 
-`block-amount-reserved` is the number of ancient data blocks that you want to keep after pruning.
+`block-amount-reserved` es la cantidad de bloques de datos antiguos que desea conservar después de la poda.
 
-## Light Storage
+## Almacenamiento ligero
 
-When the node crashes or been force killed, the node will sync from a block that was a few minutes or a few hours ago. This is because the state in memory is not persisted into the database in real time, and the node needs to replay blocks from the last checkpoint once it start. The replaying time depends on the configuration `TrieTimeout` in the config.toml.  We suggest you raise it if you can tolerate with long replaying time, so the node can keep light storage.
+Cuando el nodo falla o se cierra a la fuerza, el nodo se sincronizará desde un bloque que se realizó hace unos minutos o unas horas. Esto se debe a que el estado en la memoria no persiste en la base de datos en tiempo real y el nodo necesita reproducir bloques desde el último punto de control una vez que se inicia. El tiempo de reproducción depende de la configuración `TrieTimeout` en config.toml.  Le sugerimos que lo aumente si puede tolerar un tiempo de reproducción prolongado, para que el nodo pueda mantener un almacenamiento ligero.
 
-## Upgrade Geth
+## Actualizar Geth
 
-Please read [this guide](network-upgrade.md)
+Lea [esta guía] (network-upgrade.md)
