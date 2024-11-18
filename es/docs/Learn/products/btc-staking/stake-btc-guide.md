@@ -12,7 +12,7 @@ This user guide is designed to walk you through staking your Bitcoin on the Core
 
 To be able to stake, you must have the following prerequisites:
 
-1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visit stake.coredao.org for the latest supported wallets). You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the Element wallet mobile application as well.
+1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB\\&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visit stake.coredao.org for the latest supported wallets). You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the Element wallet mobile application as well.
 2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to receive CORE token rewards for staking Bitcoin. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
 ## **Key Considerations For BTC Staking**
@@ -45,91 +45,91 @@ Non-custodial Bitcoin staking introduces a secure and decentralized method for B
 
 ## Guía Paso a Paso para el Staking de Bitcoin No Custodial
 
-To begin staking your Bitcoin on the Core blockchain and earn staking rewards in CORE tokens, follow the steps detailed below to stake Bitcoin through Core's official [staking website](http://stake.coredao.org/).
+Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar recompensas de staking en tokens CORE, sigue los pasos detallados a continuación para hacer staking de Bitcoin a través del [sitio web oficial de staking](http://stake.coredao.org/) de Core.
 
-### Connect Core Wallet
+### Conectar la Cartera de Core
 
-1. Visit [https://stake.coredao.org](https://stake.coredao.org/) and click on **Validators** on the top header.
+1. Visita [https://stake.coredao.org](https://stake.coredao.org/) y haz clic en **Validators** en el encabezado superior.
 
-2. Click **Connect Wallet** in the top right corner of the header to connect your Core wallet. From the supported list of wallets, choose your desired Core wallet. For this walkthrough, we have used Metamask.
+2. Haz clic en **Connect Wallet** en la esquina superior derecha del encabezado para conectar tu cartera de Core. De la lista de carteras soportadas, elige la cartera de Core que desees. Para esta guía, hemos usado Metamask.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-1.png)
 </p>
 
-3. Confirm the wallet notification to allow to connect to the staking website.
+3. Confirma la notificación de la cartera para permitir la conexión con el sitio web de staking.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-2.png)
 </p>
 
-### Selecting a Core Validator for Bitcoin Delegation
+### Seleccionar un Validador de Core para Delegar Bitcoin
 
-4. Once on the **Validators** page, scroll down to view the list of Core Validators and choose the Validator to whom you wish to delegate your Bitcoins. Please ensure to choose active validators.
+4. Una vez en la página de **Validators**, desplázate hacia abajo para ver la lista de Validadores de Core y elige el Validador al que deseas delegar tus Bitcoins. Asegúrate de elegir validadores activos.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-3.png)
 </p>
 
-5. By clicking on the name of the desired validator, you will be directed to the **Validator Details** page. This page displays details about the staking/delegation records for the selected validator.
+5. Al hacer clic en el nombre del validador deseado, serás dirigido a la página de **Detalles del Validador**. Esta página muestra detalles sobre los registros de staking/delegación para el validador seleccionado.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-4.png)
 </p>
 
-6. Click on the **Stake** button, then select **BTC**
+6. Haz clic en el botón **Stake**, luego selecciona **BTC**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-5.png)
 </p>
 
-7. To connect your Bitcoin wallet, click on the supported wallet of your choice. For this walkthrough, we selected Unisat.
+7. Para conectar tu cartera de Bitcoin, haz clic en la cartera soportada de tu elección. Para esta guía, seleccionamos Unisat.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-6.png)
 </p>
 
-8. Once your Bitcoin wallet is connected, it's important to understand and specify several key parameters:
+8. Una vez que tu cartera de Bitcoin esté conectada, es importante entender y especificar varios parámetros clave:
 
-- Specify the amount of Bitcoin you’d like to delegate. The minimum amount to delegate is **0.01 Bitcoin**.
-- Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.
-  - You can input values by selecting inside the lock time box or clicking on the calendar icon to select the date and click “OK” to proceed.
-  - El tiempo de bloqueo predeterminado está configurado para un mes en adelante. The minimum lock time is **10 days**.
-- Specify the network priority speed for your transaction
+- Especifica la cantidad de Bitcoin que deseas delegar. La cantidad mínima para delegar es **0.01 Bitcoin**.
+- Configurar el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o redelegación.
+  - Puedes ingresar valores seleccionando dentro del cuadro de tiempo de bloqueo o haciendo clic en el ícono del calendario para seleccionar la fecha y luego hacer clic en "OK" para continuar.
+  - El tiempo de bloqueo predeterminado está configurado para un mes en adelante. El tiempo de bloqueo mínimo es **10 días**.
+- Especifica la velocidad de prioridad de la red para tu transacción.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-7.png)
 </p>
 
-9. Note that the **Reward Address on Core Chain** is pulled from the connected Core wallet. You should connect the Core wallet with the same address on which you want to receive staking rewards in CORE tokens.
-10. Click **Confirm** to complete the transaction.
+9. Ten en cuenta que la **Dirección de Recompensa en la Cadena de Core** se extrae de la cartera de Core conectada. Debes conectar la cartera de Core con la misma dirección en la que deseas recibir las recompensas de staking en tokens CORE.
+10. Haz clic en **Confirmar** para completar la transacción.
 
-### Confirm OP\_Return Output
+### Confirmar Salida OP\_Return
 
-11. Before Signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. The OP\_Return output is where your redeem\_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP\_Return. Aborte la transacción si no incluye la salida OP\_Return.
+11. Antes de firmar la transacción en tu cartera, verifica las salidas de la transacción para asegurarte de que incluyan una salida OP\_Return. La salida OP\_Return es donde se guarda tu redeem\_script y se usa esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre OP\_Return. Aborta la transacción si no incluye la salida OP\_Return.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
-12. Once you confirm the transition, you will receive a **Transaction Submitted** notification. You can verify your transaction by clicking **View on BTC Explore**.
+12. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada**. Puedes verificar tu transacción haciendo clic en **Ver en BTC Explore**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
-### Viewing Staking Records
+### Ver Registros de Staking
 
-13. In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
+13. En la esquina superior derecha del sitio web de staking, pasa el cursor sobre tu cartera conectada y haz clic en **My Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-14. The **My Staking** page displays records of all your staking (CORE, BTC, and hash). Click on the **BTC Records** tab to show details of your BTC delegations.
+14. La página **My Staking** muestra los registros de todos tus stakings (CORE, BTC y hash). Haz clic en la pestaña **BTC Records** para ver detalles de tus delegaciones de BTC.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
-**Congratulations!!** You have successfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and voting for validators on Core, you actively contribute to the governance and security of the Core network, supporting its decentralization and stability.
+**¡Felicidades!** Has apostado con éxito tu Bitcoin en la blockchain de Core y ahora ganarás activamente tokens CORE por tu Bitcoin delegado. Al hacer staking de Bitcoin y votar por validadores en Core, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad.
