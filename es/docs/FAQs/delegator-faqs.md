@@ -63,6 +63,6 @@ Consulte la guía detallada [aquí](../stake-and-delegate/delegating-core#claimi
 
 Las recompensas se pagan al final de cada ronda de consenso en la cadena de bloques Core.
 
-### 13. What happens if a validator stops performing or is penalized?
+### 13. ¿Qué sucede si un validador deja de funcionar o es penalizado?
 
 El mal desempeño o la mala conducta de los validadores pueden resultar en sanciones como reducción de lo que está en juego y encarcelamiento. Tenga en cuenta que los delegados no perderán sus activos apostados; las sanciones a los validadores solo afectarán las recompensas diarias del delegador.
