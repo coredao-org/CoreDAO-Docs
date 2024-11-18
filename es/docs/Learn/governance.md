@@ -1,5 +1,5 @@
 ---
-sidebar_label: Governance
+sidebar_label: Gobernancia
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -37,7 +37,7 @@ La gobernanza de la blockchain de Core está diseñada para evolucionar con el t
 
 La gobernanza de Core se encuentra actualmente en transición, situada en la Etapa 1.5, con el objetivo de alcanzar la Etapa 3, que representa la descentralización total. La gobernanza se facilita a través del token CORE, lo que otorga a la comunidad el poder de guiar el desarrollo y dirección de Core.
 
-## Governance Oversight
+## Supervisión de la gobernanza
 
 En el modelo actual de gobernanza de Core, los contribuyentes de Core y los miembros de la comunidad son responsables de supervisar el desarrollo temprano de la red. Las responsabilidades incluyen, pero no se limitan a, expandir el conjunto de validadores, ajustar los parámetros de gobernanza y determinar el porcentaje de recompensas por bloque y tarifas de transacción que se queman. Para más detalles sobre las mejoras propuestas e implementadas relacionadas con la gobernanza de Core, visita el [sitio web oficial de Gobernanza de Core](https://gov.coredao.org/).
 
