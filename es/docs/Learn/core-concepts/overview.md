@@ -58,7 +58,7 @@ Core alberga un ecosistema BTCfi sólido y en crecimiento. Muchos protocolos en 
 
 ## Visión de futuro
 
-La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de desbloquear Bitcoin. Esto incluye muchas actualizaciones estructurales diseñadas para alinear aún más Bitcoin y Core, crear una mejor experiencia de usuario para los usuarios y aprovechar otras áreas de investigación y desarrollo. En última instancia, estos elementos deberían servir para crear un ecosistema blockchain más interconectado y funcionalmente diverso donde las fortalezas fundamentales de Bitcoin se aprovechen para respaldar tecnologías y aplicaciones nuevas y emergentes en DeFi. Some roadmap items include:
+La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de desbloquear Bitcoin. Esto incluye muchas actualizaciones estructurales diseñadas para alinear aún más Bitcoin y Core, crear una mejor experiencia de usuario para los usuarios y aprovechar otras áreas de investigación y desarrollo. En última instancia, estos elementos deberían servir para crear un ecosistema blockchain más interconectado y funcionalmente diverso donde las fortalezas fundamentales de Bitcoin se aprovechen para respaldar tecnologías y aplicaciones nuevas y emergentes en DeFi. Algunos elementos de la hoja de ruta incluyen:
 
 - **Apuesta dual:** Creación de tasas de apuesta de Bitcoin más altas para los apostadores de tokens Bitcoin y CORE.
 
@@ -74,6 +74,6 @@ La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de des
 
 - **Retomando:** Esta adición permitiría que otros protocolos se beneficien de la protección de Bitcoin de Core Chain.
 
-## Conclusion
+## Conclusión
 
 Al aprovechar su exclusivo mecanismo de consenso Satoshi Plus, Core integra mineros de Bitcoin, participantes de CORE y participantes de Bitcoin sin custodia, lo que garantiza una seguridad sólida y una gobernanza descentralizada. Este enfoque innovador no sólo mejora la utilidad de Bitcoin, sino que también fomenta un próspero ecosistema BTCfi, que permite a los usuarios, desarrolladores e inversores desbloquear nuevas oportunidades en las finanzas descentralizadas. A medida que Core continúa creciendo y evolucionando, está preparado para promover el papel de Bitcoin como pilar central de un futuro financiero escalable, sin permisos e interconectado.
