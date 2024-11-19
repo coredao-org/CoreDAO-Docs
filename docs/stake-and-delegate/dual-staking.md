@@ -27,19 +27,6 @@ To enable higher yields for Bitcoin staking through Dual Staking, users must mee
 2. The CORE staking wallet address ***must*** match the designated CORE rewards address for Bitcoin staking to which the yield is paid.
 
 
-## How does Dual Staking Work? 
-
-Dual Staking does not alter the staking process for Bitcoin and CORE. For more information on Non-Custodial Bitcoin Staking, please refer [here](../Learn/products/btc-staking/overview) and consult this detailed [guidebook](./delegating-core) on CORE delegation.
-
-Dual Staking creates an opportunity to unlock higher yields when both Bitcoin and CORE are staked simultaneously, with varying CORE staking thresholds  corresponding to different yield boost levels on Bitcoin staking rewards on the Core blockchain. 
-
-Bitcoin holders can [stake their Bitcoin](../Learn/products/btc-staking/stake-btc-guide) through Core's Non-Custodial Bitcoin Staking to accumulate CORE rewards. By subsequently [staking their CORE](delegating-core.md) tokens above the minimum threshold for Dual Staking, users unlock higher tiers of Bitcoin yields, paid in CORE. While Dual Staking enhances Bitcoin staking rewards, it has no impact on the yield generated from CORE staking itself.
-
-In order to enable higher yields for Bitcoin staking through Dual Staking, users must meet the following requirements: 
-
-1. Stake both CORE and Bitcoin simultaneously, ensuring that the amount of CORE staked exceeds the minimum dual staking threshold  **AND**   
-2. The CORE staking wallet address ***must*** match the designated CORE rewards address for Bitcoin staking to which the yield is paid to.
-
 ### Boosted Yield Thresholds
 
 Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers. 
