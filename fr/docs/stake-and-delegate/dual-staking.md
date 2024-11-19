@@ -27,19 +27,6 @@ To enable higher yields for Bitcoin staking through Dual Staking, users must mee
 1. Staker à la fois du CORE et du Bitcoin simultanément, en s'assurant que la quantité de CORE staké dépasse le seuil minimum de dual staking **ET**
 2. The CORE staking wallet address _**must**_ match the designated CORE rewards address for Bitcoin staking to which the yield is paid.
 
-## How does Dual Staking Work?
-
-Dual Staking does not alter the staking process for Bitcoin and CORE. Pour plus d'informations sur le staking de Bitcoin non-custodial, veuillez vous référer [ici](../Learn/products/btc-staking/overview) et consulter ce [guide](./delegating-core) détaillé sur la délégation de CORE.
-
-Le Dual Staking crée une opportunité de débloquer des rendements plus élevés lorsque le Bitcoin et le CORE sont stakés simultanément, avec des seuils de staking de CORE variables correspondant à différents niveaux de boost de rendement sur les récompenses de staking de Bitcoin sur la blockchain Core.
-
-Les détenteurs de Bitcoin peuvent [staker leur Bitcoin](../Learn/products/btc-staking/stake-btc-guide) via le staking de Bitcoin Non-Custodial de Core pour accumuler des récompenses en CORE. En [stakant ensuite leurs tokens CORE](delegating-core.md) au-dessus du seuil minimum pour le Dual Staking, les utilisateurs débloquent des niveaux supérieurs de rendements de Bitcoin, payés en CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'a aucun impact sur le rendement généré par le staking de CORE lui-même.
-
-Afin de permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
-
-1. Stake both CORE and Bitcoin simultaneously, ensuring that the amount of CORE staked exceeds the minimum dual staking threshold  **AND**
-2. L'adresse du portefeuille de staking CORE _**doit**_ correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est versé.
-
 ### Seuils de rendement boosté
 
 Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers.
