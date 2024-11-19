@@ -15,7 +15,7 @@ Para poder apostar, debes tener los siguientes requisitos previos:
 1. **Extensión de Navegador para Cartera de Bitcoin Compatible:** Para participar en el proceso de staking de BTC, debes instalar las extensiones de navegador de cualquiera de las carteras de Bitcoin compatibles, como [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=es), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), y/o [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visita stake.coredao.org para las últimas carteras compatibles). Debes usar una versión de escritorio, ya que las carteras móviles y de hardware no son actualmente compatibles. También puedes apostar directamente usando la aplicación móvil de la cartera Element.
 2. **Dirección de Cartera Core para Recompensas:** Prepara tu dirección de cartera Core para apostar CORE y recibir [recompensas de tokens CORE por apostar Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites) y CORE. Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. Para obtener más información sobre cómo configurar MetaMask para trabajar con la red Core, sigue la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
-## Consideraciones Clave para el Staking de BTC
+## Key Considerations For Dual Staking
 
 A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu Bitcoin en Core.
 
@@ -34,7 +34,7 @@ A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu
 5. **Consideraciones para los Períodos de Bloqueo**
    - Una vez que bloqueas tu Bitcoin para el staking, no será accesible hasta que termine el período de staking. Considerando tus objetivos de inversión y tolerancia al riesgo, se recomienda seleccionar tu período de bloqueo de manera reflexiva. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
 
-## Flujo de Trabajo Paso a Paso de Dual Staking
+## Step-By-Step Walkthrough of Dual Staking
 
 El staking No Custodial de Bitcoin de Core introduce un método seguro y descentralizado para que los poseedores de Bitcoin ganen rendimiento a través del staking de Bitcoin. Los usuarios pueden apostar su Bitcoin de manera nativa en la red Bitcoin a través de un mecanismo basado en el tiempo y participar activamente en el mecanismo de Consenso de la blockchain de Core mientras realizan el staking.
 
