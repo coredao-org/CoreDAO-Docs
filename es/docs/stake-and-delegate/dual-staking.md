@@ -27,19 +27,6 @@ Para habilitar rendimientos más altos en el staking de Bitcoin a través de Dua
 1. Apoye tanto CORE como Bitcoin simultáneamente, asegurándose de que la cantidad de CORE apostada exceda el umbral mínimo de doble apuesta **Y**
 2. La dirección de la billetera de staking de CORE _**debe**_ coincidir con la dirección designada de recompensas de CORE para el staking de Bitcoin a la cual se pagará el rendimiento.
 
-## ¿Cómo funciona el Dual Staking?
-
-El Dual Staking no altera el proceso de staking de Bitcoin y CORE. Para obtener más información sobre la participación sin custodia de Bitcoin, consulte [aquí](../Learn/products/btc-stake/overview) y consulte esta [guía] detallada(./delegating-core) sobre la delegación CORE.
-
-El Dual Stake crea una oportunidad para desbloquear rendimientos más altos cuando tanto Bitcoin como CORE se apuestan simultáneamente, con diferentes umbrales de apuesta CORE correspondientes a diferentes niveles de aumento de rendimiento en las recompensas de apuesta de Bitcoin en la cadena de bloques Core.
-
-Los titulares de Bitcoin pueden [apostar su Bitcoin](../Learn/products/btc-sating/stake-btc-guide) a través del Stake de Bitcoin sin custodia de Core para acumular recompensas de CORE. Al [apostar posteriormente sus tokens CORE](delegating-core.md) por encima del umbral mínimo para Dual Stake, los usuarios desbloquean niveles más altos de rendimientos de Bitcoin, pagados en CORE. Si bien el Dual Stake mejora las recompensas de la apuesta de Bitcoin, no tiene ningún impacto en el rendimiento generado por la apuesta CORE en sí.
-
-Para permitir mayores rendimientos al apostar Bitcoin a través de Dual Stake, los usuarios deben cumplir con los siguientes requisitos:
-
-1. Apueste tanto CORE como Bitcoin simultáneamente, asegurándose de que la cantidad de CORE apostada exceda el umbral mínimo de participación dual **Y**
-2. La dirección de la billetera de participación CORE _**debe**_ coincidir con la dirección de recompensas CORE designada para la participación de Bitcoin a la que se le paga el rendimiento.
-
 ### Umbrales de rendimiento mejorados
 
 Actualmente, las recompensas de Satoshi Plus se asignan a través de tres pools, uno para cada una de las tres entidades participantes en la elección de los validadores de Core, a saber: (1) Delegadores de Poder Hash, (2) Apostadores de Bitcoin y (3) Apostadores de CORE.
