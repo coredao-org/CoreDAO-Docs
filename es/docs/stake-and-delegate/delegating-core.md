@@ -23,20 +23,24 @@ En esta guía, proporcionamos un tutorial paso a paso sobre cómo delegar sus to
 
 Cuando visitestake.coredao.org, verás una descripción general de métricas importantes relacionadas con la delegación del Core. Estas métricas brindan una instantánea de las oportunidades de participación disponibles en Core y se actualizan en tiempo real según la participación del usuario. También enumera la información del Validador, con todos los validadores clasificados según su puntuación híbrida actual.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/e6fa2e61-1027-4d6e-bdb3-a86ceb265eee)
+</p>
 
 #### Paso 1.1: conecta tu billetera
 
 Para comenzar a apostar, siga estos pasos para conectar su billetera. Asegúrese de tener tokens CORE en su billetera para participar en la apuesta.
 
-- Haga clic en el botón "Conectar billetera" ubicado en la esquina superior derecha de la página.
+- Click on the **Connect Wallet** button located at the top-right corner of the page.
 - Elija su billetera preferida (por ejemplo, MetaMask, WalletConnect) entre las opciones disponibles.
 - Siga las instrucciones en pantalla para completar el proceso de conexión de forma segura.
 - Una vez conectado, el saldo y los detalles de su billetera serán visibles y podrá comenzar a delegar tokens CORE.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/547fdb6d-67f1-424d-be88-cdfde66224b3)
+</p>
 
-Paso 1.2: Elegir un validador
+#### Step 1.2: Choosing a Validator
 
 En el sitio de apuestas, cada validador se clasifica según su puntuación híbrida, que refleja una combinación de factores como el rendimiento y el poder de hash delegado. Para maximizar las recompensas de su apuesta, concéntrese en las siguientes dos métricas clave:
 
@@ -49,7 +53,9 @@ La información del validador se actualiza diariamente a las 00:00 UTC al comien
 
 En el ejemplo, estamos seleccionando: **DAO Validator 6**. Para elegir un validador, haga clic en el nombre del validador para continuar
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/527fbabd-019a-4acb-9185-043a9b901992)
+</p>
 
 ### Paso 2: Delegar CORE a un Validador
 
@@ -65,53 +71,78 @@ Para delegar sus tokens CORE, siga estos pasos:
 1. **Haga clic en "Delegar":** En la parte superior derecha de la pantalla, verá el botón Delegar (marcado como 1 en la imagen). Coloca el cursor sobre él.
 2. **Seleccione CORE:** Aparecerá un menú desplegable con la opción de delegar CORE o BTC. Seleccione CORE (marcado como 2 en la imagen).
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/6c09ad7e-a61e-449b-a935-973576b464fb)
+</p>
 
 #### Paso 2.1 Especificar cantidad de CORE a delegar
 
-- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en "Confirmar delegación".
-  ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
+- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Review the validator’s commission, then click **Confirm Delegation**.
 
-- También confirma la transacción en tu Metamask.
-  ![image](https://github.com/user-attachments/assets/e3022505-99a3-49eb-bf9f-6fc565e41105)
+<p align="center">
+![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
+</p>
 
-- Una vez que su transacción se confirme y se complete con éxito, podrá ver que 1 CORE se ha delegado con éxito al DAO Validator 6.
-  ![image](https://github.com/user-attachments/assets/b378b492-3fea-4218-a937-486f2589049b)
+- Also confirm the transaction in your Metamask.
 
-#### Paso 2.2 Verificar el CORE delegado
+<p align="center">
+![image](https://github.com/user-attachments/assets/e3022505-99a3-49eb-bf9f-6fc565e41105)
+</p>
 
-Ahora que hemos delegado CORE con éxito, verifiquemos que nuestro CORE esté siendo apostado pasando el cursor sobre nuestra billetera conectada en la esquina superior derecha y haciendo clic en el menú desplegable "Mi participación". Podemos ver en la columna "Núcleo delegado" que ahora tenemos 1 NÚCLEO delegado o 1 NÚCLEO apostado:
+- Once your transaction is confirmed and succesfully completed, you can see that 1 CORE has been successfully delegated to DAO Validator 6.
 
+<p align="center">
+![image](https://github.com/user-attachments/assets/b378b492-3fea-4218-a937-486f2589049b)
+</p>
+
+#### Step 2.2 Verifying delegated CORE
+
+Now that we’ve successfully delegated CORE, lets verify that our CORE is now being staked by hovering over our connected wallet in the top right corner, and clicking on the **My Staking** dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated, or 1 CORE staked:
+
+<p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
+</p>
 
-### Paso 3 Delegar CORE
+### Step 3 Undelegating CORE
 
-Si queremos anular la delegación de nuestro CORE, deberá hacer clic en los 3 puntos al final del validador elegido y hacer clic en: '**Anular delegar NÚCLEO**'.
+If we want to Undelegate our CORE, you will want to click the 3 dots at the end of your chosen validator, and click **Undelegate CORE**.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)
+</p>
 
-#### Paso 3.1 Confirmar la transacción y verificar el CORE no delegado
+#### Step 3.1 Confirm the transaction, and verify undelegated CORE
 
-- Después de hacer clic en Anular delegación, se le pedirá que confirme la transacción en su Metamask. Haga clic en el botón '**Confirmar**':
+- After clicking Undelegate, you will be prompted to confirm the transaction in your Metamask. Click the **Confirm** button:
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)
+</p>
 
-- Una vez que la transacción se confirme y se ejecute exitosamente, verá el siguiente mensaje de éxito.
+- Once the transaction is confirmed and sucessfuly executed, you will see the following success prompt.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/3b0bb4e4-95aa-407f-8946-442de715906e)
+</p>
 
-- Si regresa a "**Mi participación**", ahora debería ver su CORE Delegado mostrando 0.
+- If you return to **My Staking**, you should now see your CORE Delegated displaying 0.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/f1aa91f9-e861-4e03-b08d-b8be504cef0a)
+</p>
 
-- Al hacer clic en el botón '**Registros de transacciones**' nos permite ver los **Registros de participación** y los eventos de delegación que han ocurrido en la pestaña **Registros CORE**.
+- Clicking the **Transaction Records** button allows us to view the **Staking Records**, and the delegation events that have occurred under the **CORE Records** tab.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/da7a3693-2799-4c04-8ba3-649c25694120)
+</p>
 
-## Reclamar recompensas
+## Claiming Rewards
 
-Puede ver información de recompensas sobre sus delegaciones activas seleccionando Mi apuesta en la parte superior derecha del sitio web de apuestas. Las recompensas de delegación (apuestas) se distribuyen después de cada ronda a las 00:00 a. m. UTC todos los días.
+You can view reward information about your active delegations by selecting **My Staking** on the top right corner in teh header of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
 
-Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirá las recompensas en su dirección vinculada. Las transacciones de reclamaciones históricas se enumeran en la pestaña Reclamaciones del sitio web, como se muestra a continuación.
+To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's Claim tab, as shown below.
 
+<p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
+</p>
