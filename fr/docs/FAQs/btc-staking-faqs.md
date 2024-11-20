@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ### 1\. Qu'est-ce que le Staking de Bitcoin Non-Custodial sur le réseau Core ?
 
-Core provides Bitcoin holders with a risk-free and transparent opportunity to lock up/stake their Bitcoin on the Bitcoin Network without giving up custody of their Bitcoin assets. In return, they can participate in the Core blockchain’s security through Satohi Plus and earn CORE rewards.
+Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparente de verrouiller/staker leurs Bitcoins sur le réseau Bitcoin sans renoncer à la garde de leurs actifs Bitcoin. En retour, ils peuvent participer à la sécurité de la blockchain Core via Satoshi Plus et gagner des récompenses en CORE.
 
 ### 2\. Comment Fonctionne le Staking de Bitcoin Non-Custodial ?
 
-With the non-custodial bitcoin staking, Core Chain's protocol incorporates bitcoin holders as the third part of the Satoshi Plus consensus. Core Chain's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. For more details on how Non-Custodial Bitcoin Staking works, refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+Avec le staking non-custodial de bitcoins, le protocole de la Core Chain intègre les détenteurs de bitcoins en tant que troisième partie du consensus Satoshi Plus. La méthodologie de Core Chain pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
 ### 3\. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
