@@ -20,7 +20,7 @@ Some of the key features of Core Chain that distinguishes it from its competitor
 
 * **Satoshi Plus Consensus Mechanism:** the novel consensus mechanism, which is a hybrid of Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking.
 * **Core DAO:** the DAO that manages on-chain governance.
-* **EVM Execution Layer:** Core Chain adaptes Ethereum Virtual Machine (EVM) for smart contract execution making it EVM-compatible, similar to [BNB Smart Chain's implementation](https://github.com/bnb-chain/bsc) of Geth.
+* **EVM Execution Layer:** Core Chain adapts Ethereum Virtual Machine (EVM) for smart contract execution making it EVM-compatible, similar to [BNB Smart Chain's implementation](https://github.com/bnb-chain/bsc) of Geth.
 * **coreBTC:** the enshrined Core-native bridged BTC.
 * **Non-custodial BTC Staking:** Core offers BTC holders to stake their assets onto the Core blockchain in a trustless and secure manner without having to give up custody of their assets. This innovative feature integrates Bitcoin into Core Chain's DeFi activities, enhancing liquidity and enabling Bitcoin users to earn staking rewards in the form of CORE tokens within the Core ecosystem.
 * **stCORE:** Core Chain offers Liquid Staking in the form of stCORE which is designed to enhance the utility of the CORE token and simplify the staking process. This initiative allows token holders to maximize their asset potential with greater flexibility and efficiency.
