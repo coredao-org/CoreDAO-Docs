@@ -100,6 +100,10 @@ Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 Le multiplicateur sur chaque niveau de rendement augmenté est dynamique et sujet à modification en fonction des conditions d'offre et de demande du marché
 :::
 
+:::info
+For your new `dual staking` tier to take effect, you `may` need to follow two steps. This applies to users who already have BTC staked `in earlier rounds at 00:00 am UTC` and decide to stake additional CORE to move up `tiers`. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
+:::
+
 ## Qu'est-ce qui change avec le Dual Staking ?
 
 Du point de vue de la manière dont le staking est effectué, rien ne change fondamentalement avec le Dual Staking. Les utilisateurs peuvent toujours staker du Bitcoin et du CORE indépendamment ; cependant, en stakant à la fois du Bitcoin et du CORE simultanément, ils débloquent le potentiel de rendements plus élevés sur le staking de Bitcoin. Staker les deux actifs n'est pas obligatoire mais une amélioration optionnelle pour les détenteurs de Bitcoin cherchant à maximiser leur rendement. Pensez-y comme à un boost de récompense, où les stakers de Bitcoin recevront des récompenses améliorées à mesure qu'ils augmentent la quantité de CORE staké.
