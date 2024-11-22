@@ -64,7 +64,7 @@ Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs
 
 3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
    - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
-   - Si **R<sub>1</sub>** \=\< quantité de CORE staké **R**\< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
+   - If **R<sub>1</sub>** \=\<**R**\< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
    - Si **R<sub>2</sub>** \=\< quantité de CORE staké **R** \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
    - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
 
