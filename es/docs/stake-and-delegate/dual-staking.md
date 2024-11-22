@@ -64,7 +64,7 @@ El CORE apostado y/o el Bitcoin apostado pueden ser distribuidos entre múltiple
 
 3. **Determinación del nivel de rendimiento aumentado para cada (1) Bitcoin apostado**
    - Si la cantidad de CORE apostado < **R<sub>1</sub>**, el usuario está en el nivel **P<sub>BASE</sub>**.
-   - Si **R<sub>1</sub>** ≤ cantidad de CORE apostado **R** < **R<sub>2</sub>**, el usuario entra en el nivel **P<sub>Level1</sub>**.
+   - If **R<sub>1</sub>** \=\<**R**\< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
    - Si **R<sub>2</sub>** ≤ cantidad de CORE apostado **R** < **R<sub>3</sub>**, el usuario entra en el nivel **P<sub>Level2</sub>**.
    - Si la cantidad de CORE apostado ≥ **R<sub>3</sub>**, el usuario entra en el nivel **P<sub>Level3</sub>** (**P<sub>MAX</sub>**).
 
