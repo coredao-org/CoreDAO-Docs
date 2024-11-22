@@ -100,6 +100,10 @@ Por lo tanto, el BTC apostado en este ejemplo disfrutará de un rendimiento de
 The multiplier on each boosted yield tier is dynamic and subject to change as per the supply and demand conditions of the market
 :::
 
+:::info
+For your new `dual staking` tier to take effect, you `may` need to follow two steps. This applies to users who already have BTC staked `in earlier rounds at 00:00 am UTC` and decide to stake additional CORE to move up `tiers`. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
+:::
+
 ## ¿Qué cambia con el doble stake?
 
 Desde la perspectiva de cómo se realiza el stake, nada cambia fundamentalmente con el Dual Stake. Los usuarios aún pueden apostar Bitcoin y CORE de forma independiente; sin embargo, al apostar tanto en Bitcoin como en CORE simultáneamente, se desbloquea el potencial de obtener mayores rendimientos al apostar en Bitcoin. Piense en esto como un aumento de recompensa, donde los apostadores de Bitcoin recibirán recompensas mejoradas a medida que aumenten la cantidad de CORE apostado. Staking both assets is not mandatory but an optional enhancement for Bitcoin holders seeking to maximize their yield.
