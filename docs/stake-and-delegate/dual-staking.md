@@ -61,10 +61,10 @@ The staked CORE and/or staked Bitcoin can be distributed across multiple active 
 :::
 
 3. **Boosted yield level determination for each (1) staked Bitcoin**  
-   * If staked CORE amount  \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**  
-   * If **R<sub>1</sub>** \=\< staked CORE amount **R**\< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**  
-   * If **R<sub>2</sub>** \=\< staked CORE amount **R** \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-   * If staked CORE amount  \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**) 
+   * If staked CORE amount \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**  
+   * If staked CORE amount \=\< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**  
+   * If staked CORE amount \=\< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
+   * If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**) 
 
 :::note
 Staking ratios and the number of levels are configurable and subject to change by governance vote. 
