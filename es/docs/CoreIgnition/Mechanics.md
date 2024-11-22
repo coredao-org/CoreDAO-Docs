@@ -65,7 +65,7 @@ A continuación, se presentan los multiplicadores base para los activos permitid
 
 | Activos incluidos en la lista blanca                                                                  | Activos en Billetera | Préstamo             | Préstamo             | Provisión de Liquidez |
 | ----------------------------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
-| stCore                                                                                                | 1.3x | 2.5x | 3x                   | 3.5x  |
+| stCORE, CLND                                                                                          | 1.3x | 2.5x | 3x                   | 3.5x  |
 | USDT,USDC                                                                                             | 1.2x | 2x                   | 2.5x | 3x                    |
 | CORE,WCORE,wETH                                                                                       | 1x                   | 1.5x | 2x                   | 2.5x  |
 | solvBTC.CORE                                                                          | 1x                   | 1.4x | 1.6x | 1.8x  |
