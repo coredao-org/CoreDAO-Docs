@@ -65,7 +65,7 @@ Ci-dessous les multiplicateurs de base pour les actifs autorisés dans le portef
 
 | Actifs Autorisés                                                                                        | Actifs du Portefeuille | Prêt                 | Emprunt              | Provision de Liquidité |
 | ------------------------------------------------------------------------------------------------------- | ---------------------- | -------------------- | -------------------- | ---------------------- |
-| stCORE                                                                                                  | 1.3x   | 2.5x | 3x                   | 3.5x   |
+| stCORE, CLND                                                                                            | 1.3x   | 2.5x | 3x                   | 3.5x   |
 | USDT, USDC                                                                                              | 1.2x   | 2x                   | 2.5x | 3x                     |
 | CORE, WCORE, wETH                                                                                       | 1x                     | 1.5x | 2x                   | 2.5x   |
 | solvBTC.CORE                                                                            | 1x                     | 1.4x | 1.6x | 1.8x   |
