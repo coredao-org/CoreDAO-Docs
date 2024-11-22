@@ -96,7 +96,7 @@ The multiplier on each boosted yield tier is dynamic and subject to change as pe
 :::
 
 :::info
-For your new `dual staking` tier to take effect, you `may` need to follow two steps. This applies to users who already have BTC staked `in earlier rounds at 00:00 am UTC` and decide to stake additional CORE to move up `tiers`. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
+For your new dual staking tier to take effect, you  may need to follow two steps. This applies to users who already have BTC staked in earlier rounds at 00:00 am UTC and decide to stake additional CORE to move up tiers. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
 :::
 
 ## What Changes with Dual Staking?
