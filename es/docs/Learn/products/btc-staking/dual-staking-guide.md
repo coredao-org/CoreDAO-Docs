@@ -146,7 +146,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
   - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
-  - El tiempo de bloqueo predeterminado está establecido a un mes de anticipación. El tiempo mínimo de bloqueo es de 10 días.
+  - The default lock time is set to a month in advance.
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
 <p align="center">
