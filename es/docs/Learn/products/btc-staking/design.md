@@ -20,7 +20,7 @@ La metodología para integrar el staking de Bitcoin se centra en el [tiempo de b
 - La transacción también debe contener una salida `op_return` que especifique
   - La transacción también debe contener una salida `op_return` que especifique.
   - La dirección a la que el staker desea que se envíen sus recompensas en tokens CORE.
-- Para que el staking sea elegible en Core, existen _requisitos_ mínimos tanto para la **cantidad** como para la **duración**. Los usuarios deben apostar al menos **0,01 Bitcoin** (menos las tarifas de transacción) durante al menos **10 días**.
+- To make staking eligible on Core, _minimal requirements exist_ for the **amount** of BTC that can be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
 
 ### Flujo de trabajo de transacciones
 
@@ -79,7 +79,7 @@ El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuaci�
 - Al utilizar la dirección multifirma `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
 
 :::note
-Existen requisitos mínimos tanto de cantidad como de duración para que el staking sea elegible para Core. Un usuario debe apostar al menos 0,01 Bitcoin (sin incluir las tarifas de transacción) durante al menos 10 días `(marca de tiempo CLTV—marca de tiempo de confirmación de transacción > 10 días)`.
+Minimum requirements exist on the amount of BTC that can be staked to be eligible for Non-Csutodial BTC Staking on Core. A user should stake at least **0.01 Bitcoin** (exclusive of transaction fees).
 :::
 
 ## OP_RETURN Salida
