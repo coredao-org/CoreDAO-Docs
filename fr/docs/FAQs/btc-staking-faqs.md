@@ -39,7 +39,7 @@ Déléguer des bitcoins pour des récompenses de staking via le staking de Bitco
 
 ### 7\. Quels sont les défis associés aux courts délais de verrouillage sur Bitcoin ?
 
-Le timelock CLTV est une fonctionnalité native du réseau Bitcoin. Un utilisateur peut verrouiller n'importe quel montant de bitcoins pour la période désirée grâce à cette fonctionnalité. Cependant, avec des périodes de verrouillage plus courtes (par exemple, 10 minutes) en raison des congestions du réseau et des temps de bloc du réseau Bitcoin, ces transactions peuvent ne pas être traitées assez rapidement, entraînant des retards dans le rachat du Bitcoin. Notez que pour qu'une transaction de staking de Bitcoin soit valide, les [exigences minimales](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) doivent être respectées.
+Le timelock CLTV est une fonctionnalité native du réseau Bitcoin. Un utilisateur peut verrouiller n'importe quel montant de bitcoins pour la période désirée grâce à cette fonctionnalité. Cependant, avec des périodes de verrouillage plus courtes (par exemple, 10 minutes) en raison des congestions du réseau et des temps de bloc du réseau Bitcoin, ces transactions peuvent ne pas être traitées assez rapidement, entraînant des retards dans le rachat du Bitcoin. Note that for a Bitcoin staking transaction to be valid, the minimum requirements should be met.
 
 ### 8\. Y a-t-il des exigences spécifiques pour participer au Staking de Bitcoin Non-Custodial ?
 
@@ -47,7 +47,7 @@ Les utilisateurs doivent se conformer aux exigences suivantes pour qu'une transa
 
 - Les utilisateurs doivent s'assurer que la transaction est envoyée à leur propre adresse.
 - En utilisant la fonctionnalité native de timelock de Bitcoin, spécifiez le montant à verrouiller destiné à être délégué au validateur sur la blockchain Core comme sortie de la transaction.
-- Il _existe des exigences_ _minimales_ pour le **montant** et la **durée**. Les utilisateurs doivent staker au moins **0,01 Bitcoin** (hors frais de transaction) pendant au moins **10 jours**.
+- **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).
 - La transaction doit également contenir une sortie op\_return spécifiant
   - L'adresse du validateur Core auquel le staker souhaite déléguer son Bitcoin.
   - L'adresse à laquelle le staker souhaite que ses récompenses en tokens CORE soient envoyées.
@@ -65,7 +65,7 @@ En raison de contraintes techniques, le Staking de Bitcoin Non-Custodial ne pren
 ### 11\. Quelles sont les considérations importantes pour les Périodes de Verrouillage avant de staker vos actifs ?
 
 - **Expiration du délai de verrouillage :** Lorsque vous verrouillez votre Bitcoin pour le staking, il est inaccessible jusqu'à la fin de la période de staking.
-- **Choisir judicieusement :** Vous devriez sélectionner votre période de verrouillage de manière réfléchie, en tenant compte de vos objectifs d'investissement et de votre tolérance au risque. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues. La période de verrouillage minimale est de **10 jours**.
+- **Choisir judicieusement :** Vous devriez sélectionner votre période de verrouillage de manière réfléchie, en tenant compte de vos objectifs d'investissement et de votre tolérance au risque. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 - **Vérification du montant staké :** En raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lorsque vous le vérifiez via l'interface en ligne de commande. Cependant, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés depuis le [Site Officiel de Staking de Core](https://stake.coredao.org/). De plus, les délais dus au temps de bloc, au nombre de confirmations de blocs requises et à la congestion du réseau sur le réseau Bitcoin peuvent entraîner des retards dans la confirmation de vos transactions, rendant vos actifs invisibles dans vos portefeuilles.
 
 ### 12\. Pourquoi mon actif staké n'est-il pas visible dans mon portefeuille ?
