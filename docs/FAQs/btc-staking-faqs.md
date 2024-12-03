@@ -37,7 +37,7 @@ Delegating Bitcoins for staking rewards through Core’s Non-Custodial Bitcoin d
 
 ### 7\. What are some challenges associated with Short Time Locks on Bitcoin?
 
-CLTV timelock is a native feature of the Bitcoin network. A user can lock up any amount of Bitcoin for the desired time period through this feature. However, with shorter time lock periods (e.g., 10 minutes) due to network congestions and Bitcoin network block times, these transactions may not be processed quickly enough, leading to delays in redeeming the Bitcoin. Note that for a Bitcoin staking transaction to be valid, the [minimum requirement](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) should be met.
+CLTV timelock is a native feature of the Bitcoin network. A user can lock up any amount of Bitcoin for the desired time period through this feature. However, with shorter time lock periods (e.g., 10 minutes) due to network congestions and Bitcoin network block times, these transactions may not be processed quickly enough, leading to delays in redeeming the Bitcoin. Note that for a Bitcoin staking transaction to be valid, the minimum requirements should be met.
 
 ### 8\. Are there any specific requirements to participate in Non-Custodial Bitcoin Staking?
 
@@ -45,7 +45,7 @@ Users should align with the following requirements for a Bitcoin staking transac
 
 * Users must ensure that the transaction is sent to their address.  
 * Using the Bitcoin native timelock feature, specify the lock-up amount intended to be delegated to the validator on the Core blockchain as the transaction output.   
-* *Minimum* *requirements exist* for both **amount** and **duration**. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees) for at least **10 days**.  
+* **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).  
 * The transaction should also contain an op\_return output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.
@@ -63,7 +63,7 @@ Due to technical constraints, Non-Custodial Bitcoin Staking does not currently s
 ### 11\. What are the important considerations for Locking Periods before staking your assets?
 
 * **Time Lock Expiration: **When you lock your Bitcoin for staking, it's inaccessible until the staking period concludes.  
-* **Choosing wisely:** You should select your locking period thoughtfully, considering your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations. The minimum lock period is **10 days**.  
+* **Choosing wisely:** You should select your locking period thoughtfully, considering your investment objectives and risk tolerance. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.  
 * **Staked Amount Verification:** Due to some technical complexities, it is possible that your staked asset is not visible in your wallet when checked through CLI. However, you can easily verify that you have complete ownership of your staked assets from the [Core's Official Staking Website](https://stake.coredao.org/). Also, delays from block time, the number of block confirmation requirements, and network congestion on the Bitcoin network might lead to delays in the confirmation of your transactions, making your assets not visible in your wallets. 
 
 ### 12\. Why is my staked asset not visible in my wallet?

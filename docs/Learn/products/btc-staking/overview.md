@@ -48,7 +48,7 @@ Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on thei
 * The transaction should also contain an `op_return` output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.  
-* *Minimum* *requirements exist* for both **amount** and **duration**. Users should stake at least **0.01 Bitcoin** (less transaction fees) for at least **10 days**.
+* **Minimum requirements exist** for the **amount** of BTC to be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
 
 ### **Transaction Workflow**
 
@@ -60,7 +60,7 @@ Note that Non-Custodial BTC Staking operations are conducted on two separate blo
 
 | Step\#  | Bitcoin Network | Core Network |
 | :---- | :---- | :---- |
-| Step\#1 | User craft a CLTV Timelock transaction with a minimum timelock period of 10 days and OP\_RETURN containing  Core Validator Address the user wants to delegate their Bitcoin to. CORE reward address for receiving the staking rewards in the form of CORE. For details on how to compose such a staking transaction, please refer to the [transaction design](https://docs.coredao.org/docs/Learn/products/btc-staking/design). | Relayers monitor the Bitcoin network for valid CLTV transactions for non-custodial Bitcoin staking. |
+| Step\#1 | User craft a CLTV Timelock transaction with a timelock period of their choice and OP\_RETURN containing Core Validator Address the user wants to delegate their Bitcoin to. CORE reward address for receiving the staking rewards in the form of CORE. For details on how to compose such a staking transaction, please refer to the [transaction design](https://docs.coredao.org/docs/Learn/products/btc-staking/design). | Relayers monitor the Bitcoin network for valid CLTV transactions for non-custodial Bitcoin staking. |
 | Step\#2 | The user sends the crafted transaction to themselves on the Bitcoin network. |  |
 | Step\#3 | The Bitcoins are locked on the Bitcoin network for the specified time period. Once the transaction is confirmed on the Bitcoin network, which can take several hours due to block time, number of block confirmations required, and network congestion, the locked assets will appear in the staking records.  (*Optional*) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit it to the Core blockchain. This step is optional if users compose the transaction in a standard format, as suggested by Core. Relayers from the Core infrastructure will detect the staking transaction and submit it to the Core blockchain for users. |  |
 | Step\#4 |  | Relayers pickup the valid transactions and forward them to the Core Consensus Engine |

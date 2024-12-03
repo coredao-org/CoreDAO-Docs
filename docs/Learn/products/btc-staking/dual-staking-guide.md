@@ -144,7 +144,7 @@ Dual staking is an enhancement to Core’s Non-custodial BTC staking, allowing u
   * In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement  
 * Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.  
   * Select inside the lock time box to input values, or click on the calendar icon to select the date and click ‘OK’ to proceed.  
-  * The default lock time is set to a month in advance. The minimum lock time is 10 days.  
+  * The default lock time is set to a month in advance.  
 * Specify the network priority speed for your transaction
 
 <p align="center">

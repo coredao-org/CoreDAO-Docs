@@ -35,7 +35,7 @@ Non-custodial Bitcoin staking introduces a secure and decentralized method for B
 
 1. **Initiate Staking:** Start by accessing either the [CLI-based BTC Staking Tool](https://github.com/coredao-org/btc-staking-tool) (for technical users) or the [web-based staking platform](https://stake.coredao.org/) (for general users).   
 2. **Stake Bitcoin with Time-Lock:** You stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, and your Bitcoin remains locked until the specified period ends. Ensure you follow the requirements for a transaction to be valid and eligible; refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) for more details.   
-   1. The minimum staking period is 10 days.  
+   1. There is no minimum staking period requirements, however, make sure to thoughtfully select your lockup periods.   
    2. Include the Core Validator Address to delegate your assets.  
    3. Include the Core wallet address for rewards.  
 3. **Vote for Validators:** By including the address of the Core Validators in your transaction, you can delegate your staked Bitcoin to the chosen validator on the Core blockchain.  
@@ -93,7 +93,7 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 * Specify the amount of Bitcoin you’d like to delegate. The minimum amount to delegate is **0.01 Bitcoin**.  
 * Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.  
   * You can input values by selecting inside the lock time box or clicking on the calendar icon to select the date and click “OK” to proceed.  
-  * The default lock time is set to a month in advance. The minimum lock time is **10 days**.  
+  * The default lock time is set to a month in advance.
 * Specify the network priority speed for your transaction
 
 <p align="center">

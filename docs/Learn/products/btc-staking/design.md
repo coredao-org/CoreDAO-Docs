@@ -19,7 +19,7 @@ The methodology for integrating Bitcoin staking centers on [CLTV timelock](https
 * The transaction should also contain an `op_return` output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.  
-* To make staking eligible on Core, *minimal* *requirements exist* for both **amount** and **duration**. Users should stake at least **0.01 Bitcoin** (less transaction fees) for at least **10 days**.
+* To make staking eligible on Core, *minimal requirements exist* for the **amount** of BTC that can be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
 
 ### Transaction Workflow
 
@@ -79,7 +79,7 @@ The `RedeemScript`  should start with a CLTV time lock. Here are a few common ty
 * When using multi-signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of Bitcoin locked in this output will be used for the calculation of validator election and reward distribution on Core.
 
 :::note 
-Minimum requirements exist for both amount and duration to make staking eligible for Core. A user should stake at least 0.01 Bitcoin (exclusive of transaction fees) for at least 10 days `(CLTV timestamp—transaction confirmation timestamp > 10 days)`.
+Minimum requirements exist on the amount of BTC that can be staked to be eligible for Non-Csutodial BTC Staking on Core. A user should stake at least **0.01 Bitcoin** (exclusive of transaction fees).
 :::
 
 ## OP_RETURN Output
