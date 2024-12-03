@@ -35,7 +35,7 @@ El staking de Bitcoin sin custodia introduce un método seguro y descentralizado
 
 1. **Iniciar staking:** Comience accediendo a la [Herramienta de staking de BTC basada en CLI](https://github.com/coredao-org/btc-staking-tool) (para usuarios técnicos) o a la [plataforma de staking basada en la web](https://stake.coredao.org/) (para usuarios generales).
 2. **Apuesta Bitcoin con bloqueo de tiempo:** Usted apuesta su Bitcoin enviando una transacción en la red Bitcoin con un parámetro de bloqueo de tiempo, y su Bitcoin permanece bloqueado hasta que finalice el período especificado. Asegúrese de cumplir con los requisitos para que una transacción sea válida y elegible; consulte [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) para obtener más detalles.
-   1. El período mínimo de participación es de 10 días.
+   1. There is no minimum staking period requirements, however, make sure to thoughtfully select your lockup periods.
    2. Incluya la dirección del validador principal para delegar sus activos.
    3. Incluya la dirección de la billetera Core para obtener recompensas.
 3. **Vote por los Validadores:** Al incluir la dirección de los Validadores Centrales en su transacción, puede delegar su Bitcoin en stake al validador elegido en la cadena de bloques Central.
@@ -91,7 +91,7 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 - Especifica la cantidad de Bitcoin que deseas delegar. La cantidad mínima para delegar es **0.01 Bitcoin**.
 - Configurar el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o redelegación.
   - Puedes ingresar valores seleccionando dentro del cuadro de tiempo de bloqueo o haciendo clic en el ícono del calendario para seleccionar la fecha y luego hacer clic en "OK" para continuar.
-  - El tiempo de bloqueo predeterminado está configurado para un mes en adelante. El tiempo de bloqueo mínimo es **10 días**.
+  - The default lock time is set to a month in advance.
 - Especifica la velocidad de prioridad de la red para tu transacción.
 
 <p align="center">
