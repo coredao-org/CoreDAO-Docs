@@ -35,7 +35,7 @@ Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décen
 
 1. **Initier le Staking :** Commencez par accéder soit à l'outil de [staking BTC basé sur l'outil CLI](https://github.com/coredao-org/btc-staking-tool) (pour les utilisateurs techniques), soit à la [plateforme de staking en ligne](https://stake.coredao.org/) (pour les utilisateurs généraux).
 2. **Staker du Bitcoin avec un Verrouillage Temporel :** Vous stakez vos Bitcoins en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, et vos Bitcoin restent verrouillés jusqu'à la fin de la période spécifiée. Assurez-vous de suivre les exigences pour qu'une transaction soit valide et éligible ; référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) pour plus de détails.
-   1. La période de staking minimale est de 10 jours.
+   1. There is no minimum staking period requirements, however, make sure to thoughtfully select your lockup periods.
    2. Incluez l'adresse du validateur Core pour déléguer vos actifs.
    3. Incluez l'adresse de votre portefeuille Core pour les récompenses.
 3. **Voter pour des Validateurs :** En incluant l'adresse des validateurs Core dans votre transaction, vous pouvez déléguer votre Bitcoin staké au validateur choisi sur la blockchain Core.
@@ -94,7 +94,7 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 - Spécifiez le montant de Bitcoin que vous souhaitez déléguer. Le montant minimum à déléguer est de **0,01 Bitcoin**.
 - Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
   - Vous pouvez entrer des valeurs en sélectionnant à l'intérieur de la boîte de temps de verrouillage ou en cliquant sur l'icône du calendrier pour sélectionner la date et cliquer sur "OK" pour continuer.
-  - Le temps de verrouillage par défaut est fixé à un mois à l'avance. Le temps de verrouillage minimum est de **10 jours**.
+  - The default lock time is set to a month in advance.
 - Spécifier la priorité du réseau pour votre transaction
 
 <p align="center">
