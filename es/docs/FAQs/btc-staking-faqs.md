@@ -39,7 +39,7 @@ Delegar Bitcoins para recompensas de participación a través de la Apuesta de B
 
 ### 7\. ¿Cuáles son algunos de los desafíos asociados con los tiempos de bloqueo cortos en Bitcoin?
 
-El timelock CLTV es una característica nativa de la red de Bitcoin. Un usuario puede bloquear cualquier cantidad de Bitcoin por el período de tiempo deseado a través de esta función. Sin embargo, con períodos de bloqueo más cortos (por ejemplo, 10 minutos), debido a la congestión de la red y los tiempos de bloque de la red de Bitcoin, es posible que estas transacciones no se procesen lo suficientemente rápido, lo que genera retrasos en el canje del Bitcoin. Ten en cuenta que para que una transacción de apuesta de Bitcoin sea válida, debe cumplirse el [requisito mínimo](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5).
+El timelock CLTV es una característica nativa de la red de Bitcoin. Un usuario puede bloquear cualquier cantidad de Bitcoin por el período de tiempo deseado a través de esta función. Sin embargo, con períodos de bloqueo más cortos (por ejemplo, 10 minutos), debido a la congestión de la red y los tiempos de bloque de la red de Bitcoin, es posible que estas transacciones no se procesen lo suficientemente rápido, lo que genera retrasos en el canje del Bitcoin. Note that for a Bitcoin staking transaction to be valid, the minimum requirements should be met.
 
 ### 8\. ¿Core Chain proporciona algún soporte de billetera de hardware para la participación sin custodia de Bitcoin?
 
@@ -47,7 +47,7 @@ Los usuarios deben cumplir con los siguientes requisitos para que una transacci�
 
 - Los usuarios deben asegurarse de que la transacción se envíe a su dirección.
 - Usando la función nativa de timelock de Bitcoin, especifique la cantidad bloqueada que se destinará al validador en la cadena de bloques Core como la salida de la transacción.
-- _Existen requisitos mínimos_ tanto para la **cantidad** como para la **duración**. Los usuarios deben apostar al menos **0.01 Bitcoin** (excluyendo las tarifas de transacción) por al menos **10 días**.
+- **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).
 - La transacción también debe contener una salida op\_return especificando
   - La dirección del validador de Core al que el apostador desea delegar su Bitcoin.
   - La dirección a la que el apostador desea que se envíen sus recompensas en tokens CORE.
@@ -65,7 +65,7 @@ Debido a limitaciones técnicas, la Apuesta de Bitcoin sin Custodia actualmente 
 ### 11\. ¿Cuáles son las consideraciones importantes para los períodos de bloqueo antes de apostar tus activos?
 
 - **Expiración del tiempo de bloqueo:** Cuando bloqueas tu Bitcoin para la apuesta, este no es accesible hasta que concluya el período de apuesta.
-- **Elegir sabiamente:** Debes seleccionar tu período de bloqueo con cuidado, considerando tus objetivos de inversión y tolerancia al riesgo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte con duraciones más largas. El período de bloqueo mínimo es **10 días**.
+- **Elegir sabiamente:** Debes seleccionar tu período de bloqueo con cuidado, considerando tus objetivos de inversión y tolerancia al riesgo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte con duraciones más largas.
 - **Verificación de la cantidad apostada:** Debido a algunas complejidades técnicas, es posible que tu activo apostado no sea visible en tu billetera cuando se revisa a través de CLI. Sin embargo, puedes verificar fácilmente que tienes la propiedad total de tus activos apostados en el [Sitio Web Oficial de Apuestas de Core](https://stake.coredao.org/). Además, los retrasos en el tiempo de bloque, el número de requisitos de confirmación de bloque y la congestión de la red en la red de Bitcoin podrían causar retrasos en la confirmación de tus transacciones, lo que hará que tus activos no sean visibles en tus billeteras.
 
 ### 12\. ¿Por qué mi activo apostado no es visible en mi billetera?
