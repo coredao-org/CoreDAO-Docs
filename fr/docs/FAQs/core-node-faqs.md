@@ -111,7 +111,7 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds validateu
 
 ### 6. Comment puis-je configurer un nœud complet Core Chain ?
 
-Consultez le guide détaillé [ici](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.
+Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
 
 <!-- ### 7. How can I secure my Core Chain full node?
 
