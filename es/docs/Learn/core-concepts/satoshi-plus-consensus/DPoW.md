@@ -5,12 +5,6 @@ sidebar_position: 2
 description: Aprovechando DPoW en Satoshi Plus
 ---
 
-# Prueba de trabajo delegada (DPoW)
-
----
-
-##
-
 # Prueba de trabajo delegada (DPoW) en el mecanismo de consenso Satoshi Plus
 
 ---
