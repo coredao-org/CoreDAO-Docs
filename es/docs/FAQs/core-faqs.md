@@ -28,7 +28,7 @@ Core Chain está diseñado para atender a los constructores, ofreciendo una plat
 
 ### 4. ¿Cómo conectar MetaMask a Core Network?
 
-Siga nuestra guía detallada sobre cómo conectar su billetera MetaMask al Core [Testnet](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Dev-Guide/core-testnet-wallet-config) y [Mainnet](https https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Dev-Guide/core-mainnet-wallet-config).
+Follow our detailed guide on how to connect your MetaMask wallet to the Core [Testnet](../Dev-Guide/core-testnet-wallet-config.md) and [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
 
 ### 5. ¿Qué papel juega el token CORE en la seguridad de la red Core?
 
@@ -69,7 +69,7 @@ Core Chain todavía está evolucionando y pisando fuerte en el engranaje de inno
 
 ### 11. ¿Dónde puedo obtener el token CORE de prueba?
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el [Core Testnet Faucet] público (https://scan.test.btcs.network/faucet) para distribuir tokens de Core testnet, tCORE. Siga la guía detallada [aquí](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Dev-Guide/core-faucet), sobre cómo obtener tCORE del faucet Core testnet.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el [Core Testnet Faucet] público (https://scan.test.btcs.network/faucet) para distribuir tokens de Core testnet, tCORE. Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE from the Core testnet faucet.
 
 ### 12. ¿Cómo puedo contribuir a la comunidad Core?
 
