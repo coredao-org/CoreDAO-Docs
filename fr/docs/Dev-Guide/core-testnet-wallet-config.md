@@ -29,9 +29,9 @@ Il existe plusieurs façons d'ajouter les configurations du Testnet Core à votr
 Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'utiliser pour vous connecter au Core Testnet en ajoutant les détails de la chaîne Core Testnet dans les paramètres de réseau de MetaMask. Naviguez vers `Paramètres -> Réseaux` dans MetaMask et cliquez sur le bouton `Ajouter un Réseau`. Entrez les informations suivantes :
 
 - **Nom du réseau :** Core Blockchain Testnet
-- **Nouvelle URL RPC :** https://rpc.test.btcs.network
-- **ID de Chaîne:** 1115
-- **Symbole de la devise :** tCORE
+- **New RPC URL:** https://rpc.test2.btcs.network
+- **Chain ID:** 1114
+- **Currency Symbol:** tCORE2
 - **URL de l'explorateur de blocs :** https://scan.test.btcs.network
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
@@ -63,6 +63,10 @@ Si vous utilisez l'extension MetaMask pour Chrome, vous pouvez ajouter rapidemen
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
 
 :::info
+
+#### New Testnet
+
+Core's new testnet with `chainID 1114` is now live and recommended for use. It supports BTC Testnet for staking, unlike the previous version (`chainID 1115`). The old testnet will soon be deprecated and eventually retired, so switch to the new testnet to access the latest features.
 
 #### Mises à Jour de la marque
 
