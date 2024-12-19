@@ -12,11 +12,23 @@ Detalles de mainnet y testnet
 
 ## Core red de prueba
 
+### (Latest) Core Blockchain Testnet (1114 (0x45a))
+
+_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+
 - **Nombre de la red:** Red de pruebas de la cadena de bloques principal
+- **RPC URL:** https://rpc.test2.btcs.network
+- **Chain ID:** 1114 (0x45a)
+- **Currency Symbol:** tCORE2
+- **URL del explorador de bloques:** https://scan.test.btcs.network
+
+### Core Blockchain Testnet (1115 (0x45b))
+
+- **Network Name:** Core Blockchain Testnet
 - **URL de RPC:** https://rpc.test.btcs.network
 - **Chain ID:** 1115 (0x45b)
 - **Símbolo monetario:** tCORE
-- **URL del explorador de bloques:** https://scan.test.btcs.network
+- **Block Explorer URL:** https://scan.test.btcs.network
 
 Para importar detalles de la cadena Core Testnet a MetaMask, consulte nuestra [guía del usuario de Core Testnet] (./core-testnet-wallet-config.md).
 
