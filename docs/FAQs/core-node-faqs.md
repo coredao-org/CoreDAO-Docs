@@ -110,7 +110,7 @@ For more details, refer to [Validator Node Confgiurations Guide](../Node/config/
 
 ### 6. How do I set up a Core Chain full node?
 
-Refer to the detailed guide [here](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) on how to set up and run a full node on the Core network.
+Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
 
 <!-- ### 7. How can I secure my Core Chain full node?
 

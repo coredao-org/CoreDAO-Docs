@@ -5,11 +5,6 @@ sidebar_position: 2
 description: Leveraging DPoW in Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW)
----
-
-## 
-
 # Delegated Proof of Work (DPoW) in the Satoshi Plus Consensus Mechanism
 ---
 

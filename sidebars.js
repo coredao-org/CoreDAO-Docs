@@ -248,6 +248,7 @@ const sidebars = {
     ]
     },
   ],
+  
   stakeDelegateSidebar:[
     {
       type: 'category',
