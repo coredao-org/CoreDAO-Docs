@@ -111,7 +111,7 @@ Para obtener más detalles, consulte la [Guía de configuración del nodo valida
 
 ### 6. ¿Cómo configuro un nodo completo de Core Chain?
 
-Consulta la guía detallada [aquí](https://rumeelhussainbnb.github.io/CoreDAODocs/docs/Node/Full-Node/on-mainnet) sobre cómo configurar y ejecutar un nodo completo en la red principal.
+Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
 
 <!-- ### 7. How can I secure my Core Chain full node?
 
