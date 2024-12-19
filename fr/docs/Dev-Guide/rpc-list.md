@@ -12,6 +12,12 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 
 ## Points de terminaison RPC pour la blockchain Core
 
+### Core Blockchain Testnet (1114 (0x45a))
+
+_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+
+- https://rpc.test2.btcs.network
+
 ### Testnet de la blockchain Core (1115 (0x45b))
 
 - https://rpc.test.btcs.network
@@ -19,15 +25,14 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 ### Mainnet de la blockchain Core (1116 (0x45c))
 
 - wss://ws.coredao.org
-- wss://core.drpc.org
 - https://rpc.coredao.org
-- https://core.drpc.org
 - https://rpcar.coredao.org (Pour le nœud archive)
 
 ### Points de terminaison RPC tiers pour le Mainnet de la blockchain Core
 
-- **Ankr:** https://www.ankr.com/rpc/core/
-- **1RPC:** https://www.1rpc.io/ecosystem/core
-- **INFSTONES:** https://docs.infstones.com/docs/core
-- **IceCreamSwap:** https://wiki.icecreamswap.com/get-started/rpc#core
-- **ZAN Node:** https://zan.top/service/public-rpc/core
+- **Ankr:** https://rpc.ankr.com/core
+- **1RPC:** https://1rpc.io/core
+- **INFSTONES:** https://core.public.infstones.com
+- **IceCreamSwap:** https://rpc-core.icecreamswap.com
+- **ZAN Node:** https://api.zan.top/core-mainnet
+- **dRPC:** https://core.drpc.org | wss://core.drpc.org
