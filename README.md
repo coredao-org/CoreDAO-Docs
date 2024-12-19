@@ -4,9 +4,17 @@ Welcome to the Core DAO Developer Documentation for Core Chain! This comprehensi
 
 ## Commands for Local Build
 
-* Install depencies `npm run install ` 
-* Start the live-reloading docs server `npm run start` 
+### Using NPM
+
+* Install depencies `npm install ` 
 * Build the documentation site `npm run build`
+* Start the live-reloading docs server `npm run start` 
+
+### Using Yarn
+
+* Install depencies `yarn install ` 
+* Build the documentation site `yarn run build`
+* Start the live-reloading docs server `yarn run start` 
 
 ## 📜 License
 
