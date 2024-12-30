@@ -38,12 +38,12 @@ Participez au réseau Core en exécutant différents types de nœuds
 
 ## 👨‍🔧 Développer sur Core
 
-Commencez à développer sur Core et contribuez au monde de la BTCfi :
-\* [Explorez l'Environnement des Outils pour Développeurs](./Dev-Guide/dev-tools.md)
-\* [Configurez Vos Portefeuilles sur le Reseau Core](./Dev-Guide/core-testnet-wallet-config.md)
-\* [Financez Vos Portefeuilles avec tCORE](./Dev-Guide/core-faucet.md)
-\* [Parcourez des Duides Détaillés Pratiques pour Démarrer votre Aventure sur Core](category/dev-guides)
-\* [Créez une dApp Full-Stack sur Core](./Dev-Guide/dapp-on-core.md)
+Starting building on Core and Contribute to the BTCfi Landscape
+\* [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
+\* [Configure Your Wallets on the Core Network](./Dev-Guide/core-testnet-wallet-config.md)
+\* [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
+\* [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
+\* [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
 
 ## 🙋‍♀️ Aide & Support
 
