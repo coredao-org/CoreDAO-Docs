@@ -23,7 +23,7 @@ En la imagen siguiente, verá que puede elegir diferentes versiones del compilad
 
 Puede elegir diferentes entornos en Remix, como se muestra en la imagen a continuación. Un entorno es simplemente la red blockchain con la que trabajará. Hay máquinas virtuales (VM) integradas, así como proveedores que le permiten conectarse a VM externas.
 
-Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Asegúrese de que su billetera MetaMask esté [configurada para Core Tesnet] (./core-testnet-wallet-config.md) usando la configuración de la cadena testnet y verifique que su cuenta reciba fondos del [grifo] (https://scan. test.btcs.network/faucet).
+Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-testnet-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based ont eh Core testnet your are connectede to. Refer [here](https://scan.test.btcs.network/faucet) for Core Testnet (1115) and [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114).
 
 ![remix-ide](../../static/img/remix/remix-3.avif)
 
