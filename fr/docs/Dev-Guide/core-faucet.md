@@ -8,20 +8,30 @@ sidebar_position: 2
 
 ---
 
-Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des tokens de testnet Core, **tCORE**.
+To help users get started and allow developers to quickly prototype their dApps, Core has released the public Core Testnet Faucet to distribute Core testnet tokens, **tCORE** or **tCORE2**.
 
 ## Étapes pour obtenir des tCORE depuis le Faucet Testnet Core
 
-1. Rendez-vous sur le site du [faucet](https://scan.test.btcs.network/faucet).
-2. Collez votre adresse dans la zone de texte fournie. Assurez-vous d'utiliser l'adresse de votre portefeuille Testnet Core que vous souhaitez alimenter en tCORE.
-3. Complétez le CAPTCHA
-4. Cliquez sur le bouton `Get tCORE`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
+1. Navigate to the faucet website.
+   - **For Core Blockchain Testnet (1114) Faucet:** https://scan.test2.btcs.network/faucet
+   - **For Core Blockchain Testnet (1115) Faucet:** https://scan.test.btcs.network/faucet
 
-![using-faucet](../../static/img/faucet/faucet.png)
-:::Attention
-Chaque adresse peut demander **un seul tCORE par jour**. Si vous avez épuisé vos tCORE et que le faucet ne vous en envoie pas plus à cause de la limite quotidienne d'un tCORE, revenez demain et essayez à nouveau !
+2. Collez votre adresse dans la zone de texte fournie. Make sure you give the Core Testnet address of your wallet that you want to get funded with tCORE or tCORE2.
+
+3. Complétez le CAPTCHA
+
+4. If using faucet for Core Blockchain Testnet (1114), click the `Get tCORE2` button. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
+
+![using-faucet-test2](../../static/img/faucet/faucet-test2.png)
+
+5. If using faucet for Core Blockchain Testnet (1115), click the `Get tCORE` button. After successfully requesting tCORE2 from the faucet, you'll see your wallet's balance increase.
+
+![using-faucet](../../static/img/facuet/faucet.png)
+
+:::caution
+Each address can request **only one tCORE or tCORE2 per day** from the faucet in 24 hours. If you've run out of tCORE or tCORE2 and the faucet won't send you more because of the one tCORE or tCORE2 daily limit, come back after 24 hours and try again. Or else you can request in Core's Discord Server.
 :::
 
 :::note
-tCORE est uniquement utilisé pour les tests et n'a aucune valeur réelle. Ne l'utilisez pas pour des transactions financières réelles.
+tCORE and tCORE2 are only used for testing and does not have any value. Ne l'utilisez pas pour des transactions financières réelles.
 :::
