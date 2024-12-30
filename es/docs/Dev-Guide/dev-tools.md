@@ -16,7 +16,7 @@ sidebar_position: 2
 
 - **[Puntos finales RPC](https://chainlist.org/chain/1115):** Puntos finales RPC para el servicio RPC de Core Testnet.
 
-- **[Core Faucet](https://scan.test.btcs.network/faucet):** financie su dirección de testnet con tCORE.
+- **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
 - **[Core Stake](https://stake.test.btcs.network/):** sitio web de tCORE stake.
 
