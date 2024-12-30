@@ -15,7 +15,7 @@ sidebar_position: 2
 
 * **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
 
-* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE.
+* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
 * **[Core Staking](https://stake.test.btcs.network/):** Core's official testnet staking website.
 

@@ -27,7 +27,9 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core Testn
 * **New RPC URL:** https://rpc.test2.btcs.network
 * **Chain ID:** 1114
 * **Currency Symbol:** tCORE2
-* **Block Explorer URL:** https://scan.test.btcs.network
+* **Block Explorer URL:** https://scan.test2.btcs.network
+* **Faucet:** https://scan.test2.btcs.network/faucet
+* **Staking Website:** https://stake.test2.btcs.network/
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 

@@ -18,7 +18,9 @@ _Note: This is the latest testnet and is strongly recommended for use. The previ
 * **RPC URL:** https://rpc.test2.btcs.network
 * **Chain ID:** 1114 (0x45a)
 * **Currency Symbol:** tCORE2
-* **Block Explorer URL:** https://scan.test.btcs.network
+* **Block Explorer URL:** https://scan.test2.btcs.network
+* **Faucet:** https://scan.test2.btcs.network/faucet
+* **Staking Website:** https://stake.test2.btcs.network/
 
 ### Core Blockchain Testnet (1115 (0x45b))
 
