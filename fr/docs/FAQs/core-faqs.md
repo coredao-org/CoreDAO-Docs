@@ -69,7 +69,7 @@ La Core Chain est toujours en évolution et mise fortement sur l'innovation. Act
 
 ### 11. Où puis-je obtenir des tokens de test CORE ?
 
-Pour aider les utilisateurs à démarrer et permettre aux développeurs de prototyper rapidement leurs dApps, Core a mis en place un [faucet public du testnet](https://scan.test.btcs.network/faucet) pour distribuer des tokens de test (tCORE). Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE from the Core testnet faucet.
+To help users get started and allow developers to quickly prototype their dApps, Core Testnet Faucets for both of its testnets, [Faucet for Core Testnet (1114)](https://scan.test2.btcs.network/faucet) and [Faucet for Core Testnet (1115)](https://scan.test.btcs.network/faucet), to distribute Core testnet tokens, tCORE. Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE or tCORE2 from the Core testnet faucet.
 
 ### 12. Comment puis-je contribuer à la communauté Core ?
 
