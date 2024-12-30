@@ -16,7 +16,7 @@ sidebar_position: 2
 
 - **[Points de terminaison RPC](https://chainlist.org/chain/1115):** points de terminaison RPC pour le service RPC du Testnet de Core.
 
-- **[Faucet Core](https://scan.test.btcs.network/faucet):** approvisionnez votre adresse Testnet avec des tCORE.
+- **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
 - **[Staking Core](https://stake.test.btcs.network/):** site pour le staking de tCORE.
 
