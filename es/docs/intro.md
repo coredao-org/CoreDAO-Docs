@@ -38,12 +38,12 @@ Participe en la seguridad central de la red ejecutando diferentes tipos de nodos
 
 ## 👨‍🔧 Construyendo sobre el núcleo
 
-Comenzar a construir sobre Core y contribuir al panorama BTCfi
-\* [Explore el panorama de herramientas para desarrolladores] (./Dev-Guide/dev-tools.md)
-\* [Configure sus billeteras en la red central] (./Dev-Guide/core-testnet-wallet-config.md)
-\* [Financia tus billeteras con tCORE] (./Dev-Guide/core-faucet.md)
-\* [Recorra guías prácticas detalladas para impulsar su viaje hacia Core] (categoría/guías de desarrollo)
-\* [Construya una dApp de pila completa en Core] (./Dev-Guide/dapp-on-core.md)
+Starting building on Core and Contribute to the BTCfi Landscape
+\* [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
+\* [Configure Your Wallets on the Core Network](./Dev-Guide/core-testnet-wallet-config.md)
+\* [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
+\* [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
+\* [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
 
 ## 🙋‍♀️ Ayuda y soporte
 
