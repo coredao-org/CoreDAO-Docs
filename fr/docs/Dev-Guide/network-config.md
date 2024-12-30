@@ -20,7 +20,9 @@ _Note: This is the latest testnet and is strongly recommended for use. The previ
 - **RPC URL:** https://rpc.test2.btcs.network
 - **Chain ID:** 1114 (0x45a)
 - **Currency Symbol:** tCORE2
-- **URL de l'explorateur de blocs :** https://scan.test.btcs.network
+- **Block Explorer URL:** https://scan.test2.btcs.network
+- **Faucet:** https://scan.test2.btcs.network/faucet
+- **Staking Website:** https://stake.test2.btcs.network/
 
 ### Core Blockchain Testnet (1115 (0x45b))
 
@@ -28,7 +30,7 @@ _Note: This is the latest testnet and is strongly recommended for use. The previ
 - **Nouvelle URL RPC :** https://rpc.test.btcs.network
 - **ID de la chaîne:** 1115 (0x45b)
 - **Symbole de la devise :** tCORE
-- **Block Explorer URL:** https://scan.test.btcs.network
+- **URL de l'explorateur de blocs :** https://scan.test.btcs.network
 
 Pour importer les détails de la chaîne Testnet de Core dans MetaMask, référez-vous à notre [guide utilisateur du Testnet de Core](./core-testnet-wallet-config.md).
 
