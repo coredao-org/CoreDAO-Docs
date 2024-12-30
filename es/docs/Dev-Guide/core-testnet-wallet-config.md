@@ -32,7 +32,9 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 - **New RPC URL:** https://rpc.test2.btcs.network
 - **Chain ID:** 1114
 - **Currency Symbol:** tCORE2
-- **Chain ID:** 1115
+- **Block Explorer URL:** https://scan.test2.btcs.network
+- **Faucet:** https://scan.test2.btcs.network/faucet
+- **Staking Website:** https://stake.test2.btcs.network/
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 
