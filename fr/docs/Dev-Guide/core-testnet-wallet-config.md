@@ -32,7 +32,9 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 - **New RPC URL:** https://rpc.test2.btcs.network
 - **Chain ID:** 1114
 - **Currency Symbol:** tCORE2
-- **URL de l'explorateur de blocs :** https://scan.test.btcs.network
+- **Block Explorer URL:** https://scan.test2.btcs.network
+- **Faucet:** https://scan.test2.btcs.network/faucet
+- **Staking Website:** https://stake.test2.btcs.network/
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 
