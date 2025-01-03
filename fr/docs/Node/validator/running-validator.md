@@ -47,7 +47,7 @@ Si vous prévoyez d'exécuter un nœud validateur, vous devez configurer la clé
 geth account new --datadir ./node
 echo {your-password} > password.txt
 # start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
 ```
 
 5\. Pendant que notre nœud validateur fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
