@@ -46,7 +46,7 @@ If you plan to run a validator node, you'll need to set up the consensus key bef
 geth account new --datadir ./node
 echo {your-password} > password.txt
 # start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
 ```
 
 5\. As our validator node runs, we can monitor its logs to make sure that everything is operating correctly. The log file is located at `./node/logs/core.log` by default, but can be changed to another location if desired.
