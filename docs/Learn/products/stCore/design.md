@@ -10,7 +10,7 @@ sidebar_position: 2
 stCORE is designed to enhance the utility of the CORE token and simplify the staking process. This initiative allows token holders to maximize their asset potential with greater flexibility and efficiency.
 
 ## Design Principles
-The primary design principles of liquid staking through stCORE on the Chain Chain are as follows:
+The primary design principles of liquid staking through stCORE on the Core Chain are as follows:
 
 * Simple and least/no changes to existing blockchain protocols. 
 * Decentralized and won’t bring security concerns to the network.
