@@ -18,7 +18,7 @@ Pour simplifier, vous pouvez voir un RPC comme étant essentiellement l’oppos�
 
 ## Quels fournisseurs de RPC puis-je utiliser pour me connecter au Mainnet du réseau Core ?
 
-La Core Chain prend en charge différents [fournisseurs de RPC](https://chainlist.org/chain/1116) — à la fois le RPC natif de Core et des fournisseurs de RPC tiers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
+The Core supports different [RPC providers](https://chainlist.org/chain/1116) -- both native Core RPC and third-party RPCs providers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
 
 ## Utilisation des RPCs via la ligne de commande
 
@@ -28,7 +28,7 @@ Nous pouvons utiliser CURL pour se connecter aux points de terminaison RPC de CO
     curl https://coredao.org/
 ```
 
-La commande ci-dessous illustre comment CURL peut être utilisé pour obtenir des informations relatives à une transaction spécifique sur la Core Chain en passant le hash de la transaction et quelques autres paramètres.
+The below command illustrates how CURL can be used to get information related to a specific transaction on the Core blockchain by passing in the transactions hash and a few other parameters.
 
 ```bash
 curl -H "Content-Type: application/json" \
