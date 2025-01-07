@@ -41,7 +41,7 @@ Para nodos completos en **Core testnet**, recomendamos las siguientes especifica
 
 1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo, ejecutando su nodo completo directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Descargue el binario de nodo más reciente para Core Testnet desde Core Chain GitHub [repositorio de versiones] (https://github.com/coredao-org/core-chain/releases/latest). El binario del nodo incluye los archivos de configuración de testnet relevantes. Descargue la última instantánea de testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis_.
+2\. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). El binario del nodo incluye los archivos de configuración de testnet relevantes. Descargue la última instantánea de testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis_.
 
 3\. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
