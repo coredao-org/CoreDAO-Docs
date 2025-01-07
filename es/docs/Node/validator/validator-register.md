@@ -44,9 +44,9 @@ Una forma rápida de comprobar que ha registrado correctamente su nodo completo 
 
 ## Elección del validador
 
-Cada día, los 23 validadores principales con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election) de el documento técnico.
+Each day, the top **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. For more details about how the validator election works, refer to the [validator election](./validator-election.md) section.
 
-Puede verificar el estado del validador en el sitio web de la apuesta; los validadores elegidos activos se marcarán como "Activo/Normal". El conjunto de validadores se actualiza a las 00:00 a. m. UTC todos los días.
+Puede verificar el estado del validador en el sitio web de la apuesta; los validadores elegidos activos se marcarán como "Activo/Normal". The validator set is updated at **00:00 am UTC** every day.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-3.avif)
 
