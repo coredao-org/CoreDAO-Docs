@@ -30,7 +30,7 @@ DPoW amplía el sistema tradicional de prueba de trabajo (PoW) utilizado por Bit
 - **Flujo de trabajo:** Cuando un minero extrae un nuevo bloque de Bitcoin, agrega esta información adicional para indicar su soporte para un Core Validator en particular. Este poder de hash delegado ayuda a proteger la cadena de bloques Core y, a cambio, los mineros obtienen tokens CORE adicionales, que son complementarios a sus recompensas habituales de minería de Bitcoin.
   - **Mineros de Bitcoin**: los mineros de Bitcoin protegen la red Bitcoin a través de PoW y pueden delegar su PoW a un validador central al incluir cierta información en la transacción de coinbase de un bloque mientras está en proceso de minado. Esta delegación no es destructiva, lo que significa que están reorientando su trabajo existente, sin elegir entre proteger Bitcoin y proteger Core.
 
-  - **Retransmisores**: los retransmisores transmiten encabezados de bloques de Bitcoin a la red central. Cualquiera puede convertirse en retransmisor registrándose y bloqueando un depósito de token CORE reembolsable.
+  - **Relayers** - Relayers transmit Bitcoin blocks and transaction data to the Core network. Cualquiera puede convertirse en retransmisor registrándose y bloqueando un depósito de token CORE reembolsable.
 
 ### 4. **Validadores**
 
