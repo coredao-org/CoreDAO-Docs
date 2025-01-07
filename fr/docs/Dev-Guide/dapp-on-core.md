@@ -2,7 +2,7 @@
 sidebar_label: Construire une dApp sur Core
 hide_table_of_contents: false
 sidebar_position: 2
-description: Construire une dApp Full Stack sur la Core Chain
+description: Build a Full Stack dApp on Core
 ---
 
 # Construire une dApp sur Core
@@ -225,7 +225,7 @@ npx hardhat compile
 
 ## Déploiement et interaction avec le contrat intelligent
 
-1. Avant de déployer votre contrat intelligent sur la Core Chain, il est recommandé de d'abord effectuer une série de tests pour s'assurer que le contrat fonctionne comme prévu. Reportez-vous au guide détaillé [ici](https://docs.coredao.org/developer/develop-on-core/building-on-core/using-hardhat#contract-testing) pour plus de détails.
+1. Before deploying your smart contract on Core, it is best advised to first run a series of tests making sure that the smart contract is working as desired. Reportez-vous au guide détaillé [ici](https://docs.coredao.org/developer/develop-on-core/building-on-core/using-hardhat#contract-testing) pour plus de détails.
 
 2. Créez un dossier `scripts` dans le répertoire racine de votre projet. À l'intérieur de ce dossier, créez un fichier `deploy-and-call.js` et collez le script suivant.
 
@@ -263,7 +263,7 @@ main().catch((error) => {
 
 3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnet. Refer [here](https://docs.coredao.org/developer/develop-on-core/using-core-testnet/connect-to-core-testnet#testnet-facuet-tcore-account-funding) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
-4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la Core Chain.
+4. Run the following command from the root directory of your project, to deploy your smart contract on the Core blockchain.
 
 ```bash
 npx hardhat run scripts/deploy-and-call.js
@@ -281,7 +281,7 @@ call retrieve() again: BigNumber { value: "100" }
 
 5. Assurez-vous de sauvegarder l'adresse du contrat Storage obtenue ci-dessus, car elle sera utilisée pour interagir avec le contrat intelligent depuis l'interface frontend de votre dApp.
 
-🎉 Félicitations ! Vous avez appris à créer, compiler et déployer un contrat intelligent sur le Core Chain Testnet en utilisant Hardhat.
+🎉 Félicitations ! You have successfully learned how to create, compile, and deploy a smart contract on the Core Testnet using the Hardhat.
 
 ## Interaction avec le contrat intelligent via l'interface frontend
 
