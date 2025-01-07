@@ -14,7 +14,7 @@ L'adresse de staking est dérivée de la clé privée principale de votre portef
 
 Vous pouvez visualiser vos fonds stakés en recherchant l'adresse de staking sur n'importe quel explorateur Bitcoin, tel que (Mempool)[https://mempool.space/]. Nous travaillons activement à rendre les actifs stakés visibles dans tous les portefeuilles pris en charge, en particulier via les versions en ligne de commande.
 
-### Core Chain propose-t-il un support pour les portefeuilles physiques pour le Staking de BTC Non-Custodial ?
+### Does Core provide any hardware wallet support for Non-Custodial BTC Staking?
 
 À l'heure actuelle, le Staking de BTC Non-Dépositaire ne prend pas en charge les portefeuilles physiques en raison de certaines contraintes techniques. Cependant, nous explorons constamment des moyens d'améliorer la compatibilité avec divers types de portefeuilles, en mettant l'accent sur la sécurité et la commodité pour nos utilisateurs.
 
