@@ -30,7 +30,7 @@ DPoW étend le traditionnel système de Preuve de Travail (PoW) utilisé par le 
 - **Déroulement des opérations:** Lorsqu’un mineur mine a un nouveau bloc Bitcoin, il ajoute cette information supplémentaire pour indiquer son soutien à un validateur Core. Cette puissance de hashage déléguée aide à la sécurité de la blockchain Core et, en retour, le mineur est récompensé via des tokens CORE supplémentaires.
   - **Mineurs de Bitcoin** - Les mineurs de Bitcoin sécurisent le réseau Bitcoin via le PoW et peuvent déléguer leur PoW à un validateur Core en incluant certaines informations dans la transaction coinbase d’un bloc comme il est en cours de minage. Cette délégation est non destructrice, cela signifie qu’ils réaffectent leur travail existant, sans choisir entre la sécurité du Bitcoin et celle de Core.
 
-  - **Relayeurs** - Les relayeurs transmettent les entêtes de bloc Bitcoin au réseau Core. N’importe qui peut devenir un relayeur en s’enregistrant et bloquant un dépôt de token CORE remboursable.
+  - **Relayers** - Relayers transmit Bitcoin blocks and transaction data to the Core network. N’importe qui peut devenir un relayeur en s’enregistrant et bloquant un dépôt de token CORE remboursable.
 
 ### 2. **Preuve d’enjeu déléguée (DPoS)**
 
