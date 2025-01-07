@@ -12,7 +12,7 @@ stCORE está diseñado para mejorar la utilidad del token CORE y simplificar el 
 
 ## Principios de Diseño
 
-Los principios de diseño principales del staking líquido a través de stCORE en la cadena Core son los siguientes:
+The primary design principles of liquid staking through stCORE on the Core are as follows:
 
 - Cambios simples o nulos en los protocolos existentes de la blockchain.
 - Descentralizado y sin preocupaciones de seguridad para la red.
