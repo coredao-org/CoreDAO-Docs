@@ -32,7 +32,7 @@ Por otro lado, también estamos buscando formas de añadir más utilidades al to
 
 1. **Configuración de Staking:** Para participar en el staking líquido de Core, los usuarios deben convertir sus tenencias de CORE al formato de CORE en staking (stCORE). Esto implica bloquear una cierta cantidad de CORE y depositarla en el contrato de staking stCORE, el cual delegará automáticamente los CORE a validadores seleccionados en la cadena.
 
-2. **Emisión de stCORE:** A cambio de hacer staking de CORE, los usuarios reciben tokens de staking líquido, es decir, stCORE. Estos tokens representan sus tenencias de CORE en staking y pueden ser comercializados o transferidos libremente mientras siguen ganando recompensas de staking.
+2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens (stCORE). Estos tokens representan sus tenencias de CORE en staking y pueden ser comercializados o transferidos libremente mientras siguen ganando recompensas de staking.
 
 3. **Recompensas de Staking:** Los usuarios pueden ganar una rentabilidad anual al mantener stCORE, que es el aumento proyectado anualmente en su ratio de conversión con CORE. Esto significa que los usuarios pueden intercambiar por más CORE cuando quemen su stCORE.
 
