@@ -2,7 +2,7 @@
 sidebar_label: Usando Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Implementar contratos en Core Chain usando Remix IDE
+description: Deploy Contracts on Core using the Remix IDE
 ---
 
 # Usando Remix
@@ -33,7 +33,7 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 
 ## Compilación e implementación de contratos inteligentes
 
-- **Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez de Core Chain](./smart-contract-guidelines.md)**.
+- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
 
 - Remix viene con varios contratos preestablecidos predeterminados cargados en el espacio de trabajo predeterminado, como se muestra a continuación. Para este tutorial, usaremos el contrato `1_Storage.sol` precargado. Este contrato implementa una base de datos simple que nos permite almacenar un número mediante la función `store()` y verlo mediante la función `retrieve()`.
 
