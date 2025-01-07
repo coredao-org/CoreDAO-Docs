@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Régulation des Validateurs
 
-**Slashing** et **jailing** sont les deux mécanismes de base utilisés par Core Chain pour décourager les comportements inappropriés des validateurs.Comprendre leur fonctionnement est essentiel pour saisir la structure incitative de Core Chain.
+**Slashing** and **jailing** are the two basic mechanisms Core blockchain uses to disincentivize validator misbehavior, and understanding how they work will go a long way towards making the incentive structure in Core ecosystem more comprehensible.
 
 ## Slashing et Jailing
 
