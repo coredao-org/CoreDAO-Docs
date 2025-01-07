@@ -2,7 +2,7 @@
 sidebar_label: Tokens ERC-20
 hide_table_of_contents: false
 sidebar_position: 2
-description: ERC-20 sur Core Chain
+description: ERC-20 on Core
 ---
 
 # Tokens ERC20
