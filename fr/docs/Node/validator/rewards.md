@@ -4,11 +4,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Récompenses des validateurs dans l'écosystème de Core Chain
+# Validator Rewards in the Core Ecosystem
 
 ---
 
-L'écosystème Core Chain est conçu pour inciter à la participation et sécuriser l'engagement de sa communauté à travers un système de récompenses bien structuré. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
+The Core ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
 
 ## Récompenses des validateurs
 
@@ -26,50 +26,51 @@ Les validateurs sont tenus de partager les récompenses avec les délégués qui
 Après que les validateurs aient prélevé leurs frais, le protocole utilise cette fonction pour déterminer comment les récompenses restantes sont réparties entre les stakers de CORE, les stakers de BTC et les délégués de puissance de hachage. La distribution des récompenses est calculée en fonction de la formule suivante:
 
 $$
-    rH = \frac{rHp}{tHp} * \frac{m}{S} * R
+    rH = \frac{\frac{rHp}{tHp} * m} {S} * R
 $$
 
 $$
-    rS = \frac{rSp}{tSp + tBp * n} * \frac{(1-m)}{S} * R
+    rS = \frac{\frac{rSp}{tSp} * k} {S} * R
 $$
 
 $$
-    rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S} * R
-$$
-
-Où:
-
-- $rH$ sont les récompenses reçues par le validateur en raison de la puissance de hachage déléguée à celui-ci (DPoW)
-- $rS$ sont les récompenses reçues par le validateur en raison des tokens CORE délégués à celui-ci (DPoS)
-- $rB$ sont les récompenses attribuées au staking de BTC
-- $R$ est la récompense globale attribuée à tous les délégateurs
-
-Pour compléter, voici trois autres ratios d'intérêt:
-
-$$
-    rHu = \frac{rH}{rHp}
-$$
-
-$$
-    rSu = \frac{rS}{rSp}
-$$
-
-$$
-    rBu = \frac{rB}{rBp}
+    rB = \frac{\frac{rBp}{tBp} * l} {S} * R
 $$
 
 Où:
 
-- $rHu$ est la récompense de la puissance de hachage par unité;
-- $rSu$ est la récompense de staking de tokens CORE par unité;
-- $rBu$ = récompense de staking de BTC par unité;
+- $$rH$$: Rewards attributed to delegated hash power (DPoW).
+- $$rS$$: Rewards attributed to CORE staking (DPoS).
+- $$rB$$: Rewards attributed to BTC staking.
+- $$R$$: Total rewards allocated to all delegators.
+- $$m$$: Proportion of rewards allocated to hash power.
+- $$k$$: Proportion of rewards allocated to CORE staking.
+- $$l$$: Proportion of rewards allocated to BTC staking.
+- $$S$$: Hybrid score of the validator.
 
-Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (BTC et CORE). De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations.
+Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
+
+- Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
+- Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
+- Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+
+Où:
+
+- $$rHu$$ is the validator hash power rewards per unit;
+- $$rSu$$ is the CORE token staking rewards per unit;
+- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
+- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+
+Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (BTC et CORE). De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations. Furhtermore, BTC staking rewards are influenced by dual staking tiers, encouraging greater network participation without prescribing specific strategies.
+
+## Impact of Dual Staking on BTC Rewards
+
+With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
 
 ## Stratégie de Distribution des Récompenses
 
-Core Chain suit les principes de distribution suivants:
-\* **Équité:** Le système de récompenses est conçu pour être équitable, en veillant à ce que les contributions, qu'elles soient sous forme de staking, de minage ou de participation à la gouvernance, soient reconnues et récompensées équitablement.
+Core follows the following distribution Principles:
+\* **Fairness:** The rewards system is designed to be fair, ensuring that contributions, whether in the form of staking, mining, or governance participation, are equitably recognized and rewarded.
 \* **Transparence:** Tous les aspects de la distribution des récompenses sont transparents, permettant aux participants de comprendre comment les récompenses sont calculées et distribuées.
 \* **Sécurité:** Le mécanisme de distribution est sécurisé contre la manipulation et les abus, en utilisant des protections cryptographiques et basées sur des contrats intelligents pour garantir l'intégrité du processus de récompense.
 
