@@ -41,47 +41,48 @@ Después de que los validadores cobran sus tarifas, el protocolo utiliza esta fu
 ### Delegadores de poder hash (mineros y grupos de minería)
 
 $$
-    rH = \frac{rHp}{tHp} * \frac{m}{S} * R
+    rH = \frac{\frac{rHp}{tHp} * m} {S} * R
 $$
 
 ### CORE Stakers
 
 $$
-    rS = \frac{rSp}{tSp + tBp * n} * \frac{(1-m)}{S} * R
+    rS = \frac{\frac{rSp}{tSp} * k} {S} * R
 $$
 
 ### Bitcoin Stakers
 
 $$
-    rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S} * R
+    rB = \frac{\frac{rBp}{tBp} * l} {S} * R
 $$
 
 donde:
 
-- $rH$ son las recompensas recibidas por el validador debido al poder hash delegado en él (DPoW)
-- $rS$ son las recompensas recibidas por el validador debido al CORE que se le ha delegado (DPoS)
-- $rB$ son recompensas del validador atribuidas a la apuesta de Bitcoin
-- $R$ son las recompensas generales atribuidas a todos los delegados.
+- $$rH$$: Rewards attributed to delegated hash power (DPoW).
+- $$rS$$: Rewards attributed to CORE staking (DPoS).
+- $$rB$$: Rewards attributed to BTC staking.
+- $$R$$: Total rewards allocated to all delegators.
+- $$m$$: Proportion of rewards allocated to hash power.
+- $$k$$: Proportion of rewards allocated to CORE staking.
+- $$l$$: Proportion of rewards allocated to BTC staking.
+- $$S$$: Hybrid score of the validator.
 
-Para completar, aquí hay otras tres proporciones de interés:
+Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
 
-$$
-    rHu = \frac{rH}{rHp}
-$$
-
-$$
-    rSu = \frac{rS}{rSp}
-$$
-
-$$
-    rBu = \frac{rB}{rBp}
-$$
+- Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
+- Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
+- Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Donde:
 
-- $rHu$ son las recompensas del poder hash del validador por unidad;
-- $rSu$ son las recompensas de apuesta de tokens CORE por unidad;
-- $rBu$ son las recompensas de apuesta de Bitcoin por unidad;
+- $$rHu$$ is the validator hash power rewards per unit;
+- $$rSu$$ is the CORE token staking rewards per unit;
+- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
+- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+
+#### Impact of Dual Staking on BTC Rewards
+
+With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
 
 ## División de recompensa
 
@@ -91,7 +92,7 @@ Estas funciones de división de recompensas están diseñadas para crear un merc
 
 En el ecosistema Core, las recompensas base se calculan y distribuyen cuando se extrae el último bloque de una ronda, con **90%** para los validadores y **10%** para el contrato de recompensas del sistema. El Contrato de Recompensa del Sistema acumula recompensas para remunerar a los retransmisores y verificadores. Tal como están las cosas, hay un límite de **10 millones** de tokens CORE en total en el contrato de recompensa del sistema. Cualquier recompensa que supere esta cantidad se quema.
 
-Los retransmisores son responsables de comunicar los encabezados de los bloques de Bitcoin a la red central. Obtienen una parte de las recompensas del sistema base y las tarifas de transacción por este trabajo de comunicaciones entre cadenas. Las recompensas del repetidor se distribuyen en lotes, cada 100 bloques de Bitcoin. Los retransmisores reclaman sus recompensas periódicamente.
+Relayers are responsible for communicating the Bitcoin blocks and transaction data to the Core network. Obtienen una parte de las recompensas del sistema base y las tarifas de transacción por este trabajo de comunicaciones entre cadenas. Las recompensas del repetidor se distribuyen en lotes, cada 100 bloques de Bitcoin. Los retransmisores reclaman sus recompensas periódicamente.
 
 Los verificadores en el ecosistema central son responsables de monitorear el comportamiento de los validadores e informarles si participan en doble firma u otra actividad maliciosa. Cuando tiene éxito, las recompensas se pagan inmediatamente desde el Contrato de recompensas del sistema, en la misma transacción.
 
