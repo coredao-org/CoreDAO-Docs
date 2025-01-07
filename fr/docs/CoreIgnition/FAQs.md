@@ -33,7 +33,7 @@ Rappelez-vous, ce dépôt automatique de CORE est un avantage unique conçu pour
 
 ### 4. Quelle est la différence entre Core Ignition et le programme d'incitation des développeurs Core Ignition Builder ?
 
-Le programme d'incitation Core Ignition récompense les utilisateurs fidèles pour favoriser la croissance de l'écosystème BTCfi de Core Chain. En revanche, le programme d'incitation des développeurs Core Ignition Builder récompense les développeurs pour la création d'applications ou de projets décentralisés (dApps) sur Core Chain.
+The Core Ignition incentive program rewards loyal users to foster growth in Core’s BTCfi ecosystem. In contrast, the Core Ignition Builder’s incentive program rewards developers for creating dApps/projects on the Core blockchain.
 
 ### 5. Je n'ai pas de jeton Bitcoin (BTC). Puis-je quand même participer à l'écosystème BTCfi de Core ?
 
