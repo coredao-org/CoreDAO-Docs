@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core Chain.
+Validators are crucial for securing the network by producing blocks and validating transactions within the Core’s Satoshi Plus consensus framework.
 
 ## Requisitos del sistema
 
