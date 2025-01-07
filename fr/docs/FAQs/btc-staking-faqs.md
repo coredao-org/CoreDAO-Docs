@@ -14,7 +14,7 @@ Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparen
 
 ### 2\. Comment Fonctionne le Staking de Bitcoin Non-Custodial ?
 
-Avec le staking non-custodial de bitcoins, le protocole de la Core Chain intègre les détenteurs de bitcoins en tant que troisième partie du consensus Satoshi Plus. La méthodologie de Core Chain pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
 ### 3\. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
@@ -74,7 +74,7 @@ En raison de complexités techniques, il est possible que votre actif staké ne 
 
 ### 13\. Comment la sécurité du staking de Bitcoin non-custodial est-elle assurée ?
 
-[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du staking de Bitcoin non-custodial. Vous pouvez consulter les rapports d'audit sur le protocole de Core Chain et le staking de Bitcoin non-custodial par des entreprises leaders [ici](https://docs.coredao.org/docs/Learn/audit).
+[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du staking de Bitcoin non-custodial. You can review audit reports on Core's protocol and non-custodial Bitcoin staking by leading firms [here](https://docs.coredao.org/docs/Learn/audit).
 
 ### 14\. Que devriez-vous faire si le bouton _`Redeem BTC`_ ne fonctionne pas sur le site de staking ?
 
