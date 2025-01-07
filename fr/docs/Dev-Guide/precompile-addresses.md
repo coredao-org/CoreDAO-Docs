@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-Voici une liste des adresses précompilées de l'écosystème de la Core Chain :
+Following is a list of precompiled addresses of Core ecosystem.
 
 | **Nom**                         | **Adresse**                                                                                                                 |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
