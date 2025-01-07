@@ -7,7 +7,7 @@ sidebar_position: 2
 
 # Statistics
 
-## Get Total Supply of CORE on Core Chain
+## Get Total Supply of CORE on Core
 
 Returns total supply of CORE.
 
@@ -34,9 +34,9 @@ Sample Response
 
 > **Tip :** The `result` is returned in WEI. Easily convert Core units using our [**unit converter.**](https://scan.coredao.org/unit-converter)
 
-## Get Validators List on Core Chain
+## Get Validators List on Core
 
-Returns the top 21 validators on Core Chain.
+Returns the top 21 validators on Core blockchain.
 
 ```bash
 https://openapi.coredao.org/api
