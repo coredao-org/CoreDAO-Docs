@@ -1,10 +1,10 @@
 ---
-sidebar_label: Testnet Core Chain
+sidebar_label: Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connexion au Testnet de Core Chain
+# Connect to Core Testnet
 
 ---
 
@@ -72,7 +72,7 @@ Core's new testnet with `chainID 1114` is now live and recommended for use. It s
 
 #### Mises à Jour de la marque
 
-La `Satoshi Chain/BTCs` a été rebaptisée `Core Chain/CORE`, respectivement. Si vous avez ajouté le Testnet avant le changement, vous devrez mettre à jour manuellement le Nom du Réseau et le Symbole de la Monnaie dans les paramètres de MetaMask ; sinon, vous ne pourrez pas utiliser la version actuelle du Core Testnet. Allez dans `Paramètres -> Réseau`, et sélectionnez `Core Testnet` pour ouvrir les paramètres du réseau. Mettez à jour le Nom du Réseau et le Symbole de la Monnaie avec les valeurs indiquées dans la [section ci-dessus](#adding-network-manually) et cliquez sur le bouton Sauvegarder. Vous êtes prêt à partir !
+`Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. Si vous avez ajouté le Testnet avant le changement, vous devrez mettre à jour manuellement le Nom du Réseau et le Symbole de la Monnaie dans les paramètres de MetaMask ; sinon, vous ne pourrez pas utiliser la version actuelle du Core Testnet. Allez dans `Paramètres -> Réseau`, et sélectionnez `Core Testnet` pour ouvrir les paramètres du réseau. Mettez à jour le Nom du Réseau et le Symbole de la Monnaie avec les valeurs indiquées dans la [section ci-dessus](#adding-network-manually) et cliquez sur le bouton Sauvegarder. Vous êtes prêt à partir !
 :::
 
 ### Alimentation du Portefeuille avec des Tokens tCORE
