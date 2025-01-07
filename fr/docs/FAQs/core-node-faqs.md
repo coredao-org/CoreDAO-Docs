@@ -8,18 +8,18 @@ sidebar_position: 2
 
 ---
 
-### 1. Quels sont les différents types de nœuds pris en charge par Core Chain ?
+### 1. What are the different types of nodes supported supported on the Core blockchain?
 
 Sur le réseau Core, un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
 
-- Nœud complet normal : pour un usage privé.
-- Nœud validateur : agit en tant que validateur sur Core, validant les blocs et les transactions.
-- Nœud RPC : fournit des services RPC et répond aux requêtes HTTP.
+- **Normal full node:** for private use.
+- **Validator full node:** acts as a validator on Core, validating blocks and transactions.
+- **RPC full node:** provides RPC services and responds to HTTP requests.
 
 En plus de cela, Core prend également en charge :
 
-- Nœud archive : stocke toutes les données de la blockchain Core Chain depuis le bloc de genèse.
-- Nœuds de snapshot : stockent des instantanés pour aider d'autres nœuds à synchroniser rapidement le réseau.
+- **Archive node:** stores the entire blockchain data of Core from the genesis block.
+- **Snapshot nodes:** stores snapshots for helping other nodes fast-track syncing to the network.
 
 ### 2. Quels sont les avantages de gérer un nœud Core ?
 
@@ -109,14 +109,6 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 
 Pour plus de détails, consultez le [Guide de configuration des nœuds validateurs](../Node/config/validator-node-config.md)
 
-### 6. Comment puis-je configurer un nœud complet Core Chain ?
+### 6. How do I set up a full node on Core blockchain?
 
 Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
-
-<!-- ### 7. How can I secure my Core Chain full node?
-
-### 8. Where can I get support if I have problems with my Core Chain full node?
-
-### 9. Are there any third-party infrastructure providers to help manage a Core Chain full node?
-
-### 10. How to gracefully shut down a Core Chain node when running as a system service? -->
