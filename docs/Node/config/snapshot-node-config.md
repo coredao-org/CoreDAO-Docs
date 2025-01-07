@@ -44,13 +44,13 @@ For Sanpshot Nodes on **Core Blockchain Mainnet**, we recommend the following mi
 | Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
 
-## Core Chain Snapshots
+## Core Network Snapshots
 
 You can get the latest snapshots from [here](https://github.com/coredao-org/core-snapshots).
 
-## Syncing Nodes Using Snapshots on Core Chain Network
+## Syncing Nodes Using Snapshots on Core Network
 
-On Core Chain network, you can sync your node to the latest state by several ways. In this document, we guide you through the syncing process of nodes on the Core network using the snapshots.
+On Core network, you can sync your node to the latest state by several ways. In this document, we guide you through the syncing process of nodes on the Core network using the snapshots.
 
 ### Download Pre-Build Binaries
 Download the pre-build binaries from the [release page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below 

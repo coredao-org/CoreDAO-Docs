@@ -9,7 +9,7 @@ sidebar_position: 2
 
 Having a Core Scan account allows you to use sign-in only features and tools such as Address Watch List, Txn Private Notes, Token Ignore List and your very own API keys 🗝.
 
-> Note that creating a Core Scan account is only linked to Core Scan's block explorer services, it is not the same as creating a [CORE Chain address](https://info.etherscan.com/what-is-an-ethereum-address/) 💡
+> Note that creating a Core Scan account is only linked to Core Scan's block explorer services, it is not the same as creating a [CORE blockchain address](https://info.etherscan.com/what-is-an-ethereum-address/) 💡
 
 ***
 

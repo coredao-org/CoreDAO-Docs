@@ -1,10 +1,10 @@
 ---
-sidebar_label: Core Chain Testnet
+sidebar_label: Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Chain Testnet
+# Connect to Core Testnet
 ---
 :::note
 This is a detailed guideline for connecting to Core Testnet using the MetaMask wallet.
@@ -63,7 +63,7 @@ If you using the Chrome MetaMask extension, you can use a quick shortcut to add 
 Core's new testnet with `chainID 1114` is now live and recommended for use. It supports BTC Testnet for staking, unlike the previous version (`chainID 1115`). The old testnet will soon be deprecated and eventually retired, so switch to the new testnet to access the latest features. 
 
 #### Rebrand Updates
-`Satoshi Chain/BTCs` have been rebranded to `Core Chain/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
+`Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
 :::
 
 ### Funding Wallet with tCORE Tokens

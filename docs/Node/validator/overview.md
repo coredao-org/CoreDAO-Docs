@@ -7,11 +7,11 @@ sidebar_position: 2
 # Overview of Validators
 ---
 
-In the Core Chain ecosystem, validators are crucial participants who maintain the integrity, security, and continuity of the blockchain. They are responsible for processing transactions, creating new blocks, and participating in the consensus process. This role is pivotal in ensuring that the Core Chain operates efficiently and remains decentralized.
+In the Core ecosystem, validators are crucial participants who maintain the integrity, security, and continuity of the blockchain. They are responsible for processing transactions, creating new blocks, and participating in the consensus process. This role is pivotal in ensuring that the Core blockchain operates efficiently and remains decentralized.
 
 ## Who are Validators in the Core Network
 
-In the Core Chain ecosystem, validators play a crucial role in maintaining the integrity and security of the blockchain by producing and validating new blocks. These validators engage in the Satoshi Plus consensus mechanism, which blends elements of Delegated Proof of Work (PoW) and Delegated Proof of Stake (DPoS). The validators are selected based on a hybrid scoring system that accounts for both the BTC and CORE tokens staked in their favor and the Bitcoin hash power delegated to them. This unique method ensures that the validator set represents a balanced mix of stakeholder interests and mining power, enhancing the network's security and decentralization. Validator elections occur in cycles known as epochs, with each new set of validators being chosen to manage the blockchain's operations and governance effectively.
+In the Core ecosystem, validators play a crucial role in maintaining the integrity and security of the blockchain by producing and validating new blocks. These validators engage in the Satoshi Plus consensus mechanism, which blends elements of Delegated Proof of Work (PoW) and Delegated Proof of Stake (DPoS). The validators are selected based on a hybrid scoring system that accounts for both the BTC and CORE tokens staked in their favor and the Bitcoin hash power delegated to them. This unique method ensures that the validator set represents a balanced mix of stakeholder interests and mining power, enhancing the network's security and decentralization. Validator elections occur in cycles known as epochs, with each new set of validators being chosen to manage the blockchain's operations and governance effectively.
 
 ## Economics
 Validator's rewards come from 
@@ -51,9 +51,9 @@ In the Core ecosystem, the rewards are distributed to each validator, from that 
 :::
 
 ## Potential Risks and Penalties for Validators
-In the Core Chain ecosystem, validators play a crucial role in maintaining the network's integrity and security. While this role comes with incentives like earning rewards for block validation, it also involves certain risks and potential penalties if validators fail to perform their duties adequately or engage in malicious activities. Here’s a detailed overview of the potential risks and penalties for validators in the Core Chain ecosystem:
+In the Core ecosystem, validators play a crucial role in maintaining the network's integrity and security. While this role comes with incentives like earning rewards for block validation, it also involves certain risks and potential penalties if validators fail to perform their duties adequately or engage in malicious activities. Here’s a detailed overview of the potential risks and penalties for validators in the Core ecosystem:
 
-1. **Slashing Risks:** Validators in many DPoS based systems, including Core Chain, face the risk of slashing if they act maliciously or negligently. This could involve double signing, downtime (failing to be online and perform validation duties), or any actions that compromise the network's security. Slashing involves a portion of the staked CORE tokens being destroyed or taken away, which directly impacts the validator’s financial holdings.
+1. **Slashing Risks:** Validators in many DPoS based systems, including Core, face the risk of slashing if they act maliciously or negligently. This could involve double signing, downtime (failing to be online and perform validation duties), or any actions that compromise the network's security. Slashing involves a portion of the staked CORE tokens being destroyed or taken away, which directly impacts the validator’s financial holdings.
 
 2. **Stake Lock-up and Liquidity Risk:** Validators must lock up a significant amount of CORE tokens as collateral to participate in the validation process. This stake is subject to lock-up periods during which the funds cannot be accessed, posing a liquidity risk, especially if the market conditions change dramatically.
 

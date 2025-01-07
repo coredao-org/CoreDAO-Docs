@@ -2,7 +2,7 @@
 sidebar_label: Build dApp on Core
 hide_table_of_contents: false
 sidebar_position: 2
-description: Build a Full Stack dApp on Core Chain
+description: Build a Full Stack dApp on Core
 ---
 
 
@@ -250,7 +250,7 @@ npx hardhat compile
 ## Deploy and Interact with Smart Contract
 
 
-1. Before deploying your smart contract on the Core Chain, it is best advised to first run a series of tests making sure that the smart contract is working as desired. Refer to the detailed guide [here](https://docs.coredao.org/developer/develop-on-core/building-on-core/using-hardhat#contract-testing) for more details.
+1. Before deploying your smart contract on Core, it is best advised to first run a series of tests making sure that the smart contract is working as desired. Refer to the detailed guide [here](https://docs.coredao.org/developer/develop-on-core/building-on-core/using-hardhat#contract-testing) for more details.
 
 
 2. Create a `scripts` folder in the root directory of your project. Inside this folder, create a file `deploy-and-call.js`; paste the following script into it.
@@ -290,7 +290,7 @@ main().catch((error) => {
 3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnet. Refer [here](https://docs.coredao.org/developer/develop-on-core/using-core-testnet/connect-to-core-testnet#testnet-facuet-tcore-account-funding) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 
-4. Run the following command from the root directory of your project, to deploy your smart contract on the Core Chain.
+4. Run the following command from the root directory of your project, to deploy your smart contract on the Core blockchain.
 
 
 ```bash
@@ -311,7 +311,7 @@ call retrieve() again: BigNumber { value: "100" }
 5. Make sure to save the Address of Storage Contract at which is deployed, as obtained above, this will be used for interacting with smart contract from the dApp's frontend.
 
 
-🎉 Congratulations! You have successfully learned how to create, compile, and deploy a smart contract on the Core Chain Testnet using the Hardhat.
+🎉 Congratulations! You have successfully learned how to create, compile, and deploy a smart contract on the Core Testnet using the Hardhat.
 
 
 ## Interacting with Smart Contract through Frontend

@@ -100,7 +100,7 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-7.png)
 </p>
 
-9. Note that the **Reward Address on Core Chain** is pulled from the connected Core wallet. You should connect the Core wallet with the same address on which you want to receive staking rewards in CORE tokens.  
+9. Note that the **Reward Address on Core** is pulled from the connected Core wallet. You should connect the Core wallet with the same address on which you want to receive staking rewards in CORE tokens.  
 10. Click **Confirm** to complete the transaction.
 
 ### Confirm OP\_Return Output

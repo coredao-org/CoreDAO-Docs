@@ -32,7 +32,7 @@ Additionally, Satoshi Plus is presently benefitting from the security of ~55% of
 
 * **Bitcoin Stakers:** The third leg of Satoshi Plus consensus is non-custodial Bitcoin staking, which allows any bitcoin holder to earn yield by staking their bitcoin tokens without giving up custody.
 
-* **Relayers:** Relayers transmit Bitcoin block headers to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
+* **Relayers:** Relayers transmit Bitcoin blocks and transaction data to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
 
 * **Verifiers:** Verifiers are responsible for reporting malicious behaviors on the network. Successful verification flags may result in slashing a malicious validator’s rewards or stake, or by jailing them outright, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
 

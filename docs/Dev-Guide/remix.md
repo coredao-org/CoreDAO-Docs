@@ -2,7 +2,7 @@
 sidebar_label: Using Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core Chain using the Remix IDE
+description: Deploy Contracts on Core using the Remix IDE
 ---
 
 # Using Remix
@@ -32,7 +32,7 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 ## Smart Contract Compilation and Deployment
 
-* **Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md)**.
+* **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
 
 * Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
 

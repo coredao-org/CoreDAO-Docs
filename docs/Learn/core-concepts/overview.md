@@ -68,7 +68,7 @@ The Core roadmap is designed in accordance with the primary goal of unlocking Bi
 
 * **Bitcoin LST:** This feature would allow BTC stakers to earn yield on their Bitcoin while also using that BTC for various applications on Core.
 
-* **Restaking:** This addition would enable other protocols to benefit from Core Chain’s Bitcoin protection.
+* **Restaking:** This addition would enable other protocols to benefit from Core’s Bitcoin protection.
 
 
 ## Conclusion

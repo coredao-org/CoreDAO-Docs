@@ -15,7 +15,7 @@ Remote Procedure Calls (RPCs) are one way of solving this problem. RPCs are soft
 If it helps, you can think of an RPC as being essentially the opposite of an oracle. The [purpose of an oracle](https://cointelegraph.com/learn/what-is-a-blockchain-oracle-and-how-does-it-work) is to take external data (such as the results of an election or a weather forecast) and move it into a blockchain, while the purpose of an RPC is to take internal data (such as information related to transactions and blocks) and move it out of a blockchain. 
 
 ## Which RPC Providers can I Use to connect to Core Network Mainnet?
-The Core Chain supports different [RPC providers](https://chainlist.org/chain/1116) -- both native Core RPC and third-party RPCs providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for conencting to Core mainnet or testnet. 
+The Core supports different [RPC providers](https://chainlist.org/chain/1116) -- both native Core RPC and third-party RPCs providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for conencting to Core mainnet or testnet. 
 
 ## Working with RPCs Through the Command Line
 We can use the CURL for connecting to CORE RPC endpoitns via CLI. `CURL`, also written as `cURL`, is short for `client URL`. In essence, it's a CLI tool that offers developers a way of fetching data directly from a remote server. The simplest CURL command consists of fetching a webpage's HTML code by passing in a URL, and you can try it now by running this in your CLI of choice:
@@ -24,7 +24,7 @@ We can use the CURL for connecting to CORE RPC endpoitns via CLI. `CURL`, also w
     curl https://coredao.org/
 ```
 
-The below command illustrates how CURL can be used to get information related to a specific transaction on the Core Chain by passing in the transactions hash and a few other parameters. 
+The below command illustrates how CURL can be used to get information related to a specific transaction on the Core blockchain by passing in the transactions hash and a few other parameters. 
 
 ```bash
 curl -H "Content-Type: application/json" \

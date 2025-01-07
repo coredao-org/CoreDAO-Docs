@@ -7,18 +7,18 @@ sidebar_position: 2
 # Core Nodes FAQs
 ---
 
-### 1. What are the different types of nodes supported by Core Chain?
+### 1. What are the different types of nodes supported supported on the Core blockchain?
 
 On the Core network, a Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
 
-- Normal full node: for private use.
-- Validator full node: acts as a validator on Core, validating blocks and transactions.
-- RPC full node: provides RPC services and responds to HTTP requests.
+- **Normal full node:** for private use.
+- **Validator full node:** acts as a validator on Core, validating blocks and transactions.
+- **RPC full node:** provides RPC services and responds to HTTP requests.
 
 Other than this Core also supports
 
-- Archive node: stores the entire blockchain data on Core Chain from the genesis block.
-- Snapshot nodes: stores snapshots for helping other nodes fast-track syncing to the network.
+- **Archive node:** stores the entire blockchain data of Core from the genesis block.
+- **Snapshot nodes:** stores snapshots for helping other nodes fast-track syncing to the network.
 
 ### 2. What are the benefits of running a Core Node?
 
@@ -108,14 +108,6 @@ Validators are crucial for securing the network by producing blocks and validati
 
 For more details, refer to [Validator Node Confgiurations Guide](../Node/config/validator-node-config.md)
 
-### 6. How do I set up a Core Chain full node?
+### 6. How do I set up a full node on Core blockchain?
 
 Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
-
-<!-- ### 7. How can I secure my Core Chain full node?
-
-### 8. Where can I get support if I have problems with my Core Chain full node?
-
-### 9. Are there any third-party infrastructure providers to help manage a Core Chain full node?
-
-### 10. How to gracefully shut down a Core Chain node when running as a system service? -->

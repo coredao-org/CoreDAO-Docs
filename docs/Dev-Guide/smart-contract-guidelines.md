@@ -2,13 +2,13 @@
 sidebar_label: Smart Contract Guidelines
 hide_table_of_contents: false
 sidebar_position: 2
-description: Guidelines for Solidity Support for Developing Smart Contracts on Core Chain
+description: Guidelines for Solidity Support for Developing Smart Contracts on Core
 ---
 
-# Smart Contract Development Guidelines on Core Chain
+# Smart Contract Development Guidelines for Core 
 ---
 
-Core Chain is constantly evolving for better user and developer experience. This document aims to provide clear instructions for developers on the supported Solidity versions and the necessary settings to ensure your smart contracts are correctly deployed and verifiable on the Core Chain network. To maintain consistency and compatibility, Core Chain supports Solidity versions higher than 0.8.19 using the **Paris** EVM. Adhering to this specified version and configuration guidelines is crucial for the seamless functioning of your contracts. The following sections will detail the recommended Solidity settings, including compiler options and verification procedures, to help you achieve a smooth and secure contract deployment on Core Chain.
+Core is constantly evolving for better user and developer experience. This document aims to provide clear instructions for developers on the supported Solidity versions and the necessary settings to ensure your smart contracts are correctly deployed and verifiable on the Core network. To maintain consistency and compatibility, Core blockchain supports Solidity versions higher than 0.8.19 using the **Paris** EVM. Adhering to this specified version and configuration guidelines is crucial for the seamless functioning of your contracts. The following sections will detail the recommended Solidity settings, including compiler options and verification procedures, to help you achieve a smooth and secure contract deployment on Core blockchain.
 
 ## Background
 
@@ -16,7 +16,7 @@ At the moment, Core's EVM matches version **Paris** and _does not support_ the d
 
 ## Configurations to Correctly Deploy Smart Contracts on Core 
 
-To make sure that the lag in support for deployment and verification of smart contracts of version **0.8.20^** does not stagger the developement of dapps on the Core Chain, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version 0.8.20^ on Core before the Core EVM upgrade. 
+To make sure that the lag in support for deployment and verification of smart contracts of version **0.8.20^** does not stagger the developement of dapps on the Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version 0.8.20^ on Core before the Core EVM upgrade. 
 
 ### EVM Settings
 
@@ -38,7 +38,7 @@ In order to support running smart contracts with Solidity version 0.8.20^, Devel
 ### Contract Verification
 
 * In order to make the verification process easier, Core scan has changed the platform default EVM version to **Paris** for solidity version **0.8.20^**. 
-* Developers can take the exact same steps to verify their smart contracts with version 0.8.20^ as of the older versions, refer [here](./contract-verify.md) for more details on contract verification on Core Chain. 
+* Developers can take the exact same steps to verify their smart contracts with version 0.8.20^ as of the older versions, refer [here](./contract-verify.md) for more details on contract verification on Core blochain. 
 
 ### Smart Contracts Based on Solidity version < 0.8.20
 

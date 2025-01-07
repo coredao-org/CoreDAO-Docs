@@ -641,7 +641,7 @@ Sample Response
 
 ## eth\_sendRawTransaction
 
-Submits a pre-signed transaction and broadcast to the Core Chain network.
+Submits a pre-signed transaction and broadcast to the Core network.
 
 ```bash
 https://openapi.coredao.org/api

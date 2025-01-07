@@ -4,10 +4,10 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validator Rewards in the Core Chain Ecosystem 
+# Validator Rewards in the Core Ecosystem 
 ---
 
-The Core Chain ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins the Satoshi Plus consensus mechanism, ensuring network security, stakeholder engagement, and alignment of interests among all participants. The rewards system is fundamental in encouraging the community to partake actively in mining, staking, and governance, thereby enhancing the overall health and growth of the ecosystem.
+The Core ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins the Satoshi Plus consensus mechanism, ensuring network security, stakeholder engagement, and alignment of interests among all participants. The rewards system is fundamental in encouraging the community to partake actively in mining, staking, and governance, thereby enhancing the overall health and growth of the ecosystem.
 
 ## Validator Rewards
 * **Description:** Validators earn rewards for their role in processing transactions, creating new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating Validators for their efforts and operational costs.
@@ -24,46 +24,46 @@ Validators are required to share rewards with the delegators who staked CORE or 
 After the validators take their fees, the protocol uses this function to determine how the remaining rewards are split between CORE stakers, BTC stakers, and hash power delegators. Reward distribution is calculated based on the following formula: 
 
 $$ 
-    rH = \frac{rHp}{tHp} * \frac{m}{S} * R
+    rH = \frac{\frac{rHp}{tHp} * m} {S} * R
+$$
+
+$$ 
+    rS = \frac{\frac{rSp}{tSp} * k} {S} * R
 $$
 
 $$
-    rS = \frac{rSp}{tSp + tBp * n} * \frac{(1-m)}{S} * R
-$$
-
-$$
-    rB = \frac{(rBp * n)}{(tSp + tBp * n)} * \frac{(1-m)}{S} * R
+    rB = \frac{\frac{rBp}{tBp} * l} {S} * R
 $$
 
 Where: 
-* $rH$ is the rewards received by the validator because of the hash power delegated to it (DPoW)
-* $rS$ is the rewards received by the validator because of the CORE delegated to it (DPoS)
-* $rB$ is validator rewards attributed to BTC staking
-* $R$ is the overall rewards attributed to all delegators
+* $$rH$$: Rewards attributed to delegated hash power (DPoW).
+* $$rS$$: Rewards attributed to CORE staking (DPoS).
+* $$rB$$: Rewards attributed to BTC staking.
+* $$R$$: Total rewards allocated to all delegators.
+* $$m$$: Proportion of rewards allocated to hash power.
+* $$k$$: Proportion of rewards allocated to CORE staking.
+* $$l$$: Proportion of rewards allocated to BTC staking.
+* $$S$$: Hybrid score of the validator.
 
-For completeness, here are three other ratios of interest:
+Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
 
-$$
-    rHu = \frac{rH}{rHp}
-$$
-
-$$
-    rSu = \frac{rS}{rSp}
-$$
-
-$$
-    rBu = \frac{rB}{rBp}
-$$
+* Per unit hash power reward: $$rHu$$ =  $$ \frac{rH}{rHp} $$
+* Per unit CORE reward: rSu = $$ \frac{rS}{rSp} $$
+* Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Where:
-* $rHu$ is the validator hash power rewards per unit;
-* $rSu$ is the CORE token staking rewards per unit;
-* $rBu$ is the BTC staking rewards per unit;
+* $$rHu$$ is the validator hash power rewards per unit;
+* $$rSu$$ is the CORE token staking rewards per unit;
+* $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
+* **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
 
-These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated stake (BTC and CORE). For their part, delegators will try to optimize their own rewards by choosing validators with lower amounts of delegated hash power and stake. To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations.
+These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated stake (BTC and CORE). For their part, delegators will try to optimize their own rewards by choosing validators with lower amounts of delegated hash power and stake. To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations. Furhtermore, BTC staking rewards are influenced by dual staking tiers, encouraging greater network participation without prescribing specific strategies.
+
+## Impact of Dual Staking on BTC Rewards
+With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
 
 ## Reward Distribution Strategy
-Core Chain follows the following distribution Principles:
+Core follows the following distribution Principles:
     * **Fairness:** The rewards system is designed to be fair, ensuring that contributions, whether in the form of staking, mining, or governance participation, are equitably recognized and rewarded.
     * **Transparency:** All aspects of the reward distribution are transparent, allowing participants to understand how rewards are calculated and distributed.
     * **Security:** The distribution mechanism is secured against manipulation and abuse, using cryptographic and smart contract-based safeguards to ensure the integrity of the reward process.

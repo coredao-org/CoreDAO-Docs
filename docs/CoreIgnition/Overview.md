@@ -30,7 +30,7 @@ By participating in the Core Ignition user incentive program, users gain access 
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
 </p>
 
-2. Click on "Add Core Network" to add Core Chain into the wallet network.
+2. Click on "Add Core Network" to add Core Blockchain into the wallet network.
 3. Click on "Earn Sparks" or "Join Now" to initiate account creation.
 4. Select the appropriate country
 <p align="center">

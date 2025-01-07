@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Validator Regulation
 
-**Slashing** and **jailing** are the two basic mechanisms Core Chain uses to disincentivize validator misbehavior, and understanding how they work will go a long way towards making the incentive structure in Core Chain more comprehensible.
+**Slashing** and **jailing** are the two basic mechanisms Core blockchain uses to disincentivize validator misbehavior, and understanding how they work will go a long way towards making the incentive structure in Core ecosystem more comprehensible.
 
 ## Slashing and Jailing
 "Slashing" refers to cutting either the rewards a validator would have received in exchange for mining blocks, or to slashing the deposit of CORE tokens that a node makes in order to become a validator in the first place. The severity of the slashing punishment is scaled up in proportion to the validator’s misbehavior.

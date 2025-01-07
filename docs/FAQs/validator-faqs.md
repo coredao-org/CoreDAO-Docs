@@ -6,13 +6,13 @@ sidebar_position: 2
 
 # Core Validator FAQs
 ---
-### 1. What is a Validator in Core Chain?
+### 1. What is a Validator in the Core ecosystem?
 
-In the Core Chain ecosystem, "validator" refers to nodes or participants in the blockchain network that are responsible for verifying, validating, and adding new transactions to the blockchain. Validators play a critical role in the maintenance and security of the network.
+In the Core ecosystem, "validator" refers to nodes or participants in the blockchain network that are responsible for verifying, validating, and adding new transactions to the blockchain. Validators play a critical role in the maintenance and security of the network.
 
 ### 2. How to Become a Validator?
 
-- 1. To register as a validator on Core Chain you must be running a full node in validator mode. Please read the guides on [configuring validator nodes](../Node/config/validator-node-config) and [running validator nodes](../Node/validator/running-validator) for information on how to set this up.
+- 1. To register as a validator on Core you must be running a full node in validator mode. Please read the guides on [configuring validator nodes](../Node/config/validator-node-config) and [running validator nodes](../Node/validator/running-validator) for information on how to set this up.
   2. Once that’s finished, the easiest way to register a new validator is using one of our staking websites:
         1. [Mainnet stake website](https://stake.coredao.org)
         2. [Testnet stake website](https://stake.test.btcs.network)
@@ -32,7 +32,7 @@ Provide information for each of the form's fields:
 
 ![validator-logs](../../static/img/validator/register/validator-register-2.avif)
 
-### 3. What are the Hardware/Software Requirements for running a validator node on Core Chain?
+### 3. What are the Hardware/Software Requirements for running a validator node on Core?
 
 Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s Satoshi Plus consensus framework.
 
@@ -60,9 +60,9 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on
 
 ### 4. What is the minimum amount of CORE tokens required to stake for becoming a validator?
 
-On the Core Chain network, validators are required to stake a certain minimum amount of CORE tokens that gets locked up for the duration a validator node provides its services. On testnet, the minimum amount is **10,000 tCORE**. Whereas, on the mainnet the minimum amount is **10,000 CORE**.
+On the Core network, validators are required to stake a certain minimum amount of CORE tokens that gets locked up for the duration a validator node provides its services. On testnet, the minimum amount is **10,000 tCORE**. Whereas, on the mainnet the minimum amount is **10,000 CORE**.
 
-### 5. How are validators rewarded in the Core Chain ecosystem?
+### 5. How are validators rewarded in the Core ecosystem?
 
 Validators earn rewards for their role in processing transactions, creating new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating Validators for their efforts and operational costs. TCore validators run in a round robin manner and each active validator receives almost the same amount of rewards every round. There are two categories of validator rewards:
 
@@ -78,7 +78,7 @@ Cycle time for Core to distribute rewards currently set to **1 day**. Each day, 
 
 ### 7. What are the risks/penalties involved in being a validator?
 
-Here's a condensed overview of the potential risks and penalties for validators in the Core Chain ecosystem:
+Here's a condensed overview of the potential risks and penalties for validators in the Core ecosystem:
 
 1. **Slashing Risks:** Validators face slashing for actions like double signing or failing to perform their duties, resulting in a loss of a portion of their staked CORE tokens.
 2. **Stake Lock-up and Liquidity Risk:** Validators must lock up CORE tokens as collateral, which cannot be accessed during lock-up periods, posing a liquidity risk during market volatility.
@@ -86,9 +86,9 @@ Here's a condensed overview of the potential risks and penalties for validators 
 4. **Loss of Delegation:** If validators perform poorly or are frequently penalized, delegators may withdraw their support, significantly reducing the validator's earning potential.
 5. **Operational and Security Risks:** Validators need to maintain secure, efficient operations around the clock. Operational failures or security breaches can lead to financial and reputational damage.
 
-### 8. How does the validator election process work in Core Chain?
+### 8. How does the validator election process work in the Core ecosystem?
 
-The Validator election process in Satoshi Plus on the Core Chain network involves several key steps, integrating both Proof of Work (PoW) and Proof of Stake (PoS) elements:
+The Validator election process in Satoshi Plus on the Core network involves several key steps, integrating both Proof of Work (PoW) and Proof of Stake (PoS) elements:
 
 1. **Stake Delegation**: Holders of CORE and BTC tokens delegate their tokens to validator candidates, influencing the election with their staked tokens.
 2. **Hash Power Delegation**: Bitcoin miners contribute to validator selection by allocating a portion of their hash power, specified in the Bitcoin blocks they mine.
@@ -106,12 +106,10 @@ Where,
 - m and n are dynamic factors adjusting the weights of hash power and the voting power of BTC versus CORE tokens.
 
 4. **Validator Set Formation**: The top **27** validators, based on hybrid scores, are selected for the next round.
-<!-- 
-### 9. How does the Core Chain ensure the security and integrity of Validators? -->
 
-### 9. What is slashing, and what are the different slashing fees charged on Core Chain?
+### 9. What is slashing, and what are the different slashing fees charged on Core blockchain?
 
-"Slashing" is a penalty applied to validators in a blockchain network for misconduct or failures in their duties. In the Core Chain network, slashing can affect both potential rewards and deposited stakes.
+"Slashing" is a penalty applied to validators in a blockchain network for misconduct or failures in their duties. In the Core network, slashing can affect both potential rewards and deposited stakes.
 
 - **Rewards Slashing**: If a validator fails to mine **50** consecutive blocks during their turn, all CORE token rewards accrued up to that point are lost. The impact is more significant if the failure occurs later in the round, as more rewards would have been accumulated.
 - **Deposit Slashing and Jailing**: Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **jailing of three days**, during which they cannot be elected to the validator set.
@@ -125,10 +123,7 @@ There are two scenarios where validators can get jailed.
 1. Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **jailing of three days**, during which they cannot be elected to the validator set.
 2. Double signing can lead to slashing of all rewards, the entire validator deposit, and a permanent ban from the network, i.e., getting jailed forever.
 
-<!-- ### 12. How to get unjailed, if possible? -->
-
 ### 11. How frequently do Validators need to be online?
 
 Validators are generally expected to be online and actively participating almost continuously.
 
-<!-- ### 14. Can a Validator leave or stop participating in the network? -->

@@ -28,7 +28,7 @@ DPoW extends the traditional Proof of Work (PoW) system used by Bitcoin to inclu
 - **Workflow:** When a miner mines a new Bitcoin block, they add this additional information to indicate their support for a particular Core Validator. This delegated hash power helps secure Core blockchain, and in return, miners earn additional CORE tokens, which are supplementary to their regular Bitcoin mining rewards.
     * **Bitcoin Miners** - Bitcoin miners secure the Bitcoin network via PoW, and can delegate their PoW to a Core validator by including certain information in the coinbase transaction of a block as it’s in the process of being mined. This delegation is non-destructive, meaning that they’re re-purposing their existing work, not choosing between securing Bitcoin and securing Core.
     
-    * **Relayers** - Relayers transmit Bitcoin block headers to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
+    * **Relayers** - Relayers transmit Bitcoin blocks and transaction data to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
 
 
 ### 2. **Delegated Proof of Stake (DPoS)**

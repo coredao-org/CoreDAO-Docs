@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Syncing Core Nodes
 ---
-On the Core network, you can sync your node to the latest state of the Core Chain by several ways. In this document, we guide you through the syncing process of nodes on the Core network.
+On the Core network, you can sync your node to the latest state of the Core blockchain by several ways. In this document, we guide you through the syncing process of nodes on the Core network.
 
 
 ## Sync From Snapshot (Recommended)
