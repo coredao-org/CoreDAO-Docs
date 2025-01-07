@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ---
 
-### 1. Qu'est-ce qu'un validateur dans la Core Chain ?
+### 1. What is a Validator in the Core ecosystem?
 
-Dans l'écosystème de la Core Chain, un "validateur" fait référence aux nœuds ou participants du réseau blockchain qui sont responsables de la vérification, de la validation et de l'ajout de nouvelles transactions à la blockchain. Les validateurs jouent un rôle essentiel dans la maintenance et la sécurité du réseau.
+In the Core ecosystem, "validator" refers to nodes or participants in the blockchain network that are responsible for verifying, validating, and adding new transactions to the blockchain. Les validateurs jouent un rôle essentiel dans la maintenance et la sécurité du réseau.
 
 ### 2. Comment devenir un validateur ?
 
-- 1. Pour s'enregistrer en tant que validateur sur la Core Chain, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config) et l'[exécution des nœuds validateurs](../Node/validator/running-validator) pour obtenir des informations sur la configuration.
+- 1. To register as a validator on Core you must be running a full node in validator mode. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config) et l'[exécution des nœuds validateurs](../Node/validator/running-validator) pour obtenir des informations sur la configuration.
   2. Ensuite, le moyen le plus simple d'enregistrer un nouveau validateur est d'utiliser l'un de nos sites Web de staking :
      1. [Site de staking pour le Mainnet](https://stake.coredao.org)
      2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
@@ -34,7 +34,7 @@ Fournissez les informations pour chaque champ du formulaire :
 
 ![validator-logs](../../static/img/validator/register/validator-register-2.avif)
 
-### 3. Quelles sont les exigences matérielles/logiciels pour exécuter un nœud validateur sur la Core Chain ?
+### 3. What are the Hardware/Software Requirements for running a validator node on Core?
 
 Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de Core Chain.
 
@@ -62,9 +62,9 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds complets]
 
 ### 4. Quel est le montant minimum de tokens CORE requis pour devenir validateur ?
 
-Sur le réseau Core Chain, les validateurs doivent staker un certain montant minimum de tokens CORE, qui est verrouillé pendant que le nœud validateur fournit ses services. Sur le testnet, le montant minimum est de **10 000 tCORE**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
+On the Core network, validators are required to stake a certain minimum amount of CORE tokens that gets locked up for the duration a validator node provides its services. Sur le testnet, le montant minimum est de **10 000 tCORE**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
 
-### 5. Comment les validateurs sont-ils récompensés dans l'écosystème Core Chain ?
+### 5. How are validators rewarded in the Core ecosystem?
 
 Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels. Les validateurs de la Core Chain fonctionnent selon un système de tourniquet, et chaque validateur actif reçoit à peu près le même montant de récompenses à chaque tour. Il existe deux catégories de récompenses de validateur:
 
@@ -80,7 +80,7 @@ Le cycle de distribution des récompenses de Core est actuellement fixé à **1 
 
 ### 7. Quels sont les risques/pénalités pour être un validateur ?
 
-Voici un aperçu détaillé des risques et pénalités auxquels les validateurs peuvent faire face dans l'écosystème de Core Chain :
+Here's a condensed overview of the potential risks and penalties for validators in the Core ecosystem:
 
 1. **Risques de slashing :** les validateurs peuvent subir un slashing pour des actions comme la double signature ou le non-respect de leurs devoirs, ce qui entraîne la perte d'une partie de leurs tokens CORE stakés.
 2. **Risque de blocage de mise et de liquidité :** les validateurs doivent verrouiller des tokens CORE comme garantie, ce qui ne peut pas être accédé pendant les périodes de blocage, posant un risque de liquidité.
@@ -88,9 +88,9 @@ Voici un aperçu détaillé des risques et pénalités auxquels les validateurs 
 4. **Perte de délégation :** les délégateurs peuvent retirer leur soutien si un validateur performe mal ou est fréquemment pénalisé.
 5. **Risques opérationnels et de sécurité :** les validateurs doivent maintenir des opérations sûres et efficaces 24h/24. Des défaillances opérationnelles ou des violations de sécurité peuvent entraîner des dommages financiers et réputationnels.
 
-### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la Core Chain ?
+### 9) How does the validator election process work in the Core ecosystem?
 
-Le processus d'élection des validateurs dans le mécanisme Satoshi Plus sur la Core Chain implique différentes étapes qui intègrent des éléments de Preuve de Travail (PoW) et de Preuve d'Enjeu (PoS) :
+The Validator election process in Satoshi Plus on the Core network involves several key steps, integrating both Proof of Work (PoW) and Proof of Stake (PoS) elements:
 
 1. **Délégation de staking :** les détenteurs de tokens CORE et BTC délèguent leurs tokens à des candidats validateurs, influençant l'élection avec leurs tokens stakés.
 2. **Délégation de puissance de hachage :** les mineurs de Bitcoin contribuent à la sélection des validateurs en allouant une partie de leur puissance de hachage.
@@ -109,28 +109,21 @@ Où :
 
 4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
-<!-- 
-### 9. How does the Core Chain ensure the security and integrity of Validators? -->
+### 9) What is slashing, and what are the different slashing fees charged on Core blockchain?
 
-### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
+"Slashing" is a penalty applied to validators in a blockchain network for misconduct or failures in their duties. In the Core network, slashing can affect both potential rewards and deposited stakes.
 
-Le "slashing" est une pénalité appliquée aux validateurs pour mauvaise conduite ou manquements à leurs devoirs. Dans le réseau Core Chain, le slashing peut affecter les récompenses et les mises déposées.
+- **Rewards Slashing**: If a validator fails to mine **50** consecutive blocks during their turn, all CORE token rewards accrued up to that point are lost. The impact is more significant if the failure occurs later in the round, as more rewards would have been accumulated.
+- **Deposit Slashing and Jailing**: Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **jailing of three days**, during which they cannot be elected to the validator set.
+- **Permanent Ban for Double Signing**: Double signing, i.e., signing two different blocks at the same height, leads to severe consequences including slashing of all rewards, the entire validator deposit, and a permanent ban from the network, i.e., getting jailed forever.
 
-- **Slashing des récompenses :** si un validateur ne parvient pas à miner 50 blocs consécutifs, toutes les récompenses en tokens CORE accumulées sont perdues. L'impact est plus important si l'échec se produit plus tard dans le tour, car plus de récompenses auraient été accumulées.
-- **Slashing du dépôt et emprisonnement :** ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un **emprisonnement de trois jours**, pendant lesquels il ne peut pas être élu dans le groupe de validateurs.
-- **Interdiction permanente pour double signature :** la double signature, c'est-à-dire la signature de deux blocs différents à la même hauteur, entraîne des conséquences sévères, y compris le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
+### 10. When do validators get jailed? What is the duration?
 
-### 10. Quand les validateurs sont-ils emprisonnés ? Quelle est la durée ?
+There are two scenarios where validators can get jailed.
 
-Il y a deux scénarios où les validateurs peuvent être emprisonnés :
+1. Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **jailing of three days**, during which they cannot be elected to the validator set.
+2. Double signing can lead to slashing of all rewards, the entire validator deposit, and a permanent ban from the network, i.e., getting jailed forever.
 
-1. Ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un emprisonnement de trois jours, pendant lesquels ils ne peuvent pas être élus dans le groupe de validateurs.
-2. La double signature peut entraîner le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
+### 11) How frequently do Validators need to be online?
 
-<!-- ### 12. How to get unjailed, if possible? -->
-
-### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
-
-Les validateurs sont généralement censés être en ligne et participer activement presque en continu.
-
-<!-- ### 14. Can a Validator leave or stop participating in the network? -->
+Validators are generally expected to be online and actively participating almost continuously.
