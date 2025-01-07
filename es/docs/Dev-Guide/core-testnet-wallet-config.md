@@ -1,10 +1,10 @@
 ---
-sidebar_label: Red de prueba de Core
+sidebar_label: Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Conéctese a la red de prueba de Core
+# Connect to Core Testnet
 
 ---
 
@@ -72,7 +72,7 @@ Core's new testnet with `chainID 1114` is now live and recommended for use. It s
 
 #### Actualizaciones de cambio de marca
 
-Satoshi Chain/BTC ha sido rebautizado como “Core Chain/CORE”, respectivamente. Si agregó Testnet antes del cambio de marca, deberá actualizar manualmente el nombre de la red y el símbolo de moneda en la configuración de MetaMask; de lo contrario, no podrá utilizar la versión actual de Core Testnet. Vaya a `Configuración->Red` y seleccione `Core Testnet` para abrir la configuración de red. Actualice el nombre de la red y el símbolo de moneda a los valores indicados en la [sección anterior] (#adding-network-manualmente) y haga clic en el botón Guardar. Listo!
+`Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. Si agregó Testnet antes del cambio de marca, deberá actualizar manualmente el nombre de la red y el símbolo de moneda en la configuración de MetaMask; de lo contrario, no podrá utilizar la versión actual de Core Testnet. Vaya a `Configuración->Red` y seleccione `Core Testnet` para abrir la configuración de red. Actualice el nombre de la red y el símbolo de moneda a los valores indicados en la [sección anterior] (#adding-network-manualmente) y haga clic en el botón Guardar. Listo!
 :::
 
 ### Monedero de financiación con tokens tCORE
