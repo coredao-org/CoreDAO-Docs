@@ -14,7 +14,7 @@ Core ofrece a los titulares de Bitcoin una oportunidad sin riesgos y transparent
 
 ### 2\. ¿Cómo funciona el Stake de Bitcoin sin custodia?
 
-Con la apuesta de Bitcoin sin custodia, el protocolo de la cadena Core incorpora a los titulares de Bitcoin como la tercera parte del consenso Satoshi Plus. La metodología de la cadena Core para integrar la apuesta de Bitcoin se centra en el [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual la salida de la transacción no se puede gastar hasta que haya pasado un tiempo determinado. Para más detalles sobre cómo funciona la Apuesta de Bitcoin sin custodia, consulta [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. Para más detalles sobre cómo funciona la Apuesta de Bitcoin sin custodia, consulta [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
 ### 3\. ¿Cuáles son las ventajas de la apuesta de Bitcoin sin custodia?
 
@@ -74,7 +74,7 @@ Debido a complejidades técnicas, es posible que tu activo apostado no sea visib
 
 ### 13\. ¿Qué hacer si el botón "Canjear BTC" no funciona en el sitio web de apuestas?
 
-[Halborn](https://www.halborn.com/), una firma cumplidora de SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [de confianza de plataformas blockchain líderes](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap, ha auditado exhaustivamente el protocolo de Core y la seguridad de la apuesta de Bitcoin sin custodia. Puedes revisar los informes de auditoría del protocolo de Core y de la apuesta de Bitcoin sin custodia de las principales firmas [aquí](https://docs.coredao.org/docs/Learn/audit).
+[Halborn](https://www.halborn.com/), una firma cumplidora de SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [de confianza de plataformas blockchain líderes](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap, ha auditado exhaustivamente el protocolo de Core y la seguridad de la apuesta de Bitcoin sin custodia. You can review audit reports on Core's protocol and non-custodial Bitcoin staking by leading firms [here](https://docs.coredao.org/docs/Learn/audit).
 
 ### 14\. ¿Qué hacer si el botón _`Canjear BTC`_ no funciona en el sitio web de apuestas?
 
