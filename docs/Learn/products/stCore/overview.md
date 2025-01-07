@@ -30,7 +30,7 @@ On the other hand, we are also seeking ways to add more utilities to the CORE to
 
 1. **Staking Setup:** To participate in Core liquid staking, users need to convert their CORE holdings into a staked CORE (stCORE) format. This involves locking up a certain amount of CORE and depositing it into the stCORE staking contract, which will automatically delegate the CORE to selected validators on the chain.
 
-2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens,, i.e., stCORE. These tokens represent their staked CORE holdings and can be freely traded or transferred while still earning staking rewards.
+2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens (stCORE). These tokens represent their staked CORE holdings and can be freely traded or transferred while still earning staking rewards.
 
 3. **Staking Rewards:** Users can earn annualized return on holding stCORE which is the projected yearly increase in its conversion ratio with CORE. This means that users can exchange for more CORE when they burn their stCORE.
 
