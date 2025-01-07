@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ### 3. ¿Cuál es el período de canje de stCORE?
 
-stCORE es una solución innovadora de Core Chain diseñada para mejorar la utilidad de los tokens CORE mediante la introducción de apuestas líquidas. Esto permite a los poseedores de tokens CORE maximizar el potencial de sus activos con mayor flexibilidad y eficiencia. El proceso implica apostar tokens CORE para proteger la red y, simultáneamente, ganar liquidez mediante la acuñación de tokens stCORE, que se pueden utilizar en varios protocolos DeFi.
+stCORE is an innovative solution on the Core blockchain designed to enhance the utility of CORE tokens by introducing liquid staking. Esto permite a los poseedores de tokens CORE maximizar el potencial de sus activos con mayor flexibilidad y eficiencia. El proceso implica apostar tokens CORE para proteger la red y, simultáneamente, ganar liquidez mediante la acuñación de tokens stCORE, que se pueden utilizar en varios protocolos DeFi.
 
 ### 2. ¿Cuáles son los beneficios de realizar apuestas líquidas con stCORE?
 
