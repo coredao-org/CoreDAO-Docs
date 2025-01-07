@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-A continuación se muestra una lista de direcciones precompiladas del ecosistema Core Chain.
+Following is a list of precompiled addresses of Core ecosystem.
 
 | **Nombre**                            | **Direccion**                                                                                                               |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
