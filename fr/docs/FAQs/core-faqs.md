@@ -8,9 +8,9 @@ sidebar_position: 2
 
 ---
 
-### 1. Où puis-je trouver le code source de la Core Chain ?
+### 1. Where can I find the codebase for Core blockchain?
 
-Core Chain encourage les projets open source, et nous mettons donc tout notre code à disposition pour la communauté. Vous pouvez trouver le code source de Core Chain et d'autres outils pour développeurs sur le [compte GitHub officiel de Core Chain](https://github.com/coredao-org).
+Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. You can find Core blockchain’s codebase and other developer tools on the [official GitHub account of Core](https://github.com/coredao-org).
 
 ### 2. Quels sont les canaux de communication officiels de Core Chain ?
 
@@ -24,7 +24,7 @@ Core Chain encourage les projets open source, et nous mettons donc tout notre co
 
 ### 3. Quelles dApps sont déployées sur le réseau Core ?
 
-La Core Chain est conçue pour les créateurs, offrant une plateforme robuste où les diverses applications décentralisées (dApps) peuvent être déployées et prospérer. Soutenant une large gamme de dApps, l'écosystème Core est spécifiquement structuré pour encourager le développement et l'innovation, en faisant un environnement favorable pour les créateurs cherchant à déployer des applications à la pointe de la technologie dans l'espace blockchain. Pour plus de détails, explorez notre [écosystème](https://coredao.org/explore/ecosystem) pour découvrir qui construit quoi.
+Core is designed to cater to builders, offering a robust platform where various decentralized applications (dApps) can be deployed and flourish. Soutenant une large gamme de dApps, l'écosystème Core est spécifiquement structuré pour encourager le développement et l'innovation, en faisant un environnement favorable pour les créateurs cherchant à déployer des applications à la pointe de la technologie dans l'espace blockchain. Pour plus de détails, explorez notre [écosystème](https://coredao.org/explore/ecosystem) pour découvrir qui construit quoi.
 
 ### 4. Comment connecter MetaMask au réseau Core ?
 
@@ -40,7 +40,7 @@ Non, en tant que staker de bitcoin sur le réseau Core, vous n'avez pas besoin d
 
 ### 7. Quelles sont les conditions pour le slashing ? Quels frais sont encourus ? Mes tokens stakés (CORE et BTC) seront-ils réduits ?
 
-Sur le réseau Core Chain, le slashing et l'emprisonnement sont des mécanismes pour pénaliser les validateurs en cas de mauvaise conduite.
+On the Core network, slashing and jailing are mechanisms to penalize validators for misconduct.
 
 Slashing fait référence à la réduction des récompenses d'un validateur pour le minage de blocs ou de ses tokens CORE stakés. La gravité de la sanction est proportionnelle à la mauvaise conduite du validateur.
 
@@ -52,7 +52,7 @@ Slashing fait référence à la réduction des récompenses d'un validateur pour
 
 ### 8. Quel mécanisme de consensus utilise le réseau Core et comment prévient-il les attaques ?
 
-Le réseau Core utilise le mécanisme de consensus Satoshi Plus, qui combine la Preuve de Travail Déléguée (DPoW), la Preuve d'Enjeu Déléguée (DPoS) et le staking non-custodial de BTC pour sécuriser le réseau contre diverses attaques. Ce système réduit les risques d'attaques comme les attaques DDoS grâce à la dispersion des nœuds et à la communication P2P aléatoire. Pour les attaques de consensus, telles que l'attaque des 51 %, il est utilisé un minage en tourniquet et un système hybride de score pour l'élection des validateurs, rendant ces attaques économiquement impraticables. De plus, la Core Chain utilise le checkpointing pour geler et sécuriser périodiquement l'historique de la blockchain, empêchant les attaques à longue portée. Pour plus de détails, voir la [Vue d'Ensemble de la Sécurité sur Core Chain](https://docs.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
+Le réseau Core utilise le mécanisme de consensus Satoshi Plus, qui combine la Preuve de Travail Déléguée (DPoW), la Preuve d'Enjeu Déléguée (DPoS) et le staking non-custodial de BTC pour sécuriser le réseau contre diverses attaques. Ce système réduit les risques d'attaques comme les attaques DDoS grâce à la dispersion des nœuds et à la communication P2P aléatoire. Pour les attaques de consensus, telles que l'attaque des 51 %, il est utilisé un minage en tourniquet et un système hybride de score pour l'élection des validateurs, rendant ces attaques économiquement impraticables. Additionally, Core uses checkpointing to freeze and secure the blockchain's history periodically, thwarting long-range attacks. For more details, see the [Core Blockchain Security Overview](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
 
 ### 9. Quel est le temps moyen de confirmation des transactions sur le réseau Core ?
 
@@ -60,28 +60,24 @@ Le temps moyen de confirmation des transactions sur le réseau Core est de **12 
 
 ### 10. Quelle capacité de traitement des transactions (TPS) peut supporter le réseau Core ?
 
-La Core Chain est toujours en évolution et mise fortement sur l'innovation. Actuellement, Core peut gérer **~700** sur le mainnet avec une limite de gas artificiellement basse. Cependant, nous prévoyons d'augmenter cette capacité et de rendre le réseau plus efficace pour gérer un volume de transactions bien plus élevé.
+Core blockchain is still evolving and stepping hard on the innovation gear, as of now Core can handle up to **~700** on mainnet with an artificially low gas limit. Cependant, nous prévoyons d'augmenter cette capacité et de rendre le réseau plus efficace pour gérer un volume de transactions bien plus élevé.
 
-<!-- ### 11. What is the address format of Core? Does it support multiple formats?
-    
-
-### 12. What are possible causes of transaction failure on the core network? -->
-
-### 11. Où puis-je obtenir des tokens de test CORE ?
+### 11. Where can I get the test CORE token from?
 
 To help users get started and allow developers to quickly prototype their dApps, Core Testnet Faucets for both of its testnets, [Faucet for Core Testnet (1114)](https://scan.test2.btcs.network/faucet) and [Faucet for Core Testnet (1115)](https://scan.test.btcs.network/faucet), to distribute Core testnet tokens, tCORE. Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE or tCORE2 from the Core testnet faucet.
 
-### 12. Comment puis-je contribuer à la communauté Core ?
+### 12. How can I contribute to the Core community?
 
-Vous pouvez contribuer à la communauté Core de plusieurs manières :
+You can contribute to the Core Community through several different ways:
 
-- **Contribuer à notre documentation officielle :** Envoyez une PR avec vos modifications sur le dépôt GitHub de notre documentation officielle. Notre équipe les examinera et, si elles sont correctes, elles seront intégrées.
-- **[Liste de souhaits Core Chain](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. La Core Foundation a dressé une liste de catégories de projets que les créateurs peuvent développer pour contribuer à la croissance de l'écosystème Core.
-- **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la Core Chain. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), [Core Ignition](https://ignition.coredao.org/), ou le [programme d'incitation pour les créateurs](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core Chain.
+- **Contribute to our Official Documentation:** Send PR with your changes to GitHub repo of our official documentation and our team will review it accordingly. If deem correct, we will merge them into our official documentation.
+- **[Core Wishlist](https://github.com/coredao-org/core-community-contributions):** Build projects for the Core ecosystem. The Core Foundation has laid out a list of project categories that builders can build and contribute to the growth of the Core ecosystem.
+- **Builder Incentive Programs:** Core also offers several grants and builder programs for encouraging developement on the Core blockchain. Whether through [Core Foundation Grants](https://coredaofoundation.org/fund-your-project) or the [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), you can jumpstart your building journey on the Web3 on Core.
+- **Core Commit Program:** Core Foundation offers a 3-month accelerator program for early stage projects to scale up. The [Core Commit Program](https://coredao.org/initiatives/commit-program) not only provides builders with resources and access to 1:1 mentorhsip from some of the biggest minds in the Web3 industry, it also provides them the opportunity of monthly perforamce based rewards and funding from Core Ventures and its network of 100+ VCs.
 
 ### 13. Core propose-t-elle des subventions ou des programmes pour les créateurs ?
 
-Core ne se limite pas aux subventions—c'est une porte vers des opportunités infinies. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), [Core Ignition](https://ignition.coredao.org/), ou le [programme d'incitation pour les créateurs](https://coredao.org/initiatives/incentiveprogram), vous recevrez une orientation technique, un mentorat et serez exposé à une communauté dynamique dédiée à l'innovation dans l'écosystème DeFi.
+Core isn't just about grants, it's a gateway to limitless opportunities. Whether through [Core Foundation Grants](https://coredaofoundation.org/fund-your-project), [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram) or the [Core Commit Program](https://coredao.org/initiatives/commit-program), you'll receive technical guidance, mentorship, and exposure to a vibrant community dedicated to innovating in the DeFi landscape.
 
 ### 14. Comment puis-je signaler une arnaque ou un rug pull ?
 
