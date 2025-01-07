@@ -72,7 +72,7 @@ La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de des
 
 - **Bitcoin LST:** Esta característica permitiría a los apostadores de BTC obtener rendimiento de su Bitcoin y al mismo tiempo usar ese BTC para diversas aplicaciones en Core.
 
-- **Retomando:** Esta adición permitiría que otros protocolos se beneficien de la protección de Bitcoin de Core Chain.
+- **Restaking:** This addition would enable other protocols to benefit from Core’s Bitcoin protection.
 
 ## Conclusión
 
