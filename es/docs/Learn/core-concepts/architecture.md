@@ -33,7 +33,7 @@ Además, Satoshi Plus se beneficia actualmente de la seguridad de aproximadament
 
 - **Bitcoin Stakers:** La tercera parte del consenso de Satoshi Plus es la participación sin custodia de Bitcoin, que permite a cualquier titular de bitcoin obtener rendimiento apostando sus tokens de bitcoin sin renunciar a la custodia.
 
-- **Retransmisores:** Los retransmisores transmiten encabezados de bloques de Bitcoin a la red central. Cualquiera puede convertirse en retransmisor registrándose y bloqueando un depósito de token CORE reembolsable.
+- **Relayers:** Relayers transmit Bitcoin blocks and transaction data to the Core network. Cualquiera puede convertirse en retransmisor registrándose y bloqueando un depósito de token CORE reembolsable.
 
 - **Verificadores:** Los verificadores son responsables de informar comportamientos maliciosos en la red. Las marcas de verificación exitosas pueden resultar en una reducción drástica de las recompensas o la participación de un validador malicioso, o encarcelarlo directamente, y los verificadores son compensados ​​por esta actividad de monitoreo cuando se otorgan recompensas en bloque. Cualquiera puede actuar como verificador en la red Core.
 
