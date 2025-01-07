@@ -32,7 +32,7 @@ En este documento, cubriremos los conceptos básicos para acceder a un punto fin
 
 ![new-workspace-postman](../../static/img/rpc/postman/rpc-psotman-4.png)
 
-5. Primero, cambie la solicitud `GET` por una solicitud `POST`, ya que así es como se estructurará nuestra consulta. Luego, agregue la URL de RPC que desea utilizar para obtener datos relacionados con una transacción de Core Chain específica. Recuerde que puede utilizar cualquiera de las [URL Core RPC válidas] (./rpc-list.md).
+5. Primero, cambie la solicitud `GET` por una solicitud `POST`, ya que así es como se estructurará nuestra consulta. Then, add the RPC URL that you want to use to get data related to a specific Core blockchain transaction. Recuerde que puede utilizar cualquiera de las [URL Core RPC válidas] (./rpc-list.md).
 
 ![set-request-type-postman](../../static/img/rpc/postman/rpc-psotman-5.png)
 
