@@ -36,7 +36,7 @@ En participant au programme d'incitation utilisateur de Core Ignition, les utili
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
 </p>
 
-2. Cliquez sur "Ajouter le Réseau Core" pour ajouter Core Chain au réseau du portefeuille.
+2. Click on "Add Core Network" to add Core Blockchain into the wallet network.
 3. Cliquez sur "Gagner des Sparks" ou "Rejoindre Maintenant" pour initier la création de compte.
 4. Sélectionnez le pays approprié
 
