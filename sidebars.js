@@ -170,7 +170,13 @@ const sidebars = {
           'Dev-Guide/contract-verify', 
           'Dev-Guide/erc20-tokens', 
           'Dev-Guide/erc721-tokens',
-          'Dev-Guide/dapp-on-core',]
+          'Dev-Guide/dapp-on-core',
+          {
+            type: 'link',
+            label: 'Switchboard VRF', // The link label
+            href: 'https://docs.switchboard.xyz/docs/switchboard/switchboard-randomness/on-evm-networks', // The external URL
+          },
+        ]
       },
       {
         type: 'category',
