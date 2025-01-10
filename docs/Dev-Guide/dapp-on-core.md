@@ -250,7 +250,7 @@ npx hardhat compile
 ## Deploy and Interact with Smart Contract
 
 
-1. Before deploying your smart contract on Core, it is best advised to first run a series of tests making sure that the smart contract is working as desired. Refer to the detailed guide [here](https://docs.coredao.org/developer/develop-on-core/building-on-core/using-hardhat#contract-testing) for more details.
+1. Before deploying your smart contract on Core, it is best advised to first run a series of tests making sure that the smart contract is working as desired. Refer to the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/hardhat#contract-testing) for more details.
 
 
 2. Create a `scripts` folder in the root directory of your project. Inside this folder, create a file `deploy-and-call.js`; paste the following script into it.
@@ -287,7 +287,7 @@ main().catch((error) => {
   process.exitCode = 1;
 });
 ```
-3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnet. Refer [here](https://docs.coredao.org/developer/develop-on-core/using-core-testnet/connect-to-core-testnet#testnet-facuet-tcore-account-funding) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnet. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-testnet-wallet-config) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 
 4. Run the following command from the root directory of your project, to deploy your smart contract on the Core blockchain.
