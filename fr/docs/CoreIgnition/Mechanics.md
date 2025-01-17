@@ -69,7 +69,7 @@ Ci-dessous les multiplicateurs de base pour les actifs autorisés dans le portef
 | USDT, USDC                                                                                                                            | 1.2x   | 2x                   | 2.5x | 3x                     |
 | CORE, WCORE, wETH                                                                                                                     | 1x                     | 1.5x | 2x                   | 2.5x   |
 | solvBTC.CORE                                                                                                          | 1x                     | 1.4x | 1.6x | 1.8x   |
-| aBTC, oBTC, uBTC, nBTC, suBTC, pumpBTC, SolvBTC.b, SolvBTC.m, BTCB, BTC.B, wBTC, rBTC | 1x                     | 1.2x | 1.4x | 1.6x   |
+| aBTC, BTCB, BTC.B, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.b, SolvBTC.m, uBTC, wBTC | 1x                     | 1.2x | 1.4x | 1.6x   |
 
 > _**Exemple 1 :**_
 > Si l'utilisateur détient 10 stCORE dans le solde du portefeuille Ignition, l'utilisateur obtient :  Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 10 stCORE \* 1,5 $ (supposé) \* 1,3 = 19,5
