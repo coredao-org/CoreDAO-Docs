@@ -69,7 +69,7 @@ A continuación, se presentan los multiplicadores base para los activos permitid
 | USDT,USDC                                                                                                                             | 1.2x | 2x                   | 2.5x | 3x                    |
 | CORE,WCORE,wETH                                                                                                                       | 1x                   | 1.5x | 2x                   | 2.5x  |
 | solvBTC.CORE                                                                                                          | 1x                   | 1.4x | 1.6x | 1.8x  |
-| aBTC, oBTC, uBTC, nBTC, suBTC, pumpBTC, SolvBTC.b, SolvBTC.m, BTCB, BTC.B, wBTC, rBTC | 1x                   | 1.2x | 1.4x | 1.6x  |
+| aBTC, BTCB, BTC.B, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.b, SolvBTC.m, uBTC, wBTC | 1x                   | 1.2x | 1.4x | 1.6x  |
 
 > _**Ejemplo 1:**_\
 > Si el usuario tiene 10 stCORE en el balance de la billetera Ignition, obtiene:\
