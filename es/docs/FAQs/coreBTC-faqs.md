@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ### 1. ¿Qué es coreBTC? ¿Cuál es el propósito de coreBTC?
 
-coreBTC is a native wrapped Bitcoin on Core, maintaining a 1:1 peg with BTC through a secured mechanism. It allows Bitcoin users to interact seamlessly with the DeFi space on the EVM-compatible Core using their BTC assets, expanding Bitcoin's functionality within the DeFi landscape without compromising its inherent security.
+coreBTC es un Bitcoin nativo envuelto en Core, que mantiene una vinculación 1:1 con BTC a través de un mecanismo seguro. Permite a los usuarios de Bitcoin interactuar sin problemas con el espacio DeFi en el Core compatible con EVM utilizando sus activos BTC, ampliando la funcionalidad de Bitcoin dentro del panorama DeFi sin comprometer su seguridad inherente.
 
 ### 2. ¿En qué se diferencia coreBTC de los tokens empaquetados centralizados (por ejemplo, WBTC)?
 
@@ -18,7 +18,7 @@ A diferencia de los tokens empaquetados centralizados como WBTC, que dependen de
 
 ### 4. ¿Cómo puedo estar seguro de que mi BTC es seguro?
 
-La seguridad de su BTC en el sistema coreBTC está garantizada por la sobrecolateralización requerida por los Lockers y el monitoreo continuo por parte de Guardianes y Liquidadores. This structure ensures that the locked BTC is always backed by sufficient collateral on the Core, safeguarding against mismanagement or value drops. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
+La seguridad de su BTC en el sistema coreBTC está garantizada por la sobrecolateralización requerida por los Lockers y el monitoreo continuo por parte de Guardianes y Liquidadores. Esta estructura garantiza que el BTC bloqueado siempre esté respaldado por suficiente garantía en el Core, protegiéndolo contra una mala gestión o caídas de valor. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
 
 ### 5. ¿Quiénes son los participantes clave sin permiso? ¿Cuáles son sus roles?
 
@@ -34,6 +34,6 @@ Los participantes clave sin permiso en el ecosistema coreBTC incluyen:
 
 Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente por [Halborn](https://www.halborn.com/), una empresa compatible con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [con la confianza de](https://www .halborn.com/about/who-trusts-us) plataformas blockchain líderes como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap.
 
-### 7. Where can I learn more about coreBTC and other Core projects?
+### 7. ¿Dónde puedo obtener más información sobre coreBTC y otros proyectos Core?
 
 Visite https://unlockingbitcoindefi.com para obtener más información sobre coreBTC y nuestros otros proyectos innovadores de BTCfi.
