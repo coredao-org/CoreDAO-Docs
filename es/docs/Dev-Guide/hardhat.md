@@ -2,7 +2,7 @@
 sidebar_label: Uso de Hardhat
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core using the Hardhat
+description: Implementar contratos en Core usando Hardhat
 ---
 
 # Uso de Hardhat
@@ -105,7 +105,7 @@ Copia lo siguiente en tu archivo hardhat.config.js:
  
 ```
 
-**Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `paris` under the solidity compiler settings in the `hardhat.config.js` file.
+**Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez para Core Blockchain](./smart-contract-guidelines.md)**; para ello, asegúrese de que el parámetro `evmVersion` esté establecido en `paris` bajo el configuración del compilador de solidez en el archivo `hardhat.config.js`.
 
 > Nota: Necesitamos pasar claves privadas/mnemónicos al proveedor. Puedes crear un archivo `secret.json` para almacenarlos. No olvides agregar este archivo a `.gitignore` para no subir accidentalmente tus claves privadas a un repositorio público. ¡Asegúrate de mantener este archivo en un lugar absolutamente seguro!
 
