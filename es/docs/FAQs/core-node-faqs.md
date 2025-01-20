@@ -8,18 +8,18 @@ sidebar_position: 2
 
 ---
 
-### 1. What are the different types of nodes supported supported on the Core blockchain?
+### 1. ¿Cuáles son los diferentes tipos de nodos admitidos en la cadena de bloques Core?
 
 En la red Core, un nodo completo Core almacena el historial completo de la cadena de bloques Core, lo que permite a cualquiera verificar el estado de cualquier cuenta. Un nodo completo Core puede adoptar muchas formas:
 
-- **Normal full node:** for private use.
-- **Validator full node:** acts as a validator on Core, validating blocks and transactions.
-- **RPC full node:** provides RPC services and responds to HTTP requests.
+- **Nodo completo normal:** para uso privado.
+- **Nodo completo del validador:** actúa como validador en el Core, validando bloques y transacciones.
+- **Nodo completo RPC:** proporciona servicios RPC y responde a solicitudes HTTP.
 
 Aparte de este Core también es compatible
 
-- **Archive node:** stores the entire blockchain data of Core from the genesis block.
-- **Snapshot nodes:** stores snapshots for helping other nodes fast-track syncing to the network.
+- **Nodo de archivo:** almacena todos los datos de la cadena de bloques de Core desde el bloque de génesis.
+- **Nodos de instantáneas:** almacena instantáneas para ayudar a otros nodos a acelerar la sincronización con la red.
 
 ### 2. ¿Cuáles son los beneficios de ejecutar un Core Node?
 
@@ -109,6 +109,6 @@ Los validadores son cruciales para proteger la red mediante la producción de bl
 
 Para obtener más detalles, consulte la [Guía de configuración del nodo validador] (../Node/config/validator-node-config.md)
 
-### 6. How do I set up a full node on Core blockchain?
+### 6. ¿Cómo configuro un nodo completo en Core blockchain?
 
-Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
+Consulte la guía detallada [aquí](../Node/Full-Node/on-mainnet.md) sobre cómo configurar y ejecutar un nodo completo en la red Core.
