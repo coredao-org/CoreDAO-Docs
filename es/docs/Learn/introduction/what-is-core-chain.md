@@ -14,31 +14,31 @@ La principal innovación de Core es su novedoso mecanismo de consenso, **Satoshi
 
 ![core-products](../../../static/img/Core_Products.png)
 
-## Key Features of Core Blockchain
+## Características clave de Core Blockchain
 
-Some of the key features of Core that distinguishes it from its competitors:
+Algunas de las características clave de Core que lo distinguen de sus competidores:
 
 - **Mecanismo de consenso Satoshi Plus:** el novedoso mecanismo de consenso, que es un híbrido de prueba de trabajo delegada (DPoW), prueba de participación delegada (DPoS) y participación de Bitcoin sin custodia.
 - **Core DAO:** el DAO que gestiona la gobernanza en cadena.
-- **EVM Execution Layer:** Core adaptes Ethereum Virtual Machine (EVM) for smart contract execution making it EVM-compatible, similar to [BNB Smart Chain's implementation](https://github.com/bnb-chain/bsc) of Geth.
-- **coreBTC:** now sunsetted, is the enshrined Core-native bridged BTC.
-- **Apuesta de BTC sin custodia:** Core ofrece a los titulares de BTC apostar sus activos en la cadena de bloques Core de forma segura y sin confianza sin tener que renunciar a la custodia de sus activos. This innovative feature integrates Bitcoin into Core's DeFi activities, enhancing liquidity and enabling Bitcoin users to earn staking rewards in the form of CORE tokens within the Core ecosystem.
-- **stCORE:** Core offers Liquid Staking in the form of stCORE which is designed to enhance the utility of the CORE token and simplify the staking process. Esta iniciativa permite a los poseedores de tokens maximizar el potencial de sus activos con mayor flexibilidad y eficiencia.
-- **HTLC Atomic Swaps _(Coming Soon)_:** enables trustless, peer-to-peer exchange of tokens between Core and other blockchains, including (and especially) Bitcoin, through Hashed TimeLock Contracts (HTLCs).
+- **Capa de ejecución de EVM:** Core adapta la máquina virtual Ethereum (EVM) para la ejecución de contratos inteligentes, haciéndola compatible con EVM, similar a la [implementación de BNB Smart Chain](https://github.com/bnb-chain/bsc) de Geth.
+- **coreBTC:** ahora extinto, es el BTC puenteado nativo del núcleo consagrado.
+- **Apuesta de BTC sin custodia:** Core ofrece a los titulares de BTC apostar sus activos en la cadena de bloques Core de forma segura y sin confianza sin tener que renunciar a la custodia de sus activos. Esta característica innovadora integra Bitcoin en las actividades DeFi de Core, mejorando la liquidez y permitiendo a los usuarios de Bitcoin ganar recompensas de apuesta en forma de tokens CORE dentro del ecosistema Core.
+- **stCORE:** Core ofrece Liquid Stake en forma de stCORE, que está diseñado para mejorar la utilidad del token CORE y simplificar el proceso de apuesta. Esta iniciativa permite a los poseedores de tokens maximizar el potencial de sus activos con mayor flexibilidad y eficiencia.
+- **HTLC Atomic Swaps _(próximamente)_:** permite el intercambio de tokens entre pares y sin confianza entre Core y otras cadenas de bloques, incluido (y especialmente) Bitcoin, a través de contratos Hashed TimeLock (HTLC).
 
-## Problems Addressed by Core blockchain
+## Problemas abordados por Core blockchain
 
-Core blockchain addresses several key problems and issues in the blockchain space through its unique approach and technology. Here's a summary of the issues that Core attempts to overcome:
+Core blockchain aborda varios problemas y cuestiones clave en el espacio blockchain a través de su enfoque y tecnología únicos. Aquí hay un resumen de los problemas que Core intenta superar:
 
-- **Scalability and Security:** Core utilizes a novel consensus mechanism called "Satoshi Plus" which aims to balance the trade-offs between scalability, security, and decentralization. Este mecanismo combina los mecanismos de consenso de prueba de trabajo (PoW) y prueba de participación delegada (DPoS) de Bitcoin en un sistema híbrido, buscando aprovechar la seguridad proporcionada por el poder minero de Bitcoin y al mismo tiempo mejorar la escalabilidad a través de DPoS.
+- **Escalabilidad y seguridad:** Core utiliza un novedoso mecanismo de consenso llamado "Satoshi Plus" que tiene como objetivo equilibrar las compensaciones entre escalabilidad, seguridad y descentralización. Este mecanismo combina los mecanismos de consenso de prueba de trabajo (PoW) y prueba de participación delegada (DPoS) de Bitcoin en un sistema híbrido, buscando aprovechar la seguridad proporcionada por el poder minero de Bitcoin y al mismo tiempo mejorar la escalabilidad a través de DPoS.
 
-- **Trilema de la cadena de bloques:** El trilema de la cadena de bloques afirma que es un desafío lograr la descentralización, la seguridad y la escalabilidad simultáneamente. Core's solution, the Satoshi Plus consensus, attempts to tackle this trilemma by integrating Bitcoin's computing power for security and the DPoS mechanism for scalability, aiming for a decentralized system that does not compromise on these critical aspects​.
+- **Trilema de la cadena de bloques:** El trilema de la cadena de bloques afirma que es un desafío lograr la descentralización, la seguridad y la escalabilidad simultáneamente. La solución de Core, el consenso Satoshi Plus, intenta abordar este trilema integrando la potencia informática de Bitcoin para la seguridad y el mecanismo DPoS para la escalabilidad, con el objetivo de lograr un sistema descentralizado que no comprometa estos aspectos críticos.
 
-- **Ecosystem Roles and Participation:** Core is designed to have an ecosystem where various participants play significant roles, including validators, relayers, BTC miners, CORE holders, and verifiers. Este ecosistema tiene como objetivo garantizar la seguridad de la red, promover la descentralización y fomentar la participación de la comunidad en la gobernanza y las actividades de la red.
+- **Roles y participación del ecosistema:** Core está diseñado para tener un ecosistema donde varios participantes desempeñan roles importantes, incluidos validadores, retransmisores, mineros de BTC, titulares de CORE y verificadores. Este ecosistema tiene como objetivo garantizar la seguridad de la red, promover la descentralización y fomentar la participación de la comunidad en la gobernanza y las actividades de la red.
 
 - **Tokenomics y estructura de incentivos:** CORE, el token de utilidad nativo, se utiliza para apostar y pagar tarifas de gas. Con un suministro total de **2,1 mil millones** de tokens, Core
   La cadena planea distribuirlos durante **81 años**, alineándose con su visión a largo plazo. El proyecto también incluye mecanismos para quemar un porcentaje de las recompensas en bloque y las tarifas del gas para gestionar el suministro de tokens de forma dinámica.
 
-- **Passive Income:** Core furnishes an opportunity for BTC holders to earn passive income in the form of CORE tokens earned as rewards in exchange for staking their BTC onto Core and delegating these to valdiators on the Core network, indirectly contributing to Core Chain’s consensus mechanism and security.
+- **Ingresos pasivos:** Core brinda una oportunidad para que los titulares de BTC obtengan ingresos pasivos en forma de tokens CORE obtenidos como recompensas a cambio de apostar sus BTC en Core y delegarlos a valdiators en la red Core, contribuyendo indirectamente a Core Chain. mecanismo de consenso y seguridad.
 
-- **Comparison with Other Blockchains:** Core positions itself as an improvement over existing blockchains like Bitcoin, Ethereum, Solana, Polygon, and BNB Chain. By addressing issues such as low transaction throughput, centralization risks, and network stability, Core offers a more scalable, decentralized, and secure alternative​.
+- **Comparación con otras cadenas de bloques:** Core se posiciona como una mejora con respecto a las cadenas de bloques existentes como Bitcoin, Ethereum, Solana, Polygon y BNB Chain. Al abordar problemas como el bajo rendimiento de las transacciones, los riesgos de centralización y la estabilidad de la red, Core ofrece una alternativa más escalable, descentralizada y segura.
