@@ -12,9 +12,9 @@ Los puntos finales de llamada a procedimiento remoto (RPC) son cruciales para qu
 
 ## Endpoints RPC para Core Blockchain
 
-### Core Blockchain Testnet (1114 (0x45a))
+### Red de prueba central de blockchain (1114 (0x45a))
 
-_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+_Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza soporte continuo y acceso a las funciones más recientes.
 
 - https://rpc.test2.btcs.network
 
