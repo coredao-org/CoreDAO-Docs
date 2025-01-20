@@ -36,7 +36,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
 </p>
 
-2. Click on "Add Core Network" to add Core Blockchain into the wallet network.
+2. Haga clic en "Agregar red central" para agregar Core Blockchain a la red de billetera.
 3. Haga clic en "Earn Sparks" o "Join Now" para iniciar la creación de una cuenta.
 4. Seleccione el país correspondiente.
 
