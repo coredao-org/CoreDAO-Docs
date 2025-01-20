@@ -43,11 +43,11 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 Si planea ejecutar un nodo de validación, deberá configurar la clave de consenso antes de ejecutar el nodo. Asegúrese de mantener guardado su almacén de claves.
 
 ```bash
-# generate the consensus key and input the password
-geth account new --datadir ./node
-echo {your-password} > password.txt
-# start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
+# generar la clave de consenso e ingresar la contraseña
+cuenta geth nueva --datadir ./node
+echo {tu-contraseña} > contraseña.txt
+# iniciar un nodo validador
+geth --config ./config.toml --datadir ./node -unlock {su-dirección-validador} --miner.etherbase {su-dirección-validador} --password contraseña.txt --mine --allow-insecure -desbloquear --cache 8000
 ```
 
 5\. A medida que se ejecuta nuestro nodo validador, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de registro se encuentra en `./node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
