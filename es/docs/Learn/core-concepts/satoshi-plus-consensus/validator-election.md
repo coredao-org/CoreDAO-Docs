@@ -26,19 +26,19 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
    - La puntuación híbrida para cada validador se calcula en función de la cantidad de poder de hash delegado de los mineros de Bitcoin, la cantidad de tokens CORE apostados y la cantidad de Bitcoin apostados.
    - La fórmula equilibra estos tres componentes para producir una puntuación que refleje el apoyo y la confiabilidad generales del validador.
 
-3. **Election of Validators:**
+3. **Elección de Validadores:**
    - En cada ronda, que dura un día, los validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores.
    - Los 23 validadores con las puntuaciones más altas son elegidos para formar parte del conjunto de validadores activos para esa ronda.
 
-4. **Validator Responsibilities:**
+4. **Responsabilidades del validador:**
    - Los validadores elegidos son responsables de producir bloques y validar transacciones durante toda la ronda.
    - Trabajan en forma de turnos, tomándose turnos para producir bloques durante cada ranura, y cada ranura dura tres segundos.
 
-5. **Updating the Validator Set:**
+5. **Actualización del conjunto de validadores:**
    - El conjunto de validadores se actualiza cada 200 bloques para garantizar la estabilidad y el rendimiento. Si algún validador es encarcelado o cortado, otros continúan produciendo bloques sin interrupción.
    - Al final de cada ronda, las recompensas acumuladas se calculan y distribuyen, y se determina un nuevo conjunto de validadores en función de las puntuaciones híbridas actualizadas.
 
-6. **Rewards Distribution:**
+6. **Distribución de recompensas:**
    - Los validadores y sus delegados obtienen recompensas de tokens CORE en función de su desempeño y la cantidad de recursos que se les delegan.
    - Estas recompensas incentivan la participación continua y el desempeño diligente de los validadores.
 
@@ -56,20 +56,20 @@ El proceso de elección del Validador en Satoshi Plus implica pasos clave, respa
    - Los validadores se seleccionan en función del apoyo total que reciben, calculado combinando tokens apostados (CORE y Bitcoin) y poder de hash delegado. La ecuación detrás de la puntuación híbrida es:
 
 $$
- S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
+S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
 $$
 
-Where, $$m + k + l = 1$$
+Donde, $$m + k + l = 1$$
 
-- $$rHp$$: Bitcoin hash power delegated to a validator.
-- $$tHp$$: Total hash power on Core.
-- $$rSp$$: Amount of CORE tokens staked to a validator.
-- $$tSp$$: Total CORE tokens staked on Core.
-- $$rBp$$: Amount of BTC tokens staked to a validator.
-- $$tBp$$: Total BTC tokens staked on Core.
-- $$m$$: Ratio assigned to hash power.
-- $$k$$: Ratio assigned to CORE staking.
-- $$l$$: Ratio assigned to BTC staking.
+- $$rHp$$: poder hash de Bitcoin delegado a un validador.
+- $$tHp$$: potencia hash total en Core.
+- $$rSp$$: Cantidad de tokens CORE apostados en un validador.
+- $$tSp$$: Total de tokens CORE apostados en Core.
+- $$rBp$$: Cantidad de tokens BTC apostados en un validador.
+- $$tBp$$: Total de tokens BTC apostados en Core.
+- $$m$$: Relación asignada al poder hash.
+- $$k$$: Ratio asignado a la apuesta CORE.
+- $$l$$: Ratio asignado a la participación en BTC.
 
 4. **Producción de bloques:**
    - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. El número actual de validadores es **23**_, y se espera que el número de validadores aumente con el tiempo a medida que crece la red. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
@@ -95,11 +95,11 @@ Where, $$m + k + l = 1$$
      - $rH$ son las recompensas recibidas por el validador debido al poder hash delegado en él (DPoW)
      - $rS$ son las recompensas recibidas por el validador debido al CORE que se le ha delegado (DPoS)
      - $rB$ son recompensas del validador atribuidas a la apuesta de Bitcoin
-     - $$R$$: Total rewards allocated to all delegators of the validaotr.
-     - $$m$$: Proportion of rewards allocated to hash power.
-     - $$k$$: Proportion of rewards allocated to CORE staking.
-     - $$l$$: Proportion of rewards allocated to BTC staking.
-     - $$S$$: Hybrid score of the validator.
+     - $$R$$: Recompensas totales asignadas a todos los delegados del validaotr.
+     - $$m$$: Proporción de recompensas asignadas al poder hash.
+     - $$k$$: Proporción de recompensas asignadas a la apuesta CORE.
+     - $$l$$: Proporción de recompensas asignadas a la apuesta de BTC.
+     - $$S$$: Puntuación híbrida del validador.
 
      Para completar, aquí hay otras tres proporciones de interés:
 
@@ -111,24 +111,24 @@ Where, $$m + k + l = 1$$
         rSu = \frac{rS}{rSp}
      $$
 
-   As for BTC staking, the rewards per unit are further subdivided based on the delegators’ dual staking yield tiers. Assuming that there are 4 boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>MAX</sub>) with dual staking yield multipliers (e, f, g, and h). The reward per unit for BTC staking will be calculated as follows
+   En cuanto a la apuesta de BTC, las recompensas por unidad se subdividen según los niveles de rendimiento de apuesta dual de los delegados. Suponiendo que hay 4 niveles de rendimiento aumentados (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub> y P<sub>MAX</sub>) con multiplicadores de rendimiento de doble apuesta (e, f, g y h). La recompensa por unidad por apostar BTC se calculará de la siguiente manera
 
-   - Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp} * $$ Yield Multiplier for Level<sub>n</sub>
-     - $$rBu$$ of P<sub>BASE</sub>  = $$\frac{rB}{rBp} * e$$
-     - $$rBu$$ of P<sub>1</sub>  = $$\frac{rB}{rBp} * f$$
-     - $$rBu$$ of P<sub>2</sub>  = $$\frac{rB}{rBp} * g$$
-     - $$rBu$$ of P<sub>Max</sub>  = $$\frac{rB}{rBp} * h$$
+   - Recompensa BTC por unidad: $$rBu$$ de **P<sub>n</sub>** = $$\frac{rB}{rBp} * $$ Multiplicador de rendimiento para el nivel<sub>n</sub>
+     - $$rBu$$ de P<sub>BASE</sub> = $$\frac{rB}{rBp} * e$$
+     - $$rBu$$ de P<sub>1</sub> = $$\frac{rB}{rBp} * f$$
+     - $$rBu$$ de P<sub>2</sub> = $$\frac{rB}{rBp} * g$$
+     - $$rBu$$ de P<sub>Máx</sub> = $$\frac{rB}{rBp} * h$$
 
    donde:
 
    - $rHu$ son las recompensas del poder hash del validador por unidad;
    - $rSu$ son las recompensas de apuesta de tokens CORE por unidad;
    - $rBu$ son las recompensas de apuesta de Bitcoin por unidad;
-   - $rBu$ of P<sub>BASE</sub> is the BTC staking rewards per unit for P<sub>BASE</sub> delegator
-   - $rBu$ of P<sub>Level<sub>1</sub></sub> is the BTC staking rewards per unit for P<sub>Level1</sub> delegator
-   - $rBu$ of P<sub>Level<sub>2</sub></sub> is the BTC staking rewards per unit for P<sub>Level2</sub> delegator
-   - $rBu$ of P<sub>MAX</sub> is the BTC staking rewards per unit for P<sub>MAX</sub> delegator;
-   - **Yield Multipliers:** Each reward tier has a specific multiplier (e,f,g,h, ..., etc) that is multiplied to rewards earned per unit of BTC staked.
+   - $rBu$ de P<sub>BASE</sub> son las recompensas de apuesta de BTC por unidad para el delegador de P<sub>BASE</sub>
+   - $rBu$ de P<sub>Nivel<sub>1</sub></sub> son las recompensas de apuesta de BTC por unidad para el delegador de P<sub>Nivel1</sub>
+   - $rBu$ de P<sub>Nivel<sub>2</sub></sub> son las recompensas de apuesta de BTC por unidad para el delegador de P<sub>Nivel2</sub>
+   - $rBu$ de P<sub>MAX</sub> son las recompensas de apuesta de BTC por unidad para el delegador de P<sub>MAX</sub>;
+   - **Multiplicadores de rendimiento:** Cada nivel de recompensa tiene un multiplicador específico (e,f,g,h, ..., etc.) que se multiplica por las recompensas obtenidas por unidad de BTC apostada.
 
 Estas funciones de división de recompensas están diseñadas para crear un mercado activo de recompensas y al mismo tiempo fomentar la competencia entre el conjunto de validadores tanto para el poder de hash delegado como para la participación delegada (Bitcoin y CORE).
 
