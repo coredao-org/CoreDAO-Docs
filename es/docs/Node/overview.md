@@ -1,23 +1,23 @@
 ---
-sidebar_label: Overview of Nodes Running on Core
+sidebar_label: Descripción general de los nodos que se ejecutan en el núcleo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Nodes in the Core Ecosystem
+# Nodos en el ecosistema central
 
 ---
 
-In the Core ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red. Dependiendo de sus objetivos, existen diferentes configuraciones de nodos posibles en la red Core. If you haven't already started any node on Core network yet, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
+En el ecosistema Core, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red. Dependiendo de sus objetivos, existen diferentes configuraciones de nodos posibles en la red Core. Si aún no ha iniciado ningún nodo en la red central, revise la documentación para [Ejecutar un nodo validador local] (./validator/running-validator.md) antes de continuar con diferentes configuraciones.
 
 - Si quieres ser parte de la gobernanza de la Red Core:
 
   - [Iniciar un nodo validador](./config/validator-node-config.md)
 
-- If you want to run a node on Core network for private use:
+- Si desea ejecutar un nodo en la red Core para uso privado:
   - [Iniciar un nodo completo normal](./Full-Node/on-mainnet.md)
 
-- If you want to send transactions or query the chain directly from your own Core blockchain node:
+- Si desea enviar transacciones o consultar la cadena directamente desde su propio nodo Core blockchain:
 
   - [Iniciar un nodo RPC](./config/rpc-node-config.md)
 
@@ -29,7 +29,7 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
 
   - [Iniciar un nodo de instantánea](./config/snapshot-node-config.md)
 
-## Types of Nodes on the Core Network
+## Tipos de nodos en la red central
 
 1. **Validadores:**
    - **Rol:** Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso de la cadena central.
@@ -62,4 +62,4 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
 
 ## Conclusión
 
-The diverse roles of nodes in the Core ecosystem collectively ensure the blockchain is secure, efficient, accessible, and robust. Los validadores, los nodos completos y los nodos de archivo forman la columna vertebral de la seguridad y la integridad de los datos de la red. Al mismo tiempo, los nodos RPC y los nodos Snapshot brindan flexibilidad, accesibilidad y escalabilidad. Esta arquitectura de nodo multifacética admite una amplia gama de operaciones, desde el procesamiento de transacciones hasta interacciones complejas de dApp y análisis de datos históricos.
+Las diversas funciones de los nodos en el ecosistema Core garantizan colectivamente que la cadena de bloques sea segura, eficiente, accesible y robusta. Los validadores, los nodos completos y los nodos de archivo forman la columna vertebral de la seguridad y la integridad de los datos de la red. Al mismo tiempo, los nodos RPC y los nodos Snapshot brindan flexibilidad, accesibilidad y escalabilidad. Esta arquitectura de nodo multifacética admite una amplia gama de operaciones, desde el procesamiento de transacciones hasta interacciones complejas de dApp y análisis de datos históricos.
