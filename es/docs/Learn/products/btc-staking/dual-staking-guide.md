@@ -15,7 +15,7 @@ Para poder apostar, debes tener los siguientes requisitos previos:
 1. **Extensión de Navegador para Cartera de Bitcoin Compatible:** Para participar en el proceso de staking de BTC, debes instalar las extensiones de navegador de cualquiera de las carteras de Bitcoin compatibles, como [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=es), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), y/o [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visita stake.coredao.org para las últimas carteras compatibles). Debes usar una versión de escritorio, ya que las carteras móviles y de hardware no son actualmente compatibles. También puedes apostar directamente usando la aplicación móvil de la cartera Element.
 2. **Dirección de Cartera Core para Recompensas:** Prepara tu dirección de cartera Core para apostar CORE y recibir [recompensas de tokens CORE por apostar Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites) y CORE. Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. Para obtener más información sobre cómo configurar MetaMask para trabajar con la red Core, sigue la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
-## Key Considerations For Dual Staking
+## Consideraciones clave para la apuesta dual
 
 A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu Bitcoin en Core.
 
@@ -34,7 +34,7 @@ A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu
 5. **Consideraciones para los Períodos de Bloqueo**
    - Una vez que bloqueas tu Bitcoin para el staking, no será accesible hasta que termine el período de staking. Considerando tus objetivos de inversión y tolerancia al riesgo, se recomienda seleccionar tu período de bloqueo de manera reflexiva. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
 
-## Step-By-Step Walkthrough of Dual Staking
+## Tutorial paso a paso sobre el doble stake
 
 El staking No Custodial de Bitcoin de Core introduce un método seguro y descentralizado para que los poseedores de Bitcoin ganen rendimiento a través del staking de Bitcoin. Los usuarios pueden apostar su Bitcoin de manera nativa en la red Bitcoin a través de un mecanismo basado en el tiempo y participar activamente en el mecanismo de Consenso de la blockchain de Core mientras realizan el staking.
 
@@ -146,7 +146,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
   - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
-  - The default lock time is set to a month in advance.
+  - El tiempo de bloqueo predeterminado se establece con un mes de anticipación.
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
 <p align="center">
@@ -177,10 +177,10 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-20. The **My Staking** page displays records of all your staking activities (CORE, BTC, hash). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
+20. La página **Mi participación** muestra registros de todas sus actividades de participación (CORE, BTC, hash). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
-**Congratulations**\! Has apostado exitosamente tu Bitcoin y CORE en la blockchain de Core y ahora ganarás tokens CORE como recompensas. Al apostar Bitcoin y votar por los validadores, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad. Además, a través del Staking Doble, ayudas a fortalecer la conexión entre las blockchains de Bitcoin y Core, alineando incentivos y creando valor en ambos ecosistemas.
+**Felicidades**\! Has apostado exitosamente tu Bitcoin y CORE en la blockchain de Core y ahora ganarás tokens CORE como recompensas. Al apostar Bitcoin y votar por los validadores, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad. Además, a través del Staking Doble, ayudas a fortalecer la conexión entre las blockchains de Bitcoin y Core, alineando incentivos y creando valor en ambos ecosistemas.
