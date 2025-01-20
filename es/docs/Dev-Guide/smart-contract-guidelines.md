@@ -2,14 +2,14 @@
 sidebar_label: Directrices para contratos inteligentes
 hide_table_of_contents: false
 sidebar_position: 2
-description: Guidelines for Solidity Support for Developing Smart Contracts on Core
+description: Directrices para el soporte de solidez para el desarrollo de contratos inteligentes en Core
 ---
 
-# Smart Contract Development Guidelines for Core
+# Directrices de desarrollo de contratos inteligentes para Core
 
 ---
 
-Core is constantly evolving for better user and developer experience. This document aims to provide clear instructions for developers on the supported Solidity versions and the necessary settings to ensure your smart contracts are correctly deployed and verifiable on the Core network. To maintain consistency and compatibility, Core blockchain supports Solidity versions higher than 0.8.19 using the **Paris** EVM. Cumplir con esta versión especificada y con las pautas de configuración es crucial para el perfecto funcionamiento de sus contratos. The following sections will detail the recommended Solidity settings, including compiler options and verification procedures, to help you achieve a smooth and secure contract deployment on Core blockchain.
+Core evoluciona constantemente para mejorar la experiencia de los usuarios y desarrolladores. Este documento tiene como objetivo proporcionar instrucciones claras para los desarrolladores sobre las versiones compatibles de Solidity y las configuraciones necesarias para garantizar que sus contratos inteligentes se implementen correctamente y sean verificables en la red Core. Para mantener la coherencia y la compatibilidad, Core blockchain admite versiones de Solidity superiores a 0.8.19 utilizando **Paris** EVM. Cumplir con esta versión especificada y con las pautas de configuración es crucial para el perfecto funcionamiento de sus contratos. Las siguientes secciones detallarán las configuraciones recomendadas de Solidity, incluidas las opciones del compilador y los procedimientos de verificación, para ayudarlo a lograr una implementación de contrato segura y sin problemas en Core blockchain.
 
 ## Background
 
@@ -17,7 +17,7 @@ Por el momento, EVM de Core coincide con la versión **Paris** y _no admite_ la 
 
 ## Configuraciones para implementar correctamente contratos inteligentes en Core
 
-To make sure that the lag in support for deployment and verification of smart contracts of version **0.8.20^** does not stagger the developement of dapps on the Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version 0.8.20^ on Core before the Core EVM upgrade.
+Para asegurarse de que el retraso en el soporte para la implementación y verificación de contratos inteligentes de la versión **0.8.20^** no afecte el desarrollo de dapps en el Core, a continuación se detallan las pautas para garantizar que los desarrolladores puedan implementar y verificar con éxito los contratos inteligentes. contratos de la versión 0.8.20^ en Core antes de la actualización de Core EVM.
 
 ### Configuración de EVM
 
@@ -38,7 +38,7 @@ Para admitir la ejecución de contratos inteligentes con Solidity versión 0.8.2
 ### Verificación de contrato
 
 - Para facilitar el proceso de verificación, Core Scan ha cambiado la versión EVM predeterminada de la plataforma a **Paris** para la versión de solidez **0.8.20^**.
-- Developers can take the exact same steps to verify their smart contracts with version 0.8.20^ as of the older versions, refer [here](./contract-verify.md) for more details on contract verification on Core blochain.
+- Los desarrolladores pueden seguir exactamente los mismos pasos para verificar sus contratos inteligentes con la versión 0.8.20^ que en las versiones anteriores; consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blochain.
 
 ### Contratos inteligentes basados ​​en Solidity versión <0.8.20
 
