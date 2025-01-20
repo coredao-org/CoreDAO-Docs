@@ -14,7 +14,7 @@ La dirección de staking se deriva de la clave privada maestra de su billetera, 
 
 Puede ver sus fondos apostados buscando la dirección de staking en cualquier explorador de BTC como (Mempool)[https://mempool.space/]. Estamos trabajando activamente para hacer que los activos en stake sean visibles en todas las billeteras compatibles, especialmente a través de versiones de línea de comandos.
 
-### Does Core provide any hardware wallet support for Non-Custodial BTC Staking?
+### ¿Core proporciona algún soporte de billetera de hardware para la participación en BTC sin custodia?
 
 En la actualidad, el staking de BTC sin custodia no admite billeteras de hardware debido a limitaciones técnicas. Sin embargo, estamos constantemente explorando formas de mejorar la compatibilidad con varios tipos de billeteras, priorizando tanto la seguridad como la conveniencia para nuestros usuarios.
 
