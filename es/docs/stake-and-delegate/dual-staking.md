@@ -64,9 +64,9 @@ El CORE apostado y/o el Bitcoin apostado pueden ser distribuidos entre múltiple
 
 3. **Determinación del nivel de rendimiento aumentado para cada (1) Bitcoin apostado**
    - Si la cantidad de CORE apostado < **R<sub>1</sub>**, el usuario está en el nivel **P<sub>BASE</sub>**.
-   - If **R<sub>1</sub>** \=\< staked CORE amount \< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
-   - If **R<sub>2</sub>** \=\< staked CORE amount \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-   - If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
+   - Si **R<sub>1</sub>** \=\< monto CORE apostado \< **R<sub>2</sub>**, el usuario ingresa al nivel **P<sub>Nivel1</ 0>**
+   - Si **R<sub>2</sub>** \=\< monto CORE apostado \< **R<sub>3</sub>**, el usuario ingresa al nivel **P<sub>Nivel2</ 0>**
+   - Si el monto CORE apostado \>= **R<sub>3</sub>**, el usuario ingresa al nivel **P<sub>Level3</sub>** (\*\*P<sub>MAX</sub> \*\*)
 
 :::note
 Las ratios de staking y el número de niveles son configurables y están sujetos a cambios por votación de gobernanza.
@@ -101,7 +101,7 @@ The multiplier on each boosted yield tier is dynamic and subject to change as pe
 :::
 
 :::info
-For your new dual staking tier to take effect, you  may need to follow two steps. This applies to users who already have BTC staked in earlier rounds at 00:00 am UTC and decide to stake additional CORE to move up tiers. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
+Para que su nuevo nivel de doble apuesta entre en vigor, es posible que deba seguir dos pasos. Esto se aplica a los usuarios que ya han apostado BTC en rondas anteriores a las 00:00 a. m. UTC y deciden apostar CORE adicional para subir de nivel. Primero, después de apostar CORE, espere hasta las próximas 00:00 UTC. Luego, reclama todas tus recompensas en cualquier momento después de las 00:00 UTC para restablecer el sistema de cálculo de niveles. Su nuevo nivel se activará tan pronto como complete el reclamo. Ambos pasos son esenciales para garantizar que su nuevo nivel entre en vigencia.
 :::
 
 ## ¿Qué cambia con el doble stake?
