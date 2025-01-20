@@ -6,7 +6,7 @@ sidebar_position: 22
 
 # Reglamento del validador
 
-**Slashing** and **jailing** are the two basic mechanisms Core blockchain uses to disincentivize validator misbehavior, and understanding how they work will go a long way towards making the incentive structure in Core ecosystem more comprehensible.
+**Recortar** y **encarcelar** son los dos mecanismos básicos que utiliza Core blockchain para desincentivar el mal comportamiento de los validadores, y comprender cómo funcionan contribuirá en gran medida a hacer que la estructura de incentivos en el ecosistema Core sea más comprensible.
 
 ## Ataques y encarcelamientos
 
