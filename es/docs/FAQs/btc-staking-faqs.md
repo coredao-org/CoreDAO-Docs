@@ -14,7 +14,7 @@ Core ofrece a los titulares de Bitcoin una oportunidad sin riesgos y transparent
 
 ### 2\. ¿Cómo funciona el Stake de Bitcoin sin custodia?
 
-With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. Para más detalles sobre cómo funciona la Apuesta de Bitcoin sin custodia, consulta [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+Con la participación sin custodia de bitcoins, el protocolo de Core incorpora a los poseedores de bitcoins en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. Para más detalles sobre cómo funciona la Apuesta de Bitcoin sin custodia, consulta [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
 ### 3\. ¿Cuáles son las ventajas de la apuesta de Bitcoin sin custodia?
 
@@ -39,7 +39,7 @@ Delegar Bitcoins para recompensas de participación a través de la Apuesta de B
 
 ### 7\. ¿Cuáles son algunos de los desafíos asociados con los tiempos de bloqueo cortos en Bitcoin?
 
-El timelock CLTV es una característica nativa de la red de Bitcoin. Un usuario puede bloquear cualquier cantidad de Bitcoin por el período de tiempo deseado a través de esta función. Sin embargo, con períodos de bloqueo más cortos (por ejemplo, 10 minutos), debido a la congestión de la red y los tiempos de bloque de la red de Bitcoin, es posible que estas transacciones no se procesen lo suficientemente rápido, lo que genera retrasos en el canje del Bitcoin. Note that for a Bitcoin staking transaction to be valid, the minimum requirements should be met.
+El timelock CLTV es una característica nativa de la red de Bitcoin. Un usuario puede bloquear cualquier cantidad de Bitcoin por el período de tiempo deseado a través de esta función. Sin embargo, con períodos de bloqueo más cortos (por ejemplo, 10 minutos), debido a la congestión de la red y los tiempos de bloque de la red de Bitcoin, es posible que estas transacciones no se procesen lo suficientemente rápido, lo que genera retrasos en el canje del Bitcoin. Tenga en cuenta que para que una transacción de participación de Bitcoin sea válida, se deben cumplir los requisitos mínimos.
 
 ### 8\. ¿Core Chain proporciona algún soporte de billetera de hardware para la participación sin custodia de Bitcoin?
 
@@ -47,7 +47,7 @@ Los usuarios deben cumplir con los siguientes requisitos para que una transacci�
 
 - Los usuarios deben asegurarse de que la transacción se envíe a su dirección.
 - Usando la función nativa de timelock de Bitcoin, especifique la cantidad bloqueada que se destinará al validador en la cadena de bloques Core como la salida de la transacción.
-- **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).
+- **_Existen requisitos mínimos_** para la **cantidad** de BTC que se puede apostar. Los usuarios deben apostar al menos **0,01 Bitcoin** (sin incluir las tarifas de transacción).
 - La transacción también debe contener una salida op\_return especificando
   - La dirección del validador de Core al que el apostador desea delegar su Bitcoin.
   - La dirección a la que el apostador desea que se envíen sus recompensas en tokens CORE.
@@ -74,7 +74,7 @@ Debido a complejidades técnicas, es posible que tu activo apostado no sea visib
 
 ### 13\. ¿Qué hacer si el botón "Canjear BTC" no funciona en el sitio web de apuestas?
 
-[Halborn](https://www.halborn.com/), una firma cumplidora de SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [de confianza de plataformas blockchain líderes](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap, ha auditado exhaustivamente el protocolo de Core y la seguridad de la apuesta de Bitcoin sin custodia. You can review audit reports on Core's protocol and non-custodial Bitcoin staking by leading firms [here](https://docs.coredao.org/docs/Learn/audit).
+[Halborn](https://www.halborn.com/), una firma cumplidora de SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [de confianza de plataformas blockchain líderes](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap, ha auditado exhaustivamente el protocolo de Core y la seguridad de la apuesta de Bitcoin sin custodia. Puede revisar los informes de auditoría sobre el protocolo de Core y la participación sin custodia de Bitcoin por parte de empresas líderes [aquí](https://docs.coredao.org/docs/Learn/audit).
 
 ### 14\. ¿Qué hacer si el botón _`Canjear BTC`_ no funciona en el sitio web de apuestas?
 
