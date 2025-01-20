@@ -44,13 +44,13 @@ Para los nodos Sanpshot en **Core Blockchain Mainnet**, recomendamos las siguien
 | RAM                   | 16 Gigabytes                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-## Core Network Snapshots
+## Instantáneas de la red central
 
 Puede obtener las instantáneas más recientes desde [aquí](https://github.com/coredao-org/core-snapshots).
 
-## Syncing Nodes Using Snapshots on Core Network
+## Sincronización de nodos mediante instantáneas en la red central
 
-On Core network, you can sync your node to the latest state by several ways. En este documento, lo guiamos a través del proceso de sincronización de nodos en la red Core utilizando las instantáneas.
+En la red Core, puede sincronizar su nodo con el estado más reciente de varias maneras. En este documento, lo guiamos a través del proceso de sincronización de nodos en la red Core utilizando las instantáneas.
 
 ### Descargar binarios precompilados
 
