@@ -58,31 +58,31 @@ $$
 
 donde:
 
-- $$rH$$: Rewards attributed to delegated hash power (DPoW).
-- $$rS$$: Rewards attributed to CORE staking (DPoS).
-- $$rB$$: Rewards attributed to BTC staking.
-- $$R$$: Total rewards allocated to all delegators.
-- $$m$$: Proportion of rewards allocated to hash power.
-- $$k$$: Proportion of rewards allocated to CORE staking.
-- $$l$$: Proportion of rewards allocated to BTC staking.
-- $$S$$: Hybrid score of the validator.
+- $$rH$$: Recompensas atribuidas al poder de hash delegado (DPoW).
+- $$rS$$: Recompensas atribuidas a la participación CORE (DPoS).
+- $$rB$$: Recompensas atribuidas a la apuesta de BTC.
+- $$R$$: Recompensas totales asignadas a todos los delegados.
+- $$m$$: Proporción de recompensas asignadas al poder hash.
+- $$m$$: Proporción de recompensas asignadas al poder hash.
+- $$l$$: Proporción de recompensas asignadas a la apuesta de BTC.
+- $$S$$: Puntuación híbrida del validador.
 
-Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
+Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad apostada de poder hash, CORE o BTC:
 
-- Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
-- Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
-- Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- Recompensa de poder hash por unidad: $$rHu$$ = $$\frac{rH}{rHp}$$
+- Recompensa CORE por unidad: rSu = $$\frac{rS}{rSp}$$
+- Recompensa BTC por unidad: $$rBu$$ de **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x multiplicador de rendimiento para el nivel<sub>n</sub>
 
 Donde:
 
-- $$rHu$$ is the validator hash power rewards per unit;
-- $$rSu$$ is the CORE token staking rewards per unit;
-- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+- $$rHu$$ son las recompensas del poder hash del validador por unidad;
+- $$rSu$$ son las recompensas de apuesta de tokens CORE por unidad;
+- $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
+- **Multiplicadores de rendimiento:** Cada nivel de rendimiento aumentado tiene un multiplicador específico (e,f,g,h, ..., etc.) que está determinado por los datos de apuesta del usuario, así como por la configuración de apuesta dual del sistema. Las configuraciones están sujetas a cambios y se pueden configurar mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
 
-#### Impact of Dual Staking on BTC Rewards
+#### Impacto de la doble apuesta en las recompensas BTC
 
-With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
+Con la introducción del Dual Stake, las recompensas de BTC ahora se escalonan según la cantidad de CORE apostado en relación con BTC. Las recompensas BTC ya no se distribuyen uniformemente entre todos los participantes. En cambio, se asignan dinámicamente en función de umbrales de apuesta dual, y los niveles más altos generalmente reciben una mayor proporción de las recompensas. Esta estructura escalonada introduce variabilidad en los rendimientos de las apuestas de BTC, alineando los incentivos en todo el ecosistema Core y manteniendo la proporcionalidad en la distribución de recompensas.
 
 ## División de recompensa
 
@@ -92,7 +92,7 @@ Estas funciones de división de recompensas están diseñadas para crear un merc
 
 En el ecosistema Core, las recompensas base se calculan y distribuyen cuando se extrae el último bloque de una ronda, con **90%** para los validadores y **10%** para el contrato de recompensas del sistema. El Contrato de Recompensa del Sistema acumula recompensas para remunerar a los retransmisores y verificadores. Tal como están las cosas, hay un límite de **10 millones** de tokens CORE en total en el contrato de recompensa del sistema. Cualquier recompensa que supere esta cantidad se quema.
 
-Relayers are responsible for communicating the Bitcoin blocks and transaction data to the Core network. Obtienen una parte de las recompensas del sistema base y las tarifas de transacción por este trabajo de comunicaciones entre cadenas. Las recompensas del repetidor se distribuyen en lotes, cada 100 bloques de Bitcoin. Los retransmisores reclaman sus recompensas periódicamente.
+Los retransmisores son responsables de comunicar los bloques de Bitcoin y los datos de las transacciones a la red Core. Obtienen una parte de las recompensas del sistema base y las tarifas de transacción por este trabajo de comunicaciones entre cadenas. Las recompensas del repetidor se distribuyen en lotes, cada 100 bloques de Bitcoin. Los retransmisores reclaman sus recompensas periódicamente.
 
 Los verificadores en el ecosistema central son responsables de monitorear el comportamiento de los validadores e informarles si participan en doble firma u otra actividad maliciosa. Cuando tiene éxito, las recompensas se pagan inmediatamente desde el Contrato de recompensas del sistema, en la misma transacción.
 
