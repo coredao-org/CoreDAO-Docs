@@ -14,7 +14,7 @@ Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparen
 
 ### 2\. Comment Fonctionne le Staking de Bitcoin Non-Custodial ?
 
-With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les détenteurs de Bitcoin à son mécanisme de consensus, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
 
 ### 3\. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
@@ -39,7 +39,7 @@ Déléguer des bitcoins pour des récompenses de staking via le staking de Bitco
 
 ### 7\. Quels sont les défis associés aux courts délais de verrouillage sur Bitcoin ?
 
-Le timelock CLTV est une fonctionnalité native du réseau Bitcoin. Un utilisateur peut verrouiller n'importe quel montant de bitcoins pour la période désirée grâce à cette fonctionnalité. Cependant, avec des périodes de verrouillage plus courtes (par exemple, 10 minutes) en raison des congestions du réseau et des temps de bloc du réseau Bitcoin, ces transactions peuvent ne pas être traitées assez rapidement, entraînant des retards dans le rachat du Bitcoin. Note that for a Bitcoin staking transaction to be valid, the minimum requirements should be met.
+Le timelock CLTV est une fonctionnalité native du réseau Bitcoin. Un utilisateur peut verrouiller n'importe quel montant de bitcoins pour la période désirée grâce à cette fonctionnalité. Cependant, avec des périodes de verrouillage plus courtes (par exemple, 10 minutes) en raison des congestions du réseau et des temps de bloc du réseau Bitcoin, ces transactions peuvent ne pas être traitées assez rapidement, entraînant des retards dans le rachat du Bitcoin. Notez que pour qu’une transaction de staking de Bitcoin soit valide, les exigences minimales doivent être respectées.
 
 ### 8\. Y a-t-il des exigences spécifiques pour participer au Staking de Bitcoin Non-Custodial ?
 
@@ -47,7 +47,7 @@ Les utilisateurs doivent se conformer aux exigences suivantes pour qu'une transa
 
 - Les utilisateurs doivent s'assurer que la transaction est envoyée à leur propre adresse.
 - En utilisant la fonctionnalité native de timelock de Bitcoin, spécifiez le montant à verrouiller destiné à être délégué au validateur sur la blockchain Core comme sortie de la transaction.
-- **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).
+- **_Des exigences minimales existent_** pour le **montant** de BTC pouvant être mis en staking. Les utilisateurs doivent staker au moins **0,01 Bitcoin** (hors frais de transaction).
 - La transaction doit également contenir une sortie op\_return spécifiant
   - L'adresse du validateur Core auquel le staker souhaite déléguer son Bitcoin.
   - L'adresse à laquelle le staker souhaite que ses récompenses en tokens CORE soient envoyées.
@@ -74,7 +74,7 @@ En raison de complexités techniques, il est possible que votre actif staké ne 
 
 ### 13\. Comment la sécurité du staking de Bitcoin non-custodial est-elle assurée ?
 
-[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du staking de Bitcoin non-custodial. You can review audit reports on Core's protocol and non-custodial Bitcoin staking by leading firms [here](https://docs.coredao.org/docs/Learn/audit).
+[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du staking de Bitcoin non-custodial. Vous pouvez consulter les rapports d'audit sur le protocole de Core et le staking de Bitcoin non-custodial par des entreprises leaders [ici](https://docs.coredao.org/docs/Learn/audit).
 
 ### 14\. Que devriez-vous faire si le bouton _`Redeem BTC`_ ne fonctionne pas sur le site de staking ?
 
