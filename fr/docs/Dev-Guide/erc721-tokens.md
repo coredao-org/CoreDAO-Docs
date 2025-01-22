@@ -2,7 +2,7 @@
 sidebar_label: Tokens ERC-721
 hide_table_of_contents: false
 sidebar_position: 2
-description: ERC-721 on Core
+description: ERC-721 sur Core
 ---
 
 # Tokens ERC721
