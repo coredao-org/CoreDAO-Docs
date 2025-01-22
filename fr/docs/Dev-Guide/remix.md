@@ -2,7 +2,7 @@
 sidebar_label: Utilisation de Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core using the Remix IDE
+description: Déployer des contrats sur Core en utilisant l'IDE Remix
 ---
 
 # Utilisation de Remix
@@ -23,7 +23,7 @@ Dans l'image ci-dessous, vous pouvez choisir différentes versions du compilateu
 
 Vous pouvez choisir différents environnements sur Remix, comme illustré dans l'image ci-dessous. Un environnement est simplement le réseau blockchain avec lequel vous allez travailler. Il existe des machines virtuelles (VMs) intégrées, ainsi que des fournisseurs qui vous permettent de vous connecter à des VMs externes.
 
-Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-testnet-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based ont eh Core testnet your are connectede to. Refer [here](https://scan.test.btcs.network/faucet) for Core Testnet (1115) and [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114).
+Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask`. Assurez-vous que votre portefeuille MetaMask est [configuré pour le Testnet de Core](./core-testnet-wallet-config.md) en utilisant les paramètres de la chaîne Testnet, et vérifiez que votre compte est approvisionné via le faucet correspondant au Core Testnet auquel vous êtes connecté. Reportez vous [ici](https://scan.test.btcs.network/faucet) pour le Core Testnet (1115) et [ici](https://scan.test2.btcs.network/faucet) pour le Core Testnet (1114).
 
 ![remix-ide](../../static/img/remix/remix-3.avif)
 
@@ -33,7 +33,7 @@ Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix a
 
 ## Compilation et déploiement du contrat intelligent
 
-- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
+- **Assurez-vous que votre contrat intelligent suit les [directives de support de Solidity pour Core Blockchain](./smart-contract-guidelines.md)**.
 
 - Remix propose plusieurs contrats prédéfinis chargés par défaut dans l'espace de travail, comme illustré ci-dessous. Pour ce tutoriel, utilisons le contrat préchargé `1_Storage.sol`. Ce contrat implémente une simple base de données qui nous permet de stocker un nombre via la fonction `store()` et de le consulter via la fonction `retrieve()`.
 
