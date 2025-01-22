@@ -1,10 +1,10 @@
 ---
-sidebar_label: Core Mainnet
+sidebar_label: Mainnet de Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Mainnet
+# Se connecter au Mainnet Core
 
 ---
 
