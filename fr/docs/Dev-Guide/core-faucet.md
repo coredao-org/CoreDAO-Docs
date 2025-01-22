@@ -24,7 +24,7 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 
 ![using-faucet-test2](../../static/img/faucet/faucet-test2.png)
 
-5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. After successfully requesting tCORE2 from the faucet, you'll see your wallet's balance increase.
+5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
 ![using-faucet](../../static/img/faucet/faucet.png)
 
