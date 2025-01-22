@@ -8,9 +8,9 @@ sidebar_position: 2
 
 ---
 
-### 1. Where can I find the codebase for Core blockchain?
+### 1. Où puis-je trouver le code source de Core ?
 
-Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. You can find Core blockchain’s codebase and other developer tools on the [official GitHub account of Core](https://github.com/coredao-org).
+La Fondation Core encourage le développement de projets open source et, par conséquent, tous les dépôts de code de Core sont accessibles à la communauté. Vous pouvez trouver le code source de Core blockchain et d'autres outils pour développeurs sur le [compte GitHub officiel de Core](https://github.com/coredao-org).
 
 ### 2. Quels sont les canaux de communication officiels de Core Chain ?
 
@@ -24,7 +24,7 @@ Core Foundation advocates open source project building and hence all of Core's c
 
 ### 3. Quelles dApps sont déployées sur le réseau Core ?
 
-Core is designed to cater to builders, offering a robust platform where various decentralized applications (dApps) can be deployed and flourish. Soutenant une large gamme de dApps, l'écosystème Core est spécifiquement structuré pour encourager le développement et l'innovation, en faisant un environnement favorable pour les créateurs cherchant à déployer des applications à la pointe de la technologie dans l'espace blockchain. Pour plus de détails, explorez notre [écosystème](https://coredao.org/explore/ecosystem) pour découvrir qui construit quoi.
+Core est conçu pour les créateurs, offrant une plateforme robuste où les diverses applications décentralisées (dApps) peuvent être déployées et prospérer. Soutenant une large gamme de dApps, l'écosystème Core est spécifiquement structuré pour encourager le développement et l'innovation, en faisant un environnement favorable pour les créateurs cherchant à déployer des applications à la pointe de la technologie dans l'espace blockchain. Pour plus de détails, explorez notre [écosystème](https://coredao.org/explore/ecosystem) pour découvrir qui construit quoi.
 
 ### 4. Comment connecter MetaMask au réseau Core ?
 
