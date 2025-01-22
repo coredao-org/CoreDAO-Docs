@@ -12,9 +12,9 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 
 ## Points de terminaison RPC pour la blockchain Core
 
-### Core Blockchain Testnet (1114 (0x45a))
+### Testnet de la blockchain Core (1114 (0x45a))
 
-_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+_Remarque : Il s’agit du testnet le plus récent et son utilisation est fortement recommandée. La version précédente sera progressivement dépréciée puis retirée, il est donc essentiel de migrer vers ce nouveau testnet pour continuer à bénéficier d’un support actif et accéder aux dernières fonctionnalités._
 
 - https://rpc.test2.btcs.network
 
