@@ -8,18 +8,18 @@ sidebar_position: 2
 
 ---
 
-### 1. What are the different types of nodes supported supported on the Core blockchain?
+### 1. Quels sont les différents types de nœuds pris en charge par la blockchain Core ?
 
 Sur le réseau Core, un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
 
-- **Normal full node:** for private use.
-- **Validator full node:** acts as a validator on Core, validating blocks and transactions.
-- **RPC full node:** provides RPC services and responds to HTTP requests.
+- **Nœud complet normal :** pour un usage privé.
+- **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
+- **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
 En plus de cela, Core prend également en charge :
 
-- **Archive node:** stores the entire blockchain data of Core from the genesis block.
-- **Snapshot nodes:** stores snapshots for helping other nodes fast-track syncing to the network.
+- **Nœud archive :** stocke toutes les données de la blockchain Core depuis le bloc de genèse.
+- **Nœuds de snapshot :** stockent des instantanés pour aider d'autres nœuds à synchroniser rapidement le réseau.
 
 ### 2. Quels sont les avantages de gérer un nœud Core ?
 
@@ -109,6 +109,6 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 
 Pour plus de détails, consultez le [Guide de configuration des nœuds validateurs](../Node/config/validator-node-config.md)
 
-### 6. How do I set up a full node on Core blockchain?
+### 6. Comment configurer un nœud complet sur la blockchain Core ?
 
-Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
+Consultez le guide détaillé [ici](../Node/Full-Node/on-mainnet.md) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.
