@@ -20,7 +20,7 @@ La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillag
 - La transaction doit également contenir une sortie `op_return` spécifiant
   - L'adresse du Validateur Core auquel le staker souhaite déléguer son Bitcoin.
   - L'adresse à laquelle le staker souhaite que ses récompenses en tokens CORE soient envoyées.
-- To make staking eligible on Core, _minimal requirements exist_ for the **amount** of BTC that can be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
+- Pour que le staking soit éligible sur Core, des _exigences minimales existent_ pour le **montant** de BTC pouvant être staké. Les utilisateurs doivent staker au moins **0,01 Bitcoin** (moins les frais de transaction).
 
 ### Déroulement des transactions
 
@@ -80,7 +80,7 @@ Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelqu
 - Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` Le montant et la durée du Bitcoin verrouillé dans cette sortie seront utilisés pour le calcul de l'élection des validateurs et la distribution des récompenses sur Core.
 
 :::note
-Minimum requirements exist on the amount of BTC that can be staked to be eligible for Non-Csutodial BTC Staking on Core. A user should stake at least **0.01 Bitcoin** (exclusive of transaction fees).
+Des exigences minimales s’appliquent au montant de BTC pouvant être staké pour être éligible au staking BTC non-custodial sur Core. Un utilisateur doit staker au moins **0,01 Bitcoin** (hors frais de transaction).
 :::
 
 ## Sortie OP_RETURN
