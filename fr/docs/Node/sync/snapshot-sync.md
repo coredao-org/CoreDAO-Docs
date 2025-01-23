@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-On the Core network, you can sync your node to the latest state of the Core blockchain by several ways. Ce document vous guide à travers le processus de synchronisation des nœuds sur le réseau Core.
+Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état le plus récent de la blockchain Core de plusieurs manières. Ce document vous guide à travers le processus de synchronisation des nœuds sur le réseau Core.
 
 ## Synchronisation à partir d'un snapshot (recommandé)
 
