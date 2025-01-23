@@ -146,7 +146,7 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
   - Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
 - Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et à nouveau disponible pour le rachat ou la redélégation.
   - Sélectionnez à l'intérieur de la boîte de temps de verrouillage pour entrer des valeurs, ou cliquez sur l'icône du calendrier pour sélectionner la date et cliquez sur ’OK’ pour continuer.
-  - The default lock time is set to a month in advance.
+  - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
 
 <p align="center">
