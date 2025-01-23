@@ -4,13 +4,13 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validator Election Process on the Core Network
+# Processus d'Élection des Validateurs sur le Réseau Core
 
 ---
 
 ## Aperçu
 
-Les validateurs sont une partie cruciale du réseau Core. En plus de valider les transactions et produire des blocs, le processus d’élection des validateurs est l’endroit où tous les composants (DPoW, DPoS, et le staking non-custodial de Bitcoin) du consensus Satoshi Plus se réunissent. The Validator election process is a central feature of the Satoshi Plus consensus mechanism employed by Core blockchain. Ce processus garantit l’intégrité, la sécurité et l’efficacité de la blockchain en élisant les validateurs responsables de la validation des transactions et de la création de nouveaux blocs.
+Les validateurs sont une partie cruciale du réseau Core. En plus de valider les transactions et produire des blocs, le processus d’élection des validateurs est l’endroit où tous les composants (DPoW, DPoS, et le staking non-custodial de Bitcoin) du consensus Satoshi Plus se réunissent. Le processus d'élection des validateurs est une caractéristique centrale du mécanisme de consensus Satoshi Plus utilisé par la blockchain Core. Ce processus garantit l’intégrité, la sécurité et l’efficacité de la blockchain en élisant les validateurs responsables de la validation des transactions et de la création de nouveaux blocs.
 
 ## Importance de l'Élection des Validateurs
 
@@ -30,7 +30,7 @@ Le processus d'élection des validateurs dans Satoshi Plus implique des étapes 
    - Les détenteurs de tokens CORE et BTC stakent et délèguent leurs tokens aux candidats validateurs. Cette délégation est une forme de vote, où le poids de chaque vote correspond au nombre de tokens stakés.
 
 2. **Délégation de la Puissance de Hachage**:
-   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. This process integrates Bitcoin's mining power into Core's security mechanism.
+   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. Ce processus intègre la puissance de minage du Bitcoin dans le mécanisme de sécurité de Core.
 
 3. **Sélection des Validateurs**:
    - Les validateurs sont sélectionnés en fonction du soutien total qu'ils reçoivent, calculé en combinant les tokens stakés (BTC et CORE) et la puissance de hachage de Bitcoin déléguée.
@@ -44,26 +44,26 @@ $$
  S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
 $$
 
-Where, $$m + k + l = 1$$
+Où, $$m + k + l = 1$$
 
-- $$rHp$$: Bitcoin hash power delegated to a validator.
-- $$tHp$$: Total hash power on Core.
-- $$rSp$$: Amount of CORE tokens staked to a validator.
-- $$tSp$$: Total CORE tokens staked on Core.
-- $$rBp$$: Amount of BTC tokens staked to a validator.
-- $$tBp$$: Total BTC tokens staked on Core.
-- $$m$$: Ratio assigned to hash power.
-- $$k$$: Ratio assigned to CORE staking.
-- $$l$$: Ratio assigned to BTC staking.
+- $$rHp$$: Puissance de hachage Bitcoin déléguée à un validateur.
+- $$tHp$$: Puissance de hachage totale sur Core.
+- $$rSp$$: Montant de tokens CORE stakés auprès d’un validateur.
+- $$tSp$$: Montant total de tokens CORE stakés sur Core.
+- $$rBp$$: Montant de tokens BTC stakés auprès d’un validateur.
+- $$tBp$$: Montant total de tokens BTC stakés sur Core.
+- $$m$$: Ratio attribué à la puissance de hachage.
+- $$k$$: Ratio attribué au staking de CORE.
+- $$l$$: Ratio attribué au staking de BTC.
 
 2. At the end of each round validators are ranked in order of their hybrid score, and the _27_\* validators with the highest hybrid scores are selected for the validator set in the next round.
 
-En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Bitcoin miners can vote for validators through their PoW (by writing validator information into the coinbase transaction on blocks they’ve already mined), CORE token holders can vote for a validator with their PoS (by delegating their tokens to it), and non-custodial bitcoin stakers can vote for a validator through the delegation of their tokens. This delegated PoW, delegated PoS, and Non-Custodial BTC Staking are weighted to determine the hybrid score.
+En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Les mineurs de Bitcoin peuvent voter pour des validateurs via leur PoW (en inscrivant les informations des validateurs dans la transaction coinbase des blocs qu'ils ont déjà minés), les détenteurs de tokens CORE peuvent voter pour un validateur avec leur PoS (en leur déléguant leurs tokens), et les stakers non-custodial de bitcoin peuvent voter pour un validateurvia la délégation de leurs tokens. Ce mécanisme combinant PoW délégué , PoS délégué et staking de BTC non-custodial permet d’attribuer un score hybride à chaque validateur.
 
-C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que la scalabilité et la composition des chaînes PoS comme Ethereum. Letting Bitcoin miners and bitcoin stakers vote on validators allows Core to avail itself of Bitcoin’s legendary robustness; and because Core is EVM compatible, it’s possible to build smart contracts, dApps, and other applications on Core that couldn’t be done without changes to the underlying Bitcoin protocol.
+C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que la scalabilité et la composition des chaînes PoS comme Ethereum. Permettre aux mineurs de Bitcoin et aux stakers de bitcoin de voter pour les validateurs permet à Core de bénéficier de la robustesse légendaire de Bitcoin. De plus, comme Core est compatible avec l'EVM, il est possible de construire des contrats intelligents, des dApps et d'autres applications sur Core sans avoir à modifier le protocole Bitcoin sous-jacent.
 
 5. **Production de Blocs**:
-   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. By _initially limiting the number of validators to **21**_, Satoshi Plus offers a higher transaction rate and increased scalability, but the number of validators is expected to increase to **34 validators by Q2 2025**. In Q2 2024, Core has already expanded its active validator set from **21** to **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core is secure as long as no more than $1 \over 3$ of the validators are malicious.
+   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **21**_, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente à **34 validateurs Q2 2025**. Au deuxième trimestre 2024, Core a déjà élargi son ensemble de validateurs actifs de **21** à **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
 
 6. **Distribution des Récompenses**:
    - Les récompenses sont distribuées en fonction des contributions à la sécurité du réseau, en utilisant la formule suivante :
@@ -82,31 +82,31 @@ C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau expl
 
      Où:
 
-     - $$rH$$: Rewards attributed to delegated hash power (DPoW).
-     - $$rS$$: Rewards attributed to CORE staking (DPoS).
-     - $$rB$$: Rewards attributed to BTC staking.
-     - $$R$$: Total rewards allocated to all delegators.
-     - $$m$$: Proportion of rewards allocated to hash power.
-     - $$k$$: Proportion of rewards allocated to CORE staking.
-     - $$l$$: Proportion of rewards allocated to BTC staking.
-     - $$S$$: Hybrid score of the validator.
+     - $$rH$$: Récompenses attribuées à la puissance de hachage déléguée (DPoW).
+     - $$rS$$: Récompenses attribuées au staking de CORE (DPoS).
+     - $$rB$$: Récompenses attribuées au staking de BTC.
+     - $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
+     - $$m$$: Proportion des récompenses allouées à la puissance de hachage.
+     - $$k$$: Proportion des récompenses allouées au staking de CORE.
+     - $$l$$: Proportion des récompenses allouées au staking de BTC.
+     - $$S$$: Score hybride du validateur.
 
-     Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
+     Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-     - Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
-     - Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
-     - Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+     - Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
+     - Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
+     - Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
 
      Où:
 
-     - $$rHu$$ is the validator hash power rewards per unit;
-     - $$rSu$$ is the CORE token staking rewards per unit;
-     - $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
-     - **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+     - $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
+     - $$rSu$$ est la récompense de staking de tokens CORE par unité ;
+     - $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
+     - **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e,f,g,h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Ces paramètres peuvent être ajustés et sont soumis à un processus de gouvernance. Ces calculs assurent une distribution proportionnelle des récompenses, en fonction de la contribution de chaque participant au pool de délégation d’un validateur.
 
-#### Impact of Dual Staking on BTC Rewards
+#### Impact du Dual Staking sur les récompenses BTC
 
-With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
+Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont désormais réparties par paliers, en fonction du montant de CORE staké par rapport à la quantité de BTC. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses. Cette structure de paliers introduit une variabilité dans les rendements de staking BTC, aligne les intérêts au sein de l’écosystème Core et maintient une distribution proportionnelle des récompenses.
 
 ### Diagramme de Flux du Processus d'Élection des Validateurs
 
