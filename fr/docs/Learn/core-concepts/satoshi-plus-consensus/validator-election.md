@@ -26,19 +26,19 @@ Les validateurs jouent un rôle crucial dans la production des blocs et la valid
    - Le score hybride de chaque validateur est calculé en fonction de la puissance de hachage déléguée par les mineurs de Bitcoin, du montant de tokens CORE stakés et du montant de Bitcoin staké.
    - La formule équilibre ces trois composants pour produire un score qui reflète le soutien global et la fiabilité du validateur.
 
-3. **Election of Validators:**
+3. **Élection des validateurs :**
    - Chaque tour, qui dure une journée, les validateurs ayant les meilleurs scores hybrides sont élus dans l'ensemble des validateurs.
    - Les 27 validateurs ayant les meilleurs scores sont choisis pour faire partie de l'ensemble des validateurs actifs pour ce tour.
 
-4. **Validator Responsibilities:**
+4. **Responsabilités des validateurs :**
    - Les validateurs élus sont responsables de produire des blocs et de valider des transactions tout au long du tour.
    - Ils travaillent à tour de rôle, chacun leur tour pour produire des blocs à chaque créneau, avec chaque créneau durant trois secondes.
 
-5. **Updating the Validator Set:**
+5. **Mise à jour de l'ensemble des validateurs :**
    - L'ensemble des validateurs est mis à jour tous les 200 blocs pour assurer stabilité et performance. Si un validateur est emprisonné ou pénalisé, les autres continuent de produire des blocs sans interruption.
    - À la fin de chaque cycle, les récompenses accumulées sont calculées et distribuées, et un nouvel ensemble de validateurs est déterminé en fonction des scores hybrides mis à jour.
 
-6. **Rewards Distribution:**
+6. **Distribution des Récompenses :**
    - Les validateurs et leurs délégateurs gagnent des récompenses en tokens CORE en fonction de leurs performances et des ressources qui leur ont été déléguées.
    - Ces récompenses incitent à une participation continue et à une performance assidue des validateurs.
 
@@ -59,17 +59,17 @@ $$
  S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
 $$
 
-Where, $$m + k + l = 1$$
+Où, $$m + k + l = 1$$
 
-- $$rHp$$: Bitcoin hash power delegated to a validator.
-- $$tHp$$: Total hash power on Core.
-- $$rSp$$: Amount of CORE tokens staked to a validator.
-- $$tSp$$: Total CORE tokens staked on Core.
-- $$rBp$$: Amount of BTC tokens staked to a validator.
-- $$tBp$$: Total BTC tokens staked on Core.
-- $$m$$: Ratio assigned to hash power.
-- $$k$$: Ratio assigned to CORE staking.
-- $$l$$: Ratio assigned to BTC staking.
+- $$rHp$$: Puissance de hachage Bitcoin déléguée à un validateur.
+- $$tHp$$: Puissance de hachage totale sur Core.
+- $$rSp$$: Montant de tokens CORE stakés auprès d’un validateur.
+- $$tSp$$: Montant total de tokens CORE stakés sur Core.
+- $$rBp$$: Montant de tokens BTC stakés auprès d’un validateur.
+- $$tBp$$: Montant total de tokens BTC stakés sur Core.
+- $$m$$: Ratio attribué à la puissance de hachage.
+- $$k$$: Ratio attribué au staking de CORE.
+- $$l$$: Ratio attribué au staking de BTC.
 
 4. **Production de Blocs :**
    - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. Le nombre actuel de validateurs est de **27**, avec un nombre prévu d'augmenter au fur et à mesure que le réseau se développe. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
@@ -95,11 +95,11 @@ Where, $$m + k + l = 1$$
      - $rH$ sont les récompenses reçues par le validateur en raison de la puissance de hachage déléguée à celui-ci (DPoW)
      - $rS$ sont les récompenses reçues par le validateur en raison des tokens CORE délégués à celui-ci (DPoS)
      - $rB$ sont les récompenses attribuées au staking de Bitcoin
-     - $$R$$: Total rewards allocated to all delegators of the validaotr.
-     - $$m$$: Proportion of rewards allocated to hash power.
-     - $$k$$: Proportion of rewards allocated to CORE staking.
-     - $$l$$: Proportion of rewards allocated to BTC staking.
-     - $$S$$: Hybrid score of the validator.
+     - $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
+     - $$m$$: Proportion des récompenses allouées à la puissance de hachage.
+     - $$k$$: Proportion des récompenses allouées au staking de CORE.
+     - $$l$$: Proportion des récompenses allouées au staking de BTC.
+     - $$S$$: Score hybride du validateur.
 
      Pour compléter, voici trois autres ratios d'intérêt:
 
@@ -111,24 +111,24 @@ Where, $$m + k + l = 1$$
         rSu = \frac{rS}{rSp}
      $$
 
-   As for BTC staking, the rewards per unit are further subdivided based on the delegators’ dual staking yield tiers. Assuming that there are 4 boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>MAX</sub>) with dual staking yield multipliers (e, f, g, and h). The reward per unit for BTC staking will be calculated as follows
+   En ce qui concerne le staking de BTC, les récompenses par unité sont subdivisées en fonction des paliers de rendement liés au dual staking. Supposons qu’il existe 4 niveaux de rendement optimisé : (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, et P<sub>MAX</sub>), avec des multiplicateurs de rendement respectifs (e, f, g et h). La récompense par unité pour le staking de BTC se calcule ainsi 
 
-   - Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp} * $$ Yield Multiplier for Level<sub>n</sub>
-     - $$rBu$$ of P<sub>BASE</sub>  = $$\frac{rB}{rBp} * e$$
-     - $$rBu$$ of P<sub>1</sub>  = $$\frac{rB}{rBp} * f$$
-     - $$rBu$$ of P<sub>2</sub>  = $$\frac{rB}{rBp} * g$$
-     - $$rBu$$ of P<sub>Max</sub>  = $$\frac{rB}{rBp} * h$$
+   - Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp} * $$ Multiplicateur de rendement pour le Niveau<sub>n</sub>
+     - $$rBu$$ de P<sub>BASE</sub>  = $$\frac{rB}{rBp} * e$$
+     - $$rBu$$ de P<sub>1</sub>  = $$\frac{rB}{rBp} * f$$
+     - $$rBu$$ de P<sub>2</sub>  = $$\frac{rB}{rBp} * g$$
+     - $$rBu$$ de P<sub>Max</sub>  = $$\frac{rB}{rBp} * h$$
 
    Où:
 
    - $rHu$ est la récompense de la puissance de hachage par unité;
    - $rSu$ est la récompense de staking de tokens CORE par unité;
    - $rBu$ = récompense de staking de Bitcoin par unité;
-   - $rBu$ of P<sub>BASE</sub> is the BTC staking rewards per unit for P<sub>BASE</sub> delegator
-   - $rBu$ of P<sub>Level<sub>1</sub></sub> is the BTC staking rewards per unit for P<sub>Level1</sub> delegator
-   - $rBu$ of P<sub>Level<sub>2</sub></sub> is the BTC staking rewards per unit for P<sub>Level2</sub> delegator
-   - $rBu$ of P<sub>MAX</sub> is the BTC staking rewards per unit for P<sub>MAX</sub> delegator;
-   - **Yield Multipliers:** Each reward tier has a specific multiplier (e,f,g,h, ..., etc) that is multiplied to rewards earned per unit of BTC staked.
+   - $rBu$ de P<sub>BASE</sub> est la récompense de staking BTC par unité pour un délégateur au niveau P<sub>BASE</sub>
+   - $rBu$ de P<sub>Level<sub>1</sub></sub> est la récompense de staking BTC par unité pour un délégateur au niveau P<sub>Level1</sub>
+   - $rBu$ de P<sub>Level<sub>2</sub></sub> est la récompense de staking BTC par unité pour un délégateur au niveau P<sub>Level2</sub>
+   - $rBu$ de P<sub>MAX</sub> est la récompense de staking BTC par unité pour un délégateur au niveau P<sub>MAX</sub>;
+   - **Multiplicateurs de rendement :** Chaque palier de récompense dispose d’un multiplicateur spécifique (e,f,g,h, ..., etc) qui s’applique aux récompenses gagnées par unité de BTC staké.
 
 Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (Bitcoin et CORE).
 
