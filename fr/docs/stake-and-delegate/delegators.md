@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegations in the Core Ecosystem
+# Délégations dans l'écosystème Core
 
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 2
 
 Dans le cadre de la blockchain Core, la délégation est un mécanisme fondamental permettant aux mineurs de BTC ainsi qu'aux détenteurs de tokens BTC et CORE de participer activement à la sécurité et à la gouvernance du réseau sans devenir eux-mêmes validateurs. Ce processus permet aux délégateurs de confier leur pouvoir de vote et d'opération à des validateurs, qui utilisent ensuite les ressources déléguées (puissance de hachage BTC, BTC et CORE) pour participer au processus de consensus et aux décisions de gouvernance du réseau.
 
-## Types of Delegation on the Core Blockchain
+## Types de Délégation sur la blockchain Core
 
 1. **Délégation de BTC/CORE aux Validateurs :**
 
@@ -23,24 +23,24 @@ Dans le cadre de la blockchain Core, la délégation est un mécanisme fondament
 
 2. **Délégation de la Puissance de Hachage par les Mineurs de BTC :**
 
-   - **But :** Les mineurs de Bitcoin peuvent déléguer une partie de leur puissance de calcul aux validateurs sur le réseau Core. This unique form of delegation leverages the security and work already being done on the Bitcoin network to enhance the security of the Core.
-   - **Process:** Miners include specific metadata in the Bitcoin blocks they mine, indicating their support for a Core validator, thereby linking the security of both networks.
+   - **But :** Les mineurs de Bitcoin peuvent déléguer une partie de leur puissance de calcul aux validateurs sur le réseau Core. Cette forme unique de délégation utilise la sécurité et le travail effectués sur le réseau Bitcoin pour renforcer la sécurité de Core.
+   - **Processus :** Les mineurs incluent des métadonnées spécifiques dans les blocs Bitcoin qu'ils minent, indiquant leur soutien à un validateur de Core, reliant ainsi la sécurité des deux réseaux.
    - **Comment déléguer du Hash :** Core permet aux mineurs de BTC de déléguer leur puissance de hachage aux validateurs sur Core, leur permettant de gagner des récompenses de staking de l'écosystème Core sous forme de tokens CORE supplémentaires. Pour plus de détails, consultez le guide détaillé sur la [façon de déléguer la puissance de hachage aux validateurs Core](./delegating-hash.md).
 
-## Importance of Delegations on the Core Blockchain
+## Importance des Délégations sur la blockchain Core
 
-1. **Enhanced Network Security:** By allowing a broad base of token holders to delegate their assets (BTC and CORE) to validators, Core ensures that the responsibility and power of maintaining the network are distributed among many participants, thereby avoiding centralization and increasing security.
+1. **Renforcement de la Sécurité du Réseau :** En permettant à une large base de détenteurs de tokens de déléguer leurs actifs (BTC et CORE) aux validateurs, Core garantit que la responsabilité et le pouvoir de maintien du réseau sont répartis entre de nombreux participants, évitant ainsi la centralisation et augmentant la sécurité.
 
-2. **Democratization of the Network:** Delegation democratizes access to the decision-making processes within Core, allowing anyone holding BTC or CORE tokens, regardless of the amount, to participate in governance and consensus. Cette approche inclusive favorise une structure de gouvernance diversifiée et robuste.
+2. **Démocratisation du Réseau :** La délégation démocratise l'accès aux processus décisionnels au sein de Core, permettant à quiconque détenant des tokens BTC ou CORE, quel que soit le montant, de participer à la gouvernance et au consensus. Cette approche inclusive favorise une structure de gouvernance diversifiée et robuste.
 
 3. **Incitations et Participation :** La délégation aligne les intérêts des validateurs et des détenteurs de tokens BTC/CORE. Les validateurs sont motivés à agir dans le meilleur intérêt du réseau pour maintenir leur réputation et continuer à recevoir des tokens délégués, tandis que les délégateurs bénéficient des récompenses générées par les activités de leurs validateurs.
 
-4. **Évolutivité du Processus de Consensus :** La délégation permet au réseau de gérer plus de transactions et d'accueillir plus de participants sans que chacun ait besoin de faire fonctionner un nœud complet. This scalability is crucial for maintaining high performance as the Core ecosystem grows.
+4. **Évolutivité du Processus de Consensus :** La délégation permet au réseau de gérer plus de transactions et d'accueillir plus de participants sans que chacun ait besoin de faire fonctionner un nœud complet. Cette évolutivité est essentielle pour maintenir des performances élevées à mesure que l'écosystème Core se développe.
 
 5. **Faciliter la Flexibilité du Staking :** La délégation offre aux détenteurs de tokens la flexibilité de contribuer à la sécurité du réseau sans avoir à maintenir l'infrastructure nécessaire pour faire fonctionner un nœud de validation complet, réduisant ainsi les barrières à la participation.
 
-6. **Facilitation of Liquid Democracy:** Delegation in Core facilitates a form of liquid democracy, where token holders can directly choose their representatives (validators) in the consensus process or can change their delegation based on performance and trust metrics. Ce modèle de gouvernance fluide s'adapte rapidement aux changements et reflète le sentiment actuel de la communauté.
+6. **Faciliter la Démocratie Liquide :** La délégation dans Core facilite une forme de démocratie liquide, où les détenteurs de tokens peuvent choisir directement leurs représentants (validateurs) dans le processus de consensus ou changer leur délégation en fonction des performances et des critères de confiance. Ce modèle de gouvernance fluide s'adapte rapidement aux changements et reflète le sentiment actuel de la communauté.
 
 ## Conclusion
 
-Delegation is one of the key fundamentals of the Core ecosystem, enabling it to maintain a secure, decentralized, and efficient blockchain network. By leveraging the strengths of both DPoS and elements of PoW through the innovative Satoshi Plus consensus mechanism, Core not only enhances its operational capabilities but also aligns closely with the decentralized ethos of blockchain technology. This model of delegation ensures that all participants, from individual token holders to large-scale miners, have a stake in the network’s success and governance, making Core a robust and dynamic blockchain platform.
+La délégation est l'un des piliers fondamentaux de l'écosystème Core, permettant de maintenir un réseau blockchain sécurisé, décentralisé et efficace. En tirant parti des forces du DPoS et des éléments du PoW grâce au mécanisme innovant de consensus Satoshi Plus, Core améliore non seulement ses capacités opérationnelles, mais s'aligne également avec l'éthique décentralisée de la technologie blockchain. Ce modèle de délégation garantit que tous les participants, des détenteurs de tokens individuels aux grands mineurs, ont un intérêt dans la réussite et la gouvernance du réseau, faisant de Core une plateforme blockchain robuste et dynamique.
