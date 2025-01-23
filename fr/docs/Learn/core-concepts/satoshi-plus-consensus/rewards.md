@@ -58,31 +58,31 @@ $$
 
 Où:
 
-- $$rH$$: Rewards attributed to delegated hash power (DPoW).
-- $$rS$$: Rewards attributed to CORE staking (DPoS).
-- $$rB$$: Rewards attributed to BTC staking.
-- $$R$$: Total rewards allocated to all delegators.
-- $$m$$: Proportion of rewards allocated to hash power.
-- $$k$$: Proportion of rewards allocated to CORE staking.
-- $$l$$: Proportion of rewards allocated to BTC staking.
-- $$S$$: Hybrid score of the validator.
+- $$rH$$: Récompenses attribuées à la puissance de hachage déléguée (DPoW).
+- $$rS$$: Récompenses attribuées au staking de CORE (DPoS).
+- $$rB$$: Récompenses attribuées au staking de BTC.
+- $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
+- $$m$$: Proportion des récompenses allouées à la puissance de hachage.
+- $$k$$: Proportion des récompenses allouées au staking de CORE.
+- $$l$$: Proportion des récompenses allouées au staking de BTC.
+- $$S$$: Score hybride du validateur.
 
-Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
+Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-- Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
-- Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
-- Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
+- Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
+- Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
 
 Où:
 
-- $$rHu$$ is the validator hash power rewards per unit;
-- $$rSu$$ is the CORE token staking rewards per unit;
-- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+- $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
+- $$rSu$$ est la récompense de staking de tokens CORE par unité ;
+- $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
+- **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e,f,g,h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Ces paramètres peuvent être ajustés et sont soumis à un processus de gouvernance. Ces calculs assurent une distribution proportionnelle des récompenses, en fonction de la contribution de chaque participant au pool de délégation d’un validateur.
 
-#### Impact of Dual Staking on BTC Rewards
+#### Impact du Dual Staking sur les récompenses BTC
 
-With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
+Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont désormais réparties par paliers, en fonction du montant de CORE staké par rapport à la quantité de BTC. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses. Cette structure de paliers introduit une variabilité dans les rendements de staking BTC, aligne les intérêts au sein de l’écosystème Core et maintient une distribution proportionnelle des récompenses.
 
 ## Partage des Récompenses
 
@@ -92,7 +92,7 @@ Ces fonctions de répartition des récompenses sont conçues pour créer un marc
 
 Dans l'écosystème Core, les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'une ronde est miné, avec **90%** allant aux validateurs et **10%** au contrat de récompenses du système. Le contrat de récompenses du système accumule des récompenses pour rémunérer les relayeurs et les vérificateurs. Actuellement, il y a un plafond de **10 millions** de tokens CORE dans le contrat de récompenses du système. Toutes les récompenses excédant ce montant sont brûlées.
 
-Relayers are responsible for communicating the Bitcoin blocks and transaction data to the Core network. Ils gagnent une partie des récompenses de base du système et des frais de transaction pour ce travail de communication inter-chaînes. Les récompenses des relayeurs sont distribuées par lots, tous les 100 blocs de Bitcoin. Les relayeurs réclament périodiquement leurs récompenses.
+Les relayeurs sont chargés de transmettre les blocs Bitcoin et les données de transaction au réseau Core. Ils gagnent une partie des récompenses de base du système et des frais de transaction pour ce travail de communication inter-chaînes. Les récompenses des relayeurs sont distribuées par lots, tous les 100 blocs de Bitcoin. Les relayeurs réclament périodiquement leurs récompenses.
 
 Les vérificateurs dans l'écosystème Core sont responsables de la surveillance du comportement des validateurs et les signalent s'ils se livrent à une double signature ou à d'autres activités malveillantes. Lorsqu'ils réussissent, les récompenses sont immédiatement versées par le contrat de récompenses du système, dans la même transaction.
 
