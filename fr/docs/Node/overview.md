@@ -1,23 +1,23 @@
 ---
-sidebar_label: Overview of Nodes Running on Core
+sidebar_label: Vue d'Ensemble des Nœuds Fonctionnant sur Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Nodes in the Core Ecosystem
+# Nœuds sur le l'Écosystème Core
 
 ---
 
-In the Core ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau. Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. If you haven't already started any node on Core network yet, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
+Dans l'écosystème Core, la robustesse, la sécurité et la décentralisation du réseau sont maintenues par les nœuds opérés par les participants de la communauté. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau. Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. Si vous n'avez pas encore démarré de nœud sur le réseau Core, veuillez consulter la documentation pour [Exécuter un Nœud Validateur Local](./validator/running-validator.md) avant de passer aux différentes configurations.
 
 - Participer à la gouvernance du réseau Core :
 
   - [Démarrer un nœud validateur](./config/validator-node-config.md)
 
-- If you want to run a node on Core network for private use:
+- Si vous voulez faire tourner un nœud Core pour votre usage personnel :
   - [Démarrer un nœud complet normal](./Full-Node/on-mainnet.md)
 
-- If you want to send transactions or query the chain directly from your own Core blockchain node:
+- Si vous voulez envoyer des transactions ou interroger directement la chaîne depuis votre propre nœud blockchain Core :
 
   - [Démarrer un nœud RPC](./config/rpc-node-config.md)
 
@@ -29,7 +29,7 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
 
   - [Démarrer un nœud de snapshot](./config/snapshot-node-config.md)
 
-## Types of Nodes on the Core Network
+## Types de Nœuds sur le Réseau Core
 
 1. **Validateurs:**
    - **Rôle :** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de Core Chain.
@@ -62,4 +62,4 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
 
 ## Conclusion
 
-The diverse roles of nodes in the Core ecosystem collectively ensure the blockchain is secure, efficient, accessible, and robust. Les validateurs, nœuds complets et nœuds d'archive forment la colonne vertébrale de la sécurité et de l'intégrité des données du réseau. En même temps, les nœuds RPC et de snapshot offrent flexibilité, accessibilité et scalabilité. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
+Les différents types de nœuds dans l'écosystème Core assurent collectivement que la blockchain est sécurisée, efficace, accessible et robuste. Les validateurs, nœuds complets et nœuds d'archive forment la colonne vertébrale de la sécurité et de l'intégrité des données du réseau. En même temps, les nœuds RPC et de snapshot offrent flexibilité, accessibilité et scalabilité. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
