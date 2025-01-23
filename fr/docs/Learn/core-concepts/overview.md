@@ -71,7 +71,7 @@ La feuille de route de Core est conçue en accord avec l'objectif principal de l
 
 - **Bitcoin LST :** Cette fonctionnalité permettrait aux stakers de BTC de générer des rendements sur leur Bitcoin tout en l'utilisant pour diverses applications sur Core.
 
-- **Restaking:** This addition would enable other protocols to benefit from Core’s Bitcoin protection.
+- **Restaking :** Cette amélioration permettrait à d'autres protocoles de bénéficier de la protection Bitcoin de Core.
 
 ## Conclusion
 
