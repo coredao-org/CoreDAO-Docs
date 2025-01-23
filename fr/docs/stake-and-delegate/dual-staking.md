@@ -64,9 +64,9 @@ Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs
 
 3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
    - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
-   - If **R<sub>1</sub>** \=\< staked CORE amount \< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
-   - If **R<sub>2</sub>** \=\< staked CORE amount \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-   - If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
+   - Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
+   - Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
+   - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
 
 :::note
 Les ratios de staking et le nombre de niveaux sont configurables et sujets à modification par vote de gouvernance.
@@ -101,7 +101,7 @@ Le multiplicateur sur chaque niveau de rendement augmenté est dynamique et suje
 :::
 
 :::info
-For your new dual staking tier to take effect, you  may need to follow two steps. This applies to users who already have BTC staked in earlier rounds at 00:00 am UTC and decide to stake additional CORE to move up tiers. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
+Pour que votre nouveau palier de dual staking prenne effet, vous devrez peut-être effectuer deux étapes. Cela concerne les utilisateurs qui ont déjà staké du BTC lors de précédents tours à 00:00 UTC et qui décident de staker du CORE supplémentaire pour passer à un palier supérieur. Tout d'abord, après avoir staké du CORE, attendez le prochain 00:00 UTC. Ensuite, réclamez toutes vos récompenses à n’importe quel moment après 00:00 UTC afin de réinitialiser le système de calcul du palier. Votre nouveau palier sera activé dès que vous aurez finalisé la réclamation de vos récompenses. Les deux étapes sont essentielles pour garantir la prise en compte de votre nouveau palier.
 :::
 
 ## Qu'est-ce qui change avec le Dual Staking ?
