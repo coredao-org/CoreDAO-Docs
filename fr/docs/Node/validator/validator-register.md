@@ -44,9 +44,9 @@ Pour vérifier rapidement si votre nœud complet a bien été enregistré comme 
 
 ## Élection des Validateurs
 
-Each day, the top **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. For more details about how the validator election works, refer to the [validator election](./validator-election.md) section.
+Chaque jour, les **27**validateurs avec les scores hybrides les plus élevés sont élus pour produire des blocs sur le réseau Core pendant toute la durée du round. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails sur le fonctionnement de l’élection des validateurs, reportez-vous à la section [élection des validateurs](./validator-election.md).
 
-Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués Active/Normal. The validator set is updated at **00:00 am UTC** every day.
+Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués Active/Normal. L'ensemble des validateurs est mis à jour chaque jour à **00:00 UTC**.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-3.avif)
 
