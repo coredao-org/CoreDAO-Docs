@@ -33,7 +33,7 @@ En outre, Satoshi Plus bénéficie actuellement de la sécurité de ~55 % des ef
 
 - **Stakers de Bitcoin :** Le troisième volet du consensus de Satoshi Plus est le staking de Bitcoin non-custodial, qui permet, à n’importe quel détenteur de Bitcoin, de gagner un rendement en stakant leurs tokens bitcoin sans renoncer à leur garde.
 
-- **Relayers:** Relayers transmit Bitcoin blocks and transaction data to the Core network. N’importe qui peut devenir un relayeur en s’enregistrant et bloquant un dépôt de token CORE remboursable.
+- **Relayeurs** Les relayeurs transmettent les blocs Bitcoin et les données de transaction au réseau Core. N’importe qui peut devenir un relayeur en s’enregistrant et bloquant un dépôt de token CORE remboursable.
 
 - **Vérificateurs :** Les vérificateurs sont responsables de signaler tout comportement malveillant sur le réseau. Un signalement de la sorte lors d’une vérification peut entraîner une pénalisation du validateur sur ses récompenses ou stakes, ou l’emprisonnement direct, et les vérificateurs sont rémunérés pour ce contrôle d’activité lorsque les récompenses du bloc sont distribuées. N’importe qui peut être vérificateur sur le réseau Core.
 
