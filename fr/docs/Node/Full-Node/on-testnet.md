@@ -41,7 +41,7 @@ Pour les nœuds complets sur le **testnet de Core**, nous recommandons les spéc
 
 1\. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). Le binaire du nœud inclut les fichiers de configuration pertinents pour le testnet. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Notez que la méthode recommandée pour synchroniser un nœud testnet est de démarrer à partir du bloc genesis_.
+2\. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. Le binaire du nœud inclut les fichiers de configuration pertinents pour le testnet. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Notez que la méthode recommandée pour synchroniser un nœud testnet est de démarrer à partir du bloc genesis_.
 
 3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
