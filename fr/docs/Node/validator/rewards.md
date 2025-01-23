@@ -4,11 +4,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validator Rewards in the Core Ecosystem
+# Récompenses des validateurs dans l'écosystème de Core
 
 ---
 
-The Core ecosystem is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
+L'écosystème Core est conçu pour inciter à la participation et sécuriser l'engagement de sa communauté à travers un système de récompenses bien structuré. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
 
 ## Récompenses des validateurs
 
@@ -39,38 +39,38 @@ $$
 
 Où:
 
-- $$rH$$: Rewards attributed to delegated hash power (DPoW).
-- $$rS$$: Rewards attributed to CORE staking (DPoS).
-- $$rB$$: Rewards attributed to BTC staking.
-- $$R$$: Total rewards allocated to all delegators.
-- $$m$$: Proportion of rewards allocated to hash power.
-- $$k$$: Proportion of rewards allocated to CORE staking.
-- $$l$$: Proportion of rewards allocated to BTC staking.
-- $$S$$: Hybrid score of the validator.
+- $$rH$$: Récompenses attribuées à la puissance de hachage déléguée (DPoW).
+- $$rS$$: Récompenses attribuées au staking de CORE (DPoS).
+- $$rB$$: Récompenses attribuées au staking de BTC.
+- $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
+- $$m$$: Proportion des récompenses allouées à la puissance de hachage.
+- $$k$$: Proportion des récompenses allouées au staking de CORE.
+- $$l$$: Proportion des récompenses allouées au staking de BTC.
+- $$S$$: Score hybride du validateur.
 
-Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
+Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-- Per unit hash power reward: $$rHu$$ =  $$\frac{rH}{rHp}$$
-- Per unit CORE reward: rSu = $$\frac{rS}{rSp}$$
-- Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
+- Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
+- Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
 
 Où:
 
-- $$rHu$$ is the validator hash power rewards per unit;
-- $$rSu$$ is the CORE token staking rewards per unit;
-- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e,f,g,h, ..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
+- $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
+- $$rSu$$ est la récompense de staking de tokens CORE par unité ;
+- $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
+- **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e,f,g,h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Ces paramètres peuvent être ajustés et sont soumis à un processus de gouvernance. Ces calculs assurent une distribution proportionnelle des récompenses, en fonction de la contribution de chaque participant au pool de délégation d’un validateur.
 
-Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (BTC et CORE). De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations. Furhtermore, BTC staking rewards are influenced by dual staking tiers, encouraging greater network participation without prescribing specific strategies.
+Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué (BTC et CORE). De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations. En outre, les récompenses de staking BTC sont influencées par des niveaux de dual staking (paliers de rendement), ce qui encourage une plus grande participation au réseau sans imposer de stratégies spécifiques.
 
-## Impact of Dual Staking on BTC Rewards
+## Impact du Dual Staking sur les récompenses BTC
 
-With the introduction of Dual Staking, BTC staking rewards are now tiered based on the amount of CORE staked relative to BTC. BTC rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on dual staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. This tiered structure introduces variability in BTC staking returns, aligning incentives across the Core ecosystem while maintaining proportionality in reward distribution.
+Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont désormais réparties par paliers, en fonction du montant de CORE staké par rapport à la quantité de BTC. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses. Cette structure de paliers introduit une variabilité dans les rendements de staking BTC, aligne les intérêts au sein de l’écosystème Core et maintient une distribution proportionnelle des récompenses.
 
 ## Stratégie de Distribution des Récompenses
 
-Core follows the following distribution Principles:
-\* **Fairness:** The rewards system is designed to be fair, ensuring that contributions, whether in the form of staking, mining, or governance participation, are equitably recognized and rewarded.
+Core suit les principes de distribution suivants:
+\* **Équité:** Le système de récompenses est conçu pour être équitable, en veillant à ce que les contributions, qu'elles soient sous forme de staking, de minage ou de participation à la gouvernance, soient reconnues et récompensées équitablement.
 \* **Transparence:** Tous les aspects de la distribution des récompenses sont transparents, permettant aux participants de comprendre comment les récompenses sont calculées et distribuées.
 \* **Sécurité:** Le mécanisme de distribution est sécurisé contre la manipulation et les abus, en utilisant des protections cryptographiques et basées sur des contrats intelligents pour garantir l'intégrité du processus de récompense.
 
