@@ -10,7 +10,8 @@ sidebar_position: 2
 ## Unavailability
 Slashing penalties are generally incurred because a node fails to successfully produce a block during its designated turn in the **round-robin block-mining** procedure as described in the [Validator Election](../validator/validator-election.md) section. 
 
-* If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely. 
+* If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely.
+* If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far. 
 * If they fail on the last **50** blocks of the round, they surrender everything they’ve earned. 
 * If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set. 
 

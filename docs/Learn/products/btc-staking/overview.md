@@ -3,82 +3,93 @@ sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
+# Non-Custodial Bitcoin Staking
+Over [1.5 trillion dollars'](https://www.coingecko.com/en/coins/bitcoin) worth of Bitcoin has remained idle, yielding no native yield for over its lifetime. Since Bitcoin is a Proof-of-Work blockchain, its holders do not get the yield benefits native to Proof-of-Stake chains. Nevertheless, Core has delivered Proof-of-Stake benefits to the definitive Proof-of-Work blockchain. **Non-Custodial Bitcoin Staking** substantially enhances Core’s security model while unlocking Bitcoin-native yield for the first time. This innovative approach allows Bitcoin holders to participate in and earn from Satoshi Plus without giving up custody of their Bitcoin, thereby integrating Bitcoin's economic power with Core's advanced blockchain functionalities.
 
-# Non-Custodial BTC Staking - Unlocking Bitcoin DeFi
----
+## **Overview**
 
-Over [1 trillion dollars'](https://www.coingecko.com/en/coins/bitcoin) worth of BTC has remained idle, yielding no returns for over 10 years. Bitcoin network inherently is not Turing-complete, due to this, to have utility outside the Bitcoin network, the bitcoins have to be wrapped, bridged, or sent to a third-party custody. None of them is secure: they all need trust on a third-party. This is why most of the bitcoins are idle. Securely utilizing them to protect the decentralized economy seems a mission impossible. Previous attempts by other projects to leverage this liquidity have met with limited success. However, with technical advancements on Bitcoin's side and through the innovative and robust ecosystem, Core Chain presents a promising opportunity to unlock the dormant potential of Bitcoin liquidity.
+Core’s Non-Custodial Bitcoin Staking allows Bitcoin holders to earn CORE tokens without giving up control of their private keys or transferring their Bitcoin to a third party, external smart contract, or multi-party computation (MPC) wallet. Non-Custodial Bitcoin Staking lets Bitcoin holders securely lock their Bitcoin natively on the Bitcoin network. At the same time, the stakers can actively contribute to the validator election on the Core network, strengthening its security and decentralization through the Satoshi Plus consensus mechanism. This approach ensures that Bitcoin remains under the user’s control while enabling them to support network security and earn rewards.
 
-One of the most outstanding features of Core Chain that distinguishes it from other competitors is that of **`Non-Custodial BTC Staking`**. Core Chain welcomes BTC holders to stake their BTC on the Bitcoin network. With the introduction of non-custodial bitcoin staking, Core Chain's recent protocol updates incorporate Bitcoin holders as the third part of the Satoshi Plus consensus mechanism.
+## **Rationale Behind Core’s Non-Custodial Bitcoin Staking**
 
-## Empowering Bitcoin Holders and Strengthening Core
-#### _The Dual Benefits of Non-Custodial BTC Staking_
+Core blockchain offers Non-Custodial Bitcoin Staking as a strategic move to enhance its decentralization and security. By incorporating Bitcoin, which has a robust and well-established network, into its consensus mechanism, Core can leverage Bitcoin's decentralization and security features. Through the Non-Custodial Bitcoin Staking, Core leverages Bitcoin security and provides the first-ever non-custodial Bitcoin native yield generation opportunities to the Bitcoin community. Participating in Non-Custodial Bitcoin Staking offers an additional incentive: earning CORE tokens. This is a way for Bitcoin holders to retain complete custody of their Bitcoin assets without transferring them elsewhere and receive additional rewards in CORE tokens.
 
-1. **Benefits for BTC Holders from Non-Custodial BTC Staking**
-    - **Maintaining Assets on Bitcoin:** By Non-Custodial BTC Staking, Bitcoin holders have the unique opportunity to keep their assets securely on the Bitcoin network. This is significant because it allows them to retain their investment in what is widely regarded as the most decentralized and secure blockchain, often referred to as digital gold. In essence, they can continue to hold their Bitcoin, enjoying the security and reputation it offers, without needing to transfer their assets elsewhere.
-    - **Earning Core Tokens as Rewards:** Participating in Non-Custodial BTC Staking offers an additional incentive: earning Core tokens. This is a way for Bitcoin holders to not only retain their Bitcoin assets but also to receive additional rewards in the form of Core tokens.
-    - **Social Responsibility in Decentralization:** By staking their BTC, holders contribute to the decentralization of the Core blockchain. This is a form of social responsibility, as their participation helps in maintaining a diverse and distributed network, which is fundamental to the ethos of blockchain technology.
-2. **Core's Rationale Behind Offering Non-Custodial BTC Staking**
-    - **Enhancing Decentralization and Security:** Core blockchain is offeringNon-Custodial BTC Staking as a strategic move to enhance its decentralization and security. By incorporating Bitcoin, which has a robust and well-established network, into its consensus mechanism, Core can leverage the decentralization and security features of Bitcoin.
+## **Advantages of Non-Custodial Bitcoin Staking**
 
-## Advantages of Non-Custodial BTC Staking
+1. **No risk to principal BTC:** Users can stake their bitcoins without involving any new trust assumptions, slashing, or protocol risks. Their principal BTC remains under their custody and on the Bitcoin blockchain, leveraging the high security and trust already provided by Bitcoin's robust infrastructure.  
+2. **Self-custody and 100% secure:** Users only need to send themselves the staking transaction on the Bitcoin network, and the Bitcoin assets _DO NOT_ need to leave the Bitcoin network.  
+3. **The Bitcoin Risk-Free Rate:** By introducing zero new trust assumptions, Core’s Bitcoin staking unlocks riskless yield for Bitcoin holders.  
+4. **Bitcoin-Nativity:** Using Bitcoin’s native absolute time locks, Bitcoin stakers retain full custody of their Bitcoin.  
+5. **Sustainable Yield:** This mechanism transforms Bitcoin into a yield-bearing asset, whereby stakers can earn a portion of Core’s fixed emissions and gas fees in CORE tokens for securing the Core network.   
+6. **Network Integration:** Non-Custodial Bitcoin Staking integrates Bitcoin holders into Core’s consensus mechanism, contributing to the network’s security and decentralization.
 
-1. It is designed specifically for the kind of long-term holders and institutions who have shown a clear preference for keeping their assets on the Bitcoin blockchain. Recognizing that such entities are accustomed to holding their bitcoin without frequent transactions, native bitcoin staking offers them the opportunity to earn rewards during a specified holding period.
-2. No new trust assumptions are added. Users can stake their bitcoins without moving it off the Bitcoin blockchain, thereby maintaining the high security and trust that comes with Bitcoin's robust infrastructure.
-3. It provides an opportunity for the bitcoin holders to earn passive CORE token rewards in exchange for contributing to Core Chain's consensus.
-4. Self custody and 100% secure. Users only need to send themselves the staking transaction on the Bitcoin network and the BTC assets DO NOT need to leave the Bitcoin network at all.
-5. The function is implemented using native cryptographic features of the Bitcoin network, and it is fully battle tested and safer than all other non Bitcoin native solutions.
-6. Users can build the transaction in any way and with any tool they prefer, it is highly not possible to encounter supply chain attacks from untrusted/unverified third party libraries.
+## **How Non-Custodial Bitcoin Staking Works** {#how-non-custodial-bitcoin-staking-works}
 
+Non-custodial Bitcoin Staking is one of the three fundamentals of Core’s Satoshi Plus consensus mechanism. Through this feature, Core incorporates Bitcoin holders into its ecosystem for security and to enable them to turn Bitcoin into a yield-generating asset.
 
-## Why Opt Core Chain's Non-Custodial BTC Staking
+Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock is a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a specific point in time has passed. This time can be defined as a specific date and time or by block height. 
 
-There are a few aspects of Core Chain's implementation of staking that set it apart.
+Imagine CLTV as a **time-locked vault**: when you "lock" your Bitcoin, it’s securely held and inaccessible until the designated time elapses, at which point the Bitcoin is returned to you. This feature enables Core’s staking mechanism to work without requiring users to relinquish control of their Bitcoin. Instead, Bitcoin holders can support Core’s network and earn rewards while retaining custody of their assets.
 
-1. There is no need to transfer your assets. Unlike other DeFi protocols that require transferring bitcoin to a different blockchain or wrapping it, Core Chain's staking allows users to stake directly within the Bitcoin ecosystem.
-2. Core Chain's bitcoin staking maintains the basic blockchain ethos by allowing bitcoin holders to contribute to the expansion of Core Chain's overall security budget.
-3. There are options to stake through the command line or a web interface, and there's a simple claim process for rewards.  
-4. The product is designed for ease of use, catering to both tech-savvy users and those preferring a more straightforward approach.
-5. The reward system helps align cross-chain incentives. The reward pool comes from a shared consensus reward system that integrates the contributions of both Bitcoin miners and CORE token stakers, thereby optimizing the reward distribution for all participants. Additionally, the rewards are sustainable over the long-term, and will be distributed over a period of 81 years.
+Rather than holders giving up custody of their Bitcoins to third parties or external smart contracts, Bitcoin stakers need to initiate a qualified CLTV transaction on the Bitcoin network, and the transaction can be designed to return the output after a fixed time period has elapsed. CLTV is a Bitcoin-native feature, and users can use it to lock any amount of their assets at/for any time. However, specific prerequisites should be met to ensure that transactions are valid and to be picked as a delegation for validators on the Core network. Within the CLTV transaction, stakers must include a script containing the following information:
 
+1. The address of the Core Validator the staker wants to delegate their Bitcoin to.  
+2. The address to which the staker would like their CORE token rewards to be sent.
 
-## How Non-Custodial BTC Staking Works
+The **Relayers** are a key component of the Core ecosystem that monitors the Bitcoin network for Bitcoin staking and unstaking transactions. Once the valid CLTV transactions containing information for Bitcoin delegation to validators on Core are sent over the Bitcoin network, the Relayers pick up these transactions and forward them to the Core consensus engine.
 
-With the non-custodial bitcoin staking, Core Chain's protocol incorporate bitcoin holders as the third part of Satoshi Plus consensus. Core Chain's methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). CLTV timelock are Bitcoin-native cryptographic feature that specify a condition under which the transaction output cannot be spent until a certain point in time has passed. This time can be defined in terms of a specific date and time or by block height. Rather than holders giving up custody of their bitcoins to external staking, stakers on Core Chain merely need to place their bitcoins in CLTV timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks: 
+It is essential to be clear that Core’s non-custodial Bitcoin staking mechanism introduces no protocol or principal risks to the user’s delegated Bitcoin. Users transact on the Bitcoin network to delegate their assets to Core validators via Bitcoin’s CLTV; their assets remain on the Bitcoin network under their control. The assets are not moved off-chain or to any third-party or smart contracts. On the other side, relayers from the Core network are responsible for monitoring the Bitcoin network, picking up Bitcoin staking transactions, verifying them, and forwarding the valid transactions to the Core consensus mechanism, which is responsible for rewarding the stakers accordingly.  
 
-1. The address of the Core Validator the staker wants to delegate their bitcoin to.
-2. The address that the staker would like their CORE token rewards to be sent to.
+Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on their otherwise passive Bitcoin for however long they set the time lock (i.e., delegate their Bitcoin to validators on the Core network). Core’s Non-Custodial Bitcoin Staking results in billions of dollars in underutilized Bitcoin value becoming productive, remunerating stakers while expanding the scope of Bitcoin's utility.
 
-Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core Chain). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin's utility. 
+### **Requirements for Bitcoin Staking**  
 
-### Guidelines for Staking/Redeeming BTC
+* For a Bitcoin staking transaction to be considered valid and picked up by the Relayers, users must ensure that the transaction is sent to their address and, using the Bitcoin native timelock feature, specify the lock-up amount intended to be delegated to the validator on the Core blockchain, as the transaction output.   
+* The transaction should also contain an `op_return` output specifying   
+  * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
+  * The address to which the staker would like their CORE token rewards to be sent.  
+* **Minimum requirements exist** for the **amount** of BTC to be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
 
-When staking or redeeming your BTC, please follow these guidelines to ensure smooth transactions:
-1. **Avoid Low Gas Fees:** 
-    * We recommend avoiding gas fees lower than the current market rate. 
-    * Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
-2. **Handling Low Gas Fee Situations:** 
-    * If your Bitcoin transaction is delayed due to a low gas fee, consider using a transaction accelerator to speed up the process. 
-    * There are several third-party services available; for example, the free viaBTC transaction accelerator (which can be accessed [here](https://www.viabtc.com/tools/txaccelerator)). 
-    * Please research and choose a service that best fits your needs.
+### **Transaction Workflow**
 
-By following these recommendations, you can ensure a more efficient staking and redemption process for your BTC.
+Core's implementation of Bitcoin staking is completely native and non-custodial, i.e., users can keep their Bitcoin assets on the Bitcoin network without bridging them out before staking. 
 
-### Requirements for Eligibility
+![btc-staking-tx-workflow](../../../../static/img/btc-staking/btc-staking-flow.png)
 
-Core Chain welcomes BTC holders to stake their BTC on the Bitcoin network. By voting for a Core validator during your BTC staking transaction, you play a pivotal role in Core's decentralization, earning CORE tokens as recurring rewards.
+Note that Non-Custodial BTC Staking operations are conducted on two separate blockchains—Bitcoin and Core. The following table identifies what happens in each blockchain for Bitcoin holders to earn staking rewards successfully through non-custodial Bitcoin staking. It's important to note that Core's Non-Custodial Bitcoin Staking does not introduce any additional risks or trust assumptions. Beyond monitoring and verifying Bitcoin staking transactions and accrual and claiming rewards, all operations—including asset locking, redemption, and asset management—remain securely on the Bitcoin network.
 
-* There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core Chain.
-    * A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days**. 
+| Step\#  | Bitcoin Network | Core Network |
+| :---- | :---- | :---- |
+| Step\#1 | User craft a CLTV Timelock transaction with a timelock period of their choice and OP\_RETURN containing Core Validator Address the user wants to delegate their Bitcoin to. CORE reward address for receiving the staking rewards in the form of CORE. For details on how to compose such a staking transaction, please refer to the [transaction design](https://docs.coredao.org/docs/Learn/products/btc-staking/design). | Relayers monitor the Bitcoin network for valid CLTV transactions for non-custodial Bitcoin staking. |
+| Step\#2 | The user sends the crafted transaction to themselves on the Bitcoin network. |  |
+| Step\#3 | The Bitcoins are locked on the Bitcoin network for the specified time period. Once the transaction is confirmed on the Bitcoin network, which can take several hours due to block time, number of block confirmations required, and network congestion, the locked assets will appear in the staking records.  (*Optional*) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit it to the Core blockchain. This step is optional if users compose the transaction in a standard format, as suggested by Core. Relayers from the Core infrastructure will detect the staking transaction and submit it to the Core blockchain for users. |  |
+| Step\#4 |  | Relayers pickup the valid transactions and forward them to the Core Consensus Engine |
+| Step\#5 |  | The rewards for BTC staking are accrued, and users have to claim them manually. |
+| Step\#6 | Once the time lock expires, users **must** send out a Redeem script to retrieve their locked Bitcoin assets. Users can also choose to delegate directly again rather than redeem and then delegate. |  |
 
-### Transaction Work Flow
+## **Step-by-Step Process**
 
-![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-flow.png)
+1. **Locking Bitcoin:** Bitcoin holders initiate the staking process by locking their Bitcoin in an absolute time lock on the Bitcoin blockchain.  
+2. **Including Delegation Information:** Within the locking transaction, stakers include:  
+   1. **Core Validator Address:** The address of the Core Validator to which to delegate their Bitcoin.  
+   2. **CORE Token Reward Address:** The address where they want their CORE token rewards sent.  
+3. **Delegating Bitcoin:** This action delegates the staker’s Bitcoin to the chosen Core validator for a specified period, during which the Bitcoin cannot be spent.  
+4. **Validator Election:** Core uses the delegated Bitcoin to determine the hybrid score for the validator election. Validators with higher delegated Bitcoin have a better chance of being elected to the validator set.  
+5. **Earning Rewards:** Bitcoin stakers earn CORE token rewards for the lock period based on the validator's performance and the amount of Bitcoin staked.  
+6. **Unlocking Bitcoin:** After the timelock expires, the staked Bitcoin remains in the staker’s address but stays locked. To regain access and be able to spend their BTC, the staker must redeem it explicitly after the timelock period ends.
 
-Core Chain's implementation of BTC native staking is completely non-custodial, i.e., users can keep their BTC assets on the Bitcoin network without bridging them out before staking. Users are required to perform only the following steps:
+### **Guidelines for Staking/Redeeming Bitcoin**
 
-* Send a BTC transaction to their own address, and lock up the output whose amount is intended to stake on Core blockchain by using the Bitcoin native timelock feature. Besides, the transaction should also contain an `op_return` output in which users can designate the Core validator address to stake to and a `reward address` to receive CORE rewards. For details to compose such a staking transaction, please refer to the [transaction design](design.md).
+Please follow these guidelines to ensure smooth transactions when staking or redeeming your Bitcoin. Following these recommendations can ensure a more efficient staking and redemption process for your Bitcoin.
 
-* (_Optional_) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit to the Core blockchain. This step is optional, if users compose the transaction in a standard format as suggested by Core Chain (defined in the [transaction design](design.md)). The Core infrastructure will detect the staking transaction and submit it to Core blockchain for users.
+1. **Avoid Low Gas Fees:**  
+   * We recommend avoiding gas fees that are lower than the current market rate.  
+   * Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.  
+2. **Handling Low Gas Fee Situations:**  
+   * If your Bitcoin transaction is delayed due to a low gas fee, consider using a transaction accelerator to speed up the process.  
+   * Several third-party services are available, such as the free viaBTC transaction accelerator (accessible [here](https://www.viabtc.com/tools/txaccelerator)).  
+   * Please research and choose a service that best fits your needs.
 
-* When the timelock expires, users can spend the UTXO using the corresponding redeem script. It is easy for them to build the redeem script from the original staking transaction.
+## **Conclusion**
+
+Non-Custodial Bitcoin Staking transforms the Bitcoin asset from a passive Store of Value into an active, yield-bearing, and security-providing asset. Bitcoin staking allows Bitcoin holders to earn the Bitcoin Risk-Free Rate while contributing to the security of a smart contract platform designed to unlock more Bitcoin asset use cases.

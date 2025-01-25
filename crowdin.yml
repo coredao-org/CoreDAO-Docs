@@ -1,7 +1,5 @@
 files:
-  - source: /docs/*
+  - source: /docs/**/*
     ignore:
       - /docs/CNAME
-    translation: /docs_%two_letters_code%/%original_file_name%
-  - source: /docs/Dev-Guide/*
-    translation: /docs_%two_letters_code%/Dev-Guide/%original_file_name%
+    translation: /%two_letters_code%/%original_path%/%original_file_name%

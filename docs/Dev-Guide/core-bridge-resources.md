@@ -48,8 +48,7 @@ The[ Core Bridge](https://bridge.coredao.org/) is powered by LayerZero, and enab
 | USDC | https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d                |
 | USDT |https://bscscan.com/address/0x55d398326f99059ff775485246999027b3197955                 |
 | BTCB | 0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c                                            |
-| WBNB |0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c                                             |
-
+| WBNB | 0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c                                            |
 
 
 | Polygon                       | Addresses                                                    |
@@ -59,14 +58,6 @@ The[ Core Bridge](https://bridge.coredao.org/) is powered by LayerZero, and enab
 | USDT | https://polygonscan.com/address/0xc2132d05d31c914a87c6611c10748aeb04b58e8f                |
 | WBTC | https://polygonscan.com/address/0x1BFD67037B42Cf73acF2047067bd4F2C47D9BfD6 |
 
-
-
-| BNB Smart Chain (BSC)         | Addresses                                                    |
-| ----------------------------- | ------------------------------------------------------------ |
-| Bridge                        | 0x29d096cD18C0dA7500295f082da73316d704031A                   |
-| USDC                          | 0xaf88d065e77c8cC2239327C5EDb3A432268e5831                   |
-| USDT                          | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9                   |
-| WBTC                          | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f                   |
 
 | OPTIMISM         | Addresses                                                                 |
 | ----------------------------- | ------------------------------------------------------------ |
@@ -83,4 +74,17 @@ The[ Core Bridge](https://bridge.coredao.org/) is powered by LayerZero, and enab
 | USDT                          | 0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7                   |
 | WBTC                          | 0x50b7545627a5162F82A992c33b87aDc75187B218                   |
 
+
+| ARBITRUM                      | Addresses                                                    |
+| ----------------------------- | ------------------------------------------------------------ |
+| Bridge                        | 0x29d096cD18C0dA7500295f082da73316d704031A                   |
+| USDC                          | 0xaf88d065e77c8cC2239327C5EDb3A432268e5831                   |
+| USDT                          | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9                   |
+| WBTC                          | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f                   |
+
+| BASE                     | Addresses                                                    |
+| ----------------------------- | ------------------------------------------------------------ |
+| Bridge                        | 0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879                   |
+| USDC                          | 0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913                   |
+| WETH                          | 0x4200000000000000000000000000000000000006                   |
 

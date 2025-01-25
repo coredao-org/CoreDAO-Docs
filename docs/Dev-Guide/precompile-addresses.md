@@ -7,7 +7,7 @@ sidebar_position: 2
 # Precompiles & Deployment Addresses
 ---
 
-Following is a list of precompiled addresses of Core Chain ecosystem.
+Following is a list of precompiled addresses of Core ecosystem.
 
 | **Name**                              | **Address**                                                                  |
 |---------------------------------------|------------------------------------------------------------------------------|

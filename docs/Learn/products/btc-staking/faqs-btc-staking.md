@@ -12,7 +12,7 @@ The staking address is derived from your wallet's master private key, ensuring y
 
 You can view your staked funds by searching the staking address on the any BTC explorer like (Mempool)[https://mempool.space/]. We're actively working to make staked assets visible in all supported wallets especially through command line versions.
 
-### Does Core Chain provide any hardware wallet support for Non-Custodial BTC Staking?
+### Does Core provide any hardware wallet support for Non-Custodial BTC Staking?
 
 At present, Non-Custodial BTC Staking does not support hardware wallets due to technical constraints. Nevertheless, we're constantly exploring ways to enhance compatibility with various wallet types, prioritizing both security and convenience for our users.
 

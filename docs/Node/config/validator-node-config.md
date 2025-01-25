@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Validator Node Configuration
 ---
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s Satoshi Plus consensus framework.
+Validators are crucial for securing the network by producing blocks and validating transactions within the Core’s Satoshi Plus consensus framework.
 
 ## System Requirements
 

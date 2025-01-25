@@ -51,7 +51,7 @@ const config = {
         {
         
           googleTagManager: {
-            containerId: 'GTM-WXHGVVKB',
+            containerId: 'G-F20V7Q57RZ',
           },
 
         docs: {
@@ -91,6 +91,15 @@ const config = {
         defaultMode: 'dark',
         disableSwitch: false,
         respectPrefersColorScheme: false,
+      },
+
+      announcementBar: {
+        id: 'latest_updates',
+        content:
+        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@core_dao/lstbtc-is-coming-sunsetting-corebtc-486d6744c3b9">LstBTC Launching Soon!</a> coreBTC is sunsetting — redeem your assets at the earliest. ⚠️',
+        backgroundColor: '#f96e34',
+        textColor: '#FBFCFC',
+        isCloseable: false,
       },
       
       algolia: {

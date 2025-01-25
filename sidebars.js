@@ -17,7 +17,7 @@ const sidebars = {
   learnSidebar: [
     {
       type: 'category',
-      label: '📖 All About Core Chain',
+      label: '📖 All About Core',
       link: {type: 'doc', id: 'intro'},
       items:[
           {
@@ -41,7 +41,7 @@ const sidebars = {
             link: {
               type: 'generated-index',
               title: 'Core Concepts',
-              description: 'Learn about the Nuts and Bolts of the Core Chain Ecossytem!',
+              description: 'Learn about the Nuts and Bolts of the Core Ecossytem!',
               slug: '/category/core-concepts',
             },
             items: ['Learn/core-concepts/overview', 'Learn/core-concepts/architecture',
@@ -66,40 +66,11 @@ const sidebars = {
               label: 'Products',
               link: {
                 type: 'generated-index',
-                title: 'Exploring Core Chain: Pioneering DeFi Solutions for Bitcoin',
-                description: 'Learn about the different innovative products offered by Core Chain that are helping in unclocking the DeFi landscape for Bitcoin!',
+                title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
+                description: 'Learn about the different innovative products offered by Core that are helping in unclocking the DeFi landscape for Bitcoin!',
                 slug: '/category/products',
               },
               items: [
-                {
-                  type: 'category',
-                    collapsed: true,
-                    label: 'Non-Custodial BTC Staking',
-                    items: [
-                      'Learn/products/btc-staking/overview',
-                      'Learn/products/btc-staking/design',
-                      {
-                        type: 'category',
-                          collapsed: true,
-                          label: 'How To Guides',
-                          items: [
-                            'Learn/products/btc-staking/stake-btc-guide',
-                            'Learn/products/btc-staking/Redeeming-Guide',
-                          ]
-                      },
-                      
-                    ]
-                },
-                {
-                  type: 'category',
-                    collapsed: true,
-                    label: 'coreBTC',
-                    items: [
-                      'Learn/products/coreBTC/overview',
-                      'Learn/products/coreBTC/design',
-                      'Learn/products/coreBTC/how-to-guides',
-                    ]
-                },
                 {
                   type: 'category',
                     collapsed: true,
@@ -118,6 +89,16 @@ const sidebars = {
                       
                     ]
                 },
+                {
+                  type: 'category',
+                    collapsed: true,
+                    label: 'coreBTC (Sunsetted)',
+                    items: [
+                      'Learn/products/coreBTC/overview',
+                      'Learn/products/coreBTC/design',
+                      'Learn/products/coreBTC/how-to-guides',
+                    ]
+                },
               ]
           },
           {
@@ -129,6 +110,16 @@ const sidebars = {
               ]
           },
           'Learn/governance',
+          
+            {
+              type: 'category',
+              collapsed: true,
+              label: 'Core Ignition',
+              items: [
+                  'CoreIgnition/Overview',
+                  'CoreIgnition/Mechanics',
+              ]
+          },
           {type: 'doc', id: 'Learn/audit', label:'Audit'},
 
     ]
@@ -138,7 +129,7 @@ const sidebars = {
     {
       type: 'category',
       collapsed: true,
-      label: '💻 Core Chain for Developers',
+      label: '💻 Core for Developers',
       items: [
       {
         type: 'category',
@@ -169,8 +160,8 @@ const sidebars = {
         label: 'Developer Guides',
         link: {
           type: 'generated-index',
-          title: 'Developer Guides: Mastering Core Chain Essentials',
-          description: 'Unlock Your Potential: Detailed Developer Guides for Building on Core Chain',
+          title: 'Developer Guides: Mastering Core Essentials',
+          description: 'Unlock Your Potential: Detailed Developer Guides to Build on Core',
           slug: '/category/dev-guides',
         },
         items: [
@@ -179,7 +170,13 @@ const sidebars = {
           'Dev-Guide/contract-verify', 
           'Dev-Guide/erc20-tokens', 
           'Dev-Guide/erc721-tokens',
-          'Dev-Guide/dapp-on-core',]
+          'Dev-Guide/dapp-on-core',
+          {
+            type: 'link',
+            label: 'Switchboard VRF', // The link label
+            href: 'https://docs.switchboard.xyz/docs/switchboard/switchboard-randomness/on-evm-networks', // The external URL
+          },
+        ]
       },
       {
         type: 'category',
@@ -201,9 +198,12 @@ const sidebars = {
       items: ['FAQs/core-faqs', 'FAQs/core-node-faqs',
               'FAQs/validator-faqs', 'FAQs/delegator-faqs', 
               'FAQs/coreBTC-faqs', 'FAQs/btc-staking-faqs', 
-              'FAQs/LST-stCore-faqs','FAQs/core-api-faqs' ]
+              'FAQs/dual-staking-faqs',
+              'FAQs/LST-stCore-faqs','FAQs/core-api-faqs', 
+              'CoreIgnition/FAQs']
     },
   ],
+
   nodeSidebar:[ 
     {
       type: 'category',
@@ -254,12 +254,36 @@ const sidebars = {
     ]
     },
   ],
+  
   stakeDelegateSidebar:[
     {
       type: 'category',
       collapsed: true,
       label: '💸 Staking',
-      items: ['stake-and-delegate/staking-overview']
+      items: ['stake-and-delegate/staking-overview',
+        // 'stake-and-delegate/core-staking', 
+        {
+          type: 'category',
+            collapsed: true,
+            label: 'Non-Custodial BTC Staking',
+            items: [
+              'Learn/products/btc-staking/overview',
+              'stake-and-delegate/dual-staking', 
+              'Learn/products/btc-staking/design', 
+              {
+                type: 'category',
+                  collapsed: true,
+                  label: 'How To Guides',
+                  items: [
+                    'Learn/products/btc-staking/stake-btc-guide',
+                    'Learn/products/btc-staking/dual-staking-guide',
+                    'Learn/products/btc-staking/Redeeming-Guide',
+                  ]
+              },
+            ]
+        },    
+       
+      ]
     },
     {
       type: 'category',

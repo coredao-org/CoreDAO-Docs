@@ -10,6 +10,20 @@ sidebar_position: 2
 Core mainnet and testnet chain details
 
 ## Core Testnet
+
+### (Latest) Core Blockchain Testnet (1114 (0x45a))
+_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+
+* **Network Name:** Core Blockchain Testnet
+* **RPC URL:** https://rpc.test2.btcs.network
+* **Chain ID:** 1114 (0x45a)
+* **Currency Symbol:** tCORE2
+* **Block Explorer URL:** https://scan.test2.btcs.network
+* **Faucet:** https://scan.test2.btcs.network/faucet
+* **Staking Website:** https://stake.test2.btcs.network/
+
+### Core Blockchain Testnet (1115 (0x45b))
+
 * **Network Name:** Core Blockchain Testnet
 * **RPC URL:** https://rpc.test.btcs.network
 * **Chain ID:** 1115 (0x45b)

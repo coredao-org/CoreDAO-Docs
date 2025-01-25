@@ -4,40 +4,61 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Design of Non-Custodial BTC Staking
+# Non-Custodial Bitcoin Staking Design
 ---
 
 ## Background
 
-Core Chain’s methodology for integrating bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). The `OP_CHECKLOCKTIMEVERIFY` (CLTV) timelock is a specific opcode used in Bitcoin's scripting language that allows for creating conditions based on time or block height before bitcoins can be spent from a transaction output. This provides a way to create outputs that are time-locked, meaning they cannot be spent until a certain condition related to time or block height is met. 
+The methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). The `OP_CHECKLOCKTIMEVERIFY` (CLTV) timelock is a specific opcode used in Bitcoin's scripting language that allows for creating conditions based on time or block height before bitcoins can be spent from a transaction output. This provides a way to create outputs that are time-locked, meaning they cannot be spent until a certain condition related to time or block height is met. 
 
 ![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(5).png)
+
+### Requirements for Transaction Validity {#requirements-for-transaction-validity}
+
+* For a Bitcoin transaction to be considered valid and picked up by the Relayers, users must ensure that the transaction is sent to their address and, using the Bitcoin native timelock feature, specify the lock-up amount intended to be delegated to the validator on the Core blockchain, as the transaction output.   
+* The transaction should also contain an `op_return` output specifying   
+  * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
+  * The address to which the staker would like their CORE token rewards to be sent.  
+* To make staking eligible on Core, *minimal requirements exist* for the **amount** of BTC that can be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
+
+### Transaction Workflow
+
+Non-Custodial Bitcoin Staking operations are conducted on two separate blockchains: Bitcoin and Core. The following flowchart illustrates the workflow for Bitcoin holders to earn staking rewards through Core’s Non-Custodial Bitcoin Staking. 
+
+<p align="center">
+![btc-staking-flow](../../../../static/img/btc-staking/NCBS%20Workflow.png)
+</p>
+
 
 ## Transaction Structure
 
 ### Staking transaction
 
-A BTC staking transaction should have two/three outputs, which are
+A Bitcoin staking transaction should have two/three outputs, which are
 
 - `P2SH/P2WSH` type output, with time-lock enabled redeem script
-- `OP_RETURN` type output, with Core chain staking information
+- `OP_RETURN` type output, with Core staking information
 - (_Optional_) Change address
 
 Note that there are **no** restrictions on inputs.
 
+<p align="center">
 ![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(1).png)
+</p>
 
 ### Withdrawal transaction
 
-When the time-lock ends, the locked UTXO can be spent using the redeem script
+The locked UTXO (Bitcoins) can be spent using the redeem script when the time-lock ends.
 
+<p align="center">
 ![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(2).png)
+</p>
 
 ## Script Design
 
 ### P2SH/P2WSH Output
 
-* Core supports both `P2SH` and `P2WSH` outputs for BTC staking.
+* Core supports both `P2SH` and `P2WSH` outputs for Bitcoin staking.
 
 * The construction of `P2SH` type output is as follows
 
@@ -53,16 +74,17 @@ The `RedeemScript`  should start with a CLTV time lock. Here are a few common ty
 
 * When using a public key `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <RedeemScript>`
 
-* When using a public key hash (most recommended) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <pubKey> <RedeepScript>` 
+* When using a public key hash (most recommended) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <pubKey> <RedeemScript>` 
 
-* When using multi signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey1> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of BTC locked in this output will be used for the calculation of validator election and reward distribution on the Core chain.
+* When using multi-signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of Bitcoin locked in this output will be used for the calculation of validator election and reward distribution on Core.
 
-> **Note** 
-> There are _minimal requirements_ on both **amount** and **duration** to make the staking eligible on Core. A user should at least stake **0.01 BTC** (less transaction fees) for at least **10 days** (`CLTV timestamp - transaction confirmation timestamp > 10 days`). 
+:::note 
+Minimum requirements exist on the amount of BTC that can be staked to be eligible for Non-Csutodial BTC Staking on Core. A user should stake at least **0.01 Bitcoin** (exclusive of transaction fees).
+:::
 
 ## OP_RETURN Output
 
-The `OP_RETURN` output should contain all staking information in order, and be composed in the following format:
+The `OP_RETURN` output should contain all staking information in order and be composed in the following format:
 
 - **`OP_RETURN`:** identifier `0x6a`
 - **`LENGTH`:** which represents the total byte length after the `OP_RETURN` opcode. _Note that all data has to be pushed with its appropriate size byte(s)_.
@@ -72,17 +94,34 @@ The `OP_RETURN` output should contain all staking information in order, and be c
 - **`Delegator`:** The Core address to receive rewards, 20 bytes
 - **`Validator`:** The Core validator address to stake to, 20 bytes
 - **`Fee`:** Fee for relayer, 1 byte, range [0,255], measured in CORE
-- (_Optional_) **`RedeemScript`**
+- **`RedeemScript`:** used for redeeming staked BTC after timelock expires.
 - (_Optional_) **`Timelock`:** 4 bytes
 
-#### Key Points to Ensure 
+> **Note:** RedeemScript should be included. Also, if the Timelock is included, Little Endian is required first.
+
+
+#### Key Points 
 - Any bytes that can translate to a number should use `OP_number` (`{0}` should use `OP_0` instead of `0x0100`, `{16}` should use `OP_16` instead of `0x0110`)
-- Any bytes with lengths smaller than `0x4c (76)` is pushed with 1 byte equal to the size `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
+- Any bytes with lengths smaller than `0x4c (76)`  are  pushed with 1 byte equal to the size `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
 - Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
 - Any bytes with length bigger than `255` uses `0x4d` (`OP_PUSHDATA2`)
 - Any bytes with length bigger than `65535` (`0xffff`) uses `0x4e` (`OP_PUSHDATA4`)
 
-Either `RedeemScript` or `Timelock` must be available, the purpose is to allow relayer to obtain the `RedeemScript` and submit transactions on the Core chain. If a `RedeemScript` is provided, relayer will use it directly. Otherwise, relayer will construct the redeem script based on the timelock and the information in the transaction inputs. You can find more information about the relayer role in the [below section](#role-of-relayers). 
+Either RedeemScript or Timelock must be available. This allows relayers to obtain the `RedeemScript` and submit transactions on Core. If a `RedeemScript` is provided, relayer will use it directly. Otherwise, relayer will construct the redeem script based on the timelock and the information in the transaction inputs. You can find more information about the relayer role in the [below section](#role-of-relayers). 
+
+## Role of Relayers
+
+In a strict sense, the Non-Custodial Bitcoin Staking process consists of two steps
+
+1. Stake on the Bitcoin network
+2. Submit the confirmed Bitcoin staking transaction to Core
+
+To make the entire process more convenient, Core introduces the role of relayers. Relayers can help users submit transactions to the Core network after confirmation of the staking transaction on the Bitcoin network. Since verifying the transaction on the Core network with the embedded Bitcoin light client is necessary, relayers need to obtain the corresponding RedeemScript of the `P2SH/P2WSH` output. To meet this requirement, we suggest users to either
+
+- If the `RedeemScript` is short, put the entire RedeemScript at the end of the `OP_RETURN` output. For example, a `RedeemScript` is constructed using a public key hash, as shown in the sample below.
+- Set the receiving address of the staking transaction as their own so relayers can extract useful information from the transaction input and compose the `RedeemScript` by themselves. E.g.
+    - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
+    - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.
 
 ## Transaction Examples
 
@@ -90,7 +129,9 @@ Either `RedeemScript` or `Timelock` must be available, the purpose is to allow r
 
 [https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
+<p align="center">
 ![btc-staking-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(3).png)
+</p>
 
 #### P2WSH output
 
@@ -135,23 +176,11 @@ The full hex of this output is `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a
 
 This transaction spent the P2WSH time-lock output from the above staking transaction
 
+<p align="center">
 ![btc-staking-withdrawal-tx-example](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
+</p>
 
 In the input, the redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is provided to spend it. Since the time lock `1f5e0e66` (660e5e1f after reverting bytes, which is 1712217631 unix timestamp) has already expired, the UTXO was spent successfully.
 
 > **Note**
     > Code samples of constructing the staking and withdrawal transactions on Bitcoin network will be provided soon. 
-
-## Role of Relayers
-
-In a strict sense, the Non-Custodial BTC Staking process consists of two steps
-
-1. Stake on the Bitcoin network
-2. Submit the confirmed BTC staking transaction to the Core chain
-
-To make the entire process more convenient, Core Chain introduces the role of relayers. Relayers can help users submit transactions to the Core network after the staking transaction is confirmed on the Bitcoin network. Since it is necessary to verify the transaction on the Core network with the embedded Bitcoin light client, relayers needs to obtain the corresponding `RedeemScript` of the `P2SH/P2WSH` output. To meet this requirement, we suggest users to either
-
-- Put the entire `RedeemScript` at the end of the `OP_RETURN` output, if the script is short. e.g. a `RedeemScript` constructed using public key hash as shown in the sample above.
-- Set the receiving address of the staking transaction as their own so relayers can extract useful information from the transaction input and compose the `RedeemScript` by themselves. E.g.
-    - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
-    - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.

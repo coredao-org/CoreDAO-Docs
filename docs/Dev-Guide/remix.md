@@ -2,7 +2,7 @@
 sidebar_label: Using Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core Chain using the Remix IDE
+description: Deploy Contracts on Core using the Remix IDE
 ---
 
 # Using Remix
@@ -22,7 +22,7 @@ In the picture below, you'll see that you can choose different Solidity compiler
 
 You can choose different environments on Remix, as shown in the picture below. An environment is just the blockchain network you'll be working with. There are built-in Virtual Machines (VMs), as well as providers that enable you to connect to external VMs.
 
-To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-testnet-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the [faucet](https://scan.test.btcs.network/faucet).
+To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-testnet-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based ont eh Core testnet your are connectede to. Refer [here](https://scan.test.btcs.network/faucet) for Core Testnet (1115) and [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114).
 
 ![remix-ide](../../static/img/remix/remix-3.avif)
 
@@ -32,7 +32,7 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 ## Smart Contract Compilation and Deployment
 
-* **Make sure that your smart contract follows the [Solidity Support Guidelines by Core Chain](./smart-contract-guidelines.md)**.
+* **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
 
 * Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
 

@@ -15,9 +15,9 @@ sidebar_position: 2
 
 * **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
 
-* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE.
+* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
-* **[Core Staking](https://stake.test.btcs.network/):** tCORE staking website.
+* **[Core Staking](https://stake.test.btcs.network/):** Core's official testnet staking website.
 
 * **[Gnosis Safe](https://safe.test.btcs.network/welcome):** secure multi-sig management of digital assets.
 
@@ -33,11 +33,11 @@ sidebar_position: 2
 
 * **[Core Bridge](https://bridge.coredao.org/):** official bridge for the Core ecosystem (more details in Core Bridge Resources)
 
-* **[Core Staking](https://stake.coredao.org/):** official CORE staking website.
+* **[Core Staking](https://stake.coredao.org/):** Core's official mainnet staking website.
 
 * **[Web3 Provider](https://cloud.infstones.com/login):** scalable API infrastructure provided by InfStones.
 
-* **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** web tool for contract verification (guide here).
+* **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** web tool for contract verification (guide [here](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan)).
 
 * **[Gnosis Safe](https://safe.coredao.org/welcome):** secure multi-sig management of digital assets.
 

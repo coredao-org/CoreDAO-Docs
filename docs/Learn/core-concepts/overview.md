@@ -2,66 +2,74 @@
 sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
-description: Get an Overview of Core Chain - its Purpose, Mission, & Future Vision
+description: Get an Overview of Core - its Purpose, Mission, & Future Vision
 ---
 
-# Overview of Core Chain
+# Overview of the Core Blockchain
 ---
 
 ## Introduction
-Core Chain is designed as the first Bitcoin-aligned Ethereum Virtual Machine (EVM) blockchain. It introduces a novel consensus mechanism called Satoshi Plus, enhancing Bitcoin's utility by integrating it into the decentralized finance (DeFi) sector through smart contracts and additional blockchain functionalities.
+The Core blockchain is designed as the first Bitcoin-aligned Ethereum Virtual Machine (EVM) compatible blockchain. It introduces a novel consensus mechanism called Satoshi Plus, which leverages Bitcoin miners and Bitcoin holders to secure a hyper-scalable smart contract platform. 
 
 ## Purpose and Mission
-The primary goal of Core Chain is to unlock the potential of Bitcoin in the DeFi ecosystem, termed **BTCFi**, leveraging the vast market value of Bitcoin to secure a decentralized, permissionless, and scalable smart contract platform. This initiative aims to bridge the inherent limitations of Bitcoin with the expansive capabilities of smart contracts, thereby broadening the utility and application of Bitcoin without compromising its core attributes of security and decentralization. Furthermore, Core's consenus mechanism, Satoshi Plus is a pioneering combination of Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Non-Custodial Bitcoin Staking. Through DPoW, it leverages the hash power of Bitcoin’s network of miners. Through DPoS, it not only allows CORE token staking but also allows any BTC holder to use absolute time-locks to delegate their Bitcoin to Core validators in exchange for token rewards. The combination of BTC miners, BTC stakers and CORE stakers provide a secure and transparent mechanism for security of the Core network. By simultaneously unlocking DeFi landscape for Bitcoin and leveraging the BTC miners, BTC stakers and CORE stakers, Core aims to provide a Bitcoin-secured, Bitcoin-aligned, and hyper-scalable smart contract platform. 
+The primary goal behind the Core blockchain is to unlock both the Bitcoin network and the Bitcoin asset. The result is a scalable, permissionless, and BTCfi-empowering (Bitcoin DeFi) smart contract platform secured by the decentralized infrastructure and vast market value of Bitcoin. 
 
-## Core Chain Technology
+The vision of Core’s future is one in which Bitcoin transitions from a mere Store of Value into a true Medium of Exchange within Core’s scalable and Bitcoin-powered BTCfi ecosystem. The Bitcoin asset, the most securely sound form of money ever witnessed, can finally be fully unlocked. 
+
+The central enabler in this transition is Bitcoin-alignment, because central to Bitcoin is its role as an incentive aligner. Fundamentally, the Bitcoin blockchain is a network of incentive-aligned stakeholders stewarding the security of the Bitcoin asset. That simple goal of securing the Bitcoin asset makes Bitcoin incredibly strong, yet also purposefully limited. Due to Bitcoin’s importance as a perfectly sound, gold-like store of value, the network is designed with purposeful limitations at the protocol level to maximize its preservation and permanence over its scalability. These intrinsic limitations impact Bitcoin’s speed, complexity, composability, interoperability, and flexibility. 
+
+Changing Bitcoin’s base layer is akin to fitting a square peg in a round whole, so instead of altering what makes Bitcoin special, Core simply extends that unique incentive alignment to its smart contract platform. This alignment occurs through Core’s unique consensus mechanism, Satoshi Plus. Together, Bitcoin’s Nakamoto Consensus and Core’s Satoshi Plus consensus reinforce one another, simultaneously defending the Bitcoin asset adn Bitcoin-powered smart contracts, respectively. 
+In alignment with Bitcoin, Satoshi Plus unlocks the Bitcoin Risk-Free Rate for Bitcoin holders, a second block reward for Bitcoin miners, and an expansive BTCfi ecosystem for Bitcoin and DeFi users. 
+
+## Core Technology
 
 1. **Satoshi Plus Consensus**
-This innovative consensus mechanism combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking. By doing so, Satoshi Plus aims to utilize Bitcoin's mining infrastructure, integrating Bitcoin miners and mining pools into the security framework of a scalable smart contract platform. Satoshi Plus leverages the hash power of Bitcoin miners while also integrating stake-based voting, thus securing the Core Chain with a robust and hybrid consensus model that is both energy-efficient and scalable. This consensus not only facilitates the participation of Bitcoin miners but also allows CORE token holders to participate actively in the governance of the network.
-    * **Delegated Proof of Work (DPoW):** This component allows Bitcoin miners to participate directly in the security of Core Chain by recycling their hash power. Miners can delegate their hashing power to Core Validators, earning additional rewards in CORE tokens, thus incentivizing continued participation in the Bitcoin network.
-    * **Delegated Proof of Stake (DPoS):** CORE token holders can stake their tokens with Core Validators, influencing the network’s governance and earning rewards. This mechanism promotes a democratic and decentralized governance model where all stakeholders can participate in network decisions.
-    * **Non-custodial Bitcoin Staking:** A feature allowing Bitcoin holders to stake their bitcoin directly on the blockchain without giving up control. This is achieved using absolute time locks that ensure bitcoin remains in the holder's control while participating in staking. This means users can participate in the network's consensus without transferring ownership of their coins. Stakers can lock their bitcoins in time-locked contracts directly on the Bitcoin blockchain, contributing to the network's security and decision-making processes, while earning rewards in CORE tokens.
+This innovative consensus mechanism combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking, thereby incorporating Bitcoin miners, CORE stakers, and Bitcoin stakers, respectively, in the election of Core validators. Each of these three legs of Satoshi Plus introduces a new layer of security and incentive-alignment. 
+    * **Delegated Proof of Work (DPoW):** Bitcoin miners enhance Core's security by delegating their hash power to Core validators, earning supplemental rewards in the form of CORE tokens. This symbiotic relationship leverages Bitcoin's robust security infrastructure without additional costs to the miners, aligning incentives and bolstering network integrity.
+    * **Delegated Proof of Stake (DPoS):** Holders of CORE tokens actively participate in Core's consensus by delegating their tokens to validators. This not only ensures a high level of network security but also provides stakers with CORE token rewards, encouraging broad participation and maintaining a balanced, decentralized validator election process.
+    * **Non-custodial Bitcoin Staking:** Bitcoin holders can lock their assets in absolute time locks on the Bitcoin blockchain, earning CORE token rewards while maintaining custody of their Bitcoin. This innovative approach transforms Bitcoin into a yield-bearing asset, adding value without compromising the security and trust inherent to the Bitcoin network.
 
 2. **Advanced Smart Contract Capabilities**
-    * **EVM Compatibility:** Ensures that developers can easily port existing Ethereum-based dApps to Core Chain without significant changes, encouraging adoption and growth of the Core Chain ecosystem.
-    * **Core-Native Wrapped Bitcoin (coreBTC):** A decentralized solution for wrapping Bitcoin, allowing it to be used seamlessly on the Core Chain for smart contracts and other transactions while maintaining a 1:1 peg with Bitcoin.
+    * **EVM Compatibility:** Enables developers a familiar building environment in which they can easily port existing Ethereum-based dapps to Core without significant changes, encouraging adoption and growth within the Core ecosystem.
+    * **Core-Native Wrapped Bitcoin (coreBTC):** A decentralized, trust-minimized solution for bridging Bitcoin to Core, allowing it to be used seamlessly on the Core blockchain for smart contracts and other BTCfi activities while maintaining a 1:1 peg with Bitcoin.
 
 3. **Security Enhancements**
-    * **Enhanced Transaction Validation:** Leveraging Bitcoin’s proven security model, Core Chain implements robust transaction validation mechanisms to ensure network integrity and prevent fraud.
-    * **Guardian Nodes:** These nodes monitor the network for any signs of malicious activity and can intervene to correct or penalize bad actors, reinforcing the security of the network.
+    * **Enhanced Transaction Validation:** Core involves both Bitcoin miners and Bitcoin stakers in the security of its smart contracts.
+    * **Guardian Nodes:** In addition to existing security checks, Verifiers have the sole responsibility of monitoring the network for any signs of malicious activity and can penalize bad actors with verifiable proof.
 
 4. **Interoperability Features**
-    * **Trustless Atomic Swaps:** Facilitates direct, trustless trading between Bitcoin, Core Chain, and other EVM chains, enhancing liquidity and user engagement across different blockchain ecosystems.
-    * **HTLC (Hashed TimeLock Contracts):** Enables secure, time-bound transactions across blockchains, adding an extra layer of security and functionality for cross-chain interactions.
+    * **Trustless HTLC Atomic Swaps:** Hashed TimeLock Contracts enable the trustless, peer-to-peer exchange of tokens between Core and other blockchains, including (and especially) Bitcoin.
+    * **Cross-Chain Interoperability:** As a scalable, EVM-compatible blockchain, Core has integrations with many cross-chain dapps and bridges.
 
 5. **Usability and Accessibility**
-    * **User-Friendly Interfaces:** Efforts are being made to ensure that both technical and non-technical users can easily interact with Core Chain through user-friendly wallets and interfaces.
-    * **Comprehensive Developer Tools:** A suite of tools and documentation is provided to support developers in building, deploying, and managing applications on Core Chain.
+    * **User-Friendly Interfaces:** Core is accessible through many user-friendly and commonly used wallets and interfaces.
+    * **Comprehensive Developer Tools:** A suite of tools and documentation is provided to support developers in building, deploying, and managing applications on Core.
 
 6. **Governance and Community Engagement**
-    * **Transparent Governance Processes:** Core Chain fosters a transparent and inclusive decision-making process, allowing the community to propose and vote on changes to the protocol.
-    * **Community Incentive Programs:** Initiatives designed to reward community members for their contributions to the ecosystem, whether through development, education, or participation in governance.
+    * **Transparent Governance Processes:** Certain variable parameters like the burn mechanism involve a transparent and inclusive decision-making process, allowing community participation and on-chain voting. 
+    * **Community Incentive Programs:** Community members have initiatives designed to reward users for their contributions to the ecosystem, whether through development, education, or participation in governance.
 
-
-## Strategic Objectives
-* **Interoperability and Expansion:** Core Chain is set to introduce trustless atomic swaps between Bitcoin, Core Chain, and other EVM chains, increasing interoperability within the blockchain ecosystem.
-* **Enhanced Tokenomics:** Core-native wrapped bitcoin (coreBTC) and other Bitcoin-related improvements aim to enhance the liquidity and functional scope of Bitcoin in various financial applications.
-* **Community and Stakeholder Engagement:** Core Chain places a strong emphasis on community involvement and stakeholder benefits, ensuring that both miners and token holders (BTC/CORE) are integral to the platform's consensus and rewarded accordingly.
 
 ## State of the Core Ecosystem
-Many protocols in Core Chain’s ecosystem are focused on BTC and BTC derivatives (i.e., Bitcoin-native assets based on BTC such as Ordinals NFTs). BTC is largely an underutilized asset, as the limited programmability of Bitcoin Script makes it challenging to activate BTC in conventional DeFi protocols while maintaining custody of the asset(s). With a consensus mechanism integrated with Bitcoin’s own consensus, Core Chain aims to provide a DeFi environment for protocols to utilize BTC assets with minimal trust assumptions. Core offers grants and builder programs like [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https://ignition.coredao.org/) and [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram) intended to incentivize building innovative projects on Core Chain and catalyzing more growth around Bitcoin DeFi. Refer [here](https://coredao.org/explore/ecosystem) to explore the ever growing ecosystem of Core Chain.
+Core is home to a robust and growing BTCfi ecosystem. Many protocols on Core are focused on Bitcoin and Bitcoin derivatives (i.e., Bitcoin-native assets based on Bitcoin such as Ordinals NFTs). Bitcoin is largely an underutilized asset, as the limited programmability of Bitcoin Script makes it challenging to activate Bitcoin in conventional DeFi protocols while maintaining custody of the asset(s). With a consensus mechanism integrated with Bitcoin’s own consensus, Core is aimed at providing a DeFi environment for protocols to utilize Bitcoin-based assets with minimal trust assumptions. Furthermore, grants and builder programs like [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https://ignition.coredao.org/) and [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram) are intended to incentivize building innovative projects on Core and catalyze more growth around Bitcoin DeFi. Explore the ever-expanding Core ecosystem [here](https://coredao.org/explore/ecosystem).
 
 
 ## Future Vision
-The roadmap includes expanding the utility and performance of Bitcoin by maintaining the core ethos of the network while introducing enhancements that do not alter the base layer. Core Chain envisions a more interconnected and functionally diverse blockchain ecosystem where Bitcoin's foundational strengths are leveraged to support new and emerging technologies and applications in DeFi. Core Chain has a series of development plans on its roadmap:
+The Core roadmap is designed in accordance with the primary goal of unlocking Bitcoin. This includes many structural upgrades designed at further aligning Bitcoin and Core, creating a better user experience for users, and leveraging other areas of research and development. Ultimately, these items should serve to make a more interconnected and functionally diverse blockchain ecosystem where Bitcoin's foundational strengths are leveraged to support new and emerging technologies and applications in DeFi. Some roadmap items include:
 
-* **Local fee markets:** These can make transactions more predictable and potentially cheaper.
-* **Atomic swaps:** Leveraging HTLCs, atomic swaps could be used for general purposes.
-* **coreBTC improvements:** Integrating coreBTC with Core Chain’s Satoshi Plus consensus and using multisig wallets can increase the security of the asset. Additionally, Lockers could be given more collateral options.
-* **coreBTC as a gas token:** This would allow users to pay for transaction fees in either CORE or coreBTC and would enable users to interact with the ecosystem without using any other asset than BTC.
-* **Bitcoin LST:** This would allow BTC stakers to earn yield on their BTC while also using that BTC for various applications on Core Chain.
-* **Restaking:** This would enable other protocols to benefit from Core Chain’s Bitcoin protection.
+* **Dual-Staking:** Creating higher Bitcoin staking rates for stakers of both Bitcoin and CORE tokens.
+
+* **Local Fee Markets:** Improvements that can make transactions more predictable and potentially cheaper.
+
+* **Atomic Swaps:** Leveraging HTLCs, atomic swaps can continue to be a source of structural alignment between the Bitcoin and Core blockchains.
+* **coreBTC Improvements:** Integrating coreBTC with Core Chain’s Satoshi Plus consensus and using multisig wallets can increase the security of the asset. Additionally, Lockers could be given more collateral options. 
+
+* **coreBTC as a Gas Token:** This option would allow users to pay for transaction fees in either CORE or coreBTC.
+
+* **Bitcoin LST:** This feature would allow BTC stakers to earn yield on their Bitcoin while also using that BTC for various applications on Core.
+
+* **Restaking:** This addition would enable other protocols to benefit from Core’s Bitcoin protection.
+
 
 ## Conclusion
-Core Chain represents a significant step forward in the evolution of blockchain technology by effectively merging Bitcoin's robust security framework with the expansive capabilities of smart contracts. It aims to set a new standard for how traditional cryptocurrencies can interact with and benefit from the burgeoning field of decentralized finance.
-
+By leveraging its unique Satoshi Plus consensus mechanism, Core integrates Bitcoin miners, CORE stakers, and non-custodial Bitcoin stakers, ensuring robust security and decentralized governance. This innovative approach not only enhances Bitcoin's utility but also fosters a thriving BTCfi ecosystem, empowering users, developers, and investors to unlock new opportunities in decentralized finance. As Core continues to grow and evolve, it stands poised to further Bitcoin’s role as the central pillar of a scalable, permissionless, and interconnected financial future.

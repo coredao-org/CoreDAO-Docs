@@ -29,7 +29,7 @@ In this document, we'll cover the very basics of hitting an RPC endpoint with Po
 
 ![new-workspace-postman](../../static/img/rpc/postman/rpc-psotman-4.png)
 
-5. First, change the `GET` request to a `POST` request, as that's how our query will be structured. Then, add the RPC URL that you want to use to get data related to a specific Core Chain transaction. Remember that you can use any of the [valid Core RPC URLs](./rpc-list.md).
+5. First, change the `GET` request to a `POST` request, as that's how our query will be structured. Then, add the RPC URL that you want to use to get data related to a specific Core blockchain transaction. Remember that you can use any of the [valid Core RPC URLs](./rpc-list.md).
 
 ![set-request-type-postman](../../static/img/rpc/postman/rpc-psotman-5.png)
 

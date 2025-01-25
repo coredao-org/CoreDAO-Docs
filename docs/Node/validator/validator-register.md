@@ -42,9 +42,9 @@ A quick way to check that you've successfully registered your full node as a val
 
 ## Validator Election
 
-Each day, the top 23 validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. When the last block of a round is mined, the round’s accumulated rewards are distributed and the next round's validator set is selected. For more details about how the validator election works, refer to the[ validator election](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election) section of the Technical Whitepaper.
+Each day, the top **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. When the last block of a round is mined, the round’s accumulated rewards are distributed and the next round's validator set is selected. For more details about how the validator election works, refer to the [validator election](./validator-election.md) section.
 
-You can check the validator status on the stake website, active elected validators will be marked as `Active/Normal`. The validator set is updated at 00:00 am UTC every day.
+You can check the validator status on the stake website, active elected validators will be marked as `Active/Normal`. The validator set is updated at **00:00 am UTC** every day.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-3.avif)
 

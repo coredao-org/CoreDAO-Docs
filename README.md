@@ -1,12 +1,20 @@
-# Core DAO Developer Documentation
+# Core Developer Documentation
 
-Welcome to the Core DAO Developer Documentation for Core Chain! This comprehensive guide is designed to assist developers in navigating and integrating with Core Chain effectively. Whether you are looking to build decentralized applications, participate in network governance, or simply explore the capabilities of Core Chain, this documentation provides all the necessary tools and resources.
+Welcome to Core's Official Developer Documentation! This comprehensive guide is designed to assist developers in navigating and integrating with Core blockchain effectively. Whether you are looking to build decentralized applications, participate in network governance, or simply explore the capabilities of Core blockchain, this documentation provides all the necessary tools and resources.
 
 ## Commands for Local Build
 
-* Install depencies `npm run install ` 
-* Start the live-reloading docs server `npm run start` 
+### Using NPM
+
+* Install depencies `npm install ` 
 * Build the documentation site `npm run build`
+* Start the live-reloading docs server `npm run start` 
+
+### Using Yarn
+
+* Install depencies `yarn install ` 
+* Build the documentation site `yarn run build`
+* Start the live-reloading docs server `yarn run start` 
 
 ## 📜 License
 
