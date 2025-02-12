@@ -50,7 +50,8 @@ Los stakers de Bitcoin ganan rendimiento como recompensas de staking en forma de
 - La transacción también debe contener una salida `op_return` que especifique:
   - La dirección del validador de Core al que el staker desea delegar su Bitcoin.
   - La dirección a la que el staker desea que se envíen sus recompensas en tokens CORE.
-- **Existen requisitos mínimos** para la **cantidad** de BTC que se va a apostar. Los usuarios deben apostar al menos **0,01 Bitcoin** (menos las tarifas de transacción).
+- Minimum requirements on staked BTC amount depends on the chosen method. If using the official website UI, users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
+- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 
 ### **Flujo de Trabajo de la Transacción**
 
@@ -71,7 +72,7 @@ Tenga en cuenta que las operaciones de Staking No Custodial de BTC se realizan e
 
 ## **Proceso Paso a Paso**
 
-1. **Bloqueando Bitcoin:** Los poseedores de Bitcoin inician el proceso de staking bloqueando su Bitcoin en un timelock absoluto en la blockchain de Bitcoin.
+1. **Bloqueando Bitcoin:** Los poseedores de Bitcoin inician el proceso de staking bloqueando su Bitcoin en un timelock absoluto en la blockchain de Bitcoin. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 2. **Incluyendo Información de Delegación:** Dentro de la transacción de bloqueo, los stakers incluyen:
    1. **Dirección del Validador de Core:** La dirección del Validador de Core al que delegarán su Bitcoin.
    2. **Dirección de Recompensa en Tokens CORE:** La dirección donde quieren que se envíen sus recompensas en tokens CORE.
