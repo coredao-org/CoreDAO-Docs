@@ -14,8 +14,9 @@ En esta guía, proporcionamos un tutorial paso a paso sobre cómo delegar sus to
 
 ## Sitio web de apuesta central
 
-- Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
-- Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
+- Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Directrices paso a paso para delegar CORE
 
@@ -76,7 +77,7 @@ Para delegar sus tokens CORE, siga estos pasos:
 
 #### Paso 2.1 Especificar cantidad de CORE a delegar
 
-- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en **Confirmar delegación**.
+- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en **Confirmar delegación**. A minimum of 1 CORE is required for staking CORE. Whereas, there are requirements for staaked durations.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -100,6 +101,10 @@ Ahora que hemos delegado CORE con éxito, verifiquemos que nuestro CORE esté si
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)</p>
+
+:::note
+Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+:::
 
 ### Paso 3: Dejar de delegar CORE
 
@@ -135,7 +140,7 @@ Si queremos anular la delegación de nuestro CORE, deberá hacer clic en los 3 p
 
 ## Reclamando recompensas
 
-Puede ver la información de recompensas sobre sus delegaciones activas seleccionando **Mi staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días.
+Puede ver la información de recompensas sobre sus delegaciones activas seleccionando **Mi staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 
 Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Las transacciones de reclamaciones históricas se enumeran en la pestaña Reclamaciones del sitio web, como se muestra a continuación.
 
