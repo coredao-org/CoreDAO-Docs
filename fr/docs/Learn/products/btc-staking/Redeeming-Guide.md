@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Récupérer des Bitcoins Stakés ou Réclamer des Récompenses en CORE
 
-Core offre aux détenteurs de Bitcoin la possibilité de staker leurs actifs sur la blockchain Core pour gagner un revenu passif sous forme de tokens CORE. Pour apprendre à staker vos actifs Bitcoins sur Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos Bitcoins avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos Bitcoin stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking Bitcoin**’.
+Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. Pour apprendre à staker vos actifs Bitcoins sur Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos Bitcoins avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos Bitcoin stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking Bitcoin**’.
 
 ## Informations sur la Distribution des Récompenses
 
