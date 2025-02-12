@@ -19,7 +19,7 @@ Para poder apostar, debes tener los siguientes requisitos previos:
 
 A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu Bitcoin en Core.
 
-1. **Mínimo de 0.01 Bitcoin + Tarifa de Gas:** Para apostar con éxito tu Bitcoin en Core, necesitas un mínimo de 0.01 Bitcoin. Además del monto del staking, los usuarios deben considerar las tarifas de gas necesarias en Bitcoin para ejecutar transacciones en la red Bitcoin. Si planeas apostar por menos de un mes, es recomendable tener al menos 0.05 Bitcoin. Este monto adicional ayuda a cubrir la posible congestión de la red, que puede generar tarifas de gas más altas que las recompensas obtenidas del staking.
+1. **Minimum Bitcoin Amount \+ Gas Fee:** The minimum BTC required for staking on Core depends on the chosen method. If using the [official website UI](https://stake.coredao.org/staking), you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
 
 2. **Mínimo de 1 CORE + Tarifa de Gas:** Para apostar, debes tener al menos 1 CORE. Además del monto del staking, los usuarios también deben tener en cuenta las tarifas de gas en tokens CORE para el procesamiento de transacciones.
 
@@ -57,7 +57,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 ## Especificando la Cantidad de BTC a Apostar
 
-4. Ingresa la cantidad de Bitcoin que deseas apostar. El monto mínimo es 0.01 BTC.
+4. Ingresa la cantidad de Bitcoin que deseas apostar. The minimum amount is 0.01 BTC if user is staking through the website UI. However, there are no minimum amount requirements if staking BTC through staking script.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
@@ -142,7 +142,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 15. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es importante entender y especificar varios parámetros clave:
 
 - Especificar la cantidad de Bitcoin que deseas delegar
-  - La cantidad mínima para delegar es 0.01 Bitcoin
+  - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
   - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
