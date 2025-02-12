@@ -19,14 +19,15 @@ Pour pouvoir staker, vous devez disposer des éléments suivants :
 
 Les points suivants sont des éléments clés auxquels les utilisateurs doivent faire attention lorsqu'ils stakent leur Bitcoin sur Core.
 
-1. **Minimum de 0,01 Bitcoin \+ Frais de Gaz :** Pour staker avec succès votre Bitcoin sur Core, vous avez besoin d'un minimum de 0,01 Bitcoin. En plus du montant de staking, les utilisateurs doivent prendre en compte les frais de gaz nécessaires en Bitcoin pour exécuter des transactions sur le réseau Bitcoin. Si vous prévoyez de staker pour moins d'un mois, il est conseillé de disposer d'au moins 0,05 Bitcoin. Ce montant supplémentaire aide à couvrir une éventuelle congestion du réseau, qui peut entraîner des prix du gaz plus élevés que les récompenses obtenues du staking.
-2. **Comprendre les Différences dans les Adresses de Staking de Bitcoin :**
+1. **Minimum Bitcoin Amount \+ Gas Fee:** TThe minimum BTC required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
+2. **Minimum Staking Duration:** \* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+3. **Comprendre les Différences dans les Adresses de Staking de Bitcoin :**
    - L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
-3. **Délais pour que les Actifs Verrouillés Apparaissent dans votre Portefeuille Bitcoin :**
+4. **Délais pour que les Actifs Verrouillés Apparaissent dans votre Portefeuille Bitcoin :**
    - Vous pouvez rencontrer des délais avant que votre Bitcoin verrouillé ne soit affiché dans vos portefeuilles Bitcoin. Ce délai résulte principalement de retards dans la confirmation des transactions sur le réseau Bitcoin, qui peuvent prendre plusieurs heures en raison du temps de bloc, du nombre de confirmations de blocs requises et de la congestion du réseau.
    - Bien que nous travaillions activement avec les partenaires de portefeuilles pour soutenir l'affichage en temps opportun de vos actifs dans vos portefeuilles, vous pouvez vérifier vos actifs verrouillés sur la page "MyStaking" sur le site de staking de Core.
    - Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space/).
-4. **Considérations pour les Périodes de Verrouillage**
+5. **Considérations pour les Périodes de Verrouillage**
    - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 
 ## Déroulement du staking Non-custodial de BTC
@@ -35,12 +36,12 @@ Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décen
 
 1. **Initier le Staking :** Commencez par accéder soit à l'outil de [staking BTC basé sur l'outil CLI](https://github.com/coredao-org/btc-staking-tool) (pour les utilisateurs techniques), soit à la [plateforme de staking en ligne](https://stake.coredao.org/) (pour les utilisateurs généraux).
 2. **Staker du Bitcoin avec un Verrouillage Temporel :** Vous stakez vos Bitcoins en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, et vos Bitcoin restent verrouillés jusqu'à la fin de la période spécifiée. Assurez-vous de suivre les exigences pour qu'une transaction soit valide et éligible ; référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) pour plus de détails.
-   1. Il n’y a pas de durée minimale de staking requise, mais veillez à choisir soigneusement vos périodes de blocage.
+   1. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement. THerefore, make sure to thoughtfully select your lockup periods.
    2. Incluez l'adresse du validateur Core pour déléguer vos actifs.
    3. Incluez l'adresse de votre portefeuille Core pour les récompenses.
 3. **Voter pour des Validateurs :** En incluant l'adresse des validateurs Core dans votre transaction, vous pouvez déléguer votre Bitcoin staké au validateur choisi sur la blockchain Core.
 4. **Connecter un portefeuille Core pour les récompenses :** Dans le champ de retour, vérifiez votre adresse de portefeuille Core ; vous recevrez les récompenses en tokens CORE à cette adresse.
-5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement.
+5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement. ALso, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 6. **Récupérer des Bitcoin:** Une fois la période de verrouillage du staking expirée, les Bitcoin stakés resteront inactifs dans l'adresse de staking jusqu'à ce qu'ils soient récupérés par l'utilisateur.
 
 ## Guide de Staking Non-Custodial de Bitcoin
@@ -91,8 +92,8 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 8. Une fois votre portefeuille Bitcoin connecté, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-- Spécifiez le montant de Bitcoin que vous souhaitez déléguer. Le montant minimum à déléguer est de **0,01 Bitcoin**.
-- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
+- Spécifiez le montant de Bitcoin que vous souhaitez déléguer. The minimum amount to delegate is **0.01 Bitcoin** id staking via official stkaign website UI and no requirements if staking BTC via the staking script.
+- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation. The minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
   - Vous pouvez entrer des valeurs en sélectionnant à l'intérieur de la boîte de temps de verrouillage ou en cliquant sur l'icône du calendrier pour sélectionner la date et cliquer sur "OK" pour continuer.
   - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
@@ -103,6 +104,10 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 9. Notez que **l'Adresse de Récompense sur Core** est récupérée depuis le portefeuille Core connecté. Vous devriez connecter le portefeuille Core avec la même adresse sur laquelle vous souhaitez recevoir les récompenses de staking en tokens CORE.
 10. Cliquez sur **Confirm** pour compléter la transaction.
+
+:::note
+Note: For BTC staking, transferring the staking validator will interrupt staking, resulting in the loss of rewards for that day.
+:::
 
 ### Confirmer la Sortie OP\_Return
 
