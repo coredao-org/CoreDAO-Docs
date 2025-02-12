@@ -45,7 +45,9 @@ Users should align with the following requirements for a Bitcoin staking transac
 
 * Users must ensure that the transaction is sent to their address.  
 * Using the Bitcoin native timelock feature, specify the lock-up amount intended to be delegated to the validator on the Core blockchain as the transaction output.   
-* **_Minimum requirements exist_** for the **amount**of BTC that can staked. Users should stake at least **0.01 Bitcoin** (excluding the transaction fees).  
+* When using the staking script, there is **no** minimum BTC requirement for staking. However, if staking through the [official staking website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). 
+* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+
 * The transaction should also contain an op\_return output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.

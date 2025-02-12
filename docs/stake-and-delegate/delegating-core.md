@@ -12,8 +12,9 @@ In this guide, we provide a step-by-step walkthrough on how to delegate your COR
 
 ## Core Staking Website
 
-  * Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)  
-  * Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+  * Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)  
+  * Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+  * Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Step-by-Step Guidelines for Delegating CORE
 
@@ -68,7 +69,7 @@ To delegate your CORE tokens, follow these steps:
 </p>
 
 #### Step 2.1 Specify amount of CORE to delegate
-* After selecting CORE, you’ll be prompted to enter the amount of CORE you want to delegate. Review the validator’s commission, then click **Confirm Delegation**.
+* After selecting CORE, you’ll be prompted to enter the amount of CORE you want to delegate. Review the validator’s commission, then click **Confirm Delegation**. A minimum of 1 CORE is required for staking CORE. Whereas, there are requirements for staaked durations.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -93,6 +94,10 @@ Now that we’ve successfully delegated CORE, lets verify that our CORE is now b
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
 </p>
+
+:::note
+Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+:::
 
 ### Step 3 Undelegating CORE 
 
@@ -129,7 +134,7 @@ If we want to Undelegate our CORE, you will want to click the 3 dots at the end 
 </p>
 
 ## Claiming Rewards
-You can view reward information about your active delegations by selecting **My Staking** on the top right corner in teh header of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day.
+You can view reward information about your active delegations by selecting **My Staking** on the top right corner in teh header of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 
 To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's Claim tab, as shown below.
 

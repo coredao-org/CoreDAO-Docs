@@ -48,7 +48,8 @@ Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on thei
 * The transaction should also contain an `op_return` output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.  
-* **Minimum requirements exist** for the **amount** of BTC to be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
+* Minimum requirements on staked BTC amount depends on the chosen method. If using the official website UI, users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
+* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 
 ### **Transaction Workflow**
 
@@ -69,7 +70,7 @@ Note that Non-Custodial BTC Staking operations are conducted on two separate blo
 
 ## **Step-by-Step Process**
 
-1. **Locking Bitcoin:** Bitcoin holders initiate the staking process by locking their Bitcoin in an absolute time lock on the Bitcoin blockchain.  
+1. **Locking Bitcoin:** Bitcoin holders initiate the staking process by locking their Bitcoin in an absolute time lock on the Bitcoin blockchain. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement. 
 2. **Including Delegation Information:** Within the locking transaction, stakers include:  
    1. **Core Validator Address:** The address of the Core Validator to which to delegate their Bitcoin.  
    2. **CORE Token Reward Address:** The address where they want their CORE token rewards sent.  
