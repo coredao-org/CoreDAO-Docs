@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Redeem Staked Bitcoin or Claim CORE Rewards
 
-Core offers Bitcoin holders to stake their assets onto the Core blockchain to ear passive income in the form of CORE tokens. To learn how to stake your Bitcoin assets onto Core and earn rewards, follow our detailed [guide](./stake-btc-guide.md). After you have succesfully staked your Bitcoin on the Core blockchain, next up is to learn to claim your CORE rewards or redeem your staked Bitcoin. This detailed guide will be utilized when you see ‘**Redeem**’ appear under ‘**Action**’ on the delegated validator you chose previously or ‘**Claim**’ next to ‘**Delegated Hash & Core Rewards**’ and or ‘**Bitcoin Staking Rewards’**.
+Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. To learn how to stake your Bitcoin assets onto Core and earn rewards, follow our detailed [guide](./stake-btc-guide.md). After you have succesfully staked your Bitcoin on the Core blockchain, next up is to learn to claim your CORE rewards or redeem your staked Bitcoin. This detailed guide will be utilized when you see ‘**Redeem**’ appear under ‘**Action**’ on the delegated validator you chose previously or ‘**Claim**’ next to ‘**Delegated Hash & Core Rewards**’ and or ‘**Bitcoin Staking Rewards’**.
 
 ## Reward Distribution Information
 
