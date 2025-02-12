@@ -50,7 +50,8 @@ Les stakers de Bitcoin gagnent du rendement sous forme de récompenses de stakin
 - La transaction doit également contenir une sortie `op_return` spécifiant
   - L'adresse du validateur Core auquel le staker souhaite déléguer son Bitcoin.
   - L'adresse à laquelle le staker souhaite que ses récompenses en tokens CORE soient envoyées.
-- **Des exigences minimales existent** pour le **montant** de BTC devant être staké. Les utilisateurs doivent staker au moins **0,01 Bitcoin** (moins les frais de transaction).
+- Minimum requirements on staked BTC amount depends on the chosen method. If using the official website UI, users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
+- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 
 ### **Déroulement des transactions**
 
@@ -71,7 +72,7 @@ Notez que les opérations de staking de BTC non-custodial sont effectuées sur d
 
 ## **Processus étape par étape**
 
-1. **Verrouillage des Bitcoins :** Les détenteurs de Bitcoin initient le processus de staking en verrouillant leurs bitcoins dans un timelock absolu sur la blockchain Bitcoin.
+1. **Verrouillage des Bitcoins :** Les détenteurs de Bitcoin initient le processus de staking en verrouillant leurs bitcoins dans un timelock absolu sur la blockchain Bitcoin. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 2. **Inclusion des informations de délégation :** Dans la transaction de verrouillage, les stakers incluent :
    1. **Adresse du validateur Core :** L'adresse du validateur Core auquel déléguer leur Bitcoin.
    2. **Adresse de récompense en tokens CORE :** L'adresse où ils souhaitent recevoir leurs récompenses en tokens CORE.
