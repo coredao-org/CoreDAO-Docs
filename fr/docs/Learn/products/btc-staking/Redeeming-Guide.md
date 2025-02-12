@@ -43,6 +43,10 @@ Si votre période de staking a expiré, vous pouvez récupérer vos Bitcoins sta
 
 ## Réclamer des Récompenses en CORE Gagnées avec la Délégation de Bitcoin Staké
 
+:::note
+To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+:::
+
 1\. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit, et cliquez sur ‘**Mes Stakings**’.
 
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-23.avif)
