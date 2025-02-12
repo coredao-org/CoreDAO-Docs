@@ -46,8 +46,13 @@ Le timelock CLTV est une fonctionnalité native du réseau Bitcoin. Un utilisate
 Les utilisateurs doivent se conformer aux exigences suivantes pour qu'une transaction de staking de Bitcoin soit considérée comme valide.
 
 - Les utilisateurs doivent s'assurer que la transaction est envoyée à leur propre adresse.
+
 - En utilisant la fonctionnalité native de timelock de Bitcoin, spécifiez le montant à verrouiller destiné à être délégué au validateur sur la blockchain Core comme sortie de la transaction.
-- **_Des exigences minimales existent_** pour le **montant** de BTC pouvant être mis en staking. Les utilisateurs doivent staker au moins **0,01 Bitcoin** (hors frais de transaction).
+
+- When using the staking script, there is **no** minimum BTC requirement for staking. However, if staking through the [official staking website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees).
+
+- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+
 - La transaction doit également contenir une sortie op\_return spécifiant
   - L'adresse du validateur Core auquel le staker souhaite déléguer son Bitcoin.
   - L'adresse à laquelle le staker souhaite que ses récompenses en tokens CORE soient envoyées.
