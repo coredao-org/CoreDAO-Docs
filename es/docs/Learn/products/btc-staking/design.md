@@ -20,7 +20,8 @@ La metodología para integrar el staking de Bitcoin se centra en el [tiempo de b
 - La transacción también debe contener una salida `op_return` que especifique
   - La transacción también debe contener una salida `op_return` que especifique.
   - La dirección a la que el staker desea que se envíen sus recompensas en tokens CORE.
-- Para que las apuestas sean elegibles en Core, _existen requisitos mínimos_ para la **cantidad** de BTC que se puede apostar. Los usuarios deben apostar al menos **0,01 Bitcoin** (menos las tarifas de transacción).
+- To be eligible for staking on Core, minimum requirements apply to the amount of BTC that can be staked, depending on the staking method. If using the [official staking website UI](https://stake.coredao.org/staking), users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
+- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
 
 ### Flujo de trabajo de transacciones
 
@@ -79,7 +80,7 @@ El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuaci�
 - Al utilizar la dirección multifirma `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
 
 :::note
-Existen requisitos mínimos sobre la cantidad de BTC que se puede apostar para ser elegible para la apuesta de BTC no custodial en Core. Un usuario debe apostar al menos **0,01 Bitcoin** (sin incluir las tarifas de transacción).
+To be eligible for Non-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). There is **no** minimum requirement when staking via the script. Also, the minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
 :::
 
 ## OP_RETURN Salida
@@ -90,7 +91,7 @@ La salida `OP_RETURN` debe contener toda la información de staking en orden y e
 - **`LENGTH`:** que representa la longitud total de bytes después del código de operación `OP_RETURN`. _Tenga en cuenta que todos los datos deben enviarse con sus bytes de tamaño apropiado_.
 - **`Identificador Satoshi Plus`:** (**SAT+**) 4 bytes
 - **`Versión`:** (**0x01**) 1 byte
-- **`ID de cadena`:** (1115 para Core Testnet y 1116 para Core Mainnet) 2 bytes
+- **`Chain ID`:** (1114 for Core Testnet2, 1115 for Core Testnet, and 1116 for Core Mainnet) 2 bytes
 - **`Delegator`:** La dirección principal para recibir recompensas, 20 bytes
 - **`Validador`:** La dirección del validador principal a la que apostar, 20 bytes
 - **`Tarifa`:** Tarifa por retransmisor, 1 byte, rango [0,255], medido en CORE
