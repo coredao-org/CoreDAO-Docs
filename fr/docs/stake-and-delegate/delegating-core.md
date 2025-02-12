@@ -14,8 +14,9 @@ In this guide, we provide a step-by-step walkthrough on how to delegate your COR
 
 ## Site Web de Staking Core
 
-- Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
-- Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
+- Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Guide étape par étape pour déléguer CORE
 
@@ -77,7 +78,7 @@ Pour déléguer vos tokens CORE, suivez ces étapes :
 
 #### Étape 2.1 : Spécifiez le montant de CORE à déléguer
 
-- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**.
+- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**. A minimum of 1 CORE is required for staking CORE. Whereas, there are requirements for staaked durations.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -102,6 +103,10 @@ Maintenant que nous avons délégué avec succès du CORE, vérifions que notre 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
 </p>
+
+:::note
+Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+:::
 
 ### Step 3 Undelegating CORE
 
@@ -139,7 +144,7 @@ Si nous souhaitons annuler la délégation de notre CORE, vous devrez cliquer su
 
 ## Réclamation des récompenses
 
-Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour.
+Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 
 Pour réclamer vos récompenses, sélectionnez simplement le bouton Claim en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet Claim du site, comme indiqué ci-dessous.
 
