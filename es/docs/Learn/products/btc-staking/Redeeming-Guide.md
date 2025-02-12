@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Redimir Bitcoin Apostado o Reclamar Recompensas CORE
 
-Core ofrece a los poseedores de Bitcoin la posibilidad de apostar sus activos en la blockchain de Core para ganar ingresos pasivos en forma de tokens CORE. Para aprender cómo apostar tus activos de Bitcoin en Core y ganar recompensas, sigue nuestra detallada [guía](./stake-btc-guide.md). Después de haber apostado exitosamente tu Bitcoin en la blockchain de Core, el siguiente paso es aprender a reclamar tus recompensas CORE o redimir tu Bitcoin apostado. Esta guía detallada se utilizará cuando veas '**Redimir**' aparecer bajo '**Acción**' en el validador delegado que elegiste previamente o '**Reclamar**' junto a '**Delegado Hash & Recompensas Core**' y/o '**Recompensas de Staking de Bitcoin**'.
+Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. Para aprender cómo apostar tus activos de Bitcoin en Core y ganar recompensas, sigue nuestra detallada [guía](./stake-btc-guide.md). Después de haber apostado exitosamente tu Bitcoin en la blockchain de Core, el siguiente paso es aprender a reclamar tus recompensas CORE o redimir tu Bitcoin apostado. Esta guía detallada se utilizará cuando veas '**Redimir**' aparecer bajo '**Acción**' en el validador delegado que elegiste previamente o '**Reclamar**' junto a '**Delegado Hash & Recompensas Core**' y/o '**Recompensas de Staking de Bitcoin**'.
 
 ## Información de Distribución de Recompensas
 
