@@ -1,0 +1,66 @@
+---
+id: retrieve-latest-staking-round
+title: Retrieve Latest Staking Round
+description: Returns the current round of the core chain
+sidebar_label: Latest Staking Round
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVDtv3DAM/isCly6ufS06eQuKoAjQIUjSKbhBJzNnJbbkktQ1B8P/vaBlp0kuQB9TvdiQxU/fg9QIDbIjP4iPAWq4QkkU2EiLxiUiDGIoptCYeJcXI6FxrfUBChgs2R4FiaG+3RZAyEMMjAz1CB83G329xP9qBXmF9OEuUm/1lyEU8njAxnByDpnvUtcdSyjAxSAYRLHsMHTezQXVPSvgCOxa7K1+yXFAqCHu7tGJsqM4IInPdFisJH62zwfBPRIUryhezxuNiw2uolddJUwF9Mhs9/gMiYV82J8AnTWN10/bvVAaySwQxu5iktMTCDl18ntJ3WzmlXr5B7puWjQh9TukVVauNyz2wYd9DqWEaXkK+PRWgmfBIFEkE93cII350foO1wAVSLFfgf4XMWbe/xbm+Vy7BoePQ2d9WMV65oRPzimqtLGBGvY4K7DSQg3V4kmVNVSzNVAAIx3yCI2QqIMaWpGB62oteG8HX+rgNTaWkfYVTNsCtKdm3l46Jf5ZJ/N6sf3s8uK0Hy8vTBNd6jFIbkUtecevipRLLvhQbsqNujRElt7OOQXbY74n5nE1y0CvEFeLphcnj7/C/8sLZslE8FGq2XFlM3s0Lq7ewmKSGpl7o4Ds7LaANrLonnHcWcZv1E2TLn9PSMd8ZR0sebtTA2+3UwEt2gZpjuIBj2qaczhoiAfbJeVy0ryaxVPgX85vYJp+Avds3+s=
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Latest Staking Round"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/status/round"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Returns the current round of the core chain
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Latest round information retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the response."},"message":{"type":"string","description":"Additional information or message about the response."},"result":{"type":"object","properties":{"latestRound":{"type":"integer","description":"The number of the latest staking round."}}}}}}}},"400":{"description":"An error occurred while retrieving the staking round.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
