@@ -1,0 +1,66 @@
+---
+id: retrieve-validator-details
+title: Retrieve Validator Details
+description: Returns detail information of all validators.
+sidebar_label: Validator Details
+hide_title: true
+hide_table_of_contents: true
+api: eJy9V1FvGjkQ/iuWX66VKORO98QbpdElUtRWJL2XKA+DPWHd7q73xrO0CO1/P429CwQILNHpnmDB883nbz7PjtfaYjDkKna+1GM9Q66pDMoig8uVK589FSB/Kv+sIM/VEnJngT2FoR7oCggKZKSgx49PA00YKl8GDHq81n9cXcnHywx/d/FtjqAImRwu0apQG4MhPNd5vhJ040vGkgUEqip3JjIZfQ+CtNbBZFiAfONVhXqs/fw7GhZa5CskdomH8RZ3VgUmVy70YI/Y1FtUrrQxS7lQnGFHSPYujwIaKQx1M9AFhgCLHsgTa518hT1BSbUQCua+5piiEzBmsMA9tudKMOyWuFF26uskWhvnSsYF0gGvhwxVWRdzJNlgB/Oiws1A/yfgx6G3j3cu7IICEawOIGWRgCXjoH2h5rMnhWCybQ5xkGMswnkJA8MPtDcQsknRd3+eIVcQlwupm8n9jUo4ar6Ktdxh0sjRgJxdgRdlmSHkHyQq4bfpZK+HCVLyjw/Te+MJe4DfJ7YfH6YqSMhJ3KknvBB4+mV2fRIZA7sCOJKe4U8gOwPuk+C6C4zkKYYqAn4t0a72fTexJ/2pfbwIPNcNPm2fur5ynKwo/gajRNV7GOUi+H23p9KecPv2RF1omrNi78pzeS3PejKZaWItYQi9erssVOwVoUFpcgkhvIJvpLuXoQ69U0y7CAVtsqO22Rz/Nxc1NoITNS2h6PG2+wwFHmeY+4U/H3/nF17eja6QN+O32d1xsPQu9tRbxi9twGkVO3dd0Ea35jrXSbPVnJzti3sTV7eAxhdzV8pcUsi4ZF6hv+mocjre2FLjEenfUy9x3EupzjUprkO/vsH1oRzqHQ4Xw0E7eQw24837oW6aZpc/mwP+r1hI6Ks9+peRvU2/786ZKTaxSsz+PDY3T0qFRJ6UN6YmQqt+Zi7HbnoWpOX+aP2/z9DXkaGs3VT1jTNzQurmY/xV5ZDsL5guhBo3igkqZ97qsV5gZA6c6bEeSS9z5WKUFB5tp0090AFpmW4ta11Trsc6Y67CeNRFfYDKDeXoWfBDT4uRbp4GWibOSN5xjrE3E6r7FKEmX28P3w9fb5X1pi6w5DSoSshvYS9IuKSA34dXwyuRqvKBC4hFSo1XLmfxoqS2d6hPqdD7adfbsl98pWvrwviLR1F1IRMlWrfKPupWI71x/u4sr58GOvMyzz/q9XoOAb9R3jTy8z810irdFJdADuYi4uOTtEYEixTL8QNXIpwxWHECruOdYN+9Uo9N5f+6ftBN8y9tijac
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Validator Details"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/status/validators"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Returns detail information of all validators.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Validator details retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code indicating the success of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"inactiveValidatorCount":{"type":"integer","description":"The number of inactive validators."},"activeValidatorCount":{"type":"integer","description":"The number of active validators."},"validatorsList":{"type":"array","description":"List of detailed information for each validator.","items":{"type":"object","properties":{"stakedHashAmount":{"type":"integer","description":"Total amount of HASH staked by the validator."},"realtimeHashAmount":{"type":"integer","description":"Real-time HASH amount for the validator."},"stakedBTCScore":{"type":"integer","description":"Staked BTC score for the validator."},"stakedCoreScore":{"type":"integer","description":"Staked CORE score for the validator."},"estimatedBTCRewardRate":{"type":"integer","description":"Estimated BTC reward rate for the validator."},"realtimeHashScore":{"type":"integer","description":"Real-time HASH score for the validator."},"description":{"type":"string","description":"Description of the validator."},"realtimeCoreAmount":{"type":"integer","description":"Real-time CORE amount for the validator."},"stakedCoreAmount":{"type":"integer","description":"Total amount of CORE staked by the validator."},"stakedHashScore":{"type":"integer","description":"Staked HASH score for the validator."},"realtimeCoreScore":{"type":"integer","description":"Real-time CORE score for the validator."},"rewardAddress":{"type":"string","description":"Address to receive rewards for the validator."},"consensusAddress":{"type":"string","description":"Consensus address of the validator."},"stakedBTCAmount":{"type":"integer","description":"Total amount of BTC staked by the validator."},"name":{"type":"string","description":"Name of the validator."},"logo":{"type":"string","description":"Logo or image URL of the validator."},"operatorAddress":{"type":"string","description":"Operator address of the validator."},"realtimeBTCScore":{"type":"integer","description":"Real-time BTC score for the validator."},"hybridScore":{"type":"integer","description":"Hybrid score combining metrics of the validator."},"estimatedCoreRewardRate":{"type":"integer","description":"Estimated CORE reward rate for the validator."},"realtimeBTCAmount":{"type":"integer","description":"Real-time BTC amount for the validator."},"status":{"type":"integer","description":"Status of the validator (e.g., active, inactive)."}}}},"realtimeBtcAmount":{"type":"string","description":"Real time BTC amount."},"status":{"type":"integer","description":"Integer indicating status."}}}}}}}},"400":{"description":"An error occurred while retrieving validator details.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code for the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
