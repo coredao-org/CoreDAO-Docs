@@ -1,0 +1,55 @@
+{
+  "title": {
+    "message": "Core DAO",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo Core DAO",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Learn": {
+    "message": "Apprendre",
+    "description": "Navbar item with label Learn"
+  },
+  "item.label.Developer Guide": {
+    "message": "Guide du Développeur",
+    "description": "Navbar item with label Developer Guide"
+  },
+  "item.label.Build": {
+    "message": "Construire",
+    "description": "Navbar item with label Build"
+  },
+  "item.label.Run a Node": {
+    "message": "Exécuter un Nœud",
+    "description": "Navbar item with label Run a Node"
+  },
+
+  "item.label.Stake & Delegate": {
+    "message": "Enjeu et Délégué",
+    "description": "Navbar item with label Enjeu et délégué"
+  },
+  "item.label.Core API": {
+    "message": "API Core",
+    "description": "Navbar item with label Core API"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  },
+  "item.label.FAQs": {
+    "message": "FAQs",
+    "description": "Navbar item with label FAQs"
+  },
+  "item.label.Staking API": {
+    "message": "API de Staking",
+    "description": "Navbar item with label Staking API"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  }
+}

@@ -11,7 +11,7 @@ sidebar_position: 2
     
 Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. You can find Core blockchain’s codebase and other developer tools on the [official GitHub account of Core](https://github.com/coredao-org).
 
-### 2. What are Core Chain’s official communication channels?
+### 2. What are the official communication channels?
     
 * **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 * **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)

@@ -8,13 +8,13 @@ sidebar_position: 2
 ---
 Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
 
-### Explorers for Testnet
-* https://scan.test.btcs.network/
+### Explorers for Core Testnet (1114)
+* https://scan.test2.btcs.network/
 
-### Explorers for Mainnet
+### Explorers for Core Mainnet (1116)
 * https://scan.coredao.org/
 
-### Using the Explorer
+### Using the Core Scan Explorer
 
 You can use the Testnet Core Scan blockchain explorer to find and review transactions. Copy your account's address from MetaMask and search for it on the explorer. In the picture below, we can see two transactions related to our account:
 

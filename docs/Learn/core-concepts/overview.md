@@ -62,7 +62,7 @@ The Core roadmap is designed in accordance with the primary goal of unlocking Bi
 * **Local Fee Markets:** Improvements that can make transactions more predictable and potentially cheaper.
 
 * **Atomic Swaps:** Leveraging HTLCs, atomic swaps can continue to be a source of structural alignment between the Bitcoin and Core blockchains.
-* **coreBTC Improvements:** Integrating coreBTC with Core Chain’s Satoshi Plus consensus and using multisig wallets can increase the security of the asset. Additionally, Lockers could be given more collateral options. 
+* **coreBTC Improvements:** Integrating coreBTC with Core blockchain’s Satoshi Plus consensus and using multisig wallets can increase the security of the asset. Additionally, Lockers could be given more collateral options. 
 
 * **coreBTC as a Gas Token:** This option would allow users to pay for transaction fees in either CORE or coreBTC.
 
