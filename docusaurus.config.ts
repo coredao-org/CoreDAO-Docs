@@ -91,14 +91,14 @@ const config: Config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           stakingapimainnet: {
-            specPath: "docs/new-api/staking/mainnet.yaml",
+            specPath: "docs/stakingAPI/swagger/mainnet.yaml",
             outputDir: "docs/stakingAPI/mainnet",
             sidebarOptions: {
               groupPathsBy: "tag",
             },
           } satisfies OpenApiPlugin.Options,
           stakingapitestnet: {
-            specPath: "docs/new-api/staking/testnet.yaml",
+            specPath: "docs/stakingAPI/swagger/testnet.yaml",
               outputDir: "docs/stakingAPI/testnet",
               sidebarOptions: {
                 groupPathsBy: "tag",

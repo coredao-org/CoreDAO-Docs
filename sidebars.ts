@@ -338,13 +338,24 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       collapsed: true,
       label: 'Staking API',
+      link: {
+        type: 'generated-index',
+        title: 'Staking API Documentation',
+        description: 'Explore the various Staking API endpoint for Core Mainnet and Testnet2',
+        slug: '/api/staking-api-docs',
+      },
       items: [
         {
           type: 'category',
           collapsed: true,
           label: '📑 Mainnet API Endpoints',
+          link: {
+            type: 'generated-index',
+            title: 'Staking API Documentation',
+            description: 'Explore the various Staking API Endpoints for Core Mainnet',
+            slug: '/api/mainnet-staking-api-docs',
+          },
           items: [ 
-            //require("./docs/stakingAPI/sidebar.ts"),
             require("./docs/stakingAPI/mainnet/sidebar.ts"),
           ]
         },
@@ -352,11 +363,16 @@ const sidebars: SidebarsConfig = {
           type: 'category',
           collapsed: true,
           label: '📑 Testnet API Endpoints',
+          link: {
+            type: 'generated-index',
+            title: 'Staking API Documentation',
+            description: 'Explore the various Staking API Endpoints for Core Testnet2',
+            slug: '/api/testnet-staking-api-docs',
+          },
           items: [ 
             require("./docs/stakingAPI/testnet/sidebar.ts")
           ]
         }, 
-        
       ]
     },
   ],
