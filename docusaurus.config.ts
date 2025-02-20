@@ -51,7 +51,6 @@ const config: Config = {
   presets: [
     [
       '@docusaurus/preset-classic',
-      //'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
@@ -71,12 +70,8 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
-                
-        // googleTagManager: {
-        //   containerId: 'G-F20V7Q57RZ',
-        // },
         gtag: {
-          trackingID: 'G-999X9XX9XX',
+          trackingID: 'G-F20V7Q57RZ',
           anonymizeIP: true,
         },
             
@@ -210,13 +205,6 @@ const config: Config = {
           label: 'FAQs',
           activeBaseRegex: `/docs/`,
         },
-        // {
-        //   type: 'docSidebar',
-        //   sidebarId: 'StakingAPISidebar',
-        //   position: 'left',
-        //   label: 'Staking API',
-        //   activeBaseRegex: `/docs/`,
-        // },
         {
           type: 'localeDropdown',
           position: 'right',
