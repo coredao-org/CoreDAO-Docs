@@ -50,7 +50,8 @@ const config: Config = {
 
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
+      //'classic',
       {
         docs: {
           sidebarPath: './sidebars.ts',
@@ -75,10 +76,10 @@ const config: Config = {
         //   containerId: 'G-F20V7Q57RZ',
         // },
         gtag: {
-          trackingID: 'G-F20V7Q57RZ',
+          trackingID: 'G-999X9XX9XX',
           anonymizeIP: true,
         },
-      
+            
       theme: {
         customCss: './src/css/custom.css',
       },
@@ -109,12 +110,6 @@ const config: Config = {
             },
           } satisfies OpenApiPlugin.Options,
         }
-      },
-
-      '@docusaurus/plugin-google-gtag',
-      {
-        trackingID: 'G-F20V7Q57RZ',
-        anonymizeIP: true,
       },
     ]
   ],
