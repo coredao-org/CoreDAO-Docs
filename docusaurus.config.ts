@@ -71,8 +71,12 @@ const config: Config = {
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
                 
-        googleTagManager: {
-          containerId: 'G-F20V7Q57RZ',
+        // googleTagManager: {
+        //   containerId: 'G-F20V7Q57RZ',
+        // },
+        gtag: {
+          trackingID: 'G-F20V7Q57RZ',
+          anonymizeIP: true,
         },
       
       theme: {
@@ -105,6 +109,12 @@ const config: Config = {
             },
           } satisfies OpenApiPlugin.Options,
         }
+      },
+
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-F20V7Q57RZ',
+        anonymizeIP: true,
       },
     ]
   ],
