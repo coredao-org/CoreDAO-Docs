@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://docs.coredao.org/</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/intro</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/dev-tools</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/overview</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stake-and-delegate/staking-overview</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/core-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/introduction/what-is-core-chain</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/category/core-concepts</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/category/products</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/governance</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/CoreIgnition/Overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/audit</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/architecture</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/introduction/why-core-chain</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/Full-Node/on-mainnet</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/config/validator-node-config</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/config/rpc-node-config</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/config/archive-node-config</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/config/snapshot-node-config</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-testnet-wallet-config</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-faucet</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/category/dev-guides</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/dapp-on-core</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/network-config</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/rpc-list</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/precompile-addresses</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-explorer</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/bridge-with-layerzero</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-subgraph</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/contract-verify</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/Full-Node/on-testnet</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/sync/snapshot-sync</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/validator/overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/maintenance</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/validator/running-validator</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/btc-staking/overview</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stake-and-delegate/delegators</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/core-api-tutorials</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/core-api-docs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/staking-api-docs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/core-node-faqs</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/validator-faqs</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/delegator-faqs</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/coreBTC-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/btc-staking-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/dual-staking-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/LST-stCore-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/FAQs/core-api-faqs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/CoreIgnition/FAQs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/introduction/quickstart</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/components</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/stCore/overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/coreBTC/overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/security</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/coreBTC/how-to-guides</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/CoreIgnition/Mechanics</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/rpc-postman</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/smart-contract-guidelines</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/remix</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/hardhat</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/erc20-tokens</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/erc721-tokens</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/rpc-cli</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Dev-Guide/core-bridge-resources</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/contracts</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/validator/validator-register</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/validator/validator-election</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/validator/rewards</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/slashing/overview</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/maintenance/network-upgrade</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Node/slashing/slashing-fee</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stake-and-delegate/dual-staking</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/btc-staking/design</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stake-and-delegate/delegating-core</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stake-and-delegate/delegating-hash</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/tutorials/creating-an-account</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/tutorials/generate-an-api-key</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/tutorials/common-error-messages</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/accounts</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/blocks</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/geth-proxy</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/statistics</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/api-documents/transactions</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/mainnet-staking-api-docs</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/api/testnet-staking-api-docs</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/rewards</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/DPoW</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/DPoS</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/core-concepts/satoshi-plus-consensus/validator-election</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/stCore/design</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/stCore/stCore-on-Core</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/coreBTC/design</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/Learn/products/btc-staking/dual-staking-guide</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-staking-summary</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-btc-staking-transactions</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-reward-claim-history</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-current-dual-staking-grade</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-latest-staking-round</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-validator-details</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/submit-redeem-script-for-staking-transaction</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-staking-summary</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-btc-staking-transactions</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-reward-claim-history</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-current-dual-staking-grade</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-latest-staking-round</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-validator-details</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/submit-redeem-script-for-staking-transaction</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-btc-staking-status</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-overall-staking-data-on-core-blockchain</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-full-list-of-btc-staking-transactions</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-reward-distribution-of-a-round</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/mainnet/retrieve-collected-and-pending-rewards</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-btc-staking-status</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-overall-staking-data-on-core-blockchain</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-full-list-of-btc-staking-transactions</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-reward-distribution-of-a-round</loc>
+  <lastmod>2025-02-17T11:35:31+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://docs.coredao.org/docs/stakingAPI/testnet/retrieve-collected-and-pending-rewards</loc>
+  <lastmod>2025-02-17T11:35:32+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+
+
+</urlset>

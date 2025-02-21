@@ -1,0 +1,71 @@
+---
+id: retrieve-btc-staking-transactions
+title: "Retrieve BTC staking transactions"
+description: "Returns the list of valid/active staking trasactions of a given bitcoin address or public key hash."
+sidebar_label: "Retrieve BTC staking transactions"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9V01v4zYQ/SsEL20B106LnnzzpotdA3sIUhcoEORAk2OLa4nUckaODUP/vRhSUuSPOFpjsbkkUjhv3rzhfOggDaAOtiTrnZzKR6AqOBSUgcgtkvArsVW5NROlyW5BIKmNdWtBQSG/8g75jBJruwUnlpa0t04oYwIgCh9EWS1zq8UG9iJTmI3lSJYqqAIIAsrp00E6VYCcyiXpWTKTI2mZzbcKwl6OZIBvlQ1g5JRCBaMTzosMxIfFfeeTvAhAwcIxXdfxXfnALFBnUCg5PUjal0wAKVi3lnU96jiVm88Ks+/j83AcsFCIXltFYMSLpSxqm9Tqsb5O6Jl9YukdAvL//7y741/HfmcpQwx6MexWFCOw0hoQV1We79mx9o7AEUOqssytVmwx+YqMezjn5ZdfQRMnMvgSAtnESnsD5+xP5bn3BoR1Jnphjhm0hPgm8SODRgpjWY9kAYhqPQB5ZozlP1UurFv5UEQMvoMNhFBLX1F00coZPRhFA8JjUcF8WNwvdl8sUs9AhaD2Z3S+NPWjrueFE2AJChwgsHLGGkXQ1sm7knBtdLWYxO1AuA6S+uesoiy9ghzkqF+Ely79FT+L/+ZmmJOesZj/3QbVEzdCau9WNhRgFrtYwIOgY7W2KrUAEfqSMoWvHA3MQDzL0C1PMBEnHRwGkp6/S1gkFejRV66vrXUEawgXfQQ+K14ycG/hiojZ0AdnfjA6OIOpJCGHtSL4AfgvCkULl3j7isqK5s7AbiC05bNde4rmwrru6p0KH+BFBXNTlcbppYE7RkJBsQq+uJrnyuVebxa2gIHhJANBtnjtAm/0pyYeA1DcHg9bRwfvhtIM3HddDBmyR+M1lQNVOECieXp/NqWifXsLYhmPZV3XCTrNhrO28GYaPKn8pDPoKgRwlO9fe0TzM5J/XRr5cxeXs6POe75yCax4qjPeT571H0PwQfDZ7prdONsTUjvHYVfmyro2MRaxgk4sRqXMGzmVa4jMFWVyKifNnZssSU/6E7jZbXkDg7Btt9Iq5HIqM6ISp5PW9ndV2rH2AYzyYx/WE8m7GW8bMQRLOcQVJ4D4p7nhs4f5+abyMBfG66oAR2lJYZNf8MSIuSSDP8Z347tYHx6pUDFVzYr62O66by0Yp94Pr3fgJ+37TWoJdjSJiYtNi/U9NMl5ko0jGYcr2xxH0KToeSQzz7vXkzwclgrh35DXNb9OuzknzlhUy5y385XK8XQ970f/62OzyP8mbv2IuBjaBvan3zNblVd8UPLHxU0Mb/6suEKx+7x5pffMD8EyPzl9eq5HMgNlIERpk9VMayipZ3XWSBilK8JPHxeyrv8HuEsPug==
+sidebar_class_name: "get api-method"
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve BTC staking transactions"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/btc/transactions/active"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns the list of valid/active staking trasactions of a given bitcoin address or public key hash.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"btcAddress","in":"query","required":true,"description":"The BTC address to retrieve staking transactions for.","schema":{"type":"string"}},{"name":"pkHash","in":"query","required":true,"description":"Public key hash associated with the given BTC address.","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Active BTC staking transactions retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code indicating the success of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"stakedBTCTxList":{"type":"array","description":"List of active BTC staking transactions.","items":{"type":"object","properties":{"candidateAddress":{"type":"string","description":"The address of the candidate for the staking transaction."},"btcAddress":{"type":"string","description":"The BTC address associated with the staking transaction."},"btcTXId":{"type":"string","description":"The transaction ID of the BTC staking."},"confirmedTxHash":{"type":"string","description":"The hash of the confirmed BTC transaction."},"btcAmount":{"type":"string","description":"The amount of BTC staked."},"script":{"type":"string","description":"The script associated with the staking transaction."},"startRound":{"type":"integer","description":"The round when the staking transaction started."},"endRound":{"type":"integer","description":"The round when the staking transaction ends."},"delegateRound":{"type":"integer","description":"The round when the staking was delegated."},"outputIndex":{"type":"integer","description":"The index of the output in the BTC transaction."},"rewardAddress":{"type":"string","description":"The address to receive rewards from the staking transaction."},"unlockTime":{"type":"integer","description":"The unlock time for the BTC staking transaction."},"redeemAddress":{"type":"string","description":"The address to redeem BTC from the staking transaction."},"pkHash":{"type":"string","description":"Public key hash associated with the BTC address."},"status":{"type":"integer","description":"Integer indicating the status of the stake."}}}},"stakedBTCAmount":{"type":"integer","description":"Total amount of BTC currently staked."}}}}}}}},"400":{"description":"Invalid BTC address or public key hash supplied.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code for the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
