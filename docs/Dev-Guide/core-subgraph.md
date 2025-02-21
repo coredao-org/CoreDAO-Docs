@@ -9,25 +9,23 @@ sidebar_position: 2
 
 Developers can use a self-hosted subgraph to extract data from the Core blockchain, processing and storing it for consumption via GraphQL. Let's take a look at how we can create and deploy this powerful tool.
 
-### Important URLs
+## Important URLs and Keys
 
-We'll be using some standard URLs throughout this guide, which it’ll help to review before getting started.
-
-#### MainNet
+### Core MainNet
 
 <table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-#### TestNet
+### Core TestNet
 
-<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-### General Subgraph Setup Steps
+## General Subgraph Setup Steps
 
-#### Create Repository
+### Create Repository
 
 To create your subgraph repository, follow the[ official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/). In order to deploy onto the Core graph network, make sure to set your network name in `subgraph.yaml` to core. Depending on your subgraph, there may be a few more changes to make. You’ll find additional details in the full example section below.
 
-#### Create and Deploy
+### Create and Deploy
 
 To create and deploy your subgraph, execute the following commands in your subgraph project repository.
 
@@ -41,7 +39,7 @@ graph deploy your-subgraph-name --node https://thegraph.coredao.org/deploy/ --ip
 
 The `graph deploy` command should return the HTTP query URL for your subgraph, which you can integrate into your application as appropriate.
 
-### Example: Deploying a Uniswap V2 subgraph
+## Example: Deploying a Uniswap V2 subgraph
 
 Now that we understand the process, let's walk through a full example by setting up a Uniswap V2 subgraph on Core.&#x20;
 
@@ -79,8 +77,10 @@ Finally, we'll run the create and deploy commands. In order to avoid compatibili
 
 Well done, your subgraph is deployed! Now you can integrate the HTTP query URL printed by the deploy command into your website and use it to query data.
 
-### Authorization
+## Authorization
 
-To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.\
-\
-If you are testing against the TestNet Graph, here is an access token for general testing purpose: **a9a79c2aea604bfaa861ff93d46d0d11**.
+To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.
+
+If you are testing against the Core TestNet Graph, here are the access token for general testing purpose: 
+* **General key for Core Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
+* **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0
