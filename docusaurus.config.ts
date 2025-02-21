@@ -12,15 +12,9 @@ const DefaultLocale = 'en';
 
 const config: Config = {
   title: 'Core DAO Official Documentation',
-  //tagline: 'Core DAO Official Developer Documentation',
   favicon: 'img/favicon.ico',
 
-  customFields: {
-    // Put your custom environment here
-    locale: process.env.EMAIL,
-  },
-
-  // Set the production url of your site here
+  /// Set the production url of your site here
   url: 'https://docs.coredao.org/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
@@ -70,6 +64,7 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
+        
         gtag: {
           trackingID: 'G-F20V7Q57RZ',
           anonymizeIP: true,
