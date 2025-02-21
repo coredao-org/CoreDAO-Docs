@@ -11,20 +11,23 @@ import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 const DefaultLocale = 'en';
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Core DAO Official Documentation',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  /// Set the production url of your site here
+  url: 'https://docs.coredao.org/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/CoreDAO-Docs',
+  // baseUrl: '/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+
+  organizationName: 'coredao-org', // Usually your GitHub org/user name.
+  projectName: 'CoreDAO-Docs', // Usually your repo name.
+  deploymentBranch:'main',
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
