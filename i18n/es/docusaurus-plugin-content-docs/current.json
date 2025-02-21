@@ -1,0 +1,326 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Core Scan OpenAPI": {
+    "message": "Core Scan OpenAPI",
+    "description": "The label for category Core Scan OpenAPI in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.api-documents": {
+    "message": "documentos-api",
+    "description": "The label for category api-documents in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.tutorials": {
+    "message": "tutoriales",
+    "description": "The label for category tutorials in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
+    "message": "Tutorial - Conceptos Basicos",
+    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
+    "message": "5 minutos para aprender los conceptos mass importantes de Docusaurus.",
+    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
+    "message": "Tutorial - Extras",
+    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.CoreIgnition": {
+    "message": "CoreIgnition",
+    "description": "The label for category CoreIgnition in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Dev-Guide": {
+    "message": "Guia para Desarolladores",
+    "description": "The label for category Dev-Guide in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FAQs": {
+    "message": "Preguntas Frecuentes",
+    "description": "The label for category FAQs in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Learn": {
+    "message": "Aprender",
+    "description": "The label for category Learn in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.core-concepts": {
+    "message": "conceptos-principales",
+    "description": "The label for category core-concepts in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.satoshi-plus-consensus": {
+    "message": "consenso-satoshi-plus",
+    "description": "The label for category satoshi-plus-consensus in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.economics": {
+    "message": "economia",
+    "description": "The label for category economics in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.core-token": {
+    "message": "token-core",
+    "description": "The label for category core-token in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.introduction": {
+    "message": "introduccion",
+    "description": "The label for category introduction in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.products": {
+    "message": "productos",
+    "description": "The label for category products in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.btc-staking": {
+    "message": "btc-staking",
+    "description": "The label for category btc-staking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.coreBTC": {
+    "message": "coreBTC",
+    "description": "The label for category coreBTC in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.stCore": {
+    "message": "stCore",
+    "description": "The label for category stCore in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Node": {
+    "message": "Nodo",
+    "description": "The label for category Node in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Node Maintenance": {
+    "message": "Mantenimiento de Nodo",
+    "description": "The label for category Node Maintenance in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Full-Node": {
+    "message": "Nodo-Completo",
+    "description": "The label for category Full-Node in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.config": {
+    "message": "configuracion",
+    "description": "The label for category config in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.slashing": {
+    "message": "reduccion",
+    "description": "The label for category slashing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.sync": {
+    "message": "sincronizacion",
+    "description": "The label for category sync in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.validator": {
+    "message": "validador",
+    "description": "The label for category validator in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.stake-and-delegate": {
+    "message": "participar-y-delegar",
+    "description": "The label for category stake-and-delegate in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.stakingAPI": {
+    "message": "stakingAPI",
+    "description": "The label for category stakingAPI in sidebar tutorialSidebar"
+  },
+  "sidebar.learnSidebar.category.📖 All About Core": {
+    "message": "📖 Todo Sobre Core",
+    "description": "The label for category 📖 All About Core in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Introduction": {
+    "message": "Introduccion",
+    "description": "The label for category Introduction in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Core Concepts": {
+    "message": "Conceptos Basicos",
+    "description": "The label for category Core Concepts in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Core Concepts.link.generated-index.title": {
+    "message": "Conceptos Basicos",
+    "description": "The generated-index page title for category Core Concepts in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Core Concepts.link.generated-index.description": {
+    "message": "Aprenda sobre los aspectos fundamentales del ecosistema Core!",
+    "description": "The generated-index page description for category Core Concepts in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Satoshi Plus Consensus": {
+    "message": "Consenso Satoshi Plus",
+    "description": "The label for category Satoshi Plus Consensus in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Products": {
+    "message": "Productos",
+    "description": "The label for category Products in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Products.link.generated-index.title": {
+    "message": "Explorando Core: Soluciones Pioneras DeFi para Bitcoin",
+    "description": "The generated-index page title for category Products in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Products.link.generated-index.description": {
+    "message": "¡Conozca los innovadores productos que Core ofrece para desbloquear el panorama DeFi de Bitcoin!",
+    "description": "The generated-index page description for category Products in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.stCORE": {
+    "message": "stCore",
+    "description": "The label for category stCORE in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.How To Guides": {
+    "message": "Guias Practicas",
+    "description": "The label for category How To Guides in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.coreBTC (Sunsetted)": {
+    "message": "coreBTC (Descontinuado)",
+    "description": "The label for category coreBTC (Sunsetted) in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Economics": {
+    "message": "Economia",
+    "description": "The label for category Economics in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Core Ignition": {
+    "message": "Core Ignition",
+    "description": "The label for category Core Ignition in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.link.Whitepaper": {
+    "message": "Whitepaper",
+    "description": "The label for link Whitepaper in sidebar learnSidebar, linking to https://whitepaper.coredao.org/"
+  },
+  "sidebar.learnSidebar.doc.Audit": {
+    "message": "Auditoria",
+    "description": "The label for the doc item Audit in sidebar learnSidebar, linking to the doc Learn/audit"
+  },
+  "sidebar.devGuideSidebar.category.💻 Core for Developers": {
+    "message": "💻 Core para Desarrolladores",
+    "description": "The label for category 💻 Core for Developers in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Connecting to Core": {
+    "message": "Conectarse a Coree",
+    "description": "The label for category Connecting to Core in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.RPC Endpoints": {
+    "message": "Puntos Finales RPC",
+    "description": "The label for category RPC Endpoints in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Wallet Configurations": {
+    "message": "Configuraciones de Wallet",
+    "description": "The label for category Wallet Configurations in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Developer Guides": {
+    "message": "Guias para Desarolladores",
+    "description": "The label for category Developer Guides in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Developer Guides.link.generated-index.title": {
+    "message": "Guías para Desarrolladores: Dominando los Conceptos de Core",
+    "description": "The generated-index page title for category Developer Guides in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Developer Guides.link.generated-index.description": {
+    "message": "Desbloquee su Potencial: Guías Detalladas para Desarrolladores sobre Core",
+    "description": "The generated-index page description for category Developer Guides in sidebar devGuideSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Bridging with Core": {
+    "message": "Conexión con Core",
+    "description": "The label for category Bridging with Core in sidebar devGuideSidebar"
+  },
+  "sidebar.faqSidebar.category.🤔 FAQs": {
+    "message": "🤔 Preguntas Frecuentes",
+    "description": "The label for category 🤔 FAQs in sidebar faqSidebar"
+  },
+  "sidebar.nodeSidebar.category.🔮 Running Core Nodes": {
+    "message": "🔮 Ejecutando Nodos Core",
+    "description": "The label for category 🔮 Running Core Nodes in sidebar nodeSidebar"
+  },
+  "sidebar.nodeSidebar.category.Node Configurations": {
+    "message": "Configuraciones de Nodo",
+    "description": "The label for category Node Configurations in sidebar nodeSidebar"
+  },
+  "sidebar.nodeSidebar.category.Running Full Node": {
+    "message": "Ejecutando Nodo Completo",
+    "description": "The label for category Running Full Node in sidebar nodeSidebar"
+  },
+  "sidebar.nodeSidebar.category.Become a Validator": {
+    "message": "Convertirse en Validador",
+    "description": "The label for category Become a Validator in sidebar nodeSidebar"
+  },
+  "sidebar.nodeSidebar.category.Slashing": {
+    "message": "Reduccion",
+    "description": "The label for category Slashing in sidebar nodeSidebar"
+  },
+  "sidebar.nodeSidebar.category.Node Maintenance": {
+    "message": "Mantenimiento de Nodo",
+    "description": "The label for category Node Maintenance in sidebar nodeSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.💸 Staking": {
+    "message": "💸 Staking",
+    "description": "The label for category 💸 Staking in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.Non-Custodial BTC Staking": {
+    "message": "Staking de BTC No Custodial",
+    "description": "The label for category Non-Custodial BTC Staking in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.How To Guides": {
+    "message": "Guías Prácticas",
+    "description": "The label for category How To Guides in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.💰 Become a Delegator": {
+    "message": "💰 Convertirse en Delegado",
+    "description": "The label for category 💰 Become a Delegator in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.apiSidebar.category.🔗 Connect with Core API": {
+    "message": "🔗 Conectarse con la API de Core",
+    "description": "The label for category 🔗 Connect with Core API in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📚 Tutorials": {
+    "message": "📚 Tutoriales",
+    "description": "The label for category 📚 Tutorials in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📚 Tutorials.link.generated-index.title": {
+    "message": "Tutoriales de Core Scan\"",
+    "description": "The generated-index page title for category 📚 Tutorials in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📚 Tutorials.link.generated-index.description": {
+    "message": "Aprenda cómo usar la API de Core Scan",
+    "description": "The generated-index page description for category 📚 Tutorials in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 API Documents": {
+    "message": "📑 Documentos de API",
+    "description": "The label for category 📑 API Documents in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 API Documents.link.generated-index.title": {
+    "message": "Documentación de la API de Core Scan",
+    "description": "The generated-index page title for category 📑 API Documents in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 API Documents.link.generated-index.description": {
+    "message": "Explore los distintos puntos finales de la API de Core Scan\"",
+    "description": "The generated-index page description for category 📑 API Documents in sidebar apiSidebar"
+  },
+  "sidebar.newapiSidebar.category.Staking API": {
+    "message": "API de Staking",
+    "description": "The label for category Staking API in sidebar newapiSidebar"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Staking Summary": {
+    "message": "Obtener Resumen de Staking",
+    "description": "The label for the doc item Retrieve Staking Summary in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-staking-summary"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Current Dual Staking Grade": {
+    "message": "Obtener Grado Actual de Staking Dual",
+    "description": "The label for the doc item Retrieve Current Dual Staking Grade in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-current-dual-staking-grade"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Full List of BTC Staking Transactions": {
+    "message": "Obtener Lista Completa de Transacciones de Staking de BTC",
+    "description": "The label for the doc item Retrieve Full List of BTC Staking Transactions in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-full-list-of-btc-staking-transactions"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve BTC staking transactions": {
+    "message": "Obtener Transacciones de Staking de BTC",
+    "description": "The label for the doc item Retrieve BTC staking transactions in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-btc-staking-transactions"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Reward Claim History": {
+    "message": "Obtener Historial de Reclamos de Recompensas",
+    "description": "The label for the doc item Retrieve Reward Claim History in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-reward-claim-history"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Latest Staking Round": {
+    "message": "Obtener la Última Ronda de Staking",
+    "description": "The label for the doc item Retrieve Latest Staking Round in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-latest-staking-round"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Reward Distribution of a Round": {
+    "message": "Obtener Distribución de Recompensas de una Ronda",
+    "description": "The label for the doc item Retrieve Reward Distribution of a Round in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-reward-distribution-of-a-round"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Validator Details": {
+    "message": "Obtener Detalles del Validador",
+    "description": "The label for the doc item Retrieve Validator Details in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-validator-details"
+  },
+  "sidebar.newapiSidebar.doc.Retrieve Overall Staking Data on Core Blockchain": {
+    "message": "Obtener Datos Generales de Staking en la Blockchain de Core",
+    "description": "The label for the doc item Retrieve Overall Staking Data on Core Blockchain in sidebar newapiSidebar, linking to the doc stakingAPI/retrieve-overall-staking-data-on-core-blockchain"
+  }
+}
