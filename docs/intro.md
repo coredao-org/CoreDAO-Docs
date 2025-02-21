@@ -1,50 +1,47 @@
 ---
-title: The Core Blockchain - Decentralized applications secured by Bitcoin
 sidebar_position: 1
 ---
 
-# Core DAO - Decentralized Applications Secured by Bitcoin
+# Tutorial Intro
 
-## 👨‍💻 Getting Started
+Let's discover **Docusaurus in less than 5 minutes**.
 
+## Getting Started
 
-Core is a hyper-scalable smart contract platform designed to complement Bitcoin, serving as its first Proof of Stake (PoS) layer and the largest Bitcoin DeFi ecosystem. By merging Bitcoin’s unmatched security with the scalability of the innovative Satoshi Plus consensus, Core expands Bitcoin’s capabilities while preserving its core principles of decentralization and security. With approximately 75% of Bitcoin mining hash power already contributing to Core’s security model and over 8,200 BTC staked through Non-Custodial Bitcoin Staking, Core strengthens Bitcoin's role as both the prime protector and central asset of the future of DeFi. Core's Dual Staking model further empowers Bitcoin holders to earn secure and sustainable yields by staking both BTC and CORE, all while retaining full control and ownership of their assets.
+Get started by **creating a new site**.
 
+Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
 
-![core-header](../static/img/core-header.png)
+### What you'll need
 
+- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
+  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-New to Core? Let's discover **Core in less than 5 minutes**. 
+## Generate a new site
 
-## 📔 Learn about Core 
-Dive into what Core is and how to start your Web3 journey on Core
-    * [An Overview of Core](./Learn/introduction/what-is-core-chain.md)
-    * [Read About the Core Concepts](category/core-concepts)
-    * [Understand the Underlying Architecture](./Learn/core-concepts/architecture.md)
+Generate a new Docusaurus site using the **classic template**.
 
-## 👓 Explore on Core
-Get Familiar with the Core Ecosystem
-    * [Find Out Why Core is the Right Choice](./Learn/introduction/why-core-chain.md)
-    * [Explore Core's Products](category/products)
-    * [See What's Being Built on Core](https://coredao.org/explore/ecosystem)
+The classic template will automatically be added to your project after you run the command:
 
-## 🔌 Run a Node on Core
-Participate in Core Network Security by Running Different Types of Nodes
-    * [Run a Full Node on the Core Network](./Node/Full-Node/on-mainnet.md)
-    * [Run a Validator Node on the Core Network](./Node/config/validator-node-config.md)
-    * [Run a RPC Node on the Core Network](./Node/config/rpc-node-config.md)
-    * [Run an Archive Node on the Core Network](./Node/config/archive-node-config.md)
-    * [Run a Snapshot Node on the Core Network](./Node/config/snapshot-node-config.md)
+```bash
+npm init docusaurus@latest my-website classic
+```
 
-## 👨‍🔧 Building on Core
-Starting building on Core and Contribute to the BTCfi Landscape
-    * [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
-    * [Configure Your Wallets on the Core Network](./Dev-Guide/core-testnet-wallet-config.md) 
-    * [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
-    * [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
-    * [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-## 🙋‍♀️ Help & Support
-Connect with Core Contributors for Support
-    * [Official Discord Server for Help & Support](https://discord.com/invite/coredaoofficial)
-    * [Official Telegram Developer Channel for Technical Support](https://t.me/CoreDAOTelegram)
+The command also installs all necessary dependencies you need to run Docusaurus.
+
+## Start your site
+
+Run the development server:
+
+```bash
+cd my-website
+npm run start
+```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+
+The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+
+Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.

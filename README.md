@@ -1,17 +1,41 @@
-# Core DAO Developer Documentation
+# Website
 
-Welcome to the Core DAO Developer Documentation for Core blockchain! This comprehensive guide is designed to assist developers in navigating and integrating with Core blockchain effectively. Whether you are looking to build decentralized applications, participate in network governance, or simply explore the capabilities of Core blockchain, this documentation provides all the necessary tools and resources.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
-## Commands for Local Build
+### Installation
 
-* Install depencies `yarn install ` 
-* Start the live-reloading docs server `yarn run start` 
-* Build the documentation site `yarn run build`
+```
+$ yarn
+```
 
-For running transaltions
-* Build the documentation site `yarn run build --locale <two-letter-code>`, where `<two-letter-code>` can be `en`, `fr` or `es`.
-* Start the live-reloading docs server `yarn run start --locale <two-letter-code>`, where `<two-letter-code>` can be `en`, `fr` or `es`.` 
+### Local Development
 
-## 📜 License
+```
+$ yarn start
+```
 
-Copyright (c) 2024 Core DAO 
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+### Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
+
+### Deployment
+
+Using SSH:
+
+```
+$ USE_SSH=true yarn deploy
+```
+
+Not using SSH:
+
+```
+$ GIT_USER=<Your GitHub username> yarn deploy
+```
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
