@@ -1,5 +1,5 @@
 ---
-sidebar_label: Accounts
+sidebar_label: Comptes
 description: Endpoints related to Accounts
 hide_table_of_contents: false
 sidebar_position: 2
