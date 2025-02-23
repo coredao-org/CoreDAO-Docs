@@ -15,7 +15,7 @@ Developers can use a self-hosted subgraph to extract data from the Core blockcha
 
 <table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-### Core TestNet
+### Core TestNet2
 
 <table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
 
