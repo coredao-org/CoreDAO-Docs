@@ -1,5 +1,5 @@
 ---
-sidebar_label: Contracts
+sidebar_label: Contrats
 description: Endpoints related to contracts
 hide_table_of_contents: false
 sidebar_position: 2
