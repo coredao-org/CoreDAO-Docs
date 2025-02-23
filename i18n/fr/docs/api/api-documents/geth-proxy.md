@@ -40,7 +40,7 @@ Réponse d’exemple
 
 ## eth\_getBlockByNumber
 
-Returns information about a block by block number.
+Renvoie des informations sur un bloc par son numéro.
 
 ```bash
 https://openapi.coredao.org/api
@@ -51,13 +51,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockByNumber\\&tag=0x1b94d8\\&boolean=true\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockByNumber\\&tag=0x1b94d8\\&boolean=true\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="130">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>the block number, in hex eg. 0x1b94d8</td></tr><tr><td>bool</td><td>the bool value to show full transaction objects. when true, returns full transaction objects and their information, when false only returns a list of transactions.</td></tr></tbody></table>
+<table><thead><tr><th width="130">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>le numéro du bloc, en hexadécimal, par exemple 0x1b94d8</td></tr><tr><td>bool</td><td>la valeur booléenne pour afficher les objets de transaction complets. Si vrai, renvoie les objets de transaction complets et leurs informations ; si faux, renvoie uniquement une liste de transactions.</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -467,7 +467,7 @@ Sample Response
 
 ## eth\_getBlockTransactionCountByNumber
 
-Returns the number of transactions in a block.
+Renvoie le nombre de transactions effectuées par une adresse.
 
 ```bash
 https://openapi.coredao.org/api
@@ -477,13 +477,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="136">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>the block number, in hex eg. 0x10FB78</td></tr></tbody></table>
+<table><thead><tr><th width="136">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>le numéro du bloc, en hexadécimal, par exemple 0x10FB78</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -495,7 +495,7 @@ Sample Response
 
 ## eth\_getTransactionByHash
 
-Returns information about a transaction requested by transaction hash.
+Renvoie des informations sur une transaction demandée par son hash.
 
 ```bash
 https://openapi.coredao.org/api
@@ -505,13 +505,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByHash\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByHash\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="134">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>the string representing the hash of the transaction</td></tr></tbody></table>
+<table><thead><tr><th width="134">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>la chaîne représentant le hash de la transaction</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -539,7 +539,7 @@ Sample Response
 
 ## eth\_getTransactionByBlockNumberAndIndex
 
-Returns information about a transaction by block number and transaction index position.
+Renvoie des informations sur une transaction par numéro de bloc et par position dans le bloc.
 
 ```bash
 https://openapi.coredao.org/api
@@ -550,13 +550,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByBlockNumberAndIndex\\&tag=0x1b94d8\\&index=0x1\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByBlockNumberAndIndex\\&tag=0x1b94d8\\&index=0x1\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="146">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>the block number, in hex eg. 0x1b94d8</td></tr><tr><td>index</td><td>the position of the uncle's index in the block, in hex eg. 0x1</td></tr></tbody></table>
+<table><thead><tr><th width="146">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>le numéro du bloc, en hexadécimal, par exemple 0x1b94d8</td></tr><tr><td>index</td><td>la position de l'index de la transaction dans le bloc, en hexadécimal, par exemple 0x1</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -584,7 +584,7 @@ Sample Response
 
 ## eth\_getTransactionCount
 
-Returns the number of transactions performed by an address.
+Renvoie le nombre de transactions effectuées par une adresse.
 
 ```bash
 https://openapi.coredao.org/api
@@ -595,13 +595,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionCount\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionCount\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="152">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to get transaction count</td></tr><tr><td>tag</td><td>the block number, in hex eg. 0x10FB78</td></tr></tbody></table>
+<table><thead><tr><th width="152">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>la chaîne représentant l'adresse pour obtenir le nombre de transactions</td></tr><tr><td>tag</td><td>le numéro du bloc, en hexadécimal, par exemple 0x10FB78</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -613,7 +613,7 @@ Sample Response
 
 ## eth\_getBlockTransactionCountByNumber
 
-Returns the number of transactions in a block.
+Renvoie le nombre de transactions effectuées par une adresse.
 
 ```bash
 https://openapi.coredao.org/api
@@ -623,13 +623,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="151">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>the block number, in hex eg. 0x1b94d8</td></tr></tbody></table>
+<table><thead><tr><th width="151">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>tag</td><td>le numéro du bloc, en hexadécimal, par exemple 0x1b94d8</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -641,7 +641,7 @@ Sample Response
 
 ## eth\_sendRawTransaction
 
-Submits a pre-signed transaction and broadcast to the Core network.
+Soumet une transaction pré-signée et la diffuse sur le réseau Core.
 
 ```bash
 https://openapi.coredao.org/api
@@ -651,13 +651,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_sendRawTransaction\\&hex=0xf904808000831cfde080\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_sendRawTransaction\\&hex=0xf904808000831cfde080\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="159">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>hex</td><td>the string representing the signed raw transaction data to broadcast.</td></tr></tbody></table>
+<table><thead><tr><th width="159">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>hex</td><td>la chaîne représentant les données brutes signées de la transaction à diffuser.</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -669,7 +669,7 @@ Sample Response
 
 ## eth\_getTransactionReceipt
 
-Returns the receipt of a transaction that has been validated.
+Renvoie le reçu d'une transaction qui a été validée.
 
 ```bash
 https://openapi.coredao.org/api
@@ -679,13 +679,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionReceipt\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionReceipt\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="131">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>the string representing the hash of the transaction</td></tr></tbody></table>
+<table><thead><tr><th width="131">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>la chaîne représentant le hash de la transaction</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -725,7 +725,7 @@ Sample Response
 
 ## eth\_call
 
-Executes a new message call immediately without creating a transaction on the block chain.
+Exécute immédiatement un nouvel appel de message sans créer de transaction sur la blockchain.
 
 ```bash
 https://openapi.coredao.org/api
@@ -737,13 +737,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_call\\&to=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&data=0x06fdde03\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_call\\&to=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&data=0x06fdde03\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="136">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>to</td><td>the string representing the address to interact with</td></tr><tr><td>data</td><td>the hash of the method signature and encoded parameters</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
+<table><thead><tr><th width="136">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>to</td><td>la chaîne représentant l'adresse avec laquelle interagir</td></tr><tr><td>data</td><td>le hachage de la signature de la méthode et des paramètres encodés</td></tr><tr><td>tag</td><td>la chaîne de paramètres de bloc prédéfinie, soit la plus récente, soit en attente, ou la plus ancienne</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -755,7 +755,7 @@ Sample Response
 
 ## eth\_getCode
 
-Returns code at a given address.
+Renvoie le code présent à une adresse donnée.
 
 ```bash
 https://openapi.coredao.org/api
@@ -766,13 +766,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getCode\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getCode\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="166">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to get code</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
+<table><thead><tr><th width="166">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>la chaîne représentant l'adresse pour obtenir le code</td></tr><tr><td>tag</td><td>la chaîne de paramètres de bloc prédéfinie, soit la plus récente, soit en attente, ou la plus ancienne</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -784,7 +784,7 @@ Sample Response
 
 ## eth\_getStorageAt
 
-Returns the value from a storage position at a given address.
+Renvoie la valeur d'une position de stockage à une adresse donnée.
 
 ```bash
 https://openapi.coredao.org/api
@@ -796,11 +796,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getStorageAt\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&position=0x0\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getStorageAt\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&position=0x0\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="170">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to get storage value</td></tr><tr><td>position</td><td>the hex code of the position in storage, eg 0x0</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
+<table><thead><tr><th width="170">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to get storage value</td></tr><tr><td>position</td><td>the hex code of the position in storage, eg 0x0</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
 
 Sample Response
 
