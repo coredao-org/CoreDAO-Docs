@@ -1,17 +1,17 @@
 ---
 sidebar_label: Contrats
-description: Endpoints related to contracts
+description: Points de terminaison liés aux contrats
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Contracts
+# Contrats
 
-## Get Contract ABI of a Verified Contract
+## Obtenir l'ABI d'un contrat vérifié
 
-Returns the contract Application Binary Interface (ABI) of a verified smart contract.
+Renvoie l'Interface Binaire d'Application (ABI) d'un contrat intelligent vérifié.
 
-Find verified contracts ✅ on our [**Verified Contracts Source Code**](https://scan.coredao.org/contractsVerified) page.
+Trouvez des contrats vérifiés ✅ sur notre page du [**Code Source des Contrats Vérifiés**](https://scan.coredao.org/contractsVerified).
 
 ```bash
 https://openapi.coredao.org/api
@@ -21,13 +21,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=contract\\&action=getabi\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=contract\\&action=getabi\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="131">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the contract address that has a verified source code</td></tr></tbody></table>
+<table><thead><tr><th width="131">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>l'adresse du contrat dont le code source est vérifié</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -37,7 +37,7 @@ Sample Response
 }
 ```
 
-A simple sample to retrieve the contract ABI using Web3.js and JQuery:
+Un exemple simple pour récupérer l'ABI du contrat en utilisant Web3.js et jQuery :
 
 ```javascript
 var Web3 = require('web3');
@@ -58,11 +58,11 @@ $.getJSON('https://openapi.coredao.org/api?module=contract&action=getabi&address
 });
 ```
 
-## Get Source Code of a Verified Contract
+## Obtenir le Code Source d'un Contrat Vérifié
 
-Returns the Solidity source code of a verified smart contract.
+Renvoie le code source Solidity d'un contrat intelligent vérifié.
 
-📩 **Tip :** You can also download a **CSV list** of [**verified contracts addresses**](https://scan.coredao.org/exportData?type=open-source-contract-codes) of which the code publishers have provided a corresponding Open Source license for redistribution.
+📩 **Astuce :** Vous pouvez également télécharger une **liste CSV** des [**adresses de contrats vérifiés**](https://scan.coredao.org/exportData?type=open-source-contract-codes) dont les éditeurs de code ont fourni une licence Open Source correspondante pour la redistribution.
 
 ```bash
 https://openapi.coredao.org/api
@@ -72,13 +72,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=contract\\&action=getsourcecode\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=contract\\&action=getsourcecode\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="149">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the contract address that has a verified source code</td></tr></tbody></table>
+<table><thead><tr><th width="149">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>l'adresse du contrat dont le code source est vérifié</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -104,27 +104,27 @@ Sample Response
 }
 ```
 
-## Verify Source Code
+## Vérifier le Code Source
 
-Submits a contract source code to Core Scan for verification.
+Soumet le code source d'un contrat à Core Scan pour vérification.
 
-See Demo Source Verification Submission Code at [**Source Code Verification Sample**](https://scan.coredao.org/sourcecode-demo.html)**.**
+Voir l'Exemple de Soumission de Vérification du Code Source dans [**l'exemple de vérification du code source**](https://scan.coredao.org/sourcecode-demo.html)**.**
 
-1. Requires a valid [**Core Scan API key**](https://scan.coredao.org/my/api\_key), it will be rejected otherwise
-2. Current limit set to 100 submissions per day per user (subject to change)
-3. Only supports HTTP POST due to max transfer size limitations for HTTP GET
-4. Contracts that use "imports" will need to have the code concatenated into one file as we do not support "imports" in separate files.
-5. List of [**supported solc versions**](https://scan.coredao.org/solcversions), only solc version v0.4.11 and above is supported e.g. v0.4.25+commit.59dbf8f1
-6. Upon successful submission you will receive a GUID (50 characters) as a receipt
-7. You may use this GUID to track the status of your submission
-8. Verified Source Codes will be displayed at the [**Verified Contracts**](https://scan.coredao.org/contractsVerified) page.
+1. Nécessite une [**Clé API Core Scan**](https://scan.coredao.org/my/api\_key) valide, sinon la soumission sera rejetée.
+2. Limite actuelle fixée à 100 soumissions par jour et par utilisateur (sous réserve de modifications).
+3. Ne prend en charge que la méthode HTTP POST en raison des limitations de taille maximale de transfert pour HTTP GET.
+4. Les contrats utilisant des "imports" devront avoir leur code concaténé en un seul fichier, car nous ne prenons pas en charge les "imports" dans des fichiers séparés.
+5. Liste des [**versions solc supportées**](https://scan.coredao.org/solcversions) : seule la version solc v0.4.11 et supérieure est supportée (ex. v0.4.25+commit.59dbf8f1).
+6. Lors d'une soumission réussie, vous recevrez un GUID (50 caractères) comme reçu.
+7. Vous pouvez utiliser ce GUID pour suivre l'état de votre soumission.
+8. Les codes sources vérifiés seront affichés sur la page des [**Contrats Vérifiés**](https://scan.coredao.org/contractsVerified).
 
-### Source Code Submission Gist
+### Résumé de la Soumission du Code Source
 
-👇 **Note:** Upon successful submission, a **GUID** is returned, which can be used to check for **submission status.**
+👇 **Note :** Lors d'une soumission réussie, un **GUID** est renvoyé, qui peut être utilisé pour vérifier l'**état de la soumission.**
 
 ```javascript
-//Submit Source Code for Verification
+//Soumettre le code source pour vérification
 
 $.ajax({
     type: "POST", //Only POST supported  
@@ -165,9 +165,9 @@ $.ajax({
 ```
 
 ```javascript
-## Check Source Code Verification Submission Status
+## Vérifier l'Etat de la Soumission de Vérification du Code Source
 
-//Check Source Code Verification Status
+// Vérifier l'Etat de Vérification du Code Source
 $.ajax({
     type: "GET",
     url: "//openapi.coredao.org/api",
@@ -189,54 +189,55 @@ $.ajax({
 });
 ```
 
-## Verify Proxy Contract
+## Vérifier le contrat proxy
 
-Submits a proxy contract source code to Core Scan for verification.
+Soumet le code source d'un contrat proxy à Core Scan pour vérification.
 
-1. Requires a valid [**Core Scan API key**](https://scan.coredao.org/my/api\_key), it will be rejected otherwise
-2. Current limit set to 100 submissions per day per user (subject to change)
-3. Only supports HTTP post
-4. Upon successful submission you will receive a GUID (50 characters) as a receipt
-5. You may use this GUID to track the status of your submission
-6. Verified proxy contracts will display the "Read/Write as Proxy" of the implementation contract under the contract address's contract tab
+1. Nécessite une [**clé API Core Scan valide**](https://scan.coredao.org/my/api\_key), sinon la soumission sera rejetée.
+2. Limite actuelle fixée à 100 soumissions par jour et par utilisateur (sous réserve de modifications).
+3. Ne prend en charge que le POST HTTP.
+4. Lors d'une soumission réussie, vous recevrez un GUID (50 caractères) comme reçu.
+5. Vous pouvez utiliser ce GUID pour suivre l'état de votre soumission.
+6. Les contrats proxy vérifiés afficheront la mention "Lire/Écrire en tant que Proxy" du contrat d'implémentation sous l'onglet du contrat de l'adresse.
 
-### Verifying Proxy Contract using cURL
+### Vérification d'un contrat proxy à l'aide de cURL
 
-Request
+Requête
 
 ```bash
-// example with only the mandatory contract address parameter
+// exemple avec uniquement le paramètre obligatoire d'adresse de contrat
 curl -d "address=0xcbdcd3815b5f975e1a2c944a9b2cd1c985a1cb7f" "https://openapi.coredao.org/api?module=contract&action=verifyproxycontract&apikey=YourApiKeyToken"
 
-// example using the expectedimplementation optional parameter
-// the expectedimplementation enforces a check to ensure the returned implementation contract address == address picked up by the verifier
+// exemple en utilisant le paramètre optionnel expectedimplementation
+// Le paramètre expectedimplementation impose une vérification pour s'assurer que l'adresse du contrat d'implémentation renvoyée est égale à celle détectée par le vérificateur
+address == address picked up by the verifier
 curl -d "address=0xbc46363a7669f6e12353fa95bb067aead3675c29&expectedimplementation=0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6" "https://openapi.coredao.org/api?module=contract&action=verifyproxycontract&apikey=YourApiKeyToken"
 ```
 
-Response
+Réponse
 
 ```bash
 // OK
 {"status":"1","message":"OK","result":"gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz"}
 
-// NOTOK
+// NON OK
 {"status":"0","message":"NOTOK","result":"Invalid API Key"}
 ```
 
-### Checking Proxy Contract Verification Submission Status using cURL
+### Vérification du statut de soumission de vérification du contrat proxy à l'aide de cURL
 
-Request
+Requête
 
 ```bash
 curl "https://openapi.coredao.org/api?module=contract&action=checkproxyverification&guid=gwgrrnfy56zf6vc1fljuejwg6pelnc5yns6fg6y2i6zfpgzquz&apikey=YourApiKeyToken"
 ```
 
-Response
+Réponse
 
 ```bash
 // OK
 {"status":"1","message":"OK","result":"The proxy's (0xbc46363a7669f6e12353fa95bb067aead3675c29) implementation contract is found at 0xe45a5176bc0f2c1198e2451c4e4501d4ed9b65a6 and is successfully updated."}
                                     
-// NOTOK
+// NON OK
 {"status":"0","message":"NOTOK","result":"A corresponding implementation contract was unfortunately not detected for the proxy address."}
 ```
