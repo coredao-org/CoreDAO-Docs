@@ -1,15 +1,15 @@
 ---
-sidebar_label: Blocks
-description: Endpoints related to block data
+sidebar_label: Blocs
+description: Points de terminaison liés aux données de bloc
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Blocks
+# Blocs
 
-## Get Block Rewards by BlockNo
+## Obtenir les Récompenses de Bloc par Numéro de Bloc
 
-Returns the block rewards for validating a certain block.
+Renvoie les récompenses de bloc pour la validation d’un bloc donné.
 
 ```bash
 https://openapi.coredao.org/api
@@ -19,13 +19,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblockreward\\&blockno=1807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\\&action=getblockreward\\&blockno=1807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th>Parameter</th><th width="601">Description</th></tr></thead><tbody><tr><td>blockno</td><td>the integer block number to check block rewards for eg. 1807242</td></tr></tbody></table>
+<table><thead><tr><th>Paramètre</th><th width="601">Description</th></tr></thead><tbody><tr><td>blockno</td><td>le numéro de bloc entier pour lequel vérifier les récompenses de bloc, par exemple 1807242</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -42,9 +42,9 @@ Sample Response
 }
 ```
 
-## Get Estimated Block Countdown Time by BlockNo
+## Obtenir le Temps Restant Estimé du Compte à Rebours du Bloc par Numéro de Bloc
 
-Returns the estimated time remaining, in seconds, until a certain block is validated.
+Renvoie le temps restant estimé, en secondes, jusqu’à ce qu’un certain bloc soit validé.
 
 ```bash
 https://openapi.coredao.org/api
@@ -54,13 +54,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblockcountdown\\&blockno=2807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\\&action=getblockcountdown\\&blockno=2807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="123">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>blockno</td><td>the integer block number to check the countdown time for eg. 2807242</td></tr></tbody></table>
+<table><thead><tr><th width="123">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>blockno</td><td>le numéro de bloc entier pour lequel vérifier le temps du compte à rebours, par exemple 2807242</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -75,9 +75,9 @@ Sample Response
 }
 ```
 
-## Get Block Number by Timestamp
+## Obtenir le Numéro de Bloc par Horodatage
 
-Returns the block number that was validated at a certain timestamp.
+Renvoie le numéro de bloc qui a été validé à un certain horodatage.
 
 ```bash
 https://openapi.coredao.org/api
@@ -88,13 +88,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblocknobytime\\&timestamp=1678581398\\&closest=before\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\\&action=getblocknobytime\\&timestamp=1678581398\\&closest=before\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="136">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>timestamp</td><td>the integer representing the Unix timestamp in seconds.</td></tr><tr><td>closest</td><td>the closest available block to the provided timestamp, either before or after</td></tr></tbody></table>
+<table><thead><tr><th width="136">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>timestamp</td><td>l’entier représentant l'horodatage Unix en secondes.</td></tr><tr><td>closest</td><td>le bloc disponible le plus proche de l'horodatage fourni, soit avant ou après</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
