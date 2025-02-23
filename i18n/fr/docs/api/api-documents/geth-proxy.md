@@ -800,9 +800,9 @@ https://openapi.coredao.org/api
 
 Paramètres de requête
 
-<table><thead><tr><th width="170">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>the string representing the address to get storage value</td></tr><tr><td>position</td><td>the hex code of the position in storage, eg 0x0</td></tr><tr><td>tag</td><td>the string pre-defined block parameter, either earliest, pending or latest</td></tr></tbody></table>
+<table><thead><tr><th width="170">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>address</td><td>la chaîne représentant l'adresse pour obtenir la valeur de stockage</td></tr><tr><td>position</td><td>le code hexadécimal de la position dans le stockage, par exemple 0x0</td></tr><tr><td>tag</td><td>la chaîne de paramètres de bloc prédéfinie, soit la plus récente, soit en attente, ou la plus ancienne</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -814,7 +814,7 @@ Sample Response
 
 ## eth\_gasPrice
 
-Returns the current price per gas in wei.
+Renvoie le prix actuel par unité de gaz en wei.
 
 ```bash
 https://openapi.coredao.org/api
@@ -823,11 +823,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_gasPrice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_gasPrice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-No Request parameters required.
+Aucun paramètre de requête requis.
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -839,7 +839,7 @@ Sample Response
 
 ## eth\_estimateGas
 
-Makes a call or transaction, which won't be added to the blockchain and returns the gas used.
+Effectue un appel ou une transaction, qui ne sera pas ajoutée à la blockchain, et renvoie le gaz utilisé.
 
 ```bash
 https://openapi.coredao.org/api
@@ -853,13 +853,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_estimateGas\\&data=0x4e71d92d\\&to=0xEeee7341f206302f2216e39D715B96D8C6901A1C\\&value=0xff22\\&gasPrice=0x51da038cc\\&gas=0x5f5e0ff\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_estimateGas\\&data=0x4e71d92d\\&to=0xEeee7341f206302f2216e39D715B96D8C6901A1C\\&value=0xff22\\&gasPrice=0x51da038cc\\&gas=0x5f5e0ff\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="142">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>the hash of the method signature and encoded parameters</td></tr><tr><td>to</td><td>the string representing the address to interact with</td></tr><tr><td>value</td><td>the value sent in this transaction, in hex eg. 0xff22</td></tr><tr><td>gas</td><td>the amount of gas provided for the transaction, in hex eg. 0x5f5e0ff</td></tr><tr><td>gasPrice</td><td>the gas price paid for each unit of gas, in wei</td></tr></tbody></table>
+<table><thead><tr><th width="142">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>data</td><td>le hachage de la signature de la méthode et des paramètres encodés</td></tr><tr><td>to</td><td>la chaîne représentant l'adresse avec laquelle interagir</td></tr><tr><td>value</td><td>la valeur envoyée dans cette transaction, en hexadécimal par exemple 0xff22</td></tr><tr><td>gas</td><td>la quantité de gaz fournie pour la transaction, en hexadécimal par exemple 0x5f5e0ff</td></tr><tr><td>gasPrice</td><td>le prix du gaz payé pour chaque unité de gaz, en wei</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
