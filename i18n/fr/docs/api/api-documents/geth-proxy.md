@@ -1,6 +1,6 @@
 ---
 sidebar_label: Geth Proxy
-description: Endpoints related to Geth Proxy
+description: Points de terminaison liés au Geth Proxy
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -9,13 +9,13 @@ sidebar_position: 2
 
 ## **Geth Proxy**
 
-> For the full documentation of available parameters and descriptions, please visit the official [\*\*Ethereum JSON-RPC \*\*](https://eth.wiki/json-rpc/API) docs.
+> Pour la documentation complète des paramètres disponibles et leurs descriptions, veuillez consulter la documentation officielle [\*\*Ethereum JSON-RPC \*\*](https://eth.wiki/json-rpc/API).
 
 ***
 
 ## eth\_blockNumber
 
-Returns the number of most recent block
+Renvoie le numéro du bloc le plus récent
 
 ```bash
 https://openapi.coredao.org/api
@@ -24,11 +24,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_blockNumber\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_blockNumber\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-No Request parameters required.
+Aucun paramètre de requête requis.
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
