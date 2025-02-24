@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Récupérer des Bitcoins Stakés ou Réclamer des Récompenses en CORE
 
-Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. Pour apprendre à staker vos actifs Bitcoins sur Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos Bitcoins avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos Bitcoin stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking Bitcoin**’.
+Core offre aux détenteurs de Bitcoin la possibilité de staker leurs actifs sur la blockchain Core pour gagner un revenu passif sous forme de tokens CORE. Pour apprendre à staker vos actifs Bitcoins sur Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos Bitcoins avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos Bitcoin stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking Bitcoin**’.
 
 ## Informations sur la Distribution des Récompenses
 
@@ -44,7 +44,7 @@ Si votre période de staking a expiré, vous pouvez récupérer vos Bitcoins sta
 ## Réclamer des Récompenses en CORE Gagnées avec la Délégation de Bitcoin Staké
 
 :::note
-To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+Pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 :::
 
 1\. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit, et cliquez sur ‘**Mes Stakings**’.
