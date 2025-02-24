@@ -7,9 +7,9 @@ sidebar_position: 2
 
 # Statistics
 
-## Get Total Supply of CORE on Core
+## Obtenir l'Offre Totale de CORE sur Core
 
-Returns total supply of CORE.
+Renvoie l'offre totale de CORE.
 
 ```bash
 https://openapi.coredao.org/api?
@@ -18,11 +18,11 @@ https://openapi.coredao.org/api?
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=coresupply\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\\&action=coresupply\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-No Request parameters required.
+Aucun paramètre de requête requis.
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -32,11 +32,11 @@ Sample Response
 }
 ```
 
-> **Tip :** The `result` is returned in WEI. Easily convert Core units using our [**unit converter.**](https://scan.coredao.org/unit-converter)
+> **Astuce :** Le `résultat` est renvoyé en WEI. Convertissez facilement les unités Core à l'aide de notre [**convertisseur d'unités.}**(https://scan.coredao.org/unit-converter)
 
-## Get Validators List on Core
+## Obtenir la Liste des Validateurs sur Core
 
-Returns the top 21 validators on Core blockchain.
+Renvoie les 21 principaux validateurs sur la blockchain Core.
 
 ```bash
 https://openapi.coredao.org/api
@@ -45,11 +45,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=validators\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\\&action=validators\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-No Request parameters required.
+Aucun paramètre de requête requis.
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -408,9 +408,9 @@ Sample Response
 }
 ```
 
-## Get CORE Last Price
+## Obtenir le Dernier Prix de CORE
 
-Returns the latest price of 1 CORE.
+Renvoie le dernier prix de 1 CORE.
 
 ```bash
 https://openapi.coredao.org/api
@@ -419,11 +419,11 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=coreprice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\\&action=coreprice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-No Request parameters required.
+Aucun paramètre de requête requis.
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
@@ -438,4 +438,4 @@ Sample Response
 }
 ```
 
-> ⏳ **Tip :** The `timestamps` are represented in [**Unix timestamp.**](https://www.unixtimestamp.com/)
+> ⏳ **Tip :** Les `horodatages` sont représentés en format [**Unix timestamp.**](https://www.unixtimestamp.com/)
