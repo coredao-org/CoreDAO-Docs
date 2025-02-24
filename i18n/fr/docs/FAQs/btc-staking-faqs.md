@@ -49,9 +49,9 @@ Les utilisateurs doivent se conformer aux exigences suivantes pour qu'une transa
 
 - En utilisant la fonctionnalité native de timelock de Bitcoin, spécifiez le montant à verrouiller destiné à être délégué au validateur sur la blockchain Core comme sortie de la transaction.
 
-- When using the staking script, there is **no** minimum BTC requirement for staking. However, if staking through the [official staking website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees).
+- Lors de l'utilisation du script de staking, il n'y a **aucune** exigence minimale en BTC pour le staking. Cependant, en utilisant [l'interface utilisateur officielle du site de staking](https://stake.coredao.org/staking), les utilisateurs doivent staker au moins **0,01 BTC** (hors frais de transaction).
 
-- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+- La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis que le staking via script ne comporte aucune période de blocage.
 
 - La transaction doit également contenir une sortie op\_return spécifiant
   - L'adresse du validateur Core auquel le staker souhaite déléguer son Bitcoin.
