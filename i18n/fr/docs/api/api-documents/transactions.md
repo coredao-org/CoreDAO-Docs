@@ -1,15 +1,15 @@
 ---
 sidebar_label: Transactions
-description: Endpoints related to Transactions
+description: Points de terminaison liés aux Transactions
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
 # Transactions
 
-## Check Transaction Receipt Status
+## Vérifier le Statut du Reçu d'une Transaction
 
-Returns the status code of a transaction execution.
+Renvoie le code d'état de l'exécution d'une transaction.
 
 ```bash
 https://openapi.coredao.org/api
@@ -19,13 +19,13 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=transaction\\&action=gettxreceiptstatus\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=transaction\\&action=gettxreceiptstatus\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
-Request Query Parameters
+Paramètres de requête
 
-<table><thead><tr><th width="145">Parameter</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>the string representing the transaction hash to check the execution status</td></tr></tbody></table>
+<table><thead><tr><th width="145">Paramètre</th><th>Description</th></tr></thead><tbody><tr><td>txhash</td><td>la chaîne représentant le hash de la transaction pour vérifier le statut d'exécution</td></tr></tbody></table>
 
-Sample Response
+Réponse d’exemple
 
 ```json
 {
