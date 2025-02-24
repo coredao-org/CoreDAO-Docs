@@ -68,7 +68,7 @@ Si vous utilisez l'extension MetaMask pour Chrome, vous pouvez ajouter rapidemen
 
 #### Nouveau Testnet
 
-Le nouveau testnet de Core avec le `chainID 1114` est désormais en ligne et recommandée pour une utilisation. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). L’ancien testnet sera bientôt déprécié et finira par être retiré. Passez donc au nouveau testnet pour bénéficier des dernières fonctionnalités.
+Le nouveau testnet de Core avec le `chainID 1114` est désormais en ligne et recommandée pour une utilisation. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). L’ancien testnet sera bientôt déprécié et finira par être retiré. Passez donc au nouveau testnet pour bénéficier des dernières fonctionnalités.
 
 #### Mises à Jour de la marque
 
