@@ -1,6 +1,6 @@
 ---
 sidebar_label: Statistics
-description: Endpoints related to Statistical Data
+description: Points de Terminaison Liés aux Données Statistiques
 hide_table_of_contents: false
 sidebar_position: 2
 ---
