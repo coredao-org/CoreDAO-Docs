@@ -21,16 +21,16 @@ Rendez-vous sur la [page d'inscription](https://scan.coredao.org/register) et fo
 
 ## Vérifiez Votre Email
 
-Un lien de confirmation 🔗 vous sera envoyé par e-mail afin de vérifier votre demande d'inscription. Once you've clicked on the link, your account set-up process is complete and you may start to use your account-specific features ! 🎉
+Un lien de confirmation 🔗 vous sera envoyé par e-mail afin de vérifier votre demande d'inscription. Une fois le lien cliqué, la configuration de votre compte est terminée et vous pouvez commencer à utiliser les fonctionnalités spécifiques à votre compte ! 🎉
 
-## Using Your Account
+## Utilisation de Votre Compte
 
-Upon signing in, you will have access to your account dashboard where you can make full use of Core Scan's features such as generating API keys 🗝, hiding unwanted tokens and adding private notes.
+Après vous être connecté, vous aurez accès à votre tableau de bord où vous pourrez pleinement profiter des fonctionnalités de Core Scan, telles que la génération de clés API 🗝, la dissimulation des tokens indésirables et l'ajout de notes privées.
 
 ![create-account-on-corescan](../assets/image.png)
 
-## Endpoint URLs
+## URL des Points de Terminaison
 
-All endpoints and parameter formatting are the same on TestNet and MainNet, you are only required to change the relevant API endpoint URL as follows.
+Tous les points de terminaison et le formatage des paramètres sont identiques sur TestNet et MainNet, vous devez simplement modifier l'URL du point de terminaison API correspondant comme suit.
 
-<table><thead><tr><th width="155.33333333333331" align="center">Network</th><th align="center">Endpoint URL</th><th align="center">Documentation</th></tr></thead><tbody><tr><td align="center">Core Mainnet</td><td align="center">https://openapi.coredao.org/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr><tr><td align="center">Core Testnet</td><td align="center">https://api.test.btcs.network/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr><tr><td align="center">Core Testnet2</td><td align="center">https://api.test2.btcs.network/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr></tbody></table>
+<table><thead><tr><th width="155.33333333333331" align="center">Réseau</th><th align="center">URL de point de terminaison</th><th align="center">Documentation</th></tr></thead><tbody><tr><td align="center">Mainnet de Core</td><td align="center">https://openapi.coredao.org/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr><tr><td align="center">Testnet de Core</td><td align="center">https://api.test.btcs.network/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr><tr><td align="center">Testnet2 de Core</td><td align="center">https://api.test2.btcs.network/api</td><td align="center">https://docs.coredao.org/docs/api</td></tr></tbody></table>
