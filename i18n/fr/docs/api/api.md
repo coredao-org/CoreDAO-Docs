@@ -8,20 +8,20 @@ sidebar_position: 2
 
 ---
 
-Introducing the Core Scan Open API, a powerful tool that gives developers direct access to Core Scan's block explorer data and services. Use these resources to enhance your applications, tapping into comprehensive insights of Core provided by Core Scan.
+Présentation du Core Scan Open API, un outil puissant qui offre aux développeurs un accès direct aux données de l'explorateur de blocs et aux services de Core Scan. Utilisez ces ressources pour améliorer vos applications en tirant parti des analyses complètes de Core fournies par Core Scan.
 
-## Tutorials
+## Tutoriels
 
-We've written some tutorials to help you get started with Core Scan Open API. For advanced users, we've included guides for advanced endpoints, such as API-facilitated programmatic contract verification.
+Nous avons rédigé quelques tutoriels pour vous aider à démarrer avec le Core Scan Open API. Pour les utilisateurs avancés, nous avons inclus des guides pour les points de terminaison avancés, tels que la vérification programmatique des contrats facilitée par l'API.
 
-Check out the Core Scan Open API tutorials [here](https://docs.coredao.org/docs/api/core-api-tutorials).
+Découvrez [ici](https://docs.coredao.org/docs/api/core-api-tutorials) les tutoriels du Core Scan Open API.
 
-## API Endpoints
+## Points de terminaison API
 
-Core Scan Open API provides endpoints for many things, including interacting with deployed smart contracts, fetching a user's CORE balance, and viewing detailed information about transactions.
+Le Core Scan Open API offre des points de terminaison pour de nombreuses fonctions, notamment pour interagir avec des contrats intelligents déployés, récupérer le solde CORE d'un utilisateur et consulter des informations détaillées sur les transactions.
 
-Check out the full endpoint documentation [here](https://docs.coredao.org/docs/api/core-api-docs).
+Consultez [ici](https://docs.coredao.org/docs/api/core-api-docs) la documentation complète des points de terminaison.
 
-## Support
+## Assistance
 
-If you have an issue and need clarification, reach out to us on our official [Discord](https://discord.com/invite/coredaoofficial).
+Si vous rencontrez un problème et avez besoin de précisions, contactez-nous sur notre [Discord](https://discord.com/invite/coredaoofficial) officiel.
