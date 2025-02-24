@@ -43,7 +43,7 @@ Le DPoS permet aux détenteurs de de Bitcoin et CORE de s’engager dans la gouv
   Les détenteurs de Token stake leurs tokens CORE avec les validateurs en votant pour eux afin de participer au processus de consensus. Plus le nombre de token staké avec un validateur est élevé, plus l’influence dans les validations de transaction et la création de nouveaux blocs est grande.
 - **Déroulement des opérations:** Les stakers délèguent leurs tokens aux validateurs via un processus sécurisé de staking sur la plateforme Core. En échange, ils reçoivent des récompenses de staking sous forme de tokens CORE. Les tokens stakés contribuent à la sécurité globale du réseau et aux processus de prise de décision.
   - **Stakers de Bitcoin** - Le troisième volet du consensus de Satoshi Plus est le staking de Bitcoin non-custodial, qui permet, à n’importe quel détenteur de Bitcoin, de gagner un rendement en stakant leurs tokens bitcoin sans renoncer à leur garde.
-  - **CORE Stakers** - All holders of Core blockchain’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
+  - **Stakers de Core** - Tous les détenteurs de tokens natif CORE de la blockchain Core sont en mesure de garantir la sécurité du réseau en déléguant leurs tokens à un validateur.
 
 ### 3. **Staking de Bitcoin Non-Custodial**
 
@@ -94,6 +94,6 @@ Satoshi Plus renforce la sécurité à la fois des réseaux Bitcoin et Core en c
 **Fonctionnement:**
 
 - **Un modèle de sécurité partagé:** En permettant aux mineurs de Bitcoin de participer au mécanisme de sécurité de Core, le système tire parti de l’immense puissance de hashage du Bitcoin, renforçant ainsi la sécurité de la blockchain Core sans nécessité de ressource supplémentaire importante.
-- **Workflow:** As miners and stakers contribute to Core blockchain’s security, both networks benefit. Les mineurs utilisent leurs configurations existantes pour soutenir la blockchain Core, et les stakers fournissent des couches de sécurité supplémentaires via la délégation de token, créant un réseau robuste et résilient.
+- **Déroulement des opérations:** Comme les mineurs et les stakers contribuent à la sécurité de la blockchain Core, les deux réseaux en bénéficient. Les mineurs utilisent leurs configurations existantes pour soutenir la blockchain Core, et les stakers fournissent des couches de sécurité supplémentaires via la délégation de token, créant un réseau robuste et résilient.
 
 En résumé, le mécanisme de consensus Satoshi Plus intègre intelligemment ces composants dans un système cohérent qui bénéficient de la sécurité et de la décentralisation du processus de minage de Bitcoin ainsi que l’agilité et la capacité de gouvernance d’un modèle de staking moderne, encourageant un environnement blockchain sécurisé, efficace et scalable.
