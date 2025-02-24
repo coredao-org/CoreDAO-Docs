@@ -32,7 +32,7 @@ Dans l'écosystème Core, la robustesse, la sécurité et la décentralisation d
 ## Types de Nœuds sur le Réseau Core
 
 1. **Validateurs:**
-   - **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework.
+   - **Rôle :** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de la blockchain Core.
    - **Requis:** Les validateurs doivent staker un minimum de **10 000 tokens CORE** pour participer, alignant ainsi leurs incitations financières avec les performances et la sécurité du réseau.
    - **Incitation :** Les validateurs gagnent des récompenses en tokens CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
 
