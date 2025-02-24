@@ -65,7 +65,7 @@ La feuille de route de Core est conçue en accord avec l'objectif principal de l
 
 - **Swaps atomiques :** En s'appuyant sur les HTLC, les swaps atomiques peuvent continuer à favoriser l'alignement structurel entre les blockchains Bitcoin et Core.
 
-- **coreBTC Improvements:** Integrating coreBTC with Core blockchain’s Satoshi Plus consensus and using multisig wallets can increase the security of the asset. De plus, les Lockers pourraient disposer de plus d'options collatéral.
+- **Améliorations de coreBTC :** Intégrer coreBTC avec le consensus Satoshi Plus de la blockchain Core et utiliser des portefeuilles multisignatures peut renforcer la sécurité de l'actif. De plus, les Lockers pourraient disposer de plus d'options collatéral.
 
 - **coreBTC comme token de gaz :** Cette option permettrait aux utilisateurs de payer les frais de transaction en CORE ou en coreBTC.
 
