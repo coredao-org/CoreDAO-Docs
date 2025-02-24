@@ -8,15 +8,15 @@ sidebar_position: 2
 
 ---
 
-Delegated Proof of Stake (DPoS) is one of the 3 fundamental components of the Satoshi Plus consensus mechanism, playing a pivotal role in enhancing the functionality, security, and efficiency of the blockchain network. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.\
+La Preuve d'Enjeu Déléguée (DPoS) est l'un des 3 composants fondamentaux du mécanisme de consensus Satoshi Plus, jouant un rôle clé dans l'amélioration de la fonctionnalité, de la sécurité et de l'efficacité du réseau blockchain. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.\
 This process not only helps secure the network but also enables participants to share in the system’s rewards.\
 In this guide, we provide a step-by-step walkthrough on how to delegate your CORE tokens to validators within the Core network, empowering you to actively contribute to the ecosystem while reaping the benefits of your investment.
 
 ## Site Web de Staking Core
 
-- Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
-- Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
-- Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
+- Mainnet Core : [https://stake.coredao.org/](https://stake.coredao.org/)
+- Testnet Core : [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Testnet2 Core : [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Guide étape par étape pour déléguer CORE
 
@@ -78,7 +78,7 @@ Pour déléguer vos tokens CORE, suivez ces étapes :
 
 #### Étape 2.1 : Spécifiez le montant de CORE à déléguer
 
-- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**. A minimum of 1 CORE is required for staking CORE. Whereas, there are requirements for staaked durations.
+- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**. Un minimum de 1 CORE est requis pour staker du CORE. Whereas, there are requirements for staaked durations.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -105,7 +105,7 @@ Maintenant que nous avons délégué avec succès du CORE, vérifions que notre 
 </p>
 
 :::note
-Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+Remarque : Pour les délégations de CORE, le transfert du validateur de staking n'entraînera aucune interruption des récompenses.
 :::
 
 ### Step 3 Undelegating CORE
@@ -144,7 +144,7 @@ Si nous souhaitons annuler la délégation de notre CORE, vous devrez cliquer su
 
 ## Réclamation des récompenses
 
-Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. Pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 
 Pour réclamer vos récompenses, sélectionnez simplement le bouton Claim en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet Claim du site, comme indiqué ci-dessous.
 
