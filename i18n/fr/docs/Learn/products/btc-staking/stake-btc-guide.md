@@ -19,8 +19,8 @@ Pour pouvoir staker, vous devez disposer des éléments suivants :
 
 Les points suivants sont des éléments clés auxquels les utilisateurs doivent faire attention lorsqu'ils stakent leur Bitcoin sur Core.
 
-1. **Minimum Bitcoin Amount \+ Gas Fee:** TThe minimum BTC required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
-2. **Minimum Staking Duration:** \* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+1. **Montant minimum de Bitcoin \+ frais de gas :** Le montant minimum de BTC requis pour le staking sur Core dépend de la méthode choisie. Si vous utilisez l'interface utilisateur officielle du site, vous devez staker au moins 0,01 BTC (hors frais de transaction). Il n'y a aucune exigence minimale lors du staking via script. De plus, les utilisateurs doivent prendre en compte les frais de gas en Bitcoin nécessaires aux transactions. Pour un staking de moins d'un mois, il est recommandé de disposer d'au moins 0,05 BTC afin de couvrir une éventuelle congestion du réseau, qui pourrait augmenter les frais de gas au-delà des récompenses de staking perçues.
+2. **Durée minimale de staking :** La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis le script ne comporte aucune période de blocage.
 3. **Comprendre les Différences dans les Adresses de Staking de Bitcoin :**
    - L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
 4. **Délais pour que les Actifs Verrouillés Apparaissent dans votre Portefeuille Bitcoin :**
@@ -36,12 +36,12 @@ Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décen
 
 1. **Initier le Staking :** Commencez par accéder soit à l'outil de [staking BTC basé sur l'outil CLI](https://github.com/coredao-org/btc-staking-tool) (pour les utilisateurs techniques), soit à la [plateforme de staking en ligne](https://stake.coredao.org/) (pour les utilisateurs généraux).
 2. **Staker du Bitcoin avec un Verrouillage Temporel :** Vous stakez vos Bitcoins en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, et vos Bitcoin restent verrouillés jusqu'à la fin de la période spécifiée. Assurez-vous de suivre les exigences pour qu'une transaction soit valide et éligible ; référez-vous [ici](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) pour plus de détails.
-   1. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement. THerefore, make sure to thoughtfully select your lockup periods.
+   1. La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis le script ne comporte aucune période de blocage. Par conséquent, assurez-vous de choisir soigneusement vos périodes de blocage.
    2. Incluez l'adresse du validateur Core pour déléguer vos actifs.
    3. Incluez l'adresse de votre portefeuille Core pour les récompenses.
 3. **Voter pour des Validateurs :** En incluant l'adresse des validateurs Core dans votre transaction, vous pouvez déléguer votre Bitcoin staké au validateur choisi sur la blockchain Core.
 4. **Connecter un portefeuille Core pour les récompenses :** Dans le champ de retour, vérifiez votre adresse de portefeuille Core ; vous recevrez les récompenses en tokens CORE à cette adresse.
-5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement. ALso, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement. Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 6. **Récupérer des Bitcoin:** Une fois la période de verrouillage du staking expirée, les Bitcoin stakés resteront inactifs dans l'adresse de staking jusqu'à ce qu'ils soient récupérés par l'utilisateur.
 
 ## Guide de Staking Non-Custodial de Bitcoin
@@ -92,8 +92,8 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 8. Une fois votre portefeuille Bitcoin connecté, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-- Spécifiez le montant de Bitcoin que vous souhaitez déléguer. The minimum amount to delegate is **0.01 Bitcoin** id staking via official stkaign website UI and no requirements if staking BTC via the staking script.
-- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation. The minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+- Spécifiez le montant de Bitcoin que vous souhaitez déléguer. Le montant minimum à déléguer est de **0,01 Bitcoin** si le staking est effectué via l'interface utilisateur officielle du site, et aucune exigence n'est imposée pour le staking de BTC via le script de staking.
+- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation. La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis que le staking via script ne comporte aucune période de blocage.
   - Vous pouvez entrer des valeurs en sélectionnant à l'intérieur de la boîte de temps de verrouillage ou en cliquant sur l'icône du calendrier pour sélectionner la date et cliquer sur "OK" pour continuer.
   - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
@@ -106,7 +106,7 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 10. Cliquez sur **Confirm** pour compléter la transaction.
 
 :::note
-Note: For BTC staking, transferring the staking validator will interrupt staking, resulting in the loss of rewards for that day.
+Remarque : Pour le staking de BTC, le transfert du validateur de staking interrompra le staking, entraînant la perte des récompenses pour cette journée.
 :::
 
 ### Confirmer la Sortie OP\_Return
