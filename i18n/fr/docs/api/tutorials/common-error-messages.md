@@ -1,13 +1,13 @@
 ---
-sidebar_label: Common Error Messages
-description: Common Error Messages while using Core Scan API
+sidebar_label: Messages d'Erreur Courants
+description: Messages d'Erreur Courants lors de l'utilisation de l'API Core Scan
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Common Error Messages
+# Messages d'Erreur Courants
 
-An API call that encounters an error will return 0 as its status code and display the cause of the error in the result field.
+Un appel API qui rencontre une erreur renverra 0 comme code de statut et affichera la cause de l'erreur dans le champ résultat.
 
 ```json
 {
@@ -19,30 +19,30 @@ An API call that encounters an error will return 0 as its status code and displa
 
 ***
 
-## Max rate limit
+## Limite de taux maximale
 
-> "Max rate limit reached"
+> "Limite de taux maximale atteinte"
 
-This error occurs when you exceed the rate limit assigned to your specific API key. To resolve, adhere to your available plan by waiting for a certain amount of time before each request. If you are using a script or application, apply throttling to limit the frequency of calls.
+Cette erreur survient lorsque vous dépassez la limite de taux assignée à votre clé API spécifique. Pour résoudre, respectez votre plan en attendant un certain temps avant chaque requête. Si vous utilisez un script ou une application, appliquez un régulateur de débit (throttling) pour limiter la fréquence des appels.
 
-Reference for various API tiers and their rate limits 🚧.
+Référence pour les différents niveaux d'API et leurs limites de taux 🚧.
 
-| API Tier |                Rate Limit               |
-| :------: | :-------------------------------------: |
-|   Free   | 5 calls/second , up to 10,000 calls/day |
-
-***
-
-## Missing or invalid action
-
-> "Error! Missing or invalid action name"
-
-This error occurs when you do not specify, or specify an invalid module and action name. To resolve, double check your API query to use a valid module and action name. If you require some help getting started, try copying the sample queries provided in the documents and pasting them into your browser.
+| Niveau d'API |                Limite de taux                |
+| :----------: | :------------------------------------------: |
+|     Free     | 5 appels/seconde, jusqu'à 10 000 appels/jour |
 
 ***
 
-## API specific errors
+## Action manquante ou invalide
 
-> "Error! Block number already pass" "Error! Invalid address format" "Contract source code not verified"
+> "Erreur ! Nom d'action manquant ou invalide"
 
-These error messages returned are specific to certain APIs and related parameters. To resolve, kindly refer to the specific API's documentation, and check for the correct format or values to be specified as parameters.
+Cette erreur survient lorsque vous ne spécifiez pas, ou que vous spécifiez un module et un nom d'action invalides. Pour résoudre, vérifiez minutieusement votre requête API afin d'utiliser un module et un nom d'action valides. Si vous avez besoin d'aide pour démarrer, essayez de copier les requêtes d'exemple fournies dans la documentation et de les coller dans votre navigateur.
+
+***
+
+## Erreurs spécifiques API
+
+> "Erreur ! Le numéro de bloc est déjà passé" "Erreur ! Format d'adresse invalide" "Le code source du contrat n'est pas vérifié"
+
+Ces messages d'erreur renvoyés sont spécifiques à certaines API et à leurs paramètres associés. Pour résoudre, veuillez consulter la documentation spécifique de l'API et vérifier le format ou les valeurs correctes à spécifier en tant que paramètres.
