@@ -12,7 +12,7 @@ sidebar_position: 2
 
 La Fondation Core encourage le développement de projets open source et, par conséquent, tous les dépôts de code de Core sont accessibles à la communauté. Vous pouvez trouver le code source de Core blockchain et d'autres outils pour développeurs sur le [compte GitHub officiel de Core](https://github.com/coredao-org).
 
-### 2. What are the official communication channels?
+### 2. Quels sont les canaux de communication officiels ?
 
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 - **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
