@@ -38,6 +38,6 @@ La blockchain Core aborde plusieurs problèmes clés dans l'espace blockchain gr
 
 - **Tokenomics et Structure d’Incitations:** CORE, le token utilitaire natif, est utilisé pour le staking et le paiement des frais de gaz. Avec une offre totale de **2,1 milliards** de tokens, Core Chain prévoit de les distribuer sur **81 ans**, en phase avec sa vision à long terme. Le projet inclut également des mécanismes pour brûler un pourcentage des récompenses de blocs et des frais de gaz afin de gérer dynamiquement l'offre de tokens.
 
-- **Passive Income:** Core furnishes an opportunity for BTC holders to earn passive income in the form of CORE tokens earned as rewards in exchange for staking their BTC onto Core and delegating these to valdiators on the Core network, indirectly contributing to Core blockchain’s consensus mechanism and security.
+- **Revenu Passif:** Core offre une opportunité aux détenteurs de BTC de gagner un revenu passif sous forme de tokens CORE, gagnés en récompenses en échange du staking de leurs BTC sur Core et de leur délégation aux validateurs du réseau Core, contribuant ainsi indirectement au mécanisme de consensus et à la sécurité de la blockchain Core.
 
 - **Comparaison avec d’Autres Blockchains:** Core se positionne comme une amélioration par rapport aux blockchains existantes comme Bitcoin, Ethereum, Solana, Polygon, et la BNB Chain. En abordant des problèmes tels que le faible débit des transactions, les risques de centralisation, et la stabilité du réseau, Core offre une alternative plus évolutive, décentralisée et sécurisée.
