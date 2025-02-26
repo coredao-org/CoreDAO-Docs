@@ -56,7 +56,7 @@ In the example, we are selecting: **DAO Validator 6**. To choose a validator, cl
 ### Step 2: Delegating CORE to a Validator
 Once you’ve selected a validator, you’ll be taken to their detailed page, as shown below. Here’s what you’re seeing:
   * **Delegated Coin (CORE):** The total amount of CORE tokens already delegated to the selected validator (e.g., 6,678,941 CORE).
-  * **CORE Reward Rate:** The annual percentage of rewards for delegating to the selected validator. For example, if he CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
+  * **CORE Reward Rate:** The annual percentage of rewards for delegating to the selected validator. For example, if the CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
   * **Commission:** The validator’s commission fee, which is deducted from your rewards, example 5%.
   * **Delegators:** The number of users who have delegated to the selected validator (e.g., 16,234 CORE Delegators).
   
@@ -89,19 +89,19 @@ To delegate your CORE tokens, follow these steps:
 
 #### Step 2.2 Verifying delegated CORE
 
-Now that we’ve successfully delegated CORE, lets verify that our CORE is now being staked by hovering over our connected wallet in the top right corner, and clicking on the **My Staking** dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated, or 1 CORE staked:
+Now that we’ve successfully delegated CORE let us verify that our CORE is being staked by hovering over our connected wallet in the top right corner and clicking on the **My Staking** dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated or 1 CORE staked.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
 </p>
 
 :::note
-Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+Note: For CORE delegations, transferring to a different staking validator will **_not_** interrupt staking rewards.
 :::
 
 ### Step 3 Undelegating CORE 
 
-If we want to Undelegate our CORE, you will want to click the 3 dots at the end of your chosen validator, and click **Undelegate CORE**.
+If you wish to Undelegate your CORE, click the 3 dots at the end of your chosen validator, and click **Undelegate CORE**.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)
@@ -109,7 +109,7 @@ If we want to Undelegate our CORE, you will want to click the 3 dots at the end 
 
 #### Step 3.1 Confirm the transaction, and verify undelegated CORE
 
-* After clicking Undelegate, you will be prompted to confirm the transaction in your Metamask. Click the **Confirm** button:
+* After clicking **Undelegate**, you will be prompted to confirm the transaction in your Metamask. Click the **Confirm** button:
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)
@@ -134,9 +134,9 @@ If we want to Undelegate our CORE, you will want to click the 3 dots at the end 
 </p>
 
 ## Claiming Rewards
-You can view reward information about your active delegations by selecting **My Staking** on the top right corner in teh header of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+You can view reward information about your active delegations by selecting **My Staking** on the top right corner in the header of the staking website. Delegation (staking) rewards are distributed after each round at 00:00 am UTC every day. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 
-To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's Claim tab, as shown below.
+To claim your rewards, simply select the Claim button on the top left and sign the transaction. After sending the transaction, you will receive the rewards to your linked address. Historical claim transactions are listed on the website's **Claim** tab, as shown below.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)

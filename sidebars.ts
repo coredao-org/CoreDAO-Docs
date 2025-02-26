@@ -122,8 +122,15 @@ const sidebars: SidebarsConfig = {
                   'CoreIgnition/Mechanics',
               ]
           },
-          {type: 'doc', id: 'Learn/audit', label:'Audit'},
-
+          {
+            type: 'category',
+            collapsed: true,
+            label: 'Security',
+            items: [
+                'Learn/audit',
+                'Learn/bug-reporting',
+            ]
+          },
     ]
     },
   ],
