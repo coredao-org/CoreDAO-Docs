@@ -1,8 +1,8 @@
 ---
 id: retrieve-reward-claim-history
-title: Retrieve Reward Claim History
-description: Returns a list of reward claim history by core address within a given round range. Limited to 100 rounds on each query.
-sidebar_label: Retrieve Reward Claim History
+title: Récupérer l'Historique des Réclamations de Récompenses
+description: Renvoie une liste de l'historique des réclamations de récompenses pour une adresse Core donnée dans une plage de rounds spécifiée. Limité à 100 rounds par requête.
+sidebar_label: Récupérer l'Historique des Réclamations de Récompenses
 hide_title: true
 hide_table_of_contents: true
 api: eJzFV01v2zgQ/SsEL90FvLa72JNvqRFsAnSxhZOegqAYi2OLrUSqMyOnhqH/vhhK/nZbpQ26vsSWODNv3nskJxvrkDPylfgY7MTOUGoKbMAUnsXEhSF8AnImK8CXJvcskdZmvjZZJDTgHCGzefKS+2DALP0Kg6FYB2cIwhKH5q0vvaAzEs3r8bh9xyYGg5Dl5nONtB7aga2AoERBYjt52NgAJdqJ1SpXbRE7sF4hpgg7sISfa0/o7ESoxsFJI/c5HkOUaAiFPK7QSI6X+1pEUiyc5ViCnWysrCuFwUI+LG3TDHbIWIBkps08H1iK9WHZERUXLSLlSyGYp9xn+ddRejZaA1nQXYTrg+AS6QgvBveDaDG4X4L1UcFwFQMj64I/x2P9c2rQC0W2wjrDdZYh86IuiuSqLAbBIJoHqqrwGWie0UfWZJtzNHH+ETNRO1KskMS3ULLo8NwOp2TdCUjNRhfveOoaGtpmYEtkhmWPRP+0C01FceUT+eCc15dQGIcCvmAD81jLeREH0qMhQq4LOVgHRLA+A/L20iFAmEVyrPR6wZK/X40FPqG7Ac5b+b7PwFUZ65BK31zd3XT12bSJjA+p74PDJrWevl2w1iVTt24OdTlHMsAcMw96SulJdubmlH1J4FAJ6c1aimDDeXxKG6jNSCDIBoIzFVKGQWCJzyGzTTMDwb6t7uumHZuoU2iprT2Inun2AVuTSxQotmVOKzRNM+gMMI2EfQ2glab/zq57Sl+u7/T9CSs7Bo9zv2ekV23GpIsS0+2q4WXvzvTY6AeadOmWmXpfSWk6YCs9OhSgX/Zz8o9K+GAIi3TGXS6nYqQnrQ5TdTf2lONQZm43xtcFaeV6cz99juBv7qe99N5/BvavS7fEbVhB4TW6qsXsRwsT6Wgq+OVXxDVRgvCzN0Sbp1tu8EtVgA9qZk3pmWvc0aRZJY/OTuwSE26Q3E7sqPP/qGN8lBT90N2pelUjrbbjWE2FndhcpOLJaBv5B1R+qHQ6iMNIy5HVO9yHRbtVvBTage56c9fttat3t+dn/btb42JWl2rsZF0NecUnQYqlDXg9HA/HaetElhKSTN2UM9uOeN2ckAxubnY9HVXe7LX/HwffTmjBLzJKMmpnie9NJ9WD7QhP41oSS317JNfjwOZR76YHu9nMgfE9FU2jj9tBT0V0nmFe6HZfQMGns94hG7/Nuqnwd/NTg/TF3j7h+myyX0FR60qrE+sP43zhufob6I+m/5cB/6Jj9jegH/wjsAf+qD/IK3I7eXhsBjZHcEjJN23cVZZhJQdRZ6elZtmdNX9f39um+Q/CvQsy
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Retrieve Reward Claim History"}
+  children={"Récupérer l'Historique des Réclamations de Récompenses"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Returns a list of reward claim history by core address within a given round range. Limited to 100 rounds on each query.
+Renvoie une liste de l'historique des réclamations de récompenses pour une adresse Core donnée, dans une plage de rounds spécifiée. Limité à 100 rounds par requête.
 
 <Heading
   id={"request"}
@@ -45,7 +45,7 @@ Returns a list of reward claim history by core address within a given round rang
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The core address to retrieve the reward claim history for.","schema":{"type":"string"}},{"name":"startRound","in":"query","required":true,"description":"The starting round of the range for which the reward claim history is requested.","schema":{"type":"integer"}},{"name":"endRound","in":"query","required":true,"description":"The ending round of the range for which the reward claim history is requested.","schema":{"type":"integer"}}]}
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"L'adresse Core pour laquelle récupérer l'historique des réclamations de récompenses.","schema":{"type":"string"}},{"name":"startRound","in":"query","required":true,"description":"Le round de début de la plage pour lequel l'historique des réclamations est demandé.","schema":{"type":"integer"}},{"name":"endRound","in":"query","required":true,"description":"Le round de fin de la plage pour lequel l'historique des réclamations est demandé.","schema":{"type":"integer"}}]}
 >
   
 </ParamsDetails>
@@ -60,7 +60,7 @@ Returns a list of reward claim history by core address within a given round rang
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Reward claim history retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code of the response."},"message":{"type":"string","description":"Message providing additional details about the response."},"data":{"type":"object","properties":{"result":{"type":"array","description":"List of reward claim records.","items":{"type":"object","properties":{"stakedHashReward":{"type":"string","description":"Amount of HASH rewards staked in the given round."},"round":{"type":"integer","description":"The round number associated with the reward claim."},"gradeList":{"type":"array","description":"List of grades showing reward rates and percentages.","items":{"type":"object","properties":{"rewardRate":{"type":"integer","description":"The reward rate for the grade."},"percentage":{"type":"integer","description":"The percentage of the total reward for the grade."}}}},"stakedCoreReward":{"type":"string","description":"The CORE rewards staked in the given round."},"myStakeRate":{"type":"object","description":"User's staking rate details.","properties":{"stakeRatio":{"type":"string","description":"The ratio of the user's stake to the total stake."},"percent":{"type":"string","description":"The percentage of the user's stake in relation to the total stake."}}},"totalRewardClaimed":{"type":"string","description":"The total rewards claimed in the given round."},"stakedBTCReward":{"type":"string","description":"The BTC rewards staked in the given round."}}}}}}}}}}},"400":{"description":"Invalid input parameters or core address.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code of the response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Historique des réclamations de récompenses récupéré avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message fournissant des informations complémentaires sur la réponse."},"data":{"type":"object","properties":{"result":{"type":"array","description":"Liste des enregistrements de réclamations de récompenses.","items":{"type":"object","properties":{"stakedHashReward":{"type":"string","description":"Le montant de récompense HASH staké dans le round donné."},"round":{"type":"integer","description":"Le numéro de round associé à la réclamation de récompense."},"gradeList":{"type":"array","description":"List of grades showing reward rates and percentages.","items":{"type":"object","properties":{"rewardRate":{"type":"integer","description":"Liste des niveaux indiquant les taux de récompense et les pourcentages."},"percentage":{"type":"integer","description":"Le pourcentage associé au taux de récompense."}}}},"stakedCoreReward":{"type":"string","description":"Les récompenses CORE stakées dans le round donné."},"myStakeRate":{"type":"object","description":"Détails du taux de staking de l'utilisateur.","properties":{"stakeRatio":{"type":"string","description":"Le ratio de la mise de l'utilisateur par rapport à la mise totale."},"percent":{"type":"string","description":"Le pourcentage de la mise de l'utilisateur par rapport à la mise totale."}}},"totalRewardClaimed":{"type":"string","description":"Le total des récompenses réclamées dans le round donné."},"stakedBTCReward":{"type":"string","description":"Les récompenses BTC stakées dans le round donné."}}}}}}}}}}},"400":{"description":"Paramètres d'entrée invalides ou une erreur est survenue lors de la récupération de l'historique des réclamations de récompenses.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'erreur indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
