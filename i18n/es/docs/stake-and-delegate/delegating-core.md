@@ -63,7 +63,7 @@ En el ejemplo, estamos seleccionando: **DAO Validator 6**. Para elegir un valida
 Una vez que haya seleccionado un validador, accederá a su página detallada, como se muestra a continuación. Esto es lo que estás viendo:
 
 - **Moneda delegada (CORE):** La cantidad total de tokens CORE ya delegados al validador seleccionado (por ejemplo, 6,678,941 CORE).
-- **Tasa de recompensa CORE:** El porcentaje anual de recompensas por delegar al validador seleccionado. Por ejemplo, si la tasa de recompensa CORE es del 9,41%, significa que el delegado obtendrá este porcentaje en recompensas sobre su CORE apostado.
+- **Tasa de recompensa CORE:** El porcentaje anual de recompensas por delegar al validador seleccionado. For example, if the CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
 - **Comisión:** La comisión del validador, que se deduce de tus recompensas, por ejemplo, el 5 %.
 - **Delegadores:** La cantidad de usuarios que han delegado al validador seleccionado (por ejemplo, 16,234 delegados CORE).
 
@@ -97,25 +97,25 @@ Para delegar sus tokens CORE, siga estos pasos:
 
 #### Paso 2.2 Verificación del CORE delegado
 
-Ahora que hemos delegado CORE con éxito, verifiquemos que nuestro CORE esté siendo staking colocando el cursor sobre nuestra billetera conectada en la esquina superior derecha y haciendo clic en el menú desplegable **Mi staking**. Podemos ver en la columna "Núcleo delegado" que ahora tenemos 1 NÚCLEO delegado o 1 NÚCLEO asignado:
+Now that we’ve successfully delegated CORE let us verify that our CORE is being staked by hovering over our connected wallet in the top right corner and clicking on the **My Staking** dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated or 1 CORE staked.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)</p>
 
 :::note
-Note: For CORE delegations, transferring the staking validator will cause _**no**_ interruption in the staking rewards.
+Note: For CORE delegations, transferring to a different staking validator will **_not_** interrupt staking rewards.
 :::
 
 ### Paso 3: Dejar de delegar CORE
 
-Si queremos anular la delegación de nuestro CORE, deberá hacer clic en los 3 puntos al final del validador elegido y hacer clic en **Anular delegación de CORE**.
+If you wish to Undelegate your CORE, click the 3 dots at the end of your chosen validator, and click **Undelegate CORE**.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)</p>
 
 #### Paso 3.1 Confirmar la transacción y verificar el CORE no delegado
 
-- Después de hacer clic en Cancelar delegación, se le solicitará que confirme la transacción en su Metamask. Haga clic en el botón **Confirmar**:
+- After clicking **Undelegate**, you will be prompted to confirm the transaction in your Metamask. Haga clic en el botón **Confirmar**:
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)</p>
@@ -140,9 +140,9 @@ Si queremos anular la delegación de nuestro CORE, deberá hacer clic en los 3 p
 
 ## Reclamando recompensas
 
-Puede ver la información de recompensas sobre sus delegaciones activas seleccionando **Mi staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+You can view reward information about your active delegations by selecting **My Staking** on the top right corner in the header of the staking website. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 
-Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Las transacciones de reclamaciones históricas se enumeran en la pestaña Reclamaciones del sitio web, como se muestra a continuación.
+Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Historical claim transactions are listed on the website's **Claim** tab, as shown below.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
