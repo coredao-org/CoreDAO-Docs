@@ -4,16 +4,14 @@ info:
   description: API documentation Core's Staking API
   version: 1.0.0
 servers:
-  - 
-    url: https://staking-api.coredao.org/
+  - url: https://staking-api.coredao.org/
 paths:
   /staking/summary/core:
     get:
       summary: Retrieve Staking Summary
       description: Return overall staking information on a given Core address.
       parameters:
-        - 
-          name: coreAddress
+        - name: coreAddress
           in: query
           required: true
           description: The core address to retrieve staking information for.
@@ -81,15 +79,13 @@ paths:
       summary: Retrieve BTC staking transactions
       description: Returns the list of valid/active staking trasactions of a given bitcoin address or public key hash.
       parameters:
-        - 
-          name: btcAddress
+        - name: btcAddress
           in: query
           required: true
           description: The BTC address to retrieve staking transactions for.
           schema:
             type: string
-        - 
-          name: pkHash
+        - name: pkHash
           in: query
           required: true
           description: Public key hash associated with the given BTC address.
@@ -184,22 +180,19 @@ paths:
       summary: Retrieve Reward Claim History
       description: Returns a list of reward claim history by core address within a given round range. Limited to 100 rounds on each query.
       parameters:
-        - 
-          name: coreAddress
+        - name: coreAddress
           in: query
           required: true
           description: The core address to retrieve the reward claim history for.
           schema:
             type: string
-        - 
-          name: startRound
+        - name: startRound
           in: query
           required: true
           description: The starting round of the range for which the reward claim history is requested.
           schema:
             type: integer
-        - 
-          name: endRound
+        - name: endRound
           in: query
           required: true
           description: The ending round of the range for which the reward claim history is requested.
@@ -499,8 +492,7 @@ paths:
       summary: Retrieve Reward Distribution of a Round
       description: Returns the reward distribution for a specific staking round, including overall rewards distributed, burnt rewards, commission fees, and staking sharing.
       parameters:
-        - 
-          name: round
+        - name: round
           in: query
           required: true
           description: The round number for which reward distribution is being requested.
@@ -600,29 +592,25 @@ paths:
       summary: Retrieve Full List of BTC Staking Transactions
       description: Returns full list of BTC staking transactions (including all active and historical data) by bitcoin address. Page size limited to 100.
       parameters:
-        - 
-          name: btcAddress
+        - name: btcAddress
           in: query
           required: true
           description: The Bitcoin address for which staking transactions are being requested.
           schema:
             type: string
-        - 
-          name: pkHash
+        - name: pkHash
           in: query
           required: true
           description: The public key hash associated with the given Bitcoin address.
           schema:
             type: string
-        - 
-          name: pageNum
+        - name: pageNum
           in: query
           required: false
           description: The page number for pagination. Defaults to 1 if not provided.
           schema:
             type: integer
-        - 
-          name: pageSize
+        - name: pageSize
           in: query
           required: false
           description: The number of transactions per page. Defaults to 100 if not provided.
@@ -717,8 +705,7 @@ paths:
       summary: Retrieve BTC Staking Status
       description: Retrieve BTC staking status on the Core chain using a transaction ID.
       parameters:
-        - 
-          name: txId
+        - name: txId
           in: query
           required: true
           description: The transaction ID for which the BTC staking status is requested.
@@ -768,8 +755,7 @@ paths:
       summary: Retrieve Collected and Pending Rewards
       description: Returns the collected and pending rewards for a given Core address.
       parameters:
-        - 
-          name: coreAddress
+        - name: coreAddress
           in: query
           required: true
           description: The Core address for which to retrieve reward details.
