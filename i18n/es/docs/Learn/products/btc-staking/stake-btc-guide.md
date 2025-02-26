@@ -19,8 +19,8 @@ Para poder realizar stake, debes tener los siguientes requisitos previos:
 
 Los siguientes son algunos puntos clave que los usuarios deben tener en cuenta al apostar sus Bitcoin en Core.
 
-1. **Minimum Bitcoin Amount \+ Gas Fee:** TThe minimum BTC required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
-2. **Minimum Staking Duration:** \* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+1. **Minimum Bitcoin Amount \+ Gas Fee:** The minimum BTC required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
+2. **Minimum Staking Duration:** Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 3. **Entendiendo las diferencias en las direcciones de staking de Bitcoin:**
    - La dirección de participación en el mensaje de transacción de su billetera Bitcoin puede diferir de su dirección Bitcoin original. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de su billetera de Bitcoin, lo que garantiza el control y la seguridad de sus activos. Su Bitcoin permanece seguro en la dirección de staking de Bitcoin, sin verse afectado por el staking.
 4. **Retrasos en la aparición de los activos bloqueados en su billetera Bitcoin:**
@@ -36,12 +36,12 @@ El staking de Bitcoin sin custodia introduce un método seguro y descentralizado
 
 1. **Iniciar staking:** Comience accediendo a la [Herramienta de staking de BTC basada en CLI](https://github.com/coredao-org/btc-staking-tool) (para usuarios técnicos) o a la [plataforma de staking basada en la web](https://stake.coredao.org/) (para usuarios generales).
 2. **Apuesta Bitcoin con bloqueo de tiempo:** Usted apuesta su Bitcoin enviando una transacción en la red Bitcoin con un parámetro de bloqueo de tiempo, y su Bitcoin permanece bloqueado hasta que finalice el período especificado. Asegúrese de cumplir con los requisitos para que una transacción sea válida y elegible; consulte [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) para obtener más detalles.
-   1. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement. THerefore, make sure to thoughtfully select your lockup periods.
+   1. **Minimum staking duration depends on the method choosen for staking.** The official website UI requires a 5-day minimum, while the script has no lockup requirement. Therefore, make sure to thoughtfully select your lockup periods.
    2. Incluya la dirección del validador principal para delegar sus activos.
    3. Incluya la dirección de la billetera Core para obtener recompensas.
 3. **Vote por los Validadores:** Al incluir la dirección de los Validadores Centrales en su transacción, puede delegar su Bitcoin en stake al validador elegido en la cadena de bloques Central.
 4. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección.
-5. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. ALso, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+5. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. Also, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 6. **Redimir Bitcoin:** Una vez que expire el tiempo de bloqueo del staking, el Bitcoin bloqueado permanecerá inactivo en la dirección de staking hasta que sea redimido por el usuario.
 
 ## Guía Paso a Paso para el Staking de Bitcoin No Custodial
@@ -89,7 +89,7 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 
 8. Una vez que tu cartera de Bitcoin esté conectada, es importante entender y especificar varios parámetros clave:
 
-- Especifica la cantidad de Bitcoin que deseas delegar. The minimum amount to delegate is **0.01 Bitcoin** id staking via official stkaign website UI and no requirements if staking BTC via the staking script.
+- Especifica la cantidad de Bitcoin que deseas delegar. The minimum amount to delegate is **0.01 Bitcoin** if staking via official staking website UI and no requirements if staking BTC via the staking script.
 - Configurar el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o redelegación. The minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
   - Puedes ingresar valores seleccionando dentro del cuadro de tiempo de bloqueo o haciendo clic en el ícono del calendario para seleccionar la fecha y luego hacer clic en "OK" para continuar.
   - The default lock time is set to a month in advance.
@@ -108,7 +108,7 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 
 ### Confirmar Salida OP\_Return
 
-11. Antes de firmar la transacción en tu cartera, verifica las salidas de la transacción para asegurarte de que incluyan una salida OP\_Return. La salida OP\_Return es donde se guarda tu redeem\_script y se usa esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre OP\_Return. Aborta la transacción si no incluye la salida OP\_Return.
+11. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. La salida OP\_Return es donde se guarda tu redeem\_script y se usa esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre OP\_Return. Aborta la transacción si no incluye la salida OP\_Return.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
