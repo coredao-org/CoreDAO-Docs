@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Retrieve BTC staking status on the Core chain using a transaction ID.
+Récupérer le statut du staking BTC sur la chaîne Core en utilisant un identifiant de transaction.
 
 <Heading
   id={"request"}
@@ -45,7 +45,7 @@ Retrieve BTC staking status on the Core chain using a transaction ID.
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"txId","in":"query","required":true,"description":"The transaction ID for which the BTC staking status is requested.","schema":{"type":"string"}}]}
+  parameters={[{"name":"txId","in":"query","required":true,"description":"L'ID de transaction pour lequel le statut du staking BTC est demandé.","schema":{"type":"string"}}]}
 >
   
 </ParamsDetails>
@@ -60,7 +60,7 @@ Retrieve BTC staking status on the Core chain using a transaction ID.
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"BTC staking status retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"status":{"type":"integer","description":"The status of the BTC staking transaction."},"confirmedTxHash":{"type":"string","description":"The hash of the confirmed BTC transaction."},"confirmTimestamp":{"type":"integer","description":"The timestamp when the transaction was confirmed."}}}}}}}},"400":{"description":"Invalid transaction ID or an error occurred while retrieving the staking status.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Statut de staking BTC récupéré avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"data":{"type":"object","properties":{"status":{"type":"integer","description":"Le statut de la transaction de staking BTC."},"confirmedTxHash":{"type":"string","description":"Le hash de la transaction BTC confirmée."},"confirmTimestamp":{"type":"integer","description":"L'horodatage de la confirmation de la transaction."}}}}}}}},"400":{"description":"ID de transaction invalide ou une erreur est survenue lors de la récupération du statut du staking.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'erreur indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
