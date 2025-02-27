@@ -14,7 +14,7 @@ sidebar_position: 2
 
 Para mejorar aún más la generación de rendimiento a partir de la apuesta de Bitcoin sin custodia a escala, **Dual Stake** desbloquea niveles de rendimiento más altos al apostar Bitcoin y CORE simultáneamente. Dado que las emisiones CORE diarias son fijas, aquellos que apuestan CORE junto con Bitcoin obtienen niveles de recompensa más altos que aquellos que apuestan Bitcoin solo. El porcentaje de aumento del rendimiento se determina apostando CORE por encima de múltiples umbrales definidos, y cada umbral corresponde a niveles crecientes de recompensas de apuesta de Bitcoin. Al vincular mayores recompensas por staking de Bitcoin con el volumen de tokens CORE apostados, este enfoque alienta a los stakers de Bitcoin a asumir un compromiso más profundo con el ecosistema Core. Maximiza el rendimiento del rendimiento para los usuarios comprometidos.
 
-<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+<!-- <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
   <iframe
     src="https://www.youtube.com/embed/zqzGoQwT9Rs?si=HRHOIRc2viLKHP1g"
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -22,7 +22,7 @@ Para mejorar aún más la generación de rendimiento a partir de la apuesta de B
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
-</div>
+</div> -->
 
 ## How does Dual Staking Work?
 
@@ -56,9 +56,9 @@ Effectively, the CORE emissions are distributed pro rata based on the BTC TVL, w
 2. **Staked CORE Thresholds and Staking Ratios (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
    The deciding mechanism for a Bitcoin staker’s yield tier  (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ration and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. The current CORE:BTC staking ratios are as follows:
 
-   - Staking Ratio R1 \= 1,000 CORE per 1 BTC
-   - Staking Ratio R2 \= 3,000 CORE per 1 BTC
-   - Staking Ratio R3 \= 8,000 CORE per 1 BTC
+   - Staking Ratio R1 \= 2,000 CORE per 1 BTC
+   - Staking Ratio R2 \= 6,000 CORE per 1 BTC
+   - Staking Ratio R3 \= 16,000 CORE per 1 BTC
 
 Keeping these ratios in mind, users can calculate the required threshold for each tier as follows:
 
@@ -88,23 +88,23 @@ The following is a simple example explaining how to calculate the required CORE 
 
 Now, the user will have to stake CORE as per the following Staked CORE Thresholds to enjoy a higher yield on their staked BTC with the above variables:
 
-- Staking Ratio **R<sub>1</sub>** \= 1,000
-- Staking Ratio **R<sub>2</sub>** \= 3,000
-- Staking Ratio **R<sub>3</sub>** \= 8,000
+- Staking Ratio **R<sub>1</sub>** \= 2,000
+- Staking Ratio **R<sub>2</sub>** \= 6,000
+- Staking Ratio **R<sub>3</sub>** \= 16,000
 - Staked BTC quantity \= 10 BTC
 
 The **Staked CORE Thresholds** with the above variables are:
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 1,000 \= 10,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 3,000 \= 30,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 8,000 \= 80,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 2,000 \= 20,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 6,000 \= 60,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 16,000 \= 160,000 staked CORE
 
 Hence, the staked BTC in this example will enjoy a yield of
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 10,000
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 10,000 but below 30,000
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 30,000 but below 80,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 80,000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 20,000
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 20,000 but below 60,000
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 60,000 but below 160,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 160,000
 
 :::note
 The multiplier on each boosted yield tier is dynamic and subject to change as per the supply and demand conditions of the market
