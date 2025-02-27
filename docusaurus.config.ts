@@ -64,10 +64,10 @@ const config: Config = {
           rehypePlugins: [rehypeKatex],
           docItemComponent: "@theme/ApiItem", // Derived from docusaurus-theme-openapi
         },
-        // gtag: {
-        //   trackingID: 'G-F20V7Q57RZ',
-        //   anonymizeIP: true,
-        // },
+        gtag: {
+          trackingID: 'G-F20V7Q57RZ',
+          anonymizeIP: true,
+        },
             
       theme: {
         customCss: './src/css/custom.css',
