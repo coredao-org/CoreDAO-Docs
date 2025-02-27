@@ -14,7 +14,7 @@ sidebar_position: 2
 
 Pour améliorer davantage la génération de rendement du staking de Bitcoin Non-Custodial à grande échelle, le **Dual Staking** débloque des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE. Étant donné que les émissions quotidiennes de CORE sont fixes, ceux qui stakent du CORE aux côtés du Bitcoin gagnent des niveaux de récompense plus élevés que ceux qui stakent uniquement du Bitcoin. Le pourcentage de boost sur le rendement est déterminé en stakant du CORE au-dessus de plusieurs seuils définis, chaque seuil correspondant à des niveaux croissants de récompenses de staking de Bitcoin. En reliant des récompenses de staking de Bitcoin plus élevées au volume de tokens CORE stakés, cette approche encourage les stakers de Bitcoin à s'engager plus profondément dans l'écosystème Core. Elle maximise les rendements pour les utilisateurs engagés.
 
-<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+<!-- <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
   <iframe
     src="https://www.youtube.com/embed/zqzGoQwT9Rs?si=HRHOIRc2viLKHP1g"
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -22,7 +22,7 @@ Pour améliorer davantage la génération de rendement du staking de Bitcoin Non
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
-</div>
+</div> -->
 
 ## Comment fonctionne le Dual Staking ?
 
@@ -56,9 +56,9 @@ En pratique, les émissions de CORE sont distribuées au prorata en fonction de 
 2. **Seuils de CORE Staké et Ratios de Staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
    Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, or **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où R représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Les ratios de staking CORE:BTC actuels sont les suivants :
 
-   - Ratio de Staking R1 \= 1 000 CORE par 1 BTC
-   - Ratio de Staking R2 \= 3 000 CORE par 1 BTC
-   - Ratio de Staking R3 \= 8 000 CORE par 1 BTC
+   - Staking Ratio R1 \= 2,000 CORE per 1 BTC
+   - Staking Ratio R2 \= 6,000 CORE per 1 BTC
+   - Staking Ratio R3 \= 16,000 CORE per 1 BTC
 
 En gardant ces ratios à l'esprit, les utilisateurs peuvent calculer le seuil requis pour chaque niveau comme suit :
 
@@ -88,23 +88,23 @@ Voici un exemple simple expliquant comment calculer le CORE requis pour staker, 
 
 Supposons que l'utilisateur doive staker du CORE selon les Seuils de CORE Staké suivants pour bénéficier d'un rendement plus élevé sur son BTC staké avec les variables ci-dessus :
 
-- Ratio de staking **R<sub>1</sub>** \= 1 000
-- Ratio de staking **R<sub>2</sub>** \= 3 000
-- Ratio de staking **R<sub>3</sub>** \= 8 000
+- Staking Ratio **R<sub>1</sub>** \= 2,000
+- Staking Ratio **R<sub>2</sub>** \= 6,000
+- Staking Ratio **R<sub>3</sub>** \= 16,000
 - Quantité de BTC staké \= 10 BTC
 
 Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
 
-- Seuil de CORE staké pour **P<sub>Niveau1</sub>** \= 10 \* 1 000 \= 10 000 CORE staké
-- Seuil de CORE staké pour **P<sub>Level2</sub>** \= 10 \* 3 000 \= 30 000 CORE staké
-- Seuil de CORE staké pour **P<sub>Level3</sub>** \= 10 \* 8 000 \= 80 000 CORE staké
+- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 2,000 \= 20,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 6,000 \= 60,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 16,000 \= 160,000 staked CORE
 
 Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 
-- **P<sub>BASE</sub>** si la quantité de CORE staké est inférieure à 10 000
-- **P<sub>Niveau1</sub>** si la quantité de CORE staké est supérieure ou égale à 10 000 mais inférieure à 30 000
-- **P<sub>Niveau2</sub>** si la quantité de CORE staké est supérieure ou égale à 30 000 mais inférieure à 80 000
-- **P<sub>Niveau3</sub> (P<sub>MAX</sub>)** si la quantité de CORE staké est supérieure ou égale à 80 000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 20,000
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 20,000 but below 60,000
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 60,000 but below 160,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 160,000
 
 :::note
 Le multiplicateur sur chaque niveau de rendement augmenté est dynamique et sujet à modification en fonction des conditions d'offre et de demande du marché
