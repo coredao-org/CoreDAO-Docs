@@ -16,8 +16,8 @@ Dans l'écosystème de Core, un "validateur" fait référence aux nœuds ou part
 
 - 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config) et l'[exécution des nœuds validateurs](../Node/validator/running-validator) pour obtenir des informations sur la configuration.
   2. Ensuite, le moyen le plus simple d'enregistrer un nouveau validateur est d'utiliser l'un de nos sites Web de staking :
-     1. [Site de staking pour le Mainnet](https://stake.coredao.org)
-     2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
+    1. [Site de staking pour le Mainnet](https://stake.coredao.org)
+    2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
   3. Connectez votre portefeuille en sélectionnant **Connect Wallet** en haut à droite.
   4. Une fois connecté, le bouton **Register** devrait apparaître en haut à droite. En sélectionnant **register** le formulaire suivant s'affiche :
 
@@ -127,3 +127,4 @@ Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 ### 11) À quelle fréquence les validateurs doivent-ils être en ligne ?
 
 Les validateurs sont généralement censés être en ligne et participer activement presque en continu.
+
