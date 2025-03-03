@@ -39,3 +39,4 @@ Pour prendre en charge l’exécution de smart contracts avec Solidity version *
 ### Contrats intelligents basés sur des versions de Solidity < 0.8.24
 
 - **Remarque :** Les smart contracts écrits avec une version de Solidity **\< 0.8.24** ne sont pas concernés par ces changements et continuent de fonctionner normalement.
+
