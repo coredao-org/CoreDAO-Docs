@@ -1,8 +1,8 @@
 ---
 id: retrieve-staking-summary
-title: Retrieve Staking Summary
-description: Return overall staking information on a given Core address.
-sidebar_label: Retrieve Staking Summary
+title: Récupérer le Résumé du Staking
+description: Renvoie les informations globales de staking pour une adresse Core donnée.
+sidebar_label: Récupérer le Résumé du Staking
 hide_title: true
 hide_table_of_contents: true
 api: eJzVlsFu2kAQhl9lNZe2kgs06sk3gqImp0ZAT1EOi3fAG9a7zu6YFFm8ezVrmxoctSE9lQsIdr75/xnvDDUoDJnXJWlnIYU5UuWtcDv00hgRSG613Qht184Xkg8JZ4UUG71DK2bOo5BKeQxhBAmU0ssCCX2A9KEGKwuEFDLncdocggQ0p3mu0O8hAY/PlfaoICVfYXImZpmjyHopBDnhkbzGHb4qbe08ywhZjoWEtAbal6wgkNd2A4fDI6cMpbMBA/9+NZnw22naRUsOVVFIvz+mVCJUWYYhrCtj9pwoc5bQEiNkWRqdRRnjp8CceqjDrZ4wIy6UdyV60o2KQJKq0DunLeEGPZwXZBEPiswpFG4tKEfR2RnBIYECQ5AbHDo/B02V0vxRmtPWetEihFy5ioYZlKS3Gdqi4qdjWriqKdCfBS0dSSNkPM3WZt/nN6LBxLzNx1sZ8vcSb6eL2yHxejl7L/B6OevzSrRK2w2bnuOL9OrvxPsmpDHrY1AfxW4vRUWXQ9T1cnYpie31QJmRumh6+lbSrAkZ2GtRl9jrUOf2WtQF9jrSib32lcDX1+bBnd1Jo9XpKAoVX3ju/X88Bm687115/FkaqS03n5E6hAqPxWEq5U5BChuM2iXlkMK4ncPjdlqOuUo8g9Hvuj1QeQMp5ERlSMddwGdZ6hFhoKvRirIwskgvzm/HwEOah1KUr8mw/rhourk8vb8bDrT7O6FcVhVoqZllHPIhnAWxpCbgy2gymsQb4gIVMjaq3VfzbsV0sYvG2nnS+nfj/3Fvtl0i/Enj2AMWFqtWt3V+gBbJpT3KibV+TCB3gfhMXa9kwB/eHA78dbNluQNKB7kyvGfX0oTzRds38nHeruRP4r3r91U3W9wP/grspKn4ZGz5TnrNGiF9eDwkkKNU6KP4JnSaZVhSL2pw1ZhyfEi/3SzhcPgFwcwY4A==
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Retrieve Staking Summary"}
+  children={"Récupérer le Résumé du Staking"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Return overall staking information on a given Core address.
+Renvoie les informations globales de staking pour une adresse Core donnée.
 
 <Heading
   id={"request"}
@@ -45,7 +45,7 @@ Return overall staking information on a given Core address.
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The core address to retrieve staking information for.","schema":{"type":"string"}}]}
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"L'adresse Core pour laquelle récupérer les informations de staking.","schema":{"type":"string"}}]}
 >
   
 </ParamsDetails>
@@ -60,7 +60,7 @@ Return overall staking information on a given Core address.
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Staking summary retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the response."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"stakedCoreAmount":{"type":"string","description":"Total amount of CORE staked."},"stakedHashAmount":{"type":"string","description":"Total amount of HASH staked."},"stakedBTCAmount":{"type":"string","description":"Total amount of BTC staked."},"pendingCoreReward":{"type":"string","description":"Pending CORE reward."},"pendingHashReward":{"type":"string","description":"Pending HASH reward."},"pendingBTCReward":{"type":"string","description":"Pending BTC reward."},"claimedCoreReward":{"type":"string","description":"Claimed CORE reward."},"claimedHashReward":{"type":"string","description":"Claimed HASH reward."},"claimedBTCReward":{"type":"string","description":"Claimed BTC reward."}}}}}}}},"400":{"description":"Invalid core address supplied.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Résumé de staking récupéré avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"data":{"type":"object","properties":{"stakedCoreAmount":{"type":"string","description":"TMontant total de CORE staké."},"stakedHashAmount":{"type":"string","description":"TMontant total de HASH staké."},"stakedBTCAmount":{"type":"string","description":"Montant total de BTC staké."},"pendingCoreReward":{"type":"string","description":"Récompense CORE en attente."},"pendingHashReward":{"type":"string","description":"Récompense HASH en attente."},"pendingBTCReward":{"type":"string","description":"Récompense BTC en attente."},"claimedCoreReward":{"type":"string","description":"Récompense CORE réclamée."},"claimedHashReward":{"type":"string","description":"Récompense HASH réclamée."},"claimedBTCReward":{"type":"string","description":"Récompense BTC réclamée."}}}}}}}},"400":{"description":"Adresse Core fournie invalide","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
