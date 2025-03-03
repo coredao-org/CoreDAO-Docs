@@ -44,21 +44,21 @@ Actuellement, les récompenses Satoshi Plus sont allouées via trois pools, une 
 Le Dual Staking n'affecte pas ces pools de récompenses, mais permet aux stakers de Bitcoin qui stakent également des tokens CORE de gagner une proportion plus élevée de récompenses dans le pool de staking de Bitcoin. Dans cette section, nous couvrons en détail le fonctionnement de l'algorithme de gradation en ce qui concerne le dual staking.
 
 1. **Niveaux de rendement boosté**\
-   Sous le Dual Staking, il y a 3 niveaux de rendement boosté pour le staking de Bitcoin basés sur la proportion de CORE staké par rapport au Bitcoin staké. Pour les solo-stakers de Bitcoin seulement, un quatrième niveau existe avec le taux de staking de Bitcoin le plus bas. Il est important de noter que le taux de récompense annuel pour le staking de Bitcoin peut fluctuer de manière significative, souvent en raison de variations des prix et d'autres dynamiques du marché. En conséquence, les rendements boostés réels peuvent changer quotidiennement en fonction des conditions du marché.
+  Sous le Dual Staking, il y a 3 niveaux de rendement boosté pour le staking de Bitcoin basés sur la proportion de CORE staké par rapport au Bitcoin staké. Pour les solo-stakers de Bitcoin seulement, un quatrième niveau existe avec le taux de staking de Bitcoin le plus bas. Il est important de noter que le taux de récompense annuel pour le staking de Bitcoin peut fluctuer de manière significative, souvent en raison de variations des prix et d'autres dynamiques du marché. En conséquence, les rendements boostés réels peuvent changer quotidiennement en fonction des conditions du marché.
 
-   - **P<sub>BASE</sub>** \= le taux de base du staking BTC
-   - **P<sub>Level1</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 1
-   - **P<sub>Level2</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 2
-   - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= le taux de base du staking BTC \+ rendement boosté de Niveau 3
+  - **P<sub>BASE</sub>** \= le taux de base du staking BTC
+  - **P<sub>Level1</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 1
+  - **P<sub>Level2</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 2
+  - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= le taux de base du staking BTC \+ rendement boosté de Niveau 3
 
 En pratique, les émissions de CORE sont distribuées au prorata en fonction de la TVL (Total Value Locked) en BTC, pondérée en fonction de leur niveau de dual staking (CORE:BTC).
 
 2. **Seuils de CORE Staké et Ratios de Staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-   Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, or **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où R représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Les ratios de staking CORE:BTC actuels sont les suivants :
+  Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, or **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où R représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Les ratios de staking CORE:BTC actuels sont les suivants :
 
-   - Staking Ratio R1 \= 2,000 CORE per 1 BTC
-   - Staking Ratio R2 \= 6,000 CORE per 1 BTC
-   - Staking Ratio R3 \= 16,000 CORE per 1 BTC
+  - Staking Ratio R1 \= 2,000 CORE per 1 BTC
+  - Staking Ratio R2 \= 6,000 CORE per 1 BTC
+  - Staking Ratio R3 \= 16,000 CORE per 1 BTC
 
 En gardant ces ratios à l'esprit, les utilisateurs peuvent calculer le seuil requis pour chaque niveau comme suit :
 
@@ -73,10 +73,10 @@ Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs
 :::
 
 3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
-   - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
-   - Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
-   - Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
-   - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
+  - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
+  - Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
+  - Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
+  - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
 
 :::note
 Les ratios de staking et le nombre de niveaux sont configurables et sujets à modification par vote de gouvernance.
