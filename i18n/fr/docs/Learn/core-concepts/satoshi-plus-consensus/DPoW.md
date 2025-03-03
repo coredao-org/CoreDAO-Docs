@@ -61,3 +61,4 @@ Sur le réseau Bitcoin, les mineurs de Bitcoin génèrent de la puissance de hac
 #### **Conclusion**
 
 Le DPoW est une innovation essentielle au sein du mécanisme de consensus Satoshi Plus, il étend les incitations des mineurs du réseau Bitcoin pour s'aligner sur le mécanisme de consensus Satoshi Plus de Core. Core bénéficie de la participation des mineurs de Bitcoin à sa sécurité, et les mineurs de Bitcoin reçoivent une meilleure rémunération. Le résultat est un ensemble de mineurs qui sont fortement incités à sécuriser à la fois Bitcoin et Core.
+
