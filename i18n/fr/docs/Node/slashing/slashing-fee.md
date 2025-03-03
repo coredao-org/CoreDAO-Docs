@@ -34,3 +34,4 @@ Si la preuve est valide :
 2. Le validateur puni sera emprisonné et exclu du réseau pour toujours
 3. **500 tokens CORE** seront attribués au soumetteur de la demande comme récompense
 4. Le reste des tokens CORE sera transféré dans le pool de récompenses du système
+
