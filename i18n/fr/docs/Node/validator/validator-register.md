@@ -18,8 +18,8 @@ Avant de devenir validateur sur Core, nous vous recommandons vivement de lire le
 
 2. Une fois cela terminé, la façon la plus simple de s'enregistrer comme validateur est d'utiliser l'un de nos sites de staking :
 
-   - [Site de staking pour le Mainnet](https://stake.coredao.org)
-   - [Site de staking pour le Testnet](https://stake.test.btcs.network)
+    - [Site de staking pour le Mainnet](https://stake.coredao.org)
+    - [Site de staking pour le Testnet](https://stake.test.btcs.network)
 
 3. Connectez votre portefeuille en sélectionnant **Connect Wallet** en haut à droite.
 
