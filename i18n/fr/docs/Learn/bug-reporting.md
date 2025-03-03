@@ -1,21 +1,21 @@
 ---
-sidebar_label: Reporting Security Vulnerability
+sidebar_label: Signaler une Vulnérabilité de Sécurité
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Reporting a Bug or Security Vulnerability
+# Signaler un Bug ou une Vulnérabilité de Sécurité
 
-If you have discovered a security vulnerability affecting the Core blockchain, network, or infrastructure, please report it to us directly.
+Si vous avez découvert une vulnérabilité de sécurité affectant la blockchain Core, le réseau ou l’infrastructure associée, veuillez nous en informer directement.
 
-### How to Report
+### Comment Signaler
 
-To ensure a swift and effective response, send an email to **[bug-report@coredao.org](mailto:bug-report@coredao.org)** with the following details:
+Pour garantir une réponse rapide et efficace, envoyez un e-mail à **[bug-report@coredao.org](mailto:bug-report@coredao.org)** en incluant les détails suivants :
 
-- **Affected Resource**: Specify the impacted component, such as a GitHub repository, URL, smart contract, or other infrastructure.
-- **Description & Impact**: Provide a detailed explanation of the vulnerability, its potential risks, and how it could be exploited.
-- **Steps to Reproduce**: Include a step-by-step guide on how you discovered the issue. Mention any tools or techniques used.
-- **Proof of Concept (PoC)**: If possible, provide a working proof of concept demonstrating the vulnerability in action.
+- **Ressource affectée:** Indiquez la composante touchée, telle qu’un dépôt GitHub, une URL, un contrat intelligent ou toute autre infrastructure.
+- **Description & Impact:** Fournissez une explication détaillée de la vulnérabilité, des risques potentiels et de la manière dont elle pourrait être exploitée.
+- **Étapes pour reproduire:** Incluez un guide pas-à-pas expliquant comment vous avez découvert le problème. Mentionnez tout outil ou technique utilisé.
+- **Proof of Concept (PoC):** Si possible, fournissez une preuve de concept démontrant concrètement la vulnérabilité.
 
-Your contribution to Core's security is highly valued, and we appreciate your efforts in keeping the Core ecosystem safe.
+Votre contribution à la sécurité de Core est très appréciée et nous vous remercions de vos efforts pour maintenir l’écosystème Core sûr.
 
