@@ -22,3 +22,5 @@ Voici une liste des adresses précompilées de l'écosystème Core.
 | Smart Contract - PledgeAgent    | https://scan.coredao.org/address/0x0000000000000000000000000000000000001007 |
 | Smart Contract - Burn           | https://scan.coredao.org/address/0x0000000000000000000000000000000000001008 |
 | Smart Contract - Foundation     | https://scan.coredao.org/address/0x0000000000000000000000000000000000001009 |
+
+
