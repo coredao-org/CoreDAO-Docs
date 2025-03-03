@@ -18,3 +18,4 @@ To ensure a swift and effective response, send an email to **[bug-report@coredao
 - **Proof of Concept (PoC)**: If possible, provide a working proof of concept demonstrating the vulnerability in action.
 
 Your contribution to Core's security is highly valued, and we appreciate your efforts in keeping the Core ecosystem safe.
+
