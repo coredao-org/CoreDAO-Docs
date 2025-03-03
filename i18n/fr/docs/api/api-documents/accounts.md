@@ -19,7 +19,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=balance\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -52,7 +52,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=txlist\\&address=0x7731f51A600afa5d57F09Fe1dbEb13A13A32674F\\&startblock=0\\&endblock=99999999\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -186,7 +186,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&address=0x0000000000000000000000000000000000001004\\&startblock=0\\&endblock=99999999\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -295,7 +295,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&txhash=0x2fb68017c83b3b0b93c88f9eb5208898b148323e7cc80ed04ac726fe497b15c3\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -488,7 +488,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=txlistinternal\\&startblock=0\\&endblock=2702578\\&page=1\\&offset=5\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -609,7 +609,7 @@ Utilisation:
 - Transferts ERC-20 depuis une adresse de contrat, spécifiez le paramètre d'adresse du contrat
 - Transferts ERC-20 depuis une adresse filtrés par un contrat de jeton, spécifiez à la fois les paramètres adresse et adresse du contrat.
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=tokentx\\&contractaddress=0xF7a0b80681eC935d6dd9f3Af9826E68B99897d6D\\&address=0xcF17abb2CeA7e96eD1E35E0F3FAC919cFECad2F3\\&page=1\\&offset=5\\&startblock=0\\&endblock=999999999\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -775,7 +775,7 @@ Utilisation:
 - Transferts ERC-721 depuis une adresse de contrat, spécifiez le paramètre d'adresse du contrat
 - Transferts ERC-721 depuis une adresse filtrés par un contrat de jeton, spécifiez à la fois les paramètres adresse et adresse du contrat.
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=tokennfttx\\&contractaddress=0x75eB562081dE66B982Df285Ac3922E143936D718\\&address=0x704614399D7889AC60dD713319B664dB8c1c026a\\&page=1\\&offset=5\\&startblock=0\\&endblock=999999999\\&sort=asc\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
@@ -932,7 +932,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=account\\&action=getminedblocks\\&address=0x258f1d17e3DC298C0276C824238422ddeAcA1619\\&blocktype=blocks\\&page=1\\&offset=5\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Essayez ce point de terminaison dans votre  🔗
 
 Paramètres de requête
 
