@@ -43,3 +43,4 @@ Pour importer les détails de la chaîne Testnet de Core dans MetaMask, référe
 - **URL de l'explorateur de blocs :** https://scan.coredao.org
 
 Pour importer les détails de la chaîne Mainnet de Core dans MetaMask, référez-vous à notre guide sur [l'ajout de Core à MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
+
