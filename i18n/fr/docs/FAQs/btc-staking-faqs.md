@@ -84,3 +84,4 @@ En raison de complexités techniques, il est possible que votre actif staké ne 
 ### 14\. Que devriez-vous faire si le bouton _`Redeem BTC`_ ne fonctionne pas sur le site de staking ?
 
 Vous pouvez récupérer vos BTC en cliquant sur le bouton `Redeem` sur le [Site officiel de Staking de Core](https://stake.coredao.org/). Si le bouton ne fonctionne pas, essayez de vider le cache de votre navigateur et réessayez. Si vous rencontrez toujours des problèmes, veuillez contacter le [Forum des développeurs de Core](https://forum.coredao.org/).
+
