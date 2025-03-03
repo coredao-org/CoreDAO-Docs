@@ -25,3 +25,6 @@ Lorsque les validateurs de Core produisent des blocs, ils vérifient régulière
 ## Pénalité pour Double Signature
 
 Il existe un moyen pour qu'un validateur soit définitivement banni du réseau, et cela se produit par le "_double signing_" (double signature), c'est-à-dire la signature de deux blocs différents à la même hauteur de bloc. Alors que l'indisponibilité peut être due à une mauvaise connexion réseau, la double signature est une preuve claire de malveillance intentionnelle. Théoriquement, une double signature bénigne peut se produire si un validateur met à jour la version du réseau qu'il exécute et oublie de mettre à jour son adresse. Il est donc important d'être rigoureux lors des mises à jour du réseau. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses, 100 % de leur dépôt de validateur, et sont ensuite définitivement exclus de la participation au minage des blocs.
+
+
+
