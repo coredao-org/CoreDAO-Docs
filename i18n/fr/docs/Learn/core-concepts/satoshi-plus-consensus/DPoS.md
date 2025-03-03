@@ -56,3 +56,4 @@ La DPoS permet aux détenteurs de tokens CORE de participer activement au consen
 #### **Conclusion**
 
 Dans le mécanisme de consensus Satoshi Plus, le DPoS joue un rôle critique en équilibrant le composant DPoW énergivore. La Preuve d'Enjeu Déléguée est un mécanisme puissant qui améliore la sécurité et l'efficacité de la blockchain Core. En permettant aux détenteurs de tokens CORE et BTC de staker et de déléguer leurs tokens, le DPoS favorise une participation large et une sécurité robuste du réseau.
+
