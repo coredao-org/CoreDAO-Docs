@@ -1,8 +1,8 @@
 ---
 id: retrieve-overall-staking-data-on-core-blockchain
-title: Retrieve Overall Staking Data on Core Blockchain
-description: Returns overall staking data on the Core blockchain, including information on validators, stakers, and amounts staked.
-sidebar_label: Retrieve Overall Staking Data on Core Blockchain
+title: Récupérer les Données Globales de Staking sur la Blockchain Core
+description: Renvoie les données globales de staking sur la blockchain Core, y compris des informations sur les validateurs, les stakers et les montants stakés.
+sidebar_label: Récupérer les Données Globales de Staking sur la Blockchain Core
 hide_title: true
 hide_table_of_contents: true
 api: eJzNVU1v2zAM/SuCLrt4STfslFuaFWtPG9pul6IHRmZjtbLkkVS2IMh/Hyjb6VeAbuth88WCIT7y8dGPW1sjO/Kd+BTtzJ6jZIps0hoJQjAscOfjytQgYFI00qBZJEKzDMnduQZ8rIyPLuRar/l4k6gFBdPbawi+BknEVUFCPUCsDbQpR+H+Yz2xle2AoEVBYju7uq4sIXcpMrKdbe37oyN9PS7186ESCYU8rrE2nJ1D5pscwkYTuBQFoygOdF3wrlQ5vWUF21p2DbagJ9l0aGc2LW/RiVZGqUMS35fCApL5wT0fBVdItnpS3kW5aFyq0aSb0riR08TuKtsiM6zwARIL+bh6BjSva69HCI/bS2aAMLBMWZ5nIOQc5GVKAQRZzlOO9W/wumzQ9BH7zpOGmpjbJVLJDE78Gr+N6i9U7N+E7lG0Yz3Igxkyvp+/MW1E+ZHormR0ifCiTNjfJVt8Pj8ZR3TM8xC/H1Sd/Hn7BwkkCYRh2h+nqQ9lWYp7DYnjy8XLHI4vF6+isE9ykEED3LyGwun84vRlDqfAzatI3Kc5wGJ4KvvhkO3Mo0GiRCY5l4mwNj8aH3B0Hh3MQ+b5n1hQX/rfGdFJiR1NB392AXxUfgrsmTPum6eo0qTazuwKCwOQxs7sdGjJlHPbAm2mQ6tsZRlp3bv/1mYKdmYbkY5n0zHmLXR+or7zfrIUx5NBsKndXVdWnbEw8BKUQtlRF0P/51/OnrvqlzNTJ5dbjNIbqoa84SdBWlIf8G5yNDnSfnWJpYWiWIQW+6VZlo4ZV9KI8XHYmqWa4/3GfFrM9n4y/t0CHrQX/CnToqxyLUJsB/Wu7FCMqtXrZys7Knhd2Sax6LXtdgmMXynsdvr5e0ba9Ft9DeRhqQpdXatbINRIRfI73KgqzmGn87KGkLWcZ/+Jir2frU8nl3a3+wUnvBfy
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Retrieve Overall Staking Data on Core Blockchain"}
+  children={"Récupérer les Données Globales de Staking sur la Blockchain Core"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Returns overall staking data on the Core blockchain, including information on validators, stakers, and amounts staked.
+Renvoie les données globales de staking sur la blockchain Core, y compris des informations sur les validateurs, les stakers et les montants stakés.
 
 <Heading
   id={"request"}
@@ -60,7 +60,7 @@ Returns overall staking data on the Core blockchain, including information on va
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Overall staking data retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the response."},"message":{"type":"string","description":"Additional information or message about the response."},"result":{"type":"object","properties":{"latestRound":{"type":"integer","description":"The latest staking round number."},"activeValidatorCount":{"type":"integer","description":"The number of active validators in the staking network."},"coreStakerCount":{"type":"integer","description":"The number of CORE stakers in the network."},"stakedCoreAmount":{"type":"integer","description":"The total amount of CORE staked in the network."},"btcStakerCount":{"type":"integer","description":"The number of BTC stakers in the network."},"stakedBTCAmount":{"type":"integer","description":"The total amount of BTC staked in the network."},"hashStakerCount":{"type":"integer","description":"The number of HASH stakers in the network."},"stakedHashAmount":{"type":"integer","description":"The total amount of HASH staked in the network."}}}}}}}},"400":{"description":"An error occurred while retrieving overall staking data.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Données globales de staking récupérées avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"result":{"type":"object","properties":{"latestRound":{"type":"integer","description":"Le numéro du dernier round de staking."},"activeValidatorCount":{"type":"integer","description":"Le nombre de validateurs actifs dans le réseau de staking."},"coreStakerCount":{"type":"integer","description":"Le nombre de stakers CORE dans le réseau."},"stakedCoreAmount":{"type":"integer","description":"Le montant total de CORE staké dans le réseau."},"btcStakerCount":{"type":"integer","description":"Le nombre de stakers BTC dans le réseau."},"stakedBTCAmount":{"type":"integer","description":"Le montant total de BTC staké dans le réseau."},"hashStakerCount":{"type":"integer","description":"Le nombre de stakers HASH dans le réseau."},"stakedHashAmount":{"type":"integer","description":"Le montant total de HASH staké dans le réseau."}}}}}}}},"400":{"description":"Une erreur s'est produite lors de la récupération des données globales de staking.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse d'erreur."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
