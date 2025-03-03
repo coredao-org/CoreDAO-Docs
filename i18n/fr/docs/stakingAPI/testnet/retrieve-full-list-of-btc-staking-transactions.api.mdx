@@ -1,8 +1,8 @@
 ---
 id: retrieve-full-list-of-btc-staking-transactions
-title: Retrieve Full List of BTC Staking Transactions
-description: Returns full list of BTC staking transactions (including all active and historical data) by bitcoin address. Page size limited to 100.
-sidebar_label: Retrieve Full List of BTC Staking Transactions
+title: Récupérer la Liste Complète des Transactions de Staking BTC
+description: Renvoie la liste complète des transactions de staking BTC (y compris toutes les données actives et historiques) pour une adresse Bitcoin donnée. La taille de page est limitée à 100.
+sidebar_label: Récupérer la Liste Complète des Transactions de Staking BTC
 hide_title: true
 hide_table_of_contents: true
 api: eJzNV0tvGzcQ/isDXpoAqqQEPelmO2lrICgMRwUKGD5Q5EjLmEuuyaEtRdB/L4a7K+tpr+ykqC7SrjjffPPgPJZCY1TBVGS8EyNxjZSCizBN1oI1kcBP4Xx8AZHknXEzoCBdlIqPR3hnnLJJ83tpLfDrBwTpNBQmkg9GSQtaknwPkwVMDClvHEitA8bYhys5Q4jmO4I1pSHUQB4+DId90ROVDLJEwhDF6GYpnCxRjMSE1FktLXrCMOH7hGEheiLgfTIBtRhRSNjbMWtcIJxvq4epD/BYGFUctk0GhAnya4bGSKiZV1QFllKMloIWFVOKFIybidWqt2ZZ3f0pY3E6wypNrFFwhwsoZCxAxuiVkeyYR0MFUIEwMw/odm3pTEzO8K9UHmc2lTYepsahcqmcYMiOq+TMOMkH+vAJpzJZijl6YKbgPEEV/IPRR3xmHOEMwx63r+Y7voJcw8tPtyNYYeaJOwyHwxM53jKJWHkXMfKBj8Mhf23zOHpHAlIw+IAaYlIKY+SrtWCVyjtCR4wlq8oalf05+BYZcLnPyE++oSK+G8FXGMjUdJTXuB/2XT+dMTtKEfg4GKezOiZbIASMyearzk8MXodWrHqixBjlrIsGrQ3/lBaMm/pQZgzwARoIkBOfqFWY/Zk1cIF42Ux2Lurz8cV4/sVE2hCQIcjFHp0vLxQvjoAhLGMHD0unjZaEbe150ReclW2daby6BoGAVjbFjv/YIJXdsVHjOunZrWuHqsYBHeN/LnU3BcmZ+7SFAZefchVg6CP+zWqUd1MTStTjea6IndSthbY05oK4qfOQ20qfHHWMTj67mSCowbiD3qplu+HWz52CEEkGuvbJ6QNl5yA2C+SOxEJtYu3CotOngKLTL0JqtDiThKfgtjINchu6XWifqEp06TTOOwLXElzCcH4UNuCjDPqke1SLnHSNkrNe3Y1NiR251wJApsRnqGvE8kTqLLI12RxJOEqxe7JxuziSEbXG8bxrDTlSPBriu+jNAPUi8tXrB6bV06cnfjvU0c8cYAg+gFcqhcCYhbHYNvS2dz7XX/7TDv85k/1p7b2Gb1s5zisrjWs1mBgTrp3KqFR4LUZihtkcSYUYiUHjp8GE1GDTVwNpLc9gGB7agT8FK0aiIKriaNAK/ior0yeM9LE/IRX7DunRh7uB4BmNh45shiHLdlz4gPC1iczZ1eX+wHJ1CdqrVKKjelZhkV/ijhBTqgU+9If9Yc5PH6mUOYbN9HrdTHnwOy9Om7NHCzbesHeXyvIpU/4/G1iTDoRzGuRg54rHYVk2Ab0RDSeR2y/LbBvJYb3ticLzvHYjlsuJjPh3sKsVv64nfA62NlFO7LEZf9M7766bdeA9/Lid7qCld7jYXTgfpE18UPDa8mrOb9rynqG63jpfSfPNa95z3NaL5xvI/Yg17wWOzQL6RPKWH4JhlmJ0c7vqiQKlxpDTtpY7Uwor2pDaK/WMsq6If3wei9XqX8LSIXs=
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Retrieve Full List of BTC Staking Transactions"}
+  children={"Récupérer la Liste Complète des Transactions de Staking BTC"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Returns full list of BTC staking transactions (including all active and historical data) by bitcoin address. Page size limited to 100.
+Renvoie la liste complète des transactions de staking BTC (y compris toutes les données actives et historiques) pour une adresse Bitcoin donnée. La taille de page est limitée à 100.
 
 <Heading
   id={"request"}
@@ -45,7 +45,7 @@ Returns full list of BTC staking transactions (including all active and historic
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"btcAddress","in":"query","required":true,"description":"The Bitcoin address for which staking transactions are being requested.","schema":{"type":"string"}},{"name":"pkHash","in":"query","required":true,"description":"The public key hash associated with the given Bitcoin address.","schema":{"type":"string"}},{"name":"pageNum","in":"query","required":false,"description":"The page number for pagination. Defaults to 1 if not provided.","schema":{"type":"integer"}},{"name":"pageSize","in":"query","required":false,"description":"The number of transactions per page. Defaults to 100 if not provided.","schema":{"type":"integer"}}]}
+  parameters={[{"name":"btcAddress","in":"query","required":true,"description":"L'adresse Bitcoin pour laquelle les transactions de staking sont demandées.","schema":{"type":"string"}},{"name":"pkHash","in":"query","required":true,"description":"Le hash de la clé publique associé à l'adresse Bitcoin donnée.","schema":{"type":"string"}},{"name":"pageNum","in":"query","required":false,"description":"Le numéro de page pour la pagination. Par défaut, 1 si non fourni.","schema":{"type":"integer"}},{"name":"pageSize","in":"query","required":false,"description":"Le nombre de transactions par page. Par défaut, 100 si non fourni.","schema":{"type":"integer"}}]}
 >
   
 </ParamsDetails>
@@ -60,7 +60,7 @@ Returns full list of BTC staking transactions (including all active and historic
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"BTC staking transactions retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"A status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"stakedBTCTxList":{"type":"array","description":"List of BTC staking transactions.","items":{"type":"object","properties":{"candidateAddress":{"type":"string","description":"The address of the candidate related to the transaction."},"btcAddress":{"type":"string","description":"The Bitcoin address associated with the transaction."},"btcTXId":{"type":"string","description":"The unique transaction ID for the BTC staking transaction."},"confirmedTxHash":{"type":"string","description":"The confirmed transaction hash for the BTC transaction."},"btcAmount":{"type":"string","description":"The amount of BTC staked in the transaction."},"script":{"type":"string","description":"The script associated with the transaction."},"startRound":{"type":"integer","description":"The starting round of the transaction."},"endRound":{"type":"integer","description":"The ending round of the transaction."},"delegateRound":{"type":"integer","description":"The delegate round for the transaction."},"outputIndex":{"type":"integer","description":"The output index for the transaction."},"rewardAddress":{"type":"string","description":"The reward address associated with the transaction."},"unlockTime":{"type":"integer","description":"The unlock time for the transaction."},"redeemAddress":{"type":"string","description":"The redeem address for the transaction."},"status":{"type":"integer","description":"The status of the transaction."},"redeemTxId":{"type":"string","description":"The transaction ID for the redeem transaction."},"pkHash":{"type":"string","description":"Public key hash associated with the given Bitcoin address."}}}}}}}}}}},"400":{"description":"An error occurred while retrieving the BTC staking transactions.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Transactions de staking BTC récupérées avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Un code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse"},"data":{"type":"object","properties":{"stakedBTCTxList":{"type":"array","description":"Liste des transactions de staking BTC.","items":{"type":"object","properties":{"candidateAddress":{"type":"string","description":"L'adresse du candidat associé à la transaction."},"btcAddress":{"type":"string","description":"L'adresse Bitcoin associée à la transaction."},"btcTXId":{"type":"string","description":"L'ID de transaction unique pour la transaction de staking BTC."},"confirmedTxHash":{"type":"string","description":"Le hash de la transaction BTC confirmée."},"btcAmount":{"type":"string","description":"Le montant de BTC staké dans la transaction."},"script":{"type":"string","description":"Le script associé à la transaction."},"startRound":{"type":"integer","description":"Le round de début de la transaction."},"endRound":{"type":"integer","description":"Le round de fin de la transaction."},"delegateRound":{"type":"integer","description":"Le round de délégation pour la transaction."},"outputIndex":{"type":"integer","description":"L'indice de la sortie dans la transaction."},"rewardAddress":{"type":"string","description":"L'adresse de récompense associée à la transaction."},"unlockTime":{"type":"integer","description":"L'heure de déblocage de la transaction."},"redeemAddress":{"type":"string","description":"L'adresse de rachat pour la transaction."},"status":{"type":"integer","description":"Le statut de la transaction."},"redeemTxId":{"type":"string","description":"L'ID de transaction du rachat."},"pkHash":{"type":"string","description":"Le hash de la clé publique associé à l'adresse Bitcoin donnée."}}}}}}}}}}},"400":{"description":"Une erreur s'est produite lors de la récupération des transactions de staking BTC.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'erreur indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
