@@ -1,8 +1,8 @@
 ---
 id: retrieve-collected-and-pending-rewards
-title: Retrieve Collected and Pending Rewards
-description: Returns the collected and pending rewards for a given Core address.
-sidebar_label: Retrieve Collected and Pending Rewards
+title: Récupérer les récompenses collectées et en attente
+description: Renvoie les récompenses collectées et en attente pour une adresse Core donnée.
+sidebar_label: Récupérer les récompenses collectées et en attente
 hide_title: true
 hide_table_of_contents: true
 api: eJy9Vk1v2zAM/SuCLtsAL8mKnXxLg2LtaUWanYoeFImJ1SqSS9JpAyP/fZBs57Nbk2FbLvkS33t8pEjX0gBptCXb4GUux8AVehJcgNDBOdAMRihvRAneWD8XCC8KDYlZQKHE3C7Bi1FAEMoYBKKezGSpUC2AAUnm97X0agEylzogDJtDMpM20j1XgCuZSYTnyiIYmTNWkB2ImhSwR5G4XwqrC8FBIDBaWEKrTBhgZV3SQbqAhZJ5LXlVRgnEaP1crtcPkZPK4Ako/n8xGMS3QzN2ATdERlClNRDNKudWkUcHz+A5IqiydFariNB/pAhTH8sI00fQHI3CUAKybUToYOBY7KEbd6y4IhEPC+tNIvPzVDEEqhyLMEvfInQS0pPrTC6ASM1PwB8aY+NH5YT1s4CLhCECihZCqGmouCNMHiYGo/jNJH9raixlRPpFI+3507ZgPNSgvJ/Mbdu1o+/jq73W5YOeShm0BNeKinMJrod31ycTXE5G5+JfTkbvw2un7ALMOQaNNpf8NItainMs2lKcZlJLcYZJW4YTbGpfmfz61p2/8UvlrNmfN3HUeQGIAUXQukIEEweQg24obCfj7vz5r3PhKsn7Z2Ohge9GALyWTlnfMViiCjbeRlQugpG5nENKR3Ehc9knVk/Wz/tthfqNVXFQAy67bVGhk7ksmEvK+13IZ1XaHgPxRW/Kmnoe+CXgU1/GSR7HVErAsoPUDgjirgkUw9ub4xF3eyNM0NUCPDfTLYZ8oIOgKKkJ+NIb9AbpAgfihUrVa7fauFs/o7112d3bpoXpUEK97Y2/tHPb6jG8cj/VJspNXtat//eyNTMt3K2sVIOHTBaBOJ6q66ki+IFuvY4/Nzs6VsZYUlMXt/RMOTpc07spfRy3C/2T+OPl/WZCT7A6epJYKlfFk6kXlgptFCnz+4d1JgtQBjCpb0KHWkPJO1FHFzOibPr329VErtc/AdNQNHk=
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Retrieve Collected and Pending Rewards"}
+  children={"Récupérer les récompenses collectées et en attente"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Returns the collected and pending rewards for a given Core address.
+Renvoie les récompenses collectées et en attente pour une adresse Core donnée.
 
 <Heading
   id={"request"}
@@ -45,7 +45,7 @@ Returns the collected and pending rewards for a given Core address.
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The Core address for which to retrieve reward details.","schema":{"type":"string"}}]}
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"L'adresse Core pour laquelle récupérer les détails des récompenses.","schema":{"type":"string"}}]}
 >
   
 </ParamsDetails>
@@ -60,7 +60,7 @@ Returns the collected and pending rewards for a given Core address.
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"Reward details retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","description":"Reward details for the given Core address.","properties":{"pendingCoreReward":{"type":"string","description":"Pending CORE rewards for the Core address."},"pendingHashReward":{"type":"string","description":"Pending HASH rewards for the Core address."},"pendingBTCReward":{"type":"string","description":"Pending BTC rewards for the Core address."},"claimedCoreReward":{"type":"string","description":"Collected CORE rewards for the Core address."},"claimedHashReward":{"type":"string","description":"Collected HASH rewards for the Core address."},"claimedBTCReward":{"type":"string","description":"Collected BTC rewards for the Core address."}}}}}}}},"400":{"description":"Invalid Core address or an error occurred while retrieving reward details.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"Détails des récompenses récupérés avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"data":{"type":"object","description":"Détails des récompenses pour l'adresse Core donnée.","properties":{"pendingCoreReward":{"type":"string","description":"Récompenses CORE en attente pour l'adresse Core."},"pendingHashReward":{"type":"string","description":"Récompenses HASH en attente pour l'adresse Core."},"pendingBTCReward":{"type":"string","description":"Récompenses BTC en attente pour l'adresse Core."},"claimedCoreReward":{"type":"string","description":"Récompenses CORE collectées pour l'adresse Core."},"claimedHashReward":{"type":"string","description":"Récompenses HASH collectées pour l'adresse Core."},"claimedBTCReward":{"type":"string","description":"Récompenses BTC collectées pour l'adresse Core."}}}}}}}},"400":{"description":"Adresse Core invalide ou une erreur s'est produite lors de la récupération des détails des récompenses.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'erreur indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
