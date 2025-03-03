@@ -74,8 +74,8 @@ Notez que les opérations de staking de BTC non-custodial sont effectuées sur d
 
 1. **Verrouillage des Bitcoins :** Les détenteurs de Bitcoin initient le processus de staking en verrouillant leurs bitcoins dans un timelock absolu sur la blockchain Bitcoin. La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis le script ne comporte aucune période de blocage.
 2. **Inclusion des informations de délégation :** Dans la transaction de verrouillage, les stakers incluent :
-   1. **Adresse du validateur Core :** L'adresse du validateur Core auquel déléguer leur Bitcoin.
-   2. **Adresse de récompense en tokens CORE :** L'adresse où ils souhaitent recevoir leurs récompenses en tokens CORE.
+  1. **Adresse du validateur Core :** L'adresse du validateur Core auquel déléguer leur Bitcoin.
+  2. **Adresse de récompense en tokens CORE :** L'adresse où ils souhaitent recevoir leurs récompenses en tokens CORE.
 3. **Délégation des Bitcoins :** Cette action délègue les bitcoins du staker au validateur Core choisi pour une période déterminée, durant laquelle les bitcoins ne peuvent pas être dépensés.
 4. **Élection des validateurs :** Core utilise le Bitcoin délégué pour déterminer le score hybride pour l'élection des validateurs. Les validateurs avec plus de bitcoins délégués ont de meilleures chances d'être élus dans le groupe des validateurs.
 5. **Gagner des récompenses :** Les stakers de Bitcoin gagnent des récompenses en tokens CORE pour la période de verrouillage basée sur la performance du validateur et le montant de Bitcoin staké.
@@ -86,12 +86,12 @@ Notez que les opérations de staking de BTC non-custodial sont effectuées sur d
 Veuillez suivre ces directives pour assurer des transactions fluides lors du staking ou de récupération de vos Bitcoins. Suivre ces recommandations peut garantir un processus de staking et de récupération plus efficace pour vos Bitcoins.
 
 1. **Évitez les frais de gas bas:**
-   - Nous vous recommandons d'éviter les frais de gas inférieurs au taux du marché actuel.
-   - Utiliser un frais de gas trop bas, en particulier pendant les périodes de congestion du réseau, peut entraîner un délai important pour la confirmation de votre transaction Bitcoin (cela peut prendre des jours).
+  - Nous vous recommandons d'éviter les frais de gas inférieurs au taux du marché actuel.
+  - Utiliser un frais de gas trop bas, en particulier pendant les périodes de congestion du réseau, peut entraîner un délai important pour la confirmation de votre transaction Bitcoin (cela peut prendre des jours).
 2. **Gérer les situations de frais de gas bas**
-   - Si votre transaction Bitcoin est retardée en raison de frais de gas bas, envisagez d'utiliser un accélérateur de transaction pour accélérer le processus.
-   - Plusieurs services tiers sont disponibles, comme l'accélérateur de transaction gratuit viaBTC (accessible [ici](https://www.viabtc.com/tools/txaccelerator)).
-   - Faites vos propres recherches et choisissez un service qui correspond le mieux à vos besoins.
+  - Si votre transaction Bitcoin est retardée en raison de frais de gas bas, envisagez d'utiliser un accélérateur de transaction pour accélérer le processus.
+  - Plusieurs services tiers sont disponibles, comme l'accélérateur de transaction gratuit viaBTC (accessible [ici](https://www.viabtc.com/tools/txaccelerator)).
+  - Faites vos propres recherches et choisissez un service qui correspond le mieux à vos besoins.
 
 ## **Conclusion**
 
