@@ -1,8 +1,8 @@
 ---
 id: submit-redeem-script-for-staking-transaction
-title: Submit RedeemScript for Staking Transaction
-description: Submit a RedeemScript so Core relayers can help transmit the staking transaction. This API is optional if the RedeemScript is already provided in the `op_return` field of the staking transaction.
-sidebar_label: Submitting RedeemScript
+title: Soumettre le RedeemScript pour la Transaction de Staking
+description: Soumettez un RedeemScript afin que les relais Core puissent aider à transmettre la transaction de staking. Cette API est optionnelle si le RedeemScript est déjà fourni dans le champ `op_return` de la transaction de staking.
+sidebar_label: Soumettre le RedeemScript
 hide_title: true
 hide_table_of_contents: true
 api: eJzdVsFy20YM/ZUdXHphJDfTE29ukoOmh3oi9aTRNCsuZG683GUA0LJGw3/vYElaklW3PjQ5lBdJS+ABeHjA6ggOuSLfik8RSlh228aLseYzOsRmmV8ZTuZDIjSEwR6Q2FQ2mhpDa4RsZPWQGg2LffDxfji0lULOzKr2bG7vFsazSTmMDcbvssNFEM/GBkLrDqal9OgdOuNjtvuS2j8JpaP4xew8BmfS7tWIUADhtw5Zfk3uAOUx//SEDkqhDguoUhSMoq9s2wZfWXWcf2Wl4Ahc1dhY/SaHFqGEtP2KlUABLaUWSTxyfvu0cGdWLOTjPRQvGF3VeJ6eWXz8x+T7Amzrf8PD25CV2Ac8mF0iYzupMcpYToaiM4LfBnjREkV9PdO+OGN2PdDxnP2L2Ju+H+y5TZEH/t7f3OjHZQ6XustqFHSGu6pC5l0XwkE7/B+1sEoO/52XpVjp2Kix8dHlYMpGrRPBXZCpowp9Ir9BZnv/Bvxb5/w0GHGXqMkYJpEZIYzdpk6mgJnBHMFZeUORQ45ndtuUAtp4lcdiqA3Z7GuUGul6SHNHmDW9veWztqgehqeAX/6usYv4aIN3ZpxNo7lriTYaJEpkUlV1ROjMvvYBdQco9ET0eRY/XACfcoLfrf8D/NRrfGqD9XGK4Jk7fGZXUaVODkpoE+d6rNRQwnyc0bmuZaT5MH1DFCiAkR6RGMr1EToKUEIt0nI5n/ze2dbPBFnez7ZS8Syi7BM9zKHfFKCsfj7t1E9PtmkDnnbgqbBpd51OLlfQdN4XoFLPEF4UC/INsxw3ze3d4npM7hbGpaprMMowIeryE79w0joHh59nN7MbDaVUNTYLI9oGT/fc1baboFanTfcyj+NJe/+T63JUp+CTzLP2lLOskuMorzWMrlDAILDnzo4S2xRQqyDLNRyPW8v4B4W+1+NvHdIByvWmgEdL3m612+tNr0jWIWVNPmTRfBiIfbfShNQ8dJrY1YD3xeRxW1WYBf667eZsZu5+X66ggO34x6DJ0w9k91qO3UMJUMBA+7A69ewIwcb7Lo8yDJj6/AWQ/0QT
@@ -22,7 +22,7 @@ import Heading from "@theme/Heading";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Submit RedeemScript for Staking Transaction"}
+  children={"Soumettre le RedeemScript pour la Transaction de Staking"}
 >
 </Heading>
 
@@ -34,7 +34,7 @@ import Heading from "@theme/Heading";
   
 </MethodEndpoint>
 
-Submit a RedeemScript so Core relayers can help transmit the staking transaction. This API is optional if the RedeemScript is already provided in the `op_return` field of the staking transaction.
+Soumettez un RedeemScript afin que les relais Core puissent aider à transmettre la transaction de staking. Cette API est optionnelle si le RedeemScript est déjà fourni dans le champ `op_return` de la transaction de staking.
 
 <Heading
   id={"request"}
@@ -52,7 +52,7 @@ Submit a RedeemScript so Core relayers can help transmit the staking transaction
 
 <RequestSchema
   title={"Body"}
-  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"txId":{"type":"string","description":"The transaction ID of the staking transaction."},"apiKey":{"type":"string","description":"The API key for authentication."},"redeemScript":{"type":"string","description":"The RedeemScript for the staking transaction."}},"required":["txId","apiKey","redeemScript"]}}}}}
+  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"txId":{"type":"string","description":"L'ID de la transaction de staking."},"apiKey":{"type":"string","description":"La clé API pour l'authentification."},"redeemScript":{"type":"string","description":"Le RedeemScript pour la transaction de staking."}},"required":["txId","apiKey","redeemScript"]}}}}}
 >
   
 </RequestSchema>
@@ -60,7 +60,7 @@ Submit a RedeemScript so Core relayers can help transmit the staking transaction
 <StatusCodes
   id={undefined}
   label={undefined}
-  responses={{"200":{"description":"RedeemScript submitted successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"result":{"type":"boolean","description":"Indicates whether the RedeemScript submission was successful."}}}}}}}},"400":{"description":"Invalid request data or an error occurred while processing the RedeemScript.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  responses={{"200":{"description":"RedeemScript soumis avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"data":{"type":"object","properties":{"result":{"type":"boolean","description":"Indique si la soumission du RedeemScript a réussi."}}}}}}}},"400":{"description":"Données de requête invalides ou une erreur est survenue lors du traitement du RedeemScript.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Code d'erreur indiquant le résultat de l'opération."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
 >
   
 </StatusCodes>
