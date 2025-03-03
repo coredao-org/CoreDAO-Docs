@@ -45,10 +45,10 @@ Sur le réseau Core, le slashing et l'emprisonnement sont des mécanismes pour p
 Slashing fait référence à la réduction des récompenses d'un validateur pour le minage de blocs ou de ses tokens CORE stakés. La gravité de la sanction est proportionnelle à la mauvaise conduite du validateur.
 
 - **Échec de Production de Blocs Pendant Son Tour Désigné**
-  - Si un nœud validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont entièrement coupées.
-  - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
+    - Si un nœud validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont entièrement coupées.
+    - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
 - **Pénalité pour Double Signature**
-  - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
+    - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
 
 ### 8. Quel mécanisme de consensus utilise le réseau Core et comment prévient-il les attaques ?
 
