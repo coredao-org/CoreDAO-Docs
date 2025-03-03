@@ -200,20 +200,20 @@ Le contrat `Storage` est un exemple simple qui démontre comment stocker et réc
 #### Composants du contrat
 
 1. **Variable d'état :**
-   - `number` : Une variable `uint256` utilisée pour stocker la valeur.
+ - `number` : Une variable `uint256` utilisée pour stocker la valeur.
 
 #### Fonctions du contrat
 
 1. **Fonction Store :**
-   - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
-   - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-   - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
+ - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
+ - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+ - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
 
 2. **Fonction Retrieve :**
-   - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
-   - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-   - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
-   - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
+ - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
+ - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+ - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
+ - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
 
 ## Compilation du contrat intelligent
 
@@ -351,3 +351,6 @@ const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 ![dapp-on-core](../../static/img/dapp/dapp-3.avif)
 
 🎉 Félicitations ! Vous avez interagi avec votre contrat nouvellement déployé via l'interface frontend de votre dApp ! Vous pouvez développer la base de code en déployant et en interagissant avec différents contrats, et en ajoutant de nouveaux composants UI au site Web pour vos utilisateurs.
+
+
+
