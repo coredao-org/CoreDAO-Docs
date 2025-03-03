@@ -22,12 +22,12 @@ Pour les nouveaux utilisateurs de la blockchain Core, voici quelques information
 
 1. Pour interagir avec Core, les utilisateurs ont besoin de son jeton natif, CORE, dans leur portefeuille.
 2. Pour les nouveaux utilisateurs, Core offre un avantage unique pour les aider à démarrer :
-   - Si les utilisateurs transfèrent au moins 10 USDT vers Core, ils sont éligibles pour le Faucet Core.
-   - Ce Faucet dépose automatiquement des CORE dans le portefeuille de l'utilisateur.
+    - Si les utilisateurs transfèrent au moins 10 USDT vers Core, ils sont éligibles pour le Faucet Core.
+    - Ce Faucet dépose automatiquement des CORE dans le portefeuille de l'utilisateur.
 3. Le processus fonctionne comme suit :
-   - Premièrement, des fonds sont transférés (minimum 10 USDT) vers la blockchain Core.
-   - Après un transfert réussi, Core déposera automatiquement des CORE dans le portefeuille de l'utilisateur.
-   - Avec des CORE maintenant dans le portefeuille de l'utilisateur, celui-ci peut immédiatement commencer à effectuer des transactions sur la blockchain Core.
+    - Premièrement, des fonds sont transférés (minimum 10 USDT) vers la blockchain Core.
+    - Après un transfert réussi, Core déposera automatiquement des CORE dans le portefeuille de l'utilisateur.
+    - Avec des CORE maintenant dans le portefeuille de l'utilisateur, celui-ci peut immédiatement commencer à effectuer des transactions sur la blockchain Core.
 
 Rappelez-vous, ce dépôt automatique de CORE est un avantage unique conçu pour aider les nouveaux utilisateurs à commencer facilement à utiliser la blockchain Core.
 
@@ -45,3 +45,4 @@ Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCf
 - Suivez le [compte officiel X (Twitter)](https://x.com/Coredao_Org) de Core DAO
 - Lisez [les nouveaux articles de blog](https://coredao.org/explore/blog)
 - Rejoignez les canaux de la communauté Core sur - [Discord](https://discord.com/invite/coredaoofficial), et [Telegram](https://t.me/CoreDAOTelegram) pour des discussions et des mises à jour régulières.
+
