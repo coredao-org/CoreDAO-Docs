@@ -27,16 +27,16 @@ Les validateurs sont une partie cruciale du réseau Core. En plus de valider les
 Le processus d'élection des validateurs dans Satoshi Plus implique des étapes clés, soutenues par des équations spécifiques pour quantifier les contributions en staking et en puissance de hachage:
 
 1. **Délégation de Stake**:
-   - Les détenteurs de tokens CORE et BTC stakent et délèguent leurs tokens aux candidats validateurs. Cette délégation est une forme de vote, où le poids de chaque vote correspond au nombre de tokens stakés.
+ - Les détenteurs de tokens CORE et BTC stakent et délèguent leurs tokens aux candidats validateurs. Cette délégation est une forme de vote, où le poids de chaque vote correspond au nombre de tokens stakés.
 
 2. **Délégation de la Puissance de Hachage**:
-   - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. Ce processus intègre la puissance de minage du Bitcoin dans le mécanisme de sécurité de Core.
+ - Les mineurs de Bitcoin délèguent une partie de leur puissance de hachage en spécifiant leurs validateurs préférés dans les blocs Bitcoin qu'ils minent. Ce processus intègre la puissance de minage du Bitcoin dans le mécanisme de sécurité de Core.
 
 3. **Sélection des Validateurs**:
-   - Les validateurs sont sélectionnés en fonction du soutien total qu'ils reçoivent, calculé en combinant les tokens stakés (BTC et CORE) et la puissance de hachage de Bitcoin déléguée.
+ - Les validateurs sont sélectionnés en fonction du soutien total qu'ils reçoivent, calculé en combinant les tokens stakés (BTC et CORE) et la puissance de hachage de Bitcoin déléguée.
 
 4. **Formation du Groupe de Validateurs**:
-   Un groupe de validateurs est formé à partir de ceux ayant les scores les plus élevés. Ce groupe est mis à jour dynamiquement pour refléter les changements continus dans les délégations de stake et les allocations de puissance de hachage. Il y a deux étapes dans l'élection des validateurs.
+ Un groupe de validateurs est formé à partir de ceux ayant les scores les plus élevés. Ce groupe est mis à jour dynamiquement pour refléter les changements continus dans les délégations de stake et les allocations de puissance de hachage. Il y a deux étapes dans l'élection des validateurs.
 
 5. Les scores hybrides sont calculés pour tous les validateurs du réseau avec l'équation suivante. Le score hybride pour chaque validateur est calculé par la formule suivante :
 
@@ -63,46 +63,46 @@ En laissant de côté les détails mathématiques, il s'agit essentiellement d'u
 C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que la scalabilité et la composition des chaînes PoS comme Ethereum. Permettre aux mineurs de Bitcoin et aux stakers de bitcoin de voter pour les validateurs permet à Core de bénéficier de la robustesse légendaire de Bitcoin. De plus, comme Core est compatible avec l'EVM, il est possible de construire des contrats intelligents, des dApps et d'autres applications sur Core sans avoir à modifier le protocole Bitcoin sous-jacent.
 
 5. **Production de Blocs**:
-   - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **21**_, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente à **34 validateurs Q2 2025**. Au deuxième trimestre 2024, Core a déjà élargi son ensemble de validateurs actifs de **21** à **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
+ - Après l'élection, tous les validateurs sont triés approximativement selon leur score hybride, et ils se relaient pour produire des blocs de **manière rotative** avant que le processus ne recommence depuis le début. En limitant initialement le nombre de validateurs à **21**_, Satoshi Plus offre un taux de transaction plus élevé et une meilleure évolutivité, mais il est prévu que le nombre de validateurs augmente à **34 validateurs Q2 2025**. Au deuxième trimestre 2024, Core a déjà élargi son ensemble de validateurs actifs de **21** à **27**. De plus, ce mécanisme fournit une sécurité supplémentaire grâce à une efficacité améliorée et une tolérance à un grand nombre de participants byzantins. Core est sécurisé tant que pas plus d'un tiers des validateurs ne soient malveillants.
 
 6. **Distribution des Récompenses**:
-   - Les récompenses sont distribuées en fonction des contributions à la sécurité du réseau, en utilisant la formule suivante :
+ - Les récompenses sont distribuées en fonction des contributions à la sécurité du réseau, en utilisant la formule suivante :
 
-     $$
-        rH = \frac{\frac{rHp}{tHp} * m} {S} * R
-     $$
+  $$
+     rH = \frac{\frac{rHp}{tHp} * m} {S} * R
+  $$
 
-     $$
-        rS = \frac{\frac{rSp}{tSp} * k} {S} * R
-     $$
+  $$
+     rS = \frac{\frac{rSp}{tSp} * k} {S} * R
+  $$
 
-     $$
-        rB = \frac{\frac{rBp}{tBp} * l} {S} * R
-     $$
+  $$
+     rB = \frac{\frac{rBp}{tBp} * l} {S} * R
+  $$
 
-     Où:
+  Où:
 
-     - $$rH$$: Récompenses attribuées à la puissance de hachage déléguée (DPoW).
-     - $$rS$$: Récompenses attribuées au staking de CORE (DPoS).
-     - $$rB$$: Récompenses attribuées au staking de BTC.
-     - $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
-     - $$m$$: Proportion des récompenses allouées à la puissance de hachage.
-     - $$k$$: Proportion des récompenses allouées au staking de CORE.
-     - $$l$$: Proportion des récompenses allouées au staking de BTC.
-     - $$S$$: Score hybride du validateur.
+  - $$rH$$: Récompenses attribuées à la puissance de hachage déléguée (DPoW).
+  - $$rS$$: Récompenses attribuées au staking de CORE (DPoS).
+  - $$rB$$: Récompenses attribuées au staking de BTC.
+  - $$R$$: Récompenses totales allouées à l’ensemble des délégateurs.
+  - $$m$$: Proportion des récompenses allouées à la puissance de hachage.
+  - $$k$$: Proportion des récompenses allouées au staking de CORE.
+  - $$l$$: Proportion des récompenses allouées au staking de BTC.
+  - $$S$$: Score hybride du validateur.
 
-     Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
+  Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-     - Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
-     - Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
-     - Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
+  - Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
+  - Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
+  - Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
 
-     Où:
+  Où:
 
-     - $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
-     - $$rSu$$ est la récompense de staking de tokens CORE par unité ;
-     - $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
-     - **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e,f,g,h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Ces paramètres peuvent être ajustés et sont soumis à un processus de gouvernance. Ces calculs assurent une distribution proportionnelle des récompenses, en fonction de la contribution de chaque participant au pool de délégation d’un validateur.
+  - $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
+  - $$rSu$$ est la récompense de staking de tokens CORE par unité ;
+  - $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
+  - **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e,f,g,h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Ces paramètres peuvent être ajustés et sont soumis à un processus de gouvernance. Ces calculs assurent une distribution proportionnelle des récompenses, en fonction de la contribution de chaque participant au pool de délégation d’un validateur.
 
 #### Impact du Dual Staking sur les récompenses BTC
 
