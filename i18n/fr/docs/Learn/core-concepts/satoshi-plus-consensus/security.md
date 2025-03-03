@@ -30,13 +30,13 @@ Le mécanisme Satoshi Plus incite à la fois les mineurs et les stakers (CORE et
 ## Protocoles et Implémentations de Sécurité
 
 1. **Validation Robuste des Transactions**
-   Les validateurs de Core sont responsables de la vérification des transactions et de la création de nouveaux blocs. La combinaison unique de DPoW, DPoS et du staking Non-Custodial de BTC implique de nombreux acteurs et un capital significatif dans l'élection des validateurs, ce qui incite fortement à l'élection de validateurs dignes de confiance et à la participation honnête de ces validateurs.
+  Les validateurs de Core sont responsables de la vérification des transactions et de la création de nouveaux blocs. La combinaison unique de DPoW, DPoS et du staking Non-Custodial de BTC implique de nombreux acteurs et un capital significatif dans l'élection des validateurs, ce qui incite fortement à l'élection de validateurs dignes de confiance et à la participation honnête de ces validateurs.
 
 2. **Résilience du Réseau Contre les Attaques**
-   L'intégration de la puissance de hachage de Bitcoin avec le staking de CORE et de BTC rend Core exceptionnellement résilient contre divers types d'attaques. Le coût élevé d'une attaque sur un tel système hybride, combiné au consensus distribué obtenu via des mécanismes délégués, améliore significativement la sécurité du réseau.
+  L'intégration de la puissance de hachage de Bitcoin avec le staking de CORE et de BTC rend Core exceptionnellement résilient contre divers types d'attaques. Le coût élevé d'une attaque sur un tel système hybride, combiné au consensus distribué obtenu via des mécanismes délégués, améliore significativement la sécurité du réseau.
 
 3. **Adaptabilité et Flexibilité**
-   Contrairement aux blockchains traditionnelles qui reposent uniquement sur une seule forme de consensus, le modèle hybride de Core permet l'adaptabilité et la possibilité de mise à jour. Cette flexibilité est modélisée afin de permettre au réseau d'évoluer en réponse aux menaces de sécurité émergentes ou aux avancées technologiques dans le domaine de la blockchain.
+  Contrairement aux blockchains traditionnelles qui reposent uniquement sur une seule forme de consensus, le modèle hybride de Core permet l'adaptabilité et la possibilité de mise à jour. Cette flexibilité est modélisée afin de permettre au réseau d'évoluer en réponse aux menaces de sécurité émergentes ou aux avancées technologiques dans le domaine de la blockchain.
 
 ## Vecteurs d'Attaque et Mesures de Sécurité dans l'Écosystème Core
 
