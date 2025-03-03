@@ -29,8 +29,8 @@ L'écosystème Core est conçu pour inciter à la participation et sécuriser l'
 
 - **Description:** Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels.
 - **Mécanisme:** Les validateurs reçoivent une combinaison de frais de transaction et de nouveaux tokens CORE miné par la politique d'inflation de la blockchain. Le montant des récompenses qu'un validateur reçoit est proportionnel à son stake et à la puissance de hachage déléguée par les mineurs. Il existe deux catégories de récompenses de validateur:
-  1. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
-  2. **Frais collectés à partir des transactions dans chaque bloc**;
+    1. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
+    2. **Frais collectés à partir des transactions dans chaque bloc**;
 
 Les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'un tour est miné. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
 
