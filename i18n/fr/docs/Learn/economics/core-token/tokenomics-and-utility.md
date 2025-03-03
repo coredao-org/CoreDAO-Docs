@@ -21,7 +21,7 @@ La tokenomics de CORE est conçue en mettant l'accent sur la durabilité à long
 Les tokens CORE sont répartis à travers plusieurs canaux pour équilibrer l'écosystème. Le diagramme suivant illustre la distribution des tokens CORE. La distribution totale des **2,1 milliards** de tokens CORE est la suivante :
 
 1. **Minage des Nœuds (39,995% - 839,900,000 tokens CORE):**\
-   Pour lancer le réseau, les nœuds sont récompensés pour la sécurisation de la chaîne. Ces récompenses sont conçues pour être distribuées sur environ **81 ans**, s'alignant avec l'engagement à long terme des participants.
+  Pour lancer le réseau, les nœuds sont récompensés pour la sécurisation de la chaîne. Ces récompenses sont conçues pour être distribuées sur environ **81 ans**, s'alignant avec l'engagement à long terme des participants.
 
 2. **Utilisateurs (25,029% - 525,600,000 tokens CORE):** Une allocation significative est réservée pour des distributions à une base d'utilisateurs décentralisée via des airdrops, soulignant que la chaîne est centrée sur les utilisateurs et inclusive.
 
