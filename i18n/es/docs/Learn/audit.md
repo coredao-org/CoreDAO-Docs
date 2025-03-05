@@ -21,3 +21,5 @@ La [base de código de blockchain](https://github.com/coredao-org) de Core ha si
 - [Informe de Auditoría de Staking de BTC](https://www.halborn.com/audits/coredao/btc-staking)
 - [Informe de Auditoría de coreBTC](https://www.halborn.com/audits/coredao/corebtc)
 - [Informe de Auditoría de la Actualización 1.0.9](https://www.halborn.com/audits/coredao/109-upgrade-release)
+- [Audit Report of BTC Hardfork - Enhancement / Update](https://www.halborn.com/audits/coredao/btc-hardfork-enhancement-update)
+
