@@ -21,4 +21,5 @@ De plus, Core adopte une approche proactive en matière de sécurité continue, 
 - [Rapport d'Audit du Staking BTC](https://www.halborn.com/audits/coredao/btc-staking)
 - [Rapport d'Audit de coreBTC](https://www.halborn.com/audits/coredao/corebtc)
 - [Rapport d'Audit de la Mise à jour 1.0.9](https://www.halborn.com/audits/coredao/109-upgrade-release)
+- [Audit Report of BTC Hardfork - Enhancement / Update](https://www.halborn.com/audits/coredao/btc-hardfork-enhancement-update)
 
