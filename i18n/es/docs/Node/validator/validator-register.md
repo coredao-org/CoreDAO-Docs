@@ -18,8 +18,8 @@ Antes de convertirse en validador de Core, recomendamos encarecidamente leer el 
 
 2. Una vez terminado, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de apuestas:
 
-   - [Sitio web de participación de Mainnet] (https://stake.coredao.org)
-   - [Sitio web de participación de Testnet](https://stake.test.btcs.network)
+    - [Sitio web de participación de Mainnet] (https://stake.coredao.org)
+    - [Sitio web de participación de Testnet](https://stake.test.btcs.network)
 
 3. Conecte su billetera seleccionando **Conectar billetera** en la parte superior derecha.
 
