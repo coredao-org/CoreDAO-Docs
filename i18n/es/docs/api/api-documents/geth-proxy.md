@@ -24,7 +24,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_blockNumber\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 No Request parameters required.
 
@@ -51,7 +51,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockByNumber\\&tag=0x1b94d8\\&boolean=true\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -477,7 +477,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -505,7 +505,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByHash\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -550,7 +550,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionByBlockNumberAndIndex\\&tag=0x1b94d8\\&index=0x1\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -595,7 +595,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionCount\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -623,7 +623,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getBlockTransactionCountByNumber\\&tag=0x1b94d8\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -651,7 +651,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_sendRawTransaction\\&hex=0xf904808000831cfde080\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -679,7 +679,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getTransactionReceipt\\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -737,7 +737,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_call\\&to=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&data=0x06fdde03\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -766,7 +766,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getCode\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -796,7 +796,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_getStorageAt\\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\\&position=0x0\\&tag=latest\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -823,7 +823,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_gasPrice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 No Request parameters required.
 
@@ -853,7 +853,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=proxy\\&action=eth\_estimateGas\\&data=0x4e71d92d\\&to=0xEeee7341f206302f2216e39D715B96D8C6901A1C\\&value=0xff22\\&gasPrice=0x51da038cc\\&gas=0x5f5e0ff\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
