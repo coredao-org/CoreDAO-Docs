@@ -63,15 +63,14 @@ Los multiplicadores son variables dinámicas que multiplican los puntos Spark. E
 
 A continuación, se presentan los multiplicadores base para los activos permitidos dentro de la billetera del usuario o depositados en varias dApps.
 
-| Activos incluidos en la lista blanca                                                   | Activos en Billetera | Préstamo             | Préstamo             | Provisión de Liquidez |
-| -------------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
-| stCORE, CLND                                                                           | 1x                   | 2.5x | 3x                   | 3.5x  |
-| USDT,USDC                                                                              | 1x                   | 1.5x | 2x                   | 3x                    |
-| CORE, WCORE                                                                            | 1x                   | 1.5x | 2x                   | 2.5x  |
-| wETH                                                                                   | n/a                  | 1.4x | 1.6x | 1.8x  |
-| solvBTC.CORE                                                           | n/a                  | 1.2x | 1.4x | 1.8x  |
-| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.CORE, uBTC, wBTC | n/a                  | 1.2x | 1.4x | 1.6x  |
-| BTC.B, SolvBTC.b, SolvBTC.m            | n/a                  | 1x                   | 1.2x | 1.6x  |
+| Activos incluidos en la lista blanca                                        | Activos en Billetera | Préstamo             | Préstamo             | Provisión de Liquidez |
+| --------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
+| stCORE, CLND, dualCORE                                                      | 1x                   | 2.5x | 3x                   | 3.5x  |
+| USDT,USDC                                                                   | 1x                   | 1.5x | 2x                   | 3x                    |
+| CORE, WCORE                                                                 | 1x                   | 1.5x | 2x                   | 2.5x  |
+| wETH, solvBTC.CORE                                          | n/a                  | 1.4x | 1.6x | 1.8x  |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                  | 1.2x | 1.4x | 1.6x  |
+| BTC.B, SolvBTC.b, SolvBTC.m | n/a                  | 1x                   | 1.2x | 1.6x  |
 
 > _**Example 1:**_
 > If the user holds 10 stCORE in Ignition wallet balance, the user gets:\
