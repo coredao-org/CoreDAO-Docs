@@ -22,3 +22,5 @@ A continuación se muestra una lista de direcciones precompiladas del ecosistema
 | Contrato inteligente - PledgeAgent    | https://scan.coredao.org/address/0x0000000000000000000000000000000000001007 |
 | Contrato inteligente - Burn           | https://scan.coredao.org/address/0x0000000000000000000000000000000000001008 |
 | Contrato inteligente - Fundamentos    | https://scan.coredao.org/address/0x0000000000000000000000000000000000001009 |
+
+
