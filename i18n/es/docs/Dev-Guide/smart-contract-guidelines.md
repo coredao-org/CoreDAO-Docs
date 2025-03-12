@@ -39,3 +39,4 @@ Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^**
 ### Contratos inteligentes basados ​​en Solidity versión <0.8.24
 
 - **Nota**: los contratos inteligentes con la versión solidity **\< 0.8.24** no se ven afectados y pueden funcionar como de costumbre.
+
