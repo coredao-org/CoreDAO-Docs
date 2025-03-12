@@ -16,16 +16,16 @@ En el contexto de la cadena de bloques Core, la delegación es un mecanismo fund
 
 1. **Delegación BTC/CORE a Validadores:**
 
-   - **Propósito:** Este tipo de delegación permite a los poseedores de tokens BTC y CORE apoyar a validadores específicos delegándoles sus tokens. A cambio, los validadores utilizan el poder agregado para proteger la red, validar transacciones y producir bloques.
-   - **Beneficios:** Los delegados comparten las recompensas obtenidas por los validadores elegidos, reciben una parte de las tarifas de transacción y bloquean las recompensas en proporción a su apuesta.
-   - **Cómo delegar BTC:** Core permite a los titulares de BTC delegar sus activos a validadores en Core a través de la participación sin custodia de BTC, lo que les permite no solo ganar recompensas de participación sino también mantener la propiedad completa de sus activos. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar BTC en Core] (../Learn/products/btc-stake/stake-btc-guide.md).
-   - **Cómo delegar CORE:** Core permite a los titulares de CORE delegar sus activos a validadores en Core a través de un mecanismo de delegación simple, lo que les permite participar en la seguridad y gobernanza de la red Core. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar CORE] (./delegating-core.md).
+    - **Propósito:** Este tipo de delegación permite a los poseedores de tokens BTC y CORE apoyar a validadores específicos delegándoles sus tokens. A cambio, los validadores utilizan el poder agregado para proteger la red, validar transacciones y producir bloques.
+    - **Beneficios:** Los delegados comparten las recompensas obtenidas por los validadores elegidos, reciben una parte de las tarifas de transacción y bloquean las recompensas en proporción a su apuesta.
+    - **Cómo delegar BTC:** Core permite a los titulares de BTC delegar sus activos a validadores en Core a través de la participación sin custodia de BTC, lo que les permite no solo ganar recompensas de participación sino también mantener la propiedad completa de sus activos. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar BTC en Core] (../Learn/products/btc-stake/stake-btc-guide.md).
+    - **Cómo delegar CORE:** Core permite a los titulares de CORE delegar sus activos a validadores en Core a través de un mecanismo de delegación simple, lo que les permite participar en la seguridad y gobernanza de la red Core. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar CORE] (./delegating-core.md).
 
 2. **Delegación de Hash Power de BTC Miners:**
 
-   - **Propósito:** Los mineros de Bitcoin pueden delegar una parte de su poder de hash computacional a validadores en la red Core. Esta forma única de delegación aprovecha la seguridad y el trabajo que ya se está realizando en la red Bitcoin para mejorar la seguridad del Core.
-   - **Proceso:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, indicando su soporte para un validador Core, vinculando así la seguridad de ambas redes.
-   - **Cómo delegar hash:** Core permite a los mineros de BTC delegar su poder de hash a los validadores en Core, lo que les permite ganar recompensas de apuesta del ecosistema Core en forma de tokens CORE adicionales. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar Hash Poweer en validadores principales] (./delegating-hash.md).
+    - **Propósito:** Los mineros de Bitcoin pueden delegar una parte de su poder de hash computacional a validadores en la red Core. Esta forma única de delegación aprovecha la seguridad y el trabajo que ya se está realizando en la red Bitcoin para mejorar la seguridad del Core.
+    - **Proceso:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, indicando su soporte para un validador Core, vinculando así la seguridad de ambas redes.
+    - **Cómo delegar hash:** Core permite a los mineros de BTC delegar su poder de hash a los validadores en Core, lo que les permite ganar recompensas de apuesta del ecosistema Core en forma de tokens CORE adicionales. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar Hash Poweer en validadores principales] (./delegating-hash.md).
 
 ## Importancia de las delegaciones en Core Blockchain
 
