@@ -7,11 +7,11 @@ sidebar_position: 2
 # Overview
 ---
 
-Core Ignition Season 2 is a six-month user incentive program designed to recognize the Core community for their valuable contributions to the Core network. Through Core Ignition, users have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for various engagements and activities, which are viewable on the Ignition dashboard after successfully connecting and bridging to Core Ignition.
+Core Ignition Season 3 is a six-month user incentive program designed to recognize the Core community for their valuable contributions to the Core network. Through Core Ignition, users have the opportunity to contribute meaningfully to the evolving BTCfi landscape while being rewarded for various engagements and activities, which are viewable on the Ignition dashboard after successfully connecting and bridging to Core Ignition.
 
   
 ## Program Period
-The duration for the Core Ignition user incentive program is **six** months, from September 12, 2024, 00:00 UTC to March 11, 2025, 23:59 UTC.
+The duration for the Core Ignition user incentive program is **six** months, from March 12, 2025, 12:00 UTC to September 12, 2025, 11:59 UTC.
 
 ## Eligibility
 All participants are eligible, except for those in prohibited jurisdictions or as specified in the Program Terms & Conditions.
@@ -27,7 +27,7 @@ By participating in the Core Ignition user incentive program, users gain access 
 ## Get Started
 1. Visit [Core Ignition website](https://ignition.coredao.org).
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
+  <img width="500" alt="S3_hero" src="https://github.com/user-attachments/assets/4e038aae-a522-4004-97af-da536b6ecdfe"/>
 </p>
 
 2. Click on "Add Core Network" to add Core Blockchain into the wallet network.
@@ -44,8 +44,9 @@ By participating in the Core Ignition user incentive program, users gain access 
 
 6. Review and agree to the Terms & Conditions and Privacy Policy.
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096"/>
+  <img width="500" alt="S3 T C" src="https://github.com/user-attachments/assets/1b460bb5-2992-409c-a4d4-45ec5a1dd7f5"/>
 </p>
+
 
 7. Click "Connect Wallet" to connect a compatible Web3 Core wallet.
 <p align="center">
