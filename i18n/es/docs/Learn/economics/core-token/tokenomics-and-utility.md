@@ -21,7 +21,7 @@ La tokenómica CORE está diseñada con un enfoque en la sostenibilidad y la des
 Los tokens CORE se asignan a través de varios canales para equilibrar el ecosistema. El siguiente diagrama ilustra la distribución de los tokens CORE. La distribución del total de **2,1 mil millones** de tokens CORE es la siguiente:
 
 1. **Minería de nodos (39,995% - 839.900.000 tokens CORE):**\
-   Para iniciar la red, los nodos son recompensados ​​por asegurar la cadena. Estas recompensas están diseñadas para distribuirse a lo largo de aproximadamente **81 años**, alineándose con el compromiso a largo plazo de los participantes.
+  Para iniciar la red, los nodos son recompensados ​​por asegurar la cadena. Estas recompensas están diseñadas para distribuirse a lo largo de aproximadamente **81 años**, alineándose con el compromiso a largo plazo de los participantes.
 
 2. **Usuarios (25,029% - 525.600.000 tokens CORE):** Se reserva una asignación significativa para lanzamientos aéreos a una base de usuarios descentralizada, lo que enfatiza que la cadena está centrada en el usuario y es inclusiva.
 
