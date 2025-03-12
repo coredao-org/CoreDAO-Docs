@@ -200,20 +200,20 @@ El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacen
 #### Componentes del contrato
 
 1. **Variable de estado**:
-   - `number`: una variable `uint256` que se utiliza para almacenar el valor.
+ - `number`: una variable `uint256` que se utiliza para almacenar el valor.
 
 #### Funciones del contrato
 
 1. **Función de tienda**:
-   - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
-   - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
-   - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
+ - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
+ - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+ - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
 
 2. **Función de recuperación**:
-   - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
-   - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
-   - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
-   - **Valor de retorno**: La función devuelve el valor de la variable "número".
+ - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
+ - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+ - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
+ - **Valor de retorno**: La función devuelve el valor de la variable "número".
 
 ## Compilación de contrato inteligente
 
@@ -347,3 +347,6 @@ const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 ![dapp-on-core](../../static/img/dapp/dapp-3.avif)
 
 🎉 ¡Felicidades! ¡Acaba de interactuar con su contrato recién implementado utilizando la interfaz de su dApp! Puede aprovechar el código base implementando e interactuando con diferentes contratos y agregando nuevos componentes de interfaz de usuario al sitio web para sus usuarios.
+
+
+
