@@ -74,8 +74,8 @@ Tenga en cuenta que las operaciones de Staking No Custodial de BTC se realizan e
 
 1. **Bloqueando Bitcoin:** Los poseedores de Bitcoin inician el proceso de staking bloqueando su Bitcoin en un timelock absoluto en la blockchain de Bitcoin. Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
 2. **Incluyendo Información de Delegación:** Dentro de la transacción de bloqueo, los stakers incluyen:
-   1. **Dirección del Validador de Core:** La dirección del Validador de Core al que delegarán su Bitcoin.
-   2. **Dirección de Recompensa en Tokens CORE:** La dirección donde quieren que se envíen sus recompensas en tokens CORE.
+  1. **Dirección del Validador de Core:** La dirección del Validador de Core al que delegarán su Bitcoin.
+  2. **Dirección de Recompensa en Tokens CORE:** La dirección donde quieren que se envíen sus recompensas en tokens CORE.
 3. **Delegando Bitcoin:** Esta acción delega el Bitcoin del staker al validador de Core elegido por un período especificado, durante el cual el Bitcoin no podrá ser gastado.
 4. Los validadores con más Bitcoin delegado tienen más posibilidades de ser elegidos para el conjunto de validadores. **Elección del Validador:** Core utiliza el Bitcoin delegado para determinar la puntuación híbrida para la elección de validadores.
 5. **Ganar Recompensas:** Los stakers de Bitcoin ganan recompensas en tokens CORE durante el período de bloqueo, basadas en el rendimiento del validador y la cantidad de Bitcoin apostado.
@@ -86,12 +86,12 @@ Tenga en cuenta que las operaciones de Staking No Custodial de BTC se realizan e
 Por favor, siga estas directrices para asegurar transacciones suaves al hacer staking o redimir su Bitcoin. Seguir estas recomendaciones puede asegurar un proceso más eficiente de staking y redención para su Bitcoin.
 
 1. **Evitar Tarifas de Gas Bajas:**
-   - Se recomienda evitar tarifas de gas que sean más bajas que la tarifa de mercado actual.
-   - Usar una tarifa de gas demasiado baja, especialmente durante períodos de congestión de la red, puede resultar en que su transacción de Bitcoin tarde mucho tiempo (posiblemente días) en ser confirmada.
+  - Se recomienda evitar tarifas de gas que sean más bajas que la tarifa de mercado actual.
+  - Usar una tarifa de gas demasiado baja, especialmente durante períodos de congestión de la red, puede resultar en que su transacción de Bitcoin tarde mucho tiempo (posiblemente días) en ser confirmada.
 2. **Manejo de Situaciones de Baja Tarifa de Gas:**
-   - Si su transacción de Bitcoin se retrasa debido a una tarifa de gas baja, considere usar un acelerador de transacciones para acelerar el proceso.
-   - Existen varios servicios de terceros disponibles, como el acelerador de transacciones gratuito viaBTC (accesible [aquí](https://www.viabtc.com/tools/txaccelerator)).
-   - Por favor, investigue y elija un servicio que mejor se adapte a sus necesidades.
+  - Si su transacción de Bitcoin se retrasa debido a una tarifa de gas baja, considere usar un acelerador de transacciones para acelerar el proceso.
+  - Existen varios servicios de terceros disponibles, como el acelerador de transacciones gratuito viaBTC (accesible [aquí](https://www.viabtc.com/tools/txaccelerator)).
+  - Por favor, investigue y elija un servicio que mejor se adapte a sus necesidades.
 
 ## **Conclusión**
 
