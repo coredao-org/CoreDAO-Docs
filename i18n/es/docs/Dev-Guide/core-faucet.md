@@ -13,8 +13,8 @@ Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rá
 ## Steps to Obtain tCORE/tCORE2 from Core Testnet Faucet
 
 1. Navegue al sitio web de faucet.
-   - **Para Core Blockchain Testnet (1114) Faucet:** https://scan.test2.btcs.network/faucet
-   - **For Core Blockchain Testnet (1115) Faucet:** https://scan.test.btcs.network/faucet
+    - **Para Core Blockchain Testnet (1114) Faucet:** https://scan.test2.btcs.network/faucet
+    - **For Core Blockchain Testnet (1115) Faucet:** https://scan.test.btcs.network/faucet
 
 2. Pegue su dirección en el cuadro de texto proporcionado. Asegúrese de proporcionar la dirección Core Testnet de su billetera que desea recibir fondos con tCORE o tCORE2.
 
@@ -35,3 +35,6 @@ Cada dirección puede solicitar **solo un tCORE o tCORE2 por día** del faucet e
 :::note
 tCORE y tCORE2 solo se usan para pruebas y no tienen ningún valor. No lo use para transacciones financieras reales.
 :::
+
+
+
