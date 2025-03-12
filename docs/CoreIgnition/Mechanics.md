@@ -60,12 +60,12 @@ Below are the baseline multipliers for the whitelisted assets inside the wallet 
 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
-| stCORE, CLND | 1x | 2.5x | 3x | 3.5x |
+| stCORE, CLND, dualCORE | 1x | 2.5x | 3x | 3.5x |
 | USDT, USDC | 1x | 1.5x | 2x | 3x |
 | CORE, WCORE | 1x | 1.5x | 2x | 2.5x |
-| wETH | n/a | 1.4x | 1.6x | 1.8x |
-| solvBTC.CORE| n/a | 1.2x | 1.4x | 1.8x |
-| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.CORE, uBTC, wBTC | n/a | 1.2x | 1.4x | 1.6x |
+| wETH, solvBTC.CORE | n/a | 1.4x | 1.6x | 1.8x |
+| | n/a | 1.2x | 1.4x | 1.8x |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC | n/a | 1.2x | 1.4x | 1.6x |
 | BTC.B, SolvBTC.b, SolvBTC.m | n/a | 1x | 1.2x | 1.6x |
 
   
