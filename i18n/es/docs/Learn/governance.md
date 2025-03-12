@@ -15,23 +15,23 @@ El sistema de gobernanza de Core está diseñado para mantener la descentralizac
 La gobernanza de la blockchain de Core está diseñada para evolucionar con el tiempo, mediante un enfoque gradual que comienza con la centralización necesaria para establecer la red y gradualmente cede el control a la comunidad a medida que crece y se estabiliza.
 
 - **Etapa 1: Gobernanza Offchain**
-  - Las propuestas y decisiones se realizan fuera de la cadena a través de Propuestas de Mejora de Core (CIPs).
-  - Los miembros de la comunidad, independientemente de su tamaño de participación, pueden presentar propuestas para su consideración.
-  - Un voto mayoritario determina el resultado de cada propuesta, con un periodo de votación de siete días para permitir la participación comunitaria.
+    - Las propuestas y decisiones se realizan fuera de la cadena a través de Propuestas de Mejora de Core (CIPs).
+    - Los miembros de la comunidad, independientemente de su tamaño de participación, pueden presentar propuestas para su consideración.
+    - Un voto mayoritario determina el resultado de cada propuesta, con un periodo de votación de siete días para permitir la participación comunitaria.
 
 - **Etapa 1.5: Modelo Híbrido Actual**
-  - Representa un punto intermedio entre la gobernanza offchain y el objetivo de una gobernanza parcial en cadena.
-  - Esta etapa permite el aprendizaje, el ajuste y la preparación de la base para integrar elementos más en cadena en el proceso de gobernanza.
+    - Representa un punto intermedio entre la gobernanza offchain y el objetivo de una gobernanza parcial en cadena.
+    - Esta etapa permite el aprendizaje, el ajuste y la preparación de la base para integrar elementos más en cadena en el proceso de gobernanza.
 
 - **Etapa 2: Gobernanza Parcial en Cadena (Próxima)**
-  - Esta etapa introducirá la capacidad de ajustar parámetros fijos directamente a través de votación en cadena.
-  - El "m Parameter", que regula ciertos variables económicas, ya está bajo control comunitario.
-  - Se someterán a gobernanza en cadena parámetros adicionales, como el porcentaje de tarifas quemadas (actualmente fijado en 0%).
-  - Se están llevando a cabo discusiones para implementar demoras de tiempo en las votaciones para mitigar la venta de votos y preocupaciones similares.
+    - Esta etapa introducirá la capacidad de ajustar parámetros fijos directamente a través de votación en cadena.
+    - El "m Parameter", que regula ciertos variables económicas, ya está bajo control comunitario.
+    - Se someterán a gobernanza en cadena parámetros adicionales, como el porcentaje de tarifas quemadas (actualmente fijado en 0%).
+    - Se están llevando a cabo discusiones para implementar demoras de tiempo en las votaciones para mitigar la venta de votos y preocupaciones similares.
 
 - **Etapa 3: Gobernanza Total en Cadena (Meta)**
-  - Los detalles de esta etapa se están desarrollando actualmente con la participación activa de la comunidad.
-  - Los planes incluyen mecanismos como exigir un colateral para presentar propuestas, para que los proponentes tengan un interés en la salud y longevidad de la red.
+    - Los detalles de esta etapa se están desarrollando actualmente con la participación activa de la comunidad.
+    - Los planes incluyen mecanismos como exigir un colateral para presentar propuestas, para que los proponentes tengan un interés en la salud y longevidad de la red.
 
 ## Estado Actual de la Gobernanza
 
