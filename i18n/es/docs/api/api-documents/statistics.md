@@ -18,7 +18,7 @@ https://openapi.coredao.org/api?
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=coresupply\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 No Request parameters required.
 
@@ -45,7 +45,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=validators\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 No Request parameters required.
 
@@ -419,7 +419,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=stats\\&action=coreprice\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 No Request parameters required.
 
