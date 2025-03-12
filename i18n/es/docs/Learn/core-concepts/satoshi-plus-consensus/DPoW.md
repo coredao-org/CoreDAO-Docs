@@ -61,3 +61,4 @@ En la red Bitcoin, los mineros de Bitcoin generan poder hash para proteger la re
 #### **Conclusión**
 
 DPoW es una innovación crítica dentro del mecanismo de consenso Satoshi Plus, extiende los incentivos de los mineros de la red Bitcoin para alinearse con el mecanismo de consenso Satoshi Plus de Core. Core recibe la participación de los mineros de Bitcoin en su seguridad, y Bitcoin recibe mineros mejor remunerados. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
+
