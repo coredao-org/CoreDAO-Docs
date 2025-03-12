@@ -19,7 +19,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblockreward\\&blockno=1807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -54,7 +54,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblockcountdown\\&blockno=2807242\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
@@ -88,7 +88,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Try this endpoint in your [**browser**](https://openapi.coredao.org/api?module=block\\&action=getblocknobytime\\&timestamp=1678581398\\&closest=before\\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
+> Try this endpoint in your  🔗
 
 Request Query Parameters
 
