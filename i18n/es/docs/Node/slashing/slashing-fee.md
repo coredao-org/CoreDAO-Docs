@@ -34,3 +34,4 @@ Si la evidencia es válida:
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
 4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
+
