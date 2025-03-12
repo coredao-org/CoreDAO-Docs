@@ -147,3 +147,5 @@ Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la p
 <p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
 </p>
+
+
