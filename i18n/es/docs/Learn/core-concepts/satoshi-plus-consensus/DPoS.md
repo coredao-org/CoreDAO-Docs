@@ -55,3 +55,4 @@ DPoS opera permitiendo a los poseedores de tokens CORE participar activamente en
 #### **Conclusión**
 
 En el mecanismo de consenso Satoshi Plus, DPoS desempeña un papel fundamental al proporcionar un equilibrio al componente DPoW que consume mucha energía. La prueba de participación delegada es un mecanismo poderoso que mejora la seguridad y eficiencia de la cadena de bloques central. Al permitir a los poseedores de tokens CORE y BTC apostar y delegar sus tokens, DPoS promueve una amplia participación y una sólida seguridad de la red.
+
