@@ -25,3 +25,6 @@ Mientras producen bloques, los validadores Core existentes verifican periódicam
 ## Penalización por doble fichaje
 
 Hay una manera de prohibir permanentemente a un validador de la red, y es mediante "_doble firma_", es decir, firmar dos bloques diferentes a la misma altura de bloque. Mientras que la falta de disponibilidad podría ser el resultado de una mala conexión de red, la doble firma es una fuerte evidencia de mala conducta intencional. En teoría, es posible que se produzca una doble firma benigna si un validador actualiza la versión de la red que está ejecutando y olvida actualizar su dirección. Asegúrese de ser diligente al realizar actualizaciones de red. Los validadores sorprendidos con doble firma entregan todas las recompensas, el 100% de su depósito de validador y, a partir de entonces, se les prohíbe participar en bloques de minería.
+
+
+
