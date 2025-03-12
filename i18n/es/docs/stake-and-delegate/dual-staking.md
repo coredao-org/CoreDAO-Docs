@@ -44,21 +44,21 @@ Currently, Satoshi Plus rewards are allocated via three pools, one for each of t
 Dual Staking does not affect these reward pools, but does enable Bitcoin stakers who also stake CORE tokens to earn a higher proportion of rewards in the Bitcoin Staking pool. In this section, we cover in detail the working of the grading algorithm with respect to dual staking.
 
 1. **Boosted Yield Levels**\
-   Under Dual Staking, there are 3 boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. For Solo-Stakers of only Bitcoin, a fourth tier exists with the lowest Bitcoin staking rate. It is important to note that the annual reward rate for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics. As a result, the actual boosted yields may change daily based on market conditions.
+  Under Dual Staking, there are 3 boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. For Solo-Stakers of only Bitcoin, a fourth tier exists with the lowest Bitcoin staking rate. It is important to note that the annual reward rate for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics. As a result, the actual boosted yields may change daily based on market conditions.
 
-   - **P<sub>BASE</sub>** \= the BTC staking base rate
-   - **P<sub>Level1</sub>** \= the BTC staking base rate \+ Level 1 boosted yield
-   - **P<sub>Level2</sub>** \= the BTC staking base rate \+ Level 2 boosted yield
-   - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking base rate \+ Level 3 boosted yield
+  - **P<sub>BASE</sub>** \= the BTC staking base rate
+  - **P<sub>Level1</sub>** \= the BTC staking base rate \+ Level 1 boosted yield
+  - **P<sub>Level2</sub>** \= the BTC staking base rate \+ Level 2 boosted yield
+  - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking base rate \+ Level 3 boosted yield
 
 Effectively, the CORE emissions are distributed pro rata based on the BTC TVL, weighted based on their dual staking tier (CORE:BTC).
 
 2. **Staked CORE Thresholds and Staking Ratios (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-   The deciding mechanism for a Bitcoin staker’s yield tier  (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ration and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. The current CORE:BTC staking ratios are as follows:
+  The deciding mechanism for a Bitcoin staker’s yield tier  (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ration and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. The current CORE:BTC staking ratios are as follows:
 
-   - Staking Ratio R1 \= 2,000 CORE per 1 BTC
-   - Staking Ratio R2 \= 6,000 CORE per 1 BTC
-   - Staking Ratio R3 \= 16,000 CORE per 1 BTC
+  - Staking Ratio R1 \= 2,000 CORE per 1 BTC
+  - Staking Ratio R2 \= 6,000 CORE per 1 BTC
+  - Staking Ratio R3 \= 16,000 CORE per 1 BTC
 
 Keeping these ratios in mind, users can calculate the required threshold for each tier as follows:
 
@@ -73,10 +73,10 @@ The staked CORE and/or staked Bitcoin can be distributed across multiple active 
 :::
 
 3. **Boosted yield level determination for each (1) staked Bitcoin**
-   - If staked CORE amount  \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**
-   - If **R<sub>1</sub>** \=\< staked CORE amount \< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
-   - If **R<sub>2</sub>** \=\< staked CORE amount \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-   - If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
+  - If staked CORE amount  \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**
+  - If **R<sub>1</sub>** \=\< staked CORE amount \< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
+  - If **R<sub>2</sub>** \=\< staked CORE amount \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
+  - If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
 
 :::note
 Staking ratios and the number of levels are configurable and subject to change by governance vote.
