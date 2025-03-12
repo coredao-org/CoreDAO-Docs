@@ -30,7 +30,7 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
 
 ## Types of Nodes on the Core Network
 1. **Validators:**
-    * **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s consensus framework.
+    * **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework.
     * **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
     * **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
 

@@ -1,0 +1,58 @@
+{
+  "title": {
+    "message": "Core DAO",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Core DAO Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Learn": {
+    "message": "Learn",
+    "description": "Navbar item with label Learn"
+  },
+  "item.label.Developer Guide": {
+    "message": "Developer Guide",
+    "description": "Navbar item with label Developer Guide"
+  },
+  "item.label.Run a Node": {
+    "message": "Run a Node",
+    "description": "Navbar item with label Run a Node"
+  },
+  "item.label.Staking & Delegation": {
+    "message": "Staking & Delegation",
+    "description": "Navbar item with label Staking & Delegation"
+  },
+  "item.label.Core API": {
+    "message": "Core API",
+    "description": "Navbar item with label Core API"
+  },
+  "item.label.FAQs": {
+    "message": "FAQs",
+    "description": "Navbar item with label FAQs"
+  },
+  "item.label.Staking API": {
+    "message": "Staking API",
+    "description": "Navbar item with label Staking API"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.Build": {
+    "message": "Build",
+    "description": "Navbar item with label Build"
+  },
+  "item.label.Stake & Delegate": {
+    "message": "Stake & Delegate",
+    "description": "Navbar item with label Stake & Delegate"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
+  }
+}

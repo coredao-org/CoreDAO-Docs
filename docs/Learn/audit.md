@@ -20,4 +20,5 @@ Core's [blockchain codebase](https://github.com/coredao-org) has been audited by
 * [Audit Report of BTC Staking](https://www.halborn.com/audits/coredao/btc-staking)
 * [Audit Report of coreBTC](https://www.halborn.com/audits/coredao/corebtc)
 * [Audit Report of 1.0.9 Upgrade](https://www.halborn.com/audits/coredao/109-upgrade-release)
+* [Audit Report of BTC Hardfork - Enhancement / Update](https://www.halborn.com/audits/coredao/btc-hardfork-enhancement-update)
 

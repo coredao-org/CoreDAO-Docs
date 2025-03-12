@@ -1,0 +1,70 @@
+---
+id: retrieve-btc-staking-status
+title: "Retrieve BTC Staking Status"
+description: "Retrieve BTC staking status on the Core chain using a transaction ID."
+sidebar_label: "Retrieve BTC Staking Status"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9VU1v2zAM/SsCL9sAL8mKnXzrumLLrWizU9GDIjGxWltyRTofCPzfB8p2m69hPXTLxUlMvvdIPYo7sEgmuppd8JDDLXJ0uEL1bXaliPWT80t5ckMqeMUFqqsQUZlCO68aktdacdSetBEMNf0+ggxqHXWFjJEgv9+B1xVCDryZWsjACdNzg3ELGUR8blxECznHBrMjPbMCj9DVIkS1LpwpkpozOh0pAUVitKKFTIGVhnwHvK1FBnF0fglt+yD0VAdPSPL+YjKRx6GEMwyx75JV1BiDRIumLLfCZYJn9Cwouq5LZ7SgjB9JoHanUsL8EQ1Lw2KoMbLrhJhg8VTwcXPuOjUSrJy3icwvU1siUlOyCov0S6CTkBG0GVRIpJdvwL+01slXXSrnFyFWCUOFqHoIpeeh4YEw9TExWM1vKLJr5l6c84xLjCc6xASDBxcnp75nj0Rugl+4WKGdbX5qKv5epsAXmooB/AUg0fwBfuYqJNZV/Ub9PMSrdYHdIO37eq3plXcEbf/J4Os5S079SpfOHk9GiEp7hTGGqIIxTYxoZVRKHBw72OPQz//duNdJ4j/zbQc/eBQ3damdHxgcUYMvHRZULoKFHJaYytFcQA7jvkPjOZtxb9QMCONquNKaWEIOBXNN+XgI/6xrN2IkvhjN2dDII69DfBqDXDUyQ0m841LUp4v0rj+Jy5vp6fzdTJUNpqnQczd6kvKBjpJEUpfwZTQZTaRVdSCudDq5/uo9uNiH/LuhsAPe3asZ3m0f9AfGuOFxOg5RmVq461t+Dz08ZDBnI93u1D1kUARiidjt5prwVyzbVv7uVogchnWk56UskYUu6XiL7Bf08bbfN5/Ue+yWs3U94fZ12a102UhIssBKRydCIb9/aDMoUFuMqYIu59IYrHkv62QWBeXFsj+uZ9C2vwEicLeU
+sidebar_class_name: "get api-method"
+info_path: docs/stakingAPI/testnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve BTC Staking Status"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/btc/status"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve BTC staking status on the Core chain using a transaction ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"txId","in":"query","required":true,"description":"The transaction ID for which the BTC staking status is requested.","schema":{"type":"string"}}]}
+>
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"BTC staking status retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"status":{"type":"integer","description":"The status of the BTC staking transaction."},"confirmedTxHash":{"type":"string","description":"The hash of the confirmed BTC transaction."},"confirmTimestamp":{"type":"integer","description":"The timestamp when the transaction was confirmed."}}}}}}}},"400":{"description":"Invalid transaction ID or an error occurred while retrieving the staking status.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

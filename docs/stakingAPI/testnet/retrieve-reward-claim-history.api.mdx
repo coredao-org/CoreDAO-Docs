@@ -1,0 +1,71 @@
+---
+id: retrieve-reward-claim-history
+title: "Retrieve Reward Claim History"
+description: "Returns a list of reward claim history by core address within a given round range. Limited to 100 rounds on each query."
+sidebar_label: "Retrieve Reward Claim History"
+hide_title: true
+hide_table_of_contents: true
+api: eJzFV01v2zgQ/SsDXroFvLZb7Mm3NAg2AVps4aSnIFjQ4thiI5HqzMipYei/L4aSv91WaYOuL3Ekzsyb9x7J8do45Ix8JT4GMzFTlJoCg4XCs0CcA+GTJQdZYX0JuWeJtILZCrJICNY5QmZ48pL7ABYWfokBKNbBAdmwwCG896UXdCAR3ozH7TuGGABtlsOXGmk1NANTWbIlChKbyf3aBFuimRitctEWMQPjFWKKMAND+KX2hM5MhGocHDVyl+MhRIlAKORxiSA5nu9rHkmxcJZjac1kbWRVKQwW8mFhmmawRcZiSabazPOBpVgfFh1Rcd4iUr4UAjzlPsu/jdIzaA1kQXcWrg+CC6QDvBjcT6LF4H4L1gcFw1UMjKwL3o7H+ufYoGeKbIR1wHWWIfO8LorkqiwGwSCax1ZV4TOreUafWZOtT9HE2WfMRO1IsUIS30LJosNTOxyTdStWagZdvOWpa2homoEpkdkueiT60C6EiuLSJ/Ktc15f2gIcivUFg53FWk6LOCs9GiLkupC9dZbIrk6AvD93CBBmkRwrvV6w5B9XY7GP6K4t5618P2bgoox1SKWvL26vu/oMbSLwIfW9d9ik1tO3M9Y6Z+rWzaEuZ0hgmWPmrZ5SepKduDllX5B1qIT0Zi1FMHAen9IGajOSFWSwwUGFlGEQu8DnkNmmmVrBvq3u6qYdm6hTaKmtHYie6XYBG5NLFFtsyhxXaJpm0BngMhL2NYBWuvxnetVT+nJ1q++PWNkyeJj7EyO9ajMmXZSYblcNz3t3qsdGP9CkSzfM1LtKStMeW+nRvgD9sp+Sf1DCByAs0hl3vpyKkZ60Olyqu7GnHPsyc7sxvi1IK9e7u8vnCP7u7rKX3rvPwPx17pa4CUtbeI2uaoHdaAGRDqaC335FXBElCL96Q7R5uuWAX6vC+qBm1pSeucYtTZpV8ujMxCww4baSm4kZdf4fdYyPkqL/dneqXtVIy804VlNhJiYXqXgy2kT+aSs/FGR5O5xJxsOA8hTpcWT0Kvdh3u4YL4U2opsfbrstd/Hx5vTI/3gDLmZ1qf5ODtaQV3wUpJDagDfD8XCcdlBkKW1Sqxt2pptJrxsXks/hetvaQeX1zgL/4/zb6S34VUZJTe0s0b7uFLs3He9pakuaqX0PVHsYmDzqFXVv1uuZZfxERdPo43beUy2dZzsrdNfPbcHHI98+G39Mu+HwNfzSPH22t0dcnQz4S1vUutLo4PrTOF94vP4O+oMfAS8D/kWn7e9A3/s9sAP+oP+QV+Rmcv/QDEyO1iEl37RxF1mGlexFnRyammV75Px9dWea5j82Jg3j
+sidebar_class_name: "get api-method"
+info_path: docs/stakingAPI/testnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Reward Claim History"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/rewards/claim_history"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Returns a list of reward claim history by core address within a given round range. Limited to 100 rounds on each query.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The core address to retrieve the reward claim history for.","schema":{"type":"string"}},{"name":"startRound","in":"query","required":true,"description":"The starting round of the range for which the reward claim history is requested.","schema":{"type":"integer"}},{"name":"endRound","in":"query","required":true,"description":"The ending round of the range for which the reward claim history is requested.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Reward claim history retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code of the response."},"message":{"type":"string","description":"Message providing additional details about the response."},"data":{"type":"object","properties":{"result":{"type":"array","description":"List of reward claim records.","items":{"type":"object","properties":{"stakedHashReward":{"type":"string","description":"Amount of HASH rewards staked in the given round."},"round":{"type":"integer","description":"The round number associated with the reward claim."},"gradeList":{"type":"array","description":"List of grades showing reward rates and percentages.","items":{"type":"object","properties":{"rewardRate":{"type":"integer","description":"The reward rate for the grade."},"percentage":{"type":"integer","description":"The percentage of the total reward for the grade."}}}},"stakedCoreReward":{"type":"string","description":"The CORE rewards staked in the given round."},"myStakeRate":{"type":"object","description":"User's staking rate details.","properties":{"stakeRatio":{"type":"string","description":"The ratio of the user's stake to the total stake."},"percent":{"type":"string","description":"The percentage of the user's stake in relation to the total stake."}}},"totalRewardClaimed":{"type":"string","description":"The total rewards claimed in the given round."},"stakedBTCReward":{"type":"string","description":"The BTC rewards staked in the given round."}}}}}}}}}}},"400":{"description":"Invalid input parameters or core address.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code of the response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -84,7 +84,7 @@ For more details, refer to [RPC Node Confgiurations Guide](../Node/config/rpc-no
 
 ### 5. What is a Core Validator Node? What are the hardware/software requirements for running a Core Validator node?
 
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core Chain’s Satoshi Plus consensus framework.
+Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain's Satoshi Plus consensus framework.
 
 **Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux.
 

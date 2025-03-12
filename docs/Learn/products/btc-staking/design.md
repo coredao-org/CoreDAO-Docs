@@ -19,7 +19,8 @@ The methodology for integrating Bitcoin staking centers on [CLTV timelock](https
 * The transaction should also contain an `op_return` output specifying   
   * The address of the Core Validator the staker wants to delegate their Bitcoin to.  
   * The address to which the staker would like their CORE token rewards to be sent.  
-* To make staking eligible on Core, *minimal requirements exist* for the **amount** of BTC that can be staked. Users should stake at least **0.01 Bitcoin** (less transaction fees).
+* To be eligible for staking on Core, minimum requirements apply to the amount of BTC that can be staked, depending on the staking method. If using the [official staking website UI](https://stake.coredao.org/staking), users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
+* Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
 
 ### Transaction Workflow
 
@@ -79,7 +80,7 @@ The `RedeemScript`  should start with a CLTV time lock. Here are a few common ty
 * When using multi-signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of Bitcoin locked in this output will be used for the calculation of validator election and reward distribution on Core.
 
 :::note 
-Minimum requirements exist on the amount of BTC that can be staked to be eligible for Non-Csutodial BTC Staking on Core. A user should stake at least **0.01 Bitcoin** (exclusive of transaction fees).
+To be eligible for Non-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). There is **no** minimum requirement when staking via the script. Also, the minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
 :::
 
 ## OP_RETURN Output
@@ -90,7 +91,7 @@ The `OP_RETURN` output should contain all staking information in order and be co
 - **`LENGTH`:** which represents the total byte length after the `OP_RETURN` opcode. _Note that all data has to be pushed with its appropriate size byte(s)_.
 - **`Satoshi Plus Identifier`:** (**SAT+**) 4 bytes
 - **`Version`:** (**0x01**) 1 byte
-- **`Chain ID`:** (1115 for Core Testnet and 1116 for Core Mainnet) 2 bytes
+- **`Chain ID`:** (1114 for Core Testnet2, 1115 for Core Testnet, and 1116 for Core Mainnet) 2 bytes
 - **`Delegator`:** The Core address to receive rewards, 20 bytes
 - **`Validator`:** The Core validator address to stake to, 20 bytes
 - **`Fee`:** Fee for relayer, 1 byte, range [0,255], measured in CORE

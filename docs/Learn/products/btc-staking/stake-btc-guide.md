@@ -19,14 +19,15 @@ To be able to stake, you must have the following prerequisites:
 
 The following are some key points that users should be careful about when staking their Bitcoin on Core.
 
-1. **Minimum of 0.01 Bitcoin \+ Gas Fee:** To successfully stake your Bitcoin on Core, you need a minimum of 0.01 Bitcoin. In addition to the staking amount, users should consider the necessary gas fees in Bitcoin for executing transactions on the Bitcoin network. If you plan to stake for less than a month, having at least 0.05 Bitcoin is advisable. This extra amount helps cover potential network congestion, which can lead to higher gas prices than the rewards earned from staking.  
-2. **Understanding the Differences in Bitcoin Staking Addresses:**  
+1. **Minimum Bitcoin Amount \+ Gas Fee:** The minimum BTC required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
+2. **Minimum Staking Duration:** Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+3. **Understanding the Differences in Bitcoin Staking Addresses:**  
    * The staking address in your Bitcoin wallet's transaction prompt may differ from your original Bitcoin address. This is because the Bitcoin staking address is derived from your Bitcoin wallet's master private key, ensuring control and security over your assets. Your Bitcoin remains safe in the Bitcoin staking address, unaffected by staking.   
-3. **Delays in Locked Assets to Appear in your Bitcoin Wallet:**   
+4. **Delays in Locked Assets to Appear in your Bitcoin Wallet:**   
    * You may face some delays before your locked Bitcoin is displayed in your Bitcoin wallets. This delay primarily results from delays in transaction confirmation on the Bitcoin network, which can take several hours due to block time, the number of block confirmations required, and network congestion.   
    * While we are actively working with wallet partners to support the timely display of your assets in your wallets, you can check your locked assets on the ”MyStaking” page on Core’s staking website.   
    * You can also view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/).   
-4. **Considerations for Locking Periods**  
+5. **Considerations for Locking Periods**  
    * Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
 
 ## Workflow of Non-Custodial BTC Staking
@@ -35,12 +36,12 @@ Non-custodial Bitcoin staking introduces a secure and decentralized method for B
 
 1. **Initiate Staking:** Start by accessing either the [CLI-based BTC Staking Tool](https://github.com/coredao-org/btc-staking-tool) (for technical users) or the [web-based staking platform](https://stake.coredao.org/) (for general users).   
 2. **Stake Bitcoin with Time-Lock:** You stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, and your Bitcoin remains locked until the specified period ends. Ensure you follow the requirements for a transaction to be valid and eligible; refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.mwjq55dgslw5) for more details.   
-   1. There is no minimum staking period requirements, however, make sure to thoughtfully select your lockup periods.   
+   1. **Minimum staking duration depends on the method choosen for staking.** The official website UI requires a 5-day minimum, while the script has no lockup requirement. Therefore, make sure to thoughtfully select your lockup periods.   
    2. Include the Core Validator Address to delegate your assets.  
    3. Include the Core wallet address for rewards.  
 3. **Vote for Validators:** By including the address of the Core Validators in your transaction, you can delegate your staked Bitcoin to the chosen validator on the Core blockchain.  
 4. **Connect a Core wallet for rewards:** In the return field, verify your Core wallet address; you'll receive CORE token rewards at this address.  
-5. **Claiming Rewards:** Accrued CORE token rewards will also appear on the [staking site](http://stake.coredao.org/). CORE token rewards will appear when users connect their wallets, and can be claimed daily.   
+5. **Claiming Rewards:** Accrued CORE token rewards will also appear on the [staking site](http://stake.coredao.org/). CORE token rewards will appear when users connect their wallets, and can be claimed daily. Also, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).   
 6. **Redeem Bitcoin:** Once the staking lock time expires, the staked Bitcoin will remain idle in the staking address until redeemed by the user.
 
 ## Non-Custodial Bitcoin Staking Walkthrough 
@@ -90,8 +91,8 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 </p>
 
 8. Once your Bitcoin wallet is connected, it's important to understand and specify several key parameters:  
-* Specify the amount of Bitcoin you’d like to delegate. The minimum amount to delegate is **0.01 Bitcoin**.  
-* Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.  
+* Specify the amount of Bitcoin you’d like to delegate. The minimum amount to delegate is **0.01 Bitcoin** if staking via official staking website UI and no requirements if staking BTC via the staking script.  
+* Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation. The minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
   * You can input values by selecting inside the lock time box or clicking on the calendar icon to select the date and click “OK” to proceed.  
   * The default lock time is set to a month in advance.
 * Specify the network priority speed for your transaction
@@ -103,8 +104,12 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 9. Note that the **Reward Address on Core** is pulled from the connected Core wallet. You should connect the Core wallet with the same address on which you want to receive staking rewards in CORE tokens.  
 10. Click **Confirm** to complete the transaction.
 
+:::note
+Note: For BTC staking, transferring the staking validator will interrupt staking, resulting in the loss of rewards for that day.
+:::
+
 ### Confirm OP\_Return Output
-11. Before Signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. The OP\_Return output is where your redeem\_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP\_Return. Abort the transaction if it doesn't include the OP\_Return output.
+11. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. The OP\_Return output is where your redeem\_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP\_Return. Abort the transaction if it doesn't include the OP\_Return output.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)

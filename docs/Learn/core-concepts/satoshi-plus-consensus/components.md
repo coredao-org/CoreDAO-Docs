@@ -39,7 +39,7 @@ DPoS allows Bitcoin and CORE token holders to engage in the network's governance
 - **Staking and Voting:** Token holders stake their CORE tokens with Validators, effectively voting for them to participate in the consensus process. The more tokens staked with a Validator, the greater their influence in validating transactions and creating new blocks.
 - **Workflow:** Stakers delegate their tokens to Validators through a secure staking process on the Core platform. In exchange, they receive staking rewards in the form of CORE tokens. The staked tokens contribute to the network's overall security and decision-making processes.
     * **Bitcoin Stakers** - The third leg of Satoshi Plus consensus is non-custodial Bitcoin staking, which allows any bitcoin holder to earn yield by staking their bitcoin tokens without giving up custody.
-    * **CORE Stakers** - All holders of Core Chain’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
+    * **CORE Stakers** - All holders of Core blockchain’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
 
 
 ### 3. **Non-Custodial Bitcoin Staking**
@@ -85,7 +85,7 @@ Satoshi Plus enhances the security of both the Bitcoin and Core networks by crea
 
 **How it works:**
 - **Shared Security Model:** By allowing Bitcoin miners to participate in Core's security mechanisms, the system leverages Bitcoin's immense hashing power, enhancing the security of Core blockchain without requiring significant additional resources.
-- **Workflow:** As miners and stakers contribute to Core Chain’s security, both networks benefit. Miners use their existing setups to support Core blockchain, and stakers provide additional security layers through token delegation, creating a robust and resilient network.
+- **Workflow:** As miners and stakers contribute to Core blockchain’s security, both networks benefit. Miners use their existing setups to support Core blockchain, and stakers provide additional security layers through token delegation, creating a robust and resilient network.
 
 
 In summary, the Satoshi Plus consensus mechanism cleverly integrates these components into a cohesive system that benefits from the security and decentralization of Bitcoin's mining process and the agility and governance capabilities of modern staking models, fostering a secure, efficient, and scalable blockchain environment.

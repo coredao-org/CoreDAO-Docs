@@ -11,7 +11,7 @@ description: Leveraging DPoS in Satoshi Plus
 ## Overview
 
 Delegated Proof of Stake (DPoS) is a pivotal component of the Satoshi Plus consensus mechanism employed by Core blockchain. This consensus model is designed to complement the robustness of Delegated Proof of Work (DPoW) with a flexible, democratic, and scalable staking system. DPoS not only enhances network security but also promotes community involvement in governance, making it an essential aspect of the blockchain’s operation. 
-DPoS allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to vote and participate in the election of the validator set by delegating their holdings to their preferred validators. Because there is only a very small minimum staking requirement of 1 CORE token, all CORE holders can contribute to the governance of the Core network. On the bitcoin-staking side, the present configuration requires a **minimum staking requirement of 0.01 BTC** (but this can be adjusted in the future through a governance vote). Holders of both CORE token and BTC can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/). In this section, we cover in depth the working and importance of DPoS in the functioning of the Satoshi Plus.
+DPoS allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to vote and participate in the election of the validator set by delegating their holdings to their preferred validators. Because there is only a very small minimum staking requirement of 1 CORE token, all CORE holders can contribute to the governance of the Core network. On the Bitcoin staking side, the current configuration imposes no minimum BTC requirement when using the staking script. However, staking via the official website UI requires a minimum of 0.01 BTC (excluding transaction fees). Note, this requirement is subject to change through a governance vote in the future. Holders of both CORE token and BTC can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/). In this section, we cover in depth the working and importance of DPoS in the functioning of the Satoshi Plus.
 
 ## How DPoS Works in Satoshi Plus
 DPoS operates by allowing CORE token holders to actively participate in the network's consensus by staking their tokens with Validators. This process involves several key steps:
@@ -26,7 +26,8 @@ DPoS operates by allowing CORE token holders to actively participate in the netw
 
 ## Step by Step Process
 
-1. **Staking CORE/BTC Tokens:** CORE token holders decide to participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC. 
+1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). If users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked. 
+
 
 2. **Delegating to Validators:** Token holders delegate their staked CORE/BTC tokens to a chosen validator, assisting their hybrid score in the validator election process.
 
