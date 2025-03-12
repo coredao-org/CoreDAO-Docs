@@ -91,3 +91,4 @@ Puede utilizar MetaMask para enviar tCORE a otras direcciones.
 3. Ingrese la cantidad de tokens tCORE que desea enviar y la dirección a la que desea enviar los tokens tCORE; asegúrese de que sea una dirección Core Testnet. Luego haga clic en siguiente y confirme la transacción.
 
 ![send-metmask](../../static/img/testnet-wallet-config/send-tcore-2.png)
+
