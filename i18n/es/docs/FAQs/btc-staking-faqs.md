@@ -84,3 +84,4 @@ Debido a complejidades técnicas, es posible que tu activo apostado no sea visib
 ### 14\. ¿Qué hacer si el botón _`Canjear BTC`_ no funciona en el sitio web de apuestas?
 
 Puedes canjear tu BTC haciendo clic en el botón `Canjear` en el [Sitio web oficial de Apuestas de Core](https://stake.coredao.org/). Si el botón no funciona, intenta borrar la caché de tu navegador y vuelve a intentarlo. Si sigues teniendo problemas, por favor comunícate en el [Foro de desarrolladores de Core](https://forum.coredao.org/).
+
