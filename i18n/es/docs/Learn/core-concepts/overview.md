@@ -27,30 +27,30 @@ En alineación con Bitcoin, Satoshi Plus desbloquea la tasa libre de riesgo de B
 ## Tecnología Core
 
 1. **Consenso de Satoshi Plus**
-   Este innovador mecanismo de consenso combina Prueba de trabajo delegada (DPoW), Prueba de participación delegada (DPoS) y Stake de Bitcoin sin custodia, incorporando así a los mineros de Bitcoin, a los participantes de CORE y a los participantes de Bitcoin, respectivamente, en la elección de los validadores principales. Cada una de estas tres patas de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
-   - **Prueba de trabajo delegada (DPoW):** Los mineros de Bitcoin mejoran la seguridad de Core al delegar su poder de hash a los validadores de Core, obteniendo recompensas suplementarias en forma de tokens CORE. Esta relación simbiótica aprovecha la sólida infraestructura de seguridad de Bitcoin sin costos adicionales para los mineros, alineando incentivos y reforzando la integridad de la red.
-   - **Prueba de participación delegada (DPoS):** Los poseedores de tokens CORE participan activamente en el consenso de Core al delegar sus tokens a validadores. Esto no solo garantiza un alto nivel de seguridad de la red, sino que también proporciona a los participantes recompensas de tokens CORE, fomentando una amplia participación y manteniendo un proceso de elección de validadores equilibrado y descentralizado.
-   - **Stake de Bitcoin sin custodia:** Los poseedores de Bitcoin pueden bloquear sus activos en bloqueos de tiempo absoluto en la cadena de bloques de Bitcoin, obteniendo recompensas simbólicas CORE mientras mantienen la custodia de su Bitcoin. Este enfoque innovador transforma Bitcoin en un activo rentable, agregando valor sin comprometer la seguridad y la confianza inherentes a la red Bitcoin.
+    Este innovador mecanismo de consenso combina Prueba de trabajo delegada (DPoW), Prueba de participación delegada (DPoS) y Stake de Bitcoin sin custodia, incorporando así a los mineros de Bitcoin, a los participantes de CORE y a los participantes de Bitcoin, respectivamente, en la elección de los validadores principales. Cada una de estas tres patas de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
+    - **Prueba de trabajo delegada (DPoW):** Los mineros de Bitcoin mejoran la seguridad de Core al delegar su poder de hash a los validadores de Core, obteniendo recompensas suplementarias en forma de tokens CORE. Esta relación simbiótica aprovecha la sólida infraestructura de seguridad de Bitcoin sin costos adicionales para los mineros, alineando incentivos y reforzando la integridad de la red.
+    - **Prueba de participación delegada (DPoS):** Los poseedores de tokens CORE participan activamente en el consenso de Core al delegar sus tokens a validadores. Esto no solo garantiza un alto nivel de seguridad de la red, sino que también proporciona a los participantes recompensas de tokens CORE, fomentando una amplia participación y manteniendo un proceso de elección de validadores equilibrado y descentralizado.
+    - **Stake de Bitcoin sin custodia:** Los poseedores de Bitcoin pueden bloquear sus activos en bloqueos de tiempo absoluto en la cadena de bloques de Bitcoin, obteniendo recompensas simbólicas CORE mientras mantienen la custodia de su Bitcoin. Este enfoque innovador transforma Bitcoin en un activo rentable, agregando valor sin comprometer la seguridad y la confianza inherentes a la red Bitcoin.
 
 2. **Capacidades avanzadas de contratos inteligentes**
-   - **Compatibilidad con EVM:** Permite a los desarrolladores un entorno de construcción familiar en el que pueden portar fácilmente dapps existentes basadas en Ethereum a Core sin cambios significativos, fomentando la adopción y el crecimiento dentro del ecosistema Core.
-   - **Core-Native Wrapped Bitcoin (coreBTC):** Una solución descentralizada y de confianza mínima para conectar Bitcoin con Core, lo que permite su uso sin problemas en la cadena de bloques Core para contratos inteligentes y otras actividades BTCfi mientras se mantiene una vinculación 1:1.
+    - **Compatibilidad con EVM:** Permite a los desarrolladores un entorno de construcción familiar en el que pueden portar fácilmente dapps existentes basadas en Ethereum a Core sin cambios significativos, fomentando la adopción y el crecimiento dentro del ecosistema Core.
+    - **Core-Native Wrapped Bitcoin (coreBTC):** Una solución descentralizada y de confianza mínima para conectar Bitcoin con Core, lo que permite su uso sin problemas en la cadena de bloques Core para contratos inteligentes y otras actividades BTCfi mientras se mantiene una vinculación 1:1.
 
 3. **Mejoras de seguridad**
-   - **Validación de transacciones mejorada:** Core involucra tanto a los mineros de Bitcoin como a los participantes en la seguridad de sus contratos inteligentes.
-   - **Nodos guardianes:** Además de los controles de seguridad existentes, los verificadores tienen la responsabilidad exclusiva de monitorear la red en busca de signos de actividad maliciosa y pueden penalizar a los malos actores con pruebas verificables.
+    - **Validación de transacciones mejorada:** Core involucra tanto a los mineros de Bitcoin como a los participantes en la seguridad de sus contratos inteligentes.
+    - **Nodos guardianes:** Además de los controles de seguridad existentes, los verificadores tienen la responsabilidad exclusiva de monitorear la red en busca de signos de actividad maliciosa y pueden penalizar a los malos actores con pruebas verificables.
 
 4. **Características de interoperabilidad**
-   - **Intercambios atómicos HTLC sin confianza:** Los contratos Hashed TimeLock permiten el intercambio de tokens entre pares y sin confianza entre Core y otras cadenas de bloques, incluido (y especialmente) Bitcoin.
-   - **Interoperabilidad entre cadenas:** Como cadena de bloques escalable y compatible con EVM, Core tiene integraciones con muchos puentes y dapps entre cadenas.
+    - **Intercambios atómicos HTLC sin confianza:** Los contratos Hashed TimeLock permiten el intercambio de tokens entre pares y sin confianza entre Core y otras cadenas de bloques, incluido (y especialmente) Bitcoin.
+    - **Interoperabilidad entre cadenas:** Como cadena de bloques escalable y compatible con EVM, Core tiene integraciones con muchos puentes y dapps entre cadenas.
 
 5. **Usabilidad y Accesibilidad**
-   - **Interfaces fáciles de usar:** Se puede acceder al Core a través de muchas carteras e interfaces fáciles de usar y de uso común.
-   - **Herramientas integrales para desarrolladores:** Se proporciona un conjunto de herramientas y documentación para ayudar a los desarrolladores a crear, implementar y administrar aplicaciones en Core.
+    - **Interfaces fáciles de usar:** Se puede acceder al Core a través de muchas carteras e interfaces fáciles de usar y de uso común.
+    - **Herramientas integrales para desarrolladores:** Se proporciona un conjunto de herramientas y documentación para ayudar a los desarrolladores a crear, implementar y administrar aplicaciones en Core.
 
 6. **Gobernanza y participación comunitaria**
-   - **Procesos de gobernanza transparentes:** Ciertos parámetros variables, como el mecanismo de quema, implican un proceso de toma de decisiones transparente e inclusivo, que permite la participación de la comunidad y la votación en cadena.
-   - **Programas de incentivos comunitarios:** Los miembros de la comunidad tienen iniciativas diseñadas para recompensar a los usuarios por sus contribuciones al ecosistema, ya sea a través del desarrollo, la educación o la participación en la gobernanza.
+    - **Procesos de gobernanza transparentes:** Ciertos parámetros variables, como el mecanismo de quema, implican un proceso de toma de decisiones transparente e inclusivo, que permite la participación de la comunidad y la votación en cadena.
+    - **Programas de incentivos comunitarios:** Los miembros de la comunidad tienen iniciativas diseñadas para recompensar a los usuarios por sus contribuciones al ecosistema, ya sea a través del desarrollo, la educación o la participación en la gobernanza.
 
 ## Estado del ecosistema Core
 
