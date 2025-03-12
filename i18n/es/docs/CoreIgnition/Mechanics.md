@@ -50,8 +50,8 @@ Los usuarios también pueden ganar Sparks interactuando con las dApps permitidas
 **3. Campañas Participadas:**\
 Core Ignition contará con campañas flash o de tiempo limitado, ofreciendo a los usuarios oportunidades especiales para potenciar Sparks. Manténgase conectado revisando las secciones de campaña dentro de la aplicación y siguiendo los anuncios oficiales de Core en [X (Twitter)](https://x.com/Coredao_Org) para las últimas actualizaciones.
 
-**4. Invitar a Nuevos Usuarios a unirse a Ignition:**\
-Para quienes son nuevos en Core Ignition, transfiera $100 USDT en activos permitidos a Core para desbloquear un enlace de invitación permanente. Para usuarios registrados en la Temporada 1, el código de invitación se desbloquea automáticamente. Al invitar nuevos usuarios a Core Ignition, los usuarios recibirán el 10% de los Sparks diarios obtenidos por los invitados de primer grado y el 2% de los invitados de segundo grado. Tenga en cuenta que puede aplicarse un límite a los Sparks máximos que cada usuario puede ganar mediante referidos.
+**4. Invite New Users to Join Ignition:**
+For those new to Core Ignition, bridge $50 USD worth of whitelisted assets to Core to unlock a permanent invite link. For users who have signed up in Season 2, the invite code is automatically unlocked. Al invitar nuevos usuarios a Core Ignition, los usuarios recibirán el 10% de los Sparks diarios obtenidos por los invitados de primer grado y el 2% de los invitados de segundo grado. Tenga en cuenta que puede aplicarse un límite a los Sparks máximos que cada usuario puede ganar mediante referidos.
 
 ### Cómo Aumentar Multiplicadores
 
@@ -63,17 +63,19 @@ Los multiplicadores son variables dinámicas que multiplican los puntos Spark. E
 
 A continuación, se presentan los multiplicadores base para los activos permitidos dentro de la billetera del usuario o depositados en varias dApps.
 
-| Activos incluidos en la lista blanca                                                                                                  | Activos en Billetera | Préstamo             | Préstamo             | Provisión de Liquidez |
-| ------------------------------------------------------------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
-| stCORE, CLND                                                                                                                          | 1.3x | 2.5x | 3x                   | 3.5x  |
-| USDT,USDC                                                                                                                             | 1.2x | 2x                   | 2.5x | 3x                    |
-| CORE,WCORE,wETH                                                                                                                       | 1x                   | 1.5x | 2x                   | 2.5x  |
-| solvBTC.CORE                                                                                                          | 1x                   | 1.4x | 1.6x | 1.8x  |
-| aBTC, BTCB, BTC.B, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.b, SolvBTC.m, uBTC, wBTC | 1x                   | 1.2x | 1.4x | 1.6x  |
+| Activos incluidos en la lista blanca                                                   | Activos en Billetera | Préstamo             | Préstamo             | Provisión de Liquidez |
+| -------------------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
+| stCORE, CLND                                                                           | 1x                   | 2.5x | 3x                   | 3.5x  |
+| USDT,USDC                                                                              | 1x                   | 1.5x | 2x                   | 3x                    |
+| CORE, WCORE                                                                            | 1x                   | 1.5x | 2x                   | 2.5x  |
+| wETH                                                                                   | n/a                  | 1.4x | 1.6x | 1.8x  |
+| solvBTC.CORE                                                           | n/a                  | 1.2x | 1.4x | 1.8x  |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.CORE, uBTC, wBTC | n/a                  | 1.2x | 1.4x | 1.6x  |
+| BTC.B, SolvBTC.b, SolvBTC.m            | n/a                  | 1x                   | 1.2x | 1.6x  |
 
-> _**Ejemplo 1:**_\
-> Si el usuario tiene 10 stCORE en el balance de la billetera Ignition, obtiene:\
-> Sparks diarios = cantidad de stCORE \* precio de stCORE \* multiplicador = 10 stCORE \* $1.5 (supuesto) \* 1.3 = 19.5
+> _**Example 1:**_
+> If the user holds 10 stCORE in Ignition wallet balance, the user gets:\
+> Daily Sparks = stCORE amount \* stCORE price \* Multiplier = 10 stCORE \* $1.5 (assumed) \* 1 = 15
 
 > _**Ejemplo 2:**_\
 > Si el usuario presta 20 stCORE en un protocolo de préstamos, obtiene:\
