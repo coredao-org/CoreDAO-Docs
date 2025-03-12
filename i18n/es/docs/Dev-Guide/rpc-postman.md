@@ -50,3 +50,6 @@ curl -H "Content-Type: application/json" \
 7. Una vez que presione el botón "Enviar", recibirá una respuesta en JSON con toda la información que queríamos sobre la transacción cuyo hash pasamos en la solicitud.
 
 ![response-postman](../../static/img/rpc/postman/rpc-psotman-7.png)
+
+
+
