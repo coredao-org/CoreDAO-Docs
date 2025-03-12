@@ -30,13 +30,13 @@ El mecanismo Satoshi Plus incentiva tanto a los mineros como a los apostadores (
 ## Protocolos e implementaciones de seguridad
 
 1. **Validación sólida de transacciones**
-   Los validadores principales son responsables de verificar las transacciones y crear nuevos bloques. La combinación única de DPoW, DPoS y Stake BTC sin custodia involucra a muchas partes interesadas y un capital significativo en la elección de validadores, lo que incentiva en gran medida la elección de validadores confiables y la participación honesta de esos validadores.
+  Los validadores principales son responsables de verificar las transacciones y crear nuevos bloques. La combinación única de DPoW, DPoS y Stake BTC sin custodia involucra a muchas partes interesadas y un capital significativo en la elección de validadores, lo que incentiva en gran medida la elección de validadores confiables y la participación honesta de esos validadores.
 
 2. **Resiliencia de la red contra ataques**
-   La integración del poder hash de Bitcoin con las apuestas de CORE y BTC hace que Core sea excepcionalmente resistente contra varios tipos de ataques. El alto costo de atacar un sistema híbrido de este tipo, combinado con el consenso distribuido logrado a través de mecanismos delegados, mejora significativamente la seguridad de la red.
+  La integración del poder hash de Bitcoin con las apuestas de CORE y BTC hace que Core sea excepcionalmente resistente contra varios tipos de ataques. El alto costo de atacar un sistema híbrido de este tipo, combinado con el consenso distribuido logrado a través de mecanismos delegados, mejora significativamente la seguridad de la red.
 
 3. **Actualización y flexibilidad**
-   A diferencia de las cadenas de bloques tradicionales que se basan únicamente en una única forma de consenso, el modelo híbrido de Core permite adaptabilidad y actualización. Esta flexibilidad está diseñada para permitir que la red evolucione en respuesta a amenazas de seguridad emergentes o avances en la tecnología blockchain.
+  A diferencia de las cadenas de bloques tradicionales que se basan únicamente en una única forma de consenso, el modelo híbrido de Core permite adaptabilidad y actualización. Esta flexibilidad está diseñada para permitir que la red evolucione en respuesta a amenazas de seguridad emergentes o avances en la tecnología blockchain.
 
 ## Vectores de ataque y medidas de seguridad en el ecosistema central
 
