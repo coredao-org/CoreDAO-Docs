@@ -13,21 +13,21 @@ La blockchain Core évolue en permanence pour offrir une meilleure expérience a
 
 ## Configurations recommandées pour le déploiement de smart contracts sur Core
 
-Actuellement, l'EVM de Core correspond à la version **Shanghai** et ne prend pas en charge le déploiement et la vérification des contrats intelligents de la version **0.8.24^** avec les paramètres EVM par défaut. Afin que le retard dans la prise en charge du déploiement et de la vérification des contrats intelligents de la version 0.8.24^ ne freine pas le développement des dApps sur Core, voici les directives à suivre pour s'assurer que les développeurs peuvent déployer et vérifier avec succès les contrats intelligents de la version 0.8.24^ sur Core.
+Actuellement, l'EVM de Core correspond à la version **Shanghai** et ne prend pas en charge le déploiement et la vérification des contrats intelligents de la version **0.8.24^** avec les paramètres EVM par défaut. To make sure that the lag in support for deployment and verification of smart contracts of version 0.8.24^ does not stagger the development of dapps on the Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version `0.8.24^` on Core.
 
 ### Paramètres EVM
 
-Pour prendre en charge l’exécution de smart contracts avec Solidity version **0.8.24^**, les développeurs **_doivent_** choisir la version **Shanghai** de l’EVM, et **non** les versions EVM par défaut, afin de compiler et déployer leurs smart contracts.
+To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116), Testnet2 (1114) and Testnet (1115), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
 
-#### Hardhat
+#### Deployment Using Hardhat
 
-- Veuillez ajouter `evmVersion`: "shanghai" dans les configurations du compilateur Solidity.
+- Please add `evmVersion: "shanghai"` in solidity compiler configurations.
 
 ![hardhat-solidity-setting](../../static/img/solidity-support/hardhat-evm-setting.png)
 
-#### Remix
+#### Deployment Using Remix IDE
 
-- Veuillez sélectionner `shanghai` dans les configurations du compilateur.
+- Please choose `shanghai` in compiler configurations.
 
 ![remix-solidity-setting](../../static/img/solidity-support/remix-setting.png)
 
