@@ -13,21 +13,21 @@ Core blockchain evoluciona constantemente para brindar una mejor experiencia de 
 
 ## Configuraciones recomendadas para implementar contratos inteligentes en Core
 
-Actualmente, EVM de Core coincide con la versión **Shanghai** y no admite la implementación y verificación de contratos inteligentes de la versión **0.8.24^** con la configuración EVM predeterminada. Para asegurarse de que el retraso en el soporte para la implementación y verificación de contratos inteligentes de la versión 0.8.24^ no haga tambalearse el desarrollo de dapps en el Core, las siguientes son las pautas para garantizar que los desarrolladores puedan implementar y verificar con éxito los contratos inteligentes de la versión 0.8.24^ en el Núcleo.
+Actualmente, EVM de Core coincide con la versión **Shanghai** y no admite la implementación y verificación de contratos inteligentes de la versión **0.8.24^** con la configuración EVM predeterminada. To make sure that the lag in support for deployment and verification of smart contracts of version 0.8.24^ does not stagger the development of dapps on the Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version `0.8.24^` on Core.
 
 ### Configuración de EVM
 
-Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^** de Solidity, los desarrolladores **_deberían_** elegir la versión EVM **Shanghai** y **no** las versiones EVM predeterminadas para compilar e implementar los contratos inteligentes.
+To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116), Testnet2 (1114) and Testnet (1115), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
 
-#### Hardhat
+#### Deployment Using Hardhat
 
-- Agregue `evmVersion: "shanghai"` en las configuraciones del compilador de solidez.
+- Please add `evmVersion: "shanghai"` in solidity compiler configurations.
 
 ![configuración-de-solidez-del-casco](../../static/img/solidity-support/configuración-del-casco-evm.png)
 
-#### Remix
+#### Deployment Using Remix IDE
 
-- Elija `shanghai` en la configuración del compilador.
+- Please choose `shanghai` in compiler configurations.
 
 ![remix-solidity-setting](../../static/img/solidity-support/remix-setting.png)
 
