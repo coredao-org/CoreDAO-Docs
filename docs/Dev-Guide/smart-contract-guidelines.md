@@ -16,20 +16,59 @@ Currently, Core's EVM matches version **Shanghai** and does not support the depl
 
 ### EVM Settings
 
-To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116), Testnet2 (1114) and Testnet (1115), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
+To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116) and Testnet2 (1114), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
+
+However, for Core legacy Testnet (1115), the supported `evmVersion` _**should**_ be set to **Paris**.
 
 #### Deployment Using Hardhat
 
-* Please add `evmVersion: "shanghai"` in solidity compiler configurations.
+* For Core Mainnet and Testnet2, please add `evmVersion: "shanghai"` in solidity compiler configurations.
 
-![hardhat-solidity-setting](../../static/img/solidity-support/hardhat-evm-setting.png)
- 
+```
+solidity: {
+       compilers: [
+         {
+            version: '0.8.26',
+            settings: {
+               evmVersion: 'shanghai',
+               optimizer: {
+                  enabled: true,
+                  runs: 200,
+               },
+            },
+         },
+       ],
+    },
+```
+
+ * For Core Legacy Testnet (chainID: 1115), please add `evmVersion: "paris"` in solidity compiler configurations.
+```
+solidity: {
+       compilers: [
+         {
+            version: '0.8.26',
+            settings: {
+               evmVersion: 'paris',
+               optimizer: {
+                  enabled: true,
+                  runs: 200,
+               },
+            },
+         },
+       ],
+    },
+```
 
 #### Deployment Using Remix IDE
 
-* Please choose `shanghai` in compiler configurations.
+* For Core Mainnet and Testnet2, please choose `shanghai` in compiler configurations.
 
-![remix-solidity-setting](../../static/img/solidity-support/remix-setting.png)
+<img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
+
+
+* For Core Legacy Testnet1 (chainID: 1115), please choose `paris` in compiler configurations.
+
+<img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />
  
 ### Contract Verification
 
