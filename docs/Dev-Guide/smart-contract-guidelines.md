@@ -12,22 +12,22 @@ Core blockchain is constantly evolving to provide a better user and developer ex
 
 ## Recommended Configurations for Deploying Smart Contracts on Core 
 
-Currently, Core's EVM matches version **Shanghai** and does not support the deployment and verification of smart contracts of version **0.8.24^** with default EVM settings. To make sure that the lag in support for deployment and verification of smart contracts of version 0.8.24^ does not stagger the development of dapps on the Core, the following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version 0.8.24^ on Core.
+Currently, Core's EVM matches version **Shanghai** and does not support the deployment and verification of smart contracts of version **0.8.24^** with default EVM settings. To make sure that the lag in support for deployment and verification of smart contracts of version 0.8.24^ does not stagger the development of dapps on the Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version `0.8.24^` on Core.
 
 ### EVM Settings
 
-To support running smart contracts with Solidity version **0.8.24^**, developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
+To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116), Testnet2 (1114) and Testnet (1115), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
 
-#### Hardhat
+#### Deployment Using Hardhat
 
-* Please add `evmVersion: "shanghai"` in solidity comppiler configurations.
+* Please add `evmVersion: "shanghai"` in solidity compiler configurations.
 
 ![hardhat-solidity-setting](../../static/img/solidity-support/hardhat-evm-setting.png)
  
 
-#### Remix
+#### Deployment Using Remix IDE
 
-* Please choose `shanghai` in Compiler configuration.
+* Please choose `shanghai` in compiler configurations.
 
 ![remix-solidity-setting](../../static/img/solidity-support/remix-setting.png)
  
