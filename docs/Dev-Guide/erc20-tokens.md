@@ -36,9 +36,10 @@ OpenZeppelin provides secure, audited smart contract templates. The OpenZeppelin
    - **Token Name**: Enter the name of your token (e.g., `MyToken`).
    - **Token Symbol**: Enter the symbol for your token (e.g., `MTK`).
    - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
-   - **Decimals**: Set the number of decimal places for your token (usually 18).
 
-   Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
+![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
+
+Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
 
 4. **Copy the Code**: Once you've configured your contract, click the **Copy** button to get the Solidity code. You can either copy it to your clipboard or directly open it in Remix IDE.
 
@@ -52,6 +53,8 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - In Remix, create a new file by navigating to the **contracts** directory and clicking the **+** button.
    - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
 
+![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)
+
 3. **Install OpenZeppelin Contracts**:
    - If you're using Remix’s built-in **Solidity compiler**, it will automatically fetch OpenZeppelin contracts for you.
    - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
@@ -62,6 +65,9 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - In Remix IDE, go to the **Solidity Compiler** tab (the one with the Solidity logo).
    - Select the compiler version that matches your contract (for example, `0.8.24`).
    - Click **Compile** to compile your contract.
+
+![Remix_ERC20_Compile](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
+
 2. **Fix Any Errors**: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
 
 ## Step 4: Deploy the Contract on a Test Network
@@ -71,22 +77,32 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - Go to the **Deploy & Run Transactions** tab in Remix.
    - Under **Environment**, select **Injected Web3**. This will connect Remix to your MetaMask wallet.
 
-   Ensure that your MetaMask is connected to a **Core testnet**
+![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
+
+Ensure that your MetaMask is connected to a **Core testnet**
 
 2. **Deploy Your Contract**:
    - In the **Deploy** section, select the **ERC-20 contract** (e.g., `MyToken`).
-   - Make sure the correct account is selected in MetaMask, and your MetaMask is connected to the right test network.
+   - Please paste the `recipient address` for the tokens to be minted in Premint, as well as the `owner address` (note that in this case, both addresses are the same).
    - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
    - Once the contract is deployed, you’ll see the contract’s address in Remix.
+
+![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)
 
 ## Step 5: Interact with Your Contract
 
 Now that your contract is deployed, you can interact with it directly from Remix.
 
-1. **Mint Tokens**:
+1. **Check Balance**:
 
    - Under **Deployed Contracts**, you'll see your deployed contract.
-   - Expand the contract’s interface to interact with functions like `mint` (if you included minting functionality).
+   - Expand the contract’s interface to interact with functions like `balanceOf`, `mint` (if you included minting functionality).
+   - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
+
+![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)
+
+1. **Mint Tokens**:
+
    - Call the `mint` function to create new tokens. Provide the recipient address and the number of tokens to mint.
    - Confirm the transaction in MetaMask.
 
@@ -99,11 +115,13 @@ Now that your contract is deployed, you can interact with it directly from Remix
 
 You can add additional functions to your contract, such as:
 
-- **Burning Tokens**: A function to burn (destroy) tokens. For additional customization, you can refer to OpenZeppelin's ERC-20 documentation and add features like token burning, pausing, or allowances.
+- **Burning Tokens**: A function to burn (destroy) tokens.
+
+- **Roles**: Roles allow you to assign different permissions to addresses, such as minting or burning tokens, ensuring secure and controlled actions within the contract.
+
+- **Upgradability** : Enables you to upgrade the contract logic after deployment without losing data, ensuring flexibility for future improvements
 
 You can find more information on OpenZeppelin ERC-20 implementation [here](https://docs.openzeppelin.com/contracts/4.x/erc20).
-
----
 
 ## References:
 

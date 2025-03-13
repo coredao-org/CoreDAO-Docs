@@ -43,6 +43,10 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 
+:::note
+If you're using Testnet1, ensure that the EVM version is set to Paris
+:::
+
 - Then select the blue **Compile** button to compile your smart contract.
 
 - Then switch to the `DEPLOY & RUN TRANSACTIONS` from the same lefthand menu and select the **Deploy** button, outlined in red below.

@@ -25,6 +25,10 @@ To run smart contracts with Solidity version **0.8.24^**, developers **should** 
 
 - Please add `evmVersion: "shanghai"` in solidity comppiler configurations.
 
+:::note
+If you're using Testnet1, ensure that the `EVM version` is set to `Paris`
+:::
+
 ![hardhat-solidity-setting](../../static/img/solidity-support/hardhat-evm-setting.png)
 
 #### Remix
@@ -41,3 +45,5 @@ To run smart contracts with Solidity version **0.8.24^**, developers **should** 
 ### Smart Contracts Based on Solidity version < 0.8.24
 
 - **Note**: smart contracts with solidity version **\< 0.8.24** are unaffected and can operate as usual.
+
+- The legacy testnet (testnet1) supports the Paris EVM version and does not support newer versions like Shanghai and Cancun

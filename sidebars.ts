@@ -162,9 +162,17 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           label: "Wallet Configurations",
           items: [
-            "Dev-Guide/core-faucet",
             "Dev-Guide/core-testnet-wallet-config",
-            "Dev-Guide/core-mainnet-wallet-config",
+            {
+              type: "link",
+              label: "Configure Custom Tokens",
+              href: "https://support.metamask.io/manage-crypto/tokens/how-to-display-tokens-in-metamask/",
+            },
+            {
+              type: "link",
+              label: "Import Accounts",
+              href: "https://support.metamask.io/start/how-to-import-an-account/",
+            },
           ],
         },
         {
@@ -191,7 +199,11 @@ const sidebars: SidebarsConfig = {
             "Dev-Guide/remix",
             "Dev-Guide/hardhat",
             "Dev-Guide/contract-verify",
-            "Dev-Guide/dapp-on-core",
+            {
+              type: "link",
+              label: "Build dapp on Core",
+              href: "https://github.com/coredao-org/dapp-tutorial",
+            },
           ],
         },
         {
@@ -201,6 +213,12 @@ const sidebars: SidebarsConfig = {
           items: ["Dev-Guide/erc20-tokens", "Dev-Guide/erc721-tokens"],
         },
         {
+          type: "link",
+          label: "Switchboard VRF",
+          href: "https://docs.switchboard.xyz/product-documentation/randomness/tutorials/evm",
+        },
+        "Dev-Guide/core-subgraph",
+        {
           type: "category",
           collapsed: true,
           label: "Bridging with Core",
@@ -209,7 +227,6 @@ const sidebars: SidebarsConfig = {
             "Dev-Guide/core-bridge-resources",
           ],
         },
-        "Dev-Guide/core-subgraph",
       ],
     },
   ],
