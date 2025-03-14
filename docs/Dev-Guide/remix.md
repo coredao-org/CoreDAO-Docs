@@ -6,6 +6,7 @@ description: Deploy Contracts on Core using the Remix IDE
 ---
 
 # Using Remix
+
 ---
 
 Remix is a powerful online integrated development environment (IDE) for developers to build, test, deploy, and manage smart contracts. In this tutorial, we'll use the [Remix IDE](https://remix.ethereum.org/) to deploy a contract to Core Testnet.
@@ -32,27 +33,31 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 ## Smart Contract Compilation and Deployment
 
-* **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
+- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
 
-* Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
+- Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
 
 ![remix-ide](../../static/img/remix/remix-5.avif)
 
-* From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `Paris` from the `EVM Version` dropdown. 
+- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `shanghai` from the `EVM Version` dropdown.
 
-![evm-version](../../static/img/remix/remix-13.png)
+![evm-version](../../static/img/solidity-support/remix-setting.png)
 
-* Then select the blue **Compile** button to compile your smart contract.
+:::note
+If you're using Testnet1, ensure that the EVM version is set to Paris
+:::
 
-* Then switch to the `DEPLOY & RUN TRANSACTIONS` from the same lefthand menu and select the **Deploy** button, outlined in red below.
+- Then select the blue **Compile** button to compile your smart contract.
+
+- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the same lefthand menu and select the **Deploy** button, outlined in red below.
 
 ![remix-ide](../../static/img/remix/remix-6.avif)
 
-* After selecting the **Deploy** button, MetaMask will open a popup asking you to sign and then send the deployment transaction on Core Testnet, as seen below.
+- After selecting the **Deploy** button, MetaMask will open a popup asking you to sign and then send the deployment transaction on Core Testnet, as seen below.
 
 ![remix-ide](../../static/img/remix/remix-7.png)
 
-* Once the contract is successfully deployed, you should receive a message on the console.
+- Once the contract is successfully deployed, you should receive a message on the console.
 
 ![remix-ide](../../static/img/remix/remix-8.avif)
 
@@ -60,7 +65,7 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 Once your contract is deployed, you can use Remix to quickly and intuitively interact with it.
 
-Locate the newly deployed contract in the `Deployed Contracts` section located in the lower left. Let's test our contract by entering `100` into the `store` function's input field and selecting the orange **store** button. 
+Locate the newly deployed contract in the `Deployed Contracts` section located in the lower left. Let's test our contract by entering `100` into the `store` function's input field and selecting the orange **store** button.
 
 ![remix-ide](../../static/img/remix/remix-9.avif)
 
@@ -68,7 +73,7 @@ MetaMask will again ask us to sign and send the transaction.
 
 ![remix-ide](../../static/img/remix/remix-10.png)
 
-After successfully storing `100` in our smart contract, we can use the `retrieve`  function to read the value. Click the **retrieve** button to view the value and we should see the number `100` returned, as shown below in the blue box.
+After successfully storing `100` in our smart contract, we can use the `retrieve` function to read the value. Click the **retrieve** button to view the value and we should see the number `100` returned, as shown below in the blue box.
 
 You may have noticed that MetaMask did not pop up for the `retrieve` function call; this is because _transactions_ are only necessary for smart contract interactions that require gas, and reading data from a smart contract doesn't require any gas.
 
@@ -76,6 +81,9 @@ You may have noticed that MetaMask did not pop up for the `retrieve` function ca
 
 ## Core Scan
 
-Let's use [Core Scan](https://scan.test.btcs.network/) to check on our deployed contract. Copy the contract address from Remix and use it as the input for a search on Core Scan. You should find the smart contract along with some relevant information, plus a list of all historical contract interactions that includes our deployment transaction and our `store` transaction.
+Let's use [Core Scan](https://scan.test2.btcs.network/) to check on our deployed contract.
+
+- **Copy the contract address** from Remix and use it as the input for a search on Core Scan.
+- You should find the smart contract along with some relevant information, plus a list of all historical contract interactions that includes our deployment transaction and our `store` transaction.
 
 ![remix-ide](../../static/img/remix/remix-12.avif)

@@ -2,24 +2,28 @@
 sidebar_label: Contract Verification
 hide_table_of_contents: false
 sidebar_position: 2
+description: Learn how to verify a smart contract using Core scan
 ---
 
 # Contract Verification
+
 ---
 
-To promote transparency, it is considered best practice to verify all deployed contracts on the Core blockchain. While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. This document guides you through the most commonly used methods for contract verification: the Core Scan web tool, the Core REST API, and the Hardhat Verification plugin. 
+To promote transparency, it is considered best practice to verify all deployed contracts on the Core blockchain. While there are several ways to achieve contract verification, we recommend using Core's official verification tool, [Core Scan](https://scan.coredao.org/), for optimal reliability. This document guides you through the most commonly used methods for contract verification: the Core Scan web tool, the Core REST API, and the Hardhat Verification plugin.
 
 :::note
-Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris`  within the Solidity compiler settings.
+Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris` within the Solidity compiler settings.
 :::
 
 ## Web Verification via Core Scan
 
 Web verification is the most commonly used smart contract verification strategy. After deploying your smart contract onto Core blockchain, you can use its source code to verify it on the Core Scan.
 
-1. Navigate to Core Scan website. 
-  * [For Mainnet](https://scan.coredao.org/)
-  * [For Testnet](https://scan.test.btcs.network)
+1. Navigate to Core Scan website.
+
+- [For Mainnet](https://scan.coredao.org/)
+- [For Testnet](https://scan.test.btcs.network)
+
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
 
@@ -27,10 +31,10 @@ Web verification is the most commonly used smart contract verification strategy.
 
 4\. Fill in the required verification information on the page, specifically:
 
-* Contract address;
-* Compiler type: for simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, select the `Standard Json` compiler type;
-* Compiler version;
-* Open-source license type;
+- Contract address;
+- Compiler type: for simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, select the `Standard Json` compiler type;
+- Compiler version;
+- Open-source license type;
 
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 
@@ -64,84 +68,82 @@ Please note that you’ll need to add Core networks as custom chains, as seen be
 
 ```javascript
 /**
-* @type import('hardhat/config').HardhatUserConfig
-*/
+ * @type import('hardhat/config').HardhatUserConfig
+ */
 
-
-const { PrivateKey } = require('./secret.json');
-require('@nomiclabs/hardhat-ethers');
+const { PrivateKey } = require("./secret.json");
+require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-waffle");
 require("@nomicfoundation/hardhat-verify");
 
 module.exports = {
-  defaultNetwork: 'testnet',
+  defaultNetwork: "testnet",
 
   networks: {
-     hardhat: {
-     },
-     testnet: {
-        url: 'https://rpc.test.btcs.network',
-        accounts: [PrivateKey],
-        chainId: 1115,
-     },
-     mainnet: {
-       url: 'https://rpc.coredao.org',
-       accounts: [PrivateKey],
-       chainId: 1116,
+    hardhat: {},
+    testnet: {
+      url: "https://rpc.tes2.btcs.network",
+      accounts: [PrivateKey],
+      chainId: 1114,
+    },
+    mainnet: {
+      url: "https://rpc.coredao.org",
+      accounts: [PrivateKey],
+      chainId: 1116,
     },
   },
   etherscan: {
-   apiKey: {
-     testnet: "api key",
-     mainnet: "api key"
-   },
-   customChains: [
-     {
-       network: "testnet",
-       chainId: 1115,
-       urls: {
-         apiURL: "https://api.test.btcs.network/api",
-         browserURL: "https://scan.test.btcs.network/"
-       }
-     },
-     {
-       network: "mainnet",
-       chainId: 1116,
-       urls: {
-         apiURL: "https://openapi.coredao.org/api",
-         browserURL: "https://scan.coredao.org/"
-       }
-     }
-   ]
- },
- 
+    apiKey: {
+      testnet: "api key",
+      mainnet: "api key",
+    },
+    customChains: [
+      {
+        network: "testnet",
+        chainId: 1114,
+        urls: {
+          apiURL: "https://api.test2.btcs.network/api",
+          browserURL: "https://scan.test2.btcs.network/",
+        },
+      },
+      {
+        network: "mainnet",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org/",
+        },
+      },
+    ],
+  },
+
   solidity: {
-     compilers: [
-       {
-          version: '0.8.9',
-          settings: {
-             optimizer: {
-                enabled: false,
-                runs: 200,
-             },
+    compilers: [
+      {
+        version: "0.8.24",
+        settings: {
+          evmVersion: "shanghai",
+          optimizer: {
+            enabled: false,
+            runs: 200,
           },
-       }
-     ],
+        },
+      },
+    ],
   },
   paths: {
-     sources: './contracts',
-     cache: './cache',
-     artifacts: './artifacts',
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts",
   },
   mocha: {
-     timeout: 20000,
+    timeout: 20000,
   },
 };
-
 ```
 
 ## Known Limitations
 
-* Currently Core only supports solidity compiler versions up to 0.8.19.
-* Libraries are not supported using API verifications.
-* If you run into issues verifying very large (1000+ lines) single file contracts, we recommend switching to `Standard JSON` format for verification.
+- Currently Core only supports solidity compiler versions up to 0.8.24.
+- Libraries are not supported using API verifications.
+- If you run into issues verifying very large (1000+ lines) single file contracts, we recommend switching to `Standard JSON` format for verification.
