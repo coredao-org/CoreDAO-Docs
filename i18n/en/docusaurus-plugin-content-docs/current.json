@@ -7,26 +7,6 @@
     "message": "Core Scan OpenAPI",
     "description": "The label for category Core Scan OpenAPI in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.api-documents": {
-    "message": "api-documents",
-    "description": "The label for category api-documents in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.tutorials": {
-    "message": "tutorials",
-    "description": "The label for category tutorials in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics": {
-    "message": "Tutorial - Basics",
-    "description": "The label for category Tutorial - Basics in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Basics.link.generated-index.description": {
-    "message": "5 minutes to learn the most important Docusaurus concepts.",
-    "description": "The generated-index page description for category Tutorial - Basics in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Tutorial - Extras": {
-    "message": "Tutorial - Extras",
-    "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.CoreIgnition": {
     "message": "CoreIgnition",
     "description": "The label for category CoreIgnition in sidebar tutorialSidebar"
@@ -426,5 +406,45 @@
   "sidebar.apiSidebar.doc.Submit RedeemScript": {
     "message": "Submit RedeemScript",
     "description": "The label for the doc item Submit RedeemScript in sidebar apiSidebar, linking to the doc stakingAPI/testnet/submit-redeem-script-for-staking-transaction"
+  },
+  "sidebar.tutorialSidebar.category.lstBTC": {
+    "message": "lstBTC",
+    "description": "The label for category lstBTC in sidebar tutorialSidebar"
+  },
+  "sidebar.learnSidebar.category.lstBTC": {
+    "message": "lstBTC",
+    "description": "The label for category lstBTC in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Security": {
+    "message": "Security",
+    "description": "The label for category Security in sidebar learnSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.Dual Staking": {
+    "message": "Dual Staking",
+    "description": "The label for category Dual Staking in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.apiSidebar.category.Staking API.link.generated-index.title": {
+    "message": "Staking API Documentation",
+    "description": "The generated-index page title for category Staking API in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Staking API.link.generated-index.description": {
+    "message": "Explore the various Staking API endpoint for Core Mainnet and Testnet2",
+    "description": "The generated-index page description for category Staking API in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 Mainnet API Endpoints.link.generated-index.title": {
+    "message": "Staking API Documentation",
+    "description": "The generated-index page title for category 📑 Mainnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 Mainnet API Endpoints.link.generated-index.description": {
+    "message": "Explore the various Staking API Endpoints for Core Mainnet",
+    "description": "The generated-index page description for category 📑 Mainnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 Testnet API Endpoints.link.generated-index.title": {
+    "message": "Staking API Documentation",
+    "description": "The generated-index page title for category 📑 Testnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.📑 Testnet API Endpoints.link.generated-index.description": {
+    "message": "Explore the various Staking API Endpoints for Core Testnet2",
+    "description": "The generated-index page description for category 📑 Testnet API Endpoints in sidebar apiSidebar"
   }
 }

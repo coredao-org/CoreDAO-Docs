@@ -5,17 +5,14 @@ sidebar_position: 2
 description: Guidelines for Solidity Support for Developing Smart Contracts on Core
 ---
 
-# Guidelines for Smart Contract Development on Core
-
+# Guidelines for Smart Contract Development on Core 
 ---
 
-Core blockchain is always improving to provide a better experience for both users and developers. This guide outlines the supported Solidity versions and configuration settings needed for successful smart contract deployment and verification on the Core network.
+Core blockchain is constantly evolving to provide a better user and developer experience. This document provides clear instructions for developers on the supported Solidity versions and the necessary settings to ensure your smart contracts are correctly deployed and verifiable on the Core network. To maintain consistency and compatibility, Core blockchain supports Solidity versions higher than **0.8.24** using the **Shanghai** EVM version. Adhering to this specified version and configuration guidelines is crucial for the seamless functioning of your contracts. The following sections will detail the recommended Solidity settings, including compiler options and verification procedures, to help you achieve a smooth and secure contract deployment on the Core blockchain.
 
-Core blockchain supports Solidity versions higher than 0.8.24 using the **Shanghai** EVM version. It is important to follow these guidelines to ensure your smart contracts work smoothly on the Core network.
+## Recommended Configurations for Deploying Smart Contracts on Core 
 
-## Recommended Configurations for Deploying Smart Contracts on Core
-
-Currently, Core's EVM matches the Shanghai version and does not support the deployment or verification of smart contracts with Solidity version **0.8.24^** using default EVM settings. follow these guidelines to deploy and verify contracts with Solidity version 0.8.24^.
+Currently, Core's EVM matches version **Shanghai** and does not support the verification of smart contracts deployed with Solidity version **0.8.24^** with default EVM settings for popular IDEs. To make sure that the lag in support for deployment and verification of smart contracts of version `0.8.24^` does not stagger the development of dapps on Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version `0.8.24^` on Core.
 
 ### EVM Settings
 
@@ -25,11 +22,10 @@ However, for Core legacy Testnet (1115), the supported `evmVersion` _**should**_
 
 #### Deployment Using Hardhat
 
-- For Core Mainnet and Testnet2, please add `evmVersion: "shanghai"` in solidity compiler configurations.
-
+* For Core Mainnet and Testnet2, please add `evmVersion: "shanghai"` in solidity compiler configurations.
 
 ```
-javascript: {
+solidity: {
        compilers: [
          {
             version: '0.8.26',
@@ -45,9 +41,9 @@ javascript: {
     },
 ```
 
-- For Core Legacy Testnet (chainID: 1115), please add `evmVersion: "paris"` in solidity compiler configurations.
+ * For Core Legacy Testnet (chainID: 1115), please add `evmVersion: "paris"` in solidity compiler configurations.
 ```
-javascript: {
+solidity: {
        compilers: [
          {
             version: '0.8.26',
@@ -65,14 +61,12 @@ javascript: {
 
 #### Deployment Using Remix IDE
 
-
 * For Core Mainnet and Testnet2, please choose `shanghai` in compiler configurations.
 
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
 
 
 * For Core Legacy Testnet1 (chainID: 1115), please choose `paris` in compiler configurations.
-
 
 <img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />
  
@@ -84,8 +78,6 @@ javascript: {
 
 <img width="710" alt="image" src="https://github.com/user-attachments/assets/8f2b61f2-72c2-4607-8f64-9e1d1c19960b" />
 
-
 ### Smart Contracts Based on Solidity version < 0.8.24
 
-- **Note**: smart contracts with solidity version **\< 0.8.24** are unaffected and can operate as usual.
-- The legacy testnet (testnet1) supports the Paris EVM version and does not support newer versions like Shanghai and Cancun
+* **Note**: smart contracts with solidity version **\< 0.8.24** are unaffected and can operate as usual.

@@ -1,15 +1,17 @@
 ---
-sidebar_label: Delegating Hash-Rate
+sidebar_label: Delegating Hash Power
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating Hash
+# Delegating Hash Power
 ---
 
 Using their public and private keys, BTC miners can delegate their hash power to a Core validator or delegate to themselves if they choose to run a validator by verifying and syncing their identity (addresses) on both the BTC and Core blockchains. When relayers submit transactions, they sync the blocks mined by the BTC miner with the Core Network. Every round, the Core network calculates the BTC hash power associated with each validator by counting the number of blocks produced by each miner in the BTC network during the same day of the prior week. The architecture of the mapping-chain communication is illustrated in the diagram below. By delegating BTC hash power to Validators, BTC miners can help secure the network and share in system rewards.
 
-![delegate-hash](../../static/img/delegate/miner-power-relaying.png)
+<p align="center">
+![delegate-hash](../../static/img/staoshi-plus/DPoW.png)
+</p>
 
 ## Set Up Process for Miners
 

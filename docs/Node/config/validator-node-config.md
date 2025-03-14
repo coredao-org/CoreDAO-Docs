@@ -1,45 +1,67 @@
 ---
-sidebar_label: Validator Node Configuration
+sidebar_label: Validator Node 
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validator Node Configuration
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Validator Nodes on Core
 ---
+
 Validators are crucial for securing the network by producing blocks and validating transactions within the Core’s Satoshi Plus consensus framework.
 
 ## System Requirements
 
-There are several system requirements, both software and hardware, for setting up a validator node on the Core network.
+There are several system requirements, both software and hardware, for setting up a Validator Node on the Core network.
 
 ### Software
 
-* Currently, a Core Validator Node can only run on **Mac OS X** or on the **Linux** operating systems.
+* **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+* **Network Connectivity:** Stable internet connection with low latency and high availability
+* **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Hardware
 
-Core nodes perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Each type of Core node has specific hardware requirements based on their expected needs.
+A Validator Node on Core participates in block production and transaction validation, ensuring network security and consensus. Validators are elected based on their hybrid score (delegated Bitcoin hash power, CORE staking, and Bitcoin staking) and take turns producing blocks. They play a critical role in maintaining blockchain integrity and earning rewards for securing the network. Following are the hardware requirements for running Validator Nodes on Core.
 
-#### Testnet Validator Node Hardware Specifications
+<Tabs
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For Validator Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-For Validator Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
+    | **RAM**            | 8 Gigabytes                                                                                             |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
 
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU            | 4 CPU cores                                                                                             |
-| RAM            | 8 Gigabytes                                                                                             |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+  </TabItem>
+  <TabItem value="testnet">
+    For Validator Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
+    | **RAM**            | 8 Gigabytes                                                                                             |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+  </TabItem>
+  <TabItem value="mainnet">
+   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-#### Mainnet Validator Node Hardware Specifications
-
-For Validator Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
-
-
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| CPU            | 8 CPU cores                                                                                             |
-| RAM            | 32 Gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
+    | **RAM**            | 32 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+  </TabItem>
+</Tabs>

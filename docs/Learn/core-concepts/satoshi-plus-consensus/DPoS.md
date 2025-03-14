@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Leveraging DPoS in Satoshi Plus
 ---
 
-# Delegated Proof of Stake (DPoS)
+# Delegated Proof of Stake (DPoS) in Satoshi Plus
 ---
 
 ## Overview
@@ -26,16 +26,15 @@ DPoS operates by allowing CORE token holders to actively participate in the netw
 
 ## Step by Step Process
 
-1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). If users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked. 
+1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). Note, if users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked. 
 
-
-2. **Delegating to Validators:** Token holders delegate their staked CORE/BTC tokens to a chosen validator, assisting their hybrid score in the validator election process.
+2. **Delegating to Validators:** Token holders delegate their staked CORE or BTC to a Core Validators of their choice, assisting their hybrid score in the validator election process.
 
 3. **Validator Election:** Validators with the highest hybrid score, which includes delegated CORE, are elected to the validator set for a given round.
 
 4. **Producing Blocks:** Elected validators are responsible for producing blocks and validating transactions during their term, thereby earning rewards.
 
-5. **Earning Rewards:** CORE and BTC stakers earn rewards from the validators to whom they delegated.
+5. **Earning Rewards:** CORE and BTC stakers earn rewards in the form of CORE tokens from the validators to whom they delegated.
 
 
 ## Importance of DPoS in Satoshi Plus

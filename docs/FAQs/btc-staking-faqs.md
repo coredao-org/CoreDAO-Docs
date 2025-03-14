@@ -13,7 +13,7 @@ Core provides Bitcoin holders with a risk-free and transparent opportunity to lo
 
 ### 2\. How does Non-Custodial Bitcoin Staking work?
 
-With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. For more details on how Non-Custodial Bitcoin Staking works, refer [here](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+With the non-custodial bitcoin staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. Core's methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a particular point in time has passed. For more details on how Non-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/btc-staking-working.md).
 
 ### 3\. What are the advantages of Non-Custodial Bitcoin Staking?
 

@@ -44,7 +44,7 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 | RAM                   | 8 Gigabytes                                                                       |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/Full-Node/on-testnet.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos](../Node/Full-Node/on-testnet.md)
 
 **Especificaciones de hardware del nodo completo de Mainnet**
 

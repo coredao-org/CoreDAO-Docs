@@ -1,5 +1,5 @@
 ---
-sidebar_label: Design
+sidebar_label: Transaction Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -11,7 +11,9 @@ sidebar_position: 2
 
 The methodology for integrating Bitcoin staking centers on [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). The `OP_CHECKLOCKTIMEVERIFY` (CLTV) timelock is a specific opcode used in Bitcoin's scripting language that allows for creating conditions based on time or block height before bitcoins can be spent from a transaction output. This provides a way to create outputs that are time-locked, meaning they cannot be spent until a certain condition related to time or block height is met. 
 
-![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(5).png)
+<p align="center">
+![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
+</p>
 
 ### Requirements for Transaction Validity {#requirements-for-transaction-validity}
 
@@ -27,7 +29,7 @@ The methodology for integrating Bitcoin staking centers on [CLTV timelock](https
 Non-Custodial Bitcoin Staking operations are conducted on two separate blockchains: Bitcoin and Core. The following flowchart illustrates the workflow for Bitcoin holders to earn staking rewards through Core’s Non-Custodial Bitcoin Staking. 
 
 <p align="center">
-![btc-staking-flow](../../../../static/img/btc-staking/NCBS%20Workflow.png)
+![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-workflow.png)
 </p>
 
 
@@ -44,7 +46,7 @@ A Bitcoin staking transaction should have two/three outputs, which are
 Note that there are **no** restrictions on inputs.
 
 <p align="center">
-![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(1).png)
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-flow.png)
 </p>
 
 ### Withdrawal transaction
@@ -52,7 +54,7 @@ Note that there are **no** restrictions on inputs.
 The locked UTXO (Bitcoins) can be spent using the redeem script when the time-lock ends.
 
 <p align="center">
-![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(2).png)
+![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
 </p>
 
 ## Script Design

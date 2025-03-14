@@ -17,7 +17,9 @@ Le composant de Staking Non-Custodial de Bitcoin de Satoshi Plus est le premier 
 
 En outre, Satoshi Plus bénéficie actuellement de la sécurité de ~55 % des efforts de minage de Bitcoin, manifestés sous forme de puissance de hachage déléguée. En impliquant les mineurs et les pools de minage dans le processus d'élection des validateurs, Satoshi Plus profite de la décentralisation inégalée de Bitcoin tout en offrant aux mineurs des récompenses supplémentaires sans coûts supplémentaires, une proposition précieuse alors que les récompenses de blocs de Bitcoin continuent de diminuer.
 
-![component-diagram](../../../../../../static/img/staoshi-plus/component-diagram.jpg)
+<p align="center">
+![component-diagram](../../../../../../static/img/Core-Architecture.png)
+</p>
 
 ## Principaux composants, rôles et déroulement
 
