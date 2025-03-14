@@ -1,11 +1,11 @@
 ---
-sidebar_label: Security
+sidebar_label: Security Model
 hide_table_of_contents: false
 sidebar_position: 2
 description: Learn about Core's Security Model
 ---
 
-# Core Security
+# Security Model of Core
 ---
 
 ## Overview
@@ -75,8 +75,7 @@ Core employs a robust security architecture to mitigate potential threats, integ
 - **Description:** Vulnerabilities in smart contract code can be exploited to conduct thefts or manipulate services.
 - **Mitigation Achieved By:**
   - **Code Audits and Security Reviews:** Regular and thorough audits of smart contract code by independent security firms help identify and rectify potential vulnerabilities.
-  - **Bug Bounty Programs:** Encouraging the community and security researchers to find and report bugs, so that many potential exploits are caught early by offering rewards for their discovery.
-
+  - **Bug Reporting:** Encouraging the community and security researchers to find and report bugs, so that many potential exploits are caught early.
 
 ## Conclusion
 Core's security strategy is deeply integrated with its unique consensus mechanism, Satoshi Plus, which leverages the strengths of both Bitcoin's mining capabilities and the staking mechanisms prevalent in modern blockchains. Furthermore, Core's security strategy is multi-faceted, addressing potential vulnerabilities through technical safeguards, economic incentives, and community-driven processes. This comprehensive approach not only enhances the resilience of the network against attacks but also fosters a robust ecosystem where stakeholders are motivated to maintain and protect the network's integrity. As Core continues to develop and integrate new features, its foundational focus on security remains a critical component in its design and operation, so that it remains a secure and trustworthy platform for users and developers alike.

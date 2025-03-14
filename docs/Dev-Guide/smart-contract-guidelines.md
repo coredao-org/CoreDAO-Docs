@@ -81,4 +81,3 @@ solidity: {
 ### Smart Contracts Based on Solidity version < 0.8.24
 
 * **Note**: smart contracts with solidity version **\< 0.8.24** are unaffected and can operate as usual.
-

@@ -11,13 +11,18 @@ description: Apprendre sur les éléments principaux du mécanisme de Satoshi Pl
 
 Le mécanisme de consensus Satoshi Plus représente une innovation révolutionnaire dans la technologie de la blockchain, spécifiquement développé pour la plateforme Core afin de combiner de manière synergique la sécurité robuste du bitcoin avec la flexibilité et l'évolutivité des smart contrats. Ce modèle de consensus hybride fusionne la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS) et le Staking de Bitcoin non-custodial. Cela permet aux mineurs de Bitcoin de participer directement à la gouvernance et à la sécurité de la plateforme décentralisée des smart contrats, sans coût supplémentaire. En s’appuyant sur l’infrastructure déjà en place du minage de Bitcoin, Satoshi Plus apporte non seulement une couche supplémentaire au protocole de sécurité, mais renforce également les structures d’incitation dans les deux écosystèmes, assurant un alignement équilibré des intérêts pour toutes les parties prenantes impliquées dans la blockchain Core.
 
-![satoshi-plus](https://github.com/user-attachments/assets/8e90becb-71c2-4798-813c-27bcf6e1badb)
+<p align="center">
+![satoshi-plus](../../../../../../../static/img/staoshi-plus/Satoshi-Plus-Components.png)
+</p>
+
 
 ## Composants majeurs du mécanisme Satoshi Plus
 
 Le mécanisme de consensus Satoshi Plus, conçu pour la blockchain Core, intègre intelligemment à la fois la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS) et le Staking de Bitcoin Non-Custodial. Ce système hybride est conçu pour exploiter les points forts de l’infrastructure du minage de Bitcoin déjà existante tout en intégrant de la flexibilité au mécanisme de staking qui prévalent dans de nombreuses blockchains modernes. Ci-dessous les différents composants, leurs rôles et comment ils interagissent afin de maintenir la sécurité et l’efficacité du réseau. Ci-dessous un diagramme illustrant comment les composants majeurs du mécanisme de consensus Satoshi Plus s’assemblent permettant un écosystème sécurisé et solide.
 
-![component-diagram](../../../../../../../static/img/staoshi-plus/component-diagram.jpg)
+<p align="center">
+![component-diagram](../../../../../../../static/img/Core-Architecture.png)
+</p>
 
 ### 1. **Preuve de travail déléguée (DPoW)**
 

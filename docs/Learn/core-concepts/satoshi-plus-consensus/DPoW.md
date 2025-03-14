@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Leveraging DPoW in Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW) in the Satoshi Plus Consensus Mechanism
+# Delegated Proof of Work (DPoW) in Satoshi Plus
 ---
 
 ## Overview
@@ -14,7 +14,9 @@ Delegated Proof of Work (DPoW) is a crucial element of Core's Satoshi Plus conse
 
 DPoW enables Bitcoin miners to earn a second block reward on top of their Bitcoin rewards while securing the Core blockchain, creating a symbiotic relationship that benefits both networks. 
 
-![dpow-core-architechture](../../../../static/img/staoshi-plus/dpow.jpg)
+<p align="center">
+![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
+</p>
 
 ## How DPoW Works in Satoshi Plus
 
@@ -26,7 +28,7 @@ On the Bitcoin network, Bitcoin miners generate hash power to secure the Bitcoin
 
 3. **Validator Support**: By including this information, miners delegate their computational power to Validators on Core. These Validators use the delegated power to participate in the Core blockchain's version of block validation and creation.
 
-4. **Relayers**: Relayers are responsible for monitoring the Bitcoin network and transmitting blocks and transaction data to the Core network. Within the Core network, an on-chain embedded BTC light client processes the incoming data from relayers and forwards the delegation information (including hash power and Non custodial staking) to the "Delegation Hub." The Delegation Hub serves as the central component responsible for managing and overseeing delegations within the Core network.  During a 1-day round, the Core network calculates the DPoW for each validator by counting the number of blocks the miners delegated to each validator _one week prior_. If the round occurs on a Thursday, for example, Core will tabulate the hash power delegated to each validator by counting blocks from _last_ Thursday.
+4. **Relayers**: Relayers are responsible for monitoring the Bitcoin network and transmitting blocks and transaction data to the Core network. Within the Core network, an on-chain embedded BTC light client processes the incoming data from relayers and forwards the delegation information (including hash power and Non custodial staking) to the "Delegation Hub". The Delegation Hub serves as the central component responsible for managing and overseeing delegations within the Core network.  During a 1-day round, the Core network calculates the DPoW for each validator by counting the number of blocks the miners delegated to each validator _one week prior_. If the round occurs on a Thursday, for example, Core will tabulate the hash power delegated to each validator by counting blocks from _last_ Thursday.
 
 5. **Reward Mechanism**: In return for their contribution, miners receive additional rewards in the form of CORE tokens, on top of the usual Bitcoin mining rewards. This dual-reward system incentivizes miners to participate in the DPoW process without needing to divert resources away from Bitcoin mining.
 

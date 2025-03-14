@@ -5,13 +5,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Creating an Account
+# Creating an Account on Core Scan
 
-Having a Core Scan account allows you to use sign-in only features and tools such as Address Watch List, Txn Private Notes, Token Ignore List and your very own API keys 🗝.
+Having a Core Scan account allows you to use sign-in only features and tools such as Address Watch List, Txn Private Notes, Token Ignore List and your very own API keys.
 
-> Note that creating a Core Scan account is only linked to Core Scan's block explorer services, it is not the same as creating a [CORE blockchain address](https://info.etherscan.com/what-is-an-ethereum-address/) 💡
-
-***
+Note that creating a Core Scan account is only linked to Core Scan's block explorer services, it is not the same as creating a [CORE blockchain address](https://info.etherscan.com/what-is-an-ethereum-address/).
 
 ## Register an Account
 
@@ -21,7 +19,7 @@ Head over to the [Account Registration](https://scan.coredao.org/register) page 
 
 ## Verify Your Email
 
-A confirmation link 🔗 will be sent to your email address to verify your sign up request. Once you've clicked on the link, your account set-up process is complete and you may start to use your account-specific features ! 🎉
+A confirmation link will be sent to your email address to verify your sign up request. Once you've clicked on the link, your account set-up process is complete and you may start to use your account-specific features !
 
 ## Using Your Account
 

@@ -43,7 +43,7 @@ A Core full node stores the entire history of the Core blockchain, enabling anyo
 | RAM | 8 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 **Mainnet Full Node Hardware Specifications**
 
@@ -54,7 +54,7 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on
 | RAM | 32 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. What is a Core RPC Node? What are the hardware/software requirements for running a Core RPC node?
 
@@ -110,4 +110,4 @@ For more details, refer to [Validator Node Confgiurations Guide](../Node/config/
 
 ### 6. How do I set up a full node on Core blockchain?
 
-Refer to the detailed guide [here](../Node/Full-Node/on-mainnet.md) on how to set up and run a full node on the Core network.
+Refer to the detailed guide [here](../Node/config/full-node.md) on how to set up and run a full node on the Core network.

@@ -1,10 +1,10 @@
 ---
-sidebar_label: Overview
+sidebar_label: Validators on the Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Overview of Validators
+# Validators on the Core Network
 ---
 
 In the Core ecosystem, validators are crucial participants who maintain the integrity, security, and continuity of the blockchain. They are responsible for processing transactions, creating new blocks, and participating in the consensus process. This role is pivotal in ensuring that the Core blockchain operates efficiently and remains decentralized.
@@ -28,7 +28,9 @@ Validators are required to share rewards with the delegators who staked CORE or 
 
 **_Note that the settlements for rewards is done on daily basis, i.e. a round, instead of per block._**
 
-![validator-reward-distribution](../../../static/img/validator/Reward-Distribution.png)
+<p align="center">
+![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png) 
+</p>
 
 Let us assume that the base reward for a round is **3000 CORE** and that a certain validator sets its commission rate to **20%**. These tokens do not go directly to the proposer. Instead, they are shared among validators and delegators. These **3000 CORE** will be distributed according to each participant's stake. Assume that the fees generated from all transactions in all the blocks in a round was **100 CORE**.
 

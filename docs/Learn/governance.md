@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Governance on the Core Blockchain
+# Governance on Core
 ---
 
 Core's governance system is designed to uphold the decentralization and reliability of the Core network. It empowers the community to actively participate in decision-making processes that shape the ecosystem's future, from protocol changes to feature implementations and more. This section outlines the governance structure underlying Core.

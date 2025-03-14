@@ -13,7 +13,9 @@ L'écosystème Core est conçu pour inciter à la participation et sécuriser l'
 
 ## Types de récompenses
 
-![rewards](../../../../../../../static/img/validator/Reward-Distribution.png)
+<p align="center">
+![rewards](../../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
+</p>
 
 ### 1. Récompenses de minage
 

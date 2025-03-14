@@ -16,7 +16,7 @@ Slashing penalties are generally incurred because a node fails to successfully p
 * If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set. 
 
 ## Double Sign
-Anyone can submit a slash request on CoreChain with the evidence of Double Sign of CoreChain.
+Anyone can submit a slash request on Core blockchain with the evidence of Double Sign activity on Core.
 
 ### Evidence Validation
 * Two block headers have the same height and the same parent block hash
@@ -25,7 +25,7 @@ Anyone can submit a slash request on CoreChain with the evidence of Double Sign 
 * The validator should be in the set of current round’s validators.
 
 If the evidence is valid:
-1. **1,000 CORE** would be slashed from the self-margined CORE of the validator
+1. **1,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
 2. The slashed validator would be jailed and barred from the network forever
 3. **500** of slashed CORE would be allocated to the submitter as a reward
 4. The rest of slashed CORE will transfer into System Reward Pool

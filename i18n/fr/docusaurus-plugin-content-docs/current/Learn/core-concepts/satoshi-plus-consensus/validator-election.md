@@ -136,6 +136,6 @@ Ces fonctions de répartition des récompenses sont conçues pour créer un marc
 
 Le diagramme suivant représente visuellement le processus d'élection des validateurs dans Satoshi Plus:
 
-![validator-election-flow](../../../../../../../static/img/staoshi-plus/validator-election-flow.png)
+![validator-election-flow](../../../../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
 
 Ce diagramme illustre le processus cyclique de l'élection des validateurs et leurs responsabilités continues au sein du mécanisme Satoshi Plus. Il met en évidence la manière dont les délégations de staking et de puissance de hachage influencent directement la sélection des validateurs, la production des blocs et la distribution des récompenses, favorisant un réseau sécurisé, décentralisé et géré de manière efficace.

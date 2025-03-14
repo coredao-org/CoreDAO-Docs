@@ -1,19 +1,23 @@
 ---
-sidebar_label: Using Core RPC with Postman
+sidebar_label: Postman
 hide_table_of_contents: false
 sidebar_position: 2
+description: "Learn how to Interact with Core using Postman"
 ---
 
 # Core RPCs Through Postman
+
 ---
 
 ## What is Postman
-[Postman](https://www.postman.com/) is a popular software offering that makes it easy to create and use APIs. 
 
-In this document, we'll cover the very basics of hitting an RPC endpoint with Postman. Is it not intended to be (or to replace) a full, end-to-end tutorial, but rather to offer an introduction to the subject. 
+[Postman](https://www.postman.com/) is a popular software offering that makes it easy to create and use APIs.
+
+In this document, we'll cover the very basics of hitting an RPC endpoint with Postman. Is it not intended to be (or to replace) a full, end-to-end tutorial, but rather to offer an introduction to the subject.
 
 ## Working with CORE RPCs Through Postman
-1. First, you'll need to sign up with an account. Postman makes this very easy to do by manually entering your account details or with a gmail address. 
+
+1. First, you'll need to sign up with an account. Postman makes this very easy to do by manually entering your account details or with a gmail address.
 
 ![sign-up-postman](../../static/img/rpc/postman/rpc-psotman-1.png)
 
@@ -25,7 +29,7 @@ In this document, we'll cover the very basics of hitting an RPC endpoint with Po
 
 ![new-http-workspace-postman](../../static/img/rpc/postman/rpc-psotman-3.png)
 
-4. This will take you to a basic workstation, where you can structure your RPC query and get a response back. 
+4. This will take you to a basic workstation, where you can structure your RPC query and get a response back.
 
 ![new-workspace-postman](../../static/img/rpc/postman/rpc-psotman-4.png)
 
@@ -41,11 +45,9 @@ curl -H "Content-Type: application/json" \
      --data '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0xc9c4a5d14857ace0db197c7393806868824763377f802645aacf6f38d9c309b7"],"id":1}' \
      --url 'https://rpc.ankr.com/core'
 ```
+
 ![set-boy-postman](../../static/img/rpc/postman/rpc-psotman-6.png)
 
 7. Once the `Send` button is hit, you'll get back a response in JSON with all the information we wanted about the transaction whose hash we passed in the request.
 
 ![response-postman](../../static/img/rpc/postman/rpc-psotman-7.png)
-
-
-
