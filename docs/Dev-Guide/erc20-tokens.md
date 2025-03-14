@@ -21,8 +21,6 @@ Before starting, you’ll need:
 - A basic understanding of **Solidity** (though we will guide you through the whole process).
 - Access to **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
 
----
-
 ## Step 1: Use OpenZeppelin Wizard to Generate Your ERC-20 Contract
 
 ### Why Use OpenZeppelin Wizard?

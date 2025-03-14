@@ -8,8 +8,6 @@ sidebar_position: 2
 
 ---
 
-Core mainnet and testnet chain details
-
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
@@ -19,7 +17,9 @@ import TabItem from '@theme/TabItem';
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 <TabItem value="testnet2">
-_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+:::info
+This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+:::
 
 | **Parameter**          | **Value**                              |
 | ---------------------- | -------------------------------------- |
@@ -32,7 +32,9 @@ _Note: This is the latest testnet and is strongly recommended for use. The previ
 
 </TabItem>
 <TabItem value="testnet1">
-_Note: Testnet1 will be deprecated and eventually retired, so transitioning to testnet2 ensures continued support and access to the latest features._
+:::danger
+Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
+:::
 
 | **Parameter**          | **Value**                             |
 | ---------------------- | ------------------------------------- |

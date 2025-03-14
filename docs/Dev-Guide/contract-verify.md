@@ -27,7 +27,9 @@ Web verification is the most commonly used smart contract verification strategy.
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
 
+<p align="center">
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
+</p>
 
 4\. Fill in the required verification information on the page, specifically:
 
@@ -36,7 +38,9 @@ Web verification is the most commonly used smart contract verification strategy.
 - Compiler version;
 - Open-source license type;
 
+<p align="center">
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
+</p>
 
 5\. On the next page, fill in the contract's Solidity source code.
 
@@ -44,15 +48,21 @@ If your contract has constructor parameters, it is recommended to specify them i
 
 If you enabled optimization during contract compilation, select "Yes" for the `Optimization` field.
 
+<p align="center">
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
+</p>
 
 6\. Click on **Verify and Publish** to finish the process.
 
+<p align="center">
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
+</p>
 
 Now your verified contract on Core Scan should look like this:
 
+<p align="center">
 ![verify-contract](../../static/img/contract-verification/contract-verify-5.avif)
+</p>
 
 ## Core REST API Verification
 

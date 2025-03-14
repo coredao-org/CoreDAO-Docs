@@ -167,7 +167,7 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "devGuideSidebar",
           position: "left",
-          label: "Build on Core",
+          label: "Build",
           activeBaseRegex: `/docs/`,
         },
         {

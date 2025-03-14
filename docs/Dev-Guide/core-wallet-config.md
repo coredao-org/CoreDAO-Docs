@@ -47,7 +47,10 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core by ad
 - **Faucet:** https://scan.test2.btcs.network/faucet
 - **Staking Website:** https://stake.test2.btcs.network/
 
+
+<p align="center" style={{zoom:"60%"}}>
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
+</p>
 
 </TabItem>
 <TabItem value="testnet1">
@@ -88,11 +91,15 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core by ad
 
 2. Double check to make sure to choose the right network. Please check the details in the above snapshots — Chain ID, Currency etc. to ensure you will add the correct one.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist_testnet2.png)
+</p>
 
 3. Click on _Connect Wallet_ and then choose MetaMask. Allow to connect to MetaMask wallet by confirming the MetaMask notifications.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
+</p>
 
 4. Add Core testnet2 by clicking the `Approve` button.
 
@@ -105,11 +112,15 @@ The Core Testnet is now added to your MetaMask.
 
 2. Double check to make sure to choose the right network. Please check the details in the below snapshots — Chain ID, Currency etc. to ensure you will add the correct one.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist_testnet1.png)
+</p>
 
 3. Click on _Connect Wallet_ and then choose MetaMask. Allow to connect to MetaMask wallet by confirming the MetaMask notifications.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
+</p>
 
 4. Add Core testnet by clicking the `Approve` button.
 
@@ -123,11 +134,15 @@ The Core Testnet is now added to your MetaMask.
 
 2. Double check to make sure to choose the right network. Please check the details in the below snapshots — Chain ID, Currency etc. to ensure you will add the correct one.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/miannet-wallet-config/chainlist_mainnet.png)
+</p>
 
 3. Click on _Connect Wallet_ and then choose MetaMask. Allow to connect to MetaMask wallet by confirming the MetaMask notifications.
 
+<p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
+</p>
 
 4. Add Core Mainnet by clicking the `Approve` button.
 
@@ -148,7 +163,9 @@ The Core Mainnet is now added to your MetaMask.
 <TabItem value="testnet2">
 1. Go to https://scan.test2.btcs.network/ and scroll all the way down on the page
 
+<p align="center" style={{zoom:"60%"}}>
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
+</p>
 
 2. Click the ‘_Add Core Network_’ button
 
@@ -161,7 +178,9 @@ The Core Mainnet is now added to your MetaMask.
 <TabItem value="testnet1">
 1. Go to https://scan.test.btcs.network/ and scroll all the way down on the page
 
+<p align="center" style={{zoom:"60%"}}>
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
+</p>
 
 2. Click the ‘_Add Core Network_’ button
 
@@ -175,7 +194,9 @@ The Core Mainnet is now added to your MetaMask.
 
 1. Go to https://scan.coredao.org/ and scroll all the way down on the page
 
+<p align="center" style={{zoom:"60%"}}>
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-9.webp)
+</p>
 
 2. Click the ‘_Add Core Network_’ button
 
@@ -189,31 +210,14 @@ The Core Mainnet is now added to your MetaMask.
 
 :::info
 
-#### New Testnet
+#### Latest Core Testnet (1114)
 
 Core's new testnet with `chainID 1114` is now live and recommended for use. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). The old testnet will soon be deprecated and eventually retired, so switch to the new testnet to access the latest features.
 :::
 
-:::note
+<!-- :::note
 
 #### Rebrand Updates
 
 `Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
-:::
-
-<!-- ### Funding Wallet with tCORE Tokens
-
-To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**. Follow the detailed [guide](./core-faucet.md) to fund your metamask account with tCORE tokens.
-
-### Sending tCORE Tokens
-
-You can use MetaMask to send tCORE to other addresses.
-
-1. Navigate to metamask wallet, make sure you are conencted to Core Testnet
-2. Click on the `Send` button
-
-![send-metmask](../../static/img/testnet-wallet-config/send-tcore-1.png)
-
-3. Enter the amount of tCORE tokens you want to send and the address whom you want to send the tCORE tokens make sure its a Core Testnet Address. Then click next and confirm the transaction.
-
-![send-metmask](../../static/img/testnet-wallet-config/send-tcore-2.png) -->
+::: -->

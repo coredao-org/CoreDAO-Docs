@@ -1,5 +1,5 @@
 ---
-sidebar_label: Command Line
+sidebar_label: Connect Through CLI
 hide_table_of_contents: false
 sidebar_position: 2
 description: "Learn how to connect to Core RPC using CLI"
