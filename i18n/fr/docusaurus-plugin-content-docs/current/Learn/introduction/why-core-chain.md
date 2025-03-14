@@ -10,7 +10,9 @@ sidebar_position: 2
 
 Core est une plateforme de smart contrats complémentaire et symbiotique à Bitcoin. Elle permet de débloquer des rendements natifs en Bitcoin, des smart contrats alimentés par Bitcoin, une deuxième récompense de bloc pour les mineurs, ainsi qu'un écosystème BTCfi de bout en bout. Dans l'ensemble, Core représente un changement de paradigme dans la manière dont nous utilisons Bitcoin. Elle amplifie son rôle de réserve de valeur grâce au taux sans risque de Bitcoin et facilite sa transition vers un véritable moyen d'échange en fournissant une infrastructure blockchain sécurisée par Bitcoin mais hyper-extensible pour des transactions plus efficaces et divers cas d'utilisation. L'approche de Core non seulement s'aligne sur l'éthique de la décentralisation, de la transparence et de l'absence d'autorisation de Bitcoin, mais elle protège et renforce également le réseau Bitcoin de base.
 
-![why-core-dao-infrographics](../../../../../../static/img/Infographic.png)
+<p align="center">
+![why-core-dao-infrographics](../../../../../../static/img/Why-Core.png)
+</p>
 
 ## Principales caractéristiques distinctives de Core
 

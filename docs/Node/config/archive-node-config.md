@@ -1,10 +1,13 @@
 ---
-sidebar_label: Archive Node Configuration
+sidebar_label: Archive Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Archive Node Configuration
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Archive Nodes on Core 
 ---
 
 Archive nodes in the Core network play a crucial role in maintaining the complete historical state of the network. These nodes are specialized versions of full nodes with enhanced capabilities tailored to storing and providing access to the entire history of all transactions and states since the inception of the Core.  
@@ -15,41 +18,60 @@ There are several system requirements, both software and hardware, for setting u
 
 ### Software
 
-* Currently, a Core archive node can only run on **Mac OS X** or on the **Linux** operating systems.
+* **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+
+* **Network Connectivity:** Stable internet connection with low latency and high availability
+
+* **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Hardware
 
-Core nodes perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Each type of Core node has specific hardware requirements based on their expected needs.
+An Archive Node on Core stores the entire blockchain history, ensuring data availability and integrity for network participants. It supports querying past transactions, verifying historical data, and enhancing blockchain analytics. While not required for consensus, archive nodes play a crucial role in maintaining transparency and supporting decentralized applications. Following are the hardware requirements for running Archieve Node on Core.
 
-#### Testnet Archive Node Hardware Specifications
+<Tabs
+  defaultValue="testnetTwo"
+  values={[
+    {label: 'Testnet2', value: 'testnetTwo'},
+    {label: 'Testnet', value: 'testnet'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnetTwo">
+    For Archive Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-For Archive Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 1TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+    | **CPU**            | 8 Core CPU                                                                                          |
+    | **RAM**            | 32 Gigabytes                                                                                        |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+  </TabItem>
+  <TabItem value="testnet">
+    For Archive Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| CPU            | 8 Core CPU                                                                                              |
-| RAM            | 32 Gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 2TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+    | **CPU**            | 8 Core CPU                                                                                          |
+    | **RAM**            | 32 Gigabytes                                                                                        |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+  </TabItem>
+  <TabItem value="mainnet">
+    For Archive Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-
-#### Mainnet Archive Node Hardware Specifications
-
-For Archive Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
-
-
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| CPU            | 8 Core CPU                                                                                              |
-| RAM            | 32 Gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+    | **CPU**            | 8 Core CPU                                                                                          |
+    | **RAM**            | 32 Gigabytes                                                                                        |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+  </TabItem>
+</Tabs>
 
 
 ## Running Core Archive Node
 1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your full node, running your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Download the latest node binary for from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest) and the latest snapshot for archive node from Core's [Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). The node binary includes the relevant mainnet and testnet configuration files. 
+2\. Download the latest node binary for from [Core's Releases Repository](https://github.com/coredao-org/core-chain/releases/latest) and the latest snapshot for archive node from [Core's Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). The node binary includes the relevant mainnet and testnet configuration files. 
 
 3\. Write the genesis state locally by executing the following command from your project directory:
 

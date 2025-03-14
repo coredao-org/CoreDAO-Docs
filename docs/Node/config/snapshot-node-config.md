@@ -1,48 +1,70 @@
 ---
-sidebar_label: Snapshot Node Configuration
+sidebar_label: Snapshot Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Snapshot Node Configuration
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Snapshot Nodes on Core
 ---
 Snapshots are important for a network to ensure nodes are able to sync up to the latest state of the network as quickly as possible. Before nodes can be used, they must sync up to the current state of the network, by starting from a recent snapshot these nodes can fast-track a majority of the syncing.
 
 ## System Requirements
 
-There are several system requirements, both software and hardware, for setting up a snapshot node on the Core network.
+There are several system requirements, both software and hardware, for setting up a Snapshot Node on the Core network.
 
 ### Software
 
-* Currently, a Core Snapshot Node can only run on **Mac OS X** or on the **Linux** operating systems.
+* **Operating System:** Currently, a Core Snapshot Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+* **Network Connectivity:** Stable internet connection with low latency and high availability
+* **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Hardware
 
-On the Core network, Snapshot nodes act also as the archive nodes, storing the enitre blockchain data. 
+A Snapshot Node on Core provides periodic blockchain state snapshots, enabling faster node synchronization and reducing storage requirements. These nodes help new validators and RPC nodes quickly catch up with the latest blockchain state without processing the entire history. Snapshot Nodes improve network efficiency and accessibility. On the Core network, Snapshot nodes act also as the archive nodes, storing the enitre blockchain data. Following are the minimum hardware recommendations for running Snapshot Node on Core. These specifications are designed to handle the testing and validation processes while ensuring efficient data storage and synchronization.
 
-#### Testnet Snapshot Node Hardware Specifications
+<Tabs
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-For Snapshot Nodes on **Core Blockchain Testnet**, we recommend the following minimal hardware specs:
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| CPU            | 4 CPU cores                                                                                             |
-| RAM            | 16 Gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+  </TabItem>
+  <TabItem value="testnet">
+    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
-#### Mainnet Snapshot Node Hardware Specifications
+  </TabItem>
+  <TabItem value="mainnet">
+    For Snapshot Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-For Sanpshot Nodes on **Core Blockchain Mainnet**, we recommend the following minimal hardware specs:
-
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| Storage        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| CPU            | 4 CPU cores                                                                                             |
-| RAM            | 16 Gigabytes                                                                                            |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
-
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+  </TabItem>
+</Tabs>
 
 ## Core Network Snapshots
 
@@ -53,7 +75,7 @@ You can get the latest snapshots from [here](https://github.com/coredao-org/core
 On Core network, you can sync your node to the latest state by several ways. In this document, we guide you through the syncing process of nodes on the Core network using the snapshots.
 
 ### Download Pre-Build Binaries
-Download the pre-build binaries from the [release page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below 
+Download the pre-build binaries from official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below 
 
 ##### Linux
 ```bash

@@ -80,7 +80,7 @@ You can monitor the log from `/node/logs/core.log` by default.
 ## Sync from Genesis Block (Not Recommended)
 
 :::note
-Note that the recommended method for syncing testnet node is to sync from genesis block as currently the snapshot is not available. You can download the latest binary  for testnet from [here](https://github.com/coredao-org/core-chain/releases).
+Note that the recommended method for syncing testnet node is to sync from genesis block as currently the snapshot is not available. You can download the latest binary for testnet from [here](https://github.com/coredao-org/core-chain/releases).
 :::
 
 Write the genesis state locally by executing the following command from your node directory

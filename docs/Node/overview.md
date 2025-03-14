@@ -1,32 +1,35 @@
 ---
-sidebar_label: Overview of Nodes Running on Core
+sidebar_label: Types of Nodes
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+
 # Nodes in the Core Ecosystem
 ---
 
-In the Core ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. These nodes facilitate various functions, from transaction validation to block propagation, ensuring the network's overall health and efficiency. Depending on your goals, there are different node configurations possible on the Core network. If you haven't already started any node on Core network yet, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
+In the Core ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. These nodes facilitate various functions, from transaction validation to block propagation, ensuring the network's overall health and efficiency. 
 
-* If you want to be part of the governance of the Core Nework:
+Depending on your goals, there are different node configurations possible on the Core network. If you haven't already started any node on Core network yet, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
 
-    * [Start a Validator Node](./config/validator-node-config.md)
+* **If you want to be part of the governance of the Core Nework**
 
-* If you want to run a node on Core network for private use:
-    * [Start a Normal Full Node](./Full-Node/on-mainnet.md)
+    * [**Start a Validator Node**](./config/validator-node-config.md)
 
-* If you want to send transactions or query the chain directly from your own Core blockchain node:
+* **If you want to run a node on Core network for private use**
+    * [**Start a Normal Full Node**](./config/full-node.md)
 
-    * [Start an RPC Node](./config/rpc-node-config.md)
+* **If you want to send transactions or query the chain directly from your own Core blockchain node**
 
-* If you want to query historical chain data since the genesis block:
+    * [**Start an RPC Node**](./config/rpc-node-config.md)
 
-    * [Start an Archive Node](./config/archive-node-config.md)
+* **If you want to query historical chain data since the genesis block**
 
-* If you want to help node operators sync up quickly with the network:
+    * [**Start an Archive Node**](./config/archive-node-config.md)
 
-    * [Start a Snapshot Node](./config/snapshot-node-config.md)
+* **If you want to help node operators sync up quickly with the network**
+
+    * [**Start a Snapshot Node**](./config/snapshot-node-config.md)
 
 ## Types of Nodes on the Core Network
 1. **Validators:**
@@ -40,7 +43,7 @@ In the Core ecosystem, the robustness, security, and decentralization of the net
     
 3. **RPC Nodes:**
     * **Role:** RPC Nodes provide an application programming interface (API) for developers and external applications to interact with the blockchain, facilitating queries and transactions.
-    **Importance:** They are essential for the development and operation of decentralized applications (DApps) and for external access to the blockchain’s data.
+    * **Importance:** They are essential for the development and operation of decentralized applications (DApps) and for external access to the blockchain’s data.
 
 4. **Archive Nodes:**
     * **Role:** Archive Nodes store the entire history of the blockchain including all states and transactions since the genesis block, providing a valuable resource for deep historical queries.

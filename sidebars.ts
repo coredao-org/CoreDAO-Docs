@@ -28,7 +28,7 @@ const sidebars: SidebarsConfig = {
             label: 'Introduction',
             items: ['Learn/introduction/what-is-core-chain',
                     'Learn/introduction/why-core-chain',
-                    'Learn/introduction/quickstart',
+                    //'Learn/introduction/quickstart',
                     {
                       type: 'link',
                       label: 'Whitepaper', 
@@ -89,6 +89,14 @@ const sidebars: SidebarsConfig = {
                           ]
                       },
                       
+                    ]
+                },
+                {
+                  type: 'category',
+                    collapsed: true,
+                    label: 'lstBTC',
+                    items: [
+                      'Learn/products/lstBTC/overview',
                     ]
                 },
                 {
@@ -217,17 +225,10 @@ const sidebars: SidebarsConfig = {
         type: 'category',
         collapsed: true,
         label: 'Node Configurations',
-        items: ['Node/config/validator-node-config', 'Node/config/rpc-node-config',
-        'Node/config/archive-node-config', 'Node/config/snapshot-node-config']
+        items: ['Node/config/full-node', 'Node/config/rpc-node-config',
+                'Node/config/archive-node-config', 'Node/config/snapshot-node-config',
+                'Node/config/validator-node-config', ]
       },     
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Running Full Node',
-        items: [
-        'Node/Full-Node/on-testnet', 
-        'Node/Full-Node/on-mainnet']
-      },
       'Node/sync/snapshot-sync',
 
       {
@@ -235,8 +236,8 @@ const sidebars: SidebarsConfig = {
         collapsed: true,
         label: 'Become a Validator',
         items: ['Node/validator/overview',
+        'Node/validator/running-validator',        
         'Node/validator/validator-register', 
-        'Node/validator/running-validator',
         'Node/validator/validator-election',
         'Node/validator/rewards',
         {
@@ -264,14 +265,14 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       label: '💸 Staking',
       items: ['stake-and-delegate/staking-overview',
-        // 'stake-and-delegate/core-staking', 
         {
           type: 'category',
             collapsed: true,
             label: 'Non-Custodial BTC Staking',
             items: [
               'Learn/products/btc-staking/overview',
-              'stake-and-delegate/dual-staking', 
+              'Learn/products/btc-staking/btc-staking-working',
+              //'stake-and-delegate/dual-staking', 
               'Learn/products/btc-staking/design', 
               {
                 type: 'category',
@@ -279,12 +280,29 @@ const sidebars: SidebarsConfig = {
                   label: 'How To Guides',
                   items: [
                     'Learn/products/btc-staking/stake-btc-guide',
-                    'Learn/products/btc-staking/dual-staking-guide',
+                    // 'Learn/products/btc-staking/dual-staking-guide',
                     'Learn/products/btc-staking/Redeeming-Guide',
                   ]
               },
             ]
         },    
+        {
+          type: 'category',
+            collapsed: true,
+            label: 'Dual Staking',
+            items: [
+              'stake-and-delegate/dual-staking', 
+              'stake-and-delegate/dual-staking-working', 
+              {
+                type: 'category',
+                  collapsed: true,
+                  label: 'How To Guides',
+                  items: [
+                    'Learn/products/btc-staking/dual-staking-guide',
+                  ]
+              },
+            ]
+        },
        
       ]
     },

@@ -342,7 +342,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. To test if things are working fine, run the application by using the following command. This will serve application with hot reload feature at [http://localhost:5173](http://localhost:5173/)
+4. To test if things are working fine, run the application by using the following command. This will serve application with hot reload feature at [http://localhost:5173]
 
 
 ```bash

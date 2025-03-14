@@ -56,7 +56,7 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM | 32 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 10Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. What is the minimum amount of CORE tokens required to stake for becoming a validator?
 

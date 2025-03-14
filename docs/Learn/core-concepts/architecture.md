@@ -8,109 +8,95 @@ description: Quick Glance at Core's Underlying Blockchain Architecture
 # Architecture of the Core Blockchain
 ---
 
-The Core blockchain’s architecture centers on its Satoshi Plus consensus, a tripartite mechanism combining Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking. On top of Satoshi Plus’ security, Core’s infrastructure also includes a trust-minimized bridged Bitcoin asset in coreBTC, trustless peer-to-peer Bitcoin `<>` Core transactions with HTLC atomic swaps, and more. 
+Core's architecture is built around **Satoshi Plus**, a tripartite consensus mechanism that integrates **Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking**.
 
-Through Satoshi Plus, Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers elect validators to secure Core. Validators are elected by these three parties on the basis of a hybrid score, which calculates each validator’s reception of delegated hash power, delegated/staked CORE tokens, and delegated/staked Bitcoin from Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers respectively. 
+Through Satoshi Plus, **Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers** delegate resources to elect validators who secure the Core network. Validator selection is based on a hybrid score, considering:
 
-Satoshi Plus' Non-Custodial Bitcoin Staking component is the first live Bitcoin staking mechanism, unlocking native yield for Bitcoin for the first time in its history. Without introducing any new trust assumptions to holding Bitcoin, Bitcoin staking via Satoshi Plus establishes the Bitcoin Risk-Free Rate. 
+* **Delegated hash power** from Bitcoin miners/mining pools  
+* **Delegated/staked CORE tokens** from CORE token stakers  
+* **Delegated/staked Bitcoin** from Bitcoin stakers
 
-Additionally, Satoshi Plus is presently benefitting from the security of ~55% of all Bitcoin mining efforts, manifested in delegated hash power. By involving miners and mining pools in the validator election process, Satoshi Plus benefits from Bitcoin’s unrivaled decentralization while also providing miners with supplemental rewards at no additional cost, a valuable proposition as Bitcoin block rewards continue to decline. 
+### **First Non-Custodial Bitcoin Staking & Bitcoin Risk-Free Rate**
 
-![component-diagram](../../../static/img/staoshi-plus/component-diagram.jpg)
+Satoshi Plus's Non-Custodial Bitcoin Staking component is **the first live non-custodial Bitcoin staking mechanism**, allowing Bitcoin holders to earn native yield **without changing Bitcoin’s trust assumptions**. This effectively establishes the **Bitcoin Risk-Free Rate**, a groundbreaking milestone in Bitcoin’s history.
 
-## Major Components, Roles, and Workflows
+### **Harnessing Bitcoin's Security & Empowering Miners**
 
-* **Validators:** Validators are responsible for producing blocks and validating transactions on the Core network. Anyone can become a Core validator by registering with the network and locking up a refundable CORE token deposit.
+Currently, Satoshi Plus benefits from the security of **\~75% of all Bitcoin mining hash power** through delegation. By involving miners in validator elections, it leverages Bitcoin’s unmatched decentralization while offering **miners additional rewards**, addressing the long-term decline in Bitcoin block rewards.
 
-* **Validator Election:** The validator set is determined through election, with validators chosen based on their hybrid score for each round. Any validator in the current validator set which hasn’t been jailed or slashed is considered “live”. To ensure a more stable TPS, the live validators are updated every 200 blocks, meaning that if any validators are jailed or slashed, the others can continue mining blocks as usual.
+<p align="center">
+![component-diagram](../../../static/img/Core-Architecture.png)
+</p>
 
-* **Hybrid Score:** Every validator node seeking to become part of the validator set is given a hybrid score, which is calculated based on three factors: the DPoW from Bitcoin miners, the DPoS from CORE holders, and bitcoin holders delegating bitcoin to their preferred validators. The validator set is currently made up of the **27** validators with the highest hybrid scores.
+## **Core Blockchain: Components, Roles, and Workflows**
 
-* **Bitcoin Miners:** Bitcoin miners secure the Bitcoin network via PoW, and can delegate their PoW to a Core validator by including certain information in the coinbase transaction of a block as it’s in the process of being mined. This delegation is non-destructive, meaning that they’re re-purposing their existing work, not choosing between securing Bitcoin and securing Core.
+#### **Key Roles**
 
-* **CORE Stakers:** All holders of Core’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
+* **Validators**: Produce blocks and validate transactions on the Core network. Anyone can become a validator by registering and locking a refundable CORE validator bond deposit.  
+* **Bitcoin Miners**: Secure Bitcoin via PoW and can delegate hash power to Core validators by including delegation information in the coinbase transaction of a block without sacrificing Bitcoin security.  
+* **CORE Stakers**: Delegate CORE tokens to validators to support network security.  
+* **Bitcoin Stakers**: Delegate Bitcoin to validators on Core through Non-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.  
+* **Relayers**: These are responsible for synchronizing the data between the Core and Bitcoin network. They transmit Bitcoin block and transaction data to Core. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.  
+* **Verifiers**: Report malicious behaviors on the Core network. Successful verification flags can trigger the slashing or jailing of validators and bad actors, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
 
-* **Bitcoin Stakers:** The third leg of Satoshi Plus consensus is non-custodial Bitcoin staking, which allows any bitcoin holder to earn yield by staking their bitcoin tokens without giving up custody.
+#### **Consensus & Election**
 
-* **Relayers:** Relayers transmit Bitcoin blocks and transaction data to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
+* **Validator Election**: Every **round (1 day)**, the top **27 validators** by **hybrid score** (PoW from miners, DPoS from CORE stakers, and Bitcoin staking) are elected to become part of the active validator set and secure the network. Any validator in the current validator set that hasn’t been jailed or slashed is considered “live”. To ensure a more stable TPS, the live validators are updated every 200 blocks, meaning that if any validators are jailed or slashed, the others can continue mining blocks as usual.  
+* **Hybrid Score:** Every validator node seeking to become part of the active validator set is given a hybrid score, which is calculated based on three delegations: hashpower, CORE, and Bitcoin. The active validator set currently comprises the top 27 validators with the highest hybrid scores.  
+* **Round:** A round lasts **one day**, during which the **top 27 validators** (ranked by hybrid score) are elected to produce blocks. At the end of the round, **rewards are calculated for that complete round and distributed**, and the next validator set is selected.  
+* **Epoch (10 min or 200 slots)**: Periodic validator status checks ensure jailed nodes don’t participate in consensus. The validator status is checked once per epoch (rather than continuously) to keep TPS roughly constant in a given round.  
+* **Slot (3 sec)**: Each 1-day round is divided into slots, and all validators in the validator set take turns producing one block per slot in a round-robin fashion.
 
-* **Verifiers:** Verifiers are responsible for reporting malicious behaviors on the network. Successful verification flags may result in slashing a malicious validator’s rewards or stake, or by jailing them outright, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
+#### **Rewards & Stability**
 
-* **Round:** A round is the period of time during which the Core network updates the validator set and distributes rewards. At present, a round is one day. Every round (i.e. every day), all validators are given a hybrid score, and the 27 validators with the highest hybrid scores are elected to the validator set. The validator set then becomes responsible for producing blocks on the Core network for the entirety of that round. When the last block of each round has been produced, the accumulated rewards for the full round are calculated and distributed, and the validator set for the next round is also determined.
-
-* **Slot:** Each 1-day round is divided into slots, and all validators in the validator set take turns producing one block per slot, in a round robin manner. Currently, the slot length is set to three seconds. In each slot, an honest validator either produces a block or fails to do so (if there are network issues, eclipse attacks, etc).
-
-* **Epoch:** An epoch is the span of time during which the system checks each validator’s status so as to exclude jailed validators from participating in consensus activities. Currently, an epoch is set to 200 slots, which is 600 seconds or 10 minutes. Validator status is checked once per epoch (rather than continuously) in order to keep TPS roughly constant in a given round.
+* **Reward Module:** Rewards are distributed at the end of each round based on validators' performance. The Reward Module calculates and distributes these rewards accordingly.  
+* Rewards are distributed at the **end of each round**.  
+* Live validators are updated **every 200 blocks** to maintain stable TPS.
 
 ## Delegated Proof of Work
 
-To participate in Satoshi Plus, miners and/or mining pools simply write two additional pieces of information in the `op_return` field as they produce a new Bitcoin block:
+To participate in Satoshi Plus, Bitcoin miners and/or mining pools simply write two additional pieces of information in the \`op\_return\` field as they produce a new Bitcoin block:
 
-1. The address of the Core Validator that the miner wants to delegate their hash power to.
-2. The address that the miner would like its CORE token rewards to be sent to. 
+1. The address of the Core Validator to whom they want to delegate their hash power.  
+2. The address to which the miner would like to receive the CORE token rewards.
 
-In exchange for participating in the consensus process by delegating their hash power to vote for Validators, miners receive supplemental CORE token rewards in addition to their existing bitcoin rewards. In sum, Satoshi Plus receives Bitcoin miner participation and Bitcoin receives better compensated (i.e. more highly incentivized) miners.
+In exchange for participating in Core’s consensus process by delegating their hash power to vote for validators, Bitcoin miners receive supplemental CORE token rewards in addition to their existing mining rewards from the Bitcoin network. In this way, Satoshi Plus bridges Bitcoin miner participation to the Core network, while the Bitcoin network gets better compensated (i.e. more highly incentivized) miners.
 
 ## Delegated Proof of Stake
 
-Delegated Proof of Stake is the method of involving Core users in the security of the protocol. To participate in consensus, any CORE token holder can stake their CORE tokens with Core Validators, thus voting for those Validators in the same way that a miner might delegate its hash power to elect a validator.
-
-Similarly, just as miners receive rewards, CORE token stakers also earn CORE token rewards for contributing to the Satoshi Plus consensus. One significant advantage of Delegated Proof of Stake compared to standard Proof of Stake models is that the former allows all token holders to participate equally, whereas the latter sometimes only allows large holders to stake.
+Delegated Proof of Stake (DPoS) is the method of involving CORE token holders in the security of the protocol. To participate in consensus, any CORE token holder can stake their CORE tokens with validators on the Core network, thus voting for those validators in the same way that a miner might delegate its hash power to elect a validator.  
+Similarly, just as miners receive rewards, CORE token stakers also earn CORE token rewards for contributing to the Satoshi Plus consensus. One significant advantage of DPoS compared to standard Proof of Stake models is that the former allows all token holders to participate equally. In contrast, the latter sometimes only allows large holders to stake.
 
 ## Non-Custodial Bitcoin Staking
 
-Satoshi Plus’s methodology for integrating bitcoin staking centers on absolute time locks, a Bitcoin-native cryptographic feature that locks up the outputs of a transaction for a pre-defined period of time, during which they can’t be spent. Rather than holders giving up custody of Bitcoin to external staking, stakers with Satoshi Plus merely place their Bitcoin in absolute time locks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks:
+Satoshi Plus’s methodology for integrating Bitcoin staking centers on absolute time locks, a Bitcoin-native cryptographic feature that locks up the outputs of a transaction for a pre-defined period of time, during which they can’t be spent.   
+Rather than holders giving up custody of Bitcoin to external staking, stakers with Satoshi Plus merely place their Bitcoin in absolute time locks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Within that transaction, stakers must include a script containing the same information that Bitcoin miners include in their delegated blocks:
 
-1. The address of the Core Validator the staker wants to delegate their bitcoin to.
-2. The address that the staker would like their CORE token rewards to be sent to. 
+1. The address of the Core Validator the staker wants to delegate their Bitcoin to.  
+2. The address to which the staker would like to receive their CORE token rewards.
 
-Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards, for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core). The end result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while also expanding the scope of Bitcoin’s utility. 
+Bitcoin stakers earn a yield on their otherwise passive bitcoin in the form of CORE token rewards for however long they set the time-lock (and thus for however long they delegate their bitcoin to vote for Validators on Core). The result is that billions of dollars in underutilized Bitcoin value will become productive, remunerating stakers while expanding the scope of Bitcoin’s utility.
 
 ## Validator Election
 
-The synthesis of Delegated Proof of Work, Delegated Proof of Stake, and Non-Custodial Bitcoin Staking occurs during the election of the Satoshi Plus validator set. 
-
-The validators who receive the highest combination of delegated hash power, staked CORE, and staked Bitcoin are elected to the validator set. The highest combination is determined by a hybrid score, which balances the three elements. 
+The synthesis of DPoW, DPoS, and Non-Custodial Bitcoin Staking occurs during the election of the Satoshi Plus validator set. The validators who receive the highest combination of delegated hash power, staked CORE, and staked Bitcoin are elected to the validator set. The highest combination is determined by a hybrid score, which balances the three elements.
 
 ## Rewards
 
 Satoshi Plus rewards are derived from:
 
-1. CORE block rewards to be paid out over an 81 year period
-2. Transaction fees paid in CORE tokens. Following successful block production, validators earn these CORE token rewards
+1. CORE block rewards to be paid out over **81 years**  
+2. Transaction fees paid over the Core network in CORE tokens. 
 
-Since elected validators are entirely dependent upon their delegators, when they receive block rewards and transaction fees for producing blocks, they pay the majority of their rewards back to their delegating miners, CORE stakers, and Bitcoin stakers. 
-
-Rewards paid out to delegators are allocated proportional to their voting power. So, whatever weight their vote carried in the hybrid score calculation is the proportion of rewards they will receive from validators. 
+Following successful block production, validators earn these CORE token rewards. Since elected validators are entirely dependent upon their delegators, when they receive block rewards and transaction fees for producing blocks, they pay most of their rewards back to their delegating miners, CORE stakers, and Bitcoin stakers.  
+Rewards paid out to delegators are allocated proportionally to their voting power. So, whatever weight their vote carries in the hybrid score calculation is the proportion of rewards they will receive from validators.
 
 ## Slashing and Security
 
-In traditional Proof of Stake systems, stakers run the risk of being slashed if they fail to maintain a secure and reliable node, behave maliciously, or engage in activities that compromise the network’s integrity. In Satoshi Plus, this remains true for validators. Validators are held to a high standard, because their entire duty is to honestly adhere to the ruleset of Satoshi Plus. Thus, if they fail to perform, their locked up CORE token deposit is slashed, resulting in a serious economic penalty in addition to accruing zero rewards. 
+In traditional Proof of Stake systems, stakers risk being slashed if they fail to maintain a secure and reliable node, behave maliciously, or engage in activities that compromise the network’s integrity. In Satoshi Plus, this remains true for validators. Validators are held to a high standard because their duty is to adhere honestly to the ruleset of Satoshi Plus. Thus, if they fail to perform, they face the slashing of their accumulated rewards and/or locked up CORE token deposit, resulting in a severe economic penalty and zero rewards.  
 
-While slashing keeps validators maximally accountable, Satoshi Plus’ design is not meant to penalize participants for actions they don’t control. Therefore, miners, CORE stakers, and Bitcoin stakers have no risk of their staked or delegated assets/power being slashed. Their incentive to choose the best validators lies in the rewards they can accrue from selecting diligently. Their risk for choosing the wrong validators is that they won’t receive rewards that they otherwise would receive. That economic penalty serves as an effective incentive while also being fair to stakers. 
-
-## Other Workflow Details
-
-1. **Block Production and Round Robin:** Validators take turns producing blocks in a round-robin manner. Each round is divided into slots, with a length currently set to 3 seconds.
-2. **Reward Module:** Rewards are distributed at the end of each round based on validators' performance. The Reward Module calculates and distributes these rewards accordingly.
-3. **Epochs and Validator Quorum Updates:** Epochs, set to 200 slots (or 10 minutes), are the cycle lengths for checking each validator's status. Jailed validators are excluded from the quorum to keep the Transaction Per Second (TPS) rate stable throughout the round.
-
-## Other Core Infrastructure
-
-### Core-Native Wrapped Bitcoin (coreBTC)
-
-coreBTC is a Core-native bridged Bitcoin asset maintaining a 1:1 peg with Bitcoin, using over-collateralized Lockers for secure and trust-minimized minting and redemption. This design enables Bitcoin participation in Core’s DeFi activities and smart contracts without involving centralized custody. While coreBTC is not essential for Satoshi Plus or engaging with Core DeFi, it does permit Bitcoin holders a trust-minimized and Core-native way to port their assets to the Core blockchain. 
-
-### HTLC Atomic Swaps
-
-Hashed TimeLock Contracts (HTLCs) enable the trustless, peer-to-peer exchange of tokens between Core and other blockchains, including (and especially) Bitcoin.
-
-### Future Enhancements
-
-* **Dual Staking:** Higher Bitcoin staking rates are to be enabled for stakers of both Bitcoin and CORE tokens.
-* **Fee Market Development:** Core may adopt local fee markets to make Bitcoin transactions more predictable and economical, thus supporting Bitcoin's use as a viable means of payment.
-* **HTLC Improvements:** Enhancements to the atomic swap process, including the introduction of liquidity pools and order book supplements, are being designed to facilitate more efficient trading and liquidity management.
+While slashing keeps validators maximally accountable, the Satoshi Plus mechanism’s design is not meant to penalize participants for actions they don’t control. Therefore, miners, CORE stakers, and Bitcoin stakers have no risk of their delegated assets being slashed. Their incentive to choose the best validators lies in the rewards they can accrue from selecting diligently. Their risk for choosing the wrong validators is that they won’t receive the rewards they would otherwise receive. That economic penalty serves as an effective incentive while being fair to stakers.
 
 ## Conclusion
 
-Core’s architecture is designed to make it the ideal platform for BTCfi. Satoshi Plus not only extends Bitcoin’s protection but also reinforces its security model while introducing native yield for Bitcoin for the first time. This comprehensive design secures an end-to-end BTCfi ecosystem, unlocking the full potential of the Bitcoin asset.
+Core’s architecture is designed to make it the ideal platform for BTCfi. Satoshi Plus extends Bitcoin’s protection and reinforces its security model while introducing native yield for Bitcoin for the first time. This comprehensive design secures an end-to-end BTCfi ecosystem, unlocking the full potential of the Bitcoin asset.  
