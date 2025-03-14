@@ -47,7 +47,7 @@ Users could also earn Sparks by interacting with whitelisted dApps on Core Ignit
 Core Ignition will feature flash or time-limited campaigns on a rolling basis, offering users special opportunities to supercharge Sparks. Stay connected by checking the in-app campaign sections and following Core's official announcements on [X (Twitter)](https://x.com/Coredao_Org) for the latest updates.
 
 **4. Invite New Users to Join Ignition:**
-For those new to Core Ignition, bridge $100 USDT worth of whitelisted assets to Core to unlock a permanent invite link. For users who have signed up in Season 1, the invite code is automatically unlocked. By inviting new users to Core Ignition, users will receive 10% of the daily Sparks earned by introducing first-degree invitees and 2% from second-degree invitees. Please note that a cap may apply to the maximum Sparks each user can earn through referrals. 
+For those new to Core Ignition, bridge $50 USD worth of whitelisted assets to Core to unlock a permanent invite link. For users who have signed up in Season 2, the invite code is automatically unlocked. By inviting new users to Core Ignition, users will receive 10% of the daily Sparks earned by introducing first-degree invitees and 2% from second-degree invitees. Please note that a cap may apply to the maximum Sparks each user can earn through referrals. 
   
 
 ### How to Boost Multipliers 
@@ -60,16 +60,17 @@ Below are the baseline multipliers for the whitelisted assets inside the wallet 
 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
-| stCORE, CLND | 1.3x | 2.5x | 3x | 3.5x |
-| USDT, USDC | 1.2x | 2x | 2.5x | 3x |
-| CORE, WCORE, wETH | 1x | 1.5x | 2x | 2.5x |
-| solvBTC.CORE| 1x | 1.4x | 1.6x | 1.8x |
-| aBTC, BTCB, BTC.B, nBTC, oBTC, pumpBTC, rBTC, suBTC, SolvBTC.b, SolvBTC.m, uBTC, wBTC | 1x | 1.2x | 1.4x | 1.6x |
+| stCORE, CLND, dualCORE | 1x | 2.5x | 3x | 3.5x |
+| USDT, USDC | 1x | 1.5x | 2x | 3x |
+| CORE, WCORE | 1x | 1.5x | 2x | 2.5x |
+| wETH, solvBTC.CORE | n/a | 1.4x | 1.6x | 1.8x |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC | n/a | 1.2x | 1.4x | 1.6x |
+| BTC.B, SolvBTC.b, SolvBTC.m | n/a | 1x | 1.2x | 1.6x |
 
   
 >***Example 1:***
 >If the user holds 10 stCORE in Ignition wallet balance, the user gets:  
->Daily Sparks = stCORE amount * stCORE price * Multiplier = 10 stCORE * $1.5 (assumed) * 1.3 = 19.5  
+>Daily Sparks = stCORE amount * stCORE price * Multiplier = 10 stCORE * $1.5 (assumed) * 1 = 15 
 
   
 >***Example 2:***
