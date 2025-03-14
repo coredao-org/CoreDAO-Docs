@@ -69,7 +69,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
-                description: 'Learn about the different innovative products offered by Core that are helping in unclocking the DeFi landscape for Bitcoin!',
+                description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
                 slug: '/category/products',
               },
               items: [
