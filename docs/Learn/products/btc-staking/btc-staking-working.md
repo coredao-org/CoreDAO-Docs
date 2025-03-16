@@ -73,16 +73,18 @@ Core's implementation of Bitcoin staking is completely native and non-custodial,
 
 Core's Non-Custodial BTC Staking operations are conducted on two separate blockchains—Bitcoin and Core. The following table identifies what happens in each blockchain for Bitcoin holders to earn staking rewards successfully through non-custodial Bitcoin staking. It's important to note that Core's Non-Custodial Bitcoin Staking does not introduce any additional risks or trust assumptions. Beyond monitoring and verifying Bitcoin staking transactions and accrual and claiming rewards, all operations—including asset locking, redemption, and asset management—remain securely on the Bitcoin network.
 
-| **Step** | **Bitcoin Network** | **Core Network** |  
-|---------|--------------------|-----------------|  
-| **1. Initiate Staking** | User crafts a **CLTV timelock** transaction, locking BTC for a chosen duration, and specifying delegation details in `OP\_RETURN`. | Relayers monitor Bitcoin transactions for valid staking activity. |  
-| **2. Broadcast Transaction** | User sends the **CLTV transaction** on the Bitcoin network. | |  
-| **3. Locking Period Begins** | BTC is locked in the user's wallet on the Bitcoin network. Once the transaction is confirmed on the Bitcoin network, which can take several hours due to block time, number of block confirmations required, and network congestion, the locked assets will appear in the staking records.  (*Optional*) After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit it to the Core blockchain. This step is optional if users compose the transaction in a standard format, as suggested by Core. Relayers from the Core infrastructure will detect the staking transaction and submit it to the Core blockchain for users. | |  
-| **4. Relayer Detection** | | Relayers verify and forward the staking transaction to Core’s Consensus Engine. |  
-| **5. Staking Rewards Accrual** | | CORE token rewards accumulate during the BTC staking period. sers have to claim them manually.  |  
-| **6. Unlocking Bitcoin** | After the timelock expires, the user **must** send a Redeem script to regain access to their locked BTC. | |  
+| **Step**                 | **Bitcoin Network**                                                                                       | **Core Network**                                                  |  
+|--------------------------|---------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|  
+| **1. Initiate Staking**  | User crafts a **CLTV timelock** transaction, locking BTC for a chosen duration, and specifying delegation details in `OP_RETURN`. | Relayers monitor Bitcoin transactions for valid staking activity. |  
+| **2. Broadcast Transaction** | User sends the **CLTV transaction** on the Bitcoin network.                                      | Relayers track and validate the transaction.                      |  
+| **3. Locking Period Begins** | BTC is locked in the user's wallet on the Bitcoin network. Once confirmed (which can take hours due to block time, confirmations, and congestion), the locked assets appear in staking records. | Relayers register the locked BTC and update Core’s staking records. |  
+| **4. Relayer Detection** | Relayers detect the staking transaction on Bitcoin.                                              | They verify and forward it to Core’s Consensus Engine.            |  
+| **5. Staking Rewards Accrual** | BTC remains locked, but rewards accumulate on Core.                                       | CORE token rewards accrue during staking; users must claim them manually. |  
+| **6. Unlocking Bitcoin**  | After the timelock expires, the user **must** send a Redeem script to regain access to their locked BTC. | Relayers update the staking records to reflect BTC unlocking.      |  
+
 
 **Important:** Users can also **redelegate** BTC directly without first redeeming it.  
+_**(*Optional*)**_ After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit it to the Core blockchain. This step is optional if users compose the transaction in a standard format, as suggested by Core. Relayers from the Core infrastructure will detect the staking transaction and submit it to the Core blockchain for users. 
 
 #### Step-by-Step Staking Process
 
