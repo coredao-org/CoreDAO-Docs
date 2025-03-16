@@ -55,8 +55,9 @@ npm install --save-dev chai @nomiclabs/hardhat-waffle
 ```bash
 npx hardhat
 ```
-
+<p align="center">
 ![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)
+</p>
 
 :::note
 As we will using Waffle for this project and make sure to select **No** for the option "_Do you want to install this sample project's dependencies with npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
@@ -332,14 +333,20 @@ const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 
 2. Make sure that your MetaMask wallet is correctly installed and switched to Core Testnet as described in our [Core Testnet user guide](./core-wallet-config.md). You'll also need to connect your MetaMask wallet to the local site.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-1.png)
+</p>
 
 3. Enter a number in the input field and click the **store** button to save it to the contract. A write action on the smart contract invokes the MetaMask wallet. Click the **Confirm** button to sign the transaction and wait for confirmation on the blockchain.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-2.avif)
+</p>
 
 4. After the transaction is confirmed on the blockchain, click the **retrieve** button to read the value from the smart contract. You will notice the value has been updated.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-3.avif)
+</p>
 
 🎉 Congratulations! You've just interacted with your newly-deployed contract using your dApp's front end! You can build on the codebase by deploying and interacting with different contracts, and by adding new UI components to the website for your users.

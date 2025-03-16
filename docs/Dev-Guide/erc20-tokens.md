@@ -35,7 +35,9 @@ OpenZeppelin provides secure, audited smart contract templates. The OpenZeppelin
    - **Token Symbol**: Enter the symbol for your token (e.g., `MTK`).
    - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
 
+<p align="center">
 ![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
+</p>
 
 Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
 
@@ -51,8 +53,9 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - In Remix, create a new file by navigating to the **contracts** directory and clicking the **+** button.
    - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
 
+<p align="center">
 ![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)
-
+</p>
 3. **Install OpenZeppelin Contracts**:
    - If you're using Remix’s built-in **Solidity compiler**, it will automatically fetch OpenZeppelin contracts for you.
    - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
@@ -64,7 +67,9 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - Select the compiler version that matches your contract (for example, `0.8.24`).
    - Click **Compile** to compile your contract.
 
+<p align="center">
 ![Remix_ERC20_Compile](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
+</p>
 
 2. **Fix Any Errors**: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
 
@@ -75,7 +80,9 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
    - Go to the **Deploy & Run Transactions** tab in Remix.
    - Under **Environment**, select **Injected Web3**. This will connect Remix to your MetaMask wallet.
 
+<p align="center">
 ![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
+</p>
 
 Ensure that your MetaMask is connected to a **Core testnet**
 
@@ -85,7 +92,9 @@ Ensure that your MetaMask is connected to a **Core testnet**
    - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
    - Once the contract is deployed, you’ll see the contract’s address in Remix.
 
+<p align="center">
 ![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)
+</p>
 
 ## Step 5: Interact with Your Contract
 
@@ -97,7 +106,9 @@ Now that your contract is deployed, you can interact with it directly from Remix
    - Expand the contract’s interface to interact with functions like `balanceOf`, `mint` (if you included minting functionality).
    - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
 
+<p align="center">
 ![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)
+</p>
 
 1. **Mint Tokens**:
 

@@ -40,7 +40,9 @@ OpenZeppelin provides secure and audited smart contract templates. The **OpenZep
 - **Mint Function**: Add a minting function to allow new tokens to be created.
 - **Metadata URI**: You can set metadata using a URI, which will point to the information about your NFTs (e.g., IPFS or a centralized server).
 
+<p align="center">
 ![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)
+</p>
 
 4. **Copy the Code**:
 
@@ -57,8 +59,9 @@ Remix is an online IDE for Solidity development that allows you to write, deploy
 - In Remix, create a new file by navigating to the `contracts` directory and clicking on the **+** button.
 - Paste the ERC-721 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
 
+<p align="center">
 ![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)
-
+</p>
 3. **Install OpenZeppelin Contracts**:
 
 - Remix provides a way to import OpenZeppelin contracts directly. This is done by adding the following import statement to the top of your contract:
@@ -79,7 +82,9 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Click Compile to compile your contract.
 - Fix Any Errors: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
 
+<p align="center">
 ![Remix-ERC721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
+</p>
 
 ## Step 4: Deploy the Contract on a Test Network
 
@@ -88,7 +93,9 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Go to the Deploy & Run Transactions tab in Remix.
 - Under Environment, select Injected Web3. This will connect Remix to your MetaMask wallet.
 
+<p align="center">
 ![Remix-ERC721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
+</p>
 
 - Make sure your MetaMask is connected to a Core testnet2.
 
@@ -100,7 +107,9 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Paste the owner's address in the deployment tab (since the contract is ownable).
 - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
 
+<p align="center">
 ![Remix-ERC721_Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
+</p>
 
 Once the contract is deployed, you’ll see the contract’s address.
 
@@ -115,7 +124,9 @@ Now that your contract is deployed, you can interact with it directly from Remix
 - Call the **safeMint** function to mint new NFTs. You’ll need to provide the `recipient address` and `token Id` as arguments.
 - Confirm the transaction in MetaMask.
 
+<p align="center">
 ![Remix-ERC721_Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
+</p>
 
 **View Your NFT**
 

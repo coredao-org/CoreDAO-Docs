@@ -50,7 +50,9 @@ In the above statement, following are the components of the curl statement:
 
 As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e. the URL from which the information is being retrieved) and an HTTP method. In our case, the URL comes at the end after the _`--url`_ option; you can swap in any of the valid RPC URLs found [here](https://chainlist.org/chain/1116) for connecting to Core Mainnet, just don't forget to wrap the URL in single quotes (''). In the figure below, any of the URLs in the red box will work.
 
+<p align="center">
 ![rpc-list](../../static/img/rpc/rpc-1.png)
+</p>
 
 ### Sample Response:
 

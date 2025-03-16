@@ -260,7 +260,9 @@ We can see that the script correctly deployed the contract, stored a number, and
 
 We can use[ Core Scan](https://scan.test.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and called.
 
+<p align="center">
 ![hardhat](../../static/img/hardhat/hardhat-1.avif)
+</p>
 
 ## Further Reading
 
