@@ -17,6 +17,10 @@ Core operates on the **Satoshi Plus consensus**, integrating three delegation so
 
 By meeting specific **CORE-to-BTC staking ratios**, users gain **boosted Bitcoin staking rewards**, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly.  
 
+<p align="center">
+![dual-staking-tiers](../../static/img/dual-staking/dual-staking-tiers.png)
+</p>
+
 ### Boosted Yield Thresholds
 
 Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers. 
