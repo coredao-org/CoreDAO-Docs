@@ -35,7 +35,7 @@ To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure you
 
 You will be asked to connect to MetaMask. Once connected, Remix shows the connected address and the amount of CORE held by the address, as seen below:
 
-<p align="center">
+<p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../static/img/remix/remix-4.avif)
 </p>
 
@@ -51,7 +51,7 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 - From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `shanghai` from the `EVM Version` dropdown.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 </p>
 
@@ -69,7 +69,7 @@ If you're using Testnet1, ensure that the EVM version is set to Paris
 
 - After selecting the **Deploy** button, MetaMask will open a popup asking you to sign and then send the deployment transaction on Core Testnet, as seen below.
 
-<p align="center">
+<p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../static/img/remix/remix-7.png)
 </p>
 
@@ -91,7 +91,7 @@ Locate the newly deployed contract in the `Deployed Contracts` section located i
 
 MetaMask will again ask us to sign and send the transaction.
 
-<p align="center">
+<p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../static/img/remix/remix-10.png)
 </p>
 

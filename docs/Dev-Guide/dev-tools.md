@@ -17,7 +17,7 @@ import TabItem from '@theme/TabItem';
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet', value: 'testnet'},
+    {label: 'Testnet1', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -35,7 +35,7 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="testnet">
+  <TabItem value="testnet1">
   _Note: This is the legacy testnet version and will be soon deprecated and eventually retired. It recommended to transition to the new testnet version._
 
     * **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.

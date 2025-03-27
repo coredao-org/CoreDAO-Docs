@@ -21,8 +21,9 @@ Web verification is the most commonly used smart contract verification strategy.
 
 1. Navigate to Core Scan website.
 
-- [For Mainnet](https://scan.coredao.org/)
-- [For Testnet](https://scan.test.btcs.network)
+- [For Core Mainnet](https://scan.coredao.org/)
+- [For Core Testnet2](https://scan.test.btcs.network)
+- [For Core Legacy Testnet](https://scan.test.btcs.network)
 
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
@@ -92,7 +93,7 @@ module.exports = {
   networks: {
     hardhat: {},
     testnet: {
-      url: "https://rpc.tes2.btcs.network",
+      url: "https://rpc.test2.btcs.network",
       accounts: [PrivateKey],
       chainId: 1114,
     },

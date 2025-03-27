@@ -7,7 +7,7 @@ sidebar_position: 2
 # Connect to Core Testnet
 ---
 :::note
-This is a detailed guideline for connecting to Core Testnet using the MetaMask wallet.
+This is a detailed guideline for connecting to Core Testnet (1114) using the MetaMask wallet.
 :::
 
 ### Software Prequisites

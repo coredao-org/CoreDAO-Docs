@@ -32,7 +32,7 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 
 </TabItem>
 <TabItem value="testnet1">
-:::danger
+:::caution
 Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
 :::
 

@@ -29,7 +29,8 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
 :::
 
-- https://rpc.test2.btcs.network
+- https://rpc.test2.btcs.network 
+- https://rpcar.test2.btcs.network (For Archive Node)
 
 
 </TabItem>
@@ -37,7 +38,7 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 
 ### Core Blockchain Testnet (1115 (0x45b))
 
-:::danger
+:::caution
 Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
 :::
 
