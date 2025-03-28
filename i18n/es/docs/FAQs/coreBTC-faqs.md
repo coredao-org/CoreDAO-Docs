@@ -8,9 +8,13 @@ sidebar_position: 2
 
 ---
 
+:::warning
+coreBTC has been sunsetted. lstBTC will be launching soon as an improved replacement.
+:::
+
 ### 1. ¿Qué es coreBTC? ¿Cuál es el propósito de coreBTC?
 
-coreBTC es un Bitcoin nativo envuelto en Core, que mantiene una vinculación 1:1 con BTC a través de un mecanismo seguro. Permite a los usuarios de Bitcoin interactuar sin problemas con el espacio DeFi en el Core compatible con EVM utilizando sus activos BTC, ampliando la funcionalidad de Bitcoin dentro del panorama DeFi sin comprometer su seguridad inherente.
+coreBTC es un Bitcoin nativo envuelto en Core, que mantiene una vinculación 1:1 con BTC a través de un mecanismo seguro. Bitcoin users can interact seamlessly with the DeFi space on the EVM-compatible Core ecosystem using their BTC assets. It expands Bitcoin's functionality within the DeFi landscape without compromising its inherent security.
 
 ### 2. ¿En qué se diferencia coreBTC de los tokens empaquetados centralizados (por ejemplo, WBTC)?
 
