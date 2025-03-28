@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Common Error Messages
+# Core API Common Error Messages
 
 An API call that encounters an error will return 0 as its status code and display the cause of the error in the result field.
 
