@@ -21,7 +21,7 @@ Les objectifs principaux de l'introduction du staking liquide via stCORE sur Cor
 - Améliorer l'expérience utilisateur
 - Apporter plus d'utilité au token CORE
 
-Pour l'instant, les utilisateurs peuvent staker des tokens CORE directement auprès de validateurs individuels via https://stake.coredao.org. Cependant, deux inconvénients ont été soulevés par la communauté
+For the moment users can stake CORE tokens to individual validators directly through the official [Core Staking Website](https://stake.coredao.org). Cependant, deux inconvénients ont été soulevés par la communauté
 
 - Absence de fonctionnalité de capitalisation automatique : Les utilisateurs doivent manuellement réclamer et restaker leurs récompenses quotidiennement.
 - Instabilité de l'APR : Les staking de hash provenant des pools de minage Bitcoin sont moins fongibles et stables que les staking de CORE, ce qui entraîne des variations dans l'APR des validateurs.
