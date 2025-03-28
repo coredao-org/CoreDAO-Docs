@@ -85,5 +85,5 @@ To prevent your subgraph from being overwritten by others, please contact us on 
 
 If you are testing against the Core TestNet Graph, here are the access token for general testing purpose:
 
-- **General key for Core Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
+- **General key for Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
 - **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0
