@@ -1,5 +1,5 @@
 ---
-sidebar_label: Dual Staking
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -37,82 +37,7 @@ Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Du
 1. Staker à la fois du CORE et du Bitcoin simultanément, en s'assurant que la quantité de CORE staké dépasse le seuil minimum de dual staking **ET**
 2. L'adresse du portefeuille de staking de CORE **doit** correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est payé.
 
-### Seuils de rendement boosté
-
-Actuellement, les récompenses Satoshi Plus sont allouées via trois pools, une pour chacune des trois entités participant à l'élection des validateurs Core, à savoir (1) les délégateurs de puissance de hachage, (2) les stakers de Bitcoin et (3) les stakers de CORE.
-
-Le Dual Staking n'affecte pas ces pools de récompenses, mais permet aux stakers de Bitcoin qui stakent également des tokens CORE de gagner une proportion plus élevée de récompenses dans le pool de staking de Bitcoin. Dans cette section, nous couvrons en détail le fonctionnement de l'algorithme de gradation en ce qui concerne le dual staking.
-
-1. **Niveaux de rendement boosté**\
-  Sous le Dual Staking, il y a 3 niveaux de rendement boosté pour le staking de Bitcoin basés sur la proportion de CORE staké par rapport au Bitcoin staké. Pour les solo-stakers de Bitcoin seulement, un quatrième niveau existe avec le taux de staking de Bitcoin le plus bas. Il est important de noter que le taux de récompense annuel pour le staking de Bitcoin peut fluctuer de manière significative, souvent en raison de variations des prix et d'autres dynamiques du marché. En conséquence, les rendements boostés réels peuvent changer quotidiennement en fonction des conditions du marché.
-
-  - **P<sub>BASE</sub>** \= le taux de base du staking BTC
-  - **P<sub>Level1</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 1
-  - **P<sub>Level2</sub>** \= le taux de base du staking BTC \+ rendement boosté de Niveau 2
-  - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= le taux de base du staking BTC \+ rendement boosté de Niveau 3
-
-En pratique, les émissions de CORE sont distribuées au prorata en fonction de la TVL (Total Value Locked) en BTC, pondérée en fonction de leur niveau de dual staking (CORE:BTC).
-
-2. **Seuils de CORE Staké et Ratios de Staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-  Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, or **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où R représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Les ratios de staking CORE:BTC actuels sont les suivants :
-
-  - Ratio de Staking R1 \= 2 000 CORE par 1 BTC
-  - Ratio de Staking R2 \= 6 000 CORE par 1 BTC
-  - Ratio de Staking R3 \= 16 000 CORE par 1 BTC
-
-En gardant ces ratios à l'esprit, les utilisateurs peuvent calculer le seuil requis pour chaque niveau comme suit :
-
-```
-* **Seuil de CORE Staké pour P<sub>Niveau1</sub>** \= Quantité de BTC staké \* Ratio de Staking (**R<sub>1</sub>**)  
-* **Seuil de CORE Staké pour  P<sub>Niveau2</sub>** \= Quantité de BTC staké \* Ratio de Staking (**R<sub>2</sub>**)  
-* **Seuil de CORE Staké pour P<sub>Niveau3</sub> (P<sub>MAX</sub>)** \= Quantité de BTC staké * Ratio de Staking (**R<sub>3</sub>**)
-```
-
-:::note
-Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs validateurs Core actifs.
-:::
-
-3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
-  - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
-  - Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau1</sub>**
-  - Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau2</sub>**
-  - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Niveau3</sub>** (**P<sub>MAX</sub>**)
-
-:::note
-Les ratios de staking et le nombre de niveaux sont configurables et sujets à modification par vote de gouvernance.
-:::
-
-### Exemple
-
-Voici un exemple simple expliquant comment calculer le CORE requis pour staker, basé sur les paramètres mentionnés ci-dessus, pour débloquer des niveaux de rendement augmentés pour le Dual Staking.
-
-Supposons que l'utilisateur doive staker du CORE selon les Seuils de CORE Staké suivants pour bénéficier d'un rendement plus élevé sur son BTC staké avec les variables ci-dessus :
-
-- Ratio de staking **R<sub>1</sub>** \= 2 000
-- Ratio de staking **R<sub>2</sub>** \= 6 000
-- Ratio de staking **R<sub>3</sub>** \= 16 000
-- Quantité de BTC staké \= 10 BTC
-
-Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
-
-- Seuil de CORE staké pour **P<sub>Niveau1</sub>** \= 10 \* 2 000 \= 20 000 CORE staké
-- Seuil de CORE staké pour **P<sub>Level2</sub>** \= 10 \* 6 000 \= 60 000 CORE staké
-- Seuil de CORE staké pour **P<sub>Niveau3</sub>** \= 10 \* 16 000 \= 160 000 CORE staké
-
-Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
-
-- **P<sub>BASE</sub>** si la quantité de CORE staké est inférieure à 20 000
-- **P<sub>Niveau1</sub>** si la quantité de CORE staké est supérieure ou égale à 20 000 mais inférieure à 60 000
-- **P<sub>Niveau2</sub>** si la quantité de CORE staké est supérieure ou égale à 60 000 mais inférieure à 160 000
-- **P<sub>Niveau3</sub> (P<sub>MAX</sub>)** si la quantité de CORE staké est supérieure ou égale à 160 000
-
-:::note
-Le multiplicateur sur chaque niveau de rendement augmenté est dynamique et sujet à modification en fonction des conditions d'offre et de demande du marché
-:::
-
-:::info
-Pour que votre nouveau palier de dual staking prenne effet, vous devrez peut-être effectuer deux étapes. Cela concerne les utilisateurs qui ont déjà staké du BTC lors de précédents tours à 00:00 UTC et qui décident de staker du CORE supplémentaire pour passer à un palier supérieur. Tout d'abord, après avoir staké du CORE, attendez le prochain 00:00 UTC. Ensuite, réclamez toutes vos récompenses à n’importe quel moment après 00:00 UTC afin de réinitialiser le système de calcul du palier. Votre nouveau palier sera activé dès que vous aurez finalisé la réclamation de vos récompenses. Les deux étapes sont essentielles pour garantir la prise en compte de votre nouveau palier.
-:::
+Based on the CORE:BTC staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>), representing CORE tokens staked relative to Bitcoin staked, Bitcoin staking rewards are divided into n boosted yields (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>). Depending on a user's boosted yield level, yield multipliers are applied to the base rate for staking Bitcoin on Core. Yield multipliers are determined based on the user's staking data and system dual staking settings. As a result, different users might have different multipliers. Specific CORE staking thresholds should also be met to qualify for boosted yields. Further, it is to be noted that the staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>) and the number of boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>) are subject to change and are adjustable through governance votes.
 
 ## Qu'est-ce qui change avec le Dual Staking ?
 
