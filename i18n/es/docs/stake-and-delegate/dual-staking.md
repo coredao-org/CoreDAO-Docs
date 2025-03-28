@@ -1,5 +1,5 @@
 ---
-sidebar_label: Doble apuesta
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -37,82 +37,7 @@ To enable higher yields for Bitcoin staking through Dual Staking, users must mee
 1. Stake both CORE and Bitcoin simultaneously, ensuring that the amount of CORE staked exceeds the minimum dual staking threshold  **AND**
 2. The CORE staking wallet address _**must**_ match the designated CORE rewards address for Bitcoin staking to which the yield is paid.
 
-### Boosted Yield Thresholds
-
-Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers.
-
-Dual Staking does not affect these reward pools, but does enable Bitcoin stakers who also stake CORE tokens to earn a higher proportion of rewards in the Bitcoin Staking pool. In this section, we cover in detail the working of the grading algorithm with respect to dual staking.
-
-1. **Boosted Yield Levels**\
-  Under Dual Staking, there are 3 boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. For Solo-Stakers of only Bitcoin, a fourth tier exists with the lowest Bitcoin staking rate. It is important to note that the annual reward rate for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics. As a result, the actual boosted yields may change daily based on market conditions.
-
-  - **P<sub>BASE</sub>** \= the BTC staking base rate
-  - **P<sub>Level1</sub>** \= the BTC staking base rate \+ Level 1 boosted yield
-  - **P<sub>Level2</sub>** \= the BTC staking base rate \+ Level 2 boosted yield
-  - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= the BTC staking base rate \+ Level 3 boosted yield
-
-Effectively, the CORE emissions are distributed pro rata based on the BTC TVL, weighted based on their dual staking tier (CORE:BTC).
-
-2. **Staked CORE Thresholds and Staking Ratios (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-  The deciding mechanism for a Bitcoin staker’s yield tier  (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ration and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. The current CORE:BTC staking ratios are as follows:
-
-  - Staking Ratio R1 \= 2,000 CORE per 1 BTC
-  - Staking Ratio R2 \= 6,000 CORE per 1 BTC
-  - Staking Ratio R3 \= 16,000 CORE per 1 BTC
-
-Keeping these ratios in mind, users can calculate the required threshold for each tier as follows:
-
-```
-* **Staked CORE Threshold for P<sub>Level1</sub>** \= BTC staked quantity \* Staking Ratio (**R<sub>1</sub>**)  
-* **Staked CORE Threshold for P<sub>Level2</sub>** \= BTC staked quantity \* Staking Ratio (**R<sub>2</sub>**)  
-* **Staked CORE Threshold for P<sub>Level3</sub> (P<sub>MAX</sub>)** \= BTC staked quantity \* Staking Ratio (**R<sub>3</sub>**)
-```
-
-:::note
-The staked CORE and/or staked Bitcoin can be distributed across multiple active Core validators.
-:::
-
-3. **Boosted yield level determination for each (1) staked Bitcoin**
-  - If staked CORE amount  \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**
-  - If **R<sub>1</sub>** \=\< staked CORE amount \< **R<sub>2</sub>**, the user enters tier **P<sub>Level1</sub>**
-  - If **R<sub>2</sub>** \=\< staked CORE amount \< **R<sub>3</sub>**, the user enters tier **P<sub>Level2</sub>**
-  - If staked CORE amount \>= **R<sub>3</sub>**, the user enters tier **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
-
-:::note
-Staking ratios and the number of levels are configurable and subject to change by governance vote.
-:::
-
-### Example
-
-The following is a simple example explaining how to calculate the required CORE to stake, based on the above mentioned parameters, to unlock boosted yield tiers for Dual Staking.
-
-Now, the user will have to stake CORE as per the following Staked CORE Thresholds to enjoy a higher yield on their staked BTC with the above variables:
-
-- Staking Ratio **R<sub>1</sub>** \= 2,000
-- Staking Ratio **R<sub>2</sub>** \= 6,000
-- Staking Ratio **R<sub>3</sub>** \= 16,000
-- Staked BTC quantity \= 10 BTC
-
-The **Staked CORE Thresholds** with the above variables are:
-
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 2,000 \= 20,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 6,000 \= 60,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 16,000 \= 160,000 staked CORE
-
-Hence, the staked BTC in this example will enjoy a yield of
-
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 20,000
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 20,000 but below 60,000
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 60,000 but below 160,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 160,000
-
-:::note
-The multiplier on each boosted yield tier is dynamic and subject to change as per the supply and demand conditions of the market
-:::
-
-:::info
-For your new dual staking tier to take effect, you  may need to follow two steps. This applies to users who already have BTC staked in earlier rounds at 00:00 am UTC and decide to stake additional CORE to move up tiers. First, after staking CORE, wait until the next 00:00 UTC. Then, claim all your rewards anytime after 00:00 UTC to reset the tier calculation system. Your new tier will activate as soon as you complete the claim. Both steps are essential to ensure your new tier takes effect.
-:::
+Based on the CORE:BTC staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>), representing CORE tokens staked relative to Bitcoin staked, Bitcoin staking rewards are divided into n boosted yields (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>). Depending on a user's boosted yield level, yield multipliers are applied to the base rate for staking Bitcoin on Core. Yield multipliers are determined based on the user's staking data and system dual staking settings. As a result, different users might have different multipliers. Specific CORE staking thresholds should also be met to qualify for boosted yields. Further, it is to be noted that the staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>) and the number of boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>) are subject to change and are adjustable through governance votes.
 
 ## What Changes with Dual Staking?
 
