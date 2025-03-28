@@ -1,10 +1,10 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: Validators on the Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Descripción general de los validadores
+# Validators on the Core Network
 
 ---
 
@@ -29,7 +29,9 @@ Los validadores deben compartir recompensas con los delegados que apostaron CORE
 
 **_Tenga en cuenta que la liquidación de recompensas se realiza diariamente, es decir, una ronda, en lugar de por bloque._**
 
-![distribución-de-recompensas-validador](../../../static/img/validator/Reward-Distribution.png)
+<p align="center">
+![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png) 
+</p>
 
 Supongamos que la recompensa base para una ronda es **3000 CORE** y que un determinado validador establece su tasa de comisión en **20%**. Estos tokens no van directamente al proponente. En cambio, se comparten entre validadores y delegados. Estos **3000 CORE** se repartirán según la apuesta de cada participante. Supongamos que las tarifas generadas por todas las transacciones en todos los bloques de una ronda fueron **100 CORE**.
 
