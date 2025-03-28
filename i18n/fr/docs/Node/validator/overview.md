@@ -1,10 +1,10 @@
 ---
-sidebar_label: Aperçu
+sidebar_label: Validators on the Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Vue d'ensemble des validateurs
+# Validators on the Core Network
 
 ---
 
@@ -28,7 +28,9 @@ Les validateurs sont tenus de partager les récompenses avec les délégués qui
 
 **_Notez que les règlements des récompenses se font sur une base quotidienne, c'est-à-dire par tour, et non par bloc._**
 
-![validator-reward-distribution](../../../static/img/validator/Reward-Distribution.png)
+<p align="center">
+![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png) 
+</p>
 
 Prenons l'exemple d'une récompense de base pour un tour de **3 000 CORE**, et supposons qu'un validateur fixe son taux de commission à **20 %**. Ces tokens ne vont pas directement à l'auteur de la proposition. Ils sont plutôt partagés entre les validateurs et les délégués. Ces **3 000 CORE** seront distribués en fonction de la participation de chaque participant. Supposons que les frais générés par toutes les transactions dans tous les blocs d'un tour s'élèvent à **100 CORE**.
 
