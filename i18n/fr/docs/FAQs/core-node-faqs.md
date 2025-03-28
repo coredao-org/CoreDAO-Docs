@@ -44,7 +44,7 @@ Un nœud complet Core stocke l'historique complet de la blockchain Core, permett
 | RAM              | 8 Go                                                                          |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 **Spécifications matérielles pour le Mainnet**
 
@@ -55,7 +55,7 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds complets]
 | RAM              | 32 Go                                                                         |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. Qu'est-ce qu'un nœud RPC Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud RPC Core ?
 
@@ -111,4 +111,4 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds validateu
 
 ### 6. Comment configurer un nœud complet sur la blockchain Core ?
 
-Consultez le guide détaillé [ici](../Node/Full-Node/on-mainnet.md) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.
+Refer to the detailed guide [here](../Node/config/full-node.md) on how to set up and run a full node on the Core network.
