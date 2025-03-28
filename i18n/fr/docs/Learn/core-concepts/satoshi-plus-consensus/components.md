@@ -11,13 +11,15 @@ description: Apprendre sur les éléments principaux du mécanisme de Satoshi Pl
 
 Le mécanisme de consensus Satoshi Plus représente une innovation révolutionnaire dans la technologie de la blockchain, spécifiquement développé pour la plateforme Core afin de combiner de manière synergique la sécurité robuste du bitcoin avec la flexibilité et l'évolutivité des contrats intelligents. Ce modèle de consensus hybride fusionne la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS) et le Staking de Bitcoin non-custodial. Cela permet aux mineurs de Bitcoin de participer directement à la gouvernance et à la sécurité de la plateforme décentralisée des contrats intelligents, sans coût supplémentaire. En s’appuyant sur l’infrastructure déjà en place du minage de Bitcoin, Satoshi Plus apporte non seulement une couche supplémentaire au protocole de sécurité, mais renforce également les structures d’incitation dans les deux écosystèmes, assurant un alignement équilibré des intérêts pour toutes les parties prenantes impliquées dans la blockchain Core.
 
-![satoshi-plus](https://github.com/user-attachments/assets/8e90becb-71c2-4798-813c-27bcf6e1badb)
+![satoshi-plus](../../../../static/img/staoshi-plus/consensus-components.png)
 
 ## Composants majeurs du mécanisme Satoshi Plus
 
 Le mécanisme de consensus Satoshi Plus, conçu pour la blockchain Core, intègre intelligemment à la fois la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS) et le Staking de Bitcoin Non-Custodial. Ce système hybride est conçu pour exploiter les points forts de l’infrastructure du minage de Bitcoin déjà existante tout en intégrant de la flexibilité au mécanisme de staking qui prévalent dans de nombreuses blockchains modernes. Ci-dessous les différents composants, leurs rôles et comment ils interagissent afin de maintenir la sécurité et l’efficacité du réseau. Ci-dessous un diagramme illustrant comment les composants majeurs du mécanisme de consensus Satoshi Plus s’assemblent permettant un écosystème sécurisé et solide.
 
-![component-diagram](../../../../static/img/staoshi-plus/component-diagram.jpg)
+<p align="center">
+![component-diagram](../../../../static/img/Core-Architecture.png)
+</p>
 
 ### 1. **Preuve de travail déléguée (DPoW)**
 
@@ -95,5 +97,7 @@ Satoshi Plus renforce la sécurité à la fois des réseaux Bitcoin et Core en c
 
 - **Un modèle de sécurité partagé:** En permettant aux mineurs de Bitcoin de participer au mécanisme de sécurité de Core, le système tire parti de l’immense puissance de hashage du Bitcoin, renforçant ainsi la sécurité de la blockchain Core sans nécessité de ressource supplémentaire importante.
 - **Déroulement des opérations:** Comme les mineurs et les stakers contribuent à la sécurité de la blockchain Core, les deux réseaux en bénéficient. Les mineurs utilisent leurs configurations existantes pour soutenir la blockchain Core, et les stakers fournissent des couches de sécurité supplémentaires via la délégation de token, créant un réseau robuste et résilient.
+
+## Conclusion
 
 En résumé, le mécanisme de consensus Satoshi Plus intègre intelligemment ces composants dans un système cohérent qui bénéficient de la sécurité et de la décentralisation du processus de minage de Bitcoin ainsi que l’agilité et la capacité de gouvernance d’un modèle de staking moderne, encourageant un environnement blockchain sécurisé, efficace et scalable.
