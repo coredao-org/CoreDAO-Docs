@@ -1,26 +1,24 @@
 ---
-sidebar_label: Direcciones precompiladas
+sidebar_label: Ecosystem Contracts
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Precompilaciones y direcciones de implementación
+# Core Ecosystem Contracts
 
 ---
 
-A continuación se muestra una lista de direcciones precompiladas del ecosistema Core.
+Following is a list of precompiled addresses of smart contracts of Core ecosystem.
 
-| **Nombre**                            | **Direccion**                                                                                                               |
-| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| Contrato inteligente - ValidatorSet   | https://scan.coredao.org/address/0x0000000000000000000000000000000000001000 |
-| Contrato inteligente - SlashIndicator | https://scan.coredao.org/address/0x0000000000000000000000000000000000001001 |
-| Contrato inteligente - SystemReward   | https://scan.coredao.org/address/0x0000000000000000000000000000000000001002 |
-| Contrato inteligente - BTCLightClient | https://scan.coredao.org/address/0x0000000000000000000000000000000000001003 |
-| Contrato inteligente - RelayerHub     | https://scan.coredao.org/address/0x0000000000000000000000000000000000001004 |
-| Contrato inteligente - CandidateHub   | https://scan.coredao.org/address/0x0000000000000000000000000000000000001005 |
-| Contrato inteligente - GovHub         | https://scan.coredao.org/address/0x0000000000000000000000000000000000001006 |
-| Contrato inteligente - PledgeAgent    | https://scan.coredao.org/address/0x0000000000000000000000000000000000001007 |
-| Contrato inteligente - Burn           | https://scan.coredao.org/address/0x0000000000000000000000000000000000001008 |
-| Contrato inteligente - Fundamentos    | https://scan.coredao.org/address/0x0000000000000000000000000000000000001009 |
-
-
+| **Smart Contract Name** | **Direccion**                                                                                                             |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| ValidatorSet            | [0x0000000000000000000000000000000000001000](https://scan.coredao.org/address/0x0000000000000000000000000000000000001000) |
+| SlashIndicator          | [0x0000000000000000000000000000000000001001](https://scan.coredao.org/address/0x0000000000000000000000000000000000001001) |
+| SystemReward            | [0x0000000000000000000000000000000000001002](https://scan.coredao.org/address/0x0000000000000000000000000000000000001002) |
+| BTCLightClient          | [0x0000000000000000000000000000000000001003](https://scan.coredao.org/address/0x0000000000000000000000000000000000001003) |
+| RelayerHub              | [0x0000000000000000000000000000000000001004](https://scan.coredao.org/address/0x0000000000000000000000000000000000001004) |
+| CandidateHub            | [0x0000000000000000000000000000000000001005](https://scan.coredao.org/address/0x0000000000000000000000000000000000001005) |
+| GovHub                  | [0x0000000000000000000000000000000000001006](https://scan.coredao.org/address/0x0000000000000000000000000000000000001006) |
+| PledgeAgent             | [0x0000000000000000000000000000000000001007](https://scan.coredao.org/address/0x0000000000000000000000000000000000001007) |
+| Burn                    | [0x0000000000000000000000000000000000001008](https://scan.coredao.org/address/0x0000000000000000000000000000000000001008) |
+| Foundation              | [0x0000000000000000000000000000000000001009](https://scan.coredao.org/address/0x0000000000000000000000000000000000001009) |
