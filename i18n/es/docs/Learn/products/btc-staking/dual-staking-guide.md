@@ -45,13 +45,13 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 1. Visita [https://stake.coredao.org](https://stake.coredao.org/) y haz clic en **Apostar Ahora** en la parte superior derecha del encabezado.
 2. Una vez en la pestaña **Staking**, haz clic en la opción **Conectar** junto a "Monto de Staking de BTC" para conectar tu cartera de Bitcoin. Esta debe ser la cartera con los activos de Bitcoin que deseas apostar. Haz clic en la cartera compatible de tu elección para conectar tu cartera de Bitcoin.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-1.png)
 </p>
 
 3. De igual forma, haz clic en la opción **Conectar** junto a **Monto de Staking de CORE** y selecciona la cartera Core para apostar CORE y recibir recompensas por el staking.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png)
 </p>
 
@@ -59,7 +59,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 4. Ingresa la cantidad de Bitcoin que deseas apostar. The minimum amount is 0.01 BTC if user is staking through the website UI. However, there are no minimum amount requirements if staking BTC through staking script.
 
-<p align="center">
+<p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
 </p>
 
@@ -67,7 +67,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 5. Bajo **Delegar a Validador**, en el menú desplegable, selecciona un _**validador activo**_ al que deseas delegar tu Bitcoin.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-4.png)
 </p>
 
@@ -75,7 +75,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 6. Ingresa la cantidad de CORE que deseas apostar. El monto mínimo es 1 CORE.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-5.png)
 </p>
 
@@ -83,7 +83,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 7. Después de especificar la cantidad de CORE a apostar, elige el validador al que delegarás tu CORE. Asegúrate de seleccionar un validador activo del menú desplegable.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
@@ -91,13 +91,13 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 8. En el lado derecho de la Calculadora de Staking, hay una pestaña **Resumen** que calcula la Tasa Total de Recompensas de Staking y las Recompensas Anuales Proyectadas. Estos son los números estimados de retorno anual para el Bitcoin y CORE apostados. La tasa de recompensa puede fluctuar diariamente según los montos totales y ponderados de las delegaciones que reciben los validadores. Cuando se establece en el botón **Actual**, solo muestra la tasa estimada en tiempo real de las recompensas por staking. Cuando se establece en el botón **General**, representa el promedio de dos componentes: las tasas de todos los validadores basadas en los registros anteriores de staking y la tasa estimada en tiempo real.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
 9. También puedes usar los controles deslizantes en la sección inferior para ver el efecto de la proporción de staking CORE:BTC en tu Tasa Total de Recompensas de Staking.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
@@ -114,7 +114,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 - **BTC Apostado Activo:** La cantidad de BTC actualmente apostado y la tasa de recompensas promedio entre los validadores.
 - **CORE Apostado Activo:** La cantidad de CORE actualmente apostado y la tasa de recompensas promedio entre los validadores.
 
-<p align="center">
+<p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
@@ -122,13 +122,13 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 11. Una vez que hayas especificado la cantidad de BTC/CORE para apostar y los validadores para delegar, puedes hacer clic en el botón **Proceder a Apostar**.
 
-<p align="center">
+<p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
 12. En la página de Apostar CORE, confirma la cantidad de CORE que deseas apostar junto con el BTC, y haz clic en el botón **Confirmar**.
 
-<p align="center">
+<p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-12.png)
 </p> 
 
@@ -149,7 +149,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
   - El tiempo de bloqueo predeterminado se establece con un mes de anticipación.
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
-<p align="center">
+<p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
