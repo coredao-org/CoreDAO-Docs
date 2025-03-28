@@ -1,11 +1,11 @@
 ---
-sidebar_label: Seguridad
+sidebar_label: Security Model
 hide_table_of_contents: false
 sidebar_position: 2
 description: Conozca el modelo de seguridad de Core
 ---
 
-# Seguridad Core
+# Security Model of Core
 
 ---
 
@@ -89,7 +89,7 @@ Core emplea una arquitectura de seguridad sólida para mitigar amenazas potencia
 - **Descripción:** Las vulnerabilidades en el código de contrato inteligente pueden aprovecharse para realizar robos o manipular servicios.
 - **Mitigación lograda por:**
   - **Auditorías de código y revisiones de seguridad:** Las auditorías periódicas y exhaustivas del código de contrato inteligente realizadas por empresas de seguridad independientes ayudan a identificar y rectificar posibles vulnerabilidades.
-  - **Programas de recompensas por errores:** Alentar a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente ofreciendo recompensas por su descubrimiento.
+  - **Bug Reporting:** Encouraging the community and security researchers to find and report bugs, so that many potential exploits are caught early.
 
 ## Conclusión
 
