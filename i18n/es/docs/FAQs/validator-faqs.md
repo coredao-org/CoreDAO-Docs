@@ -58,7 +58,7 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM                   | 32 Gigabytes                                                                                                                                                                                   |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 10Mbps                                                                                                             |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 7. ¿Cuáles son los riesgos/penalizaciones que implica ser validador?
 
