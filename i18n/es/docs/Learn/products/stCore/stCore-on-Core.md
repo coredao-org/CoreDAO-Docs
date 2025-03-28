@@ -15,7 +15,7 @@ El Staking Líquido con stCORE mejora la utilidad del token CORE mientras simpli
 ## Empezando: Requisitos Previos
 
 1. **Verificar Disponibilidad de Tokens CORE:** Verifica que tu billetera de Core contenga la cantidad necesaria de tokens CORE para hacer staking.
-2. **Acceder a la Plataforma de Staking:** [Visita la Plataforma de Staking Líquido de Core](https://stake.coredao.org/stcore)
+2. **Access the Staking Platform:** [Visit Core Liquid Staking Platform](https://stake.coredao.org/liquid-staking/stcore)
 3. **Conectar la Billetera:** Conecta tu billetera a la plataforma.
 
 ## Definiciones Claves
