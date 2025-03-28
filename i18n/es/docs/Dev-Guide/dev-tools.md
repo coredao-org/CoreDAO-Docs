@@ -1,45 +1,83 @@
 ---
-sidebar_label: Herramientas para desarrolladores
+sidebar_label: Tools & Resources
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Panorama de herramientas para desarrolladores
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Developer Tools & Resources
 
 ---
 
 #### _Acceda a las herramientas y recursos de Core_
 
-### Recursos principales de Testnet de Blockchain
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet1', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+_Note: This is the latest and updated testnet for Core blockchain and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
 
-- **[Block Explorer](https://scan.test.btcs.network/):** busque y revise transacciones, cuentas, bloques y más.
+```
+* **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
 
-- **[Puntos finales RPC](https://chainlist.org/chain/1115):** Puntos finales RPC para el servicio RPC de Core Testnet.
+* **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Testnet's RPC service.
 
-- **[Core Faucet](https://scan.test.btcs.network/faucet):** financie su dirección de testnet con tCORE o tCORE2.
+* **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
-- **[Core Stake](https://stake.test.btcs.network/):** sitio web de tCORE stake.
+* **[Core Staking](https://stake.test2.btcs.network/):** Core's official testnet staking website.
 
-- **[Gnosis Safe](https://safe.test.btcs.network/welcome):** gestión segura multifirma de activos digitales.
+* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** secure multi-sig management of digital assets.
+```
+
+  </TabItem>
+  <TabItem value="testnet1">
+  _Note: This is the legacy testnet version and will be soon deprecated and eventually retired. It recommended to transition to the new testnet version._
+
+```
+* **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
+
+* **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
+
+* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
+
+* **[Core Staking](https://stake.test.btcs.network/):** Core's official testnet staking website.
+
+* **[Gnosis Safe](https://safe.test.btcs.network/welcome):** secure multi-sig management of digital assets.
+```
+
+  </TabItem>
+  <TabItem value="mainnet">
+    * **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
+
+```
+* **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
+
+* **[Core Bridge](https://bridge.coredao.org/):** official bridge for the Core ecosystem (more details in Core Bridge Resources)
+
+* **[Core Staking](https://stake.coredao.org/):** Core's official mainnet staking website.
+
+* **[Web3 Provider](https://cloud.infstones.com/login):** scalable API infrastructure provided by InfStones.
+
+* **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** web tool for contract verification (refer [here](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan) for detailed guide).
+
+* **[Gnosis Safe](https://safe.coredao.org/welcome):** secure multi-sig management of digital assets.
+
+* **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** official wrapped CORE token smart contract.
+```
+
+  </TabItem>
+</Tabs>
 
 ### Recursos generales
 
-- **[Core DAO GitHub](https://github.com/coredao-org):** la página oficial de GitHub, que incluye el código base de Core blockchain y más.
+- **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
+- **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
 
-### Recursos de la red principal de Core  Blockchain
+### Whitepaper
 
-- **[Block Explorer](https://scan.coredao.org/):** busque y revise transacciones, cuentas, bloques y más.
-
-- **[Puntos finales RPC](https://chainlist.org/chain/1116):** Puntos finales RPC para el servicio RPC de Core Mainnet.
-
-- **[Core Bridge](https://bridge.coredao.org/):** puente oficial para el ecosistema Core (más detalles en Core Bridge Resources)
-
-- **[Core Stake](https://stake.coredao.org/):** sitio web oficial de CORE Stake.
-
-- **[Proveedor Web3](https://cloud.infstones.com/login):** infraestructura API escalable proporcionada por InfStones.
-
-- **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** herramienta web para verificación de contratos (guía aquí).
-
-- **[Gnosis Safe](https://safe.coredao.org/welcome):** gestión segura multifirma de activos digitales.
-
-- **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** contrato inteligente de token CORE envuelto oficial.
+- **[Whitepaper](https://whitepaper.coredao.org/):** official whitepaper covering the technical overview of Core.
