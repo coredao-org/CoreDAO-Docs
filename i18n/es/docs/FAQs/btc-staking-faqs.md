@@ -14,7 +14,7 @@ Core ofrece a los titulares de Bitcoin una oportunidad sin riesgos y transparent
 
 ### 2\. ¿Cómo funciona el Stake de Bitcoin sin custodia?
 
-Con la participación sin custodia de bitcoins, el protocolo de Core incorpora a los poseedores de bitcoins en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. Para más detalles sobre cómo funciona la Apuesta de Bitcoin sin custodia, consulta [aquí](https://docs.google.com/document/d/1DfhLwMfANGYhcJe4UiyRJxpw1FvFX6k-QQK4cMYYOls/edit?tab=t.0#heading=h.1i3v4ioboaxe).
+Con la participación sin custodia de bitcoins, el protocolo de Core incorpora a los poseedores de bitcoins en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. For more details on how Non-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/btc-staking-working.md).
 
 ### 3\. ¿Cuáles son las ventajas de la apuesta de Bitcoin sin custodia?
 
