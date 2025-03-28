@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuración del nodo de instantánea
+sidebar_label: Snapshot Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuración del nodo de instantánea
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Snapshot Nodes on Core
 
 ---
 
@@ -12,37 +15,64 @@ Las instantáneas son importantes para que una red garantice que los nodos pueda
 
 ## Requerimientos del Systema
 
-Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un nodo de instantáneas en la red central.
+There are several system requirements, both software and hardware, for setting up a Snapshot Node on the Core network.
 
 ### Software
 
-- Actualmente, un nodo Core Snapshot solo se puede ejecutar en **Mac OS X** o en los sistemas operativos **Linux**.
+- **Operating System:** Currently, a Core Snapshot Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+- **Network Connectivity:** Stable internet connection with low latency and high availability
+- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Hardware
 
-En la red Core, los nodos Snapshot también actúan como nodos de archivo, almacenando todos los datos de la cadena de bloques.
+A Snapshot Node on Core provides periodic blockchain state snapshots, enabling faster node synchronization and reducing storage requirements. These nodes help new validators and RPC nodes quickly catch up with the latest blockchain state without processing the entire history. Snapshot Nodes improve network efficiency and accessibility. En la red Core, los nodos Snapshot también actúan como nodos de archivo, almacenando todos los datos de la cadena de bloques. Following are the minimum hardware recommendations for running Snapshot Node on Core. These specifications are designed to handle the testing and validation processes while ensuring efficient data storage and synchronization.
 
-#### Especificaciones de hardware del nodo de instantáneas de Testnet
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Para los nodos de instantáneas en **Core Blockchain Testnet**, recomendamos las siguientes especificaciones mínimas de hardware:
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+| **CPU**            | 4 CPU cores                                                                                             |
+| **RAM**            | 16 Gigabytes                                                                                            |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+```
 
-| Requisitos            | Detalles                                                                          |
-| --------------------- | --------------------------------------------------------------------------------- |
-| Almacenimiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
-| CPU                   | CPU de 4 nucleos                                                                  |
-| RAM                   | 16 Gigabytes                                                                      |
-| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
+  </TabItem>
+  <TabItem value="testnet">
+    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-#### Especificaciones de hardware del nodo de instantáneas de Mainnet
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+| **CPU**            | 4 CPU cores                                                                                             |
+| **RAM**            | 16 Gigabytes                                                                                            |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+```
 
-Para los nodos Sanpshot en **Core Blockchain Mainnet**, recomendamos las siguientes especificaciones mínimas de hardware:
+  </TabItem>
+  <TabItem value="mainnet">
+    For Snapshot Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-| Requisitos            | Detalles                                                                          |
-| --------------------- | --------------------------------------------------------------------------------- |
-| Almacenamiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
-| CPU                   | CPU de 4 nucleos                                                                  |
-| RAM                   | 16 Gigabytes                                                                      |
-| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+| **CPU**            | 4 CPU cores                                                                                             |
+| **RAM**            | 16 Gigabytes                                                                                            |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+```
+
+  </TabItem>
+</Tabs>
 
 ## Instantáneas de la red central
 
@@ -54,7 +84,7 @@ En la red Core, puede sincronizar su nodo con el estado más reciente de varias 
 
 ### Descargar binarios precompilados
 
-Descargue los binarios precompilados desde la [página de lanzamiento] (https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
+Download the pre-build binaries from official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below
 
 ##### Linux
 
