@@ -85,7 +85,7 @@ Puede monitorear el registro desde `/node/logs/core.log` de forma predeterminada
 ## Sincronización desde Genesis Block (no recomendado)
 
 :::note
-Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis, ya que actualmente la instantánea no está disponible. Puede descargar el binario más reciente para testnet desde [aquí](https://github.com/coredao-org/core-chain/releases).
+Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis, ya que actualmente la instantánea no está disponible. You can download the latest binary for testnet from [here](https://github.com/coredao-org/core-chain/releases).
 :::
 
 Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su nodo
