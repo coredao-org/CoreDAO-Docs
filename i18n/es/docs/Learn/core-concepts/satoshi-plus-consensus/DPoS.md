@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Aprovechar DPoS en Satoshi Plus
 ---
 
-# Prueba de participación delegada (DPoS)
+# Delegated Proof of Stake (DPoS) in Satoshi Plus
 
 ---
 
@@ -28,15 +28,15 @@ DPoS opera permitiendo a los poseedores de tokens CORE participar activamente en
 
 ## Proceso paso a paso
 
-1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). If users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked.
+1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). Note, if users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked.
 
-2. **Delegar a los validadores:** Los titulares de tokens delegan sus tokens CORE/BTC apostados a un validador elegido, lo que ayuda a su puntuación híbrida en el proceso de elección del validador.
+2. **Delegating to Validators:** Token holders delegate their staked CORE or BTC to a Core Validators of their choice, assisting their hybrid score in the validator election process.
 
 3. **Elección de validador:** Los validadores con la puntuación híbrida más alta, que incluye CORE delegado, son elegidos para el conjunto de validadores para una ronda determinada.
 
 4. **Producción de bloques:** Los validadores elegidos son responsables de producir bloques y validar transacciones durante su vigencia, obteniendo así recompensas.
 
-5. **Obtención de recompensas:** Los participantes de CORE y BTC obtienen recompensas de los validadores en quienes delegaron.
+5. **Earning Rewards:** CORE and BTC stakers earn rewards in the form of CORE tokens from the validators to whom they delegated.
 
 ## Importancia de DPoS en Satoshi Plusstakers obtienen recompensas de los validadores en quienes delegaron.
 
