@@ -19,25 +19,35 @@ Si tu período de staking ha expirado, redime tus activos de Bitcoin apostado de
 
 1. Desde cualquier pantalla de CORE, pasa el cursor sobre tu billetera conectada en la esquina superior derecha → haz clic en **‘Mi Staking’**.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
+</p>
 
 2. En la pantalla del delegador, busca la columna BTC(x) y haz clic.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-19.avif)
+</p>
 
 3. Ahora verás los validadores a los que previamente delegaste tu Bitcoin apostado. Busca cualquier validador que diga ‘**Expirado**’ debajo de ‘**Hora de Redención**’ y procede a hacer clic en ‘**Redimir**’ bajo ‘**Acción**’.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-20.avif)
+</p>
 
 4. Aparecerá una ventana emergente para redimir tu Bitcoin. Para redimir el Bitcoin, debes conectarte a la misma dirección de billetera de Bitcoin que la que inició la transacción de staking de Bitcoin.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-21.avif)
+</p>
 
 - Establece tu Dirección de Bitcoin receptora para recibir el Bitcoin desbloqueado. Esta no necesita ser la misma que la dirección que inició la transacción de staking de Bitcoin.
 - Establece tu prioridad de velocidad de transacción.
 - Haz clic en ‘**Crear Transacción**’.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-22.avif)
+</p>
 
 5. Firma la transacción con tu billetera de Bitcoin que conectaste previamente y verifica que el Bitcoin haya vuelto a tu dirección receptora. (_Esto puede tardar unos minutos_).
 
@@ -49,15 +59,21 @@ To be eligible to earn rewards, it is required to complete a full staking round 
 
 1\. Desde cualquier pantalla de CORE, pasa el cursor sobre tu billetera conectada en la esquina superior derecha, haz clic en ‘**Mi Staking**’.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-23.avif)
+</p>
 
 2. Haz clic en el botón ‘**Reclamar**’ junto a ‘**Recompensas de Staking de BTC**’.
 
+<p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-24.avif)
+</p>
 
 3. Firma la transacción a través de la billetera MetaMask.
 
+<p align="center" style={{zoom:"60%"}}>
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-25.png)
+</p>
 
 3. Espera a que se envíe la transacción.
 
