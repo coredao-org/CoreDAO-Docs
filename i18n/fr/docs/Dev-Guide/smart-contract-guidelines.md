@@ -65,11 +65,15 @@ solidity: {
 
 - For Core Mainnet and Testnet2, please choose `shanghai` in compiler configurations.
 
+<p align="center">
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
+</p>
 
 - For Core Legacy Testnet1 (chainID: 1115), please choose `paris` in compiler configurations.
 
+<p align="center">
 <img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />
+</p>
 
 ### Vérification des contrats
 
@@ -77,9 +81,10 @@ solidity: {
 - Les développeurs peuvent suivre les mêmes étapes de vérification que pour les versions antérieures pour leurs smart contracts en version 0.8.24^. Pour plus de détails sur la vérification des contrats sur la blockchain Core, reportez-vous à la documentation correspondante [ici](./contract-verify.md).
 - To verify the smart contracts deployed on the Core Legacy Testnet (1115), set the `EVM Version to target` in the **Misc Settings** on the contract verification page to `paris`.
 
+<p align="center">
 <img width="710" alt="image" src="https://github.com/user-attachments/assets/8f2b61f2-72c2-4607-8f64-9e1d1c19960b" />
+</p>
 
 ### Contrats intelligents basés sur des versions de Solidity < 0.8.24
 
 - **Remarque :** Les smart contracts écrits avec une version de Solidity **\< 0.8.24** ne sont pas concernés par ces changements et continuent de fonctionner normalement.
-
