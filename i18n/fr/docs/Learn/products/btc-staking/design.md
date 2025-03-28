@@ -1,5 +1,5 @@
 ---
-sidebar_label: Conception
+sidebar_label: Transaction Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -12,7 +12,9 @@ sidebar_position: 2
 
 La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). Le `OP_CHECKLOCKTIMEVERIFY` (CLTV) est un opcode spécifique utilisé dans le langage de script de Bitcoin, permettant de créer des conditions basées sur le temps ou la hauteur de bloc avant que les bitcoins puissent être dépensés à partir d'une sortie de transaction. Cela permet de créer des sorties verrouillées dans le temps, ce qui signifie qu'elles ne peuvent pas être dépensées avant qu'une certaine condition liée au temps ou à la hauteur de bloc ne soit remplie.
 
-![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design%20\\(5\\).png)
+<p align="center">
+![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
+</p>
 
 ### Exigences pour la Validité des Transactions {#requirements-for-transaction-validity}
 
@@ -28,7 +30,7 @@ La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillag
 Les opérations de Staking de Bitcoin Non-Custodial sont effectuées sur deux blockchains distinctes : Bitcoin et Core. Le schéma suivant illustre le flux de travail pour que les détenteurs de Bitcoin puissent gagner des récompenses de staking grâce au Staking de Bitcoin Non-Custodial de Core.
 
 <p align="center">
-![btc-staking-flow](../../../../static/img/btc-staking/NCBS%20Workflow.png)
+![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-workflow.png)
 </p>
 
 ## Structure des transactions
@@ -44,7 +46,7 @@ Une transaction de staking Bitcoin doit comporter deux ou trois sorties, qui son
 Notez qu'il n'y a **aucune** restriction sur les entrées.
 
 <p align="center">
-![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(1).png)
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-flow.png)
 </p>
 
 ### Transaction de retrait
@@ -52,7 +54,7 @@ Notez qu'il n'y a **aucune** restriction sur les entrées.
 Les UTXO (Bitcoins) verrouillés peuvent être dépensés en utilisant le script de rachat lorsque le verrouillage temporel prend fin.
 
 <p align="center">
-![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(2).png)
+![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
 </p>
 
 ## Design du script
