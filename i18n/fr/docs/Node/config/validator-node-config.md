@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuration des nœuds de validateur
+sidebar_label: Validator Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des nœuds de validateur
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Validator Nodes on Core
 
 ---
 
@@ -12,34 +15,61 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 
 ## Requis Systèmes
 
-Il existe plusieurs exigences système, à la fois logicielles et matérielles, pour configurer un nœud de validateur sur le réseau Core.
+There are several system requirements, both software and hardware, for setting up a Validator Node on the Core network.
 
 ### Logiciel
 
-- Actuellement, un nœud de validateur Core ne peut fonctionner que sous **Mac OS X** ou sous les systèmes d'exploitation **Linux**.
+- **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+- **Network Connectivity:** Stable internet connection with low latency and high availability
+- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Matériel
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
+A Validator Node on Core participates in block production and transaction validation, ensuring network security and consensus. Validators are elected based on their hybrid score (delegated Bitcoin hash power, CORE staking, and Bitcoin staking) and take turns producing blocks. They play a critical role in maintaining blockchain integrity and earning rewards for securing the network. Following are the hardware requirements for running Validator Nodes on Core.
 
-#### Spécifications matérielles pour les nœuds de validateur sur le Testnet
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+For Validator Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Pour les Nœuds de Validateur sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
+| **RAM**            | 8 Gigabytes                                                                                             |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+```
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 4 cœurs CPU                                                                                                                                  |
-| RAM              | 8 Go                                                                                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
+  </TabItem>
+  <TabItem value="testnet">
+    For Validator Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
-#### Spécifications matérielles pour les nœuds de validateur sur le Mainnet
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
+| **RAM**            | 8 Gigabytes                                                                                             |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+```
 
-Pour les Nœuds de Validateur sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+  </TabItem>
+  <TabItem value="mainnet">
+   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                                                  |
-| RAM              | 32 Go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps.                                              |
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
+| **RAM**            | 32 Gigabytes                                                                                            |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+```
+
+  </TabItem>
+</Tabs>
