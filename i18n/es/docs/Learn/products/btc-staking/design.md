@@ -1,5 +1,5 @@
 ---
-sidebar_label: Diseño
+sidebar_label: Transaction Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -12,7 +12,9 @@ sidebar_position: 2
 
 La metodología para integrar el staking de Bitcoin se centra en el [tiempo de bloqueo CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo `OP_CHECKLOCKTIMEVERIFY` (CLTV) es un código de operación específico utilizado en el lenguaje de programación de Bitcoin que permite crear condiciones basadas en el tiempo o la altura del bloque antes de que se puedan gastar bitcoins desde el resultado de una transacción. Esto proporciona una manera de crear salidas con bloqueo de tiempo, lo que significa que no se pueden gastar hasta que se cumpla una determinada condición relacionada con el tiempo o la altura del bloque.
 
-![btc-stake-tx-design](../../../../static/img/btc-stake/tx-design/stake-tx-design%20\(5\).png)
+<p align="center">
+![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
+</p>
 
 ### Requisitos para la validez de las transacciones {#requirements-for-transaction-validity}
 
@@ -28,7 +30,7 @@ La metodología para integrar el staking de Bitcoin se centra en el [tiempo de b
 Las operaciones de staking de Bitcoin sin custodia se llevan a cabo en dos cadenas de bloques independientes: Bitcoin y Core. El siguiente diagrama de flujo ilustra el flujo de trabajo para que los poseedores de Bitcoin ganen recompensas de staking a través del staking de Bitcoin sin custodia de Core.
 
 <p align="center">
-![flujo de staking de btc](../../../../static/img/btc-staking/NCBS%20Workflow.png)
+![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-workflow.png)
 </p>
 
 ## Estructura de transacción
@@ -44,7 +46,7 @@ Una transacción de participación de Bitcoin debe tener dos o tres resultados, 
 (_Opcional_) Cambiar dirección.
 
 <p align="center">
-![salida de la transacción de staking de btc](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(1).png)
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-flow.png)
 </p>
 
 ### Transacción de retiro
@@ -52,7 +54,7 @@ Una transacción de participación de Bitcoin debe tener dos o tres resultados, 
 Los UTXO (Bitcoins) bloqueados se pueden gastar usando el script de canje cuando finaliza el bloqueo de tiempo.
 
 <p align="center">
-![tx-de-retiro-de-staking-btc](../../../../static/img/btc-staking/tx-design/staking-tx-design%20(2).png)
+![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
 </p>
 
 ## Diseño de guión
