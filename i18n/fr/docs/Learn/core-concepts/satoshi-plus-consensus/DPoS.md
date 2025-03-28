@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Exploiter la DPoS dans Satoshi Plus
 ---
 
-# Preuve d’enjeu déléguée (DPoS)
+# Delegated Proof of Stake (DPoS) in Satoshi Plus
 
 ---
 
@@ -29,15 +29,15 @@ La DPoS permet aux détenteurs de tokens CORE de participer activement au consen
 
 ## Processus étape par étape
 
-1. **Staking de Tokens CORE/BTC :** Les détenteurs de CORE et de BTC décident de participer à la sécurité du réseau en stakant leurs tokens. L'exigence minimale de staking est de 1 token CORE ou 0,01 BTC (si le staking se fait via l'interface utilisateur officielle du site web). Si les utilisateurs optent pour le staking BTC via script, aucune exigence minimale n’est imposée quant à la quantité de BTC staké.
+1. **Staking de Tokens CORE/BTC :** Les détenteurs de CORE et de BTC décident de participer à la sécurité du réseau en stakant leurs tokens. L'exigence minimale de staking est de 1 token CORE ou 0,01 BTC (si le staking se fait via l'interface utilisateur officielle du site web). Note, if users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked.
 
-2. **Délégation aux Validateurs :** Les détenteurs de tokens délèguent leurs tokens CORE/BTC stakés à un validateur de leur choix, aidant ainsi à améliorer le score hybride du validateur dans le processus d'élection.
+2. **Delegating to Validators:** Token holders delegate their staked CORE or BTC to a Core Validators of their choice, assisting their hybrid score in the validator election process.
 
 3. **Élection des Validateurs :** Les validateurs ayant le score hybride le plus élevé, qui inclut les CORE délégués, sont élus dans l'ensemble des validateurs pour une période donnée.
 
 4. **Production de Blocs :** Les validateurs élus sont responsables de la production des blocs et de la validation des transactions pendant leur mandat, ce qui leur permet de gagner des récompenses.
 
-5. **Réception des Récompenses :** Les stakers de CORE et de BTC reçoivent des récompenses des validateurs auxquels ils ont délégué leurs tokens.
+5. **Earning Rewards:** CORE and BTC stakers earn rewards in the form of CORE tokens from the validators to whom they delegated.
 
 ## Importance de la DPoS dans Satoshi Plus
 
