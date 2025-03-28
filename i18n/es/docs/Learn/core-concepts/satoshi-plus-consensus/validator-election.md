@@ -2,25 +2,25 @@
 sidebar_label: Elección del validador
 hide_table_of_contents: false
 sidebar_position: 2
-description: Conozca el proceso de elección del validador Satoshi Plus
+description: Satoshi Plus Validator Election Process
 ---
 
-# Elección del validador
+# Validator Election Process on Core
 
 ---
 
 ## Descripción general
 
-El proceso de elección del validador en el mecanismo de consenso Satoshi Plus de Core es donde se sintetizan la prueba de trabajo delegada, la prueba de participación delegada y la participación de Bitcoin sin custodia. Los mineros/grupos de minería de Bitcoin, los participantes de CORE y los participantes de Bitcoin contribuyen a la elección de validadores a través de un sistema de puntuación híbrido.
+The validator election process in Core's Satoshi Plus consensus mechanism is where DPoW, DPoS, and Non-Custodial Bitcoin Staking are synthesized. Los mineros/grupos de minería de Bitcoin, los participantes de CORE y los participantes de Bitcoin contribuyen a la elección de validadores a través de un sistema de puntuación híbrido.
 
 Los validadores desempeñan un papel vital en la producción de bloques y la validación de transacciones en la red Core. El proceso de elección determina qué validadores formarán parte del conjunto de validadores activos para cada ronda, lo que garantiza que se elijan los validadores más confiables y mejor respaldados para mantener la integridad de la red.
 
 ## Proceso paso a paso
 
 1. **Delegación de Recursos:**
- - **Mineros de Bitcoin:** Los mineros de Bitcoin delegan su poder de hash a los validadores principales al incluir información específica en el campo op_return de la transacción de coinbase.
- - **CORE Token Stakers:** Los poseedores de tokens CORE delegan sus tokens apostados a sus validadores preferidos.
- - **Bitcoin Stakers:** Los poseedores de Bitcoin bloquean su Bitcoin en bloqueos de tiempo absoluto y delegan su Bitcoin a los validadores elegidos.
+ - **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core Validators by including specific information in the `op_return` field of the coinbase transaction.
+ - **CORE Token Stakers:** Holders of CORE tokens delegate their tokens to their preferred Core Validators.
+ - **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in absolute time locks and delegate their assets to their preferred Core Validators.
 
 2. **Cálculo de puntuación híbrida:**
  - La puntuación híbrida para cada validador se calcula en función de la cantidad de poder de hash delegado de los mineros de Bitcoin, la cantidad de tokens CORE apostados y la cantidad de Bitcoin apostados.
@@ -28,14 +28,14 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
 
 3. **Elección de Validadores:**
  - En cada ronda, que dura un día, los validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores.
- - Los 23 validadores con las puntuaciones más altas son elegidos para formar parte del conjunto de validadores activos para esa ronda.
+ - The top **27** validators with the highest scores are chosen to be part of the active validator set for that round.
 
 4. **Responsabilidades del validador:**
  - Los validadores elegidos son responsables de producir bloques y validar transacciones durante toda la ronda.
  - Trabajan en forma de turnos, tomándose turnos para producir bloques durante cada ranura, y cada ranura dura tres segundos.
 
 5. **Actualización del conjunto de validadores:**
- - El conjunto de validadores se actualiza cada 200 bloques para garantizar la estabilidad y el rendimiento. Si algún validador es encarcelado o cortado, otros continúan produciendo bloques sin interrupción.
+ - The validator set is updated every **200 blocks** to ensure stability and performance. Si algún validador es encarcelado o cortado, otros continúan produciendo bloques sin interrupción.
  - Al final de cada ronda, las recompensas acumuladas se calculan y distribuyen, y se determina un nuevo conjunto de validadores en función de las puntuaciones híbridas actualizadas.
 
 6. **Distribución de recompensas:**
@@ -44,10 +44,10 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
 
 ## Flujo de trabajo del proceso de elección del validador
 
-El proceso de elección del Validador en Satoshi Plus implica pasos clave, respaldados por ecuaciones específicas para cuantificar las contribuciones de participación y poder de hash:
+The validator election process in Satoshi Plus involves key steps, supported by specific equations to quantify stake and hash power contributions:
 
 1. **Delegación de estaca:**
- - Los poseedores de CORE y Bitcoin apuestan y delegan sus tokens a candidatos validadores. Esta delegación es una forma de votación, donde el peso de cada voto corresponde al número de tokens apostados.
+ - CORE and Bitcoin holders stake and delegate their tokens to Core validators. Esta delegación es una forma de votación, donde el peso de cada voto corresponde al número de tokens apostados.
 
 2. **Delegación de poder hash:**
  - Los mineros de Bitcoin delegan una parte de su poder de hash especificando sus validadores preferidos en los bloques de Bitcoin que extraen. Este proceso integra el poder minero de Bitcoin en el mecanismo de seguridad de Core.
@@ -72,7 +72,7 @@ Donde, $$m + k + l = 1$$
 - $$l$$: Ratio asignado a la participación en BTC.
 
 4. **Producción de bloques:**
- - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. El número actual de validadores es **23**_, y se espera que el número de validadores aumente con el tiempo a medida que crece la red. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
+ - Después de la elección, todos los validadores se clasifican aproximadamente según su puntuación híbrida y se turnan para producir bloques **en forma circular** antes de que el proceso comience de nuevo desde el principio. The present number of validators is **27**, with the number of validators expected to increase over time as the network grows. Es más, este mecanismo proporciona seguridad adicional a través de una mayor eficiencia y tolerancia para una gran cantidad de jugadores bizantinos. Core es seguro siempre que no más de $1 \más de 3$ de los validadores sean maliciosos.
 
 5. **Distribución de recompensas:**
 
@@ -136,6 +136,8 @@ Estas funciones de división de recompensas están diseñadas para crear un merc
 
 El siguiente diagrama representa visualmente el proceso de elección del Validador en Satoshi Plus:
 
-![validator-election-flow](../../../../static/img/staoshi-plus/validator-election-flow.png)
+<p align="center">
+![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
+</p>
 
 Este diagrama de flujo ilustra el proceso cíclico de la elección del validador y sus responsabilidades actuales dentro de Satoshi Plus. Enfatiza cómo las delegaciones de poder de hash y participación influyen directamente en la selección de validadores, la producción de bloques y la distribución de recompensas, impulsando una red segura, descentralizada y administrada de manera eficiente.
