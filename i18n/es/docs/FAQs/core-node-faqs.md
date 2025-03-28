@@ -44,7 +44,7 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 | RAM                   | 8 Gigabytes                                                                       |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 **Especificaciones de hardware del nodo completo de Mainnet**
 
@@ -55,7 +55,7 @@ Para obtener más detalles, consulte la [Guía de configuración de nodos comple
 | RAM                   | 32 Gigabytes                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. ¿Qué es un nodo RPC de Core? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core RPC?
 
@@ -111,4 +111,4 @@ Para obtener más detalles, consulte la [Guía de configuración del nodo valida
 
 ### 6. ¿Cómo configuro un nodo completo en Core blockchain?
 
-Consulte la guía detallada [aquí](../Node/Full-Node/on-mainnet.md) sobre cómo configurar y ejecutar un nodo completo en la red Core.
+Refer to the detailed guide [here](../Node/config/full-node.md) on how to set up and run a full node on the Core network.
