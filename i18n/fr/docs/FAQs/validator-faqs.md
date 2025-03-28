@@ -58,7 +58,7 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 | RAM              | 32 Go                                                                                                                                        |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. Quel est le montant minimum de tokens CORE requis pour devenir validateur ?
 
