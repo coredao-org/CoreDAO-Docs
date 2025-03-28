@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Gobernanza en la Blockchain de Core
+# Governance on Core
 
 ---
 
