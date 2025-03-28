@@ -16,7 +16,7 @@ La tokenómica de CORE, el token nativo de utilidad y gobernanza de la cadena de
 
 La tokenómica CORE está diseñada con un enfoque en la sostenibilidad y la descentralización a largo plazo. Inspirados por la sólida política monetaria de Bitcoin y la necesidad de una distribución justa del poder de gobernanza, los tokens CORE sirven como columna vertebral del ecosistema Core.
 
-![tokenomics](https://github.com/user-attachments/assets/b30cf0e6-2282-4355-ab96-4f9579099122)
+![tokenomics](../../../../static/img/tokenomics/CORE_Tokenomics.png)
 
 Los tokens CORE se asignan a través de varios canales para equilibrar el ecosistema. El siguiente diagrama ilustra la distribución de los tokens CORE. La distribución del total de **2,1 mil millones** de tokens CORE es la siguiente:
 
@@ -49,15 +49,15 @@ Tras un estricto límite máximo de **2.100 millones** de tokens, CORE adopta el
 
 ### Emisiones CORE acumuladas mensuales (primeros 6 años)
 
-![6 años-de-emisiones](https://github.com/user-attachments/assets/e6903e1d-b146-4b6f-982d-dd06e6a56cb8)
+![6-years-emissions](../../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
 
 ### Emisiones BÁSICAS Acumuladas Anualmente (81 Años)
 
-![81-años-de-emisiones](https://github.com/user-attachments/assets/8caa5c7a-33ae-4c12-bc71-0512d490eb48)
+![81-years-emissions](../../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
 
 ### Desglose de asignaciones
 
-![desglose-de-emisiones](https://github.com/user-attachments/assets/12c25190-ae6e-4039-aed6-01c81ea6542f)
+![break-down-of-emissions](../../../../static/img/tokenomics/Breakdown_of_Allocations.png)
 
 ## Descentralización y Dirección
 
