@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuration des Nœuds RPC
+sidebar_label: RPC Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds RPC
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# RPC Nodes on Core
 
 ---
 
@@ -16,33 +19,60 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Logiciel
 
-- Actuellement, un nœud d'archive Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+- **Network Connectivity:** Stable internet connection with low latency and high availability.
+- **Firewall Configuration:** To ensure your RPC Node can communicate with external applications and other nodes, you need to allow inbound HTTP traffic on port 8575, which is the default port for RPC communication. You can adjust this setting in the config.toml file if you prefer using a different port. Make sure that your firewall settings are properly configured to allow traffic on this port.
 
 ### Matériel
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
+An RPC Node on Core acts as a gateway for applications, developers, and users to interact with the blockchain. It processes queries, submits transactions, and retrieves real-time blockchain data via Remote Procedure Calls (RPC). These nodes are essential for dApps, wallets, and analytics platforms to seamlessly access Core’s network. Following are the hardware requirements for RPC Node on Core.
 
-#### Spécifications Matérielles pour les Nœuds RPC du Testnet
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Pour les nœuds RPC sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes   |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                                                  |
-| RAM              | 16 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
+  </TabItem>
+  <TabItem value="testnet">
+    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
-#### Spécifications Matérielles pour les Nœuds RPC du Mainnet
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes   |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
 
-Pour les nœuds RPC sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+  </TabItem>
+  <TabItem value="mainnet">
+    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 16 cœurs CPU                                                                                                                                 |
-| RAM              | 32 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes  |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
+
+  </TabItem>
+</Tabs>
 
 ## Exécution d'un Nœud RPC
 
@@ -54,7 +84,7 @@ Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` 
 
 1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2\. Download the node binary from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
 3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
