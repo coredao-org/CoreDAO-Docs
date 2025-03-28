@@ -7,9 +7,11 @@ sidebar_position: 1
 
 ## 👨‍💻 Primeros pasos
 
-Core es una plataforma de contrato inteligente hiperescalable diseñada para complementar Bitcoin, sirviendo como su primera capa de prueba de participación (PoS) y el ecosistema DeFi de Bitcoin más grande. Al fusionar la seguridad inigualable de Bitcoin con la escalabilidad del innovador consenso Satoshi Plus, Core amplía las capacidades de Bitcoin al tiempo que preserva sus principios básicos de descentralización y seguridad. Con aproximadamente el 75 % del poder de hash de la minería de Bitcoin que ya contribuye al modelo de seguridad de Core y más de 8200 BTC apostados a través de Stake de Bitcoin sin custodia, Core fortalece el papel de Bitcoin como principal protector y activo central del futuro de DeFi. El modelo de apuesta dual de Core permite aún más a los poseedores de Bitcoin obtener rendimientos seguros y sostenibles al apostar tanto en BTC como en CORE, manteniendo al mismo tiempo el control total y la propiedad de sus activos.
+Core is a hyper-scalable smart contract platform designed to complement Bitcoin, serving as its first **Proof of Stake (PoS)** layer and the largest Bitcoin DeFi ecosystem. Al fusionar la seguridad inigualable de Bitcoin con la escalabilidad del innovador consenso Satoshi Plus, Core amplía las capacidades de Bitcoin al tiempo que preserva sus principios básicos de descentralización y seguridad. With approximately **75%** of Bitcoin mining hash power already contributing to Core’s security model and over **8,200** BTC staked through Non-Custodial Bitcoin Staking, Core strengthens Bitcoin's role as both the prime protector and central asset of the future of DeFi. El modelo de apuesta dual de Core permite aún más a los poseedores de Bitcoin obtener rendimientos seguros y sostenibles al apostar tanto en BTC como en CORE, manteniendo al mismo tiempo el control total y la propiedad de sus activos.
 
-![encabezado-núcleo](../static/img/core-header.png)
+<p align="center">
+![core-header](../static/img/core-header.png)
+</p>
 
 ¿Nuevo en Core? Descubramos **Core en menos de 5 minutos**.
 
@@ -29,21 +31,21 @@ Familiarícese con el ecosistema central
 
 ## 🔌 Ejecute un nodo en el núcleo
 
-Participe en la seguridad central de la red ejecutando diferentes tipos de nodos
-\* [Ejecutar un nodo completo en la red central](./Node/Full-Node/on-mainnet.md)
-\* [Ejecutar un nodo validador en la red central](./Node/config/validator-node-config.md)
-\* [Ejecutar un nodo RPC en la red central](./Node/config/rpc-node-config.md)
-\* [Ejecutar un nodo de archivo en la red central] (./Node/config/archive-node-config.md)
-\* [Ejecutar un nodo de instantáneas en la red central] (./Node/config/snapshot-node-config.md)
+Participate in Core Network Security by Running Different Types of Nodes
+\* [Run a Full Node on the Core Network](./Node/config/full-node.md)
+\* [Run a Validator Node on the Core Network](./Node/config/validator-node-config.md)
+\* [Run a RPC Node on the Core Network](./Node/config/rpc-node-config.md)
+\* [Run an Archive Node on the Core Network](./Node/config/archive-node-config.md)
+\* [Run a Snapshot Node on the Core Network](./Node/config/snapshot-node-config.md)
 
 ## 👨‍🔧 Construyendo sobre el núcleo
 
-Comenzar a construir sobre Core y contribuir al panorama BTCfi
-\* [Explore el panorama de herramientas para desarrolladores] (./Dev-Guide/dev-tools.md)
-\* [Configure sus billeteras en la red central] (./Dev-Guide/core-testnet-wallet-config.md)
-\* [Financia tus billeteras con tCORE o tCORE2](./Dev-Guide/core-faucet.md)
-\* [Recorra guías prácticas detalladas para impulsar su viaje hacia Core] (categoría/guías de desarrollo)
-\* [Construya una dApp de pila completa en Core] (./Dev-Guide/dapp-on-core.md)
+Starting building on Core and Contribute to the BTCfi Landscape
+\* [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
+\* [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
+\* [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
+\* [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
+\* [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
 
 ## 🙋‍♀️ Ayuda y soporte
 
