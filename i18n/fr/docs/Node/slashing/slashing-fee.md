@@ -19,7 +19,7 @@ Les pénalités de slashing sont généralement appliquées lorsqu'un nœud ne p
 
 ## Double Signature
 
-Toute personne peut soumettre une demande de slashing sur CoreChain avec une preuve de double signature (Double Sign) sur CoreChain.
+Anyone can submit a slash request on Core blockchain with the evidence of Double Sign activity on Core.
 
 ### Validation des preuves
 
@@ -30,7 +30,7 @@ Toute personne peut soumettre une demande de slashing sur CoreChain avec une pre
 
 Si la preuve est valide :
 
-1. **1 000 tokens CORE** seront retirés du CORE auto-marginalisé du validateur
+1. **1,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
 2. Le validateur puni sera emprisonné et exclu du réseau pour toujours
 3. **500 tokens CORE** seront attribués au soumetteur de la demande comme récompense
 4. Le reste des tokens CORE sera transféré dans le pool de récompenses du système
