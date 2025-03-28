@@ -29,7 +29,20 @@ Additionally, they are required to ensure that the CORE reward address for Bitco
 
 Para aprovechar al máximo la apuesta dual, los usuarios deben asegurarse de que la dirección de recompensa de apuesta de Bitcoin designada coincida con la dirección utilizada para la apuesta CORE. Los usuarios que han apostado su Bitcoin y/o CORE en múltiples direcciones pueden querer consolidar su apuesta en una sola dirección para optimizar el rendimiento y maximizar los retornos y garantizar que el CORE apostado esté por encima del umbral requerido para desbloquear porcentajes de rendimiento más altos para la apuesta de Bitcoin.
 
-### 5\. ¿Cómo equilibran los usuarios CORE y Bitcoin entre validadores para maximizar el rendimiento?
+### 5\. How are yields calculated under the Dual Staking model?
+
+- Global staking yields fluctuates based on changes in the following variables:
+  - [Total amount of CORE staking across all validators](https://stake.coredao.org/validators)
+  - [Total amount of BTC staking across all validators](https://stake.coredao.org/validators)
+  - The relative price change between BTC & CORE
+  - [Annual reward adjustment](https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)
+- Validator-specific staking yields vary based on these additional factors:
+  - Total number of active validators
+  - Validator commission
+  - The received delegation on hash, BTC staking, & CORE staking
+  - Dual-staking tiers
+
+### 6\. ¿Cómo equilibran los usuarios CORE y Bitcoin entre validadores para maximizar el rendimiento?
 
 Para que los usuarios puedan ver la distribución de su CORE, Bitcoin y Hash delegados para cada validador, pueden visitar el [sitio web de apuestas] oficial de Core (https://stake.coredao.org/). Los rendimientos de participación de CORE y Bitcoin de cada validador varían porque dependen de la cantidad total y ponderada de delegaciones que recibe un validador; consulte [aquí](../Learn/core-concepts/satoshi-plus-consensus/rewards#3 -validator-rewards) para más detalles.\
 La práctica de reequilibrar las delegaciones entre validadores es esencial para maximizar las recompensas generales y mantener un ecosistema saludable de validadores.\
@@ -37,15 +50,15 @@ La práctica de reequilibrar las delegaciones entre validadores es esencial para
 El acto de los delegados de reequilibrar su delegación para maximizar la recompensa es la fuerza impulsora para garantizar un conjunto equilibrado de validadores.\
 El acto de los delegantes de reequilibrar su delegación para maximizar la recompensa es la fuerza impulsora para garantizar un conjunto equilibrado de validadores. Para los usuarios que prefieren no gestionar activamente sus delegaciones, es recomendable distribuir las apuestas por igual entre todos los validadores activos. Este enfoque mejora la estabilidad en los porcentajes de recompensa.
 
-### 6\. ¿Existe algún riesgo de perder sus activos de Bitcoin durante la doble apuesta?
+### 7\. ¿Existe algún riesgo de perder sus activos de Bitcoin durante la doble apuesta?
 
 Dual Stake es un [proceso sin custodia] (../Learn/products/btc-stake/overview#how-non-custodial-bitcoin-stake-works), que permite a los usuarios mantener un control total sobre sus activos. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
 
-### 7\. Si bien Bitcoin tiene un límite de tiempo, ¿pueden los usuarios cancelar la apuesta de CORE que tiene doble apuesta con Bitcoin? Si es así, ¿pierden las recompensas obtenidas antes de retirar la apuesta de CORE?
+### 8\. Si bien Bitcoin tiene un límite de tiempo, ¿pueden los usuarios cancelar la apuesta de CORE que tiene doble apuesta con Bitcoin? Si es así, ¿pierden las recompensas obtenidas antes de retirar la apuesta de CORE?
 
 Los usuarios pueden retirar su apuesta de CORE en cualquier momento, al igual que cuando lo hacen de forma independiente. La única diferencia es que cuando se calcula la recompensa de la apuesta de Bitcoin, el porcentaje de recompensa disminuirá debido a la disminución del CORE apostado. Tenga en cuenta que esta reducción solo se aplica a recompensas futuras y no se aplica a recompensas ya obtenidas por el usuario.
 
-### 8\. ¿Cómo se aseguran los usuarios de que la dirección de recompensa CORE para la apuesta de Bitcoin sea la misma que la dirección de apuesta CORE cuando apuestan a través del [sitio web de apuesta de Core](https://stake.coredao.org/)?
+### 9\. ¿Cómo se aseguran los usuarios de que la dirección de recompensa CORE para la apuesta de Bitcoin sea la misma que la dirección de apuesta CORE cuando apuestan a través del [sitio web de apuesta de Core](https://stake.coredao.org/)?
 
 En **stake.coredao.org**, para garantizar que la dirección de recompensa CORE para apostar Bitcoin sea la misma que la dirección de apuesta CORE, asegúrese de seguir los siguientes pasos:
 
@@ -54,6 +67,6 @@ En **stake.coredao.org**, para garantizar que la dirección de recompensa CORE p
 
 Siempre que el usuario utilice siempre la misma dirección de billetera Core para apostar tanto en CORE como en Bitcoin, será la misma dirección. Las transacciones de apuesta tanto para Bitcoin como para CORE también son rastreadas por la dirección Core. Una vez que la billetera Core esté conectada, los usuarios pueden ir a la sección "[Mi apuesta](https://stake.coredao.org/mystake)" en el [sitio web de apuesta](https://stake.coredao.org/) para vea todas las transacciones de participación de CORE y Bitcoin, todas las recompensas acumuladas en CORE tanto para la participación de Bitcoin como para la participación de CORE.
 
-### 9\. ¿Qué sucede con la recompensa de los delegados si el validador al que delegaron sus activos es recortado?
+### 10\. ¿Qué sucede con la recompensa de los delegados si el validador al que delegaron sus activos es recortado?
 
 Si se elimina un validador, los participantes que delegaron su CORE o Bitcoin **no** serán eliminados. Sin embargo, dado que el validador no recibirá la recompensa de apuesta, los delegados también perderán las recompensas de apuesta de esa ronda.
