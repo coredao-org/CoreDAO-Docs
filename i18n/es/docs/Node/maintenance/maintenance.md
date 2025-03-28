@@ -14,7 +14,7 @@ Se sugiere a todos los clientes que actualicen a la última versión. Se supone 
 
 ### Estado de poda
 
-Según la prueba, el rendimiento de un nodo completo se degradará cuando el tamaño de almacenamiento alcance un volumen alto (anteriormente era 1,5 TB, que es un valor experimental, el último número debe actualizarse). Sugerimos que el nodo completo siempre mantenga un almacenamiento ligero podándolo.
+As per conducted tests, the performance of a full nodes degrades when the storage size reaches a high volume (approximately 1.5TB, which is an experimental value). Therefore, it is suggested that the full node always keeps light storage by pruning the storage.
 
 #### Reglas de poda
 
