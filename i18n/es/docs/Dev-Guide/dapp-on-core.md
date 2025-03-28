@@ -13,7 +13,7 @@ Las aplicaciones descentralizadas (dApps) utilizan una cadena de bloques o contr
 
 ## ¿Qué estamos construyendo?
 
-En este tutorial, desarrollaremos una dApp simple usando React.js y Ethers.js que almacena datos en un contrato inteligente en Core blockchain y los muestra a los usuarios. El código completo de la dApp está disponible en GitHub en el [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core# building-a-dapp-on-core) repositorio.
+En este tutorial, desarrollaremos una dApp simple usando React.js y Ethers.js que almacena datos en un contrato inteligente en Core blockchain y los muestra a los usuarios. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp) repository.
 
 ## Conclusiones del aprendizaje
 
@@ -56,7 +56,9 @@ npm install --save-dev chai @nomiclabs/hardhat-waffle
 npx hardhat
 ```
 
+<p align="center">
 ![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)
+</p>
 
 :::note
 Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No** para la opción "_¿Desea instalar las dependencias de este proyecto de muestra con npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
@@ -72,26 +74,28 @@ dapp-tutorial.
 |   package.json
 |   README.md
 |
-+---contracts (Para Solidity Smart Contracts)
++---contracts (For Solidity Smart Contracts)
 |       Lock.sol
-|      
-+---ignition (Scripts en versiones anteriores, esta carpeta contiene archivos de configuración que especifican cómo se deben implementar los contratos inteligentes.)
+|
++---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
 |   \---modules
 |           Lock.js
-|                
+|
 +---node_modules
-|  
-+---test (Para escribir y ejecutar pruebas)
-|       Lock.js      
-|      
+|
++---test (For writing and Running Tests)
+|       Lock.js
+|
 ```
 
-5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-testnet-wallet-config.md) para obtener una guía detallada.
+5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Refer [here](./core-wallet-config.md) for a detailed guide.
 
-6. Cree un archivo secret.json en la carpeta raíz y almacene en él la clave privada de su billetera MetaMask. Consulte [aquí](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) para obtener detalles sobre cómo obtener la clave privada de la cuenta MetaMask.
+6. Cree un archivo secret.json en la carpeta raíz y almacene en él la clave privada de su billetera MetaMask. Refer [here](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) for details on how to get MetaMask account's private key.
 
 ```json
-{"PrivateKey":"you private key, do not leak this file, do keep it absolutely safe"}
+{
+  "PrivateKey": "you private key, do not leak this file, do keep it absolutely safe"
+}
 ```
 
 :::caution
@@ -105,51 +109,45 @@ No olvide agregar este archivo al archivo `.gitignore` en la carpeta raíz de su
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-
-require('@nomiclabs/hardhat-ethers');
+require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-waffle");
 
-
-const { PrivateKey } = require('./secret.json');
-
+const { PrivateKey } = require("./secret.json");
 
 module.exports = {
-   defaultNetwork: 'testnet',
+  defaultNetwork: "testnet",
 
-
-   networks: {
-      hardhat: {
-      },
-      testnet: {
-         url: 'https://rpc.test.btcs.network',
-         accounts: [PrivateKey],
-         chainId: 1115,
-      }
-   },
-   solidity: {
-      compilers: [
-        {
-           version: '0.8.19',
-           settings: {
-            evmVersion: 'paris',
-            optimizer: {
-                 enabled: true,
-                 runs: 200,
-              },
-           },
+  networks: {
+    hardhat: {},
+    testnet: {
+      url: "https://rpc.test2.btcs.network",
+      accounts: [PrivateKey],
+      chainId: 1114,
+    },
+  },
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.24",
+        settings: {
+          evmVersion: "shanghai",
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
         },
-      ],
-   },
-   paths: {
-      sources: './contracts',
-      cache: './cache',
-      artifacts: './artifacts',
-   },
-   mocha: {
-      timeout: 20000,
-   },
+      },
+    ],
+  },
+  paths: {
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+  mocha: {
+    timeout: 20000,
+  },
 };
- 
 ```
 
 ## Redacción de contratos inteligentes
@@ -161,7 +159,7 @@ module.exports = {
 // SPDX-License-Identifier: GPL-3.0
 
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.8.0 <0.8.24;
 
 
 /**
@@ -205,6 +203,7 @@ El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacen
 #### Funciones del contrato
 
 1. **Función de tienda**:
+
  - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
  - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
  - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
@@ -232,26 +231,21 @@ npx hardhat compile
 ```javascript
 const hre = require("hardhat");
 
-
 async function main() {
   const Storage = await hre.ethers.getContractFactory("Storage");
   const storage = await Storage.deploy();
 
-
   await storage.deployed();
   console.log("Storage contract deployed to:", storage.address);
 
+  console.log("call retrieve():", await storage.retrieve());
 
-  console.log("call retrieve():", await storage.retrieve())
+  console.log("call store(), set value to 100");
+  const tx = await storage.store(100);
+  await tx.wait();
 
-
-  console.log("call store(), set value to 100")
-  const tx = await storage.store(100)
-  await tx.wait()
- 
-  console.log("call retrieve() again:", await storage.retrieve())
+  console.log("call retrieve() again:", await storage.retrieve());
 }
-
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
@@ -261,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/core-testnet-wallet-config) para obtener detalles sobre cómo obtener tokens tCORE o tCORE2 de Core Faucet.
+3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnets. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
@@ -304,7 +298,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. Para probar si todo funciona bien, ejecute la aplicación usando el siguiente comando. Esto servirá a la aplicación con función de recarga en caliente en [http://localhost:5173](http://localhost:5173/)
+4. Para probar si todo funciona bien, ejecute la aplicación usando el siguiente comando. This will serve application with hot reload feature at [http://localhost:5173]
 
 ```bash
 npm run dev
@@ -325,7 +319,7 @@ La lógica clave de blockchain de la aplicación se implementa en [App.tsx](http
 3. Pegue esto en la [Línea 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App. tsx#L10).
 
 ```javascript
-const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
+const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 ```
 
 4. Además, necesitaremos los metadatos de ABI para interactuar con el contrato desde nuestra dApp. Desde la carpeta `artifacts/contracts` en la raíz de su proyecto. Copie el archivo `Storage.json` y guárdelo en la carpeta `/src/contracts`.
@@ -334,19 +328,22 @@ const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 
 1. Ejecute el comando `npm run dev` desde la raíz del proyecto para iniciar la aplicación. Esto servirá para la aplicación en [http://localhost:5173](http://localhost:5173/)
 
-2. Asegúrese de que su billetera MetaMask esté correctamente instalada y cambiada a Core Testnet como se describe en nuestra [guía del usuario de Core Testnet] (./core-testnet-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
+2. Make sure that your MetaMask wallet is correctly installed and switched to Core Testnet as described in our [Core Testnet user guide](./core-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-1.png)
+</p>
 
 3. Ingrese un número en el campo de entrada y haga clic en el botón **almacenar** para guardarlo en el contrato. Una acción de escritura en el contrato inteligente invoca la billetera MetaMask. Haga clic en el botón **Confirmar** para firmar la transacción y espere la confirmación en la cadena de bloques.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-2.avif)
+</p>
 
 4. Una vez confirmada la transacción en la cadena de bloques, haga clic en el botón **recuperar** para leer el valor del contrato inteligente. Notarás que el valor se ha actualizado.
 
+<p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-3.avif)
+</p>
 
 🎉 ¡Felicidades! ¡Acaba de interactuar con su contrato recién implementado utilizando la interfaz de su dApp! Puede aprovechar el código base implementando e interactuando con diferentes contratos y agregando nuevos componentes de interfaz de usuario al sitio web para sus usuarios.
-
-
-
