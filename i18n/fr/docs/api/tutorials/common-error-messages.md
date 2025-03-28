@@ -5,7 +5,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Messages d'Erreur Courants
+# Core API Common Error Messages
 
 Un appel API qui rencontre une erreur renverra 0 comme code de statut et affichera la cause de l'erreur dans le champ résultat.
 
