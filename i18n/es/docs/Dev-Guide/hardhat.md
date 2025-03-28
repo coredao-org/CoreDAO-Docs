@@ -26,7 +26,7 @@ Dirígete a la carpeta de tu perfil y sigue los pasos a continuación para insta
 Después de la instalación, inicializa Hardhat ejecutando el comando `npx hardhat`:
 
 ```javascript
-$ npx hardhat    
+$ npx hardhat
 888    888                      888 888               888
 888    888                      888 888               888
 888    888                      888 888               888
@@ -36,14 +36,13 @@ $ npx hardhat
 888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
 888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
 
-👷 Bienvenido a Hardhat v2.10.1 👷‍
+👷 Welcome to Hardhat v2.10.1 👷‍
 
-? ¿Qué quieres hacer? … 
-❯ Crear un proyecto en JavaScript
-  Crear un proyecto en TypeScript
-  Crear un hardhat.config.js vacío
-  Salir
-
+? What do you want to do? …
+❯ Create a JavaScript project
+  Create a TypeScript project
+  Create an empty hardhat.config.js
+  Quit
 ```
 
 Una vez inicializado, la estructura del proyecto será la siguiente:
@@ -62,61 +61,63 @@ Copia lo siguiente en tu archivo hardhat.config.js:
  * @type import('hardhat/config').HardhatUserConfig
  */
 
- require('@nomiclabs/hardhat-ethers');
- require("@nomiclabs/hardhat-waffle");
+require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-waffle");
 
- const { PrivateKey } = require('./secret.json');
+const { PrivateKey } = require("./secret.json");
 
- module.exports = {
-    defaultNetwork: 'testnet',
- 
-    networks: {
-       hardhat: {
-       },
-       testnet: {
-          url: 'https://rpc.test.btcs.network',
-          accounts: [PrivateKey],
-          chainId: 1115,
-       }
+module.exports = {
+  defaultNetwork: "testnet",
+
+  networks: {
+    hardhat: {},
+    testnet: {
+      url: "https://rpc.test2.btcs.network",
+      accounts: [PrivateKey],
+      chainId: 1114,
     },
-    solidity: {
-       compilers: [
-         {
-            version: '0.8.9',
-            settings: {
-               evmVersion: 'paris',
-               optimizer: {
-                  enabled: true,
-                  runs: 200,
-               },
-            },
-         },
-       ],
-    },
-    paths: {
-       sources: './contracts',
-       cache: './cache',
-       artifacts: './artifacts',
-    },
-    mocha: {
-       timeout: 20000,
-    },
- };
- 
+  },
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.22",
+        settings: {
+          evmVersion: "shanghai",
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
+    ],
+  },
+  paths: {
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+  mocha: {
+    timeout: 20000,
+  },
+};
 ```
 
-**Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez para Core Blockchain](./smart-contract-guidelines.md)**; para ello, asegúrese de que el parámetro `evmVersion` esté establecido en `paris` bajo el configuración del compilador de solidez en el archivo `hardhat.config.js`.
+**Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `shanghai` under the solidity compiler settings in the `hardhat.config.js` file.
 
-> Nota: Necesitamos pasar claves privadas/mnemónicos al proveedor. Puedes crear un archivo `secret.json` para almacenarlos. No olvides agregar este archivo a `.gitignore` para no subir accidentalmente tus claves privadas a un repositorio público. ¡Asegúrate de mantener este archivo en un lugar absolutamente seguro!
+If you are using **testnet1**, `evmVersion` parameter should be set to `Paris`.
+
+:::note
+Please note that you'll need to provide your private keys or mnemonic for the provider. You can store them in a `secret.json` file. Be sure to add this file to your project's `.gitignore` to prevent accidentally committing your private keys to a public repository. Additionally, keep this file in a secure location to protect your sensitive information!
+:::
 
 ## Escribir Contratos Inteligentes
 
 Usaremos el contrato `1_Storage.sol` para este ejemplo. Crea un archivo llamado `Storage.sol` y guárdalo en la carpeta `contracts` con el siguiente código:
 
-```solidity
+```javascript
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity >=0.8.0 <0.8.24;
 
 /**
  * @title Storage
@@ -135,7 +136,7 @@ contract Storage {
     }
 
     /**
-     * @dev Return value 
+     * @dev Return value
      * @return value of 'number'
      */
     function retrieve() public view returns (uint256){
@@ -155,32 +156,30 @@ Ejecuta el siguiente comando para compilar el contrato:
 Crea un nuevo archivo llamado `storage-test.js` con el siguiente código y guárdalo en la carpeta `test`:
 
 ```javascript
-const { expect } = require("chai")
-const { ethers } = require("hardhat")
+const { expect } = require("chai");
+const { ethers } = require("hardhat");
 
 describe("Storage", function () {
-    let storage;
+  let storage;
 
-    beforeEach(async function(){
-        Storage = await ethers.getContractFactory("Storage");
-        [operator] = await ethers.getSigners();
-        storage = await Storage.connect(operator).deploy();
-        await storage.deployed()
-        expect(await storage.retrieve()).to.equal(0n);
-    })
-    describe("Test store function", function(){
-        it("should work properly", async function(){
-            let tx = await storage.store(100);
-            await tx.wait();
-            expect(await storage.retrieve()).to.equal(100n);
-        })
-        it("should throw", async function(){
-            await expect(
-                storage.store(-1)
-            ).to.be.throws
-        })
-    })
-})
+  beforeEach(async function () {
+    Storage = await ethers.getContractFactory("Storage");
+    [operator] = await ethers.getSigners();
+    storage = await Storage.connect(operator).deploy();
+    await storage.deployed();
+    expect(await storage.retrieve()).to.equal(0n);
+  });
+  describe("Test store function", function () {
+    it("should work properly", async function () {
+      let tx = await storage.store(100);
+      await tx.wait();
+      expect(await storage.retrieve()).to.equal(100n);
+    });
+    it("should throw", async function () {
+      await expect(storage.store(-1)).to.be.throws;
+    });
+  });
+});
 ```
 
 Para probar nuestro contrato `Storage.sol` en la red HardHat incorporada, ejecute el siguiente comando:
@@ -205,12 +204,12 @@ $ npx hardhat test --network hardhat
 HardHat facilita el uso de la biblioteca `ethers.js` para implementar e interactuar con nuestros contratos inteligentes. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
 
 ```javascript
-// Requerimos el entorno de ejecución de Hardhat explícitamente aquí. Esto es opcional
-// pero útil para ejecutar el script de manera independiente a través de `node <script>`.
+// We require the Hardhat Runtime Environment explicitly here. This is optional
+// but useful for running the script in a standalone fashion through `node <script>`.
 //
-// También puede ejecutar un script con `npx hardhat run <script>`. Si lo hace, Hardhat
-// compilará sus contratos, agregará los miembros del entorno de ejecución de Hardhat al
-// alcance global y ejecutará el script.
+// You can also run a script with `npx hardhat run <script>`. If you do that, Hardhat
+// will compile your contracts, add the Hardhat Runtime Environment's members to the
+// global scope, and execute the script.
 const hre = require("hardhat");
 
 async function main() {
@@ -220,13 +219,13 @@ async function main() {
   await storage.deployed();
   console.log("Storage contract deployed to:", storage.address);
 
-  console.log("call retrieve():", await storage.retrieve())
+  console.log("call retrieve():", await storage.retrieve());
 
-  console.log("call store(), set value to 100")
-  const tx = await storage.store(100)
-  await tx.wait()
-  
-  console.log("call retrieve() again:", await storage.retrieve())
+  console.log("call store(), set value to 100");
+  const tx = await storage.store(100);
+  await tx.wait();
+
+  console.log("call retrieve() again:", await storage.retrieve());
 }
 
 // We recommend this pattern to be able to use async/await everywhere
@@ -250,7 +249,7 @@ Ejecutemos el script ejecutando el siguiente comando:
 `npx hardhat run scripts/deploy-and-call.js`
 
 ```javascript
-npx hardhat run scripts/call.js
+$ npx hardhat run scripts/deploy-and-call.js
 Storage contract deployed to: 0x65e2F3E4287C0563fBB066134A380e90a48d2D99
 call retrieve(): BigNumber { value: "0" }
 call store(), set value to 100
@@ -261,7 +260,9 @@ Podemos ver que el script implementó correctamente el contrato, almacenó un n�
 
 Podemos usar [Core Scan](https://scan.test.btcs.network/) para buscar la dirección del contrato y verificar que el contrato fue desplegado y llamado con éxito.
 
+<p align="center">
 ![hardhat](../../static/img/hardhat/hardhat-1.avif)
+</p>
 
 ## Lectura adicional
 
