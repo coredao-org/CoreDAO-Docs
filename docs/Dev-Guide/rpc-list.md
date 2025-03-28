@@ -1,33 +1,68 @@
 ---
-sidebar_label: RPC Endpoints
+sidebar_label: RPC Providers
 hide_table_of_contents: false
 sidebar_position: 2
+description: List of RPC Endpoints for Testnet and Mainnet
 ---
 
-# Core Blockchain Network RPC Endpoints
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+# RPC Endpoints for Core Network
+
 ---
 
-Remote Procedure Call (RPC) endpoints are crucial for developers and applications to interact directly with the blockchain, allowing them to retrieve data, submit transactions, and execute smart contracts seamlessly. The availability of both mainnet and testnet endpoints facilitates development and testing phases, enabling developers to build, test, and deploy their applications in a controlled environment before going live. Whether you are looking to deploy a decentralized application, conduct transactions, or access blockchain data, these RPC endpoints are essential tools for navigating and leveraging the Core blockchain ecosystem.
+Remote Procedure Call (RPC) endpoints are vital for developers to connect directly with the blockchain, enabling data retrieval, transaction execution, and smart contract management. With both mainnet and testnet endpoints available, developers can test and deploy their applications seamlessly within the Core blockchain ecosystem.
 
-## RPC Endpoints for Core Blockchain
+## Official RPC Endpoints for Core Network
 
-### Core Blockchain Testnet (1114 (0x45a))
-_Note: This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+<Tabs defaultValue="testnet2" values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet1', value: 'testnet1'},
+{label: 'Mainnet', value: 'mainnet'},
+]}>
+<TabItem value="testnet2">
 
-* https://rpc.test2.btcs.network
+### Core Blockchain Testnet2 (1114 (0x45a))
+:::info
+This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+:::
 
-### Core Blockchain Testnet (1115 (0x45b)) 
-* https://rpc.test.btcs.network
+- https://rpc.test2.btcs.network 
+- https://rpcar.test2.btcs.network (For Archive Node)
+
+
+</TabItem>
+<TabItem value="testnet1">
+
+### Core Blockchain Testnet (1115 (0x45b))
+
+:::caution
+Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
+:::
+
+- https://rpc.test.btcs.network
+
+</TabItem>
+
+<TabItem value="mainnet">
 
 ### Core Blockchain Mainnet (1116 (0x45c))
-* wss://ws.coredao.org
-* https://rpc.coredao.org 
-* https://rpcar.coredao.org (For Archive Node)
+
+- wss://ws.coredao.org
+- https://rpc.coredao.org
+- https://rpcar.coredao.org (For Archive Node)
+
+</TabItem>
+</Tabs>
+
 
 ### Third Party RPC Endpoints for Core Blockchain Mainnet
-* **Ankr:** https://rpc.ankr.com/core
-* **1RPC:** https://1rpc.io/core
-* **INFSTONES:** https://core.public.infstones.com
-* **IceCreamSwap:** https://rpc-core.icecreamswap.com
-* **ZAN Node:** https://api.zan.top/core-mainnet
-* **dRPC:** https://core.drpc.org | wss://core.drpc.org 
+
+- **Ankr:** https://rpc.ankr.com/core
+- **1RPC:** https://1rpc.io/core
+- **INFSTONES:** https://core.public.infstones.com
+- **IceCreamSwap:** https://rpc-core.icecreamswap.com
+- **ZAN Node:** https://api.zan.top/core-mainnet
+- **dRPC:** https://core.drpc.org | wss://core.drpc.org

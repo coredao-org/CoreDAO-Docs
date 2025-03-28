@@ -28,7 +28,7 @@ const sidebars: SidebarsConfig = {
             label: 'Introduction',
             items: ['Learn/introduction/what-is-core-chain',
                     'Learn/introduction/why-core-chain',
-                    'Learn/introduction/quickstart',
+                    //'Learn/introduction/quickstart',
                     {
                       type: 'link',
                       label: 'Whitepaper', 
@@ -69,7 +69,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
-                description: 'Learn about the different innovative products offered by Core that are helping in unclocking the DeFi landscape for Bitcoin!',
+                description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
                 slug: '/category/products',
               },
               items: [
@@ -89,6 +89,14 @@ const sidebars: SidebarsConfig = {
                           ]
                       },
                       
+                    ]
+                },
+                {
+                  type: 'category',
+                    collapsed: true,
+                    label: 'lstBTC',
+                    items: [
+                      'Learn/products/lstBTC/overview',
                     ]
                 },
                 {
@@ -136,60 +144,106 @@ const sidebars: SidebarsConfig = {
   ],
   devGuideSidebar: [
     {
-      type: 'category',
+      type: "category",
       collapsed: true,
-      label: '💻 Core for Developers',
+      label: "💻 Core for Developers",
       items: [
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Connecting to Core',
-        items: ['Dev-Guide/dev-tools','Dev-Guide/network-config',
+        "Dev-Guide/dev-tools", 
+        "Dev-Guide/network-config",
+        // {
+        //   type: "category",
+        //   collapsed: true,
+        //   label: "Connecting to Core",
+        //   items: ["Dev-Guide/dev-tools", "Dev-Guide/network-config"],
+        // },
         {
-          type: 'category',
+          type: "category",
           collapsed: true,
-          label: 'RPC Endpoints',
-          link: {type: 'doc', id: 'Dev-Guide/rpc-list'},
-          items: ['Dev-Guide/rpc-cli', 'Dev-Guide/rpc-postman']
+          label: "RPC Endpoints",
+          link: {
+            type: "generated-index",
+            title: "Core RPC Endpoints",
+            description:
+              "Core RPC Endpoints: Key Tools for Blockchain Development and Interaction",
+            slug: "/category/rpc-list",
+          },
+          items: [
+            "Dev-Guide/rpc-list",
+            "Dev-Guide/rpc-cli",
+            "Dev-Guide/rpc-postman",
+          ],
         },
-      ]
-      },
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Wallet Configurations',
-        items: ['Dev-Guide/core-faucet', 'Dev-Guide/core-testnet-wallet-config',
-        'Dev-Guide/core-mainnet-wallet-config']
-      },
-      'Dev-Guide/precompile-addresses',
-      'Dev-Guide/core-explorer', 
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Developer Guides',
-        link: {
-          type: 'generated-index',
-          title: 'Developer Guides: Mastering Core Essentials',
-          description: 'Unlock Your Potential: Detailed Developer Guides to Build on Core',
-          slug: '/category/dev-guides',
+        {
+          type: "category",
+          collapsed: true,
+          label: "Wallet Configurations",
+          items: [
+            "Dev-Guide/core-wallet-config",
+            {
+              type: "link",
+              label: "Configure Custom Tokens",
+              href: "https://support.metamask.io/manage-crypto/tokens/how-to-display-tokens-in-metamask/",
+            },
+            {
+              type: "link",
+              label: "Import Accounts",
+              href: "https://support.metamask.io/start/how-to-import-an-account/",
+            },
+          ],
         },
-        items: [
-          'Dev-Guide/smart-contract-guidelines',
-          'Dev-Guide/remix', 'Dev-Guide/hardhat', 
-          'Dev-Guide/contract-verify', 
-          'Dev-Guide/erc20-tokens', 
-          'Dev-Guide/erc721-tokens',
-          'Dev-Guide/dapp-on-core',]
-      },
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Bridging with Core',
-        items: ['Dev-Guide/bridge-with-layerzero',
-          'Dev-Guide/core-bridge-resources', ]
-      },
-      'Dev-Guide/core-subgraph',
-       ]
+        {
+          type: "category",
+          collapsed: true,
+          label: "Dev Tools",
+          items: ["Dev-Guide/core-faucet", "Dev-Guide/core-explorer"],
+        },
+        "Dev-Guide/precompile-addresses",
+
+        {
+          type: "category",
+          collapsed: true,
+          label: "Developer Guides",
+          link: {
+            type: "generated-index",
+            title: "Developer Guides: Mastering Core Essentials",
+            description:
+              "Unlock Your Potential: Detailed Developer Guides to Build on Core",
+            slug: "/category/dev-guides",
+          },
+          items: [
+            "Dev-Guide/smart-contract-guidelines",
+            "Dev-Guide/remix",
+            "Dev-Guide/hardhat",
+            "Dev-Guide/contract-verify",
+            {
+              type: "link",
+              label: "Build dapp on Core",
+              href: "https://github.com/coredao-org/dapp-tutorial",
+            },
+          ],
+        },
+        {
+          type: "category",
+          collapsed: true,
+          label: "Deploying Tokens on Core",
+          items: ["Dev-Guide/erc20-tokens", "Dev-Guide/erc721-tokens"],
+        },
+        {
+          type: "link",
+          label: "Switchboard VRF",
+          href: "https://docs.switchboard.xyz/product-documentation/randomness/tutorials/evm",
+        },
+        "Dev-Guide/core-subgraph",
+        {
+          type: "category",
+          collapsed: true,
+          label: "Bridging with Core",
+          items: [
+            "Dev-Guide/bridge-with-layerzero",
+            "Dev-Guide/core-bridge-resources",
+          ],
+        },
+      ],
     },
   ],
 
@@ -217,17 +271,10 @@ const sidebars: SidebarsConfig = {
         type: 'category',
         collapsed: true,
         label: 'Node Configurations',
-        items: ['Node/config/validator-node-config', 'Node/config/rpc-node-config',
-        'Node/config/archive-node-config', 'Node/config/snapshot-node-config']
+        items: ['Node/config/full-node', 'Node/config/rpc-node-config',
+                'Node/config/archive-node-config', 'Node/config/snapshot-node-config',
+                'Node/config/validator-node-config', ]
       },     
-      {
-        type: 'category',
-        collapsed: true,
-        label: 'Running Full Node',
-        items: [
-        'Node/Full-Node/on-testnet', 
-        'Node/Full-Node/on-mainnet']
-      },
       'Node/sync/snapshot-sync',
 
       {
@@ -235,8 +282,8 @@ const sidebars: SidebarsConfig = {
         collapsed: true,
         label: 'Become a Validator',
         items: ['Node/validator/overview',
+        'Node/validator/running-validator',        
         'Node/validator/validator-register', 
-        'Node/validator/running-validator',
         'Node/validator/validator-election',
         'Node/validator/rewards',
         {
@@ -264,14 +311,14 @@ const sidebars: SidebarsConfig = {
       collapsed: true,
       label: '💸 Staking',
       items: ['stake-and-delegate/staking-overview',
-        // 'stake-and-delegate/core-staking', 
         {
           type: 'category',
             collapsed: true,
             label: 'Non-Custodial BTC Staking',
             items: [
               'Learn/products/btc-staking/overview',
-              'stake-and-delegate/dual-staking', 
+              'Learn/products/btc-staking/btc-staking-working',
+              //'stake-and-delegate/dual-staking', 
               'Learn/products/btc-staking/design', 
               {
                 type: 'category',
@@ -279,12 +326,29 @@ const sidebars: SidebarsConfig = {
                   label: 'How To Guides',
                   items: [
                     'Learn/products/btc-staking/stake-btc-guide',
-                    'Learn/products/btc-staking/dual-staking-guide',
+                    // 'Learn/products/btc-staking/dual-staking-guide',
                     'Learn/products/btc-staking/Redeeming-Guide',
                   ]
               },
             ]
         },    
+        {
+          type: 'category',
+            collapsed: true,
+            label: 'Dual Staking',
+            items: [
+              'stake-and-delegate/dual-staking', 
+              'stake-and-delegate/dual-staking-working', 
+              {
+                type: 'category',
+                  collapsed: true,
+                  label: 'How To Guides',
+                  items: [
+                    'Learn/products/btc-staking/dual-staking-guide',
+                  ]
+              },
+            ]
+        },
        
       ]
     },

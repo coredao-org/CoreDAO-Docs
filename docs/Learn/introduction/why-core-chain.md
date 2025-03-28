@@ -1,16 +1,18 @@
 ---
-sidebar_label: Why Core DAO
+sidebar_label: Why Core 
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
 # Why Core
 ---
+Core is Bitcoin’s first Proof of Stake (PoS) layer and the largest Bitcoin DeFi ecosystem, merging the unparalleled security of Bitcoin with the scalability of the Satoshi Plus consensus. Core unlocks Bitcoin-native yield, Bitcoin-powered smart contracts, a second block reward for miners, and an end-to-end Bitcoin DeFi ecosystem. 
 
-Core is Bitcoin’s complementary and symbiotic smart contract platform. It unlocks Bitcoin-native yield, Bitcoin-powered smart contracts, a second block reward for miners, and an end-to-end BTCfi ecosystem. Overall, Core represents a paradigm shift in how we use Bitcoin. It amplifies its role as a Store of Value through the Bitcoin Risk-Free Rate and facilitates its transition to Medium of Exchange by providing Bitcoin-secured, yet hyper-scalable blockchain rails for more efficient transactions and a variety of other use-cases. Core’s approach not only aligns with Bitcoin’s ethos of decentralization, transparency, and permissionlessness, but also safeguards and enhances the base Bitcoin network. 
+Overall, Core represents a paradigm shift in how we use Bitcoin. It amplifies its role as a Store of Value through the Bitcoin Risk-Free Rate and facilitates its transition to Medium of Exchange by providing Bitcoin-secured, yet hyper-scalable blockchain rails for more efficient transactions and a variety of other use-cases. Core’s approach not only aligns with Bitcoin’s ethos of decentralization, transparency, and permissionlessness, but also safeguards and enhances the base Bitcoin network. 
 
-![why-core-dao-infrographics](../../../static/img/Infographic.png)
-
+<p align="center">
+![why-core-dao-infrographics](../../../static/img/Why-Core.png)
+</p>
 
 ## Key Distinguishing Features of Core 
 Core is a decentralized, secure, and scalable blockchain network backed by Bitcoin’s PoW. Some of the major characteristics that sets it apart from its competitors are as follows:
@@ -37,6 +39,8 @@ Core is a blockchain synthesis that unlocks something for everybody. Here are so
 * **Bitcoin Holders:** Core puts your Bitcoin to work without requiring you to give up custody. Bitcoin holders can earn the Bitcoin Risk-Free Rate through Core’s Non-Custodial Bitcoin Staking. Without bridging your Bitcoin or even necessarily engaging in Core DeFi, Bitcoin holders can earn more by simply continuing to hold. 
 
 * **Bitcoin Users:** For those interested in using Bitcoin as a Medium of Exchange, Core makes Bitcoin transactions and financial activity practical with its fast, efficient, and Bitcoin-protected blockchain rails. On Core, the Bitcoin asset gains a tailor-made financial ecosystem its users can enjoy permissionlessly. 
+
+* **Institutions:** Core offers institutions innovative yield opportunities through Bitcoin staking. By collaborating with top custodians and asset managers, Core enhances Bitcoin’s capital efficiency and programmability, enabling new financial products like lstBTC, Valour’s yield-bearing BTC ETP, and CoreFi, a CBOE-listed leveraged security. Institutions can benefit from Core’s secure infrastructure, access to on-chain yield, and seamless integration with Bitcoin.
 
 * **DeFi Users:** DeFi experts can find many familiar use-cases in Core’s dapp ecosystem, given that Core is fully EVM-compatible and supports a variety of smart contract use-cases. Many opportunities for lending, borrowing, swapping, and other activities are available. This young and growing ecosystem is a great opportunity for DeFi veterans to mount their BTCfi journey. 
 

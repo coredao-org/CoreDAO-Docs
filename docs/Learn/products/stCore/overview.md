@@ -19,7 +19,7 @@ The primary purposes of introducing liquid staking via stCORE on Core are:
 * Improve user experience
 * Bring more utilities of CORE token
 
-For the moment users can stake CORE tokens to individual validators directly through https://stake.coredao.org. However, there are two drawbacks raised by the community
+For the moment users can stake CORE tokens to individual validators directly through the official [Core Staking Website](https://stake.coredao.org). However, there are two drawbacks raised by the community
 
 * There is no auto-compounding feature, and users need to claim rewards and restake them to validators manually everyday. 
 * The hash stakes from Bitcoin mining pools are less fungible and not as stable as CORE stakes, which causes affected validators’ APR to change more dramatically.

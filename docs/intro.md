@@ -8,11 +8,11 @@ sidebar_position: 1
 ## 👨‍💻 Getting Started
 
 
-Core is a hyper-scalable smart contract platform designed to complement Bitcoin, serving as its first Proof of Stake (PoS) layer and the largest Bitcoin DeFi ecosystem. By merging Bitcoin’s unmatched security with the scalability of the innovative Satoshi Plus consensus, Core expands Bitcoin’s capabilities while preserving its core principles of decentralization and security. With approximately 75% of Bitcoin mining hash power already contributing to Core’s security model and over 8,200 BTC staked through Non-Custodial Bitcoin Staking, Core strengthens Bitcoin's role as both the prime protector and central asset of the future of DeFi. Core's Dual Staking model further empowers Bitcoin holders to earn secure and sustainable yields by staking both BTC and CORE, all while retaining full control and ownership of their assets.
+Core is a hyper-scalable smart contract platform designed to complement Bitcoin, serving as its first **Proof of Stake (PoS)** layer and the largest Bitcoin DeFi ecosystem. By merging Bitcoin’s unmatched security with the scalability of the innovative Satoshi Plus consensus, Core expands Bitcoin’s capabilities while preserving its core principles of decentralization and security. With approximately **75%** of Bitcoin mining hash power already contributing to Core’s security model and over **8,200** BTC staked through Non-Custodial Bitcoin Staking, Core strengthens Bitcoin's role as both the prime protector and central asset of the future of DeFi. Core's Dual Staking model further empowers Bitcoin holders to earn secure and sustainable yields by staking both BTC and CORE, all while retaining full control and ownership of their assets.
 
-
+<p align="center">
 ![core-header](../static/img/core-header.png)
-
+</p>
 
 New to Core? Let's discover **Core in less than 5 minutes**. 
 
@@ -30,7 +30,7 @@ Get Familiar with the Core Ecosystem
 
 ## 🔌 Run a Node on Core
 Participate in Core Network Security by Running Different Types of Nodes
-    * [Run a Full Node on the Core Network](./Node/Full-Node/on-mainnet.md)
+    * [Run a Full Node on the Core Network](./Node/config/full-node.md)
     * [Run a Validator Node on the Core Network](./Node/config/validator-node-config.md)
     * [Run a RPC Node on the Core Network](./Node/config/rpc-node-config.md)
     * [Run an Archive Node on the Core Network](./Node/config/archive-node-config.md)
@@ -39,7 +39,7 @@ Participate in Core Network Security by Running Different Types of Nodes
 ## 👨‍🔧 Building on Core
 Starting building on Core and Contribute to the BTCfi Landscape
     * [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
-    * [Configure Your Wallets on the Core Network](./Dev-Guide/core-testnet-wallet-config.md) 
+    * [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md) 
     * [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
     * [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
     * [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)

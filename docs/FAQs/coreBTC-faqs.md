@@ -4,11 +4,15 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# coreBTC FAQs
+# coreBTC FAQs 
 ---
 
+:::warning 
+coreBTC has been sunsetted. lstBTC will be launching soon as an improved replacement.
+:::
+
 ### 1. What is coreBTC? What's the purpose of coreBTC?
-coreBTC is a native wrapped Bitcoin on Core, maintaining a 1:1 peg with BTC through a secured mechanism. It allows Bitcoin users to interact seamlessly with the DeFi space on the EVM-compatible Core using their BTC assets, expanding Bitcoin's functionality within the DeFi landscape without compromising its inherent security.
+coreBTC is a native wrapped Bitcoin on Core, maintaining a 1:1 peg with BTC through a secured mechanism. Bitcoin users can interact seamlessly with the DeFi space on the EVM-compatible Core ecosystem using their BTC assets. It expands Bitcoin's functionality within the DeFi landscape without compromising its inherent security.
 
 ### 2. How is coreBTC different from centralized wrapped tokens (e.g., WBTC)?
 Unlike centralized wrapped tokens like WBTC that rely on a custodian to hold the underlying Bitcoin, coreBTC operates through a decentralized infrastructure. It involves permissionless participants such as Lockers, Guardians, and Liquidators, ensuring enhanced security and integrity without relying on central custodians. This structure aligns with the decentralized ethos of blockchain, mitigating risks associated with centralized entities.

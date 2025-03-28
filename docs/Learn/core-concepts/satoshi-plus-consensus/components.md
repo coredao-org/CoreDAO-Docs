@@ -10,14 +10,16 @@ description: Learn about the major components of the Satoshi Plus Mechanism
 
 The Satoshi Plus consensus mechanism represents a groundbreaking innovation in blockchain technology, specifically engineered for the Core platform to synergistically combine the robust security attributes of Bitcoin with the flexibility and scalability of smart contracts. This hybrid consensus model merges Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-custodial Bitcoin Staking, enables Bitcoin miners to participate directly in the governance and security of a decentralized smart contract platform without incurring additional costs. By leveraging the established Bitcoin mining infrastructure, Satoshi Plus not only fosters a dual-layered security protocol but also enhances the incentive structures across both ecosystems, ensuring a balanced alignment of interests among all stakeholders involved in Core blockchain. 
 
-![satoshi-plus](https://github.com/user-attachments/assets/8e90becb-71c2-4798-813c-27bcf6e1badb)
+![satoshi-plus](../../../../static/img/staoshi-plus/consensus-components.png)
 
 
 ## Major Components of the Satoshi Plus Mechanism
 
 The Satoshi Plus consensus mechanism, designed for Core blockchain, ingeniously integrates features of both Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Non-Cstodial Bitcoin Staking. This hybrid system is tailored to harness the strengths of Bitcoin's existing mining infrastructure while simultaneously incorporating the flexibility of staking mechanisms prevalent in many modern blockchains. Below are the various components, their roles, and how they interoperate to maintain network security and efficiency. Below, is a diagram illustrating how the different major components of the Satoshiu plus consensus mechanism fit together to provide a secure and robust ecosystem. 
 
-![component-diagram](../../../../static/img/staoshi-plus/component-diagram.jpg)
+<p align="center">
+![component-diagram](../../../../static/img/Core-Architecture.png)
+</p>
 
 ### 1. **Delegated Proof of Work (DPoW)**
 **Description:**
@@ -88,4 +90,5 @@ Satoshi Plus enhances the security of both the Bitcoin and Core networks by crea
 - **Workflow:** As miners and stakers contribute to Core blockchain’s security, both networks benefit. Miners use their existing setups to support Core blockchain, and stakers provide additional security layers through token delegation, creating a robust and resilient network.
 
 
+## Conclusion
 In summary, the Satoshi Plus consensus mechanism cleverly integrates these components into a cohesive system that benefits from the security and decentralization of Bitcoin's mining process and the agility and governance capabilities of modern staking models, fostering a secure, efficient, and scalable blockchain environment.

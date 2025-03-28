@@ -6,63 +6,133 @@ description: ERC-20 on Core
 ---
 
 # ERC20 Tokens
+
 ---
 
-ERC20 is currently the dominant approach to implementing fungible, blockchain-based tokens. Each ERC20 token is based on the original ERC20 token interface, meaning that they all share a common set of functions, including (but not limited to):
+## What is ERC-20?
 
-* Transferring tokens from one account to another;
-* Getting the current token balance of an account;
-* Getting the total supply of the token available on the network;
-* Approving an amount of tokens to be spent by a third-party account;
+ERC-20 is a standard for fungible tokens on the Ethereum blockchain. Unlike ERC-721 tokens, which are non-fungible and unique, ERC-20 tokens are identical to each other and can be traded or exchanged in equal quantities. They are the most common token type for projects involving cryptocurrencies, digital assets, and decentralized applications (dApps).
 
-In order to be ERC-20 compatible, a token must implement all the following functions and events:
+## Prerequisites
 
-```javascript
-function name() public view returns (string)
-function symbol() public view returns (string)
-function decimals() public view returns (uint8)
-function totalSupply() public view returns (uint256)
-function balanceOf(address _owner) public view returns (uint256 balance)
-function transfer(address _to, uint256 _value) public returns (bool success)
-function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)
-function approve(address _spender, uint256 _value) public returns (bool success)
-function allowance(address _owner, address _spender) public view returns (uint256 remaining)
-```
+Before starting, you’ll need:
 
-```javascript
-event Transfer(address indexed _from, address indexed _to, uint256 _value)
-event Approval(address indexed _owner, address indexed _spender, uint256 _value)
-```
+- **MetaMask** or any EVM wallet.
+- A basic understanding of **Solidity** (though we will guide you through the whole process).
+- Access to **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
 
-## Best Practices
+## Step 1: Use OpenZeppelin Wizard to Generate Your ERC-20 Contract
 
-ERC20 is a simple, secure standard. But we must be careful in our implementation; many ERC20 tokens have been exploited over the years due to the inclusion of additional, buggy code.
+### Why Use OpenZeppelin Wizard?
 
-For safety and security, we recommend using the OpenZeppelin ERC20 implementation for your project, the source code for which can be found at[ ERC20.sol](https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC20/ERC20.sol). You can do this with the following steps:
+OpenZeppelin provides secure, audited smart contract templates. The OpenZeppelin Wizard is an excellent tool that simplifies the process of creating ERC-20 tokens, ensuring that your contract follows best practices.
 
-1\. Install OpenZeppelin smart contracts in your project by running the following command:
+1. **Go to OpenZeppelin's Wizard**: Open the [OpenZeppelin Wizard](https://wizard.openzeppelin.com/) in your browser.
+2. **Select ERC-20**: In the list of available contract templates, select **ERC-20**.
+3. **Customize Your Contract**:
 
-`npm install @openzeppelin/contracts`
+   - **Token Name**: Enter the name of your token (e.g., `MyToken`).
+   - **Token Symbol**: Enter the symbol for your token (e.g., `MTK`).
+   - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
 
-2\. Then, you can import the contracts in the library with this:
+<p align="center">
+![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
+</p>
 
-```javascript
-// contracts/GLDToken.sol
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
 
-import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+4. **Copy the Code**: Once you've configured your contract, click the **Copy** button to get the Solidity code. You can either copy it to your clipboard or directly open it in Remix IDE.
 
-contract GLDToken is ERC20 {
-    constructor(uint256 initialSupply) ERC20("Gold", "GLD") {
-        _mint(msg.sender, initialSupply);
-    }
-}
-```
+## Step 2: Set Up Remix IDE
+
+Remix IDE is an online platform for Solidity development, making it perfect for beginners and quick testing.
+
+1. **Go to Remix IDE**: Open [Remix IDE](https://remix.ethereum.org) in your browser.
+2. **Create a New Solidity File**:
+
+   - In Remix, create a new file by navigating to the **contracts** directory and clicking the **+** button.
+   - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
+
+<p align="center">
+![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)
+</p>
+3. **Install OpenZeppelin Contracts**:
+   - If you're using Remix’s built-in **Solidity compiler**, it will automatically fetch OpenZeppelin contracts for you.
+   - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
+
+## Step 3: Compile the Contract in Remix
+
+1. **Compile Your Contract**:
+   - In Remix IDE, go to the **Solidity Compiler** tab (the one with the Solidity logo).
+   - Select the compiler version that matches your contract (for example, `0.8.24`).
+   - Click **Compile** to compile your contract.
+
+<p align="center">
+![Remix_ERC20_Compile](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
+</p>
+
+2. **Fix Any Errors**: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
+
+## Step 4: Deploy the Contract on a Test Network
+
+1. **Connect Remix to MetaMask**:
+
+   - Go to the **Deploy & Run Transactions** tab in Remix.
+   - Under **Environment**, select **Injected Web3**. This will connect Remix to your MetaMask wallet.
+
+<p align="center">
+![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
+</p>
+
+Ensure that your MetaMask is connected to a **Core testnet**
+
+2. **Deploy Your Contract**:
+   - In the **Deploy** section, select the **ERC-20 contract** (e.g., `MyToken`).
+   - Please paste the `recipient address` for the tokens to be minted in Premint, as well as the `owner address` (note that in this case, both addresses are the same).
+   - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
+   - Once the contract is deployed, you’ll see the contract’s address in Remix.
+
+<p align="center">
+![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)
+</p>
+
+## Step 5: Interact with Your Contract
+
+Now that your contract is deployed, you can interact with it directly from Remix.
+
+1. **Check Balance**:
+
+   - Under **Deployed Contracts**, you'll see your deployed contract.
+   - Expand the contract’s interface to interact with functions like `balanceOf`, `mint` (if you included minting functionality).
+   - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
+
+<p align="center">
+![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)
+</p>
+
+1. **Mint Tokens**:
+
+   - Call the `mint` function to create new tokens. Provide the recipient address and the number of tokens to mint.
+   - Confirm the transaction in MetaMask.
+
+2. **Transfer Tokens**:
+   - You can also use the **transfer** function to send tokens from one address to another.
+   - Provide the recipient's address and the amount of tokens you want to send.
+   - Confirm the transaction in MetaMask.
+
+## Step 6: Manage Your Tokens
+
+You can add additional functions to your contract, such as:
+
+- **Burning Tokens**: A function to burn (destroy) tokens.
+
+- **Roles**: Roles allow you to assign different permissions to addresses, such as minting or burning tokens, ensuring secure and controlled actions within the contract.
+
+- **Upgradability** : Enables you to upgrade the contract logic after deployment without losing data, ensuring flexibility for future improvements
 
 You can find more information on OpenZeppelin ERC-20 implementation [here](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-#### References
+## References:
 
-* [https://ethereum.org/en/developers/docs/standards/tokens/erc-20/](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
-* [https://docs.openzeppelin.com/contracts/4.x/erc20](https://docs.openzeppelin.com/contracts/4.x/erc20)
+- [ERC-20 Token Standard (Ethereum.org)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
+- [OpenZeppelin ERC-20 Implementation Documentation](https://docs.openzeppelin.com/contracts/4.x/erc20)
