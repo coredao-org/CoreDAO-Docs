@@ -19,7 +19,7 @@ Generalmente se incurre en sanciones de reducción porque un nodo no logra produ
 
 ## Doble signo
 
-Cualquiera puede enviar una solicitud de barra diagonal en CoreChain con la evidencia de Double Sign de CoreChain.
+Anyone can submit a slash request on Core blockchain with the evidence of Double Sign activity on Core.
 
 ### Validación de evidencia
 
@@ -30,7 +30,7 @@ Cualquiera puede enviar una solicitud de barra diagonal en CoreChain con la evid
 
 Si la evidencia es válida:
 
-1. **1000 CORE** se eliminarían del CORE con margen propio del validador
+1. **1,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
 4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
