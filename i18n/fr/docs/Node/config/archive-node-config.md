@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuration des Nœuds d'Archive
+sidebar_label: Archive Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds d'Archive
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Archive Nodes on Core
 
 ---
 
@@ -16,39 +19,68 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Logiciel
 
-- Actuellement, un nœud d'archive Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+
+- **Network Connectivity:** Stable internet connection with low latency and high availability
+
+- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
 
 ### Matériel
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
+An Archive Node on Core stores the entire blockchain history, ensuring data availability and integrity for network participants. It supports querying past transactions, verifying historical data, and enhancing blockchain analytics. While not required for consensus, archive nodes play a crucial role in maintaining transparency and supporting decentralized applications. Following are the hardware requirements for running Archieve Node on Core.
 
-#### Spécifications Matérielles pour les Nœuds d'Archive du Testnet
+<Tabs
+defaultValue="testnetTwo"
+values={[
+{label: 'Testnet2', value: 'testnetTwo'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnetTwo">
+For Archive Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Pour les nœuds d'archive sur le Testnet de la Core Blockchain, nous recommandons les spécifications matérielles minimales suivantes :
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 1TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+| **CPU**            | 8 Core CPU                                                                                          |
+| **RAM**            | 32 Gigabytes                                                                                        |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+```
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | Processeur à 8 cœurs                                                          |
-| RAM              | 32 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+  </TabItem>
+  <TabItem value="testnet">
+    For Archive Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
-#### Spécifications Matérielles pour les Nœuds d'Archive du Mainnet
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 2TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+| **CPU**            | 8 Core CPU                                                                                          |
+| **RAM**            | 32 Gigabytes                                                                                        |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+```
 
-Pour les nœuds d'archive sur le **Mainnet de la Core Blockchain**, nous recommandons les spécifications matérielles minimales suivantes :
+  </TabItem>
+  <TabItem value="mainnet">
+    For Archive Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | Processeur à 8 cœurs                                                          |
-| RAM              | 32 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
+| **CPU**            | 8 Core CPU                                                                                          |
+| **RAM**            | 32 Gigabytes                                                                                        |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+```
+
+  </TabItem>
+</Tabs>
 
 ## Exécution d'un Nœud d'Archive Core
 
 1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud complet à partir de notre code source de blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Téléchargez la dernière version binaire du nœud à partir du répertoire de [sortie](https://github.com/coredao-org/core-chain/releases/latest) de Core sur GitHub, ainsi que le dernier snapshot pour le nœud d'archive depuis le Core [Snapshot Répertoire](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). Le nœud binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet.
+2\. Download the latest node binary for from [Core's Releases Repository](https://github.com/coredao-org/core-chain/releases/latest) and the latest snapshot for archive node from [Core's Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). Le nœud binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet.
 
 3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
