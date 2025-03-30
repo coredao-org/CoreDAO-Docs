@@ -132,5 +132,5 @@ The Core network is now added to your MetaMask.
 4. After performing the above steps, you will be able to see the Core network the next time you access the network selector.
 
 :::info 
-If you happen to have an error, or are struggling with adding the network please ask for help in the ‘support’ channel in the [Core Discord](https://discord.gg/coredao), we are always available to help.
+If you happen to have an error, or are struggling with adding the network please ask for help in the ‘support’ channel in the [Core Discord](https://discord.com/invite/coredaoofficial), we are always available to help.
 :::
