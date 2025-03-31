@@ -142,6 +142,43 @@ module.exports = {
 };
 ```
 
+## Foundry Verification
+
+update the `foundry.toml` file to specify the Solidity version and EVM version for your project.
+
+```bash
+[profile.default]
+solidity_version = "0.8.0"  # Specify the Solidity version
+evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
+```
+
+create a `.env` file to store sensitive information such as your private key, RPC URL, and API keys. This helps to keep your credentials secure and allows you to easily reference them in your code.
+
+```text
+RPC_URL = " https://rpc.test2.btcs.network"
+PRIVATE_KEY = "YOUR_PRIVATE_KEY"
+CORESCAN_API_KEY="YOUR_API_KEY"
+API_URL="https://api.test2.btcs.network/api"
+```
+
+**Important:** Never commit this `.env` file to version control (e.g., GitHub) to prevent exposing your sensitive information. If you're using git, add the `.env` file to your `.gitignore`.
+
+Now that you've created the above `.env` file, run the following command to load the environment variables in the current command line session:
+
+```bash
+source .env
+```
+
+Execute the below command to verify your smart contract
+
+```bash
+forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
+```
+
+Replace `0xContract_Address` and `ContractName` with your actual contract address and the contract Name.
+
+Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+
 ## Known Limitations
 
 - Currently Core only supports solidity compiler versions up to 0.8.24.
