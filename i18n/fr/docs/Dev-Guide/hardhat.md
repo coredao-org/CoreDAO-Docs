@@ -11,7 +11,7 @@ description: Déployer des contrats sur Core en utilisant Hardhat
 
 Hardhat est un environnement de développement populaire pour les blockchains compatibles avec l’EVM, comprenant plusieurs composants pour écrire, compiler, déboguer et déployer des contrats intelligents.
 
-Dans ce tutoriel, apprenez à compiler, déployer et appeler des contrats intelligents sur Core TestNet en utilisant Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
+In this tutorial, learn how to compile, deploy and call smart contracts on Core Testnet using Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Installation
 
@@ -258,7 +258,7 @@ call retrieve() again: BigNumber { value: "100" }
 
 Nous pouvons voir que le script déploie correctement le contrat, stocke un nombre et confirme que le nombre est bien stocké dans le contrat.
 
-Vous pouvez utiliser [Core Scan](https://scan.test.btcs.network/) pour rechercher l'adresse du contrat et vérifier que le contrat a été déployé et appelé avec succès.
+We can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and called.
 
 <p align="center">
 ![hardhat](../../static/img/hardhat/hardhat-1.avif)
