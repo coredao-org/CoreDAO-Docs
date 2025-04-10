@@ -54,13 +54,13 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 2. Cliquez sur **Connect Wallet** en haut à droite de l'en-tête pour connecter votre portefeuille Core. Dans la liste des portefeuilles pris en charge, choisissez votre portefeuille Core souhaité. Pour ce guide, nous avons utilisé MetaMask.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-1.png)
 </p>
 
 3. Confirmez la notification du portefeuille pour autoriser la connexion au site de staking.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-2.png)
 </p>
 
@@ -68,7 +68,7 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 4. Une fois sur la page **Validators**, faites défiler vers le bas pour voir la liste des validateurs Core et choisissez le validateur auquel vous souhaitez déléguer vos Bitcoins. Veuillez vous assurer de choisir des validateurs actifs.
 
-<p align="center">
+<p align="center" >
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-3.png)
 </p>
 
@@ -80,25 +80,27 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 6. Cliquez sur le bouton **Stake**, puis sélectionnez **BTC**
 
-<p align="center">
+<p align="center"  style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-5.png)
 </p>
 
 7. Pour connecter votre portefeuille Bitcoin, cliquez sur le portefeuille pris en charge de votre choix. Pour ce guide, nous avons sélectionné Unisat.
 
-<p align="center">
+<p align="center" style={{zoom:"80%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-6.png)
 </p>
 
 8. Une fois votre portefeuille Bitcoin connecté, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-- Spécifiez le montant de Bitcoin que vous souhaitez déléguer. Le montant minimum à déléguer est de **0,01 Bitcoin** si le staking est effectué via l'interface utilisateur officielle du site, et aucune exigence n'est imposée pour le staking de BTC via le script de staking.
-- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation. La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis que le staking via script ne comporte aucune période de blocage.
-  - Vous pouvez entrer des valeurs en sélectionnant à l'intérieur de la boîte de temps de verrouillage ou en cliquant sur l'icône du calendrier pour sélectionner la date et cliquer sur "OK" pour continuer.
+- Specifying the amount of Bitcoin you’d like to delegate
+  - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
+  - In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement
+- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
+  - Select inside the lock time box to input values, or click on the calendar icon to select the date and click ‘OK’ to proceed.
   - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-7.png)
 </p>
 
@@ -113,27 +115,55 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 
 11. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP\_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP\_Return. Annulez la transaction si elle n'inclut pas la sortie OP\_Return.
 
-<p align="center">
+<p align="center" style={{zoom:"80%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
 12. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted**. Vous pouvez vérifier votre transaction en cliquant sur **View on BTC Explorer**.
 
-<p align="center">
+<p align="center" >
 ![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
+</p>
+
+### Verify BTC Staking Address
+
+13. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process.
+
+14. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
+</p>
+
+15. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+
+<p align="center" style={{zoom:"35%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
+</p>
+
+16. The verification result will appear in the **Verification Result** section.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
+</p>
+
+17. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+
+<p align="center">
+![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
 ### Visualiser les Enregistrements de Staking
 
-13. Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
+18. Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-14. La page **My Staking** affiche les enregistrements de tout votre staking (CORE, BTC et hash). Cliquez sur l'onglet **BTC Records** pour afficher les détails de vos délégations BTC.
+19. La page **My Staking** affiche les enregistrements de tout votre staking (CORE, BTC et hash). Cliquez sur l'onglet **BTC Records** pour afficher les détails de vos délégations BTC.
 
-<p align="center">
+<p align="center" style={{zoom:"80%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
