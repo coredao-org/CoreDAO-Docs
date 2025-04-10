@@ -110,6 +110,28 @@ _**(_Optional_)**_ After the transaction is confirmed on the Bitcoin network, us
  - The user must send a **Redeem script** explicitly after the timelock period ends to regain access and be able to spend their BTC.
  - Alternatively, users can **redelegate directly** without redemption.
 
+### Timeline for Non-Custodial Bitcoin Staking
+
+Here’s an overview of the timeline for placing a Bitcoin staking order and when rewards take effect:
+
+1. **Staking Order Placement:** Once a staking order is placed, it typically takes 6 Bitcoin blocks (roughly 60 minutes) for the Bitcoin transaction to be transferred to the Core blockchain.
+2. **Staking Reward Activation:** After the Bitcoin transaction transfer is completed, it takes one round (~24 hours, based on UTC+0 time) for the staking reward to become effective.
+3. **Staking Data Accessibility:** After the staking becomes effective, staking data will be available via the Staking API.
+
+#### **Example: Bitcoin Staking Transaction with 2-day Duration**
+
+- Assume a staking order is placed at 6:00 AM UTC+0 today.
+- The transaction will go through 6 Bitcoin blocks on the same day.
+- The staking will become effective at 00:00 AM UTC+0 on the second day.
+- After the staking goes effective, the staking data is then accessible.
+
+#### **Example: Bitcoin Staking Transaction with 3-day Duration**
+
+- Assume a staking order is placed at 11:30 PM UTC+0.
+- The transaction will go through 6 Bitcoin blocks on the next day.
+- The staking will become effective at 12:00 AM UTC+0 on the third day.
+- After the staking goes effective, the staking data is then accessible.
+
 ### Guidelines for Staking/Redeeming Bitcoin
 
 Please follow these guidelines to ensure smooth transactions when staking or redeeming your Bitcoin. Following these recommendations can ensure a more efficient staking and redemption process for your Bitcoin.
