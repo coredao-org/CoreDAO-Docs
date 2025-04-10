@@ -109,7 +109,7 @@ To enable higher Bitcoin staking yields through Dual Staking, users must:
 
 This approach ensures seamless reward distribution while incentivizing deeper network participation.
 
-### Considerations on optimizing yields
+### Considerations for Optimizing Yields
 
 - Validator hybrid scores represent the total weighted delegations across all validators. Generally, higher hybrid scores correlate with lower BTC and CORE staking rewards, although this relationship is not strictly linear.
 - When staking a relatively low quantity of assets that don’t significantly alter the staking distribution, stakers are recommended to simply delegate the BTC or CORE staking to the validator that gives out the highest reward.
