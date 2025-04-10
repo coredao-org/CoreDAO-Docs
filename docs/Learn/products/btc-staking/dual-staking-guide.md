@@ -84,27 +84,59 @@ Dual staking is an enhancement to Core’s Non-custodial BTC staking, allowing u
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
+### Confirming CORE and BTC Staking Details
+8. Verify that the staked CORE amount and selected Validator is correct and then press _Confirm_.
+9. Similarly, verify that the staked BTC amount and selected Validator is correct and then press _Confirm_.
+
+### Verify BTC Staking Address
+
+10. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process. 
+
+11. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
+</p>
+
+12. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button. 
+
+<p align="center" style={{zoom:"35%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
+</p>
+
+13. The verification result will appear in the **Verification Result** section.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
+</p>
+
+14. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+
+<p align="center">
+![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
+</p>
+
 ### Adjusting CORE:BTC Ratios for Higher Yields
 
-8. On the right side of the Staking Calculator, there is a **Summary** tab that calculates the Total Staking Reward Rate and Projected Annual Rewards. These are estimated annual return numbers for staked Bitcoin and CORE. The reward rate may fluctuate daily based on the total and weighted amounts of delegations that validators receive. When set to the **Current** button, it displays only the real-time estimated staking reward rate. When set to the **Overall** button, it represents the average of two components: the rates from all validators based on previous staking records and the real-time estimated staking reward rate.
+15. On the right side of the Staking Calculator, there is a **Summary** tab that calculates the Total Staking Reward Rate and Projected Annual Rewards. These are estimated annual return numbers for staked Bitcoin and CORE. The reward rate may fluctuate daily based on the total and weighted amounts of delegations that validators receive. When set to the **Current** button, it displays only the real-time estimated staking reward rate. When set to the **Overall** button, it represents the average of two components: the rates from all validators based on previous staking records and the real-time estimated staking reward rate.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
-9. You can also use the sliders in the below section to see the effect of CORE:BTC staking ratio on your Total Staking Reward Rate.
+16. You can also use the sliders in the below section to see the effect of CORE:BTC staking ratio on your Total Staking Reward Rate.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
-10. To get the maximum reward boost on your staked amount, under the Dual Staking Tiers section, adjust the **BTC Staked** slider to the amount of BTC you want to stake and click the **Max Boost** button. This will automatically set the corresponding  CORE amount in the “CORE Staked” slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the “Max Boost” button again to update the recommended BTC amount in the “BTC Staked” bar.
+17. To get the maximum reward boost on your staked amount, under the Dual Staking Tiers section, adjust the **BTC Staked** slider to the amount of BTC you want to stake and click the **Max Boost** button. This will automatically set the corresponding  CORE amount in the “CORE Staked” slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the “Max Boost” button again to update the recommended BTC amount in the “BTC Staked” bar.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
-11\. Next to the **Summary** tab, you can find **Details** page, which shows staking details, including:
+18. Next to the **Summary** tab, you can find **Details** page, which shows staking details, including:
 
 * **New Staked BTC:** The amount of BTC you plan to stake and the current reward rate.  
 * **New Staked CORE:** The amount of CORE you plan to stake and the current reward rate.  
@@ -118,51 +150,51 @@ Dual staking is an enhancement to Core’s Non-custodial BTC staking, allowing u
 
 ### Finalizing Dual Staking Transactions
 
-11.  Once you have specified the amount of BTC/CORE to stake and the validators for delegation respectively, you can click on the **Proceed to Stake** button.
+19.  Once you have specified the amount of BTC/CORE to stake and the validators for delegation respectively, you can click on the **Proceed to Stake** button.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
-12. On the Stake CORE page, confirm the amount of CORE to stake along with BTC, and click the **Confirm** button.
+20. On the Stake CORE page, confirm the amount of CORE to stake along with BTC, and click the **Confirm** button.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
 </p> 
 
-13. By clicking **Confirm**, you will get a notification from your connected Core wallet to complete the transaction.   
-14. Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click **My Staking** to see your staking records or **View on CoreScan** to review this transaction.  
+21. By clicking **Confirm**, you will get a notification from your connected Core wallet to complete the transaction.  
 
+22. Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click **My Staking** to see your staking records or **View on CoreScan** to review this transaction.  
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
-15.  On the “Stake BTC” page, confirm the amount of Bitcoin to stake. Before finalizing the Bitcoin staking process, it's important to understand and specify several key parameters:  
-* Specifying the amount of Bitcoin you’d like to delegate  
-  * The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U. 
-  * In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement  
-* Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.  
-  * Select inside the lock time box to input values, or click on the calendar icon to select the date and click ‘OK’ to proceed.  
-  * The default lock time is set to a month in advance.  
-* Specify the network priority speed for your transaction
+23. On the “Stake BTC” page, confirm the amount of Bitcoin to stake. Before finalizing the Bitcoin staking process, it's important to understand and specify several key parameters:  
+
+   * Specifying the amount of Bitcoin you’d like to delegate  
+      * The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U. 
+      * In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement  
+   * Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.  
+      * Select inside the lock time box to input values, or click on the calendar icon to select the date and click ‘OK’ to proceed.  
+      * The default lock time is set to a month in advance.  
+   * Specify the network priority speed for your transaction
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
-16. Finally, click ‘Confirm’ to complete the transaction.
+24. Finally, click ‘Confirm’ to complete the transaction.
 
 **Confirm OP\_Return Output** 
 
-17. Before Signing the transaction in your wallet, verify the transaction outputs to ensure they include an `OP_Return` output. The `OP_Return` output is where your `redeem_script` is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be **OP_Return**. Abort the transaction if it doesn't include the OP\_Return output.
+25. Before Signing the transaction in your wallet, verify the transaction outputs to ensure they include an `OP_Return` output. The `OP_Return` output is where your `redeem_script` is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be **OP_Return**. Abort the transaction if it doesn't include the OP\_Return output.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
-
-18. Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click on **My Staking** to see your staking records or **View on BTC Explorer** to review this transaction.
+26. Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click on **My Staking** to see your staking records or **View on BTC Explorer** to review this transaction.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
@@ -170,14 +202,13 @@ Dual staking is an enhancement to Core’s Non-custodial BTC staking, allowing u
 
 **Verify Transaction Submission and Staking Records**
 
-19.  In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
+27.  In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-
-20.  The **My Staking** page displays records of all your staking activities (CORE, BTC, hash). Click on the respective CORE, BTC, and Hash tabs to view details on your staking and delegations.
+28.  The **My Staking** page displays records of all your staking activities (CORE, BTC, hash). Click on the respective CORE, BTC, and Hash tabs to view details on your staking and delegations.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)

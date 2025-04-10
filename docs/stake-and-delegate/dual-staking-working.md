@@ -101,9 +101,9 @@ To enable higher Bitcoin staking yields through Dual Staking, users must:
 1. **Stake both BTC and CORE**, ensuring the CORE staked meets or exceeds the minimum Dual Staking threshold.  
 2. **Use the same wallet** for both CORE staking and receiving BTC staking rewards.  
 
-This approach ensures seamless reward distribution while incentivizing deeper network participation.  
+This approach ensures seamless reward distribution while incentivizing deeper network participation. 
 
-### Considerations on optimizing yields
+### Considerations for Optimizing Yields
 
 * Validator hybrid scores represent the total weighted delegations across all validators. Generally, higher hybrid scores correlate with lower BTC and CORE staking rewards, although this relationship is not strictly linear.  
 * When staking a relatively low quantity of assets that don’t significantly alter the staking distribution, stakers are recommended to simply delegate the BTC or CORE staking to the validator that gives out the highest reward.   
