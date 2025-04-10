@@ -24,15 +24,15 @@ A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu
 2. **Mínimo de 1 CORE + Tarifa de Gas:** Para apostar, debes tener al menos 1 CORE. Además del monto del staking, los usuarios también deben tener en cuenta las tarifas de gas en tokens CORE para el procesamiento de transacciones.
 
 3. **Entender las Diferencias en las Direcciones de Staking de Bitcoin:**
-  - La dirección de staking en el mensaje de transacción de tu cartera de Bitcoin puede diferir de tu dirección original de Bitcoin. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de tu cartera de Bitcoin, asegurando el control y la seguridad de tus activos. Tu Bitcoin permanece seguro en la dirección de staking de Bitcoin, sin verse afectado por el staking.
+   - La dirección de staking en el mensaje de transacción de tu cartera de Bitcoin puede diferir de tu dirección original de Bitcoin. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de tu cartera de Bitcoin, asegurando el control y la seguridad de tus activos. Tu Bitcoin permanece seguro en la dirección de staking de Bitcoin, sin verse afectado por el staking.
 
 4. **Retrasos en la Aparición de los Activos Bloqueados en tu Cartera de Bitcoin:**
-  - Puedes enfrentar algunos retrasos antes de que tus Bitcoins bloqueados aparezcan en tus carteras de Bitcoin. Este retraso se debe principalmente a la confirmación de transacciones en la red Bitcoin, lo que puede llevar varias horas debido al tiempo de bloque, el número de confirmaciones de bloques necesarias y la congestión de la red.
-  - Aunque estamos trabajando activamente con socios de carteras para soportar la visualización oportuna de tus activos en tus carteras, puedes verificar tus activos bloqueados en la página **MyStaking** en el sitio web de staking de Core.
-  - También puedes ver tus fondos apostados buscando la dirección de staking en un explorador de Bitcoin, como [Mempool.space](https://mempool.space/).
+   - Puedes enfrentar algunos retrasos antes de que tus Bitcoins bloqueados aparezcan en tus carteras de Bitcoin. Este retraso se debe principalmente a la confirmación de transacciones en la red Bitcoin, lo que puede llevar varias horas debido al tiempo de bloque, el número de confirmaciones de bloques necesarias y la congestión de la red.
+   - Aunque estamos trabajando activamente con socios de carteras para soportar la visualización oportuna de tus activos en tus carteras, puedes verificar tus activos bloqueados en la página **MyStaking** en el sitio web de staking de Core.
+   - También puedes ver tus fondos apostados buscando la dirección de staking en un explorador de Bitcoin, como [Mempool.space](https://mempool.space/).
 
 5. **Consideraciones para los Períodos de Bloqueo**
-  - Una vez que bloqueas tu Bitcoin para el staking, no será accesible hasta que termine el período de staking. Considerando tus objetivos de inversión y tolerancia al riesgo, se recomienda seleccionar tu período de bloqueo de manera reflexiva. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
+   - Una vez que bloqueas tu Bitcoin para el staking, no será accesible hasta que termine el período de staking. Considerando tus objetivos de inversión y tolerancia al riesgo, se recomienda seleccionar tu período de bloqueo de manera reflexiva. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
 
 ## Tutorial paso a paso sobre el doble stake
 
@@ -87,27 +87,60 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
+### Confirming CORE and BTC Staking Details
+
+8. Verify that the staked CORE amount and selected Validator is correct and then press _Confirm_.
+9. Similarly, verify that the staked BTC amount and selected Validator is correct and then press _Confirm_.
+
+### Verify BTC Staking Address
+
+10. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process.
+
+11. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
+</p>
+
+12. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+
+<p align="center" style={{zoom:"35%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
+</p>
+
+13. The verification result will appear in the **Verification Result** section.
+
+<p align="center" style={{zoom:"60%"}}>
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
+</p>
+
+14. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+
+<p align="center">
+![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
+</p>
+
 ### Ajustando las Proporciones CORE:BTC para Mayores Rendimientos
 
-8. En el lado derecho de la Calculadora de Staking, hay una pestaña **Resumen** que calcula la Tasa Total de Recompensas de Staking y las Recompensas Anuales Proyectadas. Estos son los números estimados de retorno anual para el Bitcoin y CORE apostados. La tasa de recompensa puede fluctuar diariamente según los montos totales y ponderados de las delegaciones que reciben los validadores. Cuando se establece en el botón **Actual**, solo muestra la tasa estimada en tiempo real de las recompensas por staking. Cuando se establece en el botón **General**, representa el promedio de dos componentes: las tasas de todos los validadores basadas en los registros anteriores de staking y la tasa estimada en tiempo real.
+15. En el lado derecho de la Calculadora de Staking, hay una pestaña **Resumen** que calcula la Tasa Total de Recompensas de Staking y las Recompensas Anuales Proyectadas. Estos son los números estimados de retorno anual para el Bitcoin y CORE apostados. La tasa de recompensa puede fluctuar diariamente según los montos totales y ponderados de las delegaciones que reciben los validadores. Cuando se establece en el botón **Actual**, solo muestra la tasa estimada en tiempo real de las recompensas por staking. Cuando se establece en el botón **General**, representa el promedio de dos componentes: las tasas de todos los validadores basadas en los registros anteriores de staking y la tasa estimada en tiempo real.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
-9. También puedes usar los controles deslizantes en la sección inferior para ver el efecto de la proporción de staking CORE:BTC en tu Tasa Total de Recompensas de Staking.
+16. También puedes usar los controles deslizantes en la sección inferior para ver el efecto de la proporción de staking CORE:BTC en tu Tasa Total de Recompensas de Staking.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
-10. **Para obtener el máximo aumento de recompensas** en tu cantidad apostada, bajo la sección de **Tiers de Staking Doble**, ajusta el control deslizante de **BTC Apostados** a la cantidad de BTC que deseas apostar y haz clic en el botón **Max Boost**. Esto ajustará automáticamente la cantidad correspondiente de CORE en el control deslizante de “CORE Apostados” para desbloquear el aumento máximo. También puedes ajustar manualmente la cantidad de CORE apostados y luego hacer clic nuevamente en el botón “Max Boost” para actualizar la cantidad recomendada de BTC en la barra de “BTC Apostados”.
+17. **Para obtener el máximo aumento de recompensas** en tu cantidad apostada, bajo la sección de **Tiers de Staking Doble**, ajusta el control deslizante de **BTC Apostados** a la cantidad de BTC que deseas apostar y haz clic en el botón **Max Boost**. Esto ajustará automáticamente la cantidad correspondiente de CORE en el control deslizante de “CORE Apostados” para desbloquear el aumento máximo. También puedes ajustar manualmente la cantidad de CORE apostados y luego hacer clic nuevamente en el botón “Max Boost” para actualizar la cantidad recomendada de BTC en la barra de “BTC Apostados”.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
-11\. Junto a la pestaña **Resumen**, puedes encontrar la página **Detalles**, que muestra detalles del staking, incluidos:
+18. Junto a la pestaña **Resumen**, puedes encontrar la página **Detalles**, que muestra detalles del staking, incluidos:
 
 - **Nuevo BTC Apostado:** La cantidad de BTC que planeas apostar y la tasa de recompensas actual.
 - **Nuevo CORE Apostado:** La cantidad de CORE que planeas apostar y la tasa de recompensas actual.
@@ -120,50 +153,51 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 ### Finalizando las Transacciones de Staking Doble
 
-11. Una vez que hayas especificado la cantidad de BTC/CORE para apostar y los validadores para delegar, puedes hacer clic en el botón **Proceder a Apostar**.
+19. Una vez que hayas especificado la cantidad de BTC/CORE para apostar y los validadores para delegar, puedes hacer clic en el botón **Proceder a Apostar**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
-12. En la página de Apostar CORE, confirma la cantidad de CORE que deseas apostar junto con el BTC, y haz clic en el botón **Confirmar**.
+20. En la página de Apostar CORE, confirma la cantidad de CORE que deseas apostar junto con el BTC, y haz clic en el botón **Confirmar**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-12.png)
 </p> 
 
-13. Al hacer clic en **Confirmar**, recibirás una notificación de tu billetera Core conectada para completar la transacción.
-14. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en CoreScan** para revisar esta transacción.
+21. Al hacer clic en **Confirmar**, recibirás una notificación de tu billetera Core conectada para completar la transacción.
+
+22. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en CoreScan** para revisar esta transacción.
 
 <p align="center">
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
-15. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es importante entender y especificar varios parámetros clave:
+23. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es importante entender y especificar varios parámetros clave:
 
 - Especificar la cantidad de Bitcoin que deseas delegar
-  - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
-  - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
+   - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
+   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
-  - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
-  - El tiempo de bloqueo predeterminado se establece con un mes de anticipación.
+   - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
+   - El tiempo de bloqueo predeterminado se establece con un mes de anticipación.
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
 <p align="center" style={{zoom:"70%"}}>
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
-16. Finalmente, haz clic en ‘Confirmar’ para completar la transacción.
+24. Finalmente, haz clic en ‘Confirmar’ para completar la transacción.
 
 **Confirmar Salida OP\_Return**
 
-17. Antes de firmar la transacción en tu billetera, verifica las salidas de la transacción para asegurarte de que incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Abortas la transacción si no incluye la salida OP\_Return.
+25. Antes de firmar la transacción en tu billetera, verifica las salidas de la transacción para asegurarte de que incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Abortas la transacción si no incluye la salida OP\_Return.
 
 <p align="center">
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
-18. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en BTC Explorer** para revisar esta transacción.
+26. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en BTC Explorer** para revisar esta transacción.
 
 <p align="center">
 ![doble participación en el núcleo](../../../../static/img/dual-staking/dual-staking-16.png)
@@ -171,13 +205,13 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 **Verificar Envío de Transacción y Registros de Staking**
 
-19. En la parte superior derecha del sitio web de staking, pasa el cursor sobre tu billetera conectada y haz clic en **Mi Staking**.
+27. En la parte superior derecha del sitio web de staking, pasa el cursor sobre tu billetera conectada y haz clic en **Mi Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-20. La página **Mi participación** muestra registros de todas sus actividades de participación (CORE, BTC, hash). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
+28. La página **Mi participación** muestra registros de todas sus actividades de participación (CORE, BTC, hash). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
