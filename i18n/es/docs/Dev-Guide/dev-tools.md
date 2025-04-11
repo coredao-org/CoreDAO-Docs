@@ -55,19 +55,19 @@ _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core
     * **[Explorador de Bloques](https://scan.coredao.org/):** busca y analiza transacciones, cuentas, bloques y más.
 
 ```
-* **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
+* **[Endpoints de RPC](https://chainlist.org/chain/1116):** endpoints de RPC para el servicio de la mainnet de Core.
 
-* **[Core Bridge](https://bridge.coredao.org/):** official bridge for the Core ecosystem (more details in Core Bridge Resources)
+* **[Bridge de Core](https://bridge.coredao.org/):** bridge oficial para el ecosistema de Core (mas detalles en los recursos del bridge de Core)
 
-* **[Core Staking](https://stake.coredao.org/):** Core's official mainnet staking website.
+* **[Staking de Core](https://stake.coredao.org/):** Sitio web oficial de la mainnet de Core para staking.
 
-* **[Web3 Provider](https://cloud.infstones.com/login):** scalable API infrastructure provided by InfStones.
+* **[Proveedor Web3](https://cloud.infstones.com/login):** API de infraestructura escalable provista por InfStones.
 
-* **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** web tool for contract verification (refer [here](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan) for detailed guide).
+* **[Verificador de Contratos Core Scan](https://scan.coredao.org/verifyContract):** herramienta web para verificación de contratos (consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan) para la guia detallada).
 
-* **[Gnosis Safe](https://safe.coredao.org/welcome):** secure multi-sig management of digital assets.
+* **[Gnosis Safe](https://safe.coredao.org/welcome):** gestión segura de activos digitales con multisig.
 
-* **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** official wrapped CORE token smart contract.
+* **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** contrato inteligente oficial de token de CORE envuelto (wrapped CORE).
 ```
 
   </TabItem>
@@ -75,9 +75,9 @@ _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core
 
 ### Recursos generales
 
-- **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
-- **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
+- **[GitHub de Core DAO](https://github.com/coredao-org):** página oficial de GitHub que contiene todo sobre Core.
+- **[Guias y tutoriales](https://github.com/coredao-org/dapp-tutorial):** guías detalladas y tutoriales para arrancar tu camino construyendo en Core.
 
 ### Whitepaper
 
-- **[Whitepaper](https://whitepaper.coredao.org/):** official whitepaper covering the technical overview of Core.
+- **[Whitepaper](https://whitepaper.coredao.org/):** whitepaper oficial con la descripción técnica de Core.
