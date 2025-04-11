@@ -12,7 +12,7 @@ Core Ignition Temporada 3 es un programa de incentivos para usuarios de seis mes
 
 ## Período del Programa
 
-The duration for the Core Ignition user incentive program is **six** months, from March 12, 2025, 12:00 UTC to September 12, 2025, 11:59 UTC.
+La duración del programa de incentivos para usuarios de Core Ignition es de **seis** meses, desde el 12 de marzo de 2025 a las 12:00 UTC hasta el 12 de septiembre de 2025 a las 11:59 UTC.
 
 ## Elegibilidad
 
