@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el Core Testnet Faucet público para distribuir tokens de Core testnet, **tCORE** o **tCORE2**.
 
-## Steps to Obtain tCORE/tCORE2 from Core Testnet Faucet
+## Pasos para obtener tCORE/tCORE2 del faucet de Core Testnet
 
 1. Navegue al sitio web de faucet.
 
