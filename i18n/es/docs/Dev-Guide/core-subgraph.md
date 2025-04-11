@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos de la cadena de bloques Core, procesarlos y almacenarlos para su consumo a través de GraphQL. Echemos un vistazo a cómo podemos crear e implementar esta poderosa herramienta.
 
-## Important URLs and Keys
+## URLs y Claves Importantes
 
 ### Core MainNet
 
@@ -81,9 +81,9 @@ Finalmente, ejecutaremos los comandos de creación e implementación. Para evita
 
 ## Autorización
 
-To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.
+Para proteger tu subgrafo de modificaciones externas, contáctanos en [discord](https://discord.com/invite/coredaoofficial) para obtener una clave de autorización única.
 
-If you are testing against the Core TestNet Graph, here are the access token for general testing purpose:
+Si estás realizando pruebas en Core TestNet Graph, aquí tienes el token de acceso para propósitos generales de testing:
 
-- **General key for Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
-- **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0
+- **Clave general para Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
+- **Clave general para Core Testnet2:** b020b95e511443699e72a10c697f84c0
