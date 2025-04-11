@@ -14,7 +14,7 @@ Core Ignition es un programa de incentivos de seis meses desarrollado por la Fun
 
 ### 2. ¿Qué es la blockchain Core?
 
-Core serves as the Proof of Stake layer for Bitcoin, pioneering Self-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Since April 2024, over 5,900 BTC have been staked with Core, boosting Bitcoin’s utility and security. Core is the most Bitcoin-aligned EVM blockchain, with approximately 76% of Bitcoin mining hash power contributing to the network’s security.
+Core funciona como la capa de Proof of Stake para Bitcoin, siendo pionero en el Staking de Bitcoin con auto-custodia, asegurando un ecosistema BTCfi totalmente compatible con EVM. Desde abril de 2024, más de 5,900 BTC se han stakeado en Core, impulsando la utilidad y seguridad de Bitcoin. Core es la blockchain EVM más alineada con Bitcoin, con aproximadamente el 76% del poder de minería de Bitcoin contribuyendo a la seguridad de su red.
 
 ### 3. Soy nuevo en el ecosistema Core. ¿Cómo empiezo?
 
