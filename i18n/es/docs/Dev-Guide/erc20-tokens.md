@@ -2,37 +2,37 @@
 sidebar_label: ERC-20 Tokens
 hide_table_of_contents: false
 sidebar_position: 2
-description: ERC-20 on Core
+description: ERC-20 en Core
 ---
 
 # ERC20 Tokens
 
 ---
 
-## What is ERC-20?
+## ¿Qué es ERC-20?
 
-ERC-20 is a standard for fungible tokens on the Ethereum blockchain. Unlike ERC-721 tokens, which are non-fungible and unique, ERC-20 tokens are identical to each other and can be traded or exchanged in equal quantities. They are the most common token type for projects involving cryptocurrencies, digital assets, and decentralized applications (dApps).
+ERC-20: es un estándar para tokens fungibles en la blockchain de Ethereum. A diferencia de los tokens ERC-721, que no son fungibles y son únicos, los tokens ERC-20 son idénticos entre sí y pueden intercambiarse en cantidades iguales. Son el tipo de token más común para proyectos que involucran criptomonedas, activos digitales y aplicaciones descentralizadas (dApps).
 
-## Prerequisites
+## Prerrequisitos
 
-Before starting, you’ll need:
+Antes de empezar, necesitarás:
 
-- **MetaMask** or any EVM wallet.
-- A basic understanding of **Solidity** (though we will guide you through the whole process).
-- Access to **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
+- **MetaMask** o cualquier billetera EVM.
+- Un conocimiento básico de **Solidity** (aunque te guiaremos durante todo el proceso).
+- Acceso a **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
 
-## Step 1: Use OpenZeppelin Wizard to Generate Your ERC-20 Contract
+## Paso 1: Usa el Asistente de OpenZeppelin para generar tu contrato ERC-20
 
-### Why Use OpenZeppelin Wizard?
+### ¿Por qué usar el asistente de OpenZeppelin?
 
-OpenZeppelin provides secure, audited smart contract templates. The OpenZeppelin Wizard is an excellent tool that simplifies the process of creating ERC-20 tokens, ensuring that your contract follows best practices.
+OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditadas. El Asistente de OpenZeppelin es una herramienta excelente que simplifica el proceso de creación de tokens ERC-20, garantizando que su contrato sigue las mejores prácticas.
 
-1. **Go to OpenZeppelin's Wizard**: Open the [OpenZeppelin Wizard](https://wizard.openzeppelin.com/) in your browser.
-2. **Select ERC-20**: In the list of available contract templates, select **ERC-20**.
-3. **Customize Your Contract**:
+1. **Ve al asistente de OpenZeppelin**: Abre él [asistente de OpenZeppelin](https://wizard.openzeppelin.com/) en tu buscador.
+2. **Selecciona ERC-20**: En la lista de modelos de contrato disponibles, seleccione **ERC-20**.
+3. **Personaliza tu contrato**:
 
-   - **Token Name**: Enter the name of your token (e.g., `MyToken`).
-   - **Token Symbol**: Enter the symbol for your token (e.g., `MTK`).
+   - **Token Name**: Introduce el nombre de tu token (ej: `MyToken`).
+   - **Token Symbol**: Ingresa el símbolo de tu token (ej: `MTK`).
    - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
 
 <p align="center">
