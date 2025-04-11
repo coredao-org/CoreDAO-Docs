@@ -26,7 +26,7 @@ Pour générer des clés API à l'aide d'un compte enregistré sur Core Scan, re
 
 Un problème technique peut s'être produit lors de la création de la clé. Dans ce cas, essayez de supprimer la clé et d'en générer une nouvelle. Si le problème persiste après avoir utilisé une clé fraîchement générée, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.
 
-### 5. Y a-t-il une limite de taux sur les requêtes API ?
+### 5. Is there a rate limit on Core Scan API requests?
 
 Oui, il existe des limites de taux fixes sur les requêtes API en fonction du niveau d'API. Pour éviter les erreurs liées aux limites de taux, respectez votre offre disponible en attendant un certain temps entre chaque requête. Si vous utilisez un script ou une application, appliquez un throttling pour limiter la fréquence des appels.
 
@@ -34,7 +34,11 @@ Oui, il existe des limites de taux fixes sur les requêtes API en fonction du ni
 | ---------------- | -------------------------------------------- |
 | **Gratuit**      | 5 appels/seconde, jusqu'à 10 000 appels/jour |
 
-### 6. Quel est le code de statut d'une API si une erreur survient ?
+### 6. Are there any rate limits on the Staking API endpoints?
+
+Yes, the Staking API endpoints have a rate limit of 600 transactions per minute per IP.
+
+### 7. Quel est le code de statut d'une API si une erreur survient ?
 
 Un appel API qui rencontre une erreur renverra 0 comme code de statut et affichera la cause de l'erreur dans le champ résultat.
 
@@ -46,6 +50,6 @@ Un appel API qui rencontre une erreur renverra 0 comme code de statut et affiche
 }
 ```
 
-### 7. Que dois-je faire si je rencontre des problèmes ou des bugs avec l'API ?
+### 8. Que dois-je faire si je rencontre des problèmes ou des bugs avec l'API ?
 
 Référez-vous à la documentation officielle de l'API pour les [messages de problèmes courants](https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si le problème persiste, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.
