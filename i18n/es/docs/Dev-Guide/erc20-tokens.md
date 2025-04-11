@@ -51,13 +51,13 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 2. **Crear un nuevo archivo de Solidity**:
 
    - En Remix, crea un nuevo archivo al navegar al directorio **contracts** y hacer clic en el botón **+**.
-   - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
+   - Pega el código del contrato ERC-20 que copiaste del asistente de OpenZeppelin en el archivo recién creado.
 
 <p align="center">
 ![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)
 </p>
-3. **Install OpenZeppelin Contracts**:
-   - If you're using Remix’s built-in **Solidity compiler**, it will automatically fetch OpenZeppelin contracts for you.
+3. **Instala los contratos de OpenZeppelin**:
+   - Si usas el **compilador de Solidity** integrado en Remix, este obtendrá automáticamente los contratos de OpenZeppelin por ti.
    - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
 
 ## Step 3: Compile the Contract in Remix
