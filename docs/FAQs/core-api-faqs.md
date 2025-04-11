@@ -25,7 +25,7 @@ To generate API keys using a registered account on Core Scan, refer to detailed 
 
 A technical glitch may have occurred in the key creation process. In this case, try deleting the key and generating a new one.​ If the issue still persists after using a freshly generated key, contact us on our official [Discord](https://discord.com/invite/coredaoofficial) server.
 
-### 5. Is there a rate limit on API requests?
+### 5. Is there a rate limit on Core Scan API requests?
 
 Yes, there are fixed rate limits on API requests based on the API tier. To avoid rate limit errors, adhere to your available plan by waiting for a certain amount of time before each request. If you are using a script or application, apply throttling to limit the frequency of calls.
 
@@ -33,7 +33,11 @@ Yes, there are fixed rate limits on API requests based on the API tier. To avoid
 | ------------ | -------------- |
 | **Free**     | 5 calls/second , up to 10,000 calls/day |
 
-### 6. What is the status code of an API if an error occurs?
+### 6. Are there any rate limits on the Staking API endpoints?
+
+Yes, the Staking API endpoints have a rate limit of 600 transactions per minute per IP.
+
+### 7. What is the status code of an API if an error occurs?
 
 An API call that encounters an error will return 0 as its status code and display the cause of the error in the result field.
 
@@ -45,6 +49,6 @@ An API call that encounters an error will return 0 as its status code and displa
 }
 ```
 
-### 7. What should I do if I encounter issues or bugs with the API?
+### 8. What should I do if I encounter issues or bugs with the API?
 
 Refer to official API documentation for [Common issues messages](https://docs.coredao.org/docs/api/tutorials/common-error-messages), If the problem persists, contact us on our official [Discord](https://discord.com/invite/coredaoofficial) server.
