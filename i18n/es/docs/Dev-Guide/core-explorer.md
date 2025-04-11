@@ -1,5 +1,5 @@
 ---
-sidebar_label: Block Explorer
+sidebar_label: Explorador de Bloques
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -33,7 +33,7 @@ Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los 
 
 </Tabs>
 
-### Using the Core Scan Explorer
+### Usando el Explorador de Core Scan
 
 Puede utilizar el explorador de cadena de bloques Testnet Core Scan para buscar y revisar transacciones. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
 
