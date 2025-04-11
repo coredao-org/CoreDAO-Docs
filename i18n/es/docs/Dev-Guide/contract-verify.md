@@ -2,7 +2,7 @@
 sidebar_label: Verificación de Contrato
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn how to verify a smart contract using Core scan
+description: Aprende cómo verificar un contrato inteligente usando Core Scan
 ---
 
 # Verificación de Contrato
@@ -12,7 +12,7 @@ description: Learn how to verify a smart contract using Core scan
 En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Si bien existen varias formas de lograr la verificación del contrato, recomendamos utilizar la herramienta de verificación oficial de Core, [Core Scan](https://scan.coredao.org/), para una confiabilidad óptima. Este documento lo guía a través de los métodos más utilizados para la verificación de contratos: la herramienta web Core Scan, la API REST de Core y el complemento Hardhat Verification.
 
 :::note
-Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez de Core Chain] (./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris` within the Solidity compiler settings.
+Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain] (./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
 :::
 
 ## Verificación web mediante Core Scan
@@ -21,9 +21,9 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 
 1. Vaya al sitio web de Core Scan.
 
-- [For Core Mainnet](https://scan.coredao.org/)
-- [For Core Testnet2](https://scan.test.btcs.network)
-- [For Core Legacy Testnet](https://scan.test.btcs.network)
+- [Para Core Mainnet](https://scan.coredao.org/)
+- [Para Core Testnet2](https://scan.test.btcs.network)
+- [Para Core Legacy Testnet](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
@@ -153,17 +153,17 @@ module.exports = {
 };
 ```
 
-## Foundry Verification
+## Verificación con Foundry
 
-update the `foundry.toml` file to specify the Solidity version and EVM version for your project.
+actualiza el archivo `foundry.toml` para especificar la versión de Solidity y la versión de la EVM para tu proyecto.
 
 ```bash
 [profile.default]
-solidity_version = "0.8.0"  # Specify the Solidity version
-evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
+solidity_version = "0.8.0"  # Especifica la versión de Solidity
+evm_version = "shanghai" # Especifica la version de la EVM (Para testnets antiguas, usar Paris como versión de la EVM)
 ```
 
-create a `.env` file to store sensitive information such as your private key, RPC URL, and API keys. This helps to keep your credentials secure and allows you to easily reference them in your code.
+cree un archivo .env para almacenar información sensible como su clave privada, URL RPC y claves de API. Esto ayuda a mantener tus credenciales seguras y permite referenciarlas fácilmente en tu código.
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -172,26 +172,26 @@ CORESCAN_API_KEY="YOUR_API_KEY"
 API_URL="https://api.test2.btcs.network/api"
 ```
 
-**Important:** Never commit this `.env` file to version control (e.g., GitHub) to prevent exposing your sensitive information. If you're using git, add the `.env` file to your `.gitignore`.
+**Importante:** Nunca hagas commit de este archivo `.env` al control de versiones (ej. GitHub) para evitar exponer información sensible. Si estás usando git, agrega el archivo `.env` a tu `.gitignore`.
 
-Now that you've created the above `.env` file, run the following command to load the environment variables in the current command line session:
+Ahora que has creado el archivo `.env`, ejecuta el siguiente comando para cargar las variables de entorno en la sesión actual de la línea de comandos:
 
 ```bash
 source .env
 ```
 
-Execute the below command to verify your smart contract
+Ejecute el siguiente comando para verificar su contrato inteligente
 
 ```bash
 forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Replace `0xContract_Address` and `ContractName` with your actual contract address and the contract Name.
+Reemplace `0xContract_Address` y `ContractName` con la dirección real de su contrato y su nombre correspondiente.
 
-Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gestionará el proceso de verificación. Puedes utilizar [ Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y confirmar que fue desplegado y verificado correctamente.
 
 ## Limitaciones conocidas
 
-- Currently Core only supports solidity compiler versions up to 0.8.24.
+- Actualmente Core solamente soporta versiones del compilador de Solidity hasta 0.8.24.
 - Las bibliotecas no son compatibles con las verificaciones API.
 - Si tiene problemas al verificar contratos de un solo archivo muy grandes (más de 1000 líneas), le recomendamos cambiar al formato "JSON estándar" para la verificación.
