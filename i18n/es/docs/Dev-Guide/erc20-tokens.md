@@ -33,24 +33,24 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
 
    - **Token Name**: Introduce el nombre de tu token (ej: `MyToken`).
    - **Token Symbol**: Ingresa el símbolo de tu token (ej: `MTK`).
-   - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
+   - **Initial Supply**: Fija una oferta inicial para tu token (ej: `1000000` tokens). Este es el número de tokens que se crearán tras el despliegue.
 
 <p align="center">
 ![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
 </p>
 
-Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
+Opcionalmente, puedes incluir funciones adicionales como **mintear** y **pausar** si es necesario para su caso de uso.
 
-4. **Copy the Code**: Once you've configured your contract, click the **Copy** button to get the Solidity code. You can either copy it to your clipboard or directly open it in Remix IDE.
+4. **Copia el código**: Una vez configurado el contrato, haga clic en el botón **Copy** para obtener el código de Solidity. Puedes copiarlo en el portapapeles o abrirlo directamente en Remix IDE.
 
-## Step 2: Set Up Remix IDE
+## Paso 2: Configura Remix IDE
 
-Remix IDE is an online platform for Solidity development, making it perfect for beginners and quick testing.
+Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para principiantes y pruebas rápidas.
 
-1. **Go to Remix IDE**: Open [Remix IDE](https://remix.ethereum.org) in your browser.
-2. **Create a New Solidity File**:
+1. **Ve a Remix IDE**: Abre [Remix IDE](https://remix.ethereum.org) en tu navegador.
+2. **Crear un nuevo archivo de Solidity**:
 
-   - In Remix, create a new file by navigating to the **contracts** directory and clicking the **+** button.
+   - En Remix, crea un nuevo archivo al navegar al directorio **contracts** y hacer clic en el botón **+**.
    - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
 
 <p align="center">
