@@ -1,5 +1,5 @@
 ---
-sidebar_label: Tools & Resources
+sidebar_label: Herramientas y Recursos
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -7,7 +7,7 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Developer Tools & Resources
+# Herramientas para desarrolladores y recursos
 
 ---
 
@@ -20,39 +20,39 @@ values={[
 {label: 'Testnet1', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-_Note: This is the latest and updated testnet for Core blockchain and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
+_Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
 
 ```
-* **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
+* **[Explorador de Bloques](https://scan.test.btcs.network/):** busca y analiza transacciones, cuentas, bloques y más.
 
-* **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Testnet's RPC service.
+* **[Endpoints de RPC](https://chainlist.org/chain/1116):** endpoints de RPC para el servicio de la testnet de Core.
 
-* **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
+* **[Faucet de Core](https://scan.test2.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE o tCORE2.
 
-* **[Core Staking](https://stake.test2.btcs.network/):** Core's official testnet staking website.
+* **[Staking de Core](https://stake.test2.btcs.network/):** Sitio web oficial de la testnet de Core para staking.
 
-* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** secure multi-sig management of digital assets.
+* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** gestión segura de activos digitales con multisig.
 ```
 
   </TabItem>
   <TabItem value="testnet1">
-  _Note: This is the legacy testnet version and will be soon deprecated and eventually retired. It recommended to transition to the new testnet version._
+  _Nota: Esta es la versión legacy de la testnet y pronto será obsoleta, para eventualmente ser retirada por completo. Se recomienda migrar a la nueva versión de la testnet._
 
 ```
-* **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
+* **[Explorador de Bloques](https://scan.test.btcs.network/):** busca y analiza transacciones, cuentas, bloques y más.
 
-* **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
+* **[Endpoints de RPC](https://chainlist.org/chain/1115):** endpoints de RPC para el servicio de la testnet de Core.
 
-* **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
+* **[Faucet de Core](https://scan.test.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE o tCORE2.
 
-* **[Core Staking](https://stake.test.btcs.network/):** Core's official testnet staking website.
+* **[Staking de Core](https://stake.test.btcs.network/):** Sitio web oficial de la testnet de Core para staking.
 
-* **[Gnosis Safe](https://safe.test.btcs.network/welcome):** secure multi-sig management of digital assets.
+* **[Gnosis Safe](https://safe.test.btcs.network/welcome):** gestión segura de activos digitales con multisig.
 ```
 
   </TabItem>
   <TabItem value="mainnet">
-    * **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
+    * **[Explorador de Bloques](https://scan.coredao.org/):** busca y analiza transacciones, cuentas, bloques y más.
 
 ```
 * **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
