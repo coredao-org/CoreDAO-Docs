@@ -137,21 +137,21 @@ Core Testnet está ahora agregada a su MetaMask.
 ![chainlist-testnet-connect-metmask](../../static/img/miannet-wallet-config/chainlist_mainnet.png)
 </p>
 
-3. Click on _Connect Wallet_ and then choose MetaMask. Allow to connect to MetaMask wallet by confirming the MetaMask notifications.
+3. Haga clic en _Connect Wallet_ y luego elija MetaMask. Permita conectarse a la billetera MetaMask al confirmar la notificación respectiva.
 
 <p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Add Core Mainnet by clicking the `Approve` button.
+4. Agrega Core Mainnet al hacer clic en el botón de `Approve`.
 
-The Core Mainnet is now added to your MetaMask.
+Core Mainnet está ahora agregada a su MetaMask.
 
 </TabItem>
 
 </Tabs>
 
-### Adding the Core network via the Core Explorer
+### Agregar la red Core a través de Core Explorer
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
@@ -160,48 +160,48 @@ The Core Mainnet is now added to your MetaMask.
 ]}>
 
 <TabItem value="testnet2">
-1. Go to https://scan.test2.btcs.network/ and scroll all the way down on the page
+1. Vaya a https://scan.test2.btcs.network/ y desplácese hacia abajo en la página
 
 <p align="center" style={{zoom:"60%"}}>
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
 </p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Haga clic en el botón ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Aprueba en tu MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
 
 </TabItem>
 
 <TabItem value="testnet1">
-1. Go to https://scan.test.btcs.network/ and scroll all the way down on the page
+1. Vaya a https://scan.test.btcs.network/ y desplácese hacia abajo en la página
 
 <p align="center" style={{zoom:"60%"}}>
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
 </p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Haga clic en el botón ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Aprueba en tu MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-1. Go to https://scan.coredao.org/ and scroll all the way down on the page
+1. Vaya a https://scan.coredao.org/ y desplácese hacia abajo en la página
 
 <p align="center" style={{zoom:"60%"}}>
 ![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-9.webp)
 </p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Haga clic en el botón ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Aprueba en tu MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
 
 </TabItem>
 
@@ -209,9 +209,9 @@ The Core Mainnet is now added to your MetaMask.
 
 :::info
 
-#### Latest Core Testnet (1114)
+#### Última Testnet de Core (1114)
 
-La nueva red de prueba de Core con `chainID 1114` ya está disponible y se recomienda su uso. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). La antigua testnet pronto quedará obsoleta y eventualmente se retirará, así que cambie a la nueva testnet para acceder a las funciones más recientes.
+La nueva red de prueba de Core con `chainID 1114` ya está disponible y se recomienda su uso. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. La antigua testnet pronto quedará obsoleta y eventualmente se retirará, así que cambie a la nueva testnet para acceder a las funciones más recientes.
 :::
 
 <!-- :::note
