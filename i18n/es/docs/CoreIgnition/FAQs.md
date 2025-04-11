@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ### 1. ¿Qué es Core Ignition?
 
-Core Ignition es un programa de incentivos de seis meses desarrollado por la Fundación Core para impulsar el crecimiento del ecosistema Core. After two successful seasons in 2024 and early 2025, and Season 3 is now live. Por favor, visita [Core Ignition](https://ignition.coredao.org) para más detalles.
+Core Ignition es un programa de incentivos de seis meses desarrollado por la Fundación Core para impulsar el crecimiento del ecosistema Core. Tras dos temporadas exitosas en 2024 y principios de 2025, ya está disponible la Temporada 3. Por favor, visita [Core Ignition](https://ignition.coredao.org) para más detalles.
 
 ### 2. ¿Qué es la blockchain Core?
 
