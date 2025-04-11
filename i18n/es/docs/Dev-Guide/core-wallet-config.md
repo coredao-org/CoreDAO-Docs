@@ -1,5 +1,5 @@
 ---
-sidebar_label: Add Core Network
+sidebar_label: Agregar la Red de Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -12,7 +12,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
 :::note
-This is a detailed guideline for connecting to Core Testnet/Mainnet using the MetaMask wallet.
+Esta es una guía detallada para conectarse a Core (Testnet y Mainnet) utilizando la billetera MetaMask.
 :::
 
 ### Requisitos previos del software
@@ -21,11 +21,11 @@ This is a detailed guideline for connecting to Core Testnet/Mainnet using the Me
 
 ### Configuración de la billetera MetaMask
 
-Recomendamos utilizar la [billetera web MetaMask](https://metamask.io/) para conectarse a Core Testnet. You'll need to install MetaMask and set up your account before you can use it to connect to Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
+Recomendamos utilizar la [billetera web MetaMask](https://metamask.io/) para conectarse a Core Testnet. Debes tener instalada MetaMask y configurar una cuenta antes de que puedas conectarte a Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
 
-### Adding Core to MetaMask
+### Agregando Core a MetaMask
 
-There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testest ways below.
+Existen múltiples formas de añadir las redes de Core (Testnet y Mainnet) a MetaMask. A continuación hemos listado los métodos más confiables y verificados.
 
 #### Agregar red manualmente
 
