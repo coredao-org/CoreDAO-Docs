@@ -13,7 +13,7 @@ Las aplicaciones descentralizadas (dApps) utilizan una cadena de bloques o contr
 
 ## ¿Qué estamos construyendo?
 
-En este tutorial, desarrollaremos una dApp simple usando React.js y Ethers.js que almacena datos en un contrato inteligente en Core blockchain y los muestra a los usuarios. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp) repository.
+En este tutorial, desarrollaremos una dApp simple usando React.js y Ethers.js que almacena datos en un contrato inteligente en Core blockchain y los muestra a los usuarios. El código completo de la dApp está disponible en GitHub en el repositorio [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp).
 
 ## Conclusiones del aprendizaje
 
@@ -88,9 +88,9 @@ dapp-tutorial.
 |
 ```
 
-5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Refer [here](./core-wallet-config.md) for a detailed guide.
+5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-wallet-config.md) para obtener una guía detallada.
 
-6. Cree un archivo secret.json en la carpeta raíz y almacene en él la clave privada de su billetera MetaMask. Refer [here](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) for details on how to get MetaMask account's private key.
+6. Cree un archivo secret.json en la carpeta raíz y almacene en él la clave privada de su billetera MetaMask. Consulte [aquí](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) para obtener detalles sobre cómo obtener la clave privada de la cuenta de MetaMask.
 
 ```json
 {
@@ -255,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnets. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config) para obtener detalles sobre cómo obtener tokens tCORE o tCORE2 de Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
@@ -298,7 +298,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. Para probar si todo funciona bien, ejecute la aplicación usando el siguiente comando. This will serve application with hot reload feature at [http://localhost:5173]
+4. Para probar si todo funciona bien, ejecute la aplicación usando el siguiente comando. Esto servirá la aplicación con función de recarga en caliente en [http://localhost:5173]
 
 ```bash
 npm run dev
@@ -328,7 +328,7 @@ const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 
 1. Ejecute el comando `npm run dev` desde la raíz del proyecto para iniciar la aplicación. Esto servirá para la aplicación en [http://localhost:5173](http://localhost:5173/)
 
-2. Make sure that your MetaMask wallet is correctly installed and switched to Core Testnet as described in our [Core Testnet user guide](./core-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
+2. Asegúrese de que su billetera MetaMask esté correctamente instalada y cambiada a Core Testnet como se describe en nuestra [guía del usuario de Core Testnet] (./core-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
 
 <p align="center">
 ![dapp-on-core](../../static/img/dapp/dapp-1.png)
