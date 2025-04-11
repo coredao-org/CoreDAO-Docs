@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Mainnet
+# Conectarse a Core Mainnet
 
 ---
 
