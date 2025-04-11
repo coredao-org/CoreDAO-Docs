@@ -43,7 +43,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Ethereum
 
-| Name                | Address                                                                                                               |
+| Nombre              | Dirección                                                                                                             |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://etherscan.io/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | WETH                | [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
@@ -53,7 +53,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### BNB Smart Chain (BSC)
 
-| Name                | Address                                                                                                              |
+| Nombre              | Dirección                                                                                                            |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://bscscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | USDC                | [0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d](https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d) |
@@ -63,7 +63,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Polygon
 
-| Name                | Address                                                                                                                  |
+| Nombre              | Dirección                                                                                                                |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://polygonscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | USDC                | [0x2791bca1f2de4661ed88a30c99a7a9449aa84174](https://polygonscan.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174) |
@@ -72,7 +72,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Optimism
 
-| Name                | Address                                                                                                                          |
+| Nombre              | Dirección                                                                                                                        |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x29d096cD18C0dA7500295f082da73316d704031A](https://optimistic.etherscan.io/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | USDC                | [0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85](https://optimistic.etherscan.io/address/0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85) |
@@ -81,7 +81,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Avalanche
 
-| Name                                                                 | Address                                                                                                                              |
+| Nombre                                                               | Dirección                                                                                                                            |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge                                                  | [0x29d096cD18C0dA7500295f082da73316d704031A](https://avascan.info/blockchain/all/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | Bitcoin Avalanche Bridged (BTC.b) | [0x2297aEbD383787A160DD0d9F71508148769342E](https://avascan.info/blockchain/all/address/0x2297aEbD383787A160DD0d9F71508148769342E)   |
@@ -91,7 +91,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Arbitrum
 
-| Name                | Address                                                                                                              |
+| Nombre              | Dirección                                                                                                            |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x29d096cD18C0dA7500295f082da73316d704031A](https://arbiscan.io/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | USDC                | [0xaf88d065e77c8cC2239327C5EDb3A432268e5831](https://arbiscan.io/address/0xaf88d065e77c8cC2239327C5EDb3A432268e5831) |
@@ -100,7 +100,7 @@ El código base del bridge auditado se puede encontrar [aquí](https://github.co
 
 ### Base
 
-| Name                | Address                                                                                                               |
+| Nombre              | Dirección                                                                                                             |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879](https://basescan.org/address/0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879) |
 | USDC                | [0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913](https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913) |
