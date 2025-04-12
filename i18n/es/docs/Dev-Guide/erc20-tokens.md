@@ -84,26 +84,26 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 ![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
 </p>
 
-Ensure that your MetaMask is connected to a **Core testnet**
+Asegúrate de que tu MetaMask esté conectado a **Core testnet**
 
-2. **Deploy Your Contract**:
-   - In the **Deploy** section, select the **ERC-20 contract** (e.g., `MyToken`).
-   - Please paste the `recipient address` for the tokens to be minted in Premint, as well as the `owner address` (note that in this case, both addresses are the same).
-   - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
-   - Once the contract is deployed, you’ll see the contract’s address in Remix.
+2. **Despliega tu Contrato**:
+   - En la sección de **Deploy**, selecciona el **contrato ERC-20** (ej: `MyToken`).
+   - Por favor, pega la dirección del destinatario (`recipient address`) para los tokens que se pre-acuñarán, así como la dirección del propietario (`owner address`). Nota: En este caso ambas direcciones son la misma.
+   - Clic en **Deploy**. MetaMask te pedirá que confirmes la transacción.
+   - Una vez desplegado, verás la dirección del contrato en Remix.
 
 <p align="center">
 ![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)
 </p>
 
-## Step 5: Interact with Your Contract
+## Paso 5: Interacción con el contrato
 
-Now that your contract is deployed, you can interact with it directly from Remix.
+Ahora que tu contrato está desplegado, puedes interactuar con él directamente desde Remix.
 
-1. **Check Balance**:
+1. **Revisa el balance**:
 
-   - Under **Deployed Contracts**, you'll see your deployed contract.
-   - Expand the contract’s interface to interact with functions like `balanceOf`, `mint` (if you included minting functionality).
+   - En **Deployed Contracts**, verás tu contrato desplegado.
+   - Expande la interfaz del contrato para interactuar con funciones como `balanceOf` y `mint` (si es que incluiste funcionalidad de acuñación).
    - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
 
 <p align="center">
