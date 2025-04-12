@@ -58,27 +58,27 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 </p>
 3. **Instala los contratos de OpenZeppelin**:
    - Si usas el **compilador de Solidity** integrado en Remix, este obtendrá automáticamente los contratos de OpenZeppelin por ti.
-   - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
+   - Si estás usando Hardhat, necesitarás instalar manualmente los contratos de OpenZeppelin ejecutando `npm install @openzeppelin/contracts`.
 
-## Step 3: Compile the Contract in Remix
+## Paso 3: Compila el contrato en Remix
 
-1. **Compile Your Contract**:
-   - In Remix IDE, go to the **Solidity Compiler** tab (the one with the Solidity logo).
-   - Select the compiler version that matches your contract (for example, `0.8.24`).
-   - Click **Compile** to compile your contract.
+1. **Compila tu Contrato**:
+   - En Remix IDE, ve a la pestaña de **Solidity Compiler** (la que tiene el logo de Solidity).
+   - Seleccione la versión del compilador que corresponde a tu contrato (por ejemplo, `0.8.24`).
+   - Has clic en **Compile** para compilar el contrato.
 
 <p align="center">
 ![Remix_ERC20_Compile](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
 </p>
 
-2. **Fix Any Errors**: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
+2. **Corrige los errores**: Si hay errores en el código, Remix los resaltará. Corrige los errores y recompila.
 
-## Step 4: Deploy the Contract on a Test Network
+## Paso 4: Despliega el contrato en una red de pruebas
 
-1. **Connect Remix to MetaMask**:
+1. **Conecta Remix con MetaMask**:
 
-   - Go to the **Deploy & Run Transactions** tab in Remix.
-   - Under **Environment**, select **Injected Web3**. This will connect Remix to your MetaMask wallet.
+   - Ve a la pestaña de **Deploy & Run Transactions** en Remix.
+   - En **Environment**, selecciona **Injected Web3**. Esto va a conectar Remix con tu billetera MetaMask.
 
 <p align="center">
 ![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
