@@ -11,7 +11,7 @@ description: Implementar contratos en Core usando Hardhat
 
 Hardhat es un entorno de desarrollo popular para blockchains compatibles con EVM, compuesto por varios componentes para escribir, compilar, depurar y desplegar contratos inteligentes.
 
-In this tutorial, learn how to compile, deploy and call smart contracts on Core Testnet using Hardhat. Obtén el código base para este tutorial desde [aquí](https://github.com/coredao-org/hardhat-tutorial).
+En este tutorial, aprenderás a compilar, desplegar y llamar contratos inteligentes en Core Testnet usando Hardhat. Obtén el código base para este tutorial desde [aquí](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Instalación
 
