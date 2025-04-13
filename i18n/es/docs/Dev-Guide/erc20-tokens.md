@@ -21,7 +21,7 @@ Antes de empezar, necesitarás:
 - Un conocimiento básico de **Solidity** (aunque te guiaremos durante todo el proceso).
 - Acceso a **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
 
-## Paso 1: Usa el Asistente de OpenZeppelin para generar tu contrato ERC-20
+## Paso 1: Usa el asistente de OpenZeppelin para generar tu contrato ERC-20
 
 ### ¿Por qué usar el asistente de OpenZeppelin?
 
@@ -104,35 +104,35 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 
    - En **Deployed Contracts**, verás tu contrato desplegado.
    - Expande la interfaz del contrato para interactuar con funciones como `balanceOf` y `mint` (si es que incluiste funcionalidad de acuñación).
-   - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
+   - Pega la dirección del destinatario y haz clic en `balanceOf` para verificar su balance.
 
 <p align="center">
 ![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)
 </p>
 
-1. **Mint Tokens**:
+1. **Acuña tokens**:
 
-   - Call the `mint` function to create new tokens. Provide the recipient address and the number of tokens to mint.
-   - Confirm the transaction in MetaMask.
+   - Llama a la función `mint` para crear tokens nuevos. Introduce la dirección del destinatario y el número de tokens a acuñar.
+   - Confirma la transacción en Metamask.
 
-2. **Transfer Tokens**:
-   - You can also use the **transfer** function to send tokens from one address to another.
-   - Provide the recipient's address and the amount of tokens you want to send.
-   - Confirm the transaction in MetaMask.
+2. **Transfiere tokens**:
+   - También se puede usar la función **transfer** para enviar tokens de una dirección a otra.
+   - Introduce la dirección del destinatario y el número de tokens que quieres enviar.
+   - Confirma la transacción en Metamask.
 
-## Step 6: Manage Your Tokens
+## Paso 6: Gestiona tus tokens
 
-You can add additional functions to your contract, such as:
+Puedes añadir funciones adicionales a tu contrato, como:
 
-- **Burning Tokens**: A function to burn (destroy) tokens.
+- **Quema de tokens**: Una función para quemar (destruir) tokens.
 
-- **Roles**: Roles allow you to assign different permissions to addresses, such as minting or burning tokens, ensuring secure and controlled actions within the contract.
+- **Roles**: Los roles permiten asignar diferentes permisos a ciertas direcciones, como acuñar o quemar tokens, garantizando acciones seguras y controladas dentro del contrato.
 
-- **Upgradability** : Enables you to upgrade the contract logic after deployment without losing data, ensuring flexibility for future improvements
+- **Volverlo actualizable**: Permite modificar la lógica del contrato después de su despliegue sin perder datos, garantizando flexibilidad para mejoras futuras
 
 Puede encontrar más información sobre la implementación de OpenZeppelin ERC-20 [aquí](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-## References:
+## Referencias:
 
 - [ERC-20 Token Standard (Ethereum.org)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [OpenZeppelin ERC-20 Implementation Documentation](https://docs.openzeppelin.com/contracts/4.x/erc20)
