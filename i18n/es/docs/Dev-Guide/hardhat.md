@@ -102,12 +102,12 @@ module.exports = {
 };
 ```
 
-**Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `shanghai` under the solidity compiler settings in the `hardhat.config.js` file.
+**Asegurate de que tu contrato inteligente cumpla con los [Lineamientos de Soporte para Solidity en Core Blockchain](./smart-contract-guidelines.md)**, para hacerlo, asegúrate de que el parámetro `evmVersion` esté configurado como `shanghai` en los ajustes del compilador de Solidity dentro del archivo `hardhat.config.js`.
 
-If you are using **testnet1**, `evmVersion` parameter should be set to `Paris`.
+Si estás usando **testnet1**, el parámetro `evmVersion` debe configurarse como `Paris`.
 
 :::note
-Please note that you'll need to provide your private keys or mnemonic for the provider. You can store them in a `secret.json` file. Be sure to add this file to your project's `.gitignore` to prevent accidentally committing your private keys to a public repository. Additionally, keep this file in a secure location to protect your sensitive information!
+Deberás proporcionar tus claves privadas o frase mnemónica para el proveedor. Puedes almacenarlos en un archivo `secret.json`. Asegúrate de agregar este archivo al `.gitignore` de tu proyecto para evitar subir accidentalmente tus claves privadas a un repositorio público. Adicionalmente, ¡guarda este archivo en una ubicación segura para proteger tu información confidencial!
 :::
 
 ## Escribir Contratos Inteligentes
@@ -258,7 +258,7 @@ call retrieve() again: BigNumber { value: "100" }
 
 Podemos ver que el script implementó correctamente el contrato, almacenó un número y confirmó que el número ahora está almacenado en el contrato.
 
-We can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and called.
+Podemos usar[ Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y verificar que fue desplegado y llamado exitosamente.
 
 <p align="center">
 ![hardhat](../../static/img/hardhat/hardhat-1.avif)
