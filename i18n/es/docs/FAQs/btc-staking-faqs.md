@@ -14,7 +14,7 @@ Core ofrece a los titulares de Bitcoin una oportunidad sin riesgos y transparent
 
 ### 2\. ¿Cómo funciona el Stake de Bitcoin sin custodia?
 
-Con la participación sin custodia de bitcoins, el protocolo de Core incorpora a los poseedores de bitcoins en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. For more details on how Non-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/btc-staking-working.md).
+Con la participación sin custodia de bitcoins, el protocolo de Core incorpora a los poseedores de bitcoins en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. Para más detalles sobre cómo funciona el Staking de Bitcoin sin custodia, consulta [aquí](../Learn/products/btc-staking/btc-staking-working.md).
 
 ### 3\. ¿Cuáles son las ventajas de la apuesta de Bitcoin sin custodia?
 
@@ -49,9 +49,9 @@ Los usuarios deben cumplir con los siguientes requisitos para que una transacci�
 
 - Usando la función nativa de timelock de Bitcoin, especifique la cantidad bloqueada que se destinará al validador en la cadena de bloques Core como la salida de la transacción.
 
-- When using the staking script, there is **no** minimum BTC requirement for staking. However, if staking through the [official staking website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees).
+- Cuando se usa el script para staking, **no** existe un requisito mínimo de BTC para este. Sin embargo, si se hace staking a través de la [interfaz web oficial de staking](https://stake.coredao.org/staking), los usuarios deben hacer staking por un mínimo de **0.01 BTC** (excluyendo las tarifas de transacción).
 
-- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+- La duración mínima del staking depende del método. La interfaz web oficial requiere un mínimo de 5 días, mientras que el staking mediante script no tiene requisito de bloqueo.
 
 - La transacción también debe contener una salida op\_return especificando
   - La dirección del validador de Core al que el apostador desea delegar su Bitcoin.
