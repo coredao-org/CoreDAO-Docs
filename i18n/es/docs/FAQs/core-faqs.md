@@ -12,7 +12,7 @@ sidebar_position: 2
 
 Core Foundation aboga por la creación de proyectos de código abierto y, por lo tanto, todas las bases de código de Core están disponibles para uso comunitario. Puede encontrar el código base de Core blockchain y otras herramientas para desarrolladores en la [cuenta oficial de GitHub de Core](https://github.com/coredao-org).
 
-### 2. What are the official communication channels?
+### 2. ¿Cuáles son los canales de comunicación oficiales?
 
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
@@ -28,7 +28,7 @@ Core está diseñado para atender a los constructores, ofreciendo una plataforma
 
 ### 4. ¿Cómo conectar MetaMask a Core Network?
 
-Follow our detailed guide on how to connect your MetaMask wallet to the Core [Testnets](../Dev-Guide/core-wallet-config.md) and [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
+Siga nuestra guía detallada sobre cómo conectar su billetera MetaMask a las Core [Testnets](../Dev-Guide/core-wallet-config.md) y a [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
 
 ### 5. ¿Qué papel juega el token CORE en la seguridad de la red Core?
 
