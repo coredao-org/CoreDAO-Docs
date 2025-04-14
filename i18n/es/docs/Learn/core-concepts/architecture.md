@@ -9,15 +9,15 @@ description: Un vistazo rápido a la arquitectura blockchain subyacente de Core
 
 ---
 
-Core's architecture is built around **Satoshi Plus**, a tripartite consensus mechanism that integrates **Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking**.
+La arquitectura de Core se basa en **Satoshi Plus**, un mecanismo de consenso tripartito que integra **Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Staking de Bitcoin sin custodia**.
 
-Through Satoshi Plus, **Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers** delegate resources to elect validators who secure the Core network. Validator selection is based on a hybrid score, considering:
+A través de Satoshi Plus, **los mineros o pools de minería de Bitcoin, los holders de CORE en staking y los stakers de Bitcoin** delegan recursos para elegir validadores que protegen la red Core. La selección de validadores se basa en el score híbrido, que considera:
 
-- **Delegated hash power** from Bitcoin miners/mining pools
-- **Delegated/staked CORE tokens** from CORE token stakers
-- **Delegated/staked Bitcoin** from Bitcoin stakers
+- **Poder de hasheo delegado** de los mineros o pools de minería de Bitcoin
+- **Tokens de CORE en staking delegado** de los takers de CORE
+- **Bitcoin en staking delegado** de stakers de Bitcoin
 
-### **First Non-Custodial Bitcoin Staking & Bitcoin Risk-Free Rate**
+### **El Primer Staking No Custodiado de Bitcoin y con Tasa Libre de Riesgo en Bitcoin**
 
 Satoshi Plus's Non-Custodial Bitcoin Staking component is **the first live non-custodial Bitcoin staking mechanism**, allowing Bitcoin holders to earn native yield **without changing Bitcoin’s trust assumptions**. This effectively establishes the **Bitcoin Risk-Free Rate**, a groundbreaking milestone in Bitcoin’s history.
 
