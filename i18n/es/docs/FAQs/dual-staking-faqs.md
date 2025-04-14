@@ -29,18 +29,18 @@ Additionally, they are required to ensure that the CORE reward address for Bitco
 
 Para aprovechar al máximo la apuesta dual, los usuarios deben asegurarse de que la dirección de recompensa de apuesta de Bitcoin designada coincida con la dirección utilizada para la apuesta CORE. Los usuarios que han apostado su Bitcoin y/o CORE en múltiples direcciones pueden querer consolidar su apuesta en una sola dirección para optimizar el rendimiento y maximizar los retornos y garantizar que el CORE apostado esté por encima del umbral requerido para desbloquear porcentajes de rendimiento más altos para la apuesta de Bitcoin.
 
-### 5\. How are yields calculated under the Dual Staking model?
+### 5\. ¿Cómo se calculan los rendimientos con el modelo Dual Staking?
 
-- Global staking yields fluctuates based on changes in the following variables:
-  - [Total amount of CORE staking across all validators](https://stake.coredao.org/validators)
-  - [Total amount of BTC staking across all validators](https://stake.coredao.org/validators)
-  - The relative price change between BTC & CORE
-  - [Annual reward adjustment](https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)
-- Validator-specific staking yields vary based on these additional factors:
-  - Total number of active validators
-  - Validator commission
-  - The received delegation on hash, BTC staking, & CORE staking
-  - Dual-staking tiers
+- El rendimiento global del staking fluctúa en función de la evolución de las siguientes variables:
+  - [Cantidad total de CORE en staking en todos los validadores](https://stake.coredao.org/validators)
+  - [Cantidad total de BTC en staking en todos los validadores](https://stake.coredao.org/validators)
+  - Cambio relativo de precio entre BTC y CORE
+  - [Ajuste anual de recompensas](https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)
+- Los rendimientos de staking específicos de cada validador varían según estos factores adicionales:
+  - Número total de validadores activos
+  - Comisión del validador
+  - La delegación recibida de hash, el staking de BTC y el staking de CORE
+  - Niveles de Dual-Staking
 
 ### 6\. ¿Cómo equilibran los usuarios CORE y Bitcoin entre validadores para maximizar el rendimiento?
 
@@ -52,7 +52,7 @@ El acto de los delegantes de reequilibrar su delegación para maximizar la recom
 
 ### 7\. ¿Existe algún riesgo de perder sus activos de Bitcoin durante la doble apuesta?
 
-Dual Staking is a [non-custodial process](../Learn/products/btc-staking/overview), allowing users to maintain full control over their assets. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
+El Staking Dual es un [proceso sin cusodia](../Learn/products/btc-staking/overview), que permite a los usuarios mantener el control total de sus activos. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
 
 ### 8\. Si bien Bitcoin tiene un límite de tiempo, ¿pueden los usuarios cancelar la apuesta de CORE que tiene doble apuesta con Bitcoin? Si es así, ¿pierden las recompensas obtenidas antes de retirar la apuesta de CORE?
 
