@@ -85,7 +85,7 @@ Para obtener más detalles, consulte la [Guía de configuración de nodos RPC] (
 
 ### 5. ¿Qué es un nodo validador central? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core Validator?
 
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain's Satoshi Plus consensus framework.
+Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core.
 
 **Requisitos de software:** Actualmente, un Core Full Node solo puede ejecutarse en Mac OS X y Linux.
 
@@ -111,4 +111,4 @@ Para obtener más detalles, consulte la [Guía de configuración del nodo valida
 
 ### 6. ¿Cómo configuro un nodo completo en Core blockchain?
 
-Refer to the detailed guide [here](../Node/config/full-node.md) on how to set up and run a full node on the Core network.
+Consulte la guía detallada [aquí](../Node/config/full-node.md) sobre cómo configurar y ejecutar un nodo completo en la red Core.
