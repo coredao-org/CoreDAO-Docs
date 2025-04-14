@@ -19,30 +19,30 @@ A través de Satoshi Plus, **los mineros o pools de minería de Bitcoin, los hol
 
 ### **El Primer Staking No Custodiado de Bitcoin y con Tasa Libre de Riesgo en Bitcoin**
 
-Satoshi Plus's Non-Custodial Bitcoin Staking component is **the first live non-custodial Bitcoin staking mechanism**, allowing Bitcoin holders to earn native yield **without changing Bitcoin’s trust assumptions**. This effectively establishes the **Bitcoin Risk-Free Rate**, a groundbreaking milestone in Bitcoin’s history.
+El componente de Staking No Custodiado de Bitcoin de Satoshi Plus es **el primer mecanismo de staking no custodiado para Bitcoin**, permitiendo a los holders de Bitcoin obtener rendimiento nativo **sin modificar los supuestos de confianza de Bitcoin**. Esto establece efectivamente la **Tasa Libre de Riesgo de Bitcoin**, un hito revolucionario en la historia de Bitcoin.
 
-### **Harnessing Bitcoin's Security & Empowering Miners**
+### **Aprovechando la Seguridad de Bitcoin y Empoderando a los Mineros**
 
-Currently, Satoshi Plus benefits from the security of **\~75% of all Bitcoin mining hash power** through delegation. By involving miners in validator elections, it leverages Bitcoin’s unmatched decentralization while offering **miners additional rewards**, addressing the long-term decline in Bitcoin block rewards.
+Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el poder de hash de minería en Bitcoin** a través de la delegación. Al involucrar a los mineros en las elecciones de validadores, se aprovecha la descentralización incomparable de Bitcoin mientras **se les ofrece recompensas adicionales**, abordando así la disminución a largo plazo de las recompensas por bloque de Bitcoin.
 
 <p align="center">
 ![component-diagram](../../../static/img/Core-Architecture.png)
 </p>
 
-## **Core Blockchain: Components, Roles, and Workflows**
+## **Blockchain de Core: Componentes, roles y flujos de trabajo**
 
-#### **Key Roles**
+#### **Roles clave**
 
-- **Validators**: Produce blocks and validate transactions on the Core network. Anyone can become a validator by registering and locking a refundable CORE validator bond deposit.
-- **Bitcoin Miners**: Secure Bitcoin via PoW and can delegate hash power to Core validators by including delegation information in the coinbase transaction of a block without sacrificing Bitcoin security.
-- **CORE Stakers**: Delegate CORE tokens to validators to support network security.
-- **Bitcoin Stakers**: Delegate Bitcoin to validators on Core through Non-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.
-- **Relayers**: These are responsible for synchronizing the data between the Core and Bitcoin network. They transmit Bitcoin block and transaction data to Core. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
-- **Verifiers**: Report malicious behaviors on the Core network. Successful verification flags can trigger the slashing or jailing of validators and bad actors, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
+- **Validadores**: Producen bloques y validan transacciones en la red Core. Cualquiera puede convertirse en validador registrándose y bloqueando un depósito reembolsable de CORE (fianza de validador).
+- **Mineros de Bitcoin**: Aseguran Bitcoin mediante PoW y pueden delegar poder de hash a los validadores de Core incluyendo información de delegación en la transacción coinbase de un bloque, sin tener que comprometer la seguridad de Bitcoin.
+- **Stakers de CORE**: Delegan tokens CORE a validadores para respaldar la seguridad de la red.
+- **Stakers de Bitcoin**: Delegan Bitcoin a validadores en Core mediante staking no custodiado y generan rendimiento sin ceder la custodia de sus activos.
+- **Relayers (Retransmisores)**: Son responsables de sincronizar los datos entre las redes Core y Bitcoin. Transmiten datos de bloques y transacciones de Bitcoin a Core. Cualquiera puede convertirse en relayer registrándose y bloqueando un depósito reembolsable de tokens CORE.
+- **Verificadores**: Reportan comportamientos maliciosos en la red Core. Las verificaciones exitosas pueden activar el slashing (incautación) o jailing (bloqueo) de validadores y actores maliciosos, y los verificadores son compensados por esta actividad de monitoreo cuando se distribuyen las recompensas de bloque. Cualquiera puede actuar como verificador en la red Core.
 
-#### **Consensus & Election**
+#### **Consenso y Elección**
 
-- **Validator Election**: Every **round (1 day)**, the top **27 validators** by **hybrid score** (PoW from miners, DPoS from CORE stakers, and Bitcoin staking) are elected to become part of the active validator set and secure the network. Any validator in the current validator set that hasn’t been jailed or slashed is considered “live”. Para garantizar un TPS más estable, los validadores en vivo se actualizan cada 200 bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre.
+- **Elección de Validadores**: Cada **ronda (1 día)**, los **27 validadores** principales según su **puntaje híbrido** (PoW de mineros, DPoS de stakers de CORE y stakers de Bitcoin) son elegidos para formar parte del conjunto activo de validadores y asegurar la red. Cualquier validador en el conjunto actual de validadores que no haya sido bloqueado (jailed) o penalizado (slashed) se considera "activo" (live). Para garantizar un TPS más estable, los validadores en vivo se actualizan cada 200 bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre.
 - **Hybrid Score:** Every validator node seeking to become part of the active validator set is given a hybrid score, which is calculated based on three delegations: hashpower, CORE, and Bitcoin. The active validator set currently comprises the top 27 validators with the highest hybrid scores.
 - **Round:** A round lasts **one day**, during which the **top 27 validators** (ranked by hybrid score) are elected to produce blocks. At the end of the round, **rewards are calculated for that complete round and distributed**, and the next validator set is selected.
 - **Epoch (10 min or 200 slots)**: Periodic validator status checks ensure jailed nodes don’t participate in consensus. The validator status is checked once per epoch (rather than continuously) to keep TPS roughly constant in a given round.
