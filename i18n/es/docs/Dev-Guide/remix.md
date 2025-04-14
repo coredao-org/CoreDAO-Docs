@@ -27,7 +27,7 @@ En la imagen siguiente, verá que puede elegir diferentes versiones del compilad
 
 Puede elegir diferentes entornos en Remix, como se muestra en la imagen a continuación. Un entorno es simplemente la red blockchain con la que trabajará. Hay máquinas virtuales (VM) integradas, así como proveedores que le permiten conectarse a VM externas.
 
-Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based ont eh Core testnet your are connectede to. Consulte [aquí](https://scan.test.btcs.network/faucet) para Core Testnet (1115) y [aquí](https://scan.test2.btcs.network/faucet) para Core Testnet (1114).\`.
+Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Asegúrese de que su billetera MetaMask esté [configurada para Core Tesnet] (./core-wallet-config.md) usando la configuración de la cadena de testnet y verifique que su cuenta esté financiada desde el faucet apropiado según el Core testnet al que esté conectado. Consulte [aquí](https://scan.test.btcs.network/faucet) para Core Testnet (1115) y [aquí](https://scan.test2.btcs.network/faucet) para Core Testnet (1114).\`.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-3.avif)
@@ -49,14 +49,14 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 ![remix-ide](../../static/img/remix/remix-5.avif)
 </p>
 
-- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `shanghai` from the `EVM Version` dropdown.
+- En el menú de la izquierda, navegue hasta `SOLIDITY COMPILER`, luego a `Advance Configurations` y seleccione `shanghai` en el menú desplegable de `EVM Version`.
 
 <p align="center" style={{zoom:"60%"}}>
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 </p>
 
 :::note
-If you're using Testnet1, ensure that the EVM version is set to Paris
+Si estás utilizando Testnet1, asegúrate de configurar la versión de la EVM como Paris
 :::
 
 - Luego seleccione el botón azul **Compilar** para compilar su contrato inteligente.
@@ -95,7 +95,7 @@ MetaMask nos volverá a pedir que firmemos y enviemos la transacción.
 ![remix-ide](../../static/img/remix/remix-10.png)
 </p>
 
-After successfully storing `100` in our smart contract, we can use the `retrieve` function to read the value. Haga clic en el botón **recuperar** para ver el valor y deberíamos ver el número "100" devuelto, como se muestra a continuación en el cuadro azul.
+Después de almacenar con éxito `100` en nuestro contrato inteligente, podemos usar la función `retrieve` para leer el valor. Haga clic en el botón **recuperar** para ver el valor y deberíamos ver el número "100" devuelto, como se muestra a continuación en el cuadro azul.
 
 Es posible que hayas notado que MetaMask no aparecía para la llamada a la función `recuperar`; Esto se debe a que las _transacciones_ solo son necesarias para las interacciones de contratos inteligentes que requieren gas, y la lectura de datos de un contrato inteligente no requiere gas.
 
@@ -105,9 +105,9 @@ Es posible que hayas notado que MetaMask no aparecía para la llamada a la funci
 
 ## Core Scan
 
-Let's use [Core Scan](https://scan.test2.btcs.network/) to check on our deployed contract.
+Usemos [Core Scan](https://scan.test2.btcs.network/) para verificar nuestro contrato implementado.
 
-- **Copy the contract address** from Remix and use it as the input for a search on Core Scan.
+- **Copie la dirección del contrato** de Remix y úsela como entrada para una búsqueda en Core Scan.
 - Debería encontrar el contrato inteligente junto con información relevante, además de una lista de todas las interacciones históricas del contrato que incluye nuestra transacción de implementación y nuestra transacción de "tienda".
 
 <p align="center">
