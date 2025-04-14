@@ -19,11 +19,11 @@ Actualmente, la EVM de Core coincide con la versión Shanghai y no admite la ver
 
 Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^** de Solidity en Core Mainnet (1116) and Testnet2 (1114), los desarrolladores **_deberían_** elegir la versión EVM **Shanghai** y **no** las versiones EVM predeterminadas para compilar y desplegar los contratos inteligentes.
 
-However, for Core legacy Testnet (1115), the supported `evmVersion` _**should**_ be set to **Paris**.
+Sin embargo, para la Testnet legacy de Core (1115), la versión `evmVersion` _**debe**_ configurarse como **Paris**.
 
-#### Deployment Using Hardhat
+#### Despliegue usando Hardhat
 
-- For Core Mainnet and Testnet2, please add `evmVersion: "shanghai"` in solidity compiler configurations.
+- Para Core Mainnet y Testnet2, agrega \`evmVersion: "shanghai" en las configuraciones del compilador de Solidity.
 
 ```
 solidity: {
@@ -42,7 +42,7 @@ solidity: {
     },
 ```
 
-- For Core Legacy Testnet (chainID: 1115), please add `evmVersion: "paris"` in solidity compiler configurations.
+- Para Core Legacy Testnet (ID de cadena: 1115), agrega `evmVersion: "paris"` en las configuraciones del compilador de Solidity.
 
 ```
 solidity: {
@@ -61,15 +61,15 @@ solidity: {
     },
 ```
 
-#### Deployment Using Remix IDE
+#### Despliegue usando Remix IDE
 
-- For Core Mainnet and Testnet2, please choose `shanghai` in compiler configurations.
+- Para Core Mainnet y Testnet2, elige `shanghai` en las configuraciones del compilador.
 
 <p align="center">
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
 </p>
 
-- For Core Legacy Testnet1 (chainID: 1115), please choose `paris` in compiler configurations.
+- Para Core Legacy Testnet1 (ID de cadena: 1115), elige `paris` en las configuraciones del compilador.
 
 <p align="center">
 <img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />
@@ -79,7 +79,7 @@ solidity: {
 
 - Para simplificar el proceso de verificación, la versión EVM predeterminada para Core Scan está configurada en **Shanghai** para la versión de solidez **0.8.24^**.
 - Los desarrolladores pueden seguir los mismos pasos para verificar sus contratos inteligentes con la versión 0.8.24^ que con las versiones anteriores. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
-- To verify the smart contracts deployed on the Core Legacy Testnet (1115), set the `EVM Version to target` in the **Misc Settings** on the contract verification page to `paris`.
+- Para verificar los contratos inteligentes desplegados en Core Legacy Testnet (1115), configura la `EVM Version to target en los **Misc Settings** de la página de verificación de contratos a `paris\`.
 
 <p align="center">
 <img width="710" alt="image" src="https://github.com/user-attachments/assets/8f2b61f2-72c2-4607-8f64-9e1d1c19960b" />
