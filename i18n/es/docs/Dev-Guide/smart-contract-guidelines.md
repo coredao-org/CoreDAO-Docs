@@ -13,11 +13,11 @@ Core blockchain evoluciona constantemente para brindar una mejor experiencia de 
 
 ## Configuraciones recomendadas para implementar contratos inteligentes en Core
 
-Currently, Core's EVM matches version **Shanghai** and does not support the verification of smart contracts deployed with Solidity version **0.8.24^** with default EVM settings for popular IDEs. To make sure that the lag in support for deployment and verification of smart contracts of version `0.8.24^` does not stagger the development of dapps on Core, following are the guidelines to ensure that developers can successfully deploy and verify smart contracts of version `0.8.24^` on Core.
+Actualmente, la EVM de Core coincide con la versión Shanghai y no admite la verificación de contratos inteligentes implementados con Solidity versión 0.8.24 o superior con la configuración EVM predeterminada para los IDE populares. Para asegurarse de que el retraso en el soporte para la implementación y verificación de contratos inteligentes de la versión `0.8.24^` no afecte el desarrollo de dapps en el Core, a continuación se detallan pautas para garantizar que los desarrolladores puedan implementar y verificar con éxito los contratos inteligentes de la versión `0.8.24^` en Core.
 
 ### Configuración de EVM
 
-To support running smart contracts with Solidity version **0.8.24^** on Core Mainnet (1116) and Testnet2 (1114), developers **_should_** choose the **Shanghai** EVM version and **not** the default EVM versions to compile and deploy the smart contracts.
+Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^** de Solidity en Core Mainnet (1116) and Testnet2 (1114), los desarrolladores **_deberían_** elegir la versión EVM **Shanghai** y **no** las versiones EVM predeterminadas para compilar y desplegar los contratos inteligentes.
 
 However, for Core legacy Testnet (1115), the supported `evmVersion` _**should**_ be set to **Paris**.
 
