@@ -1,11 +1,11 @@
 ---
-sidebar_label: Connect Through Postman
+sidebar_label: Conexión Mediante Postman
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn how to Interact with Core using Postman
+description: Aprende cómo interactuar con Core usando Postman
 ---
 
-# Connect to Core RPC Endpoints from Postman
+# Conéctate a los endpoints de RPC de Core desde Postman
 
 ---
 
@@ -15,7 +15,7 @@ description: Learn how to Interact with Core using Postman
 
 En este documento, cubriremos los conceptos básicos para acceder a un punto final RPC con Postman. ¿No pretende ser (o reemplazar) un tutorial completo de principio a fin, sino más bien ofrecer una introducción al tema.
 
-## Working with Core RPCs Through Postman
+## Trabajar con los RPCs de Core a través de Postman
 
 1. Primero, deberá registrarse con una cuenta. Postman hace que esto sea muy fácil ingresando manualmente los detalles de su cuenta o con una dirección de Gmail.
 
