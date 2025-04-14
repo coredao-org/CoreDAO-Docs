@@ -44,7 +44,7 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 | RAM                   | 8 Gigabytes                                                                       |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos](../Node/config/full-node.md)
 
 **Especificaciones de hardware del nodo completo de Mainnet**
 
@@ -55,7 +55,7 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-
 | RAM                   | 32 Gigabytes                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/config/full-node.md)
 
 ### 4. ¿Qué es un nodo RPC de Core? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core RPC?
 
