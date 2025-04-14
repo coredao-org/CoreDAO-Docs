@@ -26,7 +26,7 @@ Para generar claves API utilizando una cuenta registrada en Core Scan, consulte 
 
 Es posible que haya ocurrido un problema técnico en el proceso de creación de claves. En este caso, intente eliminar la clave y generar una nueva. Si el problema persiste después de usar una clave recién generada, contáctenos en nuestro servidor oficial [Discord](https://discord.com/invite/coredaoofficial).
 
-### 6. Is there a rate limit on Core Scan API requests?
+### 6. ¿Existe un límite en la cantidad solicitudes a la API de Core Scan?
 
 Sí, existen límites de tasa fija en las solicitudes de API según el nivel de API. Para evitar errores en el límite de tarifas, cumpla con su plan disponible y espere un cierto tiempo antes de cada solicitud. Si está utilizando un script o una aplicación, aplique limitación para limitar la frecuencia de las llamadas.
 
@@ -34,9 +34,9 @@ Sí, existen límites de tasa fija en las solicitudes de API según el nivel de 
 | ------------- | ------------------------------------------------------------- |
 | **Gratis**    | 5 llamadas/segundo, hasta 10.000 llamadas/día |
 
-### 6. Are there any rate limits on the Staking API endpoints?
+### 6. ¿Existe una tasa límite en los endpoints de la API de Staking?
 
-Yes, the Staking API endpoints have a rate limit of 600 transactions per minute per IP.
+Sí, los endpoints de la API de Staking tienen un límite de 600 transacciones por minuto por IP.
 
 ### 7. ¿Cuál es el código de estado de una API si ocurre un error?
 
