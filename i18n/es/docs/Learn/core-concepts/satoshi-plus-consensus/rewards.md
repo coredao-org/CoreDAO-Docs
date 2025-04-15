@@ -24,8 +24,8 @@ El ecosistema Core está diseñado para incentivar la participación y asegurar 
 
 ### 2. Recompensas de apuesta
 
-- **Description:** Staking rewards are distributed to Bitcoin and CORE token holders who stake and delegate their tokens with Core Validators. Esta participación no solo ayuda a proteger la red a través del componente de prueba de participación delegada (DPoS) del consenso Satoshi Plus, sino que también permite a los poseedores de tokens participar en la gobernanza de la red.
-- **Mechanism:**  DPoS allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to vote and participate in the election of active validator set by delegating their holdings to their preferred validators. For CORE token staking, the minimum staking requirement is **1 CORE** token, allowing any CORE holders to stake onto the Core network. On the Bitcoin staking side, the current configuration imposes **no minimum BTC requirement** when using the staking script. However, staking via the official website UI requires a **minimum of 0.01 BTC** (excluding transaction fees). Note, this requirement is subject to change through a governance vote in the future. Holders of both CORE and Bitcoin can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/staking). Las recompensas obtenidas por los apostadores son proporcionales a la cantidad de Bitcoin/CORE apostada y la duración de la apuesta, lo que incentiva la tenencia y participación a largo plazo en el proceso de consenso.
+- **Descripción:** Las recompensas de staking se distribuyen a los poseedores de tokens de Bitcoin y CORE que hacen staking y delegan sus tokens con validadores en la red Core. Esta participación no solo ayuda a proteger la red a través del componente de prueba de participación delegada (DPoS) del consenso Satoshi Plus, sino que también permite a los poseedores de tokens participar en la gobernanza de la red.
+- **Mecanismo:** DPoS permite a los poseedores de tokens CORE y [Bitcoin](../../products/btc-staking/overview.md) votar y participar en la elección del conjunto activo de validadores delegando sus fondos a los validadores de su preferencia. Para el staking de tokens CORE, el requisito mínimo es de **1 CORE**, permitiendo que cualquier holder de CORE participe en el staking dentro de la red Core. En el lado del staking de Bitcoin, la configuración actual **no impone requisitos mínimos de BTC** cuando se usa el script para staking. Sin embargo, el staking a través de la interfaz web oficial requiere un **mínimo de 0.01 BTC** (excluyendo comisiones por transacción). Nota: Este requisito está sujeto a cambios mediante una votación de gobernanza en el futuro. Los poseedores de tokens CORE y Bitcoin pueden delegar sus respectivos tokens a validadores de su elección a través del [sitio web de staking](https://stake.coredao.org/staking) oficial. Las recompensas obtenidas por los apostadores son proporcionales a la cantidad de Bitcoin/CORE apostada y la duración de la apuesta, lo que incentiva la tenencia y participación a largo plazo en el proceso de consenso.
 
 ### 3. Recompensas del validador
 
@@ -36,7 +36,7 @@ El ecosistema Core está diseñado para incentivar la participación y asegurar 
 
 Las recompensas básicas se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, **90%** de las recompensas van a los validadores y **10%** de las recompensas van al "Contrato de recompensas del sistema". Del 90% pagado a los validadores, el validador toma un porcentaje como comisión antes de pagar a sus delegados. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, Bitcoin stakers, and Bitcoin Miners – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Los validadores pueden recibir tanta o tan poca recompensa como quieran, aunque se les incentiva a ser generosos para atraer más participación y poder de hash.
+Los validadores comparten las recompensas con las entidades que les delegaron —incluyendo stakers de CORE, stakers de Bitcoin y mineros de Bitcoin—, pero deciden cuánto retribuir al determinar qué porcentaje conservan para sí mismos. Los validadores pueden recibir tanta o tan poca recompensa como quieran, aunque se les incentiva a ser generosos para atraer más participación y poder de hash.
 
 Después de que los validadores cobran sus tarifas, el protocolo utiliza esta función para determinar cómo se dividen las recompensas restantes entre los participantes de CORE, los participantes de Bitcoin y los delegados de poder de hash. La distribución de recompensas se calcula según la siguiente fórmula:
 
@@ -71,16 +71,16 @@ donde:
 
 Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad apostada de poder hash, CORE o BTC:
 
-- **Per unit hash power reward:** $$rHu$$ =  $$\frac{rH}{rHp}$$
-- **Per unit CORE reward:** $$rSu$$ = $$\frac{rS}{rSp}$$
-- **Per unit BTC reward:** $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- **Recompensa por unidad de poder de hasheo:** $$rHu$$ =  $$\frac{rH}{rHp}$$
+- **Recompensa por unidad de CORE:** $$rSu$$ = $$\frac{rS}{rSp}$$
+- **Recompensa por unidad de BTC:** $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicador de Dividendos por Nivel <sub>n</sub>
 
 Donde:
 
 - $$rHu$$ son las recompensas del poder hash del validador por unidad;
 - $$rSu$$ son las recompensas de apuesta de tokens CORE por unidad;
 - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e, f, g, h,..., etc) that is determined by a user's staking data as well as system dual staking settings. Las configuraciones están sujetas a cambios y se pueden configurar mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
+- **Multiplicadores de rendimiento:** Cada nivel de rendimiento aumentado tiene un multiplicador específico (e, f, g, h,..., etc.) que está determinado por los datos de staking del usuario, así como por la configuración de staking dual del sistema. Las configuraciones están sujetas a cambios y se pueden configurar mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
 
 #### Impacto de la doble apuesta en las recompensas BTC
 
