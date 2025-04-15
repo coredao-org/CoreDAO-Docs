@@ -44,7 +44,7 @@ DPoS permite a los poseedores de tokens Bitcoin y CORE participar en la gobernan
 - **Apuesta y votación:** Los poseedores de tokens apuestan sus tokens CORE con Validadores, votando efectivamente para que participen en el proceso de consenso. Cuantos más tokens se apuesten con un Validador, mayor será su influencia en la validación de transacciones y la creación de nuevos bloques.
 - **Flujo de trabajo:** Los participantes delegan sus tokens a los validadores a través de un proceso de participación seguro en la plataforma Core. A cambio, reciben recompensas por apostar en forma de tokens CORE. Los tokens apostados contribuyen a los procesos generales de seguridad y toma de decisiones de la red.
     - **Bitcoin Stakers**: la tercera parte del consenso de Satoshi Plus es la participación sin custodia de Bitcoin, que permite a cualquier titular de bitcoin obtener rendimiento apostando sus tokens de bitcoin sin renunciar a la custodia.
-    - **CORE Stakers** - All holders of Core blockchain’s native CORE tokens are able to underwrite the network’s security by delegating their token holdings to a validator.
+    - \*\*Stakers de CORE \*\*: todos los poseedores de tokens CORE nativos en Core Chain pueden garantizar la seguridad de la red delegando sus tenencias de tokens a un validador.
 
 ### 3. **Apuesta de Bitcoin sin custodia**
 
@@ -95,8 +95,8 @@ Satoshi Plus mejora la seguridad de las redes Bitcoin y Core al crear una relaci
 **Cómo funciona:**
 
 - **Modelo de seguridad compartida:** Al permitir que los mineros de Bitcoin participen en los mecanismos de seguridad de Core, el sistema aprovecha el inmenso poder de hash de Bitcoin, mejorando la seguridad de la cadena de bloques Core sin requerir recursos adicionales significativos.
-- **Workflow:** As miners and stakers contribute to Core blockchain’s security, both networks benefit. Los mineros utilizan sus configuraciones existentes para respaldar la cadena de bloques Core, y los participantes proporcionan capas de seguridad adicionales a través de la delegación de tokens, creando una red sólida y resistente.
+- **Flujo de trabajo:** A medida que los mineros y los stakers contribuyen a la seguridad de la blockchain de Core, ambas redes se benefician. Los mineros utilizan sus configuraciones existentes para respaldar la cadena de bloques Core, y los participantes proporcionan capas de seguridad adicionales a través de la delegación de tokens, creando una red sólida y resistente.
 
-## Conclusion
+## Conclusión
 
 En resumen, el mecanismo de consenso de Satoshi Plus integra hábilmente estos componentes en un sistema cohesivo que se beneficia de la seguridad y descentralización del proceso de minería de Bitcoin y de la agilidad y capacidades de gobernanza de los modelos de participación modernos, fomentando un entorno blockchain seguro, eficiente y escalable.
