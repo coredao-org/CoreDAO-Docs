@@ -5,14 +5,14 @@ sidebar_position: 2
 description: Aprovechar DPoS en Satoshi Plus
 ---
 
-# Delegated Proof of Stake (DPoS) in Satoshi Plus
+# Prueba de participación delegada (DPoS) en Satoshi Plus
 
 ---
 
 ## Descripción general
 
 La prueba de participación delegada (DPoS) es un componente fundamental del mecanismo de consenso Satoshi Plus empleado por Core blockchain. Este modelo de consenso está diseñado para complementar la solidez de la prueba de trabajo delegada (DPoW) con un sistema de participación flexible, democrático y escalable. DPoS no sólo mejora la seguridad de la red sino que también promueve la participación de la comunidad en la gobernanza, convirtiéndolo en un aspecto esencial del funcionamiento de blockchain.
-DPoS permite a los poseedores de tokens CORE y [Bitcoin](../../products/btc-stake/overview.md) votar y participar en la elección del conjunto de validadores delegando sus tenencias a sus validadores preferidos. Debido a que solo existe un requisito mínimo de participación muy pequeño de 1 token CORE, todos los poseedores de CORE pueden contribuir a la gobernanza de la red Core. On the Bitcoin staking side, the current configuration imposes no minimum BTC requirement when using the staking script. However, staking via the official website UI requires a minimum of 0.01 BTC (excluding transaction fees). Note, this requirement is subject to change through a governance vote in the future. Los poseedores de tokens CORE y BTC pueden delegar sus respectivos tokens a validadores de su elección a través del [sitio web de apuestas] oficial (https://stake.coredao.org/). En esta sección cubrimos en profundidad el funcionamiento y la importancia de DPoS en el funcionamiento de Satoshi Plus.
+DPoS permite a los poseedores de tokens CORE y [Bitcoin](../../products/btc-stake/overview.md) votar y participar en la elección del conjunto de validadores delegando sus tenencias a sus validadores preferidos. Debido a que solo existe un requisito mínimo de participación muy pequeño de 1 token CORE, todos los poseedores de CORE pueden contribuir a la gobernanza de la red Core. En el lado del staking de Bitcoin, la configuración actual no impone requisitos mínimos de BTC cuando se usa el script para staking. Sin embargo, el staking a través de la interfaz web oficial requiere un mínimo de 0.01 BTC (excluyendo comisiones por transacción). Nota: Este requisito está sujeto a cambios mediante una votación de gobernanza en el futuro. Los poseedores de tokens CORE y BTC pueden delegar sus respectivos tokens a validadores de su elección a través del [sitio web de apuestas] oficial (https://stake.coredao.org/). En esta sección cubrimos en profundidad el funcionamiento y la importancia de DPoS en el funcionamiento de Satoshi Plus.
 
 ## Cómo funciona DPoS en Satoshi Plus
 
@@ -28,15 +28,15 @@ DPoS opera permitiendo a los poseedores de tokens CORE participar activamente en
 
 ## Proceso paso a paso
 
-1. **Staking CORE/BTC Tokens:** CORE and BTC holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token or 0.01 BTC (if staking via the official website UI). Note, if users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked.
+1. **Staking de Tokens CORE/BTC:** Los holders de CORE y BTC pueden participar en la seguridad de la red mediante el staking de sus tokens. El requisito mínimo de staking es de 1 token CORE o 0.01 BTC (si se hace staking a través de la interfaz web oficial). Nota, si los usuarios optan por staking de BTC mediante el script de staking, no existe un requerimiento mínimo en la cantidad de BTC a hacer staking.
 
-2. **Delegating to Validators:** Token holders delegate their staked CORE or BTC to a Core Validators of their choice, assisting their hybrid score in the validator election process.
+2. **Delegando a validadores:** Los holders de tokens delegan sus CORE o BTC en staking a los validadores de Core de su elección, contribuyendo así a su puntaje híbrido en el proceso de elección de validadores.
 
 3. **Elección de validador:** Los validadores con la puntuación híbrida más alta, que incluye CORE delegado, son elegidos para el conjunto de validadores para una ronda determinada.
 
 4. **Producción de bloques:** Los validadores elegidos son responsables de producir bloques y validar transacciones durante su vigencia, obteniendo así recompensas.
 
-5. **Earning Rewards:** CORE and BTC stakers earn rewards in the form of CORE tokens from the validators to whom they delegated.
+5. **Obteniendo recompensas:** Los participantes de CORE y BTC obtienen recompensas de los validadores en quienes delegaron.
 
 ## Importancia de DPoS en Satoshi Plusstakers obtienen recompensas de los validadores en quienes delegaron.
 
