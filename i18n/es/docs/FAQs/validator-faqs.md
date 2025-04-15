@@ -1,5 +1,5 @@
 ---
-sidebar_label: Preguntas frecuentes sobre el validador Core
+sidebar_label: Preguntas frecuentes sobre validadores en Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -36,7 +36,7 @@ Proporcione información para cada uno de los campos del formulario:
 
 ### 4. ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo de validación en Core?
 
-Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s Satoshi Plus consensus framework.
+Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core.
 
 **Requisitos de software:** Actualmente, un Core Full Node solo puede ejecutarse en Mac OS X y Linux.
 
