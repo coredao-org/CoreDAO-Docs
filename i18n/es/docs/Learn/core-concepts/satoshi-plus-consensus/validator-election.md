@@ -2,10 +2,10 @@
 sidebar_label: Elección del validador
 hide_table_of_contents: false
 sidebar_position: 2
-description: Satoshi Plus Validator Election Process
+description: Proceso de elección de validadores en Satoshi Plus
 ---
 
-# Validator Election Process on Core
+# Proceso de elección de validadores en la red Core
 
 ---
 
