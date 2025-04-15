@@ -11,7 +11,7 @@ sidebar_position: 2
 
 We've developed the Core Scan Open API to give developers direct access to Core Scan's block explorer data and services. Core Scan's APIs are provided as a community service and without warranty, so please use what you need and no more.
 
-Check out the full API docs available [here](https://docs.coredao.org/docs/api/).
+Check out the full API docs available [here](https://docs.coredao.org/docs/api).
 
 ### 2. How can I access the Core Scan API?
 
