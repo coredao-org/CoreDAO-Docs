@@ -43,25 +43,26 @@ Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el po
 #### **Consenso y Elección**
 
 - **Elección de Validadores**: Cada **ronda (1 día)**, los **27 validadores** principales según su **puntaje híbrido** (PoW de mineros, DPoS de stakers de CORE y stakers de Bitcoin) son elegidos para formar parte del conjunto activo de validadores y asegurar la red. Cualquier validador en el conjunto actual de validadores que no haya sido bloqueado (jailed) o penalizado (slashed) se considera "activo" (live). Para garantizar un TPS más estable, los validadores en vivo se actualizan cada 200 bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre.
-- **Hybrid Score:** Every validator node seeking to become part of the active validator set is given a hybrid score, which is calculated based on three delegations: hashpower, CORE, and Bitcoin. The active validator set currently comprises the top 27 validators with the highest hybrid scores.
-- **Round:** A round lasts **one day**, during which the **top 27 validators** (ranked by hybrid score) are elected to produce blocks. At the end of the round, **rewards are calculated for that complete round and distributed**, and the next validator set is selected.
-- **Epoch (10 min or 200 slots)**: Periodic validator status checks ensure jailed nodes don’t participate in consensus. The validator status is checked once per epoch (rather than continuously) to keep TPS roughly constant in a given round.
-- **Slot (3 sec)**: Each 1-day round is divided into slots, and all validators in the validator set take turns producing one block per slot in a round-robin fashion.
+- **Score Híbrido:** Cada nodo validador que busca formar parte del conjunto activo de validadores recibe un puntaje híbrido (hybrid score), calculado en función de tres tipos de delegación:
+  poder de hasheo, CORE y Bitcoin. El conjunto activo de validadores está compuesto por los 27 validadores con las puntuaciones híbridas más altas.
+- **Ronda:** Una ronda dura **un día**, durante la cual los **27 mejores validadores** (clasificados según su score hibrido) son elejidos para producir bloques. Al final de la ronda, **las recompensas son calculadas para esa ronda completa y distribuidas**, y el siguiente set de validadores es calculado.
+- **Época (10 minutos o 200 slots)**: El estatus del validador es verificado constantemente para asegurar que nodos bloqueados (jailed) no participen en el consenso. El estado del validador se verifica una vez por época (en lugar de continuamente) para mantener las transacciones por segundo aproximadamente constante en una ronda determinada.
+- **Slot (3 segundos)**: Cada ronda de 1 día se divide en slots y todos los validadores del conjunto de validadores se turnan para producir un bloque por slot al estilo round-robin.
 
-#### **Rewards & Stability**
+#### **Recompensas y estabilidad**
 
 - **Módulo de recompensas:** Las recompensas se distribuyen al final de cada ronda según el desempeño de los validadores. El módulo de recompensas calcula y distribuye estas recompensas en consecuencia.
-- Rewards are distributed at the **end of each round**.
-- Live validators are updated **every 200 blocks** to maintain stable TPS.
+- Las recompensas se distribuyen al **final de cada ronda**.
+- Los validadores vivos se actualizan **cada 200 bloques** para mantener las transacciones por segundo estables.
 
 ## Prueba de trabajo delegada
 
-To participate in Satoshi Plus, Bitcoin miners and/or mining pools simply write two additional pieces of information in the \`op\_return\` field as they produce a new Bitcoin block:
+Para participar en Satoshi Plus, los mineros y/o grupos de minería simplemente escriben dos datos adicionales en el campo \`op\_return\` mientras producen un nuevo bloque de Bitcoin:
 
-1. The address of the Core Validator to whom they want to delegate their hash power.
-2. The address to which the miner would like to receive the CORE token rewards.
+1. La dirección del Validador de Core al que desean delegar su poder de hasheo.
+2. La dirección en la cual el minero quiere recibir su recompensa en tokens CORE.
 
-In exchange for participating in Core’s consensus process by delegating their hash power to vote for validators, Bitcoin miners receive supplemental CORE token rewards in addition to their existing mining rewards from the Bitcoin network. In this way, Satoshi Plus bridges Bitcoin miner participation to the Core network, while the Bitcoin network gets better compensated (i.e. more highly incentivized) miners.
+A cambio de participar en el proceso de consenso de Core al delegar poder de hasheo para votar por validadores, los mineros de Bitcoin reciben recompensas en tokens CORE adicionales a sus recompensas existentes por minería en la red Bitcoin. De esta manera, Satoshi Plus conecta la participación de los mineros de Bitcoin con la red de Core, mientras que la red de Bitcoin obtiene mineros mejor compensados (es decir, con mayores incentivos).
 
 ## Prueba de participación delegada
 
