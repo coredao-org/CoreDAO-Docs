@@ -21,7 +21,7 @@ Los propósitos principales de introducir el staking líquido a través de stCOR
 - Mejorar la experiencia del usuario
 - Aportar más utilidades al token CORE
 
-For the moment users can stake CORE tokens to individual validators directly through the official [Core Staking Website](https://stake.coredao.org). Sin embargo, hay dos inconvenientes señalados por la comunidad:
+Por el momento, los usuarios pueden hacer staking de tokens CORE a validadores individuales directamente a través del [Core Staking Website](https://stake.coredao.org). Sin embargo, hay dos inconvenientes señalados por la comunidad:
 
 - No existe una función de auto-compounding, y los usuarios deben reclamar las recompensas y re-stakearlas a los validadores manualmente cada día.
 - Los stakes de hash de los pools de minería de Bitcoin son menos fungibles y no tan estables como los stakes de CORE, lo que provoca que el APR de los validadores afectados cambie de manera más drástica.
@@ -32,7 +32,7 @@ Por otro lado, también estamos buscando formas de añadir más utilidades al to
 
 1. **Configuración de Staking:** Para participar en el staking líquido de Core, los usuarios deben convertir sus tenencias de CORE al formato de CORE en staking (stCORE). Esto implica bloquear una cierta cantidad de CORE y depositarla en el contrato de staking stCORE, el cual delegará automáticamente los CORE a validadores seleccionados en la cadena.
 
-2. **Issuance of stCORE:** In return for staking CORE, users receive liquid staking tokens (stCORE). Estos tokens representan sus tenencias de CORE en staking y pueden ser comercializados o transferidos libremente mientras siguen ganando recompensas de staking.
+2. **Emisión de stCORE:** A cambio de hacer staking de CORE, los usuarios reciben tokens de staking líquido (stCORE). Estos tokens representan sus tenencias de CORE en staking y pueden ser comercializados o transferidos libremente mientras siguen ganando recompensas de staking.
 
 3. **Recompensas de Staking:** Los usuarios pueden ganar una rentabilidad anual al mantener stCORE, que es el aumento proyectado anualmente en su ratio de conversión con CORE. Esto significa que los usuarios pueden intercambiar por más CORE cuando quemen su stCORE.
 
