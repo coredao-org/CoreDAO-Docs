@@ -105,12 +105,12 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 10. Haz clic en **Confirmar** para completar la transacción.
 
 :::note
-Note: For BTC staking, transferring the staking validator will interrupt staking, resulting in the loss of rewards for that day.
+Nota: Para el staking de BTC, transferir el validador de staking interrumpirá el proceso, lo que resultará en la pérdida de recompensas correspondientes a ese día.
 :::
 
 ### Confirmar Salida OP\_Return
 
-11. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. La salida OP\_Return es donde se guarda tu redeem\_script y se usa esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre OP\_Return. Aborta la transacción si no incluye la salida OP\_Return.
+11. Antes de firmar la transacción en tu cartera, verifica las salidas de la transacción para asegurarte de que incluyan un OP\_Return en la salida. La salida OP\_Return es donde se guarda tu redeem\_script y se usa esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre OP\_Return. Aborta la transacción si no incluye la salida OP\_Return.
 
 <p align="center" style={{zoom:"80%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
@@ -122,29 +122,29 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 ![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
-### Verify BTC Staking Address
+### Verifica la Dirección de Staking de BTC
 
-13. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process.
+13. Antes de proceder a confirmar tu transacción de staking. Esta característica de verificación permite a los usuarios comprobar de forma independiente su dirección de staking de BTC, ayudando a prevenir firmas a ciegas y mejorando la seguridad del proceso de staking.
 
-14. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+14. Para proceder con la verificación, haz clic en el botón **Verificar la Dirección de Staking de BTC**. Esto te llevará al sitio web externo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
-15. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+15. En la interfaz del sitio web de verificación, asegúrate de que los datos obtenidos sean correctos y luego haz clic en el botón _Submit_.
 
 <p align="center" style={{zoom:"35%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
-16. The verification result will appear in the **Verification Result** section.
+16. El resultado de la verificación aparecerá en la sección **Verification Result**.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-17. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+17. Una vez verificado, regresa a stake.coredao.org y continúa al hacer clic en **Approve Transaction**.
 
 <p align="center">
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
