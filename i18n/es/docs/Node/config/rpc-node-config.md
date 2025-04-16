@@ -1,5 +1,5 @@
 ---
-sidebar_label: RPC Node
+sidebar_label: Nodo RPC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -7,7 +7,7 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# RPC Nodes on Core
+# Nodos RPC en Core
 
 ---
 
@@ -19,13 +19,13 @@ Existen varios requisitos del sistema, tanto de software como de hardware, para 
 
 ### Software
 
-- **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability.
-- **Firewall Configuration:** To ensure your RPC Node can communicate with external applications and other nodes, you need to allow inbound HTTP traffic on port 8575, which is the default port for RPC communication. You can adjust this setting in the config.toml file if you prefer using a different port. Make sure that your firewall settings are properly configured to allow traffic on this port.
+- **Sistema Operativo:** Actualmente, un Nodo Archivo de Core es compatible _únicamente_ con los sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad.
+- **Configuración del Firewall:** Para asegurar que tu Nodo RPC pueda comunicarse con aplicaciones externas y otros nodos, debes permitir el tráfico HTTP entrante en el puerto 8575, que es el puerto predeterminado para la comunicación RPC. Puedes ajustar esta configuración en el archivo config.toml si prefieres usar un puerto diferente. Asegúrate de que la configuración de tu firewall esté correctamente ajustada para permitir tráfico en este puerto.
 
 ### Hardware
 
-An RPC Node on Core acts as a gateway for applications, developers, and users to interact with the blockchain. It processes queries, submits transactions, and retrieves real-time blockchain data via Remote Procedure Calls (RPC). These nodes are essential for dApps, wallets, and analytics platforms to seamlessly access Core’s network. Following are the hardware requirements for RPC Node on Core.
+Un nodo RPC en Core actúa como una puerta de enlace para que aplicaciones, desarrolladores y usuarios interactúen con la blockchain. Procesa consultas, envía transacciones y recupera datos en tiempo real de la blockchain mediante Llamadas a Procedimientos Remotos (RPC). Estos nodos son esenciales para que las dApps, carteras y plataformas de análisis accedan sin problemas a la red de Core. A continuación se presentan los requisitos de hardware para ejecutar un Nodo RPC en Core.
 
 <Tabs
 defaultValue="testnet2"
@@ -34,41 +34,41 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Para los nodos RPC en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  
 |----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
+| **Storage**        | 1 TB de espacio libre en disco, unidad de estado sólido (SSD), tipo gp3, 8k IOPS, 250 MB/s de rendimiento, latencia de lectura menor a 1 ms.  |
+| **CPU**            | CPU de 8 núcleos |
 | **RAM**            | 16 Gigabytes   |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+| **Internet** | Una conexión a Internet de banda ancha con velocidades de descarga y carga de 50 megabytes por segundo.   |
 ```
 
   </TabItem>
   <TabItem value="testnet">
-    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    Para los nodos RPC en **Core Blockchain Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  
 |----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
+| **Storage**        | 1 TB de espacio libre en disco, unidad de estado sólido (SSD), tipo gp3, 8k IOPS, 250 MB/s de rendimiento, latencia de lectura menor a 1 ms.  |
+| **CPU**            | CPU de 8 núcleos |
 | **RAM**            | 16 Gigabytes   |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+| **Internet** | Una conexión a Internet de banda ancha con velocidades de descarga y carga de 50 megabytes por segundo.   |
 ```
 
   </TabItem>
   <TabItem value="mainnet">
-    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    Para los nodos RPC en **Core Blockchain Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  
 |----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
-| **RAM**            | 16 Gigabytes  |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+| **Storage**        | 1 TB de espacio libre en disco, unidad de estado sólido (SSD), tipo gp3, 8k IOPS, 250 MB/s de rendimiento, latencia de lectura menor a 1 ms.  |
+| **CPU**            | CPU de 8 núcleos |
+| **RAM**            | 16 Gigabytes   |
+| **Internet** | Una conexión a Internet de banda ancha con velocidades de descarga y carga de 50 megabytes por segundo.   |
 ```
 
   </TabItem>
@@ -84,7 +84,7 @@ Si está ejecutando un nodo RPC, debe habilitar las reglas de entrada "HTTP" en 
 
 1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo RPC, ejecutando su nodo completo RPC directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Download the node binary from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
+2\. Descargue el binario para nodo desde la [página de lanzamientos de Core] (https://github.com/coredao-org/core-chain/releases) del repositorio core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
 
 3\. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
