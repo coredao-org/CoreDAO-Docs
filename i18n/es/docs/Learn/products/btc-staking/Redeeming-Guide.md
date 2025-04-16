@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Redimir Bitcoin Apostado o Reclamar Recompensas CORE
 
-Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. Para aprender cómo apostar tus activos de Bitcoin en Core y ganar recompensas, sigue nuestra detallada [guía](./stake-btc-guide.md). Después de haber apostado exitosamente tu Bitcoin en la blockchain de Core, el siguiente paso es aprender a reclamar tus recompensas CORE o redimir tu Bitcoin apostado. Esta guía detallada se utilizará cuando veas '**Redimir**' aparecer bajo '**Acción**' en el validador delegado que elegiste previamente o '**Reclamar**' junto a '**Delegado Hash & Recompensas Core**' y/o '**Recompensas de Staking de Bitcoin**'.
+Core ofrece a los poseedores de Bitcoin la posibilidad de hacer staking de sus activos en la blockchain de Core para ganar ingresos pasivos en forma de tokens CORE. Para aprender cómo apostar tus activos de Bitcoin en Core y ganar recompensas, sigue nuestra detallada [guía](./stake-btc-guide.md). Después de haber apostado exitosamente tu Bitcoin en la blockchain de Core, el siguiente paso es aprender a reclamar tus recompensas CORE o redimir tu Bitcoin apostado. Esta guía detallada se utilizará cuando veas '**Redimir**' aparecer bajo '**Acción**' en el validador delegado que elegiste previamente o '**Reclamar**' junto a '**Delegado Hash & Recompensas Core**' y/o '**Recompensas de Staking de Bitcoin**'.
 
 ## Información de Distribución de Recompensas
 
@@ -54,7 +54,7 @@ Si tu período de staking ha expirado, redime tus activos de Bitcoin apostado de
 ## Reclamar Recompensas en Tokens CORE Ganadas de la Delegación de Staking de Bitcoin
 
 :::note
-To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+Para ser elegible para ganar recompensas, es necesario completar un ciclo completo de staking (00:00:00 - 23:59:29 UTC).
 :::
 
 1\. Desde cualquier pantalla de CORE, pasa el cursor sobre tu billetera conectada en la esquina superior derecha, haz clic en ‘**Mi Staking**’.
