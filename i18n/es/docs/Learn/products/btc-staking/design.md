@@ -1,5 +1,5 @@
 ---
-sidebar_label: Transaction Design
+sidebar_label: Diseño de Transacciones
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -22,8 +22,8 @@ La metodología para integrar el staking de Bitcoin se centra en el [tiempo de b
 - La transacción también debe contener una salida `op_return` que especifique
   - La transacción también debe contener una salida `op_return` que especifique.
   - La dirección a la que el staker desea que se envíen sus recompensas en tokens CORE.
-- To be eligible for staking on Core, minimum requirements apply to the amount of BTC that can be staked, depending on the staking method. If using the [official staking website UI](https://stake.coredao.org/staking), users must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script.
-- Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+- Para ser elegible para el staking en Core, se aplican requisitos mínimos en cuanto a la cantidad de BTC con la que se puede hacer staking, dependiendo del método de staking. Si se utiliza la [interfaz web oficial de staking](https://stake.coredao.org/staking), los usuarios deben hacer staking de al menos 0.01 BTC (excluyendo las comisiones de transacción). No hay un requisito mínimo al hacer staking a través del script.
+- La duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
 
 ### Flujo de trabajo de transacciones
 
@@ -82,7 +82,7 @@ El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuaci�
 - Al utilizar la dirección multifirma `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
 
 :::note
-To be eligible for Non-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website UI](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). There is **no** minimum requirement when staking via the script. Also, the minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
+Para ser elegible para el Staking Sin Custodia de BTC en Core, los requisitos mínimos de staking dependen del método elegido. Si se utiliza la [interfaz web del sitio oficial](https://stake.coredao.org/staking), los usuarios deben hacer staking de al menos **0.01 BTC** (excluyendo las comisiones de transacción). **No** hay un requisito mínimo al hacer staking a través del script. Además, la duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
 :::
 
 ## OP_RETURN Salida
@@ -93,7 +93,7 @@ La salida `OP_RETURN` debe contener toda la información de staking en orden y e
 - **`LENGTH`:** que representa la longitud total de bytes después del código de operación `OP_RETURN`. _Tenga en cuenta que todos los datos deben enviarse con sus bytes de tamaño apropiado_.
 - **`Identificador Satoshi Plus`:** (**SAT+**) 4 bytes
 - **`Versión`:** (**0x01**) 1 byte
-- **`Chain ID`:** (1114 for Core Testnet2, 1115 for Core Testnet, and 1116 for Core Mainnet) 2 bytes
+- **`Chain ID`:** (1114 para Core Testnet2, 1115 para Core Testnet, y 1116 para Core Mainnet) 2 bytes
 - **`Delegator`:** La dirección principal para recibir recompensas, 20 bytes
 - **`Validador`:** La dirección del validador principal a la que apostar, 20 bytes
 - **`Tarifa`:** Tarifa por retransmisor, 1 byte, rango [0,255], medido en CORE
