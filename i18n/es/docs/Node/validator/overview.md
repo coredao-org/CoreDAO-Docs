@@ -1,10 +1,10 @@
 ---
-sidebar_label: Validators on the Core
+sidebar_label: Validadores en Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validators on the Core Network
+# Validadores en la red Core
 
 ---
 
