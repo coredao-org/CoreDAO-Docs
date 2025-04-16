@@ -15,11 +15,11 @@ Generalmente se incurre en sanciones de reducción porque un nodo no logra produ
 - Si un nodo validador no logra minar **50 bloques** seguidos, las recompensas de tokens CORE que el validador ha acumulado hasta el momento se reducen por completo.
 - Si un nodo de validación no logra extraer los primeros **49 bloques** en una ronda y luego pierde el último bloque de la misma ronda, esto dará lugar a una reducción de todas las recompensas de tokens CORE que el validador ha acumulado hasta el momento.
 - Si fallan en los últimos **50** bloques de la ronda, entregarán todo lo que han ganado.
-- If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, i.e., 1,000 CORE, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set.
+- Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador (ej: 1,000 CORE) y es encarcelado por **tres** días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
 ## Doble signo
 
-Anyone can submit a slash request with the evidence of double signing activity on the Core blockchain.
+Cualquier persona puede presentar una solicitud de "slash" con evidencia de actividad de firmado doble en la blockchain de Core.
 
 ### Validación de evidencia
 
