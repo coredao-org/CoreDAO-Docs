@@ -30,7 +30,7 @@ Cualquier persona puede presentar una solicitud de "slash" con evidencia de acti
 
 Si la evidencia es válida:
 
-1. **10,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
+1. **10,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
 4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
