@@ -1,68 +1,68 @@
 ---
-sidebar_label: Running a Validator Node
+sidebar_label: Ejecución de un Nodo Validador
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Running Validator Nodes on Core
+# Ejecución de Nodos Validadores en Core
 
 ---
 
-This guide will walk you through setting up a Core Validator Node. The guide covers all the essential steps, including installing dependencies, building the Core node software, and launching it successfully.
+Esta guía te llevará paso a paso para configurar un Nodo Validador de Core. La guía cubre todos los pasos esenciales, incluyendo la instalación de dependencias, la compilación del software del nodo de Core y su lanzamiento exitoso.
 
 ### Requisitos del Sistema
 
 Existen varios requisitos del sistema para configurar un nodo validador en la red central. Consulte [aquí](../config/validator-node-config.md) y asegúrese de tener los requisitos de hardware y software necesarios antes de ejecutar un nodo validador. Además, asegúrese de registrar su nodo validador correctamente consultando la guía detallada [aquí](./validator-register.md).
 
-### Update Your System
+### Actualiza tu sistema
 
-Start by updating your system to ensure all the packages are up-to-date. Run the following commands:
+Comienza actualizando tu sistema para asegurarte de que todos los paquetes estén actualizados. Corre los siguientes comandos:
 
 ```bash
 sudo apt update
 sudo apt upgrade -y
 ```
 
-### Install Required Dependencies
+### Instala las dependencias requeridas
 
-- To build the required codebase for Core Validator, you'll need Git, GCC, Go, and other tools. Install these with the following command:
+- Para compilar la base de código necesaria para un Validador de Core, necesitarás Git, GCC, Go y otras herramientas. Instálalos con el siguiente comando:
 
 ```bash
 sudo apt install -y git gcc make curl lz4 golang unzip
 ```
 
-- Verify the installations: Run the following command to check the version information for both GCC and Go.
+- Verifica las instalaciones: Ejecuta el siguiente comando para comprobar la información de versión tanto de GCC como de Go.
 
 ```bash
 gcc --version
 go version
 ```
 
-- You should see version information for both GCC and Go.
+- Deberías de ver la información sobre la versión tanto de GCC como de Go.
 
 ```bash
 gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
 go version go1.22.2 linux/amd64
 ```
 
-### Clone the Core Respository
+### gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0&#xA;go version go1.22.2 linux/amd64
 
-It is recommend to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your validator node, i.e., running your validator node directly from Core blockchain codebase. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
+Se recomienda utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar directamente tu nodo validador, es decir, ejecutar tu nodo validador directamente desde la base de código de la blockchain de Core. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
 cd core-chain
 ```
 
-#### Install Depedencies
+#### Instala las dependencias
 
-After cloning the repo, next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
+Después de clonar el repositorio, el siguiente paso es instalar todas las dependencias necesarias para compilar el binario de geth (Go Ethereum). Corre el siguiente comando para instalar las dependencias:
 
 ```bash
 make geth
 ```
 
-This will download and install the necessary dependencies and build the geth binary. You should see output similar to this:
+Esto va a descargar e instalar todas las dependencias necesarias y construirá el binario de geth. Deberías de ver una salida similar a esta:
 
 ```bash
 >>> /usr/lib/go-1.22/bin/go build -ldflags "-X github.com/ethereum/go-ethereum/internal/version.gitCommit=afb8bd3ffe652e90a59af26db119bd988a03dd8f -X github.com/ethereum/go-ethereum/internal/version.gitDate=20250120 ..." -o /home/harystyles/core-chain/build/bin/geth ./cmd/geth
@@ -70,11 +70,11 @@ Done building.
 Run "./build/bin/geth" to launch geth.
 ```
 
-### Download and Extract the Blockchain Snapshot
+### Descarga y extrae el snapshot de la blockchain
 
-For optimal performance and faster synchronization, it is _recommended_ to use the snapshot sync method. This approach allows nodes to start from a fully synced state, significantly reducing the time required to become operational. Unlike full sync from the genesis block, which is time-consuming process, snapshot sync enables a more efficient and streamlined setup.
+Para un rendimiento óptimo y una sincronización más rápida, se _recomienda_ utilizar el método de sincronización por snapshot. Este enfoque permite que los nodos comiencen desde un estado completamente sincronizado, lo que reduce significativamente el tiempo necesario para estar operativos. A diferencia de la sincronización completa desde el bloque génesis, que es un proceso que consume mucho tiempo, la sincronización mediante snapshot permite una configuración más eficiente y simplificada.
 
-#### Getting the Latest Snapshots
+#### Obteniendo los snapshots más recientes
 
 You can obtain the latest snapshots from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
 
