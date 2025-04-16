@@ -19,7 +19,7 @@ Para poder apostar, debes tener los siguientes requisitos previos:
 
 A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu Bitcoin en Core.
 
-1. **Minimum Bitcoin Amount \+ Gas Fee:** The minimum BTC required for staking on Core depends on the chosen method. If using the [official website UI](https://stake.coredao.org/staking), you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
+1. \*_Cantidad mínima de Bitcoin + Comisión de Gas:_ La cantidad mínima de BTC requerida para hacer staking en Core depende del método elegido. Si se utiliza la [interfaz web del sitio oficial](https://stake.coredao.org/staking), los usuarios deben hacer staking de al menos 0.01 BTC (excluyendo las comisiones de transacción). No hay un requisito mínimo al hacer staking a través del script. Además, los usuarios deben tener en cuenta las comisiones de gas de Bitcoin requeridas para las transacciones. Si se hace staking por menos de un mes, se recomienda contar con al menos 0.05 BTC para cubrir posibles congestiones en la red, las cuales podrían aumentar las comisiones de gas por encima de las recompensas obtenidas por el staking.
 
 2. **Mínimo de 1 CORE + Tarifa de Gas:** Para apostar, debes tener al menos 1 CORE. Además del monto del staking, los usuarios también deben tener en cuenta las tarifas de gas en tokens CORE para el procesamiento de transacciones.
 
@@ -57,7 +57,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 
 ## Especificando la Cantidad de BTC a Apostar
 
-4. Ingresa la cantidad de Bitcoin que deseas apostar. The minimum amount is 0.01 BTC if user is staking through the website UI. However, there are no minimum amount requirements if staking BTC through staking script.
+4. Ingresa la cantidad de Bitcoin que deseas apostar. La cantidad mínima es de 0.01 BTC si el usuario hace staking a través de la interfaz del sitio web. Sin embargo, no hay requisitos de cantidad mínima si se hace staking de BTC a través del script de staking.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
@@ -87,34 +87,34 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
-### Confirming CORE and BTC Staking Details
+### Confirmando los detalles de staking de CORE y BTC
 
-8. Verify that the staked CORE amount and selected Validator is correct and then press _Confirm_.
-9. Similarly, verify that the staked BTC amount and selected Validator is correct and then press _Confirm_.
+8. Verifica que la cantidad de CORE en staking y el Validador seleccionado sean correctos, y luego presiona _Confirm_.
+9. De igual manera, verifica que la cantidad de BTC en staking y el Validador seleccionado sean correctos, y luego presiona _Confirm_.
 
-### Verify BTC Staking Address
+### Verifica la Dirección de Staking de BTC
 
-10. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process.
+10. Antes de proceder a confirmar tu transacción de staking. Esta característica de verificación permite a los usuarios comprobar de forma independiente su dirección de staking de BTC, ayudando a prevenir firmas a ciegas y mejorando la seguridad del proceso de staking.
 
-11. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+11. Para proceder con la verificación, haz clic en el botón **Verificar la Dirección de Staking de BTC**. Esto te llevará al sitio web externo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
-12. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+12. En la interfaz del sitio web de verificación, asegúrate de que los datos obtenidos sean correctos y luego haz clic en el botón _Submit_.
 
 <p align="center" style={{zoom:"35%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
-13. The verification result will appear in the **Verification Result** section.
+13. El resultado de la verificación aparecerá en la sección **Verification Result**.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-14. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+14. Una vez verificado, regresa a stake.coredao.org y continúa al hacer clic en **Approve Transaction**.
 
 <p align="center">
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
@@ -176,7 +176,7 @@ Dual Staking es una mejora del staking No Custodial de BTC de Core, que permite 
 23. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es importante entender y especificar varios parámetros clave:
 
 - Especificar la cantidad de Bitcoin que deseas delegar
-   - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
+   - La cantidad mínima para hacer staking es de 0.01 Bitcoin, si se hace a través de la interfaz oficial del sitio web.
    - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
    - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha y haz clic en ‘OK’ para proceder.
