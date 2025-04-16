@@ -10,9 +10,7 @@ sidebar_position: 1
 
 Core is a hyper-scalable smart contract platform designed to complement Bitcoin, serving as its first **Proof of Stake (PoS)** layer and the largest Bitcoin DeFi ecosystem. By merging Bitcoin’s unmatched security with the scalability of the innovative Satoshi Plus consensus, Core expands Bitcoin’s capabilities while preserving its core principles of decentralization and security. With approximately **75%** of Bitcoin mining hash power already contributing to Core’s security model and over **8,200** BTC staked through Non-Custodial Bitcoin Staking, Core strengthens Bitcoin's role as both the prime protector and central asset of the future of DeFi. Core's Dual Staking model further empowers Bitcoin holders to earn secure and sustainable yields by staking both BTC and CORE, all while retaining full control and ownership of their assets.
 
-<p align="center">
 ![core-header](../static/img/core-header.png)
-</p>
 
 New to Core? Let's discover **Core in less than 5 minutes**. 
 
