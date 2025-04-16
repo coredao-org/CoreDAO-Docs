@@ -25,8 +25,8 @@ Algunas de las características clave de Core que lo distinguen de sus competido
 - **Capa de ejecución de EVM:** Core adapta la máquina virtual Ethereum (EVM) para la ejecución de contratos inteligentes, haciéndola compatible con EVM, similar a la [implementación de BNB Smart Chain](https://github.com/bnb-chain/bsc) de Geth.
 - **Apuesta de BTC sin custodia:** Core ofrece a los titulares de BTC apostar sus activos en la cadena de bloques Core de forma segura y sin confianza sin tener que renunciar a la custodia de sus activos. Esta característica innovadora integra Bitcoin en las actividades DeFi de Core, mejorando la liquidez y permitiendo a los usuarios de Bitcoin ganar recompensas de apuesta en forma de tokens CORE dentro del ecosistema Core.
 - **stCORE:** Core ofrece Liquid Stake en forma de stCORE, que está diseñado para mejorar la utilidad del token CORE y simplificar el proceso de apuesta. Esta iniciativa permite a los poseedores de tokens maximizar el potencial de sus activos con mayor flexibilidad y eficiencia.
-- **lstBTC _(Coming Soon)_:** a liquid, yield-bearing Bitcoin token issued on the Core blockchain, enabling Bitcoin holders—especially institutional investors—to earn BTC-denominated yield while maintaining full liquidity and security.
-- **coreBTC:** now sunsetted, is the Core-native bridged BTC.
+- **lstBTC _(Próximamente)_\*:** Es un token líquido de Bitcoin con generación de rendimiento, emitido en la blockchain de Core. Permite a los holders de Bitcoin —especialmente inversionistas institucionales— obtener rendimientos denominados en BTC manteniendo liquidez total y seguridad.
+- **coreBTC:** ahora descontinuado, era la versión de BTC puenteada de forma nativa en Core.
 
 ## Problemas abordados por Core blockchain
 
@@ -38,10 +38,10 @@ Core blockchain aborda varios problemas y cuestiones clave en el espacio blockch
 
 - **Roles y participación del ecosistema:** Core está diseñado para tener un ecosistema donde varios participantes desempeñan roles importantes, incluidos validadores, retransmisores, mineros de BTC, titulares de CORE y verificadores. Este ecosistema tiene como objetivo garantizar la seguridad de la red, promover la descentralización y fomentar la participación de la comunidad en la gobernanza y las actividades de la red.
 
-- **Tokenomics y estructura de incentivos:** CORE, el token de utilidad nativo, se utiliza para apostar y pagar tarifas de gas. With a total supply of **2.1 billion** tokens, it is planned to distribute these over **81 years**, aligning with its long-term vision. El proyecto también incluye mecanismos para quemar un porcentaje de las recompensas en bloque y las tarifas del gas para gestionar el suministro de tokens de forma dinámica.
+- **Tokenomics y estructura de incentivos:** CORE, el token de utilidad nativo, se utiliza para apostar y pagar tarifas de gas. Con un suministro total de **2.1 mil millones** de tokens, se planea distribuirlos a lo largo de **81 años**, en alineación con su visión a largo plazo. El proyecto también incluye mecanismos para quemar un porcentaje de las recompensas en bloque y las tarifas del gas para gestionar el suministro de tokens de forma dinámica.
 
-- **Passive Income:** Core furnishes an opportunity for BTC holders to earn passive income in the form of CORE tokens earned as rewards in exchange for staking their BTC onto Core and delegating these to valdiators on the Core network, indirectly contributing to Core blockchain’s consensus mechanism and security.
+- **Ingresos Pasivos:** Core ofrece una oportunidad para que los holders de BTC generen ingresos pasivos en forma de tokens CORE, obtenidos como recompensas a cambio de hacer staking con su BTC en Core y delegarlo a validadores dentro de la red Core, contribuyendo indirectamente al mecanismo de consenso y a la seguridad de la blockchain de Core.
 
-- **Secure Yeild Options:** Through innovative solutions like Non-Custodial BTC Staking and lstBTC, Core enables both institutions and retail users to earn secure yield on their staked assets—without relinquishing custody.
+- **Opciones de Rendimiento Seguro:** A través de soluciones innovadoras como el staking sin custodia de BTC y lstBTC, Core permite tanto a instituciones como a usuarios minoristas obtener rendimientos seguros sobre sus activos en staking—sin renunciar a la custodia.
 
 - **Comparación con otras cadenas de bloques:** Core se posiciona como una mejora con respecto a las cadenas de bloques existentes como Bitcoin, Ethereum, Solana, Polygon y BNB Chain. Al abordar problemas como el bajo rendimiento de las transacciones, los riesgos de centralización y la estabilidad de la red, Core ofrece una alternativa más escalable, descentralizada y segura.
