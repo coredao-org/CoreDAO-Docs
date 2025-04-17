@@ -1,5 +1,5 @@
 ---
-sidebar_label: Register Validator Node
+sidebar_label: Registro de un Nodo Validador
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -9,49 +9,49 @@ sidebar_position: 2
 ---
 
 :::caution
-Before running a Validator Node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
+Antes de correr un nodo validador en Core, recomendamos encarecidamente leer él [whitepaper técnico] (https://whitepaper.coredao.org/).
 :::
 
-## Set Up a Full Node in Validator Mode
+## Configurar un nodo completo en modo validador
 
-Before you can register as a Validator, you need to set up and run a full node in Validator mode. Follow this [guide](./running-validator.md) to setup and run Validator Node. Your full node needs to sync with the Core network, meaning it must download the blockchain data and stay updated with the latest blocks.
+Antes de que puedas registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo Validador. Sigue esta [guia](./running-validator.md) para configurar y correr un nodo validador. Tu nodo completo necesita sincronizarse con la red Core, lo que significa que debe descargar los datos de la cadena de bloques y mantenerse actualizado con los bloques más recientes.
 
-### Generate the Consensus Key
+### Genera la "Llave de consenso"
 
-When initializing a validator node, you need to generate a Consensus Address (Public Address) for the key. This address will be used by your node for consensus operations.
+Al inicializar un nodo validador, necesitas generar una Dirección de Consenso (Dirección Pública) para la llave. Esta dirección será utilizada por tu nodo para las operaciones de consenso.
 
-#### Generating a New Consensus Key
+#### Generando la "Llave de consenso"
 
-To create a new consensus key, use the following command. This command will create a new account and output an address which will be your validator's address (consensus address).
+Para crear una nueva clave de consenso, usa el siguiente comando. Este comando creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (dirección de consenso).
 
 ```bash
 ./build/bin/geth account new --datadir ./node
 ```
 
-##### Important Notes
+##### Notas importantes
 
-- **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-- **Backup Your Key:** Losing access to this key means losing control over your validator node.
+- **Asegura tu archivo de keystore y contraseña:** Guarda de manera segura tu archivo de keystore y la contraseña, ya que los necesitarás más adelante.
+- **Haz una copia de seguridad de tu clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
 
-You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
+Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de manera segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
 
 ```bash
 echo {your-password} > password.txt
 ```
 
-### Start the Validator Node
+### Inicia el nodo validador
 
-Once you have the consensus key, you can start the validator node with the following command:
+Una vez que tengas la clave de consenso, puedes iniciar el nodo validador con el siguiente comando:
 
 ```bash
 ./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
 ```
 
-Let’s break down the flags used in this command:
+Desglosemos las banderas utilizadas en este comando:
 
-- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
+- **`config ./config.toml`:** Especifica el archivo de configuración para el nodo. Asegúrate de tener la configuración correcta en `config.toml` para tu entorno.
 
-- **`datadir ./node`:** Indicates the data directory for the node.
+- **`datadir ./node`:** Indica el directorio de datos para el nodo.
 
 - **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
 
@@ -110,9 +110,9 @@ Puede verificar el estado del validador en el sitio web de la apuesta; los valid
 
 ![validator-register-form](../../../static/img/validator/validator-status.png)
 
-### Validator Status Updates
+### Actualizaciones en el estatus del validador
 
-Validator status is updated daily at 00:00 UTC. You can check the status of your validator on the staking website. There are various possible statuses:
+El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar el estatus de tu validador en el sitio web de staking. Hay varios estatus posibles:
 
 - **`Active/Normal`:** Validator is elected for the current round and qualified for the next election.
 
