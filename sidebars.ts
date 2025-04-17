@@ -214,6 +214,7 @@ const sidebars: SidebarsConfig = {
             "Dev-Guide/smart-contract-guidelines",
             "Dev-Guide/remix",
             "Dev-Guide/hardhat",
+            "Dev-Guide/foundry",
             "Dev-Guide/contract-verify",
             {
               type: "link",
