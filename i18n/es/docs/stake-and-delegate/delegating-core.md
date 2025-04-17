@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-Delegated Proof of Stake (DPoS) is one of the 3 fundamental components of the Satoshi Plus consensus mechanism, playing a pivotal role in enhancing the functionality, security, and efficiency of the blockchain network. En la red Core, DPoS se implementa a través de delegaciones CORE, lo que permite a los titulares de CORE delegar sus tokens en validadores confiables. Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
+La prueba de participación delegada (DPoS) es uno de los 3 componentes fundamentales del mecanismo de consenso Satoshi Plus y desempeña un papel fundamental en la mejora de la funcionalidad, la seguridad y la eficiencia de la red blockchain. En la red Core, DPoS se implementa a través de delegaciones CORE, lo que permite a los titulares de CORE delegar sus tokens en validadores confiables. Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
 Este proceso no sólo ayuda a proteger la red sino que también permite a los participantes compartir las recompensas del sistema.\
 En esta guía, proporcionamos un tutorial paso a paso sobre cómo delegar sus tokens CORE a validadores dentro de la red Core, permitiéndole contribuir activamente al ecosistema mientras cosecha los beneficios de su inversión.
 
@@ -63,7 +63,7 @@ En el ejemplo, estamos seleccionando: **DAO Validator 6**. Para elegir un valida
 Una vez que haya seleccionado un validador, accederá a su página detallada, como se muestra a continuación. Esto es lo que estás viendo:
 
 - **Moneda delegada (CORE):** La cantidad total de tokens CORE ya delegados al validador seleccionado (por ejemplo, 6,678,941 CORE).
-- **Tasa de recompensa CORE:** El porcentaje anual de recompensas por delegar al validador seleccionado. For example, if the CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
+- **Tasa de recompensa CORE:** El porcentaje anual de recompensas por delegar al validador seleccionado. Por ejemplo, si la tasa de recompensa CORE es del 9,41%, significa que el delegador obtendrá este porcentaje en recompensas sobre su CORE en staking.
 - **Comisión:** La comisión del validador, que se deduce de tus recompensas, por ejemplo, el 5 %.
 - **Delegadores:** La cantidad de usuarios que han delegado al validador seleccionado (por ejemplo, 16,234 delegados CORE).
 
@@ -77,7 +77,7 @@ Para delegar sus tokens CORE, siga estos pasos:
 
 #### Paso 2.1 Especificar cantidad de CORE a delegar
 
-- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en **Confirmar delegación**. A minimum of 1 CORE is required for staking CORE. Whereas, there are requirements for staaked durations.
+- Después de seleccionar CORE, se le pedirá que ingrese la cantidad de CORE que desea delegar. Revise la comisión del validador y luego haga clic en **Confirmar delegación**. Se requiere un mínimo de 1 CORE para el staking de CORE. Mientras que existen requisitos de duración para el staking.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -97,25 +97,25 @@ Para delegar sus tokens CORE, siga estos pasos:
 
 #### Paso 2.2 Verificación del CORE delegado
 
-Now that we’ve successfully delegated CORE let us verify that our CORE is being staked by hovering over our connected wallet in the top right corner and clicking on the **My Staking** dropdown. We can see under the ‘Core Delegated’ column that we now have 1 CORE delegated or 1 CORE staked.
+Ahora que hemos delegado CORE exitosamente, verifiquemos que nuestro CORE está en staking pasando el cursor sobre nuestra billetera conectada en la esquina superior derecha y haciendo clic en el menú desplegable **My Staking**. Podemos ver en la columna ‘Core Delegated’ que ahora tenemos 1 CORE delegado o 1 CORE en staking.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)</p>
 
 :::note
-Note: For CORE delegations, transferring to a different staking validator will **_not_** interrupt staking rewards.
+Nota: En las delegaciones de CORE, transferir a un validador de staking diferente **_no_** interrumpirá las recompensas de staking.
 :::
 
 ### Paso 3: Dejar de delegar CORE
 
-If you wish to Undelegate your CORE, click the 3 dots at the end of your chosen validator, and click **Undelegate CORE**.
+Si deseas retirar tu CORE delegado, haz clic en los 3 puntos al final de la fila de tu validador seleccionado y selecciona **Undelegate CORE**.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)</p>
 
 #### Paso 3.1 Confirmar la transacción y verificar el CORE no delegado
 
-- After clicking **Undelegate**, you will be prompted to confirm the transaction in your Metamask. Haga clic en el botón **Confirmar**:
+- Tras hacer clic en **Undelegate**, se te solicitará confirmar la transacción en tu Metamask. Haga clic en el botón **Confirmar**:
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)</p>
@@ -140,9 +140,9 @@ If you wish to Undelegate your CORE, click the 3 dots at the end of your chosen 
 
 ## Reclamando recompensas
 
-You can view reward information about your active delegations by selecting **My Staking** on the top right corner in the header of the staking website. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+Puedes ver información sobre las recompensas de tus delegaciones activas seleccionando **My Staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen después de cada ronda a las 00:00 am UTC todos los días. Para ser elegible y recibir recompensas, es necesario completar una ronda completa de staking (00:00:00 - 23:59:29 UTC).
 
-Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Historical claim transactions are listed on the website's **Claim** tab, as shown below.
+Para reclamar sus recompensas, simplemente seleccione el botón Reclamar en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Las transacciones históricas de reclamo se enumeran en la pestaña **Claim** del sitio web, como se muestra a continuación.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
