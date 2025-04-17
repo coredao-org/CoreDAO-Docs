@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delegating Hash Power
+sidebar_label: Delegando poder de hasheo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating Hash Power
+# Delegando poder de hasheo
 
 ---
 
