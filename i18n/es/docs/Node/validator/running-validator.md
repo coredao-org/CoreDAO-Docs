@@ -76,35 +76,35 @@ Para un rendimiento óptimo y una sincronización más rápida, se _recomienda_ 
 
 #### Obteniendo los snapshots más recientes
 
-You can obtain the latest snapshots from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+Puedes obtener los últimos Snapshots desde el [Repositorio oficial de Snapshots de Core](https://github.com/coredao-org/core-snapshots).
 
-#### Create Data Directory
+#### Crear un directorio de datos
 
-Now, create a directory where your node data will reside if it is not created by default.
+Ahora, crea un directorio donde residirán los datos de tu nodo, si no se crea de forma predeterminada.
 
 ```bash
 # Create the node directory
 mkdir -p ./node
 ```
 
-#### Decompress and Extract the Snapshot
+#### Descomprime y extrae el Snapshot
 
-Use `lz4` command to decompress and `tar` command to extract the snapshot into the `./node` directory. This will populate the directory with the necessary blockchain data (chaindata).
+Usa el comando `lz4` para descomprimir y el comando `tar` para extraer el snapshot en el directorio `./node`. Esto llenará el directorio con los datos necesarios de la cadena de bloques (chaindata).
 
-### Initializing the Genesis Block
+### Inicializando el bloque génesis
 
-The next step in setting up your node is to initialize the genesis block for the Core Network. The `genesis.json` file defines the first block of the blockchain, representing the initial state of the network. Proper initialization ensures that your node starts with the correct base state, aligning with the Core Network’s protocol.
+El siguiente paso para configurar tu nodo es inicializar el bloque génesis para la red Core. El archivo `genesis.json` define el primer bloque de la cadena de bloques, representando el estado inicial de la red. Una inicialización adecuada garantiza que tu nodo comience con el estado base correcto, alineándose con el protocolo de la Red Core.
 
-#### Obtaining the Genesis and Configuration Files
+#### Obteniendo la génesis y los archivos de configuración
 
-You can find the required `genesis.json` and `config.toml` in the node binaries available on the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest). Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
+Puedes encontrar los archivos necesarios `genesis.json` y `config.toml` en los binarios de nodo disponibles en la [página oficial de lanzamientos de Core](https://github.com/coredao-org/core-chain/releases/latest). Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
 
-#### Initialize Genesis Block
+#### Inicializa el bloque génesis
 
-To initialize your node with the genesis block, run the following command. This command sets the initial state of the blockchain in your node directory.
+Para inicializar tu nodo con el bloque génesis, corre el siguiente comando. Este comando establece el estado inicial de la blockchain en el directorio de tu nodo.
 
 ```bash
-# Initialize the node with the genesis block
+# Inicializar el nodo con el bloque génesis 
 geth --datadir node init genesis.json
 ```
 
