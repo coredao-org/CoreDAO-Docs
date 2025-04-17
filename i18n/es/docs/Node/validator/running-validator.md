@@ -83,7 +83,7 @@ Puedes obtener los últimos Snapshots desde el [Repositorio oficial de Snapshots
 Ahora, crea un directorio donde residirán los datos de tu nodo, si no se crea de forma predeterminada.
 
 ```bash
-# Create the node directory
+# Crea el directorio del nodo
 mkdir -p ./node
 ```
 
@@ -109,7 +109,7 @@ geth --datadir node init genesis.json
 ```
 
 :::info
-Ensure that the path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory (core-chain) of your node.
+Asegúrate de que la ruta al archivo `genesis.json` sea correcta. En este caso, `genesis.json` significa que el archivo `genesis.json` está ubicado en el mismo directorio, el cual debe estar en el directorio raíz (core-chain) de tu nodo.
 :::
 
 Deberías ver el siguiente resultado:
@@ -126,37 +126,37 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-### Start the Validator Node
+### Inicia el nodo validador
 
-Once the set up is completed, it’s time to start the validator node!
+Una vez que la configuración esté completada, ¡es hora de iniciar el nodo validador!
 
-#### Option 1: Start the Full Node with Options
+#### Opción 1: Inicia el nodo completo sin opciones
 
 ```bash
 ./build/bin/geth --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
 ```
 
-This command does the following:
+Este comando hace lo siguiente:
 
-- **`datadir ./node`:** Tells the node where to store its blockchain data.
+- **`datadir ./node`:** Le dice al nodo en dónde guardar los datos de la blockchain.
 
-- **`cache 8000`:** Allocates 8 GB of RAM to help the node run more efficiently.
+- **`cache 8000`:** Reserva 8 GB de RAM para ayudar al nodo a correr de forma más eficiente.
 
-- **`rpc.allow-unprotected-txs`:** Allows the node to send unprotected transactions (needed for validator actions).
+- **`rpc.allow-unprotected-txs`:** Le permite al nodo enviar transacciones no protegidas (necesarias para acciones de validador).
 
-- **`networkid 1116`:** Specifies which network the node should join. 1114 for Core Testnet2, 1115 for Core Tesnet and 1116 for Core Mainnet.
+- **`networkid 1116`:** Especifica la red a la que el nodo se debe unir. 1114 para Core Testnet2, 1115 para Core Tesnet y 1116 para Core Mainnet.
 
-However, if you're having trouble finding peers (meaning the node can’t connect to other nodes), you can use the configuration file to help it start with bootstrap nodes. This file has some predefined settings to make the process easier.
+Sin embargo, si tienes problemas para encontrar pares (es decir, si el nodo no puede conectarse a otros nodos), puedes usar el archivo de configuración para ayudar a que inicie con nodos bootstrap. Este archivo tiene algunas configuraciones predeterminadas para hacer el proyecto más sencillo.
 
-#### Option 2: Start the Node with the Configuration File
+#### Opción 2: Inicia el nodo con el archivo de configuración
 
 ```bash
 ./build/bin/geth --config ./config.toml --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
 ```
 
-This command uses a configuration file (`config.toml`) that helps the node connect to peers more easily.
+Este comando usa un archivo de configuración (`config.toml`) que ayuda al nodo a conectarse a pares más fácilmente.
 
-#### Option 3: Start the Node with the Consensus Key
+#### Opción 3: Inicia el nodo con la "Llave de Consenso"
 
 Si planea ejecutar un nodo de validación, deberá configurar la clave de consenso antes de ejecutar el nodo. Asegúrese de mantener guardado su almacén de claves.
 
@@ -171,50 +171,50 @@ geth --config ./config.toml --datadir ./node -unlock {su-dirección-validador} -
 :::info
 A bootstrap node is essentially a "helper" node used to kickstart your connection to the network, especially when your node is struggling to find peers. When you first start your node, it needs to connect with other nodes to sync up and start participating in the blockchain. This process is called peer discovery.
 
-Without bootstrap nodes, your node might not be able to find any peers, especially if it's new and doesn't have any connections yet. Bootstrap nodes provide a list of known peers that your node can connect to initially. Once it connects to these peers, it can then start discovering other peers on its own.
+Sin nodos bootstrap, tu nodo podría no ser capaz de encontrar pares, especialmente si es nuevo y aún no tiene conexiones. Los nodos bootstrap proporcionan una lista de pares conocidos a los que tu nodo puede conectarse inicialmente. Una vez que se conecta a estos pares, el nodo puede comenzar a descubrir otros pares por sí mismo.
 :::
 
-## Monitor Logs
+## Registros de monitoreo
 
-Once your Validator Node is up and running, it’s important to monitor the logs to ensure everything is operating smoothly.
+Una vez que tu nodo validador esté en funcionamiento, es importante monitorear los registros para asegurarte de que todo esté funcionando sin problemas.
 
-The logs are typically stored in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
+Los registros generalmente se almacenan en `./node/logs/core.log`, pero se pueden cambiar a otra ubicación si se desea. Puedes ver y seguir los registros en tiempo real utilizando el siguiente comando:
 
 ```bash
-# Tail the logs in real-time
-# This will show you the most recent log entries and continuously update the log display.
+# Muestra los registros en tiempo real
+# Esto te mostrará las entradas de registro más recientes y actualizará continuamente la visualización de los registros.
 
 tail -f ./node/logs/core.log
 ```
 
-These logs typically show that the node is importing new chain segments on the blockchain indicating that it’s correctly receiving and processing blocks.
+Estos registros típicamente muestran que el nodo está importando nuevos segmentos de cadena en la blockchain, lo que indica que está recibiendo y procesando bloques correctamente.
 
-- **Imported new chain segment:** This means the node is successfully receiving new blocks from the network and adding them to the local blockchain.
+- **Segmento de cadena importado nuevo:** Esto significa que el nodo está recibiendo con éxito nuevos bloques de la red y agregándolos a la blockchain local.
 
-- **number:** The block number (e.g., `1,596,730` is the block number for that entry).
+- **número:** El número de bloque (ej: `1,596,730` es el número de bloque para esa entrada).
 
-- **hash:** The unique identifier (hash) for the block, like a fingerprint of the block data (e.g., `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
+- **hash:** El identificador único (hash) para el bloque, como una huella digital de los datos del bloque (ej: `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
 
-- **miner:** The address of the miner who mined that block.
+- **miner:** La dirección del minero que minó ese bloque.
 
-- **blocks:** The number of blocks imported (usually `1` in these logs).
+- **bloques:** El número de bloques importados (generalmente es `1` en estos registros).
 
-- **txs:** The number of transactions in the block (e.g., `1` tx or `2` txs).
+- **txs:** El número de transacciones en el bloque (ej: `1` tx o `2` txs).
 
-- **mgas:** The gas used in the transactions within the block. Gas is the computational work needed to execute transactions (e.g., `0.021` means 0.021 million gas).
+- **mgas:** El gas usado en la transacción dentro del bloque. El gas es el trabajo computacional necesario para ejecutar transacciones (ej; `0.021` significa 0.021 millones de gas).
 
-- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
+- **elapsed:** El tiempo que tardó en importar el bloque, en milisegundos (ej: `3.003ms`).
 
-- **mgasps:** The speed at which gas is being processed (in million gas per second).
+- **mgasps:** La velocidad a la cual el gas está siendo procesado (en millones de gas por segundo).
 
-- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
+- **triedirty:** La cantidad de memoria sucia utilizada (en este caso, alrededor de `869.67 KiB`), que indica cuánta memoria se está utilizando para almacenar temporalmente los datos del bloque.
 
-**Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are essential to synchronize the blockchain with the network.
+**Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Las conexiones peer-to-peer son esenciales para sincronizar la blockchain con la red.
 
-- **peercount:** The current number of peers the node is connected to (e.g., `2`).
+- **peercount:** El número actual de nodos a los que está conectado el nodo (ej: `2`).
 
-- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
+- **tried:** El número de nodos con los que el nodo ha intentado conectarse (ej: `12`).
 
-- **static:** The number of fixed/static peers the node is configured to connect to (e.g., `2`).
+- **static:** El número de nodos fijos/estáticos a los que el nodo está configurado para conectarse (ej: `2`).
 
-To participate in consensus and block creation, you need to set up a validator node. Validators are responsible for producing new blocks on the Core blockchain by validating transactions and adding them to the blockchain.
+Para participar en el consenso y la creación de bloques, necesitas configurar un nodo validador. Los validadores son responsables de producir nuevos bloques en la blockchain de Core validando las transacciones y agregándolas a la cadena de bloques.
