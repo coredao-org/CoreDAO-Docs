@@ -15,21 +15,21 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 - **Nodo completo validador**: actúa como validador en Core, validando bloques y transacciones.
 - **Nodo completo RPC**: Proporciona servicios RPC y responde a solicitudes HTTP.
 
-Following are the detailed steps to on running **Normal Full Nodes** on the Core network.
+A continuación se detallan los pasos para ejecutar **Nodos Completos Normales** en la red Core.
 
 ## Requisitos del sistema
 
-There are several system requirements for setting up a Full Node on Core.
+Existen varios requisitos de sistema para configurar un nodo completo en Core.
 
 ### Software
 
-- **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
+- **Sistema Operativo:** Actualmente, un Nodo Validador de Core es compatible _únicamente_ con los sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad
+- **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y otros nodos
 
 ### Hardware
 
-A Full Node on Core perform several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and answering network requests, depending on their configuration. Unlike validators, full nodes do not produce blocks but help propagate transactions and blocks across the network. They play a crucial role in maintaining data integrity and supporting a trustless environment. For running Full Nodes on Core, following are the recommended minimum hardware specifications:
+Un Nodo Completo en Core realiza varias tareas que demandan recursos, como almacenar datos de la blockchain, verificar bloques o transacciones, comunicarse con nodos pares y responder a solicitudes de la red, según su configuración. A diferencia de los validadores, los nodos completos no producen bloques, pero ayudan a propagar transacciones y bloques a través de la red. Cumplen un papel crucial en el mantenimiento de la integridad de los datos y el soporte de un entorno trustless (sin necesidad de confianza). Cumplen un papel crucial en el mantenimiento de la integridad de los datos y el soporte de un entorno trustless (sin necesidad de confianza):
 
 <Tabs
 defaultValue="testnet2"
@@ -38,41 +38,41 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Full Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Para Nodos Completos en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
+    | Requisitos | Detalles                                                                                                    |
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended.                                                                    |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Almacenamiento **        | 1 TB de espacio libre en disco, unidad de estado sólido (SSD), gp3, 8k IOPS, 250MB/S de rendimiento, latencia de lectura <1ms. |
+    | **CPU**            | Se recomienda un mínimo de 4 núcleos de CPU.                                                        |
+    | **RAM**            | 8 Gigabytes                                                                                        |
+    | **Internet** | Una conexión a Internet de banda ancha con velocidades de carga y descarga de 10 megabytes por segundo.   |
 
   </TabItem>
   <TabItem value="testnet">
-    For Full Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    Para Nodos Completos en **Core Blockchain Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
+    | Requisito | Detalles                                                                                                     |
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space                                                                                 |
-    | **CPU**            | 4 CPU cores                                                                                             |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 megabytes per second.                  |
+    | **Almacenamiento** | 1 TB de espacio libre en disco                                                  |
+    | **CPU**            | CPU de 4 núcleos                                                                                    |
+    | **RAM**            | 8 Gigabytes                                                                                         |
+    | **Internet**       | Una conexión a internet de banda ancha con velocidades de descarga y carga de 5 Mbps                |
 
   </TabItem>
   <TabItem value="mainnet">
-    For Full Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    Para Nodos Completos en **Core Blockchain Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
+    | Requisitos     | Detalles                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space                                                                                 |
-    | **CPU**            | 4 CPU cores                                                                                             |
+    | **Almacenamiento** | 1 TB de espacio libre en disco                                                                          |
+    | **CPU**            | CPU de 4 núcleos                                                                                        |
     | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                   |
+    | **Internet Speed** | Una conexión a internet de banda ancha con velocidades de descarga y carga de 5 Mbps                    |
 
   </TabItem>
 </Tabs>
 
-## Build and Run Full Node on Core
+## Construya y ejecute un nodo completo en Core
 
 <Tabs
 defaultValue="testnet2"
@@ -82,7 +82,7 @@ values={[
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your full node, running your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo, ejecutando su nodo completo directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
 2. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the relevant testnet configuration files. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Note that the recommended method for syncing testnet node is to sync from genesis block_.
 
