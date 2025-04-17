@@ -29,7 +29,7 @@ Web verification is the most commonly used smart contract verification strategy.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
 
 <p align="center">
-![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
+  ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 </p>
 
 4\. Fill in the required verification information on the page, specifically:

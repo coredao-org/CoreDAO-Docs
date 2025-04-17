@@ -97,6 +97,20 @@ const config: Config = {
               groupPathsBy: "tag",
             },
           } satisfies OpenApiPlugin.Options,
+          coreapimainnet: {
+            specPath: "docs/api/mainnet.yaml",
+            outputDir: "docs/api/mainnet",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          } satisfies OpenApiPlugin.Options,
+          coreapitestnet: {
+            specPath: "docs/api/testnet.yaml",
+            outputDir: "docs/api/testnet",
+            sidebarOptions: {
+              groupPathsBy: "tag",
+            },
+          } satisfies OpenApiPlugin.Options,
         },
       },
     ],
