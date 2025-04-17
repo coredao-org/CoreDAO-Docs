@@ -53,58 +53,58 @@ Desglosemos las banderas utilizadas en este comando:
 
 - **`datadir ./node`:** Indica el directorio de datos para el nodo.
 
-- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
+- **`unlock {your-validator-address}`:** Desbloquea la cuenta de validador utilizando la dirección generada en el paso anterior.
 
-- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
+- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Típicamente, esta sería la dirección de tu validador.
 
-- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
+- **`password password.txt`:** La contraseña para desbloquear la cuenta de tu validador (asegúrate de mantener este archivo seguro).
 
-- **`mine`:** Starts the mining process (block validation).
+- **`mine`:** Comienza el proceso de minería (validación de bloques).
 
-- **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
+- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (úsalo con precaución).
 
-- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+- **`cache 8000`:** Asigna una gran caché (8 GB en este caso) para mejorar el rendimiento.
 
-## Register Your Validator
+## Registra tu validador
 
-Once your node is running and synced, you can proceed with the registration process.
+Una vez que tu nodo esté en funcionamiento y sincronizado, puedes proceder con el proceso de registro.
 
-1. **Navigate to Staking Website:** The easiest way to register a new validator is using Core's official staking websites:
+1. **Navega al sitio web de Staking:** La forma más fácil de registrar un nuevo validador es utilizando los sitios web oficiales de staking de Core:
 
     - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
     - [Core Testnet Staking website](https://stake.test.btcs.network/become-validator)
     - [Core Testnet2 Staking website](https://stake.test2.btcs.network/become-validator)
 
-2. **Connect Your Wallet:** On the staking website, click **Connect Wallet** in the top right corner and connect your wallet (such as MetaMask, Ledger, etc.) that holds the necessary CORE tokens.
+2. **Conecta tu billetera:** En el sitio web de staking, haz clic en **Connect Wallet** en la esquina superior derecha y conecta tu billetera (como MetaMask, Ledger, etc) que contiene los tokens necesarios de CORE.
 
-3. **Fill Out the Validator Registration Form**
+3. **Completa el formulario de registro del validador**
 
-Once your wallet is connected, the **Register** button will appear. Clicking this button will open a form where you’ll need to provide several pieces of information:
+Una vez que tu billetera esté conectada, aparecerá el botón **Register**. Al hacer clic en este botón, se abrirá un formulario donde deberás proporcionar varios datos:
 
 ![validator-register-form](../../../static/img/validator/validator-regitration.png)
 
 Proporcione información para cada uno de los campos del formulario:
 
-- **Consensus Address**: the validator address you set when you initialized your validator node.
-- **Fee Address**: the address used to collect commission fees.
+- **Consensus Address**: la dirección del validador que configuraste cuando inicializaste tu nodo validador.
+- **Fee Address**: la dirección usada para recolectar las tarifas por comisión.
 - **Comisión**: los ingresos se dividen entre el validador y sus delegados, y la comisión determina qué porcentaje de los ingresos del delegador toma el validador como compensación.
-- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. The minimum deposit for testnet and mainnet is **10,000 CORE**.
+- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. El depósito mínimo para testnet y mainnet es **10,000 CORE**.
 
-5. **Submit Registration:** Once you’ve filled out all the required information, click **Register** to submit your validator for registration.
+5. **Enviar Registro:** Una vez que hayas completado toda la información requerida, haz clic en **Register** para enviar tu validador para su registro.
 
 ## Confirmar registro
 
-After submitting your registration form, you can check whether the registration was successful.
+Después de enviar tu formulario de registro, puedes verificar si el registro fue exitoso.
 
-### Checking the Logs
+### Revisando los registros
 
-Open your node’s log file and search for the error message "unauthorized validator." If this message appears, it means that your node is registered but has not yet been elected to the validator set.
+Abre el archivo de registro de tu nodo y busca el mensaje de error "unauthorized validator". Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-2.avif)
 
 ## Elección del validador
 
-Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entirety of the round. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
+Cada día, los **27** validadores con los puntajes híbridos más altos son elegidos para formar parte del conjunto de validadores activos, siendo responsables de producir bloques y validar transacciones en la red Core durante todo el ciclo. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
 
 Puede verificar el estado del validador en el sitio web de la apuesta; los validadores elegidos activos se marcarán como "Activo/Normal". El conjunto de validadores se actualiza a las **00:00 am UTC** todos los días.
 
@@ -114,36 +114,36 @@ Puede verificar el estado del validador en el sitio web de la apuesta; los valid
 
 El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar el estatus de tu validador en el sitio web de staking. Hay varios estatus posibles:
 
-- **`Active/Normal`:** Validator is elected for the current round and qualified for the next election.
+- **`Active/Normal`:** El validador es elegido para el ciclo actual y calificado para la próxima elección.
 
-- **`Active/Refuse`:** Validator is elected for the current round but refused to accept delegations. No calificado para las próximas elecciones.
+- **`Active/Refuse`:** El validador ha sido elegido para el ciclo actual, pero ha rechazado aceptar delegaciones. No calificado para las próximas elecciones.
 
-- **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony. No calificado para las próximas elecciones.
+- **`Active/Jailed`:** El validador fue elegido para el ciclo actual, pero fue encarcelado debido a un delito. No calificado para las próximas elecciones.
 
-- **`Inactive/Queued`:** Validator is registered but not elected. Calificado para las próximas elecciones.
+- **`Inactive/Queued`:** El validador está registrado pero no ha sido elegido. Calificado para las próximas elecciones.
 
-- **`Inactive/Refuse`:** Validator is registered but has refused delegation. No calificado para las próximas elecciones.
+- **`Inactive/Refuse`:** El validador está registrado pero ha rechazado delegaciones. No calificado para las próximas elecciones.
 
-- **`Inactive/Jailed`:** Validator is registered but is jailed and not qualified for the next election.
+- **`Inactive/Jailed`:** El validador está registrado pero está encarcelado y no está calificado para la próxima elección.
 
-- **`Inactive/Locked`:** Validator is registered but has not met the minimum deposit requirements. No calificado para las próximas elecciones.
+- **`Inactive/Locked`:** El validador está registrado pero no ha cumplido con los requisitos de depósito mínimo. No calificado para las próximas elecciones.
 
-- **`Inactive/Invalid`:** Validator is unregistered.
+- **`Inactive/Invalid`:** El validador no está registrado.
 
-## Monitor Your Validator's Performance
+## Monitorea el desempeño de tu validador
 
-You can monitor the status of your validator and its block production record on [Core Scan](https://scan.coredao.org/). This tool allows you to track whether your node is successfully producing blocks and performing well.
+Puedes monitorear el estado de tu validador y su historial de producción de bloques en [Core Scan](https://scan.coredao.org/). Esta herramienta te permite rastrear si tu nodo está produciendo bloques exitosamente y funcionando correctamente.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-4.webp)
 
-## Maintaining Your Validator Node
+## Manteniendo tu nodo validador
 
-To remain an active and successful validator, you’ll need to keep your node online, perform maintenance, and respond to any issues that arise.
+Para seguir siendo un validador activo y exitoso, necesitarás mantener tu nodo en línea, realizar mantenimiento de manera regular y responder rápidamente a cualquier problema que surja.
 
-#### Stay Synced
+#### Mantente sincronizado
 
-Ensure that your node is always in sync with the Core network to prevent issues with block production and validation.
+Asegúrate de que tu nodo esté siempre sincronizado con la red de Core para evitar problemas en la producción y validación de bloques.
 
-#### Handle Rewards
+#### Manejar las recompensas
 
-At the end of each round, accumulated rewards are distributed to validators. You should track these rewards and monitor any potential issues with your validator's performance.
+Al final de cada ronda, las recompensas acumuladas se distribuyen a los validadores. Debes realizar un seguimiento de estas recompensas y monitorear posibles problemas en el rendimiento de tu validador.
