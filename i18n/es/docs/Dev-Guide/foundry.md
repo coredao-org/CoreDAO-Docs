@@ -1,11 +1,11 @@
 ---
-sidebar_label: Using Foundry
+sidebar_label: Usando Foundry
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core using the Foundry
+description: Despliega contratos en Core usando Foundry
 ---
 
-# Using Foundry
+# Usando Foundry
 
 ---
 
@@ -15,7 +15,7 @@ Foundry is a fast, efficient, and extensible toolkit for EVM development written
 
 Before you start using Foundry, you need to install it on your system. The process is relatively simple and can be done in a few steps. Foundry uses `forge` as the main tool to interact with Solidity contracts.
 
-### Step 1: Install Foundry
+### Paso 1: Instala Foundry
 
 You can install Foundry by running the following command on a Unix-based system (macOS, Linux):
 
@@ -49,7 +49,7 @@ This ensures that you have the latest version of Foundry installed.
 
 ## 2. Setting Up Your Project
 
-### Step 1: Create a New Foundry Project
+### Paso 1: Crea un nuevo proyecto de Foundry
 
 To create a new project with Foundry, you can use the `forge init` command:
 
@@ -78,7 +78,7 @@ my-blockchain-project/
 └── README.md                  # Project documentation
 ```
 
-### Step 2: Understanding the Folder Structure
+### Paso 2: Entendiendo la estructura de carpetas
 
 - **src**: Contains your Solidity contracts.
 - **script**: Contains your deployment script.
@@ -102,11 +102,11 @@ evm_version = "shanghai"
 solc_version = "0.8.24"
 ```
 
-## 3. Writing a Solidity Contract
+## 3. Redacción de contratos inteligentes
 
 Now that your project is set up, let's write a simple Solidity contract.
 
-### Step 1: Create a Simple Contract
+### Paso 1: Crea un contrato simple
 
 Navigate to the `src` directory and create a new Solidity contract. Let’s use a simple counter contract to start.
 
@@ -137,7 +137,7 @@ contract Counter {
 }
 ```
 
-In this contract:
+En este contrato:
 
 - The `count` state variable keeps track of the count value.
 - The `increment` and `decrement` functions increase or decrease the counter.
@@ -182,12 +182,12 @@ contract CounterTest is Test {
 }
 ```
 
-### Explanation:
+### Explicación:
 
-- `setUp()`: This function runs before every test and is used to initialize your contract.
+- `setUp()`: Esta función corre antes de cada uno de los tests y se usa para inicializar tu contrato.
 - Test functions: `testInitialCount`, `testIncrement`, and `testDecrement` are individual test cases to check the contract's functionality.
 
-### Step 2: Run the Tests
+### Paso 2: Corre los Tests
 
 To run the tests, execute the following command:
 
@@ -214,11 +214,11 @@ Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 5.38ms (3.86ms CPU 
 Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
 
-## 5. Deploying the Contract
+## 5. Desplegando el Contrato
 
 Once you’ve written and tested your Solidity contract, you can deploy it to Core Testnet/Mainnet.
 
-### Step 1: Configuring Deployment
+### Paso 1: Configurando el despliegue
 
 To deploy your contract, you’ll need to set up a deployment script. create a file `Counter.s.sol` under script folder and paste the following code.
 
@@ -263,7 +263,7 @@ Now that you've created the above `.env` file, run the following command to load
 source .env
 ```
 
-### Step 2: Deploy the Contract
+### Paso 2. Despliega el contrato
 
 To deploy the contract to Core testnet, use the `forge create`
 
@@ -271,7 +271,7 @@ To deploy the contract to Core testnet, use the `forge create`
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
-or use `forge script` command
+o usa el comando `forge script`
 
 ```bash
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
@@ -287,7 +287,7 @@ Deployed to: 0xc1C2466cBBa0f8E1FDb7f5E68e232190c745A6Ae
 Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad914784b2
 ```
 
-## 6. Verifying the Contract
+## 6. Verificando el Contrato
 
 Foundry has a built-in feature to automatically verify contracts on Core. You can verify your contract using the `forge verify-contract` command:
 
@@ -297,6 +297,6 @@ forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api
 
 Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
 
-## Further Reading
+## Lectura adicional
 
 For detailed instructions on using Foundry, please visit[ Foundry's official website](https://book.getfoundry.sh/).
