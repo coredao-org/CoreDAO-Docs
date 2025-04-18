@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@algolia/client-search": "^5.23.4",
+    "@cookbookdev/docsbot": "^4.25.8",
     "@docusaurus/core": "^3.7.0",
     "@docusaurus/plugin-content-docs": "^3.7.0",
     "@docusaurus/plugin-google-gtag": "^3.7.0",
