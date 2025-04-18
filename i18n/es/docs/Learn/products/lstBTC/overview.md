@@ -89,19 +89,19 @@ A diferencia del **préstamo de BTC** o el **BTC envuelto**, lstBTC es la **prim
 - Sin Custodia
 - Rendimiento Nativo de BTC (Sin Riesgo de Contraparte)
 
-| Característica             | lstBTC (Core) ✅ | Préstamo de BTC ❌                             | BTC Envuelto ❌                   |
-| -------------------------- | ---------------------------------- | --------------------------------------------- | -------------------------------- |
-| **Dividendo en BTC**       | **3-6%+ APR**                      | Préstamo riesgoso                             | Riesgo al puentear               |
-| **Liquidez**               | **Completamente líquido**          | Bloqueado en préstamos                        | Un poco líquido                  |
-| **Riesgo de Custodia**     | **Mismo setup de custodia**        | Requiere contraparte                          | Riesgo de acuñación centralizada |
-| **Utilidad del colateral** | **Aceptado en exchanges**          | Uso limitado                                  | Uso moderado                     |
-| **Seguridad**              | **Non-custodial staking**          | Default & insolvency risk | Smart contract risks             |
+| Característica             | lstBTC (Core) ✅ | Préstamo de BTC ❌        | BTC Envuelto ❌                    |
+| -------------------------- | ---------------------------------- | ------------------------ | --------------------------------- |
+| **Dividendo en BTC**       | **3-6%+ APR**                      | Préstamo riesgoso        | Riesgo al puentear                |
+| **Liquidez**               | **Completamente líquido**          | Bloqueado en préstamos   | Un poco líquido                   |
+| **Riesgo de Custodia**     | **Mismo setup de custodia**        | Requiere contraparte     | Riesgo de acuñación centralizada  |
+| **Utilidad del colateral** | **Aceptado en exchanges**          | Uso limitado             | Uso moderado                      |
+| **Seguridad**              | **Staking sin custodia**           | Riesgo de incumplimiento | Riesgo en el contrato inteligente |
 
-## Launch Partners & Institutional Credibility
+## Socios de lanzamiento y credibilidad institucional
 
-lstBTC is backed by **industry-leading custodians, risk managers, and exchanges**:\
-🔹 **Custodians (Security & Compliance)** – **BitGo, Copper, Hex Trust** ensure seamless lstBTC minting and redemption.\
-🔹 **Investment Manager (Risk & Yield Optimization)** – **Maple Finance** safeguards principal and manages yields.\
-🔹 **Exchanges (Liquidity & Adoption)** – **Deribit, OKX, Bybit** integrate lstBTC for trading and collateral use.
+lstBTC está respaldado por **custodios, gestores de riesgos e intercambios líderes en la industria**:\
+🔹 **Custodios (Seguridad y Cumplimiento)** – **BitGo, Copper, Hex Trust** aseguran un proceso fluido de acuñación y redención de lstBTC.\
+🔹 **Gestor de Inversiones (Riesgo y Optimización de Rendimiento)** – **Maple Finance** protege el capital y gestiona los rendimientos.\
+🔹 **Exchanges (Liquidez y Adopción)** – **Deribit, OKX, Bybit** integran lstBTC para su uso en trading y como colateral.
 
-**lstBTC unlocks a new era of Bitcoin utility—turning passive BTC into a productive institutional asset.**
+**lstBTC desbloquea una nueva era de utilidad para Bitcoin—convirtiendo BTC pasivo en un activo institucional productivo.**
