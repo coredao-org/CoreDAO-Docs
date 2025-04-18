@@ -399,7 +399,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               collapsed: true,
-              label: '📑 Mainnet API Endpoints',
+              label: '📑 Mainnet Endpoints',
               link: {
                 type: 'generated-index',
                 title: 'Core Scan API Documentation',
@@ -413,7 +413,7 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               collapsed: true,
-              label: '📑 Testnet API Endpoints',
+              label: '📑 Testnet Endpoints',
               link: {
                 type: 'generated-index',
                 title: 'Core Scan API Documentation',
