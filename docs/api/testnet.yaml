@@ -8,7 +8,7 @@ info:
     url: http://www.apache.org/licenses/LICENSE-2.0
   version: "1.0"
 servers:
-  - url: https://openapi.coredao.org/
+  - url: https://api.test2.btcs.network/
 
 paths:
   /api/accounts/core_balance_by_address/{address}:
@@ -36,22 +36,22 @@ paths:
         schema:
           type: string
           default: latest
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+      # responses:
+      #   "200":
+      #     description: OK
+      #     content:
+      #       '*/*':
+      #         schema:
+      #           type: object
+      #   "401":
+      #     description: Unauthorized
+      #     content: {}
+      #   "403":
+      #     description: Forbidden
+      #     content: {}
+      #   "404":
+      #     description: Not Found
+      #     content: {}
   /api/accounts/internal_txs_by_block_range:
     get:
       tags:

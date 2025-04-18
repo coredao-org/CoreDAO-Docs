@@ -1,0 +1,71 @@
+---
+id: send-raw-transaction-using-get
+title: "Send raw transaction"
+description: "Send raw transaction"
+sidebar_label: "Send raw transaction"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsGT1uhxWnXk2/BlhbFhnZo2lMQDIzNxNpsSZXofCzQfx9op2nSpMWwkyHx8T2K5PMGGOcBsjFcE5fJD29Xa5gosI48srbmpoAMApniHpcPHk3AXK4fgzbz6+EDKHDosSYmLzQbMFgTZIBO/6Y1KNAGMnhqyMuhoJB77YRhH+PpqdGeCsjYN6Qg5CXVCNkGeO2ELbDXZg4xqp1ASav32TvAv1NPBBycNYGCxC/6ffkckt59AwW5NUyGJXqWnsnniNVOf1HOEGOMCi7758dMjwYbLq3Xf6g44OwyPh9nXFk/1UVB5gT88hh+azm5so15zR5fN2pEpkg8LhN+mS8oqIlLK9OfE7dj5hIySNHpdE5cpsTlz+PFAAWB/OJ5GxpfySiYXcjS1Doy6HQvt54KtD3r5ylI47WZ2bZ7mitp38Dp5KvNm5oM45b2sOhTCCZfh7vZiPxC50LTeJOxDaCg0jmZQKKx3Z+Bw7yk5KLXB7VXZpamy+Wyh220LXCbGtLvN1+Gt6PhJ0mJCuSNXS3n3YWzgWs0expvdPbgJbuVYVpx6irURsjaijbbro/FKqBkEiUoeKPzEwWlDSzwzWaKgR59FaNcdwaReRQ64LQSO8ywCnRUy25R4MP91jkfk51PT1YqoT0vL7BqBATi1f+S64z7jlYHeBGayMFrUYJsPIkKSsKCfPviLmWQ5+R4L0uMK4m7LZefWYx/AfjdtsY=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send raw transaction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_sendRawTransaction"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Send raw transaction
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"hex","in":"query","description":"hex","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

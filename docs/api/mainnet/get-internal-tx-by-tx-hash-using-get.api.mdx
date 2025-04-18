@@ -1,0 +1,71 @@
+---
+id: get-internal-tx-by-tx-hash-using-get
+title: "Get internal transactions by transaction hash"
+description: "Get internal transactions by transaction hash"
+sidebar_label: "Get internal transactions by transaction hash"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMFu2zAM/RWDp63Q4rTrybdsa7tiQwuszakIAsZmY22OpEp0mszQvw90HCOpc9h2EiSS7z2Jj2qAcRkge4JJntvacICZAuvII2trbgvIYEl8a5i8wepx82n7uPmKoZwGbZY3V4+gwKHHFTF5wWnA4IogA3T6F21BgTaQwUtNXjYFhdxrJ9iHOZ5eau2pgIx9TQpCXtIKIWuAt07QAnttlhCj6gl4U2Io9wQOuRzg9yl/jz+T5OCsCRQkfjEey3KMe/8NFOTWMBmW6Fl6JssA1S5+Us4QY4wKLsfnQ6SpwZpL6/VvKo4wdxUfhxXX1i90UZA5kX45TL+znFzb2rxFj2/f6oY40V2bE/ZoAuYSCslie7hPuiddEZe2s0drAi4hgxSdTrGzUrrHm/MmzBfbOW/mUp02u8ZEUBDIr/fOqX0FGZTMLmRpah0ZdHqUW08F2pH1yxSkP9o82/aRNVfyyhOnky82r1dkuHXtwAenMpj8Ktw/P5Bf61xgam8ytgEUVDonE0g4Oq9NHOYlJRejMagDmVmavr6+jrCNtgK70pB+v/18dfdw9UFKogK5407L+e7A2cArNAcc/9qAoyv2lmPacOoq1EZYWqlN15wnmTdQsG9POzonGwQKsm52ZgpKG1iqm2aBgaa+ilGOdyMtfSt0wEUl0/WMVaCBtN538O5HN4jvk372TwqX0MH/sMaqlqS2/2v0Wvj+n7v/F05yd4dojpj3mrraOIsKSsKCfKtjF5zkOTk+KJOfQTT30yJfZox/AIR53po=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get internal transactions by transaction hash"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/internal_txs_by_tx_hash/{txhash}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get internal transactions by transaction hash
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"txhash","in":"path","description":"txhash","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

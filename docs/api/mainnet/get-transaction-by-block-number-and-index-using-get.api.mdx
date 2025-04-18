@@ -1,0 +1,71 @@
+---
+id: get-transaction-by-block-number-and-index-using-get
+title: "Get transaction by block number and index"
+description: "Get transaction by block number and index"
+sidebar_label: "Get transaction by block number and index"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVFFP2zAQ/ivRPW3IawrjKW9lg6raBNOgT6iaHOdIPBLb2BfarvJ/ny5pS6GoYuwpiv3d953vvrsVkCwDZLcwRqqSH94uljATYB16SdqaSQEZlEg3XpogFR+dLc9qq+4v2yZHPzLFxBS4mAZtyvH5DQhw0ssGCT3zrsDIBiED6fQ9LkGANpDBQ4uefwoMymvHtLsYjw+t9lhARr5FAUFV2EjIVkBLx2yBvDYlxCi2AprTOMy/gbyHnmR5mLwHvJ16xuDgrAkY+P5kOOTPc9KrbyBAWUNoiG+P0iP+7LHa/DcqghhjFHA6PN5nmhrZUmW9/oPFM84+4vN+xIX1uS4KNK/AT/fhl5aSC9ual+zxZaHGSAk92SnJl0nOhkpM56hEmiLZdKpBquzagp21qIIMUul0WiJVKVL16w3uBAEB/ePGkq2vIYOKyIUsTa1DI50eKOuxkHZgfZkCt0ebO9vVWFPNRR45nXy1qm3QUDccex54DUHom3B1d43+USumab3JyAYQUGuFJiBrrF02clJVmJwMhiB20szSdD6fD2R32yW4Dg3p98mX88vr808cEgXwG/tcjvsDZwM10uxo/Ev9nz1v6zbCBaWultqwQpfmat2bWx5iENyvCgS8tT8zAZUNxPGrVS4DTn0dIx/3w8ZdK3SQec2jdSfrgHvJbU0HH36up/Bjsl0pr6bOVztr51HWLYOA5/5dcpu6HVDbQP5frN84B6R6wJPQjH+8ZiXIbmdRQIWyQN+Vtw8ZKYWOdqJ443DgdhJ5ycf4F6O3HlA=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction by block number and index"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getTransactionByBlockNumberAndIndex"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get transaction by block number and index
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"index","in":"query","description":"index","required":true,"schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

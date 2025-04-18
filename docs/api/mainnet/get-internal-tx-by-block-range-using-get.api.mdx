@@ -1,0 +1,71 @@
+---
+id: get-internal-tx-by-block-range-using-get
+title: "Get internal transactions by block range"
+description: "Get internal transactions by block range"
+sidebar_label: "Get internal transactions by block range"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVl1vm0AQ/Cton9qIGifNE29Om0RRq0TKx5NlWcexhmvg7nK3JHEt/nu1GFMcp9R1nxC+2Zll92bkFZDIPMRTmEhpKk0eZiEYi06QMvoqhRgypCtN6LQo7l/PlmeFkY+3Qmf44JXOLs/vIQQrnCiR0DHXCrQoEWIQVj3iEkJQGmJ4qtDxS4peOmWZv49x+FQphynE5CoMwcscSwHxCmhpmc2TUzqDug47AdRpwu0MS/RQh4iYxcIjDUt0mH0IrchwmK5F7EPmjftLby1iLzISjvaY6BZu/5nOGOyt0R49n5+Mx/zY5r75BiFIowk18elRdMSPHVaT/EBJUNd1HcLp+HiX6UGLinLj1E9MtzjXFZ93Ky6MS1Saon4HfroLvzYUXJhKv2Wv387rEilQrYcCckJ7IfnIB8kyaOYYOHYUhFAi5aa1XWMsyiGGSFgVidai0YZqTq9+niznDcN8w+DRPW+MWLkCYsiJrI+jyFjUwqqRNA5TYUbGZRHwVpRemGa0igqe7cSq4KuRVYmamiDYuQHvIQhd6W8Wd+ielWSayumYjIcQCiVRe2SN9qpNrJA5BiejMYS9NuMoenl5GYnmtGmwLfXR96sv59d355+4pA6Bv3Hdy/H6B2s8lUL3NP5h7Ftf190xwleKbCGUZoGmy1W7kiknF4SwWUpjmD+vZRZCbjxx3WqVCI8Prqhr/nntMF5WqrxICjbSQhQed5rqrhh8uG099zHo8vPdlvmol7HPoqgYBOz5g+R6WTog2EMdKNkF6oBKhzlQo03ZAYUWcSB/G7wD/C3i/9eyFchDgn3cb9kZvzjFuhBPZ3UIOYoUXXMt15UTKdH2m+Vc5sIusPifQF3/AjGq1hI=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get internal transactions by block range"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/internal_txs_by_block_range"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get internal transactions by block range
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","required":true,"schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

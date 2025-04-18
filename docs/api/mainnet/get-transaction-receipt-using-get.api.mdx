@@ -1,0 +1,71 @@
+---
+id: get-transaction-receipt-using-get
+title: "Get transaction receipt"
+description: "Get transaction receipt"
+sidebar_label: "Get transaction receipt"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsGT1uhxWnXk2/BlgbFhnboxykIBkVmIm22pEp0Phbovw90Ujdp0mLYyZBIvkeR73kDJOcRijGMkHT2I7jVGiYCnMcgyTh7XUIBc6SHIG2Uiq/uUKHx9BiNnY+GDyDAyyBrJAyMtAEra4QCpDe/cQ0CjIUCnhoMfCgxqmA8A+3nBHxqTMASCgoNCohKYy2h2ACtPaNFCsbOISXREdBKy6jfJ+hy/p1gwsnROxsxcvyi3+fPIe7tNxCgnCW0xNGz/Iw/R6hu+gsVQUopCbjsnx8jPVrZkHbB/MHyAHNb8fm44sqFqSlLtCfSL4/TbxxlV66xr9HT61mNkDJ62XMWtosGATWSdjsltPsmDQXk0pt8jqRzJP3zpEhAQMSweFZGEyooQBP5WOS582ilNz3lApbS9VyY58DjN3bm2hkaqniIA2+yr041NVpqVXm05lMZhKGOt7N7DAujGKYJtiAXQUBlFNqIzLHT0sBLpTG76PVB7LVZ5PlyuezJNto2uCuN+ffrL8Ob++EnLkkC+I3bXs63F95FqqXd43h7vgeP6bRDuKLcV9JYxmub2uxmP2bngOB9sLjfnv9EgHaRuGKzmcqIj6FKia+3fuGtlCbKacXWmMkq4lE7nWjgw93ORR+zzrknm+XQnrsXsmo4Cdi9/0XX+fgdui7nhW7Ch2CYD4rxJAnQKEsM7bu3VQOlsF3CcxVbmQs70fNPLqW/ZrbCCg==
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getTransactionReceipt"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"txhash","in":"query","description":"txhash","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

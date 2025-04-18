@@ -1,0 +1,71 @@
+---
+id: eth-call-using-get
+title: "Get transaction receipt"
+description: "Get transaction receipt"
+sidebar_label: "Get transaction receipt"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVU1P3DAQ/SvRnFrkbhbKKTdEAaFWULXlhFbVrDObuHVsY0/46Cr/vZokrHZZ2FJOke03742fZyZLYKwSFNdwRlxnX6O/f4CZAh8oIhvvzksogLg+RmuvknHV2ckPUBAwYkNMUWKX4LAhKACD+U0PoMA4KOCmpSiLkpKOJgjbOibSTWsilVBwbElB0jU1CMUS+CEIW+JoXAVdp1YCJTLuph8RryFjrHZzDYCXqAS9wNYyFGCRKfEmu/8Huf8vD2YCTsG7REnOD6ZT+WxyXn4GBdo7JsdyupfvyWeL1c9/kZZ0u07B4XR/m+nKYcu1j+YPlRucQ8TH7YhTH+emLMk9Az/chl94zk59656yd099OiPOOKJLqGUni6TJBAYFDXHtpTwr4r4kuYYCcgwmr4jrnLj+qdFaeUOKt4+12kYLBdTMIRV57gM5DGaifaQS/cTHKgdx27iF7y0zbMWzo2CyT163DTnuO2PrRZ9DMMUmXS6+U7w1Wmja6Ar2CRRYo8klEo2xZI4C6pqyg8kU1FqaRZ7f3d1NsD/tExxDU/7l/Pjk4vvJBwnpFMgdh1z2h43gEzfo1jRetnPjMqtSYbrnPFg0Tvj6pJaj1dfSy6DE/hoUrOyeKah9YgEsl3NMdBVt18n20AnyCKVJOLdS+Au0ibbUVyUB776NPfI+W42OZ3OTo7Xxcou2FRBIT75ebpwfOxRGxBv5h5myg34AvJF9zax+vuzS8RsyM1lEIzpQXM86BTVhSbF/rSHiSGvqK+UxSsaLBK4aUf4NXfcXhyQfpA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_call"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

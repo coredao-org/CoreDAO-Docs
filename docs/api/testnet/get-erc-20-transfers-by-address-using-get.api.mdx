@@ -1,0 +1,71 @@
+---
+id: get-erc-20-transfers-by-address-using-get
+title: "Get list of ERC20 transfer events by address"
+description: "Get list of ERC20 transfer events by address"
+sidebar_label: "Get list of ERC20 transfer events by address"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1vm0AQ/StoTm1EjePmxM1NnShqlUj5OEWWtcBgtsG7ZHew61r892pgTXDsUtc9gXffvjezM/PwBkjMLYTPMI5jXSqyMPVBF2gESa1uEghhjjS5vxwNH41QNkVjv6zHSWLQ2icr1fx68gg+FMKIBRIaJtuAEguEEESDAx+kghAKQRn4kKCNjSxYYAdj8LWUBhMIyZTog40zXAgIN0DrguksGanmUFX+m0IhX3C9FXgt0az3FbaYUwRQJVGu45d+iQ7qGFKdphapn7LFHENYiDn20znEMWRWm7/E5hBHkZEwdMQN7uD+TDzlKtpCK4uW90fDIT92ue6+gQ+xVoSKePcsOOPHHquOfmBMUFVV5cPF8Hyf6UmJkjJt5C9MdjibE5/3T1xpE8kkQXUAfrEPv9XkXelSvWev3t/PNZKXS0ueTr16HD1y8+jhEhVZL1p7b7O0QMq0m956PCmDEAJRyEC4SQ+YbqbTGZp4NJxt6WYN3SxazxxdsHEvFZcGzXI75aXJIYSMqLBhwNwDQkujQUSxHSiklTYvAXDNpEp1ffGScr75cSG9rzouF6iodpq9fjiEIDQLe5c+oFnKmGlKo0LSnG8uY1QWWcM13rgQcYbeaDAEvxNpGASr1Wog6t2BNvPAHbXB95vLye3D5BMfqXzgNJtYzpuFQltaCNXR+Mei7GTYdiHhTwqKXEjFInWkG1ewZ/Yu8GFbsjrR44oGPoTb16kPmbbEfJtNJCw+mbyqeLmZRa5lIq2IcvbGVOQW94JtmxM+3Dsb/ei1znowFd7quO9S5CWDgN3heLmOtfaodFAn6rR+26PSYk7UcCbco+AQJ/I7X+7hd4hT+bsm3afSxb1pTfmHkSz2Hz3X9vfBANyiUDst1zajO1xNKx8yFAmaOpJmdxzHWHSvhz8cHHXrpvxnp6p+A9GgIcQ=
+sidebar_class_name: "get api-method"
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of ERC20 transfer events by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_erc20_transfer_events_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of ERC20 transfer events by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

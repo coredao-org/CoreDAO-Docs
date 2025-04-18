@@ -1,0 +1,71 @@
+---
+id: get-block-number-by-timestamp-using-get
+title: "Get block number by timestamp"
+description: "Get block number by timestamp"
+sidebar_label: "Get block number by timestamp"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVF1P2zAU/SvRfdqQ1xTGk99gA4Q2gTTgCVXIcW4bj8Q29g2sq/zfp5uUNqVdh/bkxL7nnPu9AFKzCPIeTmunHyNMBDiPQZFx9rIECTOk7umqbQoMp/Nb02Ak1fi7aOzs4uwWBHgVVIOEgZkWYFWDIEF584hzEGAsSHhqMfBPiVEH45l/aBPwqTUBS5AUWhQQdYWNArkAmntmixSMnUFKYiWgaxcx0n6FtdHfKBkxVW1NIKHAqQu4oUKvAe/XGZq9P5gJG0fvbMTI70fjMR+b1NffQIB2ltASvx7kB3xssbriJ2qClFIScDw+3Ga6s6qlygXzG8sNzh7xeRtx7kJhyhLtDvPjbfMrR9m5a+1b9vQ2XRdIWcF9ldmusbJing1T2CBVbtl/XYdRBRJy5U3ewWJ/PPToh2L+0KF7cMTw/NqMbahBQkXko8xz59Eqb0baBSyVG7kwy4GrYOzUdak0VHMuT7zJvjrdNmipG4atgu+yIAxNvJ7eYHg2mmnaYCW5CAJqo9FGZI1lY514pSvMjkZjEAM3ZZ6/vLyMVPfaObiExvz75Zezq5uzTwxJAjjG3pfD/sK7SI2yA41/pXkjpFUjEf6i3NfKWGbtXFssS3DPIwsC+iK8fuwqw0RA5SIxZLEoVMS7UKfE1/0AcXFKE1VR86BMVR1xy59VC8GHH8uZ+pitdsZOb/lpsFeeVd2yEfBEv19uvTX2iKyN/lNlENSwKHskh2Zr0Qn/BMOqIO8nSUCFqsTQ5bgHnmiNfugqLxEGrgaNV3lKfwAxChGO
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get block number by timestamp"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/blocks/block_number_by_timesamp"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get block number by timestamp
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"closest","in":"query","description":"closest","schema":{"type":"string","default":"before"}},{"name":"timestamp","in":"query","description":"timestamp","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

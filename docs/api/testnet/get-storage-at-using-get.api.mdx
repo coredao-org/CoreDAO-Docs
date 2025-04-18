@@ -1,0 +1,71 @@
+---
+id: get-storage-at-using-get
+title: "Get storage at"
+description: "Get storage at"
+sidebar_label: "Get storage at"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVd9v2jAQ/leie9oqj9CuT35DG0XVpnZa16cKTSY5Eq+J7dqXUob8v09HoISGMYk9RUm+H5fPd5cVkCoCyAeYIJXJN29fljAVYB16Rdqa6xwkFEh3ZL0qcET3QZtiMv4BApzyqkZCzwIrMKpGkKDy3GMIIEAbkPDUoF+CgBxD5rVjzT2Qx6dGe8xBkm9QQMhKrBXIFdDSsV4gr00BMYqdhdOPuPyHwxZzioGzQa91jlp0UKeYkCqO67eAv0kxeq6aikBCpQgDQYxTLiU4awIGplwMh3zZ1739AgIyawgN8duz9IwvPSM7+4UZq8Yo4HJ43le6N6qh0nr9G/M9zZbxsc+4sn6m8xzNAfhlH35jKbmyjXmrHt9mNUFKQtujiSIQUCOVdtO8616lEiSkyum0QCpTpPJnt685afTP22ZufAUSSiIXZMqsASd8MZhRFgYGaWH9YwqctzZzuw5NU8WpjZxOPtusqdGQ2rTHfq2HEIS+DrfzO/TPOmOZxhtJliek0hmagOyx6ZyRU1mJycVgCKJTqUzTxWIxUOu3A+uLdEMN6dfrT+Obu/EHpkQB/JltLeftA2cD1cp0PHqB7n3Da48QvlDqKqUNy6xrWW3CfuAZBMEHUIKAXuBTAaUNxMDVaqYC3vsqRn7cjgMfQ66DmlU8V3NVBexV8doT8O77ZgTfJ7vlcrBIXgvdDfSsqoZRwLN5muF21xzz22L+366zd44YdlAnWrb754hFC9ipT/nGa5YH+TCNAkpUOfr1UbaUUZahow6Llw8TX+eV/y0x/gG/3Dpx
+sidebar_class_name: "get api-method"
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get storage at"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getStorageAt"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get storage at
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"query","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"position","in":"query","description":"position","required":true,"schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

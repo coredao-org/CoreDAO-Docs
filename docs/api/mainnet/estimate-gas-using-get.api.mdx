@@ -1,0 +1,71 @@
+---
+id: estimate-gas-using-get
+title: "Estimate gas"
+description: "Estimate gas"
+sidebar_label: "Estimate gas"
+hide_title: true
+hide_table_of_contents: true
+api: eJydlk1v2zAMhv9KwNNWaHHa9aRbsaVFsaEttvVUBINiM7Y2W1Iluh8L9N8H+iNzk84NcjIcvXxemiKJrIFUHkDewQVSMbnx9ukZFgKsQ69IW3OZgQQMpCtFeKHCbdAmv5j/AAFOeVUhoef4NRhVIUhQTv/GZxCgDUi4r9HzS4Yh9doxcajxeF9rjxlI8jUKCGmBlQK5Bnp2TAvktckhRrExyBSpcXyn2Ae28rYah3WKfWC5CuOsVrAn6sbrFN/k9ap9oGTHcc35IVfyoMr6jVR7yf9xC/YOzpqAgc9PZjN+vMRcfwEBqTWEhvj0KDnixw7VLn9hShBjjAJOZ8e7pFujaiqs138we8FsIz7uRpxbv9RZhuYV+emu/MrS5NzWZpset0sz76Zr0rZHhVRYnrocqZkyKkBCopxOcqQiQSp+DgaSa4r+oZ/C2pcgoSByQSaJdWiU09PUesyUnVqfJ8CV1mZlm3JpKrleZ05PPtu0rtBQM/c7F/iagtBX4Xr1Hf0Dd6GE2htJlnMqdYomIHt0TXLmVFrg5GQ6AzFIUybJ4+PjVDWnTYJdaEi+Xn6aX32ff+CQKIC/sc3luP3B2UCVMgOPrVK++IJNbxA+UeJKpQ1DmkzWXZnveDWB4NIXIGC71AsBhQ3EuvV6qQLe+jJG/rlter6ATAe1LHl+VqoMuJPEphXg3bdu1N5PNgvx1RT5aLA021GSADyB+9t1W3HEoVMcyO8W5Qi/UxzIb690BN8KDqf3q3Tcolcd6DO49Gbdjpg15wfa9Ot2BN9L/jks+MVrtgB5t4gCClQZ+qav26CzNEVHgyhewBy42Vr83yDGv6i+zWI=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Estimate gas"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_estimateGas"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Estimate gas
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"from","in":"query","description":"from","schema":{"type":"string"}},{"name":"gas","in":"query","description":"gas","schema":{"type":"string"}},{"name":"gasPrice","in":"query","description":"gasPrice","schema":{"type":"string"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}},{"name":"value","in":"query","description":"value","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

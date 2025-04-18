@@ -1,0 +1,71 @@
+---
+id: get-mined-blocks-by-address-using-get
+title: "Get list of blocks validated by address"
+description: "Get list of blocks validated by address"
+sidebar_label: "Get list of blocks validated by address"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVcFO20AQ/RVrTi1y40A5+RZaQKgtSKU5oSha2+N4i7O77I5DU2v/vRrbMQkOAdGTHc+b92b27UxqILFwEN/BJE11pcjBLARt0AqSWl1lEMMC6YdUmJ2VOr13Z+tJlll0buqkWlye/4IQjLBiiYSWmWpQYokQg2hxEIJUEIMRVEAIGbrUSsPsOxiLD5W0mEFMtsIQXFrgUkBcA60N0zmyUi3A+/BJwch7XG8EHiq066HCBvMegYRbbsIHNbZhL9FyTi6qkjZ4t6Ok89whHZbpMW8p3YjFK1V3iJfJZnxozmjl0HH8ZDzmxy7LzTcIIdWKUBFHj6IjfgxYdfIbUwLvvQ/hdHw8ZJoqUVGhrfyL2Q5nm/F5mHGhbSKzDNUe+OkQfq0puNCVes7un5/MJVJQSkeBzoPWq2AlSpkJwixI1sHTrV0iFbobkmYQqIAYImFkJLqBiphprvN5yzTvmebJet4xRXX34tkQtKvNKFW2hBgKIuPiKNIGlTBylGqLmdAjbRcRsE1S5bo5a0klH/bEyOCrTqslKmoGeWD+PgShXbqb/BbtSqZMU1kVk+Y+S5micsga3f2aGJEWGJyMxhBulRlH0ePj40g00abALtVF36++nF/fnn/iFB8C99jWctx+MNrRUqgtjbf7sNNcf+cI/1BkSiEV8zdF1p1Hd7wYIISNS02Pr/oEIcSb11kIhXbEVHWdCIdTW3rPn9txY/sy6URS8s7JRelwUGd/C+HDz249fQz6jbW3Cw5tbbWVKCsGAY/+2+W2N9YBmW3YO5X6pXVApse8U6PbZAcUOsQT/4x/WMkC/+FUfyv2SncfhdoxqrewS/YzH0KBIkPbVNJGJ2mKZvtIeK9y1f3G4b9e7/8BKjGkWA==
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of blocks validated by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_blocks_validated_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of blocks validated by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"blocktype","in":"query","description":"blocktype","schema":{"type":"string","default":"blocks"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

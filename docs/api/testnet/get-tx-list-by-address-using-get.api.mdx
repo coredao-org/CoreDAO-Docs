@@ -1,0 +1,71 @@
+---
+id: get-tx-list-by-address-using-get
+title: "Get list of transactions by address"
+description: "Get list of transactions by address"
+sidebar_label: "Get list of transactions by address"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVk1P20AQ/SvWnFrkxoFy8i1tAaEikEo5oSharyfxFmfX7I4JqbX/vZpkYxySulF6srPz5r3Z+XIaIDFzkD7CSEpTa3IwjsFUaAUpo69zSGGG9PP1Rjn6shzluUXnHpzSs6uLnxBDJayYI6Flkga0mCOkINY4iEFpSKESVEAMOTppVcXEWxiLz7WymENKtsYYnCxwLiBtgJYV0zmySs/A+/hNoVJPuNwIPNdol7sKG8wxAqjzrDTyqV+igzqE1EynDqmfssUcQliJGfbTBcQhZM7Yf8QWEAeRkbB0QAa3cH8nHnMVXWW0Q8f2s+GQH9tcd98hBmk0oSa2niQn/NhhNdkvlATeex/D+fB0l+lBi5oKY9VvzLc41x6fdz0ujc1UnqPeAz/fhd8aii5Nrd+z+/f5uUKKSuUoMtOIrNBOSLa4KFtGbyM0RypMGNbVVFIBKSSiUokIg50wy8RMJ/TqJtlyEpyTJrx4zj/al80o17aEFAqiyqUJMw0IHZ0NMpJuoJEWxj4lwIVRempW2VVUcnpHlYq+GVnPUdNqjewUfR+C0M7d3fQe7YuSTFNbnZLh25VKonbIGqG7RpWQBUZngyHEnUjTJFksFgOxsg6MnSXB1SU3118vbu8vPrGLj4GvuY7ldH1QGUdzoTsah2V+62JthxG+UlKVQmnmXgXYhKo88l6CGDZ1Wd1vX2UghnTzOo6hMI7Yu2ky4fDBlt7z8XqquGC5ciIrectNRelwJ7S2zeDDj7AQP0btjtwbOJs6e/RFlDWDgOf8cLnOkuxR6aCO1Gk3Z49KizlSI6zTHoWAOJI/bNge/oA4lr+7bvtUurg3rTH/sIrF/qPn2v7eG0A4FHqr5dpmDM5+7GMoUORoV5GsrSMpseqmhz8BHHW7IPlvi/d/APOUDJQ=
+sidebar_class_name: "get api-method"
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of transactions by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_txs_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of transactions by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

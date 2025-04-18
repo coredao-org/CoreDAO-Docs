@@ -1,0 +1,71 @@
+---
+id: get-block-rewards-by-block-number-using-get
+title: "Get block rewards by block number"
+description: "Get block rewards by block number"
+sidebar_label: "Get block rewards by block number"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVE1v2zAM/SsGT1uhxWnXk29p1xbFhhZo11MRBLLNxFptSZXoZJmh/z7QH2lSZ0Cxk2x+vEfxkWqA5MpD8gwXpclePMwFGItOkjL6NocEVkit6wE30uX+Ytv+3dVViu7JK726ufoJAqx0skJCx2ANaFkhJCCtesEtCFAaEnit0fFPjj5zyjLFfozD11o5zCEhV6MAnxVYSUgaoK1lNE9O6RWEIHYEKRejzcBgJRUjgreYjzPMOdhboz169p9Np3wcAt9/BwGZ0YSa2HsSn/AxQjXpL8wIQghBwPn0dIz0pGVNhXHqD+YHmF3G13HGtXGpynPUR8LPx+F3hqJrU+v36OF9s26QorZhkesEj9Jtb9Ct5iCgQipMPxut9FRAArG0Km4jfXcseoRFul10hg4hbnpFAgjw6NbD0NSuhAQKIuuTmOEmhJ7OJillfqKRNsa9xMDaKL00bYMVldzhmVXRN5PVFWpqR3c0BMciCF3l75eP6NYqY5ja6YSMBwGlylB7ZI5+0mZWZgVGZ5MpiL1KkzjebDYT2Xonxq3iPtXHP24vr+4er75wShDA1+xqOe0M1niqpN7j+EjzD661GzHC3xTbUirNyG15TS/MM28YiG4N/PDxL3FAQDIszFxAYTwxRNOk0uOTK0Ngc7fJrFmuvExLXqmlLD2O6tsNG3x66Lfvc7Rb+aPVs2vvWVjLsuagVvi1dIr5/p/77TU4St4bpT6gHooaksM8CChQ5ujaSjrvLMvQ0l4ePwhc9W5h+K0M4S87mdwF
+sidebar_class_name: "get api-method"
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get block rewards by block number"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/blocks/block_rewards_by_block_number/{blockno}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get block rewards by block number
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"blockno","in":"path","description":"blockno","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

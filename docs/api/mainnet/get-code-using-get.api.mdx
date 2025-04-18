@@ -1,0 +1,71 @@
+---
+id: get-code-using-get
+title: "Get code"
+description: "Get code"
+sidebar_label: "Get code"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMtu2zAQ/BVjT23AWk6ak25G6hhBi6RompNhFLS4lthKJEOu7LgG/71Yyc/IcIv0JEicnVmNZrQGknmAdAJjpKL31duXFUwFWIdekrbmTkEKOdKNVfgUtMnHo+8gwEkvKyT0PLsGIyuEFKRSHkMAAdpACs81+hUIUBgyrx3THYE8Ptfao4KUfI0CQlZgJSFdA60c8wXy2uQQo9hLOP0LV39R2GLeIkAyP8/eAv6desrg4KwJGPj8ajDgyzHpw2cQkFlDaIhPL5ILvnRY7ewnZgQxxijgenDZZXoysqbCev0b1RFnO/GxO3Fr/UwrheYE/LoLv7fUu7W1ec0eXxs1RuplViEIqJAKu0lSkx4qIIVEOp3kSEWCVPzYhAwEBPSLbbJqX0IKBZELaZJYh0Y63c+sRyVt3/o8AXZYm7ltbNJUsk9Dp3ufbFZXaKjJcecznkIQ+io8zB/RL3TGNLU3KVnOaqkzNAFZYxOUoZNZgb2r/gDEwZppkiyXy75sTpsFN6Mh+XJ3M7p/HH3gkSiA37Hd5bJ94GygSpoDjQMLj7bf5YHwhRJXSm2YoNlivbF3wj0AwZYXIODQ4qmAwgZizHo9kwGffBkjP24jz8YrHeSs5IDPZRmws8Du08O7b5suvO/tu31yP27l4Q9gIcuaUcD9e5vgturn9LaY/5dru39GqwXshaZ84zUrQTqZRgEFSoW+sbgdGWYZOjqY4u7z4K40/MuN8Q8IPOdA
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get code"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getCode"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get code
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"query","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: get-contract-abi-using-get
+title: "Get ABI of verified contract"
+description: "Get ABI of verified contract"
+sidebar_label: "Get ABI of verified contract"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVMFu2zAM/RWDp63Q4rTrybesS4tgQwus66kIAkVmYm22pEp0sszQvw907CypM2zATgZE8r0nPT43QHIdIHuGG2vIS0UB5gKsQy9JWzPLIYM1Ul+dLPVT0GZ9N/0KApz0skJCzwgNGFkhZCDz3GMIIEAbyMBJKkBAjkF57Rj0pMfjS6095pCRr1FAUAVWErIGaOcYLpDXZg0xit8MTn/HXU/wUqPfDRn6nn8nmHNzcNYEDFy/Go/5c4r78AkEKGsIDXH1Ir3gzwDVLr+hIogxRgHX48sh0pORNRXW65+Yn2DuJ94PJ26tX+o8R3Om/XrYfm8pubW1eY0eX7/VHVIy+TBL7CrZoNcrjXmiOsdBQIVU2G4RWtepgAxS6XTad4VULvXCrhb9/KKvpE3ndQQBAf2m35bal5BBQeRClqbWoZFOj5T1mEs7sn6dAjuizcq2z6qp5HedOJ18tKqu0FC7ogPnz3UQ+io8rB7Rb7RimNqbjCwvYKkVmoDM0a3XxElVYHI1GoM4kpml6Xa7Hcm22grsRkP6eXYzvX+cvuORKIDvuNdyuT9wNlAlzRHHX5785EaHnSL8QakrpTYM2iprOjueeeE7n/cxFvAnS0BA1gdwLqCwgRigaZYy4JMvY+TjfazYqVwHuSw5QStZBhyoO+wWvPnShe1tcsjfWe1cOsroRpY1N7WOb6TXzPcf3Ie/y1ny7lCaE+qDqG44zqOAAmWOvlWyr06UQkdHc5x/Vn0ICf8aY/wFoiDQmQ==
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get ABI of verified contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/contracts/abi_of_verified_contract/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get ABI of verified contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>
+
+
+      

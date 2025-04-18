@@ -385,26 +385,47 @@ const sidebars: SidebarsConfig = {
             'api/tutorials/common-error-messages',
           ]
         },
-        
-        // {
-        //   type: 'category',
-        //   collapsed: true,
-        //   label: '📑 API Endpoints',
-        //   link: {
-        //     type: 'generated-index',
-        //     title: 'Core Scan API Documentation',
-        //     description: 'Explore the various Core Scan API Endpoints',
-        //     slug: '/api/core-api-docs',
-        //   },
-        //   items: [
-        //     'api/api-documents/accounts',
-        //     'api/api-documents/blocks',
-        //     'api/api-documents/contracts',
-        //     'api/api-documents/geth-proxy',
-        //     'api/api-documents/statistics',
-        //     'api/api-documents/transactions',
-        //   ]
-        // }
+        {
+          type: 'category',
+          collapsed: true,
+          label: 'API Endpoints',
+          link: {
+            type: 'generated-index',
+            title: 'Core Scan API Documentation',
+            description: 'Explore the various Core Scan API Endpoints',
+            slug: '/api/core-api-docs',
+          },
+          items: [
+            {
+              type: 'category',
+              collapsed: true,
+              label: '📑 Mainnet API Endpoints',
+              link: {
+                type: 'generated-index',
+                title: 'Core Scan API Documentation',
+                description: 'Explore the various Core Scan API Endpoints',
+                slug: '/api/core-api-mainnet-docs',
+              },
+              items: [ 
+                require("./docs/api/mainnet/sidebar.ts"),
+              ]
+            },
+            {
+              type: 'category',
+              collapsed: true,
+              label: '📑 Testnet API Endpoints',
+              link: {
+                type: 'generated-index',
+                title: 'Core Scan API Documentation',
+                description: 'Explore the various Core Scan API Endpoints',
+                slug: '/api/core-api-testnet-docs',
+              },
+              items: [ 
+                require("./docs/api/testnet/sidebar.ts")
+              ]
+            }, 
+          ]
+        },
       ]
     },
     
