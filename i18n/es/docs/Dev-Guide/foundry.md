@@ -9,57 +9,57 @@ description: Despliega contratos en Core usando Foundry
 
 ---
 
-Foundry is a fast, efficient, and extensible toolkit for EVM development written in Rust.This guide will walk you through the process of installing Foundry, setting up your project, writing and testing Solidity code, and deploying and verifying your contracts on Core Blockchain.
+Foundry es un conjunto de herramientas rápido, eficiente y extensible para el desarrollo en la EVM (Máquina Virtual de Ethereum), escrito en Rust. Esta guía te llevará paso a paso por el proceso de instalar Foundry, configurar tu proyecto, escribir y probar código en Solidity, y desplegar y verificar tus contratos en la Blockchain de Core.
 
-## 1. Installation of Foundry
+## 1. Instalación de Foundry
 
-Before you start using Foundry, you need to install it on your system. The process is relatively simple and can be done in a few steps. Foundry uses `forge` as the main tool to interact with Solidity contracts.
+Antes de comenzar a usar Foundry, necesitas instalarlo en tu sistema. El proceso es relativamente sencillo y puede completarse en pocos pasos. Foundry utiliza `forge` como la herramienta principal para interactuar con contratos en Solidity.
 
 ### Paso 1: Instala Foundry
 
-You can install Foundry by running the following command on a Unix-based system (macOS, Linux):
+Puedes instalar Foundry ejecutando el siguiente comando en un sistema basado en Unix (macOS, Linux):
 
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-This will download and install Foundry. It includes the following tools:
+Esto descargará e instalará Foundry. Incluye las siguientes herramientas:
 
-- `forge`: The command-line interface for compiling, testing, and deploying Solidity contracts.
-- `cast`: A tool for interacting with smart contracts and viewing blockchain data.
-- `anvil`: A local node used for testing.
+- `forge`: La interfaz de línea de comandos para compilar, probar y desplegar contratos en Solidity.
+- `cast`: Una herramienta para interactuar con contratos inteligentes y ver datos de la blockchain.
+- `anvil`: Un nodo local utilizado para pruebas.
 
-Once installed, make sure the binary is in your system’s PATH. To verify the installation, run:
+Una vez instalado, asegúrate de que el binario esté en el PATH de tu sistema. Para verificar la instalación, corre:
 
 ```bash
 forge --version
 ```
 
-You should see the version of Foundry that was installed.
+Deberías ver la versión de Foundry que se instaló.
 
-### Step 2: Update Foundry
+### Paso 2: Actualiza Foundry
 
-Foundry is actively developed, so it's important to keep your installation up to date. You can update Foundry with the following command:
+Foundry está en desarrollo activo, por lo que es importante mantener tu instalación actualizada. Puedes actualizar Foundry con el siguiente comando:
 
 ```bash
 foundryup
 ```
 
-This ensures that you have the latest version of Foundry installed.
+Esto asegura que tengas la versión más reciente de Foundry instalada.
 
-## 2. Setting Up Your Project
+## 2. Configurando tu proyecto
 
 ### Paso 1: Crea un nuevo proyecto de Foundry
 
-To create a new project with Foundry, you can use the `forge init` command:
+Para crear un nuevo proyecto con Foundry, puedes usar el comando `forge init`:
 
 ```bash
 forge init my-blockchain-project
 ```
 
-This will generate a new directory structure with all the basic files you need to start writing Solidity contracts and tests.
+Esto generará una nueva estructura de directorios con todos los archivos básicos que necesitas para comenzar a escribir contratos Solidity y pruebas.
 
-Here’s what the generated folder structure will look like:
+Aquí está cómo se verá la estructura de carpetas generada:
 
 ```
 my-blockchain-project/
@@ -80,18 +80,18 @@ my-blockchain-project/
 
 ### Paso 2: Entendiendo la estructura de carpetas
 
-- **src**: Contains your Solidity contracts.
-- **script**: Contains your deployment script.
-- **lib**: Holds any external libraries or dependencies.
-- **test**: Contains test files to validate your contracts.
-- **foundry.toml**: The configuration file for Foundry. It includes compiler settings, network configurations, and more.
-- **README.md**: A markdown file to document your project.
+- **src**: Contiene tus contratos Solidity.
+- **script**: Contiene tu script de despliegue.
+- **lib**: Contiene cualquier biblioteca o dependencia externa.
+- **test**: Contiene archivos de prueba para validar tus contratos.
+- **foundry.toml**: El archivo de configuración para Foundry. Incluye configuraciones del compilador, configuraciones de red y más.
+- **README.md**: Un archivo markdown para documentar tu proyecto.
 
-### Step 3: Update Solidity and EVM version
+### Paso 3: Actualiza Solidity y la versión de la EVM
 
-Update the `foundry.toml` file with the appropriate Solidity and EVM versions.
+Actualiza el archivo `foundry.toml` con las versiones adecuadas de Solidity y EVM.
 
-Ensure you are using Solidity version `0.8.24`, and set the EVM version to `Shanghai`. If you're using an **older testnet**, set the **EVM version to Paris**.
+Asegúrate de estar utilizando la versión de Solidity `0.8.24` y establece la versión de EVM a `Shanghai`. Si estás utilizando una **red de prueba más antigua**, establece la **versión de EVM a Paris**.
 
 ```bash
 [profile.default]
@@ -104,13 +104,13 @@ solc_version = "0.8.24"
 
 ## 3. Redacción de contratos inteligentes
 
-Now that your project is set up, let's write a simple Solidity contract.
+Ahora que tu proyecto está configurado, vamos a escribir un contrato simple en Solidity.
 
 ### Paso 1: Crea un contrato simple
 
-Navigate to the `src` directory and create a new Solidity contract. Let’s use a simple counter contract to start.
+Navega al directorio `src` y crea un nuevo contrato en Solidity. Comencemos con un contrato simple de contador.
 
-Create a file called `Counter.sol` inside the `src` folder:
+Crea un archivo llamado `Counter.sol` dentro de la carpeta `src`:
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -139,17 +139,17 @@ contract Counter {
 
 En este contrato:
 
-- The `count` state variable keeps track of the count value.
-- The `increment` and `decrement` functions increase or decrease the counter.
-- The `getCount` function returns the current count.
+- La variable de estado `count` mantiene el valor del contador.
+- Las funciones `increment` y `decrement` aumentan o disminuyen el contador.
+- La función `getCount` devuelve el valor actual del contador.
 
-## 4. Testing the Solidity Contract
+## 4. Probando el contrato de Solidity
 
-Foundry makes it easy to write tests for your contracts. The testing framework uses Solidity itself, making it easy to write tests alongside your contracts.
+Foundry facilita la escritura de pruebas para tus contratos. El framework de pruebas utiliza Solidity en sí mismo, lo que facilita escribir pruebas junto con tus contratos.
 
-### Step 1: Create a Test File
+### Paso 1: Crea un archivo de pruebas
 
-Navigate to the `test` directory and create a test file called `Counter.t.sol`:
+Navega al directorio `test` y crea un archivo de prueba llamado `Counter.t.sol`:
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -185,19 +185,19 @@ contract CounterTest is Test {
 ### Explicación:
 
 - `setUp()`: Esta función corre antes de cada uno de los tests y se usa para inicializar tu contrato.
-- Test functions: `testInitialCount`, `testIncrement`, and `testDecrement` are individual test cases to check the contract's functionality.
+- Las funciones de prueba: `testInitialCount`, `testIncrement` y `testDecrement` son casos de prueba individuales para verificar la funcionalidad del contrato.
 
 ### Paso 2: Corre los Tests
 
-To run the tests, execute the following command:
+Para correr las pruebas, ejecute el siguiente comando:
 
 ```bash
 forge test
 ```
 
-Foundry will compile the contract, run the tests, and provide you with a summary of the results.
+Foundry compilará el contrato, ejecutará las pruebas y te proporcionará un resumen de los resultados.
 
-You should see output similar to the following:
+Deberías ver una salida similar a la siguiente:
 
 ```bash
 [⠊] Compiling...
@@ -216,11 +216,11 @@ Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skip
 
 ## 5. Desplegando el Contrato
 
-Once you’ve written and tested your Solidity contract, you can deploy it to Core Testnet/Mainnet.
+Una vez que hayas escrito y probado tu contrato en Solidity, puedes desplegarlo en la red de prueba (Testnet) o en la red principal (Mainnet) de Core.
 
 ### Paso 1: Configurando el despliegue
 
-To deploy your contract, you’ll need to set up a deployment script. create a file `Counter.s.sol` under script folder and paste the following code.
+Para desplegar tu contrato, necesitarás configurar un script de despliegue. crea un archivo `Counter.s.sol` en la carpeta script y pega el siguiente código.
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -244,9 +244,9 @@ contract CounterScript is Script {
 }
 ```
 
-#### Creating and Loading environment variables
+#### Creando y cargando variables de entorno
 
-create an `.env file` and add the following details
+crea un `archivo .env` y agrega los siguientes detalles
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -255,9 +255,9 @@ CORESCAN_API_KEY="YOUR_API_KEY"
 API_URL="https://api.test2.btcs.network/api"
 ```
 
-Make sure you replace `YOUR_API_KEY` and `YOUR_PRIVATE_KEY` with the actual values.
+Asegúrate de reemplazar `YOUR_API_KEY` y `YOUR_PRIVATE_KEY` con los valores reales.
 
-Now that you've created the above `.env` file, run the following command to load the environment variables in the current command line session:
+Ahora que has creado el archivo `.env`, ejecuta el siguiente comando para cargar las variables de entorno en la sesión actual de la línea de comandos:
 
 ```bash
 source .env
@@ -265,7 +265,7 @@ source .env
 
 ### Paso 2. Despliega el contrato
 
-To deploy the contract to Core testnet, use the `forge create`
+Para desplegar el contrato en el testnet de Core, utiliza el comando `forge create`
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
@@ -277,7 +277,7 @@ o usa el comando `forge script`
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
 ```
 
-After running the command, Foundry will compile and deploy your contract to the specified network. It will return the deployed contract’s address.
+Después de ejecutar el comando, Foundry compilará y desplegará tu contrato en la red especificada. Va a retornar la dirección del contrato desplegado.
 
 ```bash
 [⠊] Compiling...
@@ -289,14 +289,14 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Verificando el Contrato
 
-Foundry has a built-in feature to automatically verify contracts on Core. You can verify your contract using the `forge verify-contract` command:
+Foundry tiene una función incorporada para verificar automáticamente los contratos en Core. Puedes verificar tu contrato utilizando el comando `forge verify-contract`:
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gestionará el proceso de verificación. Puedes utilizar [ Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y confirmar que fue desplegado y verificado correctamente.
 
 ## Lectura adicional
 
-For detailed instructions on using Foundry, please visit[ Foundry's official website](https://book.getfoundry.sh/).
+Para obtener instrucciones detalladas sobre cómo usar Foundry, visita [el sitio web oficial de Foundry](https://book.getfoundry.sh/).
