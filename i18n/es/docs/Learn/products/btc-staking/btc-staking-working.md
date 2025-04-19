@@ -18,137 +18,137 @@ El bloqueo temporal CLTV es una función criptográfica nativa de Bitcoin que es
 
 - El BTC permanece bloqueado por una duración específica.
 - Una vez que expira el bloqueo de tiempo, los BTC se devuelven automáticamente al usuario.
-- Users earn staking rewards in CORE tokens for the locked duration.
+- Los usuarios ganan recompensas de staking en tokens CORE por la duración del bloqueo.
 
-Unlike custodial staking models that involve third parties, Core’s staking model allows users to retain full control over their Bitcoin while participating in the security of the network and earn rewards for it.
+A diferencia de los modelos de staking con custodia que involucran a terceros, el modelo de staking de Core permite a los usuarios mantener el control total de su Bitcoin mientras participan en la seguridad de la red y obtienen recompensas por ello.
 
-### How Bitcoin Staking Works on Core
+### Cómo funciona el staking de Bitcoin en Core
 
-#### 1. Creating a CLTV Staking Transaction
+#### 1. Creando una transacción de staking CLTV
 
-To participate, Bitcoin holders must initiate a **qualified CLTV transaction** on the Bitcoin network. To ensure that transactions are valid and to be picked as a delegation for validators on the Core network, stakers must include a script containing the following information:
+Para participar, los poseedores de Bitcoin deben iniciar una **transacción CLTV calificada** en la red de Bitcoin. Para asegurar que las transacciones sean válidas y puedan ser seleccionadas como delegaciones para los validadores en la red Core, los stakers deben incluir un script que contenga la siguiente información:
 
-- **Validator Delegation Address:** The Core validator the staker is delegating their Bitcoin to.
-- **Reward Address:** The address where the staker wants to receive CORE rewards.
+- **Dirección de Delegación del Validador:** El validador de Core al que el staker está delegando su Bitcoin.
+- **Dirección de Recompensa:** La dirección donde el staker desea recibir las recompensas en CORE.
 
-#### 2. Role of Core Relayers
+#### 2. Papel de los retransmisores de Core (relayers)
 
-**Relayers** in the Core ecosystem continuously **monitor the Bitcoin network** for valid Bitcoin staking transactions for Core validators. When a CLTV transaction is detected, the relayers:
+Los **relayers** en el ecosistema de Core **monitorean continuamente la red de Bitcoin** en busca de transacciones válidas de staking de Bitcoin para los validadores de Core. Cuando se detecta una transacción CLTV, los relayers:
 
-- Verify the transaction details.
-- Forward the information to Core’s **Consensus Engine** for processing.
-- Core’s **Consensus Engine** is then responsible for rewarding the stakers accordingly.
+- Verifican los detalles de la transacción.
+- Reenvían la información al **Motor de Consenso** de Core para su procesamiento.
+- El **Motor de Consenso** de Core es luego responsable de recompensar a los stakers de acuerdo con ello.
 
-### Security & Risk Considerations
+### Consideraciones de Seguridad y Riesgo
 
-- **No Custodial Risk:** Core’s mechanism does **not** move BTC off-chain or transfer it to third-party smart contracts.
-- **Bitcoin Remains in the User’s Wallet:** Users **always** retain full control over their staked BTC.
-- **No Protocol-Level Risk:** Staking only involves locking BTC via a Bitcoin-native function, ensuring safety and decentralization.
+- **Sin riesgo de custodia:** El mecanismo de Core **no** mueve BTC fuera de la cadena ni lo transfiere a contratos inteligentes de terceros.
+- **El Bitcoin permanece en la billetera del usuario:** Los usuarios **siempre** mantienen el control total sobre su BTC en staking.
+- **Sin riesgo a nivel de protocolo:** El staking solo implica bloquear BTC a través de una función nativa de Bitcoin, lo que garantiza seguridad y descentralización.
 
-### Requirements for Bitcoin Staking
+### Requisitos para el Staking de Bitcoin
 
-#### General Requirements
+#### Requisitos Generales
 
-To ensure a BTC staking transaction is **valid and detected** by Core’s relayers, users must:
+Para garantizar que una transacción de staking de BTC sea **válida y detectada** por los relayers de Core, los usuarios deben:
 
-1. **Use CLTV Timelock:** The BTC must be locked using a **Bitcoin-native timelock transaction** specifying the delegation details,as the transaction output.
-2. **Include an `OP_RETURN` Output:** The transaction must contain:
- - **Core Validator Address** (to delegate their staked Bitcoin).
- - **CORE Reward Address** (to receive staking rewards).
+1. **Usar CLTV Timelock:** El BTC debe estar bloqueado utilizando una **transacción de timelock nativa de Bitcoin** que especifique los detalles de la delegación, como la salida de la transacción.
+2. **Incluir una salida OP_RETURN:** La transacción debe contener:
+ - **Dirección del validador de Core** (para delegar su Bitcoin en staking).
+ - **Dirección de recompensa en CORE** (para recibir las recompensas del staking).
 
-#### Minimum Staking Requirements
+#### Requisitos mínimos de Staking
 
-| Method             | Minimum BTC Staked       | Minimum Lockup Duration |
-| ------------------ | ------------------------ | ----------------------- |
-| **Official UI**    | 0.01 BTC | 5 Days                  |
-| **Staking Script** | No Minimum               | No Lockup Requirement   |
+| Método                     | **BTC mínimo en staking** | Duración mínima del bloqueo |
+| -------------------------- | ------------------------- | --------------------------- |
+| \*\*Interfaz Official \*\* | 0.01 BTC  | 5 días                      |
+| **Script de Staking**      | Sin Mínimo                | No hay requisito de bloqueo |
 
-### Transaction Workflow
+### Flujo de las transacciones
 
-Core's implementation of Bitcoin staking is completely native and non-custodial, i.e., users can keep their Bitcoin assets on the Bitcoin network without bridging them out before staking.
+La implementación de staking de Bitcoin en Core es completamente nativa y sin custodia, es decir, los usuarios pueden mantener sus activos de Bitcoin en la red de Bitcoin sin tener que trasladarlos antes de hacer staking.
 
 <p align="center">
 ![btc-staking-tx-workflow](../../../../static/img/btc-staking/btc-staking-flow-new.png)
 </p>
 
-Core's Non-Custodial BTC Staking operations are conducted on two separate blockchains—Bitcoin and Core. The following table identifies what happens in each blockchain for Bitcoin holders to earn staking rewards successfully through non-custodial Bitcoin staking. It's important to note that Core's Non-Custodial Bitcoin Staking does not introduce any additional risks or trust assumptions. Beyond monitoring and verifying Bitcoin staking transactions and accrual and claiming rewards, all operations—including asset locking, redemption, and asset management—remain securely on the Bitcoin network.
+Tenga en cuenta que las operaciones de Staking sin Custodia de BTC se realizan en dos cadenas de bloques separadas: Bitcoin y Core. La siguiente tabla identifica lo que sucede en cada cadena de bloques para que los poseedores de Bitcoin ganen recompensas de staking exitosamente a través del staking sin custodia de Bitcoin. Es importante señalar que el Staking sin Custodia de Bitcoin en Core no introduce riesgos adicionales ni supuestos de confianza. Más allá de monitorear y verificar las transacciones de staking de Bitcoin, la acumulación y la reclamación de recompensas, todas las operaciones, incluidos el bloqueo de activos, el canje y la gestión de activos, permanecen de manera segura en la red Bitcoin.
 
-| **Step**                                       | **Bitcoin Network**                                                                                                                                                                                                                                | **Core Network**                                                                          |
-| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| **1. Initiate Staking**        | User crafts a **CLTV timelock** transaction, locking BTC for a chosen duration, and specifying delegation details in `OP_RETURN`.                                                                                                  | Relayers monitor Bitcoin transactions for valid staking activity.         |
-| **2. Broadcast Transaction**   | User sends the **CLTV transaction** on the Bitcoin network.                                                                                                                                                                        | Relayers track and validate the transaction.                              |
-| **3. Locking Period Begins**   | BTC is locked in the user's wallet on the Bitcoin network. Once confirmed (which can take hours due to block time, confirmations, and congestion), the locked assets appear in staking records. | Relayers register the locked BTC and update Core’s staking records.       |
-| **4. Relayer Detection**       | Relayers detect the staking transaction on Bitcoin.                                                                                                                                                                                | They verify and forward it to Core’s Consensus Engine.                    |
-| **5. Staking Rewards Accrual** | BTC remains locked, but rewards accumulate on Core.                                                                                                                                                                                | CORE token rewards accrue during staking; users must claim them manually. |
-| **6. Unlocking Bitcoin**       | After the timelock expires, the user **must** send a Redeem script to regain access to their locked BTC.                                                                                                                           | Relayers update the staking records to reflect BTC unlocking.             |
+| **Paso**                                                                      | **Red de Bitcoin**                                                                                                                                                                                                                                                                            | **Red de Core**                                                                                                                       |
+| ----------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| **1. Iniciar el staking. Iniciar el staking** | El usuario crea una transacción **CLTV con timelock**, bloqueando BTC por una duración elegida y especificando los detalles de la delegación en `OP_RETURN`.                                                                                                                  | Los relayers monitorean transacciones de Bitcoin por actividad válida de staking.                                     |
+| **2. Transmitir transacción**                                 | El usuario envía la **transacción CLTV** a la red de Bitcoin.                                                                                                                                                                                                                 | Los relayers rastrean y validan la transacción.                                                                       |
+| **3. Comienza el periodo de bloqueo**                         | El BTC se bloquea en la billetera del usuario en la red de Bitcoin. Una vez confirmados (lo cual puede tomar horas debido al tiempo del bloque, confirmaciones y congestión), los activos bloqueados aparecen en los registros de staking. | Los relayers registran el BTC bloqueado y actualizan los registros de staking de Core.                                |
+| \*\*4. Detección por los relayers                             | Los relayers detectan la transacción de staking en la red de Bitcoin.                                                                                                                                                                                                         | La verifican y la reenvían al Motor de Consenso de Core.                                                              |
+| **5. Acumulación de Recompensas por Staking**                 | El BTC permanece bloqueado, pero las recompensas se acumulan en Core.                                                                                                                                                                                                         | Las recompensas en tokens CORE se acumulan durante el periodo de staking; los usuarios deben reclamarlas manualmente. |
+| **6. Desbloqueo del Bitcoin**                                 | Después de que expire el timelock, el usuario **debe** enviar un script de canje para recuperar el acceso a su BTC bloqueado.                                                                                                                                                 | Los relayers actualizan los registros de staking para reflejar el desbloqueo del BTC.                                 |
 
-**Important:** Users can also **redelegate** BTC directly without first redeeming it.\
-_**(_Optional_)**_ After the transaction is confirmed on the Bitcoin network, users can retrieve the transaction data and submit it to the Core blockchain. This step is optional if users compose the transaction in a standard format, as suggested by Core. Relayers from the Core infrastructure will detect the staking transaction and submit it to the Core blockchain for users.
+**Importante:** Los usuarios también pueden **redelegar** BTC directamente sin necesidad de redimirlo primero.\
+_**(_Opcional_)**_ Después de que la transacción sea confirmada en la red Bitcoin, los usuarios pueden recuperar los datos de la transacción y enviarlos a la blockchain de Core. Este paso es opcional si los usuarios componen la transacción en un formato estándar, como lo sugiere Core. Los relayers de la infraestructura de Core detectarán la transacción de staking y la enviarán a la cadena de bloques de Core en nombre de los usuarios.
 
-#### Step-by-Step Staking Process
+#### Proceso de staking paso a paso
 
-1. **Locking Bitcoin**
- - The user creates a **CLTV timelock transaction** on the Bitcoin network.
- - Minimum lock duration depends on the staking method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+1. **Bloqueo del Bitcoin**
+ - El usuario crea una **transacción CLTV con bloqueo de tiempo** en la red de Bitcoin.
+ - La duración mínima del staking depende del método utilizado. La interfaz web oficial requiere un mínimo de 5 días, mientras que el staking mediante script no tiene requisito de bloqueo.
 
-2. **Delegating to a Core Validator**
- - The staking transaction must include:
-  - **Core Validator Address** (for delegation of BTC).
-  - **CORE Reward Address** (for receiving CORE rewards).
+2. **Delegar a un validador de Core**
+ - La transacción de staking debe incluir:
+  - **Dirección del validador de Core** (para la delegación de BTC).
+  - **Dirección de recompensa CORE** (para recibir las recompensas CORE).
 
-3. **Bitcoin Lock Period Begins**
- - The BTC is locked for the selected duration.
- - It remains **securely on the Bitcoin network** without moving off-chain.
+3. **Comienza el período de bloqueo de Bitcoin**
+ - El BTC permanece bloqueado por una duración específica.
+ - Permanece **de manera segura en la red de Bitcoin** sin moverse fuera de la cadena.
 
-4. **Validator Selection & Rewards Accrual**
- - Core uses the staked BTC to calculate the validator’s hybrid score.
- - Higher delegated BTC increases validator election chances.
- - Stakers earn **CORE token rewards** based on delegation duration.
+4. **Selección de Validador y Acumulación de Recompensas**
+ - Core utiliza el BTC apostado para calcular el puntaje híbrido del validador.
+ - Un mayor BTC delegado aumenta las probabilidades de elección del validador.
+ - Los stakers ganan **recompensas en tokens CORE** basadas en la duración de la delegación.
 
-5. **Redeeming Bitcoin After Staking Ends**
- - Once the timelock expires, BTC **remains in the user’s address but stays locked**.
- - The user must send a **Redeem script** explicitly after the timelock period ends to regain access and be able to spend their BTC.
- - Alternatively, users can **redelegate directly** without redemption.
+5. **Redimir Bitcoin después de que termine el staking**
+ - Una vez que expire el timelock, el BTC **permanece en la dirección del usuario pero queda bloqueado**.
+ - El usuario debe enviar un **script de canje** explícitamente después de que termine el período de timelock para recuperar el acceso y poder gastar su BTC.
+ - Alternativamente, los usuarios pueden **volver a delegarlo directamente** sin necesidad de canjearlo.
 
-### Timeline for Non-Custodial Bitcoin Staking
+### Cronograma para el Staking de Bitcoin sin Custodia
 
-Here’s an overview of the timeline for placing a Bitcoin staking order and when rewards take effect:
+Aquí tienes una descripción general del cronograma para realizar una orden de staking de Bitcoin y cuándo comienzan a aplicarse las recompensas:
 
-1. **Staking Order Placement:** Once a staking order is placed, it typically takes 6 Bitcoin blocks (roughly 60 minutes) for the Bitcoin transaction to be transferred to the Core blockchain.
-2. **Staking Reward Activation:** After the Bitcoin transaction transfer is completed, it takes one round (~24 hours, based on UTC+0 time) for the staking reward to become effective.
-3. **Staking Data Accessibility:** After the staking becomes effective, staking data will be available via the Staking API.
+1. **Colocación de la orden de staking:** Una vez que se coloca la orden de staking, normalmente toma 6 bloques de Bitcoin (aproximadamente 60 minutos) para que la transacción de Bitcoin se transfiera a la blockchain de Core.
+2. **Activación de la recompensa de staking:** Después de que se complete la transferencia, toma una ronda (~24 horas, basada en la hora UTC+0) para que la recompensa de staking entre en vigor.
+3. **Accesibilidad de los datos de staking:** Después de que el staking se haga efectivo, los datos de staking estarán disponibles a través de la API de Staking.
 
-#### **Example: Bitcoin Staking Transaction with 2-day Duration**
+#### **Ejemplo: Transacción de staking de Bitcoin con una duración de 2 días**
 
-- Assume a staking order is placed at 6:00 AM UTC+0 today.
-- The transaction will go through 6 Bitcoin blocks on the same day.
-- The staking will become effective at 00:00 AM UTC+0 on the second day.
-- After the staking goes effective, the staking data is then accessible.
+- Supongamos que se coloca una orden de staking a las 6:00 AM UTC+0 de hoy.
+- La transacción pasará por 6 bloques de Bitcoin en el mismo día.
+- El staking se hará efectivo a las 00:00 AM UTC+0 del segundo día.
+- Después de que el staking se haga efectivo, sus datos estarán disponibles.
 
-#### **Example: Bitcoin Staking Transaction with 3-day Duration**
+#### **Ejemplo: Transacción de Staking de Bitcoin con Duración de 3 Días**
 
-- Assume a staking order is placed at 11:30 PM UTC+0.
-- The transaction will go through 6 Bitcoin blocks on the next day.
-- The staking will become effective at 12:00 AM UTC+0 on the third day.
-- After the staking goes effective, the staking data is then accessible.
+- Supón que se coloca una orden de staking a las 11:30 PM UTC+0.
+- La transacción pasará por 6 bloques de Bitcoin al día siguiente.
+- El staking se hará efectivo a las 12:00 AM UTC+0 del tercer día.
+- Después de que el staking se haga efectivo, sus datos estarán disponibles.
 
-### Guidelines for Staking/Redeeming Bitcoin
+### Guías para hacer staking o canjear Bitcoin
 
-Please follow these guidelines to ensure smooth transactions when staking or redeeming your Bitcoin. Following these recommendations can ensure a more efficient staking and redemption process for your Bitcoin.
+Por favor, siga estas directrices para asegurar transacciones fluidas al hacer staking o canjear su Bitcoin. Seguir estas recomendaciones puede asegurar un proceso más eficiente de staking y canjeo para su Bitcoin.
 
-1. **Avoid Low Gas Fees**
- - Transactions with **low gas fees** may experience long confirmation times.
- - Use a **competitive network fee** to ensure timely processing.
- - Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
+1. **Evitar Tarifas de Gas Bajas**
+ - Las transacciones con **bajas comisiones de gas** pueden experimentar largos tiempos de confirmación.
+ - Utiliza una **comisión de red competitiva** para asegurar un procesamiento oportuno.
+ - Usar una comisión de gas demasiado baja, especialmente durante períodos de congestión de la red, puede hacer que tu transacción de Bitcoin tarde un tiempo prolongado (potencialmente días) en ser confirmada.
 
-2. **Handling Stuck Transactions**
+2. **Manejo de transacciones atascadas**
 
-- If your Bitcoin transaction is delayed due to a low gas fee, consider using a **Bitcoin transaction accelerator**.
-- Free acceleration services, such as [viaBTC](https://www.viabtc.com/tools/txaccelerator), can help speed up confirmations.
-- It is recommended to research and choose a service that best fits your needs.
+- Si su transacción de Bitcoin se retrasa debido a una tarifa de gas baja, considere usar un **acelerador de transacciones de Bitcoin**.
+- Los servicios de aceleración gratuitos, como [viaBTC](https://www.viabtc.com/tools/txaccelerator), pueden ayudar a acelerar las confirmaciones.
+- Se recomienda investigar y elegir un servicio que se adapte mejor a tus necesidades.
 
-## Conclusion
+## Conclusión
 
-Core’s **Non-Custodial Bitcoin Staking** transforms Bitcoin from a passive store of value into a productive asset—**securely and without custodial risk**. By leveraging Bitcoin-native staking, BTC holders can contribute to Core’s security, earn CORE rewards, and maximize asset utility while keeping full control over their Bitcoin.
+El **Staking de Bitcoin sin Custodia** de Core transforma Bitcoin de un valor de reserva pasivo a un activo productivo—**de manera segura y sin riesgo de custodia**. Al aprovechar el staking nativo de Bitcoin, los poseedores de BTC pueden contribuir a la seguridad de Core, ganar recompensas en CORE y maximizar la utilidad de sus activos mientras mantienen el control total sobre su Bitcoin.
 
-For a detailed guide on staking transaction design, refer [here](design.md).
+Para una guía detallada sobre el diseño de transacciones de staking, consulta [aquí](design.md).
