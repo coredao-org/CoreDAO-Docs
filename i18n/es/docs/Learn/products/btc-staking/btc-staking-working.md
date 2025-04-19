@@ -1,23 +1,23 @@
 ---
-sidebar_label: How It Works
+sidebar_label: Cómo funciona
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How Non-Custodial Bitcoin Staking Works {#how-non-custodial-bitcoin-staking-works}
+# Cómo Funciona el Staking sin Custodia de Bitcoin\*\* {#how-non-custodial-bitcoin-staking-works}
 
-Non-Custodial Bitcoin Staking is one of the three fundamental components of Core’s Satoshi Plus consensus. This feature integrates Bitcoin holders into Core’s ecosystem, enhancing network security while enabling Bitcoin to become a yield-generating asset.
+El Staking sin Custodia de Bitcoin es uno de los tres fundamentos del mecanismo de consenso Satoshi Plus de Core. Esta función integra a los poseedores de Bitcoin en el ecosistema de Core, mejorando la seguridad de la red mientras permite que el Bitcoin se convierta en un activo generador de rendimiento.
 
-Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on their otherwise passive Bitcoin for however long they set the time lock (i.e., delegate their Bitcoin to validators on the Core network). Core’s Non-Custodial Bitcoin Staking results in billions of dollars in underutilized Bitcoin value becoming productive, remunerating stakers while expanding the scope of Bitcoin's utility.
+Los stakers de Bitcoin ganan rendimiento como recompensas de staking en forma de tokens CORE por su Bitcoin normalmente pasivo durante el período de bloqueo que definan (es decir, delegan su Bitcoin a validadores en la red Core). El Staking sin Custodia de Bitcoin en Core convierte miles de millones de dólares en valor no aprovechado de Bitcoin en algo productivo, remunerando a los stakers mientras amplía el alcance de los casos de uso de Bitcoin.
 
-Unlike traditional staking mechanisms that require users to transfer custody of their assets, Core's approach leverages [CheckLockTimeVerify (CLTV)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) timelock, a Bitcoin-native cryptographic function. This ensures Bitcoin remains securely in users’ wallets while still being staked on the Core network.
+A diferencia de los mecanismos tradicionales de staking que requieren que los usuarios transfieran la custodia de sus activos, el enfoque de Core aprovecha [CheckLockTimeVerify (CLTV)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una función criptográfica nativa de Bitcoin basada en bloqueo por tiempo. Esto asegura que el Bitcoin permanezca de forma segura en las carteras de los usuarios mientras sigue siendo utilizado en staking en la red Core.
 
-## How CLTV Timelock Works
+## Cómo funciona el bloqueo temporal CLTV (CheckLockTimeVerify)
 
-CLTV timelock is a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a specific point in time has passed. This time can be defined as a specific date and time or by block height. CLTV acts as a time-locked vault, restricting access to staked Bitcoin until a predetermined time elapses. When a user initiates a CLTV transaction:
+El bloqueo temporal CLTV es una función criptográfica nativa de Bitcoin que especifica una condición bajo la cual la salida de una transacción no puede ser gastada hasta que haya pasado un punto específico en el tiempo. Este tiempo puede definirse como una fecha y hora específica o por la altura del bloque. CLTV actúa como una bóveda con bloqueo temporal, restringiendo el acceso a los Bitcoines en staking hasta que transcurre un tiempo predeterminado. Cuando un usuario inicia una transacción CLTV:
 
-- The BTC remains locked for a specific duration.
-- Once the timelock expires, the BTC is automatically returned to the user.
+- El BTC permanece bloqueado por una duración específica.
+- Una vez que expira el bloqueo de tiempo, los BTC se devuelven automáticamente al usuario.
 - Users earn staking rewards in CORE tokens for the locked duration.
 
 Unlike custodial staking models that involve third parties, Core’s staking model allows users to retain full control over their Bitcoin while participating in the security of the network and earn rewards for it.
