@@ -1,0 +1,118 @@
+---
+sidebar_label: RPC Node
+hide_table_of_contents: false
+sidebar_position: 2
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# RPC Nodes on Core
+
+---
+
+Les nœuds RPC (Remote Procedure Call) sur le réseau Core jouent un rôle essentiel en facilitant l'interaction entre les applications externes et la blockchain Core. Ils servent d'interface à travers laquelle les développeurs et les utilisateurs peuvent interroger et interagir avec la blockchain, ce qui les rend indispensables pour le bon fonctionnement des applications décentralisées (DApps) et d'autres services basés sur la blockchain.
+
+## Requis Systèmes
+
+Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires pour configurer un nœud RPC sur le réseau Core.
+
+### Logiciel
+
+- **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+- **Network Connectivity:** Stable internet connection with low latency and high availability.
+- **Firewall Configuration:** To ensure your RPC Node can communicate with external applications and other nodes, you need to allow inbound HTTP traffic on port 8575, which is the default port for RPC communication. You can adjust this setting in the config.toml file if you prefer using a different port. Make sure that your firewall settings are properly configured to allow traffic on this port.
+
+### Matériel
+
+An RPC Node on Core acts as a gateway for applications, developers, and users to interact with the blockchain. It processes queries, submits transactions, and retrieves real-time blockchain data via Remote Procedure Calls (RPC). These nodes are essential for dApps, wallets, and analytics platforms to seamlessly access Core’s network. Following are the hardware requirements for RPC Node on Core.
+
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes   |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
+
+  </TabItem>
+  <TabItem value="testnet">
+    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes   |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
+
+  </TabItem>
+  <TabItem value="mainnet">
+    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+
+```
+| Requirements   | Details                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+| **CPU**            | 8 CPU cores |
+| **RAM**            | 16 Gigabytes  |
+| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+```
+
+  </TabItem>
+</Tabs>
+
+## Exécution d'un Nœud RPC
+
+### Activation du Port HTTP Entrant
+
+Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` sur le port **8575** dans les paramètres du pare-feu. Le port **8575** est défini comme port par défaut. Vous pouvez modifier les configurations dans `config.toml`.
+
+### Compilation et Exécution
+
+1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+
+2\. Download the node binary from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+
+3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+
+```bash
+geth --datadir node init genesis.json
+```
+
+Vous devriez voir le message suivant :
+
+```bash
+INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
+INFO [07-18|14:57:20.724] Writing custom genesis block 
+INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
+INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
+INFO [07-18|14:57:20.729] Writing custom genesis block 
+INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
+```
+
+4\. Votre nœud RPC complet est prêt, lançons-le !
+
+Si vous envisagez d'exécuter un nœud RPC, vous pouvez simplement exécuter la commande `geth` suivante :
+
+```bash
+## start a RPC node
+geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=full --rpc.allow-unprotected-txs
+```
+
+5\. Pendant que votre nœud RPC complet fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.

@@ -1,0 +1,59 @@
+---
+sidebar_label: Por qué Core
+hide_table_of_contents: false
+sidebar_position: 2
+---
+
+# Por qué  Core
+
+---
+
+Core es la primera capa de Proof of Stake (PoS) de Bitcoin y el ecosistema DeFi más grande basado en Bitcoin, combinando la seguridad inigualable de Bitcoin con la escalabilidad del consenso Satoshi Plus. Core desbloquea rendimiento nativo de Bitcoin, contratos inteligentes impulsados por Bitcoin, una segunda recompensa por bloque para los mineros y un ecosistema DeFi de Bitcoin de extremo a extremo.
+
+En términos generales, Core representa un cambio de paradigma en la forma en que utilizamos Bitcoin. Amplifica su papel como reserva de valor a través de la Tasa Libre de Riesgo de Bitcoin (Bitcoin Risk-Free Rate) y facilita su transición a medio de intercambio al proporcionar una infraestructura blockchain asegurada por Bitcoin pero altamente escalable, permitiendo transacciones más eficientes y una variedad de otros casos de uso. El enfoque de Core no solo se alinea con la ética de Bitcoin de descentralización, transparencia y ausencia de permisos, sino que también protege y mejora la red base de Bitcoin.
+
+<p align="center">
+![why-core-dao-infrographics](../../../static/img/Why-Core.png)
+</p>
+
+## Características Clave que Distinguen a Core
+
+Core es una red blockchain descentralizada, segura y escalable respaldada por la Prueba de Trabajo (PoW) de Bitcoin. Algunas de las principales características que lo distinguen de sus competidores son las siguientes:
+
+- **Alineado con Bitcoin:** Core está diseñado para desbloquear la protección de Bitcoin al permitir que los mineros de Bitcoin deleguen su seguridad a una plataforma de contratos inteligentes compatible con EVM y subsidien la minería de Bitcoin al proporcionar recompensas en tokens CORE a los mineros de Bitcoin, sin que se requieran gastos adicionales ni costo de oportunidad. Mientras que Bitcoin sirve como el defensor de un activo monetario perfectamente escaso y pasivo, Core está diseñado para ser la infraestructura descentralizada sobre la cual los activos digitales, como Bitcoin, ganan una utilidad sustancial. Además, Core ofrece una tasa libre de riesgo a los stakers de Bitcoin, quienes son recompensados financieramente en el ecosistema de Core a cambio de hacer staking con su Bitcoin. Estas recompensas pueden ser en forma de recompensas por bloque a través de delegaciones o recompensas por staking al hacer staking de Bitcoin en Core. Actualmente, más del **75 %** del poder de cómputo de minería de Bitcoin y, a través de la innovadora solución de staking sin custodia de Bitcoin, más de **8,200** Bitcoines ya están contribuyendo al modelo de seguridad de Core.
+
+- **Descentralizado:** La descentralización de Core se facilita a través del sistema de tres partes mediante el cual los validadores son elegidos bajo el consenso Satoshi Plus. Por un lado, los mineros de Bitcoin pueden votar por los validadores escribiendo datos en las transacciones coinbase de los bloques de Bitcoin recién minados (DPoW). Por otro lado, los holders de tokens CORE pueden votar por los validadores delegando tokens CORE a ellos (DPoS). Debido a que el poder de hash de Bitcoin y los tokens CORE están altamente distribuidos, tanto los aspectos DPoW como DPoS del consenso Satoshi Plus trabajan juntos para mantener la descentralización de la blockchain de Core. Los Stakers de Bitcoin también juegan un papel importante en la descentralización de la red de Core. Ayudan en las elecciones de validadores junto con los holders de tokens CORE en el DPoS, aprovechando el poder de hash distribuido de Bitcoin.
+
+- **Seguro:** La seguridad de la blockchain de Core se basa en varios pilares. El más importante de estos pilares es el Mecanismo de Consenso Satoshi Plus, que logra la descentralización a través de una combinación de DPoW, DPoS y Staking sin Custodia de Bitcoin. La combinación de estos elementos aprovecha a los mineros de Bitcoin, a los Stakers de Bitcoin y a los Stakers de Core para mantener la seguridad de la red. A través del modelo de seguridad de la blockchain de Core, la red puede evitar ataques al consenso mediante sus estructuras de incentivos, que incluyen recompensas para los participantes que identifiquen nodos maliciosos y mecanismos para castigar a esos nodos. Además, incorpora puntos de control y salvaguardias similares para prevenir otros tipos de ataques a largo plazo. Para fortalecer aún más su red y evitar ataques que puedan surgir debido a fallos en la base de código, la base de código de la blockchain de Core es auditada por varias de las principales firmas de seguridad blockchain.
+
+- **Escalable:** Core es altamente escalable, capaz de soportar eventualmente una gran base de usuarios, con un alto rendimiento de transacciones y baja latencia. Esto se debe en parte al hecho de que el DPoS es inherentemente más escalable que el PoS estándar o el PoW, y en parte al hecho de que la red puede aumentar la tasa a la que se minan bloques al agregar muchos más validadores. Además, se desarrollarán soluciones adicionales de escalabilidad sobre la red en el futuro.
+
+- **Sin permisos:** La ausencia de permisos en la blockchain de Core significa que cualquier persona puede participar y construir sobre Core, sin la aprobación ni autorización de ninguna entidad que controle el acceso. La descentralización de la red, el software de código abierto y el modelo de consenso están diseñados para mantener esta ausencia de permisos de manera perpetua.
+
+- **Gobernanza Comunitaria:** La gobernanza de la blockchain de Core es una combinación de componentes inmutables y mutables. Los aspectos inmutables son aquellos que deben mantenerse fijos, como el suministro total de CORE. Sin embargo, otros aspectos de la gobernanza en la cadena se beneficiarían de la adaptabilidad. Para esos aspectos, la organización autónoma descentralizada responsable del desarrollo de la red, Core DAO, está diseñada para volverse progresivamente más descentralizada a medida que crece la participación en la cadena. Todos los holders de tokens CORE podrán votar sobre las adaptaciones de ciertos parámetros del protocolo. Como participantes en la red, los Stakers de Bitcoin pueden influir potencialmente en la gobernanza de la blockchain de Core a través de su participación económica y su involucramiento en las actividades de consenso. Su participación asegura que una base amplia de la comunidad, incluidos aquellos invertidos en Bitcoin, tenga voz en el camino evolutivo de los protocolos y políticas de la red.
+
+- **Interoperable:** Core puede interactuar con una amplia variedad de proyectos blockchain. Debido a que es compatible con EVM, todos los protocolos en Core pueden interactuar entre sí, los protocolos basados en Ethereum pueden ser portados a Core con relativa facilidad, y las soluciones cross-chain permiten la comunicación con otras blockchains. Además de la compatibilidad con EVM, Core también ofrece interoperabilidad con Bitcoin en forma de Staking Sin Custodia de Bitcoin, donde los usuarios pueden hacer staking de su Bitcoin en Core sin tener que renunciar a la custodia de sus activos mantenidos en la red de Bitcoin. Además, coreBTC ofrece a Bitcoin la interoperabilidad para ser puenteado a la blockchain de Core y ser utilizado en el entorno DeFi.
+
+- **Componible:** Para Core, la componibilidad se logra mediante el soporte del popular lenguaje de contratos inteligentes Solidity. Solidity permite a los desarrolladores crear contratos inteligentes que pueden llamar a funciones dentro de otros contratos, enviar tokens CORE a estos contratos e incluso crear nuevas instancias de contratos. Esto permite construir sistemas complejos e interconectados de contratos capaces de facilitar préstamos entre pares, fondos de liquidez abiertos, plataformas de trading, datos on-chain precisos en tiempo real y mucho más.
+
+## Core ofrece algo para todos
+
+Core es una síntesis blockchain que desbloquea algo para todos. Aquí hay algunos de los muchos grupos interesados y cómo Core los apoya:
+
+- **Holders de Bitcoin:** Core pone a trabajar tu Bitcoin sin requerir que renuncies a la custodia. Los holders de Bitcoin pueden obtener la Tasa Libre de Riesgo de Bitcoin a través del Staking Sin Custodia de Bitcoin de Core. Sin necesidad de puentear tu Bitcoin ni participar necesariamente en el DeFi de Core, los holders de Bitcoin pueden ganar más simplemente continuando con su posesión.
+
+- **Usuarios de Bitcoin:** Para aquellos interesados en usar Bitcoin como medio de intercambio, Core hace que las transacciones de Bitcoin y la actividad financiera sean prácticas con sus rápidas, eficientes y protegidas infraestructuras blockchain respaldadas por Bitcoin. En Core, el activo Bitcoin obtiene un ecosistema financiero hecho a medida que sus usuarios pueden disfrutar sin necesidad de permisos.
+
+- **Instituciones:** Core ofrece a las instituciones oportunidades innovadoras de rendimiento a través del staking de Bitcoin. Al colaborar con los principales custodios y gestores de activos, Core mejora la eficiencia de capital y la programabilidad de Bitcoin, lo que permite la creación de nuevos productos financieros como lstBTC, el ETP generador de rendimiento de Valour BTC, y CoreFi, un valor apalancado listado en la CBOE. Las instituciones pueden beneficiarse de la infraestructura segura de Core, accediendo al rendimiento en la cadena y la integración sin problemas con Bitcoin.
+
+- **Usuarios de DeFi:** Los expertos en DeFi pueden encontrar muchos casos de uso familiares en el ecosistema dapp de Core, dado que Core es totalmente compatible con EVM y admite una variedad de casos de uso de contratos inteligentes. Hay muchas oportunidades disponibles para prestar, pedir prestado, intercambiar y otras actividades. Este ecosistema joven y en crecimiento es una gran oportunidad para que los veteranos de DeFi inicien su viaje a BTCfi.
+
+- **Entusiastas de Web3:** Más allá de DeFi, la integridad de Turing de Core abre la puerta a una variedad de casos de uso habilitados para blockchain. Las NFT, los juegos y otras funciones son un lienzo abierto para los creyentes en una Internet abierta y propiedad de los usuarios.
+
+- **Builders:** Core no tiene permisos y es compatible con EVM, lo que significa que cualquier desarrollador con experiencia en Solidity puede crear una dapp y ejecutarla con familiaridad. Core también alberga un sólido ecosistema de herramientas de desarrollo y proveedores de infraestructura, lo que hace que la construcción sea una experiencia perfecta. Core también tiene un ecosistema vibrante de usuarios listos para el surgimiento de dapps de próxima generación impulsadas por Bitcoin.
+
+- **Mineros de Bitcoin:** La prueba de trabajo delegada de Core desbloquea una recompensa del segundo bloque para los mineros de Bitcoin que siempre están buscando recompensas críticas. Además, Core extiende la protección de los mineros de Bitcoin más allá del mero activo de Bitcoin y hacia un ecosistema que puede aprovechar plenamente el potencial de ese activo.
+
+- **Partidarios de Bitcoin:** Incluso sin interactuar personalmente con la cadena de bloques Core, los partidarios de Bitcoin pueden apreciar cómo Core se alinea con Bitcoin para mejorar tanto la red como los activos de Bitcoin. Con mineros mejor recompensados ​​y, por lo tanto, más incentivados, la red Bitcoin se fortalece, mientras que el activo Bitcoin gana un entorno de contrato inteligente sofisticado.
+
+- **Creyentes de la libertad:** Core es una cadena de bloques totalmente sin permisos que permite participar a cualquier persona en todo el mundo. Este espíritu promueve oportunidades financieras para las comunidades que más pueden beneficiarse del surgimiento y la popularidad de Bitcoin y la tecnología blockchain.
