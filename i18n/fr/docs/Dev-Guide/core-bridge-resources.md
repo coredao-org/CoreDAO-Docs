@@ -28,22 +28,22 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 | MPTValidatorV1                                                                                          | [0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7](https://scan.coredao.org/address/0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7) |
 | TreasuryV2                                                                                              | [0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c](https://scan.coredao.org/address/0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c) |
 
-### Bridges and Tokens contracts on Core
+### Ponts et contrats de jetons sur Core
 
-| CORE                                   | Address                                                                                                                   |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| WrappedTokenBridge                     | [0xa4218e1f39da4aadac971066458db56e901bcbde](https://scan.coredao.org/address/0xa4218e1f39da4aadac971066458db56e901bcbde) |
-| WETH                                   | [0xeab3ac417c4d6df6b143346a46fee1b847b50296](https://scan.coredao.org/address/0xeab3ac417c4d6df6b143346a46fee1b847b50296) |
-| USDC                                   | [0xa4151b2b3e269645181dccf2d426ce75fcbdeca9](https://scan.coredao.org/address/0xa4151b2b3e269645181dccf2d426ce75fcbdeca9) |
-| USDT                                   | [0x900101d06a7426441ae63e9ab3b9b0f63be145f1](https://scan.coredao.org/address/0x900101d06a7426441ae63e9ab3b9b0f63be145f1) |
-| WBTC                                   | [0x5832f53d147b3d6Cd4578B9CBD62425C7ea9d0Bd](https://scan.coredao.org/address/0x5832f53d147b3d6Cd4578B9CBD62425C7ea9d0Bd) |
-| Bitcoin BEP2 (BTCB) | [0x7A6888c85eDBA8E38F6C7E0485212da602761C08](https://scan.coredao.org/address/0x7A6888c85eDBA8E38F6C7E0485212da602761C08) |
-| WBNB                                   | [0xdFBc618d3c48e553Cb197F42482A0795bef7fe28](https://scan.coredao.org/address/0xdFBc618d3c48e553Cb197F42482A0795bef7fe28) |
-| stCORE                                 | [0xb3a8f0f0da9ffc65318aa39e55079796093029ad](https://scan.coredao.org/token/0xb3a8f0f0da9ffc65318aa39e55079796093029ad)   |
+| CORE                                   | Adresse                                                                                                                                                                                                                                              |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| WrappedTokenBridge                     | [0xa4218e1f39da4aadac971066458db56e901bcbde](https://scan.coredao.org/address/0xa4218e1f39da4aadac971066458db56e901bcbde)https://scan.coredao.org/address/0xa4218e1f39da4aadac971066458db56e901bcbde |
+| WETH                                   | [0xeab3ac417c4d6df6b143346a46fee1b847b50296](https://scan.coredao.org/address/0xeab3ac417c4d6df6b143346a46fee1b847b50296)                                                                                                                            |
+| USDC                                   | [0xa4151b2b3e269645181dccf2d426ce75fcbdeca9](https://scan.coredao.org/address/0xa4151b2b3e269645181dccf2d426ce75fcbdeca9)                                                                                                                            |
+| USDT                                   | [0x900101d06a7426441ae63e9ab3b9b0f63be145f1](https://scan.coredao.org/address/0x900101d06a7426441ae63e9ab3b9b0f63be145f1)                                                                                                                            |
+| WBTC                                   | [0x5832f53d147b3d6Cd4578B9CBD62425C7ea9d0Bd](https://scan.coredao.org/address/0x5832f53d147b3d6Cd4578B9CBD62425C7ea9d0Bd)                                                                                                                            |
+| Bitcoin BEP2 (BTCB) | [0x7A6888c85eDBA8E38F6C7E0485212da602761C08](https://scan.coredao.org/address/0x7A6888c85eDBA8E38F6C7E0485212da602761C08)                                                                                                                            |
+| WBNB                                   | [0xdFBc618d3c48e553Cb197F42482A0795bef7fe28](https://scan.coredao.org/address/0xdFBc618d3c48e553Cb197F42482A0795bef7fe28)                                                                                                                            |
+| stCORE                                 | [0xb3a8f0f0da9ffc65318aa39e55079796093029ad](https://scan.coredao.org/token/0xb3a8f0f0da9ffc65318aa39e55079796093029ad)                                                                                                                              |
 
 ### Ethereum
 
-| Name                | Address                                                                                                               |
+| Nom                 | Adresse                                                                                                               |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://etherscan.io/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | WETH                | [0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2) |
@@ -53,7 +53,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### BNB Smart Chain (BSC)
 
-| Name                | Address                                                                                                              |
+| Nom                 | Adresse                                                                                                              |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://bscscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | USDC                | [0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d](https://bscscan.com/address/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d) |
@@ -63,7 +63,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### Polygon
 
-| Name                | Address                                                                                                                  |
+| Nom                 | Adresse                                                                                                                  |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge | [0x52e75d318cfb31f9a2edfa2dfee26b161255b233](https://polygonscan.com/address/0x52e75d318cfb31f9a2edfa2dfee26b161255b233) |
 | USDC                | [0x2791bca1f2de4661ed88a30c99a7a9449aa84174](https://polygonscan.com/address/0x2791bca1f2de4661ed88a30c99a7a9449aa84174) |
@@ -72,7 +72,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### Optimism
 
-| Name                | Address                                                                                                                          |
+| Nom                 | Adresse                                                                                                                          |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x29d096cD18C0dA7500295f082da73316d704031A](https://optimistic.etherscan.io/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | USDC                | [0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85](https://optimistic.etherscan.io/address/0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85) |
@@ -81,7 +81,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### Avalanche
 
-| Name                                                                 | Address                                                                                                                              |
+| Nom                                                                  | Adresse                                                                                                                              |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
 | OriginalTokenBridge                                                  | [0x29d096cD18C0dA7500295f082da73316d704031A](https://avascan.info/blockchain/all/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | Bitcoin Avalanche Bridged (BTC.b) | [0x2297aEbD383787A160DD0d9F71508148769342E](https://avascan.info/blockchain/all/address/0x2297aEbD383787A160DD0d9F71508148769342E)   |
@@ -91,7 +91,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### Arbitrum
 
-| Name                | Address                                                                                                              |
+| Nom                 | Adresse                                                                                                              |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x29d096cD18C0dA7500295f082da73316d704031A](https://arbiscan.io/address/0x29d096cD18C0dA7500295f082da73316d704031A) |
 | USDC                | [0xaf88d065e77c8cC2239327C5EDb3A432268e5831](https://arbiscan.io/address/0xaf88d065e77c8cC2239327C5EDb3A432268e5831) |
@@ -100,7 +100,7 @@ Le code de base audité du pont peut être trouvé [ici](https://github.com/Laye
 
 ### Base
 
-| Name                | Address                                                                                                               |
+| Nom                 | Adresse                                                                                                               |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------- |
 | OriginalTokenBridge | [0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879](https://basescan.org/address/0x84FB2086Fed7b3c9b3a4Bc559f60fFaA91507879) |
 | USDC                | [0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913](https://basescan.org/address/0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913) |
