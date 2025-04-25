@@ -5,11 +5,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Generate Core Scan API Key
+# Générer une clé API sur Core Scan
 
 ## Création d'une clé API
 
-From your [Account Dashboard](https://scan.coredao.org/my/account), click on the navigation tab labelled **API-KEYs**.
+Depuis votre [Tableau de bord de Compte](https://scan.coredao.org/my/account), cliquez sur l'onglet de navigation intitulé 🗝 **API-KEYs**.
 
 ![account-dashboard](../assets/image\(7\).png)
 
