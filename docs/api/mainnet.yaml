@@ -1,0 +1,1010 @@
+openapi: 3.0.1
+info:
+  title: Api Documentation
+  description: Api Documentation
+  termsOfService: urn:tos
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0
+  version: "1.0"
+servers:
+  - url: https://openapi.coredao.org/
+
+paths:
+  /api/accounts/core_balance_by_address/{address}:
+    get:
+      tags:
+      - Accounts
+      summary: Get CORE balance by address
+      operationId: getBalanceUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        schema:
+          type: string
+          default: latest
+  /api/accounts/internal_txs_by_block_range:
+    get:
+      tags:
+      - Accounts
+      summary: Get internal transactions by block range
+      operationId: getInternalTxByBlockRangeUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: endblock
+        in: query
+        description: endblock
+        required: true
+        schema:
+          type: string
+      - name: offset
+        in: query
+        description: offset
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: page
+        schema:
+          type: string
+      - name: sort
+        in: query
+        description: sort
+        schema:
+          type: string
+      - name: startblock
+        in: query
+        description: startblock
+        required: true
+        schema:
+          type: string
+
+  /api/accounts/internal_txs_by_tx_hash/{txhash}:
+    get:
+      tags:
+      - Accounts
+      summary: Get internal transactions by transaction hash
+      operationId: getInternalTxByTxHashUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: txhash
+        in: path
+        description: txhash
+        required: true
+        schema:
+          type: string
+
+  /api/accounts/list_of_blocks_validated_by_address/{address}:
+    get:
+      tags:
+      - Accounts
+      summary: Get list of blocks validated by address
+      operationId: getMinedBlocksByAddressUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: blocktype
+        in: query
+        description: blocktype
+        schema:
+          type: string
+          default: blocks
+      - name: offset
+        in: query
+        description: offset
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: page
+        schema:
+          type: string
+
+  /api/accounts/list_of_erc20_transfer_events_by_address/{address}:
+    get:
+      tags:
+      - Accounts
+      summary: Get list of ERC20 transfer events by address
+      operationId: getERC20TransfersByAddressUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: endblock
+        in: query
+        description: endblock
+        schema:
+          type: string
+      - name: offset
+        in: query
+        description: offset
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: page
+        schema:
+          type: string
+      - name: sort
+        in: query
+        description: sort
+        schema:
+          type: string
+      - name: startblock
+        in: query
+        description: startblock
+        schema:
+          type: string
+
+  /api/accounts/list_of_erc721_transfer_events_by_address/{address}:
+    get:
+      tags:
+      - Accounts
+      summary: Get list of ERC721 transfer events by address
+      operationId: getERC721TransfersByAddressUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: endblock
+        in: query
+        description: endblock
+        schema:
+          type: string
+      - name: offset
+        in: query
+        description: offset
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: page
+        schema:
+          type: string
+      - name: sort
+        in: query
+        description: sort
+        schema:
+          type: string
+      - name: startblock
+        in: query
+        description: startblock
+        schema:
+          type: string
+
+  /api/accounts/list_of_txs_by_address/{address}:
+    get:
+      tags:
+      - Accounts
+      summary: Get list of transactions by address
+      operationId: getTxListByAddressUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: endblock
+        in: query
+        description: endblock
+        schema:
+          type: string
+      - name: offset
+        in: query
+        description: offset
+        schema:
+          type: string
+      - name: page
+        in: query
+        description: page
+        schema:
+          type: string
+      - name: sort
+        in: query
+        description: sort
+        schema:
+          type: string
+      - name: startblock
+        in: query
+        description: startblock
+        schema:
+          type: string
+          
+  /api/blocks/block_number_by_timesamp:
+    get:
+      tags:
+      - Blocks
+      summary: Get block number by timestamp
+      operationId: getBlockNumberByTimestampUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: closest
+        in: query
+        description: closest
+        schema:
+          type: string
+          default: before
+      - name: timestamp
+        in: query
+        description: timestamp
+        required: true
+        schema:
+          type: string
+      
+  /api/blocks/block_rewards_by_block_number/{blockno}:
+    get:
+      tags:
+      - Blocks
+      summary: Get block rewards by block number
+      operationId: getBlockRewardsByBlockNumberUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: blockno
+        in: path
+        description: blockno
+        required: true
+        schema:
+          type: string
+       
+  /api/blocks/estimated_block_countdown_time_by_block_number/{blockno}:
+    get:
+      tags:
+      - Blocks
+      summary: Get estimated block countdown time by block number
+      operationId: getEstimatedBlockCountdownTimeUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: blockno
+        in: path
+        description: blockno
+        required: true
+        schema:
+          type: string
+       
+  /api/contracts/abi_of_verified_contract/{address}:
+    get:
+      tags:
+      - Contracts
+      summary: Get ABI of verified contract
+      operationId: getContractAbiUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/contracts/check_proxy_contract_verification_submission_status_using_cURL:
+    get:
+      tags:
+      - Contracts
+      summary: Check proxy contract verification submission status using cURL
+      operationId: checkProxyContractVerificationStatusUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: guid
+        in: query
+        description: guid
+        required: true
+        schema:
+          type: string
+       
+  /api/contracts/source_code_of_verified_contract/{address}:
+    get:
+      tags:
+      - Contracts
+      summary: Get source code of verified contract
+      operationId: getContractSourceCodeUsingGET
+      parameters:
+      - name: address
+        in: path
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/contracts/verify_proxy_contract:
+    post:
+      tags:
+      - Contracts
+      summary: Verify proxy contract
+      operationId: verifyProxyContractUsingPOST
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: apiCallRequest
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiCallRequest'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: object
+        "201":
+          description: Created
+          content: {}
+        "401":
+          description: Unauthorized
+          content: {}
+        "403":
+          description: Forbidden
+          content: {}
+        "404":
+          description: Not Found
+          content: {}
+      x-codegen-request-body-name: apiCallRequest
+  /api/contracts/verify_proxy_contract_using_cURL:
+    post:
+      tags:
+      - Contracts
+      summary: Verify proxy contract using cURL
+      operationId: verifyProxyContractCurlUsingPOST
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: apiCallRequest
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiCallRequest'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: object
+        "201":
+          description: Created
+          content: {}
+        "401":
+          description: Unauthorized
+          content: {}
+        "403":
+          description: Forbidden
+          content: {}
+        "404":
+          description: Not Found
+          content: {}
+      x-codegen-request-body-name: apiCallRequest
+  /api/contracts/verify_source_code:
+    post:
+      tags:
+      - Contracts
+      summary: Verify source code
+      operationId: verifySourceCodeUsingPOST
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      requestBody:
+        description: apiCallRequest
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApiCallRequest'
+        required: true
+      responses:
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: object
+        "201":
+          description: Created
+          content: {}
+        "401":
+          description: Unauthorized
+          content: {}
+        "403":
+          description: Forbidden
+          content: {}
+        "404":
+          description: Not Found
+          content: {}
+      x-codegen-request-body-name: apiCallRequest
+  /api/geth/eth_blockNumber:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get block number
+      operationId: getBlockNumberUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_call:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get transaction receipt
+      operationId: ethCallUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: data
+        in: query
+        description: data
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        schema:
+          type: string
+          default: latest
+      - name: to
+        in: query
+        description: to
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_estimateGas:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Estimate gas
+      operationId: estimateGasUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: data
+        in: query
+        description: data
+        schema:
+          type: string
+      - name: from
+        in: query
+        description: from
+        schema:
+          type: string
+      - name: gas
+        in: query
+        description: gas
+        schema:
+          type: string
+      - name: gasPrice
+        in: query
+        description: gasPrice
+        schema:
+          type: string
+      - name: to
+        in: query
+        description: to
+        required: true
+        schema:
+          type: string
+      - name: value
+        in: query
+        description: value
+        schema:
+          type: string
+       
+  /api/geth/eth_gasPrice:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get gas price
+      operationId: getGasPriceUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getBlockByNumber:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get block by number
+      operationId: getBlockByNumberUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: booleanParam
+        in: query
+        description: booleanParam
+        schema:
+          type: boolean
+          default: true
+      - name: tag
+        in: query
+        description: tag
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getBlockTransactionCountByNumber:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get block transaction count by number
+      operationId: getBlockTransactionCountByNumberUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getCode:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get code
+      operationId: getCodeUsingGET
+      parameters:
+      - name: address
+        in: query
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getStorageAt:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get storage at
+      operationId: getStorageAtUsingGET
+      parameters:
+      - name: address
+        in: query
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: position
+        in: query
+        description: position
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        schema:
+          type: string
+          default: latest
+       
+  /api/geth/eth_getTransactionByBlockNumberAndIndex:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get transaction by block number and index
+      operationId: getTransactionByBlockNumberAndIndexUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: index
+        in: query
+        description: index
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getTransactionByHash:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get transaction by hash
+      operationId: getTransactionByHashUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: txhash
+        in: query
+        description: txhash
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getTransactionCount:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get transaction count
+      operationId: getTransactionCountUsingGET
+      parameters:
+      - name: address
+        in: query
+        description: address
+        required: true
+        schema:
+          type: string
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: tag
+        in: query
+        description: tag
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_getTransactionReceipt:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Get transaction receipt
+      operationId: getTransactionReceiptUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: txhash
+        in: query
+        description: txhash
+        required: true
+        schema:
+          type: string
+       
+  /api/geth/eth_sendRawTransaction:
+    get:
+      tags:
+      - Geth Proxy
+      summary: Send raw transaction
+      operationId: sendRawTransactionUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: hex
+        in: query
+        description: hex
+        required: true
+        schema:
+          type: string
+       
+  /api/stats/last_core_price:
+    get:
+      tags:
+      - Stats
+      summary: Get last core price
+      operationId: getLastCorePriceUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/stats/list_of_validators:
+    get:
+      tags:
+      - Stats
+      summary: Get list of validators
+      operationId: getListOfValidatorsUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/stats/total_core_supply:
+    get:
+      tags:
+      - Stats
+      summary: Get total core supply
+      operationId: getTotalCoreSupplyUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+       
+  /api/txs/tx_receipt_status:
+    get:
+      tags:
+      - Transactions
+      summary: Get transaction receipt status
+      operationId: getTransactionReceiptStatusUsingGET
+      parameters:
+      - name: apikey
+        in: query
+        description: apikey
+        required: true
+        schema:
+          type: string
+      - name: txhash
+        in: query
+        description: txhash
+        required: true
+        schema:
+          type: string
+       
+components:
+  schemas:
+    ApiCallRequest:
+      title: ApiCallRequest
+      type: object
+      properties:
+        action:
+          type: string
+        address:
+          type: string
+        apikey:
+          type: string
+        blockno:
+          type: integer
+          format: int64
+        blocktype:
+          type: string
+        boolean:
+          type: boolean
+        closest:
+          type: string
+        codeformat:
+          type: string
+        compilerversion:
+          type: string
+        constructorArguements:
+          type: string
+        contractaddress:
+          type: string
+        contractaddresses:
+          type: string
+        data:
+          type: string
+        endblock:
+          type: integer
+          format: int64
+        evmversion:
+          type: string
+        fromBlock:
+          type: integer
+          format: int64
+        gas:
+          type: string
+        gasPrice:
+          type: string
+        guid:
+          type: string
+        hex:
+          type: string
+        index:
+          type: string
+        licenseType:
+          type: integer
+          format: int32
+        module:
+          type: string
+        offset:
+          type: integer
+          format: int32
+        optimizationUsed:
+          type: string
+        page:
+          type: integer
+          format: int32
+        position:
+          type: string
+        q:
+          type: string
+        runs:
+          type: integer
+          format: int32
+        sort:
+          type: string
+        sourceCode:
+          type: string
+        startblock:
+          type: integer
+          format: int64
+        tag:
+          type: string
+        timestamp:
+          type: integer
+          format: int64
+        to:
+          type: string
+        toBlock:
+          type: string
+        topic0:
+          type: string
+        topic0_1_opr:
+          type: string
+        topic0_2_opr:
+          type: string
+        topic0_3_opr:
+          type: string
+        topic1:
+          type: string
+        topic1_2_opr:
+          type: string
+        topic1_3_opr:
+          type: string
+        topic2:
+          type: string
+        topic2_3_opr:
+          type: string
+        topic3:
+          type: string
+        txhash:
+          type: string
+        value:
+          type: string
+x-original-swagger-version: "2.0"

@@ -1,0 +1,71 @@
+---
+id: get-mined-blocks-by-address-using-get
+title: "Get list of blocks validated by address"
+description: "Get list of blocks validated by address"
+sidebar_label: "Get list of blocks validated by address"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVV1v2kAQ/CvWPrWSi9s++o20KIrUD6lpniKEFnuNT7HvLndrKLL836s1hzGFEJS+mbvZmV3PDm6BceUhfYRplplGs4d5DMaSQ1ZG3+WQwor4u9KU31Qme/I322meO/L+wSu9up39hhgsOqyJyQlTCxprghRwh4MYlIYULHIJMeTkM6essB9hHD03ylEOKbuGYvBZSTVC2gJvrdB5dkqvoOvig4JVT7TdCzw35LanCnvMWwSWMnJ/fVFjDHuJVmoKbCre4/2RkikKT3xZZsBc07rF1StdB8TLZPN/K26Jo0p5jkwR7WaI1lipHJnyaLmNDm7WxKUJy9MvCJeQQoJWJRgWLRGmhSkWO6bFwLRYbheBKWnDQyeNklvvV6xxFaRQMlufJomxpNGqSWYc5Wgmxq0SkPaVLkw/meJKRptaFX01WVOT5n7BT17KOQSTq/3P4p7cWmVC0zidspE5K5WR9iQa4b1PLWYlRZ8nHyEetZkmyWazmWB/2zcYSn3y7e7L7Mf97IOUdDHIjLtePu0OrPFcox5pXO/D0XCDw0x/OLEVKi38fZNt8OhRAgMx7F3qZ3zVJ4gh3T/OYyiNZ6Fq2yV6enBV18nxbg3Fvlx5XFaSxQIrTyd9ZkYzaYnKu18htu+jIclnp5CrUdrXWDUCAonE9XLjJF+QGcPeqDSE+YLMgHmjRkj4BYWAOPDP5YdTIvAfTg1bcVY6HKI+MmqwMBR38270PyIfmq77C26KShk=
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of blocks validated by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_blocks_validated_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of blocks validated by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"blocktype","in":"query","description":"blocktype","schema":{"type":"string","default":"blocks"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
+
+
+      

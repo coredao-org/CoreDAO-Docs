@@ -1,0 +1,71 @@
+---
+id: estimate-gas-using-get
+title: "Estimate gas"
+description: "Estimate gas"
+sidebar_label: "Estimate gas"
+hide_title: true
+hide_table_of_contents: true
+api: eJydVctu2zAQ/BVjTy2gWmmPvAWtYQQI2qBpToZRbKS1RFQiGXJlxxD078Xq4SpOqhg6ihzODHeHqxoYswBqA2vifHHn7fMRthFYRx5ZW3OTggIKrEtkWmN4CNpk69UviMChx5KYvJyvwWBJoACd/kNHiEAbUPBUkZePlELitRPGMcbTU6U9paDYVxRBSHIqEVQNfHTCFthrk0HTRCeBFBmn6XvEJWQ7b8tpsh5xCVmGYZqrA1xIded1Qu/yDahLSNlO07X7c1qyx6J6x+oA+T/d9vzIqk/doitbSZxbSWNG3KaPc1AQo9NxRpzHxPnvUVBFi/x+SGflC1CQM7ug4tg6Muj0MrGeUrRL67MYxIE2O9ua01yIu2unF99sUpVkuH0Pry72FoLJl+HH7p78XrqjoPJGsRVPhU7IBBKNvnjXDpOcFl+WVxCNbKo4PhwOS2x3W4P90RDf3nxdfb9ffZIjTQRyx87L527B2cAlmpHGWSlf3ODUCaZnjl2B2ghJ66Tuy7yRJwuRlD6HCM5LvY0gt4EFV9ePGOjBF00jy10YpAGpDvhYSK52WAR6ZSKxhskwKPjws4/gx8VpULxpUbZGw6SLmAKQZF4u10+LCYUeMZO/HyAT/D1iJn/X0gn6DjCffRgx0xIDaqbOqOntGJoQa/dnygxjaIJ+gPxT2MqH1yIBarNtRrNI/oRN8xeLknMj
+sidebar_class_name: "get api-method"
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Estimate gas"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_estimateGas"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Estimate gas
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"from","in":"query","description":"from","schema":{"type":"string"}},{"name":"gas","in":"query","description":"gas","schema":{"type":"string"}},{"name":"gasPrice","in":"query","description":"gasPrice","schema":{"type":"string"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}},{"name":"value","in":"query","description":"value","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
+
+
+      

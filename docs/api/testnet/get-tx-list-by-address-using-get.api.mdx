@@ -1,0 +1,71 @@
+---
+id: get-tx-list-by-address-using-get
+title: "Get list of transactions by address"
+description: "Get list of transactions by address"
+sidebar_label: "Get list of transactions by address"
+hide_title: true
+hide_table_of_contents: true
+api: eJylVcFu2zAM/RWDpw3w4q1H37KtKAoUG7C2pyIIFJuOhdqSKtJNA8P/PjBRXGfJPCO7ydLje6T4RLfAak2QPsE8y2xjmGARg3XoFWtrbnNIYY388Hanib9u53nukeiRtFnfXD9ADE55VSOjF5IWjKoRUlB7HMSgDaTgFJcQQ46Uee2E+Ajj8aXRHnNI2TcYA2Ul1grSFnjrhI7Ya7OGrovfFZx+xu1B4KVBvz1VOGAuEUCTryqbPY9LDFBTSG1REPI4ZY+ZQujUGsfpAmIKGVn/j9wCYhIZK88TbvAI93fixZ9xN8hRpYkjW0TslSGVyQlFq230bq0aubTBxDu3cgkpJMrpRAXDJ8KytMWS32i52i5DcNKGRSd5oX89WLzxFaRQMjtKE2GaMRJfzVac0cwgb6x/TkAS1qawu1o0V1LM3Onou82aGg3vntfJZZxDMPqafhb36F91JjSNNylbqa7SGRpC0Qi3PncqKzG6mn2GeJBpmiSbzWamdqcz69dJCKXk7vbb9Y/7608S0sUgZe5z+bLfcJa4VmagMe3mjwrr+8n4xomrlDbCvUuwDV15kvcKMRz6sqvvXGcghvSwXMRQWmKJbtuVInz0VdfJ9t5t0rBck1pV8voLVRGepJZZw2gYUvjwKwyKj1E/O84mLkeD+fKqqkZAIP6fLjcYHiMqA9SFOv1EGVHpMRdqhDEzohAQF/KHyTPCHxCX8g/H0JjKEPeutZAPr0XsPzzX+/tsAmFTmSPL9WYMwd2iG4w9+Ul33W96ebJG
+sidebar_class_name: "get api-method"
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of transactions by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_txs_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Get list of transactions by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
+
+
+      
