@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ### 1. Qu'est-ce que Core Ignition ?
 
-Core Ignition est un programme d'incitation de six mois développé par la Fondation Core pour dynamiser la croissance de l'écosystème Core. After two successful seasons in 2024 and early 2025, and Season 3 is now live. Veuillez visiter [Core Ignition](https://ignition.coredao.org) pour plus de détails.
+Core Ignition est un programme d'incitation de six mois développé par la Fondation Core pour dynamiser la croissance de l'écosystème Core. Après deux saisons réussies en 2024 et début 2025, la saison 3 est désormais en ligne. Veuillez visiter [Core Ignition](https://ignition.coredao.org) pour plus de détails.
 
 ### 2. Qu'est-ce que la blockchain Core ?
 
-Core serves as the Proof of Stake layer for Bitcoin, pioneering Self-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Since April 2024, over 5,900 BTC have been staked with Core, boosting Bitcoin’s utility and security. Core is the most Bitcoin-aligned EVM blockchain, with approximately 76% of Bitcoin mining hash power contributing to the network’s security.
+Core sert de couche de Preuve d'Enjeu pour Bitcoin, pionnière du staking Non-Custodial de Bitcoin et sécurisent un écosystème BTCfi entièrement compatible avec l'EVM. Depuis avril 2024, plus de 5.900 BTC ont été jalonnes avec Core, augmentant l'utilité et la sécurité de Bitcoin. Core est la blockchain EVM la plus alignée sur Bitcoin, avec environ 76 % de la puissance de hachage du minage de Bitcoin contribuant à la sécurité du réseau.
 
 ### 3. Je suis nouveau dans l'écosystème Core. Comment puis-je commencer ?
 
