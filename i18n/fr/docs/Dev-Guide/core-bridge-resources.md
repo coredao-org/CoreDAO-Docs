@@ -8,25 +8,25 @@ sidebar_position: 2
 
 ---
 
-The[ Core Bridge](https://bridge.coredao.org/) is powered by LayerZero, and enables seamless asset transfers between Core and the wider blockchain world.
+Le [ Core Bridge](https://bridge.coredao.org/) est alimenté par LayerZero et permet des transferts d'actifs sans faille entre Core et le reste du monde de la blockchain.
 
-The Core Bridge consists of two parts:
+Le Core Bridge se compose de deux parties :
 
-- LayerZero contracts on Core that facilitate cross-chain transfers and
-- Set of bridge or token contracts deployed both on Core and each blockchain it’s connected to.
+- Contrats LayerZero sur Core qui facilitent les transferts inter-chaînes et
+- L'ensemble de contrats de pont ou de jeton déployés à la fois sur Core et sur chaque blockchain à laquelle il est connecté.
 
-The audited bridge codebase can be found[ here](https://github.com/LayerZero-Labs/wrapped-asset-bridge), and here is the full list of bridge token contract addresses
+Le code de base audité du pont peut être trouvé [ici](https://github.com/LayerZero-Labs/wrapped-asset-bridge), et la liste complète des adresses de contrats de jetons de pont peut être trouvée [ici
 
 ### Contrats LayerZero sur Core
 
-| Name               | Address                                                                                                                   |
-| ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| LayerZero Endpoint | [0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4](https://scan.coredao.org/address/0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4) |
-| UltraLightNodeV2   | [0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675](https://scan.coredao.org/address/0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675) |
-| NonceContract      | [0x2d61dcdd36f10b22176e0433b86f74567d529aaa](https://scan.coredao.org/address/0x2d61dcdd36f10b22176e0433b86f74567d529aaa) |
-| FPValidator        | [0x3c2269811836af69497e5f486a85d7316753cf62](https://scan.coredao.org/address/0x3c2269811836af69497e5f486a85d7316753cf62) |
-| MPTValidatorV1     | [0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7](https://scan.coredao.org/address/0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7) |
-| TreasuryV2         | [0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c](https://scan.coredao.org/address/0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c) |
+| Nom                                                                                                     | Adresse                                                                                                                   |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| LayerZero Endpoint [Point de terminaison LayerZero] | [0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4](https://scan.coredao.org/address/0x9740ff91f1985d8d2b71494ae1a2f723bb3ed9e4) |
+| UltraLightNodeV2                                                                                        | [0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675](https://scan.coredao.org/address/0x66a71dcef29a0ffbdbe3c6a460a3b5bc225cd675) |
+| NonceContract                                                                                           | [0x2d61dcdd36f10b22176e0433b86f74567d529aaa](https://scan.coredao.org/address/0x2d61dcdd36f10b22176e0433b86f74567d529aaa) |
+| FPValidator                                                                                             | [0x3c2269811836af69497e5f486a85d7316753cf62](https://scan.coredao.org/address/0x3c2269811836af69497e5f486a85d7316753cf62) |
+| MPTValidatorV1                                                                                          | [0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7](https://scan.coredao.org/address/0xb6319cc6c8c27a8f5daf0dd3df91ea35c4720dd7) |
+| TreasuryV2                                                                                              | [0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c](https://scan.coredao.org/address/0x5b19bd330a84c049b62d5b0fc2ba120217a18c1c) |
 
 ### Bridges and Tokens contracts on Core
 
