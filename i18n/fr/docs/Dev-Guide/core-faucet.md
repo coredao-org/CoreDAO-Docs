@@ -23,15 +23,11 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 
 4. Si vous utilisez le faucet pour Core Blockchain Testnet (1114), cliquez sur le bouton `Get tCORE2`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
 
-<p align="center">
-![using-faucet-test2](../../static/img/faucet/faucet-test2.png)
-</p>
+<p align="center">![using-faucet-test2](../../static/img/faucet/faucet-test2.png)</p>
 
 5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
-<p align="center">
-![using-faucet](../../static/img/faucet/faucet.png)
-</p>
+<p align="center">![using-faucet](../../static/img/faucet/faucet.png)</p>
 
 :::caution
 Chaque adresse ne peut demander **qu’un seul tCORE ou tCORE2 par jour** à partir du faucet. Si vous n’avez plus de tCORE ou tCORE2 et que le faucet ne vous en envoie pas davantage à cause de la limite journalière (un tCORE ou tCORE2 par jour), revenez après 24 heures et réessayez. Sinon, vous pouvez en faire la demande sur le serveur Discord de Core.
