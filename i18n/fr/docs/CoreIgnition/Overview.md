@@ -8,11 +8,11 @@ sidebar_position: 2
 
 ---
 
-Core Ignition Season 3 is a six-month user incentive program designed to recognize the Core community for their valuable contributions to the Core network. Grâce à Core Ignition, les utilisateurs ont l'opportunité de contribuer de manière significative à l'écosystème BTCfi en évolution tout en étant récompensés pour divers engagements et activités, visibles sur le tableau de bord Ignition après s'être connectés et avoir effectué le pont vers Core Ignition avec succès.
+La Saison 3 de Core Ignition est un programme d'incitation utilisateur de six mois conçu pour récompenser la communauté Core pour ses précieuses contributions au réseau Core. Grâce à Core Ignition, les utilisateurs ont l'opportunité de contribuer de manière significative à l'écosystème BTCfi en évolution tout en étant récompensés pour divers engagements et activités, visibles sur le tableau de bord Ignition après s'être connectés et avoir effectué le pont vers Core Ignition avec succès.
 
 ## Période du Programme
 
-The duration for the Core Ignition user incentive program is **six** months, from March 12, 2025, 12:00 UTC to September 12, 2025, 11:59 UTC.
+La durée du programme d'incitation utilisateur de Core Ignition est de six mois, du 12 mars 2025 12:00 UTC au 12 septembre 2025 à 11:59 UTC.
 
 ## Éligibilité
 
