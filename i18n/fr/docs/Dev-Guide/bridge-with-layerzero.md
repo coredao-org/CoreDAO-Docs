@@ -1,5 +1,5 @@
 ---
-sidebar_label: Bridging Tokens Using LayerZero
+sidebar_label: Pontage de Jetons vers Core avec LayerZero
 hide_table_of_contents: false
 sidebar_position: 2
 ---
