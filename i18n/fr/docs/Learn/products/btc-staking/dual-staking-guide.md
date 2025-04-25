@@ -8,12 +8,22 @@ sidebar_position: 2
 
 Ce guide utilisateur est conçu pour vous accompagner à travers le processus de Dual Staking sur Core. Le Staking de Bitcoin Non-Custodial de Core permet aux utilisateurs de gagner des rendements en CORE en stakant leurs Bitcoins et en les déléguant à des validateurs sur Core. Le Dual Staking débloque des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE pour améliorer davantage la génération de rendement du staking de Bitcoin Non-Custodial. Plongeons dans le fonctionnement et voyons comment vous pouvez commencer à staker dès aujourd'hui.
 
+## Getting Started with Dual Staking
+
+There are several ways to participate in Dual Staking with BTC and CORE, depending on your preferred tools and experience level:
+
+- **Via the [Official Core Website](https://stake.coredao.org/staking):** A user-friendly interface for most users to start staking directly.
+
+- **Using CLI Tools & Smart Contracts:** Ideal for developers and advanced users who prefer direct interaction with the protocol. Users can stake their BTC using the [BTC Staking CLI Tool](https://github.com/coredao-org/btc-staking-tool) and stake CORE by interacting directly with the [staking smart contracts](https://github.com/coredao-org/core-genesis-contract?tab=readme-ov-file#list-of-contracts).
+
+- **Through Trusted Custodians:** Stake via institutional-grade custodians such as BitGo, Copper, or Hex Trust for added security and operational convenience.
+
 ## Prérequis
 
-Pour pouvoir staker, vous devez disposer des éléments suivants :
+To get started and be able to dual stake CORE and BTC via Core's [official staking website](https://stake.coredao.org/staking), you must have the following prerequisites:
 
-1. **Extension de navigateur de portefeuille Bitcoin pris en charge :** Pour participer au processus de staking de BTC, vous devez installer les extensions de navigateur de l'un des portefeuilles Bitcoin pris en charge, comme Xverse, Unisat, et/ou OKX Wallet (visitez stake.coredao.org pour les portefeuilles les plus récents pris en charge). Vous devez utiliser une version de bureau, car les portefeuilles mobiles et matériels ne sont pas actuellement pris en charge. Vous pouvez également staker directement en utilisant l'application mobile du portefeuille Element.
-2. **Adresse de portefeuille Core pour les récompenses :** Préparez votre adresse de portefeuille Core pour staker du CORE et recevoir [des récompenses en tokens CORE pour le staking de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites) et de CORE. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
+1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like Xverse, Unisat, and/or OKX Wallet (refer here for the latest supported wallets). You must use a desktop version, when using the official staking website. You can also stake directly using the Element wallet mobile application as well.
+2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to stake CORE and receive [CORE token rewards for staking Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
 ## Considérations Clés pour le Dual Staking
 
