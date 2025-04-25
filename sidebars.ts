@@ -366,17 +366,23 @@ const sidebars: SidebarsConfig = {
     {
       type: 'category',
       collapsed: true,
-      label: 'CoreScan API',
-      link: {type: 'doc', id: 'api/api'},
+      label: 'Core Scan API',
+      //link: {type: 'doc', id: 'api/api'},
+      link: {
+        type: 'generated-index',
+        title: 'Core Scan API Endpoints',
+        description: 'Explore the various Core Scan API endpoints for Core Mainnet and Testnet2',
+        slug: '/api/core-api',
+      },
       items: [
         {
           type: 'category',
           collapsed: true,
-          label: '📚 Tutorials',
+          label: '📚 Getting Started',
           link: {
             type: 'generated-index',
             title: 'Core Scan Tutorials',
-            description: 'Learn about how to use the Core Scan API',
+            description: 'Learn about how to use the Core Scan API Endpoints',
             slug: '/api/core-api-tutorials',
           },
           items: [
@@ -388,11 +394,11 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           collapsed: true,
-          label: 'API Endpoints',
+          label: '📑 API Endpoints',
           link: {
             type: 'generated-index',
             title: 'Core Scan API Documentation',
-            description: 'Explore the various Core Scan API Endpoints',
+            description: 'Explore the various Core Scan API Endpoints for Core Mainnet and Testnet2',
             slug: '/api/core-api-docs',
           },
           items: [
@@ -403,7 +409,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Core Scan API Documentation',
-                description: 'Explore the various Core Scan API Endpoints',
+                description: 'Explore the various Core Scan API Endpoints for Core Mainnet',
                 slug: '/api/core-api-mainnet-docs',
               },
               items: [ 
@@ -417,7 +423,7 @@ const sidebars: SidebarsConfig = {
               link: {
                 type: 'generated-index',
                 title: 'Core Scan API Documentation',
-                description: 'Explore the various Core Scan API Endpoints',
+                description: 'Explore the various Core Scan API Endpoints for Core Testnet2',
                 slug: '/api/core-api-testnet-docs',
               },
               items: [ 

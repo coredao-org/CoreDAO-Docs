@@ -8,12 +8,21 @@ sidebar_position: 2
 
 This user guide is designed to walk you through the Dual Staking process on Core. Core’s Non-Custodial Bitcoin Staking allows users to earn yield in CORE by staking their Bitcoins and delegating them to validators on Core. Dual Staking unlocks higher yield tiers by staking Bitcoin and CORE to enhance yield generation from Non-Custodial Bitcoin staking further. Let's dive into how it works and how you can start staking today.
 
+## Getting Started with Dual Staking
+There are several ways to participate in Dual Staking with BTC and CORE, depending on your preferred tools and experience level:
+
+* **Via the [Official Core Website](https://stake.coredao.org/staking):** A user-friendly interface for most users to start staking directly. 
+
+* **Using CLI Tools & Smart Contracts:** Ideal for developers and advanced users who prefer direct interaction with the protocol. Users can stake their BTC using the [BTC Staking CLI Tool](https://github.com/coredao-org/btc-staking-tool) and stake CORE by interacting directly with the [staking smart contracts](https://github.com/coredao-org/core-genesis-contract?tab=readme-ov-file#list-of-contracts).
+
+* **Through Trusted Custodians:** Stake via institutional-grade custodians such as BitGo, Copper, or Hex Trust for added security and operational convenience.
+
 ## Prerequisites
 
-To be able to stake, you must have the following prerequisites:
+To get started and be able to dual stake CORE and BTC via Core's [official staking website](https://stake.coredao.org/staking), you must have the following prerequisites:
 
-1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (visit stake.coredao.org for the latest supported wallets). You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the Element wallet mobile application as well. 
-2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to stake CORE and receive [CORE token rewards for staking Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites) and CORE. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
+1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge) (refer [here](https://stake.coredao.org) for the latest supported wallets). You must use a desktop version, when using the official staking website. You can also stake directly using the [Element wallet](https://www.elementwallet.com/) mobile application as well. 
+2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to stake CORE and receive [CORE token rewards for staking Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
 
 ## Key Considerations For Dual Staking
 

@@ -36,22 +36,6 @@ paths:
         schema:
           type: string
           default: latest
-      # responses:
-      #   "200":
-      #     description: OK
-      #     content:
-      #       '*/*':
-      #         schema:
-      #           type: object
-      #   "401":
-      #     description: Unauthorized
-      #     content: {}
-      #   "403":
-      #     description: Forbidden
-      #     content: {}
-      #   "404":
-      #     description: Not Found
-      #     content: {}
   /api/accounts/internal_txs_by_block_range:
     get:
       tags:
@@ -92,22 +76,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+
   /api/accounts/internal_txs_by_tx_hash/{txhash}:
     get:
       tags:
@@ -127,22 +96,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+
   /api/accounts/list_of_blocks_validated_by_address/{address}:
     get:
       tags:
@@ -178,22 +132,7 @@ paths:
         description: page
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+
   /api/accounts/list_of_erc20_transfer_events_by_address/{address}:
     get:
       tags:
@@ -238,22 +177,7 @@ paths:
         description: startblock
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+
   /api/accounts/list_of_erc721_transfer_events_by_address/{address}:
     get:
       tags:
@@ -298,22 +222,7 @@ paths:
         description: startblock
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+
   /api/accounts/list_of_txs_by_address/{address}:
     get:
       tags:
@@ -358,22 +267,7 @@ paths:
         description: startblock
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+          
   /api/blocks/block_number_by_timesamp:
     get:
       tags:
@@ -399,22 +293,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+      
   /api/blocks/block_rewards_by_block_number/{blockno}:
     get:
       tags:
@@ -434,22 +313,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/blocks/estimated_block_countdown_time_by_block_number/{blockno}:
     get:
       tags:
@@ -469,22 +333,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/contracts/abi_of_verified_contract/{address}:
     get:
       tags:
@@ -504,22 +353,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/contracts/check_proxy_contract_verification_submission_status_using_cURL:
     get:
       tags:
@@ -539,22 +373,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/contracts/source_code_of_verified_contract/{address}:
     get:
       tags:
@@ -574,22 +393,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/contracts/verify_proxy_contract:
     post:
       tags:
@@ -723,22 +527,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_call:
     get:
       tags:
@@ -769,22 +558,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_estimateGas:
     get:
       tags:
@@ -829,22 +603,7 @@ paths:
         description: value
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_gasPrice:
     get:
       tags:
@@ -858,22 +617,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getBlockByNumber:
     get:
       tags:
@@ -899,22 +643,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getBlockTransactionCountByNumber:
     get:
       tags:
@@ -934,22 +663,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getCode:
     get:
       tags:
@@ -975,22 +689,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getStorageAt:
     get:
       tags:
@@ -1022,22 +721,7 @@ paths:
         schema:
           type: string
           default: latest
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getTransactionByBlockNumberAndIndex:
     get:
       tags:
@@ -1063,22 +747,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getTransactionByHash:
     get:
       tags:
@@ -1098,22 +767,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getTransactionCount:
     get:
       tags:
@@ -1139,22 +793,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_getTransactionReceipt:
     get:
       tags:
@@ -1174,22 +813,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/geth/eth_sendRawTransaction:
     get:
       tags:
@@ -1209,22 +833,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/stats/last_core_price:
     get:
       tags:
@@ -1238,22 +847,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/stats/list_of_validators:
     get:
       tags:
@@ -1267,22 +861,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/stats/total_core_supply:
     get:
       tags:
@@ -1296,22 +875,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
   /api/txs/tx_receipt_status:
     get:
       tags:
@@ -1331,22 +895,7 @@ paths:
         required: true
         schema:
           type: string
-      responses:
-        "200":
-          description: OK
-          content:
-            '*/*':
-              schema:
-                type: object
-        "401":
-          description: Unauthorized
-          content: {}
-        "403":
-          description: Forbidden
-          content: {}
-        "404":
-          description: Not Found
-          content: {}
+       
 components:
   schemas:
     ApiCallRequest:
