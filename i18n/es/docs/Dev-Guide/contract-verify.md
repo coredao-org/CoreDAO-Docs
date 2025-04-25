@@ -29,7 +29,7 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
 
 <p align="center">
-![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
+  ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
 </p>
 
 4\. Complete la información de verificación requerida en la página, específicamente:
