@@ -2,7 +2,7 @@
 sidebar_label: Vérification de Contrats
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn how to verify a smart contract using Core scan
+description: Apprenez à vérifier un contrat intelligent à l'aide de Core Scan
 ---
 
 # Vérification de Contrats
@@ -12,7 +12,7 @@ description: Learn how to verify a smart contract using Core scan
 Dans un souci de transparence, il est recommandé de vérifier tous les contrats sur [Core Scan](https://scan.coredao.org/). Bien qu'il existe plusieurs façons d'effectuer la vérification de contrats, nous recommandons d'utiliser l'outil de vérification officiel de Core, [Core Scan](https://scan.coredao.org/), pour une fiabilité optimale. Voici un aperçu des méthodes les plus courantes pour vérifier les contrats via le web, l'API et Hardhat.
 
 :::note
-Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris` within the Solidity compiler settings.
+Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). Pour ce faire, assurez-vous que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity.
 :::
 
 ## Vérification Web via Core Scan
@@ -21,16 +21,14 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 
 1. Accédez au site web de Core Scan.
 
-- [For Core Mainnet](https://scan.coredao.org/)
-- [For Core Testnet2](https://scan.test.btcs.network)
-- [For Core Legacy Testnet](https://scan.test.btcs.network)
+- [Pour le Core Mainnet](https://scan.coredao.org/)
+- [Pour le Core Testnet2](https://scan.test.btcs.network)
+- [Pour le Core Legacy Testnet](https://scan.test.btcs.network)
 
 2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
 3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**_._
 
-<p align="center">
-![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
-</p>
+<p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)</p>
 
 4\. Remplissez les informations de vérification requises, notamment :
 
@@ -39,9 +37,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 - La version du compilateur;
 - Le type de licence open-source;
 
-<p align="center">
-![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
-</p>
+<p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)</p>
 
 5\. Sur la page suivante, remplissez le code source du contrat en Solidity.
 
@@ -49,21 +45,15 @@ Si votre contrat a des paramètres de constructeur, il est recommandé de les aj
 
 Si vous avez activé l'optimisation lors de la compilation du contrat, sélectionnez "Oui" pour le champ `Optimization`.
 
-<p align="center">
-![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
-</p>
+<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-3.avif) </p>
 
 6\. Cliquez sur **Verify and Publish** pour terminer le processus.
 
-<p align="center">
-![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
-</p>
+<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-4.avif) </p>
 
 Votre contrat vérifié sur Core Scan devrait maintenant être publié et accessible:
 
-<p align="center">
-![verify-contract](../../static/img/contract-verification/contract-verify-5.avif)
-</p>
+<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-5.avif) </p>
 
 ## Vérification via API
 
@@ -79,83 +69,85 @@ Veuillez noter qu'il est nécessaire d'ajouter les réseaux Core en tant que cha
 
 ```javascript
 /**
- * @type import('hardhat/config').HardhatUserConfig
- */
+* @type import('hardhat/config').HardhatUserConfig
+*/
 
-const { PrivateKey } = require("./secret.json");
-require("@nomiclabs/hardhat-ethers");
+
+const { PrivateKey } = require('./secret.json');
+require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-waffle");
 require("@nomicfoundation/hardhat-verify");
 
 module.exports = {
-  defaultNetwork: "testnet",
+  defaultNetwork: 'testnet',
 
   networks: {
-    hardhat: {},
-    testnet: {
-      url: "https://rpc.test2.btcs.network",
-      accounts: [PrivateKey],
-      chainId: 1114,
-    },
-    mainnet: {
-      url: "https://rpc.coredao.org",
-      accounts: [PrivateKey],
-      chainId: 1116,
+     hardhat: {
+     },
+     testnet: {
+        url: 'https://rpc.test.btcs.network',
+        accounts: [PrivateKey],
+        chainId: 1115,
+     },
+     mainnet: {
+       url: 'https://rpc.coredao.org',
+       accounts: [PrivateKey],
+       chainId: 1116,
     },
   },
   etherscan: {
-    apiKey: {
-      testnet: "api key",
-      mainnet: "api key",
-    },
-    customChains: [
-      {
-        network: "testnet",
-        chainId: 1114,
-        urls: {
-          apiURL: "https://api.test2.btcs.network/api",
-          browserURL: "https://scan.test2.btcs.network/",
-        },
-      },
-      {
-        network: "mainnet",
-        chainId: 1116,
-        urls: {
-          apiURL: "https://openapi.coredao.org/api",
-          browserURL: "https://scan.coredao.org/",
-        },
-      },
-    ],
-  },
-
+   apiKey: {
+     testnet: "api key",
+     mainnet: "api key"
+   },
+   customChains: [
+     {
+       network: "testnet",
+       chainId: 1115,
+       urls: {
+         apiURL: "https://api.test.btcs.network/api",
+         browserURL: "https://scan.test.btcs.network/"
+       }
+     },
+     {
+       network: "mainnet",
+       chainId: 1116,
+       urls: {
+         apiURL: "https://openapi.coredao.org/api",
+         browserURL: "https://scan.coredao.org/"
+       }
+     }
+   ]
+ },
+ 
   solidity: {
-    compilers: [
-      {
-        version: "0.8.24",
-        settings: {
-          evmVersion: "shanghai",
-          optimizer: {
-            enabled: false,
-            runs: 200,
+     compilers: [
+       {
+          version: '0.8.9',
+          settings: {
+             optimizer: {
+                enabled: false,
+                runs: 200,
+             },
           },
-        },
-      },
-    ],
+       }
+     ],
   },
   paths: {
-    sources: "./contracts",
-    cache: "./cache",
-    artifacts: "./artifacts",
+     sources: './contracts',
+     cache: './cache',
+     artifacts: './artifacts',
   },
   mocha: {
-    timeout: 20000,
+     timeout: 20000,
   },
 };
+
 ```
 
-## Foundry Verification
+## Vérification de Contrats
 
-update the `foundry.toml` file to specify the Solidity version and EVM version for your project.
+mettez à jour le fichier `foundry.toml` pour spécifier la version Solidity et la version EVM pour votre projet.
 
 ```bash
 [profile.default]
@@ -163,7 +155,7 @@ solidity_version = "0.8.0"  # Specify the Solidity version
 evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
 ```
 
-create a `.env` file to store sensitive information such as your private key, RPC URL, and API keys. This helps to keep your credentials secure and allows you to easily reference them in your code.
+créez un fichier `.env` pour stocker des informations sensibles telles que votre clé privée, votre URL RPC et vos clés API. Cela permet de sécuriser vos informations d’identification et de les référencer facilement dans votre code.
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -172,15 +164,15 @@ CORESCAN_API_KEY="YOUR_API_KEY"
 API_URL="https://api.test2.btcs.network/api"
 ```
 
-**Important:** Never commit this `.env` file to version control (e.g., GitHub) to prevent exposing your sensitive information. If you're using git, add the `.env` file to your `.gitignore`.
+**Important :** Ne soumettez jamais ce fichier « .env » au contrôle de version (par exemple, GitHub) pour éviter d'exposer vos informations sensibles. Si vous utilisez git, ajoutez le fichier `.env` à votre `.gitignore`.
 
-Now that you've created the above `.env` file, run the following command to load the environment variables in the current command line session:
+Maintenant que vous avez créé le fichier `.env` ci-dessus, exécutez la commande suivante pour charger les variables d'environnement dans la session de ligne de commande en cours :
 
 ```bash
 source .env
 ```
 
-Execute the below command to verify your smart contract
+Exécutez la commande ci-dessous pour vérifier votre contrat intelligent
 
 ```bash
 forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
@@ -188,10 +180,10 @@ forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  
 
 Replace `0xContract_Address` and `ContractName` with your actual contract address and the contract Name.
 
-Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gérera le processus de vérification, vous pouvez utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
 
 ## Limitations Connues
 
-- Currently Core only supports solidity compiler versions up to 0.8.24.
+- Actuellement, Core ne prend en charge que les versions du compilateur Solidity jusqu'à 0.8.24
 - Les bibliothèques ne sont pas prises en charge avec la vérification via l'API.
 - Si vous avez des soucis à vérifier des contrats très volumineux (1000+ lignes) en un seul fichier, il est recommandé d'utiliser le format `Standard JSON` pour la vérification.
