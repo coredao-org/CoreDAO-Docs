@@ -50,8 +50,8 @@ Les utilisateurs peuvent également gagner des Sparks en interagissant avec les 
 **3. Campagnes Rejointes :**
 Core Ignition proposera des campagnes flash ou à durée limitée de manière continue, offrant aux utilisateurs des opportunités spéciales pour supercharger les Sparks. Restez connecté en vérifiant les sections de campagnes intégrées à l'application et en suivant les annonces officielles de Core sur [X (Twitter)](https://x.com/Coredao_Org) pour les dernières mises à jour.
 
-**4. Invite New Users to Join Ignition:**
-For those new to Core Ignition, bridge $50 USD worth of whitelisted assets to Core to unlock a permanent invite link. For users who have signed up in Season 2, the invite code is automatically unlocked. En invitant de nouveaux utilisateurs à Core Ignition, vous recevrez 10 % des Sparks quotidiens gagnés par les filleuls de premier degré et 2 % des filleuls de second degré. Veuillez noter qu'un plafond peut s'appliquer au maximum de Sparks que chaque utilisateur peut gagner via les parrainages.
+**4. Inviter de Nouveaux Utilisateurs à Rejoindre Ignition :**
+Pour les nouveaux sur Core Ignition, transférez des actifs autorisés d'une valeur de 50 USDT vers Core pour débloquer un lien d'invitation permanent. Pour les utilisateurs qui se sont inscrits lors de la Saison 2, le code d'invitation est automatiquement débloqué. En invitant de nouveaux utilisateurs à Core Ignition, vous recevrez 10 % des Sparks quotidiens gagnés par les filleuls de premier degré et 2 % des filleuls de second degré. Veuillez noter qu'un plafond peut s'appliquer au maximum de Sparks que chaque utilisateur peut gagner via les parrainages.
 
 ### Comment Booster les Multiplicateurs
 
@@ -72,9 +72,8 @@ Ci-dessous les multiplicateurs de base pour les actifs autorisés dans le portef
 | aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                    | 1.2x | 1.4x | 1.6x   |
 | BTC.B, SolvBTC.b, SolvBTC.m | n/a                    | 1x                   | 1.2x | 1.6x   |
 
-> _**Example 1:**_
-> If the user holds 10 stCORE in Ignition wallet balance, the user gets:\
-> Daily Sparks = stCORE amount \* stCORE price \* Multiplier = 10 stCORE \* $1.5 (assumed) \* 1 = 15
+> _**Exemple 1 :**_
+> Si l'utilisateur détient 10 stCORE dans le solde du portefeuille Ignition, l'utilisateur obtient :  Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 10 stCORE \* 1,5 $ (supposé) \* 1 = 15
 
 > _**Exemple 2 :**_
 > Si l'utilisateur prête 20 stCORE dans un protocole de prêt, l'utilisateur obtient : Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 20 stCORE \* 1,5 $ (supposé) \* 2,5 = 75
