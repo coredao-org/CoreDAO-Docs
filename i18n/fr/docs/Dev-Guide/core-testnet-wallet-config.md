@@ -4,43 +4,43 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Connect to Core Testnet
+# Se connecter au Core Tesnet
 
 ---
 
 :::note
-This is a detailed guideline for connecting to Core Testnet (1114) using the MetaMask wallet.
+Ceci est un guide détaillé pour se connecter au Testnet de Core (1114)  en utilisant le portefeuille MetaMask.
 :::
 
-### Software Prequisites
+### Prérequis Logiciels
 
-1. [MetaMask Wallet Browser Extension](https://metamask.io/)
+1. [Extension de Navigateur MetaMask](https://metamask.io/)
 
-### MetaMask Wallet Setup
+### Configuration du portefeuille MetaMask
 
-We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Testnet. You'll need to install MetaMask and set up your account before you can use it to connect to Core Testnet. You can find MetaMask setup instructions here.
+Nous recommandons l'utilisation du [portefeuille web MetaMask](https://metamask.io/) pour se connecter au Testnet Core. Vous devrez installer MetaMask et configurer votre compte avant de l'utiliser pour vous connecter au Core Testnet. Vous pouvez trouver les instructions pour la configuration de MetaMask ici.
 
-### Adding Core Testnet to MetaMask
+### Ajout du réseau Core Testnet à MetaMask
 
-There are multiple ways to add Core Testnet configurations to your MetaMask Wallet, we have listed the most trusted and testest ways below.
+Il existe plusieurs façons d'ajouter les configurations du  Core Testnet à votre portefeuille MetaMask, nous avons listé les méthodes les plus fiables et testées ci-dessous.
 
-#### Adding Network Manually
+#### Ajouter le réseau manuellement
 
-Once you've set up your MetaMask wallet, you can use it to connect to Core Testnet by adding Core Testnet's chain details in MetaMask's network settings. Navigate to `Settings->Networks` in MetaMask and click the `Add Network` button. Input the following information:
+Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'utiliser pour vous connecter au Core Testnet en ajoutant les détails de la chaîne Core Testnet dans les paramètres de réseau de MetaMask. Naviguez vers `Paramètres -> Réseaux` dans MetaMask et cliquez sur le bouton \`Ajouter un Réseau'. Entrez les informations suivantes :
 
-- **Network Name:** Core Blockchain TestNet
-- **New RPC URL:** https://rpc.test2.btcs.network
-- **Chain ID:** 1114
-- **Currency Symbol:** tCORE2
-- **Block Explorer URL:** https://scan.test2.btcs.network
+- **Nom du réseau :** Core Blockchain Testnet
+- **Nouvelle URL RPC :** https://rpc.test2.btcs.network
+- **ID de Chaîne:** 1114
+- **Symbole de la devise :** tCORE2
+- **URL de l'explorateur de blocs :** https://scan.test2.btcs.network
 - **Faucet:** https://scan.test2.btcs.network/faucet
-- **Staking Website:** https://stake.test2.btcs.network/
+- **Site web de staking  :** https://stake.test2.btcs.network/
 
 ![add-network-metamask](../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
 
-#### Adding the Core network via Chainlist.org
+#### Ajouter le réseau Core via Chainlist.org
 
-1. Go to chainlist.org and search for ‘_core blockchain_’, make sure to check the _Include Testnets_ option.
+1. Rendez-vous sur Chainlist.org et recherchez ‘_core blockchain_’. Assurez-vous de cocher l'option _Include Testnets_ option.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-1.png)
 
