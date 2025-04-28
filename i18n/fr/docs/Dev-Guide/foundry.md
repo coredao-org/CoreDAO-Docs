@@ -246,7 +246,7 @@ contract CounterScript is Script {
 
 #### Création et chargement de variables d'environnement
 
-create an `.env file` and add the following details
+créez un fichier « env file » et ajoutez les détails suivants
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -255,29 +255,29 @@ CORESCAN_API_KEY="YOUR_API_KEY"
 API_URL="https://api.test2.btcs.network/api"
 ```
 
-Make sure you replace `YOUR_API_KEY` and `YOUR_PRIVATE_KEY` with the actual values.
+Assurez-vous de remplacer « YOUR_API_KEY » et « YOUR_PRIVATE_KEY » par les valeurs réelles.
 
-Now that you've created the above `.env` file, run the following command to load the environment variables in the current command line session:
+Maintenant que vous avez créé le fichier `.env` file\` ci-dessus, exécutez la commande suivante pour charger les variables d'environnement dans la session de ligne de commande en cours :
 
 ```bash
 source .env
 ```
 
-### Step 2: Deploy the Contract
+### Étape 2 : Déployer le contrat
 
-To deploy the contract to Core testnet, use the `forge create`
+Pour déployer le contrat sur le réseau de  Core testnet, utilisez « forge create »
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
-or use `forge script` command
+ou utilisez la commande « forge script »
 
 ```bash
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
 ```
 
-After running the command, Foundry will compile and deploy your contract to the specified network. It will return the deployed contract’s address.
+Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. Affiche l'adresse du contrat déployé ;
 
 ```bash
 [⠊] Compiling...
@@ -287,7 +287,7 @@ Deployed to: 0xc1C2466cBBa0f8E1FDb7f5E68e232190c745A6Ae
 Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad914784b2
 ```
 
-## 6. Verifying the Contract
+## 6. Vérification du contrat
 
 Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
 
