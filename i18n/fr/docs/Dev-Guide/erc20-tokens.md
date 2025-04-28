@@ -54,31 +54,27 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 <p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)</p>
 3. ** Installez les contrats Openzeppelin **: 
 - Si vous utilisez le **Solidity compiler** intégré de Remix **, il va automatiquement récupérer les contrats OpenZeppelin pour vous.
-   - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
+   - Si vous utilisez HardHat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
 
-## Step 3: Compile the Contract in Remix
+## Étape 3: Compiler le contrat dans Remix
 
 1. **Compile Your Contract**:
-   - In Remix IDE, go to the **Solidity Compiler** tab (the one with the Solidity logo).
-   - Select the compiler version that matches your contract (for example, `0.8.24`).
-   - Click **Compile** to compile your contract.
+   - Dans REMIX IDE, accédez à l'onglet du  **Solidity Compiler** \*\* (celui avec le logo Solidity).
+   - Sélectionnez la version du compilateur qui correspond à votre contrat (par exemple, `0.8.24`).
+   - Cliquez sur **Compile** pour compiler votre contrat.
 
-<p align="center">
-![Remix_ERC20_Compile](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
-</p>
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)</p>
 
-2. **Fix Any Errors**: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
+2. **Fix Any Errors**: S'il y a des erreurs dans le code, Remix les mettra en surbrillance. Corrigez tous les ereurs et recompilez.
 
-## Step 4: Deploy the Contract on a Test Network
+## Étape 4: Déployez le contrat sur un réseau de test
 
 1. **Connect Remix to MetaMask**:
 
-   - Go to the **Deploy & Run Transactions** tab in Remix.
-   - Under **Environment**, select **Injected Web3**. This will connect Remix to your MetaMask wallet.
+   - Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
+   - Sous \*\* Environment \*\*, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
 
-<p align="center">
-![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
-</p>
+<p align="center">![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)</p>
 
 Ensure that your MetaMask is connected to a **Core testnet**
 
