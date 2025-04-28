@@ -49,17 +49,17 @@ Cela garantit que vous disposez de la dernière version de Foundry installée.
 
 ## 2. Configuration de votre projet
 
-### Step 1: Create a New Foundry Project
+### Étape 1 : Créer un nouveau projet Foundry
 
-To create a new project with Foundry, you can use the `forge init` command:
+Pour créer un nouveau projet avec Foundry, vous pouvez utiliser la commande `forge init` :
 
 ```bash
 forge init my-blockchain-project
 ```
 
-This will generate a new directory structure with all the basic files you need to start writing Solidity contracts and tests.
+Cela générera une nouvelle structure de répertoire avec tous les fichiers de base dont vous avez besoin pour commencer à écrire des contrats et des tests Solidity.
 
-Here’s what the generated folder structure will look like:
+Voici à quoi ressemblera la structure de dossiers générée :
 
 ```
 my-blockchain-project/
@@ -78,20 +78,20 @@ my-blockchain-project/
 └── README.md                  # Project documentation
 ```
 
-### Step 2: Understanding the Folder Structure
+### Étape 2 : Comprendre la structure des dossiers
 
-- **src**: Contains your Solidity contracts.
-- **script**: Contains your deployment script.
-- **lib**: Holds any external libraries or dependencies.
-- **test**: Contains test files to validate your contracts.
-- **foundry.toml**: The configuration file for Foundry. It includes compiler settings, network configurations, and more.
-- **README.md**: A markdown file to document your project.
+- **src** : Contient vos contrats Solidity.
+- **script** : contient votre script de déploiement.
+- **lib** : contient toutes les bibliothèques ou dépendances externes.
+- **test** : Contient des fichiers de test pour valider vos contrats.
+- **foundry.toml** : Le fichier de configuration pour Foundry. Il comprend les paramètres du compilateur, les configurations réseau et bien plus encore.
+- **README.md** : Un fichier markdown pour documenter votre projet.
 
-### Step 3: Update Solidity and EVM version
+### Étape 3 : Mettre à jour la version de Solidity et EVM
 
-Update the `foundry.toml` file with the appropriate Solidity and EVM versions.
+Mettez à jour le fichier « foundry.toml » avec les versions Solidity et EVM appropriées.
 
-Ensure you are using Solidity version `0.8.24`, and set the EVM version to `Shanghai`. If you're using an **older testnet**, set the **EVM version to Paris**.
+Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». Si vous utilisez un **ancien réseau de test**, définissez la **version EVM sur Paris**.
 
 ```bash
 [profile.default]
@@ -102,15 +102,15 @@ evm_version = "shanghai"
 solc_version = "0.8.24"
 ```
 
-## 3. Writing a Solidity Contract
+## 3. Rédaction d'un contrat de solidité
 
-Now that your project is set up, let's write a simple Solidity contract.
+Maintenant que votre projet est configuré, écrivons un contrat Solidity simple.
 
-### Step 1: Create a Simple Contract
+### Étape 1 : Créer un contrat simple
 
-Navigate to the `src` directory and create a new Solidity contract. Let’s use a simple counter contract to start.
+Accédez au répertoire « src » et créez un nouveau contrat Solidity. Commençons par utiliser un contre-contrat simple.
 
-Create a file called `Counter.sol` inside the `src` folder:
+Créez un fichier appelé « Counter.sol » dans le dossier « src » :
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -137,19 +137,19 @@ contract Counter {
 }
 ```
 
-In this contract:
+Dans ce contrat :
 
-- The `count` state variable keeps track of the count value.
-- The `increment` and `decrement` functions increase or decrease the counter.
-- The `getCount` function returns the current count.
+- La variable d'état « count » garde une trace de la valeur du comptage.
+- Les fonctions « incrément » et « décrément » augmentent ou diminuent le compteur.
+- La fonction `getCount` renvoie le nombre actuel.
 
-## 4. Testing the Solidity Contract
+## 4. Test du contrat Solidity
 
-Foundry makes it easy to write tests for your contracts. The testing framework uses Solidity itself, making it easy to write tests alongside your contracts.
+Foundry facilite l'écriture de tests pour vos contrats. Le cadre de test utilise Solidity lui-même, ce qui facilite l'écriture de tests parallèlement à vos contrats.
 
-### Step 1: Create a Test File
+### Étape 1 : Créer un fichier de test
 
-Navigate to the `test` directory and create a test file called `Counter.t.sol`:
+Accédez au répertoire « test » et créez un fichier de test appelé « Counter.t.sol » :
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -182,22 +182,22 @@ contract CounterTest is Test {
 }
 ```
 
-### Explanation:
+### Explication:
 
-- `setUp()`: This function runs before every test and is used to initialize your contract.
-- Test functions: `testInitialCount`, `testIncrement`, and `testDecrement` are individual test cases to check the contract's functionality.
+- `setUp()` : cette fonction s'exécute avant chaque test et est utilisée pour initialiser votre contrat.
+- Fonctions de test : `testInitialCount`, `testIncrement` et `testDecrement` sont des cas de test individuels pour vérifier la fonctionnalité du contrat.
 
-### Step 2: Run the Tests
+### Étape 2 : Exécuter les tests
 
-To run the tests, execute the following command:
+Exécutez le script en utilisant la commande suivante :
 
 ```bash
 forge test
 ```
 
-Foundry will compile the contract, run the tests, and provide you with a summary of the results.
+Foundry compilera le contrat, exécutera les tests et vous fournira un résumé des résultats.
 
-You should see output similar to the following:
+Vous devriez voir un résultat similaire à ce qui suit :
 
 ```bash
 [⠊] Compiling...
@@ -214,13 +214,13 @@ Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 5.38ms (3.86ms CPU 
 Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
 
-## 5. Deploying the Contract
+## 5. Déploiement du contrat
 
-Once you’ve written and tested your Solidity contract, you can deploy it to Core Testnet/Mainnet.
+Une fois que vous avez écrit et testé votre contrat Solidity, vous pouvez le déployer sur Core Testnet/Mainnet.
 
-### Step 1: Configuring Deployment
+### Étape 1 : Configuration du déploiement
 
-To deploy your contract, you’ll need to set up a deployment script. create a file `Counter.s.sol` under script folder and paste the following code.
+Pour déployer votre contrat, vous devrez configurer un script de déploiement. créez un fichier `Counter.s.sol` sous le dossier script et collez le code suivant.
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -244,7 +244,7 @@ contract CounterScript is Script {
 }
 ```
 
-#### Creating and Loading environment variables
+#### Création et chargement de variables d'environnement
 
 create an `.env file` and add the following details
 
@@ -289,14 +289,14 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Verifying the Contract
 
-Foundry has a built-in feature to automatically verify contracts on Core. You can verify your contract using the `forge verify-contract` command:
+Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Foundry will handle the verification process,you can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gérera le processus de vérification, vous pouvez utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
 
-## Further Reading
+## Lectures complémentaires
 
-For detailed instructions on using Foundry, please visit[ Foundry's official website](https://book.getfoundry.sh/).
+Pour des instructions détaillées sur l'utilisation de Foundry, veuillez visiter le [site Web officiel de Foundry](https://book.getfoundry.sh/).
