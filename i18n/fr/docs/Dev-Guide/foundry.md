@@ -1,53 +1,53 @@
 ---
-sidebar_label: Using Foundry
+sidebar_label: En utilisant Foundry
 hide_table_of_contents: false
 sidebar_position: 2
-description: Deploy Contracts on Core using the Foundry
+description: Déployer des contrats sur Core en utilisant Foundry
 ---
 
-# Using Foundry
+# En utilisant Foundry
 
 ---
 
-Foundry is a fast, efficient, and extensible toolkit for EVM development written in Rust.This guide will walk you through the process of installing Foundry, setting up your project, writing and testing Solidity code, and deploying and verifying your contracts on Core Blockchain.
+Foundry est une boîte à outils rapide, efficace et extensible pour le développement EVM écrite en Rust. Ce guide vous guidera tout au long du processus d'installation de Foundry, de configuration de votre projet, d'écriture et de test du code Solidity, ainsi que de déploiement et de vérification de vos contrats sur Core Blockchain.
 
-## 1. Installation of Foundry
+## 1. Installation de Foundry
 
-Before you start using Foundry, you need to install it on your system. The process is relatively simple and can be done in a few steps. Foundry uses `forge` as the main tool to interact with Solidity contracts.
+Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. Le processus est relativement simple et peut être réalisé en quelques étapes. Foundry utilise « forge » comme outil principal pour interagir avec les contrats Solidity.
 
-### Step 1: Install Foundry
+### Étape 1 : Installer Foundry
 
-You can install Foundry by running the following command on a Unix-based system (macOS, Linux):
+Vous pouvez installer Foundry en exécutant la commande suivante sur un système basé sur Unix (macOS, Linux) :
 
 ```bash
 curl -L https://foundry.paradigm.xyz | bash
 ```
 
-This will download and install Foundry. It includes the following tools:
+Cela téléchargera et installera Foundry. Il comprend les outils suivants :
 
-- `forge`: The command-line interface for compiling, testing, and deploying Solidity contracts.
-- `cast`: A tool for interacting with smart contracts and viewing blockchain data.
-- `anvil`: A local node used for testing.
+- `forge` : l'interface de ligne de commande pour compiler, tester et déployer des contrats Solidity.
+- `cast` : un outil permettant d'interagir avec les contrats intelligents et de visualiser les données de la blockchain.
+- `anvil` : un nœud local utilisé pour les tests.
 
-Once installed, make sure the binary is in your system’s PATH. To verify the installation, run:
+Une fois installé, assurez-vous que le binaire se trouve dans le PATH de votre système. Pour vérifier l’installation, exécutez :
 
 ```bash
 forge --version
 ```
 
-You should see the version of Foundry that was installed.
+Vous devriez voir la version de Foundry qui a été installée.
 
-### Step 2: Update Foundry
+### Étape 2 : Mettre à jour Foundry
 
-Foundry is actively developed, so it's important to keep your installation up to date. You can update Foundry with the following command:
+Foundry est en développement actif, il est donc important de maintenir votre installation à jour. Vous pouvez mettre à jour Foundry avec la commande suivante :
 
 ```bash
 foundryup
 ```
 
-This ensures that you have the latest version of Foundry installed.
+Cela garantit que vous disposez de la dernière version de Foundry installée.
 
-## 2. Setting Up Your Project
+## 2. Configuration de votre projet
 
 ### Step 1: Create a New Foundry Project
 
