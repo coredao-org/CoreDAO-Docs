@@ -9,132 +9,122 @@ description: ERC-721 sur Core
 
 ---
 
-## What is ERC-721?
+## Qu'est-ce que l'ERC-721?
 
-ERC-721 is a standard for non-fungible tokens (NFTs). Unlike ERC-20 tokens, which are fungible, ERC-721 tokens are unique and distinguishable from one another. This makes them perfect for use cases such as digital art, collectibles, in-game items, and more.
+ERC-721 est une norme pour les jetons non fongibles (NFT). Contrairement aux jetons ERC-20, qui sont fongibles, les jetons ERC-721 sont uniques et se distinguent les uns des autres. Cela les rend parfaits pour des cas d'utilisation tels que l'art numérique, les objets de collection, les objets de jeu, etc.
 
-## Prerequisites
+## Prérequis
 
-Before starting, you’ll need:
+Avant de commencer, vous aurez besoin:
 
-- **MetaMask** or any EVM wallet.
-- A basic understanding of **Solidity** (though we will guide you through the whole process).
-- Access to **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
+- \*\* Metamask \*\* ou tout portefeuille EVM.
+- Une compréhension de base de \*\* Solidity \*\* (bien que nous vous guiderons tout au long du processus).
+- Accès à \*\*Remix IDE \*\*: [https://remix.ethereum.org] (https://remix.ethereum.org)
 
-## Step 1: Use OpenZeppelin Wizard to Generate Your ERC-721 Contract
+## Étape 1: Utilisez l'assistant OpenZeppelin Wizard pour générer votre contrat ERC-721
 
-### Why Use OpenZeppelin Wizard?
+### Pourquoi utiliser l'assistant OpenZeppelin Wizard?
 
-OpenZeppelin provides secure and audited smart contract templates. The **OpenZeppelin Wizard** is an excellent tool that allows you to generate ERC-721 smart contracts with just a few clicks, ensuring you follow best practices.
+Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifiés. L'**OpenZeppelin Wizard** est un excellent outil qui vous permet de générer des contrats intelligents ERC-721 en quelques clics, vous assurant ainsi de suivre les meilleures pratiques.
 
-1. **Go to OpenZeppelin's Wizard**: Open the [OpenZeppelin Wizard](https://wizard.openzeppelin.com/#erc721) in your browser.
+1. \*\* Allez à l'assistant d'OpenZeppelin's Wizard \*\*: ouvrez le [Openzeppelin Wizard] (https://wizard.openzeppelin.com/#erc721) dans votre navigateur.
 
-2. **Select ERC-721**:
+2. **Sélectionnez ERC-721** :
 
-- you'll find various contract templates. Select **ERC-721** from the list.
+- vous trouverez différents modèles de contrats. Sélectionnez **ERC-721** dans la liste.
 
-3. **Customize Your Contract**:
+3. **Personnalisez votre contrat** :
 
-- **Token Name**: Enter the name of your token (e.g., `MyNFT`).
-- **Token Symbol**: Enter the symbol for your token (e.g., `MNFT`).
-- **Mint Function**: Add a minting function to allow new tokens to be created.
-- **Metadata URI**: You can set metadata using a URI, which will point to the information about your NFTs (e.g., IPFS or a centralized server).
+- \*\* Nom du jeton \*\*: Entrez le nom de votre jeton (par exemple, e.g., \`MyNFT).
+- \*\* Symbole de jeton \*\*: Entrez le symbole de votre jeton (par exemple, \`MNFT).
+- **Mint Function** : Ajoutez une fonction de frappe pour permettre la création de nouveaux jetons.
+- **Metadata URI** : vous pouvez définir des métadonnées à l'aide d'un URI, qui pointera vers les informations sur vos NFT (par exemple, IPFS ou un serveur centralisé).
 
-<p align="center">
-![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)
-</p>
+<p align="center">![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)</p>
 
-4. **Copy the Code**:
+4. **Copiez le code**
 
-After configuring your contract, click on the **Copy** button to get the Solidity code, or you can directly open it in Remix IDE.
+Après avoir configuré votre contrat, cliquez sur le bouton **Copy** pour obtenir le code Solidity, ou vous pouvez l'ouvrir directement dans Remix IDE
 
-## Step 2: Set Up Remix IDE
+## Étape 2: Configurez le remix IDE
 
-Remix is an online IDE for Solidity development that allows you to write, deploy, and manage smart contracts on the Ethereum blockchain. It is perfect for beginners and for quick testing.
+Remix est un IDE en ligne pour le développement Solidity qui vous permet d'écrire, de déployer et de gérer des contrats intelligents sur la blockchain Ethereum Il est parfait pour les débutants et pour des tests rapides.
 
-1. **Go to Remix IDE**: Open [Remix IDE](https://remix.ethereum.org/) in your browser.
+1. \*\* Allez à Remix ide \*\*: ouvrir [remix ide] (https://remix.ethereum.org/) dans votre navigateur.
 
-2. **Create a New Solidity File**:
+2. \*\* Créez un nouveau fichier de solidité \*\*:
 
-- In Remix, create a new file by navigating to the `contracts` directory and clicking on the **+** button.
-- Paste the ERC-721 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
+- Dans Remix, créez un nouveau fichier en naviguant vers le répertoire \*\* Contrats \*\* et en cliquant sur le bouton \*\* + \*\*.
+- Collez le code contractuel ERC-721 que vous avez copié à partir de l'assistant OpenZeppelin’s Wizard dans le fichier nouvellement créé.
 
 <p align="center">
-![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)
-</p>
-3. **Install OpenZeppelin Contracts**:
+![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)</p>
+3. **Installer les contrats OpenZeppelin** :
 
-- Remix provides a way to import OpenZeppelin contracts directly. This is done by adding the following import statement to the top of your contract:
+- Remix fournit un moyen d'importer directement les contrats OpenZeppelin Cela se fait en ajoutant l’instruction d’importation suivante en haut de votre contrat :
 
 ```javascript
 import { ERC721 } from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
 ```
 
-If you're using Remix's "Solidity compiler" plugin, it will automatically fetch the OpenZeppelin contracts for you. However, if you're using Hardhat, you'll need to manually install the OpenZeppelin contracts.
+Si vous utilisez le plugin « Solidity compiler » de Remix, il récupérera automatiquement les contrats OpenZeppelin pour vous. Cependant, si vous utilisez Hardhat, vous devrez installer manuellement les contrats OpenZeppelin.
 
-## Step 3: Compile the Contract in Remix
+## Étape 3: Compiler le contrat dans Remix
 
 **Compile Your Contract:**
 
-- In Remix IDE, go to the Solidity Compiler tab (the one with the Solidity logo).
-- Select the compiler version that matches your contract (for example, 0.8.24).
-- Click Compile to compile your contract.
-- Fix Any Errors: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
+- Dans REMIX IDE, accédez à l'onglet du  **Solidity Compiler** \*\* (celui avec le logo Solidity).
+- Sélectionnez la version du compilateur qui correspond à votre contrat (par exemple, \`0.8.24).
+- Cliquez sur **Compile** pour compiler votre contrat.
+- Corriger toutes les erreurs\*\*: S'il y a des erreurs dans le code, Remix les mettra en surbrillance. Corrigez tous les ereurs et recompilez.
 
-<p align="center">
-![Remix-ERC721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
-</p>
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/ERC721_Compile.png)</p>
 
-## Step 4: Deploy the Contract on a Test Network
+## Étape 4: Déployez le contrat sur leTest Network
 
-### Connect Remix to MetaMask:
+### Connectez Remix à MetaMask
 
-- Go to the Deploy & Run Transactions tab in Remix.
-- Under Environment, select Injected Web3. This will connect Remix to your MetaMask wallet.
+- Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
+- Sous \*\* Environment \*\*, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
 
-<p align="center">
-![Remix-ERC721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
-</p>
+<p align="center">![Remix-ERC721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)</p>
 
-- Make sure your MetaMask is connected to a Core testnet2.
+- Assurez-vous que votre métamask est connecté à  \*\* Core testnet2 \*\*
 
-### Deploy Your Contract:
+### **Déployez votre contrat** :
 
-- Go to the Deploy section.
-- Select the **NFT contract** you want to deploy (`MyNFT`).
-- Ensure the account is connected to the correct testnet.
-- Paste the owner's address in the deployment tab (since the contract is ownable).
-- Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
+- Accédez à la section Deploy
+- Sélectionnez le **contrat NFT** que vous souhaitez déployer (`MyNFT`).
+- Assurez-vous que le compte est connecté au bon réseau de test.
+- Collez l'adresse du propriétaire dans l'onglet déploiement (puisque le contrat est propriétaire).
+- Cliquez sur **Deploy** Vous serez invité à confirmer la transaction dans MetaMask.
 
-<p align="center">
-![Remix-ERC721_Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
-</p>
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/ERC721_Deployment.png)</p>
 
-Once the contract is deployed, you’ll see the contract’s address.
+Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
-## Step 5: Interact with Your Contract
+## Étape 5 : Interagissez avec votre contrat
 
-Now that your contract is deployed, you can interact with it directly from Remix.
+Maintenant que votre contrat est déployé, vous pouvez interagir avec lui directement depuis Remix.
 
 **Mint a New NFT:**
 
-- Under Deployed Contracts, you’ll see your deployed contract.
-- Expand the contract’s interface to interact with the functions like safeMint.
-- Call the **safeMint** function to mint new NFTs. You’ll need to provide the `recipient address` and `token Id` as arguments.
-- Confirm the transaction in MetaMask.
+- Sous **Deployed Contracts**, vous verrez votre contrat déployé.
+- Développez l’interface du contrat pour interagir avec des fonctions telles que safeMint.
+- Utiliser la fonction **safeMint** pour créer de nouveaux NFT. Vous devrez fournir « l’adresse du destinataire » et « l’ID du jeton » comme arguments.
+- Confirmer la transaction dans MetaMask
 
 <p align="center">
-![Remix-ERC721_Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
-</p>
+![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Mint.png)</p>
 
-**View Your NFT**
+\*\* Visualisez votre NFT \*\*
 
-- After minting your NFT, you can view it in a wallet that supports ERC-721 tokens like MetaMask.
+- Après avoir créé votre NFT, vous pouvez le visualiser dans un portefeuille prenant en charge les jetons ERC-721 comme MetaMask.
 
-## Step 6: Managing Your NFTs
+## Étape 6 : Gérer vos NFT
 
-You can add additional functions to your contract, such as:
+Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
 Burning tokens: A function to burn (destroy) NFTs.
 For additional customization, you can refer to OpenZeppelin's ERC-721 documentation and add new features to your contract.
