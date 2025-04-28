@@ -9,23 +9,23 @@ description: Apprenez à vous connecter à Core RPC à l'aide de la CLI
 
 ---
 
-Blockchains generate massive amounts of data, such as transaction volumes and asset ownership, which are valuable for dApps across the ecosystem. However, accessing and utilizing this data often requires significant technical expertise.
+Les blockchains génèrent des quantités massives de données, telles que les volumes de transactions et la propriété des actifs, qui sont précieuses pour les dApps dans l'ensemble de l'écosystème. Cependant, l’accès à ces données et leur utilisation nécessitent souvent une expertise technique importante.
 
-## What are Remote Procedure Calls (RPCs)?
+## Qu'est-ce qu'un appel de procédure à distance (RPC) ?
 
-Remote Procedure Calls (RPCs) help solve this problem by enabling communication between blockchain networks and users, applications, or companies. Instead of setting up a full custom node or complex program to pull data, RPCs allow developers to gather the necessary information by simply accessing the provided endpoint.
+Les appels de procédure à distance (RPC) aident à résoudre ce problème en permettant la communication entre les réseaux blockchain et les utilisateurs, les applications ou les entreprises. Au lieu de configurer un nœud personnalisé complet ou un programme complexe pour extraire des données, les RPC permettent aux développeurs de collecter les informations nécessaires en accédant simplement au point de terminaison fourni.
 
-Think of an RPC as the reverse of an oracle. While an oracle brings external data (e.g., election results or weather forecasts) into the blockchain, an RPC extracts internal blockchain data (e.g., transaction or block information) and moves it out.
+Considérez un RPC comme l’inverse d’un oracle. Alors qu'un oracle apporte des données externes (par exemple, les résultats des élections ou les prévisions météorologiques) dans la blockchain, un RPC extrait des données internes de la blockchain (par exemple, des informations sur les transactions ou les blocs) et les déplace vers l'extérieur.
 
-## RPC Providers for Connecting to the Core Network Mainnet
+## Fournisseurs RPC pour la connexion Core Network Mainnet
 
-The Core supports different [RPC providers](https://chainlist.org/chain/1116), both native Core RPC and third-party RPCs providers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
+Core prend en charge différents [fournisseurs de RPC](https://chainlist.org/chain/1116) — à la fois le RPC natif de Core et des fournisseurs de RPC tiers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
 
 ## Utilisation des RPCs via la ligne de commande
 
-To connect to Core RPC endpoints via the command line, we can use `cURL` (Client URL). This tool allows developers to fetch data directly from remote servers. The simplest `cURL` command retrieves a webpage's HTML code by passing in a URL.
+Pour se connecter aux points de terminaison Core RPC via la ligne de commande, nous pouvons utiliser « cURL » (URL client). Cet outil permet aux développeurs de récupérer des données directement à partir de serveurs distants. La commande « cURL » la plus simple récupère le code HTML d'une page Web en transmettant une URL.
 
-Here's an example:
+Voici un exemple :
 
 ```bash
 curl https://coredao.org/
