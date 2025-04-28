@@ -126,8 +126,8 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 
 Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
-Burning tokens: A function to burn (destroy) NFTs.
-For additional customization, you can refer to OpenZeppelin's ERC-721 documentation and add new features to your contract.
+Burning Tokens\*\* : Une fonction pour brûler (détruire) des NFTs.
+Pour une personnalisation supplémentaire, vous pouvez vous référer à la documentation ERC-721 d'OpenZeppelin et ajouter de nouvelles fonctionnalités à votre contrat.
 
 Pour plus d'informations sur l'implémentation ERC-721 d'OpenZeppelin, veuillez consulter [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
