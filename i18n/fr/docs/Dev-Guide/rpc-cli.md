@@ -31,7 +31,7 @@ Voici un exemple :
 curl https://coredao.org/
 ```
 
-To fetch information about a specific transaction on the Core blockchain, use the following `cURL` command, replacing the transaction hash with your desired value:
+Pour récupérer des informations sur une transaction spécifique sur la Core blockchain, utilisez la commande « cURL » suivante, en remplaçant le hachage de transaction par la valeur souhaitée :
 
 ```bash
 curl -H "Content-Type: application/json" \
@@ -40,21 +40,19 @@ curl -H "Content-Type: application/json" \
      --url 'https://rpc.ankr.com/core'
 ```
 
-In the above statement, following are the components of the curl statement:
+Dans cette commande, les composants du relevé de `curl` sont les suivants :
 
-- **curl**: The command to execute the request.
-- **-H**: Specifies the header, in this case, setting the content type to JSON.
-- **-X POST**: Defines the HTTP method to use (`POST`).
-- **--data**: The request body, including the `method`, `parameters`, and `request ID`.
-- **--url**: The endpoint `URL` to which the request is sent.
+- **curl** : La commande pour exécuter la requête.
+- **-H** : spécifie l'en-tête, dans ce cas, en définissant le type de contenu sur JSON.
+- **-X POST** : Définit la méthode HTTP à utiliser ('POST\`).
+- **--data** : Le corps de la requête, y compris la « méthode », les « paramètres » et l'« ID de la requête ».
+- **--url** : Le point de terminaison « URL » auquel la demande est envoyée.
 
-As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e. the URL from which the information is being retrieved) and an HTTP method. In our case, the URL comes at the end after the _`--url`_ option; you can swap in any of the valid RPC URLs found [here](https://chainlist.org/chain/1116) for connecting to Core Mainnet, just don't forget to wrap the URL in single quotes (''). In the figure below, any of the URLs in the red box will work.
+Comme expliqué précédemment, CURL est une méthode pour envoyer des requêtes API, qui contiennent un point de terminaison (c’est-à-dire l’URL à partir de laquelle les informations sont récupérées) et une méthode HTTP. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
 
-<p align="center">
-![rpc-list](../../static/img/rpc/rpc-1.png)
-</p>
+<p align="center">![rpc-list](../../static/img/rpc/rpc-1.png)</p>
 
-### Sample Response:
+### Réponse d’exemple :
 
 ```json
 {
@@ -80,9 +78,9 @@ As explained earlier, CURL is a method for sending API requests, which contain a
 }
 ```
 
-## Using cURL in a Python Workflow
+## Utilisation de cURL dans un workflow Python
 
-If you prefer working in an IDE rather than the command line, you can replicate the cURL command using Python’s `requests` library. Here's how:
+Si vous préférez travailler dans un IDE plutôt que sur la ligne de commande, vous pouvez répliquer la commande cURL à l’aide de la bibliothèque « requests » de Python. Voici comment :
 
 ```python
 import requests
@@ -98,5 +96,5 @@ print(response.content)
 ```
 
 :::note
-You can replace the URL (`https://rpc.ankr.com/core`) with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
+Vous pouvez remplacer l'URL (`https://rpc.ankr.com/core`) par n'importe quelle URL RPC valide trouvée dans la documentation Core, et n'oubliez pas d'entourer l'URL de guillemets simples.
 :::
