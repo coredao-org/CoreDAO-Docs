@@ -9,55 +9,51 @@ description: ERC-20 sur Core
 
 ---
 
-## What is ERC-20?
+## Qu'est-ce que l'ERC-20?
 
-ERC-20 is a standard for fungible tokens on the Ethereum blockchain. Unlike ERC-721 tokens, which are non-fungible and unique, ERC-20 tokens are identical to each other and can be traded or exchanged in equal quantities. They are the most common token type for projects involving cryptocurrencies, digital assets, and decentralized applications (dApps).
+ERC-20 est une norme pour les jetons fongibles sur la blockchain Ethereum. Contrairement aux jetons ERC-721, qui sont non butins et uniques, les jetons ERC-20 sont identiques les uns aux autres et peuvent être échangés ou échangés en quantités égales. Ils sont le type de jeton le plus commun pour les projets impliquant des crypto-monnaies, des actifs numériques et des applications décentralisées (DAPP).
 
-## Prerequisites
+## Prérequis
 
-Before starting, you’ll need:
+Avant de commencer, vous aurez besoin:
 
-- **MetaMask** or any EVM wallet.
-- A basic understanding of **Solidity** (though we will guide you through the whole process).
-- Access to **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
+- \*\* Metamask \*\* ou tout portefeuille EVM.
+- Une compréhension de base de \*\* Solidity \*\* (bien que nous vous guiderons tout au long du processus).
+- Accès à \*\* remix ide \*\*: [https://remix.ethereum.org] (https://remix.ethereum.org)
 
-## Step 1: Use OpenZeppelin Wizard to Generate Your ERC-20 Contract
+## Étape 1: Utilisez l'assistant Openzeppelin pour générer votre contrat ERC-20
 
-### Why Use OpenZeppelin Wizard?
+### Pourquoi utiliser l'assistant OpenZeppelin Wizard?
 
-OpenZeppelin provides secure, audited smart contract templates. The OpenZeppelin Wizard is an excellent tool that simplifies the process of creating ERC-20 tokens, ensuring that your contract follows best practices.
+Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifiés. L'assistant OpenZeppelin est un excellent outil qui simplifie le processus de création de jetons ERC-20, garantissant que votre contrat suit les meilleures pratiques.
 
-1. **Go to OpenZeppelin's Wizard**: Open the [OpenZeppelin Wizard](https://wizard.openzeppelin.com/) in your browser.
-2. **Select ERC-20**: In the list of available contract templates, select **ERC-20**.
-3. **Customize Your Contract**:
+1. \*\* Allez à l'assistant d'Openzeppelin \*\*: ouvrez le [Openzeppelin Wizard] (https://wizard.openzeppelin.com/) dans votre navigateur.
+2. \*\* SELECT ERC-20 \*\*: Dans la liste des modèles de contrat disponibles, sélectionnez \*\* ERC-20 \*\*.
+3. \*\* Personnalisez votre contrat \*\*:
 
-   - **Token Name**: Enter the name of your token (e.g., `MyToken`).
-   - **Token Symbol**: Enter the symbol for your token (e.g., `MTK`).
-   - **Initial Supply**: Set an initial supply for your token (e.g., `1000000` tokens). This is the number of tokens that will be created upon deployment.
+   - \*\* Nom du jeton \*\*: Entrez le nom de votre jeton (par exemple, `mytoken`).
+   - \*\* Symbole de jeton \*\*: Entrez le symbole de votre jeton (par exemple, `mtk`).
+   - \*\* Alimentation initiale \*\*: Définissez une alimentation initiale pour votre jeton (par exemple, `1000000` jetons ). Il s'agit du nombre de jetons qui seront créés lors du déploiement.
 
-<p align="center">
-![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
-</p>
+<p align="center">![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)</p>
 
-Optionally, you can include additional features like **minting** and **pausing** if needed for your use case.
+Facultativement, vous pouvez inclure des fonctionnalités supplémentaires telles que **minting** and **pausing** Si nécessaire pour votre cas d'utilisation.
 
-4. **Copy the Code**: Once you've configured your contract, click the **Copy** button to get the Solidity code. You can either copy it to your clipboard or directly open it in Remix IDE.
+4. \*\* Copiez le code \*\*: Une fois que vous avez configuré votre contrat, cliquez sur le bouton \*\* Copy \*\* pour obtenir le code de solidité. Vous pouvez soit le copier dans votre presse-papiers, soit l'ouvrir directement dans REMIX IDE.
 
-## Step 2: Set Up Remix IDE
+## Étape 2: Configurez le remix IDE
 
-Remix IDE is an online platform for Solidity development, making it perfect for beginners and quick testing.
+Remix IDE est une plate-forme en ligne pour le développement de la solidité, ce qui le rend parfait pour les débutants et les tests rapides.
 
-1. **Go to Remix IDE**: Open [Remix IDE](https://remix.ethereum.org) in your browser.
-2. **Create a New Solidity File**:
+1. \*\* Allez à Remix ide \*\*: ouvrir [remix ide] (https://remix.ethereum.org) dans votre navigateur.
+2. \*\* Créez un nouveau fichier de solidité \*\*:
 
-   - In Remix, create a new file by navigating to the **contracts** directory and clicking the **+** button.
-   - Paste the ERC-20 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
+   - Dans Remix, créez un nouveau fichier en naviguant vers le répertoire \*\* Contrats \*\* et en cliquant sur le bouton \*\* + \*\*.
+   - Collez le code contractuel ERC-20 que vous avez copié à partir de l'assistant d'Openzeppelin dans le fichier nouvellement créé.
 
-<p align="center">
-![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)
-</p>
-3. **Install OpenZeppelin Contracts**:
-   - If you're using Remix’s built-in **Solidity compiler**, it will automatically fetch OpenZeppelin contracts for you.
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)</p>
+3. ** Installez les contrats Openzeppelin **: 
+- Si vous utilisez le **Solidity compiler** intégré de Remix **, il va automatiquement récupérer les contrats OpenZeppelin pour vous.
    - If you're using Hardhat, you'll need to manually install OpenZeppelin contracts by running `npm install @openzeppelin/contracts`.
 
 ## Step 3: Compile the Contract in Remix
