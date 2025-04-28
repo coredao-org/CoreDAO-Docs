@@ -2,19 +2,19 @@
 sidebar_label: RPC Providers
 hide_table_of_contents: false
 sidebar_position: 2
-description: List of RPC Endpoints for Testnet and Mainnet
+description: Liste des points de terminaison RPC pour Testnet et Mainnet
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer des onglets depuis « @theme/Tabs » ;
+importer TabItem depuis « @theme/TabItem » ;
 
-# RPC Endpoints for Core Network
+# Points de terminaison RPC pour le Core Network
 
 ---
 
-Remote Procedure Call (RPC) endpoints are vital for developers to connect directly with the blockchain, enabling data retrieval, transaction execution, and smart contract management. With both mainnet and testnet endpoints available, developers can test and deploy their applications seamlessly within the Core blockchain ecosystem.
+Les points de terminaison d'appel de procédure à distance (RPC) sont essentiels pour que les développeurs se connectent directement à la blockchain, permettant la récupération de données, l'exécution de transactions et la gestion de contrats intelligents. Avec des points de terminaison mainnet et testnet disponibles, les développeurs peuvent tester et déployer leurs applications de manière transparente au sein de l'écosystème blockchain Core.
 
-## Official RPC Endpoints for Core Network
+## Points de terminaison RPC officiels pour le Core Network
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
@@ -22,14 +22,14 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-### Core Blockchain Testnet2 (1114 (0x45a))
+### Testnet2 de la Core Blockchain (1114 (0x45a))
 
 :::info
-This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+Remarque : Il s’agit du testnet le plus récent et son utilisation est fortement recommandée. La version précédente sera progressivement dépréciée puis retirée, il est donc essentiel de migrer vers ce nouveau testnet pour continuer à bénéficier d’un support actif et accéder aux dernières fonctionnalités.
 :::
 
 - https://rpc.test2.btcs.network
-- https://rpcar.test2.btcs.network (For Archive Node)
+- https://rpcar.test2.btcs.network (Pour le nœud archive)
 
 </TabItem>
 <TabItem value="testnet1">
@@ -37,7 +37,7 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 ### Testnet de la blockchain Core (1115 (0x45b))
 
 :::caution
-Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
+Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Testnet2 est recommandée pour un support continu et un accès aux dernières fonctionnalités.
 :::
 
 - https://rpc.test.btcs.network
