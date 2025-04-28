@@ -86,9 +86,9 @@ dapp-tutorial.
 |      
 ```
 
-5. Installez et configurez l'extension MetaMask pour Chrome pour l'utiliser avec Core Testnet. Refer [here](./core-wallet-config.md) for a detailed guide.
+5. Installez et configurez l'extension MetaMask pour Chrome pour l'utiliser avec Core Testnet. Consultez le guide détaillé [ici](./core-wallet-config.md).
 
-6. Créez un fichier secret.json dans le dossier racine et stockez la clé privée de votre portefeuille MetaMask dedans. Refer [here](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) for details on how to get MetaMask account's private key.
+6. Créez un fichier secret.json dans le dossier racine et stockez la clé privée de votre portefeuille MetaMask dedans. Consultez [ici](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) pour des détails sur la façon d'obtenir la clé privée du compte MetaMask.
 
 ```json
 {
@@ -107,45 +107,51 @@ N'oubliez pas d'ajouter ce fichier au fichier `.gitignore` dans le dossier racin
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-require("@nomiclabs/hardhat-ethers");
+
+require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-waffle");
 
-const { PrivateKey } = require("./secret.json");
+
+const { PrivateKey } = require('./secret.json');
+
 
 module.exports = {
-  defaultNetwork: "testnet",
+   defaultNetwork: 'testnet',
 
-  networks: {
-    hardhat: {},
-    testnet: {
-      url: "https://rpc.test2.btcs.network",
-      accounts: [PrivateKey],
-      chainId: 1114,
-    },
-  },
-  solidity: {
-    compilers: [
-      {
-        version: "0.8.24",
-        settings: {
-          evmVersion: "shanghai",
-          optimizer: {
-            enabled: true,
-            runs: 200,
-          },
-        },
+
+   networks: {
+      hardhat: {
       },
-    ],
-  },
-  paths: {
-    sources: "./contracts",
-    cache: "./cache",
-    artifacts: "./artifacts",
-  },
-  mocha: {
-    timeout: 20000,
-  },
+      testnet: {
+         url: 'https://rpc.test.btcs.network',
+         accounts: [PrivateKey],
+         chainId: 1115,
+      }
+   },
+   solidity: {
+      compilers: [
+        {
+           version: '0.8.19',
+           settings: {
+            evmVersion: 'paris',
+            optimizer: {
+                 enabled: true,
+                 runs: 200,
+              },
+           },
+        },
+      ],
+   },
+   paths: {
+      sources: './contracts',
+      cache: './cache',
+      artifacts: './artifacts',
+   },
+   mocha: {
+      timeout: 20000,
+   },
 };
+ 
 ```
 
 ## Écriture du Contrat Intelligent
@@ -157,7 +163,7 @@ module.exports = {
 // SPDX-License-Identifier: GPL-3.0
 
 
-pragma solidity >=0.8.0 <0.8.24;
+pragma solidity >=0.7.0 <0.9.0;
 
 
 /**
@@ -229,21 +235,26 @@ npx hardhat compile
 ```javascript
 const hre = require("hardhat");
 
+
 async function main() {
   const Storage = await hre.ethers.getContractFactory("Storage");
   const storage = await Storage.deploy();
 
+
   await storage.deployed();
   console.log("Storage contract deployed to:", storage.address);
 
-  console.log("call retrieve():", await storage.retrieve());
 
-  console.log("call store(), set value to 100");
-  const tx = await storage.store(100);
-  await tx.wait();
+  console.log("call retrieve():", await storage.retrieve())
 
-  console.log("call retrieve() again:", await storage.retrieve());
+
+  console.log("call store(), set value to 100")
+  const tx = await storage.store(100)
+  await tx.wait()
+ 
+  console.log("call retrieve() again:", await storage.retrieve())
 }
+
 
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
@@ -253,7 +264,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnets. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Référez-vous [ici](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
 
 4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 
@@ -300,7 +311,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. This will serve application with hot reload feature at [http://localhost:5173]
+4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. Cela servira l'application avec une fonctionnalité de rechargement à chaud à l'adresse [http://localhost:5173]
 
 ```bash
 npm run dev
@@ -321,7 +332,7 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
-const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
+const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 ```
 
 4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
@@ -330,22 +341,16 @@ const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 
 1. Exécutez la commande `npm run dev` depuis la racine du projet pour démarrer l'application. Cela servira l'application à l'adresse [http://localhost:5173](http://localhost:5173/)
 
-2. Make sure that your MetaMask wallet is correctly installed and switched to Core Testnet as described in our [Core Testnet user guide](./core-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
+2. Assurez-vous que votre portefeuille MetaMask est correctement installé et switché sur le Core Testnet comme décrit dans notre [guide utilisateur du Core Testnet](./core-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
 
-<p align="center">
-![dapp-on-core](../../static/img/dapp/dapp-1.png)
-</p>
+<p align="center">![dapp-on-core](../../static/img/dapp/dapp-1.png)</p>
 
 3. Entrez un nombre dans le champ de saisie et cliquez sur le bouton **store** pour l'enregistrer dans le contrat. Une action d'écriture sur le contrat intelligent appelle le portefeuille MetaMask. Cliquez sur le bouton **Confirm** pour signer la transaction et attendez la confirmation sur la blockchain.
 
-<p align="center">
-![dapp-on-core](../../static/img/dapp/dapp-2.avif)
-</p>
+<p align="center">![dapp-on-core](../../static/img/dapp/dapp-2.avif)</p>
 
 4. Après que la transaction soit confirmée sur la blockchain, cliquez sur le bouton **retrieve** pour lire la valeur depuis le contrat intelligent. Vous remarquerez que la valeur a été mise à jour.
 
-<p align="center">
-![dapp-on-core](../../static/img/dapp/dapp-3.avif)
-</p>
+<p align="center">![dapp-on-core](../../static/img/dapp/dapp-3.avif)</p>
 
 🎉 Félicitations ! Vous avez interagi avec votre contrat nouvellement déployé via l'interface frontend de votre dApp ! Vous pouvez développer la base de code en déployant et en interagissant avec différents contrats, et en ajoutant de nouveaux composants UI au site Web pour vos utilisateurs.
