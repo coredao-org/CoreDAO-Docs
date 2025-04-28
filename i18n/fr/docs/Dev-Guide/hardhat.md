@@ -11,7 +11,7 @@ description: Déployer des contrats sur Core en utilisant Hardhat
 
 Hardhat est un environnement de développement populaire pour les blockchains compatibles avec l’EVM, comprenant plusieurs composants pour écrire, compiler, déboguer et déployer des contrats intelligents.
 
-In this tutorial, learn how to compile, deploy and call smart contracts on Core Testnet using Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
+Dans ce tutoriel, apprenez à compiler, déployer et appeler des contrats intelligents sur Core TestNet en utilisant Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Installation
 
@@ -26,7 +26,7 @@ Accédez à votre dossier de profil et suivez les étapes ci-dessous pour instal
 Après l'installation, vous pouvez initialiser Hardhat en exécutant la commande `npx hardhat` :
 
 ```javascript
-$ npx hardhat
+$ npx hardhat    
 888    888                      888 888               888
 888    888                      888 888               888
 888    888                      888 888               888
@@ -38,7 +38,7 @@ $ npx hardhat
 
 👷 Welcome to Hardhat v2.10.1 👷‍
 
-? What do you want to do? …
+? What do you want to do? … 
 ❯ Create a JavaScript project
   Create a TypeScript project
   Create an empty hardhat.config.js
@@ -61,53 +61,59 @@ Copiez ce qui suit dans votre fichier `hardhat.config.js`:
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-require("@nomiclabs/hardhat-ethers");
+
+require('@nomiclabs/hardhat-ethers');
 require("@nomiclabs/hardhat-waffle");
 
-const { PrivateKey } = require("./secret.json");
+
+const { PrivateKey } = require('./secret.json');
+
 
 module.exports = {
-  defaultNetwork: "testnet",
+   defaultNetwork: 'testnet',
 
-  networks: {
-    hardhat: {},
-    testnet: {
-      url: "https://rpc.test2.btcs.network",
-      accounts: [PrivateKey],
-      chainId: 1114,
-    },
-  },
-  solidity: {
-    compilers: [
-      {
-        version: "0.8.22",
-        settings: {
-          evmVersion: "shanghai",
-          optimizer: {
-            enabled: true,
-            runs: 200,
-          },
-        },
+
+   networks: {
+      hardhat: {
       },
-    ],
-  },
-  paths: {
-    sources: "./contracts",
-    cache: "./cache",
-    artifacts: "./artifacts",
-  },
-  mocha: {
-    timeout: 20000,
-  },
+      testnet: {
+         url: 'https://rpc.test.btcs.network',
+         accounts: [PrivateKey],
+         chainId: 1115,
+      }
+   },
+   solidity: {
+      compilers: [
+        {
+           version: '0.8.19',
+           settings: {
+            evmVersion: 'paris',
+            optimizer: {
+                 enabled: true,
+                 runs: 200,
+              },
+           },
+        },
+      ],
+   },
+   paths: {
+      sources: './contracts',
+      cache: './cache',
+      artifacts: './artifacts',
+   },
+   mocha: {
+      timeout: 20000,
+   },
 };
+ 
 ```
 
-**Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `shanghai` under the solidity compiler settings in the `hardhat.config.js` file.
+**Assurez-vous que votre contrat intelligent suit les [directives de support Solidity pour Core Blockchain](./smart-contract-guidelines.md)**. Pour cela, vérifiez que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity dans le fichier `hardhat.config.js`.
 
-If you are using **testnet1**, `evmVersion` parameter should be set to `Paris`.
+Si vous utilisez **testnet1**, le paramètre `evmVersion` doit être défini sur `Paris`.
 
 :::note
-Please note that you'll need to provide your private keys or mnemonic for the provider. You can store them in a `secret.json` file. Be sure to add this file to your project's `.gitignore` to prevent accidentally committing your private keys to a public repository. Additionally, keep this file in a secure location to protect your sensitive information!
+Veuillez noter que vous devrez fournir vos clés privées ou votre mnémonique pour le fournisseur. Vous pouvez les stocker dans un fichier « secret.json ». Assurez-vous d'ajouter ce fichier au « .gitignore » de votre projet pour éviter de valider accidentellement vos clés privées dans un référentiel public. De plus, conservez ce fichier dans un endroit sûr pour protéger vos informations sensibles !
 :::
 
 ## Rediger des contrats intelligents
@@ -258,11 +264,9 @@ call retrieve() again: BigNumber { value: "100" }
 
 Nous pouvons voir que le script déploie correctement le contrat, stocke un nombre et confirme que le nombre est bien stocké dans le contrat.
 
-We can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and called.
+Nous pouvons utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et appelé avec succès.
 
-<p align="center">
-![hardhat](../../static/img/hardhat/hardhat-1.avif)
-</p>
+<p align="center">![hardhat](../../static/img/hardhat/hardhat-1.avif)</p>
 
 ## Lecture supplémentaire
 
