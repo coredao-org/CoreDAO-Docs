@@ -13,7 +13,7 @@ Les applications décentralisées (dApps) utilisent une blockchain ou des contra
 
 ## Ce que Nous Allons Construire
 
-Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethers.js qui stocke des données dans un contrat intelligent sur la blockchain Core et les affiche aux utilisateurs. The dApp's full code is available on GitHub in the [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp) repository.
+Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethers.js qui stocke des données dans un contrat intelligent sur la blockchain Core et les affiche aux utilisateurs. Le code complet de la dApp est disponible sur GitHub dans le répertoire [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp).
 
 ## Objectifs d'Apprentissage
 
@@ -56,9 +56,7 @@ npm install --save-dev chai @nomiclabs/hardhat-waffle
 npx hardhat
 ```
 
-<p align="center">
-![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)
-</p>
+<p align="center">![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)</p>
 
 :::note
 Comme nous utiliserons Waffle pour ce projet, assurez-vous de sélectionner **Non** pour l'option "_Voulez-vous installer les dépendances de ce projet d'exemple avec npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
@@ -76,16 +74,16 @@ dapp-tutorial.
 |
 +---contracts (For Solidity Smart Contracts)
 |       Lock.sol
-|
+|      
 +---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
 |   \---modules
 |           Lock.js
-|
+|                
 +---node_modules
-|
+|  
 +---test (For writing and Running Tests)
-|       Lock.js
-|
+|       Lock.js      
+|      
 ```
 
 5. Installez et configurez l'extension MetaMask pour Chrome pour l'utiliser avec Core Testnet. Refer [here](./core-wallet-config.md) for a detailed guide.
