@@ -154,46 +154,40 @@ Le Core Mainnet est maintenant ajouté à votre MetaMask.
 <TabItem value="testnet2">
 1. Rendez-vous sur https://scan.test2.btcs.network/ et faites défiler la page jusqu'en bas
 
-<p align="center" style={{zoom:"60%"}}>
-![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
-</p>
+<p align="center" style={{zoom:"60%"}}>![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)</p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Cliquez sur le bouton ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Approuvez dans MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Après avoir suivi ces étapes, vous pourrez voir le réseau Core la prochaine fois que vous accéderez au sélecteur de réseau.
 
 </TabItem>
 
 <TabItem value="testnet1">
-1. Go to https://scan.test.btcs.network/ and scroll all the way down on the page
+1. Rendez-vous sur https://scan.test.btcs.network/ et faites défiler la page jusqu'en bas
 
-<p align="center" style={{zoom:"60%"}}>
-![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
-</p>
+<p align="center" style={{zoom:"60%"}}>![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)</p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Cliquez sur le bouton ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Approuvez dans MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Après avoir suivi ces étapes, vous pourrez voir le réseau Core la prochaine fois que vous accéderez au sélecteur de réseau.
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-1. Go to https://scan.coredao.org/ and scroll all the way down on the page
+1. Rendez-vous sur https://scan.coredao.org/ et faites défiler la page jusqu'en bas
 
-<p align="center" style={{zoom:"60%"}}>
-![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-9.webp)
-</p>
+<p align="center" style={{zoom:"60%"}}>![metmask-mainnet](../../static/img/miannet-wallet-config/mainnet-wallet-config-9.webp)</p>
 
-2. Click the ‘_Add Core Network_’ button
+2. Cliquez sur le bouton ‘_Add Core Network_’
 
-3. Approve in your MetaMask
+3. Approuvez dans MetaMask
 
-4. After performing the above steps, you will be able to see Core network the next time you access the network selector.
+4. Après avoir suivi ces étapes, vous pourrez voir le réseau Core la prochaine fois que vous accéderez au sélecteur de réseau.
 
 </TabItem>
 
@@ -201,7 +195,7 @@ Le Core Mainnet est maintenant ajouté à votre MetaMask.
 
 :::info
 
-#### Latest Core Testnet (1114)
+#### Dernier code de  Core Testnet (1114)
 
 Le nouveau testnet de Core avec le `chainID 1114` est désormais en ligne et recommandée pour une utilisation. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). L’ancien testnet sera bientôt déprécié et finira par être retiré. Passez donc au nouveau testnet pour bénéficier des dernières fonctionnalités.
 :::
