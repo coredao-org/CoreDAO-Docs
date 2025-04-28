@@ -76,55 +76,52 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 
 <p align="center">![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)</p>
 
-Ensure that your MetaMask is connected to a **Core testnet**
+Assurez-vous que votre métamask est connecté à  \*\* Core testnet \*\*
 
-2. **Deploy Your Contract**:
-   - In the **Deploy** section, select the **ERC-20 contract** (e.g., `MyToken`).
-   - Please paste the `recipient address` for the tokens to be minted in Premint, as well as the `owner address` (note that in this case, both addresses are the same).
-   - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
-   - Once the contract is deployed, you’ll see the contract’s address in Remix.
+2. **Déployez votre contrat** :
+   - Dans la section **Deploy**, sélectionnez le **ERC-20 contract** (par exemple, « MyToken »).
+   - Veuillez coller l'« adresse du destinataire » des jetons à frapper dans Premint, ainsi que l'« adresse du propriétaire » (notez que dans ce cas, les deux adresses sont identiques).
+   - Cliquez sur **Deploy** Vous serez invité à confirmer la transaction dans MetaMask.
+   - Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
-<p align="center">
-![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)
-</p>
+<p align="center">![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)</p>
 
-## Step 5: Interact with Your Contract
+## Étape 5 : Interagissez avec votre contrat
 
-Now that your contract is deployed, you can interact with it directly from Remix.
+Maintenant que votre contrat est déployé, vous pouvez interagir avec lui directement depuis Remix.
 
-1. **Check Balance**:
+1. **Vérifier le solde**:
 
-   - Under **Deployed Contracts**, you'll see your deployed contract.
-   - Expand the contract’s interface to interact with functions like `balanceOf`, `mint` (if you included minting functionality).
-   - Paste the recipient address and click on `balanceOf` to check the recipient's balance.
+   - Sous **Deployed Contracts**, vous verrez votre contrat déployé.
+   - Développez l’interface du contrat pour interagir avec des fonctions telles que « balanceOf », « mint » (si vous avez inclus la fonctionnalité de frappe).
+   - Collez l'adresse du destinataire et cliquez sur « balanceOf » pour vérifier le solde du destinataire.
 
 <p align="center">
-![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)
-</p>
+![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)</p>
 
-1. **Mint Tokens**:
+1. **creer des jetons**:
 
-   - Call the `mint` function to create new tokens. Provide the recipient address and the number of tokens to mint.
-   - Confirm the transaction in MetaMask.
+   - Utiliser la fonction « mint » pour créer de nouveaux jetons. Fournissez l'adresse du destinataire et le nombre de jetons à frapper.
+   - Confirmez la transaction dans MetaMask.
 
-2. **Transfer Tokens**:
-   - You can also use the **transfer** function to send tokens from one address to another.
-   - Provide the recipient's address and the amount of tokens you want to send.
-   - Confirm the transaction in MetaMask.
+2. **Transferer des jetons** :
+   - Vous pouvez également utiliser la fonction **transfer** pour envoyer des jetons d'une adresse à une autre.
+   - Indiquez l'adresse du destinataire et le montant de jetons que vous souhaitez envoyer.
+   - Confirmer la transaction dans MetaMask
 
-## Step 6: Manage Your Tokens
+## Étape 6 : Gérez vos jetons
 
-You can add additional functions to your contract, such as:
+Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
-- **Burning Tokens**: A function to burn (destroy) tokens.
+- **Burning Tokens** : Une fonction pour brûler (détruire) des jetons.
 
-- **Roles**: Roles allow you to assign different permissions to addresses, such as minting or burning tokens, ensuring secure and controlled actions within the contract.
+- **Rôles** : Les rôles vous permettent d'attribuer différentes autorisations aux adresses, telles que la frappe ou la gravure de jetons, garantissant des actions sécurisées et contrôlées dans le cadre du contrat.
 
-- **Upgradability** : Enables you to upgrade the contract logic after deployment without losing data, ensuring flexibility for future improvements
+- **Upgradability** : vous permet de mettre à niveau la logique du contrat après le déploiement sans perdre de données, garantissant ainsi la flexibilité pour les améliorations futures
 
 Vous trouverez plus d'informations sur l'implémentation ERC-20 d'OpenZeppelin [ici](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-## References:
+## Références :
 
 - [ERC-20 Token Standard (Ethereum.org)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [OpenZeppelin ERC-20 Implementation Documentation](https://docs.openzeppelin.com/contracts/4.x/erc20)
