@@ -1,8 +1,8 @@
 ---
-sidebar_label: Connect Through CLI
+sidebar_label: Connexion via CLI
 hide_table_of_contents: false
 sidebar_position: 2
-description: Learn how to connect to Core RPC using CLI
+description: Apprenez à vous connecter à Core RPC à l'aide de la CLI
 ---
 
 # RPC Core via la ligne de commande
