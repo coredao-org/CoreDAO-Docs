@@ -24,7 +24,7 @@ Voici quelques-unes des principales caractéristiques qui distinguent Core de se
 - **Staking de BTC Non-custodial:** Core offre aux détenteurs de BTC la possibilité de staker leurs actifs sur la blockchain Core de manière fiable et sécurisée, sans avoir à renoncer à la garde de leurs actifs. Cette fonctionnalité innovante intègre Bitcoin dans les activités DeFi de Core, augmentant la liquidité et permettant aux utilisateurs de Bitcoin de gagner des récompenses de staking sous forme de tokens CORE au sein de l'écosystème Core.
 - **stCORE:** Core propose un staking liquide sous la forme de stCORE, conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser le potentiel de leurs actifs avec une plus grande flexibilité et efficacité.
 - lstBTC (Bientôt disponible) : un jeton Bitcoin liquide et générateur de rendement émis sur la blockchain Core, permettant aux détenteurs de Bitcoin - en particulier aux investisseurs institutionnels - de gagner des rendements en BTC tout en maintenant une liquidité et une sécurité totales.
-- **coreBTC:** now sunsetted, is the Core-native bridged BTC.
+- coreBTC : désormais obsolète, est le BTC ponté natif de Core.
 
 ## Problèmes Résolus par la blockchain Core
 
@@ -36,10 +36,10 @@ La blockchain Core aborde plusieurs problèmes clés dans l'espace blockchain gr
 
 - **Rôles et Participation dans l’Écosystème:** Core est conçu pour avoir un écosystème où divers participants jouent des rôles significatifs, notamment les validateurs, les relayeurs, les mineurs de BTC, les détenteurs de CORE, et les vérificateurs. Cet écosystème vise à garantir la sécurité du réseau, à promouvoir la décentralisation, et à encourager la participation de la communauté à la gouvernance et aux activités du réseau.
 
-- **Tokenomics et Structure d’Incitations:** CORE, le token utilitaire natif, est utilisé pour le staking et le paiement des frais de gaz. With a total supply of **2.1 billion** tokens, it is planned to distribute these over **81 years**, aligning with its long-term vision. Le projet inclut également des mécanismes pour brûler un pourcentage des récompenses de blocs et des frais de gaz afin de gérer dynamiquement l'offre de tokens.
+- **Tokenomics et Structure d’Incitations:** CORE, le token utilitaire natif, est utilisé pour le staking et le paiement des frais de gaz. Avec une offre totale de 2,1 milliards de jetons, il est prévu de les distribuer sur 81 ans, alignant ainsi sur sa vision à long terme. Le projet inclut également des mécanismes pour brûler un pourcentage des récompenses de blocs et des frais de gaz afin de gérer dynamiquement l'offre de tokens.
 
 - **Revenu Passif:** Core offre une opportunité aux détenteurs de BTC de gagner un revenu passif sous forme de tokens CORE, gagnés en récompenses en échange du staking de leurs BTC sur Core et de leur délégation aux validateurs du réseau Core, contribuant ainsi indirectement au mécanisme de consensus et à la sécurité de la blockchain Core.
 
-- **Secure Yeild Options:** Through innovative solutions like Non-Custodial BTC Staking and lstBTC, Core enables both institutions and retail users to earn secure yield on their staked assets—without relinquishing custody.
+- Options de rendement sécurisées : Grâce à des solutions innovantes comme le staking BTC non dépositaire et lstBTC, Core permet aux institutions et aux utilisateurs particuliers de générer des rendements sécurisés sur leurs actifs mis en staking - sans renoncer à la garde.
 
 - **Comparaison avec d’Autres Blockchains:** Core se positionne comme une amélioration par rapport aux blockchains existantes comme Bitcoin, Ethereum, Solana, Polygon, et la BNB Chain. En abordant des problèmes tels que le faible débit des transactions, les risques de centralisation, et la stabilité du réseau, Core offre une alternative plus évolutive, décentralisée et sécurisée.
