@@ -11,32 +11,30 @@ description: Aperçu rapide de l'architecture sous-jacente de la blockchain de C
 
 L'architecture de Core est construite autour de \*\* Satoshi Plus \*\*, un mécanisme consensus tripartite qui intègre \*\* une preuve de travail déléguée (DPOW), une preuve de participation par délégation (DPoS) et le staking bitcoin sans garde \*\*.
 
-Grâce à Satoshi Plus, les mineurs de Bitcoin, les pools de minage, les stakers de jetons CORE et les stakers de Bitcoin participent à l'élection des validateurs pour sécuriser le reseau Core. Validator selection is based on a hybrid score, considering:
+Grâce à Satoshi Plus, les mineurs de Bitcoin, les pools de minage, les stakers de jetons CORE et les stakers de Bitcoin participent à l'élection des validateurs pour sécuriser le reseau Core. La sélection des validateurs est basée sur un score hybride, en considérant:
 
-- **Delegated hash power** from Bitcoin miners/mining pools
-- **Delegated/staked CORE tokens** from CORE token stakers
-- **Delegated/staked Bitcoin** from Bitcoin stakers
+- Puissance de hachage déléguée par les mineurs/pools de minage
+- Jetons CORE délégués/mis en staking par les détenteurs de jetons CORE
+- Bitcoin délégués/mis en staking par les stakers de Bitcoin
 
-### **First Non-Custodial Bitcoin Staking & Bitcoin Risk-Free Rate**
+### Premier staking de Bitcoin non-custodial et taux de rendement sans risque sur Bitcoin
 
-Satoshi Plus's Non-Custodial Bitcoin Staking component is **the first live non-custodial Bitcoin staking mechanism**, allowing Bitcoin holders to earn native yield **without changing Bitcoin’s trust assumptions**. This effectively establishes the **Bitcoin Risk-Free Rate**, a groundbreaking milestone in Bitcoin’s history.
+Le composant de staking Bitcoin non-custodial de Satoshi Plus est le premier mécanisme de staking Bitcoin non-custodial opérationnel, permettant aux détenteurs de Bitcoin de générer un rendement natif sans altérer les postulats de confiance de Bitcoin. Ceci établit effectivement le taux sans risque de Bitcoin, une étape révolutionnaire dans l'histoire de Bitcoin.
 
-### **Harnessing Bitcoin's Security & Empowering Miners**
+### Exploiter la sécurité de Bitcoin et donner du pouvoir aux mineurs
 
-Currently, Satoshi Plus benefits from the security of **\~75% of all Bitcoin mining hash power** through delegation. By involving miners in validator elections, it leverages Bitcoin’s unmatched decentralization while offering **miners additional rewards**, addressing the long-term decline in Bitcoin block rewards.
+Actuellement, Satoshi Plus bénéficie de la sécurité de ~75% de toute la puissance de hachage minière de Bitcoin grâce à la délégation. En impliquant les mineurs dans les élections de validateurs, cela tire parti de la décentralisation inégalée de Bitcoin tout en offrant aux mineurs des récompenses supplémentaires, répondant ainsi au déclin à long terme des récompenses de bloc Bitcoin.
 
-<p align="center">
-![component-diagram](../../../static/img/Core-Architecture.png)
-</p>
+<p align="center">![component-diagram](../../../static/img/Core-Architecture.png)</p>
 
-## **Core Blockchain: Components, Roles, and Workflows**
+## Core Blockchain : Composants, Rôles et Flux de travail
 
-#### **Key Roles**
+#### Rôles Clés
 
-- **Validators**: Produce blocks and validate transactions on the Core network. Anyone can become a validator by registering and locking a refundable CORE validator bond deposit.
-- **Bitcoin Miners**: Secure Bitcoin via PoW and can delegate hash power to Core validators by including delegation information in the coinbase transaction of a block without sacrificing Bitcoin security.
-- **CORE Stakers**: Delegate CORE tokens to validators to support network security.
-- **Bitcoin Stakers**: Delegate Bitcoin to validators on Core through Non-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.
+- \*\*Les validateurs jouent un rôle crucial dans la production des blocs et la validation des transactions sur le réseau Core. N'importe qui peut devenir validateur en s'inscrivant et en bloquant un dépôt de caution de validateur CORE remboursable.
+- Les mineurs de Bitcoin : sécurisent Bitcoin via PoW et peuvent déléguer la puissance de hachage aux validateurs Core en incluant les informations de délégation dans la transaction coinbase d'un bloc sans compromettre la sécurité de Bitcoin.
+- Les Stakers CORE : Délèguent des jetons CORE aux validateurs pour soutenir la sécurité du réseau
+- Les Stakers Bitcoin : Délèguent du Bitcoin aux validateurs sur Core via un staking Bitcoin non-dépositaire et gagnent un rendement sans renoncer à la garde de leurs actifs.
 - **Relayers**: These are responsible for synchronizing the data between the Core and Bitcoin network. They transmit Bitcoin block and transaction data to Core. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
 - **Verifiers**: Report malicious behaviors on the Core network. Successful verification flags can trigger the slashing or jailing of validators and bad actors, and verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a verifier on the Core network.
 
