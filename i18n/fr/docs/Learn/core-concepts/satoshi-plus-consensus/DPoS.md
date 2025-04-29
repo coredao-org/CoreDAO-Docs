@@ -37,7 +37,7 @@ La DPoS permet aux détenteurs de tokens CORE de participer activement au consen
 
 4. **Production de Blocs :** Les validateurs élus sont responsables de la production des blocs et de la validation des transactions pendant leur mandat, ce qui leur permet de gagner des récompenses.
 
-5. **Earning Rewards:** CORE and BTC stakers earn rewards in the form of CORE tokens from the validators to whom they delegated.
+5. **Réception des Récompenses :** Les participants du staking CORE et  BTC reçoivent des récompenses CORE des validateurs auxquels ils ont délégué leurs jetons.
 
 ## Importance de la DPoS dans Satoshi Plus
 
