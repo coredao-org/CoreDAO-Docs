@@ -83,44 +83,47 @@ Les opérations de staking BTC non dépositaire de Core sont menées sur deux bl
 Les utilisateurs peuvent également réaffecter leurs BTC directement sans les retirer au préalable.\
 Après confirmation de la transaction sur le réseau Bitcoin, les utilisateurs peuvent récupérer les données de transaction et les soumettre à la blockchain Core. Cette étape est facultative si les utilisateurs composent la transaction dans un format standard, comme suggéré par Core. Les Relayeurs de l'infrastructure Core détecteront la transaction de staking et la soumettront à la blockchain Core pour les utilisateurs.
 
-#### Step-by-Step Staking Process
+#### Processus étape par étape
 
-1. **Locking Bitcoin**
- - The user creates a **CLTV timelock transaction** on the Bitcoin network.
- - Minimum lock duration depends on the staking method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
+1. Verrouillage du Bitcoin
+ - L'utilisateur crée une transaction avec verrouillage temporel CLTV sur le réseau Bitcoin.
+ - La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis le script ne comporte aucune période de blocage.
 
-2. **Delegating to a Core Validator**
- - The staking transaction must include:
-  - **Core Validator Address** (for delegation of BTC).
+2. Délégation à un validateur Core
+ - La transaction de staking doit inclure :
+  - Adresse du validateur Core (pour la délégation de BTC)
   - Adresse de récompense CORE :
    L'adresse spécifiée par l'utilisateur pour recevoir les récompenses en tokens CORE générées par le staking de Bitcoin sur la plateforme Core.
 
 3. La période de verrouillage du Bitcoin commence
  - Le BTC reste verrouillé pendant une durée spécifique.
- - It remains **securely on the Bitcoin network** without moving off-chain.
+ - Il reste de manière sécurisée sur le réseau Bitcoin sans être déplacé hors de la chaîne.
 
-4. **Validator Selection & Rewards Accrual**
- - Core uses the staked BTC to calculate the validator’s hybrid score.
- - Higher delegated BTC increases validator election chances.
- - Stakers earn **CORE token rewards** based on delegation duration.
+4. Sélection du validateur et accumulation des récompenses
+ - Core utilise les BTC stakés pour calculer le score hybride du validateur
+ - Un montant plus élevé de BTC délégués augmente les chances d'élection du validateur.
+ - Les stakers gagnent des récompenses en tokens CORE en fonction de la durée de la délégation.
 
-5. **Redeeming Bitcoin After Staking Ends**
- - Once the timelock expires, BTC **remains in the user’s address but stays locked**.
- - The user must send a **Redeem script** explicitly after the timelock period ends to regain access and be able to spend their BTC.
- - Alternatively, users can **redelegate directly** without redemption.
+5. Récupération du Bitcoin après la fin du staking
+ - Une fois que le verrouillage temporel expire, les BTC restent dans l'adresse de l'utilisateur mais demeurent verrouillés.
+ - L'utilisateur doit envoyer un script de rachat (Redeem script) explicitement après la fin de la période de verrouillage temporel pour récupérer l'accès et pouvoir dépenser ses BTC.
+ - Les utilisateurs peuvent également réaffecter directement leurs BTC (redelegate) sans passer par le processus de rachat.
 
-### Timeline for Non-Custodial Bitcoin Staking
+### Chronologie du staking de Bitcoin non dépositaire
 
-Here’s an overview of the timeline for placing a Bitcoin staking order and when rewards take effect:
+Voici un aperçu de la chronologie pour passer une commande de staking de Bitcoin et quand les récompenses prennent effet :
 
-1. **Staking Order Placement:** Once a staking order is placed, it typically takes 6 Bitcoin blocks (roughly 60 minutes) for the Bitcoin transaction to be transferred to the Core blockchain.
-2. **Staking Reward Activation:** After the Bitcoin transaction transfer is completed, it takes one round (~24 hours, based on UTC+0 time) for the staking reward to become effective.
-3. **Staking Data Accessibility:** After the staking becomes effective, staking data will be available via the Staking API.
+1. Placement de la commande de staking :
+ Une fois la commande passée, il faut généralement 6 blocs Bitcoin (environ 60 minutes) pour que la transaction Bitcoin soit transférée sur la blockchain Core.
+2. Activation des récompenses de staking :
+ Après le transfert de la transaction Bitcoin, il faut environ un cycle (environ 24 heures, basé sur l'heure UTC+0) pour que les récompenses de staking prennent effet.
+3. Accès aux données de staking :
+ Une fois que le staking est effectif, les données de staking sont accessibles via l'API de staking. Cela permet aux utilisateurs de suivre et de gérer leurs activités de staking de manière efficace
 
-#### **Example: Bitcoin Staking Transaction with 2-day Duration**
+#### Exemple : Transaction de staking de Bitcoin d'une durée de 2 jours
 
-- Assume a staking order is placed at 6:00 AM UTC+0 today.
-- The transaction will go through 6 Bitcoin blocks on the same day.
+- Supposons qu'une commande de staking soit passée à 6h00 UTC+0 aujourd'hui.
+- La transaction passera par 6 blocs Bitcoin le même jour.
 - The staking will become effective at 00:00 AM UTC+0 on the second day.
 - After the staking goes effective, the staking data is then accessible.
 
