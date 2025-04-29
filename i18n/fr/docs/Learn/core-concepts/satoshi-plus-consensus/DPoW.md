@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Exploiter la DPoW dans Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW) in Satoshi Plus
+# Preuve de travail déléguée (DPoW) dans Satoshi Plus
 
 ---
 
@@ -15,9 +15,7 @@ La Preuve de Travail Déléguée (DPoW) est un élément crucial du mécanisme d
 
 La DPoW permet aux mineurs de Bitcoin de gagner une seconde récompense de bloc en plus de leurs récompenses Bitcoin tout en sécurisant la blockchain Core, créant ainsi une relation symbiotique qui profite aux deux réseaux.
 
-<p align="center">
-![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
-</p>
+<p align="center">![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)</p>
 
 ## Fonctionnement de la DPoW dans Satoshi Plus
 
@@ -29,7 +27,7 @@ Sur le réseau Bitcoin, les mineurs de Bitcoin génèrent de la puissance de hac
 
 3. **Soutien aux Validateurs**: En incluant ces informations, les mineurs délèguent leur puissance de calcul aux Validateurs sur Core. Ces Validateurs utilisent la puissance déléguée pour participer à la validation et à la création de blocs sur la blockchain Core.
 
-4. **Relayeurs** : Les relayeurs sont chargés de surveiller le réseau Bitcoin et de transmettre les blocs ainsi que les données de transaction au réseau Core. Within the Core network, an on-chain embedded BTC light client processes the incoming data from relayers and forwards the delegation information (including hash power and Non custodial staking) to the "Delegation Hub". Celui-ci sert de composant central responsable de la gestion et de la supervision des délégations dans le réseau Core.  Pendant une ronde de 1 jour, le réseau Core calcule la DPoW pour chaque validateur en comptant le nombre de blocs que les mineurs ont délégués à chaque validateur _une semaine auparavant_. Si la ronde a lieu un jeudi par exemple, Core totalisera la puissance de hachage déléguée à chaque validateur en comptant les blocs du jeudi _précédent_.
+4. **Relayeurs** : Les relayeurs sont chargés de surveiller le réseau Bitcoin et de transmettre les blocs ainsi que les données de transaction au réseau Core. Au sein du réseau Core, un client léger BTC embarqué on-chain traite les données entrantes des relayeurs et transmet les informations de délégation (y compris la puissance de hachage et le staking non custodial) au "Delegation Hub". Celui-ci sert de composant central responsable de la gestion et de la supervision des délégations dans le réseau Core.  Pendant une ronde de 1 jour, le réseau Core calcule la DPoW pour chaque validateur en comptant le nombre de blocs que les mineurs ont délégués à chaque validateur _une semaine auparavant_. Si la ronde a lieu un jeudi par exemple, Core totalisera la puissance de hachage déléguée à chaque validateur en comptant les blocs du jeudi _précédent_.
 
 5. **Mécanisme de Récompense**: En retour de leur contribution, les mineurs reçoivent des récompenses supplémentaires sous forme de tokens CORE, en plus des récompenses habituelles de minage de Bitcoin. Ce système de double récompense incite les mineurs à participer au processus DPoW sans avoir besoin de détourner des ressources du minage de Bitcoin.
 
