@@ -15,15 +15,11 @@ Remix est un environnement de développement intégré (IDE) en ligne puissant p
 
 Accédez à l'[IDE Remix](https://remix.ethereum.org/), et vous verrez une interface similaire à celle ci-dessous :
 
-<p align="center">
-![remix-ide](../../static/img/remix/remix-1.avif)
-</p>
+<p align="center">![remix-ide](../../static/img/remix/remix-1.avif)</p>
 
 Dans l'image ci-dessous, vous pouvez choisir différentes versions du compilateur Solidity. Nous recommandons d'utiliser les versions plus récentes et stables de Solidity, telles que la v0.8.7. Vous pouvez également choisir d'activer la compilation automatique ou de masquer les avertissements.
 
-<p align="center">
-![remix-ide](../../static/img/remix/remix-2.avif)
-</p>
+<p align="center">![remix-ide](../../static/img/remix/remix-2.avif)</p>
 
 Vous pouvez choisir différents environnements sur Remix, comme illustré dans l'image ci-dessous. Un environnement est simplement le réseau blockchain avec lequel vous allez travailler. Il existe des machines virtuelles (VMs) intégrées, ainsi que des fournisseurs qui vous permettent de vous connecter à des VMs externes.
 
