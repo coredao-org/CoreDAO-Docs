@@ -9,9 +9,9 @@ description: Aperçu rapide de l'architecture sous-jacente de la blockchain de C
 
 ---
 
-Core's architecture is built around **Satoshi Plus**, a tripartite consensus mechanism that integrates **Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Non-Custodial Bitcoin Staking**.
+L'architecture de Core est construite autour de \*\* Satoshi Plus \*\*, un mécanisme consensus tripartite qui intègre \*\* une preuve de travail déléguée (DPOW), une preuve de participation par délégation (DPoS) et le staking bitcoin sans garde \*\*.
 
-Through Satoshi Plus, **Bitcoin miners/mining pools, CORE token stakers, and Bitcoin stakers** delegate resources to elect validators who secure the Core network. Validator selection is based on a hybrid score, considering:
+Grâce à Satoshi Plus, les mineurs de Bitcoin, les pools de minage, les stakers de jetons CORE et les stakers de Bitcoin participent à l'élection des validateurs pour sécuriser le reseau Core. Validator selection is based on a hybrid score, considering:
 
 - **Delegated hash power** from Bitcoin miners/mining pools
 - **Delegated/staked CORE tokens** from CORE token stakers
