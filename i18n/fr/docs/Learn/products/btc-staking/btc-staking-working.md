@@ -6,62 +6,62 @@ sidebar_position: 2
 
 # Fonctionnement du staking Bitcoin non-custodial {#how-non-custodial-bitcoin-staking-works}
 
-Le staking Bitcoin non-custodial est l'un des trois composants fondamentaux du consensus Satoshi Plus de Core. This feature integrates Bitcoin holders into Core’s ecosystem, enhancing network security while enabling Bitcoin to become a yield-generating asset.
+Le staking Bitcoin non-custodial est l'un des trois composants fondamentaux du consensus Satoshi Plus de Core. Cette fonctionnalité intègre les détenteurs de Bitcoin dans l'écosystème de Core, renforçant la sécurité du réseau tout en permettant à Bitcoin de devenir un actif générateur de rendement.
 
-Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on their otherwise passive Bitcoin for however long they set the time lock (i.e., delegate their Bitcoin to validators on the Core network). Core’s Non-Custodial Bitcoin Staking results in billions of dollars in underutilized Bitcoin value becoming productive, remunerating stakers while expanding the scope of Bitcoin's utility.
+Les stakers Bitcoin gagnent un rendement sous forme de récompenses de staking en jetons CORE sur leur Bitcoin autrement passif, pendant la durée de verrouillage qu'ils ont définie (c'est-à-dire qu'ils délèguent leur Bitcoin aux validateurs sur le réseau Core). Le staking Bitcoin sans garde de Core transforme des milliards de dollars de valeur Bitcoin inexploitée en actifs productifs, rémunérant les participants tout en élargissant les possibilités d'utilisation de Bitcoin.
 
-Unlike traditional staking mechanisms that require users to transfer custody of their assets, Core's approach leverages [CheckLockTimeVerify (CLTV)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) timelock, a Bitcoin-native cryptographic function. This ensures Bitcoin remains securely in users’ wallets while still being staked on the Core network.
+Contrairement aux mécanismes de staking traditionnels qui exigent que les utilisateurs transfèrent la garde de leurs actifs, l'approche de Core utilise le verrouillage temporel CheckLockTimeVerify  (https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify)     (CLTV), une fonction cryptographique native de Bitcoin. Ceci permet de maintenir Bitcoin en sécurité dans les portefeuilles des utilisateurs tout en participant au staking sur le réseau Core.
 
-## How CLTV Timelock Works
+## Fonctionnement du verrouillage temporel CLTV
 
-CLTV timelock is a Bitcoin-native cryptographic feature that specifies a condition under which the transaction output cannot be spent until a specific point in time has passed. This time can be defined as a specific date and time or by block height. CLTV acts as a time-locked vault, restricting access to staked Bitcoin until a predetermined time elapses. When a user initiates a CLTV transaction:
+Le verrouillage temporel CLTV est une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de transaction ne peut pas être dépensée avant qu'un point spécifique dans le temps ne soit écoulé. Ce temps peut être spécifié soit par une date et une heure précises, soit par un numéro de bloc. Le CLTV agit comme un coffre-fort à verrouillage temporel, limitant l'accès aux Bitcoins stakés jusqu'à ce qu'une période prédéterminée se soit écoulée. Lorsqu'un utilisateur initie une transaction CLTV :
 
-- The BTC remains locked for a specific duration.
-- Once the timelock expires, the BTC is automatically returned to the user.
-- Users earn staking rewards in CORE tokens for the locked duration.
+- Le BTC reste verrouillé pendant une durée spécifique.
+- Dès que le délai de verrouillage est écoulé, le BTC est automatiquement rendu à l'utilisateur.
+- Les utilisateurs gagnent des récompenses de staking en jetons CORE pour la durée de verrouillage.
 
-Unlike custodial staking models that involve third parties, Core’s staking model allows users to retain full control over their Bitcoin while participating in the security of the network and earn rewards for it.
+À la différence des modèles de staking traditionnels impliquant des dépositaires tiers, le modèle de staking de Core permet aux utilisateurs de garder le plein contrôle de leurs Bitcoins tout en contribuant à la sécurité du réseau et en percevant des récompenses.
 
-### How Bitcoin Staking Works on Core
+### Fonctionnement du Staking Bitcoin sur Core
 
-#### 1. Creating a CLTV Staking Transaction
+#### 1. Création d'une transaction de staking CLTV
 
-To participate, Bitcoin holders must initiate a **qualified CLTV transaction** on the Bitcoin network. To ensure that transactions are valid and to be picked as a delegation for validators on the Core network, stakers must include a script containing the following information:
+Pour prendre part, les propriétaires de Bitcoin doivent lancer une transaction CLTV éligible sur le réseau Bitcoin. Pour garantir la validité des transactions et être sélectionnées comme délégation pour les validateurs sur le réseau Core, les stakers doivent inclure un script contenant les informations suivantes :
 
-- **Validator Delegation Address:** The Core validator the staker is delegating their Bitcoin to.
-- **Reward Address:** The address where the staker wants to receive CORE rewards.
+- Adresse de délégation de validateur : L'adresse du validateur Core à laquelle le staker délègue ses Bitcoins.
+- Adresse de récompense : L'adresse où le staker souhaite recevoir les récompenses en tokens CORE.
 
-#### 2. Role of Core Relayers
+#### 2. Rôle des relais Core (Core Relayers)
 
-**Relayers** in the Core ecosystem continuously **monitor the Bitcoin network** for valid Bitcoin staking transactions for Core validators. When a CLTV transaction is detected, the relayers:
+Les relais dans l'écosystème Core surveillent en continu le réseau Bitcoin pour détecter les transactions de staking Bitcoin valides destinées aux validateurs Core. Lorsque les relais détectent une transaction CLTV :
 
-- Verify the transaction details.
-- Forward the information to Core’s **Consensus Engine** for processing.
-- Core’s **Consensus Engine** is then responsible for rewarding the stakers accordingly.
+- Vérification des détails de la transaction.
+- Transférer les données au moteur de consensus Core pour validation et traitement ultérieur.
+- Le moteur de consensus Core se charge de distribuer les récompenses aux stakers en fonction de leur participation et des règles établies.
 
-### Security & Risk Considerations
+### Considérations de sécurité et de risque :
 
-- **No Custodial Risk:** Core’s mechanism does **not** move BTC off-chain or transfer it to third-party smart contracts.
-- **Bitcoin Remains in the User’s Wallet:** Users **always** retain full control over their staked BTC.
-- **No Protocol-Level Risk:** Staking only involves locking BTC via a Bitcoin-native function, ensuring safety and decentralization.
+- Aucun risque de garde : Le mécanisme de Core n'enlève pas les BTC de la chaîne et ne les transfère pas à des contrats intelligents tiers.
+- Les Bitcoins restent dans le portefeuille de l'utilisateur : Les utilisateurs gardent toujours le contrôle total sur leurs BTC stakés.
+- Aucun risque au niveau du protocole : Le staking implique uniquement le verrouillage de BTC via une fonction native de Bitcoin, garantissant ainsi la sécurité et la décentralisation.
 
-### Requirements for Bitcoin Staking
+### Exigences pour le staking de Bitcoin :
 
-#### General Requirements
+#### Exigences générales pour le staking de Bitcoin sur Core
 
-To ensure a BTC staking transaction is **valid and detected** by Core’s relayers, users must:
+Pour garantir qu'une transaction de staking de BTC est valide et détectée par les relais de Core, les utilisateurs doivent :
 
-1. **Use CLTV Timelock:** The BTC must be locked using a **Bitcoin-native timelock transaction** specifying the delegation details,as the transaction output.
-2. **Include an `OP_RETURN` Output:** The transaction must contain:
- - **Core Validator Address** (to delegate their staked Bitcoin).
- - **CORE Reward Address** (to receive staking rewards).
+1. Utiliser le verrouillage temporel CLTV : Les BTC doivent être verrouillés à l'aide d'une transaction de verrouillage temporel native Bitcoin, en spécifiant les détails de délégation comme sortie de transaction.
+2. Inclure une sortie OP_RETURN : La transaction doit contenir :
+ - Adresse du validateur Core : L'adresse du validateur Core à qui l'utilisateur souhaite déléguer ses Bitcoins stakés.
+ - Adresse de récompense CORE : L'adresse où les récompenses de staking en CORE seront envoyées et reçues par l'utilisateur.
 
-#### Minimum Staking Requirements
+#### Exigences minimales de staking
 
-| Method             | Minimum BTC Staked       | Minimum Lockup Duration |
-| ------------------ | ------------------------ | ----------------------- |
-| **Official UI**    | 0.01 BTC | 5 Days                  |
-| **Staking Script** | No Minimum               | No Lockup Requirement   |
+| Méthode                          | Montant minimum de BTC stakés | Durée minimale de verrouillage |
+| -------------------------------- | ----------------------------- | ------------------------------ |
+| Interface utilisateur officielle | 0.01 BTC      | 5 jours                        |
+| **Staking Script**               | No Minimum                    | No Lockup Requirement          |
 
 ### Transaction Workflow
 
@@ -94,10 +94,11 @@ _**(_Optional_)**_ After the transaction is confirmed on the Bitcoin network, us
 2. **Delegating to a Core Validator**
  - The staking transaction must include:
   - **Core Validator Address** (for delegation of BTC).
-  - **CORE Reward Address** (for receiving CORE rewards).
+  - Adresse de récompense CORE :
+   L'adresse spécifiée par l'utilisateur pour recevoir les récompenses en tokens CORE générées par le staking de Bitcoin sur la plateforme Core.
 
-3. **Bitcoin Lock Period Begins**
- - The BTC is locked for the selected duration.
+3. La période de verrouillage du Bitcoin commence
+ - Le BTC reste verrouillé pendant une durée spécifique.
  - It remains **securely on the Bitcoin network** without moving off-chain.
 
 4. **Validator Selection & Rewards Accrual**
