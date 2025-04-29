@@ -8,53 +8,52 @@ sidebar_position: 2
 
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer des onglets depuis « @theme/Tabs » ;
+importer TabItem depuis « @theme/TabItem » ;
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
 {label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-:::info
-This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+::: info
+Il s'agit du testnet le plus récent et son utilisation est fortement recommandé. La version précédente sera progressivement dépréciée puis retirée, il est donc essentiel de migrer vers ce nouveau testnet pour continuer à bénéficier d’un support actif et accéder aux dernières fonctionnalités.
 :::
 
-| **Parameter**          | **Value**                                                                                              |
-| ---------------------- | ------------------------------------------------------------------------------------------------------ |
-| **RPC URL**            | https://rpc.test2.btcs.network         |
-| **Chain ID**           | 1114 (0x45a)                                                                        |
-| **Currency Symbol**    | tCORE2                                                                                                 |
-| **Block Explorer URL** | https://scan.test2.btcs.network        |
-| **Faucet**             | https://scan.test2.btcs.network/faucet |
-| **Staking Website**    | https://stake.test2.btcs.network/      |
+| **Parameter**                | **Value**                                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **RPC URL**                  | https://rpc.test2.btcs.network         |
+| **ID de Chaîne**             | 1114 (0x45a)                                                                        |
+| **Symbole de la devise**     | tCORE2                                                                                                 |
+| **Explorateur de blocs**     | https://scan.test2.btcs.network        |
+| **Faucet**                   | https://scan.test2.btcs.network/faucet |
+| **Site Web de Staking Core** | https://stake.test2.btcs.network/      |
 
 </TabItem>
 <TabItem value="testnet1">
-:::caution
-Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
+:::Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Testnet2 est recommandée pour un support continu et un accès aux dernières fonctionnalités.
 :::
 
-| **Parameter**          | **Value**                                                                                             |
-| ---------------------- | ----------------------------------------------------------------------------------------------------- |
-| **RPC URL**            | https://rpc.test.btcs.network         |
-| **Chain ID**           | 1115 (0x45b)                                                                       |
-| **Currency Symbol**    | tCORE                                                                                                 |
-| **Block Explorer URL** | https://scan.test.btcs.network        |
-| **Faucet**             | https://scan.test.btcs.network/faucet |
-| **Staking Website**    | https://stake.test.btcs.network/      |
+| **Paramètre**                | **Valeur**                                                                                            |
+| ---------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **RPC URL**                  | https://rpc.test.btcs.network         |
+| **ID de Chaîne**             | 1115 (0x45b)                                                                       |
+| **Symbole de la devise**     | tCORE                                                                                                 |
+| **Explorateur de blocs**     | https://scan.test.btcs.network        |
+| **Faucet**                   | https://scan.test.btcs.network/faucet |
+| **Site Web de Staking Core** | https://stake.test.btcs.network/      |
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-| **Parameter**          | **Value**                                                                  |
-| ---------------------- | -------------------------------------------------------------------------- |
-| **RPC URL**            | https://rpc.coredao.org/   |
-| **Chain ID**           | 1116 (0x45c)                                            |
-| **Currency Symbol**    | CORE                                                                       |
-| **Block Explorer URL** | https://scan.coredao.org   |
-| **Staking Website**    | https://stake.coredao.org/ |
+| **Paramètre**                | **Valeur**                                                                 |
+| ---------------------------- | -------------------------------------------------------------------------- |
+| **RPC URL**                  | https://rpc.coredao.org/   |
+| **ID de Chaîne**             | 1116 (0x45c)                                            |
+| **Symbole de la devise**     | CORE                                                                       |
+| **Explorateur de blocs**     | https://scan.coredao.org   |
+| **Site Web de Staking Core** | https://stake.coredao.org/ |
 
 Pour importer les détails de la chaîne Mainnet de Core dans MetaMask, référez-vous à notre guide sur [l'ajout de Core à MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
 
