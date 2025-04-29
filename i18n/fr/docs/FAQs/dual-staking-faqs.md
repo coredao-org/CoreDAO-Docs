@@ -28,18 +28,18 @@ De plus, ils doivent s'assurer que l'adresse de récompense CORE pour le staking
 
 Pour profiter pleinement du Dual Staking, les utilisateurs doivent s'assurer que l'adresse de récompense du staking de Bitcoin désignée correspond à l'adresse utilisée pour le staking de CORE. Les utilisateurs qui ont staké leur Bitcoin et/ou CORE sur plusieurs adresses peuvent envisager de consolider leur staking sur une seule adresse pour optimiser le rendement et maximiser les retours, et s'assurer que le CORE staké est au-dessus du seuil requis pour débloquer des pourcentages de rendement plus élevés pour le staking de Bitcoin.
 
-### 5\. How are yields calculated under the Dual Staking model?
+### 5\. Comment calcules ton le rendement sous le modèle dual staking?
 
-- Global staking yields fluctuates based on changes in the following variables:
-  - [Total amount of CORE staking across all validators](https://stake.coredao.org/validators)
-  - [Total amount of BTC staking across all validators](https://stake.coredao.org/validators)
-  - The relative price change between BTC & CORE
-  - [Annual reward adjustment](https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)
-- Validator-specific staking yields vary based on these additional factors:
-  - Total number of active validators
-  - Validator commission
-  - The received delegation on hash, BTC staking, & CORE staking
-  - Dual-staking tiers
+- Les rendements globaux du staking changent en fonction des modifications des variables suivantes :
+  - [Montant total de Core jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
+  - [Montant total de BTC jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
+  - Le changement de prix relatif entre BTC et Core
+  - [Ajustement annuel des récompenses] (https://docs.coredao.org/docs/learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)
+- Les rendements du staking est spécifiques au validateur et varient en fonction de ces facteurs supplémentaires :
+  - Nombre total de validateurs actifs
+  - Commission de validation
+  - La délégation reçue sur le hachage, le staking de BTC et le staking CORE
+  - Paliers de Dual-staking
 
 ### 6\. Comment les utilisateurs équilibrent-ils CORE et Bitcoin entre les validateurs pour maximiser le rendement ?
 
@@ -49,7 +49,7 @@ L'action des délégataires de rééquilibrer leur délégation pour maximiser l
 
 ### 7\. Y a-t-il un risque de perdre vos actifs Bitcoin pendant le Dual Staking ?
 
-Dual Staking is a [non-custodial process](../Learn/products/btc-staking/overview), allowing users to maintain full control over their assets. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
+Le Dual Staking est un [processus non-custodial](../Learn/products/btc-staking/overview), permettant aux utilisateurs de conserver le contrôle total de leurs actifs. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
 
 ### 8\. Alors que le Bitcoin est verrouillé dans le temps, les utilisateurs peuvent-ils unstaker le CORE qui est dual staké avec le Bitcoin ? Si oui, perdent-ils les récompenses gagnées avant de unstaker le CORE ?
 
