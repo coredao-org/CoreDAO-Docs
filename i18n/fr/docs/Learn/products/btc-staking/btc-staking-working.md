@@ -124,33 +124,33 @@ Voici un aperçu de la chronologie pour passer une commande de staking de Bitcoi
 
 - Supposons qu'une commande de staking soit passée à 6h00 UTC+0 aujourd'hui.
 - La transaction passera par 6 blocs Bitcoin le même jour.
-- The staking will become effective at 00:00 AM UTC+0 on the second day.
-- After the staking goes effective, the staking data is then accessible.
+- Le staking prendra effet à 00h00 UTC+0 le deuxième jour.
+- Après que le staking soit effectif, les données de staking sont alors accessibles.
 
-#### **Example: Bitcoin Staking Transaction with 3-day Duration**
+#### Exemple : Transaction de staking de Bitcoin d'une durée de 3 jours
 
-- Assume a staking order is placed at 11:30 PM UTC+0.
-- The transaction will go through 6 Bitcoin blocks on the next day.
-- The staking will become effective at 12:00 AM UTC+0 on the third day.
-- After the staking goes effective, the staking data is then accessible.
+- Supposons qu'une commande de staking soit passée à 23h30 UTC+0.
+- La transaction passera par 6 blocs Bitcoin le jour suivant.
+- Le staking prendra effet à 00h00 UTC+0 le troisième jour.
+- Après que le staking soit effectif, les données de staking sont alors accessibles.
 
-### Guidelines for Staking/Redeeming Bitcoin
+### Lignes directrices pour le staking et le rachat de Bitcoin
 
-Please follow these guidelines to ensure smooth transactions when staking or redeeming your Bitcoin. Following these recommendations can ensure a more efficient staking and redemption process for your Bitcoin.
+Veuillez suivre ces directives pour garantir des transactions fluides lors du staking ou du rachat de votre Bitcoin. Le suivi de ces recommandations peut garantir un processus de staking et de rachat plus efficace pour votre Bitcoin.
 
-1. **Avoid Low Gas Fees**
- - Transactions with **low gas fees** may experience long confirmation times.
- - Use a **competitive network fee** to ensure timely processing.
- - Using a gas fee that is too low, especially during periods of network congestion, may result in your Bitcoin transaction taking an extended amount of time (potentially days) to be confirmed.
+1. Évitez les frais de gaz bas
+ - Les transactions avec des frais de gaz bas peuvent connaître des temps de confirmation longs
+ - Utilisez des frais de réseau compétitifs pour garantir un traitement rapide.
+ - L'utilisation de frais de gaz trop bas, en particulier pendant les périodes de congestion du réseau, peut entraîner une confirmation prolongée (potentiellement plusieurs jours) de votre transaction Bitcoin.
 
-2. **Handling Stuck Transactions**
+2. Gestion des transactions bloquées
 
-- If your Bitcoin transaction is delayed due to a low gas fee, consider using a **Bitcoin transaction accelerator**.
-- Free acceleration services, such as [viaBTC](https://www.viabtc.com/tools/txaccelerator), can help speed up confirmations.
-- It is recommended to research and choose a service that best fits your needs.
+- Si votre transaction Bitcoin est retardée en raison de frais de gaz bas, envisagez d'utiliser un accélérateur de transactions Bitcoin.
+- Les services d'accélération gratuits, tels que [viaBTC](https://www.viabtc.com/tools/txaccelerator), peuvent aider à accélérer les confirmations
+- Il est recommandé de rechercher et de choisir un service qui correspond le mieux à vos besoins.
 
 ## Conclusion
 
-Core’s **Non-Custodial Bitcoin Staking** transforms Bitcoin from a passive store of value into a productive asset—**securely and without custodial risk**. By leveraging Bitcoin-native staking, BTC holders can contribute to Core’s security, earn CORE rewards, and maximize asset utility while keeping full control over their Bitcoin.
+Le staking Bitcoin non custodial de Core transforme Bitcoin d'un simple stockage de valeur passif en un actif productif - de manière sécurisée et sans risque de garde. En utilisant le staking Bitcoin natif, les détenteurs de BTC peuvent contribuer à la sécurité de Core, gagner des récompenses CORE et maximiser l'utilité de leurs actifs tout en gardant le contrôle total sur leurs Bitcoin.
 
-For a detailed guide on staking transaction design, refer [here](design.md).
+Pour un guide détaillé sur la conception des transactions de staking, consultez [ici](design.md).
