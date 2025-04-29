@@ -1,11 +1,11 @@
 ---
-sidebar_label: Security Model
+sidebar_label: Modèle de sécurité
 hide_table_of_contents: false
 sidebar_position: 2
 description: Apprendre sur le modèle de sécurité de Core
 ---
 
-# Security Model of Core
+# Modèle de sécurité de Core
 
 ---
 
@@ -89,7 +89,7 @@ Core utilise une architecture de sécurité robuste pour atténuer les menaces p
 - **Description:** Les vulnérabilités dans le code des contrats intelligents peuvent être exploitées pour réaliser des vols ou manipuler des services.
 - **Mesures d'atténuation réalisées par:**
   - **Audits de Code et Revues de Sécurité:** Des audits réguliers et approfondis du code des contrats intelligents par des firmes de sécurité indépendantes aident à identifier et rectifier les vulnérabilités potentielles.
-  - **Bug Reporting:** Encouraging the community and security researchers to find and report bugs, so that many potential exploits are caught early.
+  - \*\* Rapports de bogues : \*\* Encourager la communauté et les chercheurs en sécurité à trouver et signaler les bogues afin que de nombreux exploits potentiels soient détectés précocement
 
 ## Conclusion
 
