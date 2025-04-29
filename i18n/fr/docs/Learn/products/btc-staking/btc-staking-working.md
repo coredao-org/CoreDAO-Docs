@@ -1,12 +1,12 @@
 ---
-sidebar_label: How It Works
+sidebar_label: Son Fonctionnement
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How Non-Custodial Bitcoin Staking Works {#how-non-custodial-bitcoin-staking-works}
+# Fonctionnement du staking Bitcoin non-custodial {#how-non-custodial-bitcoin-staking-works}
 
-Non-Custodial Bitcoin Staking is one of the three fundamental components of Core’s Satoshi Plus consensus. This feature integrates Bitcoin holders into Core’s ecosystem, enhancing network security while enabling Bitcoin to become a yield-generating asset.
+Le staking Bitcoin non-custodial est l'un des trois composants fondamentaux du consensus Satoshi Plus de Core. This feature integrates Bitcoin holders into Core’s ecosystem, enhancing network security while enabling Bitcoin to become a yield-generating asset.
 
 Bitcoin stakers earn yield as staking rewards in the form of CORE tokens on their otherwise passive Bitcoin for however long they set the time lock (i.e., delegate their Bitcoin to validators on the Core network). Core’s Non-Custodial Bitcoin Staking results in billions of dollars in underutilized Bitcoin value becoming productive, remunerating stakers while expanding the scope of Bitcoin's utility.
 
