@@ -14,7 +14,7 @@ Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparen
 
 ### 2\. Comment Fonctionne le Staking de Bitcoin Non-Custodial ?
 
-Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les détenteurs de Bitcoin à son mécanisme de consensus, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. For more details on how Non-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/btc-staking-working.md).
+Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les détenteurs de Bitcoin à son mécanisme de consensus, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](../Learn/products/btc-staking/btc-staking-working.md).
 
 ### 3\. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
