@@ -5,7 +5,7 @@ sidebar_position: 2
 description: Exploiter la DPoS dans Satoshi Plus
 ---
 
-# Delegated Proof of Stake (DPoS) in Satoshi Plus
+# Preuve de participation par délégations (DPoS) dans Satoshi Plus
 
 ---
 
@@ -29,9 +29,9 @@ La DPoS permet aux détenteurs de tokens CORE de participer activement au consen
 
 ## Processus étape par étape
 
-1. **Staking de Tokens CORE/BTC :** Les détenteurs de CORE et de BTC décident de participer à la sécurité du réseau en stakant leurs tokens. L'exigence minimale de staking est de 1 token CORE ou 0,01 BTC (si le staking se fait via l'interface utilisateur officielle du site web). Note, if users opts for BTC staking thorugh script, there are no minimum requirements on the amount of BTC staked.
+1. **Staking de Tokens CORE/BTC :** Les détenteurs de CORE et de BTC décident de participer à la sécurité du réseau en stakant leurs tokens. L'exigence minimale de staking est de 1 token CORE ou 0,01 BTC (si le staking se fait via l'interface utilisateur officielle du site web). Si les utilisateurs optent pour le staking BTC via script, aucune exigence minimale n’est imposée quant à la quantité de BTC placé en staking.
 
-2. **Delegating to Validators:** Token holders delegate their staked CORE or BTC to a Core Validators of their choice, assisting their hybrid score in the validator election process.
+2. **Délégation aux Validateurs :** Les détenteurs de jetons délèguent leurs jetons CORE/BTC jalonner à un validateur de leur choix, aidant ainsi à améliorer le score hybride du validateur dans le processus d'élection.
 
 3. **Élection des Validateurs :** Les validateurs ayant le score hybride le plus élevé, qui inclut les CORE délégués, sont élus dans l'ensemble des validateurs pour une période donnée.
 
