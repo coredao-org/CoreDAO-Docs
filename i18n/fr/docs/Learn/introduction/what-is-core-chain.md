@@ -1,5 +1,5 @@
 ---
-sidebar_label: What is Core
+sidebar_label: Qu'est-ce que Core DAO
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,13 +8,11 @@ sidebar_position: 2
 
 ---
 
-Core est la première blockchain alignée sur le Bitcoin, compatible EVM de blockchain layer 1, conçue pour être la plateforme de contrats intelligents hyper-évolutive et complémentaire de Bitcoin. With over **74%** of Bitcoin mining hash power and more than **7,277** BTC staked and contributing to its security model, Core is unlocking Bitcoin as both the prime protector and central asset of the future of DeFi through the groundbreaking innovation of Non-Custodial Bitcoin staking.
+Core est la première blockchain alignée sur le Bitcoin, compatible EVM de blockchain layer 1, conçue pour être la plateforme de contrats intelligents hyper-évolutive et complémentaire de Bitcoin. Avec plus de 74% de la puissance de hachage du minage de Bitcoin et plus de 7 277 BTC mis en staking et contribuant à son modèle de sécurité, Core libère le potentiel de Bitcoin en tant que protecteur principal et actif central de l'avenir de la DeFi grâce à l'innovation révolutionnaire du staking de Bitcoin non dépositaire.
 
 La principale innovation de Core est son mécanisme de consensus novateur, **Satoshi Plus**, qui unit la Preuve de Travail Déléguée (DPoW), la Preuve d’Enjeu Déléguée (DPoS) et le Staking de Bitcoin Non-custodial. Grâce à cette combinaison, la blockchain Core incorpore les mineurs de Bitcoin dans la sécurité des contrats intelligents "Turing-complet", libérant la fonctionnalité et l'utilité de ces mineurs au-delà de la simple maintenance du registre de Bitcoin, et leur offrant un revenu supplémentaire sous forme de récompenses en tokens CORE. Cette relation symbiotique renforce le Bitcoin sans consommer de l'espace de bloc de Bitcoin ni affecter le rôle principal des mineurs en tant que défenseurs du réseau Bitcoin. Tandis que la DPoW exploite les mineurs de Bitcoin, grâce à la DPoS, Core tire parti des détenteurs de CORE et de BTC qui stakent leurs actifs sur la blockchain Core et influencent le consensus du réseau en déléguant leurs actifs stakés aux validateurs du réseau Core.
 
-<p align="center">
-![core-products](../../../static/img/What-Is-Core.png)
-</p>
+<p align="center">![core-products](../../../static/img/What-Is-Core.png)</p>
 
 ## Caractéristiques Clés de la blockchain Core
 
@@ -25,7 +23,7 @@ Voici quelques-unes des principales caractéristiques qui distinguent Core de se
 - **Couche d'Exécution EVM:** Core adopte la Machine Virtuelle d'Ethereum (EVM) pour l'exécution des contrats intelligents, la rendant compatible avec l'EVM, similaire à l'implémentation de Geth par la [BNB Smart Chain](https://github.com/bnb-chain/bsc).
 - **Staking de BTC Non-custodial:** Core offre aux détenteurs de BTC la possibilité de staker leurs actifs sur la blockchain Core de manière fiable et sécurisée, sans avoir à renoncer à la garde de leurs actifs. Cette fonctionnalité innovante intègre Bitcoin dans les activités DeFi de Core, augmentant la liquidité et permettant aux utilisateurs de Bitcoin de gagner des récompenses de staking sous forme de tokens CORE au sein de l'écosystème Core.
 - **stCORE:** Core propose un staking liquide sous la forme de stCORE, conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser le potentiel de leurs actifs avec une plus grande flexibilité et efficacité.
-- **lstBTC _(Coming Soon)_:** a liquid, yield-bearing Bitcoin token issued on the Core blockchain, enabling Bitcoin holders—especially institutional investors—to earn BTC-denominated yield while maintaining full liquidity and security.
+- lstBTC (Bientôt disponible) : un jeton Bitcoin liquide et générateur de rendement émis sur la blockchain Core, permettant aux détenteurs de Bitcoin - en particulier aux investisseurs institutionnels - de gagner des rendements en BTC tout en maintenant une liquidité et une sécurité totales.
 - **coreBTC:** now sunsetted, is the Core-native bridged BTC.
 
 ## Problèmes Résolus par la blockchain Core
