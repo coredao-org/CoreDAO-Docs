@@ -103,52 +103,52 @@ Après avoir soumis le formulaire d'inscription, vous pouvez vérifier si l'insc
 
 ### Vérification des journaux
 
-Open your node’s log file and search for the error message "unauthorized validator." If this message appears, it means that your node is registered but has not yet been elected to the validator set.
+Ouvrez le fichier journal de votre nœud et recherchez le message d'erreur "unauthorized validator." Si ce message apparaît, cela signifie que votre nœud est enregistré mais n'a pas encore été élu dans l'ensemble des validateurs.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-2.avif)
 
 ## Élection des Validateurs
 
-Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entirety of the round. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails sur le fonctionnement de l’élection des validateurs, reportez-vous à la section [élection des validateurs](./validator-election.md).
+Chaque jour, les 27 meilleurs validateurs avec les scores hybrides les plus élevés sont élus dans l'ensemble actif des validateurs, devenant ainsi responsables de la production de blocs et de la validation des transactions sur le réseau Core pour toute la durée de la ronde. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails sur le fonctionnement de l’élection des validateurs, reportez-vous à la section [élection des validateurs](./validator-election.md).
 
 Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués Active/Normal. L'ensemble des validateurs est mis à jour chaque jour à **00:00 UTC**.
 
 ![validator-register-form](../../../static/img/validator/validator-status.png)
 
-### Validator Status Updates
+### Mises à jour du statut du validateur
 
-Validator status is updated daily at 00:00 UTC. You can check the status of your validator on the staking website. There are various possible statuses:
+Le statut du validateur est mis à jour quotidiennement à 00h00 UTC. Vous pouvez vérifier le statut de votre validateur sur le site Web de staking. Il existe différents statuts possibles :
 
-- **`Active/Normal`:** Validator is elected for the current round and qualified for the next election.
+- Actif/Normale : Le validateur est élu pour la ronde actuelle et qualifié pour la prochaine élection.
 
-- **`Active/Refuse`:** Validator is elected for the current round but refused to accept delegations. Non qualifié pour la prochaine élection.
+- Actif/Refus : Le validateur est élu pour la ronde actuelle mais a refusé d'accepter les délégations. Non qualifié pour la prochaine élection.
 
-- **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony. Non qualifié pour la prochaine élection.
+- Actif/Emprisonné : Validateur élu pour la ronde actuelle, mais emprisonné en raison d'un délit majeur (ou faute grave). Non qualifié pour la prochaine élection.
 
-- **`Inactive/Queued`:** Validator is registered but not elected. Qualifié pour la prochaine élection.
+- Inactif/En attente : Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
 
-- **`Inactive/Refuse`:** Validator is registered but has refused delegation. Non qualifié pour la prochaine élection.
+- Inactif/Refus : Le validateur est enregistré mais a refusé la délégation. Non qualifié pour la prochaine élection.
 
-- **`Inactive/Jailed`:** Validator is registered but is jailed and not qualified for the next election.
+- Inactif/Emprisonné : Le validateur est enregistré mais est emprisonné et n'est pas qualifié pour la prochaine élection.
 
-- **`Inactive/Locked`:** Validator is registered but has not met the minimum deposit requirements. Non qualifié pour la prochaine élection.
+- Inactif/Vérouillé : Le validateur est enregistré mais n'a pas satisfait aux exigences de dépôt minimum. Non qualifié pour la prochaine élection.
 
-- **`Inactive/Invalid`:** Validator is unregistered.
+- Inactif/Invalide : Le validateur n'est pas enregistré.
 
-## Monitor Your Validator's Performance
+## Surveillez les performances de votre validateur
 
-You can monitor the status of your validator and its block production record on [Core Scan](https://scan.coredao.org/). This tool allows you to track whether your node is successfully producing blocks and performing well.
+Vous pouvez surveiller l'état de votre validateur et son historique de production de blocs sur [Core Scan].(https://scan.coredao.org/). Cet outil vous permet de suivre si votre nœud produit des blocs avec succès et fonctionne bien.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-4.webp)
 
-## Maintaining Your Validator Node
+## Maintenance de votre nœud de validation
 
-To remain an active and successful validator, you’ll need to keep your node online, perform maintenance, and respond to any issues that arise.
+Pour rester un validateur actif et performant, vous devrez maintenir votre nœud en ligne, effectuer des tâches de maintenance et répondre à tout problème qui survient.
 
-#### Stay Synced
+#### Restez synchronisé
 
-Ensure that your node is always in sync with the Core network to prevent issues with block production and validation.
+Assurez-vous que votre nœud est toujours synchronisé avec le réseau Core pour éviter les problèmes de production et de validation de blocs.
 
-#### Handle Rewards
+#### Gestion des récompenses
 
-At the end of each round, accumulated rewards are distributed to validators. You should track these rewards and monitor any potential issues with your validator's performance.
+À la fin de chaque tour, les récompenses accumulées sont distribuées aux validateurs. Vous devriez suivre ces récompenses et surveiller tout problème potentiel avec les performances de votre validateur.
