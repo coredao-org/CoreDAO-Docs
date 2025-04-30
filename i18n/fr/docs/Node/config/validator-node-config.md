@@ -56,16 +56,14 @@ Débit Internet	Connexion Internet à large bande avec des vitesses de téléver
 ```
 
   </TabItem>
-  <TabItem value="mainnet">
-   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+  <TabItem value="mainnet">Pour les nœuds de validation sur le réseau principal Core Blockchain Mainnet, les spécifications matérielles minimales suivantes sont recommandées :
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
-| **RAM**            | 32 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+Exigences	Détails
+Stockage	1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
+Processeur	Minimum 8 cœurs de processeur recommandés. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.
+Mémoire RAM	32 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.
 ```
 
   </TabItem>
