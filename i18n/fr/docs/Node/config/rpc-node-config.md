@@ -1,13 +1,13 @@
 ---
-sidebar_label: RPC Node
+sidebar_label: Nœud RPC (Nœud d'appel de procédure à distance)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer Tabs depuis '@theme/Tabs';
+importer TabItem depuis '@theme/TabItem';
 
-# RPC Nodes on Core
+# Nœuds RPC sur Core
 
 ---
 
@@ -19,13 +19,14 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Logiciel
 
-- **Operating System:** Currently, a Core Archive Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability.
-- **Firewall Configuration:** To ensure your RPC Node can communicate with external applications and other nodes, you need to allow inbound HTTP traffic on port 8575, which is the default port for RPC communication. You can adjust this setting in the config.toml file if you prefer using a different port. Make sure that your firewall settings are properly configured to allow traffic on this port.
+- Système d'exploitation : Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
+- Connectivité réseau : Connexion Internet stable avec une faible latence et une haute disponibilité.
+- Configuration du pare-feu :
+  Pour garantir que votre nœud RPC puisse communiquer avec des applications externes et d'autres nœuds, vous devez autoriser le trafic HTTP entrant sur le port 8575, qui est le port par défaut pour la communication RPC. Vous pouvez ajuster ce paramètre dans le fichier config.toml si vous préférez utiliser un port différent. Assurez-vous que vos paramètres de pare-feu sont correctement configurés pour autoriser le trafic sur ce port.
 
 ### Matériel
 
-An RPC Node on Core acts as a gateway for applications, developers, and users to interact with the blockchain. It processes queries, submits transactions, and retrieves real-time blockchain data via Remote Procedure Calls (RPC). These nodes are essential for dApps, wallets, and analytics platforms to seamlessly access Core’s network. Following are the hardware requirements for RPC Node on Core.
+Un nœud RPC sur Core agit comme une passerelle pour les applications, les développeurs et les utilisateurs afin d'interagir avec la blockchain. Il traite les requêtes, soumet des transactions et récupère des données de blockchain en temps réel via des appels de procédure à distance (RPC). Ces nœuds sont essentiels pour les dApps, les portefeuilles et les plateformes d'analyse afin d'accéder de manière transparente au réseau Core. Following are the hardware requirements for RPC Node on Core.
 
 <Tabs
 defaultValue="testnet2"
