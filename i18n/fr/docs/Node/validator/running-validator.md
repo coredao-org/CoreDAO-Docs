@@ -205,18 +205,18 @@ Ces journaux indiquent généralement que le nœud importe de nouveaux segments 
 - « mgas : » La quantité de gaz utilisée dans les transactions au sein du bloc. Le gaz est le travail de calcul nécessaire pour exécuter les transactions.
   Par exemple, 0.021 représente 0.0021million unités de gaz.
 
-- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
+- « temps écoulé : » Le temps nécessaire pour importer le bloc, en millisecondes (par exemple, 3,003 ms).
 
-- **mgasps:** The speed at which gas is being processed (in million gas per second).
+- « mgasps : » La vitesse à laquelle le gaz est traité (en millions de gaz par seconde).
 
-- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
+- « triedirty : » La quantité de mémoire "sale" utilisée (dans ce cas, environ `869.67 KiB`), qui indique la quantité de mémoire utilisée temporairement pour stocker les données de bloc.
 
-**Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are essential to synchronize the blockchain with the network.
+**Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nœuds pour se connecter. Les connexions pair à pair permettent de synchroniser la blockchain avec le réseau, en échangeant des informations et des données entre les nœuds.
 
-- **peercount:** The current number of peers the node is connected to (e.g., `2`).
+- « Nombre de pairs : » Le nombre actuel de pairs auxquels le nœud est connecté (par exemple, 2).
 
-- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
+- « Essais : » Le nombre de pairs que le nœud a tenté de se connecter (par exemple, 12).
 
-- **static:** The number of fixed/static peers the node is configured to connect to (e.g., `2`).
+- « Statiques : » Le nombre de pairs fixes/statiques que le nœud est configuré pour se connecter (par exemple, 2).
 
-To participate in consensus and block creation, you need to set up a validator node. Validators are responsible for producing new blocks on the Core blockchain by validating transactions and adding them to the blockchain.
+Configurer un nœud validateur est nécessaire pour participer au consensus et à la création de blocs. Les validateurs sont chargés de produire de nouveaux blocs sur la blockchain Core en validant les transactions et en les ajoutant à la blockchain.
