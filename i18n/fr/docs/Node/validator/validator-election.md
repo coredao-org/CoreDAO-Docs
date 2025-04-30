@@ -112,7 +112,5 @@ Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont d
 
 Le diagramme suivant représente visuellement le processus d'élection des validateurs dans Satoshi Plus:
 
-<p align="center">
-  ![validator-election-flow](../../../static/img/validator/Validator-Election-Workflow.png)
-</p>
-This flowchart illustrates the cyclical nature of the validator election and their ongoing responsibilities within the Satoshi Plus consensus mechanism. It emphasizes how stake and hash power delegation directly influence validator selection, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.
+<p align="center">  ![validator-election-flow](../../../static/img/validator/Validator-Election-Workflow.png)</p>
+Ce schéma illustre la nature cyclique de l'élection des validateurs et leurs responsabilités continues au sein du mécanisme de consensus Satoshi Plus. Il souligne comment la délégation de stake et de puissance de hachage influence directement la sélection des validateurs, la production de blocs et la distribution des récompenses, conduisant à un réseau sécurisé, décentralisé et géré de manière efficace.
