@@ -23,46 +23,46 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-### Install Required Dependencies
+### Installer les dépendances requises
 
-- To build the required codebase for Core Validator, you'll need Git, GCC, Go, and other tools. Install these with the following command:
+- Pour construire la base de code requise pour Core Validator, vous aurez besoin de Git, GCC, Go et d'autres outils. Installez-les avec la commande suivante :
 
 ```bash
 sudo apt install -y git gcc make curl lz4 golang unzip
 ```
 
-- Verify the installations: Run the following command to check the version information for both GCC and Go.
+- Vérifiez les installations : Exécutez la commande suivante pour vérifier les informations de version pour GCC et Go.
 
 ```bash
 gcc --version
 go version
 ```
 
-- You should see version information for both GCC and Go.
+- Vous devriez voir les informations de version pour GCC et Go.
 
 ```bash
 gcc (Ubuntu 13.3.0-6ubuntu2~24.04) 13.3.0
 go version go1.22.2 linux/amd64
 ```
 
-### Clone the Core Respository
+### Cloner le référentiel Core
 
-It is recommend to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your validator node, i.e., running your validator node directly from Core blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+Il est recommandé d'utiliser le référentiel GitHub [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud de validation, c'est-à-dire exécuter votre nœud de validation directement à partir de la base de code de la blockchain Core. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
 cd core-chain
 ```
 
-#### Install Depedencies
+#### Installer les dépendances
 
-After cloning the repo, next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
+Après avoir cloné le dépôt, l'étape suivante consiste à installer toutes les dépendances nécessaires pour construire le binaire geth (Go Ethereum). Exécutez la commande suivante pour installer les dépendances :
 
 ```bash
 make geth
 ```
 
-This will download and install the necessary dependencies and build the geth binary. You should see output similar to this:
+Cela téléchargera et installera les dépendances nécessaires et construira le binaire geth. Vous devriez voir une sortie similaire à ceci :
 
 ```bash
 >>> /usr/lib/go-1.22/bin/go build -ldflags "-X github.com/ethereum/go-ethereum/internal/version.gitCommit=afb8bd3ffe652e90a59af26db119bd988a03dd8f -X github.com/ethereum/go-ethereum/internal/version.gitDate=20250120 ..." -o /home/harystyles/core-chain/build/bin/geth ./cmd/geth
@@ -70,38 +70,38 @@ Done building.
 Run "./build/bin/geth" to launch geth.
 ```
 
-### Download and Extract the Blockchain Snapshot
+### Téléchargez et extrayez l'instantané de la blockchain
 
-For optimal performance and faster synchronization, it is _recommended_ to use the snapshot sync method. This approach allows nodes to start from a fully synced state, significantly reducing the time required to become operational. Unlike full sync from the genesis block, which is time-consuming process, snapshot sync enables a more efficient and streamlined setup.
+Pour des performances optimales et une synchronisation plus rapide, il est recommandé d'utiliser la méthode de synchronisation par instantané (snapshot sync). Cette approche permet aux nœuds de démarrer à partir d'un état complètement synchronisé, réduisant considérablement le temps nécessaire pour devenir opérationnel. Contrairement à la synchronisation complète depuis le bloc Genesis, qui est un processus long, la synchronisation par instantané permet une configuration plus efficace et rationalisée.
 
-#### Getting the Latest Snapshots
+#### Obtenir les derniers instantanés
 
-You can obtain the latest snapshots from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+Vous pouvez obtenir les derniers instantanés à partir du référentiel d'instantanés Core officiel ([Core Snapshot Repository]https://github.com/coredao-org/core-snapshots).
 
-#### Create Data Directory
+#### Créer un répertoire de données
 
-Now, create a directory where your node data will reside if it is not created by default.
+Maintenant, créez un répertoire où résideront les données de votre nœud si elles ne sont pas créées par défaut.
 
 ```bash
 # Create the node directory
 mkdir -p ./node
 ```
 
-#### Decompress and Extract the Snapshot
+#### Décompresser et extraire l'instantané
 
-Use `lz4` command to decompress and `tar` command to extract the snapshot into the `./node` directory. This will populate the directory with the necessary blockchain data (chaindata).
+Utilisez la commande lz4 pour décompresser et la commande tar pour extraire l'instantané dans le répertoire ./node. Cela va peupler le répertoire avec les données de blockchain nécessaires (chaindata).
 
-### Initializing the Genesis Block
+### Initialisation du bloc Genesis
 
-The next step in setting up your node is to initialize the genesis block for the Core Network. The `genesis.json` file defines the first block of the blockchain, representing the initial state of the network. Proper initialization ensures that your node starts with the correct base state, aligning with the Core Network’s protocol.
+L'étape suivante pour configurer votre nœud consiste à initialiser le bloc Genesis pour le réseau Core. Le fichier 'genesis.json' définit le premier bloc de la blockchain, représentant l'état initial du réseau. Une initialisation correcte garantit que votre nœud démarre avec l'état de base correct, en accord avec le protocole du réseau Core.
 
-#### Obtaining the Genesis and Configuration Files
+#### Obtention des fichiers Genesis et de configuration
 
-You can find the required `genesis.json` and `config.toml` in the node binaries available on the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest). Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
+Vous pouvez trouver les fichiers genesis.json et config.toml requis dans les binaires du nœud disponibles sur la page officielle des Versions de Core.(https://github.com/coredao-org/core-chain/releases/latest). Assurez-vous que ces fichiers sont correctement placés dans le répertoire de configuration de votre nœud avant de poursuivre la configuration.
 
-#### Initialize Genesis Block
+#### Initialisation du bloc Genesis
 
-To initialize your node with the genesis block, run the following command. This command sets the initial state of the blockchain in your node directory.
+Pour initialiser votre nœud avec le bloc Genesis, exécutez la commande suivante. Cette commande définit l'état initial de la blockchain dans le répertoire de votre nœud.
 
 ```bash
 # Initialize the node with the genesis block
@@ -109,7 +109,7 @@ geth --datadir node init genesis.json
 ```
 
 :::info
-Ensure that the path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory (core-chain) of your node.
+Assurez-vous que le chemin vers le fichier genesis.json est correct. Dans ce cas, genesis.json signifie que le fichier genesis.json est situé dans le même répertoire, qui devrait être le répertoire racine (core-chain) de votre nœud.
 :::
 
 Vous devriez voir le message suivant :
@@ -126,37 +126,38 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-### Start the Validator Node
+### Démarrer le nœud de validation
 
-Once the set up is completed, it’s time to start the validator node!
+Une fois la configuration terminée, il est temps de démarrer le nœud de validation !
 
-#### Option 1: Start the Full Node with Options
+#### Option 1 : Démarrer le nœud complet avec des options
 
 ```bash
 ./build/bin/geth --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
 ```
 
-This command does the following:
+Cette commande effectue les actions suivantes :
 
-- **`datadir ./node`:** Tells the node where to store its blockchain data.
+- datadir ./node : Indique au nœud où stocker ses données de blockchain.
 
-- **`cache 8000`:** Allocates 8 GB of RAM to help the node run more efficiently.
+- cache 8000 : Alloue 8 Go de RAM pour aider le nœud à fonctionner plus efficacement.
 
-- **`rpc.allow-unprotected-txs`:** Allows the node to send unprotected transactions (needed for validator actions).
+- rpc.allow-unprotected-txs : Permet au nœud d'envoyer des transactions non protégées (nécessaire pour les actions de validation).
 
-- **`networkid 1116`:** Specifies which network the node should join. 1114 for Core Testnet2, 1115 for Core Tesnet and 1116 for Core Mainnet.
+- networkid 1116 : Spécifie le réseau que le nœud doit rejoindre. 1114 for Core Testnet2, 1115 for Core Tesnet and 1116 for Core Mainnet.
 
-However, if you're having trouble finding peers (meaning the node can’t connect to other nodes), you can use the configuration file to help it start with bootstrap nodes. This file has some predefined settings to make the process easier.
+Utiliser des nœuds de bootstrap
+Si votre nœud a du mal à trouver des pairs, configurer des nœuds de bootstrap peut aider à établir des connexions initiales avec d'autres nœuds du réseau. Cela facilite la synchronisation et la participation au réseau. Ce Fichier de configuration a des paramètres prédéfinis
 
-#### Option 2: Start the Node with the Configuration File
+#### Option 2 : Démarrer le nœud avec le fichier de configuration
 
 ```bash
 ./build/bin/geth --config ./config.toml --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
 ```
 
-This command uses a configuration file (`config.toml`) that helps the node connect to peers more easily.
+Cette commande utilise un fichier de configuration (config.toml) qui aide le nœud à se connecter plus facilement aux pairs.
 
-#### Option 3: Start the Node with the Consensus Key
+#### Option 3 : Démarrer le nœud avec la clé de consensus
 
 Si vous prévoyez d'exécuter un nœud validateur, vous devez configurer la clé de consensus avant de démarrer le nœud. Assurez-vous de sauvegarder votre keystore.
 
@@ -171,7 +172,7 @@ geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --
 :::info
 A bootstrap node is essentially a "helper" node used to kickstart your connection to the network, especially when your node is struggling to find peers. When you first start your node, it needs to connect with other nodes to sync up and start participating in the blockchain. This process is called peer discovery.
 
-Without bootstrap nodes, your node might not be able to find any peers, especially if it's new and doesn't have any connections yet. Bootstrap nodes provide a list of known peers that your node can connect to initially. Once it connects to these peers, it can then start discovering other peers on its own.
+Sans nœuds de bootstrap, votre nœud pourrait ne pas être en mesure de trouver des pairs, surtout s'il est nouveau et n'a aucune connexion établie. Les nœuds de bootstrap fournissent une liste de pairs connus auxquels votre nœud peut se connecter initialement. Once it connects to these peers, it can then start discovering other peers on its own.
 :::
 
 ## Monitor Logs
