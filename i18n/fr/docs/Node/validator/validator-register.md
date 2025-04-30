@@ -1,5 +1,5 @@
 ---
-sidebar_label: Register Validator Node
+sidebar_label: Exécution d'un nœud de validation
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -9,20 +9,20 @@ sidebar_position: 2
 ---
 
 :::caution
-Before running a Validator Node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
+Avant de devenir validateur sur Core, nous vous recommandons vivement de lire le [Whitepaper Technique](https://whitepaper.coredao.org/).
 :::
 
-## Set Up a Full Node in Validator Mode
+## Configurer un nœud complet en mode validateur
 
-Before you can register as a Validator, you need to set up and run a full node in Validator mode. Follow this [guide](./running-validator.md) to setup and run Validator Node. Your full node needs to sync with the Core network, meaning it must download the blockchain data and stay updated with the latest blocks.
+Prérequis pour devenir validateur : Avant de vous enregistrer en tant que validateur, vous devez configurer et exécuter un nœud complet en mode validateur. Consultez ce guide(./running-validator.md) pour configurer et exécuter un nœud validateur Synchronisation du nœud complet : Votre nœud complet doit se synchroniser avec le réseau Core en téléchargeant les données de la blockchain et en restant à jour avec les derniers blocs.
 
-### Generate the Consensus Key
+### Générer la clé de consensus
 
-When initializing a validator node, you need to generate a Consensus Address (Public Address) for the key. This address will be used by your node for consensus operations.
+Lors de l'initialisation d'un nœud validateur, générez une adresse de consensus (adresse publique) associée à la clé de consensus. L'adresse de consensus générée sera utilisée par votre nœud pour les opérations de consensus, notamment pour la validation des blocs et la participation au processus de consensus sur la blockchain.
 
-#### Generating a New Consensus Key
+#### Générer une nouvelle clé de consensus
 
-To create a new consensus key, use the following command. This command will create a new account and output an address which will be your validator's address (consensus address).
+Exécutez la commande spécifique fournie pour générer une nouvelle clé de consensus Lorsque vous exécutez la commande, un nouveau compte sera créé et une adresse sera générée. Cette adresse servira d'adresse de validation (adresse de consensus) pour votre nœud validateur.
 
 ```bash
 ./build/bin/geth account new --datadir ./node
