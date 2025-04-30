@@ -1,5 +1,5 @@
 ---
-sidebar_label: RPC Providers
+sidebar_label: Fournisseurs RPC (Remote Procedure Call)
 hide_table_of_contents: false
 sidebar_position: 2
 description: Liste des points de terminaison RPC pour Testnet et Mainnet
