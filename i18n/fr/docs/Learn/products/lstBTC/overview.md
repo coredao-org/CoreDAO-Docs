@@ -1,83 +1,82 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# lstBTC: Institutional Bitcoin Yield
+# lstBTC : Rendement Bitcoin Institutionnel
 
 ---
 
-## The Big Idea
+## L'Idée Géniale
 
-Bitcoin is the world’s largest digital asset, yet it remains financially idle—held in vaults or posted as collateral without generating yield. Institutions have traditionally faced a dilemma:
+Bitcoin est le plus grand actif numérique au monde, pourtant il reste financièrement inactif - conservé dans des coffres-forts ou utilisé comme garantie sans générer de rendement. Les institutions ont traditionnellement été confrontées à un dilemme :
 
-- **HODL BTC** as a store of value, leaving it unproductive.
-- **Lend BTC**, taking on counterparty risks, illiquidity, and operational complexity.
+- Détenir du BTC en tant que réserve de valeur sans le mettre à profit.
+- Prêter du BTC, en assumant des risques de contrepartie, d'illiquidité et une complexité opérationnelle.
 
-**lstBTC changes that.**
+lstBTC change la donne.
 
-For the first time, institutions can earn BTC-denominated yield **without relinquishing custody, lending risk, or disrupting workflows**. Powered by **Core’s Dual Staking**, risk-managed by **Maple Finance**, and secured by **custodians like BitGo, Hex Trust, and Copper**, lstBTC transforms Bitcoin into a **yield-bearing asset with full liquidity and security**.
+Pour la première fois, les institutions peuvent obtenir un rendement en BTC sans perdre le contrôle, prendre des risques de prêt ou perturber leurs opérations. Propulsé par le double staking de Core, géré en termes de risque par Maple Finance, et sécurisé par des dépositaires comme BitGo, Hex Trust et Copper, lstBTC transforme Bitcoin en un actif générateur de rendement avec une liquidité et une sécurité totales.
 
 <p align="center" zoom="200%">
-![lstBTC_banner](../../../../static/img/lstbtc/lstBTC_banner.png)
-</p>
+![lstBTC_banner](../../../../static/img/lstbtc/lstBTC_banner.png)</p>
 
-## **What is lstBTC?**
+## Qu'est-ce que lstBTC ?
 
-lstBTC is a **liquid, yield-bearing Bitcoin token** issued on the Core blockchain, designed for institutional investors seeking **BTC-native yield** without compromising security.
+Qu'est-ce que le stBTC ? Le stBTC est un jeton Bitcoin liquide générateur de rendement, émis sur la blockchain Core, conçu pour les investisseurs institutionnels cherchant un rendement natif en BTC sans compromettre la sécurité.
 
-Unlike traditional BTC yield solutions, lstBTC **does not require**:
+Contrairement aux solutions traditionnelles de rendement BTC, lstBTC n'exige pas :
 
-- Lending BTC (eliminating counterparty risk).
-- Wrapping BTC onto another chain (avoiding bridging risks).
-- Giving up custodial control (Bitcoin remains in institutional custody).
+- Le prêt de BTC (éliminant le risque de contrepartie).
+- L'enveloppement de BTC sur une autre chaîne (évitant les risques de pontage).
+- La perte du contrôle de garde (le Bitcoin reste sous la garde institutionnelle).
 
-Instead, lstBTC:
+Au lieu de cela, lstBTC :
 
-- Generates **3-6%+ BTC yield** via Core’s **Dual Staking**.
-- Ensures BTC remains custodied by **BitGo, Copper, and Hex Trust**.
-- Is risk-managed by **Maple Finance** to **protect yield sustainability and BTC principal**.
+- Génère un rendement en BTC de 3-6%+ via le double staking de Core.
+- Assure que les BTC restent sous la garde de BitGo, Copper et Hex Trust.
+- Est géré en termes de risque par Maple Finance pour protéger la durabilité du rendement et le capital BTC.
 
-## **How lstBTC Works**
+## Comment fonctionne lstBTC
 
-For institutional users, lstBTC is **simple and seamless**:
+Pour les utilisateurs institutionnels, lstBTC est simple et fluide :
 
-1. **Deposit BTC** with a trusted custodian (BitGo, Copper, or Hex Trust).
-2. **Receive lstBTC 1:1**, which accrues BTC-denominated yield daily.
-3. **Use lstBTC as BTC**—trade, transfer, or pledge it as collateral.
-4. **Redeem lstBTC for BTC + Yield** at any time through the original custodian.
+1. Déposez des BTC auprès d'un dépositaire de confiance (Bitgo, Copper ou Hex Trust).
+2. Recevez lstBTC 1:1, qui accumule un rendement en BTC quotidiennement.
+3. Utilisez lstBTC comme des BTC — échangez, transférez ou utilisez-le comme garantie.
+4. Rachetez lstBTC contre des BTC + Rendement à tout moment via le dépositaire d'origine.
 
-- **No custody changes**: BTC remains where institutions already store it.
-- **No capital inefficiency**: BTC earns returns instead of sitting idle.
-- **No workflow disruptions**: lstBTC integrates seamlessly into financial operations.
+- Aucun changement de garde : les BTC restent là où les institutions les stockent déjà.
+- Pas d'inefficacité du capital : les BTC génèrent des rendements au lieu de rester inactifs.
+- Pas de perturbations de flux de travail : lstBTC s'intègre parfaitement dans les opérations financières.
 
-## **How lstBTC Generates Yield**
+## Génération de rendement avec lstBTC
 
-lstBTC’s yield is powered by **Core’s Dual Staking mechanism**, a capital-efficient BTC yield strategy:
+Le rendement de lstBTC est alimenté par le mécanisme de double staking de Core, une stratégie de rendement en BTC efficace en capital :
 
-- **BTC is collateralized** via a low **10% Loan-to-Value (LTV) ratio loan** to purchase CORE.
-- **Maple Finance** manages risk by using options strategies to hedge against CORE price fluctuations.
-- **CORE and BTC are Dual-Staked** on Core’s blockchain, earning block rewards and fees.
-- **Yield is converted into BTC**, ensuring **all returns are BTC-denominated**.
+- Les BTC sont gagés via un prêt à ratio Loan-to-Value (LTV) faible de 10% pour acheter des CORE.
+- Maple Finance gère le risque en utilisant des stratégies d'options pour couvrir les fluctuations du prix du CORE.
+- CORE et BTC sont mis en double staking sur la blockchain de Core, générant des récompenses de bloc et des frais.
+- Le rendement est converti en BTC, garantissant que tous les rendements sont libellés en BTC.
 
-**Risk Management**:
+Gestion des risques :
 
-- BTC principal is **protected from extreme market moves**.
-- **Negligible liquidation risk** due to conservative LTV ratios.
-- **Dynamically managed yield** to balance rewards and security.
+- Le capital BTC est protégé contre les mouvements extrêmes du marché.
+- Risque de liquidation négligeable grâce à des ratios LTV conservateurs.
+- Rendement géré dynamiquement pour équilibrer les récompenses et la sécurité.
 
-## **Who is lstBTC For?**
+## Pour qui est lstBTC ?
 
-🔹 **Institutional BTC Holders** – Funds, treasuries, and wealth managers looking for **BTC yield**.\
-🔹 **Custodians & ETP Issuers** – Institutions managing BTC on behalf of clients.\
-🔹 **Traders & Market Makers** – lstBTC serves as **yield-bearing collateral** for structured strategies.\
-🔹 **Bitcoin Lenders & Borrowers** – Offsets borrowing costs, reducing financing expenses.\
-🔹 **Crypto Exchanges** – Enhances **capital efficiency** for trading and lending.
+🔹 Détenteurs institutionnels de BTC – Fonds, trésoreries et gestionnaires de patrimoine cherchant un rendement en BTC.\
+🔹 Dépositaires et émetteurs d'ETP – Institutions gérant des BTC au nom de clients.\
+🔹 Commerciaux et teneurs de marché – lstBTC sert de collatéral générant des rendements pour des stratégies structurées.\
+🔹 Prêteurs et emprunteurs de Bitcoin – Compensate les coûts d'emprunt, réduisant les frais de financement.\
+🔹 Bourses de cryptomonnaies – Améliore l'efficacité du capital pour le trading et les prêts.
 
-**Key Use Case**:
+Cas d'utilisation clé :
 
-- Institutions **pay custody fees** to store BTC. With lstBTC, these costs **flip into revenue streams**, unlocking **$3B-$6B in potential industry-wide BTC yield**.
+- Les institutions paient des frais de garde pour stocker des BTC. Avec lstBTC, ces coûts se transforment en flux de revenus, débloquant 3 à 6 milliards de dollars de rendement potentiel en BTC à l'échelle de l'industrie.
 - **Real Example**: Maple Finance will **accept lstBTC as collateral**, improving BTC capital efficiency.
 
 ## What Makes lstBTC Different?
