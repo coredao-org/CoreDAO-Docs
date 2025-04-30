@@ -28,75 +28,80 @@ Exécutez la commande spécifique fournie pour générer une nouvelle clé de co
 ./build/bin/geth account new --datadir ./node
 ```
 
-##### Important Notes
+##### Notes importantes
 
-- **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-- **Backup Your Key:** Losing access to this key means losing control over your validator node.
+- Sécurisez votre keystore et mot de passe :
+    Stockez votre fichier keystore et votre mot de passe dans un endroit sûr et sécurisé, car vous en aurez besoin ultérieurement pour accéder à votre compte et effectuer des opérations de validation.
+- Sauvegardez votre clé :
+    Il est crucial de sauvegarder votre clé de consensus pour éviter toute perte d'accès à votre nœud validateur. Si vous perdez cette clé, vous perdrez définitivement le contrôle de votre validateur.
 
-You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
+Création d'un mot de passe :
+Lorsque vous générez la clé, vous serez invité à entrer un mot de passe pour sécuriser l'accès à votre keystore. Sécurisation du mot de passe :
+Le mot de passe défini sera nécessaire pour déverrouiller votre validateur. Stockez-le dans un endroit hautement sécurisé pour éviter tout accès non autorisé et assurez-vous de le sauvegarder correctement. Enregistrer le mot de passe dans un fichier texte :
+Pour sauvegarder votre mot de passe de manière sécurisée, vous pouvez l'enregistrer dans un fichier texte en utilisant la commande suivante :
 
 ```bash
 echo {your-password} > password.txt
 ```
 
-### Start the Validator Node
+### Démarrer le nœud de validation
 
-Once you have the consensus key, you can start the validator node with the following command:
+Après avoir généré la clé de consensus, vous pouvez démarrer votre nœud validateur en utilisant la commande suivante :
 
 ```bash
 ./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
 ```
 
-Let’s break down the flags used in this command:
+Analysons les flags utilisés dans cette commande pour comprendre leur rôle et configuration spécifique pour votre nœud validateur.:
 
-- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
+- config ./config.toml : Spécifie le fichier de configuration pour le nœud. Assurez-vous que les paramètres dans le fichier config.toml sont correctement configurés pour votre environnement spécifique.
 
-- **`datadir ./node`:** Indicates the data directory for the node.
+- datadir ./node : Indique le répertoire de données pour le nœud
 
-- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
+- unlock {your-validator-address} : Déverrouille le compte validateur en utilisant l'adresse générée à l'étape précédente.
 
-- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
+- miner.etherbase {your-validator-address} : Spécifie l'adresse qui recevra les récompenses de minage et les récompenses de bloc. Il s'agit généralement de l'adresse de votre validateur.
 
-- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
+- password password.txt : Le mot de passe pour déverrouiller votre compte de validateur (assurez-vous que ce fichier est conservé de manière sécurisée).
 
-- **`mine`:** Starts the mining process (block validation).
+- mine : Démarre le processus de minage (validation de blocs)
 
-- **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
+- allow-insecure-unlock : Autorise le processus de déverrouillage sans mesures de sécurité supplémentaires (à utiliser avec prudence).
 
-- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+- cache 8000 : Alloue un grand cache (8 Go dans ce cas) pour améliorer les performances.
 
-## Register Your Validator
+## Enregistrer votre validateur
 
-Once your node is running and synced, you can proceed with the registration process.
+Une fois que votre nœud est en cours d'exécution et synchronisé, vous pouvez procéder au processus d'enregistrement.
 
-1. **Navigate to Staking Website:** The easiest way to register a new validator is using Core's official staking websites:
+1. Naviguer vers le site Web de staking : Le moyen le plus simple pour enregistrer un nouveau validateur est d'utiliser les sites Web de staking officiels de Core :
 
     - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
     - [Core Testnet Staking website](https://stake.test.btcs.network/become-validator)
     - [Core Testnet2 Staking website](https://stake.test2.btcs.network/become-validator)
 
-2. **Connect Your Wallet:** On the staking website, click **Connect Wallet** in the top right corner and connect your wallet (such as MetaMask, Ledger, etc.) that holds the necessary CORE tokens.
+2. Connecter votre portefeuille : Sur le site Web de staking, cliquez sur Connecter le portefeuille dans le coin supérieur droit et connectez votre portefeuille (comme MetaMask, Ledger, etc.) qui contient les jetons CORE nécessaires.
 
-3. **Fill Out the Validator Registration Form**
+3. Comment Remplir le formulaire d'inscription de validateur
 
-Once your wallet is connected, the **Register** button will appear. Clicking this button will open a form where you’ll need to provide several pieces of information:
+Une fois votre portefeuille connecté, le bouton Enregistrer apparaîtra. En cliquant sur ce bouton, un formulaire s'ouvrira où vous devrez fournir plusieurs informations :
 
 ![validator-register-form](../../../static/img/validator/validator-regitration.png)
 
 Fournissez les informations pour chaque champ du formulaire :
 
-- **Consensus Address**: the validator address you set when you initialized your validator node.
-- **Fee Address**: the address used to collect commission fees.
+- Adresse de consensus : l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
+- Adresse de frais : l'adresse utilisée pour collecter les frais de commission.
 - **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. The minimum deposit for testnet and mainnet is **10,000 CORE**.
+- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
 
-5. **Submit Registration:** Once you’ve filled out all the required information, click **Register** to submit your validator for registration.
+5. Soumettre l'inscription : Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
 
 ## Confirmation de l'Enregistrement
 
-After submitting your registration form, you can check whether the registration was successful.
+Après avoir soumis le formulaire d'inscription, vous pouvez vérifier si l'inscription a été réussie.
 
-### Checking the Logs
+### Vérification des journaux
 
 Open your node’s log file and search for the error message "unauthorized validator." If this message appears, it means that your node is registered but has not yet been elected to the validator set.
 
