@@ -1,13 +1,13 @@
 ---
-sidebar_label: Snapshot Node
+sidebar_label: Nœud de snapshot
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer Tabs depuis '@theme/Tabs';
+importer TabItem depuis '@theme/TabItem';
 
-# Snapshot Nodes on Core
+# Nœuds de snapshot sur Core
 
 ---
 
@@ -15,17 +15,17 @@ Les snapshots sont essentiels pour qu'un réseau garantisse que les nœuds puiss
 
 ## Requis Systèmes
 
-There are several system requirements, both software and hardware, for setting up a Snapshot Node on the Core network.
+Il y a plusieurs requis systèmes, à la fois logicielles et matérielles, pour configurer un nœud snapshot sur le réseau Core.
 
 ### Logiciel
 
-- **Operating System:** Currently, a Core Snapshot Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
+- Système d'exploitation : Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
+- Connectivité réseau : Connexion Internet stable avec une faible latence et une haute disponibilité.
+- Configuration du pare-feu : Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
 
 ### Matériel
 
-A Snapshot Node on Core provides periodic blockchain state snapshots, enabling faster node synchronization and reducing storage requirements. These nodes help new validators and RPC nodes quickly catch up with the latest blockchain state without processing the entire history. Snapshot Nodes improve network efficiency and accessibility. Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain. Following are the minimum hardware recommendations for running Snapshot Node on Core. These specifications are designed to handle the testing and validation processes while ensuring efficient data storage and synchronization.
+Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état de la blockchain, permettant une synchronisation plus rapide des nœuds et réduisant les besoins en stockage. Ces nœuds aident les nouveaux validateurs et les nœuds RPC à se mettre rapidement à jour avec l'état le plus récent de la blockchain sans avoir à traiter toute l'historique. Les nœuds de snapshot améliorent l'efficacité et l'accessibilité du réseau. Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain. Voici les recommandations matérielles minimales pour exécuter un nœud de snapshot sur Core  Ces spécifications sont conçues pour gérer les processus de test et de validation tout en garantissant un stockage et une synchronisation efficaces des données.
 
 <Tabs
 defaultValue="testnet2"
@@ -34,41 +34,37 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds de snapshot sur le réseau de test Core Blockchain Testnet2, les spécifications matérielles minimales suivantes sont recommandées :
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| **CPU**            | 4 CPU cores                                                                                             |
-| **RAM**            | 16 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+Exigences	Détails
+Stockage	Disque SSD avec une capacité minimale de 4 To
+Processeur	4 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps.
 ```
 
   </TabItem>
   <TabItem value="testnet">
-    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds de snapshot sur le réseau de test Core Blockchain Testnet2, les spécifications matérielles minimales suivantes sont recommandées :
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| **CPU**            | 4 CPU cores                                                                                             |
-| **RAM**            | 16 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+Exigences	Détails
+Stockage	Disque SSD avec une capacité minimale de 4 To
+Processeur	4 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps
 ```
 
   </TabItem>
-  <TabItem value="mainnet">
-    For Snapshot Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+  <TabItem value="mainnet">Pour les nœuds de snapshot sur le réseau principal Core Blockchain (Mainnet), les spécifications matérielles minimales suivantes sont recommandées :
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
-| **CPU**            | 4 CPU cores                                                                                             |
-| **RAM**            | 16 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+Exigences	Détails
+Stockage	Disque SSD avec une capacité minimale de 4 To
+Processeur	4 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps
 ```
 
   </TabItem>
@@ -84,7 +80,7 @@ Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état actuel de
 
 ### Téléchargement des Binaries Précompilés
 
-Download the pre-build binaries from official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below
+Téléchargez les binaries précompilés à partir de la [page des sorties](https://github.com/coredao-org/core-chain/releases/latest) ou suivez les instructions ci-dessous
 
 ##### Linux
 
