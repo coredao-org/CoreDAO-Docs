@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -37,7 +37,7 @@ Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Du
 1. Staker à la fois du CORE et du Bitcoin simultanément, en s'assurant que la quantité de CORE staké dépasse le seuil minimum de dual staking **ET**
 2. L'adresse du portefeuille de staking de CORE **doit** correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est payé.
 
-Based on the CORE:BTC staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>), representing CORE tokens staked relative to Bitcoin staked, Bitcoin staking rewards are divided into n boosted yields (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>). Depending on a user's boosted yield level, yield multipliers are applied to the base rate for staking Bitcoin on Core. Yield multipliers are determined based on the user's staking data and system dual staking settings. As a result, different users might have different multipliers. Specific CORE staking thresholds should also be met to qualify for boosted yields. Further, it is to be noted that the staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>) and the number of boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>) are subject to change and are adjustable through governance votes.
+En fonction des ratios de staking CORE:BTC  (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>), representing CORE tokens staked relative to Bitcoin staked, Bitcoin staking rewards are divided into n boosted yields (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>). Depending on a user's boosted yield level, yield multipliers are applied to the base rate for staking Bitcoin on Core. Yield multipliers are determined based on the user's staking data and system dual staking settings. As a result, different users might have different multipliers. Specific CORE staking thresholds should also be met to qualify for boosted yields. Further, it is to be noted that the staking ratios (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>) and the number of boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>) are subject to change and are adjustable through governance votes.
 
 ## Qu'est-ce qui change avec le Dual Staking ?
 
