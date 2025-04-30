@@ -77,30 +77,30 @@ Gestion des risques :
 Cas d'utilisation clé :
 
 - Les institutions paient des frais de garde pour stocker des BTC. Avec lstBTC, ces coûts se transforment en flux de revenus, débloquant 3 à 6 milliards de dollars de rendement potentiel en BTC à l'échelle de l'industrie.
-- **Real Example**: Maple Finance will **accept lstBTC as collateral**, improving BTC capital efficiency.
+- Exemple concret : Maple Finance acceptera lstBTC comme garantie, améliorant l'efficacité du capital BTC.
 
-## What Makes lstBTC Different?
+## Qu'est-ce qui distingue lstBTC ?
 
-Unlike **BTC lending** or **wrapped BTC**, lstBTC is the **first institutional-grade, liquid BTC staking solution**.
+Contrairement aux prêts BTC ou au BTC enveloppé, lstBTC est la première solution de staking BTC liquide de qualité institutionnelle.
 
-- Fully Liquid
-- Institutional-Grade
-- Non-Custodial
-- BTC-Native Yield (No Counterparty Risk)
+- Entièrement liquide
+- De qualité institutionnelle
+- Non dépositaire
+- Rendement natif BTC (sans risque de contrepartie)
 
-| Feature                | lstBTC (Core) ✅ | BTC Lending ❌                                 | Wrapped BTC ❌            |
-| ---------------------- | ---------------------------------- | --------------------------------------------- | ------------------------ |
-| **BTC Yield**          | **3-6%+ APR**                      | Risky lending                                 | Bridging risks           |
-| **Liquidity**          | **Fully liquid**                   | Locked in loans                               | Somewhat liquid          |
-| **Custody Risk**       | **Same custody setup**             | Requires counterparty                         | Centralized minting risk |
-| **Collateral Utility** | **Accepted on exchanges**          | Limited use                                   | Moderate use             |
-| **Security**           | **Non-custodial staking**          | Default & insolvency risk | Smart contract risks     |
+| Fonctionnalité         | lstBTC (Core) ✅    | Prêt BTC ❌                          | Wrapped BTC ❌                          |
+| ---------------------- | ------------------------------------- | ----------------------------------- | -------------------------------------- |
+| Rendement BTC          | **3-6%+ APR**                         | Prêts risqués                       | Risques liés au pontage                |
+| Liquidité              | Entièrement liquide                   | Verrouillé dans des prêts           | Partiellement liquide                  |
+| Risque lié à la garde  | Même configuration de garde           | Nécessite une contrepartie          | Risque de monnayage centralisé         |
+| Utilité de la garantie | Accepté sur les plateformes d'échange | Fonctionnalité limitée              | Utilisation modérée                    |
+| Sécurité               | Staking non dépositaire               | Risque de défaut et d'insolvabilité | Risques liés aux contrats intelligents |
 
-## Launch Partners & Institutional Credibility
+## Partenaires de lancement et crédibilité institutionnelle
 
-lstBTC is backed by **industry-leading custodians, risk managers, and exchanges**:\
-🔹 **Custodians (Security & Compliance)** – **BitGo, Copper, Hex Trust** ensure seamless lstBTC minting and redemption.\
-🔹 **Investment Manager (Risk & Yield Optimization)** – **Maple Finance** safeguards principal and manages yields.\
-🔹 **Exchanges (Liquidity & Adoption)** – **Deribit, OKX, Bybit** integrate lstBTC for trading and collateral use.
+lstBTC est soutenu par des dépositaires, des gestionnaires de risques et des échanges de premier plan dans l'industrie :
+🔹Custodians (Sécurité et Conformité) – BitGo, Copper, Hex Trust assurent une création et un rachat fluides de lstBTC.\
+🔹Gestionnaire d'investissement (Optimisation du risque et du rendement) – Maple Finance protège le capital et gère les rendements.\
+🔹Échanges (Liquidité et Adoption) – Deribit, OKX, Bybit intègrent lstBTC pour le trading et l'utilisation comme garantie.
 
-**lstBTC unlocks a new era of Bitcoin utility—turning passive BTC into a productive institutional asset.**
+lstBTC ouvre une nouvelle ère d'utilité pour Bitcoin : transformer le BTC passif en un actif institutionnel productif.
