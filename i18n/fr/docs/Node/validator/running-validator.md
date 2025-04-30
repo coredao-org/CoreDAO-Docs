@@ -1,22 +1,22 @@
 ---
-sidebar_label: Running a Validator Node
+sidebar_label: Exécution d'un nœud de validation
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Running Validator Nodes on Core
+# Exécution de nœuds de validation sur Core
 
 ---
 
-This guide will walk you through setting up a Core Validator Node. The guide covers all the essential steps, including installing dependencies, building the Core node software, and launching it successfully.
+Ce guide vous guidera à travers la configuration d'un nœud de validation Core. Le guide couvre toutes les étapes essentielles, notamment l'installation des dépendances, la construction du logiciel de nœud Core et son lancement avec succès.
 
 ### Requis Systèmes
 
 Il y a plusieurs exigences systèmes pour configurer un nœud validateur sur le réseau Core. Veuillez vous référer [ici](../config/validator-node-config.md) et vous assurer que vous avez les exigences matérielles et logicielles nécessaires avant de lancer un nœud validateur. En outre, assurez-vous d'enregistrer correctement votre nœud validateur en consultant les lignes directives détaillées [ici](./validator-register.md).
 
-### Update Your System
+### Mettez à jour votre système
 
-Start by updating your system to ensure all the packages are up-to-date. Run the following commands:
+Commencez par mettre à jour votre système pour vous assurer que tous les paquets sont à jour. Exécutez les commandes suivantes :
 
 ```bash
 sudo apt update
