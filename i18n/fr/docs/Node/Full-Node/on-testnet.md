@@ -1,14 +1,14 @@
 ---
-sidebar_label: On Testnet
+sidebar_label: Sur le Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Running Core Full Nodes on Core Testnet
+# Exécution des nœuds complets Core sur le Testnet de Core
 
 ---
 
-A Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
+Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. A Core full node can take many forms:
 
 - **Normal full node**: for private use.
 - **Validator full node**: acts as a validator on Core, validating blocks and transactions.
