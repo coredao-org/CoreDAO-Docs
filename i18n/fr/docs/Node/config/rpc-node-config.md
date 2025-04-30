@@ -26,7 +26,7 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Matériel
 
-Un nœud RPC sur Core agit comme une passerelle pour les applications, les développeurs et les utilisateurs afin d'interagir avec la blockchain. Il traite les requêtes, soumet des transactions et récupère des données de blockchain en temps réel via des appels de procédure à distance (RPC). Ces nœuds sont essentiels pour les dApps, les portefeuilles et les plateformes d'analyse afin d'accéder de manière transparente au réseau Core. Following are the hardware requirements for RPC Node on Core.
+Un nœud RPC sur Core agit comme une passerelle pour les applications, les développeurs et les utilisateurs afin d'interagir avec la blockchain. Il traite les requêtes, soumet des transactions et récupère des données de blockchain en temps réel via des appels de procédure à distance (RPC). Ces nœuds sont essentiels pour les dApps, les portefeuilles et les plateformes d'analyse afin d'accéder de manière transparente au réseau Core. Voici les exigences matérielles pour un nœud RPC sur Core
 
 <Tabs
 defaultValue="testnet2"
@@ -35,41 +35,37 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds RPC sur le réseau de test Core Blockchain Testnet2, les spécifications matérielles minimales suivantes sont recommandées :
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
-| **RAM**            | 16 Gigabytes   |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
-```
-
-  </TabItem>
-  <TabItem value="testnet">
-    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
-
-```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
-| **RAM**            | 16 Gigabytes   |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+Spécifications matérielles minimales recommandées :
+Exigences	Détails
+Stockage	1 To d'espace disque libre, disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture <1 ms.
+Processeur	8 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 50 mégaoctets par seconde.
 ```
 
   </TabItem>
-  <TabItem value="mainnet">
-    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+  <TabItem value="testnet">Pour les nœuds RPC sur le réseau de test Core Blockchain Testnet, les spécifications matérielles minimales suivantes sont recommandées:
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-| **CPU**            | 8 CPU cores |
-| **RAM**            | 16 Gigabytes  |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+Exigences	Détails
+Stockage	1 To d'espace disque libre, SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture < 1 ms.
+Processeur	8 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 50 Mo/s.
+```
+
+  </TabItem>
+  <TabItem value="mainnet">Pour les nœuds RPC sur le réseau principal Core Blockchain Mainnet, les spécifications matérielles minimales suivantes sont recommandées :
+
+```
+Exigences	Détails
+Stockage	1 To d'espace disque libre, SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture < 1 ms.
+Processeur	8 cœurs de processeur
+Mémoire RAM	16 gigaoctets
+Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 50 Mo/s.
 ```
 
   </TabItem>
@@ -85,7 +81,7 @@ Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` 
 
 1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Download the node binary from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
 3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
