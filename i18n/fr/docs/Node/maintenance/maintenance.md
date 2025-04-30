@@ -14,7 +14,7 @@ Il est conseillé à tous les clients de mettre à jour vers la dernière versio
 
 ### Élagage de l'État
 
-As per conducted tests, the performance of a full nodes degrades when the storage size reaches a high volume (approximately 1.5TB, which is an experimental value). Therefore, it is suggested that the full node always keeps light storage by pruning the storage.
+Selon les tests effectués, les performances des nœuds complets se dégradent lorsque la taille de stockage atteint un volume élevé (environ 1,5 To, ce qui est une valeur expérimentale). Nous suggérons que les nœuds complets maintiennent un stockage léger en élaguant les données stockées.
 
 #### Règles pour l'Élagage
 
