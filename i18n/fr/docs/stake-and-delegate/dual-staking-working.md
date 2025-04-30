@@ -1,32 +1,32 @@
 ---
-sidebar_label: How It Works
+sidebar_label: Son Fonctionnement
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How Dual Staking Works
+# Comment fonctionne le Dual Staking
 
 ---
 
-Core operates on the **Satoshi Plus consensus**, integrating three delegation sources to secure the network:
+Core fonctionne sur le consensus Satoshi Plus, intégrant trois sources de délégation pour sécuriser le réseau :
 
-- **Delegated Proof of Work (DPoW):** Bitcoin miners delegate hash power to Core validators.
-- **Delegated Proof of Stake (DPoS):** CORE token holders delegate their tokens to validators.
-- **Non-Custodial BTC Staking:** BTC holders stake directly on the Bitcoin network and delegate their stake to Core validators.
+- Preuve de travail déléguée (DPoW) : Les mineurs Bitcoin délèguent la puissance de hachage aux validateurs Core.
+- Preuve d'enjeu déléguée (DPoS) : Les détenteurs de jetons CORE délèguent leurs jetons aux validateurs.
+- Staking non dépositaire de BTC : Les détenteurs de BTC mettent en jeu directement sur le réseau Bitcoin et délèguent leur jetons bitcoin aux validateurs Core.
 
-**Dual Staking**, an enhancement to Core’s **Non-Custodial BTC Staking**, enables participants to maximize rewards by staking both **BTC and CORE** simultaneously. This strategy strengthens the Core network while unlocking higher Bitcoin staking yields based on predefined CORE staking thresholds.
+Double staking, une amélioration du staking non-custodial de BTC de Core, permet aux participants de maximiser leurs récompenses en stakant simultanément du BTC et des tokens CORE. Cette stratégie renforce le réseau Core tout en débloquant des rendements plus élevés pour le staking de Bitcoin en fonction de seuils de staking CORE prédéfinis.
 
-By meeting specific **CORE-to-BTC staking ratios**, users gain **boosted Bitcoin staking rewards**, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly.
+En atteignant des ratios de staking CORE/BTC spécifiques, les utilisateurs obtiennent des récompenses de staking Bitcoin boostées, payées en CORE. Bien que le Double Staking améliore les rendements du staking de BTC, il n'affecte pas directement les récompenses du staking CORE.
 
 <p align="center">
 <img width="1024" alt="Dual Staking Tiers (8)" src="https://github.com/user-attachments/assets/6ce41ca4-fc7e-476a-814c-4f56665b3c48" />
 </p>
 
-### Boosted Yield Thresholds
+### Seuils de rendement boosté
 
-Currently, Satoshi Plus rewards are allocated via three pools, one for each of the three entities participating in the election of Core validators, namely (1) Hash Power Delegators, (2) Bitcoin Stakers, and (3) CORE Stakers.
+Actuellement, les récompenses Satoshi Plus sont allouées via trois pools, une pour chacune des trois entités participant à l'élection des validateurs Core, à savoir (1) les délégateurs de puissance de hachage, (2) les stakers de Bitcoin et (3) les stakers de CORE.
 
-Dual Staking does not affect these reward pools, but does enable Bitcoin stakers who also stake CORE tokens to earn a higher proportion of rewards in the Bitcoin Staking pool. In this section, we cover in detail the working of the grading algorithm with respect to dual staking.
+Le Dual Staking n'affecte pas ces pools de récompenses, mais permet aux stakers de Bitcoin qui stakent également des jetons CORE de gagner une proportion plus élevée de récompenses dans le pool de staking de Bitcoin. Dans cette section, nous couvrons en détail le fonctionnement de l'algorithme de gradation en ce qui concerne le dual staking.
 
 #### 1. **Boosted Yield Levels**
 
