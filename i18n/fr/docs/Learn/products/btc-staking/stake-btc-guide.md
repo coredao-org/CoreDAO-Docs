@@ -92,11 +92,11 @@ Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des réc
 
 8. Une fois votre portefeuille Bitcoin connecté, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-- Specifying the amount of Bitcoin you’d like to delegate
-  - The minimum amount to delegate is 0.01 Bitcoin, if delegating through the official website U.
-  - In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement
+- Spécifier le montant de Bitcoin que vous souhaitez déléguer
+  - Le montant minimum à déléguer est de 0,01 Bitcoin, si la délégation se fait via l'interface officielle du site.
+  - Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
 - Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
-  - Select inside the lock time box to input values, or click on the calendar icon to select the date and click ‘OK’ to proceed.
+  - Sélectionnez à l'intérieur de la boîte de temps de verrouillage pour entrer des valeurs, ou cliquez sur l'icône du calendrier pour sélectionner la date et cliquez sur ’OK’ pour continuer.
   - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
 
@@ -125,33 +125,25 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 ![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
-### Verify BTC Staking Address
+### Vérifier l'adresse de staking BTC
 
-13. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their BTC staking address, helping prevent blind signing and enhance the security of the staking process.
+13. Avant de procéder à la confirmation de votre transaction de staking. Cette fonctionnalité de vérification permet aux utilisateurs de vérifier indépendamment leur adresse de staking BTC, contribuant à prévenir les signatures aveugles et à renforcer la sécurité du processus de staking.
 
-14. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
+14. Pour procéder à la vérification, cliquez sur le bouton **Verify the BTC Staking Address**. Cela vous redirigera vers le site Web externe.
 
-<p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
-</p>
+<p align="center" style={{zoom:"60%"}}>![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)</p>
 
-15. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+15. Sur l'interface utilisateur du site Web de vérification, assurez-vous que les données récupérées sont correctes, puis cliquez sur le bouton _Submit_.
 
-<p align="center" style={{zoom:"35%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
-</p>
+<p align="center" style={{zoom:"35%"}}>![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)</p>
 
-16. The verification result will appear in the **Verification Result** section.
+16. Le résultat de la vérification apparaîtra dans la section **Verification Result**.
 
-<p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
-</p>
+<p align="center" style={{zoom:"60%"}}>![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)</p>
 
-17. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+17. Une fois vérifié, revenez sur (stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
 
-<p align="center">
-![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
-</p>
+<p align="center">![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)</p>
 
 ### Visualiser les Enregistrements de Staking
 
