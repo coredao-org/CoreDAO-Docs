@@ -4,9 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Non-Custodial Bitcoin Staking
+# Self-Custodial Bitcoin Staking
 
-This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards. With Non-Custodial Bitcoin Staking, you can earn passive yield in CORE while retaining complete ownership of your Bitcoin assets. Let's dive into how it works and how you can start staking today.
+This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards. 
 
 ## Prerequisites
 
@@ -30,9 +30,9 @@ The following are some key points that users should be careful about when stakin
 5. **Considerations for Locking Periods**  
    * Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
 
-## Workflow of Non-Custodial BTC Staking
+## Workflow of Self-Custodial BTC Staking
 
-Non-custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn staking rewards. By locking your Bitcoin natively on the Bitcoin network through a time-bound mechanism, you can actively participate in the Core blockchain's Consensus mechanism while staking. Here are the steps involved in this process.
+Self-custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn staking rewards. By locking your Bitcoin natively on the Bitcoin network through a time-bound mechanism, you can actively participate in the Core blockchain's consensus mechanism while staking. Here are the steps involved in this process.
 
 1. **Initiate Staking:** Start by accessing either the [CLI-based BTC Staking Tool](https://github.com/coredao-org/btc-staking-tool) (for technical users) or the [web-based staking platform](https://stake.coredao.org/) (for general users).   
 2. **Stake Bitcoin with Time-Lock:** You stake your Bitcoin by sending a transaction on the Bitcoin network with a time-lock parameter, and your Bitcoin remains locked until the specified period ends. Ensure you follow the requirements for a transaction to be valid and eligible; refer [here](../btc-staking/design#requirements-for-transaction-validity) for more details.   
@@ -44,7 +44,7 @@ Non-custodial Bitcoin staking introduces a secure and decentralized method for B
 5. **Claiming Rewards:** Accrued CORE token rewards will also appear on the [staking site](http://stake.coredao.org/). CORE token rewards will appear when users connect their wallets, and can be claimed daily. Also, to be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).   
 6. **Redeem Bitcoin:** Once the staking lock time expires, the staked Bitcoin will remain idle in the staking address until redeemed by the user.
 
-## Non-Custodial Bitcoin Staking Walkthrough 
+## Self-Custodial Bitcoin Staking Walkthrough 
 
 To begin staking your Bitcoin on the Core blockchain and earn staking rewards in CORE tokens, follow the steps detailed below to stake Bitcoin through Core's official [staking website](http://stake.coredao.org/).
 
@@ -167,4 +167,4 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
-**Congratulations!!** You have successfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and voting for validators on Core, you actively contribute to the governance and security of the Core network, supporting its decentralization and stability.
+**Congratulations!!** You have successfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and helping to elect validators on Core, you actively contribute to the security of the Core network, supporting its decentralization and stability.
