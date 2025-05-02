@@ -43,7 +43,7 @@ const sidebars: SidebarsConfig = {
             link: {
               type: 'generated-index',
               title: 'Core Concepts',
-              description: 'Learn about the Nuts and Bolts of the Core Ecossytem!',
+              description: 'Learn about the Nuts and Bolts of the Core Ecosystem!',
               slug: '/category/core-concepts',
             },
             items: ['Learn/core-concepts/overview', 'Learn/core-concepts/architecture',
