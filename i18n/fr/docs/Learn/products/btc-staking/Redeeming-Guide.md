@@ -6,18 +6,19 @@ sidebar_position: 2
 
 # Récupérer des Bitcoins Stakés ou Réclamer des Récompenses en CORE
 
-Core offre aux détenteurs de Bitcoin la possibilité de staker leurs actifs sur la blockchain Core pour gagner un revenu passif sous forme de tokens CORE. Pour apprendre à staker vos actifs Bitcoins sur Core et gagner des récompenses, suivez notre [guide](./stake-btc-guide.md) détaillé. Après avoir staké vos Bitcoins avec succès sur la blockchain Core, vous devez ensuite apprendre à réclamer vos récompenses CORE ou à récupérer vos Bitcoin stakés. Ce guide détaillé vous sera utile lorsque vous verrez ‘**Récupérer**’ apparaître sous ‘**Action**’ pour le validateur délégué que vous avez choisi précédemment ou **’Réclamer**’ à côté de **’Délégation de Hash & Récompenses Core**’ et/ou **’Récompenses de Staking Bitcoin**’.
+Core enables Bitcoin holders to earn CORE token rewards by timelocking their Bitcoin on the Bitcoin blockchain. For instructions on how to participate in Bitcoin timelocking and earn rewards, follow our detailed [guide](./stake-btc-guide.md).
+After you've successfully created a Bitcoin timelock transaction, you'll want to know how to claim your earned CORE rewards and manage your timelocked Bitcoin. This guide explains the process when you see either the 'Redeem' option under 'Action' for your chosen validator, or the 'Claim' button next to 'Delegated Hash & Core Rewards' or 'Bitcoin Staking Rewards' in the interface.
 
 ## Informations sur la Distribution des Récompenses
 
 - **Distribution des Récompenses:** Les récompenses en tokens CORE sont distribuées aux stakers en tant qu'incitations pour leur contribution à la sécurité et à la gouvernance du réseau.
-- **Source des Récompenses:** Les récompenses proviennent du pool de récompenses de consensus partagé entre les participants des deux mécanismes de Core : dPoW (mineurs de Bitcoin) et dPoS (stakers de Bitcoin et de CORE).
+- **Reward Source:** Rewards are sourced from the consensus reward pool.
 
 ## Récupérer des Bitcoin Stakés Expirés
 
 Si votre période de staking a expiré, vous pouvez récupérer vos Bitcoins stakés via le(s) portefeuille(s) Unisat ou Xverse. Vous devez utiliser la même adresse de portefeuille que celle utilisée lors du processus de staking pour récupérer vos Bitcoins stakés expirés.
 
-1. Depuis n'importe quel écran CORE, survolez votre portefeuille connecté dans le coin supérieur droit → cliquez sur **‘Mes Stakings**‘.
+1. From any Core screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
 
 <p align="center">![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)</p>
 
@@ -69,4 +70,4 @@ Pour être éligible à recevoir des récompenses, il est nécessaire de complé
 
 #### Conclusion
 
-En suivant ce guide, vous avez appris avec succès à récupérer vos Bitcoins stakés sur la blockchain Core ainsi qu'à réclamer vos récompenses gagnées sous forme de tokens CORE en déléguant vos Bitcoins stakés. Nous sommes ravis que vous ayez choisi de découvrir BTCfi avec le staking Non-Custodial de Bitcoin sur Core!
+En suivant ce guide, vous avez appris avec succès à récupérer vos Bitcoins stakés sur la blockchain Core ainsi qu'à réclamer vos récompenses gagnées sous forme de tokens CORE en déléguant vos Bitcoins stakés. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
