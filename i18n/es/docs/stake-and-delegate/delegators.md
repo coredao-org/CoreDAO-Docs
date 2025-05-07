@@ -25,7 +25,7 @@ En el contexto de la cadena de bloques Core, la delegación es un mecanismo fund
 
     - **Propósito:** Los mineros de Bitcoin pueden delegar una parte de su poder de hash computacional a validadores en la red Core. Esta forma única de delegación aprovecha la seguridad y el trabajo que ya se está realizando en la red Bitcoin para mejorar la seguridad del Core.
     - **Proceso:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, indicando su soporte para un validador Core, vinculando así la seguridad de ambas redes.
-    - **Cómo delegar hash:** Core permite a los mineros de BTC delegar su poder de hash a los validadores en Core, lo que les permite ganar recompensas de apuesta del ecosistema Core en forma de tokens CORE adicionales. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar Hash Poweer en validadores principales] (./delegating-hash.md).
+    - **How to Delegate Hash:** Core provides the BTC miners to delegate their hashpower to validators on Core, enabling them to earn staking rewards from the Core ecosystem in the form of additioanl CORE tokens. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar Hash Poweer en validadores principales] (./delegating-hash.md).
 
 ## Importancia de las delegaciones en Core Blockchain
 
