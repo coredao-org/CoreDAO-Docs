@@ -25,7 +25,7 @@ On the Core network, CORE token holders can delegate their tokens to validators 
 
 ## Step by Step Process
 
-1. **Staking CORE/BTC Tokens:** CORE holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token (if staking via the official website UI). 
+1. **Staking CORE/BTC Tokens:** CORE holders can participate in network security by staking their tokens. The minimum staking requirement is 1 CORE token and 0.01 BTC (if staking BTC via the official website UI). 
 
 2. **Delegating to Validators:** CORE token holders delegate their staked CORE or BTC to Core validators of their choice, assisting their hybrid score in the validator election process.
 
