@@ -1,16 +1,16 @@
 ---
-sidebar_label: Preguntas frecuentes sobre Core Chain
+sidebar_label: Core Blockchain FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Preguntas frecuentes sobre Core Chain
+# Core FAQs
 
 ---
 
 ### 1. ¿Dónde puedo encontrar el código base para Core blockchain?
 
-Core Foundation aboga por la creación de proyectos de código abierto y, por lo tanto, todas las bases de código de Core están disponibles para uso comunitario. Puede encontrar el código base de Core blockchain y otras herramientas para desarrolladores en la [cuenta oficial de GitHub de Core](https://github.com/coredao-org).
+The Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. Puede encontrar el código base de Core blockchain y otras herramientas para desarrolladores en la [cuenta oficial de GitHub de Core](https://github.com/coredao-org).
 
 ### 2. ¿Cuáles son los canales de comunicación oficiales?
 
@@ -36,7 +36,7 @@ El token CORE es fundamental para proteger la red Core a través de sus funcione
 
 ### 6. Como apostador de bitcoins, ¿tengo que ejecutar un validador yo solo?
 
-No, como apostador de Bitcoin en la red Core, no es necesario que usted mismo ejecute un validador. El sistema permite a los titulares de Bitcoin participar en la seguridad de la red mediante apuestas de Bitcoin sin custodia. Esto significa que puede apostar su Bitcoin sin renunciar a la custodia y sin la necesidad de participar directamente en los procesos de validación, como la producción de bloques o la validación de transacciones. Esta configuración le permite obtener rendimiento de su Bitcoin mientras contribuye a la seguridad de la red de una manera más pasiva.
+No, como apostador de Bitcoin en la red Core, no es necesario que usted mismo ejecute un validador. The system allows Bitcoin holders to participate in securing the network through Self-Custodial Bitcoin Staking. Esto significa que puede apostar su Bitcoin sin renunciar a la custodia y sin la necesidad de participar directamente en los procesos de validación, como la producción de bloques o la validación de transacciones. Esta configuración le permite obtener rendimiento de su Bitcoin mientras contribuye a la seguridad de la red de una manera más pasiva.
 
 ### 7. ¿Cuáles son las condiciones para la tala? ¿Cuáles son las tarifas de reducción en las que se incurre? ¿Se reducirán todos mis tokens apostados (CORE y BTC)?
 
@@ -52,7 +52,7 @@ En la red Core, los cortes y el encarcelamiento son mecanismos para penalizar a 
 
 ### 8. ¿Qué mecanismo de consenso utiliza la red Core y cómo previene diferentes ataques?
 
-La red Core utiliza el mecanismo de consenso Satoshi Plus que combina prueba de trabajo delegada (DPoW), prueba de participación delegada (DPoS) y participación BTC sin custodia para proteger la red contra diversos ataques. Esta configuración mitiga los ataques a la red, como DDoS, mediante la dispersión de nodos y la comunicación P2P aleatoria. Para ataques de consenso como el ataque del 51%, emplea minería por turnos y un sistema de puntuación híbrido para la elección del validador, lo que hace que dichos ataques sean económicamente imprácticos. Además, Core utiliza puntos de control para congelar y proteger periódicamente el historial de la cadena de bloques, frustrando ataques de largo alcance. Para obtener más detalles, consulte la [Descripción general de la seguridad de Core Blockchain] (https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
+The Core network uses the Satoshi Plus consensus mechanism which combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Self-Custodial BTC Staking to secure the network against various attacks. Esta configuración mitiga los ataques a la red, como DDoS, mediante la dispersión de nodos y la comunicación P2P aleatoria. Para ataques de consenso como el ataque del 51%, emplea minería por turnos y un sistema de puntuación híbrido para la elección del validador, lo que hace que dichos ataques sean económicamente imprácticos. Además, Core utiliza puntos de control para congelar y proteger periódicamente el historial de la cadena de bloques, frustrando ataques de largo alcance. Para obtener más detalles, consulte la [Descripción general de la seguridad de Core Blockchain] (https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
 
 ### 9. ¿Cuál es el tiempo promedio de confirmación de transacciones de la red Core?
 
