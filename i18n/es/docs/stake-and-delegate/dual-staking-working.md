@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ---
 
-Core opera bajo el **consenso Satoshi Plus**, integrando tres fuentes de delegación para asegurar la red:
+Core operates on **Satoshi Plus consensus**, integrating three delegation sources to secure the network:
 
 - **Prueba de Trabajo Delegada (DPoW):** Los mineros de Bitcoin delegan el poder de hash a los validadores de Core.
 - **Prueba de Participación Delegada (DPoS):** Los poseedores de tokens CORE delegan sus tokens a los validadores.
-- **Staking de BTC no custodial:** Los poseedores de BTC hacen staking directamente en la red de Bitcoin y delegan su participación a los validadores de Core.
+- **Self-Custodial BTC Staking:** BTC holders stake directly on the Bitcoin network and delegate their stake to Core validators.
 
-El **Dual Staking**, una mejora del **Staking de BTC no custodial** de Core, permite a los participantes maximizar las recompensas al hacer staking de **BTC** y **CORE** simultáneamente. Esta estrategia fortalece la red de Core mientras desbloquea mayores rendimientos de staking de Bitcoin basados en umbrales predefinidos de staking de CORE.
+**Dual Staking**, an enhancement to Core’s **Self-Custodial BTC Staking**, enables participants to maximize rewards by staking both **BTC and CORE** simultaneously. Esta estrategia fortalece la red de Core mientras desbloquea mayores rendimientos de staking de Bitcoin basados en umbrales predefinidos de staking de CORE.
 
 Al cumplir con ratios específicos de **staking de CORE a BTC**, los usuarios obtienen **recompensas de staking de Bitcoin incrementadas**, pagadas en CORE. Aunque el Dual Staking mejora los rendimientos del staking de BTC, no afecta directamente las recompensas del staking de CORE.
 
