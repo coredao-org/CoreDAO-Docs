@@ -55,6 +55,7 @@ const sidebars: SidebarsConfig = {
                           'Learn/core-concepts/satoshi-plus-consensus/components',
                           'Learn/core-concepts/satoshi-plus-consensus/DPoW',
                           'Learn/core-concepts/satoshi-plus-consensus/DPoS',
+                          'Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking',
                           'Learn/core-concepts/satoshi-plus-consensus/validator-election',
                           'Learn/core-concepts/satoshi-plus-consensus/rewards', 
                           'Learn/core-concepts/satoshi-plus-consensus/security',

@@ -1,9 +1,15 @@
 ---
-sidebar_label: Overview
+sidebar_label: Self Custodial Bitcoin Staking
 hide_table_of_contents: false
 sidebar_position: 2
+description: Leveraging Bitcoin Staking in Satoshi Plus
 ---
-# Self-Custodial Bitcoin Staking
+
+# Self-Custodial Bitcoin Staking (Timelocking) in Satoshi Plus
+---
+
+## Overview
+
 Bitcoin Staking (or Bitcoin Timelocking) enables Bitcoin holders to participate in Core's consensus by timelocking their Bitcoin using its native CheckLockTimeVerify (CLTV) function, without transferring custody or exposing their assets to smart contract risk.
 
 Bitcoin Staking transforms Bitcoin from a static asset into a productive one that generates yield while maintaining its security properties. By including validator selection metadata in timelock transactions, Bitcoin holders can participate in the Core validator election in order to earn CORE token rewards.

@@ -1,6 +1,6 @@
 # Core DAO Developer Documentation
 
-Welcome to the Core DAO Developer Documentation for Core blockchain! This comprehensive guide is designed to assist developers in navigating and integrating with Core blockchain effectively. Whether you are looking to build decentralized applications, participate in network governance, or simply explore the capabilities of Core blockchain, this documentation provides all the necessary tools and resources.
+Welcome to the Core Developer Documentation for the Core blockchain! This comprehensive guide is designed to assist developers in navigating and integrating with Core blockchain effectively. Whether you are looking to build decentralized applications, participate in network governance, or simply explore the capabilities of Core blockchain, this documentation provides all the necessary tools and resources.
 
 ## Commands for Local Build
 

@@ -7,33 +7,50 @@ sidebar_position: 2
 # Overview of Staking on Core 
 ---
 
-Staking is a fundamental aspect of the Core blockchain, serving as a key mechanism for network security, governance, and tokenomics. By staking their BTC or CORE tokens, participants contribute to the operational efficiency and security of the blockchain, while earning rewards for their commitment. This process involves locking up BTC or CORE tokens to support the validation of transactions and the maintenance of the network's integrity. The most bonded validator candidates of staking will become validators and produce blocks.
+Staking is a fundamental component of Core's Satoshi Plus consensus mechanism. It allows both CORE token holders and Bitcoin holders to participate in securing the network and earn rewards. Unlike traditional Proof of Stake systems, Core's unique architecture enables two distinct staking mechanisms: CORE token delegation and Bitcoin timelocking, which together with Bitcoin miner participation form the basis of validator selection and network security.
 
 ## How Staking Works on the Core Blockchain
-Staking on Core involves CORE and BTC holders delegating their tokens to validators, who are responsible for processing transactions and creating new blocks. The staking mechanism is built on a Delegated Proof of Stake (DPoS) model, where stakeholders influence the network’s consensus by selecting validators based on their staked tokens.
+Core's staking system combines multiple participation methods that contribute to validator election through a hybrid scoring mechanism. Each validator receives a hybrid score based on three factors: Bitcoin miner support (DPoW), delegated CORE tokens (DPoS), and timelocked Bitcoin.
 
-- **Validator Selection:** BTC and CORE holders can choose validators they trust and delegate their respective tokens to these validators. The weight of a validator in the consensus process is directly proportional to the amount of BTC and CORE staked with them.
-- **Staking Rewards:** Validators and their delegators, both CORE and BTC stakers, earn rewards based on their contribution to network security. These rewards are derived from transaction fees and new blocks created during the consensus process.
+### CORE Token Staking
+CORE token holders can delegate their tokens to validators without transferring ownership:
+1. Token holders select a validator to delegate to
+2. Upon delegation, tokens remain in the holder's custody but are locked for staking
+3. Validators receive the delegated stake, which strengthen their position in validator election
+4. Rewards earned by validators are shared with delegators proportionally to their stake
+
+### Bitcoin Staking
+Bitcoin holders can participate in Core's Satoshi Plus consensus through Bitcoin's native timelocking mechanism:
+1. Bitcoin holders use the CLTV function to timelock their Bitcoin for a specified period
+2. During timelock creation, they include metadata specifying their chosen validator and reward address
+3. The timelocked Bitcoin amount contributes to the selected validator's hybrid score for election
+4. As the validator produces blocks, the Bitcoin holder receives CORE rewards proportional to their timelocked amount
+5. When the timelock period ends, the Bitcoin becomes spendable again, the validator loses that delegated support, and the Bitcoin holder no longer collects CORE rewards
+
+### Validator Election
+The validator set is determined through an election process using the hybrid score:
+1. Every round, all validators receive a hybrid score based on delegated CORE tokens, timelocked Bitcoin, and Bitcoin miner support
+2. The top 27 validators with the highest hybrid scores are elected to the active validator set
+3. Elected validators produce blocks and validate transactions on the Core blockchain
+4. Rewards accumulated during each round are distributed at the end of the round
+5. The next round's validator set is determined based on updated hybrid scores
 
 ## Staking Economics
-* Core blockchain allows staking of two tokens, namely, its native token i.e. CORE and the bitcoin. BTC holders can stake their assets through the non-custodial staking fearture of Core that allows BTC holders to stake and delegate their assets without having to give up custody of them.
-* The CORE validator set is determined by its staking and delegation logic, via a staking module.
-* Cycle time for Core to distribute rewards currently set to **1 day**. Each day, **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entirety of the round. At the last block of each round, the accumulated rewards for the round are calculated and distributed.
+**Reward Sources:**
+* **Block Rewards:** New CORE tokens are minted according to a fixed 81-year schedule with a 3.61% annual reduction rate
+* **Transaction Fees:** A portion of fees from transactions on the Core blockchain contributes to the consensus reward pool
 
-## Importance of Staking for Core Ecosystem
-Staking is crucial for several reasons in the Core ecosystem:
-
-- **Network Security:** Staking BTC and CORE tokens to support validators directly contributes to the robustness of the network’s security. Validators with a higher stake are deemed more trustworthy, as more at stake disincentivizes malicious behavior.
-- **Decentralized Governance:** Staking empowers CORE holders with governance rights, allowing them to participate in important decisions that affect the network, including protocol updates and improvements.
-- **Economic Incentives:** The staking model aligns the interests of both CORE and BTC token holders with the overall health of the network. By staking their tokens, BTC and CORE, participants can earn passive income in the form of staking rewards, thus incentivizing continuous support and investment in the network.
-- **Reduced Volatility:** By locking tokens into staking contracts, the circulating supply of CORE tokens is effectively reduced, which can help mitigate price volatility and maintain the token’s value.
+## Importance of Staking
+Staking plays several critical roles in the Core ecosystem:
+* **Security:** By requiring validators to have significant support (in terms of delegated CORE, timelocked Bitcoin, and miner support), the network promotes validators with aligned incentives with the broader ecosystem
+* **Decentralization:** The three-pronged approach to validator election mitigates centralization vectors
+* **Economic Sustainability:** The staking mechanism distributes rewards to various participants, incentivizing symbiotic participation
+* **Bitcoin Utility Enhancement:** By enabling Bitcoin holders to participate in consensus while maintaining custody, Core extends Bitcoin's utility beyond simple value storage
 
 ## Staking Dynamics and Strategies
 Participants in the Core network can adopt various staking strategies to maximize their returns and influence on the network:
-
-- **Long-term Staking:** Committing their assets, BTC or CORE, for longer durations typically yields higher rewards, as it provides more stability to the network.
-- **Validator Performance:** Choosing high-performing validators is crucial, as rewards are partly based on the validator's effectiveness in managing the network and creating blocks.
-- **Risk Management:** Diversifying the delegation across multiple validators can help mitigate risks associated with the potential underperformance or failure of a single validator.
+- **Validator Performance:** Delegating to high-performing validators is crucial, as rewards are not accrued by delegators to inactive or malicious validators.
+- **Risk Management:** Diversifying the delegation across multiple validators can help mitigate risks associated with the potential failure of a single validator.
 
 ## Conclusion
-Staking is a critical component of the Core ecosystem, offering a compelling blend of rewards, governance participation, and enhanced network security. By engaging in staking, BTC and CORE token holders not only help secure the network and drive its governance but also stand to gain from the economic activities generated within the blockchain. As Core continues to evolve, staking remains a pivotal activity, underscoring the decentralized and participant-driven nature of the blockchain.
+Core's staking architecture represents a significant innovation in consensus design by bridging Bitcoin and modern staking mechanisms. By enabling both CORE and Bitcoin holders to participate in consensus, Core creates a robust, multi-layered security model that aligns incentives across different participant groups.

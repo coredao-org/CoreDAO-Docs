@@ -7,15 +7,15 @@ sidebar_position: 2
 # How Dual Staking Works
 ---
 
-Core operates on the **Satoshi Plus consensus**, integrating three delegation sources to secure the network:  
+Core operates on **Satoshi Plus consensus**, integrating three delegation sources to secure the network:  
 
 - **Delegated Proof of Work (DPoW):** Bitcoin miners delegate hash power to Core validators.  
 - **Delegated Proof of Stake (DPoS):** CORE token holders delegate their tokens to validators.  
-- **Non-Custodial BTC Staking:** BTC holders stake directly on the Bitcoin network and delegate their stake to Core validators.  
+- **Self-Custodial BTC Staking:** BTC holders stake directly on the Bitcoin network and delegate their stake to Core validators.  
 
-**Dual Staking**, an enhancement to Core’s **Non-Custodial BTC Staking**, enables participants to maximize rewards by staking both **BTC and CORE** simultaneously. This strategy strengthens the Core network while unlocking higher Bitcoin staking yields based on predefined CORE staking thresholds.  
+**Dual Staking**, an enhancement to Core’s **Self-Custodial BTC Staking**, enables participants to maximize rewards by staking both **BTC and CORE** simultaneously. This strategy strengthens the Core network while unlocking higher Bitcoin staking yields based on predefined CORE staking thresholds. 
 
-By meeting specific **CORE-to-BTC staking ratios**, users gain **boosted Bitcoin staking rewards**, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly.  
+By meeting specific **CORE-to-BTC staking ratios**, users gain **boosted Bitcoin staking rewards**, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly. 
 
 <p align="center">
 <img width="1024" alt="Dual Staking Tiers (8)" src="https://github.com/user-attachments/assets/6ce41ca4-fc7e-476a-814c-4f56665b3c48" />

@@ -16,7 +16,7 @@ In the context of the Core blockchain, delegation is a fundamental mechanism tha
 
     * **Purpose:** This type of delegation allows BTC and CORE token holders to support specific validators by delegating their tokens to them. In return, validators use the aggregated power to secure the network, validate transactions, and produce blocks.
     * **Benefits:** Delegators share in the rewards earned by their chosen validators, receiving a portion of the transaction fees and block rewards in proportion to their stake.
-    * **How to Delegate BTC:** Core allows BTC holders to delegate their assets to validators on Core through the Non-Custodial BTC Staking, which allows that to not only earn staking rewards but also maintian comlete ownership of their assets. For more details, refer to the detailed guide on [how to delegate BTC on Core](../Learn/products/btc-staking/stake-btc-guide.md).
+    * **How to Delegate BTC:** Core allows BTC holders to delegate their assets to validators on Core through Self-Custodial BTC Staking, which allows that to not only earn staking rewards but also maintian comlete ownership of their assets. For more details, refer to the detailed guide on [how to delegate BTC on Core](../Learn/products/btc-staking/stake-btc-guide.md).
     * **How to Delegate CORE:** Core allows CORE holders to delegate their assets to validators on Core through a simple delegation mechanism, this allows them to participate in the Core netowrk's security and governance. For more details, refer to the detailed guide on [how to delegate CORE](./delegating-core.md).
 
 2. **Hash Power Delegation from BTC Miners:**

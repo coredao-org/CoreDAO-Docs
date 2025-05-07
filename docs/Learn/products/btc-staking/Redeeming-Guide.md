@@ -6,18 +6,19 @@ sidebar_position: 2
 
 # Redeem Staked Bitcoin or Claim CORE Rewards
 
-Core offers Bitcoin holders to stake their assets onto the Core blockchain to earn passive income in the form of CORE tokens. To learn how to stake your Bitcoin assets onto Core and earn rewards, follow our detailed [guide](./stake-btc-guide.md). After you have succesfully staked your Bitcoin on the Core blockchain, next up is to learn to claim your CORE rewards or redeem your staked Bitcoin. This detailed guide will be utilized when you see ‘**Redeem**’ appear under ‘**Action**’ on the delegated validator you chose previously or ‘**Claim**’ next to ‘**Delegated Hash & Core Rewards**’ and or ‘**Bitcoin Staking Rewards’**.
+Core enables Bitcoin holders to earn CORE token rewards by timelocking their Bitcoin on the Bitcoin blockchain. For instructions on how to participate in Bitcoin timelocking and earn rewards, follow our detailed [guide](./stake-btc-guide.md).
+After you've successfully created a Bitcoin timelock transaction, you'll want to know how to claim your earned CORE rewards and manage your timelocked Bitcoin. This guide explains the process when you see either the 'Redeem' option under 'Action' for your chosen validator, or the 'Claim' button next to 'Delegated Hash & Core Rewards' or 'Bitcoin Staking Rewards' in the interface.
 
 ## Reward Distribution Information
 
 * **Distribution of Rewards:** CORE token rewards are distributed to stakers as incentives for their contribution to network security and governance.
-* **Reward Source:** Rewards are sourced from the consensus reward pool shared between participants of Core's dual mechanisms: dPoW (Bitcoin miners) and dPoS (Bitcoin and CORE stakers).
+* **Reward Source:** Rewards are sourced from the consensus reward pool.
 
 ## Redeem an Expired Staked Bitcoin
 
 If your staking period has expired, redeem your staked Bitcoin assets from either Unisat or Xverse wallet(s). You must use the same wallet address during the staking process to redeem your expired staked Bitcoin.
 
-1. From any CORE screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
+1. From any Core screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
 
 <p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
@@ -84,4 +85,4 @@ To be eligible to earn rewards, it is required to complete a full staking round 
 
 #### Conclusion
 
-By following this guide, you have sucecesfulyl learned how to redeem your staked Bitcoin from the Core blockchain, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Non-Custodial Bitcoin Staking on Core!
+By following this guide, you have sucecesfulyl learned how to redeem your staked Bitcoin from the Core blockchain, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
