@@ -10,14 +10,14 @@ sidebar_position: 2
 
 ## La Gran Idea
 
-Bitcoin es el activo digital más grande del mundo, pero sigue estando financieramente inactivo: se guarda en bóvedas o se utiliza como garantía sin generar rendimiento. Las instituciones tradicionalmente se han enfrentado a un dilema:
+Bitcoin is the world’s largest digital asset, yet it remains financially idle, held in vaults or posted as collateral without generating yield. Las instituciones tradicionalmente se han enfrentado a un dilema:
 
 - **TENER BTC** como reserva de valor, dejándolo improductivo.
 - **Prestar BTC**, asumiendo riesgos de la contraparte, falta de liquidez y complejidad operativa.
 
 **lstBTC cambia eso.**
 
-Por primera vez, las instituciones pueden obtener rendimiento denominado en BTC **sin renunciar a la custodia, asumir riesgos de préstamo ni interrumpir sus flujos de trabajo**. Impulsado por el **Dual Staking de Core**, con gestión de riesgos de **Maple Finance** y asegurado por **custodios como BitGo, Hex Trust y Copper**, lstBTC transforma a Bitcoin en un **activo que genera rendimiento con total liquidez y seguridad**.
+Institutions can earn BTC-denominated yield **for the first time without relinquishing custody, lending risk, or disrupting workflows**. Powered by Core’s Dual Staking, risk-managed by **Maple Finance**, and secured by custodians like **BitGo**, **Hex Trust**, and **Copper**, lstBTC transforms Bitcoin into a **yield-bearing asset with full liquidity and security**.
 
 <p align="center" zoom="200%">
 ![lstBTC_banner](../../../../static/img/lstbtc/lstBTC_banner.png)
@@ -44,7 +44,7 @@ En su lugar, lstBTC:
 Para los usuarios institucionales, lstBTC es **simple y fluido**:
 
 1. **Deposita BTC** con un custodio de confianza (BitGo, Copper o Hex Trust).
-2. **Recibe lstBTC 1:1**, que acumula rendimiento denominado en BTC a diario.
+2. **Receive lstBTC**, which accrues BTC-denominated yield daily.
 3. **Usa lstBTC como BTC**—comercializa, transfiérelo o utilízalo como colateral.
 4. **Canjea lstBTC por BTC + Rendimiento** en cualquier momento a través del custodio original.
 
@@ -58,7 +58,7 @@ El rendimiento de lstBTC es impulsado por el **mecanismo de Dual Staking de Core
 
 - **BTC está colateralizado** mediante un préstamo con una baja **relación préstamo a valor (LTV o loan-to-value) del 10%** para comprar CORE.
 - **Maple Finance** gestiona el riesgo utilizando estrategias de opciones para cubrirse contra las fluctuaciones del precio de CORE.
-- **CORE y BTC están en Dual-Staking** en la blockchain de Core, generando recompensas por bloques y comisiones.
+- **CORE and BTC are Dual-Staked** on Core’s blockchain, where block rewards and fees are earned.
 - **El rendimiento se convierte en BTC**, asegurando que **todos los rendimientos estén denominados en BTC**.
 
 **Administración del Riesgo**:
@@ -89,13 +89,13 @@ A diferencia del **préstamo de BTC** o el **BTC envuelto**, lstBTC es la **prim
 - Sin Custodia
 - Rendimiento Nativo de BTC (Sin Riesgo de Contraparte)
 
-| Característica             | lstBTC (Core) ✅ | Préstamo de BTC ❌        | BTC Envuelto ❌                    |
-| -------------------------- | ---------------------------------- | ------------------------ | --------------------------------- |
-| **Dividendo en BTC**       | **3-6%+ APR**                      | Préstamo riesgoso        | Riesgo al puentear                |
-| **Liquidez**               | **Completamente líquido**          | Bloqueado en préstamos   | Un poco líquido                   |
-| **Riesgo de Custodia**     | **Mismo setup de custodia**        | Requiere contraparte     | Riesgo de acuñación centralizada  |
-| **Utilidad del colateral** | **Aceptado en exchanges**          | Uso limitado             | Uso moderado                      |
-| **Seguridad**              | **Staking sin custodia**           | Riesgo de incumplimiento | Riesgo en el contrato inteligente |
+| Característica             | lstBTC (Core) | BTC Lending              | Wrapped BTC                       |
+| -------------------------- | -------------------------------- | ------------------------ | --------------------------------- |
+| **Dividendo en BTC**       | **3-6%+ APR**                    | Préstamo riesgoso        | Riesgo al puentear                |
+| **Liquidez**               | **Completamente líquido**        | Bloqueado en préstamos   | Un poco líquido                   |
+| **Riesgo de Custodia**     | **Mismo setup de custodia**      | Requiere contraparte     | Riesgo de acuñación centralizada  |
+| **Utilidad del colateral** | **Aceptado en exchanges**        | Uso limitado             | Uso moderado                      |
+| **Seguridad**              | **Staking sin custodia**         | Riesgo de incumplimiento | Riesgo en el contrato inteligente |
 
 ## Socios de lanzamiento y credibilidad institucional
 
