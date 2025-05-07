@@ -8,112 +8,99 @@ sidebar_position: 2
 
 ---
 
-Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser leur potentiel d'actifs avec plus de flexibilité et d'efficacité.
-
-## Principes de conception
-
-Les principaux principes de conception du liquid staking via stCORE sur Core sont les suivants:
-
-- Simple, avec peu ou aucune modification des protocoles blockchain existants.
-- Décentralisé, sans compromettre la sécurité du réseau.
-- Facile à utiliser du point de vue des utilisateurs.
+Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. This initiative allows token holders to maximize the potential of their assets with greater flexibility and efficiency.
 
 ## Résumé de la conception
 
-Après avoir étudié différents projets de LST (Liquid Staking Token) comme LiDO et Kava, et en tenant compte des caractéristiques uniques de la blockchain Core, le liquid staking sous forme de stCORE est conçu comme suit:
+Liquid staking via stCORE is designed as follows:
 
-- Introduction d'un nouveau module appelé "Earn" avec un token standard ERC-20, **stCORE**
-- Les utilisateurs interagissent avec le module `Earn` pour créer/racheter/retirer leurs actifs
-- Le module `Earn` interagit avec les contrats de la plateforme Core tels que `PledgeAgent` (le contrat de staking) et `CandidateHub`
-- La valeur de tous les revenus du module `Earn` sera reflétée dans la valeur du token **stCORE**
-- Le ratio de conversion **CORE/stCORE** sera mis à jour quotidiennement pour s'adapter au mécanisme de tour de la blockchain Core
-- D'autres méthodes sont également introduites pour permettre à l'opérateur du système de rééquilibrer et d'optimiser le staking sur l'ensemble des validateurs.
+- A new module called `Earn` is introduced alongside a standard ERC-20 token, **stCORE**
+- Users interact with the `Earn` module to mint, redeem, and withdraw assets
+- The `Earn` module interacts with Core platform contracts such as `PledgeAgent` (staking) and `CandidateHub`
+- All value accrued by the `Earn` module is reflected in the **stCORE** token value
+- The **CORE/stCORE** conversion ratio is updated **daily**
+- Additional methods are provided to allow the system operator to rebalance and optimize staking across validators
 
 ## Perspective utilisateur
 
 ### Création
 
-Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), ils peuvent créer du stCORE au même ratio de conversion. Par exemple Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
+Les utilisateurs peuvent créer du stCORE en utilisant du CORE. At any given time during the day (UTC), the conversion ratio remains fixed. For example, if the ratio is 1:1.1, users can mint 100 stCORE using 110 CORE.
 
 ### Rachat
 
-Le système est conçu de manière à ce que les utilisateurs puissent toujours racheter la quantité de tokens stCORE qu'ils possèdent. Par exemple Par exemple, si le ratio de conversion est de 1:1,1, alors ils peuvent racheter 100 stCORE et recevoir 110 CORE en retour.
+Users can redeem any amount of stCORE they hold. For example, if the conversion ratio is 1:1.1, users can redeem 100 stCORE to receive 110 CORE.
 
 :::note
-Il existe une période de rachat par défaut de **7 jours**. Une fois que les utilisateurs demandent un rachat, ils doivent attendre 7 jours avant de pouvoir retirer leurs tokens CORE dans leur portefeuille.
+There is a redemption period of **7 days**. Once users initiate a redemption, they must wait **7 days** before withdrawing the CORE tokens to their wallet.
 :::
 
-## Cas d'utilisation communs ERC-20
+## Common ERC-20 Use Cases
 
-Le stCORE étant un token ERC-20 standard, les utilisateurs peuvent effectuer toutes les actions éligibles à un token ERC-20, telles que le transfert, la fourniture de liquidités sur des DEX, l'échange, etc.
+stCORE is a standard ERC-20 token and can be used in all typical ERC-20 scenarios: transfers, liquidity provision on DEXs, swaps, and more.
 
 ## Implémentations
 
-L'implémentation du module `Earn` de liquid staking se trouve [ici](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
+The implementation of the `Earn` module for liquid staking can be found [here](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
+User methods in the `Earn` module include:
 
-- **mint():** créer du stCORE en utilisant du CORE
-- **redeem():** racheter du stCORE et récupérer du CORE
-- **withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
+- **`mint()`:** Mint stCORE using CORE
+- **`redeem()`:** Redeem stCORE for CORE
+- **`withdraw()`:** Withdraw CORE to the wallet after the redemption period
 
-Les méthodes opérateur dans le module `Earn` incluent :
+Operator methods in the `Earn` module include:
 
-- **afterTurnRound():** où l'autocompounding (intérêts composés automatiques) est mis en œuvre
-- **rebalance():** équilibrer les validateurs les plus/moins stakés
-- **manualRebalance():** transférer manuellement le staking entre deux validateurs
+- **`afterTurnRound()`:** Implements autocompounding
+- **`rebalance()`:** Balances staking between the most and least staked validators
+- **`manualRebalance()`:** Manually transfers staking between validators
 
-### Sélection des validateurs lors de création/rachat
+### Validator Selection on Mint/Redeem
 
-Notez que chaque fois qu'une création ou un rachat a lieu, le contrat `Earn` délègue des tokens CORE au `PledgeAgent` ou annule la délégation depuis `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
+Whenever a `mint` happens, the `Earn` contract delegates CORE to `PledgeAgent`. While when a `redeem` happens, the `Earn` contract undelegates CORE from `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
 
-Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
+When users mint, they must specify a validator address to stake the CORE with. This ensures equal treatment of all validator candidates, whether elected or queued. For a smoother experience, the official frontend may randomly select a validator on behalf of the user.
 
-Lors d'un redeem, le contrat `Earn` sélectionne les validateurs de manière aléatoire via -  `_randomIndex()`. Un index est choisi aléatoirement et utilisé comme point de départ pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
+During redemption, the `Earn` contract selects validators randomly using `_randomIndex()`. This random index determines where in the validator list the system starts undelegating CORE until the requested amount is reached.
 
-### Équilibre des validateurs sur les montants stakés
+### Keeping Validators Balanced in Stake Amounts
 
-Chaque fois que
+Validator distribution works as follows:
 
-- Une création a lieu, l'utilisateur peut choisir librement un validateur
-- Un rachat a lieu, le système sélectionne les validateurs de manière aléatoire
+- When minting, users choose the validator
+- When redeeming, the system randomly selects validators
 
-Ce mécanisme garantit que les tokens CORE détenus par le module Earn sont répartis de manière relativement équilibrée entre les validateurs.
+This system naturally balances staking across validators. However, large mint or redeem operations can disrupt this balance. To correct such imbalances, two rebalancing methods are available:
 
-Cependant, des déséquilibres peuvent survenir en raison d'opérations spécifiques comme une création ou un rachat de grande valeur. Pour ces cas, des méthodes de rééquilibrage ont été introduites.
-
-- **rebalance():** Le système sélectionne les validateurs avec les montants les plus élevés et les plus faibles de staking, et les égalise si l'écart dépasse un seuil prédéfini.
-- **manualRebalance():** L'opérateur transfère manuellement le staking d'un validateur à un autre.
+- **`rebalance()`:** Automatically balances the validator with the most staked CORE and the one with the least, if the difference exceeds a set threshold
+- **`manualRebalance()`:** Allows the operator to manually redistribute stake between validators
 
 ### Calcul du ratio de conversion stCORE/CORE
 
-Après chaque tour, le module `Earn` récupère les récompenses de chaque validateur et les délègue à nouveau. C'est ainsi que l'autocompounding (intérêts composés automatiques) est mis en œuvre en interne. Pendant cette période, le système déplace également le staking des validateurs inactifs ou en prison vers des validateurs actifs pour améliorer le rendement global.
+Each round, after the turn round completes, the `Earn` module:
 
-Après cela, le ratio de conversion stCORE/CORE est mis à jour. La formule est la suivante
+- Collects rewards from validators
+- Re-delegates rewards to the same validators (autocompounding)
+- Moves stake from jailed/inactive validators to active ones to maximize APR
+
+Then, the conversion ratio is recalculated using the formula:
 
 ```
     Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply() 
 ```
 
-Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour.
-
-Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
+Since **rewards claiming only happens once per day**, the conversion rate remains same for the entire day until the next turn round happens. The logics for this are implemented in the `afterTurnRound()` method.
 
 ### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
-Il est important de noter que dans le contrat `PledgeAgent` (le contrat de staking), lorsque les utilisateurs délèguent
+In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** >= 1.
 
-- Le montant de CORE **doit** être supérieur ou égal à 1
-
-Et lorsqu'ils annulent une délégation
+Whereas, upon  undelegation
 
 - Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
 - Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
 
-Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
+When handling `delegate` and `undelegate` internally, the `Earn` module must also follow the same restrictions.
 
-L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
+The implementation of these requriements can be found in `_undelegateWithStrategy()` method.
 
-Lors de l'appel à la méthode `mint()`, l'utilisateur doit fournir une adresse de validateur à laquelle les tokens CORE seront délégués. Cela vise à traiter tous les candidats validateurs de manière égale, qu'ils soient déjà élus ou en attente. Toutefois, pour améliorer l'expérience utilisateur, l'interface officielle peut choisir un validateur approprié de manière aléatoire et le rendre invisible pour les utilisateurs.
-
-Lors de la récupération, le contrat Earn choisit des validateurs de manière aléatoire grâce à `_randomIndex()`, un index aléatoire est sélectionné pour parcourir le tableau des validateurs jusqu'à ce que suffisamment de tokens CORE soient annulés.
