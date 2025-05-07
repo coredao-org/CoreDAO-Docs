@@ -4,13 +4,13 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Diseño de participación de Bitcoin sin custodia
+# Self-Custodial Bitcoin Staking Design
 
 ---
 
 ## Fondo
 
-La metodología para integrar el staking de Bitcoin se centra en el [tiempo de bloqueo CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify). El bloqueo de tiempo `OP_CHECKLOCKTIMEVERIFY` (CLTV) es un código de operación específico utilizado en el lenguaje de programación de Bitcoin que permite crear condiciones basadas en el tiempo o la altura del bloque antes de que se puedan gastar bitcoins desde el resultado de una transacción. Esto proporciona una manera de crear salidas con bloqueo de tiempo, lo que significa que no se pueden gastar hasta que se cumpla una determinada condición relacionada con el tiempo o la altura del bloque.
+The methodology for integrating Bitcoin staking centers on Bitcoin's native [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE`. CLTV is a Bitcoin script operation that restricts transaction outputs from being spent until a specified absolute time or block height is reached. By creating a transaction with a CLTV script, Bitcoin holders can make their coins temporarily unspendable while including metadata that allows Core to recognize their participation in consensus. This mechanism leverages Bitcoin's existing scripting capabilities without requiring any modification to the Bitcoin protocol.
 
 <p align="center">
 ![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
@@ -18,16 +18,20 @@ La metodología para integrar el staking de Bitcoin se centra en el [tiempo de b
 
 ### Requisitos para la validez de las transacciones {#requirements-for-transaction-validity}
 
-- Para que una transacción de Bitcoin se considere válida y sea recogida por los Relayers, los usuarios deben asegurarse de que la transacción se envíe a su dirección y, utilizando la función de bloqueo de tiempo nativa de Bitcoin, especificar el monto de bloqueo que se pretende delegar al validador en la cadena de bloques Core, como salida de la transacción.
-- La transacción también debe contener una salida `op_return` que especifique
-  - La transacción también debe contener una salida `op_return` que especifique.
-  - La dirección a la que el staker desea que se envíen sus recompensas en tokens CORE.
-- Para ser elegible para el staking en Core, se aplican requisitos mínimos en cuanto a la cantidad de BTC con la que se puede hacer staking, dependiendo del método de staking. Si se utiliza la [interfaz web oficial de staking](https://stake.coredao.org/staking), los usuarios deben hacer staking de al menos 0.01 BTC (excluyendo las comisiones de transacción). No hay un requisito mínimo al hacer staking a través del script.
-- La duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
+- To create a valid timelock transaction that Core relayers will recognize, users must:
+    - Create a Bitcoin transaction where the output is sent to their own address using Bitcoin's native CLTV timelock feature
+    - Specify the amount of Bitcoin they wish to timelock for delegation to a Core validator
+    - Include an `OP_RETURN` output containing two critical pieces of information:
+        - The address of the Core validator they wish to support
+        - The Core address where they want to receive CORE token rewards
+- Minimum Requirements:
+    - Amount: When using the [official staking interface](https://stake.coredao.org/staking), a minimum of 0.01 BTC must be timelocked (excluding transaction fees)
+    - Duration: The minimum timelock period is 24 hours, though the Core staking interface defaults to a recommended minimum of 5 days for optimal participation
+    - Technical implementation: There are no minimum requirements when creating timelock transactions manually, though the same parameters are recommended for effective participation
 
 ### Flujo de trabajo de transacciones
 
-Las operaciones de staking de Bitcoin sin custodia se llevan a cabo en dos cadenas de bloques independientes: Bitcoin y Core. El siguiente diagrama de flujo ilustra el flujo de trabajo para que los poseedores de Bitcoin ganen recompensas de staking a través del staking de Bitcoin sin custodia de Core.
+Self-Custodial Bitcoin Staking operations are conducted on two separate blockchains: Bitcoin and Core. The following flowchart illustrates the workflow for Bitcoin holders to earn staking rewards through Core’s Self-Custodial Bitcoin Staking.
 
 <p align="center">
 ![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-workflow.png)
@@ -65,11 +69,11 @@ Los UTXO (Bitcoins) bloqueados se pueden gastar usando el script de canje cuando
 
 - La construcción de la salida tipo `P2SH` es la siguiente
 
-  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
+    - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
 - La construcción de la salida tipo `P2WSH` es la siguiente
 
-  - `OP_0 <SHA256(RedeemScript)>`
+    - `OP_0 <SHA256(RedeemScript)>`
 
 ### Canjear Script
 
@@ -82,7 +86,7 @@ El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuaci�
 - Al utilizar la dirección multifirma `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
 
 :::note
-Para ser elegible para el Staking Sin Custodia de BTC en Core, los requisitos mínimos de staking dependen del método elegido. Si se utiliza la [interfaz web del sitio oficial](https://stake.coredao.org/staking), los usuarios deben hacer staking de al menos **0.01 BTC** (excluyendo las comisiones de transacción). **No** hay un requisito mínimo al hacer staking a través del script. Además, la duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
+To be eligible for Self-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website interface](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). **No** hay un requisito mínimo al hacer staking a través del script. Además, la duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
 :::
 
 ## OP_RETURN Salida
@@ -114,7 +118,7 @@ Debe estar disponible RedeemScript o Timelock. Esto permite a los retransmisores
 
 ## Papel de los retransmisores
 
-En sentido estricto, el proceso de staking de Bitcoin sin custodia consta de dos pasos
+In a strict sense, the Self-Custodial Bitcoin Staking process consists of two steps
 
 1. Participación en la red Bitcoin
 2. Envíe la transacción de staking de Bitcoin confirmada a Core
@@ -123,8 +127,8 @@ Para que todo el proceso sea más cómodo, Core introduce el rol de retransmisor
 
 - Si el `RedeemScript` es corto, coloque el RedeemScript completo al final de la salida `OP_RETURN`. Por ejemplo, un «RedeemScript» se construye utilizando un hash de clave pública, como se muestra en el ejemplo a continuación.
 - Establezca la dirección de recepción de la transacción de staking como propia para que los retransmisores puedan extraer información útil de la entrada de la transacción y componer el `RedeemScript` por sí mismos. P.ej.
-  - Si es una dirección normal, la `pubkey` o el `pubkey hash` debe configurarse como la clave pública correspondiente de la entrada al construir el `RedeemScript`.
-  - Si se trata de una dirección multifirma, la clave pública de la dirección multifirma correspondiente debe configurarse al construir el `RedeemScript`.
+    - Si es una dirección normal, la `pubkey` o el `pubkey hash` debe configurarse como la clave pública correspondiente de la entrada al construir el `RedeemScript`.
+    - Si se trata de una dirección multifirma, la clave pública de la dirección multifirma correspondiente debe configurarse al construir el `RedeemScript`.
 
 ## Ejemplos de transacciones
 
