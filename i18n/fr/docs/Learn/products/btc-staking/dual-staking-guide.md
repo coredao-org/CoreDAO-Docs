@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Dual Staking sur Core
 
-Ce guide utilisateur est conçu pour vous accompagner à travers le processus de Dual Staking sur Core. Le Staking de Bitcoin Non-Custodial de Core permet aux utilisateurs de gagner des rendements en CORE en stakant leurs Bitcoins et en les déléguant à des validateurs sur Core. Le Dual Staking débloque des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE pour améliorer davantage la génération de rendement du staking de Bitcoin Non-Custodial. Plongeons dans le fonctionnement et voyons comment vous pouvez commencer à staker dès aujourd'hui.
+Ce guide utilisateur est conçu pour vous accompagner à travers le processus de Dual Staking sur Core. Core’s Self-Custodial Bitcoin Staking allows users to earn yield in CORE by staking their Bitcoins and delegating them to validators on Core. Dual Staking unlocks higher yield tiers by staking Bitcoin and CORE to enhance yield generation from Self-Custodial Bitcoin staking further. Plongeons dans le fonctionnement et voyons comment vous pouvez commencer à staker dès aujourd'hui.
 
 ## Démarrer avec le staking double
 
@@ -46,9 +46,9 @@ Les points suivants sont des éléments clés auxquels les utilisateurs doivent 
 
 ## Guide Pas à Pas du Dual Staking
 
-Le staking de Bitcoin Non-Custodial de Core introduit une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin gagnent des rendements grâce au staking de Bitcoin. Les utilisateurs peuvent staker leur Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps et participer activement au mécanisme de consensus de la blockchain Core pendant le staking.
+Core’s Self-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn yield through Bitcoin staking. Les utilisateurs peuvent staker leur Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps et participer activement au mécanisme de consensus de la blockchain Core pendant le staking.
 
-Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, permettant aux utilisateurs de débloquer des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE. Des ratios de staking CORE:BTC plus élevés débloquent des niveaux de rendement plus élevés pour le staking de Bitcoin. Pour profiter du Dual Staking et gagner des taux de récompense plus élevés pour le staking de BTC, suivez les étapes détaillées ci-dessous.
+Dual staking is an enhancement to Core’s Self-custodial BTC staking, allowing users to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Des ratios de staking CORE:BTC plus élevés débloquent des niveaux de rendement plus élevés pour le staking de Bitcoin. Pour profiter du Dual Staking et gagner des taux de récompense plus élevés pour le staking de BTC, suivez les étapes détaillées ci-dessous.
 
 ### Connexion des Portefeuilles Bitcoin et Core
 
