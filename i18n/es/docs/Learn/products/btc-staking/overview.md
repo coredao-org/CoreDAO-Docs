@@ -4,27 +4,36 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Staking No Custodial de Bitcoin
+# Self-Custodial Bitcoin Staking
 
-Más de [1.5 billones de dólares](https://www.coingecko.com/en/coins/bitcoin) en Bitcoin han permanecido inactivos, sin generar rendimiento nativo durante toda su vida útil. Dado que Bitcoin es una blockchain Proof-of-Work, sus poseedores no reciben los beneficios de rendimiento nativos de las cadenas Proof-of-Stake. Sin embargo, Core ha entregado beneficios de Proof-of-Stake a la definitiva blockchain Proof-of-Work. **El Staking No Custodial de Bitcoin** mejora sustancialmente el modelo de seguridad de Core, mientras desbloquea el rendimiento nativo de Bitcoin por primera vez. Este enfoque innovador permite que los poseedores de Bitcoin participen y ganen en Satoshi Plus sin renunciar a la custodia de su Bitcoin, integrando el poder económico de Bitcoin con las avanzadas funcionalidades de blockchain de Core.
+Bitcoin Staking (or Bitcoin Timelocking) enables Bitcoin holders to participate in Core's consensus by timelocking their Bitcoin using its native CheckLockTimeVerify (CLTV) function, without transferring custody or exposing their assets to smart contract risk.
 
-## **Visión General**
+Bitcoin Staking transforms Bitcoin from a static asset into a productive one that generates yield while maintaining its security properties. By including validator selection metadata in timelock transactions, Bitcoin holders can participate in the Core validator election in order to earn CORE token rewards.
 
-El Staking No Custodial de Bitcoin de Core permite que los poseedores de Bitcoin ganen tokens CORE sin renunciar al control de sus claves privadas ni transferir su Bitcoin a un tercero, contrato inteligente externo o billetera de computación multipartita (MPC). El Staking No Custodial de Bitcoin permite que los poseedores de Bitcoin bloqueen su Bitcoin de forma segura de manera nativa en la red de Bitcoin. Al mismo tiempo, los stakers pueden contribuir activamente a la elección de validadores en la red Core, fortaleciendo su seguridad y descentralización a través del mecanismo de consenso Satoshi Plus. Este enfoque asegura que el Bitcoin siga bajo el control del usuario mientras le permite apoyar la seguridad de la red y ganar recompensas.
+## How Bitcoin Staking Works in Satoshi Plus
 
-## **Razonamiento detrás del Staking No Custodial de Bitcoin de Core**
+Bitcoin's native protocol includes a CLTV function that allows users to make Bitcoin unspendable for a specified period. Core leverages this mechanism to enable Bitcoin holders to participate in consensus while maintaining complete control of their assets.
 
-La blockchain Core ofrece el Staking No Custodial de Bitcoin como un movimiento estratégico para mejorar su descentralización y seguridad. Al incorporar Bitcoin, que tiene una red robusta y bien establecida, en su mecanismo de consenso, Core puede aprovechar la descentralización y las características de seguridad de Bitcoin. A través del Staking No Custodial de Bitcoin, Core aprovecha la seguridad de Bitcoin y proporciona las primeras oportunidades de generación de rendimiento nativo no custodial para la comunidad de Bitcoin. Participar en el Staking No Custodial de Bitcoin ofrece un incentivo adicional: ganar tokens CORE. Esta es una forma para que los poseedores de Bitcoin retengan la custodia completa de sus activos de Bitcoin sin transferirlos a otro lugar y reciban recompensas adicionales en tokens CORE.
+1. **Creating Timelocks:** Bitcoin holders use the CLTV function to timelock their Bitcoin on the Bitcoin blockchain for a chosen period (minimum 24 hours), making those coins temporarily unspendable.
 
-## **Ventajas del Staking No Custodial de Bitcoin**
+2. **Including Metadata:** During timelock creation, holders include metadata specifying their chosen Core validator and a Core address to receive CORE rewards.
 
-1. **Sin riesgo para el BTC principal:** Los usuarios pueden hacer staking de sus bitcoins sin involucrar nuevas suposiciones de confianza, riesgo de slashing o riesgos del protocolo. Su BTC principal permanece bajo su custodia y en la blockchain de Bitcoin, aprovechando la alta seguridad y confianza que ya proporciona la robusta infraestructura de Bitcoin.
-2. **Autocustodia y 100% seguro:** Los usuarios solo necesitan enviarse a sí mismos la transacción de staking en la red de Bitcoin, y los activos de Bitcoin _NO_ necesitan abandonar la red de Bitcoin.
-3. **La Tasa Libre de Riesgo de Bitcoin:** Al introducir cero nuevas suposiciones de confianza, el staking de Bitcoin de Core desbloquea un rendimiento sin riesgo para los poseedores de Bitcoin.
-4. **Natividad de Bitcoin:** Usando los bloqueos de tiempo absolutos nativos de Bitcoin, los stakers de Bitcoin retienen la custodia total de su Bitcoin.
-5. **Rendimiento Sostenible:** Este mecanismo transforma a Bitcoin en un activo generador de rendimiento, donde los stakers pueden ganar una porción de las emisiones fijas y las tarifas de gas de Core en tokens CORE por asegurar la red de Core.
-6. **Integración en la Red:** El Staking No Custodial de Bitcoin integra a los poseedores de Bitcoin en el mecanismo de consenso de Core, contribuyendo a la seguridad y descentralización de la red.
+3. **Validator Support:** The amount of Bitcoin timelocked in support of a validator influences their position in Core's validator election, impacting their chances of being selected to produce blocks.
 
-## **Conclusión**
+4. **Relayer Monitoring:** Core's relayer network monitors the Bitcoin blockchain for timelock transactions that include valid consensus metadata.
 
-El Staking No Custodial de Bitcoin transforma el activo de Bitcoin de un almacén de valor pasivo a un activo activo, generador de rendimiento y que proporciona seguridad. El staking de Bitcoin permite a los poseedores de Bitcoin ganar la Tasa de Riesgo Libre de Bitcoin mientras contribuyen a la seguridad de una plataforma de contratos inteligentes diseñada para desbloquear más casos de uso de los activos de Bitcoin.
+5. **Reward Distribution:** Elected validators secure the Core blockchain by producing blocks and validating transactions. Based on validator reliability and the amount of timelocked Bitcoin delegated in their support, the Core protocol distributes CORE token rewards to the specified Core addresses of Bitcoin stakers.
+
+6. **Timelock Expiration:** When the timelock period ends, the Bitcoin becomes spendable again, and participation in Core consensus ceases. Any earned CORE rewards remain in the holder's Core address, but no additional rewards will be earned unless a new timelock is created.
+
+## Importance of Bitcoin Staking in Satoshi Plus
+
+- **Bitcoin Activation:** Transforms Bitcoin from a static asset into a productive one that generates yield without compromising security or requiring conversion.
+
+- **Security Contribution:** Leverages Bitcoin's immense value to strengthen Core's security model without requiring Bitcoin to leave its native blockchain.
+
+- **Custody Preservation:** Enables Bitcoin holders to participate in Core's consensus while maintaining complete self-custody of their assets.
+
+#### **Conclusión**
+
+Bitcoin Staking enables Bitcoin holders to earn yield by contributing to Core's security while maintaining complete custody of their assets. As an integral component of Satoshi Plus consensus, it works in concert with DPoW and DPoS to create a robust, multi-layered security framework. This mechanism aligns incentives between Bitcoin holders and the Core network, transforming Bitcoin from a static store of value into a productive asset without requiring it to leave its native blockchain.
