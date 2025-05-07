@@ -6,18 +6,19 @@ sidebar_position: 2
 
 # Redimir Bitcoin Apostado o Reclamar Recompensas CORE
 
-Core ofrece a los poseedores de Bitcoin la posibilidad de hacer staking de sus activos en la blockchain de Core para ganar ingresos pasivos en forma de tokens CORE. Para aprender cómo apostar tus activos de Bitcoin en Core y ganar recompensas, sigue nuestra detallada [guía](./stake-btc-guide.md). Después de haber apostado exitosamente tu Bitcoin en la blockchain de Core, el siguiente paso es aprender a reclamar tus recompensas CORE o redimir tu Bitcoin apostado. Esta guía detallada se utilizará cuando veas '**Redimir**' aparecer bajo '**Acción**' en el validador delegado que elegiste previamente o '**Reclamar**' junto a '**Delegado Hash & Recompensas Core**' y/o '**Recompensas de Staking de Bitcoin**'.
+Core enables Bitcoin holders to earn CORE token rewards by timelocking their Bitcoin on the Bitcoin blockchain. For instructions on how to participate in Bitcoin timelocking and earn rewards, follow our detailed [guide](./stake-btc-guide.md).
+After you've successfully created a Bitcoin timelock transaction, you'll want to know how to claim your earned CORE rewards and manage your timelocked Bitcoin. This guide explains the process when you see either the 'Redeem' option under 'Action' for your chosen validator, or the 'Claim' button next to 'Delegated Hash & Core Rewards' or 'Bitcoin Staking Rewards' in the interface.
 
 ## Información de Distribución de Recompensas
 
 - **Distribución de Recompensas:** Las recompensas en tokens CORE se distribuyen a los stakers como incentivos por su contribución a la seguridad y gobernanza de la red.
-- **Fuente de Recompensas:** Las recompensas provienen del fondo de recompensas del consenso compartido entre los participantes de los dos mecanismos de Core: dPoW (mineros de Bitcoin) y dPoS (stakers de Bitcoin y CORE).
+- **Reward Source:** Rewards are sourced from the consensus reward pool.
 
 ## Redimir un Bitcoin Apostado Expirado
 
 Si tu período de staking ha expirado, redime tus activos de Bitcoin apostado desde tu billetera Unisat o Xverse. Debes usar la misma dirección de billetera durante el proceso de staking para redimir tu Bitcoin apostado expirado.
 
-1. Desde cualquier pantalla de CORE, pasa el cursor sobre tu billetera conectada en la esquina superior derecha → haz clic en **‘Mi Staking’**.
+1. From any Core screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
 
 <p align="center">
 ![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
@@ -85,4 +86,4 @@ Para ser elegible para ganar recompensas, es necesario completar un ciclo comple
 
 #### Conclusión
 
-Siguiendo esta guía, has aprendido exitosamente cómo redimir tu Bitcoin apostado desde la blockchain de Core, así como redimir tus recompensas ganadas en tokens CORE por delegar tu Bitcoin apostado. ¡Estamos felices de que hayas elegido adentrarte en BTCfi con el Staking No Custodial de Bitcoin en Core!
+Siguiendo esta guía, has aprendido exitosamente cómo redimir tu Bitcoin apostado desde la blockchain de Core, así como redimir tus recompensas ganadas en tokens CORE por delegar tu Bitcoin apostado. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
