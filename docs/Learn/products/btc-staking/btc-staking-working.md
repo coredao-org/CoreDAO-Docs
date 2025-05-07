@@ -7,7 +7,7 @@ sidebar_position: 2
 
 Self-Custodial Bitcoin Staking is one of the three fundamental components of Core’s Satoshi Plus consensus. This feature integrates Bitcoin holders into Core’s consensus, enhancing network security while enabling Bitcoin to become a yield-generating asset. 
 
-Unlike traditional staking mechanisms that require users to transfer custody of their assets, Core's approach leverages [CheckLockTimeVerify (CLTV)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) timelocks, a Bitcoin-native cryptographic function. This ensures Bitcoin remains securely in users’ wallets while still being staked to support the Core network.
+Unlike traditional staking mechanisms that require users to transfer custody of their assets, Core's approach leverages [`CheckLockTimeVerify (CLTV`)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) timelocks, a Bitcoin-native cryptographic function. This ensures Bitcoin remains securely in users’ wallets while still being staked to support the Core network.
 
 ## How CLTV Timelock Works
 
@@ -23,7 +23,7 @@ Unlike custodial staking models that involve third parties, Core’s staking mod
 
 #### 1. Creating a CLTV Staking Transaction  
 
-To participate in Bitcoin staking, holders must create a valid timelock transaction using Bitcoin's CLTV (CheckLockTimeVerify) function. For the Core network to recognize this transaction as a valid delegation to a validator, the timelock transaction must include specific metadata in the script. This metadata must contain:
+To participate in Bitcoin staking, holders must create a valid timelock transaction using Bitcoin's CLTV (`CheckLockTimeVerify`) function. For the Core network to recognize this transaction as a valid delegation to a validator, the timelock transaction must include specific metadata in the script. This metadata must contain:
 - **Validator Delegation Address:** The Core validator the staker is delegating their Bitcoin to.  
 - **Reward Address:** The address where the staker wants to receive CORE rewards.  
 
@@ -84,7 +84,7 @@ _**(*Optional*)**_ After the transaction is confirmed on the Bitcoin network, us
 
 1. **Locking Bitcoin**  
    - The user creates a **CLTV timelock transaction** on the Bitcoin network.  
-   - The minimum lock duration is 24 hours, though the Core UI typically suggests longer periods (5+ days) for optimal participation.   
+   - While there’s no minimum lock duration when staking via the CLI tool, a minimum of 24 hours is recommended to be eligible for staking rewards. The Core UI typically suggests a lock period of 5+ days to ensure optimal participation and reward potential.
      
 2. **Delegating to a Core Validator**  
    - The timelocking transaction must include:  
