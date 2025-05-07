@@ -3,11 +3,11 @@ title: La Blockchain Core - Applications décentralisées sécurisées par Bitco
 sidebar_position: 1
 ---
 
-# Core DAO - Applications Décentralisées Sécurisées par Bitcoin
+# Core - The Bitcoin Everything Chain
 
 ## 👨‍💻 Commencer
 
-Core est une plate-forme de contrats intelligents hyper-évolutif conçue pour compléter Bitcoin, servant de première couche Preuve d'enjeu (PoS) et du plus grand écosystème Bitcoin DeFi. En fusionnant la sécurité inégalée de Bitcoin avec la capacité d’évolutivité du consensus innovant Satoshi Plus, Core étend les fonctionnalités de Bitcoin tout en préservant ses principes fondamentaux de décentralisation et de sécurité. Grâce à l’implication d’environ 75 % de la puissance de hachage du réseau Bitcoin, qui contribue déjà au modèle de sécurité de Core, et à plus de 8 200 BTC stakés via le Non-Custodial Bitcoin Staking, Core renforce le rôle de Bitcoin à la fois comme protecteur principal et actif central de l’avenir de la DeFi. Le Dual Staking de Core offre aux détenteurs de Bitcoin la possibilité de générer des rendements sûrs et durables, en stakant à la fois du BTC et du CORE, tout en conservant la pleine propriété et le contrôle de leurs actifs.
+The Core blockchain is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem. As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof of Stake Layer.
 
 ![core-header](../static/img/core-header.png)
 
@@ -15,10 +15,10 @@ Nouveau sur Core ? Découvrez **Core en moins de 5 minutes**.
 
 ## 📔 En savoir plus sur Core
 
-Découvrez ce qu'est Core et comment démarrer votre aventure Web3 sur Core
-\* [Un Aperçu de Core](./Learn/introduction/what-is-core-chain.md)
-\* [Lisez à Propos des Concepts Fondamentaux de Core](category/core-concepts)
-\* [Comprenez l'Architecture Sous-Jacente](./Learn/core-concepts/architecture.md)
+Dive into what Core is and how to start your journey
+\* [An Overview of Core](./Learn/introduction/what-is-core-chain.md)
+\* [Read About the Core Concepts](category/core-concepts)
+\* [Understand the Underlying Architecture](./Learn/core-concepts/architecture.md)
 
 ## 👓 Explorez Core
 
@@ -38,12 +38,12 @@ Participez au réseau Core en exécutant différents types de nœuds
 
 ## 👨‍🔧 Développer sur Core
 
-Commencez à développer sur Core et contribuez au monde de la BTCfi :
-\* [Explorez l'Environnement des Outils pour Développeurs](./Dev-Guide/dev-tools.md)
-\* [Configurez Vos Portefeuilles sur le Reseau Core](./Dev-Guide/core-wallet-config.md)
-\* [Financez Vos Portefeuilles avec tCORE ou tCORE2](./Dev-Guide/core-faucet.md)
-\* [Parcourez des Duides Détaillés Pratiques pour Démarrer votre Aventure sur Core](category/dev-guides)
-\* [Créez une dApp Full-Stack sur Core](./Dev-Guide/dapp-on-core.md)
+Start building on Core and Contribute to the BTCfi Landscape
+\* [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
+\* [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
+\* [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
+\* [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
+\* [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
 
 ## 🙋‍♀️ Aide & Support
 
