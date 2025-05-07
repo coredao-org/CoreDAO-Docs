@@ -4,9 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Staking Non-Custodial de Bitcoin
+# Self-Custodial Bitcoin Staking
 
-Ce guide utilisateur est conçu pour vous accompagner dans le staking de votre Bitcoin sur la blockchain Core afin de gagner des récompenses en tokens CORE. Avec le Staking de Bitcoin Non-Custodial, vous pouvez gagner un rendement passif en CORE tout en conservant la propriété complète de vos actifs Bitcoin. Plongeons dans le fonctionnement du staking et comment vous pouvez commencer dès aujourd'hui.
+This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards.
 
 ## Prérequis
 
@@ -30,9 +30,9 @@ Les points suivants sont des éléments clés auxquels les utilisateurs doivent 
 5. **Considérations pour les Périodes de Verrouillage**
   - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 
-## Déroulement du staking Non-custodial de BTC
+## Workflow of Self-Custodial BTC Staking
 
-Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin gagnent des récompenses de staking. En verrouillant votre Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps, vous pouvez participer activement au mécanisme de consensus de la blockchain Core pendant le staking. Voici les étapes impliquées dans ce processus.
+Self-custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn staking rewards. By locking your Bitcoin natively on the Bitcoin network through a time-bound mechanism, you can actively participate in the Core blockchain's consensus mechanism while staking. Voici les étapes impliquées dans ce processus.
 
 1. **Initier le Staking :** Commencez par accéder soit à l'outil de [staking BTC basé sur l'outil CLI](https://github.com/coredao-org/btc-staking-tool) (pour les utilisateurs techniques), soit à la [plateforme de staking en ligne](https://stake.coredao.org/) (pour les utilisateurs généraux).
 2. **Staker du Bitcoin avec un Verrouillage Temporel :** Vous stakez vos Bitcoins en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, et vos Bitcoin restent verrouillés jusqu'à la fin de la période spécifiée. Assurez-vous de suivre les exigences pour qu'une transaction soit valide et éligible ; référez-vous ici pour (../btc-staking/design#requirements-for-transaction-validity)  plus de détails.
@@ -44,7 +44,7 @@ Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décen
 5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement. Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 6. **Récupérer des Bitcoin:** Une fois la période de verrouillage du staking expirée, les Bitcoin stakés resteront inactifs dans l'adresse de staking jusqu'à ce qu'ils soient récupérés par l'utilisateur.
 
-## Guide de Staking Non-Custodial de Bitcoin
+## Self-Custodial Bitcoin Staking Walkthrough
 
 Pour commencer à staker votre Bitcoin sur la blockchain Core et gagner des récompenses de staking en tokens CORE, suivez les étapes détaillées ci-dessous pour staker du Bitcoin via le [site officiel de staking](http://stake.coredao.org/) de Core.
 
@@ -159,4 +159,4 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
-**Félicitations!!** Vous avez réussi à staker vos Bitcoins sur la blockchain Core et gagnerez désormais activement des tokens CORE à partir de vos BTC délégués. En stakant du Bitcoin et en votant pour des validateurs sur Core, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité.
+**Félicitations!!** Vous avez réussi à staker vos Bitcoins sur la blockchain Core et gagnerez désormais activement des tokens CORE à partir de vos BTC délégués. Through staking Bitcoin and helping to elect validators on Core, you actively contribute to the security of the Core network, supporting its decentralization and stability.
