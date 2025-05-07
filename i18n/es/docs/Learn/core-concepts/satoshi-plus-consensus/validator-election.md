@@ -13,18 +13,18 @@ description: Proceso de elección de validadores en Satoshi Plus
 
 El proceso de elección de validadores en el mecanismo de consenso Satoshi Plus de Core es donde se sintetizan la prueba de trabajo delegada, el proof of stake delegado y el staking de Bitcoin sin custodia. Los mineros/grupos de minería de Bitcoin, los participantes de CORE y los participantes de Bitcoin contribuyen a la elección de validadores a través de un sistema de puntuación híbrido.
 
-Los validadores desempeñan un papel vital en la producción de bloques y la validación de transacciones en la red Core. El proceso de elección determina qué validadores formarán parte del conjunto de validadores activos para cada ronda, lo que garantiza que se elijan los validadores más confiables y mejor respaldados para mantener la integridad de la red.
+Los validadores desempeñan un papel vital en la producción de bloques y la validación de transacciones en la red Core. The election process determines which validators will be part of the active validator set for each round, helping select the most trusted and well-supported validators to maintain the network's integrity.
 
 ## Proceso paso a paso
 
 1. **Delegación de Recursos:**
- - **Mineros de Bitcoin:** Los mineros de Bitcoin delegan su poder de hasheo a los validadores de Core al incluir información específica en el campo op_return de la transacción coinbase.
- - **CORE Token Stakers:** Los holders de tokens CORE delegan sus tokens en staking a sus validadores de Core preferidos.
- - **Stakers de Bitcoin:** Los poseedores de Bitcoin lo bloquean en "absolute time locks" y delegan sus activos sus Validadores de Core preferidos.
+ - **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core validators by including specific information in the `op_return` field of the coinbase transaction.
+ - **CORE Token Stakers:** Holders of CORE tokens delegate their tokens to their preferred Core validators.
+ - **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in CLTV absolute timelocks and delegate their assets to their preferred Core validators.
 
 2. **Cálculo de puntuación híbrida:**
  - La puntuación híbrida para cada validador se calcula en función de la cantidad de poder de hash delegado de los mineros de Bitcoin, la cantidad de tokens CORE apostados y la cantidad de Bitcoin apostados.
- - La fórmula equilibra estos tres componentes para producir una puntuación que refleje el apoyo y la confiabilidad generales del validador.
+ - The hybrid score formula balances these three components to produce a score that reflects the validator’s overall support.
 
 3. **Elección de Validadores:**
  - En cada ronda, que dura un día, los validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores.
@@ -39,7 +39,7 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
  - Al final de cada ronda, las recompensas acumuladas se calculan y distribuyen, y se determina un nuevo conjunto de validadores en función de las puntuaciones híbridas actualizadas.
 
 6. **Distribución de recompensas:**
- - Los validadores y sus delegados obtienen recompensas de tokens CORE en función de su desempeño y la cantidad de recursos que se les delegan.
+ - Validators and their delegators earn CORE token rewards when elected validators reliably produce blocks and secure the Core blockchain.
  - Estas recompensas incentivan la participación continua y el desempeño diligente de los validadores.
 
 ## Flujo de trabajo del proceso de elección del validador
@@ -47,7 +47,7 @@ Los validadores desempeñan un papel vital en la producción de bloques y la val
 El proceso de elección del Validador en Satoshi Plus implica pasos clave, respaldados por ecuaciones específicas para cuantificar las contribuciones de stake y poder de hasheo:
 
 1. **Delegación de estaca:**
- - Los holders de CORE y Bitcoin hacen staking y delegan sus tokens a validadores de Core. Esta delegación es una forma de votación, donde el peso de cada voto corresponde al número de tokens apostados.
+ - CORE holders stake their tokens by delegating to Core validators. Similarly, Bitcoin holders stake their tokens by timelocking them on Bitcoin and delegating to Core validators. The delegation's influence on validator election is proportional to the amount staked.
 
 2. **Delegación de poder hash:**
  - Los mineros de Bitcoin delegan una parte de su poder de hash especificando sus validadores preferidos en los bloques de Bitcoin que extraen. Este proceso integra el poder minero de Bitcoin en el mecanismo de seguridad de Core.
@@ -111,7 +111,7 @@ Donde, $$m + k + l = 1$$
      rSu = \frac{rS}{rSp}
   $$
 
- En cuanto a la apuesta de BTC, las recompensas por unidad se subdividen según los niveles de rendimiento de apuesta dual de los delegados. Suponiendo que hay 4 niveles de rendimiento aumentados (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub> y P<sub>MAX</sub>) con multiplicadores de rendimiento de doble apuesta (e, f, g y h). La recompensa por unidad por apostar BTC se calculará de la siguiente manera
+ As for BTC staking, the rewards per unit are further subdivided based on the delegators’ Dual Staking yield tiers. Assuming that there are 4 boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>MAX</sub>) with Dual Staking yield multipliers (e, f, g, and h). La recompensa por unidad por apostar BTC se calculará de la siguiente manera
 
  - Recompensa BTC por unidad: $$rBu$$ de **P<sub>n</sub>** = $$\frac{rB}{rBp} * $$ Multiplicador de rendimiento para el nivel<sub>n</sub>
   - $$rBu$$ de P<sub>BASE</sub> = $$\frac{rB}{rBp} * e$$
@@ -140,4 +140,4 @@ El siguiente diagrama representa visualmente el proceso de elección del Validad
 ![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
 </p>
 
-Este diagrama de flujo ilustra el proceso cíclico de la elección del validador y sus responsabilidades actuales dentro de Satoshi Plus. Enfatiza cómo las delegaciones de poder de hash y participación influyen directamente en la selección de validadores, la producción de bloques y la distribución de recompensas, impulsando una red segura, descentralizada y administrada de manera eficiente.
+Este diagrama de flujo ilustra el proceso cíclico de la elección del validador y sus responsabilidades actuales dentro de Satoshi Plus. It emphasizes how stake and hash power delegations directly influence validator election, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.
