@@ -3,11 +3,11 @@ title: "The Core Blockchain: aplicaciones descentralizadas protegidas por Bitcoi
 sidebar_position: 1
 ---
 
-# Core DAO: aplicaciones descentralizadas protegidas por Bitcoin
+# Core - The Bitcoin Everything Chain
 
 ## 👨‍💻 Primeros pasos
 
-Core es una plataforma de contratos inteligentes hiperescalable diseñada para complementar Bitcoin, sirviendo como su primera capa de **prueba de participación (PoS)** y el ecosistema DeFi de Bitcoin más grande. Al fusionar la seguridad inigualable de Bitcoin con la escalabilidad del innovador consenso Satoshi Plus, Core amplía las capacidades de Bitcoin al tiempo que preserva sus principios básicos de descentralización y seguridad. Con aproximadamente el **74%** del poder de hash de la minería de Bitcoin ya contribuyendo al modelo de seguridad de Core y más de **7,277** BTC en staking a través del Staking de Bitcoin no custodial, Core refuerza el papel de Bitcoin como el principal protector y activo central del futuro de DeFi. El modelo de apuesta dual de Core permite aún más a los poseedores de Bitcoin obtener rendimientos seguros y sostenibles al apostar tanto en BTC como en CORE, manteniendo al mismo tiempo el control total y la propiedad de sus activos.
+The Core blockchain is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem. As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof of Stake Layer.
 
 ![core-header](../static/img/core-header.png)
 
@@ -15,10 +15,10 @@ Core es una plataforma de contratos inteligentes hiperescalable diseñada para c
 
 ## 📔 Aprenda sobre el núcleo
 
-Profundice en qué es Core y cómo comenzar su viaje Web3 en Core
-\* [Una descripción general de Core](./Learn/introduction/what-is-core-chain.md)
-\* [Leer sobre los conceptos básicos](categoría/conceptos básicos)
-\* [Comprender la arquitectura subyacente] (./Learn/core-concepts/architecture.md)
+Dive into what Core is and how to start your journey
+\* [An Overview of Core](./Learn/introduction/what-is-core-chain.md)
+\* [Read About the Core Concepts](category/core-concepts)
+\* [Understand the Underlying Architecture](./Learn/core-concepts/architecture.md)
 
 ## 👓 Explora en Core
 
@@ -38,7 +38,7 @@ Participate in Core Network Security by Running Different Types of Nodes
 
 ## 👨‍🔧 Construyendo sobre el núcleo
 
-Starting building on Core and Contribute to the BTCfi Landscape
+Start building on Core and Contribute to the BTCfi Landscape
 \* [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
 \* [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
 \* [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
