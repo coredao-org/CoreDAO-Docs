@@ -10,7 +10,7 @@ sidebar_position: 2
 
 In the Core ecosystem, the robustness, security, and decentralization of the network are upheld by the nodes operated by community participants. These nodes facilitate various functions, from transaction validation to block propagation, ensuring the network's overall health and efficiency. 
 
-Depending on your goals, there are different node configurations possible on the Core network. If you haven't already started any node on Core network yet, please review the documentation for [Running a Local Validator Node](./validator/running-validator.md) before proceeding with different configurations.
+Depending on your goals, there are different node configurations possible on the Core network. If you haven't already started any node on Core network yet, please review the documentation before proceeding with different configurations.
 
 * **If you want to be part of the governance of the Core Nework**
 
@@ -32,15 +32,15 @@ Depending on your goals, there are different node configurations possible on the
     * [**Start a Snapshot Node**](./config/snapshot-node-config.md)
 
 ## Types of Nodes on the Core Network
-1. **Validators:**
-    * **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework.
-    * **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
-    * **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
-
-2. **Normal Full Nodes:**
+1. **Normal Full Nodes:**
     * **Role:** Normal Full Nodes maintain a complete, real-time copy of the blockchain ledger, validate transactions, and support the network by relaying block and transaction data. These are essentially useful for private use. 
     * **Requirements:** Operating a Full Node requires significant computational and storage resources to handle the complete blockchain data and continuous network traffic.
     
+2. **Validators:**
+    * **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework. These are essentially full nodes running in validator mode. 
+    * **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
+    * **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
+
 3. **RPC Nodes:**
     * **Role:** RPC Nodes provide an application programming interface (API) for developers and external applications to interact with the blockchain, facilitating queries and transactions.
     * **Importance:** They are essential for the development and operation of decentralized applications (DApps) and for external access to the blockchain’s data.

@@ -28,7 +28,6 @@ const sidebars: SidebarsConfig = {
             label: 'Introduction',
             items: ['Learn/introduction/what-is-core-chain',
                     'Learn/introduction/why-core-chain',
-                    //'Learn/introduction/quickstart',
                     {
                       type: 'link',
                       label: 'Whitepaper', 
@@ -151,12 +150,6 @@ const sidebars: SidebarsConfig = {
       items: [
         "Dev-Guide/dev-tools", 
         "Dev-Guide/network-config",
-        // {
-        //   type: "category",
-        //   collapsed: true,
-        //   label: "Connecting to Core",
-        //   items: ["Dev-Guide/dev-tools", "Dev-Guide/network-config"],
-        // },
         {
           type: "category",
           collapsed: true,
@@ -284,7 +277,7 @@ const sidebars: SidebarsConfig = {
         collapsed: true,
         label: 'Become a Validator',
         items: ['Node/validator/overview',
-        'Node/validator/running-validator',        
+        'Node/validator/setting-up-validator',        
         'Node/validator/validator-register', 
         'Node/validator/validator-election',
         'Node/validator/rewards',
