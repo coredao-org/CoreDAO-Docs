@@ -29,6 +29,19 @@ Les points suivants sont des éléments clés auxquels les utilisateurs doivent 
   - Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space/).
 5. **Considérations pour les Périodes de Verrouillage**
   - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
+6. **Supported Bitcoin Address Types**
+  - Core’s BTC staking supports the following Bitcoin address formats:
+
+    | Address Type                              | Prefix | Example (hypothetical)  |
+    | ----------------------------------------- | ------ | ------------------------------------------ |
+    | Legacy (P2PKH)         | 1      | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
+    | Nested SegWit (P2SH)   | 3      | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
+    | Native SegWit (Bech32) | bc1    | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
+    | Taproot (P2TR)         | bc1p   | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
+
+:::info
+Ensure your BTC wallet uses one of the supported formats above when participating in Core’s Self-Custodial BTC staking. Always double-check your wallet address before staking.
+:::
 
 ## Workflow of Self-Custodial BTC Staking
 
