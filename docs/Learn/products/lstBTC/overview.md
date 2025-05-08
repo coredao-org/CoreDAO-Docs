@@ -8,13 +8,13 @@ sidebar_position: 2
 ---
 
 ## The Big Idea
-Bitcoin is the world’s largest digital asset, yet it remains financially idle—held in vaults or posted as collateral without generating yield. Institutions have traditionally faced a dilemma:  
+Bitcoin is the world’s largest digital asset, yet it remains financially idle, held in vaults or posted as collateral without generating yield. Institutions have traditionally faced a dilemma:  
 - **HODL BTC** as a store of value, leaving it unproductive.  
 - **Lend BTC**, taking on counterparty risks, illiquidity, and operational complexity.  
 
 **lstBTC changes that.**  
 
-For the first time, institutions can earn BTC-denominated yield **without relinquishing custody, lending risk, or disrupting workflows**. Powered by **Core’s Dual Staking**, risk-managed by **Maple Finance**, and secured by **custodians like BitGo, Hex Trust, and Copper**, lstBTC transforms Bitcoin into a **yield-bearing asset with full liquidity and security**.  
+Institutions can earn BTC-denominated yield **for the first time without relinquishing custody, lending risk, or disrupting workflows**. Powered by Core’s Dual Staking, risk-managed by **Maple Finance**, and secured by custodians like **BitGo**, **Hex Trust**, and **Copper**, lstBTC transforms Bitcoin into a **yield-bearing asset with full liquidity and security**.  
 
 <p align="center" zoom="200%">
 ![lstBTC_banner](../../../../static/img/lstbtc/lstBTC_banner.png)
@@ -36,7 +36,7 @@ Instead, lstBTC:
 ## **How lstBTC Works**  
 For institutional users, lstBTC is **simple and seamless**:  
 1. **Deposit BTC** with a trusted custodian (BitGo, Copper, or Hex Trust).  
-2. **Receive lstBTC 1:1**, which accrues BTC-denominated yield daily.  
+2. **Receive lstBTC**, which accrues BTC-denominated yield daily.  
 3. **Use lstBTC as BTC**—trade, transfer, or pledge it as collateral.  
 4. **Redeem lstBTC for BTC + Yield** at any time through the original custodian.  
 
@@ -48,7 +48,7 @@ For institutional users, lstBTC is **simple and seamless**:
 lstBTC’s yield is powered by **Core’s Dual Staking mechanism**, a capital-efficient BTC yield strategy:  
 - **BTC is collateralized** via a low **10% Loan-to-Value (LTV) ratio loan** to purchase CORE.  
 - **Maple Finance** manages risk by using options strategies to hedge against CORE price fluctuations.  
-- **CORE and BTC are Dual-Staked** on Core’s blockchain, earning block rewards and fees.  
+- **CORE and BTC are Dual-Staked** on Core’s blockchain, where block rewards and fees are earned.  
 - **Yield is converted into BTC**, ensuring **all returns are BTC-denominated**.  
 
 **Risk Management**:  
@@ -74,7 +74,7 @@ Unlike **BTC lending** or **wrapped BTC**, lstBTC is the **first institutional-g
 * Non-Custodial
 * BTC-Native Yield (No Counterparty Risk) 
 
-| Feature        | lstBTC (Core) ✅ | BTC Lending ❌ | Wrapped BTC ❌ |
+| Feature        | lstBTC (Core) | BTC Lending | Wrapped BTC |
 |--------------|----------------|---------------|---------------|
 | **BTC Yield** | **3-6%+ APR** | Risky lending | Bridging risks |
 | **Liquidity** | **Fully liquid** | Locked in loans | Somewhat liquid |

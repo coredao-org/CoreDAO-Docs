@@ -12,18 +12,18 @@ description: Satoshi Plus Validator Election Process
 
 The validator election process in Core's Satoshi Plus consensus mechanism is where DPoW, DPoS, and Non-Custodial Bitcoin Staking are synthesized. Bitcoin miners/mining pools, CORE stakers, and Bitcoin stakers contribute to the election of validators via a hybrid scoring system. 
 
-Validators play a vital role in producing blocks and validating transactions on the Core network. The election process determines which validators will be part of the active validator set for each round, ensuring that the most trusted and well-supported validators are chosen to maintain the network’s integrity.
+Validators play a vital role in producing blocks and validating transactions on the Core network. The election process determines which validators will be part of the active validator set for each round, helping select the most trusted and well-supported validators to maintain the network's integrity.
 
 ## Step by Step Process
 
 1. **Delegation of Resources:**
-   * **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core Validators by including specific information in the `op_return` field of the coinbase transaction.
-   * **CORE Token Stakers:** Holders of CORE tokens delegate their tokens to their preferred Core Validators.
-   * **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in absolute time locks and delegate their assets to their preferred Core Validators.
+   * **Bitcoin Miners:** Bitcoin miners delegate their hash power to Core validators by including specific information in the `op_return` field of the coinbase transaction.
+   * **CORE Token Stakers:** Holders of CORE tokens delegate their tokens to their preferred Core validators.
+   * **Bitcoin Stakers:** Bitcoin holders lock their Bitcoin in CLTV absolute timelocks and delegate their assets to their preferred Core validators.
 
 2. **Hybrid Score Calculation:**
    * The hybrid score for each validator is calculated based on the amount of delegated hash power from Bitcoin miners, the amount of staked CORE tokens, and the amount of staked Bitcoin.
-   * The formula balances these three components to produce a score that reflects the validator’s overall support and reliability.
+   * The hybrid score formula balances these three components to produce a score that reflects the validator’s overall support.
 
 3. **Election of Validators:**
    * Every round, which lasts one day, the validators with the highest hybrid scores are elected to the validator set.
@@ -38,7 +38,7 @@ Validators play a vital role in producing blocks and validating transactions on 
    * At the end of each round, the accumulated rewards are calculated and distributed, and a new validator set is determined based on the updated hybrid scores.
 
 6. **Rewards Distribution:**
-   * Validators and their delegators earn CORE token rewards based on their performance and the amount of resources delegated to them.
+   * Validators and their delegators earn CORE token rewards when elected validators reliably produce blocks and secure the Core blockchain. 
    * These rewards incentivize continuous participation and diligent performance by validators.
 
 ## Workflow of the Validator Election Process​
@@ -46,7 +46,7 @@ Validators play a vital role in producing blocks and validating transactions on 
 The validator election process in Satoshi Plus involves key steps, supported by specific equations to quantify stake and hash power contributions:
 
 1. **Stake Delegation:**
-   * CORE and Bitcoin holders stake and delegate their tokens to Core validators. This delegation is a form of voting, where the weight of each vote corresponds to the number of staked tokens.
+   * CORE holders stake their tokens by delegating to Core validators. Similarly, Bitcoin holders stake their tokens by timelocking them on Bitcoin and delegating to Core validators. The delegation's influence on validator election is proportional to the amount staked. 
 
 2. **Hash Power Delegation:**
    * Bitcoin miners delegate a portion of their hash power by specifying their preferred validators in the Bitcoin blocks they mine. This process integrates Bitcoin's mining power into Core's security mechanism.
@@ -108,7 +108,7 @@ Where, $$ m + k + l = 1 $$
          rSu = \frac{rS}{rSp}
       $$
 
-   As for BTC staking, the rewards per unit are further subdivided based on the delegators’ dual staking yield tiers. Assuming that there are 4 boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>MAX</sub>) with dual staking yield multipliers (e, f, g, and h). The reward per unit for BTC staking will be calculated as follows
+   As for BTC staking, the rewards per unit are further subdivided based on the delegators’ Dual Staking yield tiers. Assuming that there are 4 boosted yield levels (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, and P<sub>MAX</sub>) with Dual Staking yield multipliers (e, f, g, and h). The reward per unit for BTC staking will be calculated as follows
    * Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp} * $$ Yield Multiplier for Level<sub>n</sub>
       * $$rBu$$ of P<sub>BASE</sub>  = $$ \frac{rB}{rBp} * e $$
       * $$rBu$$ of P<sub>1</sub>  = $$ \frac{rB}{rBp} * f $$
@@ -135,4 +135,4 @@ The following diagram visually represents the Validator election process in Sato
 ![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
 </p>
 
-This flowchart illustrates the cyclical process of the validator election and their ongoing responsibilities within Satoshi Plus. It emphasizes how stake and hash power delegations directly influence validator selection, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.
+This flowchart illustrates the cyclical process of the validator election and their ongoing responsibilities within Satoshi Plus. It emphasizes how stake and hash power delegations directly influence validator election, block production, and reward distribution, driving a secure, decentralized, and efficiently managed network.

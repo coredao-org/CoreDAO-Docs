@@ -1,15 +1,15 @@
 ---
-sidebar_label: Core Chain FAQs
+sidebar_label: Core Blockchain FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Chain FAQs
+# Core FAQs
 ---
 
 ### 1. Where can I find the codebase for Core blockchain?
     
-Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. You can find Core blockchain’s codebase and other developer tools on the [official GitHub account of Core](https://github.com/coredao-org).
+The Core Foundation advocates open source project building and hence all of Core's codebases are available for community use. You can find Core blockchain’s codebase and other developer tools on the [official GitHub account of Core](https://github.com/coredao-org).
 
 ### 2. What are the official communication channels?
     
@@ -36,7 +36,7 @@ The CORE token is pivotal in securing the Core network through its roles in stak
 
 ### 6. As a bitcoin staker, do I have to run a validator by myself?
 
-No, as a Bitcoin staker on the Core network, you do not need to run a validator yourself. The system allows Bitcoin holders to participate in securing the network through non-custodial Bitcoin staking. This means you can stake your Bitcoin without giving up custody and without the need to directly engage in the validator processes, such as block production or transaction validation. This setup allows you to earn yield on your Bitcoin while contributing to the network's security in a more passive manner.
+No, as a Bitcoin staker on the Core network, you do not need to run a validator yourself. The system allows Bitcoin holders to participate in securing the network through Self-Custodial Bitcoin Staking. This means you can stake your Bitcoin without giving up custody and without the need to directly engage in the validator processes, such as block production or transaction validation. This setup allows you to earn yield on your Bitcoin while contributing to the network's security in a more passive manner.
 
 ### 7. What are the conditions for slashing? What are the slashing fees incurred? Will all my staked tokens (CORE and BTC) get slashed?
     
@@ -53,7 +53,7 @@ On the Core network, slashing and jailing are mechanisms to penalize validators 
     
 ### 8. What consensus mechanism does the Core network use, and how does it prevent different attacks?
 
-The Core network uses the Satoshi Plus consensus mechanism which combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Non-Custodial BTC Staking to secure the network against various attacks. This setup mitigates network attacks such as DDoS through node dispersion and randomized P2P communication. For consensus attacks like the 51% attack, it employs round-robin mining and a hybrid score system for validator election, making such attacks economically impractical. Additionally, Core uses checkpointing to freeze and secure the blockchain's history periodically, thwarting long-range attacks. For more details, see the [Core Blockchain Security Overview](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
+The Core network uses the Satoshi Plus consensus mechanism which combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Self-Custodial BTC Staking to secure the network against various attacks. This setup mitigates network attacks such as DDoS through node dispersion and randomized P2P communication. For consensus attacks like the 51% attack, it employs round-robin mining and a hybrid score system for validator election, making such attacks economically impractical. Additionally, Core uses checkpointing to freeze and secure the blockchain's history periodically, thwarting long-range attacks. For more details, see the [Core Blockchain Security Overview](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
 
 ### 9. What is the average transaction confirmation time of Core network?
 

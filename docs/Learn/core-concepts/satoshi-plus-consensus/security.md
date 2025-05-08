@@ -8,29 +8,6 @@ description: Learn about Core's Security Model
 # Security Model of Core
 ---
 
-## Overview
-Core, as a Bitcoin-aligned EVM blockchain, leverages the Satoshi Plus consensus mechanism to uphold an optimal blend of security, decentralization, and scalability. This approach harnesses the intrinsic security features of Bitcoin while enabling robust smart contract functionality and DeFi integration, making it a pioneering platform in the blockchain space.
-
-## Security Components
-### 1. Delegated Proof of Work (DPoW) and Delegated Proof of Stake (DPoS)
-Core incorporates these two powerful mechanisms to form a balanced and secure blockchain environment. The DPoW extends the proven security model of Bitcoin by allowing miners to delegate hashing power to Core, thereby benefiting from Bitcoin’s immense hash rate and security pedigree. On the other hand, DPoS enables both BTC (through non-custodial staking) and CORE token holders to stake their assets with validators on the Core network, promoting decentralized network governance and additional security layers.
-
-### 2. Validator Security
-Validators are central to maintaining the integrity and security of the Core blockchain. They are selected based on the combined weight of staked tokens (CORE and BTC) and delegated hash power, so that only the most supported and trusted nodes handle the consensus process. This dual support system mitigates the risk of centralization and security breaches.
-
-### 3. Security Through Incentivization
-The Satoshi Plus mechanism incentivizes both miners and stakers (CORE and BTC) by providing rewards in CORE tokens, aligning their interests with the network’s longevity and integrity. This economic incentivization helps sustain a robust participation level, crucial for maintaining a secure and decentralized network.
-
-## Security Protocols and Implementations
-1. **Robust Transaction Validation**
-Core validators are responsible for verifying transactions and creating new blocks. The unique combination of DPoW, DPoS, and Non-Custodial BTC Staking involves many stakeholders and significant capital in the election of validators, thus heavily incentivizing the election of trustworthy validators and the honest participation of those validators. 
-
-3. **Network Resilience Against Attacks**
-The integration of Bitcoin’s hash power with CORE and BTC staking makes Core exceptionally resilient against various types of attacks. The high cost of attacking such a hybrid system, combined with distributed consensus achieved through delegated mechanisms, significantly enhances network security.
-
-4. **Upgradability and Flexibility**
-Unlike traditional blockchains that rely solely on a single form of consensus, Core’s hybrid model allows for adaptability and upgradability. This flexibility is designed to enable the network to evolve in response to emerging security threats or advancements in blockchain technology.
-
 ## Attack Vectors and Security Measures in the Core Ecosystem
 
 Core employs a robust security architecture to mitigate potential threats, integrating both technological safeguards and economic incentives within the Satoshi Plus consensus mechanism. Here is an expanded view on how these mitigations are achieved for each potential attack vector.

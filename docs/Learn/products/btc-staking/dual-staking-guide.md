@@ -6,7 +6,7 @@ sidebar_position: 2
 
 # Dual Staking on Core
 
-This user guide is designed to walk you through the Dual Staking process on Core. Core’s Non-Custodial Bitcoin Staking allows users to earn yield in CORE by staking their Bitcoins and delegating them to validators on Core. Dual Staking unlocks higher yield tiers by staking Bitcoin and CORE to enhance yield generation from Non-Custodial Bitcoin staking further. Let's dive into how it works and how you can start staking today.
+This user guide is designed to walk you through the Dual Staking process on Core. Core’s Self-Custodial Bitcoin Staking allows users to earn yield in CORE by staking their Bitcoins and delegating them to validators on Core. Dual Staking unlocks higher yield tiers by staking Bitcoin and CORE to enhance yield generation from Self-Custodial Bitcoin staking further. Let's dive into how it works and how you can start staking today.
 
 ## Getting Started with Dual Staking
 There are several ways to participate in Dual Staking with BTC and CORE, depending on your preferred tools and experience level:
@@ -42,9 +42,9 @@ The following are some key points that users should be careful about when stakin
 
 ## Step-By-Step Walkthrough of Dual Staking
 
-Core’s Non-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn yield through Bitcoin staking. Users can stake their Bitcoin natively on the Bitcoin network through a time-bound mechanism and actively participate in the Core blockchain's Consensus mechanism while staking. 
+Core’s Self-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn yield through Bitcoin staking. Users can stake their Bitcoin natively on the Bitcoin network through a time-bound mechanism and actively participate in the Core blockchain's Consensus mechanism while staking. 
 
-Dual staking is an enhancement to Core’s Non-custodial BTC staking, allowing users to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Higher CORE:BTC staking ratios unlock higher yield tiers for Bitcoins staking. To take advantage of Dual Staking and earn higher reward rates for BTC staking, follow the steps detailed below. 
+Dual staking is an enhancement to Core’s Self-custodial BTC staking, allowing users to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Higher CORE:BTC staking ratios unlock higher yield tiers for Bitcoins staking. To take advantage of Dual Staking and earn higher reward rates for BTC staking, follow the steps detailed below. 
 
 ### Connecting Bitcoin and Core Wallets
 

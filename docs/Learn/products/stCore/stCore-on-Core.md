@@ -8,7 +8,7 @@ sidebar_position: 2
 ---
 
 ## Introduction
-The Liquid Staking with stCORE enhances the utility of the CORE token while simplifying the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, a valuable tool for CORE token holders seeking to maximize their assets' potential.
+Liquid Staking with stCORE enhances CORE token utility while streamlining the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, enabling token holders to maximize capital efficiency while participating in network security.
 
 ## Getting Started: Prerequisites
 

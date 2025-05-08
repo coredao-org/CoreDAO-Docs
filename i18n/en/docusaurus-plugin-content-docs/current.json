@@ -112,7 +112,7 @@
     "description": "The generated-index page title for category Core Concepts in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Core Concepts.link.generated-index.description": {
-    "message": "Learn about the Nuts and Bolts of the Core Ecossytem!",
+    "message": "Learn about the Nuts and Bolts of the Core Ecosystem!",
     "description": "The generated-index page description for category Core Concepts in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Satoshi Plus Consensus": {
@@ -128,7 +128,7 @@
     "description": "The generated-index page title for category Products in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Products.link.generated-index.description": {
-    "message": "Learn about the different innovative products offered by Core that are helping in unclocking the DeFi landscape for Bitcoin!",
+    "message": "Learn about the different innovative products offered by Core that are helping in unlocking the DeFi landscape for Bitcoin!",
     "description": "The generated-index page description for category Products in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.stCORE": {
