@@ -16,7 +16,7 @@ This guide walks you through the process of setting up a validator node on the C
 
 ### System Requirements for Validator Node
 
-Before you begin, please ensure your system meets the required hardware and software specifications. Note, validator nodes on the Core network are essentially full nodes running in validator mode.
+Before you begin, please ensure your system meets the required hardware and software specifications.
 
 #### Supported OS Platforms
 Currently, the supported OS platforms include Mac OS X, Linux, and Windows.
@@ -81,15 +81,15 @@ make geth
 ```
 This will download and install the necessary dependencies and build the `geth` binary. 
 
-### Setting up the Full Node 
+### Setting up the Node 
 
-There are 2 approaches to setup a full node from scratch on the Core blockchain:
+There are 2 approaches to setup a validator node from scratch on the Core blockchain:
 
 * **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
 * **From Genesis (Not Recommend):** sync the whole Core blockchain data from the[ genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
-Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core full node using the latest snapshot to speed up the process.
+Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
 :::
 
 #### Using the Snapshot (Recommended)
