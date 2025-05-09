@@ -85,8 +85,8 @@ This will download and install the necessary dependencies and build the `geth` b
 
 There are 2 approaches to setup a full node from scratch on the Core blockchain:
 
-* **By Snapshot (Recommend):** download the latest Core blockchain snapshot and sync the node based on it.
-* **From Genesis (Not Recommend):** sync the whole Core blockchain data from the genesis block.
+* **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
+* **From Genesis (Not Recommend):** sync the whole Core blockchain data from the[ genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
 Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core full node using the latest snapshot to speed up the process.
@@ -94,7 +94,7 @@ Syncing from the genesis block can take a significant amount of time. It is reco
 
 #### Using the Snapshot (Recommended)
 
-1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/lates).
+1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
 
 
 2. **Genesis and Configuration Files:** The pre-build binaries contains `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
@@ -155,7 +155,7 @@ Let’s break down the flags used in this command:
 
 - **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
 
-- **`mine`:** Starts the mining process (block validation).
+- **`mine`:** Enables mining/validating (producing blocks) on the network. Essential for validator operation
 
 - **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
 
