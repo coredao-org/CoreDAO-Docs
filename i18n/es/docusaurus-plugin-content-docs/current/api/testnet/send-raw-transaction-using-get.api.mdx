@@ -1,0 +1,66 @@
+---
+id: send-raw-transaction-using-get
+title: Send raw transaction
+description: Send raw transaction
+sidebar_label: Send raw transaction
+hide_title: true
+hide_table_of_contents: true
+api: eJydU11v2zAM/CsGnzZAs7c+6q3YgqLAsA1N+xQYA2MztlBbUiU6TmD4vw+MvdT9xLBHSeTd8XgagLGKoDdwRVwnv4I7HCFX4DwFZOPsdQkaItnyBvvbgDZiIdd30djqanULCjwGbIkpCMwAFlsCDejNPR1BgbGg4aGjIIeSYhGMF4RlTaCHzgQqQXPoSEEsamoR9AB89IIWORhbwTiqM0FNh/fRp4J/h86fA6zJlknAPuHHuUFBS1w7caUiPo3PNWjI0JusIq4z4vr3S8NAQaSw/+tSFxqRyOyjzqQ3ZYp8kW65iKkl7l24z0A0GbtzJ7mGG9F76U3yzRVdS5ZxRn6q+7UKptDGn7s1hb0pBKYLVrOLoKAxBdlIwjFbe+mxqCm5SD+DWijVWdb3fYqn19SFKptbY/b9+uvqx3r1SVpGBTLmpOXLdOFd5BbtguMNc59Mct4R04Ez36CxAnZSNMzGbyRFoGQZNSh4w/xcQe0iS/kwbDHSXWjGUa6n7MhKShNx20hSdthEeqGlcJbJMmj4cDOH6mNyjvCrSuVpEfM9Np0UgcT4v+imTL/DNRU8EuVyCEaYQG/ycRFf+b3j+AczTF2G
+sidebar_class_name: get api-method
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Send raw transaction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_sendRawTransaction"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Send raw transaction
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"hex","in":"query","description":"hex","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>

@@ -44,7 +44,7 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 | RAM                   | 8 Gigabytes                                                                       |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos](../Node/Full-Node/on-testnet.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos](../Node/config/full-node.md)
 
 **Especificaciones de hardware del nodo completo de Mainnet**
 
@@ -55,7 +55,7 @@ Para obtener más detalles, consulte la [Guía de configuración de nodos comple
 | RAM                   | 32 Gigabytes                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/Full-Node/on-testnet.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/config/full-node.md)
 
 ### 4. ¿Qué es un nodo RPC de Core? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core RPC?
 
@@ -81,11 +81,11 @@ Los nodos RPC (llamada a procedimiento remoto) en la red Core desempeñan un pap
 | RAM                   | 32 Gigabytes                                                                                                                                                                                   |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 50Mbps                                                                                                             |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos RPC](../Node/config/rpc-node-config.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos RPC] (../Node/config/rpc-node-config.md)
 
 ### 5. ¿Qué es un nodo validador central? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core Validator?
 
-Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core blockchain.
+Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core.
 
 **Requisitos de software:** Actualmente, un Core Full Node solo puede ejecutarse en Mac OS X y Linux.
 
@@ -111,4 +111,4 @@ Para obtener más detalles, consulte la [Guía de configuración del nodo valida
 
 ### 6. ¿Cómo configuro un nodo completo en Core blockchain?
 
-Consulte la guía detallada [aquí](../Node/Full-Node/on-mainnet.md) sobre cómo configurar y ejecutar un nodo completo en la red Core.
+Consulte la guía detallada [aquí](../Node/config/full-node.md) sobre cómo configurar y ejecutar un nodo completo en la red Core.

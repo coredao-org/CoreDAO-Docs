@@ -8,13 +8,13 @@ sidebar_position: 2
 
 ## Binario
 
-Se sugiere a todos los clientes que actualicen a la última versión. Se supone que la [última versión](https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
+Se sugiere a todos los clientes que actualicen a la última versión. Se supone que la [última versión] (https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
 
 ## Almacenamiento
 
 ### Estado de poda
 
-Según la prueba, el rendimiento de un nodo completo se degradará cuando el tamaño de almacenamiento alcance un volumen alto (anteriormente era 1,5 TB, que es un valor experimental, el último número debe actualizarse). Sugerimos que el nodo completo siempre mantenga un almacenamiento ligero podándolo.
+Según las pruebas realizadas, el rendimiento de un nodo completo se degrada cuando el tamaño del almacenamiento alcanza un volumen alto (aproximadamente 1.5TB, lo cual es un valor experimental). Sugerimos que el nodo completo siempre mantenga un almacenamiento ligero podándolo.
 
 #### Reglas de poda
 
@@ -65,4 +65,4 @@ Cuando el nodo falla o se cierra a la fuerza, el nodo se sincronizará desde un 
 
 ## Actualizar Geth
 
-Lea [esta guía](network-upgrade.md)
+Lea [esta guía] (network-upgrade.md)

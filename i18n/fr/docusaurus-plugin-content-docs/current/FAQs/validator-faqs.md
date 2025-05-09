@@ -88,7 +88,7 @@ Voici un aperçu détaillé des risques et pénalités auxquels les validateurs 
 4. **Perte de délégation :** les délégateurs peuvent retirer leur soutien si un validateur performe mal ou est fréquemment pénalisé.
 5. **Risques opérationnels et de sécurité :** les validateurs doivent maintenir des opérations sûres et efficaces 24h/24. Des défaillances opérationnelles ou des violations de sécurité peuvent entraîner des dommages financiers et réputationnels.
 
-### 9) Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core ?
+### 8. Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core?
 
 Le processus d'élection des validateurs dans le mécanisme Satoshi Plus sur le réseau Core implique différentes étapes qui intègrent des éléments de Preuve de Travail (PoW) et de Preuve d'Enjeu (PoS) :
 
@@ -109,7 +109,7 @@ Où :
 
 4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
-### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
+### 9. Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
 
 Le "slashing" est une pénalité appliquée aux validateurs pour mauvaise conduite ou manquements à leurs devoirs. Dans le réseau Core, le slashing peut affecter les récompenses et les mises déposées.
 
@@ -124,6 +124,6 @@ Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 1. Ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un emprisonnement de trois jours, pendant lesquels ils ne peuvent pas être élus dans le groupe de validateurs.
 2. La double signature peut entraîner le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
 
-### 11) À quelle fréquence les validateurs doivent-ils être en ligne ?
+### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
 
 Les validateurs sont généralement censés être en ligne et participer activement presque en continu.

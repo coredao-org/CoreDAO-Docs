@@ -1,5 +1,5 @@
 ---
-sidebar_label: Preguntas frecuentes sobre el validador Core
+sidebar_label: Preguntas frecuentes sobre validadores en Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -12,12 +12,12 @@ sidebar_position: 2
 
 En el ecosistema Core, "validador" se refiere a nodos o participantes en la red blockchain que son responsables de verificar, validar y agregar nuevas transacciones a la cadena de bloques. Los validadores desempeñan un papel fundamental en el mantenimiento y la seguridad de la red.
 
-### 2. ¿Cómo se recompensa a los validadores en el ecosistema Core blockchain?
+### 2. ¿Cómo se recompensa a los validadores en el ecosistema Core Chain?
 
 - 1. Para registrarse como validador en Core, debe ejecutar un nodo completo en modo validador. Lea las guías sobre [configurar nodos de validación](../Node/config/validator-node-config.md) y [ejecutar nodos de validación](../Node/validator/running-validator.md) para obtener información sobre cómo configurar esto. .
   2. Una vez terminado, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de apuestas:
-     1. [Mainnet stake website](https://stake.coredao.org)
-     2. [Testnet stake website](https://stake.test.btcs.network)
+    1. [Mainnet stake website](https://stake.coredao.org)
+    2. [Testnet stake website](https://stake.test.btcs.network)
   3. Conecte su billetera seleccionando **Conectar billetera** en la parte superior derecha.
   4. Una vez conectado, el botón **registrarse** debería aparecer en la parte superior derecha. Al seleccionar **registrarse** se abre el siguiente formulario de entrada:
 
@@ -36,7 +36,7 @@ Proporcione información para cada uno de los campos del formulario:
 
 ### 3. ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo de validación en Core?
 
-Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core blockchain.
+Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core.
 
 **Requisitos de software:** Actualmente, un Core Full Node solo puede ejecutarse en Mac OS X y Linux.
 
@@ -58,7 +58,7 @@ Los validadores son cruciales para proteger la red mediante la producción de bl
 | RAM                   | 32 Gigabytes                                                                                                                                                                                   |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 10Mbps                                                                                                             |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. ¿Cuáles son los riesgos/penalizaciones que implica ser validador?
 
@@ -78,7 +78,7 @@ Tanto las recompensas básicas como las tarifas de transacción se calculan y di
 
 El tiempo de ciclo para que Core distribuya recompensas actualmente está establecido en **1 día**. Cada día, **23** validadores con las puntuaciones híbridas más altas son elegidos para el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. En el último bloque de cada ronda, se calculan y distribuyen las recompensas acumuladas de la ronda.
 
-### 7. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core blockchain?
+### 7. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core Chain?
 
 A continuación se ofrece una descripción general condensada de los posibles riesgos y sanciones para los validadores en el ecosistema Core:
 
@@ -127,3 +127,4 @@ Hay dos escenarios en los que los validadores pueden ser encarcelados.
 ### 11. ¿Con qué frecuencia los validadores deben estar en línea?
 
 En general, se espera que los validadores estén en línea y participen activamente casi continuamente.
+

@@ -15,11 +15,11 @@ Generalmente se incurre en sanciones de reducción porque un nodo no logra produ
 - Si un nodo validador no logra minar **50 bloques** seguidos, las recompensas de tokens CORE que el validador ha acumulado hasta el momento se reducen por completo.
 - Si un nodo de validación no logra extraer los primeros **49 bloques** en una ronda y luego pierde el último bloque de la misma ronda, esto dará lugar a una reducción de todas las recompensas de tokens CORE que el validador ha acumulado hasta el momento.
 - Si fallan en los últimos **50** bloques de la ronda, entregarán todo lo que han ganado.
-- Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador y es encarcelado por \* _tres_\* días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
+- Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador (ej: 1,000 CORE) y es encarcelado por **tres** días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
 ## Doble signo
 
-Cualquiera puede enviar una solicitud de barra diagonal en CoreChain con la evidencia de Double Sign de CoreChain.
+Cualquier persona puede presentar una solicitud de "slash" con evidencia de actividad de firmado doble en la blockchain de Core.
 
 ### Validación de evidencia
 
@@ -30,7 +30,8 @@ Cualquiera puede enviar una solicitud de barra diagonal en CoreChain con la evid
 
 Si la evidencia es válida:
 
-1. **1000 CORE** se eliminarían del CORE con margen propio del validador
+1. **10,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
 4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
+

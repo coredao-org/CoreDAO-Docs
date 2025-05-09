@@ -1,32 +1,59 @@
 ---
-sidebar_label: RPC Endpoints
+sidebar_label: Proveedores de RPC
 hide_table_of_contents: false
 sidebar_position: 2
+description: Lista de endpoints RPC para Testnet y Mainnet
 ---
 
-# Endpoints RPC de la red Core Blockchain
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Endpoints RPC para Core Network
 
 ---
 
-Los puntos finales de llamada a procedimiento remoto (RPC) son cruciales para que los desarrolladores y las aplicaciones interactúen directamente con la cadena de bloques, lo que les permite recuperar datos, enviar transacciones y ejecutar smart contratos sin problemas. La disponibilidad de los puntos finales de la red principal y de la red de prueba facilita las fases de desarrollo y prueba, lo que permite a los desarrolladores crear, probar e implementar sus aplicaciones en un entorno controlado antes de lanzarlas. Ya sea que esté buscando implementar una aplicación descentralizada, realizar transacciones o acceder a datos de blockchain, estos puntos finales RPC son herramientas esenciales para navegar y aprovechar el ecosistema Core blockchain.
+Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los desarrolladores se conecten directamente con la blockchain, permitiendo la recuperación de datos, la ejecución de transacciones y la gestión de contratos inteligentes. Con endpoints disponibles tanto para mainnet como para testnet, los desarrolladores pueden probar y desplegar sus aplicaciones sin problemas dentro del ecosistema de la blockchain Core.
 
-## Endpoints RPC para Core Blockchain
+## Endpoints RPC para la red de Core
 
-### Red de prueba central de blockchain (1114 (0x45a))
+<Tabs defaultValue="testnet2" values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet1', value: 'testnet1'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
 
-_Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza soporte continuo y acceso a las funciones más recientes.
+### Core Blockchain Testnet2 (1114 (0x45a))
+
+:::info
+Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
+:::
 
 - https://rpc.test2.btcs.network
+- https://rpcar.test2.btcs.network (Para Archive Node)
+
+</TabItem>
+<TabItem value="testnet1">
 
 ### Core Blockchain Testnet (1115 (0x45b))
 
+:::caution
+La Testnet1 quedará obsoleta y eventualmente será retirada. Se recomienda trasladarse a la Core Testnet2 para soporte continuo y acceso a las características más recientes.
+:::
+
 - https://rpc.test.btcs.network
+
+</TabItem>
+
+<TabItem value="mainnet">
 
 ### Core Blockchain Mainnet (1116 (0x45c))
 
 - wss://ws.coredao.org
 - https://rpc.coredao.org
 - https://rpcar.coredao.org (For Archive Node)
+
+</TabItem>
+</Tabs>
 
 ### Endpoints RPC de terceros para Core Blockchain Mainnet
 

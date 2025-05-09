@@ -8,38 +8,55 @@ sidebar_position: 2
 
 ---
 
-Detalles de mainnet y testnet
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-## Core red de prueba
+<Tabs defaultValue="testnet2" values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet1', value: 'testnet1'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+:::info
+This is the latest testnet and is strongly recommended for use. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
+:::
 
-### (Último) Testnet central de Blockchain (1114 (0x45a))
+| **Parámetro**                     | **Valor**                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **RPC URL**                       | https://rpc.test2.btcs.network         |
+| **ID de cadena**                  | 1114 (0x45a)                                                                        |
+| **Símbolo de Moneda**             | tCORE2                                                                                                 |
+| **URL del Explorador de Bloques** | https://scan.test2.btcs.network        |
+| **Faucet**                        | https://scan.test2.btcs.network/faucet |
+| **Sitio web de Staking**          | https://stake.test2.btcs.network/      |
 
-_Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza soporte continuo y acceso a las funciones más recientes.
+</TabItem>
+<TabItem value="testnet1">
+:::caution
+La Testnet1 quedará obsoleta y eventualmente será retirada. Se recomienda trasladarse a la Core Testnet2 para soporte continuo y acceso a las características más recientes.
+:::
 
-- **Nombre de la red:** Red de pruebas de la cadena de bloques principal
-- **URL de RPC:** https://rpc.test2.btcs.network
-- **ID de cadena:** 1114 (0x45a)
-- **Símbolo de moneda:** tCORE2
-- **Símbolo de moneda:** tCORE2
-- **Grifo:** https://scan.test2.btcs.network/faucet
-- **Sitio web de apuestas:** https://stake.test2.btcs.network/
+| **Parámetro**                     | **Valor**                                                                                             |
+| --------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| **RPC URL**                       | https://rpc.test.btcs.network         |
+| **ID de cadena**                  | 1115 (0x45b)                                                                       |
+| **Símbolo de Moneda**             | tCORE                                                                                                 |
+| **URL del Explorador de Bloques** | https://scan.test.btcs.network        |
+| **Faucet**                        | https://scan.test.btcs.network/faucet |
+| **Sitio web de Staking**          | https://stake.test.btcs.network/      |
 
-### Red de prueba central de blockchain (1115 (0x45b))
+</TabItem>
 
-- **Nombre de la red:** Core Blockchain Testnet
-- **URL de RPC:** https://rpc.test.btcs.network
-- **Chain ID:** 1115 (0x45b)
-- **Símbolo monetario:** tCORE
-- **URL del explorador de bloques:** https://scan.test.btcs.network
+<TabItem value="mainnet">
 
-Para importar detalles de la cadena Core Testnet a MetaMask, consulte nuestra [guía del usuario de Core Testnet] (./core-testnet-wallet-config.md).
-
-## Core red principal
-
-- **Nombre de la red:** Red principal de la cadena de bloques principal
-- **URL de RPC:** https://rpc.coredao.org/
-- **ID de cadena** 1116 (0x45c)
-- **Símbolo monetario:** CORE
-- **URL del explorador de bloques:** https://scan.coredao.org
+| **Parámetro**                     | **Valor**                                                                  |
+| --------------------------------- | -------------------------------------------------------------------------- |
+| **RPC URL**                       | https://rpc.coredao.org/   |
+| **ID de cadena**                  | 1116 (0x45c)                                            |
+| **Símbolo de Moneda**             | CORE                                                                       |
+| **URL del Explorador de Bloques** | https://scan.coredao.org   |
+| **Sitio web de Staking**          | https://stake.coredao.org/ |
 
 Para importar detalles de la cadena Core Mainnet a MetaMask, consulte nuestra guía sobre [agregar Core a MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
+
+</TabItem>
+</Tabs>

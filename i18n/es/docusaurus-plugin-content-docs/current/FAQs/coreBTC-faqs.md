@@ -8,9 +8,13 @@ sidebar_position: 2
 
 ---
 
+:::warning
+coreBTC ha sido discontinuado. lstBTC se lanzará pronto como un reemplazo mejorado.
+:::
+
 ### 1. ¿Qué es coreBTC? ¿Cuál es el propósito de coreBTC?
 
-coreBTC es un Bitcoin nativo envuelto en Core, que mantiene una vinculación 1:1 con BTC a través de un mecanismo seguro. Permite a los usuarios de Bitcoin interactuar sin problemas con el espacio DeFi en el Core compatible con EVM utilizando sus activos BTC, ampliando la funcionalidad de Bitcoin dentro del panorama DeFi sin comprometer su seguridad inherente.
+coreBTC es un Bitcoin nativo envuelto en Core, que mantiene una vinculación 1:1 con BTC a través de un mecanismo seguro. Los usuarios de Bitcoin pueden interactuar sin problemas con el espacio DeFi en el ecosistema Core compatible con EVM, utilizando sus activos en BTC. Amplía la funcionalidad de Bitcoin dentro del panorama DeFi sin comprometer su seguridad inherente.
 
 ### 2. ¿En qué se diferencia coreBTC de los tokens empaquetados centralizados (por ejemplo, WBTC)?
 
@@ -32,7 +36,7 @@ Los participantes clave sin permiso en el ecosistema coreBTC incluyen:
 
 ### 6. ¿Cómo se garantiza la seguridad de coreBTC?
 
-Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente por [Halborn](https://www.halborn.com/), una empresa compatible con SOC2 Tipo 1 reconocida por su experiencia en seguridad de smart contratos y [con la confianza de](https://www.halborn.com/about/who-trusts-us) plataformas blockchain líderes como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap.
+Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente por [Halborn](https://www.halborn.com/), una empresa compatible con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [con la confianza de](https://www.halborn.com/about/who-trusts-us) plataformas blockchain líderes como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap.
 
 ### 7. ¿Dónde puedo obtener más información sobre coreBTC y otros proyectos Core?
 

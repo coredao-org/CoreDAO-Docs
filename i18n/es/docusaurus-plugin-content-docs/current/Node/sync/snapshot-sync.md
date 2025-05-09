@@ -12,7 +12,7 @@ En la red Core, puede sincronizar su nodo con el último estado de la cadena de 
 
 ## Sincronizar desde instantánea (recomendado)
 
-Descargue los binarios precompilados desde la [página de lanzamiento](https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
+Descargue los binarios precompilados desde la [página de lanzamiento] (https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
 
 #### Linux
 
