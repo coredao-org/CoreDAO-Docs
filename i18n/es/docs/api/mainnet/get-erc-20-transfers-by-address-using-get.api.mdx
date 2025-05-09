@@ -1,0 +1,66 @@
+---
+id: get-erc-20-transfers-by-address-using-get
+title: Get list of ERC20 transfer events by address
+description: Get list of ERC20 transfer events by address
+sidebar_label: Get list of ERC20 transfer events by address
+hide_title: true
+hide_table_of_contents: true
+api: eJylVV2PmzAQ/Cton1qJhjSPfkuv0emkqpXu4+kURQ4swTqwffaSFCH+e2ViCGlSStM3sMczu+x4qIH4zgJ7hWUcq1KShXUISqPhJJR8SIDBDmn1eLeYPxsubYrGfqmWSWLQ2hcr5O5+9QwhaG54gYTGkdUgeYHAgB9xEIKQwEBzyiCEBG1shHYCZxiD76UwmAAjU2IINs6w4MBqoEo7OktGyB00TXhS0OINq07gvURTXSp0mFsEUCbbXMVv4xID1BRSlaYWaZyyx0wh1HyH43QeMYXMKvOX2jxiEhlxQxO+4Bnuz8Tr38/dIwW5sBSoNGhtGpD3aYB7lGSDbRWcPFYgZcq7urUtZcAg4lpE3N+AyNFtVLpBEy/mm45uc6TbbKuNp4tq/9C4ktHsO/eXJgcGGZG2LIqURsm1mMXKYMLVTJldBK4RIVPV9igod00utQi+qrgsUFJ7/S4+0jUEoSnsj/QJzV7EjqY0kpFyzeYiRmnRafhpLDWPMwwWszmEgzJZFB0Ohxlvd9sC/VEbfXu4W31/Wn1yR5oQXI/HWj4fF7SyVHA50PjHiZx12A+c8CdFOudCOpG20tpP69VdaAihm1fb6LSJQQise1yHkClLjq+ut9zii8mbxi0fDeoGmQjLt7kLjJTnFi+KjZUklAQMPjz6bPkY9HFztRW3NYikPc9LBwJ3ZabLDfJmRGWAulGnD6ERlR5zo4ZPphEFj7iR34fVCL9H3Mo/TK4xlSHupLV2L0Y4sf/wXO/vqwX4RS7PLNeb0R9u1s0gIN1/vWl+AftHxnc=
+sidebar_class_name: get api-method
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of ERC20 transfer events by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_erc20_transfer_events_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get list of ERC20 transfer events by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
