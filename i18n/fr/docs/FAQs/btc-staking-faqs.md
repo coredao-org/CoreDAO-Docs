@@ -14,7 +14,7 @@ Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparen
 
 ### 2\. How does Self-Custodial Bitcoin Staking work?
 
-With Self-Custodial Bitcoin Staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. For more details on how Self-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/btc-staking-working.md).
+With Self-Custodial Bitcoin Staking, Core's protocol incorporates bitcoin holders into its consensus mechanism, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Para obtener más detalles sobre cómo funciona el staking de Bitcoin sin custodia, consulte [aquí](../Learn/products/btc-staking/btc-staking-working.md).
 
 ### 3\. What are the advantages of Self-Custodial Bitcoin Staking?
 
