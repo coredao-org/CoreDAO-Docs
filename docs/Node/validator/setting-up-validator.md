@@ -124,12 +124,9 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address which will be your validator's address (consensus address).
 
 ```bash
-./build/bin/geth account new --datadir ./node
+# generate the consensus key and input the password
+geth account new --datadir ./node
 ```
-
-Make sure to follow these key considerations:
-    * **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-    * **Backup Your Key:** Losing access to this key means losing control over your validator node.
 
 You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
 
@@ -137,10 +134,17 @@ You'll be prompted to enter a password. This password is essential for unlocking
 echo {your-password} > password.txt
 ```
 
+Make sure to follow these key considerations:
+    * **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
+    * **Backup Your Key:** Losing access to this key means losing control over your validator node.
+
 6. **Start the Validator Node:**
 
+Use the following command to start the validator node.
+
 ```bash
-./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
+# start a validator node
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
 ```
 
 Let’s break down the flags used in this command:
@@ -160,63 +164,6 @@ Let’s break down the flags used in this command:
 - **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
 
 - **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
-
-<!-- ```bash
-## pls replace <datadir> with your local path to datadir.
-./geth --config ./config.toml --datadir <datadir>  --cache 8000
-```
-
-```bash
-./geth --config ./config.toml --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
-```
-
-
-### Start the Validator Node
-
-Once the set up is completed, it’s time to start the validator node! 
-
-#### Option 1: Start the Full Node with Options
-
-```bash
-./build/bin/geth --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
-```
-
-This command does the following:
-
-- **`datadir ./node`:** Tells the node where to store its blockchain data.
-
-- **`cache 8000`:** Allocates 8 GB of RAM to help the node run more efficiently.
-
-- **`rpc.allow-unprotected-txs`:** Allows the node to send unprotected transactions (needed for validator actions).
-
-- **`networkid 1116`:** Specifies which network the node should join. 1114 for Core Testnet2, 1115 for Core Tesnet and 1116 for Core Mainnet.
-
-However, if you're having trouble finding peers (meaning the node can’t connect to other nodes), you can use the configuration file to help it start with bootstrap nodes. This file has some predefined settings to make the process easier.
-
-#### Option 2: Start the Node with the Configuration File
-
-```bash
-./build/bin/geth --config ./config.toml --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --networkid 1116
-```
-
-This command uses a configuration file (`config.toml`) that helps the node connect to peers more easily.
-
-#### Option 3: Start the Node with the Consensus Key
-If you plan to run a validator node, you'll need to set up the consensus key before running the node. Make sure to keep your keystore saved.
-
-```bash
-# generate the consensus key and input the password
-geth account new --datadir ./node
-echo {your-password} > password.txt
-# start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
-```
-
-:::info
-A bootstrap node is essentially a "helper" node used to kickstart your connection to the network, especially when your node is struggling to find peers. When you first start your node, it needs to connect with other nodes to sync up and start participating in the blockchain. This process is called peer discovery.
-
-Without bootstrap nodes, your node might not be able to find any peers, especially if it's new and doesn't have any connections yet. Bootstrap nodes provide a list of known peers that your node can connect to initially. Once it connects to these peers, it can then start discovering other peers on its own.
-::: -->
 
 ## Monitor Logs
 
