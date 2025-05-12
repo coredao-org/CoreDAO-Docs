@@ -51,6 +51,26 @@ Liquidity pools from a whitelisted DEX dApp that includes at least one whitelist
 
 ---
 
+## Core Ignition Leaderboard
+
+### 1. Leaderboard
+
+Ranks users based on a combination of assets & dApp engagments, transaction count, and transaction volume, rewarding overall contribution to the ecosystem.
+
+<p align="center">
+  <img width="900" alt="Screenshot 2025-05-12 at 8 51 44 PM" src="https://github.com/user-attachments/assets/39d78e16-e6a1-4787-b0f3-14d4dfb1f112" />
+</p>
+
+### 2. Activity Leaderboard
+
+Ranks users by transaction count and volume, rewarding both frequent activity and high-value moves. Designed to give everyday users fair recognition through Spark Boosts, regardless of wallet size.
+
+<p align="center">
+  <img width="900" alt="Screenshot 2025-05-12 at 8 52 02 PM" src="https://github.com/user-attachments/assets/674c4743-7299-4d75-877f-823621182cc6" />
+</p>
+
+---
+
 ## Comment Booster les Sparks
 
 Les Sparks sont des points cumulatifs reflétant le niveau d'activité des utilisateurs dans l'écosystème Core, mis à jour quotidiennement à 00:00 UTC et apparaissant sur le classement. Les utilisateurs gagnent des Sparks quotidiennement grâce à :
@@ -146,7 +166,7 @@ With the new Coretoshi Attribution layer, Coretoshi NFT holders now enjoy extra 
 
 > _**Example Calculation:**_
 > If a Coretoshi holder trades the equivalent of $51,000 in volume a day, this holder will receive:\
-> Daily Volume Sparks: 1.5x \* [(51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x]  = 18,675
+> Daily Volume Sparks: 1.5x \* [(51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x]  = 183,675
 
 <p align="center">
   <img width="500" alt="Coretoshi_Attribution" src="https://github.com/user-attachments/assets/14619a45-9244-433a-89b5-195e7fa10dc0" />
