@@ -46,3 +46,23 @@ El programa de incentivos Core Ignition recompensa a los usuarios leales para fo
 - Lee [nuevas publicaciones en el blog](https://coredao.org/explore/blog)
 - Únete a los canales de la comunidad Core - [Discord](https://discord.com/invite/coredaoofficial) y [Telegram](https://t.me/CoreDAOTelegram) para discusiones y actualizaciones regulares.
 
+### 7. What’s the difference between the Leaderboard and the Activity Leaderboard?
+
+Both track valuable user contributions but focus on different aspects:
+
+- Activity Leaderboard highlights how actively a user engages with Core, based on transaction count and volume.
+- Overall Leaderboard considers not only user activity but also asset holdings and participation in dApps like lending, borrowing, and liquidity provision.
+
+In both cases, long-term support for the Core ecosystem is valued. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contribution in Ignition.
+
+### 8. What’s the difference between wrapping and swapping on Core Ignition?
+
+Wrapping means converting a token into its wrapped version, for example, turning CORE into wCORE for use in dApps. Swapping, on the other hand, involves exchanging one token for a different asset, such as swapping CORE for USDT.
+
+> Example:
+>
+> - CORE → wCORE is wrapping, not swapping. This is simply converting CORE into its wrapped version for use in dApps.
+> - CORE → USDT is considered a swap, as it involves exchanging CORE for a different asset.
+> - wCORE → USDT is also considered a swap, exchanging wCORE for a different token.
+
+
