@@ -25,8 +25,8 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
 1. Invitar a otros a participar en Core Ignition.
 2. Transferir activos específicos a Core.
 3. Mantener activos específicos en Core.
-4. Ejecutar transacciones interactuando con contratos inteligentes.
-5. Participar en dApps dentro del ecosistema de Core, incluyendo, pero no limitado a, DEXs, protocolos de préstamos, futuros perpetuos, etc.
+4. Executing transactions interacting with smart contracts;
+5. Participating in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
 
 ## Cómo Empezar
 
