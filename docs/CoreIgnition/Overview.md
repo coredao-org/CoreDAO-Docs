@@ -21,8 +21,8 @@ By participating in the Core Ignition user incentive program, users gain access 
  1. Inviting others to engage in Core Ignition;
  2. Bridging specific assets to Core;
  3. Holding specific assets on Core;
- 4. Execute transactions interacting with smart contracts;
- 5. Participate in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
+ 4. Executing transactions interacting with smart contracts;
+ 5. Participating in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
 
 ## Get Started
 1. Visit [Core Ignition website](https://ignition.coredao.org).
