@@ -59,7 +59,7 @@ Pour garantir qu'une transaction de staking de BTC est valide et détectée par 
 | Méthode                          | Montant minimum de BTC stakés | Durée minimale de verrouillage  |
 | -------------------------------- | ----------------------------- | ------------------------------- |
 | Interface utilisateur officielle | 0.01 BTC      | 5 jours                         |
-| Script de staking                | Aucun minimum                 | Aucune exigence de verrouillage |
+| **Script de staking**            | Aucun minimum                 | Aucune exigence de verrouillage |
 
 ### Flux de transaction
 
@@ -109,42 +109,42 @@ Après confirmation de la transaction sur le réseau Bitcoin, les utilisateurs p
 
 Voici un aperçu de la chronologie pour passer une commande de staking de Bitcoin et quand les récompenses prennent effet :
 
-1. **Timelock Confirmation:** Once a Bitcoin timelock transaction is broadcast, it requires confirmation on the Bitcoin blockchain (typically 6 blocks or approximately 60 minutes) before Core's relayers will recognize it.
-2. **Core Network Recognition:** After the timelock transaction is confirmed on Bitcoin, Core's relayers detect the delegation information and include it in the validator election calculations for the next round.
-3. **Rewards Activation:** Validator election occurs once per round (~24 hours, based on UTC+0 time). Timelocked Bitcoin will influence validator election and generate rewards starting from the first round after transaction confirmation.
-4. **Data Availability:** Once the timelocked Bitcoin is actively participating in consensus, all related staking data becomes accessible via the Core Staking API.
+1. **Confirmation du verrouillage temporel :** Une fois qu'une transaction de verrouillage temporel Bitcoin est diffusée, elle nécessite une confirmation sur la blockchain Bitcoin (généralement 6 blocs ou environ 60 minutes) avant que les relais de Core ne la reconnaissent.
+2. **Reconnaissance par le réseau Core :** Après confirmation de la transaction de verrouillage temporel sur Bitcoin, les relais de Core détectent les informations de délégation et les incluent dans les calculs d'élection des validateurs pour le prochain tour.
+3. Activation des récompenses : L'élection des validateurs a lieu une fois par tour (~24 heures, basé sur l'heure UTC+0). Le Bitcoin verrouillé temporairement influencera l'élection des validateurs et générera des récompenses à partir du premier tour après confirmation de la transaction.
+4. **Disponibilité des données :** Une fois que le Bitcoin verrouillé temporairement participe activement au consensus, toutes les données de jalonnement associées deviennent accessibles via l'API de jalonnement Core.
 
-#### **Example: Bitcoin Staking Transaction with 2-day Duration**
+#### Exemple : Transaction de staking de Bitcoin d'une durée de 2 jours
 
-- Assume a timelock order is placed at 6:00 AM UTC+0 today.
-- The transaction will go through 6 Bitcoin blocks on the same day.
-- The staking will become effective at 00:00 AM UTC+0 on the second day.
-- After the staking goes effective, the staking data is then accessible.
+- Supposons qu'une commande de verroullage soit passée à 6h00 UTC+0 aujourd'hui.
+- La transaction passera par 6 blocs Bitcoin le même jour.
+- Le staking prendra effet à 00h00 UTC+0 le deuxième jour.
+- Après que le staking soit effectif, les données de staking sont alors accessibles.
 
-#### **Example: Bitcoin Staking Transaction with 3-day Duration**
+#### **Exemple : Transaction de staking de Bitcoin d'une durée de 3 jours**
 
-- Assume a staking order is placed at 11:30 PM UTC+0.
-- The transaction will go through 6 Bitcoin blocks on the next day.
-- The staking will become effective at 12:00 AM UTC+0 on the third day.
+- Supposons qu'une commande de staking soit passée à 23h30 UTC+0.
+- La transaction passera par 6 blocs Bitcoin le jour suivant.
+- Le staking prendra effet à 00h00 UTC+0 le troisième jour.
 
 ### Lignes directrices pour le staking et le rachat de Bitcoin
 
-Follow these guidelines to ensure efficient Bitcoin timelocking and redemption:
+Suivez ces directives pour garantir un verrouillage temporel et un remboursement efficaces du Bitcoin :
 
-1. **Include Sufficient Fees**
+1. **Incluez des frais de gaz suffisants**
 
-- Transactions with low fees may experience delayed confirmation times.
-- Use a competitive fee rate (measured in sats/vB) to ensure timely processing.
-- During periods of network congestion, insufficient fees may result in your transaction remaining in the mempool for an extended period (potentially days).
+- Les transactions avec des frais de gaz bas peuvent connaître des temps de confirmation longs
+- Utilisez un taux de frais compétitif (mesuré en sats/vB) pour garantir un traitement rapide de votre transaction de verrouillage temporel sur le réseau Bitcoin.
+- Pendant les périodes de congestion du réseau, des frais insuffisants peuvent entraîner le maintien de votre transaction dans le mempool pendant une période prolongée (potentiellement plusieurs jours).
 
-2. **Handling Delayed Transactions**
+2. **Gestion des transactions retardées**
 
-- If your Bitcoin transaction is stuck due to low fees, consider using a transaction accelerator service.
-- Several mining pools offer acceleration services, such as viaBTC.
-- Alternatively, if your wallet supports Replace-By-Fee (RBF), you can increase the fee on your pending transaction.
+- Si votre transaction Bitcoin est retardée en raison de frais de gas bas, envisagez d'utiliser un accélérateur de transaction pour accélérer le processus.
+- Plusieurs pools miniers proposent des services d'accélération, tels que viaBTC, pour aider à accélérer les transactions Bitcoin retardées en les incluant dans les blocs plus rapidement.
+- Vous pouvez également augmenter les frais de votre transaction en attente si votre portefeuille prend en charge la fonctionnalité Replace-By-Fee (RBF), ce qui peut aider à accélérer son traitement par le réseau Bitcoin.
 
 ## Conclusion
 
-Bitcoin Timelocking transforms Bitcoin from a passive store of value into a productive asset that generates yield while maintaining self-custody. By leveraging Bitcoin's native CLTV mechanism, holders can participate in Core's consensus, contribute to validator selection, and earn CORE rewards—all while their Bitcoin remains securely on the Bitcoin blockchain. This integration exemplifies how Core extends Bitcoin's utility without compromising its fundamental security properties.
+Le verrouillage temporel du Bitcoin transforme le Bitcoin d'un simple stockage de valeur passif en un actif productif qui génère des rendements tout en maintenant l'auto-garde. En utilisant le mécanisme CLTV natif de Bitcoin, les détenteurs peuvent participer au consensus de Core, contribuer à la sélection des validateurs et gagner des récompenses CORE, tout en gardant leur Bitcoin en toute sécurité sur la blockchain Bitcoin. Cette intégration illustre comment Core étend l'utilité du Bitcoin sans compromettre ses propriétés de sécurité fondamentales.
 
 Pour un guide détaillé sur la conception des transactions de staking, consultez [ici](design.md).
