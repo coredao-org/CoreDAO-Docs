@@ -9,7 +9,7 @@ description: Récompenses dans l'écosystème Core
 
 ---
 
-The Core network is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins Satoshi Plus consensus, upholding network security, stakeholder engagement, and alignment of interests among all participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
+L'écosystème Core est conçu pour inciter à la participation et sécuriser l'engagement de sa communauté à travers un système de récompenses bien structuré. Ce système soutient le mécanisme de consensus Satoshi Plus, garantissant la sécurité du réseau, l'engagement des parties prenantes et l'alignement des intérêts de tous les participants. Le système de récompenses est fondamental pour encourager la communauté à participer activement au minage, au staking et à la gouvernance, renforçant ainsi la santé et la croissance globale de l'écosystème.
 
 ## Types de récompenses
 
@@ -17,19 +17,19 @@ The Core network is designed to incentivize participation and secure commitment 
 
 ### 1. Récompenses de minage
 
-- **Description:** Les récompenses de minage sont accordées aux mineurs de Bitcoin qui contribuent leur puissance de hachage pour sécuriser la blockchain Core. This process extends the traditional mining efforts on the Bitcoin blockchain to include support for the Core blockchain, without requiring miners to divert resources from their Bitcoin mining activities.
+- **Description:** Les récompenses de minage sont accordées aux mineurs de Bitcoin qui contribuent leur puissance de hachage pour sécuriser la blockchain Core. Ce processus étend les efforts de minage traditionnels sur la blockchain Bitcoin pour inclure le soutien à blockchain Core, sans exiger que les mineurs détournent des ressources de leurs activités de minage de Bitcoin.
 - **Mécanisme:** Les mineurs incluent des métadonnées spécifiques dans les blocs Bitcoin qu'ils minent, indiquant leur soutien à la blockchain Core. En échange de leur contribution, les mineurs reçoivent des tokens CORE en tant que récompenses supplémentaires, en plus de leurs récompenses régulières de minage Bitcoin.
 
 ### 2. Récompenses de staking
 
-- **Description:** Staking rewards are distributed to Bitcoin and CORE token holders who stake and delegate their tokens to Core validators.
-- **Mechanism:**  Staking allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to participate in the election of the active validator set by delegating their holdings to their preferred validators. Pour le staking des jetons CORE, l'exigence minimale de staking est de **1 jeton CORE**, permettant à tout détenteur de CORE de jalonner sur le réseau Core. Du côté du staking Bitcoin, la configuration actuelle n'impose aucune exigence minimale de BTC lors de l'utilisation du script de staking. Cependant, le staking via l'interface utilisateur officielle du site web nécessite un minimum de 0,01 BTC (hors frais de transaction). Les détenteurs de jetons CORE et de Bitcoin peuvent déléguer leurs jetons respectifs aux validateurs de leur choix via le site officiel de [staking website](https://stake.coredao.org/staking). The rewards earned by stakers are proportional to the amount of Bitcoin/CORE staked, incentivizing long-term holding and participation in the consensus process.
+- **Description:** Les récompenses de staking sont distribuées aux détenteurs de Bitcoin et CORE qui jalonne et délèguent leurs jetons avec les validateurs sur le réseau Core.
+- **Mécanisme:** La DPoS permet aux détenteurs de jetons CORE et de [Bitcoin](../../products/btc-staking/overview.md) de voter et de participer à l'élection du groupe de validateurs en déléguant leurs avoirs aux validateurs de leur choix. Pour le staking des jetons CORE, l'exigence minimale de staking est de **1 jeton CORE**, permettant à tout détenteur de CORE de jalonner sur le réseau Core. Du côté du staking Bitcoin, la configuration actuelle n'impose aucune exigence minimale de BTC lors de l'utilisation du script de staking. Cependant, le staking via l'interface utilisateur officielle du site web nécessite un minimum de 0,01 BTC (hors frais de transaction). Les détenteurs de jetons CORE et de Bitcoin peuvent déléguer leurs jetons respectifs aux validateurs de leur choix via le site officiel de [staking website](https://stake.coredao.org/staking). Les récompenses gagnées par les stakers sont proportionnelles à la quantité de Bitcoin/CORE stakés et à la durée du staking, incitant à la détention à long terme et à la participation au processus de consensus.
 
 ### 3. Récompenses des validateurs
 
-- **Description:** Validators earn rewards for their role in processing transactions, producing new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating validators for their efforts and operational costs.
-- **Mechanism:** Validators receive a combination of CORE block rewards and gas fees. Il existe deux catégories de récompenses de validateur:
-    1. **Block rewards**, i.e. newly minted CORE tokens;
+- **Description:** Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels.
+- **Mécanisme :** Les validateurs reçoivent une combinaison de récompenses de blocs CORE et de frais de gaz. Il existe deux catégories de récompenses de validateur:
+    1. **Récompenses de bloc**, c'est-à-dire des jetons CORE nouvellement frappés.
     2. **Frais collectés à partir des transactions dans chaque bloc**;
 
 Block rewards are calculated and distributed when the last block of a round is mined. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
