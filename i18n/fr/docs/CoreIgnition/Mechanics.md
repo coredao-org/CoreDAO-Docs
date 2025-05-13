@@ -39,31 +39,31 @@ Le solde dApp Ignition reflète les actifs que l'utilisateur a déposés dans le
 
 ### Actifs Autorisés
 
-A list of token assets eligible for earning Sparks on Core Ignition. Refer to the [How to Boost Multipliers](#how-to-boost-multipliers) section for the full list.
+Liste des actifs de jetons éligibles pour gagner des Sparks sur Core Ignition : Refer to the [How to Boost Multipliers](#how-to-boost-multipliers) section for the full list.
 
-### Whitelisted dApps
+### Actifs Autorisés
 
-A list of decentralized applications where user interactions contribute to earning Sparks on Core Ignition. Visit the '[Explore dApps](https://ignition.coredao.org/dashboard?tab=explore)' tab on the Ignition Dashboard for full details.
+Liste des applications décentralisées où les interactions des utilisateurs contribuent à gagner des Sparks sur Core Ignition : Consultez l'onglet "Explorer les dApps" (https://ignition.coredao.org/dashboard?tab=explore)'sur le tableau de bord Ignition pour obtenir tous les détails.
 
-### Whitelisted Pools
+### Les pools autorisés (whitelisted pools)
 
-Liquidity pools from a whitelisted DEX dApp that includes at least one whitelisted token, qualifying for Sparks on Core Ignition.
+Pools de liquidité d'une dApp DEX autorisée qui inclut au moins un jeton autorisé, éligible pour les Sparks sur Core Ignition.
 
 ---
 
-## Core Ignition Leaderboard
+## Tableau de bord Core Ignition
 
-### 1. Leaderboard
+### 1. Tableau de classement
 
-Ranks users based on a combination of assets & dApp engagments, transaction count, and transaction volume, rewarding overall contribution to the ecosystem.
+Classement des utilisateurs basé sur une combinaison d'actifs et d'engagements sur les dApps, de nombre de transactions et de volume de transactions, récompensant la contribution globale à l'écosystème.
 
 <p align="center">
   <img width="900" alt="Screenshot 2025-05-12 at 8 51 44 PM" src="https://github.com/user-attachments/assets/39d78e16-e6a1-4787-b0f3-14d4dfb1f112" />
 </p>
 
-### 2. Activity Leaderboard
+### 2. Classement d'activité
 
-Ranks users by transaction count and volume, rewarding both frequent activity and high-value moves. Designed to give everyday users fair recognition through Spark Boosts, regardless of wallet size.
+Classement des utilisateurs en fonction du nombre de transactions et du volume, récompensant à la fois l'activité fréquente et les mouvements de grande valeur. Conçu pour donner aux utilisateurs quotidiens une reconnaissance équitable grâce aux Spark Boosts, quelle que soit la taille de leur portefeuille.
 
 <p align="center">
   <img width="900" alt="Screenshot 2025-05-12 at 8 52 02 PM" src="https://github.com/user-attachments/assets/674c4743-7299-4d75-877f-823621182cc6" />
@@ -81,15 +81,15 @@ Le montant et le type d'actifs autorisés que les utilisateurs transfèrent vers
 **2. Activités avec les dApps de l'écosystème Core :**
 Les utilisateurs peuvent également gagner des Sparks en interagissant avec les dApps autorisées sur Core Ignition. Chaque activité on-chain avec ces dApps contribuera des points Spark au compte utilisateur. Plus de détails seront mis à jour bientôt.
 
-| Transaction Type              | Sparks per Transaction | Maximum Sparks per Day |
-| ----------------------------- | ---------------------- | ---------------------- |
-| Provision de Liquidité        | 800                    | 8,000                  |
-| Emprunt                       | 400                    | 12,000                 |
-| Prêt                          | 200                    | 4,000                  |
-| Swapping                      | 100                    | 3,000                  |
-| Interacting with Gaming dApps | 50                     | 1,000                  |
-| Others                        | 50                     | 2,000                  |
-| Coretoshi NFT                 | 200                    | Unlimited              |
+| Type de transaction                | Sparks par transaction | Maximum de Sparks par jour |
+| ---------------------------------- | ---------------------- | -------------------------- |
+| Provision de Liquidité             | 800                    | 8,000                      |
+| Emprunt                            | 400                    | 12,000                     |
+| Prêt                               | 200                    | 4,000                      |
+| Échange ou Swap                    | 100                    | 3,000                      |
+| Interaction avec les dApps de jeux | 50                     | 1,000                      |
+| Autres activités                   | 50                     | 2,000                      |
+| Coretoshi NFT                      | 200                    | Illimité                   |
 
 **3. Campagnes Rejointes :**
 Core Ignition proposera des campagnes flash ou à durée limitée de manière continue, offrant aux utilisateurs des opportunités spéciales pour supercharger les Sparks. Restez connecté en vérifiant les sections de campagnes intégrées à l'application et en suivant les annonces officielles de Core sur [X (Twitter)](https://x.com/Coredao_Org) pour les dernières mises à jour.
@@ -101,51 +101,58 @@ Pour les nouveaux sur Core Ignition, transférez des actifs autorisés d'une val
 
 ## Comment Booster les Multiplicateurs
 
-Les multiplicateurs sont des variables dynamiques pour multiplier les points Spark. The consolidated multiplier displayed on the user's dashboard reflects the total multiplier currently applying to the entire asset of the user. This total multiplier is calculated by averaging out the multipliers distributed across the assets. There are two types of baseline multipliers that affect Sparks points through specific activities, independent of any special campaigns:
+Les multiplicateurs sont des variables dynamiques pour multiplier les points Spark. Le multiplicateur affiché sur le tableau de bord de l'utilisateur reflète le multiplicateur actuellement appliqué à l'ensemble des actifs de l'utilisateur. Ce multiplicateur est calculé en faisant la moyenne des multiplicateurs répartis sur les actifs. Deux types de multiplicateurs de base qui affectent les points Sparks. Indépendamment de toute campagne spéciale:
 
-- **Token Multipliers**: These increase points earned based on token-related activities and holdings.
-- **Volume Multipliers**: These amplify points earned through volume-related activities.
+- **Multiplicateurs de jetons**:
+  Ces multiplicateurs augmentent les points gagnés en fonction des activités liées aux jetons et des avoirs en jetons.
+- **Multiplicateurs de volume**
+  Ces multiplicateurs amplifient les points gagnés grâce à des activités liées au volume.
 
 <p align="center">
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/4f7ceee6-6a93-4cce-a382-5e6002ce2819"/>
 </p>
 
-### 1. Token Multipliers
+### 1. Multiplicateurs de jetons
 
-Users can benefit from baseline token multipliers for whitelisted assets held in their wallets or deposited into various dApps. Different whitelisted tokens are associated with specific multipliers, which vary depending on the type of activity performed with these dApps, as detailed below:
+Les utilisateurs peuvent bénéficier de multiplicateurs de jetons de base pour les actifs sur liste blanche détenus dans leurs portefeuilles ou déposés dans diverses applications décentralisées (dApps). Différents jetons sur liste blanche sont associés à des multiplicateurs spécifiques, qui varient en fonction du type d'activité effectuée avec ces applications décentralisées (dApps), comme détaillé ci-dessous :
 
-| Whitelisted Assets                                                          | Actifs du Portefeuille | Lending              | Borrowing            | Liquidity Provision  |
-| --------------------------------------------------------------------------- | ---------------------- | -------------------- | -------------------- | -------------------- |
-| stCORE, CLND, dualCORE                                                      | 1x                     | 2.5x | 3x                   | 3.5x |
-| USDT, USDC                                                                  | 1x                     | 1.5x | 2x                   | 3x                   |
-| CORE, WCORE                                                                 | 1x                     | 1.5x | 2x                   | 2.5x |
-| wETH, solvBTC.CORE                                          | n/a                    | 1.4x | 1.6x | 1.8x |
-| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                    | 1.2x | 1.4x | 1.6x |
-| BTC.B, SolvBTC.b, SolvBTC.m | n/a                    | 1x                   | 1.2x | 1.6x |
+| Actifs Autorisés                                                            | Actifs du Portefeuille | Prêt                 | Emprunt              | Provision de Liquidité |
+| --------------------------------------------------------------------------- | ---------------------- | -------------------- | -------------------- | ---------------------- |
+| stCORE, CLND, dualCORE                                                      | 1x                     | 2.5x | 3x                   | 3.5x   |
+| USDT, USDC                                                                  | 1x                     | 1.5x | 2x                   | 3x                     |
+| CORE, WCORE                                                                 | 1x                     | 1.5x | 2x                   | 2.5x   |
+| wETH, solvBTC.CORE                                          | n/a                    | 1.4x | 1.6x | 1.8x   |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                    | 1.2x | 1.4x | 1.6x   |
+| BTC.B, SolvBTC.b, SolvBTC.m | n/a                    | 1x                   | 1.2x | 1.6x   |
 
-> _**Example 1:**_
-> If the user holds 10 stCORE in Ignition wallet balance, the user gets:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 10 stCORE \* $1.5 (assumed) \* 1 = 15
+> _**Exemple 1 :**_
+> Si l'utilisateur détient 10 stCORE dans le solde du portefeuille Ignition, l'utilisateur obtient :  Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 10 stCORE \* 1,5 $ (supposé) \* 1 = 15
 
-> _**Example 2:**_
-> If the user lends 20 stCORE in a Lending Protocol, the user get:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 20 stCORE \* $1.5(assumed) \* 2.5 = 75
+> _**Exemple 2 :**_
+> Si l'utilisateur prête 20 stCORE dans un protocole de prêt, l'utilisateur obtient : Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 20 stCORE \* 1,5 $ (supposé) \* 2,5 = 75
 
-### 2. Volume Multipliers
+### 2. Multiplicateurs de volume
 
-Users who interact with [whitelisted pools](#whitelisted-pools) receive multipliers based on the USD equivalent of their trading volume per day. The multiplier value increases progressively as trading volume grows, with different multiplier values applied according to specific volume thresholds as below:
+Multiplicateurs basés sur le volume de trading
+Les utilisateurs qui interagissent avec les pools Autorisés reçoivent des multiplicateurs basés sur l'équivalent en USD de leur volume de trading par jour. La valeur du multiplicateur augmente progressivement à mesure que le volume de trading augmente, avec différentes valeurs de multiplicateur appliquées selon des seuils de volume spécifiques comme suit :
 
-| Volume Range                        | Multipliers          |
-| ----------------------------------- | -------------------- |
-| $0 ~ >$100          | 1x                   |
-| $10 ~ >$1,000       | 1.5x |
-| $1,000 ~ >$10,000   | 2x                   |
-| $10,000 ~ >$50,000  | 2.5x |
-| $50,000 & above | 3x                   |
+| Plage de volume                    | Multiplicateurs      |
+| ---------------------------------- | -------------------- |
+| $0 ~ >$100         | 1x                   |
+| $10 ~ >$1,000      | 1.5x |
+| $1,000 ~ >$10,000  | 2x                   |
+| $10,000 ~ >$50,000 | 2.5x |
+| 50 000 $ et plus                   | 3x                   |
 
-> _**Example Calculation:**_
-> If a user trades the equivalent of $51,000 in volume a day, the user will receive:\
-> Daily Volume Sparks: (51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x = 122,450
+> **Exemple de calcul**
+> Un utilisateur qui négocie l'équivalent de 51 000 $ en volume par jour recevra :
+> Sparks de volume quotidien :
+> (51 000 - 50 000) \* 3x +
+> (50 000 - 10 000) \* 2,5x +
+> (10 000 - 1 000) \* 2x +
+> (1 000 - 100) \* 1,5x +
+> 100 \* 1x = 122 450 Sparks.
+> Cela montre comment les multiplicateurs s'appliquent à différentes tranches de volume pour calculer les récompenses.
 
 Découvrez des opportunités de Multiplicateurs spécifiques dans la section Explorer les dApps :
 
@@ -157,54 +164,66 @@ En plus de détenir des tokens stratégiques et de déployer des actifs dans div
 
 ---
 
-## Coretoshi NFT Holders
+## Les détenteurs de NFT Coretoshi
 
-With the new Coretoshi Attribution layer, Coretoshi NFT holders now enjoy extra benefits:
+Avec la nouvelle couche d'attribution Coretoshi, les détenteurs de NFT Coretoshi bénéficient désormais d'avantages supplémentaires :
 
-1. 200 additional Sparks per transaction with [no limit](#activities-with-core-ecosystem-dapp);
-2. 1.5x extra Sparks Multiplier automatically applied on top of users' existing Volume Multiplier.
+1. 200 Sparks supplémentaires par transaction
+  Les détenteurs de NFT Coretoshi reçoivent 200 Sparks supplémentaires par transaction, sans limite, lorsqu'ils interagissent avec les dApps de l'écosystème Core.(#activities-with-core-ecosystem-dapp);
+2. Multiplicateur de Sparks supplémentaire de 1,5x
+  Un multiplicateur de Sparks supplémentaire de 1,5x est automatiquement appliqué en plus du multiplicateur de volume existant des utilisateurs.
 
-> _**Example Calculation:**_
-> If a Coretoshi holder trades the equivalent of $51,000 in volume a day, this holder will receive:\
-> Daily Volume Sparks: 1.5x \* [(51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x]  = 183,675
+> Exemple de calcul :
+> Si un détenteur de Coretoshi négocie l'équivalent de 51 000 $ en volume par jour, ce détenteur recevra :
+> Sparks de volume quotidien :
+> 1,5x \* [(51 000 - 50 000) \* 3x +
+> (50 000 - 10 000) \* 2,5x +
+> (10 000 - 1 000) \* 2x +
+> (1 000 - 100) \* 1,5x +
+> 100 \* 1x] = 183 675.
 
 <p align="center">
   <img width="500" alt="Coretoshi_Attribution" src="https://github.com/user-attachments/assets/14619a45-9244-433a-89b5-195e7fa10dc0" />
 </p>
 
-Visit the [blog](https://coredao.org/explore/blog/coretoshi-nft-sparks-multiplier-core-ignition-rewards) for more details and updates for new benefits.
+Visitez le blog (https://coredao.org/explore/blog/coretoshi-nft-sparks-multiplier-core-ignition-rewards)pour plus de détails et de mises à jour sur les nouveaux avantages.
 
 ---
 
-## Sparks Slashing
+## Réduction des Sparks
 
-Sparks Slashing ensures fair rewards by reducing Sparks for users who become inactive. Users are warned if their activity drops significantly, and Sparks are only slashed after repeated violations, but any new activity stops slashing immediately.
+La réduction des Sparks garantit des récompenses équitables
+La réduction des Sparks assure des récompenses équitables en réduisant les Sparks pour les utilisateurs qui deviennent inactifs, encourageant ainsi une participation active et régulière dans l'écosystème. Avertissement et réduction des Sparks
+Les utilisateurs sont avertis si leur activité baisse considérablement. Les Sparks ne sont réduits qu'après des violations répétées. Cependant, toute nouvelle activité arrête immédiatement la réduction des Sparks.
 
-### 1. Slashing mechanism:
+### 1. Mécanisme de réduction :
 
-- Inactive users lose Sparks: If a user earns 90% fewer Sparks than their average for a week, Sparks are slashed starting on the 2nd violation.
-- Slashing increases over time.
-- Users receive warnings before the slashing occurs.
-- Slashing Mechanism kicks in 1-month after sign-up.
-- Slashing calculation happens every Sunday.
+- Les utilisateurs inactifs perdent des Sparks :
+  Si un utilisateur gagne 90 % de Sparks en moins que sa moyenne pendant une semaine, les Sparks sont réduits à partir de la 2e violation.
+- La réduction augmente avec le temps
+- Avertissements avant la réduction
+  Les utilisateurs reçoivent des avertissements avant que la réduction des Sparks ne soit appliquée, leur donnant ainsi la possibilité de rétablir leur activité et d'éviter les pénalités.
+- Le mécanisme de réduction se déclenche après 1 mois d'inscription
+- Calcul de la réduction chaque dimanche
 
-### 2. Violation criteria:
+### 2. Critères de violation :
 
-If the average daily Sparks for that week < Average daily sparks for the season \* 10%
+Critère de violation :
+Si la moyenne quotidienne de Sparks pour la semaine est inférieure à 10 % de la moyenne quotidienne de Sparks pour la saison, cela constitue une violation pouvant entraîner une réduction des Sparks.
 
-### 3. Slashing criteria:
+### 3. Critères de réduction :
 
-- Total accumulated Sparks  \* (0.9^# of violation - 1)
-- 1st violation: Total Sparks \* 0.9^0 = NO slashing
-- 2nd violation: total sparks \* 0.9^1 = 10% slashing
-- 3rd violation: total sparks \* 0.9^2 = 19% slashing
+- Sparks accumulés totaux \* (0,9^nombre de violations - 1)
+- 1ère violation : Sparks totaux \* 0,9^0 = Pas de réduction
+- 2e violation : Sparks totaux \* 0,9^1 = Réduction de 10%
+- 3e violation : Sparks totaux \* 0,9^2 = Réduction de 19%
 
-> _**Example Calculation:**_\
-> Assuming that a user got 50,000 total Sparks at the start of season 3 and no Sparks since then:
+> _**Exemple de calcul :**_
+> En supposant qu'un utilisateur avait 50 000 Sparks au début de la saison 3 et aucun Spark depuis lors :
 >
-> - 1st violation: NO slashing
-> - 2nd violation: 50,000 - 50,000 \* (0.9 ^1) = 5,000 Sparks are deducted
-> - 3rd violation: 45000 - 45000\*(0.9^2) = 8,550 Sparks are deducted
-> - 4th violation: 36,450 -36,450\*(0.9^3) = 9,878 Sparks are deducted
+> - 1ère violation : Pas de réduction
+> - 2e violation : 50 000 - 50 000 \* (0,9^1) = 5 000 Sparks sont déduits
+> - 3e violation : 45 000 - 45 000 \* (0,9^2) = 8 550 Sparks sont déduits
+> - 4e violation : 36 450 - 36 450 \* (0,9^3) = 9 878 Sparks sont déduits
 
-Visit the [blog](https://coredao.org/explore/blog/core-ignition-season-3-updates) for more details.
+Visitez le blog(https://coredao.org/explore/blog/core-ignition-season-3-updates) pour plus de détails.
