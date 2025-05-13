@@ -46,23 +46,23 @@ Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCf
 - Lisez [les nouveaux articles de blog](https://coredao.org/explore/blog)
 - Rejoignez les canaux de la communauté Core sur - [Discord](https://discord.com/invite/coredaoofficial), et [Telegram](https://t.me/CoreDAOTelegram) pour des discussions et des mises à jour régulières.
 
-### 7. What’s the difference between the Leaderboard and the Activity Leaderboard?
+### 7. Quelle est la différence entre le classement et le classement d'activité ?
 
-Both track valuable user contributions but focus on different aspects:
+Les deux suivent les contributions précieuses des utilisateurs, mais se concentrent sur différents aspects :
 
-- Activity Leaderboard highlights how actively a user engages with Core, based on transaction count and volume.
-- Overall Leaderboard considers not only user activity but also asset holdings and participation in dApps like lending, borrowing, and liquidity provision.
+- Le classement d'activité met en avant la manière dont un utilisateur interagit activement avec Core, en fonction du nombre de transactions et du volume.
+- Le classement général prend en compte non seulement l'activité des utilisateurs, mais également les avoirs en actifs et la participation dans les dApps telles que les prêts, les emprunts et la fourniture de liquidité.
 
-In both cases, long-term support for the Core ecosystem is valued. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contribution in Ignition.
+Dans les deux cas, le soutien à long terme de l'écosystème Core est valorisé. La participation durable, et non seulement l'activité à court terme ou la liquidité temporaire, est prise en compte pour reconnaître les contributions des utilisateurs dans Ignition.
 
-### 8. What’s the difference between wrapping and swapping on Core Ignition?
+### 8. Quelle est la différence entre l'emballage (wrapping) et l'échange (swapping) sur Core Ignition ?
 
-Wrapping means converting a token into its wrapped version, for example, turning CORE into wCORE for use in dApps. Swapping, on the other hand, involves exchanging one token for a different asset, such as swapping CORE for USDT.
+L'emballage (wrapping) signifie convertir un jeton en sa version enveloppée, par exemple, transformer CORE en wCORE pour l'utiliser dans des applications décentralisées (dApps). L'échange (swapping) consiste à échanger un jeton contre un actif différent, comme échanger CORE contre USDT.
 
-> Example:
+> Exemple:
 >
-> - CORE → wCORE is wrapping, not swapping. This is simply converting CORE into its wrapped version for use in dApps.
-> - CORE → USDT is considered a swap, as it involves exchanging CORE for a different asset.
-> - wCORE → USDT is also considered a swap, exchanging wCORE for a different token.
+> - CORE → wCORE est un exemple d'emballage (wrapping), pas d'échange (swapping). C'est simplement convertir CORE en sa version enveloppée (wCORE) pour l'utiliser dans les applications décentralisées (dApps).
+> - CORE → USDT est considéré comme un échange (swap), car cela implique d'échanger CORE contre un actif différent.
+> - wCORE → USDT est également considéré comme un échange (swap), car cela implique d'échanger wCORE contre un jeton différent.
 
 
