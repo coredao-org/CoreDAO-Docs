@@ -32,9 +32,9 @@ L'écosystème Core est conçu pour inciter à la participation et sécuriser l'
     1. **Récompenses de bloc**, c'est-à-dire des jetons CORE nouvellement frappés.
     2. **Frais collectés à partir des transactions dans chaque bloc**;
 
-Block rewards are calculated and distributed when the last block of a round is mined. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
+Les récompenses de bloc sont calculées et distribuées lorsque le dernier bloc d'un tour est miné. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, Bitcoin stakers, and Bitcoin miners – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Validators can take as much or as little of the reward as they want, though they’re incentivized to be generous in order to attract more delegators.
+Les validateurs partagent les récompenses avec les entités qui leur ont été délégué – y compris les stakers de CORE, les stakers de Bitcoin et les mineurs bitcoin – mais ils décident du montant à redistribuer en choisissant combien ils (les validateurs) souhaitent conserver pour eux-mêmes. Les validateurs peuvent prendre comme ils le souhaitent une grande ou une petite partie la récompense, bien qu'ils soient incités à être généreux pour attirer plus de stake et de puissance de hachage.
 
 Après que les validateurs aient prélevé leurs frais, le protocole utilise cette fonction pour déterminer comment les récompenses restantes sont réparties entre les stakers de CORE, les stakers de Bitcoin et les délégués de puissance de hachage. La distribution des récompenses est calculée en fonction de la formule suivante:
 
@@ -82,7 +82,7 @@ Où:
 
 #### Impact du Dual Staking sur les récompenses BTC
 
-With the introduction of Dual Staking, Bitcoin staking rewards are now tiered based on the amount of CORE staked relative to Bitcoin. Bitcoin rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on Dual Staking thresholds, with higher tiers generally receiving a greater proportion of the rewards.
+Avec l'introduction du Dual Staking, les récompenses de staking Bitcoin sont désormais échelonnées en fonction de la quantité de CORE misée par rapport à Bitcoin. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses.
 
 #### Partage des Récompenses
 
@@ -98,4 +98,4 @@ Les vérificateurs dans l'écosystème Core sont responsables de la surveillance
 
 ## Conclusion
 
-Rewards in Satoshi Plus play a crucial role in maintaining the security, vitality, and decentralization of the network. En alignant les incitations des divers participants à travers un système de récompenses complet et adaptable, Core assure un engagement continu et contribue à la croissance soutenue et à la stabilité de la plateforme.
+Les récompenses dans l'écosystème Core jouent un rôle crucial dans le maintien de la sécurité, de la vitalité et de la décentralisation du réseau. En alignant les incitations des divers participants à travers un système de récompenses complet et adaptable, Core assure un engagement continu et contribue à la croissance soutenue et à la stabilité de la plateforme.
