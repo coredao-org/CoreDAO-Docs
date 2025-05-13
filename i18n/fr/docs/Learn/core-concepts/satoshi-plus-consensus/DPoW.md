@@ -5,42 +5,42 @@ sidebar_position: 2
 description: Exploiter la DPoW dans Satoshi Plus
 ---
 
-# Delegated Proof of Work (DPoW)
+# Preuve de Travail Déléguée (DPoW)
 
 ---
 
 ## Aperçu
 
-Delegated Proof of Work (DPoW) is a cornerstone of Satoshi Plus consensus. This system leverages Bitcoin's established mining infrastructure, integrating it with the Core blockchain to strengthen security without requiring additional computational work.
+La Preuve de Travail Déléguée (DPoW) est une pierre angulaire du consensus Satoshi Plus. Ce système tire parti de l'infrastructure minière établie de Bitcoin, l'intégrant au blockchain Core pour renforcer la sécurité sans nécessiter de travail de calcul supplémentaire.
 
-DPoW creates a mutually beneficial relationship where Bitcoin miners can earn supplemental CORE rewards while maintaining their primary Bitcoin mining operations. By including validator selection metadata in newly mined Bitcoin blocks, miners extend their influence to the Core network without compromising their Bitcoin security role.
+Le DPoW crée une relation mutuellement bénéfique où les mineurs Bitcoin peuvent gagner des récompenses CORE supplémentaires tout en maintenant leurs opérations de minage Bitcoin primaires. En incluant des métadonnées de sélection de validateurs dans les nouveaux blocs Bitcoin minés, les mineurs étendent leur influence au réseau Core sans compromettre leur rôle de sécurité Bitcoin.
 
 <p align="center">![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)</p>
 
 ## Fonctionnement de la DPoW dans Satoshi Plus
 
-On the Bitcoin network, miners generate hash power to mine blocks,secure the network, and earn Bitcoin rewards. To stabilize rewards over time, miners often contribute to mining pools, which aggregate hash power to increase chances of mining blocks. DPoW integrates Bitcoin mining into Core's security protocol through a delegation system.
+Sur le réseau Bitcoin, les mineurs génèrent du hash power pour miner des blocs, sécuriser le réseau et gagner des récompenses Bitcoin. Pour stabiliser les récompenses au fil du temps, les mineurs contribuent souvent à des pools de minage, qui agrègent le hash power pour augmenter les chances de miner des blocs. Le DPoW intègre le minage Bitcoin dans le protocole de sécurité de Core grâce à un système de délégation.
 
-1. **Mining Integration**: Bitcoin miners continue their standard mining activities while signaling support for the Core blockchain by including specific information in the Bitcoin blocks they mine, indicating their preferred Core validator.
+1. **Intégration du minage :** Les mineurs Bitcoin poursuivent leurs activités de minage standard tout en signalant leur soutien à la blockchain Core en incluant des informations spécifiques dans les blocs Bitcoin qu'ils minent, indiquant leur validateur Core préféré.
 
-2. **Metadata in Bitcoin Blocks**: In the mined Bitcoin block, miners add metadata in the `op_return` field containing the Core validator address and the address for receiving CORE token rewards, effectively delegating their mining influence to the Core network.
+2. **Métadonnées dans les blocs Bitcoin :** Dans le bloc Bitcoin miné, les mineurs ajoutent des métadonnées dans le champ op_return contenant l'adresse du validateur Core et l'adresse pour recevoir des récompenses en jetons CORE, déléguant ainsi leur influence de minage au réseau Core.
 
-3. **Validator Support**: By including this information, miners delegate their computational power to validators on Core. Proportions of delegated hash power are critical to Core's validator election, directly influencing which validators are elected to produce blocks and secure the network.
+3. **Soutien aux validateurs :** En incluant ces informations, les mineurs délèguent leur puissance de calcul aux validateurs sur Core. Les proportions de hash power délégué sont cruciales pour l'élection des validateurs de Core, influençant directement quels validateurs sont élus pour produire des blocs et sécuriser le réseau.
 
-4. **Relayers**: Relayers monitor the Bitcoin network and transmit block and transaction data to Core. An on-chain embedded BTC light client processes this data and forwards delegation information to the "Delegation Hub," which manages all delegations within Core. During each one-day round, Core calculates DPoW for validators based on miner delegations from one week prior.
+4. **Relayeurs** : Les relayeurs sont chargés de surveiller le réseau Bitcoin et de transmettre les blocs ainsi que les données de transaction au réseau Core. Un client léger BTC intégré en chaîne traite ces données et transmet les informations de délégation au "Hub de délégation", qui gère toutes les délégations au sein de Core. Lors de chaque tour d'une journée, Core calcule le DPoW pour les validateurs en fonction des délégations de mineurs d'une semaine précédente.
 
-5. **Reward Mechanism**: Miners receive CORE tokens in addition to their regular Bitcoin rewards, creating a dual-reward system that incentivizes participation without diverting resources from Bitcoin mining.
+5. **Mécanisme de récompense :** Les mineurs reçoivent des jetons CORE en plus de leurs récompenses Bitcoin régulières, créant un système de double récompense qui incite à la participation sans détourner les ressources du minage Bitcoin.
 
 ## Processus étape par étape
 
 1. **Minage des Blocs Bitcoin :** Les mineurs de Bitcoin continuent leur rôle principal de minage de blocs sur le réseau Bitcoin en utilisant la Preuve de Travail (PoW).
 
-2. **Including Delegation Information:** Miners add two additional pieces of information in the `op_return` field of the coinbase transaction:
+2. **Inclusion des Informations de Délégation :** Les mineurs ajoutent deux informations supplémentaires dans le champ op_return de la transaction coinbase :
 
 - **Adresse du Validateur Core :** L'adresse du validateur Core à qui déléguer la puissance de hachage.
 - **Adresse de Récompense en Tokens CORE :** L'adresse où le mineur souhaite que ses récompenses en tokens CORE soient envoyées.
 
-3. **Delegating Hash Power:** This action delegates the miner's hash power to the chosen Core validator, repurposing existing work without incurring additional costs.
+3. **Délégation de la Puissance de Hachage :** Cette action délègue la puissance de hachage du mineur au validateur Core choisi, réutilisant le travail existant sans encourir de coûts supplémentaires.
 
 4. **Élection des Validateurs :** Les validateurs avec une puissance de hachage déléguée plus élevée ont une plus grande chance d'être élus dans l'ensemble des validateurs.
 
@@ -52,10 +52,10 @@ On the Bitcoin network, miners generate hash power to mine blocks,secure the net
 
 - **Sécurité Améliorée :** En intégrant la PoW de Bitcoin, Core bénéficie de l'infrastructure de sécurité inégalée de Bitcoin, rendant le réseau Core plus résilient.
 
-- **Miner Support:** Bitcoin miners gain an additional revenue stream through CORE token rewards, enhancing their overall profitability without additional energy costs.
+- **Incitations Augmentées :** Les mineurs de Bitcoin gagnent une source de revenus supplémentaire grâce aux récompenses en tokens CORE, améliorant leur rentabilité globale sans coûts énergétiques supplémentaires.
 
 - **Relation Symbiotique :** Ce système promeut des avantages mutuels pour les réseaux Bitcoin et Core, encourageant un environnement coopératif qui renforce l'écosystème blockchain.
 
 #### **Conclusion**
 
-DPoW is a critical component within Satoshi Plus consensus. It extends the incentives of Bitcoin miners to align with Core's consensus mechanism. Core bénéficie de la participation des mineurs de Bitcoin à sa sécurité, et les mineurs de Bitcoin reçoivent une meilleure rémunération. Le résultat est un ensemble de mineurs qui sont fortement incités à sécuriser à la fois Bitcoin et Core.
+Le DPoW est un composant essentiel du consensus Satoshi Plus. Il étend les incitations des mineurs Bitcoin pour les aligner sur le mécanisme de consensus de Core. Core bénéficie de la participation des mineurs de Bitcoin à sa sécurité, et les mineurs de Bitcoin reçoivent une meilleure rémunération. Le résultat est un ensemble de mineurs qui sont fortement incités à sécuriser à la fois Bitcoin et Core.
