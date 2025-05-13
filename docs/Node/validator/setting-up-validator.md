@@ -19,7 +19,7 @@ This guide walks you through the process of setting up a validator node on the C
 Before you begin, please ensure your system meets the required hardware and software specifications.
 
 #### Supported OS Platforms
-Currently, the supported OS platforms include Mac OS X, Linux, and Windows.
+Currently, the supported OS platforms include Mac OS X and Linux.
 
 #### Hardware Requirements
 <Tabs
@@ -79,27 +79,28 @@ After cloning the repo, next step is to install all the necessary dependencies f
 ```bash
 make geth
 ```
-This will download and install the necessary dependencies and build the `geth` binary. 
+This will download and install the necessary dependencies and build the `geth` binary. The `geth` binary will be located at `./build/bin/geth`.
 
 ### Setting up the Node 
 
 There are 2 approaches to setup a validator node from scratch on the Core blockchain:
 
 * **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
-* **From Genesis (Not Recommend):** sync the whole Core blockchain data from the[ genesis block](https://github.com/coredao-org/core-chain/releases/latest).
+* **From Genesis (Not Recommend):** sync the whole Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
 Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
 :::
 
-#### Using the Snapshot (Recommended)
+
+#### Steps to Running Validator Node 
 
 1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
 
 
 2. **Genesis and Configuration Files:** The pre-build binaries contains `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
 
-3. **Initialize Genesis Block:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
+3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
 
 ```bash
 geth --datadir node init genesis.json
@@ -119,7 +120,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. **Download Latest Snapshot:** Get the latest Core blockchain snapshot from [here](https://github.com/coredao-org/core-snapshots).
+4. **Download the Latest Snapshot:** Download and extract the latest Core blockchain snapshot from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
 
 5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address which will be your validator's address (consensus address).
 
@@ -144,7 +145,7 @@ Use the following command to start the validator node.
 
 ```bash
 # start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000 
 ```
 
 Let’s break down the flags used in this command:
@@ -164,6 +165,22 @@ Let’s break down the flags used in this command:
 - **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
 
 - **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+
+
+#### Syncing from Genesis
+If you prefer to sync your validator node from the genesis block instead of using a snapshot:
+
+- Skip Step #4 ("Download and extract the latest snapshot") in the setup instructions.
+
+- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as normal.
+
+- Then start the validator node using the command below:
+
+  ```bash
+  geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000 
+  ```
+
+⚠️ **Note:** Syncing from genesis can take a lot of time depending on system resources and network speed.
 
 ## Monitor Logs
 
