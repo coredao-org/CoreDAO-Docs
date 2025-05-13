@@ -25,8 +25,8 @@ En participant au programme d'incitation utilisateur de Core Ignition, les utili
 1. Inviter d'autres personnes à s'engager dans Core Ignition ;
 2. Transférer des actifs spécifiques vers Core ;
 3. Détenir des actifs spécifiques sur Core ;
-4. Executing transactions interacting with smart contracts;
-5. Participating in dApps within the Core Ecosystem, including but not limited to DEXs, lending protocol, perpetual futures, etc.
+4. Exécuter des transactions en interagissant avec des contrats intelligents ;
+5. Participer à des dApps au sein de l'écosystème Core, y compris mais sans s'y limiter aux DEX, protocoles de prêt, contrats à terme perpétuels, etc.
 
 ## Commencer
 
