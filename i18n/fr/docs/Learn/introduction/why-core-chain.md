@@ -8,12 +8,12 @@ sidebar_position: 2
 
 ---
 
-Core is the Bitcoin Everything Chain - a high-performance, EVM-compatible Layer-1 powered by Bitcoin. Secured by Bitcoin miners, Bitcoin stakers, and CORE stakers through Satoshi Plus consensus, Core operates as Bitcoin's complementary smart contract platform.
+Core est la chaîne Bitcoin simplement dit - une couche-1 haute performance compatible EVM alimentée par Bitcoin. Sécurisé par les mineurs de Bitcoin, les détenteurs de Bitcoin et les stakers de CORE via le consensus Satoshi Plus, Core fonctionne comme une plate-forme de contrats intelligents complémentaire à Bitcoin.
 
 <p align="center">
 ![why-core-dao-infrographics](../../../static/img/Why-Core.png)</p>
 
-## Distinguishing Features
+## Caractéristiques distinctives.
 
 Some of the major characteristics that set Core apart are:
 
