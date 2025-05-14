@@ -1,18 +1,17 @@
 ---
-sidebar_label: Delegating Hash Power
+sidebar_label: Délégation de la Puissance de Hachage
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating Hash Power
+# Délégation de la Puissance de Hachage
 
 ---
 
 En utilisant leurs clés publiques et privées, les mineurs de BTC peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains BTC et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur BTC avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage BTC associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau BTC pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant leur puissance de hachage BTC aux validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et à partager les récompenses du système.
 
 <p align="center">
-![delegate-hash](../../static/img/staoshi-plus/DPoW.png)
-</p>
+![delegate-hash](../../static/img/staoshi-plus/DPoW.png)</p>
 
 ## Processus d'installation pour les mineurs
 
