@@ -23,21 +23,21 @@ Les détenteurs de jetons CORE peuvent déléguer leurs jetons à des validateur
 3. Les validateurs reçoivent la mise déléguée, ce qui renforce leur position dans l'élection des validateurs.
 4. Les récompenses gagnées par les validateurs sont partagées avec les délégateurs proportionnellement à leur mise.
 
-### Bitcoin Staking
+### Stakers de Bitcoin
 
-Bitcoin holders can participate in Core's Satoshi Plus consensus through Bitcoin's native timelocking mechanism:
+Les détenteurs de Bitcoin peuvent participer au consensus Satoshi Plus de Core grâce au mécanisme de verrouillage temporel natif de Bitcoin.
 
-1. Bitcoin holders use the CLTV function to timelock their Bitcoin for a specified period
-2. During timelock creation, they include metadata specifying their chosen validator and reward address
-3. The timelocked Bitcoin amount contributes to the selected validator's hybrid score for election
+1. Les détenteurs de Bitcoin utilisent la fonction CLTV (Check Lock Time Verify) pour verrouiller temporairement leur Bitcoin pendant une période spécifiée.
+2. Lors de la création du verrouillage temporel, ils incluent des métadonnées spécifiant le validateur choisi et l'adresse de récompense.
+3. Le montant de Bitcoin verrouillé temporairement contribue au score hybride du validateur sélectionné pour l'élection
 4. As the validator produces blocks, the Bitcoin holder receives CORE rewards proportional to their timelocked amount
-5. When the timelock period ends, the Bitcoin becomes spendable again, the validator loses that delegated support, and the Bitcoin holder no longer collects CORE rewards
+5. Lorsque la période de verrouillage temporaire se termine, le Bitcoin redevient dépensable, le validateur perd ce soutien délégué et le détenteur de Bitcoin ne perçoit plus les récompenses CORE
 
-### Validator Election
+### Élection des Validateurs
 
-The validator set is determined through an election process using the hybrid score:
+L'ensemble des validateurs est déterminé par un processus électoral utilisant le score hybride.
 
-1. Every round, all validators receive a hybrid score based on delegated CORE tokens, timelocked Bitcoin, and Bitcoin miner support
+1. À chaque tour, tous les validateurs reçoivent un score hybride basé sur les jetons CORE délégués, les Bitcoins verrouillés temporairement et le soutien des mineurs de Bitcoin.
 2. The top 27 validators with the highest hybrid scores are elected to the active validator set
 3. Elected validators produce blocks and validate transactions on the Core blockchain
 4. Rewards accumulated during each round are distributed at the end of the round
