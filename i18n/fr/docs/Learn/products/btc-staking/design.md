@@ -1,16 +1,17 @@
 ---
-sidebar_label: Transaction Design
+sidebar_label: Conception de transaction
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Self-Custodial Bitcoin Staking Design
+# Conception du staking de Bitcoin en auto-garde
 
 ---
 
 ## Contexte
 
-The methodology for integrating Bitcoin staking centers on Bitcoin's native [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE`. CLTV is a Bitcoin script operation that restricts transaction outputs from being spent until a specified absolute time or block height is reached. By creating a transaction with a CLTV script, Bitcoin holders can make their coins temporarily unspendable while including metadata that allows Core to recognize their participation in consensus. This mechanism leverages Bitcoin's existing scripting capabilities without requiring any modification to the Bitcoin protocol.
+La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify)\`OP_CODE. CLTV (CheckLockTimeVerify) est une opération de script Bitcoin qui restreint les sorties de transaction de manière à ce qu'elles ne puissent pas être dépensées avant qu'une hauteur de bloc ou un temps absolu spécifié ne soit atteint. En créant une transaction avec un script CLTV, les détenteurs de Bitcoin peuvent rendre temporairement leurs pièces non dépensables tout en incluant des métadonnées qui permettent à Core de reconnaître leur participation au consensus.
+Ce mécanisme exploite les capacités de script existantes de Bitcoin sans nécessiter aucune modification du protocole Bitcoin.
 
 <p align="center">
 ![btc-staking-tx-design](../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
@@ -18,20 +19,20 @@ The methodology for integrating Bitcoin staking centers on Bitcoin's native [CLT
 
 ### Exigences pour la Validité des Transactions {#requirements-for-transaction-validity}
 
-- To create a valid timelock transaction that Core relayers will recognize, users must:
-    - Create a Bitcoin transaction where the output is sent to their own address using Bitcoin's native CLTV timelock feature
-    - Specify the amount of Bitcoin they wish to timelock for delegation to a Core validator
-    - Include an `OP_RETURN` output containing two critical pieces of information:
-        - The address of the Core validator they wish to support
-        - The Core address where they want to receive CORE token rewards
-- Minimum Requirements:
-    - Amount: When using the [official staking interface](https://stake.coredao.org/staking), a minimum of 0.01 BTC must be timelocked (excluding transaction fees)
-    - Duration: The minimum timelock period is 24 hours, though the Core staking interface defaults to a recommended minimum of 5 days for optimal participation
-    - Technical implementation: There are no minimum requirements when creating timelock transactions manually, though the same parameters are recommended for effective participation
+- Pour créer une transaction de verrouillage temporel valide que les relais Core reconnaîtront, les utilisateurs doivent :
+    - Créez une transaction Bitcoin où la sortie est envoyée à leur propre adresse en utilisant la fonctionnalité de verrouillage temporel CLTV native de Bitcoin.
+    - Spécifiez la quantité de Bitcoin qu'ils souhaitent verrouiller temporairement pour la délégation à un validateur Core.
+    - Incluez une sortie OP_RETURN contenant deux éléments d'information critiques :
+        - L'adresse du validateur Core qu'ils souhaitent soutenir.
+        - L'adresse Core où ils souhaitent recevoir les récompenses en jetons CORE.
+- Exigences minimales :
+    - Montant : Lors de l'utilisation de l'interface de jalonnement officielle (https://stake.coredao.org/staking), un minimum de 0,01 BTC doit être verrouillé temporairement (hors frais de transaction)
+    - Durée : La période de verrouillage temporaire minimale est de 24 heures, bien que l'interface de jalonnement Core par défaut recommande un minimum de 5 jours pour une participation optimale.
+    - Implémentation technique : Il n'y a pas d'exigences minimales lors de la création manuelle de transactions de verrouillage temporaire, bien que les mêmes paramètres soient recommandés pour une participation efficace.
 
 ### Déroulement des transactions
 
-Self-Custodial Bitcoin Staking operations are conducted on two separate blockchains: Bitcoin and Core. The following flowchart illustrates the workflow for Bitcoin holders to earn staking rewards through Core’s Self-Custodial Bitcoin Staking.
+Les opérations de Staking de Bitcoin Non-Custodial sont effectuées sur deux blockchains distinctes : Bitcoin et Core. Le schéma suivant illustre le flux de travail pour que les détenteurs de Bitcoin puissent gagner des récompenses de staking grâce au Staking de Bitcoin Non-Custodial de Core.
 
 <p align="center">
 ![btc-staking-flow](../../../../static/img/btc-staking/btc-staking-workflow.png)
@@ -50,7 +51,7 @@ Une transaction de staking Bitcoin doit comporter deux ou trois sorties, qui son
 Notez qu'il n'y a **aucune** restriction sur les entrées.
 
 <p align="center">
-![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-flow.png)
+![btc-staking-tx-output](../../../../static/img/btc-staking/tx-design/staking-flow.png).png)
 </p>
 
 ### Transaction de retrait
@@ -58,7 +59,7 @@ Notez qu'il n'y a **aucune** restriction sur les entrées.
 Les UTXO (Bitcoins) verrouillés peuvent être dépensés en utilisant le script de rachat lorsque le verrouillage temporel prend fin.
 
 <p align="center">
-![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
+![btc-staking-withdrawal-tx](../../../../static/img/btc-staking/tx-design/withdrawal-flow.png).png)
 </p>
 
 ## Design du script
@@ -87,7 +88,7 @@ Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelqu
 - Lors de l'utilisation d'une adresse multi-signature `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` et le script de déverrouillage correspondant est `OP_0 <sig1> ... <sigM> <RedeemScript>` Le montant et la durée du Bitcoin verrouillé dans cette sortie seront utilisés pour le calcul de l'élection des validateurs et la distribution des récompenses sur Core.
 
 :::note
-To be eligible for Self-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website interface](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). En revanche, il n'y a **aucune** exigence minimale lors du staking via script. Aussi, la durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis que le staking via script ne comporte aucune période de blocage.
+Pour être éligible au staking BTC non-custodial sur Core, les exigences minimales de staking dépendent de la méthode choisie. Si vous utilisez [le site officiel d'interface utilisateur](https://stake.coredao.org/staking), les utilisateurs doivent staker au moins **0,01 BTC** (hors frais de transaction). En revanche, il n'y a **aucune** exigence minimale lors du staking via script. Aussi, la durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis que le staking via script ne comporte aucune période de blocage.
 :::
 
 ## Sortie OP_RETURN
@@ -119,7 +120,7 @@ Soit le RedeemScript doit être disponible soit le Timelock doit l'être. Cela p
 
 ## Rôle des Relayeurs
 
-In a strict sense, the Self-Custodial Bitcoin Staking process consists of two steps
+Dans un sens strict, le processus de staking de Bitcoin Non-Custodial se compose de deux étapes
 
 1. Staking sur le réseau Bitcoin
 2. Soumission de la transaction de staking Bitcoin confirmée à Core
