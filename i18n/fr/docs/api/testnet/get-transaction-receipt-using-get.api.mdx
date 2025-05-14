@@ -1,0 +1,66 @@
+---
+id: get-transaction-receipt-using-get
+title: Get transaction receipt
+description: Get transaction receipt
+sidebar_label: Get transaction receipt
+hide_title: true
+hide_table_of_contents: true
+api: eJydU8tu2zAQ/BVhTy3ASm2OvAWtYQQo2iKPkyEUtLwWiUgks1z5AUH/XqzsKmrjBEWPJHdnZmeHPbCpE+gVLJFt9oPC4QilghCRDLvgbzagoUa+J+OTqeTqFit0kR+S8/VycQ8KoiHTIiMJUg/etAgaTHSPeAQFzoOGpw5JDhtMFbkoQPMawqfOEW5AM3WoIFUWWwO6Bz5GQUtMztcwDGoi4IM1yb5NMNX8O0H5N8YSOePn+TM6GQAKWmQbzg6NPrAFDYWJrqiRbYFsf140DxQkpN1vxzpqQINljkkX0p4zJr7K11yl3CPvAz0WIMqc34ZRtONGVF9Hl30JVdei53FhLxy4VMFIbfq+vUPauUpgOvKaQwIFjavQJxSOs83X0VQWs6v8I6iZUl0U+/0+N+NrHqguzq2p+HrzefHtbvFBWgYFMuZJy6fTRQyJW+NnHK9b/Mcw07IYD1zExjgveKOo/mz/SkIFSlYie399BaUCGxJLR9+vTcIHaoZBrk9RksVsXDLrRlKzNU3CF3Kq4Bk9g4Z3t+eAvc+mUF8UK0+z4O9M00kRSLD/i26K+Bt0U80zXSkHcsIHelUOszTLrx6GX/7xaMo=
+sidebar_class_name: get api-method
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getTransactionReceipt"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"txhash","in":"query","description":"txhash","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>

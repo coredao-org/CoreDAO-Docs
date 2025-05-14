@@ -1,0 +1,66 @@
+---
+id: eth-call-using-get
+title: Get transaction receipt
+description: Get transaction receipt
+sidebar_label: Get transaction receipt
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMtu2zAQ/BVhTy3ASm2OvAWpYQQo2qJpToZRbOS1RIQiGXJlxxD078VKqiE3iZvmSHJ2ZvbFDhirBHoFS+I6+x794wHWCnygiGy8u96ABuL6Cq29TcZVy8VPUBAwYkNMUWI7cNgQaMBg7ukACowDDQ8tRTlsKJXRBGGbYyI9tCbSBjTHlhSksqYGQXfAhyBsiaNxFfS9OgpskPE8/YR4DRljdZ5rBLxEJegttpZBg0WmxKfs/h/k/r9qsP47fkmccUSXsJSbLFJJJjAoaIhrL22riIdWcQ0aCgymqIjrgrj+VaK1khvF3Z8ettGChpo5JF0IOpecLvI7LlPuiPc+3hcgRozb+sGjYSsmL4PJPvuybcjxMDRPkn0OwRSb9G17Q3FnSqFpo9PsEyiwpiSXSDSmal4GLGvKLvKPoGZOdVHs9/sch9fcx6qYQlPx5fpq8fVm8UFCegWS5ujl03gRfOIG3Uzj5YqeJHPsDdMjF8GiccI3mOqmaq9kzEFJB2pQcKz4WkHtEwug6+4w0W20fS/X45BIHzYm4Z2VmdiiTfREvfSOycnUvfsxjc/77LhVz3qTp9nm7dC2AgIZ19fLTat1RmFCvJF/XLcz9CPgjeyzYg2rd07Hn8is5RCN6IBerfvZhsln2Pe/ARVexlU=
+sidebar_class_name: get api-method
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_call"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
