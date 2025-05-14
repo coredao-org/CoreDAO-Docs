@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introduction
 
-Liquid Staking with stCORE enhances CORE token utility while streamlining the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, enabling token holders to maximize capital efficiency while participating in network security.
+Le staking liquide avec stCORE améliore l'utilité du jeton CORE tout en rationalisant le processus de staking. Ce guide fournit une procédure détaillée pour la création et le rachat de stCORE, permettant aux détenteurs de jetons de maximiser l'efficacité du capital tout en participant à la sécurité du réseau.
 
 ## Premiers pas : Prérequis
 
