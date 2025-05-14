@@ -8,20 +8,20 @@ sidebar_position: 2
 
 ---
 
-Staking is a fundamental component of Core's Satoshi Plus consensus mechanism. It allows both CORE token holders and Bitcoin holders to participate in securing the network and earn rewards. Unlike traditional Proof of Stake systems, Core's unique architecture enables two distinct staking mechanisms: CORE token delegation and Bitcoin timelocking, which together with Bitcoin miner participation form the basis of validator selection and network security.
+Le staking est une composante fondamentale du mécanisme de consensus Satoshi Plus de Core. Cela permet aux détenteurs de jetons CORE et aux détenteurs de Bitcoin de participer à la sécurisation du réseau et de gagner des récompenses. Contrairement aux systèmes traditionnels de Proof of Stake, l'architecture unique de Core permet deux mécanismes de staking distincts : la délégation de jetons CORE et le verrouillage temporel de Bitcoin, qui, avec la participation des mineurs de Bitcoin, forment la base de la sélection des validateurs et de la sécurité du réseau.
 
 ## Fonctionnement du Staking sur la blockchain Core
 
-Core's staking system combines multiple participation methods that contribute to validator election through a hybrid scoring mechanism. Each validator receives a hybrid score based on three factors: Bitcoin miner support (DPoW), delegated CORE tokens (DPoS), and timelocked Bitcoin.
+Le système de staking de Core combine plusieurs méthodes de participation qui contribuent à l'élection des validateurs grâce à un mécanisme de notation hybride. Chaque validateur reçoit un score hybride basé sur trois facteurs : le soutien des mineurs Bitcoin (DPoW), les jetons CORE délégués (DPoS) et le Bitcoin verrouillé temporellement.
 
-### CORE Token Staking
+### Le staking de jetons CORE
 
-CORE token holders can delegate their tokens to validators without transferring ownership:
+Les détenteurs de jetons CORE peuvent déléguer leurs jetons à des validateurs sans transférer la propriété.
 
-1. Token holders select a validator to delegate to
-2. Upon delegation, tokens remain in the holder's custody but are locked for staking
-3. Validators receive the delegated stake, which strengthen their position in validator election
-4. Rewards earned by validators are shared with delegators proportionally to their stake
+1. Les détenteurs de jetons sélectionnent un validateur auquel déléguer leurs jetons.
+2. Lors de la délégation, les jetons restent en la garde du détenteur mais sont verrouillés pour le staking.
+3. Les validateurs reçoivent la mise déléguée, ce qui renforce leur position dans l'élection des validateurs.
+4. Les récompenses gagnées par les validateurs sont partagées avec les délégateurs proportionnellement à leur mise.
 
 ### Bitcoin Staking
 
