@@ -61,46 +61,46 @@ Chaque fois qu'un mint se produit, le contrat Earn délègue CORE à PledgeAgent
 
 Lorsque les utilisateurs créent (mint), ils doivent spécifier une adresse de validateur pour jalonner les CORE. Cela garantit un traitement égal de tous les candidats validateurs, qu'ils soient élus ou en file d'attente. Pour une expérience plus fluide, le frontend officiel peut sélectionner aléatoirement un validateur au nom de l'utilisateur.
 
-Pendant le remboursement, le contrat 'Earn' sélectionne les validateurs de manière aléatoire en utilisant '_randomIndex()'. This random index determines where in the validator list the system starts undelegating CORE until the requested amount is reached.
+Pendant le remboursement, le contrat 'Earn' sélectionne les validateurs de manière aléatoire en utilisant '_randomIndex()'. Cet index aléatoire détermine à quel endroit dans la liste des validateurs le système commence à annuler la délégation des CORE jusqu'à atteindre le montant demandé.
 
-### Keeping Validators Balanced in Stake Amounts
+### Équilibre des validateurs sur les montants stakés
 
-Validator distribution works as follows:
+La distribution des validateurs fonctionne comme suit :
 
-- When minting, users choose the validator
-- When redeeming, the system randomly selects validators
+- Lors de la création (minting), les utilisateurs choisissent le validateur
+- Lors du remboursement, le système sélectionne aléatoirement les validateurs.
 
-This system naturally balances staking across validators. However, large mint or redeem operations can disrupt this balance. To correct such imbalances, two rebalancing methods are available:
+Ce système équilibre naturellement le staking entre les validateurs. Cependant, les opérations importantes de création (mint) ou de remboursement peuvent perturber cet équilibre. Pour corriger ces déséquilibres, deux méthodes de rééquilibrage sont disponibles :
 
-- **`rebalance()`:** Automatically balances the validator with the most staked CORE and the one with the least, if the difference exceeds a set threshold
-- **`manualRebalance()`:** Allows the operator to manually redistribute stake between validators
+- **rebalance() :** Équilibre automatiquement le validateur avec le plus de CORE mis en jeu et celui avec le moins, si la différence dépasse un seuil prédéfini.
+- **manualRebalance() :** Permet à l'opérateur de redistribuer manuellement les enjeux entre les validateurs.
 
 ### Calcul du ratio de conversion stCORE/CORE
 
-Each round, after the turn round completes, the `Earn` module:
+À chaque tour, après la fin du tour, le module Earn :
 
-- Collects rewards from validators
-- Re-delegates rewards to the same validators (autocompounding)
-- Moves stake from jailed/inactive validators to active ones to maximize APR
+- Collecte les récompenses des validateurs.
+- Ré-affecte les récompenses aux mêmes validateurs (auto-capitalisation des intérêts).
+- Déplace les enjeux des validateurs emprisonnés/inactifs vers les validateurs actifs pour maximiser le taux annuel de rendement (APR).
 
-Then, the conversion ratio is recalculated using the formula:
+Ensuite, le ratio de conversion est recalculé à l'aide de la formule :
 
 ```
     Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply() 
 ```
 
-Since **rewards claiming only happens once per day**, the conversion rate remains same for the entire day until the next turn round happens. The logics for this are implemented in the `afterTurnRound()` method.
+Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour. Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
 
 ### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
-In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** >= 1.
+Dans le contrat PledgeAgent (le contrat de staking), lorsque les utilisateurs délèguent, le montant de CORE doit être >= 1.
 
-Whereas, upon  undelegation
+Alors que lors de la fin de la délégation (undelegation),
 
 - Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
 - Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
 
-When handling `delegate` and `undelegate` internally, the `Earn` module must also follow the same restrictions.
+Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
 
-The implementation of these requriements can be found in `_undelegateWithStrategy()` method.
+L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
 
