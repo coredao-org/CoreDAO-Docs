@@ -129,10 +129,10 @@ Users who interact with [whitelisted pools](#whitelisted-pools) receive multipli
 
 | Volume Range  | Multipliers | 
 | ------------- |-------------|
-| $0 ~ >$100 | 1x |
-| $10 ~ >$1,000  | 1.5x |
-| $1,000 ~ >$10,000 | 2x |
-| $10,000 ~ >$50,000| 2.5x |
+| $0 ~ > $100 | 1x |
+| $100 ~ > $1,000  | 1.5x |
+| $1,000 ~ > $10,000 | 2x |
+| $10,000 ~ > $50,000| 2.5x |
 | $50,000 & above | 3x |
   
 >***Example Calculation:***
