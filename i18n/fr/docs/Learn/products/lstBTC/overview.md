@@ -10,14 +10,14 @@ sidebar_position: 2
 
 ## L'Idée Géniale
 
-Bitcoin is the world’s largest digital asset, yet it remains financially idle, held in vaults or posted as collateral without generating yield. Les institutions ont traditionnellement été confrontées à un dilemme :
+Bitcoin est le plus grand actif numérique au monde, pourtant il reste financièrement inactif - conservé dans des coffres-forts ou utilisé comme garantie sans générer de rendement. Les institutions ont traditionnellement été confrontées à un dilemme :
 
 - Détenir du BTC en tant que réserve de valeur sans le mettre à profit.
 - Prêter du BTC, en assumant des risques de contrepartie, d'illiquidité et une complexité opérationnelle.
 
 lstBTC change la donne.
 
-Institutions can earn BTC-denominated yield **for the first time without relinquishing custody, lending risk, or disrupting workflows**. Powered by Core’s Dual Staking, risk-managed by **Maple Finance**, and secured by custodians like **BitGo**, **Hex Trust**, and **Copper**, lstBTC transforms Bitcoin into a **yield-bearing asset with full liquidity and security**.
+Pour la première fois, les institutions peuvent obtenir un rendement en BTC sans perdre le contrôle, prendre des risques de prêt ou perturber leurs opérations. Propulsé par le double staking de Core, géré en termes de risque par Maple Finance, et sécurisé par des dépositaires comme BitGo, Hex Trust et Copper, lstBTC transforme Bitcoin en un actif générateur de rendement avec une liquidité et une sécurité totales.
 
 <p align="center" zoom="200%">
 ![lstBTC_banner](../../../../static/img/lstbtc/lstBTC_banner.png)</p>
@@ -43,7 +43,7 @@ Au lieu de cela, lstBTC :
 Pour les utilisateurs institutionnels, lstBTC est simple et fluide :
 
 1. Déposez des BTC auprès d'un dépositaire de confiance (Bitgo, Copper ou Hex Trust).
-2. **Receive lstBTC**, which accrues BTC-denominated yield daily.
+2. Recevez lstBTC :, qui accumule un rendement en BTC quotidiennement.
 3. Utilisez lstBTC comme des BTC — échangez, transférez ou utilisez-le comme garantie.
 4. Rachetez lstBTC contre des BTC + Rendement à tout moment via le dépositaire d'origine.
 
@@ -57,7 +57,7 @@ Le rendement de lstBTC est alimenté par le mécanisme de double staking de Core
 
 - Les BTC sont gagés via un prêt à ratio Loan-to-Value (LTV) faible de 10% pour acheter des CORE.
 - Maple Finance gère le risque en utilisant des stratégies d'options pour couvrir les fluctuations du prix du CORE.
-- **CORE and BTC are Dual-Staked** on Core’s blockchain, where block rewards and fees are earned.
+- CORE et BTC sont mis en double staking sur la blockchain de Core, générant des récompenses de bloc et des frais.
 - Le rendement est converti en BTC, garantissant que tous les rendements sont libellés en BTC.
 
 Gestion des risques :
