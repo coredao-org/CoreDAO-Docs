@@ -8,60 +8,60 @@ sidebar_position: 2
 
 ---
 
-Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. This initiative allows token holders to maximize the potential of their assets with greater flexibility and efficiency.
+Le stCORE est conçu pour améliorer l'utilité du token CORE et simplifier le processus de staking. Cette initiative permet aux détenteurs de tokens de maximiser le potentiel de leurs actifs avec une plus grande flexibilité et efficacité.
 
 ## Résumé de la conception
 
-Liquid staking via stCORE is designed as follows:
+Le jalonnement liquide via stCORE est conçu comme suit :
 
-- A new module called `Earn` is introduced alongside a standard ERC-20 token, **stCORE**
-- Users interact with the `Earn` module to mint, redeem, and withdraw assets
-- The `Earn` module interacts with Core platform contracts such as `PledgeAgent` (staking) and `CandidateHub`
-- All value accrued by the `Earn` module is reflected in the **stCORE** token value
-- The **CORE/stCORE** conversion ratio is updated **daily**
-- Additional methods are provided to allow the system operator to rebalance and optimize staking across validators
+- Un nouveau module appelé Earn est introduit aux côtés d'un jeton ERC-20 standard, **stCORE.**
+- Les utilisateurs interagissent avec le module `Earn` pour créer/racheter/retirer leurs actifs
+- Le module `Earn` interagit avec les contrats de la plateforme Core tels que `PledgeAgent` (le contrat de staking) et `CandidateHub`
+- La valeur de tous les revenus du module `Earn` sera reflétée dans la valeur du token **stCORE**
+- Le ratio de conversion CORE/stCORE est mis à jour quotidiennement.
+- Des méthodes supplémentaires sont fournies pour permettre à l'opérateur du système de rééquilibrer et d'optimiser le jalonnement entre les validateurs.
 
 ## Perspective utilisateur
 
 ### Création
 
-Les utilisateurs peuvent créer du stCORE en utilisant du CORE. At any given time during the day (UTC), the conversion ratio remains fixed. For example, if the ratio is 1:1.1, users can mint 100 stCORE using 110 CORE.
+Les utilisateurs peuvent créer du stCORE en utilisant du CORE. À tout moment de la journée (UTC), le ratio de conversion reste fixe. Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent créer 100 stCORE en utilisant 110 CORE.
 
 ### Rachat
 
-Users can redeem any amount of stCORE they hold. For example, if the conversion ratio is 1:1.1, users can redeem 100 stCORE to receive 110 CORE.
+Les utilisateurs peuvent racheter n'importe quelle quantité de stCORE qu'ils détiennent. Par exemple, si le ratio de conversion est de 1:1,1, les utilisateurs peuvent racheter 100 stCORE en utilisant 110 CORE.
 
 :::note
-There is a redemption period of **7 days**. Once users initiate a redemption, they must wait **7 days** before withdrawing the CORE tokens to their wallet.
+Il existe une période de rachat par défaut de **7 jours**. Une fois que les utilisateurs ont initié un remboursement, ils doivent attendre 7 jours avant de retirer les jetons CORE vers leur portefeuille.
 :::
 
-## Common ERC-20 Use Cases
+## Cas d'utilisation communs ERC-20
 
-stCORE is a standard ERC-20 token and can be used in all typical ERC-20 scenarios: transfers, liquidity provision on DEXs, swaps, and more.
+stCORE est un jeton ERC-20 standard et peut être utilisé dans tous les scénarios ERC-20 typiques : transferts, fourniture de liquidité sur les DEXs, échanges et plus encore.
 
 ## Implémentations
 
-The implementation of the `Earn` module for liquid staking can be found [here](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
+L'implémentation du module `Earn` de liquid staking se trouve [ici](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-User methods in the `Earn` module include:
+Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
 
-- **`mint()`:** Mint stCORE using CORE
-- **`redeem()`:** Redeem stCORE for CORE
-- **`withdraw()`:** Withdraw CORE to the wallet after the redemption period
+- **\`mint():** créer du stCORE en utilisant du CORE
+- **redeem() :** Racheter stCORE contre CORE
+- **\`withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
 
-Operator methods in the `Earn` module include:
+Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
 
-- **`afterTurnRound()`:** Implements autocompounding
-- **`rebalance()`:** Balances staking between the most and least staked validators
-- **`manualRebalance()`:** Manually transfers staking between validators
+- **afterTurnRound() :** Implémente la capitalisation automatique des intérêts (autocompounding).
+- **\`rebalance():** équilibrer les validateurs les plus/moins stakés
+- **\`manualRebalance():** transférer manuellement le staking entre deux validateurs
 
-### Validator Selection on Mint/Redeem
+### Sélection des validateurs lors de création/rachat
 
-Whenever a `mint` happens, the `Earn` contract delegates CORE to `PledgeAgent`. While when a `redeem` happens, the `Earn` contract undelegates CORE from `PledgeAgent`. Cela est mis en œuvre de manière à simplifier la gestion comptable.
+Chaque fois qu'un mint se produit, le contrat Earn délègue CORE à PledgeAgent. Chaque fois qu'un mint se produit, le contrat Earn délègue CORE à 'PledgeAgent'. Cela est mis en œuvre de manière à simplifier la gestion comptable.
 
-When users mint, they must specify a validator address to stake the CORE with. This ensures equal treatment of all validator candidates, whether elected or queued. For a smoother experience, the official frontend may randomly select a validator on behalf of the user.
+Lorsque les utilisateurs créent (mint), ils doivent spécifier une adresse de validateur pour jalonner les CORE. Cela garantit un traitement égal de tous les candidats validateurs, qu'ils soient élus ou en file d'attente. Pour une expérience plus fluide, le frontend officiel peut sélectionner aléatoirement un validateur au nom de l'utilisateur.
 
-During redemption, the `Earn` contract selects validators randomly using `_randomIndex()`. This random index determines where in the validator list the system starts undelegating CORE until the requested amount is reached.
+Pendant le remboursement, le contrat 'Earn' sélectionne les validateurs de manière aléatoire en utilisant '_randomIndex()'. This random index determines where in the validator list the system starts undelegating CORE until the requested amount is reached.
 
 ### Keeping Validators Balanced in Stake Amounts
 
