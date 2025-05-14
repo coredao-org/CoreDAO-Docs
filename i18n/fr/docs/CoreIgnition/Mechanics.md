@@ -136,13 +136,13 @@ Les utilisateurs peuvent bénéficier de multiplicateurs de jetons de base pour 
 Multiplicateurs basés sur le volume de trading
 Les utilisateurs qui interagissent avec les pools Autorisés reçoivent des multiplicateurs basés sur l'équivalent en USD de leur volume de trading par jour. La valeur du multiplicateur augmente progressivement à mesure que le volume de trading augmente, avec différentes valeurs de multiplicateur appliquées selon des seuils de volume spécifiques comme suit :
 
-| Plage de volume                    | Multiplicateurs      |
-| ---------------------------------- | -------------------- |
-| $0 ~ >$100         | 1x                   |
-| $10 ~ >$1,000      | 1.5x |
-| $1,000 ~ >$10,000  | 2x                   |
-| $10,000 ~ >$50,000 | 2.5x |
-| 50 000 $ et plus                   | 3x                   |
+| Plage de volume                     | Multiplicateurs      |
+| ----------------------------------- | -------------------- |
+| $0 ~ > $100         | 1x                   |
+| $100 ~ > $1,000     | 1.5x |
+| $1,000 ~ > $10,000  | 2x                   |
+| $10,000 ~ > $50,000 | 2.5x |
+| 50 000 $ et plus                    | 3x                   |
 
 > **Exemple de calcul**
 > Un utilisateur qui négocie l'équivalent de 51 000 $ en volume par jour recevra :
