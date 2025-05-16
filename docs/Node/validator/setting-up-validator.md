@@ -97,7 +97,6 @@ Syncing from the genesis block can take a significant amount of time. It is reco
 
 1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
 
-
 2. **Genesis and Configuration Files:** The pre-build binaries contains `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
 
 3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
@@ -145,7 +144,7 @@ Use the following command to start the validator node.
 
 ```bash
 # start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000 
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000  --networkid {core-chain-id}
 ```
 
 Let’s break down the flags used in this command:
@@ -166,6 +165,8 @@ Let’s break down the flags used in this command:
 
 - **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
 
+- **`networkid`:** Specify the Core network chain id you intend to run the validator node (e.g., 1114 for Core Tesnet2)
+
 
 #### Syncing from Genesis
 If you prefer to sync your validator node from the genesis block instead of using a snapshot:
@@ -177,7 +178,7 @@ If you prefer to sync your validator node from the genesis block instead of usin
 - Then start the validator node using the command below:
 
   ```bash
-  geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000 
+  geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
 ⚠️ **Note:** Syncing from genesis can take a lot of time depending on system resources and network speed.

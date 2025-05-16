@@ -86,6 +86,25 @@ You can monitor the status of your validator and its block production record on 
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-4.webp)
 
+## Setting Validator Name
+
+You may assign a human-readable name to your validator node using the Core Staking UI. This name serves as a label for delegators and network participants to identify your validator in the interface.
+
+### Steps to Set or Update Your Validator Name
+
+1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators). 
+2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
+3. **Open Validator Details:** Click on your validator to open the Validator Details page.
+4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
+
+[validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+
+4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
+
+[validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+
+5. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
+
 ## Maintaining Your Validator Node
 To remain an active and successful validator, you’ll need to keep your node online, perform maintenance, and respond to any issues that arise.
 
