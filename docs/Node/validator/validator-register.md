@@ -98,19 +98,19 @@ You may assign a human-readable name to your validator node using the Core Staki
 4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
 
 <p align="center">
-[validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
 </p>
 
 4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
 
 <p align="center">
-[validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
 </p>
 
 5. **Sign Validator Ownership Message:** Click Sign to verify ownership of your validator address by signing the displayed message.
 
 <p align="center">
-[validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
 </p>
 
 6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
