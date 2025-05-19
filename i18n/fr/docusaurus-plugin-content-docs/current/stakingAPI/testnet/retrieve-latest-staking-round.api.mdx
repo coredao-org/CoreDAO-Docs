@@ -1,0 +1,66 @@
+---
+id: retrieve-latest-staking-round
+title: Récupérer le Dernier Round de Staking
+description: Renvoie le round actuel de la chaîne Core.
+sidebar_label: Dernier round de staking
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVDtv3DAM/isCly6ufQ06eQuKoAjQIUjSKbhBJzNnNbbkktQlB8P/vaBsp0muQB9TvdiQxU/fg9QIDbIjP4iPAWq4RkkU2EiLxiUiDGIoptCYeD8vRkLjWusDFDBYsj0KEkN9ty2AkIcYGBnqEc42G329xv9iBXmF9OE+Um/1lyEU8njAxnByDpnvU9cdSyjAxSAYRLHsMHTe5YLqGyvgCOxa7K1+yXFAqCHuvqETZUdxQBI/02GxkvjFPh8E90hQvKF4kzcaFxtcRa+6SpgK6JHZ7vEFEgv5sD8BOm8ar5+2e6U0klkgjN3FJKcnEHLq5PeSumzmtXr5B7puWzQh9TukVdZcb1jsgw/7OZQSpuUp4OOvEjwPBokimehygzTmsfUdrgEqkGK/Af0vYpx5/1uYF7l2DQ6fhs76sIr1zAmfnVNUaWMDNewxK7DSQg3V4kk1a6iyNVAAIx3mERohUQc1tCID19Va8N4OvtSozsqdOC4DymOkhwqmbQHaWpm+l075f9IBvVncP7+6PG3Lq0vTRJd6DDJ3pJa84zdFSmku+FBuyo2aNUSW3ua4gu1xvi7y1JplrleI60Xaq5PHnz3wl/fMEo3gk1TZeGWTrRoXc+9g8Ur9nFukgNngbQFtZNE947izjF+pmyZd/p6QjvPNdbDk7U4NvNtOBbRoG6ScyAMe1TTncNAsD7ZLyuWkhzWL59w/X9zCNP0AphbinA==
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/testnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Récupérer le Dernier Round de Staking"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/status/round"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Renvoie le round actuel de la chaîne Core.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Informations sur le dernier round récupérées avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse."},"message":{"type":"string","description":"Informations supplémentaires ou message concernant la réponse."},"result":{"type":"object","properties":{"latestRound":{"type":"integer","description":"Le numéro du dernier round de staking."}}}}}}}},"400":{"description":"Une erreur s'est produite lors de la récupération du round de staking.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse d'erreur."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
+>
+  
+</StatusCodes>

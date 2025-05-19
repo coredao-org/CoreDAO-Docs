@@ -1,5 +1,5 @@
 ---
-sidebar_label: Passerelle de Jetons vers Core avec LayerZero
+sidebar_label: Pontage de Jetons vers Core avec LayerZero
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
----&#x20;
+---
 
 Dans ce [guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), nous vous accompagnons à travers le processus de mise en place de transferts de tokens cross-chain en utilisant le protocole Omnichain Fungible Token (OFT) V2 de LayerZero. Plus précisément, ce guide se concentre sur l'activation des transferts de tokens ERC-20 entre le Core Testnet et le Base Sepolia Testnet, équipant les développeurs des outils et connaissances nécessaires pour gérer les interactions de tokens cross-chain.
 

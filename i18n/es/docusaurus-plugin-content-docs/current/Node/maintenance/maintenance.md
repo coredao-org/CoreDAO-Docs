@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ## Binario
 
-Se sugiere a todos los clientes que actualicen a la última versión. Se supone que la [última versión] (https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
+Se sugiere a todos los clientes que actualicen a la última versión. Se supone que la [última versión](https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
 
 ## Almacenamiento
 
@@ -65,4 +65,4 @@ Cuando el nodo falla o se cierra a la fuerza, el nodo se sincronizará desde un 
 
 ## Actualizar Geth
 
-Lea [esta guía] (network-upgrade.md)
+Lea [esta guía](./network-upgrade.md)

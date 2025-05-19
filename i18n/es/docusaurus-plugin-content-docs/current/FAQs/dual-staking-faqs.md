@@ -52,7 +52,7 @@ El acto de los delegantes de reequilibrar su delegación para maximizar la recom
 
 ### 7\. ¿Existe algún riesgo de perder sus activos de Bitcoin durante la doble apuesta?
 
-Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview), allowing users to maintain full control over their assets. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
+Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview.md), allowing users to maintain full control over their assets. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
 
 ### 8\. Si bien Bitcoin tiene un límite de tiempo, ¿pueden los usuarios cancelar la apuesta de CORE que tiene doble apuesta con Bitcoin? Si es así, ¿pierden las recompensas obtenidas antes de retirar la apuesta de CORE?
 

@@ -84,7 +84,7 @@ Si está ejecutando un nodo RPC, debe habilitar las reglas de entrada "HTTP" en 
 
 1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo RPC, ejecutando su nodo completo RPC directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2\. Descargue el binario para nodo desde la [página de lanzamientos de Core] (https://github.com/coredao-org/core-chain/releases) del repositorio core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
+2\. Descargue el binario para nodo desde la [página de lanzamientos de Core](https://github.com/coredao-org/core-chain/releases) del repositorio core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión](https://github.com/coredao-org/core-chain/releases/latest).
 
 3\. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 

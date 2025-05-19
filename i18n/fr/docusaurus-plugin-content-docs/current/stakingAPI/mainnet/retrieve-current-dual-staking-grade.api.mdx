@@ -1,0 +1,66 @@
+---
+id: retrieve-current-dual-staking-grade
+title: Récupérer le Niveau Actuel de Dual Staking
+description: Renvoie le niveau actuel de dual staking, y compris les taux de staking et les pourcentages associés.
+sidebar_label: Récupérer le Niveau Actuel de Dual Staking
+hide_title: true
+hide_table_of_contents: true
+api: eJzFVE1v2zAM/SsCL7t4STbs5FvRFUWBHYq2OxXBwMiMrdaWPJJOGxj574NkZ/lwD7kMyyWOYr73yPfEHgoSy65VFzzk8EDasRejFRnbMZNXU3RYG1F8db40JWNBmXHe1l0RD+IfZBiVxKAvDIoE61CpMC2xJa9YkswggxYZG1Jigfx5mQGTtMELCeQ9fF0s4tepmu8TZsOk7GhDhZHOWhJZd3W9jfA2eCWvEQXbtnYWI8r8RSJUD2IrajA+6bYlyCGsXshq1MWhJVY3CBFF7eToPeeVSmLIzsQ9pheNDQUZ54vE58s0OSbpajVhnX5F9KRlBrsMGhLBko4IRNn5coJ/VRQuPmJtnF8HbhKGCWxGCIOr0OmeMI0yMQzsRwTIjNsJ/g8nSeLUXjFvTquJs2d2OqVGLprnKz2g0gUjfaroiNWsA6fupgpTnwc9F0IfCo5TmnrVE+YZ7PafDL59lMwrb4g5sAk2XZPCvFWu/hvPfRA+Uv5/kzpmchB/EpuLg3mTavchpPe2Ruf3HTuR7jC/iKpVKCCHklIHqBXkMB9nMpeuaZC38zio8exXmhNkIMSbYVn00HENOVSqreTzffVnbN3MBqYCwyxwOYfdMoN4WVITTuvYxXVgMo+jB1f3d9OLdn9nimC7JmYj3bFY8knOiqKWoeDLbDFbpAQG0QaTaR4bGvZnWk/melyeaYXtgW7Hzk74+0Me/un6HU1Vetd5six2kObaj7Y8w0gThz8YE8VOrFlmUAXRWND3KxT6yfVuF49/d8TbYbtvkB2uogPPy10GFWFBnLx8pW2curXUxkhssO7Sljq/CtHMv/G5vXmC3e4PoShc5Q==
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Récupérer le Niveau Actuel de Dual Staking"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/summary/dualstaking_grade"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Renvoie le niveau actuel de dual staking, y compris les taux de staking et les pourcentages associés.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Demande"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Niveau de dual staking récupéré avec succès.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état indiquant le résultat de l'opération."},"message":{"type":"string","description":"Informations complémentaires ou message concernant la réponse."},"result":{"type":"array","description":"Liste des niveaux de dual staking avec les taux de staking et les pourcentages.","items":{"type":"object","properties":{"stakeRate":{"type":"integer","description":"Le taux de staking pour le niveau de dual staking."},"percentage":{"type":"integer","description":"Le pourcentage associé au taux de staking."}}}}}}}}},"400":{"description":"Une erreur est survenue lors de la récupération du niveau de dual staking.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Code d'état de la réponse d'erreur."},"message":{"type":"string","description":"Message d'erreur expliquant le problème."}}}}}}}}
+>
+  
+</StatusCodes>

@@ -33,7 +33,7 @@ Si está listo para sumergirse, acceda a la guía completa [aquí](https://githu
 
 - **Personalizar la configuración del token**: si bien esta guía se centra en unir los tokens ERC-20, los contratos OFT se pueden adaptar para cumplir con diferentes requisitos de tokens, ya sean fungibles o no fungibles. Puede modificar la configuración para sus necesidades de token únicas.
 
-- Para una mayor personalización y detalles de configuración más detallados, puede consultar la [documentación de LayerZero sobre configuración OFT y EVM] (https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+- Para una mayor personalización y detalles de configuración más detallados, puede consultar la [documentación de LayerZero sobre configuración OFT y EVM](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
 
 Este recurso lo guiará a través de cualquier configuración avanzada que no se cubra en esta guía, lo que garantizará que pueda adaptar el proceso a los requisitos específicos de su proyecto.
 
@@ -41,4 +41,4 @@ Este recurso lo guiará a través de cualquier configuración avanzada que no se
 
 Al implementar OFT V2 de LayerZero, desbloquea la capacidad de crear ecosistemas de tokens omnichain donde los tokens se pueden transferir de manera eficiente a través de múltiples blockchains. Los tokens puente entre Core Testnet y Base Sepolia se utilizan como ejemplo debido a su velocidad y bajas tarifas. A través de los puntos finales proporcionados por LayerZero, puede transferir tokens entre Core y muchas redes EVM diferentes. — esta guía muestra lo fácil que es ampliar el alcance de su proyecto al permitir la interoperabilidad entre redes. Esto abre nuevas posibilidades para aplicaciones descentralizadas (dApps) que requieren interacciones de tokens en varias cadenas de bloques, mejorando la liquidez, la escalabilidad y la funcionalidad.
 
-Comience su viaje con la guía completa [aquí](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) y explore el potencial de las soluciones omnichain de LayerZero. Para configuraciones más detalladas, asegúrese de visitar [los recursos oficiales de LayerZero] (https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+Comience su viaje con la guía completa [aquí](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) y explore el potencial de las soluciones omnichain de LayerZero. Para configuraciones más detalladas, asegúrese de visitar [los recursos oficiales de LayerZero](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).

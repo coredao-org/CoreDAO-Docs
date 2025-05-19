@@ -14,7 +14,7 @@ Antes de correr un nodo validador en Core, recomendamos encarecidamente leer él
 
 ## Configurar un nodo completo en modo validador
 
-Antes de que puedas registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo Validador. Sigue esta [guia](./running-validator.md) para configurar y correr un nodo validador. Tu nodo completo necesita sincronizarse con la red Core, lo que significa que debe descargar los datos de la cadena de bloques y mantenerse actualizado con los bloques más recientes.
+Antes de que puedas registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo Validador. Sigue esta [guia](./setting-up-validator.md) para configurar y correr un nodo validador. Tu nodo completo necesita sincronizarse con la red Core, lo que significa que debe descargar los datos de la cadena de bloques y mantenerse actualizado con los bloques más recientes.
 
 ### Genera la "Llave de consenso"
 

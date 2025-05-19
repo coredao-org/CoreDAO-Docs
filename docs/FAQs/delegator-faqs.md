@@ -19,7 +19,7 @@ In the Core ecosystem, delegation is a fundamental mechanism that allows BTC min
 
 ### 3. How can one delegate CORE tokens in Core?
 
-By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core) on CORE Delegation for more details.
+By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core.md) on CORE Delegation for more details.
 
 <!-- ### 4. What are the minimum staking period requirements for BTC and BTC Hash Power delegation?
 For BTC and BTC hash power delegation the minimum requirement is that of **10** days, i.e., you cannot un-delegate your stake prior to **10** days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 10 days\`). -->
@@ -30,7 +30,7 @@ This type of delegation allows BTC and CORE token holders to support specific va
 
 ### 5. How does one delegate hash power on Core netowrk?
 
-By delegating hash power to Validators, BTC miners can help secure the network and get share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-hash) on hash power delegation for more details.
+By delegating hash power to Validators, BTC miners can help secure the network and get share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-hash.md) on hash power delegation for more details.
 
 ### 6. How can a delegator maximize their rewards?
 

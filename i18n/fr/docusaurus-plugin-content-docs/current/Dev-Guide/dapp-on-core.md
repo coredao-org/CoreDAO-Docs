@@ -9,21 +9,21 @@ description: Construire une dApp Full Stack sur Core
 
 ---
 
-Les applications décentralisées (dApps) utilisent une blockchain ou des smart contrats on-chain pour stocker et référencer des données, plutôt que de s'appuyer sur des bases de données centralisées traditionnelles. Une structure de dApp commune et simple se compose généralement d'un front-end en React.js ou Vue.js utilisant Web3.js ou Ethers.js pour interagir avec les smart contrats déployés sur une blockchain compatible EVM.
+Les applications décentralisées (dApps) utilisent une blockchain ou des contrats intelligents on-chain pour stocker et référencer des données, plutôt que de s'appuyer sur des bases de données centralisées traditionnelles. Une structure de dApp commune et simple se compose généralement d'un front-end en React.js ou Vue.js utilisant Web3.js ou Ethers.js pour interagir avec les contrats intelligents déployés sur une blockchain compatible EVM.
 
 ## Ce que Nous Allons Construire
 
-Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethers.js qui stocke des données dans un smart contract sur la blockchain Core et les affiche aux utilisateurs. Le code complet de la dApp est disponible sur GitHub dans le répertoire [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Basic%20Full%20Stack%20Dapp%20on%20Core#building-a-dapp-on-core).
+Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethers.js qui stocke des données dans un contrat intelligent sur la blockchain Core et les affiche aux utilisateurs. Le code complet de la dApp est disponible sur GitHub dans le répertoire [dApp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/01-Simple%20Storage%20Full%20Stack%20Dapp).
 
 ## Objectifs d'Apprentissage
 
 Ce tutoriel vous aidera à acquérir les connaissances suivantes :
 
 - Connectivité du portefeuille MetaMask au Core Testnet ;
-- Développement et déploiement de smart contrats sur Core Testnet ;
-- Intégration front-end avec le smart contract en utilisant la bibliothèque Ethers.js ;
-- Lecture des données d'un smart contract ;
-- Écriture des données dans un smart contract;
+- Développement et déploiement de contrats intelligents sur Core Testnet ;
+- Intégration front-end avec le contrat intelligent en utilisant la bibliothèque Ethers.js ;
+- Lecture des données d'un contrat intelligent ;
+- Écriture des données dans un contrat intelligent;
 
 ## Prérequis Logiciels
 
@@ -56,7 +56,9 @@ npm install --save-dev chai @nomiclabs/hardhat-waffle
 npx hardhat
 ```
 
+<p align="center">
 ![harhat-project-initialize](../../../../../static/img/hardhat/dapp-tutorial-1.png)
+</p>
 
 :::note
 Comme nous utiliserons Waffle pour ce projet, assurez-vous de sélectionner **Non** pour l'option "_Voulez-vous installer les dépendances de ce projet d'exemple avec npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
@@ -86,12 +88,14 @@ dapp-tutorial.
 |      
 ```
 
-5. Installez et configurez l'extension MetaMask pour Chrome pour l'utiliser avec Core Testnet. Consultez le guide détaillé [ici](./core-testnet-wallet-config.md).
+5. Installez et configurez l'extension MetaMask pour Chrome pour l'utiliser avec Core Testnet. Consultez le guide détaillé [ici](./core-wallet-config.md).
 
-6. Créez un fichier secret.json dans le dossier racine et stockez la clé privée de votre portefeuille MetaMask dedans. Consultez [ici](https://metamask.zendesk.com/hc/en-us/articles/360015290032-How-to-reveal-your-Secret-Recovery-Phrase) pour des détails sur la façon d'obtenir la clé privée du compte MetaMask.
+6. Créez un fichier secret.json dans le dossier racine et stockez la clé privée de votre portefeuille MetaMask dedans. Consultez [ici](https://support.metamask.io/configure/accounts/how-to-export-an-accounts-private-key/) pour des détails sur la façon d'obtenir la clé privée du compte MetaMask.
 
 ```json
-{"PrivateKey":"votre clé privée, ne divulguez pas ce fichier, gardez-le absolument en sécurité"}
+{
+  "PrivateKey": "you private key, do not leak this file, do keep it absolutely safe"
+}
 ```
 
 :::caution
@@ -129,7 +133,7 @@ module.exports = {
    solidity: {
       compilers: [
         {
-           version: '0.8.24',
+           version: '0.8.19',
            settings: {
             evmVersion: 'shanghai',
             optimizer: {
@@ -152,7 +156,7 @@ module.exports = {
  
 ```
 
-## Écriture du smart contract
+## Écriture du Contrat Intelligent
 
 1. Accédez au dossier `contracts` dans le répertoire racine de votre projet.
 2. Supprimez le fichier `Lock.sol` ; créez un nouveau fichier `Storage.sol` et collez le contenu suivant dedans.
@@ -195,27 +199,28 @@ contract Storage {
 
 ### Explication
 
-Le contrat `Storage` est un exemple simple qui démontre comment stocker et récupérer une valeur à l'aide d'un smart contract Solidity. Il se compose d'une variable d'état pour contenir la valeur et de deux fonctions pour mettre à jour et lire cette valeur. La fonction `store` permet à tout utilisateur de définir la valeur, tandis que la fonction `retrieve` permet à tout utilisateur de lire la valeur actuelle. Ce contrat est utile pour comprendre les bases des variables d'état et de la visibilité des fonctions en Solidity. Ce smart contract Solidity, nommé `Storage`, est un contrat simple permettant de stocker et de récupérer une seule valeur `uint256`. Voici une description détaillée de ses composants et fonctionnalités :
+Le contrat `Storage` est un exemple simple qui démontre comment stocker et récupérer une valeur à l'aide d'un contrat intelligent Solidity. Il se compose d'une variable d'état pour contenir la valeur et de deux fonctions pour mettre à jour et lire cette valeur. La fonction `store` permet à tout utilisateur de définir la valeur, tandis que la fonction `retrieve` permet à tout utilisateur de lire la valeur actuelle. Ce contrat est utile pour comprendre les bases des variables d'état et de la visibilité des fonctions en Solidity. Ce contrat intelligent Solidity, nommé `Storage`, est un contrat simple permettant de stocker et de récupérer une seule valeur `uint256`. Voici une description détaillée de ses composants et fonctionnalités :
 
 #### Composants du contrat
 
 1. **Variable d'état :**
-   - `number` : Une variable `uint256` utilisée pour stocker la valeur.
+ - `number` : Une variable `uint256` utilisée pour stocker la valeur.
 
 #### Fonctions du contrat
 
 1. **Fonction Store :**
-   - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
-   - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-   - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
+
+ - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
+ - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+ - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
 
 2. **Fonction Retrieve :**
-   - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
-   - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-   - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
-   - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
+ - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
+ - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+ - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
+ - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
 
-## Compilation du smart contract
+## Compilation du contrat intelligent
 
 1. Pour compiler le contrat `Storage` défini dans `Storage.sol`, exécutez la commande suivante depuis le répertoire racine
 
@@ -223,9 +228,9 @@ Le contrat `Storage` est un exemple simple qui démontre comment stocker et réc
 npx hardhat compile
 ```
 
-## Déploiement et interaction avec le smart contract
+## Déploiement et interaction avec le contrat intelligent {#deploy-and-interact-with-smart-contract}
 
-1. Avant de déployer votre smart contract sur Core, il est recommandé de d'abord effectuer une série de tests pour s'assurer que le contrat fonctionne comme prévu. Reportez-vous au guide détaillé [ici](https://docs.coredao.org/docs/Dev-Guide/hardhat#contract-testing) pour plus de détails.
+1. Avant de déployer votre contrat intelligent sur Core, il est recommandé de d'abord effectuer une série de tests pour s'assurer que le contrat fonctionne comme prévu. Reportez-vous au guide détaillé [ici](https://docs.coredao.org/docs/Dev-Guide/hardhat#contract-testing) pour plus de détails.
 
 2. Créez un dossier `scripts` dans le répertoire racine de votre projet. À l'intérieur de ce dossier, créez un fichier `deploy-and-call.js` et collez le script suivant.
 
@@ -261,9 +266,9 @@ main().catch((error) => {
 });
 ```
 
-3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Référez-vous [ici](https://docs.coredao.org/docs/Dev-Guide/core-testnet-wallet-config) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Référez-vous [ici](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
 
-4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre smart contract sur la blockchain Core.
+4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 
 ```bash
 npx hardhat run scripts/deploy-and-call.js
@@ -279,13 +284,13 @@ call store(), set value to 100
 call retrieve() again: BigNumber { value: "100" }
 ```
 
-5. Assurez-vous de sauvegarder l'adresse du contrat Storage obtenue ci-dessus, car elle sera utilisée pour interagir avec le smart contract depuis l'interface frontend de votre dApp.
+5. Assurez-vous de sauvegarder l'adresse du contrat Storage obtenue ci-dessus, car elle sera utilisée pour interagir avec le contrat intelligent depuis l'interface frontend de votre dApp.
 
-🎉 Félicitations ! Vous avez appris à créer, compiler et déployer un smart contract sur le Core Testnet en utilisant Hardhat.
+🎉 Félicitations ! Vous avez appris à créer, compiler et déployer un contrat intelligent sur le Core Testnet en utilisant Hardhat.
 
-## Interaction avec le smart contract via l'interface frontend
+## Interaction avec le contrat intelligent via l'interface frontend
 
-⚡ Créons une interface frontend pour interagir avec le smart contract.
+⚡ Créons une interface frontend pour interagir avec le contrat intelligent.
 
 ### Configuration du frontend
 
@@ -295,7 +300,7 @@ call retrieve() again: BigNumber { value: "100" }
 git clone https://github.com/coredao-org/dapp-tutorial.git
 ```
 
-2. Accédez au dossier `01-Basic Full Stack Dapp on Core ` dans le répertoire `dapp-tutorial` cloné.
+2. Accédez au dossier `01-Basic Full Stack Dapp on Core` dans le répertoire `dapp-tutorial` cloné.
 
 ```bash
 cd dapp-tutorial
@@ -308,7 +313,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. Cela servira l'application avec une fonctionnalité de rechargement à chaud à l'adresse [http://localhost:5173](http://localhost:5173/)
+4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. Cela servira l'application avec une fonctionnalité de rechargement à chaud à l'adresse [http://localhost:5173]
 
 ```bash
 npm run dev
@@ -319,17 +324,19 @@ npm run dev
 La clé logique blockchain de l'application est implémentée dans [App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx)
 
 1. [App.tsx (Wallet)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L20): Logique pour connecter l'application au portefeuille MetaMask.
-2. [App.tsx (Store)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L58): Logique pour écrire des données dans le smart contract Storage.
-3. [App.tsx (Retrieve)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L87): Logique pour lire des données depuis le smart contract Storage.
+2. [App.tsx (Store)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L58): Logique pour écrire des données dans le contrat intelligent Storage.
+3. [App.tsx (Retrieve)](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L87): Logique pour lire des données depuis le contrat intelligent Storage.
 
-### Ajout des détails du smart contract
+### Ajout des détails du contrat intelligent
 
 1. Copiez le fichier `Storage.sol` depuis le dossier `contracts` à la racine de votre projet et collez-le dans le dossier `frontend/src/contracts`.
-2. Copiez l'adresse du smart contract Storage obtenue dans la section ci-dessus.
+2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section [ci-dessus](#deploy-and-interact-with-smart-contract).
 3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
-const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
+
+const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
+
 ```
 
 4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
@@ -338,16 +345,24 @@ const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2'
 
 1. Exécutez la commande `npm run dev` depuis la racine du projet pour démarrer l'application. Cela servira l'application à l'adresse [http://localhost:5173](http://localhost:5173/)
 
-2. Assurez-vous que votre portefeuille MetaMask est correctement installé et switché sur le Core Testnet comme décrit dans notre [guide utilisateur du Core Testnet](./core-testnet-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
+2. Assurez-vous que votre portefeuille MetaMask est correctement installé et switché sur le Core Testnet comme décrit dans notre [guide utilisateur du Core Testnet](./core-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
+
+<p align="center">
 
 ![dapp-on-core](../../../../../static/img/dapp/dapp-1.png)
 
-3. Entrez un nombre dans le champ de saisie et cliquez sur le bouton **store** pour l'enregistrer dans le contrat. Une action d'écriture sur le smart contract appelle le portefeuille MetaMask. Cliquez sur le bouton **Confirm** pour signer la transaction et attendez la confirmation sur la blockchain.
+</p>
 
+3. Entrez un nombre dans le champ de saisie et cliquez sur le bouton **store** pour l'enregistrer dans le contrat. Une action d'écriture sur le contrat intelligent appelle le portefeuille MetaMask. Cliquez sur le bouton **Confirm** pour signer la transaction et attendez la confirmation sur la blockchain.
+
+<p align="center">
 ![dapp-on-core](../../../../../static/img/dapp/dapp-2.avif)
+</p>
 
-4. Après que la transaction soit confirmée sur la blockchain, cliquez sur le bouton **retrieve** pour lire la valeur depuis le smart contract. Vous remarquerez que la valeur a été mise à jour.
+4. Après que la transaction soit confirmée sur la blockchain, cliquez sur le bouton **retrieve** pour lire la valeur depuis le contrat intelligent. Vous remarquerez que la valeur a été mise à jour.
 
+<p align="center">
 ![dapp-on-core](../../../../../static/img/dapp/dapp-3.avif)
+</p>
 
 🎉 Félicitations ! Vous avez interagi avec votre contrat nouvellement déployé via l'interface frontend de votre dApp ! Vous pouvez développer la base de code en déployant et en interagissant avec différents contrats, et en ajoutant de nouveaux composants UI au site Web pour vos utilisateurs.

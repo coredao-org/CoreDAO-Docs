@@ -15,7 +15,7 @@ L'écosystème Core est conçu pour inciter à la participation et sécuriser l'
 
 <p align="center">
 ![rewards](../../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
-</p>
+</p> 
 
 ### 1. Récompenses de minage
 
@@ -24,19 +24,19 @@ L'écosystème Core est conçu pour inciter à la participation et sécuriser l'
 
 ### 2. Récompenses de staking
 
-- **Description:** Les récompenses de staking sont distribuées aux détenteurs de Bitcoin et CORE qui stakent et délèguent leurs tokens avec les validateurs sur le réseau Core. Ce staking contribue non seulement à sécuriser le réseau via le composant Preuve d’Enjeu Déléguée (DPoS) du consensus Satoshi Plus, mais permet également aux détenteurs de tokens de participer à la gouvernance du réseau.
-- **Mécanisme:** La DPoS permet aux détenteurs de tokens CORE et de [Bitcoin](../../products/btc-staking/overview.md) de voter et de participer à l'élection du groupe de validateurs en déléguant leurs avoirs aux validateurs de leur choix. Pour le staking des tokens CORE, l'exigence minimale de staking est de 1 token CORE, permettant à tout détenteur de CORE de staker sur le réseau Core. Du côté du staking de Bitcoin, la configuration actuelle exige un **seuil minimal de staking de 0,01 Bitcoin**, qui est ajustable via un vote de gouvernance. Les détenteurs de tokens CORE et de Bitcoin peuvent déléguer leurs tokens respectifs aux validateurs de leur choix via le site officiel de [staking website](https://stake.coredao.org/). Les récompenses gagnées par les stakers sont proportionnelles à la quantité de Bitcoin/CORE stakés et à la durée du staking, incitant à la détention à long terme et à la participation au processus de consensus.
+- **Description:** Les récompenses de staking sont distribuées aux détenteurs de Bitcoin et CORE qui jalonne et délèguent leurs jetons avec les validateurs sur le réseau Core.
+- **Mécanisme:** La DPoS permet aux détenteurs de jetons CORE et de [Bitcoin](../../products/btc-staking/overview.md) de voter et de participer à l'élection du groupe de validateurs en déléguant leurs avoirs aux validateurs de leur choix. Pour le staking des jetons CORE, l'exigence minimale de staking est de **1 jeton CORE**, permettant à tout détenteur de CORE de jalonner sur le réseau Core. Du côté du staking Bitcoin, la configuration actuelle n'impose aucune exigence minimale de BTC lors de l'utilisation du script de staking. Cependant, le staking via l'interface utilisateur officielle du site web nécessite un minimum de 0,01 BTC (hors frais de transaction). Les détenteurs de jetons CORE et de Bitcoin peuvent déléguer leurs jetons respectifs aux validateurs de leur choix via le site officiel de [staking website](https://stake.coredao.org/staking). Les récompenses gagnées par les stakers sont proportionnelles à la quantité de Bitcoin/CORE stakés et à la durée du staking, incitant à la détention à long terme et à la participation au processus de consensus.
 
-### 3. Récompenses des validateurs
+### 3. Récompenses des validateurs {#3-validator-rewards}
 
 - **Description:** Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels.
-- **Mécanisme:** Les validateurs reçoivent une combinaison de frais de transaction et de nouveaux tokens CORE miné par la politique d'inflation de la blockchain. Le montant des récompenses qu'un validateur reçoit est proportionnel à son stake et à la puissance de hachage déléguée par les mineurs. Il existe deux catégories de récompenses de validateur:
-  1. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
-  2. **Frais collectés à partir des transactions dans chaque bloc**;
+- **Mécanisme :** Les validateurs reçoivent une combinaison de récompenses de blocs CORE et de frais de gaz. Il existe deux catégories de récompenses de validateur:
+    1. **Récompenses de bloc**, c'est-à-dire des jetons CORE nouvellement frappés.
+    2. **Frais collectés à partir des transactions dans chaque bloc**;
 
-Les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'un tour est miné. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
+Les récompenses de bloc sont calculées et distribuées lorsque le dernier bloc d'un round est miné. Actuellement, **90%** des récompenses vont aux validateurs et **10%** vont au `contrat de récompenses du système`. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. Chaque validateur a une probabilité égale de produire des blocs, donc à long terme, tous les validateurs stables devraient obtenir une part similaire de la récompense.
 
-Les validateurs partagent les récompenses avec les entités qui leur ont été délégué – y compris les stakers de CORE, les stakers de Bitcoin et les délégués PoW – mais ils décident du montant à redistribuer en choisissant combien ils (les validateurs) souhaitent conserver pour eux-mêmes. Les validateurs peuvent prendre comme ils le souhaitent une grande ou une petite partie la récompense, bien qu'ils soient incités à être généreux pour attirer plus de stake et de puissance de hachage.
+Les validateurs partagent les récompenses avec les entités qui leur ont été délégué – y compris les stakers de CORE, les stakers de Bitcoin et les mineurs bitcoin – mais ils décident du montant à redistribuer en choisissant combien ils (les validateurs) souhaitent conserver pour eux-mêmes. Les validateurs peuvent prendre comme ils le souhaitent une grande ou une petite partie la récompense, bien qu'ils soient incités à être généreux pour attirer plus de stake et de puissance de hachage.
 
 Après que les validateurs aient prélevé leurs frais, le protocole utilise cette fonction pour déterminer comment les récompenses restantes sont réparties entre les stakers de CORE, les stakers de Bitcoin et les délégués de puissance de hachage. La distribution des récompenses est calculée en fonction de la formule suivante:
 
@@ -71,9 +71,9 @@ Où:
 
 Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-- Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
-- Récompense par unité de CORE : rSu = $$\frac{rS}{rSp}$$
-- Récompense par unité de BTC :  $$rBu$$ de **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicateur de rendement pour le Niveau<sub>n</sub>
+- \*\*Récompense par unité de puissance de hachage : $$rHu$$ =  $$\frac{rH}{rHp}$$
+- \*\*Récompense par unité de CORE : $$rSu$$ = $$\frac{rS}{rSp}$$
+- \*\*Récompense par unité de BTC : $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Où:
 
@@ -84,9 +84,9 @@ Où:
 
 #### Impact du Dual Staking sur les récompenses BTC
 
-Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont désormais réparties par paliers, en fonction du montant de CORE staké par rapport à la quantité de BTC. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses. Cette structure de paliers introduit une variabilité dans les rendements de staking BTC, aligne les intérêts au sein de l’écosystème Core et maintient une distribution proportionnelle des récompenses.
+Avec l'introduction du Dual Staking, les récompenses de staking Bitcoin sont désormais échelonnées en fonction de la quantité de CORE misée par rapport à Bitcoin. Les récompenses en BTC ne sont donc plus réparties uniformément entre tous les participants. Elles sont à la place allouées de manière dynamique en fonction des seuils de dual staking, les paliers supérieurs recevant généralement une plus grande proportion des récompenses.
 
-## Partage des Récompenses
+#### Partage des Récompenses
 
 Ces fonctions de répartition des récompenses sont conçues pour créer un marché actif des récompenses tout en encourageant la concurrence parmi les validateurs pour la puissance de hachage déléguée et le staking délégué de CORE et de Bitcoin. De leur côté, les délégateurs tenteront d'optimiser leurs propres récompenses en choisissant des validateurs avec de faibles montants de puissance de hachage déléguée et de stake. Pour maximiser leurs récompenses, les délégateurs rechercheront à la fois des validateurs généreux dans leurs paiements, mais qui n'ont pas déjà une quantité substantielle de tokens CORE ou de PoW délégués. Plus le stake d'un validateur sera faible, plus la contribution d'un délégateur sera importante. Si un délégateur ajoute un token CORE à un validateur qui n'a qu'un seul token, il représente 50 % de la délégation totale de ce validateur. S'ils délèguent à un validateur avec 99 tokens CORE, ils ne représentent que 1 % de la délégation totale de ce validateur. Étant donné que les paiements sont en partie déterminés en fonction du pourcentage de stake total que chaque délégateur représente, ils seront incités à essayer de trouver des validateurs avec de petites délégations.
 
@@ -100,4 +100,4 @@ Les vérificateurs dans l'écosystème Core sont responsables de la surveillance
 
 ## Conclusion
 
-Les récompenses dans l'écosystème Core jouent un rôle crucial dans le maintien de la sécurité, de la vitalité et de la décentralisation du réseau. En alignant les incitations des divers participants à travers un système de récompenses complet et adaptable, Core assure un engagement continu et contribue à la croissance soutenue et à la stabilité de la plateforme. Cette approche structurée de l'incitation est fondamentale pour le succès de Core en tant que plateforme leader dans le l'univers de la DeFi du Bitcoin.
+Les récompenses dans l'écosystème Core jouent un rôle crucial dans le maintien de la sécurité, de la vitalité et de la décentralisation du réseau. En alignant les incitations des divers participants à travers un système de récompenses complet et adaptable, Core assure un engagement continu et contribue à la croissance soutenue et à la stabilité de la plateforme.

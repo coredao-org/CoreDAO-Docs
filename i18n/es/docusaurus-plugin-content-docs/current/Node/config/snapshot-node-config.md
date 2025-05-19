@@ -84,7 +84,7 @@ En la red Core, puede sincronizar su nodo con el estado más reciente de varias 
 
 ### Descargar binarios precompilados
 
-Descargue los binarios precompilados desde la [página de lanzamientos de Core] (https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
+Descargue los binarios precompilados desde la [página de lanzamientos de Core](https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
 
 ##### Linux
 

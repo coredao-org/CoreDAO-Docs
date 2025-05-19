@@ -55,7 +55,7 @@ Para obtener más detalles, consulte la [Guía de configuración de nodos comple
 | RAM                   | 32 Gigabytes                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos completos] (../Node/config/full-node.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos completos](../Node/config/full-node.md)
 
 ### 4. ¿Qué es un nodo RPC de Core? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core RPC?
 
@@ -81,7 +81,7 @@ Los nodos RPC (llamada a procedimiento remoto) en la red Core desempeñan un pap
 | RAM                   | 32 Gigabytes                                                                                                                                                                                   |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 50Mbps                                                                                                             |
 
-Para obtener más detalles, consulte la [Guía de configuración de nodos RPC] (../Node/config/rpc-node-config.md)
+Para obtener más detalles, consulte la [Guía de configuración de nodos RPC](../Node/config/rpc-node-config.md)
 
 ### 5. ¿Qué es un nodo validador central? ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo Core Validator?
 
@@ -107,7 +107,7 @@ Los validadores son cruciales para proteger la red mediante la producción de bl
 | RAM                   | 32 Gigabytes                                                                                                                                                                                   |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 10Mbps                                                                                                             |
 
-Para obtener más detalles, consulte la [Guía de configuración del nodo validador] (../Node/config/validator-node-config.md)
+Para obtener más detalles, consulte la [Guía de configuración del nodo validador](../Node/config/validator-node-config.md)
 
 ### 6. ¿Cómo configuro un nodo completo en Core blockchain?
 

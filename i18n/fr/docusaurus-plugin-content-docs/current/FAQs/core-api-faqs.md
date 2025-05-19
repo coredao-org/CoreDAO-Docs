@@ -12,15 +12,15 @@ sidebar_position: 2
 
 Nous avons développé l'Open API Core Scan pour offrir aux développeurs un accès direct aux données et services de l'explorateur de blocs Core Scan. Les API de Core Scan sont fournies en tant que service communautaire sans garantie, donc veuillez les utiliser selon vos besoins et pas plus.
 
-Consultez la documentation complète de l'API disponible [ici](https://docs.coredao.org/docs/api/).
+Consultez la documentation complète de l'API disponible [ici](https://docs.coredao.org/docs/api).
 
 ### 2. Comment puis-je accéder à l'API Core Scan ?
 
-Pour accéder à l'API Core Scan, vous devez avoir un compte enregistré sur Core Scan. Consultez [ici](../api/tutorials/creating-an-account.md) le guide détaillé pour savoir comment procéder. De plus, vous aurez besoin de générer une clé API à partir de ce compte enregistré. Consultez [ici](../api/tutorials/generate-an-api-key.md) le guide détaillé pour plus d'informations.
+Pour accéder à l'API Core Scan, vous devez avoir un compte enregistré sur Core Scan. Consultez [ici](https://docs.coredao.org/docs/api/tutorials/creating-an-account) le guide détaillé pour savoir comment procéder. De plus, vous aurez besoin de générer une clé API à partir de ce compte enregistré. Consultez [ici](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key) le guide détaillé pour plus d'informations.
 
 ### 3. Comment créer des clés API pour les utiliser avec l'API Core Scan ?
 
-Pour générer des clés API à l'aide d'un compte enregistré sur Core Scan, reportez-vous au guide détaillé [ici](../api/tutorials/generate-an-api-key.md).
+Pour générer des clés API à l'aide d'un compte enregistré sur Core Scan, reportez-vous au guide détaillé [ici](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key).
 
 ### 4. Mes clés API ne fonctionnent pas, que puis-je faire ?
 
@@ -34,7 +34,11 @@ Oui, il existe des limites de taux fixes sur les requêtes API en fonction du ni
 | ---------------- | -------------------------------------------- |
 | **Gratuit**      | 5 appels/seconde, jusqu'à 10 000 appels/jour |
 
-### 6. Quel est le code de statut d'une API si une erreur survient ?
+### 6. Y a-t-il des limites de taux sur les points de terminaison de l'API du staking?
+
+Oui, les points de terminaison de l'API du staking ont une limite de taux de 600 transactions par minute par IP.
+
+### 7. Quel est le code de statut d'une API si une erreur survient ?
 
 Un appel API qui rencontre une erreur renverra 0 comme code de statut et affichera la cause de l'erreur dans le champ résultat.
 
@@ -46,6 +50,6 @@ Un appel API qui rencontre une erreur renverra 0 comme code de statut et affiche
 }
 ```
 
-### 7. Que dois-je faire si je rencontre des problèmes ou des bugs avec l'API ?
+### 8. Que dois-je faire si je rencontre des problèmes ou des bugs avec l'API ?
 
-Référez-vous à la documentation officielle de l'API pour les [messages de problèmes courants](../api/tutorials/common-error-messages.md). Si le problème persiste, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.
+Référez-vous à la documentation officielle de l'API pour les [messages de problèmes courants](https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si le problème persiste, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.

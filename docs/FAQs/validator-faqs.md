@@ -12,7 +12,7 @@ In the Core ecosystem, "validator" refers to nodes or participants in the blockc
 
 ### 2. How to Become a Validator?
 
-- 1. To register as a validator on Core you must be running a full node in validator mode. Please read the guides on [validator nodes requirements](../Node/config/validator-node-config) and [setting up validator nodes](../Node/validator/setting-up-validator) for information on how to set this up.
+- 1. To register as a validator on Core you must be running a full node in validator mode. Please read the guides on [validator nodes requirements](../Node/config/validator-node-config.md) and [setting up validator nodes](../Node/validator/setting-up-validator.md) for information on how to set this up.
   2. Once that’s finished, the easiest way to register a new validator is using one of our staking websites:
         1. [Mainnet stake website](https://stake.coredao.org)
         2. [Testnet stake website](https://stake.test.btcs.network)

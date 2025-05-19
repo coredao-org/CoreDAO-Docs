@@ -1,42 +1,13 @@
 ---
-sidebar_label: Sécurité
+sidebar_label: Modèle de sécurité
 hide_table_of_contents: false
 sidebar_position: 2
 description: Apprendre sur le modèle de sécurité de Core
 ---
 
-# Sécurité de Core
+# Modèle de sécurité de Core
 
 ---
-
-## Aperçu
-
-Core, en tant que blockchain EVM alignée sur Bitcoin, exploite le mécanisme de consensus Satoshi Plus pour assurer un mélange optimal de sécurité, de décentralisation et d'évolution. Cette approche tire parti des caractéristiques de sécurité intrinsèques du Bitcoin tout en permettant une fonctionnalité robuste des smart contrats et une intégration à la DeFi, faisant de cette plateforme une pionnière dans l'espace blockchain.
-
-## Éléments de sécurité
-
-### 1. Preuve de Travail Déléguée (DPoW) et Preuve d’Enjeu Déléguée (DPoS)
-
-Core intègre ces deux mécanismes puissants pour former un environnement blockchain équilibré et sécurisé. La DPoW étend le modèle de sécurité éprouvé du Bitcoin en permettant aux mineurs de déléguer leur puissance de hachage à Core, bénéficiant ainsi du taux de hachage immense du Bitcoin et de sa sécurité. Par ailleurs, la DPoS permet aux détenteurs de BTC (via le staking non-custodial) et de tokens CORE de staker leurs actifs avec les validateurs du réseau Core, favorisant une gouvernance décentralisée du réseau et ajoutant des couches de sécurité supplémentaires.
-
-### 2. Sécurité des Validateurs
-
-Les validateurs sont essentiels pour maintenir l'intégrité et la sécurité de la blockchain Core. Ils sont sélectionnés en fonction du poids combiné des tokens stakés (CORE et BTC) et de la puissance de hachage déléguée, de sorte que seuls les nœuds les plus soutenus et de confiance gèrent le processus de consensus. Ce système de double soutien atténue les risques de centralisation et de brèches de sécurité.
-
-### 3. Sécurité via l'incitation
-
-Le mécanisme Satoshi Plus incite à la fois les mineurs et les stakers (CORE et BTC) en leur fournissant des récompenses sous forme de tokens CORE, alignant ainsi leurs intérêts avec la longévité et l'intégrité du réseau. Cette incitation économique aide à maintenir un niveau de participation robuste, crucial pour maintenir un réseau sécurisé et décentralisé.
-
-## Protocoles et Implémentations de Sécurité
-
-1. **Validation Robuste des Transactions**
-   Les validateurs de Core sont responsables de la vérification des transactions et de la création de nouveaux blocs. La combinaison unique de DPoW, DPoS et du staking Non-Custodial de BTC implique de nombreux acteurs et un capital significatif dans l'élection des validateurs, ce qui incite fortement à l'élection de validateurs dignes de confiance et à la participation honnête de ces validateurs.
-
-2. **Résilience du Réseau Contre les Attaques**
-   L'intégration de la puissance de hachage de Bitcoin avec le staking de CORE et de BTC rend Core exceptionnellement résilient contre divers types d'attaques. Le coût élevé d'une attaque sur un tel système hybride, combiné au consensus distribué obtenu via des mécanismes délégués, améliore significativement la sécurité du réseau.
-
-3. **Adaptabilité et Flexibilité**
-   Contrairement aux blockchains traditionnelles qui reposent uniquement sur une seule forme de consensus, le modèle hybride de Core permet l'adaptabilité et la possibilité de mise à jour. Cette flexibilité est modélisée afin de permettre au réseau d'évoluer en réponse aux menaces de sécurité émergentes ou aux avancées technologiques dans le domaine de la blockchain.
 
 ## Vecteurs d'Attaque et Mesures de Sécurité dans l'Écosystème Core
 
@@ -84,12 +55,12 @@ Core utilise une architecture de sécurité robuste pour atténuer les menaces p
   - **Exigences de Consensus Large:** Les propositions nécessitent un large consensus parmi un ensemble diversifié de parties prenantes, minimisant le risque qu'un petit groupe concentré puisse affecter unilatéralement les changements.
   - **Processus Transparent de Proposition et de Vote:** Toutes les actions de gouvernance sont enregistrées de manière transparente sur la blockchain, facilitant la traçabilité et la responsabilité.
 
-### Vulnérabilités des smart contrats
+### Vulnérabilités des Contrats Intelligents
 
-- **Description:** Les vulnérabilités dans le code des smart contrats peuvent être exploitées pour réaliser des vols ou manipuler des services.
-- **Mesures d'atténuation réalisées par:**
-  - **Audits de Code et Revues de Sécurité:** Des audits réguliers et approfondis du code des smart contrats par des firmes de sécurité indépendantes aident à identifier et rectifier les vulnérabilités potentielles.
-  - **Programmes de Récompenses de Bug:** Encourager la communauté et les chercheurs en sécurité à trouver et signaler des bugs, ainsi de nombreuses potentielles exploitations sont détectées tôt en offrant des récompenses pour leur découverte.
+- **Description:** Les vulnérabilités dans le code des contrats intelligents peuvent être exploitées pour réaliser des vols ou manipuler des services.
+- **Mitigation Achieved By:**
+  - **Audits de Code et Revues de Sécurité:** Des audits réguliers et approfondis du code des contrats intelligents par des firmes de sécurité indépendantes aident à identifier et rectifier les vulnérabilités potentielles.
+  - **Rapports de bogues:** Encourager la communauté et les chercheurs en sécurité à trouver et signaler les bogues afin que de nombreux exploits potentiels soient détectés précocement
 
 ## Conclusion
 

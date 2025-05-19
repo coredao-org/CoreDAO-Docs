@@ -65,7 +65,7 @@ La création du coreBTC commence lorsqu'un utilisateur verrouille son Bitcoin da
 
 ## Rachat et parité du coreBTC
 
-Le rachat, ou la sortie de parité, consiste à inverser le processus de création :
+Le rachat, ou la sortie de parité, consiste à inverser le processus de création:
 
 - **Brûlage du coreBTC:** Les utilisateurs initient le processus de rachat en envoyant une demande au smart contract du coreBTC pour brûler une quantité spécifiée de coreBTC, en indiquant l'adresse Bitcoin où ils souhaitent recevoir leur Bitcoin.
 - **Déblocage du Bitcoin:** Une fois le coreBTC brûlé avec succès, le smart contract signale au Locker de libérer la quantité correspondante de Bitcoin. Le Locker envoie ensuite ce Bitcoin à l'adresse spécifiée par l'utilisateur, complétant ainsi le processus de sortie de parité. Une fois la transaction Bitcoin confirmée, le Locker la transmet à Core où elle est finalement vérifiée par le client léger Bitcoin

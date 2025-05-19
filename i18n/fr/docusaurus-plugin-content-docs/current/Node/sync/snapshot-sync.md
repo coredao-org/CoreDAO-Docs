@@ -32,7 +32,7 @@ chmod -v u+x geth
 
 ### Téléchargement des Fichiers de Configuration
 
-Téléchargez genesis.json et config.toml :
+- Téléchargez `genesis.json` et `config.toml`
 
 ```bash
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep mainnet |cut -d\" -f4)
@@ -85,7 +85,7 @@ Surveillez le fichier de log à partir de `/node/logs/core.log` par défaut.
 ## Synchronisation depuis le bloc Genesis (non recommandé)
 
 :::note
-Notez que la méthode recommandée pour synchroniser un nœud testnet est de synchroniser à partir du bloc Genesis, car le snapshot n'est actuellement pas disponible. Vous pouvez telecharger le dernier binaire pour le testnet [ici](https://github.com/coredao-org/core-chain/releases).
+Notez que la méthode recommandée pour synchroniser un nœud testnet est de synchroniser à partir du bloc Genesis, car le snapshot n'est actuellement pas disponible. You can download the latest binary for testnet from [here](https://github.com/coredao-org/core-chain/releases).
 :::
 
 Écrivez l'état initial (genesis) localement en exécutant la commande suivante dans votre répertoire de nœud

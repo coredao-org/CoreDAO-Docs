@@ -10,7 +10,7 @@ sidebar_position: 2
 
 En el ecosistema Core, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red.
 
-Según tus objetivos, existen diferentes configuraciones de nodos posibles en la red de Core. Si aún no has iniciado ningún nodo en la red de Core, revisa la documentación para [Ejecutar un Nodo Validador Local](./validator/running-validator.md) antes de proceder con diferentes configuraciones.
+Según tus objetivos, existen diferentes configuraciones de nodos posibles en la red de Core. Si aún no has iniciado ningún nodo en la red de Core, revisa la documentación para [Ejecutar un Nodo Validador Local](./validator/setting-up-validator.md) antes de proceder con diferentes configuraciones.
 
 - **Si deseas participar en la gobernanza de la Red Core**
 

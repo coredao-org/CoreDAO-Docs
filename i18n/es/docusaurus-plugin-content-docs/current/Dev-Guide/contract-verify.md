@@ -12,7 +12,7 @@ description: Aprende cómo verificar un contrato inteligente usando Core Scan
 En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Si bien existen varias formas de lograr la verificación del contrato, recomendamos utilizar la herramienta de verificación oficial de Core, [Core Scan](https://scan.coredao.org/), para una confiabilidad óptima. Este documento lo guía a través de los métodos más utilizados para la verificación de contratos: la herramienta web Core Scan, la API REST de Core y el complemento Hardhat Verification.
 
 :::note
-Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain] (./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
+Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain](./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
 :::
 
 ## Verificación web mediante Core Scan

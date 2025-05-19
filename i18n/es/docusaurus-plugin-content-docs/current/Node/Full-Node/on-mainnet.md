@@ -39,9 +39,9 @@ Los nodos de Core realizan varias tareas que consumen muchos recursos, que puede
 
 ## Construya y ejecute un nodo completo en Core Mainnet
 
-1\. Recomendamos utilizar el repositorio de GitHub de [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo desde el codebase de nuestra blockchain. Las instrucciones para crear el código fuente se pueden encontrar en él [README] (https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
+1\. Recomendamos utilizar el repositorio de GitHub de [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo desde el codebase de nuestra blockchain. Las instrucciones para crear el código fuente se pueden encontrar en él [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
-2\. Descargue el binario del nodo desde la [página de lanzamientos] (https://github.com/coredao-org/core-chain/releases) del repositorio de core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
+2\. Descargue el binario del nodo desde la [página de lanzamientos](https://github.com/coredao-org/core-chain/releases) del repositorio de core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión](https://github.com/coredao-org/core-chain/releases/latest).
 
 3\. Escriba el estado génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 

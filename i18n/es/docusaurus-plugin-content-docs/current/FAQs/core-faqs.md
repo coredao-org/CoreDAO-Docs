@@ -52,7 +52,7 @@ En la red Core, los cortes y el encarcelamiento son mecanismos para penalizar a 
 
 ### 8. ¿Qué mecanismo de consenso utiliza la red Core y cómo previene diferentes ataques?
 
-The Core network uses the Satoshi Plus consensus mechanism which combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Self-Custodial BTC Staking to secure the network against various attacks. Esta configuración mitiga los ataques a la red, como DDoS, mediante la dispersión de nodos y la comunicación P2P aleatoria. Para ataques de consenso como el ataque del 51%, emplea minería por turnos y un sistema de puntuación híbrido para la elección del validador, lo que hace que dichos ataques sean económicamente imprácticos. Además, Core utiliza puntos de control para congelar y proteger periódicamente el historial de la cadena de bloques, frustrando ataques de largo alcance. Para obtener más detalles, consulte la [Descripción general de la seguridad de Core Blockchain] (https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
+The Core network uses the Satoshi Plus consensus mechanism which combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) and Self-Custodial BTC Staking to secure the network against various attacks. Esta configuración mitiga los ataques a la red, como DDoS, mediante la dispersión de nodos y la comunicación P2P aleatoria. Para ataques de consenso como el ataque del 51%, emplea minería por turnos y un sistema de puntuación híbrido para la elección del validador, lo que hace que dichos ataques sean económicamente imprácticos. Además, Core utiliza puntos de control para congelar y proteger periódicamente el historial de la cadena de bloques, frustrando ataques de largo alcance. Para obtener más detalles, consulte la [Descripción general de la seguridad de Core Blockchain](https://whitepaper.coredao.org/core-white-paper-v1.0.7/satoshi-plus-consensus/security).
 
 ### 9. ¿Cuál es el tiempo promedio de confirmación de transacciones de la red Core?
 
@@ -81,4 +81,4 @@ Core no se trata sólo de subvenciones, es una puerta de entrada a oportunidades
 
 ### 14. ¿Cómo puedo denunciar una estafa o un robo de alfombras?
 
-Para denunciar una estafa o extracción de alfombras, puede proporcionar un informe detallado en nuestro [canal de Discord] (https://discord.com/invite/coredaoofficial).
+Para denunciar una estafa o extracción de alfombras, puede proporcionar un informe detallado en nuestro [canal de Discord](https://discord.com/invite/coredaoofficial).

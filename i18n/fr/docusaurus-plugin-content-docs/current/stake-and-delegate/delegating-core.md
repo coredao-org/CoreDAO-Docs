@@ -8,16 +8,15 @@ sidebar_position: 2
 
 ---
 
-La Preuve d'Enjeu Déléguée (DPoS) est l'un des trois composants fondamentaux du mécanisme de consensus Satoshi Plus, jouant un rôle clé dans l'amélioration de la fonctionnalité, de la sécurité et de l'efficacité du réseau blockchain. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.\
+La Preuve d'Enjeu Déléguée (DPoS) est l'un des 3 composants fondamentaux du mécanisme de consensus Satoshi Plus, jouant un rôle clé dans l'amélioration de la fonctionnalité, de la sécurité et de l'efficacité du réseau blockchain. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.\
 This process not only helps secure the network but also enables participants to share in the system’s rewards.\
 In this guide, we provide a step-by-step walkthrough on how to delegate your CORE tokens to validators within the Core network, empowering you to actively contribute to the ecosystem while reaping the benefits of your investment.
 
 ## Site Web de Staking Core
 
-- Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
-- Testnet: 
-    - [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
-    - [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
+- Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
+- Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
+- Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Guide étape par étape pour déléguer CORE
 
@@ -79,7 +78,7 @@ Pour déléguer vos tokens CORE, suivez ces étapes :
 
 #### Étape 2.1 : Spécifiez le montant de CORE à déléguer
 
-- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**.
+- Après avoir sélectionné CORE, vous serez invité à entrer le montant de CORE que vous souhaitez déléguer. Examinez la commission du validateur, puis cliquez sur **Confirm Delegation**. Un minimum de 1 CORE est requis pour staker du CORE. Whereas, there are requirements for staaked durations.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
@@ -99,15 +98,19 @@ Pour déléguer vos tokens CORE, suivez ces étapes :
 
 #### Étape 2.2 : Vérification du CORE délégué
 
-Maintenant que nous avons délégué avec succès du CORE, vérifions que notre CORE est maintenant staké en survolant notre portefeuille connecté dans le coin supérieur droit, et en cliquant sur le menu déroulant **My Staking**. Nous pouvons voir sous la colonne "Core Delegated" que nous avons maintenant 1 CORE délégué, ou 1 CORE staké :
+Maintenant que nous avons délégué avec succès du CORE, vérifions que notre CORE est maintenant staké en survolant notre portefeuille connecté dans le coin supérieur droit, et en cliquant sur le menu déroulant **My Staking**. Nous pouvons voir sous la colonne ‘Core Delegated‘ que nous avons maintenant 1 CORE délégué ou 1 CORE staké.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/d61755d2-177b-485c-9daa-5cc5a863b60d)
 </p>
 
+:::note
+Remarque : Pour les délégations de CORE, le transfert vers un autre validateur de staking **n’interrompt pas** les récompenses de staking.
+:::
+
 ### Step 3 Undelegating CORE
 
-Si nous souhaitons annuler la délégation de notre CORE, vous devrez cliquer sur les 3 points à la fin de votre validateur choisi, et cliquer sur : **Undelegate CORE**.
+Si vous souhaitez annuler la délégation de votre CORE, cliquez sur les 3 points à la fin de la ligne de votre validateur choisi, puis sélectionnez **Undelegate CORE**.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/356bfbc6-991d-4a39-804e-cc46086e5399)
@@ -115,7 +118,7 @@ Si nous souhaitons annuler la délégation de notre CORE, vous devrez cliquer su
 
 #### Étape 3.1 : Confirmer la transaction et vérifier le CORE annulé
 
-- Après avoir cliqué sur Undelegate, vous serez invité à confirmer la transaction dans votre MetaMask. Cliquez sur le bouton **Confirm** :
+- Après avoir cliqué sur **Undelegate**, vous serez invité à confirmer la transaction dans votre MetaMask. Cliquez sur le bouton **Confirm** :
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)
@@ -141,10 +144,12 @@ Si nous souhaitons annuler la délégation de notre CORE, vous devrez cliquer su
 
 ## Réclamation des récompenses
 
-Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour.
+Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. Pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 
-Pour réclamer vos récompenses, sélectionnez simplement le bouton Claim en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet Claim du site, comme indiqué ci-dessous.
+Pour réclamer vos récompenses, sélectionnez simplement le bouton Claim en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet **Claim** du site, comme indiqué ci-dessous.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/64f749fc-0746-4df9-bf62-fbdb088952c2)
 </p>
+
+

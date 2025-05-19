@@ -23,7 +23,7 @@ Hay varias formas de participar en el Staking Dual con BTC y CORE, dependiendo d
 Para comenzar y poder hacer staking dual de CORE y BTC a través del [sitio web oficial de staking de Core](https://stake.coredao.org/staking), debes cumplir con los siguientes requisitos:
 
 1. **Extensión de navegador de una billetera de Bitcoin compatible:** Para participar en el proceso de staking de BTC, debes instalar extensiones de navegador de alguna de las billeteras de Bitcoin compatibles, como Xverse, Unisat y/o OKX Wallet (consulta aquí para ver las billeteras compatibles más recientes). Debes usar la versión de escritorio al utilizar el sitio web oficial de staking. También puedes hacer staking directamente usando la aplicación móvil de Element Wallet.
-2. **Dirección de billetera Core para recompensas:** Prepara tu dirección de billetera de Core para hacer staking de CORE y recibir [recompensas en tokens CORE por hacer staking de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. Para obtener más información sobre cómo configurar MetaMask para trabajar con la red Core, sigue la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config).
+2. **Dirección de billetera Core para recompensas:** Prepara tu dirección de billetera de Core para hacer staking de CORE y recibir [recompensas en tokens CORE por hacer staking de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. Para obtener más información sobre cómo configurar MetaMask para trabajar con la red Core, sigue la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
 
 ## Consideraciones clave para la apuesta dual
 
@@ -201,7 +201,7 @@ Dual staking is an enhancement to Core’s Self-custodial BTC staking, allowing 
 
 **Confirmar Salida OP\_Return**
 
-25. Antes de firmar la transacción en tu billetera, verifica las salidas de la transacción para asegurarte de que incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Abortas la transacción si no incluye la salida OP\_Return.
+25. Antes de firmar la transacción en tu billetera, verifica las salidas de la transacción para asegurarte de que incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **`OP_Return`**. Abortas la transacción si no incluye la salida `OP_Return`.
 
 <p align="center">
 ![doble participación en el núcleo](../../../../../../../static/img/dual-staking/dual-staking-15.png)

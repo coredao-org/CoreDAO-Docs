@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introducción
 
-[Self-Custodial Bitcoin Staking](https://docs.coredao.org/docs/Learn/products/btc-staking/overview) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining custody of their assets.
+[Self-Custodial Bitcoin Staking](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining custody of their assets.
 
 To maximize yield potential from Bitcoin staking, Core offers Dual Staking - a mechanism that unlocks higher reward tiers by participating in both Bitcoin timelock staking and CORE token staking simultaneously.
 Since Core's daily emissions follow a fixed schedule, participants who stake CORE alongside their Bitcoin receive significantly higher rewards compared to those staking Bitcoin alone. The boost in yield percentage is determined by the amount of CORE tokens staked relative to the Bitcoin value, with defined thresholds corresponding to increasing tiers of staking rewards.
@@ -28,11 +28,11 @@ By aligning Bitcoin staking rewards with CORE token staking levels, Dual Staking
 
 ## ¿Cómo funciona el staking dual?
 
-El Dual Staking no altera el proceso de staking de Bitcoin y CORE. For more information on how Self-Custodial Bitcoin Staking works, refer [here](https://docs.coredao.org/docs/Learn/products/btc-staking/overview). Además, consulte esta [guía](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) detallada sobre cómo delegar CORE y [hacer staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide)/[canjear](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide) BTC.
+El Dual Staking no altera el proceso de staking de Bitcoin y CORE. For more information on how Self-Custodial Bitcoin Staking works, refer [here](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md). Además, consulte esta [guía](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) detallada sobre cómo delegar CORE y [hacer staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md)/[canjear](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide.md) BTC.
 
 El Dual Staking crea una oportunidad para desbloquear rendimientos más altos cuando tanto Bitcoin como CORE son puestos en staking simultáneamente, con diferentes umbrales de staking de CORE que corresponden a distintos niveles de aumento de rendimiento en las recompensas de staking de Bitcoin en la blockchain de Core.
 
-Bitcoin holders can [stake their Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide) through Core's Self-Custodial Bitcoin Staking to accumulate CORE rewards. Posteriormente, al [hacer staking de sus tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) en diferentes umbrales de Dual Staking, los usuarios desbloquean niveles más altos de rendimientos de Bitcoin, pagados en CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
+Bitcoin holders can [stake their Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md) through Core's Self-Custodial Bitcoin Staking to accumulate CORE rewards. Posteriormente, al [hacer staking de sus tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) en diferentes umbrales de Dual Staking, los usuarios desbloquean niveles más altos de rendimientos de Bitcoin, pagados en CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
 
 Para habilitar rendimientos más altos en el staking de Bitcoin a través de Dual Staking, los usuarios deben cumplir con los siguientes requisitos:
 
@@ -61,7 +61,7 @@ El Dual Staking está diseñado para todos, desde individuos hasta las instituci
 Bitcoin miners can earn CORE rewards by delegating their hash power to validators on the Core network and staking their Bitcoin and CORE tokens. Pueden desbloquear rendimientos más altos en sus tesorerías de Bitcoin al hacer staking de tokens CORE por encima del umbral mínimo de staking dual. Integrar las recompensas de minería con el mecanismo de Dual Staking permite a los mineros maximizar los retornos en las actividades de minería y staking.
 
 :::info
-Consulte la sección de [Preguntas Frecuentes sobre Dual Staking](../FAQs/dual-staking-faqs.md) para obtener más detalles o aclaraciones. Para soporte adicional, puede dirigir sus consultas al [Foro de Desarrolladores de Core](http://forum.coredao.org) o al [Servidor de Discord de Core](https://discord.gg/M2AGJKSG).\
+Consulte la sección de [Preguntas Frecuentes sobre Dual Staking](../FAQs/dual-staking-faqs.md) para obtener más detalles o aclaraciones. Para soporte adicional, puede dirigir sus consultas al [Foro de Desarrolladores de Core](http://forum.coredao.org) o al [Servidor de Discord de Core](https://discord.gg/M2AGJKSG).
 :::
 
 ## Conclusión
