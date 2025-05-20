@@ -89,7 +89,7 @@ Los usuarios también pueden ganar Sparks interactuando con las dApps permitidas
 | Swapping                      | 100                    | 3,000                  |
 | Interacting with Gaming dApps | 50                     | 1,000                  |
 | Others                        | 50                     | 2,000                  |
-| Coretoshi NFT                 | 200                    | Unlimited              |
+| Coretoshi NFT, Doopidoo       | 200                    | Unlimited              |
 
 **3. Campañas Participadas:**\
 Core Ignition contará con campañas flash o de tiempo limitado, ofreciendo a los usuarios oportunidades especiales para potenciar Sparks. Manténgase conectado revisando las secciones de campaña dentro de la aplicación y siguiendo los anuncios oficiales de Core en [X (Twitter)](https://x.com/Coredao_Org) para las últimas actualizaciones.
