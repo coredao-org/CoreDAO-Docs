@@ -93,7 +93,7 @@ Syncing from the genesis block can take a significant amount of time. It is reco
 :::
 
 
-#### Steps to Running Validator Node 
+#### Steps to Running Validator Node Using Snapshot
 
 1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
 
