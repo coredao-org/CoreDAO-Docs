@@ -80,7 +80,7 @@ Users could also earn Sparks by interacting with whitelisted dApps on Core Ignit
 | Swapping | 100 | 3,000 |
 | Interacting with Gaming dApps | 50 | 1,000 |
 | Others | 50 | 2,000 |
-| Coretoshi NFT | 200 | Unlimited |
+| Coretoshi NFT, Doopidoo | 200 | Unlimited |
 
 **3. Campaign Joined:**
 Core Ignition will feature flash or time-limited campaigns on a rolling basis, offering users special opportunities to supercharge Sparks. Stay connected by checking the in-app campaign sections and following Core's official announcements on [X (Twitter)](https://x.com/Coredao_Org) for the latest updates.
