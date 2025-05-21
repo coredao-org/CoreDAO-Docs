@@ -4,12 +4,12 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+importer des onglets depuis « @theme/Tabs » ;
+importer TabItem depuis « @theme/TabItem » ;
+
 # Configurations du réseau Core
 
 ---
-
-importer des onglets depuis « @theme/Tabs » ;
-importer TabItem depuis « @theme/TabItem » ;
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
