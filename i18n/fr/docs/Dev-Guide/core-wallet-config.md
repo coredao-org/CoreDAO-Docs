@@ -4,12 +4,12 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+importer des onglets depuis « @theme/Tabs » ;
+importer TabItem depuis « @theme/TabItem » ;
+
 # Connexion au Testnet de Core
 
 ---
-
-importer des onglets depuis « @theme/Tabs » ;
-importer TabItem depuis « @theme/TabItem » ;
 
 :::note
 Ceci est un guide détaillé pour se connecter au Core Testnet/Mainnet  en utilisant le portefeuille MetaMask.
