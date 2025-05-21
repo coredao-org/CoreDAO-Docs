@@ -119,7 +119,7 @@ Vous pouvez attribuer un nom lisible par l'homme à votre nœud de validation en
 ![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
 </p>
 
-6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
+6. \*\* Soumettez la mise à jour:\*\* Après avoir vérifié les informations saisies, soumettez la transaction pour finaliser la mise à jour. Une fois que la transaction est confirmée sur la chaîne, le nom mis à jour sera reflété dans la liste des validateurs.
 
 ## Maintenance de votre nœud de validation
 
