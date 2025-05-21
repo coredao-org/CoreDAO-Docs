@@ -4,30 +4,30 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validators on the Core Network
+# Les validateurs sur Core Network
 
 ---
 
-On the Core blockchain, validators are essential nodes responsible for maintaining the network's security, decentralization, and integrity. They validate transactions, produce new blocks, and participate in governance through Core’s unique Satoshi Plus consensus, which blends Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Self-Custodial Bitcoin Staking to ensure decentralization, security, and scalability.
+Sur la Core blockchain, les validateurs sont des nœuds essentiels chargés de maintenir la sécurité, la décentralisation et l'intégrité du réseau. Ils valident les transactions, produisent de nouveaux blocs et participent à la gouvernance via le consensus Satoshi Plus unique de Core, qui combine la Preuve de Travail Déléguée (DPoW), la Preuve de Participation Déléguée (DPoS) et la mise en jeu auto-custodée de Bitcoin pour assurer la décentralisation, la sécurité et l'évolutivité.
 
-## Validator Role and Consensus Participation
+## Rôle de validateur et participation au consensus
 
-Validators are responsible for maintaining the network's health and continuity. By participating in consensus, they confirm the validity of transactions and contribute to block production. The Satoshi Plus consensus selects validators based on a hybrid scoring system that considers delegated Bitcoin, CORE tokens, and Bitcoin hash power.
+Les validateurs sont responsables du maintien de la santé et de la continuité du réseau. En participant au consensus, ils confirment la validité des transactions et contribuent à la production de blocs. Le consensus Satoshi Plus sélectionne les validateurs en fonction d'un système de notation hybride qui prend en compte le Bitcoin délégué, les jetons CORE et la puissance de hachage Bitcoin.
 
-Validator sets are rotated periodically, and validator elections occur in epochs, typically every 24 hours (UTC+0), to select the top **27** active validators based on their hybrid scores. The remaining inactive validators must wait for the next round of elections to become active validators before they can participate in block production.
+Les ensembles de validateurs sont alternés périodiquement, et les élections de validateurs ont lieu par périodes, généralement toutes les 24 heures (UTC+0), pour sélectionner les **27** meilleurs validateurs actifs en fonction de leurs scores hybrides. Les validateurs inactifs restants doivent attendre le prochain cycle d'élections pour devenir des validateurs actifs avant de pouvoir participer à la production de blocs.
 
-## Reward Economics
+## Économie des récompenses
 
-Validators receive rewards in CORE tokens for participating in Core’s consensus mechanism and producing blocks. Rewards are distributed at the end of each round (approximately every 24 hours) and consist of two primary sources:
+Les validateurs reçoivent des récompenses en jetons CORE pour participer au mécanisme de consensus de Core et produire des blocs. Les récompenses sont distribuées à la fin de chaque tour (environ toutes les 24 heures) et proviennent de deux sources principales :
 
-- **Base rewards:** Newly minted CORE tokens.
-- **Transaction fees:** Fees collected from transactions included in each block during the round.
+- **Base rewards:** Nouveaux jetons CORE nouvellement frappés.
+- **Transaction fees:** Frais collectés à partir des transactions incluses dans chaque bloc pendant le tour(round).
 
-Each validator can set its own **commission rate**, the portion of rewards they retain before distributing the remainder to their delegators. Commission fees are distributed directly to the validator’s specified fee address at the end of each round.
+Chaque validateur peut fixer son propre taux de commission(**commission rate**), la part des récompenses qu'il conserve avant de distribuer le reste à ses délégateurs. Les frais de commission sont distribués directement à l'adresse de frais spécifiée par le validateur à la fin de chaque tour(round).
 
-Core does **not implement self-bonding**. Validators are not required to stake CORE on themselves to participate. They only earn commissions if other participants delegate to them. If a validator stakes on their own validator, they receive rewards like any regular delegator — not as commission.
+Core n'implémente pas d'auto-ajout (**not implement self-bonding**). Les validateurs ne sont pas tenus de miser des CORE sur eux-mêmes pour participer. Ils ne gagnent des commissions que si d'autres participants délèguent des fonds vers eux. Si un validateur mise sur son propre validateur, il reçoit des récompenses comme n'importe quel délégateur régulier - et non en tant que commission.
 
-Base rewards are distributed when the final block of the round is confirmed. Currently, **90%** of total base rewards are allocated to validators, while the remaining **10%** is sent to the `System Reward Contract`. Of the 90% allocated to validators, each validator receives rewards proportional to the number of blocks they produce. In the long term, all stable validators are expected to receive approximately equal shares, since block production is uniformly distributed.
+Les récompenses de base sont distribuées lorsque le dernier bloc du tour(round) est confirmé. Currently, **90%** of total base rewards are allocated to validators, while the remaining **10%** is sent to the `System Reward Contract`. Of the 90% allocated to validators, each validator receives rewards proportional to the number of blocks they produce. In the long term, all stable validators are expected to receive approximately equal shares, since block production is uniformly distributed.
 
 Transaction fees follow the same distribution logic. **90%** of total transaction fees collected during the round are distributed to validators. Validators may apply their commission rate to this amount before distributing the remaining rewards to their delegators. The remaining **10%** of fees is deposited into the `System Reward Contract`.
 
