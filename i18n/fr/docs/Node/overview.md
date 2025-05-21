@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Dans l'écosystème Core, la robustesse, la sécurité et la décentralisation du réseau sont maintenues par les nœuds opérés par les participants de la communauté. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau.
 
-Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. Si vous n'avez pas encore démarré de nœud sur le réseau Core, veuillez consulter la documentation pour [Exécuter un Nœud Validateur Local](./validator/running-validator.md) avant de passer aux différentes configurations.
+Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. If you haven't already started any node on Core network yet, please review the documentation before proceeding with different configurations.
 
 - Participer à la gouvernance du réseau Core :
 
@@ -33,14 +33,14 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
 
 ## Types de Nœuds sur le Réseau Core
 
-1. **Validateurs:**
-    - **Rôle :** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de la blockchain Core.
-    - **Requis:** Les validateurs doivent staker un minimum de **10 000 jetons CORE** pour participer, alignant ainsi leurs incitations financières avec les performances et la sécurité du réseau.
-    - **Incitation :** Les validateurs gagnent des récompenses en jetons CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
+1. **Normal Full Nodes:**
+    - **Role:** Normal Full Nodes maintain a complete, real-time copy of the blockchain ledger, validate transactions, and support the network by relaying block and transaction data. These are essentially useful for private use.
+    - **Requirements:** Operating a Full Node requires significant computational and storage resources to handle the complete blockchain data and continuous network traffic.
 
-2. **Nœuds Complets Normaux :**
-    - **Rôle :** Les nœuds complets maintiennent une copie en temps réel du registre de la blockchain, valident les transactions et soutiennent le réseau en relayant les données des blocs et des transactions. Ils sont principalement utiles pour un usage privé.
-    - **Requis :** L'exploitation d'un nœud complet nécessite des ressources informatiques et de stockage importantes pour gérer les données complètes de la blockchain et le trafic réseau continu.
+2. **Validators:**
+    - **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework. These are essentially full nodes running in validator mode.
+    - **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
+    - **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
 
 3. **Nœuds RPC :**
     - **Rôle :** Les nœuds RPC fournissent une interface de programmation d'application (API) permettant aux développeurs et aux applications externes d'interagir avec la blockchain, facilitant ainsi les requêtes et les transactions.
