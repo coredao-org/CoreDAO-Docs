@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuración del nodo de instantánea
+sidebar_label: Nodo Snapshot
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuración del nodo de instantánea
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Nodos Snapshot en Core
 
 ---
 
@@ -12,37 +15,64 @@ Las instantáneas son importantes para que una red garantice que los nodos pueda
 
 ## Requerimientos del Systema
 
-Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un nodo de instantáneas en la red central.
+Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un Nodo de Snapshot en la red Core.
 
 ### Software
 
-- Actualmente, un nodo Core Snapshot solo se puede ejecutar en **Mac OS X** o en los sistemas operativos **Linux**.
+- **Sistema Operativo:** Actualmente, un Nodo Snapshot de Core es compatible _únicamente_ con los sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad
+- **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y otros nodos
 
 ### Hardware
 
-En la red Core, los nodos Snapshot también actúan como nodos de archivo, almacenando todos los datos de la cadena de bloques.
+Un **Nodo Snapshot** en Core proporciona capturas periódicas del estado de la blockchain, lo que permite una sincronización más rápida de los nodos y reduce los requisitos de almacenamiento. Estos nodos ayudan a nuevos validadores y nodos RPC a ponerse al día rápidamente con el estado más reciente de la blockchain sin tener que procesar toda la historia. Los nodos snapshot mejoran la eficiencia y accesibilidad de la red. En la red Core, los nodos Snapshot también actúan como nodos de archivo, almacenando todos los datos de la cadena de bloques. A continuación se presentan las recomendaciones mínimas de hardware para ejecutar un Nodo Snapshot en Core. Estas especificaciones están diseñadas para manejar los procesos de prueba y validación, garantizando al mismo tiempo un almacenamiento de datos eficiente y una sincronización rápida.
 
-#### Especificaciones de hardware del nodo de instantáneas de Testnet
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+Para los Nodos Snapshot en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-Para los nodos de instantáneas en **Core Blockchain Testnet**, recomendamos las siguientes especificaciones mínimas de hardware:
+```
+| Requisito | Detalles                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Almacenamiento** | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB                                      |
+| **CPU**            | CPU de 4 núcleos                                                                                    |
+| **RAM**            | 16 Gigabytes                                                                                        |
+| **Internet**       | Una conexión a internet de banda ancha con velocidades de descarga y carga de 5 megabytes por segundo.
+```
 
-| Requisitos            | Detalles                                                                          |
-| --------------------- | --------------------------------------------------------------------------------- |
-| Almacenimiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
-| CPU                   | CPU de 4 nucleos                                                                  |
-| RAM                   | 16 Gigabytes                                                                      |
-| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
+  </TabItem>
+  <TabItem value="testnet">
+    Para los Nodos Snapshot en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-#### Especificaciones de hardware del nodo de instantáneas de Mainnet
+```
+| Requisito | Detalles                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Almacenamiento** | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB                                      |
+| **CPU**            | CPU de 4 núcleos                                                                                    |
+| **RAM**            | 16 Gigabytes                                                                                        |
+| **Internet**       | Una conexión a internet de banda ancha con velocidades de descarga y carga de 5 Mbps                |
+```
 
-Para los nodos Sanpshot en **Core Blockchain Mainnet**, recomendamos las siguientes especificaciones mínimas de hardware:
+  </TabItem>
+  <TabItem value="mainnet">
+    Para los Nodos Snapshot en **Core Blockchain Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-| Requisitos            | Detalles                                                                          |
-| --------------------- | --------------------------------------------------------------------------------- |
-| Almacenamiento        | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB |
-| CPU                   | CPU de 4 nucleos                                                                  |
-| RAM                   | 16 Gigabytes                                                                      |
-| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
+```
+| Requisito | Detalles                                                                                                     |
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Almacenamiento** | Unidad de estado sólido (SSD) con una capacidad mínima de 4 TB                                      |
+| **CPU**            | CPU de 4 núcleos                                                                                    |
+| **RAM**            | 16 Gigabytes                                                                                        |
+| **Internet**       | Una conexión a internet de banda ancha con velocidades de descarga y carga de 5 Mbps                |
+```
+
+  </TabItem>
+</Tabs>
 
 ## Instantáneas de la red central
 
@@ -54,7 +84,7 @@ En la red Core, puede sincronizar su nodo con el estado más reciente de varias 
 
 ### Descargar binarios precompilados
 
-Descargue los binarios precompilados desde la [página de lanzamiento](https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
+Descargue los binarios precompilados desde la [página de lanzamientos de Core](https://github.com/coredao-org/core-chain/releases/latest) o siga las instrucciones a continuación
 
 ##### Linux
 
@@ -133,3 +163,4 @@ Hay dos modos de sincronización para ejecutar un nodo completo: **snap** y **fu
 - El modo de sincronización **completa** también se puede utilizar para realizar una sincronización inicial, que ejecutará todos los bloques desde su génesis. Pero **no se recomienda**, ya que la cantidad de datos históricos es demasiado grande. En su lugar, puede descargar una instantánea del [repositorio oficial](https://github.com/coredao-org/core-snapshots) e iniciar la sincronización completa desde la instantánea.
 
 - Si no se proporciona la marca **--syncmode**, el modo de sincronización predeterminado dependerá del estado de la carpeta de datos. Será el modo **instantáneo** si sincroniza desde génesis o el modo **completo** si comienza desde una instantánea.
+  2

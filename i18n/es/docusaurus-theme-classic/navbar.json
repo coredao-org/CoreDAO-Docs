@@ -21,7 +21,7 @@
   },
   "item.label.Stake & Delegate": {
     "message": "Stake y Delegar",
-    "description": "Navbar item with label Staking & Delegation"
+    "description": "Navbar item with label Stake & Delegate"
   },
   "item.label.Core API": {
     "message": "Core API",
@@ -42,5 +42,9 @@
   "item.label.Blog": {
     "message": "Blog",
     "description": "Navbar item with label Blog"
+  },
+  "item.label.API": {
+    "message": "API",
+    "description": "Navbar item with label API"
   }
 }

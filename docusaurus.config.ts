@@ -6,7 +6,7 @@ import rehypeKatex from "rehype-katex";
 import type * as Plugin from "@docusaurus/types/src/plugin";
 import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+// This runs in Node.js - Don't use client-side code here (browser APIs, JSX....)
 
 const DefaultLocale = "en";
 
@@ -19,11 +19,11 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: "/",
+  baseUrl: "/CoreDAO-Docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "coredao-org", // Usually your GitHub org/user name.
+  organizationName: "coredao", // Usually your GitHub org/user name.
   projectName: "CoreDAO-Docs", // Usually your repo name.
   deploymentBranch: "main",
   trailingSlash: false,

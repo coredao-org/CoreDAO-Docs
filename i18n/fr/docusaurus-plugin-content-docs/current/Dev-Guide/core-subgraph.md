@@ -10,25 +10,23 @@ sidebar_position: 2
 
 Les développeurs peuvent utiliser un sous-graphe auto-hébergé pour extraire des données de la blockchain Core, les traiter et les stocker pour une utilisation via GraphQL. Voici comment créer et déployer cet outil puissant.
 
-### URLs Importantes
+## URLs et Clés Importantes
 
-Nous utiliserons plusieurs URLs standard dans ce guide, qui seront utile de revoir avant de commencer.
-
-#### MainNet
+### MainNet de Core
 
 <table><thead><tr><th width="342">URL</th><th>Utilisation</th></tr></thead><tbody><tr><td><strong>URL de gestion</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Utiliser pour créer/déployer des sous-graphes (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>URL IPFS</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Utiliser pour déployer des sous-graphes.</td></tr><tr><td><strong>URL de requête HTTP</strong>: <em>https://thegraph.coredao.org</em></td><td>Utiliser pour interroger des données depuis des sous-graphes.</td></tr><tr><td><strong>URL de vérification de santé</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Utiliser pour vérifier la santé des sous-graphes.</td></tr></tbody></table>
 
-#### TestNet
+### TestNet de Core
 
-<table><thead><tr><th width="345">URL</th><th>Utilisation</th></tr></thead><tbody><tr><td><strong>URL de gestion</strong>: <br/><em>https://thegraph-node.test.btcs.network</em></td><td>Utiliser pour créer/déployer des sous-graphes (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>URL IPFS</strong>: <br/><em>https://thegraph-ipfs.test.btcs.network</em></td><td>Utiliser pour déployer des sous-graphes.</td></tr><tr><td><strong>URL de requête HTTP</strong>: <br/><em>https://thegraph.test.btcs.network</em></td><td>Utiliser pour interroger des données depuis des sous-graphes.</td></tr><tr><td><strong>URL de vérification de santé</strong><br/><em>https://thegraph-sub.test.btcs.network</em></td><td>Utiliser pour vérifier la santé des sous-graphes.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Utilisation</th></tr></thead><tbody><tr><td><strong>URL de gestion</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Utiliser pour créer/déployer des sous-graphes (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>URL IPFS</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Utiliser pour déployer des sous-graphes.</td></tr><tr><td><strong>URL de requête HTTP</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Utiliser pour interroger des données depuis des sous-graphes.</td></tr><tr><td><strong>URL de vérification de santé</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Utiliser pour vérifier la santé des sous-graphes.</td></tr></tbody></table>
 
-### Étapes Générales pour la Configuration du Sous-Graphe
+## Étapes Générales pour la Configuration du Sous-Graphe
 
-#### Créer un Répertoire
+### Créer un Répertoire
 
 Suivez le [guide officiel de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/) pour créer votre répertoire de sous-graphe. Dans le but de deployer sur le de sous-graphe Core, assurez-vous de définir le nom du réseau dans `subgraph.yaml` sur core. Selon votre sous-graphe, il peut y avoir quelques modifications supplémentaires à effectuer. Vous trouverez des détails supplémentaires dans la section d'exemple complète ci-dessous.
 
-#### Créer et Déployer
+### Créer et Déployer
 
 Pour créer et déployer votre sous-graphe, exécutez les commandes suivantes dans le répertoire de votre projet de sous-graphe.
 
@@ -42,7 +40,7 @@ graph deploy your-subgraph-name --node https://thegraph.coredao.org/deploy/ --ip
 
 La commande de déploiement `graph deploy` devrait retourner l'URL HTTP de requête pour votre sous-graphe, que vous pouvez intégrer dans votre application selon vos besoins.
 
-### Exemple : Déploiement d'un sous-graphe Uniswap V2
+## Exemple : Déploiement d'un sous-graphe Uniswap V2
 
 Maintenant que nous comprenons le processus, passons à un exemple complet en configurant un sous-graphe Uniswap V2 sur Core.
 
@@ -80,8 +78,11 @@ Finalement, nous allons exécuter les commandes de création et de déploiement.
 
 Félicitations, votre sous-graphe est déployé ! Vous pouvez maintenant intégrer l'URL de requête HTTP imprimée par la commande de déploiement dans votre site web et l'utiliser pour interroger les données.
 
-### Autorisation
+## Autorisation
 
-Pour éviter que votre sous-graphe soit écrasé par d'autres, veuillez nous contacter sur [Discord](https://discord.com/invite/coredaoofficial) pour obtenir une clé d'autorisation.\
-\
-Si vous testez contre le TestNet Graph, voici un jeton d'accès pour des fins de test général : **a9a79c2aea604bfaa861ff93d46d0d11**.
+Pour empêcher que votre sous-graphe soit écrasé par d'autres, veuillez nous contacter sur [Discord](https://discord.com/invite/coredaoofficial) pour obtenir une clé d'autorisation.
+
+Si vous testez le Core TestNet Graph, voici les tokens d'accès à usage général :
+
+- **General key pour Core Legacy Testnet:** `a9a79c2aea604bfaa861ff93d46d0d11`
+- **Clé générale pour Core Testnet2:** `b020b95e511443699e72a10c697f84c0`

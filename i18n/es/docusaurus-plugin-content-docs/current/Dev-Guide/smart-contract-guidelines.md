@@ -1,41 +1,90 @@
 ---
-sidebar_label: Directrices para smart contratos
+sidebar_label: Directrices para contratos inteligentes
 hide_table_of_contents: false
 sidebar_position: 2
-description: Directrices para el soporte de solidez para el desarrollo de smart contratos en Core
+description: Directrices para el soporte de solidez para el desarrollo de contratos inteligentes en Core
 ---
 
-# Directrices para el desarrollo de smart contratos en Core
+# Directrices para el desarrollo de contratos inteligentes en Core
 
 ---
 
-Core blockchain evoluciona constantemente para brindar una mejor experiencia de usuario y desarrollador. Este documento proporciona instrucciones claras para los desarrolladores sobre las versiones compatibles de Solidity y las configuraciones necesarias para garantizar que sus smart contratos se implementen correctamente y sean verificables en la red Core. Para mantener la coherencia y la compatibilidad, Core blockchain admite versiones de Solidity superiores a **0.8.24** utilizando la versión **Shanghai** EVM. Cumplir con esta versión especificada y con las pautas de configuración es crucial para el perfecto funcionamiento de sus contratos. Para mantener la coherencia y la compatibilidad, Core blockchain admite versiones de Solidity superiores a **0.8.24** utilizando la versión **Shanghai** Evm.
+Core blockchain evoluciona constantemente para brindar una mejor experiencia de usuario y desarrollador. Este documento proporciona instrucciones claras para los desarrolladores sobre las versiones compatibles de Solidity y las configuraciones necesarias para garantizar que sus contratos inteligentes se implementen correctamente y sean verificables en la red Core. Para mantener la coherencia y la compatibilidad, Core blockchain admite versiones de Solidity superiores a **0.8.24** utilizando la versión **Shanghai** EVM. Cumplir con esta versión especificada y con las pautas de configuración es crucial para el perfecto funcionamiento de sus contratos. Para mantener la coherencia y la compatibilidad, Core blockchain admite versiones de Solidity superiores a **0.8.24** utilizando la versión **Shanghai** Evm.
 
-## Configuraciones recomendadas para implementar smart contratos en Core
+## Configuraciones recomendadas para implementar contratos inteligentes en Core
 
-Actualmente, EVM de Core coincide con la versión **Shanghai** y no admite la implementación y verificación de smart contratos de la versión **0.8.24^** con la configuración EVM predeterminada. Para asegurarse de que el retraso en el soporte para la implementación y verificación de smart contratos de la versión 0.8.24^ no haga tambalearse el desarrollo de dapps en el Core, las siguientes son las pautas para garantizar que los desarrolladores puedan implementar y verificar con éxito los smart contratos de la versión 0.8.24^ en el Núcleo.
+Actualmente, la EVM de Core coincide con la versión Shanghai y no admite la verificación de contratos inteligentes implementados con Solidity versión 0.8.24 o superior con la configuración EVM predeterminada para los IDE populares. Para asegurarse de que el retraso en el soporte para la implementación y verificación de contratos inteligentes de la versión `0.8.24^` no afecte el desarrollo de dapps en el Core, a continuación se detallan pautas para garantizar que los desarrolladores puedan implementar y verificar con éxito los contratos inteligentes de la versión `0.8.24^` en Core.
 
 ### Configuración de EVM
 
-Para admitir la ejecución de smart contratos con la versión **0.8.24^** de Solidity, los desarrolladores **_deberían_** elegir la versión EVM **Shanghai** y **no** las versiones EVM predeterminadas para compilar e implementar los smart contratos.
+Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^** de Solidity en Core Mainnet (1116) and Testnet2 (1114), los desarrolladores **_deberían_** elegir la versión EVM **Shanghai** y **no** las versiones EVM predeterminadas para compilar y desplegar los contratos inteligentes.
 
-#### Hardhat
+Sin embargo, para la Testnet legacy de Core (1115), la versión `evmVersion` _**debe**_ configurarse como **Paris**.
 
-- Agregue `evmVersion: "shanghai"` en las configuraciones del compilador de solidez.
+#### Despliegue usando Hardhat
 
-![configuración-de-solidez-del-casco](../../../../../static/img/solidity-support/hardhat-evm-setting.png)
+- Para Core Mainnet y Testnet2, agrega \`evmVersion: "shanghai" en las configuraciones del compilador de Solidity.
 
-#### Remix
+```
+solidity: {
+       compilers: [
+         {
+            version: '0.8.26',
+            settings: {
+               evmVersion: 'shanghai',
+               optimizer: {
+                  enabled: true,
+                  runs: 200,
+               },
+            },
+         },
+       ],
+    },
+```
 
-- Elija `shanghai` en la configuración del compilador.
+- Para Core Legacy Testnet (ID de cadena: 1115), agrega `evmVersion: "paris"` en las configuraciones del compilador de Solidity.
 
-![remix-solidity-setting](../../../../../static/img/solidity-support/remix-setting.png)
+```
+solidity: {
+       compilers: [
+         {
+            version: '0.8.26',
+            settings: {
+               evmVersion: 'paris',
+               optimizer: {
+                  enabled: true,
+                  runs: 200,
+               },
+            },
+         },
+       ],
+    },
+```
+
+#### Despliegue usando Remix IDE
+
+- Para Core Mainnet y Testnet2, elige `shanghai` en las configuraciones del compilador.
+
+<p align="center">
+<img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
+</p>
+
+- Para Core Legacy Testnet1 (ID de cadena: 1115), elige `paris` en las configuraciones del compilador.
+
+<p align="center">
+<img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />
+</p>
 
 ### Verificación de contrato
 
 - Para simplificar el proceso de verificación, la versión EVM predeterminada para Core Scan está configurada en **Shanghai** para la versión de solidez **0.8.24^**.
-- Los desarrolladores pueden seguir los mismos pasos para verificar sus smart contratos con la versión 0.8.24^ que con las versiones anteriores. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
+- Los desarrolladores pueden seguir los mismos pasos para verificar sus contratos inteligentes con la versión 0.8.24^ que con las versiones anteriores. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
+- Para verificar los contratos inteligentes desplegados en Core Legacy Testnet (1115), configura la `EVM Version to target en los **Misc Settings** de la página de verificación de contratos a `paris`.
 
-### smart contratos basados ​​en Solidity versión `<0.8.24`
+<p align="center">
+<img width="710" alt="image" src="https://github.com/user-attachments/assets/8f2b61f2-72c2-4607-8f64-9e1d1c19960b" />
+</p>
 
-- **Nota**: los smart contratos con la versión solidity **\< 0.8.24** no se ven afectados y pueden funcionar como de costumbre.
+### Contratos inteligentes basados ​​en Solidity versión `<0.8.24`.
+
+- **Nota**: los contratos inteligentes con la versión solidity **\< 0.8.24** no se ven afectados y pueden funcionar como de costumbre.

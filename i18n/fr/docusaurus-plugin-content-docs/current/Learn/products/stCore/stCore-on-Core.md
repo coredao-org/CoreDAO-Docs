@@ -10,12 +10,12 @@ sidebar_position: 2
 
 ## Introduction
 
-Le Liquid Staking avec stCORE améliore l’utilité du token CORE tout en simplifiant le processus de staking. Ce guide fournit un aperçu détaillé du processus de création et de rachat du stCORE, un outil précieux pour les détenteurs de tokens CORE cherchant à maximiser le potentiel de leurs actifs.
+Le staking liquide avec stCORE améliore l'utilité du jeton CORE tout en rationalisant le processus de staking. Ce guide fournit une procédure détaillée pour la création et le rachat de stCORE, permettant aux détenteurs de jetons de maximiser l'efficacité du capital tout en participant à la sécurité du réseau.
 
 ## Premiers pas : Prérequis
 
 1. **Vérifier la disponibilité des tokens CORE:** Assurez-vous que votre portefeuille Core contient le montant nécessaire de tokens CORE pour le staking.
-2. **Accéder à la plateforme de staking:** [Visitez la plateforme de Staking Liquide de Core](https://stake.coredao.org/stcore)
+2. **Accéder à la plateforme de staking:** [Visitez la plateforme de Staking Liquide de Core](https://stake.coredao.org/liquid-staking/stcore)
 3. **Connexion du portefeuille:** Connectez votre portefeuille à la plateforme.
 
 ## Définitions clés

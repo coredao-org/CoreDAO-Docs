@@ -10,13 +10,13 @@ sidebar_position: 2
 
 ### 1. Quels sont les différents types de nœuds pris en charge par la blockchain Core ?
 
-Sur le réseau Core, un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
+Sur le réseau Core, un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes:
 
 - **Nœud complet normal :** pour un usage privé.
 - **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
 - **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
-En plus de cela, Core prend également en charge :
+En plus de cela, Core prend également en charge:
 
 - **Nœud archive :** stocke toutes les données de la blockchain Core depuis le bloc de genèse.
 - **Nœuds de snapshot :** stockent des instantanés pour aider d'autres nœuds à synchroniser rapidement le réseau.
@@ -27,7 +27,7 @@ L'exploitation d'un nœud complet Core offre plusieurs avantages, tels que l'am�
 
 ### 3. Qu'est-ce qu'un nœud complet Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud complet Core ?
 
-Un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes :
+Un nœud complet Core stocke l'historique complet de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes:
 
 - **Nœud complet normal :** pour un usage privé.
 - **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
@@ -44,7 +44,7 @@ Un nœud complet Core stocke l'historique complet de la blockchain Core, permett
 | RAM              | 8 Go                                                                          |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/config/full-node.md)
 
 **Spécifications matérielles pour le Mainnet**
 
@@ -55,7 +55,7 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds complets]
 | RAM              | 32 Go                                                                         |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/config/full-node.md)
 
 ### 4. Qu'est-ce qu'un nœud RPC Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud RPC Core ?
 
@@ -85,7 +85,7 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds RPC](../N
 
 ### 5. Qu'est-ce qu'un nœud validateur Core ? Quelles sont les exigences matérielles/logiciels pour exécuter un nœud validateur Core ?
 
-Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de Core blockchain.
+Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de la blockchain Core.
 
 **Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux.
 
@@ -111,4 +111,4 @@ Pour plus de détails, consultez le [Guide de configuration des nœuds validateu
 
 ### 6. Comment configurer un nœud complet sur la blockchain Core ?
 
-Consultez le guide détaillé [ici](../Node/Full-Node/on-mainnet.md) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.
+Consultez le guide détaillé [ici](../Node/config/full-node.md) pour savoir comment configurer et exécuter un nœud complet sur le réseau Core.

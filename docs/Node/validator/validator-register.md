@@ -4,6 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Validator Registration
 ---
 
@@ -12,54 +15,9 @@ Before running a Validator Node on Core, we strongly recommend reading the [Tech
 :::
 
 ## Set Up a Full Node in Validator Mode
-Before you can register as a Validator, you need to set up and run a full node in Validator mode. Follow this [guide](./running-validator.md) to setup and run Validator Node. Your full node needs to sync with the Core network, meaning it must download the blockchain data and stay updated with the latest blocks.
+Before you can register as a validator, you need to set up and run a full node in validator mode following the guide [here](./setting-up-validator.md).
 
-### Generate the Consensus Key
-
-When initializing a validator node, you need to generate a Consensus Address (Public Address) for the key. This address will be used by your node for consensus operations.
-
-#### Generating a New Consensus Key
-To create a new consensus key, use the following command. This command will create a new account and output an address which will be your validator's address (consensus address).
-
-```bash
-./build/bin/geth account new --datadir ./node
-```
-
-##### Important Notes
-* **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-* **Backup Your Key:** Losing access to this key means losing control over your validator node.
-
-You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
-
-```bash
-echo {your-password} > password.txt
-```
-
-### Start the Validator Node
-
-Once you have the consensus key, you can start the validator node with the following command:
-
-```bash
-./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
-```
-
-Let’s break down the flags used in this command:
-
-- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
-
-- **`datadir ./node`:** Indicates the data directory for the node.
-
-- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
-
-- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
-
-- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
-
-- **`mine`:** Starts the mining process (block validation).
-
-- **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
-
-- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+Make sure your validator node is up and running. 
 
 ## Register Your Validator
 
@@ -93,7 +51,7 @@ Provide information for each of the form's fields:
 After submitting your registration form, you can check whether the registration was successful.
 
 ### Checking the Logs
-Open your node’s log file and search for the error message "unauthorized validator." If this message appears, it means that your node is registered but has not yet been elected to the validator set.
+Open your node’s log file and search for the error message `unauthorized validator`. If this message appears, it means that your node is registered but has not yet been elected to the validator set.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-2.avif)
 
@@ -130,6 +88,35 @@ Validator status is updated daily at 00:00 UTC. You can check the status of your
 You can monitor the status of your validator and its block production record on [Core Scan](https://scan.coredao.org/). This tool allows you to track whether your node is successfully producing blocks and performing well.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-4.webp)
+
+## Setting Validator Name
+
+You may assign a human-readable name to your validator node using the Core Staking UI. This name serves as a label for delegators and network participants to identify your validator in the interface.
+
+### Steps to Set or Update Your Validator Name
+
+1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators). 
+2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
+3. **Open Validator Details:** Click on your validator to open the Validator Details page.
+4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+</p>
+
+4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+</p>
+
+5. **Sign Validator Ownership Message:** Click Sign to verify ownership of your validator address by signing the displayed message.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
+</p>
+
+6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
 
 ## Maintaining Your Validator Node
 To remain an active and successful validator, you’ll need to keep your node online, perform maintenance, and respond to any issues that arise.

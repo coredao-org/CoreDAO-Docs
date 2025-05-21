@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuration des Nœuds RPC
+sidebar_label: Nœud RPC (Nœud d'appel de procédure à distance)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds RPC
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Nœuds RPC sur Core
 
 ---
 
@@ -16,33 +19,53 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Logiciel
 
-- Actuellement, un nœud d'archive Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
+- **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité.
+- **Configuration du pare-feu:** Pour garantir que votre nœud RPC puisse communiquer avec des applications externes et d'autres nœuds, vous devez autoriser le trafic HTTP entrant sur le port 8575, qui est le port par défaut pour la communication RPC. Vous pouvez ajuster ce paramètre dans le fichier config.toml si vous préférez utiliser un port différent. Assurez-vous que vos paramètres de pare-feu sont correctement configurés pour autoriser le trafic sur ce port.
 
 ### Matériel
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Chaque type de nœud Core a des exigences matérielles spécifiques en fonction de ses besoins.
+Un nœud RPC sur Core agit comme une passerelle pour les applications, les développeurs et les utilisateurs afin d'interagir avec la blockchain. Il traite les requêtes, soumet des transactions et récupère des données de blockchain en temps réel via des appels de procédure à distance (RPC). Ces nœuds sont essentiels pour les dApps, les portefeuilles et les plateformes d'analyse afin d'accéder de manière transparente au réseau Core. Voici les exigences matérielles pour un nœud RPC sur Core
 
-#### Spécifications Matérielles pour les Nœuds RPC du Testnet
+<Tabs
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Pour les nœuds RPC sur le **Testnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+    | **CPU**            | 8 CPU cores |
+    | **RAM**            | 16 Gigabytes   |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+  </TabItem>
+  <TabItem value="testnet">
+    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
 
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 8 cœurs CPU                                                                                                                                  |
-| RAM              | 16 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+    | **CPU**            | 8 CPU cores |
+    | **RAM**            | 16 Gigabytes   |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+  </TabItem>
+  <TabItem value="mainnet">
+    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-#### Spécifications Matérielles pour les Nœuds RPC du Mainnet
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
+    | **CPU**            | 8 CPU cores |
+    | **RAM**            | 16 Gigabytes  |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+  </TabItem>
+</Tabs>
 
-Pour les nœuds RPC sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
-
-| Requis           | Détails                                                                                                                                      |
-| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace libre sur un disque SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1 ms. |
-| CPU              | 16 cœurs CPU                                                                                                                                 |
-| RAM              | 32 go                                                                                                                                        |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 50 Mbps.                                              |
 
 ## Exécution d'un Nœud RPC
 
@@ -52,17 +75,17 @@ Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` 
 
 ### Compilation et Exécution
 
-1\. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud RPC complet à partir du code source de la blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-Vous devriez voir le message suivant :
+Vous devriez voir le message suivant:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -76,7 +99,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Votre nœud RPC complet est prêt, lançons-le !
+4. Votre nœud RPC complet est prêt, lançons-le !
 
 Si vous envisagez d'exécuter un nœud RPC, vous pouvez simplement exécuter la commande `geth` suivante :
 
@@ -85,4 +108,4 @@ Si vous envisagez d'exécuter un nœud RPC, vous pouvez simplement exécuter la 
 geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=full --rpc.allow-unprotected-txs
 ```
 
-5\. Pendant que votre nœud RPC complet fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5. Pendant que votre nœud RPC complet fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.

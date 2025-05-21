@@ -1,5 +1,5 @@
 ---
-sidebar_label: Puentear Tokens a Core con una Layer zero
+sidebar_label: Puentear Tokens Usando LayerZero
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,9 +8,9 @@ sidebar_position: 2
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
----&#x20;
+---
 
-En esta [guía](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), lo guiamos a través del proceso de configuración de transferencias de tokens entre cadenas utilizando el token fungible Omnichain (OFT) de LayerZero. Protocolo V2. Específicamente, esta guía se centra en habilitar las transferencias de tokens ERC-20 entre Core Testnet y Base Sepolia Testnet, equipando a los desarrolladores con las herramientas y el conocimiento necesarios para manejar las interacciones de tokens entre cadenas.
+En esta [guía](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), lo guiamos a través del proceso de configuración de transferencias de tokens entre cadenas utilizando el token fungible Omnichain (OFT) de LayerZero.) Protocolo V2. Específicamente, esta guía se centra en habilitar las transferencias de tokens ERC-20 entre Core Testnet y Base Sepolia Testnet, equipando a los desarrolladores con las herramientas y el conocimiento necesarios para manejar las interacciones de tokens entre cadenas.
 
 Ya seas un principiante o un desarrollador experimentado, [esta guía](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) te ayudará a:
 

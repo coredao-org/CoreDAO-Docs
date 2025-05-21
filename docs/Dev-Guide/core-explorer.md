@@ -4,12 +4,12 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Core Scan Blockchain Explorer
 
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
 

@@ -14,7 +14,7 @@ Il est conseillé à tous les clients de mettre à jour vers la dernière versio
 
 ### Élagage de l'État
 
-Selon les tests, les performances d'un nœud complet se dégradent lorsque la taille du stockage atteint un volume élevé (auparavant estimé à 1,5 To, mais ce chiffre est expérimental et nécessite une mise à jour). Nous suggérons que les nœuds complets maintiennent un stockage léger en élaguant les données stockées.
+Selon les tests effectués, les performances des nœuds complets se dégradent lorsque la taille de stockage atteint un volume élevé (environ 1,5 To, ce qui est une valeur expérimentale). Nous suggérons que les nœuds complets maintiennent un stockage léger en élaguant les données stockées.
 
 #### Règles pour l'Élagage
 
@@ -38,7 +38,7 @@ Les mainteneurs doivent toujours avoir quelques nœuds de secours en cas d'élag
 
 Les données anciennes sont des données de blocs déjà considérées comme immuables. Cela est déterminé par un seuil actuellement fixé à **90 000**. Cela signifie que les blocs plus anciens que **90 000** sont considérés comme des données anciennes. Nous recommandons aux utilisateurs qui ne s'intéressent pas aux anciennes données d'utiliser l'option `--pruneancient`. Cela permet d'économiser de l'espace disque en ne conservant que les données des **90 000** derniers blocs.  Notez qu'une fois cette option activée, les données anciennes ne pourront plus être récupérées et vous ne pourrez pas exécuter votre nœud sans cette option dans la commande de démarrage.
 
-Comment utiliser l'option :
+Comment utiliser l'option:
 
 ```bash
 ./geth --tries-verify-mode none --config /server/config.toml --datadir /server/node --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --pruneancient=true --syncmode=full
@@ -48,7 +48,7 @@ Comment utiliser l'option :
 
 Core offre une fonctionnalité hors ligne pour élaguer les données de blocs anciens indésirables. Cela permet de supprimer les blocs, reçus et en-têtes de la base de données pour économiser de l'espace.
 
-Comment élaguer :
+Comment élaguer:
 
 1. Arrêter le processus Geth.
 2. Exécuter la commande suivante

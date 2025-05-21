@@ -8,11 +8,11 @@ sidebar_position: 2
 
 ---
 
-La Temporada 2 de Core Ignition es un programa de incentivos para usuarios de seis meses, diseñado para reconocer a la comunidad de Core por sus valiosas contribuciones a la red. A través de Core Ignition, los usuarios tienen la oportunidad de contribuir significativamente al panorama en evolución de BTCfi, mientras son recompensados por diversas interacciones y actividades, que pueden visualizarse en el panel de Ignition después de conectarse y transferir activos exitosamente a Core Ignition.
+Core Ignition Temporada 3 es un programa de incentivos para usuarios de seis meses diseñado para reconocer las valiosas contribuciones de la comunidad a la red Core. A través de Core Ignition, los usuarios tienen la oportunidad de contribuir significativamente al panorama en evolución de BTCfi, mientras son recompensados por diversas interacciones y actividades, que pueden visualizarse en el panel de Ignition después de conectarse y transferir activos exitosamente a Core Ignition.
 
 ## Período del Programa
 
-La duración del programa de incentivos para usuarios de Core Ignition es de **seis** meses, desde el 12 de septiembre de 2024, 00:00 UTC hasta el 11 de marzo de 2025, 23:59 UTC.
+La duración del programa de incentivos para usuarios de Core Ignition es de **seis** meses, desde el 12 de marzo de 2025 a las 12:00 UTC hasta el 12 de septiembre de 2025 a las 11:59 UTC.
 
 ## Elegibilidad
 
@@ -25,7 +25,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
 1. Invitar a otros a participar en Core Ignition.
 2. Transferir activos específicos a Core.
 3. Mantener activos específicos en Core.
-4. Ejecutar transacciones interactuando con smart contratos.
+4. Ejecutar transacciones interactuando con contratos inteligentes.
 5. Participar en dApps dentro del ecosistema de Core, incluyendo, pero no limitado a, DEXs, protocolos de préstamos, futuros perpetuos, etc.
 
 ## Cómo Empezar
@@ -33,7 +33,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
 1. Visite el [sitio web de Core Ignition](https://ignition.coredao.org).
 
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
+  <img width="500" alt="S3_hero" src="https://github.com/user-attachments/assets/4e038aae-a522-4004-97af-da536b6ecdfe"/>
 </p>
 
 2. Haga clic en "Agregar red central" para agregar Core Blockchain a la red de billetera.
@@ -53,7 +53,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
 6. Revise y acepte los Términos y Condiciones y la Política de Privacidad.
 
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096"/>
+  <img width="500" alt="S3 T C" src="https://github.com/user-attachments/assets/1b460bb5-2992-409c-a4d4-45ec5a1dd7f5"/>
 </p>
 
 7. Haga clic en "Connect Wallet" para conectar una billetera Web3 Core compatible.

@@ -14,10 +14,10 @@ Dans l'écosystème de Core, un "validateur" fait référence aux nœuds ou part
 
 ### 2. Comment devenir un validateur ?
 
-- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config.md) et l'[exécution des nœuds validateurs](../Node/validator/running-validator.md) pour obtenir des informations sur la configuration.
+- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config.md) et l'[exécution des nœuds validateurs](../Node/validator/setting-up-validator.md) pour obtenir des informations sur la configuration.
   2. Ensuite, le moyen le plus simple d'enregistrer un nouveau validateur est d'utiliser l'un de nos sites Web de staking :
-     1. [Site de staking pour le Mainnet](https://stake.coredao.org)
-     2. [Site de staking pour le Testnet](https://stake.test2.btcs.network)
+    1. [Site de staking pour le Mainnet](https://stake.coredao.org)
+    2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
   3. Connectez votre portefeuille en sélectionnant **Connect Wallet** en haut à droite.
   4. Une fois connecté, le bouton **Register** devrait apparaître en haut à droite. En sélectionnant **register** le formulaire suivant s'affiche :
 
@@ -36,7 +36,7 @@ Fournissez les informations pour chaque champ du formulaire :
 
 ### 3. Quelles sont les exigences matérielles/logiciels pour exécuter un nœud validateur sur Core ?
 
-Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de Core blockchain.
+Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de la blockchain Core.
 
 **Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux.
 
@@ -58,7 +58,7 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 | RAM              | 32 Go                                                                                                                                        |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-Pour plus de détails, consultez le [Guide de configuration des nœuds complets](../Node/Full-Node/on-testnet.md)
+For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
 
 ### 4. Quel est le montant minimum de tokens CORE requis pour devenir validateur ?
 
@@ -66,7 +66,7 @@ Sur le réseau Core, les validateurs doivent staker un certain montant minimum d
 
 ### 5. Comment les validateurs sont-ils récompensés dans l'écosystème Core ?
 
-Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels. Les validateurs de la Core blockchain fonctionnent selon un système de tourniquet, et chaque validateur actif reçoit à peu près le même montant de récompenses à chaque tour. Il existe deux catégories de récompenses de validateur:
+Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels. Les validateurs de la Core Chain fonctionnent selon un système de tourniquet, et chaque validateur actif reçoit à peu près le même montant de récompenses à chaque tour. Il existe deux catégories de récompenses de validateur:
 
 1\. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
 
@@ -88,7 +88,7 @@ Voici un aperçu détaillé des risques et pénalités auxquels les validateurs 
 4. **Perte de délégation :** les délégateurs peuvent retirer leur soutien si un validateur performe mal ou est fréquemment pénalisé.
 5. **Risques opérationnels et de sécurité :** les validateurs doivent maintenir des opérations sûres et efficaces 24h/24. Des défaillances opérationnelles ou des violations de sécurité peuvent entraîner des dommages financiers et réputationnels.
 
-### 9) Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core ?
+### 8. Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core ?
 
 Le processus d'élection des validateurs dans le mécanisme Satoshi Plus sur le réseau Core implique différentes étapes qui intègrent des éléments de Preuve de Travail (PoW) et de Preuve d'Enjeu (PoS) :
 
@@ -109,7 +109,7 @@ Où :
 
 4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
-### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
+### 9. Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
 
 Le "slashing" est une pénalité appliquée aux validateurs pour mauvaise conduite ou manquements à leurs devoirs. Dans le réseau Core, le slashing peut affecter les récompenses et les mises déposées.
 
@@ -124,6 +124,7 @@ Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 1. Ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un emprisonnement de trois jours, pendant lesquels ils ne peuvent pas être élus dans le groupe de validateurs.
 2. La double signature peut entraîner le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
 
-### 11) À quelle fréquence les validateurs doivent-ils être en ligne ?
+### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
 
 Les validateurs sont généralement censés être en ligne et participer activement presque en continu.
+

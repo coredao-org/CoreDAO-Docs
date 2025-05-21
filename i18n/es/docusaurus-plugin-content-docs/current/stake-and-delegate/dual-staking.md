@@ -1,20 +1,22 @@
 ---
-sidebar_label: Doble apuesta
+sidebar_label: Visión general
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Apuesta dual: desbloquea un APY más alto para la apuesta en BTC
+# Dual Staking
 
 ---
 
 ## Introducción
 
-[Staking No Custodial de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/overview) se integró en la blockchain de Core en abril de 2024, permitiendo a los usuarios apostar Bitcoin y ganar rendimiento mientras mantienen el control total sobre sus activos. Esta implementación proporciona un mecanismo nativo para generar rendimiento de Bitcoin sin introducir suposiciones de confianza adicionales.
+[Self-Custodial Bitcoin Staking](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining custody of their assets.
 
-Para mejorar aún más la generación de rendimiento a partir de la apuesta de Bitcoin sin custodia a escala, **Dual Stake** desbloquea niveles de rendimiento más altos al apostar Bitcoin y CORE simultáneamente. Dado que las emisiones CORE diarias son fijas, aquellos que apuestan CORE junto con Bitcoin obtienen niveles de recompensa más altos que aquellos que apuestan Bitcoin solo. El porcentaje de aumento del rendimiento se determina apostando CORE por encima de múltiples umbrales definidos, y cada umbral corresponde a niveles crecientes de recompensas de apuesta de Bitcoin. Al vincular mayores recompensas por staking de Bitcoin con el volumen de tokens CORE apostados, este enfoque alienta a los stakers de Bitcoin a asumir un compromiso más profundo con el ecosistema Core. Maximiza el rendimiento del rendimiento para los usuarios comprometidos.
+To maximize yield potential from Bitcoin staking, Core offers Dual Staking - a mechanism that unlocks higher reward tiers by participating in both Bitcoin timelock staking and CORE token staking simultaneously.
+Since Core's daily emissions follow a fixed schedule, participants who stake CORE alongside their Bitcoin receive significantly higher rewards compared to those staking Bitcoin alone. The boost in yield percentage is determined by the amount of CORE tokens staked relative to the Bitcoin value, with defined thresholds corresponding to increasing tiers of staking rewards.
+By aligning Bitcoin staking rewards with CORE token staking levels, Dual Staking creates a powerful economic incentive for Bitcoin holders to deepen their involvement in the Core ecosystem.
 
-<div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
+<!-- <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0 }}>
   <iframe
     src="https://www.youtube.com/embed/zqzGoQwT9Rs?si=HRHOIRc2viLKHP1g"
     style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
@@ -22,117 +24,41 @@ Para mejorar aún más la generación de rendimiento a partir de la apuesta de B
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen
   ></iframe>
-</div>
+</div> -->
 
-## ¿Cómo funciona el doble stake?
+## ¿Cómo funciona el staking dual?
 
-Dual Stake no altera el proceso de apuesta para Bitcoin y CORE. Para obtener más información sobre cómo funciona el staking de Bitcoin sin custodia, consulte [aquí](https://docs.coredao.org/docs/Learn/products/btc-staking/overview). Además, consulte esta [guía](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) detallada sobre cómo delegar CORE y [hacer staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide)/[canjear](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide) BTC.
+El Dual Staking no altera el proceso de staking de Bitcoin y CORE. For more information on how Self-Custodial Bitcoin Staking works, refer [here](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md). Además, consulte esta [guía](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) detallada sobre cómo delegar CORE y [hacer staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md)/[canjear](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide.md) BTC.
 
-El Dual Staking crea una oportunidad para desbloquear rendimientos más altos cuando tanto Bitcoin como CORE se apuestan simultáneamente, con diferentes umbrales de staking de CORE correspondientes a distintos niveles de impulso de rendimiento sobre las recompensas de staking de Bitcoin en la blockchain de Core.
+El Dual Staking crea una oportunidad para desbloquear rendimientos más altos cuando tanto Bitcoin como CORE son puestos en staking simultáneamente, con diferentes umbrales de staking de CORE que corresponden a distintos niveles de aumento de rendimiento en las recompensas de staking de Bitcoin en la blockchain de Core.
 
-Los poseedores de Bitcoin pueden [apostar su Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide) a través del Staking No Custodial de Bitcoin de Core para acumular recompensas en CORE. Posteriormente, al [apostar sus tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) en diferentes umbrales de Dual Staking, los usuarios desbloquean niveles más altos de rendimientos de Bitcoin, pagados en CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
+Bitcoin holders can [stake their Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md) through Core's Self-Custodial Bitcoin Staking to accumulate CORE rewards. Posteriormente, al [hacer staking de sus tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) en diferentes umbrales de Dual Staking, los usuarios desbloquean niveles más altos de rendimientos de Bitcoin, pagados en CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
 
 Para habilitar rendimientos más altos en el staking de Bitcoin a través de Dual Staking, los usuarios deben cumplir con los siguientes requisitos:
 
-1. Apoye tanto CORE como Bitcoin simultáneamente, asegurándose de que la cantidad de CORE apostada exceda el umbral mínimo de doble apuesta **Y**
+1. Hacer staking tanto de CORE como de Bitcoin simultáneamente, asegurándose de que la cantidad de CORE apostada exceda el umbral mínimo de participación dual **y**
 2. La dirección de la billetera de staking de CORE _**debe**_ coincidir con la dirección designada de recompensas de CORE para el staking de Bitcoin a la cual se pagará el rendimiento.
 
-### Umbrales de rendimiento mejorados
+Según las proporciones de staking CORE:BTC (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>), que representan los tokens CORE en staking en relación con los Bitcoins en staking, las recompensas por staking de Bitcoin se dividen en n niveles de rendimiento aumentados (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>). Dependiendo del nivel de rendimiento aumentado de un usuario, se aplican multiplicadores de rendimiento a la tasa base para el staking de Bitcoin en Core. Los multiplicadores de rendimiento se determinan en función de los datos de staking del usuario y la configuración del sistema de dual staking. Como resultado, diferentes usuarios pueden tener multiplicadores distintos. También se deben cumplir umbrales específicos de staking de CORE para calificar a los rendimientos aumentados. Además, cabe señalar que las proporciones de staking (R<sub>1</sub>, R<sub>2</sub>, … , R<sub>n</sub>) y el número de niveles de rendimiento mejorado (P<sub>BASE</sub>, P<sub>1</sub>, P<sub>2</sub>, …, P<sub>MAX</sub>) están sujetos a cambios y pueden ajustarse mediante votaciones de gobernanza.
 
-Actualmente, las recompensas de Satoshi Plus se asignan a través de tres pools, uno para cada una de las tres entidades participantes en la elección de los validadores de Core, a saber: (1) Delegadores de Poder Hash, (2) Apostadores de Bitcoin y (3) Apostadores de CORE.
+## ¿Qué cambia con el Dual Staking?
 
-El Dual Stake no afecta a estos grupos de recompensas, pero permite a los apostadores de Bitcoin que también apuestan tokens CORE ganar una mayor proporción de recompensas en el grupo de Stake de Bitcoin. En esta sección, cubrimos en detalle el funcionamiento del algoritmo de calificación con respecto a la apuesta dual.
+Desde la perspectiva de cómo se realiza el staking, nada cambia fundamentalmente con el Dual Stake. Los usuarios aún pueden hacer staking de Bitcoin y CORE de forma independiente; sin embargo, al hacer staking tanto en Bitcoin como en CORE simultáneamente, se desbloquea el potencial de obtener mayores rendimientos
+en staking de Bitcoin. Hacer staking de ambos activos no es obligatorio, sino más bien una mejora opcional para los poseedores de Bitcoin que buscan maximizar su rendimiento. Piense en esto como un aumento de recompensa, donde los stakers de Bitcoin recibirán recompensas mejoradas a medida que aumenten la cantidad de CORE en staking.
 
-1. **Niveles de rendimiento aumentados**\
-   En el marco de Dual Stake, hay 3 niveles de rendimiento aumentados para Bitcoin Stake según la proporción de CORE apostado en relación con Bitcoin apostado. Para los Solo-Stakers de Bitcoin únicamente, existe un cuarto nivel con la tasa de apuesta de Bitcoin más baja. Como resultado, los rendimientos reales impulsados ​​pueden cambiar diariamente según las condiciones del mercado. It is important to note that the annual reward rate for Bitcoin Staking can fluctuate significantly, often due to varying prices and other market dynamics.
+El Dual Staking fortalece la relación entre las blockchains de Bitcoin y Core, alineando los incentivos y el valor en ambos ecosistemas. Ofrece mayores recompensas para aquellos que participan activamente en ambas opciones de staking sin introducir nuevos requisitos ni complejidades en el proceso.
 
-   - **P<sub>BASE</sub>** \= la tasa base de participación de BTC
-   - **P<sub>Nivel1</sub>** \= la tasa base de participación de BTC \+ el nivel 1 aumentó el rendimiento
-   - **P<sub>Nivel2</sub>** \= tasa base de participación de BTC \+ rendimiento impulsado por el nivel 2
-   - **P<sub>Level3</sub> (P<sub>MAX</sub>)** \= tasa base de participación de BTC \+ rendimiento impulsado por el nivel 3
+## Características clave del Dual Staking
 
-Efectivamente, las emisiones de CORE se distribuyen de manera prorrateada en función del TVL de BTC, ponderado en función de su nivel de staking dual (CORE:BTC).
+- **Mayores recompensas a través de staking en CORE**: Los stakers de Bitcoin ahora pueden hacer staking de CORE junto con Bitcoin para desbloquear mayores rendimientos de staking de Bitcoin. Para obtener estos rendimientos de staking mejorados, los stakers de Bitcoin deben hacer staking de CORE por encima de un cierto umbral.
 
-2. **Umbrales de CORE apostado y Ratios de Staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**\
-   El mecanismo decisivo para el nivel de rendimiento de un apostador de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, o **P<sub>Level3</sub> (P<sub>MAX</sub>)**) se basa en los tokens CORE apostados en relación con los Bitcoin apostados, donde **R** representa la proporción `CORE:BTC` y **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
+- **Self-Custodial Staking**: Core’s Self-Custodial Bitcoin Staking enables users to maintain complete ownership of their assets throughout the staking process. Bitcoin permanece de forma segura en la billetera del usuario y se desbloquea cuando expira el período de bloqueo elegido. Ninguna entidad externa obtiene jamás la custodia del Bitcoin del staker. Mientras tanto, a cambio de que los participantes bloqueen sus Bitcoin, pueden delegarlo a validadores de Core que protegen CORE y ganar recompensas. Esta configuración elimina el riesgo de custodia y mejora la seguridad, ya que los stakers participan en la seguridad de Core sin poner en riesgo su Bitcoin.
 
-   - Ratio de Staking R1 = 1,000 CORE por 1 BTC
-   - Ratio de Staking R2 = 3,000 CORE por 1 BTC
-   - Ratio de Staking R3 = 8,000 CORE por 1 BTC
+## ¿Quién puede beneficiarse del Dual Staking?
 
-Teniendo en cuenta estos ratios, los usuarios pueden calcular el umbral requerido para cada nivel como sigue:
+El Dual Staking está diseñado para todos, desde individuos hasta las instituciones financieras más grandes, cualquiera que quiera obtener mayores tasas de staking de Bitcoin. Además de los poseedores de Bitcoin, los mineros de Bitcoin también pueden aprovechar el Dual Staking para optimizar sus ganancias.
 
-* **Umbral de CORE apostado para P<sub>Level1</sub>** = Cantidad de BTC apostado * Ratio de Staking (**R<sub>1</sub>**)  
-* **Umbral de CORE apostado para P<sub>Level2</sub>** = Cantidad de BTC apostado * Ratio de Staking (**R<sub>2</sub>**)  
-* **Umbral de CORE apostado para P<sub>Level3</sub> (P<sub>MAX</sub>)** = Cantidad de BTC apostado * Ratio de Staking (**R<sub>3</sub>**)  
-
-
-:::note
-El CORE apostado y/o el Bitcoin apostado pueden ser distribuidos entre múltiples validadores activos de Core.
-:::
-
-3. **Determinación del nivel de rendimiento aumentado para cada (1) Bitcoin apostado**
-   - Si la cantidad de CORE apostado \< **R<sub>1</sub>**, el usuario está en el nivel **P<sub>BASE</sub>**.
-   - Si **R<sub>1</sub>** \=\< monto CORE apostado \< **R<sub>2</sub>**, el usuario ingresa al nivel **P<sub>Nivel1</sub>**
-   - Si **R<sub>2</sub>** \=\< monto CORE apostado \< **R<sub>3</sub>**, el usuario ingresa al nivel **P<sub>Nivel2</sub>**
-   - Si el monto CORE apostado \>= **R<sub>3</sub>**, el usuario ingresa al nivel **P<sub>Level3</sub>** (\*\*P<sub>MAX</sub> \*\*)
-
-:::note
-Las ratios de staking y el número de niveles son configurables y están sujetos a cambios por votación de gobernanza.
-:::
-
-### Ejemplo
-
-Lo siguiente es un ejemplo simple que explica cómo calcular el CORE requerido para hacer staking, basado en los parámetros mencionados anteriormente, para desbloquear los niveles de rendimiento aumentado para Dual Staking.
-
-Ahora, el usuario tendrá que apostar CORE según los siguientes umbrales de CORE apostado para disfrutar de un mayor rendimiento en su BTC apostado con las variables anteriores:
-
-- Proporción de apuesta **R<sub>1</sub>** \= 1,000
-- Proporción de apuesta **R<sub>2</sub>** \= 3,000
-- Proporción de apuesta **R<sub>3</sub>** \= 8,000
-- Cantidad de BTC apostada \= 10 BTC
-
-Los **Umbrales CORE apostados** con las variables anteriores son:
-
-- Umbral de CORE apostado para **P<sub>Nivel1</sub>** \= 10 \* 1000 \= 10,000 CORE apostado
-- Umbral de CORE apostado para **P<sub>Nivel2</sub>** \= 10 \* 3000 \= 30,000 CORE apostado
-- Umbral de CORE apostado para **P<sub>Nivel3</sub>** \= 10 \* 8000 \= 80,000 CORE apostado
-
-Por lo tanto, el BTC apostado en este ejemplo disfrutará de un rendimiento de
-
-- **P<sub>BASE</sub>** si la cantidad de CORE apostado es inferior a 10,000
-- **P<sub>Nivel1</sub>** si la cantidad de CORE apostado es superior o igual a 10 000 pero inferior a 30,000
-- **P<sub>Nivel2</sub>** si la cantidad de CORE apostado es superior o igual a 30 000 pero inferior a 80,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** si la cantidad de CORE apostado es superior o igual a 80,000
-
-:::note
-The multiplier on each boosted yield tier is dynamic and subject to change as per the supply and demand conditions of the market
-:::
-
-:::info
-Para que su nuevo nivel de doble apuesta entre en vigor, es posible que deba seguir dos pasos. Esto se aplica a los usuarios que ya han apostado BTC en rondas anteriores a las **00:00 AM UTC** y deciden apostar CORE adicional para subir de nivel. Primero, después de apostar CORE, espere hasta las próximas **00:00 UTC**. Luego, reclama todas tus recompensas en cualquier momento después de las **00:00 UT**C para restablecer el sistema de cálculo de niveles. Su nuevo nivel se activará tan pronto como complete el reclamo. Ambos pasos son esenciales para garantizar que su nuevo nivel entre en vigencia.
-:::
-
-## ¿Qué cambia con el doble stake?
-
-Desde la perspectiva de cómo se realiza el stake, nada cambia fundamentalmente con el Dual Stake. Los usuarios aún pueden apostar Bitcoin y CORE de forma independiente; sin embargo, al apostar tanto en Bitcoin como en CORE simultáneamente, se desbloquea el potencial de obtener mayores rendimientos al apostar en Bitcoin. Piense en esto como un aumento de recompensa, donde los apostadores de Bitcoin recibirán recompensas mejoradas a medida que aumenten la cantidad de CORE apostado. Staking both assets is not mandatory but an optional enhancement for Bitcoin holders seeking to maximize their yield.
-
-El doble staking fortalece la relación entre Bitcoin y las cadenas de bloques Core, alineando los incentivos y el valor en ambos ecosistemas. Ofrece mayores recompensas para aquellos que participan activamente en ambas opciones de staking sin introducir nuevos requisitos ni complejidades en el proceso de staking.
-
-## Características clave de la apuesta dual
-
-1. **Mayores recompensas mediante apuestas CORE**: los apostadores de Bitcoin ahora pueden apostar tokens CORE junto con Bitcoin para desbloquear mayores rendimientos de apuestas de Bitcoin. Para obtener estas tasas de apuesta mejoradas, los apostadores de Bitcoin deben apostar CORE por encima de un cierto umbral.
-
-2. **Impulso de recompensa acumulativa**: una vez que se adopte el Stake Dual, los apostadores de Bitcoin recibirán tasas más altas a medida que aumenten la cantidad de CORE apostado. Esto significa que los apostadores pueden maximizar sus retornos apostando más CORE.
-
-3. **Staking sin custodia y sin riesgos**: el staking de Bitcoin sin custodia de Core permite a los usuarios mantener la propiedad completa de sus activos durante todo el proceso de staking. Bitcoin permanece de forma segura en la billetera del usuario y se desbloquea cuando expira el período de bloqueo elegido. Ninguna entidad externa obtiene jamás la custodia del Bitcoin del apostador. Mientras tanto, a cambio de que los participantes bloqueen sus Bitcoin, pueden delegar en los validadores de Core que protegen CORE y ganan recompensas. Esta configuración elimina el riesgo de custodia y mejora la seguridad, ya que los participantes participan en la seguridad de Core sin poner en riesgo su Bitcoin.
-
-## ¿Quién puede beneficiarse del doble stake?
-
-Además de los poseedores de Bitcoin, los mineros de Bitcoin también pueden aprovechar el Dual Stake para optimizar sus ganancias. Dual staking está diseñado para todos, desde individuos hasta las instituciones financieras más grandes, que desean obtener tasas más altas de staking de Bitcoin.
-
-Los mineros de Bitcoin pueden ganar recompensas en CORE al delegar su poder de hash a validadores en la red Core y al hacer staking de sus tokens Bitcoin y CORE. Pueden desbloquear rendimientos más altos en sus tesorerías de Bitcoin al hacer staking de tokens CORE por encima del umbral mínimo de staking dual. Integrar las recompensas de minería con el mecanismo de Dual Staking permite a los mineros maximizar los retornos en las actividades de minería y staking.
-
+Bitcoin miners can earn CORE rewards by delegating their hash power to validators on the Core network and staking their Bitcoin and CORE tokens. Pueden desbloquear rendimientos más altos en sus tesorerías de Bitcoin al hacer staking de tokens CORE por encima del umbral mínimo de staking dual. Integrar las recompensas de minería con el mecanismo de Dual Staking permite a los mineros maximizar los retornos en las actividades de minería y staking.
 
 :::info
 Consulte la sección de [Preguntas Frecuentes sobre Dual Staking](../FAQs/dual-staking-faqs.md) para obtener más detalles o aclaraciones. Para soporte adicional, puede dirigir sus consultas al [Foro de Desarrolladores de Core](http://forum.coredao.org) o al [Servidor de Discord de Core](https://discord.gg/M2AGJKSG).

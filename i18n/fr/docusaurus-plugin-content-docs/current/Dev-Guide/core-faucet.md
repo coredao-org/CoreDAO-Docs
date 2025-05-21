@@ -1,5 +1,5 @@
 ---
-sidebar_label: Faucet Testnet Core
+sidebar_label: Faucet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -10,9 +10,10 @@ sidebar_position: 2
 
 Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le Faucet public Core Testnet pour distribuer des tokens de testnet Core, **tCORE** ou **tCORE2**.
 
-## Étapes pour obtenir des tCORE depuis le Faucet Testnet Core
+## Étapes pour obtenir des tCORE/tCORE2 depuis le Faucet Testnet Core
 
 1. Accédez au site web du faucet.
+
    - **Pour le faucet de Core Blockchain Testnet (1114) :** https://scan.test2.btcs.network/faucet
    - **Pour le faucet de Core Blockchain Testnet (1115) :** https://scan.test.btcs.network/faucet
 
@@ -20,13 +21,17 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 
 3. Complétez le CAPTCHA
 
-4. Si vous utilisez le faucet pour Core Blockchain Testnet (1114), cliquez sur le bouton `Get tCORE2`. Après avoir demandé des tCORE2 au faucet, vous verrez le solde de votre MetaMask augmenter.
+4. Si vous utilisez le faucet pour Core Blockchain Testnet (1114), cliquez sur le bouton `Get tCORE2`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
 
+<p align="center">
 ![using-faucet-test2](../../../../../static/img/faucet/faucet-test2.png)
+</p>
 
-5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE au faucet, vous verrez le solde de votre portefeuille augmenter.
+5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
+<p align="center">
 ![using-faucet](../../../../../static/img/faucet/faucet.png)
+</p>
 
 :::caution
 Chaque adresse ne peut demander **qu’un seul tCORE ou tCORE2 par jour** à partir du faucet. Si vous n’avez plus de tCORE ou tCORE2 et que le faucet ne vous en envoie pas davantage à cause de la limite journalière (un tCORE ou tCORE2 par jour), revenez après 24 heures et réessayez. Sinon, vous pouvez en faire la demande sur le serveur Discord de Core.

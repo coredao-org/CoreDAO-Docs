@@ -8,9 +8,13 @@ sidebar_position: 2
 
 ---
 
+:::warning
+coreBTC a été mis hors service lstBTC sera lancé comme un remplacement amélioré.
+:::
+
 ### 1. Qu'est-ce que le coreBTC? Quel est le but de coreBTC ?
 
-coreBTC est un Bitcoin natif wrapped sur Core, maintenant une parité 1:1 avec le BTC via un mécanisme sécurisé. Il permet aux utilisateurs de Bitcoin d'interagir de manière transparente avec l'espace DeFi sur Core compatible EVM, en utilisant leurs actifs BTC, ce qui étend la fonctionnalité de Bitcoin dans le paysage DeFi sans compromettre sa sécurité inhérente.
+coreBTC est un Bitcoin natif wrapped sur Core, maintenant une parité 1:1 avec le BTC via un mécanisme sécurisé. Les Bitcoiners peuvent interagir de manière transparente avec l'espace Defi sur l'écosystème Core qui est compatible EVM à l'aide de leurs actifs BTC. Ça élargit la fonctionnalité de Bitcoin dans le paysage Defi sans compromettre sa sécurité inhérente.
 
 ### 2. En quoi coreBTC est-il différent des tokens wrapped centralisés (par ex., WBTC) ?
 
@@ -31,7 +35,7 @@ Les principaux participants sans permission dans l'écosystème coreBTC comprenn
 
 ### 6. Comment la sécurité de coreBTC est-elle assurée ?
 
-Notre protocole et la sécurité de coreBTC ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en sécurité des smart contrats et de [confiance par](https://www.halborn.com/about/who-trusts-us) des plateformes blockchain majeures comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap.
+Notre protocole et la sécurité de coreBTC ont été audités en profondeur par [Halborn](https://www.halborn.com/), une société conforme à la norme SOC2 Type 1, réputée pour son expertise en sécurité des contrats intelligents et de [confiance par](https://www.halborn.com/about/who-trusts-us) des plateformes blockchain majeures comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap.
 
 ### 7. Où puis-je en savoir plus sur coreBTC et d'autres projets Core ?
 

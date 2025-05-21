@@ -22,7 +22,7 @@ Vous pouvez visualiser vos fonds stakés en recherchant l'adresse de staking sur
 
 - **Expiration du verrouillage temporel:** Lorsque vous verrouillez vos Bitcoins pour le staking, ils ne sont pas accessibles avant la fin de la période de staking.
 - **Choisir judicieusement:** Nous vous conseillons de sélectionner soigneusement votre période de verrouillage, en tenant compte de vos objectifs d'investissement et de votre tolérance au risque. Commencer par des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
-- Actuellement, en raison de certaines complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lors de la vérification via CLI. Toutefois, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés sur le [site officiel de Core dédié au Staking de BTC Non-Custodial](https://stake.coredao.org/).
+- **Vérification du montant jalonné :** Actuellement, en raison de certaines complexités techniques, il est possible que votre actif jalonné ne soit pas visible dans votre portefeuille lors d'une vérification via CLI. Cependant, vous pouvez facilement vérifier que vous avez la pleine propriété de vos actifs jalonnés sur le site Web officiel de jalonnement BTC auto-custodial de Core(https://stake.coredao.org/).
 
 ### Pourquoi mon actif staké n'est-il pas visible dans mon portefeuille ?
 

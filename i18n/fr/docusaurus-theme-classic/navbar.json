@@ -23,10 +23,9 @@
     "message": "Exécuter un Nœud",
     "description": "Navbar item with label Run a Node"
   },
-
   "item.label.Stake & Delegate": {
     "message": "Enjeu et Délégué",
-    "description": "Navbar item with label Enjeu et délégué"
+    "description": "Navbar item with label Stake & Delegate"
   },
   "item.label.Core API": {
     "message": "API Core",

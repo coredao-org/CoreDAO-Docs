@@ -1,30 +1,30 @@
 ---
-sidebar_label: En la red de prueba
+sidebar_label: En Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Ejecución de nodos completos del núcleo en Core Testnet
+# Ejecución de nodos completos de Core en Core Testnet
 
 ---
 
 Un nodo completo de Core almacena el historial completo de la cadena de bloques Core, lo que permite a cualquiera verificar el estado de cualquier cuenta. Un nodo completo Core puede adoptar muchas formas:
 
 - **Nodo completo normal**: para uso privado.
-- **Nodo completo del validador**: actúa como validador en el Core, validando bloques y transacciones.
-- **Nodo completo RPC**: proporciona servicios RPC y responde a solicitudes HTTP.
+- **Nodo completo validador**: actúa como validador en Core, validando bloques y transacciones.
+- **Nodo completo RPC**: Proporciona servicios RPC y responde a solicitudes HTTP.
 
 :::note
-Este documento proporciona una guía detallada sobre cómo ejecutar nodos completos normales en la red central.
+Este documento proporciona una guía detallada sobre cómo ejecutar nodos completos normales en la red Core.
 :::
 
 ## Requisitos del sistema
 
-Existen varios requisitos del sistema para configurar un nodo completo en Core.
+Existen varios requisitos de sistema para configurar un nodo completo en Core.
 
 ### Especificaciones de software para nodos completos en Core Testnet
 
-Actualmente, un Core Full Node puede **_sólo_** ejecutarse en **Mac OS X** y **Linux**.
+Actualmente, un nodo completo de Core **_sólo_** puede ejecutarse en **Mac OS X** y **Linux**.
 
 ### Especificaciones de hardware para nodos completos en Core Testnet
 
@@ -32,18 +32,18 @@ Para nodos completos en **Core testnet**, recomendamos las siguientes especifica
 
 | Requisitos            | Detalles                                                                                                         |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Almacenamiento        | 1 TB de espacio libre en disco                                                                                   |
+| Almacenimiento        | 1 TB de espacio libre en disco                                                                                   |
 | CPU                   | CPU 4 nucleos                                                                                                    |
 | RAM                   | 8 gigabytes                                                                                                      |
 | Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5 megas por segundo. |
 
 ## Construya y ejecute un nodo completo en Core Testnet
 
-1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo, ejecutando su nodo completo directamente desde nuestra base de código blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README del repositorio](https://github.com/coredao-org/core-chain#building-the-source).
+1\. Recomendamos utilizar el repositorio de GitHub de [core-chain](https://github.com/coredao-org/core-chain) para construir y ejecutar directamente su nodo completo desde el codebase de nuestra blockchain. Las instrucciones para crear el código fuente se pueden encontrar en él [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
-2\. Descargue el binario de nodo más reciente para Core Testnet desde GitHub de Core [repositorio de versiones](https://github.com/coredao-org/core-chain/releases/latest). El binario del nodo incluye los archivos de configuración de testnet relevantes. Descargue la última instantánea de testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Tenga en cuenta que el método recomendado para sincronizar el nodo testnet es sincronizar desde el bloque génesis_.
+2\. Descargue el binario para nodo más reciente para Core Testnet desde el GitHub de Core [repositorio de lanzamientos](https://github.com/coredao-org/core-chain/releases/latest). El binario del nodo incluye los archivos de configuración de testnet relevantes. Descargue el último snapshot para testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). _Tenga en cuenta que el método recomendado para sincronizar el nodo en testnet es sincronizar desde el bloque génesis_.
 
-3\. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
+3\. Escriba el estado génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
 ```bash
 geth --datadir node init genesis.json
@@ -65,11 +65,11 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 
 4\. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo!
 
-Si planea ejecutar un nodo normal, puede ejecutar el siguiente comando `geth` directamente:
+Si planeas ejecutar un nodo normal, puedes introducir el siguiente comando de `geth` directamente:
 
 ```bash
-## iniciar un nodo completo
+## start a full node
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-5\. A medida que se ejecuta nuestro nodo completo, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de registro se encuentra en `/node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
+5\. A medida que se ejecuta nuestro nodo completo, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de registros se encuentra en `/node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo deseas.

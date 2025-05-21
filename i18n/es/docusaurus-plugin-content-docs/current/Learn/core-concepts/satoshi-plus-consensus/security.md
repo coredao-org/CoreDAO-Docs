@@ -1,42 +1,13 @@
 ---
-sidebar_label: Seguridad
+sidebar_label: Modelo de seguridad
 hide_table_of_contents: false
 sidebar_position: 2
 description: Conozca el modelo de seguridad de Core
 ---
 
-# Seguridad Core
+# Modelo de seguridad de Core
 
 ---
-
-## Descripción general
-
-Core, como cadena de bloques EVM alineada con Bitcoin, aprovecha el mecanismo de consenso de Satoshi Plus para mantener una combinación óptima de seguridad, descentralización y escalabilidad. Este enfoque aprovecha las características de seguridad intrínsecas de Bitcoin al tiempo que permite una sólida funcionalidad de contrato inteligente y la integración de DeFi, lo que la convierte en una plataforma pionera en el espacio blockchain.
-
-## Componentes de seguridad
-
-### 1. Prueba de trabajo delegada (DPoW) y prueba de participación delegada (DPoS)
-
-Core incorpora estos dos poderosos mecanismos para formar un entorno blockchain equilibrado y seguro. El DPoW amplía el modelo de seguridad probado de Bitcoin al permitir a los mineros delegar el poder de hash al Core, beneficiándose así de la inmensa tasa de hash y el pedigrí de seguridad de Bitcoin. Por otro lado, DPoS permite que tanto BTC (a través de apuestas sin custodia) como los titulares de tokens CORE apuesten sus activos con validadores en la red Core, promoviendo la gobernanza descentralizada de la red y capas de seguridad adicionales.
-
-### 2. Seguridad del validador
-
-Los validadores son fundamentales para mantener la integridad y seguridad de la cadena de bloques Core. Se seleccionan en función del peso combinado de los tokens apostados (CORE y BTC) y el poder de hash delegado, de modo que solo los nodos más confiables y respaldados manejen el proceso de consenso. Este sistema de soporte dual mitiga el riesgo de centralización y violaciones de seguridad.
-
-### 3. Seguridad a través de incentivos
-
-El mecanismo Satoshi Plus incentiva tanto a los mineros como a los apostadores (CORE y BTC) al proporcionar recompensas en tokens CORE, alineando sus intereses con la longevidad e integridad de la red. Este incentivo económico ayuda a mantener un nivel de participación sólido, crucial para mantener una red segura y descentralizada.
-
-## Protocolos e implementaciones de seguridad
-
-1. **Validación sólida de transacciones**
-   Los validadores principales son responsables de verificar las transacciones y crear nuevos bloques. La combinación única de DPoW, DPoS y Stake BTC sin custodia involucra a muchas partes interesadas y un capital significativo en la elección de validadores, lo que incentiva en gran medida la elección de validadores confiables y la participación honesta de esos validadores.
-
-2. **Resiliencia de la red contra ataques**
-   La integración del poder hash de Bitcoin con las apuestas de CORE y BTC hace que Core sea excepcionalmente resistente contra varios tipos de ataques. El alto costo de atacar un sistema híbrido de este tipo, combinado con el consenso distribuido logrado a través de mecanismos delegados, mejora significativamente la seguridad de la red.
-
-3. **Actualización y flexibilidad**
-   A diferencia de las cadenas de bloques tradicionales que se basan únicamente en una única forma de consenso, el modelo híbrido de Core permite adaptabilidad y actualización. Esta flexibilidad está diseñada para permitir que la red evolucione en respuesta a amenazas de seguridad emergentes o avances en la tecnología blockchain.
 
 ## Vectores de ataque y medidas de seguridad en el ecosistema central
 
@@ -84,12 +55,12 @@ Core emplea una arquitectura de seguridad sólida para mitigar amenazas potencia
   - **Requisitos de amplio consenso:** Las propuestas requieren un amplio consenso entre un conjunto diverso de partes interesadas, minimizando el riesgo de que un grupo pequeño y concentrado pueda afectar unilateralmente los cambios.
   - **Proceso transparente de propuesta y votación:** Todas las acciones de gobernanza se registran de forma transparente en la cadena de bloques, lo que facilita la trazabilidad y la rendición de cuentas.
 
-### Vulnerabilidades de los smart contratos
+### Vulnerabilidades de los contratos inteligentes
 
 - **Descripción:** Las vulnerabilidades en el código de contrato inteligente pueden aprovecharse para realizar robos o manipular servicios.
-- **Mitigación lograda por:**
+- **Mitigation Achieved By:**
   - **Auditorías de código y revisiones de seguridad:** Las auditorías periódicas y exhaustivas del código de contrato inteligente realizadas por empresas de seguridad independientes ayudan a identificar y rectificar posibles vulnerabilidades.
-  - **Programas de recompensas por errores:** Alentar a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente ofreciendo recompensas por su descubrimiento.
+  - **Reporte de errores:** Alentando a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente.
 
 ## Conclusión
 

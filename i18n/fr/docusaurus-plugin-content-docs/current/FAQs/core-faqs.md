@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# FAQ sur la Core blockchain
+# FAQ sur Core
 
 ---
 
@@ -12,7 +12,7 @@ sidebar_position: 2
 
 La Fondation Core encourage le développement de projets open source et, par conséquent, tous les dépôts de code de Core sont accessibles à la communauté. Vous pouvez trouver le code source de Core blockchain et d'autres outils pour développeurs sur le [compte GitHub officiel de Core](https://github.com/coredao-org).
 
-### 2. Quels sont les canaux de communication officiels de Core blockchain ?
+### 2. Quels sont les canaux de communication officiels ?
 
 - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
 - **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
@@ -28,7 +28,7 @@ Core est conçu pour les créateurs, offrant une plateforme robuste où les dive
 
 ### 4. Comment connecter MetaMask au réseau Core ?
 
-Suivez notre guide détaillé pour connecter votre portefeuille MetaMask au [Testnet](../Dev-Guide/core-testnet-wallet-config.md)et [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md) de Core.
+Suivez notre guide détaillé pour connecter votre portefeuille MetaMask au [Testnet](../Dev-Guide/core-wallet-config.md)et [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md) de Core.
 
 ### 5. Quel rôle joue le token CORE dans la sécurisation du réseau Core ?
 
@@ -45,10 +45,10 @@ Sur le réseau Core, le slashing et l'emprisonnement sont des mécanismes pour p
 Slashing fait référence à la réduction des récompenses d'un validateur pour le minage de blocs ou de ses tokens CORE stakés. La gravité de la sanction est proportionnelle à la mauvaise conduite du validateur.
 
 - **Échec de Production de Blocs Pendant Son Tour Désigné**
-  - Si un nœud validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont entièrement coupées.
-  - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
+    - Si un nœud validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont entièrement coupées.
+    - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
 - **Pénalité pour Double Signature**
-  - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
+    - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
 
 ### 8. Quel mécanisme de consensus utilise le réseau Core et comment prévient-il les attaques ?
 
@@ -72,7 +72,7 @@ Vous pouvez contribuer à la communauté Core de plusieurs manières :
 
 - **Contribuer à notre documentation officielle :** Envoyez une PR avec vos modifications sur le dépôt GitHub de notre documentation officielle. Notre équipe les examinera et, si elles sont correctes, elles seront intégrées.
 - **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. La Core Foundation a dressé une liste de catégories de projets que les créateurs peuvent développer pour contribuer à la croissance de l'écosystème Core.
-- **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la blockchain Core. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), ou le [programme d'incitation pour les créateurs Core Ignition](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core blockchain.
+- **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la blockchain Core. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), ou le [programme d'incitation pour les créateurs Core Ignition](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core Chain.
 - **Programme d’engagement de Core :** La Core Foundation offre un programme d’accélération de 3 mois pour les projets en phase initiale. Le [Programme d'egagement de Core](https://coredao.org/initiatives/commit-program) fournit non seulement des ressources et un mentorat personnalisé 1:1 avec les plus grands experts du Web3, mais il offre aussi la possibilité de bénéficier de récompenses mensuelles basées sur les performances et d’un financement de la part de Core Ventures et de son réseau de plus de 100 VCs.
 
 ### 13. Core propose-t-elle des subventions ou des programmes pour les créateurs ?

@@ -10,12 +10,12 @@ sidebar_position: 2
 
 ## Introducción
 
-El Staking Líquido con stCORE mejora la utilidad del token CORE mientras simplifica el proceso de staking. Esta guía proporciona un recorrido detallado para acuñar y canjear stCORE, una herramienta valiosa para los poseedores de tokens CORE que buscan maximizar el potencial de sus activos.
+Liquid Staking with stCORE enhances CORE token utility while streamlining the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, enabling token holders to maximize capital efficiency while participating in network security.
 
 ## Empezando: Requisitos Previos
 
 1. **Verificar Disponibilidad de Tokens CORE:** Verifica que tu billetera de Core contenga la cantidad necesaria de tokens CORE para hacer staking.
-2. **Acceder a la Plataforma de Staking:** [Visita la Plataforma de Staking Líquido de Core](https://stake.coredao.org/stcore)
+2. **Acceder a la Plataforma de Staking:** [Visita la Plataforma de Staking Líquido de Core](https://stake.coredao.org/liquid-staking/stcore)
 3. **Conectar la Billetera:** Conecta tu billetera a la plataforma.
 
 ## Definiciones Claves

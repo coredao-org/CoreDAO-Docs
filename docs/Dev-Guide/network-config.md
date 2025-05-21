@@ -4,12 +4,13 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Core Network Configurations
 
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},

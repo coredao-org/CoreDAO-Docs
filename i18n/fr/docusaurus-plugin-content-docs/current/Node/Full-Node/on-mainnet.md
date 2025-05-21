@@ -18,7 +18,7 @@ Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Co
 Ce document fournit des lignes directrices détaillées sur l'exécution des nœuds complets normaux sur le réseau Core.
 :::
 
-## Requis Systèmes
+## Configuration système requise pour les nœuds complets sur le réseau Core
 
 Il existe plusieurs exigences système pour configurer un nœud complet sur Core.
 
@@ -39,17 +39,17 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
 
 ## Construction et exécution d'un nœud complet sur le Mainnet de Core
 
-1\. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-Vous devriez voir le message suivant :
+Vous devriez voir le message suivant:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -63,7 +63,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Notre nœud complet est prêt, lançons-le !
+4. Notre nœud complet est prêt, lançons-le !
 
 Si vous prévoyez d'exécuter un nœud normal, exécutez simplement la commande `geth` suivante :
 
@@ -72,4 +72,4 @@ Si vous prévoyez d'exécuter un nœud normal, exécutez simplement la commande 
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-5\. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.

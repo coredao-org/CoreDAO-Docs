@@ -1,10 +1,13 @@
 ---
-sidebar_label: Configuration des Nœuds Snapshot
+sidebar_label: Nœud de snapshot
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Configuration des Nœuds Snapshot
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Nœuds de snapshot sur Core
 
 ---
 
@@ -16,33 +19,55 @@ Il y a plusieurs requis systèmes, à la fois logicielles et matérielles, pour 
 
 ### Logiciel
 
-- Actuellement, un nœud snapshot Core ne peut fonctionner que sur **Mac OS X** ou les systèmes d'exploitation **Linux**.
+- **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
+- **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité.
+- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
 
 ### Matériel
 
-Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain.
+Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état de la blockchain, permettant une synchronisation plus rapide des nœuds et réduisant les besoins en stockage. Ces nœuds aident les nouveaux validateurs et les nœuds RPC à se mettre rapidement à jour avec l'état le plus récent de la blockchain sans avoir à traiter toute l'historique. Les nœuds de snapshot améliorent l'efficacité et l'accessibilité du réseau. Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain. Voici les recommandations matérielles minimales pour exécuter un nœud de snapshot sur Core  Ces spécifications sont conçues pour gérer les processus de test et de validation tout en garantissant un stockage et une synchronisation efficaces des données.
 
-#### Spécifications Matérielles pour les Nœuds Snapshot du Testnet
+<Tabs
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-Pour les nœuds snapshot sur le Testnet de la blockchain Core, nous recommandons les spécifications matérielles minimales suivantes :
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | 4 cœurs CPU                                                                   |
-| RAM              | 16 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+  </TabItem>
+  <TabItem value="testnet">
+    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
 
-#### Spécifications Matérielles pour les Nœuds Snapshot du Mainnet
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
-Pour les nœuds snapshot sur le **Mainnet de la blockchain Core**, nous recommandons les spécifications matérielles minimales suivantes :
+  </TabItem>
+  <TabItem value="mainnet">
+    For Snapshot Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
 
-| Requis           | Détails                                                                       |
-| ---------------- | ----------------------------------------------------------------------------- |
-| Stockage         | Disque SSD avec une capacité minimale de 4 To                                 |
-| CPU              | 4 cœurs CPU                                                                   |
-| RAM              | 16 Go                                                                         |
-| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+  </TabItem>
+</Tabs>
+
 
 ## Snapshots du réseau Core
 
@@ -115,9 +140,9 @@ Assurez-vous d'utiliser la version de geth que vous avez téléchargée avec wge
 :::
 
 :::tip
-It is recommended to run a fast node, which is a full node with the flag --tries-verify-mode none set if you want high performance and care little about state consistency.
+It is recommended to run a fast node, which is a full node with the flag `--tries-verify-mode` none set if you want high performance and care little about state consistency.
 
-./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none
+`./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none`
 :::
 
 ### Surveiller l'État du Nœud
@@ -133,4 +158,3 @@ Il existe deux modes de synchronisation pour exécuter un nœud complet : **snap
 - **Full sync mode :** Ce mode exécute tous les blocs depuis le genesis. **Il n'est pas recommandé**, car la quantité de données historiques est trop volumineuse. Il est préférable de télécharger un snapshot a partir du [repertoire officiel](https://github.com/coredao-org/core-snapshots) et de démarrer la synchronisation complète à partir de celui-ci.
 
 - Si l'option **--syncmode** n'est pas fournie, le mode de synchronisation par défaut dépendra de l'état du dossier de données. Cela sera en mode **snap** si vous synchronisez à partir du genesis, ou en mode **full** si vous démarrez à partir d'un snapshot.
-  2

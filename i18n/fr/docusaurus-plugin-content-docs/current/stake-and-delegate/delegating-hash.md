@@ -4,13 +4,15 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Délégation de Hashage
+# Délégation de la Puissance de Hachage
 
 ---
 
 En utilisant leurs clés publiques et privées, les mineurs de BTC peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains BTC et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur BTC avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage BTC associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau BTC pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant leur puissance de hachage BTC aux validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et à partager les récompenses du système.
 
-![delegate-hash](../../../../../static/img/delegate/miner-power-relaying.png)
+<p align="center">
+![delegate-hash](../../../../../static/img/staoshi-plus/DPoW.png)
+</p>
 
 ## Processus d'installation pour les mineurs
 
@@ -36,11 +38,11 @@ Voici une brève description de chaque élément :
 
 Pour illustrer, supposons que l'adresse du Validateur soit :
 
-- &#x20`0x0a53b7e0ffd97357e444b85f4d683c1d8e22879a`&#x20
+- &#x20;`0x0a53b7e0ffd97357e444b85f4d683c1d8e22879a`&#x20;
 
 Et l'adresse de récompense soit :
 
-- &#x20`0xBD13F9435f8B327C222d1D1930C17ea6719e8a33` &#x20
+- &#x20;`0xBD13F9435f8B327C222d1D1930C17ea6719e8a33` &#x20;
 
 En combinant le préfixe constant `OP_RETURN + LENGTH + CORE + VERSION`, le préfixe pour cette chaîne d'octets (et n'importe quel autre) serait `0x6a2d434f5245010`.
 

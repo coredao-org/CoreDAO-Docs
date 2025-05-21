@@ -48,7 +48,7 @@ The act of delegators rebalancing their delegation to maximize reward is the dri
 
 ### 7\. Is there any risk of losing your Bitcoin assets during dual staking?
 
-Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview), allowing users to maintain full control over their assets. Throughout the staking process, Bitcoin remains securely in the user’s wallet.  Stakers face no slashing risk, external smart contract risk, or counterparty risk. The trust assumptions for staking Bitcoin are the same trust assumptions underlying holding Bitcoin.
+Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview.md), allowing users to maintain full control over their assets. Throughout the staking process, Bitcoin remains securely in the user’s wallet.  Stakers face no slashing risk, external smart contract risk, or counterparty risk. The trust assumptions for staking Bitcoin are the same trust assumptions underlying holding Bitcoin.
 
 ### 8\. While Bitcoin is timelocked, can users unstake CORE that’s dual staked with Bitcoin? If so, do they lose any rewards earned prior to unstaking CORE?
 

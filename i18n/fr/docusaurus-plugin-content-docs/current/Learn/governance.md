@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Gouvernance sur la Blockchain Core
+# Governance on Core
 
 ---
 
@@ -15,23 +15,23 @@ Le système de gouvernance de Core est conçu pour maintenir la décentralisatio
 La gouvernance de la blockchain Core est conçue pour évoluer au fil du temps, avec une approche par étapes qui commence par une centralisation nécessaire pour établir le réseau et transfère progressivement le contrôle à la communauté au fur et à mesure de sa croissance et de sa stabilisation.
 
 - **Étape 1 : Gouvernance hors chaîne**
-  - Les propositions et décisions sont prises hors chaîne via les Core Improvement Proposals (CIPs).
-  - Les membres de la communauté, quelle que soit la taille de leur participation, peuvent soumettre des propositions.
-  - Un vote majoritaire détermine l'issue de chaque proposition, avec une période de vote de sept jours pour permettre la participation de la communauté.
+    - Les propositions et décisions sont prises hors chaîne via les Core Improvement Proposals (CIPs).
+    - Les membres de la communauté, quelle que soit la taille de leur participation, peuvent soumettre des propositions.
+    - Un vote majoritaire détermine l'issue de chaque proposition, avec une période de vote de sept jours pour permettre la participation de la communauté.
 
 - **Étape 1.5 : Modèle Hybride Actuel**
-  - Représente un point intermédiaire entre la gouvernance hors chaîne et l'objectif d'une gouvernance partielle sur chaîne.
-  - Cette phase permet d'apprendre, d'ajuster et de poser les bases pour intégrer davantage d'éléments sur chaîne dans le processus de gouvernance.
+    - Représente un point intermédiaire entre la gouvernance hors chaîne et l'objectif d'une gouvernance partielle sur chaîne.
+    - Cette phase permet d'apprendre, d'ajuster et de poser les bases pour intégrer davantage d'éléments sur chaîne dans le processus de gouvernance.
 
 - **Étape 2 : Gouvernance Partielle sur Chaîne (Prochainement)**
-  - Cette phase introduira la possibilité de modifier des paramètres fixes directement par le biais d'un vote sur chaîne.
-  - Le 'paramètre m', qui régit certaines variables économiques, est déjà sous contrôle communautaire.
-  - D'autres paramètres, comme le pourcentage des frais brûlés (actuellement fixé à 0 %), seront soumis à la gouvernance sur chaîne.
-  - Des discussions sont en cours pour mettre en place des délais de vote afin d'atténuer la vente de votes et d'autres préoccupations similaires.
+    - Cette phase introduira la possibilité de modifier des paramètres fixes directement par le biais d'un vote sur chaîne.
+    - Le 'paramètre m', qui régit certaines variables économiques, est déjà sous contrôle communautaire.
+    - D'autres paramètres, comme le pourcentage des frais brûlés (actuellement fixé à 0 %), seront soumis à la gouvernance sur chaîne.
+    - Des discussions sont en cours pour mettre en place des délais de vote afin d'atténuer la vente de votes et d'autres préoccupations similaires.
 
 - **Étape 3 : Gouvernance Complète sur Chaîne (Objectif)**
-  - Les détails de cette étape sont en cours de développement avec la participation active de la communauté.
-  - Les plans incluent des mécanismes tels que l'exigence de fournir des garanties pour soumettre des propositions, ainsi les auteurs de proposition ont un intérêt direct dans la santé et la longévité du réseau.
+    - Les détails de cette étape sont en cours de développement avec la participation active de la communauté.
+    - Les plans incluent des mécanismes tels que l'exigence de fournir des garanties pour soumettre des propositions, ainsi les auteurs de proposition ont un intérêt direct dans la santé et la longévité du réseau.
 
 ## État Actuel de la Gouvernance
 

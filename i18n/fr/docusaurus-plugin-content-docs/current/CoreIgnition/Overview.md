@@ -8,11 +8,11 @@ sidebar_position: 2
 
 ---
 
-La Saison 2 de Core Ignition est un programme d'incitation utilisateur de six mois conçu pour reconnaître la communauté Core pour ses précieuses contributions au réseau Core. Grâce à Core Ignition, les utilisateurs ont l'opportunité de contribuer de manière significative à l'écosystème BTCfi en évolution tout en étant récompensés pour divers engagements et activités, visibles sur le tableau de bord Ignition après s'être connectés et avoir effectué le pont vers Core Ignition avec succès.
+La Saison 3 de Core Ignition est un programme d'incitation utilisateur de six mois conçu pour récompenser la communauté Core pour ses précieuses contributions au réseau Core. Grâce à Core Ignition, les utilisateurs ont l'opportunité de contribuer de manière significative à l'écosystème BTCfi en évolution tout en étant récompensés pour divers engagements et activités, visibles sur le tableau de bord Ignition après s'être connectés et avoir effectué le pont vers Core Ignition avec succès.
 
 ## Période du Programme
 
-La durée du programme d'incitation utilisateur de Core Ignition est de six mois, du 12 septembre 2024 à 00:00 UTC au 11 mars 2025 à 23:59 UTC.
+La durée du programme d'incitation utilisateur de Core Ignition est de six mois, du 12 mars 2025 12:00 UTC au 12 septembre 2025 à 11:59 UTC.
 
 ## Éligibilité
 
@@ -33,7 +33,7 @@ En participant au programme d'incitation utilisateur de Core Ignition, les utili
 1. Visitez [le site web de Core Ignition](https://ignition.coredao.org).
 
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/1b3b3ddf-ce84-485b-badb-8ed65235ab58"/>
+  <img width="500" alt="S3_hero" src="https://github.com/user-attachments/assets/4e038aae-a522-4004-97af-da536b6ecdfe"/>
 </p>
 
 2. Cliquez sur "Ajouter le Réseau Core" pour ajouter Core Blockchain au réseau du portefeuille.
@@ -53,7 +53,7 @@ En participant au programme d'incitation utilisateur de Core Ignition, les utili
 6. Lisez et acceptez les Termes & Conditions et la Politique de Confidentialité.
 
 <p align="center">
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/92cf2ec7-df22-4d53-8c4c-f39891b34096"/>
+  <img width="500" alt="S3 T C" src="https://github.com/user-attachments/assets/1b460bb5-2992-409c-a4d4-45ec5a1dd7f5"/>
 </p>
 
 7. Cliquez sur "Connecter le Portefeuille" pour connecter un portefeuille Web3 Core compatible.

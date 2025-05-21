@@ -4,12 +4,12 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Connect to Core Testnet
 
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 :::note
 This is a detailed guideline for connecting to Core Testnet/Mainnet using the MetaMask wallet.

@@ -1,16 +1,18 @@
 ---
-sidebar_label: Delegación de tasa de hash
+sidebar_label: Delegando poder de hasheo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegación de tasa de hash
+# Delegando poder de hasheo
 
 ---
 
 Usando sus claves públicas y privadas, los mineros de BTC pueden delegar su poder de hash a un validador Core o delegarlo a sí mismos si eligen ejecutar un validador verificando y sincronizando su identidad (direcciones) tanto en la cadena de bloques BTC como en la Core. Cuando los retransmisores envían transacciones, sincronizan los bloques extraídos por el minero BTC con la Core Network. En cada ronda, la red Core calcula el poder de hash BTC asociado con cada validador contando la cantidad de bloques producidos por cada minero en la red BTC durante el mismo día de la semana anterior. La arquitectura de la comunicación de la cadena de mapeo se ilustra en el siguiente diagrama. La arquitectura de la comunicación de la cadena de mapeo se ilustra en el siguiente diagrama.
 
-![delegate-hash](../../../../../static/img/delegate/miner-power-relaying.png)
+<p align="center">
+![delegate-hash](../../../../../static/img/staoshi-plus/DPoW.png)
+</p>
 
 ## Proceso de configuración para mineros
 
@@ -36,11 +38,11 @@ Aquí hay una breve descripción de lo que pertenece a cada lugar:
 
 Para ilustrar, supongamos que la dirección del Validador es:
 
-- &#x20`0x0a53b7e0ffd97357e444b85f4d683c1d8e22879a`&#x20
+- &#x20;`0x0a53b7e0ffd97357e444b85f4d683c1d8e22879a`&#x20;
 
 Y la dirección de recompensa es:
 
-- &#x20`0xBD13F9435f8B327C222d1D1930C17ea6719e8a33` &#x20
+- &#x20;`0xBD13F9435f8B327C222d1D1930C17ea6719e8a33` &#x20;
 
 Combinando la constante `OP_RETURN + LENGTH + CORE + VERSION`, vemos que el prefijo para esta (y cualquier otra) cadena de bytes será `0x6a2d434f5245010`.
 
