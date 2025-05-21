@@ -4,6 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Registro de validador
 
 ---
@@ -14,56 +17,9 @@ Antes de correr un nodo validador en Core, recomendamos encarecidamente leer él
 
 ## Configurar un nodo completo en modo validador
 
-Antes de que puedas registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo Validador. Sigue esta [guia](./running-validator.md) para configurar y correr un nodo validador. Tu nodo completo necesita sincronizarse con la red Core, lo que significa que debe descargar los datos de la cadena de bloques y mantenerse actualizado con los bloques más recientes.
+Before you can register as a validator, you need to set up and run a full node in validator mode following the guide [here](./setting-up-validator.md).
 
-### Genera la "Llave de consenso"
-
-Al inicializar un nodo validador, necesitas generar una Dirección de Consenso (Dirección Pública) para la llave. Esta dirección será utilizada por tu nodo para las operaciones de consenso.
-
-#### Generando la "Llave de consenso"
-
-Para crear una nueva clave de consenso, usa el siguiente comando. Este comando creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (dirección de consenso).
-
-```bash
-./build/bin/geth account new --datadir ./node
-```
-
-##### Notas importantes
-
-- **Asegura tu archivo de keystore y contraseña:** Guarda de manera segura tu archivo de keystore y la contraseña, ya que los necesitarás más adelante.
-- **Haz una copia de seguridad de tu clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
-
-Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de manera segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
-
-```bash
-echo {your-password} > password.txt
-```
-
-### Inicia el nodo validador
-
-Una vez que tengas la clave de consenso, puedes iniciar el nodo validador con el siguiente comando:
-
-```bash
-./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
-```
-
-Desglosemos las banderas utilizadas en este comando:
-
-- **`config ./config.toml`:** Especifica el archivo de configuración para el nodo. Asegúrate de tener la configuración correcta en `config.toml` para tu entorno.
-
-- **`datadir ./node`:** Indica el directorio de datos para el nodo.
-
-- **`unlock {your-validator-address}`:** Desbloquea la cuenta de validador utilizando la dirección generada en el paso anterior.
-
-- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Típicamente, esta sería la dirección de tu validador.
-
-- **`password password.txt`:** La contraseña para desbloquear la cuenta de tu validador (asegúrate de mantener este archivo seguro).
-
-- **`mine`:** Comienza el proceso de minería (validación de bloques).
-
-- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (úsalo con precaución).
-
-- **`cache 8000`:** Asigna una gran caché (8 GB en este caso) para mejorar el rendimiento.
+Make sure your validator node is up and running.
 
 ## Registra tu validador
 
@@ -98,7 +54,7 @@ Después de enviar tu formulario de registro, puedes verificar si el registro fu
 
 ### Revisando los registros
 
-Abre el archivo de registro de tu nodo y busca el mensaje de error "unauthorized validator". Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
+Open your node’s log file and search for the error message `unauthorized validator`. Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-2.avif)
 
@@ -135,6 +91,35 @@ El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar
 Puedes monitorear el estado de tu validador y su historial de producción de bloques en [Core Scan](https://scan.coredao.org/). Esta herramienta te permite rastrear si tu nodo está produciendo bloques exitosamente y funcionando correctamente.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-4.webp)
+
+## Setting Validator Name
+
+You may assign a human-readable name to your validator node using the Core Staking UI. This name serves as a label for delegators and network participants to identify your validator in the interface.
+
+### Steps to Set or Update Your Validator Name
+
+1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators).
+2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
+3. **Open Validator Details:** Click on your validator to open the Validator Details page.
+4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+</p>
+
+4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+</p>
+
+5. **Sign Validator Ownership Message:** Click Sign to verify ownership of your validator address by signing the displayed message.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
+</p>
+
+6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
 
 ## Manteniendo tu nodo validador
 
