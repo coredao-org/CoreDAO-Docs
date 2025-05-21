@@ -1,11 +1,11 @@
 ---
-sidebar_label: Setup Validator Node
+sidebar_label: Exécution d'un Validator Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer Tabs depuis '@theme/Tabs';
+importer TabItem depuis '@theme/TabItem';
 
 # Setting Up Validator Nodes on Core
 
