@@ -49,7 +49,7 @@ L'action des délégataires de rééquilibrer leur délégation pour maximiser l
 
 ### 7\. Y a-t-il un risque de perdre vos actifs Bitcoin pendant le Dual Staking ?
 
-Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview), allowing users to maintain full control over their assets. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
+Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview.md), allowing users to maintain full control over their assets. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
 
 ### 8\. Alors que le Bitcoin est verrouillé dans le temps, les utilisateurs peuvent-ils unstaker le CORE qui est dual staké avec le Bitcoin ? Si oui, perdent-ils les récompenses gagnées avant de unstaker le CORE ?
 
