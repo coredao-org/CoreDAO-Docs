@@ -4,6 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Enregistrement des Validateurs
 
 ---
@@ -14,61 +17,9 @@ Avant de devenir validateur sur Core, nous vous recommandons vivement de lire le
 
 ## Configurer un nœud complet en mode validateur
 
-Prérequis pour devenir validateur : Avant de vous enregistrer en tant que validateur, vous devez configurer et exécuter un nœud complet en mode validateur. Consultez ce guide(./running-validator.md) pour configurer et exécuter un nœud validateur Synchronisation du nœud complet : Votre nœud complet doit se synchroniser avec le réseau Core en téléchargeant les données de la blockchain et en restant à jour avec les derniers blocs.
+Before you can register as a validator, you need to set up and run a full node in validator mode following the guide [here](./setting-up-validator.md).
 
-### Générer la clé de consensus
-
-Lors de l'initialisation d'un nœud validateur, générez une adresse de consensus (adresse publique) associée à la clé de consensus. L'adresse de consensus générée sera utilisée par votre nœud pour les opérations de consensus, notamment pour la validation des blocs et la participation au processus de consensus sur la blockchain.
-
-#### Générer une nouvelle clé de consensus
-
-Exécutez la commande spécifique fournie pour générer une nouvelle clé de consensus Lorsque vous exécutez la commande, un nouveau compte sera créé et une adresse sera générée. Cette adresse servira d'adresse de validation (adresse de consensus) pour votre nœud validateur.
-
-```bash
-./build/bin/geth account new --datadir ./node
-```
-
-##### Notes importantes
-
-- Sécurisez votre keystore et mot de passe :
-    Stockez votre fichier keystore et votre mot de passe dans un endroit sûr et sécurisé, car vous en aurez besoin ultérieurement pour accéder à votre compte et effectuer des opérations de validation.
-- Sauvegardez votre clé :
-    Il est crucial de sauvegarder votre clé de consensus pour éviter toute perte d'accès à votre nœud validateur. Si vous perdez cette clé, vous perdrez définitivement le contrôle de votre validateur.
-
-Création d'un mot de passe :
-Lorsque vous générez la clé, vous serez invité à entrer un mot de passe pour sécuriser l'accès à votre keystore. Sécurisation du mot de passe :
-Le mot de passe défini sera nécessaire pour déverrouiller votre validateur. Stockez-le dans un endroit hautement sécurisé pour éviter tout accès non autorisé et assurez-vous de le sauvegarder correctement. Enregistrer le mot de passe dans un fichier texte :
-Pour sauvegarder votre mot de passe de manière sécurisée, vous pouvez l'enregistrer dans un fichier texte en utilisant la commande suivante :
-
-```bash
-echo {your-password} > password.txt
-```
-
-### Démarrer le nœud de validation
-
-Après avoir généré la clé de consensus, vous pouvez démarrer votre nœud validateur en utilisant la commande suivante :
-
-```bash
-./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
-```
-
-Analysons les flags utilisés dans cette commande pour comprendre leur rôle et configuration spécifique pour votre nœud validateur.:
-
-- config ./config.toml : Spécifie le fichier de configuration pour le nœud. Assurez-vous que les paramètres dans le fichier config.toml sont correctement configurés pour votre environnement spécifique.
-
-- datadir ./node : Indique le répertoire de données pour le nœud
-
-- unlock {your-validator-address} : Déverrouille le compte validateur en utilisant l'adresse générée à l'étape précédente.
-
-- miner.etherbase {your-validator-address} : Spécifie l'adresse qui recevra les récompenses de minage et les récompenses de bloc. Il s'agit généralement de l'adresse de votre validateur.
-
-- password password.txt : Le mot de passe pour déverrouiller votre compte de validateur (assurez-vous que ce fichier est conservé de manière sécurisée).
-
-- mine : Démarre le processus de minage (validation de blocs)
-
-- allow-insecure-unlock : Autorise le processus de déverrouillage sans mesures de sécurité supplémentaires (à utiliser avec prudence).
-
-- cache 8000 : Alloue un grand cache (8 Go dans ce cas) pour améliorer les performances.
+Make sure your validator node is up and running.
 
 ## Enregistrer votre validateur
 
@@ -103,7 +54,7 @@ Après avoir soumis le formulaire d'inscription, vous pouvez vérifier si l'insc
 
 ### Vérification des journaux
 
-Ouvrez le fichier journal de votre nœud et recherchez le message d'erreur "unauthorized validator." Si ce message apparaît, cela signifie que votre nœud est enregistré mais n'a pas encore été élu dans l'ensemble des validateurs.
+Open your node’s log file and search for the error message `unauthorized validator`. Si ce message apparaît, cela signifie que votre nœud est enregistré mais n'a pas encore été élu dans l'ensemble des validateurs.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-2.avif)
 
@@ -140,6 +91,35 @@ Le statut du validateur est mis à jour quotidiennement à 00h00 UTC. Vous pouve
 Vous pouvez surveiller l'état de votre validateur et son historique de production de blocs sur [Core Scan].(https://scan.coredao.org/). Cet outil vous permet de suivre si votre nœud produit des blocs avec succès et fonctionne bien.
 
 ![validator-register-form](../../../static/img/validator/register/validator-register-4.webp)
+
+## Setting Validator Name
+
+You may assign a human-readable name to your validator node using the Core Staking UI. This name serves as a label for delegators and network participants to identify your validator in the interface.
+
+### Steps to Set or Update Your Validator Name
+
+1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators).
+2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
+3. **Open Validator Details:** Click on your validator to open the Validator Details page.
+4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+</p>
+
+4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+</p>
+
+5. **Sign Validator Ownership Message:** Click Sign to verify ownership of your validator address by signing the displayed message.
+
+<p align="center">
+![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
+</p>
+
+6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
 
 ## Maintenance de votre nœud de validation
 
