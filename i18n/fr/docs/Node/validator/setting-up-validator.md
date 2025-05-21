@@ -7,11 +7,11 @@ sidebar_position: 2
 importer Tabs depuis '@theme/Tabs';
 importer TabItem depuis '@theme/TabItem';
 
-# Setting Up Validator Nodes on Core
+# Exécution de nœuds de validation sur Core
 
 ---
 
-This guide walks you through the process of setting up a validator node on the Core Network. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
+Ce guide vous guide à travers le processus de configuration d'un nœud validateur sur le réseau Core. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
 
 ### System Requirements for Validator Node
 
