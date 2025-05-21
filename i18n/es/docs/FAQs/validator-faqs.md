@@ -14,7 +14,7 @@ En el ecosistema Core, "validador" se refiere a nodos o participantes en la red 
 
 ### 5. ¿Cómo se recompensa a los validadores en el ecosistema Core Chain?
 
-- 1. Para registrarse como validador en Core, debe ejecutar un nodo completo en modo validador. Lea las guías sobre [configurar nodos de validación](../Node/config/validator-node-config) y [ejecutar nodos de validación](../Node/validator/running-validator) para obtener información sobre cómo configurar esto. .
+- 1. Para registrarse como validador en Core, debe ejecutar un nodo completo en modo validador. Please read the guides on [validator nodes requirements](../Node/config/validator-node-config.md) and [setting up validator nodes](../Node/validator/setting-up-validator.md) for information on how to set this up.
   2. Una vez terminado, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de apuestas:
     1. [Mainnet stake website](https://stake.coredao.org)
     2. [Testnet stake website](https://stake.test.btcs.network)
