@@ -4,12 +4,12 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Explorador de cadena de bloques de Core Scan
 
 ---
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede buscar información sobre los bloques que se han agregado a la cadena de bloques, las transacciones que se han producido en la cadena de bloques, los saldos de la billetera y la información sobre tCORE y los tokens CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
 
