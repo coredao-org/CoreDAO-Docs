@@ -14,7 +14,7 @@ Dans l'écosystème de Core, un "validateur" fait référence aux nœuds ou part
 
 ### 2. Comment devenir un validateur ?
 
-- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config) et l'[exécution des nœuds validateurs](../Node/validator/running-validator) pour obtenir des informations sur la configuration.
+- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Please read the guides on [validator nodes requirements](../Node/config/validator-node-config.md) and [setting up validator nodes](../Node/validator/setting-up-validator.md) for information on how to set this up.
   2. Ensuite, le moyen le plus simple d'enregistrer un nouveau validateur est d'utiliser l'un de nos sites Web de staking :
     1. [Site de staking pour le Mainnet](https://stake.coredao.org)
     2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
