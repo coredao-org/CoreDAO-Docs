@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introduction
 
-[Le Staking de Bitcoin Non-Custodial](https://docs.coredao.org/docs/Learn/products/btc-staking/overview) a été intégré à la blockchain Core en avril 2024, permettant aux utilisateurs de staker du Bitcoin et de gagner des rendements tout en conservant le contrôle total de leurs actifs.
+[Self-Custodial Bitcoin Staking](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining custody of their assets.
 
 Pour maximiser le potentiel de rendement du staking de Bitcoin, Core propose le Dual Staking - un mécanisme qui débloque des niveaux de récompense plus élevés en participant simultanément au staking de Bitcoin avec verrouillage temporel et au staking de jetons CORE.
 Étant donné que les émissions quotidiennes de Core suivent un calendrier fixe, les participants qui mettent en jeu des CORE en plus de leur Bitcoin reçoivent des récompenses nettement plus élevées que ceux qui mettent en jeu uniquement du Bitcoin. L'augmentation du pourcentage de rendement est déterminée par la quantité de jetons CORE mis en jeu par rapport à la valeur du Bitcoin, avec des seuils définis correspondant à des niveaux croissants de récompenses de staking.
@@ -28,11 +28,11 @@ En alignant les récompenses de staking Bitcoin sur les niveaux de staking de je
 
 ## Comment fonctionne le Dual Staking ?
 
-Le Dual Staking n'altère pas le processus de staking pour le Bitcoin et le CORE. Pour plus d'informations sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.coredao.org/docs/Learn/products/btc-staking/overview). Consultez également ce [guide](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) détaillé sur la délégation de CORE et le [staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide)/la [récupération](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide) de BTC.
+Le Dual Staking n'altère pas le processus de staking pour le Bitcoin et le CORE. For more information on how Self-Custodial Bitcoin Staking works, refer [here](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md). Also, consult this detailed [guidebook](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) on delegating CORE and [staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md)/[redeeming](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide.md) BTC.
 
 Le Dual Staking crée une opportunité de débloquer des rendements plus élevés lorsque le Bitcoin et le CORE sont stakés simultanément, avec des seuils de staking de CORE variables correspondant à différents niveaux de boost de rendement sur les récompenses de staking de Bitcoin sur la blockchain Core.
 
-Les détenteurs de Bitcoin peuvent [staker leur Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide) via le staking de Bitcoin Non-Custodial de Core pour accumuler des récompenses en CORE. En [stakant ensuite leurs tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core) à différents seuils de Dual Staking, les utilisateurs débloquent des niveaux supérieurs de rendements en Bitcoin, payés en CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'impacte pas le rendement généré par le staking de CORE lui-même.
+Bitcoin holders can [stake their Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md) through Core's Self-Custodial Bitcoin Staking to accumulate CORE rewards. By subsequently [staking their CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) tokens at different Dual Staking thresholds, users unlock higher tiers of Bitcoin yields, paid in CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'impacte pas le rendement généré par le staking de CORE lui-même.
 
 Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
 
