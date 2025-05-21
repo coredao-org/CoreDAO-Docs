@@ -27,11 +27,11 @@ Chaque validateur peut fixer son propre taux de commission(**commission rate**),
 
 Core n'implémente pas d'auto-ajout (**not implement self-bonding**). Les validateurs ne sont pas tenus de miser des CORE sur eux-mêmes pour participer. Ils ne gagnent des commissions que si d'autres participants délèguent des fonds vers eux. Si un validateur mise sur son propre validateur, il reçoit des récompenses comme n'importe quel délégateur régulier - et non en tant que commission.
 
-Les récompenses de base sont distribuées lorsque le dernier bloc du tour(round) est confirmé. Currently, **90%** of total base rewards are allocated to validators, while the remaining **10%** is sent to the `System Reward Contract`. Of the 90% allocated to validators, each validator receives rewards proportional to the number of blocks they produce. In the long term, all stable validators are expected to receive approximately equal shares, since block production is uniformly distributed.
+Les récompenses de base sont distribuées lorsque le dernier bloc du tour(round) est confirmé. Actuellement,**90%** du total des récompenses de base sont alloués aux validateurs, tandis que les **10%** restants sont envoyés au Contrat de Récompense du Système. Des 90% alloués aux validateurs, chaque validateur reçoit des récompenses proportionnelles au nombre de blocs qu'ils produisent. À long terme, tous les validateurs stables devraient recevoir des parts approximativement égales, puisque la production de blocs est uniformément répartie.
 
-Transaction fees follow the same distribution logic. **90%** of total transaction fees collected during the round are distributed to validators. Validators may apply their commission rate to this amount before distributing the remaining rewards to their delegators. The remaining **10%** of fees is deposited into the `System Reward Contract`.
+Les frais de transaction suivent la même logique de distribution. **90%** du total des frais de transaction collectés pendant le tour sont distribués aux validateurs. Les validateurs peuvent appliquer leur taux de commission à ce montant avant de distribuer les récompenses restantes à leurs délégateurs. Les **10%** restants des frais sont déposés dans le Contrat de Récompense Système.
 
-Validators share rewards with delegators who staked CORE, delegated BTC, or contributed hash power. While commission rates are flexible, validators are incentivized to offer competitive rates in order to attract more delegation and strengthen their hybrid score.
+Les validateurs partagent les récompenses avec les délégateurs qui ont misé du CORE, délégué du BTC ou contribué à la puissance de hachage. Bien que les taux de commission soient flexibles, les validateurs sont incités à offrir des taux compétitifs afin d'attirer davantage de délégation et de renforcer leur score hybride.
 
 Commission fees are paid directly to each validator’s designated fee address at the end of every round.
 
