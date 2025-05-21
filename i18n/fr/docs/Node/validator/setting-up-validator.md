@@ -11,17 +11,17 @@ importer TabItem depuis '@theme/TabItem';
 
 ---
 
-Ce guide vous guide à travers le processus de configuration d'un nœud validateur sur le réseau Core. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
+Ce guide vous guide à travers le processus de configuration d'un nœud validateur sur le réseau Core. Il couvre l'installation des dépendances système, la construction du logiciel de nœud Core, l'initialisation avec des données de snapshot et le démarrage de votre nœud validateur.
 
-### System Requirements for Validator Node
+### Exigences système pour le Validator Node
 
-Before you begin, please ensure your system meets the required hardware and software specifications.
+Avant de commencer, assurez-vous que votre système répond aux spécifications matérielles et logicielles requises.
 
-#### Supported OS Platforms
+#### Plateformes de système d'exploitation prises en charge
 
-Currently, the supported OS platforms include Mac OS X and Linux.
+. Actuellement, les plateformes de système d'exploitation prises en charge incluent Mac OS X et Linux.
 
-#### Hardware Requirements
+#### Exigences matérielles
 
 <Tabs
 defaultValue="testnet2"
@@ -30,18 +30,18 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Validator Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds de validation sur le réseau de test **Core Blockchain Testnet2**, les spécifications matérielles minimales suivantes sont recommandées :
 
-    | Requirements   | Details                                                                                                 |  
+    | Exigences.   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
+    | **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Un minimum de 4 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                |
 
   </TabItem>
   <TabItem value="testnet">
-    For Validator Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+Pour les nœuds de validation sur le **Core Blockchain Testnet**, les spécifications matérielles minimales suivantes sont recommandées :
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
