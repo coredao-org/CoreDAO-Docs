@@ -55,14 +55,14 @@ Ambos hacen seguimiento de contribuciones valiosas de usuarios, pero se enfocan 
 
 En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Participación sostenible, y no solo actividad a corto plazo o liquidez temporal, es lo que se considera al reconocer la contribución de los usuarios en Ignition.
 
-### ¿Cuál es la diferencia entre wrapping y swapping en Core Ingition?
+### 8. ¿Cuál es la diferencia entre wrapping y swapping en Core Ingition?
 
 Wrapping significa convertir un token en su versión envuelta, por ejemplo, transformar CORE en wCORE para usarlo en dApps. Swapping, en cambio, implica cambiar un token por un activo diferente, como intercambiar CORE por USDT.
 
 > Ejemplo:
 >
-> - CORE → wCORE is wrapping, not swapping. This is simply converting CORE into its wrapped version for use in dApps.
-> - CORE → USDT is considered a swap, as it involves exchanging CORE for a different asset.
-> - wCORE → USDT is also considered a swap, exchanging wCORE for a different token.
+> - CORE → wCORE es un wrapping, no un swapping. Esto simplemente es convertir CORE en su versión envuelta para utilizarla en dApps.
+> - CORE → USDT se considera un swap, ya que implica cambiar CORE por un activo diferente.
+> - wCORE → USDT también se considera un swap, ya que se está cambiando wCORE por otro token distinto.
 
 
