@@ -84,5 +84,5 @@ Pour empêcher que votre sous-graphe soit écrasé par d'autres, veuillez nous c
 
 Si vous testez le Core TestNet Graph, voici les tokens d'accès à usage général :
 
-- **General key for Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
+- **Clé générale pour Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
 - **Clé générale pour Core Testnet2:** b020b95e511443699e72a10c697f84c0
