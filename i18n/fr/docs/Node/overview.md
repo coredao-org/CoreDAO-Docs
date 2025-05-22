@@ -1,5 +1,5 @@
 ---
-sidebar_label: Types of Nodes
+sidebar_label: "Types de nœuds: Il existe différents types de nœuds"
 hide_table_of_contents: false
 sidebar_position: 2
 ---
