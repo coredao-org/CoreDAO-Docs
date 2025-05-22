@@ -43,70 +43,70 @@ Pour les nœuds de validation sur le réseau de test **Core Blockchain Testnet2*
   <TabItem value="testnet">
 Pour les nœuds de validation sur le **Core Blockchain Testnet**, les spécifications matérielles minimales suivantes sont recommandées :
 
-    | Requirements   | Details                                                                                                 |  
+    |Exigences   | Détails                                                                                                  |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
+    | **Stockage**          | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Un minimum de 4 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                     |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                   |
 
   </TabItem>
   <TabItem value="mainnet">
-   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+Pour les nœuds de validation sur **Core Blockchain Mainnet**, les spécifications matérielles minimales suivantes sont recommandées:
 
-    | Requirements   | Details                                                                                                 |  
+    | Exigences   | Détails                                                                                                   |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
+    |**Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Internet Speed** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                  |
 
   </TabItem>
 </Tabs>
 
-### Clone the Core Blockchain Codebase
+### Cloner le code de base de la Core Blockchain
 
-It is recommend to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your validator node, i.e., running your validator node directly from Core blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+Il est recommandé d'utiliser le référentiel GitHub [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud de validation, c'est-à-dire exécuter votre nœud de validation directement à partir de la base de code de la blockchain Core. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
 cd core-chain
 ```
 
-#### Install Depedencies
+#### Installer les dépendances
 
-After cloning the repo, next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
+Après avoir cloné le dépôt, l'étape suivante consiste à installer toutes les dépendances nécessaires pour construire le binaire geth (Go Ethereum). Exécutez la commande suivante pour installer les dépendances:
 
 ```bash
 make geth
 ```
 
-This will download and install the necessary dependencies and build the `geth` binary. The `geth` binary will be located at `./build/bin/geth`.
+Cela téléchargera et installera les dépendances nécessaires et construira le binaire 'geth'. Le binaire `geth` sera situé à `./build/bin/geth`.
 
-### Setting up the Node
+### Configuration du nœud
 
-There are 2 approaches to setup a validator node from scratch on the Core blockchain:
+Il existe 2 approches pour configurer un nœud validateur à partir de zéro sur la Core blockchain:
 
-- **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
-- **From Genesis (Not Recommend):** sync the whole Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
+- **By Snapshot (Recommend):** téléchargez le dernier instantané de la Core blockchain (https://github.com/coredao-org/core-snapshots)et synchronisez le nœud en fonction de celui-ci.
+- **From Genesis (Not Recommend):** synchronisez l'ensemble des données de la Core blockchain à partir du [bloc Genesis] (https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
-Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
+La synchronisation à partir du bloc Genesis peut prendre un temps considérable. Il est recommandé de configurer un nœud Core en utilisant le dernier instantané pour accélérer le processus.
 :::
 
-#### Steps to Running Validator Node Using Snapshot
+#### Étapes pour exécuter un nœud validateur en utilisant un 'Snapshot'
 
-1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
+1. **Téléchargez les derniers binaires pré-construits:** Téléchargez les derniers binaires de nœud à partir du référentiel officiel des versions de Core (https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Genesis and Configuration Files:** The pre-build binaries contains `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
+2. **Fichiers de Genesis et de configuration:** Les binaires pré-construits contiennent `genesis.json` et `config.toml` pour le réseau respectif sur lequel vous souhaitez exécuter le nœud validateur. Assurez-vous que ces fichiers sont correctement placés dans le répertoire de configuration de votre nœud avant de poursuivre la configuration.
 
-3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
+3. **Initialiser Genesis:** Écrivez l'état de genesis localement en exécutant la commande suivante à partir de votre répertoire de projet. Assurez-vous que le chemin vers le fichier `genesis.json` est correct. Dans ce cas, `genesis.json` signifie que le fichier `genesis.json` est situé dans le même répertoire, qui devrait être le répertoire racine (core-chain) de votre nœud.
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-You should see the following output:
+Vous devriez voir le message suivant:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
