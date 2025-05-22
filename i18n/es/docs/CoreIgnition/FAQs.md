@@ -46,14 +46,14 @@ El programa de incentivos Core Ignition recompensa a los usuarios leales para fo
 - Lee [nuevas publicaciones en el blog](https://coredao.org/explore/blog)
 - Únete a los canales de la comunidad Core - [Discord](https://discord.com/invite/coredaoofficial) y [Telegram](https://t.me/CoreDAOTelegram) para discusiones y actualizaciones regulares.
 
-### 7. What’s the difference between the Leaderboard and the Activity Leaderboard?
+### 7. ¿Cuál es la diferencia entre el Leaderboard y la Activity Leaderboard?
 
-Both track valuable user contributions but focus on different aspects:
+Ambos hacen seguimiento de contribuciones valiosas de usuarios, pero se enfocan en aspectos diferentes:
 
-- Activity Leaderboard highlights how actively a user engages with Core, based on transaction count and volume.
-- Overall Leaderboard considers not only user activity but also asset holdings and participation in dApps like lending, borrowing, and liquidity provision.
+- El Activity Leaderboard muestra el grado de participación de un usuario con Core, basándose en el recuento y el volumen de transacciones.
+- Overall Leaderboard tiene en cuenta no solo la actividad de los usuarios, sino también la tenencia de activos y la participación en dApps como préstamos, empréstitos y provisión de liquidez.
 
-In both cases, long-term support for the Core ecosystem is valued. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contribution in Ignition.
+En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contribution in Ignition.
 
 ### 8. What’s the difference between wrapping and swapping on Core Ignition?
 
