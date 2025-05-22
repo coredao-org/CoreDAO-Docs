@@ -39,9 +39,9 @@ El balance de dApp Ignition refleja los activos que el usuario ha depositado den
 
 ### Activos Permitidos
 
-A list of token assets eligible for earning Sparks on Core Ignition. Refer to the [How to Boost Multipliers](#how-to-boost-multipliers) section for the full list.
+Una lista de tokens elegibles para ganar Sparks en Core Ignition. Consulta la sección [Cómo Aumentar Multiplicadores](#how-to-boost-multipliers) para ver la lista completa.
 
-### Whitelisted dApps
+### dApps Permitidas
 
 A list of decentralized applications where user interactions contribute to earning Sparks on Core Ignition. Visit the '[Explore dApps](https://ignition.coredao.org/dashboard?tab=explore)' tab on the Ignition Dashboard for full details.
 
