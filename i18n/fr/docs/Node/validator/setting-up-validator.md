@@ -170,25 +170,25 @@ Analysons les 'flags' utilisés dans cette commande:
 
 #### Synchronisation depuis la Genesis
 
-If you prefer to sync your validator node from the genesis block instead of using a snapshot:
+Si vous préférez synchroniser votre nœud validateur à partir du bloc de genèse plutôt que d'utiliser un instantané(snapshot):
 
-- Skip Step #4 ("Download and extract the latest snapshot") in the setup instructions.
+- Ignorez l'étape #4 ("Télécharger et extraire le dernier instantané") dans les instructions de configuration.
 
-- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as normal.
+- Après avoir terminé les étapes 1 (Téléchargement des binaires), 2 (Fichiers de genèse/config) et 3 (Initialisation de la genèse), continuez à générer votre clé de consensus comme d'habitude.
 
-- Then start the validator node using the command below:
+- Ensuite, démarrez le nœud validateur en utilisant la commande ci-dessous:
 
   ```bash
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-⚠️ **Note:** Syncing from genesis can take a lot of time depending on system resources and network speed.
+⚠️ **Note:** La synchronisation depuis la genèse peut prendre beaucoup de temps en fonction des ressources système et de la vitesse du réseau.
 
-## Monitor Logs
+## Surveiller les journaux
 
-Once your validator node is up and running, it’s important to monitor the logs to ensure everything is operating smoothly.
+Une fois que votre nœud de validation est opérationnel, il est important de surveiller les journaux pour garantir que tout fonctionne correctement.
 
-The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
+Les journaux sont généralement stockés dans `./node/logs/core.log`, mais peuvent être configurés pour être enregistrés à un autre emplacement si nécessaire. Vous pouvez afficher et suivre les journaux en temps réel en utilisant la commande suivante:
 
 ```bash
 # Tail the logs in real-time
@@ -197,33 +197,33 @@ The logs are typically stored by default in `./node/logs/core.log`, but can be c
 tail -f ./node/logs/core.log
 ```
 
-These logs typically show that the node is importing new chain segments on the blockchain indicating that it’s correctly receiving and processing blocks.
+Ces journaux indiquent généralement que le nœud importe de nouveaux segments de chaîne sur la blockchain, ce qui signifie qu'il reçoit et traite correctement les blocs.
 
-- **Imported new chain segment:** This means the node is successfully receiving new blocks from the network and adding them to the local blockchain.
+- **Importé un nouveau segment de chaîne:**" signifie "Le nœud importe avec succès de nouveaux blocs du réseau et les ajoute à la blockchain locale.
 
-- **number:** The block number (e.g., `1,596,730` is the block number for that entry).
+- **number:** Le numéro de bloc (par exemple,`1,596,730`est le numéro de bloc pour cette entrée).
 
-- **hash:** The unique identifier (hash) for the block, like a fingerprint of the block data (e.g., `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
+- **hash:** L'identifiant unique (hash) du bloc, tel qu'une empreinte digitale des données du bloc (par exemple, 0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c).
 
-- **miner:** The address of the miner who mined that block.
+- **miner:** L'adresse du mineur qui a extrait ce bloc.
 
-- **blocks:** The number of blocks imported (usually `1` in these logs).
+- **blocks:** Le nombre de blocs importés (généralement `1` dans ces journaux).
 
-- **txs:** The number of transactions in the block (e.g., `1` tx or `2` txs).
+- **txs:** Le nombre de transactions dans le bloc (par exemple, `1` tx or `2` txs).
 
-- **mgas:** The gas used in the transactions within the block. Gas is the computational work needed to execute transactions (e.g., `0.021` means 0.021 million gas).
+- **mgas:** La quantité de gaz utilisée dans les transactions au sein du bloc. Le gaz est le travail de calcul nécessaire pour exécuter les transactions.(e.g., `0.021` means 0.021 million gas).
 
-- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
+- **elapsed:** Le temps nécessaire pour importer le bloc, en millisecondes (e.g., `3.003ms`).
 
-- **mgasps:** The speed at which gas is being processed (in million gas per second).
+- **mgasps:** La vitesse à laquelle le gaz est traité (en millions de gaz par seconde).
 
-- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
+- **triedirty:** La quantité de mémoire "sale" utilisée (dans ce cas, environ `869.67 KiB`), qui indique la quantité de mémoire utilisée temporairement pour stocker les données de bloc.
 
-- **Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are essential to synchronize the blockchain with the network.
+- **Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nœuds pour se connecter. Les connexions 'peer-to-peer' permettent de synchroniser la blockchain avec le réseau, en échangeant des informations et des données entre les nœuds.
 
-- **peercount:** The current number of peers the node is connected to (e.g., `2`).
+- **peercount:** Le nombre actuel de pairs auxquels le nœud est connecté (e.g., `2`).
 
-- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
+- **tried:** Le nombre de peers que le nœud a tenté de se connecter (e.g., `12`).
 
 - **static:** Le nombre de pairs fixes/statiques que le nœud est configuré pour se connecter (e.g., `2`).
 
