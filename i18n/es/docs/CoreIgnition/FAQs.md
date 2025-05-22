@@ -53,13 +53,13 @@ Ambos hacen seguimiento de contribuciones valiosas de usuarios, pero se enfocan 
 - El Activity Leaderboard muestra el grado de participación de un usuario con Core, basándose en el recuento y el volumen de transacciones.
 - Overall Leaderboard tiene en cuenta no solo la actividad de los usuarios, sino también la tenencia de activos y la participación en dApps como préstamos, empréstitos y provisión de liquidez.
 
-En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contribution in Ignition.
+En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Participación sostenible, y no solo actividad a corto plazo o liquidez temporal, es lo que se considera al reconocer la contribución de los usuarios en Ignition.
 
-### 8. What’s the difference between wrapping and swapping on Core Ignition?
+### ¿Cuál es la diferencia entre wrapping y swapping en Core Ingition?
 
-Wrapping means converting a token into its wrapped version, for example, turning CORE into wCORE for use in dApps. Swapping, on the other hand, involves exchanging one token for a different asset, such as swapping CORE for USDT.
+Wrapping significa convertir un token en su versión envuelta, por ejemplo, transformar CORE en wCORE para usarlo en dApps. Swapping, en cambio, implica cambiar un token por un activo diferente, como intercambiar CORE por USDT.
 
-> Example:
+> Ejemplo:
 >
 > - CORE → wCORE is wrapping, not swapping. This is simply converting CORE into its wrapped version for use in dApps.
 > - CORE → USDT is considered a swap, as it involves exchanging CORE for a different asset.
