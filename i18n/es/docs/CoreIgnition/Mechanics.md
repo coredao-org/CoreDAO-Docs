@@ -51,19 +51,19 @@ Pools de liquidez de una dApp DEX permitida que incluyen al menos un token permi
 
 ---
 
-## Core Ignition Leaderboard
+## Leaderboard de Core Ingnition
 
 ### 1. Leaderboard
 
-Ranks users based on a combination of assets & dApp engagments, transaction count, and transaction volume, rewarding overall contribution to the ecosystem.
+Clasifica a los usuarios en función de una combinación de activos e interacciones con dApps, número de transacciones y volumen de transacciones, recompensando su contribución general al ecosistema.
 
 <p align="center">
   <img width="900" alt="Screenshot 2025-05-12 at 8 51 44 PM" src="https://github.com/user-attachments/assets/39d78e16-e6a1-4787-b0f3-14d4dfb1f112" />
 </p>
 
-### 2. Activity Leaderboard
+### 2. Leaderboard de Actividad
 
-Ranks users by transaction count and volume, rewarding both frequent activity and high-value moves. Designed to give everyday users fair recognition through Spark Boosts, regardless of wallet size.
+Clasifica a los usuarios según la cantidad y el volumen de transacciones, recompensando tanto la actividad frecuente como las operaciones de alto valor. Está diseñada para dar un reconocimiento justo a los usuarios cotidianos mediante Spark Boosts, independientemente del tamaño de su wallet.
 
 <p align="center">
   <img width="900" alt="Screenshot 2025-05-12 at 8 52 02 PM" src="https://github.com/user-attachments/assets/674c4743-7299-4d75-877f-823621182cc6" />
@@ -81,15 +81,15 @@ La cantidad y tipo de activos permitidos que los usuarios transfieren a Core se 
 **2. Actividades con dApps del Ecosistema de Core:**\
 Los usuarios también pueden ganar Sparks interactuando con las dApps permitidas en Core Ignition. Cada actividad en la cadena con estas dApps contribuirá con puntos Spark a la cuenta del usuario. Más detalles se actualizarán pronto.
 
-| Transaction Type              | Sparks per Transaction | Maximum Sparks per Day |
-| ----------------------------- | ---------------------- | ---------------------- |
-| Provisión de Liquidez         | 800                    | 8,000                  |
-| Préstamo                      | 400                    | 12,000                 |
-| Préstamo                      | 200                    | 4,000                  |
-| Swapping                      | 100                    | 3,000                  |
-| Interacting with Gaming dApps | 50                     | 1,000                  |
-| Others                        | 50                     | 2,000                  |
-| Coretoshi NFT, Doopidoo       | 200                    | Unlimited              |
+| Tipo de Transacción             | Sparks por Transacción | Máximo de Sparks por Día |
+| ------------------------------- | ---------------------- | ------------------------ |
+| Provisión de Liquidez           | 800                    | 8,000                    |
+| Solicitar préstamos             | 400                    | 12,000                   |
+| Otorgar préstamos               | 200                    | 4,000                    |
+| Swapping                        | 100                    | 3,000                    |
+| Interacción con dApps de Gaming | 50                     | 1,000                    |
+| Otros                           | 50                     | 2,000                    |
+| Coretoshi NFT, Doopidoo         | 200                    | Ilimitado                |
 
 **3. Campañas Participadas:**\
 Core Ignition contará con campañas flash o de tiempo limitado, ofreciendo a los usuarios oportunidades especiales para potenciar Sparks. Manténgase conectado revisando las secciones de campaña dentro de la aplicación y siguiendo los anuncios oficiales de Core en [X (Twitter)](https://x.com/Coredao_Org) para las últimas actualizaciones.
@@ -101,51 +101,50 @@ Si eres nuevo en Core Ignition, transfiere activos de la lista de permitidos por
 
 ## Cómo Aumentar Multiplicadores
 
-Los multiplicadores son variables dinámicas que multiplican los puntos Spark. The consolidated multiplier displayed on the user's dashboard reflects the total multiplier currently applying to the entire asset of the user. This total multiplier is calculated by averaging out the multipliers distributed across the assets. There are two types of baseline multipliers that affect Sparks points through specific activities, independent of any special campaigns:
+Los multiplicadores son variables dinámicas que multiplican los puntos Spark. El multiplicador consolidado que se muestra en el panel del usuario refleja el multiplicador total que se aplica actualmente al conjunto de activos del usuario. Este multiplicador total se calcula promediando los multiplicadores distribuidos entre los distintos activos. Existen dos tipos de multiplicadores base que afectan los puntos Spark mediante actividades específicas, independientemente de cualquier campaña especial:
 
-- **Token Multipliers**: These increase points earned based on token-related activities and holdings.
-- **Volume Multipliers**: These amplify points earned through volume-related activities.
+- **Multiplicadores por Token**: Aumentan los puntos obtenidos con base en actividades relacionadas con los tokens y su tenencia.
+- **Multiplicadores por Volumen**: Amplifican los puntos ganados a través de actividades basadas en el volumen de transacciones.
 
 <p align="center">
   <img width="500" alt="image" src="https://github.com/user-attachments/assets/4f7ceee6-6a93-4cce-a382-5e6002ce2819"/>
 </p>
 
-### 1. Token Multipliers
+### 1. Multiplicadores por Token
 
-Users can benefit from baseline token multipliers for whitelisted assets held in their wallets or deposited into various dApps. Different whitelisted tokens are associated with specific multipliers, which vary depending on the type of activity performed with these dApps, as detailed below:
+Los usuarios pueden beneficiarse de multiplicadores base por token para los activos permitidos que tengan en sus wallets o que hayan depositado en diversas dApps. Los distintos tokens permitidos están asociados a multiplicadores específicos, los cuales varían según el tipo de actividad realizada con estas dApps, como se detalla a continuación:
 
-| Whitelisted Assets                                                          | Activos en Billetera | Lending              | Borrowing            | Liquidity Provision  |
-| --------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | -------------------- |
-| stCORE, CLND, dualCORE                                                      | 1x                   | 2.5x | 3x                   | 3.5x |
-| USDT,USDC                                                                   | 1x                   | 1.5x | 2x                   | 3x                   |
-| CORE, WCORE                                                                 | 1x                   | 1.5x | 2x                   | 2.5x |
-| wETH, solvBTC.CORE                                          | n/a                  | 1.4x | 1.6x | 1.8x |
-| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                  | 1.2x | 1.4x | 1.6x |
-| BTC.B, SolvBTC.b, SolvBTC.m | n/a                  | 1x                   | 1.2x | 1.6x |
+| Activos Permitidos                                                          | Activos en Billetera | Otorgar préstamos    | Solicitar préstamos  | Provisión de Liquidez |
+| --------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
+| stCORE, CLND, dualCORE                                                      | 1x                   | 2.5x | 3x                   | 3.5x  |
+| USDT,USDC                                                                   | 1x                   | 1.5x | 2x                   | 3x                    |
+| CORE, WCORE                                                                 | 1x                   | 1.5x | 2x                   | 2.5x  |
+| wETH, solvBTC.CORE                                          | n/a                  | 1.4x | 1.6x | 1.8x  |
+| aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                  | 1.2x | 1.4x | 1.6x  |
+| BTC.B, SolvBTC.b, SolvBTC.m | n/a                  | 1x                   | 1.2x | 1.6x  |
 
-> _**Example 1:**_
-> If the user holds 10 stCORE in Ignition wallet balance, the user gets:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 10 stCORE \* $1.5 (assumed) \* 1 = 15
+> **Ejemplo 1:** Si el usuario mantiene 10 stCORE en el saldo de su wallet de Ignition, obtiene:
+> Sparks Diarios por Activo = cantidad de stCORE \* precio de stCORE \* Multiplicador
+> \= 10 stCORE \* $1.5 (supuesto) \* 1 = 15
 
-> _**Example 2:**_
-> If the user lends 20 stCORE in a Lending Protocol, the user get:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 20 stCORE \* $1.5(assumed) \* 2.5 = 75
+> Ejemplo 2: Si el usuario presta 20 stCORE en un protocolo de préstamos, obtiene:
+> Sparks Diarios por Activo = cantidad de stCORE \* precio de stCORE \* Multiplicador
+> \= 20 stCORE \* $1.5 (supuesto) \* 2.5 = 75
 
-### 2. Volume Multipliers
+### 2. Multiplicadores por Volumen
 
-Users who interact with [whitelisted pools](#whitelisted-pools) receive multipliers based on the USD equivalent of their trading volume per day. The multiplier value increases progressively as trading volume grows, with different multiplier values applied according to specific volume thresholds as below:
+Los usuarios que interactúan con [pools permitidos](#whitelisted-pools) reciben multiplicadores basados en el equivalente en USD de su volumen de volumen de operaciones por día. El valor del multiplicador aumenta progresivamente a medida que crece el volumen de transacciones, aplicándose distintos valores según los siguientes rangos:
 
-| Volume Range                        | Multipliers          |
+| Rango de Volumen                    | Multiplicador        |
 | ----------------------------------- | -------------------- |
 | $0 ~ > $100         | 1x                   |
 | $100 ~ > $1,000     | 1.5x |
 | $1,000 ~ > $10,000  | 2x                   |
 | $10,000 ~ > $50,000 | 2.5x |
-| $50,000 & above | 3x                   |
+| $50,000 en adelante                 | 3x                   |
 
-> _**Example Calculation:**_
-> If a user trades the equivalent of $51,000 in volume a day, the user will receive:\
-> Daily Volume Sparks: (51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x = 122,450
+> **Ejemplo de Cálculo:**
+> Si un usuario realiza operaciones por un volumen diario equivalente a $51,000, recibirá: Sparks Diarios por Volumen = (51,000 – 50,000) \* 3x + (50,000 – 10,000) \* 2.5x + (10,000 – 1,000) \* 2x + (1,000 – 100) \* 1.5x + 100 \* 1x = 122,450 Sparks
 
 Descubra oportunidades específicas de multiplicadores en la sección Explorar dApps:
 
