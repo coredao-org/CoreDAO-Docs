@@ -156,47 +156,46 @@ Además de mantener tokens estratégicos y desplegar activos en varias dApps, lo
 
 ---
 
-## Coretoshi NFT Holders
+## Tenedores de Coretoshi NFT
 
 With the new Coretoshi Attribution layer, Coretoshi NFT holders now enjoy extra benefits:
 
-1. 200 additional Sparks per transaction with [no limit](#activities-with-core-ecosystem-dapp);
-2. 1.5x extra Sparks Multiplier automatically applied on top of users' existing Volume Multiplier.
+1. 200 Sparks adicionales por transacción, [sin límite](#activities-with-core-ecosystem-dapp).
+2. Multiplicador adicional de 1.5x aplicado automáticamente sobre el multiplicador de Volumen que el usuario ya tenga.
 
-> _**Example Calculation:**_
-> If a Coretoshi holder trades the equivalent of $51,000 in volume a day, this holder will receive:\
-> Daily Volume Sparks: 1.5x \* [(51,000 - 50,000) \* 3x + (50,000 -10,000) \* 2.5x + (10,000-1,000) \* 2x + (1,000-100) 1.5x + 100 \* 1x]  = 183,675
+> Ejemplo de Cálculo:
+> Si un tenedor de Coretoshi realiza operaciones por un volumen diario equivalente a $51,000, recibirá: Sparks Diarios por Volumen = 1.5x \* [(51,000 – 50,000) \* 3x + (50,000 – 10,000) \* 2.5x + (10,000 – 1,000) \* 2x + (1,000 – 100) \* 1.5x + 100 \* 1x] = 183,675 Sparks
 
 <p align="center">
   <img width="500" alt="Coretoshi_Attribution" src="https://github.com/user-attachments/assets/14619a45-9244-433a-89b5-195e7fa10dc0" />
 </p>
 
-Visit the [blog](https://coredao.org/explore/blog/coretoshi-nft-sparks-multiplier-core-ignition-rewards) for more details and updates for new benefits.
+Visita el [blog](https://coredao.org/explore/blog/coretoshi-nft-sparks-multiplier-core-ignition-rewards) para obtener más detalles y actualizaciones sobre nuevos beneficios.
 
 ---
 
-## Sparks Slashing
+## Slashing de Sparks
 
-Sparks Slashing ensures fair rewards by reducing Sparks for users who become inactive. Users are warned if their activity drops significantly, and Sparks are only slashed after repeated violations, but any new activity stops slashing immediately.
+El Slashing de Sparks garantiza recompensas justas al disminuir los Sparks de los usuarios que se vuelven inactivos. Se advierte a los usuarios si su actividad cae significativamente, y los Sparks solo se reducen tras infracciones repetidas. Sin embargo, cualquier nueva actividad detiene la reducción de inmediato.
 
-### 1. Slashing mechanism:
+### 1. Mecanismo de Slashing:
 
-- Inactive users lose Sparks: If a user earns 90% fewer Sparks than their average for a week, Sparks are slashed starting on the 2nd violation.
-- Slashing increases over time.
-- Users receive warnings before the slashing occurs.
-- Slashing Mechanism kicks in 1-month after sign-up.
-- Slashing calculation happens every Sunday.
+- Usuarios inactivos pierden Sparks: si un usuario gana un 90 % menos Sparks que su promedio semanal, la reducción se aplica a partir de la segunda infracción.
+- La reducción aumenta con el tiempo.
+- Los usuarios reciben advertencias antes de que se aplique la reducción.
+- El Mecanismo de Slashing entra en vigor un mes después del registro.
+- El cálculo de la reducción se realiza cada domingo.
 
-### 2. Violation criteria:
+### 2. Criterio de Infracción:
 
-If the average daily Sparks for that week < Average daily sparks for the season \* 10%
+Si el promedio diario de Sparks de la semana < Promedio diario de Sparks de la temporada \* 10%.
 
-### 3. Slashing criteria:
+### 3. Criterio de Slashing:
 
-- Total accumulated Sparks  \* (0.9^# of violation - 1)
-- 1st violation: Total Sparks \* 0.9^0 = NO slashing
-- 2nd violation: total sparks \* 0.9^1 = 10% slashing
-- 3rd violation: total sparks \* 0.9^2 = 19% slashing
+- Sparks acumulados totales × (0.9^# de infracción– 1)
+- 1.ª infracción: Sparks totales × 0.9^0 = SIN reducción
+- 2.ª infracción: Sparks totales × 0.9^1 = Reducción del 10 %
+- 3.ª infracción: Sparks totales × 0.9^2 = Reducción del 19 %
 
 > _**Example Calculation:**_\
 > Assuming that a user got 50,000 total Sparks at the start of season 3 and no Sparks since then:
