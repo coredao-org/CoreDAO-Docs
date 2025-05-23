@@ -43,11 +43,11 @@ Una lista de tokens elegibles para ganar Sparks en Core Ignition. Consulta la se
 
 ### dApps Permitidas
 
-A list of decentralized applications where user interactions contribute to earning Sparks on Core Ignition. Visit the '[Explore dApps](https://ignition.coredao.org/dashboard?tab=explore)' tab on the Ignition Dashboard for full details.
+Una lista de aplicaciones descentralizadas donde las interacciones de los usuarios contribuyen a ganar Sparks en Core Ignition. Visita la pestaña '[Explorar dApps](https://ignition.coredao.org/dashboard?tab=explore)' en el panel de Ignition para ver todos los detalles.
 
-### Whitelisted Pools
+### Pools Permitidos
 
-Liquidity pools from a whitelisted DEX dApp that includes at least one whitelisted token, qualifying for Sparks on Core Ignition.
+Pools de liquidez de una dApp DEX permitida que incluyen al menos un token permitido, y que califican para Sparks en Core Ignition.
 
 ---
 
