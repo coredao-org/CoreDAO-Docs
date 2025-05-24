@@ -158,7 +158,7 @@ Además de mantener tokens estratégicos y desplegar activos en varias dApps, lo
 
 ## Tenedores de Coretoshi NFT
 
-With the new Coretoshi Attribution layer, Coretoshi NFT holders now enjoy extra benefits:
+Con la nueva Coretoshi Attribution layer, los poseedores de NFTs Coretoshi ahora disfrutan de beneficios adicionales:
 
 1. 200 Sparks adicionales por transacción, [sin límite](#activities-with-core-ecosystem-dapp).
 2. Multiplicador adicional de 1.5x aplicado automáticamente sobre el multiplicador de Volumen que el usuario ya tenga.
@@ -197,12 +197,12 @@ Si el promedio diario de Sparks de la semana < Promedio diario de Sparks de la t
 - 2.ª infracción: Sparks totales × 0.9^1 = Reducción del 10 %
 - 3.ª infracción: Sparks totales × 0.9^2 = Reducción del 19 %
 
-> _**Example Calculation:**_\
-> Assuming that a user got 50,000 total Sparks at the start of season 3 and no Sparks since then:
+> **Ejemplo de cálculo:**
+> Suponiendo que un usuario obtuvo 50,000 Sparks acumulados al inicio de la temporada 3 y no ha ganado más Sparks desde entonces:
 >
-> - 1st violation: NO slashing
-> - 2nd violation: 50,000 - 50,000 \* (0.9 ^1) = 5,000 Sparks are deducted
-> - 3rd violation: 45000 - 45000\*(0.9^2) = 8,550 Sparks are deducted
-> - 4th violation: 36,450 -36,450\*(0.9^3) = 9,878 Sparks are deducted
+> - 1.ª infracción: SIN reducción
+> - 2.ª infracción: 50,000 – 50,000 \* (0.9^1) = se descuentan 5,000 Sparks
+> - 3.ª infracción: 45,000 – 45,000 \* (0.9^2) = se descuentan 8,550 Sparks
+> - 4.ª infracción: 36,450 – 36,450 \* (0.9^3) = se descuentan 9,878 Sparks
 
-Visit the [blog](https://coredao.org/explore/blog/core-ignition-season-3-updates) for more details.
+Visita el [blog](https://coredao.org/explore/blog/core-ignition-season-3-updates) para más detalles.
