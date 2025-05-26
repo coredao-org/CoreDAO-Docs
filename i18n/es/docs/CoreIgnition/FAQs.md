@@ -25,7 +25,7 @@ Para los nuevos usuarios de la blockchain Core, aquí hay información esencial:
     - Si los usuarios transfieren al menos 10 USDT a Core, califican para el Core Faucet.
     - Este Faucet deposita automáticamente algunos CORE en la billetera del usuario.
 3. El proceso funciona de la siguiente manera:
-    - Primero, los fondos se transfieren (mínimo 10 USDT) a la blockchain Core.
+    - Primero, los fondos se transfieren (mínimo 10 USDT) a la Core blockchain.
     - Tras una transferencia exitosa, Core depositará automáticamente CORE en la billetera del usuario.
     - Con CORE ahora en la billetera, los usuarios pueden comenzar a transaccionar en la blockchain Core de inmediato.
 
