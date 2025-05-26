@@ -1,15 +1,15 @@
 ---
-sidebar_label: Componentes principales
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 description: Conozca los componentes principales del mecanismo Satoshi Plus
 ---
 
-# Satoshi Plus Consensus
+# Consenso Satoshi Plus
 
 ---
 
-Satoshi Plus is Core's innovative consensus mechanism that unites Bitcoin's security with EVM programmability to secure a uniquely powerful blockchain ecosystem. By integrating three distinct participation methods—Bitcoin miner contributions via Delegated Proof of Work (DPoW), CORE token delegation via Delegated Proof of Stake (DPoS), and Bitcoin timelocking and delegation via Self-Custodial Bitcoin Staking—Satoshi Plus creates a robust security framework that aligns incentives across both the Bitcoin and Core ecosystems. This multi-layered approach is designed to prevent any single group from controlling the network, while enabling Bitcoin holders to earn yield, Bitcoin miners to receive supplemental rewards, and CORE holders to participate in network security—all while maintaining Bitcoin's fundamental security properties and extending them to protect Core's smart contract functionality.
+Satoshi Plus es el innovador mecanismo de consenso de Core que combina la seguridad de Bitcoin con la programabilidad de la EVM para asegurar un ecosistema blockchain único y potente. Al integrar tres métodos de participación distintos—contribuciones de mineros de Bitcoin mediante Delegated Proof of Work (DPoW), delegación de tokens CORE mediante Delegated Proof of Stake (DPoS) y timelocking de Bitcoin y delegación de Bitcoin mediante Staking Autocustodiado—Satoshi Plus crea un marco de seguridad robusto que alinea los incentivos tanto en el ecosistema de Bitcoin como en el de Core. Este enfoque multinivel está diseñado para evitar que un solo grupo controle la red, al mismo tiempo que permite a los poseedores de Bitcoin generar rendimientos, a los mineros de Bitcoin recibir recompensas adicionales y a los poseedores de CORE participar en la seguridad de la red, todo ello manteniendo las propiedades fundamentales de seguridad de Bitcoin y extendiéndolas para proteger la funcionalidad de contratos inteligentes de Core.
 
 ![satoshi-plus](../../../../static/img/staoshi-plus/consensus-components.png)
 
