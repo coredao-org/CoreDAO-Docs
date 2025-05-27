@@ -11,7 +11,7 @@ description: Aprovechando DPoW en Satoshi Plus
 
 ## Descripción general
 
-La Prueba de Trabajo Delegada (DPoW) es una piedra angular del consenso Satoshi Plus. Este sistema aprovecha la infraestructura de minería ya establecida de Bitcoin, integrándola con la blockchain de Core para reforzar la seguridad sin requerir trabajo computacional adicional.
+Delegated Proof of Work (DPoW) es una piedra angular del consenso Satoshi Plus. Este sistema aprovecha la infraestructura de minería ya establecida de Bitcoin, integrándola con la blockchain de Core para reforzar la seguridad sin requerir trabajo computacional adicional.
 
 DPoW crea una relación mutuamente beneficiosa en la que los mineros de Bitcoin pueden obtener recompensas adicionales en CORE mientras continúan con sus operaciones principales de minería de Bitcoin. Al incluir metadatos de selección de validadores en los bloques de Bitcoin recién minados, los mineros extienden su influencia hacia la red Core sin comprometer su papel en la seguridad en Bitcoin.
 
