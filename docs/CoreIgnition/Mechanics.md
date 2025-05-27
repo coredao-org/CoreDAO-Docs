@@ -106,7 +106,7 @@ Users can benefit from baseline token multipliers for whitelisted assets held in
 
 | Whitelisted Assets  |Wallet Assets | Lending | Borrowing | Liquidity Provision | 
 | ------------- |-------------| ------------- |-------------| ------------- |
-| stCORE, CLND, dualCORE | 1x | 2.5x | 3x | 3.5x |
+| stCORE, CLND | 1x | 2.5x | 3x | 3.5x |
 | USDT, USDC | 1x | 1.5x | 2x | 3x |
 | CORE, WCORE | 1x | 1.5x | 2x | 2.5x |
 | wETH, solvBTC.CORE | n/a | 1.4x | 1.6x | 1.8x |
