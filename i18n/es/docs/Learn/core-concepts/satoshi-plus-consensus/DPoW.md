@@ -25,11 +25,11 @@ En la red de Bitcoin, los mineros generan poder de hash para minar bloques, aseg
 
 1. **Integración de la Minería:** Los mineros de Bitcoin continúan con sus actividades de minería habituales mientras señalan su apoyo a la blockchain de Core al incluir información específica en los bloques de Bitcoin que minan, indicando su validador preferido de Core.
 
-2. **Metadata in Bitcoin Blocks**: In the mined Bitcoin block, miners add metadata in the `op_return` field containing the Core validator address and the address for receiving CORE token rewards, effectively delegating their mining influence to the Core network.
+2. **Metadatos en bloques Bitcoin**: En el bloque de Bitcoin minado, los mineros añaden metadatos en el campo `op_return` que contiene la dirección del validador Core y la dirección para recibir recompensas de tokens CORE, delegando efectivamente su influencia minera a la red Core.
 
-3. **Validator Support**: By including this information, miners delegate their computational power to validators on Core. Proportions of delegated hash power are critical to Core's validator election, directly influencing which validators are elected to produce blocks and secure the network.
+3. **Soporte a Validadores:** Al incluir esta información, los mineros delegan su poder computacional a los validadores en Core. Las proporciones de poder de hash delegado son críticas para la elección de validadores de Core, ya que influyen directamente en qué validadores se eligen para producir bloques y asegurar la red.
 
-4. **Relayers**: Relayers monitor the Bitcoin network and transmit block and transaction data to Core. An on-chain embedded BTC light client processes this data and forwards delegation information to the "Delegation Hub," which manages all delegations within Core. During each one-day round, Core calculates DPoW for validators based on miner delegations from one week prior.
+4. **Relayers:** Los relayers monitorean la red de Bitcoin y transmiten datos de bloques y transacciones a Core. An on-chain embedded BTC light client processes this data and forwards delegation information to the "Delegation Hub," which manages all delegations within Core. During each one-day round, Core calculates DPoW for validators based on miner delegations from one week prior.
 
 5. **Reward Mechanism**: Miners receive CORE tokens in addition to their regular Bitcoin rewards, creating a dual-reward system that incentivizes participation without diverting resources from Bitcoin mining.
 
