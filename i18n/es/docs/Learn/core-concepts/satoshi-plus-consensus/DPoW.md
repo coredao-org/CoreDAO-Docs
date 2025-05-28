@@ -1,8 +1,8 @@
 ---
-sidebar_label: Prueba de trabajo delegada
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
-description: Aprovechando DPoW en Satoshi Plus
+description: ""
 ---
 
 # Prueba de Trabajo Delegada (DPoW)
@@ -29,15 +29,15 @@ En la red de Bitcoin, los mineros generan poder de hash para minar bloques, aseg
 
 3. **Soporte a Validadores:** Al incluir esta información, los mineros delegan su poder computacional a los validadores en Core. Las proporciones de poder de hash delegado son críticas para la elección de validadores de Core, ya que influyen directamente en qué validadores se eligen para producir bloques y asegurar la red.
 
-4. **Relayers:** Los relayers monitorean la red de Bitcoin y transmiten datos de bloques y transacciones a Core. An on-chain embedded BTC light client processes this data and forwards delegation information to the "Delegation Hub," which manages all delegations within Core. During each one-day round, Core calculates DPoW for validators based on miner delegations from one week prior.
+4. **Relayers:** Los relayers monitorean la red de Bitcoin y transmiten datos de bloques y transacciones a Core. Un on-chain BTC light client embebido procesa estos datos y reenvía la información de delegación al "Delegation Hub", que gestiona todas las delegaciones dentro de Core. Durante cada ronda diaria, Core calcula el DPoW para los validadores con base en las delegaciones de los mineros realizadas una semana antes.
 
-5. **Reward Mechanism**: Miners receive CORE tokens in addition to their regular Bitcoin rewards, creating a dual-reward system that incentivizes participation without diverting resources from Bitcoin mining.
+5. **Mecanismo de Recompensas:** Los mineros reciben tokens CORE además de sus recompensas habituales en Bitcoin, creando un sistema de doble recompensa que incentiva la participación sin desviar recursos de la minería de Bitcoin.
 
 ## Proceso paso a paso
 
 1. **Extracción de bloques de Bitcoin:** Los mineros de Bitcoin continúan con su función principal de extraer bloques en la red de Bitcoin mediante Prueba de trabajo (PoW).
 
-2. **Including Delegation Information:** Miners add two additional pieces of information in the `op_return` field of the coinbase transaction:
+2. **Inclusión de información de delegación:** Los mineros agregan dos piezas adicionales de información en el campo `op_return` de la transacción coinbase:
 
 - **Dirección del validador principal:** La dirección del validador principal al que delegar el poder hash.
 - **Dirección de recompensa del token CORE:** La dirección a la que el minero desea que se le envíen las recompensas del token CORE.
