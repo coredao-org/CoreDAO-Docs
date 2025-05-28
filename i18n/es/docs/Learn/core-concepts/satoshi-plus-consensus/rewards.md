@@ -36,7 +36,7 @@ La red Core está diseñada para incentivar la participación y asegurar el comp
 
 Las block rewards se calculan y distribuyen cuando se mina el último bloque de una ronda. Actualmente, **90%** de las recompensas van a los validadores y **10%** de las recompensas van al "Contrato de recompensas del sistema". Del 90% pagado a los validadores, el validador toma un porcentaje como comisión antes de pagar a sus delegados. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, Bitcoin stakers, and Bitcoin miners – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Validators can take as much or as little of the reward as they want, though they’re incentivized to be generous in order to attract more delegators.
+Los validadores comparten las recompensas con quienes delegaron a ellos — incluidos los stakers de CORE, stakers de Bitcoin y mineros de Bitcoin — pero deciden cuánto devolver, según la parte de la recompensa que ellos (los validadores) elijan quedarse para sí mismos. Los validadores pueden tomar tanto o tan poco de recompensas como quieran, aunque están incentivados a ser generosos para atraer más delegadores.
 
 Después de que los validadores cobran sus tarifas, el protocolo utiliza esta función para determinar cómo se dividen las recompensas restantes entre los participantes de CORE, los participantes de Bitcoin y los delegados de poder de hash. La distribución de recompensas se calcula según la siguiente fórmula:
 
@@ -82,9 +82,9 @@ Donde:
 - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
 - **Multiplicadores de rendimiento:** Cada nivel de rendimiento aumentado tiene un multiplicador específico (e, f, g, h,..., etc.) que está determinado por los datos de staking del usuario, así como por la configuración de staking dual del sistema. Las configuraciones están sujetas a cambios y se pueden configurar mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
 
-#### Impacto de la doble apuesta en las recompensas BTC
+#### Impacto del Dual Staking en las recompensas de BTC
 
-With the introduction of Dual Staking, Bitcoin staking rewards are now tiered based on the amount of CORE staked relative to Bitcoin. Bitcoin rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on Dual Staking thresholds, with higher tiers generally receiving a greater proportion of the rewards.
+Con la introducción del Dual Staking, las recompensas por staking con Bitcoin ahora se distribuyen en niveles según la cantidad de CORE en staking relativo a Bitcoin. Las recompensas en Bitcoin ya no se reparten de forma equitativa entre todos los participantes. En su lugar, se asignan dinámicamente según umbrales de Dual Staking, donde los niveles más altos generalmente reciben una mayor proporción de las recompensas.
 
 #### División de recompensa
 
@@ -100,4 +100,4 @@ Los verificadores en el ecosistema central son responsables de monitorear el com
 
 ## Conclusión
 
-Rewards in Satoshi Plus play a crucial role in maintaining the security, vitality, and decentralization of the network. Al alinear los incentivos de varios participantes a través de un sistema de recompensas integral y adaptable, Core garantiza un compromiso continuo y contribuye al crecimiento sostenido y la estabilidad de la plataforma.
+Las recompensas en Satoshi Plus desempeñan un papel crucial en el mantenimiento de la seguridad, vitalidad y descentralización de la red. Al alinear los incentivos de varios participantes a través de un sistema de recompensas integral y adaptable, Core garantiza un compromiso continuo y contribuye al crecimiento sostenido y la estabilidad de la plataforma.
