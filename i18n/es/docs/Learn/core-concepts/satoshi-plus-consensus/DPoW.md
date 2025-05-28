@@ -42,7 +42,7 @@ En la red de Bitcoin, los mineros generan poder de hash para minar bloques, aseg
 - **Dirección del validador principal:** La dirección del validador principal al que delegar el poder hash.
 - **Dirección de recompensa del token CORE:** La dirección a la que el minero desea que se le envíen las recompensas del token CORE.
 
-3. **Delegating Hash Power:** This action delegates the miner's hash power to the chosen Core validator, repurposing existing work without incurring additional costs.
+3. **Delegación del poder de hash:** Esta acción delega el poder de hash del minero al validador de Core elegido, reutilizando el trabajo de minería ya realizado sin generar costos adicionales.
 
 4. **Elección del validador:** Los validadores con mayor poder de hash delegado tienen una mayor probabilidad de ser elegidos para el conjunto de validadores.
 
@@ -54,10 +54,10 @@ En la red de Bitcoin, los mineros generan poder de hash para minar bloques, aseg
 
 - **Seguridad mejorada:** Al integrar el PoW de Bitcoin, Core se beneficia de la incomparable infraestructura de seguridad de Bitcoin, lo que hace que la red Core sea más resistente.
 
-- **Miner Support:** Bitcoin miners gain an additional revenue stream through CORE token rewards, enhancing their overall profitability without additional energy costs.
+- **Apoyo a mineros:** Los mineros de Bitcoin obtienen una fuente adicional de ingresos a través de las recompensas en tokens CORE, lo que incrementa su rentabilidad general sin generar costos energéticos adicionales.
 
 - **Relación simbiótica:** Este sistema promueve beneficios mutuos para las redes Bitcoin y Core, fomentando un entorno cooperativo que fortalece el ecosistema blockchain.
 
 #### **Conclusión**
 
-DPoW is a critical component within Satoshi Plus consensus. It extends the incentives of Bitcoin miners to align with Core's consensus mechanism. Core recibe la participación de los mineros de Bitcoin en su seguridad, y Bitcoin recibe mineros mejor remunerados. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
+DPoW es un componente crítico del consenso Satoshi Plus. Extiende los incentivos de los mineros de Bitcoin para alinearlos con el mecanismo de consenso de Core. Core recibe la participación de los mineros de Bitcoin en su seguridad, y Bitcoin recibe mineros mejor remunerados. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
