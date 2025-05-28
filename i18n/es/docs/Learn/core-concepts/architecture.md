@@ -1,15 +1,15 @@
 ---
-sidebar_label: Arquitectura
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
-description: Un vistazo rápido a la arquitectura blockchain subyacente de Core
+sidebar_position: 0
+description: ""
 ---
 
-# Arquitectura de la cadena de Core
+# Arquitectura de la Blockchain de Core
 
 ---
 
-Core's architecture is built around **Satoshi Plus**, a tripartite consensus mechanism that integrates **Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Self-Custodial Bitcoin Staking**.
+La arquitectura de Core está construida en torno a **Satoshi Plus**, un mecanismo de consenso tripartito que integra Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Self-Custodial Bitcoin Staking.
 
 A través de Satoshi Plus, **los mineros o pools de minería de Bitcoin, los holders de CORE en staking y los stakers de Bitcoin** delegan recursos para elegir validadores que protegen la red Core. La selección de validadores se basa en el score híbrido, que considera:
 
