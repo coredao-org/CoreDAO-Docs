@@ -35,23 +35,23 @@ Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el po
 
 - **Validadores**: Producen bloques y validan transacciones en la red Core. Los validators deben registrarse y bloquear un depósito reembolsable en CORE como garantía de validador.
 - **Bitcoin Miners:** Aseguran Bitcoin mediante Proof of Work y pueden delegar poder de hash a los validators de Core incluyendo información de delegación en la transacción coinbase de un bloque.
-- CORE Stakers: Delegan tokens CORE a los validators como parte del proceso de elección de validadores para apoyar la seguridad de la red.
-- **Bitcoin Stakers**: Delegate timelocked Bitcoin to validators on Core through Self-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.
-- **Relayers**: Responsible for synchronizing the data between the Core and Bitcoin network. Transmiten datos de bloques y transacciones de Bitcoin a Core. Cualquiera puede convertirse en relayer registrándose y bloqueando un depósito reembolsable de tokens CORE.
-- **Verificadores**: Reportan comportamientos maliciosos en la red Core. Successful verification flags can trigger the slashing or jailing of validators and bad actors. Verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a Verifier on the Core network.
+- **CORE Stakers:** Delegan tokens CORE a los validators como parte del proceso de elección de validadores para apoyar la seguridad de la red.
+- **Bitcoin Stakers:** Delegan Bitcoin bloqueado mediante timelock a los validators en Core a través del Self-Custodial Bitcoin Staking, ganando rendimiento sin renunciar a la custodia de sus activos.
+- **Relayers:** Responsables de sincronizar los datos entre las redes de Core y Bitcoin. Transmiten datos de bloques y transacciones de Bitcoin a Core. Cualquiera puede convertirse en relayer registrándose y bloqueando un depósito reembolsable de tokens CORE.
+- **Verificadores**: Reportan comportamientos maliciosos en la red Core. Las verificaciones exitosas pueden desencadenar el slashing o jailing de validators y actores maliciosos. Los verifiers son compensados por esta labor de monitoreo cuando se reparten las recompensas por bloque. Cualquier persona puede actuar como verifier en la red de Core.
 
 #### **Consenso y Elección**
 
-- **Validator Election**: Every **round (1 day)**, the top **27 validators** by **hybrid score** (based on DPoW from miners, DPoS from CORE stakers, and staked Bitcoin from Bitcoin holders) are elected to become part of the active validator set and secure the network. Cualquier validador en el conjunto actual de validadores que no haya sido bloqueado (jailed) o penalizado (slashed) se considera "activo" (live). Para garantizar un TPS más estable, los validadores en vivo se actualizan cada 200 bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre.
+- **Validator Election:** En cada **ronda (1 día)**, los **27 validadores** principales según el **hybrid score** (basado en DPoW de los mineros, DPoS de los CORE stakers y Bitcoin bloqueado por los holders de Bitcoin) son elegidos para formar parte del conjunto activo de validadores y asegurar la red. Cualquier validador en el conjunto actual de validadores que no haya sido bloqueado (jailed) o penalizado (slashed) se considera "activo" (live). Para garantizar un TPS más estable, los validadores en vivo se actualizan cada 200 bloques, lo que significa que si algún validador es encarcelado o recortado, los demás pueden continuar extrayendo bloques como de costumbre.
 - **Score Híbrido:** Cada nodo validador que busca formar parte del conjunto activo de validadores recibe un puntaje híbrido (hybrid score), calculado en función de tres tipos de delegación:
   poder de hasheo, CORE y Bitcoin. El conjunto activo de validadores está compuesto por los 27 validadores con las puntuaciones híbridas más altas.
-- **Ronda:** Una ronda dura **un día**, durante la cual los **27 mejores validadores** (clasificados según su score hibrido) son elejidos para producir bloques. At the end of each round, **rewards are calculated and distributed**, and the next validator set is selected.
+- **Ronda:** Una ronda dura **un día**, durante la cual los **27 mejores validadores** (clasificados según su score hibrido) son elejidos para producir bloques. Al final de cada ronda, se **calculan y distribuyen las recompensas**, y se selecciona el siguiente conjunto de validadores.
 - **Época (10 minutos o 200 slots)**: El estatus del validador es verificado constantemente para asegurar que nodos bloqueados (jailed) no participen en el consenso. El estado del validador se verifica una vez por época (en lugar de continuamente) para mantener las transacciones por segundo aproximadamente constante en una ronda determinada.
 - **Slot (3 segundos)**: Cada ronda de 1 día se divide en slots y todos los validadores del conjunto de validadores se turnan para producir un bloque por slot al estilo round-robin.
 
 #### **Recompensas y estabilidad**
 
-- **Reward Module:** Rewards are distributed at the end of each round based on validator performance. El módulo de recompensas calcula y distribuye estas recompensas en consecuencia.
+- **Reward Module:** Las recompensas se distribuyen al final de cada round en función del rendimiento de los validadores. El módulo de recompensas calcula y distribuye estas recompensas en consecuencia.
 - Las recompensas se distribuyen al **final de cada ronda**.
 - Los validadores vivos se actualizan **cada 200 bloques** para mantener las transacciones por segundo estables.
 
@@ -62,16 +62,16 @@ Para participar en Satoshi Plus, los mineros y/o grupos de minería simplemente 
 1. La dirección del Validador de Core al que desean delegar su poder de hasheo.
 2. La dirección en la cual el minero quiere recibir su recompensa en tokens CORE.
 
-In exchange for participating in Core’s consensus process by delegating their hash power to help elect validators, Bitcoin miners receive supplemental CORE token rewards in addition to their existing mining rewards from the Bitcoin network. In this way, Satoshi Plus brings Bitcoin miner participation to the Core network, while the Bitcoin network receives better compensated (i.e. more highly incentivized) miners.
+A cambio de participar en el proceso de consenso de Core mediante la delegación de su poder de hash para ayudar a elegir validadores, los mineros de Bitcoin reciben recompensas adicionales en tokens de CORE, además de sus recompensas habituales por minería en la red de Bitcoin. De este modo, Satoshi Plus incorpora la participación de los mineros de Bitcoin en la red de Core, mientras que la red de Bitcoin recibe mineros mejor compensados (es decir, con mayores incentivos).
 
 ## Prueba de participación delegada
 
-El proof of stake delegado (DPoS) es el método para involucrar a los holders principales de CORE en la seguridad del protocolo. To participate in consensus, any CORE token holder can stake their CORE tokens with validators on the Core network, thus helping elect those validators in the same way that a miner might delegate its hash power to help elect a validator.\
-Similarly, just as miners receive rewards, CORE token stakers also earn CORE token rewards for contributing to Satoshi Plus consensus. Una ventaja significativa de DPoS en comparación con los modelos estándar de Proof of Stake es que el primero permite que todos los holders de tokens participen por igual. Por el contrario, el último a veces solo permite a los grandes holders participar en el staking.
+El proof of stake delegado (DPoS) es el método para involucrar a los holders principales de CORE en la seguridad del protocolo. Para participar en el consenso, cualquier holder de CORE puede hacer staking de sus tokens con los validadores en la red de Core, ayudando así a elegir a esos validadores, de forma similar a como un minero delega su poder de hash para apoyar la elección de un validador.\
+De manera análoga, así como los mineros reciben recompensas, los stakers de CORE también obtienen recompensas en tokens CORE por contribuir al consenso de Satoshi Plus. Una ventaja significativa de DPoS en comparación con los modelos estándar de Proof of Stake es que el primero permite que todos los holders de tokens participen por igual. Por el contrario, el último a veces solo permite a los grandes holders participar en el staking.
 
 ## Self-Custodial Bitcoin Staking
 
-Satoshi Plus's methodology for integrating Bitcoin staking centers on absolute timelocks using Bitcoin's native CLTV (CheckLockTimeVerify) function, a cryptographic feature that locks up the outputs of a transaction for a pre-defined period of time, during which they can't be spent.
+La metodología de Satoshi Plus para integrar el staking de Bitcoin se basa en timelocks absolutos utilizando la función nativa de Bitcoin CLTV (CheckLockTimeVerify), una característica criptográfica que bloquea los outputs de una transacción durante un período de tiempo predefinido, durante el cual no pueden ser gastados.
 Rather than holders giving up custody of Bitcoin to external staking, stakers with Satoshi Plus merely place their Bitcoin in absolute timelocks as part of a transaction, and the transaction can be designed to return the output after the time period has elapsed. Dentro de esa transacción, los participantes deben incluir un script que contenga la misma información que los mineros de Bitcoin incluyen en sus bloques delegados:
 
 1. La dirección del Validador de Core al que el staker desea delegar su Bitcoin.
