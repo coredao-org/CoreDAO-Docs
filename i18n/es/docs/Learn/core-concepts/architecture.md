@@ -17,13 +17,13 @@ A través de Satoshi Plus, **los mineros o pools de minería de Bitcoin, los hol
 - **Tokens de CORE en staking delegado** de los takers de CORE
 - **Bitcoin en staking delegado** de stakers de Bitcoin
 
-### **The First Self-Custodial Bitcoin Staking Mechanism**
+### **El primer Mecanismo de Staking Auto-Custodiado en Bitcoin**
 
-Satoshi Plus's Self-Custodial Bitcoin Staking component is **the first live self-custodial Bitcoin staking mechanism**, allowing Bitcoin holders to earn trustless yield **without introducing new trust assumptions**.
+El componente de Self-Custodial Bitcoin Staking de Satoshi Plus es **el primer mecanismo activo de staking auto-custiodado en Bitcoin** que permite a los holders obtener rendimientos sin custodia, sin introducir nuevas suposiciones de confianza.
 
 ### **Aprovechando la Seguridad de Bitcoin y Empoderando a los Mineros**
 
-Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el poder de hash de minería en Bitcoin** a través de la delegación. By involving miners in validator elections, it leverages Bitcoin’s unmatched decentralization while offering miners supplemental rewards, addressing the long-term decline in Bitcoin block rewards.
+Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el poder de hash de minería en Bitcoin** a través de la delegación. Al involucrar a los mineros en las elecciones de validadores, aprovecha la descentralización inigualable de Bitcoin y, al mismo tiempo, ofrece recompensas adicionales a los mineros, abordando el descenso a largo plazo de las recompensas por bloque en Bitcoin.
 
 <p align="center">
 ![component-diagram](../../../static/img/Core-Architecture.png)
@@ -33,9 +33,9 @@ Actualmente, Satoshi Plus se beneficia de la seguridad del **\~75% de todo el po
 
 #### **Roles clave**
 
-- **Validadores**: Producen bloques y validan transacciones en la red Core. Validator must register and lock a refundable CORE validator bond deposit.
-- **Bitcoin Miners**: Secure Bitcoin via Proof of Work and can delegate hash power to Core validators by including delegation information in the coinbase transaction of a block.
-- **CORE Stakers**: Delegate CORE tokens to validators as part of the validator election to support network security.
+- **Validadores**: Producen bloques y validan transacciones en la red Core. Los validators deben registrarse y bloquear un depósito reembolsable en CORE como garantía de validador.
+- **Bitcoin Miners:** Aseguran Bitcoin mediante Proof of Work y pueden delegar poder de hash a los validators de Core incluyendo información de delegación en la transacción coinbase de un bloque.
+- CORE Stakers: Delegan tokens CORE a los validators como parte del proceso de elección de validadores para apoyar la seguridad de la red.
 - **Bitcoin Stakers**: Delegate timelocked Bitcoin to validators on Core through Self-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.
 - **Relayers**: Responsible for synchronizing the data between the Core and Bitcoin network. Transmiten datos de bloques y transacciones de Bitcoin a Core. Cualquiera puede convertirse en relayer registrándose y bloqueando un depósito reembolsable de tokens CORE.
 - **Verificadores**: Reportan comportamientos maliciosos en la red Core. Successful verification flags can trigger the slashing or jailing of validators and bad actors. Verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a Verifier on the Core network.
