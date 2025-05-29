@@ -1,8 +1,8 @@
 ---
-sidebar_label: Descripción general
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
-description: "Obtenga una descripción general de Core: su propósito, misión y visión futura"
+sidebar_position: 0
+description: ""
 ---
 
 # Descripción general de la cadena de bloques Core
@@ -11,15 +11,15 @@ description: "Obtenga una descripción general de Core: su propósito, misión y
 
 ## Introduccion
 
-Core is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem.
+Core es una blockchain Layer-1 de alto rendimiento, EVM-compatible, diseñada para ser la plataforma complementaria y altamente escalable de contratos inteligentes de Bitcoin. Al aprovechar los timelocks CLTV nativos de Bitcoin, el poder de hash de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como el principal protector y activo central de un ecosistema próspero de aplicaciones descentralizadas.
 
 ## Propósito y Misión
 
-The Core blockchain exists to unlock both the Bitcoin network and Bitcoin as an asset, creating a scalable, permissionless smart contract platform that empowers Bitcoin-focused finance while leveraging Bitcoin's decentralized security and immense value.
+La blockchain de Core existe para desbloquear tanto la red de Bitcoin y a Bitcoin como activo, creando una plataforma escalable y de contratos inteligentes permissionless que potencie las finanzas centradas en Bitcoin, mientras aprovecha la seguridad descentralizada y el inmenso valor de Bitcoin.
 
-Bitcoin alignment is central to this mission because Bitcoin itself serves as the ultimate incentive aligner. While the Bitcoin blockchain securely preserves the Bitcoin asset by aligning stakeholder incentives, its design necessarily limits speed, scalability, and flexibility. Rather than modifying Bitcoin's base layer, Core extends this alignment through its Satoshi Plus consensus mechanism.
+La alineación con Bitcoin es central para esta misión porque Bitcoin actúa como el alineador definitivo de incentivos. Mientras que la blockchain de Bitcoin preserva de manera segura el activo Bitcoin al alinear los incentivos de sus stakeholders, su diseño necesariamente limita la velocidad, la escalabilidad y la flexibilidad. En lugar de modificar la capa base de Bitcoin, Core extiende esta alineación mediante su mecanismo de consenso Satoshi Plus.
 
-Bitcoin's Nakamoto Consensus and Core's Satoshi Plus consensus mutually reinforce each other, simultaneously protecting both the Bitcoin asset and Bitcoin-powered smart contracts. This synergy unlocks multiple benefits: a trustless yield for Bitcoin holders, supplemental rewards for Bitcoin miners, and a growing Bitcoin-powered financial ecosystem that serves both Bitcoin and DeFi users.
+El Nakamoto Consensus de Bitcoin y el consenso Satoshi Plus de Core se refuerzan mutuamente, protegiendo simultáneamente tanto el activo Bitcoin como los contratos inteligentes impulsados por Bitcoin. Esta sinergia desbloquea múltiples beneficios: rendimiento trustless para los holders de Bitcoin, recompensas suplementarias para los mineros de Bitcoin y un ecosistema financiero en crecimiento impulsado por Bitcoin que sirve tanto a usuarios de Bitcoin como de DeFi.
 
 ## Tecnología Core
 
