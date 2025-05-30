@@ -5,7 +5,7 @@ description: "Get block by number"
 sidebar_label: "Get block by number"
 hide_title: true
 hide_table_of_contents: true
-api: eJydVMFu2zAM/RWDpw3Q7K1H3dotCAoMXbGupyAYZIexhciSKtFJA8P/PtD2Us8JgmJHSY98j4+kWiBVRpArWCJVyWNwr0dYC3AegyLt7P0GJJRId8YVu7vjQ1PnGJ6jtuVy8QsEeBVUjYSBk7RgVY0gQXm9wyMI0BYkvDQY+LDBWATtOe0UE/Cl0QE3ICk0KCAWFdYKZAt09JwtUtC2hK4TJ4LcOYPKPjL7dZoZ8iz5+N7HbVVjaJAxJSNVXucYAO+vYz1PsERKcnY4yY+J7T0GATVS5Ub/e6upAgmZ8jorkaoMqfo9bw2XiGH/tx9NMCChIvJRZhyZEka6SXMqYmqRDi7sMmBB2m5dr1WTYbG3XiffXNHUaKmfhLOqLyEIQx1/bJ8w7HXBaZpgJbkIAowu0EZkjtHXW6+KCpOb9DOIiVKZZYfDIVX9a+pCmY2hMft+/3Xx8LT4xCGdAC5z0PJluPAuUq3shOOys/8UcuoP4Stl3ihtOVcvqB1dX/G4guBOVCDgovNrAZWLxOC2zVXE52C6jq+HqeF+bHRUueEZ2SoT8UxJ4SyhJZDw4ec4Th+T06Zc1MlPk23aK9MwCHiA3083W5MrTDPkf/JNyhu25wrjAHgjWvMhaGYCuVp3k03hT6nr/gD3Q6Sr
+api: eJylVdtu2zAM/RWB2EOLOXZaDNjmt27rigJbV6zrU5YNskPbamRJlehcEPjfB9ppliZBsEteAlskz+HhEb0CkmWAdARXSJW49XaxhHEE1qGXpKy5nkAKJdI7bfPpu+VNU2fo74My5dXlN4jASS9rJPRcZAVG1ggpSKemuIQIlIEUHhv0/DDBkHvluOx2jMfHRnmcQEq+wQhCXmEtIV0BLR1XC+SVKaFtow1AZq1GaW4Z/TjMTuRe8fV5l1fIRlNPYxuMZHkcoxNHqAkaUoVCL0iWsfjcBBIZCikqXAjTKSdOMC5jMVycDYvs9ZvT7+YvBGC1idAz5I/hYiQHxcXg43DwdvzyRVcmOGsCBs48Hw757znPuybPMYSi0eIpGNoIXh2KvTYzqdWEWxGbIUMEuTWEhjhBOqdV3tkkeQictdrnbrMHzIm5ezYVqZ4fem/9oRZxIWuncYdB/UzLPlhoNcWNlNA+/ca747lCElk3omy5ngNEUCNVdu3uXtoKUkikU0mJVCVI1c9d47OB0M+e3N54DSlURC6kCWfGhIHO44zyEBukufXTBJiQMoXtulXU9XbhlPhg86ZGQ52Ae546FEHo6/CluEM/UzmXabxJyQaIQKsceZzpxrUXTuYVivN4CNEW0zRJ5vN5LLvT2PoyWaeG5NP1+8ubu8sBp7QRcJs9l7P+hbOBamm2MA4r+6yRzYQJF5Q4LZXhWh2h1Vr1ES8DiHgSFVvgkPLjCCobiINXq0wGvPe6bfl1fyd5HhMVZKb5IhVSB9xjsvEunHxd37lTsdlDB3ny0daumkndcBDwevhzuJ0ldARpJ/If8bba+8/ddIRqvxZ/Mxzzg1dMEdLRuN26YvytaNtfS58t2Q==
 sidebar_class_name: "get api-method"
 info_path: docs/api/testnet/api-documentation
 custom_edit_url: null
@@ -47,7 +47,7 @@ Get block by number
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"booleanParam","in":"query","description":"booleanParam","schema":{"type":"boolean","default":true}},{"name":"tag","in":"query","description":"tag","required":true,"schema":{"type":"string"}}]}
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"booleanParam","in":"query","description":"booleanParam","schema":{"type":"boolean","default":true}},{"name":"tag","in":"query","description":"Block identifier tag. Must be a hex number (e.g. 0x10fb78)\n","required":true,"schema":{"type":"string","pattern":"^0x[a-fA-F0-9]+$","responses":{"200":{"description":"Successful response"},"400":{"description":"Invalid tag parameter","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","example":"Invalid tag must be a hex string like 0x10fb78"}}}}}}}}}]}
 >
   
 </ParamsDetails>

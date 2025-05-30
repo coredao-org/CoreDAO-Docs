@@ -653,10 +653,25 @@ paths:
           default: true
       - name: tag
         in: query
-        description: tag
+        description: >
+          Block identifier tag. Must be a hex number (e.g. 0x10fb78)
         required: true
         schema:
           type: string
+          pattern: '^0x[a-fA-F0-9]+$'
+          responses:
+            '200':
+              description: Successful response
+            '400':
+              description: Invalid tag parameter
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: Invalid tag must be a hex string like 0x10fb78
        
   /api/geth/eth_getBlockTransactionCountByNumber:
     get:
