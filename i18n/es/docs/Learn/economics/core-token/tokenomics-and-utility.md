@@ -1,7 +1,7 @@
 ---
-sidebar_label: CORE Tokenómica y utilidad
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # CORE Tokenómica y utilidad
