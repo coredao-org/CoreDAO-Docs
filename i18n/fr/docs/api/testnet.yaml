@@ -634,12 +634,27 @@ paths:
         schema:
           type: boolean
           default: true
-      - name: tag
+      - name: Number
         in: query
-        description: tag
+        description: >
+          Block Number Must be a hex number (e.g. 0x10fb78)
         required: true
         schema:
           type: string
+          pattern: '^0x[a-fA-F0-9]+$'
+          responses:
+            '200':
+              description: Successful response
+            '400':
+              description: Invalid Number parameter
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: Invalid Number Parameter Must be a HEX string like 0x10fb78
   /api/geth/eth_getBlockTransactionCountByNumber:
     get:
       tags:
