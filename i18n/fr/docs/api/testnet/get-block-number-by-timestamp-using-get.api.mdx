@@ -5,7 +5,7 @@ description: Get block number by timestamp
 sidebar_label: Get block number by timestamp
 hide_title: true
 hide_table_of_contents: true
-api: eJydVE1v2zAM/SsGTxvg2V2PurVbUBQYOmBtT0EQyA4TC5ElVaSTBYb/+0A7H+6aZUVPtiW+90g+0i2wXhGoKdxaX64JZin4gFGz8e5+AQpWyP3VQ1MXGG93T6ZGYl2HZzJudTd5ghSCjrpGxihMLThdIyjQwaxxBykYBwpeGozysUAqownCP46J+NKYiAtQHBtMgcoKaw2qBd4FYSOOxq2g69KjQGk9IfFlhVPQvygFsdSNZVBQ4NJHfKXCh4Iv64zD3l/M7G+aO+SkkH4nrm94UuySMXWNXPm9L33nuQIFuQ4m72E0POYDel7s5j16ABPGzcGkJlpQUDEHUrngM0bi66zgkjKHvPVxnYMkaNzS97kbtpL8TTDJd182NTru5+RNL85FMMaafi4fMW5MKTRNdIo9QQrWlOgIRWPf85ugywqT6+wK0lGmKs+3222m+9vMx1W+h1L+4/7b5OFx8kUgXQpS5pDL1+EgeOJau5HG/zr9qqSjc4y/OQ9WGyesfWrt3oWpTDOkMPhweDnnxCyFyhMLpG0LTfgcbdfJ8TBb4s/CkC6szNBSW8I3+ZTeMTqZ2U+/9uP2OTmu09ls5Wq0chttGwkCGfb3y50W6oLIKeiDKqOixqZckByHnURn8hGNqIKazrrRBsm/q+v+ABbcuD8=
+api: eJydVcFu2zAM/RWB2GHDvLgrdvKt3boiwNAB6woMaLNCduhErSypIp00CPzvA+3EcdcsLZZLYouPfOR7YtbAekaQXcOp9cU9wSQBHzBqNt6Np5DBDLk9uqirHOPp6qepkFhX4YqMm52f/YQEgo66QsYomdbgdIWQgQ7mHleQgHGQwUONUR6mSEU0QfIPYyI+1CbiFDKONSZAxRwrDdkaeBUkG3E0bgZNk/QFCusJiQ9X2AX9K6UgSl1bhgxyLH3Ersrx0ZEEP013WRcFEpW1VREpeEcITQKf9sWO3UJbM1W8HZnqBwUJFN4xOhaYDsGaop15ekeCXT9n6/M7LKSPEEUhNkhyijH6uK8pfNRVsLiXR1UTqxyVcap25lGVPlaaoWk/yXa+ffzhCbf2UL0vJOnVxfiX+tolfb22YiRmjJL0983N9P0bGe12zASZq61tJn/XP0dWecvBtR5V+UoNqVfIc7+xcldjDhmkOpi0hVH3dduhb/PVbYvuwIRxsfV1HS1kMGcOlKWCHzESH49yLmjkkJc+3qcgBI0rfduf4VaBk2DUF1/UFTpuZX42xH0RjLGi7+UlxoUpJE0dXcaeIAFrChTrZf1lOAm6mKM6Hh1BMmCapelyuRzp9nTk4yzdQCn9Nv58dnF59kEgTQLSZsflY/cieOJKu0GNlyb9pKVeXcZHToPVxknWltp6o8K1LABIoNNh+2OfEpME5p5YIOt1rgmvom0aed2ZUvSZGtK5FZ+V2hI+49PfOHj7Y2PJd6rfQHvZytFgSy20rSUIZD+8vtxuBx0osgv6zyqDpl68kgd4DAXdMZnIQzRCBbLrSTO4VvIf0DR/AAZ8Km4=
 sidebar_class_name: get api-method
 info_path: docs/api/testnet/api-documentation
 custom_edit_url: null
@@ -45,7 +45,7 @@ Get block number by timestamp
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"closest","in":"query","description":"closest","schema":{"type":"string","default":"before"}},{"name":"timestamp","in":"query","description":"timestamp","required":true,"schema":{"type":"string"}}]}
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"closest","in":"query","description":"closest","schema":{"type":"string","default":"before"}},{"200":{"description":"Successful response"},"400":{"description":"Invalid timestamp parameter","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","example":"Invalid timestamp must be in unix format"}}}}}},"name":"timestamp","in":"query","description":"Block Timestamp in UNIX Format","required":true,"schema":{"type":"string","pattern":"^\\d+$"},"responses":null}]}
 >
   
 </ParamsDetails>
