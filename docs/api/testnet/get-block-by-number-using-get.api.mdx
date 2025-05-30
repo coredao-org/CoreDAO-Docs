@@ -5,7 +5,7 @@ description: "Get block by number"
 sidebar_label: "Get block by number"
 hide_title: true
 hide_table_of_contents: true
-api: eJylVdtu2zAM/RWB2EOLOXZaDNjmt27rigJbV6zrU5YNskPbamRJlehcEPjfB9ppliZBsEteAlskz+HhEb0CkmWAdARXSJW49XaxhHEE1qGXpKy5nkAKJdI7bfPpu+VNU2fo74My5dXlN4jASS9rJPRcZAVG1ggpSKemuIQIlIEUHhv0/DDBkHvluOx2jMfHRnmcQEq+wQhCXmEtIV0BLR1XC+SVKaFtow1AZq1GaW4Z/TjMTuRe8fV5l1fIRlNPYxuMZHkcoxNHqAkaUoVCL0iWsfjcBBIZCikqXAjTKSdOMC5jMVycDYvs9ZvT7+YvBGC1idAz5I/hYiQHxcXg43DwdvzyRVcmOGsCBs48Hw757znPuybPMYSi0eIpGNoIXh2KvTYzqdWEWxGbIUMEuTWEhjhBOqdV3tkkeQictdrnbrMHzIm5ezYVqZ4fem/9oRZxIWuncYdB/UzLPlhoNcWNlNA+/ca747lCElk3omy5ngNEUCNVdu3uXtoKUkikU0mJVCVI1c9d47OB0M+e3N54DSlURC6kCWfGhIHO44zyEBukufXTBJiQMoXtulXU9XbhlPhg86ZGQ52Ae546FEHo6/CluEM/UzmXabxJyQaIQKsceZzpxrUXTuYVivN4CNEW0zRJ5vN5LLvT2PoyWaeG5NP1+8ubu8sBp7QRcJs9l7P+hbOBamm2MA4r+6yRzYQJF5Q4LZXhWh2h1Vr1ES8DiHgSFVvgkPLjCCobiINXq0wGvPe6bfl1fyd5HhMVZKb5IhVSB9xjsvEunHxd37lTsdlDB3ny0daumkndcBDwevhzuJ0ldARpJ/If8bba+8/ddIRqvxZ/Mxzzg1dMEdLRuN26YvytaNtfS58t2Q==
+api: eJydVdtu00AQ/RVrxEMrHDutkAC/tRBKJShVSyWkENDamcTbrHe3u+NcFPnf0diJcZMogvrF8u7MnDNnLl4DiamHZAhXSHlw68xyBaMQjEUnSBp9PYYEpkiXymSzy9VNWaToHrzU06vBdwjBCicKJHQcZA1aFAgJCCtnuIIQpIYEnkp0/DFGnzlpOWzXxuFTKR2OISFXYgg+y7EQkKyBVpajeXJST6GqwhYgNUah0LeMfhxmx3Iv+Oa+9puIUlFDowvWJH0cptYnaCyDr6WnIMVABDkuA90cnmA0jYL+8qw/Sd++O/2p/yN11pkIHSP96i+Hoje56H3q996PXr+qw3hrtEfPnuf9Pr+e07svswy9n5Qq2BpDFcKbQ7bXei6UHG+TaSsMIWRGE2piH2GtklndI/GjZ8f1Pn2TPmJGTN9xR5FsKKJzxh3KEpeisAr3SdxuSXS0/Tz4ETSegZIzbKWFavuMdqt0hRSkdaXS1aYuEEKBlJtNnzdS55BALKyMp0h5jJT/3h0BbiV0823fl05BAjmR9UnMnhGhp/MopcxHGmlh3CwGJiT1xNSpS6oTvbAy+GiyskBNtZp7rXXIgtAV/tvkHt1cZhymdDoh4yEEJTPk8iZt/15YkeUYnEd9CDtMkzheLBaRqG8j46bxxtXHX64/DG7uBz12qULgNBsuZ82BNZ4KoTsYh5V9lkhbbsIlxVYJqTlWTWi9UX3IawFCrkTO/XBI+VEIufHExut1Kjw+OFVVfNyMJtdjLL1IFQ/WRCiPe0zaRoaTu80MngbtRjrIk686W2suVMlGwIvi3+F21tERpB3LF+J10nvZijrCsJ2Ev9xG/OEkk4NkOKo6w8X/i6r6A19GL0Y=
 sidebar_class_name: "get api-method"
 info_path: docs/api/testnet/api-documentation
 custom_edit_url: null
@@ -47,7 +47,7 @@ Get block by number
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"booleanParam","in":"query","description":"booleanParam","schema":{"type":"boolean","default":true}},{"name":"tag","in":"query","description":"Block identifier tag. Must be a hex number (e.g. 0x10fb78)\n","required":true,"schema":{"type":"string","pattern":"^0x[a-fA-F0-9]+$","responses":{"200":{"description":"Successful response"},"400":{"description":"Invalid tag parameter","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","example":"Invalid tag must be a hex string like 0x10fb78"}}}}}}}}}]}
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"booleanParam","in":"query","description":"booleanParam","schema":{"type":"boolean","default":true}},{"name":"Number","in":"query","description":"Block Number Must be a hex number (e.g. 0x10fb78)\n","required":true,"schema":{"type":"string","pattern":"^0x[a-fA-F0-9]+$","responses":{"200":{"description":"Successful response"},"400":{"description":"Invalid Number parameter","content":{"application/json":{"schema":{"type":"object","properties":{"error":{"type":"string","example":"Invalid Number Parameter Must be a HEX string like 0x10fb78"}}}}}}}}}]}
 >
   
 </ParamsDetails>

@@ -651,10 +651,10 @@ paths:
         schema:
           type: boolean
           default: true
-      - name: tag
+      - name: Number
         in: query
         description: >
-          Block identifier tag. Must be a hex number (e.g. 0x10fb78)
+          Block Number Must be a hex number (e.g. 0x10fb78)
         required: true
         schema:
           type: string
@@ -663,7 +663,7 @@ paths:
             '200':
               description: Successful response
             '400':
-              description: Invalid tag parameter
+              description: Invalid Number parameter
               content:
                 application/json:
                   schema:
@@ -671,7 +671,7 @@ paths:
                     properties:
                       error:
                         type: string
-                        example: Invalid tag must be a hex string like 0x10fb78
+                        example: Invalid Number Parameter Must be a HEX string like 0x10fb78
        
   /api/geth/eth_getBlockTransactionCountByNumber:
     get:
