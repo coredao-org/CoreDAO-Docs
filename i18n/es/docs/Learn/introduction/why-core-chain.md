@@ -1,28 +1,28 @@
 ---
-sidebar_label: Por qué Core
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# Por qué  Core
+# ¿Por qué Core?
 
 ---
 
-Core is the Bitcoin Everything Chain - a high-performance, EVM-compatible Layer-1 powered by Bitcoin. Secured by Bitcoin miners, Bitcoin stakers, and CORE stakers through Satoshi Plus consensus, Core operates as Bitcoin's complementary smart contract platform.
+Core es la Bitcoin Everything Chain - una blockchain Layer-1 de alto rendimiento, EVM-compatible, impulsada por Bitcoin. Asegurada por mineros, stakers de Bitcoin y stakers de CORE mediante el mecanismo de consenso Satoshi Plus. Core funciona como la plataforma de contratos inteligentes complementaria de Bitcoin.
 
 <p align="center">
 ![why-core-dao-infrographics](../../../static/img/Why-Core.png)
 </p>
 
-## Distinguishing Features
+## Características Distintivas
 
-Some of the major characteristics that set Core apart are:
+Algunas de las principales características que diferencian a Core son:
 
-- **Bitcoin-aligned:**  Core's architecture complements Bitcoin through dual integration: Bitcoin holders can timelock their coins to participate in consensus while maintaining self-custody, and Bitcoin miners can participate by delegating their hash power. Their extension of security to Core earns them yield as the Core and Bitcoin communities work symbiotically.
+- **Alineada con Bitcoin:** La arquitectura de Core complementa a Bitcoin mediante una doble integración: los holders de Bitcoin pueden hacer timelock de sus monedas para participar en el consenso manteniendo la autocustodia, y los mineros de Bitcoin pueden participar delegando su hash power. Esta extensión de seguridad hacia Core les permite obtener rendimiento, mientras que las comunidades de Core y Bitcoin trabajan de forma simbiótica.
 
-- **Decentralized:** Core's decentralization is primarily facilitated through the three-part system by which validators are elected under Satoshi Plus consensus. Bitcoin miners, Bitcoin stakers, and CORE token stakers all participate in Core's validator election, resulting in broad participation and economic alignment.
+- **Descentralizada:** La descentralización de Core se facilita principalmente a través del sistema tripartito mediante el cual se eligen los validadores bajo el consenso Satoshi Plus. Mineros de Bitcoin, stakers de Bitcoin y stakers del token CORE participan en la elección de validadores de Core, lo que da lugar a una participación amplia y una alineación económica sólida.
 
-- **Secure:** Core's security is bolstered by several pillars, starting with the Satoshi Plus consensus mechanism that leverages Bitcoin's hashrate and value to provide differentiated security. Validators must post bonds that can be slashed for malicious behavior, adding a strong incentive layer for honest operation without putting delegators' funds at risk. Additionally, validators can be jailed for infractions, temporarily removing them from the active set. Furthermore, multiple network-level safeguards deter potential threats, creating a robust security framework that combines Bitcoin's proven security model with modern proof-of-stake protections.
+- **Segura:** La seguridad de Core se fortalece mediante varios pilares, comenzando con el mecanismo de consenso Satoshi Plus, que aprovecha el hashrate y el valor de Bitcoin para proporcionar una seguridad diferenciada. Los validadores deben colocar bonds que pueden ser slashed por comportamiento malicioso, añadiendo una fuerte capa de incentivos para operar honestamente sin poner en riesgo los fondos de los delegadores. Además, los validadores pueden ser jailed por infracciones, lo que los remueve temporalmente del conjunto activo. Asimismo, existen múltiples salvaguardas a nivel de red que disuaden amenazas potenciales, creando un marco de seguridad robusto que combina el modelo de seguridad probado de Bitcoin con las protecciones modernas del proof-of-stake.
 
 - **Scalable:** As an EVM-compatible Layer-1 blockchain optimized for performance, Core delivers high transaction throughput and low confirmation times while maintaining decentralization. This scalability enables a growing ecosystem of applications and use cases that require both performance and Bitcoin's security foundation, without the bottlenecks typical of the Bitcoin base layer.
 
