@@ -1,38 +1,38 @@
 ---
-sidebar_label: Qué es Core
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# ¿Qué es el núcleo DAO?
+# Core: Liberando el DeFi de Bitcoin
 
 ---
 
-Core is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem.
+Core es una blockchain Layer-1 de alto rendimiento, EVM-compatible, diseñada para ser la plataforma de contratos inteligentes complementaria e hiperescalable de Bitcoin. Aprovechando los timelocks nativos de Bitcoin CLTV, el poder de hash de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como protector principal y activo central dentro de un ecosistema de aplicaciones descentralizadas en pleno crecimiento.
 
-Core's major innovation is it's novel consensus mechanism, **Satoshi Plus**, that unites Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Self-custodial Bitcoin Staking.
+La principal innovación de Core es su novedoso mecanismo de consenso, **Satoshi Plus**, que combina Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Staking de Bitcoin Autocustodiado.
 
-**Delegated Proof of Work**
 
-The Core blockchain incorporates Bitcoin miners in the security of Turing-complete smart contracts, unlocking the functionality and utility of those miners beyond the simple maintenance of the Bitcoin ledger. Miners can append metadata to newly mined blocks that includes votes for Core validators, providing them with purely additive supplemental income in CORE token rewards. Esta relación simbiótica trabaja para fortalecer Bitcoin sin consumir espacio de bloque de Bitcoin ni restar valor al papel principal de los mineros como defensores de la red Bitcoin.
 
-**Self-Custodial Bitcoin Staking**
+La blockchain Core incorpora a los mineros de Bitcoin en la seguridad de contratos inteligentes Turing-complete, desbloqueando nuevas funcionalidades y utilidades para los mineros más allá del simple mantenimiento del ledger de Bitcoin. Los mineros pueden adjuntar metadatos a los bloques recién minados que incluyan votos para validadores de Core, lo que les permite obtener ingresos adicionales en forma de recompensas en tokens CORE. Esta relación simbiótica trabaja para fortalecer Bitcoin sin consumir espacio de bloque de Bitcoin ni restar valor al papel principal de los mineros como defensores de la red Bitcoin.
 
-Bitcoin holders leverage Bitcoin's native Check Lock Time Verify (CLTV) functionality to timelock their Bitcoin for a specified period. In exchange for timelocking their coins, Bitcoin holders earn the right to participate in the Core validator election. Within the timelock, holders include metadata to delegate to their chosen validator and specify their reward addresses while maintaining complete custody of their assets. This innovative approach enables Bitcoin holders to participate in Core's consensus mechanism without transferring their Bitcoin, introducing slashing risks, or relying on cross-chain bridges. This mechanism transforms Bitcoin from a static store of value into a productive asset that generates yield while preserving its fundamental security properties.
+**Staking de Bitcoin Autocustodiado**
+
+Los holders de Bitcoin aprovechan la funcionalidad nativa de Check Lock Time Verify (CLTV) de Bitcoin para hacer un timelock de su Bitcoin durante un periodo específico. A cambio de hacer timelock, los holders de Bitcoin obtienen el derecho a participar en la elección de validadores de Core. En el timelock, los usuarios incluyen metadatos que delegan su voto a un validador elegido, además de especificar direcciones de recompensa, manteniendo completamente la custodia de sus activos. Este enfoque innovador permite a los holders de Bitcoin participar en el mecanismo de consenso de Core sin transferir su Bitcoin, sin riesgos de slashing y sin depender de bridges cross-chain. Este mecanismo convierte a Bitcoin en un activo productivo que genera rendimiento, al mismo tiempo que conserva sus propiedades fundamentales de seguridad.
 
 **Delegated Proof of Stake**
 
-Alongside Bitcoin stakers, CORE token holders can delegate their CORE tokens to validators to participate in consensus and earn rewards. Staking CORE tokens is also the exclusive way for Bitcoin stakers to earn higher tiers of yield.
+Junto con los stakers de Bitcoin, los holders de tokens CORE pueden delegar sus tokens CORE a validadores para participar en el consenso y ganar recompensas. El staking de tokens CORE es el único medio para que los stakers de Bitcoin accedan a niveles más altos de rendimiento.
 
 <p align="center">
 ![core-products](../../../static/img/What-Is-Core.png)
 </p>
 
-## Key Features of the Core Blockchain
+## Características Clave de la Core Blockchain
 
-Some of the distinguishing features of Core:
+Algunas de las características distintivas de Core:
 
-- **Trustless Bitcoin Yield:** Core enables Bitcoin holders to earn yield on their Bitcoin without surrendering custody, using Bitcoin's native CLTV function to timelock assets while maintaining complete control. This approach eliminates counterparty risk and smart contract vulnerabilities typically associated with Bitcoin yield strategies, transforming Bitcoin from a static store of value into a productive asset.
+- **Trustless Bitcoin Yield:** Core permite que los holders de Bitcoin obtengan rendimiento sobre su Bitcoin sin renunciar a la custodia, utilizando la función nativa CLTV de Bitcoin para hacer timelock sus activos mientras mantienen el control total. Este enfoque elimina el riesgo de contraparte y las vulnerabilidades de contratos inteligentes que suelen estar asociadas con estrategias de rendimiento en Bitcoin, transformando a Bitcoin de un almacén de valor estático en un activo productivo.
 - **Bitcoin Staking Security Integration:** Core's consensus mechanism harnesses Bitcoin as a staking asset, leveraging the most valuable cryptocurrency for its security model. By enabling Bitcoin holders to timelock their assets for validator selection, Core gains security while simultaneously unlocking additional Bitcoin utility.
 - **Miner Security Integration:** Core incorporates Bitcoin miners in securing smart contracts, extending their utility beyond the Bitcoin ledger.
 - **Dual Staking** Higher Bitcoin staking yields are reserved for stakers most aligned with the Core network, as expressed by their staked CORE tokens relative to staked Bitcoin. By tying increased Bitcoin yields to CORE staking, this mechanism creates powerful economic alignment between Bitcoin and CORE holders, contributing to the long-term growth and security of the Core blockchain
