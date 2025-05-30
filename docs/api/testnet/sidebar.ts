@@ -2,6 +2,10 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 
 const sidebar: SidebarsConfig = {
   apisidebar: [
+    // {
+    //   type: "doc",
+    //   id: "api/testnet/api-documentation",
+    // },
     {
       type: "category",
       label: "Accounts",

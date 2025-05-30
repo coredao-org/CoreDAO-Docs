@@ -142,6 +142,7 @@ const sidebars: SidebarsConfig = {
     ]
     },
   ],
+  
   devGuideSidebar: [
     {
       type: "category",
