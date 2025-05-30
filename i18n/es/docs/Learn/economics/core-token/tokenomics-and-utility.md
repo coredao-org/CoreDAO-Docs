@@ -4,48 +4,52 @@ hide_table_of_contents: false
 sidebar_position: 0
 ---
 
-# CORE Tokenómica y utilidad
+# CORE Tokenomics y Utilidad
 
 ---
 
 ## Descripción general
 
-CORE is the native utility and governance token of the Core blockchain. Its tokenomics follows principles of decentralization, sustainability, and long-term incentive alignment. CORE features a fixed supply cap similar to Bitcoin's model and was launched with emphasis on a fair and decentralized distribution.
+CORE es el token nativo de utilidad y gobernanza de la blockchain Core. Sus tokenomics siguen principios de descentralización, sostenibilidad y alineación de incentivos a largo plazo. CORE presenta un suministro máximo fijo similar al modelo de Bitcoin y fue lanzado con un enfoque en una distribución justa y descentralizada.
 
 ## Distribución de tokens
 
-CORE's tokenomics focuses on long-term sustainability and decentralized governance. The token serves multiple functions within the Core ecosystem, including validator rewards, transaction fee payments, and governance participation.
+Los tokenomics de CORE se centran en la sostenibilidad a largo plazo y la gobernanza descentralizada. El token cumple múltiples funciones dentro del ecosistema Core, incluyendo recompensas para validadores, pagos de fees de transacción y participación en la gobernanza.
 
 ![tokenomics](../../../../static/img/tokenomics/CORE_Tokenomics.png)
 
-CORE has a fixed supply of **2.1 billion** tokens distributed across several key ecosystem functions. The allocation is structured to support network growth, security, and development as shown in the diagram below.:
+CORE tiene un suministro fijo de **2.1 mil millones** de tokens distribuidos entre varias funciones clave del ecosistema. La asignación está estructurada para respaldar el crecimiento de la red, su seguridad y desarrollo, como se muestra en el siguiente diagrama.:
 
-1. **Node Mining (39.995% - 839,900,000 CORE tokens):**\
-  Validator rewards for block production and network security, distributed over an **81-year** schedule to ensure long-term alignment with network growth.
+1. **Node Mining (39.995% – 839,900,000 CORE tokens):** Recompensas para validadores por la producción de bloques y la seguridad de la red, distribuidas a lo largo de un periodo de **81 años** para asegurar una alineación a largo plazo con el crecimiento de la red.
 
-2. **Users (25.029% - 525,600,000 CORE tokens):** Allocation for community airdrops and user participation incentives, designed to promote broad token distribution and ecosystem engagement.
+2. **Users (25.029% – 525,600,000 CORE tokens):**
+  Asignación destinada a airdrops comunitarios e incentivos por participación de usuarios, diseñada para promover una amplia distribución de tokens y la participación en el ecosistema.
 
-3. **Contributors (15% - 315,000,000 CORE tokens):** Funds designated for past and future contributors who develop and maintain core protocols, infrastructure, and applications within the ecosystem.
+3. **Contributors (15% – 315,000,000 CORE tokens):**
+  Fondos asignados para contribuyentes pasados y futuros que desarrollen y mantengan los protocolos principales, la infraestructura y las aplicaciones del ecosistema.
 
-4. **Reserves (10% - 210,000,000 CORE tokens):** Strategic reserve to support foundation operations and long-term network development initiatives.
+4. **Reserves (10% – 210,000,000 CORE tokens):**
+  Reserva estratégica para apoyar las operaciones de la fundación e iniciativas de desarrollo a largo plazo de la red.
 
-5. **Treasury (9.5% - 199,500,000 CORE tokens):** Ecosystem development fund managed through governance to support grants, partnerships, and strategic investments in Core's growth.
+5. **Treasury (9.5% – 199,500,000 CORE tokens):**
+  Fondo de desarrollo del ecosistema administrado a través de gobernanza, destinado a subvenciones, asociaciones e inversiones estratégicas para el crecimiento de Core.
 
-6. **Relayer Rewards (0.476% - 10,000,000 CORE tokens):** Incentives for relayers who transmit data between Bitcoin and Core, supporting cross-chain consensus mechanisms.
+6. **Relayer Rewards (0.476% - 10,000,000 CORE tokens):**
+  Incentivos para relayers que transmiten datos entre Bitcoin y Core, apoyando los mecanismos de consenso entre cadenas.
 
 ## Utilidad de token
 
 Los tokens CORE cumplen múltiples funciones críticas dentro de la red Core:
 
-- **Transaction Fees:** All transactions and smart contract executions on Core require CORE tokens for gas payments.
-- **Staking:** CORE tokens can be delegated to validators as part of Satoshi Plus consensus, contributing to network security and earning staking rewards.
-- **Governance Participation:** Token holders can participate in on-chain governance, voting on network upgrades and protocol parameters.
+- **Fees de Transacción:** Todas las transacciones y ejecuciones de contratos inteligentes en Core requieren tokens CORE como pago de gas.
+- **Staking:** Los tokens CORE pueden delegarse a validadores como parte del consenso Satoshi Plus, contribuyendo a la seguridad de la red y generando recompensas por staking.
+- **Participación en la Gobernanza:** Los holders de tokens pueden participar en la gobernanza en cadena, votando sobre actualizaciones de la red y parámetros del protocolo.
 
 ## Suministro de sonido y emisiones
 
-CORE has a fixed supply cap of **2.1 billion tokens**, adopting a scarcity model similar to Bitcoin. Validator rewards are distributed according to a predetermined **81-year** emission schedule designed for long-term sustainability.
+CORE tiene un suministro máximo fijo de **2.1 mil millones** de tokens, adoptando un modelo de escasez similar al de Bitcoin. Las recompensas para los validadores se distribuyen conforme a un cronograma de emisión predefinido de **81 años**, diseñado para garantizar la sostenibilidad a largo plazo.
 
-- **Annual Reward Adjustment:** Block rewards decrease by **3.61%** annually, creating a gradual reduction curve rather than Bitcoin's halving model, providing more predictable economics for network participants.
+- **Ajuste Anual de Recompensas:** Las recompensas por bloque disminuyen un **3.61 %** cada año, lo que genera una curva de reducción gradual, a diferencia del modelo de halving de Bitcoin. Esto permite una economía más predecible y estable para los participantes de la red.
 
 ### Emisiones CORE acumuladas mensuales (primeros 6 años)
 
@@ -61,10 +65,10 @@ CORE has a fixed supply cap of **2.1 billion tokens**, adopting a scarcity model
 
 ## Política monetaria sólida
 
-In addition to the hard cap, CORE also has a deflationary mechanism:
+Además de su suministro máximo fijo, CORE incorpora un mecanismo deflacionario:
 
 - **Quema de tarifas de transacción:** Una parte de las tarifas de transacción y las recompensas en bloque se quemarán, según lo determine la DAO, por lo que el suministro de tokens CORE se acerca asintóticamente al límite máximo sin excederlo.
 
 ## Conclusión
 
-CORE tokenomics creates a balanced economic system that supports network security, governance, and utility. With a fixed supply cap, predictable emission schedule, and incentives aligned across Bitcoin miners, Bitcoin holders, and CORE token holders, the model supports sustainable ecosystem growth while preserving the network's decentralized nature. This design encourages long-term participation from stakeholders across both the Bitcoin and Core ecosystems.
+Los tokenomics de CORE establecen un sistema económico equilibrado que respalda la seguridad de la red, la gobernanza y la utilidad. Con un suministro fijo, un programa de emisión predecible y incentivos alineados entre mineros de Bitcoin, holders de Bitcoin y holders de tokens CORE, el modelo favorece un crecimiento sostenible del ecosistema preservando su naturaleza descentralizada. Este diseño fomenta la participación a largo plazo de los stakeholders tanto en el ecosistema de Bitcoin como en el de Core.
