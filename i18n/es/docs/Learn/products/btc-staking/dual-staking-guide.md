@@ -1,12 +1,12 @@
 ---
-sidebar_label: Guía de Dual Staking
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
 # Dual Staking en Core
 
-Esta guía de usuario está diseñada para guiarte a través del proceso de Dual Staking en Core. Core’s Self-Custodial Bitcoin Staking allows users to earn yield in CORE by staking their Bitcoins and delegating them to validators on Core. Dual Staking unlocks higher yield tiers by staking Bitcoin and CORE to enhance yield generation from Self-Custodial Bitcoin staking further. Vamos a profundizar en cómo funciona y cómo puedes comenzar a apostar hoy mismo.
+Esta guía de usuario está diseñada para guiarte a través del proceso de Dual Staking en Core. El Staking Autocustodiado de Bitcoin de Core permite a los usuarios obtener rendimiento en CORE al hacer staking con sus Bitcoins y delegarlos a validadores en Core. El Dual Staking desbloquea niveles de rendimiento más altos al hacer staking tanto de Bitcoin como de CORE, lo que mejora aún más la generación de rendimiento del Staking Autocustodiado de Bitcoin. Vamos a profundizar en cómo funciona y cómo puedes comenzar a apostar hoy mismo.
 
 ## Comenzando con el Staking Dual
 
@@ -23,7 +23,7 @@ Hay varias formas de participar en el Staking Dual con BTC y CORE, dependiendo d
 Para comenzar y poder hacer staking dual de CORE y BTC a través del [sitio web oficial de staking de Core](https://stake.coredao.org/staking), debes cumplir con los siguientes requisitos:
 
 1. **Extensión de navegador de una billetera de Bitcoin compatible:** Para participar en el proceso de staking de BTC, debes instalar extensiones de navegador de alguna de las billeteras de Bitcoin compatibles, como Xverse, Unisat y/o OKX Wallet (consulta aquí para ver las billeteras compatibles más recientes). Debes usar la versión de escritorio al utilizar el sitio web oficial de staking. También puedes hacer staking directamente usando la aplicación móvil de Element Wallet.
-2. **Dirección de billetera Core para recompensas:** Prepara tu dirección de billetera de Core para hacer staking de CORE y recibir [recompensas en tokens CORE por hacer staking de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
+2. **Dirección de billetera Core para recompensas:** Prepara tu dirección de billetera de Core para hacer staking de CORE y recibir [recompensas en tokens CORE por hacer staking de Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide#prerequisites). Si no tienes una dirección de cartera Core, puedes crear una rápidamente conectándote a MetaMask. Para más información sobre cómo configurar MetaMask para que funcione con la red Core, sigue la guía detallada disponible [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
 
 ## Consideraciones clave para la apuesta dual
 
@@ -46,9 +46,9 @@ A continuación se detallan algunos puntos clave a tener en cuenta al apostar tu
 
 ## Tutorial paso a paso sobre el doble stake
 
-Core’s Self-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn yield through Bitcoin staking. Los usuarios pueden apostar su Bitcoin de manera nativa en la red Bitcoin a través de un mecanismo basado en el tiempo y participar activamente en el mecanismo de Consenso de la blockchain de Core mientras realizan el staking.
+El staking de Bitcoin auto-custodiado en Core introduce un método seguro y descentralizado para que los holders de Bitcoin generen rendimiento mediante el staking de Bitcoin. Los usuarios pueden apostar su Bitcoin de manera nativa en la red Bitcoin a través de un mecanismo basado en el tiempo y participar activamente en el mecanismo de Consenso de la blockchain de Core mientras realizan el staking.
 
-Dual staking is an enhancement to Core’s Self-custodial BTC staking, allowing users to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Las mayores proporciones de staking CORE:BTC desbloquean niveles más altos de rendimiento para el staking de Bitcoin. Para aprovechar el Dual Staking y obtener tasas de recompensa más altas por el staking de BTC, sigue los pasos detallados a continuación.
+El Dual Staking es una mejora al staking auto-custodiado de BTC de Core, que permite a los usuarios desbloquear niveles de rendimiento más altos al hacer staking de Bitcoin y CORE simultáneamente. Las mayores proporciones de staking CORE:BTC desbloquean niveles más altos de rendimiento para el staking de Bitcoin. Para aprovechar el Dual Staking y obtener tasas de recompensa más altas por el staking de BTC, sigue los pasos detallados a continuación.
 
 ### Conectando las Carteras de Bitcoin y Core
 
