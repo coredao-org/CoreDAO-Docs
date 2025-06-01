@@ -8,30 +8,30 @@ sidebar_position: 2
 
 ---
 
-On the Core blockchain, validators are essential nodes responsible for maintaining the network's security, decentralization, and integrity. They validate transactions, produce new blocks, and participate in governance through Core’s unique Satoshi Plus consensus, which blends Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Self-Custodial Bitcoin Staking to ensure decentralization, security, and scalability.
+En la blockchain de Core, los validadores son nodos fundamentales responsables de mantener la seguridad, descentralización e integridad de la red. Estos nodos validan transacciones, producen nuevos bloques y participan en la gobernanza mediante el exclusivo consenso Satoshi Plus de Core, el cual combina Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Self-Custodial Bitcoin Staking para garantizar la descentralización, seguridad y escalabilidad.
 
-## Validator Role and Consensus Participation
+## Rol del Validador y Participación en el Consenso
 
-Validators are responsible for maintaining the network's health and continuity. By participating in consensus, they confirm the validity of transactions and contribute to block production. The Satoshi Plus consensus selects validators based on a hybrid scoring system that considers delegated Bitcoin, CORE tokens, and Bitcoin hash power.
+Los validadores son responsables de mantener la salud y continuidad de la red. Al participar en el consenso, confirman la validez de las transacciones y contribuyen a la producción de bloques. El consenso Satoshi Plus selecciona validadores con base en un sistema de puntuación híbrido que considera el Bitcoin delegado, Tokens CORE y hash power de Bitcoin.
 
-Validator sets are rotated periodically, and validator elections occur in epochs, typically every 24 hours (UTC+0), to select the top **27** active validators based on their hybrid scores. The remaining inactive validators must wait for the next round of elections to become active validators before they can participate in block production.
+Los conjuntos de validadores se rotan periódicamente, y las elecciones de validadores ocurren por epochs, típicamente cada 24 horas (UTC+0), para seleccionar a los **27** validadores activos principales según sus hybrid scores. Los validadores inactivos deben esperar hasta la siguiente round de elecciones para convertirse en validadores activos antes de poder participar en la producción de bloques.
 
-## Reward Economics
+## Economía de Recompensas
 
-Validators receive rewards in CORE tokens for participating in Core’s consensus mechanism and producing blocks. Rewards are distributed at the end of each round (approximately every 24 hours) and consist of two primary sources:
+Los validadores reciben recompensas en tokens CORE por participar en el mecanismo de consenso de Core y por producir bloques. Las recompensas se distribuyen al final de cada round (aproximadamente cada 24 horas) y provienen de dos fuentes principales:
 
-- **Base rewards:** Newly minted CORE tokens.
-- **Transaction fees:** Fees collected from transactions included in each block during the round.
+- **Recompensas base:** Nuevos tokens CORE minteados.
+- **Fees por transacción:** Las fees se recaudan de las transacciones incluidas en cada bloque durante la round.
 
-Each validator can set its own **commission rate**, the portion of rewards they retain before distributing the remainder to their delegators. Commission fees are distributed directly to the validator’s specified fee address at the end of each round.
+Cada validador puede establecer su propia **tasa de comisión**, que representa la porción de las recompensas que retienen antes de distribuir el resto entre sus delegadores. Estas comisiones se envían directamente a la dirección de fees especificada por el validador al final de cada round.
 
-Core does **not implement self-bonding**. Validators are not required to stake CORE on themselves to participate. They only earn commissions if other participants delegate to them. If a validator stakes on their own validator, they receive rewards like any regular delegator — not as commission.
+Core **no implementa auto-vinculación**. Los validadores no están obligados a hacer staking de CORE en sí mismos para participar. Solo ganan comisiones si otros participantes les delegan. Si un validador hace staking en su propio validador, recibe recompensas como cualquier otro delegador —no como comisión.
 
-Base rewards are distributed when the final block of the round is confirmed. Currently, **90%** of total base rewards are allocated to validators, while the remaining **10%** is sent to the `System Reward Contract`. Of the 90% allocated to validators, each validator receives rewards proportional to the number of blocks they produce. In the long term, all stable validators are expected to receive approximately equal shares, since block production is uniformly distributed.
+Las recompensas base se distribuyen cuando se confirma el bloque final de la ronda. Actualmente, el **90%** del total de las recompensas base se asigna a los validadores, mientras que el **10 %** restante se envía al contrato `System Reward Contract`. Del 90 % asignado a los validadores, cada uno recibe recompensas proporcionales al número de bloques que produce. A largo plazo, se espera que todos los validadores estables reciban aproximadamente partes iguales, ya que la producción de bloques se distribuye de manera uniforme.
 
-Transaction fees follow the same distribution logic. **90%** of total transaction fees collected during the round are distributed to validators. Validators may apply their commission rate to this amount before distributing the remaining rewards to their delegators. The remaining **10%** of fees is deposited into the `System Reward Contract`.
+Las fees por transacción siguen la misma lógica de distribución. El **90%** del total de las fees recaudadas durante la ronda se distribuye entre los validadores. Los validadores pueden aplicar su tasa de comisión a esta cantidad antes de repartir las recompensas restantes entre sus delegadores. El **10%** restante de las fees se deposita en el `System Reward Contract`.
 
-Validators share rewards with delegators who staked CORE, delegated BTC, or contributed hash power. While commission rates are flexible, validators are incentivized to offer competitive rates in order to attract more delegation and strengthen their hybrid score.
+Los validadores comparten recompensas con los delegadores que hicieron staking de CORE, delegaron BTC o contribuyeron con hash power. While commission rates are flexible, validators are incentivized to offer competitive rates in order to attract more delegation and strengthen their hybrid score.
 
 Commission fees are paid directly to each validator’s designated fee address at the end of every round.
 
