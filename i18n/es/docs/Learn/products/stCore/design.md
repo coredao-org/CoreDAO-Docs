@@ -1,5 +1,5 @@
 ---
-sidebar_label: Diseño
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
