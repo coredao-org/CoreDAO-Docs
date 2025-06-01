@@ -1,0 +1,66 @@
+---
+id: verify-proxy-contract-using-post
+title: Verify proxy contract
+description: Verify proxy contract
+sidebar_label: Verify proxy contract
+hide_title: true
+hide_table_of_contents: true
+api: eJyVV01v2zgQ/SsGT7uFbMl2sAfdUm8KFC2aIGn2EgQBTY1lNhLJkJQ/avi/L0hKFiXRTqob3zzODCly3vCANM4VSp/QgjMtMdEKPUeIC5BYU86+ZihFG5B0tb+TfLdvWI+Ksvzu9uEnipDAEpegQRo/B8RwCShFWNBX2KMIUYZS9FaBNIMMFJFUGNc+R8JbRSVkKNWygggpsoYSo/SA9F4Yb0pLynJ0PD47Mij9mWd7wxi4XOCiuHccFCHCmQamDRMLUVBi1xX/UoZ+8CNRXZhQ130PdQp8+QuIGQtptkdTUNYpcZEHqUYIZ5kEpcI2t/SQaVlw8sq4Z6NMQw4SRWjFZYm1g/65OrEdL+SL8wKwn16DHCNECq7MEkMTCc+gCRY0l4IWIDcg1bnlE86UlhXRXF7LvIISmA5vBqlP1aUN63EgzMqwDh2bCAHL7E59cFdhU15a2kry8vMfuMtxON0cqztJSfjf5RXNgoY17II4ZdkZS0EJMAU/u8cknPF8ZmaUPKuKcF58tVKgP+iHC01L+tteukcF4QUJnH80L8EVPXvh3oKorJj6oHfFZfi8K15JAguehbdEaSz1n5wvjfOgI01LUBqX4qN+eNgN759O3yYoSS6YXqYvXMhLhNl7hPllwvSC6T3n0/eczy6Y3ps7D5t2a6zWQdMGF1XoSJivL2sWUIKzunjNkmSoX7ffupr1Kf7Uk6mOGrk4s2Q69LSQgDVkHXeGfBUiPzJc6TWX9Hdwxnw44wuXS5plwAL0qyH9B9ejL7xife/HCO3GRmxyYONa2cdLnu3HbR/RleOu3/9sbzISpjkZNRqBIgQ7DczUb9eUWK29GOn0L/sRTctRgl5z0woJbnMQWK9RimIsaNwEVbHrk15sLi9eLsrppE2kkgVK0VprodLYzJ9oUHo2WWqiJgz0lsvX2MY0Hcp92+rc7HApXEVuWo7mtHmdhgfVDUaLnPqKpNM1eISmWXBN2Kk9aBl+V+CjvWbANwV7gA6hK/1nTdAxOqFvx62+J131bimeaCe1JLfGVok9zApwO7a62w5ruW2BjsomrYa2jEY6k5AwtjSnh4mvdq3xzR84bUsa5WoNvmB5qKdTSa1CrdUTn8RJi2drFMWHnJD0kUY/BvjsDD4P4tMhcsbD9IyH2RA5w5x3kLrct0hTGfxWa8V7j4bRv5xU5nzbXzooVCGGBlmq29UDyI07epVkqeaqPUsmRl0IrwUmaxjNJgmKvDKSxvF2u51ga51wmcf1VBV//7q4+fFwMzZTjFadrsTUAaaYle5xUMc4V007SzlpkIadjkWBqX1N2JQOdWl8MvXHu8NmSeHy+ByhtSmq6RM6HJZYwaMsjkcDuzejKZoZVXhZmDuywoWCQT4nQUF/3deS+/fo9LgMZutq44nT/GFbeTdYUhMPpU/Ptt3GGUhPRhYu3NhedF83es/LY9TMuCYEhPa4RtY7wlK/pZf1o7Z0F1firbnkeGtSczWDu2bWYgdUYJZXtlogF9J8/wMLKmmg
+sidebar_class_name: post api-method
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Verify proxy contract"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/contracts/verify_proxy_contract"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Verify proxy contract
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"description":"apiCallRequest","content":{"application/json":{"schema":{"title":"ApiCallRequest","type":"object","properties":{"action":{"type":"string"},"address":{"type":"string"},"apikey":{"type":"string"},"blockno":{"type":"integer","format":"int64"},"blocktype":{"type":"string"},"boolean":{"type":"boolean"},"closest":{"type":"string"},"codeformat":{"type":"string"},"compilerversion":{"type":"string"},"constructorArguements":{"type":"string"},"contractaddress":{"type":"string"},"contractaddresses":{"type":"string"},"data":{"type":"string"},"endblock":{"type":"integer","format":"int64"},"evmversion":{"type":"string"},"fromBlock":{"type":"integer","format":"int64"},"gas":{"type":"string"},"gasPrice":{"type":"string"},"guid":{"type":"string"},"hex":{"type":"string"},"index":{"type":"string"},"licenseType":{"type":"integer","format":"int32"},"module":{"type":"string"},"offset":{"type":"integer","format":"int32"},"optimizationUsed":{"type":"string"},"page":{"type":"integer","format":"int32"},"position":{"type":"string"},"q":{"type":"string"},"runs":{"type":"integer","format":"int32"},"sort":{"type":"string"},"sourceCode":{"type":"string"},"startblock":{"type":"integer","format":"int64"},"tag":{"type":"string"},"timestamp":{"type":"integer","format":"int64"},"to":{"type":"string"},"toBlock":{"type":"string"},"topic0":{"type":"string"},"topic0_1_opr":{"type":"string"},"topic0_2_opr":{"type":"string"},"topic0_3_opr":{"type":"string"},"topic1":{"type":"string"},"topic1_2_opr":{"type":"string"},"topic1_3_opr":{"type":"string"},"topic2":{"type":"string"},"topic2_3_opr":{"type":"string"},"topic3":{"type":"string"},"txhash":{"type":"string"},"value":{"type":"string"}}}}},"required":true}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"201":{"description":"Created","content":{}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
+>
+  
+</StatusCodes>

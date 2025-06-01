@@ -1,0 +1,66 @@
+---
+id: get-balance-using-get
+title: Get CORE balance by address
+description: Get CORE balance by address
+sidebar_label: Get CORE balance by address
+hide_title: true
+hide_table_of_contents: true
+api: eJylVE1v2zAM/SsGTxugxduOumVdUBQYVqBdT0UQMDZjC7MlVaKTBYb++8DYSZMlDYbtZkvk+yCf3QNjFUE/w7QoXGc5wlyB8xSQjbN3JWioiL9gg7agp2hsdTv7AQo8BmyJKUhzDxZbAg1YloFiBAXGggaPXIOCkmIRjBfAk5pAL50JVILm0JGCWNTUIugeeOsFLnIwtoKU1CuDNz9puyd46Shszxn2Nf9CwFhdRx8K3oKS6hV2DYOGBpkiQ0rzPzFuibOb+4dZthwGmy232etcWuLajZPfjZpr0JCjNzmOW8oLF2gxdi+W28XYnffjQxKNFNb7BXWhAQ01s486z50ni95MBKVEN3GhykFkGrtyO1OGG3E19Sb76oquJcu7RJyN41IFU2jj/eqRwtoUAtMFq9mJt8YUZCMJxzjwqceipuzz5COoI5k6zzebzQR3tzuBY2vMv93dzL4/zj5IS1IgHgctn4YD7yK3aI84rs/7xNBhoUy/OPcNGiuYO2H9uItniRgo2G8DFLyxD1Cg949zBbWLLO19v8RIT6FJSY6HoMmaShNx2UhiV9hEOtNWOMtkJVzvHsZwv88Oeb+oXK6Ovok1Np0UgWT+7+mG1F8hGApe0efyEozA/4ezwxQvMo+HaE+MHSyPzWmejr4p+X2l9Bvig6+j
+sidebar_class_name: get api-method
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get CORE balance by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/core_balance_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get CORE balance by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>

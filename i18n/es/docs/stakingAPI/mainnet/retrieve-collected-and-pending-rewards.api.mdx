@@ -1,0 +1,66 @@
+---
+id: retrieve-collected-and-pending-rewards
+title: Retrieve Collected and Pending Rewards
+description: Returns the collected and pending rewards for a given Core address.
+sidebar_label: Retrieve Collected and Pending Rewards
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vstu2zAQ/BWCl7aAa7tFT7o5RtDk1MBxT0EODLm2mFCkslw5NQT9e7GU5Gfa2EVbX/wiZ4azy1nV0kDUaEuywctMzoAq9FFQDkIH50ATGKG8ESV4Y/1SILwoNFEsAgollnYFXkwDglDGIMQ4lANZKlQFEGCU2V0tvSpAZlIHhEm7SA6kZbrnCnAtBxLhubIIRmaEFQwORM1z2KNI3C+51bmgIBAILaygUyYMkLIu6Yg6h0LJrJa0LllCJLR+KZvmnjljGXyEyP9/Ho/57dCMXcANkRGx0hpiXFTOrZlHB0/giRFUWTqrFSOMHiPD1McywsMjaGKjMJSAZFsROhg4Fnvoxi0pqqLgxcJ6k8j8MlUMIVaORFikbwydhAxlM5AFxKiWJ+BPjLH8UTlh/SJgkTBEQNFBCPUQKuoJk4eJwSh69ZC/NZVLyUi/aKQ9f7oW5EUtytuHuem6dvptdrnXunTQU+kEHcGVivm5BFeT26uTCS7m03PxL+bTt+G1U7YAc45B080lP82ijuIci7YUp5nUUZxh0pbhBJu610B+ee3OX/uVctbs5w1HnReAGFAErStEMBxADvpQ2Cbjbv7811y4TPL+WSy08H0EwI/SKet7BhtjBRtvGZXyYGQml5COoyiXmRxFUk/WL0ddhUatVRzUgKt+WlToZCZzojJmo37LR1XaIQ8Qo8Iw4HIkOcI5n5JySw5SHyCI23aHmNxcH2fbzbUwQVcFeGpjjbe8iwebWEu74dNwPBynmxsiFSqVrRtns37uTPfmZH9h296NhxLqbVP8pWHblY3gB41SUVhuMrHujL+TnYtp0m5lJfPvBzIPkXhVXT+oCN/RNQ3/3A5nLomxUT04Hs8L5eLhfN490vtZN8k/iD+e2q8e6AnWR48QK+UqXpl6YaXQskiZ3d03A5mDMoBJfbt1ojWUtLPr6EYyyqZxv17OZdP8BLZNMcg=
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Collected and Pending Rewards"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/rewards/detail"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Returns the collected and pending rewards for a given Core address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The Core address for which to retrieve reward details.","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Reward details retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","description":"Reward details for the given Core address.","properties":{"pendingCoreReward":{"type":"string","description":"Pending CORE rewards for the Core address."},"pendingHashReward":{"type":"string","description":"Pending HASH rewards for the Core address."},"pendingBTCReward":{"type":"string","description":"Pending BTC rewards for the Core address."},"claimedCoreReward":{"type":"string","description":"Collected CORE rewards for the Core address."},"claimedHashReward":{"type":"string","description":"Collected HASH rewards for the Core address."},"claimedBTCReward":{"type":"string","description":"Collected BTC rewards for the Core address."}}}}}}}},"400":{"description":"Invalid Core address or an error occurred while retrieving reward details.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>

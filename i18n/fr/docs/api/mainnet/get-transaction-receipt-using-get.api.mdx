@@ -1,0 +1,66 @@
+---
+id: get-transaction-receipt-using-get
+title: Get transaction receipt
+description: Get transaction receipt
+sidebar_label: Get transaction receipt
+hide_title: true
+hide_table_of_contents: true
+api: eJydU02P0zAQ/SvRnEAyDXD0bQVVtRICtB+nqkKz6TS2SGzveNIPRfnvaNKSLWx3hTjannnvzZvnHgTrDHYJCxJXfOe4P8DKQEzEKD6G6zVYqEnuGEPGSq9uqCKf5D77UC/md2AgIWNLQqxIPQRsCSxg8j/pAAZ8AAuPHbEe1pQr9kmBzmuYHjvPtAYr3JGBXDlqEWwPckiKloV9qGEYzEQge4fZvU4w1fw7wepvjAVJIU/zF3w0AAy0JC6eHBp9EAcWSky+rElcSeJ+XDQPDGTi7W/HOm7AghNJ2ZZlTBQw+VkVmdYYZ5HrElSWD5s4KvbSqOSr5IvPsepaCjJu69n4lyqEuM3fNrfEW18pTMfBSsxgoPEVhUzKcfL4KmHlqPg4ew/mTKYty91uN8PxdRR4as3ll+tP86+383faMhjQGY9aPhwvUszSYjjjeNnfP4aZNiW0lzI16IPijaL6k/dLTRQY3Ycu/WX/VwZczKIdff+Ame65GQa9PuZIt7L2GR8ajcwGm0zP5FQxCAUBC29uTul6W0yJvihWn85Sv8Wm0yLQVP8X3ZTvV+immie6lR7YKx/Y5Wo4i7J+6WH4BdcuZ8s=
+sidebar_class_name: get api-method
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_getTransactionReceipt"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"txhash","in":"query","description":"txhash","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
