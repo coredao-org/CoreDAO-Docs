@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -31,46 +31,33 @@ Las recompensas base se distribuyen cuando se confirma el bloque final de la ron
 
 Las fees por transacción siguen la misma lógica de distribución. El **90%** del total de las fees recaudadas durante la ronda se distribuye entre los validadores. Los validadores pueden aplicar su tasa de comisión a esta cantidad antes de repartir las recompensas restantes entre sus delegadores. El **10%** restante de las fees se deposita en el `System Reward Contract`.
 
-Los validadores comparten recompensas con los delegadores que hicieron staking de CORE, delegaron BTC o contribuyeron con hash power. While commission rates are flexible, validators are incentivized to offer competitive rates in order to attract more delegation and strengthen their hybrid score.
+Los validadores comparten recompensas con los delegadores que hicieron staking de CORE, delegaron BTC o contribuyeron con hash power. Aunque las tasas de comisión son flexibles, los validadores están incentivados a ofrecer tasas competitivas para atraer más delegación y fortalecer su hybrid score.
 
-Commission fees are paid directly to each validator’s designated fee address at the end of every round.
+Las fees de comisión se pagan directamente a la dirección de fees designada por cada validador al final de cada round.
 
-> **Note:** Rewards are settled **per round**, not per block. Each round corresponds to a full validator election cycle (~24 hours, UTC+0).
+> **Nota:** Las recompensas se liquidan **por round**, no por bloque. Cada round corresponde a un ciclo completo de elecciones de validadores (~24 horas, UTC+0).
 
-<p align="center">
-![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png) 
-</p>
+<p align="center"></p>
 
-### Sample Reward Calculation
+### Ejemplo de Cálculo de Recompensas
 
-Let us assume that the base reward for a round is **3000 CORE** and that a certain validator sets its commission rate to **20%**. These tokens do not go directly to the proposer. Instead, they are shared among validators and delegators. These **3000 CORE** will be distributed according to each participant's stake. Assume that the fees generated from all transactions in all the blocks in a round was **100 CORE**.
+Supongamos que la recompensa base para una ronda es de **3000 CORE** y que un validador establece una tasa de comisión del **20%**. Estos tokens no se pagan directamente al proponente. Sino que se distribuyen entre todos los validadores y sus delegadores de forma proporcional al stake de cada uno. En este caso, los **3,000 CORE** de recompensa base se distribuirán según la participación de cada actor en el staking. Asumamos que las fees generadas por todas las transacciones en todos los bloques durante la ronda fueron de **100 CORE**.
 
-Assume that the base reward for a round is **3,000 CORE**, and a validator sets a **20%** commission rate. These tokens are not paid directly to the proposer but are distributed among all validators and their delegators proportionally. The base reward, 3000 CORE in this case, will be distributed according to each participant's stake. Also, assume that transaction fees collected during the round total **100** CORE.
+Supongamos que la recompensa base para una ronda es de **3,000 CORE** y que un determinado validador establece su tasa de comisión en **20 %**. Estos tokens no se pagan directamente al proponente, sino que se comparten entre los validadores y delegadores. La recompensa base, 3,000 CORE en este caso, se distribuirán de acuerdo con el stake de cada participante. Supongamos también que las fees generadas durante una ronda fueron de **100** CORE.
 
 ```maths
-    Total Accumulated Reward = Base Reward + Transaction Fees = 3,000 + 100 = 3,100 CORE
-
-    System Reward Contract gets = 3,100 x 10% = 310 CORE  
-
-    Accumulated Validator Reward = (Base Reward + Transaction Fees) x 90% = 3,100 x 90% = 2,790 CORE
-
-    Commission = (Base Reward + Transaction Fees) x 20% = 2,790 x 20% = 558 CORE
-
-    Total Reward Validator gets = Commission = 558 CORE
-
-    All Delegators gets = Accumulated Validator Reward - Commission = 2,790 - 558 = 2,232 CORE
 ```
 
-## Potential Risks and Penalties for Validators
+## Riesgos Potenciales y Penalizaciones para Validadores
 
-While validators in the Core ecosystem are incentivized through block rewards and transaction fees, the role also carries operational and economic risks. Validators are expected to maintain performance, uptime, and network integrity. Failure to do so may result in penalties that impact both reputation and earnings.
+Aunque los validadores en el ecosistema de Core son incentivados mediante recompensas por bloques y fees por transacción, el rol también conlleva riesgos operativos y económicos. Se espera que los validadores mantengan un buen rendimiento, disponibilidad y la integridad de la red. El incumplimiento de estas expectativas puede dar lugar a penalizaciones que afectan tanto su reputación como sus ingresos.
 
-1. **Slashing:** Validators may be subject to slashing if they engage in malicious or negligent behavior, such as: double signing blocks, extended downtime or inactivity, violating consensus rules, etc. Slashing results in a portion of the validator's staked CORE being permanently forfeited, directly impacting financial holdings and trustworthiness.
+1. **Slashing:** los validadores pueden estar sujetos a slashing si incurren en comportamientos maliciosos o negligentes, como la doble firma de bloques, periodos prolongados de inactividad o desconexión, violaciones de las reglas de consenso, entre otros. El slashing implica la pérdida permanente de una parte del CORE apostado por el validador, lo que afecta directamente sus fondos y su confiabilidad.
 
-2. **Jailing:** Validators that consistently underperform, go offline, or breach protocol rules may be jailed. A jailed validator is temporarily removed from the active validator set, making them ineligible to produce blocks or earn rewards. Repeated jailing can also lead to long-term reputation damage within the community or removal from the network.
+2. **Jailing:** los validadores que presenten un rendimiento deficiente de manera consistente, se desconecten o infrinjan las reglas del protocolo pueden ser enjaulados. Un validador enjaulado es retirado temporalmente del conjunto activo de validadores, quedando inhabilitado para producir bloques o recibir recompensas. El enjaulamiento repetido también puede dañar gravemente su reputación dentro de la comunidad o llevar a su expulsión de la red.
 
-3. **Loss of Delegation:** Delegators may withdraw their stake from underperforming validators and reallocate it to more reliable ones. This can significantly reduce a validator’s reward share.
+3. **Pérdida de Delegaciones:** los delegadores pueden retirar su participación de validadores con bajo rendimiento y reasignarla a otros más confiables. Esto puede reducir significativamente la proporción de recompensas que recibe un validador.
 
-4. **Stake Lock-up and Liquidity:** Validators are required to lock **10,000 CORE tokens** as collateral to become part of Core network of validators participating in consensus. These tokens are subject to lock-up periods and cannot be withdrawn or transferred during that time. This introduces liquidity risk, especially during volatile market conditions or unforeseen validator downtime.
+4. **Bloqueo de Stake y Liquidez:** Se requiere que los validadores bloqueen **10,000 CORE** como colateral para formar parte de la red de validadores que participan en el consenso de Core. Estos tokens están sujetos a periodos de bloqueo y no pueden ser retirados ni transferidos durante ese tiempo. Esto introduce un riesgo de liquidez, especialmente en condiciones de mercado volátiles o durante interrupciones inesperadas en el funcionamiento del validador.
 
-5. **Operational and Security Risks:** Validators must maintain secure, high-availability infrastructure. Failures in system security, uptime, or performance may result in missed blocks, slashing, or jailing. Validators are responsible for monitoring their systems, maintaining software updates, and ensuring reliable operations around the clock.
+5. **Riesgos Operativos y de Seguridad:** los validadores deben mantener una infraestructura segura y con alta disponibilidad. Las fallas en la seguridad del sistema, el tiempo de actividad o el rendimiento pueden derivar en bloques perdidos, slashing o jailing. Los validadores son responsables de monitorear sus sistemas, mantener actualizaciones de software y asegurar operaciones confiables las 24 horas del día.
