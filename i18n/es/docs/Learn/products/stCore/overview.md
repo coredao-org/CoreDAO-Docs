@@ -1,14 +1,14 @@
 ---
-sidebar_label: Resumen
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# stCORE - Liquid Staked CORE
+# stCORE – Liquid Staked CORE
 
 ---
 
-## What is Liquid Staking?
+## ¿Qué es el Liquid Staking?
 
 Liquid Staking with stCORE enables CORE token holders to participate in network security while maintaining token liquidity. Unlike traditional staking where tokens become locked and unavailable for other uses, stCORE represents staked CORE tokens in a liquid, transferable form. This allows holders to simultaneously earn staking rewards and utilize their position across DeFi applications, effectively preserving capital efficiency while supporting network security.
 
