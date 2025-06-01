@@ -8,48 +8,48 @@ sidebar_position: 2
 
 ---
 
-stCORE está diseñado para mejorar la utilidad del token CORE y simplificar el proceso de staking. This initiative allows token holders to maximize the potential of their assets with greater flexibility and efficiency.
+stCORE está diseñado para mejorar la utilidad del token CORE y simplificar el proceso de staking. Esta iniciativa permite a los titulares de tokens maximizar el potencial de sus activos con mayor flexibilidad y eficiencia.
 
 ## Resumen del Diseño
 
-Liquid staking via stCORE is designed as follows:
+El liquid staking a través de stCORE se estructura de la siguiente manera:
 
-- A new module called `Earn` is introduced alongside a standard ERC-20 token, **stCORE**
-- Users interact with the `Earn` module to mint, redeem, and withdraw assets
-- The `Earn` module interacts with Core platform contracts such as `PledgeAgent` (staking) and `CandidateHub`
-- All value accrued by the `Earn` module is reflected in the **stCORE** token value
-- The **CORE/stCORE** conversion ratio is updated **daily**
-- Additional methods are provided to allow the system operator to rebalance and optimize staking across validators
+- Se introduce un nuevo módulo llamado `Earn` junto con un token ERC-20 estándar denominado **stCORE**
+- Los usuarios interactúan con el módulo `Earn` para mintear, canjear y retirar activos
+- El módulo `Earn`interactúa con contratos de la plataforma Core como `PledgeAgent` (staking) y `CandidateHub`
+- Todo el valor acumulado por el módulo `Earn`se refleja en el valor del token **stCORE**
+- La relación de conversión **CORE/stCORE** se actualiza **diariamente**
+- Se proporcionan métodos adicionales para que el operador del sistema pueda rebalancear y optimizar el staking entre validadores
 
 ## Perspectiva del Usuario
 
 ### Mint
 
-Los usuarios pueden acuñar stCORE usando CORE. At any given time during the day (UTC), the conversion ratio remains fixed. For example, if the ratio is 1:1.1, users can mint 100 stCORE using 110 CORE.
+Los usuarios pueden acuñar stCORE usando CORE. En cualquier momento del día (hora UTC), la relación de conversión permanece fija. Por ejemplo, si la relación es 1:1.1, los usuarios pueden mintear 100 stCORE usando 110 CORE.
 
-### Acuñar
+###
 
-Users can redeem any amount of stCORE they hold. For example, if the conversion ratio is 1:1.1, users can redeem 100 stCORE to receive 110 CORE.
+Los usuarios pueden hacer redeem de cualquier cantidad de stCORE que posean. Por ejemplo, si la relación de conversión es 1:1.1, los usuarios pueden hacer redeem de 100 stCORE para recibir 110 CORE.
 
 :::note
-There is a redemption period of **7 days**. Once users initiate a redemption, they must wait **7 days** before withdrawing the CORE tokens to their wallet.
+Existe un período de redeem de **7 días**. Una vez que los usuarios inicien el redeem, deberán esperar **7 días** antes de poder retirar los tokens CORE a su wallet.
 :::
 
-## Common ERC-20 Use Cases
+## Casos de uso comunes con ERC-20
 
-stCORE is a standard ERC-20 token and can be used in all typical ERC-20 scenarios: transfers, liquidity provision on DEXs, swaps, and more.
+stCORE es un token estándar ERC-20, por lo que puede utilizarse en todos los escenarios típicos de ERC-20: transferencias, provisión de liquidez en DEXs, swaps, entre otros.
 
 ## Implementaciones
 
-The implementation of the `Earn` module for liquid staking can be found [here](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
+La implementación del módulo `Earn` para liquid staking puede consultarse [aquí](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
-User methods in the `Earn` module include:
+Métodos para usuarios en el módulo `Earn`:
 
-- **`mint()`:** Mint stCORE using CORE
-- **`redeem()`:** Redeem stCORE for CORE
-- **`withdraw()`:** Withdraw CORE to the wallet after the redemption period
+- **`mint()`:** permite mint de stCORE utilizando CORE
+- **`redeem()`:** permite redeem de stCORE a cambio de CORE
+- **`withdraw()`:** permite retirar CORE a la billetera después del período de redeem
 
-Operator methods in the `Earn` module include:
+Métodos para el operador en el módulo `Earn`:
 
 - **`afterTurnRound()`:** Implements autocompounding
 - **`rebalance()`:** Balances staking between the most and least staked validators
