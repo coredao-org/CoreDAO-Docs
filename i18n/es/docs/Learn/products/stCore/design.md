@@ -51,56 +51,56 @@ Métodos para usuarios en el módulo `Earn`:
 
 Métodos para el operador en el módulo `Earn`:
 
-- **`afterTurnRound()`:** Implements autocompounding
-- **`rebalance()`:** Balances staking between the most and least staked validators
-- **`manualRebalance()`:** Manually transfers staking between validators
+- **`afterTurnRound()`:** implementa autocompounding
+- **`rebalance()`:** reajusta el staking entre los validadores más y menos delegados
+- **`manualRebalance()`:** permite mover staking manualmente entre validadores
 
-### Validator Selection on Mint/Redeem
+### Selección de validadores al hacer Mint/Redeem
 
-Whenever a `mint` happens, the `Earn` contract delegates CORE to `PledgeAgent`. While when a `redeem` happens, the `Earn` contract undelegates CORE from `PledgeAgent`. Esto se implementa de esta manera para mantener la contabilidad más simple.
+Cuando ocurre un `mint`, el contrato `Earn` delegará CORE a `PledgeAgent`. Cuando ocurre un `redeem`, el contrato`Earn` des-delegará CORE desde`PledgeAgent`. Esto se implementa de esta manera para mantener la contabilidad más simple.
 
-When users mint, they must specify a validator address to stake the CORE with. This ensures equal treatment of all validator candidates, whether elected or queued. For a smoother experience, the official frontend may randomly select a validator on behalf of the user.
+En el proceso de mint, los usuarios deben especificar una dirección de validador para delegar el CORE. Esto garantiza un tratamiento equitativo para todos los candidatos a validadores, estén elegidos o en espera. Para facilitar la experiencia del usuario, el frontend oficial puede seleccionar aleatoriamente un validador por él.
 
-During redemption, the `Earn` contract selects validators randomly using `_randomIndex()`. This random index determines where in the validator list the system starts undelegating CORE until the requested amount is reached.
+En el proceso de redeem, el contrato `Earn` selecciona validadores aleatoriamente usando`_randomIndex()`. Este índice aleatorio determina en qué parte de la lista de validadores comienza la des-delegación de CORE hasta alcanzar la cantidad solicitada.
 
-### Keeping Validators Balanced in Stake Amounts
+### Manteniendo el Equilibrio de Staking entre Validadores
 
-Validator distribution works as follows:
+La distribución entre validadores funciona de la siguiente manera:
 
-- When minting, users choose the validator
-- When redeeming, the system randomly selects validators
+- Durante el mint, los usuarios eligen el validador
+- Durante el redeem, el sistema selecciona validadores aleatoriamente
 
-This system naturally balances staking across validators. However, large mint or redeem operations can disrupt this balance. To correct such imbalances, two rebalancing methods are available:
+Este enfoque genera un equilibrio natural en la distribución del staking entre los validadores. Sin embargo, operaciones grandes de mint o redeem pueden desequilibrar este reparto. Para corregir estos desequilibrios, existen dos métodos de reequilibrio:
 
-- **`rebalance()`:** Automatically balances the validator with the most staked CORE and the one with the least, if the difference exceeds a set threshold
-- **`manualRebalance()`:** Allows the operator to manually redistribute stake between validators
+- **`rebalance()`:** Reequilibra automáticamente el validador con más CORE en staking y el que tiene menos, si la diferencia supera un umbral predefinido
+- **`manualRebalance()`:** Permite al operador redistribuir manualmente el staking entre validadores
 
 ### Cálculo de la Relación de Conversión stCORE/CORE
 
-Each round, after the turn round completes, the `Earn` module:
+En cada round, después de que se completa la turn round, el módulo `Earn`:
 
-- Collects rewards from validators
-- Re-delegates rewards to the same validators (autocompounding)
-- Moves stake from jailed/inactive validators to active ones to maximize APR
+- Recolecta recompensas de los validadores
+- Re-delega las recompensas a los mismos validadores (autocompounding)
+- Mueve el stake desde validadores jailed/inactivos hacia validadores activos para maximizar el APR
 
-Then, the conversion ratio is recalculated using the formula:
+Luego, el ratio de conversión se recalcula usando la fórmula:
 
 ```
     Cantidad de tokens CORE apostados en PledgeAgent / stCORE.totalsupply() 
 ```
 
-Since **rewards claiming only happens once per day**, the conversion rate remains same for the entire day until the next turn round happens. The logics for this are implemented in the `afterTurnRound()` method.
+Dado que **la recolección de recompensas solo ocurre una vez al día**, el ratio de conversión se mantiene constante durante todo el día hasta que ocurre la siguiente turn round. La lógica correspondiente se implementa en el método `afterTurnRound()`.
 
 ### Manejo de la Protección de Deudas al delegar/desdelegar
 
-In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** >= 1.
+En el contrato `PledgeAgent` (el contrato de staking), al delegar, se _requiere_ que la cantidad de CORE sea >= 1.
 
-Whereas, upon  undelegation
+Al momento de undelegation
 
 - La cantidad de CORE **debe** ser >= 1 **Y**
 - El CORE restante en un validador de esta dirección **debe** ser >= 1
 
-When handling `delegate` and `undelegate` internally, the `Earn` module must also follow the same restrictions.
+Cuando se maneja `delegate` y `undelegate` de manera interna, el módulo`Earn` también debe seguir estas restricciones.
 
-The implementation of these requriements can be found in `_undelegateWithStrategy()` method.
+La implementación de estos requisitos puede encontrarse en el método `_undelegateWithStrategy()`.
 
