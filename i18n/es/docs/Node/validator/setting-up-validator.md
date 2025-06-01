@@ -1,93 +1,69 @@
 ---
-sidebar_label: Setup Validator Node
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
-# Setting Up Validator Nodes on Core
+
+# Configuración de Nodos Validadores en Core
 
 ---
 
-This guide walks you through the process of setting up a validator node on the Core Network. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
+Esta guía te guía paso a paso en el proceso de configurar un nodo validador en la Red de Core. Cubre la instalación de las dependencias del sistema, la compilación del software del nodo Core, la inicialización con snapshot data y el inicio de tu nodo validador.
 
-### System Requirements for Validator Node
+### Requisitos del Sistema para Nodo Validador
 
-Before you begin, please ensure your system meets the required hardware and software specifications.
+Antes de comenzar, asegúrate de que tu sistema cumpla con las especificaciones de hardware y software requeridas.
 
-#### Supported OS Platforms
+#### Sistemas Operativos Compatibles
 
-Currently, the supported OS platforms include Mac OS X and Linux.
+Actualmente, los sistemas operativos compatibles incluyen Mac OS X y Linux.
 
 #### Hardware Requirements
 
-<Tabs
-defaultValue="testnet2"
-values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet', value: 'testnet'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-For Validator Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+<Tabs defaultValue="testnet2" values={[ {label: 'Testnet2', value: 'testnet2'}, {label: 'Testnet', value: 'testnet'}, {label: 'Mainnet', value: 'mainnet'}, ]}> Para nodos validador en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    
 
   </TabItem>
   <TabItem value="testnet">
-    For Validator Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+Para nodos validador en **Core Blockchain Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    
 
   </TabItem>
   <TabItem value="mainnet">
-   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+Para nodos validador en **Core Blockchain Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
-    | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    
 
   </TabItem>
 </Tabs>
 
-### Clone the Core Blockchain Codebase
+### Clonar el Codebase de Core Blockchain
 
-It is recommend to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to directly build and run your validator node, i.e., running your validator node directly from Core blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
-
-```bash
-git clone https://github.com/coredao-org/core-chain
-cd core-chain
-```
-
-#### Install Depedencies
-
-After cloning the repo, next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
+Se recomienda utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar directamente tu nodo validador, es decir, ejecutar tu nodo directamente desde el código base de Core blockchain. Las instrucciones para compilar el código fuente se encuentran en el archivo [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
 ```bash
-make geth
+
 ```
 
-This will download and install the necessary dependencies and build the `geth` binary. The `geth` binary will be located at `./build/bin/geth`.
+#### Instalar Dependencias
 
-### Setting up the Node
+Después de clonar el repositorio, el siguiente paso es instalar todas las dependencias necesarias para compilar el binario de geth (Go Ethereum). Ejecuta el siguiente comando para instalar las dependencias:
 
-There are 2 approaches to setup a validator node from scratch on the Core blockchain:
+```bash
 
-- **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
+```
+
+Esto descargará e instalará las dependencias necesarias y compilará el binario de `geth`. El binario `geth` estará ubicado en `./build/bin/geth`.
+
+### Configuración del Nodo
+
+Existen 2 métodos para configurar un nodo validador desde cero en la blockchain de Core:
+
+- **Mediante Snapshot (Recomendado):** descargar el [snapshot más reciente de la blockchain de Core](https://github.com/coredao-org/core-snapshots) y sincronizar el nodo con base en este.
 - **From Genesis (Not Recommend):** sync the whole Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
@@ -103,21 +79,13 @@ Syncing from the genesis block can take a significant amount of time. It is reco
 3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
 
 ```bash
-geth --datadir node init genesis.json
+
 ```
 
 You should see the following output:
 
 ```bash
-INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
-INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
-INFO [07-18|14:57:20.724] Writing custom genesis block 
-INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
-INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
-INFO [07-18|14:57:20.729] Writing custom genesis block 
-INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
+
 ```
 
 4. **Download & Extract the Latest Snapshot:** Download and extract the latest Core blockchain snapshot from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
@@ -125,14 +93,13 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address which will be your validator's address (consensus address).
 
 ```bash
-# generate the consensus key and input the password
-geth account new --datadir ./node
+
 ```
 
 You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
 
 ```bash
-echo {your-password} > password.txt
+
 ```
 
 Make sure to follow these key considerations:
@@ -144,8 +111,7 @@ Make sure to follow these key considerations:
 Use the following command to start the validator node.
 
 ```bash
-# start a validator node
-geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000  --networkid {core-chain-id}
+
 ```
 
 Let’s break down the flags used in this command:
@@ -179,7 +145,7 @@ If you prefer to sync your validator node from the genesis block instead of usin
 - Then start the validator node using the command below:
 
   ```bash
-  geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
+
   ```
 
 ⚠️ **Note:** Syncing from genesis can take a lot of time depending on system resources and network speed.
@@ -191,10 +157,7 @@ Once your validator node is up and running, it’s important to monitor the logs
 The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
 
 ```bash
-# Tail the logs in real-time
-# This will show you the most recent log entries and continuously update the log display.
 
-tail -f ./node/logs/core.log
 ```
 
 These logs typically show that the node is importing new chain segments on the blockchain indicating that it’s correctly receiving and processing blocks.
