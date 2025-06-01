@@ -1,19 +1,19 @@
 ---
-sidebar_label: Staking Bitcoin en Core
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Self-Custodial Bitcoin Staking
+# Staking de Bitcoin Autocustodiado
 
-This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards.
+Esta guía del usuario está diseñada para guiarte paso a paso en el proceso de staking de tu Bitcoin en la blockchain de Core para ganar recompensas en tokens CORE.
 
 ## Requisitos Previos
 
 Para poder realizar stake, debes tener los siguientes requisitos previos:
 
 1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like Xverse, Unisat, and/or OKX Wallet (visit stake.coredao.org for the latest supported wallets). Debes utilizar una versión de escritorio, ya que actualmente no se admiten billeteras móviles ni de hardware. También puedes realizar staking directamente usando la aplicación móvil de Element Wallet.
-2. **Dirección de billetera Core para recompensas:** Prepare su dirección de billetera Core para recibir recompensas en tokens CORE por hacer staking de Bitcoin. Si no tiene una dirección de billetera Core, puede crear una rápidamente conectándose a MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
+2. **Dirección de billetera Core para recompensas:** Prepare su dirección de billetera Core para recibir recompensas en tokens CORE por hacer staking de Bitcoin. Si no tiene una dirección de billetera Core, puede crear una rápidamente conectándose a MetaMask. Para obtener más información sobre cómo configurar MetaMask para que funcione con la red Core, sigue la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
 
 ## **Consideraciones clave para el staking de BTC**
 
@@ -29,23 +29,23 @@ Los siguientes son algunos puntos clave que los usuarios deben tener en cuenta a
   - También puedes ver tus fondos apostados buscando la dirección de staking en un explorador de Bitcoin, [Mempool.space](https://mempool.space/).
 5. **Consideraciones para los Períodos de Bloqueo**
   - Una vez que bloqueas tu Bitcoin para staking, será inaccesible hasta que concluya el período de staking. Teniendo en cuenta sus objetivos de inversión y su tolerancia al riesgo, le recomendamos seleccionar cuidadosamente su período de bloqueo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a períodos más largos.
-6. **Supported Bitcoin Address Types**
-  - Core’s BTC staking supports the following Bitcoin address formats:
+6. **Tipos de Direcciones de Bitcoin Compatibles**
+  - El staking de BTC en Core admite los siguientes formatos de direcciones de Bitcoin:
 
-    | Address Type                              | Prefix | Example (hypothetical)  |
-    | ----------------------------------------- | ------ | ------------------------------------------ |
-    | Legacy (P2PKH)         | 1      | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
-    | Nested SegWit (P2SH)   | 3      | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
-    | Native SegWit (Bech32) | bc1    | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
-    | Taproot (P2TR)         | bc1p   | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
+    | Tipo de Dirección | Prefijo | Ejemplo (hipotético) |
+    | ----------------- | ------- | --------------------------------------- |
+    |                   |         |                                         |
+    |                   |         |                                         |
+    |                   |         |                                         |
+    |                   |         |                                         |
 
 :::info
-Ensure your BTC wallet uses one of the supported formats above when participating in Core’s Self-Custodial BTC staking. Always double-check your wallet address before staking.
+Asegúrate de que tu wallet de BTC utilice uno de los formatos compatibles indicados al participar en el staking autocustodiado de BTC en Core. Verifica siempre tu dirección antes de hacer staking.
 :::
 
-## Workflow of Self-Custodial BTC Staking
+## Flujo de Trabajo del Staking Autocustodiado de BTC
 
-Self-custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn staking rewards. By locking your Bitcoin natively on the Bitcoin network through a time-bound mechanism, you can actively participate in the Core blockchain's consensus mechanism while staking. Aquí están los pasos involucrados en este proceso.
+El staking autocustodiado de Bitcoin introduce un método seguro y descentralizado para que los holders de Bitcoin obtengan recompensas por staking. Al bloquear tu Bitcoin de forma nativa en la red de Bitcoin mediante un mecanismo con límite de tiempo, puedes participar activamente en el mecanismo de consenso de la blockchain de Core mientras haces staking. Aquí están los pasos involucrados en este proceso.
 
 1. **Iniciar staking:** Comience accediendo a la [Herramienta de staking de BTC basada en CLI](https://github.com/coredao-org/btc-staking-tool) (para usuarios técnicos) o a la [plataforma de staking basada en la web](https://stake.coredao.org/) (para usuarios generales).
 2. **Apuesta Bitcoin con bloqueo de tiempo:** Usted apuesta su Bitcoin enviando una transacción en la red Bitcoin con un parámetro de bloqueo de tiempo, y su Bitcoin permanece bloqueado hasta que finalice el período especificado. Asegúrese de cumplir con los requisitos para que una transacción sea válida y elegible; consulte [aquí](../btc-staking/design#requirements-for-transaction-validity) para obtener más detalles.
@@ -57,7 +57,7 @@ Self-custodial Bitcoin staking introduces a secure and decentralized method for 
 5. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. **Conecta una billetera Core para obtener recompensas:** En el campo de devolución, verifica la dirección de tu billetera Core; recibirás recompensas de tokens CORE en esta dirección. Para ser elegible para ganar recompensas, es necesario completar un ciclo completo de staking (00:00:00 - 23:59:29 UTC).
 6. **Redimir Bitcoin:** Una vez que expire el tiempo de bloqueo del staking, el Bitcoin bloqueado permanecerá inactivo en la dirección de staking hasta que sea redimido por el usuario.
 
-## Self-Custodial Bitcoin Staking Walkthrough
+## Guía del Staking Autocustodiado de Bitcoin
 
 Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar recompensas de staking en tokens CORE, sigue los pasos detallados a continuación para hacer staking de Bitcoin a través del [sitio web oficial de staking](http://stake.coredao.org/) de Core.
 
@@ -177,4 +177,4 @@ Nota: Para el staking de BTC, transferir el validador de staking interrumpirá e
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
-**¡Felicidades!** Has apostado con éxito tu Bitcoin en la blockchain de Core y ahora ganarás activamente tokens CORE por tu Bitcoin delegado. Through staking Bitcoin and helping to elect validators on Core, you actively contribute to the security of the Core network, supporting its decentralization and stability.
+**¡Felicidades!** Has apostado con éxito tu Bitcoin en la blockchain de Core y ahora ganarás activamente tokens CORE por tu Bitcoin delegado. Al hacer staking con Bitcoin y ayudar a elegir validadores en Core, contribuyes activamente a la seguridad de la red Core, apoyando su descentralización y estabilidad.
