@@ -1,21 +1,21 @@
 ---
-sidebar_label: Cómo funciona
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# How Self-Custodial Bitcoin Staking Works {#how-self-custodial-bitcoin-staking-works}
+# Cómo Funciona el Staking Autocustodiado de Bitcoin {#how-self-custodial-bitcoin-staking-works}
 
-Self-Custodial Bitcoin Staking is one of the three fundamental components of Core’s Satoshi Plus consensus. This feature integrates Bitcoin holders into Core’s consensus, enhancing network security while enabling Bitcoin to become a yield-generating asset.
+El Staking Autocustodiado de Bitcoin es uno de los tres componentes fundamentales del consenso Satoshi Plus de Core. Esta funcionalidad integra a los poseedores de Bitcoin en el consenso de Core, mejorando la seguridad de la red mientras permite que el Bitcoin se convierta en un activo generador de rendimiento.
 
-Unlike traditional staking mechanisms that require users to transfer custody of their assets, Core's approach leverages [`CheckLockTimeVerify (CLTV`)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) timelocks, a Bitcoin-native cryptographic function. This ensures Bitcoin remains securely in users’ wallets while still being staked to support the Core network.
+A diferencia de los mecanismos de staking tradicionales que requieren que los usuarios transfieran la custodia de sus activos, el enfoque de Core aprovecha los timelocks de [`CheckLockTimeVerify (CLTV`)](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una función criptográfica nativa de Bitcoin. Esto garantiza que el Bitcoin permanezca de forma segura en las wallets de los usuarios, al mismo tiempo que se utiliza en staking para apoyar la red de Core.
 
-## Cómo funciona el bloqueo temporal CLTV (CheckLockTimeVerify)
+## Cómo funciona el Timelock CLTV
 
 El bloqueo temporal CLTV es una función criptográfica nativa de Bitcoin que especifica una condición bajo la cual la salida de una transacción no puede ser gastada hasta que haya pasado un punto específico en el tiempo. Este tiempo puede definirse como una fecha y hora específica o por la altura del bloque. CLTV actúa como una bóveda con bloqueo temporal, restringiendo el acceso a los Bitcoines en staking hasta que transcurre un tiempo predeterminado. Cuando un usuario inicia una transacción CLTV:
 
-- The Bitcoin remains locked for a specified duration.
-- Once the timelock expires, the Bitcoin is automatically returned to the user.
+- El Bitcoin permanece bloqueado durante un período de tiempo especificado.
+- Una vez que el timelock expira, el Bitcoin se devuelve automáticamente al usuario.
 - Los usuarios ganan recompensas de staking en tokens CORE por la duración del bloqueo.
 
 A diferencia de los modelos de staking con custodia que involucran a terceros, el modelo de staking de Core permite a los usuarios mantener el control total de su Bitcoin mientras participan en la seguridad de la red y obtienen recompensas por ello.
@@ -24,7 +24,7 @@ A diferencia de los modelos de staking con custodia que involucran a terceros, e
 
 #### 1. Creando una transacción de staking CLTV
 
-To participate in Bitcoin staking, holders must create a valid timelock transaction using Bitcoin's CLTV (`CheckLockTimeVerify`) function. For the Core network to recognize this transaction as a valid delegation to a validator, the timelock transaction must include specific metadata in the script. This metadata must contain:
+Para participar en el staking de Bitcoin, los holders deben crear una transacción de timelock válida utilizando la función CLTV (`CheckLockTimeVerify`) nativa de Bitcoin. For the Core network to recognize this transaction as a valid delegation to a validator, the timelock transaction must include specific metadata in the script. This metadata must contain:
 
 - **Dirección de Delegación del Validador:** El validador de Core al que el staker está delegando su Bitcoin.
 - **Dirección de Recompensa:** La dirección donde el staker desea recibir las recompensas en CORE.
