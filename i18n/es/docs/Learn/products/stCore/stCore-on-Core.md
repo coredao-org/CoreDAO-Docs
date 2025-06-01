@@ -1,5 +1,5 @@
 ---
-sidebar_label: Staking Líquido con stCORE
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introducción
 
-Liquid Staking with stCORE enhances CORE token utility while streamlining the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, enabling token holders to maximize capital efficiency while participating in network security.
+El Liquid Staking con stCORE mejora la utilidad del token CORE a la vez que simplifica el proceso de staking. Esta guía ofrece un recorrido detallado para el minting y el canje de stCORE, permitiendo a los poseedores de tokens maximizar la eficiencia de su capital mientras participan en la seguridad de la red.
 
 ## Empezando: Requisitos Previos
 
