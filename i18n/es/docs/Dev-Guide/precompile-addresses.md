@@ -22,10 +22,10 @@ A continuación se presenta una lista de direcciones precompiladas de contratos 
 | PledgeAgent                         | [0x0000000000000000000000000000000000001007](https://scan.coredao.org/address/0x0000000000000000000000000000000000001007) |
 | Burn                                | [0x0000000000000000000000000000000000001008](https://scan.coredao.org/address/0x0000000000000000000000000000000000001008) |
 | Foundation                          | [0x0000000000000000000000000000000000001009](https://scan.coredao.org/address/0x0000000000000000000000000000000000001009) |
-| Stake Hub                           | [0x0000000000000000000000000000000000001010](https://scan.coredao.org/address/0x0000000000000000000000000000000000001010) |
-| CORE Agent                          | [0x0000000000000000000000000000000000001011](https://scan.coredao.org/address/0x0000000000000000000000000000000000001011) |
-| Hash Agent                          | [0x0000000000000000000000000000000000001012](https://scan.coredao.org/address/0x0000000000000000000000000000000000001012) |
-| BTC Agent                           | [0x0000000000000000000000000000000000001013](https://scan.coredao.org/address/0x0000000000000000000000000000000000001013) |
-| BTC Stake                           | [0x0000000000000000000000000000000000001014](https://scan.coredao.org/address/0x0000000000000000000000000000000000001014) |
-| BTCLST Stake                        | [0x0000000000000000000000000000000000001015](https://scan.coredao.org/address/0x0000000000000000000000000000000000001015) |
-| BTCLST Token                        | [0x0000000000000000000000000000000000010001](https://scan.coredao.org/address/0x0000000000000000000000000000000000010001) |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
