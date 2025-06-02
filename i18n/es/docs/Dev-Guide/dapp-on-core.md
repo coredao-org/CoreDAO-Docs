@@ -1,5 +1,5 @@
 ---
-sidebar_label: Construya dApp en Core
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 description: Cree una dApp de pila completa en Core
@@ -255,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Consulta [aquí](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) para obtener detalles sobre cómo conseguir tokens tCORE o tCORE2 desde el Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
