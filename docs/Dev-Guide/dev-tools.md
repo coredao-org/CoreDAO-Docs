@@ -23,9 +23,9 @@ import TabItem from '@theme/TabItem';
   <TabItem value="testnet2">
   _Note: This is the latest and updated testnet for Core blockchain and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features._
 
-    * **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
+    * **[Block Explorer](https://scan.test2.btcs.network/):** search and review transactions, accounts, blocks, and more.
 
-    * **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Testnet's RPC service.
+    * **[RPC Endpoints](https://chainlist.org/chain/1114):** RPC endpoints for Core Testnet's RPC service.
 
     * **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
@@ -50,6 +50,7 @@ import TabItem from '@theme/TabItem';
 
   </TabItem>
   <TabItem value="mainnet">
+    
     * **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
 
     * **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
