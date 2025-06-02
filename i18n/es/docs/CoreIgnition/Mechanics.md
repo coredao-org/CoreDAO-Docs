@@ -116,7 +116,7 @@ Los usuarios pueden beneficiarse de multiplicadores base por token para los acti
 
 | Activos Permitidos                                                          | Activos en Billetera | Otorgar préstamos    | Solicitar préstamos  | Provisión de Liquidez |
 | --------------------------------------------------------------------------- | -------------------- | -------------------- | -------------------- | --------------------- |
-| stCORE, CLND                                                                | 1x                   | 2.5x | 3x                   | 3.5x  |
+|                                                                             | 1x                   | 2.5x | 3x                   | 3.5x  |
 | USDT,USDC                                                                   | 1x                   | 1.5x | 2x                   | 3x                    |
 | CORE, WCORE                                                                 | 1x                   | 1.5x | 2x                   | 2.5x  |
 | wETH, solvBTC.CORE                                          | n/a                  | 1.4x | 1.6x | 1.8x  |
