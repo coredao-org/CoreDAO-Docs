@@ -157,39 +157,39 @@ Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de 
 
 Una vez que tu nodo validador esté en ejecución, es importante monitorear los logs para asegurarte de que todo esté funcionando correctamente.
 
-The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
+Los logs se almacenan por defecto en `./node/logs/core.log`, pero pueden redirigirse a otra ubicación si se desea. Puedes ver y seguir los logs en tiempo real utilizando el siguiente comando:
 
 ```bash
 
 ```
 
-These logs typically show that the node is importing new chain segments on the blockchain indicating that it’s correctly receiving and processing blocks.
+Estos logs normalmente muestran que el nodo está importando nuevos segmentos de cadena en la blockchain, lo que indica que está recibiendo y procesando bloques correctamente.
 
-- **Imported new chain segment:** This means the node is successfully receiving new blocks from the network and adding them to the local blockchain.
+- **Imported new chain segment:** Esto significa que el nodo está recibiendo nuevos bloques desde la red y agregándolos a la blockchain local exitosamente.
 
-- **number:** The block number (e.g., `1,596,730` is the block number for that entry).
+- **number:** El número de bloque (por ejemplo, `1,596,730` es el número de bloque para esa entrada).
 
-- **hash:** The unique identifier (hash) for the block, like a fingerprint of the block data (e.g., `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
+- **hash:** El identificador único (hash) del bloque, como una huella digital de los datos del bloque (por ejemplo, 0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c).
 
-- **miner:** The address of the miner who mined that block.
+- **miner:** La dirección del minero que minó ese bloque.
 
-- **blocks:** The number of blocks imported (usually `1` in these logs).
+- **blocks:** El número de bloques importados (usualmente `1` en estos logs).
 
-- **txs:** The number of transactions in the block (e.g., `1` tx or `2` txs).
+- **txs:** El número de transacciones en el bloque (por ejemplo, `1` tx o `2` txs).
 
-- **mgas:** The gas used in the transactions within the block. Gas is the computational work needed to execute transactions (e.g., `0.021` means 0.021 million gas).
+- **mgas:** El gas utilizado en las transacciones dentro del bloque. Gas es el trabajo computacional necesario para ejecutar transacciones (por ejemplo, `0.021` significa 0.021 millones de gas).
 
-- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
+- **elapsed:** El tiempo que tomó importar el bloque, en milisegundos (por ejemplo, `3.003ms`).
 
-- **mgasps:** The speed at which gas is being processed (in million gas per second).
+- **mgasps:** La velocidad a la que se está procesando el gas (en millones de gas por segundo).
 
-- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
+- **triedirty:** La cantidad de memoria "sucia" utilizada (en este caso, alrededor de`869.67 KiB`), lo cual indica cuánta memoria se está utilizando para almacenar temporalmente los datos del bloque.
 
-- **Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are essential to synchronize the blockchain with the network.
+- **Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Las conexiones peer-to-peer son esenciales para sincronizar la blockchain con la red.
 
-- **peercount:** The current number of peers the node is connected to (e.g., `2`).
+- **peercount:** El número actual de peers a los que el nodo está conectado (por ejemplo, `2`).
 
-- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
+- **tried:** El número de peers con los que el nodo ha intentado conectarse (por ejemplo, `12`).
 
-- **static:** The number of fixed/static peers the node is configured to connect to (e.g., `2`).
+- **static:** El número de peers fijos/estáticos con los que el nodo está configurado para conectarse (por ejemplo, `2`).
 
