@@ -37,35 +37,35 @@ Los holders de Bitcoin pueden participar en el consenso Satoshi Plus de Core med
 
 El conjunto de validadores se determina mediante un proceso de elección basado en hybrid score:
 
-1. Every round, all validators receive a hybrid score based on delegated CORE tokens, timelocked Bitcoin, and Bitcoin miner support
-2. The top 27 validators with the highest hybrid scores are elected to the active validator set
-3. Elected validators produce blocks and validate transactions on the Core blockchain
-4. Rewards accumulated during each round are distributed at the end of the round
-5. The next round's validator set is determined based on updated hybrid scores
+1. En cada ronda, todos los validadores reciben un hybrid score a basada en los tokens CORE delegados, el Bitcoin bloqueado y el apoyo de los mineros de Bitcoin
+2. Los 27 validadores con hybrid scores más altos son elegidos para formar parte del conjunto activo de validadores
+3. Los validadores elegidos producen bloques y validan transacciones en la blockchain de Core
+4. Las recompensas acumuladas durante cada ronda se distribuyen al final de la misma
+5. El conjunto de validadores para la siguiente ronda se determina en función de hybrid scores
 
 ## Economía de apuestas
 
-**Reward Sources:**
+**Fuentes de Recompensas:**
 
-- **Block Rewards:** New CORE tokens are minted according to a fixed 81-year schedule with a 3.61% annual reduction rate
-- **Transaction Fees:** A portion of fees from transactions on the Core blockchain contributes to the consensus reward pool
+- **Recompensas por Bloques:** Nuevos tokens CORE se emiten según un calendario fijo de 81 años con una tasa anual de reducción del 3.61%
+- **Fees de Transacción:** Una porción de las fees de las transacciones en la blockchain de Core contribuye al fondo de recompensas del consenso
 
-## Importance of Staking
+## Importancia del Staking
 
-Staking plays several critical roles in the Core ecosystem:
+El staking cumple varios roles críticos en el ecosistema Core:
 
-- **Security:** By requiring validators to have significant support (in terms of delegated CORE, timelocked Bitcoin, and miner support), the network promotes validators with aligned incentives with the broader ecosystem
-- **Decentralization:** The three-pronged approach to validator election mitigates centralization vectors
-- **Economic Sustainability:** The staking mechanism distributes rewards to various participants, incentivizing symbiotic participation
-- **Bitcoin Utility Enhancement:** By enabling Bitcoin holders to participate in consensus while maintaining custody, Core extends Bitcoin's utility beyond simple value storage
+- **Seguridad:** Al requerir que los validadores tengan un apoyo significativo (en términos de CORE delegado, Bitcoin en timelock y apoyo de mineros), la red promueve validadores con incentivos alineados con el ecosistema en general
+- **Descentralización:** El enfoque triple para la elección de validadores mitiga vectores de centralización
+- **Sostenibilidad Económica:** El mecanismo de staking distribuye recompensas a varios participantes, incentivando una participación simbiótica
+- **Mejora de la Utilidad de Bitcoin:** Al permitir que los poseedores de Bitcoin participen en el consenso manteniendo la custodia, Core extiende la utilidad de Bitcoin más allá del simple almacenamiento de valor
 
 ## Dinámicas y estrategias de apuesta
 
 Los participantes de la red Core pueden adoptar varias estrategias de participación para maximizar sus retornos e influencia en la red:
 
-- **Validator Performance:** Delegating to high-performing validators is crucial, as rewards are not accrued by delegators to inactive or malicious validators.
-- **Risk Management:** Diversifying the delegation across multiple validators can help mitigate risks associated with the potential failure of a single validator.
+- **Rendimiento del Validador:** Delegar a validadores de alto rendimiento es crucial, ya que las recompensas no se acumulan para delegadores que apoyan a validadores inactivos o maliciosos.
+- **Gestión de Riesgo:** Diversificar la delegación entre varios validadores puede ayudar a mitigar riesgos asociados con la posible falla de un validador individual.
 
 ## Conclusión
 
-Core's staking architecture represents a significant innovation in consensus design by bridging Bitcoin and modern staking mechanisms. By enabling both CORE and Bitcoin holders to participate in consensus, Core creates a robust, multi-layered security model that aligns incentives across different participant groups.
+La arquitectura de staking de Core representa una innovación significativa en el diseño del consenso al unir Bitcoin con mecanismos modernos de staking. Al permitir que tanto los holders de CORE como de Bitcoin participen en el consenso, Core crea un modelo de seguridad robusto y multinivel que alinea incentivos entre diferentes grupos de participantes.
