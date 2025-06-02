@@ -28,9 +28,7 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
 
-<p align="center">
-  ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
-</p>
+<p align="center"></p>
 
 4\. Complete la información de verificación requerida en la página, específicamente:
 
