@@ -23,15 +23,15 @@ values={[
 _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
 
 ```
-* **[Explorador de Bloques](https://scan.test.btcs.network/):** busca y analiza transacciones, cuentas, bloques y más.
+* **[Block Explorer](https://scan.test2.btcs.network/):** search and review transactions, accounts, blocks, and more.
 
-* **[Endpoints de RPC](https://chainlist.org/chain/1116):** endpoints de RPC para el servicio de la testnet de Core.
+* **[RPC Endpoints](https://chainlist.org/chain/1114):** RPC endpoints for Core Testnet's RPC service.
 
-* **[Faucet de Core](https://scan.test2.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE o tCORE2.
+* **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
 
-* **[Staking de Core](https://stake.test2.btcs.network/):** Sitio web oficial de la testnet de Core para staking.
+* **[Core Staking](https://stake.test2.btcs.network/):** Core's official testnet staking website.
 
-* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** gestión segura de activos digitales con multisig.
+* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** secure multi-sig management of digital assets.
 ```
 
   </TabItem>
@@ -52,22 +52,23 @@ _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core
 
   </TabItem>
   <TabItem value="mainnet">
-    * **[Explorador de Bloques](https://scan.coredao.org/):** busca y analiza transacciones, cuentas, bloques y más.
 
 ```
-* **[Endpoints de RPC](https://chainlist.org/chain/1116):** endpoints de RPC para el servicio de la mainnet de Core.
+* **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
 
-* **[Bridge de Core](https://bridge.coredao.org/):** bridge oficial para el ecosistema de Core (mas detalles en los recursos del bridge de Core)
+* **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Mainnet's RPC service.
 
-* **[Staking de Core](https://stake.coredao.org/):** Sitio web oficial de la mainnet de Core para staking.
+* **[Core Bridge](https://bridge.coredao.org/):** official bridge for the Core ecosystem (more details in Core Bridge Resources)
 
-* **[Proveedor Web3](https://cloud.infstones.com/login):** API de infraestructura escalable provista por InfStones.
+* **[Core Staking](https://stake.coredao.org/):** Core's official mainnet staking website.
 
-* **[Verificador de Contratos Core Scan](https://scan.coredao.org/verifyContract):** herramienta web para verificación de contratos (consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan) para la guia detallada).
+* **[Web3 Provider](https://cloud.infstones.com/login):** scalable API infrastructure provided by InfStones.
 
-* **[Gnosis Safe](https://safe.coredao.org/welcome):** gestión segura de activos digitales con multisig.
+* **[Core Scan Contract Verifier](https://scan.coredao.org/verifyContract):** web tool for contract verification (refer [here](https://docs.coredao.org/docs/Dev-Guide/contract-verify#web-verification-via-core-scan) for detailed guide).
 
-* **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** contrato inteligente oficial de token de CORE envuelto (wrapped CORE).
+* **[Gnosis Safe](https://safe.coredao.org/welcome):** secure multi-sig management of digital assets.
+
+* **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** official wrapped CORE token smart contract.
 ```
 
   </TabItem>
