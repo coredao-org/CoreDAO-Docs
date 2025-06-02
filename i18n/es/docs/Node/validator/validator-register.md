@@ -4,8 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
 
 # Registro de validador
 
@@ -17,9 +16,9 @@ Antes de correr un nodo validador en Core, recomendamos encarecidamente leer él
 
 ## Configurar un nodo completo en modo validador
 
-Before you can register as a validator, you need to set up and run a full node in validator mode following the guide [here](./setting-up-validator.md).
+Antes de poder registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo validador siguiendo la guía indicada [aquí](./setting-up-validator.md).
 
-Make sure your validator node is up and running.
+Asegúrate de que tu nodo validador esté en funcionamiento.
 
 ## Registra tu validador
 
@@ -54,7 +53,7 @@ Después de enviar tu formulario de registro, puedes verificar si el registro fu
 
 ### Revisando los registros
 
-Open your node’s log file and search for the error message `unauthorized validator`. Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
+Abre el log file de tu nodo y busca el mensaje de error `unauthorized validator`. Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-2.avif)
 
@@ -92,34 +91,28 @@ Puedes monitorear el estado de tu validador y su historial de producción de blo
 
 ![formulario-registro-validador](../../../static/img/validator/register/validator-register-4.webp)
 
-## Setting Validator Name
+## Establecer el Nombre del Validador
 
-You may assign a human-readable name to your validator node using the Core Staking UI. This name serves as a label for delegators and network participants to identify your validator in the interface.
+Puedes asignar un nombre legible para humanos a tu nodo validador utilizando la UI de Staking de Core. Este nombre sirve como una etiqueta para que los delegadores y participantes de la red identifiquen tu validador en la interfaz.
 
-### Steps to Set or Update Your Validator Name
+### Pasos para Establecer o Actualizar el Nombre de tu Validador
 
-1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators).
-2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
-3. **Open Validator Details:** Click on your validator to open the Validator Details page.
-4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.
+1. **Accede al Sitio Web de Staking:** navega al [panel de control de validadores](https://stake.coredao.org/validators).
+2. **Ubica tu Validador:** identifica tu entrada en la lista de validadores. Por defecto, los validadores se muestran según su `Fee Address`.
+3. **Abre los Detalles del Validador:** haz clic en tu validador para abrir la página de Detalles del Validador.
+4. **Accede al Menú de Actualización:** en la página de Detalles del Validador, haz clic en el botón de menú (tres puntos verticales) junto al botón de Stake y selecciona "Update Name" en el menú desplegable.
 
-<p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
-</p>
+<p align="center"></p>
 
-4. **Enter Validator Details:** Provide the name and other details in the input form. This name will be publicly visible to delegators and users of the network interface.
+4. **Ingresa los Detalles del Validador:** proporciona el nombre y otros detalles en el formulario. Este nombre será visible públicamente para los delegadores y usuarios de la interfaz de red.
 
-<p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
-</p>
+<p align="center"></p>
 
-5. **Sign Validator Ownership Message:** Click Sign to verify ownership of your validator address by signing the displayed message.
+5. **Firma el Mensaje de Propiedad del Validador:** haz clic en Sign para verificar la propiedad de tu dirección de validador firmando el mensaje mostrado.
 
-<p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
-</p>
+<p align="center"></p>
 
-6. **Submit the Update:** After verifying the entered information, submit the transaction to finalize the update. Once the transaction is confirmed on-chain, the updated name will be reflected in the validator list.
+6. **Envía la Actualización:** después de verificar la información ingresada, envía la transacción para finalizar la actualización. Una vez que la transacción se confirme en la cadena, el nuevo nombre aparecerá reflejado en la lista de validadores.
 
 ## Manteniendo tu nodo validador
 
