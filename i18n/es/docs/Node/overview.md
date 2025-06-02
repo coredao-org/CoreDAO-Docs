@@ -1,5 +1,5 @@
 ---
-sidebar_label: Tipos de nodos
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -10,7 +10,7 @@ sidebar_position: 2
 
 En el ecosistema Core, la solidez, la seguridad y la descentralización de la red están respaldadas por los nodos operados por los participantes de la comunidad. Estos nodos facilitan diversas funciones, desde la validación de transacciones hasta la propagación de bloques, garantizando la salud y eficiencia generales de la red.
 
-Según tus objetivos, existen diferentes configuraciones de nodos posibles en la red de Core. If you haven't already started any node on Core network yet, please review the documentation before proceeding with different configurations.
+Según tus objetivos, existen diferentes configuraciones de nodos posibles en la red de Core. Si aún no has iniciado ningún nodo en la red Core, revisa la documentación antes de continuar con las distintas configuraciones.
 
 - **Si deseas participar en la gobernanza de la Red Core**
 
@@ -33,14 +33,14 @@ Según tus objetivos, existen diferentes configuraciones de nodos posibles en la
 
 ## Tipos de nodos en la red Core
 
-1. **Normal Full Nodes:**
-    - **Role:** Normal Full Nodes maintain a complete, real-time copy of the blockchain ledger, validate transactions, and support the network by relaying block and transaction data. These are essentially useful for private use.
-    - **Requirements:** Operating a Full Node requires significant computational and storage resources to handle the complete blockchain data and continuous network traffic.
+1. **Nodos Completos Normales:**
+    - **Rol:** Los Nodos Completos Normales mantienen una copia completa y en tiempo real del libro mayor de la blockchain, validan transacciones y apoyan la red retransmitiendo datos de bloques y transacciones. Son útiles principalmente para uso privado.
+    - **Requisitos:** Operar un Nodo Completo requiere recursos computacionales y de almacenamiento significativos para manejar todos los datos de la blockchain y el tráfico continuo de la red.
 
-2. **Validators:**
-    - **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework. These are essentially full nodes running in validator mode.
-    - **Requirements:** Validators need to stake minimum amount of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
-    - **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
+2. **Validadores:**
+    - **Rol:** Los Validadores son fundamentales para la seguridad de la red, ya que producen bloques y validan transacciones dentro del marco de consenso de la blockchain Core. Esencialmente, son nodos completos ejecutándose en modo validador.
+    - **Requisitos:** Los Validadores deben hacer stake de un mínimo de **10,000 tokens CORE** para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
+    - **Incentivos:** Los Validadores ganan recompensas en tokens CORE por su papel activo en el mantenimiento y la seguridad de las operaciones de la red.
 
 3. **Nodos RPC:**
     - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
