@@ -8,34 +8,34 @@ sidebar_position: 2
 
 ---
 
-Staking is a fundamental component of Core's Satoshi Plus consensus mechanism. It allows both CORE token holders and Bitcoin holders to participate in securing the network and earn rewards. Unlike traditional Proof of Stake systems, Core's unique architecture enables two distinct staking mechanisms: CORE token delegation and Bitcoin timelocking, which together with Bitcoin miner participation form the basis of validator selection and network security.
+El staking es un componente fundamental del mecanismo de consenso Satoshi Plus de Core. Permite tanto a los holders de tokens CORE como a los holders de Bitcoin participar en la seguridad de la red y ganar recompensas. A diferencia de los sistemas tradicionales Proof of Stake, la arquitectura única de Core permite dos mecanismos de staking distintos: la delegación de tokens CORE y el timelocking de Bitcoin, que junto con la participación de los mineros de Bitcoin forman la base de la selección de validadores y la seguridad de la red.
 
 ## Cómo funciona el staking en la blockchain central
 
-Core's staking system combines multiple participation methods that contribute to validator election through a hybrid scoring mechanism. Each validator receives a hybrid score based on three factors: Bitcoin miner support (DPoW), delegated CORE tokens (DPoS), and timelocked Bitcoin.
+El sistema de staking de Core combina múltiples métodos de participación que contribuyen a la elección de validadores mediante un mecanismo de puntuación híbrida. Cada validador recibe una puntuación híbrida basada en tres factores: el apoyo de mineros de Bitcoin (DPoW), los tokens CORE delegados (DPoS) y los Bitcoin en timelock.
 
-### CORE Token Staking
+### Staking de Tokens CORE
 
-CORE token holders can delegate their tokens to validators without transferring ownership:
+Los holders de tokens CORE pueden delegar sus tokens a validadores sin transferir la propiedad:
 
-1. Token holders select a validator to delegate to
-2. Upon delegation, tokens remain in the holder's custody but are locked for staking
-3. Validators receive the delegated stake, which strengthen their position in validator election
-4. Rewards earned by validators are shared with delegators proportionally to their stake
+1. Los holders de tokens seleccionan un validador al cual delegar
+2. Al delegar, los tokens permanecen bajo custodia del titular pero quedan bloqueados para staking
+3. Los validadores reciben el stake delegado, lo que fortalece su posición en la elección de validadores
+4. Las recompensas obtenidas por los validadores se comparten con los delegadores proporcionalmente a su participación
 
-### Bitcoin Staking
+### Staking de Bitcoin
 
-Bitcoin holders can participate in Core's Satoshi Plus consensus through Bitcoin's native timelocking mechanism:
+Los holders de Bitcoin pueden participar en el consenso Satoshi Plus de Core mediante el mecanismo nativo de timelocking de Bitcoin:
 
-1. Bitcoin holders use the CLTV function to timelock their Bitcoin for a specified period
-2. During timelock creation, they include metadata specifying their chosen validator and reward address
-3. The timelocked Bitcoin amount contributes to the selected validator's hybrid score for election
-4. As the validator produces blocks, the Bitcoin holder receives CORE rewards proportional to their timelocked amount
-5. When the timelock period ends, the Bitcoin becomes spendable again, the validator loses that delegated support, and the Bitcoin holder no longer collects CORE rewards
+1. Los holders de Bitcoin utilizan la función CLTV para hacer timelock de su Bitcoin por un período especificado
+2. Durante la creación del timelock, incluyen metadatos que especifican su validador elegido y la dirección de recompensas
+3. El monto de Bitcoin en timelock contribuye a la puntuación híbrida del validador seleccionado para su elección
+4. A medida que el validador produce bloques, el poseedor de Bitcoin recibe recompensas en CORE proporcionales al monto en timelock
+5. Cuando finaliza el período de timelock, el Bitcoin vuelve a estar disponible para gastar, el validador pierde ese apoyo delegado y el poseedor de Bitcoin deja de recibir recompensas en CORE
 
-### Validator Election
+### Elección de Validadores
 
-The validator set is determined through an election process using the hybrid score:
+El conjunto de validadores se determina mediante un proceso de elección basado en hybrid score:
 
 1. Every round, all validators receive a hybrid score based on delegated CORE tokens, timelocked Bitcoin, and Bitcoin miner support
 2. The top 27 validators with the highest hybrid scores are elected to the active validator set
