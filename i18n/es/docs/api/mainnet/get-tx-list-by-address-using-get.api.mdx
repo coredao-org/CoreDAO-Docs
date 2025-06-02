@@ -1,0 +1,66 @@
+---
+id: get-tx-list-by-address-using-get
+title: Get list of transactions by address
+description: Get list of transactions by address
+sidebar_label: Get list of transactions by address
+hide_title: true
+hide_table_of_contents: true
+api: eJylVUFu2zAQ/IqwpxZQrbZH3tzWCAIELdAkp8Aw1tJKIiKRDLlKYgj6e0GZVuTYVQX3JpOzM7PkcN0CY+FAPMAyTXWj2ME6Bm3IIkutrjMQUBDfvd5Ix992yyyz5Ny9k6q4Wt1BDAYt1sRkPUkLCmsCAbjHQQxSgQCDXEIMGbnUSuOJjzCWnhppKQPBtqEYXFpSjSBa4J3xdI6tVAV0XfymYOQj7Q4CTw3Z3anCAXOJAKlsW+n0cVpihJpDqvPcEU9TDpg5hAYLmqYLiDlkTtt/eAuIWWSMlmec4BHu78Tr93VXxFElHUc6j9iicpj6HRdtd9FbtGriUocQ92nlEgQkaGSCIfCJZ9nofMOvbrPdbUJx0oaPzvsi+3yIeGMrEFAyGyeSRBtSaOQi1ZYy1AttiwS8W6ly3TciufKdLI2Mfui0qUlx/7ZOTuIcgsnW7ld+S/ZZpp6msUqw9q1VMiXlyGuEI18aTEuKvi4+QzyyKZLk5eVlgf1ubzCUuuTm+vvq5+3qky/pYvA97r182S8Y7bhGNdKYd+xHjQ2XyfTKialQKs/dG2zDlTz4xwoxHC6l7+/ctUAM4vC5jqHUjn11227R0b2tus4v76PmbyuTDreVf/o5Vo5OrKVaMSkGAR9+hynxMRoGx1njfms0XJ6xajwIfPjny40mx4TKCHWhzjBOJlQGzIUaYcZMKATEhfxh7EzwB8Sl/OMZNKUyxr1prf0PK73Yf2RuyPdZA2ER1VHkhjCG4m7djWae/4fuuj+C1bFH
+sidebar_class_name: get api-method
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get list of transactions by address"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/accounts/list_of_txs_by_address/{address}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get list of transactions by address
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"address","in":"path","description":"address","required":true,"schema":{"type":"string"}},{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"endblock","in":"query","description":"endblock","schema":{"type":"string"}},{"name":"offset","in":"query","description":"offset","schema":{"type":"string"}},{"name":"page","in":"query","description":"page","schema":{"type":"string"}},{"name":"sort","in":"query","description":"sort","schema":{"type":"string"}},{"name":"startblock","in":"query","description":"startblock","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
