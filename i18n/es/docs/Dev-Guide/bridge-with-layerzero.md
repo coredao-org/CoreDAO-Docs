@@ -78,56 +78,56 @@ Para referencia, también puedes consultar el [repositorio de GitHub CoreDAO-Lay
 
 ## Ejecución de Transferencias de Tokens Cross-Chain
 
-To send tokens cross-chain between your contracts using LayerZero technology, you’ll need to create a custom Hardhat task.
+Para enviar tokens entre cadenas usando la tecnología de LayerZero, necesitarás crear una tarea custom de Hardhat.
 
-1. **Create the Task Folder**
-  In your project root, create a folder named **tasks** if it doesn't already exist.
+1. **Crear la Carpeta de Tareas**
+  En la raíz de tu proyecto, crea una carpeta llamada **tasks** si aún no existe.
 
 ```shell
 ```
 
-2. **Create the Task File**
-  Inside the tasks directory, create a file named:
+2. **Crear el Task File**
+  Dentro del directorio tasks, crea un archivo llamado:
 
 ```bash
 ```
 
-3. **Add the Task Code**
+3. **Agregar el Task Code**
 
-Copy and paste the following Hardhat task into `sendOFT.ts`:
+Copia y pega la siguiente task de Hardhat en `sendOFT.ts`:
 
 ```javascript
 ```
 
-4. **Execute Cross chain Transfer**
+4. **Ejecutar Transferencia Cross-chain**
 
-  Go back to your `hardhat.config.ts` file, and uncomment: import './tasks/sendOFT
+  Vuelve a tu archivo `hardhat.config.ts` y descomenta: import './tasks/sendOFT
 
-  Open your terminal in the root of your working directory, and run the following command:
+  Abre tu terminal en el directorio raíz de tu proyecto de trabajo y ejecuta el siguiente comando:
 
 ```shell
 ```
 
-5. **Track Transfers**
+5. **Rastrear Transferencias**
 
-  Use [LayerZero Scan Explorer](https://layerzeroscan.com) to monitor cross-chain transactions:
+  Utiliza [LayerZero Scan Explorer](https://layerzeroscan.com) para monitorear transacciones cross-chain:
 
 ```
 ```
 
-## Customization & Advanced Configuration
+## Personalización y Configuración Avanzada
 
-- **Token Supply**: Add minting logic to the constructor for custom supply.
-- **Transfer Fees**: Adjust `quoteSend` parameters for fee management.
-- **Security**: Modify DVN thresholds and trusted remote settings in config.
-- **Multi-Chain Support**: Add new network entries in your Hardhat and LayerZero configs.
+- **Token Supply**: Agrega lógica de minting al constructor para un suministro personalizado.
+- **Transfer Fees**: Ajusta los parámetros de `quoteSend` para la gestión de tarifas.
+- **Security**: Modifica los umbrales de DVN y la configuración de remotos confiables en el archivo de configuración.
+- **Multi-Chain Support**: Agrega nuevas entradas de red en tus configuraciones de Hardhat y LayerZero.
 
-For further customization and advanced configuration, refer to [LayerZero’s official documentation](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+Para más personalización y configuración avanzada, consulta la [documentación oficial de LayerZero](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
 
-## Resources
+## Recursos
 
-- [CoreDAO-LayerZero GitHub Guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide)
-- [LayerZero OFT Quickstart](https://docs.layerzero.network/v2/developers/evm/oft/quickstart)
+- [Guía de CoreDAO-LayerZero en GitHub](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide)
+- [Inicio Rápido de LayerZero OFT](https://docs.layerzero.network/v2/developers/evm/oft/quickstart)
 - [LayerZero Scan Explorer](https://layerzeroscan.com)
 
-By following this guide, you’ll be able to set up seamless cross-chain token transfers between Core and other EVM networks. For more in-depth examples and support, visit the [official GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) and LayerZero documentation.
+Siguiendo esta guía, podrás configurar transferencias de tokens entre cadenas de forma fluida entre Core y otras redes EVM. Para obtener ejemplos más detallados y soporte, visita el [repositorio oficial en GitHub](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) y la documentación de LayerZero.
