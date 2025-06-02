@@ -20,7 +20,7 @@ Antes de comenzar, asegúrate de que tu sistema cumpla con las especificaciones 
 
 Actualmente, los sistemas operativos compatibles incluyen Mac OS X y Linux.
 
-#### Hardware Requirements
+#### Requisitos de Hardware
 
 <Tabs defaultValue="testnet2" values={[ {label: 'Testnet2', value: 'testnet2'}, {label: 'Testnet', value: 'testnet'}, {label: 'Mainnet', value: 'mainnet'}, ]}> Para nodos validador en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
@@ -64,95 +64,98 @@ Esto descargará e instalará las dependencias necesarias y compilará el binari
 Existen 2 métodos para configurar un nodo validador desde cero en la blockchain de Core:
 
 - **Mediante Snapshot (Recomendado):** descargar el [snapshot más reciente de la blockchain de Core](https://github.com/coredao-org/core-snapshots) y sincronizar el nodo con base en este.
-- **From Genesis (Not Recommend):** sync the whole Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
+- **Desde Genesis (No Recomendado):** sincronizar toda la información de la blockchain de Core desde el [bloque génesis](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
-Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
+La sincronización desde el bloque génesis puede tomar una cantidad significativa de tiempo. Se recomienda configurar un nodo de Core utilizando el snapshot más reciente para acelerar el proceso.
 :::
 
-#### Steps to Running Validator Node Using Snapshot
+#### Pasos para Ejecutar un Nodo Validador Usando Snapshot
 
-1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
+1. **Descargar los Binarios Precompilados Más Recientes:**
+  Descarga los binarios más recientes del nodo desde el [repositorio oficial de versiones de Core](https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Genesis and Configuration Files:** The pre-build binaries contains `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
+2. **Archivos de Génesis y Configuración:**
+  Los binarios pre-build incluyen `genesis.json` y `config.toml` correspondientes a la red que deseas correr como validador. Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
 
-3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
-
-```bash
-
-```
-
-You should see the following output:
+3. **Inicializar Genesis:** Escribe el estado génesis localmente ejecutando el siguiente comando desde el directorio de tu proyecto. Asegúrate de que la ruta relativa al archivo `genesis.json` sea correcta. En este caso, `genesis.json` implica que el archivo `genesis.json` se encuentra en el mismo directorio, que debería ser el directorio root del nodo.
 
 ```bash
 
 ```
 
-4. **Download & Extract the Latest Snapshot:** Download and extract the latest Core blockchain snapshot from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
-
-5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address which will be your validator's address (consensus address).
+Deberías ver la siguiente salida:
 
 ```bash
 
 ```
 
-You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
+4. **Descargar y Extraer el Snapshot Más Reciente**
+  Descarga y extrae el snapshot más reciente de la blockchain de Core desde el [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+
+5. **Generación de Consensus Key:** Configura la clave de consenso antes de ejecutar el nodo validador. Para crear una nueva consensus key, utiliza el siguiente comando, el cual creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (consensus address).
 
 ```bash
 
 ```
 
-Make sure to follow these key considerations:
-\* **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-\* **Backup Your Key:** Losing access to this key means losing control over your validator node.
-
-6. **Start the Validator Node:**
-
-Use the following command to start the validator node.
+Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de forma segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
 
 ```bash
 
 ```
 
-Let’s break down the flags used in this command:
+Asegúrate de seguir estas consideraciones clave:
+**Asegura tu archivo keystore y tu contraseña:** Guarda de forma segura tu archivo keystore y tu contraseña, ya que los necesitarás más adelante.
+**Haz una copia de seguridad de tu clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
 
-- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
+6. **Iniciar el nodo validador:**
 
-- **`datadir ./node`:** Indicates the data directory for the node.
+Utiliza el siguiente comando para iniciar el nodo validador.
 
-- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
+```bash
 
-- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
+```
 
-- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
+Desglosemos las banderas utilizadas en este comando:
 
-- **`mine`:** Enables mining/validating (producing blocks) on the network. Essential for validator operation
+- **`config ./config.toml`:** Especifica el archivo de configuración del nodo. Asegúrate de que tengas la configuración correcta en `config.toml` para tu entorno.
 
-- **`allow-insecure-unlock`:** Allows the unlock process without additional security measures (use cautiously).
+- **`datadir ./node`:** Indica el directorio de datos del nodo.
 
-- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+- **`unlock {your-validator-address}`:** Desbloquea la cuenta del validador utilizando la dirección generada en el paso anterior.
 
-- **`networkid`:** Specify the Core network chain id you intend to run the validator node (e.g., 1114 for Core Tesnet2)
+- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Normalmente, esta sería la dirección de tu validador.
 
-#### Syncing from Genesis
+- **`password password.txt`:** La contraseña para desbloquear tu cuenta de validador (asegúrate de que este archivo se mantenga seguro).
 
-If you prefer to sync your validator node from the genesis block instead of using a snapshot:
+- **`mine`:** Habilita la minería/validación (producción de bloques) en la red. Es esencial para la operación del validador
 
-- Skip Step #4 ("Download and extract the latest snapshot") in the setup instructions.
+- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (usar con precaución).
 
-- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as normal.
+- **`cache 8000`:** Asigna una caché grande (8GB en este caso) para mejorar el rendimiento.
 
-- Then start the validator node using the command below:
+- **`networkid`:** Especifica el id de cadena de la red Core en la que deseas ejecutar el nodo validador (por ejemplo, 1114 para Core Testnet2)
+
+#### Sincronización desde Genesis
+
+Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de usar un snapshot:
+
+- Omite el Paso #4 ("Descargar y Extraer el Snapshot Más Reciente") en las instrucciones de configuración.
+
+- Después de completar los Pasos 1 (Descargar Binarios), 2 (Archivos Genesis/Config) y 3 (Initializar Genesis), continúa generando tu consensus key con normalidad.
+
+- Luego, inicia el nodo validador usando el siguiente comando:
 
   ```bash
 
   ```
 
-⚠️ **Note:** Syncing from genesis can take a lot of time depending on system resources and network speed.
+**Nota:** Sincronizar desde genesis puede tomar mucho tiempo dependiendo de los recursos del sistema y la velocidad de la red.
 
 ## Monitor Logs
 
-Once your validator node is up and running, it’s important to monitor the logs to ensure everything is operating smoothly.
+Una vez que tu nodo validador esté en ejecución, es importante monitorear los logs para asegurarte de que todo esté funcionando correctamente.
 
 The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
 
