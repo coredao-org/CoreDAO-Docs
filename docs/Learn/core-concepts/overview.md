@@ -12,7 +12,8 @@ description: Get an Overview of Core - its Purpose, Mission, & Future Vision
 
 ## Introduction
 
-Core is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem.
+Core is a high-performance, EVM-compatible Layer 1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem.
+
 
 ## Purpose and Mission
 
