@@ -1,10 +1,10 @@
 ---
-sidebar_label: Delegating CORE
+sidebar_label: CORE Staking
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Delegating CORE
+# CORE Staking
 ---
 
 Delegated Proof of Stake (DPoS) is one of the 3 fundamental components of the Satoshi Plus consensus mechanism, playing a pivotal role in enhancing the functionality, security, and efficiency of the blockchain network. In the Core network, DPoS is implemented through CORE delegations, allowing CORE holders to delegate their tokens to trusted validators. This process not only helps secure the network but also enables participants to share in the system’s rewards.  

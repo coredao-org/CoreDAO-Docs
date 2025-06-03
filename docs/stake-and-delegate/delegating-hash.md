@@ -1,5 +1,5 @@
 ---
-sidebar_label: Delegating Hash Power
+sidebar_label: Bitcoin Hash Power Delegation
 hide_table_of_contents: false
 sidebar_position: 2
 ---

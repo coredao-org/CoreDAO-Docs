@@ -1,10 +1,10 @@
 ---
-sidebar_label: CORE Tokenomics and Utility
+sidebar_label: Tokenomics
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# CORE Tokenomics and Utility
+# CORE Tokenomics
 ---
 
 ## Overview
@@ -13,7 +13,7 @@ CORE is the native utility and governance token of the Core blockchain. Its toke
 ## Token Distribution
 CORE's tokenomics focuses on long-term sustainability and decentralized governance. The token serves multiple functions within the Core ecosystem, including validator rewards, transaction fee payments, and governance participation.
 
-![tokenomics](../../../../static/img/tokenomics/CORE_Tokenomics.png)
+![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
 
 CORE has a fixed supply of **2.1 billion** tokens distributed across several key ecosystem functions. The allocation is structured to support network growth, security, and development as shown in the diagram below.:
 
@@ -45,15 +45,15 @@ CORE has a fixed supply cap of **2.1 billion tokens**, adopting a scarcity model
 - **Annual Reward Adjustment:** Block rewards decrease by **3.61%** annually, creating a gradual reduction curve rather than Bitcoin's halving model, providing more predictable economics for network participants.
 
 ### Cumulative CORE Emissions Monthly (First 6 Years)
-![6-years-emissions](../../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
+![6-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
 
 ### Cumulative CORE Emissions Yearly (81 Years)
 
-![81-years-emissions](../../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
+![81-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
 
 ### Breakdown of Allocations
 
-![break-down-of-emissions](../../../../static/img/tokenomics/Breakdown_of_Allocations.png)
+![break-down-of-emissions](../../../static/img/tokenomics/Breakdown_of_Allocations.png)
 
 ## Sound Monetary Policy
 

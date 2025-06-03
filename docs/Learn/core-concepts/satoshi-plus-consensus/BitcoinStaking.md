@@ -1,5 +1,5 @@
 ---
-sidebar_label: Self Custodial Bitcoin Staking
+sidebar_label: Self-Custodial Bitcoin Staking
 hide_table_of_contents: false
 sidebar_position: 2
 description: Leveraging Bitcoin Staking in Satoshi Plus
