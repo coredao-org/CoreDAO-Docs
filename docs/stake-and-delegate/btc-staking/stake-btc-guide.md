@@ -68,13 +68,13 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 2. Click **Connect Wallet** in the top right corner of the header to connect your Core wallet. From the supported list of wallets, choose your desired Core wallet. For this walkthrough, we have used Metamask.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-1.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-1.png)
 </p>
 
 3. Confirm the wallet notification to allow to connect to the staking website.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-2.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-2.png)
 </p>
 
 ### Selecting a Core Validator for Bitcoin Delegation
@@ -82,25 +82,25 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 4. Once on the **Validators** page, scroll down to view the list of Core Validators and choose the Validator to whom you wish to delegate your Bitcoins. Please ensure to choose active validators.
 
 <p align="center" >
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-3.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-3.png)
 </p>
 
 5. By clicking on the name of the desired validator, you will be directed to the **Validator Details** page. This page displays details about the staking/delegation records for the selected validator.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-4.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-4.png)
 </p>
 
 6. Click on the **Stake** button, then select **BTC**
 
 <p align="center"  style={{zoom:"60%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-5.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-5.png)
 </p>
 
 7. To connect your Bitcoin wallet, click on the supported wallet of your choice. For this walkthrough, we selected Unisat.  
 
 <p align="center" style={{zoom:"80%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-6.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-6.png)
 </p>
 
 8. Once your Bitcoin wallet is connected, it's important to understand and specify several key parameters:  
@@ -115,7 +115,7 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-7.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-7.png)
 </p>
 
 9. Note that the **Reward Address on Core** is pulled from the connected Core wallet. You should connect the Core wallet with the same address on which you want to receive staking rewards in CORE tokens.  
@@ -129,13 +129,13 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 11. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP\_Return output. The OP\_Return output is where your redeem\_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP\_Return. Abort the transaction if it doesn't include the OP\_Return output.
 
 <p align="center" style={{zoom:"80%"}}>
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
+![dual-staking-on-core](../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
 12. Once you confirm the transition, you will receive a **Transaction Submitted** notification. You can verify your transaction by clicking **View on BTC Explore**.
 
 <p align="center" >
-![btc-staking-on-core](../../../../static/img/native-staking/native-staking-13.avif)
+![btc-staking-on-core](../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
 ### Verify BTC Staking Address
@@ -145,25 +145,25 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 14. To proceed with verification, click on the **Verify the BTC Staking Address** button. This will navigate you to the external website.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
+![btc-staking-address-verification](../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
 15. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button. 
 
 <p align="center" style={{zoom:"35%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
+![btc-staking-address-verification](../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
 16. The verification result will appear in the **Verification Result** section.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
+![btc-staking-address-verification](../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
 17. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
 
 <p align="center">
-![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
+![btc-staking-approve-tx](../../../static/img/btc-staking/approve-tx.png)
 </p>
 
 ### Viewing Staking Records
@@ -171,13 +171,13 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 18.  In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
 
 <p align="center">
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
 19.  The **My Staking** page displays records of all your staking (CORE, BTC, and hash). Click on the **BTC Records** tab to show details of your BTC delegations.
 
 <p align="center" style={{zoom:"80%"}}>
-![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-9.png)
+![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
 **Congratulations!!** You have successfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. Through staking Bitcoin and helping to elect validators on Core, you actively contribute to the security of the Core network, supporting its decentralization and stability.

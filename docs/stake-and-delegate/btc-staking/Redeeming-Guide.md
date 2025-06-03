@@ -21,25 +21,25 @@ If your staking period has expired, redeem your staked Bitcoin assets from eithe
 1. From any Core screen, hover over your connected wallet in the top right corner → click **‘My Staking’**.
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-18.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-18.avif)
 </p>
 
 2. At the delegator screen, look for the column BTC(x) and click.
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-19.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-19.avif)
 </p>
 
 3. You are now viewing the validators that you have previously delegated your staked Bitcoin to. Look for any validators that say ‘**Expired**’ under ‘**Redeem Time**’ and proceed to clicking ‘**Redeem**’ under ‘**Action**’.
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-20.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-20.avif)
 </p>
 
 4. You will be met with a popup window to redeem your Bitcoin. In order to redeem the Bitcoin, you must connect to the same Bitcoin wallet address as the one initiating the Bitcoin staking transaction.
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-21.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-21.avif)
 </p>
 
 * Set your receiving Bitcoin Address to receive the unlocked Bitcoin. This does not need to be the same as the address that initiated the Bitcoin staking transaction.
@@ -47,7 +47,7 @@ If your staking period has expired, redeem your staked Bitcoin assets from eithe
 * Click ‘**Create Transaction**’
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-22.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-22.avif)
 </p>
 
 5. Sign the transaction with your Bitcoin wallet that you connected previously, and verify the Bitcoin has returned to your receiving address. (_This may take a few minutes_).
@@ -60,28 +60,28 @@ To be eligible to earn rewards, it is required to complete a full staking round 
 1\. From any CORE screen, hover over your connected wallet in the top right corner, click ‘**My Staking**’.
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-23.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-23.avif)
 </p>
 
 2. Click the ‘**Claim**’ button next to ‘**BTC Staking Rewards**’
 
 <p align="center">
-![native-staking-guide](../../../../static/img/native-staking/native-staking-24.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-24.avif)
 </p>
 
 3. Sign the transaction via MetaMask wallet.
 
 <p align="center" style={{zoom:"60%"}}>
-![native-staking-guide](../../../../static/img/native-staking/native-staking-25.png)
+![native-staking-guide](../../../static/img/native-staking/native-staking-25.png)
 </p>
 
 3. Wait for transaction to submit
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-26.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-26.avif)
 
 3. Verify Transaction succeed
 
-![native-staking-guide](../../../../static/img/native-staking/native-staking-27.avif)
+![native-staking-guide](../../../static/img/native-staking/native-staking-27.avif)
 
 #### Conclusion
 

@@ -26,8 +26,9 @@ const sidebars: SidebarsConfig = {
             type: 'category',
             collapsed: true,
             label: 'Introduction',
-            items: ['Learn/introduction/what-is-core-chain',
-                    'Learn/introduction/why-core-chain',
+            items: [
+                    'Learn/introduction/core-101',
+                    'Learn/introduction/why-core',
                     {
                       type: 'link',
                       label: 'Whitepaper', 
@@ -45,32 +46,54 @@ const sidebars: SidebarsConfig = {
               description: 'Learn about the Nuts and Bolts of the Core Ecosystem.',
               slug: '/category/core-concepts',
             },
-            items: ['Learn/core-concepts/overview', 'Learn/core-concepts/architecture',
+            items: [
+              'Learn/core-concepts/overview', 
+              'Learn/core-concepts/architecture',
                       {
                         type: 'category',
                         collapsed: true,
                         label: 'Satoshi Plus Consensus',
                         items: [
                           'Learn/core-concepts/satoshi-plus-consensus/components',
+                          'Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking',
                           'Learn/core-concepts/satoshi-plus-consensus/DPoW',
                           'Learn/core-concepts/satoshi-plus-consensus/DPoS',
-                          'Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking',
                           'Learn/core-concepts/satoshi-plus-consensus/validator-election',
                           'Learn/core-concepts/satoshi-plus-consensus/rewards', 
-                          'Learn/core-concepts/satoshi-plus-consensus/security',
+                          ]
+                      },
+                      {
+                        type: 'category',
+                        collapsed: true,
+                        label: 'Dual Staking',
+                        items: [
+                          'Learn/core-concepts/dual-staking/overview',
+                          'Learn/core-concepts/dual-staking/tier-adjustment-system',
+                          'Learn/core-concepts/dual-staking/how-to-dual-stake',
                           ]
                       },
                   ]
           },
+
+          {
+            type: 'category',
+            collapsed: true,
+            label: 'CORE Token',
+            items: [
+              'Learn/core-token/overview',
+              'Learn/core-token/tokenomics',
+              'Learn/core-token/core-value-creation',
+              ]
+          },
           {
             type: 'category',
               collapsed: true,
-              label: 'Products',
+              label: 'Liquid Staking',
               link: {
                 type: 'generated-index',
-                title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
-                description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
-                slug: '/category/products',
+                title: 'Liquid Staking on Core: Unlocking Yield and DeFi Composability',
+                description: 'Learn about the different innovative liquid staking solutions on Core!',
+                slug: '/category/liquid-staking',
               },
               items: [
                 {
@@ -78,14 +101,14 @@ const sidebars: SidebarsConfig = {
                     collapsed: true,
                     label: 'stCORE',
                     items: [
-                      'Learn/products/stCore/overview',
-                      'Learn/products/stCore/design',
+                      'Learn/liquid-staking/stCore/overview',
+                      'Learn/liquid-staking/stCore/design',
                       {
                         type: 'category',
                           collapsed: true,
                           label: 'How To Guides',
                           items: [
-                            'Learn/products/stCore/stCore-on-Core',
+                            'Learn/liquid-staking/stCore/stCore-on-Core',
                           ]
                       },
                       
@@ -96,29 +119,69 @@ const sidebars: SidebarsConfig = {
                     collapsed: true,
                     label: 'lstBTC',
                     items: [
-                      'Learn/products/lstBTC/overview',
-                    ]
-                },
-                {
-                  type: 'category',
-                    collapsed: true,
-                    label: 'coreBTC (Sunsetted)',
-                    items: [
-                      'Learn/products/coreBTC/overview',
-                      'Learn/products/coreBTC/design',
-                      'Learn/products/coreBTC/how-to-guides',
+                      'Learn/liquid-staking/lstBTC/overview',
                     ]
                 },
               ]
           },
-          {
-            type: 'category',
-              collapsed: true,
-              label: 'Economics',
-              items: [
-                  'Learn/economics/core-token/tokenomics-and-utility',
-              ]
-          },
+
+          // {
+          //   type: 'category',
+          //     collapsed: true,
+          //     label: 'Products',
+          //     link: {
+          //       type: 'generated-index',
+          //       title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
+          //       description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
+          //       slug: '/category/products',
+          //     },
+          //     items: [
+          //       {
+          //         type: 'category',
+          //           collapsed: true,
+          //           label: 'stCORE',
+          //           items: [
+          //             'Learn/products/stCore/overview',
+          //             'Learn/products/stCore/design',
+          //             {
+          //               type: 'category',
+          //                 collapsed: true,
+          //                 label: 'How To Guides',
+          //                 items: [
+          //                   'Learn/products/stCore/stCore-on-Core',
+          //                 ]
+          //             },
+                      
+          //           ]
+          //       },
+          //       {
+          //         type: 'category',
+          //           collapsed: true,
+          //           label: 'lstBTC',
+          //           items: [
+          //             'Learn/products/lstBTC/overview',
+          //           ]
+          //       },
+          //       {
+          //         type: 'category',
+          //           collapsed: true,
+          //           label: 'coreBTC (Sunsetted)',
+          //           items: [
+          //             'Learn/products/coreBTC/overview',
+          //             'Learn/products/coreBTC/design',
+          //             'Learn/products/coreBTC/how-to-guides',
+          //           ]
+          //       },
+          //     ]
+          // },
+          // {
+          //   type: 'category',
+          //     collapsed: true,
+          //     label: 'Economics',
+          //     items: [
+          //         'Learn/economics/core-token/tokenomics-and-utility',
+          //     ]
+          // },
           'Learn/governance',
           
             {
@@ -306,55 +369,57 @@ const sidebars: SidebarsConfig = {
       type: 'category',
       collapsed: true,
       label: '💸 Staking',
-      items: ['stake-and-delegate/staking-overview',
+      items: [
+        'stake-and-delegate/overview',
         {
           type: 'category',
             collapsed: true,
-            label: 'Non-Custodial BTC Staking',
+            label: 'Self-Custodial BTC Staking',
             items: [
-              'Learn/products/btc-staking/overview',
-              'Learn/products/btc-staking/btc-staking-working',
+              //'stake-and-delegate/btc-staking/overview',
+              'stake-and-delegate/btc-staking/btc-staking-working',
               //'stake-and-delegate/dual-staking', 
-              'Learn/products/btc-staking/design', 
+              'stake-and-delegate/btc-staking/design', 
               {
                 type: 'category',
                   collapsed: true,
                   label: 'How To Guides',
                   items: [
-                    'Learn/products/btc-staking/stake-btc-guide',
-                    // 'Learn/products/btc-staking/dual-staking-guide',
-                    'Learn/products/btc-staking/Redeeming-Guide',
+                    'stake-and-delegate/btc-staking/stake-btc-guide',
+                    // 'stake-and-delegate/btc-staking/dual-staking-guide',
+                    'stake-and-delegate/btc-staking/Redeeming-Guide',
                   ]
               },
             ]
-        },    
+        },  
+        'stake-and-delegate/CORE-staking',  
         {
           type: 'category',
             collapsed: true,
             label: 'Dual Staking',
             items: [
-              'stake-and-delegate/dual-staking', 
+               
               'stake-and-delegate/dual-staking-working', 
               {
                 type: 'category',
                   collapsed: true,
                   label: 'How To Guides',
                   items: [
-                    'Learn/products/btc-staking/dual-staking-guide',
+                    'stake-and-delegate/dual-staking-guide',
                   ]
               },
             ]
         },
-       
+        'stake-and-delegate/delegating-hash'       
       ]
     },
-    {
-      type: 'category',
-      collapsed: true,
-      label: '💰 Become a Delegator',
-      items: ['stake-and-delegate/delegators', 'stake-and-delegate/delegating-core',
-      'stake-and-delegate/delegating-hash']
-    },
+    // {
+    //   type: 'category',
+    //   collapsed: true,
+    //   label: '💰 Become a Delegator',
+    //   items: ['stake-and-delegate/delegators', 
+    //   ]
+    // },
   ],
 
  apiSidebar:[
