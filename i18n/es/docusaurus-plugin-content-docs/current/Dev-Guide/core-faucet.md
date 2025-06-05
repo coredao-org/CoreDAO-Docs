@@ -8,26 +8,26 @@ sidebar_position: 2
 
 ---
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el Core Testnet Faucet público para distribuir tokens de Core testnet, **tCORE** o **tCORE2**.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el Core Testnet Faucet público para distribuir tokens de Core Testnet, **tCORE** o **tCORE2**.
 
 ## Pasos para obtener tCORE/tCORE2 del faucet de Core Testnet
 
 1. Navegue al sitio web de faucet.
 
-   - **Para Core Blockchain Testnet (1114) Faucet:** https://scan.test2.btcs.network/faucet
-   - **For Core Blockchain Testnet (1115) Faucet:** https://scan.test.btcs.network/faucet
+   - **Para Core Testnet2 (1114) Faucet:** https://scan.test2.btcs.network/faucet
+   - **For Core Testnet (1115) Faucet:** https://scan.test.btcs.network/faucet
 
 2. Pegue su dirección en el cuadro de texto proporcionado. Asegúrese de proporcionar la dirección Core Testnet de su billetera que desea recibir fondos con tCORE o tCORE2.
 
 3. Complete el CAPTCHA.
 
-4. Si usa faucet para Core Blockchain Testnet (1114), haga clic en el botón "Obtener tCORE2". Después de solicitar tCORE del grifo, verá que el balance de su MetaMask aumenta.
+4. Si usa faucet para Core Testnet (1114), haga clic en el botón "Obtener tCORE2". Después de solicitar tCORE del grifo, verá que el balance de su MetaMask aumenta.
 
 <p align="center">
 ![using-faucet-test2](../../../../../static/img/faucet/faucet-test2.png)
 </p>
 
-5. Si usa faucet para Core Blockchain Testnet (1115), haga clic en el botón "Obtener tCORE". Después de solicitar con éxito tCORE2 desde el faucet, verá aumentar el saldo de su billetera.
+5. Si usa faucet para Core Testnet (1115), haga clic en el botón "Obtener tCORE". Después de solicitar con éxito tCORE2 desde el faucet, verá aumentar el saldo de su billetera.
 
 <p align="center">
 ![using-faucet](../../../../../static/img/faucet/faucet.png)

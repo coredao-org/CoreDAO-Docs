@@ -52,7 +52,7 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 
-4. Cambie a Core testnet haciendo clic en el botón _'Cambiar red'_.
+4. Cambie a Core Testnet haciendo clic en el botón _'Cambiar red'_.
 
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-4.png)
 

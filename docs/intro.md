@@ -7,14 +7,13 @@ sidebar_position: 1
 
 ## 👨‍💻 Getting Started
 
-
-The Core blockchain is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem. As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof of Stake Layer. 
+The Core blockchain is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem. As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof-of-Stake layer.
 
 ![core-header](../static/img/core-header.png)
 
-New to Core? Let's discover **Core in less than 5 minutes**. 
+New to Core? Let's discover **Core in less than 5 minutes**.
 
-## 📔 Learn about Core 
+## 📔 Learn about Core
 Dive into what Core is and how to start your journey
     * [An Overview of Core](./Learn/introduction/what-is-core-chain.md)
     * [Read About the Core Concepts](category/core-concepts)
@@ -37,7 +36,7 @@ Participate in Core Network Security by Running Different Types of Nodes
 ## 👨‍🔧 Building on Core
 Start building on Core and Contribute to the BTCfi Landscape
     * [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
-    * [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md) 
+    * [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
     * [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
     * [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
     * [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)

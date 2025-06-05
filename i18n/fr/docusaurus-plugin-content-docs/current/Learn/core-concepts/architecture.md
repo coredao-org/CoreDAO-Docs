@@ -29,7 +29,7 @@ Actuellement, Satoshi Plus bénéficie de la sécurité de ~75% de toute la puis
 ![component-diagram](../../../../../../static/img/Core-Architecture.png)
 </p>
 
-## Core Blockchain : Composants, Rôles et Flux de travail
+## Core Blockchain: Composants, Rôles et Flux de travail
 
 #### Rôles Clés
 

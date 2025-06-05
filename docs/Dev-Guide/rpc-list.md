@@ -24,7 +24,7 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 ]}>
 <TabItem value="testnet2">
 
-### Core Blockchain Testnet2 (1114 (0x45a))
+### Core Testnet2 (1114 (0x45a))
 :::info
 This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
 :::
@@ -36,7 +36,7 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 </TabItem>
 <TabItem value="testnet1">
 
-### Core Blockchain Testnet (1115 (0x45b))
+### Core Testnet (1115 (0x45b))
 
 :::caution
 Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
@@ -48,7 +48,7 @@ Testnet1 will be deprecated and eventually retired. Transitioning to Core Testne
 
 <TabItem value="mainnet">
 
-### Core Blockchain Mainnet (1116 (0x45c))
+### Core Mainnet (1116 (0x45c))
 
 - wss://ws.coredao.org
 - https://rpc.coredao.org
@@ -58,7 +58,7 @@ Testnet1 will be deprecated and eventually retired. Transitioning to Core Testne
 </Tabs>
 
 
-### Third Party RPC Endpoints for Core Blockchain Mainnet
+### Third Party RPC Endpoints for Core Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core

@@ -97,7 +97,7 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 ![Remix-ERC721-InjectedProvider](../../../../../static/img/dev_tutorials/Remix_InjectedProvider.png)
 </p>
 
-- Asegúrate de que tu MetaMask esté conectado a Core testnet2.
+- Asegúrate de que tu MetaMask esté conectado a Core Testnet2.
 
 ### Despliega tu Contrato:
 

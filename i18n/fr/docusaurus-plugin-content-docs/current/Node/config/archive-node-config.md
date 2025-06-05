@@ -37,7 +37,7 @@ Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, gara
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnetTwo">
-    For Archive Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For Archive Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, gara
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
   </TabItem>
   <TabItem value="testnet">
-    For Archive Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    For Archive Nodes on **Core Testnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, gara
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
   </TabItem>
   <TabItem value="mainnet">
-    For Archive Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    For Archive Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|

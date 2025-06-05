@@ -84,7 +84,7 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 ![ERC20_ConnectMetamask](../../../../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
 </p>
 
-Asegúrate de que tu MetaMask esté conectado a **Core testnet**
+Asegúrate de que tu MetaMask esté conectado a **Core Testnet**
 
 2. **Despliega tu Contrato**:
    - En la sección de **Deploy**, selecciona el **contrato ERC-20** (ej: `MyToken`).

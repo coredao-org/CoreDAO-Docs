@@ -46,7 +46,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core Testn
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 
-4. Switch to the Core testnet by clicking the _‘Switch Network’_ button.
+4. Switch to the Core Testnet by clicking the _‘Switch Network’_ button.
 
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-4.png)
 
@@ -68,7 +68,7 @@ Core's new testnet with `chainID 1114` is now live and recommended for use. It s
 
 ### Funding Wallet with tCORE Tokens
 
-To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core testnet tokens, **tCORE**. Follow the detailed [guide](./core-faucet.md) to fund your metamask account with tCORE tokens.
+To help users get started and allow developers to quickly prototype their dApps, Core has released the public [Core Testnet Faucet](https://scan.test.btcs.network/faucet) to distribute Core Testnet tokens, **tCORE**. Follow the detailed [guide](./core-faucet.md) to fund your metamask account with tCORE tokens.
 
 ### Sending tCORE Tokens
 

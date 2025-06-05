@@ -4,26 +4,26 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Overview of Staking on Core 
+# Overview of Staking on Core
 ---
 
-Staking is a fundamental component of Core's Satoshi Plus consensus mechanism. It allows both CORE token holders and Bitcoin holders to participate in securing the network and earn rewards. Unlike traditional Proof of Stake systems, Core's unique architecture enables two distinct staking mechanisms: CORE token delegation and Bitcoin timelocking, which together with Bitcoin miner participation form the basis of validator selection and network security.
+Staking is a fundamental component of Core's Satoshi Plus consensus mechanism. It allows both CORE token holders and Bitcoin holders to participate in securing the network and earn rewards. Unlike traditional Proof-of-Stake systems, Core's unique architecture enables two distinct staking mechanisms: CORE token delegation and Bitcoin timelocking, which, together with Bitcoin miner participation, form the basis of validator selection and network security.
 
-## How Staking Works on the Core Blockchain
+## How Staking Works on Core
 Core's staking system combines multiple participation methods that contribute to validator election through a hybrid scoring mechanism. Each validator receives a hybrid score based on three factors: Bitcoin miner support (DPoW), delegated CORE tokens (DPoS), and timelocked Bitcoin.
 
 ### CORE Token Staking
 CORE token holders can delegate their tokens to validators without transferring ownership:
 1. Token holders select a validator to delegate to
 2. Upon delegation, tokens remain in the holder's custody but are locked for staking
-3. Validators receive the delegated stake, which strengthen their position in validator election
+3. Validators receive the delegated stake, which strengthens their position in the validator election
 4. Rewards earned by validators are shared with delegators proportionally to their stake
 
 ### Bitcoin Staking
 Bitcoin holders can participate in Core's Satoshi Plus consensus through Bitcoin's native timelocking mechanism:
 1. Bitcoin holders use the CLTV function to timelock their Bitcoin for a specified period
 2. During timelock creation, they include metadata specifying their chosen validator and reward address
-3. The timelocked Bitcoin amount contributes to the selected validator's hybrid score for election
+3. The time-locked Bitcoin amount contributes to the selected validator's hybrid score for the election
 4. As the validator produces blocks, the Bitcoin holder receives CORE rewards proportional to their timelocked amount
 5. When the timelock period ends, the Bitcoin becomes spendable again, the validator loses that delegated support, and the Bitcoin holder no longer collects CORE rewards
 
@@ -49,7 +49,7 @@ Staking plays several critical roles in the Core ecosystem:
 
 ## Staking Dynamics and Strategies
 Participants in the Core network can adopt various staking strategies to maximize their returns and influence on the network:
-- **Validator Performance:** Delegating to high-performing validators is crucial, as rewards are not accrued by delegators to inactive or malicious validators.
+- **Validator Performance:** Delegating to high-performing validators is crucial, as delegators do not accrue rewards to inactive or malicious validators.
 - **Risk Management:** Diversifying the delegation across multiple validators can help mitigate risks associated with the potential failure of a single validator.
 
 ## Conclusion

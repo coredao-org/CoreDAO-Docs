@@ -34,7 +34,7 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-Para los Nodos Validadores en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
+Para los Nodos Validadores en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requisitos | Detalles                                                                                                    |  

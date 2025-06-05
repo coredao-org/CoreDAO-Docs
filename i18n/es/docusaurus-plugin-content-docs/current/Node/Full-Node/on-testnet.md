@@ -28,7 +28,7 @@ Actualmente, un nodo completo de Core **_sólo_** puede ejecutarse en **Mac OS X
 
 ### Especificaciones de hardware para nodos completos en Core Testnet
 
-Para nodos completos en **Core testnet**, recomendamos las siguientes especificaciones mínimas de hardware:
+Para nodos completos en **Core Testnet**, recomendamos las siguientes especificaciones mínimas de hardware:
 
 | Requisitos            | Detalles                                                                                                         |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------- |

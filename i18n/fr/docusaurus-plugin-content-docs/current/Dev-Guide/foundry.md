@@ -265,7 +265,7 @@ source .env
 
 ### Étape 2 : Déployer le contrat
 
-Pour déployer le contrat sur le réseau de  Core testnet, utilisez « forge create »
+Pour déployer le contrat sur le réseau de  Core Testnet, utilisez « forge create »
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast

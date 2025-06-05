@@ -66,7 +66,7 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 
 <TabItem value="mainnet">
 
-- **Nom du réseau :** Core Blockchain
+- **Nom du réseau :** Core Blockchain Mainnet
 - **Nouvelle URL RPC :** https://rpc.ankr.com/core
 - **ID de Chaîne:** 1116
 - **Symbole de la devise :** CORE
@@ -100,7 +100,7 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Ajoutez Core testnet2 en cliquant sur le bouton « Approuver ».
+4. Ajoutez Core Testnet2 en cliquant sur le bouton « Approuver ».
 
 Le Testnet Core est maintenant ajouté à votre MetaMask.
 
@@ -121,7 +121,7 @@ Le Testnet Core est maintenant ajouté à votre MetaMask.
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Ajoutez Core testnet2 en cliquant sur le bouton « Approuver ».
+4. Ajoutez Core Testnet2 en cliquant sur le bouton « Approuver ».
 
 Le Core Testnet est maintenant ajouté à votre MetaMask.
 

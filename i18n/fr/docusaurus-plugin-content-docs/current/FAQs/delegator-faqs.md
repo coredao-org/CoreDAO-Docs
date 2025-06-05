@@ -21,8 +21,8 @@ Dans l'écosystème de Core, la délégation est un mécanisme fondamental qui p
 
 En déléguant des tokens CORE à des validateurs, les détenteurs de CORE peuvent aider à sécuriser le réseau et partager les récompenses du système. Veuillez consulter le [guide](../stake-and-delegate/delegating-core.md) détaillé sur la délégation de CORE pour plus d'informations.
 
-<!-- ### 4. What are the minimum staking period requirements for BTC and BTC Hash Power delegation?
-For BTC and BTC hash power delegation the minimum requirement is that of **10** days, i.e., you cannot un-delegate your stake prior to **10** days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 10 days\`). -->
+<!-- ### 4. What are the minimum staking period requirements for BTC and Bitcoin hash power delegation?
+For BTC and Bitcoin hash power delegation the minimum requirement is that of **10** days, i.e., you cannot un-delegate your stake prior to **10** days. Technically, (\`CLTV timestamp - transaction confirmation timestamp > 10 days\`). -->
 
 ### 4. Y a-t-il des frais associés à la délégation de BTC, de tokens CORE ou de puissance de hachage ?
 

@@ -59,7 +59,7 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 
 3. ** Installez les contrats Openzeppelin **: 
 - Si vous utilisez le **Solidity compiler** intégré de Remix **, il va automatiquement récupérer les contrats OpenZeppelin pour vous.
-   - Si vous utilisez HardHat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
+   - Si vous utilisez Hardhat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
 
 ## Étape 3: Compiler le contrat dans Remix
 

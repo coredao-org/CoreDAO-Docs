@@ -78,7 +78,7 @@ La `Satoshi Chain/BTCs` a été rebaptisée `Core/CORE`, respectivement. Si vous
 
 ### Alimentation du Portefeuille avec des jetons tCORE
 
-Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des jetons Core testnet, **tCORE**. Suivez le [guide](./core-faucet.md) détaillé pour alimenter votre compte MetaMask avec des jetons tCORE.
+Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des jetons Core Testnet, **tCORE**. Suivez le [guide](./core-faucet.md) détaillé pour alimenter votre compte MetaMask avec des jetons tCORE.
 
 ### L'Envoi jetons tCORE
 

@@ -14,20 +14,20 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 
 1. Accédez au site web du faucet.
 
-   - **Pour le faucet de Core Blockchain Testnet (1114) :** https://scan.test2.btcs.network/faucet
-   - **Pour le faucet de Core Blockchain Testnet (1115) :** https://scan.test.btcs.network/faucet
+   - **Pour le faucet de Core Testnet2 (1114) :** https://scan.test2.btcs.network/faucet
+   - **Pour le faucet de Core Testnet (1115) :** https://scan.test.btcs.network/faucet
 
 2. Collez votre adresse dans la zone de texte fournie. Assurez-vous de donner l’adresse Core Testnet de votre portefeuille à laquelle vous souhaitez recevoir des tCORE ou tCORE2.
 
 3. Complétez le CAPTCHA
 
-4. Si vous utilisez le faucet pour Core Blockchain Testnet (1114), cliquez sur le bouton `Get tCORE2`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
+4. Si vous utilisez le faucet pour Core Testnet (1114), cliquez sur le bouton `Get tCORE2`. Après avoir demandé des tCORE au faucet, vous verrez le solde de votre MetaMask augmenter.
 
 <p align="center">
 ![using-faucet-test2](../../../../../static/img/faucet/faucet-test2.png)
 </p>
 
-5. Si vous utilisez le faucet pour Core Blockchain Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
+5. Si vous utilisez le faucet pour Core Testnet (1115), cliquez sur le bouton `Get tCORE`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
 <p align="center">
 ![using-faucet](../../../../../static/img/faucet/faucet.png)

@@ -8,11 +8,11 @@ sidebar_position: 2
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
-This guide details the process of enabling cross-chain ERC-20 token transfers on Core Blockchain using LayerZero's Omnichain Fungible Token (OFT) V2 protocol. It is designed for both beginners and experienced developers, providing step-by-step instructions and references to official resources and the [CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
+This guide details the process of enabling cross-chain ERC-20 token transfers on Core using LayerZero's Omnichain Fungible Token (OFT) V2 protocol. It is designed for both beginners and experienced developers, providing step-by-step instructions and references to official resources and the [CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
 
 ## Overview
 
-This documentation walks you through the process of setting up cross-chain token transfers using LayerZero's OFT V2 protocol. The main focus is on enabling ERC-20 token transfers between Core Testnet/Mainnet and other EVM-compatible networks such as Base Sepolia and Optimism. By following this guide, you will learn to:
+This documentation walks you through the process of setting up cross-chain token transfers using LayerZero's OFT V2 protocol. The main focus is on enabling ERC-20 token transfers between Core Testnet/mainnet and other EVM-compatible networks such as Base Sepolia and Optimism. By following this guide, you will learn to:
 
 - Set up and configure your development environment for cross-chain deployments.
 - Deploy and verify OFT contracts on Core and external networks.

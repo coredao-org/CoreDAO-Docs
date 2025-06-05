@@ -100,7 +100,7 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Agrega Core testnet2 al hacer clic en el botón de `Approve`.
+4. Agrega Core Testnet2 al hacer clic en el botón de `Approve`.
 
 El Core Testnet ahora está agregado a su MetaMask.
 
@@ -121,7 +121,7 @@ El Core Testnet ahora está agregado a su MetaMask.
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Agrega Core testnet2 al hacer clic en el botón de `Approve`.
+4. Agrega Core Testnet2 al hacer clic en el botón de `Approve`.
 
 Core Testnet está ahora agregada a su MetaMask.
 

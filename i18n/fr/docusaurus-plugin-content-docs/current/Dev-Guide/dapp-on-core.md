@@ -69,7 +69,7 @@ Comme nous utiliserons Waffle pour ce projet, assurez-vous de sélectionner **No
 ```bash
 dapp-tutorial.
 |   .gitignore
-|   hardhat-config.js   (HardHat configuration file.)
+|   hardhat-config.js   (Hardhat configuration file.)
 |   package-lock.json
 |   package.json
 |   README.md

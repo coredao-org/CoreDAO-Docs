@@ -11,11 +11,11 @@ description: Deploy Contracts on Core using the Hardhat
 
 Hardhat is a popular development environment for EVM-compatible blockchains, consisting of multiple components for writing, compiling, debugging, and deploying smart contracts.
 
-In this tutorial, learn how to compile, deploy and call smart contracts on Core Testnet using Hardhat. Obtain codebase for this tutorial from [here](https://github.com/coredao-org/hardhat-tutorial).
+In this tutorial, learn how to compile, deploy, and call smart contracts on Core Testnet using Hardhat. Obtain codebase for this tutorial from [here](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Installation
 
-Navigate to your profile folder and follow the steps below to install HardHat (npm/node [v8.9.4 LTS or later](https://nodejs.org/en/) is required):
+Navigate to your profile folder and follow the steps below to install Hardhat (npm/node [v8.9.4 LTS or later](https://nodejs.org/en/) is required):
 
 1. `npm init --yes`
 2. `npm install --save-dev hardhat`
@@ -23,7 +23,7 @@ Navigate to your profile folder and follow the steps below to install HardHat (n
 
 ## Project Initialization
 
-After installation, we can initialize HardHat by executing the `npx hardhat` command:
+After installation, we can initialize Hardhat by executing the `npx hardhat` command:
 
 ```javascript
 $ npx hardhat
@@ -50,9 +50,9 @@ Once this project is initialized, you'll find the following project structure:
 - `contracts`: for Solidity smart contracts.
 - `scripts`: for JavaScript/TypeScript scripts for contract interaction and other utilities.
 - `test`: for writing and running tests.
-- `hardhat.config.js`: HardHat configuration file.
+- `hardhat.config.js`: Hardhat configuration file.
 
-## Configure HardHat for Core Testnet
+## Configure Hardhat for Core Testnet
 
 Copy the following into your `hardhat.config.js` file:
 
@@ -102,7 +102,7 @@ module.exports = {
 };
 ```
 
-**Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `shanghai` under the solidity compiler settings in the `hardhat.config.js` file.
+**Make sure that your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md)**, to do so ensure that the `evmVersion` parameter is set to `shanghai` under the solidity compiler settings in the `hardhat.config.js` file.
 
 If you are using **testnet1**, `evmVersion` parameter should be set to `Paris`.
 
@@ -182,7 +182,7 @@ describe("Storage", function () {
 });
 ```
 
-To test our `Storage.sol` contract on the built-in HardHat network, run the following command:
+To test our `Storage.sol` contract on the built-in Hardhat network, run the following command:
 
 `npx hardhat test --network hardhat`
 
@@ -201,7 +201,7 @@ $ npx hardhat test --network hardhat
 
 ## Contract Deployment and Interaction
 
-HardHat makes it easy to use the `ethers.js` library to deploy and interact with our smart contracts. Create a new file called `deploy-and-call.js` in the `scripts` folder that contains the following code:
+Hardhat makes it easy to use the `ethers.js` library to deploy and interact with our smart contracts. Create a new file called `deploy-and-call.js` in the `scripts` folder that contains the following code:
 
 ```javascript
 // We require the Hardhat Runtime Environment explicitly here. This is optional
@@ -266,4 +266,4 @@ We can use[ Core Scan](https://scan.test2.btcs.network/) to search for the contr
 
 ## Further Reading
 
-For detailed instructions on using HardHat and plugins such as `ethers.js`, please visit[ HardHat's official website](https://hardhat.org/docs).
+For detailed instructions on using Hardhat and plugins such as `ethers.js`, please visit[ Hardhat's official website](https://hardhat.org/docs).

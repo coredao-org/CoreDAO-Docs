@@ -15,7 +15,7 @@ import TabItem from '@theme/TabItem';
 This is a detailed guideline for connecting to Core Testnet/Mainnet using the MetaMask wallet.
 :::
 
-### Software Prequisites
+### Software Prerequisites
 
 1. [MetaMask Wallet Browser Extension](https://metamask.io/)
 
@@ -25,7 +25,7 @@ We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to
 
 ### Adding Core to MetaMask
 
-There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testest ways below.
+There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testeed ways below.
 
 #### Adding Network Manually
 
@@ -67,7 +67,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core by ad
 
 <TabItem value="mainnet">
 
-- **Network Name:** Core Blockchain
+- **Network Name:** Core Blockchain Mainnet
 - **New RPC URL:** https://rpc.ankr.com/core
 - **Chain ID:** 1116
 - **Currency Symbol:** CORE
@@ -101,7 +101,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core by ad
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Add Core testnet2 by clicking the `Approve` button.
+4. Add Core Testnet2 by clicking the `Approve` button.
 
 The Core Testnet is now added to your MetaMask.
 
@@ -122,7 +122,7 @@ The Core Testnet is now added to your MetaMask.
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Add Core testnet by clicking the `Approve` button.
+4. Add Core Testnet by clicking the `Approve` button.
 
 The Core Testnet is now added to your MetaMask.
 

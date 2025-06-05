@@ -182,7 +182,7 @@ describe("Storage", function () {
 });
 ```
 
-Para probar nuestro contrato `Storage.sol` en la red HardHat incorporada, ejecute el siguiente comando:
+Para probar nuestro contrato `Storage.sol` en la red Hardhat incorporada, ejecute el siguiente comando:
 
 `npx hardhat test --network hardhat`
 
@@ -201,7 +201,7 @@ $ npx hardhat test --network hardhat
 
 ## Implementación y interacción del contrato
 
-HardHat facilita el uso de la biblioteca `ethers.js` para implementar e interactuar con nuestros contratos inteligentes. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
+Hardhat facilita el uso de la biblioteca `ethers.js` para implementar e interactuar con nuestros contratos inteligentes. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
 
 ```javascript
 // We require the Hardhat Runtime Environment explicitly here. This is optional
@@ -266,4 +266,4 @@ Podemos usar [Core Scan](https://scan.test2.btcs.network/) para buscar la direcc
 
 ## Lectura adicional
 
-Para obtener instrucciones detalladas sobre cómo usar HardHat y complementos como `ethers.js`, visita [el sitio web oficial de HardHat](https://hardhat.org/docs).
+Para obtener instrucciones detalladas sobre cómo usar Hardhat y complementos como `ethers.js`, visita [el sitio web oficial de Hardhat](https://hardhat.org/docs).

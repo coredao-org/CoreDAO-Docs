@@ -71,11 +71,11 @@ Vous pouvez trouver un guide pour utiliser l'API de Core afin de vérifier des c
 
 Si vous êtes déjà familier avec l'API d'Etherscan, cela devrait être simple ! Les appels API sur Core sont 100 % compatibles avec l'API d'Etherscan. Il vous suffit de remplacer la clé API et l'URL de l'endpoint et tout devrait fonctionner normalement.
 
-## Vérification avec HardHat
+## Vérification avec Hardhat
 
-La vérification via HardHat est le moyen le plus pratique pour les développeurs de vérifier des contrats intelligents. Pour plus d'informations, vous pouvez consulter le guide officiel de vérification de Hardhat [ici](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+La vérification via Hardhat est le moyen le plus pratique pour les développeurs de vérifier des contrats intelligents. Pour plus d'informations, vous pouvez consulter le guide officiel de vérification de Hardhat [ici](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Veuillez noter qu'il est nécessaire d'ajouter les réseaux Core en tant que chaînes personnalisées dans le fichier de configuration de HardHat. Voici un exemple de configuration pour HardHat :
+Veuillez noter qu'il est nécessaire d'ajouter les réseaux Core en tant que chaînes personnalisées dans le fichier de configuration de Hardhat. Voici un exemple de configuration pour Hardhat :
 
 ```javascript
 /**
@@ -163,7 +163,7 @@ mettez à jour le fichier `foundry.toml` pour spécifier la version Solidity et 
 ```bash
 [profile.default]
 solidity_version = "0.8.0"  # Specify the Solidity version
-evm_version = "shanghai" #Specify the EVM version as Shanghai for Core testnet2 and mainnet, use Paris for old testnet
+evm_version = "shanghai" #Specify the EVM version as Shanghai for Core Testnet2 and mainnet, use Paris for old testnet
 ```
 
 créez un fichier `.env` pour stocker des informations sensibles telles que votre clé privée, votre URL RPC et vos clés API. Cela permet de sécuriser vos informations d’identification et de les référencer facilement dans votre code.
