@@ -5,93 +5,149 @@ sidebar_position: 2
 description: Rewards in the Core Ecosystem
 ---
 
-# Rewards in the Core Ecosystem 
+# Consensus Rewards
+
 ---
 
-The Core network is designed to incentivize participation and secure commitment from its community through a well-structured rewards system. This system underpins Satoshi Plus consensus, upholding network security, stakeholder engagement, and alignment of interests among all participants. The rewards system is fundamental in encouraging the community to partake actively in mining, staking, and governance, thereby enhancing the overall health and growth of the ecosystem.
+## Overview
 
-## Types of Rewards
+The Core network's reward system is a foundational component of the **Satoshi Plus consensus**, aligning incentives across miners, stakers, validators, relayers, and verifiers. Through this system, participants are compensated for contributing to network security, decentralization, and governance.
 
-<p align="center">
-![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
-</p> 
+Rewards are distributed across four main categories:
 
-### 1. Mining Rewards
-* **Description:** Mining rewards are provided to Bitcoin miners who contribute their hashing power to secure the Core blockchain. This process extends the traditional mining efforts on the Bitcoin blockchain to include support for the Core blockchain, without requiring miners to divert resources from their Bitcoin mining activities.
-* **Mechanism:** Miners include specific metadata in the Bitcoin blocks they mine, indicating their support for Core blockchain. In return for their contribution, miners receive CORE tokens as supplemental rewards, on top of their regular Bitcoin mining rewards.
+1. Mining (DPoW)
+2. Staking (CORE and Bitcoin)
+3. Validator Operations
+4. System-Level Roles (Relayers and Verifiers)
 
-### 2. Staking Rewards
-* **Description:** Staking rewards are distributed to Bitcoin and CORE token holders who stake and delegate their tokens to Core validators. 
-* **Mechanism:**  Staking allows holders of both CORE tokens and [Bitcoin](../../products/btc-staking/overview.md) to participate in the election of the active validator set by delegating their holdings to their preferred validators. For CORE token staking, the minimum staking requirement is **1 CORE** token, allowing any CORE holders to stake onto the Core network. On the Bitcoin staking side, the current configuration imposes **no minimum BTC requirement** when using the staking script. However, staking via the official website UI requires a **minimum of 0.01 BTC** (excluding transaction fees). Holders of both CORE and Bitcoin can delegate their respective tokens to validators of their choice through the official [staking website](https://stake.coredao.org/staking). The rewards earned by stakers are proportional to the amount of Bitcoin/CORE staked, incentivizing long-term holding and participation in the consensus process.
+## 1. Mining Rewards (Delegated Proof of Work)
 
-### 3. Validator Rewards
-* **Description:** Validators earn rewards for their role in processing transactions, producing new blocks, and maintaining the blockchain's integrity. These rewards are critical for compensating validators for their efforts and operational costs.
-* **Mechanism:** Validators receive a combination of CORE block rewards and gas fees. There are two categories of validator rewards:
-    1. **Block rewards**, i.e. newly minted CORE tokens;
-    2. **Fees collected from transactions in each block**;
+**Who earns**: Bitcoin miners and mining pools
 
-Block rewards are calculated and distributed when the last block of a round is mined. Currently, **90%** of the rewards go to the validators and **10%** of the rewards go to the `System Reward Contract`. Of the 90% paid to validators, some percentage is taken as a commission by the validator before they pay out their delegates. Each validator has an equal probability of producing blocks, so in the long run, all stable validators should get a similar portion of the reward.
+**Mechanism**:
 
-Validators share rewards with the entities that delegated to them – including CORE stakers, Bitcoin stakers, and Bitcoin miners – but they decide how much to give back by deciding how much they (the validators) choose to keep for themselves. Validators can take as much or as little of the reward as they want, though they’re incentivized to be generous in order to attract more delegators.
+- Miners include validator delegation metadata in the Bitcoin blocks they mine.
+- This enables them to extend support to Core without diverting resources from Bitcoin mining.
+- In return, miners earn **CORE tokens** as supplemental rewards, in addition to regular Bitcoin block rewards.
 
-After the validators take their fees, the protocol uses this function to determine how the remaining rewards are split between CORE stakers, Bitcoin stakers, and hash power delegators. Reward distribution is calculated based on the following formula: 
+## 2. Staking Rewards (CORE & Bitcoin)
 
+**Who earns**: Holders of CORE or Bitcoin
 
-### Hash Power Delegators (Miners & Mining Pools)
+**Mechanism**:
 
-$$ 
+- Participants delegate CORE or timelocked Bitcoin to validators.
+- Voting power is proportional to the amount delegated.
+- Rewards are distributed based on a validator's performance and the participant's share of total delegation.
+
+Rewards from staking encourage long-term participation and give delegators influence over validator selection.
+
+## 3. Validator Rewards
+
+**Who earns**: Validators, and their delegators (miners, CORE stakers, Bitcoin stakers)
+
+**Mechanism**:
+
+- Validators earn from two sources:
+  - **Block Rewards**: Newly minted CORE tokens
+  - **Transaction Fees**: Collected from each processed block
+- Rewards are calculated and distributed at the **end of each round** (200 blocks / ~1 day)
+
+**Reward Split**:
+
+- **90%** goes to validators (and their delegators/voters)
+- **10%** is allocated to the **System Reward Contract**
+- Validators take a commission before distributing remaining rewards to their delegators
+
+Validators are incentivized to offer competitive reward shares to attract delegators.
+
+## 4. Reward Distribution Formula
+
+After validator commission, the protocol calculates delegator rewards based on contribution type:
+
+#### Hash Power Delegators (Miners & Mining Pools)
+
+$$
     rH = \frac{\frac{rHp}{tHp} * m} {S} * R
 $$
 
-### CORE Stakers
+#### CORE Stakers
 
-$$ 
+$$
     rS = \frac{\frac{rSp}{tSp} * k} {S} * R
 $$
 
-### Bitcoin Stakers
+#### Bitcoin Stakers
 
 $$
     rB = \frac{\frac{rBp}{tBp} * l} {S} * R
 $$
 
-Where: 
-* $$rH$$: Rewards attributed to delegated hash power (DPoW).
-* $$rS$$: Rewards attributed to CORE staking (DPoS).
-* $$rB$$: Rewards attributed to BTC staking.
-* $$R$$: Total rewards allocated to all delegators.
-* $$m$$: Proportion of rewards allocated to hash power.
-* $$k$$: Proportion of rewards allocated to CORE staking.
-* $$l$$: Proportion of rewards allocated to BTC staking.
-* $$S$$: Hybrid score of the validator.
+Where:
+
+- $$rH$$: Rewards attributed to delegated hash power (DPoW).
+- $$rS$$: Rewards attributed to CORE staking (DPoS).
+- $$rB$$: Rewards attributed to BTC staking.
+- $$R$$: Total rewards allocated to all delegators.
+- $$m$$: Proportion of rewards allocated to hash power.
+- $$k$$: Proportion of rewards allocated to CORE staking.
+- $$l$$: Proportion of rewards allocated to BTC staking.
+- $$S$$: Hybrid score of the validator.
+
+## 5. Per-Unit Reward Calculations
 
 Per unit reward calculations determine the rewards distributed for each staked unit of hash power, CORE, or BTC:
 
-* **Per unit hash power reward:** $$rHu$$ =  $$ \frac{rH}{rHp} $$
-* **Per unit CORE reward:** $$rSu$$ = $$ \frac{rS}{rSp} $$
-* **Per unit BTC reward:** $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- **Per unit hash power reward:** $$rHu$$ = $$ \frac{rH}{rHp} $$
+- **Per unit CORE reward:** $$rSu$$ = $$ \frac{rS}{rSp} $$
+- **Per unit BTC reward:** $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Where:
-* $$rHu$$ is the validator hash power rewards per unit;
-* $$rSu$$ is the CORE token staking rewards per unit;
-* $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
-* **Yield Multipliers:** Each boosted yield level has a specific multiplier (e, f, g, h,..., etc) that is determined by a user's staking data as well as system dual staking settings. The settings are subject to change and are configurable through governance voting. These calculations ensure proportional rewards are distributed based on individual contributions to a validator’s delegation pool.
 
-#### Impact of Dual Staking on BTC Rewards
-With the introduction of Dual Staking, Bitcoin staking rewards are now tiered based on the amount of CORE staked relative to Bitcoin. Bitcoin rewards are no longer evenly distributed across all participants. Instead, they are allocated dynamically based on Dual Staking thresholds, with higher tiers generally receiving a greater proportion of the rewards. 
+- $$rHu$$ is the validator hash power rewards per unit;
+- $$rSu$$ is the CORE token staking rewards per unit;
+- $$rBu$$ of **P<sub>n</sub>** is the BTC staking rewards per unit for delegator with PN BTC yield level
+- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e, f, g, h,..., etc) that is determined by a user's staking data as well as system Dual Staking settings. The settings are dynamically set through governance and reward users for pairing CORE and Bitcoin staking.
 
+## 6. Dual Staking Impact on Bitcoin Rewards
 
-#### Reward Split
+Bitcoin staking rewards are tiered based on how much CORE a delegator has staked relative to their Bitcoin delegation.
 
-These reward-splitting functions are designed to create an active market for rewards while encouraging competition amongst the validator set for both delegated hash power and delegated staked CORE and Bitcoin. For their part, delegators will try to optimize their own rewards by choosing validators with lower amounts of delegated hash power and stake. To maximize their rewards, delegators will look both for validators that are generous in their payouts, but also don’t already have a substantial amount of delegated CORE tokens or delegated PoW. The less a given validator has staked, the greater a contribution from a delegator will be. If a delegator adds one CORE token to a validator that only has one token, they’re 50% of that validator’s total delegation. If they delegate to a validator with 99 CORE tokens, they’re only 1% of that validator’s total delegation. Since payouts are determined in part based on the percentage of total stake each delegator accounts for, they’ll be incentivized to try and find validators with small delegations.
+- Higher tiers (e.g., Satoshi Tier) receive larger reward multipliers
+- This creates a **market-driven incentive** for pairing CORE with Bitcoin to boost returns
 
-### 4. Relayer and Verifier Rewards
-In the Core ecosystem, the base rewards are calculated and distributed when the last block of a round is mined, with **90%** going to the validators and **10%** to the System Rewards Contract. The System Reward Contract accumulates rewards to remunerate relayers and verifiers. As things stand, there is a cap of **10 million** total CORE tokens in the System Reward Contract. Any rewards in excess of this amount are burned.
+Learn more about [Dual Staking](../dual-staking/overview.md).
 
-Relayers are responsible for communicating the Bitcoin blocks and transaction data to the Core network. They earn a portion of the base system rewards and transaction fees for this cross-chain communications work. Relayer rewards are distributed in batches, every 100 Bitcoin blocks. Relayers claim their rewards periodically.
+## 7. Reward Optimization Strategies
 
-Verifiers in the Core ecosytem are responsible for monitoring the behavior of validators and report them if they engage in double signing or other malicious activity. When successful, rewards are paid out immediately from the System Rewards Contract, in the same transaction.
+Delegators are incentivized to:
 
+- Choose validators with **smaller delegation pools**, where their stake makes up a larger percentage
+- Seek out validators with **lower commission fees**
+- Balance staking across under-subscribed validators to maximize marginal yield
+
+This dynamic fosters active delegation decisions and validator competition.
+
+## 8. Relayer & Verifier Rewards
+
+### Relayers
+
+- Relay Bitcoin block and transaction data to Core
+- Paid from the **System Reward Contract**
+- Rewards are batched every **100 Bitcoin blocks**
+- Claimed periodically by relayers
+
+### Verifiers
+
+- Monitor validators for malicious behavior (e.g. double signing)
+- When they submit valid reports, rewards are issued **immediately** from the System Reward Contract
+
+**Note:** The **System Reward Contract** is capped at **10 million CORE tokens**. Any overflow is **burned**, making excess participation deflationary.
 
 ## Conclusion
-Rewards in Satoshi Plus play a crucial role in maintaining the security, vitality, and decentralization of the network. By aligning the incentives of various participants through a comprehensive and adaptable rewards system, Core ensures ongoing engagement and contributes to the sustained growth and stability of the platform. 
+
+<p align="center">
+![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
+</p>
+
+Core's reward system properly incentivizes and aligns **miners, stakers, validators, and infrastructure roles**. Through a transparent and configurable system, rewards drive security, decentralization, and sustained community participation across Satoshi Plus consensus.

@@ -1,13 +1,15 @@
 ---
-sidebar_label: Liquid Staking with stCORE
+sidebar_label: How to Liquid Stake (stCORE)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
 # Liquid Staking with stCORE
+
 ---
 
 ## Introduction
+
 Liquid Staking with stCORE enhances CORE token utility while streamlining the staking process. This guide provides a detailed walkthrough for minting and redeeming stCORE, enabling token holders to maximize capital efficiency while participating in network security.
 
 ## Getting Started: Prerequisites
@@ -18,12 +20,12 @@ Liquid Staking with stCORE enhances CORE token utility while streamlining the st
 
 ## Key Definitions
 
-* **CORE Balance:** The amount of CORE tokens in your wallet.
-* **stCORE Balance:** The amount of stCORE tokens in your wallet.
-* **CORE in Redemption:** A **7-day** unlocking period for withdrawing CORE after redemption initiation.
-* **Reward Rate:** The annualized return projection for holding stCORE.
-* **Conversion Ratio:** A dynamic value reflecting the stCORE/CORE or CORE/stCORE ratio, influenced by the Earn contract's staking activities.
-* **stCORE Supply:** Total minted stCORE tokens.
+- **CORE Balance:** The amount of CORE tokens in your wallet.
+- **stCORE Balance:** The amount of stCORE tokens in your wallet.
+- **CORE in Redemption:** A **7-day** unlocking period for withdrawing CORE after redemption initiation.
+- **Reward Rate:** The annualized return projection for holding stCORE.
+- **Conversion Ratio:** A dynamic value reflecting the stCORE/CORE or CORE/stCORE ratio, influenced by the Earn contract's staking activities.
+- **stCORE Supply:** Total minted stCORE tokens.
 
 ## Minting stCORE
 
@@ -32,7 +34,7 @@ Liquid Staking with stCORE enhances CORE token utility while streamlining the st
 3. **Confirmation:** Click '_Confirm_' to proceed.
 4. **Wallet Transaction:** Approve the minting transaction in your wallet.
 5. **Add stCORE to Wallet:** Click on the **_+_** sign to add stCORE.
- 
+
 ![minitng-stCORE](../../../../static/img/stCore/mint-stcore.png)
 
 ## Redeeming CORE from stCORE
@@ -44,5 +46,4 @@ Liquid Staking with stCORE enhances CORE token utility while streamlining the st
 5. **Unlocking Period:** A **7-day** wait period begins. Track progress under the “_In Redemption_” section.
 6. **Withdrawal:** Post-unlocking, click '_Withdraw_' to transfer CORE to your wallet.
 
- 
 ![minitng-stCORE](../../../../static/img/stCore/redeem-stcore.png)

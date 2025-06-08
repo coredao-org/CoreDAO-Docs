@@ -5,34 +5,33 @@ sidebar_position: 2
 description: Learn about the major components of the Satoshi Plus Mechanism
 ---
 
-# Satoshi Plus Consensus 
+# Satoshi Plus Consensus
+
 ---
-
-Satoshi Plus is Core's innovative consensus mechanism that unites Bitcoin's security with EVM programmability to secure a uniquely powerful blockchain ecosystem. By integrating three distinct participation methods—Bitcoin miner contributions via Delegated Proof of Work (DPoW), CORE token delegation via Delegated Proof of Stake (DPoS), and Bitcoin timelocking and delegation via Self-Custodial Bitcoin Staking—Satoshi Plus creates a robust security framework that aligns incentives across both the Bitcoin and Core ecosystems. This multi-layered approach is designed to prevent any single group from controlling the network, while enabling Bitcoin holders to earn yield, Bitcoin miners to receive supplemental rewards, and CORE holders to participate in network security—all while maintaining Bitcoin's fundamental security properties and extending them to protect Core's smart contract functionality.
-
-![satoshi-plus](../../../../static/img/staoshi-plus/consensus-components.png)
-
-
-## Major Components of the Satoshi Plus Mechanism
 
 <p align="center">
 ![component-diagram](../../../../static/img/Core-Architecture.png)
 </p>
 
-**Validators:** Validators are responsible for producing blocks and validating transactions on the Core network. Anyone can become a Core validator by registering with the network and locking up a refundable CORE token deposit.
+## Key Roles
 
-**Validator Election:** The validator set is determined through an election, with validators chosen based on their hybrid score for each round. Any validator in the current validator set which hasn't been jailed or slashed is considered "live". To ensure a more stable TPS, the live validators are updated every 200 blocks, meaning that if any validators are jailed or slashed, the others can continue producing blocks as usual.
+- **Validators**: Produce blocks and validate transactions on the Core network. Validators must register and lock a refundable CORE validator bond deposit.
+- **Bitcoin Miners**: Secure Bitcoin via Proof of Work and can delegate hash power to Core validators by including delegation information in the coinbase transaction of a block.
+- **CORE Stakers**: Delegate CORE tokens to validators as part of the validator election to support network security.
+- **Bitcoin Stakers**: Delegate timelocked Bitcoin to validators on Core through Self-Custodial Bitcoin staking and earn yield without relinquishing custody of their assets.
+- **Relayers**: Responsible for synchronizing the data between the Core and Bitcoin networks. They transmit Bitcoin block and transaction data to Core. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
+- **Verifiers**: Report malicious behavior on the Core network. Successful verification flags can trigger the slashing or jailing of validators and bad actors. Verifiers are compensated for this monitoring activity when block rewards are dispensed. Anyone can act as a Verifier on the Core network.
 
-**Hybrid Score:** Every validator node seeking to become part of the validator set receives a hybrid score, calculated based on three factors: hash power delegated by Bitcoin miners/mining pools (DPoW), delegated CORE tokens from CORE stakers (DPoS), and Bitcoin delegated from Bitcoin stakers (timelocking). The validator set is currently composed of the top 27 validators with the highest hybrid scores.
+## Consensus & Election
 
-**Bitcoin Miners:** Bitcoin miners secure the Bitcoin network via Delegated Proof of Work and can delegate their support to a Core validator by including specific metadata in the coinbase transaction of a newly mined block. This delegation is non-destructive, meaning miners continue their primary role of securing Bitcoin while simultaneously supporting Core.
+- **Validator Election**: Every **round (1 day)**, the top **29 validators** by **hybrid score** (based on DPoW from miners, DPoS from CORE holders, and staked Bitcoin from Bitcoin holders) are elected to become part of the active validator set and secure the network. Any validator in the current validator set that hasn't been jailed or slashed is considered "live". To ensure a more stable TPS, the live validators are updated every 200 blocks, meaning that if any validators are jailed or slashed, the others can continue mining blocks as usual.
+- **Hybrid Score:** Every validator node seeking to become part of the active validator set is given a hybrid score, which is calculated based on three delegations: hashpower, CORE, and Bitcoin. The active validator set currently comprises the top 29 validators with the highest hybrid scores.
+- **Round:** A round lasts **one day**, during which the **top 29 validators** (ranked by hybrid score) are elected to produce blocks. At the end of each round, **rewards are calculated and distributed**, and the next validator set is selected.
+- **Epoch (10 min or 200 slots)**: Periodic validator status checks ensure jailed nodes don't participate in consensus. The validator status is checked once per epoch (rather than continuously) to keep TPS roughly constant in a given round.
+- **Slot (3 sec)**: Each 1-day round is divided into slots, and all validators in the validator set take turns producing one block per slot in a round-robin fashion.
 
-**CORE Stakers:** Holders of Core's native CORE tokens can participate in network security by delegating their tokens to validators, earning rewards proportional to their delegation and the liveness of their chosen validators.
+## Rewards & Stability
 
-**Bitcoin Stakers (Timelockers):** Bitcoin holders can timelock their Bitcoin on the Bitcoin blockchain using Bitcoin's native CLTV function, effectively making their Bitcoin unspendable for the designated period of time. In exchange for timelocking their Bitcoin, Bitcoin holders earn the right to participate in the Core validator election. When their elected validators secure Core, the Bitcoin holder earns CORE rewards. 
-
-**Relayers:** Relayers transmit Bitcoin block headers to the Core network. Anyone can become a relayer by registering and locking up a refundable CORE token deposit.
-
-**Verifiers:** Verifiers monitor the network for malicious behaviors. Successful verification of violations may result in slashing a malicious validator's rewards or stake, or jailing them, with verifiers receiving compensation for this oversight. Anyone can act as a verifier on the Core network.
-
-**Round:** A round lasts one day, during which the top 27 validators (ranked by hybrid score) serve as block producers. At the end of each round, rewards are calculated and distributed, and a new validator set is selected for the next round.
+- **Reward Module:** Rewards are distributed at the end of each round based on validator performance. The Reward Module calculates and distributes these rewards accordingly.
+- Rewards are distributed at the **end of each round**.
+- Live validators are updated **every 200 blocks** to maintain stable TPS.

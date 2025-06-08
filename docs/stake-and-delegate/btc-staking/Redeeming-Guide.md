@@ -1,5 +1,5 @@
 ---
-sidebar_label: Redeem Bitcoin / Claim CORE 
+sidebar_label: Redeem Bitcoin / Claim CORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -11,8 +11,8 @@ After you've successfully created a Bitcoin timelock transaction, you'll want to
 
 ## Reward Distribution Information
 
-* **Distribution of Rewards:** CORE token rewards are distributed to stakers as incentives for their contribution to network security and governance.
-* **Reward Source:** Rewards are sourced from the consensus reward pool.
+- **Distribution of Rewards:** CORE token rewards are distributed to stakers as incentives for their contribution to network security and governance.
+- **Reward Source:** Rewards are sourced from the consensus reward pool.
 
 ## Redeem an Expired Staked Bitcoin
 
@@ -42,9 +42,9 @@ If your staking period has expired, redeem your staked Bitcoin assets from eithe
 ![native-staking-guide](../../../static/img/native-staking/native-staking-21.avif)
 </p>
 
-* Set your receiving Bitcoin Address to receive the unlocked Bitcoin. This does not need to be the same as the address that initiated the Bitcoin staking transaction.
-* Set your transaction speed priority
-* Click ‘**Create Transaction**’
+- Set your receiving Bitcoin Address to receive the unlocked Bitcoin. This does not need to be the same as the address that initiated the Bitcoin staking transaction.
+- Set your transaction speed priority
+- Click ‘**Create Transaction**’
 
 <p align="center">
 ![native-staking-guide](../../../static/img/native-staking/native-staking-22.avif)
@@ -53,6 +53,7 @@ If your staking period has expired, redeem your staked Bitcoin assets from eithe
 5. Sign the transaction with your Bitcoin wallet that you connected previously, and verify the Bitcoin has returned to your receiving address. (_This may take a few minutes_).
 
 ## Claim CORE token rewards earned from Bitcoin Staking delegation
+
 :::note
 To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
 :::
@@ -85,4 +86,4 @@ To be eligible to earn rewards, it is required to complete a full staking round 
 
 #### Conclusion
 
-By following this guide, you have sucecesfulyl learned how to redeem your staked Bitcoin from the Core blockchain, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
+By following this guide, you have successfully learned how to redeem your staked Bitcoin, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
