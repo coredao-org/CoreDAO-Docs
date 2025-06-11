@@ -13,7 +13,7 @@ Ce guide utilisateur est conçu pour vous accompagner dans le staking de votre B
 Pour pouvoir staker, vous devez disposer des éléments suivants:
 
 1. **Extension de navigateur de portefeuille Bitcoin pris en charge:** Pour participer au processus de staking de BTC, vous devez installer les extensions de navigateur de l'un des portefeuilles Bitcoin pris en charge, comme Xverse, Unisat, et/ou OKX Wallet (visitez stake.coredao.org pour les portefeuilles les plus récents pris en charge). Vous devez utiliser une version de bureau, car les portefeuilles mobiles et matériels ne sont pas actuellement pris en charge. Vous pouvez également staker directement en utilisant l'application mobile du portefeuille Element.
-2. **Adresse de portefeuille Core pour les récompenses:** Préparez votre adresse de portefeuille Core pour recevoir les récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici](https://docs.coredao.org/docs/Dev-Guide/core-mainnet-wallet-config.md).
+2. **Adresse de portefeuille Core pour les récompenses:** Préparez votre adresse de portefeuille Core pour recevoir les récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici](../../../Dev-Guide/core-wallet-config.md).
 
 ## **Considérations Clés pour le Staking de BTC**
 

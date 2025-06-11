@@ -254,7 +254,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnets. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Make sure your MetaMask wallet has tCORE or tCORE2 test tokens for the Core Testnets. Refer [here](./core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 4. Run the following command from the root directory of your project, to deploy your smart contract on the Core blockchain.
 

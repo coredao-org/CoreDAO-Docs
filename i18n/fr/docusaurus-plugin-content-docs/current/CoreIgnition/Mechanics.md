@@ -168,8 +168,7 @@ En plus de détenir des tokens stratégiques et de déployer des actifs dans div
 
 Avec la nouvelle couche d'attribution Coretoshi, les détenteurs de NFT Coretoshi bénéficient désormais d'avantages supplémentaires :
 
-1. 200 Sparks supplémentaires par transaction
-  Les détenteurs de NFT Coretoshi reçoivent 200 Sparks supplémentaires par transaction, sans limite, lorsqu'ils interagissent avec les dApps de l'écosystème Core.(#activities-with-core-ecosystem-dapp);
+1. 200 Sparks supplémentaires par transaction: Les détenteurs de NFT Coretoshi reçoivent 200 Sparks supplémentaires par transaction, [sans limite](#activities-with-core-ecosystem-dapp), lorsqu'ils interagissent avec les dApps de l'écosystème Core.
 2. Multiplicateur de Sparks supplémentaire de 1,5x
   Un multiplicateur de Sparks supplémentaire de 1,5x est automatiquement appliqué en plus du multiplicateur de volume existant des utilisateurs.
 
