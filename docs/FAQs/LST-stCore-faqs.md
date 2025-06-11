@@ -63,7 +63,7 @@ And when they undelegate
 
 When handling delegate/undelegate internally, the `Earn` module must also follow the same restrictions. 
 
-The implementation/case elaborations are in `_undelegateWithStrategy()` method. 
+The implementation/case elaborations are in `_undelegateWithStrategy()` method.
 
 When calling the `mint()` method, the caller needs to pass in a validator address to stake the CORE tokens to - by doing so we hope to treat all validator candidates equally no matter whether they are already elected or queued. However, in order to improve user experiences, we may have the official frontend to randomly choosing a proper validator and make it unseen for users.  
 
