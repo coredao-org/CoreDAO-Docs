@@ -22,7 +22,7 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 1. Vaya al sitio web de Core Scan.
 
 - [Para Core Mainnet](https://scan.coredao.org/)
-- [Para Core Testnet2](https://scan.test.btcs.network)
+- [For Core Testnet2](https://scan.test2.btcs.network)
 - [Para Core Legacy Testnet](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
