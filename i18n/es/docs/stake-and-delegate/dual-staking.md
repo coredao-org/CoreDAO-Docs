@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introducción
 
-El [Staking de Bitcoin Auto-Custodiado](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md) fue integrado en la blockchain de Core en abril de 2024, permitiendo a los usuarios hacer staking de Bitcoin y ganar rendimientos mientras mantienen la custodia de sus activos.
+[Self-Custodial Bitcoin Staking](../Learn/products/btc-staking/overview.md) was integrated into the Core blockchain in April 2024, allowing users to stake Bitcoin and earn yield while retaining custody of their assets.
 
 Para maximizar el potencial de rendimiento del staking de Bitcoin, Core ofrece Dual Staking, un mecanismo que desbloquea niveles de recompensa más altos al participar simultáneamente en el staking de Bitcoin con bloqueo de tiempo y el staking de tokens CORE.
 Dado que las emisiones diarias de Core siguen un cronograma fijo, los participantes que hacen staking de CORE junto con su Bitcoin reciben recompensas significativamente mayores en comparación con aquellos que sólo hacen staking de Bitcoin. El aumento en el porcentaje de rendimiento se determina por la cantidad de tokens CORE en staking en relación con el valor en Bitcoin, con umbrales definidos que corresponden a niveles crecientes de recompensas.
@@ -28,11 +28,11 @@ Al alinear las recompensas del staking de Bitcoin con los niveles de staking de 
 
 ## ¿Cómo funciona el staking dual?
 
-El Dual Staking no altera el proceso de staking de Bitcoin y CORE. Para obtener más información sobre cómo funciona el Staking de Bitcoin Auto-Custodiado, consulta [aquí](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md). También revisa esta [guía](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) detallada sobre cómo delegar CORE y hacer [staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md)/[redeeming](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide.md) de BTC.
+El Dual Staking no altera el proceso de staking de Bitcoin y CORE. For more information on how Self-Custodial Bitcoin Staking works, refer [here](../Learn/products/btc-staking/overview.md). Also, consult this detailed [guidebook](./delegating-core.md) on delegating CORE and [staking](../Learn/products/btc-staking/stake-btc-guide.md)/[redeeming](../Learn/products/btc-staking/Redeeming-Guide.md) BTC.
 
 El Dual Staking crea una oportunidad para desbloquear rendimientos más altos cuando tanto Bitcoin como CORE son puestos en staking simultáneamente, con diferentes umbrales de staking de CORE que corresponden a distintos niveles de aumento de rendimiento en las recompensas de staking de Bitcoin en la blockchain de Core.
 
-Los holders de Bitcoin pueden hacer [staking de su Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md) mediante el Staking de Bitcoin Auto-Custodiado de Core para acumular recompensas en CORE. Al colocar posteriormente sus tokens [CORE en staking](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) según los distintos umbrales del Dual Staking, los usuarios desbloquean niveles más altos de rendimiento sobre su Bitcoin, pagados en CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
+Bitcoin holders can [stake their Bitcoin](../Learn/products/btc-staking/stake-btc-guide.md) through Core's Self-Custodial Bitcoin Staking to accumulate CORE rewards. By subsequently [staking their CORE](./delegating-core.md) tokens at different Dual Staking thresholds, users unlock higher tiers of Bitcoin yields, paid in CORE. Aunque el Dual Staking mejora las recompensas del staking de Bitcoin, no afecta el rendimiento generado por el staking de CORE en sí.
 
 Para habilitar rendimientos más altos en el staking de Bitcoin a través de Dual Staking, los usuarios deben cumplir con los siguientes requisitos:
 
