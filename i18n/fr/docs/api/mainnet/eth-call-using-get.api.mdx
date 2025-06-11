@@ -1,0 +1,66 @@
+---
+id: eth-call-using-get
+title: Get transaction receipt
+description: Get transaction receipt
+sidebar_label: Get transaction receipt
+hide_title: true
+hide_table_of_contents: true
+api: eJydVMtu2zAQ/BVhTy3AWmmPvAWpYQQI2qJpToZRbKS1RJQiGXJlxxD078VKqiE3iZvmSHJ2ZvbFDhirBHoNK+I6+xb94wE2CnygiGy8uy5BA3F9hdbeJeOq1fIHKAgYsSGmKLEdOGwINGAwv+gACowDDQ8tRTmUlIpogrDNMZEeWhOpBM2xJQWpqKlB0B3wIQhb4mhcBX2vjgIlMp6nnxCvIWOsznONgJeoBL3F1jJosMiU+JTd/4Pc/1cNNn/Hr4gzjugSFnKTRSrIBAYFDXHtpW0V8dAqrkFDjsHkFXGdE9c/C7RWcqO4+9PDNlrQUDOHpPPcB3IYzKLwkUr0Cx+rHMSFcVs/GDRsxeFlMNlnX7QNOR4m5kmmzyGYYpO+bm8p7kwhNG10mn0CBdYU5BKJxlTKy4BFTdmnxQWomU2d5/v9foHD62BwCk35zfXV8svt8oOE9Aokx9HLx/Ei+MQNupnGy+U8SebYGKZHzoNF44RvMNVNpV7LjIOS8teg4FjujYLaJxZA191jorto+16uxwmRJpQm4b2VgdiiTfREvfCOycnIvfs+zc777LhSz3qTp9na7dC2AgKZ1dfLTXt1RmFCvJF/3LUz9CPgjeyzYg17d07Hn8hs5BCN6IBeb/rZeslP2Pe/Ac/hxVY=
+sidebar_class_name: get api-method
+info_path: docs/api/mainnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Get transaction receipt"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/geth/eth_call"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Get transaction receipt
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={undefined}
+>
+  
+</StatusCodes>
