@@ -198,21 +198,21 @@ El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacen
 #### Componentes del contrato
 
 1. **Variable de estado**:
- - `number`: una variable `uint256` que se utiliza para almacenar el valor.
+  - `number`: una variable `uint256` que se utiliza para almacenar el valor.
 
 #### Funciones del contrato
 
 1. **Función de tienda**:
 
- - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
- - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
- - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
+  - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
+  - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+  - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
 
 2. **Función de recuperación**:
- - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
- - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
- - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
- - **Valor de retorno**: La función devuelve el valor de la variable "número".
+  - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
+  - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+  - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
+  - **Valor de retorno**: La función devuelve el valor de la variable "número".
 
 ## Compilación de contrato inteligente
 
@@ -255,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Consulta [aquí](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) para obtener detalles sobre cómo conseguir tokens tCORE o tCORE2 desde el Core Faucet.
+3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Refer [here](./core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
