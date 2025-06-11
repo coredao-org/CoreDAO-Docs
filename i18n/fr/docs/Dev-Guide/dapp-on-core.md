@@ -202,21 +202,21 @@ Le contrat `Storage` est un exemple simple qui démontre comment stocker et réc
 #### Composants du contrat
 
 1. **Variable d'état :**
- - `number` : Une variable `uint256` utilisée pour stocker la valeur.
+  - `number` : Une variable `uint256` utilisée pour stocker la valeur.
 
 #### Fonctions du contrat
 
 1. **Fonction Store :**
 
- - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
- - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
- - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
+  - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
+  - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+  - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
 
 2. **Fonction Retrieve :**
- - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
- - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
- - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
- - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
+  - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
+  - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+  - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
+  - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
 
 ## Compilation du contrat intelligent
 
@@ -264,7 +264,7 @@ main().catch((error) => {
 });
 ```
 
-3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Refer [here](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Refer [here](./core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
 
 4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 
