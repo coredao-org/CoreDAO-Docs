@@ -155,9 +155,11 @@ const config: Config = {
       appId: "FA8VWNN4PE",
 
       // Public API key: it is safe to commit it
-      apiKey: "918f3b86baa18924ad7436755ade2427",
+      apiKey: "918f3b86baa18924ad7436755ade2427", 
 
       indexName: "coredao",
+
+      contextualSearch: true,
     },
 
     //Header Navigation Items
