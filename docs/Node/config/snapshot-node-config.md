@@ -39,7 +39,6 @@ A Snapshot node on Core provides periodic blockchain state snapshots, enabling f
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -58,14 +57,12 @@ A Snapshot node on Core provides periodic blockchain state snapshots, enabling f
   <TabItem value="testnet">
     For Snapshot Nodes on **Core testnet2**, following minimum hardware specifications are recommended:
 
-
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
     | **CPU**            | 4 CPU cores                                                                                             |
     | **RAM**            | 16 Gigabytes                                                                                            |
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
-
 
   </TabItem>
   <TabItem value="mainnet">

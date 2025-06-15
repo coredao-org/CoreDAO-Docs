@@ -28,11 +28,8 @@ Web verification is the most commonly used method for smart contract verificatio
 
 1. Navigate to the Core Scan website.
 
-
 - [For Core mainnet](https://scan.coredao.org/)
 - [For Core Testnet2](https://scan.test.btcs.network)
-- [For Core legacy testnet](https://scan.test.btcs.network)
-
 
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
@@ -43,7 +40,7 @@ Web verification is the most commonly used method for smart contract verificatio
 </p>
 
 
-4\. Fill in the required verification information on the page, specifically:
+4. Fill in the required verification information on the page, specifically:
 
 
 - Contract address;
@@ -57,7 +54,7 @@ Web verification is the most commonly used method for smart contract verificatio
 </p>
 
 
-5\. On the next page, please fill in the Solidity source code for the contract.
+5. On the next page, please fill in the Solidity source code for the contract.
 
 
 If your contract has constructor parameters, it is recommended to specify them in the `Constructor Arguments` field, although it’s not mandatory. The constructor parameters should be formatted as ABI-encoded bytes. [Remix](https://remix.ethereum.org/) and other tools can generate these for you.
@@ -71,7 +68,7 @@ If you enabled optimization during contract compilation, select "Yes" for the `O
 </p>
 
 
-6\. Click on **Verify and Publish** to finish the process.
+6. Click on **Verify and Publish** to finish the process.
 
 
 <p align="center">

@@ -40,7 +40,6 @@ A Validator node on Core participates in block production and transaction valida
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -52,21 +51,11 @@ A Validator node on Core participates in block production and transaction valida
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10Mbps.                 |
 
 
   </TabItem>
-  <TabItem value="testnet">
-    For Validator Nodes on **Core Testnet**, the following minimum hardware specifications are recommended:
 
-
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
-  </TabItem>
   <TabItem value="mainnet">
    For Validator Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
@@ -76,7 +65,7 @@ A Validator node on Core participates in block production and transaction valida
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10Mbps.                 |
   </TabItem>
 </Tabs>
 

@@ -148,16 +148,17 @@ const config: Config = {
       isCloseable: false,
     },
 
-    //Algolia Search Setting
-    algolia: {
-      // The application ID provided by Algolia
-      appId: "FA8VWNN4PE",
+  //   algolia:{
+  //     // The application ID provided by Algolia
+  //     appId: "FA8VWNN4PE",
 
-      // Public API key: it is safe to commit it
-      apiKey: "918f3b86baa18924ad7436755ade2427",
+  //     // Public API key: it is safe to commit it
+  //     apiKey: "32c49e31158edbf93b2c5adee12fc9e7", 
 
-      indexName: "coredao",
-    },
+  //     indexName: "coredao",
+
+  //     contextualSearch: true,
+  // },
 
     //Header Navigation Items
     navbar: {

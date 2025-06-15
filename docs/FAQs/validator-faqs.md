@@ -15,18 +15,18 @@ In the Core ecosystem, "validator" refers to nodes or participants in the blockc
 - 1. To register as a validator on Core, you must be running a full node in validator mode. Please read the guides on [validator nodes requirements](../Node/config/validator-node-config.md) and [setting up validator nodes](../Node/validator/setting-up-validator.md) for information on how to set this up.
   2. Once that’s finished, the easiest way to register a new validator is by using one of our staking websites:
         1. [Mainnet stake website](https://stake.coredao.org)
-        2. [Testnet stake website](https://stake.test.btcs.network)
+        2. [Testnet stake website](https://stake.test2.btcs.network)
   3. Connect your wallet by selecting **Connect Wallet** in the top right.
   4. Once connected, the **register** button should appear on the top right. Selecting **register** opens the following input form:
 
-![register-validator](../../static/img/validator/register/validator-register-1.avif)
+![register-validator](../../static/img/validator/register/validator-register-1.png)
 
 Provide information for each of the form's fields:
 
 - **Consensus address**: the validator address you set when you initialized your validator full node.
 - **Fee address**: the address used to collect commission fees.
 - **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
-- **Total deposit**: the refundable CORE deposit locked up while performing validator services. On testnet, the minimum amount is **10,000 tCORE**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
+- **Total deposit**: the refundable CORE deposit locked up while performing validator services. On testnet, the minimum amount is **10,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
     1. Once you've entered the required information, select **Register** to complete the registration process as a validator.
     2. A quick way to check that you've successfully registered your full node as a validator is to open the log file and search for the error message "**unauthorized validator**". This error occurs when this node is registered as a validator but not yet elected to the validator set.
 
@@ -38,7 +38,7 @@ Validators are crucial for securing the network by producing blocks and validati
 
 **Software Requirements:** Currently, a Core Full Node can only run on macOS X and Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -47,7 +47,7 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM | 8 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 10Mbps |
 
-#### **Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -60,7 +60,7 @@ For more details, refer to [Full Node Configuration Guide](../Node/config/full-n
 
 ### 4. What is the minimum amount of CORE tokens required to stake to become a validator?
 
-On the Core network, validators are required to stake a certain minimum amount of CORE tokens, which are locked up for the duration that a validator node provides its services. On testnet, the minimum amount is **10,000 tCORE**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
+On the Core network, validators are required to stake a certain minimum amount of CORE tokens, which are locked up for the duration that a validator node provides its services. On testnet, the minimum amount is **10,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
 
 ### 5. How are validators rewarded in the Core ecosystem?
 

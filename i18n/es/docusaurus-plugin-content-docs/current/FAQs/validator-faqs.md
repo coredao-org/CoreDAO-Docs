@@ -28,7 +28,7 @@ Proporcione información para cada uno de los campos del formulario:
 - **Dirección de consenso**: la dirección del validador que configuró cuando inicializó su nodo completo del validador.
 - **Dirección de comisión**: la dirección utilizada para cobrar las comisiones.
 - **Comisión**: los ingresos se dividen entre el validador y sus delegados, y la comisión determina qué porcentaje de los ingresos del delegador toma el validador como compensación.
-- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. En testnet, la cantidad mínima es **10,000 tCORE**. Mientras que en la red principal la cantidad mínima es **10,000 CORE**.
+- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. En testnet, la cantidad mínima es **10,000 tCORE2**. Mientras que en la red principal la cantidad mínima es **10,000 CORE**.
   1. Una vez que haya ingresado la información requerida, seleccione **registrarse** para registrarse como validador.
   2. Una forma rápida de comprobar que ha registrado correctamente su nodo completo como validador es abrir el archivo de registro y buscar el mensaje de error "**validador no autorizado**r". Este error ocurre cuando este nodo está registrado como validador pero aún no ha sido elegido para el conjunto de validadores.
 
@@ -62,7 +62,7 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-
 
 ### 4. ¿Cuáles son los riesgos/penalizaciones que implica ser validador?
 
-En la red Core, los validadores deben apostar una cierta cantidad mínima de tokens CORE que quedan bloqueados mientras un nodo de validación brinda sus servicios. En testnet, la cantidad mínima es **10,000 tCORE**. Mientras que en la red principal la cantidad mínima es **10,000 CORE**.
+En la red Core, los validadores deben apostar una cierta cantidad mínima de tokens CORE que quedan bloqueados mientras un nodo de validación brinda sus servicios. En testnet, la cantidad mínima es **10,000 tCORE2**. Mientras que en la red principal la cantidad mínima es **10,000 CORE**.
 
 ### 5. ¿Cómo se recompensa a los validadores en el ecosistema Core?
 

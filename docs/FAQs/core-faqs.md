@@ -63,7 +63,7 @@ The Core blockchain is still evolving and stepping hard on the innovation gear. 
 
 ### 11. Where can I get the test CORE tokens from?
    
-To help users get started and allow developers to quickly prototype their dApps, Core Testnet Faucets for both of its testnets, [Faucet for Core testnet (1114)](https://scan.test2.btcs.network/faucet) and [Faucet for Core testnet (1115)](https://scan.test.btcs.network/faucet), distribute Core testnet tokens, tCORE. Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE or tCORE2 from the Core Testnet faucet.
+To help users get started and allow developers to quickly prototype their dApps, Core provides testnet faucets for [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet), for distribution of testnet tokens, tCORE2. Follow the detailed guide [here](../Dev-Guide/core-faucet.md), on how to obtain tCORE2 from the Core Testnet faucet.
 
 ### 12. How can I contribute to the Core community?
 

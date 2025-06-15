@@ -19,7 +19,6 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 <TabItem value="testnet2">
@@ -31,18 +30,6 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 
 - https://rpc.test2.btcs.network 
 - https://rpcar.test2.btcs.network (For Archive Node)
-
-
-</TabItem>
-<TabItem value="testnet1">
-
-### Core Testnet (1115 (0x45b))
-
-:::caution
-Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
-:::
-
-- https://rpc.test.btcs.network
 
 </TabItem>
 

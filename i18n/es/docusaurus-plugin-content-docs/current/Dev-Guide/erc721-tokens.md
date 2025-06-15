@@ -122,7 +122,7 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 - En Deployed Contracts, verás tu contrato desplegado.
 - Expande la interfaz de contrato para interactuar con funciones como safeMint.
 - Llama a la función **safeMint** para acuñar nuevos NFTs. Vas a necesitar proporcionar la `dirección del destinatario` y el `token Id` como argumentos.
-- Confirma la transacción en Metamask.
+- Confirma la transacción en MetaMask.
 
 <p align="center">
 ![Remix-ERC721_Mint](../../../../../static/img/dev_tutorials/ERC721_Mint.png)

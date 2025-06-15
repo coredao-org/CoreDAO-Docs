@@ -18,7 +18,7 @@ In the Core ecosystem, delegation is a fundamental mechanism that enables Bitcoi
 
 ### 3. How can one delegate CORE tokens in Core?
 
-By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/delegating-core.md) on CORE Delegation for more details.
+By delegating CORE to Validators, CORE holders can help secure the network and share in system rewards. Please refer to the detailed [guide](../stake-and-delegate/CORE-staking.md) on CORE Delegation for more details.
 
 ### 4. What are the benefits of delegating Bitcoin or CORE tokens?
 
@@ -51,7 +51,7 @@ Except for the transaction fee and gas charges, Core doesn’t charge any additi
 
 ### 10. How can delegators claim their rewards?
 
-Refer to the detailed guide [here](../stake-and-delegate/delegating-core#claiming-rewards) on Claiming Rewards earned through staking of Bitcoin and CORE. In case of Bitcoin hash power delegation, refer [here](../stake-and-delegate/delegating-hash#implementation).
+Refer to the detailed guide [here](../stake-and-delegate/CORE-staking.md#claiming-rewards) on Claiming Rewards earned through staking of Bitcoin and CORE. In case of Bitcoin hash power delegation, refer [here](../stake-and-delegate/delegating-hash#implementation).
 
 ### 11. When are the rewards paid out?
 

@@ -17,7 +17,7 @@ ERC-20 est une norme pour les jetons fongibles sur la blockchain Ethereum. Contr
 
 Avant de commencer, vous aurez besoin:
 
-- **Metamask** ou tout portefeuille EVM.
+- **MetaMask** ou tout portefeuille EVM.
 - Une compréhension de base de **Solidity** (bien que nous vous guiderons tout au long du processus).
 - Accès à **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
 
@@ -79,7 +79,7 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 1. **Connect Remix to MetaMask**:
 
    - Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
-   - Sous **Environment**, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
+   - Sous **Environment**, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille MetaMask.
 
 <p align="center">
 ![ERC20_ConnectMetamask](../../../../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)

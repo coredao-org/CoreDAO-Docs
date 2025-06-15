@@ -11,20 +11,15 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
+Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE2 and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
 
 <Tabs defaultValue="mainnet" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
 <TabItem value="testnet2">
 - **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
-</TabItem>
-
-<TabItem value="testnet1">
-- **Core Testnet1 Explorer:** https://scan.test.btcs.network/
 </TabItem>
 
 <TabItem value="mainnet">
@@ -35,9 +30,9 @@ Core Explorer is a graphic user interface designed to allow users to interact wi
 
 ### Using the Core Scan Explorer
 
-You can use the Testnet Core Scan blockchain explorer to find and review transactions. Copy your account's address from MetaMask and search for it on the explorer. In the picture below, we can see two transactions related to our account:
+You can use the testnet Core Scan blockchain explorer to find and review transactions. Copy your account's address from MetaMask and search for it on the explorer. In the picture below, we can see two transactions related to our account:
 
-- The one in which we fetched tCORE from Faucet;
-- The one in which we sent tCORE to another address;
+- The one in which we fetched tCORE2 from Faucet;
+- The one in which we sent tCORE2 to another address;
 
 ![core-explorer](../../static/img/core-explorer.png)

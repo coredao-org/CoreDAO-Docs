@@ -43,7 +43,7 @@ Start building on Core and Contribute to the BTCfi Landscape
 
 - [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
 - [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
-- [Fund Your Wallets with tCORE or tCORE2](./Dev-Guide/core-faucet.md)
+- [Fund Your Wallets with tCORE2](./Dev-Guide/core-faucet.md)
 - [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
 - [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
 

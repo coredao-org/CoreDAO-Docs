@@ -255,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) para obtener detalles sobre cómo obtener tokens tCORE o tCORE2 de Core Faucet.
+3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE2 para Core Testnet. Consulte [aquí](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) para obtener detalles sobre cómo obtener tokens tCORE2 de Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 

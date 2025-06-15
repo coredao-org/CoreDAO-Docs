@@ -14,7 +14,6 @@ In this guide, we provide a step-by-step walkthrough on how to delegate your COR
 ## Core Staking Website
 
 - Core Mainnet: [https://stake.coredao.org/](https://stake.coredao.org/)
-- Core Testnet: [https://stake.test.btcs.network/](https://stake.test.btcs.network/)
 - Core Testnet2: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Step-by-Step Guidelines for Delegating CORE
@@ -32,7 +31,7 @@ When you visit stake.coredao.org, you’ll see an overview of important metrics 
 To start staking, follow these steps to connect your wallet. Ensure you have CORE tokens in your wallet to participate in staking.
 
 - Click on the **Connect Wallet** button located at the top-right corner of the page.
-- Choose your preferred wallet (e.g., MetaMask, WalletConnect) from the available options.
+- Choose your preferred wallet (e.g., MetaMask, WalletConnect, etc.) from the available options.
 - Follow the on-screen prompts to complete the connection process securely.
 - Once connected, your wallet balance and details will be visible, and you can begin delegating CORE tokens.
 
@@ -63,13 +62,13 @@ Once you’ve selected a validator, you’ll be taken to their detailed page, as
 
 - **Delegated Coin (CORE):** The total amount of CORE tokens already delegated to the selected validator (e.g., 6,678,941 CORE).
 - **CORE Reward Rate:** The annual percentage of rewards for delegating to the selected validator. For example, if the CORE reward rate is 9.41%, it means the delegator will earn this percentage in rewards on their staked CORE.
-- **Commission:** The validator’s commission fee, which is deducted from your rewards, for example, 5%.
+- **Commission:** The validator’s commission fee, which is deducted from your rewards (e.g., 5%).
 - **Delegators:** The number of users who have delegated to the selected validator (e.g., 16,234 CORE Delegators).
 
 To delegate your CORE tokens, follow these steps:
 
 1.  **Click "Delegate":** At the top right of the screen, you’ll see the Delegate button (marked as 1 in the image). Hover over it.
-2.      **Select CORE:** A drop-down menu will appear with the options to delegate CORE or BTC. Select CORE (marked as 2 in the image).
+2.  **Select CORE:** A drop-down menu will appear with the options to delegate CORE or BTC. Select CORE (marked as 2 in the image).
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/6c09ad7e-a61e-449b-a935-973576b464fb)
@@ -83,7 +82,7 @@ To delegate your CORE tokens, follow these steps:
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
 </p>
 
-- Also confirm the transaction in your Metamask.
+- Also confirm the transaction in your MetaMask.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/e3022505-99a3-49eb-bf9f-6fc565e41105)
@@ -117,7 +116,7 @@ If you wish to undelegate your CORE, click the three dots at the end of your cho
 
 #### Step 3.1 Confirm the transaction, and verify undelegated CORE
 
-- After clicking **Undelegate**, you will be prompted to confirm the transaction in your Metamask. Click the **Confirm** button:
+- After clicking **Undelegate**, you will be prompted to confirm the transaction in your MetaMask. Click the **Confirm** button:
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)

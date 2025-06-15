@@ -54,7 +54,7 @@ const sidebars: SidebarsConfig = {
               collapsed: true,
               label: "Satoshi Plus Consensus",
               items: [
-                "Learn/core-concepts/satoshi-plus-consensus/components",
+                // "Learn/core-concepts/satoshi-plus-consensus/components",
                 "Learn/core-concepts/satoshi-plus-consensus/DPoW",
                 "Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking",
                 "Learn/core-concepts/satoshi-plus-consensus/DPoS",
@@ -459,7 +459,7 @@ const sidebars: SidebarsConfig = {
             {
               type: "category",
               collapsed: true,
-              label: "Mainnet Endpoints",
+              label: "Mainnet API Endpoints",
               link: {
                 type: "generated-index",
                 title: "Core Scan API Documentation",
@@ -472,7 +472,7 @@ const sidebars: SidebarsConfig = {
             {
               type: "category",
               collapsed: true,
-              label: "Testnet Endpoints",
+              label: "Testnet API Endpoints",
               link: {
                 type: "generated-index",
                 title: "Core Scan API Documentation",

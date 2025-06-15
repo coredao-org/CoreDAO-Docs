@@ -56,7 +56,7 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 </p>
 
 :::note
-Si estás utilizando Testnet1, asegúrate de configurar la versión de la EVM como Paris
+Si estás utilizando Core Testnet1, asegúrate de configurar la versión de la EVM como Paris
 :::
 
 - Luego seleccione el botón azul **Compilar** para compilar su contrato inteligente.

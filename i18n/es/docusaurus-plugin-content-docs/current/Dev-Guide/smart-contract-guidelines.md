@@ -69,7 +69,7 @@ solidity: {
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />
 </p>
 
-- Para Core Legacy Testnet1 (ID de cadena: 1115), elige `paris` en las configuraciones del compilador.
+- Para Core Testnet1 (ID de cadena: 1115), elige `paris` en las configuraciones del compilador.
 
 <p align="center">
 <img width="278" alt="image" src="https://github.com/user-attachments/assets/6042382c-2daa-471d-9723-c7a6ce0b3253" />

@@ -97,7 +97,7 @@ The `OP_RETURN` output should contain all staking information in order and be co
 - **`LENGTH`:** which represents the total byte length after the `OP_RETURN` opcode. _Note that all data has to be pushed with its appropriate size byte(s)_.
 - **`Satoshi Plus Identifier`:** (**SAT+**) 4 bytes
 - **`Version`:** (**0x01**) 1 byte
-- **`Chain ID`:** (1114 for Core Testnet2, 1115 for Core Testnet, and 1116 for Core Mainnet) 2 bytes
+- **`Chain ID`:** (1114 for Core Testnet2 and 1116 for Core Mainnet) 2 bytes
 - **`Delegator`:** The Core address to receive rewards, 20 bytes
 - **`Validator`:** The Core validator address to stake to, 20 bytes
 - **`Fee`:** Fee for relayer, 1 byte, range [0,255], measured in CORE

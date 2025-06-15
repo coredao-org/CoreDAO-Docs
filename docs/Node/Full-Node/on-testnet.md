@@ -37,7 +37,7 @@ Currently, **_only_** run on **Mac OS X** and **Linux** are supported.
 ### Hardware Specifications for Full Nodes on Core Testnet
 
 
-For full nodes on **Core testnet**, we recommend the following minimal hardware specs:
+For full nodes on **Core Testnet**, following minimum hardware specifications are recommended:
 
 
 | Requirements   | Details                                                                                                 |  
@@ -45,7 +45,7 @@ For full nodes on **Core testnet**, we recommend the following minimal hardware 
 | Storage        | 1 TB of free disk space                                                                                 |
 | CPU            | 4 CPU cores                                                                                             |
 | RAM            | 8 gigabytes                                                                                             |
-| Internet Speed | A broadband Internet connection with upload/download speeds of 5 megabytes per second.                  |
+| Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
 
 
@@ -53,22 +53,17 @@ For full nodes on **Core testnet**, we recommend the following minimal hardware 
 ## Build and Run Full Node on Core Testnet
 
 
-1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
+2. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the testnet and mainnet configuration files, amke sure to use the **testnet2** configuration files. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing a full node is to sync from the _genesis block_.
 
-2\. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the relevant testnet configuration files. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing a full node is to sync from the _genesis block_.
-
-
-3\. Write the genesis state locally by executing the following command from your project directory:
-
+3. Write the genesis state locally by executing the following command from your project directory:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-
 You should see the following output:
-
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -82,9 +77,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-
-4\. Now that the full node configuration is completed, let's start running it!
-
+4. Now that the full node configuration is completed, let's start running it!
 
 Execute the following `geth` command to run the fun node:
 
@@ -93,4 +86,4 @@ Execute the following `geth` command to run the fun node:
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-5\. While the full node is running, you can monitor its logs to ensure that everything is operating correctly. The log file is located at `/node/logs/core.log` by default, but can be changed to another location if desired.
+5. While the full node is running, you can monitor its logs to ensure that everything is operating correctly. The log file is located at `/node/logs/core.log` by default, but can be changed to another location if desired.

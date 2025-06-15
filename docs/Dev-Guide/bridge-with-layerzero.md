@@ -12,7 +12,7 @@ This guide details the process of enabling cross-chain ERC-20 token transfers on
 
 ## Overview
 
-This documentation walks you through the process of setting up cross-chain token transfers using LayerZero's OFT V2 protocol. The main focus is on enabling ERC-20 token transfers between Core Testnet/mainnet and other EVM-compatible networks such as Base Sepolia and Optimism. By following this guide, you will learn to:
+This documentation walks you through the process of setting up cross-chain token transfers using LayerZero's OFT V2 protocol. The main focus is on enabling ERC-20 token transfers between Core testnet/mainnet and other EVM-compatible networks such as Base Sepolia and Optimism. By following this guide, you will learn to:
 
 - Set up and configure your development environment for cross-chain deployments.
 - Deploy and verify OFT contracts on Core and external networks.
@@ -25,7 +25,7 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
 ## Prerequisites
 
 - **Node.js v18+** and **npm**/**pnpm** installed
-- **Metamask Wallet** with funds in Core and desired networks
+- **MetaMask Wallet** with funds in Core and desired networks
 - Basic familiarity with Hardhat and Solidity
 
 ## Environment Setup
@@ -52,7 +52,7 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
    },
    'coredao-testnet': {
      eid: EndpointId.COREDAO_V2_TESTNET,
-     url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test.btcs.network',
+     url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test2.btcs.network',
      accounts: [process.env.PRIVATE_KEY]
    },
    ```

@@ -99,5 +99,5 @@ Dual Staking unlocks sustainably attractive yields for Bitcoin stakers who are m
 **Start Dual Staking at stake.coredao.org**
 
 :::info  
-Please refer to the [Dual Staking FAQ section](../FAQs/dual-staking-faqs.md) for further questions or clarifications. For additional support, you may direct your queries to the [Core Dev Forum](http://forum.coredao.org) or [Core Discord Server](https://discord.gg/M2AGJKSG).  
+Please refer to the [Dual Staking FAQ section](../../../FAQs/dual-staking-faqs.md) for further questions or clarifications. For additional support, you may direct your queries to the [Core Dev Forum](http://forum.coredao.org) or [Core Discord Server](https://discord.gg/M2AGJKSG).  
 :::

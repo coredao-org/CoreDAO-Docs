@@ -34,7 +34,7 @@ A Core full node stores the entire history of the Core blockchain, enabling anyo
 
 **Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -45,7 +45,7 @@ A Core full node stores the entire history of the Core blockchain, enabling anyo
 
 For more details, refer to [Full Node Configuration Guide](../Node/config/full-node.md)
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -62,7 +62,7 @@ RPC (Remote Procedure Call) nodes on the Core network play a crucial role in fac
 
 **Software Requirements:** Currently, a Core Full Node can only run on macOS X and Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -71,7 +71,7 @@ RPC (Remote Procedure Call) nodes on the Core network play a crucial role in fac
 | RAM | 16 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 50Mbps |
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -88,7 +88,7 @@ Validators are crucial for securing the network by producing blocks and validati
 
 **Software Requirements:** Currently, a Core Full Node can only run on macOS X and Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -97,7 +97,7 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM | 8 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 10Mbps |
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |

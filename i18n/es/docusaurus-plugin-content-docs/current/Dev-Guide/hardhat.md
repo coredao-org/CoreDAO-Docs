@@ -104,7 +104,7 @@ module.exports = {
 
 **Asegurate de que tu contrato inteligente cumpla con los [Lineamientos de Soporte para Solidity en Core Blockchain](./smart-contract-guidelines.md)**, para hacerlo, asegúrate de que el parámetro `evmVersion` esté configurado como `shanghai` en los ajustes del compilador de Solidity dentro del archivo `hardhat.config.js`.
 
-Si estás usando **testnet1**, el parámetro `evmVersion` debe configurarse como `Paris`.
+Si estás usando **Core Testnet1**, el parámetro `evmVersion` debe configurarse como `Paris`.
 
 :::note
 Deberás proporcionar tus claves privadas o frase mnemónica para el proveedor. Puedes almacenarlos en un archivo `secret.json`. Asegúrate de agregar este archivo al `.gitignore` de tu proyecto para evitar subir accidentalmente tus claves privadas a un repositorio público. Adicionalmente, ¡guarda este archivo en una ubicación segura para proteger tu información confidencial!

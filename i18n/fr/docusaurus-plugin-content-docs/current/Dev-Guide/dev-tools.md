@@ -17,7 +17,6 @@ import TabItem from '@theme/TabItem';
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet1', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -27,7 +26,7 @@ import TabItem from '@theme/TabItem';
 
     * **[RPC Endpoints](https://chainlist.org/chain/1116):** RPC endpoints for Core Testnet's RPC service.
 
-    * **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
+    * **[Core Faucet](https://scan.test2.btcs.network/faucet):** fund your testnet address with tCORE2.
 
     * **[Core Staking](https://stake.test2.btcs.network/):** Core's official testnet staking website.
 
@@ -35,20 +34,7 @@ import TabItem from '@theme/TabItem';
 
 
   </TabItem>
-  <TabItem value="testnet1">
-  _Note: This is the legacy testnet version and will be soon deprecated and eventually retired. It recommended to transition to the new testnet version._
 
-    * **[Block Explorer](https://scan.test.btcs.network/):** search and review transactions, accounts, blocks, and more.
-
-    * **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
-
-    * **[Core Faucet](https://scan.test.btcs.network/faucet):** fund your testnet address with tCORE or tCORE2.
-
-    * **[Core Staking](https://stake.test.btcs.network/):** Core's official testnet staking website.
-
-    * **[Gnosis Safe](https://safe.test.btcs.network/welcome):** secure multi-sig management of digital assets.
-
-  </TabItem>
   <TabItem value="mainnet">
     * **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
 

@@ -15,15 +15,11 @@ sidebar_position: 2
 
 * **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
 
-* **Core Faucet:** Fund your testnet address with tCORE or tCORE2.
-    * **For Latest Core Testnet2 (1114):** https://scan.test2.btcs.network/faucet
-    * **For Core Testnet (1115):** https://scan.test.btcs.network/faucet
+* **[Core Faucet](https://scan.test2.btcs.network/faucet):** Fund your testnet address with tCORE2 using the Core Testnet2 faucet.
 
-* **Staking:** tCORE or tCORE2 staking website.
-    * **For Latest Core Testnet2 (1114) i.e. tCORE2:** https://stake.test2.btcs.network/
-    * **For Core Testnet (1115) i.e. tCORE:** https://stake.test.btcs.network/
+* **[Staking](https://stake.test2.btcs.network/):** tCORE2 staking website for Core Testnet2.
 
-* **[Gnosis Safe](https://safe.test.btcs.network/welcome):** Secure multi-sig management of digital assets.
+* **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** Secure multi-sig management of digital assets.
 
 ### General Resources
 

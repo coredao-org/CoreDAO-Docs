@@ -33,7 +33,7 @@ To take full advantage of Dual Staking, users must ensure that the designated Bi
   * [Total amount of CORE staking across all validators](https://stake.coredao.org/validators)  
   * [Total amount of Bitcoin staking across all validators](https://stake.coredao.org/validators)  
   * The relative price change between Bitcoin & CORE  
-  * [Annual reward adjustment](https://docs.coredao.org/docs/Learn/economics/core-token/tokenomics-and-utility#sound-supply-and-emissions)  
+  * [Annual reward adjustment](../Learn/core-token/tokenomics.md)  
 * Validator-specific staking yields vary based on these additional factors:  
   * Total number of active validators  
   * Validator commission  
@@ -48,7 +48,7 @@ The act of delegators rebalancing their delegation to maximize rewards is the dr
 
 ### 7\. Is there any risk of losing your Bitcoin assets during dual staking?
 
-Dual Staking is a [self-custodial process](../Learn/products/btc-staking/overview.md), allowing users to maintain complete control over their assets. Throughout the staking process, Bitcoin remains securely in the user’s wallet.  Stakers face no slashing risk, external smart contract risk, or counterparty risk. The trust assumptions for staking Bitcoin are the same trust assumptions underlying holding Bitcoin.
+Dual Staking is a [self-custodial process](../stake-and-delegate/btc-staking/overview.md), allowing users to maintain complete control over their assets. Throughout the staking process, Bitcoin remains securely in the user’s wallet.  Stakers face no slashing risk, external smart contract risk, or counterparty risk. The trust assumptions for staking Bitcoin are the same trust assumptions underlying holding Bitcoin.
 
 ### 8\. While Bitcoin is time-locked, can users unstake CORE that’s dual staked with Bitcoin? If so, do they lose any rewards earned before unstaking CORE?
 

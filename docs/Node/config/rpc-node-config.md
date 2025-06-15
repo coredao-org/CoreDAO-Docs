@@ -38,7 +38,6 @@ RPC Nodes on Core act as a gateway for applications, developers, and users to in
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -50,29 +49,18 @@ RPC Nodes on Core act as a gateway for applications, developers, and users to in
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
     | **CPU**            | 8 CPU cores |
     | **RAM**            | 16 Gigabytes   |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50Mbps               |
   </TabItem>
-  <TabItem value="testnet">
-    For RPC Nodes on **Core Testnet**, the following minimum hardware specifications are recommended:
 
-
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-    | **CPU**            | 8 CPU cores |
-    | **RAM**            | 16 Gigabytes   |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
-  </TabItem>
   <TabItem value="mainnet">
     For RPC Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
-
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms.  |
-    | **CPU**            | 8 CPU cores |
-    | **RAM**            | 16 Gigabytes  |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
+    | **CPU**            | 16 CPU cores |
+    | **RAM**            | 32 Gigabytes  |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50Mbps                 |
   </TabItem>
 </Tabs>
 

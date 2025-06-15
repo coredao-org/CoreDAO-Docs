@@ -71,11 +71,11 @@ Ranks users by transaction count and volume, rewarding both frequent activity an
 Sparks are cumulative points reflecting how active users are in the Core ecosystem, updated daily at 00:00 UTC and appear on the Leaderboard. Users earn Sparks daily through:
 
 
-**1. Assets in Ignition Wallet Balance:**
+#### 1. Assets in Ignition Wallet Balance
 The amount and type of whitelisted assets users bridge to Core will be reflected in the user's Ignition Wallet Balance. By holding these assets on Core, users will earn Sparks. Sparks are calculated daily based on the user's wallet balance.
 
 
-**2. Activities with Core Ecosystem dApp:**
+#### 2. Activities with Core Ecosystem dApp
 Users could also earn Sparks by interacting with whitelisted dApps on Core Ignition. Each on-chain activity with these dApps will contribute Spark points to the user account. More details will be updated soon.
 
 | Transaction Type | Sparks per Transaction | Maximum Sparks per Day |
@@ -88,10 +88,10 @@ Users could also earn Sparks by interacting with whitelisted dApps on Core Ignit
 | Others | 50 | 2,000 |
 | Coretoshi NFT, Doopidoo | 200 | Unlimited |
 
-**3. Campaign Joined:**
+#### 3. Campaign Joined
 Core Ignition will feature flash or time-limited campaigns on a rolling basis, offering users special opportunities to supercharge Sparks. Stay connected by checking the in-app campaign sections and following Core's official announcements on [X (Twitter)](https://x.com/Coredao_Org) for the latest updates.
 
-**4. Invite New Users to Join Ignition:**
+#### 4. Invite New Users to Join Ignition
 For those new to Core Ignition, bridge $50 USD worth of whitelisted assets to Core to unlock a permanent invite link. For users who have signed up in Season 2, the invite code is automatically unlocked. By inviting new users to Core Ignition, users will receive 10% of the daily Sparks earned by introducing first-degree invitees and 2% from second-degree invitees. Please note that a cap may apply to the maximum Sparks each user can earn through referrals.
 
 ---
@@ -156,7 +156,7 @@ In addition to holding strategic tokens and deploying assets into various dApps,
 
 With the new Coretoshi Attribution layer, Coretoshi NFT holders now enjoy extra benefits:
 
-1. 200 additional Sparks per transaction with [no limit](#activities-with-core-ecosystem-dapp);
+1. 200 additional Sparks per transaction with [no limit](#2-activities-with-core-ecosystem-dapp);
 2. 1.5x extra Sparks Multiplier automatically applied on top of users' existing Volume Multiplier.
 
 >***Example Calculation:***

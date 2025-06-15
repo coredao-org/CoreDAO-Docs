@@ -24,11 +24,10 @@ Currently, the supported operating system platforms include **macOS** and **Linu
   defaultValue="testnet2"
   values={[
     {label: 'Testnet2', value: 'testnet2'},
-    {label: 'Testnet', value: 'testnet'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
-    For Validator nodes on **Core testnet2**, following minimum hardware specifications are recommended:
+    For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
 
     | Requirements   | Details                                                                                                 |  
@@ -39,19 +38,9 @@ Currently, the supported operating system platforms include **macOS** and **Linu
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
 
   </TabItem>
-  <TabItem value="testnet">
-    For Validator nodes on **Core testnet**, the following minimum hardware specifications are recommended:
 
-
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                    |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
-  </TabItem>
   <TabItem value="mainnet">
-   For Validator nodes on **Core mainnet**, the following minimum hardware specifications are recommended:
+   For Validator nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
 
     | Requirements   | Details                                                                                                 |  

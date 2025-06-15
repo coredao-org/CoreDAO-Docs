@@ -113,12 +113,12 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 1. **Acuña tokens**:
 
    - Llama a la función `mint` para crear tokens nuevos. Introduce la dirección del destinatario y el número de tokens a acuñar.
-   - Confirma la transacción en Metamask.
+   - Confirma la transacción en MetaMask.
 
 2. **Transfiere tokens**:
    - También se puede usar la función **transfer** para enviar tokens de una dirección a otra.
    - Introduce la dirección del destinatario y el número de tokens que quieres enviar.
-   - Confirma la transacción en Metamask.
+   - Confirma la transacción en MetaMask.
 
 ## Paso 6: Gestiona tus tokens
 

@@ -113,7 +113,7 @@ Remix IDE is an online platform for Solidity development, making it perfect for 
 </p>
 
 
-Ensure that your MetaMask is connected to the **Core Testnet**.
+Ensure that your MetaMask is connected to the **Core Testnet2**.
 
 
 2. **Deploy Your Contract**:

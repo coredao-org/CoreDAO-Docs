@@ -19,7 +19,7 @@ Navigate to the [Remix IDE](https://remix.ethereum.org/), and you'll see a layou
 ![remix-ide](../../static/img/remix/remix-1.avif)
 </p>
 
-In the picture below, you'll see that you can choose different Solidity compiler versions. We recommend using the newer, more stable versions of Solidity, such as `v0.8.7`. You can also choose whether to enable auto-compilation or hide warnings.
+In the picture below, you'll see that you can choose different Solidity compiler versions. We recommend using the newer, more stable versions of Solidity, such as `v0.8.24`. You can also choose whether to enable auto-compilation or hide warnings.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-2.avif)
@@ -27,7 +27,7 @@ In the picture below, you'll see that you can choose different Solidity compiler
 
 You can choose different environments on Remix, as shown in the picture below. An environment is just the blockchain network you'll be working with. There are built-in Virtual Machines (VMs), as well as providers that enable you to connect to external VMs.
 
-To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Testnet](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based on the Core Testnet you are connected to. Refer [here](https://scan.test.btcs.network/faucet) for Core Testnet (1115) and [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114).
+To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Testnet2](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded with tCORE2. Refer [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114) faucet.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-3.avif)
@@ -56,7 +56,7 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 </p>
 
 :::note
-If you're using Testnet1, ensure that the EVM version is set to Paris
+If you're using Core Testnet1, ensure that the EVM version is set to `paris`.
 :::
 
 - Then select the blue **Compile** button to compile your smart contract.

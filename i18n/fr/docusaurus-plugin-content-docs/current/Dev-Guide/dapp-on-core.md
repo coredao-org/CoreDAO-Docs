@@ -266,7 +266,7 @@ main().catch((error) => {
 });
 ```
 
-3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE ou tCORE2 pour le Core Testnet. Référez-vous [ici](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE2 pour le Core Testnet. Référez-vous [ici](https://docs.coredao.org/docs/Dev-Guide/core-wallet-config.md) pour obtenir des jetons tCORE2 depuis Core Faucet.
 
 4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 

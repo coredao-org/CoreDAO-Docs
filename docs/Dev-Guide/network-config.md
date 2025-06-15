@@ -14,12 +14,11 @@ import TabItem from '@theme/TabItem';
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 <TabItem value="testnet2">
 :::info
-This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+This is the latest testnet and is strongly recommended for use as the official testing environment for Core blockchain. The previous testnet version, chainID 1115, is deprecated and is no longer maintained. Transitioning to Core Testnet2 ensures continued support and access to the latest features.
 :::
 
 | **Parameter**          | **Value**                              |
@@ -30,21 +29,6 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 | **Block Explorer URL** | https://scan.test2.btcs.network        |
 | **Faucet**             | https://scan.test2.btcs.network/faucet |
 | **Staking Website**    | https://stake.test2.btcs.network/      |
-
-</TabItem>
-<TabItem value="testnet1">
-:::caution
-Testnet1 will be deprecated and eventually retired. Transitioning to Core Testnet2 is recommended for continued support and access to the latest features.
-:::
-
-| **Parameter**          | **Value**                             |
-| ---------------------- | ------------------------------------- |
-| **RPC URL**            | https://rpc.test.btcs.network         |
-| **Chain ID**           | 1115 (0x45b)                          |
-| **Currency Symbol**    | tCORE                                 |
-| **Block Explorer URL** | https://scan.test.btcs.network        |
-| **Faucet**             | https://scan.test.btcs.network/faucet |
-| **Staking Website**    | https://stake.test.btcs.network/      |
 
 </TabItem>
 

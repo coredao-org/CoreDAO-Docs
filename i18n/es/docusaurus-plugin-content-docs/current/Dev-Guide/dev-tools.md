@@ -17,7 +17,6 @@ import TabItem from '@theme/TabItem';
 defaultValue="testnet2"
 values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
@@ -27,7 +26,7 @@ _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core
 
 * **[Endpoints de RPC](https://chainlist.org/chain/1116):** endpoints de RPC para el servicio de la testnet de Core.
 
-* **[Faucet de Core](https://scan.test2.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE o tCORE2.
+* **[Faucet de Core](https://scan.test2.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE2.
 
 * **[Staking de Core](https://stake.test2.btcs.network/):** Sitio web oficial de la testnet de Core para staking.
 
@@ -35,22 +34,7 @@ _Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core
 ```
 
   </TabItem>
-  <TabItem value="testnet1">
-  _Nota: Esta es la versión legacy de la testnet y pronto será obsoleta, para eventualmente ser retirada por completo. Se recomienda migrar a la nueva versión de la testnet._
 
-```
-* **[Explorador de Bloques](https://scan.test.btcs.network/):** busca y analiza transacciones, cuentas, bloques y más.
-
-* **[Endpoints de RPC](https://chainlist.org/chain/1115):** endpoints de RPC para el servicio de la testnet de Core.
-
-* **[Faucet de Core](https://scan.test.btcs.network/faucet):** fondea tu cuenta de testnet con tCORE o tCORE2.
-
-* **[Staking de Core](https://stake.test.btcs.network/):** Sitio web oficial de la testnet de Core para staking.
-
-* **[Gnosis Safe](https://safe.test.btcs.network/welcome):** gestión segura de activos digitales con multisig.
-```
-
-  </TabItem>
   <TabItem value="mainnet">
     * **[Explorador de Bloques](https://scan.coredao.org/):** busca y analiza transacciones, cuentas, bloques y más.
 

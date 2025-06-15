@@ -66,7 +66,7 @@ To begin staking your Bitcoin on the Core blockchain and earn staking rewards in
 
 1. Visit [https://stake.coredao.org](https://stake.coredao.org/) and click on **Validators** on the top header.
 
-2. Click **Connect Wallet** in the top right corner of the header to connect your Core wallet. From the supported list of wallets, choose your desired Core wallet. For this walkthrough, we have used Metamask.
+2. Click **Connect Wallet** in the top right corner of the header to connect your Core wallet. From the supported list of wallets, choose your desired Core wallet. For this walkthrough, we have used MetaMask.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-1.png)
