@@ -30,6 +30,7 @@ This is the latest testnet and is strongly recommended for use. The previous tes
 
 - https://rpc.test2.btcs.network 
 - https://rpcar.test2.btcs.network (For Archive Node)
+- wss://rpc.test2.btcs.network/wsp (WebSocket Support)
 
 </TabItem>
 
