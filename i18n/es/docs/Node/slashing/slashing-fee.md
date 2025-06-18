@@ -19,19 +19,18 @@ Generalmente se incurre en sanciones de reducción porque un nodo no logra produ
 
 ## Doble signo
 
-Cualquier persona puede presentar una solicitud de "slash" con evidencia de actividad de firmado doble en la blockchain de Core.
+Anyone can submit a slash request with the evidence of double-signing activity on the Core blockchain.
 
 ### Validación de evidencia
 
 - Dos encabezados de bloque tienen la misma altura y el mismo hash de bloque principal
-- Dos encabezados de bloque están sellados por el mismo validador
+- The same validator seals two block headers
 - Dos firmas de estos dos bloques no deben ser iguales.
-- El validador debe estar en el conjunto de validadores de la ronda actual.
+- The validator should be in the set of the current round’s validators.
 
 Si la evidencia es válida:
 
 1. **10,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
-4. El resto del CORE recortado se transferirá al fondo de recompensas del sistema.
-
+4. The rest of the slashed CORE will transfer into the System Reward Pool
