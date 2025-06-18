@@ -10,13 +10,13 @@ sidebar_position: 2
 
 Dans l'écosystème Core, la robustesse, la sécurité et la décentralisation du réseau sont maintenues par les nœuds opérés par les participants de la communauté. Ces nœuds remplissent diverses fonctions, allant de la validation des transactions à la propagation des blocs, assurant ainsi la santé et l'efficacité globales du réseau.
 
-Selon vos objectifs, différentes configurations de nœuds sont possibles sur le réseau Core. Si vous n'avez pas encore démarré de nœud sur le réseau Core, veuillez consulter la documentation avant de procéder avec différentes configurations.
+Depending on your goals, various node configurations are possible on the Core network. If you haven't already started any node on the Core network yet, please review the documentation before proceeding with different configurations.
 
-- **Participer à la gouvernance du réseau Core**
+- **If you want to be part of the governance of the Core Network**
 
     - [\*\*Démarrer un nœud validateur](./config/validator-node-config.md)
 
-- Si vous voulez faire tourner un nœud Core pour votre usage personnel :
+- **If you want to run a node on the Core network for private use**
     - [\*\*Démarrer un nœud complet normal](./config/full-node.md)
 
 - **Si vous voulez envoyer des transactions ou interroger directement la chaîne depuis votre propre nœud blockchain Core**
@@ -34,12 +34,13 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
 ## Types de Nœuds sur le Réseau Core
 
 1. **Normal Full Nodes:**
-    - **Role:** Les nœuds complets maintiennent une copie en temps réel du registre de la blockchain, valident les transactions et soutiennent le réseau en relayant les données des blocs et des transactions. Ils sont principalement utiles pour un usage privé.
+    - **Role:** Les nœuds complets maintiennent une copie en temps réel du registre de la blockchain, valident les transactions et soutiennent le réseau en relayant les données des blocs et des transactions. These are useful for private use.
+
     - **Requis :** L'exploitation d'un nœud complet nécessite des ressources informatiques et de stockage importantes pour gérer les données complètes de la blockchain et le trafic réseau continu.
 
 2. **Validators:**
     - **Role:** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de la Core blockchain. Ce sont essentiellement des nœuds complets fonctionnant en mode validateur.
-    - **Requis:** Les validateurs doivent staker un minimum de **10 000 jetons CORE** pour participer, alignant ainsi leurs incitations financières avec les performances et la sécurité du réseau.
+    - **Requirements:** Validators must stake a minimum of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
     - **Incentives:** Les validateurs gagnent des récompenses en jetons CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
 
 3. **Nœuds RPC :**
@@ -47,12 +48,12 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
     - **Importance :** Ils sont essentiels pour le développement et le fonctionnement des applications décentralisées (DApps) et pour l'accès externe aux données de la blockchain.
 
 4. **Nœuds d'Archive :**
-    - **Rôle :** Les nœuds d'archive stockent l'intégralité de l'historique de la blockchain, y compris tous les états et transactions depuis le bloc genesis, fournissant une ressource précieuse pour les requêtes historiques approfondies.
+    - **Role:** Archive Nodes store the entire history of the blockchain, including all states and transactions since the genesis block, providing a valuable resource for deep historical queries.
     - **Requis :** Exigences : Ces nœuds nécessitent une capacité de stockage importante, car ils conservent tous les états expirés et actuels de la blockchain, les rendant très gourmands en ressources.
-    - **Utilisation :** Les nœuds d'archive sont essentiels pour les développeurs ayant besoin d'accéder à toutes les données historiques de la blockchain pour des analyses, des audits et des requêtes avancées.
+    - **Usage:** Archive Nodes are essential for developers who require access to all historical blockchain data for analysis, audits, and advanced blockchain querying.
 
 5. **Nœuds de Snapshot :**
-    - **Rôle :** Les nœuds de snapshot maintiennent des copies des instantanés de la blockchain à différents intervalles. Ces snapshots incluent l'état de la blockchain à une hauteur de bloc donnée, offrant un point de restauration pour les nœuds complets ou les nouveaux nœuds.
+    - **Rôle :** Les nœuds de snapshot maintiennent des copies des instantanés de la blockchain à différents intervalles. These snapshots capture the state of the blockchain at a specific block height, providing a restore point for Full Nodes or new nodes.
     - **Bénéfices :** Ils permettent une synchronisation rapide et la récupération d'autres nœuds dans le réseau, améliorant ainsi la résilience et la scalabilité de l'infrastructure du réseau.
 
 ## Importance de Chaque Type de Nœud
@@ -60,8 +61,8 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
 - Les **validateurs** garantissent la validité des transactions et le consensus du réseau.
 - Les **nœuds complets** et les **nœuds d'archive** assurent la redondance et l'intégrité des données.
 - Les **nœuds RPC** permettent le développement d'applications et l'interaction avec la blockchain.
-- Les **nœuds de snapshot** contribuent à l'évolutivité et à la synchronisation rapide du réseau.
+- **Snapshot Nodes** facilitate efficient network scaling and expedite node synchronization.
 
 ## Conclusion
 
-Les différents types de nœuds dans l'écosystème Core assurent collectivement que la blockchain est sécurisée, efficace, accessible et robuste. Les validateurs, nœuds complets et nœuds d'archive forment la colonne vertébrale de la sécurité et de l'intégrité des données du réseau. En même temps, les nœuds RPC et de snapshot offrent flexibilité, accessibilité et scalabilité. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
+Les différents types de nœuds dans l'écosystème Core assurent collectivement que la blockchain est sécurisée, efficace, accessible et robuste. Validators, Full Nodes, and Archive nodes form the backbone of the network's security and data integrity. At the same time, RPC nodes and Snapshot nodes provide flexibility, accessibility, and scalability. Cette architecture de nœuds multifonctionnelle prend en charge une large gamme d'opérations, allant du traitement des transactions aux interactions complexes avec les applications décentralisées (dApp) et à l'analyse des données historiques.
