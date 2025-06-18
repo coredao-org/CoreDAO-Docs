@@ -1,5 +1,5 @@
 ---
-sidebar_label: Délégation de la Puissance de Hachage
+sidebar_label: Bitcoin Hash Power Delegation
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,14 +8,14 @@ sidebar_position: 2
 
 ---
 
-En utilisant leurs clés publiques et privées, les mineurs de BTC peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains BTC et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur BTC avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage BTC associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau BTC pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant leur puissance de hachage BTC aux validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et à partager les récompenses du système.
+Using their public and private keys, Bitcoin miners can delegate their hash power to a Core validator or delegate to themselves if they choose to run a validator by verifying and syncing their identity (addresses) on both the Bitcoin and Core blockchains. When relayers submit transactions, they sync the blocks mined by the Bitcoin miner with the Core network. Each round, the Core network calculates the Bitcoin hash power associated with each validator by counting the number of blocks produced by each miner in the Bitcoin network during the same day of the prior week. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. By delegating Bitcoin hash power to Validators, Bitcoin miners can help secure the network and share in system rewards.
 
 <p align="center">
 ![delegate-hash](../../static/img/staoshi-plus/DPoW.png)</p>
 
 ## Processus d'installation pour les mineurs
 
-Voyons comment les mineurs de BTC ou les pools de minage peuvent déléguer leur puissance de hachage à la blockchain Core en ajoutant une sortie `OP_RETURN` dans la transaction coinbase de BTC.
+Let's take a look at how Bitcoin miners or mining pools can delegate hash power to the Core blockchain by adding an `OP_RETURN` output in the Bitcoin coinbase transaction.
 
 :::info
 Pour plus d'informations sur la blockchain Core et le consensus Satoshi Plus, veuillez consulter le [Livre Blanc Technique](https://whitepaper.coredao.org/).
@@ -29,7 +29,7 @@ Les mineurs et pools de minage de Bitcoin doivent composer les informations suiv
 
 Voici une brève description de chaque élément :
 
-- OP\_RETURN: `0x6a`
+- OP_RETURN: `0x6a`
 - LENGTH: `0x2d`, représentant la longueur totale en octets après l'opcode `OP_RETURN`
 - CORE: `0x434f5245`
 - VERSION: `0x01`
@@ -63,5 +63,5 @@ Veuillez noter que votre adresse de validateur et votre adresse de récompense s
 
 - La blockchain Core utilise les enregistrements de blocs du réseau Bitcoin datant de sept jours pour calculer les scores hybrides. De plus, après qu'un validateur est élu, les récompenses de staking sont distribuées le deuxième jour après le changement de cycle. Ainsi, après avoir délégué leur puissance de hachage, les mineurs/pools de minage verront leur puissance de hachage utilisée dans le calcul de l'élection des Validateurs N+7 jours plus tard, et les récompenses seront réclamables N+8 jours plus tard.
 - Afin d'améliorer les récompenses obtenues de la blockchain Core, il est recommandé aux mineurs/pools de déléguer à plus d'un validateur et de répartir leur puissance de hachage de manière équilibrée. La solution optimale est de déléguer **\~5%** de votre puissance de hachage globale à chaque validateur.
-- Les informations sur les validateurs pour le mainnet Core se trouvent [ici](https://stake.coredao.org/). Les informations pour le testnet Core se trouvent [ici](https://stake.test.btcs.network/). Utilisez l'adresse de l'opérateur du validateur pour remplir la partie correspondante de la chaîne d'octets décrite ci-dessus.
-- Votre adresse de récompense doit être compatible EVM. Après avoir créé une adresse au format Ethereum à utiliser comme adresse de récompense, ajoutez-la après l'adresse du Validateur dans la chaîne d'octets décrite ci-dessus. Plus tard, vous utiliserez cette adresse de récompense pour réclamer vos récompenses depuis la blockchain Core en utilisant MetaMask ou votre portefeuille web préféré. Pour plus d'information sur comment ajouter Core à MetaMask, veuillez-vous référer à notre guide sur [Ajouter core à MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce).
+- Les informations sur les validateurs pour le mainnet Core se trouvent [ici](https://stake.coredao.org/). Validator information for Core Testnet can be found[ here](https://stake.test2.btcs.network/). Utilisez l'adresse de l'opérateur du validateur pour remplir la partie correspondante de la chaîne d'octets décrite ci-dessus.
+- Votre adresse de récompense doit être compatible EVM. Après avoir créé une adresse au format Ethereum à utiliser comme adresse de récompense, ajoutez-la après l'adresse du Validateur dans la chaîne d'octets décrite ci-dessus. Plus tard, vous utiliserez cette adresse de récompense pour réclamer vos récompenses depuis la blockchain Core en utilisant MetaMask ou votre portefeuille web préféré. For more information about adding Core to MetaMask, please refer to our guide on [adding Core to MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
