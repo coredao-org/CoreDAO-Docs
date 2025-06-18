@@ -19,7 +19,7 @@ Navegue hasta [Remix IDE](https://remix.ethereum.org/) y verá un diseño simila
 ![remix-ide](../../static/img/remix/remix-1.avif)
 </p>
 
-En la imagen siguiente, verá que puede elegir diferentes versiones del compilador Solidity. Recomendamos utilizar las versiones más nuevas y estables de Solidity, como la v0.8.7. También puede elegir si desea habilitar la compilación automática u ocultar las advertencias.
+En la imagen siguiente, verá que puede elegir diferentes versiones del compilador Solidity. We recommend using the newer, more stable versions of Solidity, such as `v0.8.24`. You can also choose whether to enable auto-compilation or hide warnings.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-2.avif)
@@ -27,7 +27,7 @@ En la imagen siguiente, verá que puede elegir diferentes versiones del compilad
 
 Puede elegir diferentes entornos en Remix, como se muestra en la imagen a continuación. Un entorno es simplemente la red blockchain con la que trabajará. Hay máquinas virtuales (VM) integradas, así como proveedores que le permiten conectarse a VM externas.
 
-Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Asegúrese de que su billetera MetaMask esté [configurada para Core Tesnet] (./core-wallet-config.md) usando la configuración de la cadena de testnet y verifique que su cuenta esté financiada desde el faucet apropiado según el Core testnet al que esté conectado. Consulte [aquí](https://scan.test.btcs.network/faucet) para Core Testnet (1115) y [aquí](https://scan.test2.btcs.network/faucet) para Core Testnet (1114).\`.
+Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Make sure your MetaMask wallet is [configured for Core Testnet2](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded with tCORE2. Refer [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114) faucet.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-3.avif)
@@ -41,27 +41,27 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 
 ## Compilación e implementación de contratos inteligentes
 
-- **Asegúrese de que su contrato inteligente siga las [Pautas de soporte de solidez para Core Blockchain](./smart-contract-guidelines.md)**.
+- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md)**.
 
-- Remix viene con varios contratos preestablecidos predeterminados cargados en el espacio de trabajo predeterminado, como se muestra a continuación. Para este tutorial, usaremos el contrato `1_Storage.sol` precargado. Este contrato implementa una base de datos simple que nos permite almacenar un número mediante la función `store()` y verlo mediante la función `retrieve()`.
+- Remix viene con varios contratos preestablecidos predeterminados cargados en el espacio de trabajo predeterminado, como se muestra a continuación. Para este tutorial, usaremos el contrato `1_Storage.sol` precargado. This contract implements a simple database that allows us to store a single number using the `store()` function and retrieve it using the `retrieve()` function.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-5.avif)
 </p>
 
-- En el menú de la izquierda, navegue hasta `SOLIDITY COMPILER`, luego a `Advance Configurations` y seleccione `shanghai` en el menú desplegable de `EVM Version`.
+- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advanced Configurations` and select `shanghai` from the `EVM Version` dropdown.
 
 <p align="center" style={{zoom:"60%"}}>
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 </p>
 
 :::note
-Si estás utilizando Testnet1, asegúrate de configurar la versión de la EVM como Paris
+If you're using Core Testnet1, ensure that the EVM version is set to `paris`.
 :::
 
 - Luego seleccione el botón azul **Compilar** para compilar su contrato inteligente.
 
-- Luego cambie a `Implementar y ejecutar transacciones` en el mismo menú de la izquierda y seleccione el botón **Implementar**, resaltado en rojo a continuación.
+- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the left panel menu and select the **Deploy** button, outlined in red below.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-6.avif)
@@ -81,7 +81,7 @@ Si estás utilizando Testnet1, asegúrate de configurar la versión de la EVM co
 
 ## Interacción de contrato inteligente
 
-Una vez implementado su contrato, puede usar Remix para interactuar con él de manera rápida e intuitiva.
+Once your contract is deployed, you can use Remix to interact with it quickly and intuitively.
 
 Ubique el contrato recién implementado en la sección "Contratos implementados" ubicada en la parte inferior izquierda. Probemos nuestro contrato ingresando "100" en el campo de entrada de la función "almacenar" y seleccionando el botón naranja **almacenar**.
 
@@ -89,13 +89,13 @@ Ubique el contrato recién implementado en la sección "Contratos implementados"
 ![remix-ide](../../static/img/remix/remix-9.avif)
 </p>
 
-MetaMask nos volverá a pedir que firmemos y enviemos la transacción.
+MetaMask will prompt us to sign and send the transaction again.
 
 <p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../static/img/remix/remix-10.png)
 </p>
 
-Después de almacenar con éxito `100` en nuestro contrato inteligente, podemos usar la función `retrieve` para leer el valor. Haga clic en el botón **recuperar** para ver el valor y deberíamos ver el número "100" devuelto, como se muestra a continuación en el cuadro azul.
+Después de almacenar con éxito `100` en nuestro contrato inteligente, podemos usar la función `retrieve` para leer el valor. Click the **Retrieve** button to view the value, and we should see the number `100` returned, as shown in the blue box below.
 
 Es posible que hayas notado que MetaMask no aparecía para la llamada a la función `recuperar`; Esto se debe a que las _transacciones_ solo son necesarias para las interacciones de contratos inteligentes que requieren gas, y la lectura de datos de un contrato inteligente no requiere gas.
 
