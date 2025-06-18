@@ -12,7 +12,7 @@ importer TabItem depuis '@theme/TabItem';
 ---
 
 :::caution
-Avant de devenir validateur sur Core, nous vous recommandons vivement de lire le [Whitepaper Technique](https://whitepaper.coredao.org/).
+Before running a Validator node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
 :::
 
 ## Configurer un nœud complet en mode validateur
@@ -25,11 +25,10 @@ Assurez-vous que votre nœud de validation est opérationnel et en cours d'exéc
 
 Une fois que votre nœud est en cours d'exécution et synchronisé, vous pouvez procéder au processus d'enregistrement.
 
-1. Naviguer vers le site Web de staking : Le moyen le plus simple pour enregistrer un nouveau validateur est d'utiliser les sites Web de staking officiels de Core :
+1. **Navigate to Staking Website:** The easiest way to register a new validator is to use Core's official staking websites:
 
     - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
-    - [Core Testnet Staking website](https://stake.test.btcs.network/become-validator)
-    - [Core Testnet2 Staking website](https://stake.test2.btcs.network/become-validator)
+    - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
 
 2. Connecter votre portefeuille : Sur le site Web de staking, cliquez sur Connecter le portefeuille dans le coin supérieur droit et connectez votre portefeuille (comme MetaMask, Ledger, etc.) qui contient les jetons CORE nécessaires.
 
@@ -43,7 +42,7 @@ Fournissez les informations pour chaque champ du formulaire :
 
 - Adresse de consensus : l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
 - Adresse de frais : l'adresse utilisée pour collecter les frais de commission.
-- **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
+- **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
 - **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
 
 5. Soumettre l'inscription : Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
@@ -60,9 +59,9 @@ Ouvrez le fichier journal de votre nœud et recherchez le message d'erreur `unau
 
 ## Élection des Validateurs
 
-Chaque jour, les 27 meilleurs validateurs avec les scores hybrides les plus élevés sont élus dans l'ensemble actif des validateurs, devenant ainsi responsables de la production de blocs et de la validation des transactions sur le réseau Core pour toute la durée de la ronde. Les récompenses accumulées sont ensuite distribuées à la fin du round, et le prochain ensemble de validateurs est sélectionné. Pour plus de détails sur le fonctionnement de l’élection des validateurs, reportez-vous à la section [élection des validateurs](./validator-election.md).
+Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entire round. When the last block of a round is mined, the round’s accumulated rewards are distributed, and the next round's validator set is selected. Pour plus de détails sur le fonctionnement de l’élection des validateurs, reportez-vous à la section [élection des validateurs](./validator-election.md).
 
-Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués Active/Normal. L'ensemble des validateurs est mis à jour chaque jour à **00:00 UTC**.
+You can check the validator status on the stake website; active elected validators will be marked as `Active/Normal`. L'ensemble des validateurs est mis à jour chaque jour à **00:00 UTC**.
 
 ![validator-register-form](../../../static/img/validator/validator-status.png)
 
@@ -74,7 +73,7 @@ Le statut du validateur est mis à jour quotidiennement à 00h00 UTC. Vous pouve
 
 - Actif/Refus : Le validateur est élu pour la ronde actuelle mais a refusé d'accepter les délégations. Non qualifié pour la prochaine élection.
 
-- Actif/Emprisonné : Validateur élu pour la ronde actuelle, mais emprisonné en raison d'un délit majeur (ou faute grave). Non qualifié pour la prochaine élection.
+- **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony and not qualified for the next election.
 
 - Inactif/En attente : Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
 
