@@ -22,7 +22,7 @@ A diferencia de los tokens empaquetados centralizados como WBTC, que dependen de
 
 ### 4. ¿Cómo puedo estar seguro de que mi BTC es seguro?
 
-La seguridad de su BTC en el sistema coreBTC está garantizada por la sobrecolateralización requerida por los Lockers y el monitoreo continuo por parte de Guardianes y Liquidadores. Esta estructura garantiza que el BTC bloqueado siempre esté respaldado por suficiente garantía en el Core, protegiéndolo contra una mala gestión o caídas de valor. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
+The security of your BTC in the coreBTC system is ensured by the overcollateralization required from Lockers and continuous monitoring by Guardians and Liquidators. Esta estructura garantiza que el BTC bloqueado siempre esté respaldado por suficiente garantía en el Core, protegiéndolo contra una mala gestión o caídas de valor. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
 
 ### 5. ¿Quiénes son los participantes clave sin permiso? ¿Cuáles son sus roles?
 
@@ -40,4 +40,4 @@ Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente po
 
 ### 7. ¿Dónde puedo obtener más información sobre coreBTC y otros proyectos Core?
 
-Visite https://unlockingbitcoindefi.com para obtener más información sobre coreBTC y nuestros otros proyectos innovadores de BTCfi.
+Visit https://unlockingbitcoindefi.com to find out more about coreBTC and our other innovative BTCfi projects.
