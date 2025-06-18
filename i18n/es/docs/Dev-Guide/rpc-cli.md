@@ -2,14 +2,14 @@
 sidebar_label: Conexión mediante CLI
 hide_table_of_contents: false
 sidebar_position: 2
-description: Aprende a conectarte al RPC de Core usando la CLI
+description: "Aprende a conectarte al RPC de Core usando la CLI"
 ---
 
 # RPC principales a través de la línea de comando
 
 ---
 
-Las blockchains generan grandes cantidades de datos, como volúmenes de transacciones y propiedad de activos, que son valiosos para las dApps en todo el ecosistema. Sin embargo, acceder y utilizar estos datos generalmente requiere experiencia técnica significativa.
+Blockchains generate massive amounts of data, including transaction volumes and asset ownership, which are valuable for decentralized applications (dApps) across the ecosystem. Sin embargo, acceder y utilizar estos datos generalmente requiere experiencia técnica significativa.
 
 ## ¿Qué son las Llamadas a Procedimiento Remoto (RPCs)?
 
@@ -19,7 +19,7 @@ Piensa en una RPC como lo opuesto a un oráculo. Mientras que un oráculo introd
 
 ## Proveedores de RPC para conectarse a la Mainnet de la Red Core
 
-Core admite diferentes [proveedores de RPC] (https://chainlist.org/chain/1116), tanto proveedores de RPC de Core nativos como de terceros. Consulte la lista completa de puntos finales RPC [aquí] (./rpc-list.md) para conectarse a Core mainnet o testnet.
+The Core supports different [RPC providers](https://chainlist.org/chain/1116), both native Core RPC and third-party RPC providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for connecting to the Core mainnet or testnet.
 
 ## Trabajar con RPC a través de la línea de comando
 
@@ -40,7 +40,7 @@ curl -H "Content-Type: application/json" \
      --url 'https://rpc.ankr.com/core'
 ```
 
-En la declaración anterior, estos son los componentes de la sentencia curl:
+In the above statement, the following are the components of the curl statement:
 
 - **curl**: El comando para ejecutar la solicitud.
 - **-H**: Especifica el encabezado, en este caso, estableciendo el tipo de contenido como JSON.
@@ -48,7 +48,7 @@ En la declaración anterior, estos son los componentes de la sentencia curl:
 - **--data**: El cuerpo de la petición, incluyendo `method`, `parameters` y `request ID`.
 - **--url**: La `URL` del endpoint al que se envía la solicitud.
 
-Como se explicó anteriormente, CURL es un método para enviar solicitudes a API, que contienen un punto final (es decir, la URL desde la que se recupera la información) y un método HTTP. En nuestro caso, la URL viene al final después de la opción _`--url`_; puede intercambiar cualquiera de las URL RPC válidas que se encuentran [aquí](https://chainlist.org/chain/1116) para conectarse a Core Mainnet, pero no olvide incluir la URL entre comillas simples (''). En la siguiente figura, cualquiera de las URL en el cuadro rojo funcionará.
+As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e., the URL from which the information is being retrieved) and an HTTP method. En nuestro caso, la URL viene al final después de la opción _`--url`_; puede intercambiar cualquiera de las URL RPC válidas que se encuentran [aquí](https://chainlist.org/chain/1116) para conectarse a Core Mainnet, pero no olvide incluir la URL entre comillas simples (''). En la siguiente figura, cualquiera de las URL en el cuadro rojo funcionará.
 
 <p align="center">
 ![rpc-list](../../static/img/rpc/rpc-1.png)
@@ -87,11 +87,14 @@ Si prefieres trabajar en un IDE en lugar de la línea de comandos, puedes replic
 ```python
 import requests
 
+
 headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
 }
 
+
 data = '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0xc9c4a5d14857ace0db197c7393806868824763377f802645aacf6f38d9c309b7"],"id":1}'
+
 
 response = requests.post('https://rpc.ankr.com/core', headers=headers, data=data)
 print(response.content)
@@ -100,3 +103,7 @@ print(response.content)
 :::note
 Puedes reemplazar la URL (`https://rpc.ankr.com/core`) con cualquier URL RPC válida que encuentres en la documentación de Core, y no olvides envolver la URL entre comillas simples.
 :::
+
+
+
+
