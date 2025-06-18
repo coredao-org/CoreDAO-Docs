@@ -2,14 +2,14 @@
 sidebar_label: Connexion via CLI
 hide_table_of_contents: false
 sidebar_position: 2
-description: Apprenez à vous connecter à Core RPC à l'aide de la CLI
+description: "Apprenez à vous connecter à Core RPC à l'aide de la CLI"
 ---
 
 # RPC Core via la ligne de commande
 
 ---
 
-Les blockchains génèrent des quantités massives de données, telles que les volumes de transactions et la propriété des actifs, qui sont précieuses pour les dApps dans l'ensemble de l'écosystème. Cependant, l’accès à ces données et leur utilisation nécessitent souvent une expertise technique importante.
+Blockchains generate massive amounts of data, including transaction volumes and asset ownership, which are valuable for decentralized applications (dApps) across the ecosystem. Cependant, l’accès à ces données et leur utilisation nécessitent souvent une expertise technique importante.
 
 ## Qu'est-ce qu'un appel de procédure à distance (RPC) ?
 
@@ -19,7 +19,7 @@ Considérez un RPC comme l’inverse d’un oracle. Alors qu'un oracle apporte d
 
 ## Fournisseurs RPC pour la connexion Core Network Mainnet
 
-Core prend en charge différents [fournisseurs de RPC](https://chainlist.org/chain/1116) — à la fois le RPC natif de Core et des fournisseurs de RPC tiers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
+The Core supports different [RPC providers](https://chainlist.org/chain/1116), both native Core RPC and third-party RPC providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for connecting to the Core mainnet or testnet.
 
 ## Utilisation des RPCs via la ligne de commande
 
@@ -40,7 +40,7 @@ curl -H "Content-Type: application/json" \
      --url 'https://rpc.ankr.com/core'
 ```
 
-Dans cette commande, les composants du relevé de `curl` sont les suivants :
+In the above statement, the following are the components of the curl statement:
 
 - **curl** : La commande pour exécuter la requête.
 - **-H** : spécifie l'en-tête, dans ce cas, en définissant le type de contenu sur JSON.
@@ -48,7 +48,7 @@ Dans cette commande, les composants du relevé de `curl` sont les suivants :
 - **--data** : Le corps de la requête, y compris la « méthode », les « paramètres » et l'« ID de la requête ».
 - **--url** : Le point de terminaison « URL » auquel la demande est envoyée.
 
-Comme expliqué précédemment, CURL est une méthode pour envoyer des requêtes API, qui contiennent un point de terminaison (c’est-à-dire l’URL à partir de laquelle les informations sont récupérées) et une méthode HTTP. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
+As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e., the URL from which the information is being retrieved) and an HTTP method. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
 
 <p align="center">![rpc-list](../../static/img/rpc/rpc-1.png)</p>
 
@@ -85,11 +85,14 @@ Si vous préférez travailler dans un IDE plutôt que sur la ligne de commande, 
 ```python
 import requests
 
+
 headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
 }
 
+
 data = '{"jsonrpc":"2.0","method":"eth_getTransactionByHash","params":["0xc9c4a5d14857ace0db197c7393806868824763377f802645aacf6f38d9c309b7"],"id":1}'
+
 
 response = requests.post('https://rpc.ankr.com/core', headers=headers, data=data)
 print(response.content)
@@ -98,3 +101,7 @@ print(response.content)
 :::note
 Vous pouvez remplacer l'URL (`https://rpc.ankr.com/core`) par n'importe quelle URL RPC valide trouvée dans la documentation Core, et n'oubliez pas d'entourer l'URL de guillemets simples.
 :::
+
+
+
+
