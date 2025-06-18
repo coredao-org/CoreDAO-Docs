@@ -17,23 +17,22 @@ Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidit
 
 ## Verificación web mediante Core Scan
 
-La verificación web es la estrategia de verificación de contratos inteligentes más utilizada. Después de implementar su contrato inteligente en Core, puede usar su código fuente para verificarlo en Core Scan.
+Web verification is the most commonly used method for smart contract verification. After deploying your smart contract onto the Core blockchain, you can use its source code to verify it on the Core Scan.
 
-1. Vaya al sitio web de Core Scan.
+1. Navigate to the Core Scan website.
 
-- [Para Core Mainnet](https://scan.coredao.org/)
-- [For Core Testnet2](https://scan.test2.btcs.network)
-- [Para Core Legacy Testnet](https://scan.test.btcs.network)
+- [For Core mainnet](https://scan.coredao.org/)
+- [For Core Testnet2](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
 
 <p align="center"></p>
 
-4\. Complete la información de verificación requerida en la página, específicamente:
+4. Complete la información de verificación requerida en la página, específicamente:
 
 - Dirección del contrato;
-- Tipo de compilador: para contratos simples, seleccione el tipo de compilador "Archivo único". Para contratos más complejos, como contratos con importaciones externas, seleccione el tipo de compilador "Standard Json";
+- Compiler type: For simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, choose the `Standard Json` compiler type.
 - Versión del compilador;
 - Tipo de licencia de código abierto;
 
@@ -41,7 +40,7 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 ![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)
 </p>
 
-5\. En la página siguiente, complete el código fuente de Solidity del contrato.
+5. On the next page, please fill in the Solidity source code for the contract.
 
 Los parámetros del constructor deben tener el formato de bytes codificados en ABI. Si su contrato tiene parámetros de constructor, le recomendamos agregarlos en el campo "Argumentos del constructor", aunque no es obligatorio. Remix y otras herramientas pueden generarlos por usted.
 
@@ -51,7 +50,7 @@ Si habilitó la optimización durante la compilación del contrato, seleccione "
 ![verify-contract](../../static/img/contract-verification/contract-verify-3.avif)
 </p>
 
-5\. Haga clic en **Verificar y publicar** para finalizar el proceso.
+6. Haga clic en **Verificar y publicar** para finalizar el proceso.
 
 <p align="center">
 ![verify-contract](../../static/img/contract-verification/contract-verify-4.avif)
@@ -65,28 +64,31 @@ Ahora su contrato verificado en Core Scan debería verse así:
 
 ## Verificación API
 
-Puede encontrar la guía sobre el uso de Core API para verificar contratos [aquí](https://docs.coredao.org/docs/api/api-documents/contracts). Tenga en cuenta que para realizar llamadas API debe registrarse en Core Scan y generar una clave API.
+Puede encontrar la guía sobre el uso de Core API para verificar contratos [aquí](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls, you must register on Core Scan and generate an API key.
 
-Si estás familiarizado con la API de Etherscan, ¡estás de suerte! Las llamadas API en Core son 100% compatibles con la API de Etherscan. Solo necesita reemplazar la clave API y la URL del punto final y todo debería funcionar correctamente.
+Si estás familiarizado con la API de Etherscan, ¡estás de suerte! Las llamadas API en Core son 100% compatibles con la API de Etherscan. You just need to replace the API key and endpoint URL, and everything should work correctly.
 
-## Verificación de HardHat
+## Hardhat Verification
 
-La verificación HardHat es la forma más conveniente para que los desarrolladores verifiquen contratos inteligentes. Para obtener más información sobre la verificación de Hardhat, consulte la guía oficial de verificación de Hardhat que se encuentra [aquí](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+Hardhat verification is the most convenient way for developers to verify smart contracts. Para obtener más información sobre la verificación de Hardhat, consulte la guía oficial de verificación de Hardhat que se encuentra [aquí](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Tenga en cuenta que deberá agregar redes Core como cadenas personalizadas, como se ve a continuación en una configuración de ejemplo de HardHat:
+Please note that you’ll need to add Core networks as custom chains, as seen below in a sample Hardhat config:
 
 ```javascript
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 
+
 const { PrivateKey } = require("./secret.json");
 require("@nomiclabs/hardhat-ethers");
 require("@nomiclabs/hardhat-waffle");
 require("@nomicfoundation/hardhat-verify");
 
+
 module.exports = {
   defaultNetwork: "testnet",
+
 
   networks: {
     hardhat: {},
@@ -126,6 +128,7 @@ module.exports = {
     ],
   },
 
+
   solidity: {
     compilers: [
       {
@@ -153,15 +156,15 @@ module.exports = {
 
 ## Verificación con Foundry
 
-actualiza el archivo `foundry.toml` para especificar la versión de Solidity y la versión de la EVM para tu proyecto.
+Update the `foundry.toml` file to specify the Solidity version and EVM version for your project.
 
 ```bash
 [profile.default]
-solidity_version = "0.8.0"  # Especifica la versión de Solidity
-evm_version = "shanghai" # Especifica la version de la EVM (Para testnets antiguas, usar Paris como versión de la EVM)
+solidity_version = "0.8.24"  # Specify the Solidity version
+evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
 ```
 
-cree un archivo .env para almacenar información sensible como su clave privada, URL RPC y claves de API. Esto ayuda a mantener tus credenciales seguras y permite referenciarlas fácilmente en tu código.
+Create an `.env` file to store sensitive information such as your private key, RPC URL, and API keys. This helps keep your credentials secure and allows you to reference them in your code easily.
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -186,10 +189,10 @@ forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  
 
 Reemplace `0xContract_Address` y `ContractName` con la dirección real de su contrato y su nombre correspondiente.
 
-Foundry gestionará el proceso de verificación. Puedes utilizar [ Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y confirmar que fue desplegado y verificado correctamente.
+Foundry will handle the verification process; you can use [Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
 
 ## Limitaciones conocidas
 
-- Actualmente Core solamente soporta versiones del compilador de Solidity hasta 0.8.24.
+- Currently, Core only supports solidity compiler versions up to 0.8.24.
 - Las bibliotecas no son compatibles con las verificaciones API.
-- Si tiene problemas al verificar contratos de un solo archivo muy grandes (más de 1000 líneas), le recomendamos cambiar al formato "JSON estándar" para la verificación.
+- If you run into issues verifying very large (1000+ lines) single-file contracts, we recommend switching to `Standard JSON` format for verification.
