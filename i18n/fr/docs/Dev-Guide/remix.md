@@ -17,13 +17,13 @@ Accédez à l'[IDE Remix](https://remix.ethereum.org/), et vous verrez une inter
 
 <p align="center">![remix-ide](../../static/img/remix/remix-1.avif)</p>
 
-Dans l'image ci-dessous, vous pouvez choisir différentes versions du compilateur Solidity. Nous recommandons d'utiliser les versions plus récentes et stables de Solidity, telles que la v0.8.7. Vous pouvez également choisir d'activer la compilation automatique ou de masquer les avertissements.
+Dans l'image ci-dessous, vous pouvez choisir différentes versions du compilateur Solidity. We recommend using the newer, more stable versions of Solidity, such as `v0.8.24`. You can also choose whether to enable auto-compilation or hide warnings.
 
 <p align="center">![remix-ide](../../static/img/remix/remix-2.avif)</p>
 
 Vous pouvez choisir différents environnements sur Remix, comme illustré dans l'image ci-dessous. Un environnement est simplement le réseau blockchain avec lequel vous allez travailler. Il existe des machines virtuelles (VMs) intégrées, ainsi que des fournisseurs qui vous permettent de vous connecter à des VMs externes.
 
-Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask`. Assurez-vous que votre portefeuille MetaMask est [configuré pour le Core Tesnet](./core-wallet-config.md) en utilisant les paramètres de la chaîne Testnet, et vérifiez que votre compte est approvisionné via le faucet correspondant au Core Testnet auquel vous êtes connecté. Reportez vous [ici](https://scan.test.btcs.network/faucet) pour le Core Testnet (1115) et [ici](https://scan.test2.btcs.network/faucet) pour le Core Testnet (1114).
+Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Testnet2](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded with tCORE2. Refer [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114) faucet.
 
 <p align="center">![remix-ide](../../static/img/remix/remix-3.avif)</p>
 
@@ -33,23 +33,23 @@ Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix a
 
 ## Compilation et déploiement du contrat intelligent
 
-- **Assurez-vous que votre contrat intelligent suit les [directives de support de Solidity pour Core Blockchain](./smart-contract-guidelines.md)**.
+- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md)**.
 
-- Remix propose plusieurs contrats prédéfinis chargés par défaut dans l'espace de travail, comme illustré ci-dessous. Pour ce tutoriel, utilisons le contrat préchargé `1_Storage.sol`. Ce contrat implémente une simple base de données qui nous permet de stocker un nombre via la fonction `store()` et de le consulter via la fonction `retrieve()`.
+- Remix propose plusieurs contrats prédéfinis chargés par défaut dans l'espace de travail, comme illustré ci-dessous. Pour ce tutoriel, utilisons le contrat préchargé `1_Storage.sol`. This contract implements a simple database that allows us to store a single number using the `store()` function and retrieve it using the `retrieve()` function.
 
 <p align="center">![remix-ide](../../static/img/remix/remix-5.avif)</p>
 
-- Dans le menu de gauche, accédez à `SOLIDITY COMPILER`, puis aux `Configurations Avancées` et sélectionnez `shanghai` dans le menu déroulant de la `Version EVM`.
+- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advanced Configurations` and select `shanghai` from the `EVM Version` dropdown.
 
 <p align="center" style={{zoom:"60%"}}>![evm-version](../../static/img/solidity-support/remix-setting.png)</p>
 
 :::note
-Si vous utilisez TestNet1, assurez-vous que la version EVM est définie à Paris
+If you're using Core Testnet1, ensure that the EVM version is set to `paris`.
 :::
 
 - Cliquez ensuite sur le bouton bleu **Compile** pour compiler votre contrat intelligent.
 
-- Ensuite, passez à l'onglet `DEPLOY & RUN TRANSACTIONS` dans le même menu de gauche et sélectionnez le bouton **Deploy** (entouré en rouge ci-dessous).
+- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the left panel menu and select the **Deploy** button, outlined in red below.
 
 <p align="center">![remix-ide](../../static/img/remix/remix-6.avif)</p>
 
@@ -63,17 +63,17 @@ Si vous utilisez TestNet1, assurez-vous que la version EVM est définie à Paris
 
 ## Interaction avec le contrat intelligent
 
-Une fois votre contrat déployé, vous pouvez utiliser Remix pour interagir rapidement et de manière intuitive avec lui.
+Once your contract is deployed, you can use Remix to interact with it quickly and intuitively.
 
 Trouvez le nouveau contrat déployé dans la section `Deployed Contracts` située en bas à gauche. Testons notre contrat en entrant `100` dans le champ de saisie de la fonction `store` et en sélectionnant le bouton orange **store**.
 
 <p align="center">![remix-ide](../../static/img/remix/remix-9.avif)</p>
 
-MetaMask nous demandera de nouveau de signer et d'envoyer la transaction.
+MetaMask will prompt us to sign and send the transaction again.
 
 <p align="center" style={{zoom:"40%"}}>![remix-ide](../../static/img/remix/remix-10.png)</p>
 
-Après avoir réussi à stocker `100` élément dans notre contrat intelligent, nous pouvons utiliser la fonction `retrieve` pour lire la valeur. Cliquez sur le bouton **retrieve** pour afficher la valeur, et vous devriez voir le nombre `100` retourné, comme indiqué ci-dessous dans la boîte bleue.
+Après avoir réussi à stocker `100` élément dans notre contrat intelligent, nous pouvons utiliser la fonction `retrieve` pour lire la valeur. Click the **Retrieve** button to view the value, and we should see the number `100` returned, as shown in the blue box below.
 
 Vous aurez peut-être remarqué que MetaMask ne s'est pas affiché pour l'appel à la fonction `retrieve` ; cela s'explique par le fait que les _transactions_ ne sont nécessaires que pour les interactions avec les contrats intelligents qui nécessitent du gas, et la lecture des données d'un contrat intelligent ne nécessite pas de gas.
 
