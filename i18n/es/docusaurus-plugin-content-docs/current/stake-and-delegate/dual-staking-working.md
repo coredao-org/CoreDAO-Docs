@@ -43,9 +43,9 @@ Efectivamente, las emisiones de CORE se distribuyen de manera proporcional segú
 
 El mecanismo decisivo para el nivel de rendimiento de un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, o **P<sub>Level3</sub> (P<sub>MAX</sub>)**) se basa en los tokens CORE en staking en relación con el Bitcoin en staking, donde **R** representa la relación `CORE:BTC` y **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
 
-- Ratio de Staking R1 \= 3,000 CORE por 1 BTC
-- Ratio de Staking R2 \= 9,000 CORE por 1 BTC
-- Ratio de Staking R3 \= 24,000 CORE por 1 BTC
+- Ratio de Staking R1 \= 3,625 CORE por 1 BTC
+- Ratio de Staking R2 \= 10,875 CORE por 1 BTC
+- Ratio de Staking R3 \= 29,000 CORE por 1 BTC
 
 Teniendo en cuenta estos ratios, los usuarios pueden calcular el umbral requerido para cada nivel como sigue:
 
@@ -74,23 +74,23 @@ El siguiente es un ejemplo sencillo que explica cómo calcular la cantidad de CO
 
 Ahora, el usuario deberá hacer staking de CORE según los siguientes umbrales de CORE en staking para disfrutar de un mayor rendimiento en su BTC en staking con las variables mencionadas anteriormente:
 
-- La relación de staking **R<sub>1</sub>** = 3,000
-- La relación de staking **R<sub>2</sub>** = 9,000
-- La relación de staking **R<sub>3</sub>** = 24,000
+- La relación de staking **R<sub>1</sub>** = 3,625
+- La relación de staking **R<sub>2</sub>** = 10,875
+- La relación de staking **R<sub>3</sub>** = 29,000
 - Cantidad de BTC en staking \= 10 BTC
 
 Los **Umbrales de CORE en Staking** con las variables mencionadas anteriormente son:
 
-- El umbral de CORE en staking para **P<sub>Level1</sub>** \= 10 \* 3,000 \= 30,000 CORE en staking
-- El umbral de CORE en staking para **P<sub>Level2</sub>** = 10 \* 9,000 = 90,000 CORE en staking
-- El umbral de CORE en staking para **P<sub>Level3</sub>** \= 10 \* 24,000 \= 240,000 CORE en staking
+- El umbral de CORE en staking para **P<sub>Level1</sub>** \= 10 \* 3,625 \= 36,250 CORE en staking
+- El umbral de CORE en staking para **P<sub>Level2</sub>** = 10 \* 10,875 = 108,750 CORE en staking
+- El umbral de CORE en staking para **P<sub>Level3</sub>** \= 10 \* 29,000 \= 290,000 CORE en staking
 
 Por lo tanto, el BTC en staking en este ejemplo disfrutará de un rendimiento de
 
-- **P<sub>BASE</sub>** si la cantidad de CORE en staking es inferior a 30,000
-- **P<sub>Nivel1</sub>** si la cantidad de CORE en staking es igual o superior a 30,000 pero inferior a 90,000
-- **P<sub>Nivel2</sub>** si la cantidad de CORE en staking es igual o superior a 90,000 pero inferior a 240,000
-- **P<sub>Nivel3</sub>** si la cantidad de CORE en staking es igual o superior a 240,000
+- **P<sub>BASE</sub>** si la cantidad de CORE en staking es inferior a 36,250
+- **P<sub>Nivel1</sub>** si la cantidad de CORE en staking es igual o superior a 36,250 pero inferior a 108,750
+- **P<sub>Nivel2</sub>** si la cantidad de CORE en staking es igual o superior a 108,750 pero inferior a 290,000
+- **P<sub>Nivel3</sub>** si la cantidad de CORE en staking es igual o superior a 290,000
 
 :::note
 El multiplicador en cada nivel de rendimiento incrementado es dinámico y está sujeto a cambios según las condiciones de oferta y demanda del mercado
