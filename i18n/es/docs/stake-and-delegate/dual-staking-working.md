@@ -18,9 +18,7 @@ Core opera bajo el **consenso Satoshi Plus**, integrando tres fuentes de delegac
 
 Al cumplir con ratios específicos de **staking de CORE a BTC**, los usuarios obtienen **recompensas de staking de Bitcoin incrementadas**, pagadas en CORE. Aunque el Dual Staking mejora los rendimientos del staking de BTC, no afecta directamente las recompensas del staking de CORE.
 
-<p align="center">
-<img width="1024" alt="Dual Staking Tiers (8)" src="https://github.com/user-attachments/assets/6ce41ca4-fc7e-476a-814c-4f56665b3c48" />
-</p>
+![image](../../static/img/dual-staking/dual-staking-tiers.png)
 
 ### Umbrales de Rendimiento Incrementado
 
@@ -43,9 +41,9 @@ Efectivamente, las emisiones de CORE se distribuyen de manera proporcional segú
 
 The deciding mechanism for a Bitcoin staker’s yield tier (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ratio and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
 
-- Ratio de Staking R1 \= 3,000 CORE por 1 BTC
-- Ratio de Staking R2 \= 9,000 CORE por 1 BTC
-- Ratio de Staking R3 \= 24,000 CORE por 1 BTC
+- Staking Ratio R1 \= 3,625 CORE per 1 BTC
+- Staking Ratio R2 \= 10,875 CORE per 1 BTC
+- Staking Ratio R3 \= 29,000 CORE per 1 BTC
 
 Teniendo en cuenta estos ratios, los usuarios pueden calcular el umbral requerido para cada nivel como sigue:
 
@@ -74,23 +72,23 @@ The following is a simple example explaining how to calculate the required CORE 
 
 Ahora, el usuario deberá hacer staking de CORE según los siguientes umbrales de CORE en staking para disfrutar de un mayor rendimiento en su BTC en staking con las variables mencionadas anteriormente:
 
-- La relación de staking **R<sub>1</sub>** = 3,000
-- La relación de staking **R<sub>2</sub>** = 9,000
-- La relación de staking **R<sub>3</sub>** = 24,000
+- Staking Ratio **R<sub>1</sub>** \= 3,625
+- Staking Ratio **R<sub>2</sub>** \= 10,875
+- Staking Ratio **R<sub>3</sub>** \= 29,000
 - Cantidad de BTC en staking \= 10 BTC
 
 Los **Umbrales de CORE en Staking** con las variables mencionadas anteriormente son:
 
-- El umbral de CORE en staking para **P<sub>Level1</sub>** \= 10 \* 3,000 \= 30,000 CORE en staking
-- El umbral de CORE en staking para **P<sub>Level2</sub>** = 10 \* 9,000 = 90,000 CORE en staking
-- El umbral de CORE en staking para **P<sub>Level3</sub>** \= 10 \* 24,000 \= 240,000 CORE en staking
+- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 3,625 \= 36,250 staked CORE
+- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 10,875 \= 108,875 staked CORE
+- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 29,000 \= 290,000 staked CORE
 
 Por lo tanto, el BTC en staking en este ejemplo disfrutará de un rendimiento de
 
-- **P<sub>BASE</sub>** si la cantidad de CORE en staking es inferior a 30,000
-- **P<sub>Nivel1</sub>** si la cantidad de CORE en staking es igual o superior a 30,000 pero inferior a 90,000
-- **P<sub>Nivel2</sub>** si la cantidad de CORE en staking es igual o superior a 90,000 pero inferior a 240,000
-- **P<sub>Nivel3</sub>** si la cantidad de CORE en staking es igual o superior a 240,000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 36,250
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 36,250 but below 108,875
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 108,875 but below 290,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 290,000
 
 :::note
 The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
