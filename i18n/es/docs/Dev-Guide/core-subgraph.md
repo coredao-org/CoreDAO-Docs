@@ -12,13 +12,13 @@ Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos
 
 ## URLs y Claves Importantes
 
-### Core MainNet
+### Core Mainnet
 
-<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>URL de control de estado</strong><br/>><em>https://thegraph-is.coredao.org</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-is.coredao.org</em> </td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
-### Core TestNet
+### Core Testnet2
 
-<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
 ## Pasos generales de configuración del subgrafo
 
@@ -83,7 +83,6 @@ Finalmente, ejecutaremos los comandos de creación e implementación. Para evita
 
 Para proteger tu subgrafo de modificaciones externas, contáctanos en [discord](https://discord.com/invite/coredaoofficial) para obtener una clave de autorización única.
 
-Si estás realizando pruebas en Core TestNet Graph, aquí tienes el token de acceso para propósitos generales de testing:
+If you are testing against the Core Testnet2 Graph, here are the access tokens for general testing purpose:
 
-- **Clave general para Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
 - **Clave general para Core Testnet2:** b020b95e511443699e72a10c697f84c0
