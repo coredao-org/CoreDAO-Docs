@@ -5,8 +5,8 @@ sidebar_position: 2
 description: Deploy Contracts on Core using the Remix IDE
 ---
 
-# Using Remix
 
+# Using Remix
 ---
 
 Remix is a powerful online integrated development environment (IDE) for developers to build, test, deploy, and manage smart contracts. In this tutorial, we'll use the [Remix IDE](https://remix.ethereum.org/) to deploy a contract to Core Testnet.
@@ -19,7 +19,7 @@ Navigate to the [Remix IDE](https://remix.ethereum.org/), and you'll see a layou
 ![remix-ide](../../static/img/remix/remix-1.avif)
 </p>
 
-In the picture below, you'll see that you can choose different Solidity compiler versions. We recommend using the newer, more stable versions of Solidity, such as v0.8.7. You can also choose whether to enable auto compilation or hide warnings.
+In the picture below, you'll see that you can choose different Solidity compiler versions. We recommend using the newer, more stable versions of Solidity, such as `v0.8.24`. You can also choose whether to enable auto-compilation or hide warnings.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-2.avif)
@@ -27,7 +27,7 @@ In the picture below, you'll see that you can choose different Solidity compiler
 
 You can choose different environments on Remix, as shown in the picture below. An environment is just the blockchain network you'll be working with. There are built-in Virtual Machines (VMs), as well as providers that enable you to connect to external VMs.
 
-To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Tesnet](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded from the appropriate faucet based ont eh Core testnet your are connectede to. Refer [here](https://scan.test.btcs.network/faucet) for Core Testnet (1115) and [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114).
+To connect to Core Testnet, choose `Injected Provider - MetaMask`. Make sure your MetaMask wallet is [configured for Core Testnet2](./core-wallet-config.md) using the testnet chain settings, and verify that your account is funded with tCORE2. Refer [here](https://scan.test2.btcs.network/faucet) for Core Testnet (1114) faucet.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-3.avif)
@@ -41,27 +41,27 @@ You will be asked to connect to MetaMask. Once connected, Remix shows the connec
 
 ## Smart Contract Compilation and Deployment
 
-- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core Blockchain](./smart-contract-guidelines.md)**.
+- **Make sure that your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md)**.
 
-- Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store one number via the `store()` function and view it via the `retrieve()` function.
+- Remix comes with several default preset contracts loaded to the default workspace, as shown below. For this tutorial, let's use the preloaded `1_Storage.sol` contract. This contract implements a simple database that allows us to store a single number using the `store()` function and retrieve it using the `retrieve()` function.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-5.avif)
 </p>
 
-- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advance Configurations` and select `shanghai` from the `EVM Version` dropdown.
+- From the menu on the left, navigate to the `SOLIDITY COMPILER`, navigate to `Advanced Configurations` and select `shanghai` from the `EVM Version` dropdown.
 
 <p align="center" style={{zoom:"60%"}}>
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 </p>
 
 :::note
-If you're using Testnet1, ensure that the EVM version is set to Paris
+If you're using Core Testnet1, ensure that the EVM version is set to `paris`.
 :::
 
 - Then select the blue **Compile** button to compile your smart contract.
 
-- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the same lefthand menu and select the **Deploy** button, outlined in red below.
+- Then switch to the `DEPLOY & RUN TRANSACTIONS` from the left panel menu and select the **Deploy** button, outlined in red below.
 
 <p align="center">
 ![remix-ide](../../static/img/remix/remix-6.avif)
@@ -81,7 +81,7 @@ If you're using Testnet1, ensure that the EVM version is set to Paris
 
 ## Smart Contract Interaction
 
-Once your contract is deployed, you can use Remix to quickly and intuitively interact with it.
+Once your contract is deployed, you can use Remix to interact with it quickly and intuitively.
 
 Locate the newly deployed contract in the `Deployed Contracts` section located in the lower left. Let's test our contract by entering `100` into the `store` function's input field and selecting the orange **store** button.
 
@@ -89,13 +89,13 @@ Locate the newly deployed contract in the `Deployed Contracts` section located i
 ![remix-ide](../../static/img/remix/remix-9.avif)
 </p>
 
-MetaMask will again ask us to sign and send the transaction.
+MetaMask will prompt us to sign and send the transaction again.
 
 <p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../static/img/remix/remix-10.png)
 </p>
 
-After successfully storing `100` in our smart contract, we can use the `retrieve` function to read the value. Click the **retrieve** button to view the value and we should see the number `100` returned, as shown below in the blue box.
+After successfully storing `100` in our smart contract, we can use the `retrieve` function to read the value. Click the **Retrieve** button to view the value, and we should see the number `100` returned, as shown in the blue box below.
 
 You may have noticed that MetaMask did not pop up for the `retrieve` function call; this is because _transactions_ are only necessary for smart contract interactions that require gas, and reading data from a smart contract doesn't require any gas.
 

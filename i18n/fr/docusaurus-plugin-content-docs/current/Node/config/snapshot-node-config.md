@@ -35,7 +35,7 @@ Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état d
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
-    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For Snapshot Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état d
 
   </TabItem>
   <TabItem value="testnet">
-    For Snapshot Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For Snapshot Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -57,7 +57,7 @@ Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état d
 
   </TabItem>
   <TabItem value="mainnet">
-    For Snapshot Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    For Snapshot Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|

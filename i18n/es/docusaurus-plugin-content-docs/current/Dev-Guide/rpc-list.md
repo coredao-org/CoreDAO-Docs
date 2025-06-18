@@ -18,11 +18,10 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-### Core Blockchain Testnet2 (1114 (0x45a))
+### Core Testnet2 (1114 (0x45a))
 
 :::info
 Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
@@ -32,17 +31,7 @@ Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. L
 - https://rpcar.test2.btcs.network (Para Archive Node)
 
 </TabItem>
-<TabItem value="testnet1">
 
-### Core Blockchain Testnet (1115 (0x45b))
-
-:::caution
-La Testnet1 quedará obsoleta y eventualmente será retirada. Se recomienda trasladarse a la Core Testnet2 para soporte continuo y acceso a las características más recientes.
-:::
-
-- https://rpc.test.btcs.network
-
-</TabItem>
 
 <TabItem value="mainnet">
 

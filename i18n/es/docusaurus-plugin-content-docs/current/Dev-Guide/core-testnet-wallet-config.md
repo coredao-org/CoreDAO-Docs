@@ -52,7 +52,7 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 
-4. Cambie a Core testnet haciendo clic en el botón _'Cambiar red'_.
+4. Cambie a Core Testnet haciendo clic en el botón _'Cambiar red'_.
 
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-4.png)
 
@@ -75,20 +75,20 @@ La nueva red de prueba de Core con `ID de cadena1114` ya está disponible y se r
 `Satoshi Chain/BTCs` ha sido rebautizada como `Core/CORE`, respectivamente. Si agregó la Testnet antes del cambio de marca, deberá actualizar manualmente el nombre de la red y el símbolo de moneda en la configuración de MetaMask; de lo contrario, no podrá utilizar la versión actual de Core Testnet. Vaya a `Configuración->Red` y seleccione `Core Testnet` para abrir la configuración de red. Actualice el nombre de la red y el símbolo de moneda a los valores indicados en la sección anterior y haga clic en el botón Guardar. ¡Listo!
 :::
 
-### Fondeando la billetera con tokens tCORE
+### Fondeando la billetera con tokens tCORE2
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores prototipar rápidamente sus dApps, Core ha lanzado él [Core Testnet Faucet](https://scan.test.btcs.network/faucet) público para distribuir tokens de prueba de Core, **tCORE**. Siga la [guía](./core-faucet.md) detallada para financiar su cuenta de metamask con tokens tCORE.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores prototipar rápidamente sus dApps, Core ha lanzado él [Core Testnet Faucet](https://scan.test2.btcs.network/faucet) público para distribuir tokens de prueba de Core, **tCORE2**. Siga la [guía](./core-faucet.md) detallada para financiar su cuenta de metamask con tokens tCORE2.
 
-### Envío de tokens tCORE
+### Envío de tokens tCORE2
 
-Puede utilizar MetaMask para enviar tCORE a otras direcciones.
+Puede utilizar MetaMask para enviar tCORE2 a otras direcciones.
 
 1. Navegue a la billetera metamask, asegúrese de estar conectado a Core Testnet
 2. Haga clic en el botón `Enviar`
 
 ![send-metmask](../../../../../static/img/testnet-wallet-config/send-tcore-1.png)
 
-3. Ingrese la cantidad de tokens tCORE que desea enviar y la dirección a la que los desea enviar; asegúrese de que sea una dirección Core Testnet. Luego haga clic en siguiente y confirme la transacción.
+3. Ingrese la cantidad de tokens tCORE2 que desea enviar y la dirección a la que los desea enviar; asegúrese de que sea una dirección Core Testnet. Luego haga clic en siguiente y confirme la transacción.
 
 ![send-metmask](../../../../../static/img/testnet-wallet-config/send-tcore-2.png)
 

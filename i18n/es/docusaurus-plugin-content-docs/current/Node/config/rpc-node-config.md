@@ -34,7 +34,7 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-Para los nodos RPC en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
+Para los nodos RPC en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  

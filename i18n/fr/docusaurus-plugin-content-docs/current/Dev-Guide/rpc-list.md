@@ -18,7 +18,6 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
@@ -30,17 +29,6 @@ Remarque : Il s’agit du testnet le plus récent et son utilisation est forteme
 
 - https://rpc.test2.btcs.network
 - https://rpcar.test2.btcs.network (Pour le nœud archive)
-
-</TabItem>
-<TabItem value="testnet1">
-
-### Testnet de la blockchain Core (1115 (0x45b))
-
-:::caution
-Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Testnet2 est recommandée pour un support continu et un accès aux dernières fonctionnalités.
-:::
-
-- https://rpc.test.btcs.network
 
 </TabItem>
 

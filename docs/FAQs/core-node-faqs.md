@@ -7,7 +7,7 @@ sidebar_position: 2
 # Core Nodes FAQs
 ---
 
-### 1. What are the different types of nodes supported supported on the Core blockchain?
+### 1. What are the different types of nodes supported on the Core blockchain?
 
 On the Core network, a Core full node stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node can take many forms:
 
@@ -15,14 +15,14 @@ On the Core network, a Core full node stores the entire history of the Core bloc
 - **Validator full node:** acts as a validator on Core, validating blocks and transactions.
 - **RPC full node:** provides RPC services and responds to HTTP requests.
 
-Other than this Core also supports
+Other than this, Core also supports
 
 - **Archive node:** stores the entire blockchain data of Core from the genesis block.
-- **Snapshot nodes:** stores snapshots for helping other nodes fast-track syncing to the network.
+- **Snapshot nodes:** store snapshots to help other nodes fast-track syncing to the network.
 
 ### 2. What are the benefits of running a Core Node?
 
-Running a Core Full Node offers multiple benefits such as enhancing the network's security and decentralization. Operators can independently verify transactions and are not dependent on third parties. Validators using full nodes can participate in block production and validation, earning potential rewards. Nodes configured as RPC servers provide valuable network services. The setup requires adherence to specific hardware and bandwidth specifications, varying by the node's function—basic, validator, or RPC server.
+Running a Core Full Node offers several benefits, including enhanced network security and decentralization. Operators can independently verify transactions and are not dependent on third parties. Validators using full nodes can participate in block production and validation, earning potential rewards. Nodes configured as RPC servers provide valuable network services. The setup requires adherence to specific hardware and bandwidth specifications, which vary depending on the node's function: full, validator, or RPC server.
 
 ### 3. What is a Core Full Node? What are the hardware/software requirements for running a Core Full node?
 
@@ -34,7 +34,7 @@ A Core full node stores the entire history of the Core blockchain, enabling anyo
 
 **Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -43,9 +43,9 @@ A Core full node stores the entire history of the Core blockchain, enabling anyo
 | RAM | 8 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
+For more details, refer to [Full Node Configuration Guide](../Node/config/full-node.md)
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -54,15 +54,15 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-
 | RAM | 32 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 5Mbps |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
+For more details, refer to [Full Node Configuration Guide](../Node/config/full-node.md)
 
-### 4. What is a Core RPC Node? What are the hardware/software requirements for running a Core RPC node?
+### 4. What is a Core RPC node? What are the hardware/software requirements for running a Core RPC node?
 
 RPC (Remote Procedure Call) nodes on the Core network play a crucial role in facilitating interaction between external applications and the Core blockchain. They serve as the interface through which developers and users can query and interact with the blockchain, making them essential for the functioning of decentralized applications (DApps) and other blockchain services.
 
-**Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux.
+**Software Requirements:** Currently, a Core Full Node can only run on macOS X and Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -71,7 +71,7 @@ RPC (Remote Procedure Call) nodes on the Core network play a crucial role in fac
 | RAM | 16 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 50Mbps |
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -80,15 +80,15 @@ RPC (Remote Procedure Call) nodes on the Core network play a crucial role in fac
 | RAM | 32 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 50Mbps |
 
-For more details, refer to [RPC Node Confgiurations Guide](../Node/config/rpc-node-config.md)
+For more details, refer to [RPC node configuration guide](../Node/config/rpc-node-config.md)
 
 ### 5. What is a Core Validator Node? What are the hardware/software requirements for running a Core Validator node?
 
 Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain's Satoshi Plus consensus framework.
 
-**Software Requirements:** Currently, a Core Full Node can only run on Mac OS X and Linux.
+**Software Requirements:** Currently, a Core Full Node can only run on macOS X and Linux.
 
-**Testnet Full Node Hardware Specifications**
+**Core Testnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -97,7 +97,7 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM | 8 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 10Mbps |
 
-**Mainnet Full Node Hardware Specifications**
+**Core Mainnet Full Node Hardware Specifications**
 
 | **Requirements** | **Details** |
 | ---------------- | ----------- |
@@ -106,8 +106,8 @@ Validators are crucial for securing the network by producing blocks and validati
 | RAM | 32 Gigabytes |
 | Internet Speed | A broadband Internet connection with upload/download speeds of 10Mbps |
 
-For more details, refer to [Validator Node Confgiurations Guide](../Node/config/validator-node-config.md)
+For more details, refer to [Validator Node Configurations Guide](../Node/config/validator-node-config.md)
 
-### 6. How do I set up a full node on Core blockchain?
+### 6. How do I set up a full node on the Core blockchain?
 
-Refer to the detailed guide [here](../Node/config/full-node.md) on how to set up and run a full node on the Core network.
+Refer to the detailed guide [here](../Node/config/full-node.md) for instructions on setting up and running a full node on the Core network.

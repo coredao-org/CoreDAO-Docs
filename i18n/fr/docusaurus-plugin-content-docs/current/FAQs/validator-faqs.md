@@ -28,7 +28,7 @@ Fournissez les informations pour chaque champ du formulaire :
 - **Adresse de consensus:** l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud complet validateur.
 - **Adresse de frais :** l'adresse utilisée pour collecter les frais de commission.
 - **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Sur le testnet, le montant minimum est de **10 000 tCORE**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
+- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Sur le testnet, le montant minimum est de **10 000 tCORE2**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
   1. Une fois les informations saisies, sélectionnez **Register** pour vous enregistrer en tant que validateur.
   2. Pour vérifier rapidement si votre nœud complet a bien été enregistré comme validateur, ouvrez le fichier de log et recherchez le message d'erreur "unauthorized validator". Cette erreur se produit lorsque le nœud est enregistré mais pas encore élu au sein de l'ensemble des validateurs.
 
@@ -62,7 +62,7 @@ For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-
 
 ### 4. Quel est le montant minimum de tokens CORE requis pour devenir validateur ?
 
-Sur le réseau Core, les validateurs doivent staker un certain montant minimum de tokens CORE, qui est verrouillé pendant que le nœud validateur fournit ses services. Sur le testnet, le montant minimum est de **10 000 tCORE**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
+Sur le réseau Core, les validateurs doivent staker un certain montant minimum de tokens CORE, qui est verrouillé pendant que le nœud validateur fournit ses services. Sur le testnet, le montant minimum est de **10 000 tCORE2**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
 
 ### 5. Comment les validateurs sont-ils récompensés dans l'écosystème Core ?
 

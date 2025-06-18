@@ -35,7 +35,7 @@ Un nœud RPC sur Core agit comme une passerelle pour les applications, les déve
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
-    For RPC Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For RPC Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -45,7 +45,7 @@ Un nœud RPC sur Core agit comme une passerelle pour les applications, les déve
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
   </TabItem>
   <TabItem value="testnet">
-    For RPC Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    For RPC Nodes on **Core Testnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -55,7 +55,7 @@ Un nœud RPC sur Core agit comme une passerelle pour les applications, les déve
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 50 megabytes per second.                 |
   </TabItem>
   <TabItem value="mainnet">
-    For RPC Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    For RPC Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|

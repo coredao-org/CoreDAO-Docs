@@ -27,7 +27,7 @@ En la imagen siguiente, verá que puede elegir diferentes versiones del compilad
 
 Puede elegir diferentes entornos en Remix, como se muestra en la imagen a continuación. Un entorno es simplemente la red blockchain con la que trabajará. Hay máquinas virtuales (VM) integradas, así como proveedores que le permiten conectarse a VM externas.
 
-Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Asegúrese de que su billetera MetaMask esté [configurada para Core Tesnet](./core-wallet-config.md) usando la configuración de la cadena de testnet y verifique que su cuenta esté financiada desde el faucet apropiado según el Core testnet al que esté conectado. Consulte [aquí](https://scan.test.btcs.network/faucet) para Core Testnet (1115) y [aquí](https://scan.test2.btcs.network/faucet) para Core Testnet (1114).\`.
+Para conectarse a Core Testnet, elija `Proveedor inyectado - MetaMask`. Asegúrese de que su billetera MetaMask esté [configurada para Core Tesnet](./core-wallet-config.md) usando la configuración de la cadena de testnet y verifique que su cuenta esté financiada desde el faucet apropiado según el Core Testnet al que esté conectado. Consulte [aquí](https://scan.test.btcs.network/faucet) para Core Testnet (1115) y [aquí](https://scan.test2.btcs.network/faucet) para Core Testnet (1114).\`.
 
 <p align="center">
 ![remix-ide](../../../../../static/img/remix/remix-3.avif)
@@ -56,7 +56,7 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 </p>
 
 :::note
-Si estás utilizando Testnet1, asegúrate de configurar la versión de la EVM como Paris
+Si estás utilizando Core Testnet1, asegúrate de configurar la versión de la EVM como Paris
 :::
 
 - Luego seleccione el botón azul **Compilar** para compilar su contrato inteligente.

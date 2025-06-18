@@ -23,7 +23,6 @@ La verificación web es la estrategia de verificación de contratos inteligentes
 
 - [Para Core Mainnet](https://scan.coredao.org/)
 - [Para Core Testnet2](https://scan.test.btcs.network)
-- [Para Core Legacy Testnet](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
@@ -71,11 +70,11 @@ Puede encontrar la guía sobre el uso de Core API para verificar contratos [aqu�
 
 Si estás familiarizado con la API de Etherscan, ¡estás de suerte! Las llamadas API en Core son 100% compatibles con la API de Etherscan. Solo necesita reemplazar la clave API y la URL del punto final y todo debería funcionar correctamente.
 
-## Verificación de HardHat
+## Verificación de Hardhat
 
-La verificación HardHat es la forma más conveniente para que los desarrolladores verifiquen contratos inteligentes. Para obtener más información sobre la verificación de Hardhat, consulte la guía oficial de verificación de Hardhat que se encuentra [aquí](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+La verificación Hardhat es la forma más conveniente para que los desarrolladores verifiquen contratos inteligentes. Para obtener más información sobre la verificación de Hardhat, consulte la guía oficial de verificación de Hardhat que se encuentra [aquí](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Tenga en cuenta que deberá agregar redes Core como cadenas personalizadas, como se ve a continuación en una configuración de ejemplo de HardHat:
+Tenga en cuenta que deberá agregar redes Core como cadenas personalizadas, como se ve a continuación en una configuración de ejemplo de Hardhat:
 
 ```javascript
 /**

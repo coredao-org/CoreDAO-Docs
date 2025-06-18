@@ -64,7 +64,7 @@ Core blockchain todavía está evolucionando y pisando fuerte en el engranaje de
 
 ### 11. ¿Dónde puedo obtener el token CORE de prueba?
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear prototipos rápidamente de sus dApps, Core Testnet Faucets para sus dos redes de prueba, [Faucet for Core Testnet (1114)](https://scan.test2.btcs.network/faucet) y [Faucet para Core Testnet (1115)](https://scan.test.btcs.network/faucet), para distribuir tokens de Core testnet, tCORE. Siga la guía detallada [aquí](../Dev-Guide/core-faucet.md), sobre cómo obtener tCORE o tCORE2 del faucet Core testnet.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear prototipos rápidamente de sus dApps, Core Testnet Faucets para sus dos redes de prueba, [Faucet for Core Testnet (1114)](https://scan.test2.btcs.network/faucet), para distribuir tokens de Core Testnet, tCORE2. Siga la guía detallada [aquí](../Dev-Guide/core-faucet.md), sobre cómo obtener tCORE2 del faucet Core Testnet.
 
 ### 12. ¿Cómo puedo contribuir a la comunidad Core?
 
@@ -77,7 +77,7 @@ Puedes contribuir a la Comunidad Central de varias maneras diferentes:
 
 ### 13. ¿Core ofrece subvenciones o programas de construcción?
 
-Core no se trata sólo de subvenciones, es una puerta de entrada a oportunidades ilimitadas. Ya sea a través de [Core Foundation Grants](https://coredaofoundation.org/fund-your-project), [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram) o el [Core Commit Program] ](https://coredao.org/initiatives/commit-program), recibirá orientación técnica, tutoría y exposición a una comunidad vibrante dedicada a innovar en el panorama DeFi.
+Core no se trata sólo de subvenciones, es una puerta de entrada a oportunidades ilimitadas. Ya sea a través de [Core Foundation Grants](https://coredaofoundation.org/fund-your-project), [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram) o el [Core Commit Program](https://coredao.org/initiatives/commit-program), recibirá orientación técnica, tutoría y exposición a una comunidad vibrante dedicada a innovar en el panorama DeFi.
 
 ### 14. ¿Cómo puedo denunciar una estafa o un robo de alfombras?
 

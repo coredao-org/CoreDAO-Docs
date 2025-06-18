@@ -11,13 +11,13 @@ Developers can use a self-hosted subgraph to extract data from the Core blockcha
 
 ## Important URLs and Keys
 
-### Core MainNet
+### Core Mainnet
 
-<table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
+<table><thead><tr><th width="342">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-is.coredao.org</em> </td><td>Used to check subgraph health.</td></tr></tbody></table>
 
-### Core TestNet
+### Core Testnet2
 
-<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Usage</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Used to create/deploy subgraphs (<em>--node</em> or <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Used to deploy subgraphs.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Used to query data from subgraphs.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Used to check subgraph health.</td></tr></tbody></table>
 
 ## General Subgraph Setup Steps
 
@@ -81,6 +81,5 @@ Well done, your subgraph is deployed! Now you can integrate the HTTP query URL p
 
 To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.
 
-If you are testing against the Core TestNet Graph, here are the access token for general testing purpose: 
-* **General key for Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
+If you are testing against the Core Testnet2 Graph, here are the access tokens for general testing purpose: 
 * **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0

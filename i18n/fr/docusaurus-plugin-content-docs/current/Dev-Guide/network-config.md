@@ -14,7 +14,6 @@ import TabItem from '@theme/TabItem';
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 ::: info
@@ -29,20 +28,6 @@ Il s'agit du testnet le plus récent et son utilisation est fortement recommand�
 | **Explorateur de blocs**     | https://scan.test2.btcs.network        |
 | **Faucet**                   | https://scan.test2.btcs.network/faucet |
 | **Site Web de Staking Core** | https://stake.test2.btcs.network/      |
-
-</TabItem>
-<TabItem value="testnet1">
-:::Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Testnet2 est recommandée pour un support continu et un accès aux dernières fonctionnalités.
-:::
-
-| **Paramètre**                | **Valeur**                                                                                            |
-| ---------------------------- | ----------------------------------------------------------------------------------------------------- |
-| **RPC URL**                  | https://rpc.test.btcs.network         |
-| **ID de Chaîne**             | 1115 (0x45b)                                                                       |
-| **Symbole de la devise**     | tCORE                                                                                                 |
-| **Explorateur de blocs**     | https://scan.test.btcs.network        |
-| **Faucet**                   | https://scan.test.btcs.network/faucet |
-| **Site Web de Staking Core** | https://stake.test.btcs.network/      |
 
 </TabItem>
 

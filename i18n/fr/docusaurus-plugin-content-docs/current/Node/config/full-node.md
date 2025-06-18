@@ -39,7 +39,7 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
-    For Full Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -50,7 +50,7 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
 
   </TabItem>
   <TabItem value="testnet">
-    For Full Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    For Full Nodes on **Core Testnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -60,7 +60,7 @@ Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 megabytes per second.                  |
   </TabItem>
   <TabItem value="mainnet">
-    For Full Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+    For Full Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|

@@ -10,24 +10,23 @@ import TabItem from '@theme/TabItem';
 # Validator Registration
 ---
 
-:::caution 
-Before running a Validator Node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
+:::caution
+Before running a Validator node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
 :::
 
 ## Set Up a Full Node in Validator Mode
 Before you can register as a validator, you need to set up and run a full node in validator mode following the guide [here](./setting-up-validator.md).
 
-Make sure your validator node is up and running. 
+Make sure your validator node is up and running.
 
 ## Register Your Validator
 
 Once your node is running and synced, you can proceed with the registration process.
 
-1. **Navigate to Staking Website:** The easiest way to register a new validator is using Core's official staking websites:
+1. **Navigate to Staking Website:** The easiest way to register a new validator is to use Core's official staking websites:
 
     * [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
-    * [Core Testnet Staking website](https://stake.test.btcs.network/become-validator)
-    * [Core Testnet2 Staking website](https://stake.test2.btcs.network/become-validator)
+    * [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
 
 3. **Connect Your Wallet:** On the staking website, click **Connect Wallet** in the top right corner and connect your wallet (such as MetaMask, Ledger, etc.) that holds the necessary CORE tokens.
 
@@ -41,7 +40,7 @@ Provide information for each of the form's fields:
 
 * **Consensus Address**: the validator address you set when you initialized your validator node.
 * **Fee Address**: the address used to collect commission fees.
-* **Commission**: revenue is split between the validator and its delegators, with the commission determining what percentage of delegator revenue is taken by the validator as compensation.
+* **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
 * **Total deposit**: the refundable CORE deposit locked up while performing validator services. The minimum deposit for testnet and mainnet is **10,000 CORE**.
 
 5. **Submit Registration:** Once you’ve filled out all the required information, click **Register** to submit your validator for registration.
@@ -57,9 +56,9 @@ Open your node’s log file and search for the error message `unauthorized valid
 
 ## Validator Election
 
-Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entirety of the round. When the last block of a round is mined, the round’s accumulated rewards are distributed and the next round's validator set is selected. For more details about how the validator election works, refer to the [validator election](./validator-election.md) section.
+Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entire round. When the last block of a round is mined, the round’s accumulated rewards are distributed, and the next round's validator set is selected. For more details about how the validator election works, refer to the [validator election](./validator-election.md) section.
 
-You can check the validator status on the stake website, active elected validators will be marked as `Active/Normal`. The validator set is updated at **00:00 am UTC** every day.
+You can check the validator status on the stake website; active elected validators will be marked as `Active/Normal`. The validator set is updated at **00:00 am UTC** every day.
 
 ![validator-register-form](../../../static/img/validator/validator-status.png)
 
@@ -71,9 +70,9 @@ Validator status is updated daily at 00:00 UTC. You can check the status of your
 
 * **`Active/Refuse`:** Validator is elected for the current round but refused to accept delegations. Not qualified for the next election.
 
-* **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony. Not qualified for the next election.
+* **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony and not qualified for the next election.
 
-* **`Inactive/Queued`:** Validator is registered but not elected. Qualified for the next election. 
+* **`Inactive/Queued`:** Validator is registered but not elected. Qualified for the next election.
 
 * **`Inactive/Refuse`:** Validator is registered but has refused delegation. Not qualified for the next election.
 
@@ -95,7 +94,7 @@ You may assign a human-readable name to your validator node using the Core Staki
 
 ### Steps to Set or Update Your Validator Name
 
-1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators). 
+1. **Access the Staking Website:** navigate to the [validator dashboard](https://stake.coredao.org/validators).
 2. **Locate Your Validator:** Identify your validator entry within the list. By default, validators are listed by their associated `Fee Address`.
 3. **Open Validator Details:** Click on your validator to open the Validator Details page.
 4. **Access the Update Menu:** On the Validator Details page, click the menu button (three vertical dots) next to the Stake button and select "Update Name" from the dropdown.

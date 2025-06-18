@@ -5,6 +5,7 @@ sidebar_position: 2
 ---
 
 # Design of Liquid Staking (stCORE)
+
 ---
 
 stCORE is designed to enhance the utility of the CORE token and simplify the staking process. This initiative allows token holders to maximize the potential of their assets with greater flexibility and efficiency.
@@ -13,12 +14,12 @@ stCORE is designed to enhance the utility of the CORE token and simplify the sta
 
 Liquid staking via stCORE is designed as follows:
 
-* A new module called `Earn` is introduced alongside a standard ERC-20 token, **stCORE**
-* Users interact with the `Earn` module to mint, redeem, and withdraw assets
-* The `Earn` module interacts with Core platform contracts such as `PledgeAgent` (staking) and `CandidateHub`
-* All value accrued by the `Earn` module is reflected in the **stCORE** token value
-* The **CORE/stCORE** conversion ratio is updated **daily**
-* Additional methods are provided to allow the system operator to rebalance and optimize staking across validators
+- A new module called `Earn` is introduced alongside a standard ERC-20 token, **stCORE**
+- Users interact with the `Earn` module to mint, redeem, and withdraw assets
+- The `Earn` module interacts with Core platform contracts such as `PledgeAgent` (staking) and `CandidateHub`
+- All value accrued by the `Earn` module is reflected in the **stCORE** token value
+- The **CORE/stCORE** conversion ratio is updated **daily**
+- Additional methods are provided to allow the system operator to rebalance and optimize staking across validators
 
 ## User Perspective
 
@@ -43,14 +44,16 @@ stCORE is a standard ERC-20 token and can be used in all typical ERC-20 scenario
 The implementation of the `Earn` module for liquid staking can be found [here](https://github.com/coredao-org/Earn/blob/main/contracts/Earn.sol).
 
 User methods in the `Earn` module include:
-* **`mint()`:** Mint stCORE using CORE
-* **`redeem()`:** Redeem stCORE for CORE
-* **`withdraw()`:** Withdraw CORE to the wallet after the redemption period
+
+- **`mint()`:** Mint stCORE using CORE
+- **`redeem()`:** Redeem stCORE for CORE
+- **`withdraw()`:** Withdraw CORE to the wallet after the redemption period
 
 Operator methods in the `Earn` module include:
-* **`afterTurnRound()`:** Implements autocompounding
-* **`rebalance()`:** Balances staking between the most and least staked validators
-* **`manualRebalance()`:** Manually transfers staking between validators
+
+- **`afterTurnRound()`:** Implements autocompounding
+- **`rebalance()`:** Balances staking between the most and least staked validators
+- **`manualRebalance()`:** Manually transfers staking between validators
 
 ### Validator Selection on Mint/Redeem
 
@@ -63,37 +66,40 @@ During redemption, the `Earn` contract selects validators randomly using `_rando
 ### Keeping Validators Balanced in Stake Amounts
 
 Validator distribution works as follows:
-* When minting, users choose the validator
-* When redeeming, the system randomly selects validators
+
+- When minting, users choose the validator
+- When redeeming, the system randomly selects validators
 
 This system naturally balances staking across validators. However, large mint or redeem operations can disrupt this balance. To correct such imbalances, two rebalancing methods are available:
-* **`rebalance()`:** Automatically balances the validator with the most staked CORE and the one with the least, if the difference exceeds a set threshold
-* **`manualRebalance()`:** Allows the operator to manually redistribute stake between validators
+
+- **`rebalance()`:** Automatically balances the validator with the most staked CORE and the one with the least, if the difference exceeds a set threshold
+- **`manualRebalance()`:** Allows the operator to manually redistribute stake between validators
 
 ### stCORE/CORE Conversion Ratio Calculation
 
 Each round, after the turn round completes, the `Earn` module:
-* Collects rewards from validators
-* Re-delegates rewards to the same validators (autocompounding)
-* Moves stake from jailed/inactive validators to active ones to maximize APR
+
+- Collects rewards from validators
+- Re-delegates rewards to the same validators (autocompounding)
+- Moves stake from jailed/inactive validators to active ones to maximize APR
 
 Then, the conversion ratio is recalculated using the formula:
+
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply() 
+    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply()
 ```
 
-Since **rewards claiming only happens once per day**, the conversion rate remains same for the entire day until the next turn round happens. The logics for this are implemented in the `afterTurnRound()` method. 
+Since **rewards claiming only happens once per day**, the conversion rate remains same for the entire day until the next turn round happens. The logics for this are implemented in the `afterTurnRound()` method.
 
 ### Handling the Dues Protection When delegating/undelegating
 
-In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** >= 1. 
+In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** be >= 1.
 
-Whereas, upon  undelegation
+Whereas, upon undelegation
 
-* The amount of CORE **must** >= 1 **AND**
-* The remaining CORE left on a validator of this address **must** >= 1
+- The amount of CORE **must** be >= 1 **AND**
+- The remaining CORE left on a validator of this address **must** be >= 1
 
-When handling `delegate` and `undelegate` internally, the `Earn` module must also follow the same restrictions. 
+When handling `delegate` and `undelegate` internally, the `Earn` module must also follow the same restrictions.
 
-The implementation of these requriements can be found in `_undelegateWithStrategy()` method. 
-
+The implementation of these requirements can be found in `_undelegateWithStrategy()` method.

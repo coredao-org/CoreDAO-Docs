@@ -36,7 +36,7 @@ values={[
 {label: 'Testnet', value: 'testnet'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnetTwo">
-Para los Nodos Archivo en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
+Para los Nodos Archivo en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requisitos        | Detalles                                                                                                 |  

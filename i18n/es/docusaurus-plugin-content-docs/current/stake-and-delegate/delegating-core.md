@@ -86,7 +86,7 @@ Para delegar sus tokens CORE, siga estos pasos:
 ![image](https://github.com/user-attachments/assets/b31bbdb5-a2b0-401e-99f9-106c6c3e913a)
 </p>
 
-- Confirme también la transacción en su Metamask.
+- Confirme también la transacción en su MetaMask.
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/e3022505-99a3-49eb-bf9f-6fc565e41105)
@@ -120,7 +120,7 @@ Si deseas retirar tu CORE delegado, haz clic en los 3 puntos al final de la fila
 
 #### Paso 3.1 Confirmar la transacción y verificar el CORE no delegado
 
-- Tras hacer clic en **Undelegate**, se te solicitará confirmar la transacción en tu Metamask. Haga clic en el botón **Confirmar**:
+- Tras hacer clic en **Undelegate**, se te solicitará confirmar la transacción en tu MetaMask. Haga clic en el botón **Confirmar**:
 
 <p align="center">
 ![image](https://github.com/user-attachments/assets/787425db-f7c2-4fa4-9cc9-a125d7a9b873)

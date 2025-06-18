@@ -56,7 +56,7 @@ Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix a
 </p>
 
 :::note
-Si vous utilisez TestNet1, assurez-vous que la version EVM est définie à Paris
+Si vous utilisez Core TestNet1, assurez-vous que la version EVM est définie à Paris
 :::
 
 - Cliquez ensuite sur le bouton bleu **Compile** pour compiler votre contrat intelligent.

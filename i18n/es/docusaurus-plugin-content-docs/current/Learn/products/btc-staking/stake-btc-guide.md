@@ -65,7 +65,7 @@ Para comenzar a hacer staking de tu Bitcoin en la blockchain de Core y ganar rec
 
 1. Visita [https://stake.coredao.org](https://stake.coredao.org/) y haz clic en **Validators** en el encabezado superior.
 
-2. Haz clic en **Connect Wallet** en la esquina superior derecha del encabezado para conectar tu cartera de Core. De la lista de carteras soportadas, elige la cartera de Core que desees. Para esta guía, hemos usado Metamask.
+2. Haz clic en **Connect Wallet** en la esquina superior derecha del encabezado para conectar tu cartera de Core. De la lista de carteras soportadas, elige la cartera de Core que desees. Para esta guía, hemos usado MetaMask.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-on-core](../../../../../../../static/img/native-staking/updated-ui/staking-guide-1.png)

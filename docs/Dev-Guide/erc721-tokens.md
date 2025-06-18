@@ -5,7 +5,7 @@ sidebar_position: 2
 description: ERC-721 on Core
 ---
 
-# ERC721 Tokens
+# ERC-721 Tokens
 
 ---
 
@@ -31,7 +31,7 @@ OpenZeppelin provides secure and audited smart contract templates. The **OpenZep
 
 2. **Select ERC-721**:
 
-- you'll find various contract templates. Select **ERC-721** from the list.
+- From the different contract templates listed, select **ERC-721**.
 
 3. **Customize Your Contract**:
 
@@ -41,7 +41,7 @@ OpenZeppelin provides secure and audited smart contract templates. The **OpenZep
 - **Metadata URI**: You can set metadata using a URI, which will point to the information about your NFTs (e.g., IPFS or a centralized server).
 
 <p align="center">
-![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)
+![OpenZeppelin_Wizard-ERC-721](../../static/img/dev_tutorials/ERC721_Wizard.png)
 </p>
 
 4. **Copy the Code**:
@@ -60,7 +60,7 @@ Remix is an online IDE for Solidity development that allows you to write, deploy
 - Paste the ERC-721 contract code you copied from OpenZeppelin’s Wizard into the newly created file.
 
 <p align="center">
-![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)
+![Remix-ERC-721](../../static/img/dev_tutorials/ERC721_Contract.png)
 </p>
 3. **Install OpenZeppelin Contracts**:
 
@@ -83,7 +83,7 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Fix Any Errors: If there are any errors in the code, Remix will highlight them. Correct any issues and recompile.
 
 <p align="center">
-![Remix-ERC721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
+![Remix-ERC-721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
 </p>
 
 ## Step 4: Deploy the Contract on a Test Network
@@ -94,10 +94,10 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Under Environment, select Injected Web3. This will connect Remix to your MetaMask wallet.
 
 <p align="center">
-![Remix-ERC721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
+![Remix-ERC-721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
 </p>
 
-- Make sure your MetaMask is connected to a Core testnet2.
+- Make sure your MetaMask is connected to a Core Testnet2.
 
 ### Deploy Your Contract:
 
@@ -108,7 +108,7 @@ If you're using Remix's "Solidity compiler" plugin, it will automatically fetch 
 - Click on **Deploy**. You’ll be prompted to confirm the transaction in MetaMask.
 
 <p align="center">
-![Remix-ERC721_Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
+![Remix-ERC-721-Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
 </p>
 
 Once the contract is deployed, you’ll see the contract’s address.
@@ -125,7 +125,7 @@ Now that your contract is deployed, you can interact with it directly from Remix
 - Confirm the transaction in MetaMask.
 
 <p align="center">
-![Remix-ERC721_Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
+![Remix-ERC-721-Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
 </p>
 
 **View Your NFT**
@@ -136,10 +136,10 @@ Now that your contract is deployed, you can interact with it directly from Remix
 
 You can add additional functions to your contract, such as:
 
-Burning tokens: A function to burn (destroy) NFTs.
+**Burning Tokens**: A function to burn (destroy) NFTs.
 For additional customization, you can refer to OpenZeppelin's ERC-721 documentation and add new features to your contract.
 
-For more information on OpenZeppelin ERC-20 implementation, please read[ ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721).
+For more information on OpenZeppelin ERC-721 implementation, please read[ ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
 #### References
 

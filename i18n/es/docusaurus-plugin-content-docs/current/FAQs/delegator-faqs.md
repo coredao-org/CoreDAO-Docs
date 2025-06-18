@@ -53,7 +53,7 @@ Aparte de la tarifa de transacción/cargos de gas, Core no cobra ninguna tarifa 
 
 ### 10. ¿Cómo pueden los delegados reclamar sus recompensas?
 
-Consulte la guía detallada [aquí](../stake-and-delegate/delegating-core.md) sobre Cómo reclamar recompensas obtenidas mediante apuestas de BTC y CORE. En caso de delegación de BTC Hash Power, consulte [aquí](../stake-and-delegate/delegating-hash.md).
+Consulte la guía detallada [aquí](../stake-and-delegate/delegating-core.md) sobre Cómo reclamar recompensas obtenidas mediante apuestas de BTC y CORE. En caso de delegación de Bitcoin hash power, consulte [aquí](../stake-and-delegate/delegating-hash.md).
 
 ### 11. ¿Qué pasa si un validador deja de funcionar o es penalizado?
 

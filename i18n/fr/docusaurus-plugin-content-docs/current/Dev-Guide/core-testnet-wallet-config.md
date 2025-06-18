@@ -76,20 +76,20 @@ Le nouveau testnet de Core avec le `chainID 1114` est désormais en ligne et re
 La `Satoshi Chain/BTCs` a été rebaptisée `Core/CORE`, respectivement. Si vous avez ajouté le Testnet avant le changement, vous devrez mettre à jour manuellement le Nom du Réseau et le Symbole de la Monnaie dans les paramètres de MetaMask ; sinon, vous ne pourrez pas utiliser la version actuelle du Core Testnet. Allez dans `Paramètres -> Réseau', et sélectionnez `Core Testnet\` pour ouvrir les paramètres du réseau. Mettez à jour le Nom du Réseau et le Symbole de la Monnaie avec les valeurs indiquées dans la [section ci-dessus](#adding-network-manually) et cliquez sur le bouton Sauvegarder. Vous êtes prêt à partir !
 :::
 
-### Alimentation du Portefeuille avec des jetons tCORE
+### Alimentation du Portefeuille avec des jetons tCORE2
 
-Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test.btcs.network/faucet) pour distribuer des jetons Core testnet, **tCORE**. Suivez le [guide](./core-faucet.md) détaillé pour alimenter votre compte MetaMask avec des jetons tCORE.
+Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet](https://scan.test2.btcs.network/faucet) pour distribuer des jetons Core Testnet, **tCORE2**. Suivez le [guide](./core-faucet.md) détaillé pour alimenter votre compte MetaMask avec des jetons tCORE2.
 
-### L'Envoi jetons tCORE
+### L'Envoi jetons tCORE2
 
-Vous pouvez utiliser MetaMask pour envoyer des tCORE à d'autres adresses.
+Vous pouvez utiliser MetaMask pour envoyer des tCORE2 à d'autres adresses.
 
 1. Accédez à votre portefeuille MetaMask, assurez-vous que vous êtes connecté au Core Testnet
 2. Cliquez sur le bouton `Envoyer`
 
 ![send-metmask](../.././../../../static/img/testnet-wallet-config/send-tcore-1.png)
 
-3. Entrez le montant de jetons tCORE que vous souhaitez envoyer et l'adresse à laquelle vous souhaitez envoyer les jetons tCORE (assurez-vous qu'il s'agisse d'une adresse du Core Testnet). Cliquez ensuite sur Suivant et confirmez la transaction.
+3. Entrez le montant de jetons tCORE2 que vous souhaitez envoyer et l'adresse à laquelle vous souhaitez envoyer les jetons tCORE2 (assurez-vous qu'il s'agisse d'une adresse du Core Testnet). Cliquez ensuite sur Suivant et confirmez la transaction.
 
 ![send-metmask](../.././../../../static/img/testnet-wallet-config/send-tcore-2.png)
 

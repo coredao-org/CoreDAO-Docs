@@ -35,7 +35,7 @@ Un nœud de validation sur Core participe à la production de blocs et à la val
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
-    For Validator Nodes on **Core Blockchain Testnet2**, following minimum hardware specifications are recommended:
+    For Validator Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -46,7 +46,7 @@ Un nœud de validation sur Core participe à la production de blocs et à la val
 
   </TabItem>
   <TabItem value="testnet">
-    For Validator Nodes on **Core Blockchain Testnet**, following minimum hardware specifications are recommended:
+    For Validator Nodes on **Core Testnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -56,7 +56,7 @@ Un nœud de validation sur Core participe à la production de blocs et à la val
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
   </TabItem>
   <TabItem value="mainnet">
-   For Validator Nodes on **Core Blockchain Mainnet**, following minimum hardware specifications are recommended:
+   For Validator Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
