@@ -19,7 +19,7 @@ Core operates on **Satoshi Plus consensus**, integrating three delegation source
 By meeting specific **CORE-to-BTC staking ratios**, users gain **boosted Bitcoin staking rewards**, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly.
 
 <p align="center">
-<img width="1024" alt="Dual Staking Tiers (8)" src="https://github.com/user-attachments/assets/6ce41ca4-fc7e-476a-814c-4f56665b3c48" />
+<img width="1024" alt="DualStakingTiers" src="../../static/img/dual-staking/dual-staking-tiers.png" />
 </p>
 
 ### Boosted Yield Thresholds
@@ -43,9 +43,9 @@ Effectively, the CORE emissions are distributed pro rata based on the BTC TVL, w
 
 The deciding mechanism for a Bitcoin staker’s yield tier (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ratio and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. The current CORE:BTC staking ratios are as follows:
 
-- Staking Ratio R1 \= 3,000 CORE per 1 BTC
-- Staking Ratio R2 \= 9,000 CORE per 1 BTC
-- Staking Ratio R3 \= 24,000 CORE per 1 BTC
+- Staking Ratio R1 \= 3,625 CORE per 1 BTC
+- Staking Ratio R2 \= 10,875 CORE per 1 BTC
+- Staking Ratio R3 \= 29,000 CORE per 1 BTC
 
 Keeping these ratios in mind, users can calculate the required threshold for each tier as follows:
 
@@ -74,23 +74,23 @@ The following is a simple example explaining how to calculate the required CORE 
 
 Now, the user will have to stake CORE as per the following Staked CORE Thresholds to enjoy a higher yield on their staked BTC with the above variables:
 
-- Staking Ratio **R<sub>1</sub>** \= 3,000
-- Staking Ratio **R<sub>2</sub>** \= 9,000
-- Staking Ratio **R<sub>3</sub>** \= 24,000
+- Staking Ratio **R<sub>1</sub>** \= 3,625
+- Staking Ratio **R<sub>2</sub>** \= 10,875
+- Staking Ratio **R<sub>3</sub>** \= 29,000
 - Staked BTC quantity \= 10 BTC
 
 The **Staked CORE Thresholds** with the above variables are:
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 3,000 \= 30,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 9,000 \= 90,000 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 24,000 \= 240,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 3,625 \= 36,250 staked CORE
+- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 10,875 \= 108,875 staked CORE
+- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 29,000 \= 290,000 staked CORE
 
 Hence, the staked BTC in this example will enjoy a yield of
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 30,000
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 30,000 but below 90,000
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 90,000 but below 240,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 240,000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 36,250
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 36,250 but below 108,875
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 108,875 but below 290,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 290,000
 
 :::note
 The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
