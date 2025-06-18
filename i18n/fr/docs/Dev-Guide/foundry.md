@@ -9,11 +9,11 @@ description: Déployer des contrats sur Core en utilisant Foundry
 
 ---
 
-Foundry est une boîte à outils rapide, efficace et extensible pour le développement EVM écrite en Rust. Ce guide vous guidera tout au long du processus d'installation de Foundry, de configuration de votre projet, d'écriture et de test du code Solidity, ainsi que de déploiement et de vérification de vos contrats sur Core Blockchain.
+Foundry is a fast, efficient, and extensible toolkit for EVM development written in Rust. This guide will walk you through the process of installing Foundry, setting up your project, writing and testing Solidity code, and deploying and verifying your contracts on Core blockchain.
 
 ## 1. Installation de Foundry
 
-Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. Le processus est relativement simple et peut être réalisé en quelques étapes. Foundry utilise « forge » comme outil principal pour interagir avec les contrats Solidity.
+Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. The process is relatively straightforward and can be completed in a few simple steps. Foundry uses `forge` as its primary tool for interacting with Solidity contracts.
 
 ### Étape 1 : Installer Foundry
 
@@ -39,7 +39,7 @@ Vous devriez voir la version de Foundry qui a été installée.
 
 ### Étape 2 : Mettre à jour Foundry
 
-Foundry est en développement actif, il est donc important de maintenir votre installation à jour. Vous pouvez mettre à jour Foundry avec la commande suivante :
+Foundry is actively developed, so it's essential to keep your installation up to date. Vous pouvez mettre à jour Foundry avec la commande suivante :
 
 ```bash
 foundryup
@@ -57,7 +57,7 @@ Pour créer un nouveau projet avec Foundry, vous pouvez utiliser la commande `fo
 forge init my-blockchain-project
 ```
 
-Cela générera une nouvelle structure de répertoire avec tous les fichiers de base dont vous avez besoin pour commencer à écrire des contrats et des tests Solidity.
+This will generate a new directory structure with all the necessary files to start writing Solidity contracts and tests.
 
 Voici à quoi ressemblera la structure de dossiers générée :
 
@@ -91,7 +91,7 @@ my-blockchain-project/
 
 Mettez à jour le fichier « foundry.toml » avec les versions Solidity et EVM appropriées.
 
-Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». Si vous utilisez un **ancien réseau de test**, définissez la **version EVM sur Paris**.
+Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». If you're using an **older testnet**, set the **EVM version to Paris**, note that Core Testnet (1115) is now deprecated and no longer maintained.
 
 ```bash
 [profile.default]
@@ -116,20 +116,25 @@ Créez un fichier appelé « Counter.sol » dans le dossier « src » :
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 
+
 contract Counter {
     uint256 public count;
+
 
     constructor() {
         count = 0;
     }
 
+
     function increment() public {
         count += 1;
     }
 
+
     function decrement() public {
         count -= 1;
     }
+
 
     function getCount() public view returns (uint256) {
         return count;
@@ -155,24 +160,30 @@ Accédez au répertoire « test » et créez un fichier de test appelé « Co
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 
+
 import "forge-std/Test.sol";
 import "../src/Counter.sol";
 
+
 contract CounterTest is Test {
     Counter counter;
+
 
     function setUp() public {
         counter = new Counter();
     }
 
+
     function testInitialCount() public {
         assertEq(counter.getCount(), 0);
     }
+
 
     function testIncrement() public {
         counter.increment();
         assertEq(counter.getCount(), 1);
     }
+
 
     function testDecrement() public {
         counter.increment();
@@ -205,11 +216,13 @@ Vous devriez voir un résultat similaire à ce qui suit :
 [⠒] Solc 0.8.28 finished in 491.38ms
 Compiler run successful!
 
+
 Ran 3 tests for test/Counter.t.sol:CounterTest
 [PASS] testDecrement() (gas: 22192)
 [PASS] testIncrement() (gas: 32003)
 [PASS] testInitialCount() (gas: 10943)
 Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 5.38ms (3.86ms CPU time)
+
 
 Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
@@ -220,33 +233,39 @@ Une fois que vous avez écrit et testé votre contrat Solidity, vous pouvez le d
 
 ### Étape 1 : Configuration du déploiement
 
-Pour déployer votre contrat, vous devrez configurer un script de déploiement. créez un fichier `Counter.s.sol` sous le dossier script et collez le code suivant.
+Pour déployer votre contrat, vous devrez configurer un script de déploiement. Create a file `Counter.s.sol` under the script folder and paste the following code.
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.24;
 
+
 import {Script, console} from "forge-std/Script.sol";
 import {Counter} from "../src/Counter.sol";
+
 
 contract CounterScript is Script {
     Counter public counter;
 
+
     function setUp() public {}
+
 
     function run() public {
         vm.startBroadcast();
 
+
         counter = new Counter();
+
 
         vm.stopBroadcast();
     }
 }
 ```
 
-#### Création et chargement de variables d'environnement
+#### Creating and Loading Environment Variables
 
-créez un fichier « env file » et ajoutez les détails suivants
+Create an `.env file` and add the following details
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -265,19 +284,19 @@ source .env
 
 ### Étape 2 : Déployer le contrat
 
-Pour déployer le contrat sur le réseau de  Core testnet, utilisez « forge create »
+To deploy the contract to the Core Testnet, use the `forge create`
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
-ou utilisez la commande « forge script »
+Or use the `forge script` command
 
 ```bash
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
 ```
 
-Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. Affiche l'adresse du contrat déployé ;
+Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. It will return the address of the deployed contract.
 
 ```bash
 [⠊] Compiling...
@@ -289,13 +308,13 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Vérification du contrat
 
-Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
+Foundry has a built-in feature to verify contracts on Core automatically. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Foundry gérera le processus de vérification, vous pouvez utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
+Foundry will handle the verification process. You can use [Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
 
 ## Lectures complémentaires
 
