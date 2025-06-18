@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ## Introduction
 
-[Le Staking de Bitcoin Non-Custodial](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md) a été intégré à la blockchain Core en avril 2024, permettant aux utilisateurs de staker du Bitcoin et de gagner des rendements tout en conservant le contrôle total de leurs actifs.
+[Le Staking de Bitcoin Non-Custodial](../Learn/products/btc-staking/overview.md) a été intégré à la blockchain Core en avril 2024, permettant aux utilisateurs de staker du Bitcoin et de gagner des rendements tout en conservant le contrôle total de leurs actifs.
 
 Pour maximiser le potentiel de rendement du staking de Bitcoin, Core propose le Dual Staking - un mécanisme qui débloque des niveaux de récompense plus élevés en participant simultanément au staking de Bitcoin avec verrouillage temporel et au staking de jetons CORE.
 Étant donné que les émissions quotidiennes de Core suivent un calendrier fixe, les participants qui mettent en jeu des CORE en plus de leur Bitcoin reçoivent des récompenses nettement plus élevées que ceux qui mettent en jeu uniquement du Bitcoin. L'augmentation du pourcentage de rendement est déterminée par la quantité de jetons CORE mis en jeu par rapport à la valeur du Bitcoin, avec des seuils définis correspondant à des niveaux croissants de récompenses de staking.
@@ -28,11 +28,11 @@ En alignant les récompenses de staking Bitcoin sur les niveaux de staking de je
 
 ## Comment fonctionne le Dual Staking ?
 
-Le Dual Staking n'altère pas le processus de staking pour le Bitcoin et le CORE. Pour plus d'informations sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](https://docs.coredao.org/docs/Learn/products/btc-staking/overview.md). Consultez également ce [guide](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) détaillé sur la délégation de CORE et le [staking](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md)/la [récupération](https://docs.coredao.org/docs/Learn/products/btc-staking/Redeeming-Guide.md) de BTC.
+Le Dual Staking n'altère pas le processus de staking pour le Bitcoin et le CORE. Pour plus d'informations sur le fonctionnement du Staking de Bitcoin Non-Custodial, référez-vous [ici](../Learn/products/btc-staking/overview.md). Consultez également ce [guide](./delegating-core.md) détaillé sur la délégation de CORE et le [staking](../Learn/products/btc-staking/stake-btc-guide.md)/la [récupération](../Learn/products/btc-staking/Redeeming-Guide.md) de BTC.
 
 Le Dual Staking crée une opportunité de débloquer des rendements plus élevés lorsque le Bitcoin et le CORE sont stakés simultanément, avec des seuils de staking de CORE variables correspondant à différents niveaux de boost de rendement sur les récompenses de staking de Bitcoin sur la blockchain Core.
 
-Les détenteurs de Bitcoin peuvent [staker leur Bitcoin](https://docs.coredao.org/docs/Learn/products/btc-staking/stake-btc-guide.md) via le staking de Bitcoin Non-Custodial de Core pour accumuler des récompenses en CORE. En [stakant ensuite leurs tokens CORE](https://docs.coredao.org/docs/stake-and-delegate/delegating-core.md) à différents seuils de Dual Staking, les utilisateurs débloquent des niveaux supérieurs de rendements en Bitcoin, payés en CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'impacte pas le rendement généré par le staking de CORE lui-même.
+Les détenteurs de Bitcoin peuvent [staker leur Bitcoin](../Learn/products/btc-staking/stake-btc-guide.md) via le staking de Bitcoin Non-Custodial de Core pour accumuler des récompenses en CORE. En [stakant ensuite leurs tokens CORE](./delegating-core.md) à différents seuils de Dual Staking, les utilisateurs débloquent des niveaux supérieurs de rendements en Bitcoin, payés en CORE. Bien que le Dual Staking améliore les récompenses de staking de Bitcoin, il n'impacte pas le rendement généré par le staking de CORE lui-même.
 
 Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
 
