@@ -69,7 +69,7 @@ Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No**
 ```bash
 dapp-tutorial.
 |   .gitignore
-|   hardhat-config.js   (HardHat configuration file.)
+|   hardhat-config.js   (Hardhat configuration file.)
 |   package-lock.json
 |   package.json
 |   README.md
@@ -255,7 +255,7 @@ main().catch((error) => {
 });
 ```
 
-3. Asegúrese de que su billetera MetaMask tenga tokens de prueba tCORE o tCORE2 para Core Testnet. Refer [here](./core-wallet-config.md) for details on how to get tCORE or tCORE2 tokens from Core Faucet.
+3. Make sure your MetaMask wallet has tCORE2 test tokens for the Core Testnets. Refer [here](./core-wallet-config.md) for details on how to get tCORE2 tokens from Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
