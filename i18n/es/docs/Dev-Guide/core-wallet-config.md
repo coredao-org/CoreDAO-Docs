@@ -15,25 +15,24 @@ import TabItem from '@theme/TabItem';
 Esta es una guía detallada para conectarse a Core (Testnet y Mainnet) utilizando la billetera MetaMask.
 :::
 
-### Requisitos previos del software
+### Software Prerequisites
 
 1. [Extensión del navegador MetaMask Wallet](https://metamask.io/)
 
 ### Configuración de la billetera MetaMask
 
-Recomendamos utilizar la [billetera web MetaMask](https://metamask.io/) para conectarse a Core Testnet. Debes tener instalada MetaMask y configurar una cuenta antes de que puedas conectarte a Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
+We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Testnet2. Debes tener instalada MetaMask y configurar una cuenta antes de que puedas conectarte a Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
 
 ### Agregando Core a MetaMask
 
-Existen múltiples formas de añadir las redes de Core (Testnet y Mainnet) a MetaMask. A continuación hemos listado los métodos más confiables y verificados.
+There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testeed ways below.
 
 #### Agregar red manualmente
 
-Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse a Core agregando los detalles de la cadena a la configuración de red en MetaMask. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
+Once you've set up your MetaMask wallet, you can use it to connect to Core blockchain by adding Core network details in MetaMask's network settings. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
@@ -52,21 +51,10 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 </p>
 
 </TabItem>
-<TabItem value="testnet1">
-
-- **Nombre de la Red:** Core Blockchain TestNet
-- **Nueva URL RPC:** https://rpc.test.btcs.network
-- **ID de cadena:** 1115
-- **Símbolo de Moneda:** tCORE
-- **URL del Explorador de Bloques:** https://scan.test.btcs.network
-- **Faucet:** https://scan.test.btcs.network/faucet
-- **Web de Staking:** https://stake.test.btcs.network/
-
-</TabItem>
 
 <TabItem value="mainnet">
 
-- **Nombre de la Red:** Core Blockchain
+- **Network Name:** Core Blockchain Mainnet
 - **Nueva URL RPC:** https://rpc.ankr.com/core
 - **ID de cadena:** 1116
 - **Símbolo de Moneda:** CORE
@@ -81,12 +69,11 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
 <TabItem value="testnet2">
-1. Vaya a chainlist.org y busque '_core blockchain_', asegúrese de marcar la opción _Incluir Testnets_.
+1. Go to chainlist.org and search for _Core Blockchain_, make sure to check the _Include Testnets_ option.
 
 2. Verifique dos veces para asegurarse de elegir la red correcta. Por favor, confirme los siguientes detalles en las capturas de pantalla adjuntas: ID de cadena, moneda, etc. Para garantizar la configuración correcta.
 
@@ -100,38 +87,17 @@ Una vez que haya configurado su billetera MetaMask, puede usarla para conectarse
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Agrega Core testnet2 al hacer clic en el botón de `Approve`.
+4. Add Core Testnet2 by clicking the `Approve` button.
 
 El Core Testnet ahora está agregado a su MetaMask.
 
 </TabItem>
 
-<TabItem value="testnet1">
-1. Visita chainlist.org y busca ‘_core blockchain_’, asegúrate de marcar la opción _Include Testnets_.
-
-2. Verifique dos veces para asegurarse de elegir la red correcta. Verifique los detalles en las siguientes instantáneas: ID de cadena, moneda, etc. para asegurarse de agregar la correcta.
-
-<p align="center" style={{zoom:"40%"}}>
-![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist_testnet1.png)
-</p>
-
-3. Haga clic en _Connect Wallet_ y luego elija MetaMask. Permita conectarse a la billetera MetaMask al confirmar la notificación respectiva.
-
-<p align="center" style={{zoom:"40%"}}>
-![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
-</p>
-
-4. Agrega Core testnet2 al hacer clic en el botón de `Approve`.
-
-Core Testnet está ahora agregada a su MetaMask.
-
-</TabItem>
-
 <TabItem value="mainnet">
 
-1. Vaya a chainlist.org y busque ‘_core blockchain_’.
+1. Go to chainlist.org and search for ‘_Core Blockchain_’.
 
-2. Verifique dos veces para asegurarse de elegir la red correcta. Por favor, confirme los siguientes detalles en las capturas de pantalla adjuntas: ID de cadena, moneda, etc. Para garantizar la configuración correcta.
+2. Verifique dos veces para asegurarse de elegir la red correcta. Verifique los detalles en las siguientes instantáneas: ID de cadena, moneda, etc. para asegurarse de agregar la correcta.
 
 <p align="center" style={{zoom:"40%"}}>
 ![chainlist-testnet-connect-metmask](../../static/img/miannet-wallet-config/chainlist_mainnet.png)
@@ -155,7 +121,6 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
@@ -168,22 +133,7 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 2. Haga clic en el botón ‘_Add Core Network_’
 
-3. Aprueba en tu MetaMask
-
-4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
-
-</TabItem>
-
-<TabItem value="testnet1">
-1. Vaya a https://scan.test.btcs.network/ y desplácese hacia abajo en la página
-
-<p align="center" style={{zoom:"60%"}}>
-![add-network-metamask](../../static/img/testnet-wallet-config/testnet-wallet-config-2.png)
-</p>
-
-2. Haga clic en el botón ‘_Add Core Network_’
-
-3. Aprueba en tu MetaMask
+3. Approve the transaction in your MetaMask.
 
 4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
 
@@ -211,12 +161,5 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 #### Última Testnet de Core (1114)
 
-La nueva red de prueba de Core con `chainID 1114` ya está disponible y se recomienda su uso. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. La antigua testnet pronto quedará obsoleta y eventualmente se retirará, así que cambie a la nueva testnet para acceder a las funciones más recientes.
+Core's latest testnet, Core Testnet2 with `chainID 1114`, is now live and the recommended testing environment for Core blockchain. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. The old testnet, Core Testnet, is not deprecated and will no longer be maintained.
 :::
-
-<!-- :::note
-
-#### Rebrand Updates
-
-`Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
-::: -->
