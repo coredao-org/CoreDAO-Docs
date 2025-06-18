@@ -18,23 +18,24 @@ Antes de comenzar, asegúrate de que tu sistema cumpla con las especificaciones 
 
 #### Sistemas Operativos Compatibles
 
-Actualmente, los sistemas operativos compatibles incluyen Mac OS X y Linux.
+Currently, the supported operating system platforms include **macOS** and **Linux**.
 
 #### Requisitos de Hardware
 
-<Tabs defaultValue="testnet2" values={[ {label: 'Testnet2', value: 'testnet2'}, {label: 'Testnet', value: 'testnet'}, {label: 'Mainnet', value: 'mainnet'}, ]}> Para nodos validador en **Core Blockchain Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
+<Tabs
+defaultValue="testnet2"
+values={[
+{label: 'Testnet2', value: 'testnet2'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
+For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     
 
   </TabItem>
-  <TabItem value="testnet">
-Para nodos validador en **Core Blockchain Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-    
-
-  </TabItem>
   <TabItem value="mainnet">
-Para nodos validador en **Core Blockchain Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
+   For Validator nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
     
 
@@ -43,15 +44,15 @@ Para nodos validador en **Core Blockchain Mainnet**, se recomiendan las siguient
 
 ### Clonar el Codebase de Core Blockchain
 
-Se recomienda utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar directamente tu nodo validador, es decir, ejecutar tu nodo directamente desde el código base de Core blockchain. Las instrucciones para compilar el código fuente se encuentran en el archivo [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
+It is recommended to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your validator node directly, i.e., running your validator node from the Core blockchain codebase. Las instrucciones para compilar el código fuente se encuentran en el archivo [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
 ```bash
 
 ```
 
-#### Instalar Dependencias
+#### Install Dependencies
 
-Después de clonar el repositorio, el siguiente paso es instalar todas las dependencias necesarias para compilar el binario de geth (Go Ethereum). Ejecuta el siguiente comando para instalar las dependencias:
+After cloning the repo, the next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Ejecuta el siguiente comando para instalar las dependencias:
 
 ```bash
 
@@ -61,10 +62,10 @@ Esto descargará e instalará las dependencias necesarias y compilará el binari
 
 ### Configuración del Nodo
 
-Existen 2 métodos para configurar un nodo validador desde cero en la blockchain de Core:
+There are two approaches to set up a validator node from scratch on the Core blockchain:
 
 - **Mediante Snapshot (Recomendado):** descargar el [snapshot más reciente de la blockchain de Core](https://github.com/coredao-org/core-snapshots) y sincronizar el nodo con base en este.
-- **Desde Genesis (No Recomendado):** sincronizar toda la información de la blockchain de Core desde el [bloque génesis](https://github.com/coredao-org/core-chain/releases/latest).
+- **From Genesis (Not Recommended):** Sync the entire Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
 La sincronización desde el bloque génesis puede tomar una cantidad significativa de tiempo. Se recomienda configurar un nodo de Core utilizando el snapshot más reciente para acelerar el proceso.
@@ -75,8 +76,7 @@ La sincronización desde el bloque génesis puede tomar una cantidad significati
 1. **Descargar los Binarios Precompilados Más Recientes:**
   Descarga los binarios más recientes del nodo desde el [repositorio oficial de versiones de Core](https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Archivos de Génesis y Configuración:**
-  Los binarios pre-build incluyen `genesis.json` y `config.toml` correspondientes a la red que deseas correr como validador. Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
+2. **Genesis and Configuration Files:** The pre-build binaries contain `genesis.json` and `config.toml` for the respective network you want to run the validator node. Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
 
 3. **Inicializar Genesis:** Escribe el estado génesis localmente ejecutando el siguiente comando desde el directorio de tu proyecto. Asegúrate de que la ruta relativa al archivo `genesis.json` sea correcta. En este caso, `genesis.json` implica que el archivo `genesis.json` se encuentra en el mismo directorio, que debería ser el directorio root del nodo.
 
@@ -87,13 +87,21 @@ La sincronización desde el bloque génesis puede tomar una cantidad significati
 Deberías ver la siguiente salida:
 
 ```bash
-
+INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
+INFO [07-18|14:57:20.724] Writing custom genesis block
+INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
+INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
+INFO [07-18|14:57:20.729] Writing custom genesis block
+INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
 4. **Descargar y Extraer el Snapshot Más Reciente**
   Descarga y extrae el snapshot más reciente de la blockchain de Core desde el [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
 
-5. **Generación de Consensus Key:** Configura la clave de consenso antes de ejecutar el nodo validador. Para crear una nueva consensus key, utiliza el siguiente comando, el cual creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (consensus address).
+5. **Generación de Consensus Key:** Configura la clave de consenso antes de ejecutar el nodo validador. To create a new consensus key, use the following command, which will create a new account and output an address that will be your validator's address (consensus address).
 
 ```bash
 
@@ -129,13 +137,13 @@ Desglosemos las banderas utilizadas en este comando:
 
 - **`password password.txt`:** La contraseña para desbloquear tu cuenta de validador (asegúrate de que este archivo se mantenga seguro).
 
-- **`mine`:** Habilita la minería/validación (producción de bloques) en la red. Es esencial para la operación del validador
+- **`mine`:** Enables mining and validating (producing blocks) on the network. Es esencial para la operación del validador
 
-- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (usar con precaución).
+- **`allow-insecure-unlock`:** Enables the unlock process without additional security measures (use with caution).
 
 - **`cache 8000`:** Asigna una caché grande (8GB en este caso) para mejorar el rendimiento.
 
-- **`networkid`:** Especifica el id de cadena de la red Core en la que deseas ejecutar el nodo validador (por ejemplo, 1114 para Core Testnet2)
+- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Tesnet2)
 
 #### Sincronización desde Genesis
 
@@ -143,7 +151,7 @@ Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de 
 
 - Omite el Paso #4 ("Descargar y Extraer el Snapshot Más Reciente") en las instrucciones de configuración.
 
-- Después de completar los Pasos 1 (Descargar Binarios), 2 (Archivos Genesis/Config) y 3 (Initializar Genesis), continúa generando tu consensus key con normalidad.
+- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as usual.
 
 - Luego, inicia el nodo validador usando el siguiente comando:
 
@@ -151,21 +159,24 @@ Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de 
 
   ```
 
-**Nota:** Sincronizar desde genesis puede tomar mucho tiempo dependiendo de los recursos del sistema y la velocidad de la red.
+⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
 
 ## Monitor Logs
 
-Una vez que tu nodo validador esté en ejecución, es importante monitorear los logs para asegurarte de que todo esté funcionando correctamente.
+Once your validator node is up and running, it’s essential to monitor the logs to ensure everything is operating smoothly.
 
 Los logs se almacenan por defecto en `./node/logs/core.log`, pero pueden redirigirse a otra ubicación si se desea. Puedes ver y seguir los logs en tiempo real utilizando el siguiente comando:
 
 ```bash
+# Tail the logs in real-time
+# This will display the most recent log entries and update the log display continuously.
 
+tail -f ./node/logs/core.log
 ```
 
-Estos logs normalmente muestran que el nodo está importando nuevos segmentos de cadena en la blockchain, lo que indica que está recibiendo y procesando bloques correctamente.
+These logs typically show that the node is importing new chain segments on the blockchain, indicating that it’s correctly receiving and processing blocks.
 
-- **Imported new chain segment:** Esto significa que el nodo está recibiendo nuevos bloques desde la red y agregándolos a la blockchain local exitosamente.
+- **Imported new chain segment:** This indicates that the node is successfully receiving new blocks from the network and adding them to its local blockchain.
 
 - **number:** El número de bloque (por ejemplo, `1,596,730` es el número de bloque para esa entrada).
 
@@ -177,7 +188,7 @@ Estos logs normalmente muestran que el nodo está importando nuevos segmentos de
 
 - **txs:** El número de transacciones en el bloque (por ejemplo, `1` tx o `2` txs).
 
-- **mgas:** El gas utilizado en las transacciones dentro del bloque. Gas es el trabajo computacional necesario para ejecutar transacciones (por ejemplo, `0.021` significa 0.021 millones de gas).
+- **mgas:** El gas utilizado en las transacciones dentro del bloque. Gas refers to the computational work required to execute transactions (e.g., `0.021` means 0.021 million gas units).
 
 - **elapsed:** El tiempo que tomó importar el bloque, en milisegundos (por ejemplo, `3.003ms`).
 
@@ -185,11 +196,10 @@ Estos logs normalmente muestran que el nodo está importando nuevos segmentos de
 
 - **triedirty:** La cantidad de memoria "sucia" utilizada (en este caso, alrededor de`869.67 KiB`), lo cual indica cuánta memoria se está utilizando para almacenar temporalmente los datos del bloque.
 
-- **Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Las conexiones peer-to-peer son esenciales para sincronizar la blockchain con la red.
+- **Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Peer-to-peer connections are crucial for synchronizing the blockchain with the network.
 
 - **peercount:** El número actual de peers a los que el nodo está conectado (por ejemplo, `2`).
 
 - **tried:** El número de peers con los que el nodo ha intentado conectarse (por ejemplo, `12`).
 
 - **static:** El número de peers fijos/estáticos con los que el nodo está configurado para conectarse (por ejemplo, `2`).
-
