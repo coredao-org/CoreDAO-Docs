@@ -2,7 +2,7 @@
 sidebar_label: Conexión Mediante Postman
 hide_table_of_contents: false
 sidebar_position: 2
-description: Aprende cómo interactuar con Core usando Postman
+description: "Aprende cómo interactuar con Core usando Postman"
 ---
 
 # Conéctate a los endpoints de RPC de Core desde Postman
@@ -13,11 +13,11 @@ description: Aprende cómo interactuar con Core usando Postman
 
 [Postman](https://www.postman.com/) es una oferta de software popular que facilita la creación y el uso de API.
 
-En este documento, cubriremos los conceptos básicos para acceder a un punto final RPC con Postman. ¿No pretende ser (o reemplazar) un tutorial completo de principio a fin, sino más bien ofrecer una introducción al tema.
+This guidebook covers the basics of hitting an RPC endpoint with Postman. It is not intended to be (or to replace) a full, end-to-end tutorial, but rather to offer an introduction to the subject.
 
 ## Trabajar con los RPCs de Core a través de Postman
 
-1. Primero, deberá registrarse con una cuenta. Postman hace que esto sea muy fácil ingresando manualmente los detalles de su cuenta o con una dirección de Gmail.
+1. First, you'll need to sign up for an account. Postman makes this very easy to do by allowing you to enter your account details or use a Gmail address manually.
 
 <p align="center" style={{zoom:"40%"}}>
 ![sign-up-postman](../../static/img/rpc/postman/rpc-psotman-1.png)
@@ -29,13 +29,13 @@ En este documento, cubriremos los conceptos básicos para acceder a un punto fin
 ![new-workspace-postman](../../static/img/rpc/postman/rpc-psotman-2.png)
 </p>
 
-3. Puede elegir entre varios espacios de trabajo diferentes. Para este ejemplo, usaremos "HTTP".
+3. You can choose from several different workspaces. Para este ejemplo, usaremos "HTTP".
 
 <p align="center" style={{zoom:"40%"}}>
 ![new-http-workspace-postman](../../static/img/rpc/postman/rpc-psotman-3.png)
 </p>
 
-4. Esto lo llevará a una estación de trabajo básica, donde podrá estructurar su consulta RPC y obtener una respuesta.
+4. This will take you to a basic workstation, where you can structure your RPC query and receive a response.
 
 <p align="center" style={{zoom:"40%"}}>
 ![new-workspace-postman](../../static/img/rpc/postman/rpc-psotman-4.png)
@@ -47,7 +47,7 @@ En este documento, cubriremos los conceptos básicos para acceder a un punto fin
 ![set-request-type-postman](../../static/img/rpc/postman/rpc-psotman-5.png)
 </p>
 
-6. Luego, diríjase a la pestaña Cuerpo y agregue los datos de la siguiente solicitud CURL (tenga en cuenta que en este ejemplo estamos enviando la solicitud como json sin formato).
+6. Then, head over to the Body tab and add the data from the following CURL request (note that in this example, we are submitting the request as raw JSON).
 
 ```bash
 curl -H "Content-Type: application/json" \
@@ -60,7 +60,7 @@ curl -H "Content-Type: application/json" \
 ![set-boy-postman](../../static/img/rpc/postman/rpc-psotman-6.png)
 </p>
 
-7. Una vez que presione el botón "Enviar", recibirá una respuesta en JSON con toda la información que queríamos sobre la transacción cuyo hash pasamos en la solicitud.
+7. Once the `Send` button is clicked, you'll receive a response in JSON with all the information requested about the transaction whose hash was passed in the request.
 
 <p align="center" style={{zoom:"40%"}}>
 ![response-postman](../../static/img/rpc/postman/rpc-psotman-7.png)
