@@ -5,47 +5,59 @@ sidebar_position: 2
 description: Exploiter la DPoS dans Satoshi Plus
 ---
 
-# Preuve de participation par délégations (DPoS) dans Satoshi Plus
+# Delegated Proof of Stake (DPoS)
 
 ---
 
 ## Aperçu
 
-La preuve de participation déléguée (DPoS) permet aux détenteurs de jetons CORE de participer à la sécurité du réseau en participant à l'élection des validateurs Core en déléguant leurs jetons à des validateurs sans abandonner la garde de leurs actifs. Le DPoS permet aux détenteurs de CORE de gagner des récompenses de staking tout en contribuant à la sécurité du réseau, créant ainsi un alignement économique entre les détenteurs de jetons et les participants du réseau.
+Delegated Proof of Stake (DPoS) is the component of **Satoshi Plus consensus** that enables CORE token holders to participate in network security by voting for validators via the delegation of tokens.
 
-## Fonctionnement de la DPoS dans Satoshi Plus
+DPoS establishes a **direct economic relationship** between CORE token holders and network security:
 
-Sur le réseau Core, les détenteurs de jetons CORE peuvent déléguer leurs jetons à des validateurs pour participer au consensus sans avoir à gérer eux-mêmes l'infrastructure de validation. Cela favorise une approche décentralisée de l'élection des validateurs tout en distribuant des récompenses dans l'ensemble de l'écosystème.
+- CORE token holders gain voting power and earn rewards proportional to their stake
+- Validators compete for delegation to increase their election probability
+- The network benefits from distributed token-holder participation in validator selection
 
-- **Staking / Délégation de CORE :** Les détenteurs de jetons CORE délèguent leurs jetons à des validateurs de confiance.
+## How DPoS Works
 
-- **Élection des validateurs :** Le montant des jetons CORE délégués à un validateur impacte directement son score hybride, qui détermine ses chances d'être élu dans l'ensemble des validateurs.
+### 1. Token Delegation
 
-- **Création et Validation des Blocs:** Une fois élus, les validateurs jouent un rôle crucial dans le traitement des transactions et la création de nouveaux blocs. Ils s’assurent que toutes les transactions d'un bloc sont valides selon les règles de la blockchain, puis ajoutent ces blocs à la blockchain.
+CORE token holders participate by delegating their tokens to chosen validators:
 
-- **Distribution des Récompenses:** Les validateurs et leurs délégateurs gagnent des récompenses sous forme de tokens CORE pour leur participation à la sécurisation du réseau. Ces récompenses sont distribuées proportionnellement en fonction du montant de la mise que chaque délégant contribue, incitant à la fois les validateurs et les détenteurs de jetons à agir dans l'intérêt du réseau.
+- **Delegate CORE tokens** to one or more validators
+- **Voting power** is proportional to the amount of CORE tokens delegated
+- **Modify delegations** at any time
 
-## Processus étape par étape
+### 2. Validator Election
 
-1. **Staking des jetons CORE/BTC :** Les détenteurs de CORE peuvent participer à la sécurité du réseau en mettant en jeu leurs jetons. L'exigence minimale de staking est de 1 token CORE ou 0,01 BTC (si le staking se fait via l'interface utilisateur officielle du site web).
+Validators with higher total delegated CORE tokens have higher probability of being elected to the active validator set for block production.
 
-2. **Délégation aux Validateurs :** Les détenteurs de jetons délèguent leurs jetons CORE/BTC jalonner à un validateur de leur choix, aidant ainsi à améliorer le score hybride du validateur dans le processus d'élection.
+### 3. Reward Distribution
 
-3. **Élection des Validateurs :** Les validateurs ayant le score hybride le plus élevé, qui inclut les CORE délégués, sont élus dans l'ensemble des validateurs pour une période donnée.
+When validators produce blocks:
 
-4. **Production de Blocs :** Les validateurs élus sont responsables de la production des blocs et de la validation des transactions pendant leur mandat, ce qui leur permet de gagner des récompenses.
+1. Validators earn CORE token rewards
+2. Validators take a commission (set by each validator)
+3. Remaining rewards are distributed proportionally to delegators based on their stake
 
-5. **Réception des Récompenses :** Les participants du staking CORE et  BTC reçoivent des récompenses CORE des validateurs auxquels ils ont délégué leurs jetons.
+## Best Practices for Delegators
 
-## Importance de la DPoS dans Satoshi Plus
+- Research validator performance and commission rates before delegating
+- Monitor validator uptime regularly
+- Consider diversifying delegation across multiple validators
+- Claim rewards regularly
 
-- **Participation large :** Le DPoS permet à tous les détenteurs de jetons CORE de participer au consensus, quelle que soit leur expertise technique ou leurs ressources, renforçant ainsi la décentralisation.
+## Getting Started
 
-- **Sécurité économique :** En alignant les incitations économiques entre les validateurs et les détenteurs de jetons, le DPoS crée un système où la sécurisation du réseau est financièrement rentable pour tous les participants.
+**To participate in DPoS:**
 
-- **Responsabilité des validateurs :** Les délégants peuvent retirer leur soutien aux validateurs sous-performants ou malveillants, créant ainsi une approche axée sur le marché pour la sélection et la responsabilité des validateurs.
+1. **Research validators** and their commission rates
+2. **Select validator(s)** and delegation amount
+3. **Confirm delegation** and begin earning rewards
 
-#### **Conclusion**
+## Why It Matters
 
-Le DPoS constitue un pilier essentiel du consensus Satoshi Plus en permettant une participation large à la sécurité et à la gouvernance de Core. Cela crée un système où les détenteurs de jetons CORE peuvent gagner des récompenses tout en contribuant à la sécurité du réseau sans avoir besoin d'exploiter une infrastructure de validation. Ce composant fonctionne en harmonie avec le DPoW et le verrouillage temporel Bitcoin pour créer le mécanisme de consensus robuste et multicouche de Core.
+DPoS enables CORE token holders to directly participate in Core's consensus mechanism, creating economic alignment between token ownership and network security. Combined with Bitcoin miner delegation and Bitcoin staking, DPoS contributes to Core's multi-layered security model.
 
+**Participate in DPoS at [stake.coredao.org](https://stake.coredao.org)**
