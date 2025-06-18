@@ -5,7 +5,7 @@ sidebar_position: 2
 description: ERC-721 sur Core
 ---
 
-# Tokens ERC721
+# ERC-721 Tokens
 
 ---
 
@@ -31,7 +31,7 @@ Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifi
 
 2. **Sélectionnez ERC-721** :
 
-- vous trouverez différents modèles de contrats. Sélectionnez **ERC-721** dans la liste.
+- From the different contract templates listed, select **ERC-721**.
 
 3. **Personnalisez votre contrat** :
 
@@ -40,7 +40,9 @@ Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifi
 - **Mint Function** : Ajoutez une fonction de frappe pour permettre la création de nouveaux jetons.
 - **Metadata URI** : vous pouvez définir des métadonnées à l'aide d'un URI, qui pointera vers les informations sur vos NFT (par exemple, IPFS ou un serveur centralisé).
 
-<p align="center">![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)</p>
+<p align="center">
+![OpenZeppelin_Wizard-ERC-721](../../static/img/dev_tutorials/ERC721_Wizard.png)
+</p>
 
 4. **Copiez le code**
 
@@ -58,7 +60,8 @@ Remix est un IDE en ligne pour le développement Solidity qui vous permet d'écr
 - Collez le code contractuel ERC-721 que vous avez copié à partir de l'assistant OpenZeppelin’s Wizard dans le fichier nouvellement créé.
 
 <p align="center">
-![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)</p>
+![Remix-ERC-721](../../static/img/dev_tutorials/ERC721_Contract.png)
+</p>
 3. **Installer les contrats OpenZeppelin** :
 
 - Remix fournit un moyen d'importer directement les contrats OpenZeppelin Cela se fait en ajoutant l’instruction d’importation suivante en haut de votre contrat :
@@ -79,7 +82,9 @@ Si vous utilisez le plugin « Solidity compiler » de Remix, il récupérera a
 - Cliquez sur **Compile** pour compiler votre contrat.
 - Corriger toutes les erreurs\*\*: S'il y a des erreurs dans le code, Remix les mettra en surbrillance. Corrigez tous les ereurs et recompilez.
 
-<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/ERC721_Compile.png)</p>
+<p align="center">
+![Remix-ERC-721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
+</p>
 
 ## Étape 4: Déployez le contrat sur leTest Network
 
@@ -88,9 +93,11 @@ Si vous utilisez le plugin « Solidity compiler » de Remix, il récupérera a
 - Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
 - Sous \*\* Environment \*\*, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
 
-<p align="center">![Remix-ERC721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)</p>
+<p align="center">
+![Remix-ERC-721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
+</p>
 
-- Assurez-vous que votre métamask est connecté à  \*\* Core testnet2 \*\*
+- Make sure your MetaMask is connected to a Core Testnet2.
 
 ### **Déployez votre contrat** :
 
@@ -100,7 +107,9 @@ Si vous utilisez le plugin « Solidity compiler » de Remix, il récupérera a
 - Collez l'adresse du propriétaire dans l'onglet déploiement (puisque le contrat est propriétaire).
 - Cliquez sur **Deploy** Vous serez invité à confirmer la transaction dans MetaMask.
 
-<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/ERC721_Deployment.png)</p>
+<p align="center">
+![Remix-ERC-721-Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
+</p>
 
 Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
@@ -116,7 +125,8 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 - Confirmer la transaction dans MetaMask
 
 <p align="center">
-![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Mint.png)</p>
+![Remix-ERC-721-Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
+</p>
 
 \*\* Visualisez votre NFT \*\*
 
@@ -126,10 +136,10 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 
 Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
-Burning Tokens\*\* : Une fonction pour brûler (détruire) des NFTs.
+**Burning Tokens**: A function to burn (destroy) NFTs.
 Pour une personnalisation supplémentaire, vous pouvez vous référer à la documentation ERC-721 d'OpenZeppelin et ajouter de nouvelles fonctionnalités à votre contrat.
 
-Pour plus d'informations sur l'implémentation ERC-721 d'OpenZeppelin, veuillez consulter [ERC721](https://docs.openzeppelin.com/contracts/4.x/erc721).
+For more information on OpenZeppelin ERC-721 implementation, please read[ ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
 #### Références
 
