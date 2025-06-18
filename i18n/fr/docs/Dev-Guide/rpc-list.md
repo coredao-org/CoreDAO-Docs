@@ -18,11 +18,10 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet2', value: 'testnet2'},
-{label: 'Testnet1', value: 'testnet1'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-### Testnet2 de la Core Blockchain (1114 (0x45a))
+### Core Testnet2 (1114 (0x45a))
 
 :::info
 Remarque : Il s’agit du testnet le plus récent et son utilisation est fortement recommandée. La version précédente sera progressivement dépréciée puis retirée, il est donc essentiel de migrer vers ce nouveau testnet pour continuer à bénéficier d’un support actif et accéder aux dernières fonctionnalités.
@@ -30,23 +29,13 @@ Remarque : Il s’agit du testnet le plus récent et son utilisation est forteme
 
 - https://rpc.test2.btcs.network
 - https://rpcar.test2.btcs.network (Pour le nœud archive)
-
-</TabItem>
-<TabItem value="testnet1">
-
-### Testnet de la blockchain Core (1115 (0x45b))
-
-:::caution
-Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Testnet2 est recommandée pour un support continu et un accès aux dernières fonctionnalités.
-:::
-
-- https://rpc.test.btcs.network
+- wss://rpc.test2.btcs.network/wsp (WebSocket Support)
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-### Mainnet de la blockchain Core (1116 (0x45c))
+### Core Mainnet (1116 (0x45c))
 
 - wss://ws.coredao.org
 - https://rpc.coredao.org
@@ -55,7 +44,7 @@ Testnet1 sera obsolète et éventuellement retiré. La transition vers Core Test
 </TabItem>
 </Tabs>
 
-### Points de terminaison RPC tiers pour le Mainnet de la blockchain Core
+### Third Party RPC Endpoints for Core Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
