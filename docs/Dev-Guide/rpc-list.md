@@ -18,7 +18,7 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 ## Official RPC Endpoints for Core Network
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 <TabItem value="testnet2">

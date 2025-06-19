@@ -405,13 +405,6 @@ const sidebars: SidebarsConfig = {
         "stake-and-delegate/delegating-hash",
       ],
     },
-    // {
-    //   type: 'category',
-    //   collapsed: true,
-    //   label: '💰 Become a Delegator',
-    //   items: ['stake-and-delegate/delegators',
-    //   ]
-    // },
   ],
 
   apiSidebar: [
@@ -419,7 +412,6 @@ const sidebars: SidebarsConfig = {
       type: "category",
       collapsed: true,
       label: "Core Scan API",
-      //link: {type: 'doc', id: 'api/api'},
       link: {
         type: "generated-index",
         title: "Core Scan API Endpoints",

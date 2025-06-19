@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">

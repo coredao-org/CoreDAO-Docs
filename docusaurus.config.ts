@@ -36,7 +36,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "fr", "es"],
+    locales: ["en"]//, "fr", "es"],
   },
 
   staticDirectories: ["public", "static"],
@@ -143,23 +143,24 @@ const config: Config = {
     announcementBar: {
       id: "latest_updates",
       content:
-        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://medium.com/@core_dao/lstbtc-is-coming-sunsetting-corebtc-486d6744c3b9">LstBTC Launching Soon!</a> coreBTC is sunsetting — redeem your assets now to secure your holdings. ⚠️',
+        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://coredao.org/explore/blog/core-testnet1-deprecation-notice-&-migration-guidelines">Core Testnet (1115) is now deprecated. Migrate your dapps and smart contracts to latest Core Testnet (1114)</a> ⚠️',
       backgroundColor: "#f96e34",
       textColor: "#FBFCFC",
       isCloseable: false,
     },
 
-  //   algolia:{
-  //     // The application ID provided by Algolia
-  //     appId: "FA8VWNN4PE",
+    //Algolia Search Setting
+    algolia: {
+      // The application ID provided by Algolia
+      appId: "FA8VWNN4PE",
 
-  //     // Public API key: it is safe to commit it
-  //     apiKey: "32c49e31158edbf93b2c5adee12fc9e7", 
+      // Public API key: it is safe to commit it
+      apiKey: "32c49e31158edbf93b2c5adee12fc9e7", 
 
-  //     indexName: "coredao",
+      indexName: "coredao",
 
-  //     contextualSearch: true,
-  // },
+      contextualSearch: true,
+    },
 
     //Header Navigation Items
     navbar: {
@@ -213,10 +214,10 @@ const config: Config = {
           label: "FAQs",
           activeBaseRegex: `/docs/`,
         },
-        {
-          type: "localeDropdown",
-          position: "right",
-        },
+        // {
+        //   type: "localeDropdown",
+        //   position: "right",
+        // },
         {
           href: "https://github.com/coredao-org",
           label: "GitHub",

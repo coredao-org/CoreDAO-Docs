@@ -46,7 +46,7 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -83,7 +83,7 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
