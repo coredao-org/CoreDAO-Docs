@@ -14,23 +14,23 @@ Ce guide détaille le processus d'activation des transferts de jetons ERC-20 int
 
 Cette documentation vous guide à travers le processus de configuration des transferts de jetons inter-chaînes en utilisant le protocole OFT V2 de LayerZero. L'objectif principal est de permettre les transferts de jetons ERC-20 entre le testnet/mainnet Core et d'autres réseaux compatibles EVM, tels que Base Sepolia et Optimism. En suivant ce guide, vous apprendrez à:
 
-- Set up and configure your development environment for cross-chain deployments.
-- Deploy and verify OFT contracts on Core and external networks.
-- Configure LayerZero endpoints and establish secure, trusted remotes.
-- Execute and track cross-chain token transfers.
-- Customize the OFT setup for your own token requirements.
+- Configurer et configurer votre environnement de développement pour les déploiements inter-chaînes.
+- Déployer et vérifier les contrats OFT sur Core et les réseaux externes.
+- Configurer les points de terminaison LayerZero et établir des distants sécurisés et fiables.
+- Exécuter et suivre les transferts de jetons inter-chaînes.
+- Personnaliser la configuration OFT pour répondre aux besoins spécifiques de votre jeton.
 
-For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) for code samples and detailed walkthroughs.
+Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) pour des exemples de code et des guides détaillés.
 
-## Prerequisites
+## Prérequis
 
 - **Node.js v18+** and **npm**/**pnpm** installed
-- **MetaMask Wallet** with funds in Core and desired networks
-- Basic familiarity with Hardhat and Solidity
+- **MetaMask Wallet** avec des fonds sur Core et les réseaux ciblés
+- Connaissances de base de Hardhat et Solidity
 
-## Environment Setup
+## Configuration de l'environnement
 
-1. **Initialize Your Project**
+1. **Initialiser votre projet**
 
   ```js
   npx create-lz-oapp@latest
@@ -39,9 +39,9 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
 
   ```
 
-2. **Configure Networks**
+2. **Configurer les réseaux**
 
-  Update `hardhat.config.ts` with Core and other EVM network settings:
+  Mettez à jour `hardhat.config.ts` avec les paramètres de Core et d'autres réseaux EVM :
 
   ```typescript
   // Example for CoreDAO
@@ -57,10 +57,10 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
   },
   ```
 
-## Deploying OFT Contracts
+## Déploiement du contrat OFT
 
 ````
-Modify the OFT contract to be able to mint the tokens, Go to `contracts/MyOFT.sol` and update the below code
+Modifiez le contrat OFT pour permettre la création de jetons. Allez dans `contracts/MyOFT.sol` et mettez à jour le code comme suit 
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -83,7 +83,7 @@ contract MyOFT is OFT {
 ```
 ````
 
-1. **Deploy to Core Network**
+1. **Déployer sur le réseau Core**
 
   ```bash
   npx hardhat lz:deploy
