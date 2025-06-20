@@ -1,5 +1,5 @@
 ---
-sidebar_label: Resumen
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -36,7 +36,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
   <img width="500" alt="S3_hero" src="https://github.com/user-attachments/assets/4e038aae-a522-4004-97af-da536b6ecdfe"/>
 </p>
 
-2. Click on "Add Core Network" to add Core network configuration into your wallet.
+2. Haz clic en "Add Core Network" para agregar la configuración de la red Core a tu wallet.
 3. Haga clic en "Earn Sparks" o "Join Now" para iniciar la creación de una cuenta.
 4. Seleccione el país correspondiente.
 
