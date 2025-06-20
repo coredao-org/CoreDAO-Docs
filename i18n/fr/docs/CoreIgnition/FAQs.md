@@ -37,7 +37,7 @@ Le programme d'incitation Core Ignition récompense les utilisateurs fidèles po
 
 ### 5. Je n'ai pas de BTC. Puis-je quand même participer à l'écosystème BTCfi de Core ?
 
-Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCfi de Core même sans détenir de Bitcoin. En tant que chaîne compatible avec l'EVM, Core offre une gamme d'opportunités DeFi similaires à d'autres chaînes EVM, y compris les DEX, les protocoles de prêt, les contrats à terme perpétuels, le restaking et les plateformes NFT. Core's mission is to unlock $1.25 trillion of trapped Bitcoin liquidity, creating opportunities for all Web3 users.
+Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCfi de Core même sans détenir de Bitcoin. En tant que chaîne compatible avec l'EVM, Core offre une gamme d'opportunités DeFi similaires à d'autres chaînes EVM, y compris les DEX, les protocoles de prêt, les contrats à terme perpétuels, le restaking et les plateformes NFT. La mission de Core est de libérer 1,25 milliards de dollars de liquidité Bitcoin bloquée, créant des opportunités pour tous les utilisateurs du web3.
 
 ### 6. Où trouver plus d'informations sur Core Ignition ?
 
@@ -51,13 +51,13 @@ Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCf
 Les deux suivent les contributions précieuses des utilisateurs, mais se concentrent sur différents aspects :
 
 - Le classement d'activité met en avant la manière dont un utilisateur interagit activement avec Core, en fonction du nombre de transactions et du volume.
-- The Overall Leaderboard considers not only user activity but also asset holdings and participation in dApps, such as lending, borrowing, and liquidity provision.
+- Le classement général prend en compte non seulement l'activité des utilisateurs, mais également les avoirs en actifs et la participation dans les dApps telles que les prêts, les emprunts et la fourniture de liquidité.
 
-Dans les deux cas, le soutien à long terme de l'écosystème Core est valorisé. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contributions in Ignition.
+Dans les deux cas, le soutien à long terme de l'écosystème Core est valorisé. La participation durable, et non seulement l'activité à court terme ou la liquidité temporaire, est prise en compte pour reconnaître les contributions des utilisateurs dans Ignition.
 
 ### 8. Quelle est la différence entre l'emballage (wrapping) et l'échange (swapping) sur Core Ignition ?
 
-Wrapping refers to converting a token into its wrapped version, for example, converting CORE into wCORE for use in dApps. L'échange (swapping) consiste à échanger un jeton contre un actif différent, comme échanger CORE contre USDT.
+L'emballage (wrapping) signifie convertir un jeton en sa version enveloppée, par exemple, transformer CORE en wCORE pour l'utiliser dans des applications décentralisées (dApps). L'échange (swapping) consiste à échanger un jeton contre un actif différent, comme échanger CORE contre USDT.
 
 > Exemple:
 >
