@@ -1,5 +1,5 @@
 ---
-sidebar_label: Agregar la Red de Core
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -31,10 +31,7 @@ There are multiple ways to add Core Testnet/Mainnet configurations to your MetaM
 
 Once you've set up your MetaMask wallet, you can use it to connect to Core blockchain by adding Core network details in MetaMask's network settings. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 
@@ -67,10 +64,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core block
 
 ### Agregar la red Core a través de Chainlist.org
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 1. Go to chainlist.org and search for _Core Blockchain_, make sure to check the _Include Testnets_ option.
@@ -119,10 +113,7 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 ### Agregar la red Core a través de Core Explorer
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 1. Vaya a https://scan.test2.btcs.network/ y desplácese hacia abajo en la página
