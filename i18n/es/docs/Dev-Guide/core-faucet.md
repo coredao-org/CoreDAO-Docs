@@ -8,23 +8,23 @@ sidebar_position: 2
 
 ---
 
-To help users get started and enable developers to quickly prototype their dApps, Core has released the public Core Testnet Faucet to distribute Core Testnet tokens, **tCORE2**.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores prototipar rápidamente sus dApps, Core ha lanzado el Faucet público de Core Testnet para distribuir tokens de Core Testnet, **tCORE2**.
 
-## Steps to Obtain tCORE2 from Core Testnet Faucet
+## Pasos para obtener tCORE2 del Faucet de Core Testnet
 
-1. Navigate to the faucet website for [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
-2. Paste your wallet address in the given input field. Ensure you provide the Core Testnet2 address of the wallet you want to fund with tCORE2.
-3. Complete the CAPTCHA verification.
-4. Click on the `Get tCORE2` button. After the sucessful requesting of tCORE2 from the faucet, your wallet balance will increase.
+1. Navega al sitio web del faucet para [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
+2. Pega la dirección de tu wallet en el campo de entrada proporcionado. Asegúrate de ingresar la dirección de Core Testnet2 de la wallet que deseas fondear con tCORE2.
+3. Completa la verificación CAPTCHA.
+4. Haz clic en el botón `Get tCORE2`. Después de solicitar exitosamente tCORE2 del faucet, el saldo de tu wallet aumentará.
 
 <p align="center">
 ![using-faucet-test2](../../static/img/faucet/faucet-test2.png)
 </p>
 
 :::caution
-Each address can request tCORE2 **only once per day** from the faucet within a 24-hour period. If you've run out of tCORE2 and the faucet won't send you more because of the daily limit of one tCORE2, come back after 24 hours and try again. Alternatively, you can request it in Core's [Discord Server](https://discord.com/invite/coredaoofficial).
+Cada dirección puede solicitar tCORE2 **solo una vez al día** desde el faucet, dentro de un período de 24 horas. Si te has quedado sin tCORE2 y el faucet no te envía más debido al límite diario de un tCORE2, regresa después de 24 horas e intenta de nuevo. Alternativamente, puedes solicitarlo en el [servidor de Discord](https://discord.com/invite/coredaoofficial) de Core.
 :::
 
 :::note
-tCORE2 are only test tokens and is only used for testing and do not have any value. No lo use para transacciones financieras reales.
+tCORE2 son solo tokens de prueba y se usan únicamente para testing, no tienen ningún valor. No lo use para transacciones financieras reales.
 :::
