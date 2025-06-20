@@ -1,5 +1,5 @@
 ---
-sidebar_label: Explorador de Bloques
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -11,12 +11,9 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE2 and CORE tokens. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
+Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede explorar información sobre los bloques que se han añadido a la blockchain, las transacciones que han ocurrido en la blockchain, los saldos de las wallets, y la información sobre los tokens tCORE2 y CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
 
-<Tabs defaultValue="mainnet" values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 - **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
@@ -30,9 +27,9 @@ Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los 
 
 ### Usando el Explorador de Core Scan
 
-You can use the testnet Core Scan blockchain explorer to find and review transactions. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
+Puedes usar el explorador de blockchain Core Scan en testnet para encontrar y revisar transacciones. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
 
-- The one in which we fetched tCORE2 from Faucet;
-- The one in which we sent tCORE2 to another address;
+- La transacción en la que obtuvimos tCORE2 del Faucet;
+- La transacción en la que enviamos tCORE2 a otra dirección;
 
 ![núcleo-explorador](../../static/img/core-explorer.png)
