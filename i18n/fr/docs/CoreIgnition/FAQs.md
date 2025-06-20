@@ -14,30 +14,30 @@ Core Ignition est un programme d'incitation de six mois développé par la Fonda
 
 ### 2. Qu'est-ce que la blockchain Core ?
 
-Core serves as the Proof-of-Stake layer for Bitcoin, pioneering Self-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Depuis avril 2024, plus de 5.900 BTC ont été jalonnes avec Core, augmentant l'utilité et la sécurité de Bitcoin. Core est la blockchain EVM la plus alignée sur Bitcoin, avec environ 76 % de la puissance de hachage du minage de Bitcoin contribuant à la sécurité du réseau.
+Core sert de couche Proof-of-Stake pour Bitcoin, en lançant le jalonnement Bitcoin en auto-garde et en sécurisant un écosystème BTCfi entièrement compatible EVM. Depuis avril 2024, plus de 5.900 BTC ont été jalonnes avec Core, augmentant l'utilité et la sécurité de Bitcoin. Core est la blockchain EVM la plus alignée sur Bitcoin, avec environ 76 % de la puissance de hachage du minage de Bitcoin contribuant à la sécurité du réseau.
 
-### 3. I am new to the Core ecosystem. Comment puis-je commencer ?
+### 3. Je suis nouveau dans l'écosystème Core. Comment puis-je commencer ?
 
 Pour les nouveaux utilisateurs de la blockchain Core, voici quelques informations essentielles :
 
-1. To interact with Core, users need to have its native token, CORE, in their wallet.
+1. Pour interagir avec Core, les utilisateurs ont besoin de son jeton natif, CORE, dans leur portefeuille.
 2. Pour les nouveaux utilisateurs, Core offre un avantage unique pour les aider à démarrer :
-    - If users bridge at least 10 USDT to Core, they qualify for the Core Faucet.
+    - Si les utilisateurs transfèrent au moins 10 USDT vers Core, ils sont éligibles pour le Faucet Core.
     - Ce Faucet dépose automatiquement des CORE dans le portefeuille de l'utilisateur.
 3. Le processus fonctionne comme suit :
     - Premièrement, des fonds sont transférés (minimum 10 USDT) vers la blockchain Core.
     - Après un transfert réussi, Core déposera automatiquement des CORE dans le portefeuille de l'utilisateur.
     - Avec des CORE maintenant dans le portefeuille de l'utilisateur, celui-ci peut immédiatement commencer à effectuer des transactions sur la blockchain Core.
 
-Remember, this automatic CORE deposit is a one-time benefit designed to help new users easily get started with the Core blockchain.
+Rappelez-vous, ce dépôt automatique de CORE est un avantage unique conçu pour aider les nouveaux utilisateurs à commencer facilement à utiliser la blockchain Core.
 
 ### 4. Quelle est la différence entre Core Ignition et le programme d'incitation des développeurs Core Ignition Builder ?
 
-Le programme d'incitation Core Ignition récompense les utilisateurs fidèles pour favoriser la croissance de l'écosystème BTCfi de Core. In contrast, the Core Ignition Builder’s incentive program rewards developers for creating dApps and projects on the Core blockchain.
+Le programme d'incitation Core Ignition récompense les utilisateurs fidèles pour favoriser la croissance de l'écosystème BTCfi de Core. En revanche, le programme d'incitation des développeurs Core Ignition Builder récompense les développeurs pour la création d'applications ou de projets décentralisés (dApps) sur la blockchain Core.
 
-### 5. I don’t have any BTC. Puis-je quand même participer à l'écosystème BTCfi de Core ?
+### 5. Je n'ai pas de BTC. Puis-je quand même participer à l'écosystème BTCfi de Core ?
 
-Absolument ! Users can still participate in Core's BTCfi ecosystem even if they do not hold Bitcoin. As an EVM-compatible chain, Core offers a range of DeFi opportunities similar to those found on other EVM chains, including decentralized exchanges (DEXes), lending protocols, perpetual futures, restaking, and NFT platforms. Core's mission is to unlock $1.25 trillion of trapped Bitcoin liquidity, creating opportunities for all Web3 users.
+Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCfi de Core même sans détenir de Bitcoin. En tant que chaîne compatible avec l'EVM, Core offre une gamme d'opportunités DeFi similaires à d'autres chaînes EVM, y compris les DEX, les protocoles de prêt, les contrats à terme perpétuels, le restaking et les plateformes NFT. Core's mission is to unlock $1.25 trillion of trapped Bitcoin liquidity, creating opportunities for all Web3 users.
 
 ### 6. Où trouver plus d'informations sur Core Ignition ?
 
