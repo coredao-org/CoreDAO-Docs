@@ -90,15 +90,15 @@ contract MyOFT is OFT {
   # Select 'coredao-mainnet' or 'coredao-testnet'
   ```
 
-2. **Verify Deployment (Optional)**
+2. **Vérifier le déploiement (facultatif)**
 
   ```bash
   npx hardhat verify --network coredao-mainnet DEPLOYED_CONTRACT_ADDRESS
   ```
 
-## Configuring Cross-Chain Connections
+## Configuration des connexions inter-chaînes
 
-1. **Create LayerZero Pathways Configuration**
+1. **Créer une configuration de chemins LayerZero**
 
   In `layerzero.config.ts`:
 
@@ -114,24 +114,24 @@ contract MyOFT is OFT {
   ];
   ```
 
-2. **Wire the Connections**
+2. **Câbler les connexions**
 
   ```bash
   npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
   ```
 
-3. **Verify Peers**
+3. **Verify Peers(Vérifier les pairs)**
 
   ```bash
   npx hardhat lz:oapp:peers:get --oapp-config layerzero.config.ts
   ```
 
-## Executing Cross-Chain Token Transfers
+## Exécuter des transferts de jetons inter-chaînes
 
-To send tokens cross-chain between your contracts using LayerZero technology, you’ll need to create a custom Hardhat task.
+Pour envoyer des jetons inter-chaînes entre vos contrats en utilisant la technologie LayerZero, vous devrez créer une tâche Hardhat personnalisée.
 
-1. **Create the Task Folder**
-  In your project root, create a folder named **tasks** if it doesn't already exist.
+1. **Créez le dossier des tâches**
+  Dans la racine de votre projet, créez un dossier nommé **tasks** s'il n'existe pas déjà.
 
 ```shell
 mkdir tasks
