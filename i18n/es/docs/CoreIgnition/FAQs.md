@@ -1,5 +1,5 @@
 ---
-sidebar_label: Preguntas Frecuentes sobre Core Ignition
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -10,34 +10,34 @@ sidebar_position: 2
 
 ### 1. ¿Qué es Core Ignition?
 
-Core Ignition is a six-month incentive program developed by the Core Foundation to jumpstart the growth of the Core ecosystem. After two successful seasons in 2024 and early 2025, Season 3 is now live. Por favor, visita [Core Ignition](https://ignition.coredao.org) para más detalles.
+Core Ignition es un programa de incentivos de seis meses desarrollado por la Core Foundation para impulsar el crecimiento del ecosistema Core. Después de dos temporadas exitosas en 2024 y principios de 2025, la Temporada 3 está ahora en curso. Por favor, visita [Core Ignition](https://ignition.coredao.org) para más detalles.
 
 ### 2. ¿Qué es la blockchain Core?
 
-Core serves as the Proof-of-Stake layer for Bitcoin, pioneering Self-Custodial Bitcoin Staking and securing a fully EVM-compatible BTCfi ecosystem. Desde abril de 2024, más de 5,900 BTC se han stakeado en Core, impulsando la utilidad y seguridad de Bitcoin. Core es la blockchain EVM más alineada con Bitcoin, con aproximadamente el 76% del poder de minería de Bitcoin contribuyendo a la seguridad de su red.
+Core funciona como la capa Proof-of-Stake para Bitcoin, siendo pionera en el Self-Custodial Bitcoin Staking y asegurando un ecosistema BTCfi totalmente compatible con EVM. Desde abril de 2024, más de 5,900 BTC se han stakeado en Core, impulsando la utilidad y seguridad de Bitcoin. Core es la blockchain EVM más alineada con Bitcoin, con aproximadamente el 76% del poder de minería de Bitcoin contribuyendo a la seguridad de su red.
 
-### 3. I am new to the Core ecosystem. ¿Cómo empiezo?
+### 3. Soy nuevo en el ecosistema Core. ¿Cómo empiezo?
 
 Para los nuevos usuarios de la blockchain Core, aquí hay información esencial:
 
-1. To interact with Core, users need to have its native token, CORE, in their wallet.
+1. Para interactuar con Core, los usuarios necesitan tener su token nativo, CORE, en su wallet.
 2. Para los usuarios que acceden por primera vez, Core ofrece un beneficio único para ayudarlos a comenzar:
-    - If users bridge at least 10 USDT to Core, they qualify for the Core Faucet.
+    - Si los usuarios hacen un bridge de al menos 10 USDT hacia Core, califican para el Core Faucet.
     - Este Faucet deposita automáticamente algunos CORE en la billetera del usuario.
 3. El proceso funciona de la siguiente manera:
     - Primero, los fondos se transfieren (mínimo 10 USDT) a la Core blockchain.
     - Tras una transferencia exitosa, Core depositará automáticamente CORE en la billetera del usuario.
     - Con CORE ahora en la billetera, los usuarios pueden comenzar a transaccionar en la blockchain Core de inmediato.
 
-Remember, this automatic CORE deposit is a one-time benefit designed to help new users easily get started with the Core blockchain.
+Recuerda, este depósito automático de CORE es un beneficio único diseñado para ayudar a los nuevos usuarios a comenzar fácilmente con la blockchain de Core.
 
 ### 4. ¿Cuál es la diferencia entre el programa de incentivos Core Ignition y el programa de incentivos Core Ignition Builder?
 
-El programa de incentivos Core Ignition recompensa a los usuarios leales para fomentar el crecimiento en el ecosistema BTCfi de Core. In contrast, the Core Ignition Builder’s incentive program rewards developers for creating dApps and projects on the Core blockchain.
+El programa de incentivos Core Ignition recompensa a los usuarios leales para fomentar el crecimiento en el ecosistema BTCfi de Core. En cambio, el programa de incentivos Core Ignition Builder recompensa a los desarrolladores por crear dApps y proyectos en la blockchain de Core.
 
-### 5. I don’t have any BTC. ¿Puedo participar igualmente en el ecosistema BTCfi de Core?
+### 5. No tengo BTC. ¿Puedo participar igualmente en el ecosistema BTCfi de Core?
 
-¡Por supuesto! Users can still participate in Core's BTCfi ecosystem even if they do not hold Bitcoin. As an EVM-compatible chain, Core offers a range of DeFi opportunities similar to those found on other EVM chains, including decentralized exchanges (DEXes), lending protocols, perpetual futures, restaking, and NFT platforms. Core's mission is to unlock $1.25 trillion of trapped Bitcoin liquidity, creating opportunities for all Web3 users.
+¡Por supuesto! Los usuarios aún pueden participar en el ecosistema BTCfi de Core incluso si no poseen Bitcoin. Como una cadena EVM compatible, Core ofrece una variedad de oportunidades DeFi similares a las que se encuentran en otras cadenas EVM, incluyendo intercambios descentralizados (DEXes), protocolos de préstamos, futuros perpetuos, restaking y plataformas de NFT. La misión de Core es desbloquear $1.25 miles de millones de dólares en liquidez de Bitcoin atrapada, creando oportunidades para todos los usuarios Web3.
 
 ### 6. ¿Dónde puedo encontrar más actualizaciones sobre Core Ignition?
 
@@ -51,13 +51,13 @@ El programa de incentivos Core Ignition recompensa a los usuarios leales para fo
 Ambos hacen seguimiento de contribuciones valiosas de usuarios, pero se enfocan en aspectos diferentes:
 
 - El Activity Leaderboard muestra el grado de participación de un usuario con Core, basándose en el recuento y el volumen de transacciones.
-- The Overall Leaderboard considers not only user activity but also asset holdings and participation in dApps, such as lending, borrowing, and liquidity provision.
+- El Leaderboard general considera no solo la actividad del usuario, sino también la tenencia de activos y la participación en dApps, como préstamos, créditos y provisión de liquidez.
 
-En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Sustainable participation, not just short-term activity or temporary liquidity, is considered when recognizing users' contributions in Ignition.
+En ambos casos, se valora el apoyo de largo plazo al ecosistema de Core. Se considera la participación sostenible, no solo la actividad a corto plazo o la liquidez temporal, al reconocer las contribuciones de los usuarios en Ignition.
 
 ### 8. ¿Cuál es la diferencia entre wrapping y swapping en Core Ingition?
 
-Wrapping refers to converting a token into its wrapped version, for example, converting CORE into wCORE for use in dApps. Swapping, en cambio, implica cambiar un token por un activo diferente, como intercambiar CORE por USDT.
+Wrapping se refiere a convertir un token en su versión envuelta, por ejemplo, convertir CORE en wCORE para usarlo en dApps. Swapping, en cambio, implica cambiar un token por un activo diferente, como intercambiar CORE por USDT.
 
 > Ejemplo:
 >
