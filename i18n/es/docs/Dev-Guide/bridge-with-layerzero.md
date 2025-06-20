@@ -8,11 +8,11 @@ sidebar_position: 2
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
-This guide details the process of enabling cross-chain ERC-20 token transfers on Core using LayerZero's Omnichain Fungible Token (OFT) V2 protocol. Está diseñada tanto para desarrolladores principiantes como experimentados, proporcionando instrucciones paso a paso y referencias a recursos oficiales y al [repositorio de GitHub de CoreDAO-LayerZero](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
+Esta guía detalla el proceso para habilitar transferencias cross-chain de tokens ERC-20 en Core usando el protocolo Omnichain Fungible Token (OFT) V2 de LayerZero. Está diseñada tanto para desarrolladores principiantes como experimentados, proporcionando instrucciones paso a paso y referencias a recursos oficiales y al [repositorio de GitHub de CoreDAO-LayerZero](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
 
 ## Visión general
 
-Esta documentación te guía a través del proceso de configuración de transferencias de tokens entre cadenas utilizando el protocolo OFT V2 de LayerZero. The main focus is on enabling ERC-20 token transfers between Core testnet/mainnet and other EVM-compatible networks such as Base Sepolia and Optimism. Al seguir esta guía, aprenderás a:
+Esta documentación te guía a través del proceso de configuración de transferencias de tokens entre cadenas utilizando el protocolo OFT V2 de LayerZero. El enfoque principal está en habilitar transferencias de tokens ERC-20 entre el testnet/mainnet de Core y otras redes compatibles con EVM, como Base Sepolia y Optimism. Al seguir esta guía, aprenderás a:
 
 - Configurar tu entorno de desarrollo para implementaciones entre cadenas.
 - Desplegar y verificar contratos OFT en Core y redes externas.
@@ -25,7 +25,7 @@ Para referencia, también puedes consultar el [repositorio de GitHub CoreDAO-Lay
 ## Requisitos previos
 
 - **Node.js v18+** y **npm**/**pnpm** instalados
-- **MetaMask Wallet** with funds in Core and desired networks
+- **Wallet MetaMask** con fondos en Core y las redes deseadas
 - Familiaridad básica con Hardhat y Solidity
 
 ## Configuración del entorno
@@ -40,17 +40,6 @@ Para referencia, también puedes consultar el [repositorio de GitHub CoreDAO-Lay
   Actualiza `hardhat.config.ts`con la configuración de Core y otras redes EVM:
 
   ```typescript
-  // Example for CoreDAO
-  'coredao-mainnet': {
-    eid: EndpointId.COREDAO_V2_MAINNET,
-    url: process.env.RPC_URL_COREDAO || 'https://rpc.coredao.org',
-    accounts: [process.env.PRIVATE_KEY]
-  },
-  'coredao-testnet': {
-    eid: EndpointId.COREDAO_V2_TESTNET,
-    url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test2.btcs.network',
-    accounts: [process.env.PRIVATE_KEY]
-  },
   ```
 
 ## Despliegue de Contratos OFT
