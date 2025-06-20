@@ -1,5 +1,5 @@
 ---
-sidebar_label: Mecánicas
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -23,7 +23,7 @@ El Perfil de Core Ignition es un panel personalizado conectado a la cuenta del u
 3. Seguimiento del estado de participación de alto nivel
 4. Mostrar las insignias obtenidas
 
-To update the user profile, click on the profile menu.
+Para actualizar el perfil de usuario, haz clic en el menú de perfil.
 
 <p align="center">
   <img width="288" alt="Ignition Profile meatballs menu" src="https://github.com/user-attachments/assets/d7523504-df48-4f39-93f3-94e472a03a9a"/>
@@ -31,19 +31,19 @@ To update the user profile, click on the profile menu.
 
 ### Balance de la Billetera Ignition
 
-The Ignition Wallet balance displays a subset of whitelisted assets that the account holds on Core. Users can earn Sparks (points) by bridging/holding assets with an extra Sparks boost on Core.
+El saldo de la Wallet Ignition muestra un subconjunto de activos permitidos que la cuenta posee en Core. Los usuarios pueden ganar Sparks (puntos) al hacer un bridge/holdear activos, con un boost extra de Sparks en Core.
 
 ### Balance de dApp Ignition
 
-The Ignition dApp balance reflects the assets the user has deposited within the whitelisted dApps on Core. Los usuarios también pueden aumentar Sparks interactuando con estas dApps en Core.
+El saldo en la dApp Ignition refleja los activos que el usuario ha depositado dentro de las dApps permitidas en Core. Los usuarios también pueden aumentar Sparks interactuando con estas dApps en Core.
 
 ### Activos Permitidos
 
-Una lista de tokens elegibles para ganar Sparks en Core Ignition. Refer to the [How to Boost Multipliers](#how-to-boost-multipliers) section for the complete list.
+Una lista de tokens elegibles para ganar Sparks en Core Ignition. Consulta la sección [Cómo Aumentar los Multiplicadores](#how-to-boost-multipliers) para la lista completa.
 
 ### dApps Permitidas
 
-Una lista de aplicaciones descentralizadas donde las interacciones de los usuarios contribuyen a ganar Sparks en Core Ignition. Visit the '[Explore dApps](https://ignition.coredao.org/dashboard?tab=explore)' tab on the Ignition Dashboard for complete details.
+Una lista de aplicaciones descentralizadas donde las interacciones de los usuarios contribuyen a ganar Sparks en Core Ignition. Visita la pestaña '[Explorar dApps](https://ignition.coredao.org/dashboard?tab=explore)' en el panel de Ignition para obtener detalles completos.
 
 ### Pools Permitidos
 
@@ -55,7 +55,7 @@ Pools de liquidez de una dApp DEX permitida que incluyen al menos un token permi
 
 ### 1. Leaderboard
 
-Ranks users based on a combination of assets & dApp engagements, transaction count, and transaction volume, rewarding overall contribution to the ecosystem.
+Clasifica a los usuarios basándose en una combinación de activos y participaciones en dApps, cantidad de transacciones y volumen de transacciones, recompensando la contribución general al ecosistema.
 
 <p align="center">
   <img width="900" alt="Screenshot 2025-05-12 at 8 51 44 PM" src="https://github.com/user-attachments/assets/39d78e16-e6a1-4787-b0f3-14d4dfb1f112" />
@@ -73,15 +73,15 @@ Clasifica a los usuarios según la cantidad y el volumen de transacciones, recom
 
 ## Cómo Aumentar Sparks
 
-Sparks are cumulative points reflecting how active users are in the Core ecosystem, updated daily at 00:00 UTC and appear on the Leaderboard. Los usuarios ganan Sparks diariamente mediante:
+Los Sparks son puntos acumulativos que reflejan qué tan activos son los usuarios en el ecosistema Core, se actualizan diariamente a las 00:00 UTC y aparecen en el Leaderboard. Los usuarios ganan Sparks diariamente mediante:
 
-#### 1. Assets in Ignition Wallet Balance
+#### 1. Activos en el saldo de Ignition Wallet
 
-The amount and type of whitelisted assets users bridge to Core will be reflected in the user's Ignition Wallet Balance. Al mantener estos activos en Core, los usuarios ganarán Sparks. Sparks are calculated daily based on the user's wallet balance.
+La cantidad y tipo de activos incluidos en la whitelist que los usuarios transfieren a Core se reflejarán en el saldo de Ignition Wallet del usuario. Al mantener estos activos en Core, los usuarios ganarán Sparks. Los Sparks se calculan diariamente en función del saldo en la wallet del usuario.
 
-#### 2. Activities with Core Ecosystem dApp
+#### 2. Actividades con dApps del ecosistema Core
 
-Users could also earn Sparks by interacting with whitelisted dApps on Core Ignition. Cada actividad en la cadena con estas dApps contribuirá con puntos Spark a la cuenta del usuario. Más detalles se actualizarán pronto.
+Los usuarios también pueden ganar Sparks al interactuar con dApps incluidas en la whitelist en Core Ignition. Cada actividad en la cadena con estas dApps contribuirá con puntos Spark a la cuenta del usuario. Más detalles se actualizarán pronto.
 
 | Tipo de Transacción             | Sparks por Transacción | Máximo de Sparks por Día |
 | ------------------------------- | ---------------------- | ------------------------ |
@@ -93,19 +93,19 @@ Users could also earn Sparks by interacting with whitelisted dApps on Core Ignit
 | Otros                           | 50                     | 2,000                    |
 | Coretoshi NFT, Doopidoo         | 200                    | Ilimitado                |
 
-#### 3. Campaign Joined
+#### 3. Campañas en las que se participa
 
-Core Ignition will feature flash or time-limited campaigns on a rolling basis, offering users special opportunities to supercharge Sparks. Manténgase conectado revisando las secciones de campaña dentro de la aplicación y siguiendo los anuncios oficiales de Core en [X (Twitter)](https://x.com/Coredao_Org) para las últimas actualizaciones.
+Core Ignition contará con campañas flash o de duración limitada de forma continua, ofreciendo a los usuarios oportunidades especiales para aumentar sus Sparks. Manténgase conectado revisando las secciones de campaña dentro de la aplicación y siguiendo los anuncios oficiales de Core en [X (Twitter)](https://x.com/Coredao_Org) para las últimas actualizaciones.
 
-#### 4. Invite New Users to Join Ignition
+#### Invitar a nuevos usuarios a unirse a Ignition
 
-For those new to Core Ignition, bridge $50 USD worth of whitelisted assets to Core to unlock a permanent invite link. Para los usuarios que se registraron en la Temporada 2, el código de invitación se desbloquea automáticamente. Al invitar nuevos usuarios a Core Ignition, los usuarios recibirán el 10% de los Sparks diarios obtenidos por los invitados de primer grado y el 2% de los invitados de segundo grado. Tenga en cuenta que puede aplicarse un límite a los Sparks máximos que cada usuario puede ganar mediante referidos.
+Para quienes son nuevos en Core Ignition, al hacer bridge de activos de la whitelist equivalentes a $50 USD a Core, se desbloquea un enlace de invitación permanente. Para los usuarios que se registraron en la Temporada 2, el código de invitación se desbloquea automáticamente. Al invitar nuevos usuarios a Core Ignition, los usuarios recibirán el 10% de los Sparks diarios obtenidos por los invitados de primer grado y el 2% de los invitados de segundo grado. Tenga en cuenta que puede aplicarse un límite a los Sparks máximos que cada usuario puede ganar mediante referidos.
 
 ---
 
 ## Cómo Aumentar Multiplicadores
 
-Los multiplicadores son variables dinámicas que multiplican los puntos Spark. The consolidated multiplier displayed on the user's dashboard reflects the total multiplier currently applied to the user's entire asset. Este multiplicador total se calcula promediando los multiplicadores distribuidos entre los distintos activos. Two types of baseline multipliers affect Sparks points through specific activities, independent of any special campaigns:
+Los multiplicadores son variables dinámicas que multiplican los puntos Spark. El multiplicador consolidado que se muestra en el panel del usuario refleja el multiplicador total que se aplica actualmente a todos los activos del usuario. Este multiplicador total se calcula promediando los multiplicadores distribuidos entre los distintos activos. Existen dos tipos de multiplicadores base que afectan los puntos Spark a través de actividades específicas, independientes de cualquier campaña especial:
 
 - **Multiplicadores por Token**: Aumentan los puntos obtenidos con base en actividades relacionadas con los tokens y su tenencia.
 - **Multiplicadores por Volumen**: Amplifican los puntos ganados a través de actividades basadas en el volumen de transacciones.
@@ -127,13 +127,13 @@ Los usuarios pueden beneficiarse de multiplicadores base por token para los acti
 | aBTC, BTCB, nBTC, oBTC, pumpBTC, rBTC, suBTC, uBTC, wBTC                    | n/a                  | 1.2x | 1.4x | 1.6x  |
 | BTC.B, SolvBTC.b, SolvBTC.m | n/a                  | 1x                   | 1.2x | 1.6x  |
 
-> _**Example 1:**_
-> If the user holds 10 stCORE in the Ignition wallet balance, the user gets:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 10 stCORE \* $1.5 (assumed) \* 1 = 15
+> _**Ejemplo 1:**_
+> Si el usuario tiene 10 stCORE en el saldo de la wallet de Ignition, el usuario obtiene:
+> Sparks diarios por activo = cantidad de stCORE \* precio de stCORE \* Multiplicador = 10 stCORE \* $1.5 (supuesto) \* 1 = 15
 
-> _**Example 2:**_
-> If the user lends 20 stCORE in a Lending Protocol, the user gets:\
-> Daily Asset Sparks = stCORE amount \* stCORE price \* Multiplier = 20 stCORE \* $1.5(assumed) \* 2.5 = 75
+> _**Ejemplo 2:**_
+> Si el usuario presta 20 stCORE en un protocolo de Lending, el usuario obtiene:
+> Sparks diarios por activo = cantidad de stCORE \* precio de stCORE \* multiplicador = 20 stCORE \* $1.5 (supuesto) \* 2.5 = 75
 
 ### 2. Multiplicadores por Volumen
 
@@ -156,7 +156,7 @@ Descubra oportunidades específicas de multiplicadores en la sección Explorar d
   <img width="500" alt="dApp tab" src="https://github.com/user-attachments/assets/a2067f6d-0202-474f-8acb-c9cd2d4007e9"/>
 </p>
 
-Además de mantener tokens estratégicos y desplegar activos en varias dApps, los usuarios también pueden ganar multiplicadores adicionales participando en campañas especiales. The multipliers from campaigns can stack on top of the baseline multipliers highlighted above to boost Sparks further. Los multiplicadores base están sujetos a cambios sin previo aviso.
+Además de mantener tokens estratégicos y desplegar activos en varias dApps, los usuarios también pueden ganar multiplicadores adicionales participando en campañas especiales. Los multiplicadores de las campañas pueden acumularse sobre los multiplicadores base mencionados anteriormente para aumentar aún más los Sparks. Los multiplicadores base están sujetos a cambios sin previo aviso.
 
 ---
 
@@ -164,7 +164,7 @@ Además de mantener tokens estratégicos y desplegar activos en varias dApps, lo
 
 Con la nueva Coretoshi Attribution layer, los poseedores de NFTs Coretoshi ahora disfrutan de beneficios adicionales:
 
-1. 200 additional Sparks per transaction with [no limit](#2-activities-with-core-ecosystem-dapp);
+1. 200 Sparks adicionales por transacción [sin límite](#2-activities-with-core-ecosystem-dapp);
 2. Multiplicador adicional de 1.5x aplicado automáticamente sobre el multiplicador de Volumen que el usuario ya tenga.
 
 > Ejemplo de Cálculo:
@@ -182,19 +182,19 @@ Visita el [blog](https://coredao.org/explore/blog/coretoshi-nft-sparks-multiplie
 
 El Slashing de Sparks garantiza recompensas justas al disminuir los Sparks de los usuarios que se vuelven inactivos. Se advierte a los usuarios si su actividad cae significativamente, y los Sparks solo se reducen tras infracciones repetidas. Sin embargo, cualquier nueva actividad detiene la reducción de inmediato.
 
-### 1. Mecanismo de Slashing:
+### Mecanismo de Slashing:
 
 - Usuarios inactivos pierden Sparks: si un usuario gana un 90 % menos Sparks que su promedio semanal, la reducción se aplica a partir de la segunda infracción.
 - La reducción aumenta con el tiempo.
 - Los usuarios reciben advertencias antes de que se aplique la reducción.
-- Slashing Mechanism kicks in 1 month after sign-up.
+- El mecanismo de slashing se activa 1 mes después del registro.
 - El cálculo de la reducción se realiza cada domingo.
 
-### 2. Criterio de Infracción:
+### Criterio de Infracción:
 
 Si el promedio diario de Sparks de la semana < Promedio diario de Sparks de la temporada \* 10%.
 
-### 3. Criterio de Slashing:
+### Criterio de Slashing:
 
 - Sparks acumulados totales × (0.9^# de infracción– 1)
 - 1.ª infracción: Sparks totales × 0.9^0 = SIN reducción
