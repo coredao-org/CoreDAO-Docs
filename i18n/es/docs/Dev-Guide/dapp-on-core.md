@@ -67,25 +67,6 @@ Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No**
 4. Una vez que se inicializa este proyecto, encontrará la siguiente estructura de proyecto:
 
 ```bash
-dapp-tutorial.
-|   .gitignore
-|   hardhat-config.js   (Hardhat configuration file.)
-|   package-lock.json
-|   package.json
-|   README.md
-|
-+---contracts (For Solidity Smart Contracts)
-|       Lock.sol
-|
-+---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
-|   \---modules
-|           Lock.js
-|
-+---node_modules
-|
-+---test (For writing and Running Tests)
-|       Lock.js
-|
 ```
 
 5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-wallet-config.md) para obtener una guía detallada.
@@ -255,7 +236,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE2 test tokens for the Core Testnets. Refer [here](./core-wallet-config.md) for details on how to get tCORE2 tokens from Core Faucet.
+3. Asegúrate de que tu wallet MetaMask tenga tokens de prueba tCORE2 para los Core Testnets. Consulta [aquí](./core-wallet-config.md) para más detalles sobre cómo obtener tokens tCORE2 desde el Core Faucet.
 
 4. Ejecute el siguiente comando desde el directorio raíz de su proyecto para implementar su contrato inteligente en la cadena de bloques Core.
 
