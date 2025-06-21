@@ -97,7 +97,7 @@ Si vous utilisez le plugin « Solidity compiler » de Remix, il récupérera a
 ![Remix-ERC-721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
 </p>
 
-- Make sure your MetaMask is connected to a Core Testnet2.
+- Assurez-vous que votre métamask est connecté à Core testnet2.
 
 ### **Déployez votre contrat** :
 
@@ -117,7 +117,7 @@ Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
 Maintenant que votre contrat est déployé, vous pouvez interagir avec lui directement depuis Remix.
 
-**Mint a New NFT:**
+**Créez un nouveau NFT :**
 
 - Sous **Deployed Contracts**, vous verrez votre contrat déployé.
 - Développez l’interface du contrat pour interagir avec des fonctions telles que safeMint.
@@ -136,10 +136,10 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 
 Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
-**Burning Tokens**: A function to burn (destroy) NFTs.
+**Burning Tokens** : Une fonction pour brûler (détruire) des NFTs.
 Pour une personnalisation supplémentaire, vous pouvez vous référer à la documentation ERC-721 d'OpenZeppelin et ajouter de nouvelles fonctionnalités à votre contrat.
 
-For more information on OpenZeppelin ERC-721 implementation, please read[ ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
+Pour plus d'informations sur l'implémentation ERC-721 d'OpenZeppelin, veuillez consulter [ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
 #### Références
 
