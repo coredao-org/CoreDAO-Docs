@@ -9,11 +9,11 @@ description: Déployer des contrats sur Core en utilisant Foundry
 
 ---
 
-Foundry is a fast, efficient, and extensible toolkit for EVM development written in Rust. This guide will walk you through the process of installing Foundry, setting up your project, writing and testing Solidity code, and deploying and verifying your contracts on Core blockchain.
+Foundry est un outil de développement rapide, efficace et extensible pour les blockchains compatibles EVM (Ethereum Virtual Machine), écrit en Rust. Ce guide vous guidera à travers le processus d'installation de Foundry, de configuration de votre projet, d'écriture et de test de code Solidity, ainsi que de déploiement et de vérification de vos contrats sur la blockchain Core.
 
 ## 1. Installation de Foundry
 
-Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. The process is relatively straightforward and can be completed in a few simple steps. Foundry uses `forge` as its primary tool for interacting with Solidity contracts.
+Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. Le processus est relativement simple et peut être réalisé en quelques étapes faciles. Foundry utilise `forge` comme outil principal pour interagir avec les contrats Solidity.
 
 ### Étape 1 : Installer Foundry
 
@@ -39,7 +39,7 @@ Vous devriez voir la version de Foundry qui a été installée.
 
 ### Étape 2 : Mettre à jour Foundry
 
-Foundry is actively developed, so it's essential to keep your installation up to date. Vous pouvez mettre à jour Foundry avec la commande suivante :
+Foundry est en développement actif, il est donc important de maintenir votre installation à jour. Vous pouvez mettre à jour Foundry avec la commande suivante :
 
 ```bash
 foundryup
@@ -57,7 +57,7 @@ Pour créer un nouveau projet avec Foundry, vous pouvez utiliser la commande `fo
 forge init my-blockchain-project
 ```
 
-This will generate a new directory structure with all the necessary files to start writing Solidity contracts and tests.
+Cela générera une nouvelle structure de répertoire avec tous les fichiers de base dont vous avez besoin pour commencer à écrire des contrats et des tests Solidity.
 
 Voici à quoi ressemblera la structure de dossiers générée :
 
@@ -91,7 +91,7 @@ my-blockchain-project/
 
 Mettez à jour le fichier « foundry.toml » avec les versions Solidity et EVM appropriées.
 
-Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». If you're using an **older testnet**, set the **EVM version to Paris**, note that Core Testnet (1115) is now deprecated and no longer maintained.
+Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». Si vous utilisez **un ancien testnet**, **définissez la version EVM sur Paris**. Notez également que le Core Testnet (1115) est désormais obsolète et n'est plus maintenu.
 
 ```bash
 [profile.default]
@@ -233,7 +233,7 @@ Une fois que vous avez écrit et testé votre contrat Solidity, vous pouvez le d
 
 ### Étape 1 : Configuration du déploiement
 
-Pour déployer votre contrat, vous devrez configurer un script de déploiement. Create a file `Counter.s.sol` under the script folder and paste the following code.
+Pour déployer votre contrat, vous devrez configurer un script de déploiement. Créez un fichier `Counter.s.sol` sous le dossier script et collez le code suivant.
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
