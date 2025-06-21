@@ -284,15 +284,15 @@ https://layerzeroscan.com/tx/TX_HASH
 
 - **Approvisionnement en jetons**: Ajoutez une logique de frappe à la fonction constructeur pour un approvisionnement personnalisé.
 - **Frais de transfert** : Ajustez les paramètres de `quoteSend` pour la gestion des frais.
-- **Security**: Modify DVN thresholds and trusted remote settings in config.
-- **Multi-Chain Support**: Add new network entries in your Hardhat and LayerZero configs.
+- **Sécurité** : Modifiez les seuils DVN et les paramètres de confiance à distance dans la configuration.
+- **Support multi-chaîne** : Ajoutez de nouvelles entrées de réseau dans vos configurations Hardhat et LayerZero.
 
-For further customization and advanced configuration, refer to [LayerZero’s official documentation](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+Pour une personnalisation et une configuration avancées supplémentaires, reportez-vous à [LayerZero’s official documentation](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
 
-## Resources
+## Ressources
 
 - [CoreDAO-LayerZero GitHub Guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide)
 - [LayerZero OFT Quickstart](https://docs.layerzero.network/v2/developers/evm/oft/quickstart)
 - [LayerZero Scan Explorer](https://layerzeroscan.com)
 
-By following this guide, you’ll be able to set up seamless cross-chain token transfers between Core and other EVM networks. For more in-depth examples and support, visit the [official GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) and LayerZero documentation.
+En suivant ce guide, vous pourrez configurer des transferts de jetons inter-chaînes fluides entre Core et d'autres réseaux EVM. Pour des exemples plus détaillés et un support supplémentaire, visitez le [référentiel GitHub officiel](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) et la documentation de LayerZero.
