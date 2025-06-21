@@ -144,9 +144,9 @@ mkdir tasks
 sendOFT.ts
 ```
 
-3. **Add the Task Code**
+3. **Ajoutez le code de la tâche**
 
-Copy and paste the following Hardhat task into `sendOFT.ts`:
+Collez la tâche Hardhat suivante dans le fichier `sendOFT.ts`:
 
 ```javascript
 import { ethers } from "ethers";
@@ -262,11 +262,11 @@ task("lz:oft:send", "Send tokens cross-chain using LayerZero technology")
   });
 ```
 
-4. **Execute Cross chain Transfer**
+4. **Exécutez le transfert inter-chaînes**
 
-  Go back to your `hardhat.config.ts` file, and uncomment: import './tasks/sendOFT
+  Retournez à votre fichier `hardhat.config.ts` et décommentez : import './tasks/sendOFT
 
-  Open your terminal in the root of your working directory, and run the following command:
+  Ouvrez votre terminal dans la racine de votre répertoire de travail et exécutez la commande suivante :
 
 ```shell
 npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a coredao-mainnet --network-b desired-network --amount 100 --private-key <PRIVATE_KEY>
