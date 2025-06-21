@@ -264,7 +264,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE2 test tokens for the Core Testnets. Refer [here](./core-wallet-config.md) for details on how to get tCORE2 tokens from Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE2 pour le Core Testnet. Référez-vous [ici](./core-wallet-config.md) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
 
 4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 
