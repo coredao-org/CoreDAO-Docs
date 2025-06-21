@@ -17,12 +17,12 @@ Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines
 
 ## Vérification Web via Core Scan
 
-Web verification is the most commonly used method for smart contract verification. After deploying your smart contract onto the Core blockchain, you can use its source code to verify it on the Core Scan.
+La vérification Web est la stratégie de vérification de contrat intelligent la plus utilisée. Après avoir déployé votre contrat intelligent sur Core, vous pouvez utiliser son code source pour le vérifier sur Core Scan.
 
-1. Navigate to the Core Scan website.
+1. Accédez au site web de Core Scan.
 
-- [For Core mainnet](https://scan.coredao.org/)
-- [For Core Testnet2](https://scan.test.btcs.network)
+- [Pour le Core Mainnet](https://scan.coredao.org/)
+- [Pour le Core Testnet2](https://scan.test.btcs.network)
 
 2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
 3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**_._
@@ -32,13 +32,13 @@ Web verification is the most commonly used method for smart contract verificatio
 4. Remplissez les informations de vérification requises, notamment :
 
 - L'adresse du contrat;
-- Compiler type: For simple contracts, select the `Single File` compiler type. For more complex contracts, such as contracts with external imports, choose the `Standard Json` compiler type.
+- Le type de compilateur : pour les contrats simples, sélectionnez `Single File`. Pour les contrats plus complexes avec des imports externes, sélectionnez `Standard Json`.
 - La version du compilateur;
 - Le type de licence open-source;
 
 <p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)</p>
 
-5. On the next page, please fill in the Solidity source code for the contract.
+5. Sur la page suivante, veuillez remplir le code source Solidity pour le contrat.
 
 Si votre contrat a des paramètres de constructeur, il est recommandé de les ajouter dans le champ `Constructor Arguments`, bien que cela ne soit pas obligatoire. Ces paramètres doivent être formatés en bytes encodés en ABI. Remix et d'autres outils peuvent générer ces paramètres pour vous.
 
@@ -56,7 +56,7 @@ Votre contrat vérifié sur Core Scan devrait maintenant être publié et access
 
 ## Vérification via API
 
-Vous pouvez trouver un guide pour utiliser l'API de Core afin de vérifier des contrats [ici](https://docs.coredao.org/docs/api/api-documents/contracts). Please note that to make API calls, you must register on Core Scan and generate an API key.
+Vous pouvez trouver un guide pour utiliser l'API de Core afin de vérifier des contrats [ici](https://docs.coredao.org/docs/api/api-documents/contracts). Il est important de noter que pour effectuer des appels API, vous devez vous inscrire sur Core Scan et générer une clé API.
 
 Si vous êtes déjà familier avec l'API d'Etherscan, cela devrait être simple ! Les appels API sur Core sont 100 % compatibles avec l'API d'Etherscan. You just need to replace the API key and endpoint URL, and everything should work correctly.
 
