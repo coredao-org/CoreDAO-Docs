@@ -5,7 +5,7 @@ sidebar_position: 2
 description: ERC-721 sur Core
 ---
 
-# ERC-721 Tokens
+# Jetons ERC-721
 
 ---
 
@@ -31,7 +31,7 @@ Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifi
 
 2. **Sélectionnez ERC-721** :
 
-- From the different contract templates listed, select **ERC-721**.
+- Sélectionnez le modèle de contrat **ERC-721** parmi les différents modèles de contrats proposés.
 
 3. **Personnalisez votre contrat** :
 
@@ -41,7 +41,7 @@ Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifi
 - **Metadata URI** : vous pouvez définir des métadonnées à l'aide d'un URI, qui pointera vers les informations sur vos NFT (par exemple, IPFS ou un serveur centralisé).
 
 <p align="center">
-![OpenZeppelin_Wizard-ERC-721](../../static/img/dev_tutorials/ERC721_Wizard.png)
+![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC721_Wizard.png)
 </p>
 
 4. **Copiez le code**
@@ -60,7 +60,7 @@ Remix est un IDE en ligne pour le développement Solidity qui vous permet d'écr
 - Collez le code contractuel ERC-721 que vous avez copié à partir de l'assistant OpenZeppelin’s Wizard dans le fichier nouvellement créé.
 
 <p align="center">
-![Remix-ERC-721](../../static/img/dev_tutorials/ERC721_Contract.png)
+![Remix-ERC721](../../static/img/dev_tutorials/ERC721_Contract.png)
 </p>
 3. **Installer les contrats OpenZeppelin** :
 
