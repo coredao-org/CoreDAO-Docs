@@ -82,6 +82,6 @@ Félicitations, votre sous-graphe est déployé ! Vous pouvez maintenant intégr
 
 Pour empêcher que votre sous-graphe soit écrasé par d'autres, veuillez nous contacter sur [Discord](https://discord.com/invite/coredaoofficial) pour obtenir une clé d'autorisation.
 
-If you are testing against the Core Testnet2 Graph, here are the access tokens for general testing purpose:
+Si vous testez le Core TestNet2 Graph, voici les jetons d'accès à usage général :
 
 - **Clé générale pour Core Testnet2:** b020b95e511443699e72a10c697f84c0
