@@ -15,17 +15,17 @@ importer TabItem depuis « @theme/TabItem » ;
 Ceci est un guide détaillé pour se connecter au Core Testnet/Mainnet  en utilisant le portefeuille MetaMask.
 :::
 
-### Software Prerequisites
+### Prérequis Logiciels
 
 1. [Extension de Navigateur MetaMask](https://metamask.io/)
 
 ### Configuration de MetaMask
 
-We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Testnet2. Vous devrez installer MetaMask et configurer votre compte avant de l'utiliser pour vous connecter au Core Testnet/Mainnet Vous pouvez trouver les instructions pour la configuration de MetaMask ici.
+Nous recommandons l'utilisation du [portefeuille web MetaMask](https://metamask.io/) pour se connecter au Core Testnet2. Vous devrez installer MetaMask et configurer votre compte avant de l'utiliser pour vous connecter au Core Testnet/Mainnet Vous pouvez trouver les instructions pour la configuration de MetaMask ici.
 
 ### Ajout du réseau Core à MetaMask
 
-There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testeed ways below.
+Il existe plusieurs façons d'ajouter les configurations du Core Testnet/Mainnet à votre portefeuille MetaMask, nous avons listé les méthodes les plus fiables et testées ci-dessous.
 
 #### Ajouter le réseau manuellement
 
