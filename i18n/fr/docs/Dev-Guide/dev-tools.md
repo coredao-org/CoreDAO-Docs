@@ -49,7 +49,7 @@ _Note: Ceci est le dernier testnet mis à jour pour la blockchain Core et son ut
 
 - **[Gnosis Safe](https://safe.coredao.org/welcome):** La gestion sécurisée multi-signatures des actifs numériques.
 
-- **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** official wrapped CORE token smart contract.
+- **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** Contrat intelligent officiel pour le jetons wrapped CORE.
     </TabItem>
 
 </Tabs>
