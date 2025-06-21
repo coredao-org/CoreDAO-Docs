@@ -137,8 +137,8 @@ Pour envoyer des jetons inter-chaînes entre vos contrats en utilisant la techno
 mkdir tasks
 ```
 
-2. **Create the Task File**
-  Inside the tasks directory, create a file named:
+2. **Créez le fichier de tâche**
+  Dans le répertoire des tâches, créez un fichier nommé:
 
 ```bash
 sendOFT.ts
