@@ -8,14 +8,14 @@ sidebar_position: 2
 
 ---
 
-To help users get started and enable developers to quickly prototype their dApps, Core has released the public Core Testnet Faucet to distribute Core Testnet tokens, **tCORE2**.
+Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapidement mettre en place leurs dApps, Core a mis en place le [Faucet public Core Testnet] pour distribuer des jetons Core testnet, **tCORE2**.
 
-## Steps to Obtain tCORE2 from Core Testnet Faucet
+## Étapes pour obtenir des tCORE2 depuis le Core Testnet Faucet
 
-1. Navigate to the faucet website for [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
-2. Paste your wallet address in the given input field. Ensure you provide the Core Testnet2 address of the wallet you want to fund with tCORE2.
-3. Complete the CAPTCHA verification.
-4. Click on the `Get tCORE2` button. After the sucessful requesting of tCORE2 from the faucet, your wallet balance will increase.
+1. Naviguez vers le site Web pour [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
+2. Collez votre adresse de portefeuille dans le champ de saisie donné. Assurez-vous de fournir l'adresse Core Testnet2 du portefeuille que vous souhaitez financer avec des tCORE2.
+3. Effectuez la vérification CAPTCHA.
+4. Cliquez sur le bouton `Get tCORE2`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
 <p align="center">![using-faucet-test2](../../static/img/faucet/faucet-test2.png)</p>
 
