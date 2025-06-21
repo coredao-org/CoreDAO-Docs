@@ -272,18 +272,18 @@ task("lz:oft:send", "Send tokens cross-chain using LayerZero technology")
 npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a coredao-mainnet --network-b desired-network --amount 100 --private-key <PRIVATE_KEY>
 ```
 
-5. **Track Transfers**
+5. **Suivez les transferts**
 
-  Use [LayerZero Scan Explorer](https://layerzeroscan.com) to monitor cross-chain transactions:
+  Utilisez [LayerZero Scan Explorer] (https://layerzeroscan.com) pour surveiller les transactions inter-chaînes :
 
 ```
 https://layerzeroscan.com/tx/TX_HASH
 ```
 
-## Customization & Advanced Configuration
+## Personnalisation et configuration avancée
 
-- **Token Supply**: Add minting logic to the constructor for custom supply.
-- **Transfer Fees**: Adjust `quoteSend` parameters for fee management.
+- **Approvisionnement en jetons**: Ajoutez une logique de frappe à la fonction constructeur pour un approvisionnement personnalisé.
+- **Frais de transfert** : Ajustez les paramètres de `quoteSend` pour la gestion des frais.
 - **Security**: Modify DVN thresholds and trusted remote settings in config.
 - **Multi-Chain Support**: Add new network entries in your Hardhat and LayerZero configs.
 
