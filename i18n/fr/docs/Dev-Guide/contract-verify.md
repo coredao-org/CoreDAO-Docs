@@ -58,13 +58,13 @@ Votre contrat vérifié sur Core Scan devrait maintenant être publié et access
 
 Vous pouvez trouver un guide pour utiliser l'API de Core afin de vérifier des contrats [ici](https://docs.coredao.org/docs/api/api-documents/contracts). Il est important de noter que pour effectuer des appels API, vous devez vous inscrire sur Core Scan et générer une clé API.
 
-Si vous êtes déjà familier avec l'API d'Etherscan, cela devrait être simple ! Les appels API sur Core sont 100 % compatibles avec l'API d'Etherscan. You just need to replace the API key and endpoint URL, and everything should work correctly.
+Si vous êtes déjà familier avec l'API d'Etherscan, cela devrait être simple ! Les appels API sur Core sont 100 % compatibles avec l'API d'Etherscan. Il vous suffit de remplacer la clé API et l'URL de l'endpoint et tout devrait fonctionner normalement.
 
-## Hardhat Verification
+## Vérification avec HardHat
 
-Hardhat verification is the most convenient way for developers to verify smart contracts. Pour plus d'informations, vous pouvez consulter le guide officiel de vérification de Hardhat [ici](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
+La vérification via HardHat est le moyen le plus pratique pour les développeurs de vérifier des contrats intelligents. Pour plus d'informations, vous pouvez consulter le guide officiel de vérification de Hardhat [ici](https://hardhat.org/hardhat-runner/plugins/nomicfoundation-hardhat-verify).
 
-Please note that you’ll need to add Core networks as custom chains, as seen below in a sample Hardhat config:
+Veuillez noter qu'il est nécessaire d'ajouter les réseaux Core en tant que chaînes personnalisées dans le fichier de configuration de HardHat :
 
 ```javascript
 /**
@@ -148,15 +148,15 @@ module.exports = {
 
 ## Vérification de Contrats
 
-Update the `foundry.toml` file to specify the Solidity version and EVM version for your project.
+Mettez à jour le fichier `foundry.toml` pour spécifier la version Solidity et la version EVM pour votre projet.
 
 ```bash
 [profile.default]
-solidity_version = "0.8.24"  # Specify the Solidity version
+solidity_version = "0.8.0"  # Specify the Solidity version
 evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
 ```
 
-Create an `.env` file to store sensitive information such as your private key, RPC URL, and API keys. This helps keep your credentials secure and allows you to reference them in your code easily.
+Créez un fichier `.env` pour stocker des informations sensibles telles que votre clé privée, votre URL RPC et vos clés API. Cela permet de sécuriser vos informations d’identification et de les référencer facilement dans votre code.
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -181,10 +181,10 @@ forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  
 
 Replace `0xContract_Address` and `ContractName` with your actual contract address and the contract Name.
 
-Foundry will handle the verification process; you can use [Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gérera le processus de vérification, vous pouvez utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
 
 ## Limitations Connues
 
-- Currently, Core only supports solidity compiler versions up to 0.8.24.
+- Actuellement, Core ne prend en charge que les versions du compilateur Solidity jusqu'à 0.8.24.
 - Les bibliothèques ne sont pas prises en charge avec la vérification via l'API.
-- If you run into issues verifying very large (1000+ lines) single-file contracts, we recommend switching to `Standard JSON` format for verification.
+- Si vous avez des soucis à vérifier des contrats très volumineux (1000+ lignes) en un seul fichier, il est recommandé d'utiliser le format `Standard JSON` pour la vérification.
