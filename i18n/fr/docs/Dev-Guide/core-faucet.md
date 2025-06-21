@@ -20,9 +20,9 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 <p align="center">![using-faucet-test2](../../static/img/faucet/faucet-test2.png)</p>
 
 :::caution
-Each address can request tCORE2 **only once per day** from the faucet within a 24-hour period. If you've run out of tCORE2 and the faucet won't send you more because of the daily limit of one tCORE2, come back after 24 hours and try again. Alternatively, you can request it in Core's [Discord Server](https://discord.com/invite/coredaoofficial).
+Chaque adresse ne peut demander des tCORE2 qu'une seule **fois par jour** à partir du robinet(faucet) dans une période de 24 heures. Si vous n’avez plus de tCORE2 et que le faucet ne vous en envoie pas davantage à cause de la limite journalière (tCORE2 par jour), revenez après 24 heures et réessayez. Vous pouvez également le demander dans le [Discord Server](https://discord.com/invite/coredaoofficial).
 :::
 
 :::note
-tCORE2 are only test tokens and is only used for testing and do not have any value. Ne l'utilisez pas pour des transactions financières réelles.
+tCORE2 sont uniquement utilisés pour les tests et n’ont aucune valeur réelle. Ne l'utilisez pas pour des transactions financières réelles.
 :::
