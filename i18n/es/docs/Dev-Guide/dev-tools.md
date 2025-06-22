@@ -19,7 +19,7 @@ values={[
 {label: 'Testnet2', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-_Note: This is the latest and updated testnet for Core blockchain and is strongly recommended for use. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
+_Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
 
 - **[Block Explorer](https://scan.test2.btcs.network/):** search and review transactions, accounts, blocks, and more.
 
