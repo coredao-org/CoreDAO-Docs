@@ -15,21 +15,21 @@ import TabItem from '@theme/TabItem';
 Esta es una guía detallada para conectarse a Core (Testnet y Mainnet) utilizando la billetera MetaMask.
 :::
 
-### Software Prerequisites
+### Requisitos de software
 
 1. [Extensión del navegador MetaMask Wallet](https://metamask.io/)
 
 ### Configuración de la billetera MetaMask
 
-We recommend using the [MetaMask web wallet](https://metamask.io/) to connect to Core Testnet2. Debes tener instalada MetaMask y configurar una cuenta antes de que puedas conectarte a Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
+Recomendamos usar la [billetera web MetaMask](https://metamask.io/) para conectarse a Core Testnet2. Debes tener instalada MetaMask y configurar una cuenta antes de que puedas conectarte a Core Testnet/Mainnet. Puede encontrar las instrucciones de configuración de MetaMask aquí.
 
 ### Agregando Core a MetaMask
 
-There are multiple ways to add Core Testnet/Mainnet configurations to your MetaMask Wallet, we have listed the most trusted and testeed ways below.
+Hay múltiples formas de agregar las configuraciones de Core Testnet/Mainnet a tu wallet MetaMask. A continuación, enumeramos las formas más confiables y probadas.
 
 #### Agregar red manualmente
 
-Once you've set up your MetaMask wallet, you can use it to connect to Core blockchain by adding Core network details in MetaMask's network settings. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
+Una vez que hayas configurado tu wallet MetaMask, puedes usarla para conectarte a la blockchain de Core agregando los detalles de red de Core en la configuración de redes de MetaMask. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
 
 
 
@@ -51,7 +51,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core block
 
 <TabItem value="mainnet">
 
-- **Network Name:** Core Blockchain Mainnet
+-
 - **Nueva URL RPC:** https://rpc.ankr.com/core
 - **ID de cadena:** 1116
 - **Símbolo de Moneda:** CORE
@@ -67,7 +67,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core block
 
 
 <TabItem value="testnet2">
-1. Go to chainlist.org and search for _Core Blockchain_, make sure to check the _Include Testnets_ option.
+1. Ve a chainlist.org y busca _Core Blockchain_, asegúrate de marcar la opción _Include Testnets_.
 
 2. Verifique dos veces para asegurarse de elegir la red correcta. Por favor, confirme los siguientes detalles en las capturas de pantalla adjuntas: ID de cadena, moneda, etc. Para garantizar la configuración correcta.
 
@@ -81,7 +81,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core block
 ![chainlist-testnet-connect-metmask](../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Add Core Testnet2 by clicking the `Approve` button.
+4. Agrega Core Testnet2 haciendo clic en el botón `Approve`.
 
 El Core Testnet ahora está agregado a su MetaMask.
 
@@ -89,7 +89,7 @@ El Core Testnet ahora está agregado a su MetaMask.
 
 <TabItem value="mainnet">
 
-1. Go to chainlist.org and search for ‘_Core Blockchain_’.
+1. Ve a chainlist.org y busca ‘_Core Blockchain_’.
 
 2. Verifique dos veces para asegurarse de elegir la red correcta. Verifique los detalles en las siguientes instantáneas: ID de cadena, moneda, etc. para asegurarse de agregar la correcta.
 
@@ -124,7 +124,7 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 2. Haga clic en el botón ‘_Add Core Network_’
 
-3. Approve the transaction in your MetaMask.
+3. Aprueba la transacción en tu MetaMask.
 
 4. Después de realizar los pasos anteriores, podrás ver la red Core la próxima vez que accedas al selector de redes.
 
@@ -152,5 +152,5 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 #### Última Testnet de Core (1114)
 
-Core's latest testnet, Core Testnet2 with `chainID 1114`, is now live and the recommended testing environment for Core blockchain. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. The old testnet, Core Testnet, is not deprecated and will no longer be maintained.
+La testnet más reciente de Core, Core Testnet2 con `chainID 1114`, ya está en funcionamiento y es el entorno de pruebas recomendado para la blockchain de Core. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. El testnet anterior, Core Testnet, ya no está en uso y no recibirá más mantenimiento.
 :::
