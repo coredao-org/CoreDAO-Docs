@@ -159,7 +159,7 @@ actualiza el archivo `foundry.toml` para especificar la versión de Solidity y l
 ```bash
 [profile.default]
 solidity_version = "0.8.0"  # Especifica la versión de Solidity
-evm_version = "shanghai" # Especifica la version de la EVM (Para testnets antiguas, usar Paris como versión de la EVM)
+evm_version = "shanghai" # Especifica la version de la EVM (Para testnet antiguas, usar Paris como versión de la EVM)
 ```
 
 cree un archivo .env para almacenar información sensible como su clave privada, URL RPC y claves de API. Esto ayuda a mantener tus credenciales seguras y permite referenciarlas fácilmente en tu código.
