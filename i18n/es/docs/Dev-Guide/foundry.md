@@ -167,9 +167,9 @@ Para desplegar tu contrato, necesitarás configurar un script de despliegue. Cre
 
 ```
 
-#### Creating and Loading Environment Variables
+#### Creación y Carga de Variables de Entorno
 
-Create an `.env file` and add the following details
+Crea un `archivo .env` y añade los siguientes detalles
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -188,19 +188,19 @@ source .env
 
 ### Paso 2. Despliega el contrato
 
-To deploy the contract to the Core Testnet, use the `forge create`
+Para desplegar el contrato en Core Testnet, usa el comando `forge create`
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
-Or use the `forge script` command
+O usa el comando `forge script`
 
 ```bash
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
 ```
 
-Después de ejecutar el comando, Foundry compilará y desplegará tu contrato en la red especificada. It will return the address of the deployed contract.
+Después de ejecutar el comando, Foundry compilará y desplegará tu contrato en la red especificada. Devolverá la dirección del contrato desplegado.
 
 ```bash
 [⠊] Compiling...
@@ -212,13 +212,13 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Verificando el Contrato
 
-Foundry has a built-in feature to verify contracts on Core automatically. Puedes verificar tu contrato utilizando el comando `forge verify-contract`:
+Foundry tiene una función integrada para verificar contratos automáticamente en Core. Puedes verificar tu contrato utilizando el comando `forge verify-contract`:
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Foundry will handle the verification process. You can use [Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry se encargará del proceso de verificación. Puedes usar [Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y verificar que se haya desplegado y verificado correctamente.
 
 ## Lectura adicional
 
