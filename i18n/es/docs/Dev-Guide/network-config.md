@@ -12,11 +12,11 @@ import TabItem from '@theme/TabItem';
 ---
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 :::info
-Esta es la testnet más reciente y se recomienda encarecidamente su uso como el entorno oficial de pruebas para la blockchain Core. La versión anterior de la testnet, con chainID 1115, está obsoleta y ya no se mantiene. La transición a Core Testnet2 asegura soporte continuo y acceso a las últimas funcionalidades.
+Note: This is the latest and officially supported testnet for the Core blockchain. The previous testnet (chain ID 1115) is now deprecated and no longer maintained. Developers are strongly encouraged to transition to the new testnet (chain ID 1114) to ensure continued support and access to the latest features.
 :::
 
 | **Parámetro**                     | **Valor**                                                                                              |
