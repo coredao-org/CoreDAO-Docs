@@ -40,7 +40,7 @@ solidity: {
     },
 ```
 
-- It is strongly advised to not use Core Testnet1 (chainID: 1115) since it is now deprecated and not maintained.
+- Il est fortement conseillé de ne pas utiliser Core Testnet1 (Id de chaîne : 1115) car il est désormais obsolète et n'est plus maintenu.
 
 #### Déploiement à l'aide de Remix IDE
 
