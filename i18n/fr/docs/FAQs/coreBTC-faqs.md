@@ -22,7 +22,7 @@ Contrairement aux tokens wrapped centralisés comme WBTC qui reposent sur un dé
 
 ### 4. Comment puis-je être sûr que mon BTC est en sécurité ?
 
-The security of your BTC in the coreBTC system is ensured by the overcollateralization required from Lockers and continuous monitoring by Guardians and Liquidators. Cette structure garantit que le BTC verrouillé est toujours soutenu par une garantie suffisante sur Core, protégeant contre la mauvaise gestion ou la dépréciation de valeur. La nature décentralisée de cet écosystème contribue également à sa fiabilité et à sa sécurité.
+La sécurité de votre BTC dans le système coreBTC est assurée par une surcollatéralisation requise des Lockers et une surveillance continue par les Guardians et les Liquidators. Cette structure garantit que le BTC verrouillé est toujours soutenu par une garantie suffisante sur Core, protégeant contre la mauvaise gestion ou la dépréciation de valeur. La nature décentralisée de cet écosystème contribue également à sa fiabilité et à sa sécurité.
 
 ### 5. Qui sont les principaux participants sans permission ? Quels sont leurs rôles ?
 
@@ -39,4 +39,4 @@ Notre protocole et la sécurité de coreBTC ont été audités en profondeur par
 
 ### 7. Où puis-je en savoir plus sur coreBTC et d'autres projets Core ?
 
-Visit https://unlockingbitcoindefi.com to find out more about coreBTC and our other innovative BTCfi projects.
+Visitez https://unlockingbitcoindefi.com pour en savoir plus sur coreBTC et nos autres projets innovants BTCfi.
