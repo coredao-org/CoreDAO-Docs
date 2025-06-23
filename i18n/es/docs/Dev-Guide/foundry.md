@@ -9,11 +9,11 @@ description: Despliega contratos en Core usando Foundry
 
 ---
 
-Foundry is a fast, efficient, and extensible toolkit for EVM development written in Rust. This guide will walk you through the process of installing Foundry, setting up your project, writing and testing Solidity code, and deploying and verifying your contracts on Core blockchain.
+Foundry es un conjunto de herramientas rápido, eficiente y extensible para el desarrollo en EVM, escrito en Rust. Esta guía te llevará paso a paso por el proceso de instalación de Foundry, configuración de tu proyecto, escritura y pruebas de código Solidity, y despliegue y verificación de tus contratos en la blockchain de Core.
 
 ## 1. Instalación de Foundry
 
-Antes de comenzar a usar Foundry, necesitas instalarlo en tu sistema. The process is relatively straightforward and can be completed in a few simple steps. Foundry uses `forge` as its primary tool for interacting with Solidity contracts.
+Antes de comenzar a usar Foundry, necesitas instalarlo en tu sistema. El proceso es relativamente sencillo y puede completarse en unos pocos pasos. Foundry utiliza `forge` como su herramienta principal para interactuar con contratos en Solidity.
 
 ### Paso 1: Instala Foundry
 
@@ -39,7 +39,7 @@ Deberías ver la versión de Foundry que se instaló.
 
 ### Paso 2: Actualiza Foundry
 
-Foundry is actively developed, so it's essential to keep your installation up to date. Puedes actualizar Foundry con el siguiente comando:
+Foundry está en desarrollo activo, por lo que es esencial mantener tu instalación actualizada. Puedes actualizar Foundry con el siguiente comando:
 
 ```bash
 foundryup
@@ -57,7 +57,7 @@ Para crear un nuevo proyecto con Foundry, puedes usar el comando `forge init`:
 forge init my-blockchain-project
 ```
 
-This will generate a new directory structure with all the necessary files to start writing Solidity contracts and tests.
+Esto generará una nueva estructura de directorios con todos los archivos necesarios para comenzar a escribir contratos y pruebas en Solidity.
 
 Aquí está cómo se verá la estructura de carpetas generada:
 
@@ -91,7 +91,7 @@ my-blockchain-project/
 
 Actualiza el archivo `foundry.toml` con las versiones adecuadas de Solidity y EVM.
 
-Asegúrate de estar utilizando la versión de Solidity `0.8.24` y establece la versión de EVM a `Shanghai`. If you're using an **older testnet**, set the **EVM version to Paris**, note that Core Testnet (1115) is now deprecated and no longer maintained.
+Asegúrate de estar utilizando la versión de Solidity `0.8.24` y establece la versión de EVM a `Shanghai`. Si estás utilizando una **testnet antigua**, establece la **versión de EVM a Paris**. Ten en cuenta que Core Testnet (1115) está ahora obsoleta y ya no se mantiene.
 
 ```bash
 [profile.default]
@@ -113,33 +113,7 @@ Navega al directorio `src` y crea un nuevo contrato en Solidity. Comencemos con 
 Crea un archivo llamado `Counter.sol` dentro de la carpeta `src`:
 
 ```javascript
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.24;
 
-
-contract Counter {
-    uint256 public count;
-
-
-    constructor() {
-        count = 0;
-    }
-
-
-    function increment() public {
-        count += 1;
-    }
-
-
-    function decrement() public {
-        count -= 1;
-    }
-
-
-    function getCount() public view returns (uint256) {
-        return count;
-    }
-}
 ```
 
 En este contrato:
@@ -157,40 +131,7 @@ Foundry facilita la escritura de pruebas para tus contratos. El framework de pru
 Navega al directorio `test` y crea un archivo de prueba llamado `Counter.t.sol`:
 
 ```javascript
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.24;
 
-
-import "forge-std/Test.sol";
-import "../src/Counter.sol";
-
-
-contract CounterTest is Test {
-    Counter counter;
-
-
-    function setUp() public {
-        counter = new Counter();
-    }
-
-
-    function testInitialCount() public {
-        assertEq(counter.getCount(), 0);
-    }
-
-
-    function testIncrement() public {
-        counter.increment();
-        assertEq(counter.getCount(), 1);
-    }
-
-
-    function testDecrement() public {
-        counter.increment();
-        counter.decrement();
-        assertEq(counter.getCount(), 0);
-    }
-}
 ```
 
 ### Explicación:
@@ -211,20 +152,7 @@ Foundry compilará el contrato, ejecutará las pruebas y te proporcionará un re
 Deberías ver una salida similar a la siguiente:
 
 ```bash
-[⠊] Compiling...
-[⠔] Compiling 1 files with Solc 0.8.28
-[⠒] Solc 0.8.28 finished in 491.38ms
-Compiler run successful!
 
-
-Ran 3 tests for test/Counter.t.sol:CounterTest
-[PASS] testDecrement() (gas: 22192)
-[PASS] testIncrement() (gas: 32003)
-[PASS] testInitialCount() (gas: 10943)
-Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 5.38ms (3.86ms CPU time)
-
-
-Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
 
 ## 5. Desplegando el Contrato
@@ -233,34 +161,10 @@ Una vez que hayas escrito y probado tu contrato en Solidity, puedes desplegarlo 
 
 ### Paso 1: Configurando el despliegue
 
-Para desplegar tu contrato, necesitarás configurar un script de despliegue. Create a file `Counter.s.sol` under the script folder and paste the following code.
+Para desplegar tu contrato, necesitarás configurar un script de despliegue. Crea un archivo llamado `Counter.s.sol` dentro de la carpeta script y pega el siguiente código.
 
 ```javascript
-// SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.24;
 
-
-import {Script, console} from "forge-std/Script.sol";
-import {Counter} from "../src/Counter.sol";
-
-
-contract CounterScript is Script {
-    Counter public counter;
-
-
-    function setUp() public {}
-
-
-    function run() public {
-        vm.startBroadcast();
-
-
-        counter = new Counter();
-
-
-        vm.stopBroadcast();
-    }
-}
 ```
 
 #### Creating and Loading Environment Variables
