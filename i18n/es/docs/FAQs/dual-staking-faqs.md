@@ -51,21 +51,21 @@ El acto de que los delegadores reajusten sus delegaciones para maximizar recompe
 
 ### 7\. ¿Existe algún riesgo de perder sus activos de Bitcoin durante la doble apuesta?
 
-Dual Staking is a [self-custodial process](../stake-and-delegate/btc-staking/overview.md), allowing users to maintain complete control over their assets. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
+El Dual Staking es un [proceso de autocustodia](../stake-and-delegate/btc-staking/overview.md), lo que permite a los usuarios mantener el control total sobre sus activos. Durante todo el proceso de apuesta, Bitcoin permanece seguro en la billetera del usuario.  Los participantes no enfrentan ningún riesgo de recorte, riesgo de contrato inteligente externo o riesgo de contraparte. Los supuestos de confianza para apostar Bitcoin son los mismos supuestos de confianza que subyacen a la tenencia de Bitcoin.
 
-### 8\. While Bitcoin is time-locked, can users unstake CORE that’s dual staked with Bitcoin? If so, do they lose any rewards earned before unstaking CORE?
+### 8\. Mientras el Bitcoin está bloqueado por tiempo, ¿pueden los usuarios hacer unstake de CORE que esté en dual staking con Bitcoin? Si es así, ¿pierden las recompensas obtenidas antes de hacer unstake del CORE?
 
-Users can unstake CORE at any time, just as they can when staking CORE independently. La única diferencia es que cuando se calcula la recompensa de la apuesta de Bitcoin, el porcentaje de recompensa disminuirá debido a la disminución del CORE apostado. Tenga en cuenta que esta reducción solo se aplica a recompensas futuras y no se aplica a recompensas ya obtenidas por el usuario.
+Los usuarios pueden hacer unstake de CORE en cualquier momento, al igual que cuando hacen staking de CORE de forma independiente. La única diferencia es que cuando se calcula la recompensa de la apuesta de Bitcoin, el porcentaje de recompensa disminuirá debido a la disminución del CORE apostado. Tenga en cuenta que esta reducción solo se aplica a recompensas futuras y no se aplica a recompensas ya obtenidas por el usuario.
 
 ### 9\. ¿Cómo se aseguran los usuarios de que la dirección de recompensa CORE para la apuesta de Bitcoin sea la misma que la dirección de apuesta CORE cuando apuestan a través del [sitio web de apuesta de Core](https://stake.coredao.org/)?
 
 En **stake.coredao.org**, para garantizar que la dirección de recompensa CORE para apostar Bitcoin sea la misma que la dirección de apuesta CORE, asegúrese de seguir los siguientes pasos:
 
-1. To stake CORE, connect your Core wallet, which will then be used for signing the CORE staking transaction.
+1. Para hacer staking de CORE, conecta tu wallet de Core, la cual se utilizará para firmar la transacción de staking de CORE.
 2. Para apostar Bitcoin, primero conecte **la misma billetera Core** y luego conecte su billetera Bitcoin. Cuando la transacción de participación de Bitcoin se construye a través del sitio web de participación, utiliza la dirección de la billetera Core conectada como dirección de recompensa principal para la participación de Bitcoin.
 
-Siempre que el usuario utilice siempre la misma dirección de billetera Core para apostar tanto en CORE como en Bitcoin, será la misma dirección. Las transacciones de apuesta tanto para Bitcoin como para CORE también son rastreadas por la dirección Core. Once the Core wallet is connected, users can go to the "[My Staking](https://stake.coredao.org/mystaking)" section on the [staking website](https://stake.coredao.org/) to see all the CORE and Bitcoin staking transactions, all the accrued rewards in CORE for both Bitcoin staking and CORE staking.
+Siempre que el usuario utilice siempre la misma dirección de billetera Core para apostar tanto en CORE como en Bitcoin, será la misma dirección. Las transacciones de apuesta tanto para Bitcoin como para CORE también son rastreadas por la dirección Core. Una vez que la wallet de Core está conectada, los usuarios pueden ir a la sección "[My Staking](https://stake.coredao.org/mystaking)" en el [sitio web de staking](https://stake.coredao.org/) para ver todas las transacciones de staking de CORE y Bitcoin, así como todas las recompensas acumuladas en CORE tanto por el staking de Bitcoin como por el staking de CORE.
 
-### 10\. What happens to the delegators' reward if the validator to whom they delegated their assets gets slashed?
+### 10\. ¿Qué sucede con las recompensas de los delegadores si el validador al que delegaron sus activos es slashed?
 
 Si se elimina un validador, los participantes que delegaron su CORE o Bitcoin **no** serán eliminados. Sin embargo, dado que el validador no recibirá la recompensa de apuesta, los delegados también perderán las recompensas de apuesta de esa ronda.
