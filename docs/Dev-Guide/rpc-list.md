@@ -25,7 +25,7 @@ Remote Procedure Call (RPC) endpoints are vital for developers to connect direct
 
 ### Core Testnet2 (1114 (0x45a))
 :::info
-This is the latest testnet and is strongly recommended for use. The previous testnet version will be deprecated and eventually retired, so transitioning to this new testnet ensures continued support and access to the latest features.
+Note: This is the latest and officially supported testnet for the Core blockchain. The previous testnet (chain ID 1115) is now deprecated and no longer maintained. Developers are strongly encouraged to transition to the new testnet (chain ID 1114) to ensure continued support and access to the latest features.
 :::
 
 - https://rpc.test2.btcs.network 

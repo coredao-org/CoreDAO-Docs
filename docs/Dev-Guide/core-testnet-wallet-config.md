@@ -60,7 +60,7 @@ If you using the Chrome MetaMask extension, you can use a quick shortcut to add 
 :::info 
 
 #### New Testnet
-Core's latest testnet Core Testnet2 with `chainID 1114` is now live and the recommended testing environment for Core blockchain. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). The old testnet, Core Testnet, is not deprecated and will no longer be maintained. 
+Core's latest testnet Core Testnet2 with `chainID 1114` is now live and the recommended testing environment for Core blockchain. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). The old testnet, Core Testnet, is now deprecated and no longer maintained. 
 
 #### Rebrand Updates
 `Satoshi Chain/BTCs` have been rebranded to `Core/CORE`, respectively. If you added the Testnet before the rebranding, you'll need to update Network Name and Currency Symbol in the MetaMask settings manually; otherwise, you won't be able to use the current version of Core Testnet. Go to `Settings->Network`, and select `Core Testnet` to open up the network settings. Update Network Name and Currency Symbol to the values stated in the [above section](#adding-network-manually) and click the Save button. You're good to go!
