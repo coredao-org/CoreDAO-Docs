@@ -5,13 +5,13 @@ sidebar_position: 2
 description: ERC-20 en Core
 ---
 
-# ERC-20 Tokens
+# Tokens ERC-20
 
 ---
 
 ## ¿Qué es ERC-20?
 
-ERC-20: es un estándar para tokens fungibles en la blockchain de Ethereum. Unlike ERC-721 tokens, which are non-fungible and unique, ERC-20 tokens are fungible and interchangeable, allowing them to be traded or exchanged in equal quantities. Son el tipo de token más común para proyectos que involucran criptomonedas, activos digitales y aplicaciones descentralizadas (dApps).
+ERC-20: es un estándar para tokens fungibles en la blockchain de Ethereum. A diferencia de los tokens ERC-721, que son no fungibles y únicos, los tokens ERC-20 son fungibles e intercambiables, lo que permite que se comercialicen o intercambien en cantidades iguales. Son el tipo de token más común para proyectos que involucran criptomonedas, activos digitales y aplicaciones descentralizadas (dApps).
 
 ## Prerrequisitos
 
@@ -25,7 +25,7 @@ Antes de empezar, necesitarás:
 
 ### ¿Por qué usar el asistente de OpenZeppelin?
 
-OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditadas. The OpenZeppelin Wizard is an excellent tool that streamlines the process of creating ERC-20 tokens, ensuring your contract adheres to best practices.
+OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditadas. El OpenZeppelin Wizard es una herramienta excelente que simplifica el proceso de creación de tokens ERC-20, asegurando que tu contrato cumpla con las mejores prácticas.
 
 1. **Ve al asistente de OpenZeppelin**: Abre él [asistente de OpenZeppelin](https://wizard.openzeppelin.com/) en tu buscador.
 2. **Selecciona ERC-20**: En la lista de modelos de contrato disponibles, seleccione **ERC-20**.
@@ -35,11 +35,9 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
    - **Token Symbol**: Ingresa el símbolo de tu token (ej: `MTK`).
    - **Initial Supply**: Fija una oferta inicial para tu token (ej: `1000000` tokens). Este es el número de tokens que se crearán tras el despliegue.
 
-<p align="center">
-![Openzepplin_Wizard-ERC720](../../static/img/dev_tutorials/ERC20_Wizard.png)
-</p>
+<p align="center"></p>
 
-Optionally, you can include additional features, such as **minting** and **pausing**, if needed for your use case.
+Opcionalmente, puedes incluir funciones adicionales, como **minting** y **pausing**, si son necesarias para tu caso de uso.
 
 4. **Copia el código**: Una vez configurado el contrato, haga clic en el botón **Copy** para obtener el código de Solidity. Puedes copiarlo en el portapapeles o abrirlo directamente en Remix IDE.
 
@@ -84,7 +82,7 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 ![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
 </p>
 
-Ensure that your MetaMask is connected to the **Core Testnet2**.
+Asegúrate de que tu MetaMask esté conectado a **Core Testnet2**.
 
 2. **Despliega tu Contrato**:
    - En la sección de **Deploy**, selecciona el **contrato ERC-20** (ej: `MyToken`).
@@ -128,7 +126,7 @@ Puedes añadir funciones adicionales a tu contrato, como:
 
 - **Roles**: Los roles permiten asignar diferentes permisos a ciertas direcciones, como acuñar o quemar tokens, garantizando acciones seguras y controladas dentro del contrato.
 
-- **Upgradability**: Enables you to upgrade the contract logic after deployment without losing data, ensuring flexibility for future improvements
+- **Upgradability**: Permite actualizar la lógica del contrato después del despliegue sin perder datos, lo que garantiza flexibilidad para mejoras futuras
 
 Puede encontrar más información sobre la implementación de OpenZeppelin ERC-20 [aquí](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
