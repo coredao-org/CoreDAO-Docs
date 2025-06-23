@@ -263,9 +263,9 @@ contract CounterScript is Script {
 }
 ```
 
-#### Creating and Loading Environment Variables
+#### Création et chargement de variables d'environnement
 
-Create an `.env file` and add the following details
+Créez un fichier `env file` et ajoutez les détails suivants
 
 ```text
 RPC_URL = " https://rpc.test2.btcs.network"
@@ -284,13 +284,13 @@ source .env
 
 ### Étape 2 : Déployer le contrat
 
-To deploy the contract to the Core Testnet, use the `forge create`
+Pour déployer le contrat sur le réseau de Core testnet, utilisez `forge create`
 
 ```bash
 forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
-Or use the `forge script` command
+Ou utilisez la commande `forge script`
 
 ```bash
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
