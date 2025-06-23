@@ -25,7 +25,7 @@ Core is designed to cater to builders, offering a robust platform where various 
 
 ### 4. How to connect MetaMask to the Core Network?
 
-Follow our detailed guide on how to connect your MetaMask wallet to the Core [Testnets](../Dev-Guide/core-wallet-config.md) and [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
+Follow our detailed guide on how to connect your MetaMask wallet to the Core [Testnet](../Dev-Guide/core-wallet-config.md) and [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
 
 ### 5. What role does the CORE token play in securing the Core network?
 
@@ -69,12 +69,12 @@ You can contribute to the Core Community in several different ways:
 
 - **Contribute to Our Official Documentation:** Send a pull request with your changes to the GitHub repository of our official documentation, and our team will review them accordingly. If deemed correct, we will merge them into our official documentation.
 - **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. The Core Foundation has outlined a list of project categories that builders can contribute to, fostering the growth of the Core ecosystem.
-- **Builder Incentive Programs:** Core also offers several grants and builder programs for encouraging development on the Core blockchain. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), ou le [programme d'incitation pour les créateurs Core Ignition](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core Chain.
+- **Builder Incentive Programs:** Core also offers builder support and incentive programs for encouraging development on the Core blockchain. Whether through [Core Starter Program](https://coredaofoundation.org/fund-your-project) or [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), you can jumpstart your building journey on the Web3 on Core.
 - **Core Commit Program:** The Core Foundation offers a 3-month accelerator program designed to scale up early-stage projects. The [Core Commit Program](https://coredao.org/initiatives/commit-program) not only provides builders with resources and access to one-on-one mentorship from some of the biggest minds in the Web3 industry, but it also offers them the opportunity for monthly performance-based rewards and funding from Core Ventures and its network of over 100 VCs.
 
-### 13. Core propose-t-elle des subventions ou des programmes pour les créateurs ?
+### 13. Does Core offer any builder support and incentive programs?
 
-Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Whether through [Core Foundation Grants](https://coredaofoundation.org/fund-your-project), [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), or the [Core Commit Program](https://coredao.org/initiatives/commit-program), you'll receive technical guidance, mentorship, and exposure to a vibrant community dedicated to innovating in the DeFi landscape.
+Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Whether through [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), [Core Starter Program](https://coredaofoundation.org/fund-your-project), and the [Core Commit Program](https://coredao.org/initiatives/commit-program), you'll receive technical guidance, mentorship, and exposure to a vibrant community dedicated to innovating in the DeFi landscape.
 
 ### 14. How can I report a scam or rug pull?
 
