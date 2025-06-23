@@ -21,7 +21,7 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-### Core Testnet2 (1114 (0x45a))
+### Testnet2 de la Core Blockchain (1114 (0x45a))
 
 :::info
 Remarque : Il s’agit du testnet le plus récent et son utilisation est fortement recommandée. La version précédente sera progressivement dépréciée puis retirée, il est donc essentiel de migrer vers ce nouveau testnet pour continuer à bénéficier d’un support actif et accéder aux dernières fonctionnalités.
@@ -44,7 +44,7 @@ Remarque : Il s’agit du testnet le plus récent et son utilisation est forteme
 </TabItem>
 </Tabs>
 
-### Third Party RPC Endpoints for Core Mainnet
+### Points de terminaison RPC tiers pour le Mainnet de la blockchain Core
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
