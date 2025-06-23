@@ -67,15 +67,15 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de proto
 
 Vous pouvez contribuer à la communauté Core de plusieurs manières :
 
-- **Contribute to Our Official Documentation:** Send a pull request with your changes to the GitHub repository of our official documentation, and our team will review them accordingly. If deemed correct, we will merge them into our official documentation.
-- **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. The Core Foundation has outlined a list of project categories that builders can contribute to, fostering the growth of the Core ecosystem.
-- **Builder Incentive Programs:** Core also offers builder support and incentive programs for encouraging development on the Core blockchain. Whether through [Core Starter Program](https://coredaofoundation.org/fund-your-project) or [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), you can jumpstart your building journey on the Web3 on Core.
-- **Core Commit Program:** The Core Foundation offers a 3-month accelerator program designed to scale up early-stage projects. The [Core Commit Program](https://coredao.org/initiatives/commit-program) not only provides builders with resources and access to one-on-one mentorship from some of the biggest minds in the Web3 industry, but it also offers them the opportunity for monthly performance-based rewards and funding from Core Ventures and its network of over 100 VCs.
+- **Contribuer à notre documentation officielle :** Envoyez une demande de tirage (pull request) avec vos modifications au référentiel GitHub de notre documentation officielle, et notre équipe les examinera en conséquence. Si jugées correctes, nous les fusionnerons dans notre documentation officielle.
+- **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. La Core Foundation a dressé une liste de catégories de projets que les créateurs peuvent développer pour contribuer à la croissance de l'écosystème Core.
+- **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la blockchain Core. Que ce soit via les [subventions de la Core Foundation](https://coredaofoundation.org/fund-your-project), ou le [programme d'incitation pour les créateurs Core Ignition](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core Chain.
+- **Programme d’engagement de Core :** La Core Foundation offre un programme d’accélération de 3 mois pour les projets en phase initiale. Le [Programme d'egagement de Core](https://coredao.org/initiatives/commit-program) fournit non seulement des ressources et un mentorat personnalisé 1:1 avec les plus grands experts du Web3, mais il offre aussi la possibilité de bénéficier de récompenses mensuelles basées sur les performances et d’un financement de la part de Core Ventures et de son réseau de plus de 100 VCs.
 
-### 13. Does Core offer any builder support and incentive programs?
+### 13. Est-ce que Core propose des programmes de soutien et d'incitation pour les développeurs ?
 
-Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Whether through [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), [Core Starter Program](https://coredaofoundation.org/fund-your-project), and the [Core Commit Program](https://coredao.org/initiatives/commit-program), you'll receive technical guidance, mentorship, and exposure to a vibrant community dedicated to innovating in the DeFi landscape.
+Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Que ce soit à travers [le programme d'incitation pour les développeurs Core Ignition](https://coredao.org/initiatives/incentiveprogram), [le Programme d'Incitation pour les Créateurs Core Ignition](https://coredaofoundation.org/fund-your-project), ou le [Programme d’Engagement de Core](https://coredao.org/initiatives/commit-program), vous recevrez une orientation technique, un mentorat et serez exposé à une communauté dynamique dédiée à l'innovation dans l'écosystème DeFi.
 
-### 14. How can I report a scam or rug pull?
+### 14. Comment puis-je signaler une arnaque ou un rug pull ?
 
-To report a scam/rug pull, you can provide a detailed report on our [Discord channel](https://discord.com/invite/coredaoofficial).
+Pour signaler une arnaque ou un rug pull, vous pouvez fournir un rapport détaillé sur notre [canal Discord](https://discord.com/invite/coredaoofficial).
