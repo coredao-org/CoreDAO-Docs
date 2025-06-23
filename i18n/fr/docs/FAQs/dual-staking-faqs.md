@@ -10,14 +10,14 @@ sidebar_position: 2
 
 ### 1\. Y a-t-il des requis pour le Dual Staking ?
 
-To enable higher yields for Bitcoin staking through Dual Staking, users must meet the following requirements:
+Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
 
 1. Staker à la fois CORE et Bitcoin simultanément, en s'assurant que le montant de CORE staké dépasse le seuil minimum de dual staking **ET**
-2. The CORE staking wallet address _**must**_ match the designated CORE rewards address for Bitcoin staking to which the yield is paid.
+2. L'adresse du portefeuille de staking de CORE **doit** correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est payé.
 
 ### 2\. Avec le Dual Staking, les stakers gagnent-ils des récompenses de staking sur le CORE et le Bitcoin stakés ?
 
-Le Dual Staking est spécifiquement conçu pour augmenter les rendements du staking de Bitcoin et n'affecte pas le rendement obtenu du staking de CORE. Comme pour le staking indépendant de Bitcoin et de CORE, les utilisateurs recevront des récompenses séparées pour chaque actif. Cependant, si le montant de CORE staké dépasse un certain seuil, le rendement du staking de Bitcoin recevra un boost supplémentaire. Note that the additional yield percentages apply solely to Bitcoin staking, allowing Bitcoin stakers to maximize returns without altering the reward structure for CORE staking.
+Le Dual Staking est spécifiquement conçu pour augmenter les rendements du staking de Bitcoin et n'affecte pas le rendement obtenu du staking de CORE. Comme pour le staking indépendant de Bitcoin et de CORE, les utilisateurs recevront des récompenses séparées pour chaque actif. Cependant, si le montant de CORE staké dépasse un certain seuil, le rendement du staking de Bitcoin recevra un boost supplémentaire. Notez que les pourcentages de rendement supplémentaires s'appliquent uniquement au staking de Bitcoin, permettant aux stakers de Bitcoin de maximiser les retours sans modifier la structure de récompense pour le staking de CORE.
 
 ### 3\. Quelles sont les étapes que les clients institutionnels doivent suivre pour participer au Dual Staking ?
 
@@ -26,14 +26,14 @@ De plus, ils doivent s'assurer que l'adresse de récompense CORE pour le staking
 
 ### 4\. Pour les utilisateurs qui stakent déjà du Bitcoin et du CORE, y a-t-il quelque chose qu'ils doivent faire pour profiter du Dual Staking ?
 
-Pour profiter pleinement du Dual Staking, les utilisateurs doivent s'assurer que l'adresse de récompense du staking de Bitcoin désignée correspond à l'adresse utilisée pour le staking de CORE. Users who have staked their Bitcoin and/or CORE across multiple addresses may want to consolidate their staking into a single address to optimize yield, maximize returns, and ensure that the staked CORE is above the required threshold to unlock higher yield percentages for Bitcoin staking.
+Pour profiter pleinement du Dual Staking, les utilisateurs doivent s'assurer que l'adresse de récompense du staking de Bitcoin désignée correspond à l'adresse utilisée pour le staking de CORE. Les utilisateurs qui ont staké leur Bitcoin et/ou CORE sur plusieurs adresses peuvent envisager de consolider leur staking sur une seule adresse pour optimiser le rendement et maximiser les retours, et s'assurer que le CORE staké est au-dessus du seuil requis pour débloquer des pourcentages de rendement plus élevés pour le staking de Bitcoin.
 
 ### 5\. Comment calcules ton le rendement sous le modèle dual staking?
 
-- Global staking yields fluctuate based on changes in the following variables:
+- Les rendements globaux du staking changent en fonction des modifications des variables suivantes :
   - [Montant total de Core jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
-  - [Total amount of Bitcoin staking across all validators](https://stake.coredao.org/validators)
-  - The relative price change between Bitcoin & CORE
+  - [Montant total de Btc jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
+  - Le changement de prix relatif entre BTC et Core
   - [Annual reward adjustment](../Learn/core-token/tokenomics.md)
 - Les rendements du staking est spécifiques au validateur et varient en fonction de ces facteurs supplémentaires :
   - Nombre total de validateurs actifs
