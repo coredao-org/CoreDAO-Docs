@@ -26,7 +26,7 @@ Currently, the supported operating system platforms include **macOS** and **Linu
 <Tabs
 defaultValue="testnet2"
 values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
