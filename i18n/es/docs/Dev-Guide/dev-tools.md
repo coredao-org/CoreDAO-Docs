@@ -16,10 +16,10 @@ import TabItem from '@theme/TabItem';
 <Tabs
 defaultValue="testnet2"
 values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-_Nota: Esta es la testnet más reciente y actualizada para la blockchain de Core y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes._
+_Note: This is the latest and officially supported testnet for the Core blockchain. The previous testnet (chain ID 1115) is now deprecated and no longer maintained. Developers are strongly encouraged to transition to the new testnet (chain ID 1114) to ensure continued support and access to the latest features._
 
 - **[Block Explorer](https://scan.test2.btcs.network/):** busca y revisa transacciones, cuentas, bloques y más.
 
