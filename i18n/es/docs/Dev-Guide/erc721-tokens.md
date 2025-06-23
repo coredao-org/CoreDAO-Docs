@@ -5,7 +5,7 @@ sidebar_position: 2
 description: ERC-721 en Core
 ---
 
-# ERC-721 Tokens
+# Tokens ERC-721
 
 ---
 
@@ -31,7 +31,7 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
 
 2. **Selecciona ERC-721**:
 
-- From the different contract templates listed, select **ERC-721**.
+- De las diferentes plantillas de contrato listadas, selecciona **ERC-721**.
 
 3. **Personaliza tu contrato**:
 
@@ -40,9 +40,7 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
 - **Función de acuñación**: Añade una función para permitir que se creen nuevos tokens.
 - **URI de metadatos**: Puedes configurar los metadatos mediante una URI, que apuntará a la información de tus NFTs (ej: IPFS o un servidor centralizado).
 
-<p align="center">
-![OpenZeppelin_Wizard-ERC-721](../../static/img/dev_tutorials/ERC721_Wizard.png)
-</p>
+<p align="center"></p>
 
 4. **Copia el código**:
 
@@ -59,9 +57,7 @@ Remix es un IDE en línea para desarrollo en Solidity que permite escribir, desp
 - En Remix, crea un nuevo archivo navegando al directorio **contracts** y haciendo clic en el botón **+**.
 - Pega el código del contrato ERC-721 que copiaste del asistente de OpenZeppelin en el archivo recién creado.
 
-<p align="center">
-![Remix-ERC-721](../../static/img/dev_tutorials/ERC721_Contract.png)
-</p>
+<p align="center"></p>
 3. **Instala los contratos de OpenZeppelin**:
 
 - Remix ofrece una forma de importar contratos de OpenZeppelin directamente. Esto se hace agregando la siguiente declaración de importación al inicio de tu contrato:
@@ -82,9 +78,7 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Haz clic en **Compile** para compilar el contrato.
 - Corrige los errores\*\*: Si hay errores en el código, Remix los resaltará. Corrige los errores y recompila.
 
-<p align="center">
-![Remix-ERC-721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)
-</p>
+<p align="center"></p>
 
 ## Paso 4: Despliega el contrato en una red de pruebas
 
@@ -93,11 +87,9 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Ve a la pestaña de Deploy & Run Transactions en Remix.
 - En Environment, selecciona Injected Web3. Esto va a conectar Remix con tu billetera MetaMask.
 
-<p align="center">
-![Remix-ERC-721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
-</p>
+<p align="center"></p>
 
-- Make sure your MetaMask is connected to a Core Testnet2.
+- Asegúrate de que tu MetaMask esté conectado a Core Testnet2.
 
 ### Despliega tu Contrato:
 
@@ -107,9 +99,7 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Pega la dirección del propietario (owner) en la pestaña de despliegue (dado que el contrato es "ownable").
 - Clic en **Deploy**. MetaMask te pedirá que confirmes la transacción.
 
-<p align="center">
-![Remix-ERC-721-Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
-</p>
+<p align="center"></p>
 
 Una vez desplegado, verás la dirección del contrato en Remix.
 
@@ -124,9 +114,7 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 - Llama a la función **safeMint** para acuñar nuevos NFTs. Vas a necesitar proporcionar la `dirección del destinatario` y el `token Id` como argumentos.
 - Confirma la transacción en Metamask.
 
-<p align="center">
-![Remix-ERC-721-Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
-</p>
+<p align="center"></p>
 
 **Ver tu NFT**
 
@@ -136,10 +124,10 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 
 Puedes añadir funciones adicionales a tu contrato, como:
 
-**Burning Tokens**: A function to burn (destroy) NFTs.
+**Burning Tokens**: Una función para quemar (destruir) NFTs.
 Para personalización adicional, consulta la documentación de ERC-721 de OpenZeppelin y añade nuevas características a tu contrato.
 
-For more information on OpenZeppelin ERC-721 implementation, please read[ ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
+Para más información sobre la implementación ERC-721 de OpenZeppelin, por favor lee [ERC-721](https://docs.openzeppelin.com/contracts/4.x/erc721).
 
 #### Referencias
 
