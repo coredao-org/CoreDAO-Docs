@@ -30,7 +30,7 @@ RPC Nodes on Core act as a gateway for applications, developers, and users to in
 <Tabs
 defaultValue="testnet2"
 values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 For RPC Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
