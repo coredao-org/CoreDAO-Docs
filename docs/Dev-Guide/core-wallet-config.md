@@ -32,7 +32,7 @@ There are multiple ways to add Core Testnet/Mainnet configurations to your MetaM
 Once you've set up your MetaMask wallet, you can use it to connect to Core blockchain by adding Core network details in MetaMask's network settings. Navigate to `Settings->Networks` in MetaMask and click the `Add Network` button. Input the following information:
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
@@ -69,7 +69,7 @@ Once you've set up your MetaMask wallet, you can use it to connect to Core block
 ### Adding the Core network via Chainlist.org
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
@@ -122,7 +122,7 @@ The Core Mainnet is now added to your MetaMask.
 ### Adding the Core network via the Core Explorer
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
@@ -164,5 +164,5 @@ The Core Mainnet is now added to your MetaMask.
 
 #### Latest Core Testnet (1114)
 
-Core's latest testnet, Core Testnet2 with `chainID 1114`, is now live and the recommended testing environment for Core blockchain. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). The old testnet, Core Testnet, is not deprecated and will no longer be maintained. 
+Core's latest testnet, Core Testnet2 with `chainID 1114`, is now live and the recommended testing environment for Core blockchain. It supports BTC Testnet4 for staking, unlike the previous version (`chainID 1115`). The old testnet, Core Testnet, is now deprecated and no longer maintained. 
 :::

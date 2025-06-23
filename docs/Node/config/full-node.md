@@ -46,7 +46,7 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">
@@ -55,10 +55,10 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-    | **CPU**            | Minimum 4 CPU cores are recommended.                                                                    |
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms |
+    | **CPU**            | 4 CPU cores                                                                    |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps.                                  |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                  |
 
 
   </TabItem>
@@ -69,7 +69,7 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space                                                                                 |
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms  |
     | **CPU**            | 4 CPU cores                                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                   |
@@ -83,7 +83,7 @@ A full node  on Core performs several resource-intensive tasks, which can includ
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">

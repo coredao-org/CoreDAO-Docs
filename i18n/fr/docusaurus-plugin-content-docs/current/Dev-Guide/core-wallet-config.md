@@ -73,7 +73,7 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 ]}>
 
 <TabItem value="testnet2">
-1. Rendez-vous sur Chainlist.org et recherchez ‘_core blockchain_’. Assurez-vous de cocher l'option _Inclure les Testnets_.
+1. Rendez-vous sur Chainlist.org et recherchez ‘_core blockchain_’. Assurez-vous de cocher l'option _Inclure les Testnet_.
 
 2. Vérifiez bien que vous choisissez le bon réseau. Vérifiez les détails dans les captures d'écran ci-dessous — ID de la chaîne, devise, etc., pour vous assurer que vous ajoutez le bon réseau.
 

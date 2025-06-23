@@ -14,7 +14,7 @@ import TabItem from '@theme/TabItem';
 Core Explorer is a graphic user interface designed to allow users to interact with the CORE blockchain. Through this interface, a user can browse information about blocks that have been added to the blockchain, transactions that have occurred on the blockchain, wallet balances, and information about tCORE2 and CORE tokens. Core Network provides explorers for both its mainnet and testnet.
 
 <Tabs defaultValue="mainnet" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 

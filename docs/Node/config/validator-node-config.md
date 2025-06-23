@@ -39,7 +39,7 @@ A Validator node on Core participates in block production and transaction valida
 <Tabs
   defaultValue="testnet2"
   values={[
-    {label: 'Testnet2', value: 'testnet2'},
+    {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
   <TabItem value="testnet2">

@@ -39,7 +39,7 @@ solidity: {
     },
 ```
 
- * It is strongly advised to not use Core Testnet1 (chainID: 1115) since it is now deprecated and not maintained.
+ * It is strongly advised to not use Core Testnet1 (chainID: 1115) since it is now deprecated and no longer maintained.
 
 #### Deployment Using Remix IDE
 
