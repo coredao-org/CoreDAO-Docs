@@ -16,7 +16,7 @@ import TabItem from '@theme/TabItem';
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 :::info
-This is the latest testnet and is strongly recommended for use as the official testing environment for Core blockchain. The previous testnet version, chainID 1115, is deprecated and is no longer maintained. Transitioning to Core Testnet2 ensures continued support and access to the latest features.
+Esta es la testnet más reciente y se recomienda encarecidamente su uso como el entorno oficial de pruebas para la blockchain Core. La versión anterior de la testnet, con chainID 1115, está obsoleta y ya no se mantiene. La transición a Core Testnet2 asegura soporte continuo y acceso a las últimas funcionalidades.
 :::
 
 | **Parámetro**                     | **Valor**                                                                                              |
