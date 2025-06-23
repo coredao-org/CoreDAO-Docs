@@ -52,4 +52,4 @@ Una llamada API que encuentre un error devolverá **0** como código de estado y
 
 ### 8. ¿Qué debo hacer si encuentro problemas o errores con la API?
 
-Consulta la documentación oficial de la API para [Mensajes Comunes de problemas](https://docs.coredao.org/docs/api/tutorials/common-error-messages). If the problem persists, contact us on our official [Discord](https://discord.com/invite/coredaoofficial) server.
+Consulta la documentación oficial de la API para [Mensajes Comunes de problemas](https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si el problema persiste, contáctanos en nuestro servidor oficial de [Discord](https://discord.com/invite/coredaoofficial).
