@@ -8,79 +8,79 @@ sidebar_position: 2
 
 ---
 
-### 1. ¿Qué es el Staking de Bitcoin con Autocustodia en la red Core?
+### ¿Qué es el Staking de Bitcoin con Autocustodia en la red Core?
 
-Core provides Bitcoin holders with a risk-free and transparent opportunity to lock up or stake their Bitcoin on the Bitcoin Network without relinquishing custody of their Bitcoin assets. In return, they can participate in the Core blockchain’s security through Satoshi Plus and earn CORE rewards.
+Core ofrece a los holders de Bitcoin una oportunidad libre de riesgos y transparente para bloquear o hacer staking con su Bitcoin en la Red de Bitcoin sin perder la custodia de sus activos Bitcoin. A cambio, pueden participar en la seguridad de la blockchain de Core mediante Satoshi Plus y ganar recompensas en CORE.
 
-### 2. ¿Cómo funciona el Staking de Bitcoin con Autocustodia?
+### ¿Cómo funciona el Staking de Bitcoin con Autocustodia?
 
-Con el Staking de Bitcoin con Autocustodia, el protocolo de Core incorpora a los holders de bitcoin en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. For more details on how Self-Custodial Bitcoin Staking works, refer [here](../stake-and-delegate/btc-staking/btc-staking-working.md).
+Con el Staking de Bitcoin con Autocustodia, el protocolo de Core incorpora a los holders de bitcoin en su mecanismo de consenso, Satoshi Plus. La metodología de Core para integrar la participación de Bitcoin se centra en [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), una característica criptográfica nativa de Bitcoin que especifica una condición bajo la cual el resultado de la transacción no se puede gastar hasta que ha pasado un determinado momento en el tiempo. Para más detalles sobre cómo funciona el Self-Custodial Bitcoin Staking, consulte [aquí](../stake-and-delegate/btc-staking/btc-staking-working.md).
 
-### 3. ¿Cuáles son las ventajas del Staking de Bitcoin con Autocustodia?
+### ¿Cuáles son las ventajas del Staking de Bitcoin con Autocustodia?
 
-1. **Tailored for Long-Term Holders and Institutions:** Designed for those who prefer to keep their bitcoins on the secure Bitcoin blockchain, Self-Custodial Bitcoin Staking offers a way to earn rewards during a specified holding period without requiring frequent transactions.
+1. **Diseñado para Holders a Largo Plazo e Instituciones:** Pensado para quienes prefieren mantener sus bitcoins en la segura blockchain de Bitcoin, el Self-Custodial Bitcoin Staking ofrece una forma de ganar recompensas durante un periodo de retención especificado sin necesidad de transacciones frecuentes.
 2. **Sin nuevas suposiciones de confianza:** Los usuarios pueden apostar sus bitcoins directamente en la cadena de bloques de Bitcoin, manteniendo la alta seguridad y confianza inherente a la robusta infraestructura de Bitcoin sin transferir activos fuera de la cadena.
 3. **Oportunidad de ganar recompensas pasivas:** Los apostadores de Bitcoin pueden ganar recompensas en tokens CORE a cambio de contribuir al consenso de la cadena de bloques Core, mejorando la funcionalidad y seguridad de la cadena de bloques.
-4. **Self-Custody and Security:** Bitcoin Staking is 100% secure with self-custody; users execute staking transactions themselves on the Bitcoin network, ensuring their Bitcoin remains on the blockchain.
+4. **Autocustodia y Seguridad:** El Bitcoin Staking es 100% seguro con autocustodia; los usuarios ejecutan las transacciones de staking por sí mismos en la red Bitcoin, asegurando que su bitcoin permanezcan en la blockchain.
 5. **Uso de funciones criptográficas nativas:** La apuesta de Bitcoin en Core utiliza funciones criptográficas probadas en batalla de la red de Bitcoin, lo que la hace más segura que las soluciones no nativas.
 6. **Flexibilidad en la construcción de transacciones:** Los usuarios pueden construir sus transacciones de participación utilizando cualquier herramienta preferida, lo que reduce significativamente el riesgo de ataques en la cadena de suministro provenientes de bibliotecas de terceros.
 
-### 4) ¿Cómo mantiene la seguridad y la confianza el Staking de Bitcoin con Autocustodia?
+### ¿Cómo mantiene la seguridad y la confianza el Staking de Bitcoin con Autocustodia?
 
-Core's Self-Custodial Bitcoin staking eliminates the need to introduce new trust assumptions by enabling users to stake their bitcoins without transferring them off the Bitcoin blockchain. Aprovecha la seguridad y confianza inherentes a la infraestructura establecida de Bitcoin, manteniendo alta seguridad para los activos apostados.
+El Self-Custodial Bitcoin Staking de Core elimina la necesidad de introducir nuevas suposiciones de confianza al permitir que los usuarios hagan staking de sus bitcoins sin transferirlos fuera de la blockchain de Bitcoin. Aprovecha la seguridad y confianza inherentes a la infraestructura establecida de Bitcoin, manteniendo alta seguridad para los activos apostados.
 
-### 5. ¿Cuál es el papel de Core en el proceso de Staking de Bitcoin con Autocustodia?
+### ¿Cuál es el papel de Core en el proceso de Staking de Bitcoin con Autocustodia?
 
-Se destaca que ningún activo se mueve hacia la cadena de bloques de Core ni a ningún tercero confiable o contratos inteligentes. En cambio, los activos de los usuarios permanecen bloqueados en la red de Bitcoin bajo la completa propiedad del usuario. Desde la perspectiva de Core, solo los relés monitorean la red de Bitcoin en busca de transacciones de apuesta de Bitcoin. Upon detection, these are selected, and only the valid ones are passed down to the consensus engine for the accrual of staking rewards. With the Fusion Upgrade, users would have to manually claim their staking rewards in the form of CORE tokens.
+Se destaca que ningún activo se mueve hacia la cadena de bloques de Core ni a ningún tercero confiable o contratos inteligentes. En cambio, los activos de los usuarios permanecen bloqueados en la red de Bitcoin bajo la completa propiedad del usuario. Desde la perspectiva de Core, solo los relés monitorean la red de Bitcoin en busca de transacciones de apuesta de Bitcoin. Al ser detectados, estos son seleccionados, y solo los válidos son enviados al motor de consenso para la acumulación de recompensas de staking. Con la Fusion Upgrade, los usuarios deberán reclamar manualmente sus recompensas de staking en forma de tokens CORE.
 
-### 6. What happens to my asset in the validator I delegated my Bitcoins to, or the Core blockchain goes down?
+### ¿Qué sucede con mi activo en el validador al que delegué mis Bitcoins, o si la blockchain de Core deja de funcionar?
 
-Delegar Bitcoins para obtener recompensas mediante el Staking de Bitcoin con Autocustodia de Core no requiere transferencias de activos ni puentes hacia la blockchain de Core ni hacia los validadores. Even if the validators or the Core blockchain go down, users' assets remain in their complete custody and can be redeemed after the timelock expires on the Bitcoin network.
+Delegar Bitcoins para obtener recompensas mediante el Staking de Bitcoin con Autocustodia de Core no requiere transferencias de activos ni puentes hacia la blockchain de Core ni hacia los validadores. Incluso si los validadores o la blockchain de Core dejan de funcionar, los activos de los usuarios permanecen bajo su custodia completa y pueden ser redimidos una vez que expire el timelock en la red de Bitcoin.
 
-### 7. ¿Cuáles son algunos de los desafíos asociados con los tiempos de bloqueo cortos en Bitcoin?
+### ¿Cuáles son algunos de los desafíos asociados con los tiempos de bloqueo cortos en Bitcoin?
 
-El timelock CLTV es una característica nativa de la red de Bitcoin. A user can lock up any amount of Bitcoin for the desired period through this feature. However, with shorter time lock periods (e.g., 10 minutes) due to network congestion and Bitcoin network block times, these transactions may not be processed quickly enough, leading to delays in redeeming the Bitcoin. Tenga en cuenta que para que una transacción de participación de Bitcoin sea válida, se deben cumplir los requisitos mínimos.
+El timelock CLTV es una característica nativa de la red de Bitcoin. Un usuario puede bloquear cualquier cantidad de Bitcoin por el período deseado a través de esta función. Sin embargo, con períodos de timelock más cortos (por ejemplo, 10 minutos), debido a la congestión de la red y los tiempos de bloque de la red de Bitcoin, estas transacciones pueden no procesarse lo suficientemente rápido, lo que genera demoras en la redención del Bitcoin. Tenga en cuenta que para que una transacción de participación de Bitcoin sea válida, se deben cumplir los requisitos mínimos.
 
-### 8. ¿Hay requisitos específicos para participar en el Staking de Bitcoin con Autocustodia?
+### ¿Hay requisitos específicos para participar en el Staking de Bitcoin con Autocustodia?
 
-Users must meet the following requirements for a Bitcoin staking transaction to be considered valid.
+Los usuarios deben cumplir con los siguientes requisitos para que una transacción de staking de Bitcoin sea considerada válida.
 
 - Los usuarios deben asegurarse de que la transacción se envíe a su dirección.
 
 - Usando la función nativa de timelock de Bitcoin, especifique la cantidad bloqueada que se destinará al validador en la cadena de bloques Core como la salida de la transacción.
 
-- When using the staking script, there is **no** minimum Bitcoin requirement for staking. Sin embargo, si se hace staking a través de la [interfaz web oficial de staking](https://stake.coredao.org/staking), los usuarios deben hacer staking por un mínimo de **0.01 BTC** (excluyendo las tarifas de transacción).
+- Al usar el script de staking, **no** hay un requisito mínimo de Bitcoin para hacer staking. Sin embargo, si se hace staking a través de la [interfaz web oficial de staking](https://stake.coredao.org/staking), los usuarios deben hacer staking por un mínimo de **0.01 BTC** (excluyendo las tarifas de transacción).
 
-- La duración mínima del staking depende del método. The official website UI requires a 5-day minimum, while staking through the script has no lockup requirement.
+- La duración mínima del staking depende del método. La interfaz oficial del sitio web requiere un mínimo de 5 días, mientras que al hacer staking mediante el script no hay un requisito de bloqueo.
 
-- The transaction should also contain an `op_return` output specifying
+- La transacción también debe contener una salida `op_return` que especifique
   - La dirección del validador de Core al que el apostador desea delegar su Bitcoin.
   - La dirección a la que el apostador desea que se envíen sus recompensas en tokens CORE.
 
-### 9. ¿Por qué la dirección de participación proporcionada difiere de tu dirección original de Bitcoin?
+### ¿Por qué la dirección de participación proporcionada difiere de tu dirección original de Bitcoin?
 
-La dirección de participación se deriva de la clave privada maestra de tu billetera, lo que garantiza tu control y seguridad sobre tus activos. Your Bitcoins remain safely stored in your original wallet, unaffected by the staking process. Aunque es posible que los activos apostados no sean visibles en algunas versiones de billetera, aún tienes la propiedad total.
+La dirección de participación se deriva de la clave privada maestra de tu billetera, lo que garantiza tu control y seguridad sobre tus activos. Tus Bitcoins permanecen almacenados de forma segura en tu wallet original, sin verse afectados por el proceso de staking. Aunque es posible que los activos apostados no sean visibles en algunas versiones de billetera, aún tienes la propiedad total.
 
-You can view your staked funds by searching for the staking address on any Bitcoin explorer, such as [Mempool](https://mempool.space/). We're actively working to make staked assets visible in all supported wallets, primarily through command-line versions.
+Puedes ver tus fondos en staking buscando la dirección de staking en cualquier explorador de Bitcoin, como [Mempool](https://mempool.space/). Estamos trabajando activamente para que los activos en staking sean visibles en todas las wallets compatibles, principalmente a través de versiones de línea de comandos.
 
-### 10. ¿Core ofrece soporte para billeteras hardware en el Staking de Bitcoin con Autocustodia?
+### ¿Core ofrece soporte para billeteras hardware en el Staking de Bitcoin con Autocustodia?
 
-Debido a limitaciones técnicas, actualmente el Staking de Bitcoin con Autocustodia no es compatible con billeteras hardware. Nevertheless, we continually explore ways to enhance compatibility with various wallet types, prioritizing both security and convenience for our users.
+Debido a limitaciones técnicas, actualmente el Staking de Bitcoin con Autocustodia no es compatible con billeteras hardware. No obstante, exploramos continuamente formas de mejorar la compatibilidad con diversos tipos de wallets, priorizando tanto la seguridad como la comodidad para nuestros usuarios.
 
-### 11. ¿Cuáles son las consideraciones importantes para los períodos de bloqueo antes de apostar tus activos?
+### ¿Cuáles son las consideraciones importantes para los períodos de bloqueo antes de apostar tus activos?
 
 - **Expiración del tiempo de bloqueo:** Cuando bloqueas tu Bitcoin para la apuesta, este no es accesible hasta que concluya el período de apuesta.
-- **Choosing wisely:** Select your locking period thoughtfully, considering your investment objectives and risk tolerance. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte con duraciones más largas.
-- **Staked Amount Verification:** Due to technical complexities, it is possible that your staked asset may not be visible in your wallet when checked through the CLI. Sin embargo, puedes verificar fácilmente que tienes la propiedad total de tus activos apostados en el [Sitio Web Oficial de Apuestas de Core](https://stake.coredao.org/). Additionally, delays due to block time, the number of block confirmation requirements, and network congestion on the Bitcoin network may lead to delays in transaction confirmation, making your assets not visible in your wallets.
+- **Elegir sabiamente:** Selecciona tu periodo de bloqueo con cuidado, considerando tus objetivos de inversión y tolerancia al riesgo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte con duraciones más largas.
+- **Verificación del monto en Staking** debido a complejidades técnicas, es posible que tu activo en staking no sea visible en tu wallet cuando lo consultes mediante la CLI. Sin embargo, puedes verificar fácilmente que tienes la propiedad total de tus activos apostados en el [Sitio Web Oficial de Apuestas de Core](https://stake.coredao.org/). Además, los retrasos causados por el tiempo de bloque, la cantidad de confirmaciones requeridas y la congestión en la red Bitcoin pueden ocasionar demoras en la confirmación de transacciones, haciendo que tus activos no sean visibles en tus wallets.
 
-### 12. ¿Por qué mi activo apostado no es visible en mi billetera?
+### ¿Por qué mi activo apostado no es visible en mi billetera?
 
-Due to technical complexities, it is possible that your staked asset is not visible in your wallet when checked through the CLI. Sin embargo, puedes verificar fácilmente que tienes la propiedad total de tus activos apostados desde el [Sitio web oficial de apuestas de Core](https://stake.coredao.org/). Additionally, delays due to block time, the number of block confirmation requirements, and network congestion on the Bitcoin network may lead to delays in transaction confirmation, making your assets not visible in your wallets.
+Debido a complejidades técnicas, es posible que tu activo apostado no sea visible en tu wallet cuando lo consultes mediante la CLI. Sin embargo, puedes verificar fácilmente que tienes la propiedad total de tus activos apostados desde el [Sitio web oficial de apuestas de Core](https://stake.coredao.org/). Además, los retrasos ocasionados por el tiempo de bloque, la cantidad de confirmaciones necesarias y la congestión en la red Bitcoin pueden provocar demoras en la confirmación de transacciones, haciendo que tus activos no se muestren en tus wallets.
 
-### 13. ¿Cómo se garantiza la seguridad del Staking de Bitcoin con Autocustodia?
+### ¿Cómo se garantiza la seguridad del Staking de Bitcoin con Autocustodia?
 
 [Halborn](https://www.halborn.com/), una firma que cumple con la norma SOC2 Tipo 1, reconocida por su experiencia en seguridad de contratos inteligentes y [en la que confían plataformas líderes de blockchain](https://www.halborn.com/about/who-trusts-us) como Ava Labs, Solana y Polygon, así como para proyectos DeFi como Sushiswap, ha auditado exhaustivamente el protocolo de Core y la seguridad del Staking de Bitcoin con Autocustodia. Puedes consultar los informes de auditoría sobre el protocolo de Core y el Staking de Bitcoin con Autocustodia realizados por firmas líderes [aquí](https://docs.coredao.org/docs/Learn/audit).
 
-### 14. ¿Qué hacer si el botón _`Canjear BTC`_ no funciona en el sitio web de apuestas?
+### ¿Qué hacer si el botón _`Canjear BTC`_ no funciona en el sitio web de apuestas?
 
-You can Redeem your Bitcoin by clicking the `Redeem` button on Core's official [Staking Website](https://stake.coredao.org/). Si el botón no funciona, intenta borrar la caché de tu navegador y vuelve a intentarlo. If you encounter further issues, please reach out at [Core Dev Forum](https://forum.coredao.org/).
+Puedes redimir tu Bitcoin haciendo clic en el botón `Redeem` en el [Sitio Oficial de Staking](https://stake.coredao.org/) de Core. Si el botón no funciona, intenta borrar la caché de tu navegador y vuelve a intentarlo. Si sigues teniendo problemas, por favor contacta en el [Core Dev Forum](https://forum.coredao.org/).
