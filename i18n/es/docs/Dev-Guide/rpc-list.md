@@ -16,12 +16,15 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 
 ## Endpoints RPC para la red de Core
 
-
+<Tabs defaultValue="testnet2" values={[
+{label: 'Testnet', value: 'testnet2'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnet2">
 
 ###
 
 :::info
-Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
+Note: This is the latest and officially supported testnet for the Core blockchain. The previous testnet (chain ID 1115) is now deprecated and no longer maintained. Developers are strongly encouraged to transition to the new testnet (chain ID 1114) to ensure continued support and access to the latest features.
 :::
 
 - https://rpc.test2.btcs.network
