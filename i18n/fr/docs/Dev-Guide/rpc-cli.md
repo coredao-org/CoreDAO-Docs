@@ -9,7 +9,7 @@ description: "Apprenez à vous connecter à Core RPC à l'aide de la CLI"
 
 ---
 
-Blockchains generate massive amounts of data, including transaction volumes and asset ownership, which are valuable for decentralized applications (dApps) across the ecosystem. Cependant, l’accès à ces données et leur utilisation nécessitent souvent une expertise technique importante.
+Les blockchains génèrent des quantités massives de données, telles que les volumes de transactions et la propriété des actifs, qui sont précieuses pour les dApps dans l'ensemble de l'écosystème. Cependant, l’accès à ces données et leur utilisation nécessitent souvent une expertise technique importante.
 
 ## Qu'est-ce qu'un appel de procédure à distance (RPC) ?
 
@@ -19,7 +19,7 @@ Considérez un RPC comme l’inverse d’un oracle. Alors qu'un oracle apporte d
 
 ## Fournisseurs RPC pour la connexion Core Network Mainnet
 
-The Core supports different [RPC providers](https://chainlist.org/chain/1116), both native Core RPC and third-party RPC providers. Refer to the complete list of RPC endpoints [here](./rpc-list.md) for connecting to the Core mainnet or testnet.
+Core prend en charge différents [fournisseurs de RPC](https://chainlist.org/chain/1116) — à la fois le RPC natif de Core et des fournisseurs de RPC tiers. Consultez la liste complète des points de terminaison RPC [ici](./rpc-list.md) pour vous connecter au mainnet ou au testnet de Core.
 
 ## Utilisation des RPCs via la ligne de commande
 
@@ -40,7 +40,7 @@ curl -H "Content-Type: application/json" \
      --url 'https://rpc.ankr.com/core'
 ```
 
-In the above statement, the following are the components of the curl statement:
+Dans cette commande, les composants du relevé de `curl` sont les suivants :
 
 - **curl** : La commande pour exécuter la requête.
 - **-H** : spécifie l'en-tête, dans ce cas, en définissant le type de contenu sur JSON.
@@ -48,7 +48,7 @@ In the above statement, the following are the components of the curl statement:
 - **--data** : Le corps de la requête, y compris la « méthode », les « paramètres » et l'« ID de la requête ».
 - **--url** : Le point de terminaison « URL » auquel la demande est envoyée.
 
-As explained earlier, CURL is a method for sending API requests, which contain an endpoint (i.e., the URL from which the information is being retrieved) and an HTTP method. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
+Comme expliqué précédemment, CURL est une méthode pour envoyer des requêtes API, qui contiennent un point de terminaison (c’est-à-dire l’URL à partir de laquelle les informations sont récupérées) et une méthode HTTP. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
 
 <p align="center">![rpc-list](../../static/img/rpc/rpc-1.png)</p>
 
