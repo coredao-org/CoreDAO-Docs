@@ -19,7 +19,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: "/",
+  baseUrl: "/CoreDAO-Docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -36,7 +36,7 @@ const config: Config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"]//, "fr", "es"],
+    locales: ["en", "fr", "es"],
   },
 
   staticDirectories: ["public", "static"],
@@ -214,10 +214,10 @@ const config: Config = {
           label: "FAQs",
           activeBaseRegex: `/docs/`,
         },
-        // {
-        //   type: "localeDropdown",
-        //   position: "right",
-        // },
+        {
+          type: "localeDropdown",
+          position: "right",
+        },
         {
           href: "https://github.com/coredao-org",
           label: "GitHub",
