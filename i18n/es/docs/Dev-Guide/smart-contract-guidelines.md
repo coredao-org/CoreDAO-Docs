@@ -40,7 +40,7 @@ solidity: {
     },
 ```
 
-- It is strongly advised to not use Core Testnet1 (chainID: 1115) since it is now deprecated and not maintained.
+- Se recomienda encarecidamente no usar Core Testnet1 (chainID: 1115) ya que ahora está obsoleto y no se mantiene.
 
 #### Despliegue usando Remix IDE
 
@@ -53,7 +53,7 @@ solidity: {
 ### Verificación de contrato
 
 - Para simplificar el proceso de verificación, la versión EVM predeterminada para Core Scan está configurada en **Shanghai** para la versión de solidez **0.8.24^**.
-- Developers can take the same steps to verify their smart contracts with version `0.8.24^` as of the older versions. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
+- Los desarrolladores pueden seguir los mismos pasos para verificar sus contratos inteligentes con la versión `0.8.24^` como en las versiones anteriores. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
 
 ### Contratos inteligentes basados ​​en Solidity versión <0.8.24
 
