@@ -16,12 +16,9 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 
 ## Endpoints RPC para la red de Core
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
 
-### Core Testnet2 (1114 (0x45a))
+
+###
 
 :::info
 Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
@@ -29,13 +26,13 @@ Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. L
 
 - https://rpc.test2.btcs.network
 - https://rpcar.test2.btcs.network (Para Archive Node)
-- wss://rpc.test2.btcs.network/wsp (WebSocket Support)
+-
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-### Core Mainnet (1116 (0x45c))
+###
 
 - wss://ws.coredao.org
 - https://rpc.coredao.org
@@ -44,7 +41,7 @@ Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. L
 </TabItem>
 </Tabs>
 
-### Third Party RPC Endpoints for Core Mainnet
+### Endpoints RPC de terceros para Core Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
