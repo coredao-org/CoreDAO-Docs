@@ -30,7 +30,7 @@ A Snapshot node on Core provides periodic blockchain state snapshots, enabling f
 <Tabs
 defaultValue="testnet2"
 values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 For Snapshot Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
