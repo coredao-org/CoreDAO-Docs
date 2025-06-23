@@ -296,7 +296,7 @@ Ou utilisez la commande `forge script`
 forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
 ```
 
-Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. It will return the address of the deployed contract.
+Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. Il renverra l'adresse du contrat déployé.
 
 ```bash
 [⠊] Compiling...
@@ -308,13 +308,13 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Vérification du contrat
 
-Foundry has a built-in feature to verify contracts on Core automatically. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
+Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch
 ```
 
-Foundry will handle the verification process. You can use [Core Scan](https://scan.test2.btcs.network/) to search for the contract's address to verify that the contract was successfully deployed and verified.
+Foundry gérera le processus de vérification. Vous pouvez utiliser [Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat et vérifier que celui-ci a été déployé et vérifié avec succès.
 
 ## Lectures complémentaires
 
