@@ -31,10 +31,7 @@ Hay múltiples formas de agregar las configuraciones de Core Testnet/Mainnet a t
 
 Una vez que hayas configurado tu wallet MetaMask, puedes usarla para conectarte a la blockchain de Core agregando los detalles de red de Core en la configuración de redes de MetaMask. Navegue hasta `Configuración->Redes` en MetaMask y haga clic en el botón `Agregar red`. Introduzca la siguiente información:
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 
@@ -67,10 +64,7 @@ Una vez que hayas configurado tu wallet MetaMask, puedes usarla para conectarte 
 
 ### Agregar la red Core a través de Chainlist.org
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 1. Ve a chainlist.org y busca _Core Blockchain_, asegúrate de marcar la opción _Include Testnets_.
@@ -119,10 +113,7 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 ### Agregar la red Core a través de Core Explorer
 
-<Tabs defaultValue="testnet2" values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}>
+
 
 <TabItem value="testnet2">
 1. Vaya a https://scan.test2.btcs.network/ y desplácese hacia abajo en la página
@@ -161,5 +152,5 @@ Core Mainnet está ahora agregada a su MetaMask.
 
 #### Última Testnet de Core (1114)
 
-La testnet más reciente de Core, Core Testnet2 con `chainID 1114`, ya está en funcionamiento y es el entorno de pruebas recomendado para la blockchain de Core. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. The old testnet, Core Testnet, is now deprecated and no longer maintained.
+La testnet más reciente de Core, Core Testnet2 con `chainID 1114`, ya está en funcionamiento y es el entorno de pruebas recomendado para la blockchain de Core. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. El testnet anterior, Core Testnet, ya no está en uso y no recibirá más mantenimiento.
 :::
