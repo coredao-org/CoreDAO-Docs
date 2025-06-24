@@ -25,7 +25,7 @@ Core está diseñado para desarrolladores, ofreciendo una plataforma robusta don
 
 ### ¿Cómo conectar MetaMask a la Red Core?
 
-Follow our detailed guide on how to connect your MetaMask wallet to the Core [Testnet](../Dev-Guide/core-wallet-config.md) and [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
+Follow the official [detailed guide](../Dev-Guide/core-wallet-config.md) on how to connect your MetaMask wallet to the Core Testnet and Mainnet.
 
 ### ¿Qué papel juega el token CORE en la seguridad de la red Core?
 
