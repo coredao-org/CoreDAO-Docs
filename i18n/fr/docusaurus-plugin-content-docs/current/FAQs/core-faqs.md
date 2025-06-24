@@ -28,7 +28,7 @@ Core est conçu pour les créateurs, offrant une plateforme robuste où les dive
 
 ### 4. Comment connecter MetaMask au réseau Core ?
 
-Suivez notre guide détaillé pour connecter votre portefeuille MetaMask au [Testnet](../Dev-Guide/core-wallet-config.md)et [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md) de Core.
+Suivez notre [guide détaillé](../Dev-Guide/core-wallet-config.md) pour connecter votre portefeuille MetaMask au Testnet et Mainnet de Core.
 
 ### 5. Quel rôle joue le token CORE dans la sécurisation du réseau Core ?
 
