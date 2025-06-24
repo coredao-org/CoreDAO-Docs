@@ -51,19 +51,19 @@ L'action des délégataires de rééquilibrer leur délégation pour maximiser l
 
 Le Dual Staking est un [processus non-custodial](../stake-and-delegate/btc-staking/overview.md), permettant aux utilisateurs de conserver le contrôle total de leurs actifs. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
 
-### 8\. While Bitcoin is time-locked, can users unstake CORE that’s dual staked with Bitcoin? If so, do they lose any rewards earned before unstaking CORE?
+### 8\. Alors que le Bitcoin est verrouillé dans le temps, les utilisateurs peuvent-ils unstaker le CORE qui est dual staké avec le Bitcoin ? Si oui, Perdent-ils des récompenses gagnées avant de retirer les CORE ?
 
-Users can unstake CORE at any time, just as they can when staking CORE independently. La seule différence est que lorsque la récompense de staking de Bitcoin est calculée, le pourcentage de récompense diminuera en raison de la diminution du CORE staké. Notez que cette réduction ne s'applique qu'aux récompenses futures et n'affecte pas les récompenses déjà gagnées par l'utilisateur.
+Les utilisateurs peuvent retirer leurs CORE à tout moment, tout comme lorsqu'ils font du staking de CORE de manière indépendante. La seule différence est que lorsque la récompense de staking de Bitcoin est calculée, le pourcentage de récompense diminuera en raison de la diminution du CORE staké. Notez que cette réduction ne s'applique qu'aux récompenses futures et n'affecte pas les récompenses déjà gagnées par l'utilisateur.
 
 ### 9\. Comment les utilisateurs s'assurent-ils que l'adresse de récompense CORE pour le staking de Bitcoin est la même que l'adresse de staking CORE lorsqu'ils stakent via le [site de staking de Core](https://stake.coredao.org/) ?
 
 Sur **stake.coredao.org**, pour vous assurer que l'adresse de récompense CORE pour le staking de Bitcoin est la même que l'adresse de staking CORE, suivez les étapes suivantes :
 
-1. To stake CORE, connect your Core wallet, which will then be used for signing the CORE staking transaction.
+1. Pour staker le CORE, connectez votre portefeuille Core qui sera alors utilisé pour signer la transaction de staking CORE.
 2. Pour staker le Bitcoin, connectez d'abord le **même portefeuille Core**, puis connectez votre portefeuille Bitcoin. Lorsque la transaction de staking de Bitcoin est créée via le site de staking, elle utilise l'adresse du portefeuille Core connecté comme adresse de récompense Core pour le staking de Bitcoin.
 
-Tant que l'utilisateur utilise toujours la même adresse de portefeuille Core pour staker à la fois le CORE et le Bitcoin, ce sera la même adresse. Les transactions de staking pour le Bitcoin et le CORE sont également suivies par l'adresse Core. Once the Core wallet is connected, users can go to the "[My Staking](https://stake.coredao.org/mystaking)" section on the [staking website](https://stake.coredao.org/) to see all the CORE and Bitcoin staking transactions, all the accrued rewards in CORE for both Bitcoin staking and CORE staking.
+Tant que l'utilisateur utilise toujours la même adresse de portefeuille Core pour staker à la fois le CORE et le Bitcoin, ce sera la même adresse. Les transactions de staking pour le Bitcoin et le CORE sont également suivies par l'adresse Core. Une fois que le portefeuille Core est connecté, les utilisateurs peuvent aller à la section "[Mon Staking](https://stake.coredao.org/mystaking)" sur le [site de staking](https://stake.coredao.org/) pour voir toutes les transactions de staking CORE et Bitcoin, ainsi que toutes les récompenses accumulées en CORE pour le staking de Bitcoin et de CORE.
 
-### 10\. What happens to the delegators' reward if the validator to whom they delegated their assets gets slashed?
+### 10\. Que se passe-t-il pour la récompense des délégataires si le validateur auquel ils ont délégué leurs actifs est pénalisé (slashed) ?
 
 Si un validateur est pénalisé, les stakers qui ont délégué leur CORE ou Bitcoin ne seront _**pas**_ pénalisés. Cependant, étant donné que le validateur ne recevra pas la récompense de staking, les délégataires manqueront également les récompenses de staking pour cette période.
