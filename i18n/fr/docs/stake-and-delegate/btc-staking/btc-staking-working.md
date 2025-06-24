@@ -134,4 +134,4 @@ Staking data becomes available via Core Staking API once:
 
 This allows developers to track staking positions, rewards, and validator performance programmatically.
 
-For a detailed guide on staking transaction design, refer [here](https://docs.coredao.org/docs/Learn/products/btc-staking/design).
+For a detailed guide on staking transaction design, refer [here](./design.md).
