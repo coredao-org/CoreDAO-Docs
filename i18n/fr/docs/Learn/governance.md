@@ -39,12 +39,12 @@ La gouvernance de la blockchain Core est conçue pour évoluer au fil du temps, 
 
 ### Étape 2 : Gouvernance Partielle sur Chaîne (Actuel)
 
-- Ability to adjust fixed parameters directly through on-chain voting
-- 'm Parameter' is under community control
-- Additional parameters like the fee burn percentage subject to on-chain governance
+- Capacité à ajuster les paramètres fixes directement via le vote en chaîne
+- Le paramètre 'm' est sous le contrôle de la communauté
+- Des paramètres supplémentaires comme le pourcentage de frais brûlés sont soumis à la gouvernance en chaîne
 
-### Stage 3: Full On-Chain Governance
+### Étape 3 : Gouvernance hors chaîne
 
-- Details currently being developed with active community participation
-- Plans include requiring collateral to post proposals
-- Ensures proposers have vested interest in network health and longevity
+- Les détails de cette étape sont en cours de développement avec la participation active de la communauté
+- Les plans incluent l'exigence d'un collatéral pour poster des propositions
+- Cela garantit que les proposants ont un intérêt direct dans la santé et la longévité du réseau
