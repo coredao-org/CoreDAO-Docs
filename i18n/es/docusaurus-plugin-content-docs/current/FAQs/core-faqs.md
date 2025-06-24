@@ -28,7 +28,7 @@ Core está diseñado para atender a los constructores, ofreciendo una plataforma
 
 ### 4. ¿Cómo conectar MetaMask a Core Network?
 
-Siga nuestra guía detallada sobre cómo conectar su billetera MetaMask a las Core [Testnet](../Dev-Guide/core-wallet-config.md) y a [Mainnet](../Dev-Guide/core-mainnet-wallet-config.md).
+Siga nuestra [guía detallada](../Dev-Guide/core-wallet-config.md) sobre cómo conectar su billetera MetaMask a las Core Testnet and Mainnet.
 
 ### 5. ¿Qué papel juega el token CORE en la seguridad de la red Core?
 
