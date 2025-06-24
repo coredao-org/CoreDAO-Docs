@@ -91,9 +91,9 @@ Voici un aperçu détaillé des risques et pénalités auxquels les validateurs 
 
 Le processus d'élection des validateurs dans le mécanisme Satoshi Plus sur le réseau Core implique différentes étapes qui intègrent des éléments de Preuve de Travail (PoW) et de Preuve d'Enjeu (PoS) :
 
-1. **Stake Delegation**: Holders of CORE and Bitcoin tokens delegate their tokens to validator candidates, influencing the election with their staked tokens.
+1. **Délégation de staking :** les détenteurs de tokens CORE et BTC délèguent leurs tokens à des candidats validateurs, influençant l'élection avec leurs tokens stakés.
 2. **Délégation de puissance de hachage :** les mineurs de Bitcoin contribuent à la sélection des validateurs en allouant une partie de leur puissance de hachage.
-3. **Validator Selection and Scoring**: Validators are chosen based on a hybrid score combining delegated hash power from Bitcoin and staked tokens (CORE and Bitcoin). Le score hybride de chaque validateur est calculé sur la base de :
+3. **Sélection et score des validateurs :** les validateurs sont choisis en fonction d'un score hybride combinant la puissance de hachage déléguée de Bitcoin et les tokens stakés (CORE et BTC). Le score hybride de chaque validateur est calculé sur la base de :
 
 $$
     S =  rHp/tHp  × m +  ((rSp + rBp × n))/((tSp + tBp × n) )  × (1-m)  
@@ -103,25 +103,25 @@ Où :
 
 - rHp et tHp représentent respectivement la puissance de hachage déléguée à un validateur et la puissance de hachage totale.
 - rSp et tSp représentent respectivement les tokens CORE stakés pour un validateur et le total des tokens CORE stakés.
-- rBp and tBp are the Bitcoin tokens delegated to a validator and total staked Bitcoin tokens, respectively.
-- m and n are dynamic factors adjusting the weights of hash power and the voting power of Bitcoin versus CORE tokens.
+- rBp et tBp représentent respectivement les tokens Btc délégués à un validateur et le total des tokens Btc stakés.
+- m et n sont des facteurs dynamiques ajustant le poids de la puissance de hachage et de la puissance de vote des tokens BTC par rapport aux jetons CORE.
 
 4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
-### 9) What is slashing, and what are the different slashing fees charged on the Core blockchain?
+### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
 
 Le "slashing" est une pénalité appliquée aux validateurs pour mauvaise conduite ou manquements à leurs devoirs. Dans le réseau Core, le slashing peut affecter les récompenses et les mises déposées.
 
-- **Slashing des récompenses :** si un validateur ne parvient pas à miner 50 blocs consécutifs, toutes les récompenses en tokens CORE accumulées sont perdues. The impact is more significant if the failure occurs later in the round, as more rewards would have been accumulated by then.
-- **Deposit Slashing and Jailing**: Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **three-day jailing**, during which they cannot be elected to the validator set.
-- **Permanent Ban for Double Signing**: Double signing, i.e., signing two different blocks at the same height, results in severe consequences, including the slashing of all rewards, the entire validator deposit, and a permanent ban from the network, effectively rendering the validator permanently ineligible.
+- **Slashing des récompenses :** si un validateur ne parvient pas à miner 50 blocs consécutifs, toutes les récompenses en tokens CORE accumulées sont perdues. L'impact est plus important si l'échec se produit plus tard dans le tour, car plus de récompenses auraient été accumulées.
+- **Slashing du dépôt et emprisonnement :** ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un **emprisonnement de trois jours**, pendant lesquels il ne peut pas être élu dans le groupe de validateurs.
+- **Interdiction permanente pour double signature :** la double signature, c'est-à-dire la signature de deux blocs différents à la même hauteur, entraîne des conséquences sévères, y compris le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
 
 ### 10. Quand les validateurs sont-ils emprisonnés ? Quelle est la durée ?
 
-There are two scenarios in which validators can be jailed.
+Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 
-1. Failing to mine **150** consecutive blocks results in losing **10%** of the validator's deposit and a **three-day jail term**, during which they cannot be elected to the validator set.
-2. Double signing can result in the slashing of all rewards, the entire validator deposit, and a permanent ban from the network, i.e., being jailed forever.
+1. Ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un emprisonnement de trois jours, pendant lesquels ils ne peuvent pas être élus dans le groupe de validateurs.
+2. La double signature peut entraîner le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
 
 ### 11) À quelle fréquence les validateurs doivent-ils être en ligne ?
 
