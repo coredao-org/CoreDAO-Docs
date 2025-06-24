@@ -21,7 +21,7 @@ En el ecosistema Core, "validador" se refiere a nodos o participantes en la red 
   3. Conecte su billetera seleccionando **Conectar billetera** en la parte superior derecha.
   4. Una vez conectado, el botón **registrarse** debería aparecer en la parte superior derecha. Al seleccionar **registrarse** se abre el siguiente formulario de entrada:
 
-![register-validator](../../static/img/validator/register/validator-register-1.png)
+
 
 Proporcione información para cada uno de los campos del formulario:
 
