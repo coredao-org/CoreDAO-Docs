@@ -34,22 +34,22 @@ Pour profiter pleinement du Dual Staking, les utilisateurs doivent s'assurer que
   - [Montant total de Core jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
   - [Montant total de Btc jalonner sur tous les validateurs] (https://stake.coredao.org/validators)
   - Le changement de prix relatif entre BTC et Core
-  - [Annual reward adjustment](../Learn/core-token/tokenomics.md)
+  - [Ajustement annuel des récompenses](../Learn/core-token/tokenomics.md)
 - Les rendements du staking est spécifiques au validateur et varient en fonction de ces facteurs supplémentaires :
   - Nombre total de validateurs actifs
   - Commission de validation
-  - The received delegation on hash, Bitcoin staking, & CORE staking
+  - La délégation reçue sur le hachage, le staking de BTC et le staking CORE
   - Paliers de Dual-staking
 
 ### 6\. Comment les utilisateurs équilibrent-ils CORE et Bitcoin entre les validateurs pour maximiser le rendement ?
 
-For users to see the distribution of their delegated CORE, Bitcoin, and Hash for each validator, they can visit Core’s official [staking website](https://stake.coredao.org/). The CORE and Bitcoin staking yields from each validator vary because they're dependent on the total and weighted amount of delegations a validator receives. Refer to [here](../Learn/core-concepts/satoshi-plus-consensus/rewards#3-validator-rewards) for more details.\
+Pour que les utilisateurs voient la distribution de leur CORE, Bitcoin et Hash délégués pour chaque validateur, ils peuvent visiter le site officiel de [staking de Core](https://stake.coredao.org/). Les rendements de staking CORE et Bitcoin de chaque validateur varient car ils dépendent du montant total et pondéré des délégations qu'un validateur reçoit. Voir [ici](../Learn/core-concepts/satoshi-plus-consensus/rewards#3-validator-rewards) pour plus de détails.\
 La pratique de rééquilibrer les délégations parmi les validateurs est essentielle pour maximiser les récompenses globales et maintenir un écosystème sain de validateurs. Lorsqu'un validateur reçoit une délégation insuffisante, il risque de devenir inactif. À l'inverse, une délégation excessive à un seul validateur peut entraîner une réduction des récompenses pour chaque délégataire, car les récompenses doivent être partagées parmi un plus grand nombre de délégataires.\
-The act of delegators rebalancing their delegation to maximize rewards is the driving force behind ensuring a balanced set of validators. For users who prefer not to manage their delegations actively, it is advisable to distribute stakes equally across all active validators. Cette approche améliore la stabilité des pourcentages de récompense.
+L'action des délégataires de rééquilibrer leur délégation pour maximiser la récompense est le moteur pour assurer un ensemble équilibré de validateurs. Pour les utilisateurs qui préfèrent ne pas gérer activement leurs délégations, il est conseillé de répartir les mises de manière égales entre tous les validateurs actifs. Cette approche améliore la stabilité des pourcentages de récompense.
 
 ### 7\. Y a-t-il un risque de perdre vos actifs Bitcoin pendant le Dual Staking ?
 
-Dual Staking is a [self-custodial process](../stake-and-delegate/btc-staking/overview.md), allowing users to maintain complete control over their assets. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
+Le Dual Staking est un [processus non-custodial](../stake-and-delegate/btc-staking/overview.md), permettant aux utilisateurs de conserver le contrôle total de leurs actifs. Tout au long du processus de staking, le Bitcoin reste en sécurité dans le portefeuille de l'utilisateur.  Les stakers ne font face à aucun risque de slashing, de risque de contrat intelligent externe ou de risque de contrepartie. Les hypothèses de confiance pour le staking de Bitcoin sont les mêmes que celles sous-jacentes à la détention de Bitcoin.
 
 ### 8\. While Bitcoin is time-locked, can users unstake CORE that’s dual staked with Bitcoin? If so, do they lose any rewards earned before unstaking CORE?
 
