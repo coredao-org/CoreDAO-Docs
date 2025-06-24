@@ -4,40 +4,40 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Governance on Core
+# La gouvernance sur Core
 
 ---
 
-## Overview
+## Aperçu
 
-Core's governance system empowers the community to actively participate in decision-making processes that shape the ecosystem's future, from protocol changes to feature implementations. The governance is facilitated through the CORE token and follows a progressive decentralization approach.
-
-## Progressive Decentralization
-
-The Core blockchain's governance is designed to evolve over time, with a phased approach that begins with necessary centralization for network establishment and progressively hands over control to the community as it grows and stabilizes.
-
-## Active Governance Features
-
-- **On-chain parameter adjustment** for fixed network parameters
-- **'m Parameter'** governing certain economic variables is under community control
-- **Fee burn percentage** (currently set at 0%) subject to on-chain governance
-- **Time delays in voting** being discussed to mitigate vote selling concerns
-- **Validator set changes** including the approval of expansions to the validator set
+Il permet à la communauté de participer activement aux processus de décision qui façonnent l'avenir de l'écosystème, des changements de protocole à la mise en œuvre de nouvelles fonctionnalités. La gouvernance est facilitée par le jeton CORE et suit une approche de décentralisation progressive.
 
 ## Stratégie de Décentralisation Progressive
 
-### Stage 1: Off-Chain Governance
+La gouvernance de la blockchain Core est conçue pour évoluer au fil du temps, avec une approche par étapes qui commence par une centralisation nécessaire pour établir le réseau et transfère progressivement le contrôle à la communauté au fur et à mesure de sa croissance et de sa stabilisation.
 
-- Proposals and decisions conducted off-chain through Core Improvement Proposals (CIPs)
-- Community members could submit proposals regardless of stake size
-- Majority vote determined outcomes with seven-day voting periods
+## Fonctionnalités de gouvernance actives
 
-### Stage 1.5: Hybrid Model
+- **Ajustement des paramètres en chaîne** pour les paramètres réseau fixes
+- Le **'paramètre m'**, qui régit certaines variables économiques, est déjà sous contrôle communautaire
+- **Pourcentage de combustion des frais** (actuellement fixé à 0%) soumis à la gouvernance en chaîne
+- **Des délais dans le vote** sont discutés pour atténuer les préoccupations liées à la vente de votes
+- **Modifications de l'ensemble de validateurs** y compris l'approbation des extensions de l'ensemble de validateurs
 
-- Midpoint between off-chain governance and partial on-chain governance
-- Allowed for learning, adjustment, and laying groundwork for more on-chain elements
+## Stratégie de Décentralisation Progressive
 
-### Stage 2: Partial On-Chain Governance (Current)
+### Étape 1 : Gouvernance hors chaîne
+
+- Les propositions et décisions sont prises hors chaîne via les Core Improvement Proposals (CIPs)
+- Les membres de la communauté peuvent soumettre des propositions indépendamment de la taille de leur mise (stake)
+- Les résultats sont déterminés par vote majoritaire avec des périodes de vote de sept jours
+
+### Étape 1.5 : Modèle Hybride Actuel
+
+- Point intermédiaire entre la gouvernance hors chaîne et la gouvernance partiellement en chaîne
+- Cela a permis l'apprentissage, l'ajustement et la mise en place des bases pour davantage d'éléments en chaîne
+
+### Étape 2 : Gouvernance Partielle sur Chaîne (Actuel)
 
 - Ability to adjust fixed parameters directly through on-chain voting
 - 'm Parameter' is under community control
