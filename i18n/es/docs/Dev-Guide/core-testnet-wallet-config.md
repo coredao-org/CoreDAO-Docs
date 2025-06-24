@@ -68,7 +68,7 @@ Si usa la extensión de MetaMask en Chrome, puede usar un atajo rápido para agr
 
 #### Nueva Testnet
 
-La última testnet de Core, Core Testnet2 con `chainID 1114`, ya está activa y es el entorno de prueba recomendado para la blockchain Core. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. The old testnet, Core Testnet, is now deprecated and no longer maintained.
+La última testnet de Core, Core Testnet2 con `chainID 1114`, ya está activa y es el entorno de prueba recomendado para la blockchain Core. A diferencia de la versión anterior (`ID de cadena: 1115`), esta soporta BTC Testnet4 para el staking. El testnet anterior, Core Testnet, ya no está en uso y no recibirá más mantenimiento.
 
 #### Actualizaciones de cambio de marca
 
