@@ -55,22 +55,22 @@ Donde, $$m + k + l = 1$$
 - $$k$$: Ratio asignado a la apuesta CORE.
 - $$l$$: Ratio asignado a la participación en BTC.
 
-This formula promotes proportional and fair influence across all delegation sources.
+Esta fórmula promueve una influencia proporcional y justa entre todas las fuentes de delegación.
 
-### 3. Validator Selection and Block Production
+### Selección de Validadores y Producción de Bloques
 
-- The **top 29 validators** with the highest hybrid scores are elected every **round (1 day)**
-- Validators produce blocks in a **round-robin** fashion, with each slot lasting **3 seconds**
-- The **validator set is updated every 200 blocks** to promote consistency and prevent disruption from underperforming or penalized validators
-- Core maintains liveness as long as fewer than **⅓ of validators are malicious**
+- Los **top 29 validadores** con los hybrid scores más altos son elegidos en cada **round (1 día)**
+- Los validadores producen bloques en un esquema **round-robin**, con cada turno de **3 segundos**
+- El **conjunto de validadores se actualiza cada 200 bloques** para promover la consistencia y prevenir interrupciones causadas por validadores con bajo rendimiento o sancionados
+- Core mantiene su operatividad siempre que menos de **⅓ de los validadores sean maliciosos**
 
-## Flow Summary
+## Resumen del Flujo
 
-The validator election cycle proceeds as follows:
+El ciclo de elección de validadores sigue este proceso:
 
-1. **Delegation**: Miners, CORE stakers, and Bitcoin stakers delegate support
-2. **Score Calculation**: Hybrid scores are computed using the defined formula
-3. **Election**: Top 29 validators are selected based on scores
-4. **Block Production**: Validators take turns producing blocks
-5. **Rewards**: CORE tokens are earned by validators and distributed proportionally to delegators
-6. **Cycle Repeats**: Validator set updates every 200 blocks
+1. **Delegación**: Mineros, stakers de CORE y stakers de Bitcoin delegan su apoyo
+2. **Cálculo de Puntajes**: Se computa el hybrid score usando la fórmula definida
+3. **Elección**: Se seleccionan los 29 validadores con mayor puntaje
+4. **Producción de Bloques**: Los validadores toman turnos para producir bloques
+5. **Recompensas**: Los validadores ganan tokens CORE y los distribuyen proporcionalmente a sus delegadores
+6. **Repetición del Ciclo**: El conjunto de validadores se actualiza cada 200 bloques
