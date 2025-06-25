@@ -8,30 +8,30 @@ sidebar_position: 2
 
 ---
 
-## Overview
+## Aperçu
 
-Dual Staking refers to staking both Bitcoin and CORE tokens simultaneously, with higher CORE-to-Bitcoin staking ratios earning access to higher tiers of yield. **The more CORE staked relative to Bitcoin, the higher the yield potential.** Thus, attractive Bitcoin staking rates are perpetually available to the most Core-aligned participants, encouraging Bitcoin stakers to also stake CORE—aligning incentives and strengthening network security.
+Le double staking fait référence au staking simultané de Bitcoin et de tokens CORE, avec des ratios de staking CORE-Bitcoin plus élevés permettant d'accéder à des niveaux de rendement plus élevés. **Plus il y a de CORE misés par rapport au Bitcoin, plus le potentiel de rendement est élevé**. Ainsi, des taux de staking Bitcoin attractifs sont perpétuellement disponibles pour les participants les plus alignés sur Core, encourageant les stakers Bitcoin à miser également des CORE - ce qui aligne les incitations et renforce la sécurité du réseau.
 
-Dual Staking creates a **mathematical advantage** in Core's reward distribution system by recognizing dual participation as providing greater security value to the network than either mechanism in isolation, with max yields ~25-50x higher than Bitcoin staking alone.
+Le double staking crée un **avantage mathématique** dans le système de distribution de récompenses de Core en reconnaissant que la participation double apporte une plus grande valeur de sécurité au réseau que chaque mécanisme isolé, avec des rendements maximaux environ 25 à 50 fois plus élevés que le staking Bitcoin seul.
 
-**View live yield rates at [stake.coredao.org/staking](https://stake.coredao.org/staking)**
+**Consultez les taux de rendement en direct sur [stake.coredao.org/staking](https://stake.coredao.org/staking)**
 
-## How Dual Staking Works
+## Comment fonctionne le Dual Staking
 
-### 1. Dual Participation
+### 1. La participation double
 
-Dual Staking requires simultaneous participation in two legs of Core's tripartite Satoshi Plus consensus:
+Le double staking nécessite une participation simultanée à deux branches du consensus tripartite Satoshi Plus de Core :
 
-**Self-Custodial Bitcoin Staking (Timelocking):**
+**Conception du staking de Bitcoin en auto-garde):**
 
-- Timelock Bitcoin using CLTV on the Bitcoin blockchain
-- Include validator vote metadata in the timelock transaction
-- Maintain complete self-custody of Bitcoin throughout
+- Verrouiller Bitcoin dans le temps en utilisant CLTV (CheckLockTimeVerify) sur la blockchain Bitcoin
+- Inclure les métadonnées de vote du validateur dans la transaction de verrouillage temporel
+- Maintenir la pleine auto-garde de Bitcoin tout au long du processus
 
-**Delegated Proof of Stake (CORE Delegation):**
+**Le Delegated Proof of Stake (DPoS) avec délégation de jetons CORE:**
 
-- Delegate CORE tokens to validators on the Core network
-- Support the same or different validators as chosen for Bitcoin staking
+- Déléguer des tokens CORE à des validateurs sur le réseau Core
+- Soutenir les mêmes validateurs ou des validateurs différents de ceux choisis pour le staking de Bitcoin
 
 ### 2. Tiered Yield System
 
