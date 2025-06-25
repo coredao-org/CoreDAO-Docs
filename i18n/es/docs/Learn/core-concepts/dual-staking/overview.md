@@ -8,78 +8,78 @@ sidebar_position: 2
 
 ---
 
-## Overview
+## Visión general
 
-Dual Staking refers to staking both Bitcoin and CORE tokens simultaneously, with higher CORE-to-Bitcoin staking ratios earning access to higher tiers of yield. **The more CORE staked relative to Bitcoin, the higher the yield potential.** Thus, attractive Bitcoin staking rates are perpetually available to the most Core-aligned participants, encouraging Bitcoin stakers to also stake CORE—aligning incentives and strengthening network security.
+Dual Staking se refiere al proceso de hacer staking de Bitcoin y tokens CORE simultáneamente, donde mayores proporciones de staking de CORE en relación con Bitcoin otorgan acceso a niveles más altos de rendimiento. **Cuanto más CORE se apueste en comparación con el Bitcoin, mayor será el potencial de rendimiento.** Por lo tanto, tasas atractivas de staking de Bitcoin están siempre disponibles para los participantes más alineados con Core, incentivando a los stakers de Bitcoin a también hacer staking de CORE—alineando incentivos y fortaleciendo la seguridad de la red.
 
-Dual Staking creates a **mathematical advantage** in Core's reward distribution system by recognizing dual participation as providing greater security value to the network than either mechanism in isolation, with max yields ~25-50x higher than Bitcoin staking alone.
+Dual Staking crea una **ventaja matemática** en el sistema de distribución de recompensas de Core, reconociendo que la participación dual proporciona un mayor valor de seguridad para la red que cualquiera de los mecanismos de forma aislada, con rendimientos máximos de ~25-50x mayores que el staking solo de Bitcoin.
 
-**View live yield rates at [stake.coredao.org/staking](https://stake.coredao.org/staking)**
+**Consulta las tasas de rendimiento en tiempo real en [stake.coredao.org/staking](https://stake.coredao.org/staking)**
 
-## How Dual Staking Works
+## Cómo funciona el Dual Staking
 
-### 1. Dual Participation
+### Participación Dual
 
-Dual Staking requires simultaneous participation in two legs of Core's tripartite Satoshi Plus consensus:
+El Dual Staking requiere una participación simultánea en dos componentes del consenso tripartito Satoshi Plus de Core:
 
 **Self-Custodial Bitcoin Staking (Timelocking):**
 
-- Timelock Bitcoin using CLTV on the Bitcoin blockchain
-- Include validator vote metadata in the timelock transaction
-- Maintain complete self-custody of Bitcoin throughout
+- Bloquea temporalmente Bitcoin usando CLTV en la blockchain de Bitcoin
+- Incluye metadatos de votación de validadores en la transacción de timelock
+- Mantén la autocustodia completa de tu Bitcoin durante todo el proceso.
 
-**Delegated Proof of Stake (CORE Delegation):**
+**Delegated Proof of Stake (Delegación de CORE):**
 
-- Delegate CORE tokens to validators on the Core network
-- Support the same or different validators as chosen for Bitcoin staking
+- Delega tokens CORE a validadores en la red de Core
+- Puedes apoyar al mismo validador que en el staking de Bitcoin o a uno distinto
 
-### 2. Tiered Yield System
+### Sistema de Rendimiento Escalonado
 
-The protocol uses a **tier-based multiplier system** to enhance Bitcoin staking rewards for Dual Stakers:
+El protocolo utiliza un **sistema de multiplicadores basado en tiers** para aumentar las recompensas de staking de Bitcoin a favor de los Dual Stakers:
 
-| **Tier**         | **CORE-to-Bitcoin Ratio (R)** | **Label**           | **Description**               |
-| ---------------- | ------------------------------------------------ | ------------------- | ----------------------------- |
-| **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | No CORE delegation            |
-| **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Entry-level Dual Staking tier |
-| **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Higher CORE-to-Bitcoin ratio  |
-| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Highest tier; maximum rewards |
+|   | **Ratio CORE-a-Bitcoin (R)** | **Etiqueta** | **Descripción**                             |
+| - | ----------------------------------------------- | ------------ | ------------------------------------------- |
+|   |                                                 |              | Sin delegación de CORE                      |
+|   |                                                 |              | Nivel de entrada al sistema de Dual Staking |
+|   |                                                 |              | Mayor relación CORE-a-Bitcoin               |
+|   |                                                 |              | Nivel más alto; recompensas máximas         |
 
-- Tier thresholds (**R₁, R₂, R₃**) are dynamic and adjust based on network conditions.
-- Higher tiers unlock progressively greater **reward multipliers**.
+- Los umbrales de nivel (**R₁, R₂, R₃**) son dinámicos y se ajustan según las condiciones de la red.
+- Los niveles más altos desbloquean **multiplicadores de recompensas**progresivamente mayores.
 
-### 3. Example Calculation
+### Ejemplo de cálculo
 
-Suppose you stake **10 Bitcoin**.
+Supongamos que haces staking de **10 Bitcoin**.
 
-If tier ratios are defined as:
+Si las relaciones de nivel están definidas como:
 
 - **R₁ = 3,625 CORE/Bitcoin**
 - **R₂ = 10,875 CORE/Bitcoin**
 - **R₃ = 29,000 CORE/Bitcoin**
 
-Then your thresholds would be:
+Entonces, tus umbrales serían:
 
-| **Tier**     | **CORE Required** |
-| ------------ | ----------------- |
-| Boost Tier   | 36,250 CORE       |
-| Super Tier   | 108,750 CORE      |
-| Satoshi Tier | 290,000 CORE      |
+|   | **CORE Requierido** |
+| - | ------------------- |
+|   |                     |
+|   |                     |
+|   |                     |
 
-Your reward tier is determined by how much CORE you've delegated relative to your staked Bitcoin.
+Tu nivel de recompensa se determina por la cantidad de CORE que hayas delegado en relación con tu Bitcoin en staking.
 
-## Benefits
+## Beneficios
 
-**Enhanced Yields:**
+**Rendimientos mejorados:**
 
-- Achieve ~25-50x higher yields compared to solo Bitcoin staking
-- Access sustainable, protocol-native rewards
-- Benefit from both fixed emissions and transaction fee revenue
+- Obtén rendimientos ~25-50x más altos en comparación con el staking de solo Bitcoin
+- Accede a recompensas sostenibles y nativas del protocolo
+- Benefíciate tanto de emisiones fijas como de ingresos por tarifas de transacción
 
-**Risk Considerations:**
+**Consideraciones de riesgo:**
 
-- Bitcoin principal remains completely secure with no new trust assumptions
-- CORE delegation operates under the same trust assumptions as DPoS
-- Dual Staking does not change how you stake, just how you are rewarded
+- El capital en Bitcoin permanece completamente seguro, sin suposiciones de confianza adicionales
+- La delegación de CORE opera bajo las mismas suposiciones de confianza que DPoS
+- El Dual Staking no cambia cómo haces staking, solo cómo se te recompensa
 
 ## Best Practices
 
