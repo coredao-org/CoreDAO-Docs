@@ -81,23 +81,23 @@ Tu nivel de recompensa se determina por la cantidad de CORE que hayas delegado e
 - La delegación de CORE opera bajo las mismas suposiciones de confianza que DPoS
 - El Dual Staking no cambia cómo haces staking, solo cómo se te recompensa
 
-## Best Practices
+## Mejores prácticas
 
-- **Monitor tier thresholds** regularly—they adjust based on participation
-- **Track validator performance** to maximize uptime and yield
-- **Diversify validator selection** to reduce dependency on a single provider
+- **Supervisa los umbrales de los tiers** con regularidad — se ajustan según la participación
+- **Monitorea el rendimiento de los validadores** para maximizar el tiempo activo y los rendimientos
+- **Diversifica tu selección de validadores** para reducir la dependencia en un solo proveedor
 
-## Yield Sustainability
+## Sostenibilidad del rendimiento
 
-- Tiers adjust **dynamically** to maintain attractive yields
-- The protocol balances accessibility with long-term sustainability by adapting to market conditions and participation levels
+- Los tiers se ajustan **dinámicamente** para mantener rendimientos atractivos
+- El protocolo equilibra accesibilidad y sostenibilidad a largo plazo, adaptándose a las condiciones del mercado y los niveles de participación
 
-## Why It Matters
+## Por qué es importante
 
-Dual Staking unlocks sustainably attractive yields for Bitcoin stakers who are most committed to Core, as represented by their CORE staking relative to Bitcoin. The system incentivizes Bitcoin holders to become CORE holders, thereby aligning the two ecosystems and creating stronger network effects as both assets work together to secure and grow the Core network.
+Dual Staking desbloquea rendimientos atractivos y sostenibles para los stakers de Bitcoin que están más comprometidos con Core, representado por la cantidad de staking de CORE en relación con Bitcoin. El sistema incentiva a los holders de Bitcoin a convertirse también en holders de CORE, alineando ambos ecosistemas y generando efectos de red más fuertes, ya que ambos activos trabajan juntos para asegurar y expandir la red Core.
 
-**Start Dual Staking at stake.coredao.org**
+**Comienza con Dual Staking en stake.coredao.org**
 
 :::info
-Please refer to the [Dual Staking FAQ section](../../../FAQs/dual-staking-faqs.md) for further questions or clarifications. Para soporte adicional, puede dirigir sus consultas al [Foro de Desarrolladores de Core](http://forum.coredao.org) o al [Servidor de Discord de Core](https://discord.gg/M2AGJKSG).\
+Consulta la sección de [Preguntas Frecuentes de Dual Staking](../../../FAQs/dual-staking-faqs.md) para más preguntas o aclaraciones. Para soporte adicional, puede dirigir sus consultas al [Foro de Desarrolladores de Core](http://forum.coredao.org) o al [Servidor de Discord de Core](https://discord.gg/M2AGJKSG).\
 :::
