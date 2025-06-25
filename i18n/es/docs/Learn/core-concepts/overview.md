@@ -50,9 +50,9 @@ Como una blockchain escalable y compatible con EVM, Core ofrece amplias capacida
 
 ### Gobernanza y Participación Comunitaria
 
-La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. Key decisions—including changes to on-chain parameters, rewards mechanisms, and protocol adjustments—are enhanced through community participation and on-chain voting, giving users a direct say in the platform's development.
+La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. Las decisiones clave —incluyendo cambios en los parámetros on-chain, mecanismos de recompensas y ajustes del protocolo— se mejoran mediante la participación de la comunidad y votación on-chain, permitiendo a los usuarios influir directamente en el desarrollo de la plataforma.
 
-## The Core Builder Ecosystem
+## Ecosistema de Builders de Core
 
 - [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
 - [Core Ignition](https://ignition.coredao.org/)
@@ -60,7 +60,7 @@ La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. 
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
 - [Core Commit Program](https://coredao.org/initiatives/commit-program)
 
-These programs are intended to support and incentivize building innovative projects on Core and catalyze growth.
+Estos programas están diseñados para impulsar el crecimiento del ecosistema y fomentar la creación de soluciones innovadoras sobre la blockchain de Core.
 
 Explore el ecosistema Core en constante expansión [aquí](https://coredao.org/explore/ecosystem).
 
