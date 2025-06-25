@@ -1,97 +1,97 @@
 ---
-sidebar_label: Self-Custodial Bitcoin Staking
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 0
 description: ""
 ---
 
-# Self-Custodial Bitcoin Staking (Timelocking)
+# Staking de Bitcoin Autocustodiado (Timelocking)
 
 ---
 
 ## Visión general
 
-Self-Custodial Bitcoin Staking enables Bitcoin holders to earn CORE token rewards by participating in Core's consensus—**without ever giving up custody of their Bitcoin**. Leveraging Bitcoin's native CheckLockTimeVerify (CLTV) opcode, this approach transforms idle Bitcoin into a productive asset while preserving its core principles of security and sovereignty.
+El Staking de Bitcoin Autocustodiado permite a los holders de Bitcoin ganar recompensas en tokens CORE al participar en el consenso de Core, **sin ceder jamás la custodia de su Bitcoin**. Aprovechando el opcode nativo de Bitcoin llamado CheckLockTimeVerify (CLTV), este enfoque convierte el Bitcoin inactivo en un activo productivo, preservando al mismo tiempo sus principios fundamentales de seguridad y soberanía.
 
-There is no wrapping, bridging, or exposure to smart contract risk.
+No hay wrapping, ni puentes, ni exposición al riesgo de contratos inteligentes.
 
-## Core Principles
+## Principios Fundamentales
 
-- **100% Self-Custody**: Bitcoin never leaves your wallet
-- **Zero Principal Risk**: Funds remain fully secured by Bitcoin's own rules
-- **Trustless Yield**: No third-party intermediaries
-- **Bitcoin-Native Security**: Staked Bitcoin is secured entirely by Bitcoin's consensus mechanism
+- **100% Autocustodia:** Tu Bitcoin nunca sale de tu wallet
+- **Riesgo de Principal Cero**: Los fondos permanecen totalmente seguros bajo las propias reglas de Bitcoin
+- **Rendimiento Trustless:** Sin intermediarios de terceros
+- **Seguridad Nativa de Bitcoin**: El Bitcoin en staking está protegido completamente por el mecanismo de consenso de Bitcoin
 
-## How It Works
+## Cómo Funciona
 
-### 1. Timelocking Bitcoin via CLTV
+### Timelocking de Bitcoin vía CLTV
 
-Bitcoin's CheckLockTimeVerify (CLTV) opcode allows holders to lock Bitcoin for a chosen duration:
+El opcode CheckLockTimeVerify (CLTV) de Bitcoin permite a los holders bloquear su Bitcoin por un periodo determinado:
 
-- **Minimum lock period**: 24 hours
-- **Flexible duration**: You choose how long to lock
-- **Enforced by protocol**: All Bitcoin nodes honor the lock automatically
+- **Periodo mínimo de bloqueo**: 24 horas
+- **Duración flexible**: Tú decides cuánto tiempo bloquear
+- **Aplicación forzada por el protocolo**: Todos los nodos de Bitcoin respetan automáticamente el bloqueo
 
-During this time, the Bitcoin is unspendable—even by the owner—until the lock expires.
+Durante este tiempo, el Bitcoin queda inutilizable — incluso por el propietario — hasta que expire el tiempo de bloqueo.
 
-### 2. Validator Selection via Metadata
+### Selección de Validadores mediante Metadata
 
-While creating the timelock transaction, you include metadata in the redeem script specifying:
+Al crear la transacción de timelock, se incluye metadata en el redeem script que especifica:
 
-- **Which Core validator** you support
-- **Which EVM address** should receive your CORE token rewards
+- **Qué validador de Core** deseas apoyar
+- **Qué dirección EVM** debe recibir tus recompensas en tokens CORE
 
-Your voting power on Core is **proportional to the amount of Bitcoin** you timelock in support of a validator.
+Tu poder de voto en Core es **proporcional a la cantidad de Bitcoin** que bloquees en soporte a un validador.
 
-### 3. Relayer and Consensus Integration
+### Integración del Relayer y el Consenso
 
-Core's relayer network continuously scans the Bitcoin blockchain to:
+La red de relayers de Core escanea continuamente la blockchain de Bitcoin para:
 
-- Detect valid CLTV timelocks with embedded validator metadata
-- Validate the transaction
-- Transmit the data to Core's on-chain consensus logic
-- Update validator election weights based on the amount of Bitcoin delegated
+- Detectar timelocks CLTV válidos con metadata incrustada del validador
+- Validar la transacción
+- Transmitir los datos a la lógica de consenso on-chain de Core
+- Actualizar los pesos de elección de validadores en función de la cantidad de Bitcoin delegado
 
-This process ensures real-time, trustless synchronization between Bitcoin activity and Core's consensus.
+Este proceso garantiza una sincronización en tiempo real y trustless entre la actividad en Bitcoin y el consenso en Core.
 
-### 4. Reward Distribution
+### Distribución de Recompensas
 
-When a validator you support is elected and performs its duties:
+Cuando un validador que has apoyado es elegido y cumple con sus funciones:
 
-- It earns CORE token rewards
-- A portion of those rewards is distributed to all Bitcoin holders who timelocked in support
-- Rewards are automatically sent to the EVM address provided in the timelock metadata
+- Gana recompensas en tokens CORE
+- Una parte de esas recompensas se distribuye a todos los holders de Bitcoin que hicieron timelock en su apoyo
+- Las recompensas se envían automáticamente a la dirección EVM proporcionada en la metadata del timelock
 
-Reward amounts vary based on validator liveness and the amount of Bitcoin staked in support.
+La cantidad de recompensas varía según la actividad del validador y la cantidad de Bitcoin en staking en su apoyo.
 
-### 5. Timelock Expiration
+### Expiración del Timelock
 
-Once your lock period ends:
+Una vez que finaliza tu período de bloqueo:
 
-- Your Bitcoin becomes fully spendable again
-- Your validator vote and reward eligibility expire
-- You may create a new timelock to resume participation
+- Tu Bitcoin vuelve a ser completamente gastable
+- Tu voto al validador y elegibilidad para recompensas expiran
+- Puedes crear un nuevo timelock para reanudar tu participación
 
-There is **no auto-renewal**—ongoing participation requires a new timelock transaction.
+**No existe renovación automática** — la participación continua requiere una nueva transacción de timelock.
 
-## Benefits
+## Beneficios
 
-### For Bitcoin Holders
+### Para Holders de Bitcoin
 
-- Generate yield without giving up control
-- Keep Bitcoin in its native form
-- Avoid bridges, custodians, and smart contract risks
+- Genera rendimiento sin perder el control de tus fondos
+- Mantén el Bitcoin en su forma nativa
+- Evita bridges, custodios y riesgos de contratos inteligentes
 
-### For the Core Network
+### Para la Red Core
 
-- Decentralized, Bitcoin-backed validator election
-- Security reinforced by real Bitcoin economic weight
-- A system aligned with the values of Bitcoin sovereignty and transparency
+- Elección descentralizada de validadores respaldada por Bitcoin
+- Seguridad reforzada por el peso económico real de Bitcoin
+- Un sistema alineado con los valores de soberanía y transparencia de Bitcoin
 
-## Why It Matters
+## Por qué es importante
 
-Bitcoin has historically been an unproductive asset, earning no yield. By using Bitcoin's native CLTV timelock function, Core enables Bitcoin holders to earn yield by trustlessly participating in the consensus process of a high-performance smart contract platform.
+Históricamente, Bitcoin ha sido un activo no productivo, que no genera rendimiento. Al utilizar la función nativa de timelock CLTV de Bitcoin, Core permite a los holders de BTC obtener rendimientos participando de forma trustless en el proceso de consenso de una plataforma de contratos inteligentes de alto rendimiento.
 
-## View Current Yields
+## Consulta los rendimientos actuales
 
-Live staking rewards are available at **[stake.coredao.org](https://stake.coredao.org)**
+Rendimientos actuales en tiempo real disponibles en **[stake.coredao.org](https://stake.coredao.org)**
