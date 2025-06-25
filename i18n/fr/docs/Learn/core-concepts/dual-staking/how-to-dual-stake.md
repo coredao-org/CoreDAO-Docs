@@ -1,24 +1,24 @@
 ---
-sidebar_label: How to Dual Stake
+sidebar_label: Comment faire du double staking
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How to Dual Stake
+# Comment faire du double staking
 
 ---
 
-There are several ways to participate in Dual Staking with Bitcoin and CORE, depending on your preferred tools and experience level:
+Il existe plusieurs façons de participer au staking double avec BTC et CORE, selon vos outils préférés et votre niveau d'expérience :
 
-**Via the Official Core Website**: A user-friendly interface for most users to start staking directly.
+**Via le site Web officiel de Core**: Une interface conviviale pour la plupart des utilisateurs pour commencer le staking directement.
 
-**Using CLI Tools & Smart Contracts**: Ideal for developers and advanced users who prefer direct interaction with the protocol. Users can stake their Bitcoin using the BTC Staking CLI Tool and stake CORE by interacting directly with the staking smart contracts.
+**Utilisation des outils CLI et des contrats intelligents** : Idéal pour les développeurs et les utilisateurs avancés qui préfèrent interagir directement avec le protocole. Les utilisateurs peuvent miser leur Bitcoin en utilisant l'outil CLI de staking BTC et miser CORE en interagissant directement avec les contrats intelligents de staking.
 
-**Through Trusted Custodians**: Stake via institutional-grade custodians such as BitGo, Copper, or Hex Trust for added security and operational convenience.
+**Via des dépositaires de confiance** : Staker via des dépositaires institutionnels tels que BitGo, Copper ou Hex Trust pour une sécurité accrue et une commodité opérationnelle.
 
-## Prerequisites
+## Prérequis
 
-To get started and be able to dual stake CORE and Bitcoin via Core's official staking website, you must have the following prerequisites:
+Pour démarrer et pouvoir effectuer un double staking CORE et BTC via le site Web officiel de staking de Core, vous devez avoir les prérequis suivants :
 
 **Supported Bitcoin Wallet Browser Extension**: To participate in the Bitcoin staking process, you must install browser extensions of any supported Bitcoin wallets, like Xverse, Unisat, and/or OKX Wallet (refer here for the latest supported wallets). You must use the desktop version when using the official staking website. You can also stake directly using the Element wallet mobile application as well.
 
