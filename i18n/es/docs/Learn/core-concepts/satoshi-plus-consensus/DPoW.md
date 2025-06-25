@@ -89,24 +89,26 @@ Cada día, Core calcula las puntuaciones de los validadores utilizando los datos
 - Monitorea tu dirección de recompensas CORE para verificar distribuciones entrantes
 - Mantén operaciones mineras constantes para asegurar una delegación confiable
 
-## Potential Challenges & Mitigations
+## Desafíos Potenciales y Mitigaciones
 
-| **Challenge**              | **Mitigation**                                   |
-| -------------------------- | ------------------------------------------------ |
-| Incorrect metadata format  | Core validates metadata before processing        |
-| Missed rewards             | Use reliable tooling to monitor reward addresses |
-| Validator underperformance | Choose validators with strong historical uptime  |
+| **Desafío**                     | **Mitigación**                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------------ |
+| Formato incorrecto de metadatos | Core valida los metadatos antes de procesarlos                                 |
+| Recompensas perdidas            | Utiliza herramientas confiables para monitorear las direcciones de recompensas |
+| Bajo rendimiento del validador  | ```
+Elige validadores con historial sólido de disponibilidad
+```               |
 
-## Getting Started
+## Cómo Empezar
 
-**To participate in DPoW:**
+**Para participar en DPoW:**
 
-1. **Continue your Bitcoin mining** (no changes needed)
-2. **Embed delegation metadata** in op_return of coinbase transaction
-3. **Choose a Core validator** to delegate to
-4. **Add your CORE reward address**
-5. **Track rewards and validator performance**
+1. **Continúa con tu minería de Bitcoin** (no se requieren cambios operativos)
+2. **Incrusta los metadatos de delegación** en el campo op_return de la transacción coinbase
+3. **Elige un validador de Core** al cual delegar
+4. **Agrega tu dirección de recompensas en CORE**
+5. **Sigue tus recompensas y el rendimiento del validador**
 
-## Why It Matters
+## Por qué es importante
 
-DPoW es un componente crítico del consenso Satoshi Plus. Extiende los incentivos de los mineros de Bitcoin para alinearlos con el mecanismo de consenso de Core. Core receives Bitcoin miner participation in its security, and Bitcoin receives better-compensated miners. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
+DPoW es un componente crítico del consenso Satoshi Plus. Extiende los incentivos de los mineros de Bitcoin para alinearlos con el mecanismo de consenso de Core. Core recibe la participación de los mineros de Bitcoin en su seguridad, y Bitcoin obtiene mineros mejor remunerados. El resultado es un conjunto de mineros que está más incentivado a proteger tanto Bitcoin como Core.
