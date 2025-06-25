@@ -1,38 +1,38 @@
 ---
-sidebar_label: Tier Adjustment System
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# Tier Adjustment System
+# Sistema de Ajuste de Tiers
 
 ---
 
-## Overview
+## Visión general
 
-Core's tier adjustment system maintains sustainable and attractive yields for Dual Staking participants through dynamic management of CORE-to-Bitcoin ratio requirements. The system is designed to balance yield attractiveness with tier accessibility, ensuring that participants most aligned with Core receive consistently favorable rewards.
+El sistema de ajuste de tiers de Core mantiene rendimientos sostenibles y atractivos para los participantes de Dual Staking mediante la gestión dinámica de los requisitos de proporción CORE a Bitcoin. Está diseñado para equilibrar la atractividad del rendimiento con la accesibilidad a los tiers, asegurando que los participantes más alineados con Core reciban recompensas consistentemente favorables.
 
-## How Tier Adjustments Work
+## ¿Cómo funcionan los ajustes de tiers?
 
-### Primary Mechanism
+### Mecanismo principal
 
-The most important lever Core uses is adjusting the **CORE-to-Bitcoin ratio requirement** for accessing the Satoshi Tier and other yield tiers.
+El instrumento más importante que utiliza Core es ajustar la **proporción CORE a Bitcoin requerida** para acceder al Satoshi Tier y otros niveles de rendimiento.
 
-### Adjustment Triggers
+### Disparadores de ajuste
 
-**When Too Many Participants Qualify for Satoshi Tier:**
+**Cuando demasiados participantes califican para el Satoshi Tier:**
 
-- The same reward pool gets split among more participants
-- Individual yields decrease for all Satoshi Tier participants
-- The protocol raises the CORE-to-Bitcoin requirement
-- Fewer participants qualify, increasing yields for remaining participants
+- El mismo fondo de recompensas se divide entre más participantes
+- Los rendimientos individuales disminuyen para todos los participantes del Satoshi Tier
+- El protocolo aumenta el requisito de proporción CORE a Bitcoin
+- Menos participantes califican, aumentando el rendimiento para quienes permanecen
 
-**When Too Few Participants Qualify for Satoshi Tier:**
+**Cuando muy pocos participantes califican para el Satoshi Tier:**
 
-- Yields become very attractive but highly inaccessible
-- High barriers limit participation to a small subset of stakers
-- The protocol lowers the CORE-to-Bitcoin requirement
-- More participants gain access, creating more balanced yield distribution
+- Los rendimientos se vuelven muy atractivos pero poco accesibles
+- Las barreras altas limitan la participación a un pequeño subconjunto de stakers
+- El protocolo reduce el requisito de proporción CORE a Bitcoin
+- Más participantes obtienen acceso, distribuyendo mejor los rendimientos
 
 ## Key Factors Influencing Adjustments
 
