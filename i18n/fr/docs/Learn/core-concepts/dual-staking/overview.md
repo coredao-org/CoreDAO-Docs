@@ -65,21 +65,21 @@ Alors vos seuils seraient :
 | Super Tier   | 108,750 CORE    |
 | Satoshi Tier | 290,000 CORE    |
 
-Your reward tier is determined by how much CORE you've delegated relative to your staked Bitcoin.
+Votre niveau de récompense est déterminé par la quantité de CORE que vous avez déléguée par rapport à vos Bitcoin stakés.
 
-## Benefits
+## Avantages
 
-**Enhanced Yields:**
+**Rendements améliorés:**
 
-- Achieve ~25-50x higher yields compared to solo Bitcoin staking
-- Access sustainable, protocol-native rewards
-- Benefit from both fixed emissions and transaction fee revenue
+- Atteindre des rendements environ 25 à 50 fois supérieurs à ceux du staking solo de Bitcoin
+- Accédez à des récompenses durables et natives au protocole
+- Bénéficiez à la fois des émissions fixes et des revenus des frais de transaction
 
-**Risk Considerations:**
+**Considérations de risque :**
 
-- Bitcoin principal remains completely secure with no new trust assumptions
-- CORE delegation operates under the same trust assumptions as DPoS
-- Dual Staking does not change how you stake, just how you are rewarded
+- Le principal Bitcoin reste complètement sécurisé sans nouvelles hypothèses de confiance
+- La délégation de CORE fonctionne sous les mêmes hypothèses de confiance que le DPoS (Delegated Proof of Stake)
+- Le staking double ne change pas la façon dont vous stakez, juste la façon dont vous êtes récompensé
 
 ## Best Practices
 
