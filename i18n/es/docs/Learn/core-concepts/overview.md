@@ -3,54 +3,54 @@ sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 0
 description: ""
-slug: /learn/core-concepts/overview
+slug: ""
 ---
 
 # Descripción general de la cadena de bloques Core
 
 ---
 
-## Introduccion
+## Introducción
 
-Core is a high-performance, EVM-compatible Layer 1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. Al aprovechar los timelocks CLTV nativos de Bitcoin, el poder de hash de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como el principal protector y activo central de un ecosistema próspero de aplicaciones descentralizadas.
+Core es una blockchain de Capa 1 compatible con EVM, diseñada para ser la plataforma de contratos inteligentes complementaria y altamente escalable de Bitcoin. Al aprovechar los timelocks CLTV nativos de Bitcoin, el poder de hash de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como el principal protector y activo central de un ecosistema próspero de aplicaciones descentralizadas.
 
-### The First Self-Custodial Bitcoin Staking Mechanism
+### El Primer Mecanismo de Staking de Bitcoin Auto-Custodiado
 
-Satoshi Plus's Self-Custodial Bitcoin Staking component is the first live self-custodial Bitcoin staking mechanism, allowing Bitcoin holders to earn trustless yield without introducing new trust assumptions.
+El componente de Self-Custodial Bitcoin Staking de Satoshi Plus es el primer mecanismo de staking de Bitcoin auto-custodiado en funcionamiento, lo que permite a los holders de Bitcoin ganar rendimientos de forma trustless sin introducir nuevas suposiciones de confianza.
 
-### Harnessing Bitcoin's Security & Empowering Miners
+### Aprovechando la Seguridad de Bitcoin y Empoderando a los Mineros
 
-Currently, Satoshi Plus benefits from the security of ~75% of all Bitcoin mining hash power through delegation. By involving miners in validator elections, it leverages Bitcoin's unmatched decentralization while offering miners supplemental rewards, addressing the long-term decline in Bitcoin block rewards.
+Actualmente, Satoshi Plus se beneficia de la seguridad proporcionada por ~75% del poder de minado de Bitcoin mediante la delegación. Al involucrar a los mineros en las elecciones de validadores, se aprovecha la descentralización incomparable de Bitcoin mientras se ofrecen recompensas complementarias a los mineros, abordando así el problema de la disminución a largo plazo de las recompensas por bloque de Bitcoin.
 
 ## Tecnología Core
 
-### Satoshi Plus Consensus
+###
 
-This innovative consensus mechanism combines Delegated Proof of Work (DPoW), Self-Custodial Bitcoin Staking, and Delegated Proof of Stake (DPoS) thereby incorporating Bitcoin miners, Bitcoin stakers, and CORE stakers, respectively, in the election of Core validators. Each of these three legs of Satoshi Plus introduces a new layer of security and incentive alignment.
+Este innovador mecanismo de consenso combina Delegated Proof of Work (DPoW), Self-Custodial Bitcoin Staking y Delegated Proof of Stake (DPoS) Incorporando así a mineros de Bitcoin, stakers de Bitcoin y stakers de CORE, respectivamente, en la elección de validadores de Core. Cada una de estas tres partes de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
 
-### Advanced Smart Contract Capabilities
+### Capacidades Avanzadas de Contratos Inteligentes
 
-Core functions as a fully EVM compatible Layer 1 blockchain, providing developers with a robust and familiar environment to build and deploy applications. This deep compatibility enables seamless integration of existing Ethereum-based dapps with minimal modifications, accelerating ecosystem growth while leveraging established development tools, libraries, and best practices.
+Core funciona como una blockchain de Capa 1 totalmente compatible con EVM, brindando a los desarrolladores un entorno robusto y familiar para construir y desplegar aplicaciones. Esta compatibilidad profunda permite una integración fluida de dapps basadas en Ethereum, con modificaciones mínimas, lo que acelera el crecimiento del ecosistema mientras se aprovechan herramientas, bibliotecas y prácticas de desarrollo ya consolidadas.
 
-### High Performance
+### Alto Rendimiento
 
-Core's advanced validator election process enables the decentralized selection of high-performance and efficient block producers, resulting in rapid transaction speeds and low costs. The protocol's design preserves both decentralization and operational efficiency.
+El avanzado proceso de elección de validadores de Core permite una selección descentralizada de productores de bloques de alto rendimiento y eficiencia, lo que resulta en transacciones rápidas y de bajo costo. El diseño del protocolo preserva tanto la descentralización como la eficiencia operativa.
 
-### Cross-Chain Interoperability
+### Interoperabilidad Cross-Chain
 
-As a scalable, EVM-compatible blockchain, Core offers extensive cross-chain capabilities:
+Como una blockchain escalable y compatible con EVM, Core ofrece amplias capacidades de interoperabilidad entre cadenas:
 
-- **Core Bridge**: Powered by Layer Zero, the Core Bridge facilitates effortless asset transfers between Core and other blockchains
-- Integrations with multiple cross-chain decentralized applications and bridges
+- **Core Bridge**: Impulsado por Layer Zero, el Core Bridge facilita transferencias de activos sin fricciones entre Core y otras blockchains
+- Integraciones con múltiples aplicaciones descentralizadas y puentes cross-chain
 
-### Usability and Accessibility
+### Usabilidad y Accesibilidad
 
-- **User-Friendly Interfaces**: Products on Core are easily accessible through several commonly used wallets and interfaces
-- **Comprehensive Developer Tools**: An extensive suite of tools to help developers build, deploy, and manage applications on Core
+- **Interfaces Amigables**: Los productos construidos sobre Core son fácilmente accesibles mediante varias billeteras e interfaces ampliamente utilizadas
+- **Herramientas de Desarrollo Integrales**: Una suite extensa de herramientas para ayudar a los desarrolladores a construir, desplegar y gestionar aplicaciones en Core
 
-### Governance and Community Engagement
+### Gobernanza y Participación Comunitaria
 
-The Core blockchain features a foundational on-chain governance process. Key decisions—including changes to on-chain parameters, rewards mechanisms, and protocol adjustments—are enhanced through community participation and on-chain voting, giving users a direct say in the platform's development.
+La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. Key decisions—including changes to on-chain parameters, rewards mechanisms, and protocol adjustments—are enhanced through community participation and on-chain voting, giving users a direct say in the platform's development.
 
 ## The Core Builder Ecosystem
 
