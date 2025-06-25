@@ -5,65 +5,65 @@ sidebar_position: 0
 description: ""
 ---
 
-# Consensus Rewards
+# Recompensas de Consenso
 
 ---
 
-## Overview
+## Descripción general
 
-The Core network's reward system is a foundational component of the **Satoshi Plus consensus**, aligning incentives across miners, stakers, validators, relayers, and verifiers. Through this system, participants are compensated for contributing to network security, decentralization, and governance.
+El sistema de recompensas de la red Core es un componente fundamental del **consenso Satoshi Plus**, alineando incentivos entre mineros, stakers, validadores, relayers y verificadores. A través de este sistema, los participantes son compensados por contribuir a la seguridad, descentralización y gobernanza de la red.
 
-Rewards are distributed across four main categories:
+Las recompensas se distribuyen en cuatro categorías principales:
 
-1. Mining (DPoW)
-2. Staking (CORE and Bitcoin)
-3. Validator Operations
-4. System-Level Roles (Relayers and Verifiers)
+1. Minería (DPoW)
+2. Staking (CORE y Bitcoin)
+3. Operaciones de Validadores
+4. Roles a Nivel del Sistema (Relayers y Verificadores)
 
-## 1) Mining Rewards (Delegated Proof of Work)
+## 1) Recompensas por Minería (Delegated Proof of Work)
 
-**Who earns**: Bitcoin miners and mining pools
+**Quién gana**: Mineros de Bitcoin y pools de minería
 
-**Mechanism**:
+**Mecanismo**:
 
-- Miners include validator delegation metadata in the Bitcoin blocks they mine.
-- This enables them to extend support to Core without diverting resources from Bitcoin mining.
-- In return, miners earn **CORE tokens** as supplemental rewards, in addition to regular Bitcoin block rewards.
+- Los mineros incluyen metadatos de delegación de validadores en los bloques de Bitcoin que minan.
+- Esto les permite extender su apoyo a Core sin desviar recursos de la minería de Bitcoin.
+- A cambio, los mineros ganan **tokens CORE** como recompensas complementarias, además de las recompensas habituales por bloque de Bitcoin.
 
-## 2. Staking Rewards (CORE & Bitcoin)
+## 2. Recompensas por Staking (CORE y Bitcoin)
 
-**Who earns**: Holders of CORE or Bitcoin
+**Quién gana**: Poseedores de CORE o Bitcoin
 
-**Mechanism**:
+**Mecanismo**:
 
-- Participants delegate CORE or timelocked Bitcoin to validators.
-- Voting power is proportional to the amount delegated.
-- Rewards are distributed based on a validator's performance and the participant's share of total delegation.
+- Los participantes delegan CORE o Bitcoin timelocked a validadores.
+- El poder de voto es proporcional a la cantidad delegada.
+- Las recompensas se distribuyen en función del rendimiento del validador y de la proporción de delegación total que representa el participante.
 
-Rewards from staking encourage long-term participation and give delegators influence over validator selection.
+Las recompensas por staking fomentan la participación a largo plazo y otorgan a los delegadores influencia sobre la selección de validadores.
 
 ## 3. Recompensas del validador
 
-**Who earns**: Validators, and their delegators (miners, CORE stakers, Bitcoin stakers)
+**Quién gana:** Validadores y sus delegadores (mineros, stakers de CORE, stakers de Bitcoin)
 
-**Mechanism**:
+**Mecanismo**:
 
-- Validators earn from two sources:
-  - **Block Rewards**: Newly minted CORE tokens
-  - **Transaction Fees**: Collected from each processed block
-- Rewards are calculated and distributed at the **end of each round** (200 blocks / ~1 day)
+- Los validadores ganan desde dos fuentes:
+  - **Recompensas por Bloque**: Tokens CORE recién emitidos
+  - **Comisiones por Transacción**: Recaudadas de cada bloque procesado
+- Las recompensas se calculan y distribuyen **al final de cada ronda** (200 bloques / ~1 día)
 
-**Reward Split**:
+**Distribución de Recompensas**:
 
-- **90%** goes to validators (and their delegators/voters)
-- **10%** is allocated to the **System Reward Contract**
-- Validators take a commission before distributing remaining rewards to their delegators
+- **90%** va a los validadores (y sus delegadores/votantes)
+- **10%** se asigna al **System Reward Contract**
+- Los validadores aplican una comisión antes de distribuir las recompensas restantes a sus delegadores
 
-Validators are incentivized to offer competitive reward shares to attract delegators.
+Esto incentiva a los validadores a ofrecer una participación competitiva en las recompensas para atraer delegadores.
 
-## 4. Reward Distribution Formula
+## 4. Fórmula de Distribución de Recompensas
 
-After validator commission, the protocol calculates delegator rewards based on contribution type:
+Después de aplicar la comisión del validador, el protocolo calcula las recompensas de los delegadores en función del tipo de contribución:
 
 #### Delegadores de poder hash (mineros y grupos de minería)
 
@@ -94,55 +94,55 @@ donde:
 - $$l$$: Proporción de recompensas asignadas a la apuesta de BTC.
 - $$S$$: Puntuación híbrida del validador.
 
-## 5. Per-Unit Reward Calculations
+## Cálculos de Recompensa por Unidad
 
 Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad apostada de poder hash, CORE o BTC:
 
-- **Per unit hash power reward:** $$rHu$$ = $$\frac{rH}{rHp}$$
+- **Recompensa por unidad de hash power:** $$rHu$$ = $$\frac{rH}{rHp}$$
 - **Recompensa por unidad de CORE:** $$rSu$$ = $$\frac{rS}{rSp}$$
-- **Per unit BTC reward:** $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- **Recompensa por unidad de BTC:** $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Donde:
 
 - $$rHu$$ son las recompensas del poder hash del validador por unidad;
 - $$rSu$$ son las recompensas de apuesta de tokens CORE por unidad;
 - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e, f, g, h,..., etc) that is determined by a user's staking data as well as system Dual Staking settings. The settings are dynamically set through governance and reward users for pairing CORE and Bitcoin staking.
+- **Multiplicadores de Rendimiento:** Cada nivel de rendimiento mejorado tiene un multiplicador específico (e, f, g, h,..., etc) que se determina con base en los datos de staking del usuario y la configuración del sistema de Dual Staking. Estos parámetros son establecidos dinámicamente por gobernanza y recompensan a los usuarios por combinar staking de CORE y Bitcoin.
 
-## 6. Dual Staking Impact on Bitcoin Rewards
+## Impacto del Dual Staking en las Recompensas de Bitcoin
 
-Bitcoin staking rewards are tiered based on how much CORE a delegator has staked relative to their Bitcoin delegation.
+Las recompensas por staking de Bitcoin están organizadas por niveles, basados en cuánto CORE ha delegado un usuario en relación con su delegación de Bitcoin.
 
-- Higher tiers (e.g., Satoshi Tier) receive larger reward multipliers
-- This creates a **market-driven incentive** for pairing CORE with Bitcoin to boost returns
+- Los niveles superiores (por ejemplo, el Satoshi Tier) reciben multiplicadores de recompensa mayores
+- Esto crea un i**ncentivo impulsado por el mercado** para combinar CORE con Bitcoin y aumentar los rendimientos
 
-Learn more about [Dual Staking](../dual-staking/overview.md).
+Conoce más sobre [Dual Staking](../dual-staking/overview.md).
 
-## 7. Reward Optimization Strategies
+## Estrategias de Optimización de Recompensas
 
-Delegators are incentivized to:
+Los delegadores están incentivados a:
 
-- Choose validators with **smaller delegation pools**, where their stake makes up a larger percentage
-- Seek out validators with **lower commission fees**
-- Balance staking across under-subscribed validators to maximize marginal yield
+- Elegir validadores con **menores pools de delegación**, donde su participación represente un porcentaje más alto
+- Buscar validadores con **bajas comisiones**
+- Balancear el staking entre validadores con poca suscripción para maximizar el rendimiento marginal
 
-This dynamic fosters active delegation decisions and validator competition.
+Esta dinámica fomenta decisiones activas de delegación y competencia entre validadores.
 
-## 8. Relayer & Verifier Rewards
+## Recompensas para Relayers y Verifiers
 
 ### Relayers
 
-- Relay Bitcoin block and transaction data to Core
-- Paid from the **System Reward Contract**
-- Rewards are batched every **100 Bitcoin blocks**
-- Claimed periodically by relayers
+- Transmiten bloques y datos de transacciones de Bitcoin hacia Core
+- Son pagados desde el **System Reward Contract**
+- Las recompensas se agrupan cada **100 bloques de Bitcoin**
+- Se reclaman periódicamente por los relayers
 
 ### Verifiers
 
-- Monitor validators for malicious behavior (e.g. double signing)
-- When they submit valid reports, rewards are issued **immediately** from the System Reward Contract
+- Monitorean a los validadores por comportamientos maliciosos (por ejemplo, double signing)
+- Al presentar reportes válidos, reciben recompensas **inmediatamente** del System Reward Contract
 
-**Note:** The **System Reward Contract** is capped at **10 million CORE tokens**. Any overflow is **burned**, making excess participation deflationary.
+**Nota:** El System Reward Contract está limitado a **10 millones de tokens CORE**. Cualquier exceso **se quema**, haciendo que la participación adicional sea deflacionaria.
 
 ## Conclusión
 
@@ -150,4 +150,4 @@ This dynamic fosters active delegation decisions and validator competition.
 ![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
 </p>
 
-Core's reward system properly incentivizes and aligns **miners, stakers, validators, and infrastructure roles**. Through a transparent and configurable system, rewards drive security, decentralization, and sustained community participation across Satoshi Plus consensus.
+El sistema de recompensas de Core incentiva y alinea adecuadamente a los **mineros, stakers, validadores y roles de infraestructura**. A través de un sistema transparente y configurable, las recompensas impulsan la seguridad, la descentralización y la participación sostenida de la comunidad en el consenso Satoshi Plus.
