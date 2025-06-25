@@ -120,73 +120,73 @@ También puedes usar los deslizadores en la sección inferior para visualizar el
 
 <p align="center" style={{zoom:"60%"}}></p>
 
-Para obtener el máximo impulso de recompensas sobre tu cantidad apostada, en la sección **Dual Staking Tiers**, ajusta el deslizador de Bitcoin Staked a la cantidad de Bitcoin que deseas poner en staking y haz clic en el botón **Max Boost**. This will automatically set the corresponding CORE amount in the "CORE Staked" slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the "Max Boost" button again to update the recommended Bitcoin amount in the "BTC Staked" bar.
+Para obtener el máximo impulso de recompensas sobre tu cantidad apostada, en la sección **Dual Staking Tiers**, ajusta el deslizador de Bitcoin Staked a la cantidad de Bitcoin que deseas poner en staking y haz clic en el botón **Max Boost**. Esto ajustará automáticamente la cantidad correspondiente en el deslizador "CORE Staked" para desbloquear el boost máximo. También puedes ajustar manualmente la cantidad de CORE en staking y luego hacer clic nuevamente en "Max Boost" para actualizar la cantidad recomendada de Bitcoin en la barra "BTC Staked".
 
 <p align="center"></p>
 
-Next to the Summary tab, you can find **Details** page, which shows staking details, including:
+Junto a la pestaña Summary, puedes encontrar la página **Details**, que muestra información detallada sobre el staking, incluyendo:
 
-- **New Staked Bitcoin**: The amount of BTC you plan to stake and the current reward rate.
-- **New Staked CORE**: The amount of CORE you plan to stake and the current reward rate.
-- **Active Staked Bitcoin**: The amount of BTC currently staked and the average earning reward rate across validators.
-- **Active Staked CORE**: The amount of CORE currently staked and the average earning reward rate across validators.
+- **New Staked Bitcoin**: La cantidad de BTC que planeas apostar y la tasa de recompensa actual.
+- **New Staked CORE**: La cantidad de CORE que planeas poner en staking y la tasa de recompensa actual.
+- **Active Staked Bitcoin**: La cantidad de BTC actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
+- **Active Staked CORE**: La cantidad de CORE actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
-## Finalizing Dual Staking Transactions
+## Finalización de Transacciones de Dual Staking
 
-Once you have specified the amount of BTC/CORE to stake and the validators for delegation, respectively, you can click on the **Proceed to Stake** button.
-
-<p align="center" style={{zoom:"70%"}}></p>
-
-On the **Stake CORE** page, confirm the amount of CORE to stake along with Bitcoin, and click the **Confirm** button.
+Una vez que hayas especificado la cantidad de BTC/CORE a hacer staking y los validadores a los que deseas delegar, respectivamente, puedes hacer clic en el botón \*\*Proceed to Stake \*\*.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
-By clicking **Confirm**, you will get a notification from your connected Core wallet to complete the transaction.
-
-Once you confirm the transaction, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click **My Staking** to see your staking records or **View on CoreScan** to review this transaction.
-
-<p align="center"></p>
-
-On the **Stake BTC** page, confirm the amount of Bitcoin to stake. Before finalizing the Bitcoin staking process, it's essential to understand and specify several key parameters:
-
-**Specifying the amount of Bitcoin you'd like to delegate**
-
-The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
-In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement
-
-**Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.**
-
-Select inside the lock time box to input values, or click on the calendar icon to select the date, and click 'OK' to proceed.
-The default lock time is set to a month in advance.
-
-**Specify the network priority speed for your transaction**
+En la página **Stake CORE**, confirma la cantidad de CORE a hacer  staking junto con Bitcoin y haz clic en el botón **Confirm**.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
-Finally, click **Confirm** to complete the transaction.
+Al hacer clic en **Confirm**, recibirás una notificación desde tu wallet Core conectada para completar la transacción.
 
-## Confirm OP_Return Output
-
-Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP_Return output. The OP_Return output is where your redeem_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP_Return. **Abort the transaction if it doesn't include the OP_Return output.**
+Una vez que confirmes la transacción, recibirás una notificación **Transaction Submitted** en la esquina superior derecha de tu pantalla. Puedes hacer clic en **My Staking** para ver tus registros de staking o en **View on CoreScan** para revisar esta transacción.
 
 <p align="center"></p>
 
-Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click on **My Staking** to see your staking records or **View on Bitcoin Explorer** to review this transaction.
+En la página **Stake BTC**, confirma la cantidad de Bitcoin que deseas poner en staking. Antes de finalizar el proceso de staking de Bitcoin, es esencial comprender y especificar varios parámetros clave:
+
+**Especificar la cantidad de Bitcoin que deseas delegar**
+
+La cantidad mínima para delegar es 0.01 Bitcoin si lo haces a través del sitio web oficial.
+En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo cual cumple con este requisito
+
+**Establecer el tiempo de bloqueo determina cuándo tu Bitcoin en staking será desbloqueado y estará disponible nuevamente para redención o re-delegación.**
+
+Haz clic dentro del cuadro de bloqueo para introducir valores manualmente o selecciona una fecha usando el ícono del calendario, y luego haz clic en 'OK' para continuar.
+El tiempo de bloqueo por defecto está fijado a un mes en el futuro.
+
+**Especificar la prioridad de velocidad en la red para tu transacción**
+
+<p align="center" style={{zoom:"70%"}}></p>
+
+Finalmente, haz clic en **Confirm** para completar la transacción.
+
+## Confirmar la Salida OP_Return
+
+Antes de firmar la transacción en tu wallet, verifica las salidas de la transacción para asegurarte de que incluyan una salida OP_Return. La salida OP_Return es donde se guarda tu redeem_script y es esencial para redimir tu Bitcoin en staking. Puede haber dos o tres salidas en total, pero al menos una siempre debe ser OP_Return. **Cancela la transacción si no incluye una salida OP_Return.**
 
 <p align="center"></p>
 
-## Verify Transaction Submission and Staking Records
-
-In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
+Una vez que confirmes la transacción, recibirás una notificación **Transaction Submitted** en la esquina superior derecha de tu pantalla. Puedes hacer clic en **My Staking** para ver tus registros de staking o en **View on Bitcoin Explorer** para revisar esta transacción.
 
 <p align="center"></p>
 
-The **My Staking** page displays records of all your staking activities (CORE, BTC, Bitcoin hash power). Click on the respective **CORE**, **BTC**, and **Hash** tabs to view details on your staking and delegations.
+## Verificar la Envío de Transacción y Registros de Staking
+
+En la esquina superior derecha del sitio web de staking, coloca el cursor sobre tu wallet conectada y haz clic en **My Staking**.
 
 <p align="center"></p>
 
-## Conclusion
+La página **My Staking** muestra los registros de todas tus actividades de staking (CORE, BTC, hash power de Bitcoin). Haz clic en las pestañas respectivas **CORE**, **BTC** y **Hash** para ver los detalles sobre tu staking y delegaciones.
 
-You have successfully staked your Bitcoin and CORE on the Core blockchain and will now actively earn CORE tokens as rewards. By staking Bitcoin and voting for validators, you actively contribute to the governance and security of the Core network, supporting its decentralization and stability. In addition, through Dual Staking, you help strengthen the connection between the Bitcoin and Core blockchain, aligning incentives and creating value across both ecosystems.
+<p align="center"></p>
+
+## Conclusión
+
+Has puesto en staking exitosamente tu Bitcoin y CORE en la blockchain de Core y ahora comenzarás a ganar tokens CORE como recompensas. Al hacer staking de Bitcoin y votar por validadores, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad. Además, mediante el Dual Staking, ayudas a fortalecer la conexión entre las blockchains de Bitcoin y Core, alineando incentivos y generando valor a lo largo de ambos ecosistemas.
