@@ -5,39 +5,39 @@ sidebar_position: 0
 description: ""
 ---
 
-# Core Validator Election
+# Elección de Validadores en Core
 
 ---
 
 ## Descripción general
 
-Core's Satoshi Plus consensus draws validator support from three delegation sources:
+El consenso Satoshi Plus de Core obtiene apoyo para los validadores desde tres fuentes de delegación:
 
-- **Delegated Proof of Work (DPoW)** from Bitcoin miners
-- **Self-Custodial Bitcoin Staking** from Bitcoin holders
-- **Delegated Proof of Stake (DPoS)** from CORE token holders
+- **Delegated Proof of Work (DPoW)** de los mineros de Bitcoin
+- **Staking de Bitcoin con autocustodia** de los holders de Bitcoin
+- **Delegated Proof of Stake (DPoS)** de los holders del token CORE
 
-Each source contributes to a validator's **hybrid score**, which determines their election into the active validator set.
+Cada fuente contribuye al **hybrid score** de un validador, el cual determina su elección en el conjunto activo de validadores.
 
-## Election Process
+## Proceso de Elección
 
 <p align="center">
 ![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
 </p>
 
-### 1. Delegation of Support
+### Delegación de Apoyo
 
-Validators receive support from three sources:
+Los validadores reciben apoyo desde tres fuentes:
 
-- **Bitcoin Holders**: Timelock Bitcoin using CLTV and embed validator metadata in the redeem script to vote for validators.
-- **Bitcoin Miners**: Delegate hash power by including validator votes in the op_return field of Bitcoin coinbase transactions.
-- **CORE Token Holders**: Delegate CORE tokens directly to preferred validators.
+- **Holders de Bitcoin:** Bloquean su Bitcoin usando CLTV e insertan metadatos del validador en el redeem script para votar por validadores.
+- **Mineros de Bitcoin**: Delegan hash power incluyendo votos a validadores en el campo op_return de las transacciones coinbase de Bitcoin.
+- **Holders de CORE**: Delegan tokens CORE directamente a los validadores preferidos.
 
-Each form of delegation contributes to validator selection and reward eligibility.
+Cada forma de delegación contribuye a la selección del validador y a su elegibilidad para recompensas.
 
-### 2. Hybrid Score Calculation
+### Cálculo del Puntaje Híbrido
 
-Validators are ranked by a **hybrid score** that blends the three forms of support:
+Los validadores son clasificados por un **hybrid score** que combina las tres formas de apoyo:
 
 $$
 S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
