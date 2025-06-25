@@ -34,56 +34,56 @@ El instrumento más importante que utiliza Core es ajustar la **proporción CORE
 - El protocolo reduce el requisito de proporción CORE a Bitcoin
 - Más participantes obtienen acceso, distribuyendo mejor los rendimientos
 
-## Key Factors Influencing Adjustments
+## Factores Clave que Influyen en los Ajustes
 
-Several variables determine when and how tier requirements change:
+Varios factores determinan cuándo y cómo cambian los requisitos de los tiers:
 
-- **Participation Levels**: How many participants qualify for each tier
-- **Asset Prices**: Current market prices of CORE and Bitcoin
-- **Reward Pool Distribution**: How rewards are split across tiers
-- **Network Alignment Goals**: Maintaining incentives for Core-committed participants
+- **Niveles de participación**: cuántos participantes califican para cada tier
+- **Precios de los activos**: precios actuales de mercado de CORE y Bitcoin
+- **Distribución del fondo de recompensas**: cómo se reparten las recompensas entre los tiers
+- **Objetivos de alineación de red**: mantener los incentivos para participantes comprometidos con Core
 
-## Practical Examples
+## Ejemplos Prácticos
 
-### Scenario 1: Increasing Requirements
+### Escenario 1: Aumento de Requisitos
 
-1. Dual Staking adoption grows significantly
-2. Many new participants qualify for Satoshi Tier
-3. Individual yields decrease due to reward pool dilution
-4. Protocol increases CORE-to-Bitcoin requirement for Satoshi Tier
-5. Some participants drop to lower tiers
-6. Remaining Satoshi Tier participants see yield recovery
+1. La adopción de Dual Staking crece significativamente
+2. Muchos nuevos participantes califican para el Satoshi Tier
+3. Los rendimientos individuales disminuyen debido a la dilución del fondo de recompensas
+4. El protocolo aumenta el requisito de CORE a Bitcoin para el Satoshi Tier
+5. Algunos participantes bajan a tiers inferiores
+6. Los participantes restantes del Satoshi Tier ven una recuperación del rendimiento
 
-### Scenario 2: Decreasing Requirements
+### Escenario 2: Reducción de Requisitos
 
-1. Market conditions make Satoshi Tier very exclusive
-2. Only a small number of participants qualify
-3. High yields but limited accessibility
-4. Protocol decreases CORE-to-Bitcoin requirement
-5. More participants gain Satoshi Tier access
-6. Yields become more balanced across broader participant base
+1. Las condiciones de mercado vuelven al Satoshi Tier muy exclusivo
+2. Solo un número reducido de participantes califica
+3. Rendimientos altos pero accesibilidad limitada
+4. El protocolo reduce el requisito de CORE a Bitcoin
+5. Más participantes obtienen acceso al Satoshi Tier
+6. Los rendimientos se vuelven más equilibrados entre una base más amplia de participantes
 
-## Impact on Participants
+## Impacto en los Participantes
 
-### For Existing Satoshi Tier Participants
+### Para Participantes Existentes en el Satoshi Tier
 
-- May need to increase CORE holdings to maintain tier status
-- Benefit from higher yields when requirements increase
-- Incentivized to maintain strong CORE-to-Bitcoin ratios
+- Podrían necesitar aumentar sus tenencias de CORE para mantener su estatus en el tier
+- Se benefician de mayores rendimientos cuando aumentan los requisitos
+- Están incentivados a mantener fuertes proporciones CORE-a-Bitcoin
 
-### For Lower Tier Participants
+### Para Participantes en Tiers Inferiores
 
-- May gain access to higher tiers when requirements decrease
-- Motivated to acquire more CORE tokens for tier advancement
-- Can plan CORE accumulation strategies around adjustment patterns
+- Pueden obtener acceso a tiers más altos cuando disminuyen los requisitos
+- Están motivados a adquirir más tokens CORE para avanzar de tier
+- Pueden planificar estrategias de acumulación de CORE en función de los patrones de ajuste
 
-## Monitoring Adjustments
+## Monitoreo de los Ajustes
 
-Participants can track tier requirement changes and their impact through:
+Los participantes pueden seguir los cambios en los requisitos de los tiers y su impacto a través de:
 
-- **Live monitoring** at [stake.coredao.org/staking](https://stake.coredao.org/staking)
-- **Announcements** via official Core channels
+- **Monitoreo en vivo** en [stake.coredao.org/staking](https://stake.coredao.org/staking)
+- **Anuncios** en los canales oficiales de Core
 
-## Why It Matters
+## Por qué es importante
 
-The tier adjustment system ensures that Core's Dual Staking mechanism remains economically sustainable and continues to incentivize the behavior most beneficial to the network: Bitcoin stakers becoming CORE stakers and demonstrating long-term commitment to the Core ecosystem. This creates a self-reinforcing cycle where network growth supports participant rewards, and participant rewards drive network growth.
+El sistema de ajuste de tiers garantiza que el mecanismo de Dual Staking de Core se mantenga económicamente sostenible y continúe incentivando el comportamiento más beneficioso para la red: que los Bitcoin stakers se conviertan en CORE stakers y demuestren un compromiso a largo plazo con el ecosistema Core. Esto crea un ciclo autosostenible, donde el crecimiento de la red respalda las recompensas para los participantes e impulsan a su vez el crecimiento y la seguridad de la red.
