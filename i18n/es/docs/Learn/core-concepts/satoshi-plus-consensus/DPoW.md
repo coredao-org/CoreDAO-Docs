@@ -11,85 +11,83 @@ description: ""
 
 ## Descripción general
 
-Delegated Proof of Work (DPoW) introduces an innovative way to incorporate Bitcoin's miners in the security and validator election process of Satoshi Plus consensus—without requiring any additional computation.
+Delegated Proof of Work (DPoW) introduce una forma innovadora de incorporar a los mineros de Bitcoin en el proceso de seguridad y elección de validadores del consenso Satoshi Plus, sin requerir cómputo adicional.
 
-DPoW forms a **symbiotic relationship** between the Bitcoin and Core networks:
+DPoW establece una **relación simbiótica** entre las redes Bitcoin y Core:
 
-- Bitcoin miners gain a second block reward through CORE token rewards
-- Core benefits from Bitcoin's unmatched security and decentralized infrastructure
+- Los mineros de Bitcoin obtienen una segunda recompensa de bloque a través de recompensas en tokens CORE
+- Core se beneficia de la seguridad inigualable y de la infraestructura descentralizada de Bitcoin.
 
-<p align="center">
-![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
-</p>
+<p align="center"></p>
 
-## Core Concepts
+## Conceptos Clave
 
-- No new hardware or mining activity required
-- Miners maintain standard Bitcoin mining operations
-- Miners delegate their hash power to vote for Core validators via metadata
-- Miners earn CORE rewards in addition to their Bitcoin rewards
+- No se necesita nuevo hardware ni actividad minera adicional
+- Los mineros mantienen sus operaciones estándar de minería de Bitcoin
+- Los mineros delegan su hash power para votar por validadores de Core mediante metadatos
+- Los mineros ganan recompensas en CORE además de sus recompensas en Bitcoin
 
-## How DPoW Works
+## Cómo Funciona DPoW
 
-### 1. Mining Integration
+### Integración con la Minería
 
-Bitcoin miners continue their usual mining operations. To participate in DPoW, they include **delegation metadata** in the op_return field of the coinbase transaction. This metadata contains:
+Los mineros de Bitcoin continúan sus operaciones habituales.  Para participar en DPoW, deben incluir **metadatos de delegación** en el campo op_return de la transacción coinbase. Estos metadatos incluyen:
 
-- **Core Validator Address**: The validator the miner is supporting
-- **CORE Reward Address**: Where the miner wants their CORE rewards sent
+- **Dirección del Validador de Core:** el validador que el minero está respaldando
+- **Dirección de Recompensa en CORE**: la dirección donde el minero quiere recibir sus recompensas en CORE
 
-This process:
+Este proceso:
 
-- Requires no extra energy
-- Does not interfere with Bitcoin mining
-- Extends miner protection to the Core network
+- No requiere energía adicional
+- No interfiere con la minería de Bitcoin
+- Extiende la protección del minero a la red Core
 
-### 2. Relayers and Data Flow
+### Relayers y Flujo de Datos
 
-To capture this delegation information:
+Para capturar esta información de delegación:
 
-- **Relayers** monitor the Bitcoin blockchain in real time
-- An **on-chain BTC light client** extracts delegation metadata
-- Data is sent to the **Core Delegation Hub**, which:
-  - Validates the data
-  - Aggregates delegations
-  - Assigns weight to validators based on miner hash power
+- **Relayers** monitorean en tiempo real la blockchain de Bitcoin
+- Un **BTC light client on-chain** extrae los metadatos de delegación
+- Los datos son enviados al **Core Delegation Hub**, que:
+  - Valida los datos
+  - Agrega las delegaciones
+  - Asigna peso a los validadores según el hash power de los mineros
 
-### 3. Validator Election Process
+### Proceso de Elección de Validadores
 
-Every day, Core calculates validator scores using miner delegation data from **one week prior**. Validators with higher delegated hash power have higher election probability
+Cada día, Core calcula las puntuaciones de los validadores utilizando los datos de delegación de mineros de **una semana antes**. Los validadores con mayor hash power delegado tienen una mayor probabilidad de ser elegidos
 
-### 4. Rewards and Incentives
+### Recompensas e Incentivos
 
-- Elected validators earn CORE rewards for producing blocks
-- Validators take a small commission
-- Remaining rewards are passed to delegators (including participating miners)
+- Los validadores elegidos ganan recompensas en CORE por producir bloques
+- Los validadores toman una pequeña comisión
+- Las recompensas restantes se reparten entre los delegadores (incluidos los mineros participantes)
 
-**Outcome:** Miners earn both:
+**Resultado:** Los mineros ganan ambas recompensas:
 
-- Bitcoin rewards (as usual)
-- CORE token rewards (via validator delegation)
+- Recompensas en Bitcoin (como de costumbre)
+- Recompensas en tokens CORE (a través de la delegación a validadores)
 
-## Benefits
+## Beneficios
 
-### For Bitcoin Miners
+### Para Mineros de Bitcoin
 
-- **Earn More**: Gain CORE tokens with no added energy cost
-- **Stay Independent**: Continue mining Bitcoin without operational changes
-- **Diversify Returns**: Earn CORE tokens in addition to Bitcoin rewards
+- **Gana Más**: Obtén tokens CORE sin costo energético adicional
+- **Permanece Independiente**: Sigue minando Bitcoin sin cambios operativos
+- **Diversifica Retornos**: Gana tokens CORE además de las recompensas en Bitcoin
 
-### For Core
+### Para Core
 
-- **Bitcoin Security**: Integrates real PoW into its validator election
-- **Decentralized Validator Set**: Miners from anywhere can help secure Core
-- **Ecosystem Alignment**: Miner economic interests are aligned with the Core network
+- **Seguridad de Bitcoin**: Integra PoW real en su elección de validadores
+- **Conjunto de Validadores Descentralizado:** Mineros de cualquier parte del mundo pueden ayudar a asegurar Core
+- **Alineación del Ecosistema**: Los intereses económicos de los mineros se alinean con la red Core
 
-## Best Practices for Miners
+## Mejores Prácticas para Mineros
 
-- Select trustworthy Core validators
-- Ensure correct metadata in op_return field
-- Monitor your CORE rewards address for incoming distributions
-- Maintain consistent mining operations to ensure reliable delegation
+- Selecciona validadores confiables de Core
+- Asegúrate de usar metadatos correctos en el campo op_return
+- Monitorea tu dirección de recompensas CORE para verificar distribuciones entrantes
+- Mantén operaciones mineras constantes para asegurar una delegación confiable
 
 ## Potential Challenges & Mitigations
 
