@@ -33,37 +33,37 @@ Le double staking nécessite une participation simultanée à deux branches du c
 - Déléguer des tokens CORE à des validateurs sur le réseau Core
 - Soutenir les mêmes validateurs ou des validateurs différents de ceux choisis pour le staking de Bitcoin
 
-### 2. Tiered Yield System
+### 2. Système de rendement à plusieurs niveaux
 
-The protocol uses a **tier-based multiplier system** to enhance Bitcoin staking rewards for Dual Stakers:
+Le protocole utilise un **système de multiplicateurs basé sur les niveaux** pour augmenter les récompenses de staking Bitcoin pour les Dual Stakers:
 
-| **Tier**         | **CORE-to-Bitcoin Ratio (R)** | **Label**           | **Description**               |
-| ---------------- | ------------------------------------------------ | ------------------- | ----------------------------- |
-| **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | No CORE delegation            |
-| **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Entry-level Dual Staking tier |
-| **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Higher CORE-to-Bitcoin ratio  |
-| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Highest tier; maximum rewards |
+| **Tier**         | **CORE-to-Bitcoin Ratio (R)** | **Label**           | **Description**                              |
+| ---------------- | ------------------------------------------------ | ------------------- | -------------------------------------------- |
+| **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | Aucune délégation de CORE                    |
+| **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Niveau d'entrée de double staking            |
+| **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Ratio CORE-Bitcoin plus élevé                |
+| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
 
-- Tier thresholds (**R₁, R₂, R₃**) are dynamic and adjust based on network conditions.
-- Higher tiers unlock progressively greater **reward multipliers**.
+- Les seuils de niveau (R₁, R₂, R₃) sont dynamiques et s'ajustent en fonction des conditions du réseau.
+- Les niveaux supérieurs débloquent des **multiplicateurs de récompenses** de plus en plus élevés.
 
-### 3. Example Calculation
+### 3. Exemple de calcul
 
-Suppose you stake **10 Bitcoin**.
+Supposons que vous stakiez **10 Bitcoin**.
 
-If tier ratios are defined as:
+Si les ratios de niveau sont définis comme :
 
 - **R₁ = 3,625 CORE/Bitcoin**
 - **R₂ = 10,875 CORE/Bitcoin**
 - **R₃ = 29,000 CORE/Bitcoin**
 
-Then your thresholds would be:
+Alors vos seuils seraient :
 
-| **Tier**     | **CORE Required** |
-| ------------ | ----------------- |
-| Boost Tier   | 36,250 CORE       |
-| Super Tier   | 108,750 CORE      |
-| Satoshi Tier | 290,000 CORE      |
+| **Tier**     | **CORE requis** |
+| ------------ | --------------- |
+| Boost Tier   | 36,250 CORE     |
+| Super Tier   | 108,750 CORE    |
+| Satoshi Tier | 290,000 CORE    |
 
 Your reward tier is determined by how much CORE you've delegated relative to your staked Bitcoin.
 
