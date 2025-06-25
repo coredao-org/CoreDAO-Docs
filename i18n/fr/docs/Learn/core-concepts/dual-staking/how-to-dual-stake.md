@@ -145,32 +145,32 @@ Vous pouvez également utiliser les curseurs dans la section ci-dessous pour voi
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
-To get the maximum reward boost on your staked amount, under the **Dual Staking Tiers** section, adjust the Bitcoin Staked slider to the amount of Bitcoin you want to stake and click the **Max Boost** button. This will automatically set the corresponding CORE amount in the "CORE Staked" slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the "Max Boost" button again to update the recommended Bitcoin amount in the "BTC Staked" bar.
+Pour obtenir le maximum de boost de récompense sur votre montant staké, dans la section **Dual Staking Tiers**, ajustez le curseur **Btc Staked** au montant de Btc que vous souhaitez staker et cliquez sur le bouton **Max Boost**. Cela définira automatiquement le montant de CORE correspondant dans le curseur “CORE Staked“ pour débloquer le boost maximum. Vous pouvez également ajuster manuellement le CORE staké puis cliquer à nouveau sur le bouton "Max Boost" pour mettre à jour le montant de BTC recommandé dans la barre "BTC Staked".
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
-Next to the Summary tab, you can find **Details** page, which shows staking details, including:
+À côté de l'onglet **Summary**, vous pouvez trouver la page **Details**, qui affiche les détails du staking, y compris :
 
-- **New Staked Bitcoin**: The amount of BTC you plan to stake and the current reward rate.
-- **New Staked CORE**: The amount of CORE you plan to stake and the current reward rate.
-- **Active Staked Bitcoin**: The amount of BTC currently staked and the average earning reward rate across validators.
-- **Active Staked CORE**: The amount of CORE currently staked and the average earning reward rate across validators.
+- **New Staked BTC :** Le montant de BTC que vous prévoyez de staker et le taux de récompense actuel.
+- **New Staked CORE :** Le montant de CORE que vous prévoyez de staker et le taux de récompense actuel.
+- **Active Staked BTC :** Le montant de BTC actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
+- **Active Staked CORE :** Le montant de CORE actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
-## Finalizing Dual Staking Transactions
+## Finalisation des Transactions de Dual Staking
 
-Once you have specified the amount of BTC/CORE to stake and the validators for delegation, respectively, you can click on the **Proceed to Stake** button.
+Une fois que vous avez spécifié le montant de BTC/CORE à staker et les validateurs pour la délégation respectivement, vous pouvez cliquer sur le bouton **Proceed to Stake**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
-On the **Stake CORE** page, confirm the amount of CORE to stake along with Bitcoin, and click the **Confirm** button.
+Sur la page **Stake CORE**, confirmez le montant de CORE à staker avec le BTC, puis cliquez sur le bouton **Confirm**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
@@ -206,27 +206,27 @@ Enfin, cliquez sur **Confirm** pour compléter la transaction.
 
 ## Confirmer la Sortie OP_Return
 
-Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. The OP_Return output is where your redeem_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP_Return. **Abort the transaction if it doesn't include the OP_Return output.**
+Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. **Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.**
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
-Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click on **My Staking** to see your staking records or **View on Bitcoin Explorer** to review this transaction.
+Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on Btc Explorer** pour revoir cette transaction.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
-## Verify Transaction Submission and Staking Records
+## Vérifier la Soumission de la Transaction et les Enregistrements de Staking
 
-In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
+Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-The **My Staking** page displays records of all your staking activities (CORE, BTC, Bitcoin hash power). Click on the respective **CORE**, **BTC**, and **Hash** tabs to view details on your staking and delegations.
+La page **My Staking** affiche les enregistrements de toutes vos activités de staking (CORE, BTC, hash). Cliquez sur les onglets respectifs **CORE**, **BTC**, et **Hash** pour voir les détails de votre staking et de vos délégations.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
@@ -234,4 +234,4 @@ The **My Staking** page displays records of all your staking activities (CORE, B
 
 ## Conclusion
 
-You have successfully staked your Bitcoin and CORE on the Core blockchain and will now actively earn CORE tokens as rewards. By staking Bitcoin and voting for validators, you actively contribute to the governance and security of the Core network, supporting its decentralization and stability. In addition, through Dual Staking, you help strengthen the connection between the Bitcoin and Core blockchain, aligning incentives and creating value across both ecosystems.
+Vous avez staké avec succès votre Bitcoin et votre CORE sur la blockchain Core et gagnerez désormais activement des tokens CORE en tant que récompenses. En stakant du Bitcoin et en votant pour des validateurs, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité. De plus, grâce au Dual Staking, vous aidez à renforcer la connexion entre la blockchain Bitcoin et Core, alignant les incitations et créant de la valeur à travers les deux écosystèmes.
