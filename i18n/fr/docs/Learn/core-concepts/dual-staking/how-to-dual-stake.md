@@ -73,73 +73,73 @@ Entrez le montant de Bitcoin que vous souhaitez staker. Le montant minimum est d
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
 </p>
 
-## Selecting a Core Validator for Bitcoin Delegation
+## Sélection d'un Validateur Core pour la Délégation de Bitcoin
 
-Under **Delegate to Validator**, from the drop-down menu, select an active validator to whom you want to delegate your Bitcoin.
+Sous **Delegate to Validator**, dans le menu déroulant, sélectionnez un **validateur actif** à qui vous souhaitez déléguer votre Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-4.png)
 </p>
 
-## Specifying the CORE Amount to Stake
+## Spécifier le Montant de CORE à Staker
 
-Enter the amount of CORE you want to stake. The minimum amount is 1 CORE.
+Entrez le montant de CORE que vous souhaitez staker. Le montant minimum est de 1 CORE.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-5.png)
 </p>
 
-## Selecting a Core Validator for CORE Delegation
+## Sélection d'un Validateur Core pour la Délégation de CORE
 
-After specifying the amount of CORE to stake, choose the validator to whom you will delegate your CORE. Ensure that you select an active validator from the drop-down.
+Après avoir spécifié le montant de CORE à staker, choisissez le validateur auquel vous allez déléguer votre CORE. Assurez-vous de sélectionner un validateur actif dans le menu déroulant.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
-## Confirming CORE and BTC Staking Details
+## Confirmation des détails de staking CORE et BTC
 
-Verify that the staked CORE amount and selected Validator are correct and then press **Confirm**.
+Vérifiez que le montant de CORE staké et le Validateur sélectionné sont corrects, puis appuyez sur _Confirm\*\*.
 
-Similarly, verify that the staked Bitcoin amount and selected Validator are correct and then press **Confirm**.
+De même, vérifiez que le montant de Btc staké et le Validateur sélectionné sont corrects, puis appuyez sur **Confirm**.
 
-## Verify Bitcoin Staking Address
+## Vérifier l'adresse de staking Btc
 
-Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their Bitcoin staking address, helping prevent blind signing and enhancing the security of the staking process.
+Avant de procéder à la confirmation de votre transaction de staking. Cette fonctionnalité de vérification permet aux utilisateurs de vérifier indépendamment leur adresse de staking Btc, contribuant à prévenir les signatures aveugles et à renforcer la sécurité du processus de staking.
 
-To proceed with verification, click on the **Verify the Bitcoin Staking Address** button. This will navigate you to the external website.
+Pour procéder à la vérification, cliquez sur le bouton **Verify the Btc Staking Address**. Cela vous redirigera vers le site Web externe.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
-On the Verification Website UI, ensure that the fetched data is correct and then click on the **Submit** button.
+Sur l'interface utilisateur du site Web de vérification, assurez-vous que les données récupérées sont correctes, puis cliquez sur le bouton **Submit**.
 
 <p align="center" style={{zoom:"35%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
-The verification result will appear in the Verification Result section.
+Le résultat de la vérification apparaîtra dans la section **Verification Result**.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-Once verified, navigate back to [stake.coredao.org](https://stake.coredao.org) and continue by clicking on **Approve Transaction**.
+Une fois vérifié, revenez sur (stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
 
 <p align="center">
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
-## Adjusting CORE:BTC Ratios for Higher Yields
+## Ajustement des Ratios CORE:BTC pour des Rendements Plus Élevés
 
-On the right side of the Staking Calculator, there is a **Summary** tab that calculates the Total Staking Reward Rate and Projected Annual Rewards. These are estimated annual return numbers for staked Bitcoin and CORE. The reward rate may fluctuate daily based on the total and weighted amounts of delegations that validators receive. When set to the **Current** button, it displays only the real-time estimated staking reward rate. When set to the **Overall** button, it represents the average of two components: the rates from all validators based on previous staking records and the real-time estimated staking reward rate.
+Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Lorsque l'option **Current** est sélectionnée, elle affiche uniquement le taux de récompense de staking estimé en temps réel. Lorsque l'option **Overall** est sélectionnée, elle représente la moyenne de deux composants : les taux de tous les validateurs basés sur les enregistrements de staking précédents et le taux de récompense de staking estimé en temps réel.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
-You can also use the sliders in the section below to see the effect of CORE:BTC staking ratio on your Total Staking Reward Rate.
+Vous pouvez également utiliser les curseurs dans la section ci-dessous pour voir l'effet du ratio de staking CORE:BTC sur votre Taux de Récompense Total de Staking.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
@@ -191,22 +191,22 @@ Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de fin
 Le montant minimum à déléguer est de 0,01 Bitcoin, si la délégation se fait via l'interface officielle du site.
 Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
 
-**Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.**
+**Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.**
 
-Select inside the lock time box to input values, or click on the calendar icon to select the date, and click 'OK' to proceed.
-The default lock time is set to a month in advance.
+Sélectionnez à l'intérieur de la boîte de temps de verrouillage pour entrer des valeurs, ou cliquez sur l'icône du calendrier pour sélectionner la date et cliquez sur ’OK’ pour continuer.
+Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 
-**Specify the network priority speed for your transaction**
+**Spécifier la priorité du réseau pour votre transaction**
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
-Finally, click **Confirm** to complete the transaction.
+Enfin, cliquez sur **Confirm** pour compléter la transaction.
 
-## Confirm OP_Return Output
+## Confirmer la Sortie OP_Return
 
-Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an OP_Return output. The OP_Return output is where your redeem_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP_Return. **Abort the transaction if it doesn't include the OP_Return output.**
+Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. The OP_Return output is where your redeem_script is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be OP_Return. **Abort the transaction if it doesn't include the OP_Return output.**
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
