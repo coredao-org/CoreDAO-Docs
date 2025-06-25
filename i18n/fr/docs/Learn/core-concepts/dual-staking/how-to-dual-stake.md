@@ -20,53 +20,54 @@ Il existe plusieurs façons de participer au staking double avec BTC et CORE, se
 
 Pour démarrer et pouvoir effectuer un double staking CORE et BTC via le site Web officiel de staking de Core, vous devez avoir les prérequis suivants :
 
-**Supported Bitcoin Wallet Browser Extension**: To participate in the Bitcoin staking process, you must install browser extensions of any supported Bitcoin wallets, like Xverse, Unisat, and/or OKX Wallet (refer here for the latest supported wallets). You must use the desktop version when using the official staking website. You can also stake directly using the Element wallet mobile application as well.
+**Extension de navigateur de portefeuille Bitcoin prise en charge** : Pour participer au processus de staking Bitcoin, vous devez installer les extensions de navigateur des portefeuilles Bitcoin pris en charge, tels que Xverse, Unisat et/ou OKX Wallet (référez-vous ici pour les derniers portefeuilles pris en charge). Vous devez utiliser la version bureau lorsque vous utilisez le site Web officiel de staking. Vous pouvez également staker directement en utilisant l'application mobile du portefeuille Element.
 
-**Core Wallet Address for Rewards**: Prepare your Core wallet address to stake CORE and receive CORE token rewards for staking Bitcoin. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide here.
+**Adresse de portefeuille Core pour les récompenses** : Préparez votre adresse de portefeuille Core pour staker CORE et recevoir des récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici.
 
-## Key Considerations For Dual Staking
+## Considérations clés pour le double staking
 
-The following are some key points that users should be careful about when staking their Bitcoin on Core.
+Les points suivants sont des éléments clés auxquels les utilisateurs doivent faire attention lorsqu'ils stakent leur Bitcoin sur Core.
 
-**Minimum Bitcoin Amount + Gas Fee**: The minimum Bitcoin required for staking on Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
+**Montant minimum de Bitcoin \+ frais de gas :** Le montant minimum de Btc requis pour le staking sur Core dépend de la méthode choisie. Si vous utilisez l'interface utilisateur officielle du site, vous devez staker au moins 0,01 BTC (hors frais de transaction). Il n'y a aucune exigence minimale lors du staking via script. De plus, les utilisateurs doivent prendre en compte les frais de gas en Bitcoin nécessaires aux transactions. Pour un staking de moins d'un mois, il est recommandé de disposer d'au moins 0,05 BTC afin de couvrir une éventuelle congestion du réseau, qui pourrait augmenter les frais de gas au-delà des récompenses de staking perçues.
 
-**Minimum of 1 CORE + Gas Fee**: To stake, you must have at least 1 CORE. In addition to the staking amount, users should also account for the gas fees in CORE tokens for transaction processing.
+**Minimum de 1 CORE \+ Frais de Gaz :** Pour staker, vous devez avoir au moins 1 CORE. En plus du montant de staking, les utilisateurs doivent également prendre en compte les frais de gaz en tokens CORE pour le traitement des transactions.
 
-**Understanding the Differences in Bitcoin Staking Addresses**:
+**Comprendre les Différences dans les Adresses de Staking de Bitcoin :**:
 
-The staking address in your Bitcoin wallet's transaction prompt may differ from your original Bitcoin address. This is because the Bitcoin staking address is derived from your Bitcoin wallet's master private key, ensuring control and security over your assets. Your Bitcoin remains safe in the Bitcoin staking address, unaffected by staking.
+L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
 
-**Delays in Locked Assets to Appear in your Bitcoin Wallet**:
+**Délais pour que les Actifs Verrouillés Apparaissent dans votre Portefeuille Bitcoin :**:
 
-You may face some delays before your locked Bitcoin is displayed in your Bitcoin wallets. This delay primarily results from delays in transaction confirmation on the Bitcoin network, which can take several hours due to block time, the number of block confirmations required, and network congestion.
+Vous pouvez rencontrer des délais avant que votre Bitcoin verrouillé ne soit affiché dans vos portefeuilles Bitcoin. Ce délai résulte principalement de retards dans la confirmation des transactions sur le réseau Bitcoin, qui peuvent prendre plusieurs heures en raison du temps de bloc, du nombre de confirmations de blocs requises et de la congestion du réseau.
 
-While we are actively working with wallet partners to support the timely display of your assets in your wallets, you can check your locked assets on the MyStaking page on Core's staking website.
+Bien que nous travaillions activement avec les partenaires de portefeuilles pour soutenir l'affichage en temps opportun de vos actifs dans vos portefeuilles, vous pouvez vérifier vos actifs verrouillés sur la page "MyStaking" sur le site de staking de Core.
 
-You can also view your staked funds by searching the staking address on a Bitcoin explorer, [mempool.space](https://mempool.space).
+Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space).
 
-**Considerations for Locking Periods**
+**Considérations pour les Périodes de Verrouillage**
 
-Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer par des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 
-## Connecting Bitcoin and Core Wallets
+## Connexion des Portefeuilles Bitcoin et Core
 
-1. Visit [https://stake.coredao.org](https://stake.coredao.org) and click **Stake Now** on the top right of the header.
+1. Visitez [https://stake.coredao.org](https://stake.coredao.org) et cliquez sur **Stake Now** en haut à droite de l'en-tête.
 
-2. Once on the Staking tab, click the **Connect** option next to "BTC Staking Amount" to connect your Bitcoin wallet. This should be the wallet with the Bitcoin assets you want to stake. Click on the supported wallet of your choice to connect your Bitcoin wallet.
+2. Une fois sur l'onglet **Staking**, cliquez sur l'option **Connect** à côté de "BTC Staking Amount" pour connecter votre portefeuille Bitcoin. Cela devrait être le portefeuille contenant les actifs Bitcoin que vous souhaitez staker. Cliquez sur le portefeuille pris en charge de votre choix pour connecter votre portefeuille Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-1.png)
 </p>
 
-3. Likewise, click the **Connect** option next to CORE Staking Amount and select the Core wallet to stake CORE and receive staking rewards.
+3. De même, cliquez sur l'option **Connect** à côté de **CORE Staking Amount** et sélectionnez le portefeuille Core pour staker du CORE et recevoir des récompenses de staking.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png)
-</p>
 
-## Specifying the BTC Amount to Stake
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png
+)</p>
 
-Enter the amount of Bitcoin you want to stake. The minimum amount is 0.01 BTC if a user is staking through the website UI. However, there are no minimum amount requirements for staking Bitcoin through the staking script.
+## Spécifier le Montant de BTC à Staker
+
+Entrez le montant de Bitcoin que vous souhaitez staker. Le montant minimum est de 0,01 BTC si l'utilisateur effectue le staking via l'interface utilisateur du site web. Cependant, aucune exigence minimale n'est imposée pour le staking Btc via le script de staking.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
@@ -175,20 +176,20 @@ On the **Stake CORE** page, confirm the amount of CORE to stake along with Bitco
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
 </p>
 
-By clicking **Confirm**, you will get a notification from your connected Core wallet to complete the transaction.
+En cliquant sur **Confirm**, vous recevrez une notification de votre portefeuille Core connecté pour compléter la transaction.
 
-Once you confirm the transaction, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click **My Staking** to see your staking records or **View on CoreScan** to review this transaction.
+Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on CoreScan** pour revoir cette transaction.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
-On the **Stake BTC** page, confirm the amount of Bitcoin to stake. Before finalizing the Bitcoin staking process, it's essential to understand and specify several key parameters:
+Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-**Specifying the amount of Bitcoin you'd like to delegate**
+**Spécifier le montant de Bitcoin que vous souhaitez déléguer**
 
-The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
-In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement
+Le montant minimum à déléguer est de 0,01 Bitcoin, si la délégation se fait via l'interface officielle du site.
+Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
 
 **Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.**
 
