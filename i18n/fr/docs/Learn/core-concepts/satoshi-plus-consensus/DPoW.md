@@ -11,49 +11,49 @@ description: Exploiter la DPoW dans Satoshi Plus
 
 ## Aperçu
 
-Delegated Proof of Work (DPoW) introduces an innovative way to incorporate Bitcoin's miners in the security and validator election process of Satoshi Plus consensus—without requiring any additional computation.
+Le Delegated Proof of Work (DPoW) intègre les mineurs Bitcoin dans le processus de sécurité et d'élection des validateurs du consensus Satoshi Plus, sans nécessiter de calculs supplémentaires.
 
-DPoW forms a **symbiotic relationship** between the Bitcoin and Core networks:
+Le DPoW crée une **relation symbiotique** entre les réseaux Bitcoin et Core:
 
-- Bitcoin miners gain a second block reward through CORE token rewards
-- Core benefits from Bitcoin's unmatched security and decentralized infrastructure
+- Les mineurs Bitcoin gagnent une deuxième récompense de bloc grâce aux récompenses en tokens CORE
+- Core bénéficie de la sécurité et de l'infrastructure décentralisée sans précédent de Bitcoin
 
 <p align="center">
 ![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
 </p>
 
-## Core Concepts
+## Concepts de Core
 
-- No new hardware or mining activity required
-- Miners maintain standard Bitcoin mining operations
-- Miners delegate their hash power to vote for Core validators via metadata
-- Miners earn CORE rewards in addition to their Bitcoin rewards
+- Aucun nouveau matériel ou activité minière n'est requis
+- Les mineurs maintiennent des opérations minières Bitcoin standard
+- Les mineurs délèguent leur puissance de hachage pour voter pour les validateurs Core via des métadonnées
+- Les mineurs gagnent des récompenses CORE en plus de leurs récompenses Bitcoin
 
-## How DPoW Works
+## Fonctionnement du DPoW
 
-### 1. Mining Integration
+### 1. Intégration minière
 
-Bitcoin miners continue their usual mining operations. To participate in DPoW, they include **delegation metadata** in the op_return field of the coinbase transaction. This metadata contains:
+Les mineurs Bitcoin poursuivent leurs opérations minières habituelles. Pour participer au DPoW, ils incluent des **métadonnées de délégation** dans le champ op_return de la transaction coinbase. Ces métadonnées doivent contenir :
 
-- **Core Validator Address**: The validator the miner is supporting
-- **CORE Reward Address**: Where the miner wants their CORE rewards sent
+- **Adresse du validateur Core**: L'adresse du validateur Core que le mineur soutient
+- **Adresse de Récompense en Tokens CORE :** L'adresse où le mineur souhaite que ses récompenses en tokens CORE soient envoyées
 
-This process:
+Ce processus:
 
-- Requires no extra energy
-- Does not interfere with Bitcoin mining
-- Extends miner protection to the Core network
+- Ne nécessite pas d'énergie supplémentaire
+- N'interfère pas avec le minage Bitcoin
+- Étend la protection des mineurs au réseau Core
 
 ### 2. Relayers and Data Flow
 
-To capture this delegation information:
+Pour capturer ces informations de délégation:
 
-- **Relayers** monitor the Bitcoin blockchain in real time
-- An **on-chain BTC light client** extracts delegation metadata
-- Data is sent to the **Core Delegation Hub**, which:
-  - Validates the data
-  - Aggregates delegations
-  - Assigns weight to validators based on miner hash power
+- **Les relais** surveillent la blockchain Bitcoin en temps réel
+- Un **client léger BTC en chaîne** extrait les métadonnées de délégation
+- Les données sont envoyées au **Hub de Délégation Core**, qui :
+  - Valide les données
+  - Agrège les délégations
+  - Attribue un poids aux validateurs en fonction de la puissance de hachage des mineurs
 
 ### 3. Validator Election Process
 
