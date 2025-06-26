@@ -57,13 +57,13 @@ Les récompenses du staking encouragent une participation à long terme et donne
 
 - **90%** des récompenses vont aux validateurs (ainsi qu'à leurs délégateurs et votants)
 - **10%** est alloué au **Contrat de Récompense Système**
-- Validators take a commission before distributing remaining rewards to their delegators
+- Les validateurs prélèvent une commission avant de distribuer les récompenses restantes à leurs délégateurs
 
-Validators are incentivized to offer competitive reward shares to attract delegators.
+Les validateurs sont incités à offrir des parts de récompenses compétitives pour attirer les délégateurs.
 
-## 4. Reward Distribution Formula
+## 4. Formule de distribution des récompenses
 
-After validator commission, the protocol calculates delegator rewards based on contribution type:
+Après la commission du validateur, le protocole calcule les récompenses des délégateurs en fonction du type de contribution :
 
 #### Délégateurs de Puissance de Hachage (Mineurs et Pools de Minage)
 
@@ -94,47 +94,47 @@ Où:
 - $$l$$: Proportion des récompenses allouées au staking de BTC.
 - $$S$$: Score hybride du validateur.
 
-## 5. Per-Unit Reward Calculations
+## 5. Calculs de récompense par unité
 
 Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
-- **Per unit hash power reward:** $$rHu$$ = $$\frac{rH}{rHp}$$
+- **Récompense par unité de puissance de hachage:** $$rHu$$ = $$\frac{rH}{rHp}$$
 - \*\*Récompense par unité de CORE : $$rSu$$ = $$\frac{rS}{rSp}$$
-- **Per unit BTC reward:** $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- \*\*Récompense par unité de BTC : $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Où:
 
 - $$rHu$$ est la récompense de puissance de hachage par unité pour le validateur ;
 - $$rSu$$ est la récompense de staking de tokens CORE par unité ;
 - $$rBu$$ de **P<sub>n</sub>** désigne la récompense de staking BTC par unité pour un délégateur possédant le niveau de rendement PN BTC
-- **Yield Multipliers:** Each boosted yield level has a specific multiplier (e, f, g, h,..., etc) that is determined by a user's staking data as well as system Dual Staking settings. The settings are dynamically set through governance and reward users for pairing CORE and Bitcoin staking.
+- **Multiplicateurs de rendement :** Chaque niveau de rendement (boosted yield level) possède un multiplicateur spécifique (e, f, g, h, ..., etc), déterminé à la fois par les données de staking de l’utilisateur et par la configuration du dual staking au niveau du système. Les paramètres sont définis dynamiquement par la gouvernance et récompensent les utilisateurs pour l'appariement du staking CORE et Bitcoin.
 
-## 6. Dual Staking Impact on Bitcoin Rewards
+## 6. Impact du double staking sur les récompenses Bitcoin
 
-Bitcoin staking rewards are tiered based on how much CORE a delegator has staked relative to their Bitcoin delegation.
+Les récompenses de staking Bitcoin sont échelonnées en fonction de la quantité de CORE qu'un délégateur a mis en staking par rapport à sa délégation Bitcoin.
 
-- Higher tiers (e.g., Satoshi Tier) receive larger reward multipliers
-- This creates a **market-driven incentive** for pairing CORE with Bitcoin to boost returns
+- Les niveaux supérieurs (par exemple, le niveau Satoshi) reçoivent des multiplicateurs de récompense plus élevés
+- Cela crée une **incitation axée sur le marché** pour associer CORE à Bitcoin afin de booster les rendements
 
-Learn more about [Dual Staking](../dual-staking/overview.md).
+En savoir plus sur [Dual Staking](../dual-staking/overview.md).
 
-## 7. Reward Optimization Strategies
+## 7. Stratégies d'optimisation des récompenses
 
-Delegators are incentivized to:
+Les délégateurs sont incités à :
 
-- Choose validators with **smaller delegation pools**, where their stake makes up a larger percentage
-- Seek out validators with **lower commission fees**
-- Balance staking across under-subscribed validators to maximize marginal yield
+- Choisir des validateurs avec des **pools de délégation plus petits**, où leur mise représente un pourcentage plus important
+- Rechercher des validateurs avec des **frais de commission plus bas**
+- Équilibrer le staking entre les validateurs sous-souscrits pour maximiser le rendement marginal
 
-This dynamic fosters active delegation decisions and validator competition.
+Cette dynamique favorise des décisions de délégation actives et une concurrence entre validateurs.
 
-## 8. Relayer & Verifier Rewards
+## 8. Récompenses des Relayeurs et Vérificateurs
 
-### Relayers
+### Relayeurs
 
-- Relay Bitcoin block and transaction data to Core
-- Paid from the **System Reward Contract**
-- Rewards are batched every **100 Bitcoin blocks**
+- Relayer les données de blocs et de transactions Bitcoin vers Core
+- Rémunéré par le **contrat de récompense système**
+- Les récompenses sont regroupées tous les **100 blocs Bitcoin**
 - Claimed periodically by relayers
 
 ### Verifiers
