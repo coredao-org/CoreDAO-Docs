@@ -11,11 +11,11 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-Snapshots are essential for a network to ensure that nodes can sync up to the latest state of the network as quickly as possible. Before nodes can be used, they must synchronize with the current state of the network. By starting from a recent snapshot, the syncing process is
+Los snapshots son esenciales para que una red asegure que los nodos puedan sincronizarse con el estado más reciente de la red lo más rápido posible. Antes de que los nodos puedan ser utilizados, deben sincronizarse con el estado actual de la red. Al iniciarse desde un snapshot reciente, el proceso de sincronización es considerablemente más rápido
 
 ## Requerimientos del Systema
 
-There are several system requirements, both software and hardware, for setting up a Snapshot node on the Core network.
+Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un Nodo de Snapshot en la red Core.
 
 ### Software
 
@@ -25,7 +25,7 @@ There are several system requirements, both software and hardware, for setting u
 
 ### Hardware
 
-A Snapshot node on Core provides periodic blockchain state snapshots, enabling faster node synchronization and reducing storage requirements. These nodes help new validators and RPC nodes quickly catch up with the latest blockchain state without needing to process the entire history. Los nodos snapshot mejoran la eficiencia y accesibilidad de la red. On the Core network, Snapshot nodes also act as the archive nodes, storing the entire blockchain data. The following are the minimum hardware recommendations for running Snapshot node on Core. Estas especificaciones están diseñadas para manejar los procesos de prueba y validación, garantizando al mismo tiempo un almacenamiento de datos eficiente y una sincronización rápida.
+Un nodo Snapshot en Core proporciona instantáneas periódicas del estado de la blockchain, lo que permite una sincronización más rápida de los nodos y reduce los requerimientos de almacenamiento. Estos nodos ayudan a que nuevos validadores y nodos RPC se pongan al día rápidamente con el estado más reciente de la blockchain sin tener que procesar toda la historia. Los nodos snapshot mejoran la eficiencia y accesibilidad de la red. En la red Core, los nodos Snapshot también actúan como nodos archivo, almacenando todos los datos de la blockchain. A continuación se presentan las especificaciones mínimas de hardware recomendadas para ejecutar un nodo Snapshot en Core. Estas especificaciones están diseñadas para manejar los procesos de prueba y validación, garantizando al mismo tiempo un almacenamiento de datos eficiente y una sincronización rápida.
 
 <Tabs
 defaultValue="testnet2"
@@ -33,7 +33,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Snapshot Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Para nodos Snapshot en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requisito | Detalles                                                                                                     |
@@ -46,7 +46,7 @@ For Snapshot Nodes on **Core Testnet2**, following minimum hardware specificatio
 
   </TabItem>
   <TabItem value="testnet">
-    For Snapshot Nodes on **Core testnet2**, following minimum hardware specifications are recommended:
+    Para nodos Snapshot en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requisito | Detalles                                                                                                     |
@@ -59,7 +59,7 @@ For Snapshot Nodes on **Core Testnet2**, following minimum hardware specificatio
 
   </TabItem>
   <TabItem value="mainnet">
-    For Snapshot Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para nodos Snapshot en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requisito | Detalles                                                                                                     |
@@ -79,11 +79,11 @@ Puede obtener las instantáneas más recientes desde [aquí](https://github.com/
 
 ## Sincronización de nodos mediante instantáneas en la red central
 
-On the Core network, a node can be synced to the latest state in several ways. This document provides a step-by-step walkthrough of the node syncing process on the Core network using snapshots.
+En la red Core, un nodo puede sincronizarse con el estado más reciente de varias maneras. Este documento proporciona una guía paso a paso del proceso de sincronización de nodos en la red Core utilizando snapshots.
 
 ### Descargar binarios precompilados
 
-Download the pre-build binaries from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest) or follow the instructions below
+Descarga los binarios precompilados desde la página [Core Releases Page](https://github.com/coredao-org/core-chain/releases/latest) o sigue las instrucciones a continuación
 
 ##### Linux
 
@@ -103,21 +103,21 @@ chmod -v u+x geth
 
 ### Descargue los archivos de configuración
 
-Download `genesis.json` and `config.toml` by running the following commands:
+Descarga los archivos `genesis.json` y `config.toml` ejecutando los siguientes comandos:
 
 ```bash
 ```
 
 ### Configuración de pares
 
-- **Mainnet**: the `config.toml` file from the latest release ships configured with the information about the `Bootstrap nodes` and `Static nodes` as shown below:
+- **Mainnet**: El archivo `config.toml` incluido en la última versión viene configurado con la información sobre los `nodos Bootstrap` y los `nodos Static`, como se muestra a continuación:
 
 ```yaml
 ```
 
 ### Descargar instantánea
 
-Download the latest chain data snapshot from [here](https://github.com/coredao-org/core-snapshots).
+Descarga la instantánea de datos de la cadena más reciente desde [aquí](https://github.com/coredao-org/core-snapshots).
 
 ### Iniciar el nodo
 
@@ -126,7 +126,7 @@ Download the latest chain data snapshot from [here](https://github.com/coredao-o
 ```
 
 :::note
-Ensure you use the version of geth you downloaded with wget above, and not your local installation of geth, which may be an incorrect version.
+Asegúrate de usar la versión de geth que descargaste con wget anteriormente y no tu instalación local de geth, la cual podría ser una versión incorrecta.
 :::
 
 :::tip
@@ -137,14 +137,14 @@ It is recommended to run a fast node, which is a full node with the `--tries-ver
 
 ### Monitorear el estado del nodo
 
-Puede monitorear los registros para conocer el estado del nodo. By default, the logs are stored at `./node/logs/core.log`.
+Puede monitorear los registros para conocer el estado del nodo. Por defecto, los logs se almacenan en `./node/logs/core.log`.
 
 ## Modo de sincronización
 
-There are two sync modes for running a full node: **snap** and **full**, which can be specified by the flag **--syncmode**.
+Existen dos modos de sincronización para ejecutar un nodo completo: **snap** y **full**, los cuales se pueden especificar mediante la bandera **--syncmode**.
 
-- The **snap** sync mode is used for initial sync, which downloads the latest states rather than executing the blocks from the genesis. Once the initial sync is complete, it will automatically switch to full sync.
+- El modo **snap** sync se utiliza para la sincronización inicial. Este modo descarga los estados más recientes en lugar de ejecutar los bloques desde el bloque génesis. Una vez completada la sincronización inicial, el nodo cambiará automáticamente al modo full.
 
-- The **full** sync mode can also be used for an initial sync, which will execute all blocks since the genesis block. Pero **no se recomienda**, ya que la cantidad de datos históricos es demasiado grande. Instead, you can download a snapshot from the [official repo](https://github.com/coredao-org/core-snapshots) and start a full sync from the snapshot.
+- El modo **full** sync también puede utilizarse para la sincronización inicial, pero ejecutará todos los bloques desde el bloque génesis. Pero **no se recomienda**, ya que la cantidad de datos históricos es demasiado grande. En su lugar, se sugiere descargar una snapshot desde el [repositorio oficial](https://github.com/coredao-org/core-snapshots) e iniciar una sincronización completa desde dicha snapshot.
 
 - Si no se proporciona la marca **--syncmode**, el modo de sincronización predeterminado dependerá del estado de la carpeta de datos. Será el modo **instantáneo** si sincroniza desde génesis o el modo **completo** si comienza desde una instantánea.
