@@ -135,17 +135,17 @@ Cette dynamique favorise des décisions de délégation actives et une concurren
 - Relayer les données de blocs et de transactions Bitcoin vers Core
 - Rémunéré par le **contrat de récompense système**
 - Les récompenses sont regroupées tous les **100 blocs Bitcoin**
-- Claimed periodically by relayers
+- Réclamées périodiquement par les relayers
 
-### Verifiers
+### Vérificateurs
 
-- Monitor validators for malicious behavior (e.g. double signing)
-- When they submit valid reports, rewards are issued **immediately** from the System Reward Contract
+- Surveiller les validateurs pour détecter les comportements malveillants (par exemple, la double signature)
+- Lorsque les vérificateurs soumettent des rapports valides, des récompenses sont émises immédiatement par le contrat de récompense système
 
-**Note:** The **System Reward Contract** is capped at **10 million CORE tokens**. Any overflow is **burned**, making excess participation deflationary.
+**Remarque:** Le **contrat de récompense système** est plafonné à **10 millions de jetons CORE**. Tout débordement est **brûlé**, ce qui rend la participation excessive déflationniste.
 
 ## Conclusion
 
 <p align="center">![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)</p>
 
-Core's reward system properly incentivizes and aligns **miners, stakers, validators, and infrastructure roles**. Through a transparent and configurable system, rewards drive security, decentralization, and sustained community participation across Satoshi Plus consensus.
+Le système de récompense de Core incite et aligne correctement **les mineurs, les stakers, les validateurs et les rôles d'infrastructure**. Grâce à un système transparent et configurable, les récompenses stimulent la sécurité, la décentralisation et une participation communautaire durable à travers le consensus Satoshi Plus.
