@@ -1,22 +1,22 @@
 ---
-sidebar_label: Overview
+sidebar_label: ""
 hide_table_of_contents: false
-sidebar_position: 2
+sidebar_position: 0
 ---
 
-# CORE Token Overview
+# Resumen del Token CORE
 
 ---
 
-CORE is the native token of the Core blockchain and **the exclusive key to unlocking higher Bitcoin staking yields**. As Bitcoin holders discover they can earn meaningful yield on their Bitcoin through Core's Self-Custodial Bitcoin Staking, they quickly learn that the highest yields are reserved for those who also stake CORE tokens through Dual Staking. Simultaneously, CORE is essential for accessing Core's thriving Bitcoin DeFi ecosystem—from paying transaction fees to participating in network governance.
+CORE es el token nativo de la blockchain de Core y **la llave exclusiva para desbloquear mayores rendimientos por staking de Bitcoin**. A medida que los tenedores de Bitcoin descubren que pueden obtener un rendimiento significativo sobre su Bitcoin mediante el Self-Custodial Bitcoin Staking de Core, rápidamente aprenden que los rendimientos más altos están reservados para quienes también hacen staking de tokens CORE mediante el sistema de Dual Staking. Al mismo tiempo, CORE es esencial para acceder al próspero ecosistema DeFi de Bitcoin en Core: desde el pago de tarifas de transacción hasta la participación en la gobernanza de la red.
 
-This creates a compelling dual value proposition: CORE is positioned to become **the second asset that Bitcoiners hold**—both as the essential tool for maximizing Bitcoin's productivity and as the utility token of Bitcoin's most active scaling solution.
+Esto genera una convincente propuesta de valor dual: CORE está posicionado para convertirse en **el segundo activo que los Bitcoiners poseen**, tanto como herramienta esencial para maximizar la productividad de su Bitcoin, como el token utilitario de la solución de escalado de Bitcoin más activa.
 
-## The Yield Advantage
+## La Ventaja del Rendimiento
 
-- Solo Bitcoin staking provides base-level yields
-- **Dual Staking** (Bitcoin + CORE) unlocks up to ~25-50x higher yields
-- Higher CORE-to-Bitcoin ratios unlock progressively higher yield tiers
+- El staking de Bitcoin en solitario ofrece rendimientos base
+- El Dual Staking (Bitcoin + CORE) desbloquea rendimientos hasta ~25-50x mayores
+- Una mayor proporción CORE-a-Bitcoin da acceso a niveles de rendimiento más altos.
 
 This creates natural demand for CORE tokens among Bitcoin holders who want to maximize their Bitcoin's productivity. As more Bitcoin enters Core's staking system, demand for CORE tokens is designed to increase proportionally.
 
