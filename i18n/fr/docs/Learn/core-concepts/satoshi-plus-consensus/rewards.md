@@ -11,52 +11,52 @@ description: Récompenses dans l'écosystème Core
 
 ## Aperçu
 
-Le système de récompense du réseau Core est un composant fondamental du **consensus Satoshi Plus**, alignant les incitations entre les mineurs, les stakers, les validateurs, les relais et les vérificateurs. Through this system, participants are compensated for contributing to network security, decentralization, and governance.
+Le système de récompense du réseau Core est un composant fondamental du **consensus Satoshi Plus**, alignant les incitations entre les mineurs, les stakers, les validateurs, les relais et les vérificateurs. Grâce à ce système, les participants sont indemnisés pour contribuer à la sécurité, à la décentralisation et à la gouvernance du réseau.
 
-Rewards are distributed across four main categories:
+Les récompenses sont réparties entre quatre catégories principales :
 
-1. Mining (DPoW)
-2. Staking (CORE and Bitcoin)
-3. Validator Operations
-4. System-Level Roles (Relayers and Verifiers)
+1. Minage (DPoW)
+2. Staking (CORE et Bitcoin)
+3. Opérations de validation
+4. Rôles au niveau système (Relais et Vérificateurs)
 
-## 1) Mining Rewards (Delegated Proof of Work)
+## 1) Récompenses de minage (Preuve de travail déléguée)
 
-**Who earns**: Bitcoin miners and mining pools
+**Qui gagne**: Les mineurs Bitcoin et les pools de minage
 
-**Mechanism**:
+**Mécanisme**:
 
-- Miners include validator delegation metadata in the Bitcoin blocks they mine.
-- This enables them to extend support to Core without diverting resources from Bitcoin mining.
-- In return, miners earn **CORE tokens** as supplemental rewards, in addition to regular Bitcoin block rewards.
+- Les mineurs incluent des métadonnées de délégation de validation dans les blocs Bitcoin qu'ils exploitent.
+- Cela leur permet d'étendre leur soutien à Core sans détourner de ressources du minage de Bitcoin.
+- En retour, les mineurs gagnent des **jetons CORE** en tant que récompenses supplémentaires.
 
-## 2. Staking Rewards (CORE & Bitcoin)
+## 2. Récompenses de staking (CORE & Bitcoin)
 
-**Who earns**: Holders of CORE or Bitcoin
+**Qui gagne**: Les détenteurs de tokens CORE ou de Bitcoin
 
-**Mechanism**:
+**Mécanisme**:
 
-- Participants delegate CORE or timelocked Bitcoin to validators.
-- Voting power is proportional to the amount delegated.
-- Rewards are distributed based on a validator's performance and the participant's share of total delegation.
+- Les participants délèguent des tokens CORE ou du Bitcoin verrouillé dans le temps aux validateurs.
+- Le pouvoir de vote est proportionnel au nombre de tokens Core délégués.
+- Les récompenses sont distribuées en fonction des performances du validateur et de la part du participant dans la délégation totale.
 
-Rewards from staking encourage long-term participation and give delegators influence over validator selection.
+Les récompenses du staking encouragent une participation à long terme et donnent aux délégateurs une influence sur la sélection des validateurs.
 
 ## 3. Récompenses des validateurs
 
-**Who earns**: Validators, and their delegators (miners, CORE stakers, Bitcoin stakers)
+**Qui gagne**: Les validateurs ainsi que leurs délégateurs(miners, CORE stakers, Bitcoin stakers)
 
-**Mechanism**:
+**Mécanisme**:
 
-- Validators earn from two sources:
-  - **Block Rewards**: Newly minted CORE tokens
-  - **Transaction Fees**: Collected from each processed block
-- Rewards are calculated and distributed at the **end of each round** (200 blocks / ~1 day)
+- Les validateurs gagnent à partir de deux sources :
+  - **Récompenses de bloc**, c'est-à-dire des jetons CORE nouvellement frappés
+  - **Frais de transaction**: Collectés à partir de chaque bloc traité
+- Les récompenses sont calculées et distribuées à la **fin de chaque tour** (200 blocs / ~1 jour)
 
-**Reward Split**:
+**Partage des Récompenses**:
 
-- **90%** goes to validators (and their delegators/voters)
-- **10%** is allocated to the **System Reward Contract**
+- **90%** des récompenses vont aux validateurs (ainsi qu'à leurs délégateurs et votants)
+- **10%** est alloué au **Contrat de Récompense Système**
 - Validators take a commission before distributing remaining rewards to their delegators
 
 Validators are incentivized to offer competitive reward shares to attract delegators.
