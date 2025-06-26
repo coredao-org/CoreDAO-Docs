@@ -11,27 +11,27 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-A Core full node  stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node  can take many forms:
+Un nodo completo de Core almacena todo el historial de la blockchain de Core, permitiendo que cualquiera verifique el estado de cualquier cuenta. Un nodo completo en Core puede tomar distintas formas:
 
-- **Normal full node**: for private use.
-- **Validator full node**: acts as a validator on Core, validating blocks and transactions.
-- **RPC full node**: provides RPC services and responds to HTTP requests.
+- **Nodo completo normal**: Para uso privado.
+- **Nodo completo validador**: Actúa como validador en Core, validando bloques y transacciones.
+- **Nodo completo RPC**: Proporciona servicios RPC y responde a solicitudes HTTP.
 
-Following are the detailed steps to running **Normal Full Nodes** on the Core network.
+A continuación se describen los pasos detallados para ejecutar **nodos completos normales** en la red Core.
 
-## System Requirements
+## Requisitos del Sistema
 
-There are several system requirements for setting up a full node  on Core.
+Existen varios requisitos de sistema para configurar un nodo completo en Core.
 
 ### Software
 
-- **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
+- **Sistema Operativo:** Actualmente, un Nodo Validador de Core es compatible _únicamente_ con los sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad
+- **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y otros nodos
 
 ### Hardware
 
-A full node  on Core performs several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and responding to network requests, depending on its configuration. Unlike validators, full nodes do not produce blocks; instead, they help propagate transactions and blocks across the network. They play a crucial role in maintaining data integrity and supporting a trustless environment. For running Full Nodes on Core, the following are the recommended minimum hardware specifications:
+Un Nodo Completo en Core realiza varias tareas que demandan recursos, como almacenar datos de la blockchain, verificar bloques o transacciones, comunicarse con nodos pares y responder a solicitudes de la red, según su configuración. A diferencia de los validadores, los nodos completos no producen bloques, en vez de eso, ayudan a propagar transacciones y bloques a través de la red. Cumplen un papel crucial en el mantenimiento de la integridad de los datos y el soporte de un entorno trustless. Para ejecutar Nodos Completos en Core, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 <Tabs
 defaultValue="testnet2"
@@ -39,14 +39,14 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Para Nodos Completos en **Core Testnet2**, las siguientes especificaciones mínimas de hardware son recomendadas:
 
     
 
   </TabItem>
 
   <TabItem value="mainnet">
-    For Full Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para Nodos Completos en **Core Mainnet**, las siguientes especificaciones mínimas de hardware son recomendadas:
 
     
 
@@ -55,16 +55,11 @@ For Full Nodes on **Core Testnet2**, following minimum hardware specifications a
 
 ## Construya y ejecute un nodo completo en Core
 
-<Tabs
-defaultValue="testnet2"
-values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2. Descargue el binario para nodo más reciente para Core Testnet desde GitHub de Core [repositorio de lanzamientos] (https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the testnet configuration files, make sure to use **testnet2** configurations. Descargue el último snapshot para testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing testnet nodes is to sync from the genesis block.
+1. Se recomienda utilizar el repositorio [core-chain](https://github.com/coredao-org/core-chain) en GitHub para compilar y ejecutar el nodo completo directamente desde el código fuente de la blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
+
+2. Descargue el binario para nodo más reciente para Core Testnet desde GitHub de Core [repositorio de lanzamientos] (https://github.com/coredao-org/core-chain/releases/latest). El binario del nodo incluye los archivos de configuración para la testnet; asegúrate de utilizar las configuraciones de **testnet2**. Descargue el último snapshot para testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Ten en cuenta que el método recomendado para sincronizar nodos en testnet es hacerlo desde el bloque génesis.
 
 3. Escriba el estado génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
@@ -78,7 +73,7 @@ values={[
     
     ```
 
-4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Run the following command to start the full node  directly:
+4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Ejecuta el siguiente comando para iniciar el nodo completo:
 
     ```bash
     ## start a full node
@@ -91,7 +86,7 @@ values={[
 
  <TabItem value="mainnet">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Las instrucciones para construir el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
+1. Recomendamos usar el repositorio de GitHub de [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar tu nodo completo directamente desde nuestra base de código blockchain. Las instrucciones para construir el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
 2. Descargue el binario del nodo desde la [página de lanzamientos] (https://github.com/coredao-org/core-chain/releases) del repositorio de core-chain. El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
 
@@ -107,14 +102,14 @@ values={[
     
     ```
 
-4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Run the following command to start the full node  directly:
+4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Ejecuta el siguiente comando para iniciar el nodo completo:
 
     ```bash
     ## start a full node
     geth --config ./config.toml --datadir ./node  --cache 8000
     ```
 
-5. While the full node is running, we can monitor its logs to ensure that everything is operating correctly. El archivo de registros se encuentra en `/node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
+5. Mientras el nodo de archivo se está ejecutando, puedes monitorear sus logs para asegurarte de que todo esté funcionando correctamente. El archivo de registros se encuentra en `/node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
     </TabItem>
 
 </Tabs>
