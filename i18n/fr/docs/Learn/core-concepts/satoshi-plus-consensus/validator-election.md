@@ -5,37 +5,37 @@ sidebar_position: 2
 description: Découvrez le processus d'élection des validateurs
 ---
 
-# Core Validator Election
+# Élection des Validateurs Core
 
 ---
 
 ## Aperçu
 
-Core's Satoshi Plus consensus draws validator support from three delegation sources:
+Le consensus Satoshi Plus de Core tire le soutien des validateurs de trois sources de délégation :
 
-- **Delegated Proof of Work (DPoW)** from Bitcoin miners
-- **Self-Custodial Bitcoin Staking** from Bitcoin holders
-- **Delegated Proof of Stake (DPoS)** from CORE token holders
+- **Preuve de travail déléguée (DPoW)** des mineurs Bitcoin
+- **Staking Bitcoin en auto-garde** par les détenteurs de Bitcoin
+- **Preuve de participation déléguée (DPoS)** des détenteurs de jetons CORE
 
-Each source contributes to a validator's **hybrid score**, which determines their election into the active validator set.
+Chaque source contribue au score **hybride** d'un validateur, qui détermine son élection dans l'ensemble actif de validateurs.
 
-## Election Process
+## Processus d'élection
 
 <p align="center">![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)</p>
 
-### 1. Delegation of Support
+### 1. Délégation de soutien
 
-Validators receive support from three sources:
+Les validateurs reçoivent un soutien de trois sources:
 
-- **Bitcoin Holders**: Timelock Bitcoin using CLTV and embed validator metadata in the redeem script to vote for validators.
-- **Bitcoin Miners**: Delegate hash power by including validator votes in the op_return field of Bitcoin coinbase transactions.
-- **CORE Token Holders**: Delegate CORE tokens directly to preferred validators.
+- **Détenteurs de Bitcoin**: Verrouillent temporairement Bitcoin en utilisant CLTV (Check Lock Time Verify) et intègrent des métadonnées de validation dans le script de remboursement pour voter pour les validateurs.
+- **Mineurs Bitcoin**: Délèguent leur puissance de hachage en incluant des votes de validation dans le champ op_return des transactions coinbase Bitcoin.
+- **Détenteurs de jetons CORE**: Délèguent directement leurs jetons CORE à leurs validateurs préférés.
 
-Each form of delegation contributes to validator selection and reward eligibility.
+Chaque forme de délégation contribue à la sélection des validateurs et à l'éligibilité aux récompenses.
 
-### 2. Hybrid Score Calculation
+### 2. Calcul du score hybride
 
-Validators are ranked by a **hybrid score** that blends the three forms of support:
+Les validateurs sont classés selon un **score hybride** qui combine les trois formes de soutien :
 
 $$
  S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
@@ -53,12 +53,12 @@ Où, $$m + k + l = 1$$
 - $$k$$: Ratio attribué au staking de CORE.
 - $$l$$: Ratio attribué au staking de BTC.
 
-This formula promotes proportional and fair influence across all delegation sources.
+Cette formule favorise une influence proportionnelle et équitable entre toutes les sources de délégation.
 
-### 3. Validator Selection and Block Production
+### 3. Sélection des validateurs et production de blocs
 
-- The **top 29 validators** with the highest hybrid scores are elected every **round (1 day)**
-- Validators produce blocks in a **round-robin** fashion, with each slot lasting **3 seconds**
+- Les **29 meilleurs validateurs** avec les scores hybrides les plus élevés sont élus à chaque **tour (1 jour)**
+- Les validateurs produisent des blocs de manière **tournante**, chaque créneau durant **3 secondes**
 - The **validator set is updated every 200 blocks** to promote consistency and prevent disruption from underperforming or penalized validators
 - Core maintains liveness as long as fewer than **⅓ of validators are malicious**
 
