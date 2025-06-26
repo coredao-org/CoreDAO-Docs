@@ -18,43 +18,43 @@ Esto genera una convincente propuesta de valor dual: CORE está posicionado para
 - El Dual Staking (Bitcoin + CORE) desbloquea rendimientos hasta ~25-50x mayores
 - Una mayor proporción CORE-a-Bitcoin da acceso a niveles de rendimiento más altos.
 
-This creates natural demand for CORE tokens among Bitcoin holders who want to maximize their Bitcoin's productivity. As more Bitcoin enters Core's staking system, demand for CORE tokens is designed to increase proportionally.
+Esto genera una demanda natural por tokens CORE entre los tenedores de Bitcoin que desean maximizar la productividad de su Bitcoin. A medida que más Bitcoin entra al sistema de staking de Core, la demanda por CORE está diseñada para crecer proporcionalmente.
 
-## Core Functions
+## Funciones Clave
 
-**Dual Staking Enhancement:** CORE tokens unlock higher Bitcoin staking yields through Dual Staking, with higher CORE-to-Bitcoin ratios providing access to premium yield tiers.
+**Mejora del Dual Staking:** los tokens CORE desbloquean mayores rendimientos por staking de Bitcoin mediante Dual Staking, donde proporciones más altas de CORE respecto a Bitcoin otorgan acceso a niveles premium de rendimiento.
 
-**Network Operations:** CORE serves as the gas token for all Core network transactions and smart contract operations.
+**Operaciones de Red:** CORE funciona como token de gas para todas las transacciones y operaciones de contratos inteligentes en la red Core.
 
-**Governance:** CORE holders participate in protocol governance decisions and parameter changes.
+**Gobernanza:** los holders de CORE participan en decisiones de gobernanza del protocolo y en ajustes de parámetros.
 
-**Validator Security:** Validators must post a CORE token bond as slashable collateral for network participation.
+**Seguridad de Validadores:** los validadores deben depositar una fianza en tokens CORE como garantía slashable para participar en la red.
 
 ## Tokenomics
 
-CORE mirrors Bitcoin's scarcity model with a **fixed supply cap of 2.1 billion tokens**—exactly 100x Bitcoin's 21 million supply. This creates a compelling parallel: as Bitcoin adoption grows and more Bitcoin seeks yield through Core, there remains a fixed supply of CORE tokens to unlock the highest yields.
+CORE replica el modelo de escasez de Bitcoin, con un **suministro máximo fijado en 2,100 millones de tokens**—exactamente 100 veces los 21 millones del suministro máximo de Bitcoin. Esto crea un paralelismo convincente: a medida que crece la adopción de Bitcoin y busca generar rendimientos a través de Core, existe una oferta fija de tokens CORE que otorgan acceso a los rendimientos más altos.
 
-The emission follows an 81-year schedule with a 3.61% annual reduction rate for consensus block rewards, creating predictable, gradually decreasing issuance similar to Bitcoin's halvings but with a smoother curve.
+La emisión sigue un cronograma de 81 años, con una tasa de reducción anual del 3.61% en las recompensas por bloque de consenso, generando una emisión predecible y en disminución gradual, similar a los halvings de Bitcoin, pero con una curva de reducción más suave.
 
-## Value Drivers
+## Impulsores de Valor
 
-**Staking Demand:** As Bitcoin staking grows on Core, demand for CORE tokens is designed to increase proportionally. Bitcoin holders must acquire and stake CORE to access the highest yield tiers.
+**Demanda por Staking:** A medida que crece el staking de Bitcoin en Core, la demanda por tokens CORE está diseñada para aumentar proporcionalmente. Los holders de bitcoin deben adquirir y hacer staking de CORE para acceder a los niveles de rendimiento más altos.
 
-**Ecosystem Demand:** CORE tokens are required for engaging with Core's leading Bitcoin-powered dapp ecosystem. As ecosystem activity expands, CORE is expected to play an increasingly important role—much like native tokens on other popular Layer 1 blockchains.
+**Demanda del Ecosistema:** Los tokens CORE son necesarios para interactuar con el ecosistema líder de dApps basadas en Bitcoin en Core. A medida que la actividad del ecosistema se expande, se espera que CORE juegue un papel cada vez más importante—al igual que los tokens nativos en otras blockchains de capa 1 populares.
 
-## Fixed Supply Dynamic
+## Dinámica de Suministro Fijo
 
-The key insight is the interplay between two fixed supplies:
+El elemento clave es la interacción entre dos suministros fijos:
 
-- **Bitcoin**: 21 million maximum supply
-- **CORE**: 2.1 billion maximum supply (100x Bitcoin)
+- **Bitcoin**: suinistro máximo de 21 millones
+- **CORE**: suministro máximo de 2,100 millones (100x Bitcoin)
 
-As more Bitcoin seeks trustless yield and more CORE is staked to unlock higher yields, both assets become increasingly scarce. This creates a virtuous cycle where:
+A medida que más Bitcoin busca genera trustless yield, y más CORE se bloquea en staking para acceder a niveles superiores de rendimiento, ambos activos se vuelven cada vez más escasos. Esto genera un ciclo virtuoso:
 
-1. Bitcoin holders stake their Bitcoin to earn yield
-2. They acquire and stake CORE tokens to access higher yield tiers
-3. Both Bitcoin and CORE become locked in staking, reducing liquid supply
-4. Scarcity increases the value proposition for both assets
-5. Greater value propositions attract more participants, repeating the cycle
+1. Los usuarios hacen staking de su Bitcoin para obtener rendimiento
+2. Adquieren y hacen staking de CORE para acceder a mayores rendimientos
+3. Tanto Bitcoin como CORE quedan bloqueados, reduciendo su oferta líquida
+4. La escasez aumenta el atractivo de ambos activos
+5. El valor percibido crece, atrayendo a más participantes, repitiendo el ciclo
 
-This dynamic positions CORE as **the primary companion asset to Bitcoin** for anyone serious about generating trustless yield on their Bitcoin holdings.
+Esta dinámica posiciona a CORE como **el activo complementario principal de Bitcoin** para quienes buscan generar rendimiento sin intermediarios sobre sus tenencias de Bitcoin.
