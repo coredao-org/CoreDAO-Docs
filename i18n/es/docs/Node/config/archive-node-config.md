@@ -41,7 +41,7 @@ Para nodos Archive en Core Testnet2, se recomiendan las siguientes especificacio
   </TabItem>
 
   <TabItem value="mainnet">
-    For Archive Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para nodos Archive en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 ```
@@ -51,9 +51,9 @@ Para nodos Archive en Core Testnet2, se recomiendan las siguientes especificacio
 
 ## Ejecución del nodo de archivo principal
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
+1. Se recomienda utilizar el repositorio [core-chain](https://github.com/coredao-org/core-chain) en GitHub para compilar y ejecutar el nodo completo directamente desde el código fuente de la blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README] del repositorio (https://github.com/coredao-org/core-chain#building-the-source).
 
-2. Download the latest node binary from [Core's Releases Repository](https://github.com/coredao-org/core-chain/releases/latest) and the latest snapshot for archive node from [Core's Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet.
+2. Descarga el último binario del nodo desde el [Core's Releases Repository](https://github.com/coredao-org/core-chain/releases/latest) y el último snapshot para nodos Archive desde el [Core's Snapshot Repository](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). El binario del nodo incluye los archivos de configuración relevantes de mainnet y testnet.
 
 3. Escriba el estado de génesis localmente ejecutando el siguiente comando desde el directorio de su proyecto:
 
@@ -61,12 +61,12 @@ Para nodos Archive en Core Testnet2, se recomiendan las siguientes especificacio
 geth --datadir node init genesis.json
 ```
 
-4. Now that the setup for the archive node is completed, let's start running it! Execute the following `geth` command to run the archive node:
+4. Una vez completada la configuración del nodo Archive, ¡es hora de ejecutarlo! Ejecuta el siguiente comando `geth` para ponerlo en marcha:
 
 ```bash
 ```
 
-5. While the archive node is running, you can monitor its logs to ensure that everything is operating correctly. El archivo de registro se encuentra en `./node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
+5. Mientras el nodo Archive esté ejecutándose, puedes supervisar los logs para asegurarte de que todo esté funcionando correctamente: El archivo de registro se encuentra en `./node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
 
 
 
