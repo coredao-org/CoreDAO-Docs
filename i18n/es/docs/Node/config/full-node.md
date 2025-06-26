@@ -41,24 +41,14 @@ values={[
 ]}> <TabItem value="testnet2">
 For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms |
-    | **CPU**            | 4 CPU cores                                                                    |
-    | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                  |
+    
 
   </TabItem>
 
   <TabItem value="mainnet">
     For Full Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms  |
-    | **CPU**            | 4 CPU cores                                                                                             |
-    | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                   |
+    
 
   </TabItem>
 </Tabs>
@@ -85,15 +75,7 @@ values={[
   Deberías ver el siguiente resultado:
 
     ```bash
-    INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
-    INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
-    INFO [07-18|14:57:20.724] Writing custom genesis block
-    INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-    INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
-    INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
-    INFO [07-18|14:57:20.729] Writing custom genesis block
-    INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-    INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
+    
     ```
 
 4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Run the following command to start the full node  directly:
@@ -122,15 +104,7 @@ values={[
   Deberías ver el siguiente resultado:
 
     ```bash
-    INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
-    INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
-    INFO [07-18|14:57:20.724] Writing custom genesis block
-    INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-    INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
-    INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
-    INFO [07-18|14:57:20.729] Writing custom genesis block
-    INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
-    INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
+    
     ```
 
 4. Nuestro nodo completo está listo, ¡comencemos a ejecutarlo! Run the following command to start the full node  directly:
