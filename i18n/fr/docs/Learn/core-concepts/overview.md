@@ -3,7 +3,7 @@ sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 description: Obtenez une vue d'ensemble de Core - son objectif, sa mission et sa vision future
-slug: /learn/core-concepts/overview
+slug: /Apprendre/concepts-clés/aperçu
 ---
 
 # Vue d'Ensemble de la Blockchain Core
@@ -12,40 +12,40 @@ slug: /learn/core-concepts/overview
 
 ## Introduction
 
-Core is a high-performance, EVM-compatible Layer 1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. En tirant parti des verrous temporels CLTV natifs de Bitcoin, de la puissance de hachage du minage Bitcoin et des capacités de contrats intelligents modernes, Core libère Bitcoin en tant que protecteur principal et actif central d'un écosystème d'applications décentralisées prospère.
+Core est une blockchain Layer-1 haute performance compatible EVM, conçue pour être la plate-forme de contrats intelligents complémentaire et hyper-scalable de Bitcoin. En tirant parti des verrous temporels CLTV natifs de Bitcoin, de la puissance de hachage du minage Bitcoin et des capacités de contrats intelligents modernes, Core libère Bitcoin en tant que protecteur principal et actif central d'un écosystème d'applications décentralisées prospère.
 
-### The First Self-Custodial Bitcoin Staking Mechanism
+### Le premier mécanisme de staking Bitcoin non-custodial
 
-Satoshi Plus's Self-Custodial Bitcoin Staking component is the first live self-custodial Bitcoin staking mechanism, allowing Bitcoin holders to earn trustless yield without introducing new trust assumptions.
+Le composant de staking Bitcoin non-custodial de Satoshi Plus est le premier mécanisme de staking Bitcoin non-custodial opérationnel, permettant aux détenteurs de Bitcoin de générer un rendement natif sans altérer les postulats de confiance de Bitcoin.
 
-### Harnessing Bitcoin's Security & Empowering Miners
+### Exploiter la sécurité de Bitcoin et donner du pouvoir aux mineurs
 
-Currently, Satoshi Plus benefits from the security of ~75% of all Bitcoin mining hash power through delegation. By involving miners in validator elections, it leverages Bitcoin's unmatched decentralization while offering miners supplemental rewards, addressing the long-term decline in Bitcoin block rewards.
+Actuellement, Satoshi Plus bénéficie de la sécurité de ~75% de toute la puissance de hachage minière de Bitcoin grâce à la délégation. En impliquant les mineurs dans les élections de validateurs, cela tire parti de la décentralisation inégalée de Bitcoin tout en offrant aux mineurs des récompenses supplémentaires, répondant ainsi au déclin à long terme des récompenses de bloc Bitcoin.
 
 ## Technologie de Core
 
 ### Satoshi Plus Consensus
 
-This innovative consensus mechanism combines Delegated Proof of Work (DPoW), Self-Custodial Bitcoin Staking, and Delegated Proof of Stake (DPoS) thereby incorporating Bitcoin miners, Bitcoin stakers, and CORE stakers, respectively, in the election of Core validators. Each of these three legs of Satoshi Plus introduces a new layer of security and incentive alignment.
+Ce mécanisme de consensus innovant combine la Preuve de Travail Déléguée (DPoW), le Staking Bitcoin en Auto-Garde et la Preuve d'Enjeu Déléguée (DPoS), intégrant ainsi les mineurs Bitcoin, les détenteurs de Bitcoin en staking et les détenteurs de CORE en staking, respectivement, dans l'élection des validateurs Core. Chacune de ces trois composantes de Satoshi Plus apporte une nouvelle couche de sécurité et d'alignement des incitations.
 
-### Advanced Smart Contract Capabilities
+### Capacités Avancées de Contrats Intelligents
 
-Core functions as a fully EVM compatible Layer 1 blockchain, providing developers with a robust and familiar environment to build and deploy applications. This deep compatibility enables seamless integration of existing Ethereum-based dapps with minimal modifications, accelerating ecosystem growth while leveraging established development tools, libraries, and best practices.
+Core fonctionne comme une blockchain Layer-1 entièrement compatible EVM, offrant aux développeurs un environnement familier pour construire et déployer des applications. Cette compatibilité permet un portage transparent des dApps existantes basées sur Ethereum vers Core avec des modifications minimales, accélérant ainsi la croissance de l'écosystème tout en tirant parti des outils de développement établis, des bibliothèques et des meilleures pratiques.
 
-### High Performance
+### Haute Performance
 
-Core's advanced validator election process enables the decentralized selection of high-performance and efficient block producers, resulting in rapid transaction speeds and low costs. The protocol's design preserves both decentralization and operational efficiency.
+Le processus avancé d'élection des validateurs de Core permet la sélection décentralisée de producteurs de blocs hautement performants et efficaces, ce qui se traduit par des vitesses de transaction rapides et des coûts faibles. La conception du protocole préserve à la fois la décentralisation et l'efficacité opérationnelle.
 
-### Cross-Chain Interoperability
+### Interopérabilité Inter-Chaines
 
-As a scalable, EVM-compatible blockchain, Core offers extensive cross-chain capabilities:
+En tant que blockchain évolutive compatible avec EVM, Core offre des capacités inter-chaînes étendues :
 
-- **Core Bridge**: Powered by Layer Zero, the Core Bridge facilitates effortless asset transfers between Core and other blockchains
-- Integrations with multiple cross-chain decentralized applications and bridges
+- **Pont Core:** Alimenté par LayerZero, le pont Core facilite les transferts d'actifs sans effort entre Core et d'autres blockchains
+- Intégrations avec de multiples applications décentralisées inter-chaînes et ponts
 
-### Usability and Accessibility
+### Utilisation et Accessibilité
 
-- **User-Friendly Interfaces**: Products on Core are easily accessible through several commonly used wallets and interfaces
+- **Interfaces conviviales :** Les produits sur Core sont facilement accessibles via plusieurs portefeuilles et interfaces conviviales couramment utilisés
 - **Comprehensive Developer Tools**: An extensive suite of tools to help developers build, deploy, and manage applications on Core
 
 ### Governance and Community Engagement
