@@ -81,11 +81,11 @@ Votre niveau de récompense est déterminé par la quantité de CORE que vous av
 - La délégation de CORE fonctionne sous les mêmes hypothèses de confiance que le DPoS (Delegated Proof of Stake)
 - Le staking double ne change pas la façon dont vous stakez, juste la façon dont vous êtes récompensé
 
-## Best Practices
+## Bonnes pratiques
 
-- **Monitor tier thresholds** regularly—they adjust based on participation
-- **Track validator performance** to maximize uptime and yield
-- **Diversify validator selection** to reduce dependency on a single provider
+- **Surveillez régulièrement les seuils de palier**—ils s'ajustent en fonction de la participation
+- **Suivez les performances des validateurs** pour maximiser la disponibilité et les rendements
+- **Diversifiez la sélection des validateurs** pour réduire la dépendance à l'égard d'un seul fournisseur
 
 ## Yield Sustainability
 
