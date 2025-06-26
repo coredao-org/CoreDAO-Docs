@@ -97,8 +97,8 @@ En el contrato `PledgeAgent` (el contrato de staking), cuando los usuarios deleg
 Mientras que, al hacer una desdelegación
 
 - La cantidad de CORE **debe** ser >= 1 **Y**
-- The remaining CORE left on a validator of this address **must** be >= 1
+- La cantidad restante de CORE delegada en un validador por esta dirección **debe** ser >= 1
 
 Cuando se maneja `delegate` y `undelegate` de manera interna, el módulo`Earn` también debe seguir estas restricciones.
 
-The implementation of these requirements can be found in `_undelegateWithStrategy()` method.
+La implementación de estos requisitos puede encontrarse en el método `_undelegateWithStrategy()`.
