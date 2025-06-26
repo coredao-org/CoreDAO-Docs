@@ -239,7 +239,7 @@ const sidebars: SidebarsConfig = {
           type: "category",
           collapsed: true,
           label: "Dev Tools",
-          items: ["Dev-Guide/core-faucet", "Dev-Guide/core-explorer"],
+          items: ["Dev-Guide/core-faucet", "Dev-Guide/core-explorer", "Dev-Guide/indexers"],
         },
         "Dev-Guide/precompile-addresses",
 
