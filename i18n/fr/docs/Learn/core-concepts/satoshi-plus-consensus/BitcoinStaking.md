@@ -1,28 +1,28 @@
 ---
-sidebar_label: Self-Custodial Bitcoin Staking
+sidebar_label: Staking Non-Custodial de Bitcoin
 hide_table_of_contents: false
 sidebar_position: 2
 description: Tirer parti du staking Bitcoin dans Satoshi Plus
 ---
 
-# Self-Custodial Bitcoin Staking (Timelocking)
+# Staking de Bitcoin en auto-garde(verrouillage temporel)
 
 ---
 
 ## Aperçu
 
-Self-Custodial Bitcoin Staking enables Bitcoin holders to earn CORE token rewards by participating in Core's consensus—**without ever giving up custody of their Bitcoin**. Leveraging Bitcoin's native CheckLockTimeVerify (CLTV) opcode, this approach transforms idle Bitcoin into a productive asset while preserving its core principles of security and sovereignty.
+Le staking Bitcoin auto-géré permet aux détenteurs de Bitcoin de gagner des récompenses en tokens CORE en participant au consensus de Core **sans jamais renoncer à la garde de leurs Bitcoin**. En exploitant l'opcode CheckLockTimeVerify (CLTV) natif de Bitcoin, cette approche transforme le Bitcoin inactif en un actif productif tout en préservant ses principes fondamentaux de sécurité et de souveraineté.
 
-There is no wrapping, bridging, or exposure to smart contract risk.
+Il n'y a pas d'enveloppement, de pontage ou d'exposition au risque de contrat intelligent.
 
-## Core Principles
+## Principes fondamentaux
 
-- **100% Self-Custody**: Bitcoin never leaves your wallet
-- **Zero Principal Risk**: Funds remain fully secured by Bitcoin's own rules
-- **Trustless Yield**: No third-party intermediaries
-- **Bitcoin-Native Security**: Staked Bitcoin is secured entirely by Bitcoin's consensus mechanism
+- **100% Conservation auto-gérée**: Le Bitcoin ne quitte jamais votre portefeuille
+- **Zero Principal Risk**: Les fonds restent entièrement sécurisés par les propres règles de Bitcoin
+- **Rendement sans confiance**: Aucun intermédiaire tiers
+- **Sécurité native Bitcoin**: Les Bitcoins mis en staking sont sécurisés entièrement par le mécanisme de consensus de Bitcoin
 
-## How It Works
+## Son Fonctionnement
 
 ### 1. Timelocking Bitcoin via CLTV
 
