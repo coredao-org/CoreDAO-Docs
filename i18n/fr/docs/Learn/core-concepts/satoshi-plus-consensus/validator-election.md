@@ -59,16 +59,16 @@ Cette formule favorise une influence proportionnelle et équitable entre toutes 
 
 - Les **29 meilleurs validateurs** avec les scores hybrides les plus élevés sont élus à chaque **tour (1 jour)**
 - Les validateurs produisent des blocs de manière **tournante**, chaque créneau durant **3 secondes**
-- The **validator set is updated every 200 blocks** to promote consistency and prevent disruption from underperforming or penalized validators
-- Core maintains liveness as long as fewer than **⅓ of validators are malicious**
+- L'ensemble **de validateurs est mis à jour tous les 200 blocs** pour promouvoir la cohérence et prévenir les perturbations causées par des validateurs sous-performants ou pénalisés
+- Core maintient la liveness tant que moins **d'⅓ des validateurs sont malveillants**
 
-## Flow Summary
+## Résumé du flux
 
-The validator election cycle proceeds as follows:
 
-1. **Delegation**: Miners, CORE stakers, and Bitcoin stakers delegate support
-2. **Score Calculation**: Hybrid scores are computed using the defined formula
-3. **Election**: Top 29 validators are selected based on scores
-4. **Block Production**: Validators take turns producing blocks
-5. **Rewards**: CORE tokens are earned by validators and distributed proportionally to delegators
-6. **Cycle Repeats**: Validator set updates every 200 blocks
+
+1. **Délégation**: Les mineurs, les détenteurs de CORE et les détenteurs de Bitcoin délèguent leur soutien
+2. **Calcul du score**: Les scores hybrides sont calculés à l'aide d'une formule définie
+3. **Élection**: Les 29 meilleurs validateurs sont sélectionnés en fonction de leurs scores
+4. **Production de blocs**: Les validateurs se relaient pour produire des blocs
+5. **Récompenses**: Les validateurs gagnent des jetons CORE et les distribuent proportionnellement aux délégateurs
+6. **Cycle Répété**: L'ensemble de validateurs est mis à jour tous les 200 blocs
