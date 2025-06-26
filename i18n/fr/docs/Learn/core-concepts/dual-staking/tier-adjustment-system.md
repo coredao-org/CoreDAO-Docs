@@ -71,19 +71,19 @@ Plusieurs variables déterminent quand et comment les exigences de palier change
 - Profitent de rendements plus élevés lorsque les exigences augmentent
 - Incités à maintenir des ratios CORE-Bitcoin solides
 
-### For Lower Tier Participants
+### Pour les participants des niveaux inférieurs
 
-- May gain access to higher tiers when requirements decrease
-- Motivated to acquire more CORE tokens for tier advancement
-- Can plan CORE accumulation strategies around adjustment patterns
+- Peuvent accéder à des niveaux supérieurs lorsque les exigences diminuent
+- Motivés à acquérir davantage de jetons CORE pour progresser dans les niveaux
+- Peuvent planifier des stratégies d'accumulation de CORE en fonction des modèles d'ajustement
 
-## Monitoring Adjustments
+## Suivi des ajustements
 
-Participants can track tier requirement changes and their impact through:
+Les participants peuvent suivre les changements dans les exigences de niveau et leur impact grâce à:
 
-- **Live monitoring** at [stake.coredao.org/staking](https://stake.coredao.org/staking)
-- **Announcements** via official Core channels
+- **Consultez les taux de rendement en direct** sur [stake.coredao.org/staking](https://stake.coredao.org/staking)
+- **Les annonces** via les canaux officiels de Core
 
-## Why It Matters
+## Pourquoi est-ce important
 
-The tier adjustment system ensures that Core's Dual Staking mechanism remains economically sustainable and continues to incentivize the behavior most beneficial to the network: Bitcoin stakers becoming CORE stakers and demonstrating long-term commitment to the Core ecosystem. This creates a self-reinforcing cycle where network growth supports participant rewards, and participant rewards drive network growth.
+Le système d'ajustement de niveau garantit que le mécanisme de double staking de Core reste économiquement viable et continue d'inciter les comportements les plus bénéfiques pour le réseau : les détenteurs de Bitcoin deviennent des détenteurs de CORE et démontrent un engagement à long terme envers l'écosystème Core. Cela crée un cycle auto-renforçant où la croissance du réseau soutient les récompenses des participants, et les récompenses des participants stimulent la croissance du réseau.
