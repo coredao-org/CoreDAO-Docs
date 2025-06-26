@@ -46,13 +46,13 @@ En tant que blockchain évolutive compatible avec EVM, Core offre des capacités
 ### Utilisation et Accessibilité
 
 - **Interfaces conviviales :** Les produits sur Core sont facilement accessibles via plusieurs portefeuilles et interfaces conviviales couramment utilisés
-- **Comprehensive Developer Tools**: An extensive suite of tools to help developers build, deploy, and manage applications on Core
+- **Outils pour développeurs complets**: Une gamme complète d'outils pour faciliter la création, le déploiement et la gestion d'applications sur Core
 
-### Governance and Community Engagement
+### Gouvernance et Engagement Communautaire
 
-The Core blockchain features a foundational on-chain governance process. Key decisions—including changes to on-chain parameters, rewards mechanisms, and protocol adjustments—are enhanced through community participation and on-chain voting, giving users a direct say in the platform's development.
+La blockchain Core dispose d'un processus de gouvernance en chaîne fondamental. Les décisions clés, telles que les modifications des paramètres on-chain, les ajustements des récompenses et du mécanisme de brûlage, sont prises via la participation communautaire et le vote on-chain, donnant aux utilisateurs un contrôle direct sur l'évolution de la plateforme.
 
-## The Core Builder Ecosystem
+## L'écosystème des développeurs Core
 
 - [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
 - [Core Ignition](https://ignition.coredao.org/)
@@ -60,7 +60,7 @@ The Core blockchain features a foundational on-chain governance process. Key dec
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
 - [Core Commit Program](https://coredao.org/initiatives/commit-program)
 
-These programs are intended to support and incentivize building innovative projects on Core and catalyze growth.
+Ces programmes visent à soutenir et à inciter la création de projets innovants sur Core et à catalyser la croissance.
 
 Explorez l'écosystème Core en constante expansion [ici](https://coredao.org/explore/ecosystem).
 
