@@ -10,41 +10,41 @@ sidebar_position: 2
 
 ## Visión general
 
-Core's governance system empowers the community to actively participate in decision-making processes that shape the ecosystem's future, from protocol changes to feature implementations. The governance is facilitated through the CORE token and follows a progressive decentralization approach.
+El sistema de gobernanza de Core permite que la comunidad participe activamente en los procesos de toma de decisiones que dan forma al futuro del ecosistema, desde cambios en el protocolo hasta la implementación de nuevas funciones. La gobernanza se facilita mediante el token CORE y sigue un enfoque de descentralización progresiva.
 
-## Progressive Decentralization
+## Descentralización Progresiva
 
-The Core blockchain's governance is designed to evolve over time, with a phased approach that begins with necessary centralization for network establishment and progressively hands over control to the community as it grows and stabilizes.
+La gobernanza de la blockchain de Core está diseñada para evolucionar con el tiempo, mediante un enfoque por fases que comienza con una centralización necesaria para establecer la red y, progresivamente, transfiere el control a la comunidad conforme esta crece y se estabiliza.
 
-## Active Governance Features
+## Funciones Activas de Gobernanza
 
-- **On-chain parameter adjustment** for fixed network parameters
-- **'m Parameter'** governing certain economic variables is under community control
-- **Fee burn percentage** (currently set at 0%) subject to on-chain governance
-- **Time delays in voting** being discussed to mitigate vote selling concerns
-- **Validator set changes** including the approval of expansions to the validator set
+- **Ajuste en cadena** de parámetros de red fijos
+- El **'Parámetro m'**, que rige ciertas variables económicas, está bajo control comunitario
+- El **porcentaje de quema de comisiones** (actualmente establecido en 0%) está sujeto a gobernanza en cadena
+- **Las Demoras tiempo** están siendo discutidas en las votaciones para mitigar preocupaciones sobre la venta de votos
+- **Cambios en el conjunto de validadores** incluida la aprobación de expansiones del conjunto de validadores
 
 ## Estrategia de Descentralización Progresiva
 
-### Stage 1: Off-Chain Governance
+### Etapa 1: Gobernanza Off-Chain
 
-- Proposals and decisions conducted off-chain through Core Improvement Proposals (CIPs)
-- Community members could submit proposals regardless of stake size
-- Majority vote determined outcomes with seven-day voting periods
+- Las propuestas y decisiones se llevaban a cabo fuera de cadena mediante las Core Improvement Proposals (CIPs)
+- Los miembros de la comunidad podían enviar propuestas independientemente del tamaño de su participación
+- Los resultados se determinaban por mayoría de votos, con periodos de votación de siete días
 
-### Stage 1.5: Hybrid Model
+### Etapa 1.5: Modelo Híbrido
 
-- Midpoint between off-chain governance and partial on-chain governance
-- Allowed for learning, adjustment, and laying groundwork for more on-chain elements
+- Punto intermedio entre gobernanza fuera de cadena y gobernanza parcialmente en cadena.
+- Permite aprendizaje, ajustes y sentar las bases para elementos más descentralizados en cadena.
 
-### Stage 2: Partial On-Chain Governance (Current)
+### Etapa 2: Gobernanza Parcialmente en Cadena (Etapa Actual)
 
-- Ability to adjust fixed parameters directly through on-chain voting
-- 'm Parameter' is under community control
-- Additional parameters like the fee burn percentage subject to on-chain governance
+- Capacidad para ajustar parámetros fijos directamente mediante votación en cadena
+- El 'Parámetro m' está bajo control comunitario
+- Parámetros adicionales, como el porcentaje de quema de comisiones, también están sujetos a gobernanza en cadena
 
-### Stage 3: Full On-Chain Governance
+### Etapa 3: Gobernanza Totalmente en On-Chain
 
-- Details currently being developed with active community participation
-- Plans include requiring collateral to post proposals
-- Ensures proposers have vested interest in network health and longevity
+- Los detalles están siendo desarrollados con la participación activa de la comunidad.
+- Se planea requerir colateral para presentar propuestas.
+- Esto asegura que los proponentes tengan un interés genuino en la salud y longevidad de la red.
