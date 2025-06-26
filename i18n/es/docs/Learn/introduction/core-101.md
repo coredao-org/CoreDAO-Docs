@@ -44,34 +44,34 @@ El fondo de recompensas por consenso de Core está compuesto por recompensas fij
 
 **Recompensas por bloque**: 81 años de emisiones fijas provenientes de ~40% del suministro total de 2.1 mil millones de tokens, distribuidas con una tasa de reducción anual del 3.61%.
 
-**Gas fees**: Network activity that generates transaction fees will gradually replace block rewards as the primary yield mechanism, similar to Bitcoin's own model.
+**Comisiones de gas**: La actividad en la red que genera tarifas de transacción reemplazará gradualmente las recompensas por bloque como el mecanismo principal de rendimiento, de manera similar al modelo propio de Bitcoin.
 
 ### Dual Staking
 
-Bitcoin Staking yields are tiered, with the higher tiers of yield reserved for those most aligned with the Core network, as represented by staked CORE relative to staked Bitcoin. Therefore, Bitcoin stakers are incentivized to become CORE stakers in order to access the highest reward tiers.
+Los rendimientos del staking de Bitcoin están organizados por niveles, y los niveles más altos de rendimiento están reservados para quienes están más alineados con la red Core, lo cual se representa mediante CORE en staking en relación con el Bitcoin en staking.  Por lo tanto, los stakers de Bitcoin están incentivados a convertirse también en stakers de CORE para acceder a los niveles de recompensa más altos.
 
-By being the exclusive key unlocking higher Bitcoin staking yields, the CORE token can become the second asset that Bitcoiners care about—not by competing with Bitcoin, but by complementing it.
+Al ser la clave exclusiva para desbloquear mayores rendimientos en el staking de Bitcoin, el token CORE puede convertirse en el segundo activo que más les importe a los Bitcoiners—no al competir con Bitcoin, sino al complementarlo.
 
-## Something for Everybody
+## Algo para Todos
 
-No matter what kind of Bitcoiner you are, Core has something for you. Core transforms Bitcoin into the central asset of a high-performance DeFi environment, turning idle Bitcoin into productive Bitcoin within a variety of frameworks.
+No importa qué tipo de bitcoiner seas, Core tiene algo para ti. Core transforma a Bitcoin en el activo central de un entorno DeFi de alto rendimiento, convirtiendo el Bitcoin inactivo en Bitcoin productivo dentro de diversos frameworks.
 
-- **Conservative Bitcoin Holders**: Earn trustless yield while keeping complete custody of your coins
+- **Holders conservadores de Bitcoin:** Obtén rendimiento trustless sin renunciar a la custodia total de tus monedas
 
-- **Bitcoin Users**: Access fast, low-cost transactions on the leading Bitcoin scaling solution
+- **Usuarios de Bitcoin**: Accede a transacciones rápidas y de bajo costo en la solución líder de escalado para Bitcoin
 
-- **Yield Maximizers**: Stake CORE tokens alongside Bitcoin for enhanced Dual Staking rewards
+- **Optimizadores de rendimiento**: Haz staking de tokens CORE junto con tu Bitcoin para obtener recompensas mejoradas mediante Dual Staking
 
-- **DeFi Users**: Deep Bitcoin liquidity and an expansive dapp environment
+- **Usuarios de DeFi**: Liquidez profunda en Bitcoin y un ecosistema extenso de aplicaciones descentralizadas
 
-- **Builders**: Deploy on the fastest-growing Bitcoin ecosystem with full EVM compatibility
+- **Builders**: Implementa sobre el ecosistema de Bitcoin de más rápido crecimiento, con compatibilidad total con EVM
 
-- **Bitcoin Miners**: Earn supplemental rewards without changing your mining operations
+- **Mineros de Bitcoin**: Gana recompensas adicionales sin cambiar tus operaciones de minería
 
-- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields, or access liquid lstBTC with professional custody
+- **Holdersinstitucionales:** Haz timelock de tu Bitcoin y haz staking de CORE para obtener rendimientos premium, o accede a lstBTC con custodia profesional
 
-- **Institutional Traders**: Use lstBTC as capital-efficient collateral while earning Bitcoin-denominated yield
+- **Traders institucionales:** Usa lstBTC como colateral eficiente en capital mientras generas rendimiento denominado en Bitcoin
 
-- **Structured Products Providers**: Build Bitcoin yield products using Core's institutional-grade infrastructure
+- **Proveedores de productos estructurados**: Crea productos financieros con rendimiento en Bitcoin utilizando la infraestructura de grado institucional de Core
 
-Wherever you are on your Bitcoin journey, Core meets you there - expanding what's possible with Bitcoin without changing what makes Bitcoin special.
+Estés donde estés en tu recorrido con Bitcoin, Core te acompaña, ampliando lo que es posible con Bitcoin sin alterar lo que lo hace especial.
