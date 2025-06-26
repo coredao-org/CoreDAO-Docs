@@ -5,13 +5,13 @@ sidebar_position: 2
 description: Récompenses dans l'écosystème Core
 ---
 
-# Consensus Rewards
+# Récompenses de consensus
 
 ---
 
-## Overview
+## Aperçu
 
-The Core network's reward system is a foundational component of the **Satoshi Plus consensus**, aligning incentives across miners, stakers, validators, relayers, and verifiers. Through this system, participants are compensated for contributing to network security, decentralization, and governance.
+Le système de récompense du réseau Core est un composant fondamental du **consensus Satoshi Plus**, alignant les incitations entre les mineurs, les stakers, les validateurs, les relais et les vérificateurs. Through this system, participants are compensated for contributing to network security, decentralization, and governance.
 
 Rewards are distributed across four main categories:
 
