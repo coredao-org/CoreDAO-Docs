@@ -15,11 +15,11 @@ Los validadores son cruciales para proteger la red al producir bloques y validar
 
 ## Requisitos del sistema
 
-There are several system requirements, both software and hardware, for setting up a Validator node on the Core network.
+Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un Nodo Validador en la red Core.
 
 ### Software
 
-- **Operating System:** Currently, a Core Validator node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
+- **Sistema Operativo:** Actualmente, un Nodo Validador de Core es compatible _únicamente_ con los sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
 - **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad
 - **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y otros nodos
 
@@ -36,12 +36,6 @@ values={[
 For Validator Nodes on **Core testnet2**, following minimum hardware specifications are recommended:
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
-| **RAM**            | 8 Gigabytes                                                                                             |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10Mbps.                 |
 ```
 
   </TabItem>
@@ -50,12 +44,6 @@ For Validator Nodes on **Core testnet2**, following minimum hardware specificati
    For Validator Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
-| **RAM**            | 32 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10Mbps.                 |
 ```
 
   </TabItem>
