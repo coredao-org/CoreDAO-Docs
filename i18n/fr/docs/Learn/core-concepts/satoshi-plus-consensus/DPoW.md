@@ -93,22 +93,22 @@ Pour capturer ces informations de délégation:
 
 ## Défis potentiels et mesures d'atténuation
 
-| **Défi**                        | **Atténuation**                                  |
-| ------------------------------- | ------------------------------------------------ |
-| Format de métadonnées incorrect | Core valide les métadonnées avant le traitement  |
-| Missed rewards                  | Use reliable tooling to monitor reward addresses |
-| Validator underperformance      | Choose validators with strong historical uptime  |
+| **Défi**                        | **Atténuation**                                                        |
+| ------------------------------- | ---------------------------------------------------------------------- |
+| Format de métadonnées incorrect | Core valide les métadonnées avant le traitement                        |
+| Récompenses manquées            | Utilisez des outils fiables pour surveiller les adresses de récompense |
+| Sous-performance du validateur  | Choisissez des validateurs avec un historique de disponibilité élevé   |
 
-## Getting Started
+## Commencer
 
-**To participate in DPoW:**
+**Pour participer à DPoW:**
 
-1. **Continue your Bitcoin mining** (no changes needed)
-2. **Embed delegation metadata** in op_return of coinbase transaction
-3. **Choose a Core validator** to delegate to
-4. **Add your CORE reward address**
-5. **Track rewards and validator performance**
+1. **Continuez votre minage de Bitcoin**(no changes needed)
+2. **Intégrer les métadonnées de délégation** dans l'op_return de la transaction coinbase
+3. **Choisissez un validateur Core** pour déléguer vos jetons
+4. **Ajoutez votre adresse de récompense CORE**
+5. **Suivez vos récompenses et les performances du validateur**
 
-## Why It Matters
+## Pourquoi est-ce important
 
-Le DPoW est un composant essentiel du consensus Satoshi Plus. Il étend les incitations des mineurs Bitcoin pour les aligner sur le mécanisme de consensus de Core. Core receives Bitcoin miner participation in its security, and Bitcoin receives better-compensated miners. Le résultat est un ensemble de mineurs qui sont fortement incités à sécuriser à la fois Bitcoin et Core.
+Le DPoW est un composant essentiel du consensus Satoshi Plus. Il étend les incitations des mineurs Bitcoin pour les aligner sur le mécanisme de consensus de Core. Core bénéficie de la participation des mineurs de Bitcoin à sa sécurité, et les mineurs de Bitcoin reçoivent une meilleure rémunération. Le résultat est un ensemble de mineurs qui sont fortement incités à sécuriser à la fois Bitcoin et Core.
