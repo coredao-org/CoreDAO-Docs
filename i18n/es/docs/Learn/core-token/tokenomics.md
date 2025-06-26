@@ -1,16 +1,16 @@
 ---
-sidebar_label: Tokenomics
+sidebar_label: ""
 hide_table_of_contents: false
 sidebar_position: 0
 ---
 
-# CORE Tokenomics
+# Tokenomics de CORE
 
 ---
 
-## Supply Structure
+## Estructura de Suministro
 
-CORE has a **fixed supply of 2.1 billion tokens**, mirroring Bitcoin's scarcity model at 100x scale (21 million × 100).
+CORE tiene un **suministro fijo de 2,100 millones de tokens**, replicando el modelo de escasez de Bitcoin, pero a una escala 100 veces mayor (21 millones × 100).
 
 ## Distribución de tokens
 
