@@ -24,13 +24,13 @@ Il n'y a pas d'enveloppement, de pontage ou d'exposition au risque de contrat in
 
 ## Son Fonctionnement
 
-### 1. Timelocking Bitcoin via CLTV
+### 1. Le verrouillage temporel de Bitcoin via CLTV
 
-Bitcoin's CheckLockTimeVerify (CLTV) opcode allows holders to lock Bitcoin for a chosen duration:
+L'opcode CheckLockTimeVerify (CLTV) de Bitcoin permet aux détenteurs de verrouiller des Bitcoins pour une durée choisie :
 
-- **Minimum lock period**: 24 hours
-- **Flexible duration**: You choose how long to lock
-- **Enforced by protocol**: All Bitcoin nodes honor the lock automatically
+- **Période de verrouillage minimale**: 24 heures
+- **Durée flexible**: Vous choisissez la durée de verrouillage
+- **Appliqué par le protocole**: Tous les nœuds Bitcoin respectent le verrouillage automatiquement
 
 During this time, the Bitcoin is unspendable—even by the owner—until the lock expires.
 
