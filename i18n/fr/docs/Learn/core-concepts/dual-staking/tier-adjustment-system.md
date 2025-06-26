@@ -1,75 +1,75 @@
 ---
-sidebar_label: Tier Adjustment System
+sidebar_label: Système d'ajustement des paliers(Tier)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Tier Adjustment System
+# Système d'ajustement des paliers(Tier)
 
 ---
 
-## Overview
+## Aperçu
 
-Core's tier adjustment system maintains sustainable and attractive yields for Dual Staking participants through dynamic management of CORE-to-Bitcoin ratio requirements. The system is designed to balance yield attractiveness with tier accessibility, ensuring that participants most aligned with Core receive consistently favorable rewards.
+Le système d'ajustement des paliers de Core maintient des rendements durables et attractifs pour les participants au staking double grâce à une gestion dynamique des exigences de ratio CORE-Bitcoin. Le système est conçu pour équilibrer l'attractivité des rendements avec l'accessibilité des paliers, garantissant que les participants les plus alignés avec Core reçoivent des récompenses constamment favorables.
 
-## How Tier Adjustments Work
+## Comment fonctionnent les ajustements de palier
 
-### Primary Mechanism
+### Mécanisme principal
 
-The most important lever Core uses is adjusting the **CORE-to-Bitcoin ratio requirement** for accessing the Satoshi Tier and other yield tiers.
+Le levier le plus important utilisé par Core est l'ajustement de **l'exigence de ratio CORE-Bitcoin** pour accéder au palier Satoshi et aux autres paliers de rendement.
 
-### Adjustment Triggers
+### Déclencheurs d'ajustement
 
-**When Too Many Participants Qualify for Satoshi Tier:**
+**Lorsque trop de participants sont admissibles au palier Satoshi**
 
-- The same reward pool gets split among more participants
-- Individual yields decrease for all Satoshi Tier participants
-- The protocol raises the CORE-to-Bitcoin requirement
-- Fewer participants qualify, increasing yields for remaining participants
+- Le même pool de récompenses est divisé entre davantage de participants
+- Les rendements individuels diminuent pour tous les participants au palier Satoshi
+- Le protocole augmente l'exigence de ratio CORE-Bitcoin
+- Moins de participants sont admissibles, ce qui augmente les rendements pour les participants restants
 
-**When Too Few Participants Qualify for Satoshi Tier:**
+**Lorsque trop peu de participants sont admissibles au palier Satoshi**
 
-- Yields become very attractive but highly inaccessible
-- High barriers limit participation to a small subset of stakers
-- The protocol lowers the CORE-to-Bitcoin requirement
-- More participants gain access, creating more balanced yield distribution
+- Les rendements deviennent très attractifs, mais hautement inaccessibles
+- Des barrières élevées limitent la participation à un petit sous-ensemble de stakers
+- Le protocole abaisse l'exigence de ratio CORE-Bitcoin
+- Plus de participants ont accès, ce qui crée une distribution de rendements plus équilibrée
 
-## Key Factors Influencing Adjustments
+## Les facteurs clés influençant les ajustements
 
-Several variables determine when and how tier requirements change:
+Plusieurs variables déterminent quand et comment les exigences de palier changent :
 
-- **Participation Levels**: How many participants qualify for each tier
-- **Asset Prices**: Current market prices of CORE and Bitcoin
-- **Reward Pool Distribution**: How rewards are split across tiers
-- **Network Alignment Goals**: Maintaining incentives for Core-committed participants
+- **Niveaux de participation**: Combien de participants sont admissibles à chaque palier
+- **Prix actuels des actifs**: Prix de marché actuels de CORE et Bitcoin
+- **Distribution du pool de récompenses**: Comment les récompenses sont réparties entre les différents paliers
+- **Objectifs d'alignement du réseau**: Maintenir les incitations pour les participants engagés envers Core
 
-## Practical Examples
+## Exemples pratiques
 
-### Scenario 1: Increasing Requirements
+### Scénario 1 : Augmentation des exigences
 
-1. Dual Staking adoption grows significantly
-2. Many new participants qualify for Satoshi Tier
-3. Individual yields decrease due to reward pool dilution
-4. Protocol increases CORE-to-Bitcoin requirement for Satoshi Tier
-5. Some participants drop to lower tiers
-6. Remaining Satoshi Tier participants see yield recovery
+1. L'adoption du staking dual augmente considérablement
+2. De nombreux nouveaux participants se qualifient pour le niveau Satoshi
+3. Les rendements individuels diminuent en raison de la dilution du pool de récompenses
+4. Le protocole augmente l'exigence CORE-Bitcoin pour le niveau Satoshi
+5. Certains participants rétrogradent à des niveaux inférieurs
+6. Les participants restants du niveau Satoshi voient une récupération de leur rendement
 
-### Scenario 2: Decreasing Requirements
+### Scénario 2 : Réduction des exigences
 
-1. Market conditions make Satoshi Tier very exclusive
-2. Only a small number of participants qualify
-3. High yields but limited accessibility
-4. Protocol decreases CORE-to-Bitcoin requirement
-5. More participants gain Satoshi Tier access
-6. Yields become more balanced across broader participant base
+1. Les conditions de marché rendent le niveau Satoshi très exclusif
+2. Seul un petit nombre de participants se qualifient
+3. Rendements élevés mais accessibilité limitée
+4. Le protocole abaisse l'exigence de ratio CORE-Bitcoin
+5. Plus de participants accèdent au niveau Satoshi
+6. Les rendements deviennent plus équilibrés sur une base de participants plus large
 
-## Impact on Participants
+## Impact sur les participants
 
-### For Existing Satoshi Tier Participants
+### Pour les participants existants du niveau Satoshi
 
-- May need to increase CORE holdings to maintain tier status
-- Benefit from higher yields when requirements increase
-- Incentivized to maintain strong CORE-to-Bitcoin ratios
+- Doivent peut-être augmenter leurs avoirs en CORE pour maintenir leur statut de niveau
+- Profitent de rendements plus élevés lorsque les exigences augmentent
+- Incités à maintenir des ratios CORE-Bitcoin solides
 
 ### For Lower Tier Participants
 
