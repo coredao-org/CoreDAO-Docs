@@ -84,20 +84,20 @@ Pour capturer ces informations de délégation:
 - **Ensemble de validateurs décentralisé**: Les mineurs de partout peuvent aider à sécuriser le réseau Core
 - **Alignement de l'écosystème**: Les intérêts économiques des mineurs sont alignés avec ceux du réseau Core
 
-## Best Practices for Miners
+## Meilleures pratiques pour les mineurs
 
-- Select trustworthy Core validators
-- Ensure correct metadata in op_return field
-- Monitor your CORE rewards address for incoming distributions
-- Maintain consistent mining operations to ensure reliable delegation
+- Sélectionner des validateurs Core de confiance
+- Assurer des métadonnées correctes dans le champ op_return
+- Surveillez votre adresse de récompenses CORE pour les distributions entrantes
+- Maintenir des opérations de minage cohérentes pour garantir une délégation fiable
 
-## Potential Challenges & Mitigations
+## Défis potentiels et mesures d'atténuation
 
-| **Challenge**              | **Mitigation**                                   |
-| -------------------------- | ------------------------------------------------ |
-| Incorrect metadata format  | Core validates metadata before processing        |
-| Missed rewards             | Use reliable tooling to monitor reward addresses |
-| Validator underperformance | Choose validators with strong historical uptime  |
+| **Défi**                        | **Atténuation**                                  |
+| ------------------------------- | ------------------------------------------------ |
+| Format de métadonnées incorrect | Core valide les métadonnées avant le traitement  |
+| Missed rewards                  | Use reliable tooling to monitor reward addresses |
+| Validator underperformance      | Choose validators with strong historical uptime  |
 
 ## Getting Started
 
