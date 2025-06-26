@@ -4,45 +4,45 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core 101: The Bitcoin Everything Chain
+# Core 101: La Cadena de Todo de Bitcoin
 
 ---
 
-## What is Core?
+## ¿Qué es Core?
 
-Core is a high-performance, EVM-compatible Layer 1 blockchain secured by Bitcoin. It unlocks trustless yield for Bitcoin holders and Bitcoin miners who help in securing the leading Bitcoin scaling ecosystem via Core's Satoshi Plus consensus.
+Core es una blockchain de Capa 1 de alto rendimiento, compatible con EVM y asegurada por Bitcoin. Permite a los poseedores y mineros de Bitcoin generar rendimiento sin confianza al contribuir a la seguridad del ecosistema líder de escalabilidad de Bitcoin mediante el consenso Satoshi Plus de Core.
 
-### Satoshi Plus Consensus
+### Consenso Satoshi Plus
 
-Core's unique consensus mechanism brings together three distinct stakeholder groups to secure the network:
+El mecanismo de consenso único de Core une a tres grupos distintos de participantes para asegurar la red:
 
-- **Self-Custodial Bitcoin Staking**: Bitcoin holders timelock their coins in order to vote for Core validators
+- **Staking autocustodiado de Bitcoin**: Los holders de Bitcoin hacen un timelock de sus monedas para votar por validadores de Core
 
-- **Delegated Proof of Work**: Bitcoin miners delegate existing hash power in order to vote for Core validators
+- **Delegated Proof of Work**: Los mineros de Bitcoin delegan su poder de cómputo existente para votar por validadores de Core
 
-- **Delegated Proof of Stake**: CORE token holders lock their coins in order to vote for Core validators
+- **Delegated Proof of Stake**: Los holders del token CORE bloquean sus monedas para votar por validadores de Core
 
-This tripartite system for the election of Core validators creates a robust, multi-layered security model that leverages Bitcoin's proven security while enabling high-performance blockchain operations.
+Este sistema tripartito de elección de validadores crea un modelo de seguridad robusto y multinivel, que aprovecha la seguridad comprobada de Bitcoin, al mismo tiempo que permite una blockchain de alto rendimiento.
 
-### EVM-Compatible Bitcoin Ecosystem
+### Ecosistema de Bitcoin EVM-Compatible
 
-Bitcoin stakers, CORE stakers, and Bitcoin miners combine to vote for validators to secure the Core network. Elected validators are high-performant, reputable, and efficient, allowing Core to process sophisticated transactions rapidly and at low cost to users.
+Los stakers de Bitcoin, los stakers de CORE y los mineros de Bitcoin se combinan para votar por los validadores que aseguran la red Core. Los validadores elegidos son altamente eficientes, confiables y con buen desempeño, lo que permite a Core procesar transacciones sofisticadas rápida y económicamente.
 
-Additionally, the Core blockchain is fully EVM-compatible, meaning that developers can seamlessly build Ethereum-style applications, smart contracts, and tools directly on Core with minimal modifications, thereby expanding the ecosystem's utility and attracting projects across DeFi, stablecoins, gaming, NFTs, and other high-utility sectors.
+Además, la blockchain de Core es totalmente EVM-compatible, lo que permite a los desarrolladores construir aplicaciones, contratos inteligentes y herramientas al estilo Ethereum directamente sobre Core, con modificaciones mínimas. Esto expande la utilidad del ecosistema y atrae proyectos en sectores como DeFi, stablecoins, gaming, NFTs, y más.
 
-## The Bitcoin Yield Challenge
+## El Desafío del Rendimiento con Bitcoin
 
-Bitcoin does not generate native yield like Proof of Stake chains. However, Bitcoin does support native timelocks through its CLTV OP_CODE, which lets Bitcoin holders lock their coins on the Bitcoin blockchain to make them unspendable during the designated timelock period.
+Bitcoin no genera rendimiento nativo como lo hacen las cadenas con Prueba de Participación.  Sin embargo, Bitcoin sí permite bloqueos de tiempo nativos mediante su OP_CODE CLTV, que permite a los poseedores de Bitcoin bloquear sus monedas en la propia blockchain de Bitcoin y hacerlas intransferibles durante un periodo determinado.
 
-### Timelocks Unlock Trustless Yield
+### Los Timelocks Desbloquean Trustless Yield
 
-Core allows Bitcoin's native timelocks to unlock trustless yield. When Bitcoin holders timelock their coins on the Bitcoin blockchain, they earn the right to vote for validators on Core. Elected validators then secure the Core blockchain by producing blocks and validating transactions. Securing Core earns validators and their voters a share of Core's consensus rewards pool. This is how Bitcoin holders can earn real yield without moving their Bitcoin. No bridging. No lending. No wrapping. Just holding.
+Core permite que los timelocks nativos de Bitcoin generen trustless yield. Cuando los poseedores de Bitcoin bloquean sus monedas temporalmente en la blockchain de Bitcoin, obtienen el derecho de votar por validadores en Core. Los validadores elegidos luego aseguran la blockchain de Core al producir bloques y validar transacciones. Al asegurar Core, los validadores y sus votantes reciben una parte del fondo de recompensas por consenso de Core. Así es como los holders de Bitcoin pueden ganar rendimiento real sin mover su Bitcoin. Sin bridging. Sin lending. Sin wrapping. Solo holdeando.
 
-### Where Yield Comes From
+### ¿De Dónde Proviene el Rendimiento?
 
-Core's consensus rewards pool is made up of fixed block rewards and gas fees from network activity.
+El fondo de recompensas por consenso de Core está compuesto por recompensas fijas por bloque y comisiones de gas derivadas de la actividad en la red.
 
-**Block rewards**: 81 years of fixed emissions from ~40% of CORE's 2.1 billion total token supply, distributed with a 3.61% annual reduction rate.
+**Recompensas por bloque**: 81 años de emisiones fijas provenientes de ~40% del suministro total de 2.1 mil millones de tokens, distribuidas con una tasa de reducción anual del 3.61%.
 
 **Gas fees**: Network activity that generates transaction fees will gradually replace block rewards as the primary yield mechanism, similar to Bitcoin's own model.
 
