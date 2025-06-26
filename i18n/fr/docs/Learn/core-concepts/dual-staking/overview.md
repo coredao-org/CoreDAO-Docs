@@ -87,17 +87,17 @@ Votre niveau de récompense est déterminé par la quantité de CORE que vous av
 - **Suivez les performances des validateurs** pour maximiser la disponibilité et les rendements
 - **Diversifiez la sélection des validateurs** pour réduire la dépendance à l'égard d'un seul fournisseur
 
-## Yield Sustainability
+## Durabilité du rendement
 
-- Tiers adjust **dynamically** to maintain attractive yields
-- The protocol balances accessibility with long-term sustainability by adapting to market conditions and participation levels
+- Les paliers s'ajustent **dynamiquement** pour maintenir des rendements attractifs
+- Le protocole équilibre l'accessibilité avec la durabilité à long terme en s'adaptant aux conditions de marché et aux niveaux de participation
 
-## Why It Matters
+## Pourquoi est-ce important
 
-Dual Staking unlocks sustainably attractive yields for Bitcoin stakers who are most committed to Core, as represented by their CORE staking relative to Bitcoin. The system incentivizes Bitcoin holders to become CORE holders, thereby aligning the two ecosystems and creating stronger network effects as both assets work together to secure and grow the Core network.
+Le staking double offre des rendements attractifs et durables pour les stakers Bitcoin les plus engagés envers Core, comme représenté par leur staking de CORE par rapport au Bitcoin. Le système incite les détenteurs de Bitcoin à devenir détenteurs de CORE, alignant ainsi les deux écosystèmes et créant des effets de réseau plus forts à mesure que les deux actifs travaillent ensemble pour sécuriser et développer le réseau Core.
 
-**Start Dual Staking at stake.coredao.org**
+**Commencez le staking double sur stake.coredao.org**
 
 :::info
-Please refer to the [Dual Staking FAQ section](../../../FAQs/dual-staking-faqs.md) for further questions or clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).\
+Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).\
 :::
