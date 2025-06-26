@@ -25,7 +25,7 @@ Existen varios requisitos del sistema, tanto de software como de hardware, para 
 
 ### Hardware
 
-A Validator node on Core participates in block production and transaction validation, ensuring network security and consensus. Los validadores son elegidos en función de su puntaje híbrido (poder de hash de Bitcoin delegado, staking de CORE y staking de Bitcoin) y se turnan para producir bloques. Juegan un papel fundamental en mantener la integridad de la blockchain y ganan recompensas por asegurar la red. The following are the hardware requirements for running Validator Nodes on Core.
+Un nodo validador en Core participa en la producción de bloques y la validación de transacciones, asegurando la seguridad y el consenso de la red. Los validadores son elegidos en función de su puntaje híbrido (poder de hash de Bitcoin delegado, staking de CORE y staking de Bitcoin) y se turnan para producir bloques. Juegan un papel fundamental en mantener la integridad de la blockchain y ganan recompensas por asegurar la red. A continuación se presentan los requisitos de hardware para ejecutar Nodos Validadores en Core.
 
 <Tabs
 defaultValue="testnet2"
@@ -33,7 +33,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Validator Nodes on **Core testnet2**, following minimum hardware specifications are recommended:
+Para nodos validadores en **Core testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 ```
@@ -41,7 +41,7 @@ For Validator Nodes on **Core testnet2**, following minimum hardware specificati
   </TabItem>
 
   <TabItem value="mainnet">
-   For Validator Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para nodos Validadores en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 ```
