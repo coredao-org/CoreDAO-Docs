@@ -55,34 +55,34 @@ Pour capturer ces informations de délégation:
   - Agrège les délégations
   - Attribue un poids aux validateurs en fonction de la puissance de hachage des mineurs
 
-### 3. Validator Election Process
+### 3. Processus d'Élection des Validateurs sur le Réseau Core
 
-Every day, Core calculates validator scores using miner delegation data from **one week prior**. Validators with higher delegated hash power have higher election probability
+. Chaque jour, Core calcule les scores des validateurs en utilisant les données de délégation des mineurs datant d’une **semaine précédente**. Les validateurs avec une puissance de hachage déléguée plus élevée ont une probabilité d'élection plus forte,
 
-### 4. Rewards and Incentives
+### 4. Récompenses et Incitations
 
-- Elected validators earn CORE rewards for producing blocks
-- Validators take a small commission
-- Remaining rewards are passed to delegators (including participating miners)
+- Les validateurs élus gagnent des récompenses en CORE pour la production de blocs,
+- Les validateurs prélèvent une petite commission
+- Les récompenses restantes sont redistribuées aux délégateurs (y compris les mineurs participants)
 
-**Outcome:** Miners earn both:
+**Résultat**: Les mineurs gagnent à la fois :
 
-- Bitcoin rewards (as usual)
-- CORE token rewards (via validator delegation)
+- Récompenses Bitcoin (comme d'habitude)
+- Récompenses en tokens CORE (via la délégation de validateurs)
 
-## Benefits
+## Avantages
 
-### For Bitcoin Miners
+### Pour les mineurs Bitcoin
 
-- **Earn More**: Gain CORE tokens with no added energy cost
-- **Stay Independent**: Continue mining Bitcoin without operational changes
-- **Diversify Returns**: Earn CORE tokens in addition to Bitcoin rewards
+- **Gagnez Plus**: Gagnez des tokens CORE sans coût énergétique supplémentaire
+- **Restez Indépendant**: Continuez à miner du Bitcoin sans changements opérationnels
+- **Diversifiez vos revenus**: Gagnez des tokens CORE en plus des récompenses Bitcoin
 
-### For Core
+### **Sécurité Bitcoin**: Intègre une véritable preuve de travail (PoW) dans l'élection de ses validateurs
 
-- **Bitcoin Security**: Integrates real PoW into its validator election
-- **Decentralized Validator Set**: Miners from anywhere can help secure Core
-- **Ecosystem Alignment**: Miner economic interests are aligned with the Core network
+- **Sécurité Bitcoin**: Intègre une véritable preuve de travail (PoW) dans l'élection de ses validateurs
+- **Ensemble de validateurs décentralisé**: Les mineurs de partout peuvent aider à sécuriser le réseau Core
+- **Alignement de l'écosystème**: Les intérêts économiques des mineurs sont alignés avec ceux du réseau Core
 
 ## Best Practices for Miners
 
