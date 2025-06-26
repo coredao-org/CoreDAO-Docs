@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-## Overview
+## Visión general
 
 Core's governance system empowers the community to actively participate in decision-making processes that shape the ecosystem's future, from protocol changes to feature implementations. The governance is facilitated through the CORE token and follows a progressive decentralization approach.
 
