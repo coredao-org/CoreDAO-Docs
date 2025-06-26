@@ -86,18 +86,17 @@ En cada round, después de que se completa la turn round, el módulo `Earn`:
 Luego, el ratio de conversión se recalcula usando la fórmula:
 
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply()
 ```
 
 Dado que **la recolección de recompensas solo ocurre una vez al día**, el ratio de conversión se mantiene constante durante todo el día hasta que ocurre la siguiente turn round. La lógica correspondiente se implementa en el método `afterTurnRound()`.
 
 ### Manejo de la Protección de Deudas al delegar/desdelegar
 
-In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** be >= 1.
+En el contrato `PledgeAgent` (el contrato de staking), cuando los usuarios delegan, la cantidad de CORE **debe** ser >= 1.
 
-Whereas, upon undelegation
+Mientras que, al hacer una desdelegación
 
-- The amount of CORE **must** be >= 1 **AND**
+- La cantidad de CORE **debe** ser >= 1 **Y**
 - The remaining CORE left on a validator of this address **must** be >= 1
 
 Cuando se maneja `delegate` y `undelegate` de manera interna, el módulo`Earn` también debe seguir estas restricciones.
