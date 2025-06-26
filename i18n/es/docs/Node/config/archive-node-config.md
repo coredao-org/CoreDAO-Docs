@@ -15,17 +15,17 @@ Los nodos de archivo en la red Core desempeñan un papel crucial en el mantenimi
 
 ## Requisitos del sistema
 
-There are several system requirements, both software and hardware, for setting up an Archive node on the Core network.
+Existen varios requisitos del sistema, tanto de software como de hardware, para configurar un nodo Archive en la red Core.
 
 ### Software
 
-- **Operating System:** Currently, a Core Archive node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability.
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes.
+- **Sistema Operativo:** Actualmente, un nodo Archive de Core es compatible _únicamente_ con sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o versiones posteriores).
+- **Conectividad de Red:** Conexión a Internet estable, con baja latencia y alta disponibilidad.
+- **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y otros nodos.
 
 ### Hardware
 
-An Archive node on Core stores the entire blockchain history, ensuring data availability and integrity for network participants. Soporta la consulta de transacciones pasadas, la verificación de datos históricos y mejora el análisis de la blockchain. Aunque no son necesarios para el consenso, los nodos archivo juegan un papel crucial en el mantenimiento de la transparencia y en el apoyo a las aplicaciones descentralizadas. The following are the hardware requirements for running the Archive node on Core.
+Un nodo Archive en Core almacena todo el historial de la blockchain, garantizando la disponibilidad e integridad de los datos para los participantes de la red. Soporta la consulta de transacciones pasadas, la verificación de datos históricos y mejora el análisis de la blockchain. Aunque no son necesarios para el consenso, los nodos archivo juegan un papel crucial en el mantenimiento de la transparencia y en el apoyo a las aplicaciones descentralizadas. A continuación, se presentan los requisitos mínimos de hardware recomendados para ejecutar un nodo Archive en Core:
 
 <Tabs
 defaultValue="testnetTwo"
@@ -33,15 +33,9 @@ values={[
 {label: 'Testnet2', value: 'testnetTwo'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnetTwo">
-For Archive Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Para nodos Archive en Core Testnet2, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 1 TB. SSDs are recommended due to their faster read and write speeds, which are crucial for managing large blockchain data and providing quick access to historical transactions.               |
-| **CPU**            | 8 Core CPU                                                                                          |
-| **RAM**            | 32 Gigabytes                                                                                        |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
 ```
 
   </TabItem>
@@ -50,12 +44,6 @@ For Archive Nodes on **Core Testnet2**, following minimum hardware specification
     For Archive Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
 ```
-| Requirements   | Details                                                                                                 |  
-|----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4 TB. SSDs are recommended due to their faster read and write speeds, which are crucial for managing large blockchain data and providing quick access to historical transactions.               |
-| **CPU**            | 8 Core CPU                                                                                          |
-| **RAM**            | 32 Gigabytes                                                                                        |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
 ```
 
   </TabItem>
@@ -76,8 +64,6 @@ geth --datadir node init genesis.json
 4. Now that the setup for the archive node is completed, let's start running it! Execute the following `geth` command to run the archive node:
 
 ```bash
-## start an archive node
-geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=archive --syncmode=full
 ```
 
 5. While the archive node is running, you can monitor its logs to ensure that everything is operating correctly. El archivo de registro se encuentra en `./node/logs/core.log` de forma predeterminada, pero se puede cambiar a otra ubicación si lo desea.
