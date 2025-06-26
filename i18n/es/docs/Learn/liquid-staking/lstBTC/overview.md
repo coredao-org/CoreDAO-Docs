@@ -8,44 +8,44 @@ sidebar_position: 2
 
 ---
 
-## What is lstBTC?
+## ¿Qué es lstBTC?
 
-**lstBTC (Liquid Staked Bitcoin)** is a yield-bearing token that represents Bitcoin + accrued yield through Core's **Dual Staking** mechanism. It offers **yield denominated in CORE or Bitcoin**, **full asset liquidity**, and **institutional-grade custody**.
+**lstBTC (Liquid Staked Bitcoin)** es un token con rendimiento que representa Bitcoin + rendimiento acumulado a través del mecanismo de **Dual Staking** de Core. Ofrece **rendimiento denominado en CORE o Bitcoin**, liquidez total del activo y **custodia de nivel institucional**.
 
-## Product Structure
+## Estructura del Producto
 
-### Custodial Backing
+### Respaldo Custodiado
 
-Principal Bitcoin is held with trusted custodians including **BitGo**, **Copper**, and **Hex Trust**. These institutions safeguard the Bitcoin and authorize its use in Maple Finance's yield-generating strategies without compromising control.
+El Bitcoin principal se mantiene con custodios de confianza, incluidos **BitGo**, **Copper** y **Hex Trust**. Estas instituciones protegen el Bitcoin y autorizan su uso en las estrategias de generación de rendimiento de Maple Finance sin comprometer el control del activo.
 
-### Yield Generation
+### Generación de Rendimiento
 
-Managed via Maple Finance's institutional strategy:
+Administrada mediante la estrategia institucional de Maple Finance:
 
-- **Bitcoin Collateralization**: Deposited Bitcoin serves as collateral
-- **CORE Acquisition**: Stablecoins are borrowed against Bitcoin to acquire CORE tokens
-- **Dual Staking Implementation**: Both Bitcoin and CORE are staked to access Satoshi Tier yields
-- **Risk Management**: CORE price exposure is hedged to protect Bitcoin collateral
-- **Yield Distribution**: Generated rewards flow to lstBTC
+- **Colateralización en Bitcoin**: El Bitcoin depositado se utiliza como garantía
+- **Adquisición de CORE**: Se toman préstamos en stablecoins contra el Bitcoin para adquirir tokens CORE
+- **Implementación de Dual Staking**: Se hace staking tanto de Bitcoin como de CORE para acceder a los rendimientos del Satoshi Tier
+- **Gestión de Riesgos**: Se cubre la exposición al precio de CORE para proteger el colateral en Bitcoin
+- **Distribución de Rendimiento**: Las recompensas generadas fluyen hacia lstBTC
 
-### Token Properties
+### Propiedades del Token
 
-- **Full Backing** — Each lstBTC represents one Bitcoin plus accrued yield
-- **Asset Liquid** — Tradable, usable across DeFi, and postable as collateral
-- **Institutionally Secure** — Bitcoin remains with participating custodians
-- **Real Yield** — Yield denominated in CORE or Bitcoin
+- **Respaldo Total** — Cada lstBTC representa un Bitcoin más el rendimiento acumulado
+- **Activo Líquido** — Puede ser intercambiado, usado en DeFi y usado como colateral
+- **Seguridad Institucional** —El Bitcoin permanece bajo custodia de instituciones participantes
+- **Rendimiento Real** — El rendimiento puede estar denominado en CORE o Bitcoin
 
-## Key Benefits
+## Beneficios Clave
 
-### For Institutions
+### Para Instituciones
 
-- **Capital Efficiency** — Earn yield while maintaining Bitcoin exposure and liquidity
-- **Custody Continuity** — Compatible with existing institutional custody setups
-- **Hedged Exposure** — Professional management of CORE price risk
+- **Eficiencia de Capital** — Obtienen rendimiento manteniendo exposición y liquidez en Bitcoin
+- **Continuidad de Custodia** — Compatible con las configuraciones de custodia institucional existentes
+- **Exposición Cubierta** — Gestión profesional del riesgo de precio del token CORE
 
-### For the Core Ecosystem
+### Para el Ecosistema Core
 
-- **Drives CORE Demand** — Minting lstBTC requires acquiring and staking CORE
-- **Boosts Staking Participation** — Increases overall Dual Staking volume
-- **Institutional Onboarding** — Increases institutional involvement with Core
-- **Expands Yield Token Liquidity** — Creates a tradable asset on Core
+- **Impulsa la Demanda por CORE** — Para mintear lstBTC se requiere adquirir y hacer staking de CORE
+- **Aumenta la Participación en Staking** — Eleva el volumen general de Dual Staking
+- **Incorporación Institucional** — Fomenta la participación de instituciones en Core
+- **Expande la Liquidez del Token con Rendimiento** — Crea un activo intercambiable en Core
