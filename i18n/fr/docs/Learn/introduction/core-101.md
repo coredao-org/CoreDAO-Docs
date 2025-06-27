@@ -36,7 +36,7 @@ Bitcoin ne génère pas de rendement natif comme les chaînes à Preuve d'Enjeu.
 
 ### Les Timelocks Débloquent un Rendement Sans Confiance
 
-Core permet aux timelocks natifs de Bitcoin de débloquer un rendement sans confiance. Lorsque les détenteurs de Bitcoin verrouillent leurs pièces sur la blockchain Bitcoin, ils gagnent le droit de voter pour les validateurs sur Core. Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. La sécurisation de Core rapporte aux validateurs et à leurs électeurs une part du pool de récompenses de consensus de Core. C'est ainsi que les détenteurs de Bitcoin peuvent gagner un rendement réel sans déplacer leur Bitcoin. No bridging. No lending. No wrapping. Just holding.
+Core permet aux timelocks natifs de Bitcoin de débloquer un rendement sans confiance. Lorsque les détenteurs de Bitcoin verrouillent leurs pièces sur la blockchain Bitcoin, ils gagnent le droit de voter pour les validateurs sur Core. Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. La sécurisation de Core rapporte aux validateurs et à leurs électeurs une part du pool de récompenses de consensus de Core. C'est ainsi que les détenteurs de Bitcoin peuvent gagner un rendement réel sans déplacer leur Bitcoin. Pas de pontage nécessaire. No lending. No wrapping. Just holding.
 
 ### Where Yield Comes From
 
