@@ -20,50 +20,50 @@ Core bénéficie directement à Bitcoin en :
 
 - Offrir aux mineurs une deuxième récompense de bloc, renforçant le budget de sécurité de Bitcoin
 - Créer une nouvelle utilité pour le réseau et l'actif Bitcoin en étendant leur protection et leur activité à une plateforme de contrats intelligents haute performance
-- Enhancing Bitcoin's economic model through:
-  - Increased capital efficiency
-  - Expanded institutional and retail participation
-  - New economic opportunities for Bitcoin holders
+- Améliorer le modèle économique de Bitcoin grâce à :
+  - Efficacité accrue du capital
+  - Participation élargie des institutions et des particuliers
+  - Nouvelles opportunités économiques pour les détenteurs de Bitcoin
 
-### Value for Core
+### Valeur pour Core
 
-Core leverages Bitcoin by:
+Core tire parti de Bitcoin en :
 
-- Drawing security from the most secure chain and valuable crypto asset
-- Building the leading Bitcoin DeFi ecosystem through Bitcoin-alignment and EVM-compatibility
-- Tying the value proposition of CORE to enhancing the value proposition of Bitcoin
+- Tirer la sécurité de la chaîne la plus sécurisée et de l'actif cryptographique le plus précieux
+- Construire l'écosystème DeFi leader de Bitcoin grâce à l'alignement avec Bitcoin et la compatibilité EVM
+- Lier la proposition de valeur de CORE à l'amélioration de la proposition de valeur de Bitcoin
 
-## The Bitcoin Consumer Chain
+## La Chaîne de Consommation Bitcoin
 
-Core is the leading Bitcoin scaling ecosystem, powered by full EVM compatibility and robust infrastructure that caters to every type of Bitcoin and crypto user:
+Core est l'écosystème leader de mise à l'échelle de Bitcoin, alimenté par une compatibilité EVM complète et une infrastructure robuste qui répond à tous les types d'utilisateurs de Bitcoin et de crypto :
 
-### For Conservative Bitcoin Holders:
+### Pour les détenteurs conservateurs de Bitcoin :
 
-- Generate trustless yield through self-custodial staking
-- Maintain complete control of Bitcoin assets
-- Earn rewards without compromising security
+- Générer un rendement sans confiance grâce à la mise en jeu auto-custodialisée
+- Garder le contrôle total des actifs Bitcoin
+- Gagner des récompenses sans compromettre la sécurité
 
-### For Developers and Builders:
+### Pour les développeurs et les constructeurs :
 
-- Full EVM compatibility enables seamless smart contract development
-- Low transaction fees and high performance
-- Expansive toolset for building across multiple domains:
-  - DeFi protocols
-  - Gaming applications
-  - NFT platforms
-  - Cross-chain bridges
-  - Social applications
-- Comprehensive developer support and resources
-- Access to a growing ecosystem of Bitcoin-aligned infrastructure
+- La compatibilité EVM complète permet un développement de contrats intelligents fluide
+- Frais de transaction faibles et haute performance
+- Ensemble d'outils étendu pour construire sur plusieurs domaines:
+  - Protocoles DeFi
+  - Applications de jeux
+  - Plateformes NFT
+  - Ponts inter-chaînes
+  - Applications sociales
+- Support et ressources complets pour les développeurs
+- Accès à un écosystème en croissance d'infrastructures alignées sur Bitcoin
 
-### For Users:
+### Pour les utilisateurs :
 
-- Rich DeFi ecosystem with deep Bitcoin liquidity
-- Multiple yield generation strategies
-- Advanced financial instruments
-- Opportunity to participate in cutting-edge Bitcoin-powered applications
+- Écosystème DeFi riche avec une liquidité Bitcoin profonde
+- Stratégies de génération de rendements multiples
+- Instruments financiers avancés
+- Opportunité de participer à des applications de pointe alimentées par Bitcoin
 
-Core provides a unified platform that transforms Bitcoin from a static asset to a dynamic, programmable technology—accessible to HODLers, builders, and sophisticated crypto users alike.
+Core fournit une plateforme unifiée qui transforme Bitcoin d'un actif statique en une technologie dynamique et programmable, accessible aux HODLers, aux développeurs et aux utilisateurs de crypto-monnaies sophistiqués.
 
 ## The Institutional-Grade Bitcoin Yield Platform
 
