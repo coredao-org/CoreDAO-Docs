@@ -92,7 +92,7 @@ Core alimente une nouvelle génération de produits financiers Bitcoin:
 
 ## L'avenir Bitcoin × CORE
 
-By unlocking sustainable yield and access to scalable Bitcoin DeFi:
+En débloquant un rendement durable et un accès à un Bitcoin DeFi évolutif:
 
-1. The Core blockchain can become the de facto dapp platform for Bitcoin activity.
-2. The CORE token can become the secondary asset of Bitcoiners
+1. La blockchain Core peut devenir la plate-forme d'applications décentralisées (dApp) de référence pour l'activité Bitcoin.
+2. Le token CORE peut devenir l'actif secondaire des Bitcoiners
