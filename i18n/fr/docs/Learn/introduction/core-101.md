@@ -36,42 +36,42 @@ Bitcoin ne génère pas de rendement natif comme les chaînes à Preuve d'Enjeu.
 
 ### Les Timelocks Débloquent un Rendement Sans Confiance
 
-Core permet aux timelocks natifs de Bitcoin de débloquer un rendement sans confiance. Lorsque les détenteurs de Bitcoin verrouillent leurs pièces sur la blockchain Bitcoin, ils gagnent le droit de voter pour les validateurs sur Core. Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. La sécurisation de Core rapporte aux validateurs et à leurs électeurs une part du pool de récompenses de consensus de Core. C'est ainsi que les détenteurs de Bitcoin peuvent gagner un rendement réel sans déplacer leur Bitcoin. Pas de pontage nécessaire. No lending. No wrapping. Just holding.
+Core permet aux timelocks natifs de Bitcoin de débloquer un rendement sans confiance. Lorsque les détenteurs de Bitcoin verrouillent leurs pièces sur la blockchain Bitcoin, ils gagnent le droit de voter pour les validateurs sur Core. Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. La sécurisation de Core rapporte aux validateurs et à leurs électeurs une part du pool de récompenses de consensus de Core. C'est ainsi que les détenteurs de Bitcoin peuvent gagner un rendement réel sans déplacer leur Bitcoin. Pas de pontage nécessaire. Pas de prêt. Pas d'emballage. Juste détenir.
 
-### Where Yield Comes From
+### D'où vient le rendement
 
-Core's consensus rewards pool is made up of fixed block rewards and gas fees from network activity.
+Le pool de récompenses de consensus de Core est composé de récompenses de bloc fixes et de frais de gaz issus de l'activité du réseau.
 
-**Block rewards**: 81 years of fixed emissions from ~40% of CORE's 2.1 billion total token supply, distributed with a 3.61% annual reduction rate.
+**Récompenses de bloc**: 81 ans d'émissions fixes provenant de ~40% de l'offre totale de 2,1 milliards de tokens CORE, distribuées avec un taux de réduction annuel de 3,61%.
 
-**Gas fees**: Network activity that generates transaction fees will gradually replace block rewards as the primary yield mechanism, similar to Bitcoin's own model.
+**Frais de gaz**: L'activité réseau générant des frais de transaction remplacera progressivement les récompenses de bloc comme principal mécanisme de rendement, similaire au modèle de Bitcoin.
 
 ### Dual Staking
 
-Bitcoin Staking yields are tiered, with the higher tiers of yield reserved for those most aligned with the Core network, as represented by staked CORE relative to staked Bitcoin. Therefore, Bitcoin stakers are incentivized to become CORE stakers in order to access the highest reward tiers.
+Les rendements du staking de Bitcoin sont échelonnés, les niveaux de rendement les plus élevés étant réservés à ceux qui sont le plus alignés avec le réseau Core, représentés par le CORE staké par rapport au Bitcoin staké. Les détenteurs de Bitcoin sont donc incités à devenir des stakers CORE pour accéder aux niveaux de récompense les plus élevés.
 
-By being the exclusive key unlocking higher Bitcoin staking yields, the CORE token can become the second asset that Bitcoiners care about—not by competing with Bitcoin, but by complementing it.
+En étant la clé exclusive pour débloquer des rendements plus élevés sur le staking de Bitcoin, le token CORE peut devenir le deuxième actif qui intéresse les détenteurs de Bitcoin, non pas en concurrençant Bitcoin, mais en le complétant.
 
-## Something for Everybody
+## Quelque chose pour tout le monde
 
-No matter what kind of Bitcoiner you are, Core has something for you. Core transforms Bitcoin into the central asset of a high-performance DeFi environment, turning idle Bitcoin into productive Bitcoin within a variety of frameworks.
+Quel que soit le type de détenteur de Bitcoin que vous êtes, Core a quelque chose pour vous. Core transforme Bitcoin en actif central d'un environnement DeFi haute performance, convertissant le Bitcoin inactif en Bitcoin productif dans divers cadres.
 
-- **Conservative Bitcoin Holders**: Earn trustless yield while keeping complete custody of your coins
+- **Détenteurs de Bitcoin prudents**: Gagnez un rendement sans confiance tout en gardant le contrôle total de vos pièces
 
-- **Bitcoin Users**: Access fast, low-cost transactions on the leading Bitcoin scaling solution
+- **Utilisateurs de Bitcoin**: Accédez à des transactions rapides et peu coûteuses sur la solution d'évolutivité Bitcoin leader
 
-- **Yield Maximizers**: Stake CORE tokens alongside Bitcoin for enhanced Dual Staking rewards
+- **Maximiseurs de rendement**: Stakez des tokens CORE aux côtés de Bitcoin pour des récompenses accrues de Double Staking
 
-- **DeFi Users**: Deep Bitcoin liquidity and an expansive dapp environment
+- **Utilisateurs DeFi**: Liquidité Bitcoin profonde et environnement d'applications décentralisées (dapps) expansif
 
-- **Builders**: Deploy on the fastest-growing Bitcoin ecosystem with full EVM compatibility
+- **Développeurs**: Déployez vos projets sur l'écosystème Bitcoin en pleine croissance avec une compatibilité EVM totale
 
-- **Bitcoin Miners**: Earn supplemental rewards without changing your mining operations
+- **Mineurs de Bitcoin**: Gagnez des récompenses supplémentaires sans modifier vos opérations de minage
 
-- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields, or access liquid lstBTC with professional custody
+- **Détenteurs institutionnels**: Bloquez Bitcoin dans le temps et stakez CORE pour des rendements premium, ou accédez à lstBTC liquide avec une garde professionnelle
 
-- **Institutional Traders**: Use lstBTC as capital-efficient collateral while earning Bitcoin-denominated yield
+- **Traders institutionnels**: Utilisez lstBTC comme garantie efficace en capital tout en gagnant un rendement libellé en Bitcoin
 
-- **Structured Products Providers**: Build Bitcoin yield products using Core's institutional-grade infrastructure
+- **Fournisseurs de produits structurés**: Créez des produits de rendement Bitcoin en utilisant l'infrastructure de niveau institutionnel de Core
 
-Wherever you are on your Bitcoin journey, Core meets you there - expanding what's possible with Bitcoin without changing what makes Bitcoin special.
+Où que vous soyez dans votre parcours Bitcoin, Core vous accompagne - en élargissant les possibilités de Bitcoin sans changer ce qui rend Bitcoin spécial.
