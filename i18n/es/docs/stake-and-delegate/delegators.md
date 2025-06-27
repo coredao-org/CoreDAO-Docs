@@ -10,16 +10,16 @@ sidebar_position: 2
 
 ## Descripción general de la delegación
 
-En el contexto de la cadena de bloques Core, la delegación es un mecanismo fundamental que permite a los mineros de BTC y a los poseedores de tokens BTC y CORE participar activamente en la seguridad y gobernanza de la red sin ser ellos mismos validadores. This process involves the delegators entrusting their voting and operational power to validators, who then use the delegated resources (Bitcoin hash power, BTC, and CORE) to participate in the network's consensus process and governance decisions.
+En el contexto de la cadena de bloques Core, la delegación es un mecanismo fundamental que permite a los mineros de BTC y a los poseedores de tokens BTC y CORE participar activamente en la seguridad y gobernanza de la red sin ser ellos mismos validadores. Este proceso implica que los delegadores confíen su poder de voto y operativo a los validadores, quienes a su vez utilizan los recursos delegados (poder de hash de Bitcoin, BTC y CORE) para participar en el proceso de consenso de la red y en las decisiones de gobernanza.
 
-## Types of Delegation on the Core
+## Tipos de Delegación en Core
 
 1. **Delegación BTC/CORE a Validadores:**
 
     - **Propósito:** Este tipo de delegación permite a los poseedores de tokens BTC y CORE apoyar a validadores específicos delegándoles sus tokens. A cambio, los validadores utilizan el poder agregado para proteger la red, validar transacciones y producir bloques.
     - **Beneficios:** Los delegados comparten las recompensas obtenidas por los validadores elegidos, reciben una parte de las tarifas de transacción y bloquean las recompensas en proporción a su apuesta.
-    - **Cómo Delegar BTC:** Core permite a los holders de BTC delegar sus activos a validadores en Core mediante el Staking de BTC Auto-Custodiado, lo que les permite no solo ganar recompensas por staking, sino también mantener la propiedad completa de sus activos. For more details, refer to the detailed guide on [how to delegate BTC on Core](../stake-and-delegate/btc-staking/stake-btc-guide.md).
-    - **Cómo delegar CORE:** Core permite a los titulares de CORE delegar sus activos a validadores en Core a través de un mecanismo de delegación simple, lo que les permite participar en la seguridad y gobernanza de la red Core. For more details, refer to the detailed guide on [how to delegate CORE](./CORE-staking.md).
+    - **Cómo Delegar BTC:** Core permite a los holders de BTC delegar sus activos a validadores en Core mediante el Staking de BTC Auto-Custodiado, lo que les permite no solo ganar recompensas por staking, sino también mantener la propiedad completa de sus activos. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar BTC en CORE] (../stake-and-delegate/btc-staking/stake-btc-guide.md).
+    - **Cómo delegar CORE:** Core permite a los titulares de CORE delegar sus activos a validadores en Core a través de un mecanismo de delegación simple, lo que les permite participar en la seguridad y gobernanza de la red Core. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar CORE] (./CORE-staking.md).
 
 2. **Delegación de Hash Power de BTC Miners:**
 
@@ -27,7 +27,7 @@ En el contexto de la cadena de bloques Core, la delegación es un mecanismo fund
     - **Proceso:** Los mineros incluyen metadatos específicos en los bloques de Bitcoin que extraen, indicando su soporte para un validador Core, vinculando así la seguridad de ambas redes.
     - **Cómo Delegar Hash:** Core permite a los mineros de BTC delegar su hashpower a validadores en Core, lo que les permite ganar recompensas por staking del ecosistema Core en forma de tokens CORE adicionales. Para obtener más detalles, consulte la guía detallada sobre [cómo delegar Hash Poweer en validadores principales] (./delegating-hash.md).
 
-## Importance of Delegations on the Core
+## Importancia de las Delegaciones en Core
 
 1. **Seguridad de red mejorada:** Al permitir que una amplia base de poseedores de tokens delegue sus activos (BTC y CORE) a validadores, Core garantiza que la responsabilidad y el poder de mantener la red se distribuyan entre muchos participantes, evitando así la centralización y aumentando seguridad.
 
