@@ -8,45 +8,26 @@ sidebar_position: 2
 
 ---
 
-Updating `geth` is as easy as it gets. You just need to download and install the newer version of `geth`, shut down your node, and restart with the new software. Geth will automatically use the data of your old node and sync the latest blocks that were mined since you shut down the old software.
+Actualizar `geth` es tan fácil como parece. Solo necesitas descargar e instalar la nueva versión de `geth`, apagar tu nodo y reiniciarlo con el nuevo software. Geth utilizará automáticamente los datos de tu nodo anterior y sincronizará los últimos bloques minados desde que se apagó el software anterior.
 
-### Step 1: Compile the New Version or download new pre-built binaries from the release
+### Paso 1: Compila la nueva versión o descarga los nuevos binarios precompilados desde la sección de lanzamientos
 
 ```bash
-git clone https://github.com/coredao-org/core-chain
-
-make geth
 ```
 
 ```bash
-# Download pre-built binaries
-
-# Linux
-wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_linux |cut -d\" -f4)
-mv geth_linux geth
-chmod -v u+x geth
-
-# MacOS
-wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep geth_mac |cut -d\" -f4)
-mv geth_mac geth
-chmod -v u+x geth
-make geth
 ```
 
-### Step 2: Stop Geth
+### Paso 2: Detén Geth
 
 ```
-$ pid=`ps -ef | grep geth | grep -v grep | awk '{print $2}'`
-$ kill  $pid
 ```
 
-### Step 3: Restart
+### Paso 3: Reinicia
 
 :::note
-Ensure that you use the same start-up command as before the upgrade.
+Asegúrate de utilizar el mismo comando de inicio que antes de la actualización.
 :::
 
 ```bash
-##
-./geth --config ./config.toml --datadir ./node --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0
 ```
