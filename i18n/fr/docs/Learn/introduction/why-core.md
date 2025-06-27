@@ -1,25 +1,25 @@
 ---
-sidebar_label: Why Core
+sidebar_label: Pourquoi Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Why Core
+# Pourquoi Core
 
 ---
 
-## What is Core?
+## Qu'est-ce que Core Dao?
 
-Core is the high-performance, EVM-compatible blockchain that transforms Bitcoin from a static store of value into a dynamic, productive asset usable across a rich decentralized application ecosystem.
+Core est une blockchain haute performance compatible EVM qui transforme Bitcoin d'un simple stockage de valeur statique en un actif dynamique et productif, utilisable à travers un écosystème riche d'applications décentralisées.
 
-## Bidirectional Value Creation
+## Création de valeur bidirectionnelle
 
-### Value for Bitcoin
+### Valeur pour Bitcoin
 
-Core directly benefits Bitcoin by:
+Core bénéficie directement à Bitcoin en :
 
-- Providing miners a second block reward, strengthening Bitcoin’s security budget
-- Creating new utility for the Bitcoin network and asset by extending their protection and activity to a high-performance smart contract platform
+- Offrir aux mineurs une deuxième récompense de bloc, renforçant le budget de sécurité de Bitcoin
+- Créer une nouvelle utilité pour le réseau et l'actif Bitcoin en étendant leur protection et leur activité à une plateforme de contrats intelligents haute performance
 - Enhancing Bitcoin's economic model through:
   - Increased capital efficiency
   - Expanded institutional and retail participation
