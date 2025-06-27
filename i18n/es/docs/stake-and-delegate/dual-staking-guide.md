@@ -155,7 +155,7 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
   - La cantidad mínima para delegar es 0.01 Bitcoin si lo haces a través del sitio web oficial.
   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
-  - Select inside the lock time box to input values, or click on the calendar icon to select the date, and click ‘OK’ to proceed.
+  - Selecciona dentro del cuadro de tiempo de bloqueo para ingresar valores, o haz clic en el ícono del calendario para seleccionar la fecha, y luego haz clic en ‘OK’ para continuar.
   - El tiempo de bloqueo predeterminado se establece con un mes de anticipación.
 - Especificar la velocidad de prioridad de la red para tu transacción.
 
@@ -163,13 +163,13 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
 
 24. Finalmente, haz clic en ‘Confirmar’ para completar la transacción.
 
-**Confirm `OP_Return` Output**
+**Confirmar salida `OP_Return`**
 
-25. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an `OP_Return` output. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Abort the transaction if it doesn't include the `OP_Return` output.
+25. Antes de firmar la transacción en tu billetera, verifica que las salidas de la transacción incluyan una salida `OP_Return`. La salida `OP_Return` es donde se guarda tu `redeem_script` y se utiliza esencialmente para redimir tu Bitcoin apostado. Puede haber dos o tres salidas, pero al menos una debe ser siempre **OP_Return**. Cancela la transacción si no incluye una salida `OP_Return`.
 
 <p align="center"></p>
 
-26. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. You could click on **My Staking** to see your staking records or **View on Bitcoin Explorer** to review this transaction.
+26. Una vez que confirmes la transición, recibirás una notificación de **Transacción Enviada** en la parte superior derecha de tu pantalla. Puedes hacer clic en **My Staking** para ver tus registros de staking o en **View on Bitcoin Explorer** para revisar esta transacción.
 
 <p align="center"></p>
 
@@ -179,8 +179,8 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
 
 <p align="center"></p>
 
-28. The **My Staking** page displays records of all your staking activities (CORE, BTC, Bitcoin hash power). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
+28. La página **My Staking** muestra los registros de todas tus actividades de staking (CORE, BTC, hash power de Bitcoin). Haz clic en las respectivas pestañas de CORE, BTC y Hash para ver detalles sobre tu staking y delegaciones.
 
 <p align="center"></p>
 
-**Congratulations,** you have successfully staked your Bitcoin and CORE on the Core blockchain and will now actively earn CORE tokens as rewards. Al apostar Bitcoin y votar por los validadores, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad. Además, a través del Staking Doble, ayudas a fortalecer la conexión entre las blockchains de Bitcoin y Core, alineando incentivos y creando valor en ambos ecosistemas.
+**Felicidades,** has puesto exitosamente en staking tu Bitcoin y CORE en la blockchain de Core y ahora ganarás tokens CORE como recompensas. Al apostar Bitcoin y votar por los validadores, contribuyes activamente a la gobernanza y seguridad de la red Core, apoyando su descentralización y estabilidad. Además, a través del Staking Doble, ayudas a fortalecer la conexión entre las blockchains de Bitcoin y Core, alineando incentivos y creando valor en ambos ecosistemas.
