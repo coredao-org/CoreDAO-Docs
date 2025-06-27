@@ -57,4 +57,4 @@ L'idée clé est l'interaction entre deux offres fixes :
 4. La rareté renforce la proposition de valeur pour les deux actifs
 5. Des propositions de valeur plus importantes attirent davantage de participants, répétant ainsi le cycle
 
-This dynamic positions CORE as **the primary companion asset to Bitcoin** for anyone serious about generating trustless yield on their Bitcoin holdings.
+Cette dynamique positionne CORE comme **l'actif compagnon principal de Bitcoin** pour quiconque souhaite sérieusement générer des rendements sans confiance sur ses avoirs en Bitcoin.
