@@ -65,32 +65,32 @@ Core est l'écosystème leader de mise à l'échelle de Bitcoin, alimenté par u
 
 Core fournit une plateforme unifiée qui transforme Bitcoin d'un actif statique en une technologie dynamique et programmable, accessible aux HODLers, aux développeurs et aux utilisateurs de crypto-monnaies sophistiqués.
 
-## The Institutional-Grade Bitcoin Yield Platform
+## La plateforme de rendement Bitcoin de qualité institutionnelle
 
-Core's Bitcoin Timelock-enabled yield helps increase institutional capital efficiency without compromising secure custody solutions:
+Le rendement activé par Timelock de Bitcoin de Core aide à augmenter l'efficacité du capital institutionnel sans compromettre les solutions de garde sécurisées :
 
-1. **Security:** Timelocks protect principal, introducing no new risks to the underlying Bitcoin
-2. **Sustainable Yield:** Predictable, protocol-native reward generation
-3. **Tax Efficiency:** Timelocks enable yield-generation without wrapping or moving Bitcoin
-4. **Transparency:** Full on-chain visibility of all transactions and positions
-5. **Compliance:** Institutional-grade products are built on Core
+1. **Sécurité:** Les Timelocks protègent le principal, n'introduisant aucun nouveau risque pour le Bitcoin sous-jacent
+2. **Rendement durable:** Génération de récompenses prévisibles et natives du protocole
+3. **Efficacité fiscale:** Les Timelocks permettent la génération de rendement sans envelopper ou déplacer Bitcoin
+4. **Transparence:** Visibilité totale sur la chaîne de toutes les transactions et positions
+5. **Conformité:** Les produits de qualité institutionnelle sont construits sur Core
 
-Core powers a new generation of Bitcoin financial products:
+Core alimente une nouvelle génération de produits financiers Bitcoin:
 
-- lstBTC (liquid, yield-bearing Bitcoin)
-- Yield-bearing Bitcoin ETPs
-- Novel strategies with positive carry Bitcoin
+- lstBTC (Bitcoin liquide générant des rendements)
+- ETP Bitcoin générant des rendements
+- Nouvelles stratégies avec carry positif Bitcoin
 
-## The Virtuous Cycle of Bitcoin and Core
+## Le cycle vertueux de Bitcoin et Core
 
-1. **Bitcoin Earns Yield:** Holders generate rewards without compromising custody
-2. **Enhanced Network Security:** Bitcoin holders, Bitcoin miners, and CORE holders all contribute to Core’s security via Satoshi Plus consensus
-3. **Ecosystem Unification:** Bitcoin stakers are naturally incentivized to become CORE stakers to earn higher yields, creating a unified economic model
-4. **Bitcoiner Alignment:** Core’s Bitcoin-protection and economic alignment make Core the suitable ecosystem for Bitcoin usage within decentralized applications
-5. **Institutional Adoption:** Institutions find an ideal platform for capital-efficient Bitcoin strategies, adding to Core’s security and liquidity
-6. **Consumer Enablement:** Top-tier Bitcoin security and liquidity, combined with EVM-compatibility, make Core a compelling platform for widespread activity
+1. **Bitcoin génère des rendements:** Les détenteurs génèrent des récompenses sans compromettre la garde
+2. **Sécurité réseau renforcée:** Les détenteurs de Bitcoin, les mineurs de Bitcoin et les détenteurs de CORE contribuent tous à la sécurité de Core via le consensus Satoshi Plus
+3. **Unification de l'écosystème:** Les stakeurs Bitcoin sont naturellement incités à devenir des stakeurs CORE pour gagner des rendements plus élevés, créant ainsi un modèle économique unifié
+4. **Alignement Bitcoiner:** La protection Bitcoin et l'alignement économique de Core font de Core l'écosystème approprié pour l'utilisation de Bitcoin dans les applications décentralisées
+5. **Adoption institutionnelle:** Les institutions trouvent une plate-forme idéale pour des stratégies Bitcoin efficaces en capital, ajoutant à la sécurité et à la liquidité de Core
+6. **Activation des consommateurs:** Sécurité et liquidité Bitcoin de premier ordre, combinées à la compatibilité EVM, font de Core une plate-forme convaincante pour une activité généralisée
 
-## The Bitcoin × CORE Future
+## L'avenir Bitcoin × CORE
 
 By unlocking sustainable yield and access to scalable Bitcoin DeFi:
 
