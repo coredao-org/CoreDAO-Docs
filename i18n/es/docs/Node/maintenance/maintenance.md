@@ -49,23 +49,23 @@ Cómo usar el flag:
 
 ### Herramientas de poda de bloques
 
-Core ofrece la función fuera de línea para eliminar datos de bloques antiguos no deseados. It will discard the block, receipt, and header in the ancient database to save space.
+Core ofrece la función fuera de línea para eliminar datos de bloques antiguos no deseados. Esta función elimina los datos de bloques, recibos y cabeceras almacenados en la base de datos de datos antiguos para ahorrar espacio.
 
-How to prune:
+Cómo podar:
 
-1. Stop the Geth process.
-2. Run the following command
+1. Detén el proceso de Geth.
+2. Ejecuta el siguiente comando
 
 ```bash
 ```
 
-`block-amount-reserved` is the number of ancient data blocks that you want to keep after pruning.
+`block-amount-reserved` es el número de bloques de datos antiguos que deseas conservar después de la poda.
 
-## Light Storage
+## Almacenamiento Ligero
 
-When the node crashes or is forcibly killed, it will sync from a block that was a few minutes or a few hours old. This is because the state in memory is not persisted to the database in real-time, and the node needs to replay blocks from the last checkpoint once it starts. The replay time depends on the `TrieTimeout` configuration in the `config.toml`. It is recommended to increase the value for `TrieTimeout` to accommodate long replay times, allowing the node to maintain a lightweight storage.
+Cuando un nodo se bloquea o es finalizado de manera forzada, se sincroniza desde un bloque que tiene unos minutos u horas de antigüedad. Esto ocurre porque el estado almacenado en memoria no se guarda en la base de datos en tiempo real, y el nodo necesita reprocesar bloques desde el último checkpoint al reiniciarse. El tiempo de replay depende del parámetro `TrieTimeout` en el archivo `config.toml`.  Se recomienda aumentar el valor de `TrieTimeout` para acomodar tiempos de reejecución largos, lo que permite que el nodo mantenga un almacenamiento ligero.
 
-## Upgrade Geth
+## Actualizar Geth
 
-Please read [this guide](network-upgrade.md)
+Lea [esta guía] (network-upgrade.md)
 
