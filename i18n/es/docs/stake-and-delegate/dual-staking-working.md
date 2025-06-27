@@ -14,21 +14,21 @@ Core opera bajo el **consenso Satoshi Plus**, integrando tres fuentes de delegac
 - **Prueba de Participación Delegada (DPoS):** Los poseedores de tokens CORE delegan sus tokens a los validadores.
 - **Staking de BTC Auto-Custodiado:** los holders de BTC hacen staking directamente en la red Bitcoin y delegan su participación a los validadores de Core.
 
-**Dual Staking**, una mejora del **Staking de BTC Auto-Custodiado** de Core, permite a los participantes maximizar recompensas al hacer staking simultáneo tanto de **BTC como de CORE**. This strategy strengthens the Core network while unlocking higher Bitcoin staking yields based on predefined CORE staking thresholds
+**Dual Staking**, una mejora del **Staking de BTC Auto-Custodiado** de Core, permite a los participantes maximizar recompensas al hacer staking simultáneo tanto de **BTC como de CORE**. Esta estrategia fortalece la red Core al mismo tiempo que desbloquea mayores rendimientos por staking de Bitcoin basados en umbrales predefinidos de staking de CORE
 
 Al cumplir con ratios específicos de **staking de CORE a BTC**, los usuarios obtienen **recompensas de staking de Bitcoin incrementadas**, pagadas en CORE. Aunque el Dual Staking mejora los rendimientos del staking de BTC, no afecta directamente las recompensas del staking de CORE.
 
-![image](../../static/img/dual-staking/dual-staking-tiers.png)
+
 
 ### Umbrales de Rendimiento Incrementado
 
 Actualmente, las recompensas de Satoshi Plus se asignan a través de tres pools, uno para cada una de las tres entidades que participan en la elección de los validadores de Core, a saber: (1) Delegadores de poder de hash, (2) Stakers de Bitcoin, y (3) Stakers de CORE.
 
-El Dual Staking no afecta estos pools de recompensas, pero permite que los stakers de Bitcoin que también hacen staking de tokens CORE ganen una mayor proporción de recompensas en el pool de Staking de Bitcoin. In this section, we provide a detailed explanation of the grading algorithm's operation with respect to dual staking.
+El Dual Staking no afecta estos pools de recompensas, pero permite que los stakers de Bitcoin que también hacen staking de tokens CORE ganen una mayor proporción de recompensas en el pool de Staking de Bitcoin. En esta sección, se proporciona una explicación detallada del funcionamiento del algoritmo de clasificación con respecto al dual staking.
 
 #### 1. **Niveles de Rendimiento Incrementado**
 
-Under Dual Staking, there are three boosted yield tiers for Bitcoin Staking based on the proportion of CORE staked relative to Bitcoin staked. Para los Solo-Stakers de solo Bitcoin, existe un cuarto nivel con la tasa más baja de staking de Bitcoin. Es importante señalar que la tasa de recompensa anual para el Staking de Bitcoin puede fluctuar significativamente, a menudo debido a los precios variables y otras dinámicas del mercado. Como resultado, los rendimientos incrementados reales pueden cambiar a diario según las condiciones del mercado.
+En el esquema de Dual Staking, existen tres niveles de rendimiento incrementado para el staking de Bitcoin, basados en la proporción de CORE en staking en relación con el Bitcoin en staking. Para los Solo-Stakers de solo Bitcoin, existe un cuarto nivel con la tasa más baja de staking de Bitcoin. Es importante señalar que la tasa de recompensa anual para el Staking de Bitcoin puede fluctuar significativamente, a menudo debido a los precios variables y otras dinámicas del mercado. Como resultado, los rendimientos incrementados reales pueden cambiar a diario según las condiciones del mercado.
 
 - **P<sub>BASE</sub>** \= la tasa base de staking de BTC
 - **P<sub>Nivel1</sub>** \= la tasa base de staking de BTC \+ Rendimiento incrementado de Nivel 1
@@ -39,11 +39,11 @@ Efectivamente, las emisiones de CORE se distribuyen de manera proporcional segú
 
 #### 2. **Umbrales de CORE en Staking y Ratios de Staking (R<sub>1</sub>, R<sub>2</sub>, R<sub>3</sub>)**
 
-The deciding mechanism for a Bitcoin staker’s yield tier (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, or **P<sub>Level3</sub> (P<sub>MAX</sub>)**) is based on CORE tokens staked relative to Bitcoin staked, where **R** represents the `CORE:BTC` Ratio and **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
+El mecanismo que determina el nivel de rendimiento de un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, o **P<sub>Level3</sub> (P<sub>MAX</sub>)**)se basa en la cantidad de tokens CORE en staking en relación con el Bitcoin en staking, donde R representa la proporción CORE:BTC y se ycumple que **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
 
-- Staking Ratio R1 \= 3,625 CORE per 1 BTC
+- Proporción de Staking R1 \= 3,625 CORE por 1 BTC
 - Staking Ratio R2 \= 10,875 CORE per 1 BTC
-- Staking Ratio R3 \= 29,000 CORE per 1 BTC
+- Proporción de Staking R3 \= 29,000 CORE por 1 BTC
 
 Teniendo en cuenta estos ratios, los usuarios pueden calcular el umbral requerido para cada nivel como sigue:
 
@@ -57,55 +57,55 @@ El CORE en staking y/o el Bitcoin en staking pueden ser distribuidos entre múlt
 
 #### 3. **Determinación del nivel de rendimiento incrementado para cada (1) Bitcoin en staking**
 
-- If staked CORE amount \< **R<sub>1</sub>**, the user is in tier **P<sub>BASE</sub>**
+- Si la cantidad de CORE en staking es menor que \< **R<sub>1</sub>**, el usuario se encuentra en el nivel **P<sub>BASE</sub>**
 - Si **R<sub>1</sub>** \<= la cantidad de CORE en staking \< **R<sub>2</sub>**, el usuario entra en el nivel **P<sub>Level1</sub>**
 - Si **R<sub>2</sub>** \<= la cantidad de CORE en staking \< **R<sub>3</sub>**, el usuario entra en el nivel **P<sub>Level2</sub>**
 - Si la cantidad de CORE en staking \>= **R<sub>3</sub>**, el usuario entra en el nivel **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
 
 :::note
-Staking ratios and the number of levels are configurable and subject to change by governance vote.
+Las proporciones de staking y el número de niveles son configurables y están sujetas a cambios mediante votación de gobernanza.
 :::
 
 ### Ejemplo
 
-The following is a simple example explaining how to calculate the required CORE to stake, based on the parameters mentioned above, to unlock boosted yield tiers for Dual Staking.
+A continuación se muestra un ejemplo sencillo que explica cómo calcular la cantidad requerida de CORE para hacer staking, en función de los parámetros mencionados anteriormente, con el fin de desbloquear los niveles de rendimiento incrementado del esquema de Dual Staking.
 
 Ahora, el usuario deberá hacer staking de CORE según los siguientes umbrales de CORE en staking para disfrutar de un mayor rendimiento en su BTC en staking con las variables mencionadas anteriormente:
 
-- Staking Ratio **R<sub>1</sub>** \= 3,625
-- Staking Ratio **R<sub>2</sub>** \= 10,875
-- Staking Ratio **R<sub>3</sub>** \= 29,000
+- Proporción de Staking **R<sub>1</sub>** \= 3,625
+- Proporción de Staking **R<sub>2</sub>** \= 10,875
+- Proporción de Staking **R<sub>3</sub>** \= 29,000
 - Cantidad de BTC en staking \= 10 BTC
 
 Los **Umbrales de CORE en Staking** con las variables mencionadas anteriormente son:
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 3,625 \= 36,250 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 10,875 \= 108,875 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 29,000 \= 290,000 staked CORE
+- Umbral de CORE en staking para**P<sub>Level1</sub>** \= 10 \* 3,625 \= 36,250 CORE en staking
+- Umbral de CORE en staking para **P<sub>Level2</sub>** \= 10 \* 10,875 \= 108,875 CORE en staking
+- Umbral de CORE en staking para **P<sub>Level3</sub>** \= 10 \* 29,000 \= 290,000 CORE en staking
 
 Por lo tanto, el BTC en staking en este ejemplo disfrutará de un rendimiento de
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 36,250
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 36,250 but below 108,875
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 108,875 but below 290,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 290,000
+- **P<sub>BASE</sub>** si la cantidad de CORE en staking es inferior a 36,250
+- **P<sub>Level1</sub>** si la cantidad de CORE en staking es mayor o igual a 36,250 pero menor que 108,875
+- **P<sub>Level2</sub>** si la cantidad de CORE en staking es mayor o igual a 108,875 pero menor que 290,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** si la cantidad de CORE en staking es mayor o igual a 290,000
 
 :::note
-The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
+El multiplicador de cada nivel de rendimiento potenciado es dinámico y está sujeto a cambios según las condiciones de oferta y demanda del mercado.
 :::
 
 :::info
-To activate your new dual-staking tier, follow these two steps. This applies to users who already have BTC staked in earlier rounds at 00:00 UTC and decide to stake additional CORE to advance to higher tiers. First, after staking CORE, wait until the following 00:00 UTC. Luego, reclama todas tus recompensas en cualquier momento después de las 00:00 UTC para restablecer el sistema de cálculo de niveles. Tu nuevo nivel se activará tan pronto como completes la reclamación. Ambos pasos son esenciales para asegurarte de que tu nuevo nivel entre en efecto.
+Para activar tu nuevo nivel de dual staking, sigue estos dos pasos. Esto aplica a los usuarios que ya tienen BTC en staking en rondas anteriores a las 00:00 UTC y deciden hacer staking adicional de CORE para ascender a niveles superiores. Primero, después de hacer staking de CORE, espera hasta las 00:00 UTC del día siguiente. Luego, reclama todas tus recompensas en cualquier momento después de las 00:00 UTC para restablecer el sistema de cálculo de niveles. Tu nuevo nivel se activará tan pronto como completes la reclamación. Ambos pasos son esenciales para asegurarte de que tu nuevo nivel entre en efecto.
 :::
 
 ### Cómo calificar para las recompensas de Dual Staking
 
 Para habilitar mayores rendimientos de Bitcoin a través de Dual Staking, los usuarios deben:
 
-1. **Stake both BTC and CORE**, ensuring the CORE stake meets or exceeds the minimum Dual Staking threshold.
+1. **Haz staking tanto de BTC como de CORE**, asegurándote de que la cantidad de CORE en staking cumpla o supere el umbral mínimo de Dual Staking.
 2. **Usa la misma cartera** tanto para hacer staking de CORE como para recibir las recompensas del staking de BTC.
 
-This approach ensures seamless reward distribution while incentivizing deeper participation in the network.
+Este enfoque garantiza una distribución fluida de recompensas y fomenta una participación más profunda en la red.
 
 ### Consideraciones para Optimizar los Rendimientos
 
@@ -113,5 +113,5 @@ This approach ensures seamless reward distribution while incentivizing deeper pa
 - Cuando se hace staking con una cantidad relativamente baja de activos que no altera significativamente la distribución del staking, se recomienda simplemente delegar el staking de BTC o CORE al validador que ofrezca la mayor recompensa.
 - Cuando se hace staking con una cantidad relativamente grande de activos que puede alterar de manera significativa la distribución del staking, se recomienda diversificar el staking de BTC o CORE entre varios validadores para evitar la sobreconcentración y mantener recompensas altas.
   - Por ejemplo, diversificar tu staking entre 6 a 10 validadores con las recompensas más altas puede ayudar a reducir el impacto de puntuaciones híbridas elevadas y mantener rendimientos óptimos.
-- Minimize the need to transfer and/or redelegate BTC staking to another validator to avoid losing rewards during the process.
+- Minimiza la necesidad de transferir y/o redelegar el staking de BTC a otro validador para evitar la pérdida de recompensas durante el proceso.
 - Evita los validadores con puntuaciones híbridas altas.
