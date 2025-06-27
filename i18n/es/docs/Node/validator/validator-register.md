@@ -11,7 +11,7 @@ sidebar_position: 2
 ---
 
 :::caution
-Before running a Validator node on Core, we strongly recommend reading the [Technical Whitepaper](https://whitepaper.coredao.org/).
+Antes de correr un nodo Validador en Core, recomendamos encarecidamente leer él [whitepaper técnico] (https://whitepaper.coredao.org/).
 :::
 
 ## Configurar un nodo completo en modo validador
@@ -24,7 +24,7 @@ Asegúrate de que tu nodo validador esté en funcionamiento.
 
 Una vez que tu nodo esté en funcionamiento y sincronizado, puedes proceder con el proceso de registro.
 
-1. **Navigate to Staking Website:** The easiest way to register a new validator is to use Core's official staking websites:
+1. **Navega al sitio web de Staking:** La forma más fácil de registrar un nuevo validador es utilizando los sitios web oficiales de staking de Core:
 
     - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
     - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
@@ -41,7 +41,7 @@ Proporcione información para cada uno de los campos del formulario:
 
 - **Consensus Address**: la dirección del validador que configuraste cuando inicializaste tu nodo validador.
 - **Fee Address**: la dirección usada para recolectar las tarifas por comisión.
-- **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
+- **Comisión**: Los ingresos se dividen entre el validador y sus delegadores. La comisión determina el porcentaje de los ingresos de los delegadores que se asigna al validador como compensación.
 - **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. El depósito mínimo para testnet y mainnet es **10,000 CORE**.
 
 5. **Enviar Registro:** Una vez que hayas completado toda la información requerida, haz clic en **Register** para enviar tu validador para su registro.
@@ -58,9 +58,9 @@ Abre el log file de tu nodo y busca el mensaje de error `unauthorized validator`
 
 ## Elección del validador
 
-Each day, the top **27** validators with the highest hybrid scores are elected to the active validator set, thereby becoming responsible for producing blocks and validating transactions on the Core network for the entire round. When the last block of a round is mined, the round’s accumulated rewards are distributed, and the next round's validator set is selected. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
+Cada día, los **27** validadores con hybrid score más alto son elegidos para formar parte del conjunto de validadores activos, siendo responsables de producir bloques y validar transacciones en la red Core durante toda la round. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
 
-You can check the validator status on the stake website; active elected validators will be marked as `Active/Normal`. El conjunto de validadores se actualiza a las **00:00 am UTC** todos los días.
+Puedes verificar el estado de los validadores en el sitio web de staking; los validadores elegidos y activos aparecerán marcados como `Active/Normal`. El conjunto de validadores se actualiza a las **00:00 am UTC** todos los días.
 
 ![validator-register-form](../../../static/img/validator/validator-status.png)
 
@@ -72,7 +72,7 @@ El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar
 
 - **`Active/Refuse`:** El validador ha sido elegido para el ciclo actual, pero ha rechazado aceptar delegaciones. No calificado para las próximas elecciones.
 
-- **`Active/Jailed`:** Elected validator in the current round, but jailed due to a felony and not qualified for the next election.
+- **Active/Jailed:** Validador elegido en la ronda actual, pero jailed debido a una infracción grave y no calificado para la próxima elección.
 
 - **`Inactive/Queued`:** El validador está registrado pero no ha sido elegido. Calificado para las próximas elecciones.
 
