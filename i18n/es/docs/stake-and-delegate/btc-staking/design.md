@@ -12,9 +12,7 @@ sidebar_position: 2
 
 La metodología para integrar el staking de Bitcoin se basa en el [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE` nativo de Bitcoin. CLTV es una operación del script de Bitcoin que restringe que las salidas de una transacción sean gastadas hasta que se alcance un tiempo absoluto específico o una altura de bloque determinada. Al crear una transacción con un script CLTV, los holders de Bitcoin pueden hacer que sus monedas sean temporalmente no gastables, mientras incluyen metadatos que permiten a Core reconocer su participación en el consenso. Este mecanismo aprovecha las capacidades de scripting existentes de Bitcoin, sin requerir ninguna modificación al protocolo de Bitcoin.
 
-<p align="center">
-![btc-staking-tx-design](../../../static/img/btc-staking/tx-design/staking-tx-design.png)
-</p>
+<p align="center"></p>
 
 ### Requisitos para la validez de las transacciones {#requirements-for-transaction-validity}
 
@@ -33,9 +31,7 @@ La metodología para integrar el staking de Bitcoin se basa en el [CLTV timelock
 
 Las operaciones de Staking Autocustodiado de Bitcoin se llevan a cabo en dos cadenas de bloques separadas: Bitcoin y Core. El siguiente diagrama de flujo ilustra el proceso mediante el cual los holders de Bitcoin pueden obtener recompensas de staking a través del sistema de Staking Autocustodiado de Core.
 
-<p align="center">
-![btc-staking-flow](../../../static/img/btc-staking/btc-staking-workflow.png)
-</p>
+<p align="center"></p>
 
 ## Estructura de transacción
 
@@ -49,17 +45,13 @@ Una transacción de participación de Bitcoin debe tener dos o tres resultados, 
 
 (_Opcional_) Cambiar dirección.
 
-<p align="center">
-![btc-staking-tx-output](../../../static/img/btc-staking/tx-design/staking-flow.png)
-</p>
+<p align="center"></p>
 
 ### Transacción de retiro
 
 Los UTXO (Bitcoins) bloqueados se pueden gastar usando el script de canje cuando finaliza el bloqueo de tiempo.
 
-<p align="center">
-![btc-staking-withdrawal-tx](../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
-</p>
+<p align="center"></p>
 
 ## Diseño de guión
 
@@ -136,9 +128,7 @@ Para que todo el proceso sea más cómodo, Core introduce el rol de retransmisor
 
 [https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
-<p align="center">
-![btc-staking-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(3).png)
-</p>
+<p align="center"></p>
 
 #### Salida P2WSH
 
@@ -183,9 +173,7 @@ El hexadecimal completo de esta salida es `6a4c505341542b01045bde60b7d0e6b758ca5
 
 This transaction spent the P2WSH time-lock output from the above staking transaction
 
-<p align="center">
-![btc-staking-withdrawal-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
-</p>
+<p align="center"></p>
 
 En la entrada, se proporciona el script de canje `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` para gastarlo. Dado que el bloqueo de tiempo `1f5e0e66` (660e5e1f después de revertir bytes, que es la marca de tiempo Unix 1712217631) ya expiró, el UTXO se gastó correctamente.
 
