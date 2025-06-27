@@ -4,39 +4,39 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core 101: The Bitcoin Everything Chain
+# Core - La chaîne Bitcoin tout-en-un
 
 ---
 
-## What is Core?
+## Qu'est-ce que Core Dao?
 
-Core is a high-performance, EVM-compatible Layer 1 blockchain secured by Bitcoin. It unlocks trustless yield for Bitcoin holders and Bitcoin miners who help in securing the leading Bitcoin scaling ecosystem via Core's Satoshi Plus consensus.
+Core est une blockchain Layer 1 haute performance compatible EVM sécurisée par Bitcoin. Il débloque un rendement sans confiance pour les détenteurs de Bitcoin et les mineurs de Bitcoin qui contribuent à sécuriser l'écosystème de mise à l'échelle Bitcoin leader via le consensus Satoshi Plus de Core.
 
-### Satoshi Plus Consensus
+### Satoshi-plus-consensus
 
-Core's unique consensus mechanism brings together three distinct stakeholder groups to secure the network:
+Le mécanisme de consensus unique de Core rassemble trois groupes de parties prenantes distincts pour sécuriser le réseau :
 
-- **Self-Custodial Bitcoin Staking**: Bitcoin holders timelock their coins in order to vote for Core validators
+- **Staking Bitcoin auto-custodial**: les détenteurs de Bitcoin bloquent temporairement leurs pièces pour voter pour les validateurs Core
 
-- **Delegated Proof of Work**: Bitcoin miners delegate existing hash power in order to vote for Core validators
+- **Preuve de travail déléguée**: les mineurs de Bitcoin délèguent leur puissance de hachage existante pour voter pour les validateurs Core
 
-- **Delegated Proof of Stake**: CORE token holders lock their coins in order to vote for Core validators
+- **Preuve d'enjeu déléguée**: les détenteurs de tokens CORE bloquent leurs pièces pour voter pour les validateurs Core
 
-This tripartite system for the election of Core validators creates a robust, multi-layered security model that leverages Bitcoin's proven security while enabling high-performance blockchain operations.
+Ce système tripartite pour l'élection des validateurs Core crée un modèle de sécurité robuste et multicouche qui tire parti de la sécurité éprouvée de Bitcoin tout en permettant des opérations blockchain haute performance.
 
-### EVM-Compatible Bitcoin Ecosystem
+### Écosystème Bitcoin compatible EVM
 
-Bitcoin stakers, CORE stakers, and Bitcoin miners combine to vote for validators to secure the Core network. Elected validators are high-performant, reputable, and efficient, allowing Core to process sophisticated transactions rapidly and at low cost to users.
+Les détenteurs de Bitcoin en staking, les détenteurs de CORE en staking et les mineurs de Bitcoin se combinent pour voter pour les validateurs et sécuriser le réseau Core. Les validateurs élus sont performants, réputés et efficaces, permettant à Core de traiter des transactions complexes rapidement et à faible coût pour les utilisateurs.
 
-Additionally, the Core blockchain is fully EVM-compatible, meaning that developers can seamlessly build Ethereum-style applications, smart contracts, and tools directly on Core with minimal modifications, thereby expanding the ecosystem's utility and attracting projects across DeFi, stablecoins, gaming, NFTs, and other high-utility sectors.
+La blockchain Core est entièrement compatible EVM, permettant aux développeurs de créer des applications, des contrats intelligents et des outils Ethereum sans modifications majeures, élargissant ainsi l'écosystème à des projets DeFi, stablecoins, gaming, NFT et autres secteurs à forte utilité.
 
-## The Bitcoin Yield Challenge
+## Le Défi du Rendement Bitcoin
 
-Bitcoin does not generate native yield like Proof of Stake chains. However, Bitcoin does support native timelocks through its CLTV OP_CODE, which lets Bitcoin holders lock their coins on the Bitcoin blockchain to make them unspendable during the designated timelock period.
+Bitcoin ne génère pas de rendement natif comme les chaînes à Preuve d'Enjeu. Cependant, Bitcoin prend en charge les timelocks natifs via son OP_CODE CLTV, permettant aux détenteurs de Bitcoin de verrouiller leurs pièces sur la blockchain Bitcoin pour les rendre non dépensables pendant la période de timelock désignée.
 
-### Timelocks Unlock Trustless Yield
+### Les Timelocks Débloquent un Rendement Sans Confiance
 
-Core allows Bitcoin's native timelocks to unlock trustless yield. When Bitcoin holders timelock their coins on the Bitcoin blockchain, they earn the right to vote for validators on Core. Elected validators then secure the Core blockchain by producing blocks and validating transactions. Securing Core earns validators and their voters a share of Core's consensus rewards pool. This is how Bitcoin holders can earn real yield without moving their Bitcoin. No bridging. No lending. No wrapping. Just holding.
+Core permet aux timelocks natifs de Bitcoin de débloquer un rendement sans confiance. Lorsque les détenteurs de Bitcoin verrouillent leurs pièces sur la blockchain Bitcoin, ils gagnent le droit de voter pour les validateurs sur Core. Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. La sécurisation de Core rapporte aux validateurs et à leurs électeurs une part du pool de récompenses de consensus de Core. C'est ainsi que les détenteurs de Bitcoin peuvent gagner un rendement réel sans déplacer leur Bitcoin. No bridging. No lending. No wrapping. Just holding.
 
 ### Where Yield Comes From
 
