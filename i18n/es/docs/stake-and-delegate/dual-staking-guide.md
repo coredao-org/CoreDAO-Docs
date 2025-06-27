@@ -63,13 +63,13 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
 
 ## Especificando la Cantidad de BTC a Apostar
 
-4. Ingresa la cantidad de Bitcoin que deseas apostar. The minimum amount is 0.01 BTC if a user is staking through the website UI. However, there are no minimum amount requirements for staking Bitcoin through the staking script.
+4. Ingresa la cantidad de Bitcoin que deseas apostar. El monto mínimo es 0.01 BTC si usas la interfaz web del sitio. Sin embargo, no hay un monto mínimo para stakear Bitcoin usando el script de staking.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
 ### Seleccionando un Validador de Core para la Delegación de Bitcoin
 
-5. Under **Delegate to Validator**, from the drop-down menu, select an **_active validator_** to whom you want to delegate your Bitcoin.
+5. Bajo **Delegar a Validador**, en el menú desplegable, selecciona un _**validador activo**_ al que deseas delegar tu Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}></p>
 
@@ -81,20 +81,20 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
 
 ### Seleccionando un Validador de Core para la Delegación de CORE
 
-7. Después de especificar la cantidad de CORE a apostar, elige el validador al que delegarás tu CORE. Ensure that you select an active validator from the drop-down.
+7. Después de especificar la cantidad de CORE a apostar, elige el validador al que delegarás tu CORE. Asegúrate de seleccionar un validador activo desde el menú desplegable.
 
 <p align="center" style={{zoom:"60%"}}></p>
 
 ### Confirmando los detalles de staking de CORE y BTC
 
-8. Verify that the staked CORE amount and selected Validator are correct and then press _Confirm_.
-9. Similarly, verify that the staked Bitcoin amount and selected Validator are correct and then press _Confirm_.
+8. Verifica que la cantidad de CORE apostada y el validador seleccionado sean correctos, luego presiona _Confirm_.
+9. De manera similar, verifica que la cantidad de Bitcoin en staking y el validador seleccionado sean correctos, luego presiona _Confirm_.
 
-### Verify Bitcoin Staking Address
+### Verificar la Dirección de Staking de Bitcoin
 
-10. Antes de proceder a confirmar tu transacción de staking. This verification feature allows users to independently verify their Bitcoin staking address, helping prevent blind signing and enhancing the security of the staking process.
+10. Antes de proceder a confirmar tu transacción de staking. Esta función permite a los usuarios verificar de forma independiente su dirección de staking, ayudando a evitar firmas a ciegas y mejorando la seguridad del proceso.
 
-11. To proceed with verification, click on the **Verify the Bitcoin Staking Address** button. Esto te llevará al sitio web externo.
+11. Para proceder con la verificación, haz clic en el botón **Verificar la Dirección de Staking de Bitcoin**. Esto te llevará al sitio web externo.
 
 <p align="center" style={{zoom:"60%"}}></p>
 
@@ -116,45 +116,43 @@ El Dual Staking es una mejora al staking auto-custodiado de Bitcoin de Core, que
 
 <p align="center" style={{zoom:"60%"}}></p>
 
-16. You can also use the sliders in the section below to see the effect of CORE:BTC staking ratio on your Total Staking Reward Rate.
+16. También puedes usar los controles deslizantes en la sección inferior para ver el efecto de la proporción de staking CORE:BTC en tu Tasa Total de Recompensa por Staking.
 
 <p align="center" style={{zoom:"60%"}}></p>
 
-17. To get the maximum reward boost on your staked amount, under the Dual Staking Tiers section, adjust the **Bitcoin Staked** slider to the amount of Bitcoin you want to stake and click the **Max Boost** button. This will automatically set the corresponding CORE amount in the “CORE Staked” slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the “Max Boost” button again to update the recommended Bitcoin amount in the “BTC Staked” bar.
+17. Para obtener el máximo aumento de recompensa sobre tu monto en staking, en la sección de Dual Staking Tiers, ajusta el control deslizante de Bitcoin Staked a la cantidad de Bitcoin que deseas poner en staking y haz clic en el botón **Max Boost**. Esto establecerá automáticamente la cantidad correspondiente de CORE en el control deslizante "CORE Staked" para desbloquear el aumento máximo. También puedes ajustar manualmente el CORE en staking y luego hacer clic nuevamente en el botón "Max Boost" para actualizar la cantidad recomendada de Bitcoin en la barra "BTC Staked".
 
 <p align="center"></p>
 
 18. Junto a la pestaña **Resumen**, puedes encontrar la página **Detalles**, que muestra detalles del staking, incluidos:
 
-- **New Staked Bitcoin:** The amount of BTC you plan to stake and the current reward rate.
+- **New Staked Bitcoin:** La cantidad de BTC que planeas apostar y la tasa de recompensa actual.
 - **Nuevo CORE Apostado:** La cantidad de CORE que planeas apostar y la tasa de recompensas actual.
-- **Active Staked Bitcoin:** The amount of BTC currently staked and the average earning reward rate across validators.
-- **Active Staked CORE:** The amount of CORE currently staked and the average earning reward rate across validators.
+- **Active Staked Bitcoin:** La cantidad de BTC actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
+- **Active Staked CORE:** La cantidad de CORE actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
 ### Finalizando las Transacciones de Staking Doble
 
-19. Once you have specified the amount of BTC/CORE to stake and the validators for delegation, respectively, you can click on the **Proceed to Stake** button.
+19. Una vez que hayas especificado la cantidad de BTC/CORE a hacer staking y los validadores a los que deseas delegar, respectivamente, puedes hacer clic en el botón \*\*Proceed to Stake \*\*.
 
-<p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-11.png)
-</p>
+<p align="center" style={{zoom:"70%"}}></p>
 
-20. On the Stake CORE page, confirm the amount of CORE to stake along with Bitcoin, and click the **Confirm** button.
+20. En la página Stake CORE, confirma la cantidad de CORE a hacer staking junto con Bitcoin y haz clic en el botón **Confirm**.
 
 <p align="center" style={{zoom:"70%"}}></p>
 
 21. Al hacer clic en **Confirmar**, recibirás una notificación de tu billetera Core conectada para completar la transacción.
 
-22. Once you confirm the transaction, you will receive a **Transaction Submitted** notification on the top right of your screen. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en CoreScan** para revisar esta transacción.
+22. Una vez que confirmes la transacción, recibirás una notificación **Transaction Submitted** en la esquina superior derecha de tu pantalla. Puedes hacer clic en **Mi Staking** para ver tus registros de staking o en **Ver en CoreScan** para revisar esta transacción.
 
 <p align="center"></p>
 
-23. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Before finalizing the Bitcoin staking process, it's essential to understand and specify several key parameters:
+23. En la página de “Apostar BTC”, confirma la cantidad de Bitcoin que deseas apostar. Antes de finalizar el proceso de staking de Bitcoin, es esencial comprender y especificar varios parámetros clave:
 
 - Especificar la cantidad de Bitcoin que deseas delegar
-  - The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
+  - La cantidad mínima para delegar es 0.01 Bitcoin si lo haces a través del sitio web oficial.
   - En nuestro ejemplo, delegaremos 0.05 Bitcoin, lo que cumple con este requisito
 - Establecer el tiempo de bloqueo determina cuándo tu Bitcoin apostado será desbloqueado y estará disponible nuevamente para su redención o re-delegación.
   - Select inside the lock time box to input values, or click on the calendar icon to select the date, and click ‘OK’ to proceed.
