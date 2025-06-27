@@ -10,7 +10,7 @@ sidebar_position: 0
 
 ## Descripción general
 
-Los validadores son una parte crucial de la red Core. In addition to handling transaction validation and block production, the validator election process is where all the components — i.e., DPoW, DPoS, and Self-Custodial Bitcoin Staking — of the Satoshi Plus consensus come together. The Validator election process is a central feature of the Satoshi Plus consensus mechanism employed by the Core blockchain. Este proceso garantiza la integridad, seguridad y eficiencia de la cadena de bloques mediante la elección de Validadores responsables de validar las transacciones y crear nuevos bloques.
+Los validadores son una parte crucial de la red Core. Además de manejar la validación de transacciones y la producción de bloques, el proceso de elección del validador es donde se unen todos los componentes — es decir, DPoW, DPoS y Self-Custodial Bitcoin Staking — del consenso de Satoshi Plus. El proceso de elección del Validador es una característica central del mecanismo de consenso Satoshi Plus empleado por la Core blockchain. Este proceso garantiza la integridad, seguridad y eficiencia de la cadena de bloques mediante la elección de Validadores responsables de validar las transacciones y crear nuevos bloques.
 
 ## Importancia de la elección del validador
 
@@ -32,7 +32,7 @@ El proceso de elección del Validador en Satoshi Plus implica pasos clave, respa
 
 3. **Selección de Validadores:** Los Validadores son seleccionados en función del apoyo total que reciben, calculado combinando los tokens en stake (BTC y CORE) y el poder de hash de Bitcoin delegado.
 
-4. **Formación del Conjunto de Validadores**: Se forma un conjunto de Validadores a partir de aquellos con las puntuaciones más altas. Este conjunto se actualiza dinámicamente para reflejar los cambios continuos en las delegaciones de participación y las asignaciones de poder hash. There are two steps involved in the validator election.
+4. **Formación del Conjunto de Validadores**: Se forma un conjunto de Validadores a partir de aquellos con las puntuaciones más altas. Este conjunto se actualiza dinámicamente para reflejar los cambios continuos en las delegaciones de participación y las asignaciones de poder hash. Hay dos pasos involucrados en la elección del validador.
 
   1. Las puntuaciones híbridas se calculan para todos los validadores de la red con la siguiente ecuación. La puntuación híbrida para cada validador se calcula según la siguiente fórmula:
 
@@ -52,8 +52,8 @@ Donde, $$m + k + l = 1$$
 - $$k$$: Ratio asignado a la apuesta CORE.
 - $$l$$: Ratio asignado a la participación en BTC.
 
-2. At the end of each round, validators are ranked in order of their hybrid score, and the top **27** validators with the highest hybrid scores are selected for the validator set in the next round.
-  Dejando de lado los detalles matemáticos, se trata esencialmente de un procedimiento de votación bicameral ponderado. Bitcoin miners can vote for validators through their PoW (by writing validator information into the coinbase transaction on blocks they’ve already mined), CORE token holders can vote for a validator with their PoS (by delegating their tokens to it), and self-custodial Bitcoin stakers can vote for a validator through the delegation of their tokens. This includes delegated Proof-of-Work (PoW), delegated Proof-of-Stake (PoS), and Self-Custodial Bitcoin Staking, which are weighted to determine the hybrid score.
+2. Al final de cada ronda, los validadores son clasificados según su hybrid score, y los **27** validadores con los hybrid scores más altos son seleccionados para el conjunto de validadores en la siguiente ronda.
+  Dejando de lado los detalles matemáticos, se trata esencialmente de un procedimiento de votación bicameral ponderado. Los mineros de Bitcoin pueden votar por validadores a través de su PoW (escribiendo la información del validador en la transacción de coinbase en los bloques que ya han extraído), los poseedores de tokens CORE pueden votar por un validador con su PoS (delegándole sus tokens) y los no- Los stakers de Bitcoin con custodia pueden votar por un validador mediante la delegación de sus tokens. This includes delegated Proof-of-Work (PoW), delegated Proof-of-Stake (PoS), and Self-Custodial Bitcoin Staking, which are weighted to determine the hybrid score.
 
 Este es el "núcleo" de Core blockchain, el mecanismo mediante el cual la red aprovecha la seguridad y descentralización de la red Bitcoin y la escalabilidad y componibilidad de cadenas PoS como Ethereum. Allowing Bitcoin miners and Bitcoin stakers to vote on validators enables Core to leverage Bitcoin’s legendary robustness. Because Core is EVM compatible, it’s possible to build smart contracts, dApps, and other applications on Core that couldn’t be done without changes to the underlying Bitcoin protocol.
 
