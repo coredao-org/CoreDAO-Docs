@@ -5,51 +5,51 @@ sidebar_position: 1
 
 # Core - La cadena Bitcoin Everything
 
-## Getting Started
+## Primeros pasos
 
-La blockchain Core es una blockchain Layer-1 de alto rendimiento, EVM-compatible, diseñada para ser la plataforma de contratos inteligentes complementaria e hiper-escalable de Bitcoin. Al aprovechar los timelocks CLTV nativos de Bitcoin, el hash power de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como protector principal y activo central de un ecosistema floreciente de aplicaciones descentralizadas. As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof of Stake layer.
+La blockchain Core es una blockchain Layer-1 de alto rendimiento, EVM-compatible, diseñada para ser la plataforma de contratos inteligentes complementaria e hiper-escalable de Bitcoin. Al aprovechar los timelocks CLTV nativos de Bitcoin, el hash power de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como protector principal y activo central de un ecosistema floreciente de aplicaciones descentralizadas. Como la única plataforma integral que soporta tanto el Staking de Bitcoin como contratos inteligentes EVM-compatible, Core se posiciona como la primera capa de Proof of Stake para Bitcoin.
 
 ![core-header](../static/img/core-header.png)
 
-## Learn
+## Aprende
 
-Dive into what Core is and how to start your journey
+Sumérgete en qué es Core y cómo comenzar tu recorrido
 
-- [An Overview of Core](./Learn/introduction/core-101.md)
-- [Read About the Core Concepts](category/core-concepts)
-- [Understand the Underlying Architecture](./Learn/core-concepts/architecture.md)
+- [Una visión general de Core](./Learn/introduction/core-101.md)
+- [Lee sobre los conceptos de Core](category/core-concepts)
+- [Comprende la arquitectura subyacente](./Learn/core-concepts/architecture.md)
 
-## Explore
+## Explora
 
-Get Familiar with the Core Ecosystem
+Familiarízate con el ecosistema de Core
 
-- [Find Out Why Core is the Right Choice](./Learn/introduction/why-core.md)
-- [Explore Bitcoin Staking](./Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking)
-- [See What's Being Built on Core](https://coredao.org/explore/ecosystem)
+- [Descubre por qué Core es la elección correcta](./Learn/introduction/why-core.md)
+- [Explora el staking de Bitcoin](./Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking)
+- [Descubre qué se está construyendo en Core](https://coredao.org/explore/ecosystem)
 
-## Run a Node
+## Ejecutar un Nodo
 
-Participate in Core Network Security by Running Different Types of Nodes
+Participa en la seguridad de la red Core ejecutando distintos tipos de nodos
 
-- [Run a Full Node on the Core Network](./Node/config/full-node.md)
-- [Run a Validator Node on the Core Network](./Node/config/validator-node-config.md)
-- [Run a RPC Node on the Core Network](./Node/config/rpc-node-config.md)
-- [Run an Archive Node on the Core Network](./Node/config/archive-node-config.md)
-- [Run a Snapshot Node on the Core Network](./Node/config/snapshot-node-config.md)
+- [Ejecuta un nodo completo en la red Core](./Node/config/full-node.md)
+- [Ejecuta un nodo validador en la red Core](./Node/config/validator-node-config.md)
+- [Ejecuta un nodo RPC en la red Core](./Node/config/rpc-node-config.md)
+- [Ejecuta un nodo de archivo en la red Core](./Node/config/archive-node-config.md)
+- [Ejecuta un nodo de snapshot en la red Core](./Node/config/snapshot-node-config.md)
 
-## Build
+## Construye
 
-Start building on Core and Contribute to the BTCfi Landscape
+Comienza a desarrollar sobre Core y contribuye al ecosistema BTCfi
 
-- [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
-- [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
-- [Fund Your Wallets with tCORE2](./Dev-Guide/core-faucet.md)
-- [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
-- [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
+- [Explora el panorama de herramientas para desarrolladores](./Dev-Guide/dev-tools.md)
+- [Configura tus wallets en la red Core](./Dev-Guide/core-wallet-config.md)
+- [Financia tus wallets con tCORE2](./Dev-Guide/core-faucet.md)
+- [Sigue guías prácticas y detalladas para iniciar tu recorrido en Core](category/dev-guides)
+- [Desarrolla una dApp Full-Stack en Core](./Dev-Guide/dapp-on-core.md)
 
-## Get Help & Support
+## Obtén ayuda y soporte
 
-Connect with Core Contributors for Support
+Conéctate con los contribuidores de Core para recibir asistencia
 
-- [Official Discord Server for Help & Support](https://discord.com/invite/coredaoofficial)
-- [Official Telegram Developer Channel for Technical Support](https://t.me/CoreDAOTelegram)
+- [Servidor oficial de Discord para ayuda y soporte](https://discord.com/invite/coredaoofficial)
+- [Canal oficial de Telegram para soporte técnico de desarrolladores](https://t.me/CoreDAOTelegram)
