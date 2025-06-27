@@ -1,63 +1,63 @@
 ---
-sidebar_label: CORE Value Creation
+sidebar_label: Création de valeur CORE
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# CORE Value Creation
+# Création de valeur CORE
 
 ---
 
-CORE is positioned to be the second asset that Bitcoiners care about—not by competing with Bitcoin, but by complementing it. CORE is the native token of the leading Bitcoin-powered smart contract platform, providing utility across Core's expansive ecosystem of decentralized applications. On top of this foundational ecosystem utility, CORE provides additional genuine utility to Bitcoin holders through Dual Staking as the required asset for accessing higher Bitcoin staking yields on Core. These ecosystem and yield utilities are underpinned by CORE's tokenomics, which are designed to align long-term incentives across both the Bitcoin and Core ecosystems.
+CORE est positionné pour être le deuxième actif qui compte pour les Bitcoiniers, non pas en concurrence avec Bitcoin, mais en le complétant. CORE est le jeton natif de la plateforme de contrats intelligents leader propulsée par Bitcoin, offrant une utilité à travers l'écosystème vaste de Core composé d'applications décentralisées. En plus de cette utilité écosystémique fondamentale, CORE offre une utilité supplémentaire réelle aux détenteurs de Bitcoin grâce au double staking, en tant qu'actif requis pour accéder à des rendements de staking Bitcoin plus élevés sur Core. Ces utilités d'écosystème et de rendement sont soutenues par la tokenomique de CORE, conçue pour aligner les incitations à long terme entre les écosystèmes Bitcoin et Core.
 
-## CORE's Value Proposition for Bitcoin Holders
+## La proposition de valeur de CORE pour les détenteurs de Bitcoin
 
-In addition to CORE's utility as the native token of the leading Bitcoin-powered smart contract platform, Bitcoin holders discovering Core face a compelling economic reality: CORE tokens are the key to unlocking higher Bitcoin staking yields. While solo Bitcoin staking provides base-level returns, Dual Staking with CORE tokens unlocks significantly enhanced yields—often up to ~25-50x higher.
+En plus de l'utilité de CORE en tant que jeton natif de la plateforme de contrats intelligents leader propulsée par Bitcoin, les détenteurs de Bitcoin découvrant Core se trouvent face à une réalité économique convaincante : les jetons CORE sont la clé pour débloquer des rendements de staking Bitcoin plus élevés. Alors que le staking solo de Bitcoin offre des rendements de base, le Dual Staking avec des jetons CORE débloque des rendements considérablement améliorés - souvent jusqu'à ~25-50 fois plus élevés.
 
-Access to the highest yield tiers requires maintaining specific CORE-to-Bitcoin ratios, creating immediate utility-driven demand for CORE tokens among Bitcoin holders seeking to maximize their Bitcoin's productivity. The yielded CORE tokens they receive are the gateway to accessing Core's smart contract platform.
+L'accès aux paliers de rendement les plus élevés nécessite de maintenir des ratios spécifiques CORE-Bitcoin, créant ainsi une demande immédiate pour les jetons CORE, motivée par l'utilité, parmi les détenteurs de Bitcoin cherchant à maximiser la productivité de leur Bitcoin. Les jetons CORE obtenus par le rendement sont le point d'entrée pour accéder à la plateforme de contrats intelligents de Core.
 
-## The Utility of CORE Token Emissions
+## L'utilité des émissions de jetons CORE
 
-Unlike yield farming projects that exist primarily to distribute rewards, CORE serves as the foundational utility token of a high-performance, EVM-compatible blockchain and thriving Bitcoin scaling ecosystem. The token's sustainable value stems from both its role in powering this ecosystem and its utility in unlocking enhanced Bitcoin yields.
+Contrairement aux projets de yield farming qui existent principalement pour distribuer des récompenses, CORE sert de jeton utilitaire fondamental d'une blockchain haute performance compatible EVM et d'un écosystème de mise à l'échelle Bitcoin prospère. La valeur durable du jeton provient à la fois de son rôle dans l'alimentation de cet écosystème et de son utilité pour débloquer des rendements Bitcoin améliorés.
 
-## Core's Growing Ecosystem Runs on CORE
+## L'écosystème en pleine croissance de Core fonctionne grâce à CORE
 
-Many Bitcoin holders retain CORE because they see long-term growth potential in the broader ecosystem. Core is a comprehensive Bitcoin-powered smart contract platform with extensive dapp activity, significant total value locked, and substantial transaction volume.
+De nombreux détenteurs de Bitcoin conservent des CORE parce qu'ils entrevoient un potentiel de croissance à long terme dans l'écosystème plus large. Core est une plateforme de contrats intelligents complète propulsée par Bitcoin, avec une activité de dapps étendue, une valeur totale verrouillée significative et un volume de transactions important.
 
-This active ecosystem creates genuine utility for CORE tokens beyond staking incentives. Users need CORE for transaction fees, governance participation, and accessing various DeFi services across the network.
+Cet écosystème actif crée une véritable utilité pour les jetons CORE au-delà des incitations de staking. Les utilisateurs nécessitent des CORE pour payer les frais de transaction, participer à la gouvernance et accéder à divers services DeFi sur le réseau.
 
-As the Core ecosystem continues to expand, the value proposition of the CORE token grows in parallel—much like the native assets of other leading Layer 1 platforms—as demand for its utility increases for application usage.
+À mesure que l'écosystème Core continue de s'étendre, la proposition de valeur du jeton CORE augmente parallèlement - à l'instar des actifs natifs d'autres plateformes Layer 1 de premier plan - à mesure que la demande pour son utilité augmente pour l'utilisation des applications.
 
-## Yield Dynamics Incentivize Holding
+## Les dynamiques de rendement incitent à détenir
 
-In addition to unlocking ecosystem access, CORE tokens also provide value to Bitcoin holders through unlocking higher Bitcoin staking yields via Dual Staking. This creates a compelling economic proposition: by acquiring CORE tokens, holders can immediately access enhanced yields they would otherwise accumulate gradually over time.
+En plus de débloquer l'accès à l'écosystème, les jetons CORE offrent également de la valeur aux détenteurs de Bitcoin en débloquant des rendements de staking Bitcoin plus élevés via le Dual Staking. Cela offre une proposition économique attrayante : l'acquisition de jetons CORE permet aux détenteurs d'accéder immédiatement à des rendements accrus, plutôt que de les accumuler lentement sur une longue période.
 
-Rather than waiting to build positions through rewards, Bitcoin holders can optimize returns by directly acquiring CORE or borrowing against their staked Bitcoin. This system incentivizes upfront demand for CORE rather than passive accumulation, creating a stronger and more immediate impact.
+Les détenteurs de Bitcoin peuvent maximiser leurs rendements en acquérant directement des CORE ou en empruntant contre leurs Bitcoin stakés, plutôt que d'attendre la constitution progressive de positions via les récompenses. Ce système encourage une demande immédiate pour les CORE, plutôt qu'une accumulation progressive, générant un impact plus significatif et plus rapide.
 
-## Sustainable Tokenomics
+## Tokenomics durable
 
-- Fixed maximum supply of 2.1 billion tokens
-- 81-year emission schedule with gradual annual reduction
-- Predictable, decreasing issuance creating long-term sustainability
+- Une offre maximale fixe de 2,1 milliards de jetons
+- Un calendrier d'émission sur 81 ans avec une réduction annuelle progressive
+- Une émission prévisible et décroissante, créant une durabilité à long terme
 
-CORE's approach resembles Bitcoin's own supply mechanics but with a smoother reduction curve, designed for sustainable, multi-decade growth rather than short-term incentives.
+L'approche de CORE ressemble aux mécanismes d'offre de Bitcoin, mais avec une courbe de réduction plus fluide, conçue pour une croissance durable sur plusieurs décennies plutôt que pour des incitations à court terme.
 
-## The Multiplier Effect
+## L'effet multiplicateur
 
-The mathematics behind CORE's staking dynamics and emissions schedule encourage up-front commitments that significantly outweigh a year's—or even multiple years'—worth of emissions.
+Les mathématiques derrière la dynamique de staking et le calendrier d'émission de CORE encouragent les engagements initiaux qui dépassent largement une année, voire plusieurs années, d'émissions.
 
-**Educational Example** (not indicative of live data): If staking 100 CORE tokens at the highest yield tiers earns 25 CORE in annual rewards, the up-front commitment is 4x greater than a year's worth of accumulated staking rewards, thereby incentivizing long-term alignment rather than short-term farming.
+**Exemple éducatif** (non indicatif des données réelles) : Si miser 100 tokens CORE dans les niveaux de rendement les plus élevés rapporte 25 CORE en récompenses annuelles, l'engagement initial est 4 fois supérieur à une année de récompenses de staking accumulées, encourageant ainsi une alignement à long terme plutôt que l'agriculture à court terme.
 
-## Becoming Bitcoin's Companion Asset
+## Devenir l'actif compagnon du Bitcoin
 
-CORE is complementing Bitcoin's value proposition for a variety of holders and users, including:
+CORE complète la proposition de valeur de Bitcoin pour une variété de détenteurs et d'utilisateurs, notamment :
 
-- **Bitcoin users** can use Bitcoin assets within Core's EVM-compatible dapp ecosystem, accessing faster transaction speeds, lower costs, and more sophisticated interactions than are available on the base Bitcoin layer.
+- **Les utilisateurs de Bitcoin** peuvent utiliser leurs actifs Bitcoin au sein de l'écosystème de dapps compatible EVM de Core, accédant à des vitesses de transaction plus rapides, des coûts plus bas et des interactions plus sophistiquées que celles disponibles sur la couche de base de Bitcoin.
 
-- **Bitcoin miners** — traditionally among the most Bitcoin-maximalist participants — are now staking a portion of their rewards in CORE.
+- **Les mineurs de Bitcoin** — traditionnellement parmi les participants les plus maximalistes de Bitcoin — misent désormais une partie de leurs récompenses en CORE.
 
-- **Institutional Bitcoin treasuries** are exploring and deploying capital into Core's Dual Staking.
+- **Les trésoreries institutionnelles de Bitcoin** explorent et déploient des capitaux dans le Dual Staking de Core.
 
-- **ETP/ETF issuers** — already holding large Bitcoin positions — are using Core to earn trustless yield on otherwise idle Bitcoin.
-  - Valour's yield-bearing BTC ETP has generated 5.65% APY exclusively using Core's staking offerings.
-  - Issuers are also exploring lstBTC, the upcoming liquid, yield-bearing Bitcoin token pioneered by Maple Finance.
+- **Les émetteurs d'ETP/ETF** — détenant déjà des positions importantes en Bitcoin — utilisent Core pour générer un rendement sans confiance sur des Bitcoins autrement inactifs.
+  - L'ETP Bitcoin générateur de rendement de Valour a généré un rendement annuel de 5,65 % en utilisant exclusivement les offres de staking de Core.
+  - Les émetteurs explorent également lstBTC, le futur token Bitcoin liquide générateur de rendement, développé par Maple Finance.
