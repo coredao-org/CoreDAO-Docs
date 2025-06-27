@@ -8,26 +8,26 @@ sidebar_position: 2
 
 ---
 
-## Supply Structure
+## Structure de l'offre
 
-CORE has a **fixed supply of 2.1 billion tokens**, mirroring Bitcoin's scarcity model at 100x scale (21 million × 100).
+CORE a une **offre fixe de 2,1 milliards de jetons**, reflétant le modèle de rareté de Bitcoin à une échelle 100 fois supérieure (21 millions × 100).
 
 ## Distribution des Tokens
 
 ![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
 
-1. **Node Mining (39.995% - 839,900,000 CORE):** Validator rewards distributed over 81 years
-2. **Users (25.029% - 525,600,000 CORE):** Community allocation at mainnet's genesis
-3. **Contributors (15% - 315,000,000 CORE):** Protocol development and maintenance
-4. **Reserves (10% - 210,000,000 CORE):** Foundation operations and development
-5. **Treasury (9.5% - 199,500,000 CORE):** Ecosystem development funds
-6. **Relayer Rewards (0.476% - 10,000,000 CORE):** Cross-chain consensus incentives
+1. **Minage de nœuds (39,995% - 839 900 000 CORE) :** Récompenses pour les validateurs distribuées sur 81 ans
+2. **Utilisateurs (25,029% - 525 600 000 CORE):** Allocation communautaire lors du lancement du mainnet
+3. **Contributeurs (15% - 315 000 000 CORE):** Développement et maintenance du protocole
+4. **Réserves (10% - 210 000 000 CORE):** Opérations et développement de la fondation
+5. **Trésorerie (9,5% - 199 500 000 CORE):** Fonds pour le développement de l'écosystème
+6. **Récompenses pour les relais (0,476% - 10 000 000 CORE):** Incitations pour le consensus inter-chaînes
 
-## Emission Schedule
+## Calendrier d'émission
 
-- **Duration:** 81 years
-- **Annual Reduction:** 3.61% decrease in block rewards
-- **Curve:** Gradual reduction (vs Bitcoin's sharp halvings)
+- **Durée:** 81 ans
+- **Réduction annuelle:** Diminution de 3,61 % des récompenses de bloc
+- **Courbe:** Réduction progressive (contrairement aux réductions soudaines de Bitcoin)
 
 ### Émissions cumulatives de CORE mensuellement (Les 6 Première années)
 
@@ -41,14 +41,14 @@ CORE has a **fixed supply of 2.1 billion tokens**, mirroring Bitcoin's scarcity 
 
 ![break-down-of-emissions](../../../static/img/tokenomics/Breakdown_of_Allocations.png)
 
-## Deflationary Mechanisms
+## Mécanismes déflationnistes
 
-**Transaction Fee Burns:** DAO-determined portion of fees and rewards are burned, ensuring supply approaches but never exceeds the 2.1B cap.
+**Destruction des frais de transaction:** Une portion des frais et récompenses fixée par la DAO est détruite, assurant que l'offre s'approche du plafond de 2,1 milliards sans le dépasser.
 
-## Comparison to Bitcoin
+## Comparaison avec Bitcoin
 
-| **Feature**          | **Bitcoin**                            | **CORE**                                                  |
-| -------------------- | -------------------------------------- | --------------------------------------------------------- |
-| **Maximum Supply**   | 21 million                             | 2.1 billion                               |
-| **Reduction Method** | Halvings (50% cuts) | Gradual (3.61% annual) |
-| **Timeline**         | ~140 years             | 81 years                                                  |
+| **Fonctionnalité**       | **Bitcoin**                                     | **CORE**                                     |
+| ------------------------ | ----------------------------------------------- | -------------------------------------------- |
+| **Offre maximale**       | 21 millions                                     | 2,1 milliards                                |
+| **Méthode de réduction** | Halvings (réductions de 50%) | Graduelle (3,61 % annuel) |
+| **Chronologie**          | ~140 years                      | 81 years                                     |
