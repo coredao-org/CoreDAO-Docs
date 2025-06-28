@@ -24,24 +24,24 @@ Il existe plusieurs exigences système pour configurer un nœud complet sur Core
 
 ### Spécifications logicielles pour les nœuds complets sur le Testnet de Core
 
-Currently, **_only_** run on **Mac OS X** and **Linux** are supported.
+Actuellement, **seulement** l'exécution sur **Mac OS** X et **Linux** est prise en charge.
 
 ### Spécifications matérielles pour les nœuds complets sur le Testnet de Core
 
-For full nodes on **Core Testnet**, following minimum hardware specifications are recommended:
+Pour les nœuds complets sur **Core Testnet**, les spécifications matérielles minimales recommandées sont :
 
-| Requis           | Détails                                                              |
-| ---------------- | -------------------------------------------------------------------- |
-| Stockage         | 1 To d'espace disque libre                                           |
-| CPU              | 4 cœurs CPU                                                          |
-| RAM              | 8 go                                                                 |
-| Vitesse Internet | A broadband Internet connection with upload/download speeds of 5Mbps |
+| Requis           | Détails                                                                       |
+| ---------------- | ----------------------------------------------------------------------------- |
+| Stockage         | 1 To d'espace disque libre                                                    |
+| CPU              | 4 cœurs CPU                                                                   |
+| RAM              | 8 go                                                                          |
+| Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 5 Mbps |
 
 ## Construction et exécution d'un nœud complet sur le Testnet de Core
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. The node binary includes the testnet and mainnet configuration files, amke sure to use the **testnet2** configuration files. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing a full node is to sync from the _genesis block_.
+2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. Le binaire du nœud inclut les fichiers de configuration du testnet. Assurez-vous d'utiliser les configurations de **testnet2**. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Notez que la méthode recommandée pour synchroniser un nœud testnet est de démarrer à partir du bloc genesis_.
 
 3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
@@ -63,9 +63,9 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. Now that the full node configuration is completed, let's start running it!
+4. Maintenant que la configuration du nœud d'archivage est terminée, lançons-le !
 
-Execute the following `geth` command to run the fun node:
+Exécutez la commande `geth` suivante pour lancer le nœud complet:
 
 ```bash
 ## start a full node
