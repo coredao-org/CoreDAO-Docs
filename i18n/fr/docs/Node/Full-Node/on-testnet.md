@@ -72,4 +72,4 @@ Exécutez la commande `geth` suivante pour lancer le nœud complet:
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-5. While the full node is running, you can monitor its logs to ensure that everything is operating correctly. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5. Pendant que le nœud complet est en cours d'exécution, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
