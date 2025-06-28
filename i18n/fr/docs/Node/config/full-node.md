@@ -76,7 +76,7 @@ values={[
 
 1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. The node binary includes the testnet configuration files, make sure to use **testnet2** configurations. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing testnet nodes is to sync from the genesis block.
+2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. Le binaire du nœud inclut les fichiers de configuration du testnet. Assurez-vous d'utiliser les configurations de **testnet2**. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Notez que la méthode recommandée pour synchroniser un nœud testnet est de démarrer à partir du bloc genesis.
 
 3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
@@ -98,7 +98,7 @@ values={[
     INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
     ```
 
-4. Notre nœud complet est prêt, lançons-le ! Run the following command to start the full node  directly:
+4. Notre nœud complet est prêt, lançons-le ! Exécutez la commande suivante pour démarrer le nœud complet directement :
 
     ```bash
     ## start a full node
@@ -111,7 +111,7 @@ values={[
 
  <TabItem value="mainnet">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 2. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le nœud binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
@@ -135,14 +135,14 @@ values={[
     INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
     ```
 
-4. Notre nœud complet est prêt, lançons-le ! Run the following command to start the full node  directly:
+4. Notre nœud complet est prêt, lançons-le ! Exécutez la commande suivante pour démarrer le nœud complet directement:
 
     ```bash
     ## start a full node
     geth --config ./config.toml --datadir ./node  --cache 8000
     ```
 
-5. While the full node is running, we can monitor its logs to ensure that everything is operating correctly. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
     </TabItem>
 
 </Tabs>
