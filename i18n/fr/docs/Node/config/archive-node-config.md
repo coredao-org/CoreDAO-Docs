@@ -15,17 +15,17 @@ Les nœuds d'archive dans le réseau Core jouent un rôle crucial en conservant 
 
 ## Requis Systèmes
 
-There are several system requirements, both software and hardware, for setting up an Archive node on the Core network.
+Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires pour configurer un nœud d'archive sur le réseau Core.
 
 ### Logiciel
 
-- **Operating System:** Currently, a Core Archive node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability.
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes.
+- **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation **macOS** ou **Linux** (Ubuntu 20.04 ou ultérieur).
+- **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité.
+- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
 
 ### Matériel
 
-An Archive node on Core stores the entire blockchain history, ensuring data availability and integrity for network participants. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nœuds d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. The following are the hardware requirements for running the Archive node on Core.
+Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, garantissant la disponibilité et l'intégrité des données pour les participants du réseau. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nœuds d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. The following are the hardware requirements for running the Archive node on Core.
 
 <Tabs
 defaultValue="testnetTwo"
