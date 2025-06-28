@@ -25,13 +25,13 @@ Il existe plusieurs exigences système pour configurer un nœud complet sur Core
 
 ### Logiciel
 
-- **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
+- **Système d'exploitation:** Actuellement, un nœud de validation Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
+- **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité
+- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds
 
-### Hardware
+### Matériel
 
-A full node  on Core performs several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and responding to network requests, depending on its configuration. Unlike validators, full nodes do not produce blocks; instead, they help propagate transactions and blocks across the network. They play a crucial role in maintaining data integrity and supporting a trustless environment. For running Full Nodes on Core, the following are the recommended minimum hardware specifications:
+Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Contrairement aux validateurs, les nœuds complets ne produisent pas de blocs, mais aident à propager les transactions et les blocs à travers le réseau. Ils jouent un rôle crucial dans le maintien de l'intégrité des données et dans le soutien d'un environnement sans confiance. Pour exécuter des nœuds complets sur Core, les spécifications matérielles minimales recommandées sont les suivantes :
 
 <Tabs
 defaultValue="testnet2"
@@ -39,26 +39,28 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
-    | Requirements   | Details                                                                                                 |  
+    | Exigences   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms |
+    | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
     | **CPU**            | 4 CPU cores                                                                    |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                  |
+    | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
+                                     |
 
   </TabItem>
 
   <TabItem value="mainnet">
-    For Full Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+    Pour les nœuds d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
 
-    | Requirements   | Details                                                                                                 |  
+    | Exigences   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms  |
-    | **CPU**            | 4 CPU cores                                                                                             |
-    | **RAM**            | 32 Gigabytes                                                                                            |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                   |
+    | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
+    | **CPU**            | 4 CPU cores                                                                    |
+    | **RAM**            | 32 Gigabytes                                                                                             |
+    | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
+                                     |
 
   </TabItem>
 </Tabs>
@@ -72,7 +74,7 @@ values={[
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. The node binary includes the testnet configuration files, make sure to use **testnet2** configurations. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing testnet nodes is to sync from the genesis block.
 
