@@ -28,7 +28,7 @@ Il existe plusieurs exigences système pour configurer un nœud complet sur Core
 
 ### Spécifications matérielles pour les nœuds complets sur le Mainnet de Core
 
-Core nodes perform several resource-intensive tasks, including storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and responding to network requests, depending on their configuration. Pour les nœuds complets sur le **mainnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
+Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Pour les nœuds complets sur le **mainnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
 | Requis           | Détails                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ Core nodes perform several resource-intensive tasks, including storing blockchai
 
 ## Construction et exécution d'un nœud complet sur le Mainnet de Core
 
-1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1\. Nous recommandons d'utiliser le [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
@@ -63,9 +63,9 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Now that the full node configuration is completed, let's start running it!
+4\. Maintenant que la configuration du nœud d'archivage est terminée, lançons-le !
 
-Execute the following `geth` command to run the fun node:
+Exécutez la commande `geth` suivante pour lancer le nœud complet :
 
 ```bash
 ## start a full node
