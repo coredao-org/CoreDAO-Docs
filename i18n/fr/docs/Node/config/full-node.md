@@ -11,19 +11,19 @@ importer TabItem depuis '@theme/TabItem';
 
 ---
 
-A Core full node  stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node  can take many forms:
+Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes:
 
-- **Normal full node**: for private use.
-- **Validator full node**: acts as a validator on Core, validating blocks and transactions.
-- **RPC full node**: provides RPC services and responds to HTTP requests.
+- **Nœud complet normal :** pour une utilisation privée.
+- **Nœud complet de validateur :** agit en tant que validateur sur Core, validant les blocs et transactions.
+- **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
-Following are the detailed steps to running **Normal Full Nodes** on the Core network.
+Voici les étapes détaillées pour exécuter des **nœuds complets normaux** sur le réseau Core.
 
-## System Requirements
+## Requis Systèmes
 
-There are several system requirements for setting up a full node  on Core.
+Il existe plusieurs exigences système pour configurer un nœud complet sur Core.
 
-### Software
+### Logiciel
 
 - **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
 - **Network Connectivity:** Stable internet connection with low latency and high availability
