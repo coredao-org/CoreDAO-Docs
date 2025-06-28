@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-On the Core network, you can sync your node to the latest state of the Core blockchain in several ways. Ce document vous guide à travers le processus de synchronisation des nœuds sur le réseau Core.
+Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état le plus récent de la blockchain Core de plusieurs manières. Ce document vous guide à travers le processus de synchronisation des nœuds sur le réseau Core.
 
 ## Synchronisation à partir d'un snapshot (recommandé)
 
@@ -32,7 +32,7 @@ chmod -v u+x geth
 
 ### Téléchargement des Fichiers de Configuration
 
-Download `genesis.json` and `config.toml` by:
+Téléchargez `genesis.json` et `config.toml`:
 
 ```bash
 wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep mainnet |cut -d\" -f4)
@@ -41,7 +41,7 @@ unzip mainnet.zip
 
 ### Configuration des Pairs
 
-- **Mainnet**: the `config.toml` file from the latest release ships configured with the information about the `Bootstrap Nodes` and `Static Nodes` as shown below:
+- **Mainnet**: Le fichier `config.toml` de la dernière sortie contient les informations suivantes sur les `Bootstrap Nodes` et `Static Nodes` :
 
 ```yaml
 BootstrapNodes =
@@ -61,7 +61,7 @@ StaticNodes =
 
 ### Téléchargement des Snapshots
 
-Download the latest chain data snapshot from [here](https://github.com/coredao-org/core-snapshots).
+Téléchargez le dernier snapshot de chaindata à partir d'[ici](https://github.com/coredao-org/core-snapshots).
 
 ### Démarrer le Nœud
 
@@ -70,7 +70,7 @@ Download the latest chain data snapshot from [here](https://github.com/coredao-o
 ```
 
 :::note
-Ensure you use the version of geth you downloaded with wget above, and not your local installation of geth, which may be an incorrect version.
+Assurez-vous d'utiliser la version de geth que vous avez téléchargée avec wget ci-dessus, et non votre installation locale de geth, qui pourrait être une mauvaise version.
 :::
 
 :::tip
@@ -86,10 +86,10 @@ Surveillez le fichier de log à partir de `/node/logs/core.log` par défaut.
 ## Synchronisation depuis le bloc Genesis (non recommandé)
 
 :::note
-Note that the recommended method for syncing the testnet node is to sync from the genesis block, as currently the snapshot is not available. You can download the latest binary for testnet from [here](https://github.com/coredao-org/core-chain/releases).
+Notez que la méthode recommandée pour synchroniser un nœud testnet est de synchroniser à partir du bloc Genesis, car le snapshot n'est actuellement pas disponible. Vous pouvez telecharger le dernier binaire pour le testnet [ici](https://github.com/coredao-org/core-chain/releases).
 :::
 
-Write the genesis state locally by executing the following command from your node directory.
+Écrivez l'état initial (genesis) localement en exécutant la commande suivante dans votre répertoire de nœud.
 
 ```bash
 geth --datadir node init genesis.json
@@ -109,9 +109,9 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-After the configuration of full node is completed, you can start running it!
+Une fois la configuration du nœud complet terminée, vous pouvez commencer à l'exécuter !
 
-To run a full node, run the following `geth` command:
+Pour exécuter un nœud Rpc, exécutez la commande `geth` suivante:
 
 ```bash
 ## start a full node
@@ -120,10 +120,10 @@ geth --config ./config.toml --datadir ./node  --cache 8000
 
 ## Mode de Synchronisation
 
-There are two sync modes for running a full node: **snap** and **full**, which can be specified by the flag **--syncmode**.
+Il existe deux modes de synchronisation pour exécuter un nœud complet : **snap** et **full**, que vous pouvez spécifier avec l'option **--syncmode**.
 
-- The **snap** sync mode is used for initial sync, which downloads the latest states rather than executing the blocks from the genesis. Once the initial sync is complete, it will automatically switch to full sync.
+- **Snap sync mode** : Utilisé pour la synchronisation initiale, il télécharge les derniers états plutôt que d'exécuter les blocs depuis le genesis. Une fois la synchronisation initiale terminée, le nœud basculera automatiquement en mode de synchronisation complète.
 
-- The **full** sync mode can also be used for an initial sync, which will execute all blocks since the genesis block. **Il n'est pas recommandé**, car la quantité de données historiques est trop volumineuse. Instead, you can download a snapshot from the [official repo](https://github.com/coredao-org/core-snapshots) and start a full sync from the snapshot.
+- Le **mode de synchronisation full** (complète) peut également être utilisé pour une synchronisation initiale, ce qui exécutera tous les blocs depuis le bloc de genèse. **Il n'est pas recommandé**, car la quantité de données historiques est trop volumineuse. Il est préférable de télécharger un snapshot a partir du [repertoire officiel](https://github.com/coredao-org/core-snapshots) et de démarrer la synchronisation complète à partir de celui-ci.
 
-- Si l'option **--syncmode** n'est pas fournie, le mode de synchronisation par défaut dépendra de l'état du dossier de données. It will be **snap** mode if you sync from the genesis or **full** mode if you start from a snapshot.
+- Si l'option **--syncmode** n'est pas fournie, le mode de synchronisation par défaut dépendra de l'état du dossier de données. Cela sera en mode **snap** si vous synchronisez à partir du genesis, ou en mode **full** si vous démarrez à partir d'un snapshot.
