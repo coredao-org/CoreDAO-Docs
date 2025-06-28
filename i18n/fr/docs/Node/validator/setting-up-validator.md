@@ -19,7 +19,7 @@ Avant de commencer, assurez-vous que votre système répond aux spécifications 
 
 #### Plateformes de système d'exploitation prises en charge
 
-Currently, the supported operating system platforms include **macOS** and **Linux**.
+Actuellement, les plateformes de systèmes d'exploitation prises en charge incluent **macOS** et **Linux**.
 
 #### Exigences matérielles
 
@@ -29,7 +29,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
     | Exigences.   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ For Validator nodes on **Core Testnet2**, following minimum hardware specificati
   </TabItem>
 
   <TabItem value="mainnet">
-   For Validator nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
     | Exigences   | Détails                                                                                                   |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -55,16 +55,16 @@ For Validator nodes on **Core Testnet2**, following minimum hardware specificati
 
 ### Cloner le code de base de la Core Blockchain
 
-It is recommended to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your validator node directly, i.e., running your validator node from the Core blockchain codebase. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+Il est recommandé d'utiliser le référentiel GitHub [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud de validation, c'est-à-dire exécuter votre nœud de validation directement à partir de la base de code de la blockchain Core. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
 cd core-chain
 ```
 
-#### Install Dependencies
+#### Installer les dépendances
 
-After cloning the repo, the next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Exécutez la commande suivante pour installer les dépendances:
+Après avoir cloné le dépôt, l'étape suivante consiste à installer toutes les dépendances nécessaires pour construire le binaire geth (Go Ethereum). Exécutez la commande suivante pour installer les dépendances:
 
 ```bash
 make geth
@@ -74,10 +74,10 @@ Cela téléchargera et installera les dépendances nécessaires et construira le
 
 ### Configuration du nœud
 
-There are two approaches to set up a validator node from scratch on the Core blockchain:
+Il existe 2 approches pour configurer un nœud validateur à partir de zéro sur la Core blockchain:
 
 - **By Snapshot (Recommend):** téléchargez le dernier instantané de la Core blockchain (https://github.com/coredao-org/core-snapshots)et synchronisez le nœud en fonction de celui-ci.
-- **From Genesis (Not Recommended):** Sync the entire Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
+- **From Genesis (Not Recommend):** synchronisez l'ensemble des données de la Core blockchain à partir du [bloc Genesis] (https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
 La synchronisation à partir du bloc Genesis peut prendre un temps considérable. Il est recommandé de configurer un nœud Core en utilisant le dernier instantané pour accélérer le processus.
@@ -87,7 +87,7 @@ La synchronisation à partir du bloc Genesis peut prendre un temps considérable
 
 1. **Téléchargez les derniers binaires pré-construits:** Téléchargez les derniers binaires de nœud à partir du référentiel officiel des versions de Core (https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Genesis and Configuration Files:** The pre-build binaries contain `genesis.json` and `config.toml` for the respective network you want to run the validator node. Assurez-vous que ces fichiers sont correctement placés dans le répertoire de configuration de votre nœud avant de poursuivre la configuration.
+2. **Fichiers de Genesis et de configuration:** Les binaires pré-construits contiennent `genesis.json` et `config.toml` pour le réseau respectif sur lequel vous souhaitez exécuter le nœud validateur. Assurez-vous que ces fichiers sont correctement placés dans le répertoire de configuration de votre nœud avant de poursuivre la configuration.
 
 3. **Initialiser Genesis:** Écrivez l'état de genesis localement en exécutant la commande suivante à partir de votre répertoire de projet. Assurez-vous que le chemin vers le fichier `genesis.json` est correct. Dans ce cas, `genesis.json` signifie que le fichier `genesis.json` est situé dans le même répertoire, qui devrait être le répertoire racine (core-chain) de votre nœud.
 
@@ -111,7 +111,7 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 
 4. **Download & Extract the Latest Snapshot:** Téléchargez et extrayez le dernier instantané de la blockchain Core à partir du référentiel officiel des instantanés de Core.[Core Snapshot Repository] (https://github.com/coredao-org/core-snapshots).
 
-5. **Génération de la clé de consensus:** Configurez la clé de consensus avant d'exécuter le nœud validateur. To create a new consensus key, use the following command, which will create a new account and output an address that will be your validator's address (consensus address).
+5. **Génération de la clé de consensus:** Configurez la clé de consensus avant d'exécuter le nœud validateur. Pour créer une nouvelle clé de consensus, utilisez la commande suivante, qui créera un nouveau compte et affichera une adresse qui sera l'adresse de votre validateur (adresse de consensus).
 
 ```bash
 #générer la clé de consensus et entrer le mot de passe
@@ -149,13 +149,13 @@ Analysons les 'flags' utilisés dans cette commande:
 
 - **`password password.txt`:** Le mot de passe pour déverrouiller votre compte de validateur (assurez-vous que ce fichier est conservé de manière sécurisée).
 
-- **`mine`:** Enables mining and validating (producing blocks) on the network. Essentiel pour le fonctionnement du validateur
+- **`mine`:** Active l'exploitation minière/la validation (production de blocs) sur le réseau. Essentiel pour le fonctionnement du validateur
 
-- **`allow-insecure-unlock`:** Enables the unlock process without additional security measures (use with caution).
+- **`allow-insecure-unlock`:** Autorise le processus de déverrouillage sans mesures de sécurité supplémentaires (à utiliser avec prudence).
 
 - **`cache 8000`:** Alloue un grand cache (8 Go dans ce cas) pour améliorer les performances.
 
-- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Tesnet2)
+- **`networkid`:** Spécifiez l'Id de chaîne du réseau Core que vous avez l'intention d'exécuter pour le nœud validateur (par exemple, 1114 pour Core Testnet2)
 
 #### Synchronisation depuis la Genesis
 
@@ -163,7 +163,7 @@ Si vous préférez synchroniser votre nœud validateur à partir du bloc de gen�
 
 - Ignorez l'étape #4 ("Télécharger et extraire le dernier instantané") dans les instructions de configuration.
 
-- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as usual.
+- Après avoir terminé les étapes 1 (Téléchargement des binaires), 2 (Fichiers de genèse/config) et 3 (Initialisation de la genèse), continuez à générer votre clé de consensus comme d'habitude.
 
 - Ensuite, démarrez le nœud validateur en utilisant la commande ci-dessous:
 
@@ -171,24 +171,24 @@ Si vous préférez synchroniser votre nœud validateur à partir du bloc de gen�
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
+⚠️ **Note:** La synchronisation depuis la genèse peut prendre beaucoup de temps en fonction des ressources système et de la vitesse du réseau.
 
 ## Surveiller les journaux
 
-Once your validator node is up and running, it’s essential to monitor the logs to ensure everything is operating smoothly.
+Une fois que votre nœud de validation est opérationnel, il est important de surveiller les journaux pour garantir que tout fonctionne correctement.
 
 Les journaux sont généralement stockés dans `./node/logs/core.log`, mais peuvent être configurés pour être enregistrés à un autre emplacement si nécessaire. Vous pouvez afficher et suivre les journaux en temps réel en utilisant la commande suivante:
 
 ```bash
 # Tail the logs in real-time
-# This will display the most recent log entries and update the log display continuously.
+# This will show you the most recent log entries and continuously update the log display.
 
 tail -f ./node/logs/core.log
 ```
 
-These logs typically show that the node is importing new chain segments on the blockchain, indicating that it’s correctly receiving and processing blocks.
+Ces journaux indiquent généralement que le nœud importe de nouveaux segments de chaîne sur la blockchain, ce qui signifie qu'il reçoit et traite correctement les blocs.
 
-- **Imported new chain segment:** This indicates that the node is successfully receiving new blocks from the network and adding them to its local blockchain.
+- **Importé un nouveau segment de chaîne:**" signifie "Le nœud importe avec succès de nouveaux blocs du réseau et les ajoute à la blockchain locale.
 
 - **number:** Le numéro de bloc (par exemple,`1,596,730`est le numéro de bloc pour cette entrée).
 
@@ -200,7 +200,7 @@ These logs typically show that the node is importing new chain segments on the b
 
 - **txs:** Le nombre de transactions dans le bloc (par exemple, `1` tx or `2` txs).
 
-- **mgas:** La quantité de gaz utilisée dans les transactions au sein du bloc. Gas refers to the computational work required to execute transactions (e.g., `0.021` means 0.021 million gas units).
+- **mgas:** La quantité de gaz utilisée dans les transactions au sein du bloc. Le gaz est le travail de calcul nécessaire pour exécuter les transactions.(e.g., `0.021` means 0.021 million gas).
 
 - **elapsed:** Le temps nécessaire pour importer le bloc, en millisecondes (e.g., `3.003ms`).
 
@@ -208,7 +208,7 @@ These logs typically show that the node is importing new chain segments on the b
 
 - **triedirty:** La quantité de mémoire "sale" utilisée (dans ce cas, environ `869.67 KiB`), qui indique la quantité de mémoire utilisée temporairement pour stocker les données de bloc.
 
-- **Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nœuds pour se connecter. Peer-to-peer connections are crucial for synchronizing the blockchain with the network.
+- **Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nœuds pour se connecter. Les connexions 'peer-to-peer' permettent de synchroniser la blockchain avec le réseau, en échangeant des informations et des données entre les nœuds.
 
 - **peercount:** Le nombre actuel de pairs auxquels le nœud est connecté (e.g., `2`).
 
