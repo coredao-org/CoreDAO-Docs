@@ -50,12 +50,12 @@ Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles
 Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
 ```
-| Requirements   | Details                                                                                                 |  
+| Exigences.   | Détails                                                                                                |  
 |----------------|---------------------------------------------------------------------------------------------------------|
-| **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
-| **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
-| **RAM**            | 32 Gigabytes                                                                                            |
-| **Internet Speed** | A broadband Internet connection with upload/download speeds of 10Mbps.                 |
+| **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+| **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
+| **RAM**            | 32 Gigabytes                                                                                             |
+| **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10Mbps.                |
 ```
 
   </TabItem>
