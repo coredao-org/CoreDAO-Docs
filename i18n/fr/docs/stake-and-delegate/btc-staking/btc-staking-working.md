@@ -80,46 +80,45 @@ Votre transaction de staking CLTV doit inclure :
 
 1. **Diffusion de la transaction**: Transaction CLTV envoyée au réseau Bitcoin
 2. **Confirmation Bitcoin**: Environ 60 minutes (6 blocs) pour la reconnaissance
-3. **Core detection**: Relayers identify valid delegation
-4. **Reward activation**: Next validator election round (~24 hours from UTC+0)
+3. **Détection Core**: Les relais identifient une délégation valide
+4. **Activation des récompenses**: Prochain tour d'élection de validateur (~24 heures à partir de UTC+0)
 
-**Example Timeline**
-If you stake Bitcoin at 6:00 AM UTC+0:
+**Exemple de Chronologie** Si vous stakez des Bitcoins à 6:00 AM UTC+0:
 
-- Bitcoin confirmation: Same day after 6 blocks
-- Staking becomes active: 12:00 AM UTC+0 next day
-- Rewards begin accruing: From first active round
+- Confirmation Bitcoin: Le même jour après 6 blocs
+- Le staking devient actif: 00h00 UTC+0 le lendemain
+- Début de l'accumulation des récompenses : À partir du premier tour actif
 
-## Best Practices
+## Bonnes pratiques
 
-### Transaction Fees
+### Frais de transaction
 
-- **Use competitive fees**: Low fees cause confirmation delays
-- **Monitor network congestion**: Adjust fee rates accordingly
-- **Consider RBF**: Enable Replace-By-Fee for fee adjustments
+- **Utilisez des frais compétitifs**: Des frais trop bas peuvent entraîner des retards de confirmation
+- **Surveillez la congestion du réseau**: Ajustez les taux de frais en conséquence
+- **Considérez RBF**: Activez Replace-By-Fee pour ajuster les frais
 
-### Handling Delays
+### Gestion des retards
 
-- **Transaction accelerators**: Use services like viaBTC if stuck
-- **Fee bumping**: Increase fees on pending RBF transactions
-- **Patience**: Low-fee transactions may take days during congestion
+- **Accélérateurs de transactions**: Utilisez des services comme viaBTC si la transaction est bloquée
+- **Augmentation des frais**: Augmentez les frais sur les transactions RBF en attente
+- **Patience**: Les transactions avec des frais bas peuvent prendre des jours en période de congestion
 
-### Validator Selection
+### Sélection des Validateurs
 
-Choose validators based on:
+Choisissez des validateurs en fonction de:
 
-- Performance history and uptime
-- Commission rates
-- Community reputation
+- Historique de performance et disponibilité
+- Taux de commission
+- Réputation communautaire
 
-## Redelegation vs Redemption
+## Redélegation vs Rédemption
 
-**Redemption**: Unlock Bitcoin for general use
+**Rédemption**: Débloquez vos Bitcoin pour une utilisation générale
 
-- Requires redeem script after timelock expires
-- Bitcoin becomes fully spendable again
+- Nécessite un script de rachat après expiration du verrouillage temporel
+- Vos bitcoins redeviennent entièrement utilisables
 
-**Redelegation**: Switch to different validator without unlocking
+**Redélegation** : Basculez vers un validateur différent sans débloquer vos tokens
 
 - Can be done directly without redemption
 - Maintains staking position with new validator
