@@ -127,13 +127,14 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 
 ### Confirmer la Sortie OP_Return
 
-11. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. Abort the transaction if it doesn't include the OP_Return output.
+11. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.
 
 <p align="center" style={{zoom:"80%"}}>
-![dual-staking-on-core](../../../static/img/dual-staking/dual-staking-15.png)
+![dual-staking-on-core](../../../static/img/dual-staking/dual-staking-15.png
+)
 </p>
 
-12. Once you confirm the transaction, you will receive a **Transaction Submitted** notification. Vous pouvez vérifier votre transaction en cliquant sur **View on BTC Explorer**.
+12. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted**. Vous pouvez vérifier votre transaction en cliquant sur **View on BTC Explorer**.
 
 <p align="center" >
 ![btc-staking-on-core](../../../static/img/native-staking/native-staking-13.avif)
@@ -181,4 +182,4 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 ![btc-staking-on-core](../../../static/img/native-staking/updated-ui/staking-guide-9.png)
 </p>
 
-**Congratulations,** you have successfully staked your Bitcoin on the Core blockchain and will now actively earn CORE tokens from your delegated Bitcoin. En stakant du Bitcoin et en votant pour des validateurs sur Core, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité.
+**Félicitations!!** Vous avez réussi à staker vos Bitcoins sur la blockchain Core et gagnerez désormais activement des tokens CORE à partir de vos BTC délégués. En stakant du Bitcoin et en votant pour des validateurs sur Core, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité.
