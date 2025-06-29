@@ -5,37 +5,37 @@ sidebar_position: 1
 
 # Core - La chaîne Bitcoin tout-en-un.
 
-## Getting Started
+## Commencer
 
 La blockchain Core est une blockchain de couche 1 haute performance compatible avec EVM, conçue pour être la plate-forme de contrats intelligents complémentaire et hyper-scalable de Bitcoin. En tirant parti des verrous temporels CLTV natifs de Bitcoin, de la puissance de hachage du minage de Bitcoin et des capacités de contrats intelligents modernes, Core libère Bitcoin en tant que protecteur principal et actif central d'un écosystème d'applications décentralisées prospère.
-As the only end-to-end platform supporting both Bitcoin Staking and EVM-compatible smart contracts, Core serves as Bitcoin's first Proof of Stake layer.
+En tant que seule plate-forme de bout en bout prenant en charge à la fois le staking de Bitcoin et les contrats intelligents compatibles EVM, Core sert de première couche de preuve d'enjeu (Proof of Stake) de Bitcoin.
 
 ![core-header](../static/img/core-header.png)
 
-## Learn
+## Apprendre
 
-Dive into what Core is and how to start your journey
+Découvrez ce qu'est Core et comment démarrer votre parcours
 
-- [An Overview of Core](./Learn/introduction/core-101.md)
-- [Read About the Core Concepts](category/core-concepts)
-- [Understand the Underlying Architecture](./Learn/core-concepts/architecture.md)
+- [Aperçu de Core](./Learn/introduction/core-101.md)
+- [En savoir plus sur les concepts de Core](category/core-concepts)
+- [Comprendre l'architecture sous-jacente](./Learn/core-concepts/architecture.md)
 
-## Explore
+## Explorateur
 
-Get Familiar with the Core Ecosystem
+Familiarisez-vous avec l'écosystème Core
 
-- [Find Out Why Core is the Right Choice](./Learn/introduction/why-core.md)
-- [Explore Bitcoin Staking](./Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking)
-- [See What's Being Built on Core](https://coredao.org/explore/ecosystem)
+- [Découvrez pourquoi Core est le bon choix](./Learn/introduction/why-core.md)
+- [Explorer le staking de Bitcoin](./Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking)
+- [Voir ce qui est construit sur Core](https://coredao.org/explore/ecosystem)
 
-## Run a Node
+## Exécuter un Nœud
 
-Participate in Core Network Security by Running Different Types of Nodes
+Participer à la sécurité du réseau Core en exécutant différents types de nœuds
 
-- [Run a Full Node on the Core Network](./Node/config/full-node.md)
-- [Run a Validator Node on the Core Network](./Node/config/validator-node-config.md)
-- [Run a RPC Node on the Core Network](./Node/config/rpc-node-config.md)
-- [Run an Archive Node on the Core Network](./Node/config/archive-node-config.md)
+- [Exécuter un nœud complet sur le réseau Core](./Node/config/full-node.md)
+- [Exécuter un nœud validateur sur le réseau Core](./Node/config/validator-node-config.md)
+- [Exécuter un nœud RPC sur le réseau Core](./Node/config/rpc-node-config.md)
+- [Exécuter un nœud d'archivage sur le réseau Core](./Node/config/archive-node-config.md)
 - [Run a Snapshot Node on the Core Network](./Node/config/snapshot-node-config.md)
 
 ## Build
