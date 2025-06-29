@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-## CLTV Timelock Mechanism
+## Mécanisme de Timelock CLTV
 
 [`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) is a Bitcoin-native function that locks transaction outputs until a specified time or block height. When you create a CLTV transaction:
 
