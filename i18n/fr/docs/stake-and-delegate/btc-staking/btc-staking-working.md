@@ -10,63 +10,63 @@ sidebar_position: 2
 
 ## Mécanisme de Timelock CLTV
 
-[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) is a Bitcoin-native function that locks transaction outputs until a specified time or block height. When you create a CLTV transaction:
+[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) est une fonction native de Bitcoin qui verrouille les sorties de transaction jusqu'à un moment spécifié ou une hauteur de bloc définie. Lorsqu'un utilisateur initie une transaction CLTV:
 
-- Bitcoin remains locked in your wallet for the specified duration
-- No third party can access your Bitcoin during the lock period
-- You retain full custody throughout the entire process
-- After expiration, you must send a redeem script to regain spending ability
+- Les Bitcoins restent verrouillés dans votre portefeuille pendant la durée spécifiée
+- Aucun tiers ne peut accéder à vos Bitcoins pendant la période de verrouillage
+- Vous conservez la pleine garde tout au long du processus entier
+- Après expiration, vous devez envoyer un script de remboursement pour récupérer la capacité de dépense
 
-## Staking Process Overview
+## Aperçu du processus de staking
 
-1. **Create timelock transaction** with CLTV on Bitcoin blockchain
-2. **Include metadata** specifying validator delegation and reward address
-3. **Core relayers detect** valid staking transactions on Bitcoin
-4. **Earn CORE rewards** based on validator performance and staked amount
-5. **Redeem Bitcoin** after timelock expires using redeem script
+1. **Créer une transaction avec verrouillage temporel** (timelock) en utilisant CLTV sur la blockchain Bitcoin
+2. **Inclure des métadonnées** spécifiant la délégation de validation et l'adresse de récompense
+3. **Les relais détectent** la transaction de staking sur Bitcoin
+4. **Gagner des récompenses CORE** en fonction des performances du validateur et du montant mis en jeu (staked)
+5. **Racheter des Bitcoins** après l'expiration du verrouillage temporel en utilisant le script de remboursement
 
-## Security Model
+## Modèle de sécurité
 
-**Zero Custodial Risk**: Your Bitcoin never leaves the Bitcoin blockchain or your control. The staking mechanism uses only Bitcoin-native functions without introducing additional trust assumptions.
+**Risque de garde zéro**: Vos Bitcoins ne quittent jamais la blockchain Bitcoin ou votre contrôle. Le mécanisme de staking utilise uniquement des fonctions natives de Bitcoin, sans introduire d'hypothèses de confiance supplémentaires.
 
-**Key Security Guarantees**:
+**Garanties de sécurité clés**:
 
-- Bitcoin remains in your wallet throughout staking
-- No protocol-level risk beyond Bitcoin's native security
-- No third-party custody or smart contract risk
-- Validator misbehavior cannot affect your Bitcoin principal
+- Les Bitcoins restent dans votre portefeuille tout au long du staking
+- Aucun risque au niveau du protocole au-delà de la sécurité native de Bitcoin
+- Aucun risque de garde par un tiers ou de contrat intelligent
+- Les comportements malveillants des validateurs ne peuvent pas affecter votre capital Bitcoin
 
-## Technical Requirements
+## Exigences techniques
 
-### Transaction Structure
+### Structure des transactions
 
-Your CLTV staking transaction must include:
+Votre transaction de staking CLTV doit inclure :
 
-**Required Outputs**:
+**Sorties requises**:
 
-- **CLTV timelock output**: Locks your Bitcoin for specified duration
-- **`OP_RETURN` output**: Contains delegation metadata
+- **Sortie de verrouillage temporel CLTV (CheckLockTimeVerify)** : Verrouille vos Bitcoins pendant une durée spécifiée
+- **Sortie `OP_RETURN`**: Contient des métadonnées de délégation
 
-**Metadata Format** (in `OP_RETURN`):
+**Format des métadonnées** (in `OP_RETURN`):
 
-- Core validator address (delegation target)
-- CORE reward address (where to send rewards)
+- Adresse du validateur Core (cible de délégation)
+- Adresse de récompense CORE (où envoyer les récompenses)
 
-### Minimum Requirements
+### Exigences minimales
 
-| **Method**       | **Minimum BTC**          | **Minimum Duration**                      |
-| ---------------- | ------------------------ | ----------------------------------------- |
-| Official UI      | 0.01 BTC | 5 days                                    |
-| Direct scripting | No minimum               | 24 hours (recommended) |
+| **Méthode**                      | **Montant minimum de BTC** | **Durée minimale**                            |
+| -------------------------------- | -------------------------- | --------------------------------------------- |
+| Interface utilisateur officielle | 0.01 BTC   | 5 jours                                       |
+| Scripting direct                 | Aucun minimum              | Durée recommandée : 24 heures |
 
-## Cross-Chain Operations
+## Opérations inter-chaînes
 
-| Étape        | Réseau Bitcoin                                         | Core Network                                       |
-| ------------ | ------------------------------------------------------ | -------------------------------------------------- |
-| **Initiate** | User creates CLTV transaction with delegation metadata | Relayers monitor for valid staking transactions    |
-| **Timelock** | Bitcoin locked in user's wallet, transaction confirmed | Relayers validate and register staking position    |
-| **Earn**     | Bitcoin remains locked and secure                      | CORE rewards accrue based on validator performance |
-| **Redeem**   | User sends redeem script to unlock Bitcoin             | Relayers update staking records                    |
+| Étape        | Réseau Bitcoin                                                             | Core Network                                               |
+| ------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| **Initier**  | L'utilisateur crée une transaction CLTV avec des métadonnées de délégation | Les relais surveillent les transactions de staking valides |
+| **Timelock** | Bitcoin locked in user's wallet, transaction confirmed                     | Relayers validate and register staking position            |
+| **Earn**     | Bitcoin remains locked and secure                                          | CORE rewards accrue based on validator performance         |
+| **Redeem**   | User sends redeem script to unlock Bitcoin                                 | Relayers update staking records                            |
 
 ## Flux de transaction
 
