@@ -86,4 +86,4 @@ Pour être éligible à recevoir des récompenses, il est nécessaire de complé
 
 #### Conclusion
 
-By following this guide, you have successfully learned how to redeem your staked Bitcoin, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. Nous sommes ravis que vous ayez choisi de découvrir BTCfi avec le staking Non-Custodial de Bitcoin sur Core!
+En suivant ce guide, vous avez appris avec succès à récupérer vos Bitcoins stakés sur la blockchain Core ainsi qu'à réclamer vos récompenses gagnées sous forme de tokens CORE en déléguant vos Bitcoins stakés. Nous sommes ravis que vous ayez choisi de découvrir BTCfi avec le staking Non-Custodial de Bitcoin sur Core!
