@@ -120,17 +120,17 @@ Choisissez des validateurs en fonction de:
 
 **Redélegation** : Basculez vers un validateur différent sans débloquer vos tokens
 
-- Can be done directly without redemption
-- Maintains staking position with new validator
+- Peut être fait directement sans rachat
+- Maintient la position de staking avec un nouveau validateur
 
-## API and Data Access
+## API et Accès aux Données
 
-Staking data becomes available via Core Staking API once:
+Les données de staking sont accessibles via l'API Core Staking une fois que :
 
-- Bitcoin transaction is confirmed (6 blocks)
-- Relayers have processed the delegation
-- Staking position is active in validator elections
+- La transaction Bitcoin est confirmée (6 blocs)
+- Les relayers ont traité la délégation
+- La position de staking est active dans les élections de validateurs
 
-This allows developers to track staking positions, rewards, and validator performance programmatically.
+Cela permet aux développeurs de suivre les positions de staking, les récompenses et les performances des validateurs de manière programmée.
 
-For a detailed guide on staking transaction design, refer [here](./design.md).
+Pour un guide détaillé sur la conception des transactions de staking, consultez [ici](./design.md).
