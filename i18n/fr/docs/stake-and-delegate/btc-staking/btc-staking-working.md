@@ -61,12 +61,12 @@ Votre transaction de staking CLTV doit inclure :
 
 ## Opérations inter-chaînes
 
-| Étape        | Réseau Bitcoin                                                             | Core Network                                               |
-| ------------ | -------------------------------------------------------------------------- | ---------------------------------------------------------- |
-| **Initier**  | L'utilisateur crée une transaction CLTV avec des métadonnées de délégation | Les relais surveillent les transactions de staking valides |
-| **Timelock** | Bitcoin locked in user's wallet, transaction confirmed                     | Relayers validate and register staking position            |
-| **Earn**     | Bitcoin remains locked and secure                                          | CORE rewards accrue based on validator performance         |
-| **Redeem**   | User sends redeem script to unlock Bitcoin                                 | Relayers update staking records                            |
+| Étape                                                   | Réseau Bitcoin                                                                    | Core Network                                                                 |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| **Initier**                                             | L'utilisateur crée une transaction CLTV avec des métadonnées de délégation        | Les relais surveillent les transactions de staking valides                   |
+| **Verrouillage temporel (Timelock)** | Bitcoins verrouillés dans le portefeuille de l'utilisateur, transaction confirmée | Les relais valident et enregistrent la position de staking                   |
+| **Gagner des récompenses**                              | Les Bitcoins restent verrouillés et sécurisés                                     | Les récompenses CORE s'accumulent en fonction des performances du validateur |
+| **Rachat**                                              | L'utilisateur envoie le script de rachat pour déverrouiller les Bitcoins          | Les relais mettent à jour les enregistrements de staking                     |
 
 ## Flux de transaction
 
@@ -74,12 +74,12 @@ Votre transaction de staking CLTV doit inclure :
 ![btc-staking-tx-workflow](../../../static/img/btc-staking/btc-staking-flow-new.png)
 </p>
 
-### Timeline and Activation
+### Chronologie et Activation
 
-**Confirmation Process**
+**Processus de Confirmation**
 
-1. **Transaction broadcast**: CLTV transaction sent to Bitcoin network
-2. **Bitcoin confirmation**: ~60 minutes (6 blocks) for recognition
+1. **Diffusion de la transaction**: Transaction CLTV envoyée au réseau Bitcoin
+2. **Confirmation Bitcoin**: Environ 60 minutes (6 blocs) pour la reconnaissance
 3. **Core detection**: Relayers identify valid delegation
 4. **Reward activation**: Next validator election round (~24 hours from UTC+0)
 
