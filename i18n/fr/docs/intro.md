@@ -36,21 +36,21 @@ Participer à la sécurité du réseau Core en exécutant différents types de n
 - [Exécuter un nœud validateur sur le réseau Core](./Node/config/validator-node-config.md)
 - [Exécuter un nœud RPC sur le réseau Core](./Node/config/rpc-node-config.md)
 - [Exécuter un nœud d'archivage sur le réseau Core](./Node/config/archive-node-config.md)
-- [Run a Snapshot Node on the Core Network](./Node/config/snapshot-node-config.md)
+- [Exécuter un nœud de snapshot sur le réseau Core](./Node/config/snapshot-node-config.md)
 
-## Build
+## Construire
 
-Start building on Core and Contribute to the BTCfi Landscape
+Commencez à construire sur Core et contribuez au paysage BTCfi
 
-- [Explore the Developer Tooling Landscape](./Dev-Guide/dev-tools.md)
-- [Configure Your Wallets on the Core Network](./Dev-Guide/core-wallet-config.md)
-- [Fund Your Wallets with tCORE2](./Dev-Guide/core-faucet.md)
-- [Iterate through Hands-on Detailed Guides to Jumpstart your Journey on Core](category/dev-guides)
-- [Build a Full-Stack dApp on Core](./Dev-Guide/dapp-on-core.md)
+- [Explorer le paysage des outils de développement](./Dev-Guide/dev-tools.md)
+- [Configurer vos portefeuilles sur le réseau Core](./Dev-Guide/core-wallet-config.md)
+- [Financer vos portefeuilles avec tCORE2](./Dev-Guide/core-faucet.md)
+- [Guides détaillés pratiques pour démarrer votre parcours sur Core](category/dev-guides)
+- [Construire une dApp full-stack sur Core](./Dev-Guide/dapp-on-core.md)
 
-## Get Help & Support
+## 🙋‍♀️ Aide & Support
 
-Connect with Core Contributors for Support
+Se connecter avec les contributeurs de Core pour obtenir du soutien
 
 - [Official Discord Server for Help & Support](https://discord.com/invite/coredaoofficial)
 - [Official Telegram Developer Channel for Technical Support](https://t.me/CoreDAOTelegram)
