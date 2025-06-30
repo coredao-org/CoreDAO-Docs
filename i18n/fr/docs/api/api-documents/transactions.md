@@ -19,7 +19,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=transaction\&action=gettxreceiptstatus\&txhash=0xf5582dff22f92beee00afc22c4d80ca7b7ad4a335019371a67c16adf383b6afa\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
