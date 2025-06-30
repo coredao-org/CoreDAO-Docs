@@ -18,7 +18,7 @@ https://openapi.coredao.org/api?
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\&action=coresupply\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Aucun paramètre de requête requis.
 
@@ -45,7 +45,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\&action=validators\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Aucun paramètre de requête requis.
 
@@ -419,7 +419,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=stats\&action=coreprice\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Aucun paramètre de requête requis.
 
