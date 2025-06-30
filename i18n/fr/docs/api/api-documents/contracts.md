@@ -21,7 +21,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=contract\&action=getabi\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
@@ -72,7 +72,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=contract\&action=getsourcecode\&address=0x191E94fa59739e188dcE837F7f6978d84727AD01\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
