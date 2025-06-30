@@ -86,20 +86,20 @@ Ce système équilibre naturellement le staking entre les validateurs. Cependant
 Ensuite, le ratio de conversion est recalculé à l'aide de la formule :
 
 ```
-    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply()
+    Montant des tokens CORE stakés sur PledgeAgent / stCORE.totalSupply()
 ```
 
 Étant donné que la **récupération des récompenses n'a lieu qu'une fois par jour**, le ratio de conversion reste le même tout au long de la journée jusqu'à la prochaine mise à jour. Les logiques mentionnées ci-dessus sont implémentées dans la méthode `afterTurnRound()`.
 
 ### Gestion de la protection des dus lors de la délégation/annulation de délégation
 
-In the `PledgeAgent` contract (the staking contract), when users delegate the amount of CORE **must** be >= 1.
+Dans le contrat `PledgeAgent` (le contrat de staking), lorsque les utilisateurs délèguent, le montant de CORE **doit** être >= 1.
 
-Whereas, upon undelegation
+Alors que lors de la fin de la délégation (undelegation),
 
-- The amount of CORE **must** be >= 1 **AND**
-- The remaining CORE left on a validator of this address **must** be >= 1
+- Le montant de CORE annulé **doit** être supérieur ou égal à 1 **ET**
+- Le montant de CORE restant sur un validateur pour cette adresse **doit** être supérieur ou égal à 1
 
 Lorsque le module `Earn` gère la délégation ou l'annulation de délégation en interne, il doit également suivre ces mêmes restrictions.
 
-The implementation of these requirements can be found in `_undelegateWithStrategy()` method.
+L'implémentation détaillée de ces logiques se trouve dans la méthode `_undelegateWithStrategy()`.
