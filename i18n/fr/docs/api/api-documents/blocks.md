@@ -19,7 +19,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\&action=getblockreward\&blockno=1807242\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
@@ -54,7 +54,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\&action=getblockcountdown\&blockno=2807242\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
@@ -88,7 +88,7 @@ https://openapi.coredao.org/api
    &apikey=YourApiKeyToken
 ```
 
-> Essayez ce point de terminaison dans votre  🔗
+> Essayez ce point de terminaison dans votre [**navigateur**](https://openapi.coredao.org/api?module=block\&action=getblocknobytime\&timestamp=1678581398\&closest=before\&apikey=b4d33c1698e4446dbf0f05f520117a76) 🔗
 
 Paramètres de requête
 
