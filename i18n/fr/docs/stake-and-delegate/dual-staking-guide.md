@@ -199,31 +199,34 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 23. Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
 - Spécifier le montant de Bitcoin que vous souhaitez déléguer
-  - The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
+  - Le montant minimum à déléguer est de 0,01 Bitcoin, si la délégation se fait via l'interface officielle du site.
   - Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
 - Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et à nouveau disponible pour le rachat ou la redélégation.
-  - Select inside the lock time box to input values, or click on the calendar icon to select the date, and click ‘OK’ to proceed.
+  - Sélectionnez à l'intérieur de la boîte de temps de verrouillage pour entrer des valeurs, ou cliquez sur l'icône du calendrier pour sélectionner la date et cliquez sur ’OK’ pour continuer.
   - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 - Spécifier la priorité du réseau pour votre transaction
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-14.png)
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-14.png
+)
 </p>
 
 24. Enfin, cliquez sur ‘Confirm‘ pour compléter la transaction.
 
-**Confirm `OP_Return` Output**
+**Confirmer la Sortie `OP_Return`**
 
-25. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an `OP_Return` output. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être **OP_Return**. Abort the transaction if it doesn't include the `OP_Return` output.
+25. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie `OP_Return`. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être **OP_Return**. Abandonnez la transaction si elle n'inclut pas la sortie `OP_Return`.
 
 <p align="center">
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-15.png)
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-15.png
+)
 </p>
 
-26. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. You could click on **My Staking** to see your staking records or **View on Bitcoin Explorer** to review this transaction.
+26. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on Btc Explorer** pour revoir cette transaction.
 
 <p align="center">
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-16.png)
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-16.png
+)
 </p>
 
 **Vérifier la Soumission de la Transaction et les Enregistrements de Staking**
@@ -234,10 +237,11 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 ![btc-staking-on-core](../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-28. The **My Staking** page displays records of all your staking activities (CORE, BTC, Bitcoin hash power). Cliquez sur les onglets respectifs CORE, BTC, et Hash pour voir les détails de votre staking et de vos délégations.
+28. La page **My Staking** affiche les enregistrements de toutes vos activités de staking (CORE, BTC, hash). Cliquez sur les onglets respectifs CORE, BTC, et Hash pour voir les détails de votre staking et de vos délégations.
 
 <p align="center">
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-16.png)
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-16.png
+)
 </p>
 
-**Congratulations,** you have successfully staked your Bitcoin and CORE on the Core blockchain and will now actively earn CORE tokens as rewards. En stakant du Bitcoin et en votant pour des validateurs, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité. De plus, grâce au Dual Staking, vous aidez à renforcer la connexion entre la blockchain Bitcoin et Core, alignant les incitations et créant de la valeur à travers les deux écosystèmes.
+**Félicitations**Vous avez staké avec succès votre Bitcoin et votre CORE sur la blockchain Core et gagnerez désormais activement des tokens CORE en tant que récompenses. En stakant du Bitcoin et en votant pour des validateurs, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité. De plus, grâce au Dual Staking, vous aidez à renforcer la connexion entre la blockchain Bitcoin et Core, alignant les incitations et créant de la valeur à travers les deux écosystèmes.
