@@ -56,18 +56,18 @@ Plus un validateur reçoit de soutien via le staking de Bitcoin et de CORE, plus
 
 ## Récompenses et économie de staking
 
-### Reward Sources
+### Sources de récompense
 
-- **Block Rewards**: New CORE tokens are issued on a fixed schedule over 81 years, with a 3.61% annual reduction.
-- **Transaction Fees**: A portion of transaction fees on Core is distributed to validators and their delegators.
+- **Récompenses de bloc**: De nouveaux tokens CORE sont émis selon un calendrier fixe sur 81 ans, avec une réduction annuelle de 3,61 %.
+- **Frais de transaction**: Une partie des frais de transaction sur Core est distribuée aux validateurs et à leurs délégateurs.
 
 ### Distribution
 
-- Bitcoin stakers and CORE stakers receive rewards when their chosen validators are active and performing.
-- Rewards are distributed based on proportional stake and validator commission structures.
+- Les stakers Bitcoin et les stakers CORE reçoivent des récompenses lorsque leurs validateurs choisis sont actifs et performants.
+- Les récompenses sont distribuées en fonction de la participation proportionnelle et des structures de commission des validateurs.
 
 ## Dual Staking
 
-Dual Staking refers to staking both Bitcoin and CORE tokens simultaneously, with higher CORE-to-Bitcoin staking ratios earning access to higher tiers of yield. **The more CORE staked relative to Bitcoin, the higher the yield potential.** Thus, attractive Bitcoin staking rates are perpetually available to the most Core-aligned participants, encouraging Bitcoin stakers to also stake CORE—aligning incentives and strengthening network security.
+Le double staking fait référence au staking simultané de Bitcoin et de tokens CORE, avec des ratios de staking CORE-Bitcoin plus élevés permettant d'accéder à des niveaux de rendement plus élevés. **Plus il y a de CORE misés par rapport au Bitcoin, plus le potentiel de rendement est élevé**. Ainsi, des taux de staking Bitcoin attractifs sont perpétuellement disponibles pour les participants les plus alignés sur Core, encourageant les stakers Bitcoin à miser également des CORE - ce qui aligne les incitations et renforce la sécurité du réseau.
 
-Dual Staking creates a **mathematical advantage** in Core's reward distribution system by recognizing dual participation as providing greater security value to the network than either mechanism in isolation, with max yields ~25-50x higher than Bitcoin staking alone.
+Le double staking crée un **avantage mathématique** dans le système de distribution de récompenses de Core en reconnaissant que la participation double apporte une plus grande valeur de sécurité au réseau que chaque mécanisme isolé, avec des rendements maximaux environ 25 à 50 fois plus élevés que le staking Bitcoin seul.
