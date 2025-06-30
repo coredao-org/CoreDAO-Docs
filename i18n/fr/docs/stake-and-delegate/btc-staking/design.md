@@ -99,7 +99,7 @@ La sortie `OP_RETURN` doit contenir toutes les informations de staking dans l'or
 - **`LENGTH`:** représente la longueur totale en octet après l'opcode `OP_RETURN`. Notez que toutes les données doivent être insérées avec la taille d'octet(s) approprié(s).
 - **`Satoshi Plus Identifier`:** (**SAT+**) 4 octets
 - **`Version`:** (**0x01**) 1 octet
-- **`Chain ID`:** (1114 for Core Testnet2 and 1116 for Core Mainnet) 2 bytes
+- **`Chain ID`:** (1114 pour le Testnet Core et 1116 pour le Mainnet Core) 2 octets
 - **`Delegator`:** L'adresse Core pour recevoir les récompenses, 20 octets
 - **`Validator`:** L'adresse du validateur Core pour le staking, 20 octets
 - **`Fee`:** Frais pour le relayeur, 1 octet, allant de [0, 255], mesuré en CORE
