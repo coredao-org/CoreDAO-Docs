@@ -52,5 +52,5 @@ Commencez à construire sur Core et contribuez au paysage BTCfi
 
 Se connecter avec les contributeurs de Core pour obtenir du soutien
 
-- [Official Discord Server for Help & Support](https://discord.com/invite/coredaoofficial)
-- [Official Telegram Developer Channel for Technical Support](https://t.me/CoreDAOTelegram)
+- [Serveur Discord officiel pour l'aide et le soutien](https://discord.com/invite/coredaoofficial)
+- [Canal Telegram officiel pour le support technique](https://t.me/CoreDAOTelegram)
