@@ -4,57 +4,57 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Staking Overview
+# Aperçu du Staking
 
 ---
 
-Staking constitutes 2/3 of Core's Satoshi Plus consensus, enabling both Bitcoin and CORE token holders to help secure the network and earn rewards. Core supports two distinct forms of staking:
+Le staking constitue les 2/3 du consensus Satoshi Plus de Core, permettant aux détenteurs de Bitcoin et de tokens CORE de sécuriser le réseau et de gagner des récompenses. Core prend en charge deux formes distinctes de staking:
 
-- **Self-Custodial Bitcoin Staking**, which uses Bitcoin's native timelocking to enable Bitcoin holders to vote for Core validators without foregoing custody
-- **CORE Token Staking**, which allows CORE token holders to delegate their stake to validators as a vote
+- **Staking Bitcoin auto-géré**, qui utilise le verrouillage temporel natif de Bitcoin pour permettre aux détenteurs de Bitcoin de voter pour les validateurs Core sans renoncer à la garde de leurs fonds
+- **Staking de tokens CORE**, qui permet aux détenteurs de tokens CORE de déléguer leur mise à des validateurs en tant que vote, soutenant ainsi la sécurité et la gouvernance du réseau
 
-## How Staking Works
+## Comment fonctionne le Staking
 
-Core supports two trustless staking methods, each contributing to validator election and reward distribution. Each method allows you to support validators and earn CORE token rewards in return.
+Core prend en charge deux méthodes de staking sans confiance, chacune contribuant à l'élection des validateurs et à la distribution des récompenses. Chaque méthode vous permet de soutenir les validateurs et de gagner des récompenses en tokens CORE en retour.
 
-### Self-Custodial Bitcoin Staking
+### Staking Non-Custodial de Bitcoin
 
-Bitcoin holders can stake natively without wrapping, bridging, or giving up custody. This is achieved using Bitcoin's CheckLockTimeVerify (CLTV) opcode.
+Les détenteurs de Bitcoin peuvent staker de manière native sans enveloppement, pontage ou abandon de la garde. Ceci est réalisé en utilisant l'opcode CheckLockTimeVerify (CLTV) de Bitcoin.
 
-**Steps:**
+**Étape:**
 
-1. **Timelock Your Bitcoin** Use CLTV to lock a specific amount of BTC for a fixed period (minimum: 24 hours). During this time, the Bitcoin is completely unspendable.
-2. **Specify Validator and Reward Address** When creating the timelock transaction, embed metadata that:
-   - Indicates which Core validator you want to support
-   - Specifies a Core address to receive your CORE rewards
-3. **Broadcast the Bitcoin Transaction** Once confirmed on Bitcoin, the timelock is scanned and registered by Core's relayer network.
-4. **Earn Rewards** If your selected validator is elected and actively participating, you'll receive a portion of their CORE rewards. These are sent to the Core address you provided.
-5. **Unlock After Expiry** After the lock period ends, your Bitcoin becomes spendable again. To continue staking, you must create a new timelock.
+1. **Verrouillez vos Bitcoins** Utilisez CLTV pour bloquer une quantité spécifique de BTC pendant une période fixe (minimum : 24 heures). Pendant cette période, le Bitcoin est complètement non dépensable.
+2. **Spécifier le validateur et l'adresse de récompense** Lors de la création de la transaction de verrouillage temporel, intégrer des métadonnées qui :
+   - Indiquez quel validateur Core vous souhaitez soutenir
+   - Spécifie une adresse Core pour recevoir vos récompenses CORE
+3. **Diffusion de la transaction Bitcoin** Une fois confirmée sur le réseau Bitcoin, le verrouillage temporel est scanné et enregistré par le réseau de relais de Core.
+4. **Gagnez des récompenses** Si votre validateur sélectionné est élu et participe activement, vous recevrez une partie de leurs récompenses CORE. Ces récompenses sont envoyées à l'adresse Core que vous avez fournie.
+5. \*\* Déverrouillage après expiration\*\* Après la fin de la période de verrouillage, vos Bitcoins redeviennent dépensables. Pour continuer le staking, vous devez créer un nouveau verrouillage temporel.
 
-### CORE Token Staking (Delegated Proof of Stake)
+### Staking de tokens CORE (Preuve de participation déléguée)
 
-CORE token holders can stake by delegating their tokens to validators as votes.
+Les détenteurs de tokens CORE peuvent miser en déléguant leurs tokens aux validateurs comme votes.
 
-**Steps:**
+**Étape:**
 
-1. **Select a Validator** Review validator performance, commission rates, and history to decide where to delegate.
-2. **Delegate CORE Tokens** Choose the amount of CORE to delegate.
-3. **Earn Rewards** If your selected validator is elected and actively participating, you'll receive a portion of their CORE rewards. These are sent to the Core address you delegated CORE from.
-4. **Modify or Redelegate** You can change your delegation at any time, including moving your stake to a different validator.
+1. **Sélectionnez un validateur** Examinez les performances, les taux de commission et l'historique des validateurs pour décider à qui déléguer vos tokens Core.
+2. **Déléguez des tokens CORE** Choisissez la quantité de tokens CORE que vous souhaitez déléguer au validateur sélectionné.
+3. **Gagnez des récompenses** Si votre validateur sélectionné est élu et participe activement, vous recevrez une partie de leurs récompenses CORE. Ces ci sont envoyées à l'adresse Core que vous avez fournie.
+4. **Modifier ou redéléguer** Vous pouvez modifier votre délégation à tout moment, notamment en changeant le montant ou en déplaçant votre participation vers un autre validateur.
 
 ## Élection des Validateurs
 
-Validator selection is based on a **hybrid score** calculated from:
+La sélection des validateurs est basée sur un **score hybride**, en considérant:
 
-- **Timelocked Bitcoin** (via CLTV)
-- **Delegated CORE tokens** (via DPoS)
-- **Delegated Bitcoin hashpower** (via Delegated Proof of Work)
+- **Le verrouillage temporel de Bitcoin** via CLTV)
+- **Tokens CORE délégués** (via DPoS)
+- **Puissance de hachage Bitcoin déléguée** (via Preuve de travail déléguée)
 
-Every election round, the validators with the highest hybrid scores are selected to validate transactions and produce blocks.
+À chaque tour d'élection, les validateurs ayant les scores hybrides les plus élevés sont sélectionnés pour valider les transactions et produire des blocs.
 
-The more support a validator receives through Bitcoin and CORE staking, the higher their probability of being elected.
+Plus un validateur reçoit de soutien via le staking de Bitcoin et de CORE, plus sa probabilité d'être élu est élevée.
 
-## Rewards and Staking Economics
+## Récompenses et économie de staking
 
 ### Reward Sources
 
