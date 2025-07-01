@@ -1,8 +1,8 @@
 ---
-sidebar_label: ""
+sidebar_label: Modelo de seguridad
 hide_table_of_contents: false
 sidebar_position: 2
-description: ""
+description: Conozca el modelo de seguridad de Core
 ---
 
 # Modelo de seguridad de Core
