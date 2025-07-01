@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Construya dApp en Core
 hide_table_of_contents: false
 sidebar_position: 2
 description: Cree una dApp de pila completa en Core
