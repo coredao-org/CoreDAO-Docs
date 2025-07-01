@@ -44,7 +44,7 @@ El comando `graph depoy` debería devolver la URL de consulta HTTP para su subgr
 
 Ahora que entendemos el proceso, veamos un ejemplo completo configurando un subgrafo Uniswap V2 en Core.
 
-Primero, clone el [repositorio de subgrafos] de Uniswap V2 (https://github.com/Uniswap/v2-subgraph), navegue hasta la carpeta del proyecto y luego ejecute los siguientes comandos desde ese directorio:
+Primero, clone el [repositorio de subgrafos](https://github.com/Uniswap/v2-subgraph) de Uniswap V2, navegue hasta la carpeta del proyecto y luego ejecute los siguientes comandos desde ese directorio:
 
 ```
 # Instalar dependencias con npm (o hilo)
