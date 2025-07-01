@@ -1,8 +1,8 @@
 ---
-sidebar_label: ""
+sidebar_label: Self-Custodial Bitcoin Staking
 hide_table_of_contents: false
-sidebar_position: 0
-description: ""
+sidebar_position: 2
+description: Aprovechando el Staking de Bitcoin en Satoshi Plus
 ---
 
 # Staking de Bitcoin Autocustodiado (Timelocking)
