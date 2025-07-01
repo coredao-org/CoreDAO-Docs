@@ -1,7 +1,7 @@
 ---
-sidebar_label: ""
+sidebar_label: Elección del validador
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 ---
 
 # Proceso de elección del validador en la red central
