@@ -1,8 +1,8 @@
 ---
-sidebar_label: ""
+sidebar_label: Arquitectura
 hide_table_of_contents: false
-sidebar_position: 0
-description: ""
+sidebar_position: 2
+description: Un vistazo rápido a la arquitectura blockchain subyacente de Core
 ---
 
 # Arquitectura de la Blockchain de Core
