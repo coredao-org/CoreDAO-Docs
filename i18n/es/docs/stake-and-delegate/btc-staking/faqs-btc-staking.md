@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Preguntas Frecuentes sobre Self-Custodial Bitcoin Staking
 hide_table_of_contents: false
 sidebar_position: 2
 ---
