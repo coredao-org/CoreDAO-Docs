@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "The Core Blockchain: aplicaciones descentralizadas protegidas por Bitcoin"
 sidebar_position: 1
 ---
 
