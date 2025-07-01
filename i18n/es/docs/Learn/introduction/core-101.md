@@ -1,7 +1,7 @@
 ---
-sidebar_label: ""
+sidebar_label: Core 101
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 ---
 
 # Core 101: La Cadena de Todo de Bitcoin
