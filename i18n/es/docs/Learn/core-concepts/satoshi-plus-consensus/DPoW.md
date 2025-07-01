@@ -1,8 +1,8 @@
 ---
-sidebar_label: ""
+sidebar_label: Delegated Proof of Work
 hide_table_of_contents: false
 sidebar_position: 2
-description: ""
+description: Aprovechando DPoW en Satoshi Plus
 ---
 
 # Prueba de Trabajo Delegada (DPoW)
