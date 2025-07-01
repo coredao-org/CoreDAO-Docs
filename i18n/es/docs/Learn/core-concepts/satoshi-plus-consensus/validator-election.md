@@ -1,8 +1,8 @@
 ---
-sidebar_label: ""
+sidebar_label: Elección del validador
 hide_table_of_contents: false
 sidebar_position: 0
-description: ""
+description: Proceso de elección de validadores en Satoshi Plus
 ---
 
 # Elección de Validadores en Core
