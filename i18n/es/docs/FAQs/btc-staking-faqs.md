@@ -1,5 +1,5 @@
 ---
-sidebar_label: Self-Custodial BTC Staking FAQs
+sidebar_label: Preguntas Frecuentes sobre Staking de Bitcoin con Auto-Custodia
 hide_table_of_contents: false
 sidebar_position: 2
 ---
