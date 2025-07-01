@@ -1,7 +1,7 @@
 ---
-sidebar_label: Resumen
+sidebar_label: Descripción general
 hide_table_of_contents: false
-sidebar_position: 22
+sidebar_position: 2
 ---
 
 # Visión General de coreBTC
