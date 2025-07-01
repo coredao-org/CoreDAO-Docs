@@ -1,7 +1,7 @@
 ---
-sidebar_label: ""
+sidebar_label: Guía de Dual Staking
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 ---
 
 # Dual Staking en Core
