@@ -1,9 +1,9 @@
 ---
-sidebar_label: ""
+sidebar_label: Descripción general
 hide_table_of_contents: false
-sidebar_position: 0
-description: ""
-slug: ""
+sidebar_position: 2
+description: "Obtenga una descripción general de Core: su propósito, misión y visión futura"
+slug: /learn/core-concepts/overview
 ---
 
 # Descripción general de la cadena de bloques Core
