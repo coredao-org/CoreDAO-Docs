@@ -11,7 +11,7 @@ sidebar_position: 2
 ---
 
 :::caution
-Antes de correr un nodo Validador en Core, recomendamos encarecidamente leer él [whitepaper técnico] (https://whitepaper.coredao.org/).
+Antes de correr un nodo Validador en Core, recomendamos encarecidamente leer él [whitepaper técnico](https://whitepaper.coredao.org/).
 :::
 
 ## Configurar un nodo completo en modo validador
