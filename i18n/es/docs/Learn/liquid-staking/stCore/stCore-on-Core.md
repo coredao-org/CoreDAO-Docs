@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Cómo hacer Liquid Stake (stCORE)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
