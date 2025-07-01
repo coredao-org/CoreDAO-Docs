@@ -1,7 +1,7 @@
 ---
-sidebar_label: ""
+sidebar_label: Cómo funciona
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 ---
 
 # Cómo Funciona el Staking Autocustodiado de Bitcoin {#how-self-custodial-bitcoin-staking-works}
