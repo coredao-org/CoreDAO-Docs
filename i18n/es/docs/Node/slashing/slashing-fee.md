@@ -1,5 +1,5 @@
 ---
-sidebar_label: Tarifa de reducción
+sidebar_label: Tarifa de Slashing
 hide_table_of_contents: false
 sidebar_position: 2
 ---
