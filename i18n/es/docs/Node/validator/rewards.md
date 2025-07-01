@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Recompensas del Validador
 hide_table_of_contents: false
 sidebar_position: 2
 ---
