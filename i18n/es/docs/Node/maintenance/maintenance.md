@@ -67,5 +67,5 @@ Cuando un nodo se bloquea o es finalizado de manera forzada, se sincroniza desde
 
 ## Actualizar Geth
 
-Lea [esta guía] (network-upgrade.md)
+Lea [esta guía](network-upgrade.md)
 
