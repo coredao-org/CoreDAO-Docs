@@ -1,5 +1,5 @@
 ---
-sidebar_label: preguntas frecuentes sobre coreBTC
+sidebar_label: Preguntas frecuentes sobre coreBTC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
