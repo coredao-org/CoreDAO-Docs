@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Cómo hacer Dual Stake
 hide_table_of_contents: false
 sidebar_position: 0
 ---
