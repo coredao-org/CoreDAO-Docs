@@ -1,5 +1,5 @@
 ---
-sidebar_label: ""
+sidebar_label: Tipos de nodos
 hide_table_of_contents: false
 sidebar_position: 2
 ---
