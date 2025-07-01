@@ -1,5 +1,5 @@
 ---
-sidebar_label: Preguntas frecuentes sobre apuestas líquidas (stCORE)
+sidebar_label: Preguntas frecuentes sobre Liquid Staking (stCORE)
 hide_table_of_contents: false
 sidebar_position: 2
 ---
