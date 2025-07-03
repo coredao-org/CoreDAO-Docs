@@ -278,7 +278,15 @@ const sidebars: SidebarsConfig = {
           label: "Switchboard VRF",
           href: "https://docs.switchboard.xyz/product-documentation/randomness/tutorials/evm",
         },
-        "Dev-Guide/core-subgraph",
+        {
+          type: "category",
+          collapsed: true,
+          label: "Subgraphs on Core",
+          items: [
+            "Dev-Guide/core-subgraph",
+            "Dev-Guide/core-subgraph-tutorial",
+          ],
+        },
         {
           type: "category",
           collapsed: true,
