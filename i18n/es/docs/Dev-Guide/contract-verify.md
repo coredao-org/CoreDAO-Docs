@@ -25,7 +25,7 @@ La verificación web es el método más comúnmente usado para la verificación 
 - [Para Core Testnet2](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
-3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
+3. After locating the contract, select the **Contract** tab and click **Verify and Publish**.
 
 <p align="center"></p>
 
