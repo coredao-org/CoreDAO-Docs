@@ -18,8 +18,10 @@ defaultValue="testnet2"
 values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-_Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. L'ancienne version du testnet, avec l'Id de chaîne 1115, est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités
+]}>
+
+<TabItem value="testnet2">
+  _Note: This is the latest and officially supported testnet for the Core blockchain. L'ancienne version du testnet, avec l'Id de chaîne 1115, est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités
 
 - **[Explorateur de blocs](https://scan.test2.btcs.network/):** recherchez et consultez les transactions, comptes, blocs, et bien plus.
 
@@ -31,9 +33,9 @@ _Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la b
 
 - **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** Gestion sécurisée multi-signatures des actifs numériques.
 
-  </TabItem>
+</TabItem>
 
-  <TabItem value="mainnet">
+<TabItem value="mainnet">
 
 - **[Block Explorer](https://scan.coredao.org/):** Recherchez et consultez les transactions, comptes, blocs, et plus encore.
 
