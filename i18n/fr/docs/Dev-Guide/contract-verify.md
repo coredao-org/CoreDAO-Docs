@@ -25,7 +25,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 - [Pour le Core Testnet2](https://scan.test.btcs.network)
 
 2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
-3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**_._
+3. After locating the contract, select the **Contract** tab and click **Verify and Publish**.
 
 <p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)</p>
 
