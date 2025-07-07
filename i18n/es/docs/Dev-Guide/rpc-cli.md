@@ -88,7 +88,7 @@ Si prefieres trabajar en un IDE en lugar de la línea de comandos, puedes replic
 ```
 
 :::note
-Puedes reemplazar la URL (`https://rpc.ankr.com/core`) con cualquier URL RPC válida que encuentres en la documentación de Core, y no olvides envolver la URL entre comillas simples.
+You can replace the URL https://rpc.ankr.com/core with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
 :::
 
 
