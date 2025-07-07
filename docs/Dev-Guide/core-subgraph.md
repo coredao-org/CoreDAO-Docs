@@ -1,10 +1,11 @@
 ---
-sidebar_label: Core Subgraph
+sidebar_label: Overview
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
 # Core Subgraph using GraphQL
+
 ---
 
 Developers can use a self-hosted subgraph to extract data from the Core blockchain, processing and storing it for consumption via GraphQL. Let's take a look at how we can create and deploy this powerful tool.
@@ -55,12 +56,12 @@ npm run codegen
 
 Now we'll make a few required changes to the _subgraph.yaml_ and _helpers.ts_ files:
 
-* _subgraph.yaml_:
-  * Change network name to `core` on lines 9 and 37.
-  * Update the factory address on line 11.
-  * Update the `startBlock` on line 13 to a reasonable block height (current block height available [here](https://scan.coredao.org/)).
-* _src/mappings/helpers.ts_:
-  * Update the factory address on line 11.
+- _subgraph.yaml_:
+  - Change network name to `core` on lines 9 and 37.
+  - Update the factory address on line 11.
+  - Update the `startBlock` on line 13 to a reasonable block height (current block height available [here](https://scan.coredao.org/)).
+- _src/mappings/helpers.ts_:
+  - Update the factory address on line 11.
 
 Finally, we'll run the create and deploy commands. In order to avoid compatibility issues, let's use the graph-cli installed in the project (instead of the global version) by prefixing the `graph` command with `./node_modules/.bin/`.
 
@@ -81,5 +82,6 @@ Well done, your subgraph is deployed! Now you can integrate the HTTP query URL p
 
 To prevent your subgraph from being overwritten by others, please contact us on [discord](https://discord.com/invite/coredaoofficial) for an authorization key.
 
-If you are testing against the Core Testnet2 Graph, here are the access tokens for general testing purpose: 
-* **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0
+If you are testing against the Core Testnet2 Graph, here are the access tokens for general testing purpose:
+
+- **General key for Core Testnet2:** b020b95e511443699e72a10c697f84c0
