@@ -14,13 +14,11 @@ Core fonctionne sur le consensus Satoshi Plus, intégrant trois sources de dél�
 - Preuve d'enjeu déléguée (DPoS) : Les détenteurs de jetons CORE délèguent leurs jetons aux validateurs.
 - Staking non dépositaire de BTC : Les détenteurs de BTC mettent en jeu directement sur le réseau Bitcoin et délèguent leur jetons bitcoin aux validateurs Core.
 
-Double staking, une amélioration du staking non-custodial de BTC de Core, permet aux participants de maximiser leurs récompenses en stakant simultanément du BTC et des tokens CORE. Cette stratégie renforce le réseau Core tout en débloquant des rendements plus élevés pour le staking de Bitcoin en fonction de seuils de staking CORE prédéfinis.
+Double staking, une amélioration du staking non-custodial de BTC de Core, permet aux participants de maximiser leurs récompenses en stakant simultanément du BTC et des tokens CORE. Cette stratégie renforce le réseau Core tout en débloquant des rendements plus élevés pour le staking de Bitcoin en fonction de seuils de staking CORE prédéfinis
 
 En atteignant des ratios de staking CORE/BTC spécifiques, les utilisateurs obtiennent des récompenses de staking Bitcoin boostées, payées en CORE. Bien que le Double Staking améliore les rendements du staking de BTC, il n'affecte pas directement les récompenses du staking CORE.
 
-<p align="center">
-<img width="1024" alt="Dual Staking Tiers (8)" src="https://github.com/user-attachments/assets/6ce41ca4-fc7e-476a-814c-4f56665b3c48" />
-</p>
+![image](../../../../../static/img/dual-staking/dual-staking-tiers.png)
 
 ### Seuils de rendement boosté
 
@@ -59,7 +57,7 @@ Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs
 
 #### 3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
 
-- Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau  **P<sub>BASE</sub>**
+- Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau **P<sub>BASE</sub>**
 - Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Level1</sub>**
 - Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Level2</sub>**
 - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
@@ -87,17 +85,17 @@ Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
 
 Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 
-- **P<sub>BASE</sub>** si la quantité de CORE staké est inférieure à 36,250
-- **P<sub>Niveau1</sub>** si la quantité de CORE staké est supérieure ou égale à 36,250 mais inférieure à 108,875
-- **P<sub>Niveau2</sub>** si la quantité de CORE staké est supérieure ou égale à 108,875 mais inférieure à 290,000
-- **P<sub>Niveau3</sub> (P<sub>MAX</sub>)** si la quantité de CORE staké est supérieure ou égale à 290,000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 36,250
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 36,250 but below 108,875
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 108,875 but below 290,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 290,000
 
 :::note
-Le multiplicateur sur chaque niveau de rendement augmenté est dynamique et sujet à modification en fonction des conditions d'offre et de demande du marché
+The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
 :::
 
 :::info
-Pour que votre nouveau palier de dual staking prenne effet, vous devrez peut-être effectuer deux étapes. Cela concerne les utilisateurs qui ont déjà staké du BTC lors de précédents tours à 00:00 UTC et qui décident de staker du CORE supplémentaire pour passer à un palier supérieur. Tout d'abord, après avoir staké du CORE, attendez le prochain 00:00 UTC. Ensuite, réclamez toutes vos récompenses à n’importe quel moment après 00:00 UTC afin de réinitialiser le système de calcul du palier. Votre nouveau palier sera activé dès que vous aurez finalisé la réclamation de vos récompenses. Les deux étapes sont essentielles pour garantir la prise en compte de votre nouveau palier.
+To activate your new dual-staking tier, follow these two steps. Cela concerne les utilisateurs qui ont déjà staké du BTC lors de précédents tours à 00:00 UTC et qui décident de staker du CORE supplémentaire pour passer à un palier supérieur. Tout d'abord, après avoir staké du CORE, attendez le prochain 00:00 UTC. Ensuite, réclamez toutes vos récompenses à n’importe quel moment après 00:00 UTC afin de réinitialiser le système de calcul du palier. Votre nouveau palier sera activé dès que vous aurez finalisé la réclamation de vos récompenses. Les deux étapes sont essentielles pour garantir la prise en compte de votre nouveau palier.
 :::
 
 ### Comment être éligible aux récompenses de Double Staking

@@ -1,17 +1,17 @@
 ---
-sidebar_label: ERC-20 Tokens
+sidebar_label: Tokens ERC-20
 hide_table_of_contents: false
 sidebar_position: 2
 description: ERC-20 en Core
 ---
 
-# ERC20 Tokens
+# Tokens ERC-20
 
 ---
 
 ## ¿Qué es ERC-20?
 
-ERC-20: es un estándar para tokens fungibles en la blockchain de Ethereum. A diferencia de los tokens ERC-721, que no son fungibles y son únicos, los tokens ERC-20 son idénticos entre sí y pueden intercambiarse en cantidades iguales. Son el tipo de token más común para proyectos que involucran criptomonedas, activos digitales y aplicaciones descentralizadas (dApps).
+ERC-20: es un estándar para tokens fungibles en la blockchain de Ethereum. A diferencia de los tokens ERC-721, que son no fungibles y únicos, los tokens ERC-20 son fungibles e intercambiables, lo que permite que se comercialicen o intercambien en cantidades iguales. Son el tipo de token más común para proyectos que involucran criptomonedas, activos digitales y aplicaciones descentralizadas (dApps).
 
 ## Prerrequisitos
 
@@ -25,7 +25,7 @@ Antes de empezar, necesitarás:
 
 ### ¿Por qué usar el asistente de OpenZeppelin?
 
-OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditadas. El Asistente de OpenZeppelin es una herramienta excelente que simplifica el proceso de creación de tokens ERC-20, garantizando que su contrato sigue las mejores prácticas.
+OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditadas. El OpenZeppelin Wizard es una herramienta excelente que simplifica el proceso de creación de tokens ERC-20, asegurando que tu contrato cumpla con las mejores prácticas.
 
 1. **Ve al asistente de OpenZeppelin**: Abre él [asistente de OpenZeppelin](https://wizard.openzeppelin.com/) en tu buscador.
 2. **Selecciona ERC-20**: En la lista de modelos de contrato disponibles, seleccione **ERC-20**.
@@ -36,10 +36,10 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
    - **Initial Supply**: Fija una oferta inicial para tu token (ej: `1000000` tokens). Este es el número de tokens que se crearán tras el despliegue.
 
 <p align="center">
-![Openzepplin_Wizard-ERC721](../../../../../static/img/dev_tutorials/ERC20_Wizard.png)
+![Openzepplin_Wizard-ERC720](../../../../../static/img/dev_tutorials/ERC20_Wizard.png)
 </p>
 
-Opcionalmente, puedes incluir funciones adicionales como **mintear** y **pausar** si es necesario para su caso de uso.
+Opcionalmente, puedes incluir funciones adicionales, como **minting** y **pausing**, si son necesarias para tu caso de uso.
 
 4. **Copia el código**: Una vez configurado el contrato, haga clic en el botón **Copy** para obtener el código de Solidity. Puedes copiarlo en el portapapeles o abrirlo directamente en Remix IDE.
 
@@ -56,6 +56,7 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 <p align="center">
 ![Remix_ERC20_Contract](../../../../../static/img/dev_tutorials/Remix_ERC20.png)
 </p>
+
 3. **Instala los contratos de OpenZeppelin**:
    - Si usas el **compilador de Solidity** integrado en Remix, este obtendrá automáticamente los contratos de OpenZeppelin por ti.
    - Si estás usando Hardhat, necesitarás instalar manualmente los contratos de OpenZeppelin ejecutando `npm install @openzeppelin/contracts`.
@@ -84,7 +85,7 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 ![ERC20_ConnectMetamask](../../../../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
 </p>
 
-Asegúrate de que tu MetaMask esté conectado a **Core Testnet**
+Asegúrate de que tu MetaMask esté conectado a **Core Testnet2**.
 
 2. **Despliega tu Contrato**:
    - En la sección de **Deploy**, selecciona el **contrato ERC-20** (ej: `MyToken`).
@@ -113,12 +114,12 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 1. **Acuña tokens**:
 
    - Llama a la función `mint` para crear tokens nuevos. Introduce la dirección del destinatario y el número de tokens a acuñar.
-   - Confirma la transacción en MetaMask.
+   - Confirma la transacción en Metamask.
 
 2. **Transfiere tokens**:
    - También se puede usar la función **transfer** para enviar tokens de una dirección a otra.
    - Introduce la dirección del destinatario y el número de tokens que quieres enviar.
-   - Confirma la transacción en MetaMask.
+   - Confirma la transacción en Metamask.
 
 ## Paso 6: Gestiona tus tokens
 
@@ -128,7 +129,7 @@ Puedes añadir funciones adicionales a tu contrato, como:
 
 - **Roles**: Los roles permiten asignar diferentes permisos a ciertas direcciones, como acuñar o quemar tokens, garantizando acciones seguras y controladas dentro del contrato.
 
-- **Volverlo actualizable**: Permite modificar la lógica del contrato después de su despliegue sin perder datos, garantizando flexibilidad para mejoras futuras
+- **Upgradability**: Permite actualizar la lógica del contrato después del despliegue sin perder datos, lo que garantiza flexibilidad para mejoras futuras
 
 Puede encontrar más información sobre la implementación de OpenZeppelin ERC-20 [aquí](https://docs.openzeppelin.com/contracts/4.x/erc20).
 

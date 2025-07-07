@@ -6,9 +6,11 @@ sidebar_position: 2
 
 # Mise à niveau de Geth
 
+---
+
 Mettre à jour `geth` est un processus simple. Il vous suffit de télécharger et d'installer la nouvelle version de `geth`, d'arrêter votre nœud et de le redémarrer avec le nouveau logiciel. Geth utilisera automatiquement les données de votre ancien nœud et synchronisera les derniers blocs minés depuis que vous avez arrêté l'ancien logiciel.
 
-### Étape 1 : Compiler la nouvelle version ou télécharger les nouveaux binaires précompilés depuis la page des versions
+### Étape 1: Compiler la nouvelle version ou télécharger les nouveaux binaires précompilés depuis la page des versions
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
@@ -34,10 +36,8 @@ make geth
 ### Étape 2 : Arrêter Geth
 
 ```
-
 $ pid=`ps -ef | grep geth | grep -v grep | awk '{print $2}'`
 $ kill  $pid
-
 ```
 
 ### Étape 3 : Redémarrer

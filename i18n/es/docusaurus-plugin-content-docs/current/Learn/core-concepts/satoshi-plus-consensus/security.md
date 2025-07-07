@@ -58,7 +58,7 @@ Core emplea una arquitectura de seguridad sólida para mitigar amenazas potencia
 ### Vulnerabilidades de los contratos inteligentes
 
 - **Descripción:** Las vulnerabilidades en el código de contrato inteligente pueden aprovecharse para realizar robos o manipular servicios.
-- **Mitigation Achieved By:**
+- **Mitigación lograda por:**
   - **Auditorías de código y revisiones de seguridad:** Las auditorías periódicas y exhaustivas del código de contrato inteligente realizadas por empresas de seguridad independientes ayudan a identificar y rectificar posibles vulnerabilidades.
   - **Reporte de errores:** Alentando a la comunidad y a los investigadores de seguridad a encontrar e informar errores, de modo que muchas vulnerabilidades potenciales se detecten tempranamente.
 

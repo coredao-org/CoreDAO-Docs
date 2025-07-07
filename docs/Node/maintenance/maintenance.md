@@ -38,15 +38,9 @@ According to conducted tests, the performance of full nodes degrades when the st
 3. Check `prune.log`, wait for the prune operation to complete, and start geth.
 
 
-
-
 The maintainers should always have a few backup nodes in case one of the nodes is getting pruned. The hardware is also essential, **make sure the SSD meets: 4TB of free disk space, solid-state drive(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms**.
 
-
-
-
 ### Prune Ancient Data in Real Time
-
 
 Ancient data is block data that is already considered immutable. This is determined by a threshold which is currently set at **90000**. This means that blocks older than **90000** are considered ancient data. We recommend the `--prunceancient` flag to users who don't care about the ancient data. This is also recommended for users who want to save disk space, as it will only retain data for the latest **90000** blocks.  Note that once this flag is enabled, the ancient data will not be recoverable, and you cannot restart your node without this flag in the start-up command.
 

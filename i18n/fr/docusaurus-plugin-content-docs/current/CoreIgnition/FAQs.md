@@ -14,7 +14,7 @@ Core Ignition est un programme d'incitation de six mois développé par la Fonda
 
 ### 2. Qu'est-ce que la blockchain Core ?
 
-Core sert de couche de Preuve d'Enjeu pour Bitcoin, pionnière du staking Non-Custodial de Bitcoin et sécurisent un écosystème BTCfi entièrement compatible avec l'EVM. Depuis avril 2024, plus de 5.900 BTC ont été jalonnes avec Core, augmentant l'utilité et la sécurité de Bitcoin. Core est la blockchain EVM la plus alignée sur Bitcoin, avec environ 76 % de la puissance de hachage du minage de Bitcoin contribuant à la sécurité du réseau.
+Core sert de couche Proof-of-Stake pour Bitcoin, en lançant le jalonnement Bitcoin en auto-garde et en sécurisant un écosystème BTCfi entièrement compatible EVM. Depuis avril 2024, plus de 5.900 BTC ont été jalonnes avec Core, augmentant l'utilité et la sécurité de Bitcoin. Core est la blockchain EVM la plus alignée sur Bitcoin, avec environ 76 % de la puissance de hachage du minage de Bitcoin contribuant à la sécurité du réseau.
 
 ### 3. Je suis nouveau dans l'écosystème Core. Comment puis-je commencer ?
 
@@ -35,9 +35,9 @@ Rappelez-vous, ce dépôt automatique de CORE est un avantage unique conçu pour
 
 Le programme d'incitation Core Ignition récompense les utilisateurs fidèles pour favoriser la croissance de l'écosystème BTCfi de Core. En revanche, le programme d'incitation des développeurs Core Ignition Builder récompense les développeurs pour la création d'applications ou de projets décentralisés (dApps) sur la blockchain Core.
 
-### 5. Je n'ai pas de jeton Bitcoin (BTC). Puis-je quand même participer à l'écosystème BTCfi de Core ?
+### 5. Je n'ai pas de BTC. Puis-je quand même participer à l'écosystème BTCfi de Core ?
 
-Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCfi de Core même sans détenir de Bitcoin. En tant que chaîne compatible avec l'EVM, Core offre une gamme d'opportunités DeFi similaires à d'autres chaînes EVM, y compris les DEX, les protocoles de prêt, les contrats à terme perpétuels, le restaking et les plateformes NFT. La mission de Core est de libérer 1,25 billion de dollars de liquidité Bitcoin bloquée, créant des opportunités pour tous les utilisateurs du web3.
+Absolument ! Les utilisateurs peuvent toujours participer à l'écosystème BTCfi de Core même sans détenir de Bitcoin. En tant que chaîne compatible avec l'EVM, Core offre une gamme d'opportunités DeFi similaires à d'autres chaînes EVM, y compris les DEX, les protocoles de prêt, les contrats à terme perpétuels, le restaking et les plateformes NFT. La mission de Core est de libérer 1,25 milliards de dollars de liquidité Bitcoin bloquée, créant des opportunités pour tous les utilisateurs du web3.
 
 ### 6. Où trouver plus d'informations sur Core Ignition ?
 
@@ -64,5 +64,3 @@ L'emballage (wrapping) signifie convertir un jeton en sa version enveloppée, pa
 > - CORE → wCORE est un exemple d'emballage (wrapping), pas d'échange (swapping). C'est simplement convertir CORE en sa version enveloppée (wCORE) pour l'utiliser dans les applications décentralisées (dApps).
 > - CORE → USDT est considéré comme un échange (swap), car cela implique d'échanger CORE contre un actif différent.
 > - wCORE → USDT est également considéré comme un échange (swap), car cela implique d'échanger wCORE contre un jeton différent.
-
-

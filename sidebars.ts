@@ -302,7 +302,7 @@ const sidebars: SidebarsConfig = {
         "FAQs/core-node-faqs",
         "FAQs/validator-faqs",
         "FAQs/delegator-faqs",
-        "FAQs/coreBTC-faqs",
+        //"FAQs/coreBTC-faqs",
         "FAQs/btc-staking-faqs",
         "FAQs/dual-staking-faqs",
         "FAQs/LST-stCore-faqs",

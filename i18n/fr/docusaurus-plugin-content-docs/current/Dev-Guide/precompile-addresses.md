@@ -10,7 +10,7 @@ sidebar_position: 2
 
 Voici une liste d'adresses précompilées des contrats intelligents de l'écosystème Core.
 
-| \*\* Nom du contrat intelligent \*\* | **Adresse**                                                                                                               |
+| **Nom du contrat intelligent** | **Adresse**                                                                                                               |
 | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
 | ValidatorSet                         | [0x0000000000000000000000000000000000001000](https://scan.coredao.org/address/0x0000000000000000000000000000000000001000) |
 | SlashIndicator                       | [0x0000000000000000000000000000000000001000](https://scan.coredao.org/address/0x0000000000000000000000000000000000001001) |

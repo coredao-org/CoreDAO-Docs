@@ -24,14 +24,13 @@ N'importe qui peut soumettre une demande de slash avec la preuve d'une activité
 ### Validation des preuves
 
 - Deux en-têtes de bloc ont la même hauteur et le même hash de bloc parent
-- Les deux en-têtes de bloc sont scellés par le même validateur
+- Le même validateur scelle deux en-têtes de bloc
 - Les signatures des deux blocs ne doivent pas être identiques
 - Le validateur doit faire partie de l'ensemble des validateurs du round en cours.
 
 Si la preuve est valide :
 
-1. **10,000 CORE**, soit la totalité des CORE auto-jugés du validateur, sera réduite.
+1. 10 000 CORE, soit la totalité des CORE auto-jugés du validateur, sera réduite.
 2. Le validateur puni sera emprisonné et exclu du réseau pour toujours
 3. **500 tokens CORE** seront attribués au soumetteur de la demande comme récompense
 4. Le reste des tokens CORE sera transféré dans le pool de récompenses du système
-

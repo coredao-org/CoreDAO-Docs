@@ -19,7 +19,8 @@ import TabItem from '@theme/TabItem';
     {label: 'Testnet', value: 'testnet2'},
     {label: 'Mainnet', value: 'mainnet'},
   ]}>
-  <TabItem value="testnet2">
+
+<TabItem value="testnet2">
   _Note: This is the latest and officially supported testnet for the Core blockchain. The previous testnet (chain ID 1115) is now deprecated and no longer maintained. Developers are strongly encouraged to transition to the new testnet (chain ID 1114) to ensure continued support and access to the latest features._
 
   * **[Block Explorer](https://scan.test2.btcs.network/):** search and review transactions, accounts, blocks, and more.
@@ -32,10 +33,9 @@ import TabItem from '@theme/TabItem';
 
   * **[Gnosis Safe](https://safe.test2.btcs.network/welcome):** secure multi-sig management of digital assets.
 
+</TabItem>
 
-  </TabItem>
-
-  <TabItem value="mainnet">
+<TabItem value="mainnet">
     
   * **[Block Explorer](https://scan.coredao.org/):** search and review transactions, accounts, blocks, and more.
 
@@ -53,6 +53,7 @@ import TabItem from '@theme/TabItem';
 
   * **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** official wrapped CORE token smart contract.
   </TabItem>
+  
 </Tabs>
 
 

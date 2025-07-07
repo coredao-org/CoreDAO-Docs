@@ -5,40 +5,93 @@ sidebar_position: 2
 description: Tirer parti du staking Bitcoin dans Satoshi Plus
 ---
 
-# Staking Bitcoin auto-custodial (verrouillage temporel) dans Satoshi Plus.
+# Staking de Bitcoin en auto-garde(verrouillage temporel)
 
 ---
 
 ## Aperçu
 
-Le staking Bitcoin (ou verrouillage temporel Bitcoin) permet aux détenteurs de Bitcoin de participer au consensus de Core en verrouillant temporairement leur Bitcoin à l'aide de sa fonction native CheckLockTimeVerify (CLTV), sans transférer la garde ou exposer leurs actifs au risque de contrat intelligent.
+Le staking Bitcoin auto-géré permet aux détenteurs de Bitcoin de gagner des récompenses en tokens CORE en participant au consensus de Core **sans jamais renoncer à la garde de leurs Bitcoin**. En exploitant l'opcode CheckLockTimeVerify (CLTV) natif de Bitcoin, cette approche transforme le Bitcoin inactif en un actif productif tout en préservant ses principes fondamentaux de sécurité et de souveraineté.
 
-Le staking Bitcoin transforme le Bitcoin d'un actif statique en un actif productif qui génère des rendements tout en maintenant ses propriétés de sécurité. En incluant des métadonnées de sélection de validateurs dans les transactions de verrouillage temporel, les détenteurs de Bitcoin peuvent participer à l'élection des validateurs Core afin de gagner des récompenses en jetons CORE.
+Il n'y a pas d'enveloppement, de pontage ou d'exposition au risque de contrat intelligent.
 
-## Fonctionnement du Staking Bitcoin sur Core
+## Principes fondamentaux
 
-Le protocole natif de Bitcoin inclut une fonction CLTV qui permet aux utilisateurs de rendre les Bitcoins non dépensables pendant une période spécifiée. Core tire parti de ce mécanisme pour permettre aux détenteurs de Bitcoin de participer au consensus tout en gardant le contrôle total de leurs actifs.
+- **100% Conservation auto-gérée**: Le Bitcoin ne quitte jamais votre portefeuille
+- **Zero Principal Risk**: Les fonds restent entièrement sécurisés par les propres règles de Bitcoin
+- **Rendement sans confiance**: Aucun intermédiaire tiers
+- **Sécurité native Bitcoin**: Les Bitcoins mis en staking sont sécurisés entièrement par le mécanisme de consensus de Bitcoin
 
-1. **Création de verrous temporels :** Les détenteurs de Bitcoin utilisent la fonction CLTV pour verrouiller temporairement leurs Bitcoin sur la blockchain Bitcoin pendant une période choisie (minimum 24 heures), rendant ces pièces temporairement indépensables.
+## Son Fonctionnement
 
-2. **Inclusion de métadonnées :** Lors de la création du verrou temporel, les détenteurs incluent des métadonnées spécifiant leur validateur Core choisi et une adresse Core pour recevoir les récompenses CORE.
+### 1. Le verrouillage temporel de Bitcoin via CLTV
 
-3. **Soutien des validateurs :** Le montant de Bitcoin verrouillé temporairement pour soutenir un validateur influence leur position dans l'élection des validateurs Core, ce qui impacte leurs chances d'être sélectionnés pour produire des blocs.
+L'opcode CheckLockTimeVerify (CLTV) de Bitcoin permet aux détenteurs de verrouiller des Bitcoins pour une durée choisie :
 
-4. **Surveillance des relais :** Le réseau de relais Core surveille la blockchain Bitcoin pour les transactions de verrouillage temporel qui incluent des métadonnées de consensus valides.
+- **Période de verrouillage minimale**: 24 heures
+- **Durée flexible**: Vous choisissez la durée de verrouillage
+- **Appliqué par le protocole**: Tous les nodes Bitcoin respectent le verrouillage automatiquement
 
-5. **Distribution des récompenses :** Les validateurs élus sécurisent la blockchain Core en produisant des blocs et en validant les transactions. En fonction de la fiabilité du validateur et du montant de Bitcoin verrouillé temporairement délégué à leur soutien, le protocole Core distribue des récompenses en jetons CORE aux adresses Core spécifiées des stakers Bitcoin.
+Pendant cette période, les Bitcoins sont non dépensables - même par le propriétaire - jusqu'à l'expiration du verrou.
 
-6. **Expiration du verrou temporel :** Lorsque la période de verrouillage temporaire se termine, le Bitcoin redevient dépensable et la participation au consensus Core cesse. Les récompenses CORE gagnées restent dans l'adresse Core du détenteur, mais aucune récompense supplémentaire ne sera gagnée à moins qu'un nouveau verrou temporel ne soit créé.
+### 2. Sélection de validateurs via des métadonnées
 
-## Importance du staking de Bitcoin dans Satoshi Plus.
+Lors de la création de la transaction de verrouillage temporel, vous incluez des métadonnées dans le script de remboursement spécifiant :
 
-- **Activation de Bitcoin :** Transforme Bitcoin d'un actif statique en un actif productif qui génère des rendements sans compromettre la sécurité ni nécessiter de conversion.
+- **Quel validateur Core** vous soutenez
+- **Quelle adresse EVM** doit recevoir vos récompenses en jetons CORE
 
-- **Contribution à la sécurité :** Tire parti de l'immense valeur de Bitcoin pour renforcer le modèle de sécurité de Core sans exiger que Bitcoin quitte sa blockchain native.
+Votre pouvoir de vote sur Core est **proportionnel au montant de Bitcoin** que vous verrouillez temporairement pour soutenir un validateur.
 
-- **Préservation de la garde :** Permet aux détenteurs de Bitcoin de participer au consensus de Core tout en conservant une auto-garde complète de leurs actifs.
+### 3. Intégration de relais et de consensus
 
-#### **Conclusion**
+Le réseau de relais de Core analyse en continu la blockchain Bitcoin pour :
 
-Le staking de Bitcoin permet aux détérleurs de Bitcoin de gagner des rendements en contribuant à la sécurité de Core tout en maintenant la garde complète de leurs actifs. En tant que composant intégral du consensus Satoshi Plus, il fonctionne de concert avec DPoW et DPoS pour créer un cadre de sécurité robuste et multicouche. Ce mécanisme aligne les incitations entre les détenteurs de Bitcoin et le réseau Core, transformant Bitcoin d'une réserve de valeur statique en un actif productif sans qu'il ne quitte sa blockchain native.
+- Détecter les verrouillages temporels CLTV valides avec des métadonnées de validation intégrées
+- Valider la transaction
+- Transmettre les données à la logique de consensus on-chain de Core
+- Mettre à jour les poids d'élection des validateurs en fonction du montant de Bitcoin délégué
+
+Ce processus assure une synchronisation en temps réel et sans confiance entre l'activité Bitcoin et le consensus de Core.
+
+### 4. Distribution des Récompenses
+
+Lorsqu'un validateur que vous soutenez est élu et remplit ses fonctions :
+
+- Il gagne des récompenses en jetons CORE
+- Une partie de ces récompenses est distribuée à tous les détenteurs de Bitcoin qui ont verrouillé des fonds en soutien
+- Les récompenses sont automatiquement envoyées à l'adresse EVM fournie dans les métadonnées de verrouillage
+
+Les montants des récompenses varient en fonction de la disponibilité du validateur et du montant de Bitcoin mis en jeu pour le soutenir.
+
+### 5. Expiration du verrouillage temporel
+
+Une fois que votre période de verrouillage se termine :
+
+- Vos bitcoins redeviennent entièrement utilisables
+- Votre vote de validateur et votre éligibilité aux récompenses expirent
+- Vous pouvez créer un nouveau verrouillage temporel pour reprendre votre participation
+
+Il n'y a pas **de renouvellement automatique**: une participation continue nécessite une nouvelle transaction de verrouillage temporel.
+
+## Avantages
+
+### Pour les détenteurs de Bitcoin
+
+- Générez des rendements sans renoncer au contrôle
+- Conservez vos Bitcoin sous leur forme native
+- Évitez les risques liés aux ponts, aux dépositaires et aux contrats intelligents
+
+### Pour le réseau Core
+
+- Élection décentralisée de validateurs adossée à Bitcoin
+- Sécurité renforcée par le poids économique réel du Bitcoin
+- Un système aligné sur les valeurs de souveraineté et de transparence de Bitcoin
+
+## Pourquoi est-ce important
+
+Le Bitcoin a historiquement été un actif improductif, ne générant aucun rendement. En utilisant la fonction de verrouillage temporel CLTV native de Bitcoin, Core permet aux détenteurs de Bitcoin de générer des rendements en participant de manière décentralisée au processus de consensus d'une plateforme de contrats intelligents haute performance.
+
+## Consulter les rendements actuels
+
+Les récompenses de staking en direct sont disponibles sur **[stake.coredao.org](https://stake.coredao.org)**

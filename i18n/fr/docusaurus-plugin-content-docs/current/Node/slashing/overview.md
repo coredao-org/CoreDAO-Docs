@@ -6,13 +6,15 @@ sidebar_position: 2
 
 # Régulation des Validateurs
 
+---
+
 **Slashing** et **jailing** sont les deux mécanismes de base utilisés par la blockchain Core pour décourager les comportements inappropriés des validateurs. Comprendre leur fonctionnement est essentiel pour saisir la structure incitative de l'écosystème Core.
 
 ## Slashing et Jailing
 
 Le terme "slashing" désigne soit la réduction des récompenses qu’un validateur aurait reçues pour avoir miné des blocs, soit la réduction du dépôt de tokens CORE effectué par un nœud pour devenir validateur. La gravité de la pénalité de slashing est proportionnelle à la gravité du comportement fautif du validateur.
 
-Les pénalités de slashing sont généralement infligées lorsqu'un nœud ne parvient pas à produire un bloc pendant son tour dans la **procédure de minage de blocs en rotation** comme décrit dans la section de L'[Élection d'un Validateur](../validator/validator-election.md). Si un validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont complètement supprimées. Cela signifie qu'il est important de savoir quand un validateur échoue à miner **50** blocs consécutifs. S'il échoue lors des **50** premiers blocs d'un cycle, il renonce seulement à une petite partie des récompenses accumulées. Si un validateur échoue à miner **150 blocs** d'affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt effectué pour devenir validateur, et il est jail (incarcéré) pendant **trois** jours, ce qui signifie qu'il n'est plus éligible pour être élu dans l'ensemble des validateurs pendant cette période.
+Les pénalités de slashing sont généralement appliquées lorsqu'un nœud ne parvient pas à produire un bloc pendant son tour désigné dans la procédure de minage en round-robin, comme décrit dans la section [Élection des validateurs](../validator/validator-election.md). Si un nœud validateur échoue à miner **50 blocks** d'affilée, les récompenses en jetons CORE que le validateur a accumulées jusqu'à présent sont complètement réduites à zéro. Cela signifie qu'il est important de savoir quand un validateur échoue à miner **50** blocs consécutifs. S'ils échouent sur les premiers **50** blocs d'un tour, ils abandonnent seulement une petite partie des récompenses accumulées, mais s'ils échouent sur les derniers **50** blocs du tour, ils abandonnent tout ce qu'ils ont gagné. Si un validateur échoue à miner **150 blocs** d'affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt effectué pour devenir validateur, et il est jail (incarcéré) pendant **trois** jours, ce qui signifie qu'il n'est plus éligible pour être élu dans l'ensemble des validateurs pendant cette période.
 
 ## Suggestions de Slashing
 

@@ -11,7 +11,7 @@ sidebar_position: 2
 ## Tableau de bord Core Ignition
 
 <p align="center">
-  <img width="500" alt="Ignition_Dashboard_new" src="https://github.com/user-attachments/assets/7956ac48-8450-4cdc-a001-a9a6be4ae309"/>
+  <img width="500" alt="Ignition_Dashboard_new" src="https://github.com/user-attachments/assets/7956ac48-8450-4cdc-a001-a9a6be4ae309" />
 </p>
 
 ### Profil Core Ignition
@@ -39,11 +39,11 @@ Le solde dApp Ignition reflète les actifs que l'utilisateur a déposés dans le
 
 ### Actifs Autorisés
 
-Liste des actifs de jetons éligibles pour gagner des Sparks sur Core Ignition: Refer to the [How to Boost Multipliers](#how-to-boost-multipliers) section for the full list.
+Liste des actifs de jetons éligibles pour gagner des Sparks sur Core Ignition : Reportez-vous à la section [Comment booster les multiplicateurs](./Mechanics#how-to-boost-multipliers) pour la liste complète.
 
 ### Actifs Autorisés
 
-Liste des applications décentralisées où les interactions des utilisateurs contribuent à gagner des Sparks sur Core Ignition: Consultez l'onglet "Explorer les dApps" (https://ignition.coredao.org/dashboard?tab=explore)'sur le tableau de bord Ignition pour obtenir tous les détails.
+Liste des applications décentralisées où les interactions des utilisateurs contribuent à gagner des Sparks sur Core Ignition : Consultez l'onglet[Explorer les dApps](https://ignition.coredao.org/dashboard?tab=explore)'sur le tableau de bord Ignition pour obtenir tous les détails.
 
 ### Les pools autorisés (whitelisted pools)
 
@@ -66,7 +66,7 @@ Classement des utilisateurs basé sur une combinaison d'actifs et d'engagements 
 Classement des utilisateurs en fonction du nombre de transactions et du volume, récompensant à la fois l'activité fréquente et les mouvements de grande valeur. Conçu pour donner aux utilisateurs quotidiens une reconnaissance équitable grâce aux Spark Boosts, quelle que soit la taille de leur portefeuille.
 
 <p align="center">
-  <img width="900" alt="Screenshot 2025-05-12 at 8 52 02 PM" src="https://github.com/user-attachments/assets/674c4743-7299-4d75-877f-823621182cc6"/>
+  <img width="900" alt="Screenshot 2025-05-12 at 8 52 02 PM" src="https://github.com/user-attachments/assets/674c4743-7299-4d75-877f-823621182cc6" />
 </p>
 
 ---
@@ -75,11 +75,13 @@ Classement des utilisateurs en fonction du nombre de transactions et du volume, 
 
 Les Sparks sont des points cumulatifs reflétant le niveau d'activité des utilisateurs dans l'écosystème Core, mis à jour quotidiennement à 00:00 UTC et apparaissant sur le classement. Les utilisateurs gagnent des Sparks quotidiennement grâce à :
 
-**1. Actifs dans le Solde du Portefeuille Ignition :**
+#### 1. Actifs dans le solde du portefeuille Ignition
+
 Le montant et le type d'actifs autorisés que les utilisateurs transfèrent vers Core seront reflétés dans le Solde du Portefeuille Ignition de l'utilisateur. En détenant ces actifs sur Core, les utilisateurs gagneront des Sparks. Les Sparks sont calculés quotidiennement en fonction du solde du portefeuille de l'utilisateur.
 
-**2. Activités avec les dApps de l'écosystème Core :**
-Les utilisateurs peuvent également gagner des Sparks en interagissant avec les dApps autorisées sur Core Ignition. Chaque activité on-chain avec ces dApps contribuera des points Spark au compte utilisateur. Plus de détails seront mis à jour bientôt.
+#### 2. Activités avec l'écosystème Core dApp
+
+Les utilisateurs peuvent également augmenter les Sparks en interagissant avec les dApps autorisées sur Core. Chaque activité on-chain avec ces dApps contribuera des points Spark au compte utilisateur. Plus de détails seront mis à jour bientôt.
 
 | Type de transaction                | Sparks par transaction | Maximum de Sparks par jour |
 | ---------------------------------- | ---------------------- | -------------------------- |
@@ -89,12 +91,14 @@ Les utilisateurs peuvent également gagner des Sparks en interagissant avec les 
 | Échange ou Swap                    | 100                    | 3,000                      |
 | Interaction avec les dApps de jeux | 50                     | 1,000                      |
 | Autres activités                   | 50                     | 2,000                      |
-| Coretoshi NFT                      | 200                    | Illimité                   |
+| Coretoshi NFT, Doopidoo            | 200                    | Illimité                   |
 
-**3. Campagnes Rejointes :**
+#### 3. Campagne suivie / Campagne participante
+
 Core Ignition proposera des campagnes flash ou à durée limitée de manière continue, offrant aux utilisateurs des opportunités spéciales pour supercharger les Sparks. Restez connecté en vérifiant les sections de campagnes intégrées à l'application et en suivant les annonces officielles de Core sur [X (Twitter)](https://x.com/Coredao_Org) pour les dernières mises à jour.
 
-**4. Inviter de Nouveaux Utilisateurs à Rejoindre Ignition :**
+#### 4. Invitez de nouveaux utilisateurs à rejoindre Ignition
+
 Pour les nouveaux sur Core Ignition, transférez des actifs autorisés d'une valeur de 50 USDT vers Core pour débloquer un lien d'invitation permanent. Pour les utilisateurs qui se sont inscrits lors de la Saison 2, le code d'invitation est automatiquement débloqué. En invitant de nouveaux utilisateurs à Core Ignition, vous recevrez 10 % des Sparks quotidiens gagnés par les filleuls de premier degré et 2 % des filleuls de second degré. Veuillez noter qu'un plafond peut s'appliquer au maximum de Sparks que chaque utilisateur peut gagner via les parrainages.
 
 ---
@@ -118,7 +122,7 @@ Les utilisateurs peuvent bénéficier de multiplicateurs de jetons de base pour 
 
 | Actifs Autorisés                                                            | Actifs du Portefeuille | Prêt                 | Emprunt              | Provision de Liquidité |
 | --------------------------------------------------------------------------- | ---------------------- | -------------------- | -------------------- | ---------------------- |
-| stCORE, CLND, dualCORE                                                      | 1x                     | 2.5x | 3x                   | 3.5x   |
+| stCORE, CLND                                                                | 1x                     | 2.5x | 3x                   | 3.5x   |
 | USDT, USDC                                                                  | 1x                     | 1.5x | 2x                   | 3x                     |
 | CORE, WCORE                                                                 | 1x                     | 1.5x | 2x                   | 2.5x   |
 | wETH, solvBTC.CORE                                          | n/a                    | 1.4x | 1.6x | 1.8x   |
@@ -131,18 +135,18 @@ Les utilisateurs peuvent bénéficier de multiplicateurs de jetons de base pour 
 > _**Exemple 2 :**_
 > Si l'utilisateur prête 20 stCORE dans un protocole de prêt, l'utilisateur obtient : Daily Sparks = Montant stCORE \* Prix stCORE \* Multiplicateur = 20 stCORE \* 1,5 $ (supposé) \* 2,5 = 75
 
-### 2. Multiplicateurs de volume
+### 2. Multiplicateurs de volume {#2-activities-with-core-ecosystem-dapp}
 
 Multiplicateurs basés sur le volume de trading
 Les utilisateurs qui interagissent avec les pools Autorisés reçoivent des multiplicateurs basés sur l'équivalent en USD de leur volume de trading par jour. La valeur du multiplicateur augmente progressivement à mesure que le volume de trading augmente, avec différentes valeurs de multiplicateur appliquées selon des seuils de volume spécifiques comme suit :
 
-| Plage de volume                     | Multiplicateurs      |
-| ----------------------------------- | -------------------- |
-| $0 ~ > $100         | 1x                   |
-| $100 ~ > $1,000     | 1.5x |
-| $1,000 ~ > $10,000  | 2x                   |
-| $10,000 ~ > $50,000 | 2.5x |
-| 50 000 $ et plus                    | 3x                   |
+| Plage de volume                    | Multiplicateurs      |
+| ---------------------------------- | -------------------- |
+| $0 ~ >$100         | 1x                   |
+| $100 ~ >$1,000     | 1.5x |
+| $1,000 ~ >$10,000  | 2x                   |
+| $10,000 ~ >$50,000 | 2.5x |
+| 50 000 $ et plus                   | 3x                   |
 
 > **Exemple de calcul**
 > Un utilisateur qui négocie l'équivalent de 51 000 $ en volume par jour recevra :
@@ -168,7 +172,7 @@ En plus de détenir des tokens stratégiques et de déployer des actifs dans div
 
 Avec la nouvelle couche d'attribution Coretoshi, les détenteurs de NFT Coretoshi bénéficient désormais d'avantages supplémentaires :
 
-1. 200 Sparks supplémentaires par transaction: Les détenteurs de NFT Coretoshi reçoivent 200 Sparks supplémentaires par transaction, [sans limite](#activities-with-core-ecosystem-dapp), lorsqu'ils interagissent avec les dApps de l'écosystème Core.
+1. 200 Sparks supplémentaires par transaction [sans limite](#2-activities-with-core-ecosystem-dapp);
 2. Multiplicateur de Sparks supplémentaire de 1,5x
   Un multiplicateur de Sparks supplémentaire de 1,5x est automatiquement appliqué en plus du multiplicateur de volume existant des utilisateurs.
 
@@ -202,7 +206,7 @@ Les utilisateurs sont avertis si leur activité baisse considérablement. Les Sp
 - La réduction augmente avec le temps
 - Avertissements avant la réduction
   Les utilisateurs reçoivent des avertissements avant que la réduction des Sparks ne soit appliquée, leur donnant ainsi la possibilité de rétablir leur activité et d'éviter les pénalités.
-- Le mécanisme de réduction se déclenche après 1 mois d'inscription
+- Le mécanisme de réduction se déclenche après 1 mois d'inscription.
 - Calcul de la réduction chaque dimanche
 
 ### 2. Critères de violation :

@@ -4,20 +4,19 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 # Explorador de cadena de bloques de Core Scan
 
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
-Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede buscar información sobre los bloques que se han agregado a la cadena de bloques, las transacciones que se han producido en la cadena de bloques, los saldos de la billetera y la información sobre tCORE2 y los tokens CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
+Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede explorar información sobre los bloques que se han añadido a la blockchain, las transacciones que han ocurrido en la blockchain, los saldos de las wallets, y la información sobre los tokens tCORE2 y CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
 
 <Tabs defaultValue="mainnet" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
-
 <TabItem value="testnet2">
 - **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
 </TabItem>
@@ -30,9 +29,9 @@ Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los 
 
 ### Usando el Explorador de Core Scan
 
-Puede utilizar el explorador de cadena de bloques Testnet Core Scan para buscar y revisar transacciones. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
+Puedes usar el explorador de blockchain Core Scan en testnet para encontrar y revisar transacciones. Copie la dirección de su cuenta de MetaMask y búsquela en el explorador. En la siguiente imagen podemos ver dos transacciones relacionadas con nuestra cuenta:
 
-- Aquel en el que obtuvimos tCORE2 de Faucet;
-- Aquel en el que enviamos tCORE2 a otra dirección;
+- La transacción en la que obtuvimos tCORE2 del Faucet;
+- La transacción en la que enviamos tCORE2 a otra dirección;
 
 ![núcleo-explorador](../../../../../static/img/core-explorer.png)

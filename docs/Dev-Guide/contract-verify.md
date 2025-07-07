@@ -32,7 +32,7 @@ Web verification is the most commonly used method for smart contract verificatio
 - [For Core Testnet2](https://scan.test.btcs.network)
 
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
-3. After locating the contract, select the **Contract** tab and click **Verify and Publish**_._
+3. After locating the contract, select the **Contract** tab and click **Verify and Publish**.
 
 
 <p align="center">

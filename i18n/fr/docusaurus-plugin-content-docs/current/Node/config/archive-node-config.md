@@ -7,11 +7,11 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Nœuds d'archivage sur Core
+# Node d'archivage sur Core
 
 ---
 
-Les nœuds d'archive dans le réseau Core jouent un rôle crucial en conservant l'état historique complet du réseau. Ces nœuds sont des versions spécialisées des nœuds complets, avec des capacités améliorées, conçues pour stocker et fournir un accès à l'historique entier de toutes les transactions et états depuis le début de Core.
+Les nodes d'archive dans le réseau Core jouent un rôle crucial en conservant l'état historique complet du réseau. Ces nodes sont des versions spécialisées des nodes complets, avec des capacités améliorées, conçues pour stocker et fournir un accès à l'historique entier de toutes les transactions et états depuis le début de Core.
 
 ## Requis Systèmes
 
@@ -19,72 +19,68 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 ### Logiciel
 
-- **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation macOS ou Linux (Ubuntu 20.04 ou ultérieur).
-
+- **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation **macOS** ou **Linux** (Ubuntu 20.04 ou ultérieur).
 - **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité.
-
-- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
+- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nodes.
 
 ### Matériel
 
-Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, garantissant la disponibilité et l'intégrité des données pour les participants du réseau. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nœuds d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. Voici les exigences matérielles pour exécuter un nœud d'archivage sur Core
+Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, garantissant la disponibilité et l'intégrité des données pour les participants du réseau. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nodes d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. Voici les exigences matérielles pour exécuter un nœud d'archivage sur Core.
 
 <Tabs
-  defaultValue="testnetTwo"
-  values={[
-    {label: 'Testnet2', value: 'testnetTwo'},
-    {label: 'Testnet', value: 'testnet'},
-    {label: 'Mainnet', value: 'mainnet'},
-  ]}>
-  <TabItem value="testnetTwo">
-    For Archive Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+defaultValue="testnetTwo"
+values={[
+{label: 'Testnet2', value: 'testnetTwo'},
+{label: 'Mainnet', value: 'mainnet'},
+]}> <TabItem value="testnetTwo">
+Pour les nodes d'archivage sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 1TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
-    | **CPU**            | 8 Core CPU                                                                                          |
-    | **RAM**            | 32 Gigabytes                                                                                        |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
-  </TabItem>
-  <TabItem value="testnet">
-    For Archive Nodes on **Core Testnet**, following minimum hardware specifications are recommended:
+```
+| Exigences   | Détails                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Stockage**        | Disque à état solide (SSD) avec une capacité minimale de 1 To. Les SSD sont recommandés en raison de leurs vitesses de lecture et d'écriture plus rapides, essentielles pour gérer les grandes quantités de données de la blockchain et fournir un accès rapide aux transactions historiques.           |
+| **CPU**            | 8 Core CPU                                                                                          |
+| **RAM**            | 32 Gigabytes                                                                                        |
+| **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5Mbps                                |
+```
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 2TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
-    | **CPU**            | 8 Core CPU                                                                                          |
-    | **RAM**            | 32 Gigabytes                                                                                        |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
   </TabItem>
+
   <TabItem value="mainnet">
-    For Archive Nodes on **Core Mainnet**, following minimum hardware specifications are recommended:
+    Pour les nodes d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
 
-    | Requirements   | Details                                                                                                 |  
-    |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB. SSDs are recommended because of their faster read and write speeds, which are critical for managing large blockchain data and providing quick access to historical transactions.               |
-    | **CPU**            | 8 Core CPU                                                                                          |
-    | **RAM**            | 32 Gigabytes                                                                                        |
-    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                |
+```
+| Exigences   | Détails                                                                                                 |  
+|----------------|---------------------------------------------------------------------------------------------------------|
+| **Stockage**        | Disque à état solide (SSD) avec une capacité minimale de 4 To. Les SSD sont recommandés en raison de leurs vitesses de lecture et d'écriture plus rapides, essentielles pour gérer les grandes quantités de données de la blockchain et fournir un accès rapide aux transactions historiques.           |
+| **CPU**            | 8 Core CPU                                                                                          |
+| **RAM**            | 32 Gigabytes                                                                                        |
+| **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5Mbps                                |
+```
+
   </TabItem>
 </Tabs>
 
 ## Exécution d'un Nœud d'Archive Core
 
-1. Nous recommandons d'utiliser le dépôt GitHub [core-chain](https://github.com/coredao-org/core-chain) pour compiler et exécuter directement votre nœud complet à partir de notre code source de blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
 2. Téléchargez la dernière version binaire du nœud à partir du répertoire de [sortie](https://github.com/coredao-org/core-chain/releases/latest) de Core sur GitHub, ainsi que le dernier snapshot pour le nœud d'archive depuis le Core [Snapshot Répertoire](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#archive-full). Le nœud binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet.
 
-3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis:
+3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-4. Votre nœud complet/archivé est prêt! Vous pouvez démarrer votre nœud en exécutant simplement la commande `geth` suivante:
+4. Maintenant que la configuration du nœud d'archivage est terminée, lançons-le ! Exécutez la commande `geth` suivante pour lancer le nœud d'archivage :
 
 ```bash
 ## start an archive node
-geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=archive --syncmode=full 
+geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=archive --syncmode=full
 ```
 
 5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Par défaut, le fichier de journal se trouve à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si vous le souhaitez.
+
+
+

@@ -1,67 +1,81 @@
 ---
-sidebar_label: Overview
+sidebar_label: Aperçu
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validators on the Core Network
+# Les validateurs sur Core Network
 
 ---
 
-Dans l'écosystème Core, les validateurs jouent un rôle essentiel dans le maintien de l'intégrité, de la sécurité et de la continuité de la blockchain. Ils sont responsables du traitement des transactions, de la création de nouveaux blocs et de la participation au processus de consensus. Ce rôle est crucial pour garantir que la blockchain Core fonctionne efficacement et reste décentralisée.
+Sur la Core blockchain, les validateurs sont des nodes essentiels chargés de maintenir la sécurité, la décentralisation et l'intégrité du réseau. Ils valident les transactions, produisent de nouveaux blocs et participent à la gouvernance via le consensus Satoshi Plus unique de Core, qui combine la Preuve de Travail Déléguée (DPoW), la Preuve de Participation Déléguée (DPoS) et la mise en jeu auto-custodée de Bitcoin pour assurer la décentralisation, la sécurité et l'évolutivité.
 
-## Qui sont les validateurs dans le réseau Core
+## Rôle de validateur et participation au consensus
 
-Dans l'écosystème Core, les validateurs assurent l'intégrité et la sécurité de la blockchain en produisant et validant de nouveaux blocs. Ils participent au mécanisme de consensus Satoshi Plus, un mélange de Preuve de Travail (PoW) et de Preuve d'Enjeu Déléguée (DPoS). Les validateurs sont sélectionnés en fonction d'un système hybride qui prend en compte à la fois les jetons CORE et BTC mis en jeu en leur faveur, ainsi que la puissance de hachage Bitcoin qui leur est déléguée. Ce système garantit que le groupe de validateurs représente un équilibre entre les intérêts des parties prenantes et la puissance de minage, renforçant ainsi la sécurité et la décentralisation du réseau. Les élections des validateurs se déroulent par cycles, appelés époques, au cours desquels un nouveau groupe de validateurs est sélectionné pour gérer les opérations et la gouvernance de la blockchain de manière efficace.
+Les validateurs sont responsables du maintien de la santé et de la continuité du réseau. En participant au consensus, ils confirment la validité des transactions et contribuent à la production de blocs. Le consensus Satoshi Plus sélectionne les validateurs en fonction d'un système de notation hybride qui prend en compte le Bitcoin délégué, les jetons CORE et la puissance de hachage Bitcoin.
 
-## Économies
+Les ensembles de validateurs sont alternés périodiquement, et les élections de validateurs ont lieu par périodes, généralement toutes les 24 heures (UTC+0), pour sélectionner les **31** meilleurs validateurs actifs en fonction de leurs scores hybrides. Les validateurs inactifs restants doivent attendre le prochain cycle d'élections pour devenir des validateurs actifs avant de pouvoir participer à la production de blocs.
 
-Les récompenses des validateurs proviennent de **Les récompenses de base**, sous forme de jetons CORE nouvellement créés; **Les frais collectés lors des transactions dans chaque bloc**;
+## Économie des récompenses
 
-Les récompenses de base sont calculées et distribuées lorsque le dernier bloc d'un cycle est miné. Actuellement, **90 %** des récompenses vont aux validateurs et **10 %** sont alloués au `Contrat de Récompense du Système`. Sur les **90 %** des récompenses versées aux validateurs, un certain pourcentage est prélevé sous forme de commission par le validateur avant de redistribuer le reste à leurs délégués. Chaque validateur a une probabilité égale de produire des blocs, de sorte qu'à long terme, tous les validateurs stables devraient obtenir une part similaire des récompenses.
+Les validateurs reçoivent des récompenses en jetons CORE pour participer au mécanisme de consensus de Core et produire des blocs. Les récompenses sont distribuées à la fin de chaque tour (environ toutes les 24 heures) et proviennent de deux sources principales :
 
-Ces frais ne sont pas entièrement versés aux validateurs, mais sont calculés de manière similaire aux récompenses de base, c'est-à-dire que 90 % des frais accumulés sont versés aux validateurs, un certain pourcentage est prélevé sous forme de commission par le validateur, et le reste est distribué aux délégués. Les 10 % restants sont déposés dans le System Reward Contract.
+- **Base rewards:** Nouveaux jetons CORE nouvellement frappés.
+- **Transaction fees:** Frais collectés à partir des transactions incluses dans chaque bloc pendant le tour(round).
 
-Les validateurs partagent les récompenses avec les entités qui leur ont délégué des fonds – y compris les stakers de CORE, les stakers de Bitcoin et les délégateurs de PoW – Cependant, ils décident eux-mêmes de la part qu'ils (les validateurs) souhaitent conserver avant de la redistribuer. Ils peuvent choisir de garder plus ou moins de récompenses, bien qu'ils soient incités à être généreux afin d'attirer davantage de mises et de puissance de hachage.
+Chaque validateur peut fixer son propre taux de commission(**commission rate**), la part des récompenses qu'il conserve avant de distribuer le reste à ses délégateurs. Les frais de commission sont distribués directement à l'adresse de frais spécifiée par le validateur à la fin de chaque tour(round).
 
-Les validateurs sont tenus de partager les récompenses avec les délégués qui ont staké du CORE ou délégué de la puissance de hachage à leur profit. Étant donné que chaque validateur a une probabilité égale de produire des blocs, tous les validateurs stables devraient recevoir une part similaire des récompenses à long terme. La part que les validateurs gardent pour eux-mêmes (frais de commission) sera directement versée à leurs adresses de frais à la fin de chaque tour.
+Core n'implémente pas d'auto-ajout (**not implement self-bonding**). Les validateurs ne sont pas tenus de miser des CORE sur eux-mêmes pour participer. Ils ne gagnent des commissions que si d'autres participants délèguent des fonds vers eux. Si un validateur mise sur son propre validateur, il reçoit des récompenses comme n'importe quel délégateur régulier - et non en tant que commission.
 
-**_Notez que les règlements des récompenses se font sur une base quotidienne, c'est-à-dire par tour, et non par bloc._**
+Les récompenses de base sont distribuées lorsque le dernier bloc du tour(round) est confirmé. Actuellement,**90%** du total des récompenses de base sont alloués aux validateurs, tandis que les **10%** restants sont envoyés au Contrat de Récompense du Système. Des 90% alloués aux validateurs, chaque validateur reçoit des récompenses proportionnelles au nombre de blocs qu'ils produisent. À long terme, tous les validateurs stables devraient recevoir des parts approximativement égales, puisque la production de blocs est uniformément répartie.
+
+Les frais de transaction suivent la même logique de distribution. **90%** du total des frais de transaction collectés pendant le tour sont distribués aux validateurs. Les validateurs peuvent appliquer leur taux de commission à ce montant avant de distribuer les récompenses restantes à leurs délégateurs. Les **10%** restants des frais sont déposés dans le Contrat de Récompense Système.
+
+Les validateurs partagent les récompenses avec les délégateurs qui ont misé du CORE, délégué du BTC ou contribué à la puissance de hachage. Bien que les taux de commission soient flexibles, les validateurs sont incités à offrir des taux compétitifs afin d'attirer davantage de délégation et de renforcer leur score hybride.
+
+Les frais de commission sont payés directement à l'adresse de frais désignée par chaque validateur à la fin de chaque tour(round).
+
+> **Note:** Les récompenses sont réglées par tour(**per round**), et non par bloc. Chaque round correspond à un cycle d'élection de validateurs complet (~24 heures, UTC+0).
 
 <p align="center">
-![validator-reward-distribution](../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png) 
+![validator-reward-distribution](../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
 </p>
 
-Prenons l'exemple d'une récompense de base pour un tour de **3 000 CORE**, et supposons qu'un validateur fixe son taux de commission à **20 %**. Ces tokens ne vont pas directement à l'auteur de la proposition. Ils sont plutôt partagés entre les validateurs et les délégués. Ces **3 000 CORE** seront distribués en fonction de la participation de chaque participant. Supposons que les frais générés par toutes les transactions dans tous les blocs d'un tour s'élèvent à **100 CORE**.
+### Exemple du Calcul de Récompense
+
+Prenons l'exemple d'une récompense de base pour un round de **3000 CORE**, et supposons qu'un validateur fixe son taux de commission à **20 %**. Ces tokens ne vont pas directement à l'auteur de la proposition. Ils sont plutôt partagés entre les validateurs et les délégués. Ces **3000 CORE** seront distribués en fonction de la participation de chaque participant. Supposons que les frais générés par toutes les transactions dans tous les blocs d'un tour s'élèvent à **100 CORE**.
+
+Supposons que la récompense de base pour un round est de **3,000 CORE**, et qu'un validateur fixe un taux de commission de **20%**. Ces jetons ne sont pas payés directement au proposant, mais sont distribués proportionnellement entre tous les validateurs et leurs délégateurs. La récompense de base, 3000 CORE dans ce cas, sera distribuée en fonction de la participation de chaque participant. Supposons également que les frais de transaction collectés pendant le round totalisent **100** CORE.
 
 ```maths
-    Récompense totale accumulée = Récompense de base + Frais de transaction = 3 000 + 100 = 3 100 CORE
+    Récompense totale accumulée = Récompense de base + Frais de transaction = 3,000 + 100 = 3,100 CORE
 
-    System Reward Contract reçoit = 3 100 x 10 % = 310 CORE  
 
-    Récompense accumulée du validateur = (Récompense de base + Frais de transaction) x 90 % = 3 100 x 90 % = 2 790 CORE
+    System Reward Contract reçoit = 3,100 x 10% = 310 CORE  
 
-    Commission = (Récompense de base + Frais de transaction) x 20 % = 2 790 x 20 % = 558 CORE
+
+    Récompense accumulée du validateur = (Récompense de base + Frais de transaction) x 90% = 3,100 x 90% = 2,790 CORE
+
+
+    Commission = (Récompense de base + Frais de transaction) x 20% = 2,790 x 20% = 558 CORE
+
 
     Récompense totale du validateur = Commission = 558 CORE
 
-    Récompense totale des délégués = Récompense accumulée du validateur - Commission = 2 790 - 558 = 2 232 CORE
-```
 
-:::note
-Dans l'écosystème Core, les récompenses sont distribuées à chaque validateur. À partir de ces récompenses, les validateurs sont tenus de conserver un pourcentage sous forme de commission et de redistribuer le reste à leurs délégués. Chaque validateur peut fixer son propre taux de commission. Cependant, il n'y a pas de CORE auto-staké (self-bonded). Un validateur ne reçoit des commissions que s'il choisit de ne pas staker sur son propre validateur.
-:::
+    Récompense totale des délégués = Récompense accumulée du validateur - Commission = 2,790 - 558 = 2,232 CORE
+```
 
 ## Risques potentiels et pénalités pour les validateurs
 
-Dans l'écosystème de Core, les validateurs jouent un rôle crucial dans le maintien de l'intégrité et de la sécurité du réseau. Bien que ce rôle comporte des incitations, telles que la possibilité de gagner des récompenses pour la validation des blocs, il comporte également certains risques et pénalités potentiels si les validateurs ne remplissent pas correctement leurs fonctions ou s'engagent dans des activités malveillantes. Voici un aperçu détaillé des risques et pénalités auxquels les validateurs peuvent faire face dans l'écosystème de Core :
+Bien que les validateurs de l'écosystème Core soient incités par des récompenses de bloc et des frais de transaction, le rôle comporte également des risques opérationnels et économiques. Les validateurs sont censés maintenir les performances, la disponibilité et l'intégrité du réseau. Ne pas le faire peut entraîner des pénalités qui affectent à la fois la réputation et les gains.
 
-1. **Risques de slashing :** Dans de nombreux systèmes basés sur le DPoS, y compris Core, les validateurs risquent de subir un slashing s'ils agissent de manière malveillante ou négligente. Cela peut inclure la signature double, l'inactivité (incapacité à être en ligne et à remplir les fonctions de validation) ou toute action compromettant la sécurité du réseau. Le slashing implique la destruction ou la confiscation d'une partie des tokens CORE mis en jeu, ce qui affecte directement les avoirs financiers du validateur.
+1. **Slashing:** Les validateurs peuvent être soumis à des sanctions s'ils se livrent à un comportement malveillant ou négligent, tel que : la signature double de blocs, une indisponibilité prolongée ou une inactivité, la violation des règles de consensus, etc. Le slashing entraîne la confiscation permanente d'une partie des CORE mis en jeu par le validateur, ce qui affecte directement ses avoirs financiers et sa crédibilité.
 
-2. **Risques de blocage des mises et de liquidité :** Les validateurs doivent bloquer un montant important de tokens CORE en garantie pour participer au processus de validation. Ces tokens sont soumis à des périodes de blocage pendant lesquelles les fonds ne sont pas accessibles, ce qui pose un risque de liquidité, notamment si les conditions du marché changent de manière drastique.
+2. **Jailing:** Les validateurs qui sous-performent de manière constante, se déconnectent ou violent les règles du protocole peuvent être emprisonnés. Un validateur emprisonné est temporairement retiré de l'ensemble des validateurs actifs, ce qui le rend inéligible pour produire des blocs ou gagner des récompenses. Des emprisonnements répétés peuvent également entraîner une atteinte à long terme à la réputation au sein de la communauté ou une suppression du réseau.
 
-3. **Emprisonnement des validateurs :** Les validateurs qui sous-performent de manière répétée ou violent les protocoles du réseau peuvent être "emprisonnés". Ce terme désigne leur retrait temporaire du set de validateurs, les empêchant de participer au consensus et de gagner des récompenses. Cela affecte non seulement leurs revenus, mais peut également ternir leur réputation au sein de la communauté.
+3. **Loss of Delegation:** Les délégateurs peuvent retirer leur mise des validateurs sous-performants et la réallouer à des validateurs plus fiables. Cela peut réduire considérablement la part de récompenses d'un validateur.
 
-4. **Perte de délégation :** Les validateurs dépendent des délégations des détenteurs de tokens CORE pour augmenter leur influence et leur potentiel de gain. Une mauvaise performance ou des pénalités élevées peuvent pousser les délégués à retirer leur soutien et à réaffecter leurs mises à des validateurs plus fiables, entraînant une baisse significative des gains potentiels.
+4. **Stake Lock-up and Liquidity:** Les validateurs sont tenus de bloquer **10,000 CORE tokens** en garantie pour faire partie du réseau Core de validateurs participant au consensus. Ces jetons sont soumis à des périodes de blocage et ne peuvent être ni retirés ni transférés pendant cette période. Cela introduit un risque de liquidité, en particulier lors de conditions de marché volatiles ou d'une indisponibilité imprévue du validateur.
 
-5. \*\*Risques opérationnels et de sécurité : Exploiter un nœud validateur nécessite des compétences techniques. Les validateurs doivent s'assurer que leurs systèmes sont sécurisés et fonctionnent efficacement 24 heures sur 24, 7 jours sur 7. Un échec dans la gestion de ces risques opérationnels peut entraîner des blocs manqués ou des violations de sécurité, ce qui peut entraîner des pertes financières ou des dommages à leur réputation.
+5. **Operational and Security Risks:** Les validateurs doivent maintenir une infrastructure sécurisée à haute disponibilité. Les défaillances de la sécurité du système, de la disponibilité ou des performances peuvent entraîner des blocs manqués, des slashing ou des emprisonnements. Les validateurs sont chargés de surveiller leurs systèmes, de maintenir les mises à jour logicielles et d'assurer des opérations fiables 24 heures sur 24.

@@ -10,27 +10,27 @@ sidebar_position: 2
 
 ### 1. Qu'est-ce qu'un validateur dans l'écosystème Core ?
 
-Dans l'écosystème de Core, un "validateur" fait référence aux nœuds ou participants du réseau blockchain qui sont responsables de la vérification, de la validation et de l'ajout de nouvelles transactions à la blockchain. Les validateurs jouent un rôle essentiel dans la maintenance et la sécurité du réseau.
+Dans l'écosystème de Core, un "validateur" fait référence aux nodes ou participants du réseau blockchain qui sont responsables de la vérification, de la validation et de l'ajout de nouvelles transactions à la blockchain. Les validateurs jouent un rôle essentiel dans la maintenance et la sécurité du réseau.
 
 ### 2. Comment devenir un validateur ?
 
-- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nœuds validateurs](../Node/config/validator-node-config.md) et l'[exécution des nœuds validateurs](../Node/validator/setting-up-validator.md) pour obtenir des informations sur la configuration.
-  2. Ensuite, le moyen le plus simple d'enregistrer un nouveau validateur est d'utiliser l'un de nos sites Web de staking :
+- 1. Pour vous enregistrer en tant que validateur sur Core, vous devez exécuter un nœud complet en mode validateur. Veuillez lire les guides sur la [configuration des nodes de validation](../Node/config/validator-node-config.md) et [l'exécution des nodes de validation](../Node/validator/setting-up-validator.md) pour savoir comment configurer cela.
+  2. Une fois cela terminé, la façon la plus simple de s'enregistrer comme validateur est d'utiliser l'un de nos sites de staking :
     1. [Site de staking pour le Mainnet](https://stake.coredao.org)
-    2. [Site de staking pour le Testnet](https://stake.test.btcs.network)
+    2. [Site de staking pour le Testnet](https://stake.test2.btcs.network)
   3. Connectez votre portefeuille en sélectionnant **Connect Wallet** en haut à droite.
   4. Une fois connecté, le bouton **Register** devrait apparaître en haut à droite. En sélectionnant **register** le formulaire suivant s'affiche :
 
-![register-validator](../../../../../static/img/validator/register/validator-register-1.avif)
+![register-validator](../../../../../static/img/validator/register/validator-register-1.png)
 
 Fournissez les informations pour chaque champ du formulaire :
 
 - **Adresse de consensus:** l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud complet validateur.
 - **Adresse de frais :** l'adresse utilisée pour collecter les frais de commission.
 - **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Sur le testnet, le montant minimum est de **10 000 tCORE2**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
+- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Sur le testnet, le montant minimum est de **10 000 tCORE**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
   1. Une fois les informations saisies, sélectionnez **Register** pour vous enregistrer en tant que validateur.
-  2. Pour vérifier rapidement si votre nœud complet a bien été enregistré comme validateur, ouvrez le fichier de log et recherchez le message d'erreur "unauthorized validator". Cette erreur se produit lorsque le nœud est enregistré mais pas encore élu au sein de l'ensemble des validateurs.
+  2. Pour vérifier rapidement si votre nœud complet a bien été enregistré comme validateur, ouvrez le fichier de log et recherchez le message d'erreur "**unauthorized validator**". Cette erreur se produit lorsque le nœud est enregistré mais pas encore élu au sein de l'ensemble des validateurs.
 
 ![validator-logs](../../../../../static/img/validator/register/validator-register-2.avif)
 
@@ -38,9 +38,9 @@ Fournissez les informations pour chaque champ du formulaire :
 
 Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du consensus Satoshi Plus de la blockchain Core.
 
-**Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac OS X et Linux.
+**Exigences logicielles :** Actuellement, un nœud complet Core ne peut fonctionner que sur Mac Os X et Linux.
 
-**Spécifications matérielles pour le Testnet**
+**Spécifications matérielles du nœud complet Core Testnet**
 
 | **Requis**       | **Details**                                                                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -49,7 +49,7 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 | RAM              | 8 Go                                                                                                                                         |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-#### **Spécifications matérielles pour le Mainnet**
+**Spécifications matérielles du nœud complet Core Mainnet**
 
 | **Requis**       | **Details**                                                                                                                                  |
 | ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -58,9 +58,9 @@ Les validateurs sont essentiels pour sécuriser le réseau en produisant des blo
 | RAM              | 32 Go                                                                                                                                        |
 | Vitesse Internet | Connexion large bande avec une vitesse de chargement/téléchargement de 10 Mbps                                                               |
 
-For more details, refer to [Full Node Confgiurations Guide](../Node/config/full-node.md)
+Pour plus de détails, consultez le [Guide de configuration des nodes complets](../Node/config/full-node.md)
 
-### 4. Quel est le montant minimum de tokens CORE requis pour devenir validateur ?
+### 4. Quel est le montant minimum de jetons CORE requis pour devenir validateur ?
 
 Sur le réseau Core, les validateurs doivent staker un certain montant minimum de tokens CORE, qui est verrouillé pendant que le nœud validateur fournit ses services. Sur le testnet, le montant minimum est de **10 000 tCORE2**. Sur le mainnet, le montant minimum est de **10 000 CORE**.
 
@@ -68,9 +68,8 @@ Sur le réseau Core, les validateurs doivent staker un certain montant minimum d
 
 Les validateurs gagnent des récompenses pour leur rôle dans le traitement des transactions, la création de nouveaux blocs et le maintien de l'intégrité de la blockchain. Ces récompenses sont essentielles pour compenser les validateurs pour leurs efforts et leurs coûts opérationnels. Les validateurs de la Core Chain fonctionnent selon un système de tourniquet, et chaque validateur actif reçoit à peu près le même montant de récompenses à chaque tour. Il existe deux catégories de récompenses de validateur:
 
-1\. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
-
-2\. **Les frais collectés lors des transactions dans chaque bloc**;
+1. **Récompenses de base**, c'est-à-dire les nouveaux tokens CORE miné;
+2. **Les frais collectés lors des transactions dans chaque bloc**;
 
 Les récompenses de base et les frais de transaction sont calculés et distribués lorsque le dernier bloc d'un tour est miné. Actuellement, **90 %** des récompenses vont aux validateurs et **10 %** sont alloués au Contrat de Récompense du Système. Des 90 % payés aux validateurs, un pourcentage est prélevé comme commission par le validateur avant qu'il ne verse des récompenses à ses délégateurs. La part que les validateurs gardent pour eux-mêmes (frais de commission) sera directement versée à leurs adresses de frais à la fin de chaque tour. Les validateurs sont tenus de partager les récompenses avec les délégués qui ont staké du BTC, CORE ou délégué de la puissance de hachage à leur profit. Chaque validateur a une probabilité égale de produire des blocs, de sorte qu'à long terme, tous les validateurs stables devraient obtenir une part similaire des récompenses.
 
@@ -104,8 +103,8 @@ Où :
 
 - rHp et tHp représentent respectivement la puissance de hachage déléguée à un validateur et la puissance de hachage totale.
 - rSp et tSp représentent respectivement les tokens CORE stakés pour un validateur et le total des tokens CORE stakés.
-- rBp et tBp représentent respectivement les tokens BTC délégués à un validateur et le total des tokens BTC stakés.
-- m et n sont des facteurs dynamiques ajustant le poids de la puissance de hachage et de la puissance de vote des tokens BTC par rapport aux tokens CORE.
+- rBp et tBp représentent respectivement les tokens Btc délégués à un validateur et le total des tokens Btc stakés.
+- m et n sont des facteurs dynamiques ajustant le poids de la puissance de hachage et de la puissance de vote des tokens BTC par rapport aux jetons CORE.
 
 4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
@@ -127,4 +126,3 @@ Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 ### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
 
 Les validateurs sont généralement censés être en ligne et participer activement presque en continu.
-

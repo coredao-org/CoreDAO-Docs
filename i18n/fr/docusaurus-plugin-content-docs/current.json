@@ -84,7 +84,7 @@
     "description": "The label for category Node in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Node Maintenance": {
-    "message": "Maintenance des nœuds",
+    "message": "Maintenance des nodes",
     "description": "The label for category Node Maintenance in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.Full-Node": {
@@ -216,15 +216,15 @@
     "description": "The label for category 🤔 FAQs in sidebar faqSidebar"
   },
   "sidebar.nodeSidebar.category.🔮 Running Core Nodes": {
-    "message": "🔮Exécuter des Nœuds Core",
+    "message": "🔮Exécuter des Node Core",
     "description": "The label for category 🔮 Running Core Nodes in sidebar nodeSidebar"
   },
   "sidebar.nodeSidebar.category.Node Configurations": {
-    "message": "Configurations des Nœuds",
+    "message": "Configurations des Node",
     "description": "The label for category Node Configurations in sidebar nodeSidebar"
   },
   "sidebar.nodeSidebar.category.Running Full Node": {
-    "message": "Exécuter des Nœuds Core",
+    "message": "Exécuter des Node Core",
     "description": "The label for category Running Full Node in sidebar nodeSidebar"
   },
   "sidebar.nodeSidebar.category.Become a Validator": {
@@ -236,7 +236,7 @@
     "description": "The label for category Slashing in sidebar nodeSidebar"
   },
   "sidebar.nodeSidebar.category.Node Maintenance": {
-    "message": "Maintenance des Nœuds",
+    "message": "Maintenance des Node",
     "description": "The label for category Node Maintenance in sidebar nodeSidebar"
   },
   "sidebar.stakeDelegateSidebar.category.💸 Staking": {
@@ -335,9 +335,9 @@
     "message": "lstBTC",
     "description": "The label for category lstBTC in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Maintenance des Nœuds": {
-    "message": "Maintenance des Nœuds",
-    "description": "The label for category Maintenance des Nœuds in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Maintenance des Node": {
+    "message": "Maintenance des Node",
+    "description": "The label for category Maintenance des Node in sidebar tutorialSidebar"
   },
   "sidebar.learnSidebar.category.lstBTC": {
     "message": "lstBTC",
@@ -690,5 +690,105 @@
   "sidebar.apiSidebar.doc.Submit RedeemScript": {
     "message": "Submit RedeemScript",
     "description": "The label for the doc item Submit RedeemScript in sidebar apiSidebar, linking to the doc stakingAPI/testnet/submit-redeem-script-for-staking-transaction"
+  },
+  "sidebar.tutorialSidebar.category.dual-staking": {
+    "message": "dual-staking",
+    "description": "The label for category dual-staking in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.liquid-staking": {
+    "message": "liquid-staking",
+    "description": "The label for category liquid-staking in sidebar tutorialSidebar"
+  },
+  "sidebar.learnSidebar.category.All About Core": {
+    "message": "All About Core",
+    "description": "The label for category All About Core in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Dual Staking": {
+    "message": "Dual Staking",
+    "description": "The label for category Dual Staking in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.CORE Token": {
+    "message": "CORE Token",
+    "description": "The label for category CORE Token in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Liquid Staking": {
+    "message": "Liquid Staking",
+    "description": "The label for category Liquid Staking in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Liquid Staking.link.generated-index.title": {
+    "message": "Liquid Staking on Core: Unlocking Yield and DeFi Composability",
+    "description": "The generated-index page title for category Liquid Staking in sidebar learnSidebar"
+  },
+  "sidebar.learnSidebar.category.Liquid Staking.link.generated-index.description": {
+    "message": "Learn about the different liquid staking solutions on Core.",
+    "description": "The generated-index page description for category Liquid Staking in sidebar learnSidebar"
+  },
+  "sidebar.devGuideSidebar.category.Core for Developers": {
+    "message": "Core for Developers",
+    "description": "The label for category Core for Developers in sidebar devGuideSidebar"
+  },
+  "sidebar.faqSidebar.category.FAQs": {
+    "message": "FAQs",
+    "description": "The label for category FAQs in sidebar faqSidebar"
+  },
+  "sidebar.nodeSidebar.category.Running Core Nodes": {
+    "message": "Running Core Nodes",
+    "description": "The label for category Running Core Nodes in sidebar nodeSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.Staking / Delegating": {
+    "message": "Staking / Delegating",
+    "description": "The label for category Staking / Delegating in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.stakeDelegateSidebar.category.Self-Custodial BTC Staking": {
+    "message": "Self-Custodial BTC Staking",
+    "description": "The label for category Self-Custodial BTC Staking in sidebar stakeDelegateSidebar"
+  },
+  "sidebar.apiSidebar.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Getting Started.link.generated-index.title": {
+    "message": "Core Scan Tutorials",
+    "description": "The generated-index page title for category Getting Started in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Getting Started.link.generated-index.description": {
+    "message": "Learn about how to use the Core Scan API Endpoints",
+    "description": "The generated-index page description for category Getting Started in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.API Endpoints": {
+    "message": "API Endpoints",
+    "description": "The label for category API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.API Endpoints.link.generated-index.title": {
+    "message": "Core Scan API Documentation",
+    "description": "The generated-index page title for category API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.API Endpoints.link.generated-index.description": {
+    "message": "Explore the various Core Scan API Endpoints for Core Mainnet and Testnet2",
+    "description": "The generated-index page description for category API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Mainnet API Endpoints": {
+    "message": "Mainnet API Endpoints",
+    "description": "The label for category Mainnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Mainnet API Endpoints.link.generated-index.title": {
+    "message": "Staking API Documentation",
+    "description": "The generated-index page title for category Mainnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Mainnet API Endpoints.link.generated-index.description": {
+    "message": "Explore the various Staking API Endpoints for Core Mainnet",
+    "description": "The generated-index page description for category Mainnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Testnet API Endpoints": {
+    "message": "Testnet API Endpoints",
+    "description": "The label for category Testnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Testnet API Endpoints.link.generated-index.title": {
+    "message": "Staking API Documentation",
+    "description": "The generated-index page title for category Testnet API Endpoints in sidebar apiSidebar"
+  },
+  "sidebar.apiSidebar.category.Testnet API Endpoints.link.generated-index.description": {
+    "message": "Explore the various Staking API Endpoints for Core Testnet2",
+    "description": "The generated-index page description for category Testnet API Endpoints in sidebar apiSidebar"
   }
 }

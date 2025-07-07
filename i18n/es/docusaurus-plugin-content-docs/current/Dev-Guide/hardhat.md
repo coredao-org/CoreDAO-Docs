@@ -11,11 +11,11 @@ description: Implementar contratos en Core usando Hardhat
 
 Hardhat es un entorno de desarrollo popular para blockchains compatibles con EVM, compuesto por varios componentes para escribir, compilar, depurar y desplegar contratos inteligentes.
 
-En este tutorial, aprenderás a compilar, desplegar y llamar contratos inteligentes en Core Testnet usando Hardhat. Obtén el código base para este tutorial desde [aquí](https://github.com/coredao-org/hardhat-tutorial).
+En este tutorial, aprende cómo compilar, desplegar y llamar contratos inteligentes en Core Testnet usando Hardhat. Obtén el código base para este tutorial desde [aquí](https://github.com/coredao-org/hardhat-tutorial).
 
 ## Instalación
 
-Dirígete a la carpeta de tu perfil y sigue los pasos a continuación para instalar Hardhat (se requiere npm/node [v8.9.4 LTS o posterior](https://nodejs.org/en/)):
+Navega a tu carpeta de perfil y sigue los pasos a continuación para instalar Hardhat (se requiere npm/node v8.9.4) [LTS o superior](https://nodejs.org/en/):
 
 1. `npm init --yes`
 2. `npm install --save-dev hardhat`
@@ -23,7 +23,7 @@ Dirígete a la carpeta de tu perfil y sigue los pasos a continuación para insta
 
 ## Inicialización del Proyecto
 
-Después de la instalación, inicializa Hardhat ejecutando el comando `npx hardhat`:
+Después de la instalación, podemos inicializar Hardhat ejecutando el comando `npx hardhat`:
 
 ```javascript
 $ npx hardhat
@@ -50,9 +50,9 @@ Una vez inicializado, la estructura del proyecto será la siguiente:
 - `contracts`:  para los contratos inteligentes en Solidity.
 - `scripts`:para scripts en JavaScript/TypeScript para interactuar con los contratos.
 - `test`: para escribir y ejecutar pruebas.
-- `hardhat.config.js`: archivo de configuración de Hardhat.
+- `hardhat.config.js`: Archivo de configuración de Hardhat.
 
-## Configurar Hardhat para Core Testnet
+## Configura Hardhat para Core Testnet
 
 Copia lo siguiente en tu archivo hardhat.config.js:
 
@@ -102,9 +102,9 @@ module.exports = {
 };
 ```
 
-**Asegurate de que tu contrato inteligente cumpla con los [Lineamientos de Soporte para Solidity en Core Blockchain](./smart-contract-guidelines.md)**, para hacerlo, asegúrate de que el parámetro `evmVersion` esté configurado como `shanghai` en los ajustes del compilador de Solidity dentro del archivo `hardhat.config.js`.
+**Asegúrate de que tu contrato inteligente siga las [Directrices de Soporte de Solidity para la blockchain Core](./smart-contract-guidelines.md)**; para ello, verifica que el parámetro `evmVersion` esté configurado como `shanghai` dentro de los ajustes del compilador solidity en el archivo `hardhat.config.js`.
 
-Si estás usando **Core Testnet1**, el parámetro `evmVersion` debe configurarse como `Paris`.
+Si estás usando **Core Testnet1**, el parámetro `evmVersion` debe estar configurado como `paris`.
 
 :::note
 Deberás proporcionar tus claves privadas o frase mnemónica para el proveedor. Puedes almacenarlos en un archivo `secret.json`. Asegúrate de agregar este archivo al `.gitignore` de tu proyecto para evitar subir accidentalmente tus claves privadas a un repositorio público. Adicionalmente, ¡guarda este archivo en una ubicación segura para proteger tu información confidencial!
@@ -182,7 +182,7 @@ describe("Storage", function () {
 });
 ```
 
-Para probar nuestro contrato `Storage.sol` en la red Hardhat incorporada, ejecute el siguiente comando:
+Para probar nuestro contrato `Storage.sol` en la red incorporada de Hardhat, ejecuta el siguiente comando:
 
 `npx hardhat test --network hardhat`
 
@@ -201,7 +201,7 @@ $ npx hardhat test --network hardhat
 
 ## Implementación y interacción del contrato
 
-Hardhat facilita el uso de la biblioteca `ethers.js` para implementar e interactuar con nuestros contratos inteligentes. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
+Hardhat facilita el uso de la biblioteca `ethers.js` para desplegar e interactuar con nuestros smart contracts. Cree un nuevo archivo llamado `deploy-and-call.js` en la carpeta `scripts` que contenga el siguiente código:
 
 ```javascript
 // We require the Hardhat Runtime Environment explicitly here. This is optional
@@ -258,7 +258,7 @@ call retrieve() again: BigNumber { value: "100" }
 
 Podemos ver que el script implementó correctamente el contrato, almacenó un número y confirmó que el número ahora está almacenado en el contrato.
 
-Podemos usar [Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y verificar que fue desplegado y llamado exitosamente.
+Podemos usar[ Core Scan](https://scan.test2.btcs.network/) para buscar la dirección del contrato y verificar que fue desplegado y llamado exitosamente.
 
 <p align="center">
 ![hardhat](../../../../../static/img/hardhat/hardhat-1.avif)
@@ -266,4 +266,4 @@ Podemos usar [Core Scan](https://scan.test2.btcs.network/) para buscar la direcc
 
 ## Lectura adicional
 
-Para obtener instrucciones detalladas sobre cómo usar Hardhat y complementos como `ethers.js`, visita [el sitio web oficial de Hardhat](https://hardhat.org/docs).
+Para instrucciones detalladas sobre el uso de Hardhat y plugins como `ethers.js`, por favor visita el [sitio oficial de Hardhat](https://hardhat.org/docs).

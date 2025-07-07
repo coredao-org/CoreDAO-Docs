@@ -8,37 +8,291 @@ sidebar_position: 2
 
 ![Core LayerZero OFT](https://github.com/user-attachments/assets/ac7382c0-6825-4fb8-91c2-5e022a2eca66)
 
----
+Ce guide détaille le processus d'activation des transferts de jetons ERC-20 inter-chaînes sur Core en utilisant le protocole Omnichain Fungible Token (OFT) V2 de LayerZero. Il est conçu à la fois pour les débutants et les développeurs expérimentés, offrant des instructions étape par étape et des références aux ressources officielles et à la documentation pertinente[CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
 
-Dans ce [guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide), nous vous accompagnons à travers le processus de mise en place de transferts de tokens cross-chain en utilisant le protocole Omnichain Fungible Token (OFT) V2 de LayerZero. Plus précisément, ce guide se concentre sur l'activation des transferts de tokens ERC-20 entre le Core Testnet et le Base Sepolia Testnet, équipant les développeurs des outils et connaissances nécessaires pour gérer les interactions de tokens cross-chain.
+## Aperçu
 
-Que vous soyez débutant ou développeur expérimenté, [ce guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) vous aidera à :
+Cette documentation vous guide à travers le processus de configuration des transferts de jetons inter-chaînes en utilisant le protocole OFT V2 de LayerZero. L'objectif principal est de permettre les transferts de jetons ERC-20 entre le testnet/mainnet Core et d'autres réseaux compatibles EVM, tels que Base Sepolia et Optimism. En suivant ce guide, vous apprendrez à:
 
-Configurer et paramétrer Hardhat pour les déploiements cross-chain.
-Déployer des contrats OFT sur Core Testnet et Base Sepolia Testnet.
-Configurer les endpoints LayerZero et établir des remotes de confiance pour une communication sécurisée entre blockchains.
-Exécuter des transferts de tokens cross-chain, permettant un déplacement efficace des actifs à travers différents réseaux blockchain.
+- Configurer et configurer votre environnement de développement pour les déploiements inter-chaînes.
+- Déployer et vérifier les contrats OFT sur Core et les réseaux externes.
+- Configurer les points de terminaison LayerZero et établir des distants sécurisés et fiables.
+- Exécuter et suivre les transferts de jetons inter-chaînes.
+- Personnaliser la configuration OFT pour répondre aux besoins spécifiques de votre jeton.
 
-Si vous êtes prêt à plonger, accédez au guide complet [ici](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide).
+Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub repository](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) pour des exemples de code et des guides détaillés.
 
-## Points Principaux Couverts dans le Guide :
+## Prérequis
 
-- **Configuration de l'Environnement de Développement :** Installez Node.js, pnpm et Hardhat, puis initialisez votre projet pour commencer à travailler avec le protocole OFT V2 de LayerZero.
+- **Node.js v18+** and **npm**/**pnpm** installed
+- **MetaMask Wallet** avec des fonds sur Core et les réseaux ciblés
+- Connaissances de base de Hardhat et Solidity
 
-- **Déploiement des Contrats OFT :** Suivez des instructions étape par étape pour déployer des contrats qui permettent les transferts de tokens cross-chain entre Core Testnet et Base Sepolia.
+## Configuration de l'environnement
 
-- **Configuration des Pairs Cross-Chain :** Apprenez comment définir des remotes de confiance et configurer les pathways LayerZero pour assurer des transferts de tokens fiables et sécurisés.
+1. **Initialiser votre projet**
 
-- **Exécution des Transferts de Tokens :** Utilisez les tâches Hardhat pour effectuer des transferts de tokens cross-chain, en vérifiant les transactions sur les explorateurs blockchain.
+  ```js
+  npx create-lz-oapp@latest
+  # Choose "OFT example" and "pnpm"
+  cd your-project-name
 
-- **Personnalisation de la Configuration du Token :** Bien que ce guide se concentre sur le bridging de tokens ERC-20, les contrats OFT peuvent être adaptés pour répondre à différents besoins en tokens, qu'ils soient fongibles ou non fongibles. Vous pouvez modifier la configuration pour vos besoins spécifiques en tokens.
+  ```
 
-- Pour des personnalisations supplémentaires et des détails de configuration plus approfondis, vous pouvez vous référer à la [documentation de LayerZero sur la configuration OFT et EVM](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+2. **Configurer les réseaux**
 
-Cette ressource vous aidera à vous guider à travers toute configuration avancée non couverte dans ce guide, en vous assurant que vous pouvez adapter le processus aux exigences spécifiques de votre projet.
+  Mettez à jour `hardhat.config.ts` avec les paramètres de Core et d'autres réseaux EVM :
 
-## Pourquoi ce Guide est Important :
+  ```typescript
+  // Example for CoreDAO
+  'coredao-mainnet': {
+    eid: EndpointId.COREDAO_V2_MAINNET,
+    url: process.env.RPC_URL_COREDAO || 'https://rpc.coredao.org',
+    accounts: [process.env.PRIVATE_KEY]
+  },
+  'coredao-testnet': {
+    eid: EndpointId.COREDAO_V2_TESTNET,
+    url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test2.btcs.network',
+    accounts: [process.env.PRIVATE_KEY]
+  },
+  ```
 
-En implémentant l'OFT V2 de LayerZero, vous débloquez la capacité de créer des écosystèmes de tokens omnichain où les tokens peuvent être transférés efficacement à travers plusieurs blockchains. Le bridging de tokens entre Core Testnet et Base Sepolia est utilisé comme exemple en raison de sa rapidité et de ses faibles frais. Via les endpoints fournis par LayerZero, vous êtes en mesure de transférer des tokens entre Core et de nombreux réseaux EVM différents. — ce guide montre à quel point il est facile d'étendre la portée de votre projet en permettant l'interopérabilité entre les réseaux. Cela ouvre de nouvelles possibilités pour les applications décentralisées (dApps) qui nécessitent des interactions de tokens à travers diverses blockchains, améliorant la liquidité, l'évolutivité et la fonctionnalité.
+## Déploiement du contrat OFT
 
-Commencez votre parcours avec le guide complet [ici](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) et explorez le potentiel des solutions omnichain de LayerZero. Pour des configurations plus détaillées, assurez-vous de visiter les [ressources officielles de LayerZero](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+````
+Modifiez le contrat OFT pour permettre la création de jetons. Allez dans `contracts/MyOFT.sol` et mettez à jour le code comme suit 
+
+```javascript
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.22;
+
+import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+import { OFT } from "@layerzerolabs/oft-evm/contracts/OFT.sol";
+
+contract MyOFT is OFT {
+   constructor(
+    string memory _name,
+    string memory _symbol,
+    address _lzEndpoint,
+    address _delegate
+) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
+    // Mint tokens to the deployer's address (msg.sender)
+    _mint(msg.sender, 100_000 \* 10 \*\* 18);
+    }
+}
+```
+````
+
+1. **Déployer sur le réseau Core**
+
+  ```bash
+  npx hardhat lz:deploy
+  # Select 'coredao-mainnet' or 'coredao-testnet'
+  ```
+
+2. **Vérifier le déploiement (facultatif)**
+
+  ```bash
+  npx hardhat verify --network coredao-mainnet DEPLOYED_CONTRACT_ADDRESS
+  ```
+
+## Configuration des connexions inter-chaînes
+
+1. **Créer une configuration de chemins LayerZero**
+
+  In `layerzero.config.ts`:
+
+  ```typescript
+  const pathways: TwoWayConfig[] = [
+    [
+      optimismContract, //Chain A contract
+      coredaoContract, //Chain B contract
+      [["LayerZero Labs"], []], // DVN configuration
+      [1, 1], // [A to B confirmations, B to A confirmations]
+      [EVM_ENFORCED_OPTIONS, EVM_ENFORCED_OPTIONS],
+    ],
+  ];
+  ```
+
+2. **Câbler les connexions**
+
+  ```bash
+  npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
+  ```
+
+3. **Verify Peers(Vérifier les pairs)**
+
+  ```bash
+  npx hardhat lz:oapp:peers:get --oapp-config layerzero.config.ts
+  ```
+
+## Exécuter des transferts de jetons inter-chaînes
+
+Pour envoyer des jetons inter-chaînes entre vos contrats en utilisant la technologie LayerZero, vous devrez créer une tâche Hardhat personnalisée.
+
+1. **Créez le dossier des tâches**
+  Dans la racine de votre projet, créez un dossier nommé **tasks** s'il n'existe pas déjà.
+
+```shell
+mkdir tasks
+```
+
+2. **Créez le fichier de tâche**
+  Dans le répertoire des tâches, créez un fichier nommé:
+
+```bash
+sendOFT.ts
+```
+
+3. **Ajoutez le code de la tâche**
+
+Collez la tâche Hardhat suivante dans le fichier `sendOFT.ts`:
+
+```javascript
+import { ethers } from "ethers";
+import { task } from "hardhat/config";
+
+import {
+  createGetHreByEid,
+  createProviderFactory,
+  getEidForNetworkName,
+} from "@layerzerolabs/devtools-evm-hardhat";
+import { Options } from "@layerzerolabs/lz-v2-utilities";
+
+// Send tokens from a contract on one network to another
+task("lz:oft:send", "Send tokens cross-chain using LayerZero technology")
+  .addParam("contractA", "Contract address on network A")
+  .addParam("recipientB", "Recipient address on network B")
+  .addParam("networkA", "Name of the network A")
+  .addParam("networkB", "Name of the network B")
+  .addParam("amount", "Amount to transfer in token decimals")
+  .addParam("privateKey", "Private key of the sender")
+  .setAction(async (taskArgs, hre) => {
+    const eidA = getEidForNetworkName(taskArgs.networkA);
+    const eidB = getEidForNetworkName(taskArgs.networkB);
+    const contractA = taskArgs.contractA;
+    const recipientB = taskArgs.recipientB;
+
+    const environmentFactory = createGetHreByEid();
+    const providerFactory = createProviderFactory(environmentFactory);
+    const provider = await providerFactory(eidA);
+    const wallet = new ethers.Wallet(taskArgs.privateKey, provider);
+
+    const oftContractFactory = await hre.ethers.getContractFactory(
+      "MyOFT",
+      wallet
+    );
+    const oft = oftContractFactory.attach(contractA);
+
+    const decimals = await oft.decimals();
+    const amount = hre.ethers.utils.parseUnits(taskArgs.amount, decimals);
+    const options = Options.newOptions()
+      .addExecutorLzReceiveOption(200000, 0)
+      .toHex()
+      .toString();
+    const recipientAddressBytes32 = hre.ethers.utils.hexZeroPad(recipientB, 32);
+
+    // Estimate the fee
+    try {
+      console.log("Attempting to call quoteSend with parameters:", {
+        dstEid: eidB,
+        to: recipientAddressBytes32,
+        amountLD: amount,
+        minAmountLD: amount.mul(98).div(100),
+        extraOptions: options,
+        composeMsg: "0x",
+        oftCmd: "0x",
+      });
+      const nativeFee = (
+        await oft.quoteSend(
+          [
+            eidB,
+            recipientAddressBytes32,
+            amount,
+            amount.mul(98).div(100),
+            options,
+            "0x",
+            "0x",
+          ],
+          false
+        )
+      )[0];
+      console.log("Estimated native fee:", nativeFee.toString());
+
+      // Overkill native fee to ensure sufficient gas
+      const overkillNativeFee = nativeFee.mul(2);
+
+      // Fetch the current gas price and nonce
+      const gasPrice = await provider.getGasPrice();
+      const nonce = await provider.getTransactionCount(wallet.address);
+
+      // Prepare send parameters
+      const sendParam = [
+        eidB,
+        recipientAddressBytes32,
+        amount,
+        amount.mul(98).div(100),
+        options,
+        "0x",
+        "0x",
+      ];
+      const feeParam = [overkillNativeFee, 0];
+
+      // Sending the tokens with increased gas price
+      console.log(
+        `Sending ${taskArgs.amount} token(s) from network ${taskArgs.networkA} to network ${taskArgs.networkB}`
+      );
+      const tx = await oft.send(sendParam, feeParam, wallet.address, {
+        value: overkillNativeFee,
+        gasPrice: gasPrice.mul(2),
+        nonce,
+        gasLimit: hre.ethers.utils.hexlify(7000000),
+      });
+      console.log("Transaction hash:", tx.hash);
+      await tx.wait();
+      console.log(
+        `Tokens sent successfully to the recipient on the destination chain. View on LayerZero Scan: https://layerzeroscan.com/tx/${tx.hash}`
+      );
+    } catch (error) {
+      console.error("Error during quoteSend or send operation:", error);
+      if (error?.data) {
+        console.error("Reverted with data:", error.data);
+      }
+    }
+  });
+```
+
+4. **Exécutez le transfert inter-chaînes**
+
+  Retournez à votre fichier `hardhat.config.ts` et décommentez : import './tasks/sendOFT
+
+  Ouvrez votre terminal dans la racine de votre répertoire de travail et exécutez la commande suivante :
+
+```shell
+npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a coredao-mainnet --network-b desired-network --amount 100 --private-key <PRIVATE_KEY>
+```
+
+5. **Suivez les transferts**
+
+  Utilisez [LayerZero Scan Explorer](https://layerzeroscan.com) pour surveiller les transactions inter-chaînes :
+
+```
+https://layerzeroscan.com/tx/TX_HASH
+```
+
+## Personnalisation et configuration avancée
+
+- **Approvisionnement en jetons**: Ajoutez une logique de frappe à la fonction constructeur pour un approvisionnement personnalisé.
+- **Frais de transfert** : Ajustez les paramètres de `quoteSend` pour la gestion des frais.
+- **Sécurité** : Modifiez les seuils DVN et les paramètres de confiance à distance dans la configuration.
+- **Support multi-chaîne** : Ajoutez de nouvelles entrées de réseau dans vos configurations Hardhat et LayerZero.
+
+Pour une personnalisation et une configuration avancées supplémentaires, reportez-vous à [LayerZero’s official documentation](https://docs.layerzero.network/v2/developers/evm/oft/quickstart).
+
+## Ressources
+
+- [CoreDAO-LayerZero GitHub Guide](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide)
+- [LayerZero OFT Quickstart](https://docs.layerzero.network/v2/developers/evm/oft/quickstart)
+- [LayerZero Scan Explorer](https://layerzeroscan.com)
+
+En suivant ce guide, vous pourrez configurer des transferts de jetons inter-chaînes fluides entre Core et d'autres réseaux EVM. Pour des exemples plus détaillés et un support supplémentaire, visitez le [référentiel GitHub officiel](https://github.com/coredao-org/LZ-OFT-V2-Core-Guide) et la documentation de LayerZero.

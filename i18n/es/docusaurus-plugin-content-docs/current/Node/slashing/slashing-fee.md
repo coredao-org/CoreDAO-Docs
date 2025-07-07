@@ -1,32 +1,36 @@
 ---
-sidebar_label: Slashing Fee
+sidebar_label: Tarifa de Slashing
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Slashing Fees
+# Tarifa de reducción
+
 ---
 
-## Unavailability
-Slashing penalties are generally incurred because a node fails to successfully produce a block during its designated turn in the **round-robin block-mining** procedure as described in the [Validator Election](../../Node/validator/validator-election.md) section. 
+## Indisponibilidad
 
-* If a validator node fails to mine **50 blocks** in a row, the CORE token rewards the validator has accrued so far are slashed completely.
-* If a validator node fails to mine the first **49 blocks** in a round, and then misses the last block of the same round, this will lead to slashing of the entire CORE token rewards the validator has accrued so far. 
-* If they fail on the last **50** blocks of the round, they surrender everything they’ve earned. 
-* If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, i.e., 1,000 CORE, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set. 
+Generalmente se incurre en sanciones de reducción porque un nodo no logra producir con éxito un bloque durante su turno designado en el procedimiento de **minería de bloques por turnos** como se describe en [Elección del validador](../validator/validator-election.md) sección.
 
-## Double Sign
-Anyone can submit a slash request with the evidence of double signing activity on the Core blockchain.
+- Si un nodo validador no logra minar **50 bloques** seguidos, las recompensas de tokens CORE que el validador ha acumulado hasta el momento se reducen por completo.
+- Si un nodo de validación no logra extraer los primeros **49 bloques** en una ronda y luego pierde el último bloque de la misma ronda, esto dará lugar a una reducción de todas las recompensas de tokens CORE que el validador ha acumulado hasta el momento.
+- Si fallan en los últimos **50** bloques de la ronda, entregarán todo lo que han ganado.
+- Si un validador no logra extraer **150 bloques** seguidos, entrega su parte de las recompensas diarias de tokens CORE, pierde el **10 %** del depósito realizado para convertirse en validador (ej: 1,000 CORE) y es encarcelado por **tres** días, lo que significa que no son elegibles para ser elegidos para el conjunto de validadores.
 
-### Evidence Validation
-* Two block headers have the same height and the same parent block hash
-* Two block headers are sealed by the same validator
-* Two signatures of these two blocks must not be the same
-* The validator should be in the set of current round’s validators.
+## Doble signo
 
-If the evidence is valid:
-1. **10,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
-2. The slashed validator would be jailed and barred from the network forever
-3. **500** of slashed CORE would be allocated to the submitter as a reward
-4. The rest of slashed CORE will transfer into System Reward Pool
+Cualquiera puede enviar una solicitud de slash con evidencia de una actividad de doble firma en la blockchain de Core.
 
+### Validación de evidencia
+
+- Dos encabezados de bloque tienen la misma altura y el mismo hash de bloque principal
+- El mismo validador ha sellado dos encabezados de bloque diferentes
+- Dos firmas de estos dos bloques no deben ser iguales.
+- El validador debe estar en el conjunto de validadores de la ronda actual.
+
+Si la evidencia es válida:
+
+1. **10,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
+2. El validador recortado sería encarcelado y excluido de la red para siempre.
+3. **500** de CORE recortado se asignarían al remitente como recompensa
+4. El resto de los tokens CORE penalizados se transfiere al System Reward Pool

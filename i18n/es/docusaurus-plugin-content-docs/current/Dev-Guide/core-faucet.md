@@ -8,28 +8,23 @@ sidebar_position: 2
 
 ---
 
-Para ayudar a los usuarios a comenzar y permitir a los desarrolladores crear rápidamente prototipos de sus dApps, Core ha lanzado el Core Testnet Faucet público para distribuir tokens de Core Testnet, **tCORE2**.
+Para ayudar a los usuarios a comenzar y permitir a los desarrolladores prototipar rápidamente sus dApps, Core ha lanzado el Faucet público de Core Testnet para distribuir tokens de Core Testnet, **tCORE2**.
 
-## Pasos para obtener tCORE2 del faucet de Core Testnet
+## Pasos para obtener tCORE2 del Faucet de Core Testnet
 
-1. Navegue al sitio web de faucet.
-
-   - **Para Core Testnet2 (1114) Faucet:** https://scan.test2.btcs.network/faucet
-
-2. Pegue su dirección en el cuadro de texto proporcionado. Asegúrese de proporcionar la dirección Core Testnet de su billetera que desea recibir fondos con tCORE2.
-
-3. Complete el CAPTCHA.
-
-4. Si usa faucet para Core Testnet (1114), haga clic en el botón "Obtener tCORE2". Después de solicitar tCORE2 del grifo, verá que el balance de su MetaMask aumenta.
+1. Navega al sitio web del faucet para [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
+2. Pega la dirección de tu wallet en el campo de entrada proporcionado. Asegúrate de ingresar la dirección de Core Testnet2 de la wallet que deseas fondear con tCORE2.
+3. Completa la verificación CAPTCHA.
+4. Haz clic en el botón `Get tCORE2`. Después de solicitar exitosamente tCORE2 del faucet, el saldo de tu wallet aumentará.
 
 <p align="center">
 ![using-faucet-test2](../../../../../static/img/faucet/faucet-test2.png)
 </p>
 
 :::caution
-Cada dirección puede solicitar **solo un tCORE2 por día** del faucet en 24 horas. Si se quedó sin tCORE2 y el faucet no le envía más debido al límite diario de un tCORE2, regrese después de 24 horas e inténtelo nuevamente. O bien, puede solicitarlo en el servidor Discord de Core.
+Cada dirección puede solicitar tCORE2 **solo una vez al día** desde el faucet, dentro de un período de 24 horas. Si te has quedado sin tCORE2 y el faucet no te envía más debido al límite diario de un tCORE2, regresa después de 24 horas e intenta de nuevo. Alternativamente, puedes solicitarlo en el [servidor de Discord](https://discord.com/invite/coredaoofficial) de Core.
 :::
 
 :::note
-tCORE2 solo se usan para pruebas y no tienen ningún valor. No lo use para transacciones financieras reales.
+tCORE2 son solo tokens de prueba y se usan únicamente para testing, no tienen ningún valor. No lo use para transacciones financieras reales.
 :::
