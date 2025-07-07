@@ -99,7 +99,7 @@ print(response.content)
 ```
 
 :::note
-Vous pouvez remplacer l'URL (`https://rpc.ankr.com/core`) par n'importe quelle URL RPC valide trouvée dans la documentation Core, et n'oubliez pas d'entourer l'URL de guillemets simples.
+You can replace the URL https://rpc.ankr.com/core with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
 :::
 
 
