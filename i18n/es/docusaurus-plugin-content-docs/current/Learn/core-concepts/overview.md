@@ -3,58 +3,67 @@ sidebar_label: Descripción general
 hide_table_of_contents: false
 sidebar_position: 2
 description: "Obtenga una descripción general de Core: su propósito, misión y visión futura"
+slug: /learn/core-concepts/overview
 ---
 
 # Descripción general de la cadena de bloques Core
 
 ---
 
-## Introduccion
+## Introducción
 
-Core is a high-performance, EVM-compatible Layer-1 blockchain, designed to be Bitcoin's complementary and hyper-scalable smart contract platform. By leveraging Bitcoin-native CLTV timelocks, Bitcoin mining hash power, and modern smart contract capabilities, Core unlocks Bitcoin as both the prime protector and central asset of a thriving decentralized application ecosystem.
+Core es una blockchain de Capa 1 compatible con EVM, diseñada para ser la plataforma de contratos inteligentes complementaria y altamente escalable de Bitcoin. Al aprovechar los timelocks CLTV nativos de Bitcoin, el poder de hash de la minería de Bitcoin y las capacidades modernas de contratos inteligentes, Core desbloquea a Bitcoin como el principal protector y activo central de un ecosistema próspero de aplicaciones descentralizadas.
 
-## Propósito y Misión
+### El Primer Mecanismo de Staking de Bitcoin Auto-Custodiado
 
-The Core blockchain exists to unlock both the Bitcoin network and Bitcoin as an asset, creating a scalable, permissionless smart contract platform that empowers Bitcoin-focused finance while leveraging Bitcoin's decentralized security and immense value.
+El componente de Self-Custodial Bitcoin Staking de Satoshi Plus es el primer mecanismo de staking de Bitcoin auto-custodiado en funcionamiento, lo que permite a los holders de Bitcoin ganar rendimientos de forma trustless sin introducir nuevas suposiciones de confianza.
 
-Bitcoin alignment is central to this mission because Bitcoin itself serves as the ultimate incentive aligner. While the Bitcoin blockchain securely preserves the Bitcoin asset by aligning stakeholder incentives, its design necessarily limits speed, scalability, and flexibility. Rather than modifying Bitcoin's base layer, Core extends this alignment through its Satoshi Plus consensus mechanism.
+### Aprovechando la Seguridad de Bitcoin y Empoderando a los Mineros
 
-Bitcoin's Nakamoto Consensus and Core's Satoshi Plus consensus mutually reinforce each other, simultaneously protecting both the Bitcoin asset and Bitcoin-powered smart contracts. This synergy unlocks multiple benefits: a trustless yield for Bitcoin holders, supplemental rewards for Bitcoin miners, and a growing Bitcoin-powered financial ecosystem that serves both Bitcoin and DeFi users.
+Actualmente, Satoshi Plus se beneficia de la seguridad proporcionada por ~75% del poder de minado de Bitcoin mediante la delegación. Al involucrar a los mineros en las elecciones de validadores, se aprovecha la descentralización incomparable de Bitcoin mientras se ofrecen recompensas complementarias a los mineros, abordando así el problema de la disminución a largo plazo de las recompensas por bloque de Bitcoin.
 
 ## Tecnología Core
 
-1. **Satoshi Plus Consensus:** This innovative consensus mechanism combines Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS), and Self-Custodial Bitcoin Staking, thereby incorporating Bitcoin miners, CORE stakers, and Bitcoin stakers, respectively, in the election of Core validators. Cada uno de estos tres pilares de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
-   - **Delegated Proof of Work (DPoW):** Bitcoin miners enhance Core's security by delegating their hash power to Core validators and, in exchange, earn supplemental rewards in the form of CORE tokens. Esta relación simbiótica aprovecha la sólida infraestructura de seguridad de Bitcoin sin costos adicionales para los mineros, alineando incentivos y reforzando la integridad de la red.
-   - **Delegated Proof of Stake (DPoS):** Holders of CORE tokens actively participate in Core's consensus by delegating their tokens to validators as part of the validator election process. In exchange for electing healthy validators, CORE stakers earn CORE token rewards.
-   - **Self-Custodial Bitcoin Staking:** Bitcoin holders can participate in Core's validator election in exchange for timelocking their Bitcoin on the Bitcoin network using Bitcoin's native CLTV function. In exchange for electing healthy validators, Bitcoin stakers earn CORE token rewards.
-2. **Advanced Smart Contract Capabilities:** Core functions as a fully EVM-compatible Layer-1 blockchain, providing developers with a familiar environment to build and deploy applications. This compatibility allows for seamless porting of existing Ethereum-based dApps to Core with minimal modifications, accelerating ecosystem growth while leveraging established development tools, libraries, and best practices.
-3. **Mejoras de seguridad**
-   - **Validación mejorada de transacciones**: Core involucra a mineros de Bitcoin y stakers de Bitcoin en la seguridad de sus contratos inteligentes.
-   - **Nodos Guardianes:** Además de los controles de seguridad existentes, los Verificadores son responsables de monitorear la red en busca de señales de actividad maliciosa y pueden penalizar a actores malintencionados con pruebas verificables.
-4. **Características de interoperabilidad**
-   - **Interoperabilidad entre cadenas:** Como blockchain escalable compatible con EVM, Core cuenta con integraciones con múltiples dApps y puentes entre cadenas.
-   - **Core Bridge:** Powered by Layer Zero, the Core Bridge facilitates effortless asset transfers between Core and other blockchains.
-   - **lstBTC _(Upcoming)_:** is a liquid, yield-bearing Bitcoin token issued on the Core blockchain, enabling Bitcoin holders—especially institutional investors—to earn BTC-denominated yield while maintaining existing custodial arrangements and full asset liquidity.
-5. **Usabilidad y Accesibilidad**
-   - **User-Friendly Interfaces:** Products on Core are easily accessible through several user-friendly and commonly used wallets and interfaces.
-   - **Herramientas completas para desarrolladores:** Core ofrece un conjunto exhaustivo de herramientas para ayudar a los desarrolladores a construir, implementar y gestionar aplicaciones en Core.
-6. **Gobernanza y participación comunitaria**
-   - **On-Chain Governance**: The Core blockchain also features an on-chain governance process. Key decisions, like changes to variable on-chain parameters, adjustments to rewards and burn mechanism, etc., are made through community participation and on-chain voting, giving users a direct say in the platform’s development.
+### Satoshi Plus Consensus
 
-## Estado del ecosistema Core
+Este innovador mecanismo de consenso combina Delegated Proof of Work (DPoW), Self-Custodial Bitcoin Staking y Delegated Proof of Stake (DPoS) Incorporando así a mineros de Bitcoin, stakers de Bitcoin y stakers de CORE, respectivamente, en la elección de validadores de Core. Cada una de estas tres partes de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
 
-Core hosts a thriving BTCfi ecosystem that unlocks Bitcoin and its derivatives for DeFi applications. While Bitcoin's limited programmability has traditionally left it underutilized in DeFi, Core provides an environment where protocols can leverage Bitcoin-based assets effectively. Multiple builder support programs like [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md), [Core Ignition](https://ignition.coredao.org/), [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram), [Core Starter Program](https://coredao.org/initiatives/corestarterprogram), and [Core Commit Program](https://coredao.org/initiatives/commit-program) are intended to support and incentivize building innovative projects on Core and catalyze more growth around Bitcoin DeFi.\
+### Capacidades Avanzadas de Contratos Inteligentes
+
+Core funciona como una blockchain de Capa 1 totalmente compatible con EVM, brindando a los desarrolladores un entorno robusto y familiar para construir y desplegar aplicaciones. Esta compatibilidad profunda permite una integración fluida de dapps basadas en Ethereum, con modificaciones mínimas, lo que acelera el crecimiento del ecosistema mientras se aprovechan herramientas, bibliotecas y prácticas de desarrollo ya consolidadas.
+
+### Alto Rendimiento
+
+El avanzado proceso de elección de validadores de Core permite una selección descentralizada de productores de bloques de alto rendimiento y eficiencia, lo que resulta en transacciones rápidas y de bajo costo. El diseño del protocolo preserva tanto la descentralización como la eficiencia operativa.
+
+### Interoperabilidad Cross-Chain
+
+Como una blockchain escalable y compatible con EVM, Core ofrece amplias capacidades de interoperabilidad entre cadenas:
+
+- **Core Bridge**: Impulsado por Layer Zero, el Core Bridge facilita transferencias de activos sin fricciones entre Core y otras blockchains
+- Integraciones con múltiples aplicaciones descentralizadas y puentes cross-chain
+
+### Usabilidad y Accesibilidad
+
+- **Interfaces Amigables**: Los productos construidos sobre Core son fácilmente accesibles mediante varias billeteras e interfaces ampliamente utilizadas
+- **Herramientas de Desarrollo Integrales**: Una suite extensa de herramientas para ayudar a los desarrolladores a construir, desplegar y gestionar aplicaciones en Core
+
+### Gobernanza y Participación Comunitaria
+
+La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. Las decisiones clave —incluyendo cambios en los parámetros on-chain, mecanismos de recompensas y ajustes del protocolo— se mejoran mediante la participación de la comunidad y votación on-chain, permitiendo a los usuarios influir directamente en el desarrollo de la plataforma.
+
+## Ecosistema de Builders de Core
+
+- [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
+- [Core Ignition](https://ignition.coredao.org/)
+- [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
+- [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
+- [Core Commit Program](https://coredao.org/initiatives/commit-program)
+
+Estos programas están diseñados para impulsar el crecimiento del ecosistema y fomentar la creación de soluciones innovadoras sobre la blockchain de Core.
+
 Explore el ecosistema Core en constante expansión [aquí](https://coredao.org/explore/ecosystem).
-
-## Visión de futuro
-
-La hoja de ruta Core está diseñada de acuerdo con el objetivo principal de desbloquear Bitcoin. Esto incluye muchas actualizaciones estructurales diseñadas para alinear aún más Bitcoin y Core, crear una mejor experiencia de usuario y aprovechar otras áreas de investigación y desarrollo. En última instancia, estos elementos deberían servir para crear un ecosistema blockchain más interconectado y funcionalmente diverso donde las fortalezas fundamentales de Bitcoin se aprovechen para respaldar tecnologías y aplicaciones nuevas y emergentes en DeFi. Algunos elementos de la hoja de ruta incluyen:
-
-- **lstBTC:** This liquid staking feature would allow Bitcoin stakers to earn yield on their asset while preserving the liquidity to participate in the DeFi landscape of Core and supported networks.
-- **Local Fee Markets:** Improvements that can make transactions more predictable and cost-effective.
-- **Core Atomic Swaps:** Leveraging HTLCs, Core Atomic Swaps will enable the trustless, peer-to-peer exchange of tokens between Core and other blockchains, including (and especially) Bitcoin.
-- **Restaking** Esta adición habilitaría que otros protocolos se beneficien de la protección que Bitcoin da a Core.
 
 ## Conclusión
 
-Core maximizes Bitcoin's utility while building a thriving Bitcoin-powered financial ecosystem through its unique Satoshi Plus consensus. By bringing together Bitcoin miners, CORE holders, and Bitcoin holders, Core creates a secure, decentralized platform where Bitcoin's fundamental strengths are enhanced, not compromised. This approach opens new possibilities for everyone in the ecosystem while cementing Bitcoin's role as the cornerstone of an open, permissionless digital economy.
+Core maximiza la utilidad de Bitcoin al construir un ecosistema financiero próspero impulsado por Bitcoin mediante su exclusivo consenso Satoshi Plus. Al reunir a los mineros de Bitcoin, los holders de CORE y los holders de Bitcoin, Core crea una plataforma segura y descentralizada donde las fortalezas fundamentales de Bitcoin se ven ampliadas, no comprometidas. Este enfoque abre nuevas posibilidades para todos dentro del ecosistema, al mismo tiempo que consolida el papel de Bitcoin como la piedra angular de una economía digital abierta y permissionless.

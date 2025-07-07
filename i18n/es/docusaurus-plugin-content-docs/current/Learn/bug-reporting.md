@@ -1,5 +1,5 @@
 ---
-sidebar_label: "**Reportando Vulnerabilidades de Seguridad**"
+sidebar_label: Reportando Vulnerabilidades de Seguridad
 hide_table_of_contents: false
 sidebar_position: 2
 ---

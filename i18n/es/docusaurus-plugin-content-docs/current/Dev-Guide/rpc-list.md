@@ -17,14 +17,15 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 ## Endpoints RPC para la red de Core
 
 <Tabs defaultValue="testnet2" values={[
-{label: 'Testnet2', value: 'testnet2'},
+{label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
+]}>
+<TabItem value="testnet2">
 
 ### Core Testnet2 (1114 (0x45a))
 
 :::info
-Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. La versión anterior de la testnet quedará obsoleta y eventualmente se retirará, por lo que la transición a esta nueva testnet garantiza el soporte continuo y acceso a las funciones más recientes.
+Nota: Esta es la testnet más reciente y oficialmente compatible para la blockchain de Core. La versión anterior de la testnet (chainID 1115) está obsoleta y ya no se mantiene. Se recomienda encarecidamente a los desarrolladores hacer la transición a la nueva testnet (chain ID 1114) para asegurar el soporte continuo y el acceso a las funciones más recientes.
 :::
 
 - https://rpc.test2.btcs.network
@@ -32,10 +33,9 @@ Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. L
 
 </TabItem>
 
-
 <TabItem value="mainnet">
 
-### Core Blockchain Mainnet (1116 (0x45c))
+### Core Mainnet (1116 (0x45c))
 
 - wss://ws.coredao.org
 - https://rpc.coredao.org
@@ -44,7 +44,8 @@ Nota: Esta es la última red de prueba y se recomienda encarecidamente su uso. L
 </TabItem>
 </Tabs>
 
-### Endpoints RPC de terceros para Core Blockchain Mainnet
+
+### Endpoints RPC de terceros para Core Mainnet
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core

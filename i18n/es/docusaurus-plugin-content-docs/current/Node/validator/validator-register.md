@@ -4,66 +4,21 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+
+
 # Registro de validador
 
 ---
 
 :::caution
-Antes de correr un nodo validador en Core, recomendamos encarecidamente leer él [whitepaper técnico](https://whitepaper.coredao.org/).
+Antes de correr un nodo Validador en Core, recomendamos encarecidamente leer él [whitepaper técnico](https://whitepaper.coredao.org/).
 :::
 
 ## Configurar un nodo completo en modo validador
 
-Antes de que puedas registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo Validador. Sigue esta [guia](./setting-up-validator.md) para configurar y correr un nodo validador. Tu nodo completo necesita sincronizarse con la red Core, lo que significa que debe descargar los datos de la cadena de bloques y mantenerse actualizado con los bloques más recientes.
+Antes de poder registrarte como validador, necesitas configurar y ejecutar un nodo completo en modo validador siguiendo la guía indicada [aquí](./setting-up-validator.md).
 
-### Genera la "Llave de consenso"
-
-Al inicializar un nodo validador, necesitas generar una Dirección de Consenso (Dirección Pública) para la llave. Esta dirección será utilizada por tu nodo para las operaciones de consenso.
-
-#### Generando la "Llave de consenso"
-
-Para crear una nueva clave de consenso, usa el siguiente comando. Este comando creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (dirección de consenso).
-
-```bash
-./build/bin/geth account new --datadir ./node
-```
-
-##### Notas importantes
-
-- **Asegura tu archivo de keystore y contraseña:** Guarda de manera segura tu archivo de keystore y la contraseña, ya que los necesitarás más adelante.
-- **Haz una copia de seguridad de tu clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
-
-Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de manera segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
-
-```bash
-echo {your-password} > password.txt
-```
-
-### Inicia el nodo validador
-
-Una vez que tengas la clave de consenso, puedes iniciar el nodo validador con el siguiente comando:
-
-```bash
-./build/bin/geth --config ./testnet2/config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt --mine --allow-insecure-unlock --cache 8000 --networkid 1114
-```
-
-Desglosemos las banderas utilizadas en este comando:
-
-- **`config ./config.toml`:** Especifica el archivo de configuración para el nodo. Asegúrate de tener la configuración correcta en `config.toml` para tu entorno.
-
-- **`datadir ./node`:** Indica el directorio de datos para el nodo.
-
-- **`unlock {your-validator-address}`:** Desbloquea la cuenta de validador utilizando la dirección generada en el paso anterior.
-
-- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Típicamente, esta sería la dirección de tu validador.
-
-- **`password password.txt`:** La contraseña para desbloquear la cuenta de tu validador (asegúrate de mantener este archivo seguro).
-
-- **`mine`:** Comienza el proceso de minería (validación de bloques).
-
-- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (úsalo con precaución).
-
-- **`cache 8000`:** Asigna una gran caché (8 GB en este caso) para mejorar el rendimiento.
+Asegúrate de que tu nodo validador esté en funcionamiento.
 
 ## Registra tu validador
 
@@ -72,8 +27,7 @@ Una vez que tu nodo esté en funcionamiento y sincronizado, puedes proceder con 
 1. **Navega al sitio web de Staking:** La forma más fácil de registrar un nuevo validador es utilizando los sitios web oficiales de staking de Core:
 
     - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
-    - [Core Testnet Staking website](https://stake.test.btcs.network/become-validator)
-    - [Core Testnet2 Staking website](https://stake.test2.btcs.network/become-validator)
+    - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
 
 2. **Conecta tu billetera:** En el sitio web de staking, haz clic en **Connect Wallet** en la esquina superior derecha y conecta tu billetera (como MetaMask, Ledger, etc) que contiene los tokens necesarios de CORE.
 
@@ -87,7 +41,7 @@ Proporcione información para cada uno de los campos del formulario:
 
 - **Consensus Address**: la dirección del validador que configuraste cuando inicializaste tu nodo validador.
 - **Fee Address**: la dirección usada para recolectar las tarifas por comisión.
-- **Comisión**: los ingresos se dividen entre el validador y sus delegados, y la comisión determina qué porcentaje de los ingresos del delegador toma el validador como compensación.
+- **Comisión**: Los ingresos se dividen entre el validador y sus delegadores. La comisión determina el porcentaje de los ingresos de los delegadores que se asigna al validador como compensación.
 - **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. El depósito mínimo para testnet y mainnet es **10,000 CORE**.
 
 5. **Enviar Registro:** Una vez que hayas completado toda la información requerida, haz clic en **Register** para enviar tu validador para su registro.
@@ -98,15 +52,15 @@ Después de enviar tu formulario de registro, puedes verificar si el registro fu
 
 ### Revisando los registros
 
-Abre el archivo de registro de tu nodo y busca el mensaje de error "unauthorized validator". Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
+Abre el log file de tu nodo y busca el mensaje de error `unauthorized validator`. Si aparece este mensaje, significa que tu nodo está registrado pero aún no ha sido elegido para formar parte del conjunto de validadores.
 
 ![formulario-registro-validador](../../../../../../static/img/validator/register/validator-register-2.avif)
 
 ## Elección del validador
 
-Cada día, los **27** validadores con los puntajes híbridos más altos son elegidos para formar parte del conjunto de validadores activos, siendo responsables de producir bloques y validar transacciones en la red Core durante todo el ciclo. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
+Cada día, los **27** validadores con hybrid score más alto son elegidos para formar parte del conjunto de validadores activos, siendo responsables de producir bloques y validar transacciones en la red Core durante toda la round. Cuando se extrae el último bloque de una ronda, las recompensas acumuladas de la ronda se distribuyen y se selecciona el conjunto de validadores de la siguiente ronda. Para obtener más detalles sobre cómo funciona la elección del validador, consulte la sección [elección del validador](./validator-election.md).
 
-Puede verificar el estado del validador en el sitio web de la apuesta; los validadores elegidos activos se marcarán como "Activo/Normal". El conjunto de validadores se actualiza a las **00:00 am UTC** todos los días.
+Puedes verificar el estado de los validadores en el sitio web de staking; los validadores elegidos y activos aparecerán marcados como `Active/Normal`. El conjunto de validadores se actualiza a las **00:00 am UTC** todos los días.
 
 ![validator-register-form](../../../../../../static/img/validator/validator-status.png)
 
@@ -118,7 +72,7 @@ El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar
 
 - **`Active/Refuse`:** El validador ha sido elegido para el ciclo actual, pero ha rechazado aceptar delegaciones. No calificado para las próximas elecciones.
 
-- **`Active/Jailed`:** El validador fue elegido para el ciclo actual, pero fue encarcelado debido a un delito. No calificado para las próximas elecciones.
+- **Active/Jailed:** Validador elegido en la ronda actual, pero jailed debido a una infracción grave y no calificado para la próxima elección.
 
 - **`Inactive/Queued`:** El validador está registrado pero no ha sido elegido. Calificado para las próximas elecciones.
 
@@ -135,6 +89,35 @@ El estatus del validador se actualiza diariamente a las 00:00 UTC. Puedes checar
 Puedes monitorear el estado de tu validador y su historial de producción de bloques en [Core Scan](https://scan.coredao.org/). Esta herramienta te permite rastrear si tu nodo está produciendo bloques exitosamente y funcionando correctamente.
 
 ![formulario-registro-validador](../../../../../../static/img/validator/register/validator-register-4.webp)
+
+## Establecer el Nombre del Validador
+
+Puedes asignar un nombre legible para humanos a tu nodo validador utilizando la UI de Staking de Core. Este nombre sirve como una etiqueta para que los delegadores y participantes de la red identifiquen tu validador en la interfaz.
+
+### Pasos para Establecer o Actualizar el Nombre de tu Validador
+
+1. **Accede al Sitio Web de Staking:** navega al [panel de control de validadores](https://stake.coredao.org/validators).
+2. **Ubica tu Validador:** identifica tu entrada en la lista de validadores. Por defecto, los validadores se muestran según su `Fee Address`.
+3. **Abre los Detalles del Validador:** haz clic en tu validador para abrir la página de Detalles del Validador.
+4. **Accede al Menú de Actualización:** en la página de Detalles del Validador, haz clic en el botón de menú (tres puntos verticales) junto al botón de Stake y selecciona "Update Name" en el menú desplegable.
+
+<p align="center">
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-1.png)
+</p>
+
+4. **Ingresa los Detalles del Validador:** proporciona el nombre y otros detalles en el formulario. Este nombre será visible públicamente para los delegadores y usuarios de la interfaz de red.
+
+<p align="center">
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-2.png)
+</p>
+
+5. **Firma el Mensaje de Propiedad del Validador:** haz clic en Sign para verificar la propiedad de tu dirección de validador firmando el mensaje mostrado.
+
+<p align="center">
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-3.png)
+</p>
+
+6. **Envía la Actualización:** después de verificar la información ingresada, envía la transacción para finalizar la actualización. Una vez que la transacción se confirme en la cadena, el nuevo nombre aparecerá reflejado en la lista de validadores.
 
 ## Manteniendo tu nodo validador
 

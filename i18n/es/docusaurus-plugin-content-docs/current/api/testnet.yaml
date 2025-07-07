@@ -282,10 +282,24 @@ paths:
           default: before
       - name: timestamp
         in: query
-        description: timestamp
+        description: Block Timestamp in UNIX Format
         required: true
         schema:
           type: string
+          pattern: '^\d+$'
+        responses:
+        '200':
+          description: Successful response
+        '400':
+          description: Invalid timestamp parameter
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: Invalid timestamp must be in unix format
   "/api/blocks/block_rewards_by_block_number/{blockno}":
     get:
       tags:
@@ -620,12 +634,27 @@ paths:
         schema:
           type: boolean
           default: true
-      - name: tag
+      - name: Number
         in: query
-        description: tag
+        description: >
+          Block Number Must be a hex number (e.g. 0x10fb78)
         required: true
         schema:
           type: string
+          pattern: '^0x[a-fA-F0-9]+$'
+          responses:
+            '200':
+              description: Successful response
+            '400':
+              description: Invalid Number parameter
+              content:
+                application/json:
+                  schema:
+                    type: object
+                    properties:
+                      error:
+                        type: string
+                        example: Invalid Number Parameter Must be a HEX string like 0x10fb78
   /api/geth/eth_getBlockTransactionCountByNumber:
     get:
       tags:

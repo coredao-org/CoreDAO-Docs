@@ -2,7 +2,7 @@
 sidebar_label: Connectez vos RPCs Core via Postman
 hide_table_of_contents: false
 sidebar_position: 2
-description: Apprenez à interagir avec Core en utilisant Postman
+description: "Apprenez à interagir avec Core en utilisant Postman"
 ---
 
 # Connectez-vous aux points de terminaison RPC de Postman

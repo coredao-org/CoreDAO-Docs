@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-En utilisant leurs clés publiques et privées, les mineurs de BTC peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains BTC et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur BTC avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage BTC associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau BTC pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant leur puissance de hachage BTC aux validateurs, les mineurs de BTC peuvent aider à sécuriser le réseau et à partager les récompenses du système.
+En utilisant leurs clés publiques et privées, les mineurs de Btc peuvent déléguer leur puissance de hachage à un validateur Core ou se la déléguer eux-mêmes s'ils choisissent de gérer un validateur, en vérifiant et synchronisant leur identité (adresses) sur les blockchains Btc et Core. Lorsque les relayeurs soumettent des transactions, ils synchronisent les blocs minés par le mineur Btc avec le réseau Core. À chaque cycle, le réseau Core calcule la puissance de hachage Btc associée à chaque validateur en comptant le nombre de blocs produits par chaque mineur sur le réseau Btc pendant la même journée de la semaine précédente. L'architecture de la communication de la chaîne de mappage est illustrée dans le schéma ci-dessous. En déléguant de la puissance de hachage à des validateurs, les mineurs de Btc peuvent aider à sécuriser le réseau et partager les récompenses du système.
 
 <p align="center">
 ![delegate-hash](../../../../../static/img/staoshi-plus/DPoW.png)
@@ -30,7 +30,7 @@ Les mineurs et pools de minage de Bitcoin doivent composer les informations suiv
 
 Voici une brève description de chaque élément :
 
-- OP\_RETURN: `0x6a`
+- OP_RETURN: `0x6a`
 - LENGTH: `0x2d`, représentant la longueur totale en octets après l'opcode `OP_RETURN`
 - CORE: `0x434f5245`
 - VERSION: `0x01`
@@ -64,5 +64,5 @@ Veuillez noter que votre adresse de validateur et votre adresse de récompense s
 
 - La blockchain Core utilise les enregistrements de blocs du réseau Bitcoin datant de sept jours pour calculer les scores hybrides. De plus, après qu'un validateur est élu, les récompenses de staking sont distribuées le deuxième jour après le changement de cycle. Ainsi, après avoir délégué leur puissance de hachage, les mineurs/pools de minage verront leur puissance de hachage utilisée dans le calcul de l'élection des Validateurs N+7 jours plus tard, et les récompenses seront réclamables N+8 jours plus tard.
 - Afin d'améliorer les récompenses obtenues de la blockchain Core, il est recommandé aux mineurs/pools de déléguer à plus d'un validateur et de répartir leur puissance de hachage de manière équilibrée. La solution optimale est de déléguer **\~5%** de votre puissance de hachage globale à chaque validateur.
-- Les informations sur les validateurs pour le mainnet Core se trouvent [ici](https://stake.coredao.org/). Les informations pour le testnet Core se trouvent [ici](https://stake.test.btcs.network/). Utilisez l'adresse de l'opérateur du validateur pour remplir la partie correspondante de la chaîne d'octets décrite ci-dessus.
-- Votre adresse de récompense doit être compatible EVM. Après avoir créé une adresse au format Ethereum à utiliser comme adresse de récompense, ajoutez-la après l'adresse du Validateur dans la chaîne d'octets décrite ci-dessus. Plus tard, vous utiliserez cette adresse de récompense pour réclamer vos récompenses depuis la blockchain Core en utilisant MetaMask ou votre portefeuille web préféré. Pour plus d'information sur comment ajouter Core à MetaMask, veuillez-vous référer à notre guide sur [Ajouter core à MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce).
+- Les informations sur les validateurs pour le mainnet Core se trouvent [ici](https://stake.coredao.org/). Les informations pour le testnet Core se trouvent [ici](https://stake.test2.btcs.network/). Utilisez l'adresse de l'opérateur du validateur pour remplir la partie correspondante de la chaîne d'octets décrite ci-dessus.
+- Votre adresse de récompense doit être compatible EVM. Après avoir créé une adresse au format Ethereum à utiliser comme adresse de récompense, ajoutez-la après l'adresse du Validateur dans la chaîne d'octets décrite ci-dessus. Plus tard, vous utiliserez cette adresse de récompense pour réclamer vos récompenses depuis la blockchain Core en utilisant MetaMask ou votre portefeuille web préféré. Pour plus d'information sur comment ajouter Core à MetaMask, veuillez-vous référer à notre guide sur [Ajouter core à MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).

@@ -125,7 +125,7 @@ print(response.content)
 
 
 :::note
-You can replace the URL (`https://rpc.ankr.com/core`) with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
+You can replace the URL https://rpc.ankr.com/core with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
 :::
 
 

@@ -1,5 +1,5 @@
 ---
-sidebar_label: Delegando poder de hasheo
+sidebar_label: Delegación de Hash Power de Bitcoin
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-Usando sus claves públicas y privadas, los mineros de BTC pueden delegar su poder de hash a un validador Core o delegarlo a sí mismos si eligen ejecutar un validador verificando y sincronizando su identidad (direcciones) tanto en la cadena de bloques BTC como en la Core. Cuando los retransmisores envían transacciones, sincronizan los bloques extraídos por el minero BTC con la Core Network. En cada ronda, la red Core calcula el poder de hash BTC asociado con cada validador contando la cantidad de bloques producidos por cada minero en la red BTC durante el mismo día de la semana anterior. La arquitectura de la comunicación de la cadena de mapeo se ilustra en el siguiente diagrama. La arquitectura de la comunicación de la cadena de mapeo se ilustra en el siguiente diagrama.
+Usando sus claves públicas y privadas, los mineros de Bitcoin pueden delegar su poder de hash a un validador Core o delegarlo a sí mismos si eligen ejecutar un validador verificando y sincronizando su identidad (direcciones) tanto en la cadena de bloques Bitcoin como en la Core. Cuando los retransmisores envían transacciones, sincronizan los bloques extraídos por el minero Bitcoin con la red de Core. Cada ronda, la red Core calcula el poder de hash Bitcoin asociado con cada validador contando la cantidad de bloques producidos por cada minero en la red de Bitcoin durante el mismo día de la semana anterior. La arquitectura de la comunicación de la cadena de mapeo se ilustra en el siguiente diagrama. Al delegar poder de hash de Bitcoin a los validadores, los mineros de Bitcoin pueden ayudar a asegurar la red y compartir las recompensas del sistema.
 
 <p align="center">
 ![delegate-hash](../../../../../static/img/staoshi-plus/DPoW.png)
@@ -16,7 +16,7 @@ Usando sus claves públicas y privadas, los mineros de BTC pueden delegar su pod
 
 ## Proceso de configuración para mineros
 
-Echemos un vistazo a cómo los mineros o grupos de minería de BTC pueden delegar el poder de hash a la cadena de bloques Core agregando una salida `OP_RETURN` en la transacción de base de monedas BTC.
+Veamos cómo los mineros de Bitcoin o los pools de minería pueden delegar poder de hash a la blockchain de Core añadiendo una salida `OP_RETURN` en la transacción coinbase de Bitcoin.
 
 :::info
 Para obtener más información sobre la cadena de bloques Core y el consenso Satoshi Plus, consulte el [documento técnico](https://whitepaper.coredao.org/).
@@ -30,7 +30,7 @@ Los mineros de Bitcoin y los grupos de minería deben redactar la siguiente info
 
 Aquí hay una breve descripción de lo que pertenece a cada lugar:
 
-- OP\_RETURN: `0x6a`
+- OP_RETURN: `0x6a`
 - LONGITUD: `0x2d`, que representa la longitud total de bytes después del código de operación `OP_RETURN`
 - CORE: `0x434f5245`
 - VERSION: `0x01`
@@ -64,5 +64,5 @@ Tenga en cuenta que su Validador y dirección de recompensa serán diferentes a 
 
 - La cadena de bloques Core utiliza registros de bloques de la red Bitcoin de hace siete días para cálculos de puntuación híbrida. Además, después de elegir un validador, las recompensas de apuesta se distribuyen el segundo día de la ronda de cambio. Por lo tanto, después de delegar su poder de hash, los mineros/grupos de minería utilizarán su poder de hash en el cálculo de la elección del Validador N+7 días después y tendrán recompensas reclamables N+8 días después.
 - Para mejorar las recompensas recibidas de Core blockchain, animamos a los mineros/grupos de minería a delegar en más de un Validador y distribuir sus poderes de hash de manera uniforme. La solución óptima es delegar **\~5%** de su tasa de hash general a cada validador.
-- La información del validador para Core mainnet se puede encontrar [aquí](https://stake.coredao.org/). La información del validador para Core Testnet se puede encontrar [aquí](https://stake.test.btcs.network/). Utilice la dirección del operador del Validador para completar la parte de la cadena de bytes descrita anteriormente.
-- Su dirección de recompensa debe ser compatible con EVM. Después de crear una dirección con formato Ethereum para usarla como dirección de recompensa, agréguela después de la dirección del Validador en la cadena de bytes como se describe anteriormente. Más adelante, utilizará su dirección de recompensa para reclamar recompensas de Core blockchain usando MetaMask o su billetera web preferida. Para obtener más información sobre cómo agregar Core a MetaMask, consulte nuestra guía sobre [agregar Core a MetaMask](https://medium.com/@core\_dao/add-core-to-metamask-7b1dd90041ce).
+- La información del validador para Core mainnet se puede encontrar [aquí](https://stake.coredao.org/). La información del validador para Core Testnet se puede encontrar [aquí](https://stake.test2.btcs.network/). Utilice la dirección del operador del Validador para completar la parte de la cadena de bytes descrita anteriormente.
+- Su dirección de recompensa debe ser compatible con EVM. Después de crear una dirección con formato Ethereum para usarla como dirección de recompensa, agréguela después de la dirección del Validador en la cadena de bytes como se describe anteriormente. Más adelante, utilizará su dirección de recompensa para reclamar recompensas de Core blockchain usando MetaMask o su billetera web preferida. Para obtener más información sobre cómo agregar Core a MetaMask, consulte nuestra guía sobre [agregar Core a MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).

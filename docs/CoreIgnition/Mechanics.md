@@ -8,11 +8,10 @@ sidebar_position: 2
 ---
 
 ## Core Ignition Dashboard
+
 <p align="center">
   <img width="500" alt="Ignition_Dashboard_new" src="https://github.com/user-attachments/assets/7956ac48-8450-4cdc-a001-a9a6be4ae309" />
 </p>
-
-
 
 ### Core Ignition Profile  
 The Core Ignition Profile is a personalized dashboard connected to the user account, allowing users to showcase their achievements and engagement. It enables users to:

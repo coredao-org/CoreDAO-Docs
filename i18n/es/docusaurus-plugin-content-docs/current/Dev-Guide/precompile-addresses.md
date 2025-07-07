@@ -22,3 +22,10 @@ A continuación se presenta una lista de direcciones precompiladas de contratos 
 | PledgeAgent                         | [0x0000000000000000000000000000000000001007](https://scan.coredao.org/address/0x0000000000000000000000000000000000001007) |
 | Burn                                | [0x0000000000000000000000000000000000001008](https://scan.coredao.org/address/0x0000000000000000000000000000000000001008) |
 | Foundation                          | [0x0000000000000000000000000000000000001009](https://scan.coredao.org/address/0x0000000000000000000000000000000000001009) |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |
+|                                     |                                                                                                                           |

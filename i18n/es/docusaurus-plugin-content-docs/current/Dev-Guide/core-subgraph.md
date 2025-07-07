@@ -12,13 +12,13 @@ Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos
 
 ## URLs y Claves Importantes
 
-### Core MainNet
+###
 
-<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>URL de control de estado</strong><br/>><em>https://thegraph-is.coredao.org</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
-### Core TestNet
+###
 
-<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong><br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
 ## Pasos generales de configuración del subgrafo
 
@@ -44,7 +44,7 @@ El comando `graph depoy` debería devolver la URL de consulta HTTP para su subgr
 
 Ahora que entendemos el proceso, veamos un ejemplo completo configurando un subgrafo Uniswap V2 en Core.
 
-Primero, clone el [repositorio de subgrafos] de Uniswap V2 (https://github.com/Uniswap/v2-subgraph), navegue hasta la carpeta del proyecto y luego ejecute los siguientes comandos desde ese directorio:
+Primero, clone el [repositorio de subgrafos](https://github.com/Uniswap/v2-subgraph) de Uniswap V2, navegue hasta la carpeta del proyecto y luego ejecute los siguientes comandos desde ese directorio:
 
 ```
 # Instalar dependencias con npm (o hilo)
@@ -83,7 +83,6 @@ Finalmente, ejecutaremos los comandos de creación e implementación. Para evita
 
 Para proteger tu subgrafo de modificaciones externas, contáctanos en [discord](https://discord.com/invite/coredaoofficial) para obtener una clave de autorización única.
 
-Si estás realizando pruebas en Core TestNet Graph, aquí tienes el token de acceso para propósitos generales de testing:
+Si estás probando contra el Core Testnet2 Graph, aquí tienes los tokens de acceso para propósitos generales de prueba:
 
-- **Clave general para Core Legacy Testnet:** a9a79c2aea604bfaa861ff93d46d0d11
 - **Clave general para Core Testnet2:** b020b95e511443699e72a10c697f84c0

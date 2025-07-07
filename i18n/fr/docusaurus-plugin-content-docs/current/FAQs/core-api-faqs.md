@@ -16,13 +16,13 @@ Consultez la documentation complète de l'API disponible [ici](https://docs.core
 
 ### 2. Comment puis-je accéder à l'API Core Scan ?
 
-Pour accéder à l'API Core Scan, vous devez avoir un compte enregistré sur Core Scan. Consultez [ici](https://docs.coredao.org/docs/api/tutorials/creating-an-account) le guide détaillé pour savoir comment procéder. De plus, vous aurez besoin de générer une clé API à partir de ce compte enregistré. Consultez [ici](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key) le guide détaillé pour plus d'informations.
+Pour accéder à l'API Core Scan, vous devez avoir un compte enregistré sur Core Scan. Référez-vous [ici](https://docs.coredao.org/docs/api/tutorials/creating-an-account) pour un guide détaillé sur ce sujet. De plus, vous aurez besoin de générer une clé API à partir de ce compte enregistré. Consultez [ici](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key) le guide détaillé pour plus d'informations.
 
 ### 3. Comment créer des clés API pour les utiliser avec l'API Core Scan ?
 
 Pour générer des clés API à l'aide d'un compte enregistré sur Core Scan, reportez-vous au guide détaillé [ici](https://docs.coredao.org/docs/api/tutorials/generate-an-api-key).
 
-### 4. Mes clés API ne fonctionnent pas, que puis-je faire ?
+### 4. Si vos clés d'API ne fonctionnent pas, que devez-vous faire pour résoudre le problème ?
 
 Un problème technique peut s'être produit lors de la création de la clé. Dans ce cas, essayez de supprimer la clé et d'en générer une nouvelle. Si le problème persiste après avoir utilisé une clé fraîchement générée, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.
 
@@ -40,7 +40,7 @@ Oui, les points de terminaison de l'API du staking ont une limite de taux de 600
 
 ### 7. Quel est le code de statut d'une API si une erreur survient ?
 
-Un appel API qui rencontre une erreur renverra 0 comme code de statut et affichera la cause de l'erreur dans le champ résultat.
+Un appel API qui rencontre une erreur renverra **0** comme code de statut et affichera la cause de l'erreur dans le champ résultat.
 
 ```json
 {
@@ -52,4 +52,4 @@ Un appel API qui rencontre une erreur renverra 0 comme code de statut et affiche
 
 ### 8. Que dois-je faire si je rencontre des problèmes ou des bugs avec l'API ?
 
-Référez-vous à la documentation officielle de l'API pour les [messages de problèmes courants](https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si le problème persiste, contactez-nous sur notre serveur [Discord](https://discord.com/invite/coredaoofficial) officiel.
+Référez-vous à la documentation officielle de l'API pour les [messages d'erreurs courants](https://docs.coredao.org/docs/api/tutorials/common-error-messages). Si le problème persiste, contactez-nous sur notre [Discord](https://discord.com/invite/coredaoofficial) officiel.

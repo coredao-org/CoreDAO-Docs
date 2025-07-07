@@ -25,8 +25,8 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
 1. Invitar a otros a participar en Core Ignition.
 2. Transferir activos específicos a Core.
 3. Mantener activos específicos en Core.
-4. Ejecutar transacciones interactuando con contratos inteligentes.
-5. Participar en dApps dentro del ecosistema de Core, incluyendo, pero no limitado a, DEXs, protocolos de préstamos, futuros perpetuos, etc.
+4. Ejecutar transacciones que interactúen con contratos inteligentes.
+5. Participar en dApps dentro del ecosistema Core, incluyendo, entre otras, DEXs, protocolos de préstamos, futuros perpetuos, etc.
 
 ## Cómo Empezar
 
@@ -36,7 +36,7 @@ Al participar en el programa de incentivos para usuarios de Core Ignition, los u
   <img width="500" alt="S3_hero" src="https://github.com/user-attachments/assets/4e038aae-a522-4004-97af-da536b6ecdfe"/>
 </p>
 
-2. Haga clic en "Agregar red central" para agregar Core Blockchain a la red de billetera.
+2. Haz clic en "Add Core Network" para agregar la configuración de la red Core a tu wallet.
 3. Haga clic en "Earn Sparks" o "Join Now" para iniciar la creación de una cuenta.
 4. Seleccione el país correspondiente.
 

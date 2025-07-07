@@ -5,7 +5,7 @@ sidebar_position: 2
 description: ERC-20 sur Core
 ---
 
-# Tokens ERC20
+# Jetons ERC-20
 
 ---
 
@@ -17,9 +17,9 @@ ERC-20 est une norme pour les jetons fongibles sur la blockchain Ethereum. Contr
 
 Avant de commencer, vous aurez besoin:
 
-- **MetaMask** ou tout portefeuille EVM.
+- **Metamask** ou tout portefeuille EVM.
 - Une compréhension de base de **Solidity** (bien que nous vous guiderons tout au long du processus).
-- Accès à **Remix IDE**: [https://remix.ethereum.org](https://remix.ethereum.org)
+- **Accès à  remix ide:** [https://remix.ethereum.org](https://remix.ethereum.org).
 
 ## Étape 1: Utilisez l'assistant Openzeppelin pour générer votre contrat ERC-20
 
@@ -27,13 +27,13 @@ Avant de commencer, vous aurez besoin:
 
 Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifiés. L'assistant OpenZeppelin est un excellent outil qui simplifie le processus de création de jetons ERC-20, garantissant que votre contrat suit les meilleures pratiques.
 
-1. **Allez à l'assistant d'Openzeppelin**: ouvrez le [Openzeppelin Wizard](https://wizard.openzeppelin.com/) dans votre navigateur.
-2. **SELECT ERC-20**: Dans la liste des modèles de contrat disponibles, sélectionnez **ERC-20**.
-3. **Personnalisez votre contrat**
+1. **Allez à l'assistant d'Openzeppelin:** ouvrez le [Openzeppelin Wizard](https://wizard.openzeppelin.com/) dans votre navigateur.
+2. **SELECT ERC-20:** Dans la liste des modèles de contrat disponibles, sélectionnez **ERC-20**.
+3. **Personnalisez votre contrat:**
 
-   - **Nom du jeton:** Entrez le nom de votre jeton (par exemple, `mytoken`).
-   - **Symbole de jeton:** Entrez le symbole de votre jeton (par exemple, `mtk`).
-   - **Alimentation initiale:** Définissez une alimentation initiale pour votre jeton (par exemple, `1000000` jetons). Il s'agit du nombre de jetons qui seront créés lors du déploiement.
+   - **Nom du jeton**: Entrez le nom de votre jeton (par exemple, `mytoken`).
+   - **Symbole de jeton**: Entrez le symbole de votre jeton (par exemple, `mtk`).
+   - **Alimentation initiale**: Définissez une alimentation initiale pour votre jeton (par exemple, `1000000` jetons ). Il s'agit du nombre de jetons qui seront créés lors du déploiement.
 
 <p align="center">
 ![Openzepplin_Wizard-ERC721](../../../../../static/img/dev_tutorials/ERC20_Wizard.png)
@@ -41,7 +41,7 @@ Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifi
 
 Facultativement, vous pouvez inclure des fonctionnalités supplémentaires telles que **minting** and **pausing** Si nécessaire pour votre cas d'utilisation.
 
-4. **Copiez le code**: Une fois que vous avez configuré votre contrat, cliquez sur le bouton **Copy** pour obtenir le code de solidité. Vous pouvez soit le copier dans votre presse-papiers, soit l'ouvrir directement dans REMIX IDE.
+4. **Copiez le code:** Une fois que vous avez configuré votre contrat, cliquez sur le bouton **Copy** pour obtenir le code de solidité. Vous pouvez soit le copier dans votre presse-papiers, soit l'ouvrir directement dans REMIX IDE.
 
 ## Étape 2: Configurez le remix IDE
 
@@ -49,17 +49,16 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 
 1. **Allez à Remix ide**: ouvrir [remix ide](https://remix.ethereum.org) dans votre navigateur.
 2. **Créez un nouveau fichier de solidité:**
-
-   - Dans Remix, créez un nouveau fichier en naviguant vers le répertoire **Contracts** et en cliquant sur le bouton `+`
+   - Dans Remix, créez un nouveau fichier en naviguant vers le répertoire **Contrats** et en cliquant sur le bouton **+**.
    - Collez le code contractuel ERC-20 que vous avez copié à partir de l'assistant d'Openzeppelin dans le fichier nouvellement créé.
 
 <p align="center">
 ![Remix_ERC20_Contract](../../../../../static/img/dev_tutorials/Remix_ERC20.png)
 </p>
 
-3. ** Installez les contrats Openzeppelin **: 
+3. **Installez les contrats Openzeppelin:**
 - Si vous utilisez le **Solidity compiler** intégré de Remix **, il va automatiquement récupérer les contrats OpenZeppelin pour vous.
-   - Si vous utilisez Hardhat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
+   - Si vous utilisez HardHat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
 
 ## Étape 3: Compiler le contrat dans Remix
 
@@ -79,17 +78,17 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 1. **Connect Remix to MetaMask**:
 
    - Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
-   - Sous **Environment**, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille MetaMask.
+   - Sous **Environment**, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
 
 <p align="center">
 ![ERC20_ConnectMetamask](../../../../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
 </p>
 
-Assurez-vous que votre métamask est connecté à  **Core Testnet**
+Assurez-vous que votre MetaMask est connecté à **Core testnet2**.
 
 2. **Déployez votre contrat**:
-   - Dans la section **Deploy**, sélectionnez le **ERC-20 contract** (par exemple, « MyToken »).
-   - Veuillez coller l'« adresse du destinataire » des jetons à frapper dans Premint, ainsi que l'« adresse du propriétaire » (notez que dans ce cas, les deux adresses sont identiques).
+   - Dans la section **Deploy**, sélectionnez le **ERC-20 contract** (par exemple, **MyToken**).
+   - Veuillez coller l' **adresse du destinataire** des jetons à frapper dans Premint, ainsi que l' **adresse du propriétaire** (notez que dans ce cas, les deux adresses sont identiques).
    - Cliquez sur **Deploy** Vous serez invité à confirmer la transaction dans MetaMask.
    - Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
@@ -104,8 +103,8 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 1. **Vérifier le solde**:
 
    - Sous **Deployed Contracts**, vous verrez votre contrat déployé.
-   - Développez l’interface du contrat pour interagir avec des fonctions telles que « balanceOf », « mint » (si vous avez inclus la fonctionnalité de frappe).
-   - Collez l'adresse du destinataire et cliquez sur « balanceOf » pour vérifier le solde du destinataire.
+   - Développez l’interface du contrat pour interagir avec des fonctions telles que `balanceOf`, `mint` (si vous avez inclus la fonctionnalité de frappe).
+   - Collez l'adresse du destinataire et cliquez sur `balanceOf` pour vérifier le solde du destinataire.
 
 <p align="center">
 ![ERC20_Balance](../../../../../static/img/dev_tutorials/ERC20_Balance.png)
@@ -113,27 +112,27 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 
 1. **creer des jetons**:
 
-   - Utiliser la fonction « mint » pour créer de nouveaux jetons. Fournissez l'adresse du destinataire et le nombre de jetons à frapper.
+   - Utiliser la fonction `mint` pour créer de nouveaux jetons. Fournissez l'adresse du destinataire et le nombre de jetons à frapper.
    - Confirmez la transaction dans MetaMask.
 
-2. **Transferer des jetons**:
+2. **Transferer des jetons** :
    - Vous pouvez également utiliser la fonction **transfer** pour envoyer des jetons d'une adresse à une autre.
    - Indiquez l'adresse du destinataire et le montant de jetons que vous souhaitez envoyer.
    - Confirmer la transaction dans MetaMask
 
-## Étape 6: Gérez vos jetons
+## Étape 6 : Gérez vos jetons
 
-Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que:
+Vous pouvez ajouter des fonctions supplémentaires à votre contrat, telles que :
 
-- **Burning Tokens**: Une fonction pour brûler (détruire) des jetons.
+- **Burning Tokens** : Une fonction pour brûler (détruire) des jetons.
 
-- **Rôles**: Les rôles vous permettent d'attribuer différentes autorisations aux adresses, telles que la frappe ou la gravure de jetons, garantissant des actions sécurisées et contrôlées dans le cadre du contrat.
+- **Rôles** : Les rôles vous permettent d'attribuer différentes autorisations aux adresses, telles que la frappe ou la gravure de jetons, garantissant des actions sécurisées et contrôlées dans le cadre du contrat.
 
-- **Upgradability**: vous permet de mettre à niveau la logique du contrat après le déploiement sans perdre de données, garantissant ainsi la flexibilité pour les améliorations futures
+- **Upgradability** : vous permet de mettre à niveau la logique du contrat après le déploiement sans perdre de données, garantissant ainsi la flexibilité pour les améliorations futures
 
 Vous trouverez plus d'informations sur l'implémentation ERC-20 d'OpenZeppelin [ici](https://docs.openzeppelin.com/contracts/4.x/erc20).
 
-## Références:
+## Références :
 
 - [ERC-20 Token Standard (Ethereum.org)](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [OpenZeppelin ERC-20 Implementation Documentation](https://docs.openzeppelin.com/contracts/4.x/erc20)

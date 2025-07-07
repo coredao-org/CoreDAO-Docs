@@ -15,7 +15,7 @@ Note that creating a Core Scan account is only linked to Core Scan's block explo
 
 Head over to the [Account Registration](https://scan.coredao.org/register) page and provide username, email and password for your account.
 
-![create-account-on-corescan](../assets/image(2).png)
+![create-account-on-corescan](../assets/image\(2\).png)
 
 ## Verify Your Email
 

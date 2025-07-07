@@ -1,5 +1,5 @@
 ---
-sidebar_label: preguntas frecuentes sobre coreBTC
+sidebar_label: Preguntas frecuentes sobre coreBTC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -22,7 +22,7 @@ A diferencia de los tokens empaquetados centralizados como WBTC, que dependen de
 
 ### 4. ¿Cómo puedo estar seguro de que mi BTC es seguro?
 
-La seguridad de su BTC en el sistema coreBTC está garantizada por la sobrecolateralización requerida por los Lockers y el monitoreo continuo por parte de Guardianes y Liquidadores. Esta estructura garantiza que el BTC bloqueado siempre esté respaldado por suficiente garantía en el Core, protegiéndolo contra una mala gestión o caídas de valor. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
+La seguridad de tu BTC en el sistema coreBTC está garantizada por la sobrecolateralización requerida a los Lockers y la supervisión continua de los Guardians y Liquidators. Esta estructura garantiza que el BTC bloqueado siempre esté respaldado por suficiente garantía en el Core, protegiéndolo contra una mala gestión o caídas de valor. La naturaleza descentralizada de este ecosistema también contribuye a su confiabilidad y seguridad.
 
 ### 5. ¿Quiénes son los participantes clave sin permiso? ¿Cuáles son sus roles?
 
@@ -36,8 +36,8 @@ Los participantes clave sin permiso en el ecosistema coreBTC incluyen:
 
 ### 6. ¿Cómo se garantiza la seguridad de coreBTC?
 
-Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente por [Halborn](https://www.halborn.com/), una empresa compatible con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [con la confianza de](https://www.halborn.com/about/who-trusts-us) plataformas blockchain líderes como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap.
+Nuestro protocolo y la seguridad de coreBTC han sido auditados minuciosamente por [Halborn](https://www.halborn.com/), una empresa compatible con SOC2 Tipo 1 reconocida por su experiencia en seguridad de contratos inteligentes y [con la confianza de](https://www .halborn.com/about/who-trusts-us) plataformas blockchain líderes como Ava Labs, Solana y Polygon, así como proyectos DeFi como Sushiswap.
 
 ### 7. ¿Dónde puedo obtener más información sobre coreBTC y otros proyectos Core?
 
-Visite https://unlockingbitcoindefi.com para obtener más información sobre coreBTC y nuestros otros proyectos innovadores de BTCfi.
+Visita https://unlockingbitcoindefi.com para obtener más información sobre coreBTC y nuestros otros innovadores proyectos BTCfi.
