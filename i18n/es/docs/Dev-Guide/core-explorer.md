@@ -16,11 +16,11 @@ Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los 
 
 
 <TabItem value="testnet2">
-- **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
+    * **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
 </TabItem>
 
 <TabItem value="mainnet">
-- **Core Mainnet Explorer:** https://scan.coredao.org/
+    * **Core Mainnet Explorer:** https://scan.coredao.org/
 </TabItem>
 
 </Tabs>
