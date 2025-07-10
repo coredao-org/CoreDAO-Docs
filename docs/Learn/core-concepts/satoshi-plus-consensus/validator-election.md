@@ -59,7 +59,7 @@ This formula promotes proportional and fair influence across all delegation sour
 
 ### 3. Validator Selection and Block Production
 
-- The **top 29 validators** with the highest hybrid scores are elected every **round (1 day)**
+- The **top 31 validators** with the highest hybrid scores are elected every **round (1 day)**
 - Validators produce blocks in a **round-robin** fashion, with each slot lasting **3 seconds**
 - The **validator set is updated every 200 blocks** to promote consistency and prevent disruption from underperforming or penalized validators
 - Core maintains liveness as long as fewer than **⅓ of validators are malicious**
@@ -70,7 +70,7 @@ The validator election cycle proceeds as follows:
 
 1. **Delegation**: Miners, CORE stakers, and Bitcoin stakers delegate support
 2. **Score Calculation**: Hybrid scores are computed using the defined formula
-3. **Election**: Top 29 validators are selected based on scores
+3. **Election**: Top 31 validators are selected based on scores
 4. **Block Production**: Validators take turns producing blocks
 5. **Rewards**: CORE tokens are earned by validators and distributed proportionally to delegators
 6. **Cycle Repeats**: Validator set updates every 200 blocks
