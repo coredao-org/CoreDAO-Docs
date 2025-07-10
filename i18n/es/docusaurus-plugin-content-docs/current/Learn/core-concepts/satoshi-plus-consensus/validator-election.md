@@ -59,7 +59,7 @@ Esta fórmula promueve una influencia proporcional y justa entre todas las fuent
 
 ### Selección de Validadores y Producción de Bloques
 
-- Los **top 29 validadores** con los hybrid scores más altos son elegidos en cada **round (1 día)**
+- Los **top 31 validadores** con los hybrid scores más altos son elegidos en cada **round (1 día)**
 - Los validadores producen bloques en un esquema **round-robin**, con cada turno de **3 segundos**
 - El **conjunto de validadores se actualiza cada 200 bloques** para promover la consistencia y prevenir interrupciones causadas por validadores con bajo rendimiento o sancionados
 - Core mantiene su operatividad siempre que menos de **⅓ de los validadores sean maliciosos**
@@ -70,7 +70,7 @@ El ciclo de elección de validadores sigue este proceso:
 
 1. **Delegación**: Mineros, stakers de CORE y stakers de Bitcoin delegan su apoyo
 2. **Cálculo de Puntajes**: Se computa el hybrid score usando la fórmula definida
-3. **Elección**: Se seleccionan los 29 validadores con mayor puntaje
+3. **Elección**: Se seleccionan los 31 validadores con mayor puntaje
 4. **Producción de Bloques**: Los validadores toman turnos para producir bloques
 5. **Recompensas**: Los validadores ganan tokens CORE y los distribuyen proporcionalmente a sus delegadores
 6. **Repetición del Ciclo**: El conjunto de validadores se actualiza cada 200 bloques
