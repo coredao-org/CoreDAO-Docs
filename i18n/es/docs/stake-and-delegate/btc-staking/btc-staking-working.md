@@ -1,135 +1,137 @@
 ---
-sidebar_label: Cómo funciona
+sidebar_label: How It Works
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Cómo Funciona el Staking Autocustodiado de Bitcoin {#how-self-custodial-bitcoin-staking-works}
+# How Self-Custodial Bitcoin Staking Works {#how-self-custodial-bitcoin-staking-works}
 
 ---
 
-## Mecanismo de Timelock CLTV
+## CLTV Timelock Mechanism
 
-[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) es una función nativa de Bitcoin que bloquea las salidas de transacciones hasta un tiempo o altura de bloque especificados. Al crear una transacción CLTV:
+[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) is a Bitcoin-native function that locks transaction outputs until a specified time or block height. When you create a CLTV transaction:
 
-- El Bitcoin permanece bloqueado en tu wallet durante la duración especificada
-- Ninguna tercera parte puede acceder a tu Bitcoin durante el período de bloqueo
-- Mantienes la custodia completa durante todo el proceso
-- Tras la expiración, debes enviar un script de redención para recuperar la capacidad de gasto
+- Bitcoin remains locked in your wallet for the specified duration
+- No third party can access your Bitcoin during the lock period
+- You retain full custody throughout the entire process
+- After expiration, you must send a redeem script to regain spending ability
 
-## Resumen del Proceso de Staking
+## Staking Process Overview
 
-1. **Crear una transacción con timelock** CLTV en la blockchain de Bitcoin
-2. **Incluir metadata** que especifique la delegación al validador y la dirección para recibir recompensas
-3. **Los relayers de Core** detectan transacciones válidas de staking en Bitcoin
-4. **Ganar recompensas CORE** basadas en el desempeño del validador y la cantidad apostada
-5. **Redimir el Bitcoin** después de que expire el timelock usando el script de redención
+1. **Create timelock transaction** with CLTV on Bitcoin blockchain
+2. **Include metadata** specifying validator delegation and reward address
+3. **Core relayers detect** valid staking transactions on Bitcoin
+4. **Earn CORE rewards** based on validator performance and staked amount
+5. **Redeem Bitcoin** after timelock expires using redeem script
 
-## Modelo de Seguridad
+## Security Model
 
-**Riesgo Cero de Custodia**: Tu Bitcoin nunca sale de la blockchain de Bitcoin ni de tu control. El mecanismo de staking utiliza únicamente funciones nativas de Bitcoin sin introducir suposiciones adicionales de confianza.
+**Zero Custodial Risk**: Your Bitcoin never leaves the Bitcoin blockchain or your control. The staking mechanism uses only Bitcoin-native functions without introducing additional trust assumptions.
 
-**Garantías Clave de Seguridad**:
+**Key Security Guarantees**:
 
-- El Bitcoin permanece en tu wallet durante todo el staking
-- No existe riesgo a nivel de protocolo más allá de la seguridad nativa de Bitcoin
-- No hay riesgo de custodia por terceros ni por contratos inteligentes
-- El mal comportamiento de un validador no puede afectar el principal de tu Bitcoin
+- Bitcoin remains in your wallet throughout staking
+- No protocol-level risk beyond Bitcoin's native security
+- No third-party custody or smart contract risk
+- Validator misbehavior cannot affect your Bitcoin principal
 
-## Requisitos Técnicos
+## Technical Requirements
 
-### Estructura de la Transacción
+### Transaction Structure
 
-Tu transacción de staking CLTV debe incluir:
+Your CLTV staking transaction must include:
 
-**Salidas Requeridas**:
+**Required Outputs**:
 
-- **CLTV timelock output**: Bloquea tu Bitcoin por la duración especificada
-- **`OP_RETURN` output**: Contiene la metadata de delegación
+- **CLTV timelock output**: Locks your Bitcoin for specified duration
+- **`OP_RETURN` output**: Contains delegation metadata
 
-**Formato de Metadata** (en `OP_RETURN`):
+**Metadata Format** (in `OP_RETURN`):
 
-- Dirección del validador Core (objetivo de la delegación)
-- Dirección de recompensa CORE (donde se enviarán las recompensas)
+- Core validator address (delegation target)
+- CORE reward address (where to send rewards)
 
-### Requisitos Mínimos
+### Minimum Requirements
 
-| **Método** | \*\*BTC Mínimo"          | \*_Duración Mínima_                       |
-| ---------- | ------------------------ | ----------------------------------------- |
-|            | 0.01 BTC | 5 días                                    |
-|            | Sin Mínimo               | 24 horas (recomendado) |
+| **Method**       | **Minimum BTC**          | **Minimum Duration**                      |
+| ---------------- | ------------------------ | ----------------------------------------- |
+| Official UI      | 0.01 BTC | 5 days                                    |
+| Direct scripting | No minimum               | 24 hours (recommended) |
 
-## Operaciones Cross-Chain
+## Cross-Chain Operations
 
-| **Paso** | **Red de Bitcoin**                                                     | **Red de Core**                                                        |
-| -------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-|          | El usuario crea una transacción CLTV con metadata de delegación        | Los relayers monitorean transacciones de staking válidas               |
-|          | El Bitcoin se bloquea en la wallet del usuario, transacción confirmada | Los relayers validan y registran la posición de staking                |
-|          | El Bitcoin permanece bloqueado y seguro                                | Las recompensas en CORE se acumulan según el rendimiento del validador |
-|          | El usuario envía el redeem script para desbloquear el Bitcoin          | Los relayers actualizan los registros de staking                       |
+| **Step**     | **Bitcoin Network**                                    | **Core Network**                                   |
+| ------------ | ------------------------------------------------------ | -------------------------------------------------- |
+| **Initiate** | User creates CLTV transaction with delegation metadata | Relayers monitor for valid staking transactions    |
+| **Timelock** | Bitcoin locked in user's wallet, transaction confirmed | Relayers validate and register staking position    |
+| **Earn**     | Bitcoin remains locked and secure                      | CORE rewards accrue based on validator performance |
+| **Redeem**   | User sends redeem script to unlock Bitcoin             | Relayers update staking records                    |
 
-## Flujo de las transacciones
+## Transaction Workflow
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-tx-workflow](../../../static/img/btc-staking/btc-staking-flow-new.png)
+</p>
 
-### Cronograma y Activación
+### Timeline and Activation
 
-**Proceso de Confirmación**
+**Confirmation Process**
 
-1. **Transmisión de la transacción**: La transacción CLTV se envía a la red de Bitcoin
-2. **Confirmación en Bitcoin**: ~60 minutos (6 bloques) para su reconocimiento
-3. **Detección en Core**: Los relayers identifican la delegación válida
-4. **Activación de recompensas**: En la próxima ronda de elección de validadores (~24 horas desde las UTC+0)
+1. **Transaction broadcast**: CLTV transaction sent to Bitcoin network
+2. **Bitcoin confirmation**: ~60 minutes (6 blocks) for recognition
+3. **Core detection**: Relayers identify valid delegation
+4. **Reward activation**: Next validator election round (~24 hours from UTC+0)
 
-**Ejemplo de Cronograma**
-Si haces staking de Bitcoin a las 6:00 AM UTC+0:
+**Example Timeline**
+If you stake Bitcoin at 6:00 AM UTC+0:
 
-- Confirmación en Bitcoin: Mismo día después de 6 bloques
-- Staking se activa: A las 12:00 AM UTC+0 del día siguiente
-- Recompensas comienzan a acumularse: Desde la primera ronda activa
+- Bitcoin confirmation: Same day after 6 blocks
+- Staking becomes active: 12:00 AM UTC+0 next day
+- Rewards begin accruing: From first active round
 
-## Mejores Prácticas
+## Best Practices
 
-### Comisiones de Transacción
+### Transaction Fees
 
-- **Usa comisiones competitivas**: Las comisiones bajas causan demoras en la confirmación
-- **Monitorea la congestión de la red**: Ajusta las tarifas en consecuencia
-- **Considera RBF**: Habilita Replace-By-Fee para ajustar las comisiones
+- **Use competitive fees**: Low fees cause confirmation delays
+- **Monitor network congestion**: Adjust fee rates accordingly
+- **Consider RBF**: Enable Replace-By-Fee for fee adjustments
 
-### Manejo de Demoras
+### Handling Delays
 
-- **Aceleradores de transacción**: Usa servicios como viaBTC si la transacción está atascada
-- **Fee bumping**: Incrementa la tarifa en transacciones RBF pendientes
-- **Paciencia**: Las transacciones con baja tarifa pueden tardar días durante congestión
+- **Transaction accelerators**: Use services like viaBTC if stuck
+- **Fee bumping**: Increase fees on pending RBF transactions
+- **Patience**: Low-fee transactions may take days during congestion
 
-### Selección de Validadores
+### Validator Selection
 
-Elige validadores en función de:
+Choose validators based on:
 
-- Historial de rendimiento y disponibilidad
-- Tasas de comisión
-- Reputación dentro de la comunidad
+- Performance history and uptime
+- Commission rates
+- Community reputation
 
-## Redelegación vs Redención
+## Redelegation vs Redemption
 
 **Redemption**: Unlock Bitcoin for general use
 
-- Requiere un redeem script después de que expire el timelock
-- El Bitcoin se vuelve completamente gastable nuevamente
+- Requires redeem script after timelock expires
+- Bitcoin becomes fully spendable again
 
-**Redelegación**: Cambiar a un validador diferente sin desbloquear
+**Redelegation**: Switch to different validator without unlocking
 
-- Puede hacerse directamente sin redención
-- Mantiene la posición de staking con el nuevo validador
+- Can be done directly without redemption
+- Maintains staking position with new validator
 
-## API y Acceso a Datos
+## API and Data Access
 
-Los datos de staking están disponibles a través de la Core Staking API una vez que:
+Staking data becomes available via Core Staking API once:
 
-- La transacción de Bitcoin se confirma (6 bloques)
-- Los relayers han procesado la delegación
-- La posición de staking está activa en las elecciones de validadores
+- Bitcoin transaction is confirmed (6 blocks)
+- Relayers have processed the delegation
+- Staking position is active in validator elections
 
-Esto permite a los desarrolladores rastrear posiciones de staking, recompensas y el rendimiento de los validadores de forma programática.
+This allows developers to track staking positions, rewards, and validator performance programmatically.
 
-Para una guía detallada sobre el diseño de transacciones de staking, consulta [aquí](./design.md).
+For a detailed guide on staking transaction design, refer [here](./design.md).
