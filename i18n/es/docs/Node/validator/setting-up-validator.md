@@ -1,26 +1,27 @@
 ---
-sidebar_label: Configuración de Nodos Validadores
+sidebar_label: Setup Validator Node
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
-
-# Configuración de Nodos Validadores en Core
+# Setting Up Validator Nodes on Core
 
 ---
 
-Esta guía te guía paso a paso en el proceso de configurar un nodo validador en la Red de Core. Cubre la instalación de las dependencias del sistema, la compilación del software del nodo Core, la inicialización con snapshot data y el inicio de tu nodo validador.
+This guide walks you through the process of setting up a validator node on the Core Network. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
 
-### Requisitos del Sistema para Nodo Validador
+### System Requirements for Validator Node
 
-Antes de comenzar, asegúrate de que tu sistema cumpla con las especificaciones de hardware y software requeridas.
+Before you begin, please ensure your system meets the required hardware and software specifications.
 
-#### Sistemas Operativos Compatibles
+#### Supported OS Platforms
 
-Actualmente, los sistemas operativos compatibles incluyen **macOS** y **Linux**.
+Currently, the supported operating system platforms include **macOS** and **Linux**.
 
-#### Requisitos de Hardware
+#### Hardware Requirements
 
 <Tabs
 defaultValue="testnet2"
@@ -28,168 +29,189 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-Para nodos validadores en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
+For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
-    
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
+    | **RAM**            | 8 Gigabytes                                                                                             |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
 
   </TabItem>
 
   <TabItem value="mainnet">
-Para nodos Validadores en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
+   For Validator nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
-    
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
+    | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
+    | **RAM**            | 32 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
 
   </TabItem>
 </Tabs>
 
-### Clonar el Codebase de Core Blockchain
+### Clone the Core Blockchain Codebase
 
-Se recomienda utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar directamente tu nodo validador, es decir, ejecutar tu nodo validador directamente desde la base de código de la blockchain de Core. Las instrucciones para compilar el código fuente se encuentran en el archivo [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
-
-```bash
-
-```
-
-#### Instalar Dependencias
-
-Después de clonar el repositorio, el siguiente paso es instalar todas las dependencias necesarias para compilar el binario de geth (Go Ethereum). Ejecuta el siguiente comando para instalar las dependencias:
+It is recommended to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your validator node directly, i.e., running your validator node from the Core blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
 ```bash
-
+git clone https://github.com/coredao-org/core-chain
+cd core-chain
 ```
 
-Esto descargará e instalará las dependencias necesarias y compilará el binario de `geth`. El binario `geth` estará ubicado en `./build/bin/geth`.
+#### Install Dependencies
 
-### Configuración del Nodo
+After cloning the repo, the next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
 
-Existen dos métodos para configurar un nodo validador desde cero en la blockchain de Core:
+```bash
+make geth
+```
 
-- **Mediante Snapshot (Recomendado):** descargar el [snapshot más reciente de la blockchain de Core](https://github.com/coredao-org/core-snapshots) y sincronizar el nodo con base en este.
-- **Desde Genesis (No Recomendado):** sincronizar toda la información de la blockchain de Core desde el [bloque génesis](https://github.com/coredao-org/core-chain/releases/latest).
+This will download and install the necessary dependencies and build the `geth` binary. The `geth` binary will be located at `./build/bin/geth`.
+
+### Setting up the Node
+
+There are two approaches to set up a validator node from scratch on the Core blockchain:
+
+- **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
+- **From Genesis (Not Recommended):** Sync the entire Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
-La sincronización desde el bloque génesis puede tomar una cantidad significativa de tiempo. Se recomienda configurar un nodo de Core utilizando el snapshot más reciente para acelerar el proceso.
+Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
 :::
 
-#### Pasos para Ejecutar un Nodo Validador Usando Snapshot
+#### Steps to Running Validator Node Using Snapshot
 
-1. **Descargar los Binarios Precompilados Más Recientes:**
-  Descarga los binarios más recientes del nodo desde el [repositorio oficial de versiones de Core](https://github.com/coredao-org/core-chain/releases/latest).
+1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Archivos de Génesis y Configuración:**
-  Los binarios pre-build incluyen `genesis.json` y `config.toml` correspondientes a la red que deseas correr como validador. Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
+2. **Genesis and Configuration Files:** The pre-build binaries contain `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
 
-3. **Inicializar Genesis:** Escribe el estado génesis localmente ejecutando el siguiente comando desde el directorio de tu proyecto. Asegúrate de que la ruta relativa al archivo `genesis.json` sea correcta. En este caso, `genesis.json` implica que el archivo `genesis.json` se encuentra en el mismo directorio, que debería ser el directorio root del nodo.
+3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
 
 ```bash
-
+geth --datadir node init genesis.json
 ```
 
-Deberías ver la siguiente salida:
+You should see the following output:
 
 ```bash
-
+INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
+INFO [07-18|14:57:20.721] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/chaindata cache=16 handles=16
+INFO [07-18|14:57:20.724] Writing custom genesis block
+INFO [07-18|14:57:20.725] Persisted trie from memory database      nodes=25 size=87.18kB time=226.129µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.725] Successfully wrote genesis state         database=chaindata                             hash=d90508…5c034a
+INFO [07-18|14:57:20.725] Allocated cache and file handles         database=/Users/jackcrypto/go/core-chain/node/geth/lightchaindata cache=16 handles=16
+INFO [07-18|14:57:20.729] Writing custom genesis block
+INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size=87.18kB time=178.332µs gcnodes=0 gcsize=0.00B gctime=0s livenodes=1 livesize=0.00B
+INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. **Descargar y Extraer el Snapshot Más Reciente**
-  Descarga y extrae el snapshot más reciente de la blockchain de Core desde el [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+4. **Download & Extract the Latest Snapshot:** Download and extract the latest Core blockchain snapshot from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
 
-5. **Generación de Consensus Key:** Configura la clave de consenso antes de ejecutar el nodo validador. Para crear una nueva consensus key, utiliza el siguiente comando, el cual creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (consensus address).
+5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address that will be your validator's address (consensus address).
 
 ```bash
-
+# generate the consensus key and input the password
+geth account new --datadir ./node
 ```
 
-Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de forma segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
+You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
 
 ```bash
-
+echo {your-password} > password.txt
 ```
 
-Asegúrate de seguir estas consideraciones clave:
-**Asegura tu archivo keystore y tu contraseña:** Guarda de forma segura tu archivo keystore y tu contraseña, ya que los necesitarás más adelante.
-**Haz una copia de seguridad de tu clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
+Make sure to follow these key considerations:
+\* **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
+\* **Backup Your Key:** Losing access to this key means losing control over your validator node.
 
-6. **Iniciar el nodo validador:**
+6. **Start the Validator Node:**
 
-Utiliza el siguiente comando para iniciar el nodo validador.
+Use the following command to start the validator node.
 
 ```bash
-
+# start a validator node
+geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000  --networkid {core-chain-id}
 ```
 
-Desglosemos las banderas utilizadas en este comando:
+Let’s break down the flags used in this command:
 
-- **`config ./config.toml`:** Especifica el archivo de configuración del nodo. Asegúrate de que tengas la configuración correcta en `config.toml` para tu entorno.
+- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
 
-- **`datadir ./node`:** Indica el directorio de datos del nodo.
+- **`datadir ./node`:** Indicates the data directory for the node.
 
-- **`unlock {your-validator-address}`:** Desbloquea la cuenta del validador utilizando la dirección generada en el paso anterior.
+- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
 
-- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Normalmente, esta sería la dirección de tu validador.
+- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
 
-- **`password password.txt`:** La contraseña para desbloquear tu cuenta de validador (asegúrate de que este archivo se mantenga seguro).
+- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
 
-- **`mine`:** Habilita la minería y validación (producción de bloques) en la red. Es esencial para la operación del validador
+- **`mine`:** Enables mining and validating (producing blocks) on the network. Essential for validator operation
 
-- **`allow-insecure-unlock`:** Habilita el proceso de desbloqueo sin medidas de seguridad adicionales (usar con precaución).
+- **`allow-insecure-unlock`:** Enables the unlock process without additional security measures (use with caution).
 
-- **`cache 8000`:** Asigna una caché grande (8GB en este caso) para mejorar el rendimiento.
+- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
 
-- **`networkid`:** Especifica el ID de cadena de la red Core en la que deseas ejecutar el nodo validador (por ejemplo, 1114 para Core Testnet2)
+- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Tesnet2)
 
-#### Sincronización desde Genesis
+#### Syncing from Genesis
 
-Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de usar un snapshot:
+If you prefer to sync your validator node from the genesis block instead of using a snapshot:
 
-- Omite el Paso #4 ("Descargar y Extraer el Snapshot Más Reciente") en las instrucciones de configuración.
+- Skip Step #4 ("Download and extract the latest snapshot") in the setup instructions.
 
-- Después de completar los Pasos 1 (Descargar Binarios), 2 (Archivos Genesis/Config) y 3 (Initializar Genesis), continúa generando tu consensus key con normalidad.
+- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as usual.
 
-- Luego, inicia el nodo validador usando el siguiente comando:
+- Then start the validator node using the command below:
 
   ```bash
-
+  geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-**Nota:** Sincronizar desde genesis puede tomar mucho tiempo, dependiendo de los recursos del sistema y la velocidad de la red.
+⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
 
 ## Monitor Logs
 
-Una vez que tu nodo validador esté en ejecución, es esencial monitorear los logs para asegurarte de que todo esté funcionando correctamente.
+Once your validator node is up and running, it’s essential to monitor the logs to ensure everything is operating smoothly.
 
-Los logs se almacenan por defecto en `./node/logs/core.log`, pero pueden redirigirse a otra ubicación si se desea. Puedes ver y seguir los logs en tiempo real utilizando el siguiente comando:
+The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
 
 ```bash
+# Tail the logs in real-time
+# This will display the most recent log entries and update the log display continuously.
 
+tail -f ./node/logs/core.log
 ```
 
-Estos logs normalmente muestran que el nodo está importando nuevos segmentos de cadena en la blockchain, lo que indica que está recibiendo y procesando bloques correctamente.
+These logs typically show that the node is importing new chain segments on the blockchain, indicating that it’s correctly receiving and processing blocks.
 
-- **Imported new chain segment:** Esto indica que el nodo está recibiendo nuevos bloques desde la red y agregándolos a la blockchain local exitosamente.
+- **Imported new chain segment:** This indicates that the node is successfully receiving new blocks from the network and adding them to its local blockchain.
 
-- **number:** El número de bloque (por ejemplo, `1,596,730` es el número de bloque para esa entrada).
+- **number:** The block number (e.g., `1,596,730` is the block number for that entry).
 
-- **hash:** El identificador único (hash) del bloque, como una huella digital de los datos del bloque (por ejemplo, 0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c).
+- **hash:** The unique identifier (hash) for the block, like a fingerprint of the block data (e.g., `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
 
-- **miner:** La dirección del minero que minó ese bloque.
+- **miner:** The address of the miner who mined that block.
 
-- **blocks:** El número de bloques importados (usualmente `1` en estos logs).
+- **blocks:** The number of blocks imported (usually `1` in these logs).
 
-- **txs:** El número de transacciones en el bloque (por ejemplo, `1` tx o `2` txs).
+- **txs:** The number of transactions in the block (e.g., `1` tx or `2` txs).
 
-- **mgas:** El gas utilizado en las transacciones dentro del bloque. Gas se refiere al trabajo computacional requerido para ejecutar transacciones (por ejemplo, `0.021` significa 0.021 millones de unidades de gas).
+- **mgas:** The gas used in the transactions within the block. Gas refers to the computational work required to execute transactions (e.g., `0.021` means 0.021 million gas units).
 
-- **elapsed:** El tiempo que tomó importar el bloque, en milisegundos (por ejemplo, `3.003ms`).
+- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
 
-- **mgasps:** La velocidad a la que se está procesando el gas (en millones de gas por segundo).
+- **mgasps:** The speed at which gas is being processed (in million gas per second).
 
-- **triedirty:** La cantidad de memoria "sucia" utilizada (en este caso, alrededor de`869.67 KiB`), lo cual indica cuánta memoria se está utilizando para almacenar temporalmente los datos del bloque.
+- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
 
-- **Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Las conexiones peer-to-peer son cruciales para sincronizar la blockchain con la red.
+- **Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are crucial for synchronizing the blockchain with the network.
 
-- **peercount:** El número actual de peers a los que el nodo está conectado (por ejemplo, `2`).
+- **peercount:** The current number of peers the node is connected to (e.g., `2`).
 
-- **tried:** El número de peers con los que el nodo ha intentado conectarse (por ejemplo, `12`).
+- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
 
-- **static:** El número de peers fijos/estáticos con los que el nodo está configurado para conectarse (por ejemplo, `2`).
+- **static:** The number of fixed/static peers the node is configured to connect to (e.g., `2`).
