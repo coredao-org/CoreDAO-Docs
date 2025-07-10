@@ -1,138 +1,148 @@
 ---
-sidebar_label: Diseño de Transacciones
+sidebar_label: Transaction Design
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Diseño de Staking de Bitcoin con Autocustodia
+# Self-Custodial Bitcoin Staking Design
 
 ---
 
-## Fondo
+## Background
 
-La metodología para integrar el staking de Bitcoin se basa en el [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE` nativo de Bitcoin. CLTV es una operación del script de Bitcoin que restringe que las salidas de una transacción sean gastadas hasta que se alcance un tiempo absoluto específico o una altura de bloque determinada. Al crear una transacción con un script CLTV, los holders de Bitcoin pueden hacer que sus monedas sean temporalmente no gastables, mientras incluyen metadatos que permiten a Core reconocer su participación en el consenso. Este mecanismo aprovecha las capacidades de scripting existentes de Bitcoin, sin requerir ninguna modificación al protocolo de Bitcoin.
+The methodology for integrating Bitcoin staking centers on Bitcoin's native [CLTV timelock](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE`. CLTV is a Bitcoin script operation that restricts transaction outputs from being spent until a specified absolute time or block height is reached. By creating a transaction with a CLTV script, Bitcoin holders can make their coins temporarily unspendable while including metadata that allows Core to recognize their participation in consensus. This mechanism leverages Bitcoin's existing scripting capabilities without requiring any modification to the Bitcoin protocol.
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-tx-design](../../../static/img/btc-staking/tx-design/staking-tx-design.png)
+</p>
 
-### Requisitos para la validez de las transacciones {#requirements-for-transaction-validity}
+### Requirements for Transaction Validity {#requirements-for-transaction-validity}
 
-- Para crear una transacción de timelock válida que los relayers de Core reconozcan, los usuarios deben:
-    - Crear una transacción de Bitcoin donde la salida se envíe a su propia dirección utilizando la función nativa de timelock CLTV de Bitcoin
-    - Especificar la cantidad de Bitcoin a la que desean hacer timelock para delegarla a un validador de Core
-    - Incluir una salida `OP_RETURN` que contenga dos piezas críticas de información:
-        - La dirección del validador de Core al que desean apoyar
-        - La dirección de Core donde desean recibir las recompensas en tokens CORE
-- Requisitos Mínimos:
-    - Cantidad: Al usar la [official staking interface](https://stake.coredao.org/staking), se debe hacer timelock de un mínimo de 0.01 BTC (excluyendo las comisiones de transacción)
-    - Duración: El período mínimo de timelock es de 24 horas, aunque la interfaz de staking de Core establece por defecto un mínimo recomendado de 5 días para una participación óptima
-    - Implementación técnica: No hay requisitos mínimos cuando se crean transacciones de timelock manualmente, aunque se recomienda seguir los mismos parámetros para asegurar una participación efectiva
+- To create a valid timelock transaction that Core relayers will recognize, users must:
+    - Create a Bitcoin transaction where the output is sent to their own address using Bitcoin's native CLTV timelock feature
+    - Specify the amount of Bitcoin they wish to timelock for delegation to a Core validator
+    - Include an `OP_RETURN` output containing two critical pieces of information:
+        - The address of the Core validator they wish to support
+        - The Core address where they want to receive CORE token rewards
+- Minimum Requirements:
+    - Amount: When using the [official staking interface](https://stake.coredao.org/staking), a minimum of 0.01 BTC must be timelocked (excluding transaction fees)
+    - Duration: The minimum timelock period is 24 hours, though the Core staking interface defaults to a recommended minimum of 5 days for optimal participation
+    - Technical implementation: There are no minimum requirements when creating timelock transactions manually, though the same parameters are recommended for effective participation
 
-### Flujo de trabajo de transacciones
+### Transaction Workflow
 
-Las operaciones de Staking Autocustodiado de Bitcoin se llevan a cabo en dos cadenas de bloques separadas: Bitcoin y Core. El siguiente diagrama de flujo ilustra el proceso mediante el cual los holders de Bitcoin pueden obtener recompensas de staking a través del sistema de Staking Autocustodiado de Core.
+Self-Custodial Bitcoin Staking operations are conducted on two separate blockchains: Bitcoin and Core. The following flowchart illustrates the workflow for Bitcoin holders to earn staking rewards through Core’s Self-Custodial Bitcoin Staking.
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-flow](../../../static/img/btc-staking/btc-staking-workflow.png)
+</p>
 
-## Estructura de transacción
+## Transaction Structure
 
-### Transacción de apuesta
+### Staking transaction
 
-Una transacción de participación de Bitcoin debe tener dos o tres resultados, que son
+A Bitcoin staking transaction should have two/three outputs, which are
 
-- Salida tipo `P2SH/P2WSH`, con secuencia de comandos de canje habilitada para bloqueo de tiempo
-- Salida tipo `OP_RETURN`, con información de apuesta central
-- (_Opcional_) Cambiar dirección
+- `P2SH/P2WSH` type output, with time-lock enabled redeem script
+- `OP_RETURN` type output, with Core staking information
+- (_Optional_) Change address
 
-(_Opcional_) Cambiar dirección.
+Note that there are **no** restrictions on inputs.
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-tx-output](../../../static/img/btc-staking/tx-design/staking-flow.png)
+</p>
 
-### Transacción de retiro
+### Withdrawal transaction
 
-Los UTXO (Bitcoins) bloqueados se pueden gastar usando el script de canje cuando finaliza el bloqueo de tiempo.
+The locked UTXO (Bitcoins) can be spent using the redeem script when the time-lock ends.
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-withdrawal-tx](../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
+</p>
 
-## Diseño de guión
+## Script Design
 
-### Salida P2SH/P2WSH
+### P2SH/P2WSH Output
 
-- Core admite salidas `P2SH` y `P2WSH` para apostar Bitcoin.
+- Core supports both `P2SH` and `P2WSH` outputs for Bitcoin staking.
 
-- La construcción de la salida tipo `P2SH` es la siguiente
+- The construction of `P2SH` type output is as follows
 
     - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
-- La construcción de la salida tipo `P2WSH` es la siguiente
+- The construction of `P2WSH` type output is as follows
 
     - `OP_0 <SHA256(RedeemScript)>`
 
-### Canjear Script
+### Redeem Script
 
-El `RedeemScript` debería comenzar con un bloqueo de tiempo CLTV. A continuación se muestran algunos tipos comunes.
+The `RedeemScript`  should start with a CLTV time lock. Here are a few common types.
 
-- Cuando se utiliza una clave pública `<CLTV timelock> OP_CLTV OP_DROP <pubKey Hash> OP_CHECKSIG` y el script de desbloqueo correspondiente en la transacción de retiro es `<sig> <pubKey>`
+- When using a public key `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <RedeemScript>`
 
-- Cuando se utiliza un hash de clave pública (el más recomendado) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` y el script de desbloqueo correspondiente en la transacción de retiro es `<sig> <pubKey> <RedeemScript>`
+- When using a public key hash (most recommended) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` and the corresponding unlocking script in the withdrawal transaction is `<sig> <pubKey> <RedeemScript>`
 
-- Al utilizar la dirección multifirma `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` y el script de desbloqueo correspondiente en la transacción de retiro es `OP_0 <sig1>... <sigM> <RedeemScript>` La cantidad y duración de Bitcoin bloqueada en esta salida se utilizarán para el cálculo de la elección del validador y la distribución de recompensas en Core.
+- When using multi-signature address `<CLTV timelock> OP_CLTV OP_DROP M <pubKey1> <pubKey2> ... <pubKeyN> N OP_CHECKMULTISIG` and the corresponding unlocking script in the withdrawal transaction is `OP_0 <sig1> ... <sigM> <RedeemScript>` The amount and duration of Bitcoin locked in this output will be used for the calculation of validator election and reward distribution on Core.
 
 :::note
-Para ser elegible para el Staking Autocustodiado de BTC en Core, los requisitos mínimos de participación dependen del método elegido. Si se utiliza la [official website interface](https://stake.coredao.org/staking), los usuarios deben bloquear al menos **0.01 BTC** (excluyendo las tarifas de transacción). **No** hay un requisito mínimo al hacer staking a través del script. Además, la duración mínima del staking depende del método utilizado. La interfaz del sitio web oficial requiere un mínimo de 5 días, mientras que el staking a través del script no tiene ningún requisito de bloqueo.
+To be eligible for Self-Custodial BTC Staking on Core, minimum staking requirements depend on the chosen method. If using the [official website interface](https://stake.coredao.org/staking), users must stake at least **0.01 BTC** (excluding transaction fees). There is **no** minimum requirement when staking via the script. Also, the minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while staking through script has no lockup requirement.
 :::
 
-## OP_RETURN Salida
+## OP_RETURN Output
 
-La salida `OP_RETURN` debe contener toda la información de staking en orden y estar compuesta en el siguiente formato:
+The `OP_RETURN` output should contain all staking information in order and be composed in the following format:
 
-- **`OP_RETURN`:** identificador `0x6a`
-- **`LENGTH`:** que representa la longitud total de bytes después del código de operación `OP_RETURN`. _Tenga en cuenta que todos los datos deben enviarse con sus bytes de tamaño apropiado_.
-- **`Identificador Satoshi Plus`:** (**SAT+**) 4 bytes
-- **`Versión`:** (**0x01**) 1 byte
+- **`OP_RETURN`:** identifier `0x6a`
+- **`LENGTH`:** which represents the total byte length after the `OP_RETURN` opcode. _Note that all data has to be pushed with its appropriate size byte(s)_.
+- **`Satoshi Plus Identifier`:** (**SAT+**) 4 bytes
+- **`Version`:** (**0x01**) 1 byte
 - **`Chain ID`:** (1114 for Core Testnet2 and 1116 for Core Mainnet) 2 bytes
-- **`Delegator`:** La dirección principal para recibir recompensas, 20 bytes
-- **`Validador`:** La dirección del validador principal a la que apostar, 20 bytes
-- **`Tarifa`:** Tarifa por retransmisor, 1 byte, rango [0,255], medido en CORE
-- **`RedeemScript`:** se utiliza para canjear BTC apostados después de que expire el bloqueo de tiempo.
-- (_Opcional_) **`Canjear script`**
+- **`Delegator`:** The Core address to receive rewards, 20 bytes
+- **`Validator`:** The Core validator address to stake to, 20 bytes
+- **`Fee`:** Fee for relayer, 1 byte, range [0,255], measured in CORE
+- **`RedeemScript`:** used for redeeming staked BTC after timelock expires.
+- (_Optional_) **`Timelock`:** 4 bytes
 
-> **Nota:** Se debe incluir RedeemScript. Además, si se incluye Timelock, primero se requiere Little Endian.
+> **Note:** RedeemScript should be included. Also, if the Timelock is included, Little Endian is required first.
 
-#### Puntos clave
+#### Key Points
 
-- Cualquier byte que pueda traducirse a un número debe usar `OP_number` (`{0}` debe usar `OP_0` en lugar de `0x0100`, `{16}` debe usar `OP_16` en lugar de `0x0110`)
-- Cualquier byte con longitudes menores a `0x4c (76)` se envía con 1 byte igual al tamaño `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
-- Cualquier byte mayor o igual a `0x4c` se envía usando `0x4c` (es decir, `OP_PUSHDATA`) seguido de la longitud seguida de los datos `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
-- Cualquier byte con una longitud mayor que `255` usa `0x4d` (`OP_PUSHDATA2`)
-- Cualquier byte con una longitud mayor que `65535` (`0xffff`) usa `0x4e` (`OP_PUSHDATA4`)
+- Any bytes that can translate to a number should use `OP_number` (`{0}` should use `OP_0` instead of `0x0100`, `{16}` should use `OP_16` instead of `0x0110`)
+- Any bytes with lengths smaller than `0x4c (76)`  are  pushed with 1 byte equal to the size `(byte[10] -> 10 + byte[10]; byte[70] -> 70 + byte[70])`
+- Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data `(byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+- Any bytes with length bigger than `255` uses `0x4d` (`OP_PUSHDATA2`)
+- Any bytes with length bigger than `65535` (`0xffff`) uses `0x4e` (`OP_PUSHDATA4`)
 
-Debe estar disponible RedeemScript o Timelock. Esto permite a los retransmisores obtener el «RedeemScript» y enviar transacciones en Core. Si se proporciona un `RedeemScript`, el retransmisor lo utilizará directamente. De lo contrario, el retransmisor construirá el script de canje basándose en el bloqueo de tiempo y la información en las entradas de la transacción. Puede encontrar más información sobre la función del retransmisor en la [sección siguiente](#role-of-relayers).
+Either RedeemScript or Timelock must be available. This allows relayers to obtain the `RedeemScript` and submit transactions on Core. If a `RedeemScript` is provided, relayer will use it directly. Otherwise, relayer will construct the redeem script based on the timelock and the information in the transaction inputs. You can find more information about the relayer role in the [below section](#role-of-relayers).
 
-## Papel de los retransmisores
+## Role of Relayers
 
-En un sentido estricto, el proceso de Staking Autocustodiado de Bitcoin consta de dos pasos
+In a strict sense, the Self-Custodial Bitcoin Staking process consists of two steps
 
-1. Participación en la red Bitcoin
-2. Envíe la transacción de staking de Bitcoin confirmada a Core
+1. Stake on the Bitcoin network
+2. Submit the confirmed Bitcoin staking transaction to Core
 
-Para que todo el proceso sea más cómodo, Core introduce el rol de retransmisores. Los retransmisores pueden ayudar a los usuarios a enviar transacciones a la red central después de la confirmación de la transacción de participación en la red Bitcoin. Dado que es necesario verificar la transacción en la red central con el cliente Bitcoin Light integrado, los retransmisores deben obtener el RedeemScript correspondiente de la salida `P2SH/P2WSH`. Para cumplir con este requisito, sugerimos a los usuarios
+To make the entire process more convenient, Core introduces the role of relayers. Relayers can help users submit transactions to the Core network after confirmation of the staking transaction on the Bitcoin network. Since verifying the transaction on the Core network with the embedded Bitcoin light client is necessary, relayers need to obtain the corresponding RedeemScript of the `P2SH/P2WSH` output. To meet this requirement, we suggest users to either
 
-- Si el `RedeemScript` es corto, coloque el RedeemScript completo al final de la salida `OP_RETURN`. Por ejemplo, un «RedeemScript» se construye utilizando un hash de clave pública, como se muestra en el ejemplo a continuación.
-- Establezca la dirección de recepción de la transacción de staking como propia para que los retransmisores puedan extraer información útil de la entrada de la transacción y componer el `RedeemScript` por sí mismos. P.ej.
-    - Si es una dirección normal, la `pubkey` o el `pubkey hash` debe configurarse como la clave pública correspondiente de la entrada al construir el `RedeemScript`.
-    - Si se trata de una dirección multifirma, la clave pública de la dirección multifirma correspondiente debe configurarse al construir el `RedeemScript`.
+- If the `RedeemScript` is short, put the entire RedeemScript at the end of the `OP_RETURN` output. For example, a `RedeemScript` is constructed using a public key hash, as shown in the sample below.
+- Set the receiving address of the staking transaction as their own so relayers can extract useful information from the transaction input and compose the `RedeemScript` by themselves. E.g.
+    - If it's a normal address, the `pubkey` or `pubkey hash` should be set as the input's corresponding public key when constructing the `RedeemScript`.
+    - If it is a multi-signature address, the corresponding multi-signature address's public key should be set when constructing the `RedeemScript`.
 
-## Ejemplos de transacciones
+## Transaction Examples
 
-### Transacción de apuesta
+### Staking transaction
 
 [https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(3).png)
+</p>
 
-#### Salida P2WSH
+#### P2WSH output
 
-Esta es la salida de replanteo y es una dirección P2WSH estándar. El script de canje utilizado para este resultado es `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
+This is the staking output and it is a standard P2WSH address. The redeem script used for this output is `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`
 
 ```jsx
 OP_PUSHBYTES_4 1f5e0e66
@@ -145,36 +155,39 @@ OP_EQUALVERIFY
 OP_CHECKSIG
 ```
 
-El script se parece mucho a un script de canje `P2PKH` normal, excepto que comienza con un bloqueo de tiempo `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
+The script looks very similar to a normal `P2PKH` redeem script except it starts with a timelock `OP_PUSHBYTES_4 1f5e0e66 OP_CLTV OP_DROP`.
 
-El hash del script de canje utilizado en esta salida de P2WSH es `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` que resulta en `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9`.
+The redeem script hash used in this P2WSH output is `SHA256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` which results to `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9` .
 
-El hash del script de canje utilizado en esta salida de P2WSH es `Sha256(041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac)` que resulta en `3dd731ae1c3ce32cfbec4ea82c855e027adf5fddca6d0118029b0ba15e44e0e9`
+Here is an online tool to generate `P2WSH` `sha256` hash value from redeem script, by which you can verify the above calculation: [https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php](https://www.btcschools.net/bitcoin/bitcoin_tool_sha256.php)
 
-#### Salida OP_RETURN
+#### OP_RETURN output
 
-El hexadecimal completo de esta salida es `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a91 4c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac`, donde
+The full hex of this output is `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , where
 
-- `6a` es el código de operación op_return
-- `4c50` es la longitud total de bytes después del código de operación `OP_RETURN` [1]
-- `5341542b` SAT+, que es satoshi plus identificador
-- `01` es la versión
-- `045b` 1115, que es la identificación de la cadena (1115 para Core Testnet y 1116 para Core Mainnet)
-- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` es la dirección de recompensa
-- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` es la dirección del validador
-- `01` es la tarifa de retransmisión, medida en CORE
-- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` es un script de canje, que se explica en la sección anterior.
+- `6a` is op_return opcode
+- `4c50` is the total byte length after the `OP_RETURN` opcode [1]
+- `5341542b` SAT+, which is satoshi plus identifier
+- `01` is version
+- `045b` 1115, which is chain id (1115 for Core Testnet and 1116 for Core Mainnet)
+- `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` is the reward address
+- `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` is the validator address
+- `01` is relayer fee, measured in CORE
+- `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is redeem script, which is explained in the above section.
 
-`041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` es un script de rescate, que se explica en la sección anterior
+[1] Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
 
-### Transacción de retiro
+### Withdrawal Transaction
 
-[https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865 f6b6ddf76e3806ba889)
+[https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
 
 This transaction spent the P2WSH time-lock output from the above staking transaction
 
-<p align="center"></p>
+<p align="center">
+![btc-staking-withdrawal-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
+</p>
 
-En la entrada, se proporciona el script de canje `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` para gastarlo. Dado que el bloqueo de tiempo `1f5e0e66` (660e5e1f después de revertir bytes, que es la marca de tiempo Unix 1712217631) ya expiró, el UTXO se gastó correctamente.
+In the input, the redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is provided to spend it. Since the time lock `1f5e0e66` (660e5e1f after reverting bytes, which is 1712217631 unix timestamp) has already expired, the UTXO was spent successfully.
 
-> **Nota**> Pronto se proporcionarán ejemplos de código para la construcción de transacciones de participación y retiro en la red Bitcoin.
+> **Note**
+> \> Code samples of constructing the staking and withdrawal transactions on Bitcoin network will be provided soon.
