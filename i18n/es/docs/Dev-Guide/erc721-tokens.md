@@ -40,7 +40,9 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
 - **Función de acuñación**: Añade una función para permitir que se creen nuevos tokens.
 - **URI de metadatos**: Puedes configurar los metadatos mediante una URI, que apuntará a la información de tus NFTs (ej: IPFS o un servidor centralizado).
 
-<p align="center"></p>
+<p align="center">
+![OpenZeppelin_Wizard-ERC-721](../../static/img/dev_tutorials/ERC721_Wizard.png)
+</p>
 
 4. **Copia el código**:
 
@@ -57,7 +59,9 @@ Remix es un IDE en línea para desarrollo en Solidity que permite escribir, desp
 - En Remix, crea un nuevo archivo navegando al directorio **contracts** y haciendo clic en el botón **+**.
 - Pega el código del contrato ERC-721 que copiaste del asistente de OpenZeppelin en el archivo recién creado.
 
-<p align="center"></p>
+<p align="center">
+![Remix-ERC-721](../../static/img/dev_tutorials/ERC721_Contract.png)
+</p>
 3. **Instala los contratos de OpenZeppelin**:
 
 - Remix ofrece una forma de importar contratos de OpenZeppelin directamente. Esto se hace agregando la siguiente declaración de importación al inicio de tu contrato:
@@ -78,7 +82,8 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Haz clic en **Compile** para compilar el contrato.
 - Corrige los errores\*\*: Si hay errores en el código, Remix los resaltará. Corrige los errores y recompila.
 
-<p align="center"></p>
+<p align="center">
+![Remix-ERC-721-Compile](../../static/img/dev_tutorials/ERC721_Compile.png)</p>
 
 ## Paso 4: Despliega el contrato en una red de pruebas
 
@@ -87,7 +92,9 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Ve a la pestaña de Deploy & Run Transactions en Remix.
 - En Environment, selecciona Injected Web3. Esto va a conectar Remix con tu billetera MetaMask.
 
-<p align="center"></p>
+<p align="center">
+![Remix-ERC-721-InjectedProvider](../../static/img/dev_tutorials/Remix_InjectedProvider.png)
+</p>
 
 - Asegúrate de que tu MetaMask esté conectado a Core Testnet2.
 
@@ -99,7 +106,9 @@ Si usas el plugin "Solidity compiler" de Remix, este obtendrá automáticamente 
 - Pega la dirección del propietario (owner) en la pestaña de despliegue (dado que el contrato es "ownable").
 - Clic en **Deploy**. MetaMask te pedirá que confirmes la transacción.
 
-<p align="center"></p>
+<p align="center">
+![Remix-ERC-721-Deployment](../../static/img/dev_tutorials/ERC721_Deployment.png)
+</p>
 
 Una vez desplegado, verás la dirección del contrato en Remix.
 
@@ -114,7 +123,9 @@ Ahora que tu contrato está desplegado, puedes interactuar con él directamente 
 - Llama a la función **safeMint** para acuñar nuevos NFTs. Vas a necesitar proporcionar la `dirección del destinatario` y el `token Id` como argumentos.
 - Confirma la transacción en Metamask.
 
-<p align="center"></p>
+<p align="center">
+![Remix-ERC-721-Mint](../../static/img/dev_tutorials/ERC721_Mint.png)
+</p>
 
 **Ver tu NFT**
 
