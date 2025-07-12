@@ -1,16 +1,16 @@
 ---
-sidebar_label: Core Subgraph Tutorial
+sidebar_label: Tutorial de Subgraph en Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Creating and Deploying a Subgraph on the Core Network
+# Creación y Despliegue de un Subgraph en la Red Core
 
-This guide outlines how to create, configure, and deploy a subgraph on the Core Network using Graph Protocol tools. A subgraph indexes on-chain data from a smart contract and makes it accessible via GraphQL, enabling powerful querying for decentralized applications.
+Esta guía describe cómo crear, configurar y desplegar un subgraph en la red Core utilizando las herramientas del protocolo Graph. Un subgraph indexa datos en cadena desde un contrato inteligente y los hace accesibles mediante GraphQL, lo que permite consultas potentes para aplicaciones descentralizadas.
 
-## Prerequisites
+## Requisitos Previos
 
-Before getting started, ensure you have the following installed:
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
 - [Node.js (v20 or later)](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/)
