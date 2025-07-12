@@ -48,13 +48,13 @@ En la instrucción anterior, los siguientes son los componentes del comando curl
 - **--data**: El cuerpo de la solicitud, que incluye el `method`, los `parameters` y el `request ID`.
 - **--url**: El endpoint o `URL` al que se envía la solicitud.
 
-Como se explicó anteriormente, CURL es un método para enviar solicitudes API, las cuales contienen un endpoint (es decir, la URL desde la que se obtiene la información) y un método HTTP. En nuestro caso, la URL aparece al final, después de la opción --_`url`_; puedes sustituirla por cualquiera de las URLs RPC válidas listadas [aquí](https://chainlist.org/chain/1116) para conectarte al Core Mainnet, solo asegúrate de encerrar la URL entre comillas simples (''). In the figure below, any of the URLs in the red box will work.
+Como se explicó anteriormente, CURL es un método para enviar solicitudes API, las cuales contienen un endpoint (es decir, la URL desde la que se obtiene la información) y un método HTTP. En nuestro caso, la URL aparece al final, después de la opción --_`url`_; puedes sustituirla por cualquiera de las URLs RPC válidas listadas [aquí](https://chainlist.org/chain/1116) para conectarte al Core Mainnet, solo asegúrate de encerrar la URL entre comillas simples (''). En la figura siguiente, cualquiera de las URLs dentro del recuadro rojo funcionará.
 
 <p align="center">
 ![rpc-list](../../static/img/rpc/rpc-1.png)
 </p>
 
-### Sample Response:
+### Respuesta de ejemplo:
 
 ```json
 {
@@ -80,9 +80,9 @@ Como se explicó anteriormente, CURL es un método para enviar solicitudes API, 
 }
 ```
 
-## Using cURL in a Python Workflow
+## Uso de cURL en un flujo de trabajo con Python
 
-If you prefer working in an IDE rather than the command line, you can replicate the cURL command using Python’s `requests` library. Here's how:
+Si prefieres trabajar en IDE en lugar de la línea de comandos, puedes replicar el comando cURL utilizando la librería `requests` de Python. Aquí te mostramos cómo:
 
 ```python
 import requests
@@ -101,7 +101,7 @@ print(response.content)
 ```
 
 :::note
-You can replace the URL https://rpc.ankr.com/core with any valid RPC URL found in the Core documentation, and don't forget to wrap the URL in single quotes.
+Puedes reemplazar la URL https://rpc.ankr.com/core por cualquier URL RPC válida que encuentres en la documentación de Core, y no olvides envolver la URL entre comillas simples.
 :::
 
 
