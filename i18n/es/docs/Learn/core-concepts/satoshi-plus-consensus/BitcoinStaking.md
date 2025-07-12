@@ -1,5 +1,5 @@
 ---
-sidebar_label: Self-Custodial Bitcoin Staking
+sidebar_label: Staking de Bitcoin Autocustodiado
 hide_table_of_contents: false
 sidebar_position: 2
 description: Aprovechando el Staking de Bitcoin en Satoshi Plus
