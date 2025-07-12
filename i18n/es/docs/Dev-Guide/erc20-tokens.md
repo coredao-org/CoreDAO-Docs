@@ -35,7 +35,9 @@ OpenZeppelin proporciona plantillas de contratos inteligentes seguras y auditada
    - **Token Symbol**: Ingresa el símbolo de tu token (ej: `MTK`).
    - **Initial Supply**: Fija una oferta inicial para tu token (ej: `1000000` tokens). Este es el número de tokens que se crearán tras el despliegue.
 
-<p align="center"></p>
+<p align="center">
+![Openzepplin_Wizard-ERC720](../../static/img/dev_tutorials/ERC20_Wizard.png)
+</p>
 
 Opcionalmente, puedes incluir funciones adicionales, como **minting** y **pausing**, si son necesarias para tu caso de uso.
 
