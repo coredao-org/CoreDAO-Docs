@@ -25,9 +25,11 @@ La verificación web es el método más comúnmente usado para la verificación 
 - [Para Core Testnet2](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
-3. After locating the contract, select the **Contract** tab and click **Verify and Publish**.
+3. Después de localizar el contrato, selecciona la pestaña **Contract** y haz clic en **Verify and Publish**.
 
-<p align="center"></p>
+<p align="center">
+  ![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)
+</p>
 
 4. Complete la información de verificación requerida en la página, específicamente:
 
@@ -75,6 +77,83 @@ La verificación con Hardhat es la forma más conveniente para que los desarroll
 Ten en cuenta que necesitarás agregar las redes de Core como cadenas custom, como se muestra a continuación en una configuración de ejemplo de Hardhat:
 
 ```javascript
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+
+
+const { PrivateKey } = require("./secret.json");
+require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-verify");
+
+
+module.exports = {
+  defaultNetwork: "testnet",
+
+
+  networks: {
+    hardhat: {},
+    testnet: {
+      url: "https://rpc.test2.btcs.network",
+      accounts: [PrivateKey],
+      chainId: 1114,
+    },
+    mainnet: {
+      url: "https://rpc.coredao.org",
+      accounts: [PrivateKey],
+      chainId: 1116,
+    },
+  },
+  etherscan: {
+    apiKey: {
+      testnet: "api key",
+      mainnet: "api key",
+    },
+    customChains: [
+      {
+        network: "testnet",
+        chainId: 1114,
+        urls: {
+          apiURL: "https://api.test2.btcs.network/api",
+          browserURL: "https://scan.test2.btcs.network/",
+        },
+      },
+      {
+        network: "mainnet",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org/",
+        },
+      },
+    ],
+  },
+
+
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.24",
+        settings: {
+          evmVersion: "shanghai",
+          optimizer: {
+            enabled: false,
+            runs: 200,
+          },
+        },
+      },
+    ],
+  },
+  paths: {
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+  mocha: {
+    timeout: 20000,
+  },
+};
 ```
 
 ## Verificación con Foundry
@@ -82,6 +161,9 @@ Ten en cuenta que necesitarás agregar las redes de Core como cadenas custom, co
 Actualiza el archivo `foundry.toml` para especificar la versión de Solidity y la versión de EVM para tu proyecto.
 
 ```bash
+[profile.default]
+solidity_version = "0.8.24"  # Specify the Solidity version
+evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
 ```
 
 Crea un archivo `.env` para almacenar información sensible como tu clave privada, RPC URL y API keys. Esto ayuda a mantener tus credenciales seguras y te permite referenciarlas fácilmente en tu código.
