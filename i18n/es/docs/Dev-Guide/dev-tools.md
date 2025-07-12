@@ -21,13 +21,13 @@ values={[
 ]}>
 
 <TabItem value="testnet2">
-  _Note: This is the latest and officially supported testnet for the Core blockchain. La versión anterior de la testnet (chainID 1115) está obsoleta y ya no se mantiene. Se recomienda encarecidamente a los desarrolladores hacer la transición a la nueva testnet (chain ID 1114) para asegurar el soporte continuo y el acceso a las funciones más recientes._
+  _Nota: Esta es la testnet más reciente y oficialmente compatible para la blockchain de Core. La versión anterior de la testnet (chainID 1115) está obsoleta y ya no se mantiene. Se recomienda encarecidamente a los desarrolladores hacer la transición a la nueva testnet (chain ID 1114) para asegurar el soporte continuo y el acceso a las funciones más recientes._
 
 - **[Block Explorer](https://scan.test2.btcs.network/):** busca y revisa transacciones, cuentas, bloques y más.
 
 - **[RPC Endpoints](https://chainlist.org/chain/1114):** endpoints RPC para el servicio RPC de Core Testnet.
 
-- \*\*[Core Faucet](https://scan.test2.btcs.network/faucet):\*\*fondea tu dirección de testnet con tCORE2.
+- **[Core Faucet](https://scan.test2.btcs.network/faucet):** fondea tu dirección de testnet con tCORE2.
 
 - **[Core Staking](https://stake.test2.btcs.network/):** sitio web oficial de staking en testnet de Core.
 
@@ -41,7 +41,7 @@ values={[
 
 - **[RPC Endpoints](https://chainlist.org/chain/1116):** endpoints RPC para el servicio RPC de Core Mainnet.
 
-- \*\*[Core Bridge](https://bridge.coredao.org/):\*\*bridge oficial para el ecosistema Core (más detalles en Recursos de Core Bridge)
+- **[Core Bridge](https://bridge.coredao.org/):** bridge oficial para el ecosistema Core (más detalles en Recursos de Core Bridge)
 
 - **[Core Staking](https://stake.coredao.org/):** sitio web oficial de staking en mainnet de Core.
 
