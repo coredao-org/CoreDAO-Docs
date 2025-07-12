@@ -18,7 +18,9 @@ DPoW establece una **relación simbiótica** entre las redes Bitcoin y Core:
 - Los mineros de Bitcoin obtienen una segunda recompensa de bloque a través de recompensas en tokens CORE
 - Core se beneficia de la seguridad inigualable y de la infraestructura descentralizada de Bitcoin.
 
-<p align="center"></p>
+<p align="center">
+![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
+</p>
 
 ## Conceptos Clave
 
@@ -29,7 +31,7 @@ DPoW establece una **relación simbiótica** entre las redes Bitcoin y Core:
 
 ## Cómo Funciona DPoW
 
-### Integración con la Minería
+### 1. Integración con la Minería
 
 Los mineros de Bitcoin continúan sus operaciones habituales.  Para participar en DPoW, deben incluir **metadatos de delegación** en el campo op_return de la transacción coinbase. Estos metadatos incluyen:
 
@@ -42,7 +44,7 @@ Este proceso:
 - No interfiere con la minería de Bitcoin
 - Extiende la protección del minero a la red Core
 
-### Relayers y Flujo de Datos
+### 2. Relayers y Flujo de Datos
 
 Para capturar esta información de delegación:
 
@@ -53,11 +55,11 @@ Para capturar esta información de delegación:
   - Agrega las delegaciones
   - Asigna peso a los validadores según el hash power de los mineros
 
-### Proceso de Elección de Validadores
+### 3. Proceso de Elección de Validadores
 
 Cada día, Core calcula las puntuaciones de los validadores utilizando los datos de delegación de mineros de **una semana antes**. Los validadores con mayor hash power delegado tienen una mayor probabilidad de ser elegidos
 
-### Recompensas e Incentivos
+### 4. Recompensas e Incentivos
 
 - Los validadores elegidos ganan recompensas en CORE por producir bloques
 - Los validadores toman una pequeña comisión
@@ -95,9 +97,7 @@ Cada día, Core calcula las puntuaciones de los validadores utilizando los datos
 | ------------------------------- | ------------------------------------------------------------------------------ |
 | Formato incorrecto de metadatos | Core valida los metadatos antes de procesarlos                                 |
 | Recompensas perdidas            | Utiliza herramientas confiables para monitorear las direcciones de recompensas |
-| Bajo rendimiento del validador  | ```
-Elige validadores con historial sólido de disponibilidad
-```               |
+| Bajo rendimiento del validador  | Elige validadores con historial sólido de disponibilidad                       |
 
 ## Cómo Empezar
 
