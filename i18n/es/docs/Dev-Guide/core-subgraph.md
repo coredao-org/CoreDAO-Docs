@@ -1,5 +1,5 @@
 ---
-sidebar_label: Overview
+sidebar_label: Descripción general
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -12,13 +12,13 @@ Los desarrolladores pueden utilizar un subgrafo autohospedado para extraer datos
 
 ## URLs y Claves Importantes
 
+### Core Mainnet
+
+<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-is.coredao.org</em> </td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+
 ###
 
-<table><thead><tr><th width="342">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>URL de administración</strong>: <em>https://thegraph.coredao.org/deploy/</em></td><td>Se utiliza para crear/implementar subgrafos.</td></tr><tr><td><strong>IPFS URL</strong>: <em>https://thegraph.coredao.org/ipfs/</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <em>https://thegraph.coredao.org</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
-
-###
-
-<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
+<table><thead><tr><th width="345">URL</th><th>Uso</th></tr></thead><tbody><tr><td><strong>Management URL</strong>: <br/><em>https://thegraph-node.test2.btcs.network</em></td><td>Se utiliza para crear/implementar subgrafos (<em>--node</em> o <em>-g</em>).</td></tr><tr><td><strong>IPFS URL</strong>: <br/><em>https://thegraph-ipfs.test2.btcs.network</em></td><td>Se utiliza para implementar subgrafos.</td></tr><tr><td><strong>HTTP query URL</strong>: <br/><em>https://thegraph.test2.btcs.network</em></td><td>Se utiliza para consultar datos de subgrafos.</td></tr><tr><td><strong>Health check URL</strong>: <br/><em>https://thegraph-sub.test2.btcs.network</em></td><td>Se utiliza para comprobar el estado del subgrafo.</td></tr></tbody></table>
 
 ## Pasos generales de configuración del subgrafo
 
