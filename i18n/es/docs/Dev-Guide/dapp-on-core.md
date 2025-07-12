@@ -67,6 +67,25 @@ Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No**
 4. Una vez que se inicializa este proyecto, encontrará la siguiente estructura de proyecto:
 
 ```bash
+dapp-tutorial.
+|   .gitignore
+|   hardhat-config.js   (Hardhat configuration file.)
+|   package-lock.json
+|   package.json
+|   README.md
+|
++---contracts (For Solidity Smart Contracts)
+|       Lock.sol
+|
++---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
+|   \---modules
+|           Lock.js
+|
++---node_modules
+|
++---test (For writing and Running Tests)
+|       Lock.js
+|
 ```
 
 5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-wallet-config.md) para obtener una guía detallada.
