@@ -12,26 +12,26 @@ Esta guía describe cómo crear, configurar y desplegar un subgraph en la red Co
 
 Antes de comenzar, asegúrate de tener instalado lo siguiente:
 
-- [Node.js (v20 or later)](https://nodejs.org/en)
+- [Node.js (v20 o posterior)](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/)
 - [Git](https://git-scm.com/)
 
-You will also need access to the following services:
+También necesitarás acceso a los siguientes servicios:
 
-- A Graph Node endpoint on Core
-- An IPFS node (for subgraph files)
-- A Graph access token (for authentication during deployment)
+- Un endpoint de Graph Node en Core
+- Un nodo IPFS (para los archivos del subgraph)
+- Un token de acceso de Graph (para autenticación durante el despliegue)
 
-## Step 1: Setting Up Your Subgraph Repository
+## Paso 1: Configuración de tu Repositorio de Subgraph
 
-To create your own subgraph, you can follow the [official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/).
+Para crear tu propio subgraph, puedes seguir la [guía oficial de The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/).
 
-> **Note:** If you plan to deploy on the Core network, ensure the `network` field in your `subgraph.yaml` is set to `core`.
+> **Nota:** Si planeas hacer el despliegue en la red Core, asegúrate de que el campo `network` en tu archivo `subgraph.yaml` esté configurado como `core`.
 
-### Example: Cloning a Preconfigured Subgraph
+### Ejemplo: Clonar un Subgraph Preconfigurado
 
-For this example, let's use the subgraph provided in the [dapp-tutorial GitHub repo](https://github.com/coredao-org/dapp-tutorial/tree/master/06-Subgraphs%20on%20Core):
+Para este ejemplo, usaremos el subgraph proporcionado en el [repositorio de GitHub dapp-tutorial](https://github.com/coredao-org/dapp-tutorial/tree/master/06-Subgraphs%20on%20Core):
 
 ```bash
 git clone https://github.com/coredao-org/dapp-tutorial/.git
@@ -39,9 +39,9 @@ cd ./dapp-tutorial/06-subgraph-on-core
 npm install
 ```
 
-## Step 2: project structure
+## Paso 2: Estructura del Proyecto
 
-Once inside the `06-subgraph-on-core` directory, you'll see the following project structure:
+Una vez dentro del directorio `06-subgraph-on-core`, verás la siguiente estructura de proyecto:
 
 ```
 06-subgraph-on-core/
@@ -54,23 +54,23 @@ Once inside the `06-subgraph-on-core` directory, you'll see the following projec
 
 ```
 
-### File Overview
+### Descripción de Archivos
 
-- **`subgraph.yaml`** – The main configuration file that defines the data sources, schema, and mapping handlers for the subgraph.
-- **`schema.graphql`** – Contains the GraphQL schema, which defines the structure of the data to be indexed and queried.
-- **`abis/`** – Directory holding the contract ABI files; in this example, `Guestbook.json` is used to decode events.
-- **`src/`** – Contains the AssemblyScript files responsible for handling events and creating entities. The logic for transforming Ethereum data into the subgraph's entities lives here.
+- **`subgraph.yaml`** – Archivo principal de configuración que define las fuentes de datos, el esquema y los mapeos de handlers para el subgraph.
+- **`schema.graphql`** – Contiene el esquema GraphQL, que define la estructura de los datos que se indexarán y consultarán.
+- **`abis/`** – Directorio que contiene los archivos ABI del contrato; en este ejemplo, se utiliza `Guestbook.json` para decodificar eventos.
+- **`src/`** – Contiene los archivos en AssemblyScript responsables de manejar eventos y crear entidades. Aquí vive la lógica que transforma los datos de Ethereum en entidades del subgraph.
 
 ### `subgraph.yaml`
 
-Configure `subgraph.yaml` to specify the contract, ABI, and event handlers:
+Configura `subgraph.yaml` para especificar el contrato, el ABI y los handlers de eventos:
 
-> **Important:** In your `subgraph.yaml`, make sure to:
+> **Importante:** Asegúrate de lo siguiente en tu `subgraph.yaml`:
 >
-> - Set the `network` field to `core`.
-> - Update the `address` field with your deployed contract address.
-> - Update the `name` and event details to match your contract and the events it emits.
-> - Set the `startBlock` to the block number where your contract was deployed.
+> - Establece el campo `network` como `core`.
+> - Actualiza el campo `address` con la dirección de tu contrato desplegado.
+> - Actualiza el `name` y los detalles del evento para que coincidan con tu contrato y los eventos que emite.
+> - Establece `startBlock` al número de bloque en el que se desplegó tu contrato.
 
 ```yaml
 specVersion: 1.0.0
@@ -103,7 +103,7 @@ dataSources:
 
 ### `schema.graphql`
 
-Define the GraphQL schema for indexed data:
+Define el esquema GraphQL para los datos indexados:
 
 ```graphql
 type EntrySigned @entity(immutable: true) {
@@ -118,7 +118,7 @@ type EntrySigned @entity(immutable: true) {
 
 ### `guestbook.ts`
 
-Implement the event handler in `src/guestbook.ts`:
+Implementa el manejador de eventos en `src/guestbook.ts`:
 
 ```typescript
 import { EntrySigned as EntrySignedEvent } from "../generated/Guestbook/Guestbook";
@@ -139,9 +139,9 @@ export function handleEntrySigned(event: EntrySignedEvent): void {
 }
 ```
 
-## Step 3: Configure Environment
+## Paso 3: Configurar Entorno
 
-Create a `.env` file in the project root and define the following:
+Crea un archivo `.env` en la raíz del proyecto y define lo siguiente:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -167,38 +167,38 @@ GRAPH_ACCESS_TOKEN=b020b95e511443699e72a10c697f84c0
   </TabItem>
 </Tabs>
 
-Ensure these endpoints are accessible from your environment.
+Asegúrate de que estos endpoints sean accesibles desde tu entorno.
 
-## Step 4: Run with Docker (Optional)
+## Paso 4: Ejecutar con Docker (Opcional)
 
-To simulate a local environment, use Docker:
+Para simular un entorno local, usa Docker:
 
 ```bash
 docker-compose up -d
 ```
 
-Check containers:
+Verifica los contenedores:
 
 ```bash
 docker ps
 ```
 
-Make sure services like Graph Node, IPFS, and Postgres are running.
+Asegúrate de que servicios como Graph Node, IPFS y Postgres estén en ejecución.
 
-## Step 5: Build and Deploy the Subgraph
+## Paso 5: Construir y desplegar el Subgraph
 
-### Build
+### Construir
 
-Generate code and build the subgraph:
+Genera el código y construye el subgraph:
 
 ```bash
 graph codegen
 graph build
 ```
 
-### Create and Deploy Subgraph
+### Crear y desplegar el Subgraph
 
-Create and deploy the subgraph:
+Crea y despliega el subgraph:
 
 ```bash
 graph create \
@@ -213,13 +213,13 @@ graph deploy \
   your-subgraph-name
 ```
 
-Replace `your-subgraph-name` with your deployment target.
+Reemplaza `your-subgraph-name` con el destino de tu despliegue.
 
-## Step 6: Query the Subgraph
+## Paso 6: Consultar el Subgraph
 
-After deployment, your subgraph will be available at the query endpoint (e.g., `https://thegraph.test2.btcs.network/subgraphs/name/guestbook-subgraph`).
+Después del despliegue, tu subgraph estará disponible en el endpoint de consulta (por ejemplo, `https://thegraph.test2.btcs.network/subgraphs/name/guestbook-subgraph`).
 
-Example query:
+Consulta de ejemplo:
 
 ```graphql
 {
@@ -234,17 +234,17 @@ Example query:
 }
 ```
 
-You can use GraphiQL, Apollo Client, or any GraphQL tool to query your data.
+Puedes usar GraphiQL, Apollo Client o cualquier herramienta GraphQL para consultar tus datos.
 
-## Summary
+## Resumen
 
-You've now successfully created and deployed a subgraph on the Core Network!
+¡Ahora has creado y desplegado exitosamente un subgraph en la Core Network!
 
-By indexing smart contract events and exposing them through GraphQL, subgraphs provide scalable, real-time access to blockchain data.
+Al indexar eventos de contratos inteligentes y exponerlos vía GraphQL, los subgraphs proveen acceso escalable y en tiempo real a datos de blockchain.
 
-From here, you can:
+A partir de aquí, puedes:
 
-- Extend your schema and mappings to support additional events and entities
-- Set up scheduled handlers for periodic indexing tasks
-- Integrate your subgraph with frontend frameworks using tools like Apollo Client
-- Monitor and test your subgraph with Graph Explorer
+- Extender tu esquema y mappings para soportar eventos y entidades adicionales
+- Configurar handlers programados para tareas periódicas de indexación
+- Integrar tu subgraph con frameworks frontend usando herramientas como Apollo Client
+- Monitorear y probar tu subgraph con Graph Explorer
