@@ -13,13 +13,15 @@ import TabItem from '@theme/TabItem';
 
 Core Explorer es una interfaz gráfica de usuario diseñada para permitir a los usuarios interactuar con la cadena de bloques CORE. A través de esta interfaz, un usuario puede explorar información sobre los bloques que se han añadido a la blockchain, las transacciones que han ocurrido en la blockchain, los saldos de las wallets, y la información sobre los tokens tCORE2 y CORE. Core Network proporciona exploradores tanto para su red principal como para su red de prueba.
 
-
+<Tabs defaultValue="mainnet" values={[ {label: 'Testnet', value: 'testnet2'}, {label: 'Mainnet', value: 'mainnet'}, ]}>
 
 <TabItem value="testnet2">
-* **Core Testnet2 Explorer:** https://scan.test2.btcs.network/</TabItem>
+    * **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
+</TabItem>
 
 <TabItem value="mainnet">
-* **Core Mainnet Explorer:** https://scan.coredao.org/</TabItem>
+    * **Core Mainnet Explorer:** https://scan.coredao.org/
+</TabItem>
 
 </Tabs>
 
