@@ -17,38 +17,38 @@ CORE tiene un **suministro fijo de 2.1 mil millones de tokens**, reflejando el m
 ![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
 
 1. **Minería de nodos (39.995% – 839,900,000 CORE):** Recompensas para validadores distribuidas durante 81 años
-2. **Users (25.029% - 525,600,000 CORE):** Community allocation at mainnet's genesis
-3. **Contributors (15% - 315,000,000 CORE):** Protocol development and maintenance
-4. **Reserves (10% - 210,000,000 CORE):** Foundation operations and development
-5. **Treasury (9.5% - 199,500,000 CORE):** Ecosystem development funds
-6. **Relayer Rewards (0.476% - 10,000,000 CORE):** Cross-chain consensus incentives
+2. **Usuarios (25.029% – 525,600,000 CORE):** Asignación comunitaria al génesis del mainnet
+3. **Contribuidores (15% – 315,000,000 CORE):** Desarrollo y mantenimiento del protocolo
+4. **Reservas (10% – 210,000,000 CORE):** Operaciones y desarrollo de la fundación
+5. **Tesorería (9.5% – 199,500,000 CORE):** Fondos para el desarrollo del ecosistema
+6. **Recompensas para Relayers (0.476% – 10,000,000 CORE):** Incentivos para el consenso entre cadenas
 
-## Emission Schedule
+## Calendario de Emisión
 
-- **Duration:** 81 years
-- **Annual Reduction:** 3.61% decrease in block rewards
-- **Curve:** Gradual reduction (vs Bitcoin's sharp halvings)
+- **Duración:** 81 años
+- **Reducción Anual:** Disminución del 3.61% en las recompensas por bloque
+- **Curva:** Reducción gradual (a diferencia de las reducciones bruscas de Bitcoin)
 
-### Cumulative CORE Emissions Monthly (First 6 Years)
+### Emisión acumulada de CORE mensual (Primeros 6 años)
 
 ![6-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
 
-### Cumulative CORE Emissions Yearly (81 Years)
+### Emisión acumulada de CORE anual (81 años)
 
 ![81-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
 
-### Breakdown of Allocations
+### Desglose de asignaciones
 
 ![break-down-of-emissions](../../../static/img/tokenomics/Breakdown_of_Allocations.png)
 
-## Deflationary Mechanisms
+## Mecanismos Deflacionarios
 
-**Transaction Fee Burns:** DAO-determined portion of fees and rewards are burned, ensuring supply approaches but never exceeds the 2.1B cap.
+**Quema de tarifas por transacción:** Una porción de las tarifas y recompensas determinada por la DAO se quema, asegurando que el suministro se aproxime pero nunca exceda el límite de 2.1 mil millones.
 
-## Comparison to Bitcoin
+## Comparación con Bitcoin
 
-| **Feature**          | **Bitcoin**                            | **CORE**                                                  |
-| -------------------- | -------------------------------------- | --------------------------------------------------------- |
-| **Maximum Supply**   | 21 million                             | 2.1 billion                               |
-| **Reduction Method** | Halvings (50% cuts) | Gradual (3.61% annual) |
-| **Timeline**         | ~140 years             | 81 years                                                  |
+| **Característica**      | **Bitcoin**                                       | **CORE**                                                 |
+| ----------------------- | ------------------------------------------------- | -------------------------------------------------------- |
+| **Suministro máximo**   | 21 millones                                       | 2.1 mil millones                         |
+| **Método de reducción** | Halvings (reducciones del 50%) | Gradual (3.61% anual) |
+| **Cronología**          | ~140 años                         | 81 años                                                  |
