@@ -1,7 +1,7 @@
 ---
 sidebar_label: Elección del validador
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 description: Proceso de elección de validadores en Satoshi Plus
 ---
 
@@ -25,7 +25,7 @@ Cada fuente contribuye al **hybrid score** de un validador, el cual determina su
 ![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
 </p>
 
-### Delegación de Apoyo
+### 1. Delegación de Apoyo
 
 Los validadores reciben apoyo desde tres fuentes:
 
@@ -35,7 +35,7 @@ Los validadores reciben apoyo desde tres fuentes:
 
 Cada forma de delegación contribuye a la selección del validador y a su elegibilidad para recompensas.
 
-### Cálculo del Puntaje Híbrido
+### 2. Cálculo del Puntaje Híbrido
 
 Los validadores son clasificados por un **hybrid score** que combina las tres formas de apoyo:
 
@@ -57,7 +57,7 @@ Donde, $$m + k + l = 1$$
 
 Esta fórmula promueve una influencia proporcional y justa entre todas las fuentes de delegación.
 
-### Selección de Validadores y Producción de Bloques
+### 3. Selección de Validadores y Producción de Bloques
 
 - Los **top 29 validadores** con los hybrid scores más altos son elegidos en cada **round (1 día)**
 - Los validadores producen bloques en un esquema **round-robin**, con cada turno de **3 segundos**
