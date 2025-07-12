@@ -1,7 +1,7 @@
 ---
 sidebar_label: Recompensas
 hide_table_of_contents: false
-sidebar_position: 0
+sidebar_position: 2
 description: Recompensas en el Ecosistema Core
 ---
 
@@ -94,7 +94,7 @@ donde:
 - $$l$$: Proporción de recompensas asignadas a la apuesta de BTC.
 - $$S$$: Puntuación híbrida del validador.
 
-## Cálculos de Recompensa por Unidad
+## 5. Cálculos de Recompensa por Unidad
 
 Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad apostada de poder hash, CORE o BTC:
 
@@ -109,7 +109,7 @@ Donde:
 - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
 - **Multiplicadores de Rendimiento:** Cada nivel de rendimiento mejorado tiene un multiplicador específico (e, f, g, h,..., etc) que se determina con base en los datos de staking del usuario y la configuración del sistema de Dual Staking. Estos parámetros son establecidos dinámicamente por gobernanza y recompensan a los usuarios por combinar staking de CORE y Bitcoin.
 
-## Impacto del Dual Staking en las Recompensas de Bitcoin
+## 6. Impacto del Dual Staking en las Recompensas de Bitcoin
 
 Las recompensas por staking de Bitcoin están organizadas por niveles, basados en cuánto CORE ha delegado un usuario en relación con su delegación de Bitcoin.
 
@@ -118,7 +118,7 @@ Las recompensas por staking de Bitcoin están organizadas por niveles, basados e
 
 Conoce más sobre [Dual Staking](../dual-staking/overview.md).
 
-## Estrategias de Optimización de Recompensas
+## 7. Estrategias de Optimización de Recompensas
 
 Los delegadores están incentivados a:
 
@@ -128,7 +128,7 @@ Los delegadores están incentivados a:
 
 Esta dinámica fomenta decisiones activas de delegación y competencia entre validadores.
 
-## Recompensas para Relayers y Verifiers
+## 8. Recompensas para Relayers y Verifiers
 
 ### Relayers
 
