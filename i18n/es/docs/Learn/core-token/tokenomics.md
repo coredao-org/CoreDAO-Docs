@@ -4,19 +4,19 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# CORE Tokenomics
+# Tokenomics de CORE
 
 ---
 
-## Supply Structure
+## Estructura de Suministro
 
-CORE has a **fixed supply of 2.1 billion tokens**, mirroring Bitcoin's scarcity model at 100x scale (21 million × 100).
+CORE tiene un **suministro fijo de 2.1 mil millones de tokens**, reflejando el modelo de escasez de Bitcoin a una escala 100x mayor (21 millones × 100).
 
-## Token Distribution
+## Distribución de Tokens
 
 ![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
 
-1. **Node Mining (39.995% - 839,900,000 CORE):** Validator rewards distributed over 81 years
+1. **Minería de nodos (39.995% – 839,900,000 CORE):** Recompensas para validadores distribuidas durante 81 años
 2. **Users (25.029% - 525,600,000 CORE):** Community allocation at mainnet's genesis
 3. **Contributors (15% - 315,000,000 CORE):** Protocol development and maintenance
 4. **Reserves (10% - 210,000,000 CORE):** Foundation operations and development
