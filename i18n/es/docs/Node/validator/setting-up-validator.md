@@ -1,5 +1,5 @@
 ---
-sidebar_label: Setup Validator Node
+sidebar_label: Configurar Nodo Validador
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -7,21 +7,21 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Setting Up Validator Nodes on Core
+# Configuración de Nodos Validador en Core
 
 ---
 
-This guide walks you through the process of setting up a validator node on the Core Network. It covers installing system dependencies, building the Core node software, initializing with snapshot data, and starting your validator node.
+Esta guía te lleva paso a paso por el proceso de configuración de un nodo validador en la red Core. Cubre la instalación de dependencias del sistema, la compilación del software del nodo Core, la inicialización con datos de snapshot y el inicio de tu nodo validador.
 
-### System Requirements for Validator Node
+### Requisitos del Sistema para Nodo Validador
 
-Before you begin, please ensure your system meets the required hardware and software specifications.
+Antes de comenzar, asegúrate de que tu sistema cumpla con las especificaciones de hardware y software requeridas.
 
-#### Supported OS Platforms
+#### Sistemas Operativos Compatibles
 
-Currently, the supported operating system platforms include **macOS** and **Linux**.
+Actualmente, los sistemas operativos compatibles incluyen **macOS** y **Linux**.
 
-#### Hardware Requirements
+#### Requisitos de Hardware
 
 <Tabs
 defaultValue="testnet2"
@@ -29,7 +29,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For Validator nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Para los nodos validador en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -41,7 +41,7 @@ For Validator nodes on **Core Testnet2**, following minimum hardware specificati
   </TabItem>
 
   <TabItem value="mainnet">
-   For Validator nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para los nodos Validadores en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -53,49 +53,49 @@ For Validator nodes on **Core Testnet2**, following minimum hardware specificati
   </TabItem>
 </Tabs>
 
-### Clone the Core Blockchain Codebase
+### Clona el repositorio de Core Blockchain
 
-It is recommended to use the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your validator node directly, i.e., running your validator node from the Core blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+Se recomienda utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar directamente tu nodo validador, es decir, ejecutar tu nodo directamente desde el código base de Core blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
 ```bash
 git clone https://github.com/coredao-org/core-chain
 cd core-chain
 ```
 
-#### Install Dependencies
+#### Instala las Dependencias
 
-After cloning the repo, the next step is to install all the necessary dependencies for building the geth (Go Ethereum) binary. Run the following command to install dependencies:
+Después de clonar el repositorio, el siguiente paso es instalar todas las dependencias necesarias para compilar el binario de geth (Go Ethereum). Ejecuta el siguiente comando para instalar las dependencias:
 
 ```bash
 make geth
 ```
 
-This will download and install the necessary dependencies and build the `geth` binary. The `geth` binary will be located at `./build/bin/geth`.
+Esto descargará e instalará las dependencias necesarias y compilará el binario de `geth`. El binario de `geth` se ubicará en `./build/bin/geth`.
 
-### Setting up the Node
+### Configuración del Nodo
 
-There are two approaches to set up a validator node from scratch on the Core blockchain:
+Hay dos formas de configurar un nodo validador desde cero en la blockchain de Core:
 
-- **By Snapshot (Recommend):** download the [latest Core blockchain snapshot](https://github.com/coredao-org/core-snapshots) and sync the node based on it.
-- **From Genesis (Not Recommended):** Sync the entire Core blockchain data from the [genesis block](https://github.com/coredao-org/core-chain/releases/latest).
+- **Mediante Snapshot (Recomendado):** descarga el [snapshot más reciente de la blockchain de Core](https://github.com/coredao-org/core-snapshots) y sincroniza el nodo a partir de él.
+- **Desde Genesis (No Recomendado):** sincronizar toda la información de la blockchain de Core desde el [bloque génesis](https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
-Syncing from the genesis block can take a significant amount of time. It is recommended to set up a Core node using the latest snapshot to speed up the process.
+La sincronización desde el bloque génesis puede tomar una cantidad significativa de tiempo. Se recomienda configurar un nodo de Core utilizando el snapshot más reciente para acelerar el proceso.
 :::
 
-#### Steps to Running Validator Node Using Snapshot
+#### Pasos para ejecutar un nodo validador usando un snapshot
 
-1. **Download the Latest Pre-Build Binaries:** Download the latest node binaries from the official [Core Releases Repository](https://github.com/coredao-org/core-chain/releases/latest).
+1. **Download the Latest Pre-Build Binaries:** Descarga los últimos binarios del nodo desde el [repositorio oficial de Core Releases](https://github.com/coredao-org/core-chain/releases/latest).
 
-2. **Genesis and Configuration Files:** The pre-build binaries contain `genesis.json` and `config.toml` for the respective network you want to run the validator node. Ensure these files are correctly placed in your node’s configuration directory before proceeding with further setup.
+2. **Genesis and Configuration Files:** Los binarios precompilados contienen los archivos `genesis.json` y `config.toml` correspondientes a la red en la que deseas ejecutar el nodo validador. Asegúrate de que estos archivos estén correctamente ubicados en el directorio de configuración de tu nodo antes de continuar con la configuración.
 
-3. **Initialize Genesis:** Write the genesis state locally by executing the following command from your project directory. Ensure that the relative path to the `genesis.json` file is correct. In this case, `genesis.json` means that the `genesis.json` file is located in the same directory, which should be in the root directory of your node.
+3. **Inicializa Genesis:** Escribe el estado génesis localmente ejecutando el siguiente comando desde el directorio de tu proyecto. Asegúrate de que la ruta relativa al archivo `genesis.json` sea correcta. En este caso, `genesis.json` significa que el archivo `genesis.json` está ubicado en el mismo directorio, que debería ser el directorio raíz de tu nodo.
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-You should see the following output:
+Deberías ver la siguiente salida:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -109,9 +109,9 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. **Download & Extract the Latest Snapshot:** Download and extract the latest Core blockchain snapshot from the official [Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+4. **Descargar y extraer el snapshot más reciente:** Descarga y extrae el snapshot más reciente de la blockchain de Core desde el [repositorio oficial de snapshots de Core](https://github.com/coredao-org/core-snapshots).
 
-5. **Generating Consensus Key:** Set up the consensus key before running the validator node. To create a new consensus key, use the following command, which will create a new account and output an address that will be your validator's address (consensus address).
+5. **Generar la clave de consenso:** Configura la clave de consenso antes de ejecutar el nodo validador. Para crear una nueva clave de consenso, usa el siguiente comando. Este comando creará una nueva cuenta y mostrará una dirección que será la dirección de tu validador (dirección de consenso).
 
 ```bash
 # generate the consensus key and input the password
