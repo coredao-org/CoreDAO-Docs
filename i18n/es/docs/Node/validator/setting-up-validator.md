@@ -118,66 +118,66 @@ INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=ligh
 geth account new --datadir ./node
 ```
 
-You'll be prompted to enter a password. This password is essential for unlocking your validator, so store it securely. You can save your password in a text file by running the following command:
+Se te pedirá que ingreses una contraseña. Esta contraseña es esencial para desbloquear tu validador, así que guárdala de forma segura. Puedes guardar tu contraseña en un archivo de texto ejecutando el siguiente comando:
 
 ```bash
 echo {your-password} > password.txt
 ```
 
-Make sure to follow these key considerations:
-\* **Secure Your Keystore & Password:** Store your keystore file and password safely, as you’ll need them later.
-\* **Backup Your Key:** Losing access to this key means losing control over your validator node.
+Asegúrate de seguir estas consideraciones clave:
+\* **Asegura tu Keystore y Contraseña:** Guarda de manera segura tu archivo keystore y la contraseña, ya que los necesitarás más adelante.
+\* **Haz una Copia de Seguridad de tu Clave:** Perder el acceso a esta clave significa perder el control sobre tu nodo validador.
 
-6. **Start the Validator Node:**
+6. **Inicia el nodo validador:**
 
-Use the following command to start the validator node.
+Usa el siguiente comando para iniciar el nodo validador.
 
 ```bash
 # start a validator node
 geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock  --cache 8000  --networkid {core-chain-id}
 ```
 
-Let’s break down the flags used in this command:
+Desglosemos las opciones usadas en este comando:
 
-- **`config ./config.toml`:** Specifies the configuration file for the node. Make sure you have the correct settings in `config.toml` for your environment.
+- **`config ./config.toml`:** Especifica el archivo de configuración para el nodo. Asegúrate de tener la configuración correcta en `config.toml` para tu entorno.
 
-- **`datadir ./node`:** Indicates the data directory for the node.
+- **`datadir ./node`:** Indica el directorio de datos para el nodo.
 
-- **`unlock {your-validator-address}`:** Unlocks the validator account using the address generated in the previous step.
+- **`unlock {your-validator-address}`:** Desbloquea la cuenta de validador utilizando la dirección generada en el paso anterior.
 
-- **`miner.etherbase {your-validator-address}`:** Specifies the address to receive rewards and block rewards. Typically, this would be your validator's address.
+- **`miner.etherbase {your-validator-address}`:** Especifica la dirección que recibirá las recompensas y recompensas por bloque. Típicamente, esta sería la dirección de tu validador.
 
-- **`password password.txt`:** The password to unlock your validator account (ensure this file is kept secure).
+- **`password password.txt`:** La contraseña para desbloquear la cuenta de tu validador (asegúrate de mantener este archivo seguro).
 
-- **`mine`:** Enables mining and validating (producing blocks) on the network. Essential for validator operation
+- **`mine`:** Habilita la minería/validación (producción de bloques) en la red. Es esencial para la operación del validador
 
-- **`allow-insecure-unlock`:** Enables the unlock process without additional security measures (use with caution).
+- **`allow-insecure-unlock`:** Permite el proceso de desbloqueo sin medidas de seguridad adicionales (usar con precaución).
 
-- **`cache 8000`:** Allocates a large cache (8GB in this case) to improve performance.
+- **`cache 8000`:** Asigna una gran caché (8GB en este caso) para mejorar el rendimiento.
 
-- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Tesnet2)
+- **`networkid`:** Especifica el ID de cadena de la red Core en la que deseas ejecutar el nodo validador (por ejemplo, 1114 para Core Testnet2)
 
-#### Syncing from Genesis
+#### Sincronización desde Génesis
 
-If you prefer to sync your validator node from the genesis block instead of using a snapshot:
+Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de usar una snapshot:
 
-- Skip Step #4 ("Download and extract the latest snapshot") in the setup instructions.
+- Omite el Paso #4 ("Descargar y extraer la última instantánea") en las instrucciones de configuración.
 
-- After completing Steps 1 (Download Binaries), 2 (Genesis/Config Files), and 3 (Initialize Genesis), continue to generate your consensus key as usual.
+- Después de completar los Pasos 1 (Descargar Binarios), 2 (Archivos Genesis/Config) y 3 (Initializar Genesis), continúa generando tu consensus key como de costumbre.
 
-- Then start the validator node using the command below:
+- Luego, inicia el nodo validador usando el siguiente comando:
 
   ```bash
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
+⚠️ **Nota:** Sincronizar desde genesis puede tomar mucho tiempo, dependiendo de los recursos del sistema y la velocidad de la red.
 
-## Monitor Logs
+## Monitoreo de Logs
 
-Once your validator node is up and running, it’s essential to monitor the logs to ensure everything is operating smoothly.
+Una vez que tu nodo validador esté activo y funcionando, es esencial monitorear los logs para asegurarte de que todo opere sin problemas.
 
-The logs are typically stored by default in `./node/logs/core.log`, but can be changed to another location if desired. You can view and follow the logs in real-time using the following command:
+Los registros generalmente se almacenan por defecto en `./node/logs/core.log`, pero se pueden cambiar a otra ubicación si se desea. Puedes ver y seguir los logs en tiempo real usando el siguiente comando:
 
 ```bash
 # Tail the logs in real-time
@@ -186,32 +186,32 @@ The logs are typically stored by default in `./node/logs/core.log`, but can be c
 tail -f ./node/logs/core.log
 ```
 
-These logs typically show that the node is importing new chain segments on the blockchain, indicating that it’s correctly receiving and processing blocks.
+Estos logs normalmente muestran que el nodo está importando nuevos segmentos de la cadena en la blockchain, lo que indica que está recibiendo y procesando bloques correctamente.
 
-- **Imported new chain segment:** This indicates that the node is successfully receiving new blocks from the network and adding them to its local blockchain.
+- **Imported new chain segment:** Esto indica que el nodo está recibiendo nuevos bloques desde la red y agregándolos a la blockchain local exitosamente.
 
-- **number:** The block number (e.g., `1,596,730` is the block number for that entry).
+- **número:** El número de bloque (ej: `1,596,730` es el número de bloque para esa entrada).
 
-- **hash:** The unique identifier (hash) for the block, like a fingerprint of the block data (e.g., `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
+- **hash:** El identificador único (hash) para el bloque, como una huella digital de los datos del bloque (ej: `0x5ae70389ed2fe40543cb9f695701bf13c9d174c5dc293720bdd6e294930ccc2c`).
 
-- **miner:** The address of the miner who mined that block.
+- **miner:** La dirección del minero que minó ese bloque.
 
-- **blocks:** The number of blocks imported (usually `1` in these logs).
+- **bloques:** El número de bloques importados (generalmente es `1` en estos registros).
 
-- **txs:** The number of transactions in the block (e.g., `1` tx or `2` txs).
+- **txs:** El número de transacciones en el bloque (ej: `1` tx o `2` txs).
 
-- **mgas:** The gas used in the transactions within the block. Gas refers to the computational work required to execute transactions (e.g., `0.021` means 0.021 million gas units).
+- **mgas:** El gas usado en la transacción dentro del bloque. El gas se refiere al trabajo computacional requerido para ejecutar las transacciones (por ejemplo, `0.021` significa 0.021 millones de unidades de gas).
 
-- **elapsed:** The time it took to import the block, in milliseconds (e.g., `3.003ms`).
+- **elapsed:** El tiempo que tardó en importar el bloque, en milisegundos (ej: `3.003ms`).
 
-- **mgasps:** The speed at which gas is being processed (in million gas per second).
+- **mgasps:** La velocidad a la cual el gas está siendo procesado (en millones de gas por segundo).
 
-- **triedirty:** The amount of dirty memory used (in this case, around `869.67 KiB`), which indicates how much memory is being used to store block data temporarily.
+- **triedirty:** La cantidad de memoria sucia utilizada (en este caso, alrededor de `869.67 KiB`), que indica cuánta memoria se está utilizando para almacenar temporalmente los datos del bloque.
 
-- **Looking for peers:** This message means the node is searching for other nodes to connect with. Peer-to-peer connections are crucial for synchronizing the blockchain with the network.
+- **Looking for peers:** Este mensaje significa que el nodo está buscando otros nodos con los que conectarse. Las conexiones peer-to-peer son cruciales para sincronizar la blockchain con la red.
 
-- **peercount:** The current number of peers the node is connected to (e.g., `2`).
+- **peercount:** El número actual de nodos a los que está conectado el nodo (ej: `2`).
 
-- **tried:** The number of peers the node has tried to connect with (e.g., `12`).
+- **tried:** El número de nodos con los que el nodo ha intentado conectarse (ej: `12`).
 
-- **static:** The number of fixed/static peers the node is configured to connect to (e.g., `2`).
+- **static:** El número de nodos fijos/estáticos a los que el nodo está configurado para conectarse (ej: `2`).
