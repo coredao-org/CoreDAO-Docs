@@ -7,25 +7,25 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# RPC Nodes on Core
+# Nodos RPC en Core
 
 ---
 
-RPC (Remote Procedure Call) nodes on the Core network play a crucial role in facilitating interaction between external applications and the Core blockchain. They serve as the interface through which developers and users can query and interact with the blockchain, making them essential for the functioning of decentralized applications (DApps) and other blockchain services.
+Los nodos RPC (Remote Procedure Call) en la red Core juegan un papel crucial al facilitar la interacción entre aplicaciones externas y la blockchain de Core. Funcionan como la interfaz a través de la cual los desarrolladores y usuarios pueden consultar e interactuar con la blockchain, siendo esenciales para el funcionamiento de aplicaciones descentralizadas (DApps) y otros servicios basados en blockchain.
 
-## System Requirements
+## Requisitos del Sistema
 
-There are several system requirements, both software and hardware, for setting up an RPC node on the Core network.
+Existen varios requisitos de sistema, tanto de software como de hardware, para configurar un nodo RPC en la red Core.
 
 ### Software
 
-- **Operating System:** Currently, _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later) are supported.
-- **Network Connectivity:** Stable internet connection with low latency and high availability.
-- **Firewall Configuration:** To ensure your RPC node can communicate with external applications and other nodes, you need to allow inbound HTTP traffic on port 8575, which is the default port for RPC communication. You can adjust this setting in the `config.toml` file if you prefer using a different port. Make sure that your firewall settings are correctly configured to allow traffic on this port.
+- **Sistema Operativo:** Actualmente, _solo_ se admiten sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o superior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad.
+- **Configuración del Firewall:** Para asegurar que tu nodo RPC pueda comunicarse con aplicaciones externas y otros nodos, debes permitir el tráfico HTTP entrante en el puerto 8575, que es el puerto predeterminado para la comunicación RPC. Puedes ajustar esta configuración en el archivo `config.toml` si prefieres usar un puerto diferente. Asegúrate de que la configuración de tu firewall esté correctamente ajustada para permitir tráfico en este puerto.
 
 ### Hardware
 
-RPC Nodes on Core act as a gateway for applications, developers, and users to interact with the blockchain. It processes queries, submits transactions, and retrieves real-time blockchain data via Remote Procedure Calls (RPC). These nodes are essential for dApps, wallets, and analytics platforms to access Core’s network seamlessly. The following are the hardware requirements for the RPC node on Core.
+Los nodos RPC en Core actúan como puerta de enlace para que aplicaciones, desarrolladores y usuarios interactúen con la blockchain. Procesan consultas, envían transacciones y recuperan datos en tiempo real mediante llamadas a procedimientos remotos (RPC). Estos nodos son esenciales para que dApps, wallets y plataformas de análisis accedan sin problemas a la red de Core. A continuación se presentan los requisitos de hardware para un nodo RPC en Core.
 
 <Tabs
 defaultValue="testnet2"
@@ -33,7 +33,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-For RPC Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
+Para los nodos RPC en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  
@@ -47,7 +47,7 @@ For RPC Nodes on **Core Testnet2**, following minimum hardware specifications ar
   </TabItem>
 
   <TabItem value="mainnet">
-    For RPC Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+Para los Nodos RPC en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 ```
 | Requirements   | Details                                                                                                 |  
@@ -61,25 +61,25 @@ For RPC Nodes on **Core Testnet2**, following minimum hardware specifications ar
   </TabItem>
 </Tabs>
 
-## Running RPC Node
+## Ejecución de Nodo RPC
 
-### Enabling HTTP Inbound Port
+### Habilitar el Puerto HTTP de Entrada
 
-If you are running an RPC node, you need to enable `HTTP` inbound rules on port **8575** in the firewall settings. Port **8575** is set as the default port. You can change the configurations in `config.toml`.
+Si estás ejecutando un nodo RPC, debes habilitar las reglas de entrada `HTTP` en el puerto **8575** dentro de la configuración del firewall. El puerto **8575** está configurado como puerto predeterminado. Puedes modificar esta configuración en el archivo `config.toml` si deseas usar un puerto diferente.
 
-### Build and Run
+### Compilar y Ejecutar
 
-1\. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your RPC full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1\. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar tu nodo RPC directamente desde el código base de la blockchain. Las instrucciones para compilar el código fuente se encuentran en el archivo [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
-2\. Download the node binary from the official [Core Releases Page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. The node binary includes the relevant mainnet and testnet configuration files. This is the [latest version](https://github.com/coredao-org/core-chain/releases/latest).
+2\. Descargue el binario del nodo desde la [página oficial de lanzamientos de Core] (https://github.com/coredao-org/core-chain/releases) del repositorio de core-chain. El binario del nodo incluye los archivos de configuración correspondientes para mainnet y testnet. Esta es la [última versión] (https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Write the genesis state locally by executing the following command from your project directory:
+3\. Escribe el estado génesis localmente ejecutando el siguiente comando desde tu directorio del proyecto:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-You should see the following output:
+Deberías ver la siguiente salida:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -93,13 +93,13 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Now that the RPC node setup is complete, its time to run it.
+4\. Ahora que la configuración del nodo RPC está completa, es momento de ejecutarlo.
 
-To run an RPC node, execute the following `geth` command:
+Para ejecutar un nodo RPC, ejecuta el siguiente comando `geth`:
 
 ```bash
 ## start a RPC node
 geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=full --rpc.allow-unprotected-txs
 ```
 
-5\. While the RPC full node is running, you can monitor its logs to make sure that everything is operating correctly. The log file is located at `./node/logs/core.log` by default, but can be changed to another location if desired.
+5\. Mientras el nodo completo RPC esté en ejecución, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de registro se encuentra, por defecto, en `./node/logs/core.log`, aunque puedes cambiar su ubicación si lo deseas.
