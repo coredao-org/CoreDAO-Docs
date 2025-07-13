@@ -1,5 +1,5 @@
 ---
-sidebar_label: RPC Node
+sidebar_label: Nodos RPC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
