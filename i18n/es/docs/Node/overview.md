@@ -29,7 +29,7 @@ Según tus objetivos, existen varias configuraciones posibles de nodo en la red 
 
 - **Si desea ayudar a los operadores de nodos a sincronizarse rápidamente con la red**
 
-    - [\*\*Iniciar un nodo de snapshot](./config/snapshot-node-config.md)
+    - [**Iniciar un nodo de snapshot**](./config/snapshot-node-config.md)
 
 ## Tipos de nodos en la red Core
 
