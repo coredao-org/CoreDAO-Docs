@@ -75,7 +75,7 @@ Tanto las recompensas básicas como las tarifas de transacción se calculan y di
 
 ### 11. ¿Con qué frecuencia los validadores deben estar en línea?
 
-El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Cada día, **27** validadores con las puntuaciones híbridas más altas son elegidos para formar el conjunto de validadores, y son responsables de producir bloques en la red Core durante toda la ronda. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
+El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Each day, **31** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entire round. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
 
 ### 9. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core Chain?
 
@@ -106,7 +106,7 @@ Donde,
 - rBp y tBp representan, respectivamente, los tokens de Bitcoin delegados a un validador y el total de tokens de Bitcoin en staking.
 - m y n son factores dinámicos que ajustan los pesos de la potencia de hash y el poder de voto de los tokens Bitcoin frente a los tokens CORE.
 
-4. **Formación del conjunto de validadores**: Los **23** validadores principales, según las puntuaciones híbridas, se seleccionan para la siguiente ronda.
+4. **Validator Set Formation**: The top **31** validators, based on hybrid scores, are selected for the next round.
 
 ### 9) ¿Qué es el slashing y cuáles son las diferentes penalizaciones por slashing en la blockchain de Core?
 
