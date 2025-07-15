@@ -1,25 +1,25 @@
 ---
-sidebar_label: How It Works
+sidebar_label: Cómo Funciona
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# How Self-Custodial Bitcoin Staking Works {#how-self-custodial-bitcoin-staking-works}
+# Cómo Funciona el Staking de Bitcoin con Autocustodia {#how-self-custodial-bitcoin-staking-works}
 
 ---
 
-## CLTV Timelock Mechanism
+## Mecanismo de Bloqueo Temporal CLTV
 
-[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) is a Bitcoin-native function that locks transaction outputs until a specified time or block height. When you create a CLTV transaction:
+[`CheckLockTimeVerify (CLTV)`](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) es una función nativa de Bitcoin que bloquea los outputs de una transacción hasta un tiempo o altura de bloque especificada. Cuando creas una transacción CLTV:
 
-- Bitcoin remains locked in your wallet for the specified duration
-- No third party can access your Bitcoin during the lock period
-- You retain full custody throughout the entire process
-- After expiration, you must send a redeem script to regain spending ability
+- El Bitcoin permanece bloqueado en tu wallet durante la duración especificada
+- Ninguna tercera parte puede acceder a tu Bitcoin durante el periodo de bloqueo
+- Conservas la custodia total durante todo el proceso
+- Tras la expiración, debes enviar un redeem script para recuperar la capacidad de gasto
 
-## Staking Process Overview
+## Resumen del Proceso de Staking
 
-1. **Create timelock transaction** with CLTV on Bitcoin blockchain
+1. **Crear una transacción con timelock** usando CLTV en la blockchain de Bitcoin
 2. **Include metadata** specifying validator delegation and reward address
 3. **Core relayers detect** valid staking transactions on Bitcoin
 4. **Earn CORE rewards** based on validator performance and staked amount
