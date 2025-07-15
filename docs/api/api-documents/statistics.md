@@ -36,7 +36,7 @@ Sample Response
 
 ## Get Validators List on Core
 
-Returns the top 21 validators on Core blockchain.
+Returns the top 31 validators on Core blockchain.
 
 ```bash
 https://openapi.coredao.org/api

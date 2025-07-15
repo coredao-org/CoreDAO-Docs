@@ -72,7 +72,7 @@ Both Base rewards and Transaction fees are calculated and distributed when the l
 
 ### 6. When are rewards paid out?
 
-Cycle time for Core to distribute rewards is currently set to **1 day**. Each day, **27** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entire round. At the end of each round, the accumulated rewards for that round are calculated and distributed.
+Cycle time for Core to distribute rewards is currently set to **1 day**. Each day, **31** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entire round. At the end of each round, the accumulated rewards for that round are calculated and distributed.
 
 
 ### 7. What are the risks/penalties involved in being a validator?
@@ -105,7 +105,7 @@ Where,
 - rBp and tBp are the Bitcoin tokens delegated to a validator and total staked Bitcoin tokens, respectively.
 - m and n are dynamic factors adjusting the weights of hash power and the voting power of Bitcoin versus CORE tokens.
 
-4. **Validator Set Formation**: The top **27** validators, based on hybrid scores, are selected for the next round.
+4. **Validator Set Formation**: The top **31** validators, based on hybrid scores, are selected for the next round.
 
 ### 9. What is slashing, and what are the different slashing fees charged on the Core blockchain?
 
