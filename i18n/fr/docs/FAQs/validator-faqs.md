@@ -75,7 +75,7 @@ Les récompenses de base et les frais de transaction sont calculés et distribu�
 
 ### 6. Quand les récompenses sont-elles versées ?
 
-Le cycle de distribution des récompenses de Core est actuellement fixé à **1 jour**. Chaque jour, les **27** validateurs avec les meilleurs scores hybrides sont élus pour former l'ensemble des validateurs actifs responsables de la production des blocs sur le réseau Core pendant tout le tour. À la fin de chaque tour, les récompenses accumulées sont calculées et distribuées.
+Le cycle de distribution des récompenses de Core est actuellement fixé à **1 jour**. Each day, **31** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entire round. À la fin de chaque tour, les récompenses accumulées sont calculées et distribuées.
 
 ### 7. Quels sont les risques/pénalités pour être un validateur ?
 
@@ -106,7 +106,7 @@ Où :
 - rBp et tBp représentent respectivement les tokens Btc délégués à un validateur et le total des tokens Btc stakés.
 - m et n sont des facteurs dynamiques ajustant le poids de la puissance de hachage et de la puissance de vote des tokens BTC par rapport aux jetons CORE.
 
-4. **Formation du groupe de validateurs :** Les **27** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
+4. **Validator Set Formation**: The top **31** validators, based on hybrid scores, are selected for the next round.
 
 ### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
 
