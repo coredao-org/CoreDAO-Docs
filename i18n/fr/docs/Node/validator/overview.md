@@ -14,7 +14,7 @@ Sur la Core blockchain, les validateurs sont des nœuds essentiels chargés de m
 
 Les validateurs sont responsables du maintien de la santé et de la continuité du réseau. En participant au consensus, ils confirment la validité des transactions et contribuent à la production de blocs. Le consensus Satoshi Plus sélectionne les validateurs en fonction d'un système de notation hybride qui prend en compte le Bitcoin délégué, les jetons CORE et la puissance de hachage Bitcoin.
 
-Les ensembles de validateurs sont alternés périodiquement, et les élections de validateurs ont lieu par périodes, généralement toutes les 24 heures (UTC+0), pour sélectionner les **27** meilleurs validateurs actifs en fonction de leurs scores hybrides. Les validateurs inactifs restants doivent attendre le prochain cycle d'élections pour devenir des validateurs actifs avant de pouvoir participer à la production de blocs.
+Validator sets are rotated periodically, and validator elections occur in epochs, typically every 24 hours (UTC+0), to select the top **31** active validators based on their hybrid scores. Les validateurs inactifs restants doivent attendre le prochain cycle d'élections pour devenir des validateurs actifs avant de pouvoir participer à la production de blocs.
 
 ## Économie des récompenses
 
