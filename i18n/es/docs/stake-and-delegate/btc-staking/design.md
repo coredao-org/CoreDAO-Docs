@@ -175,13 +175,13 @@ El hex completo de esta salida es `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d3
 - `01` es la tarifa de relayer, medida en CORE
 - `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` es un script de canje, que se explica en la sección anterior.
 
-[1] Any bytes bigger than or equal to `0x4c` is pushed by using `0x4c` (ie. `OP_PUSHDATA`) followed by the length followed by the data (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
+[1] Cualquier cantidad de bytes mayor o igual a `0x4c` se inserta usando `0x4c` (es decir, `OP_PUSHDATA`) seguido de la longitud seguida de los datos (`byte[80] -> OP_PUSHDATA + 80 + byte[80])`
 
-### Withdrawal Transaction
+### Transacción de retiro
 
 [https://mempool.space/tx/dc02ddc54ff82ba561f4d82429338d1df50377fcce0725bc764b9b2562d10832](https://mempool.space/tx/10182ad08fdb0469ab3d91d1bb340c7b0cbd858ad8865f6b6ddf76e3806ba889)
 
-This transaction spent the P2WSH time-lock output from the above staking transaction
+Esta transacción gastó la salida P2WSH con time-lock de la transacción de staking mencionada anteriormente
 
 <p align="center">
 ![btc-staking-withdrawal-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
