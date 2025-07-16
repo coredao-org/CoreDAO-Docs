@@ -20,8 +20,8 @@ sidebar_position: 2
 ## Resumen del Proceso de Staking
 
 1. **Crear una transacción con timelock** usando CLTV en la blockchain de Bitcoin
-2. **Include metadata** specifying validator delegation and reward address
-3. **Core relayers detect** valid staking transactions on Bitcoin
+2. **Incluir metadatos** que especifiquen la delegación al validador y la dirección de recompensas
+3. **Los realyers de Core** detectan transacciones de staking válidas en Bitcoin
 4. **Earn CORE rewards** based on validator performance and staked amount
 5. **Redeem Bitcoin** after timelock expires using redeem script
 
