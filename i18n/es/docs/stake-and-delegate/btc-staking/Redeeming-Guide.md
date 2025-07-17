@@ -36,54 +36,54 @@ Si tu período de staking ha expirado, puedes canjear tus activos en Bitcoin blo
 ![native-staking-guide](../../../static/img/native-staking/native-staking-20.avif)
 </p>
 
-4. You will be met with a popup window to redeem your Bitcoin. In order to redeem the Bitcoin, you must connect to the same Bitcoin wallet address as the one initiating the Bitcoin staking transaction.
+4. Aparecerá una ventana emergente para canjear tu Bitcoin. Para poder completar el canje, debes conectar la misma dirección de wallet de Bitcoin que usaste al iniciar la transacción de staking.
 
 <p align="center">
 ![native-staking-guide](../../../static/img/native-staking/native-staking-21.avif)
 </p>
 
-- Set your receiving Bitcoin Address to receive the unlocked Bitcoin. This does not need to be the same as the address that initiated the Bitcoin staking transaction.
-- Set your transaction speed priority
-- Click ‘**Create Transaction**’
+- Configura tu dirección de recepción de Bitcoin para recibir el Bitcoin desbloqueado. No es necesario que sea la misma que la dirección que inició la transacción de staking de Bitcoin.
+- Establezca su prioridad de velocidad de transacción
+- Haga clic en '**Crear transacción**'
 
 <p align="center">
 ![native-staking-guide](../../../static/img/native-staking/native-staking-22.avif)
 </p>
 
-5. Sign the transaction with your Bitcoin wallet that you connected previously, and verify the Bitcoin has returned to your receiving address. (_This may take a few minutes_).
+5. Firma la transacción con tu wallet de Bitcoin previamente conectada y verifica que el Bitcoin haya regresado a tu dirección de recepción. (_Esto puede tardar unos minutos_).
 
-## Claim CORE token rewards earned from Bitcoin Staking delegation
+## Reclamar recompensas en tokens CORE obtenidas por la delegación de Bitcoin Staking
 
 :::note
-To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:29 UTC).
+Para ser elegible y recibir recompensas, es necesario completar una ronda completa de staking (00:00:00 - 23:59:29 UTC).
 :::
 
-1\. From any CORE screen, hover over your connected wallet in the top right corner, click ‘**My Staking**’.
+1\. Desde cualquier pantalla CORE, coloque el cursor sobre su wallet conectada en la esquina superior derecha y haga clic en ‘**My Staking**’.
 
 <p align="center">
 ![native-staking-guide](../../../static/img/native-staking/native-staking-23.avif)
 </p>
 
-2. Click the ‘**Claim**’ button next to ‘**BTC Staking Rewards**’
+2. Haga clic en el botón ‘**Claim**’ junto a ‘**BTC Staking Rewards**’
 
 <p align="center">
 ![native-staking-guide](../../../static/img/native-staking/native-staking-24.avif)
 </p>
 
-3. Sign the transaction via MetaMask wallet.
+3. Firme la transacción a través de la wallet MetaMask.
 
 <p align="center" style={{zoom:"60%"}}>
 ![native-staking-guide](../../../static/img/native-staking/native-staking-25.png)
 </p>
 
-3. Wait for transaction to submit
+3. Espere a que se envíe la transacción
 
 ![native-staking-guide](../../../static/img/native-staking/native-staking-26.avif)
 
-3. Verify Transaction succeed
+3. Verificar que la transacción sea exitosa
 
 ![native-staking-guide](../../../static/img/native-staking/native-staking-27.avif)
 
-#### Conclusion
+#### Conclusión
 
-By following this guide, you have successfully learned how to redeem your staked Bitcoin, as well as, how to redeem your rewards earned as CORE token from delegating your staked Bitcoin. We’re happy you’ve chosen to journey into BTCfi with Self-Custodial Bitcoin Staking on Core!
+Al seguir esta guía, has aprendido con éxito cómo redimir tu Bitcoin en staking, así como cómo reclamar las recompensas obtenidas en forma de tokens CORE por delegar tus Bitcoin en staking. ¡Nos alegra que hayas elegido adentrarte en BTCfi con el Staking de Bitcoin Auto-Custodiado en Core!
