@@ -10,30 +10,30 @@ El Staking de Bitcoin (o Timelocking de Bitcoin) permite a los poseedores de Bit
 
 El Staking de Bitcoin transforma el Bitcoin de un activo estático en uno productivo que genera rendimiento, manteniendo sus propiedades de seguridad. Al incluir metadatos de selección de validadores en las transacciones con timelock, los poseedores de Bitcoin pueden participar en la elección de validadores de Core para ganar recompensas en tokens CORE.
 
-## How Bitcoin Staking Works in Satoshi Plus
+## Cómo Funciona el Staking de Bitcoin en Satoshi Plus
 
-Bitcoin's native protocol includes a CLTV function that allows users to make Bitcoin unspendable for a specified period. Core leverages this mechanism to enable Bitcoin holders to participate in consensus while maintaining complete control of their assets.
+El protocolo nativo de Bitcoin incluye una función CLTV que permite a los usuarios hacer que sus bitcoins sean imposibles de gastar por un período específico. Core aprovecha este mecanismo para permitir a los poseedores de Bitcoin participar en el consenso manteniendo el control total sobre sus activos.
 
-1. **Creating Timelocks:** Bitcoin holders use the CLTV function to timelock their Bitcoin on the Bitcoin blockchain for a chosen period (minimum 24 hours), making those coins temporarily unspendable.
+1. **Creación de Timelocks:** Los poseedores de Bitcoin utilizan la función CLTV para bloquear temporalmente su Bitcoin en la blockchain de Bitcoin durante un período elegido (mínimo de 24 horas), haciendo que esas monedas sean temporalmente no gastables.
 
-2. **Including Metadata:** During timelock creation, holders include metadata specifying their chosen Core validator and a Core address to receive CORE rewards.
+2. **Inclusión de Metadatos:** Durante la creación del timelock, los holders incluyen metadatos que especifican el validador de Core elegido y una dirección de Core donde se recibirán las recompensas en tokens CORE.
 
-3. **Validator Support:** The amount of Bitcoin timelocked in support of a validator influences their position in Core's validator election, impacting their chances of being selected to produce blocks.
+3. **Apoyo a Validadores:** La cantidad de Bitcoin en tinmelock en apoyo a un validador influye en su posición dentro de la elección de validadores de Core, lo que afecta sus probabilidades de ser seleccionado para producir bloques.
 
-4. **Relayer Monitoring:** Core's relayer network monitors the Bitcoin blockchain for timelock transactions that include valid consensus metadata.
+4. **Monitoreo por Relayers:** La red de relayers de Core monitorea la blockchain de Bitcoin en busca de transacciones con timelock que incluyan metadatos válidos de consenso.
 
-5. **Reward Distribution:** Elected validators secure the Core blockchain by producing blocks and validating transactions. Based on validator reliability and the amount of timelocked Bitcoin delegated in their support, the Core protocol distributes CORE token rewards to the specified Core addresses of Bitcoin stakers.
+5. **Distribución de Recompensas:** Los validadores elegidos aseguran la blockchain de Core produciendo bloques y validando transacciones. Con base en la fiabilidad del validador y la cantidad de Bitcoin bloqueado a su favor, el protocolo de Core distribuye recompensas en tokens CORE a las direcciones de Core especificadas por los stakers de Bitcoin.
 
-6. **Timelock Expiration:** When the timelock period ends, the Bitcoin becomes spendable again, and participation in Core consensus ceases. Any earned CORE rewards remain in the holder's Core address, but no additional rewards will be earned unless a new timelock is created.
+6. **Expiración del Timelock:** Cuando termina el período del timelock, los Bitcoin se vuelven gastables nuevamente, y la participación en el consenso de Core finaliza. Cualquier recompensa en CORE obtenida permanece en la dirección de Core del usuario, pero no se generarán más recompensas a menos que se cree un nuevo timelock.
 
-## Importance of Bitcoin Staking in Satoshi Plus
+## Importancia del Staking de Bitcoin en Satoshi Plus
 
-- **Bitcoin Activation:** Transforms Bitcoin from a static asset into a productive one that generates yield without compromising security or requiring conversion.
+- **Activación de Bitcoin:** Convierte a Bitcoin de un activo estático en uno productivo que genera rendimiento sin comprometer su seguridad ni requerir su conversión.
 
-- **Security Contribution:** Leverages Bitcoin's immense value to strengthen Core's security model without requiring Bitcoin to leave its native blockchain.
+- **Contribución a la Seguridad:** Aprovecha el enorme valor de Bitcoin para reforzar el modelo de seguridad de Core, sin que Bitcoin tenga que salir de su blockchain nativa.
 
-- **Custody Preservation:** Enables Bitcoin holders to participate in Core's consensus while maintaining complete self-custody of their assets.
+- **Preservación de la Custodia:** Permite que los holders de Bitcoin participen en el consenso de Core mientras mantienen la custodia total y directa de sus activos.
 
-#### **Conclusion**
+#### **Conclusión**
 
-Bitcoin Staking enables Bitcoin holders to earn yield by contributing to Core's security while maintaining complete custody of their assets. As an integral component of Satoshi Plus consensus, it works in concert with DPoW and DPoS to create a robust, multi-layered security framework. This mechanism aligns incentives between Bitcoin holders and the Core network, transforming Bitcoin from a static store of value into a productive asset without requiring it to leave its native blockchain.
+El staking de Bitcoin permite a los holders obtener rendimiento al contribuir con la seguridad de Core, sin perder la custodia de sus activos. Como parte fundamental del consenso Satoshi Plus, trabaja en conjunto con DPoW y DPoS para formar un marco de seguridad robusto y de múltiples capas. Este mecanismo alinea los incentivos entre los holders de Bitcoin y la red Core, transformando a Bitcoin de una reserva de valor pasiva en un activo productivo, sin necesidad de salir de su blockchain nativa.
