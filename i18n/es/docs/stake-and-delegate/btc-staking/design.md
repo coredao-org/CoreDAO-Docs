@@ -187,7 +187,8 @@ Esta transacción gastó la salida P2WSH con time-lock de la transacción de sta
 ![btc-staking-withdrawal-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
 </p>
 
-In the input, the redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` is provided to spend it. Since the time lock `1f5e0e66` (660e5e1f after reverting bytes, which is 1712217631 unix timestamp) has already expired, the UTXO was spent successfully.
+En la entrada, se proporciona el redeem script
+`041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` para gastar la salida. Dado que el bloqueo de tiempo `1f5e0e66` (660e5e1f después de revertir bytes, que es la marca de tiempo Unix 1712217631) ya expiró, el UTXO se gastó con éxito.
 
-> **Note**
-> \> Code samples of constructing the staking and withdrawal transactions on Bitcoin network will be provided soon.
+> **Nota:**
+> \> Próximamente se proporcionarán ejemplos de código para construir las transacciones de staking y retiro en la red de Bitcoin.
