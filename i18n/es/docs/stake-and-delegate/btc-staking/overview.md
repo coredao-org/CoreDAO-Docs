@@ -1,14 +1,14 @@
 ---
-sidebar_label: Overview
+sidebar_label: Descripción general
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Self-Custodial Bitcoin Staking
+# Staking de Bitcoin Autocustodiado
 
-Bitcoin Staking (or Bitcoin Timelocking) enables Bitcoin holders to participate in Core's consensus by timelocking their Bitcoin using its native CheckLockTimeVerify (CLTV) function, without transferring custody or exposing their assets to smart contract risk.
+El Staking de Bitcoin (o Timelocking de Bitcoin) permite a los poseedores de Bitcoin participar en el consenso de Core bloqueando temporalmente sus BTC mediante la función nativa CheckLockTimeVerify (CLTV) de Bitcoin, sin transferir la custodia ni exponer sus activos al riesgo de contratos inteligentes.
 
-Bitcoin Staking transforms Bitcoin from a static asset into a productive one that generates yield while maintaining its security properties. By including validator selection metadata in timelock transactions, Bitcoin holders can participate in the Core validator election in order to earn CORE token rewards.
+El Staking de Bitcoin transforma el Bitcoin de un activo estático en uno productivo que genera rendimiento, manteniendo sus propiedades de seguridad. Al incluir metadatos de selección de validadores en las transacciones con timelock, los poseedores de Bitcoin pueden participar en la elección de validadores de Core para ganar recompensas en tokens CORE.
 
 ## How Bitcoin Staking Works in Satoshi Plus
 
