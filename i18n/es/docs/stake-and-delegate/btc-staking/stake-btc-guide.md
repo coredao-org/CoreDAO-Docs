@@ -1,44 +1,48 @@
 ---
-sidebar_label: Staking Bitcoin with Core
+sidebar_label: Staking Bitcoin con Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Self-Custodial Bitcoin Staking
+# Staking de Bitcoin Auto-Custodiado
 
-This user guide is designed to walk you through staking your Bitcoin on the Core blockchain to earn CORE token rewards.
+Esta guía de usuario está diseñada para guiarte paso a paso en el proceso de hacer staking con tus Bitcoin en la blockchain de Core para ganar recompensas en tokens CORE.
 
-## Prerequisites
+## Requisitos Previos
 
-To be able to stake, you must have the following prerequisites:
+Para poder hacer staking, debes tener los siguientes requisitos previos:
 
-1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge). Visit https://stake.coredao.org for the latest supported wallets. You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the [Element Wallet](https://www.elementwallet.com/) mobile application as well.
-2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to receive CORE token rewards for staking Bitcoin. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](../../Dev-Guide/core-wallet-config.md).
+1. **Extensión de Navegador de una Wallet de Bitcoin Compatible:**
+  Para participar en el proceso de staking de BTC, debes instalar extensiones de navegador de alguna de las wallets de Bitcoin compatibles, como [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), y/o [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge). Visita https://stake.coredao.org para consultar la lista actualizada de wallets compatibles. Debes usar la versión de escritorio, ya que las wallets móviles y hardware wallets no están actualmente soportadas. También puedes hacer staking directamente usando la aplicación móvil [Element Wallet](https://www.elementwallet.com/).
+2. **Dirección de Wallet de Core para Recompensas:**
+  Prepara tu dirección de wallet de Core para recibir las recompensas en tokens CORE por hacer staking de Bitcoin. Si aún no tienes una dirección de wallet de Core, puedes crear una rápidamente conectándote con MetaMask. Para más información sobre cómo configurar MetaMask para que funcione con la red de Core, sigue la guía detallada disponible [aquí](../../Dev-Guide/core-wallet-config.md).
 
-## **Key Considerations For BTC Staking**
+## **Consideraciones Clave para el Staking de BTC**
 
-The following are some key points that users should be careful about when staking their Bitcoin with Core.
+A continuación, se presentan algunos puntos clave que los usuarios deben tener en cuenta al hacer staking de sus Bitcoin con Core.
 
-1. **Minimum Bitcoin Amount \+ Gas Fee:** The minimum BTC required for staking with Core depends on the chosen method. If using the official website UI, you must stake at least 0.01 BTC (excluding transaction fees). There is no minimum requirement when staking via the script. Additionally, users should account for Bitcoin gas fees required for transactions. If staking for less than a month, it is recommended to have at least 0.05 BTC to cover potential network congestion, which could increase gas costs beyond the staking rewards earned.
-2. **Minimum Staking Duration:** Minimum staking duration depends on the method. The official website UI requires a 5-day minimum, while the script has no lockup requirement.
-3. **Understanding the Differences in Bitcoin Staking Addresses:**
-  - The staking address in your Bitcoin wallet's transaction prompt may differ from your original Bitcoin address. This is because the Bitcoin staking address is derived from your Bitcoin wallet's master private key, ensuring control and security over your assets. Your Bitcoin remains safe in the Bitcoin staking address, unaffected by staking.
-4. **Delays in Locked Assets to Appear in your Bitcoin Wallet:**
-  - You may face some delays before your locked Bitcoin is displayed in your Bitcoin wallets. This delay primarily results from delays in transaction confirmation on the Bitcoin network, which can take several hours due to block time, the number of block confirmations required, and network congestion.
-  - While we are actively working with wallet partners to support the timely display of your assets in your wallets, you can check your locked assets on the ”MyStaking” page the Core staking website.
-  - You can also view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/).
-5. **Considerations for Locking Periods**
-  - Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
-6. **Supported Bitcoin Address Types**
+1. **Cantidad Mínima de Bitcoin \+ Tarifa de Gas**:
+  La cantidad mínima de BTC requerida para hacer staking con Core depende del método elegido. Si utilizas la interfaz oficial del sitio web, debes hacer staking con al menos 0.01 BTC (excluyendo las tarifas de transacción). No hay un requisito mínimo cuando se hace staking mediante script. Además, los usuarios deben considerar las tarifas de gas de la red Bitcoin necesarias para las transacciones. Si planeas hacer staking por menos de un mes, se recomienda tener al menos 0.05 BTC para cubrir posibles congestiones de red, que podrían aumentar las tarifas de gas por encima de las recompensas de staking obtenidas.
+2. **Duración Mínima del Staking:**
+  La duración mínima del staking también depende del método utilizado. La interfaz web oficial requiere un mínimo de 5 días, mientras que el staking mediante script no tiene requisito de bloqueo.
+3. **Comprendiendo las Diferencias en las Direcciones de Staking de Bitcoin:**
+  - La dirección de staking que aparece en la solicitud de transacción de tu cartera de Bitcoin puede diferir de tu dirección original de Bitcoin. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de tu cartera de Bitcoin, lo cual garantiza el control y la seguridad sobre tus activos. Tu Bitcoin permanece seguro en la dirección de staking, sin verse afectado por el proceso de staking.
+4. **Retrasos en la Visualización de Activos Bloqueados en tu Wallet de Bitcoin:**
+  - Puede que experimentes ciertos retrasos antes de que tu Bitcoin bloqueado se muestre en tus carteras. Este retraso se debe principalmente a demoras en la confirmación de transacciones en la red de Bitcoin, que pueden tardar varias horas debido al tiempo de bloque, el número de confirmaciones necesarias, y la congestión de la red.
+  - Aunque estamos trabajando activamente con socios de wallets para facilitar la visualización puntual de tus activos, puedes ver tus activos bloqueados en la página “MyStaking” del sitio web de staking de Core.
+  - También puedes ver tus fondos en staking buscando la dirección de staking en un explorador de Bitcoin como [Mempool.space](https://mempool.space/).
+5. **Consideraciones sobre los Períodos de Bloqueo**
+  - Una vez que bloqueas tu Bitcoin para hacer staking, este se vuelve inaccesible hasta que finalice el período de bloqueo. Teniendo en cuenta tus objetivos de inversión y tolerancia al riesgo, se recomienda seleccionar cuidadosamente el período de bloqueo. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a duraciones más largas.
+6. **Tipos de Direcciones de Bitcoin Compatibles**
 
-  - Core’s BTC staking supports the following Bitcoin address formats:
+  - El staking de BTC en Core es compatible con los siguientes formatos de direcciones de Bitcoin:
 
-    | Address Type                              | Prefix | Example (hypothetical)  |
-    | ----------------------------------------- | ------ | ------------------------------------------ |
-    | Legacy (P2PKH)         | 1      | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
-    | Nested SegWit (P2SH)   | 3      | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
-    | Native SegWit (Bech32) | bc1    | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
-    | Taproot (P2TR)         | bc1p   | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
+    | Tipo de Dirección                         | Prefijo | Ejemplo (hipotético)    |
+    | ----------------------------------------- | ------- | ------------------------------------------ |
+    | Legacy (P2PKH)         | 1       | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
+    | Nested SegWit (P2SH)   | 3       | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
+    | Native SegWit (Bech32) | bc1     | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
+    | Taproot (P2TR)         | bc1p    | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
 
 :::info
 Ensure your BTC wallet uses one of the supported formats above when participating in Core’s Self-Custodial BTC staking. Always double-check your wallet address before staking.
