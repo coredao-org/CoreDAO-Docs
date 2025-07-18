@@ -53,17 +53,17 @@ Supposons que vous stakiez **10 Bitcoin**.
 
 Si les ratios de niveau sont définis comme :
 
-- **R₁ = 3,625 CORE/Bitcoin**
-- **R₂ = 10,875 CORE/Bitcoin**
-- **R₃ = 29,000 CORE/Bitcoin**
+- **R₁ = 4,250 CORE/Bitcoin**
+- **R₂ = 12,750 CORE/Bitcoin**
+- **R₃ = 34,000 CORE/Bitcoin**
 
 Alors vos seuils seraient :
 
 | **Tier**     | **CORE requis** |
 | ------------ | --------------- |
-| Boost Tier   | 36,250 CORE     |
-| Super Tier   | 108,750 CORE    |
-| Satoshi Tier | 290,000 CORE    |
+| Boost Tier   | 42,500 CORE     |
+| Super Tier   | 127,500 CORE    |
+| Satoshi Tier | 340,000 CORE    |
 
 Votre niveau de récompense est déterminé par la quantité de CORE que vous avez déléguée par rapport à vos Bitcoin stakés.
 
