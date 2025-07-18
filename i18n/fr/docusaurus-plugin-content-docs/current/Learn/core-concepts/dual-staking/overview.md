@@ -42,7 +42,7 @@ Le protocole utilise un **système de multiplicateurs basé sur les niveaux** po
 | **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | Aucune délégation de CORE                    |
 | **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Niveau d'entrée de double staking            |
 | **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Ratio CORE-Bitcoin plus élevé                |
-| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
+| **Satoshi Tier** | R ≥ R₃                  | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
 
 - Les seuils de niveau (R₁, R₂, R₃) sont dynamiques et s'ajustent en fonction des conditions du réseau.
 - Les niveaux supérieurs débloquent des **multiplicateurs de récompenses** de plus en plus élevés.
@@ -53,17 +53,17 @@ Supposons que vous stakiez **10 Bitcoin**.
 
 Si les ratios de niveau sont définis comme :
 
-- **R₁ = 3,625 CORE/Bitcoin**
-- **R₂ = 10,875 CORE/Bitcoin**
-- **R₃ = 29,000 CORE/Bitcoin**
+- **R₁ = 4,250 CORE/Bitcoin**
+- **R₂ = 12,750 CORE/Bitcoin**
+- **R₃ = 34,000 CORE/Bitcoin**
 
 Alors vos seuils seraient :
 
 | **Tier**     | **CORE requis** |
 | ------------ | --------------- |
-| Boost Tier   | 36,250 CORE     |
-| Super Tier   | 108,750 CORE    |
-| Satoshi Tier | 290,000 CORE    |
+| Boost Tier   | 42,500 CORE     |
+| Super Tier   | 127,500 CORE    |
+| Satoshi Tier | 340,000 CORE    |
 
 Votre niveau de récompense est déterminé par la quantité de CORE que vous avez déléguée par rapport à vos Bitcoin stakés.
 
