@@ -53,17 +53,17 @@ Supongamos que haces staking de **10 Bitcoin**.
 
 Si las relaciones de nivel están definidas como:
 
-- **R₁ = 3,625 CORE/Bitcoin**
-- **R₂ = 10,875 CORE/Bitcoin**
-- **R₃ = 29,000 CORE/Bitcoin**
+- **R₁ = 4,250 CORE/Bitcoin**
+- **R₂ = 12,750 CORE/Bitcoin**
+- **R₃ = 34,000 CORE/Bitcoin**
 
 Entonces, tus umbrales serían:
 
 | **Tier**     | **CORE Requierido** |
 | ------------ | ------------------- |
-| Boost Tier   | 36,250 CORE         |
-| Super Tier   | 108,750 CORE        |
-| Satoshi Tier | 290,000 CORE        |
+| Boost Tier   | 42,500 CORE         |
+| Super Tier   | 127,500 CORE        |
+| Satoshi Tier | 340,000 CORE        |
 
 Tu nivel de recompensa se determina por la cantidad de CORE que hayas delegado en relación con tu Bitcoin en staking.
 
