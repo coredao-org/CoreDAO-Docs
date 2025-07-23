@@ -12,7 +12,7 @@ This user guide is designed to walk you through staking your Bitcoin on the Core
 
 To be able to stake, you must have the following prerequisites:
 
-1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge). Visit https://stake.coredao.org for the latest supported wallets. You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the [Element Wallet](https://www.elementwallet.com/) mobile application as well. 
+1. **Supported Bitcoin Wallet Browser Extension:** To participate in the BTC staking process, you must install browser extensions of any supported Bitcoin wallets, like [Xverse](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg?hl=en-GB&authuser=1), [Unisat](https://chromewebstore.google.com/detail/unisat-wallet/ppbibelpcjmhbdihakflkdcoccbgbkpo), and/or [OKX Wallet](https://chromewebstore.google.com/detail/okx-wallet/mcohilncbfahbmgdjkbpemcciiolgcge). Visit https://stake.coredao.org for the latest supported wallets. You must use a desktop version, as mobile and hardware wallets are not currently supported. You can also stake directly using the [Element Wallet](https://www.elementwallet.com/) mobile application as well.
 2. **Core Wallet Address for Rewards:** Prepare your Core wallet address to receive CORE token rewards for staking Bitcoin. If you do not have a Core wallet address, you can quickly create one by connecting to MetaMask. For more information on configuring MetaMask to work with the Core network, follow the detailed guide [here](../../Dev-Guide/core-wallet-config.md).
 
 ## **Key Considerations For BTC Staking**
@@ -137,6 +137,35 @@ Note: For BTC staking, transferring the staking validator will interrupt staking
 
 <p align="center" >
 ![btc-staking-on-core](../../../static/img/native-staking/native-staking-13.avif)
+</p>
+
+### BTC Staking Transaction Decoder
+
+Users can verify their BTC staking transactions in [Core scan](https://scan.coredao.org/btc-stake-txn-decoder) by:
+
+- Checking transaction confirmation status
+- Validating the OP_RETURN output format
+- Confirming the target validator address
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
+</p>
+
+This ensures that your BTC staking transaction meets all protocol requirements and will be properly processed by the Core network relayers.
+
+### How to Use
+
+1. **Paste the Transaction Hash**: Enter your BTC staking transaction hash in the decoder tool
+2. **Get Transaction Status**: The tool will provide the current transaction status
+3. **Decode Transaction Details**: It will decode and display:
+   - Input address
+   - Output address
+   - OP_RETURN output details
+   - Validator Address
+   - Delegator address
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/decoded-data.png)
 </p>
 
 ### Verify BTC Staking Address
