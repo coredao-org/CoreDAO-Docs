@@ -143,6 +143,35 @@ Nota: En el staking de BTC, transferir el validador de staking interrumpirá el 
 ![btc-staking-on-core](../../../static/img/native-staking/native-staking-13.avif)
 </p>
 
+### BTC Staking Transaction Decoder
+
+Users can verify their BTC staking transactions in [Core scan](https://scan.coredao.org/btc-stake-txn-decoder) by:
+
+- Checking transaction confirmation status
+- Validating the OP_RETURN output format
+- Confirming the target validator address
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
+</p>
+
+This ensures that your BTC staking transaction meets all protocol requirements and will be properly processed by the Core network relayers.
+
+### How to Use
+
+1. **Paste the Transaction Hash**: Enter your BTC staking transaction hash in the decoder tool
+2. **Get Transaction Status**: The tool will provide the current transaction status
+3. **Decode Transaction Details**: It will decode and display:
+  - Input address
+  - Output address
+  - OP_RETURN output details
+  - Validator Address
+  - Delegator address
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/decoded-data.png)
+</p>
+
 ### Verificar Dirección de Staking de BTC
 
 13. Antes de proceder a confirmar tu transacción de staking. Esta función de verificación permite a los usuarios verificar de forma independiente su dirección de staking de BTC, lo que ayuda a prevenir firmas a ciegas y mejora la seguridad del proceso de staking.
