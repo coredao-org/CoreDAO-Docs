@@ -411,6 +411,7 @@ const sidebars: SidebarsConfig = {
           ],
         },
         "stake-and-delegate/delegating-hash",
+        "stake-and-delegate/btc-staking-txn-decoder",
       ],
     },
   ],
