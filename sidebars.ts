@@ -394,6 +394,7 @@ const sidebars: SidebarsConfig = {
               label: "How To Guides",
               items: [
                 "stake-and-delegate/btc-staking/stake-btc-guide",
+                "stake-and-delegate/btc-staking-txn-decoder",
                 // 'stake-and-delegate/btc-staking/dual-staking-guide',
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
