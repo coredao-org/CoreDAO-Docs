@@ -384,9 +384,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           label: "Self-Custodial BTC Staking",
           items: [
-            //'stake-and-delegate/btc-staking/overview',
-            "stake-and-delegate/btc-staking/btc-staking-working",
-            //'stake-and-delegate/dual-staking',
+           "stake-and-delegate/btc-staking/btc-staking-working",
             "stake-and-delegate/btc-staking/design",
             {
               type: "category",
@@ -395,10 +393,10 @@ const sidebars: SidebarsConfig = {
               items: [
                 "stake-and-delegate/btc-staking/stake-btc-guide",
                 "stake-and-delegate/btc-staking-txn-decoder",
-                // 'stake-and-delegate/btc-staking/dual-staking-guide',
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
             },
+          "stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
         "stake-and-delegate/CORE-staking",
