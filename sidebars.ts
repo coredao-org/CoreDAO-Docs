@@ -396,7 +396,7 @@ const sidebars: SidebarsConfig = {
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
             },
-          "stake-and-delegate/ledger-on-core-mainnet",
+          //"stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
         "stake-and-delegate/CORE-staking",
