@@ -293,6 +293,7 @@ const sidebars: SidebarsConfig = {
           label: "Bridging with Core",
           items: [
             "Dev-Guide/bridge-with-layerzero",
+            "Dev-Guide/thirdweb-universal-bridge",
             "Dev-Guide/core-bridge-resources",
           ],
         },
@@ -384,7 +385,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           label: "Self-Custodial BTC Staking",
           items: [
-           "stake-and-delegate/btc-staking/btc-staking-working",
+            "stake-and-delegate/btc-staking/btc-staking-working",
             "stake-and-delegate/btc-staking/design",
             {
               type: "category",
@@ -396,7 +397,7 @@ const sidebars: SidebarsConfig = {
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
             },
-          //"stake-and-delegate/ledger-on-core-mainnet",
+            //"stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
         "stake-and-delegate/CORE-staking",
