@@ -55,8 +55,8 @@ La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. 
 ## Ecosistema de Builders de Core
 
 - [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
-- [Core Ignition](https://ignition.coredao.org/)
-- [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
+- [Core Missions](https://coredao.org/blog/the-future-of-core-incentive-campaigns)
+- [Core Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
 - [Core Commit Program](https://coredao.org/initiatives/commit-program)
 
