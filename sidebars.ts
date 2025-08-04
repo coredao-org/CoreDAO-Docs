@@ -121,7 +121,7 @@ const sidebars: SidebarsConfig = {
           type: "category",
           collapsed: true,
           label: "Security",
-          items: ["Learn/audit", "Learn/bug-reporting"],
+          items: ["Learn/audit", "Learn/bug-reporting", "Learn/spam-reporting"],
         },
       ],
     },
