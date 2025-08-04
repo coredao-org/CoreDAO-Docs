@@ -27,10 +27,6 @@
     "message": "Tutorial - Extras",
     "description": "The label for category Tutorial - Extras in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.CoreIgnition": {
-    "message": "CoreIgnition",
-    "description": "The label for category CoreIgnition in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Dev-Guide": {
     "message": "Guia para Desarolladores",
     "description": "The label for category Dev-Guide in sidebar tutorialSidebar"
@@ -166,10 +162,6 @@
   "sidebar.learnSidebar.category.Economics": {
     "message": "Economia",
     "description": "The label for category Economics in sidebar learnSidebar"
-  },
-  "sidebar.learnSidebar.category.Core Ignition": {
-    "message": "Core Ignition",
-    "description": "The label for category Core Ignition in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.link.Whitepaper": {
     "message": "Whitepaper",

@@ -116,72 +116,7 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-
-        // {
-        //   type: 'category',
-        //     collapsed: true,
-        //     label: 'Products',
-        //     link: {
-        //       type: 'generated-index',
-        //       title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
-        //       description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
-        //       slug: '/category/products',
-        //     },
-        //     items: [
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'stCORE',
-        //           items: [
-        //             'Learn/products/stCore/overview',
-        //             'Learn/products/stCore/design',
-        //             {
-        //               type: 'category',
-        //                 collapsed: true,
-        //                 label: 'How To Guides',
-        //                 items: [
-        //                   'Learn/products/stCore/stCore-on-Core',
-        //                 ]
-        //             },
-
-        //           ]
-        //       },
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'lstBTC',
-        //           items: [
-        //             'Learn/products/lstBTC/overview',
-        //           ]
-        //       },
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'coreBTC (Sunsetted)',
-        //           items: [
-        //             'Learn/products/coreBTC/overview',
-        //             'Learn/products/coreBTC/design',
-        //             'Learn/products/coreBTC/how-to-guides',
-        //           ]
-        //       },
-        //     ]
-        // },
-        // {
-        //   type: 'category',
-        //     collapsed: true,
-        //     label: 'Economics',
-        //     items: [
-        //         'Learn/economics/core-token/tokenomics-and-utility',
-        //     ]
-        // },
         "Learn/governance",
-
-        {
-          type: "category",
-          collapsed: true,
-          label: "Core Ignition",
-          items: ["CoreIgnition/Overview", "CoreIgnition/Mechanics"],
-        },
         {
           type: "category",
           collapsed: true,
@@ -315,7 +250,6 @@ const sidebars: SidebarsConfig = {
         "FAQs/dual-staking-faqs",
         "FAQs/LST-stCore-faqs",
         "FAQs/core-api-faqs",
-        "CoreIgnition/FAQs",
       ],
     },
   ],
