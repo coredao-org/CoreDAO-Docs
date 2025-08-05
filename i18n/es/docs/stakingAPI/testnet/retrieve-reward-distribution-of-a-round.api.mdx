@@ -1,0 +1,66 @@
+---
+id: retrieve-reward-distribution-of-a-round
+title: Retrieve Reward Distribution of a Round
+description: Returns the reward distribution for a specific staking round, including overall rewards distributed, burnt rewards, commission fees, and staking sharing.
+sidebar_label: Retrieve Reward Distribution of a Round
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVsFuG0cM/ZUBL22BreQGPe3NTdIit8BOT4YPszOUduLdmTXJkSMI++8FZ1eyIqmxURRIdJG0GvK9R/JxtAOP7CgMElKEGm5QMkU20qIhfLLkjQ8sFJqsJ8wqkbGGB3RhFZxhsQ8hrg2lHH1lQnRd9vogbZBs1805+DkJ+so0maLsf6qMS30fmEt6RK6Mjf6QmVtLIa4XUMFgyfYoSAz13Q6i7RFqKNBQQVD6jxlpCxUQPuZA6KEWylidiPyk4jTMxNw3SEXVUxtce1FzYNNgUYmPGVnQKxt2LfYW6h3IdlAiIQqukWAc75UADykysh54c3Wlb6eVvlxdOZAjFAq4QW84O4fMq9x1W8V2KQpG0aR2GLrgrIYvP7Nm3p1TS81ndKIlpDQgSZh4sVjJfEHCacFuy0HjkkcToi94cT0PCedOTFqVb5q9cFnAWEGPzHaNRwCqNa7P8l97H/Sj7UyIq0R9yWESmTmFsU3KsgcslS0IE/rLSqcheVnoNybj3xwR2BAOicpYjBXMkz+1l989z/0r4SWJvegbE2IhsQ4bjBPLuQbl6B9qqldi2D7lWJq2x5ks+W2Etwef/on4mrG5DJUZfanrie9fQL+dFsLttA/+M/pxQZXEyZ65TGJ+VfD7JSdfR4NEiUxyLhOh14npcO/fZ6ecDc/39vLs2on9V8Z6tXXfl9i9TfHL0NkQ95IDc8ZD/TSrtMlDDWssCqy0UMNy7sGSc99b2i7nXumSRdrs932mDmpoRQaul/uYX+0QFoIsbxaNOF5ElKdED0vQJay7pCgI0qmEt4nQzHNkrj9+ON9DHz8Yn1zuMcq0gjTkJz4JUkpTwG+Lq8WV1mtILL0tHZvvpZt5e5t50b87XhppZay5mW+urzjsngfih76M56kQ/CLL0nOtQmnRbu7rHcxh2seps3BwM9xX0CYWPbbbNZbxb+rGUR9Pd7h23Ae2Taebc2U7Pr3Gjyv188184f9i/pfL/aK6B9we/d/Y2C7rmTJpG0tBqUJ9dz9W0KL1SEXDFHTtHA5yFHVmdc1ysMdf7z/BOP4DSxJtzw==
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/testnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Reward Distribution of a Round"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/summary/rewards"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Returns the reward distribution for a specific staking round, including overall rewards distributed, burnt rewards, commission fees, and staking sharing.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"round","in":"query","required":true,"description":"The round number for which reward distribution is being requested.","schema":{"type":"integer"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Reward distribution for the round retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"result":{"type":"object","properties":{"round":{"type":"integer","description":"The round number for which the reward distribution is reported."},"overallRewardsDistributed":{"type":"integer","description":"The total rewards distributed in the given round."},"rewardsBurnt":{"type":"integer","description":"The amount of rewards burnt in the given round."},"rewardsCommissionFees":{"type":"integer","description":"The amount of rewards used for commission fees in the given round."},"rewardsStakingSharing":{"type":"integer","description":"The amount of rewards distributed for staking sharing in the given round."}}}}}}}},"400":{"description":"An error occurred while retrieving the reward distribution.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
