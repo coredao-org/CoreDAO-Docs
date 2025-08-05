@@ -157,6 +157,10 @@ Users can verify their BTC staking transactions in [Core scan](https://scan.core
 
 This ensures that your BTC staking transaction meets all protocol requirements and will be properly processed by the Core network relayers.
 
+:::info
+For detailed information about the BTC Staking Transaction Decoder, including common issues and solutions, check out the [guide](../btc-staking-txn-decoder.md) for more details.
+:::
+
 ### How to Use
 
 1. **Paste the Transaction Hash**: Enter your BTC staking transaction hash in the decoder tool
