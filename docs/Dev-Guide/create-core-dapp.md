@@ -5,11 +5,15 @@ sidebar_position: 2
 description: CLI tool to bootstrap a full-stack Web3 DApp on Core
 ---
 
-# Full-Stack Starter Kit for Building DApps on Core
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+# Full-Stack Starter Kit for Building dApps on Core
 
 ---
 
-### Full Stake dApp Toolkit
+### `create-core-dapp`: Full Stake dApp Toolkit
 
 `create-core-dapp` is a CLI tool to bootstrap a fully functional full-stack Web3 DApp on [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
 
@@ -148,7 +152,9 @@ PRIVATE_KEY=your_private_key_here
 NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id_here
 ```
 
-> **Note**: Get your WalletConnect Project ID from [cloud.walletconnect.com](https://cloud.walletconnect.com/)
+:::note
+Get your WalletConnect Project ID from [cloud.walletconnect.com](https://cloud.walletconnect.com/)
+::: 
 
 ## Deploy Contracts
 
@@ -199,9 +205,6 @@ export const config = getDefaultConfig({
 ## Run the Frontend
 
 After setting up your contracts and installing dependencies, you can start the Next.js frontend development server:
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs>
 <TabItem value="npm" label="npm" default>
