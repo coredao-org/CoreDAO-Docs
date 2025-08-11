@@ -1,5 +1,5 @@
 ---
-sidebar_label: Quickstart
+sidebar_label: Full Stake dApp Toolkit
 hide_table_of_contents: false
 sidebar_position: 2
 description: CLI tool to bootstrap a full-stack Web3 DApp on Core
@@ -9,7 +9,7 @@ description: CLI tool to bootstrap a full-stack Web3 DApp on Core
 
 ---
 
-### create-core-dapp
+### Full Stake dApp Toolkit
 
 `create-core-dapp` is a CLI tool to bootstrap a fully functional full-stack Web3 DApp on [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
 
@@ -200,15 +200,25 @@ export const config = getDefaultConfig({
 
 After setting up your contracts and installing dependencies, you can start the Next.js frontend development server:
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+<TabItem value="npm" label="npm" default>
+
 ```bash
 npm run dev
 ```
 
-or
+</TabItem>
+<TabItem value="yarn" label="yarn">
 
 ```bash
 yarn dev
 ```
+
+</TabItem>
+</Tabs>
 
 This will start the application at [http://localhost:3000](http://localhost:3000) by default.
 
@@ -266,9 +276,6 @@ If you encounter a TypeScript error when importing JSON files, ensure your `tsco
 
 ## Further Resources
 
-- [Core Developer Documention](https://docs.coredao.org/)
 - [Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp)
-- [Hardhat](https://hardhat.org/)
-- [RainbowKit](https://www.rainbowkit.com/)
-- [Wagmi](https://wagmi.sh/)
-- [Next.js](https://nextjs.org/)
+- [Deploying dApps on Core Using Hardhat](https://docs.coredao.org/docs/Dev-Guide/hardhat)
+- [NextJs and Rainbow Kit Core template](https://github.com/coredao-org/Core-NextJs-Rainbowkit)

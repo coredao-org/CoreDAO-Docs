@@ -190,11 +190,11 @@ const sidebars: SidebarsConfig = {
             slug: "/category/dev-guides",
           },
           items: [
-            "Dev-Guide/create-core-dapp",
             "Dev-Guide/smart-contract-guidelines",
             "Dev-Guide/remix",
             "Dev-Guide/hardhat",
             "Dev-Guide/foundry",
+            "Dev-Guide/create-core-dapp",
             "Dev-Guide/contract-verify",
             {
               type: "link",
