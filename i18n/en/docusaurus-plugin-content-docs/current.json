@@ -7,10 +7,6 @@
     "message": "Core Scan OpenAPI",
     "description": "The label for category Core Scan OpenAPI in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.CoreIgnition": {
-    "message": "CoreIgnition",
-    "description": "The label for category CoreIgnition in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.Dev-Guide": {
     "message": "Dev-Guide",
     "description": "The label for category Dev-Guide in sidebar tutorialSidebar"
@@ -147,10 +143,7 @@
     "message": "Economics",
     "description": "The label for category Economics in sidebar learnSidebar"
   },
-  "sidebar.learnSidebar.category.Core Ignition": {
-    "message": "Core Ignition",
-    "description": "The label for category Core Ignition in sidebar learnSidebar"
-  },
+
   "sidebar.learnSidebar.link.Whitepaper": {
     "message": "Whitepaper",
     "description": "The label for link Whitepaper in sidebar learnSidebar, linking to https://whitepaper.coredao.org/"

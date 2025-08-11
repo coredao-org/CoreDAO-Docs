@@ -116,77 +116,12 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-
-        // {
-        //   type: 'category',
-        //     collapsed: true,
-        //     label: 'Products',
-        //     link: {
-        //       type: 'generated-index',
-        //       title: 'Exploring Core: Pioneering DeFi Solutions for Bitcoin',
-        //       description: 'Learn about the different innovative products offered by Core that are helping in unlocking the BTCfi landscape!',
-        //       slug: '/category/products',
-        //     },
-        //     items: [
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'stCORE',
-        //           items: [
-        //             'Learn/products/stCore/overview',
-        //             'Learn/products/stCore/design',
-        //             {
-        //               type: 'category',
-        //                 collapsed: true,
-        //                 label: 'How To Guides',
-        //                 items: [
-        //                   'Learn/products/stCore/stCore-on-Core',
-        //                 ]
-        //             },
-
-        //           ]
-        //       },
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'lstBTC',
-        //           items: [
-        //             'Learn/products/lstBTC/overview',
-        //           ]
-        //       },
-        //       {
-        //         type: 'category',
-        //           collapsed: true,
-        //           label: 'coreBTC (Sunsetted)',
-        //           items: [
-        //             'Learn/products/coreBTC/overview',
-        //             'Learn/products/coreBTC/design',
-        //             'Learn/products/coreBTC/how-to-guides',
-        //           ]
-        //       },
-        //     ]
-        // },
-        // {
-        //   type: 'category',
-        //     collapsed: true,
-        //     label: 'Economics',
-        //     items: [
-        //         'Learn/economics/core-token/tokenomics-and-utility',
-        //     ]
-        // },
         "Learn/governance",
-
-        {
-          type: "category",
-          collapsed: true,
-          label: "Core Ignition",
-          items: ["CoreIgnition/Overview", "CoreIgnition/Mechanics"],
-        },
         {
           type: "category",
           collapsed: true,
           label: "Security",
-          items: ["Learn/audit", "Learn/bug-reporting"],
+          items: ["Learn/audit", "Learn/bug-reporting", "Learn/spam-reporting"],
         },
       ],
     },
@@ -259,6 +194,7 @@ const sidebars: SidebarsConfig = {
             "Dev-Guide/remix",
             "Dev-Guide/hardhat",
             "Dev-Guide/foundry",
+            "Dev-Guide/create-core-dapp",
             "Dev-Guide/contract-verify",
             {
               type: "link",
@@ -293,6 +229,7 @@ const sidebars: SidebarsConfig = {
           label: "Bridging with Core",
           items: [
             "Dev-Guide/bridge-with-layerzero",
+            "Dev-Guide/thirdweb-universal-bridge",
             "Dev-Guide/core-bridge-resources",
           ],
         },
@@ -310,12 +247,10 @@ const sidebars: SidebarsConfig = {
         "FAQs/core-node-faqs",
         "FAQs/validator-faqs",
         "FAQs/delegator-faqs",
-        //"FAQs/coreBTC-faqs",
         "FAQs/btc-staking-faqs",
         "FAQs/dual-staking-faqs",
         "FAQs/LST-stCore-faqs",
         "FAQs/core-api-faqs",
-        "CoreIgnition/FAQs",
       ],
     },
   ],
@@ -384,7 +319,7 @@ const sidebars: SidebarsConfig = {
           collapsed: true,
           label: "Self-Custodial BTC Staking",
           items: [
-           "stake-and-delegate/btc-staking/btc-staking-working",
+            "stake-and-delegate/btc-staking/btc-staking-working",
             "stake-and-delegate/btc-staking/design",
             {
               type: "category",
@@ -396,7 +331,7 @@ const sidebars: SidebarsConfig = {
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
             },
-          //"stake-and-delegate/ledger-on-core-mainnet",
+            //"stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
         "stake-and-delegate/CORE-staking",

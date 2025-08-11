@@ -61,7 +61,7 @@
 <priority>0.80</priority>
 </url>
 <url>
-<loc>https://docs.coredao.org/docs/CoreIgnition/Overview</loc>
+<loc>https://docs.coredao.org/docs/Core/Overview</loc>
 <lastmod>2025-07-17T16:26:26+00:00</lastmod>
 <priority>0.80</priority>
 </url>
@@ -251,11 +251,6 @@
 <priority>0.64</priority>
 </url>
 <url>
-<loc>https://docs.coredao.org/docs/CoreIgnition/FAQs</loc>
-<lastmod>2025-07-17T16:26:26+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
 <loc>https://docs.coredao.org/docs/learn/core-concepts/overview</loc>
 <lastmod>2025-07-17T16:26:26+00:00</lastmod>
 <priority>0.64</priority>
@@ -292,11 +287,6 @@
 </url>
 <url>
 <loc>https://docs.coredao.org/docs/Learn/liquid-staking/lstBTC/overview</loc>
-<lastmod>2025-07-17T16:26:26+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://docs.coredao.org/docs/CoreIgnition/Mechanics</loc>
 <lastmod>2025-07-17T16:26:26+00:00</lastmod>
 <priority>0.64</priority>
 </url>
