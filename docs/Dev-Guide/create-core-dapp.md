@@ -1,5 +1,5 @@
 ---
-sidebar_label: Full Stake dApp Toolkit
+sidebar_label: Full-stack dApp Toolkit
 hide_table_of_contents: false
 sidebar_position: 2
 description: CLI tool to bootstrap a full-stack Web3 DApp on Core
@@ -9,11 +9,11 @@ description: CLI tool to bootstrap a full-stack Web3 DApp on Core
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Full-Stack Starter Kit for Building dApps on Core
+# Full-stack Starter Kit for Building dApps on Core
 
 ---
 
-### `create-core-dapp`: Full Stake dApp Toolkit
+### `create-core-dapp`: Full Stack dApp Toolkit
 
 `create-core-dapp` is a CLI tool to bootstrap a fully functional full-stack Web3 DApp on [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
 
