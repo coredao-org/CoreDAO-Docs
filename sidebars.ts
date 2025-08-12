@@ -190,11 +190,11 @@ const sidebars: SidebarsConfig = {
             slug: "/category/dev-guides",
           },
           items: [
-            "Dev-Guide/create-core-dapp",
             "Dev-Guide/smart-contract-guidelines",
             "Dev-Guide/remix",
             "Dev-Guide/hardhat",
             "Dev-Guide/foundry",
+            "Dev-Guide/create-core-dapp",
             "Dev-Guide/contract-verify",
             {
               type: "link",
@@ -247,7 +247,6 @@ const sidebars: SidebarsConfig = {
         "FAQs/core-node-faqs",
         "FAQs/validator-faqs",
         "FAQs/delegator-faqs",
-        //"FAQs/coreBTC-faqs",
         "FAQs/btc-staking-faqs",
         "FAQs/dual-staking-faqs",
         "FAQs/LST-stCore-faqs",
