@@ -52,14 +52,16 @@ values={[
 - **[Gnosis Safe](https://safe.coredao.org/welcome):** gestión segura multi-sig de activos digitales.
 
 - **[wCORE](https://scan.coredao.org/address/0x191e94fa59739e188dce837f7f6978d84727ad01):** smart contract oficial del token wrapped CORE.
-    </TabItem>
+
+</TabItem>
 
 </Tabs>
 
-### Recursos generales
+### General Resources
 
-- **[GitHub de Core DAO](https://github.com/coredao-org):** página oficial de GitHub que contiene todo sobre Core.
-- **[Guias y tutoriales](https://github.com/coredao-org/dapp-tutorial):** guías detalladas y tutoriales para arrancar tu camino construyendo en Core.
+- **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
+- **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
+- **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
 
 ### Whitepaper
 
