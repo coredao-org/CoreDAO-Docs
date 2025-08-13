@@ -396,10 +396,80 @@ const sidebars: SidebarsConfig = {
                 "stake-and-delegate/btc-staking/Redeeming-Guide",
               ],
             },
-          "stake-and-delegate/ledger-on-core-mainnet",
+             {
+                type: "category",
+                collapsed: true,
+                label: "Using Ledger Hardware Wallets",
+                link: {
+                    type: "generated-index",
+                    title: "Using Ledger for BTC Staking on Core",
+                    description: "Step-by-Step user guides for using Ledger hardware devices to stake, redeem, and redelegate BTC on Core",
+                    slug: "/ledger-on-core",
+                  },
+                items: [
+                {
+                  type: "category",
+                  collapsed: true,
+                  label: "On Core Mainnet",
+                  link: {
+                    type: "generated-index",
+                    title: "Using Ledger for BTC Staking on Core",
+                    description: "Step-by-Step user guides for using Ledger hardware devices to stake, redeem, and redelegate BTC on Core Mainnet",
+                    slug: "/ledger-on-core-mainnet",
+                  },
+                  items: [
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/mainnet/btc-staking",
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/mainnet/btc-redemption",
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/mainnet/btc-redelegation",
+                  ],
+                },
+
+                {
+                  type: "category",
+                  collapsed: true,
+                  label: "On Core Testnet",
+                  link: {
+                    type: "generated-index",
+                    title: "Using Ledger for BTC Staking on Core Testnet",
+                    description: "Step-by-Step user guides for using Ledger hardware devices to stake, redeem, and redelegate BTC on Core Testnet",
+                    slug: "/ledger-on-core-testnet",
+                  },
+                  items: [
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-staking",
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redemption",
+                    "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redelegation",
+                  ],
+                },
+              // {
+              //   type: "category",
+              //   collapsed: true,
+              //   label: "On Core Testnet",
+              //   items: [
+              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-staking",
+              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redemption",
+              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redelegation",
+              //   ],
+              // },
+              ],
+            },
+          //"stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
-        "stake-and-delegate/CORE-staking",
+        {
+          type: "category",
+          collapsed: true,
+          label: "Staking CORE Tokens",
+          link: {
+            type: "generated-index",
+            title: "Staking CORE Tokens",
+            description: "Guides for using EVM Wallets and Ledger Hardware Wallets to stake CORE",
+            slug: "/core-staking",
+            },
+          items: [        
+            "stake-and-delegate/CORE-staking",
+            "stake-and-delegate/Ledger-CORE-staking",
+          ],
+        },
         {
           type: "category",
           collapsed: true,

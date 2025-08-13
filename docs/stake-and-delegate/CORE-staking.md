@@ -1,10 +1,11 @@
 ---
-sidebar_label: CORE Staking
+sidebar_label: Using EVM Wallets
+description: Guide to stake CORE from EVM Wallets
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# CORE Staking
+# Staking CORE Using EVM Wallets
 
 ---
 
