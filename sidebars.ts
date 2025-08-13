@@ -374,36 +374,26 @@ const sidebars: SidebarsConfig = {
                     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redelegation",
                   ],
                 },
-              // {
-              //   type: "category",
-              //   collapsed: true,
-              //   label: "On Core Testnet",
-              //   items: [
-              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-staking",
-              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redemption",
-              //     "stake-and-delegate/btc-staking/Ledger-Core-Guides/testnet/btc-redelegation",
-              //   ],
-              // },
               ],
             },
-          //"stake-and-delegate/ledger-on-core-mainnet",
           ],
         },
-        {
-          type: "category",
-          collapsed: true,
-          label: "Staking CORE Tokens",
-          link: {
-            type: "generated-index",
-            title: "Staking CORE Tokens",
-            description: "Guides for using EVM Wallets and Ledger Hardware Wallets to stake CORE",
-            slug: "/core-staking",
-            },
-          items: [        
-            "stake-and-delegate/CORE-staking",
-            "stake-and-delegate/Ledger-CORE-staking",
-          ],
-        },
+        // {
+        //   type: "category",
+        //   collapsed: true,
+        //   label: "Staking CORE Tokens",
+        //   link: {
+        //     type: "generated-index",
+        //     title: "Staking CORE Tokens",
+        //     description: "Guides for using EVM Wallets and Ledger Hardware Wallets to stake CORE",
+        //     slug: "/core-staking",
+        //     },
+        //   items: [        
+        //     "stake-and-delegate/CORE-staking",
+        //     "stake-and-delegate/Ledger-CORE-staking",
+        //   ],
+        // },
+        "stake-and-delegate/CORE-staking",
         {
           type: "category",
           collapsed: true,
