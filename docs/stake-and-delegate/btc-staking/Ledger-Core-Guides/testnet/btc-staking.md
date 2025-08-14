@@ -185,7 +185,7 @@ Before connecting your Ledger device to the website, it's important to ensure yo
 
 #### Staking Option One: Connect Ledger Wallet Directly
 
-1. On the [Core Testnet Bitcoin Staking website](https://stake.coredao.org/earn), click on "**Connect**" next to BTC Staking Amount. Remember, only the primary account is supported for staking BTC; ensure it is the same account connected to your Ledger Live.
+1. On the [Core Testnet Bitcoin Staking website](https://stake.test2.btcs.network/staking), click on "**Connect**" next to BTC Staking Amount. Remember, only the primary account is supported for staking BTC; ensure it is the same account connected to your Ledger Live.
 
 <p align="center" style={{zoom:"50%"}}>
 ![connect-ledger-device](../../../../../static/img/ledger-core/testnet/btc-staking/UI-8.png)
