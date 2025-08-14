@@ -171,7 +171,7 @@ Si vous préférez synchroniser votre nœud validateur à partir du bloc de gen�
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-⚠️ **Note:** La synchronisation depuis la genèse peut prendre beaucoup de temps en fonction des ressources système et de la vitesse du réseau.
+> ⚠️ **Note:** La synchronisation depuis la genèse peut prendre beaucoup de temps en fonction des ressources système et de la vitesse du réseau.
 
 ## Surveiller les journaux
 
