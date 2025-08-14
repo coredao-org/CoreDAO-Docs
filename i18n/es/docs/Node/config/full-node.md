@@ -105,7 +105,7 @@ values={[
 
   5\. Mientras nuestro nodo completo se ejecuta, podemos monitorear sus logs para asegurarnos de que todo esté funcionando correctamente. El archivo de registro se encuentra, por defecto, en `/node/logs/core.log`, aunque puede cambiarse a otra ubicación si se desea.
 
-   </TabItem>
+        </TabItem>
 
  <TabItem value="mainnet">
 
@@ -141,6 +141,6 @@ values={[
     ```
 
 5. Mientras el nodo completo esté en ejecución, podemos monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de log se encuentra, por defecto, en `/node/logs/core.log`, aunque puede cambiarse a otra ubicación si así se desea.
-    </TabItem>
+        </TabItem>
 
 </Tabs>
