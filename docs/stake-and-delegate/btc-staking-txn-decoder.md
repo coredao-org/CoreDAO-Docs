@@ -23,6 +23,20 @@ The decoder tool performs comprehensive validation of BTC staking transactions b
 
 This validation process ensures that your BTC staking transaction will be properly processed by the Core network relayers and your stake will be successfully registered.
 
+## Tool Functionality
+
+This tool helps decode and validate BTC Staking transactions against protocol requirements by parsing the transaction's OP_RETURN output, making it easier for users to track the transaction status and identify potential issues.
+
+This tool tracks the following transaction statuses:
+
+- **Pending**: The transaction has not yet been included in a block.
+- **Confirming**: The transaction is included in a block but has fewer than 6-block confirmations.
+- **Staked**: The staking is active.
+- **Failed**: Staking attempt failed.
+- **Expired**: The staking period has ended, but rewards have not yet been claimed.
+- **Redeemed**: The staking period has ended and rewards have been successfully claimed.
+- **Missed**: The transaction was confirmed after the staking period had already ended, resulting in no staking rewards.
+
 ## How to Use the Transaction Decoder
 
 ### Step 1: Access the Decoder Tool
@@ -40,7 +54,7 @@ Navigate to the [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-s
 
 The decoder will provide detailed information about your transaction:
 
-- **State**: Indicates whether your stake is active, redeemed, or pending
+- **Transaction State**: Shows the current status of your staking transaction (Pending, Confirming, Staked, Failed, Expired, Redeemed, or Missed)
 - **Input/Output Addresses**: Shows the flow of BTC in your staking transaction
 - **OP_RETURN Data**: Contains the encoded staking information including delegator and validator addresses
 - **LockTime**: The timestamp when your staking period ends
