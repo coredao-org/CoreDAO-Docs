@@ -378,22 +378,22 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
-        // {
-        //   type: "category",
-        //   collapsed: true,
-        //   label: "Staking CORE Tokens",
-        //   link: {
-        //     type: "generated-index",
-        //     title: "Staking CORE Tokens",
-        //     description: "Guides for using EVM Wallets and Ledger Hardware Wallets to stake CORE",
-        //     slug: "/core-staking",
-        //     },
-        //   items: [        
-        //     "stake-and-delegate/CORE-staking",
-        //     "stake-and-delegate/Ledger-CORE-staking",
-        //   ],
-        // },
-        "stake-and-delegate/CORE-staking",
+        {
+          type: "category",
+          collapsed: true,
+          label: "Staking CORE Tokens",
+          link: {
+            type: "generated-index",
+            title: "Staking CORE Tokens",
+            description: "Guides for using EVM Wallets and Ledger Hardware Wallets to stake CORE",
+            slug: "/core-staking",
+            },
+          items: [        
+            "stake-and-delegate/CORE-staking",
+            "stake-and-delegate/Ledger-CORE-staking",
+          ],
+        },
+        // "stake-and-delegate/CORE-staking",
         {
           type: "category",
           collapsed: true,
