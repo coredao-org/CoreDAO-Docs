@@ -171,7 +171,7 @@ Si prefieres sincronizar tu nodo validador desde el bloque génesis en lugar de 
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-⚠️ **Nota:** Sincronizar desde genesis puede tomar mucho tiempo, dependiendo de los recursos del sistema y la velocidad de la red.
+> ⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
 
 ## Monitoreo de Logs
 
