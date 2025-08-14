@@ -107,7 +107,7 @@ values={[
 
   5\. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
 
-   </TabItem>
+        </TabItem>
 
  <TabItem value="mainnet">
 
@@ -143,6 +143,6 @@ values={[
     ```
 
 5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
-    </TabItem>
+        </TabItem>
 
 </Tabs>
