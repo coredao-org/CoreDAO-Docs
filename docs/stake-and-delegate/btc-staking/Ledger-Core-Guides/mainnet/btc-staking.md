@@ -147,7 +147,7 @@ Alternatively, users can also use Xverse to stake Bitcoin from their Ledger devi
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-4.png)
 </p>
 
-4. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
+3. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
     * Confirm the amount of BTC you’d like to stake. The **minimum amount to stake is 0.01 BTC**.
     * Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or re-delegation. 
     * The lock time on the website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
@@ -157,13 +157,13 @@ Alternatively, users can also use Xverse to stake Bitcoin from their Ledger devi
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-5.png)
 </p>
 
-5. **Verify Bitcoin Staking Address (Optional):** Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+4. **Verify Bitcoin Staking Address (Optional):** Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-6.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
+5. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-7.png)
