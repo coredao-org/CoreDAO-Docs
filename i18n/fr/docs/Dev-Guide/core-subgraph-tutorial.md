@@ -138,9 +138,9 @@ export function handleEntrySigned(event: EntrySignedEvent): void {
   entity.save()
 ```
 
-## Step 3: Configure Environment
+## Étape 3: Configurer l'environnement
 
-Create a `.env` file in the project root and define the following:
+Créez un fichier `.env` à la racine du projet et définissez les éléments suivants:
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
@@ -166,38 +166,38 @@ GRAPH_ACCESS_TOKEN=b020b95e511443699e72a10c697f84c0
   </TabItem>
 </Tabs>
 
-Ensure these endpoints are accessible from your environment.
+Assurez-vous que ces points de terminaison sont accessibles depuis votre environnement.
 
-## Step 4: Run with Docker (Optional)
+## Étape 4: Exécuter avec Docker (Facultatif)
 
-To simulate a local environment, use Docker:
+Pour simuler un environnement local, utilisez Docker:
 
 ```bash
 docker-compose up -d
 ```
 
-Check containers:
+Vérifiez les conteneurs:
 
 ```bash
 docker ps
 ```
 
-Make sure services like Graph Node, IPFS, and Postgres are running.
+Assurez-vous que les services tels que Graph Node, IPFS et Postgres sont en cours d'exécution.
 
-## Step 5: Build and Deploy the Subgraph
+## Étape 5: Construire et déployer le sous-graphique
 
-### Build
+### Construire
 
-Generate code and build the subgraph:
+Générez le code et construisez le sous-graphique:
 
 ```bash
 graph codegen
 graph build
 ```
 
-### Create and Deploy Subgraph
+### Créer et déployer un sous-graphique
 
-Create and deploy the subgraph:
+Créer et déployer le sous-graphique:
 
 ```bash
 graph create \
@@ -212,13 +212,13 @@ graph deploy \
   your-subgraph-name
 ```
 
-Replace `your-subgraph-name` with your deployment target.
+.
 
-## Step 6: Query the Subgraph
+## Étape 6: Interroger le sous-graphique
 
-After deployment, your subgraph will be available at the query endpoint (e.g., `https://thegraph.test2.btcs.network/subgraphs/name/guestbook-subgraph`).
+Après le déploiement, votre sous-graphique sera disponible à l'endpoint de requête (e.g., `https://thegraph.test2.btcs.network/subgraphs/name/guestbook-subgraph`).
 
-Example query:
+Exemple de requête:
 
 ```graphql
 {
@@ -233,13 +233,13 @@ Example query:
 }
 ```
 
-You can use GraphiQL, Apollo Client, or any GraphQL tool to query your data.
+Vous pouvez utiliser GraphiQL, Apollo Client ou n'importe quel outil GraphQL pour interroger vos données.
 
-## Summary
+## Résumé
 
-You've now successfully created and deployed a subgraph on the Core Network!
+Vous avez maintenant créé et déployé avec succès un sous-graphique sur le Core Network!
 
-By indexing smart contract events and exposing them through GraphQL, subgraphs provide scalable, real-time access to blockchain data.
+En indexant les événements de contrats intelligents et en les exposant via GraphQL, les sous-graphiques offrent un accès évolutif et en temps réel aux données de blockchain.
 
 From here, you can:
 
