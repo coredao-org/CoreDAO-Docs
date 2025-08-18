@@ -145,7 +145,7 @@ Nota: En el staking de BTC, transferir el validador de staking interrumpirá el 
 
 ### BTC Staking Transaction Decoder
 
-Users can verify their BTC staking transactions in [Core scan](https://scan.coredao.org/btc-stake-txn-decoder) by:
+Users can verify their BTC staking transactions in [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) by:
 
 - Checking transaction confirmation status
 - Validating the OP_RETURN output format
@@ -155,7 +155,7 @@ Users can verify their BTC staking transactions in [Core scan](https://scan.core
 ![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
-This ensures that your BTC staking transaction meets all protocol requirements and will be properly processed by the Core network relayers.
+This enables you to verify your BTC staking transaction meets all protocol requirements and identifies potential issues if the transaction has failed to be processed by the Core network relayers.
 
 :::info
 For detailed information about the BTC Staking Transaction Decoder, including common issues and solutions, check out the [guide](../btc-staking-txn-decoder.md) for more details.
