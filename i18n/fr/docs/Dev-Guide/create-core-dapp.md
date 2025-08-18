@@ -270,13 +270,13 @@ Si vous rencontrez une erreur TypeScript lors de l'importation de fichiers JSON,
 }
 ```
 
-### Keeping ABIs Updated
+### Maintenir les ABI à jour
 
-- ABIs in `src/abi` are updated automatically when you recompile contracts
-- Run `npx hardhat compile` to regenerate ABIs after contract changes
-- The Hardhat task ensures your frontend always has the latest contract interfaces
+- Les ABI dans `src/abi` sont mis à jour automatiquement lorsque vous recompilez les contrats
+- Exécutez `npx hardhat compile` pour régénérer les ABI après des modifications de contrat
+- La tâche Hardhat garantit que votre frontend a toujours les dernières interfaces de contrat
 
-## Further Resources
+## Ressources supplémentaires
 
 - [Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp)
 - [Deploying dApps on Core Using Hardhat](https://docs.coredao.org/docs/Dev-Guide/hardhat)
