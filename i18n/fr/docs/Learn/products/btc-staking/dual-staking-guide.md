@@ -150,40 +150,40 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
-18. Next to the **Summary** tab, you can find **Details** page, which shows staking details, including:
+18. À côté de l'onglet **Summary**, vous pouvez trouver la page **Details**, qui affiche les détails du staking, y compris:
 
-- **New Staked Bitcoin:** The amount of BTC you plan to stake and the current reward rate.
-- **New Staked CORE:** The amount of CORE you plan to stake and the current reward rate.
-- **Active Staked Bitcoin:** The amount of BTC currently staked and the average earning reward rate across validators.
-- **Active Staked CORE:** The amount of CORE currently staked and the average earning reward rate across validators.
+- **New Staked BTC:** Le montant de BTC que vous prévoyez de staker et le taux de récompense actuel.
+- **New Staked CORE:** Le montant de CORE que vous prévoyez de staker et le taux de récompense actuel.
+- .
+- **Active Staked CORE:** Le montant de CORE actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
-### Finalizing Dual Staking Transactions
+### Finalisation des Transactions de Dual Staking
 
-19. Once you have specified the amount of BTC/CORE to stake and the validators for delegation, respectively, you can click on the **Proceed to Stake** button.
+19. Une fois que vous avez spécifié le montant de BTC/CORE à staker et les validateurs pour la délégation respectivement, vous pouvez cliquer sur le bouton **Proceed to Stake**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
-20. On the Stake CORE page, confirm the amount of CORE to stake along with Bitcoin, and click the **Confirm** button.
+20. Sur la page Stake CORE, confirmez le montant de CORE à staker avec Bitcoin, puis cliquez sur le bouton **Confirm**.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
 </p>
 
-21. By clicking **Confirm**, you will get a notification from your connected Core wallet to complete the transaction.
+21. En cliquant sur **Confirm**, vous recevrez une notification de votre portefeuille Core connecté pour compléter la transaction.
 
-22. Once you confirm the transaction, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click **My Staking** to see your staking records or **View on CoreScan** to review this transaction.
+22. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on CoreScan** pour revoir cette transaction.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
-23. On the “Stake BTC” page, confirm the amount of Bitcoin to stake. Before finalizing the Bitcoin staking process, it's essential to understand and specify several key parameters:
+23. Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
 - Specifying the amount of Bitcoin you’d like to delegate
   - The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
