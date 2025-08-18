@@ -1,37 +1,37 @@
 ---
-sidebar_label: Core Subgraph Tutorial
+sidebar_label: Tutoriel sur les sous-graphiques Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Creating and Deploying a Subgraph on the Core Network
+# Création et déploiement d'un sous-graphique sur le réseau Core
 
-This guide outlines how to create, configure, and deploy a subgraph on the Core Network using Graph Protocol tools. A subgraph indexes on-chain data from a smart contract and makes it accessible via GraphQL, enabling powerful querying for decentralized applications.
+Ce guide décrit comment créer, configurer et déployer un sous-graphique sur le réseau Core en utilisant les outils du protocole Graph. Un sous-graphique indexe les données en chaîne d'un contrat intelligent et les rend accessibles via GraphQL, permettant des requêtes puissantes pour les applications décentralisées.
 
-## Prerequisites
+## Prérequis
 
-Before getting started, ensure you have the following installed:
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés :
 
 - [Node.js (v20 or later)](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/)
 - [Docker](https://www.docker.com/)
 - [Git](https://git-scm.com/)
 
-You will also need access to the following services:
+Vous aurez également besoin d'accéder aux services suivants:
 
-- A Graph Node endpoint on Core
-- An IPFS node (for subgraph files)
-- A Graph access token (for authentication during deployment)
+- Un point de terminaison de nœud Graph sur Core
+- Un nœud IPFS (pour les fichiers de sous-graphique)
+- Un jeton d'accès Graph (pour l'authentification lors du déploiement)
 
-## Step 1: Setting Up Your Subgraph Repository
+## Étape 1 : Configuration de votre référentiel de sous-graphique
 
-To create your own subgraph, you can follow the [official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/).
+Pour créer votre propre sous-graphique, suivez [official guide from The Graph](https://thegraph.com/docs/en/developing/creating-a-subgraph/).
 
-> **Note:** If you plan to deploy on the Core network, ensure the `network` field in your `subgraph.yaml` is set to `core`.
+> **Remarque:** Si vous prévoyez de déployer sur le réseau Core, assurez-vous que le champ `network` dans votre fichier `subgraph.yaml` est défini sur `core`.
 
-### Example: Cloning a Preconfigured Subgraph
+### Exemple: Clonage d'un sous-graphique préconfiguré
 
-For this example, let's use the subgraph provided in the [dapp-tutorial GitHub repo](https://github.com/coredao-org/dapp-tutorial/tree/master/06-Subgraphs%20on%20Core):
+Pour cet exemple, utilisons le sous-graphique fourni dans le [dapp-tutorial GitHub repo](https://github.com/coredao-org/dapp-tutorial/tree/master/06-Subgraphs%20on%20Core):
 
 ```bash
 git clone https://github.com/coredao-org/dapp-tutorial/.git
@@ -39,9 +39,9 @@ cd ./dapp-tutorial/06-subgraph-on-core
 npm install
 ```
 
-## Step 2: project structure
+## Étape 2: Structure du projet
 
-Once inside the `06-subgraph-on-core` directory, you'll see the following project structure:
+Une fois à l'intérieur du répertoire `06-subgraph-on-core`, vous verrez la structure de projet suivante :
 
 ```
 06-subgraph-on-core/
@@ -54,12 +54,12 @@ Once inside the `06-subgraph-on-core` directory, you'll see the following projec
 
 ```
 
-### File Overview
+### Aperçu des fichiers
 
-- **`subgraph.yaml`** – The main configuration file that defines the data sources, schema, and mapping handlers for the subgraph.
-- **`schema.graphql`** – Contains the GraphQL schema, which defines the structure of the data to be indexed and queried.
-- **`abis/`** – Directory holding the contract ABI files; in this example, `Guestbook.json` is used to decode events.
-- **`src/`** – Contains the AssemblyScript files responsible for handling events and creating entities. The logic for transforming Ethereum data into the subgraph's entities lives here.
+- **`subgraph.yaml`** – Le fichier de configuration principal qui définit les sources de données, le schéma et les gestionnaires de mapping pour le sous-graphique.
+- **`schema.graphql`** – Contient le schéma GraphQL, qui définit la structure des données à indexer et à interroger.
+- **`abis/`** – Répertoire contenant les fichiers ABI de contrat ; dans cet exemple, `Guestbook.json` est utilisé pour décoder les événements.
+- **`src/`** – Contient les fichiers AssemblyScript responsables du traitement des événements et de la création d'entités. The logic for transforming Ethereum data into the subgraph's entities lives here.
 
 ### `subgraph.yaml`
 
