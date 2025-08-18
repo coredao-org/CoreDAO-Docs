@@ -1,8 +1,8 @@
 ---
-sidebar_label: Full Stack dApp Toolkit
+sidebar_label: Boîte à outils pour dApp Full Stack
 hide_table_of_contents: false
 sidebar_position: 2
-description: CLI tool to bootstrap a full-stack Web3 DApp on Core
+description: Outil CLI pour amorcer une dApp Web3 full-stack sur Core
 ---
 
 import Tabs from '@theme/Tabs';
@@ -12,57 +12,57 @@ import TabItem from '@theme/TabItem';
 
 ---
 
-### `create-core-dapp`: Full Stack dApp Toolkit
+### `create-core-dapp`: Boîte à outils pour dApp Full Stack
 
-`create-core-dapp` is a CLI tool to bootstrap a fully functional full-stack Web3 DApp on [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
+`create-core-dapp` est un outil CLI pour amorcer une DApp Web3 Full Stack entièrement fonctionnelle sur [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
 
-- **Hardhat** for smart contract development
+- **Hardhat** pour le développement de contrats intelligents
 - **Core Testnet & Mainnet** RPC setup
 - **Next.js** frontend
-- **RainbowKit + Wagmi** for wallet integration
+- **RainbowKit + Wagmi** pour l'intégration de portefeuille
 - Ethers.js support
 
-## Prerequisites
+## Prérequis
 
-Before you begin, make sure you have the following installed:
+Avant de commencer, assurez-vous d'avoir les éléments suivants installés:
 
-| Tool                    | Version (Recommended) |
+| Outil                   | Version (recommandée) |
 | ----------------------- | ---------------------------------------- |
 | Node.js | `>=20.x`                                 |
-| npm / yarn / pnpm       | Any supported version                    |
-| Git                     | Latest                                   |
+| npm / yarn / pnpm       | Toute version prise en charge            |
+| Git                     | Plus récent                              |
 
-## Getting Started
+## Commencer
 
-### 1. Install the CLI globally (optional)
+### 1. Installer la CLI globalement (facultatif)
 
 ```bash
 npm install -g create-core-dapp
 ```
 
-or use **npx** (no need to install):
+ou utilisez **npx** (pas besoin d'installer):
 
 ```bash
 npx create-core-dapp@latest
 ```
 
-### 2. Bootstrap a New Project
+### 2. Initialiser un Nouveau Projet
 
-Run the CLI to scaffold a new project:
+Exécutez la CLI pour créer un nouveau projet:
 
 ```bash
 npx create-core-dapp my-core-dapp
 ```
 
-Once the installation is complete, navigate into your project:
+Une fois l'installation terminée, accédez à votre projet:
 
 ```bash
 cd my-core-dapp
 ```
 
-## Project Structure
+## Structure du projet
 
-Here's the layout of the generated project:
+Voici la structure du projet généré:
 
 ```
 my-core-dapp/
@@ -81,9 +81,9 @@ my-core-dapp/
 └── hardhat.config.js  # Hardhat configuration
 ```
 
-## Writing Smart Contracts
+## Rediger des contrats intelligents
 
-Navigate to the `contracts/` directory to create your own smart contracts.
+Accédez au répertoire `contracts/` pour créer vos propres contrats intelligents.
 
 Example: `contracts/Greeter.sol`
 
@@ -109,23 +109,23 @@ string public greeting;
 }
 ```
 
-## Compile & Test Contracts
+## Compiler et tester les contrats
 
-Compile your contracts:
+Compilez vos contrats:
 
 ```bash
 npx hardhat compile
 ```
 
-Run tests (optional):
+Exécutez les tests (facultatif):
 
 ```bash
 npx hardhat test
 ```
 
-## Configure Core Network
+## Configurer le Core Network
 
-Inside `hardhat.config.js`, you'll find pre-configured Core Testnet and Mainnet RPC URLs:
+Dans `hardhat.config.js`, vous trouverez des URL RPC pré-configurées pour Core Testnet et Mainnet:
 
 ```js
 networks: {
