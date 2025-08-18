@@ -241,9 +241,9 @@ Vous avez maintenant créé et déployé avec succès un sous-graphique sur le C
 
 En indexant les événements de contrats intelligents et en les exposant via GraphQL, les sous-graphiques offrent un accès évolutif et en temps réel aux données de blockchain.
 
-From here, you can:
+À partir d'ici, vous pouvez:
 
-- Extend your schema and mappings to support additional events and entities
-- Set up scheduled handlers for periodic indexing tasks
-- Integrate your subgraph with frontend frameworks using tools like Apollo Client
-- Monitor and test your subgraph with Graph Explorer
+- Étendez votre schéma et vos mappings pour prendre en charge des événements et des entités supplémentaires
+- Configurez des gestionnaires planifiés pour des tâches d'indexation périodiques
+- Intégrez votre sous-graphique avec des frameworks frontend en utilisant des outils comme Apollo Client
+- Surveillez et testez votre sous-graphique avec Graph Explorer
