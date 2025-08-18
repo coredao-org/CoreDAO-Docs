@@ -42,6 +42,12 @@ const sidebar: SidebarsConfig = {
           label: "Retrieve Full List of BTC Staking Transactions",
           className: "api-method get",
         },
+                {
+          type: "doc",
+          id: "stakingAPI/testnet/retrieve-staking-summary-group-by-candidate",
+          label: "Retrieve Staking Summary Group By Candidate",
+          className: "api-method get",
+        },
       ]
     },
     {
@@ -64,6 +70,18 @@ const sidebar: SidebarsConfig = {
           type: "doc",
           id: "stakingAPI/testnet/retrieve-collected-and-pending-rewards",
           label: "Retrieve Collected and Pending Rewards",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "stakingAPI/testnet/retrieve-btc-staking-transaction-rewards",
+          label: "Retrieve BTC staking transaction rewards",
+          className: "api-method get",
+        },
+                {
+          type: "doc",
+          id: "stakingAPI/testnet/retrieve-staking-reward-rate",
+          label: "Retrieve Staking Reward Rate",
           className: "api-method get",
         },
       ]
