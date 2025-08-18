@@ -4,7 +4,7 @@ info:
   description: API documentation Core's Staking API
   version: 1.0.0
 servers:
-  - url: https://staking-api.test2.btcs.network/
+  - url: https://staking-api.test2.btcs.network
 paths:
   /staking/summary/core:
     get:

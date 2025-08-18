@@ -1,0 +1,71 @@
+---
+id: retrieve-staking-summary-group-by-candidate
+title: "Retrieve Staking Summary Group By Candidate"
+description: "Retrieve Staking Summary Group By Candidate."
+sidebar_label: "Retrieve Staking Summary Group By Candidate"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vk1v00AQ/SuruXAxSUGcfEujClVCgNpyqio02Z3EC7bXzI4DUeT/jmZtJ2lS1BQhTrGznvdm3nztFhxFy74RH2rI4YaEPa3J3Ap+9/XK3LZVhbwx7zm0jbncmDnWzjsUmkAGDTJWJMQR8vst1FgR5GAD08w5phghA6+4P1riDWTA9KP1TA7yJZaRsiP6eWAycaDGHsIENlKQSWdMP5Hd7sgGZopNqJ0aSDCXd/PRHjKItqAKId+CbBr1LArrSdc9qCtqGCnq+duLC/157M2oQRw0WKkG5MxiY+yoguFBMWdiay3FuGzLcqPi2FAL1aK42DSlt6i4029RwbenzoXFN7KiqnJoiMX3rtng6DSEY+VuBaVVQRwZX7tEppIU6mFsSzFhmd4UOjkygS4Dh3LoAjLj5gT7g4/JfEyMI0Ffxif10MC9UBWfD2xI4vOx3RW0L4Y+igO+LoPd2+wlkPscrrHUh8AjzWPUj6msz4HUBjhxcQ+fYFVFcpd381kV2r48zgg/favQY4WTMz+9FEYKH4/k6I+1X/6OYv7p5uo5jt3bVRRfofR8N6k9b1DO1ItG455z6G5W0Zap7c/gvRT797Sq5rOsXddlUFGMuDqDYOac10csja+XgavUbTrFBgiDi9DK2JppBvUkSvPuqUF0XacSMvtxq3BYG2IObIK1LbMmq/DlbiKN7a8t/t/H0VVy7KXT6GyNe/hRT/rVlOjrkcHH2O4UTahSBAc5rCiFg1JADtNhmk2H6T5N0+zrLu9f+ymnW4R4PW64lkvIoRBpYj4dIV5j4ye69ByGSeAV6HrR3KdAvJQ0rrZxo8w+X5/Wzedr44JtK6qlLxk1eRWPjNSV3uDN5GJyobI1IUqFKYvDBn7BGj/2Y7svlJfeBoacCf2SacqIOpcU2w6q38PBcu6xIIM/KP+QQRGiqNV2u8BIX7jsOv27v01oPpyPuCj/dJ84jOUfXy2ejPU7bU6uP2ssW/0yFcUa2au/kN8/dBkUhI44BdKbzqylRg6sTjpVUXYF/f7qDrruN1NpcUs=
+sidebar_class_name: "get api-method"
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Staking Summary Group By Candidate"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/summary/group_candidate_detail"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve Staking Summary Group By Candidate.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"coreAddress","in":"query","required":false,"description":"Core staking address or the Core reward address corresponding to BTC staking","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Staking summary grouped by candidate retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"data":{"type":"array","description":"List of staking details grouped by candidate.","items":{"type":"object","properties":{"address":{"type":"string","description":"The address of the candidate."},"candidateAddress":{"type":"string","description":"The candidate validator address."},"candidateName":{"type":"string","description":"The name of the candidate validator."},"stakedBTCAmount":{"type":"string","description":"The amount of BTC staked with this candidate."},"stakedCoreAmount":{"type":"string","description":"The amount of CORE staked with this candidate."},"candidateEstimatedCoreRewardRate":{"type":"string","description":"The estimated CORE reward rate for this candidate."},"candidateEstimatedBtcRewardRate":{"type":"string","description":"The estimated BTC reward rate for this candidate."}}}},"message":{"type":"string","description":"Additional information or message about the response."}}}}}},"400":{"description":"Invalid parameters or an error occurred while retrieving the data.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      

@@ -1,0 +1,71 @@
+---
+id: retrieve-staking-reward-rate
+title: "Retrieve Staking Reward Rate"
+description: "Retrieve staking reward rates for a delegator address."
+sidebar_label: "Retrieve Staking Reward Rate For a Delegator"
+hide_title: true
+hide_table_of_contents: true
+api: eJy9Vk1v2zAM/SuCLtsAL0mHnXxLg2LoaUOa7VIUA2MxsVpZ8ig5bRD4vw+U7TRfbdKu68l2Qj0+PpIiV1Khz0iXQTsrUznGQBoXKHyAO23ngvAeSAmCgF7MHAkQCg3OIfC7UoTe92QiSyAoMCB5mV6vpIUCZSozRzhsjGQiNXv4UyEtZSIJ/1SaUMk0UIXJDo9Jjof9+CzHAmS6kmFZsgsfSNu5rOtk7XUasqsAdzgsXGXDyx1DPCfcTJxPRqI0YC0qEVwUBXvi4gGK0qD4LAa9M7Y5xMtWxRRpixer8UbERo7wWWZnA+Y2+j6+OJFcK5q2819gtGLdX525RYfQZS5WTptPrqrzyejUZHaivQ8xFux5Zjfsx5fOevT8/5fBgB/bvq4OdQ+1vaWEr7IMvZ9VxizZW+ZsQBsYB8rS6AwYp3/rGWy1T8ZNbzHj+inJlUhBN1Qyp3Cf8q4OVwFC5QUbC21VdGbnIuQoCH1lYn3xF0NHIj1ZJ1JBOEjhaOBCYQBtmltiiy9YW4EZR9MxBPy+QAJjjofQGooGYNNZpLqLO6qIWnmfx20Nn8K1eB/bV51PRo/ox2HHG2JwvVm8N8umZVXTCpvg3Npvht7UM2uSBb3AN6HfQO1HsOniX4PY9dHGUdeJLNB7mJ+AOVRK8ysYoe3MURGLWTgSLYSAqatCV/mxpaOP6Obrob6+tPEGEY/TjuHACiRyJFyWcQUpcZ9rg13D714E797xF5HcSxv+ZJ0b+E5TfCgNaNt50N5Xa1UjasidkqmcYwwHQi5T2W/XjX6jk2+fv1kvvo2RFt1mUZGRqcxDKH3a7859hlL3eFIocD1Hc8nXNCc9stfBMP04M7sLavjjcr9gflwK5bKqQBuaWuEjH/zOIabSHDjrDXoD1qp0PhQQU9eOrfUi1Z1tK3zcRLTlePVYDq9fwNocBXwI/ZgB5hXFWrUqX8sWM47KqPP6rVH6JpG584FNV6spePxJpq7552bEsv5Ke5gaHrIzMH53ym6G8nHczuNP4sl17iDrO1zu7Y4LMBVbSl4NXs3hNZvdMxT3Fs23ZvmyNe+ImP+D6qmb3nERD+9378SyW/tOUPAYzxv+IM1EZXp9UycyR1BIsXkaqGGWYbmZg70RwCjrm/LbxUTW9V8wKcIi
+sidebar_class_name: "get api-method"
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Retrieve Staking Reward Rate"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/rewards/reward_rate"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+
+
+Retrieve staking reward rates for a delegator address.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"coreAddress","in":"query","required":true,"description":"The delegator address.","schema":{"type":"string"}},{"name":"btcStakeAmount","in":"query","required":true,"description":"The amount of BTC planned to stake. Example - 0.1 BTC","schema":{"type":"number"}},{"name":"coreStakeAmount","in":"query","required":true,"description":"The amount of Core planned to stake. Example - 100.1 CORE","schema":{"type":"number"}},{"name":"btcStakingValidatorAddress","in":"query","required":true,"description":"The validator address for delegating BTC.","schema":{"type":"string"}},{"name":"coreStakingValidatorAddress","in":"query","required":true,"description":"The validator address for delegating CORE.","schema":{"type":"string"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Staking reward rates retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"data":{"type":"object","description":"Staking reward rate details.","properties":{"annualRewardRateOverall":{"type":"string","description":"Overall annual reward rate."},"annualRewardRateCurrent":{"type":"string","description":"Current annual reward rate."},"newStakedBTCRewardRate":{"type":"string","description":"Reward rate for newly staked BTC."},"newStakedCoreRewardRate":{"type":"string","description":"Reward rate for newly staked CORE."},"activeStakedBTCRewardRate":{"type":"string","description":"Reward rate for actively staked BTC."},"activeStakedCoreRewardRate":{"type":"string","description":"Reward rate for actively staked CORE."}}},"message":{"type":"string","description":"Additional information or message about the response."}}}}}},"400":{"description":"Invalid parameters or an error occurred while retrieving reward rates.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+>
+  
+</StatusCodes>
+
+
+      
