@@ -37,20 +37,20 @@ Les points suivants sont des éléments clés auxquels les utilisateurs doivent 
   - L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
 
 4. **Retards dans l'apparition des actifs bloqués dans votre portefeuille Bitcoin:**
-  - You may face some delays before your locked Bitcoin is displayed in your Bitcoin wallets. This delay primarily results from delays in transaction confirmation on the Bitcoin network, which can take several hours due to block time, the number of block confirmations required, and network congestion.
-  - While we are actively working with wallet partners to support the timely display of your assets in your wallets, you can check your locked assets on the **MyStaking** page on Core’s staking website.
-  - You can also view your staked funds by searching the staking address on a Bitcoin explorer, [Mempool.space](https://mempool.space/).
+  - Vous pouvez rencontrer des retards avant que votre Bitcoin verrouillé ne soit affiché dans vos portefeuilles Bitcoin. Ce retard résulte principalement de retards dans la confirmation des transactions sur le réseau Bitcoin, qui peuvent prendre plusieurs heures en raison du temps de bloc, du nombre de confirmations de blocs requises et de la congestion du réseau.
+  - Bien que nous travaillions activement avec les partenaires de portefeuilles pour soutenir l'affichage en temps opportun de vos actifs dans vos portefeuilles, vous pouvez vérifier vos actifs verrouillés sur la page **MyStaking** sur le site de staking de Core.
+  - Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space/).
 
-5. **Considerations for Locking Periods**
-  - Once you lock your Bitcoin for staking, it's inaccessible until the staking period concludes. Considering your investment objectives and risk tolerance, you are advised to select your locking period thoughtfully. Starting with shorter locking periods can help you become familiar with the process before committing to longer durations.
+5. **Considérations pour les Périodes de Verrouillage**
+  - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer par des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 
-## Step-By-Step Walkthrough of Dual Staking
+## Guide Pas à Pas du Dual Staking
 
-Core’s Self-Custodial Bitcoin staking introduces a secure and decentralized method for Bitcoin holders to earn yield through Bitcoin staking. Users can stake their Bitcoin natively on the Bitcoin network through a time-bound mechanism and actively participate in the Core blockchain's Consensus mechanism while staking.
+Le staking de Bitcoin Non-Custodial de Core introduit une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin gagnent des rendements grâce au staking de Bitcoin. Les utilisateurs peuvent staker leur Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps et participer activement au mécanisme de consensus de la blockchain Core pendant le staking.
 
-Dual staking is an enhancement to Core’s Self-custodial Bitcoin staking, allowing users to unlock higher yield tiers by staking Bitcoin and CORE simultaneously. Higher CORE:BTC staking ratios unlock higher yield tiers for Bitcoin staking. To take advantage of Dual Staking and earn higher reward rates for Bitcoin staking, follow the steps detailed below.
+Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, permettant aux utilisateurs de débloquer des niveaux de rendement plus élevés en stakant simultanément du Bitcoin et du CORE. Des ratios de staking CORE:BTC plus élevés débloquent des niveaux de rendement plus élevés pour le staking de Bitcoin. Pour profiter du Dual Staking et gagner des taux de récompense plus élevés pour le staking de Btc, suivez les étapes détaillées ci-dessous.
 
-### Connecting Bitcoin and Core Wallets
+### Connexion des Portefeuilles Bitcoin et Core
 
 1. Visit [https://stake.coredao.org](https://stake.coredao.org/) and click **Stake Now** on the top right of the header.
 2. Once on the **Staking** tab, click the **Connect** option next to “BTC Staking Amount” to connect your Bitcoin wallet. This should be the wallet with the Bitcoin assets you want to stake. Click on the supported wallet of your choice to connect your Bitcoin wallet.
