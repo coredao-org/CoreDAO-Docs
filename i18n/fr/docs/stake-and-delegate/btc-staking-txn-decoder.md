@@ -6,14 +6,14 @@ sidebar_position: 2
 
 # BTC Staking Transaction Decoder
 
-The BTC Staking Transaction Decoder is a powerful tool available on [Core scan](https://scan.coredao.org/btc-stake-txn-decoder) that allows users to verify and validate their Bitcoin staking transactions. This tool is essential for ensuring that your staking transactions are properly formatted and will be processed by the Core network.
+The BTC Staking Transaction Decoder is a powerful tool available on [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) that allows users to verify and validate their Bitcoin staking transactions. This tool helps diagnose potential formatting issues with your staking transactions after they’ve been submitted to the Core network
 
 ## Overview
 
 The decoder tool performs comprehensive validation of BTC staking transactions by:
 
 - **Transaction Confirmation Status**: Verifies that the transaction has been confirmed on the Bitcoin network
-- **OP_RETURN Output Validation**: Ensures the transaction contains the correct OP_RETURN output format required by the Core protocol
+- **OP_RETURN Output Validation**: Verifies the transaction contains the correct OP_RETURN output format required by the Core protocol
 - **Validator Address Verification**: Confirms that the target validator address is valid and active on the Core network
 - **Protocol Compliance**: Validates that the transaction meets all Core staking protocol requirements
 
@@ -21,7 +21,7 @@ The decoder tool performs comprehensive validation of BTC staking transactions b
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
-This validation process ensures that your BTC staking transaction will be properly processed by the Core network relayers and your stake will be successfully registered.
+This validation process analyzes your BTC staking transaction and assists in identifying issues if the transaction did not succeed.
 
 ## Tool Functionality
 
@@ -41,7 +41,7 @@ This tool tracks the following transaction statuses:
 
 ### Step 1: Access the Decoder Tool
 
-Navigate to the [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) on Core scan.
+Navigate to the [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) on Core Scan.
 
 ### Step 2: Enter Transaction Hash
 
@@ -57,7 +57,9 @@ The decoder will provide detailed information about your transaction:
 - **Transaction State**: Shows the current status of your staking transaction (Pending, Confirming, Staked, Failed, Expired, Redeemed, or Missed)
 - **Input/Output Addresses**: Shows the flow of BTC in your staking transaction
 - **OP_RETURN Data**: Contains the encoded staking information including delegator and validator addresses
-- **LockTime**: The timestamp when your staking period ends
+  - **Delegator address**: The CORE reward address of the staker on the Core chain.
+  - **Validator address**: The address of the validator to whom the staker delegated their BTC.
+- **LockTime**: [Unix timestamp](https://www.unixtimestamp.com/) representing the end date and time of your staking
 - **PublicKeyHash**: Your public key hash for verification purposes
 
 <p align="center">
@@ -83,8 +85,7 @@ The decoder will provide detailed information about your transaction:
 
 ## Benefits of Using the Decoder
 
-1. **Prevents Failed Stakes**: Identify issues before they cause problems
-2. **Verifies Protocol Compliance**: Ensure your transaction meets all requirements
-3. **Provides Transparency**: Clear visibility into your staking transaction details
+- **Verifies Protocol Compliance**: Verifies whether the transaction meets all requirements and decodes the staking transaction details.
+- **Provides Transparency**: Clear visibility into your staking transaction details
 
-The BTC Staking Transaction Decoder helps users verify the details of their selft custodial BTC staking transactions, ensuring transparency and accuracy throughout the staking process.
+The BTC Staking Transaction Decoder helps users verify the details of their self-custodial BTC staking transactions and helps you to resolve issues when a BTC staking transaction fails to register with the Core network.
