@@ -59,18 +59,18 @@ Une fois à l'intérieur du répertoire `06-subgraph-on-core`, vous verrez la st
 - **`subgraph.yaml`** – Le fichier de configuration principal qui définit les sources de données, le schéma et les gestionnaires de mapping pour le sous-graphique.
 - **`schema.graphql`** – Contient le schéma GraphQL, qui définit la structure des données à indexer et à interroger.
 - **`abis/`** – Répertoire contenant les fichiers ABI de contrat ; dans cet exemple, `Guestbook.json` est utilisé pour décoder les événements.
-- **`src/`** – Contient les fichiers AssemblyScript responsables du traitement des événements et de la création d'entités. The logic for transforming Ethereum data into the subgraph's entities lives here.
+- **`src/`** – Contient les fichiers AssemblyScript responsables du traitement des événements et de la création d'entités. La logique de transformation des données Ethereum en entités du sous-graphique se trouve ici.
 
 ### `subgraph.yaml`
 
-Configure `subgraph.yaml` to specify the contract, ABI, and event handlers:
+Configurer `subgraph.yaml` pour spécifier le contrat, l'ABI et les gestionnaires d'événements:
 
-> **Important:** In your `subgraph.yaml`, make sure to:
+> **Important:** Dans votre `subgraph.yaml`, assurez-vous de:
 >
-> - Set the `network` field to `core`.
-> - Update the `address` field with your deployed contract address.
-> - Update the `name` and event details to match your contract and the events it emits.
-> - Set the `startBlock` to the block number where your contract was deployed.
+> - Définissez le champ `network` sur `core`.
+> - Mettez à jour le champ `address` avec l'adresse de votre contrat déployé.
+> - Mettez à jour le `name` et les détails de l'événement pour correspondre à votre contrat et aux événements qu'il émet.
+> - Définissez le `startBlock` sur le numéro de bloc où votre contrat a été déployé.
 
 ```yaml
 specVersion: 1.0.0
@@ -103,7 +103,7 @@ dataSources:
 
 ### `schema.graphql`
 
-Define the GraphQL schema for indexed data:
+Définissez le schéma GraphQL pour les données indexées:
 
 ```graphql
 type EntrySigned @entity(immutable: true) {
@@ -118,7 +118,7 @@ type EntrySigned @entity(immutable: true) {
 
 ### `guestbook.ts`
 
-Implement the event handler in `src/guestbook.ts`:
+Implémentez le gestionnaire d'événements dans `src/guestbook.ts`:
 
 ```typescript
 import { EntrySigned as EntrySignedEvent } from "../generated/Guestbook/Guestbook";
@@ -135,8 +135,7 @@ export function handleEntrySigned(event: EntrySignedEvent): void {
   entity.blockTimestamp = event.block.timestamp;
   entity.transactionHash = event.transaction.hash;
 
-  entity.save();
-}
+  entity.save()
 ```
 
 ## Step 3: Configure Environment
