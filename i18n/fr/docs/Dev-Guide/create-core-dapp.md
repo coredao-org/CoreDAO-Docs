@@ -142,9 +142,9 @@ networks: {
 }
 ```
 
-## Environment Variables
+## Variables d'environnement
 
-Make sure to set up your environment variables in the `.env` file:
+Assurez-vous de configurer vos variables d'environnement dans le fichier `.env`:
 
 ```env
 PRIVATE_KEY=your_private_key_here
@@ -152,12 +152,12 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id_here
 ```
 
 :::note
-Get your WalletConnect Project ID from [cloud.walletconnect.com](https://cloud.walletconnect.com/)
+Obtenez votre ID de projet WalletConnect à partir de [cloud.walletconnect.com](https://cloud.walletconnect.com/)
 :::
 
-## Deploy Contracts
+## Déployez des contrats
 
-Place your deployment scripts inside the `scripts/` directory (e.g., deploy.js).Ensure your wallet's private key is added to the .env file, and that the wallet has sufficient funds on the target network.
+Placez vos scripts de déploiement dans le répertoire `scripts/` (par exemple, deploy.js). Assurez-vous que la clé privée de votre portefeuille est ajoutée au fichier .env et que le portefeuille dispose de fonds suffisants sur le réseau cible.
 
 ```bash
 npx hardhat run scripts/deploy.js --network <network_name>
@@ -184,9 +184,9 @@ main().catch((error) => {
 });
 ```
 
-## Wallet Setup
+## Configuration du portefeuille
 
-The project comes pre-configured with RainbowKit and Wagmi for seamless wallet integration. The wallet configuration is located in `src/wagmi.ts`:
+Le projet est pré-configuré avec RainbowKit et Wagmi pour une intégration de portefeuille fluide. La configuration du portefeuille se trouve dans `src/wagmi.ts`:
 
 ```typescript
 // src/wagmi.ts
@@ -201,9 +201,9 @@ export const config = getDefaultConfig({
 });
 ```
 
-## Run the Frontend
+## Exécutez le frontend
 
-After setting up your contracts and installing dependencies, you can start the Next.js frontend development server:
+Après avoir configuré vos contrats et installé les dépendances, vous pouvez démarrer le serveur de développement frontend Next.js:
 
 <Tabs>
 <TabItem value="npm" label="npm" default>
@@ -222,23 +222,23 @@ yarn dev
 </TabItem>
 </Tabs>
 
-This will start the application at [http://localhost:3000](http://localhost:3000) by default.
+Cela démarrera l'application à [http://localhost:3000](http://localhost:3000) par défaut.
 
-### Making Changes
+### Apporter des modifications
 
-- **Pages**: Edit files in `src/pages/` directory
-- **Styles**: Modify `src/styles/` for custom styling
-- **Components**: Create reusable components in `src/components/`
-- **Wallet Config**: Update `src/wagmi.ts` for wallet customization
-- **Smart Contracts**: Modify contracts in `contracts/` directory
+- **Pages**: Modifiez les fichiers dans le répertoire `src/pages/`
+- **Styles**: Modifiez `src/styles/` pour un style personnalisé
+- **Components**: Créez des composants réutilisables dans `src/components/`
+- **Wallet Config**: Mettez à jour `src/wagmi.ts` pour personnaliser le portefeuille
+- **Smart Contracts**: Modifiez les contrats dans le répertoire `contracts/`
 
 ## ABI Usage
 
-After compiling your smart contracts with Hardhat, the ABI (Application Binary Interface) will be automatically copied to the `src/abi` directory by a custom Hardhat task.
+Après avoir compilé vos contrats intelligents avec Hardhat, l'ABI (Application Binary Interface) sera automatiquement copié dans le répertoire `src/abi` par une tâche Hardhat personnalisée.
 
 ### Using ABIs in Your Frontend
 
-Import the ABI in your component using a default import:
+Importez l'ABI dans votre composant en utilisant une importation par défaut:
 
 ```typescript
 // Example usage in a React component
@@ -258,9 +258,9 @@ export function YourComponent() {
 }
 ```
 
-### TypeScript Configuration
+### Configuration de TypeScript
 
-If you encounter a TypeScript error when importing JSON files, ensure your `tsconfig.json` includes:
+Si vous rencontrez une erreur TypeScript lors de l'importation de fichiers JSON, assurez-vous que votre `tsconfig.json` inclut:
 
 ```json
 {
