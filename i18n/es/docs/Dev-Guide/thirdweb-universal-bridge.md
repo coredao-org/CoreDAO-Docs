@@ -8,30 +8,30 @@ sidebar_position: 2
 
 ---
 
-[**Universal Bridge**](https://thirdweb.com/payments) is a comprehensive web3 payment solution to help developers monetize any app or game.
+[**Universal Bridge**](https://thirdweb.com/payments) es una solución integral de pagos Web3 que ayuda a los desarrolladores a monetizar cualquier app o juego.
 
-It enables users to effortlessly onramp, bridge, and swap tokens or fiat across any EVM chain through automatic cross-chain routing, removing the complexity of managing multiple chains.
+Permite a los usuarios onramp, bridge y swap tokens o fiat entre cualquier cadena EVM mediante enrutamiento automático cross-chain, eliminando la complejidad de gestionar múltiples cadenas.
 
-By simplifying cross-chain payments and unlocking multi-chain functionality with minimal implementation effort, it also provides developers with monetization opportunities via fee-sharing and supports advanced capabilities like webhooks and transaction tracking.
+Al simplificar los pagos cross-chain y desbloquear la funcionalidad multi-chain con un esfuerzo mínimo de implementación, también ofrece a los desarrolladores oportunidades de monetización a través de fee-sharing y soporta capacidades avanzadas como webhooks y seguimiento de transacciones.
 
-This makes building seamless, multi-chain payment experiences fast, reliable, and developer-friendly.
+Esto hace que construir experiencias de pago multi-chain fluidas, rápidas, confiables y amigables para desarrolladores sea mucho más sencillo.
 
-## Features
+## Funcionalidades
 
-- Let users pay for assets in any EVM token on any EVM chain
-- Automatic cross-chain routing for seamless transactions
-- Earn from day one with the fee-sharing mechanism
-- Access a ready-made UI component for easy implementation
+- Permite a los usuarios pagar por activos con cualquier token EVM en cualquier cadena EVM
+- Enrutamiento automático cross-chain para transacciones fluidas
+- Genera ingresos desde el primer día con el mecanismo de fee-sharing
+- Acceso a un componente UI listo para usar que facilita la implementación
 
-Learn more in the [Universal Bridge documentation](https://portal.thirdweb.com/payments).
+Aprende más en la [documentación de Universal Bridge](https://portal.thirdweb.com/payments).
 
-## Get Started
+## Cómo Empezar
 
-See the [thirdweb documentation](https://portal.thirdweb.com/payments) to get started with Universal Bridge.
+Consulta la [documentación de thirdweb](https://portal.thirdweb.com/payments) para empezar a usar Universal Bridge.
 
-## See Universal Bridge in Action
+## Ver Universal Bridge en Acción
 
-Want to see how Universal Bridge works? Check it out under the hood with this example:
+¿Quieres ver cómo funciona Universal Bridge? Obsérvalo a detalle con este ejemplo:
 
 ```tsx
 import { createThirdwebClient } from "thirdweb";
@@ -56,4 +56,4 @@ function Example() {
 }
 ```
 
-See how the Buy Crypto flow works in the [playground](https://playground.thirdweb.com/payments/ui-components).
+Ve cómo funciona el flujo de Buy Crypto en el [playground](https://playground.thirdweb.com/payments/ui-components).
