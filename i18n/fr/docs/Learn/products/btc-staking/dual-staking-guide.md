@@ -185,37 +185,37 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 
 23. Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
 
-- Specifying the amount of Bitcoin you’d like to delegate
-  - The minimum amount to delegate is 0.01 Bitcoin if delegating through the official website.
-  - In our example, we will be delegating 0.05 Bitcoin, which satisfies this requirement
-- Setting the lock time determines when your staked Bitcoin will be unlocked and available again for redemption or re-delegation.
-  - Select inside the lock time box to input values, or click on the calendar icon to select the date, and click ‘OK’ to proceed.
-  - The default lock time is set to a month in advance.
-- Specify the network priority speed for your transaction
+- Spécifier le montant de Bitcoin que vous souhaitez déléguer
+  - Le montant minimum à déléguer est de 0,01 Bitcoin, si la délégation se fait via l'interface officielle du site.
+  - Dans notre exemple, nous déléguerons 0,05 Bitcoin, ce qui satisfait à cette exigence
+- Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
+  - Sélectionnez à l'intérieur de la boîte de temps de verrouillage pour entrer des valeurs, ou cliquez sur l'icône du calendrier pour sélectionner la date et cliquez sur ’OK’ pour continuer.
+  - Le temps de verrouillage par défaut est fixé à un mois à l'avance.
+- Spécifier la priorité du réseau pour votre transaction
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
-24. Finally, click ‘Confirm’ to complete the transaction.
+24. Enfin, cliquez sur ‘Confirm’ pour compléter la transaction.
 
-**Confirm `OP_Return` Output**
+**Confirmer la Sortie `OP_Return`**
 
-25. Before signing the transaction in your wallet, verify the transaction outputs to ensure they include an `OP_Return` output. The `OP_Return` output is where your `redeem_script` is saved and is essentially used to redeem your staked Bitcoin. There may be two or three outputs, but at least one should always be **OP_Return**. Abort the transaction if it doesn't include the `OP_Return` output.
+25. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie `OP_Return`. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être **OP_Return**. Abandonnez la transaction si elle n'inclut pas la sortie `OP_Return`.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
-26. Once you confirm the transition, you will receive a **Transaction Submitted** notification on the top right of your screen. You could click on **My Staking** to see your staking records or **View on Bitcoin Explorer** to review this transaction.
+26. Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on Btc Explorer** pour revoir cette transaction.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
-**Verify Transaction Submission and Staking Records**
+**Vérifier la Soumission de la Transaction et les Enregistrements de Staking**
 
-27. In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
+27. Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
 
 <p align="center">
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
