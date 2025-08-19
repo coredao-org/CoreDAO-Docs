@@ -1,16 +1,16 @@
 ---
-sidebar_label: Redelegating Staked BTC
-description: Guide to redelegate BTC from Ledger device on Core Mainnet
+sidebar_label: Redelegar BTC en Staking
+description: Guía para redelegar BTC desde un dispositivo Ledger en Core Mainnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redelegate Staked BTC on Core
+# Usando Ledger Hardware Wallets para Redelegar BTC en Staking en Core
 
-This user guide will walk you through the step-by-step process of redelegating staked expired timelocked Bitcoin (BTC) to a new Core validator using a Ledger hardware wallet, reinitiating a new BTC staking transaction.
+Esta guía te llevará paso a paso por el proceso de redelegar Bitcoins (BTC) en staking con timelock expirado hacia un nuevo validador de Core, utilizando una hardware wallet Ledger, reiniciando así una nueva transacción de staking de BTC.
 
 :::note
-Before you begin, ensure your Ledger device is updated and the Ledger Core app is installed. You must use the same primary BTC wallet address originally used for BTC staking. To learn how to stake BTC using Ledger, refer to the detailed guide [here](./btc-staking.md).
+Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y que la Ledger Core app esté instalada. Debes usar la misma dirección principal de BTC wallet que utilizaste originalmente para el staking de BTC. Para aprender cómo hacer staking de BTC usando Ledger, consulta la guía detallada [aquí](./btc-staking.md).
 :::
 
 ## Before You Begin: Important Reminders
