@@ -1,30 +1,30 @@
 ---
-sidebar_label: Full Stack dApp Toolkit
+sidebar_label: Kit de herramientas Full Stack para dApps
 hide_table_of_contents: false
 sidebar_position: 2
-description: CLI tool to bootstrap a full-stack Web3 DApp on Core
+description: Herramienta CLI para inicializar una DApp Web3 Full Stack en Core
 ---
 
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Full-Stack Starter Kit for Building dApps on Core
+# Kit de inicio Full-Stack para construir dApps en Core
 
 ---
 
-### `create-core-dapp`: Full Stack dApp Toolkit
+### `create-core-dapp`: Kit de herramientas Full Stack para dApp
 
-`create-core-dapp` is a CLI tool to bootstrap a fully functional full-stack Web3 DApp on [Core](https://www.npmjs.com/package/create-core-dapp). It comes pre-configured with:
+`create-core-dapp` es una herramienta CLI para inicializar una DApp Web3 Full Stack completamente funcional en [Core](https://www.npmjs.com/package/create-core-dapp). Viene preconfigurada con:
 
-- **Hardhat** for smart contract development
-- **Core Testnet & Mainnet** RPC setup
-- **Next.js** frontend
-- **RainbowKit + Wagmi** for wallet integration
-- Ethers.js support
+- **Hardhat** para desarrollo de smart contracts
+- Configuración de **Core Testnet & Mainnet** RPC
+- **Next.js** para el frontend
+- **RainbowKit + Wagmi** para integración de wallets
+- Soporte para Ethers.js
 
-## Prerequisites
+## Prerrequisitos
 
-Before you begin, make sure you have the following installed:
+Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
 | Tool                    | Version (Recommended) |
 | ----------------------- | ---------------------------------------- |
