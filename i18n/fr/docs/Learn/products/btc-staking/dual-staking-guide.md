@@ -221,10 +221,10 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
-28. The **My Staking** page displays records of all your staking activities (CORE, BTC, Bitcoin hash power). Click on the respective CORE, BTC, and Hash tabs to view details on your staking and delegations.
+28. La page **My Staking** affiche les enregistrements de toutes vos activités de staking (CORE, BTC, hash). Cliquez sur les onglets respectifs CORE, BTC, et Hash pour voir les détails de votre staking et de vos délégations.
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
-**Congratulations,** you have successfully staked your Bitcoin and CORE on the Core blockchain and will now actively earn CORE tokens as rewards. By staking Bitcoin and voting for validators, you actively contribute to the governance and security of the Core network, supporting its decentralization and stability. In addition, through Dual Staking, you help strengthen the connection between the Bitcoin and Core blockchain, aligning incentives and creating value across both ecosystems.
+**Félicitations**Vous avez staké avec succès votre Bitcoin et votre CORE sur la blockchain Core et gagnerez désormais activement des tokens CORE en tant que récompenses. En stakant du Bitcoin et en votant pour des validateurs, vous contribuez activement à la gouvernance et à la sécurité du réseau Core, soutenant sa décentralisation et sa stabilité. De plus, grâce au Dual Staking, vous aidez à renforcer la connexion entre la blockchain Bitcoin et Core, alignant les incitations et créant de la valeur à travers les deux écosystèmes.
