@@ -1,20 +1,20 @@
 ---
-sidebar_label: Reporting Spam
+sidebar_label: Reporte de Spam
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Reporting Spam
+# Reporte de Spam
 
-If you come across spam, phishing attempts, impersonation, or any other malicious activity targeting the Core ecosystem — such as fake websites, scam dApps, or fraudulent messages — please report it to us directly.
+Si te encuentras con spam, intentos de phishing, suplantación de identidad u otra actividad maliciosa que afecte al ecosistema Core —como sitios web falsos, dApps fraudulentas o mensajes engañosos—, por favor repórtalo directamente.
 
-## How to Report
+## Cómo Reportar
 
-To ensure a timely and effective response, please email **[team-spam@coredao.org](mailto:team-spam@coredao.org)** with the following details:
+Para asegurar una respuesta oportuna y efectiva, envía un correo a **[team-spam@coredao.org](mailto:team-spam@coredao.org)** con los siguientes detalles:
 
-- **Type of Abuse:** Describe the nature of the issue (e.g., phishing site, impersonation, unsolicited spam, etc.).
-- **Offending URL or Address:** Include any scam links, wallet addresses, or identifiers involved.
-- **Description & Evidence:** Provide any relevant context, screenshots, or observations to support your report.
-- **Discovery Method:** Let us know how and where you found the issue (e.g., Twitter, Telegram, website, etc.).
+- **Tipo de abuso:** Describe la naturaleza del problema (por ejemplo, sitio de phishing, suplantación, spam no solicitado, etc.).
+- **URL o dirección ofensiva:** Incluye cualquier enlace de estafa, dirección de wallet o identificadores involucrados.
+- **Descripción y evidencia:** Proporciona contexto relevante, capturas de pantalla u observaciones que respalden tu reporte.
+- **Método de descubrimiento:** Indica cómo y dónde encontraste el problema (por ejemplo, Twitter, Telegram, sitio web, etc.).
 
-Your contribution is highly valued and we appreciate your efforts in helping us maintain a safe and secure environment for the Core community.
+Tu contribución es muy valiosa y apreciamos tu esfuerzo para mantener un entorno seguro para la comunidad de Core.
