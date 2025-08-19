@@ -64,7 +64,7 @@ Para más detalles, consulta la [Guía de configuración de nodos completos](../
 
 En la red Core, se requiere que los validadores hagan staking de una cantidad mínima de tokens CORE, los cuales se bloquean durante el período en el que el nodo validador presta sus servicios. En la testnet, la cantidad mínima es de **10,000 tCORE2**. En la mainnet, la cantidad mínima es de **10,000 CORE**.
 
-### 6. ¿Cómo se recompensa a los validadores en el ecosistema Core?
+### 5. ¿Cómo se recompensa a los validadores en el ecosistema Core?
 
 Los validadores obtienen recompensas por su papel en el procesamiento de transacciones, la creación de nuevos bloques y el mantenimiento de la integridad de la cadena de bloques. Estas recompensas son fundamentales para compensar a los Validadores por sus esfuerzos y costos operativos. Los validadores de Core operan mediante un sistema round-robin, y cada validador activo recibe aproximadamente la misma cantidad de recompensas en cada ronda. Hay dos categorías de recompensas del validador:
 
@@ -73,11 +73,11 @@ Los validadores obtienen recompensas por su papel en el procesamiento de transac
 
 Tanto las recompensas básicas como las tarifas de transacción se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, el **90%** de las recompensas se asigna a los validadores, y el **10%** restante se asigna al Contrato de Recompensas del Sistema. Del 90 % que se paga a los validadores, un porcentaje es tomado como comisión por el validador antes de distribuir el resto a sus delegadores. La parte que los validadores retienen para sí mismos (comisiones) se distribuye directamente a sus direcciones de tarifas al final de cada ronda. Los validadores están obligados a compartir las recompensas con los delegadores que hayan hecho staking de Bitcoin, CORE o que hayan delegado potencia de hash de Bitcoin. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
 
-### 11. ¿Con qué frecuencia los validadores deben estar en línea?
+### 6. ¿Con qué frecuencia los validadores deben estar en línea?
 
-El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Each day, **31** validators with the highest hybrid scores are elected to the validator set, thereby becoming responsible for producing blocks on the Core network for the entire round. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
+El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Cada día, **31** validadores con las puntuaciones híbridas más altas son elegidos para formar el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
 
-### 9. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core Chain?
+### 7. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core Chain?
 
 A continuación se ofrece una descripción general condensada de los posibles riesgos y sanciones para los validadores en el ecosistema Core:
 
@@ -106,7 +106,7 @@ Donde,
 - rBp y tBp representan, respectivamente, los tokens de Bitcoin delegados a un validador y el total de tokens de Bitcoin en staking.
 - m y n son factores dinámicos que ajustan los pesos de la potencia de hash y el poder de voto de los tokens Bitcoin frente a los tokens CORE.
 
-4. **Validator Set Formation**: The top **31** validators, based on hybrid scores, are selected for the next round.
+4. **Formación del conjunto de validadores**: Los **31** validadores principales, basados en las puntuaciones híbridas, son seleccionados para la siguiente ronda.
 
 ### 9) ¿Qué es el slashing y cuáles son las diferentes penalizaciones por slashing en la blockchain de Core?
 
