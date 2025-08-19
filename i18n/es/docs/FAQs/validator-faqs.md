@@ -12,7 +12,7 @@ sidebar_position: 2
 
 En el ecosistema Core, "validador" se refiere a nodos o participantes en la red blockchain que son responsables de verificar, validar y agregar nuevas transacciones a la cadena de bloques. Los validadores desempeñan un papel crucial en el mantenimiento y la seguridad de la red.
 
-### 5. ¿Cómo se recompensa a los validadores en el ecosistema Core Chain?
+### 2. ¿Cómo convertirse en validador?
 
 - 1. Para registrarte como validador en Core, debes estar ejecutando un nodo completo en modo validador. Por favor, lea las [guías sobre los requisitos de nodos validadores](../Node/config/validator-node-config.md) y la [configuración de nodos validadores](../Node/validator/setting-up-validator.md)para obtener información sobre cómo configurarlo.
   2. Una vez finalizado ese paso, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de staking:
@@ -34,7 +34,7 @@ Proporcione información para cada uno de los campos del formulario:
 
 ![validator-logs](../../static/img/validator/register/validator-register-2.avif)
 
-### 4. ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo de validación en Core?
+### 3. ¿Cuáles son los requisitos de hardware/software para ejecutar un nodo de validación en Core?
 
 Los validadores son cruciales para proteger la red mediante la producción de bloques y la validación de transacciones dentro del marco de consenso Satoshi Plus de Core.
 
@@ -60,7 +60,7 @@ Los validadores son cruciales para proteger la red mediante la producción de bl
 
 Para más detalles, consulta la [Guía de configuración de nodos completos](../Node/config/full-node.md)
 
-### 7. ¿Cuál es la cantidad mínima de tokens CORE requerida para hacer staking y convertirse en validador?
+### 4. ¿Cuál es la cantidad mínima de tokens CORE requerida para hacer staking y convertirse en validador?
 
 En la red Core, se requiere que los validadores hagan staking de una cantidad mínima de tokens CORE, los cuales se bloquean durante el período en el que el nodo validador presta sus servicios. En la testnet, la cantidad mínima es de **10,000 tCORE2**. En la mainnet, la cantidad mínima es de **10,000 CORE**.
 
