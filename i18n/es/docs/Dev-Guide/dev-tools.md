@@ -57,11 +57,11 @@ values={[
 
 </Tabs>
 
-### General Resources
+### Recursos Generales
 
-- **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
-- **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
-- **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
+- **[GitHub de Core DAO](https://github.com/coredao-org):** Página oficial de GitHub que contiene toda la información sobre Core.
+- **[Guías y Tutoriales](https://github.com/coredao-org/dapp-tutorial):** Guías detalladas y tutoriales para comenzar tu viaje de desarrollo en Core.
+- \*\*[Crear paquete NPM de core dapp](https://www.npmjs.com/package/create-core-dapp): Kit de inicio Full-Stack ligero y amigable para desarrolladores para construir DApps en Core. Preconfigurado con Hardhat, Next.js y RainbowKit.
 
 ### Whitepaper
 
