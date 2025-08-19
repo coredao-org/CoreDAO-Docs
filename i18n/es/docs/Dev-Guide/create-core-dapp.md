@@ -26,43 +26,43 @@ import TabItem from '@theme/TabItem';
 
 Antes de comenzar, asegúrate de tener lo siguiente instalado:
 
-| Tool                    | Version (Recommended) |
+| Herramienta             | Versión (Recomendada) |
 | ----------------------- | ---------------------------------------- |
 | Node.js | `>=20.x`                                 |
-| npm / yarn / pnpm       | Any supported version                    |
-| Git                     | Latest                                   |
+| npm / yarn / pnpm       | Cualquier versión soportada              |
+| Git                     | Última versión                           |
 
-## Getting Started
+## Cómo Empezar
 
-### 1. Install the CLI globally (optional)
+### 1. Instalar la CLI globalmente (opcional)
 
 ```bash
 npm install -g create-core-dapp
 ```
 
-or use **npx** (no need to install):
+o usa **npx** (no es necesario instalar):
 
 ```bash
 npx create-core-dapp@latest
 ```
 
-### 2. Bootstrap a New Project
+### 2. Inicializar un nuevo proyecto
 
-Run the CLI to scaffold a new project:
+Ejecuta la CLI para generar la estructura de un nuevo proyecto:
 
 ```bash
 npx create-core-dapp my-core-dapp
 ```
 
-Once the installation is complete, navigate into your project:
+Una vez completada la instalación, navega dentro de tu proyecto:
 
 ```bash
 cd my-core-dapp
 ```
 
-## Project Structure
+## Estructura del proyecto
 
-Here's the layout of the generated project:
+Aquí está la organización del proyecto generado:
 
 ```
 my-core-dapp/
@@ -81,11 +81,11 @@ my-core-dapp/
 └── hardhat.config.js  # Hardhat configuration
 ```
 
-## Writing Smart Contracts
+## Escribiendo Smart Contracts
 
-Navigate to the `contracts/` directory to create your own smart contracts.
+Navega al directorio `contracts/` para crear tus propios smart contracts.
 
-Example: `contracts/Greeter.sol`
+Ejemplo: `contracts/Greeter.sol`
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -109,23 +109,23 @@ string public greeting;
 }
 ```
 
-## Compile & Test Contracts
+## Compilar y Probar Contratos
 
-Compile your contracts:
+Compila tus contratos:
 
 ```bash
 npx hardhat compile
 ```
 
-Run tests (optional):
+Ejecuta las pruebas (opcional):
 
 ```bash
 npx hardhat test
 ```
 
-## Configure Core Network
+## Configurar la Red de Core
 
-Inside `hardhat.config.js`, you'll find pre-configured Core Testnet and Mainnet RPC URLs:
+Dentro de `hardhat.config.js`, encontrarás las URLs RPC de Core Testnet y Mainnet preconfiguradas:
 
 ```js
 networks: {
@@ -142,9 +142,9 @@ networks: {
 }
 ```
 
-## Environment Variables
+## Variables de Entorno
 
-Make sure to set up your environment variables in the `.env` file:
+Asegúrate de configurar tus variables de entorno en el archivo `.env`:
 
 ```env
 PRIVATE_KEY=your_private_key_here
@@ -152,20 +152,20 @@ NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID=your_project_id_here
 ```
 
 :::note
-Get your WalletConnect Project ID from [cloud.walletconnect.com](https://cloud.walletconnect.com/)
+Obtén tu WalletConnect Project ID desde [cloud.walletconnect.com](https://cloud.walletconnect.com/)
 :::
 
-## Deploy Contracts
+## Desplegar Contratos
 
-Place your deployment scripts inside the `scripts/` directory (e.g., deploy.js).Ensure your wallet's private key is added to the .env file, and that the wallet has sufficient funds on the target network.
+Coloca tus scripts de despliegue dentro del directorio `scripts/` (por ejemplo, deploy.js).Asegúrate de que la private key de tu wallet esté añadida en el archivo .env, y que la wallet tenga fondos suficientes en la red objetivo.
 
 ```bash
 npx hardhat run scripts/deploy.js --network <network_name>
 ```
 
-> **Note**: Replace `<network_name>` with the network you want to deploy to (e.g., core_testnet2)
+> **Nota**: Reemplaza `<network_name>` con la red a la que quieras desplegar (por ejemplo, core_testnet2)
 
-Example `scripts/deploy.js`:
+Ejemplo: `scripts/deploy.js`:
 
 ```js
 const hre = require("hardhat");
@@ -184,9 +184,9 @@ main().catch((error) => {
 });
 ```
 
-## Wallet Setup
+## Configuración de Wallet
 
-The project comes pre-configured with RainbowKit and Wagmi for seamless wallet integration. The wallet configuration is located in `src/wagmi.ts`:
+El proyecto viene preconfigurado con RainbowKit y Wagmi para una integración de wallets sin fricciones. La configuración de la wallet se encuentra en `src/wagmi.ts`:
 
 ```typescript
 // src/wagmi.ts
@@ -201,9 +201,9 @@ export const config = getDefaultConfig({
 });
 ```
 
-## Run the Frontend
+## Ejecutar el Frontend
 
-After setting up your contracts and installing dependencies, you can start the Next.js frontend development server:
+Después de configurar tus contracts e instalar las dependencias, puedes iniciar el servidor de desarrollo de frontend con Next.js:
 
 <Tabs>
 <TabItem value="npm" label="npm" default>
@@ -222,23 +222,23 @@ yarn dev
 </TabItem>
 </Tabs>
 
-This will start the application at [http://localhost:3000](http://localhost:3000) by default.
+Esto iniciará la aplicación en [http://localhost:3000](http://localhost:3000) por defecto.
 
-### Making Changes
+### Realizando Cambios
 
-- **Pages**: Edit files in `src/pages/` directory
-- **Styles**: Modify `src/styles/` for custom styling
-- **Components**: Create reusable components in `src/components/`
-- **Wallet Config**: Update `src/wagmi.ts` for wallet customization
-- **Smart Contracts**: Modify contracts in `contracts/` directory
+- **Pages**: Edita los archivos en el directorio `src/pages/`
+- **Styles**: Modifica `src/styles/` para estilos personalizados
+- **Components**: Crea componentes reutilizables en `src/components/`
+- **Wallet Config**: Actualiza `src/wagmi.ts` para personalizar la wallet
+- **Smart Contracts**: Modifica los contratos en el directorio `contracts/`
 
-## ABI Usage
+## Uso de ABI
 
-After compiling your smart contracts with Hardhat, the ABI (Application Binary Interface) will be automatically copied to the `src/abi` directory by a custom Hardhat task.
+Después de compilar tus smart contracts con Hardhat, el ABI (Application Binary Interface) se copiará automáticamente al directorio `src/abi` mediante una tarea personalizada de Hardhat.
 
-### Using ABIs in Your Frontend
+### Uso de ABIs en tu Frontend
 
-Import the ABI in your component using a default import:
+Importa el ABI en tu componente usando una importación por defecto:
 
 ```typescript
 // Example usage in a React component
@@ -258,9 +258,9 @@ export function YourComponent() {
 }
 ```
 
-### TypeScript Configuration
+### Configuración de TypeScript
 
-If you encounter a TypeScript error when importing JSON files, ensure your `tsconfig.json` includes:
+Si encuentras un error de TypeScript al importar archivos JSON, asegúrate de que tu `tsconfig.json` incluya:
 
 ```json
 {
@@ -270,14 +270,14 @@ If you encounter a TypeScript error when importing JSON files, ensure your `tsco
 }
 ```
 
-### Keeping ABIs Updated
+### Manteniendo los ABIs Actualizados
 
-- ABIs in `src/abi` are updated automatically when you recompile contracts
-- Run `npx hardhat compile` to regenerate ABIs after contract changes
-- The Hardhat task ensures your frontend always has the latest contract interfaces
+- Los ABIs en `src/abi` se actualizan automáticamente cuando recompilas los contracts
+- Ejecuta `npx hardhat compile` compile para regenerar los ABIs después de realizar cambios en los contracts
+- La tarea de Hardhat asegura que tu frontend siempre tenga las interfaces de contract más recientes
 
-## Further Resources
+## Recursos Adicionales
 
-- [Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp)
-- [Deploying dApps on Core Using Hardhat](https://docs.coredao.org/docs/Dev-Guide/hardhat)
-- [NextJs and Rainbow Kit Core template](https://github.com/coredao-org/Core-NextJs-Rainbowkit)
+- [Crear paquete NPM de core dapp](https://www.npmjs.com/package/create-core-dapp)
+- [Desplegando dApps en Core usando Hardhat](https://docs.coredao.org/docs/Dev-Guide/hardhat)
+- [Plantilla de Core de NextJs y Rainbow Kit](https://github.com/coredao-org/Core-NextJs-Rainbowkit)
