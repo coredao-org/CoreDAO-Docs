@@ -35,28 +35,28 @@ Les appareils matériels Ledger suivants prennent actuellement en charge la mise
 <br/>
 
 :::note
-The firmware versions listed above reflect the latest available version at the time of writing and are subject to change. Before staking, redeeming, or redelegating BTC on Core using your Ledger device, update to the latest version to ensure compatibility and security. Always check Ledger Live for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Avant de mettre en jeu, de racheter ou de réaffecter des BTC sur Core en utilisant votre appareil Ledger, mettez-le à jour vers la dernière version pour garantir la compatibilité et la sécurité. Vérifiez toujours Ledger Live pour les mises à jour les plus récentes. Refer [here](https://support.ledger.com/article/8458939792669-zd) Pour plus de détails sur la mise à jour du micrologiciel de l'appareil Ledger.
 :::
 
-## Prerequisites
+## Prérequis
 
-Before you begin, make sure you have:
+Avant de commencer, assurez-vous d'avoir:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and correctly set up on your computer.
-- You have previously staked BTC on the Core blockchain using your Ledger device.
-- If you're using Xverse Wallet, your Ledger device is already connected and added to it.
-- The timelock period for your locked BTC has expired, making it eligible for redemption.
+- Un appareil Ledger pris en charge avec le dernier micrologiciel.
+- Ledger Live est installé et correctement configuré sur votre ordinateur.
+- Vous avez précédemment mis en jeu des BTC sur la blockchain Core en utilisant votre appareil Ledger.
+- Si vous utilisez le portefeuille Xverse, votre appareil Ledger est déjà connecté et ajouté à celui-ci.
+- La période de verrouillage pour vos BTC verrouillés a expiré, les rendant éligibles au remboursement.
 
-> ⚠️ **Note:** You will not be able to redeem or redelegate staked BTC until the designated timelock has expired.
+> ⚠️ **Remarque:** Vous ne pourrez pas rembourser ou redéléguer les BTC mis en jeu jusqu'à ce que le verrouillage temporaire désigné ait expiré.
 
-## Steps to Redeem Expired Timelock BTC
+## Étapes pour récupérer des BTC à verrouillage temporel expirés
 
-After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet address used for staking BTC to redeem your BTC after the timelock expiry.
+Après l'expiration de la période de verrouillage temporaire pour les BTC mis en jeu, les utilisateurs sont éligibles pour rembourser ou redéléguer leurs actifs Bitcoin délégués. Vous devez utiliser la même adresse de portefeuille Ledger utilisée pour mettre en jeu des BTC pour redéléguer vos BTC après l'expiration du verrouillage temporaire.
 
-### Step #1: Connect Core Wallet to the Staking Website
+### Étape #1: Connecter le portefeuille Core au site Web de staking
 
-1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website.
+1. Connectez votre portefeuille Core Mainnet au site Web de staking. N'oubliez pas d'utiliser le même portefeuille que celui que vous aviez utilisé au moment de la mise en jeu des BTC. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
