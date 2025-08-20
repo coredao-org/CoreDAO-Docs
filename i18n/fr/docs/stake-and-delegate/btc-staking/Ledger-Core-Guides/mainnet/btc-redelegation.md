@@ -108,10 +108,10 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 
 ### Étape #5: Spécifier les détails de réattribution de BTC
 
-1. On the displayed "**Redelegate BTC**" modal, cross-check the BTC amount to redelegate, the Bitcoin Staking Address, and the Reward Address on Core. To redelegate expired timelocked BTC, users must connect to the same Bitcoin address as the one initiating the BTC staking transaction.
-2. Set the BTC timelock period. Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or redelegation. Note that the lock time on the Staking Website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
-3. Specify the network priority speed for your transaction.
-4. Proceed by clicking "**Confirm Delegation**".
+1. Sur le modal "**Redelegate BTC**" affiché, vérifiez attentivement le montant de BTC à réattribuer, l'adresse de staking Bitcoin et l'adresse de récompense sur Core. Pour réattribuer des BTC verrouillés dans le temps expirés, les utilisateurs doivent se connecter à la même adresse Bitcoin que celle qui a initié la transaction de staking de BTC.
+2. Définissez la période de verrouillage temporel des BTC. Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation. Notez que la durée de verrouillage sur l'interface utilisateur du site Web de staking est basée sur le fuseau horaire local de l'utilisateur, qui peut ne pas correspondre au fuseau horaire UTC de l'appareil Ledger.
+3. Spécifiez la vitesse de priorité du réseau pour votre transaction.
+4. Procédez en cliquant sur "**Confirm Delegation**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-4.png)
