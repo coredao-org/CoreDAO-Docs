@@ -80,33 +80,33 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-2.png)
 </p>
 
-2. This tab lists all the BTC staking records and the validators that you have previously delegated your BTC to. Look for any "**Expired**" records under "**Redeem Time**", and proceed to click "**Redelegate**" under "**Action**".
+2. Cet onglet répertorie tous les enregistrements de staking BTC et les validateurs auxquels vous avez précédemment délégué vos BTC. Recherchez les enregistrements "**Expired**" sous "**Redeem Time**", puis cliquez sur "**Redelegate**" sous "**Action**".
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-3.png)
 </p>
 
-### Step #4: Connect Ledger Device for Redelegation
+### Étape #4 : Connectez l'appareil Ledger pour la redélégation
 
-#### Option #1: Connecting the Ledger Device Directly to the Staking Website
+#### Option #1: Connexion de l'appareil Ledger directement au site Web de staking
 
-1. To connect your Ledger device directly to the Staking website, click on "**Ledger**" under the "**Hardware Wallets**" section from the displayed wallet model. Ensure your Ledger device is connected, unlocked, and the Ledger Core app is open on your device.
+1. Pour connecter votre appareil Ledger directement au site Web de staking, cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" parmi les modèles de portefeuille affichés. Assurez-vous que votre appareil Ledger est connecté, déverrouillé et que l'application Ledger Core est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-1.png)
 </p>
 
-#### Option #2: Connecting Ledger Device Using Xverse Wallet
+#### Option #2: Connexion de l'appareil Ledger via le portefeuille Xverse
 
-Alternatively, you can use Xverse Wallet to redelegate BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC directement depuis votre appareil Ledger. Pour ce faire, les utilisateurs doivent d'abord ajouter leur appareil Ledger à leur portefeuille Xverse comme prérequis. Référez-vous au [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) pour connecter votre appareil Ledger à Xverse.
 
-1. To connect your Ledger device using the Xverse wallet, click on "**Xverse**" under the "**Wallets Supporting Ledger**" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core app is open on your device.
+1. Pour connecter votre appareil Ledger en utilisant le portefeuille Xverse, cliquez sur "**Xverse**" sous la section "**Wallets Supporting Ledger**" parmi les modèles de portefeuille affichés. Assurez-vous que votre Ledger est connecté, déverrouillé et que l'application Ledger Core est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-2.png)
 </p>
 
-### Step #5: Specify BTC Redelegation Details
+### Étape #5: Spécifier les détails de réattribution de BTC
 
 1. On the displayed "**Redelegate BTC**" modal, cross-check the BTC amount to redelegate, the Bitcoin Staking Address, and the Reward Address on Core. To redelegate expired timelocked BTC, users must connect to the same Bitcoin address as the one initiating the BTC staking transaction.
 2. Set the BTC timelock period. Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or redelegation. Note that the lock time on the Staking Website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
