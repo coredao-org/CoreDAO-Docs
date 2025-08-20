@@ -117,21 +117,21 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-4.png)
 </p>
 
-5. **Verify BTC Staking Address (Optional):** Use the BTC Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+5. **Vérification de l'adresse de staking BTC (facultatif):** Utilisez l'outil de vérification d'adresse de staking BTC pour confirmer que l'adresse de staking BTC affichée correspond à l'adresse attendue avant de procéder.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-5.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "**Approve Transaction**" on the website to proceed with the transaction.
+6. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-6.png)
 </p>
 
-### Step #6: Review & Approve BTC Redelegation Transaction
+### Étape #6: Réviser et approuver la transaction de réattribution de BTC
 
-The user will be prompted to review and approve the transaction from their Ledger device.
+L'utilisateur sera invité à examiner et à approuver la transaction depuis son appareil Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-7.png)
