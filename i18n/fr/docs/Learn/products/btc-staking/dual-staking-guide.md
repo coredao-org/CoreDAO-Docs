@@ -53,98 +53,99 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 ### Connexion des Portefeuilles Bitcoin et Core
 
 1. Visit [https://stake.coredao.org](https://stake.coredao.org/) and click **Stake Now** on the top right of the header.
-2. Une fois sur l'onglet **Staking**, cliquez sur l'option **Connect** à côté de "BTC Staking Amount" pour connecter votre portefeuille Bitcoin. Cela devrait être le portefeuille contenant les actifs Bitcoin que vous souhaitez staker. Click on the supported wallet of your choice to connect your Bitcoin wallet.
+2. Une fois sur l'onglet **Staking**, cliquez sur l'option **Connect** à côté de "BTC Staking Amount" pour connecter votre portefeuille Bitcoin. Cela devrait être le portefeuille contenant les actifs Bitcoin que vous souhaitez staker. Cliquez sur le portefeuille pris en charge de votre choix pour connecter votre portefeuille Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-1.png)
 </p>
 
-3. Likewise, click the **Connect** option next to **CORE Staking Amount** and select the Core wallet to stake CORE and receive staking rewards.
+3. De même, cliquez sur l'option **Connect** à côté de **CORE Staking Amount** et sélectionnez le portefeuille Core pour staker du CORE et recevoir des récompenses de staking.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png
+)
 </p>
 
-## Specifying the BTC Amount to Stake
+## Spécifier le Montant de BTC à Staker
 
-4. Enter the amount of Bitcoin you want to stake. The minimum amount is 0.01 BTC if a user is staking through the website UI. However, there are no minimum amount requirements for staking Bitcoin through the staking script.
+4. Entrez le montant de Bitcoin que vous souhaitez staker. Le montant minimum est de 0,01 BTC si l'utilisateur effectue le staking via l'interface utilisateur du site web. Cependant, aucune exigence minimale n'est imposée pour le staking Btc via le script de staking.
 
 <p align="center" style={{zoom:"70%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
 </p>
 
-### Selecting a Core Validator for Bitcoin Delegation
+### Sélection d'un Validateur Core pour la Délégation de Bitcoin
 
-5. Under **Delegate to Validator**, from the drop-down menu, select an **_active validator_** to whom you want to delegate your Bitcoin.
+5. Sous **Delegate to Validator**, dans le menu déroulant, sélectionnez un **validateur actif** à qui vous souhaitez déléguer votre Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-4.png)
 </p>
 
-### Specifying the CORE Amount to Stake
+### Spécifier le Montant de CORE à Staker
 
-6. Enter the amount of CORE you want to stake. The minimum amount is 1 CORE.
+6. Entrez le montant de CORE que vous souhaitez staker. Le montant minimum est de 1 CORE.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-5.png)
 </p>
 
-### Selecting a Core Validator for CORE Delegation
+### Sélection d'un Validateur Core pour la Délégation de CORE
 
-7. After specifying the amount of CORE to stake, choose the validator to whom you will delegate your CORE. Ensure that you select an active validator from the drop-down.
+7. Après avoir spécifié le montant de CORE à staker, choisissez le validateur auquel vous allez déléguer votre CORE. Assurez-vous de sélectionner un validateur actif dans le menu déroulant.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
-### Confirming CORE and BTC Staking Details
+### Confirmation des détails de staking CORE et BTC
 
-8. Verify that the staked CORE amount and selected Validator are correct and then press _Confirm_.
-9. Similarly, verify that the staked Bitcoin amount and selected Validator are correct and then press _Confirm_.
+8. Vérifiez que le montant de CORE staké et le Validateur sélectionné sont corrects, puis appuyez sur _Confirm_.
+9. De même, vérifiez que le montant de Btc staké et le Validateur sélectionné sont corrects, puis appuyez sur _Confirm_.
 
-### Verify Bitcoin Staking Address
+### Vérifier l'adresse de staking Btc
 
-10. Before proceeding to confirm your staking transaction. This verification feature allows users to independently verify their Bitcoin staking address, helping prevent blind signing and enhancing the security of the staking process.
+10. Avant de procéder à la confirmation de votre transaction de staking. Cette fonctionnalité de vérification permet aux utilisateurs de vérifier indépendamment leur adresse de staking Btc, contribuant à prévenir les signatures aveugles et à renforcer la sécurité du processus de staking.
 
-11. To proceed with verification, click on the **Verify the Bitcoin Staking Address** button. This will navigate you to the external website.
+11. Pour procéder à la vérification, cliquez sur le bouton **Verify the Btc Staking Address**. Cela vous redirigera vers le site Web externe.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
-12. On the Verification Website UI, ensure that the fetched data is correct and then click on the _Submit_ button.
+12. Sur l'interface utilisateur du site Web de vérification, assurez-vous que les données récupérées sont correctes, puis cliquez sur le bouton _Submit_.
 
 <p align="center" style={{zoom:"35%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
-13. The verification result will appear in the **Verification Result** section.
+13. Le résultat de la vérification apparaîtra dans la section **Verification Result**.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-14. Once verified, navigate back to stake.coredao.org and continue by clicking on **Approve Transaction**.
+14. Une fois vérifié, revenez sur stake.coredao.org et continuez en cliquant sur **Approve Transaction**.
 
 <p align="center">
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
-### Adjusting CORE:BTC Ratios for Higher Yields
+### Ajustement des Ratios CORE:BTC pour des Rendements Plus Élevés
 
-15. On the right side of the Staking Calculator, there is a **Summary** tab that calculates the Total Staking Reward Rate and Projected Annual Rewards. These are estimated annual return numbers for staked Bitcoin and CORE. The reward rate may fluctuate daily based on the total and weighted amounts of delegations that validators receive. When set to the **Current** button, it displays only the real-time estimated staking reward rate. When set to the **Overall** button, it represents the average of two components: the rates from all validators based on previous staking records and the real-time estimated staking reward rate.
+15. Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Lorsque l'option **Current** est sélectionnée, elle affiche uniquement le taux de récompense de staking estimé en temps réel. Lorsque l'option **Overall** est sélectionnée, elle représente la moyenne de deux composants : les taux de tous les validateurs basés sur les enregistrements de staking précédents et le taux de récompense de staking estimé en temps réel.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
-16. You can also use the sliders in the section below to see the effect of CORE:BTC staking ratio on your Total Staking Reward Rate.
+16. Vous pouvez également utiliser les curseurs dans la section ci-dessous pour voir l'effet du ratio de staking CORE:BTC sur votre Taux de Récompense Total de Staking.
 
 <p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
-17. To get the maximum reward boost on your staked amount, under the Dual Staking Tiers section, adjust the **Bitcoin Staked** slider to the amount of Bitcoin you want to stake and click the **Max Boost** button. This will automatically set the corresponding CORE amount in the “CORE Staked” slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the “Max Boost” button again to update the recommended Bitcoin amount in the “BTC Staked” bar.
+17. Pour obtenir le maximum de boost de récompense sur votre montant staké, dans la section **Dual Staking Tiers**, ajustez le curseur **Btc Staked** au montant de Btc que vous souhaitez staker et cliquez sur le bouton **Max Boost**. Cela définira automatiquement le montant de CORE correspondant dans le curseur “CORE Staked“ pour débloquer le boost maximum. Vous pouvez également ajuster manuellement le CORE staké puis cliquer à nouveau sur le bouton "Max Boost" pour mettre à jour le montant de BTC recommandé dans la barre "BTC Staked".
 
 <p align="center">
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
