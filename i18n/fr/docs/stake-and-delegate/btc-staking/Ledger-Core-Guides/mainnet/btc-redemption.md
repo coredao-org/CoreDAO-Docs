@@ -1,31 +1,31 @@
 ---
-sidebar_label: Redeeming Timelock Expired BTC
-description: Guide to redeem timelock expired BTC from Ledger device
+sidebar_label: Récupération de BTC verrouillés expirés
+description: Guide pour récupérer des BTC verrouillés expirés depuis un appareil Ledger
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redeem BTC Staked on Core
+# Utiliser les portefeuilles matériels Ledger pour récupérer des BTC mis en jeu sur Core
 
-This user guide will walk you through the step-by-step process of redeeming your staked Bitcoin (BTC) on the Core blockchain using a Ledger hardware wallet.
+Ce guide utilisateur vous guidera à travers le processus étape par étape pour récupérer vos Bitcoins (BTC) mis en jeu sur la blockchain Core en utilisant un portefeuille matériel Ledger.
 
 :::note
-Before you begin, ensure your Ledger device is updated and the Core app is installed. You must use the same primary BTC wallet address originally used for staking BTC. To learn how to stake BTC using Ledger, refer to the official [guide](./btc-staking.md) for BTC staking using the Ledger device.
+Avant de commencer, assurez-vous que votre appareil Ledger est mis à jour et que l'application Ledger Core est installée. Vous devez utiliser la même adresse de portefeuille BTC principale qui a été utilisée à l'origine pour la mise en jeu de BTC. Pour apprendre comment miser des BTC avec Ledger, consultez le guide officiel [guide](./btc-staking.md).
 :::
 
-## Before You Begin: Important Reminders
+## Avant de commencer : Rappels importants
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
-- **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core are supported **only** on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
-- **Always Use the Ledger"s Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. The Bitcoin app does not support redemption operations of staked BTC and may prevent successful redemption.
-- **Staking BTC Only from the Primary BTC Wallet Address:**  Currently, BTC staking, redemption, and redelegation on Core through Ledger are supported **only** from the primary BTC address of the Ledger device. Secondary or derived addresses are not compatible.
+- **Utilisez uniquement les appareils Ledger pris en charge:** La mise en jeu, le rachat et la réaffectation de BTC sur Core sont pris en charge **uniquement** sur certains portefeuilles matériels Ledger spécifiques avec le dernier micrologiciel. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
+- **Utilisez toujours l'application Core de Ledger:** Vous devez utiliser l'application Core de Ledger (et non l'application Bitcoin de Ledger) pour la mise en jeu, le rachat ou la réaffectation de BTC. L'application Bitcoin ne prend pas en charge les opérations de rachat de BTC mis en jeu et peut empêcher un rachat réussi.
+- **Mise en jeu de BTC uniquement depuis l'adresse de portefeuille BTC principale:** Actuellement, la mise en jeu, le rachat et la réaffectation de BTC sur Core via Ledger sont pris en charge **uniquement** depuis l'adresse BTC principale de l'appareil Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles.
 
 ## Supported Ledger Hardware Wallets
 
-The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC on the Core blockchain. For the best experience and compatibility, as a best practice ensure your device is running the latest available firmware.
+Les appareils matériels Ledger suivants prennent actuellement en charge la mise en jeu, le rachat et la réaffectation de BTC sur la blockchain Core. Pour une expérience et une compatibilité optimales, assurez-vous que votre appareil fonctionne avec le dernier micrologiciel disponible.
 
-| Ledger Device      | Firmware Version (_at the time of writing_) |
+| Appareil Ledger    | Firmware Version (_at the time of writing_) |
 | ------------------ | -------------------------------------------------------------- |
 | **Ledger Nano S+** | 1.4.0                          |
 | **Ledger Nano X**  | 2.5.0                          |
