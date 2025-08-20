@@ -1,20 +1,20 @@
 ---
-sidebar_label: Reporting Spam
+sidebar_label: Signalement de spam
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Reporting Spam
+# Signalement de spam
 
-If you come across spam, phishing attempts, impersonation, or any other malicious activity targeting the Core ecosystem — such as fake websites, scam dApps, or fraudulent messages — please report it to us directly.
+Si vous rencontrez du spam, des tentatives de phishing, de l'usurpation d'identité ou toute autre activité malveillante ciblant l'écosystème Core — tels que des sites Web frauduleux, des dApps frauduleuses ou des messages trompeurs — veuillez nous le signaler directement.
 
-## How to Report
+## Comment Signaler
 
-To ensure a timely and effective response, please email **[team-spam@coredao.org](mailto:team-spam@coredao.org)** with the following details:
+Pour garantir une réponse rapide et efficace, envoyez un e-mail à **[team-spam@coredao.org](mailto:team-spam@coredao.org)** en incluant les détails suivants :
 
-- **Type of Abuse:** Describe the nature of the issue (e.g., phishing site, impersonation, unsolicited spam, etc.).
-- **Offending URL or Address:** Include any scam links, wallet addresses, or identifiers involved.
-- **Description & Evidence:** Provide any relevant context, screenshots, or observations to support your report.
-- **Discovery Method:** Let us know how and where you found the issue (e.g., Twitter, Telegram, website, etc.).
+- **Type d'abus:** Décrivez la nature du problème (par exemple, site de phishing, usurpation d'identité, spam non sollicité, etc.).
+- **URL ou adresse incriminée:** Incluez tout lien frauduleux, adresse de portefeuille ou identifiant impliqué.
+- \*\* Description et preuves:\*\* Fournissez tout contexte pertinent, captures d'écran ou observations pour étayer votre signalement.
+- **Méthode de découverte:** Indiquez comment et où vous avez trouvé le problème (par exemple, Twitter, Telegram, site Web, etc.).
 
-Your contribution is highly valued and we appreciate your efforts in helping us maintain a safe and secure environment for the Core community.
+Votre contribution est hautement appréciée et nous vous remercions pour vos efforts pour nous aider à maintenir un environnement sûr et sécurisé pour la communauté Core.
