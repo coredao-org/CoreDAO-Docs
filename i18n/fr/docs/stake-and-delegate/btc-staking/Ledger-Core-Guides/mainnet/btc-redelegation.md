@@ -137,7 +137,7 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-7.png)
 </p>
 
-#### Using Xverse Wallet to Approve Transaction
+#### Utilisation du portefeuille Xverse pour approuver la transaction
 
 1. If using an Xverse wallet, review the transaction. Verify details and click "Confirm" on the wallet notification on your browser.
 
