@@ -91,6 +91,12 @@ paths:
           description: Public key hash associated with the given BTC address.
           schema:
             type: string
+        - name: coreAddress
+          in: query
+          required: false
+          description: The reward address of BTC staking.
+          schema:
+            type: string
       responses:
         '200':
           description: Active BTC staking transactions retrieved successfully.
@@ -667,6 +673,12 @@ paths:
           in: query
           required: true
           description: The public key hash associated with the given Bitcoin address.
+          schema:
+            type: string
+        - name: coreAddress
+          in: query
+          required: false
+          description: The reward address of BTC staking.
           schema:
             type: string
         - name: pageNum
