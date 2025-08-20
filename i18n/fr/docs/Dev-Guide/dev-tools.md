@@ -21,7 +21,7 @@ values={[
 ]}>
 
 <TabItem value="testnet2">
-  _Note: This is the latest and officially supported testnet for the Core blockchain. L'ancienne version du testnet, avec l'Id de chaîne 1115, est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités
+  _Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. L'ancienne version du testnet, avec l'Id de chaîne 1115, est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités
 
 - **[Explorateur de blocs](https://scan.test2.btcs.network/):** recherchez et consultez les transactions, comptes, blocs, et bien plus.
 
@@ -57,11 +57,11 @@ values={[
 
 </Tabs>
 
-### General Resources
+### Ressources Générales
 
-- **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
-- **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
-- **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
+- **[GitHub Core DAO](https://github.com/coredao-org):** page GitHub officielle, incluant le code source de la blockchain Core et bien plus encore.
+- \*\* [guides et tutoriels] (https://github.com/coredao-org/dapp-tutorial):\*\* guides et tutoriels détaillés pour lancer votre voyage pour construire sur Core.
+- **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** Un kit de démarrage full-stack léger et convivial pour les développeurs souhaitant créer des applications décentralisées (DApps) sur Core. Préconfiguré avec Hardhat, Next.js et RainbowKit.
 
 ### Livre blanc
 
