@@ -33,31 +33,31 @@ Les appareils matériels Ledger suivants prennent actuellement en charge la mise
 <br/>
 
 :::note
-The firmware versions listed above reflect the latest available at the time of writing and are subject to change. Before timelocking, redeeming, or redelegating Bitcoin on Core using your Ledger device, update to the latest version to ensure compatibility and security. Always check **Ledger Live** for the latest updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Avant de mettre en jeu, de racheter ou de réaffecter des Btc sur Core en utilisant votre appareil Ledger, mettez-le à jour vers la dernière version pour garantir la compatibilité et la sécurité. Vérifiez toujours Ledger Live pour les mises à jour les plus récentes. Refer [here](https://support.ledger.com/article/8458939792669-zd) Pour plus de détails sur la mise à jour du micrologiciel de l'appareil Ledger.
 :::
 
-## Prerequisites
+## Prérequis
 
-Before you begin, make sure you have:
+Avant de commencer, assurez-vous d'avoir:
 
- - A supported Ledger device with the latest firmware.
- - Ledger Live is installed and set up on your computer.
- - If using Xverse Wallet, your Ledger device is added to the Xverse Wallet.
- - Sufficient BTC (minimum 0.01 BTC) available on your Ledger device for staking.
+ - Un appareil Ledger pris en charge avec le dernier micrologiciel.
+ - Ledger Live est installé et correctement configuré sur votre ordinateur.
+ - Si vous utilisez le portefeuille Xverse, votre appareil Ledger est ajouté au portefeuille Xverse.
+ - Des BTC suffisants (minimum 0,01 BTC) disponibles sur votre appareil Ledger pour le staking.
 
 ## Setting up Ledger Device
 
-Before staking BTC on Core, make sure your Ledger hardware wallet is fully updated and ready to use with the Core blockchain.
+Avant de miser des BTC sur Core, assurez-vous que votre portefeuille matériel Ledger est entièrement mis à jour et prêt à être utilisé avec la blockchain Core.
 
-### Step 1: Update Your Ledger Device
+### Étape 1: Mettre à jour votre appareil Ledger
 
-Ensure your Ledger device is updated and ready for use.
+Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 
-1. Open **Ledger Live** on your computer.
-2. Connect and unlock your Ledger device.
-3. Navigate to **My Ledger** in the sidebar.
-4. If prompted, allow Ledger Manager access on your device.
-5. Install any available firmware updates for your device.
+1. Ouvrez **Ledger Live** sur votre ordinateur.
+2. Connectez et déverrouillez votre appareil Ledger.
+3. Accédez à **My Ledger** dans la barre latérale.
+4. Si vous y êtes invité, autorisez l'accès à Ledger Manager sur votre appareil.
+5. Installez toutes les mises à jour du micrologiciel disponibles pour votre appareil.
 
 ### Step 2: Installing the Ledger Core app
 
