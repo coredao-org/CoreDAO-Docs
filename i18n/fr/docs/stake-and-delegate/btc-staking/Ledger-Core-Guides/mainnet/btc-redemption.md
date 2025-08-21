@@ -153,22 +153,22 @@ Après avoir connecté votre appareil Ledger, assurez-vous que l'appareil est d�
 #### Approuver la transaction de staking BTC sur l'appareil Ledger
 
 1. Signez la transaction avec votre portefeuille d'appareil Ledger après avoir examiné les détails de la transaction.
-2. Utilisez toujours l'application Ledger Core, et non l'application Ledger Bitcoin, pour la réattribution de BTC verrouillés expirés sur la blockchain Core. The Bitcoin app lacks support for redemption/redelegation operations. Further, the Ledger Core app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Utilisez toujours l'application Ledger Core, et non l'application Ledger Bitcoin, pour la réattribution de BTC verrouillés expirés sur la blockchain Core. L'application Bitcoin manque de prise en charge pour les opérations de remboursement et de redélégation. De plus, l'application Ledger Core prend en charge Clear Signing, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 <p align="center">
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/Ledger-BTC-Redeem.gif)
 </p>
 
-3. Once the transaction is approved on your Ledger device, the website will display a "**Transaction Submitted**" notification, confirming that your BTC redemption request has been successfully initiated.
+3. Une fois la transaction approuvée sur votre appareil Ledger, le site Web de staking affichera une notification "**Transaction Submitted**", confirmant que votre demande de redélégation de BTC a été lancée avec succès.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-7.png)
 </p>
 
-4. After the Bitcoin block of the redemption transaction is confirmed, verify that the redeemed BTC has returned to your receiving Bitcoin address. (This may take a few minutes). You can also view the transaction details on the BTC Explorer.
+4. Après confirmation du bloc Bitcoin de la transaction de récupération, vérifiez que les BTC récupérés sont retournés à votre adresse Bitcoin de réception. (Cela peut prendre quelques minutes). Vous pouvez également consulter les détails de la transaction sur l'explorateur de blockchain BTC (BTC Explorer).
 
 ## Conclusion
 
-By following this guide, you"ve successfully redeemed staked BTC on the Core blockchain using your Ledger hardware wallet. The combination of Core"s Self-Custodial BTC Staking model and Ledger"s industry-leading security, enhanced by Clear Signing via the Ledger Core app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core"s decentralized infrastructure. You now have complete ownership of your reclaimed BTC.
+En suivant ce guide, vous avez réussi à récupérer des BTC mis en jeu sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de verrouillage temporel auto-custodial de Core pour BTC et de la sécurité leader de l'industrie de Ledger, renforcée par Clear Signing via l'application Ledger Core, offre une transparence, une confiance et une sécurité maximales. Votre récupération réussie marque une interaction sécurisée et transparente avec l'infrastructure décentralisée de Core. Vous avez désormais la pleine propriété de vos BTC récupérés.
 
 
