@@ -5,30 +5,30 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets for Staking CORE
+# Uso de Ledger Hardware Wallets para Staking de CORE
 
 ---
 
-This user guide walks you through the process of staking CORE to earn staking rewards on the Core blockchain using a Ledger hardware wallet. By following the steps below, you can participate in Core’s Satoshi Plus consensus mechanism by staking and delegating CORE.
+Esta guía de usuario te explica el proceso para hacer staking de CORE y obtener recompensas en la blockchain de Core utilizando un Ledger hardware wallet. Siguiendo los pasos a continuación, podrás participar en el mecanismo de consenso Satoshi Plus de Core mediante el staking y delegación de CORE.
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y sin problemas, ten en cuenta los siguientes requisitos clave:
 
-1. **Use Only Supported Ledger Devices:** CORE staking is only supported on specific Ledger hardware wallets with the latest/supporting firmware. As a best practice, update your device through Ledger Live before proceeding.
+1. **Usar Solo Dispositivos Ledger Soportados:** El staking de CORE solo es compatible con dispositivos Ledger específicos que tengan el firmware más reciente/compatible. Como buena práctica, actualiza tu dispositivo mediante Ledger Live antes de continuar.
 
-2. **Always Use the Ledger's Ethereum App:** You _must_ use Ledger's Ethereum app to stake CORE token on Core using Ledger device.
+2. **Siempre Usar la App Ethereum de Ledger:** _Debes_ usar la app Ethereum de Ledger para hacer staking de tokens CORE en Core usando tu dispositivo Ledger.
 
-## Supported Ledger Hardware Wallets
+## Ledger Hardware Wallets Soportados
 
-The following Ledger hardware devices currently support staking CORE directly on the Core blockchain. For the best experience and compatibility, ensure your device is running the latest available or supported firmware.
+Los siguientes dispositivos Ledger actualmente soportan staking de CORE directamente en la blockchain de Core. Para la mejor experiencia y compatibilidad, asegúrate de que tu dispositivo tenga el firmware más reciente o compatible.
 
-| Ledger Device      | Firmware Version (_at the time of writing_) |
-| ------------------ | -------------------------------------------------------------- |
-| **Ledger Nano S+** | 1.4.0                          |
-| **Ledger Nano X**  | 2.5.0                          |
-| **Ledger Stax**    | 1.8.0                          |
-| **Ledger Flex**    | 1.4.0                          |
+| Dispositivo Ledger | Versión de Firmware (_al momento de redactar_) |
+| ------------------ | ----------------------------------------------------------------- |
+| **Ledger Nano S+** | 1.4.0                             |
+| **Ledger Nano X**  | 2.5.0                             |
+| **Ledger Stax**    | 1.8.0                             |
+| **Ledger Flex**    | 1.4.0                             |
 
 <br/>
 
