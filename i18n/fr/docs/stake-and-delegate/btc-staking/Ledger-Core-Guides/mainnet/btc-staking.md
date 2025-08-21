@@ -64,24 +64,24 @@ Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 Suivez les étapes ci-dessous pour installer l'application Core sur votre appareil.
 
 1. Avec votre appareil connecté à votre ordinateur, ouvrez l'application Ledger Live et accédez à "**My Ledger**".
-2. Under the "**App Catalog**", search for "**Core**".
-3. Install the "**Core**" app. Use only the Core app for staking, redemption and redelegation of locked Bitcoin on Core Mainnet.
+2. Sous le "**App Catalog**" recherchez "**Core**".
+3. Installez l'application "**Core**". Utilisez uniquement l'application Core pour le staking, le remboursement et la réattribution du Bitcoin verrouillé sur le réseau principal Core.
 
 <p align="center">
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/install-coredao-app.png)
 </p>
 
 :::info
-Always use the Core app for staking, redeeming or redelegating Bitcoin on Core Mainnet. The standard Bitcoin app does not support redemption operations on Core and may result in permanent loss of access to your timelocked BTC. Unlike the Ledger Bitcoin app, which uses blind signing where transaction details are obscured from the user, the Ledger Core app enables Clear Signing. Clear Signing displays all transaction information (e.g., amount, validator, fees, addresses) directly on your Ledger device screen, giving you complete visibility. This enables you to verify what you’re signing confidently and protects you from unintended or malicious transactions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+Utilisez toujours l'application Core pour staker, rembourser ou réattribuer du Bitcoin sur le réseau principal Core. L'application Bitcoin standard ne prend pas en charge les opérations de remboursement sur Core et peut entraîner une perte permanente d'accès à vos BTC verrouillés dans le temps. Contrairement à l'application Ledger Bitcoin, qui utilise une signature aveugle où les détails de la transaction sont masqués à l'utilisateur, l'application Ledger Core permet la signature claire. La signature claire affiche toutes les informations de transaction (par exemple, montant, validateur, frais, adresses) directement sur l'écran de votre appareil Ledger, vous offrant une visibilité totale. Cela vous permet de vérifier en toute confiance ce que vous signez et vous protège contre les transactions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 :::
 
-## Staking BTC on Core with Ledger
+## Mise en jeu de BTC sur Core avec Ledger
 
-With your Ledger device connected and the Core app installed, you can securely stake BTC directly from your hardware wallet.
+Avec votre appareil Ledger connecté et l'application Core installée, vous pouvez miser des BTC en toute sécurité directement depuis votre portefeuille matériel.
 
-> ⚠️ **Note:** A minimum of 0.01 BTC is required to participate in Bitcoin staking on Core Mainnet, along with sufficient BTC to cover transaction fees. For more details on setting up your first Bitcoin Account on a Ledger device, refer here.
+> ⚠️ **Remarque:** Un minimum de 0,01 BTC est requis pour participer à la mise en jeu de Bitcoin sur le réseau principal Core, ainsi que suffisamment de BTC pour couvrir les frais de transaction. Pour plus de détails sur la configuration de votre premier compte Bitcoin sur un appareil Ledger, référez-vous ici.
 
-1. On your Ledger device, open the **Core app** before proceeding.
+1. Sur votre appareil Ledger, ouvrez l'application Core **Core app** avant de continuer.
 
 <p align="center">
 ![ready-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/coredao-app-ready.png)
@@ -89,7 +89,7 @@ With your Ledger device connected and the Core app installed, you can securely s
 
 2. Navigate to the [Core BTC Staking Website](https://stake.coredao.org/staking).
 
-### Connect Core Wallet to the Staking Website
+### Connecter le portefeuille Core au site Web de staking
 
 1. Connect your Core Mainnet wallet to the website. This will be used as the CORE reward address.
 2. Click on the "**Connect**" button in the top right corner of the website.
