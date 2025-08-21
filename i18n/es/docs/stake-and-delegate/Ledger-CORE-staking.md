@@ -1,6 +1,6 @@
 ---
-sidebar_label: Using Ledger Hardware Wallet
-description: Guide to stake CORE using Ledger Hardware Wallet
+sidebar_label: Uso de Ledger Hardware Wallet
+description: Guía para hacer staking de CORE usando Ledger Hardware Wallet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
