@@ -59,11 +59,11 @@ Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 4. Si vous y êtes invité, autorisez l'accès à Ledger Manager sur votre appareil.
 5. Installez toutes les mises à jour du micrologiciel disponibles pour votre appareil.
 
-### Step 2: Installing the Ledger Core app
+### Étape 2 : Installation de l'application Ledger Core
 
-Follow the steps below to install the Core app on your device.
+Suivez les étapes ci-dessous pour installer l'application Core sur votre appareil.
 
-1. With your device connected to your computer, open the Ledger Live application and navigate to "**My Ledger**".
+1. Avec votre appareil connecté à votre ordinateur, ouvrez l'application Ledger Live et accédez à "**My Ledger**".
 2. Under the "**App Catalog**", search for "**Core**".
 3. Install the "**Core**" app. Use only the Core app for staking, redemption and redelegation of locked Bitcoin on Core Mainnet.
 
@@ -144,78 +144,78 @@ Alternatively, users can also use Xverse to stake Bitcoin from their Ledger devi
 
 ### Specify & Confirm BTC Staking Details
 
-1. **Specify BTC Staking & Delegation Details:** Once both Core and Bitcoin wallets are connected, specify the amount of BTC to stake. Select the desired Core validator to delegate your Bitcoin to. To proceed with BTC staking, specify the CORE Staking Amount as zero. Click the "**Proceed to Stake**" button.
+1. **Specify BTC Staking & Delegation Details:** Once both Core and Bitcoin wallets are connected, specify the amount of BTC to stake. Select the desired Core validator to delegate your Bitcoin to. To proceed with BTC staking, specify the CORE Staking Amount as zero. Cliquez sur le bouton "**Proceed to Stake**" .
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-3.png)
 </p>
 
-2. **Skip CORE Staking Details:** Users can skip this step and click directly on "Stake BTC" to proceed with staking only Bitcoin by verifying Bitcoin staking details.
+2. **Ignorer les détails du staking CORE:** Les utilisateurs peuvent ignorer cette étape et cliquer directement sur "Staker BTC" pour procéder au staking de Bitcoin uniquement en vérifiant les détails du staking Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-4.png)
 </p>
 
-3. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
-    - Confirm the amount of BTC you’d like to stake. The **minimum amount to stake is 0.01 BTC**.
-    - Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or re-delegation.
-    - The lock time on the website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
-    - Specify the network priority speed for your transaction.
+3. **Confirmer les détails du staking BTC:** Confirmez le montant de BTC à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
+    - Spécifier le montant de BTC que vous souhaitez déléguer. Le **montant minimum à déléguer est de 0,01 BTC**.
+    - Définir le temps de verrouillage détermine quand votre Bitcoin staké sera déverrouillé et disponible à nouveau pour la récupération ou la redélégation.
+    - Notez que la durée de verrouillage sur l'interface utilisateur du site Web de staking est basée sur le fuseau horaire local de l'utilisateur, qui peut ne pas correspondre au fuseau horaire UTC de l'appareil Ledger.
+    - Spécifiez la vitesse de priorité du réseau pour votre transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-5.png)
 </p>
 
-4. **Verify Bitcoin Staking Address (Optional):** Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+4. **Vérification de l'adresse de staking BTC (facultatif):** Utilisez l'outil de vérification d'adresse de staking BTC pour confirmer que l'adresse de staking BTC affichée correspond à l'adresse attendue avant de procéder.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-6.png)
 </p>
 
-5. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
+5. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-7.png)
 </p>
 
-### Review and Approve Transaction on Ledger Device
+### Examinez et approuvez la transaction sur l'appareil Ledger
 
-#### Using Xverse Wallet
+#### Utilisation du portefeuille Xverse
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
-
-<p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/Xverse-wallet-ui.png)
-</p>
-
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+1. Si vous utilisez un portefeuille Xverse, examinez la transaction. Vérifiez les détails et cliquez sur "**Confirm**"sur la notification de portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/Xverse-wallet-ui.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
-#### Approve BTC Staking Transaction on the Ledger Device
+<p align="center" style={{zoom:"60%"}}>
+![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/Xverse-wallet-ui.png)
+</p>
 
-1. Ensure your device is unlocked and the Core app is open. Review and approve the BTC staking transaction on your Ledger device. Verify the staking details, including the amount of BTC, the validator and delegator addresses, and the transaction fees. Approve by signing the transaction.
+3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
+
+#### Approuver la transaction de staking BTC sur l'appareil Ledger
+
+1. Assurez-vous que votre appareil est déverrouillé et que l'application Core est ouverte. Examinez et approuvez la transaction de staking BTC sur votre appareil Ledger. Vérifiez les détails de la transaction de staking BTC sur votre Ledger et appuyez sur les boutons pour approuver. Approuvez en signant la transaction.
 
 <p align="center">
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/btc-staking-ledger.gif)
 </p>
 
-2. Once approved on your Ledger device, the "**Transaction Submitted**" notification will appear on the Core BTC Staking website.
+2. Une fois approuvée sur votre appareil Ledger, la notification "**Transaction Submitted**" apparaîtra sur le site Web de staking Core BTC.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-8.png)
 </p>
 
-3. Click on "**View on BTC Explorer**" to view details of your BTC staking transaction on the BTC Explorer.
+3. Cliquez sur "**View on BTC Explorer**" pour afficher les détails de votre transaction de staking BTC sur l'explorateur BTC.
 
-> ⚠️ **Note:** To be eligible to earn rewards, you must complete a full staking round (00:00:00 - 23:59:29 UTC).
+> ⚠️ \*\*Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 
 ## Conclusion
 
-Congratulations! You’ve successfully staked Bitcoin using your Ledger hardware wallet on the Core through Core’s Self-Custodial Bitcoin Staking. By following this guide, you securely connected your Ledger device, installed and used the Ledger Core app, and completed your BTC staking transactions with confidence.
-Leveraging Ledger’s industry-leading security along with Core’s Self-Custodial Bitcoin Staking model ensures that your assets remain completely under your control. Using the Core app also enables Clear Signing, providing complete transparency into what you're signing, giving you peace of mind and a safer experience.
-You’re now part of the Core ecosystem where security, control, and yield go hand in hand!
+Félicitations ! Vous avez réussi à staker Bitcoin en utilisant votre portefeuille matériel Ledger sur Core via le staking Bitcoin auto-custodial de Core. En suivant ce guide, vous avez connecté votre appareil Ledger en toute sécurité, installé et utilisé l'application Ledger Core, et réalisé vos transactions de staking BTC avec confiance.
+En combinant la sécurité de pointe de Ledger avec le modèle de staking Bitcoin auto-custodial de Core, vous assurez que vos actifs restent entièrement sous votre contrôle. L'utilisation de l'application Core permet également la signature claire, offrant une transparence totale sur ce que vous signez, vous donnant ainsi une tranquillité d'esprit et une expérience plus sûre.
+Vous faites désormais partie de l'écosystème Core où sécurité, contrôle et rendement vont de pair!
