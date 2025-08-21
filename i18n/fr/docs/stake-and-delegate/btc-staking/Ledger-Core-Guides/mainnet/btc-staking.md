@@ -91,18 +91,18 @@ Avec votre appareil Ledger connecté et l'application Core installée, vous pouv
 
 ### Connecter le portefeuille Core au site Web de staking
 
-1. Connect your Core Mainnet wallet to the website. This will be used as the CORE reward address.
-2. Click on the "**Connect**" button in the top right corner of the website.
+1. Connectez votre portefeuille Core Mainnet au site Web de staking. Ceci sera utilisé comme adresse de récompense CORE.
+2. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
 </p>
 
-3. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet.
+3. Depuis le modal de portefeuille affiché, sélectionnez le portefeuille de votre choix configuré pour être utilisé avec Core.
 
-### Connect Ledger Hardware Wallet to Website
+### Connecter le portefeuille matériel Ledger à un site Web
 
-Before connecting your Ledger device to the website, it's important to ensure you are using your primary Bitcoin (BTC) account for staking BTC on Core. Refer to the [official guide from Ledger](https://support.ledger.com/article/115005195945-zd) to set up a Bitcoin (BTC) account on your device, if you haven't already.
+Avant de connecter votre appareil Ledger au site Web, il est important de vous assurer que vous utilisez votre compte Bitcoin (BTC) principal pour miser des BTC sur Core. Refer to the [official guide from Ledger](https://support.ledger.com/article/115005195945-zd) to set up a Bitcoin (BTC) account on your device, if you haven't already.
 
 #### Staking Option One: Connect Ledger Wallet Directly
 
