@@ -170,8 +170,8 @@ Se le pedirá al usuario que revise y apruebe la transacción desde su dispositi
 
 4. Después de la aprobación de la transacción, los usuarios también pueden ver los detalles de la transacción en el BTC Explorer.
 
-## Conclusion
+## Conclusión
 
-By following this guide, you’ve successfully redelegated timelock expired staked BTC on the Core blockchain using your Ledger hardware wallet. The combination of Core’s Self-Custodial BTC Timelocking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core app, provides maximum transparency, confidence, and safety. Your successful redelegation for staking BTC means your BTC continues to participate in Core’s decentralized ecosystem without ever leaving your custody.
+Siguiendo esta guía, has redelegado exitosamente BTC en staking con timelock expirado en la blockchain de Core usando tu Ledger hardware wallet. La combinación del modelo Self-Custodial BTC Timelocking de Core y la seguridad líder de la industria de Ledger, potenciada por Clear Signing a través de la Ledger Core app, proporciona máxima transparencia, confianza y seguridad. Tu redelegación exitosa para staking de BTC significa que tus BTC continúan participando en el ecosistema descentralizado de Core sin salir nunca de tu custodia.
 
 
