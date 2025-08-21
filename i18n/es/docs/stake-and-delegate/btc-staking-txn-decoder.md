@@ -6,86 +6,86 @@ sidebar_position: 2
 
 # BTC Staking Transaction Decoder
 
-The BTC Staking Transaction Decoder is a powerful tool available on [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) that allows users to verify and validate their Bitcoin staking transactions. This tool helps diagnose potential formatting issues with your staking transactions after they’ve been submitted to the Core network
+El BTC Staking Transaction Decoder es una herramienta potente disponible en [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) que permite a los usuarios verificar y validar sus transacciones de BTC staking. Esta herramienta ayuda a diagnosticar posibles problemas de formato en tus transacciones de staking después de que han sido enviadas a la red Core
 
-## Overview
+## Visión general
 
-The decoder tool performs comprehensive validation of BTC staking transactions by:
+La herramienta de decodificación realiza una validación completa de las transacciones de BTC staking mediante:
 
-- **Transaction Confirmation Status**: Verifies that the transaction has been confirmed on the Bitcoin network
-- **OP_RETURN Output Validation**: Verifies the transaction contains the correct OP_RETURN output format required by the Core protocol
-- **Validator Address Verification**: Confirms that the target validator address is valid and active on the Core network
-- **Protocol Compliance**: Validates that the transaction meets all Core staking protocol requirements
+- **Transaction Confirmation Status**: Verifica que la transacción haya sido confirmada en la red Bitcoin
+- **OP_RETURN Output Validation**: Verifica que la transacción contenga el formato de salida OP_RETURN correcto requerido por el protocolo de Core
+- **Validator Address Verification**: Confirma que la dirección del validator objetivo es válida y está activa en la red Core
+- **Protocol Compliance**: Valida que la transacción cumpla con todos los requisitos del protocolo de staking de Core
 
 <p align="center">
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
-This validation process analyzes your BTC staking transaction and assists in identifying issues if the transaction did not succeed.
+Este proceso de validación analiza tu transacción de BTC staking y ayuda a identificar problemas si la transacción no tuvo éxito.
 
-## Tool Functionality
+## Funcionalidad de la Herramienta
 
-This tool helps decode and validate BTC Staking transactions against protocol requirements by parsing the transaction's OP_RETURN output, making it easier for users to track the transaction status and identify potential issues.
+Esta herramienta ayuda a decodificar y validar las transacciones de BTC Staking según los requisitos del protocolo, analizando la salida OP_RETURN de la transacción, lo que facilita a los usuarios rastrear el estado de la transacción e identificar posibles problemas.
 
-This tool tracks the following transaction statuses:
+La herramienta rastrea los siguientes estados de transacción:
 
-- **Pending**: The transaction has not yet been included in a block.
-- **Confirming**: The transaction is included in a block but has fewer than 6-block confirmations.
-- **Staked**: The staking is active.
-- **Failed**: Staking attempt failed.
-- **Expired**: The staking period has ended, but rewards have not yet been claimed.
-- **Redeemed**: The staking period has ended and rewards have been successfully claimed.
-- **Missed**: The transaction was confirmed after the staking period had already ended, resulting in no staking rewards.
+- **Pending**: La transacción aún no ha sido incluida en un bloque.
+- **Confirming**: La transacción está incluida en un bloque pero tiene menos de 6 confirmaciones.
+- **Staked**: El staking está activo.
+- **Failed**: El intento de staking falló.
+- **Expired**: El período de staking ha terminado, pero las recompensas aún no han sido reclamadas.
+- **Redeemed**: El período de staking ha terminado y las recompensas han sido reclamadas exitosamente.
+- **Missed**: La transacción fue confirmada después de que el período de staking había terminado, resultando en ninguna recompensa de staking.
 
-## How to Use the Transaction Decoder
+## Cómo Usar el Transaction Decoder
 
-### Step 1: Access the Decoder Tool
+### Step 1: Acceder a la Herramienta Decoder
 
-Navigate to the [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) on Core Scan.
+Navega al [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) en Core Scan.
 
-### Step 2: Enter Transaction Hash
+### Step 2: Ingresar el Transaction Hash
 
-1. Locate the transaction hash field on the decoder page
-2. Copy your BTC staking transaction hash from your wallet or blockchain explorer
-3. Paste the transaction hash into the input field
-4. Click the `Decode` button to begin the analysis
+1. Ubica el campo de transaction hash en la página del decoder
+2. Copia el hash de tu transacción de BTC staking desde tu wallet o explorador de blockchain
+3. Pega el transaction hash en el campo de entrada
+4. Haz clic en `Decode` para iniciar el análisis
 
-### Step 3: Analyze Decoded Information
+### Step 3: Analizar la Información Decodificada
 
-The decoder will provide detailed information about your transaction:
+El decoder proporcionará información detallada sobre tu transacción:
 
-- **Transaction State**: Shows the current status of your staking transaction (Pending, Confirming, Staked, Failed, Expired, Redeemed, or Missed)
-- **Input/Output Addresses**: Shows the flow of BTC in your staking transaction
-- **OP_RETURN Data**: Contains the encoded staking information including delegator and validator addresses
-  - **Delegator address**: The CORE reward address of the staker on the Core chain.
-  - **Validator address**: The address of the validator to whom the staker delegated their BTC.
-- **LockTime**: [Unix timestamp](https://www.unixtimestamp.com/) representing the end date and time of your staking
-- **PublicKeyHash**: Your public key hash for verification purposes
+- **Transaction State**: Muestra el estado actual de tu transacción de staking (Pending, Confirming, Staked, Failed, Expired, Redeemed o Missed)
+- **Input/Output Addresses**: Muestra el flujo de BTC en tu transacción de staking
+- **OP_RETURN Data**: Contiene la información codificada del staking, incluyendo direcciones de delegator y validator
+  - **Delegator address**: La dirección de recompensas CORE del staker en la cadena Core.
+  - **Validator address**: La dirección del validator a quien el staker delegó sus BTC.
+- **LockTime**: [Unix timestamp](https://www.unixtimestamp.com/) que representa la fecha y hora de finalización de tu staking
+- **PublicKeyHash**: El hash de tu clave pública para propósitos de verificación
 
 <p align="center">
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/decoded-data.png)
 </p>
 
-## Common Issues and Solutions
+## Problemas Comunes y Soluciones
 
 ### Transaction Not Confirmed
 
-- **Issue**: Transaction is still pending in the mempool
-- **Solution**: Wait for Bitcoin network confirmation (typically 1-6 blocks)
+- **Problema**: La transacción aún está pendiente en el mempool
+- **Solución**: Espera la confirmación de la red Bitcoin (típicamente 1-6 bloques)
 
 ### Invalid OP_RETURN Format
 
-- **Issue**: The OP_RETURN output doesn't match Core protocol requirements
-- **Solution**: Make sure the OP_RETURN format is correct. For detailed guidance, refer to the [format specified here](https://docs.coredao.org/docs/stake-and-delegate/btc-staking/design#op_return-output)
+- **Problema**: La salida OP_RETURN no cumple con los requisitos del protocolo Core
+- **Solución**: Asegúrate de que el formato OP_RETURN sea correcto. Para orientación detallada, consulta el [formato especificado aquí](https://docs.coredao.org/docs/stake-and-delegate/btc-staking/design#op_return-output)
 
 ### Invalid Validator Address
 
-- **Issue**: The validator address is not active or doesn't exist
-- **Solution**: Verify the validator address and ensure they're an active Core validator
+- **Problema**: La dirección del validator no está activa o no existe
+- **Solución**: Verifica la dirección del validator y asegúrate de que sea un validator activo en Core
 
-## Benefits of Using the Decoder
+## Beneficios de Usar el Decoder
 
-- **Verifies Protocol Compliance**: Verifies whether the transaction meets all requirements and decodes the staking transaction details.
-- **Provides Transparency**: Clear visibility into your staking transaction details
+- **Verifica el Cumplimiento del Protocolo**: Comprueba si la transacción cumple con todos los requisitos y decodifica los detalles de la transacción de staking.
+- **Proporciona Transparencia**: Permite una visibilidad clara de los detalles de tu transacción de staking
 
-The BTC Staking Transaction Decoder helps users verify the details of their self-custodial BTC staking transactions and helps you to resolve issues when a BTC staking transaction fails to register with the Core network.
+El BTC Staking Transaction Decoder ayuda a los usuarios a verificar los detalles de sus transacciones de BTC staking auto-custodiadas y facilita la resolución de problemas cuando una transacción de BTC staking no se registra correctamente en la red Core.
