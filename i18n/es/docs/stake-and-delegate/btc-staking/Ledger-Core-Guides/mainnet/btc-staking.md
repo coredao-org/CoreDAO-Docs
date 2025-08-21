@@ -1,23 +1,23 @@
 ---
-sidebar_label: Staking BTC with Core
-description: User guide to stake BTC from Ledger device on Core
+sidebar_label: Staking BTC con Core
+description: Guía de usuario para hacer staking de BTC desde un dispositivo Ledger en Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets for BTC Staking on Core
+# Uso de Ledger Hardware Wallets para Staking de BTC con Core
 
 ---
 
-This user guide walks you through the process of staking BTC to earn CORE rewards on the Core blockchain using a Ledger hardware wallet. By following the steps below, you can participate in Core’s Self-Custodial Bitcoin Staking while maintaining complete control of your assets.
+Esta guía de usuario te guía a través del proceso de hacer staking de BTC para ganar recompensas en CORE en la blockchain de Core usando un Ledger hardware wallet. Siguiendo los pasos a continuación, podrás participar en el Self-Custodial Bitcoin Staking de Core mientras mantienes el control total de tus activos.
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y sin problemas, ten en cuenta los siguientes requisitos clave:
 
-- **Use Only Supported Ledger Devices:** Bitcoin staking, redemption, and redelegation on Core is only supported on specific Ledger hardware wallets with the latest firmware. Always update your device through Ledger Live before proceeding.
-- **Always Use the Ledger’s Core App:** You must use Ledger’s Core app, not the standard Bitcoin app, when staking or redeeming BTC on Core. Staking BTC with the Bitcoin app may result in the inability to redeem your BTC, resulting in permanent loss of assets.
-- **Stake BTC Only from the Primary BTC Wallet Address:** BTC staking is currently supported from your Ledger’s primary BTC wallet address only. Secondary or derived addresses are currently not compatible.
+ - **Use Only Supported Ledger Devices:** Bitcoin staking, redemption, and redelegation on Core is only supported on specific Ledger hardware wallets with the latest firmware. Always update your device through Ledger Live before proceeding.
+ - **Always Use the Ledger’s Core App:** You must use Ledger’s Core app, not the standard Bitcoin app, when staking or redeeming BTC on Core. Staking BTC with the Bitcoin app may result in the inability to redeem your BTC, resulting in permanent loss of assets.
+ - **Stake BTC Only from the Primary BTC Wallet Address:** BTC staking is currently supported from your Ledger’s primary BTC wallet address only. Secondary or derived addresses are currently not compatible.
 
 ## Supported Ledger Hardware Wallets
 
@@ -40,10 +40,10 @@ The firmware versions listed above reflect the latest available at the time of w
 
 Before you begin, make sure you have:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and set up on your computer.
-- If using Xverse Wallet, your Ledger device is added to the Xverse Wallet.
-- Sufficient BTC (minimum 0.01 BTC) available on your Ledger device for staking.
+ - A supported Ledger device with the latest firmware.
+ - Ledger Live is installed and set up on your computer.
+ - If using Xverse Wallet, your Ledger device is added to the Xverse Wallet.
+ - Sufficient BTC (minimum 0.01 BTC) available on your Ledger device for staking.
 
 ## Setting up Ledger Device
 
@@ -156,7 +156,7 @@ Alternatively, users can also use Xverse to stake Bitcoin from their Ledger devi
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-4.png)
 </p>
 
-4. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
+3. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
     - Confirm the amount of BTC you’d like to stake. The **minimum amount to stake is 0.01 BTC**.
     - Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or re-delegation.
     - The lock time on the website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
@@ -166,13 +166,13 @@ Alternatively, users can also use Xverse to stake Bitcoin from their Ledger devi
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-5.png)
 </p>
 
-5. **Verify Bitcoin Staking Address (Optional):** Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+4. **Verify Bitcoin Staking Address (Optional):** Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-6.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
+5. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-7.png)
