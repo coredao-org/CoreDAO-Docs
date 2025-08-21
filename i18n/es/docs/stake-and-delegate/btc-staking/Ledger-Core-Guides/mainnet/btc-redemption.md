@@ -1,24 +1,24 @@
 ---
-sidebar_label: Redeeming Timelock Expired BTC
-description: Guide to redeem timelock expired BTC from Ledger device
+sidebar_label: Redención de BTC con Timelock Expirado
+description: Guía para redimir BTC con timelock expirado desde un dispositivo Ledger
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redeem BTC Staked on Core
+# Usando Ledger Hardware Wallets para Redimir BTC en Staking en Core
 
-This user guide will walk you through the step-by-step process of redeeming your staked Bitcoin (BTC) on the Core blockchain using a Ledger hardware wallet.
+Esta guía te llevará paso a paso por el proceso de redimir tu Bitcoin (BTC) en staking en la blockchain de Core usando un Ledger hardware wallet.
 
 :::note
-Before you begin, ensure your Ledger device is updated and the Core app is installed. You must use the same primary BTC wallet address originally used for staking BTC. To learn how to stake BTC using Ledger, refer to the official [guide](./btc-staking.md) for BTC staking using the Ledger device.
+Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y que la Ledger Core app esté instalada. Debes usar la misma dirección principal de BTC wallet que se utilizó originalmente para hacer staking de BTC. Para aprender cómo hacer staking de BTC usando Ledger, consulta la [guía](./btc-staking.md) oficial de BTC staking con Ledger.
 :::
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y fluida, ten en cuenta los siguientes requisitos clave:
 
-- **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core are supported **only** on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
-- **Always Use the Ledger"s Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. The Bitcoin app does not support redemption operations of staked BTC and may prevent successful redemption.
+- **Usa únicamente dispositivos Ledger compatibles:** El staking, redención y redelegación de BTC en Core **solo** son compatibles con hardware wallets Ledger soportados que tengan el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
+- **Usa siempre la Ledger Core App:** Debes utilizar la Ledger Core app (no la Ledger Bitcoin app) tanto para hacer staking, redimir o redelegar BTC. The Bitcoin app does not support redemption operations of staked BTC and may prevent successful redemption.
 - **Staking BTC Only from the Primary BTC Wallet Address:**  Currently, BTC staking, redemption, and redelegation on Core through Ledger are supported **only** from the primary BTC address of the Ledger device. Secondary or derived addresses are not compatible.
 
 ## Supported Ledger Hardware Wallets
