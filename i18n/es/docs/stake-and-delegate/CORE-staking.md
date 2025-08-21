@@ -1,11 +1,11 @@
 ---
-sidebar_label: Using EVM Wallets
-description: Guide to stake CORE from EVM Wallets
+sidebar_label: Uso de EVM Wallets
+description: Guía para hacer staking de CORE desde EVM Wallets
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Staking CORE Tokens Using EVM Wallets
+# Staking de Tokens CORE Usando EVM Wallets
 
 ---
 
@@ -33,7 +33,7 @@ Cuando visitestake.coredao.org, verás una descripción general de métricas imp
 Para comenzar a apostar, siga estos pasos para conectar su billetera. Asegúrese de tener tokens CORE en su billetera para participar en la apuesta.
 
 - Haga clic en el botón **Conectar billetera** ubicado en la esquina superior derecha de la página.
-- Choose your preferred EVM wallet (e.g., MetaMask, WalletConnect, etc.) de las opciones disponibles.
+- Elija su wallet EVM preferida (por ejemplo, MetaMask, WalletConnect, etc.) de las opciones disponibles.
 - Siga las instrucciones en pantalla para completar el proceso de conexión de forma segura.
 - Una vez conectado, el saldo y los detalles de su billetera serán visibles y podrá comenzar a delegar tokens CORE.
 
