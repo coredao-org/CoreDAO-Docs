@@ -60,115 +60,115 @@ Después de que el período de timelock de los BTC en staking haya expirado, los
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
 </p>
 
-2. From the displayed wallet modal, select the wallet of your choice configured for use with Core.
+2. En el modal de wallets que aparece, selecciona la wallet de tu preferencia configurada para usar con Core.
 
-### Step #2: Navigate to Staking Dashboard
+### Paso #2: Navegar al Staking Dashboard
 
-1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger’s primary Bitcoin (BTC) address.
-2. Navigate to the [Core BTC Staking Website](https://stake.coredao.org/staking)
-3. On the Staking website, hover over your connected wallet in the top right corner, and click "**My Staking**".
+1. Asegúrate de que tu dispositivo Ledger tenga el firmware más reciente instalado y esté conectado a tu computadora con la dirección principal de Bitcoin (BTC) de Ledger.
+2. Ve al [sitio web de Core BTC Staking] (https://stake.coredao.org/staking)
+3. En el sitio de Staking, coloca el cursor sobre tu wallet conectada en la esquina superior derecha y haz clic en “**My Staking**”.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-1.png)
 </p>
 
-### Step #3: Navigate to BTC Staking Records
+### Paso #3: Navegar a BTC Staking Records
 
-1. On the "**My Staking Dashboard**" page, select "BTC" records from the displayed tabs.
+1. En la página “**My Staking Dashboard**”, selecciona la pestaña “BTC” de los registros mostrados.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-2.png)
 </p>
 
-2. This tab lists all the BTC staking records and the validators that you have previously delegated your BTC to. Look for any "**Expired**" records under "**Redeem Time**", and proceed to click "**Redelegate**" under "**Action**".
+2. Esta pestaña lista todos los registros de staking de BTC y los validadores a los que previamente delegaste tu BTC. Busca cualquier registro marcado como “**Expired**” debajo de “**Redeem Time**”, y haz clic en “**Redelegate**” debajo de “**Action**”.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-3.png)
 </p>
 
-### Step #4: Connect Ledger Device for Redelegation
+### Paso #4: Conectar el dispositivo Ledger para Redelegación
 
-#### Option #1: Connecting the Ledger Device Directly to the Staking Website
+#### Opción #1: Conectar el dispositivo Ledger directamente al sitio web de Staking
 
-1. To connect your Ledger device directly to the Staking website, click on "**Ledger**" under the "**Hardware Wallets**" section from the displayed wallet model. Ensure your Ledger device is connected, unlocked, and the Ledger Core app is open on your device.
+1. Para conectar tu dispositivo Ledger directamente al sitio web de Staking, haz clic en “**Ledger**” dentro de la sección “**Hardware Wallets**” del modal de wallets mostrado. Asegúrate de que tu dispositivo Ledger esté conectado, desbloqueado, y que la Ledger Core app esté abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-1.png)
 </p>
 
-#### Option #2: Connecting Ledger Device Using Xverse Wallet
+#### Opción #2: Conectar el dispositivo Ledger usando Xverse Wallet
 
-Alternatively, you can use Xverse Wallet to redelegate BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+Como alternativa, puedes usar Xverse Wallet para redelegar BTC directamente desde tu dispositivo Ledger. Para ello, primero debes agregar tu dispositivo Ledger a tu wallet Xverse como requisito previo. Consulta la [guía oficial de Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) para conectar tu Ledger con Xverse.
 
-1. To connect your Ledger device using the Xverse wallet, click on "**Xverse**" under the "**Wallets Supporting Ledger**" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core app is open on your device.
+1. Para conectar tu dispositivo Ledger usando la wallet Xverse, haz clic en “**Xverse**” dentro de la sección “**Wallets Supporting Ledger**” del modal mostrado. Asegúrate de que tu dispositivo Ledger esté conectado, desbloqueado, y que la Ledger Core app esté abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-2.png)
 </p>
 
-### Step #5: Specify BTC Redelegation Details
+### Paso #5: Especificar los detalles de la redelegación de BTC
 
-1. On the displayed "**Redelegate BTC**" modal, cross-check the BTC amount to redelegate, the Bitcoin Staking Address, and the Reward Address on Core. To redelegate expired timelocked BTC, users must connect to the same Bitcoin address as the one initiating the BTC staking transaction.
-2. Set the BTC timelock period. Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or redelegation. Note that the lock time on the Staking Website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
-3. Specify the network priority speed for your transaction.
-4. Proceed by clicking "**Confirm Delegation**".
+1. En el modal mostrado de "**Redelegate BTC**", verifica la cantidad de BTC a redelegar, la Bitcoin Staking Address y la Reward Address en Core. Para redelegar BTC con timelock expirado, los usuarios deben conectarse a la misma dirección de Bitcoin que se utilizó al iniciar la transacción de BTC staking.
+2. Configura el periodo de BTC timelock. Establecer el tiempo de bloqueo determina cuándo tu Bitcoin estará desbloqueado y disponible nuevamente para redención o redelegación. Ten en cuenta que el tiempo de bloqueo en la interfaz de usuario de la Staking Website se basa en la zona horaria local del usuario, la cual puede no coincidir con la zona horaria UTC del dispositivo Ledger.
+3. Especifica la velocidad de prioridad de red para tu transacción.
+4. Continúa haciendo clic en "**Confirm Delegation**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-4.png)
 </p>
 
-5. **Verify BTC Staking Address (Optional):** Use the BTC Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+5. **Verificar BTC Staking Address (Opcional):** Utiliza la herramienta de verificación de BTC Staking Address para confirmar que la dirección de BTC staking mostrada coincida con tu dirección esperada antes de continuar.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-5.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "**Approve Transaction**" on the website to proceed with the transaction.
+6. **Procede a Approve Transaction:** Haz clic en "**Approve Transaction**" en el sitio web para continuar con la transacción.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-6.png)
 </p>
 
-### Step #6: Review & Approve BTC Redelegation Transaction
+### Paso #6: Revisar y Aprobar la Transacción de Redelegación de BTC
 
-The user will be prompted to review and approve the transaction from their Ledger device.
+Se le pedirá al usuario que revise y apruebe la transacción desde su dispositivo Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-7.png)
 </p>
 
-#### Using Xverse Wallet to Approve Transaction
+#### Usando Xverse Wallet para Aprobar la Transacción
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "Confirm" on the wallet notification on your browser.
+1. Si utilizas una wallet Xverse, revisa la transacción. Verifica los detalles y haz clic en "Confirm" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/Xverse-wallet-ui.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/xverse-wallet-ui-2.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar Transacción de BTC Staking en el Dispositivo Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
-2. Always use the Ledger Core app, not the Ledger Bitcoin app, for redelegation of expired timelocked BTC on the Core blockchain. The Bitcoin app lacks support for redemption and redelegation operations. Further, the Ledger Core app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer here.
+1. Firma la transacción con tu wallet de Ledger después de revisar los detalles de la transacción.
+2. Siempre utiliza la Ledger Core app, no la Ledger Bitcoin app, para la redelegación de BTC con timelock expirado en la blockchain de Core. La aplicación de Bitcoin no soporta operaciones de redención ni redelegación. Además, la Ledger Core app soporta Clear Signing, que muestra todos los detalles de la transacción (como monto, direcciones y comisiones) directamente en la pantalla de tu dispositivo Ledger. Esto garantiza transparencia total y permite verificar y aprobar la transacción, protegiendo tus activos de acciones no deseadas o maliciosas. Para más detalles sobre Clear Signing, consulta aquí.
 
 <p align="center">
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/btc-staking-ledger.gif)
 </p>
 
-3. Once the transaction is approved on your Ledger device, the staking website will display a "**Transaction Submitted**" notification, confirming that your BTC redelegation request has been successfully initiated.
+3. Una vez que la transacción sea aprobada en tu dispositivo Ledger, el sitio web de staking mostrará una notificación "**Transaction Submitted**", confirmando que tu solicitud de redelegación de BTC se ha iniciado exitosamente.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-8.png)
 </p>
 
-4. After transaction approval, users can also view the transaction details on the BTC Explorer.
+4. Después de la aprobación de la transacción, los usuarios también pueden ver los detalles de la transacción en el BTC Explorer.
 
 ## Conclusion
 
