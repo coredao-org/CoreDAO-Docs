@@ -5,19 +5,19 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redelegate Staked BTC on Core
+# Usando Ledger Hardware Wallets para Redelegar BTC en Staking en Core
 
-This user guide will walk you through the step-by-step process of redelegating staked expired timelocked Bitcoin (BTC) to a new Core validator on Core Testnet using a Ledger hardware wallet, reinitiating a new BTC staking transaction.
+Esta guía te llevará paso a paso por el proceso de redelegar Bitcoins (BTC) en staking con timelock expirado hacia un nuevo validador de Core en la testnet de Core, utilizando una hardware wallet Ledger, reiniciando así una nueva transacción de staking de BTC.
 
 :::note
-Before you begin, ensure your Ledger device is updated and the Ledger Core Testnet app is installed. You must use the same primary BTC wallet address originally used for BTC staking. To learn how to stake BTC using Ledger on Core Testnet, refer to the detailed guide [here](./btc-staking.md).
+Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y que la Ledger Core Testnet app esté instalada. Debes usar la misma dirección principal de BTC wallet que utilizaste originalmente para el staking de BTC. Para aprender cómo hacer staking de BTC usando Ledger en Core Testnet, consulta la guía detallada [aquí](./btc-staking.md).
 :::
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y sin problemas, ten en cuenta los siguientes requisitos clave:
 
-1. **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core Testnet are supported only on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
+1. **Usa únicamente dispositivos Ledger compatibles:** El staking, redención y redelegación de BTC en Core Testnet solo son compatibles con hardware wallets Ledger soportados que tengan el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
 
 2. **Always Use the Ledger’s Core Testnet App:** You must use the Ledger Core Testnet app (not the Ledger Bitcoin app) for staking, redeeming, or redelegating BTC on Core Testnet. The Bitcoin app does not support redemption or redelegation operations of staked BTC and may prevent successful redemption or redelegation.
 
