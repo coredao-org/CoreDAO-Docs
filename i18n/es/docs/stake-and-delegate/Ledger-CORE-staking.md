@@ -33,134 +33,135 @@ Los siguientes dispositivos Ledger actualmente soportan staking de CORE directam
 <br/>
 
 :::note
-The firmware versions listed above reflect the latest available at the time of writing and are subject to change. Before staking CORE using your Ledger device, update to the latest version to ensure compatibility and security. Always check Ledger Live for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Las versiones de firmware listadas arriba reflejan las más recientes disponibles al momento de escribir este documento y están sujetas a cambios. Antes de hacer staking de CORE usando tu dispositivo Ledger, actualízalo a la última versión para garantizar compatibilidad y seguridad. Revisa siempre Ledger Live para obtener las actualizaciones más recientes. Consulta [aquí](https://support.ledger.com/article/8458939792669-zd) para más detalles sobre cómo actualizar el firmware de tu dispositivo Ledger.
 :::
 
-## Prerequisites
+## Prerrequisitos
 
-Before you begin, make sure you have:
+Antes de comenzar, asegúrate de tener lo siguiente:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and set up on your computer.
-- Your Ledger device is added to your EVM Wallet that you desire to use (e.g., MetaMask)
-- Sufficient CORE tokens (minimum 1 CORE) available on your Ledger device for staking, including tokens to cover transaction fees.
+- Un dispositivo Ledger con el firmware más reciente.
+- Ledger Live instalado y configurado en tu computadora.
+- Tu dispositivo Ledger agregado a tu EVM Wallet que desees usar (por ejemplo, MetaMask)
+- Tokens CORE suficientes (mínimo 1 CORE) disponibles en tu dispositivo Ledger para staking, incluyendo tokens adicionales para cubrir las tarifas de transacción.
 
-## Setting up Ledger Device
+## Configuración del Dispositivo Ledger
 
-Before staking CORE, make sure your Ledger hardware wallet is fully updated and ready to use with the Core blockchain.
+Antes de hacer staking de CORE, asegúrate de que tu Ledger hardware wallet esté completamente actualizada y lista para usarse con la blockchain de Core.
 
-### Step 1: Update Your Ledger Device
+### Paso 1: Actualizar tu Dispositivo Ledger
 
-Ensure your Ledger device is updated and ready for use.
+Asegúrate de que tu dispositivo Ledger esté actualizado y listo para usarse.
 
-1. Open **Ledger Live** on your computer.
-2. Connect and unlock your Ledger device.
-3. Navigate to **My Ledger** in the sidebar.
-4. If prompted, allow **Ledger Manager** access on your device.
-5. Install any available firmware updates for your device, skip if your device has the latest supported firmware.
+1. Abre **Ledger Live** en tu computadora.
+2. Conecta y desbloquea tu dispositivo Ledger.
+3. Navega a **My Ledger** en la barra lateral.
+4. Si se solicita, permite el acceso de **Ledger Manager** en tu dispositivo.
+5. Instala cualquier actualización de firmware disponible para tu dispositivo, si ya tienes la última versión soportada, puedes omitir este paso.
 
-### Step 2: Installing the Ledger Ethereum app
+### Paso 2: Instalar la aplicación Ethereum en Ledger
 
-Follow the steps below to install the Ledger Ethereum app on your device.
+Sigue los pasos a continuación para instalar la aplicación Ethereum en tu dispositivo.
 
-1. With your device connected to your computer, open the Ledger Live application and navigate to "**My Ledger**".
+1. Con tu dispositivo conectado a la computadora, abre la aplicación Ledger Live y navega a "**My Ledger**".
 
-2. Under the "**App Catalog**", search for "**Ethereum**".
+2. En el "**App Catalog**", busca "**Ethereum**".
 
-3. Install the "**Ethereum**" app. Use _only_ the Ledger Ethereum app for staking CORE using Ledger on Core Mainnet. For more details, refer to the [official guide](https://support.ledger.com/article/360009576554-zd) from Ledger for installing the Ethereum app on your device.
+3. Instala la aplicación "**Ethereum**". Usa _únicamente_ la aplicación Ethereum de Ledger para hacer staking de CORE en Core Mainnet. Para más detalles, consulta la [guía oficial](https://support.ledger.com/article/360009576554-zd) de Ledger sobre cómo instalar la aplicación Ethereum en tu dispositivo.
 
 <p align="center">
 ![install-ethereum-app](../../static/img/ledger-core/CORE-Staking/UI-1.png)
 </p> 
 
-### Step 3: Enable Blind Signing on Ledger Ethereum App
+### Paso 3: Habilitar Blind Signing en la aplicación Ethereum de Ledger
 
-Note that before staking CORE, users have to enable blind signing in the settings of the Ethereum App on the Ledger Device. Refer to the [official guide](https://support.ledger.com/article/4405481324433-zd) from Ledger for more details.
+Antes de hacer staking de CORE, los usuarios deben habilitar blind signing en la configuración de la aplicación Ethereum en su dispositivo Ledger. Consulta la [guía oficial](https://support.ledger.com/article/4405481324433-zd) de Ledger
+para más detalles.
 
 <p align="center">
 ![enable-blind-signing](../../static/img/ledger-core/CORE-Staking/UI-2.png)
 </p>
 
-### Step:4: Add Ledger Device to Your EVM Wallet
+### Paso 4: Agregar el dispositivo Ledger a tu EVM Wallet
 
-Before proceeding with staking CORE using Ledger, it is important to add your Ledger device to the EVM wallet (e.g., MetaMask, etc.) you will be using to connect your Ledger for staking CORE.
+Antes de continuar con el staking de CORE usando Ledger, es importante agregar tu dispositivo Ledger a la EVM Wallet (por ejemplo, MetaMask, etc.) que vayas a usar para conectar tu Ledger y realizar el staking de CORE.
 
-For this guide, MetaMask wallet configured with Core Mainnet was used. Refer to the [official guide](https://support.ledger.com/article/4404366864657-zd) from Ledger for details on how to add your Ledger device to the MetaMask wallet.
+En esta guía, se utilizó la billetera MetaMask configurada con Core Mainnet. Consulta la [guía oficial](https://support.ledger.com/article/4404366864657-zd) de Ledger para obtener más detalles sobre cómo agregar tu dispositivo Ledger a la billetera MetaMask.
 
-## Staking CORE Using Ledger Device
+## Staking de CORE usando el dispositivo Ledger
 
-With your Ledger device connected to your computer and the Ledger Ethereum app installed, you can securely stake CORE directly from your hardware wallet.
+Con tu dispositivo Ledger conectado a tu computadora y la aplicación Ethereum instalada en Ledger, puedes hacer staking de CORE de manera segura directamente desde tu hardware wallet.
 
 :::info
-A minimum of **1 CORE** is required to participate in staking CORE tokens on Core Mainnet, along with sufficient CORE tokens to cover transaction fees.
+Se requiere un mínimo de **1 CORE** para participar en el staking de tokens CORE en Core Mainnet, además de contar con tokens suficientes para cubrir las comisiones de transacción.
 :::
 
-1. On your Ledger device, open the Ledger Ethereum app before proceeding.
+1. En tu dispositivo Ledger, abre la aplicación Ethereum antes de continuar.
 
 <p align="center">
 ![application-ready](../../static/img/ledger-core/CORE-Staking/UI-3.png)
 </p>
 
-2. Navigate to the [Core Staking Websit](https://stake.coredao.org/staking).
+2. Navegar al [sitio web de Core Staking](https://stake.coredao.org/staking).
 
-### Connect Core Wallet to the Staking Website
+### Conectar Core Wallet al sitio web de Staking
 
-1. Connect your Core Mainnet wallet to the website. Make sure it is the same wallet you connect your Ledger device with, as this will be used as the wallet for staking CORE.
+1. Conecta tu wallet de Core Mainnet al sitio web. Asegúrate de que sea la misma wallet que conectaste con tu dispositivo Ledger, ya que se usará como la wallet para hacer staking de CORE.
 
-2. Click on the "**Connect Wallet**" button in the top right corner of the website.
+2. Haz clic en el botón "**Connect Wallet**" en la esquina superior derecha del sitio web.
 
 <p align="center">
 ![connect-core-wallet](../../static/img/ledger-core/CORE-Staking/connect-core-wallet.png)
 </p>
 
-3. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet.
+3. En el modal de wallets mostrado, selecciona la wallet de tu preferencia configurada para usarse con Core Mainnet.
 
-### Specify and Confirm Staking Details
+### Especificar y Confirmar Detalles de Staking
 
-1. On the Core Staking [page](https://stake.coredao.org/staking), with your EVM wallet connected to the staking website, specify the amount of CORE to stake. Click "**Proceed to Stake**".
+1. En la [página](https://stake.coredao.org/staking), de Core Staking, con tu EVM wallet conectada al sitio de staking, especifica la cantidad de CORE a hacer stake. Haz clic en "**Proceed to Stake**".
 
 <p align="center" style={{zoom:"60%"}}>
 ![specify-core-amount](../../static/img/ledger-core/CORE-Staking/UI-4.png)
 </p> 
 
-2. Confirm the CORE amount to stake and the validator to delegate your stake to participate in the Core consensus mechanism and earn staking rewards. Click "**Confirm**" to proceed.
+2. Confirma la cantidad de CORE a hacer stake y el validador al que delegarás tu stake para participar en el mecanismo de consenso de Core y ganar recompensas de staking. Haz clic en "**Confirm**" para continuar.
 
 <p align="center" style={{zoom:"60%"}}>
 ![confirm-staking-details](../../static/img/ledger-core/CORE-Staking/UI-5.png)
 </p>   
 
-3. The user will see a modal directing them to approve the transaction on their connected EVM wallet.
+3. El usuario verá un modal indicándole que apruebe la transacción en su EVM wallet conectada.
 
 <p align="center" style={{zoom:"60%"}}>
 ![confirm-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-6.png)
 </p>  
 
-4. Approve the transaction on your connected EVM wallet notification.
+4. Aprueba la transacción en la notificación de tu EVM wallet conectada.
 
 <p align="center" style={{zoom:"70%"}}>
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-7.png)
 </p>
 
-### Approve Transaction on Ledger Device
+### Aprobar Transacción en el Dispositivo Ledger
 
-1. Approve the staking transaction on your Ledger device.
+1. Aprueba la transacción de staking en tu dispositivo Ledger.
 
 <p align="center">
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/CORE-Staking-Ledger.gif)
 </p>
 
-2. Once approved on your Ledger device, the "Transaction Submitted" notification will appear on the Core Staking website.
+2. Una vez aprobada en tu dispositivo Ledger, aparecerá la notificación "Transaction Submitted" en el sitio web de Core Staking.
 
 <p align="center" style={{zoom:"80%"}}>
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-8.png)
 </p>
 
-3. Click on "**View on Core Scan**" to view details of your CORE staking transaction on the Core Scan block explorer.
+3. Haz clic en "**View on Core Scan**" para ver los detalles de tu transacción de staking de CORE en el explorador de bloques Core Scan.
 
 :::note
-To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:29 UTC).
+Para ser elegible para recibir recompensas, debes completar un ciclo completo de staking en el intervalo (00:00:00 - 23:59:29 UTC).
 :::
 
-## Conclusion
+## Conclusión
 
-Congratulations! You’ve successfully staked CORE using your Ledger hardware wallet on the Core Mainnet. By following this guide, you securely connected your Ledger device, installed and used the Ledger Ethereum app, to stake CORE directly from your hardware wallet to earn staking rewards.
+¡Felicidades! Has realizado con éxito el staking de CORE usando tu Ledger hardware wallet en la Core Mainnet. Al seguir esta guía, conectaste de forma segura tu dispositivo Ledger, instalaste y usaste la aplicación Ledger Ethereum, para hacer staking de CORE directamente desde tu hardware wallet y así ganar recompensas de staking.
