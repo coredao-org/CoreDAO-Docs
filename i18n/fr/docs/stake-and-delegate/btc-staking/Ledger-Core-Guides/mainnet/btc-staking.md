@@ -144,7 +144,7 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 ### Spécifiez et confirmez les détails de mise en jeu de BTC
 
-1. **Spécifiez les détails de mise en jeu et de délégation de BTC :** Une fois que les portefeuilles Core et Bitcoin sont connectés, spécifiez le montant de BTC à miser. Select the desired Core validator to delegate your Bitcoin to. To proceed with BTC staking, specify the CORE Staking Amount as zero. Cliquez sur le bouton "**Proceed to Stake**" .
+1. **Spécifiez les détails de mise en jeu et de délégation de BTC :** Une fois que les portefeuilles Core et Bitcoin sont connectés, spécifiez le montant de BTC à miser. Sélectionnez le validateur Core souhaité pour déléguer vos Bitcoins. Pour procéder à la mise en jeu de BTC, spécifiez le montant de mise en jeu CORE comme étant zéro. Cliquez sur le bouton "**Proceed to Stake**" .
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-3.png)
