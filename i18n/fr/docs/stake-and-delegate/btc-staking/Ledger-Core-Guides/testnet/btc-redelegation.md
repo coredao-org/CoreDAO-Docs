@@ -139,41 +139,41 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-5.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
+6. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-6.png)
 </p>
 
-### Step #6: Review & Approve BTC Redelegation Transaction
+### Étape #6: Réviser et approuver la transaction de réattribution de BTC
 
-The user will be prompted to review and approve the transaction from their Ledger device.
+L'utilisateur sera invité à examiner et à approuver la transaction depuis son appareil Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-7.png)
 </p>
 
-#### Using Xverse Wallet to Approve Transaction
+#### Utilisation du portefeuille Xverse pour approuver la transaction
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si vous utilisez un portefeuille Xverse, examinez la transaction. Vérifiez les détails et cliquez sur "**Confirm**"sur la notification de portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-10.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-11.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Approuver la transaction de staking BTC sur l'appareil Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
+1. Signez la transaction avec votre portefeuille d'appareil Ledger après avoir examiné les détails de la transaction.
 
-2. Always use the Ledger Core Tesnet app, not the Ledger Bitcoin app, for redelegation of expired timelocked BTC on the Core Testnet. L'application Bitcoin ne prend pas en charge les opérations de rachat et de ré délégation. En outre, l'application Ledger Core Testnet prend en charge la signature claire, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Utilisez toujours l'application Ledger Core Testnet., et non l'application Ledger Bitcoin, pour la réattribution de BTC verrouillés expirés sur la Core Testnet. L'application Bitcoin ne prend pas en charge les opérations de rachat et de ré délégation. En outre, l'application Ledger Core Testnet prend en charge la signature claire, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 3. Une fois la transaction approuvée sur votre appareil Ledger, le site Web de staking affichera une notification "**Transaction soumise**" , confirmant que votre demande de redélégation de BTC a été lancée avec succès.
 
