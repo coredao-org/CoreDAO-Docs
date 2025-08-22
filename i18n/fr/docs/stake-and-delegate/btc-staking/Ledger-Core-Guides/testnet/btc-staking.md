@@ -253,67 +253,67 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-9.png)
 </p>
 
-2. **Skip tCORE2 Staking Details:** Users can skip this step and click directly on "Stake BTC" to proceed with staking only Bitcoin by verifying Bitcoin staking details.
+2. **Ignorer les détails du staking tCORE2:** Les utilisateurs peuvent ignorer cette étape et cliquer directement sur "Staker BTC" pour procéder au staking de Bitcoin uniquement en vérifiant les détails du staking Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-10.png)
 </p>
 
-3. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
-    - Confirm the amount of BTC you’d like to timelock. The minimum amount to stake is 0.01 BTC.
-    - Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or re-delegation.
-    - The lock time on the website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
-    - Specify the network priority speed for your transaction.
+3. **Confirmer les détails du staking BTC:** Confirmez le montant de BTC à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
+    - Confirmez le montant de BTC que vous souhaitez verrouiller dans le cadre d'un timelock. Le montant minimum à déléguer est de 0,01 BTC.
+    - La définition de la durée de verrouillage détermine quand vos Bitcoins seront déverrouillés et à nouveau disponibles pour le rachat ou la réattribution.
+    - Notez que la durée de verrouillage sur l'interface utilisateur du site Web de staking est basée sur le fuseau horaire local de l'utilisateur, qui peut ne pas correspondre au fuseau horaire UTC de l'appareil Ledger.
+    - Spécifiez la vitesse de priorité du réseau pour votre transaction.
 
 <p align="center" style={{zoom:"80%"}}>  
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-11.png)
 </p>
 
-4. **Verify Bitcoin Staking Address (Optional)**: Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+4. **Vérification de l'adresse de staking BTC (facultatif):** Utilisez l'outil de vérification d'adresse de staking BTC pour confirmer que l'adresse de staking BTC affichée correspond à l'adresse attendue avant de procéder.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-21.png)
 </p>
 
-5. **Proceed to Approve Transaction:** Click on "**Approve Transaction**" on the website to proceed with the transaction.
+5. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-12.png)
 </p>
 
-6. The approval will be directed to the connected wallet.
+6. L'approbation sera dirigée vers le portefeuille connecté.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-13.png)
 </p>
 
-### Review and Approve Transaction on Ledger Device
+### Examinez et approuvez la transaction sur l'appareil Ledger
 
-#### Using Xverse Wallet
+#### Utilisation du portefeuille Xverse
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si vous utilisez un portefeuille Xverse, examinez la transaction. .Vérifiez les détails et cliquez sur "**Confirm**"sur la notification de portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"60%"}}>
 ![approve-tx-xverse](../../../../../static/img/ledger-core/testnet/btc-staking/UI-14.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"60%"}}>
 ![approve-tx-xverse](../../../../../static/img/ledger-core/testnet/btc-staking/UI-15.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Approuver la transaction de staking BTC sur l'appareil Ledger
 
-1. Ensure your device is unlocked and the Core Testnet app is open. Review and approve the BTC staking transaction on your Ledger device. Verify the staking details, including the amount of BTC, the validator and delegator addresses, and the transaction fees. Approve by signing the transaction.
+1. Assurez-vous que votre appareil est déverrouillé et que l'application Core Testnet est ouverte. Examinez et approuvez la transaction de staking BTC sur votre appareil Ledger. Vérifiez les détails du staking, notamment le montant de BTC, les adresses du validateur et du délégant, ainsi que les frais de transaction. Approuvez en signant la transaction.
 
 <p align="center" style={{zoom:"60%"}}> 
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/UI-21.png)
 </p>
 
-2. Once approved on your Ledger device, the "**Transaction Submitted**" notification will appear on the Core BTC Staking website.
+2. Une fois approuvée sur votre appareil Ledger, la notification "**Transaction Submitted**" apparaîtra sur le site Web de staking Core BTC.
 
 <p align="center">
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/btc-staking.gif)
