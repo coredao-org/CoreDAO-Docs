@@ -1,11 +1,11 @@
 ---
-sidebar_label: Redeeming Staked BTC
-description: Guide to redeem timelock expired BTC from Ledger device
+sidebar_label: Réattribution de BTC jalonné
+description: Guide pour récupérer des BTC verrouillés expirés depuis un appareil Ledger
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redeem BTC Staked on Core
+# Utiliser les portefeuilles matériels Ledger pour récupérer des BTC mis en jeu sur Core
 
 This user guide will walk you through the step-by-step process of redeeming your staked Bitcoin (BTC) on the Core Testnet using a Ledger hardware wallet.
 
