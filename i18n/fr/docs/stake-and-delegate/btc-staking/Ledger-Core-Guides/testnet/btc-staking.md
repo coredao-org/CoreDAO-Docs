@@ -63,32 +63,32 @@ Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 
 L'application Core Testnet n'est pas installée par défaut sur le Ledger Live Manager. Pour installer et afficher l'application Core Testnet, vous devez activer le "**Developer Mode**" et activer et modifier "**My Ledger Provider**" sur votre appareil Ledger.
 
-##### Enable Developer Mode on your Ledger Device
+##### Activer le mode développeur sur votre appareil Ledger
 
-1. Connect your Ledger hardware device and unlock it.
+1. Connectez votre appareil matériel Ledger et déverrouillez-le.
 
-2. Open the Ledger Live application and navigate to "**Settings**" (located in the upper right corner).
+2. Ouvrez l'application Ledger Live et naviguez vers "**Settings**" (situé dans le coin supérieur droit).
 
-3. Navigate to the "**Experimental Features**" menu, enable "**Developer Mode**," and set "**My Ledger Provider**" to **4**. This will show the developer and testnet apps in the manager.
+3. Naviguez vers le menu "**Experimental Features**", activez le "**Developer Mode**" et "**My Ledger Provider**" sur **4**. Cela affichera les applications de développement et de testnet dans le gestionnaire.
 
 <p align="center" style={{zoom:"80%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app-1.png)
 </p>
 
-#### Installing Ledger Core Testnet app
+#### Installation de l'application Ledger Core Testnet
 
-1. With your device connected, open Ledger Live and navigate to "**My Ledger**".
+1. Avec votre appareil connecté à votre ordinateur, ouvrez l'application Ledger Live et accédez à "**My Ledger**".
 
-2. Under the "**App Catalog**", search for "**Core**".
+2. Sous le "**App Catalog**" recherchez "**Core**".
 
-3. Install the "**Core Testnet**" app. Use _only_ the Core Testnet app for staking Bitcoin on Core Testnet.
+3. Installez l'application "**Core Testnet**". Utilisez _uniquement_ l'application Core Testnet pour miser des Bitcoins sur le réseau de Core Testnet.
 
 <p align="center" style={{zoom:"80%"}}>    
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app.png)
 </p>
 
 :::note
-For staking BTC on Core Testnet with a Ledger device, users must use only the Core Testnet app. Unlike the Bitcoin app, which relies on blind signing, the Core app supports Clear Signing, allowing users to fully view and verify transaction details before signing and approving them. For more information about Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+Pour miser des BTC sur le réseau de test Core avec un appareil Ledger, les utilisateurs doivent utiliser uniquement l'application Core Testnet. Contrairement à l'application Bitcoin, qui repose sur la signature aveugle, l'application Core prend en charge la signature claire, permettant aux utilisateurs de visualiser et de vérifier pleinement les détails des transactions avant de les signer et de les approuver. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 :::#### Setup Bitcoin Testnet AccountTo set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC tokens for staking, follow the steps below:1) Install Bitcoin Testnet and the Bitcoin app on your Ledger device.
 2) With your device connected to the computer, in the Ledger Live app, navigate to the "**Accounts**" tab and click "**Add Account**".<p align="center" style={{zoom:"40%"}}>    
 ![Add-Account](../../../../../static/img/ledger-core/testnet/btc-staking/UI-1.png)
