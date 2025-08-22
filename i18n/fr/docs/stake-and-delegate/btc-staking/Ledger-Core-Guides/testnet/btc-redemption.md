@@ -114,17 +114,17 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 #### Option #1: Connecter l'appareil Ledger directement au site Web de mise en jeu
 
-1. Pour connecter votre appareil Ledger directement au site Web de mise en jeu du réseau de Core Testnet , cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" du modèle de portefeuille affiché. Ensure your Ledger device is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Pour connecter votre appareil Ledger directement au site Web de mise en jeu du réseau de Core Testnet , cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" du modèle de portefeuille affiché. Assurez-vous que votre appareil Ledger est connecté, déverrouillé et que l'application Ledger Core Testnet est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-ledger-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-2.png)
 </p>
 
-#### Option #2: Connecting Ledger Device Using Xverse Wallet
+#### Option #2: Connexion de l'appareil Ledger via le portefeuille Xverse
 
-Alternatively, you can use Xverse Wallet to redeem BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+Vous pouvez également utiliser le portefeuille Xverse pour racheter des BTC directement depuis votre appareil Ledger. Pour y parvenir, les utilisateurs doivent d'abord ajouter leur appareil Ledger à leur portefeuille Xverse comme prérequis. Référez-vous au [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) pour connecter votre appareil Ledger à Xverse.
 
-1. To connect your Ledger device using the Xverse wallet, click on "**Xverse**" under the "**Wallets Supporting Ledger**" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Pour connecter votre appareil Ledger en utilisant le portefeuille Xverse, cliquez sur "**Xverse**" sous la section "**Wallets Supporting Ledger**" parmi les modèles de portefeuille affichés. Assurez-vous que votre Ledger est connecté, déverrouillé et que l'application Ledger Core Testnet est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-3.png)
