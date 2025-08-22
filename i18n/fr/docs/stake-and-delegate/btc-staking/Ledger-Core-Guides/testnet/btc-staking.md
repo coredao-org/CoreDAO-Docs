@@ -121,7 +121,7 @@ To set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC token
 ![Add-Account](../../../../../static/img/ledger-core/testnet/btc-staking/UI-1.png)
 </p>
 
-3. Search testnet and select Bitcoin Testnet (BTC). Click on Continue
+3. Search testnet and select Bitcoin Testnet (BTC). Cliquez sur "Continue"
 
 <p align="center" style={{zoom:"50%"}}>
 ![Add-Account-2](../../../../../static/img/ledger-core/testnet/btc-staking/UI-2.png)
