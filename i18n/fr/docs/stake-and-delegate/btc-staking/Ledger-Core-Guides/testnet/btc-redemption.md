@@ -110,11 +110,11 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![sign-tx](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-13.png)
 </p>
 
-### Step#5: Connect Ledger Device for Redemption of Staked BTC
+### Étape #5: Connectez l'appareil Ledger pour la récupération des BTC mis en jeu
 
-#### Option #1: Connecting the Ledger Device Directly to the Staking Website
+#### Option #1: Connecter l'appareil Ledger directement au site Web de mise en jeu
 
-1. To connect your Ledger device directly to the Core Testnet Staking website, click on "**Ledger**" under the "**Hardware Wallets**" section from the displayed wallet model. Ensure your Ledger device is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Pour connecter votre appareil Ledger directement au site Web de mise en jeu du réseau de Core Testnet , cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" du modèle de portefeuille affiché. Ensure your Ledger device is connected, unlocked, and the Ledger Core Testnet app is open on your device.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-ledger-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-2.png)
