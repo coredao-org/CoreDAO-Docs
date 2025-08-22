@@ -1,66 +1,66 @@
 ---
-sidebar_label: Redelegating Timelock Expired BTC
-description: Guide to redelegate BTC from Ledger device on Core Testnet
+sidebar_label: La ré délégation de BTC avec expiration de verrouillage temporel
+description: Guide pour réaffecter des BTC depuis un appareil Ledger sur le réseau Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redelegate Staked BTC on Core
+# Utiliser les portefeuilles matériels Ledger pour réaffecter des BTC mis en jeu sur Core
 
-This user guide will walk you through the step-by-step process of redelegating staked expired timelocked Bitcoin (BTC) to a new Core validator on Core Testnet using a Ledger hardware wallet, reinitiating a new BTC staking transaction.
-
-:::note
-Before you begin, ensure your Ledger device is updated and the Ledger Core Testnet app is installed. You must use the same primary BTC wallet address originally used for BTC staking. To learn how to stake BTC using Ledger on Core Testnet, refer to the detailed guide [here](./btc-staking.md).
-:::
-
-## Before You Begin: Important Reminders
-
-To ensure a secure and seamless experience, please note the following key requirements:
-
-1. **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core Testnet are supported only on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
-
-2. **Always Use the Ledger’s Core Testnet App:** You must use the Ledger Core Testnet app (not the Ledger Bitcoin app) for staking, redeeming, or redelegating BTC on Core Testnet. The Bitcoin app does not support redemption or redelegation operations of staked BTC and may prevent successful redemption or redelegation.
-
-3. **Redelegate BTC Only from the Primary BTC Wallet Address:** Currently, BTC staking, redemption, and redelegation on Core Testnet through Ledger are supported only from the primary BTC address of the Ledger device. Secondary or derived addresses are not compatible.
-
-## Supported Ledger Hardware Wallets
-
-The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC to earn rewards on the Core Testnet. For the best experience and compatibility, ensure your device is running the latest available firmware.
-
-| Ledger Device      | Firmware Version (_at the time of writing_) |
-| ------------------ | -------------------------------------------------------------- |
-| **Ledger Nano S+** | 1.4.0                          |
-| **Ledger Nano X**  | 2.5.0                          |
-| **Ledger Stax**    | 1.8.0                          |
-| **Ledger Flex**    | 1.4.0                          |
+Ce guide utilisateur vous guidera à travers le processus étape par étape de réaffectation de Bitcoin (BTC) verrouillé dans le temps et expiré, mis en jeu, à un nouveau validateur Core Testnet en utilisant un portefeuille matériel Ledger, en réinitialisant une nouvelle transaction de mise en jeu de BTC.
 
 :::note
-The firmware versions listed above reflect the latest available version at the time of writing and are subject to change. Before staking, redeeming, or redelegating BTC on Core Testnet using your Ledger device, update to the latest version to ensure compatibility and security. Always check **Ledger Live** for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Avant de commencer, assurez-vous que votre appareil Ledger est mis à jour et que l'application Ledger CoreTestnet est installée. Vous devez utiliser la même adresse de portefeuille BTC principale qui a été utilisée à l'origine pour la mise en jeu de BTC. Pour apprendre comment mettre en jeu des BTC en utilisant Ledger, référez-vous au guide détaillé [here](./btc-staking.md).
 :::
 
-## Prerequisites
+## Avant de commencer : Rappels importants
 
-Before you begin, make sure you have:
+Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and correctly set up on your computer.
-- You have previously staked BTC on the Core Testnet using your Ledger device.
-- If you're using Xverse Wallet, your Ledger device is already connected and added to it.
-- The timelock period for your locked BTC has expired, making it eligible for redelegation.
+1. **Utilisez uniquement des appareils Ledger pris en charge:** La mise en jeu, le rachat et la ré délégation de BTC sur le réseau de Core Testnet sont pris en charge uniquement sur des appareils matériels Ledger spécifiques avec le dernier firmware. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
 
-> ⚠️ **Note:** You will not be able to redeem or redelegate staked BTC until the designated timelock has expired.
+2. **Utilisez toujours l'application Ledger Core Testnet:** Vous devez utiliser l'application Ledger Core Testnet (et non l'application Ledger Bitcoin) pour la mise en jeu, le rachat ou la ré délégation de BTC sur le réseau de test Core. L'application Bitcoin ne prend pas en charge les opérations de rachat ou de ré délégation des BTC mis en jeu et peut empêcher le rachat ou la ré délégation réussie.
 
-## Steps to Redelegate Timelock Expired BTC
+3. **Ré déléguez des BTC uniquement à partir de l'adresse du portefeuille BTC principal:** Actuellement, la mise en jeu, le rachat et la ré délégation de BTC sur le réseau de test Core via Ledger sont pris en charge uniquement à partir de l'adresse BTC principale de l'appareil Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles.
 
-After the timelock period for staked BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet address used for staking BTC to redelegate your BTC after the timelock expiry.
+## Portefeuilles matériels Ledger pris en charge
 
-### Step #1: Connect Core Wallet to the Staking Website
+Les appareils matériels Ledger suivants prennent actuellement en charge la mise en jeu, le rachat et la réaffectation de BTC sur la Core Testnet. Pour une expérience et une compatibilité optimales, assurez-vous que votre appareil fonctionne avec le dernier micrologiciel disponible.
 
-1. Navigate to the [Core Testnet Staking Website](https://stake.test2.btcs.network/staking).
+| Appareil Ledger    | Version du firmware (_au moment de la rédaction_) |
+| ------------------ | -------------------------------------------------------------------- |
+| **Ledger Nano S+** | 1.4.0                                |
+| **Ledger Nano X**  | 2.5.0                                |
+| **Ledger Stax**    | 1.8.0                                |
+| **Ledger Flex**    | 1.4.0                                |
 
-2. Connect your Core Testnet wallet to the Core Testnet Staking website. Remember to use the same wallet that you had used at the time of staking BTC.
+:::note
+Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Avant de mettre en jeu, de racheter ou de réaffecter des BTC sur Core en utilisant votre appareil Ledger, mettez-le à jour vers la dernière version pour garantir la compatibilité et la sécurité. Vérifiez toujours **Ledger Live** pour les mises à jour les plus récentes. Refer [here](https://support.ledger.com/article/8458939792669-zd) Pour plus de détails sur la mise à jour du micrologiciel de l'appareil Ledger.
+:::
 
-3. Click on the "Connect" button in the top right corner of the website.
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir:
+
+- Un appareil Ledger pris en charge avec le dernier micrologiciel.
+- Ledger Live est installé et correctement configuré sur votre ordinateur.
+- Vous avez déjà mis en jeu des BTC sur le réseau de test Core en utilisant votre appareil Ledger.
+- Si vous utilisez le portefeuille Xverse, votre appareil Ledger est déjà connecté et ajouté à celui-ci.
+- La période de verrouillage pour vos BTC verrouillés a expiré, les rendant éligibles à la ré délégation.
+
+> ⚠️ **Remarque:** Vous ne pourrez pas rembourser ou redéléguer les BTC mis en jeu jusqu'à ce que le verrouillage temporaire désigné ait expiré.
+
+## Étapes pour redéléguer les BTC avec verrouillage temporaire expiré
+
+Après l'expiration de la période de verrouillage temporaire pour les BTC mis en jeu, les utilisateurs sont éligibles pour rembourser ou redéléguer leurs actifs Bitcoin délégués. Vous devez utiliser la même adresse de portefeuille Ledger utilisée pour mettre en jeu des BTC pour redéléguer vos BTC après l'expiration du verrouillage temporaire.
+
+### Étape #1: Connecter le portefeuille Core au site Web de staking
+
+1. Accédez au site [Core Testnet Staking Website](https://stake.test2.btcs.network/staking).
+
+2. Connectez votre portefeuille Core Testnet au site Web de staking. N'oubliez pas d'utiliser le même portefeuille que celui que vous aviez utilisé au moment de la mise en jeu des BTC.
+
+3. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
@@ -172,15 +172,15 @@ The user will be prompted to review and approve the transaction from their Ledge
 
 1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
 
-2. Always use the Ledger Core Tesnet app, not the Ledger Bitcoin app, for redelegation of expired timelocked BTC on the Core Testnet. The Bitcoin app lacks support for redemption and redelegation operations. Further, the Ledger Core Testnet app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Always use the Ledger Core Tesnet app, not the Ledger Bitcoin app, for redelegation of expired timelocked BTC on the Core Testnet. L'application Bitcoin ne prend pas en charge les opérations de rachat et de ré délégation. En outre, l'application Ledger Core Testnet prend en charge la signature claire, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
-3. Once the transaction is approved on your Ledger device, the staking website will display a "Transaction Submitted" notification, confirming that your BTC redelegation request has been successfully initiated.
+3. Une fois la transaction approuvée sur votre appareil Ledger, le site Web de staking affichera une notification "**Transaction soumise**" , confirmant que votre demande de redélégation de BTC a été lancée avec succès.
 
 <p align="center">
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/btc-redelegation.gif)
 </p>
 
-3. After transaction approval, users can also view the transaction details on the BTC Explorer.
+3. Après approbation de la transaction, les utilisateurs peuvent également consulter les détails de la transaction sur le BTC Explorer.
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-12.png)
