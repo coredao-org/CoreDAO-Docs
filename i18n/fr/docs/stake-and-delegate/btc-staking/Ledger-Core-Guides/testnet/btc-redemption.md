@@ -66,45 +66,45 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![conenct-core-wallet](../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
 </p>
 
-4. From the displayed wallet modal, select the wallet of your choice configured for use with Core Testnet.
+4. Dans la fenêtre modale du portefeuille affichée, sélectionnez le portefeuille de votre choix configuré pour une utilisation avec Core Testnet.
 
-### Step #2: Navigate to Testnet Staking Dashboard
+### Étape #2: Accédez au tableau de bord de staking Testnet
 
-1. Ensure your Ledger device is installed with the latest or supporting firmware and connected to your computer with Ledger’s primary Bitcoin (BTC) address.
+1. Assurez-vous que votre appareil Ledger est mis à jour avec le dernier firmware et connecté à votre ordinateur avec l'adresse Bitcoin (BTC) principale de Ledger.
 
-2. On the Core Testnet Staking website, hover over your connected wallet in the top right corner and click "**My Staking**".
+2. Sur le site Web de mise en jeu du réseau de test Core, survolez votre portefeuille connecté dans le coin supérieur droit et cliquez sur "**My Staking**".
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-1.png)
 </p>
 
-### Step #3: Navigate to Testnet BTC Staking Records
+### Étape #3: Accédez aux enregistrements de staking BTC
 
-1. On the "**My Staking Dashboard**" page, select "**BTC**" records from the displayed tabs.
+1. Sur la page "**My Staking Dashboard**", sélectionnez les enregistrements "**BTC**" parmi les onglets affichés.
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking-records](../../../../../static/img/ledger-core/testnet/btc-redeem/my-staking-3.png)
 </p>
 
-2. This tab lists all the BTC staking records and the validators that you have previously delegated BTC to. Look for any ‘**Expired**’ records under ‘**Redeem Time**,’ and proceed to click ‘**Redeem**’ under ‘**Action**.’
+2. Cet onglet répertorie tous les enregistrements de staking BTC et les validateurs auxquels vous avez précédemment délégué vos BTC. Recherchez les enregistrements "**Expired**" sous "**Redeem Time**", puis cliquez sur ‘**Redeem**’ sous "**Action**.’
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking-records](../../../../../static/img/ledger-core/testnet/btc-redeem/my-staking-1.png)
 </p>
 
-### Step #4: Verify BTC Staking and Redemption Details
+### Étape #4: Vérifier les détails de la mise en jeu et de la récupération de BTC
 
-1. On the displayed "**Redeem BTC**" modal, cross-check the **BTC staking address**, the **BTC Amount** that will be redeemed, and the **Receiving Bitcoin address**. To redeem the BTC, you **_must_** connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction.
+1. Sur la fenêtre modale "**Redeem BTC**" affichée, vérifiez attentivement **l'adresse de staking BTC**, le **montant de BTC** qui sera racheté et **l'adresse Bitcoin de réception**. Pour récupérer les Bitcoins, vous **_devez_** vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking Bitcoin.
 
-2. Set your **Receiving Bitcoin Address** to receive the unlocked BTC. This does not need to be the same as the address that initiated the Bitcoin staking transaction. Set your transaction speed priority, and click "**Create Transaction**".
+2. Définissez votre **adresse de réception Bitcoin** pour recevoir les BTC déverrouillés. Elle ne doit pas nécessairement être la même que celle ayant initié la transaction de staking Bitcoin. Définissez la priorité de vitesse de votre transaction, puis cliquez sur "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![verify-tx-details](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-12.png)
 </p>
 
-### Step #5: Sign the BTC Unlock Transaction on Ledger Device
+### Étape #5: Signez la transaction de déblocage de BTC sur l'appareil Ledger
 
-1. Click "**Sign By Bitcoin Wallet**" to sign the BTC redemption transaction from your Ledger device.
+1. Cliquez sur "**Sign By Bitcoin Wallet**" pour signer la transaction de récupération de BTC depuis votre appareil Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![sign-tx](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-13.png)
@@ -176,8 +176,8 @@ Alternatively, you can use Xverse Wallet to redeem BTC directly from your Ledger
 ![tx-submitted](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-14.png)
 </p>
 
-5. Après confirmation du bloc Bitcoin de la transaction de récupération, vérifiez que les BTC récupérés sont retournés à votre adresse Bitcoin de réception. (Cela peut prendre quelques minutes). You can also view the transaction details on the BTC Explorer.
+5. Après confirmation du bloc Bitcoin de la transaction de récupération, vérifiez que les BTC récupérés sont retournés à votre adresse Bitcoin de réception. (Cela peut prendre quelques minutes). Vous pouvez également consulter les détails de la transaction sur l'explorateur de blockchain BTC (BTC Explorer).
 
 ## Conclusion
 
-By following this guide, you’ve successfully redeemed staked BTC on the Core Testnet using your Ledger hardware wallet. The combination of Core’s Self-Custodial BTC Staking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core Testnet app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core’s decentralized infrastructure. You now have complete ownership of your reclaimed BTC.
+En suivant ce guide, vous avez réussi à récupérer des BTC mis en jeu sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de staking BTC auto-custodial de Core et de la sécurité de pointe de Ledger, renforcée par la signature claire via l'application Ledger Core Testnet, offre une transparence, une confiance et une sécurité maximales. Votre récupération réussie marque une interaction sécurisée et transparente avec l'infrastructure décentralisée de Core. Vous avez désormais la pleine propriété de vos BTC récupérés.
