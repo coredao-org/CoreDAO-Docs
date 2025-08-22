@@ -1,6 +1,6 @@
 ---
-sidebar_label: Redelegating Timelock Expired BTC
-description: Guide to redelegate BTC from Ledger device on Core Testnet
+sidebar_label: Redelegando BTC con Timelock Expirado
+description: Guía para redelegar BTC desde un dispositivo Ledger en Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -104,88 +104,88 @@ Después de que el período de timelock de los BTC en staking haya expirado, los
 
 #### Opción #2: Conectar el dispositivo Ledger usando Xverse Wallet
 
-Alternatively, you can use Xverse Wallet to redelegate BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+Como alternativa, puedes usar Xverse Wallet para redelegar BTC directamente desde tu dispositivo Ledger. Para lograr esto, primero se debe agregar el dispositivo Ledger a la wallet de Xverse como requisito previo. Consulta la [guía oficial de Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) para conectar tu Ledger con Xverse.
 
-1. To connect your Ledger device using the Xverse wallet, click on "Xverse" under the "Wallets Supporting Ledger" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Para conectar tu dispositivo Ledger usando la wallet de Xverse, haz clic en "Xverse" en la sección "Wallets Supporting Ledger" del modal de wallet mostrado. Asegúrate de que tu Ledger esté conectado, desbloqueado, y que la Ledger Core Testnet app esté abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-3.png)
 </p>
 
-2. Unlock your Ledger device and confirm the connection via the Xverse wallet extension.
+2. Desbloquea tu dispositivo Ledger y confirma la conexión mediante la extensión de wallet de Xverse.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-8.png)
 </p>
 
-### Step #5: Specify BTC Redelegation Details
+### Paso #5: Especificar los detalles de la redelegación de BTC
 
-1. On the displayed "**Restake BTC**" modal, cross-check the **BTC amount to redelegate**, the **Bitcoin Staking Address**, and the **Reward Address on Core Testnet**. To redelegate expired timelocked BTC, users **_must_** connect to the same Bitcoin address as the one initiating the BTC staking transaction.
+1. En el modal mostrado de "**Restake BTC**", verifica la **cantidad de BTC a redelegar**, la **Bitcoin Staking Address** y la **Reward Address en Core Testnet**. Para redelegar BTC con timelock expirado, los usuarios **_deben_** conectarse a la misma dirección de Bitcoin que se utilizó al iniciar la transacción de BTC staking.
 
-2. **Set the BTC timelock period:** Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or redelegation. Note that the lock time on the Staking Website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
+2. **Configura el BTC timelock period:** Establecer el lock time determina cuándo tu Bitcoin se desbloqueará y volverá a estar disponible para redemption o redelegation. Ten en cuenta que el tiempo de bloqueo en la interfaz de usuario de la Staking Website se basa en la zona horaria local del usuario, la cual puede no coincidir con la zona horaria UTC del dispositivo Ledger.
 
-3. **Setting Transaction Network Priority Speed:** Select the network priority speed for your transaction.
+3. **Establecer la Velocidad de Prioridad de la Red de la Transacción:** Seleccione la velocidad de prioridad de red para su transacción.
 
-4. **Confirm Delegation:** Proceed by clicking "**Confirm Delegation**".
+4. **Confirmar Delegación:** Proceda haciendo clic en "**Confirm Delegation**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-4.png)
 </p>
 
-5. **Verify BTC Staking Address (Optional):** Use the BTC Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+5. **Verificar BTC Staking Address (Opcional):** Utiliza la herramienta de verificación de BTC Staking Address para confirmar que la dirección de BTC staking mostrada coincida con tu dirección esperada antes de continuar.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-5.png)
 </p>
 
-6. **Proceed to Approve Transaction:** Click on "Approve Transaction" on the website to proceed with the transaction.
+6. **Procede a Approve Transaction:** Haz clic en "Approve Transaction" en el sitio web para continuar con la transacción.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-6.png)
 </p>
 
-### Step #6: Review & Approve BTC Redelegation Transaction
+### Paso #6: Revisar y Aprobar la Transacción de Redelegación de BTC
 
-The user will be prompted to review and approve the transaction from their Ledger device.
+Se le pedirá al usuario que revise y apruebe la transacción desde su dispositivo Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-7.png)
 </p>
 
-#### Using Xverse Wallet to Approve Transaction
+#### Usando Xverse Wallet para Aprobar la Transacción
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si estás usando Xverse Wallet, revisa la transacción. Verifica los detalles y haz clic en "**Confirm**" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-10.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-11.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar la transacción de BTC Staking en el dispositivo Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
+1. Firma la transacción con tu wallet de Ledger después de revisar los detalles de la transacción.
 
-2. Always use the Ledger Core Tesnet app, not the Ledger Bitcoin app, for redelegation of expired timelocked BTC on the Core Testnet. The Bitcoin app lacks support for redemption and redelegation operations. Further, the Ledger Core Testnet app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Siempre utiliza la Ledger Tesnet Core app, no la Ledger Bitcoin app, para la redelegación de BTC con timelock expirado en la Core Tesnet. La aplicación de Bitcoin no soporta operaciones de redención ni redelegación. Además, la Ledger Core Tesnet app soporta Clear Signing, que muestra todos los detalles de la transacción (como monto, direcciones y comisiones) directamente en la pantalla de tu dispositivo Ledger. Esto garantiza transparencia total y permite verificar y aprobar la transacción, protegiendo tus activos de acciones no deseadas o maliciosas. Para más detalles sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
-3. Once the transaction is approved on your Ledger device, the staking website will display a "Transaction Submitted" notification, confirming that your BTC redelegation request has been successfully initiated.
+3. Una vez que la transacción sea aprobada en tu dispositivo Ledger, el sitio web de staking mostrará una notificación "Transaction Submitted", confirmando que tu solicitud de redelegación de BTC se ha iniciado exitosamente.
 
 <p align="center">
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/btc-redelegation.gif)
 </p>
 
-3. After transaction approval, users can also view the transaction details on the BTC Explorer.
+3. Después de la aprobación de la transacción, los usuarios también pueden ver los detalles de la transacción en el BTC Explorer.
 
 <p align="center" style={{zoom:"40%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-12.png)
 </p>
 
-## Conclusion
+## Conclusión
 
-By following this guide, you’ve successfully redelegated timelock-expired staked BTC on the Core Testnet using your Ledger hardware wallet. The combination of Core’s Self-Custodial BTC Timelocking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core Testnet app, provides maximum transparency, confidence, and safety. Your successful redelegation for staking BTC means your BTC continues to participate in Core’s decentralized ecosystem without ever leaving your custody.
+Siguiendo esta guía, has redelegado exitosamente BTC en staking con timelock expirado en la blockchain de Core Testnet usando tu Ledger hardware wallet. La combinación del modelo Self-Custodial BTC Timelocking de Core y la seguridad líder de la industria de Ledger, potenciada por Clear Signing a través de la Ledger Core Testnet app, proporciona máxima transparencia, confianza y seguridad. Tu redelegación exitosa para staking de BTC significa que tus BTC continúan participando en el ecosistema descentralizado de Core sin salir nunca de tu custodia.
