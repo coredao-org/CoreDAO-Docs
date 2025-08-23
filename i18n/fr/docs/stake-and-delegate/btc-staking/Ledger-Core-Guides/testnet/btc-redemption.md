@@ -130,7 +130,7 @@ Vous pouvez également utiliser le portefeuille Xverse pour racheter des BTC dir
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-3.png)
 </p>
 
-2. Unlock your Ledger device and confirm the connection via the Xverse wallet extension.
+2. Déverrouillez votre appareil Ledger et confirmez la connexion via l'extension de portefeuille Xverse.
 
 <p align="center" style={{zoom:"60%"}}>
 ![connect-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-8.png)
