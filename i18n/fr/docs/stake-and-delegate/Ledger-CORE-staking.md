@@ -1,91 +1,91 @@
 ---
 sidebar_label: Utilisation d'un portefeuille matériel Ledger
-description: Guide to stake CORE using Ledger Hardware Wallet
+description: Guide pour miser CORE en utilisant un portefeuille matériel Ledger
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets for Staking CORE
+# Utilisation des portefeuilles matériels Ledger pour la mise en jeu de CORE
 
 ---
 
-This user guide walks you through the process of staking CORE to earn staking rewards on the Core blockchain using a Ledger hardware wallet. By following the steps below, you can participate in Core’s Satoshi Plus consensus mechanism by staking and delegating CORE.
+Ce guide utilisateur vous guide à travers le processus de mise en jeu de CORE pour gagner des récompenses de staking sur la blockchain Core en utilisant un portefeuille matériel Ledger. En suivant les étapes ci-dessous, vous pouvez participer au mécanisme de consensus Satoshi Plus de Core en misant et en déléguant CORE.
 
-## Before You Begin: Important Reminders
+## Avant de commencer : Rappels importants
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
-1. **Use Only Supported Ledger Devices:** CORE staking is only supported on specific Ledger hardware wallets with the latest/supporting firmware. As a best practice, update your device through Ledger Live before proceeding.
+1. **Utilisez uniquement des appareils Ledger pris en charge:** La mise en jeu de CORE n'est prise en charge que sur certains portefeuilles matériels Ledger dotés du micrologiciel le plus récent ou compatible. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
 
-2. **Always Use the Ledger's Ethereum App:** You _must_ use Ledger's Ethereum app to stake CORE token on Core using Ledger device.
+2. \*\* Utilisez toujours l'application Ethereum de Ledger:\*\* Vous devez utiliser l'application Ethereum de Ledger pour miser des jetons CORE sur Core en utilisant un appareil Ledger.
 
-## Supported Ledger Hardware Wallets
+## Portefeuilles matériels Ledger pris en charge
 
-The following Ledger hardware devices currently support staking CORE directly on the Core blockchain. For the best experience and compatibility, ensure your device is running the latest available or supported firmware.
+Les appareils matériels Ledger suivants prennent actuellement en charge la mise en jeu de CORE directement sur la blockchain Core. Pour une expérience optimale et une compatibilité maximale, assurez-vous que votre appareil fonctionne avec le micrologiciel le plus récent disponible ou pris en charge.
 
-| Ledger Device      | Firmware Version (_at the time of writing_) |
-| ------------------ | -------------------------------------------------------------- |
-| **Ledger Nano S+** | 1.4.0                          |
-| **Ledger Nano X**  | 2.5.0                          |
-| **Ledger Stax**    | 1.8.0                          |
-| **Ledger Flex**    | 1.4.0                          |
+| Appareil Ledger    | Version du firmware (_au moment de la rédaction_) |
+| ------------------ | -------------------------------------------------------------------- |
+| **Ledger Nano S+** | 1.4.0                                |
+| **Ledger Nano X**  | 2.5.0                                |
+| **Ledger Stax**    | 1.8.0                                |
+| **Ledger Flex**    | 1.4.0                                |
 
 <br/>
 
 :::note
-The firmware versions listed above reflect the latest available at the time of writing and are subject to change. Before staking CORE using your Ledger device, update to the latest version to ensure compatibility and security. Always check Ledger Live for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Avant de miser CORE en utilisant votre appareil Ledger, mettez-le à jour vers la dernière version pour garantir la compatibilité et la sécurité. Vérifiez toujours Ledger Live pour les mises à jour les plus récentes. Refer [here](https://support.ledger.com/article/8458939792669-zd) Pour plus de détails sur la mise à jour du micrologiciel de l'appareil Ledger.
 :::
 
-## Prerequisites
+## Prérequis
 
-Before you begin, make sure you have:
+Avant de commencer, assurez-vous d'avoir:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and set up on your computer.
-- Your Ledger device is added to your EVM Wallet that you desire to use (e.g., MetaMask)
-- Sufficient CORE tokens (minimum 1 CORE) available on your Ledger device for staking, including tokens to cover transaction fees.
+- Un appareil Ledger pris en charge avec le dernier micrologiciel.
+- Ledger Live est installé et correctement configuré sur votre ordinateur.
+- Votre appareil Ledger est ajouté à votre portefeuille EVM que vous souhaitez utiliser (par exemple, MetaMask)
+- Des jetons CORE suffisants (minimum 1 CORE) disponibles sur votre appareil Ledger pour la mise en jeu, y compris des jetons pour couvrir les frais de transaction.
 
 ## Setting up Ledger Device
 
-Before staking CORE, make sure your Ledger hardware wallet is fully updated and ready to use with the Core blockchain.
+Avant de miser CORE, assurez-vous que votre portefeuille matériel Ledger est entièrement mis à jour et prêt à être utilisé avec la blockchain Core.
 
-### Step 1: Update Your Ledger Device
+### Étape 1: Mettre à jour votre appareil Ledger
 
-Ensure your Ledger device is updated and ready for use.
+Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 
-1. Open **Ledger Live** on your computer.
-2. Connect and unlock your Ledger device.
-3. Navigate to **My Ledger** in the sidebar.
-4. If prompted, allow **Ledger Manager** access on your device.
-5. Install any available firmware updates for your device, skip if your device has the latest supported firmware.
+1. Ouvrez **Ledger Live** sur votre ordinateur.
+2. Connectez et déverrouillez votre appareil Ledger.
+3. Accédez à **My Ledger** dans la barre latérale.
+4. Si vous y êtes invité, autorisez l'accès au **Ledger Manager** sur votre appareil.
+5. Installez les mises à jour de micrologiciel disponibles pour votre appareil, ignorez si votre appareil dispose du micrologiciel pris en charge le plus récent.
 
-### Step 2: Installing the Ledger Ethereum app
+### Étape 2 : Installation de l'application Ledger Ethereum
 
-Follow the steps below to install the Ledger Ethereum app on your device.
+Suivez les étapes ci-dessous pour installer l'application Ledger Ethereum sur votre appareil.
 
-1. With your device connected to your computer, open the Ledger Live application and navigate to "**My Ledger**".
+1. Avec votre appareil connecté à votre ordinateur, ouvrez l'application Ledger Live et accédez à "**My Ledger**".
 
-2. Under the "**App Catalog**", search for "**Ethereum**".
+2. Sous le "**App Catalog**" recherchez "**Ethereum**".
 
-3. Install the "**Ethereum**" app. Use _only_ the Ledger Ethereum app for staking CORE using Ledger on Core Mainnet. For more details, refer to the [official guide](https://support.ledger.com/article/360009576554-zd) from Ledger for installing the Ethereum app on your device.
+3. Installez l'application "**Ethereum**". Utilisez _uniquement_ l'application Ledger Ethereum pour miser CORE en utilisant Ledger sur le réseau Core Mainnet. Pour plus de détails,[official guide](https://support.ledger.com/article/360009576554-zd) de Ledger pour installer l'application Ethereum sur votre appareil.
 
 <p align="center">
 ![install-ethereum-app](../../static/img/ledger-core/CORE-Staking/UI-1.png)
 </p> 
 
-### Step 3: Enable Blind Signing on Ledger Ethereum App
+### Étape 3: Activer la signature aveugle sur l'application Ledger Ethereum
 
-Note that before staking CORE, users have to enable blind signing in the settings of the Ethereum App on the Ledger Device. Refer to the [official guide](https://support.ledger.com/article/4405481324433-zd) from Ledger for more details.
+Remarque: avant de miser CORE, les utilisateurs doivent activer la signature aveugle dans les paramètres de l'application Ethereum sur l'appareil Ledger. Refer to the [official guide](https://support.ledger.com/article/4405481324433-zd) from Ledger for more details.
 
 <p align="center">
 ![enable-blind-signing](../../static/img/ledger-core/CORE-Staking/UI-2.png)
 </p>
 
-### Step:4: Add Ledger Device to Your EVM Wallet
+### Étape 4: Ajouter l'appareil Ledger à votre portefeuille EVM
 
-Before proceeding with staking CORE using Ledger, it is important to add your Ledger device to the EVM wallet (e.g., MetaMask, etc.) you will be using to connect your Ledger for staking CORE.
+Avant de procéder à la mise en jeu de CORE en utilisant Ledger, il est important d'ajouter votre appareil Ledger au portefeuille EVM (par exemple, MetaMask, etc.) que vous utiliserez pour connecter votre Ledger pour miser CORE.
 
-For this guide, MetaMask wallet configured with Core Mainnet was used. Refer to the [official guide](https://support.ledger.com/article/4404366864657-zd) from Ledger for details on how to add your Ledger device to the MetaMask wallet.
+Pour ce guide, le portefeuille MetaMask configuré avec Core Mainnet a été utilisé. Reportez-vous au guide [official guide](https://support.ledger.com/article/4404366864657-zd) de Ledger pour les détails sur la façon d'ajouter votre appareil Ledger au portefeuille MetaMask.
 
 ## Staking CORE Using Ledger Device
 
