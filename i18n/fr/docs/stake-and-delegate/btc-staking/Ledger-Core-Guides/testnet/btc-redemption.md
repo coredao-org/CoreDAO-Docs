@@ -133,38 +133,38 @@ Vous pouvez également utiliser le portefeuille Xverse pour racheter des BTC dir
 2. Déverrouillez votre appareil Ledger et confirmez la connexion via l'extension de portefeuille Xverse.
 
 <p align="center" style={{zoom:"60%"}}>
-![connect-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-8.png)
+![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-8.png)
 </p>
 
-### Step#6: Review & Approve Transaction on Ledger Device
+### Étape #6: Examinez et approuvez la transaction sur l'appareil Ledger
 
-1. After connecting your Ledger device, ensure that the device is unlocked and the Ledger Core Testnet app is open. You will be prompted on the screen to approve the transaction.
+1. Après avoir connecté votre appareil Ledger, assurez-vous que l'appareil est déverrouillé et que l'application Ledger Core Testnet est ouverte. Une invite s'affichera à l'écran pour vous demander d'approuver la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
 ![prompt-tx-approval](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-7.png)
 </p>
 
-#### Using Xverse Wallet
+#### Utilisation du portefeuille Xverse
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si vous utilisez un portefeuille Xverse, examinez la transaction. .Vérifiez les détails et cliquez sur "**Confirm**"sur la notification de portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-10.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledge**r" modal.
+2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-11.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Approuver la transaction de staking BTC sur l'appareil Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
+1. Signez la transaction avec votre portefeuille d'appareil Ledger après avoir examiné les détails de la transaction.
 
-2. Always use the Ledger Core Testnet app, not the Ledger Bitcoin app, to redeem the staked BTC on the Core Testnet. The Bitcoin app lacks support for redemption/redelegation operations. En outre, l'application Ledger Core Testnet prend en charge la signature claire, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Utilisez toujours l'application Ledger Core Testnet, et non l'application Ledger Bitcoin, pour la réattribution de BTC verrouillés expirés sur la Core Testnet. L'application Bitcoin manque de prise en charge pour les opérations de remboursement et de redélégation. En outre, l'application Ledger Core Testnet prend en charge la signature claire, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 <p align="center">
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-redeem/btc-redeem-testnet.gif)
