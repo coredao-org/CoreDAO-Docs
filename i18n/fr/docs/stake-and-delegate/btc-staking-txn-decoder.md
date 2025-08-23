@@ -21,34 +21,34 @@ L'outil de décodage effectue une validation complète des transactions de mise 
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
-This validation process analyzes your BTC staking transaction and assists in identifying issues if the transaction did not succeed.
+Ce processus de validation analyse votre transaction de mise en jeu de BTC et aide à identifier les problèmes si la transaction n'a pas abouti.
 
-## Tool Functionality
+## Fonctionnalité de l'outil
 
-This tool helps decode and validate BTC Staking transactions against protocol requirements by parsing the transaction's OP_RETURN output, making it easier for users to track the transaction status and identify potential issues.
+Cet outil aide à décoder et à valider les transactions de mise en jeu de BTC par rapport aux exigences du protocole en analysant la sortie OP_RETURN de la transaction, ce qui permet aux utilisateurs de suivre plus facilement l'état de la transaction et d'identifier les problèmes potentiels.
 
-This tool tracks the following transaction statuses:
+Cet outil suit les statuts de transaction suivants :
 
-- **Pending**: The transaction has not yet been included in a block.
-- **Confirming**: The transaction is included in a block but has fewer than 6-block confirmations.
-- **Staked**: The staking is active.
-- **Failed**: Staking attempt failed.
-- **Expired**: The staking period has ended, but rewards have not yet been claimed.
-- **Redeemed**: The staking period has ended and rewards have been successfully claimed.
-- **Missed**: The transaction was confirmed after the staking period had already ended, resulting in no staking rewards.
+- **En attente :** La transaction n'a pas encore été incluse dans un bloc.
+- **En cours de confirmation :** La transaction est incluse dans un bloc mais a moins de 6 confirmations de bloc.
+- **Mise en jeu active :** La mise en jeu est active.
+- **Échec :** La tentative de mise en jeu a échoué.
+- **Expiré :** La période de mise en jeu est terminée, mais les récompenses n'ont pas encore été récupérées.
+- **Récupéré :** La période de mise en jeu est terminée et les récompenses ont été récupérées avec succès.
+- **Manquée :** La transaction a été confirmée après la fin de la période de mise en jeu, ce qui entraîne l'absence de récompenses de mise en jeu.
 
-## How to Use the Transaction Decoder
+## Comment utiliser le décodeur de transactions
 
-### Step 1: Access the Decoder Tool
+### Étape 1 : Accéder à l'outil de décodage
 
-Navigate to the [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) on Core Scan.
+Pour naviguer vers le [BTC Staking Transaction Decoder](https://scan.coredao.org/btc-stake-txn-decoder) sur Core Scan.
 
-### Step 2: Enter Transaction Hash
+### Étape 2 : Saisir le hachage de transaction
 
-1. Locate the transaction hash field on the decoder page
-2. Copy your BTC staking transaction hash from your wallet or blockchain explorer
-3. Paste the transaction hash into the input field
-4. Click the `Decode` button to begin the analysis
+1. Localisez le champ de hachage de transaction sur la page du décodeur
+2. Copiez le hachage de transaction de mise en jeu BTC depuis votre portefeuille ou explorateur de blockchain
+3. Collez le hachage de transaction dans le champ de saisie
+4. Cliquez sur le bouton `Decode` pour lancer l'analyse
 
 ### Step 3: Analyze Decoded Information
 
