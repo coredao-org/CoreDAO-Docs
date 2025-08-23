@@ -1,5 +1,5 @@
 ---
-sidebar_label: Using Ledger Hardware Wallet
+sidebar_label: Utilisation d'un portefeuille matériel Ledger
 description: Guide to stake CORE using Ledger Hardware Wallet
 hide_table_of_contents: false
 sidebar_position: 2
