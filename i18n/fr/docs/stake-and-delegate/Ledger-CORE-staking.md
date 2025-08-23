@@ -87,75 +87,75 @@ Avant de procéder à la mise en jeu de CORE en utilisant Ledger, il est importa
 
 Pour ce guide, le portefeuille MetaMask configuré avec Core Mainnet a été utilisé. Reportez-vous au guide [official guide](https://support.ledger.com/article/4404366864657-zd) de Ledger pour les détails sur la façon d'ajouter votre appareil Ledger au portefeuille MetaMask.
 
-## Staking CORE Using Ledger Device
+## Mise en jeu de CORE à l'aide d'un appareil Ledger
 
-With your Ledger device connected to your computer and the Ledger Ethereum app installed, you can securely stake CORE directly from your hardware wallet.
+Avec votre appareil Ledger connecté à votre ordinateur et l'application Ledger Ethereum installée, vous pouvez miser CORE en toute sécurité directement depuis votre portefeuille matériel.
 
 :::info
-A minimum of **1 CORE** is required to participate in staking CORE tokens on Core Mainnet, along with sufficient CORE tokens to cover transaction fees.
+Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens CORE sur Core Mainnet, ainsi que des tokens CORE suffisants pour couvrir les frais de transaction.
 :::
 
-1. On your Ledger device, open the Ledger Ethereum app before proceeding.
+1. Sur votre appareil Ledger, ouvrez l'application Ledger Ethereum avant de poursuivre.
 
 <p align="center">
 ![application-ready](../../static/img/ledger-core/CORE-Staking/UI-3.png)
 </p>
 
-2. Navigate to the [Core Staking Websit](https://stake.coredao.org/staking).
+2. Accédez au site [Core Staking Websit](https://stake.coredao.org/staking).
 
-### Connect Core Wallet to the Staking Website
+### Connectez le portefeuille Core au site Web de mise en jeu
 
-1. Connect your Core Mainnet wallet to the website. Make sure it is the same wallet you connect your Ledger device with, as this will be used as the wallet for staking CORE.
+1. Connectez votre portefeuille Core Mainnet au site Web. Assurez-vous qu'il s'agit du même portefeuille que celui que vous connectez à votre appareil Ledger, car celui-ci sera utilisé comme portefeuille pour la mise en jeu de CORE.
 
-2. Click on the "**Connect Wallet**" button in the top right corner of the website.
+2. Cliquez sur le bouton "**Connect Wallet**" dans le coin supérieur droit du site Web.
 
 <p align="center">
 ![connect-core-wallet](../../static/img/ledger-core/CORE-Staking/connect-core-wallet.png)
 </p>
 
-3. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet.
+3. Depuis le modal de portefeuille affiché, sélectionnez le portefeuille de votre choix configuré pour être utilisé avec Core.
 
-### Specify and Confirm Staking Details
+### Spécifiez et confirmez les détails de la mise en jeu
 
-1. On the Core Staking [page](https://stake.coredao.org/staking), with your EVM wallet connected to the staking website, specify the amount of CORE to stake. Click "**Proceed to Stake**".
+1. Sur la page de mise en jeu de [page](https://stake.coredao.org/staking), avec votre portefeuille EVM connecté au site Web de mise en jeu, spécifiez le montant de CORE à miser. Cliquez sur le bouton "**Proceed to Stake**".
 
 <p align="center" style={{zoom:"60%"}}>
 ![specify-core-amount](../../static/img/ledger-core/CORE-Staking/UI-4.png)
 </p> 
 
-2. Confirm the CORE amount to stake and the validator to delegate your stake to participate in the Core consensus mechanism and earn staking rewards. Click "**Confirm**" to proceed.
+2. Confirmez le montant de CORE à miser et le validateur auquel déléguer votre mise pour participer au mécanisme de consensus de Core et gagner des récompenses de mise. Cliquez sur "**Confirm**" pour continuer.
 
 <p align="center" style={{zoom:"60%"}}>
 ![confirm-staking-details](../../static/img/ledger-core/CORE-Staking/UI-5.png)
 </p>   
 
-3. The user will see a modal directing them to approve the transaction on their connected EVM wallet.
+3. L'utilisateur verra une fenêtre modale lui demandant d'approuver la transaction sur son portefeuille EVM connecté.
 
 <p align="center" style={{zoom:"60%"}}>
 ![confirm-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-6.png)
 </p>  
 
-4. Approve the transaction on your connected EVM wallet notification.
+4. Approuvez la transaction sur la notification de votre portefeuille EVM connecté.
 
 <p align="center" style={{zoom:"70%"}}>
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-7.png)
 </p>
 
-### Approve Transaction on Ledger Device
+### Examinez et approuvez la transaction sur l'appareil Ledger
 
-1. Approve the staking transaction on your Ledger device.
+1. Approuver la transaction de staking Btc sur l'appareil Ledger.
 
 <p align="center">
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/CORE-Staking-Ledger.gif)
 </p>
 
-2. Once approved on your Ledger device, the "Transaction Submitted" notification will appear on the Core Staking website.
+2. Une fois approuvée sur votre appareil Ledger, la notification "Transaction Submitted" apparaîtra sur le site Web de mise en jeu de Core.
 
 <p align="center" style={{zoom:"80%"}}>
 ![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-8.png)
 </p>
 
-3. Click on "**View on Core Scan**" to view details of your CORE staking transaction on the Core Scan block explorer.
+3. Cliquez sur "**View on Core Scan**" pour afficher les détails de votre transaction de mise en jeu de CORE sur l'explorateur de blocs Core Scan.
 
 :::note
 To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:29 UTC).
