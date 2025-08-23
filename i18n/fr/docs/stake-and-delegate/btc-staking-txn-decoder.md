@@ -1,21 +1,21 @@
 ---
-sidebar_label: BTC Staking Transaction Decoder
+sidebar_label: Décodeur de transaction de mise en jeu BTC
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# BTC Staking Transaction Decoder
+# Décodeur de transaction de mise en jeu BTC
 
-The BTC Staking Transaction Decoder is a powerful tool available on [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) that allows users to verify and validate their Bitcoin staking transactions. This tool helps diagnose potential formatting issues with your staking transactions after they’ve been submitted to the Core network
+Le décodeur de transaction de mise en jeu BTC est un outil puissant disponible sur [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) qui permet aux utilisateurs de vérifier et de valider leurs transactions de mise en jeu de Bitcoin. Cet outil aide à diagnostiquer les problèmes potentiels de formatage avec vos transactions de mise en jeu après qu'elles ont été soumises au réseau Core
 
-## Overview
+## Aperçu
 
-The decoder tool performs comprehensive validation of BTC staking transactions by:
+L'outil de décodage effectue une validation complète des transactions de mise en jeu de BTC en :
 
-- **Transaction Confirmation Status**: Verifies that the transaction has been confirmed on the Bitcoin network
-- **OP_RETURN Output Validation**: Verifies the transaction contains the correct OP_RETURN output format required by the Core protocol
-- **Validator Address Verification**: Confirms that the target validator address is valid and active on the Core network
-- **Protocol Compliance**: Validates that the transaction meets all Core staking protocol requirements
+- **État de confirmation de la transaction :** Vérifie que la transaction a été confirmée sur le réseau Bitcoin
+- **Validation de la sortie OP_RETURN :** Vérifie que la transaction contient le format de sortie OP_RETURN correct exigé par le protocole Core
+- **Vérification de l'adresse du validateur :** Confirme que l'adresse du validateur cible est valide et active sur le réseau Core
+- **Conformité au protocole :** Valide que la transaction répond à toutes les exigences du protocole de mise en jeu Core
 
 <p align="center">
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/txn-decoder.png)
