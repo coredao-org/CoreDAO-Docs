@@ -158,9 +158,9 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 3. Cliquez sur "**View on Core Scan**" pour afficher les détails de votre transaction de mise en jeu de CORE sur l'explorateur de blocs Core Scan.
 
 :::note
-To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:29 UTC).
+Pour être éligible aux récompenses, vous devez terminer un cycle de mise en jeu complet (00:00:00 - 23:59:29 UTC).
 :::
 
 ## Conclusion
 
-Congratulations! You’ve successfully staked CORE using your Ledger hardware wallet on the Core Mainnet. By following this guide, you securely connected your Ledger device, installed and used the Ledger Ethereum app, to stake CORE directly from your hardware wallet to earn staking rewards.
+Félicitations ! Vous avez mis en jeu avec succès des CORE en utilisant votre portefeuille matériel Ledger sur le réseau Core Mainnet. En suivant ce guide, vous avez connecté votre appareil Ledger en toute sécurité, installé et utilisé l'application Ledger Ethereum pour miser des CORE directement à partir de votre portefeuille matériel et gagner des récompenses de mise.
