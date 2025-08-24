@@ -54,13 +54,13 @@ Pour naviguer vers le [BTC Staking Transaction Decoder](https://scan.coredao.org
 
 Le décodeur fournira des informations détaillées sur votre transaction:
 
-- **Transaction State**: Shows the current status of your staking transaction (Pending, Confirming, Staked, Failed, Expired, Redeemed, or Missed)
-- **Input/Output Addresses**: Shows the flow of BTC in your staking transaction
-- **OP_RETURN Data**: Contains the encoded staking information including delegator and validator addresses
-  - **Delegator address**: The CORE reward address of the staker on the Core chain.
-  - **Validator address**: The address of the validator to whom the staker delegated their BTC.
-- **LockTime**: [Unix timestamp](https://www.unixtimestamp.com/) representing the end date and time of your staking
-- **PublicKeyHash**: Your public key hash for verification purposes
+- **État de la transaction :** Affiche l'état actuel de votre transaction de mise en jeu (En attente, En cours de confirmation, Mise en jeu réussie, Échec, Expirée, Rachetée ou Manquée)
+- **Adresses d'entrée/sortie :** Affiche le flux de BTC dans votre transaction de mise en jeu
+- **Données OP_RETURN :** Contient les informations de mise en jeu encodées, notamment les adresses du délégant et du validateur
+  - **Adresse du délégant :** L'adresse de récompense CORE du stakeur sur la chaîne Core.
+  - **Adresse du validateur :** L'adresse du validateur à qui le stakeur a délégué ses BTC.
+- **Temps de verrouillage :** [Unix timestamp](https://www.unixtimestamp.com/) représentant la date et l'heure de fin de votre mise en jeu
+- **Hachage de clé publique :** Votre hachage de clé publique à des fins de vérification
 
 <p align="center">
 ![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/decoded-data.png)
@@ -68,24 +68,24 @@ Le décodeur fournira des informations détaillées sur votre transaction:
 
 ## Common Issues and Solutions
 
-### Transaction Not Confirmed
+### Transaction non confirmée
 
-- **Issue**: Transaction is still pending in the mempool
-- **Solution**: Wait for Bitcoin network confirmation (typically 1-6 blocks)
+- **Problème :** La transaction est toujours en attente dans le mempool
+- **Solution :** Attendre la confirmation du réseau Bitcoin (généralement 1 à 6 blocs)
 
-### Invalid OP_RETURN Format
+### Format OP_RETURN invalide
 
-- **Issue**: The OP_RETURN output doesn't match Core protocol requirements
-- **Solution**: Make sure the OP_RETURN format is correct. For detailed guidance, refer to the [format specified here](https://docs.coredao.org/docs/stake-and-delegate/btc-staking/design#op_return-output)
+- **Problème :** La sortie OP_RETURN ne correspond pas aux exigences du protocole Core
+- **Solution :** Assurez-vous que le format OP_RETURN est correct. Pour des conseils détaillés, référez-vous [format specified here](https://docs.coredao.org/docs/stake-and-delegate/btc-staking/design#op_return-output)
 
-### Invalid Validator Address
+### Adresse de validateur invalide
 
-- **Issue**: The validator address is not active or doesn't exist
-- **Solution**: Verify the validator address and ensure they're an active Core validator
+- **Problème :** L'adresse du validateur n'est pas active ou n'existe pas
+- **Solution :** Vérifiez l'adresse du validateur et assurez-vous qu'il s'agit d'un validateur Core actif
 
-## Benefits of Using the Decoder
+## Avantages de l'utilisation du décodeur
 
-- **Verifies Protocol Compliance**: Verifies whether the transaction meets all requirements and decodes the staking transaction details.
-- **Provides Transparency**: Clear visibility into your staking transaction details
+- **Vérifie la conformité au protocole :** Vérifie si la transaction répond à toutes les exigences et décode les détails de la transaction de staking.
+- **Fournit de la transparence :** Une visibilité claire sur les détails de votre transaction de staking
 
-The BTC Staking Transaction Decoder helps users verify the details of their self-custodial BTC staking transactions and helps you to resolve issues when a BTC staking transaction fails to register with the Core network.
+Le décodeur de transactions de staking BTC aide les utilisateurs à vérifier les détails de leurs transactions de staking BTC en auto-garde et à résoudre les problèmes d'enregistrement sur le Core network.
