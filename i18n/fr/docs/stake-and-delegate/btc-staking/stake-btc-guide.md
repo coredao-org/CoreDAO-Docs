@@ -142,27 +142,27 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 
 ### Décodeur de transaction de mise en jeu BTC
 
-Users can verify their BTC staking transactions in [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) by:
+Les utilisateurs peuvent vérifier leurs transactions de staking BTC dans [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) :
 
-- Checking transaction confirmation status
-- Validating the OP_RETURN output format
-- Confirming the target validator address
+- Vérification de l'état de confirmation d'une transaction
+- Validation du format de sortie OP_RETURN
+- Confirmation de l'adresse du validateur cible
 
 <p align="center" >
 ![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
-This enables you to verify your BTC staking transaction meets all protocol requirements and identifies potential issues if the transaction has failed to be processed by the Core network relayers.
+Cela vous permet de vérifier que votre transaction de staking BTC répond à toutes les exigences du protocole et identifie les problèmes potentiels si la transaction n'a pas été traitée par les relais du réseau Core.
 
 :::info
-For detailed information about the BTC Staking Transaction Decoder, including common issues and solutions, check out the [guide](../btc-staking-txn-decoder.md) for more details.
+Pour obtenir des informations détaillées sur le décodeur de transactions de staking BTC, y compris les problèmes courants et les solutions, consultez le [guide](../btc-staking-txn-decoder.md)pour plus de détails.
 :::
 
-### How to Use
+### Comment utiliser
 
-1. **Paste the Transaction Hash**: Enter your BTC staking transaction hash in the decoder tool
-2. **Get Transaction Status**: The tool will provide the current transaction status
-3. **Decode Transaction Details**: It will decode and display:
+1. **Coller le hachage de transaction :** Entrez le hachage de votre transaction de staking BTC dans l'outil de décodeur
+2. **Obtenir l'état de la transaction**: L'outil fournira l'état actuel de la transaction
+3. **Décoder les détails de la transaction**: Il décodera et affichera:
    - Input address
    - Output address
    - OP_RETURN output details
