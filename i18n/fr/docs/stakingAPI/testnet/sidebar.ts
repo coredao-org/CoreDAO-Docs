@@ -35,7 +35,7 @@ const sidebar: SidebarsConfig = {
     }, {
       type: "doc",
       id: "stakingAPI/testnet/retrieve-staking-summary-group-by-candidate",
-      label: "Retrieve Staking Summary Group By Candidate",
+      label: "Récupérer le résumé de staking groupé par candidat",
       className: "api-method get"
     }]
   }, {
@@ -59,12 +59,12 @@ const sidebar: SidebarsConfig = {
     }, {
       type: "doc",
       id: "stakingAPI/testnet/retrieve-btc-staking-transaction-rewards",
-      label: "Retrieve BTC staking transaction rewards",
+      label: "Récupérer les récompenses de transaction de staking BTC",
       className: "api-method get"
     }, {
       type: "doc",
       id: "stakingAPI/testnet/retrieve-staking-reward-rate",
-      label: "Retrieve Staking Reward Rate",
+      label: "Récupérer le taux de récompense de staking",
       className: "api-method get"
     }]
   }, {
