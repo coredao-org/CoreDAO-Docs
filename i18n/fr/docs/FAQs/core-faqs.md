@@ -14,10 +14,10 @@ La Fondation Core encourage le développement de projets open source et, par con
 
 ### 2. Quels sont les canaux de communication officiels ?
 
-- **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
-- **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
-- **Twitter:** [https://twitter.com/Coredao_Org](https://twitter.com/Coredao_Org)
-- **Blog:** [https://medium.com/@core_dao](https://medium.com/@core_dao) ou [https://coredao.org/explore/blog](https://coredao.org/explore/blog)
+ - **Telegram:** [https://t.me/CoreDAOTelegram](https://t.me/CoreDAOTelegram)
+ - **Discord:** [https://discord.com/invite/coredaoofficial](https://discord.com/invite/coredaoofficial)
+ - **Twitter:** [https://twitter.com/Coredao_Org](https://twitter.com/Coredao_Org)
+ - **Blog:** [https://medium.com/@core_dao](https://medium.com/@core_dao) ou [https://coredao.org/explore/blog](https://coredao.org/explore/blog)
 
 ### 3. Quelles dApps sont déployées sur le réseau Core ?
 
@@ -25,7 +25,7 @@ Core est conçu pour les créateurs, offrant une plateforme robuste où les dive
 
 ### 4. Comment connecter MetaMask au réseau Core ?
 
-Follow the official [detailed guide](../Dev-Guide/core-wallet-config.md) on how to connect your MetaMask wallet to the Core Testnet and Mainnet.
+Suivez le guide détaillé officiel [detailed guide](../Dev-Guide/core-wallet-config.md) sur la façon de connecter votre portefeuille MetaMask au réseau de test et au réseau principal de Core.
 
 ### 5. Quel rôle joue le token CORE dans la sécurisation du réseau Core ?
 
@@ -41,11 +41,11 @@ Sur le réseau Core, le slashing et l'emprisonnement sont des mécanismes pour p
 
 Slashing fait référence à la réduction des récompenses d'un validateur pour le minage de blocs ou de ses tokens CORE stakés. La gravité de la pénalité de slashing est proportionnelle à la gravité du comportement fautif du validateur.
 
-- **Échec de Production de Blocs Pendant Son Tour Désigné**
-    - Si un nœud validateur échoue à miner **50 blocks** d'affilée, les récompenses en jetons CORE que le validateur a accumulées jusqu'à présent sont complètement réduites à zéro.
-    - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
-- **Pénalité pour Double Signature**
-    - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
+ - **Échec de Production de Blocs Pendant Son Tour Désigné**
+     - Si un nœud validateur échoue à miner **50 blocks** d'affilée, les récompenses en jetons CORE que le validateur a accumulées jusqu'à présent sont complètement réduites à zéro.
+     - Si un validateur échoue à miner **150 blocs consécutifs**, il renonce à sa part des récompenses quotidiennes en CORE, perd 10 % de son dépôt en CORE et est emprisonné pendant trois jours, ce qui signifie qu'il ne peut pas être élu au groupe de validateurs
+ - **Pénalité pour Double Signature**
+     - La "double signature" correspond au fait de signer deux blocs différents au même niveau de bloc. Les validateurs pris en flagrant délit de double signature perdent toutes leurs récompenses ainsi que leur dépôt en CORE, et sont ensuite interdits de participer au minage, c'est-à-dire emprisonnés à vie.
 
 ### 8. Quel mécanisme de consensus utilise le réseau Core et comment prévient-il les attaques ?
 
@@ -67,14 +67,14 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de proto
 
 Vous pouvez contribuer à la communauté Core de plusieurs manières :
 
-- **Contribuer à notre documentation officielle :** Envoyez une demande de tirage (pull request) avec vos modifications au référentiel GitHub de notre documentation officielle, et notre équipe les examinera en conséquence. Si jugées correctes, nous les fusionnerons dans notre documentation officielle.
-- **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. La Core Foundation a dressé une liste de catégories de projets que les créateurs peuvent développer pour contribuer à la croissance de l'écosystème Core.
-- **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la blockchain Core. Whether through [Core Starter Program](https://coredaofoundation.org/fund-your-project) or [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), you can jumpstart your building journey on the Web3 on Core.
-- **Programme d’engagement de Core :** La Core Foundation offre un programme d’accélération de 3 mois pour les projets en phase initiale. Le [Programme d'egagement de Core](https://coredao.org/initiatives/commit-program) fournit non seulement des ressources et un mentorat personnalisé 1:1 avec les plus grands experts du Web3, mais il offre aussi la possibilité de bénéficier de récompenses mensuelles basées sur les performances et d’un financement de la part de Core Ventures et de son réseau de plus de 100 VCs.
+ - **Contribuer à notre documentation officielle :** Envoyez une demande de tirage (pull request) avec vos modifications au référentiel GitHub de notre documentation officielle, et notre équipe les examinera en conséquence. Si jugées correctes, nous les fusionnerons dans notre documentation officielle.
+ - **[Liste de souhaits Core](https://github.com/coredao-org/core-community-contributions) :** Créez des projets pour l'écosystème Core. La Core Foundation a dressé une liste de catégories de projets que les créateurs peuvent développer pour contribuer à la croissance de l'écosystème Core.
+ - **Programmes d'incitation pour les créateurs :** Core propose également plusieurs subventions et programmes pour encourager le développement sur la blockchain Core. Que ce soit via les [Core Starter Program](https://coredaofoundation.org/fund-your-project), ou le [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), vous pouvez démarrer votre aventure de création dans le Web3 sur la Core Chain.
+ - **Programme d’engagement de Core :** La Core Foundation offre un programme d’accélération de 3 mois pour les projets en phase initiale. Le [Programme d'egagement de Core](https://coredao.org/initiatives/commit-program) fournit non seulement des ressources et un mentorat personnalisé 1:1 avec les plus grands experts du Web3, mais il offre aussi la possibilité de bénéficier de récompenses mensuelles basées sur les performances et d’un financement de la part de Core Ventures et de son réseau de plus de 100 VCs.
 
 ### 13. Est-ce que Core propose des programmes de soutien et d'incitation pour les développeurs ?
 
-Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Whether through [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), [Core Starter Program](https://coredaofoundation.org/fund-your-project), and the [Core Commit Program](https://coredao.org/initiatives/commit-program), you'll receive technical guidance, mentorship, and exposure to a vibrant community dedicated to innovating in the DeFi landscape.
+Core ne se limite pas aux subventions, c'est une porte vers des opportunités infinies. Que ce soit à travers [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), [Core Starter Program](https://coredaofoundation.org/fund-your-project), ou le [Core Commit Program](https://coredao.org/initiatives/commit-program), vous recevrez une orientation technique, un mentorat et serez exposé à une communauté dynamique dédiée à l'innovation dans l'écosystème DeFi.
 
 ### 14. Comment puis-je signaler une arnaque ou un rug pull ?
 
