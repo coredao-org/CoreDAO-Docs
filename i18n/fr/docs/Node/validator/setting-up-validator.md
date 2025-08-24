@@ -31,24 +31,28 @@ values={[
 ]}> <TabItem value="testnet2">
 Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
+    ```
     | Exigences.   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Un minimum de 4 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
     | **RAM**            | 8 Gigabytes                                                                                             |
     | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                |
+    ```
 
   </TabItem>
 
   <TabItem value="mainnet">
 Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
+    ```
     | Exigences   | Détails                                                                                                   |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     |**Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
     | **Internet Speed** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                  |
+    ```
 
   </TabItem>
 </Tabs>
@@ -171,7 +175,7 @@ Si vous préférez synchroniser votre nœud validateur à partir du bloc de gen�
   geth --config ./config.toml --datadir ./node -unlock {your-validator-address} --miner.etherbase {your-validator-address} --password password.txt  --mine  --allow-insecure-unlock --cache 8000 --networkid {core-network-id}
   ```
 
-> ⚠️ **Note:** Syncing from genesis can take a lot of time, depending on system resources and network speed.
+> ⚠️ **Note:** La synchronisation depuis la genèse peut prendre beaucoup de temps en fonction des ressources système et de la vitesse du réseau.
 
 ## Surveiller les journaux
 
