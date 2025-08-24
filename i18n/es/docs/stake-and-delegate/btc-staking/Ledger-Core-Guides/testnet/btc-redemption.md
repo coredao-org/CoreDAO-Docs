@@ -5,138 +5,138 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redeem BTC Staked on Core
+# Usando Ledger Hardware Wallets para Redimir BTC en Staking en Core
 
-This user guide will walk you through the step-by-step process of redeeming your staked Bitcoin (BTC) on the Core Testnet using a Ledger hardware wallet.
-
-:::note
-Before you begin, ensure your Ledger device is updated and the Core Testnet app is installed. You must use the same primary BTC wallet address originally used for staking BTC. To learn how to stake BTC using Ledger on Core Testnet, refer to the official guide [here](./btc-staking.md).
-:::
-
-## Before You Begin: Important Reminders
-
-To ensure a secure and seamless experience, please note the following key requirements:
-
-1. Use Only Supported Ledger Devices: BTC staking, redemption, and redelegation on Core Testnet are supported only on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
-
-2. Always Use the Ledger’s CoreDAO App: You must use the Ledger Core Testnet app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC on Core Testnet. The Bitcoin app does not support redemption operations of staked BTC and may prevent successful redemption.
-
-3. Staking BTC Only from the Primary BTC Wallet Address: Currently, BTC staking, redemption, and redelegation on Core Testnet through Ledger are supported only from the primary BTC address of the Ledger device. Secondary or derived addresses are not compatible.
-
-## Supported Ledger Hardware Wallets
-
-The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC on the Core Testnet. For the best experience and compatibility, as a best practice, ensure your device is running the latest supported or available firmware.
-
-| Ledger Device      | Firmware Version (_at the time of writing_) |
-| ------------------ | -------------------------------------------------------------- |
-| **Ledger Nano S+** | 1.4.0                          |
-| **Ledger Nano X**  | 2.5.0                          |
-| **Ledger Stax**    | 1.8.0                          |
-| **Ledger Flex**    | 1.4.0                          |
+Esta guía te llevará paso a paso por el proceso de redimir tu Bitcoin (BTC) en staking en la blockchain de Core Testnet usando un Ledger hardware wallet.
 
 :::note
-The firmware versions listed above reflect the latest available version at the time of writing and are subject to change. Before staking, redeeming, or redelegating BTC on Core Testnet using your Ledger device, as a best practice, update to the latest or a supported version to ensure compatibility and security. Always check Ledger Live for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y que la Core Testnet app esté instalada. Debes usar la misma dirección principal de BTC wallet que se utilizó originalmente para hacer staking de BTC. Para aprender cómo hacer staking de BTC usando Ledger en Core Testnet, consulta la guía oficial [aquí](./btc-staking.md).
 :::
 
-## ## Prerequisites
+## Antes de Comenzar: Recordatorios Importantes
 
-Before you begin, make sure you have:
+Para garantizar una experiencia segura y sin problemas, ten en cuenta los siguientes requisitos clave:
 
-- A supported Ledger device with the latest/supported firmware.
-- Ledger Live is installed and correctly set up on your computer.
-- You have previously staked BTC on the Core Testnet using your Ledger device.
-- If you're using Xverse Wallet, your Ledger device is already connected and added to it.
-- The timelock period for your locked BTC has expired, making it eligible for redemption.
+1. Usa únicamente dispositivos Ledger compatibles: El staking, redención y redelegación de BTC en Core Testnet solo son compatibles con hardware wallets Ledger soportados que tengan el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
 
-> ⚠️ **Note:** You will not be able to redeem or redelegate staked BTC until the designated timelock has expired.
+2. Usa siempre la Ledger CoreDAO App: Debes utilizar la Ledger Core Testnet app (no la Ledger Bitcoin app) tanto para hacer staking, redimir o redelegar BTC en Core Testnet. La aplicación de Bitcoin no soporta operaciones de redención de BTC en staking y podría impedir una redención exitosa.
 
-## Steps to Redeem Expired Timelock BTC
+3. Staking de BTC solo desde la Dirección Primaria de BTC:\*\* Actualmente, el staking, la redención y la redelegación de BTC en Core Testnet a través de Ledger están soportados solo desde la dirección primaria de BTC del dispositivo Ledger. Direcciones secundarias o derivadas no son compatibles.
 
-After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet address used for staking BTC to redeem your BTC after the timelock expiry.
+## Ledger Hardware Wallets Soportados
 
-### Step #1: Connect Core Wallet to the Staking Website
+Los siguientes dispositivos Ledger hardware son actualmente compatibles con el staking, redención y redelegación de BTC en la Core Testnet. Para la mejor experiencia y compatibilidad, como buena práctica, asegúrate de que tu dispositivo esté ejecutando el firmware más reciente soportado o disponible.
 
-1. Navigate to the [Core Testnet Staking Website](https://stake.test2.btcs.network/staking).
+| Dispositivo Ledger | Versión de Firmware (_al momento de redactar_) |
+| ------------------ | ----------------------------------------------------------------- |
+| **Ledger Nano S+** | 1.4.0                             |
+| **Ledger Nano X**  | 2.5.0                             |
+| **Ledger Stax**    | 1.8.0                             |
+| **Ledger Flex**    | 1.4.0                             |
 
-2. Connect your Core Testnet wallet to the Core Testnet Staking website. _Remember to use the same wallet that you had used at the time of staking BTC_.
+:::note
+Las versiones de firmware listadas arriba reflejan la última versión disponible al momento de redactar y están sujetas a cambios. Antes de hacer staking, redimir o redelegar BTC en Core Testnet usando tu dispositivo Ledger, como buena práctica, actualiza a la versión más reciente o a una soportada para garantizar compatibilidad y seguridad. Revisa siempre Ledger Live para obtener las actualizaciones más recientes. Consulta [aquí](https://support.ledger.com/article/8458939792669-zd) para más detalles sobre cómo actualizar el firmware de tu dispositivo Ledger.
+:::
 
-3. Click on the "**Connect**" button in the top right corner of the website.
+## ## Prerequisitos
+
+Antes de comenzar, asegúrate de tener lo siguiente:
+
+- Un dispositivo Ledger compatible con el firmware más reciente o soportado.
+- Ledger Live instalado y configurado correctamente en tu computadora.
+- Haber realizado previamente staking de BTC en la Core Testnet usando tu dispositivo Ledger.
+- Si usas Xverse Wallet, tu dispositivo Ledger ya debe estar conectado y añadido a ella.
+- Que el período de timelock de tu BTC bloqueado haya expirado, lo que lo hace elegible para redención.
+
+> ⚠️ **Nota:** No podrás redimir o redelegar BTC en staking hasta que el timelock designado haya expirado.
+
+## Pasos para Redimir BTC con Timelock Expirado
+
+Después de que el período de timelock de los BTC haya expirado, los usuarios son elegibles para redimir o redelegar sus activos de Bitcoin delegados. Debes usar la misma dirección de wallet de Ledger que utilizaste para hacer staking de BTC al momento de redimir después de la expiración del timelock.
+
+### Paso #1: Conectar Core Wallet al sitio web de Staking
+
+1. Ve al [sitio web de Core Testnet Staking] (https://stake.test2.btcs.network/staking).
+
+2. Conecta tu wallet de Core Testnet al sitio web de Core Testnet Staking. _Recuerda usar la misma wallet que utilizaste en el momento de hacer staking de BTC_.
+
+3. Haz clic en el botón "**Connect**" en la esquina superior derecha del sitio web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![conenct-core-wallet](../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
 </p>
 
-4. From the displayed wallet modal, select the wallet of your choice configured for use with Core Testnet.
+4. En el modal de wallets mostrado, selecciona la wallet de tu preferencia configurada para usarse con Core Testnet.
 
-### Step #2: Navigate to Testnet Staking Dashboard
+### Paso #2: Navegar al Testnet Staking Dashboard
 
-1. Ensure your Ledger device is installed with the latest or supporting firmware and connected to your computer with Ledger’s primary Bitcoin (BTC) address.
+1. Asegúrate de que tu dispositivo Ledger tenga instalado el firmware más reciente o soportado y esté conectado a tu computadora con la dirección principal de Bitcoin (BTC) de Ledger.
 
-2. On the Core Testnet Staking website, hover over your connected wallet in the top right corner and click "**My Staking**".
+2. En el sitio de Core Testnet Staking, coloca el cursor sobre tu wallet conectada en la esquina superior derecha y haz clic en “**My Staking**”.
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-1.png)
 </p>
 
-### Step #3: Navigate to Testnet BTC Staking Records
+### Paso #3: Navegar a los Registros de BTC Staking en Testnet
 
-1. On the "**My Staking Dashboard**" page, select "**BTC**" records from the displayed tabs.
+1. En la página "**My Staking Dashboard**", selecciona la pestaña "**BTC**" de los registros mostrados.
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking-records](../../../../../static/img/ledger-core/testnet/btc-redeem/my-staking-3.png)
 </p>
 
-2. This tab lists all the BTC staking records and the validators that you have previously delegated BTC to. Look for any ‘**Expired**’ records under ‘**Redeem Time**,’ and proceed to click ‘**Redeem**’ under ‘**Action**.’
+2. Esta pestaña lista todos los registros de staking de BTC y los validadores a los que previamente delegaste tu BTC. Busca cualquier registro marcado como ‘**Expired**’ bajo la columna ‘**Redeem Time**’, y procede a hacer clic en ‘**Redeem**’ en la columna ‘**Action**’.
 
 <p align="center" style={{zoom:"80%"}}>
 ![my-staking-records](../../../../../static/img/ledger-core/testnet/btc-redeem/my-staking-1.png)
 </p>
 
-### Step #4: Verify BTC Staking and Redemption Details
+### Paso #4: Verificar los detalles de BTC Staking y Redención
 
-1. On the displayed "**Redeem BTC**" modal, cross-check the **BTC staking address**, the **BTC Amount** that will be redeemed, and the **Receiving Bitcoin address**. To redeem the BTC, you **_must_** connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction.
+1. En la ventana emergente "**Redeem BTC**", verifica la **BTC staking address**, la **BTC Amount** que será redimida y la **Receiving Bitcoin address**. Para redimir los BTC, **_debes_** conectarte a la misma dirección de Bitcoin que se utilizó al iniciar la transacción de Bitcoin staking.
 
-2. Set your **Receiving Bitcoin Address** to receive the unlocked BTC. This does not need to be the same as the address that initiated the Bitcoin staking transaction. Set your transaction speed priority, and click "**Create Transaction**".
+2. Configura tu **Receiving Bitcoin Address** para recibir los BTC desbloqueados. Esta dirección no necesita ser la misma que la utilizada para iniciar la transacción de staking. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![verify-tx-details](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-12.png)
 </p>
 
-### Step #5: Sign the BTC Unlock Transaction on Ledger Device
+### Paso #5: Firmar la transacción de desbloqueo de BTC en el dispositivo Ledger
 
-1. Click "**Sign By Bitcoin Wallet**" to sign the BTC redemption transaction from your Ledger device.
+1. Haz clic en "**Sign By Bitcoin Wallet**" para firmar la transacción de redención de BTC desde tu dispositivo Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![sign-tx](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-13.png)
 </p>
 
-### Step#5: Connect Ledger Device for Redemption of Staked BTC
+### Paso #5: Conectar el dispositivo Ledger para la redención de BTC en staking
 
-#### Option #1: Connecting the Ledger Device Directly to the Staking Website
+#### Opción #1: Conectar el dispositivo Ledger directamente al sitio web de Staking
 
-1. To connect your Ledger device directly to the Core Testnet Staking website, click on "**Ledger**" under the "**Hardware Wallets**" section from the displayed wallet model. Ensure your Ledger device is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Para conectar tu dispositivo Ledger directamente al sitio web de Core Testnet Staking, haz clic en “**Ledger**” dentro de la sección “**Hardware Wallets**” del modal de wallets mostrado. Asegúrate de que tu dispositivo Ledger esté conectado, desbloqueado, y que la Ledger Core Testnet app esté abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-ledger-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-2.png)
 </p>
 
-#### Option #2: Connecting Ledger Device Using Xverse Wallet
+#### Opción #2: Conectar el dispositivo Ledger usando Xverse Wallet
 
-Alternatively, you can use Xverse Wallet to redeem BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+Alternativamente, puedes usar Xverse Wallet para redimir BTC directamente desde tu dispositivo Ledger. Para lograr esto, primero se debe agregar el dispositivo Ledger a la wallet de Xverse como requisito previo. Consulta la [guía oficial de Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) para conectar tu Ledger con Xverse.
 
-1. To connect your Ledger device using the Xverse wallet, click on "**Xverse**" under the "**Wallets Supporting Ledger**" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core Testnet app is open on your device.
+1. Para conectar tu dispositivo Ledger usando la wallet Xverse, haz clic en “**Xverse**” dentro de la sección “**Wallets Supporting Ledger**” del modal mostrado. Asegúrate de que tu Ledger esté conectado, desbloqueado, y que la Ledger Core Testnet app esté abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-3.png)
 </p>
 
-2. Unlock your Ledger device and confirm the connection via the Xverse wallet extension.
+2. Desbloquea tu dispositivo Ledger y confirma la conexión mediante la extensión de wallet de Xverse.
 
 <p align="center" style={{zoom:"60%"}}>
 ![connect-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-8.png)
 </p>
 
-### Step#6: Review & Approve Transaction on Ledger Device
+### Paso #6: Revisar y Aprobar la Transacción en el Dispositivo Ledger
 
 1. After connecting your Ledger device, ensure that the device is unlocked and the Ledger Core Testnet app is open. You will be prompted on the screen to approve the transaction.
 
