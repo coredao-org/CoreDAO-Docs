@@ -163,11 +163,11 @@ Pour obtenir des informations détaillées sur le décodeur de transactions de s
 1. **Coller le hachage de transaction :** Entrez le hachage de votre transaction de staking BTC dans l'outil de décodeur
 2. **Obtenir l'état de la transaction**: L'outil fournira l'état actuel de la transaction
 3. **Décoder les détails de la transaction**: Il décodera et affichera:
-   - Input address
-   - Output address
-   - OP_RETURN output details
-   - Validator Address
-   - Delegator address
+   - Veuillez entrer l'adresse
+   - Adresse de sortie
+   - Détails de sortie OP_RETURN
+   - Adresse du validateur
+   - Adresse du délégant
 
 <p align="center" >
 ![btc-staking-txn-decoder](../../../static/img/btc-staking-txn-decoder/decoded-data.png)
