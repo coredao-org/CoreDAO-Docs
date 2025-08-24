@@ -50,9 +50,9 @@ Pour naviguer vers le [BTC Staking Transaction Decoder](https://scan.coredao.org
 3. Collez le hachage de transaction dans le champ de saisie
 4. Cliquez sur le bouton `Decode` pour lancer l'analyse
 
-### Step 3: Analyze Decoded Information
+### Étape 3: Analyser les informations décodées
 
-The decoder will provide detailed information about your transaction:
+Le décodeur fournira des informations détaillées sur votre transaction:
 
 - **Transaction State**: Shows the current status of your staking transaction (Pending, Confirming, Staked, Failed, Expired, Redeemed, or Missed)
 - **Input/Output Addresses**: Shows the flow of BTC in your staking transaction
