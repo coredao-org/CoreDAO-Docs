@@ -151,5 +151,5 @@ Le Core Mainnet est maintenant ajouté à votre MetaMask.
 
 #### Dernier code de  Core Testnet (1114)
 
-Le dernier testnet de Core, Core Testnet2 avec `chainID 1114`, est désormais opérationnel et constitue l'environnement de test recommandé pour la blockchain Core. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). The old testnet, Core Testnet, is now deprecated and no longer maintained.
+Le dernier testnet de Core, Core Testnet2 avec `chainID 1114`, est désormais opérationnel et constitue l'environnement de test recommandé pour la blockchain Core. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). L'ancien testnet, Core Testnet, est désormais obsolète et ne sera plus maintenu.
 :::
