@@ -1,6 +1,6 @@
 ---
-sidebar_label: Redeeming Staked BTC
-description: Guide to redeem timelock expired BTC from Ledger device
+sidebar_label: Redención de BTC Apostados
+description: Guía para redimir BTC con timelock expirado desde un dispositivo Ledger
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -138,46 +138,46 @@ Alternativamente, puedes usar Xverse Wallet para redimir BTC directamente desde 
 
 ### Paso #6: Revisar y Aprobar la Transacción en el Dispositivo Ledger
 
-1. After connecting your Ledger device, ensure that the device is unlocked and the Ledger Core Testnet app is open. You will be prompted on the screen to approve the transaction.
+1. Después de conectar tu dispositivo Ledger, asegúrate de que el dispositivo esté desbloqueado y que la Ledger Core Testnet app esté abierta. Se te solicitará en la pantalla que apruebes la transacción.
 
 <p align="center" style={{zoom:"60%"}}>
 ![prompt-tx-approval](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-7.png)
 </p>
 
-#### Using Xverse Wallet
+#### Usando Xverse Wallet
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si utilizas una wallet Xverse, revisa la transacción. Verifica los detalles y haz clic en "**Confirm**" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-10.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledge**r" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-11.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar Transacción de BTC Staking en el Dispositivo Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
+1. Firma la transacción con tu wallet de Ledger después de revisar los detalles de la transacción.
 
-2. Always use the Ledger Core Testnet app, not the Ledger Bitcoin app, to redeem the staked BTC on the Core Testnet. The Bitcoin app lacks support for redemption/redelegation operations. Further, the Ledger Core Testnet app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Siempre utiliza la Ledger Core Testnet app, no la Ledger Bitcoin app, para redimir los BTC en staking en la Core Testnet. La app de Bitcoin no soporta operaciones de redención/redelegación. Además, la Ledger Core Tesnet app soporta Clear Signing, que muestra todos los detalles de la transacción (como monto, direcciones y comisiones) directamente en la pantalla de tu dispositivo Ledger. Esto garantiza transparencia total y permite verificar y aprobar la transacción, protegiendo tus activos de acciones no deseadas o maliciosas. Para más detalles sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 <p align="center">
 ![sign-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-redeem/btc-redeem-testnet.gif)
 </p>
 
-4. Once the transaction is approved on your Ledger device, the website will display a "Transaction Submitted" notification, confirming that your BTC redemption request has been successfully initiated.
+4. Una vez que la transacción sea aprobada en tu dispositivo Ledger, el sitio web mostrará una notificación de "Transaction Submitted", confirmando que tu solicitud de redención de BTC ha sido iniciada exitosamente.
 
 <p align="center"  style={{zoom:"40%"}}>
 ![tx-submitted](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-14.png)
 </p>
 
-5. After the Bitcoin block of the redemption transaction is confirmed, verify that the redeemed BTC has returned to your receiving Bitcoin address. (This may take a few minutes). You can also view the transaction details on the BTC Explorer.
+5. Después de que se confirme el bloque de Bitcoin de la transacción de redención, verifica que los BTC redimidos hayan regresado a tu Receiving Bitcoin Address. (Esto puede tardar unos minutos). También puedes ver los detalles de la transacción en el BTC Explorer.
 
-## Conclusion
+## Conclusión
 
-By following this guide, you’ve successfully redeemed staked BTC on the Core Testnet using your Ledger hardware wallet. The combination of Core’s Self-Custodial BTC Staking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core Testnet app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core’s decentralized infrastructure. You now have complete ownership of your reclaimed BTC.
+Siguiendo esta guía, has redimido exitosamente BTC en staking en el Core Testnet usando tu Ledger hardware wallet. La combinación del modelo de Self-Custodial BTC Staking de Core y la seguridad líder en la industria de Ledger, mejorada por Clear Signing a través de la aplicación Ledger Core Testnet, proporciona la máxima transparencia, confianza y seguridad. Tu redención exitosa marca una interacción segura y transparente con la infraestructura descentralizada de Core. Ahora tienes propiedad total de tus BTC recuperados.
