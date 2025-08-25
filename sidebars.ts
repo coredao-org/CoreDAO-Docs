@@ -195,6 +195,7 @@ const sidebars: SidebarsConfig = {
             "Dev-Guide/hardhat",
             "Dev-Guide/foundry",
             "Dev-Guide/contract-verify",
+            "Dev-Guide/create-core-dapp",
             {
               type: "link",
               label: "Build dapp on Core",
@@ -229,6 +230,7 @@ const sidebars: SidebarsConfig = {
           items: [
             "Dev-Guide/bridge-with-layerzero",
             "Dev-Guide/core-bridge-resources",
+            "Dev-Guide/thirdweb-universal-bridge"
           ],
         },
       ],
