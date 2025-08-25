@@ -47,10 +47,10 @@ Before you begin, make sure you have:
 > ⚠️ **Note:** You will not be able to redeem or redelegate staked BTC until the designated timelock has expired.
 
 ## Steps to Redeem Expired Timelock BTC 
-After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet address used for staking BTC to redeem your BTC after the timelock expiry.
+After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet Bitcoin address used for staking BTC to redeem your BTC after the timelock expiry.
 
 ### Step #1: Connect Core Wallet to the Staking Website
-1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website. 
+1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same Bitoin address and wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website. 
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -59,7 +59,7 @@ After the timelock period for BTC has expired, users are eligible to redeem or r
 2. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet. 
 
 ### Step #2: Navigate to Staking Dashboard
-1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with  Ledger"s primary Bitcoin (BTC) address.
+1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger's primary Bitcoin (BTC) address.
 2. Navigate to the [Core Ledger BTC Staking Website](https://stake.coredao.org/staking).
 3. On the website UI, hover over your connected wallet in the top right corner and click "**My Staking**".
 
@@ -83,7 +83,7 @@ After the timelock period for BTC has expired, users are eligible to redeem or r
 ### Step #4: Verify BTC Staking and Redemption Details
 1. On the displayed "**Redeem BTC**" modal, cross-check the BTC staking address, the BTC Amount that will be redeemed, and the Receiving Bitcoin address. To redeem the BTC, you must connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction. 
 
-2. Set your Receiving Bitcoin Address to receive the unlocked BTC. This does not need to be the same as the address that initiated the Bitcoin staking transaction. Set your transaction speed priority, and click "**Create Transaction**".
+2. Set your Receiving Bitcoin Address to receive the unlocked BTC. This **must** to be the same as the address that initiated the Bitcoin staking transaction. Set your transaction speed priority, and click "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-4.png)
