@@ -52,11 +52,11 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 
 ## Pasos para Redimir BTC con Timelock Expirado
 
-Después de que el período de timelock de los BTC haya expirado, los usuarios son elegibles para redimir o redelegar sus activos de Bitcoin delegados. Debes usar la misma dirección de wallet de Ledger que utilizaste para hacer staking de BTC al momento de redimir después de la expiración del timelock.
+Después de que el período de timelock de los BTC haya expirado, los usuarios son elegibles para redimir o redelegar sus activos de Bitcoin delegados. You must use the same Ledger wallet Bitcoin address used for staking BTC to redeem your BTC after the timelock expiry.
 
 ### Paso #1: Conectar Core Wallet al sitio web de Staking
 
-1. Conecta tu wallet de Core Mainnet al sitio web de Core BTC Staking. Recuerda usar la misma wallet que utilizaste en el momento de hacer staking de BTC. Haz clic en el botón "**Connect**" en la esquina superior derecha del sitio web.
+1. Conecta tu wallet de Core Mainnet al sitio web de Core BTC Staking. Remember to use the same Bitoin address and wallet that you had used at the time of staking BTC. Haz clic en el botón "**Connect**" en la esquina superior derecha del sitio web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -66,7 +66,7 @@ Después de que el período de timelock de los BTC haya expirado, los usuarios s
 
 ### Paso #2: Navegar al Staking Dashboard
 
-1. Asegúrate de que tu dispositivo Ledger tenga el firmware más reciente instalado y esté conectado a tu computadora con la dirección principal de Bitcoin (BTC) de Ledger.
+1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger's primary Bitcoin (BTC) address.
 2. Ve al [sitio web de Core Ledger BTC Staking] (https://stake.coredao.org/staking).
 3. En la UI del sitio web, coloca el cursor sobre tu wallet conectada en la esquina superior derecha y haz clic en "**My Staking**".
 
@@ -92,7 +92,7 @@ Después de que el período de timelock de los BTC haya expirado, los usuarios s
 
 1. En el modal mostrado "**Redeem BTC**", verifica la BTC staking address, la cantidad de BTC que será redimida y la Receiving Bitcoin address. Para redimir los BTC, debes conectarte a la misma dirección de Bitcoin que se utilizó al iniciar la transacción de Bitcoin staking.
 
-2. Configura tu Receiving Bitcoin Address para recibir los BTC desbloqueados. Esta dirección no necesita ser la misma que la utilizada para iniciar la transacción de staking. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
+2. Configura tu Receiving Bitcoin Address para recibir los BTC desbloqueados. This **must** to be the same as the address that initiated the Bitcoin staking transaction. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-4.png)
