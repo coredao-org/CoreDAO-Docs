@@ -52,11 +52,11 @@ Avant de commencer, assurez-vous d'avoir:
 
 ## Étapes pour récupérer des BTC à verrouillage temporel expirés
 
-Après l'expiration de la période de verrouillage temporaire pour les BTC mis en jeu, les utilisateurs sont éligibles pour rembourser ou redéléguer leurs actifs Bitcoin délégués. Vous devez utiliser la même adresse de portefeuille Ledger utilisée pour mettre en jeu des BTC pour redéléguer vos BTC après l'expiration du verrouillage temporaire.
+Après l'expiration de la période de verrouillage temporaire pour les BTC mis en jeu, les utilisateurs sont éligibles pour rembourser ou redéléguer leurs actifs Bitcoin délégués. You must use the same Ledger wallet Bitcoin address used for staking BTC to redeem your BTC after the timelock expiry.
 
 ### Étape #1: Connecter le portefeuille Core au site Web de staking
 
-1. Connectez votre portefeuille Core Mainnet au site Web de staking. N'oubliez pas d'utiliser le même portefeuille que celui que vous aviez utilisé au moment de la mise en jeu des BTC. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
+1. Connectez votre portefeuille Core Mainnet au site Web de staking. Remember to use the same Bitoin address and wallet that you had used at the time of staking BTC. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -66,7 +66,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 ### Étape #2: Accédez au tableau de bord de staking
 
-1. Assurez-vous que votre appareil Ledger est mis à jour avec le dernier firmware et connecté à votre ordinateur avec l'adresse Bitcoin (BTC) principale de Ledger.
+1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger's primary Bitcoin (BTC) address.
 2. Accédez au site [Core Ledger BTC Staking Website](https://stake.coredao.org/staking).
 3. Sur le site Web de staking, survolez votre portefeuille connecté en haut à droite, puis cliquez sur **‘My Staking**".
 
@@ -92,7 +92,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 1. Sur le modal "**Redeem BTC**" affiché, vérifiez en croisant les informations l'adresse de mise en jeu de BTC, le montant de BTC qui sera récupéré et l'adresse Bitcoin de réception. Pour récupérer les Bitcoins, vous devez vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking Bitcoin.
 
-2. Définissez votre adresse de réception Bitcoin pour recevoir les BTC déverrouillés. Elle ne doit pas nécessairement être la même que celle ayant initié la transaction de staking Bitcoin. Définissez la priorité de vitesse de votre transaction, puis cliquez sur "**Create Transaction**".
+2. Définissez votre adresse de réception Bitcoin pour recevoir les BTC déverrouillés. This **must** to be the same as the address that initiated the Bitcoin staking transaction. Définissez la priorité de vitesse de votre transaction, puis cliquez sur "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-4.png)
