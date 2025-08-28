@@ -1,6 +1,6 @@
 ---
 sidebar_label: Staking BTC con Core
-description: Guide to stake BTC from Ledger device on Core Testnet
+description: Guía para hacer Staking de BTC desde un dispositivo Ledger en Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -40,10 +40,10 @@ Las versiones de firmware listadas arriba reflejan las más recientes disponible
 
 Antes de comenzar, asegúrate de tener lo siguiente:
 
- - Un dispositivo Ledger con el firmware más reciente.
- - Ledger Live instalado y configurado en tu computadora.
- - Si usas Xverse Wallet, tu dispositivo Ledger debe estar agregado a la Xverse Wallet.
- - Suficiente Bitcoin Testnet4 BTC (mínimo 0.01 BTC) disponible en su dispositivo Ledger para hacer staking y cubrir las tarifas de transacción.
+- Un dispositivo Ledger con el firmware más reciente.
+- Ledger Live instalado y configurado en tu computadora.
+- Si usas Xverse Wallet, tu dispositivo Ledger debe estar agregado a la Xverse Wallet.
+- Suficiente Bitcoin Testnet4 BTC (mínimo 0.01 BTC) disponible en su dispositivo Ledger para hacer staking y cubrir las tarifas de transacción.
 
 ## Configuración del Dispositivo Ledger
 
