@@ -19,6 +19,8 @@ Pour garantir une expérience sécurisée et fluide, veuillez noter les exigence
 
 3. **Mettez en jeu des BTC uniquement à partir de l'adresse du portefeuille BTC principal:** Le staking de BTC n'est actuellement pris en charge qu'à partir de l'adresse de votre portefeuille BTC principal Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles.
 
+4. **Only Native Segwit Bitcoin Address Type Supported:** Currently, only Native SegWit Bitcoin addresses are supported for BTC staking via Ledger hardware.
+
 ## Portefeuilles matériels Ledger pris en charge
 
 Les appareils matériels Ledger suivants prennent actuellement en charge la mise en jeu, le rachat et la réaffectation de BTC sur la blockchain Core Testnet. Pour une expérience et une compatibilité optimales, assurez-vous que votre appareil fonctionne avec le dernier micrologiciel disponible.
@@ -40,16 +42,18 @@ Les versions du micrologiciel indiquées ci-dessus reflètent la dernière versi
 
 Avant de commencer, assurez-vous d'avoir:
 
- - Un appareil Ledger pris en charge avec le dernier micrologiciel.
- - Ledger Live est installé et correctement configuré sur votre ordinateur.
- - Si vous utilisez le portefeuille Xverse, votre appareil Ledger est ajouté au portefeuille Xverse.
- - Assurez-vous d'avoir suffisamment de Bitcoin Testnet4 BTC (minimum 0,01 BTC) disponibles sur votre appareil Ledger pour la mise en jeu et pour couvrir les frais de transaction.
+- Un appareil Ledger pris en charge avec le dernier micrologiciel.
+- Ledger Live est installé et correctement configuré sur votre ordinateur.
+- You need to have a BTC address on your Ledger device, which can be acquired through either Ledger Live or the Xverse wallet.
+  - BTC addresses created via wallets other than Xverse and Ledger Live have not been tested - use at your own risk.
+  - For Xverse Wallet, add your Ledger device to the Xverse Wallet.
+- Assurez-vous d'avoir suffisamment de Bitcoin Testnet4 BTC (minimum 0,01 BTC) disponibles sur votre appareil Ledger pour la mise en jeu et pour couvrir les frais de transaction.
 
 ## Configuration de l'appareil Ledger
 
 Avant de mettre en jeu des BTC sur le réseau de test Core, il est recommandé de s'assurer que votre portefeuille matériel Ledger est mis à jour avec le dernier firmware compatible et configuré pour fonctionner avec le réseau de Core Testnet.
 
-### Étape 1: Mettre à jour votre appareil Ledger
+### Update Your Ledger Device
 
 Assurez-vous que votre appareil Ledger est mis à jour et prêt à l'emploi.
 
@@ -75,7 +79,7 @@ L'application Core Testnet n'est pas installée par défaut sur le Ledger Live M
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app-1.png)
 </p>
 
-#### Installation de l'application Ledger Core Testnet
+##### Installation de l'application Ledger Core Testnet
 
 1. Avec votre appareil connecté à votre ordinateur, ouvrez l'application Ledger Live et accédez à "**My Ledger**".
 
@@ -89,13 +93,15 @@ L'application Core Testnet n'est pas installée par défaut sur le Ledger Live M
 
 :::note
 Pour miser des BTC sur le réseau de test Core avec un appareil Ledger, les utilisateurs doivent utiliser uniquement l'application Core Testnet. Contrairement à l'application Bitcoin, qui repose sur la signature aveugle, l'application Core prend en charge la signature claire, permettant aux utilisateurs de visualiser et de vérifier pleinement les détails des transactions avant de les signer et de les approuver. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
-. Install Bitcoin Testnet and the Bitcoin app on your Ledger device.\
-2. Avec votre appareil connecté à l'ordinateur, dans l'application Ledger Live, naviguez vers l'onglet "**Accounts**" et cliquez sur "**Add Account**".<p align="center" style={{zoom:"40%"}}>    
+:::#### Setup Bitcoin Testnet AccountCurrently, staking from a Ledger device is only supported via the primary Bitcoin account on the Ledger device.
+If you have a new Ledger device, the first Bitcoin account you set up is the primary account. Refer here for detailed steps on stepping up the Bitcoin Address on the Ledger device using Ledger Live.
+If you have multiple Bitcoin accounts already set up on your ledger device, refer here for instructions on how to identify the primary account.⚠️ Disclaimer: Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to proceed with untested wallets should do so at their own risk.##### Setting up Bitcoin Address using Ledger LiveTo set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC tokens for staking, follow the steps below:1) Install Bitcoin Testnet and the Bitcoin app on your Ledger device.
+2) Avec votre appareil connecté à l'ordinateur, dans l'application Ledger Live, naviguez vers l'onglet "**Accounts**" et cliquez sur "**Add Account**".<p align="center" style={{zoom:"40%"}}>    
 ![Add-Account](../../../../../static/img/ledger-core/testnet/btc-staking/UI-1.png)
 </p>3) Recherchez "testnet" et sélectionnez Bitcoin Testnet (BTC). Click on Continue<p align="center" style={{zoom:"50%"}}>
 ![Add-Account-2](../../../../../static/img/ledger-core/testnet/btc-staking/UI-2.png)
 </p>4) Approuvez l'application Bitcoin Test sur votre appareil de portefeuille matériel.
-5) Sur l'écran suivant, choisissez le format d'adresse (Native SegWit / SegWit).
+5) On the next screen, choose the address format (Native SegWit). Note that only the Bitcoin Native Segwit Address type is supported for staking BTC on Core using Ledger hardware wallets.
 6) Cliquez sur le bouton **Add Account**.<p align="center" style={{zoom:"50%"}}>
 ![Add Accounts 3](../../../../../static/img/ledger-core/testnet/btc-staking/UI-3.png)
 </p>7) Vous avez ajouté avec succès un compte Bitcoin sur l'application Bitcoin testnet.<p align="center" style={{zoom:"65%"}}>
@@ -111,6 +117,14 @@ Utilisez toujours l'application Core Testnet pour miser, échanger ou réaffecte
 :::
 
 #### Configurer un compte Bitcoin Testnet
+
+Currently, staking from a Ledger device is only supported via the primary Bitcoin account on the Ledger device.
+If you have a new Ledger device, the first Bitcoin account you set up is the primary account. Refer here for detailed steps on stepping up the Bitcoin Address on the Ledger device using Ledger Live.
+If you have multiple Bitcoin accounts already set up on your ledger device, refer here for instructions on how to identify the primary account.
+
+⚠️ Disclaimer: Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to proceed with untested wallets should do so at their own risk.
+
+##### Setting up Bitcoin Address using Ledger Live
 
 Pour configurer une adresse de compte Bitcoin contenant des jetons Bitcoin Testnet4 BTC pour le staking, suivez les étapes ci-dessous:
 
@@ -128,7 +142,7 @@ Pour configurer une adresse de compte Bitcoin contenant des jetons Bitcoin Testn
 </p>
 
 4. Approuvez l'application Bitcoin Test sur votre appareil de portefeuille matériel.
-5. Sur l'écran suivant, choisissez le format d'adresse (Native SegWit / SegWit).
+5. On the next screen, choose the address format (Native SegWit). Note that only the Bitcoin Native Segwit Address type is supported for staking BTC on Core using Ledger hardware wallets.
 6. Cliquez sur le bouton **Add Account**.
 
 <p align="center" style={{zoom:"50%"}}>
@@ -260,10 +274,10 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 </p>
 
 3. **Confirmer les détails du staking BTC:** Confirmez le montant de BTC à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
-    - Confirmez le montant de BTC que vous souhaitez verrouiller dans le cadre d'un timelock. Le montant minimum à déléguer est de 0,01 BTC.
-    - La définition de la durée de verrouillage détermine quand vos Bitcoins seront déverrouillés et à nouveau disponibles pour le rachat ou la réattribution.
-    - Notez que la durée de verrouillage sur l'interface utilisateur du site Web de staking est basée sur le fuseau horaire local de l'utilisateur, qui peut ne pas correspondre au fuseau horaire UTC de l'appareil Ledger.
-    - Spécifiez la vitesse de priorité du réseau pour votre transaction.
+   - Confirmez le montant de BTC que vous souhaitez verrouiller dans le cadre d'un timelock. Le montant minimum à déléguer est de 0,01 BTC.
+   - La définition de la durée de verrouillage détermine quand vos Bitcoins seront déverrouillés et à nouveau disponibles pour le rachat ou la réattribution.
+   - Notez que la durée de verrouillage sur l'interface utilisateur du site Web de staking est basée sur le fuseau horaire local de l'utilisateur, qui peut ne pas correspondre au fuseau horaire UTC de l'appareil Ledger.
+   - Spécifiez la vitesse de priorité du réseau pour votre transaction.
 
 <p align="center" style={{zoom:"80%"}}>  
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-11.png)
