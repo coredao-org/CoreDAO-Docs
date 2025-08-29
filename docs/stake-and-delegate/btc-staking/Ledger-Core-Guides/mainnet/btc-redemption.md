@@ -47,10 +47,10 @@ Before you begin, make sure you have:
 > ⚠️ **Note:** You will not be able to redeem or redelegate staked BTC until the designated timelock has expired.
 
 ## Steps to Redeem Expired Timelock BTC 
-After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet address used for staking BTC to redeem your BTC after the timelock expiry.
+After the timelock period for BTC has expired, users are eligible to redeem or redelegate their delegated Bitcoin assets. You must use the same Ledger wallet Bitcoin address used for staking BTC to redeem your BTC after the timelock expiry.
 
 ### Step #1: Connect Core Wallet to the Staking Website
-1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website. 
+1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same Bitoin address and wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website. 
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -59,7 +59,7 @@ After the timelock period for BTC has expired, users are eligible to redeem or r
 2. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet. 
 
 ### Step #2: Navigate to Staking Dashboard
-1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with  Ledger"s primary Bitcoin (BTC) address.
+1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger's primary Bitcoin (BTC) address.
 2. Navigate to the [Core Ledger BTC Staking Website](https://stake.coredao.org/staking).
 3. On the website UI, hover over your connected wallet in the top right corner and click "**My Staking**".
 
