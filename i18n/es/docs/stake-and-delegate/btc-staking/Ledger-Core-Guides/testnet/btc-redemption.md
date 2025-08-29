@@ -96,7 +96,9 @@ Después de que el período de timelock de los BTC haya expirado, los usuarios s
 
 1. En la ventana emergente "**Redeem BTC**", verifica la **BTC staking address**, la **BTC Amount** que será redimida y la **Receiving Bitcoin address**. Para redimir los BTC, **_debes_** conectarte a la misma dirección de Bitcoin que se utilizó al iniciar la transacción de Bitcoin staking.
 
-2. Configura tu **Receiving Bitcoin Address** para recibir los BTC desbloqueados. Esta dirección no necesita ser la misma que la utilizada para iniciar la transacción de staking. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
+2. Configura tu **Receiving Bitcoin Address** para recibir los BTC desbloqueados. This **must** be the same as the address that initiated the Bitcoin staking transaction and **must** be the Native Segwit address type.
+
+3. Set your transaction speed priority, and click "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![verify-tx-details](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-12.png)
