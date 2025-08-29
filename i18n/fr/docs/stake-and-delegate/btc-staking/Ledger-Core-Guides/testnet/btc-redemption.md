@@ -96,7 +96,9 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 1. Sur la fenêtre modale "**Redeem BTC**" affichée, vérifiez attentivement **l'adresse de staking BTC**, le **montant de BTC** qui sera racheté et **l'adresse Bitcoin de réception**. Pour récupérer les Bitcoins, vous **_devez_** vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking Bitcoin.
 
-2. Définissez votre **adresse de réception Bitcoin** pour recevoir les BTC déverrouillés. Elle ne doit pas nécessairement être la même que celle ayant initié la transaction de staking Bitcoin. Définissez la priorité de vitesse de votre transaction, puis cliquez sur "**Create Transaction**".
+2. Définissez votre **adresse de réception Bitcoin** pour recevoir les BTC déverrouillés. This **must** be the same as the address that initiated the Bitcoin staking transaction and **must** be the Native Segwit address type.
+
+3. Set your transaction speed priority, and click "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![verify-tx-details](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-12.png)
