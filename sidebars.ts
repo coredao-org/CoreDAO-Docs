@@ -116,6 +116,17 @@ const sidebars: SidebarsConfig = {
             },
           ],
         },
+                {
+          type: "category",
+          collapsed: true,
+          label: "Rev+ Revenue Sharing Model",
+          items: [
+            "Learn/rev-plus/overview",
+            "Learn/rev-plus/design",
+            "Learn/rev-plus/compatibility-guide",
+            "Learn/rev-plus/track-and-receive-rewards",
+            ],
+        },
         "Learn/governance",
         {
           type: "category",
@@ -247,9 +258,9 @@ const sidebars: SidebarsConfig = {
         "FAQs/core-node-faqs",
         "FAQs/validator-faqs",
         "FAQs/delegator-faqs",
-        //"FAQs/coreBTC-faqs",
         "FAQs/btc-staking-faqs",
         "FAQs/dual-staking-faqs",
+        "FAQs/ledger-core-faqs",
         "FAQs/LST-stCore-faqs",
         "FAQs/core-api-faqs",
       ],

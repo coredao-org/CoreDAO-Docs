@@ -18,8 +18,9 @@ To ensure a secure and seamless experience, please note the following key requir
 2.  **Always Use the Ledger’s Core App:** You must use Ledger’s Core Testnet app, not the standard Bitcoin app, when staking or redeeming BTC on Core Testnet. Staking BTC with the Bitcoin app may result in the inability to redeem your BTC, resulting in permanent loss of assets.
     
 3.  **Stake BTC Only from the Primary BTC Wallet Address:** BTC staking is currently supported from your Ledger’s primary BTC wallet address only. Secondary or derived addresses are currently not compatible.
-  
 
+4. **Only Native Segwit Bitcoin Address Type Supported:** Currently, only Native SegWit Bitcoin addresses are supported for BTC staking via Ledger hardware. 
+  
 ## Supported Ledger Hardware Wallets
 
 The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC on the Core Testnet. For the best experience and compatibility, ensure your device is running the latest available firmware.
@@ -43,14 +44,16 @@ Before you begin, make sure you have:
 
 -   A supported Ledger device with the latest firmware.
 -   Ledger Live is installed and set up on your computer.
--   If using Xverse Wallet, your Ledger device is added to the Xverse Wallet.
+-   You need to have a BTC address on your Ledger device, which can be acquired through either Ledger Live or the Xverse wallet. 
+    - BTC addresses created via wallets other than Xverse and Ledger Live have not been tested - use at your own risk.
+    - For Xverse Wallet, add your Ledger device to the Xverse Wallet.
 -   Sufficient Bitcoin Testnet4 BTC (minimum 0.01 BTC) available on your Ledger device for staking and covering transaction fees. 
 
 ## Setting up Ledger Device
 
 Before staking BTC on Core Testnet, as a best practice, make sure your Ledger hardware wallet is updated with the latest or supporting firmware, and configured and ready to use with the Core Testnet.
 
-### Step 1: Update Your Ledger Device
+### Update Your Ledger Device
 
 Ensure your Ledger device is updated and ready for use.
 
@@ -76,7 +79,7 @@ The Core Testnet app is not installed by default on Ledger Live Manager. To inst
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app-1.png)
 </p>
 
-#### Installing Ledger Core Testnet app
+##### Installing Ledger Core Testnet app
 
 1.  With your device connected, open Ledger Live and navigate to "**My Ledger**".
     
@@ -94,6 +97,13 @@ For staking BTC on Core Testnet with a Ledger device, users must use only the Co
 
 #### Setup Bitcoin Testnet Account
 
+Currently, staking from a Ledger device is only supported via the primary Bitcoin account on the Ledger device. 
+If you have a new Ledger device, the first Bitcoin account you set up is the primary account. Refer here for detailed steps on stepping up the Bitcoin Address on the Ledger device using Ledger Live. 
+If you have multiple Bitcoin accounts already set up on your ledger device, refer here for instructions on how to identify the primary account.
+
+⚠️ Disclaimer: Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to proceed with untested wallets should do so at their own risk.
+
+##### Setting up Bitcoin Address using Ledger Live 
 To set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC tokens for staking, follow the steps below:
 
 1. Install Bitcoin Testnet and the Bitcoin app on your Ledger device.  
@@ -110,7 +120,7 @@ To set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC token
 </p>
 
 4. Approve the Bitcoin Test app on your hardware wallet device.
-5. On the next screen, choose the address format (Native SegWit / SegWit).
+5. On the next screen, choose the address format (Native SegWit). Note that only the Bitcoin Native Segwit Address type is supported for staking BTC on Core using Ledger hardware wallets.
 6. Click on the **Add Account** button.
 
 <p align="center" style={{zoom:"50%"}}>
