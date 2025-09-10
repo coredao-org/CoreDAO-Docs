@@ -247,7 +247,7 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.5/',
-    to: '/core-white-paper-v1.0.7/',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/docs/Learn/products/btc-staking/design',
@@ -331,11 +331,11 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.7?utm_source=Sailthru&utm_medium=email&utm_campaign=Protocol- 6/12/2024&utm_term=The Protocol',
-    to: '/core-white-paper-v1.0.7/',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7',
-    to: '/core-white-paper-v1.0.7/',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/api',
@@ -455,51 +455,51 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-stake',
-    to: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-stake',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-work',
-    to: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-work',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/appendices/appendix-b',
-    to: '/core-white-paper-v1.0.7/appendices/appendix-b',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/major-components-roles-and-workflows',
-    to: '/core-white-paper-v1.0.7/satoshi-plus-consensus/major-components-roles-and-workflows',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/appendices/appendix-a',
-    to: '/core-white-paper-v1.0.7/appendices/appendix-a',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/appendices',
-    to: '/core-white-paper-v1.0.7/appendices',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/references',
-    to: '/core-white-paper-v1.0.7/references',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/',
-    to: '/',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/background',
-    to: '/core-white-paper-v1.0.7/background',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/governance',
-    to: '/core-white-paper-v1.0.7/governance',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/developer/web3-development/how-to-develop-a-dapp-on-core',
-    to: '/docs/Dev-Guide/create-core-dapp',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election',
-    to: '/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/satoshi-plus-consensus/rewards',
@@ -523,7 +523,7 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.6/satoshi-plus-consensus',
-    to: '/core-white-paper-v1.0.7/satoshi-plus-consensus',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/developer/interacting-with-core/core-rpcs-through-the-command-line',
@@ -547,7 +547,7 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.5/background/related-works',
-    to: '/core-white-paper-v1.0.7/background#related-works',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/developer/develop-on-core/core-subgraph',
@@ -555,7 +555,7 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.7/tokenomics',
-    to: '/core-white-paper-v1.0.7/tokenomics',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/developer/develop-on-core/bridging-with-core/bridging-tokens-to-core-with-layerzero',
@@ -563,11 +563,11 @@ const config: Config = {
   },
 {
     from: '/core-white-paper-v1.0.6/tokenomics',
-    to: '/core-white-paper-v1.0.7/tokenomics',
+    to: 'https://whitepaper.coredao.org/',
   },
 {
     from: '/core-white-paper-v1.0.6/',
-    to: '/core-white-paper-v1.0.7',
+    to: 'https://whitepaper.coredao.org/',
   },
         ],
       },
