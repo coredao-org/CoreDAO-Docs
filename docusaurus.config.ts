@@ -78,6 +78,16 @@ const config: Config = {
 
   plugins: [
     [
+       '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/Learn/economics/core-token/tokenomics-and-utility',
+            to: '/docs/Learn/core-token/tokenomics',
+          },
+        ],
+      },
+      
       "docusaurus-plugin-openapi-docs",
       {
         id: "api", // plugin id
