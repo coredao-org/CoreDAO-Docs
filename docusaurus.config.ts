@@ -93,10 +93,10 @@ const config: Config = {
             from: '/core-white-paper-v1.0.6/',
             to: 'https://whitepaper.coredao.org/',
           },
-          {
-            from: '/docs/Learn/core-concepts/overview',
-            to:'/docs/learn/core-concepts/overview',
-          },
+          // {
+          //   from: '/docs/Learn/core-concepts/overview',
+          //   to:'/docs/learn/core-concepts/overview',
+          // },
           {
             from: '/docs/Learn/products/btc-staking/btc-staking-working',
             to: '/docs/stake-and-delegate/btc-staking/btc-staking-working',
@@ -144,7 +144,7 @@ const config: Config = {
           {
               from: '/docs/Learn/products/btc-staking/faqs-btc-staking',
               to: '/docs/FAQs/btc-staking-faqs',
-            },
+          },
           {
               from: '/docs/Learn/introduction/what-is-core-chain',
               to: '/docs/Learn/introduction/core-101#what-is-core',
