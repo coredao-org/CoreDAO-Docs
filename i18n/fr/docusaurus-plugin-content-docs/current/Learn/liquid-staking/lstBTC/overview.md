@@ -47,5 +47,5 @@ Géré via la stratégie institutionnelle de Maple Finance:
 
 - **Stimule la demande de CORE**— La création de lstBTC nécessite l'acquisition et le staking de CORE
 - **Stimule la participation au staking**— Augmente le volume global de staking dual
-- **Intégration institutionnelle**— Augmente l'implication institutionnelle avec Core
+- \*\* Intégration institutionnelle\*\*— Augmente l'implication institutionnelle avec Core
 - **Expansion de la liquidité des jetons de rendement**— Crée un actif négociable sur Core

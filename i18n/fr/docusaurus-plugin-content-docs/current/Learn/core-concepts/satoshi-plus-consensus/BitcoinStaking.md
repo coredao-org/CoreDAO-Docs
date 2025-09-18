@@ -30,7 +30,7 @@ L'opcode CheckLockTimeVerify (CLTV) de Bitcoin permet aux détenteurs de verroui
 
 - **Période de verrouillage minimale**: 24 heures
 - **Durée flexible**: Vous choisissez la durée de verrouillage
-- **Appliqué par le protocole**: Tous les nodes Bitcoin respectent le verrouillage automatiquement
+- **Appliqué par le protocole**: Tous les nœuds Bitcoin respectent le verrouillage automatiquement
 
 Pendant cette période, les Bitcoins sont non dépensables - même par le propriétaire - jusqu'à l'expiration du verrou.
 
@@ -38,7 +38,7 @@ Pendant cette période, les Bitcoins sont non dépensables - même par le propri
 
 Lors de la création de la transaction de verrouillage temporel, vous incluez des métadonnées dans le script de remboursement spécifiant :
 
-- **Quel validateur Core** vous soutenez
+- \*\* Quel validateur Core\*\* vous soutenez
 - **Quelle adresse EVM** doit recevoir vos récompenses en jetons CORE
 
 Votre pouvoir de vote sur Core est **proportionnel au montant de Bitcoin** que vous verrouillez temporairement pour soutenir un validateur.

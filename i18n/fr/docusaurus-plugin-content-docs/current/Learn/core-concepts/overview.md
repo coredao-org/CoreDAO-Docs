@@ -14,9 +14,9 @@ slug: /Apprendre/concepts-clés/aperçu
 
 Core est une blockchain Layer-1 haute performance compatible EVM, conçue pour être la plate-forme de contrats intelligents complémentaire et hyper-scalable de Bitcoin. En tirant parti des verrous temporels CLTV natifs de Bitcoin, de la puissance de hachage du minage Bitcoin et des capacités de contrats intelligents modernes, Core libère Bitcoin en tant que protecteur principal et actif central d'un écosystème d'applications décentralisées prospère.
 
-### Le premier mécanisme de Self-Custodial Bitcoin Staking
+### Le premier mécanisme de staking Bitcoin non-custodial
 
-Le composant de Self-Custodial Bitcoin Staking de Satoshi Plus est le premier mécanisme de Self-Custodial Bitcoin Staking opérationnel, permettant aux détenteurs de Bitcoin de générer un rendement natif sans altérer les postulats de confiance de Bitcoin.
+Le composant de staking Bitcoin non-custodial de Satoshi Plus est le premier mécanisme de staking Bitcoin non-custodial opérationnel, permettant aux détenteurs de Bitcoin de générer un rendement natif sans altérer les postulats de confiance de Bitcoin.
 
 ### Exploiter la sécurité de Bitcoin et donner du pouvoir aux mineurs
 
@@ -55,8 +55,8 @@ La blockchain Core dispose d'un processus de gouvernance en chaîne fondamental.
 ## L'écosystème des développeurs Core
 
 - [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
-- [Core Ignition](https://ignition.coredao.org/)
-- [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
+- [Core Missions](https://coredao.org/blog/the-future-of-core-incentive-campaigns)
+- [Core Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
 - [Core Commit Program](https://coredao.org/initiatives/commit-program)
 

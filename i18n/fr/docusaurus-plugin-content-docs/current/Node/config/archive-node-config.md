@@ -7,11 +7,11 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Node d'archivage sur Core
+# Nœuds d'archivage sur Core
 
 ---
 
-Les nodes d'archive dans le réseau Core jouent un rôle crucial en conservant l'état historique complet du réseau. Ces nodes sont des versions spécialisées des nodes complets, avec des capacités améliorées, conçues pour stocker et fournir un accès à l'historique entier de toutes les transactions et états depuis le début de Core.
+Les nœuds d'archive dans le réseau Core jouent un rôle crucial en conservant l'état historique complet du réseau. Ces nœuds sont des versions spécialisées des nœuds complets, avec des capacités améliorées, conçues pour stocker et fournir un accès à l'historique entier de toutes les transactions et états depuis le début de Core.
 
 ## Requis Systèmes
 
@@ -21,11 +21,11 @@ Plusieurs exigences, à la fois logicielles et matérielles, sont nécessaires p
 
 - **Système d'exploitation:** Actuellement, un nœud d'archivage Core est compatible uniquement avec les systèmes d'exploitation **macOS** ou **Linux** (Ubuntu 20.04 ou ultérieur).
 - **Connectivité réseau:** Connexion Internet stable avec une faible latence et une haute disponibilité.
-- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nodes.
+- **Configuration du pare-feu:** Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
 
 ### Matériel
 
-Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, garantissant la disponibilité et l'intégrité des données pour les participants du réseau. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nodes d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. Voici les exigences matérielles pour exécuter un nœud d'archivage sur Core.
+Un nœud d'archivage sur Core stocke l'historique complet de la blockchain, garantissant la disponibilité et l'intégrité des données pour les participants du réseau. Il prend en charge l'interrogation des transactions passées, la vérification des données historiques et l'amélioration de l'analyse de la blockchain. Bien que non requis pour le consensus, les nœuds d'archivage jouent un rôle crucial dans le maintien de la transparence et le soutien des applications décentralisées. Voici les exigences matérielles pour exécuter un nœud d'archivage sur Core.
 
 <Tabs
 defaultValue="testnetTwo"
@@ -33,7 +33,7 @@ values={[
 {label: 'Testnet2', value: 'testnetTwo'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnetTwo">
-Pour les nodes d'archivage sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+Pour les nœuds d'archivage sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
 ```
 | Exigences   | Détails                                                                                                 |  
@@ -47,7 +47,7 @@ Pour les nodes d'archivage sur **Core Testnet2**, les spécifications matériell
   </TabItem>
 
   <TabItem value="mainnet">
-    Pour les nodes d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
+    Pour les nœuds d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
 
 ```
 | Exigences   | Détails                                                                                                 |  

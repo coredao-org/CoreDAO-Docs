@@ -4,8 +4,8 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer des onglets depuis « @theme/Tabs » ;
+importer un élément d'onglet depuis « @theme/TabItem » ;
 
 # Explorateur Blockchain Core Scan
 
@@ -18,9 +18,13 @@ Core Explorer est une interface graphique permettant aux utilisateurs d'interagi
 {label: 'Mainnet', value: 'mainnet'},
 ]}>
 
-<TabItem value="testnet2">- **Core Testnet2 Explorer:** https://scan.test2.btcs.network/</TabItem>
+<TabItem value="testnet2">
+    * **Core Testnet2 Explorer:** https://scan.test2.btcs.network/
+</TabItem>
 
-<TabItem value="mainnet">- **Core Mainnet Explorer:** https://scan.coredao.org/</TabItem>
+<TabItem value="mainnet">
+    * **Core Mainnet Explorer:** https://scan.coredao.org/
+</TabItem>
 
 </Tabs>
 
@@ -31,4 +35,4 @@ Vous pouvez utiliser l'explorateur de blockchain Testnet Core pour rechercher et
 - Celle où vous avez récupéré des tCORE2 depuis le Faucet;
 - Celle où vous avez envoyé des tCORE2 à une autre adresse;
 
-![core-explorer](../../../../../static/img/core-explorer.png)
+![core-explorer](../../static/img/core-explorer.png)

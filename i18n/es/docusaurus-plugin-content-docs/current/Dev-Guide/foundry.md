@@ -113,7 +113,33 @@ Navega al directorio `src` y crea un nuevo contrato en Solidity. Comencemos con 
 Crea un archivo llamado `Counter.sol` dentro de la carpeta `src`:
 
 ```javascript
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.24;
 
+
+contract Counter {
+    uint256 public count;
+
+
+    constructor() {
+        count = 0;
+    }
+
+
+    function increment() public {
+        count += 1;
+    }
+
+
+    function decrement() public {
+        count -= 1;
+    }
+
+
+    function getCount() public view returns (uint256) {
+        return count;
+    }
+}
 ```
 
 En este contrato:
@@ -131,7 +157,40 @@ Foundry facilita la escritura de pruebas para tus contratos. El framework de pru
 Navega al directorio `test` y crea un archivo de prueba llamado `Counter.t.sol`:
 
 ```javascript
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.24;
 
+
+import "forge-std/Test.sol";
+import "../src/Counter.sol";
+
+
+contract CounterTest is Test {
+    Counter counter;
+
+
+    function setUp() public {
+        counter = new Counter();
+    }
+
+
+    function testInitialCount() public {
+        assertEq(counter.getCount(), 0);
+    }
+
+
+    function testIncrement() public {
+        counter.increment();
+        assertEq(counter.getCount(), 1);
+    }
+
+
+    function testDecrement() public {
+        counter.increment();
+        counter.decrement();
+        assertEq(counter.getCount(), 0);
+    }
+}
 ```
 
 ### Explicación:
@@ -152,7 +211,20 @@ Foundry compilará el contrato, ejecutará las pruebas y te proporcionará un re
 Deberías ver una salida similar a la siguiente:
 
 ```bash
+[⠊] Compiling...
+[⠔] Compiling 1 files with Solc 0.8.28
+[⠒] Solc 0.8.28 finished in 491.38ms
+Compiler run successful!
 
+
+Ran 3 tests for test/Counter.t.sol:CounterTest
+[PASS] testDecrement() (gas: 22192)
+[PASS] testIncrement() (gas: 32003)
+[PASS] testInitialCount() (gas: 10943)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 5.38ms (3.86ms CPU time)
+
+
+Ran 1 test suite in 148.37ms (5.38ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)
 ```
 
 ## 5. Desplegando el Contrato
@@ -164,7 +236,31 @@ Una vez que hayas escrito y probado tu contrato en Solidity, puedes desplegarlo 
 Para desplegar tu contrato, necesitarás configurar un script de despliegue. Crea un archivo llamado `Counter.s.sol` dentro de la carpeta script y pega el siguiente código.
 
 ```javascript
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.24;
 
+
+import {Script, console} from "forge-std/Script.sol";
+import {Counter} from "../src/Counter.sol";
+
+
+contract CounterScript is Script {
+    Counter public counter;
+
+
+    function setUp() public {}
+
+
+    function run() public {
+        vm.startBroadcast();
+
+
+        counter = new Counter();
+
+
+        vm.stopBroadcast();
+    }
+}
 ```
 
 #### Creación y Carga de Variables de Entorno

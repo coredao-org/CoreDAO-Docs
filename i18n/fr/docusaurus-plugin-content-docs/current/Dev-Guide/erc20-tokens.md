@@ -17,9 +17,9 @@ ERC-20 est une norme pour les jetons fongibles sur la blockchain Ethereum. Contr
 
 Avant de commencer, vous aurez besoin:
 
-- **Metamask** ou tout portefeuille EVM.
-- Une compréhension de base de **Solidity** (bien que nous vous guiderons tout au long du processus).
-- **Accès à  remix ide:** [https://remix.ethereum.org](https://remix.ethereum.org).
+- \*\* Metamask \*\* ou tout portefeuille EVM.
+- Une compréhension de base de \*\* Solidity \*\* (bien que nous vous guiderons tout au long du processus).
+- Accès à \*\* remix ide \*\*: [https://remix.ethereum.org] (https://remix.ethereum.org)
 
 ## Étape 1: Utilisez l'assistant Openzeppelin pour générer votre contrat ERC-20
 
@@ -27,49 +27,45 @@ Avant de commencer, vous aurez besoin:
 
 Openzeppelin fournit des modèles de contrat intelligents sécurisés et vérifiés. L'assistant OpenZeppelin est un excellent outil qui simplifie le processus de création de jetons ERC-20, garantissant que votre contrat suit les meilleures pratiques.
 
-1. **Allez à l'assistant d'Openzeppelin:** ouvrez le [Openzeppelin Wizard](https://wizard.openzeppelin.com/) dans votre navigateur.
-2. **SELECT ERC-20:** Dans la liste des modèles de contrat disponibles, sélectionnez **ERC-20**.
-3. **Personnalisez votre contrat:**
+1. \*\* Allez à l'assistant d'Openzeppelin \*\*: ouvrez le [Openzeppelin Wizard] (https://wizard.openzeppelin.com/) dans votre navigateur.
+2. \*\* SELECT ERC-20 \*\*: Dans la liste des modèles de contrat disponibles, sélectionnez \*\* ERC-20 \*\*.
+3. \*\* Personnalisez votre contrat \*\*:
 
-   - **Nom du jeton**: Entrez le nom de votre jeton (par exemple, `mytoken`).
-   - **Symbole de jeton**: Entrez le symbole de votre jeton (par exemple, `mtk`).
-   - **Alimentation initiale**: Définissez une alimentation initiale pour votre jeton (par exemple, `1000000` jetons ). Il s'agit du nombre de jetons qui seront créés lors du déploiement.
+   - \*\* Nom du jeton \*\*: Entrez le nom de votre jeton (par exemple, `mytoken`).
+   - \*\* Symbole de jeton \*\*: Entrez le symbole de votre jeton (par exemple, `mtk`).
+   - \*\* Alimentation initiale \*\*: Définissez une alimentation initiale pour votre jeton (par exemple, `1000000` jetons ). Il s'agit du nombre de jetons qui seront créés lors du déploiement.
 
 <p align="center">
-![Openzepplin_Wizard-ERC721](../../../../../static/img/dev_tutorials/ERC20_Wizard.png)
+![Openzepplin_Wizard-ERC721](../../static/img/dev_tutorials/ERC20_Wizard.png)
 </p>
 
 Facultativement, vous pouvez inclure des fonctionnalités supplémentaires telles que **minting** and **pausing** Si nécessaire pour votre cas d'utilisation.
 
-4. **Copiez le code:** Une fois que vous avez configuré votre contrat, cliquez sur le bouton **Copy** pour obtenir le code de solidité. Vous pouvez soit le copier dans votre presse-papiers, soit l'ouvrir directement dans REMIX IDE.
+4. \*\* Copiez le code \*\*: Une fois que vous avez configuré votre contrat, cliquez sur le bouton \*\* Copy \*\* pour obtenir le code de solidité. Vous pouvez soit le copier dans votre presse-papiers, soit l'ouvrir directement dans REMIX IDE.
 
 ## Étape 2: Configurez le remix IDE
 
 Remix IDE est une plate-forme en ligne pour le développement de la solidité, ce qui le rend parfait pour les débutants et les tests rapides.
 
-1. **Allez à Remix ide**: ouvrir [remix ide](https://remix.ethereum.org) dans votre navigateur.
-2. **Créez un nouveau fichier de solidité:**
-   - Dans Remix, créez un nouveau fichier en naviguant vers le répertoire **Contrats** et en cliquant sur le bouton **+**.
+1. \*\* Allez à Remix ide \*\*: ouvrir [remix ide] (https://remix.ethereum.org) dans votre navigateur.
+2. \*\* Créez un nouveau fichier de solidité \*\*:
+
+   - Dans Remix, créez un nouveau fichier en naviguant vers le répertoire \*\* Contrats \*\* et en cliquant sur le bouton \*\* + \*\*.
    - Collez le code contractuel ERC-20 que vous avez copié à partir de l'assistant d'Openzeppelin dans le fichier nouvellement créé.
 
-<p align="center">
-![Remix_ERC20_Contract](../../../../../static/img/dev_tutorials/Remix_ERC20.png)
-</p>
-
-3. **Installez les contrats Openzeppelin:**
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20.png)</p>
+3. ** Installez les contrats Openzeppelin **: 
 - Si vous utilisez le **Solidity compiler** intégré de Remix **, il va automatiquement récupérer les contrats OpenZeppelin pour vous.
    - Si vous utilisez HardHat, vous devrez installer manuellement les contrats Openzeppelin en exécutant `NPM install @ openzeppelin / contracts`.
 
 ## Étape 3: Compiler le contrat dans Remix
 
 1. **Compile Your Contract**:
-   - Dans REMIX IDE, accédez à l'onglet du  **Solidity Compiler** (celui avec le logo Solidity).
+   - Dans REMIX IDE, accédez à l'onglet du  **Solidity Compiler** \*\* (celui avec le logo Solidity).
    - Sélectionnez la version du compilateur qui correspond à votre contrat (par exemple, `0.8.24`).
    - Cliquez sur **Compile** pour compiler votre contrat.
 
-<p align="center">
-![Remix_ERC20_Contract](../../../../../static/img/dev_tutorials/Remix_ERC20_Compile.png)
-</p>
+<p align="center">![Remix_ERC20_Contract](../../static/img/dev_tutorials/Remix_ERC20_Compile.png)</p>
 
 2. **Fix Any Errors**: S'il y a des erreurs dans le code, Remix les mettra en surbrillance. Corrigez tous les ereurs et recompilez.
 
@@ -78,23 +74,19 @@ Remix IDE est une plate-forme en ligne pour le développement de la solidité, c
 1. **Connect Remix to MetaMask**:
 
    - Accédez à l'onglet **Deploy & Run Transactions** dans Remix.
-   - Sous **Environment**, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
+   - Sous \*\* Environment \*\*, sélectionnez **Injected Web3** Cela connectera Remix à votre portefeuille Metamask.
 
-<p align="center">
-![ERC20_ConnectMetamask](../../../../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)
-</p>
+<p align="center">![ERC20_ConnectMetamask](../../static/img/dev_tutorials/ERC20_ConnectMetamask.png)</p>
 
-Assurez-vous que votre MetaMask est connecté à **Core testnet2**.
+Assurez-vous que votre métamask est connecté à **Core testnet2**.
 
-2. **Déployez votre contrat**:
-   - Dans la section **Deploy**, sélectionnez le **ERC-20 contract** (par exemple, **MyToken**).
-   - Veuillez coller l' **adresse du destinataire** des jetons à frapper dans Premint, ainsi que l' **adresse du propriétaire** (notez que dans ce cas, les deux adresses sont identiques).
+2. **Déployez votre contrat** :
+   - Dans la section **Deploy**, sélectionnez le **ERC-20 contract** (par exemple, « MyToken »).
+   - Veuillez coller l'« adresse du destinataire » des jetons à frapper dans Premint, ainsi que l'« adresse du propriétaire » (notez que dans ce cas, les deux adresses sont identiques).
    - Cliquez sur **Deploy** Vous serez invité à confirmer la transaction dans MetaMask.
    - Une fois le contrat déployé, vous verrez l’adresse du contrat dans Remix.
 
-<p align="center">
-![ERC20_Deploy](../../../../../static/img/dev_tutorials/ERC20_Deploy.png)
-</p>
+<p align="center">![ERC20_Deploy](../../static/img/dev_tutorials/ERC20_Deploy.png)</p>
 
 ## Étape 5 : Interagissez avec votre contrat
 
@@ -103,16 +95,15 @@ Maintenant que votre contrat est déployé, vous pouvez interagir avec lui direc
 1. **Vérifier le solde**:
 
    - Sous **Deployed Contracts**, vous verrez votre contrat déployé.
-   - Développez l’interface du contrat pour interagir avec des fonctions telles que `balanceOf`, `mint` (si vous avez inclus la fonctionnalité de frappe).
-   - Collez l'adresse du destinataire et cliquez sur `balanceOf` pour vérifier le solde du destinataire.
+   - Développez l’interface du contrat pour interagir avec des fonctions telles que « balanceOf », « mint » (si vous avez inclus la fonctionnalité de frappe).
+   - Collez l'adresse du destinataire et cliquez sur « balanceOf » pour vérifier le solde du destinataire.
 
 <p align="center">
-![ERC20_Balance](../../../../../static/img/dev_tutorials/ERC20_Balance.png)
-</p>
+![ERC20_Balance](../../static/img/dev_tutorials/ERC20_Balance.png)</p>
 
 1. **creer des jetons**:
 
-   - Utiliser la fonction `mint` pour créer de nouveaux jetons. Fournissez l'adresse du destinataire et le nombre de jetons à frapper.
+   - Utiliser la fonction « mint » pour créer de nouveaux jetons. Fournissez l'adresse du destinataire et le nombre de jetons à frapper.
    - Confirmez la transaction dans MetaMask.
 
 2. **Transferer des jetons** :

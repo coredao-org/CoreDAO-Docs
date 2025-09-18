@@ -1,10 +1,11 @@
 ---
-sidebar_label: Stakers CORE
+sidebar_label: Utilisation de portefeuilles EVM
+description: Guide pour miser CORE depuis les portefeuilles EVM
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Stakers CORE
+# Guide pour miser des jetons CORE en utilisant des portefeuilles EVM
 
 ---
 
@@ -32,7 +33,7 @@ Lorsque vous visitez stake.coredao.org, vous verrez un aperçu des métriques im
 Pour commencer le staking, suivez ces étapes pour connecter votre portefeuille. Assurez-vous d'avoir des tokens CORE dans votre portefeuille pour participer au staking.
 
 - Cliquez sur le bouton **Connect Wallet** situé en haut à droite de la page.
-- Choisissez votre portefeuille préféré (par exemple, MetaMask, WalletConnect) parmi les options disponibles.) parmi les options disponibles.
+- Choisissez votre portefeuille préféré (par exemple, MetaMask, WalletConnect) parmi les options disponibles.
 - Suivez les instructions à l'écran pour compléter le processus de connexion en toute sécurité.
 - Une fois connecté, le solde et les détails de votre portefeuille seront visibles, et vous pourrez commencer à déléguer des tokens CORE.
 

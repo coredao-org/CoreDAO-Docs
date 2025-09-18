@@ -20,7 +20,7 @@ Les récompenses sont réparties entre quatre catégories principales :
 3. Opérations de validation
 4. Rôles au niveau système (Relais et Vérificateurs)
 
-## 1. Récompenses de minage (Preuve de travail déléguée)
+## 1) Récompenses de minage (Preuve de travail déléguée)
 
 **Qui gagne**: Les mineurs Bitcoin et les pools de minage
 
@@ -99,8 +99,8 @@ Où:
 Les calculs de récompense par unité déterminent la part de récompenses distribuée pour chaque unité de puissance de hachage, de CORE ou de BTC stakée :
 
 - **Récompense par unité de puissance de hachage:** $$rHu$$ = $$\frac{rH}{rHp}$$
-- **Récompense par unité de CORE:** $$rSu$$ = $$\frac{rS}{rSp}$$
-- **Récompense par unité de BTC:** $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- \*\*Récompense par unité de CORE : $$rSu$$ = $$\frac{rS}{rSp}$$
+- \*\*Récompense par unité de BTC : $$rBu$$ of **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
 
 Où:
 
@@ -146,6 +146,6 @@ Cette dynamique favorise des décisions de délégation actives et une concurren
 
 ## Conclusion
 
-<p align="center">![rewards](../../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)</p>
+<p align="center">![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)</p>
 
 Le système de récompense de Core incite et aligne correctement **les mineurs, les stakers, les validateurs et les rôles d'infrastructure**. Grâce à un système transparent et configurable, les récompenses stimulent la sécurité, la décentralisation et une participation communautaire durable à travers le consensus Satoshi Plus.

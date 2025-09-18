@@ -12,16 +12,16 @@ sidebar_position: 2
 
 En el ecosistema Core, "validador" se refiere a nodos o participantes en la red blockchain que son responsables de verificar, validar y agregar nuevas transacciones a la cadena de bloques. Los validadores desempeñan un papel crucial en el mantenimiento y la seguridad de la red.
 
-### 2. ¿Cómo se recompensa a los validadores en el ecosistema Core Chain?
+### 2. ¿Cómo convertirse en validador?
 
 - 1. Para registrarte como validador en Core, debes estar ejecutando un nodo completo en modo validador. Por favor, lea las [guías sobre los requisitos de nodos validadores](../Node/config/validator-node-config.md) y la [configuración de nodos validadores](../Node/validator/setting-up-validator.md)para obtener información sobre cómo configurarlo.
   2. Una vez finalizado ese paso, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de staking:
-    1. [Mainnet stake website](https://stake.coredao.org)
-    2. [Sitio de staking para Testnet](https://stake.test2.btcs.network)
+     1. [Mainnet stake website](https://stake.coredao.org)
+     2. [Sitio de staking para Testnet](https://stake.test2.btcs.network)
   3. Conecte su billetera seleccionando **Conectar billetera** en la parte superior derecha.
   4. Una vez conectado, el botón **registrarse** debería aparecer en la parte superior derecha. Al seleccionar **registrarse** se abre el siguiente formulario de entrada:
 
-
+![register-validator](../../../../../static/img/validator/register/validator-register-1.png)
 
 Proporcione información para cada uno de los campos del formulario:
 
@@ -75,7 +75,7 @@ Tanto las recompensas básicas como las tarifas de transacción se calculan y di
 
 ### 6. ¿Con qué frecuencia los validadores deben estar en línea?
 
-El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Cada día, **27** validadores con las puntuaciones híbridas más altas son elegidos para formar el conjunto de validadores, y son responsables de producir bloques en la red Core durante toda la ronda. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
+El tiempo de ciclo para la distribución de recompensas en Core está actualmente establecido en **1 día**. Cada día, **31** validadores con las puntuaciones híbridas más altas son elegidos para formar el conjunto de validadores, convirtiéndose así en responsables de producir bloques en la red Core durante toda la ronda. Al final de cada ronda, se calculan y distribuyen las recompensas acumuladas de esa ronda.
 
 ### 7. ¿Qué es la reducción y cuáles son las diferentes tarifas de reducción que se cobran en Core Chain?
 
@@ -106,7 +106,7 @@ Donde,
 - rBp y tBp representan, respectivamente, los tokens de Bitcoin delegados a un validador y el total de tokens de Bitcoin en staking.
 - m y n son factores dinámicos que ajustan los pesos de la potencia de hash y el poder de voto de los tokens Bitcoin frente a los tokens CORE.
 
-4. **Formación del conjunto de validadores**: Los **23** validadores principales, según las puntuaciones híbridas, se seleccionan para la siguiente ronda.
+4. **Formación del conjunto de validadores**: Los **31** validadores principales, basados en las puntuaciones híbridas, son seleccionados para la siguiente ronda.
 
 ### 9. ¿Qué es el slashing y cuáles son las diferentes penalizaciones por slashing en la blockchain de Core?
 

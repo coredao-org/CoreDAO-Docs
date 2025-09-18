@@ -56,7 +56,6 @@ Remix IDE es una plataforma en línea para desarrollo en Solidity, ideal para pr
 <p align="center">
 ![Remix_ERC20_Contract](../../../../../static/img/dev_tutorials/Remix_ERC20.png)
 </p>
-
 3. **Instala los contratos de OpenZeppelin**:
    - Si usas el **compilador de Solidity** integrado en Remix, este obtendrá automáticamente los contratos de OpenZeppelin por ti.
    - Si estás usando Hardhat, necesitarás instalar manualmente los contratos de OpenZeppelin ejecutando `npm install @openzeppelin/contracts`.

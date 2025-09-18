@@ -113,7 +113,7 @@ module.exports = {
 Si vous utilisez **testnet1**, le paramètre `evmVersion` doit être défini sur `Paris`.
 
 :::note
-Veuillez noter que vous devrez fournir vos clés privées ou votre mnémonique pour le fournisseur. Vous pouvez les stocker dans un fichier secret.json ». Assurez-vous d'ajouter ce fichier au `.gitignore` de votre projet pour éviter de valider accidentellement vos clés privées dans un référentiel public. De plus, conservez ce fichier dans un endroit sûr pour protéger vos informations sensibles !
+Veuillez noter que vous devrez fournir vos clés privées ou votre mnémonique pour le fournisseur. Vous pouvez les stocker dans un fichier « secret.json ». Assurez-vous d'ajouter ce fichier au « .gitignore » de votre projet pour éviter de valider accidentellement vos clés privées dans un référentiel public. De plus, conservez ce fichier dans un endroit sûr pour protéger vos informations sensibles !
 :::
 
 ## Rediger des contrats intelligents
@@ -266,9 +266,7 @@ Nous pouvons voir que le script déploie correctement le contrat, stocke un nomb
 
 Nous pouvons utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et appelé avec succès.
 
-<p align="center">
-![hardhat](../../../../../static/img/hardhat/hardhat-1.avif)
-</p>
+<p align="center">![hardhat](../../static/img/hardhat/hardhat-1.avif)</p>
 
 ## Lecture supplémentaire
 

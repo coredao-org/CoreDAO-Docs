@@ -67,6 +67,25 @@ Como usaremos Waffle para este proyecto y nos aseguraremos de seleccionar **No**
 4. Una vez que se inicializa este proyecto, encontrará la siguiente estructura de proyecto:
 
 ```bash
+dapp-tutorial.
+|   .gitignore
+|   hardhat-config.js   (Hardhat configuration file.)
+|   package-lock.json
+|   package.json
+|   README.md
+|
++---contracts (For Solidity Smart Contracts)
+|       Lock.sol
+|
++---ignition (Scripts in previous versions, this folder contains configuration files that specify how smart contracts should be deployed)
+|   \---modules
+|           Lock.js
+|
++---node_modules
+|
++---test (For writing and Running Tests)
+|       Lock.js
+|
 ```
 
 5. Instale y configure MetaMask Chrome Extension para usar con Core Testnet. Consulte [aquí](./core-wallet-config.md) para obtener una guía detallada.
@@ -179,21 +198,21 @@ El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacen
 #### Componentes del contrato
 
 1. **Variable de estado**:
-  - `number`: una variable `uint256` que se utiliza para almacenar el valor.
+   - `number`: una variable `uint256` que se utiliza para almacenar el valor.
 
 #### Funciones del contrato
 
 1. **Función de tienda**:
 
-  - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
-  - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
-  - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
+   - `store(uint256 num) public`: una función que permite a los usuarios almacenar un nuevo valor en la variable `number`. Esta función toma un solo parámetro, "num", que es el valor que se almacenará. La función actualiza la variable `número` con el valor proporcionado.
+   - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+   - **Cambio de estado**: Esta función modifica el estado del contrato actualizando la variable `número`.
 
 2. **Función de recuperación**:
-  - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
-  - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
-  - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
-  - **Valor de retorno**: La función devuelve el valor de la variable "número".
+   - `retrieve() public view return (uint256)`: una función que devuelve el valor actual almacenado en la variable `number`. Esta función no toma ningún parámetro y devuelve un valor `uint256`.
+   - **Visibilidad**: la función está marcada como "pública", lo que significa que cualquier usuario o contrato puede llamarla.
+   - **Ver**: La función está marcada como `ver`, lo que indica que no modifica el estado del contrato. Sólo lee el estado.
+   - **Valor de retorno**: La función devuelve el valor de la variable "número".
 
 ## Compilación de contrato inteligente
 
@@ -203,7 +222,7 @@ El contrato de "Almacenamiento" es un ejemplo simple que demuestra cómo almacen
 npx hardhat compile
 ```
 
-## Implementar e interactuar con contratos inteligentes
+## Implementar e interactuar con smart contracts 
 
 1. Antes de implementar su contrato inteligente en Core, es mejor ejecutar primero una serie de pruebas para asegurarse de que el contrato inteligente esté funcionando como se desea. Consulte la guía detallada [aquí](https://docs.coredao.org/docs/Dev-Guide/hardhat#contract-testing) para obtener más detalles.
 
@@ -309,7 +328,7 @@ const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 
 1. Ejecute el comando `npm run dev` desde la raíz del proyecto para iniciar la aplicación. Esto servirá para la aplicación en [http://localhost:5173](http://localhost:5173/)
 
-2. Asegúrese de que su billetera MetaMask esté correctamente instalada y cambiada a Core Testnet como se describe en nuestra [guía del usuario de Core Testnet](./core-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
+2. Asegúrese de que su billetera MetaMask esté correctamente instalada y cambiada a Core Testnet como se describe en nuestra [guía del usuario de Core Testnet] (./core-wallet-config.md). También deberá conectar su billetera MetaMask al sitio local.
 
 <p align="center">
 ![dapp-on-core](../../../../../static/img/dapp/dapp-1.png)

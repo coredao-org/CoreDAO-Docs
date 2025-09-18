@@ -42,10 +42,10 @@ En la red Core, el slashing y el jailing son mecanismos para penalizar a los val
 "Slashing" se refiere a la reducción ya sea de las recompensas del validador por minar bloques o de sus tokens CORE en staking. La severidad del castigo por slashing aumenta proporcionalmente según la gravedad del mal comportamiento del validador.
 
 - **Fallo en la producción exitosa de un bloque durante su turno asignado**
-    - Si un nodo validador falla en minar **50 bloques** consecutivos, se le revocan completamente las recompensas de tokens CORE acumuladas hasta ese momento.
-    - Si un validador falla en minar **150 bloques** consecutivos, pierde su parte de las recompensas diarias de tokens CORE, pierde el 10% del depósito en CORE que hizo como staker, y es puesto en jailing por tres días, lo que significa que no será elegible para formar parte del conjunto de validadores
+  - Si un nodo validador falla en minar **50 bloques** consecutivos, se le revocan completamente las recompensas de tokens CORE acumuladas hasta ese momento.
+  - Si un validador falla en minar **150 bloques** consecutivos, pierde su parte de las recompensas diarias de tokens CORE, pierde el 10% del depósito en CORE que hizo como staker, y es puesto en jailing por tres días, lo que significa que no será elegible para formar parte del conjunto de validadores
 - **Penalización por Double Signing**
-    - “Double signing” ocurre cuando un validador firma dos bloques diferentes en la misma altura de bloque. Los validadores que son atrapados haciendo doble firma pierden todas sus recompensas y se les slashea el depósito CORE como validador; además, quedan excluidos permanentemente de la participación en la minería de bloques, es decir, quedan en jailing para siempre.
+  - “Double signing” ocurre cuando un validador firma dos bloques diferentes en la misma altura de bloque. Los validadores que son atrapados haciendo doble firma pierden todas sus recompensas y se les slashea el depósito CORE como validador; además, quedan excluidos permanentemente de la participación en la minería de bloques, es decir, quedan en jailing para siempre.
 
 ### ¿Cuál es el mecanismo de consenso que usa la red Core y cómo previene diferentes ataques?
 
@@ -69,12 +69,12 @@ Puedes contribuir a la Comunidad Core de varias maneras diferentes:
 
 - **Contribuye a Nuestra Documentación Oficial:** Envía un pull request con tus cambios al repositorio de GitHub de nuestra documentación oficial, y nuestro equipo los revisará en consecuencia. Si se consideran correctos, los integraremos en nuestra documentación oficial.
 - **[Lista de deseos principales](https://github.com/coredao-org/core-community-contributions):** Cree proyectos para el ecosistema Core. La Core Foundation ha delineado una lista de categorías de proyectos a los que los desarrolladores pueden contribuir, fomentando el crecimiento del ecosistema Core.
-- **Programas de Incentivos para Desarrolladores:** Core también ofrece programas de apoyo e incentivos para desarrolladores con el objetivo de fomentar el desarrollo sobre la blockchain de Core. Ya sea a través del [Core Starter Program](https://coredaofoundation.org/fund-your-project) o del [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), puedes iniciar tu camino de desarrollo Web3 sobre Core.
+- **Programas de Incentivos para Desarrolladores:** Core también ofrece programas de apoyo e incentivos para desarrolladores con el objetivo de fomentar el desarrollo sobre la blockchain de Core. Ya sea a través del [Core Starter Program](https://coredaofoundation.org/fund-your-project) o del [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), puedes impulsar tu viaje de desarrollo en Web3 sobre Core.
 - **Programa Core Commit:** La Core Foundation ofrece un programa acelerador de 3 meses diseñado para escalar proyectos en etapa temprana. El [Core Commit Program](https://coredao.org/initiatives/commit-program) no solo proporciona a los desarrolladores recursos y acceso a mentoría personalizada de algunas de las mentes más destacadas de la industria Web3, sino que también les brinda la oportunidad de recibir recompensas mensuales basadas en desempeño y financiamiento por parte de Core Ventures y su red de más de 100 VCs.
 
 ### 13. ¿Core ofrece programas de apoyo e incentivos para desarrolladores?
 
-Core no se trata sólo de subvenciones, es una puerta de entrada a oportunidades ilimitadas. Ya sea mediante el [Core Ignition Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), el [Core Starter Program](https://coredaofoundation.org/fund-your-project) o el [Core Commit Program](https://coredao.org/initiatives/commit-program), recibirás orientación técnica, mentoría y acceso a una comunidad vibrante dedicada a innovar en el ecosistema DeFi.
+Core no se trata sólo de subvenciones, es una puerta de entrada a oportunidades ilimitadas. Ya sea mediante el [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), el [Core Starter Program](https://coredaofoundation.org/fund-your-project) o el [Core Commit Program](https://coredao.org/initiatives/commit-program), recibirás orientación técnica, mentoría y acceso a una comunidad vibrante dedicada a la innovación en el ecosistema DeFi.
 
 ### 14. ¿Cómo puedo reportar una estafa o rug pull?
 

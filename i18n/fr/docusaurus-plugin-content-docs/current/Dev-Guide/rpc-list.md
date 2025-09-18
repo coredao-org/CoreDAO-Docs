@@ -5,9 +5,8 @@ sidebar_position: 2
 description: Liste des points de terminaison RPC pour Testnet et Mainnet
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
+importer des onglets depuis « @theme/Tabs » ;
+importer TabItem depuis « @theme/TabItem » ;
 
 # Points de terminaison RPC pour le Core Network
 

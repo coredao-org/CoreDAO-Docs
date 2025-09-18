@@ -22,7 +22,7 @@ Pour démarrer et pouvoir effectuer un double staking CORE et BTC via le site We
 
 **Extension de navigateur de portefeuille Bitcoin prise en charge** : Pour participer au processus de staking Bitcoin, vous devez installer les extensions de navigateur des portefeuilles Bitcoin pris en charge, tels que Xverse, Unisat et/ou OKX Wallet (référez-vous ici pour les derniers portefeuilles pris en charge). Vous devez utiliser la version bureau lorsque vous utilisez le site Web officiel de staking. Vous pouvez également staker directement en utilisant l'application mobile du portefeuille Element.
 
-**Adresse de portefeuille Core pour les récompenses** : Préparez votre adresse de portefeuille Core pour staker CORE et recevoir des récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé ici.
+**Adresse de portefeuille Core pour les récompenses** : Préparez votre adresse de portefeuille Core pour staker CORE et recevoir des récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici.
 
 ## Considérations clés pour le double staking
 
@@ -55,21 +55,22 @@ Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inacce
 2. Une fois sur l'onglet **Staking**, cliquez sur l'option **Connect** à côté de "BTC Staking Amount" pour connecter votre portefeuille Bitcoin. Cela devrait être le portefeuille contenant les actifs Bitcoin que vous souhaitez staker. Cliquez sur le portefeuille pris en charge de votre choix pour connecter votre portefeuille Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-1.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-1.png)
 </p>
 
 3. De même, cliquez sur l'option **Connect** à côté de **CORE Staking Amount** et sélectionnez le portefeuille Core pour staker du CORE et recevoir des récompenses de staking.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-2.png)
-</p>
+
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-2.png
+)</p>
 
 ## Spécifier le Montant de BTC à Staker
 
 Entrez le montant de Bitcoin que vous souhaitez staker. Le montant minimum est de 0,01 BTC si l'utilisateur effectue le staking via l'interface utilisateur du site web. Cependant, aucune exigence minimale n'est imposée pour le staking Btc via le script de staking.
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-3.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-3.png)
 </p>
 
 ## Sélection d'un Validateur Core pour la Délégation de Bitcoin
@@ -77,7 +78,7 @@ Entrez le montant de Bitcoin que vous souhaitez staker. Le montant minimum est d
 Sous **Delegate to Validator**, dans le menu déroulant, sélectionnez un **validateur actif** à qui vous souhaitez déléguer votre Bitcoin.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-4.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-4.png)
 </p>
 
 ## Spécifier le Montant de CORE à Staker
@@ -85,7 +86,7 @@ Sous **Delegate to Validator**, dans le menu déroulant, sélectionnez un **vali
 Entrez le montant de CORE que vous souhaitez staker. Le montant minimum est de 1 CORE.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-5.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-5.png)
 </p>
 
 ## Sélection d'un Validateur Core pour la Délégation de CORE
@@ -93,7 +94,7 @@ Entrez le montant de CORE que vous souhaitez staker. Le montant minimum est de 1
 Après avoir spécifié le montant de CORE à staker, choisissez le validateur auquel vous allez déléguer votre CORE. Assurez-vous de sélectionner un validateur actif dans le menu déroulant.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-6.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-6.png)
 </p>
 
 ## Confirmation des détails de staking CORE et BTC
@@ -109,25 +110,25 @@ Avant de procéder à la confirmation de votre transaction de staking. Cette fon
 Pour procéder à la vérification, cliquez sur le bouton **Verify the Btc Staking Address**. Cela vous redirigera vers le site Web externe.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../../../../static/img/btc-staking/btc-staking-address-verification.png)
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification.png)
 </p>
 
 Sur l'interface utilisateur du site Web de vérification, assurez-vous que les données récupérées sont correctes, puis cliquez sur le bouton **Submit**.
 
 <p align="center" style={{zoom:"35%"}}>
-![btc-staking-address-verification](../../../../../../../static/img/btc-staking/external-verification-UI.png)
+![btc-staking-address-verification](../../../../static/img/btc-staking/external-verification-UI.png)
 </p>
 
 Le résultat de la vérification apparaîtra dans la section **Verification Result**.
 
 <p align="center" style={{zoom:"60%"}}>
-![btc-staking-address-verification](../../../../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
+![btc-staking-address-verification](../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-Une fois vérifié, revenez sur [stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
+Une fois vérifié, revenez sur (stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
 
 <p align="center">
-![btc-staking-approve-tx](../../../../../../../static/img/btc-staking/approve-tx.png)
+![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
 ## Ajustement des Ratios CORE:BTC pour des Rendements Plus Élevés
@@ -135,19 +136,19 @@ Une fois vérifié, revenez sur [stake.coredao.org](https://stake.coredao.org) e
 Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Lorsque l'option **Current** est sélectionnée, elle affiche uniquement le taux de récompense de staking estimé en temps réel. Lorsque l'option **Overall** est sélectionnée, elle représente la moyenne de deux composants : les taux de tous les validateurs basés sur les enregistrements de staking précédents et le taux de récompense de staking estimé en temps réel.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-7.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
 Vous pouvez également utiliser les curseurs dans la section ci-dessous pour voir l'effet du ratio de staking CORE:BTC sur votre Taux de Récompense Total de Staking.
 
 <p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-8.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-8.png)
 </p>
 
 Pour obtenir le maximum de boost de récompense sur votre montant staké, dans la section **Dual Staking Tiers**, ajustez le curseur **Btc Staked** au montant de Btc que vous souhaitez staker et cliquez sur le bouton **Max Boost**. Cela définira automatiquement le montant de CORE correspondant dans le curseur “CORE Staked“ pour débloquer le boost maximum. Vous pouvez également ajuster manuellement le CORE staké puis cliquer à nouveau sur le bouton "Max Boost" pour mettre à jour le montant de BTC recommandé dans la barre "BTC Staked".
 
 <p align="center">
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-9.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
 À côté de l'onglet **Summary**, vous pouvez trouver la page **Details**, qui affiche les détails du staking, y compris :
@@ -158,7 +159,7 @@ Pour obtenir le maximum de boost de récompense sur votre montant staké, dans l
 - **Active Staked CORE :** Le montant de CORE actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-10.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
 ## Finalisation des Transactions de Dual Staking
@@ -166,13 +167,13 @@ Pour obtenir le maximum de boost de récompense sur votre montant staké, dans l
 Une fois que vous avez spécifié le montant de BTC/CORE à staker et les validateurs pour la délégation respectivement, vous pouvez cliquer sur le bouton **Proceed to Stake**.
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-11.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-11.png)
 </p>
 
 Sur la page **Stake CORE**, confirmez le montant de CORE à staker avec le BTC, puis cliquez sur le bouton **Confirm**.
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-12.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-12.png)
 </p>
 
 En cliquant sur **Confirm**, vous recevrez une notification de votre portefeuille Core connecté pour compléter la transaction.
@@ -180,7 +181,7 @@ En cliquant sur **Confirm**, vous recevrez une notification de votre portefeuill
 Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on CoreScan** pour revoir cette transaction.
 
 <p align="center">
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-13.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-13.png)
 </p>
 
 Sur la page "Stake BTC", confirmez le montant de Bitcoin à staker. Avant de finaliser le processus de staking de Bitcoin, il est important de comprendre et de spécifier plusieurs paramètres clés :
@@ -198,23 +199,23 @@ Le temps de verrouillage par défaut est fixé à un mois à l'avance.
 **Spécifier la priorité du réseau pour votre transaction**
 
 <p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-14.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-14.png)
 </p>
 
 Enfin, cliquez sur **Confirm** pour compléter la transaction.
 
 ## Confirmer la Sortie OP_Return
 
-Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie `OP_Return`. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être `OP_Return`. **Abandonnez la transaction si elle n'inclut pas la sortie `OP_Return`.**
+Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. **Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.**
 
 <p align="center">
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-15.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-15.png)
 </p>
 
 Une fois que vous avez confirmé la transition, vous recevrez une notification **Transaction Submitted** en haut à droite de votre écran. Vous pouvez cliquer sur **My Staking** pour voir vos enregistrements de staking ou **View on Btc Explorer** pour revoir cette transaction.
 
 <p align="center">
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-16.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
 ## Vérifier la Soumission de la Transaction et les Enregistrements de Staking
@@ -222,13 +223,13 @@ Une fois que vous avez confirmé la transition, vous recevrez une notification *
 Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
 
 <p align="center">
-![btc-staking-on-core](../../../../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
+![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
 La page **My Staking** affiche les enregistrements de toutes vos activités de staking (CORE, BTC, hash). Cliquez sur les onglets respectifs **CORE**, **BTC**, et **Hash** pour voir les détails de votre staking et de vos délégations.
 
 <p align="center">
-![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-16.png)
+![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-16.png)
 </p>
 
 ## Conclusion

@@ -4,14 +4,14 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+importer Tabs depuis '@theme/Tabs';
+importer TabItem depuis '@theme/TabItem';
 
-# Node de snapshot sur Core
+# Nœuds de snapshot sur Core
 
 ---
 
-Les snapshots sont essentiels pour qu'un réseau garantisse que les nodes puissent se synchroniser avec l'état actuel du réseau aussi rapidement que possible. Avant que les nodes puissent être utilisés, ils doivent se synchroniser avec l'état actuel du réseau. En partant d'un snapshot récent, le processus de synchronisation est
+Les snapshots sont essentiels pour qu'un réseau garantisse que les nœuds puissent se synchroniser avec l'état actuel du réseau aussi rapidement que possible. Avant que les nœuds puissent être utilisés, ils doivent se synchroniser avec l'état actuel du réseau. En partant d'un snapshot récent, le processus de synchronisation est
 
 ## Requis Systèmes
 
@@ -21,11 +21,11 @@ Il y a plusieurs requis systèmes, à la fois logicielles et matérielles, pour 
 
 - **Système d'exploitation:** Actuellement, uniquement les systèmes d'exploitation **macOS** ou **Linux** (Ubuntu 20.04 ou ultérieur) sont pris en charge.
 - Connectivité réseau : Connexion Internet stable avec une faible latence et une haute disponibilité.
-- Configuration du pare-feu : Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nodes.
+- Configuration du pare-feu : Ouvrez les ports nécessaires pour permettre la communication avec le réseau et les autres nœuds.
 
 ### Matériel
 
-Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état de la blockchain, permettant une synchronisation plus rapide des nodes et réduisant les besoins en stockage. Ces nodes aident les nouveaux validateurs et les nodes RPC à se mettre rapidement à jour avec l'état le plus récent de la blockchain sans avoir à traiter toute l'historique. Les nodes de snapshot améliorent l'efficacité et l'accessibilité du réseau. Sur le réseau Core, les nodes snapshot fonctionnent également comme des nodes d'archive, stockant l'intégralité des données de la blockchain. Voici les recommandations matérielles minimales pour exécuter un nœud de snapshot sur Core. Ces spécifications sont conçues pour gérer les processus de test et de validation tout en garantissant un stockage et une synchronisation efficaces des données.
+Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état de la blockchain, permettant une synchronisation plus rapide des nœuds et réduisant les besoins en stockage. Ces nœuds aident les nouveaux validateurs et les nœuds RPC à se mettre rapidement à jour avec l'état le plus récent de la blockchain sans avoir à traiter toute l'historique. Les nœuds de snapshot améliorent l'efficacité et l'accessibilité du réseau. Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain. Voici les recommandations matérielles minimales pour exécuter un nœud de snapshot sur Core. Ces spécifications sont conçues pour gérer les processus de test et de validation tout en garantissant un stockage et une synchronisation efficaces des données.
 
 <Tabs
 defaultValue="testnet2"
@@ -33,7 +33,7 @@ values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
-Pour les nodes complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
 ```
 Exigences	Détails
@@ -45,7 +45,7 @@ Débit Internet	Connexion Internet à large bande avec des vitesses de téléver
 
   </TabItem>
   <TabItem value="testnet">
-    Pour les nodes complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+    Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
 ```
 Exigences	Détails
@@ -57,7 +57,7 @@ Débit Internet	Connexion Internet à large bande avec des vitesses de téléver
 
   </TabItem>
   <TabItem value="mainnet">
-Pour les nodes Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
+Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
 ```
 Exigences	Détails
@@ -74,9 +74,9 @@ Débit Internet	Connexion Internet à large bande avec des vitesses de téléver
 
 Vous pouvez obtenir les derniers snapshots à partir de [ce lien](https://github.com/coredao-org/core-snapshots).
 
-## Synchronisation des Node en Utilisant des Snapshots sur le Réseau Core
+## Synchronisation des Nœuds en Utilisant des Snapshots sur le Réseau Core
 
-Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état actuel de plusieurs façons. Ce document fournit un guide étape par étape pour la synchronisation des nodes sur le réseau Core en utilisant des snapshots.
+Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état actuel de plusieurs façons. Ce document fournit un guide étape par étape pour la synchronisation des nœuds sur le réseau Core en utilisant des snapshots.
 
 ### Téléchargement des Binaries Précompilés
 
@@ -146,7 +146,7 @@ Assurez-vous d'utiliser la version de geth que vous avez téléchargée avec wge
 :::tip
 It is recommended to run a fast node, which is a full node with the `--tries-verify-mode none` flag set, if you want high performance and care little about state consistency.
 
-```./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none```
+./geth --config ./config.toml --datadir ./node  --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --tries-verify-mode none
 :::
 
 ### Surveiller l'État du Nœud

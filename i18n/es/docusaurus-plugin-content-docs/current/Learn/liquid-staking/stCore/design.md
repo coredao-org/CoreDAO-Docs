@@ -86,6 +86,7 @@ En cada round, después de que se completa la turn round, el módulo `Earn`:
 Luego, el ratio de conversión se recalcula usando la fórmula:
 
 ```
+    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply()
 ```
 
 Dado que **la recolección de recompensas solo ocurre una vez al día**, el ratio de conversión se mantiene constante durante todo el día hasta que ocurre la siguiente turn round. La lógica correspondiente se implementa en el método `afterTurnRound()`.

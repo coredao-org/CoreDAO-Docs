@@ -37,12 +37,12 @@ El Dual Staking requiere una participación simultánea en dos componentes del c
 
 El protocolo utiliza un **sistema de multiplicadores basado en tiers** para aumentar las recompensas de staking de Bitcoin a favor de los Dual Stakers:
 
-| **Tier**         | **CORE-to-Bitcoin Ratio (R)** | **Label**           | **Description**               |
-| ---------------- | ----------------------------- | ------------------- | ----------------------------- |
-| **Base Tier**    | R < R₁                        | P<sub>Base</sub>    | No CORE delegation            |
-| **Boost Tier**   | R₁ ≤ R < R₂                   | P<sub>Boost</sub>   | Entry-level Dual Staking tier |
-| **Super Tier**   | R₂ ≤ R < R₃                   | P<sub>Super</sub>   | Higher CORE-to-Bitcoin ratio  |
-| **Satoshi Tier** | R ≥ R₃                        | P<sub>Satoshi</sub> | Highest tier; maximum rewards |
+| **Tier**         | **Ratio CORE-a-Bitcoin (R)** | **Etiqueta**        | **Descripción**                             |
+| ---------------- | ----------------------------------------------- | ------------------- | ------------------------------------------- |
+| **Base Tier**    | R < R₁                 | P<sub>Base</sub>    | Sin delegación de CORE                      |
+| **Boost Tier**   | R₁ ≤ R < R₂            | P<sub>Boost</sub>   | Nivel de entrada al sistema de Dual Staking |
+| **Super Tier**   | R₂ ≤ R < R₃            | P<sub>Super</sub>   | Mayor relación CORE-a-Bitcoin               |
+| **Satoshi Tier** | R ≥ R₃                                          | P<sub>Satoshi</sub> | Nivel más alto; recompensas máximas         |
 
 - Los umbrales de nivel (**R₁, R₂, R₃**) son dinámicos y se ajustan según las condiciones de la red.
 - Los niveles más altos desbloquean **multiplicadores de recompensas**progresivamente mayores.
@@ -59,11 +59,11 @@ Si las relaciones de nivel están definidas como:
 
 Entonces, tus umbrales serían:
 
-| **Tier**     | **CORE Required** |
-| ------------ | ----------------- |
-| Boost Tier   | 42,500 CORE       |
-| Super Tier   | 127,500 CORE      |
-| Satoshi Tier | 340,000 CORE      |
+| **Tier**     | **CORE Requierido** |
+| ------------ | ------------------- |
+| Boost Tier   | 42,500 CORE         |
+| Super Tier   | 127,500 CORE        |
+| Satoshi Tier | 340,000 CORE        |
 
 Tu nivel de recompensa se determina por la cantidad de CORE que hayas delegado en relación con tu Bitcoin en staking.
 

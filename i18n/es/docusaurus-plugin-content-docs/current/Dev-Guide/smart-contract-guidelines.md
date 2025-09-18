@@ -21,9 +21,9 @@ Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^**
 
 #### Despliegue usando Hardhat
 
-- Para Core Mainnet y Testnet2, agrega `evmVersion: "shanghai"` en las configuraciones del compilador de Solidity.
+- Para Core Mainnet y Testnet2, agrega `evmVersion: shanghai` en las configuraciones del compilador de Solidity.
 
-```bash
+```
 solidity: {
        compilers: [
          {
@@ -55,6 +55,6 @@ solidity: {
 - Para simplificar el proceso de verificación, la versión EVM predeterminada para Core Scan está configurada en **Shanghai** para la versión de solidez **0.8.24^**.
 - Los desarrolladores pueden seguir los mismos pasos para verificar sus contratos inteligentes con la versión `0.8.24^` como en las versiones anteriores. Consulte [aquí](./contract-verify.md) para obtener más detalles sobre la verificación de contratos en Core blockchain.
 
-### Contratos inteligentes basados ​​en Solidity versión `<0.8.24`
+### Contratos inteligentes basados ​​en Solidity versión `\<0.8.24`
 
 - **Nota**: los contratos inteligentes con la versión solidity **\< 0.8.24** no se ven afectados y pueden funcionar como de costumbre.

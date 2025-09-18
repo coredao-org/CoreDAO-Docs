@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Fonctionnement du Self Custodial Bitcoin Staking {#how-self-custodial-bitcoin-staking-works}
+# Fonctionnement du staking Bitcoin non-custodial {#how-self-custodial-bitcoin-staking-works}
 
 ---
 
@@ -71,7 +71,7 @@ Votre transaction de staking CLTV doit inclure :
 ## Flux de transaction
 
 <p align="center">
-![btc-staking-tx-workflow](../../../../../../static/img/btc-staking/btc-staking-flow-new.png)
+![btc-staking-tx-workflow](../../../static/img/btc-staking/btc-staking-flow-new.png)
 </p>
 
 ### Chronologie et Activation

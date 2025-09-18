@@ -15,7 +15,7 @@ En este tutorial, aprende cómo compilar, desplegar y llamar contratos inteligen
 
 ## Instalación
 
-Navega a tu carpeta de perfil y sigue los pasos a continuación para instalar Hardhat (se requiere npm/node v8.9.4) [LTS o superior](https://nodejs.org/en/):
+Navega a tu carpeta de perfil y sigue los pasos a continuación para instalar Hardhat (se requiere npm/node v8.9.4 [LTS o superior](https://nodejs.org/en/)):
 
 1. `npm init --yes`
 2. `npm install --save-dev hardhat`

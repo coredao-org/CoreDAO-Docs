@@ -15,7 +15,7 @@ Le Core Bridge se compose de deux parties :
 - Contrats LayerZero sur Core qui facilitent les transferts inter-chaînes et
 - L'ensemble de contrats de pont ou de jeton déployés à la fois sur Core et sur chaque blockchain à laquelle il est connecté.
 
-Le code de base audité du pont peut être trouvé [ici](https://github.com/LayerZero-Labs/wrapped-asset-bridge), et la liste complète des adresses de contrats de jetons de pont peut être trouvée ici.
+Le code de base audité du pont peut être trouvé [ici](https://github.com/LayerZero-Labs/wrapped-asset-bridge), et la liste complète des adresses de contrats de jetons de pont peut être trouvée [ici
 
 ### Contrats LayerZero sur Core
 

@@ -12,7 +12,7 @@ description: Aprende cómo verificar un contrato inteligente usando Core Scan
 En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Si bien existen varias formas de lograr la verificación del contrato, recomendamos utilizar la herramienta de verificación oficial de Core, [Core Scan](https://scan.coredao.org/), para una confiabilidad óptima. Este documento lo guía a través de los métodos más utilizados para la verificación de contratos: la herramienta web Core Scan, la API REST de Core y el complemento Hardhat Verification.
 
 :::note
-Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain](./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
+Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain] (./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
 :::
 
 ## Verificación web mediante Core Scan
@@ -21,13 +21,15 @@ La verificación web es el método más comúnmente usado para la verificación 
 
 1. Navega al sitio web de Core Scan.
 
-- [Para Core Mainnet](https://scan.coredao.org/)
+- [Para Core mainnet](https://scan.coredao.org/)
 - [Para Core Testnet2](https://scan.test.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
-3. Después de ubicar el contrato, seleccione la pestaña **Contrato** y haga clic en **Verificar y publicar**_._
+3. Después de localizar el contrato, selecciona la pestaña **Contract** y haz clic en **Verify and Publish**.
 
-<p align="center"></p>
+<p align="center">
+  ![verify-core-scan](../../../../../static/img/contract-verification/contract-verify-1.avif)
+</p>
 
 4. Complete la información de verificación requerida en la página, específicamente:
 
@@ -75,6 +77,83 @@ La verificación con Hardhat es la forma más conveniente para que los desarroll
 Ten en cuenta que necesitarás agregar las redes de Core como cadenas custom, como se muestra a continuación en una configuración de ejemplo de Hardhat:
 
 ```javascript
+/**
+ * @type import('hardhat/config').HardhatUserConfig
+ */
+
+
+const { PrivateKey } = require("./secret.json");
+require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-waffle");
+require("@nomicfoundation/hardhat-verify");
+
+
+module.exports = {
+  defaultNetwork: "testnet",
+
+
+  networks: {
+    hardhat: {},
+    testnet: {
+      url: "https://rpc.test2.btcs.network",
+      accounts: [PrivateKey],
+      chainId: 1114,
+    },
+    mainnet: {
+      url: "https://rpc.coredao.org",
+      accounts: [PrivateKey],
+      chainId: 1116,
+    },
+  },
+  etherscan: {
+    apiKey: {
+      testnet: "api key",
+      mainnet: "api key",
+    },
+    customChains: [
+      {
+        network: "testnet",
+        chainId: 1114,
+        urls: {
+          apiURL: "https://api.test2.btcs.network/api",
+          browserURL: "https://scan.test2.btcs.network/",
+        },
+      },
+      {
+        network: "mainnet",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org/",
+        },
+      },
+    ],
+  },
+
+
+  solidity: {
+    compilers: [
+      {
+        version: "0.8.24",
+        settings: {
+          evmVersion: "shanghai",
+          optimizer: {
+            enabled: false,
+            runs: 200,
+          },
+        },
+      },
+    ],
+  },
+  paths: {
+    sources: "./contracts",
+    cache: "./cache",
+    artifacts: "./artifacts",
+  },
+  mocha: {
+    timeout: 20000,
+  },
+};
 ```
 
 ## Verificación con Foundry
@@ -82,14 +161,17 @@ Ten en cuenta que necesitarás agregar las redes de Core como cadenas custom, co
 Actualiza el archivo `foundry.toml` para especificar la versión de Solidity y la versión de EVM para tu proyecto.
 
 ```bash
+[profile.default]
+solidity_version = "0.8.24"  # Specify the Solidity version
+evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
 ```
 
 Crea un archivo `.env` para almacenar información sensible como tu clave privada, RPC URL y API keys. Esto ayuda a mantener tus credenciales seguras y te permite referenciarlas fácilmente en tu código.
 
-```bash
+```text
 RPC_URL = " https://rpc.test2.btcs.network"
 PRIVATE_KEY = "YOUR_PRIVATE_KEY"
-CORESCAN_API_KEY= "YOUR_API_KEY"
+CORESCAN_API_KEY="YOUR_API_KEY"
 API_URL="https://api.test2.btcs.network/api"
 ```
 

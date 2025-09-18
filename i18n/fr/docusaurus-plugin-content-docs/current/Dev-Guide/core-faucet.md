@@ -17,9 +17,7 @@ Pour aider les utilisateurs à démarrer et permettre aux développeurs de rapid
 3. Effectuez la vérification CAPTCHA.
 4. Cliquez sur le bouton `Get tCORE2`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
 
-<p align="center">
-![using-faucet-test2](../../../../../static/img/faucet/faucet-test2.png)
-</p>
+<p align="center">![using-faucet-test2](../../static/img/faucet/faucet-test2.png)</p>
 
 :::caution
 Chaque adresse ne peut demander des tCORE2 qu'une seule **fois par jour** à partir du robinet(faucet) dans une période de 24 heures. Si vous n’avez plus de tCORE2 et que le faucet ne vous en envoie pas davantage à cause de la limite journalière (tCORE2 par jour), revenez après 24 heures et réessayez. Vous pouvez également le demander dans le [Discord Server](https://discord.com/invite/coredaoofficial).

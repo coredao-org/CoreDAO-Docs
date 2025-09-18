@@ -18,7 +18,7 @@ Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les d�
 
 ### 3. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
-1. **Adapté aux détenteurs à long terme et aux institutions:** Conçu pour ceux qui préfèrent conserver leurs bitcoins sur la blockchain sécurisée de Bitcoin, le Self-Custodial Bitcoin staking permet de gagner des récompenses pendant une période de détention spécifiée sans transactions fréquentes.
+1. **Adapté aux détenteurs à long terme et aux institutions:** Conçu pour ceux qui préfèrent conserver leurs bitcoins sur la blockchain sécurisée de Bitcoin, le staking de Bitcoin non-custodial permet de gagner des récompenses pendant une période de détention spécifiée sans transactions fréquentes.
 2. **Aucune nouvelle hypothèse de confiance :** Les utilisateurs peuvent staker leurs bitcoins directement sur la blockchain Bitcoin, maintenant la haute sécurité et la confiance inhérentes à l'infrastructure robuste de Bitcoin sans transférer les actifs hors chaîne.
 3. **Possibilité de gagner des récompenses passives :** Les stakers de Bitcoin peuvent gagner des récompenses en tokens CORE en échange de leur contribution au consensus de la blockchain Core, améliorant ainsi la fonctionnalité et la sécurité de la blockchain.
 4. **Autogestion et sécurité :** Le staking de Bitcoin est 100 % sécurisé avec autogestion ; les utilisateurs exécutent eux-mêmes les transactions de staking sur le réseau Bitcoin, garantissant que leurs Bitcoin ne quittent pas la blockchain.
@@ -77,9 +77,9 @@ En raison de contraintes techniques, le Staking de Bitcoin Non-Custodial ne pren
 
 En raison de complexités techniques, il est possible que votre actif staké ne soit pas visible dans votre portefeuille lorsque vous le vérifiez via l'interface en ligne de commande. Cependant, vous pouvez facilement vérifier que vous avez la propriété complète de vos actifs stakés depuis le [Site Officiel de Staking de Core](https://stake.coredao.org/). De plus, les délais dus au temps de bloc, au nombre de confirmations de blocs requises et à la congestion du réseau sur le réseau Bitcoin peuvent entraîner des retards dans la confirmation de vos transactions, rendant vos actifs invisibles dans vos portefeuilles.
 
-### 13. Comment la sécurité du Self-Custodial Bitcoin staking est-elle assurée ?
+### 13. Comment la sécurité du staking de Bitcoin non-custodial est-elle assurée ?
 
-[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du Self-Custodial Bitcoin staking. Vous pouvez consulter les rapports d'audit sur le protocole de Core Chain et le Self-Custodial Bitcoin staking par des entreprises leaders [ici](https://docs.coredao.org/docs/Learn/audit).
+[Halborn](https://www.halborn.com/), une entreprise conforme à la norme SOC2 Type 1, renommée pour son expertise en sécurité des contrats intelligents et [de confiance par des plateformes blockchain de premier plan](https://www.halborn.com/about/who-trusts-us) comme Ava Labs, Solana et Polygon, ainsi que des projets DeFi comme Sushiswap, a minutieusement audité le protocole de Core et la sécurité du staking de Bitcoin non-custodial. Vous pouvez consulter les rapports d'audit sur le protocole de Core Chain et le staking de Bitcoin non-custodial par des entreprises leaders [ici](https://docs.coredao.org/docs/Learn/audit).
 
 ### 14. Que devriez-vous faire si le bouton _`Redeem BTC`_ ne fonctionne pas sur le site de staking ?
 

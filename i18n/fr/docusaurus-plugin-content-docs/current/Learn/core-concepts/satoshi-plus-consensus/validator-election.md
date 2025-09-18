@@ -21,7 +21,7 @@ Chaque source contribue au score **hybride** d'un validateur, qui détermine son
 
 ## Processus d'élection
 
-<p align="center">![validator-election-flow](../../../../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)</p>
+<p align="center">![validator-election-flow](../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)</p>
 
 ### 1. Délégation de soutien
 

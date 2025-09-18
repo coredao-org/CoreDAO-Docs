@@ -22,7 +22,7 @@ Le double staking crée un **avantage mathématique** dans le système de distri
 
 Le double staking nécessite une participation simultanée à deux branches du consensus tripartite Satoshi Plus de Core :
 
-**Conception du staking de Bitcoin en auto-garde:**
+**Conception du staking de Bitcoin en auto-garde):**
 
 - Verrouiller Bitcoin dans le temps en utilisant CLTV (CheckLockTimeVerify) sur la blockchain Bitcoin
 - Inclure les métadonnées de vote du validateur dans la transaction de verrouillage temporel
@@ -42,7 +42,7 @@ Le protocole utilise un **système de multiplicateurs basé sur les niveaux** po
 | **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | Aucune délégation de CORE                    |
 | **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Niveau d'entrée de double staking            |
 | **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Ratio CORE-Bitcoin plus élevé                |
-| **Satoshi Tier** | R ≥ R₃                  | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
+| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
 
 - Les seuils de niveau (R₁, R₂, R₃) sont dynamiques et s'ajustent en fonction des conditions du réseau.
 - Les niveaux supérieurs débloquent des **multiplicateurs de récompenses** de plus en plus élevés.
@@ -99,5 +99,5 @@ Le staking double offre des rendements attractifs et durables pour les stakers B
 **Commencez le staking double sur stake.coredao.org**
 
 :::info
-Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).
+Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).\
 :::

@@ -177,10 +177,10 @@ const config: Config = {
               from: '/docs/Learn/core-concepts/satoshi-plus-consensus/components',
               to: '/docs/Learn/core-concepts/satoshi-plus-consensus/DPoW',
             },
-          // {
-          //     from: '/docs/Learn/products/btc-staking/dual-staking-guide',
-          //     to: '/docs/stake-and-delegate/dual-staking-guide',
-          // },
+          {
+              from: '/docs/learn/products/btc-staking/dual-staking-guide',
+              to: '/docs/Learn/products/btc-staking/dual-staking-guide',
+          },
           {
               from: '/docs/Node/maintenance/',
               to: '/docs/Node/maintenance',

@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-El[ Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite transferencias de activos fluidas entre Core y el mundo blockchain en general.
+El [Core Bridge](https://bridge.coredao.org/) funciona con LayerZero y permite transferencias de activos fluidas entre Core y el mundo blockchain en general.
 
 El Core Bridge consiste en dos partes:
 

@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-### 1. ¿Cuál es el período de canje de stCORE?
+### 1. ¿Qué es stCORE?
 
 stCORE es una solución innovadora en la cadena de bloques Core diseñada para mejorar la utilidad de los tokens CORE mediante la introducción de apuestas líquidas. Esto permite a los poseedores de tokens CORE maximizar el potencial de sus activos con mayor flexibilidad y eficiencia. El proceso implica apostar tokens CORE para proteger la red y, simultáneamente, ganar liquidez mediante la acuñación de tokens stCORE, que se pueden utilizar en varios protocolos DeFi.
 
@@ -16,19 +16,19 @@ stCORE es una solución innovadora en la cadena de bloques Core diseñada para m
 
 La apuesta líquida con stCORE permite a los poseedores de tokens CORE participar en protocolos DeFi mientras sus activos están en apuesta. Esto mejora la utilidad de los activos y la generación potencial de rendimiento sin comprometer las contribuciones de seguridad a la red.
 
-### 3. ¿Cómo se eligen los validadores en mint/redeem?
+### 4. ¿Cómo se eligen los validadores en mint/redeem?
 
 De forma predeterminada, se requiere un período de desbloqueo de **7 días** para retirar CORE después del inicio del canje.
 
-### 4. ¿Cómo se eligen los validadores al hacer mint/redeem?
+### 5. ¿Cómo se eligen los validadores al hacer mint/redeem?
 
-Tenga en cuenta que cada vez que ocurre la acuñación/canjeo, el contrato "Earn" delega CORE a "PledgeAgent"/desdelega CORE de "PledgeAgent". Esto se implementa de una manera que simplifica la contabilidad.
+Tenga en cuenta que cada vez que ocurre la acuñación/canjeo, el contrato `Earn` delega CORE a `PledgeAgent`/desdelega CORE de `PledgeAgent`. Esto se implementa de una manera que simplifica la contabilidad.
 
 Al llamar al método `mint()`, el usuario debe pasar una dirección de validador a la cual se hará staking de los tokens CORE. Con esto, se busca tratar a todos los candidatos a validador por igual, sin importar si ya están electos o en cola. Sin embargo, para mejorar la experiencia del usuario, es posible que el frontend oficial elija aleatoriamente un validador adecuado y oculte este detalle al usuario.
 
 Durante el canje, el contrato `Earn` elige validadores aleatoriamente - `_randomIndex()`, se seleccionará aleatoriamente un índice, que se utiliza como índice inicial para iterar a través de la matriz de validadores hasta que se deleguen suficientes tokens CORE.
 
-### 5. ¿Cómo se mantiene una distribución equilibrada de validadores en términos de cantidades en staking?
+### 7. ¿Cómo se mantiene una distribución equilibrada de validadores en términos de cantidades en staking?
 
 Cada vez que
 
@@ -49,6 +49,7 @@ En cada ronda, después de que ocurre la turn round, el módulo Earn obtiene las
 Además, la tasa de conversión de stCORE/CORE también puede actualizarse posteriormente. La fórmula para eso es
 
 ```
+    Amount of CORE tokens staked on PledgeAgent / stCORE.totalsupply()
 ```
 
 Dado que **la reclamación de recompensas solo ocurre una vez al día**, en este diseño, la tasa de conversión puede mantenerse constante durante todo el día hasta que ocurra la siguiente turn round.
