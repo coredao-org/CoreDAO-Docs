@@ -54,7 +54,7 @@ Où, $$m + k + l = 1$$
 - $$l$$: Ratio attribué au staking de BTC.
 
 2. À la fin de chaque tour, les validateurs sont classés par ordre de leur score hybride, et les 27 meilleurs validateurs avec les scores hybrides les plus élevés sont sélectionnés pour l'ensemble de validateurs du tour suivant.
-   En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Les mineurs de Bitcoin peuvent voter pour des validateurs via leur PoW (en inscrivant les informations des validateurs dans la transaction coinbase des blocs qu'ils ont déjà minés), les détenteurs de tokens CORE peuvent voter pour un validateur avec leur PoS (en leur déléguant leurs tokens), et les stakers non-custodial de bitcoin peuvent voter pour un validateurvia la délégation de leurs tokens. Cela inclut la Preuve de Travail déléguée (PoW), la Preuve d'Enjeu déléguée (PoS) et le Staking Bitcoin auto-custodial, qui sont pondérés pour déterminer le score hybride.
+   En laissant de côté les détails mathématiques, il s'agit essentiellement d'une procédure de vote pondérée et bicamérale. Les mineurs de Bitcoin peuvent voter pour des validateurs via leur PoW (en inscrivant les informations des validateurs dans la transaction coinbase des blocs qu'ils ont déjà minés), les détenteurs de tokens CORE peuvent voter pour un validateur avec leur PoS (en leur déléguant leurs tokens), et les stakers non-custodial de bitcoin peuvent voter pour un validateurvia la délégation de leurs tokens. Cela inclut la Preuve de Travail déléguée (PoW), la Preuve d'Enjeu déléguée (PoS) et le Staking Bitcoin Self-Custodial, qui sont pondérés pour déterminer le score hybride.
 
 C'est le "cœur" de la blockchain Core, le mécanisme par lequel le réseau exploite la sécurité et la décentralisation du réseau Bitcoin ainsi que la scalabilité et la composition des chaînes PoS comme Ethereum. Permettre aux mineurs de Bitcoin et aux stakers de Bitcoin de voter pour les validateurs permet à Core d'exploiter la robustesse légendaire de Bitcoin. Parce que Core est compatible avec l'EVM, il est possible de créer des contrats intelligents, des dApps et d'autres applications sur Core qui ne pourraient pas être réalisées sans modifications du protocole Bitcoin sous-jacent.
 
@@ -108,6 +108,6 @@ Avec l’introduction du Dual Staking, les récompenses de staking de BTC sont d
 
 Le diagramme suivant représente visuellement le processus d'élection des validateurs dans Satoshi Plus:
 
-<p align="center">  ![validator-election-flow](../../../static/img/validator/Validator-Election-Workflow.png)</p>
+<p align="center">  ![validator-election-flow](../../../../../../static/img/validator/Validator-Election-Workflow.png)</p>
 
 Ce schéma illustre la nature cyclique de l'élection des validateurs et leurs responsabilités continues au sein du mécanisme de consensus Satoshi Plus. Il souligne comment la délégation de stake et de puissance de hachage influence directement la sélection des validateurs, la production de blocs et la distribution des récompenses, conduisant à un réseau sécurisé, décentralisé et géré de manière efficace.

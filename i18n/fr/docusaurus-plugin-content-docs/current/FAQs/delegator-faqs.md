@@ -53,7 +53,7 @@ En dehors des frais de transaction/gas, Core ne facture pas de frais supplément
 
 ### 11. Quand les récompenses sont-elles versées ?
 
-Consultez le guide détaillé [ici](../stake-and-delegate/CORE-staking.md#claiming-rewards) sur la façon de Réclamer les Récompenses obtenues grâce au staking de BTC et de CORE. En cas de délégation de puissance de hachage Btc, consultez [ici](../stake-and-delegate/delegating-hash#implementation).
+Consultez le guide détaillé [ici](../stake-and-delegate/CORE-staking.md) sur la façon de Réclamer les Récompenses obtenues grâce au staking de BTC et de CORE. En cas de délégation de puissance de hachage Btc, consultez [ici](../stake-and-delegate/delegating-hash).
 
 ### 11. Que se passe-t-il si un validateur cesse de fonctionner ou est pénalisé ?
 

@@ -16,7 +16,7 @@ Core est une blockchain Layer 1 haute performance compatible EVM sécurisée par
 
 Le mécanisme de consensus unique de Core rassemble trois groupes de parties prenantes distincts pour sécuriser le réseau :
 
-- **Staking Bitcoin auto-custodial**: les détenteurs de Bitcoin bloquent temporairement leurs pièces pour voter pour les validateurs Core
+- **Staking Bitcoin Self-Custodial**: les détenteurs de Bitcoin bloquent temporairement leurs pièces pour voter pour les validateurs Core
 
 - **Preuve de travail déléguée**: les mineurs de Bitcoin délèguent leur puissance de hachage existante pour voter pour les validateurs Core
 

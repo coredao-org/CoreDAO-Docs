@@ -57,7 +57,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 1. Connectez votre portefeuille Core Mainnet au site Web de staking. N'oubliez pas d'utiliser le même portefeuille que celui que vous aviez utilisé au moment de la mise en jeu des BTC. Cliquez sur le bouton « Connecter » dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
 </p>
 
 2. Depuis le modal de portefeuille affiché, sélectionnez le portefeuille de votre choix configuré pour être utilisé avec Core.
@@ -69,7 +69,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 3. Sur le site Web de staking, survolez votre portefeuille connecté en haut à droite, puis cliquez sur **‘My Staking**".
 
 <p align="center" style={{zoom:"80%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-1.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-1.png)
 </p>
 
 ### Étape #3: Accédez aux enregistrements de staking BTC
@@ -77,13 +77,13 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 1. Sur la page "**My Staking Dashboard**", sélectionnez les enregistrements « BTC » parmi les onglets affichés.
 
 <p align="center" style={{zoom:"80%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-2.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-2.png)
 </p>
 
 2. Cet onglet répertorie tous les enregistrements de staking BTC et les validateurs auxquels vous avez précédemment délégué vos BTC. Recherchez les enregistrements "**Expired**" sous "**Redeem Time**", puis cliquez sur "**Redelegate**" sous "**Action**".
 
 <p align="center" style={{zoom:"80%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-3.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-3.png)
 </p>
 
 ### Étape #4 : Connectez l'appareil Ledger pour la redélégation
@@ -93,7 +93,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 1. Pour connecter votre appareil Ledger directement au site Web de staking, cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" parmi les modèles de portefeuille affichés. Assurez-vous que votre appareil Ledger est connecté, déverrouillé et que l'application Ledger Core est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-1.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-1.png)
 </p>
 
 #### Option #2: Connexion de l'appareil Ledger via le portefeuille Xverse
@@ -103,7 +103,7 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 1. Pour connecter votre appareil Ledger en utilisant le portefeuille Xverse, cliquez sur "**Xverse**" sous la section "**Wallets Supporting Ledger**" parmi les modèles de portefeuille affichés. Assurez-vous que votre Ledger est connecté, déverrouillé et que l'application Ledger Core est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-2.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/wallet-connect-2.png)
 </p>
 
 ### Étape #5: Spécifier les détails de réattribution de BTC
@@ -114,19 +114,19 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 4. Procédez en cliquant sur "**Confirm Delegation**".
 
 <p align="center" style={{zoom:"40%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-4.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-4.png)
 </p>
 
 5. **Vérification de l'adresse de staking BTC (facultatif):** Utilisez l'outil de vérification d'adresse de staking BTC pour confirmer que l'adresse de staking BTC affichée correspond à l'adresse attendue avant de procéder.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-5.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-5.png)
 </p>
 
 6. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-6.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-6.png)
 </p>
 
 ### Étape #6: Réviser et approuver la transaction de réattribution de BTC
@@ -134,7 +134,7 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 L'utilisateur sera invité à examiner et à approuver la transaction depuis son appareil Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-7.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-7.png)
 </p>
 
 #### Utilisation du portefeuille Xverse pour approuver la transaction
@@ -142,13 +142,13 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 1. Si vous utilisez un portefeuille Xverse, examinez la transaction. Vérifiez les détails et cliquez sur « Confirmer » sur la notification du portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"40%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/Xverse-wallet-ui.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/Xverse-wallet-ui.png)
 </p>
 
 2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/xverse-wallet-ui-2.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/xverse-wallet-ui-2.png)
 </p>
 
 3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
@@ -159,19 +159,19 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 2. Utilisez toujours l'application Ledger Core, et non l'application Ledger Bitcoin, pour la réattribution de BTC verrouillés expirés sur la blockchain Core. L'application Bitcoin manque de prise en charge pour les opérations de remboursement et de redélégation. De plus, l'application Ledger Core prend en charge Clear Signing, qui affiche tous les détails de transaction (tels que le montant, les adresses et les frais) directement sur l'écran de votre appareil Ledger. Cela garantit une transparence totale et vous permet de vérifier et d'approuver la transaction, protégeant ainsi vos actifs contre des actions non intentionnelles ou malveillantes. Pour plus de détails sur Clear Signing, référez-vous ici.
 
 <p align="center">
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/btc-staking-ledger.gif)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-staking/btc-staking-ledger.gif)
 </p>
 
 3. Une fois la transaction approuvée sur votre appareil Ledger, le site Web de staking affichera une notification "**Transaction soumise**" , confirmant que votre demande de redélégation de BTC a été lancée avec succès.
 
 <p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-8.png)
+![install-coredao-app-on-ledger](../../../../../../../../static/img/ledger-core/mainnet/btc-redelegation/UI-8.png)
 </p>
 
 4. Après l'approbation de la transaction, les utilisateurs peuvent également consulter les détails de la transaction sur le BTC Explorer.
 
 ## Conclusion
 
-En suivant ce guide, vous avez réussi à redéléguer les BTC mis en staking avec verrouillage temporel expiré sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de verrouillage temporel auto-custodial de Core pour BTC et de la sécurité leader de l'industrie de Ledger, renforcée par Clear Signing via l'application Ledger Core, offre une transparence, une confiance et une sécurité maximales. Votre redélégation réussie pour le staking de BTC signifie que vos BTC continuent à participer à l'écosystème décentralisé de Core sans jamais quitter votre garde.
+En suivant ce guide, vous avez réussi à redéléguer les BTC mis en staking avec verrouillage temporel expiré sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de verrouillage temporel Self-Custodial de Core pour BTC et de la sécurité leader de l'industrie de Ledger, renforcée par Clear Signing via l'application Ledger Core, offre une transparence, une confiance et une sécurité maximales. Votre redélégation réussie pour le staking de BTC signifie que vos BTC continuent à participer à l'écosystème décentralisé de Core sans jamais quitter votre garde.
 
 

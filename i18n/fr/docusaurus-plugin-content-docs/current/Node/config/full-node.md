@@ -4,11 +4,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 
 # Les nœuds complets (Full Nodes) sur Core
-
 ---
 
 Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Core, permettant à quiconque de vérifier l'état de n'importe quel compte. Un nœud complet Core peut prendre plusieurs formes:
@@ -34,61 +34,63 @@ Il existe plusieurs exigences système pour configurer un nœud complet sur Core
 Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Contrairement aux validateurs, les nœuds complets ne produisent pas de blocs, mais aident à propager les transactions et les blocs à travers le réseau. Ils jouent un rôle crucial dans le maintien de l'intégrité des données et dans le soutien d'un environnement sans confiance. Pour exécuter des nœuds complets sur Core, les spécifications matérielles minimales recommandées sont les suivantes :
 
 <Tabs
-defaultValue="testnet2"
-values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet', value: 'testnet2'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
-    ```
-    | Exigences   | Détails                                                                                                |  
+
+    | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms |
     | **CPU**            | 4 CPU cores                                                                    |
     | **RAM**            | 8 Gigabytes                                                                                             |
-    | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
-                                     |
-    ```
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                  |
+
 
   </TabItem>
 
   <TabItem value="mainnet">
-    Pour les nœuds d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
+    For Full Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
-    ```
-    | Exigences   | Détails                                                                                                |  
+
+    | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
-    | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
-    | **CPU**            | 4 CPU cores                                                                    |
-    | **RAM**            | 32 Gigabytes                                                                                             |
-    | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
-                                     |
-    ```
-
+    | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 32 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5 Mbps                                   |
   </TabItem>
 </Tabs>
 
 ## Construire et exécuter un nœud complet sur Core
 
 <Tabs
-defaultValue="testnet2"
-values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet', value: 'testnet2'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+ 1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
-1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2. Téléchargez la dernière version binaire du nœud pour le Testnet de Core à partir du [repertoire de sortie](https://github.com/coredao-org/core-chain/releases/latest) GitHub de Core. Le binaire du nœud inclut les fichiers de configuration du testnet. Assurez-vous d'utiliser les configurations de **testnet2**. Téléchargez le dernier snapshot pour le testnet [ici](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Notez que la méthode recommandée pour synchroniser un nœud testnet est de démarrer à partir du bloc genesis.
+ 2. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the testnet configuration files, make sure to use **testnet2** configurations. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing testnet nodes is to sync from the genesis block.
 
-3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+
+3. Write the genesis state locally by executing the following command from your project directory:
+
 
     ```bash
     geth --datadir node init genesis.json
     ```
 
-   Vous devriez voir le message suivant :
+
+    You should see the following output:
+
 
     ```bash
     INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -102,30 +104,35 @@ values={[
     INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
     ```
 
-4. Notre nœud complet est prêt, lançons-le ! Exécutez la commande suivante pour démarrer le nœud complet directement :
+
+4. Our full node is ready, let's start running it! Run the following command to start the full node  directly:
+
 
     ```bash
     ## start a full node
     geth --config ./config.toml --datadir ./node  --cache 8000
     ```
 
-   5\. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
 
-    </TabItem>
+    5\. As our full node runs, we can monitor its logs to make sure that everything is operating correctly. The log file is located at `/node/logs/core.log` by default, but can be changed to another location if desired.
+ </TabItem>
 
  <TabItem value="mainnet">
 
-1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
-2. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le nœud binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
-3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+2. Download the node binary from the[ releases page](https://github.com/coredao-org/core-chain/releases) of the core-chain repository. The node binary includes the relevant mainnet and testnet configuration files. This is the [latest version](https://github.com/coredao-org/core-chain/releases/latest).
+
+
+3. Write the genesis state locally by executing the following command from your project directory:
+
 
     ```bash
     geth --datadir node init genesis.json
     ```
 
-   Vous devriez voir le message suivant :
+    You should see the following output:
 
     ```bash
     INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -139,14 +146,14 @@ values={[
     INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
     ```
 
-4. Notre nœud complet est prêt, lançons-le ! Exécutez la commande suivante pour démarrer le nœud complet directement:
+
+4. Our full node is ready, let's start running it! Run the following command to start the full node  directly:
 
     ```bash
     ## start a full node
     geth --config ./config.toml --datadir ./node  --cache 8000
     ```
 
-5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
-     </TabItem>
-
+5. While the full node is running, we can monitor its logs to ensure that everything is operating correctly. The log file is located at `/node/logs/core.log` by default, but can be changed to another location if desired.
+  </TabItem>
 </Tabs>

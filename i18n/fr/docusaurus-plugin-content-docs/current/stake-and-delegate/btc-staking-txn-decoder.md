@@ -18,7 +18,7 @@ L'outil de décodage effectue une validation complète des transactions de mise 
 - **Conformité au protocole :** Valide que la transaction répond à toutes les exigences du protocole de mise en jeu Core
 
 <p align="center">
-![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/txn-decoder.png)
+![btc-staking-txn-decoder](../../../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
 </p>
 
 Ce processus de validation analyse votre transaction de mise en jeu de BTC et aide à identifier les problèmes si la transaction n'a pas abouti.
@@ -63,7 +63,7 @@ Le décodeur fournira des informations détaillées sur votre transaction:
 - **Hachage de clé publique :** Votre hachage de clé publique à des fins de vérification
 
 <p align="center">
-![btc-staking-txn-decoder](../../static/img/btc-staking-txn-decoder/decoded-data.png)
+![btc-staking-txn-decoder](../../../../../static/img/btc-staking-txn-decoder/decoded-data.png)
 </p>
 
 ## Common Issues and Solutions

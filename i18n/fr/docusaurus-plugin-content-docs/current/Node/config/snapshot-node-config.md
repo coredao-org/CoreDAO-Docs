@@ -4,8 +4,8 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Nœuds de snapshot sur Core
 
@@ -28,45 +28,45 @@ Il y a plusieurs requis systèmes, à la fois logicielles et matérielles, pour 
 Un nœud de snapshot sur Core fournit des instantanés périodiques de l'état de la blockchain, permettant une synchronisation plus rapide des nœuds et réduisant les besoins en stockage. Ces nœuds aident les nouveaux validateurs et les nœuds RPC à se mettre rapidement à jour avec l'état le plus récent de la blockchain sans avoir à traiter toute l'historique. Les nœuds de snapshot améliorent l'efficacité et l'accessibilité du réseau. Sur le réseau Core, les nœuds snapshot fonctionnent également comme des nœuds d'archive, stockant l'intégralité des données de la blockchain. Voici les recommandations matérielles minimales pour exécuter un nœud de snapshot sur Core. Ces spécifications sont conçues pour gérer les processus de test et de validation tout en garantissant un stockage et une synchronisation efficaces des données.
 
 <Tabs
-defaultValue="testnet2"
-values={[
-{label: 'Testnet', value: 'testnet2'},
-{label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+  defaultValue="testnet2"
+  values={[
+    {label: 'Testnet', value: 'testnet2'},
+    {label: 'Mainnet', value: 'mainnet'},
+  ]}>
+  <TabItem value="testnet2">
+    For Snapshot Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
-```
-Exigences	Détails
-Stockage	Disque SSD avec une capacité minimale de 4 To
-Processeur	4 cœurs de processeur
-Mémoire RAM	16 gigaoctets
-Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps.
-```
+
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
+
 
   </TabItem>
   <TabItem value="testnet">
-    Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+    For Snapshot Nodes on **Core testnet2**, following minimum hardware specifications are recommended:
 
-```
-Exigences	Détails
-Stockage	Disque SSD avec une capacité minimale de 4 To
-Processeur	4 cœurs de processeur
-Mémoire RAM	16 gigaoctets
-Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps
-```
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
 
   </TabItem>
   <TabItem value="mainnet">
-Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
+    For Snapshot Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
 
-```
-Exigences	Détails
-Stockage	Disque SSD avec une capacité minimale de 4 To
-Processeur	4 cœurs de processeur
-Mémoire RAM	16 gigaoctets
-Débit Internet	Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 5 Mbps
-```
 
+    | Requirements   | Details                                                                                                 |  
+    |----------------|---------------------------------------------------------------------------------------------------------|
+    | **Storage**        | Solid State Drive (SSD) with a minimum capacity of 4TB                                                  |
+    | **CPU**            | 4 CPU cores                                                                                             |
+    | **RAM**            | 16 Gigabytes                                                                                            |
+    | **Internet Speed** | A broadband Internet connection with upload/download speeds of 5Mbps                                    |
   </TabItem>
 </Tabs>
 
@@ -103,7 +103,7 @@ chmod -v u+x geth
 Téléchargez `genesis.json` et `config.toml` en exécutant les commandes suivantes :
 
 ```bash
-wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest |grep browser_ |grep mainnet |cut -d\" -f4)
+wget   $(curl -s https://github.com/coredao-org/core-chain/releases/latest | grep browser_ |grep mainnet |cut -d\" -f4)
 
 
 unzip mainnet.zip

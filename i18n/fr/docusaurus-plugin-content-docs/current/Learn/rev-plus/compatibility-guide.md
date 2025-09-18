@@ -33,7 +33,7 @@ forge script script/MyScript.s.sol --rpc-url <URL> --gas-estimate-multiplier 500
 
 Because gas usage can vary due to runtime execution paths and Rev+ logic, it’s essential to:
 
-- Start with a higher gas multiplier (e.g., 500\)
+- Start with a higher gas multiplier (e.g., 500)
 - Test progressively lower values to determine the optimal multiplier
 - Ensure robustness against out-of-gas failures
 

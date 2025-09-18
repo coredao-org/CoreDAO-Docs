@@ -4,11 +4,10 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer des onglets depuis « @theme/Tabs » ;
-importer un élément d'onglet depuis « @theme/TabItem » ;
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Explorateur Blockchain Core Scan
-
 ---
 
 Core Explorer est une interface graphique permettant aux utilisateurs d'interagir avec la blockchain CORE. Grâce à cette interface, vous pouvez consulter les informations sur les blocs ajoutés à la blockchain, les transactions effectuées, les soldes de portefeuille, ainsi que les informations sur les jetons tCORE2 et CORE. Core Network propose des explorateurs pour son mainnet et son testnet.
@@ -35,4 +34,4 @@ Vous pouvez utiliser l'explorateur de blockchain Testnet Core pour rechercher et
 - Celle où vous avez récupéré des tCORE2 depuis le Faucet;
 - Celle où vous avez envoyé des tCORE2 à une autre adresse;
 
-![core-explorer](../../static/img/core-explorer.png)
+![core-explorer](../../../../../static/img/core-explorer.png)

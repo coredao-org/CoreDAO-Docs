@@ -59,29 +59,27 @@ Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub 
 
 ## Déploiement du contrat OFT
 
-````
 Modifiez le contrat OFT pour permettre la création de jetons. Allez dans `contracts/MyOFT.sol` et mettez à jour le code comme suit 
 
 ```javascript
-// SPDX-License-Identifier: MIT
-pragma solidity ^0.8.22;
+  // SPDX-License-Identifier: MIT
+  pragma solidity ^0.8.22;
 
-import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
-import { OFT } from "@layerzerolabs/oft-evm/contracts/OFT.sol";
+  import { Ownable } from "@openzeppelin/contracts/access/Ownable.sol";
+  import { OFT } from "@layerzerolabs/oft-evm/contracts/OFT.sol";
 
-contract MyOFT is OFT {
-   constructor(
-    string memory _name,
-    string memory _symbol,
-    address _lzEndpoint,
-    address _delegate
-) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
-    // Mint tokens to the deployer's address (msg.sender)
-    _mint(msg.sender, 100_000 \* 10 \*\* 18);
-    }
-}
+  contract MyOFT is OFT {
+    constructor(
+      string memory _name,
+      string memory _symbol,
+      address _lzEndpoint,
+      address _delegate
+  ) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
+      // Mint tokens to the deployer's address (msg.sender)
+      _mint(msg.sender, 100_000 \* 10 \*\* 18);
+      }
+  }
 ```
-````
 
 1. **Déployer sur le réseau Core**
 
@@ -274,11 +272,7 @@ npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a cored
 
 5. **Suivez les transferts**
 
-   Utilisez [LayerZero Scan Explorer] (https://layerzeroscan.com) pour surveiller les transactions inter-chaînes :
-
-```
-https://layerzeroscan.com/tx/TX_HASH
-```
+Utilisez [LayerZero Scan Explorer](https://layerzeroscan.com) pour surveiller les transactions inter-chaînes: https://layerzeroscan.com/tx/TX_HASH
 
 ## Personnalisation et configuration avancée
 

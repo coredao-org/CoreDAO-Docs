@@ -19,7 +19,7 @@ Le DPoW crée une **relation symbiotique** entre les réseaux Bitcoin et Core:
 - Core bénéficie de la sécurité et de l'infrastructure décentralisée sans précédent de Bitcoin
 
 <p align="center">
-![dpow-core-architechture](../../../../static/img/staoshi-plus/DPoW.png)
+![dpow-core-architechture](../../../../../../../static/img/staoshi-plus/DPoW.png)
 </p>
 
 ## Concepts de Core

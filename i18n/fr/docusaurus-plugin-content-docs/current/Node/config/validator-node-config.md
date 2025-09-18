@@ -4,8 +4,9 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 
 # Nœuds de validation sur Core
 
@@ -32,31 +33,28 @@ defaultValue="testnet2"
 values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+]}> 
+<TabItem value="testnet2">
+Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont:
 
-```
 | Exigences.   | Détails                                                                                                |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
 | **CPU**            | Un minimum de 4 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
 | **RAM**            | 8 Gigabytes                                                                                             |
 | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10Mbps.                |
-```
 
   </TabItem>
 
   <TabItem value="mainnet">
 Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
-```
 | Exigences.   | Détails                                                                                                |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
 | **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
 | **RAM**            | 32 Gigabytes                                                                                             |
 | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10Mbps.                |
-```
 
   </TabItem>
 </Tabs>

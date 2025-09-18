@@ -22,7 +22,7 @@ Le double staking crée un **avantage mathématique** dans le système de distri
 
 Le double staking nécessite une participation simultanée à deux branches du consensus tripartite Satoshi Plus de Core :
 
-**Conception du staking de Bitcoin en auto-garde):**
+**Conception du staking de Bitcoin en auto-garde:**
 
 - Verrouiller Bitcoin dans le temps en utilisant CLTV (CheckLockTimeVerify) sur la blockchain Bitcoin
 - Inclure les métadonnées de vote du validateur dans la transaction de verrouillage temporel
@@ -99,5 +99,5 @@ Le staking double offre des rendements attractifs et durables pour les stakers B
 **Commencez le staking double sur stake.coredao.org**
 
 :::info
-Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).\
+Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).
 :::

@@ -21,7 +21,7 @@ Dans l'écosystème de Core, un "validateur" fait référence aux nœuds ou part
   3. Connectez votre portefeuille en sélectionnant **Connect Wallet** en haut à droite.
   4. Une fois connecté, le bouton **Register** devrait apparaître en haut à droite. En sélectionnant **register** le formulaire suivant s'affiche :
 
-![register-validator](../../static/img/validator/register/validator-register-1.png)
+![register-validator](../../../../../static/img/validator/register/validator-register-1.png)
 
 Fournissez les informations pour chaque champ du formulaire :
 
@@ -32,7 +32,7 @@ Fournissez les informations pour chaque champ du formulaire :
   1. Une fois les informations saisies, sélectionnez **Register** pour vous enregistrer en tant que validateur.
   2. Pour vérifier rapidement si votre nœud complet a bien été enregistré comme validateur, ouvrez le fichier de log et recherchez le message d'erreur "**unauthorized validator**". Cette erreur se produit lorsque le nœud est enregistré mais pas encore élu au sein de l'ensemble des validateurs.
 
-![validator-logs](../../static/img/validator/register/validator-register-2.avif)
+![validator-logs](../../../../../static/img/validator/register/validator-register-2.avif)
 
 ### 3. Quelles sont les exigences matérielles/logiciels pour exécuter un nœud validateur sur Core ?
 
@@ -87,7 +87,7 @@ Voici un aperçu détaillé des risques et pénalités auxquels les validateurs 
 4. **Perte de délégation :** les délégateurs peuvent retirer leur soutien si un validateur performe mal ou est fréquemment pénalisé.
 5. **Risques opérationnels et de sécurité :** les validateurs doivent maintenir des opérations sûres et efficaces 24h/24. Des défaillances opérationnelles ou des violations de sécurité peuvent entraîner des dommages financiers et réputationnels.
 
-### 9) Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core ?
+### 8. Comment fonctionne le processus d'élection des validateurs sur l'écosystème Core ?
 
 Le processus d'élection des validateurs dans le mécanisme Satoshi Plus sur le réseau Core implique différentes étapes qui intègrent des éléments de Preuve de Travail (PoW) et de Preuve d'Enjeu (PoS) :
 
@@ -108,7 +108,7 @@ Où :
 
 4. **Formation du groupe de validateurs :** Les **31** validateurs ayant les meilleurs scores hybrides sont sélectionnés pour le tour suivant.
 
-### 9) Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
+### 9. Qu'est-ce que le slashing, et quels sont les frais de slashing appliqués sur la blockchain Core ?
 
 Le "slashing" est une pénalité appliquée aux validateurs pour mauvaise conduite ou manquements à leurs devoirs. Dans le réseau Core, le slashing peut affecter les récompenses et les mises déposées.
 
@@ -123,6 +123,6 @@ Il y a deux scénarios où les validateurs peuvent être emprisonnés.
 1. Ne pas miner **150** blocs consécutifs entraîne la perte de **10 %** du dépôt du validateur et un emprisonnement de trois jours, pendant lesquels ils ne peuvent pas être élus dans le groupe de validateurs.
 2. La double signature peut entraîner le slashing de toutes les récompenses, la perte du dépôt entier du validateur et une interdiction permanente du réseau, c'est-à-dire un emprisonnement à vie.
 
-### 11) À quelle fréquence les validateurs doivent-ils être en ligne ?
+### 11. À quelle fréquence les validateurs doivent-ils être en ligne ?
 
 Les validateurs sont généralement censés être en ligne et participer activement presque en continu.

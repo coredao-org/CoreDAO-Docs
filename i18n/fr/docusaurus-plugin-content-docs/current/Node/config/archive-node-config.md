@@ -35,28 +35,24 @@ values={[
 ]}> <TabItem value="testnetTwo">
 Pour les nœuds d'archivage sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
-```
 | Exigences   | Détails                                                                                                 |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**        | Disque à état solide (SSD) avec une capacité minimale de 1 To. Les SSD sont recommandés en raison de leurs vitesses de lecture et d'écriture plus rapides, essentielles pour gérer les grandes quantités de données de la blockchain et fournir un accès rapide aux transactions historiques.           |
 | **CPU**            | 8 Core CPU                                                                                          |
 | **RAM**            | 32 Gigabytes                                                                                        |
 | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5Mbps                                |
-```
 
   </TabItem>
 
   <TabItem value="mainnet">
     Pour les nœuds d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
 
-```
 | Exigences   | Détails                                                                                                 |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**        | Disque à état solide (SSD) avec une capacité minimale de 4 To. Les SSD sont recommandés en raison de leurs vitesses de lecture et d'écriture plus rapides, essentielles pour gérer les grandes quantités de données de la blockchain et fournir un accès rapide aux transactions historiques.           |
 | **CPU**            | 8 Core CPU                                                                                          |
 | **RAM**            | 32 Gigabytes                                                                                        |
 | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5Mbps                                |
-```
 
   </TabItem>
 </Tabs>

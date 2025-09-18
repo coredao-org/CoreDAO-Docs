@@ -10,7 +10,7 @@ sidebar_position: 2
 
 ### 1\. Y a-t-il des requis pour le Dual Staking ?
 
-Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes :
+Pour permettre des rendements plus élevés pour le staking de Bitcoin via le Dual Staking, les utilisateurs doivent remplir les conditions suivantes:
 
 1. Staker à la fois CORE et Bitcoin simultanément, en s'assurant que le montant de CORE staké dépasse le seuil minimum de dual staking **ET**
 2. L'adresse du portefeuille de staking de CORE **doit** correspondre à l'adresse de récompense CORE désignée pour le staking de Bitcoin à laquelle le rendement est payé.

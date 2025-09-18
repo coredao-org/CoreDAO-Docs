@@ -10,11 +10,11 @@ sidebar_position: 2
 
 ## Contexte
 
-La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify)\`OP_CODE. CLTV (CheckLockTimeVerify) est une opération de script Bitcoin qui restreint les sorties de transaction de manière à ce qu'elles ne puissent pas être dépensées avant qu'une hauteur de bloc ou un temps absolu spécifié ne soit atteint. En créant une transaction avec un script CLTV, les détenteurs de Bitcoin peuvent rendre temporairement leurs pièces non dépensables tout en incluant des métadonnées qui permettent à Core de reconnaître leur participation au consensus.
+La méthodologie pour intégrer le staking de Bitcoin repose sur le [verrouillage temporel CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify) `OP_CODE` CLTV (CheckLockTimeVerify) est une opération de script Bitcoin qui restreint les sorties de transaction de manière à ce qu'elles ne puissent pas être dépensées avant qu'une hauteur de bloc ou un temps absolu spécifié ne soit atteint. En créant une transaction avec un script CLTV, les détenteurs de Bitcoin peuvent rendre temporairement leurs pièces non dépensables tout en incluant des métadonnées qui permettent à Core de reconnaître leur participation au consensus.
 Ce mécanisme exploite les capacités de script existantes de Bitcoin sans nécessiter aucune modification du protocole Bitcoin.
 
 <p align="center">
-![btc-staking-tx-design](../../../static/img/btc-staking/tx-design/staking-tx-design.png)
+![btc-staking-tx-design](../../../../../../static/img/btc-staking/tx-design/staking-tx-design.png)
 </p>
 
 ### Exigences pour la Validité des Transactions {#requirements-for-transaction-validity}
@@ -25,17 +25,17 @@ Ce mécanisme exploite les capacités de script existantes de Bitcoin sans néce
   - Incluez une sortie OP_RETURN contenant deux éléments d'information critiques :
     - L'adresse du validateur Core qu'ils souhaitent soutenir.
     - L'adresse Core où ils souhaitent recevoir les récompenses en jetons CORE.
-- Exigences minimales :
-  - Montant : Lors de l'utilisation de l'interface de jalonnement officielle (https://stake.coredao.org/staking), un minimum de 0,01 BTC doit être verrouillé temporairement (hors frais de transaction)
-  - Durée : La période de verrouillage temporaire minimale est de 24 heures, bien que l'interface de jalonnement Core par défaut recommande un minimum de 5 jours pour une participation optimale.
-  - Implémentation technique : Il n'y a pas d'exigences minimales lors de la création manuelle de transactions de verrouillage temporaire, bien que les mêmes paramètres soient recommandés pour une participation efficace.
+- Exigences minimales:
+  - Montant: Lors de l'utilisation de l'interface de jalonnement [officielle](https://stake.coredao.org/staking), un minimum de 0,01 BTC doit être verrouillé temporairement (hors frais de transaction)
+  - Durée: La période de verrouillage temporaire minimale est de 24 heures, bien que l'interface de jalonnement Core par défaut recommande un minimum de 5 jours pour une participation optimale.
+  - Implémentation technique: Il n'y a pas d'exigences minimales lors de la création manuelle de transactions de verrouillage temporaire, bien que les mêmes paramètres soient recommandés pour une participation efficace.
 
 ### Déroulement des transactions
 
 Les opérations de Staking de Bitcoin Non-Custodial sont effectuées sur deux blockchains distinctes : Bitcoin et Core. Le schéma suivant illustre le flux de travail pour que les détenteurs de Bitcoin puissent gagner des récompenses de staking grâce au Staking de Bitcoin Non-Custodial de Core.
 
 <p align="center">
-![btc-staking-flow](../../../static/img/btc-staking/btc-staking-workflow.png)
+![btc-staking-flow](../../../../../../static/img/btc-staking/btc-staking-workflow.png)
 </p>
 
 ## Structure des transactions
@@ -51,7 +51,7 @@ Une transaction de staking Bitcoin doit comporter deux ou trois sorties, qui son
 Notez qu'il n'y a **aucune** restriction sur les entrées.
 
 <p align="center">
-![btc-staking-tx-output](../../../static/img/btc-staking/tx-design/staking-flow.png)
+![btc-staking-tx-output](../../../../../../static/img/btc-staking/tx-design/staking-flow.png)
 </p>
 
 ### Transaction de retrait
@@ -59,7 +59,7 @@ Notez qu'il n'y a **aucune** restriction sur les entrées.
 Les UTXO (Bitcoins) verrouillés peuvent être dépensés en utilisant le script de rachat lorsque le verrouillage temporel prend fin.
 
 <p align="center">
-![btc-staking-withdrawal-tx](../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
+![btc-staking-withdrawal-tx](../../../../../../static/img/btc-staking/tx-design/withdrawal-flow.png)
 </p>
 
 ## Design du script
@@ -139,7 +139,7 @@ Pour rendre le processus plus pratique, Core introduit le rôle des relayeurs. L
 [https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512](https://mempool.space/tx/9f5c66d5f90badafd537df44326f270aa64b7cc877ef68c3b69ed436870a3512)
 
 <p align="center">
-![btc-staking-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(3).png)
+![btc-staking-tx-example](../../../../../../static/img/btc-staking/tx-design/staking-tx-design%20(3).png)
 </p>
 
 #### Sortie P2WSH
@@ -186,10 +186,11 @@ Le code hex complet de cette sortie est le suivant `6a4c505341542b01045bde60b7d0
 Cette transaction a dépensé la sortie P2WSH avec verrouillage temporel de la transaction de staking mentionnée précédemment
 
 <p align="center">
-![btc-staking-withdrawal-tx-example](../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
+![btc-staking-withdrawal-tx-example](../../../../../../static/img/btc-staking/tx-design/staking-tx-design%20(4).png)
 </p>
 
 Dans l'entrée, le redeem script `041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` est fourni pour la dépenser. Comme le verrouillage temporel `1f5e0e66` (660e5e1f après inversion des octets, ce qui correspond à un horodatage Unix de 1712217631) avait déjà expiré, l'UTXO a été dépensé avec succès.
 
-> **Note**
-> \> Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
+:::note
+Des exemples de code pour la construction des transactions de staking et de retrait sur le réseau Bitcoin seront bientôt fournis.
+:::

@@ -14,7 +14,7 @@ Core offre aux détenteurs de Bitcoin une opportunité sans risque et transparen
 
 ### 2. Comment Fonctionne le Staking de Bitcoin Non-Custodial ?
 
-Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les détenteurs de Bitcoin à son mécanisme de consensus, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du staking de Bitcoin auto-custodial, référez-vous [ici](../stake-and-delegate/btc-staking/btc-staking-working.md).
+Grâce au staking de Bitcoin non custodial, le protocole de Core intègre les détenteurs de Bitcoin à son mécanisme de consensus, Satoshi Plus. La méthodologie de Core pour intégrer le staking de Bitcoin se concentre sur le [timelock CLTV](https://en.bitcoin.it/wiki/Timelock#CheckLockTimeVerify), une fonctionnalité cryptographique native de Bitcoin qui spécifie une condition selon laquelle la sortie de la transaction ne peut pas être dépensée avant qu'un certain temps ne soit écoulé. Pour plus de détails sur le fonctionnement du staking de Bitcoin Self-Custodial, référez-vous [ici](../stake-and-delegate/btc-staking/btc-staking-working.md).
 
 ### 3. Quels sont les avantages du Staking de Bitcoin Non-Custodial ?
 
@@ -63,7 +63,7 @@ L'adresse de staking est dérivée de la clé privée principale de votre portef
 
 Vous pouvez voir vos fonds stakés en recherchant l'adresse de staking sur n'importe quel explorateur Bitcoin comme [Mempool](https://mempool.space/). Nous travaillons activement pour rendre les actifs stakés visibles dans tous les portefeuilles pris en charge, en particulier via les versions en ligne de commande.
 
-### 10. Est-ce que Core fournit un support de portefeuille matériel pour le staking Bitcoin auto-custodial ?
+### 10. Est-ce que Core fournit un support de portefeuille matériel pour le staking Bitcoin Self-Custodial ?
 
 En raison de contraintes techniques, le Staking de Bitcoin Non-Custodial ne prend pas actuellement en charge les portefeuilles matériels. Cependant, nous explorons constamment des moyens d'améliorer la compatibilité avec divers types de portefeuilles, en mettant l'accent sur la sécurité et la commodité pour nos utilisateurs.
 

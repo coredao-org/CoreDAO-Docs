@@ -38,7 +38,7 @@ Pendant cette période, les Bitcoins sont non dépensables - même par le propri
 
 Lors de la création de la transaction de verrouillage temporel, vous incluez des métadonnées dans le script de remboursement spécifiant :
 
-- \*\* Quel validateur Core\*\* vous soutenez
+- **Quel validateur Core** vous soutenez
 - **Quelle adresse EVM** doit recevoir vos récompenses en jetons CORE
 
 Votre pouvoir de vote sur Core est **proportionnel au montant de Bitcoin** que vous verrouillez temporairement pour soutenir un validateur.

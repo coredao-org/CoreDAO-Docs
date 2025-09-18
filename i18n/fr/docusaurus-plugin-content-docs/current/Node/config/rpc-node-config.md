@@ -4,8 +4,8 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Nœuds RPC sur Core
 
@@ -36,28 +36,24 @@ values={[
 ]}> <TabItem value="testnet2">
 Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
-```
 | Exigences   | Détails                                                                                                |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**        | 1 To d'espace disque libre, SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture < 1 ms.  |
 | **CPU**            | 8 CPU cores |
 | **RAM**            | 16 Gigabytes   |
 | **Débit Internet** | Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 50 Mo/s.              |
-```
 
   </TabItem>
 
   <TabItem value="mainnet">
 Pour les nœuds RPC sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
-```
 | Exigences   | Détails                                                                                                |  
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **Stockage**        | 1 To d'espace disque libre, SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture < 1 ms.  |
 | **CPU**            | 8 CPU cores |
 | **RAM**            | 32 Gigabytes   |
 | **Débit Internet** | Connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 50 Mo/s.              |
-```
 
   </TabItem>
 </Tabs>
@@ -70,11 +66,11 @@ Si vous exécutez un nœud RPC, vous devez activer les règles entrantes `HTTP` 
 
 ### Compilation et Exécution
 
-1\. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
+1. Nous recommandons d'utiliser le dépôt GitHub de [core-chain](https://github.com/coredao-org/core-chain) pour construire et exécuter directement votre nœud complet à partir du code source de notre blockchain. Les instructions pour compiler le code source se trouvent dans le fichier [README](https://github.com/coredao-org/core-chain#building-the-source) du répertoire.
 
-2\. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
+2. Téléchargez le binaire du nœud depuis la [page des sorties](https://github.com/coredao-org/core-chain/releases) du répertoire core-chain. Le binaire inclut les fichiers de configuration pertinents pour le mainnet et le testnet. Il s'agit de la [version la plus récente](https://github.com/coredao-org/core-chain/releases/latest).
 
-3\. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
+3. Exécutez la commande suivante à partir de votre répertoire de projet pour initialiser l'état genesis :
 
 ```bash
 geth --datadir node init genesis.json
@@ -94,7 +90,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4\. Maintenant que la configuration du nœud RPC est terminée, il est temps de le lancer.
+4. Maintenant que la configuration du nœud RPC est terminée, il est temps de le lancer.
 
 Pour exécuter un nœud RPC, exécutez la commande `geth` suivante:
 
@@ -103,4 +99,4 @@ Pour exécuter un nœud RPC, exécutez la commande `geth` suivante:
 geth --config ./config.toml --datadir ./node --cache 8000 --gcmode=full --rpc.allow-unprotected-txs
 ```
 
-5\. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.

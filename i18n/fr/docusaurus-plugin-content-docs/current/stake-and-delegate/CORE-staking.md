@@ -15,8 +15,8 @@ In this guide, we provide a step-by-step walkthrough on how to delegate your COR
 
 ## Site Web de Staking Core
 
-- Mainnet Core : [https://stake.coredao.org/](https://stake.coredao.org/)
-- Testnet2 Core : [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
+- **Mainnet Core**: [https://stake.coredao.org/](https://stake.coredao.org/)
+- **Testnet2 Core**: [https://stake.test2.btcs.network/](https://stake.test2.btcs.network/)
 
 ## Guide étape par étape pour déléguer CORE
 

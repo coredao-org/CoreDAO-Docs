@@ -17,7 +17,7 @@ Actuellement, l'EVM de Core correspond à la version **Shanghai** et ne prend pa
 
 ### Paramètres EVM
 
-Pour prendre en charge l’exécution de smart contracts avec Solidity version \*\*0.8.24^\*\*Core Mainnet (1116) and Testnet2 (1114) , les développeurs **_doivent_** choisir la version **Shanghai** de l’EVM, et **non** les versions EVM par défaut, afin de compiler et déployer leurs smart contracts.
+Pour prendre en charge l’exécution de smart contracts avec Solidity version **0.8.24^** Core Mainnet (1116) and Testnet2 (1114) , les développeurs **_doivent_** choisir la version **Shanghai** de l’EVM, et **non** les versions EVM par défaut, afin de compiler et déployer leurs smart contracts.
 
 #### Déploiement à l'aide de « Hardhat »
 
@@ -44,7 +44,7 @@ solidity: {
 
 #### Déploiement à l'aide de Remix IDE
 
-- Pour Core Mainnet et Testnet2, veuillez choisir « shanghai » dans les configurations du compilateur.
+- Pour Core Mainnet et Testnet2, veuillez choisir `shanghai` dans les configurations du compilateur.
 
 <p align="center">
 <img width="277" alt="image" src="https://github.com/user-attachments/assets/a528a516-8dfe-44bf-a0fc-34814f284cca" />

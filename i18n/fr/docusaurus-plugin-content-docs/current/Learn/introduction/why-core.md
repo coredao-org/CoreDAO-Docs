@@ -39,7 +39,7 @@ Core est l'écosystème leader de mise à l'échelle de Bitcoin, alimenté par u
 
 ### Pour les détenteurs conservateurs de Bitcoin :
 
-- Générer un rendement sans confiance grâce à la mise en jeu auto-custodialisée
+- Générer un rendement sans confiance grâce à la mise en jeu Self-Custodialisée
 - Garder le contrôle total des actifs Bitcoin
 - Gagner des récompenses sans compromettre la sécurité
 

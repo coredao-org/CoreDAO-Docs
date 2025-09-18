@@ -4,11 +4,10 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Exécution de nœuds de validation sur Core
-
 ---
 
 Ce guide vous guide à travers le processus de configuration d'un nœud validateur sur le réseau Core. Il couvre l'installation des dépendances système, la construction du logiciel de nœud Core, l'initialisation avec des données de snapshot et le démarrage de votre nœud validateur.
@@ -28,33 +27,31 @@ defaultValue="testnet2"
 values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
+]}> 
+
+<TabItem value="testnet2">
 Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
-    ```
     | Exigences.   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Un minimum de 4 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                                        |
     | **RAM**            | 8 Gigabytes                                                                                             |
     | **Vitesse Internet.** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                |
-    ```
 
   </TabItem>
 
   <TabItem value="mainnet">
 Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
-    ```
     | Exigences   | Détails                                                                                                   |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     |**Stockage**       | 1 To d'espace disque libre, disque SSD (Solid-State Drive).(SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
     | **Internet Speed** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                  |
-    ```
-
-  </TabItem>
+  
+    </TabItem>
 </Tabs>
 
 ### Cloner le code de base de la Core Blockchain

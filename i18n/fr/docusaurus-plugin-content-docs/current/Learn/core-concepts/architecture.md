@@ -19,11 +19,13 @@ Grâce à Satoshi Plus, **les mineurs de Bitcoin, les pools de minage, les stake
 
 ## Satoshi Plus Consensus: Major Components
 
-<p align="center">![component-diagram](../../../static/img/Core-Architecture.png)</p>
+<p align="center">
+![component-diagram](../../../../../../static/img/Core-Architecture.png)
+</p>
 
 ## Rôles Clés
 
-- \*\*Les validateurs jouent un rôle crucial dans la production des blocs et la validation des transactions sur le réseau Core. Les validateurs doivent s'enregistrer et bloquer un dépôt de garantie de validateur CORE remboursable.
+- **Les validateurs** jouent un rôle crucial dans la production des blocs et la validation des transactions sur le réseau Core. Les validateurs doivent s'enregistrer et bloquer un dépôt de garantie de validateur CORE remboursable.
 - **Les mineurs de Bitcoin :** sécurisent Bitcoin via PoW et peuvent déléguer la puissance de hachage aux validateurs Core en incluant les informations de délégation dans la transaction coinbase d'un bloc sans compromettre la sécurité de Bitcoin.
 - Les Stakers CORE : Délèguent des jetons CORE aux validateurs pour soutenir la sécurité du réseau
 - Les Stakers Bitcoin : Délèguent du Bitcoin aux validateurs sur Core via un staking Bitcoin non-dépositaire et gagnent un rendement sans renoncer à la garde de leurs actifs.

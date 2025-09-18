@@ -56,7 +56,9 @@ npm install --save-dev chai @nomiclabs/hardhat-waffle
 npx hardhat
 ```
 
-<p align="center">![harhat-project-initialize](../../static/img/hardhat/dapp-tutorial-1.png)</p>
+<p align="center">
+![harhat-project-initialize](../../../../../static/img/hardhat/dapp-tutorial-1.png)
+</p>
 
 :::note
 Comme nous utiliserons Waffle pour ce projet, assurez-vous de sélectionner **Non** pour l'option "_Voulez-vous installer les dépendances de ce projet d'exemple avec npm (@nomicfoundation/hardhat-toolbox)? (Y/n)_"
@@ -332,7 +334,7 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
-const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
+const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 ```
 
 4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.
@@ -343,14 +345,20 @@ const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 
 2. Assurez-vous que votre portefeuille MetaMask est correctement installé et switché sur le Core Testnet comme décrit dans notre [guide utilisateur du Core Testnet](./core-wallet-config.md). Vous devrez également connecter votre portefeuille MetaMask au site local.
 
-<p align="center">![dapp-on-core](../../static/img/dapp/dapp-1.png)</p>
+<p align="center">
+![dapp-on-core](../../../../../static/img/dapp/dapp-1.png)
+</p>
 
 3. Entrez un nombre dans le champ de saisie et cliquez sur le bouton **store** pour l'enregistrer dans le contrat. Une action d'écriture sur le contrat intelligent appelle le portefeuille MetaMask. Cliquez sur le bouton **Confirm** pour signer la transaction et attendez la confirmation sur la blockchain.
 
-<p align="center">![dapp-on-core](../../static/img/dapp/dapp-2.avif)</p>
+<p align="center">
+![dapp-on-core](../../../../../static/img/dapp/dapp-2.avif)
+</p>
 
 4. Après que la transaction soit confirmée sur la blockchain, cliquez sur le bouton **retrieve** pour lire la valeur depuis le contrat intelligent. Vous remarquerez que la valeur a été mise à jour.
 
-<p align="center">![dapp-on-core](../../static/img/dapp/dapp-3.avif)</p>
+<p align="center">
+![dapp-on-core](../../../../../static/img/dapp/dapp-3.avif)
+</p>
 
 🎉 Félicitations ! Vous avez interagi avec votre contrat nouvellement déployé via l'interface frontend de votre dApp ! Vous pouvez développer la base de code en déployant et en interagissant avec différents contrats, et en ajoutant de nouveaux composants UI au site Web pour vos utilisateurs.

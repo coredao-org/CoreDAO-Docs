@@ -71,7 +71,7 @@ Votre transaction de staking CLTV doit inclure :
 ## Flux de transaction
 
 <p align="center">
-![btc-staking-tx-workflow](../../../static/img/btc-staking/btc-staking-flow-new.png)
+![btc-staking-tx-workflow](../../../../../../static/img/btc-staking/btc-staking-flow-new.png)
 </p>
 
 ### Chronologie et Activation
@@ -87,7 +87,7 @@ Votre transaction de staking CLTV doit inclure :
 
 - Confirmation Bitcoin: Le même jour après 6 blocs
 - Le staking devient actif: 00h00 UTC+0 le lendemain
-- Début de l'accumulation des récompenses : À partir du premier tour actif
+- Début de l'accumulation des récompenses: À partir du premier tour actif
 
 ## Bonnes pratiques
 

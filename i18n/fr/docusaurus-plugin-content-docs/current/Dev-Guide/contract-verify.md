@@ -27,7 +27,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
 3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**.
 
-<p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-1.avif)</p>
+<p align="center">![verify-core-scan](../../../../../static/img/contract-verification/contract-verify-1.avif)</p>
 
 4. Remplissez les informations de vérification requises, notamment :
 
@@ -36,7 +36,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 - La version du compilateur;
 - Le type de licence open-source;
 
-<p align="center">![verify-core-scan](../../static/img/contract-verification/contract-verify-2.avif)</p>
+<p align="center">![verify-core-scan](../../../../../static/img/contract-verification/contract-verify-2.avif)</p>
 
 5. Sur la page suivante, veuillez remplir le code source Solidity pour le contrat.
 
@@ -44,15 +44,15 @@ Si votre contrat a des paramètres de constructeur, il est recommandé de les aj
 
 Si vous avez activé l'optimisation lors de la compilation du contrat, sélectionnez "Oui" pour le champ `Optimization`.
 
-<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-3.avif) </p>
+<p align="center">![verify-contract](../../../../../static/img/contract-verification/contract-verify-3.avif) </p>
 
 6. Cliquez sur **Verify and Publish** pour terminer le processus.
 
-<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-4.avif) </p>
+<p align="center">![verify-contract](../../../../../static/img/contract-verification/contract-verify-4.avif) </p>
 
 Votre contrat vérifié sur Core Scan devrait maintenant être publié et accessible:
 
-<p align="center">![verify-contract](../../static/img/contract-verification/contract-verify-5.avif) </p>
+<p align="center">![verify-contract](../../../../../static/img/contract-verification/contract-verify-5.avif) </p>
 
 ## Vérification via API
 
@@ -181,7 +181,7 @@ forge verify-contract 0xContract_Address ContractName  --verifier-url $API_URL  
 
 Replace `0xContract_Address` and `ContractName` with your actual contract address and the contract Name.
 
-Foundry gérera le processus de vérification, vous pouvez utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
+Foundry gérera le processus de vérification, vous pouvez utiliser [Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et vérifié avec succès.
 
 ## Limitations Connues
 

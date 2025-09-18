@@ -5,7 +5,6 @@ sidebar_position: 2
 ---
 
 # Comment fonctionne le Dual Staking
-
 ---
 
 Core fonctionne sur le consensus Satoshi Plus, intégrant trois sources de délégation pour sécuriser le réseau :
@@ -18,7 +17,7 @@ Double staking, une amélioration du staking non-custodial de BTC de Core, perme
 
 En atteignant des ratios de staking CORE/BTC spécifiques, les utilisateurs obtiennent des récompenses de staking Bitcoin boostées, payées en CORE. Bien que le Double Staking améliore les rendements du staking de BTC, il n'affecte pas directement les récompenses du staking CORE.
 
-![image](../../static/img/dual-staking/dual-staking-tiers.png)
+![image](../../../../../static/img/dual-staking/dual-staking-tiers.png)
 
 ### Seuils de rendement boosté
 
@@ -58,8 +57,8 @@ Le CORE staké et/ou le Bitcoin staké peuvent être distribués entre plusieurs
 #### 3. **Détermination du niveau de rendement boosté pour chaque (1) Bitcoin staké**
 
 - Si la quantité de CORE staké \< **R<sub>1</sub>**, l'utilisateur est dans le niveau **P<sub>BASE</sub>**
-- Si **R<sub>1</sub>** \=\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Level1</sub>**
-- Si **R<sub>2</sub>** \=\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Level2</sub>**
+- Si **R<sub>1</sub>** =\< quantité de CORE staké \< **R<sub>2</sub>**, l'utilisateur entre dans le niveau **P<sub>Level1</sub>**
+- Si **R<sub>2</sub>** =\< quantité de CORE staké \< **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Level2</sub>**
 - Si la quantité de CORE staké \>= **R<sub>3</sub>**, l'utilisateur entre dans le niveau **P<sub>Level3</sub>** (**P<sub>MAX</sub>**)
 
 :::note

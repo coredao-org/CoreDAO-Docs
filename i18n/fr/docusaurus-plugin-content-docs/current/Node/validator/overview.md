@@ -38,7 +38,7 @@ Les frais de commission sont payés directement à l'adresse de frais désignée
 > **Note:** Les récompenses sont réglées par tour(**per round**), et non par bloc. Chaque round correspond à un cycle d'élection de validateurs complet (~24 heures, UTC+0).
 
 <p align="center">
-![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
+![validator-reward-distribution](../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
 </p>
 
 ### Exemple du Calcul de Récompense

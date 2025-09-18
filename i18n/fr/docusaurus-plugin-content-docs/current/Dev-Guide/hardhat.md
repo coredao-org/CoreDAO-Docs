@@ -266,7 +266,9 @@ Nous pouvons voir que le script déploie correctement le contrat, stocke un nomb
 
 Nous pouvons utiliser [ Core Scan](https://scan.test2.btcs.network/) pour rechercher l'adresse du contrat afin de vérifier que le contrat a été déployé et appelé avec succès.
 
-<p align="center">![hardhat](../../static/img/hardhat/hardhat-1.avif)</p>
+<p align="center">
+![hardhat](../../../../../static/img/hardhat/hardhat-1.avif)
+</p>
 
 ## Lecture supplémentaire
 

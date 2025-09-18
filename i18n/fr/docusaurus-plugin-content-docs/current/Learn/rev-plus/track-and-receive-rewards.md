@@ -23,11 +23,11 @@ Rev+ empowers developers, stablecoin issuers, and DAOs to earn a share of transa
 - **Access the Fee Distribution Tab:** Once your reward address is entered, an extra tab called _Fee Distribution_ will appear. Here, you can see all your fee distributions and track your Rev+ rewards in detail.
 
 <p align="center">
-![track-rev+-rewards](../.././../static/img/rev+/rev-track-rewards.png)
+![track-rev+-rewards](../.././../../../../static/img/rev+/rev-track-rewards.png)
 </p>
 
 - **Monitor Event Triggers in the State Tab:** Whenever a Rev+ enabled transaction is triggered, the **State tab** on Core Scan displays configured contract events that were triggered by the transaction, making it easy to verify which actions led to fee distributions.
 
 <p align="center">
-![track-rev+-rewards](../.././../static/img/rev+/rev-track-rewards-2.png)
+![track-rev+-rewards](../.././../../../../static/img/rev+/rev-track-rewards-2.png)
 </p>

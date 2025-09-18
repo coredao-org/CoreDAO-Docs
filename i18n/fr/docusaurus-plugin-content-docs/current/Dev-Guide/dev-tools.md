@@ -60,9 +60,9 @@ values={[
 ### Ressources Générales
 
 - **[GitHub Core DAO](https://github.com/coredao-org):** page GitHub officielle, incluant le code source de la blockchain Core et bien plus encore.
-- \*\* [guides et tutoriels] (https://github.com/coredao-org/dapp-tutorial):\*\* guides et tutoriels détaillés pour lancer votre voyage pour construire sur Core.
+- **[guides et tutoriels](https://github.com/coredao-org/dapp-tutorial):** guides et tutoriels détaillés pour lancer votre voyage pour construire sur Core.
 - **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** Un kit de démarrage full-stack léger et convivial pour les développeurs souhaitant créer des applications décentralisées (DApps) sur Core. Préconfiguré avec Hardhat, Next.js et RainbowKit.
 
 ### Livre blanc
 
-- \*\* [livre blanc] (https://whitepaper.coredao.org/): \*\* Livre blanche officielle couvrant l'aperçu technique de Core.
+- **[livre blanc](https://whitepaper.coredao.org/):** Livre blanche officielle couvrant l'aperçu technique de Core.

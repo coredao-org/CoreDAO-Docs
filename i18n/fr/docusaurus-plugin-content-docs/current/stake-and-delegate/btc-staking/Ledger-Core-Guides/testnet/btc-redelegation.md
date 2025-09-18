@@ -63,7 +63,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 3. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
-![img](../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
 </p>
 
 4. À partir du modal de portefeuille affiché, sélectionnez le portefeuille de votre choix configuré pour une utilisation avec Core.
@@ -75,7 +75,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 2. Sur le site Web de mise en jeu du réseau de test Core, survolez votre portefeuille connecté dans le coin supérieur droit et cliquez sur "**My Staking**".
 
 <p align="center" style={{zoom:"80%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-1.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-1.png)
 </p>
 
 ### Étape #3: Accédez aux enregistrements de staking BTC
@@ -83,13 +83,13 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 1. Sur la page "**My Staking Dashboard**", sélectionnez les enregistrements "**BTC**" parmi les onglets affichés.
 
 <p align="center" style={{zoom:"80%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/my-staking-3.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/my-staking-3.png)
 </p>
 
 2. Cet onglet répertorie tous les enregistrements de staking BTC et les validateurs auxquels vous avez précédemment délégué vos BTC. Recherchez les enregistrements "**Expired**" sous "**Redeem Time**", puis cliquez sur "**Redelegate**" sous "**Action**’.
 
 <p align="center" style={{zoom:"80%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/my-staking-2.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/my-staking-2.png)
 </p>
 
 ### Étape #4: Connecter l'appareil Ledger pour la ré délégation
@@ -99,7 +99,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 1. Pour connecter votre appareil Ledger directement au site Web de mise en jeu du réseau de test Core, cliquez sur "**Ledger**" sous la section "**Hardware Wallets**" du modèle de portefeuille affiché. Assurez-vous que votre appareil Ledger est connecté, déverrouillé et que l'application Ledger Core Testnet est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-2.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-2.png)
 
 </p>
 
@@ -110,13 +110,13 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 1. Pour connecter votre appareil Ledger en utilisant le portefeuille Xverse, cliquez sur "**Xverse**" sous la section "**Wallets Supporting Ledger**" parmi les modèles de portefeuille affichés. Assurez-vous que votre Ledger est connecté, déverrouillé et que l'application Ledger Core Testnet est ouverte sur votre appareil.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-3.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-3.png)
 </p>
 
 2. Déverrouillez votre appareil Ledger et confirmez la connexion via l'extension de portefeuille Xverse.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-8.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-8.png)
 </p>
 
 ### Étape #5: Spécifier les détails de réattribution de BTC
@@ -130,19 +130,19 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 4. **Confirmer la délégation:** Procédez en cliquant sur "**Confirm Delegation**".
 
 <p align="center" style={{zoom:"40%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-4.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-4.png)
 </p>
 
 5. **Vérification de l'adresse de staking BTC (facultatif):** Utilisez l'outil de vérification d'adresse de staking BTC pour confirmer que l'adresse de staking BTC affichée correspond à l'adresse attendue avant de procéder.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-5.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-5.png)
 </p>
 
 6. **Procédez à l'approbation de la transaction:** Cliquez sur "**Approve Transaction**" sur le site Web pour poursuivre la transaction.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-6.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-6.png)
 </p>
 
 ### Étape #6: Réviser et approuver la transaction de réattribution de BTC
@@ -150,7 +150,7 @@ Vous pouvez également utiliser le portefeuille Xverse pour redéléguer des BTC
 L'utilisateur sera invité à examiner et à approuver la transaction depuis son appareil Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-7.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-7.png)
 </p>
 
 #### Utilisation du portefeuille Xverse pour approuver la transaction
@@ -158,13 +158,13 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 1. Si vous utilisez un portefeuille Xverse, examinez la transaction. Vérifiez les détails et cliquez sur "**Confirm**"sur la notification de portefeuille dans votre navigateur.
 
 <p align="center" style={{zoom:"40%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-10.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-10.png)
 </p>
 
 2. Cliquez sur "**Connect**" sur la fenêtre modale "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-11.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-11.png)
 </p>
 
 3. Procédez pour confirmer et approuver la transaction sur votre appareil Ledger.
@@ -178,13 +178,13 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 3. Une fois la transaction approuvée sur votre appareil Ledger, le site Web de staking affichera une notification "**Transaction soumise**" , confirmant que votre demande de redélégation de BTC a été lancée avec succès.
 
 <p align="center">
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/btc-redelegation.gif)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/btc-redelegation.gif)
 </p>
 
 3. Après approbation de la transaction, les utilisateurs peuvent également consulter les détails de la transaction sur le BTC Explorer.
 
 <p align="center" style={{zoom:"40%"}}>
-![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-12.png)
+![img](../../../../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-12.png)
 </p>
 
 ## Conclusion

@@ -50,7 +50,9 @@ Dans cette commande, les composants du relevé de `curl` sont les suivants :
 
 Comme expliqué précédemment, CURL est une méthode pour envoyer des requêtes API, qui contiennent un point de terminaison (c’est-à-dire l’URL à partir de laquelle les informations sont récupérées) et une méthode HTTP. Dans notre cas, l’URL apparaît à la fin après l’option_` --url`_; vous pouvez remplacer cette URL par n’importe quelle URL RPC valide trouvée [ici](https://chainlist.org/chain/1116) pour vous connecter au Core Mainnet, n’oubliez simplement pas de mettre l’URL entre des guillemets simples ("). Dans la figure ci-dessous, n'importe quelle des URL figurant dans l'encadré rouge fonctionnera.
 
-<p align="center">![rpc-list](../../static/img/rpc/rpc-1.png)</p>
+<p align="center">
+![rpc-list](../../../../../static/img/rpc/rpc-1.png)
+</p>
 
 ### Réponse d’exemple :
 

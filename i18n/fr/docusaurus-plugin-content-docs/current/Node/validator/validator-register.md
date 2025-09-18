@@ -4,8 +4,8 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-importer Tabs depuis '@theme/Tabs';
-importer TabItem depuis '@theme/TabItem';
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Enregistrement des Validateurs
 
@@ -36,16 +36,16 @@ Une fois que votre nœud est en cours d'exécution et synchronisé, vous pouvez 
 
 Une fois votre portefeuille connecté, le bouton Enregistrer apparaîtra. En cliquant sur ce bouton, un formulaire s'ouvrira où vous devrez fournir plusieurs informations :
 
-![validator-register-form](../../../static/img/validator/validator-regitration.png)
+![validator-register-form](../../../../../../static/img/validator/validator-regitration.png)
 
 Fournissez les informations pour chaque champ du formulaire :
 
-- Adresse de consensus : l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
-- Adresse de frais : l'adresse utilisée pour collecter les frais de commission.
-- **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
+- **Adresse de consensus**: l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
+- **Adresse de frais**: l'adresse utilisée pour collecter les frais de commission.
+- **Commission**: les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
+- **Dépôt total**: le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
 
-5. Soumettre l'inscription : Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
+5. **Soumettre l'inscription**: Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
 
 ## Confirmation de l'Enregistrement
 
@@ -55,7 +55,7 @@ Après avoir soumis le formulaire d'inscription, vous pouvez vérifier si l'insc
 
 Ouvrez le fichier journal de votre nœud et recherchez le message d'erreur `unauthorized validator`. Si ce message apparaît, cela signifie que votre nœud est enregistré mais n'a pas encore été élu dans l'ensemble des validateurs.
 
-![validator-register-form](../../../static/img/validator/register/validator-register-2.avif)
+![validator-register-form](../../../../../../static/img/validator/register/validator-register-2.avif)
 
 ## Élection des Validateurs
 
@@ -63,7 +63,7 @@ Chaque jour, les **27** meilleurs validateurs avec les scores hybrides les plus 
 
 Vous pouvez vérifier le statut des validateurs sur le site de staking. Les validateurs élus sont marqués `Active/Normal`. L'ensemble des validateurs est mis à jour chaque jour à **00:00 UTC**.
 
-![validator-register-form](../../../static/img/validator/validator-status.png)
+![validator-register-form](../../../../../../static/img/validator/validator-status.png)
 
 ### Mises à jour du statut du validateur
 
@@ -73,23 +73,23 @@ Le statut du validateur est mis à jour quotidiennement à 00h00 UTC. Vous pouve
 
 - Actif/Refus : Le validateur est élu pour la ronde actuelle mais a refusé d'accepter les délégations. Non qualifié pour la prochaine élection.
 
-- **`Actif/Emprisonné`:** Validateur élu dans le tour actuel, mais emprisonné en raison d'un délit et non qualifié pour la prochaine élection.
+- **Actif/Emprisonné:** Validateur élu dans le tour actuel, mais emprisonné en raison d'un délit et non qualifié pour la prochaine élection.
 
-- Inactif/En attente : Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
+- **Inactif/En attente**: Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
 
-- Inactif/Refus : Le validateur est enregistré mais a refusé la délégation. Non qualifié pour la prochaine élection.
+- **Inactif/Refus**: Le validateur est enregistré mais a refusé la délégation. Non qualifié pour la prochaine élection.
 
-- Inactif/Emprisonné : Le validateur est enregistré mais est emprisonné et n'est pas qualifié pour la prochaine élection.
+- **Inactif/Emprisonné**: Le validateur est enregistré mais est emprisonné et n'est pas qualifié pour la prochaine élection.
 
-- Inactif/Vérouillé : Le validateur est enregistré mais n'a pas satisfait aux exigences de dépôt minimum. Non qualifié pour la prochaine élection.
+- **Inactif/Vérouillé**: Le validateur est enregistré mais n'a pas satisfait aux exigences de dépôt minimum. Non qualifié pour la prochaine élection.
 
-- Inactif/Invalide : Le validateur n'est pas enregistré.
+- **Inactif/Invalide**: Le validateur n'est pas enregistré.
 
 ## Surveillez les performances de votre validateur
 
 Vous pouvez surveiller l'état de votre validateur et son historique de production de blocs sur [Core Scan].(https://scan.coredao.org/). Cet outil vous permet de suivre si votre nœud produit des blocs avec succès et fonctionne bien.
 
-![validator-register-form](../../../static/img/validator/register/validator-register-4.webp)
+![validator-register-form](../../../../../../static/img/validator/register/validator-register-4.webp)
 
 ## Définition du nom du validateur
 
@@ -103,22 +103,22 @@ Vous pouvez attribuer un nom lisible par l'homme à votre nœud de validation en
 4. **Accédez au menu de mise à jour:** Sur la page des détails du validateur, cliquez sur le bouton de menu (trois points verticaux) à côté du bouton Stake et sélectionnez "Update Name" dans le menu déroulant.
 
 <p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-1.png)
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-1.png)
 </p>
 
 4. **Entrez les détails du validateur:** Fournissez le nom et d'autres détails dans le formulaire de saisie. Ce nom sera publiquement visible pour les délégateurs et les utilisateurs de l'interface réseau.
 
 <p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-2.png)
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-2.png)
 </p>
 
-5. \*\* Signez le message de propriété du validateur:\*\* Cliquez sur Sign pour vérifier la propriété de votre adresse de validateur en signant le message affiché.
+5. **Signez le message de propriété du validateur:** Cliquez sur Sign pour vérifier la propriété de votre adresse de validateur en signant le message affiché.
 
 <p align="center">
-![validator-rename-menu](../../../static/img/validator/register/validator-rename-3.png)
+![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-3.png)
 </p>
 
-6. \*\* Soumettez la mise à jour:\*\* Après avoir vérifié les informations saisies, soumettez la transaction pour finaliser la mise à jour. Une fois que la transaction est confirmée sur la chaîne, le nom mis à jour sera reflété dans la liste des validateurs.
+6. **Soumettez la mise à jour:** Après avoir vérifié les informations saisies, soumettez la transaction pour finaliser la mise à jour. Une fois que la transaction est confirmée sur la chaîne, le nom mis à jour sera reflété dans la liste des validateurs.
 
 ## Maintenance de votre nœud de validation
 

@@ -28,7 +28,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants installés:
 
 | Outil                   | Version (recommandée) |
 | ----------------------- | ---------------------------------------- |
-| Node.js | `>=20.x`                                 |
+| Node.js                 | `>=20.x`                                 |
 | npm / yarn / pnpm       | Toute version prise en charge            |
 | Git                     | Plus récent                              |
 

@@ -29,7 +29,7 @@ Les détenteurs de Bitcoin peuvent staker de manière native sans enveloppement,
    - Spécifie une adresse Core pour recevoir vos récompenses CORE
 3. **Diffusion de la transaction Bitcoin** Une fois confirmée sur le réseau Bitcoin, le verrouillage temporel est scanné et enregistré par le réseau de relais de Core.
 4. **Gagnez des récompenses** Si votre validateur sélectionné est élu et participe activement, vous recevrez une partie de leurs récompenses CORE. Ces récompenses sont envoyées à l'adresse Core que vous avez fournie.
-5. \*\* Déverrouillage après expiration\*\* Après la fin de la période de verrouillage, vos Bitcoins redeviennent dépensables. Pour continuer le staking, vous devez créer un nouveau verrouillage temporel.
+5. **Déverrouillage après expiration** Après la fin de la période de verrouillage, vos Bitcoins redeviennent dépensables. Pour continuer le staking, vous devez créer un nouveau verrouillage temporel.
 
 ### Staking de tokens CORE (Preuve de participation déléguée)
 
@@ -46,7 +46,7 @@ Les détenteurs de tokens CORE peuvent miser en déléguant leurs tokens aux val
 
 La sélection des validateurs est basée sur un **score hybride**, en considérant:
 
-- **Le verrouillage temporel de Bitcoin** via CLTV)
+- **Le verrouillage temporel de Bitcoin** (via CLTV)
 - **Tokens CORE délégués** (via DPoS)
 - **Puissance de hachage Bitcoin déléguée** (via Preuve de travail déléguée)
 

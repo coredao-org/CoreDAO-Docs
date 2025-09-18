@@ -15,7 +15,7 @@ Le staking liquide avec stCORE améliore l'utilité du jeton CORE tout en ration
 ## Premiers pas : Prérequis
 
 1. **Vérifier la disponibilité des tokens CORE:** Assurez-vous que votre portefeuille Core contient le montant nécessaire de tokens CORE pour le staking.
-2. **Accéder à la plateforme de staking:** [Visitez la plateforme de Staking Liquide de Core] (https://stake.coredao.org/liquid-staking/stcore)
+2. **Accéder à la plateforme de staking:** [Visitez la plateforme de Staking Liquide de Core](https://stake.coredao.org/liquid-staking/stcore)
 3. **Connexion du portefeuille:** Connectez votre portefeuille à la plateforme.
 
 ## Définitions clés
@@ -35,7 +35,7 @@ Le staking liquide avec stCORE améliore l'utilité du jeton CORE tout en ration
 4. **Transaction du portefeuille:** Approuvez la transaction de création dans votre portefeuille.
 5. **Ajouter stCORE au portefeuille:** Cliquez sur le signe **_+_** pour ajouter stCORE à votre portefeuille.
 
-![minitng-stCORE](../../../../static/img/stCore/mint-stcore.png)
+![minitng-stCORE](../../../../../../../static/img/stCore/mint-stcore.png)
 
 ## Récupération de CORE à partir de stCORE
 
@@ -46,4 +46,4 @@ Le staking liquide avec stCORE améliore l'utilité du jeton CORE tout en ration
 5. **Période de déblocage:** Une période d'attente de **7 jours** commence. Suivez les progrès dans la section “_In Redemption_”.
 6. **Retrait:** Après le déblocage, cliquez sur '_Withdraw_' pour transférer les CORE dans votre portefeuille.
 
-![minitng-stCORE](../../../../static/img/stCore/redeem-stcore.png)
+![minitng-stCORE](../../../../../../../static/img/stCore/redeem-stcore.png)

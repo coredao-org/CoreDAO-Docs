@@ -17,7 +17,7 @@ Pour garantir une expérience sécurisée et fluide, veuillez noter les exigence
 
 1. **Utilisez uniquement des appareils Ledger pris en charge:** La mise en jeu de CORE n'est prise en charge que sur certains portefeuilles matériels Ledger dotés du micrologiciel le plus récent ou compatible. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
 
-2. \*\* Utilisez toujours l'application Ethereum de Ledger:\*\* Vous devez utiliser l'application Ethereum de Ledger pour miser des jetons CORE sur Core en utilisant un appareil Ledger.
+2. **Utilisez toujours l'application Ethereum de Ledger:** Vous devez utiliser l'application Ethereum de Ledger pour miser des jetons CORE sur Core en utilisant un appareil Ledger.
 
 ## Portefeuilles matériels Ledger pris en charge
 
@@ -70,7 +70,7 @@ Suivez les étapes ci-dessous pour installer l'application Ledger Ethereum sur v
 3. Installez l'application "**Ethereum**". Utilisez _uniquement_ l'application Ledger Ethereum pour miser CORE en utilisant Ledger sur le réseau Core Mainnet. Pour plus de détails,[official guide](https://support.ledger.com/article/360009576554-zd) de Ledger pour installer l'application Ethereum sur votre appareil.
 
 <p align="center">
-![install-ethereum-app](../../static/img/ledger-core/CORE-Staking/UI-1.png)
+![install-ethereum-app](../../../../../static/img/ledger-core/CORE-Staking/UI-1.png)
 </p> 
 
 ### Étape 3: Activer la signature aveugle sur l'application Ledger Ethereum
@@ -78,7 +78,7 @@ Suivez les étapes ci-dessous pour installer l'application Ledger Ethereum sur v
 Remarque: avant de miser CORE, les utilisateurs doivent activer la signature aveugle dans les paramètres de l'application Ethereum sur l'appareil Ledger. Refer to the [official guide](https://support.ledger.com/article/4405481324433-zd) from Ledger for more details.
 
 <p align="center">
-![enable-blind-signing](../../static/img/ledger-core/CORE-Staking/UI-2.png)
+![enable-blind-signing](../../../../../static/img/ledger-core/CORE-Staking/UI-2.png)
 </p>
 
 ### Étape 4: Ajouter l'appareil Ledger à votre portefeuille EVM
@@ -98,7 +98,7 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 1. Sur votre appareil Ledger, ouvrez l'application Ledger Ethereum avant de poursuivre.
 
 <p align="center">
-![application-ready](../../static/img/ledger-core/CORE-Staking/UI-3.png)
+![application-ready](../../../../../static/img/ledger-core/CORE-Staking/UI-3.png)
 </p>
 
 2. Accédez au site [Core Staking Websit](https://stake.coredao.org/staking).
@@ -110,7 +110,7 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 2. Cliquez sur le bouton "**Connect Wallet**" dans le coin supérieur droit du site Web.
 
 <p align="center">
-![connect-core-wallet](../../static/img/ledger-core/CORE-Staking/connect-core-wallet.png)
+![connect-core-wallet](../../../../../static/img/ledger-core/CORE-Staking/connect-core-wallet.png)
 </p>
 
 3. Depuis le modal de portefeuille affiché, sélectionnez le portefeuille de votre choix configuré pour être utilisé avec Core.
@@ -120,25 +120,25 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 1. Sur la page de mise en jeu de [page](https://stake.coredao.org/staking), avec votre portefeuille EVM connecté au site Web de mise en jeu, spécifiez le montant de CORE à miser. Cliquez sur le bouton "**Proceed to Stake**".
 
 <p align="center" style={{zoom:"60%"}}>
-![specify-core-amount](../../static/img/ledger-core/CORE-Staking/UI-4.png)
+![specify-core-amount](../../../../../static/img/ledger-core/CORE-Staking/UI-4.png)
 </p> 
 
 2. Confirmez le montant de CORE à miser et le validateur auquel déléguer votre mise pour participer au mécanisme de consensus de Core et gagner des récompenses de mise. Cliquez sur "**Confirm**" pour continuer.
 
 <p align="center" style={{zoom:"60%"}}>
-![confirm-staking-details](../../static/img/ledger-core/CORE-Staking/UI-5.png)
+![confirm-staking-details](../../../../../static/img/ledger-core/CORE-Staking/UI-5.png)
 </p>   
 
 3. L'utilisateur verra une fenêtre modale lui demandant d'approuver la transaction sur son portefeuille EVM connecté.
 
 <p align="center" style={{zoom:"60%"}}>
-![confirm-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-6.png)
+![confirm-staking-tx](../../../../../static/img/ledger-core/CORE-Staking/UI-6.png)
 </p>  
 
 4. Approuvez la transaction sur la notification de votre portefeuille EVM connecté.
 
 <p align="center" style={{zoom:"70%"}}>
-![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-7.png)
+![approve-staking-tx](../../../../../static/img/ledger-core/CORE-Staking/UI-7.png)
 </p>
 
 ### Examinez et approuvez la transaction sur l'appareil Ledger
@@ -146,13 +146,13 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 1. Approuver la transaction de staking Btc sur l'appareil Ledger.
 
 <p align="center">
-![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/CORE-Staking-Ledger.gif)
+![approve-staking-tx](../../../../../static/img/ledger-core/CORE-Staking/CORE-Staking-Ledger.gif)
 </p>
 
 2. Une fois approuvée sur votre appareil Ledger, la notification "Transaction Submitted" apparaîtra sur le site Web de mise en jeu de Core.
 
 <p align="center" style={{zoom:"80%"}}>
-![approve-staking-tx](../../static/img/ledger-core/CORE-Staking/UI-8.png)
+![approve-staking-tx](../../../../../static/img/ledger-core/CORE-Staking/UI-8.png)
 </p>
 
 3. Cliquez sur "**View on Core Scan**" pour afficher les détails de votre transaction de mise en jeu de CORE sur l'explorateur de blocs Core Scan.

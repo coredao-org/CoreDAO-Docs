@@ -14,22 +14,22 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
 
 - **Participer à la gouvernance du réseau Core**
 
-  - [\*\*Démarrer un nœud validateur](./config/validator-node-config.md)
+  - [Démarrer un nœud validateur](./config/validator-node-config.md)
 
 - **Si vous voulez faire tourner un nœud Core pour votre usage personnel:**
-  - [\*\*Démarrer un nœud complet normal](./config/full-node.md)
+  - [Démarrer un nœud complet normal](./config/full-node.md)
 
 - **Si vous voulez envoyer des transactions ou interroger directement la chaîne depuis votre propre nœud blockchain Core**
 
-  - [\*\*Démarrer un nœud RPC](./config/rpc-node-config.md)
+  - [Démarrer un nœud RPC](./config/rpc-node-config.md)
 
 - **Interroger les données historiques depuis le bloc genesis**
 
-  - [\*\*Démarrer un nœud d'archive](./config/archive-node-config.md)
+  - [Démarrer un nœud d'archive](./config/archive-node-config.md)
 
 - **Aider les opérateurs de nœuds à se synchroniser rapidement avec le réseau**
 
-  - [\*\*Démarrer un nœud de snapshot](./config/snapshot-node-config.md)
+  - [Démarrer un nœud de snapshot](./config/snapshot-node-config.md)
 
 ## Types de Nœuds sur le Réseau Core
 

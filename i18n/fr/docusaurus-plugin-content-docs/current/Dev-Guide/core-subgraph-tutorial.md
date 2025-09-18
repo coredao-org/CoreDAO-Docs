@@ -212,8 +212,6 @@ graph deploy \
   your-subgraph-name
 ```
 
-.
-
 ## Étape 6: Interroger le sous-graphique
 
 Après le déploiement, votre sous-graphique sera disponible à l'endpoint de requête (e.g., `https://thegraph.test2.btcs.network/subgraphs/name/guestbook-subgraph`).
