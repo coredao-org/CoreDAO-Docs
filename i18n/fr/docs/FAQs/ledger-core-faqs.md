@@ -10,15 +10,15 @@ sidebar_position: 2
 
 ### 1. Pourquoi mon portefeuille Ledger crée-t-il de nouvelles adresses?
 
-Ledger devices automatically generate a new address each time you connect them. This behavior can cause redemption transactions to fail because the redemption process requires the original staking address that was used to initiate the BTC staking transaction. Therefore, it is recommended always to record the Bitcoin address you used for staking.
+Les appareils Ledger génèrent automatiquement une nouvelle adresse chaque fois que vous les connectez. Ce comportement peut entraîner l'échec des transactions de remboursement parce que le processus de remboursement nécessite l'adresse de staking originale qui a été utilisée pour initier la transaction de staking BTC. Il est donc recommandé de toujours enregistrer l'adresse Bitcoin que vous avez utilisée pour le staking.
 
-### 2. How can I find my original staking address?
+### 2. Comment puis-je trouver mon adresse de staking originale?
 
-There are multiple ways to locate your original Bitcoin staking address.
+Il existe plusieurs façons de localiser votre adresse de staking Bitcoin originale.
 
-1. Navigate to your BTC staking records on the [My Staking](https://stake.coredao.org/my-staking#btc) dashboard on the [Core Staking Website](https://stake.coredao.org/staking).
+1. Accédez à vos enregistrements de [My Staking](https://stake.coredao.org/my-staking#btc) sur le tableau de bord [Core Staking Website](https://stake.coredao.org/staking).
 
-2. Copy the Bitcoin Staking Transaction hash. Clicking on it will navigate the user to transaction details on the [Mempool.Space Bitcoin Explorer](https://mempool.space/).
+2. Copiez le hash de transaction de staking Bitcoin. Cliquer dessus naviguera l'utilisateur vers les détails de la transaction sur le Mempool [Mempool.Space Bitcoin Explorer](https://mempool.space/).
 
 <p align="center" style={{zoom:"40%"}}>
 ![copt-tx-hash](../../static/img/ledger-core/staking-tx-copy.png)
