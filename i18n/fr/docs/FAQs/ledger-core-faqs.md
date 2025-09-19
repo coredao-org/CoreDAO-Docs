@@ -24,51 +24,49 @@ Il existe plusieurs façons de localiser votre adresse de staking Bitcoin origin
 ![copt-tx-hash](../../static/img/ledger-core/staking-tx-copy.png)
 </p>
 
-3. Navigate to [Core Scan Block Explorer](https://scan.coredao.org/). From the top navigation menu, click "**More**" and from the drop-down menu select "[BTC Staking Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder)".
+3. Accédez à [Core Scan Block Explorer](https://scan.coredao.org/). Dans le menu de navigation supérieur, cliquez sur "**More**" et dans le menu déroulant, sélectionnez "[BTC Staking Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder)".
 
 <p align="center" style={{zoom:"60%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder.png)
 </p>
 
-5. Paste the copied Bitcoin Staking transaction hash and click "**Decode**".
+5. Collez le hash de transaction de staking Bitcoin copié et cliquez sur "**Decode**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-2.png)
 </p>
 
-6. Under the "**Decoded Results**" section, "**Input Address**" is the BTC staking address you have used for initiating the staking transaction. Note that this is **not your public key**, just the specific address used when the timelock transaction was created.
+6. Sous la section "**Decoded Results**", "**Input Address**" est l'adresse de staking BTC que vous avez utilisée pour initier la transaction de staking. Notez que ceci n'est **not your public key**, mais juste l'adresse spécifique utilisée lors de la création de la transaction à verrouillage temporel.
 
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-3.png)
 </p>
 
-### 3. Why does my redemption transaction fail?
+### 3. Pourquoi ma transaction de remboursement échoue-t-elle?
 
-If you input a new receiving address instead of the **original staking address**, the redemption transaction will not complete. To successfully redeem your timelock expired BTC ensure that the "**BTC Receiving Address**" you provide during redemption matches the **original Bitcoin staking address**, the address that initiated the staking transaction. You can confirm the address by checking your transaction details on the [mempool.space](https://mempool.space/) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
+Si vous entrez une nouvelle adresse de réception au lieu de **original staking address**, la transaction de remboursement ne sera pas effectuée. Pour réussir à racheter vos BTC à verrouillage temporel expiré, assurez-vous que "**BTC Receiving Address**" que vous fournissez lors du rachat correspond à **original Bitcoin staking address**, l'adresse qui a initié la transaction de staking. Vous pouvez confirmer l'adresse en vérifiant les détails de votre transaction sur [mempool.space](https://mempool.space/) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
 
-### 4. Is staking and redemption possible directly with the Ledger device?
+### 4. Est-ce que le staking et le rachat sont possibles directement avec l'appareil Ledger?
 
-Yes, both staking and redemption are possible, provided you use the same BTC receiving address for redemption as you used for staking. Also, the **_only_** Segwit Native Bitcoin Address type is supported.
+Oui, le staking et le rachat sont tous deux possibles, à condition d'utiliser la même adresse de réception BTC pour le rachat que celle utilisée pour le staking. De plus, **_only_** le type d'adresse Bitcoin Segwit Native est pris en charge.
 
-### 5. When I connect my ledger device, why is the balance shown incorrect on the UI?
+### 5. Lorsque je connecte mon appareil Ledger, pourquoi le solde affiché est-il incorrect sur l'interface utilisateur?
 
-When you connect your Ledger device to UI, the platform only shows the balance of your **primary staking address**. It does **not** read your
-total balance under your Ledger public key. If you have multiple BTC addresses, only the balance in the primary Bitcoin addresses is fetched
-and displayed.
+Lorsque vous connectez votre appareil Ledger à l'interface utilisateur, la plateforme affiche uniquement le solde de votre **primary staking address**. Elle ne lit **pas** votre
+solde total sous votre clé publique Ledger. Si vous avez plusieurs adresses BTC, seul le solde de l'adresse Bitcoin principale est récupéré
+et affiché.
 
-### 6. Do users earn rewards after the lock period ends if they don't redeem their BTC?
+### 6. Les utilisateurs gagnent-ils des récompenses après la fin de la période de blocage s'ils ne rachètent pas leurs BTC?
 
-No, once the lock period ends, rewards stop accruing. Users can either **redeem their BTC** manually or if desired, re-delegate manually to
-timelock BTC again and start accruing rewards.
+Non, une fois que la période de blocage se termine, les récompenses cessent de s'accumuler. Les utilisateurs peuvent soit **redeem their BTC** manuellement, soit, s'ils le souhaitent, les re-déléguer manuellement pour bloquer à nouveau les BTC et recommencer à accumuler des récompenses.
 
-### 7. Why do I see "Transaction Error Occurred -- Ledger device: Invalid data received (0x6a80)" during redemption?
+### 7. Pourquoi vois-je "Erreur de transaction - Appareil Ledger : Données invalides reçues (0x6a80)" lors du rachat?
 
 <p align="center" style={{zoom:"60%"}}>
 ![redeem-error-image](../../static/img/ledger-core/redeem-tx-error.png)
 </p>
 
-This error typically happens when redeeming BTC after the staking period ends. It means that something in your setup doesn't match the
-requirements for a successful redemption. Below are the **known causes** and how to fix them:
+Cette erreur se produit généralement lors du rachat de BTC après la fin de la période de staking. Cela signifie que quelque chose dans votre configuration ne correspond pas aux exigences pour un rachat réussi. Below are the **known causes** and how to fix them:
 
 1. **Incorrect Ledger App**
 
