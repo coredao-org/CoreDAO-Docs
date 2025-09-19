@@ -1,5 +1,5 @@
 ---
-sidebar_label: Hardware Wallet Integration FAQs
+sidebar_label: Intégration de portefeuille matériel FAQs
 hide_table_of_contents: false
 sidebar_position: 2
 ---
