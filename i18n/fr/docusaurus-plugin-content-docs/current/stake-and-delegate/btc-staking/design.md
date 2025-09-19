@@ -116,7 +116,7 @@ La sortie `OP_RETURN` doit contenir toutes les informations de staking dans l'or
 - Les octets de longueur supérieure à `255` utilisent `0x4d` (`OP_PUSHDATA2`)
 - Les octets de longueur supérieure à `65535` (`0xffff`) utilisent `0x4e` (`OP_PUSHDATA4`)
 
-Soit le RedeemScript doit être disponible soit le Timelock doit l'être. Cela permet aux relayeurs d'obtenir le `RedeemScript` et de soumettre les transactions sur Core. Si un `RedeemScript` est fourni, le relayeur l'utilisera directement. Sinon, le relayeur construira le script de rachat basé sur le timelock et les informations dans les entrées de la transaction. Vous trouverez plus d'informations sur le rôle du relayeur dans la section [ci-dessous](#role-of-relayers).
+Soit le RedeemScript doit être disponible soit le Timelock doit l'être. Cela permet aux relayeurs d'obtenir le `RedeemScript` et de soumettre les transactions sur Core. Si un `RedeemScript` est fourni, le relayeur l'utilisera directement. Sinon, le relayeur construira le script de rachat basé sur le timelock et les informations dans les entrées de la transaction. Vous trouverez plus d'informations sur le rôle du relayeur dans la section ci-dessous.
 
 ## Rôle des Relayeurs
 

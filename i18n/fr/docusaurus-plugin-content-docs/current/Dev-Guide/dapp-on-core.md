@@ -330,7 +330,7 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 ### Ajout des détails du contrat intelligent
 
 1. Copiez le fichier `Storage.sol` depuis le dossier `contracts` à la racine de votre projet et collez-le dans le dossier `frontend/src/contracts`.
-2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section [ci-dessus](#deploy-and-interact-with-smart-contract).
+2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section ci-dessus.
 3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
