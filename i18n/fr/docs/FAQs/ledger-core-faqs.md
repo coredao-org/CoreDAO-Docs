@@ -81,19 +81,19 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 
    - **Comment trouver votre adresse d'origine:** Vérifiez votre historique de transactions dans Ledger Live, sur un explorateur de blocs (like [mempool.space](https://mempool.space/)) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
 
-3. **Not the Primary Staking Address**
+3. **Pas l'adresse de staking principale**
 
-   - If you have multiple BTC accounts under your Ledger wallet, the system will only detect your **primary (original)** staking address.
+   - Si vous avez plusieurs comptes BTC sous votre portefeuille Ledger, le système ne détectera que votre adresse de staking **primary (original)**.
 
-   - Be sure to connect to the same account and address used during the original staking.
+   - Assurez-vous de vous connecter au même compte et à l'adresse utilisée lors du staking original.
 
-4. **Unsynced Ledger or Browser Cache Issues**
+4. **Problèmes de synchronisation Ledger ou de cache du navigateur**
 
-   - Refresh the staking site and reconnect your Ledger.
+   - Actualisez le site de staking et reconnectez votre Ledger.
 
-   - Clear your browser cache or try using a different browser.
+   - Effacez le cache de votre navigateur ou essayez d'utiliser un navigateur différent.
 
-### 8) How do you set up a Bitcoin address on a Ledger device using Ledger Live?
+### 8) Comment configurer une adresse Bitcoin sur un appareil Ledger en utilisant Ledger Live?
 
 1. In Ledger Live, click "**My ledger"** tab and connect your Ledger drive
 
@@ -227,21 +227,20 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 
 1. Connectez votre appareil Ledger à l'application Ledger Live sur votre ordinateur. Accédez à l'onglet "**Comptes**".
 
-2. By default, the accounts are listed in the order of creation.
+2. Par défaut, les comptes sont listés dans l'ordre de création.
 
-3. Alternatively, from the listed accounts, click on the Bitcoin account.
+3. Vous pouvez également cliquer sur le compte Bitcoin parmi les comptes listés.
 
-4. Click on the "**Settings**" icon in the top right corner of the account details page.
+4. Cliquez sur l'icône "**Paramètres**" en haut à droite de la page de détails du compte.
 
-5. Click "**Advanced**" on the "**Edit Account**" modal.
+5. Cliquez sur "**Advanced**" dans la fenêtre modale "**Edit Account**".
 
-6. If the "**Index**" value is set to 0, the account is your primary account.
+6. Si la valeur "**Index**" est définie sur 0, le compte est votre compte principal.
 
 <p align="center" style={{zoom:"40%"}}>
 ![identify-bitcoin-primary-address](../../static/img/ledger-core/bitcoin-address-identificaiton.png)
 </p>
 
-### 11. Can we use any other wallet other than Xverse to set up a Bitcoin address on Ledger devices for staking Bitcoin on Core?
+### 11. Pouvez-vous utiliser un portefeuille autre que Xverse pour configurer une adresse Bitcoin sur des appareils Ledger pour miser du Bitcoin sur Core ?
 
-Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to
-proceed with untested wallets should do so at their own risk.
+Actuellement, seules les adresses Bitcoin générées via Ledger Live et le portefeuille Xverse ont été testées et vérifiées de manière approfondie pour assurer leur compatibilité. LeLes adresses créées à l'aide d'autres portefeuilles n'ont pas encore été testées et leur fonctionnalité ne peut pas être garantie. Les utilisateurs qui choisissent de procéder avec des portefeuilles non testés doivent le faire à leurs propres risques.
