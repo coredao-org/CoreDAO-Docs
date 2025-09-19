@@ -4,11 +4,11 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Hardware Wallet Integration on Core FAQs
+# Intégration de portefeuille matériel FAQs
 
 ---
 
-### 1. Why does my Ledger wallet keep creating new addresses?
+### 1. Pourquoi mon portefeuille Ledger crée-t-il de nouvelles adresses?
 
 Ledger devices automatically generate a new address each time you connect them. This behavior can cause redemption transactions to fail because the redemption process requires the original staking address that was used to initiate the BTC staking transaction. Therefore, it is recommended always to record the Bitcoin address you used for staking.
 
