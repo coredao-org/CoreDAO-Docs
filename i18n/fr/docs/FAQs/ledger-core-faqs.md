@@ -125,51 +125,51 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-4.png)
 </p>
 
-### 9. How do you set up a Bitcoin address on a Ledger device using Xverse Wallet?
+### 9. Comment configurer une adresse Bitcoin sur un appareil Ledger en utilisant le portefeuille Xverse?
 
-1. Connect your Ledger device to the Ledger Live application on your computer. Click on the Account title on the Xverse wallet.
+1. Connect your Ledger device to the Ledger Live application on your computer. Cliquez sur le titre du compte sur le portefeuille Xverse.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-5.png)
 </p>
 
-2. Click on the **Add hardware wallet account**.
+2. Cliquez sur **Add hardware wallet account**.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-6.png)
 </p>
 
-3. Select **Connect Ledger** from the listed devices.
+3. Sélectionnez **Connect Ledger** parmi les appareils listés.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-7.png)
 </p>
 
-4. Navigate through the setup wizard for setting up the account. Click **Get Started**.
+4. Naviguez à travers l'assistant de configuration pour paramétrer le compte. Cliquez **Get Started**.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-8.png)
 </p>
 
-5. From the **Select Asset** model, select the **Bitcoin, Runes & Oridnals** option. Click Continue.
+5. Dans le modèle **Select Asset** , sélectionnez l'option **Bitcoin, Runes & Oridnals**. Cliquez sur Continuer.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-9.png)
 </p>
 
-6. Proceed by selecting **I am using Ledger Live with this device**.
+6. Continuez en sélectionnant **I am using Ledger Live with this device**.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-10.png)
 </p>
 
-7. Acknowledge the Risk Notification.
+7. Accusez réception de la notification de risque.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-11.png)
 </p>
 
-8. Make sure your device is unlocked and the Bitcoin app is open. Click **Connect**. Select your device from the device list.
+8. Assurez-vous que votre appareil est déverrouillé et que l'application Bitcoin est ouverte. Cliquez sur **Connect**. Select your device from the device list.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-12.png)
