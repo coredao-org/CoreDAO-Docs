@@ -66,20 +66,20 @@ Non, une fois que la période de blocage se termine, les récompenses cessent de
 ![redeem-error-image](../../static/img/ledger-core/redeem-tx-error.png)
 </p>
 
-Cette erreur se produit généralement lors du rachat de BTC après la fin de la période de staking. Cela signifie que quelque chose dans votre configuration ne correspond pas aux exigences pour un rachat réussi. Below are the **known causes** and how to fix them:
+Cette erreur se produit généralement lors du rachat de BTC après la fin de la période de staking. Cela signifie que quelque chose dans votre configuration ne correspond pas aux exigences pour un rachat réussi. Voici les **causes connues** et comment les résoudre:
 
-1. **Incorrect Ledger App**
+1. **Application Ledger incorrecte**
 
-   - Make sure you are using the **Core app** on your Ledger device, not Bitcoin, Ethereum, or any other app.
-   - Update Ledger Live and your device firmware to the latest/supported version. Make sure to restore all your accounts after updating.
+   - Assurez-vous d'utiliser **l'application Core** sur votre appareil Ledger, et non pas Bitcoin, Ethereum ou toute autre application.
+   - Mettez à jour Ledger Live et le firmware de votre appareil vers la dernière version prise en charge. Assurez-vous de restaurer tous vos comptes après la mise à jour.
 
-2. **Wrong BTC Receiving Address Used**
+2. **Adresse de réception BTC incorrecte utilisée**
 
-   - The "BTC Receiving Address" must be the **original staking address** you used when you first staked your BTC.
+   - "L'adresse de réception BTC" doit être **l'adresse de staking d'origine** que vous avez utilisée lors du staking initial de vos BTC.
 
-   - Using a new or different address will result in this error.
+   - Utiliser une nouvelle adresse ou une adresse différente entraînera cette erreur.
 
-   - **How to find your original address:** Check your transaction history in Ledger Live, on a block explorer (like [mempool.space](https://mempool.space/)) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
+   - **Comment trouver votre adresse d'origine:** Vérifiez votre historique de transactions dans Ledger Live, sur un explorateur de blocs (like [mempool.space](https://mempool.space/)) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
 
 3. **Not the Primary Staking Address**
 
@@ -193,7 +193,7 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-15.png)
 </p>
 
-12. User will be prompted to verify the Bitcoin receiving address on their Ledger device.
+12. L'utilisateur sera invité à vérifier l'adresse de réception Bitcoin sur son appareil Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-16.png)
@@ -205,26 +205,25 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-17.png)
 </p>
 
-14. Once confirmed, the user will be prompted for successful set of wallets
+14. Une fois confirmée, l'utilisateur sera invité à valider un ensemble de portefeuilles réussi
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-18.png)
 </p>
 
-15. Specify the wallet name that you want the account to appear on Xverse.
+15. Spécifiez le nom du portefeuille que vous souhaitez voir apparaître sur Xverse pour le compte.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-19.png)
 </p>
 
-16. Click "Confirm" to proceed. The ledger device's Bitcoin address is now added to your Xverse wallet by the name you specified in the
-    previous step. Note this name is just for Xverse and will not be reflected in Ledger.
+16. Cliquez sur "Confirm" pour continuer. L'adresse Bitcoin de votre appareil Ledger est maintenant ajoutée à votre portefeuille Xverse sous le nom que vous avez spécifié à l'étape précédente. Notez que ce nom est uniquement pour Xverse et ne sera pas reflété dans Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-20.png)
 </p>
 
-### 10. I have multiple Bitcoin addresses on my Ledger device. How to identify the primary account?
+### 10. Vous avez plusieurs adresses Bitcoin sur votre appareil Ledger. How to identify the primary account?
 
 1. Connect your Ledger device to the Ledger Live application on your computer. Navigate to the "**Accounts**" tab.
 
