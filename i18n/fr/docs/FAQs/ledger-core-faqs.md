@@ -223,9 +223,9 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-20.png)
 </p>
 
-### 10. Vous avez plusieurs adresses Bitcoin sur votre appareil Ledger. How to identify the primary account?
+### 10. Vous avez plusieurs adresses Bitcoin sur votre appareil Ledger. comment identifier le compte principal??
 
-1. Connect your Ledger device to the Ledger Live application on your computer. Navigate to the "**Accounts**" tab.
+1. Connectez votre appareil Ledger à l'application Ledger Live sur votre ordinateur. Accédez à l'onglet "**Comptes**".
 
 2. By default, the accounts are listed in the order of creation.
 
