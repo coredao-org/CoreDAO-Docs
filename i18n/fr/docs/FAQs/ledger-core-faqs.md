@@ -95,31 +95,31 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 
 ### 8) Comment configurer une adresse Bitcoin sur un appareil Ledger en utilisant Ledger Live?
 
-1. In Ledger Live, click "**My ledger"** tab and connect your Ledger drive
+1. Dans Ledger Live, cliquez sur l'onglet "**My ledger**" et connectez votre appareil Ledger
 
-2. Search and install the Bitcoin app on your Ledger device.
+2. Recherchez et installez l'application Bitcoin sur votre appareil Ledger.
 
-3. Navigate to the **Accounts** tab and click **Add Account**.
+3. Accédez à l'onglet **Accounts** et cliquez sur **Add Account**.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-1.png)
 </p>
 
-4. Search "**Bitcoin**" and select "**Bitcoin (BTC)**". Press continue.
+4. Recherchez "**Bitcoin**" et sélectionnez "**Bitcoin (BTC)**". Appuyez sur Continuer.
 
 <p align="center" style={{zoom:"32%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-2.png)
 </p>
 
-5. Approve the connection for Ledger Live on the Bitcoin app through your Ledger device.
+5. Approuvez la connexion pour Ledger Live sur l'application Bitcoin via votre appareil Ledger.
 
-6. Select the **Native Segwit** account type.
+6. Sélectionnez le type de compte **Native Segwit**.
 
 <p align="center" style={{zoom:"60%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-3.png)
 </p>
 
-7. You have successfully added a Bitcoin account to your ledger device using the Bitcoin app. For more details on setting up your first Bitcoin Account on a Ledger device, refer [here](https://support.ledger.com/article/115005195945-zd).
+7. Vous avez ajouté avec succès un compte Bitcoin à votre appareil Ledger en utilisant l'application Bitcoin. Pour plus de détails sur la configuration de votre premier compte Bitcoin sur un appareil Ledger, consultez [here](https://support.ledger.com/article/115005195945-zd).
 
 <p align="center" style={{zoom:"60%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-4.png)
