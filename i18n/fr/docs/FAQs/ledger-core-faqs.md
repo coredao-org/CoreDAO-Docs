@@ -169,25 +169,25 @@ Cette erreur se produit généralement lors du rachat de BTC après la fin de la
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-11.png)
 </p>
 
-8. Assurez-vous que votre appareil est déverrouillé et que l'application Bitcoin est ouverte. Cliquez sur **Connect**. Select your device from the device list.
+8. Assurez-vous que votre appareil est déverrouillé et que l'application Bitcoin est ouverte. Cliquez sur **Connect**. Sélectionnez votre appareil dans la liste des appareils.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-12.png)
 </p>
 
-9. Choose to add a Bitcoin wallet by clicking on **Add new account**.
+9. Choisissez d'ajouter un portefeuille Bitcoin en cliquant sur **Add new account**.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-13.png)
 </p>
 
-10. User will be prompted to confirm the Ordinals address on their Ledger device.
+10. L'utilisateur sera invité à confirmer l'adresse Ordinals sur son appareil Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-14.png)
 </p>
 
-11. Continue on the ledger device to confirm the address
+11. Continuez sur l'appareil Ledger pour confirmer l'adresse
 
 <p align="center" style={{zoom:"90%"}}>
 ![setup-ledger-live-bitcoin-address](../../static/img/ledger-core/Xverse_screenshots/xverse-add-account-15.png)
