@@ -1,25 +1,25 @@
 ---
-sidebar_label: Protocol Design
-description: Design of Core Rev+ Revenue Sharing Model
+sidebar_label: Conception de protocole
+description: Conception du modèle de partage des revenus Core Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Rev+ Protocol System Design
+# Conception du système de protocole Core Rev+
 
 ---
 
-## Architecture Overview
+## Vue d'ensemble de l'architecture
 
-Rev+ is implemented as a protocol-level feature integrated directly into the Core blockchain's transaction processing pipeline. The Rev+ model comprises two primary components: an on-chain `configuration` contract and `core chain modifications` that handle the fee distribution logic.
+Rev+ est implémenté comme une fonctionnalité de niveau protocole intégrée directement dans le pipeline de traitement des transactions de la blockchain Core. Le modèle Rev+ comprend deux composants principaux : un contrat de `configuration` en chaîne et des `core chain modifications` qui gèrent la logique de distribution des frais.
 
-## **Core Components**
+## **Composants Principaux**
 
-### 1. Configuration Contract (`Configuration.sol`)
+### 1. Contrat de Configuration (Configuration.sol)
 
 **Contract Address**: `0x0000000000000000000000000000000000001016`
 
-The `Configuration.sol` contract serves as the on-chain registry that governs the rules for Rev+ fee distribution. It allows for defining and managing which smart contracts, events, or functions are eligible for gas fee rewards, and how those rewards are allocated. Note that all these configurations are updated through governance proposals approved by the Core DAO.
+Le contrat `Configuration.sol` sert de registre en chaîne qui régit les règles de distribution des frais Rev+. Il permet de définir et de gérer quels contrats intelligents, événements ou fonctions sont éligibles aux récompenses de frais de gaz, et comment ces récompenses sont allouées. Note that all these configurations are updated through governance proposals approved by the Core DAO.
 
 **Key Responsibilities:**
 
