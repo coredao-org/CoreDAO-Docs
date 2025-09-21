@@ -23,9 +23,9 @@ Le modèle de partage des revenus de Core, Rev+, prend en charge deux mécanisme
 
 1. **Distribution directe**: Une partie des frais de gaz de transaction est automatiquement distribuée aux destinataires désignés (par exemple, les développeurs, les DAO, les émetteurs de stablecoins) lors de l'exécution de la transaction. Ce mécanisme en temps réel garantit que la valeur est immédiatement partagée avec les contributeurs en fonction de l'activité du contrat intelligent.
 
-2. **Partage du pool Rev+:** Une partie des frais de gaz est accumulée dans un pool de récompenses partagées. At regular intervals (e.g., monthly), the fees from the pool are distributed among participating partners based on their relative contributions to network growth and usage. Contributions are assessed across four key metrics:
+2. **Partage du pool Rev+:** Une partie des frais de gaz est accumulée dans un pool de récompenses partagées. À intervalles réguliers (par exemple, mensuellement), les frais du pool sont distribués entre les partenaires participants en fonction de leurs contributions relatives à la croissance et à l'utilisation du réseau. Les contributions sont évaluées selon quatre indicateurs clés :
 
-   - Total number of transactions
+   - Nombre total de transactions
    - Aggregate transaction notional value
    - Number of unique active addresses
    - Total transaction fees generated
