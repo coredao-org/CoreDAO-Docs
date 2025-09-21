@@ -18,78 +18,74 @@ Existen múltiples formas de localizar tu dirección original de Bitcoin staking
 
 1. Navega a tus registros de BTC staking en el panel [My Staking](https://stake.coredao.org/my-staking#btc) en el [sitio web de Core Staking](https://stake.coredao.org/staking).
 
-2. Copia el hash de la transacción de Bitcoin Staking. Clicking on it will navigate the user to transaction details on the [Mempool.Space Bitcoin Explorer](https://mempool.space/).
+2. Copia el hash de la transacción de Bitcoin Staking. Al hacer clic en él, se te redirigirá a los detalles de la transacción en el [Mempool.Space Bitcoin Explorer](https://mempool.space/).
 
 <p align="center" style={{zoom:"40%"}}>
 ![copt-tx-hash](../../static/img/ledger-core/staking-tx-copy.png)
 </p>
 
-3. Navigate to [Core Scan Block Explorer](https://scan.coredao.org/). From the top navigation menu, click "**More**" and from the drop-down menu select "[BTC Staking Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder)".
+3. Navega a [Core Scan Block Explorer](https://scan.coredao.org/). Desde el menú de navegación superior, haz clic en “**More**” y en el menú desplegable selecciona "[BTC Staking Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder)".
 
 <p align="center" style={{zoom:"60%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder.png)
 </p>
 
-5. Paste the copied Bitcoin Staking transaction hash and click "**Decode**".
+5. Pega el hash de la transacción de Bitcoin Staking que copiaste y haz clic en “**Decode**”.
 
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-2.png)
 </p>
 
-6. Under the "**Decoded Results**" section, "**Input Address**" is the BTC staking address you have used for initiating the staking transaction. Note that this is **not your public key**, just the specific address used when the timelock transaction was created.
+6. En la sección “**Decoded Results**”, el “**Input Address**” es la dirección BTC de staking que utilizaste para iniciar la transacción de staking. Ten en cuenta que esto **no es tu public key**, sino únicamente la dirección específica usada cuando se creó la transacción con timelock.
 
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-3.png)
 </p>
 
-### 3. Why does my redemption transaction fail?
+### 3. ¿Por qué falla mi transacción de redención?
 
-If you input a new receiving address instead of the **original staking address**, the redemption transaction will not complete. To successfully redeem your timelock expired BTC ensure that the "**BTC Receiving Address**" you provide during redemption matches the **original Bitcoin staking address**, the address that initiated the staking transaction. You can confirm the address by checking your transaction details on the [mempool.space](https://mempool.space/) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
+Si introduces una nueva dirección de recepción en lugar de la **dirección de staking original**, la transacción de redención no se completará. Para poder redimir con éxito tu BTC con timelock expirado, asegúrate de que la “**BTC Receiving Address**” que proporciones durante la redención coincida con la **dirección original de Bitcoin staking**, es decir, la dirección que inició la transacción de staking. Puedes confirmar la dirección revisando los detalles de tu transacción en [mempool.space](https://mempool.space/) o utilizando el [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
 
-### 4. Is staking and redemption possible directly with the Ledger device?
+### 4. ¿Es posible hacer staking y redención directamente con el dispositivo Ledger?
 
-Yes, both staking and redemption are possible, provided you use the same BTC receiving address for redemption as you used for staking. Also, the **_only_** Segwit Native Bitcoin Address type is supported.
+Sí, tanto el staking como la redención son posibles, siempre que uses la misma dirección BTC de recepción para la redención que usaste para el staking. Además, **_únicamente_** se admite el tipo de dirección Segwit Native Bitcoin Address.
 
-### 5. When I connect my ledger device, why is the balance shown incorrect on the UI?
+### 5. Cuando conecto mi dispositivo Ledger, ¿por qué el balance mostrado en la UI es incorrecto?
 
-When you connect your Ledger device to UI, the platform only shows the balance of your **primary staking address**. It does **not** read your
-total balance under your Ledger public key. If you have multiple BTC addresses, only the balance in the primary Bitcoin addresses is fetched
-and displayed.
+Cuando conectas tu dispositivo Ledger a la UI, la plataforma solo muestra el balance de tu **dirección primaria de staking**. **No** lee tu balance total bajo tu public key de Ledger. Si tienes múltiples direcciones BTC, únicamente se obtiene y muestra el balance de la dirección Bitcoin primaria.
 
-### 6. Do users earn rewards after the lock period ends if they don't redeem their BTC?
+### 6. ¿Los usuarios ganan recompensas después de que finaliza el período de bloqueo si no redimen su BTC?
 
-No, once the lock period ends, rewards stop accruing. Users can either **redeem their BTC** manually or if desired, re-delegate manually to
-timelock BTC again and start accruing rewards.
+No, una vez que termina el período de bloqueo, las recompensas dejan de acumularse. Los usuarios pueden **redimir su BTC** manualmente o, si lo desean, re-delegar manualmente el BTC con timelock nuevamente para comenzar a generar recompensas otra vez.
 
-### 7. Why do I see "Transaction Error Occurred -- Ledger device: Invalid data received (0x6a80)" during redemption?
+### 7. ¿Por qué aparece “Transaction Error Occurred -- Ledger device: Invalid data received (0x6a80)” durante la redención?
 
 <p align="center" style={{zoom:"60%"}}>
 ![redeem-error-image](../../static/img/ledger-core/redeem-tx-error.png)
 </p>
 
-This error typically happens when redeeming BTC after the staking period ends. It means that something in your setup doesn't match the
-requirements for a successful redemption. Below are the **known causes** and how to fix them:
+Este error suele ocurrir al intentar redimir BTC después de que termina el período de staking. Significa que algo en tu configuración no cumple con los requisitos para una redención exitosa. A continuación se muestran las **causas conocidas** y cómo solucionarlas:
 
-1. **Incorrect Ledger App**
+1. **App de Ledger incorrecta**
 
-   - Make sure you are using the **Core app** on your Ledger device, not Bitcoin, Ethereum, or any other app.
-   - Update Ledger Live and your device firmware to the latest/supported version. Make sure to restore all your accounts after updating.
+   - Asegúrate de estar usando la **Core app** en tu dispositivo Ledger, no Bitcoin, Ethereum u otra app.
+   - Actualiza Ledger Live y el firmware de tu dispositivo a la última versión soportada. Después de actualizar, asegúate de restaurar todas tus cuentas.
 
-2. **Wrong BTC Receiving Address Used**
+2. **Dirección BTC de recepción incorrecta**
 
-   - The "BTC Receiving Address" must be the **original staking address** you used when you first staked your BTC.
+   - La “BTC Receiving Address” debe ser la **dirección de staking original** que usaste al hacer el staking de tu BTC por primera vez.
 
-   - Using a new or different address will result in this error.
+   - Usar una dirección nueva o distinta producirá este error.
 
-   - **How to find your original address:** Check your transaction history in Ledger Live, on a block explorer (like [mempool.space](https://mempool.space/)) or using the [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
+   - **Cómo encontrar tu dirección original:** revisa tu historial de transacciones en Ledger Live, en un block explorer (como [mempool.space](https://mempool.space/)) o usando el [Core Bitcoin Tx Decoder](https://scan.coredao.org/btc-stake-txn-decoder).
 
-3. **Not the Primary Staking Address**
+3. **No es la dirección primaria de staking**
 
-   - If you have multiple BTC accounts under your Ledger wallet, the system will only detect your **primary (original)** staking address.
+   - Si tienes múltiples cuentas BTC en tu wallet Ledger, el sistema solo detectará tu dirección **primaria de staking (la original)**.
 
-   - Be sure to connect to the same account and address used during the original staking.
+   - Asegúrate de conectarte a la misma cuenta y dirección usada en el staking original.
 
-4. **Unsynced Ledger or Browser Cache Issues**
+4. **Ledger desincronizado o problemas de caché en el navegador**
 
    - Refresh the staking site and reconnect your Ledger.
 
