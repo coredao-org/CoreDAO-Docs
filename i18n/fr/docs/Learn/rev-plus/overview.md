@@ -26,9 +26,9 @@ Le modèle de partage des revenus de Core, Rev+, prend en charge deux mécanisme
 2. **Partage du pool Rev+:** Une partie des frais de gaz est accumulée dans un pool de récompenses partagées. À intervalles réguliers (par exemple, mensuellement), les frais du pool sont distribués entre les partenaires participants en fonction de leurs contributions relatives à la croissance et à l'utilisation du réseau. Les contributions sont évaluées selon quatre indicateurs clés :
 
    - Nombre total de transactions
-   - Aggregate transaction notional value
-   - Number of unique active addresses
-   - Total transaction fees generated
+   - Valeur notionnelle totale des transactions
+   - Nombre d'adresses actives uniques
+   - Montant total des frais de transaction générés
 
 This dual-model architecture enables both precision-aligned incentives at the contract level and broader, data-driven revenue sharing across the entire ecosystem.
 
