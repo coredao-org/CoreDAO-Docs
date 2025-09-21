@@ -72,11 +72,11 @@ Rev+ est conçu pour créer un écosystème dynamique et auto-durable où chaque
 
 ## Impact économique
 
-Rev+ addresses critical challenges in the current blockchain ecosystem:
+Rev+ répond aux défis critiques de l'écosystème blockchain actuel:
 
-- **Misaligned Incentives**: Traditional models force stablecoin issuers to pay high upfront distribution costs without capturing transaction value
-- **Developer Sustainability**: Most dApps struggle with long-term monetization beyond token appreciation
-- **Ecosystem Growth**: Creates positive feedback loops where increased usage benefits all participants
+- **Inadéquation des incitations**: Les modèles traditionnels obligent les émetteurs de stablecoins à payer des coûts de distribution initiaux élevés sans capter la valeur des transactions
+- **Durabilité des développeurs**: La plupart des dApps peinent à trouver une monétisation à long terme au-delà de l'appréciation des jetons
+- **Croissance de l'écosystème**: Crée des boucles de rétroaction positives où l'augmentation de l'utilisation profite à tous les participants
 
-Core’s Protocol Revenue Sharing Program, Rev+, is purpose-built to accelerate stablecoin adoption, incentivize developer activity, and drive sustained transaction volume across the network. Rev+ positions Core as the most attractive blockchain for stablecoin issuers, dApp developers, and ecosystem builders by aligning economic incentives with network growth. Through a phased and governance-driven rollout, Core aims to foster a robust, high-performance ecosystem that delivers long-term value to all participants.
+Le programme de partage des revenus de protocole de Core, Rev+, est conçu pour accélérer l'adoption des stablecoins, inciter l'activité des développeurs et stimuler le volume de transactions durable à travers le réseau. Rev+ positionne Core comme la blockchain la plus attractive pour les émetteurs de stablecoins, les développeurs de dApps et les constructeurs d'écosystèmes en alignant les incitations économiques avec la croissance du réseau. Grâce à un déploiement progressif et piloté par la gouvernance, Core vise à créer un écosystème robuste et hautement performant qui offre une valeur à long terme à tous les participants.
 
