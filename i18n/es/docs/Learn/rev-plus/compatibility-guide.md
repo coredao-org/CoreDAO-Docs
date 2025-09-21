@@ -1,51 +1,51 @@
 ---
-sidebar_label: Rev+ Compatibility Guide
-description: Compatibility Guide for Rev+
+sidebar_label: Guía de Compatibilidad Rev+
+description: Guía de Compatibilidad para Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Rev+ Enabled Contracts: Compatibility Guide
+# Rev+ Enabled Contracts: Guía de Compatibilidad
 
 ---
 
-This guide outlines best practices and configuration steps to ensure compatibility between popular Ethereum development frameworks, including Foundry and Hardhat, as well as frontend libraries like **`ethers.js`**, when interacting with Rev+ enabled contracts.
+Esta guía describe las mejores prácticas y pasos de configuración para asegurar compatibilidad entre frameworks populares de desarrollo en Ethereum, incluyendo Foundry y Hardhat, así como librerías de frontend como **`ethers.js`**, al interactuar con contratos habilitados para Rev+.
 
 ## Foundry
 
-**Foundry** is a high-performance toolkit for EVM development, featuring tools such as Forge for scripting and testing smart contracts. When working with Rev+ enabled contracts, gas usage may be slightly higher because the contract includes revenue allocation logic for Rev+ participants.
+**Foundry** es un toolkit de alto rendimiento para desarrollo en la EVM, que incluye herramientas como Forge para scripting y testing de smart contracts. Cuando trabajes con contratos habilitados para Rev+, el consumo de gas puede ser ligeramente mayor porque el contrato incluye lógica de asignación de revenue para los participantes de Rev+.
 
-#### Adjust Gas Estimates with `--gas-estimate-multiplier`
+#### Ajustar Estimaciones de Gas con `--gas-estimate-multiplier`
 
-Rev+ introduces additional gas overhead not automatically handled by Foundry’s default gas estimation logic.
+Rev+ introduce un overhead adicional de gas que no es manejado automáticamente por la lógica de estimación de gas por defecto en Foundry.
 
-- Use the `--gas-estimate-multiplier` flag to increase the estimated gas.
-- **Recommended Range**: `200–500`, depending on the complexity of the contract and the nature of the Rev+ integration.
-- Use the `--legacy` flag with Foundry for better compatibility.
+- Usa el flag `--gas-estimate-multiplier` para incrementar la estimación de gas.
+- **Rango recomendado**: `200–500`, dependiendo de la complejidad del contrato y la naturaleza de la integración de Rev+.
+- Usa también el flag `--legacy` con Foundry para mejor compatibilidad.
 
-**Example:**
+**Ejemplo:**
 
 ```shell
 forge script script/MyScript.s.sol --rpc-url <URL> --gas-estimate-multiplier 500 --broadcast --legacy
 ```
 
-#### Thoroughly Test with Multiple Gas Values
+#### Probar exhaustivamente con múltiples valores de gas
 
-Because gas usage can vary due to runtime execution paths and Rev+ logic, it’s essential to:
+Debido a que el uso de gas puede variar por rutas de ejecución en tiempo de ejecución y la lógica de Rev+, es esencial:
 
-- Start with a higher gas multiplier (e.g., 500\)
-- Test progressively lower values to determine the optimal multiplier
-- Ensure robustness against out-of-gas failures
+- Comenzar con un gas multiplier más alto (p. ej., 500\)
+- Probar valores progresivamente más bajos para determinar el gas multiplier óptimo
+- Asegurar robustez frente a fallos por out-of-gas
 
 ## Hardhat
 
-**Hardhat** is a widely used framework for developing EVM-based smart contracts. It supports interaction with Rev+ enabled contracts but requires manual configuration for gas.
+**Hardhat** es un framework ampliamente usado para desarrollar smart contracts basados en EVM. Soporta la interacción con contratos habilitados para Rev+, pero requiere configuración manual del gas.
 
 #### Manual Gas Estimation
 
-For Rev+ enabled contracts, `eth_estimateGas` provides a reliable gas estimate that includes the additional logic. No multiplier is required; just pass the estimated value as `gasLimit`.
+Para contratos habilitados para Rev+, `eth_estimateGas` proporciona una estimación de gas fiable que incluye la lógica adicional. No se requiere multiplier; simplemente pasa el valor estimado como `gasLimit`.
 
-**Example:**
+**Ejemplo:**
 
 ```javascript
 const estimatedGas = await contract.estimateGas.myMethod(...args);
@@ -55,17 +55,17 @@ await contract.myMethod(...args, {
 });
 ```
 
-## Frontend Integration with Rev+ Enabled Contracts
+## Integración Frontend con Contratos Habilitados para Rev+
 
-When integrating Rev+ enabled contracts into frontend applications (e.g., using **ethers.js**, **wagmi**, or **web3.js**), similar practices to those of Hardhat must be followed to ensure reliable transaction execution.
+Al integrar contratos habilitados para Rev+ en aplicaciones frontend (p. ej., usando **ethers.js**, **wagmi**, o **web3.js**), se deben seguir prácticas similares a las de Hardhat para asegurar la ejecución confiable de las transacciones.
 
-### Best Practices
+### Mejores Prácticas
 
-- **Gas Estimation**: Use the  `.estimateGas.method()` to estimate gas usage.
-- **No Multiplier Needed**: Use the estimated value directly.
-- **Error Handling**: Implement fallbacks for `out-of-gas errors` to enhance the user experience.
+- **Estimación de Gas**: Utiliza `.estimateGas.method()` para estimar el consumo de gas.
+- **Sin Multiplier Necesario**: Usa el valor estimado directamente.
+- **Manejo de Errores**: Implementa fallbacks para errores de `out-of-gas errors` y mejorar la experiencia del usuario.
 
-**Example (ethers.js):**
+**Ejemplo (ethers.js):**
 
 ```javascript
 const estimatedGas = await contract.estimateGas.myMethod(...args);
@@ -76,11 +76,11 @@ const tx = await contract.myMethod(...args, {
 });
 ```
 
-## Conclusion
+## Conclusión
 
-When interacting with Rev+ enabled contracts:
+Al interactuar con contratos habilitados para Rev+:
 
-- **Adjust gas estimates in Foundry using the `--gas-estimate-multiplier`** flag.
-- **Use legacy transaction formatting** in Foundry
-- **Manually estimate the gas** and pass the estimated value explicitly when interacting through the **frontend** or **Hardhat**
-- **Test extensively** under different runtime conditions to ensure robustness.
+- **Ajusta las estimaciones de gas en Foundry usando el flag `--gas-estimate-multiplier`**.
+- **Utiliza el formato de transacción legacy** en Foundry
+- **Estima manualmente el gas** y pasa el valor estimado explícitamente al interactuar a través del **frontend** o **Hardhat**
+- **Realiza pruebas exhaustivas** bajo diferentes condiciones de ejecución para garantizar la robustez.
