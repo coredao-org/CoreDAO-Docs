@@ -19,24 +19,24 @@ Rev+ est implémenté comme une fonctionnalité de niveau protocole intégrée d
 
 **Contract Address**: `0x0000000000000000000000000000000000001016`
 
-Le contrat `Configuration.sol` sert de registre en chaîne qui régit les règles de distribution des frais Rev+. Il permet de définir et de gérer quels contrats intelligents, événements ou fonctions sont éligibles aux récompenses de frais de gaz, et comment ces récompenses sont allouées. Note that all these configurations are updated through governance proposals approved by the Core DAO.
+Le contrat `Configuration.sol` sert de registre en chaîne qui régit les règles de distribution des frais Rev+. Il permet de définir et de gérer quels contrats intelligents, événements ou fonctions sont éligibles aux récompenses de frais de gaz, et comment ces récompenses sont allouées. Notez que toutes ces configurations sont mises à jour via des propositions de gouvernance approuvées par le Core DAO.
 
-**Key Responsibilities:**
+**Responsabilités Clés:**
 
-- Store configuration data for target contracts, including events and (optionally) functions.
-- Define gas allocations and associated reward recipients.
-- Enforce limits on reward recipients per event.
-- Ensure reward percentage sums are valid (must equal 100%).
-- Allow governance-controlled lifecycle operations (add, update, remove, toggle).
-- Maintain an `isActive` flag for dynamic config enablement.
+- Stocker les données de configuration pour les contrats cibles, y compris les événements et (éventuellement) les fonctions.
+- Définir les allocations de gaz et les bénéficiaires de récompenses associés.
+- Appliquer des limites aux bénéficiaires de récompenses par événement.
+- Assurer la validité des sommes de pourcentages de récompense (doivent égaler 100 %).
+- Autoriser les opérations de cycle de vie contrôlées par la gouvernance (ajouter, mettre à jour, supprimer, basculer).
+- Maintenir un drapeau `isActive` pour l'activation de la configuration dynamique.
 
-### 2. Integration with Core Blockchain
+### 2. Intégration avec la blockchain Core
 
-The Rev+ protocol logic is integrated directly into the Core blockchain's transaction processing layer. This implementation ensures that fee distribution occurs transparently and deterministically after EVM execution, without altering smart contract logic.
+La logique du protocole Rev+ est intégrée directement dans la couche de traitement des transactions de la blockchain Core. Cette implémentation garantit que la distribution des frais se produit de manière transparente et déterministe après l'exécution EVM, sans modifier la logique des contrats intelligents.
 
-Importantly, developers do not need to modify their deployed smart contracts to participate in Rev+, as long as they are using `--eth_estimateGas` for gas estimations in their code. Rev+ works by monitoring contract events emitted during transaction execution. As long as a contract emits a configured event (via standard Solidity logging), the Rev+ system can recognize it and trigger reward distribution. This makes Rev+ fully composable and compatible with existing EVM-based applications.
+Surtout, les développeurs n'ont pas besoin de modifier leurs contrats intelligents déployés pour participer à Rev+, tant qu'ils utilisent `--eth_estimateGas` pour les estimations de gaz dans leur code. Rev+ fonctionne en surveillant les événements de contrat émis lors de l'exécution des transactions. Tant qu'un contrat émet un événement configuré (via la journalisation Solidity standard), le système Rev+ peut le reconnaître et déclencher la distribution de récompenses. Cela rend Rev+ entièrement composable et compatible avec les applications existantes basées sur EVM.
 
-Changes to the configurations submitted through Core’s governance contract will be applied to the next transaction after they are approved and activated by Core DAO.
+Les modifications apportées aux configurations soumises via le contrat de gouvernance de Core seront appliquées à la transaction suivante après leur approbation et activation par Core DAO.
 
 Rev+ core chain logic is implemented directly in the Core blockchain's transaction processing layer, located at core-chain/eth/feemarket/ and `core-chain/eth/state_transition.go`, refer [here](https://www.google.com/url?q=https://github.com/coredao-org/core-chain/pull/59&sa=D&source=docs&ust=1748354919957219&usg=AOvVaw182idwbrHVNYZTy364X1E-) for more details. It uses the same structs as the solidity ones.
 
