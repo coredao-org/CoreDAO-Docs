@@ -16,8 +16,8 @@ Ce guide utilisateur vous guide à travers le processus de mise en jeu de BTC po
 Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
 - **Utilisez uniquement des appareils Ledger pris en charge:** Le staking de Bitcoin, le remboursement et la réattribution sur Core ne sont pris en charge que sur des portefeuilles matériels Ledger spécifiques avec le dernier micrologiciel. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
-- **Mettez en jeu des BTC uniquement à partir de l'adresse du portefeuille BTC principal:** Le staking de BTC n'est actuellement pris en charge qu'à partir de l'adresse de votre portefeuille BTC principal Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles. Please refer to our [FAQs](../../../../FAQs/ledger-core-faqs.md) for instructions on how to create a new address or identify your primary address.
-- **Only Native SegWit Bitcoin Addresses are Supported:** Currently, only Native SegWit Bitcoin addresses are supported for BTC staking via Ledger hardware.
+- **Mettez en jeu des BTC uniquement à partir de l'adresse du portefeuille BTC principal:** Le staking de BTC n'est actuellement pris en charge qu'à partir de l'adresse de votre portefeuille BTC principal Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles. Veuillez consulter notre [FAQs](../../../../FAQs/ledger-core-faqs.md) pour obtenir des instructions sur la façon de créer une nouvelle adresse ou identifier votre adresse principale.
+- **Seules les adresses Bitcoin Native SegWit sont prises en charge:** Actuellement, seules les adresses Bitcoin Native SegWit sont prises en charge pour le staking de BTC via le matériel Ledger.
 
 ## Supported Ledger Hardware Wallets
 
@@ -33,7 +33,7 @@ Les appareils matériels Ledger suivants prennent actuellement en charge la mise
 <br/>
 
 :::note
-Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Before timelocking, redeeming, or redelegating Bitcoin on Core using your Ledger device, ensure you update to the latest version to maintain compatibility and security. Always check **Ledger Live** for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger device firmware.
+Les versions du micrologiciel indiquées ci-dessus reflètent la dernière version disponible au moment de la rédaction et sont susceptibles d'être modifiées. Avant de verrouiller dans le temps, de racheter ou de redéléguer Bitcoin sur Core en utilisant votre appareil Ledger, assurez-vous de mettre à jour vers la dernière version pour maintenir la compatibilité et la sécurité. Vérifiez toujours **Ledger Live** pour les mises à jour les plus récentes. Consultez [ici](https://support.ledger.com/article/8458939792669-zd) pour plus de détails sur la mise à jour du micrologiciel de l'appareil Ledger.
 :::
 
 ## Prérequis
@@ -42,9 +42,9 @@ Avant de commencer, assurez-vous d'avoir:
 
 - Un appareil Ledger pris en charge avec le dernier micrologiciel.
 - Ledger Live est installé et correctement configuré sur votre ordinateur.
-- You need to have a BTC address on your Ledger device, which can be acquired through either Ledger Live or the Xverse wallet.
-  - BTC addresses created via wallets other than Xverse and Ledger Live have not been tested - use at your own risk.
-  - For Xverse Wallet, add your Ledger device to the Xverse Wallet.
+- Vous devez avoir une adresse BTC sur votre appareil Ledger, qui peut être obtenue via Ledger Live ou le portefeuille Xverse.
+  - Les adresses BTC créées via des portefeuilles autres que Xverse et Ledger Live n'ont pas été testées - utilisez-les à vos propres risques.
+  - Pour le portefeuille Xverse, ajoutez votre appareil Ledger au portefeuille Xverse.
 - Des BTC suffisants (minimum 0,01 BTC) disponibles sur votre appareil Ledger pour le staking.
 
 ## Setting up Ledger Device
@@ -75,17 +75,17 @@ Suivez les étapes ci-dessous pour installer l'application Core sur votre appare
 
 :::info
 Utilisez toujours l'application Core pour staker, rembourser ou réattribuer du Bitcoin sur le réseau principal Core. L'application Bitcoin standard ne prend pas en charge les opérations de remboursement sur Core et peut entraîner une perte permanente d'accès à vos BTC verrouillés dans le temps. Contrairement à l'application Ledger Bitcoin, qui utilise une signature aveugle où les détails de la transaction sont masqués à l'utilisateur, l'application Ledger Core permet la signature claire.
-Clear Signing displays all transaction information (e.g., amount, validator, fees, and addresses) directly on your Ledger device screen, providing you with complete visibility. Cela vous permet de vérifier en toute confiance ce que vous signez et vous protège contre les transactions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+La signature claire affiche toutes les informations de transaction (par exemple, montant, validateur, frais et adresses) directement sur l'écran de votre appareil Ledger, vous offrant une visibilité complète. Cela vous permet de vérifier en toute confiance ce que vous signez et vous protège contre les transactions non intentionnelles ou malveillantes. Pour plus de détails sur la signature claire, référez [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 :::
 
-### Step#3: Setting up Bitcoin Address on Ledger Device
+### Étape #3: Configuration de l'adresse Bitcoin sur l'appareil Ledger
 
-Currently, staking from a Ledger device is only supported via the primary Bitcoin account on the Ledger device.
+Actuellement, le staking depuis un appareil Ledger n'est pris en charge que via le compte Bitcoin principal sur l'appareil Ledger.
 
-- If you have a new Ledger device, the first Bitcoin account you set up is the primary account. Refer [here](../../../../FAQs/ledger-core-faqs#8-how-do-you-set-up-a-bitcoin-address-on-a-ledger-device-using-ledger-live) for detailed steps on setting up the Bitcoin Address on your Ledger device using Ledger Live.
-- If you already have multiple Bitcoin accounts set up on your ledger device, refer [here](../../../../FAQs/ledger-core-faqs#9-how-do-you-set-up-a-bitcoin-address-on-a-ledger-device-using-xverse-wallet) for instructions on identifying the primary account.
+- Si vous avez un nouvel appareil Ledger, le premier compte Bitcoin que vous configurez est le compte principal. Consultez [ici](../../../../FAQs/ledger-core-faqs#8-how-do-you-set-up-a-bitcoin-address-on-a-ledger-device-using-ledger-live) pour les étapes détaillées sur la configuration de l'adresse Bitcoin sur votre appareil Ledger à l'aide de Ledger Live.
+- Si vous avez déjà plusieurs comptes Bitcoin configurés sur votre appareil Ledger, consultez [ici](../../../../FAQs/ledger-core-faqs#9-how-do-you-set-up-a-bitcoin-address-on-a-ledger-device-using-xverse-wallet) pour les instructions sur l'identification du compte principal.
 
-> ⚠️ **Disclaimer:** _Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to proceed with untested wallets should do so at their own risk._
+> ⚠️ \*\* Avertissement:\*\* Actuellement, seules les adresses Bitcoin générées via Ledger Live et le portefeuille Xverse ont été minutieusement testées et vérifiées pour la compatibilité. Les adresses créées à l'aide d'autres portefeuilles n'ont pas encore été testées et leur fonctionnalité ne peut pas être garantie. Les utilisateurs qui choisissent de procéder avec des portefeuilles non testés doivent le faire à leurs propres risques
 
 ## Mise en jeu de BTC sur Core avec Ledger
 
@@ -113,17 +113,17 @@ Avec votre appareil Ledger connecté et l'application Core installée, vous pouv
 
 ### Connecter le portefeuille matériel Ledger à un site Web
 
-Before connecting your Ledger device to the website, ensure you are using your Ledger device’s primary Bitcoin (BTC) account for staking BTC on Core. Refer to the [official guide from Ledger](https://support.ledger.com/article/115005195945-zd) to set up a Bitcoin (BTC) account on your device, if you haven't already done so.
+Avant de connecter votre appareil Ledger au site Web, assurez-vous d'utiliser le compte Bitcoin (BTC) principal de votre appareil Ledger pour miser du BTC sur Core. Consultez le [guide officiel de Ledger](https://support.ledger.com/article/115005195945-zd) pour configurer un compte Bitcoin (BTC) sur votre appareil, si vous ne l'avez pas déjà fait.
 
 #### Option de mise en jeu un : Connecter le portefeuille Ledger directement
 
-1. Sur le site [Core Bitcoin Staking Website](https://stake.coredao.org/staking), cliquez sur "**Connect**" à côté du montant de staking BTC. Remember, only the primary account is supported for staking BTC; ensure it is the same account connected to your Ledger Live.
+1. Sur le site [Core Bitcoin Staking Website](https://stake.coredao.org/staking), cliquez sur "**Connect**" à côté du montant de staking BTC. Assurez-vous que le compte principal est le même compte connecté à votre Ledger Live, car seul le compte principal est pris en charge pour la mise en jeu de BTC.
 
 <p align="center" >
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-2.png)
 </p>
 
-2. Dans la fenêtre modale du portefeuille affichée, sous "**Hardware Wallet**" cliquez sur "**Ledger**". Assurez-vous que votre appareil est déverrouillé et que l'application Core est ouverte. Note that only the Bitcoin Native SegWit type addresses are supported for BTC staking on Core with Ledger.
+2. Dans la fenêtre modale du portefeuille affichée, sous "**Hardware Wallet**" cliquez sur "**Ledger**". Assurez-vous que votre appareil est déverrouillé et que l'application Core est ouverte. Seules les adresses de type Bitcoin Native SegWit sont prises en charge pour la mise en jeu de BTC sur Core avec Ledger.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/wallet-connect-1.png)
@@ -167,9 +167,9 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-staking/UI-4.png)
 </p>
 
-3. **Confirm BTC Staking Details:** Verify the amount of BTC to be staked. Before finalizing, specify key parameters:
-   - Confirm the BTC amount you'd like to stake (minimum 0.01 BTC).
-   - Set the lock time to determine when your Bitcoin will be unlocked. Please note that the website's user interface displays the lock time based on the user's local time, which may differ from the time zone of the Ledger device, which is UTC.
+3. **Confirmer les détails de la mise en jeu de BTC:** Vérifiez le montant de BTC à mettre en jeu. Avant de finaliser, spécifiez les paramètres clés:
+   - Confirmez le montant de BTC que vous souhaitez miser (minimum 0,01 BTC).
+   - Définissez la durée de verrouillage pour déterminer quand vos Bitcoins seront débloqués. Veuillez noter que l'interface utilisateur du site Web affiche la durée de verrouillage en fonction de l'heure locale de l'utilisateur, qui peut différer du fuseau horaire de l'appareil Ledger, qui est UTC.
    - Spécifiez la vitesse de priorité du réseau pour votre transaction.
 
 <p align="center" style={{zoom:"60%"}}>
@@ -226,4 +226,4 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 ## Conclusion
 
-Félicitations ! You've successfully staked Bitcoin on Core using your Ledger hardware wallet, leveraging its security and Core's self-custodial model for complete asset control and transparent signing via the Core app. Welcome to the Core ecosystem, where security, control, and yield are paramount!
+Félicitations ! Vous avez mis en jeu des Bitcoins sur Core avec succès en utilisant votre portefeuille matériel Ledger, en tirant parti de sa sécurité et du modèle de garde auto-administré de Core pour un contrôle total des actifs et une signature transparente via l'application Core. Bienvenue dans l'écosystème Core, où la sécurité, le contrôle et le rendement sont primordiaux!
