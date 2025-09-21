@@ -302,26 +302,26 @@ Le modèle de partage de revenus Rev+ permet à Core DAO, l'organe directeur de 
 ### Sécurité de correspondance d'événements
 
 - **Correspondance de signature exacte**: Utilise des hachages de signature d'événement cryptographiques
-- **Log Verification**: Only processes verified transaction logs
-- **Contract Address Binding**: Configurations tied to specific contract addresses
+- **Vérification de logs**: Ne traite que les journaux de transactions vérifiés
+- **Liaison d'adresse de contrat**: Configurations liées à des adresses de contrat spécifiques
 
-## Performance Considerations
+## Considérations de performance
 
-### Gas Overhead
+### Surcharge de gaz
 
-- Rev+ logic adds minimal computational overhead per transaction
-- Event signature matching uses efficient hash lookups
-- Distribution calculations are simple arithmetic operations
+- La logique Rev+ ajoute une surcharge de calcul minimale par transaction
+- La correspondance de signature d'événement utilise des recherches de hachage efficaces
+- Les calculs de distribution sont des opérations arithmétiques simples
 
-### Scalability
+### Scalabilité
 
-- Supports concurrent processing of multiple configured contracts
-- Event matching scales linearly with the number of configurations
-- No state bloat from historical distribution records
+- Prend en charge le traitement simultané de plusieurs contrats configurés
+- La correspondance d'événements évolue linéairement avec le nombre de configurations
+- Pas de gonflement d'état dû aux enregistrements de distribution historiques
 
-### Network Impact
+### Impact sur le réseau
 
-- Block production time remains unchanged
-- Transaction throughput maintained at 50M gas per block
-- Distributed gas accounting prevents network congestion
+- Le temps de production de bloc reste inchangé
+- Le débit de transaction est maintenu à 50 millions de gaz par bloc
+- La comptabilité de gaz distribuée empêche la congestion du réseau
 
