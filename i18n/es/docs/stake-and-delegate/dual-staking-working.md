@@ -41,9 +41,9 @@ Efectivamente, las emisiones de CORE se distribuyen de manera proporcional segú
 
 El mecanismo que determina el nivel de rendimiento de un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Level1</sub>**, **P<sub>Level2</sub>**, o **P<sub>Level3</sub> (P<sub>MAX</sub>)**)se basa en la cantidad de tokens CORE en staking en relación con el Bitcoin en staking, donde R representa la proporción CORE:BTC y se ycumple que **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Los actuales ratios de staking CORE:BTC son los siguientes:
 
-- Staking Ratio R1 \= 4,250 CORE per 1 BTC
-- Staking Ratio R2 \= 12,750 CORE per 1 BTC
-- Staking Ratio R3 \= 34,000 CORE per 1 BTC
+- Proporción de Staking R1 \= 4,250 CORE por 1 BTC
+- Proporción de Staking R2 \= 12,750 CORE por 1 BTC
+- Proporción de Staking R3 \= 34,000 CORE por 1 BTC
 
 Teniendo en cuenta estos ratios, los usuarios pueden calcular el umbral requerido para cada nivel como sigue:
 
@@ -72,9 +72,9 @@ A continuación se muestra un ejemplo sencillo que explica cómo calcular la can
 
 Ahora, el usuario deberá hacer staking de CORE según los siguientes umbrales de CORE en staking para disfrutar de un mayor rendimiento en su BTC en staking con las variables mencionadas anteriormente:
 
-- Staking Ratio **R<sub>1</sub>** \= 4,250
-- Staking Ratio **R<sub>2</sub>** \= 12,750
-- Staking Ratio **R<sub>3</sub>** \= 34,000
+- Proporción de Staking **R<sub>1</sub>** \= 4,250
+- Proporción de Staking **R<sub>2</sub>** \= 12,750
+- Proporción de Staking **R<sub>3</sub>** \= 34,000
 - Cantidad de BTC en staking \= 10 BTC
 
 Los **Umbrales de CORE en Staking** con las variables mencionadas anteriormente son:
