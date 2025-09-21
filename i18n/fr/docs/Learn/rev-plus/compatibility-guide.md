@@ -29,23 +29,23 @@ Rev+ introduit une surcharge de gaz supplémentaire non gérée automatiquement 
 forge script script/MyScript.s.sol --rpc-url <URL> --gas-estimate-multiplier 500 --broadcast --legacy
 ```
 
-#### Thoroughly Test with Multiple Gas Values
+#### Testez minutieusement avec plusieurs valeurs de gaz pour garantir la compatibilité et la fiabilité
 
-Because gas usage can vary due to runtime execution paths and Rev+ logic, it’s essential to:
+Parce que la consommation de gaz peut varier en raison des chemins d'exécution à l'exécution et de la logique Rev+, il est essentiel de:
 
-- Start with a higher gas multiplier (e.g., 500\)
-- Test progressively lower values to determine the optimal multiplier
-- Ensure robustness against out-of-gas failures
+- Démarrez avec un multiplicateur de gaz plus élevé (e.g., 500\)
+- Testez des valeurs progressivement plus basses pour déterminer le multiplicateur optimal
+- Assurez-vous de la robustesse contre les échecs
 
 ## Hardhat
 
-**Hardhat** is a widely used framework for developing EVM-based smart contracts. It supports interaction with Rev+ enabled contracts but requires manual configuration for gas.
+**Hardhat** est un framework largement utilisé pour développer des contrats intelligents EVM. Il prend en charge l'interaction avec les contrats activés pour Rev+ mais nécessite une configuration manuelle pour le gaz.
 
-#### Manual Gas Estimation
+#### L'estimation manuelle du gaz
 
-For Rev+ enabled contracts, `eth_estimateGas` provides a reliable gas estimate that includes the additional logic. No multiplier is required; just pass the estimated value as `gasLimit`.
+Pour les contrats activés pour Rev+,`eth_estimateGas` fournit une estimation fiable du gaz qui prend en compte la logique supplémentaire. Pas besoin de multiplicateur, il suffit de passer la valeur estimée en tant que `gasLimit`.
 
-**Example:**
+**Exemple:**
 
 ```javascript
 const estimatedGas = await contract.estimateGas.myMethod(...args);
@@ -55,9 +55,9 @@ await contract.myMethod(...args, {
 });
 ```
 
-## Frontend Integration with Rev+ Enabled Contracts
+## L'intégration frontend avec des contrats activés pour Rev+
 
-When integrating Rev+ enabled contracts into frontend applications (e.g., using **ethers.js**, **wagmi**, or **web3.js**), similar practices to those of Hardhat must be followed to ensure reliable transaction execution.
+Lors de l'intégration de contrats activés pour Rev+ dans des applications frontend (e.g., using **ethers.js**, **wagmi**, or **web3.js**), des pratiques similaires à celles de Hardhat doivent être suivies pour garantir une exécution fiable des transactions.
 
 ### Best Practices
 
