@@ -110,36 +110,36 @@ Le protocole Rev+ fonctionne comme une couche décentralisée de distribution de
 - Chaque configuration inclut:
   - Une adresse de contrat intelligent cible
   - Un ou plusieurs événements déclencheurs ou fonctions
-  - Gas amounts associated with each trigger
-  - A list of reward recipients with percentage splits (must total 100%)
+  - Montants de gaz associés à chaque déclencheur
+  - Une liste de bénéficiaires de récompenses avec des répartitions en pourcentage (doit totaliser 100 %)
 
-### 2. Pre-Transaction Gas Estimation
+### 2. Estimation de gaz avant transaction
 
-- When a user or dApp calls `eth_estimateGas`:
-  - Core checks for applicable Rev+ configurations.
-  - If a match is found, the returned gas estimate includes the additional Rev+ gas for configured event triggers.
-  - This enables transparent, upfront gas cost awareness for users.
+- Lorsque l'utilisateur ou une dApp appelle `eth_estimateGas`:
+  - Le noyau vérifie les configurations Rev+ applicables.
+  - Si une correspondance est trouvée, l'estimation de gaz renvoyée inclut le gaz Rev+ supplémentaire pour les déclencheurs d'événements configurés.
+  - Cela permet aux utilisateurs d'avoir une visibilité transparente et immédiate sur les coûts de gaz.
 
-### 3. Transaction Execution (EVM Layer)
+### 3. Exécution de transaction (couche EVM)
 
-- As usual, the transaction is submitted and executed by Core’s EVM layer.
-- The contract’s logic runs without interference or instrumentation by Rev+.
-- During this phase, events may be emitted by the contract, and internal transactions may occur.
-- Rev+ logic is **not invoked** during EVM execution to maintain full compatibility with existing EVM behavior.
+- Comme d'habitude, la transaction est soumise et exécutée par la couche EVM de Core.
+- La logique du contrat s'exécute sans interférence ni instrumentation par Rev+.
+- Au cours de cette phase, des événements peuvent être émis par le contrat et des transactions internes peuvent se produire.
+- La logique Rev+ n'est **pas invoquée** pendant l'exécution EVM pour maintenir une compatibilité totale avec le comportement EVM existant.
 
-### 4. Post-Execution Event Trigger Detection
+### 4. Détection de déclenchement d'événement post-exécution
 
-- After the EVM execution completes:
-  - Rev+ inspects the transaction’s event logs (including those from internal calls).
-  - It compares emitted event/function signatures against the on-chain configuration stored in `Configuration.sol`.
-  - If matches are found, the corresponding gas value is recorded for distribution.
+- Une fois l'exécution EVM terminée:
+  - Rev+ inspecte les journaux d'événements de la transaction (y compris ceux provenant d'appels internes).
+  - Il compare les signatures d'événements/fonctions émises à la configuration en chaîne stockée dans `Configuration.sol`.
+  - Si des correspondances sont trouvées, la valeur de gaz correspondante est enregistrée pour distribution.
 
-### 5. Reward Calculation
+### 5. Calcul de récompense
 
-- For each matched event or function:
-  - The configured gas value is multiplied by the transaction’s **effective gas price** (tip cap or `gasPrice`).
-  - This produces the total **fee reward pool** for the event.
-  - The pool is split proportionally across recipients as per their basis point percentages (e.g., 7000 \= 70%).
+- Pour chaque événement ou fonction correspondante:
+  - La valeur de gaz configurée est multipliée par le prix de **gaz effectif** (tip cap or `gasPrice`) de la transaction.
+  - Cela produit le pool de **récompenses de frais** total pour l'événement.
+  - Le pool est divisé proportionnellement entre les destinataires selon leurs pourcentages en points de base (e.g., 7000 \= 70%).
 
 ```javascript
 effectiveTip := msg.GasPrice
@@ -149,26 +149,26 @@ if rules.IsLondon {
     rewardAmount.Mul(rewardAmount, effectiveTipU256)  // 10000 * effectiveTip (gasPrice)
 ```
 
-### 6. Fee Distribution\*\*
+### 6. Distribution des frais\*\*
 
-- The total distributed reward:
-  - Is added back to the block’s gas pool.
-  - Is **not counted** in the `block.gasUsed` field.
-- Gas rewards are transferred directly to the configured reward addresses (e.g., DAOs, developers, multisigs, etc).
-- Any unused transaction gas is refunded to the sender per standard EVM behavior.
+- La récompense totale distribuée:
+  - Est ajoutée au pool de gaz du bloc.
+  - N'est **pas comptée** dans le champ `block.gasUsed`.
+- Les récompenses de gaz sont transférées directement aux adresses de récompense configurées (par exemple, DAO, développeurs, multisignatures, etc.).
+- Tout gaz de transaction inutilisé est remboursé à l'expéditeur conformément au comportement standard de l'EVM.
 
-### . Accounting and Compliance
+### . Comptabilité et conformité
 
-- Core enforces the standard **50M gas block limit**, even with Rev+ active.
-- While `block.gasUsed` may show 50M, the actual sum of all transaction gas usage (including Rev+ distribution gas) may exceed it.
-- This separation allows Rev+ to scale incentive mechanisms while preserving throughput and compatibility with existing clients and tooling.
-- All distributions are visible on-chain, and upcoming tools will allow dashboard-based tracking of Rev+ earnings.
+- Core applique la **limite de gaz de bloc de 50M** standard, même avec Rev+ actif.
+- Bien que `block.gasUsed` puisse afficher 50M, la somme réelle de l'utilisation de gaz de toutes les transactions (y compris le gaz de distribution Rev+) peut la dépasser.
+- Cette séparation permet à Rev+ de faire évoluer les mécanismes d'incitation tout en préservant le débit et la compatibilité avec les clients et outils existants.
+- Toutes les distributions sont visibles en chaîne, et les prochains outils permettront un suivi des gains Rev+ basé sur un tableau de bord.
 
-This mechanism ensures that the Rev+ protocol operates as a **transparent, auditable, and composable fee-sharing layer**, encouraging long-term ecosystem participation and sustainable protocol development without sacrificing performance, security, or compatibility.
+Ce mécanisme garantit que le protocole Rev+ fonctionne comme **une couche de partage de frais transparente, auditable et composable**, encourageant la participation à long terme de l'écosystème et le développement durable de protocoles sans sacrifier les performances, la sécurité ou la compatibilité.
 
-## **Transaction Processing Flow**
+## **Flux de traitement des transactions**
 
-### 1. Pre-Transaction Phase
+### 1. Phase pré-transactionnelle
 
 ```bash
 User calls eth_estimateGas
@@ -178,7 +178,7 @@ User calls eth_estimateGas
 └── Returns total gas estimate to user
 ```
 
-### 2. Transaction Execution Phase
+### 2. Phase d'exécution de la transaction
 
 ```bash
 Transaction submitted to Core
@@ -189,7 +189,7 @@ Transaction submitted to Core
 └── Calculates required gas distributions
 ```
 
-### 3. Post-Execution Distribution
+### 3. Distribution post-exécution
 
 ```bash
 After EVM execution completes
@@ -289,19 +289,19 @@ Le modèle de partage de revenus Rev+ permet à Core DAO, l'organe directeur de 
 
 ### Contrôle d'accès
 
-- **Core DAO Approval**: All configuration changes require Core DAO’s approval of the proposal
-- **No Admin Keys**: No backdoors or emergency access mechanisms
-- **Immutable Logic**: Core’s Rev+ logic cannot be modified without a hardfork
+- **Approbation du Core DAO**: Toutes les modifications de configuration nécessitent l'approbation du Core DAO pour la proposition
+- **Aucune clé d'administrateur**: Pas de portes dérobées ni de mécanismes d'accès d'urgence
+- **Logique immuable**: La logique Rev+ de Core ne peut pas être modifiée sans un hardfork
 
-### Economic Security
+### Sécurité économique
 
-- **Bounded Distribution**: Maximum gas limits prevent excessive fee drainage
-- **Percentage Validation**: All distributions must sum to exactly 100%
-- **Block Limit Preservation**: Total block processing capacity remains unchanged
+- **Distribution bornée**: Les limites de gaz maximales empêchent un drainage excessif des frais
+- **Validation par pourcentage**: Toutes les distributions doivent totaliser exactement 100 %
+- **Préservation de la limite de bloc**: La capacité totale de traitement des blocs reste inchangée
 
-### Event Matching Security
+### Sécurité de correspondance d'événements
 
-- **Exact Signature Matching**: Uses cryptographic event signature hashes
+- **Correspondance de signature exacte**: Utilise des hachages de signature d'événement cryptographiques
 - **Log Verification**: Only processes verified transaction logs
 - **Contract Address Binding**: Configurations tied to specific contract addresses
 
