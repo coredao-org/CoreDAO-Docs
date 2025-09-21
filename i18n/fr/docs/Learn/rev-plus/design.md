@@ -231,63 +231,63 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 - **Limite de gaz par bloc**: Maintient une limite de gaz de 50 millions
 - **Gaz distribué**: Non compté dans `block.gasUsed`
 - **Gaz de transaction**: L'`tx.gasUsed` individuel inclut le gaz Rev+
-- **Net Effect**: Block can accommodate same transaction count as before Rev+
+- **Effet net**: Le bloc peut accueillir le même nombre de transactions qu'avant Rev+
 
-### **Example Scenario**
+### **Scénario d'exemple**
 
 ```math
-Block Gas Limit: 50,000,000
-Block Gas Used: 50,000,000 (reported)
-Actual Transaction Gas Sum: 150,000,000 (includes 100M distributed)
+Limite de gaz par bloc: 50 000 000
+Gaz utilisé par bloc: 50 000 000 (rapporté)
+Somme réelle du gaz des transactions: 150 000 000 (dont 100 000 000 distribués)
 ```
 
-## Configuration Lifecycle
+## Cycle de vie de la configuration
 
-The Rev+ revenue sharing model allows Core DAO, the governing body of the Core blockchain, to manage fee distribution settings through a set of governance-controlled configuration operations. All modifications to Rev+ configurations must be proposed and approved via Core's on-chain governance process. These changes are enforced on-chain via the `Configuration.sol` contract.
+Le modèle de partage de revenus Rev+ permet à Core DAO, l'organe directeur de la blockchain Core, de gérer les paramètres de distribution des frais via un ensemble d'opérations de configuration contrôlées par la gouvernance. Toutes les modifications apportées aux configurations Rev+ doivent être proposées et approuvées via le processus de gouvernance en chaîne de Core. Les modifications sont appliquées sur la chaîne via le contrat `Configuration.sol`.
 
-### Supported Operations
+### Opérations prises en charge
 
-- **`addConfig`:** Registers a new configuration for a target contract. The configuration must specify one or more events and/or functions, along with their associated gas values and reward distributions.
+- **`addConfig`:** Enregistrement d'une nouvelle configuration. La configuration doit spécifier un ou plusieurs événements et/ou fonctions, ainsi que leurs valeurs de gaz et distributions de récompenses associées.
 
-- **`updateConfig`:** Modifies the event and function definitions for an existing contract configuration. This allows changes to gas allocations, reward percentages, or trigger conditions without removing the entire configuration.
+- **`updateConfig`:** Modifie les définitions d'événements et de fonctions pour une configuration de contrat existante. Cela permet de modifier les allocations de gaz, les pourcentages de récompense ou les conditions de déclenchement sans supprimer la configuration entière.
 
-- **`removeConfig`:** Permanently deletes an existing configuration and its associated rules for a specific contract. Once removed, no further Rev+ rewards will be distributed for that contract unless re-added through a new governance proposal.
+- **`removeConfig`:** Supprime définitivement une configuration existante et ses règles associées pour un contrat spécifique. Une fois supprimée, aucune récompense Rev+ ne sera distribuée pour ce contrat, sauf si elle est ajoutée à nouveau via une nouvelle proposition de gouvernance.
 
-- **`setConfigStatus`:** Toggles the active status of a configuration. This allows governance to temporarily disable or re-enable a configuration without removing it entirely.
+- **`setConfigStatus`:** Active ou désactive le statut d'une configuration. Cela permet à la gouvernance de désactiver ou de réactiver temporairement une configuration sans la supprimer entièrement.
 
-### Governance Requirements
+### Exigences de gouvernance
 
-- Only the Core DAO can perform these operations.
+- Seul le Core DAO peut effectuer ces opérations.
 
-- All changes require submission through the Core governance proposal process.
+- Toutes les modifications nécessitent une soumission via le processus de proposition de gouvernance du Core.
 
-- Approved changes are applied immediately on the next transaction following confirmation.
+- Les modifications approuvées sont appliquées immédiatement lors de la transaction suivante après confirmation.
 
-- There are no admin overrides or emergency keys.
+- Il n'y a pas de dérogations administratives ni de clés d'urgence.
 
-#### Validation Rules
+#### Règles de validation
 
-##### Configuration Constraints
+##### Contraintes de configuration
 
-- Maximum 5 reward recipients per event/function
-- Maximum 5 events per contract configuration
-- Maximum 5 functions per contract configuration
-- Maximum 1,000,000 gas per event/function
-- Reward percentages must sum to exactly 10,000 (100%)
-- No duplicate contract addresses
-- At least one event or function is required
-- All addresses must be valid (non-zero)
+- Maximum 5 destinataires de récompenses par événement/fonction
+- Maximum 5 événements par configuration de contrat
+- Maximum 5 fonctions par configuration de contrat
+- Maximum 1 000 000 de gaz par événement/fonction
+- Les pourcentages de récompense doivent totaliser exactement 10 000 (100 %)
+- Pas d'adresses de contrat en double
+- Au moins un événement ou une fonction est requis
+- Toutes les adresses doivent être valides (non-nulles)
 
-##### Governance Controls
+##### Contrôles de gouvernance
 
-- All modifications to the configurations can only be made by the Core DAO
-- All changes require submission through governance proposals and approval
-- Changes take effect on the next transaction after approval and implementation of the new modifications
-- No emergency or admin override mechanisms
+- Toutes les modifications apportées aux configurations ne peuvent être effectuées que par le Core DAO
+- Toutes les modifications nécessitent une soumission via des propositions de gouvernance et une approbation
+- Les modifications prennent effet lors de la prochaine transaction après approbation et mise en œuvre des nouvelles modifications
+- Aucun mécanisme d'urgence ou de dérogation administrative
 
-## Security Model
+## Modèle de sécurité
 
-### Access Control
+### Contrôle d'accès
 
 - **Core DAO Approval**: All configuration changes require Core DAO’s approval of the proposal
 - **No Admin Keys**: No backdoors or emergency access mechanisms
