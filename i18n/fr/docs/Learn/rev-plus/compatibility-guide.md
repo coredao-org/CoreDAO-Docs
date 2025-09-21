@@ -59,13 +59,13 @@ await contract.myMethod(...args, {
 
 Lors de l'intégration de contrats activés pour Rev+ dans des applications frontend (e.g., using **ethers.js**, **wagmi**, or **web3.js**), des pratiques similaires à celles de Hardhat doivent être suivies pour garantir une exécution fiable des transactions.
 
-### Best Practices
+### Meilleures pratiques
 
-- **Gas Estimation**: Use the  `.estimateGas.method()` to estimate gas usage.
-- **No Multiplier Needed**: Use the estimated value directly.
-- **Error Handling**: Implement fallbacks for `out-of-gas errors` to enhance the user experience.
+- **Estimation du gaz**: Utilisez `.estimateGas.method()` pour estimer l'utilisation du gaz.
+- **Aucun multiplicateur nécessaire**: Utilisez directement la valeur estimée.
+- **Gestion des erreurs**: Implémentez des solutions de secours pour les erreurs de `out-of-gas errors` afin d'améliorer l'expérience utilisateur.
 
-**Example (ethers.js):**
+**Exemple (ethers.js):**
 
 ```javascript
 const estimatedGas = await contract.estimateGas.myMethod(...args);
@@ -78,9 +78,9 @@ const tx = await contract.myMethod(...args, {
 
 ## Conclusion
 
-When interacting with Rev+ enabled contracts:
+Lors de l'interaction avec des contrats activés pour Rev+ :
 
-- **Adjust gas estimates in Foundry using the `--gas-estimate-multiplier`** flag.
-- **Use legacy transaction formatting** in Foundry
-- **Manually estimate the gas** and pass the estimated value explicitly when interacting through the **frontend** or **Hardhat**
-- **Test extensively** under different runtime conditions to ensure robustness.
+- **Ajustez les estimations de gaz dans Foundry en utilisant l'option --`--gas-estimate-multiplier`**.
+- **Utilisez le formatage de transaction hérité** dans Foundry
+- **Estimez manuellement le gaz** et passez la valeur estimée explicitement lors de l'interaction via le **frontend** ou **Hardhat**
+- **Testez de manière approfondie** sous différentes conditions d'exécution pour garantir la robustesse.
