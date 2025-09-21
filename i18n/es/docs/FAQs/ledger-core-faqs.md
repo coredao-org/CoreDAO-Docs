@@ -241,5 +241,4 @@ Este error suele ocurrir al intentar redimir BTC después de que termina el per�
 
 ### 11. ¿Podemos usar otra wallet distinta de Xverse para configurar una dirección de Bitcoin en dispositivos Ledger para hacer staking de Bitcoin en Core?
 
-Actualmente, solo las direcciones de Bitcoin generadas a través de Ledger Live y Xverse Wallet han sido probadas y verificadas para garantizar compatibilidad. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to
-proceed with untested wallets should do so at their own risk.
+Actualmente, solo las direcciones de Bitcoin generadas a través de Ledger Live y Xverse Wallet han sido probadas y verificadas para garantizar compatibilidad. Las direcciones creadas con otras wallets aún no han sido testeadas, y por lo tanto no se puede garantizar su funcionamiento. Los usuarios que decidan proceder con wallets no probadas deben hacerlo bajo su propio riesgo.
