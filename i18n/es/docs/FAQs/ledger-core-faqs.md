@@ -1,24 +1,24 @@
 ---
-sidebar_label: Hardware Wallet Integration FAQs
+sidebar_label: FAQs de Integración de Hardware Wallet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Hardware Wallet Integration on Core FAQs
+# FAQs de Integración de Hardware Wallet en Core
 
 ---
 
-### 1. Why does my Ledger wallet keep creating new addresses?
+### 1. ¿Por qué mi Ledger wallet sigue creando nuevas direcciones?
 
-Ledger devices automatically generate a new address each time you connect them. This behavior can cause redemption transactions to fail because the redemption process requires the original staking address that was used to initiate the BTC staking transaction. Therefore, it is recommended always to record the Bitcoin address you used for staking.
+Los dispositivos Ledger generan automáticamente una nueva dirección cada vez que los conectas. Este comportamiento puede ocasionar que las transacciones de redención fallen, ya que el proceso de redención requiere la dirección de staking original que fue utilizada para iniciar la transacción de BTC staking. Por lo tanto, se recomienda siempre registrar la dirección de Bitcoin que utilizaste para el staking.
 
-### 2. How can I find my original staking address?
+### 2. ¿Cómo puedo encontrar mi dirección de staking original?
 
-There are multiple ways to locate your original Bitcoin staking address.
+Existen múltiples formas de localizar tu dirección original de Bitcoin staking.
 
-1. Navigate to your BTC staking records on the [My Staking](https://stake.coredao.org/my-staking#btc) dashboard on the [Core Staking Website](https://stake.coredao.org/staking).
+1. Navega a tus registros de BTC staking en el panel [My Staking](https://stake.coredao.org/my-staking#btc) en el [sitio web de Core Staking](https://stake.coredao.org/staking).
 
-2. Copy the Bitcoin Staking Transaction hash. Clicking on it will navigate the user to transaction details on the [Mempool.Space Bitcoin Explorer](https://mempool.space/).
+2. Copia el hash de la transacción de Bitcoin Staking. Clicking on it will navigate the user to transaction details on the [Mempool.Space Bitcoin Explorer](https://mempool.space/).
 
 <p align="center" style={{zoom:"40%"}}>
 ![copt-tx-hash](../../static/img/ledger-core/staking-tx-copy.png)
