@@ -1,29 +1,29 @@
 ---
-sidebar_label: Overview
-description: Overview of Core Rev+ Revenue Sharing Model
+sidebar_label: Aperçu
+description: Aperçu du modèle de partage des revenus Core Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Rev+ Revenue Sharing Model
+# Modèle de partage des revenus Core Rev+
 
 ---
 
 ## Introduction
 
-Rev+ is Core's protocol-level mechanism that enables fee sharing by distributing a portion of transaction gas fees to various stakeholders, including stablecoin issuers, dApp developers, and DAOs. This innovative feature creates new economic models by allowing different stakeholders to receive a share of transaction gas fees, directly aligning incentives with network growth and activity.
+Rev+ est un mécanisme de niveau protocole de Core qui permet le partage des frais en distribuant une partie des frais de gaz de transaction à diverses parties prenantes, notamment les émetteurs de stablecoins, les développeurs de dApps et les DAO. Cette fonctionnalité innovante crée de nouveaux modèles économiques en permettant à différentes parties prenantes de recevoir une part des frais de gaz de transaction, alignant directement les incitations avec la croissance et l'activité du réseau.
 
-## What is Rev+?
+## Qu'est-ce que Rev+ ?
 
-Core's Revenue Sharing Model, Rev+, is a generic framework built into the Core blockchain that distributes a portion of transaction gas fees to configured reward addresses when specific smart contract events are triggered. This system enables sustainable revenue streams for ecosystem participants, especially stablecoin issuers and developers, beyond traditional treasury yields or token-based incentives.
+Le modèle de partage des revenus de Core, Rev+, est un cadre générique intégré à la blockchain Core qui distribue une partie des frais de gaz de transaction à des adresses de récompense configurées lorsque des événements spécifiques de contrat intelligent sont déclenchés. Ce système permet des flux de revenus durables pour les participants de l'écosystème, en particulier les émetteurs de stablecoins et les développeurs, au-delà des rendements traditionnels du Trésor ou des incitations basées sur les jetons.
 
-## Revenue Sharing Mechanism
+## Mécanisme de partage des revenus
 
-Core's revenue sharing model, Rev+, supports two complementary mechanisms:
+Le modèle de partage des revenus de Core, Rev+, prend en charge deux mécanismes complémentaires:
 
-1. **Direct Distribution:** A portion of the transaction gas fees is automatically distributed to designated recipients (e.g., developers, DAOs, stablecoin issuers) with the transaction execution. This real-time mechanism ensures that value is immediately shared with contributors based on smart contract activity.
+1. **Distribution directe**: Une partie des frais de gaz de transaction est automatiquement distribuée aux destinataires désignés (par exemple, les développeurs, les DAO, les émetteurs de stablecoins) lors de l'exécution de la transaction. Ce mécanisme en temps réel garantit que la valeur est immédiatement partagée avec les contributeurs en fonction de l'activité du contrat intelligent.
 
-2. **Rev+ Pool Sharing:** A portion of gas fees is accumulated into a shared reward pool. At regular intervals (e.g., monthly), the fees from the pool are distributed among participating partners based on their relative contributions to network growth and usage. Contributions are assessed across four key metrics:
+2. **Partage du pool Rev+:** Une partie des frais de gaz est accumulée dans un pool de récompenses partagées. At regular intervals (e.g., monthly), the fees from the pool are distributed among participating partners based on their relative contributions to network growth and usage. Contributions are assessed across four key metrics:
 
    - Total number of transactions
    - Aggregate transaction notional value
