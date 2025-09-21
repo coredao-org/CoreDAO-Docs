@@ -1,29 +1,29 @@
 ---
-sidebar_label: Rev+ Compatibility Guide
-description: Compatibility Guide for Rev+
+sidebar_label: Guide de compatibilité Rev+
+description: Guide de compatibilité pour Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Rev+ Enabled Contracts: Compatibility Guide
+# Contrats activés par Rev+ : Guide de compatibilité
 
 ---
 
-This guide outlines best practices and configuration steps to ensure compatibility between popular Ethereum development frameworks, including Foundry and Hardhat, as well as frontend libraries like **`ethers.js`**, when interacting with Rev+ enabled contracts.
+Ce guide décrit les meilleures pratiques et les étapes de configuration pour assurer la compatibilité entre les frameworks de développement Ethereum populaires, notamment Foundry et Hardhat, ainsi que les bibliothèques frontend comme **`ethers.js`**, lors de l'interaction avec les contrats activés par Rev+.
 
 ## Foundry
 
-**Foundry** is a high-performance toolkit for EVM development, featuring tools such as Forge for scripting and testing smart contracts. When working with Rev+ enabled contracts, gas usage may be slightly higher because the contract includes revenue allocation logic for Rev+ participants.
+**Foundry** est une boîte à outils haute performance pour le développement EVM, dotée d'outils tels que Forge pour la création de scripts et le test de contrats intelligents. Lorsque vous travaillez avec des contrats activés par Rev+, la consommation de gaz peut être légèrement plus élevée en raison de l'inclusion de la logique d'allocation de revenus pour les participants Rev+.
 
-#### Adjust Gas Estimates with `--gas-estimate-multiplier`
+#### Ajustez les estimations de gaz avec `--gas-estimate-multiplier`
 
-Rev+ introduces additional gas overhead not automatically handled by Foundry’s default gas estimation logic.
+Rev+ introduit une surcharge de gaz supplémentaire non gérée automatiquement par la logique d'estimation de gaz par défaut de Foundry.
 
-- Use the `--gas-estimate-multiplier` flag to increase the estimated gas.
-- **Recommended Range**: `200–500`, depending on the complexity of the contract and the nature of the Rev+ integration.
-- Use the `--legacy` flag with Foundry for better compatibility.
+- Utilisez l'indicateur `--gas-estimate-multiplier` pour augmenter le gaz estimé.
+- **Plage recommandée**: `200–500`, selon la complexité du contrat et la nature de l'intégration Rev+.
+- Utilisez l'indicateur `--legacy` avec Foundry pour une meilleure compatibilité.
 
-**Example:**
+**Exemple:**
 
 ```shell
 forge script script/MyScript.s.sol --rpc-url <URL> --gas-estimate-multiplier 500 --broadcast --legacy
