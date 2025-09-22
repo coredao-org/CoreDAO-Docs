@@ -341,6 +341,10 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 > ⚠️ **Notez:** pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 Félicitations ! Vous avez réussi à miser des Bitcoins en utilisant votre portefeuille matériel Ledger sur le réseau de test Core via le staking Bitcoin auto-géré de Core. En suivant ce guide, vous avez connecté votre appareil Ledger en toute sécurité, installé et utilisé l'application Ledger Core Testnet, et réalisé vos transactions de staking BTC avec confiance. Vous faites désormais partie de l'écosystème Core où sécurité, contrôle et rendement vont de pair!
