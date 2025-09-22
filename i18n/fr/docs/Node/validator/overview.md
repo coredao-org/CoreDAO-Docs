@@ -20,8 +20,8 @@ Les ensembles de validateurs sont alternés périodiquement, et les élections d
 
 Les validateurs reçoivent des récompenses en jetons CORE pour participer au mécanisme de consensus de Core et produire des blocs. Les récompenses sont distribuées à la fin de chaque tour (environ toutes les 24 heures) et proviennent de deux sources principales :
 
- - **Base rewards:** Nouveaux jetons CORE nouvellement frappés.
- - **Transaction fees:** Frais collectés à partir des transactions incluses dans chaque bloc pendant le tour(round).
+- **Base rewards:** Nouveaux jetons CORE nouvellement frappés.
+- **Transaction fees:** Frais collectés à partir des transactions incluses dans chaque bloc pendant le tour(round).
 
 Chaque validateur peut fixer son propre taux de commission(**commission rate**), la part des récompenses qu'il conserve avant de distribuer le reste à ses délégateurs. Les frais de commission sont distribués directement à l'adresse de frais spécifiée par le validateur à la fin de chaque tour(round).
 
