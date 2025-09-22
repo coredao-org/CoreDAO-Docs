@@ -180,6 +180,10 @@ Vous pouvez également utiliser le portefeuille Xverse pour racheter des BTC dir
 
 5. Après confirmation du bloc Bitcoin de la transaction de récupération, vérifiez que les BTC récupérés sont retournés à votre adresse Bitcoin de réception. (Cela peut prendre quelques minutes). Vous pouvez également consulter les détails de la transaction sur l'explorateur de blockchain BTC (BTC Explorer).
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 En suivant ce guide, vous avez réussi à récupérer des BTC mis en jeu sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de staking BTC auto-custodial de Core et de la sécurité de pointe de Ledger, renforcée par la signature claire via l'application Ledger Core Testnet, offre une transparence, une confiance et une sécurité maximales. Votre récupération réussie marque une interaction sécurisée et transparente avec l'infrastructure décentralisée de Core. Vous avez désormais la pleine propriété de vos BTC récupérés.
