@@ -34,15 +34,15 @@ A continuación se presentan algunos puntos clave que los usuarios deben tener e
 2. **Mínimo de 1 CORE \+ Tarifa de gas:** Para hacer staking, debes tener al menos 1 CORE. Además del monto en staking, los usuarios deben considerar las tarifas de gas en tokens CORE necesarias para procesar las transacciones.
 
 3. **Comprender las diferencias en las Direcciones de Staking de Bitcoin:**
-  - La dirección de staking que aparece en la solicitud de transacción de tu cartera de Bitcoin puede diferir de tu dirección original de Bitcoin. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de tu cartera de Bitcoin, lo cual garantiza el control y la seguridad sobre tus activos. Tu Bitcoin permanece seguro en la dirección de staking, sin verse afectado por el proceso de staking.
+   - La dirección de staking que aparece en la solicitud de transacción de tu cartera de Bitcoin puede diferir de tu dirección original de Bitcoin. Esto se debe a que la dirección de staking de Bitcoin se deriva de la clave privada maestra de tu cartera de Bitcoin, lo cual garantiza el control y la seguridad sobre tus activos. Tu Bitcoin permanece seguro en la dirección de staking, sin verse afectado por el proceso de staking.
 
 4. **Retrasos en la Visualización de Activos Bloqueados en tu Wallet de Bitcoin:**
-  - Es posible que experimentes algunos retrasos antes de que tu Bitcoin bloqueado se muestre en tus wallets de Bitcoin. Este retraso se debe principalmente a demoras en la confirmación de transacciones en la red de Bitcoin, que pueden tardar varias horas debido al tiempo de bloque, el número de confirmaciones necesarias, y la congestión de la red.
-  - Si bien estamos trabajando activamente con nuestros socios de wallets para que tus activos se muestren a tiempo en tus wallets, puedes consultar tus activos bloqueados en la página **MyStaking** del sitio web de staking de Core.
-  - También puedes ver tus fondos en staking buscando la dirección de staking en un explorador de Bitcoin, como [Mempool.space](https://mempool.space/).
+   - Es posible que experimentes algunos retrasos antes de que tu Bitcoin bloqueado se muestre en tus wallets de Bitcoin. Este retraso se debe principalmente a demoras en la confirmación de transacciones en la red de Bitcoin, que pueden tardar varias horas debido al tiempo de bloque, el número de confirmaciones necesarias, y la congestión de la red.
+   - Si bien estamos trabajando activamente con nuestros socios de wallets para que tus activos se muestren a tiempo en tus wallets, puedes consultar tus activos bloqueados en la página **MyStaking** del sitio web de staking de Core.
+   - También puedes ver tus fondos en staking buscando la dirección de staking en un explorador de Bitcoin, como [Mempool.space](https://mempool.space/).
 
 5. **Consideraciones sobre los Períodos de Bloqueo**
-  - Una vez que bloqueas tu Bitcoin para staking, este queda inaccesible hasta que finalice el período de staking. Teniendo en cuenta tus objetivos de inversión y tolerancia al riesgo, se recomienda elegir el período de bloqueo con cuidado. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a duraciones más largas.
+   - Una vez que bloqueas tu Bitcoin para staking, este queda inaccesible hasta que finalice el período de staking. Teniendo en cuenta tus objetivos de inversión y tolerancia al riesgo, se recomienda elegir el período de bloqueo con cuidado. Comenzar con períodos de bloqueo más cortos puede ayudarte a familiarizarte con el proceso antes de comprometerte a duraciones más largas.
 
 ## Guía paso a paso para Dual Staking
 
