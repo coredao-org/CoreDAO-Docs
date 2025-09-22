@@ -13,7 +13,7 @@ sidebar_position: 2
 
 Rev+ is implemented as a protocol-level feature integrated directly into the Core blockchain's transaction processing pipeline. The Rev+ model comprises two primary components: an on-chain `configuration` contract and `core chain modifications` that handle the fee distribution logic.
 
-## **Core Components**
+## Core Components
 
 ### 1. Configuration Contract (`Configuration.sol`)
 
@@ -47,7 +47,7 @@ Rev+ core chain logic is implemented directly in the Core blockchain's transacti
 - **Configuration Sync:** Reads the latest configuration from `Configuration.sol`. Governance updates are reflected immediately in the next processed transaction.
 - **Struct Compatibility:** Uses Go-language versions of the same structs as in Solidity, ensuring consistency across layers.
 
-#### **Gas Accounting**
+#### Gas Accounting
 
 Rev+ introduces a distinct gas accounting mechanism that preserves Core’s standard 50M gas per block limit while supporting additional gas-based reward distributions.
 
@@ -58,7 +58,9 @@ Rev+ introduces a distinct gas accounting mechanism that preserves Core’s stan
 ##### Example
 
 - `block.gasUsed`: 50,000,000 (reported)
+
 - Sum of all `tx.gasUsed`: 150,000,000 (includes 100M for Rev+ rewards)
+
 - Net effect: The block’s throughput remains stable, while distributed gas is transparently handled post-EVM.
 
 This accounting model ensures that Rev+ can scale with network usage without disrupting validator block production or degrading network performance.
@@ -149,7 +151,7 @@ if rules.IsLondon {
     rewardAmount.Mul(rewardAmount, effectiveTipU256)  // 10000 * effectiveTip (gasPrice)
 ```
 
-### 6. Fee Distribution\*\*
+### 6. Fee Distribution
 
 - The total distributed reward:
   - Is added back to the block’s gas pool.
@@ -157,7 +159,7 @@ if rules.IsLondon {
 - Gas rewards are transferred directly to the configured reward addresses (e.g., DAOs, developers, multisigs, etc).
 - Any unused transaction gas is refunded to the sender per standard EVM behavior.
 
-### . Accounting and Compliance
+### 7. Accounting and Compliance
 
 - Core enforces the standard **50M gas block limit**, even with Rev+ active.
 - While `block.gasUsed` may show 50M, the actual sum of all transaction gas usage (including Rev+ distribution gas) may exceed it.
@@ -233,13 +235,11 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 - **Transaction Gas**: Individual `tx.gasUsed` includes Rev+ gas
 - **Net Effect**: Block can accommodate same transaction count as before Rev+
 
-### **Example Scenario**
+### Example Scenario
 
-```math
 Block Gas Limit: 50,000,000
 Block Gas Used: 50,000,000 (reported)
 Actual Transaction Gas Sum: 150,000,000 (includes 100M distributed)
-```
 
 ## Configuration Lifecycle
 
