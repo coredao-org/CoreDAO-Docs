@@ -19,15 +19,15 @@ La metodología para integrar el staking de Bitcoin se centra en el código [CLT
 ### Requisitos para la Validez de la Transacción {#requirements-for-transaction-validity}
 
 - Para crear una transacción de bloqueo temporal válida que los relayers de Core reconozcan, los usuarios deben:
-    - Crear una transacción de Bitcoin donde la salida se envíe a su propia dirección utilizando la función nativa de timelock CLTV de Bitcoin
-    - Especificar la cantidad de Bitcoin que desean bloquear temporalmente para la delegación a un validador de Core
-    - Incluir una salida `OP_RETURN` que contenga dos datos críticos:
-        - La dirección del validador de Core al que desean apoyar
-        - La dirección Core donde quieren recibir las recompensas en tokens CORE
+  - Crear una transacción de Bitcoin donde la salida se envíe a su propia dirección utilizando la función nativa de timelock CLTV de Bitcoin
+  - Especificar la cantidad de Bitcoin que desean bloquear temporalmente para la delegación a un validador de Core
+  - Incluir una salida `OP_RETURN` que contenga dos datos críticos:
+    - La dirección del validador de Core al que desean apoyar
+    - La dirección Core donde quieren recibir las recompensas en tokens CORE
 - Requisitos Mínimos:
-    - Cantidad: Al usar la [interfaz oficial de staking](https://stake.coredao.org/staking), se debe bloquear temporalmente un mínimo de 0.01 BTC (excluyendo las comisiones de transacción).
-    - Duración: El período mínimo de bloqueo temporal es de 24 horas, aunque la interfaz de staking de Core recomienda un mínimo de 5 días para una participación óptima
-    - Implementación técnica: No existen requisitos mínimos al crear transacciones de bloqueo temporal manualmente, aunque se recomiendan los mismos parámetros para una participación efectiva
+  - Cantidad: Al usar la [interfaz oficial de staking](https://stake.coredao.org/staking), se debe bloquear temporalmente un mínimo de 0.01 BTC (excluyendo las comisiones de transacción).
+  - Duración: El período mínimo de bloqueo temporal es de 24 horas, aunque la interfaz de staking de Core recomienda un mínimo de 5 días para una participación óptima
+  - Implementación técnica: No existen requisitos mínimos al crear transacciones de bloqueo temporal manualmente, aunque se recomiendan los mismos parámetros para una participación efectiva
 
 ### Flujo de Transacciones
 
@@ -69,11 +69,11 @@ El UTXO bloqueado (Bitcoins) puede ser gastado usando el script de canje una vez
 
 - La construcción de una salida de tipo `P2SH` es la siguiente
 
-    - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
+  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
 - La construcción de una salida de tipo `P2WSH` es la siguiente
 
-    - `OP_0 <SHA256(RedeemScript)>`
+  - `OP_0 <SHA256(RedeemScript)>`
 
 ### Script de Canje
 
@@ -127,8 +127,8 @@ Para hacer que todo el proceso sea más conveniente, Core introduce el rol de lo
 
 - Si el `RedeemScript` es corto, colócalo completo al final de la salida `OP_RETURN`. Por ejemplo, un `RedeemScript` se puede construir utilizando un public key hash, como se muestra en el ejemplo siguiente.
 - Configura la dirección receptora de la transacción de staking como tu propia dirección, para que los relayers puedan extraer información útil del input de la transacción y componer el `RedeemScript` por sí mismos. Ejemplo.
-    - Si es una dirección normal, la `pubkey` o `pubkey hash` debe configurarse como la clave pública correspondiente del input al construir el `RedeemScript`.
-    - Si se trata de una dirección de firmas múltiples, la clave pública de la dirección de firmas múltiples correspondiente se debe configurar al construir el `RedeemScript`.
+  - Si es una dirección normal, la `pubkey` o `pubkey hash` debe configurarse como la clave pública correspondiente del input al construir el `RedeemScript`.
+  - Si se trata de una dirección de firmas múltiples, la clave pública de la dirección de firmas múltiples correspondiente se debe configurar al construir el `RedeemScript`.
 
 ## Ejemplos de Transacción
 
