@@ -41,6 +41,7 @@ values={[
 ]}> <TabItem value="testnet2">
 Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
+    ```
     | Exigences   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
@@ -48,12 +49,14 @@ Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles
     | **RAM**            | 8 Gigabytes                                                                                             |
     | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
                                      |
+    ```
 
   </TabItem>
 
   <TabItem value="mainnet">
     Pour les nœuds d'archivage sur **Core Mainnet**, les spécifications matérielles minimales recommandées sont :
 
+    ```
     | Exigences   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Stockage**        | 1 To d'espace disque libre, disque SSD, gp3, 8 000 IOPS, débit de 250 Mo/s, latence de lecture <1 ms.
@@ -61,6 +64,7 @@ Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles
     | **RAM**            | 32 Gigabytes                                                                                             |
     | **Vitesse Internet** | Une connexion Internet haut débit avec des vitesses de téléversement/téléchargement de 5 Mbps.
                                      |
+    ```
 
   </TabItem>
 </Tabs>
@@ -84,7 +88,7 @@ values={[
     geth --datadir node init genesis.json
     ```
 
-  Vous devriez voir le message suivant :
+   Vous devriez voir le message suivant :
 
     ```bash
     INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -105,9 +109,9 @@ values={[
     geth --config ./config.toml --datadir ./node  --cache 8000
     ```
 
-  5\. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
+   5\. Pendant que notre nœud complet fonctionne, nous pouvons surveiller ses journaux pour nous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
 
-        </TabItem>
+    </TabItem>
 
  <TabItem value="mainnet">
 
@@ -121,7 +125,7 @@ values={[
     geth --datadir node init genesis.json
     ```
 
-  Vous devriez voir le message suivant :
+   Vous devriez voir le message suivant :
 
     ```bash
     INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -143,6 +147,6 @@ values={[
     ```
 
 5. Pendant que votre nœud d'archive fonctionne, vous pouvez surveiller ses journaux pour vous assurer que tout fonctionne correctement. Le fichier de journal se trouve par défaut à `./node/logs/core.log`, mais vous pouvez le changer vers un autre emplacement si nécessaire.
-        </TabItem>
+     </TabItem>
 
 </Tabs>
