@@ -20,15 +20,15 @@ Ce mécanisme exploite les capacités de script existantes de Bitcoin sans néce
 ### Exigences pour la Validité des Transactions {#requirements-for-transaction-validity}
 
 - Pour créer une transaction de verrouillage temporel valide que les relais Core reconnaîtront, les utilisateurs doivent :
-    - Créez une transaction Bitcoin où la sortie est envoyée à leur propre adresse en utilisant la fonctionnalité de verrouillage temporel CLTV native de Bitcoin.
-    - Spécifiez la quantité de Bitcoin qu'ils souhaitent verrouiller temporairement pour la délégation à un validateur Core.
-    - Incluez une sortie OP_RETURN contenant deux éléments d'information critiques :
-        - L'adresse du validateur Core qu'ils souhaitent soutenir.
-        - L'adresse Core où ils souhaitent recevoir les récompenses en jetons CORE.
+  - Créez une transaction Bitcoin où la sortie est envoyée à leur propre adresse en utilisant la fonctionnalité de verrouillage temporel CLTV native de Bitcoin.
+  - Spécifiez la quantité de Bitcoin qu'ils souhaitent verrouiller temporairement pour la délégation à un validateur Core.
+  - Incluez une sortie OP_RETURN contenant deux éléments d'information critiques :
+    - L'adresse du validateur Core qu'ils souhaitent soutenir.
+    - L'adresse Core où ils souhaitent recevoir les récompenses en jetons CORE.
 - Exigences minimales :
-    - Montant : Lors de l'utilisation de l'interface de jalonnement officielle (https://stake.coredao.org/staking), un minimum de 0,01 BTC doit être verrouillé temporairement (hors frais de transaction)
-    - Durée : La période de verrouillage temporaire minimale est de 24 heures, bien que l'interface de jalonnement Core par défaut recommande un minimum de 5 jours pour une participation optimale.
-    - Implémentation technique : Il n'y a pas d'exigences minimales lors de la création manuelle de transactions de verrouillage temporaire, bien que les mêmes paramètres soient recommandés pour une participation efficace.
+  - Montant : Lors de l'utilisation de l'interface de jalonnement officielle (https://stake.coredao.org/staking), un minimum de 0,01 BTC doit être verrouillé temporairement (hors frais de transaction)
+  - Durée : La période de verrouillage temporaire minimale est de 24 heures, bien que l'interface de jalonnement Core par défaut recommande un minimum de 5 jours pour une participation optimale.
+  - Implémentation technique : Il n'y a pas d'exigences minimales lors de la création manuelle de transactions de verrouillage temporaire, bien que les mêmes paramètres soient recommandés pour une participation efficace.
 
 ### Déroulement des transactions
 
@@ -70,18 +70,18 @@ Les UTXO (Bitcoins) verrouillés peuvent être dépensés en utilisant le script
 
 - La construction de la sortie du type `P2SH` est la suivante
 
-    - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
+  - `OP_HASH160 <RIPEMD160(SHA256(RedeemScript))> OP_EQUAL`
 
 - La construction de la sortie de type `P2WSH` est la suivante
 
-    - `OP_0 <SHA256(RedeemScript)>`
+  - `OP_0 <SHA256(RedeemScript)>`
 
 ### Script de Rachat
 
 Le `RedeemScript` doit commencer par un verrouillage temporel CLTV. Voici quelques types courants.
 
 - Lors de l'utilisation d'une clé publique `<CLTV timelock> OP_CLTV OP_DROP <pubKey> OP_CHECKSIG`
-    et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <RedeemScript>`
+  et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <RedeemScript>`
 
 - Lors de l'utilisation d'un hachage de clé publique (le plus recommandé) `<CLTV timelock> OP_CLTV OP_DROP OP_DUP OP_HASH160 <pubKey Hash> OP_EQUALVERIFY OP_CHECKSIG` et le script de déverrouillage correspondant dans la transaction de retrait est `<sig> <pubKey> <RedeemScript>`
 
@@ -129,8 +129,8 @@ Pour rendre le processus plus pratique, Core introduit le rôle des relayeurs. L
 
 - Si le `RedeemScript` est court, le placer à la fin de la sortie `OP_RETURN`. Par exemple, un `RedeemScript` est construit en utilisant un hachage de clé publique, comme montré dans l'exemple ci-dessous.
 - Utiliser leur propre adresse de réception pour la transaction de staking, afin que les relayeurs puissent extraire les informations utiles depuis l'entrée de la transaction et composer eux-mêmes le `RedeemScript`. Par exemple
-    - Si c'est une adresse normale, la `pubkey` ou la `pubkey hash` doit être définie comme la clé publique d'entrée correspondante lors de l'élaboration de `RedeemScript`.
-    - Si c'est une adresse multi-signature, la clé publique correspondante de l'adresse multi-signature doit être utilisée lors de la construction du `RedeemScript`.
+  - Si c'est une adresse normale, la `pubkey` ou la `pubkey hash` doit être définie comme la clé publique d'entrée correspondante lors de l'élaboration de `RedeemScript`.
+  - Si c'est une adresse multi-signature, la clé publique correspondante de l'adresse multi-signature doit être utilisée lors de la construction du `RedeemScript`.
 
 ## Exemples de Transactions
 
