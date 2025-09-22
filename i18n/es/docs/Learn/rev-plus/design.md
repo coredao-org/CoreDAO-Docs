@@ -51,9 +51,9 @@ La lógica central de Rev+ está implementada directamente en la capa de procesa
 
 Rev+ introduce un mecanismo distinto de contabilización de gas que preserva el límite estándar de 50M de gas por bloque en Core, al tiempo que soporta distribuciones adicionales de recompensas basadas en gas.
 
-- **Distributed Gas**: El gas utilizado para las distribuciones de comisiones de Rev+ **no se incluye en `block.gasUsed`**. Se agrega al gas pool del bloque y luego se deduce tanto del gas pool como del gas usado, asegurando que la contabilidad del gas del bloque permanezca inalterada.
-- **Block Limit Compliance**: A pesar de distribuir recompensas adicionales de gas, el bloque sigue respetando el techo de 50M de gas reportado a los clientes y block explorers.
-- **Post-EVM Execution**: La lógica de Rev+ se ejecuta después de la ejecución de la EVM y no interfiere con la ejecución de transacciones ni con los cálculos de gas de la EVM.
+- **Gas distribuido**: El gas utilizado para las distribuciones de comisiones de Rev+ **no se incluye en `block.gasUsed`**. Se agrega al gas pool del bloque y luego se deduce tanto del gas pool como del gas usado, asegurando que la contabilidad del gas del bloque permanezca inalterada.
+- **Cumplimiento del límite de bloque**: A pesar de distribuir recompensas adicionales de gas, el bloque sigue respetando el techo de 50M de gas reportado a los clientes y block explorers.
+- **Ejecución post-EVM**: La lógica de Rev+ se ejecuta después de la ejecución de la EVM y no interfiere con la ejecución de transacciones ni con los cálculos de gas de la EVM.
 
 ##### Ejemplo
 
