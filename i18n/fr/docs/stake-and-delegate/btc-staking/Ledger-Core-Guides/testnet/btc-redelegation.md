@@ -187,6 +187,10 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 ![img](../../../../../static/img/ledger-core/testnet/btc-redelegate/UI-12.png)
 </p>
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 En suivant ce guide, vous avez réussi à ré déléguer des BTC mis en jeu avec verrouillage temporel expiré sur le réseau de test Core en utilisant votre portefeuille matériel Ledger. The combination of Core’s Self-Custodial BTC Timelocking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core Testnet app, provides maximum transparency, confidence, and safety. Votre ré délégation réussie pour la mise en jeu de BTC signifie que vos BTC continuent à participer à l'écosystème décentralisé de Core sans jamais quitter votre garde.
