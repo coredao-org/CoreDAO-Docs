@@ -16,8 +16,8 @@ En el ecosistema Core, "validador" se refiere a nodos o participantes en la red 
 
 - 1. Para registrarte como validador en Core, debes estar ejecutando un nodo completo en modo validador. Por favor, lea las [guías sobre los requisitos de nodos validadores](../Node/config/validator-node-config.md) y la [configuración de nodos validadores](../Node/validator/setting-up-validator.md)para obtener información sobre cómo configurarlo.
   2. Una vez finalizado ese paso, la forma más sencilla de registrar un nuevo validador es utilizando uno de nuestros sitios web de staking:
-    1. [Mainnet stake website](https://stake.coredao.org)
-    2. [Sitio de staking para Testnet](https://stake.test2.btcs.network)
+     1. [Mainnet stake website](https://stake.coredao.org)
+     2. [Sitio de staking para Testnet](https://stake.test2.btcs.network)
   3. Conecte su billetera seleccionando **Conectar billetera** en la parte superior derecha.
   4. Una vez conectado, el botón **registrarse** debería aparecer en la parte superior derecha. Al seleccionar **registrarse** se abre el siguiente formulario de entrada:
 
