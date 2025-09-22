@@ -34,7 +34,7 @@ El proceso de elección de validadores en Satoshi Plus involucra pasos clave, re
 
 4. **Formación del Conjunto de Validadores**: Se forma un conjunto de validadores a partir de aquellos con las puntuaciones más altas. Este conjunto se actualiza dinámicamente para reflejar los cambios continuos en las delegaciones de stake y las asignaciones de poder de hash. Hay dos pasos involucrados en la elección de validadores.
 
-  1. Los hybrid scores se calculan para todos los validadores de la red con la siguiente ecuación. El hybrid score para de cada validador se determina con la siguiente fórmula:
+   1. Los hybrid scores se calculan para todos los validadores de la red con la siguiente ecuación. El hybrid score para de cada validador se determina con la siguiente fórmula:
 
 $$
  S = (\frac{rHp}{tHp})* m + (\frac{rSp}{tSp})*k + (\frac{rBp}{tBp})*l
@@ -53,51 +53,51 @@ Donde, $$m + k + l = 1$$
 - $$l$$: Ratio asignado al staking de BTC.
 
 2. Al final de cada ronda, los validadores se clasifican según su hybrid score y los **27** validadores con las puntuaciones más altas son seleccionados para formar el conjunto de validadores en la siguiente ronda.
-  Dejando de lado los detalles matemáticos, este proceso equivale esencialmente a un procedimiento de votación bicameral ponderado. Los mineros de Bitcoin pueden votar por validadores mediante PoW (escribiendo la información del validador en la transacción coinbase de los bloques que han minado), los poseedores de tokens CORE pueden votar por un validador a través de PoS (delegando sus tokens al validador), y stakers de Bitcoin en autocustodia también pueden votar por un validador mediante la delegación de sus tokens. Este sistema incluye Proof-of-Work (PoW) delegado, Proof-of-Stake (PoS) delegado y Bitcoin staking autocustodiado, los cuales se ponderan para determinar el hybrid score de cada validador.
+   Dejando de lado los detalles matemáticos, este proceso equivale esencialmente a un procedimiento de votación bicameral ponderado. Los mineros de Bitcoin pueden votar por validadores mediante PoW (escribiendo la información del validador en la transacción coinbase de los bloques que han minado), los poseedores de tokens CORE pueden votar por un validador a través de PoS (delegando sus tokens al validador), y stakers de Bitcoin en autocustodia también pueden votar por un validador mediante la delegación de sus tokens. Este sistema incluye Proof-of-Work (PoW) delegado, Proof-of-Stake (PoS) delegado y Bitcoin staking autocustodiado, los cuales se ponderan para determinar el hybrid score de cada validador.
 
 Este es el "núcleo" de la blockchain de Core: el mecanismo mediante el cual la red aprovecha la seguridad y descentralización de la red Bitcoin junto con la escalabilidad y capacidad de composición de cadenas PoS como Ethereum. Permitir que los mineros de Bitcoin y los stakers de Bitcoin voten por validadores le permite a Core aprovechar la legendaria solidez de Bitcoin. Y como Core es compatible con la EVM, es posible construir smart contracts, dApps y otras aplicaciones en Core que no podrían realizarse sin modificar el protocolo subyacente de Bitcoin.
 
 5. **Producción de bloques**: Después de la elección, todos los validadores se ordenan aproximadamente según su hybrid score y toman turnos para producir bloques en un **esquema de round-robin**, antes de que el proceso comience nuevamente desde el principio.
-  Al limitar inicialmente el número de validadores a **21**, Satoshi Plus ofrece una mayor tasa de transacciones y una escalabilidad mejorada; se espera que el número de validadores aumente a **34 para el segundo trimestre de 2025**. En el segundo trimestre de 2024, Core ya ha ampliado su conjunto de validadores activos de **21** a **27**. Además, este mecanismo ofrece mayor seguridad gracias a una mayor eficiencia y una tolerancia frente a un gran número de actores Bizantinos. Core es seguro siempre que no más de $1 \over 3$ de los validadores sean maliciosos.
+   Al limitar inicialmente el número de validadores a **21**, Satoshi Plus ofrece una mayor tasa de transacciones y una escalabilidad mejorada; se espera que el número de validadores aumente a **34 para el segundo trimestre de 2025**. En el segundo trimestre de 2024, Core ya ha ampliado su conjunto de validadores activos de **21** a **27**. Además, este mecanismo ofrece mayor seguridad gracias a una mayor eficiencia y una tolerancia frente a un gran número de actores Bizantinos. Core es seguro siempre que no más de $1 \over 3$ de los validadores sean maliciosos.
 
 6. **Distribución de Recompensas**:
-  - Las recompensas se distribuyen en función de las contribuciones a la seguridad de la red, utilizando la siguiente fórmula:
+   - Las recompensas se distribuyen en función de las contribuciones a la seguridad de la red, utilizando la siguiente fórmula:
 
-    $$
-       rH = \frac{\frac{rHp}{tHp} * m} {S} * R
-    $$
+     $$
+        rH = \frac{\frac{rHp}{tHp} * m} {S} * R
+     $$
 
-    $$
-       rS = \frac{\frac{rSp}{tSp} * k} {S} * R
-    $$
+     $$
+        rS = \frac{\frac{rSp}{tSp} * k} {S} * R
+     $$
 
-    $$
-       rB = \frac{\frac{rBp}{tBp} * l} {S} * R
-    $$
+     $$
+        rB = \frac{\frac{rBp}{tBp} * l} {S} * R
+     $$
 
-    Donde:
+     Donde:
 
-    - $$rH$$: Recompensas atribuidas al poder de hash delegado (DPoW).
-    - $$rS$$: Recompensas atribuidas al staking de CORE (DPoS).
-    - $$rB$$: Recompensas atribuidas al staking de BTC.
-    - $$R$$: Recompensas totales asignadas a todos los delegadores.
-    - $$m$$: Proporción de recompensas asignadas al poder de hash.
-    - $$k$$: Proporción de recompensas asignadas al staking de CORE.
-    - $$l$$: Proporción de recompensas asignadas al staking de BTC.
-    - $$S$$: Hybrid score of the validator.
+     - $$rH$$: Recompensas atribuidas al poder de hash delegado (DPoW).
+     - $$rS$$: Recompensas atribuidas al staking de CORE (DPoS).
+     - $$rB$$: Recompensas atribuidas al staking de BTC.
+     - $$R$$: Recompensas totales asignadas a todos los delegadores.
+     - $$m$$: Proporción de recompensas asignadas al poder de hash.
+     - $$k$$: Proporción de recompensas asignadas al staking de CORE.
+     - $$l$$: Proporción de recompensas asignadas al staking de BTC.
+     - $$S$$: Hybrid score of the validator.
 
-    Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad de hash power, CORE o BTC en staking:
+     Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad de hash power, CORE o BTC en staking:
 
-    - Recompensa por unidad de hash power: $$rHu$$ =  $$\frac{rH}{rHp}$$
-    - Recompensa por unidad de CORE: rSu = $$\frac{rS}{rSp}$$
-    - Recompensa por unidad de BTC: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicador de Rendimiento para el Nivel<sub>n</sub>
+     - Recompensa por unidad de hash power: $$rHu$$ =  $$\frac{rH}{rHp}$$
+     - Recompensa por unidad de CORE: rSu = $$\frac{rS}{rSp}$$
+     - Recompensa por unidad de BTC: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Multiplicador de Rendimiento para el Nivel<sub>n</sub>
 
-    Donde:
+     Donde:
 
-    - $$rHu$$ son las recompensas del poder hash del validador por unidad;
-    - $$rSu$$ son las recompensas de apuesta de tokens CORE por unidad;
-    - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
-    - **Multiplicadores de rendimiento:** Cada nivel de rendimiento aumentado tiene un multiplicador específico (e,f,g,h, ..., etc.) que está determinado por los datos de apuesta del usuario, así como por la configuración de staking dual del sistema. Estas configuraciones están sujetas a cambios y pueden ajustarse mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
+     - $$rHu$$ son las recompensas del poder hash del validador por unidad;
+     - $$rSu$$ son las recompensas de apuesta de tokens CORE por unidad;
+     - $$rBu$$ de **P<sub>n</sub>** son las recompensas de apuesta de BTC por unidad para el delegado con nivel de rendimiento de PN BTC
+     - **Multiplicadores de rendimiento:** Cada nivel de rendimiento aumentado tiene un multiplicador específico (e,f,g,h, ..., etc.) que está determinado por los datos de apuesta del usuario, así como por la configuración de staking dual del sistema. Estas configuraciones están sujetas a cambios y pueden ajustarse mediante votación de gobernanza. Estos cálculos garantizan que las recompensas proporcionales se distribuyan en función de las contribuciones individuales al grupo de delegación de un validador.
 
 #### Impacto del Dual Staking en las recompensas de BTC
 
