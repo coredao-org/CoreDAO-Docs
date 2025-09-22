@@ -27,8 +27,8 @@ Une fois que votre nœud est en cours d'exécution et synchronisé, vous pouvez 
 
 1. **Naviguer vers le site Web de staking:** Le moyen le plus simple pour enregistrer un nouveau validateur est d'utiliser les sites Web de staking officiels de Core:
 
-    - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
-    - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
+   - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
+   - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
 
 2. Connecter votre portefeuille : Sur le site Web de staking, cliquez sur Connecter le portefeuille dans le coin supérieur droit et connectez votre portefeuille (comme MetaMask, Ledger, etc.) qui contient les jetons CORE nécessaires.
 
