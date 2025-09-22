@@ -13,7 +13,7 @@ sidebar_position: 2
 
 Rev+ est implémenté comme une fonctionnalité de niveau protocole intégrée directement dans le pipeline de traitement des transactions de la blockchain Core. Le modèle Rev+ comprend deux composants principaux : un contrat de `configuration` en chaîne et des `core chain modifications` qui gèrent la logique de distribution des frais.
 
-## **Composants Principaux**
+## Core Components
 
 ### 1. Contrat de Configuration (Configuration.sol)
 
@@ -47,7 +47,7 @@ La logique de Rev+ est intégrée directement dans la couche de traitement des t
 - **Synchronisation de configuration:** Lit la dernière configuration à partir de `Configuration.sol`. Les mises à jour de gouvernance sont reflétées immédiatement dans la transaction suivante traitée.
 - **Compatibilité des structures:** Utilise des versions en langage Go des mêmes structures qu'en Solidity, assurant ainsi la cohérence entre les couches.
 
-#### **Comptabilité du gaz**
+#### Gas Accounting
 
 Rev+ introduit un mécanisme de comptabilité du gaz distinct qui préserve la limite standard de Core de 50 millions de gaz par bloc tout en prenant en charge des distributions de récompenses supplémentaires basées sur le gaz.
 
@@ -58,7 +58,9 @@ Rev+ introduit un mécanisme de comptabilité du gaz distinct qui préserve la l
 ##### Exemple
 
 - `block.gasUsed`: 50 000 000 (signalé)
+
 - Somme de tous les `tx.gasUsed`: 150 000 000 (comprend 100M pour les récompenses Rev+)
+
 - Effet net: Le débit du bloc reste stable, tandis que le gaz distribué est géré de manière transparente après l'EVM.
 
 Ce modèle comptable garantit que Rev+ peut évoluer en fonction de l'utilisation du réseau sans perturber la production de blocs des validateurs ni dégrader les performances du réseau.
@@ -149,7 +151,7 @@ if rules.IsLondon {
     rewardAmount.Mul(rewardAmount, effectiveTipU256)  // 10000 * effectiveTip (gasPrice)
 ```
 
-### 6. Distribution des frais\*\*
+### 6. Fee Distribution
 
 - La récompense totale distribuée:
   - Est ajoutée au pool de gaz du bloc.
@@ -157,7 +159,7 @@ if rules.IsLondon {
 - Les récompenses de gaz sont transférées directement aux adresses de récompense configurées (par exemple, DAO, développeurs, multisignatures, etc.).
 - Tout gaz de transaction inutilisé est remboursé à l'expéditeur conformément au comportement standard de l'EVM.
 
-### . Comptabilité et conformité
+### 7. Comptabilité et conformité
 
 - Core applique la **limite de gaz de bloc de 50M** standard, même avec Rev+ actif.
 - Bien que `block.gasUsed` puisse afficher 50M, la somme réelle de l'utilisation de gaz de toutes les transactions (y compris le gaz de distribution Rev+) peut la dépasser.
@@ -233,13 +235,11 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 - **Gaz de transaction**: L'`tx.gasUsed` individuel inclut le gaz Rev+
 - **Effet net**: Le bloc peut accueillir le même nombre de transactions qu'avant Rev+
 
-### **Scénario d'exemple**
+### Example Scenario
 
-```math
-Limite de gaz par bloc: 50 000 000
-Gaz utilisé par bloc: 50 000 000 (rapporté)
-Somme réelle du gaz des transactions: 150 000 000 (dont 100 000 000 distribués)
-```
+Block Gas Limit: 50,000,000
+Block Gas Used: 50,000,000 (reported)
+Actual Transaction Gas Sum: 150,000,000 (includes 100M distributed)
 
 ## Cycle de vie de la configuration
 
