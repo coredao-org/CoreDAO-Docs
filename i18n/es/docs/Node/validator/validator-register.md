@@ -27,8 +27,8 @@ Una vez que tu nodo esté en ejecución y sincronizado, puedes proceder con el p
 
 1. **Ir al Sitio Web de Staking:** La forma más sencilla de registrar un nuevo validador es utilizar los sitios oficiales de staking de Core:
 
-    - [Sitio de Staking de Core Mainnet](https://stake.coredao.org/become-validator)
-    - [Sitio de Staking de Core Testnet](https://stake.test2.btcs.network/become-validator)
+   - [Sitio de Staking de Core Mainnet](https://stake.coredao.org/become-validator)
+   - [Sitio de Staking de Core Testnet](https://stake.test2.btcs.network/become-validator)
 
 2. **Conectar tu Wallet:** En el sitio web de staking, haz clic en **Connect Wallet** en la esquina superior derecha y conecta tu wallet (como MetaMask, Ledger, etc.) que contenga los tokens CORE necesarios.
 
