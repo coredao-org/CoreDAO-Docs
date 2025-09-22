@@ -31,24 +31,28 @@ values={[
 ]}> <TabItem value="testnet2">
 Para los nodos validador en **Core Testnet2**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
+    ```
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Minimum 4 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                                          |
     | **RAM**            | 8 Gigabytes                                                                                             |
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    ```
 
   </TabItem>
 
   <TabItem value="mainnet">
 Para los nodos Validadores en **Core Mainnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
+    ```
     | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms. |
     | **CPU**            | Minimum 8 CPU cores are recommended. Multi-core processors enable the node to handle simultaneous operations such as transaction validation and block verification efficiently.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
     | **Internet Speed** | A broadband Internet connection with upload/download speeds of 10 megabytes per second.                 |
+    ```
 
   </TabItem>
 </Tabs>
