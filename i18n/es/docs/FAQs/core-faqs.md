@@ -42,10 +42,10 @@ En la red Core, el slashing y el jailing son mecanismos para penalizar a los val
 "Slashing" se refiere a la reducción ya sea de las recompensas del validador por minar bloques o de sus tokens CORE en staking. La severidad del castigo por slashing aumenta proporcionalmente según la gravedad del mal comportamiento del validador.
 
 - **Fallo en la producción exitosa de un bloque durante su turno asignado**
-    - Si un nodo validador falla en minar **50 bloques** consecutivos, se le revocan completamente las recompensas de tokens CORE acumuladas hasta ese momento.
-    - Si un validador falla en minar **150 bloques** consecutivos, pierde su parte de las recompensas diarias de tokens CORE, pierde el 10% del depósito en CORE que hizo como staker, y es puesto en jailing por tres días, lo que significa que no será elegible para formar parte del conjunto de validadores
+  - Si un nodo validador falla en minar **50 bloques** consecutivos, se le revocan completamente las recompensas de tokens CORE acumuladas hasta ese momento.
+  - Si un validador falla en minar **150 bloques** consecutivos, pierde su parte de las recompensas diarias de tokens CORE, pierde el 10% del depósito en CORE que hizo como staker, y es puesto en jailing por tres días, lo que significa que no será elegible para formar parte del conjunto de validadores
 - **Penalización por Double Signing**
-    - “Double signing” ocurre cuando un validador firma dos bloques diferentes en la misma altura de bloque. Los validadores que son atrapados haciendo doble firma pierden todas sus recompensas y se les slashea el depósito CORE como validador; además, quedan excluidos permanentemente de la participación en la minería de bloques, es decir, quedan en jailing para siempre.
+  - “Double signing” ocurre cuando un validador firma dos bloques diferentes en la misma altura de bloque. Los validadores que son atrapados haciendo doble firma pierden todas sus recompensas y se les slashea el depósito CORE como validador; además, quedan excluidos permanentemente de la participación en la minería de bloques, es decir, quedan en jailing para siempre.
 
 ### ¿Cuál es el mecanismo de consenso que usa la red Core y cómo previene diferentes ataques?
 
