@@ -161,6 +161,10 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 Pour être éligible aux récompenses, vous devez terminer un cycle de mise en jeu complet (00:00:00 - 23:59:29 UTC).
 :::
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 Félicitations ! Vous avez mis en jeu avec succès des CORE en utilisant votre portefeuille matériel Ledger sur le réseau Core Mainnet. En suivant ce guide, vous avez connecté votre appareil Ledger en toute sécurité, installé et utilisé l'application Ledger Ethereum pour miser des CORE directement à partir de votre portefeuille matériel et gagner des récompenses de mise.
