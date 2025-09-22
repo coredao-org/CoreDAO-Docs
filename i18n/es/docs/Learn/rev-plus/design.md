@@ -1,73 +1,73 @@
 ---
-sidebar_label: Protocol Design
-description: Design of Core Rev+ Revenue Sharing Model
+sidebar_label: Diseño del Protocolo
+description: Diseño del Modelo de Distribución de Ingresos Core Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Rev+ Protocol System Design
+# Diseño del Sistema del Protocolo Core Rev+
 
 ---
 
-## Architecture Overview
+## Visión General de la Arquitectura
 
-Rev+ is implemented as a protocol-level feature integrated directly into the Core blockchain's transaction processing pipeline. The Rev+ model comprises two primary components: an on-chain `configuration` contract and `core chain modifications` that handle the fee distribution logic.
+Rev+ se implementa como una característica a nivel de protocolo integrada directamente en la pipeline de procesamiento de transacciones de la blockchain Core. El modelo Rev+ comprende dos componentes principales: un contrato de `configuration` on-chain y `core chain modifications` que manejan la lógica de distribución de fees.
 
-## Core Components
+## Componentes principales
 
-### 1. Configuration Contract (`Configuration.sol`)
+### 1. Configuration Contract (Configuration.sol)
 
-**Contract Address**: `0x0000000000000000000000000000000000001016`
+**Dirección de Contrato**: `0x0000000000000000000000000000000000001016`
 
-The `Configuration.sol` contract serves as the on-chain registry that governs the rules for Rev+ fee distribution. It allows for defining and managing which smart contracts, events, or functions are eligible for gas fee rewards, and how those rewards are allocated. Note that all these configurations are updated through governance proposals approved by the Core DAO.
+El contrato `Configuration.sol` funciona como el registro on-chain que gobierna las reglas para la distribución de fees de Rev+. Permite definir y gestionar qué smart contracts, eventos o funciones son elegibles para recompensas por fees de gas y cómo se asignan dichas recompensas. Cabe destacar que todas estas configuraciones se actualizan mediante propuestas de gobernanza aprobadas por el Core DAO.
 
-**Key Responsibilities:**
+**Responsabilidades Clave:**
 
-- Store configuration data for target contracts, including events and (optionally) functions.
-- Define gas allocations and associated reward recipients.
-- Enforce limits on reward recipients per event.
-- Ensure reward percentage sums are valid (must equal 100%).
-- Allow governance-controlled lifecycle operations (add, update, remove, toggle).
-- Maintain an `isActive` flag for dynamic config enablement.
+- Almacenar datos de configuración para contratos objetivo, incluyendo events y (opcionalmente) functions.
+- Definir asignaciones de gas y los destinatarios de recompensas asociados.
+- Hacer cumplir límites en la cantidad de destinatarios de recompensas por event.
+- Asegurar que la suma de los porcentajes de recompensa sea válida (debe ser igual al 100%).
+- Permitir operaciones de ciclo de vida controladas por governance (agregar, actualizar, eliminar, activar/desactivar).
+- Mantener un `isActive` flag para la habilitación dinámica de configuraciones.
 
-### 2. Integration with Core Blockchain
+### 2. Integración con Core Blockchain
 
-The Rev+ protocol logic is integrated directly into the Core blockchain's transaction processing layer. This implementation ensures that fee distribution occurs transparently and deterministically after EVM execution, without altering smart contract logic.
+La lógica del protocolo Rev+ se integra directamente en la capa de procesamiento de transacciones de Core blockchain. Esta implementación asegura que la distribución de comisiones ocurra de manera transparente y determinista después de la ejecución de la EVM, sin alterar la lógica de los smart contracts.
 
-Importantly, developers do not need to modify their deployed smart contracts to participate in Rev+, as long as they are using `--eth_estimateGas` for gas estimations in their code. Rev+ works by monitoring contract events emitted during transaction execution. As long as a contract emits a configured event (via standard Solidity logging), the Rev+ system can recognize it and trigger reward distribution. This makes Rev+ fully composable and compatible with existing EVM-based applications.
+Es importante destacar que los desarrolladores no necesitan modificar sus smart contracts desplegados para participar en Rev+, siempre que utilicen -`-eth_estimateGas` para las estimaciones de gas en su código. Rev+ funciona monitoreando los contract events emitidos durante la ejecución de transacciones. Mientras un contrato emita un event configurado (a través del logging estándar de Solidity), el sistema Rev+ puede reconocerlo y activar la distribución de recompensas. Esto hace que Rev+ sea totalmente componible y compatible con las aplicaciones existentes basadas en EVM.
 
-Changes to the configurations submitted through Core’s governance contract will be applied to the next transaction after they are approved and activated by Core DAO.
+Los cambios en las configuraciones enviados a través del contrato de governance de Core se aplicarán a la siguiente transacción después de ser aprobados y activados por Core DAO.
 
-Rev+ core chain logic is implemented directly in the Core blockchain's transaction processing layer, located at core-chain/eth/feemarket/ and `core-chain/eth/state_transition.go`, refer [here](https://www.google.com/url?q=https://github.com/coredao-org/core-chain/pull/59&sa=D&source=docs&ust=1748354919957219&usg=AOvVaw182idwbrHVNYZTy364X1E-) for more details. It uses the same structs as the solidity ones.
+La lógica central de Rev+ está implementada directamente en la capa de procesamiento de transacciones de la Core blockchain, ubicada en core-chain/eth/feemarket/ y `core-chain/eth/state_transition.go`, consulta [aquí](https://www.google.com/url?q=https://github.com/coredao-org/core-chain/pull/59&sa=D&source=docs&ust=1748354919957219&usg=AOvVaw182idwbrHVNYZTy364X1E-) para más detalles. Utiliza las mismas structs que las de Solidity.
 
-**Key Characteristics:**
+**Características Clave:**
 
-- **Execution Timing:** Rev+ logic runs after EVM execution, before final transaction state commitment.
-- **Gas Model:** Distributed gas is added to the block’s gas pool and _**not**_ included in `block.gasUsed`. The distributions are either done through the block’s gas pool. This ensures the block gas accounting remains unchanged.
-- **Configuration Sync:** Reads the latest configuration from `Configuration.sol`. Governance updates are reflected immediately in the next processed transaction.
-- **Struct Compatibility:** Uses Go-language versions of the same structs as in Solidity, ensuring consistency across layers.
+- **Execution Timing:** La lógica de Rev+ se ejecuta después de la ejecución de la EVM, antes del compromiso final del estado de la transacción.
+- **Gas Model:** El gas distribuido se agrega al gas pool del bloque y _**no**_ se incluye en `block.gasUsed`. Las distribuciones se realizan a través del gas pool del bloque. Esto asegura que la contabilidad del gas del bloque permanezca sin cambios.
+- **Configuration Sync:** Lee la configuración más reciente desde `Configuration.sol`. Las actualizaciones de governance se reflejan inmediatamente en la siguiente transacción procesada.
+- **Struct Compatibility:** Utiliza versiones en Go-language de las mismas structs que en Solidity, asegurando consistencia entre capas.
 
 #### Gas Accounting
 
-Rev+ introduces a distinct gas accounting mechanism that preserves Core’s standard 50M gas per block limit while supporting additional gas-based reward distributions.
+Rev+ introduce un mecanismo distinto de contabilización de gas que preserva el límite estándar de 50M de gas por bloque en Core, al tiempo que soporta distribuciones adicionales de recompensas basadas en gas.
 
-- **Distributed Gas**: The gas used for Rev+ fee distributions is **not included in `block.gasUsed`**. It is added to the block's gas pool and then deducted from the block’s gas pool and gas used, ensuring block gas accounting remains unchanged.
-- **Block Limit Compliance**: Despite distributing additional gas rewards, the block still respects the 50M gas ceiling reported to clients and block explorers.
-- **Post-EVM Execution**: The Rev+ logic runs after EVM execution and does not interfere with transaction execution or EVM gas calculations.
+- **Distributed Gas**: El gas utilizado para las distribuciones de comisiones de Rev+ **no se incluye en `block.gasUsed`**. Se agrega al gas pool del bloque y luego se deduce tanto del gas pool como del gas usado, asegurando que la contabilidad del gas del bloque permanezca inalterada.
+- **Block Limit Compliance**: A pesar de distribuir recompensas adicionales de gas, el bloque sigue respetando el techo de 50M de gas reportado a los clientes y block explorers.
+- **Post-EVM Execution**: La lógica de Rev+ se ejecuta después de la ejecución de la EVM y no interfiere con la ejecución de transacciones ni con los cálculos de gas de la EVM.
 
-##### Example
+##### Ejemplo
 
-- `block.gasUsed`: 50,000,000 (reported)
+- `block.gasUsed`: 50,000,000 (reportado)
 
-- Sum of all `tx.gasUsed`: 150,000,000 (includes 100M for Rev+ rewards)
+- Suma de todos `tx.gasUsed`: 150,000,000 (incluye 100M para recompensas Rev+)
 
-- Net effect: The block’s throughput remains stable, while distributed gas is transparently handled post-EVM.
+- Efecto neto: El throughput del bloque permanece estable, mientras que el gas distribuido se maneja de forma transparente después de la ejecución de la EVM.
 
-This accounting model ensures that Rev+ can scale with network usage without disrupting validator block production or degrading network performance.
+Este modelo de contabilización asegura que Rev+ pueda escalar junto con el uso de la red sin interrumpir la producción de bloques por parte de los validadores ni degradar el rendimiento de la red.
 
-## Data Structures
+## Estructuras de Datos
 
-### Configuration Schema
+### Esquema de Configuración
 
 ```javascript
 // System Constants
@@ -102,7 +102,7 @@ struct Config {
 }
 ```
 
-## How It Works
+## Cómo Funciona
 
 The Rev+ protocol operates as a decentralized, post-EVM fee distribution layer that transparently allocates a portion of gas fees to designated recipients. This mechanism is executed as part of Core’s transaction finalization process without altering the underlying Rev+ enabled contract logic.
 
