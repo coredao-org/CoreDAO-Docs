@@ -162,6 +162,10 @@ Se requiere un mínimo de **1 CORE** para participar en el staking de tokens COR
 Para ser elegible para recibir recompensas, debes completar un ciclo completo de staking en el intervalo (00:00:00 - 23:59:29 UTC).
 :::
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusión
 
 ¡Felicidades! Has realizado con éxito el staking de CORE usando tu Ledger hardware wallet en la Core Mainnet. Al seguir esta guía, conectaste de forma segura tu dispositivo Ledger, instalaste y usaste la aplicación Ledger Ethereum, para hacer staking de CORE directamente desde tu hardware wallet y así ganar recompensas de staking.
