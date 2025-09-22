@@ -47,7 +47,7 @@ La lógica central de Rev+ está implementada directamente en la capa de procesa
 - **Configuration Sync:** Lee la configuración más reciente desde `Configuration.sol`. Las actualizaciones de governance se reflejan inmediatamente en la siguiente transacción procesada.
 - **Struct Compatibility:** Utiliza versiones en Go-language de las mismas structs que en Solidity, asegurando consistencia entre capas.
 
-#### Gas Accounting
+#### Contabilización de gas
 
 Rev+ introduce un mecanismo distinto de contabilización de gas que preserva el límite estándar de 50M de gas por bloque en Core, al tiempo que soporta distribuciones adicionales de recompensas basadas en gas.
 
@@ -104,44 +104,44 @@ struct Config {
 
 ## Cómo Funciona
 
-The Rev+ protocol operates as a decentralized, post-EVM fee distribution layer that transparently allocates a portion of gas fees to designated recipients. This mechanism is executed as part of Core’s transaction finalization process without altering the underlying Rev+ enabled contract logic.
+El protocolo Rev+ opera como una capa descentralizada de distribución de comisiones post-EVM que asigna de manera transparente una porción de las comisiones de gas a destinatarios designados. Este mecanismo se ejecuta como parte del proceso de finalización de transacciones de Core sin alterar la lógica subyacente de los contratos habilitados para Rev+.
 
-### 1. Governance Configuration
+### 1. Configuración de Governanza
 
-- Fee distribution rules are proposed through governance proposals by ecosystem participants (e.g., dApp developers, stablecoin issuers) and approved by Core DAO.
-- Each configuration includes:
-  - A target smart contract address
-  - One or more triggering events or functions
-  - Gas amounts associated with each trigger
-  - A list of reward recipients with percentage splits (must total 100%)
+- Las reglas de distribución de comisiones son propuestas mediante governance proposals por participantes del ecosistema (p. ej., desarrolladores de dApps, emisores de stablecoins) y aprobadas por la Core DAO.
+- Cada configuración incluye:
+  - Una dirección de smart contract objetivo
+  - Uno o más events o functions disparadores
+  - Montos de gas asociados a cada disparador
+  - Una lista de destinatarios de recompensas con divisiones porcentuales (deben sumar 100%)
 
 ### 2. Pre-Transaction Gas Estimation
 
-- When a user or dApp calls `eth_estimateGas`:
-  - Core checks for applicable Rev+ configurations.
-  - If a match is found, the returned gas estimate includes the additional Rev+ gas for configured event triggers.
-  - This enables transparent, upfront gas cost awareness for users.
+- Cuando un usuario o dApp llama a `eth_estimateGas `:
+  - Core verifica configuraciones Rev+ aplicables.
+  - Si se encuentra una coincidencia, la estimación de gas retornada incluye el gas adicional de Rev+ para los disparadores configurados.
+  - Esto permite a los usuarios tener una visión transparente y anticipada del costo total de gas.
 
 ### 3. Transaction Execution (EVM Layer)
 
-- As usual, the transaction is submitted and executed by Core’s EVM layer.
-- The contract’s logic runs without interference or instrumentation by Rev+.
-- During this phase, events may be emitted by the contract, and internal transactions may occur.
-- Rev+ logic is **not invoked** during EVM execution to maintain full compatibility with existing EVM behavior.
+- Como de costumbre, la transacción es enviada y ejecutada por la capa EVM de Core.
+- La lógica del contrato se ejecuta sin interferencia ni instrumentación por parte de Rev+.
+- Durante esta fase, el contrato puede emitir events y ocurrir transacciones internas.
+- La lógica de Rev+ **no se invoca** durante la ejecución de la EVM para mantener total compatibilidad con el comportamiento existente de la EVM.
 
-### 4. Post-Execution Event Trigger Detection
+### 4. Detección de disparadores de eventos post-ejecución
 
-- After the EVM execution completes:
-  - Rev+ inspects the transaction’s event logs (including those from internal calls).
-  - It compares emitted event/function signatures against the on-chain configuration stored in `Configuration.sol`.
-  - If matches are found, the corresponding gas value is recorded for distribution.
+- Después de que la ejecución de la EVM finaliza:
+  - Rev+ inspecciona los event logs de la transacción (incluyendo los de llamadas internas).
+  - Compara las firmas de events/functions emitidas contra la configuración on-chain almacenada en `Configuration.sol`.
+  - Si se encuentran coincidencias, el valor de gas correspondiente se registra para su distribución.
 
-### 5. Reward Calculation
+### 5. Cálculo de Recompensas
 
-- For each matched event or function:
-  - The configured gas value is multiplied by the transaction’s **effective gas price** (tip cap or `gasPrice`).
-  - This produces the total **fee reward pool** for the event.
-  - The pool is split proportionally across recipients as per their basis point percentages (e.g., 7000 \= 70%).
+- Para cada event o function coincidente:
+  - El valor de gas configurado se multiplica por el **effective gas price** de la transacción (tip cap o `gasPrice`).
+  - Esto produce el **fee reward pool** total para el evento.
+  - El pool se divide proporcionalmente entre los destinatarios según sus porcentajes en basis points (ejemplo: 7000 = 70%).
 
 ```javascript
 effectiveTip := msg.GasPrice
@@ -151,26 +151,26 @@ if rules.IsLondon {
     rewardAmount.Mul(rewardAmount, effectiveTipU256)  // 10000 * effectiveTip (gasPrice)
 ```
 
-### 6. Fee Distribution
+### 6. Distribución de Fees
 
-- The total distributed reward:
-  - Is added back to the block’s gas pool.
-  - Is **not counted** in the `block.gasUsed` field.
-- Gas rewards are transferred directly to the configured reward addresses (e.g., DAOs, developers, multisigs, etc).
-- Any unused transaction gas is refunded to the sender per standard EVM behavior.
+- La recompensa total distribuida:
+  - Se agrega nuevamente al gas pool del bloque.
+  - **No se contabiliza** en el campo `block.gasUsed`.
+- Las recompensas de gas se transfieren directamente a las direcciones configuradas de recompensas (p. ej., DAOs, desarrolladores, multisigs, etc.).
+- Cualquier gas no utilizado en la transacción es reembolsado al remitente según el comportamiento estándar de la EVM.
 
-### 7. Accounting and Compliance
+### 7. Contabilización y cumplimiento
 
-- Core enforces the standard **50M gas block limit**, even with Rev+ active.
-- While `block.gasUsed` may show 50M, the actual sum of all transaction gas usage (including Rev+ distribution gas) may exceed it.
-- This separation allows Rev+ to scale incentive mechanisms while preserving throughput and compatibility with existing clients and tooling.
-- All distributions are visible on-chain, and upcoming tools will allow dashboard-based tracking of Rev+ earnings.
+- Core aplica el límite estándar de **50M de gas por bloque**, incluso con Rev+ activo.
+- Aunque `block.gasUsed` pueda mostrar 50M, la suma real de todo el consumo de gas de las transacciones (incluyendo el gas de distribución Rev+) puede excederlo.
+- Esta separación permite que Rev+ escale los mecanismos de incentivos mientras preserva el throughput y la compatibilidad con clientes y herramientas existentes.
+- Todas las distribuciones son visibles on-chain, y próximamente se dispondrá de herramientas que permitirán un seguimiento de las ganancias de Rev+ mediante dashboards.
 
-This mechanism ensures that the Rev+ protocol operates as a **transparent, auditable, and composable fee-sharing layer**, encouraging long-term ecosystem participation and sustainable protocol development without sacrificing performance, security, or compatibility.
+Este mecanismo asegura que el protocolo Rev+ opere como una **capa de reparto de comisiones transparente, auditable y componible**, fomentando la participación a largo plazo en el ecosistema y el desarrollo sostenible del protocolo, sin sacrificar el rendimiento, la seguridad ni la compatibilidad.
 
-## **Transaction Processing Flow**
+## **Flujo de Procesamiento de Transacciones**
 
-### 1. Pre-Transaction Phase
+### 1. Fase Pre-Transacción
 
 ```bash
 User calls eth_estimateGas
@@ -180,7 +180,7 @@ User calls eth_estimateGas
 └── Returns total gas estimate to user
 ```
 
-### 2. Transaction Execution Phase
+### 2. Fase de Ejecución de Transacción
 
 ```bash
 Transaction submitted to Core
@@ -191,7 +191,7 @@ Transaction submitted to Core
 └── Calculates required gas distributions
 ```
 
-### 3. Post-Execution Distribution
+### 3. Distribución Post-Ejecución
 
 ```bash
 After EVM execution completes
@@ -202,9 +202,9 @@ After EVM execution completes
 └── Refunds remaining gas to transaction sender
 ```
 
-## Fee Calculation Logic
+## Lógica de Cálculo de Comisiones
 
-### Effective Tip Calculation
+### Cálculo de la propina efectiva
 
 ```go
 effectiveTip := msg.GasPrice
@@ -216,7 +216,7 @@ if rules.IsLondon {
 }
 ```
 
-### Reward Distribution
+### Distribución de recompensas
 
 ```go
 rewardAmount := new(uint256.Int).SetUint64(rewardGas) // From Event.gas
@@ -226,102 +226,102 @@ rewardAmount.Mul(rewardAmount, effectiveTipU256)      // gas * effectiveTip
 recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 ```
 
-## Gas Accounting Model
+## Modelo de contabilización de gas
 
-### Block-Level Accounting
+### Contabilidad a Nivel de Bloque
 
-- **Block Gas Limit**: Maintains 50M gas limit
-- **Distributed Gas**: Not counted in `block.gasUsed`
-- **Transaction Gas**: Individual `tx.gasUsed` includes Rev+ gas
-- **Net Effect**: Block can accommodate same transaction count as before Rev+
+- **Block Gas Limit**: Mantiene el límite de 50M de gas
+- **Distributed Gas**: No se contabiliza en `block.gasUsed`
+- **Transaction Gas**: Cada `tx.gasUsed` individual incluye gas de Rev+
+- **Net Effect**: El bloque puede acomodar la misma cantidad de transacciones que antes de Rev+
 
-### Example Scenario
+### Ejemplo
 
 Block Gas Limit: 50,000,000
-Block Gas Used: 50,000,000 (reported)
-Actual Transaction Gas Sum: 150,000,000 (includes 100M distributed)
+Block Gas Used: 50,000,000 (reportado)
+Actual Transaction Gas Sum: 150,000,000 (incluye 100M distribuidos)
 
-## Configuration Lifecycle
+## Ciclo de Vida de la Configuración
 
-The Rev+ revenue sharing model allows Core DAO, the governing body of the Core blockchain, to manage fee distribution settings through a set of governance-controlled configuration operations. All modifications to Rev+ configurations must be proposed and approved via Core's on-chain governance process. These changes are enforced on-chain via the `Configuration.sol` contract.
+El modelo de reparto de ingresos de Rev+ permite a Core DAO, el organismo de gobernanza de la Core blockchain, gestionar las configuraciones de distribución de comisiones a través de un conjunto de operaciones controladas por governance. Todas las modificaciones a las configuraciones de Rev+ deben ser propuestas y aprobadas mediante el proceso de gobernanza on-chain de Core. Estos cambios se aplican on-chain a través del contrato `Configuration.sol`.
 
-### Supported Operations
+### Operaciones Soportadas
 
-- **`addConfig`:** Registers a new configuration for a target contract. The configuration must specify one or more events and/or functions, along with their associated gas values and reward distributions.
+- **`addConfig`:** Registra una nueva configuración para un contrato objetivo. La configuración debe especificar uno o más events y/o functions, junto con sus valores de gas asociados y las distribuciones de recompensas.
 
-- **`updateConfig`:** Modifies the event and function definitions for an existing contract configuration. This allows changes to gas allocations, reward percentages, or trigger conditions without removing the entire configuration.
+- **`updateConfig`:** Modifica las definiciones de events y functions para una configuración existente de contrato. Esto permite cambios en asignaciones de gas, porcentajes de recompensas o condiciones de disparo sin necesidad de eliminar toda la configuración.
 
-- **`removeConfig`:** Permanently deletes an existing configuration and its associated rules for a specific contract. Once removed, no further Rev+ rewards will be distributed for that contract unless re-added through a new governance proposal.
+- **`removeConfig`:** Elimina permanentemente una configuración existente y sus reglas asociadas para un contrato específico. Una vez eliminada, no se distribuirán más recompensas Rev+ para ese contrato a menos que se vuelva a agregar mediante una nueva propuesta de governance.
 
-- **`setConfigStatus`:** Toggles the active status of a configuration. This allows governance to temporarily disable or re-enable a configuration without removing it entirely.
+- **`ssetConfigStatus`:** Alterna el estado activo de una configuración. Esto permite que governance deshabilite temporalmente o vuelva a habilitar una configuración sin eliminarla por completo.
 
-### Governance Requirements
+### Requisitos de Gobernanza
 
-- Only the Core DAO can perform these operations.
+- Solo la Core DAO puede ejecutar estas operaciones.
 
-- All changes require submission through the Core governance proposal process.
+- Todos los cambios requieren presentación a través del proceso de propuestas de gobernanza de Core.
 
-- Approved changes are applied immediately on the next transaction following confirmation.
+- Los cambios aprobados se aplican inmediatamente en la siguiente transacción tras la confirmación.
 
-- There are no admin overrides or emergency keys.
+- No existen mecanismos de admin overrides ni llaves de emergencia.
 
-#### Validation Rules
+#### Reglas de Validación
 
-##### Configuration Constraints
+##### Constraints de Configuración
 
-- Maximum 5 reward recipients per event/function
-- Maximum 5 events per contract configuration
-- Maximum 5 functions per contract configuration
-- Maximum 1,000,000 gas per event/function
-- Reward percentages must sum to exactly 10,000 (100%)
-- No duplicate contract addresses
-- At least one event or function is required
-- All addresses must be valid (non-zero)
+- Máximo 5 destinatarios de recompensas por event/function
+- Máximo 5 events por configuración de contrato
+- Máximo 5 functions por configuración de contrato
+- Máximo 1,000,000 gas por event/function
+- Los porcentajes de recompensas deben sumar exactamente 10,000 (100%)
+- No se permiten direcciones de contrato duplicadas
+- Se requiere al menos un event o function
+- Todas las direcciones deben ser válidas (no nulas / non-zero)
 
 ##### Governance Controls
 
-- All modifications to the configurations can only be made by the Core DAO
-- All changes require submission through governance proposals and approval
-- Changes take effect on the next transaction after approval and implementation of the new modifications
-- No emergency or admin override mechanisms
+- Todas las modificaciones de configuraciones solo pueden ser realizadas por la Core DAO
+- Todos los cambios requieren presentación mediante propuestas de gobernanza y aprobación
+- Los cambios entran en vigor en la siguiente transacción después de la aprobación e implementación
+- No existen mecanismos de emergencia ni admin override
 
-## Security Model
+## Modelo de Seguridad
 
-### Access Control
+### Control de Acceso
 
-- **Core DAO Approval**: All configuration changes require Core DAO’s approval of the proposal
-- **No Admin Keys**: No backdoors or emergency access mechanisms
-- **Immutable Logic**: Core’s Rev+ logic cannot be modified without a hardfork
+- **Core DAO Approval**: Todos los cambios de configuración requieren la aprobación de la propuesta por parte de la Core DAO
+- **Sin Admin Keys**: No existen backdoors ni mecanismos de acceso de emergencia
+- **Lógica Inmutable**: La lógica de Rev+ en Core no puede modificarse sin un hardfork
 
-### Economic Security
+### Seguridad Económica
 
-- **Bounded Distribution**: Maximum gas limits prevent excessive fee drainage
-- **Percentage Validation**: All distributions must sum to exactly 100%
-- **Block Limit Preservation**: Total block processing capacity remains unchanged
+- **Distribución limitada**: Los límites máximos de gas previenen un drenaje excesivo de comisiones
+- **Validación de porcentajes**: Todas las distribuciones deben sumar exactamente 100%
+- **Preservación del límite de bloque**: La capacidad total de procesamiento por bloque permanece sin cambios
 
-### Event Matching Security
+### Seguridad en la Coincidencia de Eventos
 
-- **Exact Signature Matching**: Uses cryptographic event signature hashes
-- **Log Verification**: Only processes verified transaction logs
-- **Contract Address Binding**: Configurations tied to specific contract addresses
+- **Coincidencia exacta de firmas**: Se utilizan hashes criptográficos de firmas de eventos
+- **Verificación de logs**: Solo se procesan transaction logs verificados
+- **Contract Address Binding**: Las configuraciones están vinculadas a direcciones específicas de contrato
 
 ## Performance Considerations
 
-### Gas Overhead
+### Sobrecarga de gas
 
-- Rev+ logic adds minimal computational overhead per transaction
-- Event signature matching uses efficient hash lookups
-- Distribution calculations are simple arithmetic operations
+- La lógica de Rev+ añade una sobrecarga computacional mínima por transacción
+- La coincidencia de firmas de eventos utiliza búsquedas de hash eficientes
+- Los cálculos de distribución son operaciones aritméticas simples
 
-### Scalability
+### Escalabilidad
 
-- Supports concurrent processing of multiple configured contracts
-- Event matching scales linearly with the number of configurations
-- No state bloat from historical distribution records
+- Soporta procesamiento concurrente de múltiples contratos configurados
+- La coincidencia de eventos escala linealmente con el número de configuraciones
+- No se genera state bloat a partir de registros históricos de distribución
 
-### Network Impact
+### Impacto en la red
 
-- Block production time remains unchanged
-- Transaction throughput maintained at 50M gas per block
-- Distributed gas accounting prevents network congestion
+- El tiempo de producción de bloques permanece sin cambios
+- El throughput de transacciones se mantiene en 50M de gas por bloque
+- La contabilización de gas distribuido previene la congestión de la red
 
