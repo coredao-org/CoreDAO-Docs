@@ -170,6 +170,10 @@ L'utilisateur sera invité à examiner et à approuver la transaction depuis son
 
 4. Après l'approbation de la transaction, les utilisateurs peuvent également consulter les détails de la transaction sur le BTC Explorer.
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 En suivant ce guide, vous avez réussi à redéléguer les BTC mis en staking avec verrouillage temporel expiré sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de verrouillage temporel auto-custodial de Core pour BTC et de la sécurité leader de l'industrie de Ledger, renforcée par Clear Signing via l'application Ledger Core, offre une transparence, une confiance et une sécurité maximales. Votre redélégation réussie pour le staking de BTC signifie que vos BTC continuent à participer à l'écosystème décentralisé de Core sans jamais quitter votre garde.
