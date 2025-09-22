@@ -32,30 +32,30 @@ Para referencia, también puedes consultar el [repositorio de GitHub CoreDAO-Lay
 
 1. **Inicializa tu Proyecto**
 
-  ```js
-  npx create-lz-oapp@latest
-  # Choose "OFT example" and "pnpm"
-  cd your-project-name
+   ```js
+   npx create-lz-oapp@latest
+   # Choose "OFT example" and "pnpm"
+   cd your-project-name
 
-  ```
+   ```
 
 2. **Configurar Redes**
 
-  Actualiza `hardhat.config.ts`con la configuración de Core y otras redes EVM:
+   Actualiza `hardhat.config.ts`con la configuración de Core y otras redes EVM:
 
-  ```typescript
-  // Example for CoreDAO
-  'coredao-mainnet': {
-    eid: EndpointId.COREDAO_V2_MAINNET,
-    url: process.env.RPC_URL_COREDAO || 'https://rpc.coredao.org',
-    accounts: [process.env.PRIVATE_KEY]
-  },
-  'coredao-testnet': {
-    eid: EndpointId.COREDAO_V2_TESTNET,
-    url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test2.btcs.network',
-    accounts: [process.env.PRIVATE_KEY]
-  },
-  ```
+   ```typescript
+   // Example for CoreDAO
+   'coredao-mainnet': {
+     eid: EndpointId.COREDAO_V2_MAINNET,
+     url: process.env.RPC_URL_COREDAO || 'https://rpc.coredao.org',
+     accounts: [process.env.PRIVATE_KEY]
+   },
+   'coredao-testnet': {
+     eid: EndpointId.COREDAO_V2_TESTNET,
+     url: process.env.RPC_URL_COREDAO_TESTNET || 'https://rpc.test2.btcs.network',
+     accounts: [process.env.PRIVATE_KEY]
+   },
+   ```
 
 ## Despliegue de Contratos OFT
 
@@ -85,60 +85,60 @@ contract MyOFT is OFT {
 
 1. **Desplegar en la Red Core**
 
-  ```bash
-  npx hardhat lz:deploy
-  # Select 'coredao-mainnet' or 'coredao-testnet'
-  ```
+   ```bash
+   npx hardhat lz:deploy
+   # Select 'coredao-mainnet' or 'coredao-testnet'
+   ```
 
 2. **Verificar Despliegue (Opcional)**
 
-  ```bash
-  npx hardhat verify --network coredao-mainnet DEPLOYED_CONTRACT_ADDRESS
-  ```
+   ```bash
+   npx hardhat verify --network coredao-mainnet DEPLOYED_CONTRACT_ADDRESS
+   ```
 
 ## Configuración de Conexiones Cross-Chain
 
 1. **Crear la Configuración de Pathways de LayerZero**
 
-  En `layerzero.config.ts`:
+   En `layerzero.config.ts`:
 
-  ```typescript
-  const pathways: TwoWayConfig[] = [
-    [
-      optimismContract, //Chain A contract
-      coredaoContract, //Chain B contract
-      [["LayerZero Labs"], []], // DVN configuration
-      [1, 1], // [A to B confirmations, B to A confirmations]
-      [EVM_ENFORCED_OPTIONS, EVM_ENFORCED_OPTIONS],
-    ],
-  ];
-  ```
+   ```typescript
+   const pathways: TwoWayConfig[] = [
+     [
+       optimismContract, //Chain A contract
+       coredaoContract, //Chain B contract
+       [["LayerZero Labs"], []], // DVN configuration
+       [1, 1], // [A to B confirmations, B to A confirmations]
+       [EVM_ENFORCED_OPTIONS, EVM_ENFORCED_OPTIONS],
+     ],
+   ];
+   ```
 
 2. **Conectar las Conexiones**
 
-  ```bash
-  npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
-  ```
+   ```bash
+   npx hardhat lz:oapp:wire --oapp-config layerzero.config.ts
+   ```
 
 3. **Verificar Peers**
 
-  ```bash
-  npx hardhat lz:oapp:peers:get --oapp-config layerzero.config.ts
-  ```
+   ```bash
+   npx hardhat lz:oapp:peers:get --oapp-config layerzero.config.ts
+   ```
 
 ## Ejecución de Transferencias de Tokens Cross-Chain
 
 Para enviar tokens entre cadenas usando la tecnología de LayerZero, necesitarás crear una tarea custom de Hardhat.
 
 1. **Crear la Carpeta de Tareas**
-  En la raíz de tu proyecto, crea una carpeta llamada **tasks** si aún no existe.
+   En la raíz de tu proyecto, crea una carpeta llamada **tasks** si aún no existe.
 
 ```shell
 mkdir tasks
 ```
 
 2. **Crear el Task File**
-  Dentro del directorio tasks, crea un archivo llamado:
+   Dentro del directorio tasks, crea un archivo llamado:
 
 ```bash
 sendOFT.ts
@@ -264,9 +264,9 @@ task("lz:oft:send", "Send tokens cross-chain using LayerZero technology")
 
 4. **Ejecutar Transferencia Cross-chain**
 
-  Vuelve a tu archivo `hardhat.config.ts` y descomenta: import './tasks/sendOFT
+   Vuelve a tu archivo `hardhat.config.ts` y descomenta: import './tasks/sendOFT
 
-  Abre tu terminal en el directorio raíz de tu proyecto de trabajo y ejecuta el siguiente comando:
+   Abre tu terminal en el directorio raíz de tu proyecto de trabajo y ejecuta el siguiente comando:
 
 ```shell
 npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a coredao-mainnet --network-b desired-network --amount 100 --private-key <PRIVATE_KEY>
@@ -274,7 +274,7 @@ npx hardhat lz:oft:send --contract-a 0x… --recipient-b 0x… --network-a cored
 
 5. **Rastrear Transferencias**
 
-  Utiliza [LayerZero Scan Explorer](https://layerzeroscan.com) para monitorear transacciones cross-chain:
+   Utiliza [LayerZero Scan Explorer](https://layerzeroscan.com) para monitorear transacciones cross-chain:
 
 ```
 https://layerzeroscan.com/tx/TX_HASH
