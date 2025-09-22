@@ -1,10 +1,10 @@
 ---
-sidebar_label: Maintenance des Node
+sidebar_label: Maintenance des Nœuds
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Maintenance des nodes
+# Maintenance des nœuds
 
 ---
 
@@ -16,11 +16,11 @@ Il est conseillé à tous les clients de mettre à jour vers la dernière versio
 
 ### Élagage de l'État
 
-Selon les tests effectués, les performances des nodes complets se dégradent lorsque la taille de stockage atteint un volume élevé (environ 1,5 To, ce qui est une valeur expérimentale). Nous suggérons que les nodes complets maintiennent un stockage léger en élaguant les données stockées.
+Selon les tests effectués, les performances des nœuds complets se dégradent lorsque la taille de stockage atteint un volume élevé (environ 1,5 To, ce qui est une valeur expérimentale). Nous suggérons que les nœuds complets maintiennent un stockage léger en élaguant les données stockées.
 
 #### Règles pour l'Élagage
 
-1. **Ne pas essayer d'élaguer un nœud d'archive.** Les nodes d'archive doivent conserver **TOUTES** les données historiques par définition.
+1. **Ne pas essayer d'élaguer un nœud d'archive.** Les nœuds d'archive doivent conserver **TOUTES** les données historiques par définition.
 2. Assurez-vous qu'il reste au moins **40 Go** d'espace de stockage disponible sur le disque qui sera élagué. Des échecs ont été signalés avec **environ 25 Go** d'espace libre.
 3. Geth doit être entièrement synchronisé
 4. Geth doit avoir terminé la création d'un instantané datant d'au moins **128 blocs**. Cela est vrai lorsque la "génération d'instantané de l'état" n'est plus rapportée dans les journaux.
@@ -31,13 +31,11 @@ Selon les tests effectués, les performances des nodes complets se dégradent lo
 
 2. Exécuter la commande d'élagage
 
-```bash
-   nohup geth --datadir ~/node snapshot prune-state > . /prune.log 2>&1 &
-```
+   \`\`\`   	nohup geth --datadir ~/node snapshot prune-state > . /prune.log 2>&1 & \`
 
 3. Vérifier le fichier `prune.log`, attendre que l'opération d'élagage soit terminée, puis redémarrer Geth.
 
-Les mainteneurs doivent toujours avoir quelques nodes de secours en cas d'élagage de l'un des nodes. L'équipement matériel est également important. **Assurez-vous que le SSD répond aux spécifications suivantes : 4 To d'espace disque libre, SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1ms**.
+Les mainteneurs doivent toujours avoir quelques nœuds de secours en cas d'élagage de l'un des nœuds. L'équipement matériel est également important. **Assurez-vous que le SSD répond aux spécifications suivantes : 4 To d'espace disque libre, SSD, gp3, 8k IOPS, 250 Mo/s de débit, latence de lecture \<1ms**.
 
 ### Élagage des Données Anciennes en Temps Réel
 

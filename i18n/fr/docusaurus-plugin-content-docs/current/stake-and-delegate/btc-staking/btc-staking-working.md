@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Fonctionnement du Self Custodial Bitcoin Staking {#how-self-custodial-bitcoin-staking-works}
+# Fonctionnement du staking Bitcoin non-custodial {#how-self-custodial-bitcoin-staking-works}
 
 ---
 
@@ -87,7 +87,7 @@ Votre transaction de staking CLTV doit inclure :
 
 - Confirmation Bitcoin: Le même jour après 6 blocs
 - Le staking devient actif: 00h00 UTC+0 le lendemain
-- Début de l'accumulation des récompenses : À partir du premier tour actif
+- Début de l'accumulation des récompenses: À partir du premier tour actif
 
 ## Bonnes pratiques
 

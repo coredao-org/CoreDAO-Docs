@@ -14,47 +14,47 @@ Según tus objetivos, existen varias configuraciones posibles de nodo en la red 
 
 - **Si quieres participar en la gobernanza de la red Core**
 
-    - [**Inicia un Nodo Validador**](./config/validator-node-config.md)
+  - [**Inicia un Nodo Validador**](./config/validator-node-config.md)
 
 - **Si quieres ejecutar un nodo en la red Core para uso privado**
-    - [**Inicia un nodo completo normal**](./config/full-node.md)
+  - [**Inicia un nodo completo normal**](./config/full-node.md)
 
 - **Si deseas enviar transacciones o consultar la cadena directamente desde tu propio nodo de la blockchain Core**
 
-    - [**Iniciar un nodo RPC**](./config/rpc-node-config.md)
+  - [**Iniciar un nodo RPC**](./config/rpc-node-config.md)
 
 - **Si deseas solicitar datos históricos de la cadena desde el bloque génesis**
 
-    - [**Iniciar un nodo de arhivo**](./config/archive-node-config.md)
+  - [**Iniciar un nodo de arhivo**](./config/archive-node-config.md)
 
 - **Si desea ayudar a los operadores de nodos a sincronizarse rápidamente con la red**
 
-    - [**Iniciar un nodo de snapshot**](./config/snapshot-node-config.md)
+  - [**Iniciar un nodo de snapshot**](./config/snapshot-node-config.md)
 
 ## Tipos de nodos en la red Core
 
 1. **Nodos Completos Normales:**
-    - **Rol:** Los Nodos Completos Normales mantienen una copia completa y en tiempo real del libro mayor de la blockchain, validan transacciones y apoyan la red retransmitiendo datos de bloques y transacciones. Son útiles para uso privado.
+   - **Rol:** Los Nodos Completos Normales mantienen una copia completa y en tiempo real del libro mayor de la blockchain, validan transacciones y apoyan la red retransmitiendo datos de bloques y transacciones. Son útiles para uso privado.
 
-    - **Requisitos:** Operar un Nodo Completo requiere recursos computacionales y de almacenamiento significativos para manejar todos los datos de la blockchain y el tráfico continuo de la red.
+   - **Requisitos:** Operar un Nodo Completo requiere recursos computacionales y de almacenamiento significativos para manejar todos los datos de la blockchain y el tráfico continuo de la red.
 
 2. **Validadores:**
-    - **Rol:** Los Validadores son fundamentales para la seguridad de la red, ya que producen bloques y validan transacciones dentro del marco de consenso de la blockchain Core. Esencialmente, son nodos completos ejecutándose en modo validador.
-    - **Requisitos:** los validadores deben hacer stake de un mínimo de 10,000 tokens CORE para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
-    - **Incentivos:** Los Validadores ganan recompensas en tokens CORE por su papel activo en el mantenimiento y la seguridad de las operaciones de la red.
+   - **Rol:** Los Validadores son fundamentales para la seguridad de la red, ya que producen bloques y validan transacciones dentro del marco de consenso de la blockchain Core. Esencialmente, son nodos completos ejecutándose en modo validador.
+   - **Requisitos:** los validadores deben hacer stake de un mínimo de 10,000 tokens CORE para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
+   - **Incentivos:** Los Validadores ganan recompensas en tokens CORE por su papel activo en el mantenimiento y la seguridad de las operaciones de la red.
 
 3. **Nodos RPC:**
-    - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
-    - **Importancia:** Son esenciales para el desarrollo y operación de aplicaciones descentralizadas (DApps) y para el acceso externo a los datos de blockchain.
+   - **Rol:** Los nodos RPC proporcionan una interfaz de programación de aplicaciones (API) para que los desarrolladores y aplicaciones externas interactúen con la cadena de bloques, facilitando consultas y transacciones.
+   - **Importancia:** Son esenciales para el desarrollo y operación de aplicaciones descentralizadas (DApps) y para el acceso externo a los datos de blockchain.
 
 4. **Nodos de archivo:**
-    - **Rol:**Los nodos archive almacenan toda la historia de la blockchain, incluyendo todos los estados y transacciones desde el bloque génesis, proporcionando un recurso valioso para consultas históricas profundas.
-    - **Requisitos:** Estos nodos requieren una gran capacidad de almacenamiento, ya que mantienen todos los estados actuales y vencidos de la cadena de bloques, lo que los hace consumir muchos recursos.
-    - **Uso:** Los nodos archive son esenciales para desarrolladores que requieren acceso a todos los datos históricos de la blockchain para análisis, auditorías y consultas avanzadas.
+   - \*\*Rol:\*\*Los nodos archive almacenan toda la historia de la blockchain, incluyendo todos los estados y transacciones desde el bloque génesis, proporcionando un recurso valioso para consultas históricas profundas.
+   - **Requisitos:** Estos nodos requieren una gran capacidad de almacenamiento, ya que mantienen todos los estados actuales y vencidos de la cadena de bloques, lo que los hace consumir muchos recursos.
+   - **Uso:** Los nodos archive son esenciales para desarrolladores que requieren acceso a todos los datos históricos de la blockchain para análisis, auditorías y consultas avanzadas.
 
 5. **Nodo snapshot:**
-    - **Función:** Los nodos snapshot mantienen capturas de la blockchain en varios intervalos. Estas capturas de estado guardan el estado de la blockchain en una altura de bloque específica, proporcionando un punto de restauración para nodos Full o nuevos nodos.
-    - **Beneficios:** Proporcionan un medio para una rápida sincronización y recuperación de otros nodos en la red, mejorando la resiliencia y escalabilidad de la infraestructura de la red.
+   - **Función:** Los nodos snapshot mantienen capturas de la blockchain en varios intervalos. Estas capturas de estado guardan el estado de la blockchain en una altura de bloque específica, proporcionando un punto de restauración para nodos Full o nuevos nodos.
+   - **Beneficios:** Proporcionan un medio para una rápida sincronización y recuperación de otros nodos en la red, mejorando la resiliencia y escalabilidad de la infraestructura de la red.
 
 ## Importancia de cada tipo de nodo
 

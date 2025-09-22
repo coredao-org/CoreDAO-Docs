@@ -19,7 +19,7 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}>
+]}> 
 <TabItem value="testnet2">
 
 ### Core Testnet2 (1114 (0x45a))
@@ -30,6 +30,7 @@ Nota: Esta es la testnet más reciente y oficialmente compatible para la blockch
 
 - https://rpc.test2.btcs.network
 - https://rpcar.test2.btcs.network (Para Archive Node)
+- wss://rpc.test2.btcs.network/wsp (WebSocket Support)
 
 </TabItem>
 
@@ -43,7 +44,6 @@ Nota: Esta es la testnet más reciente y oficialmente compatible para la blockch
 
 </TabItem>
 </Tabs>
-
 
 ### Endpoints RPC de terceros para Core Mainnet
 

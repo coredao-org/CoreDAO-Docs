@@ -27,8 +27,8 @@ Une fois que votre nœud est en cours d'exécution et synchronisé, vous pouvez 
 
 1. **Naviguer vers le site Web de staking:** Le moyen le plus simple pour enregistrer un nouveau validateur est d'utiliser les sites Web de staking officiels de Core:
 
-    - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
-    - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
+   - [Core Mainnet Staking website](https://stake.coredao.org/become-validator)
+   - [Core Testnet Staking website](https://stake.test2.btcs.network/become-validator)
 
 2. Connecter votre portefeuille : Sur le site Web de staking, cliquez sur Connecter le portefeuille dans le coin supérieur droit et connectez votre portefeuille (comme MetaMask, Ledger, etc.) qui contient les jetons CORE nécessaires.
 
@@ -40,12 +40,12 @@ Une fois votre portefeuille connecté, le bouton Enregistrer apparaîtra. En cli
 
 Fournissez les informations pour chaque champ du formulaire :
 
-- Adresse de consensus : l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
-- Adresse de frais : l'adresse utilisée pour collecter les frais de commission.
-- **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
+- **Adresse de consensus**: l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
+- **Adresse de frais**: l'adresse utilisée pour collecter les frais de commission.
+- **Commission**: les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
+- **Dépôt total**: le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de 10 000 CORE.
 
-5. Soumettre l'inscription : Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
+5. **Soumettre l'inscription**: Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
 
 ## Confirmation de l'Enregistrement
 
@@ -73,17 +73,17 @@ Le statut du validateur est mis à jour quotidiennement à 00h00 UTC. Vous pouve
 
 - Actif/Refus : Le validateur est élu pour la ronde actuelle mais a refusé d'accepter les délégations. Non qualifié pour la prochaine élection.
 
-- **`Actif/Emprisonné`:** Validateur élu dans le tour actuel, mais emprisonné en raison d'un délit et non qualifié pour la prochaine élection.
+- **Actif/Emprisonné:** Validateur élu dans le tour actuel, mais emprisonné en raison d'un délit et non qualifié pour la prochaine élection.
 
-- **Inactif/En attente:** Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
+- **Inactif/En attente**: Le validateur est enregistré mais pas élu. Qualifié pour la prochaine élection.
 
-- **Inactif/Refus :** Le validateur est enregistré mais a refusé la délégation. Non qualifié pour la prochaine élection.
+- **Inactif/Refus**: Le validateur est enregistré mais a refusé la délégation. Non qualifié pour la prochaine élection.
 
-- **Inactif/Emprisonné :** Le validateur est enregistré mais est emprisonné et n'est pas qualifié pour la prochaine élection.
+- **Inactif/Emprisonné**: Le validateur est enregistré mais est emprisonné et n'est pas qualifié pour la prochaine élection.
 
-- **Inactif/Vérouillé :** Le validateur est enregistré mais n'a pas satisfait aux exigences de dépôt minimum. Non qualifié pour la prochaine élection.
+- **Inactif/Vérouillé**: Le validateur est enregistré mais n'a pas satisfait aux exigences de dépôt minimum. Non qualifié pour la prochaine élection.
 
-- **Inactif/Invalide :** Le validateur n'est pas enregistré.
+- **Inactif/Invalide**: Le validateur n'est pas enregistré.
 
 ## Surveillez les performances de votre validateur
 
@@ -97,7 +97,7 @@ Vous pouvez attribuer un nom lisible par l'homme à votre nœud de validation en
 
 ### Étapes pour définir ou mettre à jour votre nom de validateur
 
-1. **Access the Staking Website:** naviguez vers le tableau de bord des [validateurs](https://stake.coredao.org/validators).
+1. **Access the Staking Website:** naviguez vers le tableau de bord des validateurs(https://stake.coredao.org/validators).
 2. **Localisez votre validateur:** Identifiez l'entrée de votre validateur dans la liste. Par défaut, les validateurs sont répertoriés par leur 'Fee Address' associée.
 3. **Ouvrez les détails du validateur:** Cliquez sur votre validateur pour ouvrir la page des détails du validateur.
 4. **Accédez au menu de mise à jour:** Sur la page des détails du validateur, cliquez sur le bouton de menu (trois points verticaux) à côté du bouton Stake et sélectionnez "Update Name" dans le menu déroulant.
@@ -118,7 +118,7 @@ Vous pouvez attribuer un nom lisible par l'homme à votre nœud de validation en
 ![validator-rename-menu](../../../../../../static/img/validator/register/validator-rename-3.png)
 </p>
 
-6. ***Soumettez la mise à jour:** Après avoir vérifié les informations saisies, soumettez la transaction pour finaliser la mise à jour. Une fois que la transaction est confirmée sur la chaîne, le nom mis à jour sera reflété dans la liste des validateurs.
+6. **Soumettez la mise à jour:** Après avoir vérifié les informations saisies, soumettez la transaction pour finaliser la mise à jour. Une fois que la transaction est confirmée sur la chaîne, le nom mis à jour sera reflété dans la liste des validateurs.
 
 ## Maintenance de votre nœud de validation
 

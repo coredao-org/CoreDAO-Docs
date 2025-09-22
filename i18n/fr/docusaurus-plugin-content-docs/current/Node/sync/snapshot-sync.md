@@ -1,14 +1,14 @@
 ---
-sidebar_label: Synchronisation des nodes Core
+sidebar_label: Synchronisation des nœuds Core
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Synchronisation des nodes Core
+# Synchronisation des nœuds Core
 
 ---
 
-Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état le plus récent de la blockchain Core de plusieurs manières. Ce document vous guide à travers le processus de synchronisation des nodes sur le réseau Core.
+Sur le réseau Core, vous pouvez synchroniser votre nœud avec l'état le plus récent de la blockchain Core de plusieurs manières. Ce document vous guide à travers le processus de synchronisation des nœuds sur le réseau Core.
 
 ## Synchronisation à partir d'un snapshot (recommandé)
 

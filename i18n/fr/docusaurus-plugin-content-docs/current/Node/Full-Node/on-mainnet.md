@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Exécution des nodes complets Core sur le Mainnet de Core
+# Exécution des nœuds complets Core sur le Mainnet de Core
 
 ---
 
@@ -15,20 +15,20 @@ Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Co
 - **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
 :::note
-Ce document fournit des lignes directrices détaillées sur l'exécution des nodes complets normaux sur le réseau Core.
+Ce document fournit des lignes directrices détaillées sur l'exécution des nœuds complets normaux sur le réseau Core.
 :::
 
-## Configuration système requise pour les nodes complets sur le réseau Core
+## Configuration système requise pour les nœuds complets sur le réseau Core
 
 Il existe plusieurs exigences système pour configurer un nœud complet sur Core.
 
-### Spécifications logicielles pour les nodes complets sur le Mainnet de Core
+### Spécifications logicielles pour les nœuds complets sur le Mainnet de Core
 
 - Actuellement, un nœud complet Core ne peut fonctionner que sous **Mac OS X** et **Linux**.
 
-### Spécifications matérielles pour les nodes complets sur le Mainnet de Core
+### Spécifications matérielles pour les nœuds complets sur le Mainnet de Core
 
-Les nodes Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nodes pairs et la réponse aux demandes réseau. Pour les nodes complets sur le **mainnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
+Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Pour les nœuds complets sur le **mainnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
 
 | Requis           | Détails                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |

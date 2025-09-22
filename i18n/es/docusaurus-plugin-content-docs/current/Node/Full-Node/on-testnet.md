@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Ejecución de nodos completos de Core en Core Testnet
+# Ejecución de Nodos Completos en Core Testnet
 
 ---
 
@@ -15,41 +15,41 @@ Un nodo completo de Core almacena el historial completo de la cadena de bloques 
 - **Nodo completo RPC**: Proporciona servicios RPC y responde a solicitudes HTTP.
 
 :::note
-Este documento proporciona una guía detallada sobre cómo ejecutar nodos completos normales en la red Core.
+Este documento proporciona una guía detallada para ejecutar Nodos Completos Normales en la red Core.
 :::
 
-## Requisitos del sistema
+## Requisitos del Sistema
 
-Existen varios requisitos de sistema para configurar un nodo completo en Core.
+Existen varios requisitos de sistema para configurar un Nodo Completo en Core.
 
-### Especificaciones de software para nodos completos en Core Testnet
+### Especificaciones de Software para nodos completos en Core Testnet
 
-Actualmente, **_solo_** se admite la ejecución en **macOS** y **Linux**.
+Actualmente, **_solo_** se admiten ejecuciones en sistemas operativos **Mac OS X** y **Linux**.
 
 ### Especificaciones de hardware para nodos completos en Core Testnet
 
-Para los nodos completos en**Core Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
+Para los nodos completos en **Core Testnet**, se recomiendan las siguientes especificaciones mínimas de hardware:
 
-| Requisitos            | Detalles                                                                     |
-| --------------------- | ---------------------------------------------------------------------------- |
-| Almacenimiento        | 1 TB de espacio libre en disco                                               |
-| CPU                   | CPU 4 nucleos                                                                |
-| RAM                   | 8 gigabytes                                                                  |
-| Velocidad de Internet | Conexión a Internet de banda ancha con velocidades de 5Mbps de subida/bajada |
+| Requisitos            | Detalles                                                                          |
+| --------------------- | --------------------------------------------------------------------------------- |
+| Almacenimiento        | 1 TB de espacio libre en disco                                                    |
+| CPU                   | CPU de 4 nucleos                                                                  |
+| RAM                   | 8 gigabytes                                                                       |
+| Velocidad de Internet | Una conexión a Internet de banda ancha con velocidades de carga/descarga de 5Mbps |
 
-## Construya y ejecute un nodo completo en Core Testnet
+## Construir y Ejecutar un Nodo Completo en Core Testnet
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1. Recomendamos utilizar el repositorio de GitHub [core-chain](https://github.com/coredao-org/core-chain) para compilar y ejecutar tu nodo completo directamente desde el código base de la blockchain. Las instrucciones para crear el código fuente se pueden encontrar en el [README](https://github.com/coredao-org/core-chain#building-the-source) del repositorio.
 
-2. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the testnet and mainnet configuration files, amke sure to use the **testnet2** configuration files. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing a full node is to sync from the _genesis block_.
+2. Descarga el binario más reciente del nodo para Core Testnet desde el [repositorio de versiones](https://github.com/coredao-org/core-chain/releases/latest) en GitHub de Core. El binario del nodo incluye los archivos de configuración para testnet y mainnet; asegúrate de utilizar las configuraciones correspondientes a **testnet2**. Descargue el último snapshot para testnet desde [aquí](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Tenga en cuenta que el método recomendado para sincronizar un nodo completo es sincronizar desde el _bloque génesis_.
 
-3. Write the genesis state locally by executing the following command from your project directory:
+3. Escribe el estado génesis localmente ejecutando el siguiente comando desde tu directorio del proyecto:
 
 ```bash
 geth --datadir node init genesis.json
 ```
 
-You should see the following output:
+Deberías ver la siguiente salida:
 
 ```bash
 INFO [07-18|14:57:20.715] Maximum peer count                       ETH=25 LES=0 total=25
@@ -63,13 +63,13 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. Now that the full node configuration is completed, let's start running it!
+4. ¡Ahora que la configuración del nodo completo está completa, es momento de ejecutarlo!
 
-Execute the following `geth` command to run the fun node:
+Ejecuta el siguiente comando `geth` para iniciar el nodo completo:
 
 ```bash
 ## start a full node
 geth --config ./config.toml --datadir ./node  --cache 8000
 ```
 
-5. While the full node is running, you can monitor its logs to ensure that everything is operating correctly. The log file is located at `/node/logs/core.log` by default, but can be changed to another location if desired.
+5. Mientras el nodo completo esté en ejecución, puedes monitorear sus registros para asegurarnos de que todo esté funcionando correctamente. El archivo de log se encuentra, por defecto, en `/node/logs/core.log`, aunque puede cambiarse a otra ubicación si así se desea.

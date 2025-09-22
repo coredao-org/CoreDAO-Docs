@@ -24,7 +24,7 @@ Actualmente, Satoshi Plus se beneficia de la seguridad proporcionada por ~75% de
 
 ## Tecnología Core
 
-### Satoshi Plus Consensus
+###
 
 Este innovador mecanismo de consenso combina Delegated Proof of Work (DPoW), Self-Custodial Bitcoin Staking y Delegated Proof of Stake (DPoS) Incorporando así a mineros de Bitcoin, stakers de Bitcoin y stakers de CORE, respectivamente, en la elección de validadores de Core. Cada una de estas tres partes de Satoshi Plus introduce una nueva capa de seguridad y alineación de incentivos.
 
@@ -55,8 +55,8 @@ La blockchain de Core cuenta con un proceso de gobernanza on-chain fundamental. 
 ## Ecosistema de Builders de Core
 
 - [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
-- [Core Ignition](https://ignition.coredao.org/)
-- [Core Ignition Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
+- [Core Missions](https://coredao.org/blog/the-future-of-core-incentive-campaigns)
+- [Core Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
 - [Core Commit Program](https://coredao.org/initiatives/commit-program)
 

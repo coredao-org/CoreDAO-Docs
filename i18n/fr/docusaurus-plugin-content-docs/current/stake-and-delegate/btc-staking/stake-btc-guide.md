@@ -8,7 +8,7 @@ sidebar_position: 2
 
 Ce guide utilisateur est conçu pour vous accompagner dans le staking de votre Bitcoin sur la blockchain Core afin de gagner des récompenses en tokens CORE.
 
-## Prérequis {#prerequisites}
+## Prérequis
 
 Pour pouvoir staker, vous devez disposer des éléments suivants :
 
@@ -22,23 +22,23 @@ Les points suivants sont des éléments clés auxquels les utilisateurs doivent 
 1. **Montant minimum de Bitcoin \+ frais de gas :** Le montant minimum de BTC requis pour le staking sur Core dépend de la méthode choisie. Si vous utilisez l'interface utilisateur officielle du site, vous devez staker au moins 0,01 BTC (hors frais de transaction). Il n'y a aucune exigence minimale lors du staking via script. De plus, les utilisateurs doivent prendre en compte les frais de gas en Bitcoin nécessaires aux transactions. Pour un staking de moins d'un mois, il est recommandé de disposer d'au moins 0,05 BTC afin de couvrir une éventuelle congestion du réseau, qui pourrait augmenter les frais de gas au-delà des récompenses de staking perçues.
 2. **Durée minimale de staking :** La durée minimale de staking dépend de la méthode utilisée. L'interface utilisateur officielle impose un minimum de 5 jours, tandis le script ne comporte aucune période de blocage.
 3. **Comprendre les Différences dans les Adresses de Staking de Bitcoin :**
-  - L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
+   - L'adresse de staking dans l'invite de transaction de votre portefeuille Bitcoin peut différer de votre adresse Bitcoin d'origine. Cela est dû au fait que l'adresse de staking de Bitcoin est dérivée de la clé privée principale de votre portefeuille Bitcoin, garantissant le contrôle et la sécurité de vos actifs. Vos Bitcoins restent en sécurité dans l'adresse de staking de Bitcoin, non affectés par le staking.
 4. **Délais pour que les Actifs Verrouillés Apparaissent dans votre Portefeuille Bitcoin :**
-  - Vous pouvez rencontrer des délais avant que votre Bitcoin verrouillé ne soit affiché dans vos portefeuilles Bitcoin. Ce délai résulte principalement de retards dans la confirmation des transactions sur le réseau Bitcoin, qui peuvent prendre plusieurs heures en raison du temps de bloc, du nombre de confirmations de blocs requises et de la congestion du réseau.
-  - Bien que nous travaillions activement avec les partenaires de portefeuilles pour soutenir l'affichage en temps opportun de vos actifs dans vos portefeuilles, vous pouvez vérifier vos actifs verrouillés sur la page "MyStaking" sur le site de staking de Core.
-  - Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space/).
+   - Vous pouvez rencontrer des délais avant que votre Bitcoin verrouillé ne soit affiché dans vos portefeuilles Bitcoin. Ce délai résulte principalement de retards dans la confirmation des transactions sur le réseau Bitcoin, qui peuvent prendre plusieurs heures en raison du temps de bloc, du nombre de confirmations de blocs requises et de la congestion du réseau.
+   - Bien que nous travaillions activement avec les partenaires de portefeuilles pour soutenir l'affichage en temps opportun de vos actifs dans vos portefeuilles, vous pouvez vérifier vos actifs verrouillés sur la page "MyStaking" sur le site de staking de Core.
+   - Vous pouvez également visualiser vos fonds stakés en recherchant l'adresse de staking sur un explorateur Bitcoin, comme [Mempool.space](https://mempool.space/).
 5. **Considérations pour les Périodes de Verrouillage**
-  - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
+   - Une fois que vous avez verrouillé vos Bitcoins pour le staking, ils sont inaccessibles jusqu'à la fin de la période de staking. En tenant compte de vos objectifs d'investissement et de votre tolérance au risque, il vous est conseillé de choisir judicieusement votre période de verrouillage. Commencer avec des périodes de verrouillage plus courtes peut vous aider à vous familiariser avec le processus avant de vous engager sur des durées plus longues.
 6. **Types d'adresses Bitcoin prises en charge**
 
-  - Le jalonnement de BTC de Core prend en charge les formats d'adresse Bitcoin suivants :
+   - Le jalonnement de BTC de Core prend en charge les formats d'adresse Bitcoin suivants :
 
-    | Type d'adresse                            | Préfixe | Exemple (hypothétique)  |
-    | ----------------------------------------- | ------- | ------------------------------------------ |
-    | Legacy (P2PKH)         | 1       | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
-    | Nested SegWit (P2SH)   | 3       | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
-    | Native SegWit (Bech32) | bc1     | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
-    | Taproot (P2TR)         | bc1p    | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
+     | Type d'adresse                            | Préfixe | Exemple (hypothétique)  |
+     | ----------------------------------------- | ------- | ------------------------------------------ |
+     | Legacy (P2PKH)         | 1       | 1KFHE7w8BhaENAswwryaoccDb6qcT6DbYY         |
+     | Nested SegWit (P2SH)   | 3       | 3Ai1JZ8pdJb2ksieUV8FsxSNVJCpoPi8W6         |
+     | Native SegWit (Bech32) | bc1     | bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kygt080 |
+     | Taproot (P2TR)         | bc1p    | bc1p5cyxnuxmeuwuvkwfem96lkw4rfd4x0dc9kwljz |
 
 :::info
 Assurez-vous que votre portefeuille BTC utilise l'un des formats pris en charge ci-dessus lorsque vous participez au jalonnement BTC en auto-garde de Core. Vérifiez toujours l'adresse de votre portefeuille avant de jalonner.
@@ -46,13 +46,13 @@ Assurez-vous que votre portefeuille BTC utilise l'un des formats pris en charge 
 
 ## Déroulement du staking Non-custodial de BTC
 
-Le Self-Custodial Bitcoin staking introduit une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin gagnent des récompenses de staking. En verrouillant votre Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps, vous pouvez participer activement au mécanisme de consensus de la blockchain Core pendant le staking. Voici les étapes impliquées dans ce processus.
+Le staking de Bitcoin non-custodial introduit une méthode sécurisée et décentralisée pour que les détenteurs de Bitcoin gagnent des récompenses de staking. En verrouillant votre Bitcoin nativement sur le réseau Bitcoin via un mécanisme lié au temps, vous pouvez participer activement au mécanisme de consensus de la blockchain Core pendant le staking. Voici les étapes impliquées dans ce processus.
 
 1. **Initier le Staking :** Commencez par accéder soit à l'outil de [staking BTC basé sur l'outil CLI](https://github.com/coredao-org/btc-staking-tool) (pour les utilisateurs techniques), soit à la [plateforme de staking en ligne](https://stake.coredao.org/) (pour les utilisateurs généraux).
 2. **Staker du Bitcoin avec un Verrouillage Temporel :** Vous stakez vos Bitcoins en envoyant une transaction sur le réseau Bitcoin avec un paramètre de verrouillage temporel, et vos Bitcoin restent verrouillés jusqu'à la fin de la période spécifiée. Assurez-vous de suivre les exigences pour qu'une transaction soit valide et éligible ; référez-vous ici pour (../btc-staking/design.md) plus de détails.
-  1. **La durée minimale de staking dépend de la méthode choisie.** L'interface utilisateur officielle du site exige un minimum de 5 jours, tandis que le script ne comporte aucune période de blocage. Par conséquent, assurez-vous de choisir soigneusement vos périodes de blocage.
-  2. Incluez l'adresse du validateur Core pour déléguer vos actifs.
-  3. Incluez l'adresse de votre portefeuille Core pour les récompenses.
+   1. **La durée minimale de staking dépend de la méthode choisie.** L'interface utilisateur officielle du site exige un minimum de 5 jours, tandis que le script ne comporte aucune période de blocage. Par conséquent, assurez-vous de choisir soigneusement vos périodes de blocage.
+   2. Incluez l'adresse du validateur Core pour déléguer vos actifs.
+   3. Incluez l'adresse de votre portefeuille Core pour les récompenses.
 3. **Voter pour des Validateurs :** En incluant l'adresse des validateurs Core dans votre transaction, vous pouvez déléguer votre Bitcoin staké au validateur choisi sur la blockchain Core.
 4. **Connecter un portefeuille Core pour les récompenses :** Dans le champ de retour, vérifiez votre adresse de portefeuille Core ; vous recevrez les récompenses en tokens CORE à cette adresse.
 5. **Réclamer les Récompenses :** Les récompenses accumulées en tokens CORE apparaîtront également sur le [site de staking](http://stake.coredao.org/). Les récompenses en tokens CORE apparaîtront lorsque les utilisateurs connecteront leurs portefeuilles et pourront être réclamées quotidiennement. Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
@@ -127,7 +127,7 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 
 ### Confirmer la Sortie OP_Return
 
-11. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie OP\_Return est l'endroit où votre redeem\_script est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.
+11. Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie `OP_Return` est l'endroit où votre `RedeemScript` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.
 
 <p align="center" style={{zoom:"80%"}}>
 ![dual-staking-on-core](../../../../../../static/img/dual-staking/dual-staking-15.png
@@ -138,6 +138,39 @@ Remarque : Pour le staking de BTC, le transfert du validateur de staking interro
 
 <p align="center" >
 ![btc-staking-on-core](../../../../../../static/img/native-staking/native-staking-13.avif)
+</p>
+
+### Décodeur de transaction de mise en jeu BTC
+
+Les utilisateurs peuvent vérifier leurs transactions de staking BTC dans [Core Scan](https://scan.coredao.org/btc-stake-txn-decoder) :
+
+- Vérification de l'état de confirmation d'une transaction
+- Validation du format de sortie OP_RETURN
+- Confirmation de l'adresse du validateur cible
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../../../../static/img/btc-staking-txn-decoder/txn-decoder.png)
+</p>
+
+Cela vous permet de vérifier que votre transaction de staking BTC répond à toutes les exigences du protocole et identifie les problèmes potentiels si la transaction n'a pas été traitée par les relais du réseau Core.
+
+:::info
+Pour obtenir des informations détaillées sur le décodeur de transactions de staking BTC, y compris les problèmes courants et les solutions, consultez le [guide](../btc-staking-txn-decoder.md)pour plus de détails.
+:::
+
+### Comment utiliser
+
+1. **Coller le hachage de transaction :** Entrez le hachage de votre transaction de staking BTC dans l'outil de décodeur
+2. **Obtenir l'état de la transaction**: L'outil fournira l'état actuel de la transaction
+3. **Décoder les détails de la transaction**: Il décodera et affichera:
+   - Veuillez entrer l'adresse
+   - Adresse de sortie
+   - Détails de sortie OP_RETURN
+   - Adresse du validateur
+   - Adresse du délégant
+
+<p align="center" >
+![btc-staking-txn-decoder](../../../../../../static/img/btc-staking-txn-decoder/decoded-data.png)
 </p>
 
 ### Vérifier l'adresse de staking BTC

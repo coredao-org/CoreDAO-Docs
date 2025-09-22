@@ -7,8 +7,7 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Exécution de nodes de validation sur Core
-
+# Exécution de nœuds de validation sur Core
 ---
 
 Ce guide vous guide à travers le processus de configuration d'un nœud validateur sur le réseau Core. Il couvre l'installation des dépendances système, la construction du logiciel de nœud Core, l'initialisation avec des données de snapshot et le démarrage de votre nœud validateur.
@@ -28,8 +27,10 @@ defaultValue="testnet2"
 values={[
 {label: 'Testnet', value: 'testnet2'},
 {label: 'Mainnet', value: 'mainnet'},
-]}> <TabItem value="testnet2">
-Pour les nodes complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
+]}> 
+
+<TabItem value="testnet2">
+Pour les nœuds complets sur **Core Testnet2**, les spécifications matérielles minimales recommandées sont :
 
     | Exigences.   | Détails                                                                                                |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -41,7 +42,7 @@ Pour les nodes complets sur **Core Testnet2**, les spécifications matérielles 
   </TabItem>
 
   <TabItem value="mainnet">
-Pour les nodes Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
+Pour les nœuds Rpc sur le **Core Mainnet**, les spécifications matérielles minimales recommandées sont:
 
     | Exigences   | Détails                                                                                                   |  
     |----------------|---------------------------------------------------------------------------------------------------------|
@@ -49,8 +50,8 @@ Pour les nodes Rpc sur le **Core Mainnet**, les spécifications matérielles min
     | **CPU**            | Un minimum de 8 cœurs de processeur est recommandé. Les processeurs multi-cœurs permettent au nœud de gérer efficacement les opérations simultanées telles que la validation des transactions et la vérification des blocs.                                                                             |
     | **RAM**            | 32 Gigabytes                                                                                            |
     | **Internet Speed** | Une connexion Internet à large bande avec des vitesses de téléversement/téléchargement de 10 mégaoctets par seconde.                  |
-
-  </TabItem>
+  
+    </TabItem>
 </Tabs>
 
 ### Cloner le code de base de la Core Blockchain
@@ -77,7 +78,7 @@ Cela téléchargera et installera les dépendances nécessaires et construira le
 Il existe 2 approches pour configurer un nœud validateur à partir de zéro sur la Core blockchain:
 
 - **By Snapshot (Recommend):** téléchargez le dernier instantané de la Core blockchain (https://github.com/coredao-org/core-snapshots)et synchronisez le nœud en fonction de celui-ci.
-- **From Genesis (Not Recommend):** synchronisez l'ensemble des données de la Core blockchain à partir du [bloc Genesis](https://github.com/coredao-org/core-chain/releases/latest).
+- **From Genesis (Not Recommend):** synchronisez l'ensemble des données de la Core blockchain à partir du [bloc Genesis] (https://github.com/coredao-org/core-chain/releases/latest).
 
 :::tip
 La synchronisation à partir du bloc Genesis peut prendre un temps considérable. Il est recommandé de configurer un nœud Core en utilisant le dernier instantané pour accélérer le processus.
@@ -109,7 +110,7 @@ INFO [07-18|14:57:20.729] Persisted trie from memory database      nodes=25 size
 INFO [07-18|14:57:20.730] Successfully wrote genesis state         database=lightchaindata                             hash=d90508…5c034a
 ```
 
-4. **Download & Extract the Latest Snapshot:** Téléchargez et extrayez le dernier instantané de la blockchain Core à partir du référentiel officiel des instantanés de Core.[Core Snapshot Repository](https://github.com/coredao-org/core-snapshots).
+4. **Download & Extract the Latest Snapshot:** Téléchargez et extrayez le dernier instantané de la blockchain Core à partir du référentiel officiel des instantanés de Core.[Core Snapshot Repository] (https://github.com/coredao-org/core-snapshots).
 
 5. **Génération de la clé de consensus:** Configurez la clé de consensus avant d'exécuter le nœud validateur. Pour créer une nouvelle clé de consensus, utilisez la commande suivante, qui créera un nouveau compte et affichera une adresse qui sera l'adresse de votre validateur (adresse de consensus).
 
@@ -208,7 +209,7 @@ Ces journaux indiquent généralement que le nœud importe de nouveaux segments 
 
 - **triedirty:** La quantité de mémoire "sale" utilisée (dans ce cas, environ `869.67 KiB`), qui indique la quantité de mémoire utilisée temporairement pour stocker les données de bloc.
 
-- **Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nodes pour se connecter. Les connexions 'peer-to-peer' permettent de synchroniser la blockchain avec le réseau, en échangeant des informations et des données entre les nodes.
+- **Looking for peers:** Ce message signifie que le nœud est en train de rechercher d'autres nœuds pour se connecter. Les connexions 'peer-to-peer' permettent de synchroniser la blockchain avec le réseau, en échangeant des informations et des données entre les nœuds.
 
 - **peercount:** Le nombre actuel de pairs auxquels le nœud est connecté (e.g., `2`).
 

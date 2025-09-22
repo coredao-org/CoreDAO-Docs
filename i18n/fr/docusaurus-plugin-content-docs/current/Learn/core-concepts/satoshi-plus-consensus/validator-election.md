@@ -21,7 +21,9 @@ Chaque source contribue au score **hybride** d'un validateur, qui détermine son
 
 ## Processus d'élection
 
-<p align="center">![validator-election-flow](../../../../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)</p>
+<p align="center">
+![validator-election-flow](../../../../../../../static/img/staoshi-plus/Validator-Election-Workflow.png)
+</p>
 
 ### 1. Délégation de soutien
 
@@ -63,8 +65,6 @@ Cette formule favorise une influence proportionnelle et équitable entre toutes 
 - Core maintient la liveness tant que moins **d'⅓ des validateurs sont malveillants**
 
 ## Résumé du flux
-
-
 
 1. **Délégation**: Les mineurs, les détenteurs de CORE et les détenteurs de Bitcoin délèguent leur soutien
 2. **Calcul du score**: Les scores hybrides sont calculés à l'aide d'une formule définie

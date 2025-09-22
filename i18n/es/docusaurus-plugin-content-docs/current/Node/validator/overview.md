@@ -4,50 +4,48 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Validadores en la red Core
+# Validadores en la Red Core
 
 ---
 
-En la blockchain de Core, los validadores son nodos fundamentales responsables de mantener la seguridad, descentralización e integridad de la red. Estos nodos validan transacciones, producen nuevos bloques y participan en la gobernanza mediante el exclusivo consenso Satoshi Plus de Core, el cual combina Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Self-Custodial Bitcoin Staking para garantizar la descentralización, seguridad y escalabilidad.
+En la blockchain de Core, los validadores son nodos esenciales responsables de mantener la seguridad, descentralización e integridad de la red. Validan transacciones, producen nuevos bloques y participan en la gobernanza mediante el consenso único de Core, Satoshi Plus, el cual combina: Delegated Proof of Work (DPoW), Delegated Proof of Stake (DPoS) y Staking de Bitcoin Autocustodiado para garantiza descentralización, seguridad y escalabilidad.
 
 ## Rol del Validador y Participación en el Consenso
 
-Los validadores son responsables de mantener la salud y continuidad de la red. Al participar en el consenso, confirman la validez de las transacciones y contribuyen a la producción de bloques. El consenso Satoshi Plus selecciona validadores con base en un sistema de puntuación híbrido que considera el Bitcoin delegado, Tokens CORE y hash power de Bitcoin.
+Los validadores son responsables de mantener la salud y continuidad de la red. Al participar en el consenso, confirman la validez de las transacciones y contribuyen a la producción de bloques. El consenso Satoshi Plus selecciona validadores usando un sistema de hybrid scoring que considera el Bitcoin delegado, Tokens CORE y hash power de Bitcoin.
 
-Los conjuntos de validadores se rotan periódicamente, y las elecciones de validadores ocurren por epochs, típicamente cada 24 horas (UTC+0), para seleccionar a los **27** validadores activos principales según sus hybrid scores. Los validadores inactivos deben esperar hasta la siguiente round de elecciones para convertirse en validadores activos antes de poder participar en la producción de bloques.
+Los validator sets se rotan periódicamente, y las elecciones de validadores ocurren en epochs, generalmente cada 24 horas (UTC+0), para seleccionar a los **31** validadores activos principales según sus hybrid scores. Los validadores inactivos restantes deben esperar a la siguiente ronda de elecciones para convertirse en validadores activos antes de poder participar en la producción de bloques.
 
 ## Economía de Recompensas
 
-Los validadores reciben recompensas en tokens CORE por participar en el mecanismo de consenso de Core y por producir bloques. Las recompensas se distribuyen al final de cada round (aproximadamente cada 24 horas) y provienen de dos fuentes principales:
+Los validadores reciben recompensas en tokens CORE por participar en el mecanismo de consenso de Core y por producir bloques. Las recompensas se distribuyen al final de cada ronda (aproximadamente cada 24 horas) y provienen de dos fuentes principales:
 
-- **Recompensas base:** Nuevos tokens CORE minteados.
-- **Fees por transacción:** Las fees se recaudan de las transacciones incluidas en cada bloque durante la round.
+- **Recompensas Base:** Tokens CORE recién acuñados.
+- **Comisiones por Transacción:** Comisiones recolectadas de las transacciones incluidas en cada bloque durante la ronda.
 
-Cada validador puede establecer su propia **tasa de comisión**, que es la porción de recompensas que retiene antes de distribuir el resto a sus delegadores. Estas comisiones se envían directamente a la dirección de fees especificada por el validador al final de cada round.
+Cada validador puede establecer su propia **tasa de comisión**, que es la porción de recompensas que retiene antes de distribuir el resto a sus delegadores. Las comisiones se envían directamente a la dirección de comisión especificada por el validador al final de cada ronda.
 
-Core **no implementa auto-vinculación**. Los validadores no están obligados a hacer staking de CORE en sí mismos para participar. Solo ganan comisiones si otros participantes les delegan. Si un validador hace staking en su propio validador, recibe recompensas como cualquier otro delegador, no como comisión.
+Core **no implementa auto-bonding**. Los validadores no están obligados a hacer staking de CORE en sí mismos para participar. Solo ganan comisiones si otros participantes delegan en ellos. Si un validador hace staking en su propio validador, recibe recompensas como cualquier otro delegador regular, no como comisión.
 
-Las recompensas base se distribuyen cuando se confirma el bloque final de la ronda. Actualmente, el **90%** del total de las recompensas base se asigna a los validadores, mientras que el **10 %** restante se envía al contrato `System Reward Contract`. Del 90 % asignado a los validadores, cada uno recibe recompensas proporcionales al número de bloques que produce. A largo plazo, se espera que todos los validadores estables reciban aproximadamente partes iguales, ya que la producción de bloques se distribuye de manera uniforme.
+Las recompensas base se distribuyen cuando se confirma el bloque final de la ronda. Actualmente, el **90%** del total de las recompensas base se asigna a los validadores, mientras que el **10%** restante se envía al `System Reward Contract`. Del 90% asignado a los validadores, cada validador recibe recompensas proporcionales al número de bloques que produce. A largo plazo, se espera que todos los validadores estables reciban participaciones aproximadamente iguales, ya que la producción de bloques se distribuye de manera uniforme.
 
-Las fees por transacción siguen la misma lógica de distribución. El **90%** del total de las fees recaudadas durante la ronda se distribuye entre los validadores. Los validadores pueden aplicar su tasa de comisión a esta cantidad antes de repartir las recompensas restantes entre sus delegadores. El **10%** restante de las fees se deposita en el `System Reward Contract`.
+Las comisiones por transacción siguen la misma lógica de distribución. El **90%** del total de las comisiones recolectadas durante la ronda se distribuye entre los validadores. Los validadores pueden aplicar su tasa de comisión sobre esta cantidad antes de distribuir las recompensas restantes a sus delegadores. El **10%** restante de las comisiones se deposita en el `System Reward Contract`.
 
-Los validadores comparten recompensas con los delegadores que hicen staking de CORE, delegan BTC o contribuyen con hash power. Aunque las tasas de comisión son flexibles, los validadores están incentivados a ofrecer tasas competitivas para atraer más delegación y fortalecer su hybrid score.
+Los validadores comparten las recompensas con los delegadores que hacen staking de CORE, delegan Bitcoin o contribuyen con poder de hash de Bitcoin. Aunque las tasas de comisión son flexibles, los validadores están incentivados a ofrecer tasas competitivas para atraer más delegaciones y fortalecer su hybrid score.
 
-Las fees de comisión se pagan directamente a la dirección de fees designada por cada validador al final de cada round.
+Las comisiones se pagan directamente a la dirección de comisión designada de cada validador al final de cada ronda.
 
-:::note
-Las recompensas se liquidan **por round**, no por bloque. Cada round corresponde a un ciclo completo de elecciones de validadores (~24 horas, UTC+0).
-:::
+> **Nota:** Las recompensas se liquidan **por ronda**, no por bloque. Cada ronda corresponde a un ciclo completo de elecciones de validadores (~24 horas, UTC+0).
 
 <p align="center">
 ![validator-reward-distribution](../../../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
 </p>
 
-### Ejemplo de Cálculo de Recompensas
+### Sample Reward Calculation
 
-Supongamos que la recompensa base para una ronda es de **3000 CORE** y que un validador en particular establece una tasa de comisión del **20%**. Estos tokens no se pagan directamente al proponente. Sino que se distribuyen entre todos los validadores y sus delegadores de forma proporcional al stake de cada uno. En este caso, los **3,000 CORE** de recompensa base se distribuirán según la participación de cada actor en el staking. Asumamos que las fees generadas por todas las transacciones en todos los bloques durante la ronda fueron de **100 CORE**.
+Supongamos que la recompensa base para una ronda es de **3000 CORE** y que un validador particular establece su tasa de comisión en **20%**. Estos tokens no van directamente al proponente. En cambio, se comparten entre validadores y delegadores. Estos **3000 CORE** se distribuirán según el stake de cada participante. Suponga que las comisiones generadas por todas las transacciones en todos los bloques de una ronda fueron **100 CORE**.
 
-Supongamos que la recompensa base para una ronda es de **3,000 CORE** y que un determinado validador establece su tasa de comisión en **20 %**. Estos tokens no se pagan directamente al proponente, sino que se distribuyen proporcionalmente entre los validadores y sus delegadores. La recompensa base, 3,000 CORE en este caso, se distribuirán de acuerdo con el stake de cada participante. Supongamos también que las fees generadas durante una ronda fueron de **100** CORE.
+Supongamos que la recompensa base para una ronda es de **3,000 CORE** y que un validador establece una tasa de comisión del **20%**. Estos tokens no se pagan directamente al proponente, sino que se distribuyen proporcionalmente entre todos los validadores y sus delegadores. La recompensa base, 3000 CORE en este caso, se distribuirá según la participación de cada participante. Además, suponga que las comisiones por transacción recolectadas durante la ronda totalizan **100** CORE.
 
 ```maths
     Total Accumulated Reward = Base Reward + Transaction Fees = 3,000 + 100 = 3,100 CORE
@@ -70,14 +68,14 @@ Supongamos que la recompensa base para una ronda es de **3,000 CORE** y que un d
 
 ## Riesgos Potenciales y Penalizaciones para Validadores
 
-Aunque los validadores en el ecosistema de Core son incentivados mediante recompensas por bloques y fees por transacción, el rol también conlleva riesgos operativos y económicos. Se espera que los validadores mantengan un buen rendimiento, disponibilidad y la integridad de la red. El incumplimiento de estas expectativas puede dar lugar a penalizaciones que afectan tanto su reputación como sus ingresos.
+Aunque los validadores en el ecosistema Core están incentivados mediante recompensas por bloque y comisiones por transacción, el rol también conlleva riesgos operativos y económicos. Se espera que los validadores mantengan el rendimiento, la disponibilidad y la integridad de la red. El incumplimiento de estas responsabilidades puede resultar en penalizaciones que afecten tanto su reputación como sus ingresos.
 
-1. **Slashing:** los validadores pueden estar sujetos a slashing si incurren en comportamientos maliciosos o negligentes, como la doble firma de bloques, periodos prolongados de inactividad o desconexión, violaciones de las reglas de consenso, entre otros. El slashing implica la pérdida permanente de una parte del CORE apostado por el validador, lo que afecta directamente sus fondos y su confiabilidad.
+1. **Slashing:** Los validadores pueden estar sujetos a slashing si incurren en comportamientos maliciosos o negligentes, como la firma doble de bloques, períodos prolongados de inactividad o tiempo de inactividad, o la violación de las reglas de consenso. El slashing resulta en la pérdida permanente de una parte del CORE apostado por el validador, lo que impacta directamente sus activos financieros y su confiabilidad.
 
-2. **Jailing:** Los validadores que consistentemente tienen bajo rendimiento, se desconectan o violan las reglas del protocolo pueden ser penalizados siendo jaileados. Un validador enjaulado es retirado temporalmente del conjunto activo de validadores, quedando inhabilitado para producir bloques o recibir recompensas. La reincidencia en el jailing también puede provocar daños a largo plazo en su reputación dentro de la comunidad o su remoción de la red.
+2. **Jailing:** Los validadores que consistentemente tienen un desempeño deficiente, se desconectan o incumplen las reglas del protocolo pueden ser penalizados mediante jailing. Un validador en jailing es temporalmente removido del conjunto activo de validadores, lo que los hace inelegibles para producir bloques o ganar recompensas. El jailing repetido también puede causar daños a largo plazo en la reputación dentro de la comunidad o incluso la expulsión de la red.
 
-3. **Pérdida de Delegaciones:** los delegadores pueden retirar su participación de validadores con bajo rendimiento y reasignarla a otros más confiables. Esto puede reducir significativamente la parte de recompensas que recibe un validador.
+3. **Pérdida de Delegación:** Los delegadores pueden retirar su participación de validadores con bajo desempeño y reasignarla a validadores más confiables. Esto puede reducir significativamente la proporción de recompensas que recibe un validador.
 
-4. **Bloqueo de Stake y Liquidez:** Se requiere que los validadores bloqueen **10,000 CORE** como colateral para formar parte de la red de validadores que participan en el consenso de Core. Estos tokens están sujetos a periodos de bloqueo y no pueden ser retirados ni transferidos durante ese tiempo. Esto introduce un riesgo de liquidez, especialmente en condiciones de mercado volátiles o durante interrupciones inesperadas en el funcionamiento del validador.
+4. **Bloqueo de Staking y Liquidez:** Los validadores deben bloquear **10,000 tokens CORE** como garantía para formar parte de la red de validadores de Core que participan en el consenso. Estos tokens están sujetos a períodos de bloqueo y no pueden ser retirados o transferidos durante ese tiempo. Esto introduce un riesgo de liquidez, especialmente durante condiciones de mercado volátiles o tiempos de inactividad imprevistos del validador.
 
-5. **Riesgos Operativos y de Seguridad:** los validadores deben mantener una infraestructura segura y con alta disponibilidad. Las fallas en la seguridad del sistema, el tiempo de actividad o el rendimiento pueden derivar en bloques perdidos, slashing o jailing. Los validadores son responsables de monitorear sus sistemas, mantener actualizaciones de software y asegurar operaciones confiables las 24 horas del día.
+5. **Riesgos Operativos y de Seguridad:** Los validadores deben mantener una infraestructura segura y de alta disponibilidad. Fallas en la seguridad del sistema, el tiempo de actividad o el rendimiento pueden resultar en bloques perdidos, slashing o jailing. Los validadores son responsables de monitorear sus sistemas, mantener el software actualizado y garantizar operaciones confiables las 24 horas del día.

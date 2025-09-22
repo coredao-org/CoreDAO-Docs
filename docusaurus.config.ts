@@ -19,7 +19,7 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: "/",
+  baseUrl: "/CoreDAO-Docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -78,6 +78,334 @@ const config: Config = {
 
   plugins: [
     [
+       '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/Learn/economics/core-token/tokenomics-and-utility',
+            to: '/docs/Learn/core-token/tokenomics',
+          },
+          {
+            from:'/docs/stake-and-delegate/dual-staking',
+            to: '/docs/Learn/core-concepts/dual-staking/overview'
+          },
+          {
+            from: '/core-white-paper-v1.0.6/',
+            to: 'https://whitepaper.coredao.org/',
+          },
+          // {
+          //   from: '/docs/Learn/core-concepts/overview',
+          //   to:'/docs/learn/core-concepts/overview',
+          // },
+          {
+            from: '/docs/Learn/products/btc-staking/btc-staking-working',
+            to: '/docs/stake-and-delegate/btc-staking/btc-staking-working',
+          },
+          {
+            from: '/docs/Learn/products/btc-staking/design',
+            to: '/docs/stake-and-delegate/btc-staking/design',
+          },
+          {
+            from: '/docs/Learn/products/stCore/design',
+            to: '/docs/Learn/liquid-staking/stCore/design',
+          },
+          {
+            from: '/docs/Dev-Guide/core-testnet-wallet-config',
+            to: '/docs/Dev-Guide/core-wallet-config',
+          },
+          {
+            from: '/docs/Dev-Guide/core-mainnet-wallet-config',
+            to: '/docs/Dev-Guide/core-wallet-config',
+          },
+          {
+            from: '/docs/Learn/products/stCore/overview',
+            to: '/docs/Learn/liquid-staking/stCore/overview',
+          },
+          {
+            from: '/developer/develop-on-core/chain-settings',
+            to: '/docs/Dev-Guide/network-config',
+          },
+          {
+            from: '/docs/Learn/introduction/why-core-chain',
+            to: '/docs/Learn/introduction/why-core',
+          },
+          {
+              from: '/docs/Learn/products/btc-staking/Redeeming-Guide',
+              to: '/docs/stake-and-delegate/btc-staking/Redeeming-Guide',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/overview',
+              to: '/docs/Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking',
+            },
+          {
+              from: '/docs/stake-and-delegate/delegating-core',
+              to: '/docs/core-staking',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/faqs-btc-staking',
+              to: '/docs/FAQs/btc-staking-faqs',
+          },
+          {
+              from: '/docs/Learn/introduction/what-is-core-chain',
+              to: '/docs/Learn/introduction/core-101#what-is-core',
+            },
+          {
+              from: '/core-white-paper-v1.0.5/',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/stake-btc-guide',
+              to: '/docs/stake-and-delegate/btc-staking/stake-btc-guide',
+            },
+          {
+              from: '/docs/Learn/products/stCore/stCore-on-Core',
+              to: '/docs/Learn/liquid-staking/stCore/overview',
+            },
+          {
+              from: '/staking/dual-staking',
+              to: '/docs/stake-and-delegate/dual-staking-working',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/btc-staking-working.md',
+              to: '/docs/stake-and-delegate/btc-staking/btc-staking-working',
+            },
+          {
+              from: '/docs/stake-and-delegate/staking-overview',
+              to: '/docs/stake-and-delegate/overview',
+            },
+          {
+              from: '/docs/Learn/core-concepts/satoshi-plus-consensus/components',
+              to: '/docs/Learn/core-concepts/satoshi-plus-consensus/DPoW',
+            },
+          {
+              from: '/docs/learn/products/btc-staking/dual-staking-guide',
+              to: '/docs/Learn/products/btc-staking/dual-staking-guide',
+          },
+          {
+              from: '/docs/Node/maintenance/',
+              to: '/docs/Node/maintenance',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/stake-btc-guide.md',
+              to: '/docs/stake-and-delegate/btc-staking/stake-btc-guide',
+            },
+          {
+              from: '/docs/api/',
+              to: '/docs/api/core-api',
+            },
+          {
+              from: '/docs/stake-and-delegate/delegating-core.md',
+              to: '/docs/core-staking',
+            },
+          {
+              from: '/docs/satoshi-plus-consensus/proof-of-work',
+              to: '/docs/Learn/core-concepts/satoshi-plus-consensus/DPoW',
+            },
+          // {
+          //     from: '/developer',
+          //     to: '/docs/category/dev-guides',
+          //   },
+          // {
+          //     from: '/core-white-paper-v1.0.7',
+          //     to: 'https://whitepaper.coredao.org/',
+          //   },
+          {
+              from: '/api',
+              to: '/docs/api/core-api',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/overview.md',
+              to: '/docs/Learn/core-concepts/satoshi-plus-consensus/BitcoinStaking',
+            },
+          {
+              from: '/developer/develop-on-core/using-core-testnet/connect-to-core-testnet',
+              to: '/docs/Dev-Guide/network-config',
+            },
+          {
+              from: '/docs/FAQs/dual-staking-faqs.md',
+              to: '/docs/FAQs/dual-staking-faqs',
+            },
+          {
+              from: '/docs/Learn/introduction/why-core-chain.md',
+              to: '/docs/Learn/introduction/why-core',
+            },
+          {
+              from: '/docs/Learn/introduction/what-is-core-chain.md',
+              to: '/docs/Learn/introduction/core-101#what-is-core',
+            },
+          {
+              from: '/docs/Node/validator/running-validator',
+              to: '/docs/Node/validator/setting-up-validator',
+            },
+          {
+              from: '/developer/node-and-validator/how-to-become-a-validator-on-core',
+              to: '/docs/Node/validator/setting-up-validator',
+            },
+          {
+              from: '/docs/Dev-Guide/core-wallet-config.md',
+              to: '/docs/Dev-Guide/core-wallet-config',
+            },
+          {
+              from: '/developer/become-a-delegator/delegators/delegating-core',
+              to: '/docs/core-staking',
+            },
+          {
+              from: '/developer/become-a-validator/validators/core-full-nodes',
+              to: '/docs/Node/config/full-node',
+            },
+          {
+              from: '/developer/delegate-guides/how-to-delegate-core',
+              to: '/docs/core-staking',
+            },
+          {
+              from: '/developer/node-and-validator/how-to-run-a-core-fullnode',
+              to: '/docs/Node/config/full-node',
+            },
+          {
+              from: '/developer/user-guides/user-guide-for-core-testnet',
+              to: '/docs/Dev-Guide/network-config',
+            },
+          {
+              from: '/developer/web3-development/layer-zero-core-bridge-contracts-resources',
+              to: '/docs/Dev-Guide/core-bridge-resources#layerzero-contracts-on-core',
+            },
+          {
+              from: '/developer/core-api/introduction-to-the-core-api',
+              to: '/docs/api/core-api-tutorials',
+            },
+          {
+              from: '/docs/Learn/products/btc-staking/Redeeming-Guide.md',
+              to: '/docs/stake-and-delegate/btc-staking/Redeeming-Guide',
+            },
+          {
+              from: '/docs/Dev-Guide/core-mainnet-wallet-config.md',
+              to: '/docs/Dev-Guide/core-wallet-config',
+            },
+          {
+              from: '/developer/develop-on-core/corescan-open-api',
+              to: '/docs/Dev-Guide/core-explorer',
+            },
+          {
+              from: '/developer/core-api/common-error-messages',
+              to: '/docs/api/tutorials/common-error-messages',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-stake',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/delegated-proof-of-work',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/appendices/appendix-b',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/major-components-roles-and-workflows',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/appendices/appendix-a',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/appendices',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/references',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/background',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/governance',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/developer/web3-development/how-to-develop-a-dapp-on-core',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/core-white-paper-v1.0.7/satoshi-plus-consensus/validator-election',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/satoshi-plus-consensus/rewards',
+              to: '/docs/Learn/core-concepts/satoshi-plus-consensus/rewards',
+            },
+          {
+              from: '/developer/become-a-delegator/delegators/delegating-hash',
+              to: '/docs/stake-and-delegate/delegating-hash',
+            },
+          {
+              from: '/developer/become-a-validator/validators',
+              to: '/docs/Node/validator/overview#',
+            },
+          {
+              from: '/developer/become-a-validator/validators/validator-registration',
+              to: '/docs/Node/validator/validator-register',
+            },
+          {
+              from: '/developer/develop-on-core/contract-verification',
+              to: '/docs/Dev-Guide/contract-verify',
+            },
+          {
+              from: '/core-white-paper-v1.0.6/satoshi-plus-consensus',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/developer/interacting-with-core/core-rpcs-through-the-command-line',
+              to: '/docs/category/rpc-list',
+            },
+          {
+              from: '/developer/develop-on-core/building-on-core/erc20-tokens',
+              to: '/docs/Dev-Guide/erc20-tokens',
+            },
+          {
+              from: '/developer/develop-on-core/building-on-core/using-remix',
+              to: '/docs/Dev-Guide/remix',
+            },
+          {
+              from: '/developer/delegate-guides/how-to-delegate-btc-hash-power',
+              to: '/docs/stake-and-delegate/delegating-hash',
+            },
+          {
+              from: '/developer/',
+              to: '/docs/Dev-Guide/dev-tools',
+            },
+          {
+              from: '/core-white-paper-v1.0.5/background/related-works',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          {
+              from: '/developer/develop-on-core/core-subgraph',
+              to: '/docs/Dev-Guide/core-subgraph',
+            },
+            {
+              from: '/core-white-paper-v1.0.7/tokenomics',
+              to: 'https://whitepaper.coredao.org/',
+            },
+            {
+              from: '/developer/develop-on-core/bridging-with-core/bridging-tokens-to-core-with-layerzero',
+              to: '/docs/Dev-Guide/bridge-with-layerzero',
+            },
+            {
+              from: '/core-white-paper-v1.0.6/tokenomics',
+              to: 'https://whitepaper.coredao.org/',
+            },
+          
+        ],
+      },
+    ],
+    [    
       "docusaurus-plugin-openapi-docs",
       {
         id: "api", // plugin id

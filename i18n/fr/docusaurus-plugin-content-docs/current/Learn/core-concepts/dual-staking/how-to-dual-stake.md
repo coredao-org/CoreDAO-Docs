@@ -5,16 +5,15 @@ sidebar_position: 2
 ---
 
 # Comment faire du double staking
-
 ---
 
 Il existe plusieurs façons de participer au staking double avec BTC et CORE, selon vos outils préférés et votre niveau d'expérience :
 
 **Via le site Web officiel de Core**: Une interface conviviale pour la plupart des utilisateurs pour commencer le staking directement.
 
-**Utilisation des outils CLI et des contrats intelligents** : Idéal pour les développeurs et les utilisateurs avancés qui préfèrent interagir directement avec le protocole. Les utilisateurs peuvent miser leur Bitcoin en utilisant l'outil CLI de staking BTC et miser CORE en interagissant directement avec les contrats intelligents de staking.
+**Utilisation des outils CLI et des contrats intelligents**: Idéal pour les développeurs et les utilisateurs avancés qui préfèrent interagir directement avec le protocole. Les utilisateurs peuvent miser leur Bitcoin en utilisant l'outil CLI de staking BTC et miser CORE en interagissant directement avec les contrats intelligents de staking.
 
-**Via des dépositaires de confiance** : Staker via des dépositaires institutionnels tels que BitGo, Copper ou Hex Trust pour une sécurité accrue et une commodité opérationnelle.
+**Via des dépositaires de confiance**: Staker via des dépositaires institutionnels tels que BitGo, Copper ou Hex Trust pour une sécurité accrue et une commodité opérationnelle.
 
 ## Prérequis
 
@@ -22,7 +21,7 @@ Pour démarrer et pouvoir effectuer un double staking CORE et BTC via le site We
 
 **Extension de navigateur de portefeuille Bitcoin prise en charge** : Pour participer au processus de staking Bitcoin, vous devez installer les extensions de navigateur des portefeuilles Bitcoin pris en charge, tels que Xverse, Unisat et/ou OKX Wallet (référez-vous ici pour les derniers portefeuilles pris en charge). Vous devez utiliser la version bureau lorsque vous utilisez le site Web officiel de staking. Vous pouvez également staker directement en utilisant l'application mobile du portefeuille Element.
 
-**Adresse de portefeuille Core pour les récompenses** : Préparez votre adresse de portefeuille Core pour staker CORE et recevoir des récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé ici.
+**Adresse de portefeuille Core pour les récompenses** : Préparez votre adresse de portefeuille Core pour staker CORE et recevoir des récompenses en tokens CORE pour le staking de Bitcoin. Si vous n'avez pas d'adresse de portefeuille Core, vous pouvez rapidement en créer une en vous connectant à MetaMask. Pour plus d'informations sur la configuration de MetaMask pour fonctionner avec le réseau Core, suivez le guide détaillé [ici.
 
 ## Considérations clés pour le double staking
 
@@ -124,7 +123,7 @@ Le résultat de la vérification apparaîtra dans la section **Verification Resu
 ![btc-staking-address-verification](../../../../../../../static/img/btc-staking/btc-staking-address-verification-result.png)
 </p>
 
-Une fois vérifié, revenez sur [stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
+Une fois vérifié, revenez sur (stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
 
 <p align="center">
 ![btc-staking-approve-tx](../../../../../../../static/img/btc-staking/approve-tx.png)
@@ -205,7 +204,7 @@ Enfin, cliquez sur **Confirm** pour compléter la transaction.
 
 ## Confirmer la Sortie OP_Return
 
-Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie `OP_Return`. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être `OP_Return`. **Abandonnez la transaction si elle n'inclut pas la sortie `OP_Return`.**
+Avant de signer la transaction dans votre portefeuille, vérifiez les sorties de la transaction pour vous assurer qu'elles incluent une sortie OP_Return. La sortie `OP_Return` est l'endroit où votre `redeem_script` est enregistré et est essentiellement utilisé pour récupérer votre Bitcoin staké. Il peut y avoir deux ou trois sorties, mais au moins une doit toujours être OP_Return. **Abandonnez la transaction si elle n'inclut pas la sortie OP_Return.**
 
 <p align="center">
 ![dual-staking-on-core](../../../../../../../static/img/dual-staking/dual-staking-15.png)

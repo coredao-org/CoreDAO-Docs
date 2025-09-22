@@ -25,9 +25,9 @@ curl -L https://foundry.paradigm.xyz | bash
 
 Cela téléchargera et installera Foundry. Il comprend les outils suivants :
 
-- `forge`: l'interface de ligne de commande pour compiler, tester et déployer des contrats Solidity.
-- `cast`: un outil permettant d'interagir avec les contrats intelligents et de visualiser les données de la blockchain.
-- `anvil`: un nœud local utilisé pour les tests.
+- `forge` : l'interface de ligne de commande pour compiler, tester et déployer des contrats Solidity.
+- `cast` : un outil permettant d'interagir avec les contrats intelligents et de visualiser les données de la blockchain.
+- `anvil` : un nœud local utilisé pour les tests.
 
 Une fois installé, assurez-vous que le binaire se trouve dans le PATH de votre système. Pour vérifier l’installation, exécutez :
 
@@ -61,21 +61,21 @@ Cela générera une nouvelle structure de répertoire avec tous les fichiers de 
 
 Voici à quoi ressemblera la structure de dossiers générée :
 
-```bash
-    my-blockchain-project/
-    │
-    ├── lib/                       # External dependencies (if any)
-    ├── script/
-    │   └── Script.s.sol           # Default deploy script file
-    |
-    ├── src/
-    │   └── Counter.sol            # Default contract file
-    |
-    ├── test/                      # Test files
-    │   └── Counter.t.sol          # Default test file
-    │
-    ├── foundry.toml               # Configuration file for foundry
-    └── README.md                  # Project documentation
+```
+my-blockchain-project/
+│
+├── lib/                       # External dependencies (if any)
+├── script/
+│   └── Script.s.sol           # Default deploy script file
+|
+├── src/
+│   └── Counter.sol            # Default contract file
+|
+├── test/                      # Test files
+│   └── Counter.t.sol          # Default test file
+│
+├── foundry.toml               # Configuration file for foundry
+└── README.md                  # Project documentation
 ```
 
 ### Étape 2 : Comprendre la structure des dossiers
@@ -89,9 +89,9 @@ Voici à quoi ressemblera la structure de dossiers générée :
 
 ### Étape 3 : Mettre à jour la version de Solidity et EVM
 
-Mettez à jour le fichier `foundry.toml` avec les versions Solidity et EVM appropriées.
+Mettez à jour le fichier « foundry.toml » avec les versions Solidity et EVM appropriées.
 
-Assurez-vous que vous utilisez la version Solidity `0.8.24` et définissez la version EVM sur « Shanghai ». Si vous utilisez **un ancien testnet**, **définissez la version EVM sur Paris**. Notez également que le Core Testnet (1115) est désormais obsolète et n'est plus maintenu.
+Assurez-vous que vous utilisez la version Solidity « 0.8.24 » et définissez la version EVM sur « Shanghai ». Si vous utilisez **un ancien testnet**, **définissez la version EVM sur Paris**. Notez également que le Core Testnet (1115) est désormais obsolète et n'est plus maintenu.
 
 ```bash
 [profile.default]
@@ -108,9 +108,9 @@ Maintenant que votre projet est configuré, écrivons un contrat Solidity simple
 
 ### Étape 1 : Créer un contrat simple
 
-Accédez au répertoire `src` et créez un nouveau contrat Solidity. Commençons par utiliser un contre-contrat simple.
+Accédez au répertoire « src » et créez un nouveau contrat Solidity. Commençons par utiliser un contre-contrat simple.
 
-Créez un fichier appelé `Counter.sol` dans le dossier `src`:
+Créez un fichier appelé « Counter.sol » dans le dossier « src » :
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -144,8 +144,8 @@ contract Counter {
 
 Dans ce contrat :
 
-- La variable d'état `count` garde une trace de la valeur du comptage.
-- Les fonctions `incrément` et `décrément` augmentent ou diminuent le compteur.
+- La variable d'état « count » garde une trace de la valeur du comptage.
+- Les fonctions « incrément » et « décrément » augmentent ou diminuent le compteur.
 - La fonction `getCount` renvoie le nombre actuel.
 
 ## 4. Test du contrat Solidity
@@ -154,7 +154,7 @@ Foundry facilite l'écriture de tests pour vos contrats. Le cadre de test utilis
 
 ### Étape 1 : Créer un fichier de test
 
-Accédez au répertoire « test » et créez un fichier de test appelé `Counter.t.sol`:
+Accédez au répertoire « test » et créez un fichier de test appelé « Counter.t.sol » :
 
 ```javascript
 // SPDX-License-Identifier: UNLICENSED
@@ -276,7 +276,7 @@ API_URL="https://api.test2.btcs.network/api"
 
 Assurez-vous de remplacer « YOUR_API_KEY » et « YOUR_PRIVATE_KEY » par les valeurs réelles.
 
-Maintenant que vous avez créé le fichier `.env` file ci-dessus, exécutez la commande suivante pour charger les variables d'environnement dans la session de ligne de commande en cours :
+Maintenant que vous avez créé le fichier `.env` file\` ci-dessus, exécutez la commande suivante pour charger les variables d'environnement dans la session de ligne de commande en cours :
 
 ```bash
 source .env
@@ -287,7 +287,7 @@ source .env
 Pour déployer le contrat sur le réseau de Core testnet, utilisez `forge create`
 
 ```bash
-    forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
+forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
 ```
 
 Ou utilisez la commande `forge script`
@@ -308,7 +308,7 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 
 ## 6. Vérification du contrat
 
-Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande `forge verify-contract`:
+Foundry dispose d'une fonctionnalité intégrée pour vérifier automatiquement les contrats sur Core. Vous pouvez vérifier votre contrat en utilisant la commande « forge verify-contract » :
 
 ```bash
 forge verify-contract 0xContract_Address Counter  --verifier-url $API_URL  --api-key $CORESCAN_API_KEY --watch

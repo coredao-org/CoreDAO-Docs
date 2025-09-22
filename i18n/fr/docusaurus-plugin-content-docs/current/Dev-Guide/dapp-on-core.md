@@ -17,12 +17,12 @@ Dans ce tutoriel, nous développerons une dApp simple utilisant React.js et Ethe
 
 ## Objectifs d'Apprentissage
 
-Ce tutoriel vous aidera à acquérir les connaissances suivantes:
+Ce tutoriel vous aidera à acquérir les connaissances suivantes :
 
-- Connectivité du portefeuille MetaMask au Core Testnet;
-- Développement et déploiement de contrats intelligents sur Core Testnet;
-- Intégration front-end avec le contrat intelligent en utilisant la bibliothèque Ethers.js;
-- Lecture des données d'un contrat intelligent;
+- Connectivité du portefeuille MetaMask au Core Testnet ;
+- Développement et déploiement de contrats intelligents sur Core Testnet ;
+- Intégration front-end avec le contrat intelligent en utilisant la bibliothèque Ethers.js ;
+- Lecture des données d'un contrat intelligent ;
 - Écriture des données dans un contrat intelligent;
 
 ## Prérequis Logiciels
@@ -204,21 +204,21 @@ Le contrat `Storage` est un exemple simple qui démontre comment stocker et réc
 #### Composants du contrat
 
 1. **Variable d'état :**
-  - `number` : Une variable `uint256` utilisée pour stocker la valeur.
+   - `number` : Une variable `uint256` utilisée pour stocker la valeur.
 
 #### Fonctions du contrat
 
 1. **Fonction Store :**
 
-  - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
-  - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-  - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
+   - `store(uint256 num) public`: Permet aux utilisateurs de stocker une nouvelle valeur dans la variable `number`. Cette fonction prend un paramètre, `num`, qui est la valeur à stocker. La variable `number` est mise à jour avec la valeur fournie.
+   - **Visibilité**: La fonction est publique, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+   - **Changement d'état**: Cette fonction modifie l'état du contrat en mettant à jour la variable `number`.
 
 2. **Fonction Retrieve :**
-  - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
-  - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
-  - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
-  - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
+   - `retrieve() public view returns (uint256)`: Retourne la valeur actuelle stockée dans la variable `number`. Cette fonction ne prend aucun paramètre et retourne une valeur `uint256`.
+   - **Visibilité**: La fonction est note comme `publique`, ce qui signifie qu'elle peut être appelée par tout utilisateur ou contrat.
+   - **View**: La fonction est marquée comme `view`, ce qui indique qu'elle ne modifie pas l'état du contrat. Elle se contente de lire l'état.
+   - **Valeur retournée :** La fonction retourne la valeur de la variable `number`.
 
 ## Compilation du contrat intelligent
 
@@ -266,7 +266,7 @@ main().catch((error) => {
 });
 ```
 
-3. Make sure your MetaMask wallet has tCORE2 test tokens for the Core Testnet. Référez-vous [ici](./core-wallet-config.md) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
+3. Assurez-vous que votre portefeuille MetaMask dispose de jetons tCORE2 pour le Core Testnet. Référez-vous [ici](./core-wallet-config.md) pour obtenir des jetons tCORE ou tCORE2 depuis Core Faucet.
 
 4. Exécutez la commande suivante depuis le répertoire racine de votre projet pour déployer votre contrat intelligent sur la blockchain Core.
 
@@ -313,7 +313,7 @@ cd "01-Basic Full Stack Dapp on Core"
 npm install
 ```
 
-4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. Cela servira l'application avec une fonctionnalité de rechargement à chaud à l'adresse http://localhost:5173
+4. Pour tester si tout fonctionne correctement, exécutez l'application en utilisant la commande suivante. Cela servira l'application avec une fonctionnalité de rechargement à chaud à l'adresse [http://localhost:5173]
 
 ```bash
 npm run dev
@@ -330,11 +330,11 @@ La clé logique blockchain de l'application est implémentée dans [App.tsx](htt
 ### Ajout des détails du contrat intelligent
 
 1. Copiez le fichier `Storage.sol` depuis le dossier `contracts` à la racine de votre projet et collez-le dans le dossier `frontend/src/contracts`.
-2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section ci-dessus
+2. Copiez l'adresse du contrat intelligent Storage obtenue dans la section ci-dessus.
 3. Collez-la à la [ligne 10 de App.tsx](https://github.com/coredao-org/dapp-tutorial/blob/master/01-Simple%20Storage%20Full%20Stack%20Dapp/src/components/App.tsx#L10).
 
 ```javascript
-const contractAddress = '0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
+const contractAddress = "0x48F68BF4A1b1fE6589B9D0a5ad0dF0520582edA2";
 ```
 
 4. De plus, nous aurons besoin des métadonnées ABI pour interagir avec le contrat depuis notre dApp. Depuis le dossier `artifacts/contracts` à la racine de votre projet. Depuis le dossier `artifacts/contracts` à la racine de votre projet, copiez le fichier `Storage.json` et enregistrez-le dans le dossier `/src/contracts`.

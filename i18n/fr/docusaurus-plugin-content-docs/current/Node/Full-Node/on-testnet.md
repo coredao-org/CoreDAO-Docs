@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Exécution des nodes complets Core sur le Testnet de Core
+# Exécution des nœuds complets Core sur le Testnet de Core
 
 ---
 
@@ -15,20 +15,20 @@ Un nœud complet Core stocke l'intégralité de l'historique de la blockchain Co
 - **Nœud complet RPC :** fournit des services RPC et répond aux requêtes HTTP.
 
 :::note
-Ce document fournit des lignes directrices détaillées sur l'exécution des nodes complets normaux sur le réseau Core.
+Ce document fournit des lignes directrices détaillées sur l'exécution des nœuds complets normaux sur le réseau Core.
 :::
 
-## Configuration système requise pour les nodes complets sur le réseau Core
+## Configuration système requise pour les nœuds complets sur le réseau Core
 
 Il existe plusieurs exigences système pour configurer un nœud complet sur Core.
 
-### Spécifications logicielles pour les nodes complets sur le Testnet de Core
+### Spécifications logicielles pour les nœuds complets sur le Testnet de Core
 
 Actuellement, **seulement** l'exécution sur **Mac OS** X et **Linux** est prise en charge.
 
-### Spécifications matérielles pour les nodes complets sur le Testnet de Core
+### Spécifications matérielles pour les nœuds complets sur le Testnet de Core
 
-Pour les nodes complets sur **Core Testnet**, les spécifications matérielles minimales recommandées sont :
+Pour les nœuds complets sur **Core Testnet**, les spécifications matérielles minimales recommandées sont :
 
 | Requis           | Détails                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |

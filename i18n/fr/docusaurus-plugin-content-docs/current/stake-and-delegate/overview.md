@@ -46,7 +46,7 @@ Les détenteurs de tokens CORE peuvent miser en déléguant leurs tokens aux val
 
 La sélection des validateurs est basée sur un **score hybride**, en considérant:
 
-- **Le verrouillage temporel de Bitcoin** via CLTV
+- **Le verrouillage temporel de Bitcoin** (via CLTV)
 - **Tokens CORE délégués** (via DPoS)
 - **Puissance de hachage Bitcoin déléguée** (via Preuve de travail déléguée)
 

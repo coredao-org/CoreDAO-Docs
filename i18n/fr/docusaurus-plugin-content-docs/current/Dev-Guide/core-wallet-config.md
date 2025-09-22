@@ -46,7 +46,9 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 - **Faucet:** https://scan.test2.btcs.network/faucet
 - **Site de Staking :** https://stake.test2.btcs.network/
 
-<p align="center" style={{zoom:"60%"}}>![add-network-metamask](../../../../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)</p>
+<p align="center" style={{zoom:"60%"}}>
+![add-network-metamask](../../../../../static/img/testnet-wallet-config/testnet-config-wallet-1.png)
+</p>
 
 </TabItem>
 
@@ -71,7 +73,7 @@ Une fois que vous avez configuré votre portefeuille MetaMask, vous pouvez l'uti
 ]}>
 
 <TabItem value="testnet2">
-1. Rendez-vous sur chainlist.org et recherchez ‘_Core Blockchain_’. Assurez-vous de cocher l'option _Include Testnets_ option.
+1. Rendez-vous sur chainlist.org et recherchez ‘_core blockchain_’. Assurez-vous de cocher l'option _Include Testnets_ option.
 
 2. Vérifiez bien que vous choisissez le bon réseau. Vérifiez les détails dans les captures d'écran ci-dessous — ID de la chaîne, devise, etc., pour vous assurer que vous ajoutez le bon réseau.
 
@@ -107,7 +109,7 @@ Le Testnet Core est maintenant ajouté à votre MetaMask.
 ![chainlist-testnet-connect-metmask](../../../../../static/img/testnet-wallet-config/chainlist-testnet-connect-3.png)
 </p>
 
-4. Ajoutez Core Mainnet en cliquant sur le bouton `Approuver`.
+4. Ajoutez Core Mainnet en cliquant sur le bouton « Approuver ».
 
 Le Core Mainnet est maintenant ajouté à votre MetaMask.
 
@@ -156,6 +158,8 @@ Le Core Mainnet est maintenant ajouté à votre MetaMask.
 </Tabs>
 
 :::info
+
 #### Dernier code de  Core Testnet (1114)
-Le dernier testnet de Core, Core Testnet2 avec `chainID 1114`, est désormais opérationnel et constitue l'environnement de test recommandé pour la blockchain Core. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). The old testnet, Core Testnet, is now deprecated and no longer maintained.
+
+Le dernier testnet de Core, Core Testnet2 avec `chainID 1114`, est désormais opérationnel et constitue l'environnement de test recommandé pour la blockchain Core. Il prend en charge le BTC Testnet4 pour le staking, contrairement à la version précédente (`chainID 1115`). L'ancien testnet, Core Testnet, est désormais obsolète et ne sera plus maintenu.
 :::

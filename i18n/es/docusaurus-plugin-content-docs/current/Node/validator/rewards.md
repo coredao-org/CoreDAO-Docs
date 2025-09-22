@@ -14,8 +14,8 @@ El ecosistema Core está diseñado para incentivar la participación y asegurar 
 
 - **Descripción:** Los validadores obtienen recompensas por su papel en el procesamiento de transacciones, la creación de nuevos bloques y el mantenimiento de la integridad de la cadena de bloques. Estas recompensas son esenciales para compensar a los Validadores por sus esfuerzos y costos operativos.
 - **Mecanismo:** Los validadores reciben una combinación de tarifas de transacción y nuevos tokens CORE acuñados a través de la política de inflación de blockchain. La cantidad de recompensas que recibe un Validador es proporcional a su participación y al poder de hash delegado por los mineros. Hay dos categorías de recompensas del validador:
-    1. **Recompensas base**, es decir, tokens CORE recién acuñados;
-    2. **Tarifas cobradas por transacciones en cada bloque**;
+  1. **Recompensas base**, es decir, tokens CORE recién acuñados;
+  2. **Tarifas cobradas por transacciones en cada bloque**;
 
 Las recompensas básicas se calculan y distribuyen cuando se extrae el último bloque de una ronda. Actualmente, el **90%** de las recompensas se asigna a los validadores, y el **10%** restante se asigna al `System Reward Contract`. Del 90 % que se paga a los validadores, un porcentaje es tomado como comisión por el validador antes de distribuir el resto a sus delegadores. Cada validador tiene la misma probabilidad de producir bloques, por lo que, a largo plazo, todos los validadores estables deberían obtener una porción similar de la recompensa.
 
@@ -50,9 +50,9 @@ Donde:
 
 Los cálculos de recompensa por unidad determinan las recompensas distribuidas por cada unidad en stake de poder de hash, CORE o BTC:
 
-* Per unit hash power reward: $$rHu$$ =  $$ \frac{rH}{rHp} $$
-* Per unit CORE reward: rSu = $$ \frac{rS}{rSp} $$
-* Per unit BTC reward: $$rBu$$ of **P<sub>n</sub>** =  $$\frac{rB}{rBp}$$ x Yield Multiplier for Level<sub>n</sub>
+- Recompensa de poder hash por unidad: $$rHu$$ = $$\frac{rH}{rHp}$$
+- Recompensa CORE por unidad: rSu = $$\frac{rS}{rSp}$$
+- Recompensa BTC por unidad: $$rBu$$ de **P<sub>n</sub>** = $$\frac{rB}{rBp}$$ x multiplicador de rendimiento para el nivel<sub>n</sub>
 
 Donde:
 
@@ -70,10 +70,10 @@ Con la introducción del Dual Staking, las recompensas por staking de Bitcoin ah
 ## Estrategia de distribución de recompensas
 
 Core sigue los siguientes principios de distribución:
-* **Equidad:** El sistema de recompensas está diseñado para ser justo, garantizando que las contribuciones, ya sea en forma de participación, minería o participación en la gobernanza, sean reconocidas y recompensadas de manera equitativa.
-* **Transparencia:** Todos los aspectos de la distribución de recompensas son transparentes, lo que permite a los participantes comprender cómo se calculan y distribuyen las recompensas.
-* **Seguridad:** El mecanismo de distribución está protegido contra manipulación y abuso, utilizando salvaguardias criptográficas y basadas en contratos inteligentes para garantizar la integridad del proceso de recompensa.
+\* **Equidad:** El sistema de recompensas está diseñado para ser justo, garantizando que las contribuciones, ya sea en forma de participación, minería o participación en la gobernanza, sean reconocidas y recompensadas de manera equitativa.
+\* **Transparencia:** Todos los aspectos de la distribución de recompensas son transparentes, lo que permite a los participantes comprender cómo se calculan y distribuyen las recompensas.
+\* **Seguridad:** El mecanismo de distribución está protegido contra manipulación y abuso, utilizando salvaguardias criptográficas y basadas en contratos inteligentes para garantizar la integridad del proceso de recompensa.
 
 ## Prevención del mal comportamiento del validador
 
-El comportamiento malicioso de los validadores se desincentiva mediante cortes y encarcelamientos. Los verificadores pueden presentar pruebas para que los validadores sean recortados o encarcelados si no cumplen con sus obligaciones. Las principales actividades que se pueden recortar son la indisponibilidad y la doble firma. La indisponibilidad es reportada por los propios validadores dentro del algoritmo de consenso, mientras que el double signing es reportado por verificadores externos. Consulte la guía detallada sobre [reducción y encarcelamiento](../slashing/overview.md) para obtener más información.
+El comportamiento malicioso de los validadores se desincentiva mediante cortes y encarcelamientos. Los verificadores pueden presentar pruebas para que los validadores sean recortados o encarcelados si no cumplen con sus obligaciones. Las principales actividades que se pueden recortar son la indisponibilidad y la doble firma. La indisponibilidad es reportada por los propios validadores dentro del algoritmo de consenso, mientras que el double signing es reportado por verificadores externos. Consulte la guía detallada sobre [reducción y encarcelamiento] (../slashing/overview.md) para obtener más información.

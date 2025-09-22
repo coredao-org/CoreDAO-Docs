@@ -37,7 +37,7 @@ Il existe une période de rachat par défaut de **7 jours**. Une fois que les ut
 
 ## Cas d'utilisation communs ERC-20
 
-stCORE est un jeton ERC-20 standard et peut être utilisé dans tous les scénarios ERC-20 typiques : transferts, fourniture de liquidité sur les DEXs, échanges et plus encore.
+stCORE est un jeton ERC-20 standard et peut être utilisé dans tous les scénarios ERC-20 typiques: transferts, fourniture de liquidité sur les DEXs, échanges et plus encore.
 
 ## Implémentations
 
@@ -45,15 +45,15 @@ L'implémentation du module `Earn` de liquid staking se trouve [ici](https://git
 
 Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
 
-- **\`mint():** créer du stCORE en utilisant du CORE
+- **mint():** créer du stCORE en utilisant du CORE
 - **redeem() :** Racheter stCORE contre CORE
-- **\`withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
+- **withdraw():** réclamer du CORE dans le portefeuille après la période de rachat
 
 Les méthodes utilisateur dans le module `Earn` incluent les suivantes:
 
 - **afterTurnRound() :** Implémente la capitalisation automatique des intérêts (autocompounding).
-- **\`rebalance():** équilibrer les validateurs les plus/moins stakés
-- **\`manualRebalance():** transférer manuellement le staking entre deux validateurs
+- **rebalance():** équilibrer les validateurs les plus/moins stakés
+- **manualRebalance():** transférer manuellement le staking entre deux validateurs
 
 ### Sélection des validateurs lors de création/rachat
 

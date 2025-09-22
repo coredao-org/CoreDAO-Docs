@@ -42,7 +42,7 @@ Le protocole utilise un **système de multiplicateurs basé sur les niveaux** po
 | **Base Tier**    | R < R₁                  | P<sub>Base</sub>    | Aucune délégation de CORE                    |
 | **Boost Tier**   | R₁ ≤ R < R₂             | P<sub>Boost</sub>   | Niveau d'entrée de double staking            |
 | **Super Tier**   | R₂ ≤ R < R₃             | P<sub>Super</sub>   | Ratio CORE-Bitcoin plus élevé                |
-| **Satoshi Tier** | R ≥ R₃                  | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
+| **Satoshi Tier** | R ≥ R₃                                           | P<sub>Satoshi</sub> | Niveau le plus élevé ; récompenses maximales |
 
 - Les seuils de niveau (R₁, R₂, R₃) sont dynamiques et s'ajustent en fonction des conditions du réseau.
 - Les niveaux supérieurs débloquent des **multiplicateurs de récompenses** de plus en plus élevés.

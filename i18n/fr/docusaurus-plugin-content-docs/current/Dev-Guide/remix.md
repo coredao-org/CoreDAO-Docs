@@ -2,18 +2,18 @@
 sidebar_label: Utilisation de Remix
 hide_table_of_contents: false
 sidebar_position: 2
-description: Déployer des contrats sur Core en utilisant l'Remix IDE
+description: Déployer des contrats sur Core en utilisant l'IDE Remix
 ---
 
 # Utilisation de Remix
 
 ---
 
-Remix est un environnement de développement intégré (IDE) en ligne puissant permettant aux développeurs de construire, tester, déployer et gérer des contrats intelligents. Dans ce tutoriel, nous allons utiliser l'[Remix IDE](https://remix.ethereum.org/) pour déployer un contrat sur le Testnet de Core.
+Remix est un environnement de développement intégré (IDE) en ligne puissant permettant aux développeurs de construire, tester, déployer et gérer des contrats intelligents. Dans ce tutoriel, nous allons utiliser l'[IDE Remix](https://remix.ethereum.org/) pour déployer un contrat sur le Testnet de Core.
 
 ## Connexion de Remix au Testnet de Core
 
-Accédez à l'[Remix IDE](https://remix.ethereum.org/), et vous verrez une interface similaire à celle ci-dessous :
+Accédez à l'[IDE Remix](https://remix.ethereum.org/), et vous verrez une interface similaire à celle ci-dessous :
 
 <p align="center">
 ![remix-ide](../../../../../static/img/remix/remix-1.avif)
@@ -33,7 +33,7 @@ Pour vous connecter au Testnet de Core, choisissez `Injected Provider - MetaMask
 ![remix-ide](../../../../../static/img/remix/remix-3.avif)
 </p>
 
-Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix affiche l'adresse connectée et le montant de CORE détenu par l'adresse, comme illustré ci-dessous :
+Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix affiche l'adresse connectée et le montant de CORE détenu par l'adresse, comme illustré ci-dessous:
 
 <p align="center" style={{zoom:"40%"}}>
 ![remix-ide](../../../../../static/img/remix/remix-4.avif)
@@ -56,7 +56,7 @@ Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix a
 </p>
 
 :::note
-Si vous utilisez Testnet1, assurez-vous que la version EVM est définie à `paris`.
+Si vous utilisez TestNet1, assurez-vous que la version EVM est définie à `paris`.
 :::
 
 - Cliquez ensuite sur le bouton bleu **Compile** pour compiler votre contrat intelligent.

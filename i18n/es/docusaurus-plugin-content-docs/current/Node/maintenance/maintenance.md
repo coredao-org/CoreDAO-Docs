@@ -1,58 +1,55 @@
 ---
-sidebar_label: Mantenimiento de nodos
+sidebar_label: Mantenimiento de Nodo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Mantenimiento del Nodo
+# Mantenimiento de Nodo
 
 ---
 
 ## Binario
 
-Se recomienda a todos los clientes actualizar a la última versión. Se espera que la [versión más reciente](https://github.com/coredao-org/core-chain/releases/latest) sea más estable y ofrezca un mejor rendimiento.
+Se recomienda a todos los clientes actualizar a la última versión del binario disponible. Se supone que la [última versión](https://github.com/coredao-org/core-chain/releases/latest) es más estable y tiene mejor rendimiento.
 
 ## Almacenamiento
 
-### Prune State
+### Estado de poda
 
-Según pruebas realizadas, el rendimiento de los nodos completos se degrada cuando el tamaño del almacenamiento alcanza un volumen elevado (aproximadamente 1.5 TB, valor experimental). Por lo tanto, se sugiere que el nodo completo mantenga siempre un almacenamiento ligero podando los datos innecesarios.
+Según pruebas realizadas, el rendimiento de los nodos completos se degrada cuando el tamaño del almacenamiento alcanza un volumen alto (aproximadamente 1.5 TB, valor estimado de forma experimental). Por lo tanto, se recomienda que el nodo completo mantenga un almacenamiento ligero, eliminando datos innecesarios (pruning) regularmente.
 
-#### Reglas para la Poda
+#### Reglas de poda
 
 1. **No intente podar un nodo de archivo.** Los nodos de archivo deben mantener **TODOS** los datos históricos por definición.
-2. Asegúrese de que haya al menos **40 GB** de espacio de almacenamiento disponible en el disco que será podado. Se han reportado fallos con **~25GB** de espacio libre.
+2. Asegúrese de que todavía haya al menos **40 GB** de espacio de almacenamiento disponible en el disco que se eliminará. Se han reportado fallas con **~25GB** de espacio libre.
 3. Geth debe estar completamente sincronizado
-4. Geth debe haber terminado de crear un snapshot que tenga al menos **128 bloques de antigüedad**. Esto es cierto cuando ya no se informa "state snapshot generation" en los logs.
+4. Geth debe haber generado un snapshot del estado que tenga al menos **128 bloques** de antigüedad. Esto se confirma cuando ya no aparece "state snapshot generation" en los registros.
 
 #### Cómo podar:
 
-1. Detener el proceso geth
+1. Detén el proceso de geth
 
 2. Ejecute el comando de poda
 
-```   nohup geth --datadir ~/node snapshot prune-state > . /prune.log 2>&1 & ```
+   `  nohup geth --datadir ~/node snapshot prune-state > . /prune.log 2>&1 &`
 
-3. Revisa `prune.log`, espera a que se complete la operación de poda y luego inicia geth nuevamente.
+3. Verifique `prune.log`, espere a que se complete la operación de poda e inicie geth.
 
-Se recomienda que los responsables del mantenimiento siempre tengan algunos nodos de respaldo en caso de que uno de los nodos esté siendo podado. El hardware también es fundamental. 
+Los administradores deben contar con nodos de respaldo en caso de que alguno esté en proceso de poda. El hardware también es importante, **asegúrese de que el SSD cumpla con: 4TB de espacio libre en disco, unidad de estado sólido (SSD), gp3, 8k IOPS, rendimiento de 250MB/S, latencia de lectura \<1ms**.
 
-**Asegúrate de que el SSD cumpla con los siguientes requisitos: 4TB de espacio libre en disco, unidad de estado sólido (SSD), gp3, 8k IOPS, 250MB/S throughput, latencia de lectura \<1ms**.
+### Podar datos antiguos en tiempo real
 
-### Poda de Datos Antiguos en Tiempo Real
+Los datos antiguos son datos de bloques que ya se consideran inmutables. Esto se determina mediante un umbral, que actualmente está establecido en **90000**. Es decir, todos los bloques anteriores al bloque actual menos **90000** se consideran datos antiguos. Recomendamos la opción `--prunceancient` a los usuarios que no se preocupan por los datos antiguos. Esto también se recomienda para los usuarios que desean ahorrar espacio en disco, ya que solo conservará los datos de los últimos **90000** bloques.  Ten en cuenta que, una vez activada esta bandera, los datos antiguos no podrán recuperarse y no podrás reiniciar tu nodo sin incluir esta bandera en el comando de arranque.
 
-Los datos antiguos son datos de bloques que ya se consideran inmutables. Esto está determinado por un umbral que actualmente está establecido en **90000**. Esto significa que los bloques anteriores a **90000** se consideran datos antiguos. Recomendamos el uso del flag `--pruneancient` a los usuarios que no necesiten conservar estos datos antiguos. Esto también se recomienda para los usuarios que desean ahorrar espacio en el disco, ya que esto solo conservará los datos de los últimos **90000** bloques.   Ten en cuenta que una vez habilitado este flag, los datos antiguos no serán recuperables y no podrás reiniciar tu nodo sin este flag en el comando de inicio.
-
-Cómo usar el flag:
-
+Cómo utilizar la bandera:
 
 ```bash
 ./geth --tries-verify-mode none --config /server/config.toml --datadir /server/node --cache 8000 --rpc.allow-unprotected-txs --txlookuplimit 0 --pruneancient=true --syncmode=full
 ```
 
-### Herramientas de poda de bloques
+### Herramientas de Poda de Bloques
 
-Core ofrece la función fuera de línea para eliminar datos de bloques antiguos no deseados. Esta función elimina los datos de bloques, recibos y cabeceras almacenados en la base de datos de datos antiguos para ahorrar espacio.
+Core ofrece una función offline para podar datos antiguos de bloques no deseados. Esta función descarta el bloque, el receipt y header de la base de datos antigua para ahorrar espacio.
 
 Cómo podar:
 
@@ -63,13 +60,13 @@ Cómo podar:
 ./geth snapshot prune-block --datadir /server/node --datadir.ancient ./chaindata/ancient --block-amount-reserved 1024
 ```
 
-`block-amount-reserved` es el número de bloques de datos antiguos que deseas conservar después de la poda.
+`block-amount-reserved` es la cantidad de bloques de datos antiguos que deseas conservar después de realizar la poda.
 
-## Almacenamiento Ligero
+## Almacenamiento ligero
 
-Cuando un nodo se bloquea o es finalizado de manera forzada, se sincroniza desde un bloque que tiene unos minutos u horas de antigüedad. Esto ocurre porque el estado almacenado en memoria no se guarda en la base de datos en tiempo real, y el nodo necesita reprocesar bloques desde el último checkpoint al reiniciarse. El tiempo de replay depende del parámetro `TrieTimeout` en el archivo `config.toml`.  Se recomienda aumentar el valor de `TrieTimeout` para acomodar tiempos de reejecución largos, lo que permite que el nodo mantenga un almacenamiento ligero.
+Cuando el nodo se bloquea o se termina de forma forzada, sincronizará desde un bloque que podría tener algunos minutos o incluso horas de antigüedad. Esto ocurre porque el estado que reside en memoria no se guarda en la base de datos en tiempo real, y el nodo necesita reprocesar los bloques desde el último punto de control cuando vuelve a iniciarse. El tiempo de reprocesamiento depende del parámetro `TrieTimeout` en el archivo `config.toml`. Se recomienda aumentar el valor de `TrieTimeout` para manejar tiempos de reprocesamiento prolongados, permitiendo que el nodo mantenga un almacenamiento más liviano.
 
 ## Actualizar Geth
 
-Lea [esta guía](./network-upgrade.md).
+Lea [esta guía] (network-upgrade.md)
 

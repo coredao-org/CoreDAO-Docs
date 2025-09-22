@@ -4,7 +4,7 @@ info:
   description: API documentation Core's Staking API
   version: 1.0.0
 servers:
-  - url: https://staking-api.test2.btcs.network/
+  - url: https://staking-api.test2.btcs.network
 paths:
   /staking/summary/core:
     get:
@@ -89,6 +89,12 @@ paths:
           in: query
           required: true
           description: Public key hash associated with the given BTC address.
+          schema:
+            type: string
+        - name: coreAddress
+          in: query
+          required: false
+          description: The reward address of BTC staking.
           schema:
             type: string
       responses:
@@ -487,6 +493,71 @@ paths:
                   message:
                     type: string
                     description: Error message explaining the issue.
+  /staking/summary/group_candidate_detail:
+    get:
+      summary: Retrieve Staking Summary Group By Candidate
+      description: Retrieve Staking Summary Group By Candidate.
+      parameters:
+        - name: coreAddress
+          in: query
+          required: false
+          description: Core staking address or the Core reward address corresponding to BTC staking
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Staking summary grouped by candidate retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Status code indicating the result of the operation.
+                  data:
+                    type: array
+                    description: List of staking details grouped by candidate.
+                    items:
+                      type: object
+                      properties:
+                        address:
+                          type: string
+                          description: The address of the candidate.
+                        candidateAddress:
+                          type: string
+                          description: The candidate validator address.
+                        candidateName:
+                          type: string
+                          description: The name of the candidate validator.
+                        stakedBTCAmount:
+                          type: string
+                          description: The amount of BTC staked with this candidate.
+                        stakedCoreAmount:
+                          type: string
+                          description: The amount of CORE staked with this candidate.
+                        candidateEstimatedCoreRewardRate:
+                          type: string
+                          description: The estimated CORE reward rate for this candidate.
+                        candidateEstimatedBtcRewardRate:
+                          type: string
+                          description: The estimated BTC reward rate for this candidate.
+                  message:
+                    type: string
+                    description: Additional information or message about the response.
+        '400':
+          description: Invalid parameters or an error occurred while retrieving the data.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Error code indicating the result of the operation.
+                  message:
+                    type: string
+                    description: Error message explaining the issue.
   /staking/summary/rewards:
     get:
       summary: Retrieve Reward Distribution of a Round
@@ -602,6 +673,12 @@ paths:
           in: query
           required: true
           description: The public key hash associated with the given Bitcoin address.
+          schema:
+            type: string
+        - name: coreAddress
+          in: query
+          required: false
+          description: The reward address of BTC staking.
           schema:
             type: string
         - name: pageNum
@@ -750,6 +827,60 @@ paths:
                   message:
                     type: string
                     description: Error message explaining the issue.
+  /staking/btc/transactions/reward:
+    get:
+      summary: Retrieve BTC staking transaction rewards
+      description: Retrieve BTC staking transaction rewards.
+      parameters:
+        - name: txId
+          in: query
+          required: true
+          description: The Bitcoin transaction id of the staking transaction.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: BTC staking transaction rewards retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Status code indicating the result of the operation.
+                  data:
+                    type: object
+                    description: BTC staking transaction reward details.
+                    properties:
+                      btcTxId:
+                        type: string
+                        description: The Bitcoin transaction ID.
+                      rewardAddress:
+                        type: string
+                        description: The reward address for the staking transaction.
+                      pendingReward:
+                        type: string
+                        description: The pending reward amount.
+                      claimedReward:
+                        type: string
+                        description: The claimed reward amount.
+                  message:
+                    type: string
+                    description: Additional information or message about the response.
+        '400':
+          description: Invalid transaction ID or an error occurred while retrieving the rewards.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Error code indicating the result of the operation.
+                  message:
+                    type: string
+                    description: Error message explaining the issue.
   /staking/rewards/detail:
     get:
       summary: Retrieve Collected and Pending Rewards
@@ -799,6 +930,90 @@ paths:
                         description: Collected BTC rewards for the Core address.
         '400':
           description: Invalid Core address or an error occurred while retrieving reward details.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Error code indicating the result of the operation.
+                  message:
+                    type: string
+                    description: Error message explaining the issue.
+  /staking/rewards/reward_rate:
+    get:
+      summary: Retrieve Staking Reward Rate
+      description: Retrieve staking reward rates for a delegator address.
+      parameters:
+        - name: coreAddress
+          in: query
+          required: true
+          description: The delegator address.
+          schema:
+            type: string
+        - name: btcStakeAmount
+          in: query
+          required: true
+          description: The amount of BTC planned to stake. Example - 0.1 BTC
+          schema:
+            type: number
+        - name: coreStakeAmount
+          in: query
+          required: true
+          description: The amount of Core planned to stake. Example - 100.1 CORE
+          schema:
+            type: number
+        - name: btcStakingValidatorAddress
+          in: query
+          required: true
+          description: The validator address for delegating BTC.
+          schema:
+            type: string
+        - name: coreStakingValidatorAddress
+          in: query
+          required: true
+          description: The validator address for delegating CORE.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Staking reward rates retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                    description: Status code indicating the result of the operation.
+                  data:
+                    type: object
+                    description: Staking reward rate details.
+                    properties:
+                      annualRewardRateOverall:
+                        type: string
+                        description: Overall annual reward rate.
+                      annualRewardRateCurrent:
+                        type: string
+                        description: Current annual reward rate.
+                      newStakedBTCRewardRate:
+                        type: string
+                        description: Reward rate for newly staked BTC.
+                      newStakedCoreRewardRate:
+                        type: string
+                        description: Reward rate for newly staked CORE.
+                      activeStakedBTCRewardRate:
+                        type: string
+                        description: Reward rate for actively staked BTC.
+                      activeStakedCoreRewardRate:
+                        type: string
+                        description: Reward rate for actively staked CORE.
+                  message:
+                    type: string
+                    description: Additional information or message about the response.
+        '400':
+          description: Invalid parameters or an error occurred while retrieving reward rates.
           content:
             application/json:
               schema:

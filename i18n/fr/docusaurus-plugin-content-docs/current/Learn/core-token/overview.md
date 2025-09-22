@@ -8,7 +8,7 @@ sidebar_position: 2
 
 ---
 
-CORE est le token natif de la blockchain Core et **la clé exclusive pour débloquer des rendements plus élevés sur le staking de Bitcoin**. À mesure que les détenteurs de Bitcoin découvrent qu'ils peuvent gagner un rendement significatif sur leur Bitcoin grâce au staking auto-custodial de Bitcoin de Core, ils apprennent rapidement que les rendements les plus élevés sont réservés à ceux qui misent également sur des tokens CORE via le Dual Staking. Simultanément, CORE est essentiel pour accéder à l'écosystème Bitcoin DeFi florissant de Core - qu'il s'agisse de payer des frais de transaction ou de participer à la gouvernance du réseau.
+CORE est le token natif de la blockchain Core et **la clé exclusive pour débloquer des rendements plus élevés sur le staking de Bitcoin**. À mesure que les détenteurs de Bitcoin découvrent qu'ils peuvent gagner un rendement significatif sur leur Bitcoin grâce au staking Self-Custodial de Bitcoin de Core, ils apprennent rapidement que les rendements les plus élevés sont réservés à ceux qui misent également sur des tokens CORE via le Dual Staking. Simultanément, CORE est essentiel pour accéder à l'écosystème Bitcoin DeFi florissant de Core - qu'il s'agisse de payer des frais de transaction ou de participer à la gouvernance du réseau.
 
 Cela crée une double proposition de valeur convaincante : CORE est positionné pour devenir le deuxième actif détenu par les Bitcoineurs - à la fois comme outil essentiel pour maximiser la productivité du Bitcoin et comme token utilitaire de la solution de mise à l'échelle la plus active de Bitcoin.
 
