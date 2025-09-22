@@ -74,21 +74,21 @@ Supposons que l'utilisateur doive staker du CORE selon les Seuils de CORE Staké
 
 - Ratio de staking **R<sub>1</sub>** \= 4,250
 - Ratio de staking **R<sub>2</sub>** \= 12,750
-- Staking Ratio **R<sub>3</sub>** \= 34,000
+- Ratio de staking **R<sub>3</sub>** \= 34,000
 - Quantité de BTC staké \= 10 BTC
 
 Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 4,250 \= 42,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 12,750 \= 127,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 34,000 \= 340,000 staked CORE
+- Seuil de CORE jalonné pour **P<sub>Level1</sub>** \= 10 \* 4,250 \= 42,500 CORE jalonné
+- Seuil de CORE jalonné pour **P<sub>Level2</sub>** \= 10 \* 12,750 \= 127,500 CORE jalonné
+- Seuil de CORE jalonné pour **P<sub>Level3</sub>** \= 10 \* 34,000 \= 340,000 CORE jalonné
 
 Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 42,500
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 42,500 but below 127,500
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 127,500 but below 340,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 340,000
+- **P<sub>BASE</sub>** Si la quantité de CORE jalonné est inférieure 42,500
+- **P<sub>Level1</sub>** si la quantité de CORE jalonné est supérieure ou égale à 42,500 mais inférieure à 127,500
+- **P<sub>Level2</sub>** si la quantité de CORE jalonné est supérieure ou égale à 127,500 mais inférieure à 340,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** Si la quantité de CORE jalonné est supérieure ou égale à 340,000
 
 :::note
 The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
