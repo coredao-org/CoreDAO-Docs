@@ -224,6 +224,10 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 > ⚠️ \*\*Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
 
+## FAQs
+
+Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+
 ## Conclusion
 
 Félicitations ! Vous avez mis en jeu des Bitcoins sur Core avec succès en utilisant votre portefeuille matériel Ledger, en tirant parti de sa sécurité et du modèle de garde auto-administré de Core pour un contrôle total des actifs et une signature transparente via l'application Core. Bienvenue dans l'écosystème Core, où la sécurité, le contrôle et le rendement sont primordiaux!
