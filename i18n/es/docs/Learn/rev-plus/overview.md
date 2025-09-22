@@ -1,82 +1,82 @@
 ---
-sidebar_label: Overview
-description: Overview of Core Rev+ Revenue Sharing Model
+sidebar_label: Descripción general
+description: Descripción general del Modelo de Distribución de Ingresos Core Rev+
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Core Rev+ Revenue Sharing Model
+# Modelo de Reparto de Ingresos Rev+ de Core
 
 ---
 
-## Introduction
+## Introducción
 
-Rev+ is Core's protocol-level mechanism that enables fee sharing by distributing a portion of transaction gas fees to various stakeholders, including stablecoin issuers, dApp developers, and DAOs. This innovative feature creates new economic models by allowing different stakeholders to receive a share of transaction gas fees, directly aligning incentives with network growth and activity.
+Rev+ es el mecanismo a nivel de protocolo de Core que habilita el reparto de comisiones al distribuir una porción de las tarifas de gas de las transacciones entre distintos participantes, incluyendo emisores de stablecoins, desarrolladores de dApps y DAOs. Esta función innovadora crea nuevos modelos económicos al permitir que diferentes actores reciban una parte de las comisiones de gas de transacciones, alineando directamente los incentivos con el crecimiento y la actividad de la red.
 
-## What is Rev+?
+## ¿Qué es Rev+?
 
-Core's Revenue Sharing Model, Rev+, is a generic framework built into the Core blockchain that distributes a portion of transaction gas fees to configured reward addresses when specific smart contract events are triggered. This system enables sustainable revenue streams for ecosystem participants, especially stablecoin issuers and developers, beyond traditional treasury yields or token-based incentives.
+El modelo de reparto de ingresos de Core, Rev+, es un marco genérico incorporado en la Core blockchain que distribuye una porción de las tarifas de gas de las transacciones a direcciones de recompensa configuradas cuando se disparan smart contract events específicos. Este sistema habilita flujos de ingresos sostenibles para los participantes del ecosistema, especialmente emisores de stablecoins y desarrolladores, más allá de los rendimientos tradicionales de tesorería o de incentivos basados en tokens.
 
-## Revenue Sharing Mechanism
+## Mecanismo de Reparto de Ingresos
 
-Core's revenue sharing model, Rev+, supports two complementary mechanisms:
+El modelo de reparto de ingresos de Core, Rev+, soporta dos mecanismos complementarios:
 
-1. **Direct Distribution:** A portion of the transaction gas fees is automatically distributed to designated recipients (e.g., developers, DAOs, stablecoin issuers) with the transaction execution. This real-time mechanism ensures that value is immediately shared with contributors based on smart contract activity.
+1. **Distribución Directa:** Una porción de las tarifas de gas de las transacciones se distribuye automáticamente a los destinatarios designados (p. ej., desarrolladores, DAOs, emisores de stablecoins) junto con la ejecución de la transacción. Este mecanismo en tiempo real asegura que el valor se comparta inmediatamente con los contribuyentes en función de la actividad del smart contract.
 
-2. **Rev+ Pool Sharing:** A portion of gas fees is accumulated into a shared reward pool. At regular intervals (e.g., monthly), the fees from the pool are distributed among participating partners based on their relative contributions to network growth and usage. Contributions are assessed across four key metrics:
+2. **Reparto mediante Rev+ Pool:** Una porción de las tarifas de gas se acumula en un reward pool compartido. En intervalos regulares (p. ej., mensuales), las comisiones de este pool se distribuyen entre los socios participantes según sus contribuciones relativas al crecimiento y uso de la red. Las contribuciones se evalúan en función de cuatro métricas clave:
 
-   - Total number of transactions
-   - Aggregate transaction notional value
-   - Number of unique active addresses
-   - Total transaction fees generated
+   - Número total de transacciones
+   - Valor nocional agregado de transacciones
+   - Número de direcciones activas únicas
+   - Total de comisiones de transacción generadas
 
-This dual-model architecture enables both precision-aligned incentives at the contract level and broader, data-driven revenue sharing across the entire ecosystem.
+Esta arquitectura de doble modelo habilita tanto incentivos alineados con precisión a nivel de contrato como un reparto de ingresos más amplio, basado en datos, en todo el ecosistema.
 
-## Key Benefits
+## Beneficios Clave
 
-### For Stablecoin Issuers
+### Para los Emisores de Stablecoins
 
-Rev+ changes how stablecoin issuers generate value.
+Rev+ transforma la forma en que los emisores de stablecoins generan valor.
 
-- **New Revenue Streams:** Rev+ offers a new, non-interest-based revenue stream from transaction activity, moving beyond traditional treasury yields
-- **Reduced Distribution Costs:** By earning from the utility of their stablecoin, issuers can effectively reduce costs associated with distribution.
-- **Aligned Incentives:** Revenue is directly correlated with the stablecoin’s real-world usage and adoption on the network, creating a powerful alignment of interests.
+- **Nuevas fuentes de ingresos:** Rev+ ofrece un nuevo flujo de ingresos no basado en intereses a partir de la actividad de transacciones, yendo más allá de los rendimientos tradicionales de tesorería
+- **Reducción de costos de distribución:** Al generar ingresos a partir de la utilidad de su stablecoin, los emisores pueden reducir efectivamente los costos asociados a la distribución.
+- **Incentivos alineados:** Los ingresos están directamente correlacionados con el uso y adopción real de la stablecoin en la red, creando una poderosa alineación de intereses.
 
-### **For Developers**
+### **Para Desarrolladores**
 
-- **Direct Monetization:** Automatically receive a share of the gas fees generated by your dApp's usage, creating a new and sustainable revenue stream.
-- **Rewarding Growth & Innovation:** Your earnings scale directly with user adoption and transaction volume, ensuring you are compensated for building valuable applications and fostering a vibrant community.
-- **Focus on Product Quality:** Rev+ provides a direct path from user activity to developer revenue, eliminating the need for complex tokenomics or speculation. This enables devs to focus on crafting exceptional user experiences.
-- **Sustainable Business Models:** Build additional recurring revenue streams from application activity, creating a sustainable business model that is not dependent on one-time token launches or fundraising.
-- **Talent Attraction & Flywheel Effect:** The sustainable monetization model attracts more talent to the network, leading to a self-reinforcing cycle of growth that benefits you and the entire ecosystem by delivering higher-quality applications.
+- **Monetización directa:** Recibe automáticamente una parte de las tarifas de gas generadas por el uso de tu dApp, creando una nueva y sostenible fuente de ingresos.
+- **Recompensa por crecimiento e innovación:** Tus ganancias escalan directamente con la adopción de usuarios y el volumen de transacciones, asegurando que seas compensado por construir aplicaciones valiosas y fomentar una comunidad vibrante.
+- **Enfoque en la calidad del producto:** Rev+ proporciona un camino directo desde la actividad del usuario hasta los ingresos del desarrollador, eliminando la necesidad de tokenomics complejas o especulación. Esto permite a los devs enfocarse en crear experiencias de usuario excepcionales.
+- **Modelos de negocio sostenibles:** Construye fuentes adicionales de ingresos recurrentes a partir de la actividad de tu aplicación, creando un modelo de negocio sostenible que no dependa de lanzamientos únicos de tokens o de rondas de financiamiento.
+- **Atracción de talento y efecto volante:** El modelo de monetización sostenible atrae más talento a la red, generando un ciclo de crecimiento auto-reforzado que te beneficia a ti y a todo el ecosistema al ofrecer aplicaciones de mayor calidad.
 
-### **For the Ecosystem**
+### **Para el Ecosistema**
 
-Rev+ is designed to create a vibrant, self-sustaining ecosystem where every participant is aligned and incentivized for long-term growth. This is built on three core principles: Aligned Growth, Sustainable Economics, and powerful Network Effects.
+Rev+ está diseñado para crear un ecosistema vibrante y autosostenible donde cada participante esté alineado e incentivado para el crecimiento a largo plazo. Esto se construye sobre tres principios fundamentales: Crecimiento Alineado, Economía Sostenible y Potentes Efectos de Red.
 
-- **Aligned Growth:** All Rev+ participants, from builders to users, benefit from increased network activity. The more the network is used, the more value is created for everyone.
-- **Sustainable Economics:** This model creates a long-term incentive structure that aligns value creation and value capture. By providing an additional revenue stream that scales with a dApp's adoption, more high-quality builders are attracted and rewarded. This increases the overall utility and usage of the Core blockchain, strengthening the entire ecosystem for the community.
-- **Innovation Catalyst:** Encourages high-quality development and adoption
-- **Network Effects:** As more participants join the Core ecosystem, a virtuous cycle of growth is created, benefiting everyone. This benefits everyone in several key ways:
-  - A larger user base attracts more diverse and innovative applications, providing greater utility for everyone.
-  - Increased utility leads to more usage and liquidity, which in turn boosts revenue for dApps and liquidity providers (LPs).
-  - This rise in activity also generates more transaction fees for validators, further strengthening the network's infrastructure.
+- **Crecimiento alineado:** Todos los participantes de Rev+, desde constructores hasta usuarios, se benefician del aumento en la actividad de la red. Cuanto más se utilice la red, más valor se crea para todos.
+- **Economía sostenible:** Este modelo crea una estructura de incentivos a largo plazo que alinea la creación de valor con la captura de valor. Al proporcionar una fuente adicional de ingresos que escala con la adopción de una dApp, se atraen y recompensan más desarrolladores de calidad. Esto incrementa la utilidad y el uso general de la Core blockchain, fortaleciendo el ecosistema en beneficio de la comunidad.
+- **Catalizador de innovación:** Fomenta el desarrollo de alta calidad y la adopción
+- **Efectos de red:** A medida que más participantes se unen al ecosistema Core, se crea un ciclo virtuoso de crecimiento que beneficia a todos. Esto se refleja en varias formas clave:
+  - Una base de usuarios más amplia atrae aplicaciones más diversas e innovadoras, proporcionando mayor utilidad para todos.
+  - La mayor utilidad conduce a más uso y liquidez, lo cual a su vez incrementa los ingresos para dApps y liquidity providers (LPs).
+  - Este aumento de actividad también genera más comisiones de transacción para los validadores, reforzando aún más la infraestructura de la red.
 
-## Target Use Cases
+## Casos de Uso Objetivo
 
-- **Stablecoin Revenue Sharing:** Enable stablecoin issuers, such as USDC and AUSD, to earn revenue from every transfer, mint, or burn operation, thereby creating sustainable business models beyond treasury management.
+- **Compartición de ingresos de stablecoins:** Permite a emisores de stablecoins, como USDC y AUSD, obtener ingresos de cada operación de mint o burn, creando así modelos de negocio sostenibles más allá de la gestión de tesorería.
 
-- \***dApp Developer Incentives:** Allow DeFi applications, DEXs, and other protocols to earn ongoing revenue from user interactions, supporting long-term development and maintenance.
+- \***Incentivos para desarrolladores de dApps:** Permite a aplicaciones DeFi, DEXs y otros protocolos obtener ingresos continuos a partir de las interacciones de los usuarios, apoyando el desarrollo y mantenimiento a largo plazo.
 
-- \***DAO Treasury Monetization:** Allow whitelisted DAOs, whether they govern a protocol, service, or community, to receive protocol fee distributions triggered by specific contract events. This supports sustainable treasury growth without modifying existing contract logic or imposing direct charges on users.
+- \***Monetización de tesorerías de DAOs:** Permite a DAOs en lista blanca, ya sea que gobiernen un protocolo, un servicio o una comunidad, recibir distribuciones de tarifas de protocolo activadas por eventos específicos de contratos. Esto respalda el crecimiento sostenible de la tesorería sin modificar la lógica de los contratos existentes ni imponer cargos directos a los usuarios.
 
-## Economic Impact
+## Impacto Económico
 
-Rev+ addresses critical challenges in the current blockchain ecosystem:
+Rev+ aborda desafíos críticos en el ecosistema blockchain actual:
 
-- **Misaligned Incentives**: Traditional models force stablecoin issuers to pay high upfront distribution costs without capturing transaction value
-- **Developer Sustainability**: Most dApps struggle with long-term monetization beyond token appreciation
-- **Ecosystem Growth**: Creates positive feedback loops where increased usage benefits all participants
+- **Incentivos desalineados**: Los modelos tradicionales obligan a los emisores de stablecoins a pagar altos costos iniciales de distribución sin capturar el valor de las transacciones
+- **Sostenibilidad de los desarrolladores**: La mayoría de las dApps enfrentan dificultades con la monetización a largo plazo más allá de la apreciación de tokens
+- **Crecimiento del ecosistema**: Crea bucles de retroalimentación positiva donde el aumento del uso beneficia a todos los participantes
 
-Core’s Protocol Revenue Sharing Program, Rev+, is purpose-built to accelerate stablecoin adoption, incentivize developer activity, and drive sustained transaction volume across the network. Rev+ positions Core as the most attractive blockchain for stablecoin issuers, dApp developers, and ecosystem builders by aligning economic incentives with network growth. Through a phased and governance-driven rollout, Core aims to foster a robust, high-performance ecosystem that delivers long-term value to all participants.
+El programa de compartición de ingresos a nivel de protocolo de Core, Rev+, está diseñado específicamente para acelerar la adopción de stablecoins, incentivar la actividad de los desarrolladores y generar un volumen sostenido de transacciones en toda la red. Rev+ posiciona a Core como la blockchain más atractiva para emisores de stablecoins, desarrolladores de dApps y constructores del ecosistema al alinear los incentivos económicos con el crecimiento de la red. A través de un lanzamiento progresivo y guiado por gobernanza, Core busca fomentar un ecosistema sólido y de alto rendimiento que genere valor a largo plazo para todos los participantes.
 
