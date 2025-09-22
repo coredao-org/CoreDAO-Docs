@@ -226,7 +226,7 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 ## FAQs
 
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+Avez-vous d'autres questions? Consultez la section [FAQs](../../../../FAQs/ledger-core-faqs.md) pour trouver des réponses aux problèmes courants, des solutions de dépannage et des bonnes pratiques.
 
 ## Conclusion
 
