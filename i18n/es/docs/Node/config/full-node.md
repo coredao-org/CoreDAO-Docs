@@ -1,5 +1,5 @@
 ---
-sidebar_label: Full Node
+sidebar_label: Nodo Completo
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -7,31 +7,31 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Full Nodes on Core
+# Nodos Completos en Core
 
 ---
 
-A Core full node  stores the entire history of the Core blockchain, enabling anyone to verify the state of any account. A Core full node  can take many forms:
+Un nodo completo de Core almacena todo el historial de la blockchain de Core, lo que permite a cualquier persona verificar el estado de cualquier cuenta. Un nodo completo de Core puede tomar varias formas:
 
-- **Normal full node**: for private use.
-- **Validator full node**: acts as a validator on Core, validating blocks and transactions.
-- **RPC full node**: provides RPC services and responds to HTTP requests.
+- **Nodo completo normal**: para uso privado.
+- **Nodo completo validador**: actúa como validador en Core, validando bloques y transacciones.
+- **Nodo completo RPC**: proporciona servicios RPC y responde a solicitudes HTTP.
 
-Following are the detailed steps to running **Normal Full Nodes** on the Core network.
+A continuación se detallan los pasos para ejecutar **Nodos Completos Normales** en la red Core.
 
-## System Requirements
+## Requisitos del sistema
 
-There are several system requirements for setting up a full node  on Core.
+Existen varios requisitos de sistema para configurar un nodo completo en Core.
 
 ### Software
 
-- **Operating System:** Currently, a Core Validator Node is compatible _only_ with **macOS** or **Linux** operating systems (Ubuntu 20.04 or later).
-- **Network Connectivity:** Stable internet connection with low latency and high availability
-- **Firewall Configuration:** Open necessary ports to allow communication with the network and other nodes
+- **Sistema Operativo:** Actualmente, un Nodo Validador de Core es compatible _únicamente_ con sistemas operativos **macOS** o **Linux** (Ubuntu 20.04 o posterior).
+- **Conectividad de Red:** Conexión a internet estable, con baja latencia y alta disponibilidad
+- **Configuración del Firewall:** Abrir los puertos necesarios para permitir la comunicación con la red y con otros nodos
 
 ### Hardware
 
-A full node  on Core performs several resource-intensive tasks, which can include storing blockchain data, verifying blocks or transactions, communicating with peer nodes, and responding to network requests, depending on its configuration. Unlike validators, full nodes do not produce blocks; instead, they help propagate transactions and blocks across the network. They play a crucial role in maintaining data integrity and supporting a trustless environment. For running Full Nodes on Core, the following are the recommended minimum hardware specifications:
+Un nodo completo en Core realiza varias tareas que consumen bastantes recursos, las cuales pueden incluir: almacenar datos de la blockchain, verificar bloques o transacciones, comunicarse con nodos pares y responder a solicitudes de la red, dependiendo de su configuración. A diferencia de los validadores, los nodos completos no producen bloques; en su lugar, ayudan a propagar transacciones y bloques a través de la red. Desempeñan un papel crucial en el mantenimiento de la integridad de los datos y en el soporte de un entorno trustless. Para ejecutar Nodos Completos en Core, se recomiendan las siguientes especificaciones mínimas de hardware:
 
 <Tabs
 defaultValue="testnet2"
@@ -42,7 +42,6 @@ values={[
 For Full Nodes on **Core Testnet2**, following minimum hardware specifications are recommended:
 
     ```
-    | Requirements   | Details                                                                                                 |  
     |----------------|---------------------------------------------------------------------------------------------------------|
     | **Storage**        | 1 TB of free disk space, solid-state drive (SSD), gp3, 8k IOPS, 250MB/S throughput, read latency \<1ms |
     | **CPU**            | 4 CPU cores                                                                    |
@@ -53,7 +52,7 @@ For Full Nodes on **Core Testnet2**, following minimum hardware specifications a
   </TabItem>
 
   <TabItem value="mainnet">
-    For Full Nodes on **Core Mainnet**, the following minimum hardware specifications are recommended:
+    Especificaciones mínimas de hardware para Nodos Completos en **Core Mainnet**:
 
     ```
     | Requirements   | Details                                                                                                 |  
@@ -67,7 +66,7 @@ For Full Nodes on **Core Testnet2**, following minimum hardware specifications a
   </TabItem>
 </Tabs>
 
-## Build and Run Full Node on Core
+## Construir y Ejecutar un Nodo Completo en Core
 
 <Tabs
 defaultValue="testnet2"
@@ -76,7 +75,7 @@ values={[
 {label: 'Mainnet', value: 'mainnet'},
 ]}> <TabItem value="testnet2">
 
-1. We recommend using the [core-chain](https://github.com/coredao-org/core-chain) GitHub repository to build and run your full node directly from our blockchain codebase. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
+1. Recomendamos utilizar el repositorio [core-chain](https://github.com/coredao-org/core-chain) en GitHub para compilar y ejecutar tu nodo completo directamente desde la base de código de la blockchain. Instructions for building the source code can be found in the repository's [README](https://github.com/coredao-org/core-chain#building-the-source).
 
 2. Download the latest node binary for Core Testnet from Core's GitHub [releases repo](https://github.com/coredao-org/core-chain/releases/latest). The node binary includes the testnet configuration files, make sure to use **testnet2** configurations. Download the latest snapshot for testnet from [here](https://github.com/coredao-org/core-snapshots?tab=readme-ov-file#testnet). Note that the recommended method for syncing testnet nodes is to sync from the genesis block.
 
