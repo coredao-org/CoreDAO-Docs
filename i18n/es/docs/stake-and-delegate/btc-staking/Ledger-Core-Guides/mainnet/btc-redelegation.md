@@ -1,29 +1,29 @@
 ---
-sidebar_label: Redelegating Staked BTC
-description: Guide to redelegate BTC from Ledger device on Core Mainnet
+sidebar_label: Redelegar BTC en Staking
+description: Guía para redelegar BTC desde un dispositivo Ledger en Core Mainnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets to Redelegate Staked BTC on Core
+# Uso de Carteras Hardware Ledger para Redelegar BTC en Staking en Core
 
-This user guide will walk you through the step-by-step process of redelegating staked expired timelocked Bitcoin (BTC) to a new Core validator using a Ledger hardware wallet, reinitiating a new BTC staking transaction.
+Esta guía de usuario te llevará paso a paso a través del proceso de redelegar Bitcoin (BTC) bloqueado por tiempo y ya expirado hacia un nuevo validador de Core utilizando una cartera hardware Ledger, reiniciando así una nueva transacción de staking de BTC.
 
 :::note
-Before you begin, ensure your Ledger device is updated and the Ledger Core app is installed. You must use the same primary BTC wallet address originally used for BTC staking. To learn how to stake BTC using Ledger, refer to the detailed guide [here](./btc-staking.md).
+Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y de que la aplicación Ledger Core esté instalada. Debes usar la misma dirección principal de BTC que utilizaste originalmente para hacer staking. Para aprender cómo hacer staking de BTC con Ledger, consulta la guía detallada [aquí](./btc-staking.md).
 :::
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y sin inconvenientes, ten en cuenta los siguientes requisitos clave:
 
-- **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core are supported **only** on specific supported Ledger hardware wallets with the latest firmware. Always update your device via Ledger Live before use.
-- **Always Use the Ledger"s Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. The Bitcoin app does not support redemption operations of staked BTC and may prevent successful redemption.
-- **Staking BTC Only from the Primary BTC Wallet Address:** Currently, BTC staking, redemption, and redelegation on Core through Ledger are supported **only** from the primary BTC address of the Ledger device. Secondary or derived addresses are not compatible.
+- **Usar solo dispositivos Ledger compatibles:** El staking, la redención y la redelegación de BTC en Core son compatibles **únicamente** con determinados dispositivos Ledger hardware wallets que tengan el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
+- **Usar siempre la aplicación Ledger Core:** Debes utilizar la aplicación Ledger Core (no la aplicación Ledger Bitcoin) tanto para hacer staking, redimir o redelegar BTC. La aplicación de Bitcoin no admite operaciones de redención de BTC en staking y puede impedir una redención exitosa.
+- **Hacer staking de BTC solo desde la dirección principal de BTC:** Actualmente, el staking, la redención y la redelegación de BTC en Core a través de Ledger **solo** son compatibles con la dirección BTC principal del dispositivo Ledger. Las direcciones secundarias o derivadas no son compatibles por ahora.
 
-## Supported Ledger Hardware Wallets
+## Carteras Hardware Ledger Compatibles
 
-The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC on the Core blockchain. For the best experience and compatibility, as a best practice ensure your device is running the latest available firmware.
+Los siguientes dispositivos Ledger hardware wallets son actualmente compatibles con las operaciones de staking, redención y redelegación de BTC en la blockchain de Core. For the best experience and compatibility, as a best practice ensure your device is running the latest available firmware.
 
 | Ledger Device      | Firmware Version (_at the time of writing_) |
 | ------------------ | -------------------------------------------------------------- |
