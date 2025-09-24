@@ -162,9 +162,9 @@ Se requiere un mínimo de **1 CORE** para participar en el staking de tokens COR
 Para ser elegible para recibir recompensas, debes completar un ciclo completo de staking en el intervalo (00:00:00 - 23:59:29 UTC).
 :::
 
-## FAQs
+## Preguntas Frecuentes
 
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+¿Tienes más preguntas? Consulta la sección de [FAQs](../../../../FAQs/ledger-core-faqs.md) para obtener respuestas a problemas comunes, soluciones y mejores prácticas.
 
 ## Conclusión
 
