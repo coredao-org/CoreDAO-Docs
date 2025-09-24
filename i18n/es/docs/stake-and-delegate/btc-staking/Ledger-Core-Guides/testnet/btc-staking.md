@@ -110,10 +110,10 @@ Si ya tienes varias cuentas de Bitcoin configuradas en tu dispositivo Ledger, co
 ![Receive tab](../../../../../static/img/ledger-core/testnet/btc-staking/UI-5.png)
 </p>2) Selecciona la cuenta de Bitcoin Testnet que deseas usar y haz clic en "Continue".<p align="center" style={{zoom:"60%"}}>
 ![Receive Tab - Select Bitcoin Testnet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-6.png)
-</p>3) Copy the Bitcoin Testnet account address.<p align="center" style={{zoom:"60%"}}>
+</p>3) Copia la dirección de la cuenta de Bitcoin Testnet.<p align="center" style={{zoom:"60%"}}>
 ![Copy BTC Testnet Address](../../../../../static/img/ledger-core/testnet/btc-staking/UI-7.png)
-</p>4) Use the Bitcoin Testnet4 faucets to receive testnet Bitcoin tokens.<br/>:::note
-Always use the Core Testnet app for staking, redeeming, or redelegating Bitcoin on Core Testnet. The standard Bitcoin app does not support redemption operations on Core and may result in permanent loss of access to your staked BTC. Unlike the Ledger Bitcoin app, which uses blind signing where transaction details are obscured from the user, the Ledger Core Testnet app enables Clear Signing. Clear Signing displays all transaction information (e.g., amount, validator, fees, addresses) directly on your Ledger device screen, giving you complete visibility. This enables you to verify what you’re signing confidently and protects you from unintended or malicious transactions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+</p>4) Utiliza los faucets de Bitcoin Testnet4 para recibir tokens de prueba de Bitcoin.<br/>:::note
+Usa siempre la aplicación Core Testnet para hacer staking, redimir o redelegar Bitcoin en Core Testnet. La aplicación estándar de Bitcoin no soporta operaciones de redención en Core y puede resultar en la pérdida permanente de acceso a tu BTC en staking. A diferencia de la aplicación de Bitcoin de Ledger, que utiliza blind signing donde los detalles de la transacción se ocultan al usuario, la aplicación Ledger Core Testnet permite Clear Signing. Con Clear Signing, todos los detalles de la transacción (ej. monto, validador, comisiones, direcciones) se muestran directamente en la pantalla de tu dispositivo Ledger, dándote visibilidad total. Esto te permite verificar con confianza lo que estás firmando y te protege contra transacciones no deseadas o maliciosas. Para más información sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 :::
 
 #### Setup Bitcoin Testnet Account
