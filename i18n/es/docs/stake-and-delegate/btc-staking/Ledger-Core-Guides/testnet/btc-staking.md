@@ -1,114 +1,114 @@
 ---
-sidebar_label: Staking BTC with Core
-description: Guide to stake BTC from Ledger device on Core Testnet
+sidebar_label: Hacer Staking de BTC con Core
+description: Guía para hacer staking de BTC desde un dispositivo Ledger en Core Testnet
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Using Ledger Hardware Wallets for BTC Staking on Core
+# Uso de Hardware Wallets Ledger para BTC Staking en Core
 
-This user guide walks you through the process of staking BTC to earn CORE rewards on the Core blockchain using a Ledger hardware wallet. By following the steps below, you can participate in Core’s Self-Custodial Bitcoin Staking while maintaining complete control of your assets.
+Esta guía de usuario te lleva paso a paso por el proceso de hacer stake de BTC para ganar recompensas en CORE dentro de la blockchain de Core usando un hardware wallet Ledger. Siguiendo los pasos a continuación, puedes participar en el modelo de Self-Custodial Bitcoin Staking de Core mientras mantienes el control total de tus activos.
 
-## Before You Begin: Important Reminders
+## Antes de Comenzar: Recordatorios Importantes
 
-To ensure a secure and seamless experience, please note the following key requirements:
+Para garantizar una experiencia segura y fluida, ten en cuenta los siguientes requisitos clave:
 
-1. **Use Only Supported Ledger Devices:** Bitcoin staking, redemption, and redelegation on Core is only supported on specific Ledger hardware wallets with the latest firmware. Always update your device through Ledger Live before proceeding.
+1. **Usa solo dispositivos Ledger compatibles:** El staking, la redención y la redelegación de Bitcoin en Core es compatible únicamente con ciertos Ledger hardware wallets que cuenten con el firmware más reciente. Siempre actualiza tu dispositivo a través de Ledger Live antes de continuar.
 
-2. **Always Use the Ledger’s Core App:** You must use Ledger’s Core Testnet app, not the standard Bitcoin app, when staking or redeeming BTC on Core Testnet. Staking BTC with the Bitcoin app may result in the inability to redeem your BTC, resulting in permanent loss of assets.
+2. **Usa siempre la aplicación Core de Ledger:** Debes usar la aplicación Core Testnet de Ledger, no la aplicación estándar de Bitcoin, al hacer staking o redimir BTC en Core Testnet. Hacer staking de BTC con la aplicación de Bitcoin puede provocar la imposibilidad de redimir tus BTC, lo que resultaría en la pérdida permanente de los activos.
 
-3. **Stake BTC Only from the Primary BTC Wallet Address:** BTC staking is currently supported from your Ledger’s primary BTC wallet address only. Secondary or derived addresses are currently not compatible.
+3. **Haz staking de BTC solo desde la dirección principal de la billetera BTC:** Actualmente, el staking de BTC es compatible únicamente desde la dirección principal de la billetera BTC de tu dispositivo Ledger. Las direcciones secundarias o derivadas no son compatibles por el momento.
 
-4. **Only Native Segwit Bitcoin Address Type Supported:** Currently, only Native SegWit Bitcoin addresses are supported for BTC staking via Ledger hardware.
+4. **Solo se admite el tipo de dirección Bitcoin Native SegWit:** Actualmente, solo las direcciones Bitcoin Native SegWit son compatibles para el staking de BTC a través de dispositivos Ledger.
 
-## Supported Ledger Hardware Wallets
+## Dispositivos Ledger de hardware compatibles
 
-The following Ledger hardware devices currently support staking, redemption, and redelegation of BTC on the Core Testnet. For the best experience and compatibility, ensure your device is running the latest available firmware.
+Los siguientes dispositivos de hardware de Ledger actualmente admiten el staking, redención y redelegación de BTC en Core Testnet. Para una mejor experiencia y compatibilidad, asegúrate de que tu dispositivo esté ejecutando la versión de firmware más reciente disponible.
 
-| Ledger Device      | Firmware Version (_at the time of writing_) |
-| ------------------ | -------------------------------------------------------------- |
-| **Ledger Nano S+** | 1.4.0                          |
-| **Ledger Nano X**  | 2.5.0                          |
-| **Ledger Stax**    | 1.8.0                          |
-| **Ledger Flex**    | 1.4.0                          |
+| Dispositivo Ledger | Versión de firmware (_al momento de redactar_) |
+| ------------------ | ----------------------------------------------------------------- |
+| **Ledger Nano S+** | 1.4.0                             |
+| **Ledger Nano X**  | 2.5.0                             |
+| **Ledger Stax**    | 1.8.0                             |
+| **Ledger Flex**    | 1.4.0                             |
 
 <br/>
 
 :::important
-The firmware versions listed above reflect the latest available at the time of writing and are subject to change. Before staking, redeeming, or redelegating Bitcoin on Core Testnet using your Ledger device, as a best practice, update to the latest compatible version to ensure compatibility and security. Always check Ledger Live for the most current updates. Refer [here](https://support.ledger.com/article/8458939792669-zd) for more details on updating the Ledger drive firmware.
+Las versiones de firmware listadas arriba reflejan las más recientes disponibles al momento de redactar y están sujetas a cambios. Antes de hacer staking, redimir o redelegar Bitcoin en Core Testnet usando tu dispositivo Ledger, como mejor práctica, actualiza siempre a la última versión compatible para garantizar compatibilidad y seguridad. Siempre verifica en Ledger Live las actualizaciones más recientes. Consulta [aquí](https://support.ledger.com/article/8458939792669-zd) para más detalles sobre cómo actualizar el firmware de tu dispositivo Ledger.
 :::
 
-## Prerequisites
+## Requisitos previos
 
-Before you begin, make sure you have:
+Antes de comenzar, asegúrate de tener lo siguiente:
 
-- A supported Ledger device with the latest firmware.
-- Ledger Live is installed and set up on your computer.
-- You need to have a BTC address on your Ledger device, which can be acquired through either Ledger Live or the Xverse wallet.
-  - BTC addresses created via wallets other than Xverse and Ledger Live have not been tested - use at your own risk.
-  - For Xverse Wallet, add your Ledger device to the Xverse Wallet.
-- Sufficient Bitcoin Testnet4 BTC (minimum 0.01 BTC) available on your Ledger device for staking and covering transaction fees.
+- Un dispositivo Ledger compatible con el firmware más reciente.
+- Ledger Live instalado y configurado en tu computadora.
+- Una dirección BTC en tu dispositivo Ledger, la cual puedes obtener a través de Ledger Live o de la billetera Xverse.
+  - Las direcciones BTC creadas en billeteras distintas a Xverse o Ledger Live no han sido probadas — úsalas bajo tu propio riesgo.
+  - Para Xverse Wallet, agrega tu dispositivo Ledger a la billetera Xverse.
+- Bitcoin Testnet4 BTC suficiente (mínimo 0.01 BTC) disponible en tu dispositivo Ledger para el staking y para cubrir las comisiones de transacción.
 
-## Setting up Ledger Device
+## Actualizar tu dispositivo Ledger
 
-Before staking BTC on Core Testnet, as a best practice, make sure your Ledger hardware wallet is updated with the latest or supporting firmware, and configured and ready to use with the Core Testnet.
+Antes de hacer staking de BTC en Core Testnet, como mejor práctica, asegúrate de que tu hardware wallet Ledger esté actualizado con el firmware más reciente o compatible, y que esté configurado y listo para usarse con Core Testnet.
 
-### Update Your Ledger Device
+### Actualizar tu dispositivo Ledger
 
-Ensure your Ledger device is updated and ready for use.
+Asegúrate de que tu dispositivo Ledger esté actualizado y listo para usarse.
 
-1. Open **Ledger Live** on your computer.
-2. Connect and unlock your Ledger device.
-3. Navigate to **My Ledger** in the sidebar.
-4. If prompted, allow **Ledger Manager** access on your device.
-5. Install any available firmware updates for your device.
+1. Abre **Ledger Live** en tu computadora.
+2. Conecta y desbloquea tu dispositivo Ledger.
+3. Navega a **My Ledger** en la barra lateral.
+4. Si se solicita, permite el acceso de **Ledger Manager** en tu dispositivo.
+5. Instala cualquier actualización de firmware disponible para tu dispositivo.
 
-#### Setting up the Ledger Live for Testnet
+#### Configuración de Ledger Live para Testnet
 
-The Core Testnet app is not installed by default on Ledger Live Manager. To install and view the Core Testnet app, you must enable "**Developer Mode**" and enable and change "**My Ledger Provider**" on your Ledger device.
+La aplicación Core Testnet no está instalada por defecto en Ledger Live Manager. Para instalar y visualizar la aplicación Core Testnet, debes habilitar el "**Developer Mode**" y cambiar la opción "**My Ledger Provider**" en tu dispositivo Ledger.
 
-##### Enable Developer Mode on your Ledger Device
+##### Habilitar el Developer Mode en tu dispositivo Ledger
 
-1. Connect your Ledger hardware device and unlock it.
+1. Conecta tu dispositivo Ledger y desbloquéalo.
 
-2. Open the Ledger Live application and navigate to "**Settings**" (located in the upper right corner).
+2. Abre la aplicación Ledger Live y navega a **Settings** (ubicada en la parte superior derecha).
 
-3. Navigate to the "**Experimental Features**" menu, enable "**Developer Mode**," and set "**My Ledger Provider**" to **4**. This will show the developer and testnet apps in the manager.
+3. Ve al menú "**Experimental Features**", habilita "**Developer Mode**," y establece **My Ledger Provider** en **4**. Esto mostrará las aplicaciones de desarrollo y testnet en el manager.
 
 <p align="center" style={{zoom:"80%"}}>
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app-1.png)
 </p>
 
-##### Installing Ledger Core Testnet app
+##### Instalación de la aplicación Ledger Core Testnet
 
-1. With your device connected, open Ledger Live and navigate to "**My Ledger**".
+1. Con tu dispositivo conectado, abre Ledger Live y navega a "**My Ledger**".
 
-2. Under the "**App Catalog**", search for "**Core**".
+2. En el "**App Catalog**", busca "**Core**".
 
-3. Install the "**Core Testnet**" app. Use _only_ the Core Testnet app for staking Bitcoin on Core Testnet.
+3. Instala la aplicación "**Core Testnet**". Usa _únicamente_ la aplicación Core Testnet para hacer staking de Bitcoin en Core Testnet.
 
 <p align="center" style={{zoom:"80%"}}>    
 ![img](../../../../../static/img/ledger-core/testnet/install-coredao-testnet-app.png)
 </p>
 
 :::note
-For staking BTC on Core Testnet with a Ledger device, users must use only the Core Testnet app. Unlike the Bitcoin app, which relies on blind signing, the Core app supports Clear Signing, allowing users to fully view and verify transaction details before signing and approving them. For more information about Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
-:::#### Setup Bitcoin Testnet AccountCurrently, staking from a Ledger device is only supported via the primary Bitcoin account on the Ledger device.
-If you have a new Ledger device, the first Bitcoin account you set up is the primary account. Refer here for detailed steps on stepping up the Bitcoin Address on the Ledger device using Ledger Live.
-If you have multiple Bitcoin accounts already set up on your ledger device, refer here for instructions on how to identify the primary account.⚠️ Disclaimer: Currently, only Bitcoin addresses generated through Ledger Live and Xverse Wallet have been thoroughly tested and verified for compatibility. Addresses created using other wallets have not yet been tested, and functionality cannot be guaranteed. Users choosing to proceed with untested wallets should do so at their own risk.##### Setting up Bitcoin Address using Ledger LiveTo set up a Bitcoin account address that contains the Bitcoin Testnet4 BTC tokens for staking, follow the steps below:1) Install Bitcoin Testnet and the Bitcoin app on your Ledger device.
-2) With your device connected to the computer, in the Ledger Live app, navigate to the "**Accounts**" tab and click "**Add Account**".<p align="center" style={{zoom:"40%"}}>    
+Para hacer staking de BTC en Core Testnet con un dispositivo Ledger, los usuarios deben usar únicamente la aplicación Core Testnet. A diferencia de la aplicación de Bitcoin, que depende de blind signing, la aplicación Core soporta Clear Signing, lo que permite a los usuarios visualizar y verificar completamente los detalles de la transacción antes de firmarla y aprobarla. Para más información sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+:::#### Configuración de la cuenta de Bitcoin TestnetActualmente, el staking desde un dispositivo Ledger solo es compatible a través de la cuenta principal de Bitcoin en el dispositivo Ledger.
+Si tienes un dispositivo Ledger nuevo, la primera cuenta de Bitcoin que configures será la cuenta principal. Consulta aquí los pasos detallados para configurar la dirección de Bitcoin en el dispositivo Ledger usando Ledger Live.
+Si ya tienes varias cuentas de Bitcoin configuradas en tu dispositivo Ledger, consulta aquí las instrucciones para identificar la cuenta principal.⚠️ Aviso: Actualmente, solo las direcciones de Bitcoin generadas mediante Ledger Live y Xverse Wallet han sido probadas y verificadas para garantizar compatibilidad. Las direcciones creadas con otras wallets aún no han sido probadas y no se puede garantizar su funcionamiento. Los usuarios que decidan proceder con wallets no probadas lo harán bajo su propio riesgo.##### Configuración de la dirección de Bitcoin usando Ledger LivePara configurar una dirección de cuenta Bitcoin que contenga los tokens Bitcoin Testnet4 BTC para staking, sigue los pasos a continuación:1) Instala Bitcoin Testnet y la aplicación de Bitcoin en tu dispositivo Ledger.
+2) Con tu dispositivo conectado a la computadora, abre la aplicación Ledger Live, navega a la pestaña "**Accounts**" y haz clic en "**Add Account**".<p align="center" style={{zoom:"40%"}}>    
 ![Add-Account](../../../../../static/img/ledger-core/testnet/btc-staking/UI-1.png)
-</p>3) Search testnet and select Bitcoin Testnet (BTC). Click on Continue<p align="center" style={{zoom:"50%"}}>
+</p>3) Busca testnet y selecciona Bitcoin Testnet (BTC). Click on Continue<p align="center" style={{zoom:"50%"}}>
 ![Add-Account-2](../../../../../static/img/ledger-core/testnet/btc-staking/UI-2.png)
-</p>4) Approve the Bitcoin Test app on your hardware wallet device.
-5) On the next screen, choose the address format (Native SegWit). Note that only the Bitcoin Native Segwit Address type is supported for staking BTC on Core using Ledger hardware wallets.
-6) Click on the **Add Account** button.<p align="center" style={{zoom:"50%"}}>
+</p>4) Aprueba la aplicación de Bitcoin Test en tu dispositivo Ledger.
+5) En la siguiente pantalla, elige el formato de dirección (Native SegWit). Ten en cuenta que únicamente el tipo de dirección Bitcoin Native SegWit es compatible para hacer staking de BTC en Core usando dispositivos Ledger.
+6) Haz clic en el botón **Add Account**.<p align="center" style={{zoom:"50%"}}>
 ![Add Accounts 3](../../../../../static/img/ledger-core/testnet/btc-staking/UI-3.png)
-</p>7) You have successfully added a Bitcoin account on the Bitcoin testnet app.<p align="center" style={{zoom:"65%"}}>
+</p>7) Has añadido correctamente una cuenta de Bitcoin en la aplicación de Bitcoin testnet.<p align="center" style={{zoom:"65%"}}>
 ![Account Added Successfully](../../../../../static/img/ledger-core/testnet/btc-staking/UI-4.png)
-</p>For more details on setting up your first Bitcoin Account on a Ledger device, refer [here](https://support.ledger.com/article/115005195945-zd).#### Get Bitcoin Testnet4 BTC Tokens1) Go to the Receive tab on Ledger Live.<p align="center" style={{zoom:"40%"}}>
+</p>Para más detalles sobre cómo configurar tu primera cuenta de Bitcoin en un dispositivo Ledger, consulta [aquí](https://support.ledger.com/article/115005195945-zd).#### Obtener tokens Bitcoin Testnet4 BTC1) Ve a la pestaña Receive en Ledger Live.<p align="center" style={{zoom:"40%"}}>
 ![Receive tab](../../../../../static/img/ledger-core/testnet/btc-staking/UI-5.png)
-</p>2) Select Bitcoin testnet account you want to use and click on "Continue".<p align="center" style={{zoom:"60%"}}>
+</p>2) Selecciona la cuenta de Bitcoin Testnet que deseas usar y haz clic en "Continue".<p align="center" style={{zoom:"60%"}}>
 ![Receive Tab - Select Bitcoin Testnet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-6.png)
 </p>3) Copy the Bitcoin Testnet account address.<p align="center" style={{zoom:"60%"}}>
 ![Copy BTC Testnet Address](../../../../../static/img/ledger-core/testnet/btc-staking/UI-7.png)
