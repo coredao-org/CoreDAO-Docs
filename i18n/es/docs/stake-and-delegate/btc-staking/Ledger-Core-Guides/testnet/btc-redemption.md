@@ -166,24 +166,24 @@ De forma alternativa, puedes usar Xverse Wallet para redimir BTC directamente de
 
 1. Firma la transacción con el wallet de tu dispositivo Ledger después de revisar los detalles de la transacción.
 
-2. Always use the Ledger Core Testnet app, not the Ledger Bitcoin app, to redeem the staked BTC on the Core Testnet. The Bitcoin app lacks support for redemption/redelegation operations. Further, the Ledger Core Testnet app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+2. Usa siempre la aplicación Ledger Core Testnet, no la aplicación Ledger Bitcoin, para redimir el BTC en staking en el Core Testnet. La aplicación Bitcoin no admite operaciones de redención/redelegación. Además, la aplicación Ledger Core Testnet admite Clear Signing, que muestra todos los detalles de la transacción (como monto, direcciones y comisiones) directamente en la pantalla de tu dispositivo Ledger. Esto garantiza total transparencia y te permite verificar y aprobar la transacción, protegiendo así tus activos de acciones no deseadas o maliciosas. Para más detalles sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 <p align="center">
 ![sign-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-redeem/btc-redeem-testnet.gif)
 </p>
 
-4. Once the transaction is approved on your Ledger device, the website will display a "Transaction Submitted" notification, confirming that your BTC redemption request has been successfully initiated.
+4. Una vez que la transacción sea aprobada en tu dispositivo Ledger, el sitio web mostrará una notificación de "Transacción Enviada", confirmando que tu solicitud de redención de BTC se ha iniciado correctamente.
 
 <p align="center"  style={{zoom:"40%"}}>
 ![tx-submitted](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-14.png)
 </p>
 
-5. After the Bitcoin block of the redemption transaction is confirmed, verify that the redeemed BTC has returned to your receiving Bitcoin address. (This may take a few minutes). You can also view the transaction details on the BTC Explorer.
+5. Después de que el bloque de Bitcoin con la transacción de redención sea confirmado, verifica que el BTC redimido haya regresado a tu dirección de recepción de Bitcoin. (Esto puede tardar unos minutos). También puedes consultar los detalles de la transacción en el BTC Explorer.
 
-## FAQs
+## Preguntas Frecuentes
 
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+¿Tienes más preguntas? Consulta la sección de [FAQs](../../../../FAQs/ledger-core-faqs.md) para obtener respuestas a problemas comunes, soluciones y mejores prácticas.
 
-## Conclusion
+## Conclusión
 
-By following this guide, you’ve successfully redeemed staked BTC on the Core Testnet using your Ledger hardware wallet. The combination of Core’s Self-Custodial BTC Staking model and Ledger’s industry-leading security, enhanced by Clear Signing via the Ledger Core Testnet app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core’s decentralized infrastructure. You now have complete ownership of your reclaimed BTC.
+Al seguir esta guía, has redimido exitosamente BTC en staking en el Core Testnet utilizando tu billetera hardware Ledger. La combinación del modelo de BTC Staking Auto-Custodiado de Core y la seguridad líder en la industria de Ledger, mejorada con Clear Signing a través de la aplicación Ledger Core Testnet, ofrece la máxima transparencia, confianza y seguridad. Tu redención exitosa marca una interacción segura y transparente con la infraestructura descentralizada de Core. Ahora tienes propiedad completa de tu BTC recuperado.
