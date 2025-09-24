@@ -50,45 +50,45 @@ Antes de comenzar, asegúrate de contar con lo siguiente:
 
 > ⚠️ **Nota:** No podrás redimir o redelegar BTC en staking hasta que haya expirado el timelock designado.
 
-## Steps to Redeem Expired Timelock BTC
+## Pasos para Redimir BTC con Timelock Expirado
 
-Una vez que el período de timelock del BTC ha expirado, los usuarios son elegibles para redimir o redelegar sus activos de Bitcoin delegados. You must use the same Ledger wallet Bitcoin address used for staking BTC to redeem your BTC after the timelock expiry.
+Una vez que el período de timelock del BTC ha expirado, los usuarios son elegibles para redimir o redelegar sus activos de Bitcoin delegados. Debes usar la misma dirección de wallet de Ledger que utilizaste para hacer staking de BTC al momento de redimir después de la expiración del timelock.
 
 ### Paso #1: Conectar Core Wallet al Sitio de Staking
 
-1. Connect your Core Mainnet wallet to the Core BTC Staking website. Remember to use the same Bitoin address and wallet that you had used at the time of staking BTC. Click on the "**Connect**" button in the top right corner of the website.
+1. Conecta tu Core Mainnet wallet al sitio web de Core BTC Staking. Recuerda usar la misma dirección de Bitcoin y el mismo wallet que utilizaste al momento de hacer staking de BTC. Haz clic en el botón “**Connect**” en la esquina superior derecha del sitio web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
 </p>
 
-2. From the displayed wallet modal, select the wallet of your choice configured for use with Core Mainnet.
+2. En el modal de wallets mostrado, selecciona la wallet de tu preferencia configurada para usarse con Core Mainnet.
 
-### Step #2: Navigate to Staking Dashboard
+### Paso #2: Ir al Panel de Staking
 
-1. Ensure your Ledger device is installed with the latest firmware and connected to your computer with Ledger's primary Bitcoin (BTC) address.
-2. Navigate to the [Core Ledger BTC Staking Website](https://stake.coredao.org/staking).
-3. On the website UI, hover over your connected wallet in the top right corner and click "**My Staking**".
+1. Asegúrate de que tu dispositivo Ledger tenga instalado el firmware más reciente y esté conectado a tu computadora utilizando la dirección primaria de Bitcoin (BTC) de Ledger.
+2. Ve al [Navega al sitio web de Core Ledger BTC Staking] (https://stake.coredao.org/staking).
+3. En la interfaz del sitio, pasa el cursor sobre tu cartera conectada en la esquina superior derecha y haz clic en “**My Staking**”.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-1.png)
 </p>
 
-### Step #3: Navigate to BTC Staking Records
+### Paso #3: Ir al Registro de BTC Staking
 
-1. On the "**My Staking Dashboard**" page, select "**BTC**" records from the displayed tabs.
+1. En la página del “**My Staking Dashboard**”, selecciona la pestaña de “**BTC**” para ver los registros correspondientes.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-2.png)
 </p>
 
-2. This tab lists all the BTC staking records and the validators that you have previously delegated BTC to. Look for any "**Expired**" records under "**Redeem Time**",  and proceed to click "Redeem" under "**Action**."
+2. En esta pestaña se listan todos los registros de staking de BTC y los validadores a los que previamente delegaste BTC. Busca cualquier registro marcado como “**Expired**” bajo la columna “**Redeem Time**”, haz clic en “Redeem” dentro de la columna “**Action**”.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-3.png)
 </p>
 
-### Step #4: Verify BTC Staking and Redemption Details
+### Paso #4: Verificar detalles de Staking y Redención de BTC
 
 1. On the displayed "**Redeem BTC**" modal, cross-check the BTC staking address, the BTC Amount that will be redeemed, and the Receiving Bitcoin address. To redeem the BTC, you must connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction.
 
