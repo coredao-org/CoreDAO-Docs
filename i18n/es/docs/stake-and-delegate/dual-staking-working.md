@@ -79,16 +79,16 @@ Ahora, el usuario deberá hacer staking de CORE según los siguientes umbrales d
 
 Los **Umbrales de CORE en Staking** con las variables mencionadas anteriormente son:
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 4,250 \= 42,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 12,750 \= 127,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 34,000 \= 340,000 staked CORE
+- Umbral de CORE en staking para **P<sub>Level1</sub>** \= 10 \* 4,250 \= 42,500 CORE en staking
+- Umbral de CORE en staking para **P<sub>Level2</sub>** \= 10 \* 12,750 \= 127,500 CORE en staking
+- Umbral de CORE en staking para **P<sub>Level3</sub>** \= 10 \* 34,000 \= 340,000 CORE en staking
 
 Por lo tanto, el BTC en staking en este ejemplo disfrutará de un rendimiento de
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 42,500
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 42,500 but below 127,500
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 127,500 but below 340,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 340,000
+- **P<sub>BASE</sub>** si la cantidad de CORE en staking es inferior a 42,500
+- **P<sub>Level1</sub>** si la cantidad de CORE en staking es mayor o igual a 42,500 pero menor que 127,500
+- **P<sub>Level2</sub>** si la cantidad de CORE en staking es mayor o igual a 127,500 pero menor que 340,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** si la cantidad de CORE en staking es mayor o igual a 340,000
 
 :::note
 El multiplicador de cada nivel de rendimiento potenciado es dinámico y está sujeto a cambios según las condiciones de oferta y demanda del mercado.
