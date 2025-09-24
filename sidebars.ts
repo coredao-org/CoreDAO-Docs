@@ -240,6 +240,7 @@ const sidebars: SidebarsConfig = {
           label: "Bridging with Core",
           items: [
             "Dev-Guide/bridge-with-layerzero",
+            "Dev-Guide/core-ccip-cross-chain-guide",
             "Dev-Guide/core-bridge-resources",
             "Dev-Guide/thirdweb-universal-bridge"
           ],
