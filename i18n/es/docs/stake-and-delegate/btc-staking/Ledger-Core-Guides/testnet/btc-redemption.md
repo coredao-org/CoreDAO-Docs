@@ -148,23 +148,23 @@ De forma alternativa, puedes usar Xverse Wallet para redimir BTC directamente de
 
 #### Usando Xverse Wallet
 
-1. Si usas un Xverse Wallet, revisa la transacción. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si usas un Xverse Wallet, revisa la transacción. Verifica los detalles y haz clic en "**Confirm**" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-10.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledge**r" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![approve-tx-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-11.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar la Transacción de Staking de BTC en el Dispositivo Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
+1. Firma la transacción con el wallet de tu dispositivo Ledger después de revisar los detalles de la transacción.
 
 2. Always use the Ledger Core Testnet app, not the Ledger Bitcoin app, to redeem the staked BTC on the Core Testnet. The Bitcoin app lacks support for redemption/redelegation operations. Further, the Ledger Core Testnet app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
