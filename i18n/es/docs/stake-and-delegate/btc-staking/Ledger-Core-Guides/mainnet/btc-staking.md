@@ -1,5 +1,5 @@
 ---
-sidebar_label: Staking BTC with Core
+sidebar_label: Staking de Bitcoin con Core
 description: User guide to stake BTC from Ledger device on Core
 hide_table_of_contents: false
 sidebar_position: 2
