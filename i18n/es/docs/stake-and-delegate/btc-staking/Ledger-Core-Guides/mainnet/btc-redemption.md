@@ -90,91 +90,91 @@ Una vez que el período de timelock del BTC ha expirado, los usuarios son elegib
 
 ### Paso #4: Verificar detalles de Staking y Redención de BTC
 
-1. On the displayed "**Redeem BTC**" modal, cross-check the BTC staking address, the BTC Amount that will be redeemed, and the Receiving Bitcoin address. To redeem the BTC, you must connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction.
+1. En el modal mostrado de "**Redeem BTC**", verifica la dirección de BTC staking, el monto de BTC que será redimido y la Receiving Bitcoin address. Para redimir el BTC, debes conectarte a la misma dirección de Bitcoin que utilizaste para iniciar la transacción de staking.
 
-2. Set your Receiving Bitcoin Address to receive the unlocked BTC. This **must** be the same as the address that initiated the Bitcoin staking transaction and **must** be the Native Segwit address type.
+2. Configura tu dirección de recepción de Bitcoin para recibir el BTC desbloqueado. Esta **debe** ser la misma dirección que inició la transacción de staking de Bitcoin y debe ser del tipo Native Segwit.
 
-3. Set your transaction speed priority, and click "**Create Transaction**".
+3. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-4.png)
 </p>
 
-### Step #5: Sign the BTC Unlock Transaction on Ledger Device
+### Paso #5: Firmar la transacción de desbloqueo de BTC en el dispositivo Ledger
 
-1. Click "**Sign By Bitcoin Wallet**" to sign the BTC redemption transaction from your Ledger device.
+1. Haz clic en "**Sign By Bitcoin Wallet**" para firmar la transacción de redención de BTC desde tu dispositivo Ledger.
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-5.png)
 </p>
 
-### Step#5: Connect Ledger Device for Redemption of Staked BTC
+### Paso #5: Conectar el dispositivo Ledger para la redención del BTC en staking
 
-#### Option #1: Connecting the Ledger Device Directly to the Staking Website
+#### Opción #1: Conectar el Dispositivo Ledger Directamente al Sitio Web de Staking
 
-1. To connect your Ledger device directly to the Staking website, click on "**Ledger**" under the "**Hardware Wallets**" section from the displayed wallet model. Ensure your Ledger device is connected, unlocked, and the Ledger Core app is open on your device.
-
-<p align="center" style={{zoom:"60%"}}>
-![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/wallet-connect-1.png)
-</p>
-
-#### Option #2: Connecting Ledger Device Using Xverse Wallet
-
-Alternatively, you can use Xverse Wallet to redeem BTC directly from your Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
-
-1. To connect your Ledger device using the Xverse wallet, click on "Xverse" under the "Wallets Supporting Ledger" section from the displayed wallet model. Ensure your Ledger is connected, unlocked, and the Ledger Core app is open on your device.
+1. Para conectar tu dispositivo Ledger directamente al sitio de Staking, haz clic en “**Ledger**” dentro de la sección “**Hardware Wallets**” en la ventana emergente de selección de carteras. Asegúrate de que tu Ledger esté conectado, desbloqueado y con la aplicación Ledger Core abierta en tu dispositivo.
 
 <p align="center" style={{zoom:"60%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/wallet-connect-1.png)
 </p>
 
-### Step#6: Review & Approve Transaction on Ledger Device
+#### Opción #2: Conectar el Dispositivo Ledger Usando Xverse Wallet
 
-After connecting your Ledger device, ensure that the device is unlocked and the Ledger Core app is open. You will be prompted on the screen to approve the transaction.
+De forma alternativa, puedes usar Xverse Wallet para redimir BTC directamente desde tu dispositivo Ledger. Para lograr esto, los usuarios primero deben agregar su dispositivo Ledger a su wallet Xverse como prerrequisito. Consulta la [guía oficial de Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) para conectar tu dispositivo Ledger con Xverse.
+
+1. Para conectar tu dispositivo Ledger usando Xverse Wallet, haz clic en "Xverse" en la sección "Wallets Supporting Ledger" desde el modal de wallets mostrado. Asegúrate de que tu Ledger esté conectado, desbloqueado y que la Ledger Core app esté abierta en tu dispositivo.
+
+<p align="center" style={{zoom:"60%"}}>
+![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/wallet-connect-1.png)
+</p>
+
+### Paso#6: Revisar y aprobar la transacción en el dispositivo Ledger
+
+Después de conectar tu dispositivo Ledger, asegúrate de que esté desbloqueado y que la aplicación Ledger Core esté abierta. En la pantalla se te pedirá que apruebes la transacción.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-6.png)
 </p>
 
-#### Using Xverse Wallet
+#### Usando Xverse Wallet
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si usas una Xverse wallet, revisa la transacción. Verifica los detalles y haz clic en "**Confirm**" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/Xverse-wallet-ui.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"40%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/Xverse-wallet-ui-2.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar la Transacción de Staking de BTC en el Dispositivo Ledger
 
-1. Sign the transaction with your Ledger device wallet after reviewing the transaction details.
-2. Always use the Ledger Core app, not the Ledger Bitcoin app, to redeem the staked BTC on the Core blockchain. The Bitcoin app lacks support for redemption/redelegation operations. Further, the Ledger Core app supports Clear Signing, which displays all transaction details (such as amount, addresses, and fees) directly on your Ledger device screen. This ensures full transparency and allows you to verify and approve the transaction, thereby safeguarding your assets from unintended or malicious actions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+1. Firma la transacción con el wallet de tu dispositivo Ledger después de revisar los detalles de la transacción.
+2. Siempre usa la aplicación Ledger Core, no la aplicación Ledger Bitcoin, para redimir el BTC en staking en la blockchain de Core. La aplicación Bitcoin no admite operaciones de redención/redelegación. Además, la Ledger Core app admite Clear Signing, lo que muestra todos los detalles de la transacción (como montos, direcciones y comisiones) directamente en la pantalla de tu dispositivo Ledger. Esto garantiza total transparencia y te permite verificar y aprobar la transacción, protegiendo tus activos de acciones no deseadas o maliciosas. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 
 <p align="center">
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/Ledger-BTC-Redeem.gif)
 </p>
 
-3. Once the transaction is approved on your Ledger device, the website will display a "**Transaction Submitted**" notification, confirming that your BTC redemption request has been successfully initiated.
+3. Una vez que la transacción haya sido aprobada en tu dispositivo Ledger, el sitio web mostrará una notificación "**Transaction Submitted**", confirmando que tu solicitud de redención de BTC se ha iniciado exitosamente.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-7.png)
 </p>
 
-4. After the Bitcoin block of the redemption transaction is confirmed, verify that the redeemed BTC has returned to your receiving Bitcoin address. (This may take a few minutes). You can also view the transaction details on the BTC Explorer.
+4. Después de que se confirme el bloque de Bitcoin de la transacción de redención, verifica que el BTC redimido haya regresado a tu Receiving Bitcoin Address. (Esto puede tardar algunos minutos). También puedes ver los detalles de la transacción en el BTC Explorer.
 
-## FAQs
+## Preguntas Frecuentes
 
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+¿Tienes más preguntas? Consulta la sección [FAQs](../../../../FAQs/ledger-core-faqs.md) para encontrar respuestas a problemas comunes, guías de solución y mejores prácticas.
 
-## Conclusion
+## Conclusión
 
-By following this guide, you"ve successfully redeemed staked BTC on the Core blockchain using your Ledger hardware wallet. The combination of Core"s Self-Custodial BTC Staking model and Ledger"s industry-leading security, enhanced by Clear Signing via the Ledger Core app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core"s decentralized infrastructure. You now have complete ownership of your reclaimed BTC.
+Siguiendo esta guía, has redimido con éxito tu BTC en staking en la blockchain de Core usando tu hardware wallet Ledger. La combinación del modelo Self-Custodial BTC Staking de Core y la seguridad líder en la industria de Ledger, mejorada con Clear Signing mediante la Ledger Core app, proporciona la máxima transparencia, confianza y seguridad. Tu redención exitosa marca una interacción segura y transparente con la infraestructura descentralizada de Core. Ahora tienes propiedad completa de tu BTC recuperado.
 
 
