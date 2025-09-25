@@ -157,21 +157,21 @@ Para configurar una dirección de cuenta de Bitcoin que contenga tokens de Bitco
 
 Para más detalles sobre cómo configurar tu primera cuenta de Bitcoin en un dispositivo Ledger, consulta [aquí](https://support.ledger.com/article/115005195945-zd).
 
-#### Get Bitcoin Testnet4 BTC Tokens
+#### Obtener Tokens de Bitcoin Testnet4 BTC
 
-1. Go to the Receive tab on Ledger Live.
+1. Ve a la pestaña Receive en Ledger Live.
 
 <p align="center" style={{zoom:"40%"}}>
 ![Receive tab](../../../../../static/img/ledger-core/testnet/btc-staking/UI-5.png)
 </p>
 
-2. Select Bitcoin testnet account you want to use and click on "Continue".
+2. Selecciona la cuenta de Bitcoin Testnet que deseas usar y haz clic en "Continue".
 
 <p align="center" style={{zoom:"60%"}}>
 ![Receive Tab - Select Bitcoin Testnet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-6.png)
 </p>
 
-3. Copy the Bitcoin Testnet account address.
+3. Copia la dirección de la cuenta de Bitcoin Testnet.
 
 <p align="center" style={{zoom:"60%"}}>
 ![Copy BTC Testnet Address](../../../../../static/img/ledger-core/testnet/btc-staking/UI-7.png)
@@ -182,144 +182,144 @@ Para más detalles sobre cómo configurar tu primera cuenta de Bitcoin en un dis
 <br/>
 
 :::note
-Always use the Core Testnet app for staking, redeeming, or redelegating Bitcoin on Core Testnet. The standard Bitcoin app does not support redemption operations on Core and may result in permanent loss of access to your staked BTC. Unlike the Ledger Bitcoin app, which uses blind signing where transaction details are obscured from the user, the Ledger Core Testnet app enables Clear Signing. Clear Signing displays all transaction information (e.g., amount, validator, fees, addresses) directly on your Ledger device screen, giving you complete visibility. This enables you to verify what you’re signing confidently and protects you from unintended or malicious transactions. For more details on Clear Signing, refer [here](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
+Usa siempre la aplicación Core Testnet para hacer staking, redimir o redelegar Bitcoin en Core Testnet. La aplicación estándar de Bitcoin no soporta operaciones de redención en Core y puede resultar en la pérdida permanente de acceso a tu BTC en staking. A diferencia de la aplicación de Bitcoin de Ledger, que utiliza blind signing donde los detalles de la transacción se ocultan al usuario, la aplicación Ledger Core Testnet permite Clear Signing. Con Clear Signing, todos los detalles de la transacción (ej. monto, validador, comisiones, direcciones) se muestran directamente en la pantalla de tu dispositivo Ledger, dándote visibilidad total. Esto te permite verificar con confianza lo que estás firmando y te protege contra transacciones no deseadas o maliciosas. Para más información sobre Clear Signing, consulta [aquí](https://www.ledger.com/academy/topics/ledgersolutions/what-is-clear-signing).
 :::
 
-## Staking BTC on Core with Ledger
+## Staking de BTC en Core con Ledger
 
-With your Ledger device connected and the Core Testnet app installed, you can securely stake BTC directly from your hardware wallet.
+Con tu dispositivo Ledger conectado y la aplicación Core Testnet instalada, puedes hacer staking de BTC de manera segura directamente desde tu hardware wallet.
 
-> ⚠️ **Note:** A minimum of 0.01 BTC is required to participate in Bitcoin staking on Core Testnet, along with sufficient testnet BTC to cover transaction fees.
+> ⚠️ **Nota:** Se requiere un mínimo de 0.01 BTC para participar en el staking de Bitcoin en Core Testnet, además de suficiente testnet BTC para cubrir las comisiones de transacción.
 
-1. On your Ledger device, open the CoreDAO app before proceeding.
+1. En tu dispositivo Ledger, abre la aplicación CoreDAO antes de continuar.
 
 <p align="center" style={{zoom:"120%"}}>
 ![core-app-ready](../../../../../static/img/ledger-core/testnet/btc-staking/core-app-ready.png)
 </p>
 
-2. Navigate to the [Core Testnet Staking Website](https://stake.test2.btcs.network/staking).
+2. Ve al [sitio web de Core Testnet Staking](https://stake.test2.btcs.network/staking).
 
-### Connect Core Wallet to the Staking Website
+### Conectar la Core Wallet al Sitio de Staking
 
-1. Connect your Core Testnet wallet to the Core Staking website. This will be used as the CORE reward address.
+1. Conecta tu wallet de Core Testnet al sitio web de Staking de Core. Esta será usada como dirección de recompensas en CORE.
 
-2. Click on the "**Connect**" button in the top right corner of the website.
+2. Haz clic en el botón “**Connect**” en la esquina superior derecha del sitio web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![connect-core-wallet](../../../../../static/img/ledger-core/testnet/connect-core-wallet.png)
 </p>
 
-3. From the displayed wallet modal, select the wallet of your choice configured for use with Core Testnet.
+3. En el modal de wallets mostrado, selecciona la wallet de tu preferencia configurada para usarse con Core Testnet.
 
-### Connect Ledger Hardware Wallet to Website
+### Conectar Ledger Hardware Wallet al sitio web
 
-Before connecting your Ledger device to the website, it's important to ensure you are using your primary Bitcoin (BTC) account for staking BTC on Core Testnet. Refer to the [official guide from Ledger](https://support.ledger.com/article/115005195945-zd) to set up a Bitcoin (BTC) account on your device, if you haven't already.
+Antes de conectar tu dispositivo Ledger al sitio web, es importante asegurarte de que estás usando tu cuenta principal de Bitcoin (BTC) para hacer staking de BTC en Core Testnet. Si aún no la has configurado, consulta la [guía oficial de Ledger](https://support.ledger.com/article/115005195945-zd) para establecer una cuenta de Bitcoin (BTC) en tu dispositivo.
 
-#### Staking Option One: Connect Ledger Wallet Directly
+#### Opción de Staking Uno: Conectar Ledger Wallet Directamente
 
-1. On the [Core Testnet Bitcoin Staking website](https://stake.test2.btcs.network/staking), click on "**Connect**" next to BTC Staking Amount. Remember, only the primary account is supported for staking BTC; ensure it is the same account connected to your Ledger Live.
+1. En el [sitio web de Core Testnet Bitcoin Staking](https://stake.test2.btcs.network/staking), haz clic en "**Connect**" junto a BTC Staking Amount. Recuerda, solo la cuenta primaria está soportada para hacer staking de BTC; asegúrate de que sea la misma cuenta conectada a tu Ledger Live.
 
 <p align="center" style={{zoom:"50%"}}>
 ![connect-ledger-device](../../../../../static/img/ledger-core/testnet/btc-staking/UI-8.png)
 </p>
 
-2. From the displayed wallet modal, under "**Hardware Wallet**," click on "**Ledger**". Ensure your Ledger is connected, unlocked, and the Core Testnet app is open.
+2. En la ventana emergente de wallets que aparecerá, dentro de "**Hardware Wallet**", haz clic en "**Ledger**". Asegúrate de que tu Ledger esté conectado, desbloqueado y con la aplicación Core Testnet abierta.
 
 <p align="center" style={{zoom:"60%"}}>
 ![connect-ledger-device](../../../../../static/img/ledger-core/testnet/btc-staking/UI-17.png)
 </p>
 
-#### Staking Option Two: Connecting Ledger Device Using Xverse Wallet
+#### Opción de Staking Dos: Conectar el Dispositivo Ledger Usando Xverse Wallet
 
-Alternatively, users can also use Xverse to stake Bitcoin from their Ledger device. To achieve this, users must first add their Ledger device to their Xverse wallet as a prerequisite. Refer to the [official guide by Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) to connect your Ledger device with Xverse.
+De forma alternativa, los usuarios también pueden usar Xverse para hacer staking de Bitcoin desde su dispositivo Ledger. Para lograr esto, los usuarios primero deben agregar su dispositivo Ledger a su wallet Xverse como prerrequisito. Consulta la [guía oficial de Xverse](https://support.xverse.app/hc/en-us/articles/17819233917965-How-to-Connect-Your-Ledger-Device-to-Xverse) para conectar tu dispositivo Ledger con Xverse.
 
-1. On the Core Bitcoin Staking page, click on "**Connect**" next to BTC Stake Amount. Remember, only the primary account is supported for staking BTC; ensure it is the same account connected to your Ledger Live.
+1. En la página de Core Bitcoin Staking, haz clic en "**Connect**" junto a BTC Stake Amount. Recuerda, solo la cuenta primaria está soportada para hacer staking de BTC; asegúrate de que sea la misma cuenta conectada a tu Ledger Live.
 
 <p align="center" style={{zoom:"50%"}}>    
 ![connect-ledger-device](../../../../../static/img/ledger-core/testnet/btc-staking/UI-8.png)
 </p>
 
-2. From the displayed wallet modal, click on "**Xverse**" under "**Wallets Supporting Ledger**". Make sure your Ledger device is unlocked.
+2. En el modal de wallets que se despliega, haz clic en "**Xverse**" bajo "**Wallets Supporting Ledger**". Asegúrate de que tu dispositivo Ledger esté desbloqueado.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-18.png)
 </p>
 
-3. Unlock your Ledger device and confirm the connection via the Xverse wallet extension.
+3. Desbloquea tu dispositivo Ledger y confirma la conexión a través de la extensión de Xverse Wallet.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-19.png)
 </p>
 
-4. If requested to switch to "**Bitcoin Testnet4**" accept the notification.
+4. Si se te solicita cambiar a "**Bitcoin Testnet4**", acepta la notificación.
 
 <p align="center" style={{zoom:"60%"}}>
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-staking/UI-20.png)
 </p>
 
-> ⚠️ **Note:** Only the primary Bitcoin account on the Ledger device is supported to stake BTC; ensure it is the same account connected to the Xverse wallet and used for staking purposes.
+> ⚠️ **Nota:** Solo la cuenta primaria de Bitcoin en el dispositivo Ledger es compatible para hacer staking de BTC; asegúrate de que sea la misma cuenta conectada a la wallet de Xverse y utilizada para fines de staking.
 
-### Specify & Confirm BTC Staking Details
+### Especificar y Confirmar Detalles del Staking de BTC
 
-1. **Specify BTC Staking & Delegation Details:** Once both Core and Bitcoin wallets are connected, specify the amount of BTC to stake. Select the desired Core validator to delegate your Bitcoin to. To proceed with BTC staking, set the tCORE2 Staking Amount as zero. Click the "Proceed to Stake" button.
+1. **Especificar detalles de Staking y Delegación de BTC:** Una vez que ambas wallets, Core y Bitcoin, estén conectadas, especifica la cantidad de BTC a hacer staking. Selecciona el validador de Core deseado al cual delegar tu Bitcoin. Para proceder con el staking de BTC, establece el monto de tCORE2 Staking en cero. Haz clic en el botón "Proceed to Stake".
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-9.png)
 </p>
 
-2. **Skip tCORE2 Staking Details:** Users can skip this step and click directly on "Stake BTC" to proceed with staking only Bitcoin by verifying Bitcoin staking details.
+2. **Omitir detalles de Staking con tCORE2:** Los usuarios pueden omitir este paso y hacer clic directamente en "Stake BTC" para continuar con el staking únicamente de Bitcoin verificando los detalles de Bitcoin staking.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-10.png)
 </p>
 
-3. **Confirm BTC Staking Details:** Confirm the amount to stake BTC. Before finalizing the Bitcoin staking transaction, it's essential to understand and specify several key parameters:
-   - Confirm the amount of BTC you’d like to timelock. The minimum amount to stake is 0.01 BTC.
-   - Setting the lock time determines when your Bitcoin will be unlocked and available again for redemption or re-delegation.
-   - The lock time on the website UI is based on the user’s local timezone, which may not align with the Ledger device’s UTC timezone.
-   - Specify the network priority speed for your transaction.
+3. **Confirmar Detalles de BTC Staking:** Confirma la cantidad de BTC a stakear. Antes de finalizar la transacción de Bitcoin staking, es esencial comprender y especificar varios parámetros clave:
+   - Confirma la cantidad de BTC que deseas hacer timelock. La cantidad mínima para hacer staking es 0.01 BTC.
+   - Configurar el lock time determina cuándo tu Bitcoin será desbloqueado y estará disponible nuevamente para redención o re-delegación.
+   - El lock time en la UI del sitio web se basa en la zona horaria local del usuario, la cual puede no coincidir con la zona horaria UTC del dispositivo Ledger.
+   - Especifica la prioridad de la red para tu transacción.
 
 <p align="center" style={{zoom:"80%"}}>  
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-11.png)
 </p>
 
-4. **Verify Bitcoin Staking Address (Optional)**: Use the Bitcoin Staking Address verification tool to confirm that the displayed BTC staking address matches your expected address before proceeding.
+4. **Verificar la dirección de BTC para Staking (Opcional)**: Usa la herramienta de verificación de Bitcoin Staking Address para confirmar que la dirección de staking de BTC mostrada coincide con la dirección esperada antes de continuar.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-21.png)
 </p>
 
-5. **Proceed to Approve Transaction:** Click on "**Approve Transaction**" on the website to proceed with the transaction.
+5. **Proceder a aprobar la transacción:** Haz clic en "**Approve Transaction**" en el sitio web para continuar con la transacción.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-12.png)
 </p>
 
-6. The approval will be directed to the connected wallet.
+6. La aprobación será dirigida a la wallet conectada.
 
 <p align="center" style={{zoom:"60%"}}>
 ![btc-staking-details](../../../../../static/img/ledger-core/testnet/btc-staking/UI-13.png)
 </p>
 
-### Review and Approve Transaction on Ledger Device
+### Revisar y Aprobar la Transacción en el Dispositivo Ledger
 
-#### Using Xverse Wallet
+#### Usando Xverse Wallet
 
-1. If using an Xverse wallet, review the transaction. Verify details and click "**Confirm**" on the wallet notification on your browser.
+1. Si usas una Xverse wallet, revisa la transacción. Verifica los detalles y haz clic en "**Confirm**" en la notificación de la wallet en tu navegador.
 
 <p align="center" style={{zoom:"60%"}}>
 ![approve-tx-xverse](../../../../../static/img/ledger-core/testnet/btc-staking/UI-14.png)
 </p>
 
-2. Click "**Connect**" on the "**Connect Your Ledger**" modal.
+2. Haz clic en "**Connect**" en el modal "**Connect Your Ledger**".
 
 <p align="center" style={{zoom:"60%"}}>
 ![approve-tx-xverse](../../../../../static/img/ledger-core/testnet/btc-staking/UI-15.png)
 </p>
 
-3. Proceed to confirm and approve the transaction on your Ledger device.
+3. Procede a confirmar y aprobar la transacción en tu dispositivo Ledger.
 
-#### Approve BTC Staking Transaction on the Ledger Device
+#### Aprobar la Transacción de Staking de BTC en el Dispositivo Ledger
 
 1. Ensure your device is unlocked and the Core Testnet app is open. Review and approve the BTC staking transaction on your Ledger device. Verify the staking details, including the amount of BTC, the validator and delegator addresses, and the transaction fees. Approve by signing the transaction.
 
