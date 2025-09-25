@@ -321,30 +321,30 @@ De forma alternativa, los usuarios también pueden usar Xverse para hacer stakin
 
 #### Aprobar la Transacción de Staking de BTC en el Dispositivo Ledger
 
-1. Ensure your device is unlocked and the Core Testnet app is open. Review and approve the BTC staking transaction on your Ledger device. Verify the staking details, including the amount of BTC, the validator and delegator addresses, and the transaction fees. Approve by signing the transaction.
+1. Asegúrate de que tu dispositivo esté desbloqueado y que la app Core Testnet esté abierta. Revisa y aprueba la transacción de BTC staking en tu dispositivo Ledger. Verifica los detalles del staking, incluyendo la cantidad de BTC, las direcciones del validator y delegator, así como las comisiones de transacción. Aprueba firmando la transacción.
 
 <p align="center" style={{zoom:"60%"}}> 
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/UI-21.png)
 </p>
 
-2. Once approved on your Ledger device, the "**Transaction Submitted**" notification will appear on the Core BTC Staking website.
+2. Una vez aprobada en tu dispositivo Ledger, aparecerá la notificación "**Transaction Submitted**" en el sitio web de Core BTC Staking.
 
 <p align="center">
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/btc-staking.gif)
 </p>
 
-3. Click on "**View on BTC Explorer**" to view details of your BTC staking transaction on the BTC Explorer.
+3. Haz clic en "**View on BTC Explorer**" para ver los detalles de tu transacción de BTC staking en el BTC Explorer.
 
 <p align="center" style={{zoom:"60%"}}>
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/UI-16.png)
 </p>
 
-> ⚠️ **Note:** To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:29 UTC).
+> ⚠️ **Nota:** Para ser elegible para recibir recompensas, debes completar una ronda completa de staking dentro del rango (00:00:00 - 23:59:29 UTC).
 
-## FAQs
+## Preguntas Frecuentes
 
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+¿Tienes más preguntas? Consulta la sección de [FAQs](../../../../FAQs/ledger-core-faqs.md) para obtener respuestas a problemas comunes, soluciones y mejores prácticas.
 
-## Conclusion
+## Conclusión
 
-Congratulations! You’ve successfully staked Bitcoin using your Ledger hardware wallet on the Core Testnet through Core’s Self-Custodial Bitcoin Staking. By following this guide, you securely connected your Ledger device, installed and used the Ledger Core Testnet app, and completed your BTC staking transactions with confidence. You’re now part of the Core ecosystem where security, control, and yield go hand in hand!
+¡Felicidades! Has hecho exitosamente Bitcoin staking usando tu Ledger hardware wallet en Core Testnet a través del modelo de Self-Custodial Bitcoin Staking. Siguiendo esta guía, conectaste de forma segura tu dispositivo Ledger, instalaste y utilizaste la aplicación Ledger Core Testnet, y completaste tus transacciones de BTC staking con confianza. ¡Ahora formas parte del ecosistema de Core, donde la seguridad, el control y el rendimiento van de la mano!
