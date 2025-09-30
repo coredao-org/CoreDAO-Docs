@@ -1,5 +1,5 @@
 ---
-sidebar_label: Chainlink CCIP Guide
+sidebar_label: Guide Chainlink CCIP
 hide_table_of_contents: false
 sidebar_position: 2
 ---
@@ -7,11 +7,11 @@ sidebar_position: 2
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-# Chainlink CCIP Cross-Chain Token Deployment on Core
+# Déploiement de jetons croisés Chainlink CCIP sur Core
 
 ---
 
-This guide walks you through deploying cross-chain tokens using **Chainlink CCIP** on the **Core** (Testnet or Mainnet). It adapts the official Chainlink Hardhat tutorial for Core-specific configurations.
+Ce guide vous guide à travers le déploiement de jetons croisés en utilisant **Chainlink CCIP** sur **Core** (Testnet ou Mainnet). Il adapte le tutoriel officiel Chainlink Hardhat pour des configurations spécifiques à Core.
 
 > Based on: [Chainlink CCIP EVM Tutorial (Burn & Mint from EOA)](https://docs.chain.link/ccip/tutorials/evm/cross-chain-tokens/register-from-eoa-burn-mint-hardhat#tutorial)
 
