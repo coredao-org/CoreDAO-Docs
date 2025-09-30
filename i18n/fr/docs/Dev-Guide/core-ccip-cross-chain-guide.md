@@ -13,24 +13,24 @@ import TabItem from '@theme/TabItem';
 
 Ce guide vous guide à travers le déploiement de jetons croisés en utilisant **Chainlink CCIP** sur **Core** (Testnet ou Mainnet). Il adapte le tutoriel officiel Chainlink Hardhat pour des configurations spécifiques à Core.
 
-> Based on: [Chainlink CCIP EVM Tutorial (Burn & Mint from EOA)](https://docs.chain.link/ccip/tutorials/evm/cross-chain-tokens/register-from-eoa-burn-mint-hardhat#tutorial)
+> Basé sur: [Chainlink CCIP EVM Tutorial (Burn & Mint from EOA)](https://docs.chain.link/ccip/tutorials/evm/cross-chain-tokens/register-from-eoa-burn-mint-hardhat#tutorial)
 
-## What is Chainlink CCIP?
+## Qu'est-ce que Chainlink CCIP?
 
-**Chainlink CCIP (Cross-Chain Interoperability Protocol)** enables secure token and data transfers across different blockchains using a unified interface.
+**Chainlink CCIP (Cross-Chain Interoperability Protocol)** permet des transferts sécurisés de jetons et de données entre différentes blockchains en utilisant une interface unifiée.
 
-### Key Features
+### Caractéristiques clés
 
-- Secure cross-chain messaging and token transfers
-- Programmable token logic
-- Decentralized infrastructure via Chainlink nodes
-- Built-in rate limiting and failover protections
+- Messagerie et transferts de jetons sécurisés entre chaînes (ou inter-chaînes)
+- Logique de jeton programmable
+- Infrastructure décentralisée via les nœuds Chainlink
+- Limitation de débit intégrée et protections de basculement
 
 [Read more about CCIP →](https://docs.chain.link/ccip)
 
-## Core Blockchain CCIP Network Details
+## Détails du réseau Core Blockchain CCIP
 
-Use the tabs below to toggle between **Testnet** and **Mainnet** configurations:
+Utilisez les onglets ci-dessous pour basculer entre les configurations **Testnet** et **Mainnet**:
 
 <Tabs defaultValue="testnet2" values={[
 {label: 'Testnet', value: 'testnet2'},
@@ -164,13 +164,13 @@ For **Core Mainnet**, add a similar configuration with the appropriate [mainnet]
 
 ### 5. `network.ts`
 
-Update your `config/network.ts` file with the following Core network configurations:
+Mettez à jour votre fichier `config/network.ts` avec les configurations de réseau Core suivantes:
 
-#### 5.1 Network Configurations
+#### 5.1 Configurations de réseau
 
-Add these entries alongside the existing network configurations:
+Ajoutez ces entrées aux côtés des configurations de réseau existantes:
 
-**Core Testnet Configuration:**
+**Configuration du réseau Core Testnet:**
 
 ```ts
 [EVMChains.coreTestnet2]: {
@@ -183,7 +183,7 @@ Add these entries alongside the existing network configurations:
 },
 ```
 
-**Core Mainnet Configuration:**
+**Configuration du réseau Core Mainnet:**
 
 ```ts
 [EVMChains.coreMainnet]: {
@@ -196,18 +196,18 @@ Add these entries alongside the existing network configurations:
 },
 ```
 
-#### 5.2 Etherscan API Keys
+#### 5.2 Etherscan API Key
 
-Add CoreScan API key support for contract verification:
+Ajoutez la prise en charge de la clé API CoreScan pour la vérification des contrats:
 
 ```ts
 [EVMChains.coreTestnet2]: process.env.CORESCAN_TESTNET_API_KEY || "UNSET",
 [EVMChains.coreMainnet]: process.env.CORESCAN_MAINNET_API_KEY || "UNSET",
 ```
 
-#### 5.3 Custom Chain Configuration
+#### 5.3 Configuration de chaîne personnalisée
 
-Add Core network configurations to your custom chains array:
+Ajoutez les configurations de Core network à votre tableau de chaînes personnalisées:
 
 ```ts
 {
@@ -229,12 +229,12 @@ Add Core network configurations to your custom chains array:
 ```
 
 :::info
-**Note**: All these configurations should be added to your existing `config/network.ts` file alongside the other supported networks.
+**Remarque**: Toutes ces configurations doivent être ajoutées à votre fichier `config/network.ts` existant, aux côtés des autres réseaux pris en charge.
 :::
 
 ### 6. `types.ts`
 
-Add the Core chain identifiers to your existing `EVMChains` enum. Simply append these two entries to the existing enum:
+Ajoutez les identificateurs de Core chain à votre énumération `EVMChains` existante. Ajoutez simplement ces deux entrées à l'enum existante:
 
 ```ts
 export enum EVMChains {
@@ -250,20 +250,20 @@ export enum EVMChains {
 ```
 
 :::info
-**Note**: Just append `coreTestnet2` and `coreMainnet` to your existing `EVMChains` enum. No need to modify the existing entries.
+**Remarque**: Ajoutez simplement `coreTestnet2` et `coreMainnet` à votre énumération `EVMChains` existante. Pas besoin de modifier les entrées existantes.
 :::
 
-## Deployment
+## Déploiement
 
-Once all configurations are updated:
+Une fois que toutes les configurations sont mises à jour:
 
 1. Follow the [official Chainlink CCIP tutorial](https://docs.chain.link/ccip/tutorials/evm/cross-chain-tokens/register-from-eoa-burn-mint-hardhat#tutorial).
-2. Use `coreTestnet2` or `coreMainnet` as your selected network when deploying tokens.
-3. Be sure to fund your LINK and native token balances.
+2. Utilisez `coreTestnet2` ou `coreMainnet` comme réseau sélectionné lors du déploiement de jetons.
+3. Assurez-vous de financer vos soldes de jetons LINK et de jetons natifs.
 
-You're now ready to build and deploy cross-chain tokens on the Core Blockchain using Chainlink CCIP.
+Vous êtes maintenant prêt à créer et déployer des jetons cross-chain sur la blockchain Core en utilisant Chainlink CCIP.
 
-## Resources
+## Ressources
 
 - [Chainlink CCIP Overview](https://docs.chain.link/ccip)
 - [CCIP Directory for Core Testnet](https://docs.chain.link/ccip/directory/testnet/chain/core-testnet)
