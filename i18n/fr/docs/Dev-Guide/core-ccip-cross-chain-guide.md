@@ -92,44 +92,44 @@ Refer to the [CCIP Directory for Core](https://docs.chain.link/ccip/directory/ma
 </TabItem>
 </Tabs>
 
-## Project Configuration for Core Blockchain
+## Configuration du projet pour la Core Blockchain
 
-To integrate **Core Testnet/Mainnet** with the official Chainlink Hardhat setup, follow these steps:
+Pour intégrer **Core Testnet/Mainnet** avec la configuration officielle de Chainlink Hardhat, suivez ces étapes:
 
-### Prerequisites
+### Prérequis
 
-- **Node.js**: Version 18 or higher
-- **Git**: For cloning the repository
+- **Node.js**: Version 18 ou supérieure
+- **Git**: Nécessaire pour cloner le référentiel
 
-### 1. Clone and Setup
+### 1. Cloner et configurer
 
 ```bash
 git clone https://github.com/smartcontractkit/smart-contract-examples.git
 cd smart-contract-examples/ccip/cct/hardhat
 ```
 
-### 2. Install Dependencies
+### 2. Installation des dépendances
 
 ```bash
 npm install
 npm run compile
 ```
 
-### 3. Environment Variables Setup
+### 3. Configuration des variables d'environnement
 
-Set an encryption password for your environment variables:
+Définissez un mot de passe de chiffrement pour vos variables d'environnement:
 
 ```bash
 npx env-enc set-pw
 ```
 
-Set up a `.env.enc` file with the necessary variables for Core Testnet. Use the following command to add the variables:
+Configurez un fichier `.env.enc` avec les variables nécessaires pour Core Testnet. Utilisez la commande suivante pour ajouter les variables:
 
 ```bash
 npx env-enc set
 ```
 
-**Required Environment Variables:**
+**Variables d'environnement requises:**
 
 ```
  CORETESTNET_RPC_URL= "https://rpc.test2.btcs.network"
@@ -138,12 +138,12 @@ npx env-enc set
 ```
 
 :::info
-**Security Note**: Never commit your `.env.enc` file or private keys to version control.
+**Note de sécurité**: Ne jamais committer le fichier `.env.enc` ou les clés privées dans le contrôle de version.
 :::
 
 ### 4. `config.json`
 
-Update your `ccip/cct/hardhat/config/config.json` to include Core network configurations:
+Mettez à jour votre fichier `ccip/cct/hardhat/config/config.json` pour inclure les configurations de réseau Core:
 
 ```jsonc
 "coreTestnet2": {
@@ -160,7 +160,7 @@ Update your `ccip/cct/hardhat/config/config.json` to include Core network config
 }
 ```
 
-For **Core Mainnet**, add a similar configuration with the appropriate [mainnet](https://docs.chain.link/ccip/directory/mainnet/chain/core-mainnet) values.
+Pour **Core Mainnet**, ajoutez une configuration similaire avec les valeurs appropriées [mainnet](https://docs.chain.link/ccip/directory/mainnet/chain/core-mainnet).
 
 ### 5. `network.ts`
 
