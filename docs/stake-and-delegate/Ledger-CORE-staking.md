@@ -163,7 +163,7 @@ To be eligible to earn rewards, you must complete a full staking round on (00:00
 :::
 
 ## FAQs
-Have more questions? Check out the [FAQs](../../../../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+Have more questions? Check out the [FAQs](../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
 
 ## Conclusion
 

@@ -415,6 +415,7 @@ const sidebars: SidebarsConfig = {
           items: [
             "stake-and-delegate/dual-staking-working",
             "stake-and-delegate/dual-staking-guide",
+            "stake-and-delegate/dual-staking-integration-guide",
           ],
         },
         "stake-and-delegate/delegating-hash",

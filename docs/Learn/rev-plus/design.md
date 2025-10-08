@@ -167,7 +167,7 @@ if rules.IsLondon {
 
 This mechanism ensures that the Rev+ protocol operates as a **transparent, auditable, and composable fee-sharing layer**, encouraging long-term ecosystem participation and sustainable protocol development without sacrificing performance, security, or compatibility.
 
-## **Transaction Processing Flow**
+## Transaction Processing Flow
 
 ### 1. Pre-Transaction Phase
 
@@ -198,7 +198,7 @@ After EVM execution completes
 ├── Calculates reward amounts per recipient
 ├── Distributes fees to reward addresses
 ├── Deducts distributed gas from block accounting
-└── Refunds remaining gas to transaction sender
+└── Refunds remaining gas to the transaction sender
 ```
 
 ## Fee Calculation Logic
@@ -232,7 +232,7 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 * **Block Gas Limit**: Maintains 50M gas limit  
 * **Distributed Gas**: Not counted in `block.gasUsed`  
 * **Transaction Gas**: Individual `tx.gasUsed` includes Rev+ gas  
-* **Net Effect**: Block can accommodate same transaction count as before Rev+
+* **Net Effect**: Block can accommodate the same transaction count as before Rev+
 
 ### Example Scenario
 
