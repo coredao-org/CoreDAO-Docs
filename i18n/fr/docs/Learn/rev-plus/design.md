@@ -168,7 +168,7 @@ if rules.IsLondon {
 
 Ce mécanisme garantit que le protocole Rev+ fonctionne comme **une couche de partage de frais transparente, auditable et composable**, encourageant la participation à long terme de l'écosystème et le développement durable de protocoles sans sacrifier les performances, la sécurité ou la compatibilité.
 
-## **Flux de traitement des transactions**
+## Transaction Processing Flow
 
 ### 1. Phase pré-transactionnelle
 
@@ -199,7 +199,7 @@ After EVM execution completes
 ├── Calculates reward amounts per recipient
 ├── Distributes fees to reward addresses
 ├── Deducts distributed gas from block accounting
-└── Refunds remaining gas to transaction sender
+└── Refunds remaining gas to the transaction sender
 ```
 
 ## Logique de calcul des frais
@@ -233,7 +233,7 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 - **Limite de gaz par bloc**: Maintient une limite de gaz de 50 millions
 - **Gaz distribué**: Non compté dans `block.gasUsed`
 - **Gaz de transaction**: L'`tx.gasUsed` individuel inclut le gaz Rev+
-- **Effet net**: Le bloc peut accueillir le même nombre de transactions qu'avant Rev+
+- **Net Effect**: Block can accommodate the same transaction count as before Rev+
 
 ### Example Scenario
 
