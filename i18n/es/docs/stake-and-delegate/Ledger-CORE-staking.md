@@ -164,7 +164,7 @@ Para ser elegible para recibir recompensas, debes completar un ciclo completo de
 
 ## Preguntas Frecuentes
 
-¿Tienes más preguntas? Consulta la sección de [FAQs](../../../../FAQs/ledger-core-faqs.md) para obtener respuestas a problemas comunes, soluciones y mejores prácticas.
+¿Tienes más preguntas? Check out the [FAQs](../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
 
 ## Conclusión
 
