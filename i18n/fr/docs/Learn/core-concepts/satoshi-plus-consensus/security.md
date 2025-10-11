@@ -58,7 +58,7 @@ Core utilise une architecture de sécurité robuste pour atténuer les menaces p
 ### Vulnérabilités des Contrats Intelligents
 
 - **Description:** Les vulnérabilités dans le code des contrats intelligents peuvent être exploitées pour réaliser des vols ou manipuler des services.
-- **Mitigation Achieved By:**
+- **Atténuation réalisée grâce à:**
   - **Audits de Code et Revues de Sécurité:** Des audits réguliers et approfondis du code des contrats intelligents par des firmes de sécurité indépendantes aident à identifier et rectifier les vulnérabilités potentielles.
   - \*\* Rapports de bogues : \*\* Encourager la communauté et les chercheurs en sécurité à trouver et signaler les bogues afin que de nombreux exploits potentiels soient détectés précocement
 
