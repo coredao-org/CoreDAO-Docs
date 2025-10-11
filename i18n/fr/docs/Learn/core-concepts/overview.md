@@ -22,7 +22,7 @@ Le composant de staking Bitcoin non-custodial de Satoshi Plus est le premier mé
 
 Actuellement, Satoshi Plus bénéficie de la sécurité de ~75% de toute la puissance de hachage minière de Bitcoin grâce à la délégation. En impliquant les mineurs dans les élections de validateurs, cela tire parti de la décentralisation inégalée de Bitcoin tout en offrant aux mineurs des récompenses supplémentaires, répondant ainsi au déclin à long terme des récompenses de bloc Bitcoin.
 
-## Technologie de Core
+## Technologie fondamentale
 
 ### Satoshi Plus Consensus
 
