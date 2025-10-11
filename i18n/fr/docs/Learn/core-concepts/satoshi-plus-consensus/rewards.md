@@ -77,7 +77,7 @@ $$
     rS = \frac{\frac{rSp}{tSp} * k} {S} * R
 $$
 
-#### Stakers de Bitcoin
+#### Les stakeurs de Bitcoin
 
 $$
     rB = \frac{\frac{rBp}{tBp} * l} {S} * R
