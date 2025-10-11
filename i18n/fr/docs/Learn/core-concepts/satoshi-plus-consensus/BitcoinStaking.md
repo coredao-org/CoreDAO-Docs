@@ -72,7 +72,7 @@ Une fois que votre période de verrouillage se termine :
 - Votre vote de validateur et votre éligibilité aux récompenses expirent
 - Vous pouvez créer un nouveau verrouillage temporel pour reprendre votre participation
 
-Il n'y a pas **de renouvellement automatique**: une participation continue nécessite une nouvelle transaction de verrouillage temporel.
+Il n'y a **pas de renouvellement automatique**: une participation continue nécessite une nouvelle transaction de verrouillage temporel.
 
 ## Avantages
 
