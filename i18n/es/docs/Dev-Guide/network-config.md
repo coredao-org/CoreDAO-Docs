@@ -27,18 +27,20 @@ _Nota: Esta es la testnet más reciente y oficialmente compatible para la blockc
 | **URL del Explorador de Bloques** | https://scan.test2.btcs.network        |
 | **Faucet**                        | https://scan.test2.btcs.network/faucet |
 | **Sitio web de Staking**          | https://stake.test2.btcs.network/      |
+| **API URL**                       | https://api.test2.btcs.network/api     |
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-| **Parámetro**                     | **Valor**                                                                  |
-| --------------------------------- | -------------------------------------------------------------------------- |
-| **RPC URL**                       | https://rpc.coredao.org/   |
-| **ID de cadena**                  | 1116 (0x45c)                                            |
-| **Símbolo de Moneda**             | CORE                                                                       |
-| **URL del Explorador de Bloques** | https://scan.coredao.org   |
-| **Sitio web de Staking**          | https://stake.coredao.org/ |
+| **Parámetro**                     | **Valor**                                                                       |
+| --------------------------------- | ------------------------------------------------------------------------------- |
+| **RPC URL**                       | https://rpc.coredao.org/        |
+| **ID de cadena**                  | 1116 (0x45c)                                                 |
+| **Símbolo de Moneda**             | CORE                                                                            |
+| **URL del Explorador de Bloques** | https://scan.coredao.org        |
+| **Sitio web de Staking**          | https://stake.coredao.org/      |
+| **API URL**                       | https://openapi.coredao.org/api |
 
 Para importar detalles de la cadena Core Mainnet a MetaMask, consulte nuestra guía sobre [agregar Core a MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
 
