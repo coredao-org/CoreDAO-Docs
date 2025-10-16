@@ -27,18 +27,20 @@ Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la bl
 | **Explorateur de blocs**     | https://scan.test2.btcs.network        |
 | **Faucet**                   | https://scan.test2.btcs.network/faucet |
 | **Site Web de Staking Core** | https://stake.test2.btcs.network/      |
+| **API URL**                  | https://api.test2.btcs.network/api     |
 
 </TabItem>
 
 <TabItem value="mainnet">
 
-| **Paramètre**                | **Valeur**                                                                 |
-| ---------------------------- | -------------------------------------------------------------------------- |
-| **RPC URL**                  | https://rpc.coredao.org/   |
-| **ID de Chaîne**             | 1116 (0x45c)                                            |
-| **Symbole de la devise**     | CORE                                                                       |
-| **Explorateur de blocs**     | https://scan.coredao.org   |
-| **Site Web de Staking Core** | https://stake.coredao.org/ |
+| **Paramètre**                | **Valeur**                                                                      |
+| ---------------------------- | ------------------------------------------------------------------------------- |
+| **RPC URL**                  | https://rpc.coredao.org/        |
+| **ID de Chaîne**             | 1116 (0x45c)                                                 |
+| **Symbole de la devise**     | CORE                                                                            |
+| **Explorateur de blocs**     | https://scan.coredao.org        |
+| **Site Web de Staking Core** | https://stake.coredao.org/      |
+| **API URL**                  | https://openapi.coredao.org/api |
 
 Pour importer les détails de la chaîne Mainnet de Core dans MetaMask, référez-vous à notre guide sur [l'ajout de Core à MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
 
