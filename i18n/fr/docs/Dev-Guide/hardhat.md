@@ -11,109 +11,143 @@ description: Déployer des contrats sur Core en utilisant Hardhat
 
 Hardhat est un environnement de développement populaire pour les blockchains compatibles avec l’EVM, comprenant plusieurs composants pour écrire, compiler, déboguer et déployer des contrats intelligents.
 
-Dans ce tutoriel, apprenez à compiler, déployer et appeler des contrats intelligents sur Core TestNet en utilisant Hardhat. Obtenez le code source pour ce tutoriel [ici](https://github.com/coredao-org/hardhat-tutorial).
+In this tutorial, you'll learn how to compile, deploy, and call smart contracts on Core Testnet using Hardhat. We'll use the pre-configured [Hardhat starter kit](https://github.com/coredao-org/hardhat-tutoria) that includes all necessary dependencies and configurations for Core blockchain development.
 
-## Installation
+### Prerequisites
 
-Accédez à votre dossier de profil et suivez les étapes ci-dessous pour installer Hardhat (npm/node [v8.9.4 LTS ou une version ultérieure](https://nodejs.org/en/) est requise) :
+Before you begin, ensure you have:
 
-1. `npm init --yes`
-2. `npm install --save-dev hardhat`
-3. `npm install --save-dev chai @nomiclabs/hardhat-waffle`
+- Node.js [v18.0.0 or later](https://nodejs.org/en/) installed
+- Git installed on your system
+- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://faucet.test.btcs.network/))
 
-## Initialisation du projet
+### Clone the Starter Kit
 
-Après l'installation, vous pouvez initialiser Hardhat en exécutant la commande `npx hardhat` :
+Clone the Hardhat starter kit repository:
 
-```javascript
-$ npx hardhat    
-888    888                      888 888               888
-888    888                      888 888               888
-888    888                      888 888               888
-8888888888  8888b.  888d888 .d88888 88888b.   8888b.  888888
-888    888     "88b 888P"  d88" 888 888 "88b     "88b 888
-888    888 .d888888 888    888  888 888  888 .d888888 888
-888    888 888  888 888    Y88b 888 888  888 888  888 Y88b.
-888    888 "Y888888 888     "Y88888 888  888 "Y888888  "Y888
-
-👷 Welcome to Hardhat v2.10.1 👷‍
-
-? What do you want to do? … 
-❯ Create a JavaScript project
-  Create a TypeScript project
-  Create an empty hardhat.config.js
-  Quit
+```bash
+git clone https://github.com/coredao-org/hardhat-tutorial.git
+cd hardhat-tutorial
+npm install
 ```
 
-Une fois le projet initialisé, vous trouverez la structure suivante :
+## Project Structure
 
-- `contracts`: pour les contrats intelligents Solidity.
-- `scripts`: pour les scripts JavaScript/TypeScript pour l'interaction avec les contrats et autres utilitaires.
-- `test`: pour écrire et exécuter les tests.
-- `hardhat.config.js`: fichier de configuration Hardhat.
+After cloning and installing dependencies, you'll find the following project structure in the starter kit:
 
-## Configurer Hardhat pour le Core Testnet
+```
+hardhat-tutorial/
+├── contracts/           # Solidity smart contracts
+│   └── Storage.sol     # Example storage contract
+├── scripts/            # Deployment and interaction scripts
+│   └── deploy.js       # Example deployment script
+├── test/               # Test files
+│   └── Storage.test.js # Example test file
+├── hardhat.config.js   # Hardhat configuration
+├── package.json        # Dependencies and scripts
+└── README.md          # Project documentation
+```
 
-Copiez ce qui suit dans votre fichier `hardhat.config.js`:
+The starter kit comes pre-configured with:
+
+- **contracts/**: Contains example Solidity smart contracts
+- **scripts/**: Contains deployment and interaction scripts
+- **test/**: Contains test files using modern testing patterns
+- **hardhat.config.js**: Pre-configured for Core blockchain networks
+
+## Understanding the Hardhat Configuration
+
+The starter kit comes with a pre-configured `hardhat.config.js` file optimized for Core blockchain development. Let's examine the key components of this modern Hardhat v2 configuration:
 
 ```javascript
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
 
-
-require('@nomiclabs/hardhat-ethers');
-require("@nomiclabs/hardhat-waffle");
-
-
-const { PrivateKey } = require('./secret.json');
-
+// Import the Hardhat Toolbox - includes all essential plugins
+require("@nomicfoundation/hardhat-toolbox");
 
 module.exports = {
-   defaultNetwork: 'testnet',
-
-
-   networks: {
-      hardhat: {
+  // Solidity compiler configuration
+  solidity: {
+    version: "0.8.24", // Recommended Solidity version for Core
+    settings: {
+      evmVersion: "shanghai", // Required for Core blockchain compatibility
+      optimizer: {
+        enabled: true,        // Enable optimizer for gas efficiency - Optional
+        runs: 200,           // Optimize for 200 function calls
       },
-      testnet: {
-         url: 'https://rpc.test.btcs.network',
-         accounts: [PrivateKey],
-         chainId: 1115,
-      }
-   },
-   solidity: {
-      compilers: [
-        {
-           version: '0.8.19',
-           settings: {
-            evmVersion: 'paris',
-            optimizer: {
-                 enabled: true,
-                 runs: 200,
-              },
-           },
+    },
+  },
+  // Network configurations for different environments
+  networks: {
+    // Local development network
+    hardhat: {},
+    
+    // Core Mainnet configuration
+    core_mainnet: {
+      url: "https://rpc.coredao.org/",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 1116,
+    },
+    
+    // Core Testnet configuration
+    core_testnet2: {
+      url: "https://rpc.test2.btcs.network",
+      accounts: process.env.PRIVATE_KEY ? [process.env.PRIVATE_KEY] : [],
+      chainId: 1114,
+    },
+  },
+  // Contract verification configuration
+  etherscan: {
+    apiKey: {
+      core_testnet2: process.env.CORE_TEST2_SCAN_KEY,
+      core_mainnet: process.env.CORE_MAIN_SCAN_KEY,
+    },
+    customChains: [
+      {
+        network: "core_testnet2",
+        chainId: 1114,
+        urls: {
+          apiURL: "https://api.test2.btcs.network/api",
+          browserURL: "https://scan.test2.btcs.network/",
         },
-      ],
-   },
-   paths: {
-      sources: './contracts',
-      cache: './cache',
-      artifacts: './artifacts',
-   },
-   mocha: {
-      timeout: 20000,
-   },
+      },
+      {
+        network: "core_mainnet",
+        chainId: 1116,
+        urls: {
+          apiURL: "https://openapi.coredao.org/api",
+          browserURL: "https://scan.coredao.org/",
+        },
+      },
+    ],
+  },
+  
+  // Test configuration
+  mocha: {
+    timeout: 20000, // 20 second timeout for tests
+  },
 };
- 
 ```
 
-**Assurez-vous que votre contrat intelligent suit les [directives de support Solidity pour Core Blockchain](./smart-contract-guidelines.md)**. Pour cela, vérifiez que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity dans le fichier `hardhat.config.js`.
+### Environment Variables Setup
 
-Si vous utilisez **testnet1**, le paramètre `evmVersion` doit être défini sur `Paris`.
+Create a `.env` file in your project root with the following variables:
+
+```bash
+# Your wallet private key (without 0x prefix)
+PRIVATE_KEY=your_private_key_here
+
+# Core Scan API keys for contract verification (optional)
+CORE_TEST2_SCAN_KEY=your_testnet_scan_api_key
+CORE_MAIN_SCAN_KEY=your_mainnet_scan_api_key
+```
+
+**Important**: Make sure your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md). The `evmVersion: "shanghai"` setting in the configuration ensures Core blockchain compatibility.
 
 :::note
-Veuillez noter que vous devrez fournir vos clés privées ou votre mnémonique pour le fournisseur. Vous pouvez les stocker dans un fichier « secret.json ». Assurez-vous d'ajouter ce fichier au « .gitignore » de votre projet pour éviter de valider accidentellement vos clés privées dans un référentiel public. De plus, conservez ce fichier dans un endroit sûr pour protéger vos informations sensibles !
+Never hardcode private keys in your scripts. Always use environment variables and avoid committing .env files to version control (add .env to .gitignore)
 :::
 
 ## Rediger des contrats intelligents
@@ -123,7 +157,7 @@ Pour simplifier, utilisons le fichier `1_Storage.sol` que nous connaissons déj�
 ```javascript
 // SPDX-License-Identifier: GPL-3.0
 
-pragma solidity >=0.8.0 <0.8.24;
+pragma solidity ^0.8.24;
 
 /**
  * @title Storage
@@ -171,19 +205,25 @@ describe("Storage", function () {
   beforeEach(async function () {
     Storage = await ethers.getContractFactory("Storage");
     [operator] = await ethers.getSigners();
+
     storage = await Storage.connect(operator).deploy();
-    await storage.deployed();
+
+    await storage.waitForDeployment();
     expect(await storage.retrieve()).to.equal(0n);
   });
+
   describe("Test store function", function () {
+
     it("should work properly", async function () {
       let tx = await storage.store(100);
       await tx.wait();
       expect(await storage.retrieve()).to.equal(100n);
     });
+
     it("should throw", async function () {
       await expect(storage.store(-1)).to.be.throws;
     });
+
   });
 });
 ```
@@ -222,8 +262,8 @@ async function main() {
   const Storage = await hre.ethers.getContractFactory("Storage");
   const storage = await Storage.deploy();
 
-  await storage.deployed();
-  console.log("Storage contract deployed to:", storage.address);
+  await storage.waitForDeployment();
+  console.log("Storage contract deployed to:", storage.target);
 
   console.log("call retrieve():", await storage.retrieve());
 
@@ -252,14 +292,14 @@ Ce script fait plusieurs choses :
 
 Exécutez le script en utilisant la commande suivante :
 
-`npx hardhat run scripts/deploy-and-call.js`
+`npx hardhat run scripts/deploy-and-call.js --network core_testnet2`
 
 ```javascript
-$ npx hardhat run scripts/deploy-and-call.js
+$ npx hardhat run scripts/deploy-and-call.js --network core_testnet2
 Storage contract deployed to: 0x65e2F3E4287C0563fBB066134A380e90a48d2D99
-call retrieve(): BigNumber { value: "0" }
+call retrieve(): 0n
 call store(), set value to 100
-call retrieve() again: BigNumber { value: "100" }
+call retrieve() again: 100n
 ```
 
 Nous pouvons voir que le script déploie correctement le contrat, stocke un nombre et confirme que le nombre est bien stocké dans le contrat.
