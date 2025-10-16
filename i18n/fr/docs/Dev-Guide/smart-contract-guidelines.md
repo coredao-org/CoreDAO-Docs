@@ -27,7 +27,7 @@ Pour prendre en charge l’exécution de smart contracts avec Solidity version \
 solidity: {
        compilers: [
          {
-            version: '0.8.26',
+            version: '0.8.24',
             settings: {
                evmVersion: 'shanghai',
                optimizer: {
