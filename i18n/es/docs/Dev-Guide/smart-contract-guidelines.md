@@ -27,7 +27,7 @@ Para admitir la ejecución de contratos inteligentes con la versión **0.8.24^**
 solidity: {
        compilers: [
          {
-            version: '0.8.26',
+            version: '0.8.24',
             settings: {
                evmVersion: 'shanghai',
                optimizer: {
