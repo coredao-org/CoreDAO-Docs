@@ -55,10 +55,6 @@ Se le pedirá que se conecte a MetaMask. Una vez conectado, Remix muestra la dir
 ![evm-version](../../static/img/solidity-support/remix-setting.png)
 </p>
 
-:::note
-Si estás usando Core Testnet1, asegúrate de que la versión de EVM esté configurada a `paris`.
-:::
-
 - Luego seleccione el botón azul **Compilar** para compilar su contrato inteligente.
 
 - Luego cambia a `DEPLOY & RUN TRANSACTIONS` desde el menú del panel izquierdo y selecciona el botón **Deploy**, marcado en rojo abajo.
