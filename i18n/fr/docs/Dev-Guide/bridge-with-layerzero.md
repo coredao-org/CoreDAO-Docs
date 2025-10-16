@@ -34,7 +34,7 @@ Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub 
 
    ```js
    npx create-lz-oapp@latest
-   # Choose "OFT example" and "pnpm"
+   # Choose "OFT example" and "npm"
    cd your-project-name
 
    ```
@@ -60,7 +60,7 @@ Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub 
 ## Déploiement du contrat OFT
 
 ````
-Modifiez le contrat OFT pour permettre la création de jetons. Allez dans `contracts/MyOFT.sol` et mettez à jour le code comme suit 
+Modify the OFT contract to be able to mint the tokens, Go to `contracts/MyOFT.sol` and update the below code
 
 ```javascript
 // SPDX-License-Identifier: MIT
@@ -77,7 +77,7 @@ contract MyOFT is OFT {
     address _delegate
 ) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
     // Mint tokens to the deployer's address (msg.sender)
-    _mint(msg.sender, 100_000 \* 10 \*\* 18);
+    _mint(msg.sender, 100_000 * 10 ** 18);
     }
 }
 ```
