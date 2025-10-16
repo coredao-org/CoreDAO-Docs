@@ -11,6 +11,8 @@ description: Déployer des contrats sur Core en utilisant Foundry
 
 Foundry est un outil de développement rapide, efficace et extensible pour les blockchains compatibles EVM (Ethereum Virtual Machine), écrit en Rust. Ce guide vous guidera à travers le processus d'installation de Foundry, de configuration de votre projet, d'écriture et de test de code Solidity, ainsi que de déploiement et de vérification de vos contrats sur la blockchain Core.
 
+In this tutorial, you'll learn how to compile, deploy, and verify contracts on Core Testnet using Foundry. You can speed up the setup process by cloning the [Foundry starter kit](https://github.com/coredao-org/hardhat-tutorial).
+
 ## 1. Installation de Foundry
 
 Avant de commencer à utiliser Foundry, vous devez l'installer sur votre système. Le processus est relativement simple et peut être réalisé en quelques étapes faciles. Foundry utilise `forge` comme outil principal pour interagir avec les contrats Solidity.
@@ -213,7 +215,7 @@ Vous devriez voir un résultat similaire à ce qui suit :
 ```bash
 [⠊] Compiling...
 [⠔] Compiling 1 files with Solc 0.8.28
-[⠒] Solc 0.8.28 finished in 491.38ms
+[⠒] Solc 0.8.24 finished in 491.38ms
 Compiler run successful!
 
 
@@ -287,13 +289,13 @@ source .env
 Pour déployer le contrat sur le réseau de Core testnet, utilisez `forge create`
 
 ```bash
-forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast
+forge create --rpc-url $RPC_URL --private-key $PRIVATE_KEY src/Counter.sol:Counter  --broadcast --legacy
 ```
 
 Ou utilisez la commande `forge script`
 
 ```bash
-forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast
+forge script script/Counter.s.sol:CounterScript --rpc-url $RPC_URL --private-key $PRIVATE_KEY  --broadcast --legacy
 ```
 
 Après avoir exécuté la commande, Foundry compilera et déploiera votre contrat sur le réseau spécifié. Il renverra l'adresse du contrat déployé.
@@ -305,6 +307,14 @@ Deployer: 0x1b984521b42D3B9aCFCf37565Ab865f318b1Cd92
 Deployed to: 0xc1C2466cBBa0f8E1FDb7f5E68e232190c745A6Ae
 Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad914784b2
 ```
+
+If you're working with Rev+ contracts or encountering a gas underpriced issue, try using the `--gas-estimate-multiplier` flag in your Foundry script in the range of 300 to 500.
+
+:::note
+` --gas-estimate-multiplier` flag does not work with the forge create command, it only works with the forge script command.
+
+When interacting with the Core blockchain, make sure to include the `--legacy` flag to ensure compatibility.
+:::
 
 ## 6. Vérification du contrat
 
