@@ -26,7 +26,7 @@ To support running smart contracts with Solidity version **0.8.24^** on Core Mai
 solidity: {
        compilers: [
          {
-            version: '0.8.26',
+            version: '0.8.24',
             settings: {
                evmVersion: 'shanghai',
                optimizer: {

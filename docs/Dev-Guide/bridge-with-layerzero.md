@@ -34,7 +34,7 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
 
    ```js
    npx create-lz-oapp@latest
-   # Choose "OFT example" and "pnpm"
+   # Choose "OFT example" and "npm"
    cd your-project-name
 
    ```
@@ -76,7 +76,7 @@ For reference, you can also consult the [CoreDAO-LayerZero GitHub repository](ht
         address _delegate
     ) OFT(_name, _symbol, _lzEndpoint, _delegate) Ownable(_delegate) {
         // Mint tokens to the deployer's address (msg.sender)
-        _mint(msg.sender, 100_000 \* 10 \*\* 18);
+        _mint(msg.sender, 100_000 * 10 ** 18);
         }
     }
     ```
