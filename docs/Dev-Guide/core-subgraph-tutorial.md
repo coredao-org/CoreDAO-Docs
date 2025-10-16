@@ -35,7 +35,7 @@ For this example, let's use the subgraph provided in the [dapp-tutorial GitHub r
 
 ```bash
 git clone https://github.com/coredao-org/dapp-tutorial/.git
-cd ./dapp-tutorial/06-subgraph-on-core
+cd ./dapp-tutorial/06-subgraphs-on-core
 npm install
 ```
 

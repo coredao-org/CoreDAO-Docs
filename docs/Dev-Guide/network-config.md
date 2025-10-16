@@ -29,6 +29,7 @@ Note: This is the latest and officially supported testnet for the Core blockchai
 | **Block Explorer URL** | https://scan.test2.btcs.network        |
 | **Faucet**             | https://scan.test2.btcs.network/faucet |
 | **Staking Website**    | https://stake.test2.btcs.network/      |
+| **API URL**| https://api.test2.btcs.network/api |
 
 </TabItem>
 
@@ -41,6 +42,7 @@ Note: This is the latest and officially supported testnet for the Core blockchai
 | **Currency Symbol**    | CORE                       |
 | **Block Explorer URL** | https://scan.coredao.org   |
 | **Staking Website**    | https://stake.coredao.org/ |
+| **API URL**| https://openapi.coredao.org/api |
 
 To import Core Mainnet chain details to MetaMask, refer to our guide on [adding Core to MetaMask](https://medium.com/@core_dao/add-core-to-metamask-7b1dd90041ce).
 
