@@ -43,10 +43,6 @@ Il vous sera demandé de vous connecter à MetaMask. Une fois connecté, Remix a
 
 <p align="center" style={{zoom:"60%"}}>![evm-version](../../static/img/solidity-support/remix-setting.png)</p>
 
-:::note
-Si vous utilisez TestNet1, assurez-vous que la version EVM est définie à `paris`.
-:::
-
 - Cliquez ensuite sur le bouton bleu **Compile** pour compiler votre contrat intelligent.
 
 - Ensuite, passez à l'onglet `DEPLOY & RUN TRANSACTIONS` dans le même menu de gauche et sélectionnez le bouton **Deploy** (entouré en rouge ci-dessous).
