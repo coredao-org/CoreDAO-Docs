@@ -2,6 +2,15 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebar: SidebarsConfig = {
   apisidebar: [{
     type: "category",
+    label: "Tokens",
+    items: [{
+      type: "doc",
+      id: "api/mainnet/get-token-holder-count-by-contract-address",
+      label: "Get Token Holder Count by Contract Address",
+      className: "api-method get"
+    }]
+  }, {
+    type: "category",
     label: "Accounts",
     items: [{
       type: "doc",
