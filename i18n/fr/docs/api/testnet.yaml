@@ -10,6 +10,55 @@ info:
 servers:
   - url: https://api.test2.btcs.network/
 paths:
+  /api/token/token_holder_count:
+    get:
+      summary: Get Token Holder Count by Contract Address
+      description: Returns the number of token holders for a given contract address.
+      parameters:
+        - name: contractaddress
+          in: query
+          required: true
+          description: The contract address of the token to retrieve holder count for.
+          schema:
+            type: string
+          example: "0x81bcea03678d1cef4830942227720d542aa15817"
+        - name: apikey
+          in: query
+          required: true
+          description: API key for authentication.
+          schema:
+            type: string
+          example: ""
+      responses:
+        '200':
+          description: Token holder count retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status code of the response.
+                  result:
+                    type: integer
+                    description: The number of token holders for the given contract address.
+                  message:
+                    type: string
+                    description: Additional information or message about the response.
+        '400':
+          description: Invalid contract address or API key supplied.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: Status code of the error response.
+                  message:
+                    type: string
+                    description: Error message explaining the issue.
   "/api/accounts/core_balance_by_address/{address}":
     get:
       tags:
