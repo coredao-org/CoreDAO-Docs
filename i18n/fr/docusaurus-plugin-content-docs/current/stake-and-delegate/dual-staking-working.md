@@ -40,9 +40,9 @@ En pratique, les émissions de CORE sont distribuées au prorata en fonction de 
 
 Le mécanisme de décision pour le niveau de rendement d'un staker de Bitcoin (**P<sub>BASE</sub>**, **P<sub>Niveau1</sub>**, **P<sub>Niveau2</sub>**, or **P<sub>Niveau3</sub> (P<sub>MAX</sub>)**) est basé sur les tokens CORE stakés par rapport au Bitcoin staké, où R représente le ratio `CORE:BTC` et **R<sub>3</sub> \> R<sub>2</sub> \> R<sub>1</sub>**. Les ratios de staking CORE:BTC actuels sont les suivants :
 
-- Staking Ratio R1 \= 4,250 CORE per 1 BTC
-- Staking Ratio R2 \= 12,750 CORE per 1 BTC
-- Staking Ratio R3 \= 34,000 CORE per 1 BTC
+- Staking Ratio R1 \= 8500 CORE per 1 BTC
+- Staking Ratio R2 \= 25500 CORE per 1 BTC
+- Staking Ratio R3 \= 68,000 CORE per 1 BTC
 
 En gardant ces ratios à l'esprit, les utilisateurs peuvent calculer le seuil requis pour chaque niveau comme suit :
 
@@ -71,23 +71,23 @@ Voici un exemple simple expliquant comment calculer le CORE requis pour staker, 
 
 Supposons que l'utilisateur doive staker du CORE selon les Seuils de CORE Staké suivants pour bénéficier d'un rendement plus élevé sur son BTC staké avec les variables ci-dessus :
 
-- Staking Ratio **R<sub>1</sub>** \= 4,250
-- Staking Ratio **R<sub>2</sub>** \= 12,750
-- Staking Ratio **R<sub>3</sub>** \= 34,000
+- Staking Ratio **R<sub>1</sub>** \= 8,500
+- Staking Ratio **R<sub>2</sub>** \= 25,500
+- Staking Ratio **R<sub>3</sub>** \= 68,000
 - Quantité de BTC staké \= 10 BTC
 
 Les **Seuils de CORE Staké** avec les variables ci-dessus sont :
 
-- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 4,250 \= 42,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 12,750 \= 127,500 staked CORE
-- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 34,000 \= 340,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level1</sub>** \= 10 \* 8,500 \= 85,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level2</sub>** \= 10 \* 25,500 \= 255,000 staked CORE
+- Staked CORE Threshold for **P<sub>Level3</sub>** \= 10 \* 68,000 \= 680,000 staked CORE
 
 Ainsi, le BTC staké dans cet exemple bénéficiera d'un rendement de :
 
-- **P<sub>BASE</sub>** if the amount of staked CORE is below 42,500
-- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 42,500 but below 127,500
-- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 127,500 but below 340,000
-- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 340,000
+- **P<sub>BASE</sub>** if the amount of staked CORE is below 85,000
+- **P<sub>Level1</sub>** if the amount of staked CORE is above or equal to 85,000 but below 255,000
+- **P<sub>Level2</sub>** if the amount of staked CORE is above or equal to 255,000 but below 680,000
+- **P<sub>Level3</sub> (P<sub>MAX</sub>)** if the amount of staked CORE is above or equal to 680,000
 
 :::note
 The multiplier on each boosted yield tier is dynamic and subject to change based on market supply and demand conditions.
