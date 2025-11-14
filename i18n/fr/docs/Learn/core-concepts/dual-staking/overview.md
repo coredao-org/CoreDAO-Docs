@@ -53,17 +53,17 @@ Supposons que vous stakiez **10 Bitcoin**.
 
 Si les ratios de niveau sont définis comme :
 
-- **R₁ = 4,250 CORE/Bitcoin**
-- **R₂ = 12,750 CORE/Bitcoin**
-- **R₃ = 34,000 CORE/Bitcoin**
+- **R₁ = 8,500 CORE/Bitcoin**
+- **R₂ = 25,500 CORE/Bitcoin**
+- **R₃ = 68,000 CORE/Bitcoin**
 
 Alors vos seuils seraient :
 
 | **Tier**     | **CORE requis** |
 | ------------ | --------------- |
-| Boost Tier   | 42,500 CORE     |
-| Super Tier   | 127,500 CORE    |
-| Satoshi Tier | 340,000 CORE    |
+| Boost Tier   | 850,000 CORE    |
+| Super Tier   | 255,000 CORE    |
+| Satoshi Tier | 680,000 CORE    |
 
 Votre niveau de récompense est déterminé par la quantité de CORE que vous avez déléguée par rapport à vos Bitcoin stakés.
 
@@ -99,5 +99,5 @@ Le staking double offre des rendements attractifs et durables pour les stakers B
 **Commencez le staking double sur stake.coredao.org**
 
 :::info
-Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).\
+Veuillez vous référer à la [section FAQ sur le Dual Staking](../../../FAQs/dual-staking-faqs.md) pour d'autres questions ou clarifications. Pour un support supplémentaire, vous pouvez diriger vos questions vers le [Forum des développeurs de Core](http://forum.coredao.org) ou le [Serveur Discord de Core](https://discord.gg/M2AGJKSG).  
 :::
