@@ -132,16 +132,16 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 
 14. Une fois vérifié, revenez sur (lien non disponible) et continuez en cliquant sur **Approve Transaction**.
 
-<p align="center">
+<p align="center" style={{zoom:"85%"}}>
 ![btc-staking-approve-tx](../../static/img/btc-staking/approve-tx.png)
 </p>
 
 ### Ajustement des Ratios CORE:BTC pour des Rendements Plus Élevés
 
-15. Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Lorsque l'option **Current** est sélectionnée, elle affiche uniquement le taux de récompense de staking estimé en temps réel. Lorsque l'option **Overall** est sélectionnée, elle représente la moyenne de deux composants : les taux de tous les validateurs basés sur les enregistrements de staking précédents et le taux de récompense de staking estimé en temps réel.
+15. Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Whereas the **Details** tab visualizes the real-time estimated staking reward rate for currently selected validator and the **Active Yields** represents the rates from all validators based on previous staking records.
 
-<p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-7.png
+<p align="center" style={{zoom:"40%"}}>
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-10.png
 )
 </p>
 
@@ -154,7 +154,7 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 
 17. Pour obtenir le maximum de boost de récompense sur votre montant staké, dans la section **Dual Staking Tiers**, ajustez le curseur **Btc Staked** au montant de Btc que vous souhaitez staker et cliquez sur le bouton **Max Boost**. Cela définira automatiquement le montant de CORE correspondant dans le curseur “CORE Staked“ pour débloquer le boost maximum. Vous pouvez également ajuster manuellement le CORE staké puis cliquer à nouveau sur le bouton "Max Boost" pour mettre à jour le montant de BTC recommandé dans la barre "BTC Staked".
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../static/img/dual-staking/dual-staking-9.png
 )
 </p>
@@ -166,8 +166,8 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 - **Active Staked BTC :** Le montant de BTC actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 - **Active Staked CORE :** Le montant de CORE actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 
-<p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-10.png
+<p align="center" style={{zoom:"50%"}}>
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-7.png
 )
 </p>
 
