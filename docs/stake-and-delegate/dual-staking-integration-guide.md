@@ -53,9 +53,9 @@ By meeting specific CORE-to-BTC predefined staking ratios/thresholds, users gain
 Under Dual Staking, the following yield tiers for Bitcoin Staking exist based on the proportion of CORE staked relative to Bitcoin staked. 
 
 * Base Layer \= BTC Staking Rate for solo staking BTC.  
-* Boost Layer \= BTC Staking Rate \+ Level 1 Boosted Yield Multiplier (Requires Staking 4,250 CORE per 1 BTC)  
-* Super Layer \= BTC Staking Rate \+ Level 2 Boosted Yield Multiplier (Requires Staking 12,750 CORE per 1 BTC)  
-* Satoshi Layer \= BTC Staking Rate \+ Level 3 Boosted Yield Multiplier (Requires Staking 34,000 CORE per 1 BTC)
+* Boost Layer \= BTC Staking Rate \+ Level 1 Boosted Yield Multiplier (Requires Staking 8,500 CORE per 1 BTC)  
+* Super Layer \= BTC Staking Rate \+ Level 2 Boosted Yield Multiplier (Requires Staking 25,500 CORE per 1 BTC)  
+* Satoshi Layer \= BTC Staking Rate \+ Level 3 Boosted Yield Multiplier (Requires Staking 68,000 CORE per 1 BTC)
 
 **Yield Dynamics & Tier Activation**
 

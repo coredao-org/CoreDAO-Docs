@@ -53,17 +53,17 @@ Suppose you stake **10 Bitcoin**.
 
 If tier ratios are defined as:
 
-- **R₁ = 4,250 CORE/Bitcoin**
-- **R₂ = 12,750 CORE/Bitcoin**
-- **R₃ = 34,000 CORE/Bitcoin**
+- **R₁ = 8,500 CORE/Bitcoin**
+- **R₂ = 25,500 CORE/Bitcoin**
+- **R₃ = 68,000 CORE/Bitcoin**
 
 Then your thresholds would be:
 
 | **Tier**     | **CORE Required** |
 | ------------ | ----------------- |
-| Boost Tier   | 42,500 CORE       |
-| Super Tier   | 127,500 CORE       |
-| Satoshi Tier | 340,000 CORE      |
+| Boost Tier   | 850,000 CORE      |
+| Super Tier   | 255,000 CORE      |
+| Satoshi Tier | 680,000 CORE      |
 
 Your reward tier is determined by how much CORE you've delegated relative to your staked Bitcoin.
 

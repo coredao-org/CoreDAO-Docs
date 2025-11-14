@@ -126,7 +126,7 @@ The verification result will appear in the Verification Result section.
 
 Once verified, navigate back to [stake.coredao.org](https://stake.coredao.org) and continue by clicking on **Approve Transaction**.
 
-<p align="center">
+<p align="center"  style={{zoom:"85%"}}>
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
@@ -134,7 +134,7 @@ Once verified, navigate back to [stake.coredao.org](https://stake.coredao.org) a
 
 On the right side of the Staking Calculator, there is a **Summary** tab that calculates the Total Staking Reward Rate and Projected Annual Rewards. These are estimated annual return numbers for staked Bitcoin and CORE. The reward rate may fluctuate daily based on the total and weighted amounts of delegations that validators receive. When set to the **Current** button, it displays only the real-time estimated staking reward rate. When set to the **Overall** button, it represents the average of two components: the rates from all validators based on previous staking records and the real-time estimated staking reward rate.
 
-<p align="center" style={{zoom:"60%"}}>
+<p align="center" style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
@@ -146,7 +146,7 @@ You can also use the sliders in the section below to see the effect of CORE:BTC 
 
 To get the maximum reward boost on your staked amount, under the **Dual Staking Tiers** section, adjust the Bitcoin Staked slider to the amount of Bitcoin you want to stake and click the **Max Boost** button. This will automatically set the corresponding CORE amount in the "CORE Staked" slider to unlock maximum boost. You can also manually adjust the CORE staked and then click the "Max Boost" button again to update the recommended Bitcoin amount in the "BTC Staked" bar.
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
@@ -157,7 +157,7 @@ Next to the Summary tab, you can find **Details** page, which shows staking deta
 - **Active Staked Bitcoin**: The amount of BTC currently staked and the average earning reward rate across validators.
 - **Active Staked CORE**: The amount of CORE currently staked and the average earning reward rate across validators.
 
-<p align="center" style={{zoom:"70%"}}>
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
@@ -221,7 +221,7 @@ Once you confirm the transition, you will receive a **Transaction Submitted** no
 
 In the top right corner of the staking website, hover over your connected wallet and click **My Staking**.
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
