@@ -126,16 +126,16 @@ El Dual Staking es una mejora del Staking de Bitcoin Auto-custodial de Core, que
 
 14. Una vez verificado, regresa a stake.coredao.org y continúa haciendo clic en **Approve Transaction**.
 
-<p align="center">
+<p align="center" style={{zoom:"85%"}}>
 ![btc-staking-approve-tx](../../static/img/btc-staking/approve-tx.png)
 </p>
 
 ### Ajuste de la Proporción CORE:BTC para Obtener Mayores Rendimientos
 
-15. En el lado derecho del Calculador de Staking, hay una pestaña de **Resumen** que calcula la Tasa Total de Recompensa por Staking y las Recompensas Anuales Proyectadas. Estos son valores estimados de rendimiento anual para el Bitcoin y CORE en staking. La tasa de recompensa puede fluctuar diariamente según las cantidades totales y ponderadas de delegaciones que reciben los validadores. Cuando el modo está en **Current**, muestra únicamente la tasa estimada de recompensa en tiempo real. Cuando está configurado en el botón **Overall**, representa el promedio de dos componentes: las tasas de todos los validadores basadas en registros de staking previos y la tasa de recompensa estimada en tiempo real.
+15. En el lado derecho del Calculador de Staking, hay una pestaña de **Resumen** que calcula la Tasa Total de Recompensa por Staking y las Recompensas Anuales Proyectadas. Estos son valores estimados de rendimiento anual para el Bitcoin y CORE en staking. La tasa de recompensa puede fluctuar diariamente según las cantidades totales y ponderadas de delegaciones que reciben los validadores. Whereas the **Details** tab visualizes the real-time estimated staking reward rate for currently selected validator and the **Active Yields** represents the rates from all validators based on previous staking records.
 
-<p align="center" style={{zoom:"60%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-7.png)
+<p align="center" style={{zoom:"40%"}}>
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
 16. También puedes usar los controles deslizantes en la sección de abajo para ver el efecto de la proporción de staking CORE:BTC sobre tu Tasa Total de Recompensa por Staking.
@@ -146,7 +146,7 @@ El Dual Staking es una mejora del Staking de Bitcoin Auto-custodial de Core, que
 
 17. Para obtener el máximo impulso de recompensas sobre tu cantidad apostada, en la sección Dual Staking Tiers, ajusta el deslizador de **Bitcoin Staked** a la cantidad de Bitcoin que deseas poner en staking y haz clic en el botón **Max Boost**. Esto configurará automáticamente la cantidad correspondiente de CORE en el control deslizante “CORE Staked” para desbloquear el máximo aumento. También puedes ajustar manualmente el CORE apostado y luego hacer clic nuevamente en el botón “Max Boost” para actualizar la cantidad recomendada de Bitcoin en la barra “BTC Apostado”.
 
-<p align="center">
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
@@ -157,8 +157,8 @@ El Dual Staking es una mejora del Staking de Bitcoin Auto-custodial de Core, que
 - **Active Staked Bitcoin**: La cantidad de BTC actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 - **Active Staked CORE**: La cantidad de CORE actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 
-<p align="center" style={{zoom:"70%"}}>
-![dual-staking-on-core](../../static/img/dual-staking/dual-staking-10.png)
+<p align="center" style={{zoom:"50%"}}>
+![dual-staking-on-core](../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
 ### Finalización de Transacciones de Dual Staking
