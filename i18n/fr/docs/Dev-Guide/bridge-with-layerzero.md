@@ -36,7 +36,6 @@ Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub 
    npx create-lz-oapp@latest
    # Choose "OFT example" and "npm"
    cd your-project-name
-
    ```
 
 2. **Configurer les réseaux**
@@ -60,8 +59,7 @@ Pour référence, vous pouvez également consulter la [CoreDAO-LayerZero GitHub 
 ## Déploiement du contrat OFT
 
 ````
-Modify the OFT contract to be able to mint the tokens, Go to `contracts/MyOFT.sol` and update the below code
-
+Modifier le contrat OFT pour pouvoir créer (mint) des tokens, rendez‑vous dans contracts/MyOFT.sol et mettez à jour le code ci‑dessous
 ```javascript
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.22;
