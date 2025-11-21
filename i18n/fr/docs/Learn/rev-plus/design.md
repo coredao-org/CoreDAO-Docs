@@ -13,7 +13,7 @@ sidebar_position: 2
 
 Rev+ est implémenté comme une fonctionnalité de niveau protocole intégrée directement dans le pipeline de traitement des transactions de la blockchain Core. Le modèle Rev+ comprend deux composants principaux : un contrat de `configuration` en chaîne et des `core chain modifications` qui gèrent la logique de distribution des frais.
 
-## Core Components
+## Composants Core
 
 ### 1. Contrat de Configuration (Configuration.sol)
 
@@ -47,7 +47,7 @@ La logique de Rev+ est intégrée directement dans la couche de traitement des t
 - **Synchronisation de configuration:** Lit la dernière configuration à partir de `Configuration.sol`. Les mises à jour de gouvernance sont reflétées immédiatement dans la transaction suivante traitée.
 - **Compatibilité des structures:** Utilise des versions en langage Go des mêmes structures qu'en Solidity, assurant ainsi la cohérence entre les couches.
 
-#### Gas Accounting
+#### Comptabilité du gaz
 
 Rev+ introduit un mécanisme de comptabilité du gaz distinct qui préserve la limite standard de Core de 50 millions de gaz par bloc tout en prenant en charge des distributions de récompenses supplémentaires basées sur le gaz.
 
@@ -151,7 +151,7 @@ if rules.IsLondon {
     rewardAmount.Mul(rewardAmount, effectiveTipU256)  // 10000 * effectiveTip (gasPrice)
 ```
 
-### 6. Fee Distribution
+### 6. Distribution des frais
 
 - La récompense totale distribuée:
   - Est ajoutée au pool de gaz du bloc.
@@ -168,7 +168,7 @@ if rules.IsLondon {
 
 Ce mécanisme garantit que le protocole Rev+ fonctionne comme **une couche de partage de frais transparente, auditable et composable**, encourageant la participation à long terme de l'écosystème et le développement durable de protocoles sans sacrifier les performances, la sécurité ou la compatibilité.
 
-## Transaction Processing Flow
+## Flux de traitement des transactions
 
 ### 1. Phase pré-transactionnelle
 
@@ -194,12 +194,12 @@ Transaction submitted to Core
 ### 3. Distribution post-exécution
 
 ```bash
-After EVM execution completes
-├── Rev+ system processes matched events
-├── Calculates reward amounts per recipient
-├── Distributes fees to reward addresses
-├── Deducts distributed gas from block accounting
-└── Refunds remaining gas to the transaction sender
+Après l'exécution de l'EVM
+├── Le système Rev+ traite les événements correspondants
+├── Calcule les montants de récompense par destinataire
+├── Distribue les frais aux adresses de récompense
+├── Déduit le gaz distribué de la comptabilité du bloc
+└── Rembourse le gaz restant à l'émetteur de la transaction
 ```
 
 ## Logique de calcul des frais
