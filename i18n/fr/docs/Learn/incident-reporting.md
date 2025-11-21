@@ -1,25 +1,25 @@
 ---
-sidebar_label: Reporting Security Incidents
+sidebar_label: Signalement des incidents de sécurité
 hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Reporting Security Incidents & Hacks
+# Signalement des incidents de sécurité et des piratages
 
-If you encounter a security incident, hack, or suspicious activity affecting the Core ecosystem, such as exploited smart contracts, unauthorized transactions, or malicious protocol behavior, please report it to us immediately.
+Si vous constatez un incident de sécurité, un piratage ou une activité suspecte affectant l’écosystème Core, comme des contrats intelligents exploités, des transactions non autorisées ou un comportement malveillant du protocole, veuillez le signaler immédiatement.
 
-## How to Report
+## Comment signaler
 
-To ensure a timely and effective response, please email **[security-report@coredao.org](mailto:security-report@coredao.org)** with the following details:
+Pour garantir une réponse rapide et efficace, veuillez envoyer un e‑mail à \*\*[security-report@coredao.org](mailto:security-report@coredao.org)\*\*en incluant les détails suivants :
 
-- **Type of Incident:** Describe the nature of the issue (e.g., exploited contract, unauthorized withdrawal, etc.).
+- **Type of Incident:** Décrivez la nature du problème (ex. contrat exploité, retrait non autorisé, etc.).
 
-- **Transaction or Contract Details:** Include relevant transaction hashes, contract addresses, wallet addresses, or other identifiers involved.
+- **Transaction or Contract Details:** indiquez les hachages de transaction, adresses de contrat, adresses de portefeuille ou tout autre identifiant concerné.
 
-- **Description & Evidence:** Provide detailed context, screenshots, logs, or any observations that can help us assess the situation.
+- **Description & Evidence:** Fournissez un contexte détaillé, des captures d'écran, des journaux ou toute observation pouvant aider à évaluer la situation.
 
-- **Impact Assessment (if known):** Share any information about affected users, token amounts, or protocol components.
+- **Impact Assessment (if known):** Partagez toute information concernant les utilisateurs affectés, les montants de tokens concernés ou les composants du protocole touchés.
 
-- **Discovery Method:** Explain how and where you discovered the issue (e.g., on-chain monitoring, user report, community forum, etc.).
+- **Discovery Method:** Expliquez comment et où vous avez détecté le problème (ex. surveillance on‑chain, signalement d'utilisateur, forum communautaire, etc.).
 
-Your contribution is highly valuable, and your prompt reporting helps would help us in protecting the Core ecosystem and respond effectively to security threats.
+Votre contribution est d'une grande valeur, et vos signalements rapides nous aideraient à protéger l'écosystème Core et à répondre efficacement aux menaces de sécurité.
