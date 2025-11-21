@@ -11,7 +11,7 @@ description: Déployer des contrats sur Core en utilisant Foundry
 
 Foundry est un outil de développement rapide, efficace et extensible pour les blockchains compatibles EVM (Ethereum Virtual Machine), écrit en Rust. Ce guide vous guidera à travers le processus d'installation de Foundry, de configuration de votre projet, d'écriture et de test de code Solidity, ainsi que de déploiement et de vérification de vos contrats sur la blockchain Core.
 
-In this tutorial, you'll learn how to compile, deploy, and verify contracts on Core Testnet using Foundry. You can speed up the setup process by cloning the [Foundry starter kit](https://github.com/coredao-org/hardhat-tutorial).
+Dans ce tutoriel, vous apprendrez comment compiler, déployer et vérifier des contrats sur le Core Testnet en utilisant Foundry. Vous pouvez accélérer le processus de configuration en clonant le [Foundry starter kit](https://github.com/coredao-org/hardhat-tutorial).
 
 ## 1. Installation de Foundry
 
@@ -308,7 +308,7 @@ Deployed to: 0xc1C2466cBBa0f8E1FDb7f5E68e232190c745A6Ae
 Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad914784b2
 ```
 
-If you're working with Rev+ contracts or encountering a gas underpriced issue, try using the `--gas-estimate-multiplier` flag in your Foundry script in the range of 300 to 500.
+Si vous travaillez avec des contrats Rev+ ou que vous rencontriez un problème de gaz sous‑évalué, essayez d'utiliser l'option `--gas-estimate-multiplier` dans votre script Foundry avec une valeur comprise entre 300 et 500.
 
 :::note
 ` --gas-estimate-multiplier` flag does not work with the forge create command, it only works with the forge script command.
