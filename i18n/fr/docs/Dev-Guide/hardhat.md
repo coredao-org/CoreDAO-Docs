@@ -11,19 +11,19 @@ description: Déployer des contrats sur Core en utilisant Hardhat
 
 Hardhat est un environnement de développement populaire pour les blockchains compatibles avec l’EVM, comprenant plusieurs composants pour écrire, compiler, déboguer et déployer des contrats intelligents.
 
-In this tutorial, you'll learn how to compile, deploy, and call smart contracts on Core Testnet using Hardhat. We'll use the pre-configured [Hardhat starter kit](https://github.com/coredao-org/hardhat-tutoria) that includes all necessary dependencies and configurations for Core blockchain development.
+Dans ce tutoriel, vous apprendrez comment compiler, déployer et appeler des contrats intelligents sur le Core Testnet en utilisant Hardhat. Nous utiliserons le [Hardhat starter kit](https://github.com/coredao-org/hardhat-tutoria) pré‑configuré, qui comprend toutes les dépendances et configurations nécessaires pour le développement sur la blockchain Core.
 
-### Prerequisites
+### Pré‑requis
 
-Before you begin, ensure you have:
+Avant de commencer, assurez‑vous d'avoir :
 
-- Node.js [v18.0.0 or later](https://nodejs.org/en/) installed
-- Git installed on your system
-- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://faucet.test.btcs.network/))
+- Node.js [v18.0.0 or later](https://nodejs.org/en/) installer
+- Git installé sur votre machine
+- Un portefeuille Core Testnet avec quelques jetons de test (get them from the [Core Faucet](https://faucet.test.btcs.network/))
 
-### Clone the Starter Kit
+### Cloner le Starter Kit
 
-Clone the Hardhat starter kit repository:
+Cloner le dépôt du kit de démarrage Hardhat:
 
 ```bash
 git clone https://github.com/coredao-org/hardhat-tutorial.git
@@ -31,9 +31,9 @@ cd hardhat-tutorial
 npm install
 ```
 
-## Project Structure
+## Structure du projet
 
-After cloning and installing dependencies, you'll find the following project structure in the starter kit:
+Après avoir cloné et installé les dépendances, vous trouverez la structure de projet suivante dans le starter kit:
 
 ```
 hardhat-tutorial/
@@ -48,16 +48,16 @@ hardhat-tutorial/
 └── README.md          # Project documentation
 ```
 
-The starter kit comes pre-configured with:
+Le starter kit est pré‑configuré avec:
 
-- **contracts/**: Contains example Solidity smart contracts
-- **scripts/**: Contains deployment and interaction scripts
-- **test/**: Contains test files using modern testing patterns
-- **hardhat.config.js**: Pre-configured for Core blockchain networks
+- **contracts/**: Contient des exemples de contrats intelligents Solidity
+- **scripts/**: Contient des scripts de déploiement et d’interaction
+- **test/**: Contient des fichiers de test utilisant des modèles de test modernes
+- **hardhat.config.js**: Pré‑configuré pour les réseaux blockchain Core
 
-## Understanding the Hardhat Configuration
+## Comprendre la configuration Hardhat
 
-The starter kit comes with a pre-configured `hardhat.config.js` file optimized for Core blockchain development. Let's examine the key components of this modern Hardhat v2 configuration:
+Le starter kit est livré avec un fichier `hardhat.config.js` pré‑configuré et optimisé pour le développement sur la blockchain Core. Examinons les composants clés de cette configuration moderne Hardhat v2 :
 
 ```javascript
 /**
@@ -131,9 +131,9 @@ module.exports = {
 };
 ```
 
-### Environment Variables Setup
+### Configuration des variables d'environnement
 
-Create a `.env` file in your project root with the following variables:
+Créez un fichier `.env` à la racine du projet et ajoutez :
 
 ```bash
 # Your wallet private key (without 0x prefix)
@@ -144,10 +144,10 @@ CORE_TEST2_SCAN_KEY=your_testnet_scan_api_key
 CORE_MAIN_SCAN_KEY=your_mainnet_scan_api_key
 ```
 
-**Important**: Make sure your smart contract follows the [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md). The `evmVersion: "shanghai"` setting in the configuration ensures Core blockchain compatibility.
+**Important**: Assurez‑vous que votre contrat intelligent respecte les [Solidity Support Guidelines for Core blockchain](./smart-contract-guidelines.md). Le paramètre `evmVersion: "shanghai"` dans la configuration garantit la compatibilité avec la blockchain Core.
 
 :::note
-Never hardcode private keys in your scripts. Always use environment variables and avoid committing .env files to version control (add .env to .gitignore)
+Ne jamais coder en dur les clés privées dans vos scripts. Utilisez toujours des variables d'environnement et évitez de committer les fichiers .env dans le contrôle de version (ajoutez .env à .gitignore)
 :::
 
 ## Rediger des contrats intelligents
