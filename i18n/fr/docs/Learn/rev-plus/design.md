@@ -233,9 +233,9 @@ recipientAmount = (rewardAmount * rewardPercentage) / DENOMINATOR
 - **Limite de gaz par bloc**: Maintient une limite de gaz de 50 millions
 - **Gaz distribué**: Non compté dans `block.gasUsed`
 - **Gaz de transaction**: L'`tx.gasUsed` individuel inclut le gaz Rev+
-- **Net Effect**: Block can accommodate the same transaction count as before Rev+
+- **Net Effect**: le bloc peut accueillir le même nombre de transactions qu’avant Rev+
 
-### Example Scenario
+### Exemple concret
 
 Block Gas Limit: 50,000,000
 Block Gas Used: 50,000,000 (reported)
