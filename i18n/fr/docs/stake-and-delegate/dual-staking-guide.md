@@ -138,7 +138,7 @@ Le Dual Staking est une amélioration du staking de BTC Non-custodial de Core, p
 
 ### Ajustement des Ratios CORE:BTC pour des Rendements Plus Élevés
 
-15. Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Whereas the **Details** tab visualizes the real-time estimated staking reward rate for currently selected validator and the **Active Yields** represents the rates from all validators based on previous staking records.
+15. Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Alors que l’onglet **Details** montre le taux de récompense de staking estimé en temps réel pour le validateur sélectionné, la section **Active Yields** affiche les taux de tous les validateurs basés sur les historiques de staking précédents.
 
 <p align="center" style={{zoom:"40%"}}>
 ![dual-staking-on-core](../../static/img/dual-staking/dual-staking-10.png
