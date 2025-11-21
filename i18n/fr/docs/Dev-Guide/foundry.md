@@ -311,9 +311,9 @@ Transaction hash: 0x9ce3604ef36d526cd0cad75a23b6f4bfc9558cb8ee26caa825acf2ad9147
 Si vous travaillez avec des contrats Rev+ ou que vous rencontriez un problème de gaz sous‑évalué, essayez d'utiliser l'option `--gas-estimate-multiplier` dans votre script Foundry avec une valeur comprise entre 300 et 500.
 
 :::note
-` --gas-estimate-multiplier` flag does not work with the forge create command, it only works with the forge script command.
+En effet, l’option ` --gas-estimate-multiplier` n’est pas prise en charge par forge create; elle ne fonctionne qu’avec forge script.
 
-When interacting with the Core blockchain, make sure to include the `--legacy` flag to ensure compatibility.
+Lors de l'interaction avec la blockchain Core, assurez‑vous d'inclure l'option `--legacy` pour garantir la compatibilité.
 :::
 
 ## 6. Vérification du contrat
