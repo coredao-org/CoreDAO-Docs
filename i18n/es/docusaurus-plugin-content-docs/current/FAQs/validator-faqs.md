@@ -28,7 +28,7 @@ Proporcione información para cada uno de los campos del formulario:
 - **Dirección de consenso**: la dirección del validador que configuró cuando inicializó su nodo completo del validador.
 - **Dirección de comisión**: la dirección utilizada para cobrar las comisiones.
 - **Comisión**: Los ingresos se dividen entre el validador y sus delegadores. La comisión determina el porcentaje de los ingresos de los delegadores que se asigna al validador como compensación.
-- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. En Testnet, la cantidad mínima es **10,000 tCORE2**. En Mainnet, la cantidad mínima es **10,000 CORE**.
+- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. En Testnet, la cantidad mínima es **50,000 tCORE2**. En Mainnet, la cantidad mínima es **50,000 CORE**.
   1. Una vez que hayas ingresado la información requerida, selecciona **Register** para completar el proceso de registro como validador.
   2. Una forma rápida de verificar que has registrado correctamente tu nodo completo como validador es abrir el archivo de logs y buscar el mensaje de error "**unauthorized validator**". Este error ocurre cuando este nodo está registrado como validador pero aún no ha sido elegido para el conjunto de validadores.
 
@@ -62,7 +62,7 @@ Para más detalles, consulta la [Guía de configuración de nodos completos](../
 
 ### 4. ¿Cuál es la cantidad mínima de tokens CORE requerida para hacer staking y convertirse en validador?
 
-En la red Core, se requiere que los validadores hagan staking de una cantidad mínima de tokens CORE, los cuales se bloquean durante el período en el que el nodo validador presta sus servicios. En la testnet, la cantidad mínima es de **10,000 tCORE2**. En la mainnet, la cantidad mínima es de **10,000 CORE**.
+En la red Core, se requiere que los validadores hagan staking de una cantidad mínima de tokens CORE, los cuales se bloquean durante el período en el que el nodo validador presta sus servicios. En la testnet, la cantidad mínima es de **50,000 tCORE2**. En la mainnet, la cantidad mínima es de **50,000 CORE**.
 
 ### 5. ¿Cómo se recompensa a los validadores en el ecosistema Core?
 

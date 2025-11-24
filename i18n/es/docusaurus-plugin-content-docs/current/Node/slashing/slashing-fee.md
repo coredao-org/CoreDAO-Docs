@@ -30,7 +30,7 @@ Cualquiera puede enviar una solicitud de slash con evidencia de una actividad de
 
 Si la evidencia es válida:
 
-1. **10,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
+1. **50,000 CORE** (es decir, la totalidad del CORE auto-garantizado del validador) será slasheado.
 2. El validador recortado sería encarcelado y excluido de la red para siempre.
 3. **500** de CORE recortado se asignarían al remitente como recompensa
 4. El resto de los tokens CORE penalizados se transfiere al System Reward Pool

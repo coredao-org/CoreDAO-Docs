@@ -43,7 +43,7 @@ Proporcione información para cada uno de los campos del formulario:
 - **Dirección de Consenso**: la dirección del validador que configuraste al inicializar tu nodo validador.
 - **Dirección de comisión**: la dirección utilizada para cobrar las comisiones.
 - **Comisión**: Los ingresos se dividen entre el validador y sus delegadores. La comisión determina el porcentaje de los ingresos de los delegadores que se asigna al validador como compensación.
-- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. El depósito mínimo para testnet y mainnet es de **10,000 CORE**.
+- **Depósito total**: el depósito CORE reembolsable bloqueado mientras se realizan servicios de validación. El depósito mínimo para testnet y mainnet es de **50,000 CORE**.
 
 5. **Enviar registro:** Una vez que hayas completado toda la información requerida, haz clic en **Register** para enviar tu validador para su registro.
 

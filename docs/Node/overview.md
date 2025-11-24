@@ -38,7 +38,7 @@ Depending on your goals, various node configurations are possible on the Core ne
    
 2. **Validators:**
     * **Role:** Validators are crucial for securing the network by producing blocks and validating transactions within the Core blockchain’s consensus framework. These are essentially full nodes running in validator mode.
-    * **Requirements:** Validators must stake a minimum of **10,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
+    * **Requirements:** Validators must stake a minimum of **50,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
     * **Incentives:** Validators earn rewards in CORE tokens for their active role in maintaining and securing network operations.
 
 3. **RPC Nodes:**

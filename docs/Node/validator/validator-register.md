@@ -41,7 +41,7 @@ Provide information for each of the form's fields:
 * **Consensus Address**: the validator address you set when you initialized your validator node.
 * **Fee Address**: the address used to collect commission fees.
 * **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
-* **Total deposit**: the refundable CORE deposit locked up while performing validator services. The minimum deposit for testnet and mainnet is **10,000 CORE**.
+* **Total deposit**: the refundable CORE deposit locked up while performing validator services. The minimum deposit for testnet and mainnet is **50,000 CORE**.
 
 5. **Submit Registration:** Once you’ve filled out all the required information, click **Register** to submit your validator for registration.
 
