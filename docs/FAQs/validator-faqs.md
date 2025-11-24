@@ -26,7 +26,7 @@ Provide information for each of the form's fields:
 - **Consensus address**: the validator address you set when you initialized your validator full node.
 - **Fee address**: the address used to collect commission fees.
 - **Commission**: Revenue is split between the validator and its delegators, with the commission determining the percentage of delegator revenue allocated to the validator as compensation.
-- **Total deposit**: the refundable CORE deposit locked up while performing validator services. On testnet, the minimum amount is **10,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
+- **Total deposit**: the refundable CORE deposit locked up while performing validator services. On testnet, the minimum amount is **50,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **50,000 CORE**.
     1. Once you've entered the required information, select **Register** to complete the registration process as a validator.
     2. A quick way to check that you've successfully registered your full node as a validator is to open the log file and search for the error message "**unauthorized validator**". This error occurs when this node is registered as a validator but not yet elected to the validator set.
 
@@ -60,7 +60,7 @@ For more details, refer to [Full Node Configuration Guide](../Node/config/full-n
 
 ### 4. What is the minimum amount of CORE tokens required to stake to become a validator?
 
-On the Core network, validators are required to stake a certain minimum amount of CORE tokens, which are locked up for the duration that a validator node provides its services. On testnet, the minimum amount is **10,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **10,000 CORE**.
+On the Core network, validators are required to stake a certain minimum amount of CORE tokens, which are locked up for the duration that a validator node provides its services. On testnet, the minimum amount is **50,000 tCORE2**. Whereas, on the mainnet, the minimum amount is **50,000 CORE**.
 
 ### 5. How are validators rewarded in the Core ecosystem?
 
