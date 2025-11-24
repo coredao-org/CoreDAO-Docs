@@ -40,7 +40,7 @@ Según tus objetivos, existen varias configuraciones posibles de nodo en la red 
 
 2. **Validadores:**
    - **Rol:** Los Validadores son fundamentales para la seguridad de la red, ya que producen bloques y validan transacciones dentro del marco de consenso de la blockchain Core. Esencialmente, son nodos completos ejecutándose en modo validador.
-   - **Requisitos:** los validadores deben hacer stake de un mínimo de 10,000 tokens CORE para participar, alineando sus incentivos financieros con el rendimiento y la seguridad de la red.
+   - **Requirements:** Validators must stake a minimum of **50,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
    - **Incentivos:** Los Validadores ganan recompensas en tokens CORE por su papel activo en el mantenimiento y la seguridad de las operaciones de la red.
 
 3. **Nodos RPC:**
