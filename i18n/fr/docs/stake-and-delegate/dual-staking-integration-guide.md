@@ -42,15 +42,15 @@ Le composant de staking Bitcoin auto‑garde de Satoshi Plus est le premier m�
 4. **Distribution des récompenses:** lorsqu’un validateur élu est actif et exécute ses fonctions, il reçoit des jetons CORE en tant que récompenses de validation. Les validateurs conservent une part spécifique, appelée commission, et distribuent le reste aux délégateurs Bitcoin qui les soutiennent. Ces récompenses sont envoyées à l'adresse du portefeuille EVM fournie par le délégateur. Les montants des récompenses varient selon la disponibilité du validateur et le montant de Bitcoin mis en jeu pour le soutenir.
 5. **Expiration du timelock:** après l’expiration de la période de blocage, le Bitcoin est débloqué, et le droit de vote du validateur ainsi que l’éligibilité aux récompenses expirent. De nouveaux timelocks sont nécessaires pour poursuivre la participation. Il n’y a pas de renouvellement automatique ; la participation continue nécessite une nouvelle transaction de timelock.
 
-## Dual Staking on Core
+## Dual Staking sur Core
 
-Dual Staking enhances Core’s self-custodial BTC staking by allowing participants to stake both BTC and CORE to maximize Bitcoin yield. Rewards are paid in CORE and scale with the BTC:CORE ratio staked. While BTC rewards are boosted, CORE staking rewards remain unaffected.
+Le Dual Staking renforce le staking BTC auto‑custodial de Core en permettant aux participants de miser à la fois du BTC et du CORE afin de maximiser le rendement Bitcoin. Les récompenses sont payées en CORE et sont proportionnelles au ratio BTC:CORE misé. Bien que les récompenses BTC soient augmentées, les récompenses du staking CORE restent inchangées.
 
-By meeting specific CORE-to-BTC predefined staking ratios/thresholds, users gain boosted Bitcoin staking rewards, paid in CORE. While Dual Staking enhances BTC staking yields, it does not affect CORE staking rewards directly.
+En respectant des ratios ou seuils prédéfinis de CORE‑BTC, les utilisateurs obtiennent des récompenses Bitcoin boostées, payées en CORE. Bien que le Dual Staking augmente les rendements du staking BTC, il n’impacte pas directement les récompenses du staking CORE.
 
-### Boosted Yield Levels
+### Niveaux de rendement boostés
 
-Under Dual Staking, the following yield tiers for Bitcoin Staking exist based on the proportion of CORE staked relative to Bitcoin staked.
+Sous le Dual Staking, les rendements du staking Bitcoin sont répartis en quatre niveaux selon la proportion de CORE mise en jeu par rapport au BTC staké.
 
 - Base Layer \= BTC Staking Rate for solo staking BTC.
 - Boost Layer \= BTC Staking Rate \+ Level 1 Boosted Yield Multiplier (Requires Staking 8,500 CORE per 1 BTC)
