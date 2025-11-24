@@ -29,18 +29,18 @@ Le composant de staking Bitcoin auto‑garde de Satoshi Plus est le premier m�
 
 - **100 % d’auto‑garde:** le Bitcoin reste en permanence dans le portefeuille de l’utilisateur.
 - **Zéro risque de principal:** les fonds restent entièrement sécurisés par les propres règles de Bitcoin
-- **Trustless Yield:** No third-party intermediaries.
-- **Bitcoin-Native Security:** Staked Bitcoin is secured entirely by Bitcoin's consensus mechanism.
+- **Rendement sans confiance:** Aucun intermédiaire tiers.
+- **Sécurité native de Bitcoin:** le Bitcoin mis en jeu est entièrement sécurisé par le mécanisme de consensus de Bitcoin.
 
-### How It Works
+### Comment ça fonctionne
 
-1. **Time-locking Bitcoin via CLTV:** Holders lock Bitcoin for a chosen duration (**min 0.01 BTC, min 24 hours for rewards**) using CLTV. During this period, Bitcoin is locked.
-2. **Specifying Validator & Reward Address Details:** When creating a timelock transaction, the `OP_RETURN` data should include the following key details:
-   1. **Validator Information:** The address of the Core validator to whom the user intends to delegate their Bitcoin.
-   2. **EVM Wallet Address:** The EVM wallet address where the user wishes to receive their CORE token rewards.
-3. **Relayer and Consensus Integration:** Core's relayer network scans the Bitcoin network for valid CLTV timelocks with embedded metadata, validates transactions, transmits data to Core's consensus, and updates validator election weights based on delegated Bitcoin.
-4. **Reward Distribution:** When an elected validator is active and performs duties, they receive CORE tokens as validator rewards. The validators keep a specific portion, also known as commission, and distribute the rest to their supporting Bitcoin delegators. These rewards are sent to the delegator’s provided EVM wallet address. Reward amounts vary based on validator liveness and the amount of Bitcoin staked in support.
-5. **Timelock Expiration:** After the lock period expires, Bitcoin is unlocked, and validator vote and reward eligibility expires. New timelocks are required for continued participation. There is no auto-renewal—ongoing participation requires a new timelock transaction.
+1. **Verrouillage temporel du Bitcoin via CLTV:** les détenteurs bloquent du Bitcoin pendant la durée qu’ils choisissent (**minimum 0,01 BTC, minimum 24 h pour recevoir des récompenses**) en utilisant l’opcode CLTV. Pendant cette période, le Bitcoin est verrouillé.
+2. **Spécifier le validateur et les détails de l'adresse de récompense:** lors de la création d’une transaction avec timelock, les données `OP_RETURN` doivent contenir les informations clés suivantes:
+   1. **Informations sur le validateur:** il s’agit de l'adresse du validateur Core à qui l'utilisateur souhaite déléguer son Bitcoin.
+   2. **Adresse du portefeuille EVM:** l'adresse du portefeuille EVM où l'utilisateur souhaite recevoir ses récompenses en jetons CORE.
+3. **Intégration du relayer et du consensus:** le réseau de relayers de Core parcourt la blockchain Bitcoin à la recherche de timelocks CLTV valides contenant les métadonnées, vérifie les transactions, transmet les données au consensus de Core et ajuste les poids d’élection des validateurs en fonction du Bitcoin délégué.
+4. **Distribution des récompenses:** lorsqu’un validateur élu est actif et exécute ses fonctions, il reçoit des jetons CORE en tant que récompenses de validation. Les validateurs conservent une part spécifique, appelée commission, et distribuent le reste aux délégateurs Bitcoin qui les soutiennent. Ces récompenses sont envoyées à l'adresse du portefeuille EVM fournie par le délégateur. Les montants des récompenses varient selon la disponibilité du validateur et le montant de Bitcoin mis en jeu pour le soutenir.
+5. **Expiration du timelock:** après l’expiration de la période de blocage, le Bitcoin est débloqué, et le droit de vote du validateur ainsi que l’éligibilité aux récompenses expirent. De nouveaux timelocks sont nécessaires pour poursuivre la participation. Il n’y a pas de renouvellement automatique ; la participation continue nécessite une nouvelle transaction de timelock.
 
 ## Dual Staking on Core
 
