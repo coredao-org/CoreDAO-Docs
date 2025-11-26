@@ -179,16 +179,16 @@ Pour récupérer les récompenses accumulées, appelez la méthode[StakeHub.clai
 
 `function claimReward() external returns (uint256[] memory rewards);`
 
-- Claims rewards for **all stake types** (CORE and BTC).
-- The returned array contains amounts in this order:
+- Réclame les récompenses pour **tous les types de stake** (CORE et BTC).
+- Le tableau retourné contient les montants dans cet ordre:
   1. CORE rewards
   2. BTC rewards
 
-### 4. Wallet Connection
+### 4. Connexion du portefeuille
 
-The official staking portal ([stake.coredao.org](https://stake.coredao.org)) integrates with standard wallet libraries for wallet connections.
+Le portail de staking officiel ([stake.coredao.org](https://stake.coredao.org)) s’intègre aux bibliothèques de portefeuille standard pour les connexions de portefeuille.
 
-#### Ledger Wallet library
+####  Bibliothèque de portefeuille Ledger
 
 ```ts
 import { AppClient, DefaultWalletPolicy, PsbtV2, DefaultDescriptorTemplate } from 'ledger-bitcoin';
@@ -205,7 +205,7 @@ const transport = await TransportWebHid.create();
       }
 ```
 
-#### Xverse Wallet library
+####  Bibliothèque de portefeuille Xverse
 
 ```ts
 import { AddressPurpose, BitcoinNetworkType, request } from 'sats-connect';
@@ -263,21 +263,21 @@ try {
   - [Mainnet Staking API (Chain ID: 1116)](https://docs.coredao.org/docs/api/mainnet-staking-api-docs)
   - [Testnet Staking API (Chain ID: 1114)](https://docs.coredao.org/docs/api/testnet-staking-api-docs)
 
-## Data Retrieval Guidelines for Staking UX
+## Directives de récupération de données pour l'expérience utilisateur du staking
 
-- **Get Details of All Validators**: For the staking user interface, the validator with the highest reward rate should be automatically selected by default, as retrieved from the Validator Details API endpoint, for validator selection.
-  - For BTC timelocking, select the validator address with the highest “**estimatedBTCRewardRate**” from the response of [this endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators).
-  - For CORE staking, select the validator address with the highest “**estimatedCORERewardRate**” from the response of [this endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators).
+- **Obtenir les détails de tous les validateurs**: pour l'interface utilisateur de staking, le validateur avec le taux de récompense le plus élevé doit être sélectionné automatiquement par défaut, tel qu'il est récupéré depuis le point d'accès API Validator Details, pour la sélection du validateur.
+  - Pour le timelocking de BTC, choisissez l'adresse du validateur avec le plus haut “**estimatedBTCRewardRate**” issu de la réponse de [this endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators).
+  - Pour le staking CORE, choisissez l'adresse du validateur dont le champ “**estimatedCORERewardRate**” est le plus élevé dans la réponse de cet [this endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators).
 
-- **Projected Reward Rate Display:** To display the projected reward rate, retrieve data from the [staking reward rate API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_rewards_reward_rate), input the required key parameters, and output the calculated projected reward rate.
+- **Affichage du taux de récompense projeté:** pour afficher le taux de récompense projeté, récupérez les données depuis [staking reward rate API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_rewards_reward_rate), saisissez les paramètres clés requis, puis affichez le taux calculé.
 
-- **Dual Staking Tier Requirement:** Retrieve the Dual Staking tier requirements using the "stakeRate" field from the [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade). This field specifies the amount of CORE tokens that must be staked for each 1 timelocked BTC to meet the criteria for each Dual Staking Tier. Please note that the Dual Staking tier requirements may vary periodically due to protocol updates or network conditions.
+- **Exigence de niveau de double staking:** récupérez les exigences de niveau de double staking en utilisant le champ "stakeRate" depuis [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade). Ce champ indique le nombre de jetons CORE qui doivent être mis en jeu pour chaque 1 BTC verrouillé dans le temps afin de satisfaire les critères de chaque niveau de Dual Staking. Veuillez noter que les exigences de niveau de Dual Staking peuvent varier périodiquement en raison de mises à jour du protocole ou des conditions du réseau.
 
-- **Dual Staking Tier Reward Rate:** Retrieve the Dual Staking tier reward rate using the "percentage" field from the [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade). This field specifies the adjustment to the "estimatedBTCRewardRate" from the [Validator details API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators), where the value represents the percentage adjustment (e.g., 1000 \= 10%, 2000 \= 20%, 3000 \= 30%, up to 50000 \= 500%). Please note that the Dual Staking tier reward rate may be adjusted periodically due to protocol updates or network conditions.
+- Taux de récompense du palier Dual Staking : récupérez le taux de récompense du palier Dual Staking en utilisant le champ "percentage" depuis [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade). Ce champ indique l’ajustement appliqué au "estimatedBTCRewardRate" provenant de [Validator details API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_status_validators),où la valeur représente l’ajustement en pourcentage (e.g., 1000 \= 10%, 2000 \= 20%, 3000 \= 30%, up to 50000 \= 500%). Veuillez noter que le taux de récompense du palier Dual Staking peut être ajusté périodiquement en raison de mises à jour du protocole ou des conditions du réseau.
 
-- **Current Staking Status:** Retrieve the current staking status for a specified Core address using the [Staking Summary API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_core).
-  - The "**Staked Amount**" field indicates the quantity of tokens actively staked
-    - The "**Pending Reward**" field indicates the CORE rewards earned but not yet claimed
-    - The "**Claimed Reward**" field indicates the CORE rewards that have been earned and claimed
+- **Statut de staking actuel:** récupérer le statut de staking actuel pour une adresse Core spécifiée en utilisant le [Staking Summary API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_core).
+  - Le champ "**Staked Amount**" indique la quantité de jetons activement mis en jeu
+    - Le champ"**Pending Reward**" indique les récompenses CORE gagnées mais non encore réclamées
+    - Le champ "**Claimed Reward**" indique les récompenses CORE qui ont été gagnées et retirées
 
-- **Additional CORE for Next Dual Staking Tier:** Using the [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade) and [Staking Summary API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_core), calculate and display the additional amount of CORE tokens that must be staked for the account to advance to the next Dual Staking tier.
+- **CORE supplémentaire pour le prochain palier Dual Staking:** Utilisation de la [Dual Staking Grade API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_dualstaking_grade) and [Staking Summary API endpoint](https://staking-api.coredao.org/#/Staking%20APIs/get_staking_summary_core) Calculer et afficher le montant supplémentaire de jetons CORE qu’il faut mettre en jeu pour que le compte passe au palier Dual Staking suivant.
