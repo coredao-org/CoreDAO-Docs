@@ -57,11 +57,11 @@ Sous le Dual Staking, les rendements du staking Bitcoin sont répartis en quat
 - Super Layer \= BTC Staking Rate \+ Level 2 Boosted Yield Multiplier (Requires Staking 25,500 CORE per 1 BTC)
 - Satoshi Layer \= BTC Staking Rate \+ Level 3 Boosted Yield Multiplier (Requires Staking 68,000 CORE per 1 BTC)
 
-**Yield Dynamics & Tier Activation**
+**Dynamique du rendement et activation des paliers**
 
-- BTC staking yields fluctuate daily based on CORE/BTC prices and network conditions.
-- CORE rewards are distributed based on the amount of delegated BTC, the validator selected, and the total delegation that the validator receives.
-- Tier multipliers are dynamic and subject to governance changes due to market changes.
+- Les rendements du staking BTC varient quotidiennement en fonction du prix CORE/BTC et des conditions du réseau.
+- Les récompenses CORE sont distribuées en fonction du montant de BTC délégué, du validateur choisi et du total des délégations reçues par ce validateur.
+- Les multiplicateurs de palier sont dynamiques et peuvent être ajustés par la gouvernance en réponse aux évolutions du marché.
 
 **Activating a Higher Tier**  
 If you add more CORE after BTC is already staked:
