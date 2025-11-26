@@ -63,33 +63,33 @@ Sous le Dual Staking, les rendements du staking Bitcoin sont répartis en quat
 - Les récompenses CORE sont distribuées en fonction du montant de BTC délégué, du validateur choisi et du total des délégations reçues par ce validateur.
 - Les multiplicateurs de palier sont dynamiques et peuvent être ajustés par la gouvernance en réponse aux évolutions du marché.
 
-**Activating a Higher Tier**  
-If you add more CORE after BTC is already staked:
+**Activation d’un niveau supérieur**
+Si vous ajoutez davantage de CORE alors que le BTC est déjà staké:
 
-1. Wait until the next 00:00 UTC.
-2. Claim rewards once after 00:00 UTC.
+1. Attendez jusqu’au prochain 00:00 UTC.
+2. Réclamez les récompenses une fois après 00:00 UTC.
 
-Your new tier takes effect immediately after the claim.
+Votre nouveau palier prend effet immédiatement après la réclamation.
 
-**How to Qualify**
+**Comment se qualifier**
 
-- Stake both BTC (via timelock transaction) and CORE (via validator delegation).
-- Use the **same Core address** for CORE staking and BTC reward collection.
+- Staker à la fois BTC (via transaction timelock) et CORE (via délégation de validateur).
+- Utilisez la **même adresse Core** pour le staking de CORE et la collecte des récompenses BTC.
 
-## Core Networks & Environments
+## Réseaux et environnements Core
 
-| Network     |             Chain ID            | Currency | RPC                                                                                                                               | Explorer                                                                                                                           | Staking Website                                                                                                                                                                                 | Faucet                                                                                                                                           |
+| Réseaux     |         ID de la chaîne         |  Devise  | RPC                                                                                                                               | Explorateur                                                                                                                        | Site web de staking                                                                                                                                                                             | Faucet                                                                                                                                           |
 | ----------- | :-----------------------------: | :------: | --------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Mainnet** | 1116 (0x45c) |  `CORE`  | https://rpc.coredao.org                                                           | [scan.coredao.org](https://scan.coredao.org/)                                                      | [https://stake.coredao.org/](https://stake.coredao.org/) (Supports Bitcoin Mainnet)                                          | —                                                                                                                                                |
 | **Testnet** | 1114 (0x45a) | `tCORE2` | [https://rpc.test2.btcs.network](https://rpc.test2.btcs.network/) | [https://scan.test2.btcs.network](https://scan.test2.btcs.network) | [https://scan.test2.btcs.network/faucet](https://scan.test2.btcs.network/faucet) (Supports Bitcoin Testnet4) | [https://scan.test2.btcs.network/faucet](https://scan.test2.btcs.network/faucet) |
 
-⚠️ **Note**: Core Testnet **1115 is deprecated**. Always use **1114** for testing.
+⚠️ **Note**: Core Testnet **1115 is deprecated**. Utilisez toujours **1114** pour les tests.
 
-For more details on network configuration, refer [here](https://docs.coredao.org/docs/Dev-Guide/network-config%20).
+Pour plus de détails sur la configuration du réseau, consultez [here](https://docs.coredao.org/docs/Dev-Guide/network-config%20).
 
 ## Staking Tools
 
-- **Core Official Staking Websites**
+- **Sites officiels de staking Core**
   - [Mainnet Staking Site](https://stake.coredao.org/) (Supports Bitcoin Mainnet)
   - [Testnet Staking Site](https://stake.test2.btcs.network/) (Supports Bitcoin Testnet 4)
 
@@ -99,9 +99,9 @@ For more details on network configuration, refer [here](https://docs.coredao.org
 
 ## Smart Contracts & ABIs
 
-All verified ABIs and addresses are in [core-genesis-contracts](https://github.com/coredao-org/core-genesis-contract).
+Tous les ABIs et adresses vérifiés se trouvent dans [core-genesis-contracts](https://github.com/coredao-org/core-genesis-contract).
 
-| Contract                                                                                                                            | Role                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Contrat                                                                                                                             | Role                                                                                                                                                                                                                                                                                                                                                                                                           |
 | ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [PledgeAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/PledgeAgent.sol)       | This contract manages user delegation, including both the delegation of CORE from token holders and the delegation of PoW from Bitcoin miners. This contract is deprecated as of version 1.0.12 and has been replaced by Stakehub.sol and other agent contracts.                                                               |
 | [StakeHub.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/StakeHub.sol)             | This contract deals with the overall hybrid score and reward distribution logics. It replaces the existing role of PledgeAgent.sol to interact with CandidateHub.sol and other protocol contracts during the turnround process.                                                                                                                |
@@ -162,20 +162,20 @@ To redeem staked BTC after the timelock expires, please refer to the following s
 
 #### Relaying BTC Staking Transaction
 
-Relayers, part of the Core blockchain infrastructure, transmit Bitcoin stake and redeem transactions from the Bitcoin network to the Core network. Additionally, users can transmit Bitcoin transactions to the Core network independently if they choose to. To transmit a stake transaction, [BitcoinStake.delegate()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L158) method should be called. To transmit a redeem transaction [BitcoinStake.undelegate()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L206) method should be called.
+Relayers, part of the Core blockchain infrastructure, transmit Bitcoin stake and redeem transactions from the Bitcoin network to the Core network. De plus, les utilisateurs peuvent envoyer des transactions Bitcoin au réseau Core de façon indépendante s’ils le souhaitent. Pour transmettre une transaction de stake,[BitcoinStake.delegate()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L158) doit être appelée. Pour transmettre une transaction de rachat()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L206) la façon de l’invoquer.
 
-#### Transfer BTC Stake
+#### Transférer le stake BTC
 
-Core supports transferring staked BTC assets to a different validator. To move BTC stake to a new validator, call [BitcoinStake.transfer()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L353) method:
+Oui, Core permet de déplacer des BTC mis en stake vers un autre validateur. Pour transférer votre stake BTC vers un nouveau validateur, il suffit d’appeler la fonction[BitcoinStake.transfer()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L353) method:
 
 `function transfer(bytes32 txid, address targetCandidate) external;`
 
-- **Parameters:** staked BTC transaction ID (`txid`) and target validator address.
-- **Note:** Unlike CORE transfers, BTC transfers result in the loss of rewards for the transfer day.
+- **Paramètres :** identifiant de la transaction BTC mise en stake (`txid`) et adresse du validateur cible.
+- **Note:** Contrairement aux transferts CORE, les transferts BTC entraînent la perte des récompenses pour le jour du transfert.
 
-### 3. Claim Rewards
+### 3. Réclamer les récompenses
 
-To collect accrued rewards, call [StakeHub.claimReward()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/StakeHub.sol#L228) method:
+Pour récupérer les récompenses accumulées, appelez la méthode[StakeHub.claimReward()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/StakeHub.sol#L228):
 
 `function claimReward() external returns (uint256[] memory rewards);`
 
