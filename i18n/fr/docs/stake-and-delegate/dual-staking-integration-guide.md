@@ -101,68 +101,68 @@ Pour plus de détails sur la configuration du réseau, consultez [here](https://
 
 Tous les ABIs et adresses vérifiés se trouvent dans [core-genesis-contracts](https://github.com/coredao-org/core-genesis-contract).
 
-| Contrat                                                                                                                             | Role                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [PledgeAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/PledgeAgent.sol)       | This contract manages user delegation, including both the delegation of CORE from token holders and the delegation of PoW from Bitcoin miners. This contract is deprecated as of version 1.0.12 and has been replaced by Stakehub.sol and other agent contracts.                                                               |
-| [StakeHub.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/StakeHub.sol)             | This contract deals with the overall hybrid score and reward distribution logics. It replaces the existing role of PledgeAgent.sol to interact with CandidateHub.sol and other protocol contracts during the turnround process.                                                                                                                |
-| [CoreAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/CoreAgent.sol)           | This contract handles CORE staking.                                                                                                                                                                                                                                                                                                                                                            |
-| [BitcoinAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BitcoinAgent.sol)     | This contract handles BTC staking. It interacts with BitcoinStake.sol for non-custodial BTC staking correspondingly.                                                                                                                                                                                                                                           |
-| [BitcoinStake.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BitcoinStake.sol)     | This contract handles non-custodial BTC staking.                                                                                                                                                                                                                                                                                                                                               |
-| [BTCLightClient.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BtcLightClient.sol) | This contract implements a BTC light client on the Core blockchain. Relayers transmit BTC block headers to Core by calling this contract. It also calculates powers of BTC miners in each round, which is used to calculate the hybrid score and reward distribution. It also provides support to verify Bitcoin transactions for BTC staking. |
-| [`HashPowerAgent.sol`](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/HashPowerAgent.sol)               | This contract handles Bitcoin hash power staking (measured in BTC blocks).                                                                                                                                                                                                                                                                                                  |
+| Contrat                                                                                                                             | Role                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [PledgeAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/PledgeAgent.sol)       | Ce contrat gère la délégation des utilisateurs, incluant à la fois la délégation de CORE par les détenteurs de jetons et la délégation de puissance de travail (PoW) des mineurs de Bitcoin. Ce contrat est obsolète depuis la version 1.0.12 et a été remplacé par Stakehub.sol ainsi que par d’autres contrats d’agent.                                             |
+| [StakeHub.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/StakeHub.sol)             | Ce contrat gère la logique globale du score hybride et la distribution des récompenses. Il remplace le rôle de PledgeAgent.sol pour interagir avec CandidateHub.sol et d’autres contrats du protocole pendant le processus de turnround.                                                                                                                                                                 |
+| [CoreAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/CoreAgent.sol)           | Ce contrat gère le staking de CORE.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [BitcoinAgent.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BitcoinAgent.sol)     | Ce contrat gère le staking de BTC. Ce contrat interagit avec BitcoinStake.sol pour permettre le staking non‑custodial de BTC.                                                                                                                                                                                                                                                                                            |
+| [BitcoinStake.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BitcoinStake.sol)     | Ce contrat gère le staking non‑custodial de BTC.                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [BTCLightClient.sol](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/BtcLightClient.sol) | Ce contrat implémente un client léger BTC directement sur la blockchain Core. Les relayers transmettent les en‑têtes de blocs BTC à Core en appelant ce contrat. Il calcule également les puissances des mineurs BTC à chaque tour, utilisées pour le score hybride et la répartition des récompenses. Ce contrat permet également de vérifier les transactions Bitcoin afin de soutenir le staking BTC. |
+| [`HashPowerAgent.sol`](https://github.com/coredao-org/core-genesis-contract/blob/master/contracts/HashPowerAgent.sol)               | Ce contrat gère le staking de puissance de hachage Bitcoin, (mesurée en blocs BTC).                                                                                                                                                                                                                                                                                                                                                   |
 
-## Staking CORE and BTC Programmatically
+## Staking CORE et BTC de façon programmatique
 
-This section explains how to stake assets **programmatically** on the Core network. As of Core protocol version 1.1.12, Core supports staking of CORE and BTC tokens.
+Cette section explique comment staker des actifs de façon **programmatique** sur le réseau Core. Depuis la version 1.1.12, du protocole Core, le réseau Core permet le staking des jetons CORE et BTC.
 
-### 1. CORE Native Token
+### 1. Jeton natif CORE
 
 #### Stake CORE
 
-To stake CORE, call [CoreAgent.delegateCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L166) method:  
+Pour staker du CORE, il suffit [CoreAgent.delegateCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L166) method:  
 `function delegateCoin(address candidate) external payable;`
 
-- `candidate`: operator address of a registered and active validator (does not need to be elected).
-- `msg.value`: amount of CORE to stake.
+- `candidate`: adresse de l’opérateur d’un validateur enregistré et actif (il n’est pas nécessaire qu’il soit élu).
+- `msg.value`: montant de CORE à staker.
 
-#### Unstake CORE
+#### Pour retirer votre mise
 
-To withdraw staked CORE, call [CoreAgent.undelegateCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L179):  
+Pour retirer le CORE staké [CoreAgent.undelegateCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L179):  
 `function undelegateCoin(address candidate, uint256 amount) public;`
 
-- **Parameters:** validator address and amount to unstake.
-- Note: Rewards are not automatically sent when unstaking. Call [StakeHub.claimReward()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/StakeHub.sol#L228) separately to claim them.
+- **Parameters:** l'adresse du validateur (candidate) et le montant de Core à désengager.
+- Notez: les récompenses restent sur le contrat et ne sont pas envoyées automatiquement lors du unstaking. Call [StakeHub.claimReward()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/StakeHub.sol#L228) separately to claim them.
 
-#### Transfer CORE Stake
+#### Transférer votre mise de CORE
 
-To move stake between validators without losing rewards, call [CoreAgent.transferCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L191):  
+Pour déplacer votre mise d’un validateur à un autre sans perdre les récompenses accumulées [CoreAgent.transferCoin()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/CoreAgent.sol#L191):  
 `function transferCoin(address sourceCandidate, address targetCandidate, uint256 amount) public;`
 
-- **Parameters:** source validator, target validator, and amount of CORE tokens to transfer.
-- Note: the target validator must be active.
+- **Parameters:** source validator, target validator, et montant de tokens CORE à transférer.
+- Notez: le validateur cible doit être actif.
 
 ### 2. Bitcoin (BTC)
 
-Bitcoin staking requires constructing a native BTC transaction that:
+Le staking de Bitcoin nécessite de construire une transaction BTC native qui :
 
-- Locks UTXOs with **CheckLockTimeVerify (CLTV)**, and
-- Includes validator and reward address metadata in an **`OP_RETURN`** output.
+- Verrouille les UTXO avec **CheckLockTimeVerify (CLTV)**, et
+- Inclut les métadonnées du validateur et de l'adresse de récompense dans une sortie **`OP_RETURN`** .
 
-For more information on how to stake and redeem Bitcoin assets on the Core blockchain, refer to [BTC Staking Design](https://docs.coredao.org/docs/Learn/products/btc-staking/design).
+Pour plus d'informations sur la façon de mettre en jeu et de racheter des actifs Bitcoin sur la blockchain Core, consultez [BTC Staking Design](https://docs.coredao.org/docs/Learn/products/btc-staking/design).
 
-Sample repository on how to do it programmatically using TypeScript: [btc-staking-tool](https://github.com/coredao-org/btc-staking-tool).
+Exemple de dépôt (repository) montrant comment le faire programmatiquement en utilisant TypeScript: [btc-staking-tool](https://github.com/coredao-org/btc-staking-tool).
 
 #### Stake BTC (Timelock)
 
-To submit a BTC stake transaction on Core, please refer to the following sample [Stake script](https://github.com/coredao-org/btc-staking-tool/blob/main/src/stake.ts).
+ Pour soumettre une transaction de stake BTC sur Core, veuillez consulter l’exemple suivant [Stake script](https://github.com/coredao-org/btc-staking-tool/blob/main/src/stake.ts).
 
 #### Redeem BTC
 
-To redeem staked BTC after the timelock expires, please refer to the following sample [Redeem script](https://github.com/coredao-org/btc-staking-tool/blob/main/src/redeem.ts).
+Pour racheter les BTC mis en jeu après l’expiration du timelock, veuillez consulter l’exemple suivant [Redeem script](https://github.com/coredao-org/btc-staking-tool/blob/main/src/redeem.ts).
 
-#### Relaying BTC Staking Transaction
+#### Relayer la transaction de staking BTC
 
-Relayers, part of the Core blockchain infrastructure, transmit Bitcoin stake and redeem transactions from the Bitcoin network to the Core network. De plus, les utilisateurs peuvent envoyer des transactions Bitcoin au réseau Core de façon indépendante s’ils le souhaitent. Pour transmettre une transaction de stake,[BitcoinStake.delegate()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L158) doit être appelée. Pour transmettre une transaction de rachat()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L206) la façon de l’invoquer.
+Les relayers, qui font partie de l’infrastructure de la blockchain Core, transmettent les transactions de mise en jeu et de rachat de Bitcoin du réseau Bitcoin au réseau Core. . De plus, les utilisateurs peuvent envoyer des transactions Bitcoin au réseau Core de façon indépendante s’ils le souhaitent. Pour transmettre une transaction de stake,[BitcoinStake.delegate()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L158) doit être appelée. Pour transmettre une transaction de rachat()](https://github.com/coredao-org/core-genesis-contract/blob/v1.1.10/contracts/BitcoinStake.sol#L206) la façon de l’invoquer.
 
 #### Transférer le stake BTC
 
