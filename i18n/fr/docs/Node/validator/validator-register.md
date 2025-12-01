@@ -43,7 +43,7 @@ Fournissez les informations pour chaque champ du formulaire :
 - Adresse de consensus : l'adresse du validateur que vous avez définie lors de l'initialisation de votre nœud de validation.
 - Adresse de frais : l'adresse utilisée pour collecter les frais de commission.
 - **Commission :** les revenus sont partagés entre le validateur et ses délégateurs, avec la commission déterminant le pourcentage de revenu pris par le validateur.
-- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. The minimum deposit for testnet and mainnet is **50,000 CORE**.
+- **Dépôt total :** le dépôt en CORE remboursable, bloqué pendant la prestation des services de validation. Le dépôt minimum pour le testnet et le mainnet est de **50,000 CORE**.
 
 5. Soumettre l'inscription : Une fois que vous avez rempli toutes les informations requises, cliquez sur Enregistrer pour soumettre votre validateur à l'inscription.
 
