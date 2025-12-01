@@ -15,7 +15,7 @@ Les pénalités de slashing sont généralement appliquées lorsqu'un nœud ne p
 - Si un validateur ne parvient pas à miner **50 blocs** consécutifs, les récompenses en tokens CORE accumulées sont complètement supprimées.
 - Si un nœud validateur ne parvient pas à miner les **49 premiers blocs** d'un tour, puis manque le dernier bloc du même tour, cela entraînera le slashing de l'ensemble des récompenses en tokens CORE que le validateur a accumulées jusqu'à présent.
 - S'il échoue dans les **50** derniers blocs du round, il perd tout ce qu'il a gagné.
-- If a validator fails to mine **150 blocks** in a row, they surrender their share of the daily CORE token rewards, they lose **10%** of the deposit made to become a validator, i.e., 5,000 CORE, and they are jailed for **three** days, which means they aren’t eligible to be elected to the validator set.
+- Si un validateur ne parvient pas à miner **150 blocs** d’affilée, il perd sa part des récompenses quotidiennes en tokens CORE, il perd **10 %** du dépôt requis pour devenir validateur, soit 5 000 CORE, et il est mis en prison pendant **trois** jours, ce qui le rend inéligible à être élu dans le jeu de validateurs.
 
 ## Double Signature
 
@@ -30,7 +30,7 @@ N'importe qui peut soumettre une demande de slash avec la preuve d'une activité
 
 Si la preuve est valide :
 
-1. **50,000 CORE** i.e., the entire self-margined CORE of the validator will be slashed.
+1. **50 000 CORE**, c’est‑à‑dire la totalité du CORE auto‑mis en jeu du validateur, sera confisquée (slashed).
 2. Le validateur puni sera emprisonné et exclu du réseau pour toujours
 3. **500 tokens CORE** seront attribués au soumetteur de la demande comme récompense
 4. Le reste des tokens CORE sera transféré dans le pool de récompenses du système
