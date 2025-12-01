@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Exécution des nœuds complets Core sur le Testnet de Core
+# Exécution des nœuds complets Core sur le Core Testnet
 
 ---
 
