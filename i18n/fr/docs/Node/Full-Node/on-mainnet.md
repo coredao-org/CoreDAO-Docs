@@ -4,7 +4,7 @@ hide_table_of_contents: false
 sidebar_position: 2
 ---
 
-# Exécution des nœuds complets Core sur le Mainnet de Core
+# Exécution des nœuds complets Core sur le Core Mainnet
 
 ---
 
@@ -28,7 +28,7 @@ Il existe plusieurs exigences système pour configurer un nœud complet sur Core
 
 ### Spécifications matérielles pour les nœuds complets sur le Mainnet de Core
 
-Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Pour les nœuds complets sur le **mainnet de Core**, nous recommandons les spécifications matérielles minimales suivantes :
+Les nœuds Core effectuent plusieurs tâches nécessitant beaucoup de ressources, comme le stockage des données de la blockchain, la vérification des blocs ou des transactions, la communication avec les nœuds pairs et la réponse aux demandes réseau. Pour les nœuds complets sur le **Core Mainnet**, nous recommandons les spécifications matérielles minimales suivantes :
 
 | Requis           | Détails                                                                       |
 | ---------------- | ----------------------------------------------------------------------------- |
