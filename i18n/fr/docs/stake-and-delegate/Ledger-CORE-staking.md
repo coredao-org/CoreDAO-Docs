@@ -163,7 +163,7 @@ Pour être éligible aux récompenses, vous devez terminer un cycle de mise en j
 
 ## FAQs
 
-Avez-vous d'autres questions? Check out the [FAQs](../FAQs/ledger-core-faqs.md) section for answers to common issues, troubleshooting, and best practices.
+Avez-vous d'autres questions? Consultez la section [FAQs](../FAQs/ledger-core-faqs.md) pour obtenir des réponses aux problèmes courants, du dépannage et des bonnes pratiques.
 
 ## Conclusion
 
