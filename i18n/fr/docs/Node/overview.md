@@ -40,7 +40,7 @@ Selon vos objectifs, différentes configurations de nœuds sont possibles sur le
 
 2. **Validators:**
    - **Role:** Les validateurs sont essentiels pour sécuriser le réseau en produisant des blocs et en validant les transactions dans le cadre du mécanisme de consensus de la Core blockchain. Ce sont essentiellement des nœuds complets fonctionnant en mode validateur.
-   - **Requirements:** Validators must stake a minimum of **50,000 CORE tokens** to participate, aligning their financial incentives with the network's performance and security.
+   - **Exigences:** Les validateurs doivent mettre en jeu un minimum de **50 000 jetons CORE** pour participer, alignant ainsi leurs incitations financières avec la performance et la sécurité du réseau.
    - **Incentives:** Les validateurs gagnent des récompenses en jetons CORE pour leur rôle actif dans la maintenance et la sécurisation des opérations du réseau.
 
 3. **Nœuds RPC :**
