@@ -92,7 +92,7 @@ Una vez que el período de timelock del BTC ha expirado, los usuarios son elegib
 
 1. En el modal mostrado de "**Redeem BTC**", verifica la dirección de BTC staking, el monto de BTC que será redimido y la Receiving Bitcoin address. Para redimir el BTC, debes conectarte a la misma dirección de Bitcoin que utilizaste para iniciar la transacción de staking.
 
-2. Configura tu dirección de recepción de Bitcoin para recibir el BTC desbloqueado. Esta **debe** ser la misma dirección que inició la transacción de staking de Bitcoin y debe ser del tipo Native Segwit.
+2. Configura tu dirección de recepción de Bitcoin para recibir el BTC desbloqueado. Esta **debe** ser la misma dirección que inició la transacción de staking de Bitcoin y debe ser del tipo Native Segwit. Refer to the [FAQ section](https://docs.coredao.org/docs/FAQs/ledger-core-faqs#2-how-can-i-find-my-original-staking-address), to know how to find the original BTC addreess that initiated the staking transaction.
 
 3. Establece la prioridad de velocidad de la transacción y haz clic en "**Create Transaction**".
 
