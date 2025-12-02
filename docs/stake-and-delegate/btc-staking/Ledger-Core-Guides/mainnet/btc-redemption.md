@@ -83,7 +83,7 @@ After the timelock period for BTC has expired, users are eligible to redeem or r
 ### Step #4: Verify BTC Staking and Redemption Details
 1. On the displayed "**Redeem BTC**" modal, cross-check the BTC staking address, the BTC Amount that will be redeemed, and the Receiving Bitcoin address. To redeem the BTC, you must connect to the same Bitcoin address as the one initiating the Bitcoin staking transaction. 
 
-2. Set your Receiving Bitcoin Address to receive the unlocked BTC. This **must** be the same as the address that initiated the Bitcoin staking transaction and **must** be the Native Segwit address type. 
+2. Set your Receiving Bitcoin Address to receive the unlocked BTC. This **must** be the same as the address that initiated the Bitcoin staking transaction and **must** be the Native Segwit address type. Refer to the [FAQ section](https://docs.coredao.org/docs/FAQs/ledger-core-faqs#2-how-can-i-find-my-original-staking-address), to know how to find the original BTC addreess that initiated the staking transaction. 
 
 3. Set your transaction speed priority, and click "**Create Transaction**".
 

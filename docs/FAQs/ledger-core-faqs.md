@@ -11,9 +11,9 @@ sidebar_position: 2
 
 Ledger devices automatically generate a new address each time you connect them. This behavior can cause redemption transactions to fail because the redemption process requires the original staking address that was used to initiate the BTC staking transaction. Therefore, it is recommended always to record the Bitcoin address you used for staking.
 
-### 2. How can I find my original staking address?
+### 2. How can I find my original BTC staking address?
 
-There are multiple ways to locate your original Bitcoin staking address.
+There are multiple ways to locate your original Bitcoin staking address. The most easiest workaround to find the original BTC staking address is using the BTC Staking Tx Decoder by Core, the steps are as follows:
 
 1.  Navigate to your BTC staking records on the [My Staking](https://stake.coredao.org/my-staking#btc) dashboard on the [Core Staking Website](https://stake.coredao.org/staking).
 
@@ -40,6 +40,8 @@ There are multiple ways to locate your original Bitcoin staking address.
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-3.png)
 </p>
+
+**Note:** If the user wants to redeem re-delegated BTC assets, then the they will have to use the original BTC address that was the initiator of the staking transaction, i.e., the first transaction in the chain of transactions for the currently locked asset.
 
 ### 3. Why does my redemption transaction fail?
 
