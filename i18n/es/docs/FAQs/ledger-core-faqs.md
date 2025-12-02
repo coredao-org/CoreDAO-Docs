@@ -12,9 +12,9 @@ sidebar_position: 2
 
 Los dispositivos Ledger generan automáticamente una nueva dirección cada vez que los conectas. Este comportamiento puede ocasionar que las transacciones de redención fallen, ya que el proceso de redención requiere la dirección de staking original que fue utilizada para iniciar la transacción de BTC staking. Por lo tanto, se recomienda siempre registrar la dirección de Bitcoin que utilizaste para el staking.
 
-### 2. ¿Cómo puedo encontrar mi dirección de staking original?
+### 2. How can I find my original BTC staking address?
 
-Existen múltiples formas de localizar tu dirección original de Bitcoin staking.
+There are multiple ways to locate your original Bitcoin staking address. The most easiest workaround to find the original BTC staking address is using the BTC Staking Tx Decoder by Core, the steps are as follows:
 
 1. Navega a tus registros de BTC staking en el panel [My Staking](https://stake.coredao.org/my-staking#btc) en el [sitio web de Core Staking](https://stake.coredao.org/staking).
 
@@ -41,6 +41,8 @@ Existen múltiples formas de localizar tu dirección original de Bitcoin staking
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-3.png)
 </p>
+
+**Note:** If the user wants to redeem re-delegated BTC assets, then the they will have to use the original BTC address that was the initiator of the staking transaction, i.e., the first transaction in the chain of transactions for the currently locked asset.
 
 ### 3. ¿Por qué falla mi transacción de redención?
 
