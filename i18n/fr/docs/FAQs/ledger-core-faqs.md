@@ -12,9 +12,9 @@ sidebar_position: 2
 
 Les appareils Ledger génèrent automatiquement une nouvelle adresse chaque fois que vous les connectez. Ce comportement peut entraîner l'échec des transactions de remboursement parce que le processus de remboursement nécessite l'adresse de staking originale qui a été utilisée pour initier la transaction de staking BTC. Il est donc recommandé de toujours enregistrer l'adresse Bitcoin que vous avez utilisée pour le staking.
 
-### 2. Comment puis-je trouver mon adresse de staking originale?
+### 2. How can I find my original BTC staking address?
 
-Il existe plusieurs façons de localiser votre adresse de staking Bitcoin originale.
+There are multiple ways to locate your original Bitcoin staking address. The most easiest workaround to find the original BTC staking address is using the BTC Staking Tx Decoder by Core, the steps are as follows:
 
 1. Accédez à vos enregistrements de [My Staking](https://stake.coredao.org/my-staking#btc) sur le tableau de bord [Core Staking Website](https://stake.coredao.org/staking).
 
@@ -41,6 +41,8 @@ Il existe plusieurs façons de localiser votre adresse de staking Bitcoin origin
 <p align="center" style={{zoom:"40%"}}>
 ![core-scan-explorer](../../static/img/ledger-core/btc-tx-decoder-3.png)
 </p>
+
+**Note:** If the user wants to redeem re-delegated BTC assets, then the they will have to use the original BTC address that was the initiator of the staking transaction, i.e., the first transaction in the chain of transactions for the currently locked asset.
 
 ### 3. Pourquoi ma transaction de remboursement échoue-t-elle?
 
