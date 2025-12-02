@@ -92,7 +92,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 1. Sur le modal "**Redeem BTC**" affiché, vérifiez en croisant les informations l'adresse de mise en jeu de BTC, le montant de BTC qui sera récupéré et l'adresse Bitcoin de réception. Pour récupérer les Bitcoins, vous devez vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking Bitcoin.
 
-2. Définissez votre adresse de réception Bitcoin pour recevoir les BTC déverrouillés. Cette adresse **doit** être identique à celle qui a initié la transaction de staking Bitcoin et **doit** être de type d'adresse Native Segwit.
+2. Définissez votre adresse de réception Bitcoin pour recevoir les BTC déverrouillés. Cette adresse **doit** être identique à celle qui a initié la transaction de staking Bitcoin et **doit** être de type d'adresse Native Segwit. Refer to the [FAQ section](https://docs.coredao.org/docs/FAQs/ledger-core-faqs#2-how-can-i-find-my-original-staking-address), to know how to find the original BTC addreess that initiated the staking transaction.
 
 3. Définissez la priorité de vitesse de transaction, puis cliquez sur "**Create Transaction**".
 
