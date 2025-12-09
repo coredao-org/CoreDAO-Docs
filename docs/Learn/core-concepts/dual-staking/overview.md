@@ -61,7 +61,7 @@ Then your thresholds would be:
 
 | **Tier**     | **CORE Required** |
 | ------------ | ----------------- |
-| Boost Tier   | 850,000 CORE      |
+| Boost Tier   | 85,000 CORE      |
 | Super Tier   | 255,000 CORE      |
 | Satoshi Tier | 680,000 CORE      |
 
