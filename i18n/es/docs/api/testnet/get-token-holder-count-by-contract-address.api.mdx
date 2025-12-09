@@ -1,0 +1,34 @@
+---
+id: get-token-holder-count-by-contract-address
+title: Get Token Holder Count by Contract Address
+description: Returns the number of token holders for a given contract address.
+sidebar_label: Get Token Holder Count by Contract Address
+hide_title: true
+hide_table_of_contents: true
+api: eJzNVU1v2zgQ/SsET1tAa9luukl1M7JBG6DYXTTpKQgKmhpbbCRSnRk6MQz992Io2XVs92M/DuuDZVMzwzfvDR83ugSy6Fp2wetCvweO6ElxBcrHZg6owkJxeACvqlCXgKQWAZVRS7cCr2zwjMayMmWJQDTSmW4NmgYYkHRxt9HeNKALvY0cAnWmnWz4OQKudaYRPkeHUOqCMUJ2AOu2gqOtErAKBnAcFAKjgxUMQJUN0bOgFVBkK2iMLjaa163gIUbnl7rLNDyZpq1lbfx0MZlbMOOXv51flBMLi7OLl+PXZ9Pp9Px8Oi5fnU2Nmby6mJzrLtt1Zlr3AOu/19Dsr2v1AOuey8gVeHbWyMufBqu7e9mF2uAJSIKn47E8Dqjb026gZEtUqShaC0SLWNdr2Vg4Bs9SxbRtPUDKP5GU2hzjCvNPYFk0x9ACsuuBEBuOdIz/kIWbFKdsKGGr5rahkTSLQLHmvTrOMywBjwrd/mBcpfK3BrbLdANEZgk/BjwrSyc/Ta2cXwRsEj8qoBpKKDMPkQ87SZ9Mn53S59qvTO3KE+ONajslFEUMKP8fEgFiwOdC/TSBVyl3SxY8tbVx3vllKuyI4o6uVJWrUOpCLyE1YLjShc5N6/Ikcf/9sRf6Y5ptOTyAq633RKx1oSvmlopcEkcMxNPRnC2NPPBjwIc8HSSRM8F3nE7XrHXq92BjA54Tw8ezcCKCARv6c3EDuHJWykT0BQdxu9pZ8JQoGnxj1hpbgZqOxjrbQ1rk+ePj48ikt6OAy3xIpfzd9eXVHzdXv0pKl2lps8cy6RfaQNwYv7fHG2DVO8Db3gEukwPM1+pyO2+znSE/62/zddL+k1thmAuGJ86T6gI4db0ZlL0TJ5VIqbt9Plf3PtNVIJbYzWZuCD5g3XWy3NuuaF46MvNajHdhajp03v22fnk/ePQL9e8vmJP9yb1w6upbmTr2Hp79Q8Dfv0C+A2Z3W33FcC9/0AkIXdzdd5muwJSAic4+a2YttLyXdeQ9UmV3YN9c3equ+wJn7Oeh
+sidebar_class_name: get api-method
+info_path: docs/api/testnet/api-documentation
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading as={"h1"} className={"openapi__heading"} children={"Get Token Holder Count by Contract Address"} />
+
+<MethodEndpoint method={"get"} path={"/api/token/token_holder_count"} context={"endpoint"} />
+
+Returns the number of token holders for a given contract address.
+
+<Heading id={"request"} as={"h2"} className={"openapi-tabs__heading"} children={"Request"} />
+
+<ParamsDetails parameters={[{"name":"contractaddress","in":"query","required":true,"description":"The contract address of the token to retrieve holder count for.","schema":{"type":"string"},"example":"0x81bcea03678d1cef4830942227720d542aa15817"},{"name":"apikey","in":"query","required":true,"description":"API key for authentication.","schema":{"type":"string"},"example":""}]} />
+
+<RequestSchema title={"Body"} body={undefined} />
+
+<StatusCodes id={undefined} label={undefined} responses={{"200":{"description":"Token holder count retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","description":"Status code of the response."},"result":{"type":"integer","description":"The number of token holders for the given contract address."},"message":{"type":"string","description":"Additional information or message about the response."}}}}}},"400":{"description":"Invalid contract address or API key supplied.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"string","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}} />
