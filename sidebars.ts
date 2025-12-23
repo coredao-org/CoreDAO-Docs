@@ -111,7 +111,7 @@ const sidebars: SidebarsConfig = {
             {
               type: "category",
               collapsed: true,
-              label: "lstBTC",
+              label: "lstBTC (Deprecated)",
               items: ["Learn/liquid-staking/lstBTC/overview"],
             },
           ],
