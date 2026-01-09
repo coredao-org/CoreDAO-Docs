@@ -48,7 +48,6 @@ Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la bl
 
 - **Ankr:** https://rpc.ankr.com/core
 - **1RPC:** https://1rpc.io/core
-- **INFSTONES:** https://core.public.infstones.com
 - **IceCreamSwap:** https://rpc-core.icecreamswap.com
 - **ZAN Node:** https://api.zan.top/core-mainnet
 - **dRPC:** https://core.drpc.org | wss://core.drpc.org
