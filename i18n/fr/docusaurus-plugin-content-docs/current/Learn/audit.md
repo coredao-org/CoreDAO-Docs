@@ -19,7 +19,6 @@ De plus, Core adopte une approche proactive en matière de sécurité continue, 
 - [Halborn](https://github.com/HalbornSecurity/PublicReports/blob/master/Solidity%20Smart%20Contract%20Audits/CoreDAO_Genesis_Smart_Contract_Security_Audit_Report_Halborn_Final.pdf)
 - [Least Authority](https://leastauthority.com/blog/audits/audit-of-core-dao-layer-1-smart-contracts/)
 - [Rapport d'Audit du Staking BTC](https://www.halborn.com/audits/coredao/btc-staking)
-- [Rapport d'Audit de coreBTC](https://www.halborn.com/audits/coredao/corebtc)
 - [Rapport d'Audit de la Mise à jour 1.0.9](https://www.halborn.com/audits/coredao/109-upgrade-release)
 - [Audit Report of BTC Hardfork - Enhancement / Update](https://www.halborn.com/audits/coredao/btc-hardfork-enhancement-update)
 

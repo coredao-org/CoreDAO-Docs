@@ -108,12 +108,6 @@ const sidebars: SidebarsConfig = {
                 "Learn/liquid-staking/stCore/stCore-on-Core",
               ],
             },
-            {
-              type: "category",
-              collapsed: true,
-              label: "lstBTC (Deprecated)",
-              items: ["Learn/liquid-staking/lstBTC/overview"],
-            },
           ],
         },
                 {

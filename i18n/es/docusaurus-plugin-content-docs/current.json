@@ -67,10 +67,6 @@
     "message": "btc-staking",
     "description": "The label for category btc-staking in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.coreBTC": {
-    "message": "coreBTC",
-    "description": "The label for category coreBTC in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.stCore": {
     "message": "stCore",
     "description": "The label for category stCore in sidebar tutorialSidebar"
@@ -154,10 +150,6 @@
   "sidebar.learnSidebar.category.How To Guides": {
     "message": "Guias Practicas",
     "description": "The label for category How To Guides in sidebar learnSidebar"
-  },
-  "sidebar.learnSidebar.category.coreBTC (Sunsetted)": {
-    "message": "coreBTC (Descontinuado)",
-    "description": "The label for category coreBTC (Sunsetted) in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Economics": {
     "message": "Economia",
@@ -322,18 +314,6 @@
   "sidebar.tutorialSidebar.category.testnet": {
     "message": "testnet",
     "description": "The label for category testnet in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.lstBTC": {
-    "message": "lstBTC",
-    "description": "The label for category lstBTC in sidebar tutorialSidebar"
-  },
-  "sidebar.tutorialSidebar.category.Mantenimiento de nodos": {
-    "message": "Mantenimiento de nodos",
-    "description": "The label for category Mantenimiento de nodos in sidebar tutorialSidebar"
-  },
-  "sidebar.learnSidebar.category.lstBTC": {
-    "message": "lstBTC",
-    "description": "The label for category lstBTC in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Security": {
     "message": "Security",

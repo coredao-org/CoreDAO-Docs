@@ -75,9 +75,8 @@ Le rendement activé par Timelock de Bitcoin de Core aide à augmenter l'efficac
 4. **Transparence:** Visibilité totale sur la chaîne de toutes les transactions et positions
 5. **Conformité:** Les produits de qualité institutionnelle sont construits sur Core
 
-Core alimente une nouvelle génération de produits financiers Bitcoin:
+Core alimente une nouvelle génération de produits financiers Bitcoin 
 
-- lstBTC (Bitcoin liquide générant des rendements)
 - ETP Bitcoin générant des rendements
 - Nouvelles stratégies avec carry positif Bitcoin
 

@@ -77,7 +77,6 @@ El rendimiento habilitado por timelocks de Bitcoin en Core mejora la eficiencia 
 
 Core impulsa una nueva generación de productos financieros en Bitcoin:
 
-- lstBTC (Bitcoin líquido y con rendimiento)
 - ETPs de Bitcoin con rendimiento
 - Estrategias novedosas con Bitcoin y positive carry
 

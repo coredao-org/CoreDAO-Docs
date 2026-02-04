@@ -47,10 +47,6 @@
     "message": "btc-staking",
     "description": "The label for category btc-staking in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.coreBTC": {
-    "message": "coreBTC",
-    "description": "The label for category coreBTC in sidebar tutorialSidebar"
-  },
   "sidebar.tutorialSidebar.category.stCore": {
     "message": "stCore",
     "description": "The label for category stCore in sidebar tutorialSidebar"
@@ -134,10 +130,6 @@
   "sidebar.learnSidebar.category.How To Guides": {
     "message": "How To Guides",
     "description": "The label for category How To Guides in sidebar learnSidebar"
-  },
-  "sidebar.learnSidebar.category.coreBTC (Sunsetted)": {
-    "message": "coreBTC (Sunsetted)",
-    "description": "The label for category coreBTC (Sunsetted) in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Economics": {
     "message": "Economics",
@@ -399,14 +391,6 @@
   "sidebar.apiSidebar.doc.Submit RedeemScript": {
     "message": "Submit RedeemScript",
     "description": "The label for the doc item Submit RedeemScript in sidebar apiSidebar, linking to the doc stakingAPI/testnet/submit-redeem-script-for-staking-transaction"
-  },
-  "sidebar.tutorialSidebar.category.lstBTC": {
-    "message": "lstBTC",
-    "description": "The label for category lstBTC in sidebar tutorialSidebar"
-  },
-  "sidebar.learnSidebar.category.lstBTC": {
-    "message": "lstBTC",
-    "description": "The label for category lstBTC in sidebar learnSidebar"
   },
   "sidebar.learnSidebar.category.Security": {
     "message": "Security",

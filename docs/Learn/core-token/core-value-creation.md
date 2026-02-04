@@ -60,4 +60,4 @@ CORE is complementing Bitcoin's value proposition for a variety of holders and u
 
 - **ETP/ETF issuers** — already holding large Bitcoin positions — are using Core to earn trustless yield on otherwise idle Bitcoin.
   - Valour's yield-bearing BTC ETP has generated 5.65% APY exclusively using Core's staking offerings.
-  - Issuers are also exploring lstBTC, the upcoming liquid, yield-bearing Bitcoin token pioneered by Maple Finance.
+  - Issuers are also exploring liquid yield-bearing Bitcoin token.

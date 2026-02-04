@@ -68,9 +68,7 @@ No matter what kind of Bitcoiner you are, Core has something for you. Core trans
 
 - **Bitcoin Miners**: Earn supplemental rewards without changing your mining operations
 
-- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields, or access liquid lstBTC with professional custody
-
-- **Institutional Traders**: Use lstBTC as capital-efficient collateral while earning Bitcoin-denominated yield
+- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields
 
 - **Structured Products Providers**: Build Bitcoin yield products using Core's institutional-grade infrastructure
 
