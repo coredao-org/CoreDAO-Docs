@@ -530,10 +530,10 @@ const config: Config = {
           label: "FAQs",
           activeBaseRegex: `/docs/`,
         },
-        {
-          type: "localeDropdown",
-          position: "right",
-        },
+        // {
+        //   type: "localeDropdown",
+        //   position: "right",
+        // },
         {
           href: "https://github.com/coredao-org",
           label: "GitHub",

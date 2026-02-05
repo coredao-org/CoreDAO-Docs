@@ -15,6 +15,7 @@
     "typecheck": "tsc"
   },
   "dependencies": {
+     "@cookbookdev/docsbot": "^4.25.8",
     "@docusaurus/core": "3.9.2",
     "@docusaurus/plugin-client-redirects": "^3.9.2",
     "@docusaurus/preset-classic": "3.9.2",
