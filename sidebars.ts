@@ -504,7 +504,7 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           collapsed: true,
-          label: "Mainnet API Endpoints",
+          label: "Mainnet Staking API Endpoints",
           link: {
             type: "generated-index",
             title: "Staking API Documentation",
@@ -517,7 +517,7 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           collapsed: true,
-          label: "Testnet API Endpoints",
+          label: "Testnet Staking API Endpoints",
           link: {
             type: "generated-index",
             title: "Staking API Documentation",

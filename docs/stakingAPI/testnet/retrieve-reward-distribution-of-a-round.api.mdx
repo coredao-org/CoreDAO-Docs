@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -42,27 +43,24 @@ Returns the reward distribution for a specific staking round, including overall 
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Request"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"round","in":"query","required":true,"description":"The round number for which reward distribution is being requested.","schema":{"type":"integer"}}]}
+  {...require("./retrieve-reward-distribution-of-a-round.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./retrieve-reward-distribution-of-a-round.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Reward distribution for the round retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"result":{"type":"object","properties":{"round":{"type":"integer","description":"The round number for which the reward distribution is reported."},"overallRewardsDistributed":{"type":"integer","description":"The total rewards distributed in the given round."},"rewardsBurnt":{"type":"integer","description":"The amount of rewards burnt in the given round."},"rewardsCommissionFees":{"type":"integer","description":"The amount of rewards used for commission fees in the given round."},"rewardsStakingSharing":{"type":"integer","description":"The amount of rewards distributed for staking sharing in the given round."}}}}}}}},"400":{"description":"An error occurred while retrieving the reward distribution.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  {...require("./retrieve-reward-distribution-of-a-round.StatusCodes.json")}
 >
   
 </StatusCodes>

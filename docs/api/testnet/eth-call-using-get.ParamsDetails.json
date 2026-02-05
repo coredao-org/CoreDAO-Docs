@@ -1,0 +1,1 @@
+{"parameters":[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"data","in":"query","description":"data","schema":{"type":"string"}},{"name":"tag","in":"query","description":"tag","schema":{"type":"string","default":"latest"}},{"name":"to","in":"query","description":"to","required":true,"schema":{"type":"string"}}]}
