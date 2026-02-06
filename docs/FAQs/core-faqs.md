@@ -69,7 +69,6 @@ To help users get started and allow developers to quickly prototype their dApps,
 
 You can contribute to the Core Community in several different ways:
 * **Contribute to Our Official Documentation:** Send a pull request with your changes to the GitHub repository of our official documentation, and our team will review them accordingly. If deemed correct, we will merge them into our official documentation.
-* **[Core Wishlist](https://github.com/coredao-org/core-community-contributions):** Build projects for the Core ecosystem. The Core Foundation has outlined a list of project categories that builders can contribute to, fostering the growth of the Core ecosystem.
 * **Builder Incentive Programs:** Core also offers builder support and incentive programs for encouraging development on the Core blockchain. Whether through [Core Starter Program](https://coredaofoundation.org/fund-your-project) or [Core Builders’ Incentive Program](https://coredao.org/initiatives/incentiveprogram), you can jumpstart your building journey on the Web3 on Core.
 
 ### 13. Does Core offer any builder support and incentive programs?
