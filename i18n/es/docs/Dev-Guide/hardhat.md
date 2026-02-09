@@ -19,7 +19,7 @@ Before you begin, ensure you have:
 
 - Node.js [v18.0.0 or later](https://nodejs.org/en/) installed
 - Git installed on your system
-- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://faucet.test.btcs.network/))
+- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://scan.test2.btcs.network/faucet)
 
 ### Clone the Starter Kit
 
