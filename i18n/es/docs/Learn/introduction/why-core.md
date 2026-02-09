@@ -75,11 +75,7 @@ El rendimiento habilitado por timelocks de Bitcoin en Core mejora la eficiencia 
 4. **Transparencia:** Visibilidad completamente en cadena de todas las transacciones y posiciones
 5. **Cumplimiento:** Productos de nivel institucional se construyen sobre Core
 
-Core impulsa una nueva generación de productos financieros en Bitcoin:
-
-- lstBTC (Bitcoin líquido y con rendimiento)
-- ETPs de Bitcoin con rendimiento
-- Estrategias novedosas con Bitcoin y positive carry
+Core powers a new generation of Bitcoin financial products including yield-bearing Bitcoin ETPs and novel strategies with positive carry Bitcoin.
 
 ## El Ciclo Virtuoso de Bitcoin y Core
 
