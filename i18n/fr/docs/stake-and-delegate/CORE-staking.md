@@ -9,7 +9,7 @@ sidebar_position: 2
 
 ---
 
-La Preuve d'Enjeu Déléguée (DPoS) est l'un des 3 composants fondamentaux du mécanisme de consensus Satoshi Plus, jouant un rôle clé dans l'amélioration de la fonctionnalité, de la sécurité et de l'efficacité du réseau blockchain. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.\
+La Preuve d'Enjeu Déléguée (DPoS) est l'un des 3 composants fondamentaux du mécanisme de consensus Satoshi Plus, jouant un rôle clé dans l'amélioration de la fonctionnalité, de la sécurité et de l'efficacité du réseau blockchain. Dans le réseau Core, le DPoS est mis en œuvre via les délégations de CORE, permettant aux détenteurs de CORE de déléguer leurs tokens à des validateurs de confiance. Ce processus non seulement aide à sécuriser le réseau, mais permet également aux participants de partager les récompenses du système.  
 This process not only helps secure the network but also enables participants to share in the system’s rewards.\
 In this guide, we provide a step-by-step walkthrough on how to delegate your CORE tokens to validators within the Core network, empowering you to actively contribute to the ecosystem while reaping the benefits of your investment.
 
