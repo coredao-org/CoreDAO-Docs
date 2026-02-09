@@ -1,0 +1,13 @@
+{
+    "parameters": [
+        {
+            "name": "coreAddress",
+            "in": "query",
+            "required": true,
+            "description": "The core address to retrieve staking information for.",
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}
