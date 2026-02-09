@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -40,8 +41,8 @@ Submit a RedeemScript so Core relayers can help transmit the staking transaction
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Request"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
@@ -51,16 +52,13 @@ Submit a RedeemScript so Core relayers can help transmit the staking transaction
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={{"required":true,"content":{"application/json":{"schema":{"type":"object","properties":{"txId":{"type":"string","description":"The transaction ID of the staking transaction."},"apiKey":{"type":"string","description":"The API key for authentication."},"redeemScript":{"type":"string","description":"The RedeemScript for the staking transaction."}},"required":["txId","apiKey","redeemScript"]}}}}}
+  {...require("./submit-redeem-script-for-staking-transaction.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"RedeemScript submitted successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"message":{"type":"string","description":"Additional information or message about the response."},"data":{"type":"object","properties":{"result":{"type":"boolean","description":"Indicates whether the RedeemScript submission was successful."}}}}}}}},"400":{"description":"Invalid request data or an error occurred while processing the RedeemScript.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  {...require("./submit-redeem-script-for-staking-transaction.StatusCodes.json")}
 >
   
 </StatusCodes>
