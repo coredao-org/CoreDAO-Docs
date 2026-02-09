@@ -21,7 +21,7 @@ Le Dual Staking est spécifiquement conçu pour augmenter les rendements du stak
 
 ### 3\. Quelles sont les étapes que les clients institutionnels doivent suivre pour participer au Dual Staking ?
 
-Les clients institutionnels souhaitant bénéficier du Dual Staking _**doivent**_ staker à la fois du Bitcoin et du CORE simultanément, avec un montant de CORE staké dépassant un certain seuil pour débloquer les pourcentages de récompenses améliorés pour le staking de Bitcoin.\
+Les clients institutionnels souhaitant bénéficier du Dual Staking _**doivent**_ staker à la fois du Bitcoin et du CORE simultanément, avec un montant de CORE staké dépassant un certain seuil pour débloquer les pourcentages de récompenses améliorés pour le staking de Bitcoin.  
 De plus, ils doivent s'assurer que l'adresse de récompense CORE pour le staking de Bitcoin correspond à l'adresse de staking CORE. Cet alignement est crucial, car il vérifie que le Bitcoin et le CORE stakés appartiennent au même propriétaire. Les plateformes de staking doivent également vérifier que les adresses CORE correspondent pour s'assurer que les utilisateurs reçoivent les taux de rendement du dual staking corrects en fonction de leur activité de staking combinée.
 
 ### 4\. Pour les utilisateurs qui stakent déjà du Bitcoin et du CORE, y a-t-il quelque chose qu'ils doivent faire pour profiter du Dual Staking ?
@@ -43,8 +43,8 @@ Pour profiter pleinement du Dual Staking, les utilisateurs doivent s'assurer que
 
 ### 6\. Comment les utilisateurs équilibrent-ils CORE et Bitcoin entre les validateurs pour maximiser le rendement ?
 
-Pour que les utilisateurs voient la distribution de leur CORE, Bitcoin et Hash délégués pour chaque validateur, ils peuvent visiter le site officiel de [staking de Core](https://stake.coredao.org/). Les rendements de staking CORE et Bitcoin de chaque validateur varient car ils dépendent du montant total et pondéré des délégations qu'un validateur reçoit. Voir [ici](../Learn/core-concepts/satoshi-plus-consensus/rewards#3-validator-rewards) pour plus de détails.\
-La pratique de rééquilibrer les délégations parmi les validateurs est essentielle pour maximiser les récompenses globales et maintenir un écosystème sain de validateurs. Lorsqu'un validateur reçoit une délégation insuffisante, il risque de devenir inactif. À l'inverse, une délégation excessive à un seul validateur peut entraîner une réduction des récompenses pour chaque délégataire, car les récompenses doivent être partagées parmi un plus grand nombre de délégataires.\
+Pour que les utilisateurs voient la distribution de leur CORE, Bitcoin et Hash délégués pour chaque validateur, ils peuvent visiter le site officiel de [staking de Core](https://stake.coredao.org/). Les rendements de staking CORE et Bitcoin de chaque validateur varient car ils dépendent du montant total et pondéré des délégations qu'un validateur reçoit. Voir [ici](../Learn/core-concepts/satoshi-plus-consensus/rewards#3-validator-rewards) pour plus de détails.  
+La pratique de rééquilibrer les délégations parmi les validateurs est essentielle pour maximiser les récompenses globales et maintenir un écosystème sain de validateurs. Lorsqu'un validateur reçoit une délégation insuffisante, il risque de devenir inactif. À l'inverse, une délégation excessive à un seul validateur peut entraîner une réduction des récompenses pour chaque délégataire, car les récompenses doivent être partagées parmi un plus grand nombre de délégataires.  
 L'action des délégataires de rééquilibrer leur délégation pour maximiser la récompense est le moteur pour assurer un ensemble équilibré de validateurs. Pour les utilisateurs qui préfèrent ne pas gérer activement leurs délégations, il est conseillé de répartir les mises de manière égales entre tous les validateurs actifs. Cette approche améliore la stabilité des pourcentages de récompense.
 
 ### 7\. Y a-t-il un risque de perdre vos actifs Bitcoin pendant le Dual Staking ?
