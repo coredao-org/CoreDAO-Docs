@@ -1,0 +1,1 @@
+{"parameters":[{"name":"txId","in":"query","required":true,"description":"The transaction ID for which the BTC staking status is requested.","schema":{"type":"string"}}]}

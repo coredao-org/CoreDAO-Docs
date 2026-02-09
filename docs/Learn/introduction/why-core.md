@@ -75,11 +75,7 @@ Core's Bitcoin Timelock-enabled yield helps increase institutional capital effic
 4. **Transparency:** Full on-chain visibility of all transactions and positions
 5. **Compliance:** Institutional-grade products are built on Core
 
-Core powers a new generation of Bitcoin financial products:
-
-- lstBTC (liquid, yield-bearing Bitcoin)
-- Yield-bearing Bitcoin ETPs
-- Novel strategies with positive carry Bitcoin
+Core powers a new generation of Bitcoin financial products including yield-bearing Bitcoin ETPs and novel strategies with positive carry Bitcoin.
 
 ## The Virtuous Cycle of Bitcoin and Core
 

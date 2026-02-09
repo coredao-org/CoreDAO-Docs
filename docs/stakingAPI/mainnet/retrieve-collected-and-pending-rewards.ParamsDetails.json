@@ -1,0 +1,1 @@
+{"parameters":[{"name":"coreAddress","in":"query","required":true,"description":"The Core address for which to retrieve reward details.","schema":{"type":"string"}}]}

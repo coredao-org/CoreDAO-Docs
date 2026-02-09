@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -42,27 +43,24 @@ Retrieve Staking Summary Group By Candidate.
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Request"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"coreAddress","in":"query","required":false,"description":"Core staking address or the Core reward address corresponding to BTC staking","schema":{"type":"string"}}]}
+  {...require("./retrieve-staking-summary-group-by-candidate.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./retrieve-staking-summary-group-by-candidate.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Staking summary grouped by candidate retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"data":{"type":"array","description":"List of staking details grouped by candidate.","items":{"type":"object","properties":{"address":{"type":"string","description":"The address of the candidate."},"candidateAddress":{"type":"string","description":"The candidate validator address."},"candidateName":{"type":"string","description":"The name of the candidate validator."},"stakedBTCAmount":{"type":"string","description":"The amount of BTC staked with this candidate."},"stakedCoreAmount":{"type":"string","description":"The amount of CORE staked with this candidate."},"candidateEstimatedCoreRewardRate":{"type":"string","description":"The estimated CORE reward rate for this candidate."},"candidateEstimatedBtcRewardRate":{"type":"string","description":"The estimated BTC reward rate for this candidate."}}}},"message":{"type":"string","description":"Additional information or message about the response."}}}}}},"400":{"description":"Invalid parameters or an error occurred while retrieving the data.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  {...require("./retrieve-staking-summary-group-by-candidate.StatusCodes.json")}
 >
   
 </StatusCodes>

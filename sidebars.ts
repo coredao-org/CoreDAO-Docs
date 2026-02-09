@@ -108,12 +108,6 @@ const sidebars: SidebarsConfig = {
                 "Learn/liquid-staking/stCore/stCore-on-Core",
               ],
             },
-            {
-              type: "category",
-              collapsed: true,
-              label: "lstBTC (Deprecated)",
-              items: ["Learn/liquid-staking/lstBTC/overview"],
-            },
           ],
         },
                 {
@@ -510,7 +504,7 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           collapsed: true,
-          label: "Mainnet API Endpoints",
+          label: "Mainnet Staking API Endpoints",
           link: {
             type: "generated-index",
             title: "Staking API Documentation",
@@ -523,7 +517,7 @@ const sidebars: SidebarsConfig = {
         {
           type: "category",
           collapsed: true,
-          label: "Testnet API Endpoints",
+          label: "Testnet Staking API Endpoints",
           link: {
             type: "generated-index",
             title: "Staking API Documentation",

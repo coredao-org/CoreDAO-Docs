@@ -1,6 +1,6 @@
-import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
-import type * as Preset from "@docusaurus/preset-classic";
+import {themes as prismThemes} from 'prism-react-renderer';
+import type {Config} from '@docusaurus/types';
+import type * as Preset from '@docusaurus/preset-classic';
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import type * as Plugin from "@docusaurus/types/src/plugin";
@@ -8,7 +8,7 @@ import type * as OpenApiPlugin from "docusaurus-plugin-openapi-docs";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX....)
 
-const DefaultLocale = "en";
+//const DefaultLocale = "en";
 
 const config: Config = {
   title: "Core DAO Official Documentation",
@@ -34,12 +34,12 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr", "es"],
-  },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en", "fr", "es"],
+  // },
 
-  staticDirectories: ["public", "static"],
+// staticDirectories: ["public", "static"],
 
   presets: [
     [
@@ -49,14 +49,14 @@ const config: Config = {
           sidebarPath: "./sidebars.ts",
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/coredao-org/CoreDAO-Docs/blob/main',
-          editUrl: ({ locale, versionDocsDirPath, docPath }) => {
-            // Link to Crowdin for French docs
-            if (locale !== DefaultLocale) {
-              return `https://github.com/coredao-org/CoreDAO-Docs/blob/main`;
-            }
-            // Link to GitHub for English docs
-            return `https://github.com/coredao-org/CoreDAO-Docs/blob/main`;
-          },
+          // editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          //   // Link to Crowdin for French/Spanish docs
+          //   if (locale !== DefaultLocale) {
+          //     return `https://github.com/coredao-org/CoreDAO-Docs/blob/main`;
+          //   }
+          //   // Link to GitHub for English docs
+          //   return `https://github.com/coredao-org/CoreDAO-Docs/blob/main`;
+          // },
           routeBasePath: "docs",
           path: "docs",
           remarkPlugins: [remarkMath],
@@ -93,10 +93,6 @@ const config: Config = {
             from: '/core-white-paper-v1.0.6/',
             to: 'https://whitepaper.coredao.org/',
           },
-          // {
-          //   from: '/docs/Learn/core-concepts/overview',
-          //   to:'/docs/learn/core-concepts/overview',
-          // },
           {
             from: '/docs/Learn/products/btc-staking/btc-staking-working',
             to: '/docs/stake-and-delegate/btc-staking/btc-staking-working',
@@ -201,14 +197,6 @@ const config: Config = {
               from: '/docs/satoshi-plus-consensus/proof-of-work',
               to: '/docs/Learn/core-concepts/satoshi-plus-consensus/DPoW',
             },
-          // {
-          //     from: '/developer',
-          //     to: '/docs/category/dev-guides',
-          //   },
-          // {
-          //     from: '/core-white-paper-v1.0.7',
-          //     to: 'https://whitepaper.coredao.org/',
-          //   },
           {
               from: '/api',
               to: '/docs/api/core-api',
@@ -471,7 +459,7 @@ const config: Config = {
     announcementBar: {
       id: "latest_updates",
       content:
-        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://coredao.org/explore/blog/core-testnet1-deprecation-notice-&-migration-guidelines">Core Testnet (1115) is now deprecated. Migrate your dapps and smart contracts to latest Core Testnet (1114)</a> ⚠️',
+        '⚠️ <a target="_blank" rel="noopener noreferrer" href="https://coredao.org/explore/blog/core-testnet1-deprecation-notice-&-migration-guidelines">Core Testnet (1115) is now decommissioned. Migrate your dapps and smart contracts to latest Core Testnet2 (1114)</a> ⚠️',
       backgroundColor: "#f96e34",
       textColor: "#FBFCFC",
       isCloseable: false,
@@ -542,10 +530,10 @@ const config: Config = {
           label: "FAQs",
           activeBaseRegex: `/docs/`,
         },
-        {
-          type: "localeDropdown",
-          position: "right",
-        },
+        // {
+        //   type: "localeDropdown",
+        //   position: "right",
+        // },
         {
           href: "https://github.com/coredao-org",
           label: "GitHub",

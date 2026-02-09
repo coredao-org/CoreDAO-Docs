@@ -54,11 +54,9 @@ The Core blockchain features a foundational on-chain governance process. Key dec
 
 ## The Core Builder Ecosystem
 
-- [Core Wishlist](https://github.com/coredao-org/core-community-contributions/blob/main/Core-Wishlist.md)
 - [Core Missions](https://coredao.org/blog/the-future-of-core-incentive-campaigns)
 - [Core Builders' Incentive Program](https://coredao.org/initiatives/incentiveprogram)
 - [Core Starter Program](https://coredao.org/initiatives/corestarterprogram)
-- [Core Commit Program](https://coredao.org/initiatives/commit-program)
 
 These programs are intended to support and incentivize building innovative projects on Core and catalyze growth.
 

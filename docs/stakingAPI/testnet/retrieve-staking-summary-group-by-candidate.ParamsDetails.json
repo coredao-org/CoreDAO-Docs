@@ -1,0 +1,1 @@
+{"parameters":[{"name":"coreAddress","in":"query","required":false,"description":"Core staking address or the Core reward address corresponding to BTC staking","schema":{"type":"string"}}]}

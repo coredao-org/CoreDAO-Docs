@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -28,7 +29,7 @@ import Heading from "@theme/Heading";
 
 <MethodEndpoint
   method={"get"}
-  path={"api/geth/eth_getTransactionByHash"}
+  path={"/api/geth/eth_getTransactionByHash"}
   context={"endpoint"}
 >
   
@@ -42,19 +43,18 @@ Get transaction by hash
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Request"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"apikey","in":"query","description":"apikey","required":true,"schema":{"type":"string"}},{"name":"txhash","in":"query","description":"txhash","required":true,"schema":{"type":"string"}}]}
+  {...require("./get-transaction-by-hash-using-get.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./get-transaction-by-hash-using-get.RequestSchema.json")}
 >
   
 </RequestSchema>

@@ -1,0 +1,1 @@
+{"parameters":[{"name":"contractaddress","in":"query","required":true,"description":"The contract address of the token to retrieve holder count for.","schema":{"type":"string"},"example":"0x81bcea03678d1cef4830942227720d542aa15817"},{"name":"apikey","in":"query","required":true,"description":"API key for authentication.","schema":{"type":"string"},"example":""}]}

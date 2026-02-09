@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"OK","content":{"*/*":{"schema":{"type":"object"}}}},"201":{"description":"Created","content":{}},"401":{"description":"Unauthorized","content":{}},"403":{"description":"Forbidden","content":{}},"404":{"description":"Not Found","content":{}}}}
