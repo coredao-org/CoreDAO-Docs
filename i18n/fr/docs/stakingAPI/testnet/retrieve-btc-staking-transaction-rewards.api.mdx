@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -40,27 +41,24 @@ Récupérer les récompenses de transaction de staking BTC.
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Demande"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
-  parameters={[{"name":"txId","in":"query","required":true,"description":"The Bitcoin transaction id of the staking transaction.","schema":{"type":"string"}}]}
+  {...require("./retrieve-btc-staking-transaction-rewards.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./retrieve-btc-staking-transaction-rewards.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"BTC staking transaction rewards retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Status code indicating the result of the operation."},"data":{"type":"object","description":"BTC staking transaction reward details.","properties":{"btcTxId":{"type":"string","description":"The Bitcoin transaction ID."},"rewardAddress":{"type":"string","description":"The reward address for the staking transaction."},"pendingReward":{"type":"string","description":"The pending reward amount."},"claimedReward":{"type":"string","description":"The claimed reward amount."}}},"message":{"type":"string","description":"Additional information or message about the response."}}}}}},"400":{"description":"Invalid transaction ID or an error occurred while retrieving the rewards.","content":{"application/json":{"schema":{"type":"object","properties":{"code":{"type":"string","description":"Error code indicating the result of the operation."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  {...require("./retrieve-btc-staking-transaction-rewards.StatusCodes.json")}
 >
   
 </StatusCodes>
