@@ -68,9 +68,7 @@ Quel que soit le type de détenteur de Bitcoin que vous êtes, Core a quelque ch
 
 - **Mineurs de Bitcoin**: Gagnez des récompenses supplémentaires sans modifier vos opérations de minage
 
-- **Détenteurs institutionnels**: Bloquez Bitcoin dans le temps et stakez CORE pour des rendements premium, ou accédez à lstBTC liquide avec une garde professionnelle
-
-- **Traders institutionnels**: Utilisez lstBTC comme garantie efficace en capital tout en gagnant un rendement libellé en Bitcoin
+- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields
 
 - **Fournisseurs de produits structurés**: Créez des produits de rendement Bitcoin en utilisant l'infrastructure de niveau institutionnel de Core
 
