@@ -1,0 +1,62 @@
+{
+    "parameters": [
+        {
+            "name": "address",
+            "in": "path",
+            "description": "address",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "endblock",
+            "in": "query",
+            "description": "endblock",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "offset",
+            "in": "query",
+            "description": "offset",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "page",
+            "in": "query",
+            "description": "page",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "sort",
+            "in": "query",
+            "description": "sort",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "startblock",
+            "in": "query",
+            "description": "startblock",
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}
