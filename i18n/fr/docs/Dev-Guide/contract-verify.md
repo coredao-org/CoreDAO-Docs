@@ -12,7 +12,7 @@ description: Apprenez à vérifier un contrat intelligent à l'aide de Core Scan
 Dans un souci de transparence, il est recommandé de vérifier tous les contrats sur [Core Scan](https://scan.coredao.org/). Bien qu'il existe plusieurs façons d'effectuer la vérification de contrats, nous recommandons d'utiliser l'outil de vérification officiel de Core, [Core Scan](https://scan.coredao.org/), pour une fiabilité optimale. Voici un aperçu des méthodes les plus courantes pour vérifier les contrats via le web, l'API et Hardhat.
 
 :::note
-Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). Pour ce faire, assurez-vous que le paramètre `evmVersion` est défini sur `paris` dans les paramètres du compilateur Solidity.
+Assurez-vous que votre contrat intelligent suit les [Solidity Support Guidelines de Core Chain](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `shanghai` within the Solidity compiler settings.
 :::
 
 ## Vérification Web via Core Scan
@@ -22,7 +22,7 @@ La vérification Web est la stratégie de vérification de contrat intelligent l
 1. Accédez au site web de Core Scan.
 
 - [Pour le Core Mainnet](https://scan.coredao.org/)
-- [Pour le Core Testnet2](https://scan.test.btcs.network)
+- [For Core Testnet2](https://scan.test2.btcs.network)
 
 2. Recherchez le contrat par adresse sur Core Scan. Il suffit de coller l'adresse du contrat dans la barre de recherche du site web.
 3. Une fois le contrat localisé, sélectionnez l'onglet **Contract** et cliquez sur **Verify and Publish**.
@@ -152,8 +152,8 @@ Mettez à jour le fichier `foundry.toml` pour spécifier la version Solidity et 
 
 ```bash
 [profile.default]
-solidity_version = "0.8.0"  # Specify the Solidity version
-evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
+solidity_version = "0.8.24"  # Specify the Solidity version
+evm_version = "shanghai" #Specify the EVM version
 ```
 
 Créez un fichier `.env` pour stocker des informations sensibles telles que votre clé privée, votre URL RPC et vos clés API. Cela permet de sécuriser vos informations d’identification et de les référencer facilement dans votre code.
