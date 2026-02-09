@@ -165,13 +165,13 @@ Voici un outil en ligne pour générer la valeur de hachage `P2WSH` `sha256` d'u
 
 #### Sortie OP_RETURN
 
-Le code hex complet de cette sortie est le suivant `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , où
+The full hex of this output is `6a4c505341542b01045ade60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , where
 
 - `6a` est le opcode op_return
 - `4c50` est la longueur totale en octets après l'opcode [1] `OP_RETURN`
 - `5341542b` SAT+, l'identifiant Satoshi Plus
 - `01` est la version
-- `045b` 1115, l'Id de la chaîne (1115 pour le Core Testnet et 1116 pour le Core Mainnet)
+- `045a` 1114, which is chain id (1114 for Core Testnet2 and 1116 for Core Mainnet)
 - `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` est l'adresse de récompense
 - `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` est l'adresse du validateur
 - `01` est la commission du relayeur, mesurée en CORE
