@@ -83,7 +83,7 @@ Your new tier takes effect immediately after the claim.
 | **Mainnet** | 1116 (0x45c) |  `CORE`  | https://rpc.coredao.org                                                           | [scan.coredao.org](https://scan.coredao.org/)                                                      | [https://stake.coredao.org/](https://stake.coredao.org/) (Supports Bitcoin Mainnet)                                          | —                                                                                                                                                |
 | **Testnet** | 1114 (0x45a) | `tCORE2` | [https://rpc.test2.btcs.network](https://rpc.test2.btcs.network/) | [https://scan.test2.btcs.network](https://scan.test2.btcs.network) | [https://scan.test2.btcs.network/faucet](https://scan.test2.btcs.network/faucet) (Supports Bitcoin Testnet4) | [https://scan.test2.btcs.network/faucet](https://scan.test2.btcs.network/faucet) |
 
-⚠️ **Note**: Core Testnet **1115 is deprecated**. Always use **1114** for testing.
+⚠️ **Note**: Core Testnet **1115 is decommissioned**. Always use Core Testnet2 with **1114** chain ID for testing.
 
 For more details on network configuration, refer [here](https://docs.coredao.org/docs/Dev-Guide/network-config%20).
 
