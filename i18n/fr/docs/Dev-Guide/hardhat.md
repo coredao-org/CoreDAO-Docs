@@ -19,7 +19,7 @@ Avant de commencer, assurez‑vous d'avoir :
 
 - Node.js [v18.0.0 or later](https://nodejs.org/en/) installer
 - Git installé sur votre machine
-- Un portefeuille Core Testnet avec quelques jetons de test (get them from the [Core Faucet](https://faucet.test.btcs.network/))
+- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://scan.test2.btcs.network/faucet)
 
 ### Cloner le Starter Kit
 
