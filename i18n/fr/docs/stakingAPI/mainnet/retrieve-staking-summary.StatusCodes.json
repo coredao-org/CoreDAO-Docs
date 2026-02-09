@@ -1,0 +1,85 @@
+{
+    "responses": {
+        "200": {
+            "description": "Staking summary retrieved successfully.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "integer",
+                                "description": "Status code of the response."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Additional information or message about the response."
+                            },
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "stakedCoreAmount": {
+                                        "type": "string",
+                                        "description": "Total amount of CORE staked."
+                                    },
+                                    "stakedHashAmount": {
+                                        "type": "string",
+                                        "description": "Total amount of HASH staked."
+                                    },
+                                    "stakedBTCAmount": {
+                                        "type": "string",
+                                        "description": "Total amount of BTC staked."
+                                    },
+                                    "pendingCoreReward": {
+                                        "type": "string",
+                                        "description": "Pending CORE reward."
+                                    },
+                                    "pendingHashReward": {
+                                        "type": "string",
+                                        "description": "Pending HASH reward."
+                                    },
+                                    "pendingBTCReward": {
+                                        "type": "string",
+                                        "description": "Pending BTC reward."
+                                    },
+                                    "claimedCoreReward": {
+                                        "type": "string",
+                                        "description": "Claimed CORE reward."
+                                    },
+                                    "claimedHashReward": {
+                                        "type": "string",
+                                        "description": "Claimed HASH reward."
+                                    },
+                                    "claimedBTCReward": {
+                                        "type": "string",
+                                        "description": "Claimed BTC reward."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "400": {
+            "description": "Invalid core address supplied.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "integer",
+                                "description": "Status code of the response."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Error message explaining the issue."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

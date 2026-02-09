@@ -1,0 +1,81 @@
+{
+    "responses": {
+        "200": {
+            "description": "Staking summary grouped by candidate retrieved successfully.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "Status code indicating the result of the operation."
+                            },
+                            "data": {
+                                "type": "array",
+                                "description": "List of staking details grouped by candidate.",
+                                "items": {
+                                    "type": "object",
+                                    "properties": {
+                                        "address": {
+                                            "type": "string",
+                                            "description": "The address of the candidate."
+                                        },
+                                        "candidateAddress": {
+                                            "type": "string",
+                                            "description": "The candidate validator address."
+                                        },
+                                        "candidateName": {
+                                            "type": "string",
+                                            "description": "The name of the candidate validator."
+                                        },
+                                        "stakedBTCAmount": {
+                                            "type": "string",
+                                            "description": "The amount of BTC staked with this candidate."
+                                        },
+                                        "stakedCoreAmount": {
+                                            "type": "string",
+                                            "description": "The amount of CORE staked with this candidate."
+                                        },
+                                        "candidateEstimatedCoreRewardRate": {
+                                            "type": "string",
+                                            "description": "The estimated CORE reward rate for this candidate."
+                                        },
+                                        "candidateEstimatedBtcRewardRate": {
+                                            "type": "string",
+                                            "description": "The estimated BTC reward rate for this candidate."
+                                        }
+                                    }
+                                }
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Additional information or message about the response."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "400": {
+            "description": "Invalid parameters or an error occurred while retrieving the data.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "Error code indicating the result of the operation."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Error message explaining the issue."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

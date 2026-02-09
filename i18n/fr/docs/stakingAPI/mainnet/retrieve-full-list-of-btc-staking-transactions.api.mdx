@@ -1,0 +1,64 @@
+---
+id: retrieve-full-list-of-btc-staking-transactions
+title: Récupérer la Liste Complète des Transactions de Staking BTC
+description: Returns full list of BTC staking transactions (including all active and historical data) by bitcoin address. Page size limited to 100.
+sidebar_label: Récupérer la Liste Complète des Transactions de Staking BTC
+hide_title: true
+hide_table_of_contents: true
+api: eJzNV91vIjcQ/1dGfumdRIGr+sRbkru2kU5VlKNSpSgPxh5YX7z2xh7n4BD/ezXehcACYUmuVXmBXTy/+c2H52MpNEYVTEXGOzESt0gpuAjTZC1YEwn8FC7HVxBJPhg3AwrSRan4eIR3ximbNL+X1gK/fkKQTkNhIvlglLSgJcn3MFnAxJDyxoHUOmCMfbiRM4RoviNYUxpCDeThw3DYFz1RySBLJAxRjO6WwskSxUhMSF3U0qInDBN+TBgWoicCPiYTUIsRhYS9llnjAuFyVz1MfYBvhVHFYdtkQJggv2ZojISaeUVVYCnFaCloUTGlSMG4mVitehuW1cMfMhbnM6zSxBoFD7iAQsYCZIxeGcmO+WaoACoQZuYJXduWrsSUD3jSf1Np40F6Ab/JoDf+202Mzr6RM/wzla9Qz5LgUjnBkGNXyZlxkg/04SNOZbIUcwKBmYLzBFXwT0YfCZtxhDMMe9y+mO/4CnINLz/dTaIKM09sMRwOz+R4zyRi5V3EyAd+GQ75a5fH0WsakILBJ9QQk1IYI9/uBatU3hE6YixZVdao7M/B18iAy31GfvIVFfH1DL7CQKamo7zG/bC3/XTB7ChF4ONgnM7qmGxOrphsrjb8xOB1aMWqJ0qMUc66aNDa8E9pwbipD2XGAB+ggQA58YnWCrM/swauUafNZOeivhxfjeefTaQtARmCXOzR+XyifnIEDGEZO3hYOm20pM31PekLzsqtq8omb0AgoJVNveU/tkhld2yV2U562qX1UOE6oGP897XupiA585h2MOD6Y64CDH3Ev1mN8m5qQol6PM9FuZO6jdCOxlyTt3Ueclvpk6OO0clntxMENRh30Fu1bDfc+rlTECLJQLc+OX2g7BzEZoHcFFlonVhtWHT6HFB0+iSkRoszSXgO7lqmQV6Hrg3tE1WJrp3GeUfgWoJLGM6Pwtbt8qx71OqwXSKYnPXqYWxK7Mi9FgAyJb5AXSOWZ1JnkZ3h6kjCUYrdk43bxZGMqDWO511ryJHi0RBvozcz3Enkm9fPbKvnT0/8eqijXzjAEHwAr1QKgTELY3Hd0Ne986X+8p92+E+Z7L/W3mv4dSvHeWWlcWsNJsaEG6cyKhVei5GYYTZHUiFGYtD4aTAhNdj21UBayzMYhqf1zpGCFSNREFVxNFgL/iwr0+c5Wkvf92EmeDbjYSPTN2SZ/5UPCF+aiFzcXO8PKjfXoL1KJTqqZxQW+Sm2hJhKLfChP+wPc176SKXMsWum1ttmuoPfeGfbnjnWYOMtO9tUls8Z8v9Z/po0IJzTIAc5VzoOx7IJ5J1oOIncdllm10gO531PFJ7ntDuxXE5kxL+CXa34dT3Zc5C1iXJij8322955d9usAe/hx62TBy19wEV7132SNvFBwevKqzm/acF8gepm4X0lzU7b5Qv6d/faN5B40475koM2W+8byP2IHfMEx2b7fSZ5zw/BMEsxurtf9USBUmPId6eWu1AKK9qS2uszjLIpx79/GovV6h8Gb3il
+sidebar_class_name: get api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Récupérer la Liste Complète des Transactions de Staking BTC"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/staking/btc/transactions/all"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Renvoie la liste complète des transactions de staking BTC (y compris toutes les données actives et historiques) pour une adresse Bitcoin donnée. La taille de page est limitée à 100.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  {...require("./retrieve-full-list-of-btc-staking-transactions.ParamsDetails.json")}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./retrieve-full-list-of-btc-staking-transactions.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./retrieve-full-list-of-btc-staking-transactions.StatusCodes.json")}
+>
+  
+</StatusCodes>
