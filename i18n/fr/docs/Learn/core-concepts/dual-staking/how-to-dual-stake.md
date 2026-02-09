@@ -127,7 +127,7 @@ Le résultat de la vérification apparaîtra dans la section **Verification Resu
 
 Une fois vérifié, revenez sur (stake.coredao.org](https://stake.coredao.org) et continuez en cliquant sur **Approve Transaction**.
 
-<p align="center">
+<p align="center"  style={{zoom:"85%"}}>
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
@@ -135,7 +135,7 @@ Une fois vérifié, revenez sur (stake.coredao.org](https://stake.coredao.org) e
 
 Sur le côté droit du Calculateur de Staking, il y a un onglet **Summary** qui calcule le Taux de Récompense Total et les Récompenses Annuelles Prévues. Ce sont des estimations de retour annuel pour le Bitcoin et le CORE stakés. Le taux de récompense peut fluctuer quotidiennement en fonction des montants totaux et pondérés des délégations que les validateurs reçoivent. Lorsque l'option **Current** est sélectionnée, elle affiche uniquement le taux de récompense de staking estimé en temps réel. Lorsque l'option **Overall** est sélectionnée, elle représente la moyenne de deux composants : les taux de tous les validateurs basés sur les enregistrements de staking précédents et le taux de récompense de staking estimé en temps réel.
 
-<p align="center" style={{zoom:"60%"}}>
+<p align="center" style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
@@ -147,7 +147,7 @@ Vous pouvez également utiliser les curseurs dans la section ci-dessous pour voi
 
 Pour obtenir le maximum de boost de récompense sur votre montant staké, dans la section **Dual Staking Tiers**, ajustez le curseur **Btc Staked** au montant de Btc que vous souhaitez staker et cliquez sur le bouton **Max Boost**. Cela définira automatiquement le montant de CORE correspondant dans le curseur “CORE Staked“ pour débloquer le boost maximum. Vous pouvez également ajuster manuellement le CORE staké puis cliquer à nouveau sur le bouton "Max Boost" pour mettre à jour le montant de BTC recommandé dans la barre "BTC Staked".
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
@@ -158,7 +158,7 @@ Pour obtenir le maximum de boost de récompense sur votre montant staké, dans l
 - **Active Staked BTC :** Le montant de BTC actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 - **Active Staked CORE :** Le montant de CORE actuellement staké et le taux de récompense moyen gagné auprès des validateurs.
 
-<p align="center" style={{zoom:"70%"}}>
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
@@ -222,7 +222,7 @@ Une fois que vous avez confirmé la transition, vous recevrez une notification *
 
 Dans le coin supérieur droit du site de staking, survolez votre portefeuille connecté et cliquez sur **My Staking**.
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
