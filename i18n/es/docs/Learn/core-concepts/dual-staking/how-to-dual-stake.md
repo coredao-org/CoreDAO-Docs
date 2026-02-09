@@ -125,7 +125,7 @@ El resultado de la verificación aparecerá en la sección Verification Result.
 
 Una vez verificado, regresa a [stake.coredao.org](https://stake.coredao.org) y continúa haciendo clic en **Approve Transaction**.
 
-<p align="center">
+<p align="center"  style={{zoom:"85%"}}>
 ![btc-staking-approve-tx](../../../../static/img/btc-staking/approve-tx.png)
 </p>
 
@@ -133,7 +133,7 @@ Una vez verificado, regresa a [stake.coredao.org](https://stake.coredao.org) y c
 
 En el lado derecho del Staking Calculator, hay una pestaña llamada **Summary** que calcula la Tasa Total de Recompensas por Staking y las Recompensas Anuales Proyectadas. Estos son valores estimados de rendimiento anual para el Bitcoin y CORE en staking. A tasa de recompensa puede fluctuar diariamente según las cantidades totales y ponderadas de delegaciones que reciben los validadores. Cuando el modo está en **Current**, muestra únicamente la tasa estimada de recompensa en tiempo real. Cuando está en **Overall**, representa el promedio de dos componentes: las tasas de todos los validadores basadas en registros anteriores de staking y la tasa estimada de recompensa en tiempo real.
 
-<p align="center" style={{zoom:"60%"}}>
+<p align="center" style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-7.png)
 </p>
 
@@ -145,7 +145,7 @@ También puedes usar los deslizadores en la sección inferior para visualizar el
 
 Para obtener el máximo impulso de recompensas sobre tu cantidad apostada, en la sección **Dual Staking Tiers**, ajusta el deslizador de Bitcoin Staked a la cantidad de Bitcoin que deseas poner en staking y haz clic en el botón **Max Boost**. Esto ajustará automáticamente la cantidad correspondiente en el deslizador "CORE Staked" para desbloquear el boost máximo. También puedes ajustar manualmente la cantidad de CORE en staking y luego hacer clic nuevamente en "Max Boost" para actualizar la cantidad recomendada de Bitcoin en la barra "BTC Staked".
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-9.png)
 </p>
 
@@ -156,7 +156,7 @@ Junto a la pestaña Summary, puedes encontrar la página **Details**, que muestr
 - **Active Staked Bitcoin**: La cantidad de BTC actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 - **Active Staked CORE**: La cantidad de CORE actualmente en staking y la tasa promedio de recompensa ganada a través de los validadores.
 
-<p align="center" style={{zoom:"70%"}}>
+<p align="center" style={{zoom:"60%"}}>
 ![dual-staking-on-core](../../../../static/img/dual-staking/dual-staking-10.png)
 </p>
 
@@ -220,7 +220,7 @@ Una vez que confirmes la transacción, recibirás una notificación **Transactio
 
 En la esquina superior derecha del sitio web de staking, coloca el cursor sobre tu wallet conectada y haz clic en **My Staking**.
 
-<p align="center">
+<p align="center"  style={{zoom:"50%"}}>
 ![btc-staking-on-core](../../../../static/img/native-staking/updated-ui/staking-guide-8.png)
 </p>
 
