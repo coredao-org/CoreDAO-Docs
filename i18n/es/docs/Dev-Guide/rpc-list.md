@@ -24,7 +24,7 @@ Los endpoints de Llamadas a Procedimiento Remoto (RPC) son vitales para que los 
 ### Core Testnet2 (1114 (0x45a))
 
 :::info
-Nota: Esta es la testnet más reciente y oficialmente compatible para la blockchain de Core. La versión anterior de la testnet (chainID 1115) está obsoleta y ya no se mantiene. Se recomienda encarecidamente a los desarrolladores hacer la transición a la nueva testnet (chain ID 1114) para asegurar el soporte continuo y el acceso a las funciones más recientes.
+Nota: Esta es la testnet más reciente y oficialmente compatible para la blockchain de Core. The previous testnet (chain ID 1115) is now comissioned and no longer available for use. Developers are strongly encouraged to use the new testnet (chain ID 1114) to ensure continued support and access to the latest features.
 :::
 
 - https://rpc.test2.btcs.network
