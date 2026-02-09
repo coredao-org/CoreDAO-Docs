@@ -60,4 +60,4 @@ CORE complète la proposition de valeur de Bitcoin pour une variété de détent
 
 - **Les émetteurs d'ETP/ETF** — détenant déjà des positions importantes en Bitcoin — utilisent Core pour générer un rendement sans confiance sur des Bitcoins autrement inactifs.
   - L'ETP Bitcoin générateur de rendement de Valour a généré un rendement annuel de 5,65 % en utilisant exclusivement les offres de staking de Core.
-  - Les émetteurs explorent également lstBTC, le futur token Bitcoin liquide générateur de rendement, développé par Maple Finance.
+  - Issuers are also exploring liquid yield-bearing Bitcoin token.
