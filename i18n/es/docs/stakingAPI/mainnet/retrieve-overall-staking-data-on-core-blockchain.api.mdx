@@ -18,6 +18,7 @@ import StatusCodes from "@theme/StatusCodes";
 import OperationTabs from "@theme/OperationTabs";
 import TabItem from "@theme/TabItem";
 import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
 
 <Heading
   as={"h1"}
@@ -40,27 +41,24 @@ Returns overall staking data on the Core blockchain, including information on va
   id={"request"}
   as={"h2"}
   className={"openapi-tabs__heading"}
-  children={"Request"}
 >
+  <Translate id="theme.openapi.request.title">Request</Translate>
 </Heading>
 
 <ParamsDetails
-  parameters={[]}
+  {...require("./retrieve-overall-staking-data-on-core-blockchain.ParamsDetails.json")}
 >
   
 </ParamsDetails>
 
 <RequestSchema
-  title={"Body"}
-  body={undefined}
+  {...require("./retrieve-overall-staking-data-on-core-blockchain.RequestSchema.json")}
 >
   
 </RequestSchema>
 
 <StatusCodes
-  id={undefined}
-  label={undefined}
-  responses={{"200":{"description":"Overall staking data retrieved successfully.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the response."},"message":{"type":"string","description":"Additional information or message about the response."},"result":{"type":"object","properties":{"latestRound":{"type":"integer","description":"The latest staking round number."},"activeValidatorCount":{"type":"integer","description":"The number of active validators in the staking network."},"coreStakerCount":{"type":"integer","description":"The number of CORE stakers in the network."},"stakedCoreAmount":{"type":"integer","description":"The total amount of CORE staked in the network."},"btcStakerCount":{"type":"integer","description":"The number of BTC stakers in the network."},"stakedBTCAmount":{"type":"integer","description":"The total amount of BTC staked in the network."},"hashStakerCount":{"type":"integer","description":"The number of HASH stakers in the network."},"stakedHashAmount":{"type":"integer","description":"The total amount of HASH staked in the network."}}}}}}}},"400":{"description":"An error occurred while retrieving overall staking data.","content":{"application/json":{"schema":{"type":"object","properties":{"status":{"type":"integer","description":"Status code of the error response."},"message":{"type":"string","description":"Error message explaining the issue."}}}}}}}}
+  {...require("./retrieve-overall-staking-data-on-core-blockchain.StatusCodes.json")}
 >
   
 </StatusCodes>
