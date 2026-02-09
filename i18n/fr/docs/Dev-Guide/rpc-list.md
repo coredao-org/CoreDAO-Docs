@@ -24,7 +24,7 @@ Les points de terminaison d'appel de procédure à distance (RPC) sont essentiel
 ### Testnet2 de la Core Blockchain (1114 (0x45a))
 
 :::info
-Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. L'ancienne version du testnet, avec (chain ID 1115), est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités.
+Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. The previous testnet (chain ID 1115) is now comissioned and no longer available for use. Developers are strongly encouraged to use the new testnet (chain ID 1114) to ensure continued support and access to the latest features.
 :::
 
 - https://rpc.test2.btcs.network
