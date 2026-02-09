@@ -15,7 +15,7 @@ To help users get started and enable developers to quickly prototype their dApps
 1. Naviguez vers le site Web pour [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
 2. Collez votre adresse de portefeuille dans le champ de saisie donné. Assurez-vous de fournir l'adresse Core Testnet2 du portefeuille que vous souhaitez financer avec des tCORE2.
 3. Effectuez la vérification CAPTCHA.
-4. Cliquez sur le bouton `Get tCORE2`. Après avoir demandé avec succès des tCORE2 au faucet, vous verrez le solde de votre portefeuille augmenter.
+4. Cliquez sur le bouton `Get tCORE2`. After the successful requesting of tCORE2 from the faucet, your wallet balance will increase.
 
 <p align="center">![using-faucet-test2](../../static/img/faucet/faucet-test2.png)</p>
 
