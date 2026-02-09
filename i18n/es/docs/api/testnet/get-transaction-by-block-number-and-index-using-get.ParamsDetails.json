@@ -1,0 +1,31 @@
+{
+    "parameters": [
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "index",
+            "in": "query",
+            "description": "index",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "tag",
+            "in": "query",
+            "description": "tag",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}
