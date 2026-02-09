@@ -12,7 +12,7 @@ description: Aprende cómo verificar un contrato inteligente usando Core Scan
 En el interés de la transparencia, nosotros recomendamos verificar todos los contratos en [Core Scan](https://scan.coredao.org/). Si bien existen varias formas de lograr la verificación del contrato, recomendamos utilizar la herramienta de verificación oficial de Core, [Core Scan](https://scan.coredao.org/), para una confiabilidad óptima. Este documento lo guía a través de los métodos más utilizados para la verificación de contratos: la herramienta web Core Scan, la API REST de Core y el complemento Hardhat Verification.
 
 :::note
-Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain] (./smart-contract-guidelines.md). Para cumplir con estas directrices, configure el parámetro `evmVersion` a `paris` en los ajustes del compilador de Solidity.
+Asegúrese de que su contrato inteligente siga las [Pautas de soporte de Solidity de Core Chain] (./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `shanghai` within the Solidity compiler settings.
 :::
 
 ## Verificación web mediante Core Scan
@@ -22,7 +22,7 @@ La verificación web es el método más comúnmente usado para la verificación 
 1. Navega al sitio web de Core Scan.
 
 - [Para Core mainnet](https://scan.coredao.org/)
-- [Para Core Testnet2](https://scan.test.btcs.network)
+- [For Core Testnet2](https://scan.test2.btcs.network)
 
 2. Busque el contrato por dirección en Core Scan. Simplemente pegue la dirección del contrato en la barra de búsqueda del sitio web.
 3. Después de localizar el contrato, selecciona la pestaña **Contract** y haz clic en **Verify and Publish**.
@@ -163,7 +163,7 @@ Actualiza el archivo `foundry.toml` para especificar la versión de Solidity y l
 ```bash
 [profile.default]
 solidity_version = "0.8.24"  # Specify the Solidity version
-evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
+evm_version = "shanghai" #Specify the EVM version
 ```
 
 Crea un archivo `.env` para almacenar información sensible como tu clave privada, RPC URL y API keys. Esto ayuda a mantener tus credenciales seguras y te permite referenciarlas fácilmente en tu código.
