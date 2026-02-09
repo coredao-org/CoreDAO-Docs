@@ -12,9 +12,9 @@ sidebar_position: 2
 
 ### Recursos principales de Testnet
 
-- **[Block Explorer](https://scan.test.btcs.network/):** Busque y revise transacciones, cuentas, bloques y más.
+- **[Block Explorer](https://scan.test2.btcs.network/):** Search and review transactions, accounts, blocks, and more.
 
-- **[Puntos finales RPC](https://chainlist.org/chain/1115):** Puntos finales RPC para el servicio RPC de Core Testnet.
+- **[RPC Endpoints](https://chainlist.org/chain/1114):** RPC endpoints for Core Testnet's RPC service.
 
 - **[Core Faucet](https://scan.test2.btcs.network/faucet):** Financia tu dirección de testnet con tCORE2 usando el faucet de la red de pruebas Core Testnet2.
 
