@@ -1,0 +1,32 @@
+{
+    "title": "Body",
+    "body": {
+        "required": true,
+        "content": {
+            "application/json": {
+                "schema": {
+                    "type": "object",
+                    "properties": {
+                        "txId": {
+                            "type": "string",
+                            "description": "The transaction ID of the staking transaction."
+                        },
+                        "apiKey": {
+                            "type": "string",
+                            "description": "The API key for authentication."
+                        },
+                        "redeemScript": {
+                            "type": "string",
+                            "description": "The RedeemScript for the staking transaction."
+                        }
+                    },
+                    "required": [
+                        "txId",
+                        "apiKey",
+                        "redeemScript"
+                    ]
+                }
+            }
+        }
+    }
+}
