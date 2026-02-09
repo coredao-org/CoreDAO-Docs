@@ -93,7 +93,7 @@ my-blockchain-project/
 
 Actualiza el archivo `foundry.toml` con las versiones adecuadas de Solidity y EVM.
 
-Asegúrate de estar utilizando la versión de Solidity `0.8.24` y establece la versión de EVM a `Shanghai`. Si estás utilizando una **testnet antigua**, establece la **versión de EVM a Paris**. Ten en cuenta que Core Testnet (1115) está ahora obsoleta y ya no se mantiene.
+Asegúrate de estar utilizando la versión de Solidity `0.8.24` y establece la versión de EVM a `Shanghai`. If you're using Core Testnet (1115) note that it is now decomissioned and no longer available for use.
 
 ```bash
 [profile.default]
