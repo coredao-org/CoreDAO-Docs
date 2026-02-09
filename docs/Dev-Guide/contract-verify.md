@@ -16,7 +16,7 @@ To promote transparency, it is considered best practice to verify all deployed c
 
 
 :::note
-Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `paris` within the Solidity compiler settings.
+Ensure that your smart contract complies with the [Solidity Support Guidelines by Core](./smart-contract-guidelines.md). To meet these guidelines, set the `evmVersion` parameter to `shanghai` within the Solidity compiler settings.
 :::
 
 
@@ -29,7 +29,7 @@ Web verification is the most commonly used method for smart contract verificatio
 1. Navigate to the Core Scan website.
 
 - [For Core mainnet](https://scan.coredao.org/)
-- [For Core Testnet2](https://scan.test.btcs.network)
+- [For Core Testnet2](https://scan.test2.btcs.network)
 
 2. Search for the contract by address on Core Scan. Simply paste the contract address in the search bar on the website.
 3. After locating the contract, select the **Contract** tab and click **Verify and Publish**.
@@ -192,7 +192,7 @@ Update the `foundry.toml` file to specify the Solidity version and EVM version f
 ```bash
 [profile.default]
 solidity_version = "0.8.24"  # Specify the Solidity version
-evm_version = "shanghai" #Specify the EVM version (For older testnet, use Paris as EVM version)
+evm_version = "shanghai" #Specify the EVM version
 ```
 
 

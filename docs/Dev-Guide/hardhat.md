@@ -11,7 +11,7 @@ description: Deploy Contracts on Core using the Hardhat
 
 Hardhat is a popular development environment for EVM-compatible blockchains, consisting of multiple components for writing, compiling, debugging, and deploying smart contracts.
 
-In this tutorial, you'll learn how to compile, deploy, and call smart contracts on Core Testnet using Hardhat. We'll use the pre-configured [Hardhat starter kit](https://github.com/coredao-org/hardhat-tutoria) that includes all necessary dependencies and configurations for Core blockchain development.
+In this tutorial, you'll learn how to compile, deploy, and call smart contracts on Core Testnet using Hardhat. We'll use the pre-configured [Hardhat starter kit](https://github.com/coredao-org/hardhat-tutorial) that includes all necessary dependencies and configurations for Core blockchain development.
 
 
 ### Prerequisites
@@ -19,7 +19,7 @@ In this tutorial, you'll learn how to compile, deploy, and call smart contracts 
 Before you begin, ensure you have:
 - Node.js [v18.0.0 or later](https://nodejs.org/en/) installed
 - Git installed on your system
-- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://scan.test2.btcs.network/faucet)
+- A Core Testnet wallet with some test tokens (get them from the [Core Faucet](https://scan.test2.btcs.network/faucet))
 
 ### Clone the Starter Kit
 
