@@ -27,5 +27,3 @@ A continuación se presenta una lista de direcciones precompiladas de contratos 
 | Hash Agent                          | [0x0000000000000000000000000000000000001012](https://scan.coredao.org/address/0x0000000000000000000000000000000000001012) |
 | BTC Agent                           | [0x0000000000000000000000000000000000001013](https://scan.coredao.org/address/0x0000000000000000000000000000000000001013) |
 | BTC Stake                           | [0x0000000000000000000000000000000000001014](https://scan.coredao.org/address/0x0000000000000000000000000000000000001014) |
-| BTCLST Stake                        | [0x0000000000000000000000000000000000001015](https://scan.coredao.org/address/0x0000000000000000000000000000000000001015) |
-| BTCLST Token                        | [0x0000000000000000000000000000000000010001](https://scan.coredao.org/address/0x0000000000000000000000000000000000010001) |
