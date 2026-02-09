@@ -61,4 +61,4 @@ CORE está complementando la propuesta de valor de Bitcoin para una variedad de 
 
 - **Emisores de ETP/ETF** — que ya poseen grandes posiciones en Bitcoin — están utilizando Core para obtener trustless yield sobre Bitcoin que, de otro modo, estaría inactivo.
   - El ETP de BTC con rendimiento de Valour ha generado un APY del 5.65 % utilizando exclusivamente las ofertas de staking de Core.
-  - Los emisores también están explorando lstBTC, el próximo token líquido de Bitcoin con rendimiento, impulsado por Maple Finance.
+  - Issuers are also exploring liquid yield-bearing Bitcoin token.
