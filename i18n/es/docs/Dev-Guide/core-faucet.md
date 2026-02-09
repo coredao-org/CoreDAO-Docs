@@ -15,7 +15,7 @@ To help users get started and enable developers to quickly prototype their dApps
 1. Navega al sitio web del faucet para [Core Testnet2 (1114)](https://scan.test2.btcs.network/faucet).
 2. Pega la dirección de tu wallet en el campo de entrada proporcionado. Asegúrate de ingresar la dirección de Core Testnet2 de la wallet que deseas fondear con tCORE2.
 3. Completa la verificación CAPTCHA.
-4. Haz clic en el botón `Get tCORE2`. Después de solicitar exitosamente tCORE2 del faucet, el saldo de tu wallet aumentará.
+4. Haz clic en el botón `Get tCORE2`. After the successful requesting of tCORE2 from the faucet, your wallet balance will increase.
 
 <p align="center">
 ![using-faucet-test2](../../static/img/faucet/faucet-test2.png)
