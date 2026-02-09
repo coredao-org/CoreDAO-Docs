@@ -11,9 +11,9 @@ sidebar_position: 2
 
 ### Core Testnet Resources
 
-* **[Block Explorer](https://scan.test.btcs.network/):** Search and review transactions, accounts, blocks, and more.
+* **[Block Explorer](https://scan.test2.btcs.network/):** Search and review transactions, accounts, blocks, and more.
 
-* **[RPC Endpoints](https://chainlist.org/chain/1115):** RPC endpoints for Core Testnet's RPC service.
+* **[RPC Endpoints](https://chainlist.org/chain/1114):** RPC endpoints for Core Testnet's RPC service.
 
 * **[Core Faucet](https://scan.test2.btcs.network/faucet):** Fund your testnet address with tCORE2 using the Core Testnet2 faucet.
 
