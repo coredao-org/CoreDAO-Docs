@@ -163,13 +163,13 @@ Aquí hay una herramienta en línea para generar el valor hash `P2WSH` `sha256` 
 
 #### Salida OP_RETURN
 
-El hex completo de esta salida es `6a4c505341542b01045bde60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , donde
+The full hex of this output is `6a4c505341542b01045ade60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1a9e209f5ea0036c8c2f41078a3cebee57d8a47d501041f5e0e66b17576a914c4b8ae927ff2b9ce218e20bf06d425d6b68424fd88ac` , where
 
 - `6a` es el código de operación op_return
 - `4c50` es la longitud total de bytes después del opcode `OP_RETURN` [1]
 - `5341542b` SAT+, que es satoshi plus identificador
 - `01` es la versión
-- `045b` 1115, que es la identificación de la cadena (1115 para Core Testnet y 1116 para Core Mainnet)
+- `045a` 1114, which is chain id (1114 for Core Testnet2 and 1116 for Core Mainnet)
 - `de60b7d0e6b758ca5dd8c61d377a2c5f1af51ec1` es la dirección de recompensa
 - `a9e209f5ea0036c8c2f41078a3cebee57d8a47d5` es la dirección del validador
 - `01` es la tarifa de relayer, medida en CORE
