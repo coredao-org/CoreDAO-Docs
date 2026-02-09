@@ -68,9 +68,7 @@ No importa qué tipo de bitcoiner seas, Core tiene algo para ti. Core transforma
 
 - **Mineros de Bitcoin**: Gana recompensas adicionales sin cambiar tus operaciones de minería
 
-- **Holdersinstitucionales:** Haz timelock de tu Bitcoin y haz staking de CORE para obtener rendimientos premium, o accede a lstBTC con custodia profesional
-
-- **Traders institucionales:** Usa lstBTC como colateral eficiente en capital mientras generas rendimiento denominado en Bitcoin
+- **Institutional Holders**: Timelock Bitcoin and stake CORE for premium yields
 
 - **Proveedores de productos estructurados**: Crea productos financieros con rendimiento en Bitcoin utilizando la infraestructura de grado institucional de Core
 
