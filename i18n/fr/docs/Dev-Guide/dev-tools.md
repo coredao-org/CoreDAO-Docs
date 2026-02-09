@@ -21,7 +21,7 @@ values={[
 ]}>
 
 <TabItem value="testnet2">
-  _Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. L'ancienne version du testnet, avec l'Id de chaîne 1115, est obsolète et n'est plus maintenue. Les développeurs sont fortement encouragés à passer au nouveau testnet (ID de chaîne 1114) pour garantir un support continu et l'accès aux dernières fonctionnalités
+  _Remarque : Il s'agit du dernier testnet officiellement pris en charge pour la blockchain Core. The previous testnet (chain ID 1115) is now decomissioned and no longer available. Developers are strongly recommended to use the new testnet "**Core Testnet2**" (chain ID 1114) to ensure continued support and access to the latest features._
 
 - **[Explorateur de blocs](https://scan.test2.btcs.network/):** recherchez et consultez les transactions, comptes, blocs, et bien plus.
 
