@@ -222,7 +222,7 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 
 3. Cliquez sur "**View on BTC Explorer**" pour afficher les détails de votre transaction de staking BTC sur l'explorateur BTC.
 
-> ⚠️ \*\*Aussi, pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
+> ⚠️ **Note:** To be eligible to earn rewards, you must complete a full staking round (00:00:00 - 23:59:59 UTC).
 
 ## FAQs
 
