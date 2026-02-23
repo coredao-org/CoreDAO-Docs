@@ -14,7 +14,9 @@ CORE tiene un **suministro fijo de 2.1 mil millones de tokens**, reflejando el m
 
 ## Distribución de Tokens
 
+<p align="center"  style={{zoom:"80%"}}>
 ![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
+</p>
 
 1. **Minería de nodos (39.995% – 839,900,000 CORE):** Recompensas para validadores distribuidas durante 81 años
 2. **Usuarios (25.029% – 525,600,000 CORE):** Asignación comunitaria al génesis del mainnet
@@ -31,15 +33,21 @@ CORE tiene un **suministro fijo de 2.1 mil millones de tokens**, reflejando el m
 
 ### Emisión acumulada de CORE mensual (Primeros 6 años)
 
+<p align="center">
 ![6-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
+</p>
 
 ### Emisión acumulada de CORE anual (81 años)
 
+<p align="center">
 ![81-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
+</p>
 
 ### Desglose de asignaciones
 
+<p align="center">
 ![break-down-of-emissions](../../../static/img/tokenomics/Breakdown_of_Allocations.png)
+</p>
 
 ## Mecanismos Deflacionarios
 
