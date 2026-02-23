@@ -55,7 +55,7 @@ Si tu período de staking ha expirado, puedes canjear tus activos en Bitcoin blo
 ## Reclamar recompensas en tokens CORE obtenidas por la delegación de Bitcoin Staking
 
 :::note
-Para ser elegible y recibir recompensas, es necesario completar una ronda completa de staking (00:00:00 - 23:59:29 UTC).
+To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:59 UTC).
 :::
 
 1\. Desde cualquier pantalla CORE, coloque el cursor sobre su wallet conectada en la esquina superior derecha y haga clic en ‘**My Staking**’.
