@@ -18,7 +18,7 @@ Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y d
 Para garantizar una experiencia segura y sin inconvenientes, ten en cuenta los siguientes requisitos clave:
 
 - **Usar solo dispositivos Ledger compatibles:** El staking, la redención y la redelegación de BTC en Core son compatibles **únicamente** con determinados dispositivos Ledger hardware wallets que tengan el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
-- **Usar siempre la aplicación Ledger Core:** Debes utilizar la aplicación Ledger Core (no la aplicación Ledger Bitcoin) tanto para hacer staking, redimir o redelegar BTC. La aplicación de Bitcoin no admite operaciones de redención de BTC en staking y puede impedir una redención exitosa.
+- **Always Use the Ledger's Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. La aplicación de Bitcoin no admite operaciones de redención de BTC en staking y puede impedir una redención exitosa.
 - **Hacer staking de BTC solo desde la dirección principal de BTC:** Actualmente, el staking, la redención y la redelegación de BTC en Core a través de Ledger **solo** son compatibles con la dirección BTC principal del dispositivo Ledger. Las direcciones secundarias o derivadas no son compatibles por ahora.
 
 ## Carteras Hardware Ledger Compatibles
