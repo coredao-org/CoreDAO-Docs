@@ -14,7 +14,9 @@ CORE a une **offre fixe de 2,1 milliards de jetons**, reflétant le modèle de r
 
 ## Distribution des Tokens
 
+<p align="center"  style={{zoom:"80%"}}>
 ![tokenomics](../../../static/img/tokenomics/CORE_Tokenomics.png)
+</p>
 
 1. **Minage de nœuds (39,995% - 839 900 000 CORE) :** Récompenses pour les validateurs distribuées sur 81 ans
 2. **Utilisateurs (25,029% - 525 600 000 CORE):** Allocation communautaire lors du lancement du mainnet
@@ -31,15 +33,21 @@ CORE a une **offre fixe de 2,1 milliards de jetons**, reflétant le modèle de r
 
 ### Émissions cumulatives de CORE mensuellement (Les 6 Première années)
 
+<p align="center">
 ![6-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Monthly.png)
+</p>
 
 ### Émissions cumulatives de CORE annuellement (81 ans)
 
+<p align="center">
 ![81-years-emissions](../../../static/img/tokenomics/Cumulative_CORE_Emissions_Yearly.png)
+</p>
 
 ### Répartition des Allocations
 
+<p align="center">
 ![break-down-of-emissions](../../../static/img/tokenomics/Breakdown_of_Allocations.png)
+</p>
 
 ## Mécanismes déflationnistes
 
