@@ -222,7 +222,7 @@ De forma alternativa, los usuarios también pueden usar Xverse para hacer stakin
 
 3. Haz clic en "**View on BTC Explorer**" para ver los detalles de tu transacción de BTC staking en el BTC Explorer.
 
-> ⚠️ **Nota:** Para ser elegible para recibir recompensas, debes completar una ronda completa de staking (00:00:00 - 23:59:29 UTC).
+> ⚠️ **Note:** To be eligible to earn rewards, you must complete a full staking round (00:00:00 - 23:59:59 UTC).
 
 ## Preguntas Frecuentes
 
