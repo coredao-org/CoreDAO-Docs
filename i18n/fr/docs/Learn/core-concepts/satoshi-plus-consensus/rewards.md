@@ -146,6 +146,8 @@ Cette dynamique favorise des décisions de délégation actives et une concurren
 
 ## Conclusion
 
-<p align="center">![rewards](../../../../static/img/validator/Rewards-In-Core-Ecosystem.png)</p>
+<p align="center"  style={{zoom:"120%"}}>
+![validator-reward-distribution](../../../../static/img/staoshi-plus/Rewards-In-Core-Ecosystem.png)
+</p>
 
 Le système de récompense de Core incite et aligne correctement **les mineurs, les stakers, les validateurs et les rôles d'infrastructure**. Grâce à un système transparent et configurable, les récompenses stimulent la sécurité, la décentralisation et une participation communautaire durable à travers le consensus Satoshi Plus.
