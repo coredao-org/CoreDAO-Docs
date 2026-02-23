@@ -140,7 +140,7 @@ Si deseas retirar tu CORE delegado, haz clic en los tres puntos al final de la f
 
 ## Reclamando recompensas
 
-Puedes ver información sobre las recompensas de tus delegaciones activas seleccionando **My Staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen al final de cada ronda a las 00:00 am UTC todos los días. Para ser elegible y recibir recompensas, es necesario completar una ronda completa de staking (00:00:00 - 23:59:29 UTC).
+Puedes ver información sobre las recompensas de tus delegaciones activas seleccionando **My Staking** en la esquina superior derecha del encabezado del sitio web de staking. Las recompensas por delegación (staking) se distribuyen al final de cada ronda a las 00:00 am UTC todos los días. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:59 UTC).
 
 Para reclamar sus recompensas, simplemente seleccione el botón **Claim** en la parte superior izquierda y firme la transacción. Después de enviar la transacción, recibirás las recompensas en tu dirección vinculada. Las transacciones históricas de reclamo se enumeran en la pestaña **Claim** del sitio web, como se muestra a continuación.
 
