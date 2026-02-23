@@ -81,7 +81,7 @@ Remarque: avant de miser CORE, les utilisateurs doivent activer la signature ave
 ![enable-blind-signing](../../static/img/ledger-core/CORE-Staking/UI-2.png)
 </p>
 
-### Étape 4: Ajouter l'appareil Ledger à votre portefeuille EVM
+### Step 4: Add Ledger Device to Your EVM Wallet
 
 Avant de procéder à la mise en jeu de CORE en utilisant Ledger, il est important d'ajouter votre appareil Ledger au portefeuille EVM (par exemple, MetaMask, etc.) que vous utiliserez pour connecter votre Ledger pour miser CORE.
 
@@ -158,7 +158,7 @@ Un minimum de **1 CORE** est requis pour participer à la mise en jeu de tokens 
 3. Cliquez sur "**View on Core Scan**" pour afficher les détails de votre transaction de mise en jeu de CORE sur l'explorateur de blocs Core Scan.
 
 :::note
-Pour être éligible aux récompenses, vous devez terminer un cycle de mise en jeu complet (00:00:00 - 23:59:29 UTC).
+To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:59 UTC).
 :::
 
 ## FAQs
