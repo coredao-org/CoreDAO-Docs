@@ -191,7 +191,7 @@ Avec votre appareil Ledger connecté et l'application Core Testnet installée, v
 
 > ⚠️ **Remarque:** Un minimum de 0,01 BTC est requis pour participer à la mise en jeu de Bitcoin sur le réseau principal Core Testnet, ainsi que suffisamment de BTC pour couvrir les frais de transaction.
 
-1. Sur votre appareil Ledger, ouvrez l'application CoreDAO avant de poursuivre.
+1. On your Ledger device, open the **Core Testnet app** before proceeding.
 
 <p align="center" style={{zoom:"120%"}}>
 ![core-app-ready](../../../../../static/img/ledger-core/testnet/btc-staking/core-app-ready.png)
@@ -339,7 +339,7 @@ Les utilisateurs peuvent également utiliser Xverse pour miser des Bitcoins depu
 ![approve-tx-on-ledger](../../../../../static/img/ledger-core/testnet/btc-staking/UI-16.png)
 </p>
 
-> ⚠️ **Notez:** pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
+> ⚠️ **Note:** To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:59 UTC).
 
 ## FAQs
 
