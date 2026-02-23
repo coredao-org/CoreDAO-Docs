@@ -18,7 +18,7 @@ Antes de comenzar, asegúrate de que tu dispositivo Ledger esté actualizado y q
 Para garantizar una experiencia segura y fluida, ten en cuenta los siguientes requisitos clave:
 
 - **Usa solo dispositivos Ledger compatibles:** El staking, la redención y la redelegación de BTC en Core son compatibles únicamente con ciertos Ledger hardware wallets que cuenten con el firmware más reciente. Actualiza siempre tu dispositivo mediante Ledger Live antes de usarlo.
-- **Usar siempre la aplicación Ledger Core:** Debes utilizar la aplicación Ledger Core (no la aplicación Ledger Bitcoin) tanto para hacer staking, redimir o redelegar BTC. La aplicación Bitcoin no admite operaciones de redención de BTC en staking y puede impedir una redención exitosa.
+- **Always Use the Ledger's Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. La aplicación Bitcoin no admite operaciones de redención de BTC en staking y puede impedir una redención exitosa.
 - **Staking de BTC solo desde la dirección principal del wallet BTC:** Actualmente, el staking, la redención y la redelegación de BTC en Core mediante Ledger **solo** son compatibles desde la dirección BTC principal del dispositivo Ledger. Las direcciones secundarias o derivadas no son compatibles.
 
 ## Carteras Hardware Ledger Compatibles
@@ -56,7 +56,7 @@ Una vez que el período de timelock del BTC ha expirado, los usuarios son elegib
 
 ### Paso #1: Conectar Core Wallet al Sitio de Staking
 
-1. Conecta tu Core Mainnet wallet al sitio web de Core BTC Staking. Recuerda usar la misma dirección de Bitcoin y el mismo wallet que utilizaste al momento de hacer staking de BTC. Haz clic en el botón “**Connect**” en la esquina superior derecha del sitio web.
+1. Conecta tu Core Mainnet wallet al sitio web de Core BTC Staking. Remember to use the same Bitcoin address and wallet that you had used at the time of staking BTC. Haz clic en el botón “**Connect**” en la esquina superior derecha del sitio web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -108,7 +108,7 @@ Una vez que el período de timelock del BTC ha expirado, los usuarios son elegib
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-5.png)
 </p>
 
-### Paso #5: Conectar el dispositivo Ledger para la redención del BTC en staking
+### Step#6: Connect Ledger Device for Redemption of Staked BTC
 
 #### Opción #1: Conectar el Dispositivo Ledger Directamente al Sitio Web de Staking
 
@@ -175,6 +175,6 @@ Después de conectar tu dispositivo Ledger, asegúrate de que esté desbloqueado
 
 ## Conclusión
 
-Siguiendo esta guía, has redimido con éxito tu BTC en staking en la blockchain de Core usando tu hardware wallet Ledger. La combinación del modelo Self-Custodial BTC Staking de Core y la seguridad líder en la industria de Ledger, mejorada con Clear Signing mediante la Ledger Core app, proporciona la máxima transparencia, confianza y seguridad. Tu redención exitosa marca una interacción segura y transparente con la infraestructura descentralizada de Core. Ahora tienes propiedad completa de tu BTC recuperado.
+By following this guide, you've successfully redeemed staked BTC on the Core blockchain using your Ledger hardware wallet. The combination of Core's Self-Custodial BTC Staking model and Ledger's industry-leading security, enhanced by Clear Signing via the Ledger Core app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core's decentralized infrastructure. Ahora tienes propiedad completa de tu BTC recuperado.
 
 
