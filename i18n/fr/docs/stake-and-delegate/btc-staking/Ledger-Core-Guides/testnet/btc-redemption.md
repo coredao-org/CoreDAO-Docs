@@ -17,11 +17,11 @@ Avant de commencer, assurez-vous que votre appareil Ledger est mis à jour et qu
 
 Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
-1. Utilisez uniquement des appareils Ledger pris en charge: La mise en jeu, le rachat et la ré délégation de BTC sur le réseau de Core Testnet sont pris en charge uniquement sur des appareils matériels Ledger spécifiques avec le dernier firmware. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
+1. **Use Only Supported Ledger Devices:** BTC staking, redemption, and redelegation on Core Testnet are supported only on specific supported Ledger hardware wallets with the latest firmware. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
 
-2. Utilisez toujours l'application CoreDAO de Ledger : Vous devez utiliser l'application Ledger Core Testnet (et non l'application Ledger Bitcoin) pour le staking, le rachat ou la réattribution de BTC sur Core Testnet. L'application Bitcoin ne prend pas en charge les opérations de rachat de BTC mis en jeu et peut empêcher un rachat réussi.
+2. **Always Use the Ledger’s Core's Testnet App:** You must use the Ledger Core Testnet app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC on Core Testnet. L'application Bitcoin ne prend pas en charge les opérations de rachat de BTC mis en jeu et peut empêcher un rachat réussi.
 
-3. Mise en staking de BTC uniquement à partir de l'adresse du portefeuille BTC principal : Actuellement, la mise en staking, le rachat et la réattribution de BTC sur Core Testnet via Ledger sont uniquement pris en charge à partir de l'adresse BTC principale de l'appareil Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles.
+3. **Staking BTC Only from the Primary BTC Wallet Address:** Currently, BTC staking, redemption, and redelegation on Core Testnet through Ledger are supported only from the primary BTC address of the Ledger device. Les adresses secondaires ou dérivées ne sont pas compatibles.
 
 ## Portefeuilles matériels Ledger pris en charge
 
@@ -54,7 +54,7 @@ Avant de commencer, assurez-vous d'avoir:
 
 Après l'expiration de la période de verrouillage temporaire pour les BTC mis en jeu, les utilisateurs sont éligibles pour rembourser ou redéléguer leurs actifs Bitcoin délégués. Vous devez utiliser la même adresse de portefeuille Ledger utilisée pour la mise en staking de BTC pour racheter vos BTC après l'expiration du verrouillage.
 
-### Étape #1: Connecter le portefeuille Core au site Web de staking
+### Step#1: Connect Core Wallet to the Staking Website
 
 1. Accédez au site [Core Testnet Staking Website](https://stake.test2.btcs.network/staking).
 
@@ -68,7 +68,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 4. Dans la fenêtre modale du portefeuille affichée, sélectionnez le portefeuille de votre choix configuré pour une utilisation avec Core Testnet.
 
-### Étape #2: Accédez au tableau de bord de staking Testnet
+### Step#2: Navigate to Testnet Staking Dashboard
 
 1. Assurez-vous que votre appareil Ledger est mis à jour avec le dernier firmware et connecté à votre ordinateur avec l'adresse Bitcoin (BTC) principale de Ledger.
 
@@ -78,7 +78,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![my-staking](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-1.png)
 </p>
 
-### Étape #3: Accédez aux enregistrements de staking BTC
+### Step#3: Navigate to Testnet BTC Staking Records
 
 1. Sur la page "**My Staking Dashboard**", sélectionnez les enregistrements "**BTC**" parmi les onglets affichés.
 
@@ -92,7 +92,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![my-staking-records](../../../../../static/img/ledger-core/testnet/btc-redeem/my-staking-1.png)
 </p>
 
-### Étape #4: Vérifier les détails de la mise en jeu et de la récupération de BTC
+### Step#4: Verify BTC Staking and Redemption Details
 
 1. Sur la fenêtre modale "**Redeem BTC**" affichée, vérifiez attentivement **l'adresse de staking BTC**, le **montant de BTC** qui sera racheté et **l'adresse Bitcoin de réception**. Pour récupérer les Bitcoins, vous **_devez_** vous connecter à la même adresse de portefeuille Bitcoin que celle ayant initié la transaction de staking Bitcoin.
 
@@ -104,7 +104,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![verify-tx-details](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-12.png)
 </p>
 
-### Étape #5: Signez la transaction de déblocage de BTC sur l'appareil Ledger
+### Step#5: Sign the BTC Unlock Transaction on Ledger Device
 
 1. Cliquez sur "**Sign By Bitcoin Wallet**" pour signer la transaction de récupération de BTC depuis votre appareil Ledger.
 
@@ -112,7 +112,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![sign-tx](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-13.png)
 </p>
 
-### Étape #5: Connectez l'appareil Ledger pour la récupération des BTC mis en jeu
+### Step#6: Connect Ledger Device for Redemption of Staked BTC
 
 #### Option #1: Connecter l'appareil Ledger directement au site Web de mise en jeu
 
@@ -138,7 +138,7 @@ Vous pouvez également utiliser le portefeuille Xverse pour racheter des BTC dir
 ![conenct-xverse-wallet](../../../../../static/img/ledger-core/testnet/btc-redeem/UI-8.png)
 </p>
 
-### Étape #6: Examinez et approuvez la transaction sur l'appareil Ledger
+### Step#7: Review & Approve Transaction on Ledger Device
 
 1. Après avoir connecté votre appareil Ledger, assurez-vous que l'appareil est déverrouillé et que l'application Ledger Core Testnet est ouverte. Une invite s'affichera à l'écran pour vous demander d'approuver la transaction.
 
