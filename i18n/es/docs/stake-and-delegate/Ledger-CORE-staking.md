@@ -82,7 +82,7 @@ para más detalles.
 ![enable-blind-signing](../../static/img/ledger-core/CORE-Staking/UI-2.png)
 </p>
 
-### Paso 4: Agregar el dispositivo Ledger a tu EVM Wallet
+### Step 4: Add Ledger Device to Your EVM Wallet
 
 Antes de continuar con el staking de CORE usando Ledger, es importante agregar tu dispositivo Ledger a la EVM Wallet (por ejemplo, MetaMask, etc.) que vayas a usar para conectar tu Ledger y realizar el staking de CORE.
 
@@ -159,7 +159,7 @@ Se requiere un mínimo de **1 CORE** para participar en el staking de tokens COR
 3. Haz clic en "**View on Core Scan**" para ver los detalles de tu transacción de staking de CORE en el explorador de bloques Core Scan.
 
 :::note
-Para ser elegible para recibir recompensas, debes completar un ciclo completo de staking en el intervalo (00:00:00 - 23:59:29 UTC).
+To be eligible to earn rewards, you must complete a full staking round on (00:00:00 - 23:59:59 UTC).
 :::
 
 ## Preguntas Frecuentes
