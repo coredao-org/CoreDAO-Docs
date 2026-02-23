@@ -159,7 +159,7 @@ Analysons les 'flags' utilisés dans cette commande:
 
 - **`cache 8000`:** Alloue un grand cache (8 Go dans ce cas) pour améliorer les performances.
 
-- **`networkid`:** Spécifiez l'Id de chaîne du réseau Core que vous avez l'intention d'exécuter pour le nœud validateur (par exemple, 1114 pour Core Testnet2)
+- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Testnet2)
 
 #### Synchronisation depuis la Genesis
 
