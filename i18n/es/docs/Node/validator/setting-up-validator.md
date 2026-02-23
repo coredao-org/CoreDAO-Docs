@@ -159,7 +159,7 @@ Desglosemos las opciones usadas en este comando:
 
 - **`cache 8000`:** Asigna una gran caché (8GB en este caso) para mejorar el rendimiento.
 
-- **`networkid`:** Especifica el ID de cadena de la red Core en la que deseas ejecutar el nodo validador (por ejemplo, 1114 para Core Testnet2)
+- **`networkid`:** Specify the Core network chain ID you intend to run the validator node (e.g., 1114 for Core Testnet2)
 
 #### Sincronización desde Génesis
 
