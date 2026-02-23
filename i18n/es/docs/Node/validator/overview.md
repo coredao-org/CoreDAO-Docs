@@ -38,7 +38,7 @@ Las comisiones se pagan directamente a la dirección de comisión designada de c
 > **Nota:** Las recompensas se liquidan **por ronda**, no por bloque. Cada ronda corresponde a un ciclo completo de elecciones de validadores (~24 horas, UTC+0).
 
 <p align="center">
-![validator-reward-distribution](../../../static/img/validator/Rewards-In-Core-Ecosystem.png)
+![validator-reward-distribution](../../../static/img/staoshi-plus/Rewards-In-Core-Ecosystem.png)
 </p>
 
 ### Sample Reward Calculation
