@@ -18,7 +18,7 @@ Avant de commencer, assurez-vous que votre appareil Ledger est mis à jour et qu
 Pour garantir une expérience sécurisée et fluide, veuillez noter les exigences clés suivantes:
 
 - **Utilisez uniquement les appareils Ledger pris en charge:** La mise en jeu, le rachat et la réaffectation de BTC sur Core sont pris en charge **uniquement** sur certains portefeuilles matériels Ledger spécifiques avec le dernier micrologiciel. Mettez toujours à jour votre appareil via Ledger Live avant utilisation.
-- **Utilisez toujours l'application Core de Ledger:** Vous devez utiliser l'application Core de Ledger (et non l'application Bitcoin de Ledger) pour la mise en jeu, le rachat ou la réaffectation de BTC. L'application Bitcoin ne prend pas en charge les opérations de rachat de BTC mis en jeu et peut empêcher un rachat réussi.
+- **Always Use the Ledger's Core App:** You must use the Ledger Core app (not the Ledger Bitcoin app) for both staking, redeeming, or redelegating BTC. L'application Bitcoin ne prend pas en charge les opérations de rachat de BTC mis en jeu et peut empêcher un rachat réussi.
 - **Mise en jeu de BTC uniquement depuis l'adresse de portefeuille BTC principale:** Actuellement, la mise en jeu, le rachat et la réaffectation de BTC sur Core via Ledger sont pris en charge **uniquement** depuis l'adresse BTC principale de l'appareil Ledger. Les adresses secondaires ou dérivées ne sont pas compatibles.
 
 ## Supported Ledger Hardware Wallets
@@ -56,7 +56,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 
 ### Étape #1: Connecter le portefeuille Core au site Web de staking
 
-1. Connectez votre portefeuille Core Mainnet au site Web de staking. Utilisez la même adresse Bitcoin et le même portefeuille que ceux utilisés au moment du staking de BTC. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
+1. Connectez votre portefeuille Core Mainnet au site Web de staking. Remember to use the same Bitcoin address and wallet that you had used at the time of staking BTC. Cliquez sur le bouton "**Connect**" dans le coin supérieur droit du site Web.
 
 <p align="center" style={{zoom:"80%"}}>
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/connect-core-wallet.png)
@@ -108,7 +108,7 @@ Après l'expiration de la période de verrouillage temporaire pour les BTC mis e
 ![install-coredao-app-on-ledger](../../../../../static/img/ledger-core/mainnet/btc-redemption/UI-5.png)
 </p>
 
-### Étape #5 : Connectez l'appareil Ledger pour la récupération des BTC mis en jeu
+### Step#6: Connect Ledger Device for Redemption of Staked BTC
 
 #### Option #1: Connexion de l'appareil Ledger directement au site Web de staking
 
@@ -175,6 +175,6 @@ Avez-vous d'autres questions? Consultez la section [FAQs](../../../../FAQs/ledge
 
 ## Conclusion
 
-En suivant ce guide, vous avez réussi à récupérer des BTC mis en jeu sur la blockchain Core en utilisant votre portefeuille matériel Ledger. La combinaison du modèle de verrouillage temporel auto-custodial de Core pour BTC et de la sécurité leader de l'industrie de Ledger, renforcée par Clear Signing via l'application Ledger Core, offre une transparence, une confiance et une sécurité maximales. Votre récupération réussie marque une interaction sécurisée et transparente avec l'infrastructure décentralisée de Core. Vous avez désormais la pleine propriété de vos BTC récupérés.
+By following this guide, you've successfully redeemed staked BTC on the Core blockchain using your Ledger hardware wallet. The combination of Core's Self-Custodial BTC Staking model and Ledger's industry-leading security, enhanced by Clear Signing via the Ledger Core app, provides maximum transparency, confidence, and safety. Your successful redemption marks a secure and transparent interaction with Core's decentralized infrastructure. Vous avez désormais la pleine propriété de vos BTC récupérés.
 
 
