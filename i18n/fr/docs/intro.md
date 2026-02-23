@@ -10,7 +10,9 @@ sidebar_position: 1
 La blockchain Core est une blockchain de couche 1 haute performance compatible avec EVM, conçue pour être la plate-forme de contrats intelligents complémentaire et hyper-scalable de Bitcoin. En tirant parti des verrous temporels CLTV natifs de Bitcoin, de la puissance de hachage du minage de Bitcoin et des capacités de contrats intelligents modernes, Core libère Bitcoin en tant que protecteur principal et actif central d'un écosystème d'applications décentralisées prospère.
 En tant que seule plate-forme de bout en bout prenant en charge à la fois le staking de Bitcoin et les contrats intelligents compatibles EVM, Core sert de première couche de preuve d'enjeu (Proof of Stake) de Bitcoin.
 
+<p align="center"  style={{zoom:"120%"}}>
 ![core-header](../static/img/core-header.png)
+</p>
 
 ## Apprendre
 
