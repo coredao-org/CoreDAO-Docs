@@ -144,7 +144,7 @@ Si vous souhaitez annuler la délégation de votre CORE, cliquez sur les 3 point
 
 ## Réclamation des récompenses
 
-Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. Pour être éligible à recevoir des récompenses, il est nécessaire de compléter un cycle complet de staking (00:00:00 - 23:59:29 UTC).
+Vous pouvez consulter les informations sur vos délégations actives en sélectionnant **My Staking** en haut à droite du site de staking. Les récompenses de délégation (staking) sont distribuées après chaque cycle à 00:00 UTC chaque jour. To be eligible to earn rewards, it is required to complete a full staking round (00:00:00 - 23:59:59 UTC).
 
 Pour réclamer vos récompenses, sélectionnez simplement le bouton **Claim** en haut à gauche et signez la transaction. Après l'envoi de la transaction, vous recevrez les récompenses à l'adresse liée à votre compte. Les transactions de réclamation passées sont répertoriées dans l'onglet **Claim** du site, comme indiqué ci-dessous.
 
