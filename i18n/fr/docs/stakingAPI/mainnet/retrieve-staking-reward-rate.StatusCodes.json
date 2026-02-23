@@ -1,0 +1,74 @@
+{
+    "responses": {
+        "200": {
+            "description": "Staking reward rates retrieved successfully.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "Status code indicating the result of the operation."
+                            },
+                            "data": {
+                                "type": "object",
+                                "description": "Staking reward rate details.",
+                                "properties": {
+                                    "annualRewardRateOverall": {
+                                        "type": "string",
+                                        "description": "Overall annual reward rate."
+                                    },
+                                    "annualRewardRateCurrent": {
+                                        "type": "string",
+                                        "description": "Current annual reward rate."
+                                    },
+                                    "newStakedBTCRewardRate": {
+                                        "type": "string",
+                                        "description": "Reward rate for newly staked BTC."
+                                    },
+                                    "newStakedCoreRewardRate": {
+                                        "type": "string",
+                                        "description": "Reward rate for newly staked CORE."
+                                    },
+                                    "activeStakedBTCRewardRate": {
+                                        "type": "string",
+                                        "description": "Reward rate for actively staked BTC."
+                                    },
+                                    "activeStakedCoreRewardRate": {
+                                        "type": "string",
+                                        "description": "Reward rate for actively staked CORE."
+                                    }
+                                }
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Additional information or message about the response."
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "400": {
+            "description": "Invalid parameters or an error occurred while retrieving reward rates.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "Error code indicating the result of the operation."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Error message explaining the issue."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

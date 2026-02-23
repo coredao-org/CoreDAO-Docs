@@ -1,0 +1,13 @@
+{
+    "parameters": [
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}

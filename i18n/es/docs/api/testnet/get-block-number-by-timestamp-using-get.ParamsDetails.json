@@ -1,0 +1,52 @@
+{
+    "parameters": [
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "closest",
+            "in": "query",
+            "description": "closest",
+            "schema": {
+                "type": "string",
+                "default": "before"
+            }
+        },
+        {
+            "200": {
+                "description": "Successful response"
+            },
+            "400": {
+                "description": "Invalid timestamp parameter",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "error": {
+                                    "type": "string",
+                                    "example": "Invalid timestamp must be in unix format"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "name": "timestamp",
+            "in": "query",
+            "description": "Block Timestamp in UNIX Format",
+            "required": true,
+            "schema": {
+                "type": "string",
+                "pattern": "^\\d+$"
+            },
+            "responses": null
+        }
+    ]
+}

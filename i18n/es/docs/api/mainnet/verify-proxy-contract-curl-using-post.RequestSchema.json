@@ -1,0 +1,170 @@
+{
+    "title": "Body",
+    "body": {
+        "description": "apiCallRequest",
+        "content": {
+            "application/json": {
+                "schema": {
+                    "title": "ApiCallRequest",
+                    "type": "object",
+                    "properties": {
+                        "action": {
+                            "type": "string"
+                        },
+                        "address": {
+                            "type": "string"
+                        },
+                        "apikey": {
+                            "type": "string"
+                        },
+                        "blockno": {
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "blocktype": {
+                            "type": "string"
+                        },
+                        "boolean": {
+                            "type": "boolean"
+                        },
+                        "closest": {
+                            "type": "string"
+                        },
+                        "codeformat": {
+                            "type": "string"
+                        },
+                        "compilerversion": {
+                            "type": "string"
+                        },
+                        "constructorArguements": {
+                            "type": "string"
+                        },
+                        "contractaddress": {
+                            "type": "string"
+                        },
+                        "contractaddresses": {
+                            "type": "string"
+                        },
+                        "data": {
+                            "type": "string"
+                        },
+                        "endblock": {
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "evmversion": {
+                            "type": "string"
+                        },
+                        "fromBlock": {
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "gas": {
+                            "type": "string"
+                        },
+                        "gasPrice": {
+                            "type": "string"
+                        },
+                        "guid": {
+                            "type": "string"
+                        },
+                        "hex": {
+                            "type": "string"
+                        },
+                        "index": {
+                            "type": "string"
+                        },
+                        "licenseType": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "module": {
+                            "type": "string"
+                        },
+                        "offset": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "optimizationUsed": {
+                            "type": "string"
+                        },
+                        "page": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "position": {
+                            "type": "string"
+                        },
+                        "q": {
+                            "type": "string"
+                        },
+                        "runs": {
+                            "type": "integer",
+                            "format": "int32"
+                        },
+                        "sort": {
+                            "type": "string"
+                        },
+                        "sourceCode": {
+                            "type": "string"
+                        },
+                        "startblock": {
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "tag": {
+                            "type": "string"
+                        },
+                        "timestamp": {
+                            "type": "integer",
+                            "format": "int64"
+                        },
+                        "to": {
+                            "type": "string"
+                        },
+                        "toBlock": {
+                            "type": "string"
+                        },
+                        "topic0": {
+                            "type": "string"
+                        },
+                        "topic0_1_opr": {
+                            "type": "string"
+                        },
+                        "topic0_2_opr": {
+                            "type": "string"
+                        },
+                        "topic0_3_opr": {
+                            "type": "string"
+                        },
+                        "topic1": {
+                            "type": "string"
+                        },
+                        "topic1_2_opr": {
+                            "type": "string"
+                        },
+                        "topic1_3_opr": {
+                            "type": "string"
+                        },
+                        "topic2": {
+                            "type": "string"
+                        },
+                        "topic2_3_opr": {
+                            "type": "string"
+                        },
+                        "topic3": {
+                            "type": "string"
+                        },
+                        "txhash": {
+                            "type": "string"
+                        },
+                        "value": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "required": true
+    }
+}

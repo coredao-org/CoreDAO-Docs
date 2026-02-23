@@ -1,0 +1,122 @@
+{
+    "responses": {
+        "200": {
+            "description": "BTC staking transactions retrieved successfully.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "A status code indicating the result of the operation."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Additional information or message about the response."
+                            },
+                            "data": {
+                                "type": "object",
+                                "properties": {
+                                    "stakedBTCTxList": {
+                                        "type": "array",
+                                        "description": "List of BTC staking transactions.",
+                                        "items": {
+                                            "type": "object",
+                                            "properties": {
+                                                "candidateAddress": {
+                                                    "type": "string",
+                                                    "description": "The address of the candidate related to the transaction."
+                                                },
+                                                "btcAddress": {
+                                                    "type": "string",
+                                                    "description": "The Bitcoin address associated with the transaction."
+                                                },
+                                                "btcTXId": {
+                                                    "type": "string",
+                                                    "description": "The unique transaction ID for the BTC staking transaction."
+                                                },
+                                                "confirmedTxHash": {
+                                                    "type": "string",
+                                                    "description": "The confirmed transaction hash for the BTC transaction."
+                                                },
+                                                "btcAmount": {
+                                                    "type": "string",
+                                                    "description": "The amount of BTC staked in the transaction."
+                                                },
+                                                "script": {
+                                                    "type": "string",
+                                                    "description": "The script associated with the transaction."
+                                                },
+                                                "startRound": {
+                                                    "type": "integer",
+                                                    "description": "The starting round of the transaction."
+                                                },
+                                                "endRound": {
+                                                    "type": "integer",
+                                                    "description": "The ending round of the transaction."
+                                                },
+                                                "delegateRound": {
+                                                    "type": "integer",
+                                                    "description": "The delegate round for the transaction."
+                                                },
+                                                "outputIndex": {
+                                                    "type": "integer",
+                                                    "description": "The output index for the transaction."
+                                                },
+                                                "rewardAddress": {
+                                                    "type": "string",
+                                                    "description": "The reward address associated with the transaction."
+                                                },
+                                                "unlockTime": {
+                                                    "type": "integer",
+                                                    "description": "The unlock time for the transaction."
+                                                },
+                                                "redeemAddress": {
+                                                    "type": "string",
+                                                    "description": "The redeem address for the transaction."
+                                                },
+                                                "status": {
+                                                    "type": "integer",
+                                                    "description": "The status of the transaction."
+                                                },
+                                                "redeemTxId": {
+                                                    "type": "string",
+                                                    "description": "The transaction ID for the redeem transaction."
+                                                },
+                                                "pkHash": {
+                                                    "type": "string",
+                                                    "description": "Public key hash associated with the given Bitcoin address."
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "400": {
+            "description": "An error occurred while retrieving the BTC staking transactions.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "code": {
+                                "type": "string",
+                                "description": "Error code indicating the result of the operation."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Error message explaining the issue."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

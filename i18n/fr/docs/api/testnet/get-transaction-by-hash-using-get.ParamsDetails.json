@@ -1,0 +1,22 @@
+{
+    "parameters": [
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "txhash",
+            "in": "query",
+            "description": "txhash",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}

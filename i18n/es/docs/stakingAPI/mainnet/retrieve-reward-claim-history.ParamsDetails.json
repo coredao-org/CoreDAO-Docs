@@ -1,0 +1,31 @@
+{
+    "parameters": [
+        {
+            "name": "coreAddress",
+            "in": "query",
+            "required": true,
+            "description": "The core address to retrieve the reward claim history for.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "startRound",
+            "in": "query",
+            "required": true,
+            "description": "The starting round of the range for which the reward claim history is requested.",
+            "schema": {
+                "type": "integer"
+            }
+        },
+        {
+            "name": "endRound",
+            "in": "query",
+            "required": true,
+            "description": "The ending round of the range for which the reward claim history is requested.",
+            "schema": {
+                "type": "integer"
+            }
+        }
+    ]
+}

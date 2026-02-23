@@ -1,0 +1,49 @@
+{
+    "parameters": [
+        {
+            "name": "coreAddress",
+            "in": "query",
+            "required": true,
+            "description": "The delegator address.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "btcStakeAmount",
+            "in": "query",
+            "required": true,
+            "description": "The amount of BTC planned to stake. Example - 0.1 BTC",
+            "schema": {
+                "type": "number"
+            }
+        },
+        {
+            "name": "coreStakeAmount",
+            "in": "query",
+            "required": true,
+            "description": "The amount of Core planned to stake. Example - 100.1 CORE",
+            "schema": {
+                "type": "number"
+            }
+        },
+        {
+            "name": "btcStakingValidatorAddress",
+            "in": "query",
+            "required": true,
+            "description": "The validator address for delegating BTC.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "coreStakingValidatorAddress",
+            "in": "query",
+            "required": true,
+            "description": "The validator address for delegating CORE.",
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}

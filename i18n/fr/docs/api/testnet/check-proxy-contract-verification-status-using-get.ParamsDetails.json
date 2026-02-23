@@ -1,0 +1,22 @@
+{
+    "parameters": [
+        {
+            "name": "apikey",
+            "in": "query",
+            "description": "apikey",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "guid",
+            "in": "query",
+            "description": "guid",
+            "required": true,
+            "schema": {
+                "type": "string"
+            }
+        }
+    ]
+}

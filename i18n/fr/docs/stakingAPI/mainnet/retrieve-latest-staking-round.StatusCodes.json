@@ -1,0 +1,53 @@
+{
+    "responses": {
+        "200": {
+            "description": "Latest round information retrieved successfully.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "integer",
+                                "description": "Status code of the response."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Additional information or message about the response."
+                            },
+                            "result": {
+                                "type": "object",
+                                "properties": {
+                                    "latestRound": {
+                                        "type": "integer",
+                                        "description": "The number of the latest staking round."
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "400": {
+            "description": "An error occurred while retrieving the staking round.",
+            "content": {
+                "application/json": {
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "integer",
+                                "description": "Status code of the error response."
+                            },
+                            "message": {
+                                "type": "string",
+                                "description": "Error message explaining the issue."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "parameters": [
+        {
+            "name": "round",
+            "in": "query",
+            "required": true,
+            "description": "The round number for which reward distribution is being requested.",
+            "schema": {
+                "type": "integer"
+            }
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+---
+id: submit-redeem-script-for-staking-transaction
+title: Submit RedeemScript for Staking Transaction
+description: Submit a RedeemScript so Core relayers can help transmit the staking transaction. This API is optional if the RedeemScript is already provided in the `op_return` field of the staking transaction.
+sidebar_label: Submit RedeemScript for Staking Transaction
+hide_title: true
+hide_table_of_contents: true
+api: eJzdVsGS4kYM/RWVLrl4YZLKybfJZg9UDplayImissItcO+0u73q9jAU5X9PqW0PMGSSOSQ5xBegLT1JT09qTmg4VmLbZIPHEpfdtrEJCD6zYW6W+RXEAB+DMAg7OrJEqMhDza6FJOSjeqSaISZ6tH4/HFKlkDNY1TbC/cMCbISQw5ADu8sOV0FsBHLCZI7QSniyhg1Yn+2+hPZ34dSJ/wI7y85A2L0ZEQsU/tZxTD8Fc8TylH9aYYNlko4LrIJP7JO+orZ1tiJ1nH+NSsEJY1VzQ/otHVvGEsP2K1cJC2wltCzJcsxvnxfmwiomsX6PxStGVzVfpgeLn/8y+b5Aau0vfHwfshL7yEfYBQHqUs0+jeVkKLkg+H2AVy1R1Lcz7YsLZtcDHS/Zv4q96fvBPrbBx4G/H+7u9OM6h2vdZTUmNhC7quIYd51zR+3wP9TCKhj+e16WiVIXQY3BepODKRu1TkTsXJo6qtBn8huOkfbvwL83xk6D4XdBmowBQWCEANqGLk0BM4M5gqH0jiKHHC/stiE4Jn+Tx2KojSMcak41y+2Q5o7EqOkdKF60RfUwPAX++GeNXfgnctbAOJuguWuJ5IFFgkCoqk6EDRxq61h3gEJPRF9m8Z8L4FNO8F/r/wA/9ZqfW0fWTxFsjB2/sKuoqQ4GS2xDzPVQqrHE+Tijc13LLPNh+oYoWGBkeWKJWK5P2InDEuuU2ljOJ78P1NpZFYQNhVmQPfabApXNz+dd+umZmtbxefedC5p21vnkevVM532BKvEMYZNiYb5ZluOGuX9Y3I7HwwJMqLqGfRomQ12+i6+ctL7B4fvZ3exOQylFDWVBeGr4fL/dbLkJanXecK/zOJ019z+5JkdVJn5O86w55Syr4zTKao2jKxY4COuls6O0NgXWKsRyjafTliL/Jq7v9fhbx3LEcr0p8InE0la7vd70ikSGJWvxMYvm40Dsh5UmpOau08RuBrsvJo/7quIs7LdtNxez8vDrcoUFbsc/BE2eehQ6aDl0wBKxwIH2YWXq2Qkd+X2XRxgHTH3+ACeAQTM=
+sidebar_class_name: post api-method
+info_path: docs/stakingAPI/mainnet/core-staking-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+import Translate from "@docusaurus/Translate";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Submit RedeemScript for Staking Transaction"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/staking/helper/redeemscript"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+Submit a RedeemScript so Core relayers can help transmit the staking transaction. This API is optional if the RedeemScript is already provided in the `op_return` field of the staking transaction.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+>
+  <Translate id="theme.openapi.request.title">Request</Translate>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  {...require("./submit-redeem-script-for-staking-transaction.RequestSchema.json")}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  {...require("./submit-redeem-script-for-staking-transaction.StatusCodes.json")}
+>
+  
+</StatusCodes>

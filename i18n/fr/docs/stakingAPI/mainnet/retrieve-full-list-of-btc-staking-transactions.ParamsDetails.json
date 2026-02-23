@@ -1,0 +1,49 @@
+{
+    "parameters": [
+        {
+            "name": "btcAddress",
+            "in": "query",
+            "required": true,
+            "description": "The Bitcoin address for which staking transactions are being requested.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "pkHash",
+            "in": "query",
+            "required": true,
+            "description": "The public key hash associated with the given Bitcoin address.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "coreAddress",
+            "in": "query",
+            "required": false,
+            "description": "The reward address of BTC staking.",
+            "schema": {
+                "type": "string"
+            }
+        },
+        {
+            "name": "pageNum",
+            "in": "query",
+            "required": false,
+            "description": "The page number for pagination. Defaults to 1 if not provided.",
+            "schema": {
+                "type": "integer"
+            }
+        },
+        {
+            "name": "pageSize",
+            "in": "query",
+            "required": false,
+            "description": "The number of transactions per page. Defaults to 100 if not provided.",
+            "schema": {
+                "type": "integer"
+            }
+        }
+    ]
+}
