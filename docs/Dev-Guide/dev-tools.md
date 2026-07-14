@@ -59,6 +59,7 @@ values={[
 
 ### General Resources
 
+- **[Envio](https://envio.dev/?utm_source=coredao&utm_medium=partner-docs):** the data layer for blockchain apps, giving Core DAO developers real-time and historical onchain data through a single GraphQL API or high-speed access, with managed hosting on Envio Cloud.
 - **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
 - **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
 - **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
@@ -66,3 +67,4 @@ values={[
 ### Whitepaper
 
 - **[Whitepaper](https://whitepaper.coredao.org/):** official whitepaper covering the technical overview of Core.
+
