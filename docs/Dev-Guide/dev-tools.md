@@ -59,6 +59,7 @@ values={[
 
 ### General Resources
 
+- **[Envio](https://envio.dev/?utm_source=coredao&utm_medium=partner-docs):** high-performance indexing framework that turns smart contract events into a queryable GraphQL API. Envio's HyperIndex natively supports indexing any EVM chain out of the box, using your own RPC as the data source, with managed hosting on Envio Cloud.
 - **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
 - **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
 - **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
@@ -66,3 +67,4 @@ values={[
 ### Whitepaper
 
 - **[Whitepaper](https://whitepaper.coredao.org/):** official whitepaper covering the technical overview of Core.
+
