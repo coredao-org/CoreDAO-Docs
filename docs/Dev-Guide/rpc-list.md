@@ -53,3 +53,5 @@ Note: This is the latest and officially supported testnet for the Core blockchai
 - **IceCreamSwap:** https://rpc-core.icecreamswap.com
 - **ZAN Node:** https://api.zan.top/core-mainnet
 - **dRPC:** https://core.drpc.org | wss://core.drpc.org
+
+For independent, live latency benchmarks across these providers, see [OpenChainBench — Core RPC Benchmark](https://openchainbench.com/benchmarks/core-rpc).
