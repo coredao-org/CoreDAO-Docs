@@ -59,6 +59,7 @@ values={[
 
 ### General Resources
 
+- **[Envio](https://envio.dev/?utm_source=coredao&utm_medium=partner-docs):** custom blockchain APIs and analytics. Core DAO developers can use HyperIndex to choose the contracts and events to track, write TypeScript handlers and query the result through a GraphQL API, then run it themselves or deploy to Envio Cloud.
 - **[Core DAO GitHub](https://github.com/coredao-org):** official GitHub Page containing everything about Core.
 - **[Guidebooks and Tutorials](https://github.com/coredao-org/dapp-tutorial):** detailed guidebooks and tutorials for kickstarting your journey to build on Core.
 - **[Create core dapp NPM Package](https://www.npmjs.com/package/create-core-dapp):** A lightweight, developer-friendly full-stack starter kit for building DApps on Core. Preconfigured with Hardhat, Next.js, and RainbowKit.
@@ -66,3 +67,4 @@ values={[
 ### Whitepaper
 
 - **[Whitepaper](https://whitepaper.coredao.org/):** official whitepaper covering the technical overview of Core.
+
